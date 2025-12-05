@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Chrome } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,8 +10,9 @@ const Navbar = () => {
   const navItems = [
     { label: "Extensions", href: "#extensions" },
     { label: "Features", href: "#features" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Blog", href: "#blog" },
+    { label: "Comparison", href: "#comparison" },
+    { label: "FAQ", href: "#faq" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -30,7 +32,7 @@ const Navbar = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-6 lg:flex">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -40,23 +42,26 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
+            <ThemeToggle />
             <Button variant="hero" size="sm">
               Get Started
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
+          <div className="flex items-center gap-2 lg:hidden">
+            <ThemeToggle />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+            >
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -65,7 +70,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="border-t border-border/50 py-4 md:hidden"
+            className="border-t border-border/50 py-4 lg:hidden"
           >
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
