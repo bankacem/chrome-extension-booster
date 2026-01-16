@@ -1,18 +1,20 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Chrome } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   const navItems = [
-    { label: "Extensions", href: "#extensions" },
-    { label: "Features", href: "#features" },
-    { label: "Comparison", href: "#comparison" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/", isRoute: true },
+    { label: "Extensions", href: isHome ? "#extensions" : "/#extensions", isRoute: !isHome },
+    { label: "Blog", href: "/blog", isRoute: true },
+    { label: "Contact", href: isHome ? "#contact" : "/#contact", isRoute: !isHome },
   ];
 
   return (
@@ -34,13 +36,23 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-6 lg:flex">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-              >
-                {item.label}
-              </a>
+              item.isRoute ? (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {item.label}
+                </a>
+              )
             ))}
             <ThemeToggle />
             <Button variant="hero" size="sm">
@@ -74,14 +86,25 @@ const Navbar = () => {
           >
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </a>
+                item.isRoute ? (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
               <Button variant="hero" size="sm" className="w-fit">
                 Get Started

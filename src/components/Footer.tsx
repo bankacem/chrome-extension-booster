@@ -9,16 +9,16 @@ const Footer = () => {
       { label: "Roadmap", href: "#" },
     ],
     resources: [
-      { label: "Blog", href: "#blog" },
+      { label: "Blog", href: "/blog" },
       { label: "Documentation", href: "#" },
       { label: "Help Center", href: "#" },
       { label: "Community", href: "#" },
     ],
     company: [
       { label: "About", href: "#" },
-      { label: "Contact", href: "#" },
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
+      { label: "Contact", href: "#contact" },
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
     ],
   };
 
