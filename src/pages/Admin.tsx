@@ -488,10 +488,18 @@ const Admin = () => {
         let publishedAt = null;
         let articleStatus = bulkStatus;
 
-        if (bulkStatus === "scheduled" && bulkScheduleDate) {
-          const baseDate = new Date(bulkScheduleDate);
-          baseDate.setHours(baseDate.getHours() + (i * bulkScheduleInterval));
-          scheduledAt = baseDate.toISOString();
+        if (bulkStatus === "scheduled") {
+          if (bulkScheduleDate) {
+            const baseDate = new Date(bulkScheduleDate);
+            // Add interval for each article (i * interval hours)
+            const scheduledTime = new Date(baseDate.getTime() + (importedCount * bulkScheduleInterval * 60 * 60 * 1000));
+            scheduledAt = scheduledTime.toISOString();
+          } else {
+            // If no date provided, schedule starting from now
+            const now = new Date();
+            const scheduledTime = new Date(now.getTime() + (importedCount * bulkScheduleInterval * 60 * 60 * 1000));
+            scheduledAt = scheduledTime.toISOString();
+          }
         } else if (bulkStatus === "published") {
           publishedAt = new Date().toISOString();
         }
@@ -752,6 +760,7 @@ Disallow: /admin/*`;
           <Tabs defaultValue="articles" className="space-y-4">
             <TabsList>
               <TabsTrigger value="articles">Articles</TabsTrigger>
+              <TabsTrigger value="links">Links Manager</TabsTrigger>
               <TabsTrigger value="seo">SEO Tools</TabsTrigger>
               <TabsTrigger value="backup">Backup & Restore</TabsTrigger>
             </TabsList>
@@ -879,6 +888,208 @@ Disallow: /admin/*`;
                     )}
                   </TableBody>
                 </Table>
+              </div>
+            </TabsContent>
+
+            {/* Links Manager Tab */}
+            <TabsContent value="links" className="space-y-4">
+              <div className="grid gap-4 md:grid-cols-2">
+                {/* Internal Links */}
+                <div className="glass-card p-6">
+                  <div className="mb-4 flex items-center gap-3">
+                    <LinkIcon className="h-8 w-8 text-primary" />
+                    <div>
+                      <h3 className="font-heading text-lg font-semibold">Internal Links</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Links between your articles
+                      </p>
+                    </div>
+                  </div>
+                  <div className="space-y-2 max-h-72 overflow-y-auto">
+                    {articles.filter(a => a.status === "published").map((article) => (
+                      <div
+                        key={article.id}
+                        className="flex items-center justify-between rounded-lg bg-secondary/50 p-3"
+                      >
+                        <div className="min-w-0 flex-1">
+                          <p className="truncate text-sm font-medium">{article.title}</p>
+                          <code className="text-xs text-muted-foreground">
+                            /blog/{article.slug}
+                          </code>
+                        </div>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => {
+                            const linkHtml = `<a href="/blog/${article.slug}">${article.title}</a>`;
+                            navigator.clipboard.writeText(linkHtml);
+                            toast({ title: "Copied", description: "Internal link HTML copied" });
+                          }}
+                        >
+                          <Copy className="h-4 w-4" />
+                        </Button>
+                      </div>
+                    ))}
+                    {articles.filter(a => a.status === "published").length === 0 && (
+                      <p className="py-4 text-center text-muted-foreground">No published articles</p>
+                    )}
+                  </div>
+                </div>
+
+                {/* External Links - Extensions */}
+                <div className="glass-card p-6">
+                  <div className="mb-4 flex items-center gap-3">
+                    <ExternalLink className="h-8 w-8 text-green-500" />
+                    <div>
+                      <h3 className="font-heading text-lg font-semibold">Extension Links</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Chrome Web Store extensions
+                      </p>
+                    </div>
+                  </div>
+                  <div className="space-y-2 max-h-72 overflow-y-auto">
+                    {[
+                      { name: "Quick Screenshot Lite", id: "hddickadgkbfpcelmckpjhcfnoeognee" },
+                      { name: "Auto Dark Mode Switcher", id: "obbhliekbfgpcdippngphefofiicgjml" },
+                      { name: "Redirect Shield", id: "pofolffdhjffglfphiagpbnlegjbnbhp" },
+                      { name: "ProTab Suspender", id: "gghjdfjjffegohpjhmcmgeonmcomilgj" },
+                      { name: "Light Popup Blocker", id: "oimngcokgckajdlphggpjpbeljoakpii" },
+                      { name: "Formula Builder Pro", id: "ecmfloopolmkamoklcepdonahkigjlnn" },
+                      { name: "SecuraKey Pro", id: "omeencccnkninlofbggfcfiohapajhgi" },
+                      { name: "Offline Reader Pro", id: "bgbojccanmjdniomhccefkakjaedajhf" },
+                      { name: "Cookie Banner Blocker", id: "mlmiefaloipcahfcgfbccadnnjgpipge" },
+                    ].map((ext) => (
+                      <div
+                        key={ext.id}
+                        className="flex items-center justify-between rounded-lg bg-secondary/50 p-3"
+                      >
+                        <div className="min-w-0 flex-1">
+                          <p className="truncate text-sm font-medium">{ext.name}</p>
+                          <code className="text-xs text-muted-foreground truncate block">
+                            chrome.google.com/webstore/detail/{ext.id}
+                          </code>
+                        </div>
+                        <div className="flex gap-1">
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={() => {
+                              const linkHtml = `<a href="https://chromewebstore.google.com/detail/${ext.id}" target="_blank" rel="noopener">${ext.name}</a>`;
+                              navigator.clipboard.writeText(linkHtml);
+                              toast({ title: "Copied", description: "Extension link HTML copied" });
+                            }}
+                          >
+                            <Copy className="h-4 w-4" />
+                          </Button>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={() => window.open(`https://chromewebstore.google.com/detail/${ext.id}`, "_blank")}
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                          </Button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Quick Link Generator */}
+              <div className="glass-card p-6">
+                <div className="mb-4 flex items-center gap-3">
+                  <LinkIcon className="h-8 w-8 text-purple-500" />
+                  <div>
+                    <h3 className="font-heading text-lg font-semibold">Quick Link Generator</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Generate HTML links quickly
+                    </p>
+                  </div>
+                </div>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <div>
+                    <Label className="mb-2 block">Article to Link</Label>
+                    <Select
+                      onValueChange={(slug) => {
+                        const article = articles.find(a => a.slug === slug);
+                        if (article) {
+                          const linkHtml = `<a href="/blog/${article.slug}">${article.title}</a>`;
+                          navigator.clipboard.writeText(linkHtml);
+                          toast({ title: "Link Copied!", description: `Internal link for "${article.title}" copied` });
+                        }
+                      }}
+                    >
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select article to copy link" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {articles.filter(a => a.status === "published").map((article) => (
+                          <SelectItem key={article.id} value={article.slug}>
+                            {article.title.length > 50 ? article.title.substring(0, 50) + "..." : article.title}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div>
+                    <Label className="mb-2 block">All Published Links (Markdown)</Label>
+                    <Button
+                      variant="secondary"
+                      className="w-full"
+                      onClick={() => {
+                        const links = articles
+                          .filter(a => a.status === "published")
+                          .map(a => `- [${a.title}](/blog/${a.slug})`)
+                          .join("\n");
+                        navigator.clipboard.writeText(links);
+                        toast({ title: "Copied!", description: "All article links copied as Markdown" });
+                      }}
+                    >
+                      <Copy className="mr-2 h-4 w-4" />
+                      Copy All Links (Markdown)
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Related Articles Helper */}
+              <div className="glass-card p-6">
+                <div className="mb-4 flex items-center gap-3">
+                  <Tag className="h-8 w-8 text-blue-500" />
+                  <div>
+                    <h3 className="font-heading text-lg font-semibold">Related Articles by Category</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Find articles to link between
+                    </p>
+                  </div>
+                </div>
+                <div className="grid gap-4 md:grid-cols-3">
+                  {[...new Set(articles.map(a => a.category))].filter(Boolean).map((category) => (
+                    <div key={category} className="rounded-lg border border-border p-3">
+                      <h4 className="mb-2 font-medium">{category}</h4>
+                      <div className="space-y-1">
+                        {articles.filter(a => a.category === category && a.status === "published").slice(0, 3).map((article) => (
+                          <button
+                            key={article.id}
+                            className="block w-full truncate rounded bg-muted/50 px-2 py-1 text-left text-xs hover:bg-muted"
+                            onClick={() => {
+                              const linkHtml = `<a href="/blog/${article.slug}">${article.title}</a>`;
+                              navigator.clipboard.writeText(linkHtml);
+                              toast({ title: "Copied", description: "Link copied to clipboard" });
+                            }}
+                          >
+                            {article.title.length > 30 ? article.title.substring(0, 30) + "..." : article.title}
+                          </button>
+                        ))}
+                        {articles.filter(a => a.category === category && a.status === "published").length > 3 && (
+                          <p className="text-xs text-muted-foreground">
+                            +{articles.filter(a => a.category === category && a.status === "published").length - 3} more
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </TabsContent>
 
