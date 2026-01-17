@@ -1,4 +1,5 @@
-import { Chrome, Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Chrome, Github, Twitter, Linkedin, Mail, Settings } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const footerLinks = {
@@ -114,9 +115,18 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground">
             © 2024 ExtensionHub. All rights reserved.
           </p>
-          <p className="text-sm text-muted-foreground">
-            Made with ❤️ for Chrome users worldwide
-          </p>
+          <div className="flex items-center gap-4">
+            <p className="text-sm text-muted-foreground">
+              Made with ❤️ for Chrome users worldwide
+            </p>
+            <Link 
+              to="/settings" 
+              className="flex items-center gap-1 text-xs text-muted-foreground/50 transition-colors hover:text-muted-foreground"
+              title="Settings"
+            >
+              <Settings className="h-3 w-3" />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

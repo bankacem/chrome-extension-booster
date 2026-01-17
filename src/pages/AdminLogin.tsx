@@ -31,7 +31,7 @@ const AdminLogin = () => {
         title: "Welcome Admin!",
         description: "Successfully logged in to the dashboard",
       });
-      navigate("/admin/dashboard");
+      navigate("/settings/manage");
     } else {
       toast({
         title: "Access Denied",
@@ -57,7 +57,7 @@ const AdminLogin = () => {
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                 <Shield className="h-8 w-8 text-primary" />
               </div>
-              <h1 className="font-heading text-2xl font-bold">Admin Login</h1>
+              <h1 className="font-heading text-2xl font-bold">Settings</h1>
               <p className="mt-2 text-sm text-muted-foreground">
                 Enter your credentials to access the dashboard
               </p>
