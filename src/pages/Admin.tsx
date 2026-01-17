@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
   Plus, Edit, Trash2, Eye, Calendar, Clock, Search, 
   Download, Upload, FileText, Settings, BarChart3, Tag,
-  Save, X, Image, Link as LinkIcon, Bold, Italic, List
+  Save, X, Image, Link as LinkIcon, Database, RefreshCw,
+  LogOut, Globe, Archive, Shield, Copy, ExternalLink
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
 import {
   Select,
   SelectContent,
@@ -34,28 +35,42 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-import Navbar from "@/components/Navbar";
 
 interface Article {
   id: string;
   title: string;
   slug: string;
   content: string;
-  excerpt: string;
-  featured_image: string;
-  category: string;
-  tags: string[];
-  keywords: string[];
-  meta_description: string;
+  excerpt: string | null;
+  featured_image: string | null;
+  category: string | null;
+  tags: string[] | null;
+  keywords: string[] | null;
+  meta_description: string | null;
   status: string;
   published_at: string | null;
   scheduled_at: string | null;
-  author: string;
-  views: number;
-  read_time: number;
+  author: string | null;
+  views: number | null;
+  read_time: number | null;
   created_at: string;
   updated_at: string;
 }
+
+interface BackupData {
+  version: string;
+  exportedAt: string;
+  website: string;
+  articles: Article[];
+  metadata: {
+    totalArticles: number;
+    publishedCount: number;
+    draftCount: number;
+    scheduledCount: number;
+  };
+}
+
+const WEBSITE_URL = "https://www.extensionto.com";
 
 const defaultArticle: Partial<Article> = {
   title: "",
@@ -81,11 +96,28 @@ const Admin = () => {
   const [filterStatus, setFilterStatus] = useState<string>("all");
   const [tagsInput, setTagsInput] = useState("");
   const [keywordsInput, setKeywordsInput] = useState("");
+  const navigate = useNavigate();
   const { toast } = useToast();
 
   useEffect(() => {
+    // Check authentication
+    const isAuthenticated = localStorage.getItem("admin_authenticated");
+    if (!isAuthenticated) {
+      navigate("/admin");
+      return;
+    }
     fetchArticles();
-  }, []);
+  }, [navigate]);
+
+  const handleLogout = () => {
+    localStorage.removeItem("admin_authenticated");
+    localStorage.removeItem("admin_email");
+    toast({
+      title: "Logged Out",
+      description: "You have been successfully logged out",
+    });
+    navigate("/admin");
+  };
 
   const fetchArticles = async () => {
     try {
@@ -134,6 +166,7 @@ const Admin = () => {
         tags: tagsInput.split(",").map((t) => t.trim()).filter(Boolean),
         keywords: keywordsInput.split(",").map((k) => k.trim()).filter(Boolean),
         published_at: currentArticle.status === "published" ? new Date().toISOString() : null,
+        scheduled_at: currentArticle.status === "scheduled" ? currentArticle.scheduled_at : null,
       };
 
       if (currentArticle.id) {
@@ -189,7 +222,37 @@ const Admin = () => {
     setIsEditing(true);
   };
 
-  const handleExport = () => {
+  // Full backup export
+  const handleFullBackup = () => {
+    const backupData: BackupData = {
+      version: "1.0",
+      exportedAt: new Date().toISOString(),
+      website: WEBSITE_URL,
+      articles: articles,
+      metadata: {
+        totalArticles: articles.length,
+        publishedCount: articles.filter((a) => a.status === "published").length,
+        draftCount: articles.filter((a) => a.status === "draft").length,
+        scheduledCount: articles.filter((a) => a.status === "scheduled").length,
+      },
+    };
+
+    const dataStr = JSON.stringify(backupData, null, 2);
+    const dataBlob = new Blob([dataStr], { type: "application/json" });
+    const url = URL.createObjectURL(dataBlob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `extensionto-backup-${new Date().toISOString().split("T")[0]}.json`;
+    link.click();
+    URL.revokeObjectURL(url);
+    toast({ 
+      title: "Backup Created", 
+      description: `Full backup exported with ${articles.length} articles` 
+    });
+  };
+
+  // Export articles only
+  const handleExportArticles = () => {
     const dataStr = JSON.stringify(articles, null, 2);
     const dataBlob = new Blob([dataStr], { type: "application/json" });
     const url = URL.createObjectURL(dataBlob);
@@ -201,51 +264,121 @@ const Admin = () => {
     toast({ title: "Success", description: "Articles exported successfully" });
   };
 
-  const handleImport = async (event: React.ChangeEvent<HTMLInputElement>) => {
+  // Restore from backup
+  const handleRestoreBackup = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    const confirmRestore = confirm(
+      "WARNING: This will replace ALL existing articles with the backup data. Are you sure you want to continue?"
+    );
+    if (!confirmRestore) return;
+
+    try {
+      const text = await file.text();
+      const backupData = JSON.parse(text);
+
+      // Check if it's a full backup or just articles array
+      const articlesToRestore = backupData.articles || backupData;
+
+      if (!Array.isArray(articlesToRestore)) {
+        throw new Error("Invalid backup format");
+      }
+
+      // Delete all existing articles
+      const { error: deleteError } = await supabase
+        .from("articles")
+        .delete()
+        .neq("id", "00000000-0000-0000-0000-000000000000"); // Delete all
+
+      if (deleteError) throw deleteError;
+
+      // Insert restored articles
+      for (const article of articlesToRestore) {
+        const { id, created_at, updated_at, ...articleData } = article;
+        await supabase.from("articles").insert([articleData]);
+      }
+
+      toast({ 
+        title: "Backup Restored", 
+        description: `Successfully restored ${articlesToRestore.length} articles` 
+      });
+      fetchArticles();
+    } catch (error: any) {
+      console.error("Error restoring backup:", error);
+      toast({
+        title: "Restore Failed",
+        description: error.message || "Failed to restore backup. Check file format.",
+        variant: "destructive",
+      });
+    }
+  };
+
+  // Import articles (add to existing)
+  const handleImportArticles = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (!file) return;
 
     try {
       const text = await file.text();
-      const importedArticles = JSON.parse(text);
+      const importedData = JSON.parse(text);
+      const articlesToImport = importedData.articles || importedData;
 
-      for (const article of importedArticles) {
-        const { id, created_at, updated_at, ...articleData } = article;
-        await supabase.from("articles").insert([articleData]);
+      if (!Array.isArray(articlesToImport)) {
+        throw new Error("Invalid import format");
       }
 
-      toast({ title: "Success", description: `Imported ${importedArticles.length} articles` });
+      let importedCount = 0;
+      for (const article of articlesToImport) {
+        const { id, created_at, updated_at, ...articleData } = article;
+        
+        // Check if article with same slug exists
+        const { data: existing } = await supabase
+          .from("articles")
+          .select("id")
+          .eq("slug", articleData.slug)
+          .single();
+
+        if (!existing) {
+          await supabase.from("articles").insert([articleData]);
+          importedCount++;
+        }
+      }
+
+      toast({ 
+        title: "Import Complete", 
+        description: `Imported ${importedCount} new articles (${articlesToImport.length - importedCount} duplicates skipped)` 
+      });
       fetchArticles();
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error importing articles:", error);
       toast({
-        title: "Error",
-        description: "Failed to import articles. Check file format.",
+        title: "Import Failed",
+        description: error.message || "Failed to import articles. Check file format.",
         variant: "destructive",
       });
     }
   };
 
   const generateSitemap = () => {
-    const baseUrl = window.location.origin;
     const publishedArticles = articles.filter((a) => a.status === "published");
     
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>${baseUrl}/</loc>
+    <loc>${WEBSITE_URL}/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>${baseUrl}/blog</loc>
+    <loc>${WEBSITE_URL}/blog</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 ${publishedArticles
   .map(
     (article) => `  <url>
-    <loc>${baseUrl}/blog/${article.slug}</loc>
+    <loc>${WEBSITE_URL}/blog/${article.slug}</loc>
     <lastmod>${new Date(article.updated_at).toISOString().split("T")[0]}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -261,20 +394,20 @@ ${publishedArticles
     link.download = "sitemap.xml";
     link.click();
     URL.revokeObjectURL(url);
-    toast({ title: "Success", description: "Sitemap generated successfully" });
+    toast({ title: "Success", description: "Sitemap generated for extensionto.com" });
   };
 
   const generateRobotsTxt = () => {
-    const baseUrl = window.location.origin;
     const robots = `User-agent: *
 Allow: /
 Allow: /blog
 Allow: /blog/*
 
-Sitemap: ${baseUrl}/sitemap.xml
+Sitemap: ${WEBSITE_URL}/sitemap.xml
 
 # Block admin pages
-Disallow: /admin`;
+Disallow: /admin
+Disallow: /admin/*`;
 
     const blob = new Blob([robots], { type: "text/plain" });
     const url = URL.createObjectURL(blob);
@@ -283,7 +416,13 @@ Disallow: /admin`;
     link.download = "robots.txt";
     link.click();
     URL.revokeObjectURL(url);
-    toast({ title: "Success", description: "robots.txt generated successfully" });
+    toast({ title: "Success", description: "robots.txt generated" });
+  };
+
+  const copyArticleUrl = (slug: string) => {
+    const url = `${WEBSITE_URL}/blog/${slug}`;
+    navigator.clipboard.writeText(url);
+    toast({ title: "Copied", description: "Article URL copied to clipboard" });
   };
 
   const filteredArticles = articles.filter((article) => {
@@ -302,43 +441,75 @@ Disallow: /admin`;
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      {/* Admin Header */}
+      <header className="fixed top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-16 items-center justify-between px-4">
+          <div className="flex items-center gap-3">
+            <Shield className="h-6 w-6 text-primary" />
+            <div>
+              <h1 className="font-heading text-lg font-bold">Admin Dashboard</h1>
+              <p className="text-xs text-muted-foreground">extensionto.com</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="hidden text-sm text-muted-foreground md:inline">
+              {localStorage.getItem("admin_email")}
+            </span>
+            <Button variant="outline" size="sm" onClick={handleLogout}>
+              <LogOut className="mr-2 h-4 w-4" />
+              Logout
+            </Button>
+          </div>
+        </div>
+      </header>
       
       <main className="container mx-auto px-4 pt-24 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          {/* Header */}
-          <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <div>
-              <h1 className="font-heading text-3xl font-bold">Admin Dashboard</h1>
-              <p className="text-muted-foreground">Manage your blog articles and SEO</p>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              <Button onClick={() => setIsEditing(true)}>
-                <Plus className="mr-2 h-4 w-4" />
-                New Article
+          {/* Action Buttons */}
+          <div className="mb-8 flex flex-wrap gap-2">
+            <Button onClick={() => setIsEditing(true)}>
+              <Plus className="mr-2 h-4 w-4" />
+              New Article
+            </Button>
+            <Button variant="outline" onClick={handleExportArticles}>
+              <Download className="mr-2 h-4 w-4" />
+              Export Articles
+            </Button>
+            <label>
+              <Button variant="outline" asChild>
+                <span>
+                  <Upload className="mr-2 h-4 w-4" />
+                  Import Articles
+                </span>
               </Button>
-              <Button variant="outline" onClick={handleExport}>
-                <Download className="mr-2 h-4 w-4" />
-                Export
+              <input
+                type="file"
+                accept=".json"
+                onChange={handleImportArticles}
+                className="hidden"
+              />
+            </label>
+            <Button variant="secondary" onClick={handleFullBackup}>
+              <Database className="mr-2 h-4 w-4" />
+              Full Backup
+            </Button>
+            <label>
+              <Button variant="secondary" asChild>
+                <span>
+                  <RefreshCw className="mr-2 h-4 w-4" />
+                  Restore Backup
+                </span>
               </Button>
-              <label>
-                <Button variant="outline" asChild>
-                  <span>
-                    <Upload className="mr-2 h-4 w-4" />
-                    Import
-                  </span>
-                </Button>
-                <input
-                  type="file"
-                  accept=".json"
-                  onChange={handleImport}
-                  className="hidden"
-                />
-              </label>
-            </div>
+              <input
+                type="file"
+                accept=".json"
+                onChange={handleRestoreBackup}
+                className="hidden"
+              />
+            </label>
           </div>
 
           {/* Stats Cards */}
@@ -394,6 +565,7 @@ Disallow: /admin`;
             <TabsList>
               <TabsTrigger value="articles">Articles</TabsTrigger>
               <TabsTrigger value="seo">SEO Tools</TabsTrigger>
+              <TabsTrigger value="backup">Backup & Restore</TabsTrigger>
             </TabsList>
 
             <TabsContent value="articles" className="space-y-4">
@@ -452,7 +624,14 @@ Disallow: /admin`;
                     ) : (
                       filteredArticles.map((article) => (
                         <TableRow key={article.id}>
-                          <TableCell className="font-medium">{article.title}</TableCell>
+                          <TableCell>
+                            <div>
+                              <p className="font-medium">{article.title}</p>
+                              <p className="text-xs text-muted-foreground">
+                                {WEBSITE_URL}/blog/{article.slug}
+                              </p>
+                            </div>
+                          </TableCell>
                           <TableCell>{article.category}</TableCell>
                           <TableCell>
                             <span
@@ -472,11 +651,20 @@ Disallow: /admin`;
                             {new Date(article.created_at).toLocaleDateString()}
                           </TableCell>
                           <TableCell className="text-right">
-                            <div className="flex items-center justify-end gap-2">
+                            <div className="flex items-center justify-end gap-1">
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                onClick={() => copyArticleUrl(article.slug)}
+                                title="Copy URL"
+                              >
+                                <Copy className="h-4 w-4" />
+                              </Button>
                               <Button
                                 variant="ghost"
                                 size="icon"
                                 onClick={() => window.open(`/blog/${article.slug}`, "_blank")}
+                                title="Preview"
                               >
                                 <Eye className="h-4 w-4" />
                               </Button>
@@ -484,6 +672,7 @@ Disallow: /admin`;
                                 variant="ghost"
                                 size="icon"
                                 onClick={() => handleEdit(article)}
+                                title="Edit"
                               >
                                 <Edit className="h-4 w-4" />
                               </Button>
@@ -491,6 +680,7 @@ Disallow: /admin`;
                                 variant="ghost"
                                 size="icon"
                                 onClick={() => handleDelete(article.id)}
+                                title="Delete"
                               >
                                 <Trash2 className="h-4 w-4 text-destructive" />
                               </Button>
@@ -507,9 +697,17 @@ Disallow: /admin`;
             <TabsContent value="seo" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="glass-card p-6">
-                  <h3 className="mb-4 font-heading text-lg font-semibold">Sitemap Generator</h3>
+                  <div className="mb-4 flex items-center gap-3">
+                    <Globe className="h-8 w-8 text-primary" />
+                    <div>
+                      <h3 className="font-heading text-lg font-semibold">Sitemap Generator</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Generate XML sitemap for {WEBSITE_URL}
+                      </p>
+                    </div>
+                  </div>
                   <p className="mb-4 text-sm text-muted-foreground">
-                    Generate an XML sitemap for search engine indexing.
+                    Includes {stats.published} published articles for search engine indexing.
                   </p>
                   <Button onClick={generateSitemap}>
                     <FileText className="mr-2 h-4 w-4" />
@@ -517,13 +715,152 @@ Disallow: /admin`;
                   </Button>
                 </div>
                 <div className="glass-card p-6">
-                  <h3 className="mb-4 font-heading text-lg font-semibold">Robots.txt Generator</h3>
+                  <div className="mb-4 flex items-center gap-3">
+                    <Settings className="h-8 w-8 text-primary" />
+                    <div>
+                      <h3 className="font-heading text-lg font-semibold">Robots.txt Generator</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Crawler instructions for search engines
+                      </p>
+                    </div>
+                  </div>
                   <p className="mb-4 text-sm text-muted-foreground">
-                    Generate a robots.txt file for crawler instructions.
+                    Allows indexing of public pages and blocks admin areas.
                   </p>
                   <Button onClick={generateRobotsTxt}>
                     <Settings className="mr-2 h-4 w-4" />
                     Generate robots.txt
+                  </Button>
+                </div>
+              </div>
+
+              {/* URL Preview */}
+              <div className="glass-card p-6">
+                <h3 className="mb-4 font-heading text-lg font-semibold">Published Article URLs</h3>
+                <div className="space-y-2 max-h-64 overflow-y-auto">
+                  {articles
+                    .filter((a) => a.status === "published")
+                    .map((article) => (
+                      <div
+                        key={article.id}
+                        className="flex items-center justify-between rounded-lg bg-secondary/50 p-3"
+                      >
+                        <div className="min-w-0 flex-1">
+                          <p className="truncate font-medium">{article.title}</p>
+                          <p className="truncate text-xs text-muted-foreground">
+                            {WEBSITE_URL}/blog/{article.slug}
+                          </p>
+                        </div>
+                        <div className="flex gap-1">
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            onClick={() => copyArticleUrl(article.slug)}
+                          >
+                            <Copy className="h-4 w-4" />
+                          </Button>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            onClick={() => window.open(`${WEBSITE_URL}/blog/${article.slug}`, "_blank")}
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                          </Button>
+                        </div>
+                      </div>
+                    ))}
+                  {stats.published === 0 && (
+                    <p className="text-center py-4 text-muted-foreground">
+                      No published articles yet
+                    </p>
+                  )}
+                </div>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="backup" className="space-y-4">
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="glass-card p-6">
+                  <div className="mb-4 flex items-center gap-3">
+                    <Database className="h-8 w-8 text-green-500" />
+                    <div>
+                      <h3 className="font-heading text-lg font-semibold">Full Backup</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Download complete site backup
+                      </p>
+                    </div>
+                  </div>
+                  <p className="mb-4 text-sm text-muted-foreground">
+                    Exports all {stats.total} articles with metadata to a JSON file.
+                    Use this to restore your site in case of data loss.
+                  </p>
+                  <Button onClick={handleFullBackup} className="w-full">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download Full Backup
+                  </Button>
+                </div>
+
+                <div className="glass-card p-6">
+                  <div className="mb-4 flex items-center gap-3">
+                    <RefreshCw className="h-8 w-8 text-blue-500" />
+                    <div>
+                      <h3 className="font-heading text-lg font-semibold">Restore Backup</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Restore from a backup file
+                      </p>
+                    </div>
+                  </div>
+                  <p className="mb-4 text-sm text-muted-foreground">
+                    ⚠️ Warning: This will replace ALL existing articles with the backup data.
+                  </p>
+                  <label className="w-full">
+                    <Button variant="outline" className="w-full" asChild>
+                      <span>
+                        <Upload className="mr-2 h-4 w-4" />
+                        Upload Backup File
+                      </span>
+                    </Button>
+                    <input
+                      type="file"
+                      accept=".json"
+                      onChange={handleRestoreBackup}
+                      className="hidden"
+                    />
+                  </label>
+                </div>
+              </div>
+
+              <div className="glass-card p-6">
+                <div className="mb-4 flex items-center gap-3">
+                  <Archive className="h-8 w-8 text-purple-500" />
+                  <div>
+                    <h3 className="font-heading text-lg font-semibold">Import Articles</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Add articles from JSON file
+                    </p>
+                  </div>
+                </div>
+                <p className="mb-4 text-sm text-muted-foreground">
+                  Import articles without deleting existing ones. Duplicates (same slug) will be skipped.
+                </p>
+                <div className="flex gap-2">
+                  <label className="flex-1">
+                    <Button variant="secondary" className="w-full" asChild>
+                      <span>
+                        <Upload className="mr-2 h-4 w-4" />
+                        Import JSON
+                      </span>
+                    </Button>
+                    <input
+                      type="file"
+                      accept=".json"
+                      onChange={handleImportArticles}
+                      className="hidden"
+                    />
+                  </label>
+                  <Button variant="outline" onClick={handleExportArticles}>
+                    <Download className="mr-2 h-4 w-4" />
+                    Export Articles
                   </Button>
                 </div>
               </div>
@@ -560,14 +897,19 @@ Disallow: /admin`;
               </div>
               <div className="space-y-2">
                 <Label htmlFor="slug">Slug (URL)</Label>
-                <Input
-                  id="slug"
-                  value={currentArticle.slug || ""}
-                  onChange={(e) =>
-                    setCurrentArticle({ ...currentArticle, slug: e.target.value })
-                  }
-                  placeholder="article-url-slug"
-                />
+                <div className="space-y-1">
+                  <Input
+                    id="slug"
+                    value={currentArticle.slug || ""}
+                    onChange={(e) =>
+                      setCurrentArticle({ ...currentArticle, slug: e.target.value })
+                    }
+                    placeholder="article-url-slug"
+                  />
+                  <p className="text-xs text-muted-foreground">
+                    {WEBSITE_URL}/blog/{currentArticle.slug || "your-article-slug"}
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -589,6 +931,9 @@ Disallow: /admin`;
                     <SelectItem value="Tips">Tips & Tricks</SelectItem>
                     <SelectItem value="News">News</SelectItem>
                     <SelectItem value="Review">Review</SelectItem>
+                    <SelectItem value="Chrome Extensions">Chrome Extensions</SelectItem>
+                    <SelectItem value="Productivity">Productivity</SelectItem>
+                    <SelectItem value="Security">Security</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -626,6 +971,20 @@ Disallow: /admin`;
               </div>
             </div>
 
+            {currentArticle.status === "scheduled" && (
+              <div className="space-y-2">
+                <Label htmlFor="scheduled_at">Schedule Date</Label>
+                <Input
+                  id="scheduled_at"
+                  type="datetime-local"
+                  value={currentArticle.scheduled_at?.slice(0, 16) || ""}
+                  onChange={(e) =>
+                    setCurrentArticle({ ...currentArticle, scheduled_at: e.target.value })
+                  }
+                />
+              </div>
+            )}
+
             <div className="space-y-2">
               <Label htmlFor="featured_image">Featured Image URL</Label>
               <Input
@@ -660,7 +1019,7 @@ Disallow: /admin`;
                   setCurrentArticle({ ...currentArticle, content: e.target.value })
                 }
                 placeholder="<p>Your article content in HTML...</p>"
-                rows={10}
+                rows={12}
                 className="font-mono text-sm"
               />
             </div>
@@ -697,6 +1056,9 @@ Disallow: /admin`;
                 placeholder="SEO meta description (max 160 characters)"
                 rows={2}
               />
+              <p className="text-xs text-muted-foreground">
+                {(currentArticle.meta_description?.length || 0)}/160 characters
+              </p>
             </div>
 
             <div className="flex justify-end gap-2">
