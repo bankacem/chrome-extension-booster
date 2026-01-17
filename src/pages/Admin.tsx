@@ -5,12 +5,13 @@ import {
   Plus, Edit, Trash2, Eye, Calendar, Clock, Search, 
   Download, Upload, FileText, Settings, BarChart3, Tag,
   Save, X, Image, Link as LinkIcon, Database, RefreshCw,
-  LogOut, Globe, Archive, Shield, Copy, ExternalLink
+  LogOut, Globe, Archive, Shield, Copy, ExternalLink, CheckSquare, FileJson
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Select,
   SelectContent,
@@ -57,6 +58,24 @@ interface Article {
   updated_at: string;
 }
 
+interface ImportedPost {
+  id?: string;
+  title: string;
+  excerpt?: string;
+  content: string;
+  category?: string;
+  tags?: string[];
+  keywords?: string[];
+  meta_description?: string;
+  featured_image?: string;
+  author?: string;
+  read_time?: number;
+}
+
+interface ImportData {
+  posts?: ImportedPost[];
+}
+
 interface BackupData {
   version: string;
   exportedAt: string;
@@ -96,6 +115,15 @@ const Admin = () => {
   const [filterStatus, setFilterStatus] = useState<string>("all");
   const [tagsInput, setTagsInput] = useState("");
   const [keywordsInput, setKeywordsInput] = useState("");
+  
+  // Bulk import states
+  const [showBulkImport, setShowBulkImport] = useState(false);
+  const [importedPosts, setImportedPosts] = useState<ImportedPost[]>([]);
+  const [selectedPosts, setSelectedPosts] = useState<Set<string>>(new Set());
+  const [bulkStatus, setBulkStatus] = useState<"draft" | "published" | "scheduled">("draft");
+  const [bulkScheduleDate, setBulkScheduleDate] = useState("");
+  const [bulkScheduleInterval, setBulkScheduleInterval] = useState(1); // hours between each article
+  
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -314,7 +342,7 @@ const Admin = () => {
     }
   };
 
-  // Import articles (add to existing)
+  // Import articles (add to existing) - legacy format
   const handleImportArticles = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (!file) return;
@@ -355,6 +383,166 @@ const Admin = () => {
       toast({
         title: "Import Failed",
         description: error.message || "Failed to import articles. Check file format.",
+        variant: "destructive",
+      });
+    }
+  };
+
+  // Handle bulk JSON import with posts format
+  const handleBulkJsonUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    event.target.value = ''; // Reset input
+
+    try {
+      const text = await file.text();
+      const data: ImportData = JSON.parse(text);
+      
+      let postsToImport: ImportedPost[] = [];
+      
+      // Check for "posts" format first
+      if (data.posts && Array.isArray(data.posts)) {
+        postsToImport = data.posts;
+      } else if (Array.isArray(data)) {
+        postsToImport = data as ImportedPost[];
+      } else {
+        throw new Error("Invalid JSON format. Expected { posts: [...] } or array of articles");
+      }
+
+      if (postsToImport.length === 0) {
+        throw new Error("No articles found in the file");
+      }
+
+      setImportedPosts(postsToImport);
+      setSelectedPosts(new Set(postsToImport.map((_, i) => i.toString())));
+      setShowBulkImport(true);
+      
+      toast({ 
+        title: "File Loaded", 
+        description: `Found ${postsToImport.length} articles ready for import` 
+      });
+    } catch (error: any) {
+      console.error("Error parsing JSON:", error);
+      toast({
+        title: "Import Failed",
+        description: error.message || "Failed to parse JSON file",
+        variant: "destructive",
+      });
+    }
+  };
+
+  // Toggle post selection
+  const togglePostSelection = (index: string) => {
+    const newSelected = new Set(selectedPosts);
+    if (newSelected.has(index)) {
+      newSelected.delete(index);
+    } else {
+      newSelected.add(index);
+    }
+    setSelectedPosts(newSelected);
+  };
+
+  // Select/deselect all posts
+  const toggleSelectAll = () => {
+    if (selectedPosts.size === importedPosts.length) {
+      setSelectedPosts(new Set());
+    } else {
+      setSelectedPosts(new Set(importedPosts.map((_, i) => i.toString())));
+    }
+  };
+
+  // Process bulk import
+  const processBulkImport = async () => {
+    if (selectedPosts.size === 0) {
+      toast({
+        title: "No Articles Selected",
+        description: "Please select at least one article to import",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    const selectedIndices = Array.from(selectedPosts).map(i => parseInt(i)).sort((a, b) => a - b);
+    let importedCount = 0;
+    let skippedCount = 0;
+
+    try {
+      for (let i = 0; i < selectedIndices.length; i++) {
+        const post = importedPosts[selectedIndices[i]];
+        const slug = generateSlug(post.title);
+        
+        // Check for duplicate
+        const { data: existing } = await supabase
+          .from("articles")
+          .select("id")
+          .eq("slug", slug)
+          .single();
+
+        if (existing) {
+          skippedCount++;
+          continue;
+        }
+
+        // Calculate schedule date if scheduling
+        let scheduledAt = null;
+        let publishedAt = null;
+        let articleStatus = bulkStatus;
+
+        if (bulkStatus === "scheduled" && bulkScheduleDate) {
+          const baseDate = new Date(bulkScheduleDate);
+          baseDate.setHours(baseDate.getHours() + (i * bulkScheduleInterval));
+          scheduledAt = baseDate.toISOString();
+        } else if (bulkStatus === "published") {
+          publishedAt = new Date().toISOString();
+        }
+
+        // Clean content - extract just the body content if full HTML
+        let cleanContent = post.content;
+        if (cleanContent.includes('<!DOCTYPE html>') || cleanContent.includes('<html')) {
+          const bodyMatch = cleanContent.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+          if (bodyMatch) {
+            cleanContent = bodyMatch[1];
+          }
+        }
+
+        // Create article
+        const articleData = {
+          title: post.title.substring(0, 200), // Limit title length
+          slug,
+          content: cleanContent,
+          excerpt: post.excerpt || post.title.substring(0, 160),
+          category: post.category || "General",
+          tags: post.tags || [],
+          keywords: post.keywords || [],
+          meta_description: post.meta_description || post.excerpt?.substring(0, 160) || "",
+          featured_image: post.featured_image || null,
+          author: post.author || "Admin",
+          read_time: post.read_time || 5,
+          status: articleStatus,
+          published_at: publishedAt,
+          scheduled_at: scheduledAt,
+        };
+
+        const { error } = await supabase.from("articles").insert([articleData]);
+        if (!error) {
+          importedCount++;
+        }
+      }
+
+      toast({ 
+        title: "Bulk Import Complete", 
+        description: `Successfully imported ${importedCount} articles${skippedCount > 0 ? ` (${skippedCount} duplicates skipped)` : ''}` 
+      });
+      
+      setShowBulkImport(false);
+      setImportedPosts([]);
+      setSelectedPosts(new Set());
+      fetchArticles();
+    } catch (error: any) {
+      console.error("Error during bulk import:", error);
+      toast({
+        title: "Import Error",
+        description: error.message || "An error occurred during import",
         variant: "destructive",
       });
     }
@@ -474,24 +662,24 @@ Disallow: /admin/*`;
               <Plus className="mr-2 h-4 w-4" />
               New Article
             </Button>
-            <Button variant="outline" onClick={handleExportArticles}>
-              <Download className="mr-2 h-4 w-4" />
-              Export Articles
-            </Button>
             <label>
               <Button variant="outline" asChild>
                 <span>
-                  <Upload className="mr-2 h-4 w-4" />
-                  Import Articles
+                  <FileJson className="mr-2 h-4 w-4" />
+                  Bulk Import JSON
                 </span>
               </Button>
               <input
                 type="file"
                 accept=".json"
-                onChange={handleImportArticles}
+                onChange={handleBulkJsonUpload}
                 className="hidden"
               />
             </label>
+            <Button variant="outline" onClick={handleExportArticles}>
+              <Download className="mr-2 h-4 w-4" />
+              Export
+            </Button>
             <Button variant="secondary" onClick={handleFullBackup}>
               <Database className="mr-2 h-4 w-4" />
               Full Backup
@@ -500,7 +688,7 @@ Disallow: /admin/*`;
               <Button variant="secondary" asChild>
                 <span>
                   <RefreshCw className="mr-2 h-4 w-4" />
-                  Restore Backup
+                  Restore
                 </span>
               </Button>
               <input
@@ -1077,6 +1265,141 @@ Disallow: /admin/*`;
               <Button onClick={handleSave}>
                 <Save className="mr-2 h-4 w-4" />
                 Save Article
+              </Button>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Bulk Import Dialog */}
+      <Dialog open={showBulkImport} onOpenChange={setShowBulkImport}>
+        <DialogContent className="max-h-[90vh] max-w-5xl overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <FileJson className="h-5 w-5" />
+              Bulk Import Articles ({importedPosts.length} found)
+            </DialogTitle>
+          </DialogHeader>
+
+          <div className="space-y-6 py-4">
+            {/* Import Settings */}
+            <div className="glass-card p-4">
+              <h3 className="mb-4 font-semibold">Import Settings</h3>
+              <div className="grid gap-4 md:grid-cols-3">
+                <div className="space-y-2">
+                  <Label>Status for All Articles</Label>
+                  <Select value={bulkStatus} onValueChange={(v) => setBulkStatus(v as any)}>
+                    <SelectTrigger>
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="draft">Draft</SelectItem>
+                      <SelectItem value="published">Published</SelectItem>
+                      <SelectItem value="scheduled">Scheduled</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                
+                {bulkStatus === "scheduled" && (
+                  <>
+                    <div className="space-y-2">
+                      <Label>Start Schedule Date</Label>
+                      <Input
+                        type="datetime-local"
+                        value={bulkScheduleDate}
+                        onChange={(e) => setBulkScheduleDate(e.target.value)}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label>Hours Between Articles</Label>
+                      <Input
+                        type="number"
+                        min="1"
+                        max="168"
+                        value={bulkScheduleInterval}
+                        onChange={(e) => setBulkScheduleInterval(parseInt(e.target.value) || 1)}
+                      />
+                      <p className="text-xs text-muted-foreground">
+                        Articles will be scheduled {bulkScheduleInterval}h apart
+                      </p>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+
+            {/* Select All */}
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Checkbox
+                  checked={selectedPosts.size === importedPosts.length}
+                  onCheckedChange={toggleSelectAll}
+                />
+                <Label className="cursor-pointer" onClick={toggleSelectAll}>
+                  Select All ({selectedPosts.size}/{importedPosts.length})
+                </Label>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                {selectedPosts.size} articles selected for import
+              </p>
+            </div>
+
+            {/* Articles List */}
+            <div className="max-h-96 space-y-2 overflow-y-auto rounded-lg border border-border p-2">
+              {importedPosts.map((post, index) => (
+                <div
+                  key={index}
+                  className={`flex items-start gap-3 rounded-lg border p-3 transition-colors ${
+                    selectedPosts.has(index.toString())
+                      ? "border-primary bg-primary/5"
+                      : "border-border hover:bg-muted/50"
+                  }`}
+                >
+                  <Checkbox
+                    checked={selectedPosts.has(index.toString())}
+                    onCheckedChange={() => togglePostSelection(index.toString())}
+                  />
+                  <div className="min-w-0 flex-1">
+                    <h4 className="line-clamp-1 font-medium">
+                      {post.title.length > 100 ? post.title.substring(0, 100) + "..." : post.title}
+                    </h4>
+                    <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                      <span className="rounded bg-secondary px-2 py-0.5">
+                        {post.category || "General"}
+                      </span>
+                      <span>
+                        {post.content?.length || 0} characters
+                      </span>
+                      {post.tags && post.tags.length > 0 && (
+                        <span>{post.tags.length} tags</span>
+                      )}
+                    </div>
+                    {post.excerpt && (
+                      <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
+                        {post.excerpt.substring(0, 150)}...
+                      </p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Actions */}
+            <div className="flex justify-end gap-2">
+              <Button
+                variant="outline"
+                onClick={() => {
+                  setShowBulkImport(false);
+                  setImportedPosts([]);
+                  setSelectedPosts(new Set());
+                }}
+              >
+                <X className="mr-2 h-4 w-4" />
+                Cancel
+              </Button>
+              <Button onClick={processBulkImport} disabled={selectedPosts.size === 0}>
+                <CheckSquare className="mr-2 h-4 w-4" />
+                Import {selectedPosts.size} Articles
               </Button>
             </div>
           </div>
