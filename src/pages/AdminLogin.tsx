@@ -27,35 +27,39 @@ const AdminLogin = () => {
 
     // Check if already authenticated
     const checkAuth = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (session) {
-        // Check if user is admin
-        const { data: role } = await supabase
-          .from("user_roles")
-          .select("role")
-          .eq("user_id", session.user.id)
-          .single();
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
 
-        if (role?.role === "admin") {
-          navigate("/settings/manage", { replace: true });
-        }
+      if (!session) return;
+
+      const { data: role } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", session.user.id)
+        .maybeSingle();
+
+      if (role?.role === "admin") {
+        navigate("/settings/manage", { replace: true });
       }
     };
+
     checkAuth();
 
     // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
-      if (event === "SIGNED_IN" && session) {
-        // Check role
-        const { data: role } = await supabase
-          .from("user_roles")
-          .select("role")
-          .eq("user_id", session.user.id)
-          .single();
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if (event !== "SIGNED_IN" || !session) return;
 
-        if (role?.role === "admin") {
-          navigate("/settings/manage", { replace: true });
-        }
+      const { data: role } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", session.user.id)
+        .maybeSingle();
+
+      if (role?.role === "admin") {
+        navigate("/settings/manage", { replace: true });
       }
     });
 
@@ -75,11 +79,29 @@ const AdminLogin = () => {
       if (error) throw error;
 
       // Check if user is admin
-      const { data: role, error: roleError } = await supabase
+      let { data: role, error: roleError } = await supabase
         .from("user_roles")
         .select("role")
         .eq("user_id", data.user.id)
-        .single();
+        .maybeSingle();
+
+      // If no role yet, attempt to bootstrap the first admin (only works if no admin exists)
+      if (!role?.role) {
+        const { error: bootstrapError } = await supabase.from("user_roles").insert({
+          user_id: data.user.id,
+          role: "admin",
+        });
+
+        if (!bootstrapError) {
+          const result = await supabase
+            .from("user_roles")
+            .select("role")
+            .eq("user_id", data.user.id)
+            .maybeSingle();
+          role = result.data ?? null;
+          roleError = result.error ?? null;
+        }
+      }
 
       if (roleError || role?.role !== "admin") {
         // Not an admin
@@ -114,20 +136,25 @@ const AdminLogin = () => {
     setLoading(true);
 
     try {
-      // Sign up
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
-        options: {
-          emailRedirectTo: window.location.origin + "/settings",
-        },
       });
 
-      if (error) throw error;
-
-      if (!data.user) {
-        throw new Error("Sign up failed");
+      if (error) {
+        // If the user already exists, guide them to Sign In instead of failing silently
+        if (error.code === "user_already_exists" || /already registered/i.test(error.message ?? "")) {
+          setIsSignUp(false);
+          toast({
+            title: "الحساب موجود بالفعل",
+            description: "هذا البريد مسجّل مسبقًا. قم بتسجيل الدخول بدلًا من إنشاء حساب جديد.",
+          });
+          return;
+        }
+        throw error;
       }
+
+      if (!data.user) throw new Error("Sign up failed");
 
       // Try to assign admin role (will succeed only if no admin exists yet)
       const { error: roleError } = await supabase.from("user_roles").insert({
@@ -136,24 +163,23 @@ const AdminLogin = () => {
       });
 
       if (roleError) {
-        // Another admin already exists or other error
         toast({
-          title: "Account Created",
-          description: "Your account was created but you need admin approval for access.",
+          title: "تم إنشاء الحساب",
+          description: "تم إنشاء حسابك، لكن تحتاج صلاحية مدير للدخول.",
         });
         await supabase.auth.signOut();
         return;
       }
 
       toast({
-        title: "Admin Account Created!",
-        description: "You are now the admin. Logging you in...",
+        title: "تم إنشاء حساب المدير",
+        description: "تم تسجيل دخولك إلى لوحة التحكم.",
       });
       navigate("/settings/manage");
     } catch (error: any) {
       console.error("Sign up error:", error);
       toast({
-        title: "Sign Up Failed",
+        title: "فشل إنشاء الحساب",
         description: error.message || "Could not create account",
         variant: "destructive",
       });
