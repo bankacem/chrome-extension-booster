@@ -1,59 +1,171 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Lock, Mail, Eye, EyeOff, Shield } from "lucide-react";
+import { Lock, Mail, Eye, EyeOff, Shield, UserPlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 import Navbar from "@/components/Navbar";
-
-const ADMIN_EMAIL = "dhaichione@gmail.com";
-const ADMIN_PASSWORD = "0600231590m";
 
 const AdminLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [isSignUp, setIsSignUp] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   const { toast } = useToast();
 
   useEffect(() => {
-    // Check if already authenticated
-    const isAuthenticated = localStorage.getItem("admin_authenticated");
-    if (isAuthenticated) {
-      navigate("/settings/manage");
+    // Redirect /admin to /settings
+    if (location.pathname === "/admin") {
+      navigate("/settings", { replace: true });
     }
-  }, [navigate]);
+
+    // Check if already authenticated
+    const checkAuth = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session) {
+        // Check if user is admin
+        const { data: role } = await supabase
+          .from("user_roles")
+          .select("role")
+          .eq("user_id", session.user.id)
+          .single();
+
+        if (role?.role === "admin") {
+          navigate("/settings/manage", { replace: true });
+        }
+      }
+    };
+    checkAuth();
+
+    // Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if (event === "SIGNED_IN" && session) {
+        // Check role
+        const { data: role } = await supabase
+          .from("user_roles")
+          .select("role")
+          .eq("user_id", session.user.id)
+          .single();
+
+        if (role?.role === "admin") {
+          navigate("/settings/manage", { replace: true });
+        }
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, [navigate, location.pathname]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
-    // Simple admin authentication
-    if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
-      localStorage.setItem("admin_authenticated", "true");
-      localStorage.setItem("admin_email", email);
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (error) throw error;
+
+      // Check if user is admin
+      const { data: role, error: roleError } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", data.user.id)
+        .single();
+
+      if (roleError || role?.role !== "admin") {
+        // Not an admin
+        await supabase.auth.signOut();
+        toast({
+          title: "Access Denied",
+          description: "You are not authorized to access the admin panel",
+          variant: "destructive",
+        });
+        return;
+      }
+
       toast({
         title: "Welcome Admin!",
         description: "Successfully logged in to the dashboard",
       });
       navigate("/settings/manage");
-    } else {
+    } catch (error: any) {
+      console.error("Login error:", error);
       toast({
-        title: "Access Denied",
-        description: "Invalid email or password",
+        title: "Login Failed",
+        description: error.message || "Invalid email or password",
         variant: "destructive",
       });
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
+  };
+
+  const handleSignUp = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      // Sign up
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          emailRedirectTo: window.location.origin + "/settings",
+        },
+      });
+
+      if (error) throw error;
+
+      if (!data.user) {
+        throw new Error("Sign up failed");
+      }
+
+      // Try to assign admin role (will succeed only if no admin exists yet)
+      const { error: roleError } = await supabase.from("user_roles").insert({
+        user_id: data.user.id,
+        role: "admin",
+      });
+
+      if (roleError) {
+        // Another admin already exists or other error
+        toast({
+          title: "Account Created",
+          description: "Your account was created but you need admin approval for access.",
+        });
+        await supabase.auth.signOut();
+        return;
+      }
+
+      toast({
+        title: "Admin Account Created!",
+        description: "You are now the admin. Logging you in...",
+      });
+      navigate("/settings/manage");
+    } catch (error: any) {
+      console.error("Sign up error:", error);
+      toast({
+        title: "Sign Up Failed",
+        description: error.message || "Could not create account",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       <main className="container mx-auto flex min-h-[calc(100vh-80px)] items-center justify-center px-4 pt-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,13 +177,17 @@ const AdminLogin = () => {
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                 <Shield className="h-8 w-8 text-primary" />
               </div>
-              <h1 className="font-heading text-2xl font-bold">Settings</h1>
+              <h1 className="font-heading text-2xl font-bold">
+                {isSignUp ? "Create Admin Account" : "Admin Login"}
+              </h1>
               <p className="mt-2 text-sm text-muted-foreground">
-                Enter your credentials to access the dashboard
+                {isSignUp
+                  ? "First user becomes admin automatically"
+                  : "Enter your credentials to access the dashboard"}
               </p>
             </div>
 
-            <form onSubmit={handleLogin} className="space-y-6">
+            <form onSubmit={isSignUp ? handleSignUp : handleLogin} className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="email">Email Address</Label>
                 <div className="relative">
@@ -100,6 +216,7 @@ const AdminLogin = () => {
                     placeholder="••••••••"
                     className="pl-10 pr-10"
                     required
+                    minLength={6}
                   />
                   <button
                     type="button"
@@ -118,6 +235,11 @@ const AdminLogin = () => {
               <Button type="submit" className="w-full" disabled={loading}>
                 {loading ? (
                   <div className="h-5 w-5 animate-spin rounded-full border-2 border-current border-t-transparent" />
+                ) : isSignUp ? (
+                  <>
+                    <UserPlus className="mr-2 h-4 w-4" />
+                    Create Account
+                  </>
                 ) : (
                   <>
                     <Lock className="mr-2 h-4 w-4" />
@@ -128,7 +250,16 @@ const AdminLogin = () => {
             </form>
 
             <div className="mt-6 text-center">
-              <p className="text-xs text-muted-foreground">
+              <button
+                type="button"
+                onClick={() => setIsSignUp(!isSignUp)}
+                className="text-sm text-primary hover:underline"
+              >
+                {isSignUp
+                  ? "Already have an account? Sign in"
+                  : "First time? Create admin account"}
+              </button>
+              <p className="mt-4 text-xs text-muted-foreground">
                 Protected area. Authorized access only.
               </p>
             </div>
