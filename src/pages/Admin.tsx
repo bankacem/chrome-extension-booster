@@ -115,6 +115,7 @@ const Admin = () => {
   const [filterStatus, setFilterStatus] = useState<string>("all");
   const [tagsInput, setTagsInput] = useState("");
   const [keywordsInput, setKeywordsInput] = useState("");
+  const [importing, setImporting] = useState(false);
   
   // Bulk import states
   const [showBulkImport, setShowBulkImport] = useState(false);
@@ -128,23 +129,48 @@ const Admin = () => {
   const { toast } = useToast();
 
   useEffect(() => {
-    // Check authentication
-    const isAuthenticated = localStorage.getItem("admin_authenticated");
-    if (!isAuthenticated) {
-      navigate("/admin");
-      return;
-    }
-    fetchArticles();
+    // Check Supabase auth session
+    const checkAuth = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        navigate("/settings");
+        return;
+      }
+
+      // Verify admin role
+      const { data: role, error: roleError } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", session.user.id)
+        .single();
+
+      if (roleError || role?.role !== "admin") {
+        await supabase.auth.signOut();
+        navigate("/settings");
+        return;
+      }
+
+      fetchArticles();
+    };
+    checkAuth();
+
+    // Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === "SIGNED_OUT" || !session) {
+        navigate("/settings");
+      }
+    });
+
+    return () => subscription.unsubscribe();
   }, [navigate]);
 
-  const handleLogout = () => {
-    localStorage.removeItem("admin_authenticated");
-    localStorage.removeItem("admin_email");
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
     toast({
       title: "Logged Out",
       description: "You have been successfully logged out",
     });
-    navigate("/admin");
+    navigate("/settings");
   };
 
   const fetchArticles = async () => {
@@ -462,13 +488,15 @@ const Admin = () => {
       return;
     }
 
+    setImporting(true);
     const selectedIndices = Array.from(selectedPosts).map(i => parseInt(i)).sort((a, b) => a - b);
     let importedCount = 0;
     let skippedCount = 0;
+    const errors: string[] = [];
 
     try {
-      for (let i = 0; i < selectedIndices.length; i++) {
-        const post = importedPosts[selectedIndices[i]];
+      for (let idx = 0; idx < selectedIndices.length; idx++) {
+        const post = importedPosts[selectedIndices[idx]];
         const slug = generateSlug(post.title);
         
         // Check for duplicate
@@ -476,7 +504,7 @@ const Admin = () => {
           .from("articles")
           .select("id")
           .eq("slug", slug)
-          .single();
+          .maybeSingle();
 
         if (existing) {
           skippedCount++;
@@ -484,29 +512,22 @@ const Admin = () => {
         }
 
         // Calculate schedule date if scheduling
-        let scheduledAt = null;
-        let publishedAt = null;
-        let articleStatus = bulkStatus;
+        let scheduledAt: string | null = null;
+        let publishedAt: string | null = null;
+        const articleStatus = bulkStatus;
 
         if (bulkStatus === "scheduled") {
-          if (bulkScheduleDate) {
-            const baseDate = new Date(bulkScheduleDate);
-            // Add interval for each article (i * interval hours)
-            const scheduledTime = new Date(baseDate.getTime() + (importedCount * bulkScheduleInterval * 60 * 60 * 1000));
-            scheduledAt = scheduledTime.toISOString();
-          } else {
-            // If no date provided, schedule starting from now
-            const now = new Date();
-            const scheduledTime = new Date(now.getTime() + (importedCount * bulkScheduleInterval * 60 * 60 * 1000));
-            scheduledAt = scheduledTime.toISOString();
-          }
+          const baseDate = bulkScheduleDate ? new Date(bulkScheduleDate) : new Date();
+          // Add interval for each successfully imported article
+          const scheduledTime = new Date(baseDate.getTime() + (importedCount * bulkScheduleInterval * 60 * 60 * 1000));
+          scheduledAt = scheduledTime.toISOString();
         } else if (bulkStatus === "published") {
           publishedAt = new Date().toISOString();
         }
 
         // Clean content - extract just the body content if full HTML
-        let cleanContent = post.content;
-        if (cleanContent.includes('<!DOCTYPE html>') || cleanContent.includes('<html')) {
+        let cleanContent = post.content || "";
+        if (cleanContent.includes("<!DOCTYPE html>") || cleanContent.includes("<html")) {
           const bodyMatch = cleanContent.match(/<body[^>]*>([\s\S]*)<\/body>/i);
           if (bodyMatch) {
             cleanContent = bodyMatch[1];
@@ -515,7 +536,7 @@ const Admin = () => {
 
         // Create article
         const articleData = {
-          title: post.title.substring(0, 200), // Limit title length
+          title: post.title.substring(0, 200),
           slug,
           content: cleanContent,
           excerpt: post.excerpt || post.title.substring(0, 160),
@@ -532,16 +553,32 @@ const Admin = () => {
         };
 
         const { error } = await supabase.from("articles").insert([articleData]);
-        if (!error) {
+        if (error) {
+          console.error("Insert error for", slug, error);
+          errors.push(`${post.title.substring(0, 30)}... : ${error.message}`);
+        } else {
           importedCount++;
         }
       }
 
-      toast({ 
-        title: "Bulk Import Complete", 
-        description: `Successfully imported ${importedCount} articles${skippedCount > 0 ? ` (${skippedCount} duplicates skipped)` : ''}` 
-      });
-      
+      if (importedCount > 0) {
+        toast({ 
+          title: "Bulk Import Complete", 
+          description: `Successfully imported ${importedCount} articles${skippedCount > 0 ? ` (${skippedCount} duplicates skipped)` : ""}${errors.length > 0 ? ` (${errors.length} errors)` : ""}` 
+        });
+      } else if (errors.length > 0) {
+        toast({
+          title: "Import Failed",
+          description: errors[0],
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "No Articles Imported",
+          description: `All ${skippedCount} articles were duplicates`,
+        });
+      }
+
       setShowBulkImport(false);
       setImportedPosts([]);
       setSelectedPosts(new Set());
@@ -553,6 +590,8 @@ const Admin = () => {
         description: error.message || "An error occurred during import",
         variant: "destructive",
       });
+    } finally {
+      setImporting(false);
     }
   };
 
@@ -1608,9 +1647,18 @@ Disallow: /admin/*`;
                 <X className="mr-2 h-4 w-4" />
                 Cancel
               </Button>
-              <Button onClick={processBulkImport} disabled={selectedPosts.size === 0}>
-                <CheckSquare className="mr-2 h-4 w-4" />
-                Import {selectedPosts.size} Articles
+              <Button onClick={processBulkImport} disabled={selectedPosts.size === 0 || importing}>
+                {importing ? (
+                  <>
+                    <div className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
+                    Importing...
+                  </>
+                ) : (
+                  <>
+                    <CheckSquare className="mr-2 h-4 w-4" />
+                    Import {selectedPosts.size} Articles
+                  </>
+                )}
               </Button>
             </div>
           </div>
