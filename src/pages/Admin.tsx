@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
@@ -64,12 +64,19 @@ interface ImportedPost {
   excerpt?: string;
   content: string;
   category?: string;
-  tags?: string[];
-  keywords?: string[];
+  tags?: string[] | string;
+  keywords?: string[] | string;
   meta_description?: string;
   featured_image?: string;
   author?: string;
-  read_time?: number;
+  read_time?: number | string;
+
+  // Compatibility fields from other exporters
+  image?: string;
+  seoDesc?: string;
+  seoKeywords?: string | string[];
+  seoTitle?: string;
+  readingTime?: number | string;
 }
 
 interface ImportData {
@@ -115,6 +122,10 @@ const Admin = () => {
   const [filterStatus, setFilterStatus] = useState<string>("all");
   const [tagsInput, setTagsInput] = useState("");
   const [keywordsInput, setKeywordsInput] = useState("");
+
+  const [contentEditorMode, setContentEditorMode] = useState<"html" | "preview">("html");
+  const contentTextareaRef = useRef<HTMLTextAreaElement>(null);
+
   const [importing, setImporting] = useState(false);
   
   // Bulk import states
@@ -195,12 +206,122 @@ const Admin = () => {
   };
 
   const generateSlug = (title: string) => {
-    return title
+    const base = (title ?? "")
+      .normalize("NFKD")
       .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, "")
+      // keep letters/numbers (including Arabic), spaces and hyphens
+      .replace(/[^\p{L}\p{N}\s-]/gu, " ")
+      .trim()
       .replace(/\s+/g, "-")
       .replace(/-+/g, "-")
-      .trim();
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 120);
+
+    return base || `post-${Date.now()}`;
+  };
+
+  const normalizeStringList = (value: unknown): string[] => {
+    if (Array.isArray(value)) return value.map((v) => String(v).trim()).filter(Boolean);
+    if (typeof value === "string") {
+      return value
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean);
+    }
+    return [];
+  };
+
+  const parseReadTimeMinutes = (value: unknown): number => {
+    if (typeof value === "number" && Number.isFinite(value)) return Math.max(1, Math.round(value));
+    if (typeof value === "string") {
+      const m = value.match(/\d+/);
+      if (m) return Math.max(1, parseInt(m[0], 10));
+    }
+    return 5;
+  };
+
+  const deriveExcerptFromHtml = (html: string): string => {
+    try {
+      const doc = new DOMParser().parseFromString(html || "", "text/html");
+      const text = (doc.body.textContent || "")
+        .replace(/\s+/g, " ")
+        .trim();
+      return text.slice(0, 160);
+    } catch {
+      return "";
+    }
+  };
+
+  const pickBestTitle = (rawTitle: string, htmlTitle?: string | null) => {
+    const t = (rawTitle || "").trim();
+    const h = (htmlTitle || "").trim();
+
+    const looksLikePrompt =
+      /\bto give you the best title\b/i.test(t) ||
+      /\bhere are several\b/i.test(t) ||
+      t.includes("###") ||
+      t.includes("\n");
+
+    if (h && (!t || looksLikePrompt || t.length > 120)) return h;
+
+    // if title is multi-line, keep the first meaningful line
+    if (t.includes("\n")) {
+      const firstLine = t
+        .split("\n")
+        .map((s) => s.trim())
+        .filter(Boolean)[0];
+      return firstLine || h || "Untitled";
+    }
+
+    return t || h || "Untitled";
+  };
+
+  const normalizeImportedPost = (raw: any): ImportedPost => {
+    const rawContent = typeof raw?.content === "string" ? raw.content : "";
+
+    let htmlTitle: string | null = null;
+    try {
+      const doc = new DOMParser().parseFromString(rawContent || "", "text/html");
+      htmlTitle = doc.querySelector("h1")?.textContent?.trim() || doc.querySelector("title")?.textContent?.trim() || null;
+    } catch {
+      htmlTitle = null;
+    }
+
+    const title = pickBestTitle(typeof raw?.title === "string" ? raw.title : "", htmlTitle);
+
+    const tags = normalizeStringList(raw?.tags);
+    const keywords = normalizeStringList(raw?.keywords ?? raw?.seoKeywords);
+
+    const featured_image =
+      (typeof raw?.featured_image === "string" && raw.featured_image.trim())
+        ? raw.featured_image.trim()
+        : (typeof raw?.image === "string" && raw.image.trim())
+          ? raw.image.trim()
+          : undefined;
+
+    const excerptRaw = typeof raw?.excerpt === "string" ? raw.excerpt : "";
+    const excerpt = (excerptRaw && excerptRaw.length <= 500 ? excerptRaw : "") || deriveExcerptFromHtml(rawContent);
+
+    const meta_description =
+      (typeof raw?.meta_description === "string" ? raw.meta_description : "") ||
+      (typeof raw?.seoDesc === "string" ? raw.seoDesc : "") ||
+      excerpt;
+
+    const read_time = parseReadTimeMinutes(raw?.read_time ?? raw?.readingTime);
+
+    return {
+      id: typeof raw?.id === "string" ? raw.id : undefined,
+      title,
+      excerpt,
+      content: rawContent,
+      category: typeof raw?.category === "string" ? raw.category : undefined,
+      tags,
+      keywords,
+      meta_description,
+      featured_image,
+      author: typeof raw?.author === "string" ? raw.author : undefined,
+      read_time,
+    };
   };
 
   const handleSave = async () => {
@@ -418,14 +539,14 @@ const Admin = () => {
   const handleBulkJsonUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (!file) return;
-    event.target.value = ''; // Reset input
+    event.target.value = ""; // Reset input
 
     try {
       const text = await file.text();
       const data: ImportData = JSON.parse(text);
-      
+
       let postsToImport: ImportedPost[] = [];
-      
+
       // Check for "posts" format first
       if (data.posts && Array.isArray(data.posts)) {
         postsToImport = data.posts;
@@ -439,13 +560,15 @@ const Admin = () => {
         throw new Error("No articles found in the file");
       }
 
-      setImportedPosts(postsToImport);
-      setSelectedPosts(new Set(postsToImport.map((_, i) => i.toString())));
+      const normalized = postsToImport.map(normalizeImportedPost);
+
+      setImportedPosts(normalized);
+      setSelectedPosts(new Set(normalized.map((_, i) => i.toString())));
       setShowBulkImport(true);
-      
-      toast({ 
-        title: "File Loaded", 
-        description: `Found ${postsToImport.length} articles ready for import` 
+
+      toast({
+        title: "File Loaded",
+        description: `Found ${normalized.length} articles ready for import`,
       });
     } catch (error: any) {
       console.error("Error parsing JSON:", error);
@@ -489,16 +612,20 @@ const Admin = () => {
     }
 
     setImporting(true);
-    const selectedIndices = Array.from(selectedPosts).map(i => parseInt(i)).sort((a, b) => a - b);
+    const selectedIndices = Array.from(selectedPosts)
+      .map((i) => parseInt(i))
+      .sort((a, b) => a - b);
+
     let importedCount = 0;
     let skippedCount = 0;
     const errors: string[] = [];
 
     try {
       for (let idx = 0; idx < selectedIndices.length; idx++) {
-        const post = importedPosts[selectedIndices[idx]];
-        const slug = generateSlug(post.title);
-        
+        const rawPost = importedPosts[selectedIndices[idx]];
+        const post = normalizeImportedPost(rawPost);
+        const slug = generateSlug(post.title) || `post-${Date.now()}-${selectedIndices[idx]}`;
+
         // Check for duplicate
         const { data: existing } = await supabase
           .from("articles")
@@ -519,7 +646,9 @@ const Admin = () => {
         if (bulkStatus === "scheduled") {
           const baseDate = bulkScheduleDate ? new Date(bulkScheduleDate) : new Date();
           // Add interval for each successfully imported article
-          const scheduledTime = new Date(baseDate.getTime() + (importedCount * bulkScheduleInterval * 60 * 60 * 1000));
+          const scheduledTime = new Date(
+            baseDate.getTime() + importedCount * bulkScheduleInterval * 60 * 60 * 1000,
+          );
           scheduledAt = scheduledTime.toISOString();
         } else if (bulkStatus === "published") {
           publishedAt = new Date().toISOString();
@@ -534,19 +663,22 @@ const Admin = () => {
           }
         }
 
+        const excerpt = (post.excerpt || deriveExcerptFromHtml(cleanContent) || "").substring(0, 160);
+        const metaDescription = (post.meta_description || excerpt || "").substring(0, 160);
+
         // Create article
         const articleData = {
-          title: post.title.substring(0, 200),
+          title: (post.title || "Untitled").substring(0, 200),
           slug,
           content: cleanContent,
-          excerpt: post.excerpt || post.title.substring(0, 160),
+          excerpt,
           category: post.category || "General",
-          tags: post.tags || [],
-          keywords: post.keywords || [],
-          meta_description: post.meta_description || post.excerpt?.substring(0, 160) || "",
+          tags: normalizeStringList(post.tags),
+          keywords: normalizeStringList(post.keywords),
+          meta_description: metaDescription,
           featured_image: post.featured_image || null,
           author: post.author || "Admin",
-          read_time: post.read_time || 5,
+          read_time: parseReadTimeMinutes(post.read_time),
           status: articleStatus,
           published_at: publishedAt,
           scheduled_at: scheduledAt,
@@ -555,16 +687,18 @@ const Admin = () => {
         const { error } = await supabase.from("articles").insert([articleData]);
         if (error) {
           console.error("Insert error for", slug, error);
-          errors.push(`${post.title.substring(0, 30)}... : ${error.message}`);
+          errors.push(`${(post.title || slug).substring(0, 30)}... : ${error.message}`);
         } else {
           importedCount++;
         }
       }
 
       if (importedCount > 0) {
-        toast({ 
-          title: "Bulk Import Complete", 
-          description: `Successfully imported ${importedCount} articles${skippedCount > 0 ? ` (${skippedCount} duplicates skipped)` : ""}${errors.length > 0 ? ` (${errors.length} errors)` : ""}` 
+        toast({
+          title: "Bulk Import Complete",
+          description: `Successfully imported ${importedCount} articles${
+            skippedCount > 0 ? ` (${skippedCount} duplicates skipped)` : ""
+          }${errors.length > 0 ? ` (${errors.length} errors)` : ""}`,
         });
       } else if (errors.length > 0) {
         toast({
@@ -1449,17 +1583,123 @@ Disallow: /admin/*`;
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="content">Content (HTML)</Label>
-              <Textarea
-                id="content"
-                value={currentArticle.content || ""}
-                onChange={(e) =>
-                  setCurrentArticle({ ...currentArticle, content: e.target.value })
-                }
-                placeholder="<p>Your article content in HTML...</p>"
-                rows={12}
-                className="font-mono text-sm"
-              />
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <Label htmlFor="content">Content</Label>
+
+                <div className="flex flex-wrap items-center gap-2">
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant={contentEditorMode === "html" ? "default" : "outline"}
+                    onClick={() => setContentEditorMode("html")}
+                  >
+                    HTML
+                  </Button>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant={contentEditorMode === "preview" ? "default" : "outline"}
+                    onClick={() => setContentEditorMode("preview")}
+                  >
+                    <Eye className="mr-2 h-4 w-4" />
+                    Preview
+                  </Button>
+
+                  <div className="hidden h-6 w-px bg-border md:block" />
+
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => {
+                      const el = contentTextareaRef.current;
+                      if (!el) return;
+                      const value = currentArticle.content || "";
+                      const start = el.selectionStart ?? value.length;
+                      const end = el.selectionEnd ?? value.length;
+                      const selected = value.slice(start, end) || "Heading";
+                      const next = `${value.slice(0, start)}<h2>${selected}</h2>${value.slice(end)}`;
+                      setCurrentArticle((prev) => ({ ...prev, content: next }));
+                      requestAnimationFrame(() => {
+                        el.focus();
+                        el.setSelectionRange(start + 4, start + 4 + selected.length);
+                      });
+                    }}
+                  >
+                    H2
+                  </Button>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => {
+                      const el = contentTextareaRef.current;
+                      if (!el) return;
+                      const value = currentArticle.content || "";
+                      const start = el.selectionStart ?? value.length;
+                      const end = el.selectionEnd ?? value.length;
+                      const selected = value.slice(start, end) || "Heading";
+                      const next = `${value.slice(0, start)}<h3>${selected}</h3>${value.slice(end)}`;
+                      setCurrentArticle((prev) => ({ ...prev, content: next }));
+                      requestAnimationFrame(() => {
+                        el.focus();
+                        el.setSelectionRange(start + 4, start + 4 + selected.length);
+                      });
+                    }}
+                  >
+                    H3
+                  </Button>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => {
+                      const el = contentTextareaRef.current;
+                      if (!el) return;
+                      const value = currentArticle.content || "";
+                      const start = el.selectionStart ?? value.length;
+                      const end = el.selectionEnd ?? value.length;
+                      const table =
+                        "<table>\n  <thead>\n    <tr>\n      <th>Title</th>\n      <th>Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Row 1</td>\n      <td>...</td>\n    </tr>\n  </tbody>\n</table>\n";
+                      const next = `${value.slice(0, start)}${table}${value.slice(end)}`;
+                      setCurrentArticle((prev) => ({ ...prev, content: next }));
+                      requestAnimationFrame(() => {
+                        el.focus();
+                        el.setSelectionRange(start + table.length, start + table.length);
+                      });
+                    }}
+                  >
+                    Table
+                  </Button>
+                </div>
+              </div>
+
+              {contentEditorMode === "html" ? (
+                <Textarea
+                  id="content"
+                  ref={contentTextareaRef}
+                  value={currentArticle.content || ""}
+                  onChange={(e) => setCurrentArticle({ ...currentArticle, content: e.target.value })}
+                  placeholder="<h1>Title</h1>\n<p>Your article content in HTML...</p>"
+                  rows={12}
+                  className="font-mono text-sm"
+                />
+              ) : (
+                <div className="max-h-[420px] overflow-y-auto rounded-md border border-border bg-background p-4">
+                  <div
+                    className="prose prose-lg dark:prose-invert max-w-none"
+                    dangerouslySetInnerHTML={{
+                      __html: (currentArticle.content || "").includes("<!DOCTYPE html>")
+                        ? (currentArticle.content || "").replace(/^[\s\S]*?<body[^>]*>/i, "").replace(/<\/body>[\s\S]*$/i, "")
+                        : (currentArticle.content || ""),
+                    }}
+                  />
+                </div>
+              )}
+
+              <p className="text-xs text-muted-foreground">
+                استعمل H1/H2/H3 والجداول داخل HTML، ثم اضغط Preview لمعاينة شكل المقال مثل ووردبريس.
+              </p>
             </div>
 
             <div className="grid gap-4 md:grid-cols-2">
