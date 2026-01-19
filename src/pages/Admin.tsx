@@ -24,6 +24,8 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
+  DialogDescription,
+  DialogFooter,
 } from "@/components/ui/dialog";
 import {
   Table,
@@ -127,6 +129,8 @@ const Admin = () => {
   const contentTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   const [importing, setImporting] = useState(false);
+  const [deleting, setDeleting] = useState(false);
+  const [articleToDelete, setArticleToDelete] = useState<Article | null>(null);
   
   // Bulk import states
   const [showBulkImport, setShowBulkImport] = useState(false);
@@ -372,21 +376,41 @@ const Admin = () => {
     }
   };
 
-  const handleDelete = async (id: string) => {
-    if (!confirm("Are you sure you want to delete this article?")) return;
+  const confirmDelete = (article: Article) => {
+    setArticleToDelete(article);
+  };
 
+  const handleDelete = async () => {
+    if (!articleToDelete) return;
+    
+    setDeleting(true);
     try {
-      const { error } = await supabase.from("articles").delete().eq("id", id);
-      if (error) throw error;
+      console.log("Deleting article:", articleToDelete.id, articleToDelete.title);
+      
+      const { error, count } = await supabase
+        .from("articles")
+        .delete()
+        .eq("id", articleToDelete.id)
+        .select();
+      
+      if (error) {
+        console.error("Delete error details:", error);
+        throw error;
+      }
+      
+      console.log("Delete successful, affected rows:", count);
       toast({ title: "Success", description: "Article deleted successfully" });
+      setArticleToDelete(null);
       fetchArticles();
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error deleting article:", error);
       toast({
         title: "Error",
-        description: "Failed to delete article",
+        description: error?.message || "Failed to delete article. Check console for details.",
         variant: "destructive",
       });
+    } finally {
+      setDeleting(false);
     }
   };
 
@@ -1049,7 +1073,7 @@ Disallow: /admin/*`;
                               <Button
                                 variant="ghost"
                                 size="icon"
-                                onClick={() => handleDelete(article.id)}
+                                onClick={() => confirmDelete(article)}
                                 title="Delete"
                               >
                                 <Trash2 className="h-4 w-4 text-destructive" />
@@ -1902,6 +1926,36 @@ Disallow: /admin/*`;
               </Button>
             </div>
           </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Delete Confirmation Dialog */}
+      <Dialog open={!!articleToDelete} onOpenChange={(open) => !open && setArticleToDelete(null)}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Confirm Delete</DialogTitle>
+            <DialogDescription>
+              Are you sure you want to delete "{articleToDelete?.title}"? This action cannot be undone.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="gap-2">
+            <Button variant="outline" onClick={() => setArticleToDelete(null)} disabled={deleting}>
+              Cancel
+            </Button>
+            <Button variant="destructive" onClick={handleDelete} disabled={deleting}>
+              {deleting ? (
+                <>
+                  <div className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
+                  Deleting...
+                </>
+              ) : (
+                <>
+                  <Trash2 className="mr-2 h-4 w-4" />
+                  Delete
+                </>
+              )}
+            </Button>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </div>
