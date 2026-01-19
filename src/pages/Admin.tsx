@@ -1642,6 +1642,27 @@ Disallow: /admin/*`;
                       const start = el.selectionStart ?? value.length;
                       const end = el.selectionEnd ?? value.length;
                       const selected = value.slice(start, end) || "Heading";
+                      const next = `${value.slice(0, start)}<h1>${selected}</h1>${value.slice(end)}`;
+                      setCurrentArticle((prev) => ({ ...prev, content: next }));
+                      requestAnimationFrame(() => {
+                        el.focus();
+                        el.setSelectionRange(start + 4, start + 4 + selected.length);
+                      });
+                    }}
+                  >
+                    H1
+                  </Button>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => {
+                      const el = contentTextareaRef.current;
+                      if (!el) return;
+                      const value = currentArticle.content || "";
+                      const start = el.selectionStart ?? value.length;
+                      const end = el.selectionEnd ?? value.length;
+                      const selected = value.slice(start, end) || "Heading";
                       const next = `${value.slice(0, start)}<h2>${selected}</h2>${value.slice(end)}`;
                       setCurrentArticle((prev) => ({ ...prev, content: next }));
                       requestAnimationFrame(() => {
@@ -1672,6 +1693,27 @@ Disallow: /admin/*`;
                     }}
                   >
                     H3
+                  </Button>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => {
+                      const el = contentTextareaRef.current;
+                      if (!el) return;
+                      const value = currentArticle.content || "";
+                      const start = el.selectionStart ?? value.length;
+                      const end = el.selectionEnd ?? value.length;
+                      const selected = value.slice(start, end) || "Heading";
+                      const next = `${value.slice(0, start)}<h4>${selected}</h4>${value.slice(end)}`;
+                      setCurrentArticle((prev) => ({ ...prev, content: next }));
+                      requestAnimationFrame(() => {
+                        el.focus();
+                        el.setSelectionRange(start + 4, start + 4 + selected.length);
+                      });
+                    }}
+                  >
+                    H4
                   </Button>
                   <Button
                     type="button"
