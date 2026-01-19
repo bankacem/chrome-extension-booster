@@ -5,7 +5,8 @@ import {
   Plus, Edit, Trash2, Eye, Calendar, Clock, Search, 
   Download, Upload, FileText, Settings, BarChart3, Tag,
   Save, X, Image, Link as LinkIcon, Database, RefreshCw,
-  LogOut, Globe, Archive, Shield, Copy, ExternalLink, CheckSquare, FileJson
+  LogOut, Globe, Archive, Shield, Copy, ExternalLink, CheckSquare, FileJson,
+  CalendarClock, Settings2, Wand2
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -38,6 +39,9 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import BulkScheduleDialog from "@/components/admin/BulkScheduleDialog";
+import BulkUpdateDialog from "@/components/admin/BulkUpdateDialog";
+import { processArticleWithLinks } from "@/lib/internalLinking";
 
 interface Article {
   id: string;
@@ -139,6 +143,11 @@ const Admin = () => {
   const [bulkStatus, setBulkStatus] = useState<"draft" | "published" | "scheduled">("draft");
   const [bulkScheduleDate, setBulkScheduleDate] = useState("");
   const [bulkScheduleInterval, setBulkScheduleInterval] = useState(1); // hours between each article
+  
+  // Bulk management dialogs
+  const [showBulkSchedule, setShowBulkSchedule] = useState(false);
+  const [showBulkUpdate, setShowBulkUpdate] = useState(false);
+  const [applyingInternalLinks, setApplyingInternalLinks] = useState(false);
   
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -881,6 +890,14 @@ Disallow: /admin/*`;
                 className="hidden"
               />
             </label>
+            <Button variant="outline" onClick={() => setShowBulkSchedule(true)}>
+              <CalendarClock className="mr-2 h-4 w-4" />
+              Bulk Schedule
+            </Button>
+            <Button variant="outline" onClick={() => setShowBulkUpdate(true)}>
+              <Settings2 className="mr-2 h-4 w-4" />
+              Bulk Update
+            </Button>
             <Button variant="outline" onClick={handleExportArticles}>
               <Download className="mr-2 h-4 w-4" />
               Export
@@ -1090,6 +1107,97 @@ Disallow: /admin/*`;
 
             {/* Links Manager Tab */}
             <TabsContent value="links" className="space-y-4">
+              {/* Auto Internal Linking Tool */}
+              <div className="glass-card p-6">
+                <div className="mb-4 flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <Wand2 className="h-8 w-8 text-purple-500" />
+                    <div>
+                      <h3 className="font-heading text-lg font-semibold">Auto Internal Linking</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Automatically add internal links to all published articles
+                      </p>
+                    </div>
+                  </div>
+                  <Button
+                    onClick={async () => {
+                      setApplyingInternalLinks(true);
+                      try {
+                        const publishedArticles = articles.filter(a => a.status === "published");
+                        let updatedCount = 0;
+                        
+                        for (const article of publishedArticles) {
+                          const processedContent = processArticleWithLinks(
+                            {
+                              id: article.id,
+                              title: article.title,
+                              slug: article.slug,
+                              content: article.content,
+                              category: article.category,
+                              tags: article.tags,
+                              keywords: article.keywords,
+                            },
+                            publishedArticles.map(a => ({
+                              id: a.id,
+                              title: a.title,
+                              slug: a.slug,
+                              content: a.content,
+                              category: a.category,
+                              tags: a.tags,
+                              keywords: a.keywords,
+                            })),
+                            { maxInlineLinks: 5, addRelatedSection: false }
+                          );
+                          
+                          // Only update if content changed
+                          if (processedContent !== article.content) {
+                            const { error } = await supabase
+                              .from("articles")
+                              .update({ content: processedContent })
+                              .eq("id", article.id);
+                            
+                            if (!error) updatedCount++;
+                          }
+                        }
+                        
+                        toast({
+                          title: "Internal Links Applied",
+                          description: `Updated ${updatedCount} articles with internal links`,
+                        });
+                        fetchArticles();
+                      } catch (error: any) {
+                        toast({
+                          title: "Error",
+                          description: error.message || "Failed to apply internal links",
+                          variant: "destructive",
+                        });
+                      } finally {
+                        setApplyingInternalLinks(false);
+                      }
+                    }}
+                    disabled={applyingInternalLinks || articles.filter(a => a.status === "published").length < 2}
+                  >
+                    {applyingInternalLinks ? (
+                      <>
+                        <div className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
+                        Processing...
+                      </>
+                    ) : (
+                      <>
+                        <Wand2 className="mr-2 h-4 w-4" />
+                        Apply to All Articles
+                      </>
+                    )}
+                  </Button>
+                </div>
+                <div className="text-sm text-muted-foreground space-y-1">
+                  <p>• Scans all published articles for keyword matches</p>
+                  <p>• Adds up to 5 internal links per article</p>
+                  <p>• Links are based on article titles, tags, and keywords</p>
+                  <p>• Only the first occurrence of each keyword is linked</p>
+                </div>
+              </div>
+
               <div className="grid gap-4 md:grid-cols-2">
                 {/* Internal Links */}
                 <div className="glass-card p-6">
@@ -2000,6 +2108,22 @@ Disallow: /admin/*`;
           </DialogFooter>
         </DialogContent>
       </Dialog>
+
+      {/* Bulk Schedule Dialog */}
+      <BulkScheduleDialog
+        open={showBulkSchedule}
+        onOpenChange={setShowBulkSchedule}
+        articles={articles}
+        onSuccess={fetchArticles}
+      />
+
+      {/* Bulk Update Dialog */}
+      <BulkUpdateDialog
+        open={showBulkUpdate}
+        onOpenChange={setShowBulkUpdate}
+        articles={articles}
+        onSuccess={fetchArticles}
+      />
     </div>
   );
 };
