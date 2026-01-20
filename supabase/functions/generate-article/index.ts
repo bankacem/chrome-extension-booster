@@ -226,21 +226,26 @@ const providerConfigs: Record<string, ProviderConfig> = {
     extractContent: (data) => data.choices?.[0]?.message?.content || "",
   },
   gemini: {
-    url: "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-    getHeaders: (apiKey) => ({
+    url: "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={apiKey}",
+    getHeaders: (_apiKey) => ({
       "Content-Type": "application/json",
-      "x-goog-api-key": apiKey,
     }),
-    getBody: (model, messages) => ({
-      contents: messages.map(m => ({
-        role: m.role === "assistant" ? "model" : m.role === "system" ? "user" : m.role,
-        parts: [{ text: m.content }]
-      })),
-      generationConfig: {
-        temperature: 0.7,
-        maxOutputTokens: 8000,
-      }
-    }),
+    getBody: (_model, messages) => {
+      // Combine system and user messages for Gemini
+      const systemContent = messages.find(m => m.role === "system")?.content || "";
+      const userContent = messages.find(m => m.role === "user")?.content || "";
+      const combinedContent = systemContent + "\n\n" + userContent;
+      
+      return {
+        contents: [{
+          parts: [{ text: combinedContent }]
+        }],
+        generationConfig: {
+          temperature: 0.7,
+          maxOutputTokens: 8000,
+        }
+      };
+    },
     extractContent: (data) => data.candidates?.[0]?.content?.parts?.[0]?.text || "",
   },
 };
@@ -377,8 +382,10 @@ Generate the complete HTML article now.`;
     // Construct the API URL (Gemini has a different URL pattern)
     let apiUrl = providerConfig.url;
     if (aiProvider === "gemini") {
-      apiUrl = apiUrl.replace("{model}", selectedModel);
+      apiUrl = apiUrl.replace("{model}", selectedModel).replace("{apiKey}", apiKey);
     }
+
+    console.log(`Using provider: ${aiProvider}, model: ${selectedModel}`);
 
     const response = await fetch(apiUrl, {
       method: "POST",

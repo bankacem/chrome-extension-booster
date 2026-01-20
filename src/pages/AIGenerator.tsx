@@ -751,16 +751,69 @@ const AIGenerator = () => {
                         <Key className="h-4 w-4" />
                         {AI_PROVIDERS.find(p => p.id === aiProvider)?.name} API Key
                       </Label>
-                      <Input
-                        type="password"
-                        placeholder={AI_PROVIDERS.find(p => p.id === aiProvider)?.placeholder}
-                        value={customApiKey}
-                        onChange={(e) => setCustomApiKey(e.target.value)}
-                        className="font-mono"
-                      />
-                      <p className="text-xs text-muted-foreground">
-                        🔒 Stored locally in your browser only
-                      </p>
+                      <div className="flex gap-2">
+                        <Input
+                          type="password"
+                          placeholder={AI_PROVIDERS.find(p => p.id === aiProvider)?.placeholder}
+                          value={customApiKey}
+                          onChange={(e) => setCustomApiKey(e.target.value)}
+                          className="font-mono flex-1"
+                        />
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={async () => {
+                            if (!customApiKey.trim()) {
+                              toast({ title: "خطأ", description: "أدخل مفتاح API أولاً", variant: "destructive" });
+                              return;
+                            }
+                            toast({ title: "جاري الاختبار...", description: "يرجى الانتظار" });
+                            try {
+                              const response = await supabase.functions.invoke('generate-article', {
+                                body: {
+                                  keyword: "test connection",
+                                  category: "General",
+                                  language: "English",
+                                  writingStyle: "professional",
+                                  includeTableOfContents: false,
+                                  includeFAQSection: false,
+                                  includeImagePlaceholders: false,
+                                  includeComparisonTable: false,
+                                  aiProvider,
+                                  customApiKey,
+                                  model: selectedModel
+                                }
+                              });
+                              if (response.error) {
+                                throw new Error(response.error.message);
+                              }
+                              toast({ 
+                                title: "✅ الاتصال ناجح!", 
+                                description: `مفتاح ${AI_PROVIDERS.find(p => p.id === aiProvider)?.name} يعمل بشكل صحيح`
+                              });
+                            } catch (error: any) {
+                              toast({ 
+                                title: "❌ فشل الاتصال", 
+                                description: error.message || "تحقق من صحة مفتاح API",
+                                variant: "destructive"
+                              });
+                            }
+                          }}
+                        >
+                          اختبار
+                        </Button>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs text-muted-foreground">
+                          🔒 محفوظ محليًا في المتصفح
+                        </span>
+                        {customApiKey && (
+                          <span className="text-xs text-green-600 flex items-center gap-1">
+                            <Check className="h-3 w-3" />
+                            محفوظ
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -781,10 +834,17 @@ const AIGenerator = () => {
                   </Select>
                 </div>
 
-                {aiProvider !== "lovable" && (
+                {aiProvider !== "lovable" && customApiKey && (
+                  <div className="flex items-center gap-2 text-xs text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 p-2 rounded">
+                    <Check className="h-3 w-3" />
+                    <span>جاهز للاستخدام مع {AI_PROVIDERS.find(p => p.id === aiProvider)?.name}</span>
+                  </div>
+                )}
+                
+                {aiProvider !== "lovable" && !customApiKey && (
                   <div className="flex items-center gap-2 text-xs text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20 p-2 rounded">
                     <Key className="h-3 w-3" />
-                    <span>Using your own {AI_PROVIDERS.find(p => p.id === aiProvider)?.name} credits</span>
+                    <span>أدخل مفتاح API لاستخدام {AI_PROVIDERS.find(p => p.id === aiProvider)?.name}</span>
                   </div>
                 )}
               </CardContent>
