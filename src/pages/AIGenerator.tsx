@@ -168,10 +168,22 @@ const AIGenerator = () => {
   // Save options
   const [saveMode, setSaveMode] = useState<"draft" | "published" | "scheduled">("draft");
   const [scheduleDate, setScheduleDate] = useState("");
-  const [scheduleInterval, setScheduleInterval] = useState(24); // hours between articles
+  const [scheduleTime, setScheduleTime] = useState("09:00");
+  const [articlesPerDay, setArticlesPerDay] = useState(2);
+  const [hoursBetweenArticles, setHoursBetweenArticles] = useState(4);
 
-  // Generated articles
-  const [generatedArticles, setGeneratedArticles] = useState<GeneratedArticle[]>([]);
+  // Generated articles - load from localStorage
+  const [generatedArticles, setGeneratedArticles] = useState<GeneratedArticle[]>(() => {
+    const saved = localStorage.getItem('ai-generator-articles');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch {
+        return [];
+      }
+    }
+    return [];
+  });
   const [isGenerating, setIsGenerating] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
 
@@ -184,6 +196,13 @@ const AIGenerator = () => {
   // Stats
   const readyCount = generatedArticles.filter(a => a.status === 'ready').length;
   const savedCount = generatedArticles.filter(a => a.status === 'saved').length;
+
+  // Persist generated articles to localStorage
+  useEffect(() => {
+    if (generatedArticles.length > 0) {
+      localStorage.setItem('ai-generator-articles', JSON.stringify(generatedArticles));
+    }
+  }, [generatedArticles]);
   const selectedCount = generatedArticles.filter(a => a.selected && a.status === 'ready').length;
 
   useEffect(() => {
@@ -349,7 +368,13 @@ const AIGenerator = () => {
 
     setIsSaving(true);
     let savedCount = 0;
+    
+    // Parse schedule date and time
     const baseDate = scheduleDate ? new Date(scheduleDate) : new Date();
+    if (scheduleTime) {
+      const [hours, minutes] = scheduleTime.split(':').map(Number);
+      baseDate.setHours(hours, minutes, 0, 0);
+    }
 
     for (let i = 0; i < selected.length; i++) {
       const article = selected[i];
@@ -364,8 +389,16 @@ const AIGenerator = () => {
         let status = saveMode;
 
         if (saveMode === "scheduled") {
-          const scheduleTime = new Date(baseDate.getTime() + (i * scheduleInterval * 60 * 60 * 1000));
-          scheduledAt = scheduleTime.toISOString();
+          // Calculate which day and which slot within that day
+          const dayIndex = Math.floor(i / articlesPerDay);
+          const slotIndex = i % articlesPerDay;
+          
+          // Add days and hours based on position
+          const articleDate = new Date(baseDate.getTime());
+          articleDate.setDate(articleDate.getDate() + dayIndex);
+          articleDate.setHours(articleDate.getHours() + (slotIndex * hoursBetweenArticles));
+          
+          scheduledAt = articleDate.toISOString();
         } else if (saveMode === "published") {
           publishedAt = new Date().toISOString();
         }
@@ -502,6 +535,20 @@ const AIGenerator = () => {
                 <Check className="h-3 w-3" />
                 {savedCount} Saved
               </Badge>
+              {generatedArticles.length > 0 && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="gap-1 text-destructive hover:text-destructive"
+                  onClick={() => {
+                    localStorage.removeItem('ai-generator-articles');
+                    setGeneratedArticles([]);
+                  }}
+                >
+                  <Trash2 className="h-3 w-3" />
+                  Clear All
+                </Button>
+              )}
             </div>
           </div>
         </div>
@@ -745,25 +792,81 @@ const AIGenerator = () => {
                   </div>
 
                   {saveMode === "scheduled" && (
-                    <>
-                      <div className="space-y-2">
-                        <Label>Start Date & Time</Label>
-                        <Input
-                          type="datetime-local"
-                          value={scheduleDate}
-                          onChange={(e) => setScheduleDate(e.target.value)}
-                        />
+                    <div className="space-y-4 p-3 bg-muted/50 rounded-lg">
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="space-y-2">
+                          <Label>📅 Start Date</Label>
+                          <Input
+                            type="date"
+                            value={scheduleDate}
+                            onChange={(e) => setScheduleDate(e.target.value)}
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label>⏰ Start Time</Label>
+                          <Input
+                            type="time"
+                            value={scheduleTime}
+                            onChange={(e) => setScheduleTime(e.target.value)}
+                          />
+                        </div>
                       </div>
-                      <div className="space-y-2">
-                        <Label>Hours Between Articles</Label>
-                        <Input
-                          type="number"
-                          min={1}
-                          value={scheduleInterval}
-                          onChange={(e) => setScheduleInterval(parseInt(e.target.value) || 24)}
-                        />
+                      
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="space-y-2">
+                          <Label>📊 Articles/Day</Label>
+                          <Input
+                            type="number"
+                            min={1}
+                            max={10}
+                            value={articlesPerDay}
+                            onChange={(e) => setArticlesPerDay(parseInt(e.target.value) || 2)}
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label>⏱️ Hours Between</Label>
+                          <Input
+                            type="number"
+                            min={1}
+                            max={24}
+                            value={hoursBetweenArticles}
+                            onChange={(e) => setHoursBetweenArticles(parseInt(e.target.value) || 4)}
+                          />
+                        </div>
                       </div>
-                    </>
+
+                      {/* Schedule Preview */}
+                      {selectedCount > 0 && scheduleDate && (
+                        <div className="pt-3 border-t space-y-2">
+                          <Label className="text-xs font-medium text-muted-foreground">📋 Schedule Preview</Label>
+                          <div className="bg-background rounded-md p-2 max-h-32 overflow-y-auto text-xs space-y-1">
+                            {Array.from({ length: Math.min(selectedCount, 5) }).map((_, i) => {
+                              const baseD = new Date(scheduleDate);
+                              const [h, m] = scheduleTime.split(':').map(Number);
+                              baseD.setHours(h, m, 0, 0);
+                              const dayIndex = Math.floor(i / articlesPerDay);
+                              const slotIndex = i % articlesPerDay;
+                              const articleDate = new Date(baseD.getTime());
+                              articleDate.setDate(articleDate.getDate() + dayIndex);
+                              articleDate.setHours(articleDate.getHours() + (slotIndex * hoursBetweenArticles));
+                              
+                              return (
+                                <div key={i} className="flex justify-between text-muted-foreground">
+                                  <span>Article {i + 1}</span>
+                                  <span>{articleDate.toLocaleDateString()} {articleDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+                                </div>
+                              );
+                            })}
+                            {selectedCount > 5 && (
+                              <div className="text-muted-foreground text-center">... +{selectedCount - 5} more</div>
+                            )}
+                          </div>
+                          <div className="text-xs text-muted-foreground">
+                            ✅ {Math.ceil(selectedCount / articlesPerDay)} days total
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   )}
 
                   <div className="flex items-center justify-between py-2 border-t">
