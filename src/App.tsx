@@ -10,6 +10,7 @@ import BlogPost from "./pages/BlogPost";
 import Admin from "./pages/Admin";
 import AdminLogin from "./pages/AdminLogin";
 import AIGenerator from "./pages/AIGenerator";
+import ExtensionPage from "./pages/ExtensionPage";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/extension/:slug" element={<ExtensionPage />} />
             <Route path="/admin" element={<AdminLogin />} />
             <Route path="/settings" element={<AdminLogin />} />
             <Route path="/settings/manage" element={<Admin />} />
