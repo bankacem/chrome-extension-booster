@@ -264,6 +264,70 @@ const providerConfigs: Record<string, ProviderConfig> = {
   },
 };
 
+// Helper function for fetch with timeout
+async function fetchWithTimeout(
+  url: string,
+  options: RequestInit,
+  timeoutMs: number = 120000
+): Promise<Response> {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+  
+  try {
+    const response = await fetch(url, {
+      ...options,
+      signal: controller.signal,
+    });
+    return response;
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
+// Helper function for retry logic
+async function fetchWithRetry(
+  url: string,
+  options: RequestInit,
+  maxRetries: number = 3,
+  delayMs: number = 2000
+): Promise<Response> {
+  let lastError: Error | null = null;
+  
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      console.log(`Attempt ${attempt}/${maxRetries} for ${url}`);
+      const response = await fetchWithTimeout(url, options, 120000);
+      
+      // If successful or client error (4xx), return immediately
+      if (response.ok || (response.status >= 400 && response.status < 500)) {
+        return response;
+      }
+      
+      // Server error (5xx), retry
+      console.log(`Server error (${response.status}), will retry...`);
+      lastError = new Error(`Server returned ${response.status}`);
+      
+    } catch (err: unknown) {
+      const error = err as Error;
+      console.log(`Request failed: ${error.message || 'Unknown error'}`);
+      lastError = error;
+      
+      if (error.name === 'AbortError') {
+        console.log('Request timed out, will retry...');
+      }
+    }
+    
+    // Wait before retrying (exponential backoff)
+    if (attempt < maxRetries) {
+      const waitTime = delayMs * Math.pow(2, attempt - 1);
+      console.log(`Waiting ${waitTime}ms before retry...`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+    }
+  }
+  
+  throw lastError || new Error('All retry attempts failed');
+}
+
 serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
@@ -400,31 +464,91 @@ Generate the complete HTML article now.`;
     }
 
     console.log(`Using provider: ${aiProvider}, model: ${selectedModel}`);
+    console.log(`API URL: ${apiUrl}`);
 
-    const response = await fetch(apiUrl, {
-      method: "POST",
-      headers: providerConfig.getHeaders(apiKey),
-      body: JSON.stringify(providerConfig.getBody(selectedModel, messages)),
-    });
+    // Use retry logic with timeout
+    let response: Response;
+    try {
+      response = await fetchWithRetry(
+        apiUrl,
+        {
+          method: "POST",
+          headers: providerConfig.getHeaders(apiKey),
+          body: JSON.stringify(providerConfig.getBody(selectedModel, messages)),
+        },
+        3, // max retries
+        2000 // delay between retries
+      );
+    } catch (retryError) {
+      console.error(`All retry attempts failed:`, retryError);
+      return new Response(JSON.stringify({ 
+        error: `Connection failed after multiple attempts. Please try again later.`,
+        details: String(retryError)
+      }), {
+        status: 503,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error(`${aiProvider} API error:`, response.status, errorText);
+      console.error(`${aiProvider} API error - Status: ${response.status}`);
+      console.error(`${aiProvider} API error - Headers:`, JSON.stringify(Object.fromEntries(response.headers.entries())));
+      console.error(`${aiProvider} API error - Body:`, errorText);
+      
+      // Parse error details for better messaging
+      let errorDetails = errorText;
+      try {
+        const errorJson = JSON.parse(errorText);
+        errorDetails = errorJson.error?.message || errorJson.message || errorText;
+        
+        // Check for specific Groq errors
+        if (errorJson.error?.code === 'model_decommissioned') {
+          return new Response(JSON.stringify({ 
+            error: `The model "${selectedModel}" has been discontinued. Please select a different model.`,
+            suggestedModel: "llama-3.3-70b-versatile"
+          }), {
+            status: 400,
+            headers: { ...corsHeaders, "Content-Type": "application/json" },
+          });
+        }
+        
+        if (errorJson.error?.code === 'insufficient_quota' || errorJson.error?.type === 'insufficient_quota') {
+          return new Response(JSON.stringify({ 
+            error: `Your ${aiProvider} account has run out of credits. Please add more credits to continue.`
+          }), {
+            status: 402,
+            headers: { ...corsHeaders, "Content-Type": "application/json" },
+          });
+        }
+      } catch {
+        // Not JSON, use raw text
+      }
       
       if (response.status === 429) {
-        return new Response(JSON.stringify({ error: "Rate limit exceeded. Please try again later." }), {
+        return new Response(JSON.stringify({ 
+          error: "Rate limit exceeded. Please wait a moment and try again.",
+          retryAfter: response.headers.get('retry-after') || '60'
+        }), {
           status: 429,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
       }
-      if (response.status === 402 || response.status === 401) {
-        return new Response(JSON.stringify({ error: `Authentication failed. Please check your ${aiProvider} API key.` }), {
+      
+      if (response.status === 402 || response.status === 401 || response.status === 403) {
+        return new Response(JSON.stringify({ 
+          error: `Authentication failed. Please verify your ${aiProvider} API key is correct and has sufficient credits.`,
+          details: errorDetails
+        }), {
           status: 401,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
       }
       
-      return new Response(JSON.stringify({ error: `AI generation failed: ${errorText}` }), {
+      return new Response(JSON.stringify({ 
+        error: `AI generation failed (${response.status})`,
+        details: errorDetails
+      }), {
         status: 500,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
