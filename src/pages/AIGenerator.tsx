@@ -5,7 +5,7 @@ import {
   Sparkles, FileText, Layers, FolderOpen, 
   Settings2, Save, Trash2, Wand2, Check,
   Loader2, ArrowLeft, Eye, RefreshCw, ListOrdered,
-  HelpCircle, Image, Table, Globe, Pencil
+  HelpCircle, Image, Table, Globe, Pencil, Key, Cpu
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -145,6 +145,69 @@ const DEFAULT_TEMPLATES: ArticleTemplate[] = [
   },
 ];
 
+// AI Provider types
+type AIProvider = "lovable" | "openrouter" | "openai" | "gemini";
+
+interface AIProviderConfig {
+  id: AIProvider;
+  name: string;
+  description: string;
+  placeholder: string;
+  models: { value: string; label: string }[];
+}
+
+const AI_PROVIDERS: AIProviderConfig[] = [
+  {
+    id: "lovable",
+    name: "Lovable AI",
+    description: "Default - No API key needed",
+    placeholder: "",
+    models: [
+      { value: "google/gemini-3-flash-preview", label: "Gemini 3 Flash (Fast)" },
+      { value: "google/gemini-2.5-flash", label: "Gemini 2.5 Flash" },
+      { value: "google/gemini-2.5-pro", label: "Gemini 2.5 Pro (Best)" },
+      { value: "openai/gpt-5-mini", label: "GPT-5 Mini" },
+      { value: "openai/gpt-5", label: "GPT-5" },
+    ]
+  },
+  {
+    id: "openrouter",
+    name: "OpenRouter",
+    description: "Use your OpenRouter API key",
+    placeholder: "sk-or-v1-...",
+    models: [
+      { value: "anthropic/claude-3.5-sonnet", label: "Claude 3.5 Sonnet" },
+      { value: "google/gemini-2.0-flash-exp:free", label: "Gemini 2.0 Flash (Free)" },
+      { value: "openai/gpt-4o", label: "GPT-4o" },
+      { value: "meta-llama/llama-3.3-70b-instruct", label: "Llama 3.3 70B" },
+      { value: "deepseek/deepseek-chat", label: "DeepSeek Chat" },
+    ]
+  },
+  {
+    id: "openai",
+    name: "OpenAI",
+    description: "Use your OpenAI API key",
+    placeholder: "sk-...",
+    models: [
+      { value: "gpt-4o", label: "GPT-4o" },
+      { value: "gpt-4o-mini", label: "GPT-4o Mini (Fast)" },
+      { value: "gpt-4-turbo", label: "GPT-4 Turbo" },
+      { value: "gpt-3.5-turbo", label: "GPT-3.5 Turbo (Cheap)" },
+    ]
+  },
+  {
+    id: "gemini",
+    name: "Google Gemini",
+    description: "Use your Google AI API key",
+    placeholder: "AIza...",
+    models: [
+      { value: "gemini-2.0-flash-exp", label: "Gemini 2.0 Flash" },
+      { value: "gemini-1.5-flash", label: "Gemini 1.5 Flash (Fast)" },
+      { value: "gemini-1.5-pro", label: "Gemini 1.5 Pro" },
+    ]
+  }
+];
+
 const AIGenerator = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -153,11 +216,40 @@ const AIGenerator = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
 
+  // AI Provider settings - load from localStorage
+  const [aiProvider, setAiProvider] = useState<AIProvider>(() => {
+    return (localStorage.getItem('ai-generator-provider') as AIProvider) || "lovable";
+  });
+  const [customApiKey, setCustomApiKey] = useState(() => {
+    return localStorage.getItem('ai-generator-apikey') || "";
+  });
+  const [selectedModel, setSelectedModel] = useState(() => {
+    return localStorage.getItem('ai-generator-model') || "google/gemini-3-flash-preview";
+  });
+
   // Generator settings
   const [keywordsText, setKeywordsText] = useState("");
   const [category, setCategory] = useState("General");
   const [language, setLanguage] = useState("English");
   const [writingStyle, setWritingStyle] = useState("professional");
+
+  // Save provider settings to localStorage
+  useEffect(() => {
+    localStorage.setItem('ai-generator-provider', aiProvider);
+    localStorage.setItem('ai-generator-apikey', customApiKey);
+    localStorage.setItem('ai-generator-model', selectedModel);
+  }, [aiProvider, customApiKey, selectedModel]);
+
+  // Reset model when provider changes
+  useEffect(() => {
+    const provider = AI_PROVIDERS.find(p => p.id === aiProvider);
+    if (provider && provider.models.length > 0) {
+      const currentModelValid = provider.models.some(m => m.value === selectedModel);
+      if (!currentModelValid) {
+        setSelectedModel(provider.models[0].value);
+      }
+    }
+  }, [aiProvider]);
   
   // Content options
   const [includeTableOfContents, setIncludeTableOfContents] = useState(true);
@@ -269,6 +361,16 @@ const AIGenerator = () => {
       return;
     }
 
+    // Validate API key for custom providers
+    if (aiProvider !== "lovable" && !customApiKey.trim()) {
+      toast({ 
+        title: "API Key Required", 
+        description: `Please enter your ${AI_PROVIDERS.find(p => p.id === aiProvider)?.name} API key`,
+        variant: "destructive" 
+      });
+      return;
+    }
+
     setIsGenerating(true);
     
     // Initialize articles with pending status
@@ -310,7 +412,11 @@ const AIGenerator = () => {
             includeFAQSection,
             includeImagePlaceholders,
             includeComparisonTable,
-            extensions
+            extensions,
+            // AI Provider settings
+            aiProvider,
+            customApiKey: aiProvider !== "lovable" ? customApiKey : undefined,
+            model: selectedModel
           }
         });
 
@@ -449,6 +555,16 @@ const AIGenerator = () => {
   };
 
   const regenerateArticle = async (article: GeneratedArticle) => {
+    // Validate API key for custom providers
+    if (aiProvider !== "lovable" && !customApiKey.trim()) {
+      toast({ 
+        title: "API Key Required", 
+        description: `Please enter your ${AI_PROVIDERS.find(p => p.id === aiProvider)?.name} API key`,
+        variant: "destructive" 
+      });
+      return;
+    }
+
     setGeneratedArticles(prev => prev.map(a => 
       a.id === article.id ? { ...a, status: 'generating' as const } : a
     ));
@@ -464,7 +580,11 @@ const AIGenerator = () => {
           includeFAQSection,
           includeImagePlaceholders,
           includeComparisonTable,
-          extensions
+          extensions,
+          // AI Provider settings
+          aiProvider,
+          customApiKey: aiProvider !== "lovable" ? customApiKey : undefined,
+          model: selectedModel
         }
       });
 
@@ -594,6 +714,81 @@ const AIGenerator = () => {
                 <Badge variant="outline">0 Drafts</Badge>
               </div>
             </div>
+
+            {/* AI Provider Settings Card */}
+            <Card className="border-primary/20 bg-gradient-to-r from-primary/5 to-transparent">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-center gap-2 text-lg">
+                  <Cpu className="h-5 w-5 text-primary" />
+                  AI Provider
+                </CardTitle>
+                <CardDescription>
+                  Use Lovable AI (free) or your own API keys
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                  {AI_PROVIDERS.map((provider) => (
+                    <button
+                      key={provider.id}
+                      onClick={() => setAiProvider(provider.id)}
+                      className={`p-3 rounded-lg border text-left transition-all ${
+                        aiProvider === provider.id
+                          ? 'border-primary bg-primary/10 ring-2 ring-primary/20'
+                          : 'border-border hover:border-primary/50 hover:bg-muted/50'
+                      }`}
+                    >
+                      <div className="font-medium text-sm">{provider.name}</div>
+                      <div className="text-xs text-muted-foreground truncate">{provider.description}</div>
+                    </button>
+                  ))}
+                </div>
+
+                {aiProvider !== "lovable" && (
+                  <div className="space-y-3 p-4 bg-muted/50 rounded-lg border border-dashed">
+                    <div className="space-y-2">
+                      <Label className="flex items-center gap-2">
+                        <Key className="h-4 w-4" />
+                        {AI_PROVIDERS.find(p => p.id === aiProvider)?.name} API Key
+                      </Label>
+                      <Input
+                        type="password"
+                        placeholder={AI_PROVIDERS.find(p => p.id === aiProvider)?.placeholder}
+                        value={customApiKey}
+                        onChange={(e) => setCustomApiKey(e.target.value)}
+                        className="font-mono"
+                      />
+                      <p className="text-xs text-muted-foreground">
+                        🔒 Stored locally in your browser only
+                      </p>
+                    </div>
+                  </div>
+                )}
+
+                <div className="space-y-2">
+                  <Label>Model</Label>
+                  <Select value={selectedModel} onValueChange={setSelectedModel}>
+                    <SelectTrigger>
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {AI_PROVIDERS.find(p => p.id === aiProvider)?.models.map((model) => (
+                        <SelectItem key={model.value} value={model.value}>
+                          {model.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                {aiProvider !== "lovable" && (
+                  <div className="flex items-center gap-2 text-xs text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20 p-2 rounded">
+                    <Key className="h-3 w-3" />
+                    <span>Using your own {AI_PROVIDERS.find(p => p.id === aiProvider)?.name} credits</span>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {/* Article Settings */}
