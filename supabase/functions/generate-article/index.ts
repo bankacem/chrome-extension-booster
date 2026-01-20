@@ -16,6 +16,10 @@ interface ArticleRequest {
   includeComparisonTable: boolean;
   extensions?: string[];
   autoLinkExtension?: boolean;
+  // AI Provider settings
+  aiProvider?: "lovable" | "openrouter" | "openai" | "gemini";
+  customApiKey?: string;
+  model?: string;
 }
 
 // Extension data for auto-linking
@@ -90,13 +94,11 @@ function detectExtension(keyword: string, content: string) {
   const lowerContent = content.toLowerCase();
   
   for (const ext of EXTENSIONS) {
-    // Check if extension name is in keyword
     if (lowerKeyword.includes(ext.name.toLowerCase()) || 
         ext.name.toLowerCase().includes(lowerKeyword)) {
       return ext;
     }
     
-    // Check extension keywords
     for (const kw of ext.keywords) {
       if (lowerKeyword.includes(kw) || lowerContent.includes(kw)) {
         return ext;
@@ -149,7 +151,6 @@ function addExtensionLinks(content: string, keyword: string, autoLinkExtension: 
   const detectedExt = detectExtension(keyword, content);
   if (!detectedExt) return { content, linkedExtension: null };
   
-  // Add backlink after first H2 or first paragraph
   const h2Match = content.match(/<\/h2>/i);
   let modifiedContent: string;
   
@@ -166,11 +167,83 @@ function addExtensionLinks(content: string, keyword: string, autoLinkExtension: 
     }
   }
   
-  // Add final CTA
   modifiedContent += generateFinalCTA(detectedExt);
   
   return { content: modifiedContent, linkedExtension: detectedExt };
 }
+
+// Provider-specific API configurations
+interface ProviderConfig {
+  url: string;
+  getHeaders: (apiKey: string) => Record<string, string>;
+  getBody: (model: string, messages: { role: string; content: string }[]) => object;
+  extractContent: (data: any) => string;
+}
+
+const providerConfigs: Record<string, ProviderConfig> = {
+  lovable: {
+    url: "https://ai.gateway.lovable.dev/v1/chat/completions",
+    getHeaders: (apiKey) => ({
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    }),
+    getBody: (model, messages) => ({
+      model,
+      messages,
+      temperature: 0.7,
+      max_tokens: 8000,
+    }),
+    extractContent: (data) => data.choices?.[0]?.message?.content || "",
+  },
+  openrouter: {
+    url: "https://openrouter.ai/api/v1/chat/completions",
+    getHeaders: (apiKey) => ({
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+      "HTTP-Referer": "https://extensionto.com",
+      "X-Title": "Extension SEO Generator",
+    }),
+    getBody: (model, messages) => ({
+      model,
+      messages,
+      temperature: 0.7,
+      max_tokens: 8000,
+    }),
+    extractContent: (data) => data.choices?.[0]?.message?.content || "",
+  },
+  openai: {
+    url: "https://api.openai.com/v1/chat/completions",
+    getHeaders: (apiKey) => ({
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    }),
+    getBody: (model, messages) => ({
+      model,
+      messages,
+      temperature: 0.7,
+      max_tokens: 8000,
+    }),
+    extractContent: (data) => data.choices?.[0]?.message?.content || "",
+  },
+  gemini: {
+    url: "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+    getHeaders: (apiKey) => ({
+      "Content-Type": "application/json",
+      "x-goog-api-key": apiKey,
+    }),
+    getBody: (model, messages) => ({
+      contents: messages.map(m => ({
+        role: m.role === "assistant" ? "model" : m.role === "system" ? "user" : m.role,
+        parts: [{ text: m.content }]
+      })),
+      generationConfig: {
+        temperature: 0.7,
+        maxOutputTokens: 8000,
+      }
+    }),
+    extractContent: (data) => data.candidates?.[0]?.content?.parts?.[0]?.text || "",
+  },
+};
 
 serve(async (req) => {
   if (req.method === "OPTIONS") {
@@ -188,12 +261,36 @@ serve(async (req) => {
       includeImagePlaceholders,
       includeComparisonTable,
       extensions = [],
-      autoLinkExtension = true
+      autoLinkExtension = true,
+      aiProvider = "lovable",
+      customApiKey,
+      model
     }: ArticleRequest = await req.json();
 
-    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
-    if (!LOVABLE_API_KEY) {
-      throw new Error("LOVABLE_API_KEY is not configured");
+    // Get the appropriate API key
+    let apiKey: string;
+    if (aiProvider === "lovable") {
+      apiKey = Deno.env.get("LOVABLE_API_KEY") || "";
+      if (!apiKey) {
+        throw new Error("LOVABLE_API_KEY is not configured");
+      }
+    } else {
+      if (!customApiKey) {
+        throw new Error(`API key required for ${aiProvider}`);
+      }
+      apiKey = customApiKey;
+    }
+
+    // Get provider config
+    const providerConfig = providerConfigs[aiProvider];
+    if (!providerConfig) {
+      throw new Error(`Unknown AI provider: ${aiProvider}`);
+    }
+
+    // Determine model to use
+    const selectedModel = model || (aiProvider === "lovable" ? "google/gemini-3-flash-preview" : undefined);
+    if (!selectedModel) {
+      throw new Error("Model is required");
     }
 
     const styleDescriptions: Record<string, string> = {
@@ -204,7 +301,6 @@ serve(async (req) => {
       technical: "Technical and detailed, with precise terminology"
     };
 
-    // Build extension context for AI
     const extensionContext = EXTENSIONS.map(ext => 
       `- ${ext.name}: ${ext.description} (Page: /extension/${ext.slug}, Store: ${ext.storeUrl})`
     ).join('\n');
@@ -273,48 +369,50 @@ The article should:
 
 Generate the complete HTML article now.`;
 
-    const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+    const messages = [
+      { role: "system", content: systemPrompt },
+      { role: "user", content: userPrompt }
+    ];
+
+    // Construct the API URL (Gemini has a different URL pattern)
+    let apiUrl = providerConfig.url;
+    if (aiProvider === "gemini") {
+      apiUrl = apiUrl.replace("{model}", selectedModel);
+    }
+
+    const response = await fetch(apiUrl, {
       method: "POST",
-      headers: {
-        Authorization: `Bearer ${LOVABLE_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: "google/gemini-3-flash-preview",
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: userPrompt }
-        ],
-        temperature: 0.7,
-        max_tokens: 8000,
-      }),
+      headers: providerConfig.getHeaders(apiKey),
+      body: JSON.stringify(providerConfig.getBody(selectedModel, messages)),
     });
 
     if (!response.ok) {
+      const errorText = await response.text();
+      console.error(`${aiProvider} API error:`, response.status, errorText);
+      
       if (response.status === 429) {
         return new Response(JSON.stringify({ error: "Rate limit exceeded. Please try again later." }), {
           status: 429,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
       }
-      if (response.status === 402) {
-        return new Response(JSON.stringify({ error: "Payment required. Please add credits to your account." }), {
-          status: 402,
+      if (response.status === 402 || response.status === 401) {
+        return new Response(JSON.stringify({ error: `Authentication failed. Please check your ${aiProvider} API key.` }), {
+          status: 401,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
       }
-      const errorText = await response.text();
-      console.error("AI gateway error:", response.status, errorText);
-      return new Response(JSON.stringify({ error: "AI generation failed" }), {
+      
+      return new Response(JSON.stringify({ error: `AI generation failed: ${errorText}` }), {
         status: 500,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
 
     const data = await response.json();
-    let content = data.choices?.[0]?.message?.content || "";
+    let content = providerConfig.extractContent(data);
 
-    // Clean up the content - remove any markdown code blocks if present
+    // Clean up the content
     content = content
       .replace(/```html\n?/gi, '')
       .replace(/```\n?/g, '')
@@ -336,7 +434,7 @@ Generate the complete HTML article now.`;
       ? paragraphMatch[1].replace(/<[^>]*>/g, '').trim().slice(0, 160) 
       : '';
 
-    // Calculate read time (rough estimate: 200 words per minute)
+    // Calculate read time
     const textContent = content.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ');
     const wordCount = textContent.split(' ').filter(Boolean).length;
     const readTime = Math.max(1, Math.ceil(wordCount / 200));
@@ -360,7 +458,9 @@ Generate the complete HTML article now.`;
       category,
       keywords: [keyword],
       meta_description: excerpt,
-      linkedExtension: linkResult.linkedExtension ? linkResult.linkedExtension.slug : null
+      linkedExtension: linkResult.linkedExtension ? linkResult.linkedExtension.slug : null,
+      provider: aiProvider,
+      model: selectedModel
     }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
