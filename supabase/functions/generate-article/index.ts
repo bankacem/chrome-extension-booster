@@ -17,7 +17,7 @@ interface ArticleRequest {
   extensions?: string[];
   autoLinkExtension?: boolean;
   // AI Provider settings
-  aiProvider?: "lovable" | "openrouter" | "openai" | "gemini";
+  aiProvider?: "lovable" | "openrouter" | "openai" | "gemini" | "groq";
   customApiKey?: string;
   model?: string;
 }
@@ -247,6 +247,20 @@ const providerConfigs: Record<string, ProviderConfig> = {
       };
     },
     extractContent: (data) => data.candidates?.[0]?.content?.parts?.[0]?.text || "",
+  },
+  groq: {
+    url: "https://api.groq.com/openai/v1/chat/completions",
+    getHeaders: (apiKey) => ({
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    }),
+    getBody: (model, messages) => ({
+      model,
+      messages,
+      temperature: 0.7,
+      max_tokens: 8000,
+    }),
+    extractContent: (data) => data.choices?.[0]?.message?.content || "",
   },
 };
 

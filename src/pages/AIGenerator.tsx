@@ -146,7 +146,7 @@ const DEFAULT_TEMPLATES: ArticleTemplate[] = [
 ];
 
 // AI Provider types
-type AIProvider = "lovable" | "openrouter" | "openai" | "gemini";
+type AIProvider = "lovable" | "openrouter" | "openai" | "gemini" | "groq";
 
 interface AIProviderConfig {
   id: AIProvider;
@@ -204,6 +204,18 @@ const AI_PROVIDERS: AIProviderConfig[] = [
       { value: "gemini-2.0-flash", label: "Gemini 2.0 Flash (Recommended)" },
       { value: "gemini-2.5-flash-preview-05-20", label: "Gemini 2.5 Flash Preview" },
       { value: "gemini-2.5-pro-preview-05-06", label: "Gemini 2.5 Pro Preview" },
+    ]
+  },
+  {
+    id: "groq",
+    name: "Groq",
+    description: "Use your Groq API key for fast inference",
+    placeholder: "gsk_...",
+    models: [
+      { value: "llama3-70b-8192", label: "Llama 3 70B (Best Quality)" },
+      { value: "llama3-8b-8192", label: "Llama 3 8B (Fast)" },
+      { value: "mixtral-8x7b-32768", label: "Mixtral 8x7B" },
+      { value: "gemma2-9b-it", label: "Gemma 2 9B" },
     ]
   }
 ];
