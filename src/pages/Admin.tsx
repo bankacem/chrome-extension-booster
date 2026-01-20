@@ -6,7 +6,7 @@ import {
   Download, Upload, FileText, Settings, BarChart3, Tag,
   Save, X, Image, Link as LinkIcon, Database, RefreshCw,
   LogOut, Globe, Archive, Shield, Copy, ExternalLink, CheckSquare, FileJson,
-  CalendarClock, Settings2, Wand2
+  CalendarClock, Settings2, Wand2, ImageOff, CalendarCheck
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -1009,18 +1009,19 @@ Disallow: /admin/*`;
                 <Table>
                   <TableHeader>
                     <TableRow>
+                      <TableHead className="w-12">Image</TableHead>
                       <TableHead>Title</TableHead>
                       <TableHead>Category</TableHead>
                       <TableHead>Status</TableHead>
                       <TableHead>Views</TableHead>
-                      <TableHead>Date</TableHead>
+                      <TableHead>Publish Date</TableHead>
                       <TableHead className="text-right">Actions</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     {loading ? (
                       <TableRow>
-                        <TableCell colSpan={6} className="text-center py-8">
+                        <TableCell colSpan={7} className="text-center py-8">
                           <div className="flex items-center justify-center">
                             <div className="h-6 w-6 animate-spin rounded-full border-2 border-primary border-t-transparent" />
                           </div>
@@ -1028,18 +1029,45 @@ Disallow: /admin/*`;
                       </TableRow>
                     ) : filteredArticles.length === 0 ? (
                       <TableRow>
-                        <TableCell colSpan={6} className="text-center py-8 text-muted-foreground">
+                        <TableCell colSpan={7} className="text-center py-8 text-muted-foreground">
                           No articles found
                         </TableCell>
                       </TableRow>
                     ) : (
                       filteredArticles.map((article) => (
                         <TableRow key={article.id}>
+                          {/* Image Indicator */}
+                          <TableCell>
+                            <div className="flex items-center justify-center">
+                              {article.featured_image ? (
+                                <div className="relative group">
+                                  <div className="w-10 h-10 rounded-md overflow-hidden border border-border bg-muted">
+                                    <img 
+                                      src={article.featured_image} 
+                                      alt="" 
+                                      className="w-full h-full object-cover"
+                                      onError={(e) => {
+                                        (e.target as HTMLImageElement).style.display = 'none';
+                                        (e.target as HTMLImageElement).parentElement!.innerHTML = '<div class="w-full h-full flex items-center justify-center"><svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>';
+                                      }}
+                                    />
+                                  </div>
+                                  <span className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
+                                    <Image className="w-2.5 h-2.5 text-white" />
+                                  </span>
+                                </div>
+                              ) : (
+                                <div className="w-10 h-10 rounded-md border border-dashed border-muted-foreground/30 bg-muted/50 flex items-center justify-center">
+                                  <ImageOff className="w-4 h-4 text-muted-foreground/50" />
+                                </div>
+                              )}
+                            </div>
+                          </TableCell>
                           <TableCell>
                             <div>
-                              <p className="font-medium">{article.title}</p>
-                              <p className="text-xs text-muted-foreground">
-                                {WEBSITE_URL}/blog/{article.slug}
+                              <p className="font-medium line-clamp-1">{article.title}</p>
+                              <p className="text-xs text-muted-foreground line-clamp-1">
+                                /{article.slug}
                               </p>
                             </div>
                           </TableCell>
@@ -1058,8 +1086,41 @@ Disallow: /admin/*`;
                             </span>
                           </TableCell>
                           <TableCell>{article.views || 0}</TableCell>
+                          {/* Publish Date Column */}
                           <TableCell>
-                            {new Date(article.created_at).toLocaleDateString()}
+                            <div className="flex flex-col gap-0.5">
+                              {article.status === "scheduled" && article.scheduled_at ? (
+                                <div className="flex items-center gap-1.5 text-blue-500">
+                                  <CalendarCheck className="w-3.5 h-3.5" />
+                                  <span className="text-xs font-medium">
+                                    {new Date(article.scheduled_at).toLocaleDateString('en-US', { 
+                                      month: 'short', 
+                                      day: 'numeric',
+                                      year: 'numeric'
+                                    })}
+                                  </span>
+                                </div>
+                              ) : article.status === "published" && article.published_at ? (
+                                <div className="flex items-center gap-1.5 text-green-500">
+                                  <Eye className="w-3.5 h-3.5" />
+                                  <span className="text-xs font-medium">
+                                    {new Date(article.published_at).toLocaleDateString('en-US', { 
+                                      month: 'short', 
+                                      day: 'numeric',
+                                      year: 'numeric'
+                                    })}
+                                  </span>
+                                </div>
+                              ) : (
+                                <span className="text-xs text-muted-foreground">—</span>
+                              )}
+                              <span className="text-[10px] text-muted-foreground">
+                                Created: {new Date(article.created_at).toLocaleDateString('en-US', { 
+                                  month: 'short', 
+                                  day: 'numeric'
+                                })}
+                              </span>
+                            </div>
                           </TableCell>
                           <TableCell className="text-right">
                             <div className="flex items-center justify-end gap-1">
