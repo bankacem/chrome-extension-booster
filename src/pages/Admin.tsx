@@ -41,6 +41,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import BulkScheduleDialog from "@/components/admin/BulkScheduleDialog";
 import BulkUpdateDialog from "@/components/admin/BulkUpdateDialog";
+import ArticleCategorizer from "@/components/admin/ArticleCategorizer";
 import { processArticleWithLinks } from "@/lib/internalLinking";
 
 interface Article {
@@ -980,6 +981,12 @@ Disallow: /admin/*`;
             </TabsList>
 
             <TabsContent value="articles" className="space-y-4">
+              {/* Article Categorizer */}
+              <ArticleCategorizer 
+                articles={articles} 
+                onCategorized={fetchArticles} 
+              />
+
               {/* Filters */}
               <div className="flex flex-col gap-4 md:flex-row md:items-center">
                 <div className="relative flex-1">
