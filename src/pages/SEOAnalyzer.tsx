@@ -18,6 +18,7 @@ import { RadialScoreGauge } from "@/components/seo/RadialScoreGauge";
 import { KeywordsSidebar } from "@/components/seo/KeywordsSidebar";
 import { SEOStatsCards } from "@/components/seo/SEOStatsCards";
 import { SEOIssuesList } from "@/components/seo/SEOIssuesList";
+import { GoogleSearchConsoleCard } from "@/components/seo/GoogleSearchConsoleCard";
 
 interface Article {
   id: string;
@@ -244,6 +245,12 @@ const SEOAnalyzer = () => {
                 </div>
               </div>
             </motion.div>
+
+            {/* Google Search Console */}
+            <GoogleSearchConsoleCard 
+              articleSlug={article.slug}
+              articleUrl={`https://extensionto.com/blog/${article.slug}`}
+            />
 
             {/* Stats Cards */}
             <motion.div
