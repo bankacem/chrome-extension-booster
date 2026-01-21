@@ -13,7 +13,7 @@ export interface SEOAnalysis {
   metaDescriptionLength: number;
   titleLength: number;
   readabilityScore: number;
-  nlpKeywords: { keyword: string; found: boolean; importance: 'high' | 'medium' | 'low' }[];
+  nlpKeywords: { keyword: string; found: boolean; importance: 'high' | 'medium' | 'low'; count: number; idealCount: number }[];
   issues: SEOIssue[];
   recommendations: string[];
 }
@@ -165,11 +165,24 @@ function getNLPKeywords(category: string, targetKeyword: string, content: string
   // Remove duplicates
   relevantKeywords = [...new Set(relevantKeywords)];
   
-  return relevantKeywords.slice(0, 15).map((keyword, index) => ({
-    keyword,
-    found: contentLower.includes(keyword.toLowerCase()),
-    importance: index < 5 ? 'high' : index < 10 ? 'medium' : 'low' as const
-  }));
+  // Count occurrences and calculate ideal counts
+  return relevantKeywords.slice(0, 15).map((keyword, index) => {
+    // Count how many times keyword appears
+    const regex = new RegExp(keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+    const matches = contentLower.match(regex);
+    const count = matches ? matches.length : 0;
+    
+    // Ideal count based on importance
+    const idealCount = index < 5 ? 5 : index < 10 ? 3 : 2;
+    
+    return {
+      keyword,
+      found: count > 0,
+      importance: index < 5 ? 'high' : index < 10 ? 'medium' : 'low' as const,
+      count,
+      idealCount
+    };
+  });
 }
 
 export function analyzeSEO(

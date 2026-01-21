@@ -8,7 +8,8 @@ import {
   FileText,
   Target,
   TrendingUp,
-  Loader2
+  Loader2,
+  Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
@@ -19,6 +20,8 @@ import { KeywordsSidebar } from "@/components/seo/KeywordsSidebar";
 import { SEOStatsCards } from "@/components/seo/SEOStatsCards";
 import { SEOIssuesList } from "@/components/seo/SEOIssuesList";
 import { GoogleSearchConsoleCard } from "@/components/seo/GoogleSearchConsoleCard";
+import { CompetitorAnalysis } from "@/components/seo/CompetitorAnalysis";
+import { AIOptimizeButton } from "@/components/seo/AIOptimizeButton";
 
 interface Article {
   id: string;
@@ -171,6 +174,22 @@ const SEOAnalyzer = () => {
             </div>
             
             <div className="flex items-center gap-2">
+              {/* AI Magic Fix Button */}
+              {analysis && (
+                <AIOptimizeButton
+                  articleId={article.id}
+                  content={article.content}
+                  title={article.title}
+                  metaDescription={article.meta_description}
+                  targetKeyword={article.keywords?.[0] || ''}
+                  missingKeywords={analysis.nlpKeywords.filter(k => !k.found).map(k => k.keyword)}
+                  issues={analysis.issues}
+                  currentKeywordDensity={analysis.keywordDensity}
+                  wordCount={analysis.wordCount}
+                  onOptimized={() => fetchArticle()}
+                />
+              )}
+              
               <Button
                 variant="outline"
                 size="sm"
@@ -245,6 +264,15 @@ const SEOAnalyzer = () => {
                 </div>
               </div>
             </motion.div>
+
+            {/* Competitor Analysis */}
+            <CompetitorAnalysis
+              wordCount={analysis.wordCount}
+              headingsCount={analysis.headingsCount}
+              imagesCount={analysis.imagesCount}
+              internalLinks={analysis.internalLinks}
+              externalLinks={analysis.externalLinks}
+            />
 
             {/* Google Search Console */}
             <GoogleSearchConsoleCard 

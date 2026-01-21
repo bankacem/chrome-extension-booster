@@ -6,6 +6,8 @@ interface NLPKeyword {
   keyword: string;
   found: boolean;
   importance: 'high' | 'medium' | 'low';
+  count?: number;
+  idealCount?: number;
 }
 
 interface KeywordsSidebarProps {
@@ -119,6 +121,20 @@ export function KeywordsSidebar({ keywords, targetKeyword }: KeywordsSidebarProp
               )}>
                 {keyword.keyword}
               </span>
+              
+              {/* Count Badge */}
+              {keyword.count !== undefined && keyword.idealCount !== undefined && (
+                <span className={cn(
+                  "px-1.5 py-0.5 text-[10px] font-bold rounded min-w-[32px] text-center",
+                  keyword.count >= keyword.idealCount
+                    ? "bg-green-500/20 text-green-500"
+                    : keyword.count > 0
+                      ? "bg-yellow-500/20 text-yellow-500"
+                      : "bg-destructive/20 text-destructive"
+                )}>
+                  {keyword.count}/{keyword.idealCount}
+                </span>
+              )}
               
               {/* Importance Badge */}
               {getImportanceBadge(keyword.importance)}
