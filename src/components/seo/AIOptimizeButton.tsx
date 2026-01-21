@@ -66,10 +66,23 @@ export function AIOptimizeButton({
       });
 
       if (error) {
+        // Check for specific error codes
+        if (error.message?.includes('402') || error.message?.includes('payment')) {
+          throw new Error('رصيد AI نفذ. يرجى إضافة رصيد في Settings → Workspace → Usage');
+        }
+        if (error.message?.includes('429') || error.message?.includes('rate')) {
+          throw new Error('تم تجاوز حد الطلبات. يرجى المحاولة بعد دقيقة');
+        }
         throw error;
       }
 
-      if (data.error) {
+      if (data?.error) {
+        if (data.error.includes('credit') || data.error.includes('402')) {
+          throw new Error('رصيد AI نفذ. يرجى إضافة رصيد في Settings → Workspace → Usage');
+        }
+        if (data.error.includes('rate') || data.error.includes('429')) {
+          throw new Error('تم تجاوز حد الطلبات. يرجى المحاولة بعد دقيقة');
+        }
         throw new Error(data.error);
       }
 
