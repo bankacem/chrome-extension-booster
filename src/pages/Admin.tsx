@@ -6,7 +6,7 @@ import {
   Download, Upload, FileText, Settings, BarChart3, Tag,
   Save, X, Image, Link as LinkIcon, Database, RefreshCw,
   LogOut, Globe, Archive, Shield, Copy, ExternalLink, CheckSquare, FileJson,
-  CalendarClock, Settings2, Wand2, ImageOff, CalendarCheck
+  CalendarClock, Settings2, Wand2, ImageOff, CalendarCheck, TrendingUp
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -1131,6 +1131,15 @@ Disallow: /admin/*`;
                           </TableCell>
                           <TableCell className="text-right">
                             <div className="flex items-center justify-end gap-1">
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                onClick={() => navigate(`/settings/seo/${article.slug}`)}
+                                title="SEO Analysis"
+                                className="text-primary hover:text-primary"
+                              >
+                                <TrendingUp className="h-4 w-4" />
+                              </Button>
                               <Button
                                 variant="ghost"
                                 size="icon"
