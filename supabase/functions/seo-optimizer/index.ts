@@ -170,26 +170,117 @@ Return a JSON object with these fields:
 
     console.log("AI Response received, parsing...");
 
-    // Parse the JSON response
+    // Parse the JSON response with robust cleaning
     let result;
     try {
       // Try to extract JSON from the response
       const jsonMatch = responseContent.match(/\{[\s\S]*\}/);
       if (jsonMatch) {
-        result = JSON.parse(jsonMatch[0]);
+        let jsonString = jsonMatch[0];
+        
+        // Clean up control characters that break JSON parsing
+        // Replace actual newlines inside string values with escaped newlines
+        jsonString = jsonString
+          .replace(/\r\n/g, '\\n')
+          .replace(/\r/g, '\\n')
+          .replace(/\n/g, '\\n')
+          .replace(/\t/g, '\\t');
+        
+        // Try parsing the cleaned JSON
+        try {
+          result = JSON.parse(jsonString);
+        } catch {
+          // If still failing, try a more aggressive approach
+          // Extract values manually using regex
+          console.log("Standard parse failed, trying manual extraction...");
+          
+          const titleMatch = jsonString.match(/"optimizedTitle"\s*:\s*"([^"]+)"/);
+          const metaMatch = jsonString.match(/"optimizedMetaDescription"\s*:\s*"([^"]+)"/);
+          const changesMatch = jsonString.match(/"changes"\s*:\s*\[([\s\S]*?)\]/);
+          
+          // For content, extract everything between "optimizedContent": " and the next field
+          const contentStartMatch = jsonString.match(/"optimizedContent"\s*:\s*"/);
+          let extractedContent = responseContent; // fallback
+          
+          if (contentStartMatch) {
+            const startIdx = jsonString.indexOf(contentStartMatch[0]) + contentStartMatch[0].length;
+            // Find the end by looking for ","optimizedTitle" or similar patterns
+            const endPatterns = [
+              jsonString.indexOf('","optimizedTitle"', startIdx),
+              jsonString.indexOf('",\\n"optimizedTitle"', startIdx),
+              jsonString.indexOf('", "optimizedTitle"', startIdx)
+            ].filter(idx => idx > startIdx);
+            
+            if (endPatterns.length > 0) {
+              const endIdx = Math.min(...endPatterns);
+              extractedContent = jsonString.substring(startIdx, endIdx)
+                .replace(/\\n/g, '\n')
+                .replace(/\\t/g, '\t')
+                .replace(/\\"/g, '"');
+            }
+          }
+          
+          // Parse changes array
+          let changes: string[] = ["Content was optimized"];
+          if (changesMatch) {
+            try {
+              const changesStr = changesMatch[1].replace(/'/g, '"');
+              const changeItems = changesStr.match(/"([^"]+)"/g);
+              if (changeItems) {
+                changes = changeItems.map((c: string) => c.replace(/"/g, ''));
+              }
+            } catch {
+              // Keep default changes
+            }
+          }
+          
+          result = {
+            optimizedContent: extractedContent,
+            optimizedTitle: titleMatch ? titleMatch[1] : title,
+            optimizedMetaDescription: metaMatch ? metaMatch[1] : (metaDescription || ""),
+            changes: changes
+          };
+        }
       } else {
         throw new Error("No JSON found in response");
       }
     } catch (parseError) {
       console.error("Parse error, using raw response:", parseError);
-      // If parsing fails, return the raw content as optimized
+      // If parsing fails completely, return the raw content as optimized
+      // Try to clean HTML from the response
+      let cleanContent = responseContent;
+      
+      // If response starts with ``` or contains markdown, clean it
+      if (responseContent.includes('```html')) {
+        const htmlMatch = responseContent.match(/```html\s*([\s\S]*?)```/);
+        if (htmlMatch) {
+          cleanContent = htmlMatch[1].trim();
+        }
+      } else if (responseContent.includes('```')) {
+        const codeMatch = responseContent.match(/```\s*([\s\S]*?)```/);
+        if (codeMatch) {
+          cleanContent = codeMatch[1].trim();
+        }
+      }
+      
       result = {
-        optimizedContent: responseContent,
+        optimizedContent: cleanContent,
         optimizedTitle: title,
         optimizedMetaDescription: metaDescription || "",
         changes: ["Content was processed but response format was unexpected"]
       };
     }
+    
+    // Validate result has required fields
+    if (!result.optimizedContent || typeof result.optimizedContent !== 'string') {
+      result.optimizedContent = content; // Fallback to original
+      result.changes = ["Optimization failed - using original content"];
+    }
+    if (!result.optimizedTitle) result.optimizedTitle = title;
+    if (!result.optimizedMetaDescription) result.optimizedMetaDescription = metaDescription || "";
+    if (!Array.isArray(result.changes)) result.changes = ["Content optimized"];
+    
+    console.log("Successfully parsed optimization result");
 
     return new Response(JSON.stringify(result), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
