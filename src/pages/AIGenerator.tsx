@@ -523,10 +523,13 @@ const AIGenerator = () => {
           publishedAt = new Date().toISOString();
         }
 
+        // Generate unique slug with timestamp to avoid duplicates
+        const uniqueSlug = `${article.slug}-${Date.now().toString(36)}${Math.random().toString(36).substring(2, 5)}`;
+        
         const { error } = await supabase.from("articles").insert({
           title: article.title,
           content: processedContent,
-          slug: article.slug + (i > 0 ? `-${i}` : ''),
+          slug: uniqueSlug,
           excerpt: article.excerpt,
           category: article.category,
           keywords: article.keywords,
