@@ -75,6 +75,7 @@ const WRITING_STYLES = [
   { value: "educational", label: "Educational", description: "Informative and explanatory" },
   { value: "persuasive", label: "Persuasive", description: "Engaging and action-oriented" },
   { value: "technical", label: "Technical", description: "Detailed and precise" },
+  { value: "human", label: "Human-Like", description: "Natural, authentic human writing" },
 ];
 
 const CATEGORIES = [
