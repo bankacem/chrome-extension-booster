@@ -16,6 +16,60 @@ interface OptimizeRequest {
   wordCount: number;
 }
 
+// Helper function to call Groq API
+async function callGroqAPI(apiKey: string, systemPrompt: string, userPrompt: string) {
+  const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      model: "llama-3.3-70b-versatile",
+      messages: [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userPrompt },
+      ],
+      temperature: 0.7,
+      max_tokens: 8000,
+    }),
+  });
+  
+  return { response, provider: "Groq" };
+}
+
+// Helper function to call Gemini API
+async function callGeminiAPI(apiKey: string, systemPrompt: string, userPrompt: string) {
+  const combinedContent = systemPrompt + "\n\n" + userPrompt;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+  
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      contents: [{
+        parts: [{ text: combinedContent }]
+      }],
+      generationConfig: {
+        temperature: 0.7,
+        maxOutputTokens: 8000,
+      }
+    }),
+  });
+  
+  return { response, provider: "Gemini" };
+}
+
+// Extract content from provider response
+function extractContent(data: any, provider: string): string {
+  if (provider === "Gemini") {
+    return data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+  }
+  return data.choices?.[0]?.message?.content || "";
+}
+
 serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
@@ -34,8 +88,10 @@ serve(async (req) => {
     }: OptimizeRequest = await req.json();
 
     const GROQ_API_KEY = Deno.env.get("GROQ_API_KEY");
-    if (!GROQ_API_KEY) {
-      throw new Error("GROQ_API_KEY is not configured. Please add it in Supabase Secrets.");
+    const GEMINI_API_KEY = Deno.env.get("GEMINI_API_KEY");
+    
+    if (!GROQ_API_KEY && !GEMINI_API_KEY) {
+      throw new Error("No API key configured. Please add GROQ_API_KEY or GEMINI_API_KEY in Supabase Secrets.");
     }
 
     // Build optimization instructions based on issues
@@ -133,47 +189,59 @@ Return ONLY a valid JSON object (no markdown code blocks):
   "changes": ["list of specific changes made"]
 }`;
 
-    console.log("Calling Groq AI for SEO optimization...");
+    console.log("Starting SEO optimization with fallback providers...");
 
-    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${GROQ_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: userPrompt },
-        ],
-        temperature: 0.7,
-        max_tokens: 8000,
-      }),
-    });
+    let response: Response;
+    let usedProvider: string;
+    let responseContent: string = "";
+
+    // Try Groq first, then Gemini as fallback
+    if (GROQ_API_KEY) {
+      console.log("Trying Groq API...");
+      const groqResult = await callGroqAPI(GROQ_API_KEY, systemPrompt, userPrompt);
+      response = groqResult.response;
+      usedProvider = groqResult.provider;
+      
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Groq API error:", response.status, errorText);
+        
+        // If Groq fails and we have Gemini, try Gemini
+        if (GEMINI_API_KEY && (response.status === 429 || response.status >= 500)) {
+          console.log("Groq failed, falling back to Gemini...");
+          const geminiResult = await callGeminiAPI(GEMINI_API_KEY, systemPrompt, userPrompt);
+          response = geminiResult.response;
+          usedProvider = geminiResult.provider;
+        } else if (response.status === 429) {
+          return new Response(
+            JSON.stringify({ error: "Rate limit exceeded. Please try again in a minute." }),
+            { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+          );
+        } else if (response.status === 401) {
+          return new Response(
+            JSON.stringify({ error: "Invalid API key. Please check your GROQ_API_KEY secret." }),
+            { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+          );
+        }
+      }
+    } else if (GEMINI_API_KEY) {
+      console.log("Using Gemini API (Groq not configured)...");
+      const geminiResult = await callGeminiAPI(GEMINI_API_KEY, systemPrompt, userPrompt);
+      response = geminiResult.response;
+      usedProvider = geminiResult.provider;
+    } else {
+      throw new Error("No API keys configured");
+    }
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error("Groq AI error:", response.status, errorText);
-      
-      if (response.status === 429) {
-        return new Response(
-          JSON.stringify({ error: "Groq rate limit exceeded. Please try again in a minute." }),
-          { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-        );
-      }
-      if (response.status === 401) {
-        return new Response(
-          JSON.stringify({ error: "Invalid Groq API key. Please check your GROQ_API_KEY secret." }),
-          { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-        );
-      }
-      
-      throw new Error(`Groq API error: ${response.status} - ${errorText}`);
+      console.error(`${usedProvider} API error:`, response.status, errorText);
+      throw new Error(`${usedProvider} API error: ${response.status} - ${errorText}`);
     }
 
     const aiResponse = await response.json();
-    const responseContent = aiResponse.choices?.[0]?.message?.content;
+    responseContent = extractContent(aiResponse, usedProvider);
+    console.log(`Successfully got response from ${usedProvider}`);
 
     if (!responseContent) {
       throw new Error("No response from AI");

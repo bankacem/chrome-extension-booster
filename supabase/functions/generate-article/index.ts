@@ -381,7 +381,8 @@ serve(async (req) => {
       casual: "Casual and friendly tone, easy to read",
       educational: "Educational and informative, explaining concepts clearly",
       persuasive: "Persuasive and engaging, encouraging action",
-      technical: "Technical and detailed, with precise terminology"
+      technical: "Technical and detailed, with precise terminology",
+      human: "Write in a natural, authentic human style. Avoid AI-typical patterns like overuse of 'delve', 'leverage', 'explore'. Use varied sentence lengths, occasional contractions, personal anecdotes or examples, rhetorical questions, and conversational transitions. The writing should feel like it came from an experienced human writer, not AI."
     };
 
     const extensionContext = EXTENSIONS.map(ext => 
