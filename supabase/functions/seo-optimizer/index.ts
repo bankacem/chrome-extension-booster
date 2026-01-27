@@ -87,39 +87,50 @@ serve(async (req) => {
       }
     });
 
-    const systemPrompt = `You are an expert SEO content optimizer. Your task is to rewrite and optimize the given HTML article content to achieve a higher SEO score.
+    const systemPrompt = `You are an expert SEO content optimizer. Your task is to optimize the given HTML article content for better SEO rankings.
 
-CRITICAL RULES:
-1. Keep the same meaning and topic of the original content
-2. Output ONLY valid HTML content - no markdown, no explanations
-3. Maintain the same structure (headings hierarchy)
-4. Do NOT change any existing links or image sources
-5. Use natural language - avoid keyword stuffing
-6. Keep the content professional and readable
-7. Output must be clean HTML ready for direct use
+CRITICAL REQUIREMENTS - YOU MUST FOLLOW:
+1. The target keyword "${targetKeyword}" MUST appear:
+   - In the title (within first 60 characters)
+   - In the first paragraph
+   - Throughout content with 1.5-2% density (approximately 15-20 times per 1000 words)
+2. KEEP ALL existing internal links (href="/...") - DO NOT REMOVE THEM
+3. KEEP ALL existing external links - DO NOT REMOVE THEM
+4. Title MUST be under 60 characters
+5. Meta description MUST be 120-155 characters and include the target keyword
+6. Output clean HTML only - no markdown, no JSON code blocks
+7. Maintain the same topic and meaning
+8. Use natural language - balance keyword usage
 
 OPTIMIZATION TASKS:
 ${optimizationTasks.join('\n')}
 
 Target Keyword: "${targetKeyword}"
+Required Keyword Density: 1.5% - 2%
 Current Word Count: ${wordCount}
 Current Keyword Density: ${currentKeywordDensity.toFixed(2)}%`;
 
-    const userPrompt = `Optimize this article content:
+    const userPrompt = `Optimize this article for SEO:
 
-TITLE: ${title}
+CURRENT TITLE: ${title}
+TARGET KEYWORD: ${targetKeyword}
+CURRENT META DESCRIPTION: ${metaDescription || 'MISSING - Create one with target keyword'}
 
-CURRENT META DESCRIPTION: ${metaDescription || 'MISSING - Create one'}
-
-CONTENT:
+CONTENT TO OPTIMIZE:
 ${content}
 
-Return a JSON object with these fields:
+IMPORTANT: 
+- Title must contain "${targetKeyword}" and be under 60 characters
+- First paragraph must contain "${targetKeyword}"
+- Maintain keyword density between 1.5-2%
+- Keep ALL internal and external links from the original
+
+Return ONLY a valid JSON object (no markdown code blocks):
 {
-  "optimizedContent": "the fully optimized HTML content",
-  "optimizedTitle": "improved title if needed, or original",
-  "optimizedMetaDescription": "new meta description 120-160 chars",
-  "changes": ["list of changes made"]
+  "optimizedContent": "the optimized HTML content with target keyword properly distributed",
+  "optimizedTitle": "short title under 60 chars with target keyword",
+  "optimizedMetaDescription": "120-155 chars description with target keyword",
+  "changes": ["list of specific changes made"]
 }`;
 
     console.log("Calling Groq AI for SEO optimization...");

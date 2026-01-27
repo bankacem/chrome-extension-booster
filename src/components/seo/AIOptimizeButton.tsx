@@ -157,8 +157,8 @@ export function AIOptimizeButton({
       </Button>
 
       <Dialog open={showPreview} onOpenChange={setShowPreview}>
-        <DialogContent className="max-w-4xl max-h-[90vh]">
-          <DialogHeader>
+        <DialogContent className="max-w-4xl max-h-[85vh] flex flex-col">
+          <DialogHeader className="flex-shrink-0">
             <DialogTitle className="flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-primary" />
               AI Optimization Preview
@@ -169,7 +169,7 @@ export function AIOptimizeButton({
           </DialogHeader>
 
           {optimizedData && (
-            <div className="space-y-6">
+            <div className="flex-1 overflow-y-auto space-y-4 pr-2">
               {/* Changes Summary */}
               <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-4">
                 <h4 className="font-semibold text-green-500 mb-2 flex items-center gap-2">
@@ -238,16 +238,19 @@ export function AIOptimizeButton({
                 </p>
               </div>
 
-              {/* Actions */}
-              <div className="flex justify-end gap-3">
-                <Button variant="outline" onClick={() => setShowPreview(false)}>
-                  Cancel
-                </Button>
-                <Button onClick={handleApply} className="bg-gradient-to-r from-primary to-accent">
-                  <Check className="w-4 h-4 mr-2" />
-                  Apply Changes
-                </Button>
-              </div>
+            </div>
+          )}
+          
+          {/* Actions - Fixed at bottom */}
+          {optimizedData && (
+            <div className="flex-shrink-0 flex justify-end gap-3 pt-4 border-t border-border mt-4">
+              <Button variant="outline" onClick={() => setShowPreview(false)}>
+                Cancel
+              </Button>
+              <Button onClick={handleApply} className="bg-gradient-to-r from-primary to-accent">
+                <Check className="w-4 h-4 mr-2" />
+                Apply Changes
+              </Button>
             </div>
           )}
         </DialogContent>
