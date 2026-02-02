@@ -12,6 +12,7 @@ interface SEOProps {
 }
 
 const SITE_NAME = "ExtensionTo";
+// Force www prefix for URL consistency - prevents Google duplicate indexing
 const SITE_URL = "https://www.extensionto.com";
 const DEFAULT_IMAGE = "https://www.extensionto.com/og-image.png";
 
