@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent">
               <Chrome className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="font-heading text-xl font-bold">ExtensionHub</span>
+            <span className="font-heading text-xl font-bold">ExtensionTo</span>
           </a>
 
           {/* Desktop Navigation */}
