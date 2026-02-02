@@ -10,6 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { getExtensionBySlug, extensions } from "@/lib/extensionsData";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
@@ -71,6 +72,12 @@ const ExtensionPage = () => {
 
   return (
     <main className="min-h-screen bg-background">
+      <SEO
+        title={`${extension.name} - Chrome Extension`}
+        description={extension.longDescription}
+        keywords={extension.keywords.join(", ")}
+        canonicalPath={`/extension/${extension.slug}`}
+      />
       <Navbar />
       
       {/* Hero Section */}

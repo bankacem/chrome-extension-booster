@@ -5,6 +5,7 @@ import { Calendar, Clock, ArrowLeft, Tag, User, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -119,15 +120,16 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={article.title}
+        description={article.meta_description || article.excerpt || undefined}
+        keywords={article.keywords?.join(", ")}
+        canonicalPath={`/blog/${article.slug}`}
+        ogType="article"
+        articlePublishedTime={article.published_at}
+        articleAuthor={article.author}
+      />
       <Navbar />
-
-      {/* SEO Meta Tags */}
-      {article.meta_description && (
-        <meta name="description" content={article.meta_description} />
-      )}
-      {article.keywords && article.keywords.length > 0 && (
-        <meta name="keywords" content={article.keywords.join(", ")} />
-      )}
 
       <main className="pt-24 pb-16">
         <article className="container mx-auto max-w-4xl px-4">

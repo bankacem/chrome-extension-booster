@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { supabase } from "@/integrations/supabase/client";
 
 interface Article {
@@ -60,6 +61,11 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Blog - Latest Articles & Tips"
+        description="Discover tips, tutorials, and insights about browser extensions, productivity, and web development. Stay updated with the latest Chrome extension news."
+        canonicalPath="/blog"
+      />
       <Navbar />
       
       <main className="pt-24 pb-16">

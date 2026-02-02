@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const Privacy = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Privacy Policy"
+        description="Learn how ExtensionTo protects your privacy. Our Chrome extensions are designed with privacy in mind - no data collection, local storage only."
+        canonicalPath="/privacy"
+      />
       <Navbar />
       
       <main className="container mx-auto max-w-4xl px-4 pt-24 pb-16">
@@ -19,7 +25,7 @@ const Privacy = () => {
             
             <h2>Introduction</h2>
             <p>
-              Welcome to ExtensionHub. We respect your privacy and are committed to protecting your personal data. 
+              Welcome to ExtensionTo. We respect your privacy and are committed to protecting your personal data. 
               This privacy policy explains how we handle information when you use our Chrome extensions and visit our website.
             </p>
 

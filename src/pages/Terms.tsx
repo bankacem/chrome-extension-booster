@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const Terms = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Terms of Service"
+        description="Read the Terms of Service for ExtensionTo Chrome extensions and website. Understand your rights and responsibilities when using our services."
+        canonicalPath="/terms"
+      />
       <Navbar />
       
       <main className="container mx-auto max-w-4xl px-4 pt-24 pb-16">
@@ -19,13 +25,13 @@ const Terms = () => {
             
             <h2>1. Acceptance of Terms</h2>
             <p>
-              By accessing and using ExtensionHub's website and Chrome extensions, you accept and agree to be bound by these Terms of Service. 
+              By accessing and using ExtensionTo's website and Chrome extensions, you accept and agree to be bound by these Terms of Service. 
               If you do not agree to these terms, please do not use our services.
             </p>
 
             <h2>2. Description of Services</h2>
             <p>
-              ExtensionHub provides Chrome browser extensions designed to enhance your browsing experience. 
+              ExtensionTo provides Chrome browser extensions designed to enhance your browsing experience. 
               Our extensions include tools for screenshots, dark mode, privacy protection, tab management, and more.
             </p>
 
@@ -52,7 +58,7 @@ const Terms = () => {
 
             <h2>5. Limitations of Liability</h2>
             <p>
-              In no event shall ExtensionHub be liable for any damages arising out of the use or inability to use our extensions or website. 
+              In no event shall ExtensionTo be liable for any damages arising out of the use or inability to use our extensions or website. 
               This includes, but is not limited to, direct, indirect, incidental, punitive, and consequential damages.
             </p>
 
@@ -67,7 +73,7 @@ const Terms = () => {
 
             <h2>7. Intellectual Property</h2>
             <p>
-              All content, features, and functionality of our extensions and website are owned by ExtensionHub and are protected by 
+              All content, features, and functionality of our extensions and website are owned by ExtensionTo and are protected by 
               international copyright, trademark, and other intellectual property laws.
             </p>
 

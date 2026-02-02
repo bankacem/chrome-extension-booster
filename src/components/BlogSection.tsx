@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const posts = [
   {
@@ -9,6 +10,7 @@ const posts = [
     date: "Dec 3, 2024",
     readTime: "5 min read",
     category: "Productivity",
+    slug: "top-5-reasons-chrome-extensions-productivity",
   },
   {
     title: "How Chrome Extensions Revolutionize Web Development",
@@ -16,6 +18,7 @@ const posts = [
     date: "Nov 28, 2024",
     readTime: "7 min read",
     category: "Development",
+    slug: "chrome-extensions-revolutionize-web-development",
   },
   {
     title: "Unlock Hidden Browser Powers: A Deep Dive Into Focus Mode",
@@ -23,6 +26,7 @@ const posts = [
     date: "Nov 20, 2024",
     readTime: "6 min read",
     category: "Tips & Tricks",
+    slug: "unlock-hidden-browser-powers-focus-mode",
   },
 ];
 
@@ -46,9 +50,11 @@ const BlogSection = () => {
               Latest Articles
             </h2>
           </div>
-          <Button variant="glass">
-            View All Posts
-            <ArrowRight className="h-4 w-4" />
+          <Button variant="glass" asChild>
+            <Link to="/blog">
+              View All Posts
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </Button>
         </motion.div>
 
@@ -90,13 +96,13 @@ const BlogSection = () => {
                 </p>
 
                 {/* Read More */}
-                <a
-                  href="#"
+                <Link
+                  to={`/blog/${post.slug}`}
                   className="inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2"
                 >
                   Read More
                   <ArrowRight className="h-4 w-4" />
-                </a>
+                </Link>
               </div>
             </motion.article>
           ))}

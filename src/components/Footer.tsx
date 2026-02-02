@@ -40,7 +40,7 @@ const Footer = () => {
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent">
                 <Chrome className="h-5 w-5 text-primary-foreground" />
               </div>
-              <span className="font-heading text-xl font-bold">ExtensionHub</span>
+              <span className="font-heading text-xl font-bold">ExtensionTo</span>
             </a>
             <p className="mb-6 max-w-sm text-sm text-muted-foreground">
               Building powerful Chrome extensions that enhance productivity, 
@@ -113,7 +113,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © 2024 ExtensionHub. All rights reserved.
+            © 2024 ExtensionTo. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <p className="text-sm text-muted-foreground">
