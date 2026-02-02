@@ -26,12 +26,25 @@ interface Article {
   views: number;
 }
 
+// Helper to convert slug to readable title for instant SEO
+const slugToTitle = (slug: string): string => {
+  return slug
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
+
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const [article, setArticle] = useState<Article | null>(null);
   const [relatedArticles, setRelatedArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
   const { toast } = useToast();
+
+  // Generate instant SEO from slug before data loads
+  const instantTitle = slug ? slugToTitle(slug) : "Loading Article";
+  const instantDescription = `Read our article about ${instantTitle.toLowerCase()}. Discover tips, tutorials, and insights about browser extensions and productivity.`;
 
   useEffect(() => {
     if (slug) {
@@ -40,6 +53,9 @@ const BlogPost = () => {
   }, [slug]);
 
   const fetchArticle = async () => {
+    setLoading(true);
+    setNotFound(false);
+    
     try {
       const { data, error } = await supabase
         .from("articles")
@@ -48,7 +64,16 @@ const BlogPost = () => {
         .eq("status", "published")
         .single();
 
-      if (error) throw error;
+      if (error) {
+        if (error.code === "PGRST116") {
+          // No rows returned - article not found
+          setNotFound(true);
+        } else {
+          throw error;
+        }
+        return;
+      }
+      
       setArticle(data);
 
       // Increment views
@@ -69,6 +94,7 @@ const BlogPost = () => {
       setRelatedArticles(related || []);
     } catch (error) {
       console.error("Error fetching article:", error);
+      setNotFound(true);
     } finally {
       setLoading(false);
     }
@@ -89,23 +115,21 @@ const BlogPost = () => {
     }
   };
 
-  if (loading) {
+  // Only show 404 after confirming article doesn't exist
+  if (notFound && !loading) {
     return (
       <div className="min-h-screen bg-background">
-        <Navbar />
-        <div className="flex items-center justify-center pt-32">
-          <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" />
-        </div>
-      </div>
-    );
-  }
-
-  if (!article) {
-    return (
-      <div className="min-h-screen bg-background">
+        <SEO
+          title="Article Not Found"
+          description="The article you're looking for doesn't exist or has been removed."
+          canonicalPath={`/blog/${slug}`}
+        />
         <Navbar />
         <div className="container mx-auto px-4 pt-32 text-center">
           <h1 className="mb-4 text-2xl font-bold">Article Not Found</h1>
+          <p className="mb-6 text-muted-foreground">
+            The article you're looking for doesn't exist or has been removed.
+          </p>
           <Link to="/blog">
             <Button>
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -116,6 +140,56 @@ const BlogPost = () => {
         <Footer />
       </div>
     );
+  }
+
+  // Loading state with SEO metadata already rendered
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background">
+        {/* SEO renders instantly based on slug */}
+        <SEO
+          title={instantTitle}
+          description={instantDescription}
+          canonicalPath={`/blog/${slug}`}
+          ogType="article"
+        />
+        <Navbar />
+        <main className="pt-24 pb-16">
+          <article className="container mx-auto max-w-4xl px-4">
+            <Link to="/blog">
+              <Button variant="ghost" className="mb-8">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Blog
+              </Button>
+            </Link>
+            
+            {/* Skeleton loading with title visible for SEO */}
+            <header className="mb-8">
+              <div className="mb-4 flex items-center gap-3">
+                <div className="h-6 w-20 animate-pulse rounded-full bg-muted" />
+                <div className="h-4 w-32 animate-pulse rounded bg-muted" />
+              </div>
+              <h1 className="mb-4 font-heading text-3xl font-bold leading-tight md:text-5xl">
+                {instantTitle}
+              </h1>
+              <p className="text-lg text-muted-foreground">Loading article content...</p>
+            </header>
+            
+            <div className="space-y-4">
+              <div className="h-64 w-full animate-pulse rounded-xl bg-muted" />
+              <div className="h-4 w-full animate-pulse rounded bg-muted" />
+              <div className="h-4 w-3/4 animate-pulse rounded bg-muted" />
+              <div className="h-4 w-5/6 animate-pulse rounded bg-muted" />
+            </div>
+          </article>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (!article) {
+    return null;
   }
 
   return (

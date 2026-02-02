@@ -3,6 +3,7 @@ import { extensions } from "../src/lib/extensionsData";
 import fs from "fs";
 import path from "path";
 
+// Force www prefix for URL consistency
 const WEBSITE_URL = "https://www.extensionto.com";
 
 const supabaseUrl = process.env.VITE_SUPABASE_URL;

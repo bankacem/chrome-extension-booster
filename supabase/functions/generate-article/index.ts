@@ -585,8 +585,8 @@ Generate the complete HTML article now.`;
     const wordCount = textContent.split(' ').filter(Boolean).length;
     const readTime = Math.max(1, Math.ceil(wordCount / 200));
 
-    // Generate slug
-    const slug = keyword
+    // Generate SEO-friendly slug from article title (not keyword)
+    const slug = title
       .toLowerCase()
       .replace(/[^\p{L}\p{N}\s-]/gu, '')
       .trim()
