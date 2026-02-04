@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.extensionto.com/sitemap.xml
+Sitemap: https://extensionto.com/sitemap.xml

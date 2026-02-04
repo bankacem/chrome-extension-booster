@@ -3,8 +3,8 @@ import { extensions } from "../src/lib/extensionsData";
 import fs from "fs";
 import path from "path";
 
-// Force www prefix for URL consistency
-const WEBSITE_URL = "https://www.extensionto.com";
+// Use non-www version for URL consistency - matches Google indexed version
+const WEBSITE_URL = "https://extensionto.com";
 
 const supabaseUrl = process.env.VITE_SUPABASE_URL;
 const supabaseKey = process.env.VITE_SUPABASE_PUBLISHABLE_KEY;

@@ -5,10 +5,10 @@
       "has": [
         {
           "type": "host",
-          "value": "extensionto.com"
+          "value": "www.extensionto.com"
         }
       ],
-      "destination": "https://www.extensionto.com/:path*",
+      "destination": "https://extensionto.com/:path*",
       "permanent": true
     }
   ],
