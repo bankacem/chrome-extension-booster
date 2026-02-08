@@ -1,6 +1,9 @@
 {
   "rewrites": [
-    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { 
+      "source": "/sitemap.xml", 
+      "destination": "https://svzfurufpzsrqoxlwxgx.supabase.co/functions/v1/sitemap" 
+    },
     { "source": "/robots.txt", "destination": "/robots.txt" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
@@ -8,7 +11,8 @@
     {
       "source": "/sitemap.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml" }
+        { "key": "Content-Type", "value": "application/xml" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
       ]
     }
   ]
