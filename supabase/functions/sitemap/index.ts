@@ -21,6 +21,60 @@ const extensionSlugs = [
   "cookie-banner-blocker",
 ];
 
+const escapeXml = (value: string) =>
+  value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+
+const buildLoc = (path: string) => escapeXml(`${WEBSITE_URL}${path}`);
+
+type ArticleRow = {
+  slug: string;
+  updated_at: string | null;
+  published_at: string | null;
+  created_at: string | null;
+};
+
+async function fetchAllPublishedArticles(supabase: ReturnType<typeof createClient>) {
+  const pageSize = 1000;
+  let from = 0;
+  let all: ArticleRow[] = [];
+  let totalCount: number | null = null;
+
+  while (true) {
+    const { data, error, count } = await supabase
+      .from("articles")
+      .select("slug, updated_at, published_at, created_at", { count: "exact" })
+      // Case-insensitive match to capture Published/published/PUBLISHED
+      .ilike("status", "published")
+      // Stable ordering for pagination
+      .order("published_at", { ascending: false, nullsFirst: false })
+      .order("created_at", { ascending: false })
+      .range(from, from + pageSize - 1);
+
+    if (error) throw error;
+
+    if (totalCount === null) totalCount = count ?? null;
+
+    const batch = (data ?? []) as ArticleRow[];
+    all = all.concat(batch);
+
+    if (batch.length < pageSize) break;
+    from += pageSize;
+  }
+
+  console.log(
+    `Fetched ${all.length} published articles${
+      totalCount !== null ? ` (count=${totalCount})` : ""
+    }`
+  );
+
+  return all;
+}
+
 Deno.serve(async (req) => {
   // Handle CORS preflight
   if (req.method === "OPTIONS") {
@@ -33,20 +87,8 @@ Deno.serve(async (req) => {
     
     const supabase = createClient(supabaseUrl, supabaseKey);
 
-    // Fetch all published articles
-    const { data: articles, error } = await supabase
-      .from("articles")
-      .select("slug, updated_at, published_at")
-      .eq("status", "published")
-      .order("published_at", { ascending: false });
-
-    if (error) {
-      console.error("Error fetching articles:", error);
-      throw error;
-    }
-
-    console.log(`Fetched ${articles?.length || 0} published articles`);
-
+    // Fetch ALL published articles (no implicit limits; paginated for future-proofing)
+    const articles = await fetchAllPublishedArticles(supabase);
     // Static pages
     const staticPages = [
       { url: "/", changefreq: "weekly", priority: "1.0" },
@@ -57,12 +99,12 @@ Deno.serve(async (req) => {
 
     // Article pages
     const articlePages = (articles || []).map((article) => ({
-      url: `/blog/${article.slug}`,
+      url: `/blog/${encodeURIComponent(article.slug)}`,
       changefreq: "monthly",
       priority: "0.7",
-      lastmod: article.updated_at 
+      lastmod: article.updated_at
         ? new Date(article.updated_at).toISOString().split("T")[0]
-        : article.published_at 
+        : article.published_at
           ? new Date(article.published_at).toISOString().split("T")[0]
           : undefined,
     }));
@@ -82,7 +124,7 @@ Deno.serve(async (req) => {
 ${allPages
   .map(
     (page) => `  <url>
-    <loc>${WEBSITE_URL}${page.url}</loc>
+    <loc>${buildLoc(page.url)}</loc>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>${
       page.lastmod
