@@ -37,17 +37,24 @@ const ExtensionPage = () => {
   const fetchRelatedArticles = async () => {
     if (!extension) return;
     
-    // Fetch articles that mention this extension
-    const { data } = await supabase
-      .from("articles")
-      .select("id, title, slug, excerpt, published_at")
-      .eq("status", "published")
-      .or(`title.ilike.%${extension.name}%,content.ilike.%${extension.name}%,keywords.cs.{${extension.keywords[0]}}`)
-      .order("published_at", { ascending: false })
-      .limit(5);
+    try {
+      const response = await fetch("/content/articles-index.json");
+      if (response.ok) {
+        const index = await response.json() as any[];
 
-    if (data) {
-      setRelatedArticles(data);
+        // Filter articles that mention this extension in title or keywords
+        const related = index
+          .filter(a =>
+            a.title.toLowerCase().includes(extension.name.toLowerCase()) ||
+            (a.keywords && a.keywords.some((k: string) => k.toLowerCase().includes(extension.name.toLowerCase()))) ||
+            (a.keywords && a.keywords.some((k: string) => extension.keywords.includes(k)))
+          )
+          .slice(0, 5);
+
+        setRelatedArticles(related);
+      }
+    } catch (error) {
+      console.error("Error fetching related articles from index:", error);
     }
   };
 

@@ -34,13 +34,10 @@ const Blog = () => {
 
   const fetchArticles = async () => {
     try {
-      const { data, error } = await supabase
-        .from("articles")
-        .select("*")
-        .eq("status", "published")
-        .order("published_at", { ascending: false });
+      const response = await fetch("/content/articles-index.json");
+      if (!response.ok) throw new Error("Failed to fetch articles index");
 
-      if (error) throw error;
+      const data = await response.json();
       setArticles(data || []);
     } catch (error) {
       console.error("Error fetching articles:", error);
