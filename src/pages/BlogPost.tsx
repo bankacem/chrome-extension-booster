@@ -74,7 +74,9 @@ const BlogPost = () => {
     
     try {
       // Fetch article from partitioned path
-      const response = await fetch(getPartitionedPath(slug));
+      const path = getPartitionedPath(slug);
+
+      const response = await fetch(path);
       if (!response.ok) {
         if (response.status === 404) {
           setNotFound(true);
@@ -86,7 +88,7 @@ const BlogPost = () => {
       const text = await response.text();
       const { frontmatter, content } = parseMarkdown(text);
 
-      if (!frontmatter.slug) {
+      if (!frontmatter || !frontmatter.slug) {
         setNotFound(true);
         return;
       }

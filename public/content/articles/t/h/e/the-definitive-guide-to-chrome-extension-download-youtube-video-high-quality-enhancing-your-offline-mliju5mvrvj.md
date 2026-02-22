@@ -4,7 +4,7 @@ title: >-
   The Definitive Guide to Chrome Extension Download YouTube Video High Quality:
   Enhancing Your Offline Media Experience
 slug: >-
-  the-definitive-guide-to-chrome-extension-download-youtube-video-high-quality-enhancing-your-offline--mliju5mvrvj
+  the-definitive-guide-to-chrome-extension-download-youtube-video-high-quality-enhancing-your-offline-mliju5mvrvj
 excerpt: >-
   In the contemporary digital landscape, video content has become the primary
   medium for education, entertainment, and professional development. While

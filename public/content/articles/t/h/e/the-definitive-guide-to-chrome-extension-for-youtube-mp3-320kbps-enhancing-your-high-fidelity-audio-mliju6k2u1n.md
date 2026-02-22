@@ -4,7 +4,7 @@ title: >-
   The Definitive Guide to Chrome Extension for YouTube MP3 320kbps: Enhancing
   Your High-Fidelity Audio Experience
 slug: >-
-  the-definitive-guide-to-chrome-extension-for-youtube-mp3-320kbps-enhancing-your-high-fidelity-audio--mliju6k2u1n
+  the-definitive-guide-to-chrome-extension-for-youtube-mp3-320kbps-enhancing-your-high-fidelity-audio-mliju6k2u1n
 excerpt: >-
   In the digital age, YouTube has evolved into the world’s largest repository of
   music, podcasts, and educational content. However, for audiophiles and
