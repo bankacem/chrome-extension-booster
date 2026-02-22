@@ -17,6 +17,13 @@ if (!supabaseUrl || !supabaseKey) {
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+function normalizeSlug(slug: string): string {
+  return slug.toLowerCase()
+    .replace(/[^a-z0-9]/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 async function fetchAllArticles() {
   let allArticles: any[] = [];
   let page = 0;
@@ -61,25 +68,39 @@ async function sync() {
   // Ensure base directory exists
   if (!fs.existsSync(articlesDir)) {
     fs.mkdirSync(articlesDir, { recursive: true });
+  } else {
+    // Clean up old articles to avoid mixed case/normalized issues
+    fs.rmSync(articlesDir, { recursive: true, force: true });
+    fs.mkdirSync(articlesDir, { recursive: true });
   }
 
   const articleIndex: any[] = [];
 
   for (const article of articles) {
     const { content, ...metadata } = article;
+    const originalSlug = metadata.slug;
+    const normalizedSlug = normalizeSlug(originalSlug);
+
+    // Update slug in metadata
+    metadata.slug = normalizedSlug;
 
     // Add to index
     articleIndex.push({
       id: metadata.id,
       title: metadata.title,
-      slug: metadata.slug,
-      description: metadata.description,
+      slug: normalizedSlug,
+      description: metadata.description || metadata.excerpt,
+      excerpt: metadata.excerpt,
       published_at: metadata.published_at,
       category: metadata.category,
       author: metadata.author,
-      image_url: metadata.image_url,
-      reading_time: metadata.reading_time,
-      views: metadata.views
+      image_url: metadata.image_url || metadata.featured_image,
+      featured_image: metadata.featured_image,
+      reading_time: metadata.reading_time || metadata.read_time,
+      read_time: metadata.read_time,
+      views: metadata.views,
+      tags: metadata.tags,
+      keywords: metadata.keywords
     });
 
     // Create Markdown content
@@ -87,7 +108,7 @@ async function sync() {
     const markdownContent = `---\n${frontmatter}---\n\n${content}`;
 
     // Get partitioned path
-    const relativePath = getPartitionedPath(article.slug);
+    const relativePath = getPartitionedPath(normalizedSlug);
     const fullPath = path.join(process.cwd(), 'public', relativePath);
     const dir = path.dirname(fullPath);
 
@@ -99,8 +120,6 @@ async function sync() {
   }
 
   // Save index
-  // Note: For 1M articles, this should be paginated or optimized.
-  // For now, we save it as a single file but acknowledge the scale limit.
   fs.writeFileSync(indexFile, JSON.stringify(articleIndex, null, 2));
   console.log(`Successfully synced ${articles.length} articles to GitHub structure.`);
 }

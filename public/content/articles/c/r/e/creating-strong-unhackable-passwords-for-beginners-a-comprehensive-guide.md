@@ -1,7 +1,7 @@
 ---
 id: 9b88e608-7cad-4d7f-8634-a5070eec5cbb
 title: 'Creating Strong, Unhackable Passwords for Beginners: A Comprehensive Guide'
-slug: 'Creating Strong, Unhackable Passwords for Beginners: A Comprehensive Guide'
+slug: creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide
 excerpt: >-
   As the digital world continues to evolve, the importance of online security
   has never been more critical. One of the most effective ways to protect
