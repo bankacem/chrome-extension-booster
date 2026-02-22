@@ -27,23 +27,38 @@ async function generateSitemap() {
     { url: "/terms", changefreq: "yearly", priority: "0.3" },
   ];
 
-  // 2. Fetch articles from Supabase
-  const { data: articles, error } = await supabase
-    .from("articles")
-    .select("slug, published_at")
-    .eq("status", "published");
+  // 2. Fetch articles (prefer local optimized data if exists)
+  let articlePages: any[] = [];
+  const optimizedPath = path.join(process.cwd(), "optimized_articles.json");
 
-  if (error) {
-    console.error("Error fetching articles:", error);
-    process.exit(1);
+  if (fs.existsSync(optimizedPath)) {
+    console.log("Using local optimized_articles.json for sitemap generation...");
+    const optimizedArticles = JSON.parse(fs.readFileSync(optimizedPath, 'utf-8'));
+    articlePages = optimizedArticles.map((article: any) => ({
+      url: `/blog/${article.newSlug}`,
+      changefreq: "monthly",
+      priority: "0.7",
+      lastmod: new Date().toISOString().split('T')[0] // Use current date for fresh updates
+    }));
+  } else {
+    console.log("Fetching articles from Supabase...");
+    const { data: articles, error } = await supabase
+      .from("articles")
+      .select("slug, published_at")
+      .eq("status", "published");
+
+    if (error) {
+      console.error("Error fetching articles:", error);
+      process.exit(1);
+    }
+
+    articlePages = articles.map((article) => ({
+      url: `/blog/${article.slug}`,
+      changefreq: "monthly",
+      priority: "0.7",
+      lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : undefined
+    }));
   }
-
-  const articlePages = articles.map((article) => ({
-    url: `/blog/${article.slug}`,
-    changefreq: "monthly",
-    priority: "0.7",
-    lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : undefined
-  }));
 
   // 3. Extensions
   const extensionPages = extensions.map((ext) => ({
