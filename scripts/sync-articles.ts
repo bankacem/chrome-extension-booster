@@ -4,6 +4,7 @@ import * as path from 'path';
 import * as yaml from 'js-yaml';
 import * as dotenv from 'dotenv';
 import { getPartitionedPath, normalizeSlug } from '../src/utils/articlePath';
+import { notifyIndexing } from './google-indexing';
 
 dotenv.config();
 
@@ -35,6 +36,7 @@ interface ArticleData {
   tags?: string[];
   keywords?: string[];
   meta_description?: string;
+  updated_at: string;
 }
 
 async function fetchAllArticles(): Promise<ArticleData[]> {
@@ -93,6 +95,7 @@ interface ArticleIndexItem {
   views: number;
   tags?: string[];
   keywords?: string[];
+  updated_at: string;
 }
 
 async function sync() {
@@ -113,6 +116,23 @@ async function sync() {
 
   const articlesDir = path.join(process.cwd(), 'public', 'content', 'articles');
   const indexFile = path.join(process.cwd(), 'public', 'content', 'articles-index.json');
+
+  // Load existing index for change detection
+  const oldIndexMap = new Map<string, ArticleIndexItem>();
+  if (fs.existsSync(indexFile)) {
+    console.log('Loading existing index for change detection...');
+    try {
+      const oldIndex = JSON.parse(fs.readFileSync(indexFile, 'utf-8')) as ArticleIndexItem[];
+      for (const item of oldIndex) {
+        oldIndexMap.set(item.slug, item);
+      }
+    } catch (e) {
+      console.warn('Failed to parse existing index file, change detection will treat all as new.');
+    }
+  }
+
+  const changedUrls: string[] = [];
+  const WEBSITE_URL = 'https://extensionto.com';
 
   // Ensure base directory exists
   if (!fs.existsSync(articlesDir)) {
@@ -144,6 +164,12 @@ async function sync() {
     // Update slug in metadata to ensure it's ALWAYS normalized
     metadata.slug = normalizedSlug;
 
+    // Change detection for Indexing API
+    const oldEntry = oldIndexMap.get(normalizedSlug);
+    if (!oldEntry || oldEntry.updated_at !== metadata.updated_at) {
+      changedUrls.push(`${WEBSITE_URL}/blog/${normalizedSlug}`);
+    }
+
     // Add to index
     articleIndex.push({
       id: metadata.id,
@@ -160,7 +186,8 @@ async function sync() {
       read_time: metadata.read_time,
       views: metadata.views,
       tags: metadata.tags,
-      keywords: metadata.keywords
+      keywords: metadata.keywords,
+      updated_at: metadata.updated_at
     });
 
     // Create Markdown content
@@ -182,6 +209,16 @@ async function sync() {
   // Save index
   fs.writeFileSync(indexFile, JSON.stringify(articleIndex, null, 2));
   console.log(`Successfully synced ${articles.length} articles to GitHub structure.`);
+
+  // Trigger Google Indexing for changed articles
+  if (changedUrls.length > 0) {
+    console.log(`Notifying Google Indexing API about ${changedUrls.length} changed articles...`);
+    for (const url of changedUrls) {
+      await notifyIndexing(url);
+    }
+  } else {
+    console.log('No new or updated articles detected for indexing.');
+  }
 }
 
 sync().catch(console.error);

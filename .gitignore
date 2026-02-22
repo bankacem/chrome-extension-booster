@@ -17,6 +17,7 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+google-indexing-key.json
 *.suo
 *.ntvs*
 *.njsproj
