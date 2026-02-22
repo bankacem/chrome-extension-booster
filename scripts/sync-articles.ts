@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 import * as dotenv from 'dotenv';
-import { getPartitionedPath } from '../src/utils/articlePath';
+import { getPartitionedPath, normalizeSlug } from '../src/utils/articlePath';
 
 dotenv.config();
 
@@ -17,15 +17,28 @@ if (!supabaseUrl || !supabaseKey) {
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-function normalizeSlug(slug: string): string {
-  return slug.toLowerCase()
-    .replace(/[^a-z0-9]/g, '-')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '');
+interface ArticleData {
+  id: string;
+  title: string;
+  slug: string;
+  content: string;
+  description?: string;
+  excerpt?: string;
+  published_at: string;
+  category: string;
+  author: string;
+  image_url?: string;
+  featured_image?: string;
+  reading_time?: number;
+  read_time?: number;
+  views: number;
+  tags?: string[];
+  keywords?: string[];
+  meta_description?: string;
 }
 
-async function fetchAllArticles() {
-  let allArticles: any[] = [];
+async function fetchAllArticles(): Promise<ArticleData[]> {
+  let allArticles: ArticleData[] = [];
   let page = 0;
   const pageSize = 1000;
   let hasMore = true;
@@ -44,7 +57,7 @@ async function fetchAllArticles() {
     }
 
     if (data && data.length > 0) {
-      allArticles = [...allArticles, ...data];
+      allArticles = [...allArticles, ...data as ArticleData[]];
       page++;
       if (data.length < pageSize) {
         hasMore = false;
@@ -57,10 +70,46 @@ async function fetchAllArticles() {
   return allArticles;
 }
 
+interface OptimizedItem {
+  originalSlug: string;
+  optimizedTitle: string;
+  newSlug: string;
+  metaDescription: string;
+}
+
+interface ArticleIndexItem {
+  id: string;
+  title: string;
+  slug: string;
+  description: string;
+  excerpt?: string;
+  published_at: string;
+  category: string;
+  author: string;
+  image_url?: string;
+  featured_image?: string;
+  reading_time?: number;
+  read_time?: number;
+  views: number;
+  tags?: string[];
+  keywords?: string[];
+}
+
 async function sync() {
   console.log('Fetching articles from Supabase...');
   const articles = await fetchAllArticles();
   console.log(`Found ${articles.length} published articles.`);
+
+  // Load optimized metadata if available to override truncated/unoptimized data from DB
+  const optimizedMap = new Map<string, OptimizedItem>();
+  const optimizedFile = path.join(process.cwd(), 'optimized_articles.json');
+  if (fs.existsSync(optimizedFile)) {
+    console.log('Loading optimized metadata from optimized_articles.json...');
+    const optimizedData = JSON.parse(fs.readFileSync(optimizedFile, 'utf-8')) as OptimizedItem[];
+    for (const item of optimizedData) {
+      optimizedMap.set(item.originalSlug, item);
+    }
+  }
 
   const articlesDir = path.join(process.cwd(), 'public', 'content', 'articles');
   const indexFile = path.join(process.cwd(), 'public', 'content', 'articles-index.json');
@@ -74,14 +123,25 @@ async function sync() {
     fs.mkdirSync(articlesDir, { recursive: true });
   }
 
-  const articleIndex: any[] = [];
+  const articleIndex: ArticleIndexItem[] = [];
 
   for (const article of articles) {
     const { content, ...metadata } = article;
+
+    // Check for optimized overrides
+    const optimized = optimizedMap.get(metadata.slug);
+    if (optimized) {
+      metadata.title = optimized.optimizedTitle;
+      metadata.slug = optimized.newSlug;
+      metadata.meta_description = optimized.metaDescription;
+      // Also update description/excerpt if they are missing or should match meta_description
+      if (!metadata.description) metadata.description = optimized.metaDescription;
+    }
+
     const originalSlug = metadata.slug;
     const normalizedSlug = normalizeSlug(originalSlug);
 
-    // Update slug in metadata
+    // Update slug in metadata to ensure it's ALWAYS normalized
     metadata.slug = normalizedSlug;
 
     // Add to index
@@ -89,7 +149,7 @@ async function sync() {
       id: metadata.id,
       title: metadata.title,
       slug: normalizedSlug,
-      description: metadata.description || metadata.excerpt,
+      description: (metadata.description || metadata.excerpt || ""),
       excerpt: metadata.excerpt,
       published_at: metadata.published_at,
       category: metadata.category,
