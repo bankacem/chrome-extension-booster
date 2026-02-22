@@ -21,6 +21,7 @@ meta_description: >-
 published_at: '2026-01-26T16:29:01.742+00:00'
 read_time: 8
 author: AI Generator
+views: 1
 ---
 <h1>How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster Browser</h1>
 

@@ -12,7 +12,8 @@
       ],
       "published_at": "2026-01-22T08:00:02.76+00:00",
       "read_time": 9,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 3
     },
     {
       "id": "adbefebd-a99b-474e-830a-bfc055e57bc2",
@@ -24,7 +25,8 @@
       "tags": [],
       "published_at": "2026-01-21T16:29:00.955+00:00",
       "read_time": 8,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 1
     },
     {
       "id": "13e06f66-d954-447e-9803-2c23a20c4831",
@@ -38,7 +40,8 @@
       ],
       "published_at": "2026-01-21T15:50:20.376+00:00",
       "read_time": 4,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 7
     },
     {
       "id": "ef8c944b-c787-4a60-ab4b-fc98028d8c37",
@@ -52,7 +55,8 @@
       ],
       "published_at": "2026-01-21T08:00:01.516+00:00",
       "read_time": 8,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 3
     },
     {
       "id": "3f068c0c-dda0-4b58-a2ba-b3e07608024b",
@@ -66,7 +70,8 @@
       ],
       "published_at": "2026-01-20T21:33:27.192+00:00",
       "read_time": 5,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 2
     },
     {
       "id": "36cb4615-8a87-4455-895a-4713ee839999",
@@ -78,7 +83,8 @@
       "tags": [],
       "published_at": "2026-01-20T16:29:00.487+00:00",
       "read_time": 8,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 1
     },
     {
       "id": "48a980bb-78f9-44f5-b89c-bd65144a4f50",
@@ -94,7 +100,8 @@
       ],
       "published_at": "2026-01-20T14:37:50.243+00:00",
       "read_time": 1,
-      "author": "Admin"
+      "author": "Admin",
+      "views": 2
     },
     {
       "id": "18362e2e-1eb9-49ac-8093-a311d7c0fbb8",
@@ -110,7 +117,8 @@
       ],
       "published_at": "2026-01-20T14:37:11.547+00:00",
       "read_time": 1,
-      "author": "Admin"
+      "author": "Admin",
+      "views": 3
     },
     {
       "id": "0fd7e130-54b1-4977-8425-77b05bfe0ed1",
@@ -126,7 +134,8 @@
       ],
       "published_at": "2026-01-19T13:58:01.295+00:00",
       "read_time": 1,
-      "author": "Admin"
+      "author": "Admin",
+      "views": 9
     }
   ],
   "currentPage": 12,

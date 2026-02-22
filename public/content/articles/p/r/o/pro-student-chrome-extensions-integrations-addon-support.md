@@ -22,6 +22,7 @@ meta_description: >-
 published_at: '2026-01-27T12:57:39.769+00:00'
 read_time: 1
 author: Admin
+views: 2
 ---
 <p><!-- wp:heading {"level":4} --></p>
 <h4 class="wp-block-heading">The Academic Arsenal: Mastering Chrome Extensions for Students Pro Level</h4>

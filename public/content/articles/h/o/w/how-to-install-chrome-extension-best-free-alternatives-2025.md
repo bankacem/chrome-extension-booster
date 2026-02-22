@@ -22,6 +22,7 @@ meta_description: >-
 published_at: '2026-01-30T09:00:01.037+00:00'
 read_time: 1
 author: Admin
+views: 1
 ---
 <div class="editor-visual-editor__post-title-wrapper edit-post-visual-editor__post-title-wrapper" contenteditable="false">
 <h1 class="wp-block wp-block-post-title block-editor-block-list__block editor-post-title editor-post-title__input rich-text" contenteditable="true">How to Install Chrome Extensions: A Complete Step-by-Step Tutorial</h1>

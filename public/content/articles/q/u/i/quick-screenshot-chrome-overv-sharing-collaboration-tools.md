@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-18T20:11:01.006+00:00'
 read_time: 6
 author: AI Generator
+views: 0
 ---
 <h1>Quick Screenshot Chrome Overview: A Comprehensive Guide to Capturing Web Pages</h1>
 

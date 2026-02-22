@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-11T20:11:00.587+00:00'
 read_time: 6
 author: AI Generator
+views: 0
 ---
 <h1>How to Ajouter Extension Chrome: A Step-by-Step Guide to Enhancing Your Browser</h1>
 

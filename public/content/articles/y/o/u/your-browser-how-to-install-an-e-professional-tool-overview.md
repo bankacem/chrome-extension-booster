@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-11T08:11:01.433+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlocking the Power of Your Browser: How to Install an Extension to Chrome Browser</h1>
 

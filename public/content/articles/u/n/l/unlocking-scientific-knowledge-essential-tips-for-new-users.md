@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-02T14:14:00.295+00:00'
 read_time: 6
 author: AI Generator
+views: 0
 ---
 <h1>Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A <a href="/blog/extension-trello-chrome-11" class="internal-link" title="Unlocking Productivity with Extension Trello Chrome: A Comprehensive Guide">Comprehensive</a> Guide</h1>
 

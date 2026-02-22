@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-16T02:11:00.903+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlocking the Power of AI: How to Add a ChatGPT Extension to Chrome</h1>
 

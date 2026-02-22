@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-17T08:11:00.338+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>How to Install and Use IDM Extension to Chrome for Enhanced Download Management</h1>
 

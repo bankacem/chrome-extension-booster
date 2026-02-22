@@ -21,6 +21,7 @@ meta_description: >-
 published_at: '2026-01-29T08:00:00.23+00:00'
 read_time: 8
 author: AI Generator
+views: 2
 ---
 <h1 id="top-10-google-sheets-extensions-for-accounting">Top 10 Google Sheets Extensions for Accounting: Streamlining Financial Workflows in 2025</h1>
 

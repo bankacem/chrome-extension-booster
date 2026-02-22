@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-05T20:11:01.288+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>How to Get the Most Out of Your Browser with "Extension Get Chrome"</h1>
 

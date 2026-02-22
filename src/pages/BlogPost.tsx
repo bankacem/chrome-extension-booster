@@ -59,26 +59,30 @@ const BlogPost = () => {
     setNotFound(false);
     
     try {
-      // Deterministic path calculation
-      const c1 = slug[0] || "_";
-      const c2 = slug[1] || "_";
-      const c3 = slug[2] || "_";
-      const filePath = `/content/articles/${c1}/${c2}/${c3}/${slug}.json`;
+      // Enforce lowercase for deterministic path calculation
+      const s = slug.toLowerCase();
+      const c1 = s[0] || "_";
+      const c2 = s[1] || "_";
+      const c3 = s[2] || "_";
+      const filePath = `/content/articles/${c1}/${c2}/${c3}/${s}.json`;
+
+      console.log(`[Static CMS] Fetching article: ${s} from ${filePath}`);
 
       const response = await fetch(filePath);
       if (!response.ok) {
+        console.error(`[Static CMS] Article not found at path: ${filePath}. Status: ${response.status}`);
         setNotFound(true);
         return;
       }
 
       const data = await response.json();
+      console.log(`[Static CMS] Successfully loaded: ${data.title}`);
       setArticle(data);
 
-      // Optional: Fetch related articles from static index
-      // For now we'll skip DB related fetch to stay purely static
+      // Set related articles to empty for now in static mode
       setRelatedArticles([]);
     } catch (error) {
-      console.error("Error fetching article from static path:", error);
+      console.error("[Static CMS] Error fetching article from static path:", error);
       setNotFound(true);
     } finally {
       setLoading(false);
@@ -182,7 +186,7 @@ const BlogPost = () => {
       <SEO
         title={article.title}
         description={article.meta_description || article.excerpt || undefined}
-        keywords={article.keywords?.join(", ")}
+        keywords={Array.isArray(article.keywords) ? article.keywords.join(", ") : undefined}
         canonicalPath={`/blog/${article.slug}`}
         ogType="article"
         articlePublishedTime={article.published_at}
@@ -269,7 +273,7 @@ const BlogPost = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
             className="prose prose-lg dark:prose-invert max-w-none"
-            dangerouslySetInnerHTML={{ __html: marked(article.content || "") }}
+            dangerouslySetInnerHTML={{ __html: marked.parse(article.content || "") }}
           />
 
           {/* Tags */}
@@ -289,7 +293,7 @@ const BlogPost = () => {
           )}
 
           {/* Keywords */}
-          {article.keywords && article.keywords.length > 0 && (
+          {Array.isArray(article.keywords) && article.keywords.length > 0 && (
             <div className="mt-4 text-sm text-muted-foreground">
               <span className="font-medium">Keywords: </span>
               {article.keywords.join(", ")}

@@ -18,6 +18,7 @@ meta_description: >-
 published_at: '2026-01-20T16:29:00.487+00:00'
 read_time: 8
 author: AI Generator
+views: 1
 ---
 <h1>How to Fix <a href="/blog/full-page-screenshot-chrome-guide-9" class="internal-link" title="Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro">Chrome</a> High Memory Usage on Windows 11: A Complete Guide to a Faster Browser</h1>
 

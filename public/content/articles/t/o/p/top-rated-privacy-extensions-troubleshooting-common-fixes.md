@@ -18,6 +18,7 @@ meta_description: >-
 published_at: '2026-02-18T09:00:01.16+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Top Rated Privacy Extensions for Google Chrome: Protecting Your Online Identity</h1>
 

@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-18T02:11:01.309+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Capture Screen in Chrome: A Comprehensive Guide to Effortless Screenshotting</h1>
 

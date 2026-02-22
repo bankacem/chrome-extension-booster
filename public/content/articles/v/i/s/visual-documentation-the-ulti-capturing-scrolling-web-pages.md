@@ -18,6 +18,7 @@ meta_description: >-
 published_at: '2026-02-18T14:11:00.459+00:00'
 read_time: 6
 author: AI Generator
+views: 0
 ---
 <h1>Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool for Chrome</h1>
 

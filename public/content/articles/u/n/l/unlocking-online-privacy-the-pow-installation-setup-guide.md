@@ -18,6 +18,7 @@ meta_description: >-
 published_at: '2026-02-08T14:11:01+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlocking Online Privacy: The Power of Extension Chrome Ghostery</h1>
 

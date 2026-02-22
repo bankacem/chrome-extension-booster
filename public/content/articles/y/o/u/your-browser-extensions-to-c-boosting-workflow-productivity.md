@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-14T02:11:00.786+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlock the Full Potential of Your Browser: Extensions to Chrome Mobile</h1>
 

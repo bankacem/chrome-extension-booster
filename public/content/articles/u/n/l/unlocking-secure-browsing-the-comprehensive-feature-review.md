@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-07T20:11:00.421+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlocking Secure Browsing: The Power of Extension Chrome KeePass</h1>
 

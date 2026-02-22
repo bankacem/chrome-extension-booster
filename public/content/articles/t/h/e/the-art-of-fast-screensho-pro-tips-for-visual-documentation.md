@@ -21,6 +21,7 @@ meta_description: >-
 published_at: '2026-02-22T08:11:00.351+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Mastering the Art of Fast Screenshotting: A Comprehensive Fast Screenshot Extension Tutorial</h1>
 

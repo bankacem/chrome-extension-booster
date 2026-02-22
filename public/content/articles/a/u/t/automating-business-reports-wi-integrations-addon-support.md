@@ -21,6 +21,7 @@ meta_description: >-
 published_at: '2026-01-25T08:00:00.847+00:00'
 read_time: 8
 author: AI Generator
+views: 1
 ---
 <h1 id="automating-business-reports">Automating Business Reports with Formula Builder: Enhancing Corporate Efficiency</h1>
 

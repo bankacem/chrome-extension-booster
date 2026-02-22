@@ -14,7 +14,8 @@
       ],
       "published_at": "2026-01-26T09:00:00.877+00:00",
       "read_time": 1,
-      "author": "Admin"
+      "author": "Admin",
+      "views": 3
     },
     {
       "id": "21adfc13-a9c8-4b95-8c27-d1ae277fd500",
@@ -28,7 +29,8 @@
       ],
       "published_at": "2026-01-26T08:00:00.273+00:00",
       "read_time": 8,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 1
     },
     {
       "id": "e2558a6f-da16-419a-bb8d-1f146803062c",
@@ -42,7 +44,8 @@
       ],
       "published_at": "2026-01-25T16:29:00.519+00:00",
       "read_time": 8,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 1
     },
     {
       "id": "b1e1ee60-e91c-475e-9971-3b596484b610",
@@ -58,7 +61,8 @@
       ],
       "published_at": "2026-01-25T09:00:00.403+00:00",
       "read_time": 1,
-      "author": "Admin"
+      "author": "Admin",
+      "views": 2
     },
     {
       "id": "bc16d225-475e-486e-b3cb-5b66a0b0a8fd",
@@ -72,7 +76,8 @@
       ],
       "published_at": "2026-01-25T08:00:00.847+00:00",
       "read_time": 8,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 1
     },
     {
       "id": "84911b9b-28ec-44a5-a154-61579b4757ad",
@@ -84,7 +89,8 @@
       "tags": [],
       "published_at": "2026-01-24T16:29:01.091+00:00",
       "read_time": 9,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 1
     },
     {
       "id": "22b08d34-3d55-43b1-be79-fe763f15adcc",
@@ -100,7 +106,8 @@
       ],
       "published_at": "2026-01-24T09:00:00.479+00:00",
       "read_time": 1,
-      "author": "Admin"
+      "author": "Admin",
+      "views": 1
     },
     {
       "id": "08a7006a-0567-4976-8a11-6aad47337785",
@@ -114,7 +121,8 @@
       ],
       "published_at": "2026-01-24T08:00:00.337+00:00",
       "read_time": 9,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 1
     },
     {
       "id": "f383f99e-6d40-4c1a-9328-b47152891095",
@@ -126,7 +134,8 @@
       "tags": [],
       "published_at": "2026-01-23T16:29:00.345+00:00",
       "read_time": 8,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 1
     },
     {
       "id": "d4823310-8881-44dc-a64c-134d9d57dfee",
@@ -140,7 +149,8 @@
       ],
       "published_at": "2026-01-23T08:00:00.463+00:00",
       "read_time": 9,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 1
     },
     {
       "id": "aa9089ee-ab82-4402-bbf7-879d0dea3e02",
@@ -152,7 +162,8 @@
       "tags": [],
       "published_at": "2026-01-22T16:29:00.353+00:00",
       "read_time": 9,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 1
     },
     {
       "id": "64902474-f79f-415d-868f-471dc5cfbd5c",
@@ -168,7 +179,8 @@
       ],
       "published_at": "2026-01-22T09:00:01.388+00:00",
       "read_time": 1,
-      "author": "Admin"
+      "author": "Admin",
+      "views": 1
     }
   ],
   "currentPage": 11,

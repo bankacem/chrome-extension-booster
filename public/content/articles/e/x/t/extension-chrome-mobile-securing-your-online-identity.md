@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-12T08:11:01.173+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlocking the Power of <strong>Extension Chrome Mobile</strong>: A <a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide">Comprehensive</a> Guide</h1>
 

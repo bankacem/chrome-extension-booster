@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-09T02:11:01.174+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlocking the Power of Music: The Ultimate Guide to Extension Chrome Deezer</h1>
 

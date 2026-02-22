@@ -34,14 +34,19 @@ const Blog = () => {
 
   const fetchArticles = async () => {
     try {
+      console.log("[Static CMS] Fetching blog index from /api/blog/pages/1.json");
       // Fetch the first page of the static API
       const response = await fetch("/api/blog/pages/1.json");
-      if (!response.ok) throw new Error("Failed to fetch static articles index");
+      if (!response.ok) {
+        console.error(`[Static CMS] Failed to fetch index. Status: ${response.status}`);
+        throw new Error("Failed to fetch static articles index");
+      }
 
       const data = await response.json();
+      console.log(`[Static CMS] Loaded ${data.articles?.length || 0} articles for the listing page`);
       setArticles(data.articles || []);
     } catch (error) {
-      console.error("Error fetching articles from static API:", error);
+      console.error("[Static CMS] Error fetching articles from static API:", error);
     } finally {
       setLoading(false);
     }

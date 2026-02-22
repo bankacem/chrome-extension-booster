@@ -19,6 +19,7 @@ meta_description: >-
 published_at: '2026-01-21T08:00:01.516+00:00'
 read_time: 8
 author: AI Generator
+views: 3
 ---
 <h1 id="top">How to Create Complex Excel Formulas Easily: A <a href="/blog/professional-browser-tools-guide" class="internal-link" title="Professional Browser Tools Guide"><a href="/blog/professional-browser-tools-guide" class="internal-link" title="Professional Browser Tools Guide">Professional</a></a> Guide</h1>
 

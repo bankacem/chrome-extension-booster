@@ -12,7 +12,8 @@
       ],
       "published_at": "2026-02-20T08:11:01.022+00:00",
       "read_time": 6,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "48fdced3-fd3c-485d-b890-adddbaded294",
@@ -26,7 +27,8 @@
       ],
       "published_at": "2026-02-20T02:11:00.299+00:00",
       "read_time": 5,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "31b52fdd-0f04-41b6-bb51-30819f438792",
@@ -38,7 +40,8 @@
       "tags": [],
       "published_at": "2026-02-19T20:11:00.875+00:00",
       "read_time": 5,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "0a1b94b2-d153-49f9-a4e0-910756894ec2",
@@ -50,7 +53,8 @@
       "tags": [],
       "published_at": "2026-02-19T14:11:01.672+00:00",
       "read_time": 5,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "5bac4a01-ecdb-45d1-b678-00f9ae83366f",
@@ -62,7 +66,8 @@
       "tags": [],
       "published_at": "2026-02-19T09:00:00.35+00:00",
       "read_time": 7,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "bc87ba3f-0494-4944-9476-b4a4d0ff1e5c",
@@ -74,7 +79,8 @@
       "tags": [],
       "published_at": "2026-02-19T09:00:00.259+00:00",
       "read_time": 5,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "a2b1f871-e5e4-4ba2-83e0-c5c2995cf9f3",
@@ -86,7 +92,8 @@
       "tags": [],
       "published_at": "2026-02-19T08:11:00.439+00:00",
       "read_time": 5,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "5c6eb754-c188-4e94-a17f-6c8352e62858",
@@ -98,7 +105,8 @@
       "tags": [],
       "published_at": "2026-02-19T02:11:00.454+00:00",
       "read_time": 6,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "19ebf196-6cc5-4b46-831f-74655bf4f0b7",
@@ -110,7 +118,8 @@
       "tags": [],
       "published_at": "2026-02-18T20:11:01.006+00:00",
       "read_time": 6,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "84d0ca13-516c-4c3b-b65a-901934013939",
@@ -122,7 +131,8 @@
       "tags": [],
       "published_at": "2026-02-18T14:11:00.459+00:00",
       "read_time": 6,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "a42e763a-c7f7-4ade-a7d7-425dae6e2f3e",
@@ -134,7 +144,8 @@
       "tags": [],
       "published_at": "2026-02-18T09:00:01.16+00:00",
       "read_time": 5,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     },
     {
       "id": "70b80012-4470-4af5-9d11-8ace8d3fd4c0",
@@ -146,7 +157,8 @@
       "tags": [],
       "published_at": "2026-02-18T09:00:01.012+00:00",
       "read_time": 7,
-      "author": "AI Generator"
+      "author": "AI Generator",
+      "views": 0
     }
   ],
   "currentPage": 2,

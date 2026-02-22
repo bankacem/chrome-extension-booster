@@ -18,6 +18,7 @@ meta_description: >-
 published_at: '2026-01-23T16:29:00.345+00:00'
 read_time: 8
 author: AI Generator
+views: 1
 ---
 <h1>How to Speed Up a Slow Chrome Browser in 2026: The Ultimate Guide to Lightning-Fast Browsing</h1>
 

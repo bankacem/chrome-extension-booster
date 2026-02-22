@@ -20,6 +20,7 @@ meta_description: >-
 published_at: '2026-01-20T21:33:27.192+00:00'
 read_time: 5
 author: AI Generator
+views: 2
 ---
 <h1>Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro</h1>
 

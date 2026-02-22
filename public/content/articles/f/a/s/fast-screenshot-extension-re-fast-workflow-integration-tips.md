@@ -21,6 +21,7 @@ meta_description: >-
 published_at: '2026-02-01T08:00:00.598+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Fast Screenshot Extension Review: Capturing the Perfect Shot with <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a></h1>
 

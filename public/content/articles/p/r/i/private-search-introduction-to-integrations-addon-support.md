@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-07T14:11:01.141+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlock the Power of Private Search: <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments">Introduction</a> to Extension Chrome Presearch</h1>
 

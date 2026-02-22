@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-17T02:11:01.261+00:00'
 read_time: 6
 author: AI Generator
+views: 0
 ---
 <h1>Unlock Secure Browsing: How to Add a VPN Extension to Chrome</h1>
 

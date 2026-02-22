@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-11T14:11:02.177+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>How to Install an Extension to Chrome Android: A Step-by-Step Guide</h1>
 

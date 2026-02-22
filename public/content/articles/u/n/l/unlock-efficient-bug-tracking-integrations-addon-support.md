@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-10T14:11:01.982+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlock Efficient Bug Tracking with Bugherd Extension Chrome: A <a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide"><a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide"><a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide">Comprehensive</a></a></a> Guide</h1>
 

@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-04T02:11:00.582+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlock the Power of Highlighting with the Best Extension Surligneur Chrome</h1>
 

@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-04T08:11:00.958+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Mastering Chrome Extensions: A <a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide"><a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide"><a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide">Comprehensive</a></a></a> Guide to "extension regle chrome" and Beyond</h1>
 

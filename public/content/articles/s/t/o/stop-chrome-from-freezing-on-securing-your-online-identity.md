@@ -21,6 +21,7 @@ meta_description: >-
 published_at: '2026-01-27T16:29:00.598+00:00'
 read_time: 8
 author: AI Generator
+views: 0
 ---
 <h1>Stop Chrome From Freezing on Low-End PCs: The Ultimate Guide to a Faster Browser</h1>
 

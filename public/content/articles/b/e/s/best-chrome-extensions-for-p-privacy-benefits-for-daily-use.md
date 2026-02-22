@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-15T09:00:00.582+00:00'
 read_time: 4
 author: AI Generator
+views: 0
 ---
 <h1>Best Chrome Extensions for Privacy 2026: Protect Your Online Identity</h1>
 

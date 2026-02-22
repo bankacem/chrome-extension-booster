@@ -20,6 +20,7 @@ meta_description: >-
 published_at: '2026-02-21T14:11:00.723+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Best Screenshot Tools for Chrome: Capture Web Pages Like a Pro</h1>
 

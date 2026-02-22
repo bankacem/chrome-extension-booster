@@ -19,6 +19,7 @@ meta_description: >-
 published_at: '2026-02-21T20:11:01.223+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Best Screenshot Extensions for Chrome: Capture Web Pages Like a Pro</h1>
 

@@ -18,6 +18,7 @@ meta_description: >-
 published_at: '2026-01-22T16:29:00.353+00:00'
 read_time: 9
 author: AI Generator
+views: 1
 ---
 <h1>How to Reduce Chrome RAM Usage for Gaming: The Ultimate Lag-Free Guide</h1>
 

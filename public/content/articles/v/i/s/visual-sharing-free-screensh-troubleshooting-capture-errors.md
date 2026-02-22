@@ -19,6 +19,7 @@ meta_description: >-
 published_at: '2026-02-22T02:11:01.592+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlock the Power of Visual Sharing: Free Screenshot Extensions for Chrome</h1>
 

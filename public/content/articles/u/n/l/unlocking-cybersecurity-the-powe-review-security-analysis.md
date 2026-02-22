@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-04T14:11:01.822+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlocking Cybersecurity: The Power of Extension Norton Chrome</h1>
 

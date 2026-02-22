@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-14T08:11:01.224+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>How to Integrate Extension IDM to Chrome for Enhanced Browsing Experience</h1>
 

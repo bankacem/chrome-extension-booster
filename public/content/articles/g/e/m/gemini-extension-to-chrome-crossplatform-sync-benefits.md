@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-15T08:11:01.915+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlocking the Power of Gemini Extension to Chrome: A Comprehensive Guide</h1>
 

@@ -88,6 +88,7 @@ async function syncToGit() {
       published_at: fullArticle.published_at,
       read_time: fullArticle.read_time,
       author: fullArticle.author,
+      views: fullArticle.views || 0,
     };
 
     // 3. Save Markdown (for Git/Storage)
@@ -128,7 +129,8 @@ async function syncToGit() {
         tags: a.tags,
         published_at: a.published_at,
         read_time: a.read_time,
-        author: a.author
+        author: a.author,
+        views: a.views || 0
     }));
 
     const pageData = {

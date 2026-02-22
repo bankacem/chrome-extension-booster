@@ -22,6 +22,7 @@ meta_description: >-
 published_at: '2026-01-28T09:00:01.023+00:00'
 read_time: 1
 author: Admin
+views: 0
 ---
 <p><!-- wp:image {"sizeSlug":"large"} --></p>
 <figure class="wp-block-image size-large"><img src="" alt="" /></figure>

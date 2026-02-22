@@ -22,6 +22,7 @@ meta_description: >-
 published_at: '2026-02-01T08:00:00.497+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Capture Scrolling Webpages as PNG or PDF: The Ultimate Guide to Seamless Webpage Capture</h1>
 

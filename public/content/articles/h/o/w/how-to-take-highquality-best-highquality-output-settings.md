@@ -19,6 +19,7 @@ meta_description: >-
 published_at: '2026-02-02T08:00:00.57+00:00'
 read_time: 7
 author: AI Generator
+views: 0
 ---
 <h1>How to Take High-Quality Screenshots for Tutorials: A Step-by-Step Guide</h1>
 

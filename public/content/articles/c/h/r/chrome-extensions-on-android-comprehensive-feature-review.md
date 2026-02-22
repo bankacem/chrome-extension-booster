@@ -17,6 +17,7 @@ meta_description: >-
 published_at: '2026-02-13T14:11:00.545+00:00'
 read_time: 5
 author: AI Generator
+views: 0
 ---
 <h1>Unlocking the Power of Chrome Extensions on Android: A <a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide">Comprehensive</a> Guide</h1>
 
