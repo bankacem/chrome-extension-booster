@@ -27,18 +27,18 @@ async function generateSitemap() {
     { url: "/terms", changefreq: "yearly", priority: "0.3" },
   ];
 
-  // 2. Fetch articles (prefer local optimized data if exists)
+  // 2. Fetch articles (prefer local static index if exists)
   let articlePages: any[] = [];
-  const optimizedPath = path.join(process.cwd(), "optimized_articles.json");
+  const staticIndexPath = path.join(process.cwd(), "public", "api", "blog", "all.json");
 
-  if (fs.existsSync(optimizedPath)) {
-    console.log("Using local optimized_articles.json for sitemap generation...");
-    const optimizedArticles = JSON.parse(fs.readFileSync(optimizedPath, 'utf-8'));
-    articlePages = optimizedArticles.map((article: any) => ({
-      url: `/blog/${article.newSlug}`,
+  if (fs.existsSync(staticIndexPath)) {
+    console.log("Using local static index (all.json) for sitemap generation...");
+    const articles = JSON.parse(fs.readFileSync(staticIndexPath, 'utf-8'));
+    articlePages = articles.map((article: any) => ({
+      url: `/blog/${article.slug}`,
       changefreq: "monthly",
       priority: "0.7",
-      lastmod: new Date().toISOString().split('T')[0] // Use current date for fresh updates
+      lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
     }));
   } else {
     console.log("Fetching articles from Supabase...");

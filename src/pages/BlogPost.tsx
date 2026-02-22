@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { marked } from "marked";
 
 interface Article {
   id: string;
@@ -53,47 +54,31 @@ const BlogPost = () => {
   }, [slug]);
 
   const fetchArticle = async () => {
+    if (!slug) return;
     setLoading(true);
     setNotFound(false);
     
     try {
-      const { data, error } = await supabase
-        .from("articles")
-        .select("*")
-        .eq("slug", slug)
-        .eq("status", "published")
-        .single();
+      // Deterministic path calculation
+      const c1 = slug[0] || "_";
+      const c2 = slug[1] || "_";
+      const c3 = slug[2] || "_";
+      const filePath = `/content/articles/${c1}/${c2}/${c3}/${slug}.json`;
 
-      if (error) {
-        if (error.code === "PGRST116") {
-          // No rows returned - article not found
-          setNotFound(true);
-        } else {
-          throw error;
-        }
+      const response = await fetch(filePath);
+      if (!response.ok) {
+        setNotFound(true);
         return;
       }
-      
+
+      const data = await response.json();
       setArticle(data);
 
-      // Increment views
-      await supabase
-        .from("articles")
-        .update({ views: (data.views || 0) + 1 })
-        .eq("id", data.id);
-
-      // Fetch related articles
-      const { data: related } = await supabase
-        .from("articles")
-        .select("*")
-        .eq("status", "published")
-        .eq("category", data.category)
-        .neq("id", data.id)
-        .limit(3);
-
-      setRelatedArticles(related || []);
+      // Optional: Fetch related articles from static index
+      // For now we'll skip DB related fetch to stay purely static
+      setRelatedArticles([]);
     } catch (error) {
-      console.error("Error fetching article:", error);
+      console.error("Error fetching article from static path:", error);
       setNotFound(true);
     } finally {
       setLoading(false);
@@ -284,7 +269,7 @@ const BlogPost = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
             className="prose prose-lg dark:prose-invert max-w-none"
-            dangerouslySetInnerHTML={{ __html: article.content }}
+            dangerouslySetInnerHTML={{ __html: marked(article.content || "") }}
           />
 
           {/* Tags */}

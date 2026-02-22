@@ -34,16 +34,14 @@ const Blog = () => {
 
   const fetchArticles = async () => {
     try {
-      const { data, error } = await supabase
-        .from("articles")
-        .select("*")
-        .eq("status", "published")
-        .order("published_at", { ascending: false });
+      // Fetch the first page of the static API
+      const response = await fetch("/api/blog/pages/1.json");
+      if (!response.ok) throw new Error("Failed to fetch static articles index");
 
-      if (error) throw error;
-      setArticles(data || []);
+      const data = await response.json();
+      setArticles(data.articles || []);
     } catch (error) {
-      console.error("Error fetching articles:", error);
+      console.error("Error fetching articles from static API:", error);
     } finally {
       setLoading(false);
     }
