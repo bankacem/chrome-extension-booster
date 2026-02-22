@@ -51,10 +51,11 @@ async function syncToGit() {
     }
 
     // Merge DB data with optimized SEO metadata
+    // Force newSlug to be lowercase
     const fullArticle = {
       ...dbArticle,
       title: item.optimizedTitle,
-      slug: item.newSlug,
+      slug: item.newSlug.toLowerCase(),
       meta_description: item.metaDescription,
     };
 
@@ -62,7 +63,7 @@ async function syncToGit() {
 
     // 2. Determine partitioned path
     // Example slug: 'how-to-fix-chrome' -> 'h/o/w/'
-    const s = fullArticle.slug;
+    const s = fullArticle.slug.toLowerCase();
     const c1 = s[0] || "_";
     const c2 = s[1] || "_";
     const c3 = s[2] || "_";

@@ -94,16 +94,16 @@ function getUniqueIntentTitle(base: string, category: string) {
     const intent = pool[intentCounters[category] % pool.length];
     intentCounters[category]++;
 
-    // Max 60 chars. Let's reserve space for the intent.
-    const maxBaseLen = 60 - intent.length - 2; // -2 for ": "
-    let cleanBase = base.substring(0, maxBaseLen).trim();
+    // User requested removal of limits for slugs, but SEO titles should stay professional (around 60-70 chars).
+    // We will keep a reasonable limit for the title but allow the slug to be full.
+    let cleanBase = base.trim();
     if (cleanBase.endsWith(":")) cleanBase = cleanBase.slice(0, -1).trim();
 
     let title = `${cleanBase}: ${intent}`;
 
     if (usedTitles.has(title.toLowerCase())) {
         const suffix = ` (${Math.floor(intentCounters[category] / pool.length) + 1})`;
-        title = title.substring(0, 60 - suffix.length) + suffix;
+        title = title + suffix;
     }
 
     usedTitles.add(title.toLowerCase());
@@ -143,7 +143,7 @@ const optimizedData = articles.map((article) => {
   else if (lower.includes("youtube") || lower.includes("mp3") || lower.includes("video") || lower.includes("downloader")) category = "youtube";
   else if (lower.includes("memory") || lower.includes("ram") || lower.includes("suspender") || lower.includes("speed up")) category = "memory";
 
-  const optimizedTitle = getUniqueIntentTitle(cleanBase.substring(0, 35), category);
+  const optimizedTitle = getUniqueIntentTitle(cleanBase, category);
 
   // Create professional meta description (140-155 chars)
   const descriptions: Record<string, string[]> = {
@@ -190,7 +190,7 @@ const optimizedData = articles.map((article) => {
 
   let newSlug = slugify(optimizedTitle);
   if (usedSlugs.has(newSlug)) {
-      newSlug += `-${intentCounters[category]}`;
+      newSlug = `${newSlug}-${intentCounters[category]}`;
   }
   usedSlugs.add(newSlug);
 
