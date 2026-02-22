@@ -124,7 +124,7 @@ description: >-
   <li><strong>Start Searching</strong>: Begin searching the internet privately and securely, using the power of <strong>extension chrome presearch</strong>.</li>
 </ol>
 
-<p>For more information on how to enhance your browsing experience, check out our article on <a href="/blog/pro-essential-chrome-extensions-the-ultimate-guide" class="text-primary font-medium hover:underline">Pro Essential Chrome <a href="/blog/extension-regle-chrome-9" class="internal-link" title="Mastering Chrome Extensions: A Comprehensive Guide to "extension regle chrome" and Beyond">Extensions</a>: The Ultimate Guide</a>. You can also explore our range of Chrome extensions, including <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> and <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>, to take your browsing to the next level.</p>
+<p>For more information on how to enhance your browsing experience, check out our article on Pro Essential Chrome <a href="/blog/extension-regle-chrome-9" class="internal-link" title="Mastering Chrome Extensions: A Comprehensive Guide to "extension regle chrome" and Beyond">Extensions</a>: The Ultimate Guide. You can also explore our range of Chrome extensions, including <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> and <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>, to take your browsing to the next level.</p>
 
 <h2>Table of Contents</h2>
 

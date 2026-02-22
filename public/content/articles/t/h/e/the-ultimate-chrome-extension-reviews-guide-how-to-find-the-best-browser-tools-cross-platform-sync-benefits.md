@@ -60,7 +60,7 @@ description: >-
 <p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
 <h3 class="wp-block-heading">2. The "Second Brain": Todoist</h3>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>I&rsquo;ve tried them all. Any.do, TickTick, scribbling on the back of my hand. Todoist remains the gold standard because its Chrome <a href="/blog/best-memory-saver-extension-for-chrome-4" class="internal-link" title="Best Memory Saver Extension for Chrome: Boost Performance and Reclaim Your RAM"><a href="/blog/fast-screenshot-extension-alternatives-1" class="internal-link" title="Discover the Best Fast Screenshot Extension Alternatives for Seamless Browsing">extension</a></a> is actually useful. It allows you to turn a website (like that article you swear you&rsquo;ll read later) into a task with two clicks. It captures the chaos before you lose it.</p>
+<p>I&rsquo;ve tried them all. Any.do, TickTick, scribbling on the back of my hand. Todoist remains the gold standard because its Chrome <a href="/blog/fast-screenshot-extension-alternatives-1" class="internal-link" title="Discover the Best Fast Screenshot Extension Alternatives for Seamless Browsing">extension</a> is actually useful. It allows you to turn a website (like that article you swear you&rsquo;ll read later) into a task with two clicks. It captures the chaos before you lose it.</p>
 <p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
 <h3 class="wp-block-heading">3. The Password Fortress: Bitwarden</h3>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>

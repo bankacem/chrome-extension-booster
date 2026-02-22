@@ -42,12 +42,12 @@ description: >-
     <li><a href="#why-chrome-uses-ram">Why Does Chrome Use So Much RAM?</a></li>
     <li><a href="#quick-fixes">Quick Fixes to Reduce Chrome RAM Usage for Gaming</a></li>
     <li><a href="#memory-saver-mode">Utilizing Chrome’s Built-in Memory Saver</a></li>
-    <li><a href="#tab-management">Tab Management: The Silent <a href="/blog/best-memory-saver-extension-for-chrome-4" class="internal-link" title="Best Memory Saver Extension for Chrome: Boost Performance and Reclaim Your RAM">Performance</a> Killer</a></li>
+    <li>Tab Management: The Silent <a href="/blog/best-memory-saver-extension-for-chrome-4" class="internal-link" title="Best Memory Saver Extension for Chrome: Boost Performance and Reclaim Your RAM">Performance</a> Killer</li>
     <li><a href="#extension-audit">The Extension Audit: Clean Up Your Browser</a></li>
     <li><a href="#hardware-acceleration">Hardware Acceleration: Friend or Foe?</a></li>
     <li><a href="#advanced-settings">Advanced Flags and Settings for Gamers</a></li>
     <li><a href="#comparison-table">Comparison: Optimization Methods vs. Impact</a></li>
-    <li><a href="#external-tools">External Tools and <a href="/blog/fast-screenshot-extension-alternatives-1" class="internal-link" title="Discover the Best Fast Screenshot Extension Alternatives for Seamless Browsing">Alternatives</a></a></li>
+    <li>External Tools and <a href="/blog/fast-screenshot-extension-alternatives-1" class="internal-link" title="Discover the Best Fast Screenshot Extension Alternatives for Seamless Browsing">Alternatives</a></li>
     <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 
