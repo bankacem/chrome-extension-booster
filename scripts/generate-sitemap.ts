@@ -9,12 +9,7 @@ const WEBSITE_URL = "https://extensionto.com";
 const supabaseUrl = process.env.VITE_SUPABASE_URL;
 const supabaseKey = process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
-if (!supabaseUrl || !supabaseKey) {
-  console.error("Missing Supabase URL or Key");
-  process.exit(1);
-}
-
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = (supabaseUrl && supabaseKey) ? createClient(supabaseUrl, supabaseKey) : null;
 
 async function generateSitemap() {
   console.log("Generating sitemap...");
@@ -27,20 +22,20 @@ async function generateSitemap() {
     { url: "/terms", changefreq: "yearly", priority: "0.3" },
   ];
 
-  // 2. Fetch articles (prefer local optimized data if exists)
+  // 2. Fetch articles (prefer local index data if exists)
   let articlePages: any[] = [];
-  const optimizedPath = path.join(process.cwd(), "optimized_articles.json");
+  const indexPath = path.join(process.cwd(), "public", "content", "articles-index.json");
 
-  if (fs.existsSync(optimizedPath)) {
-    console.log("Using local optimized_articles.json for sitemap generation...");
-    const optimizedArticles = JSON.parse(fs.readFileSync(optimizedPath, 'utf-8'));
-    articlePages = optimizedArticles.map((article: any) => ({
-      url: `/blog/${article.newSlug}`,
+  if (fs.existsSync(indexPath)) {
+    console.log("Using local articles-index.json for sitemap generation...");
+    const articles = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+    articlePages = articles.map((article: any) => ({
+      url: `/blog/${article.slug}`,
       changefreq: "monthly",
       priority: "0.7",
-      lastmod: new Date().toISOString().split('T')[0] // Use current date for fresh updates
+      lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
     }));
-  } else {
+  } else if (supabase) {
     console.log("Fetching articles from Supabase...");
     const { data: articles, error } = await supabase
       .from("articles")
@@ -58,6 +53,8 @@ async function generateSitemap() {
       priority: "0.7",
       lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : undefined
     }));
+  } else {
+    console.warn("No articles index found and Supabase credentials missing. Skipping article pages.");
   }
 
   // 3. Extensions

@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import yaml from "js-yaml";
+import { getPartitionedPath } from "@/utils/articlePath";
 
 interface Article {
   id: string;
@@ -25,6 +27,19 @@ interface Article {
   author: string;
   views: number;
 }
+
+const parseMarkdown = (text: string) => {
+  const match = text.match(/^---([\s\S]*?)---([\s\S]*)$/);
+  if (!match) return { frontmatter: {}, content: text };
+  try {
+    const frontmatter = yaml.load(match[1]) as any;
+    const content = match[2].trim();
+    return { frontmatter, content };
+  } catch (e) {
+    console.error("Error parsing frontmatter:", e);
+    return { frontmatter: {}, content: text };
+  }
+};
 
 // Helper to convert slug to readable title for instant SEO
 const slugToTitle = (slug: string): string => {
@@ -53,45 +68,63 @@ const BlogPost = () => {
   }, [slug]);
 
   const fetchArticle = async () => {
+    if (!slug) return;
     setLoading(true);
     setNotFound(false);
     
     try {
-      const { data, error } = await supabase
-        .from("articles")
-        .select("*")
-        .eq("slug", slug)
-        .eq("status", "published")
-        .single();
-
-      if (error) {
-        if (error.code === "PGRST116") {
-          // No rows returned - article not found
+      // Fetch article from partitioned path
+      const response = await fetch(getPartitionedPath(slug));
+      if (!response.ok) {
+        if (response.status === 404) {
           setNotFound(true);
-        } else {
-          throw error;
+          return;
         }
-        return;
+        throw new Error(`Failed to fetch article: ${response.statusText}`);
       }
       
-      setArticle(data);
+      const text = await response.text();
+      const { frontmatter, content } = parseMarkdown(text);
 
-      // Increment views
-      await supabase
+      if (!frontmatter.slug) {
+        setNotFound(true);
+        return;
+      }
+
+      const fullArticle = { ...frontmatter, content } as Article;
+      setArticle(fullArticle);
+
+      // Increment views in Supabase using the latest count from the database
+      // to avoid overwriting with stale data from the Markdown frontmatter.
+      supabase
         .from("articles")
-        .update({ views: (data.views || 0) + 1 })
-        .eq("id", data.id);
+        .select("views")
+        .eq("id", frontmatter.id)
+        .single()
+        .then(({ data, error: fetchError }) => {
+          if (fetchError) {
+            console.error("Error fetching current views:", fetchError);
+            return;
+          }
+          const currentViews = data?.views || 0;
+          supabase
+            .from("articles")
+            .update({ views: currentViews + 1 })
+            .eq("id", frontmatter.id)
+            .then(({ error: updateError }) => {
+              if (updateError) console.error("Error updating views:", updateError);
+            });
+        });
 
-      // Fetch related articles
-      const { data: related } = await supabase
-        .from("articles")
-        .select("*")
-        .eq("status", "published")
-        .eq("category", data.category)
-        .neq("id", data.id)
-        .limit(3);
-
-      setRelatedArticles(related || []);
+      // Fetch related articles from index
+      const indexResponse = await fetch("/content/articles-index.json");
+      if (indexResponse.ok) {
+        const index = await indexResponse.json() as any[];
+        const related = index
+          .filter(a => a.category === frontmatter.category && a.id !== frontmatter.id)
+          .slice(0, 3);
+        setRelatedArticles(related);
+      }
     } catch (error) {
       console.error("Error fetching article:", error);
       setNotFound(true);
