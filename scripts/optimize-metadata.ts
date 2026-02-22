@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { normalizeSlug } from '../src/utils/articlePath';
 
 interface Article {
   title: string;
@@ -6,14 +7,6 @@ interface Article {
 }
 
 const articles: Article[] = JSON.parse(fs.readFileSync('articles_dump.json', 'utf-8'));
-
-function slugify(text: string) {
-  return text
-    .toLowerCase()
-    .replace(/[^\w ]+/g, '')
-    .replace(/ +/g, '-')
-    .replace(/^-+|-+$/g, '');
-}
 
 function capitalize(text: string) {
     return text.charAt(0).toUpperCase() + text.slice(1);
@@ -94,16 +87,14 @@ function getUniqueIntentTitle(base: string, category: string) {
     const intent = pool[intentCounters[category] % pool.length];
     intentCounters[category]++;
 
-    // Max 60 chars. Let's reserve space for the intent.
-    const maxBaseLen = 60 - intent.length - 2; // -2 for ": "
-    let cleanBase = base.substring(0, maxBaseLen).trim();
+    let cleanBase = base.trim();
     if (cleanBase.endsWith(":")) cleanBase = cleanBase.slice(0, -1).trim();
 
     let title = `${cleanBase}: ${intent}`;
 
     if (usedTitles.has(title.toLowerCase())) {
         const suffix = ` (${Math.floor(intentCounters[category] / pool.length) + 1})`;
-        title = title.substring(0, 60 - suffix.length) + suffix;
+        title = title + suffix;
     }
 
     usedTitles.add(title.toLowerCase());
@@ -143,7 +134,7 @@ const optimizedData = articles.map((article) => {
   else if (lower.includes("youtube") || lower.includes("mp3") || lower.includes("video") || lower.includes("downloader")) category = "youtube";
   else if (lower.includes("memory") || lower.includes("ram") || lower.includes("suspender") || lower.includes("speed up")) category = "memory";
 
-  const optimizedTitle = getUniqueIntentTitle(cleanBase.substring(0, 35), category);
+  const optimizedTitle = getUniqueIntentTitle(cleanBase, category);
 
   // Create professional meta description (140-155 chars)
   const descriptions: Record<string, string[]> = {
@@ -188,7 +179,7 @@ const optimizedData = articles.map((article) => {
       metaDescription = metaDescription.substring(0, 155);
   }
 
-  let newSlug = slugify(optimizedTitle);
+  let newSlug = normalizeSlug(optimizedTitle);
   if (usedSlugs.has(newSlug)) {
       newSlug += `-${intentCounters[category]}`;
   }
@@ -206,7 +197,7 @@ const optimizedData = articles.map((article) => {
 // Output as JSON for internal use and Markdown for the final report
 fs.writeFileSync('optimized_articles.json', JSON.stringify(optimizedData, null, 2));
 
-let markdownTable = "| Original Title | Optimized SEO Title (Max 60 chars) | Professional Meta Description (140-155 chars) | New Optimized Slug |\n";
+let markdownTable = "| Original Title | Optimized SEO Title | Professional Meta Description (140-155 chars) | New Optimized Slug |\n";
 markdownTable += "| :--- | :--- | :--- | :--- |\n";
 optimizedData.forEach(item => {
   markdownTable += `| ${item.originalTitle} | ${item.optimizedTitle} | ${item.metaDescription} | ${item.newSlug} |\n`;
