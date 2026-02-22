@@ -59,7 +59,7 @@ description: >-
 <!-- /wp:list-item --> <!-- wp:list-item -->
 <li><a href="#utility-accessibility">6. Utility &amp; Accessibility: The Unsung Heroes</a></li>
 <!-- /wp:list-item --> <!-- wp:list-item -->
-<li><a href="#comparison-table">7. Quick <a href="/blog/protab-suspender-vs-google-memory-saver-comparison-5" class="internal-link" title="ProTab Suspender vs Google Memory Saver: Comparison – Which One Saves Your RAM?">Comparison</a>: Free vs. Pro</a></li>
+<li>7. Quick <a href="/blog/protab-suspender-vs-google-memory-saver-comparison-5" class="internal-link" title="ProTab Suspender vs Google Memory Saver: Comparison – Which One Saves Your RAM?">Comparison</a>: Free vs. Pro</li>
 <!-- /wp:list-item --> <!-- wp:list-item -->
 <li><a href="#security-privacy">8. Security &amp; Privacy for Students</a></li>
 <!-- /wp:list-item --> <!-- wp:list-item -->

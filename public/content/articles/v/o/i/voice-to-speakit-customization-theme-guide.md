@@ -27,7 +27,7 @@ description: >-
   advanced features and streamline your digital workflow for maximum efficiency.
 ---
 
-<h1>Unlock the Power of Voice: A <a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide"><a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide"><a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide">Comprehensive</a></a></a> Guide to SpeakIt</h1>
+<h1>Unlock the Power of Voice: A <a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide">Comprehensive</a> Guide to SpeakIt</h1>
 
 <p>Imagine being able to interact with your computer or mobile device using just your voice. No more typing, no more clicking - just speak, and your device responds. This is the promise of <strong>speakit</strong>, a technology that's revolutionizing the way we interact with our devices. In this article, we'll delve into the world of <strong>speakit</strong>, exploring its benefits, applications, and how it's changing the way we live and work.</p>
 
@@ -89,7 +89,7 @@ description: >-
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction" class="text-primary font-medium hover:underline"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#benefits" class="text-primary font-medium hover:underline">Benefits of SpeakIt</a></p>
 <p><a href="#applications" class="text-primary font-medium hover:underline">Applications of SpeakIt</a></p>
 <p><a href="#speakit-and-chrome-extensions" class="text-primary font-medium hover:underline">SpeakIt and Chrome Extensions</a></p>

@@ -98,6 +98,52 @@ interface ArticleIndexItem {
   updated_at: string;
 }
 
+function cleanContent(content: string): string {
+  if (!content) return content;
+
+  let cleaned = content;
+
+  // If content is JSON-wrapped, handle the inner content
+  let isJson = false;
+  let jsonData: { optimizedContent?: string } | null = null;
+  try {
+    if (content.trim().startsWith('{')) {
+      jsonData = JSON.parse(content);
+      if (jsonData && jsonData.optimizedContent) {
+        cleaned = jsonData.optimizedContent;
+        isJson = true;
+      }
+    }
+  } catch (e) {
+    // Not JSON or failed to parse, continue with raw content
+  }
+
+  // Fix nested links: <a ...><a ...>...</a></a> -> <a ...>...</a>
+  // We keep the innermost link's content but potentially the outermost link's href?
+  // Actually, the nested links I saw were multiple <a> tags wrapping the same text.
+  // Example: <a href="A"><a href="B">Text</a></a>
+  // Usually we want to keep the inner one if it's more specific, or the outer one if it's the intended one.
+  // The corruption I saw had many levels of the same link.
+
+  let previous;
+  do {
+    previous = cleaned;
+    // Strip nested <a> tags, keeping the innermost content
+    // This regex looks for <a>...<a ...>...</a>...</a> and keeps the inner part.
+    // However, if they are nested like <a href="A"><a href="B">Text</a></a>,
+    // it's safer to just remove the outer <a> if it's immediately wrapping another <a>.
+    // We use a non-greedy match that ensures we don't skip over an </a> when looking for the inner <a>.
+    cleaned = cleaned.replace(/<a[^>]*>((?:(?!<\/a>).)*?<a[^>]*>.*?<\/a>.*?)\s*<\/a>/gs, '$1');
+  } while (cleaned !== previous);
+
+  if (isJson && jsonData) {
+    jsonData.optimizedContent = cleaned;
+    return JSON.stringify(jsonData, null, 2);
+  }
+
+  return cleaned;
+}
+
 async function sync() {
   console.log('Fetching articles from Supabase...');
   const articles = await fetchAllArticles();
@@ -146,7 +192,22 @@ async function sync() {
   const articleIndex: ArticleIndexItem[] = [];
 
   for (const article of articles) {
-    const { content, ...metadata } = article;
+    let { content } = article;
+    const metadata: Record<string, unknown> = { ...article };
+    delete metadata.content;
+
+    // Clean metadata
+    for (const key in metadata) {
+      const val = metadata[key];
+      if (typeof val === 'string') {
+        metadata[key] = val.trim();
+      } else if (Array.isArray(val)) {
+        metadata[key] = val.map((item: unknown) => typeof item === 'string' ? item.trim() : item);
+      }
+    }
+
+    // Clean content
+    content = cleanContent(content);
 
     // Check for optimized overrides
     const optimized = optimizedMap.get(metadata.slug);

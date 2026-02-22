@@ -95,7 +95,7 @@ description: >-
 <p>Here's a quick summary of what we've covered in this article:</p>
 
 <ol>
-  <li><a href="#intro"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Extension Chrome Rafraichissement Automatique</a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Extension Chrome Rafraichissement Automatique</li>
   <li><a href="#what-is">What is Extension Chrome Rafraichissement Automatique?</a></li>
   <li><a href="#benefits">Benefits of Using an Extension Chrome Rafraichissement Automatique</a></li>
   <li><a href="#how-to-choose">How to Choose the Best Extension Chrome Rafraichissement Automatique</a></li>
