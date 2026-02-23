@@ -29,7 +29,7 @@ export async function notifyIndexing(url: string, type: 'URL_UPDATED' | 'URL_DEL
     const client = await auth.getClient();
     const indexing = google.indexing({
       version: 'v3',
-      auth: client as any,
+      auth: client as any, // eslint-disable-line @typescript-eslint/no-explicit-any
     });
 
     const res = await indexing.urlNotifications.publish({
@@ -39,11 +39,11 @@ export async function notifyIndexing(url: string, type: 'URL_UPDATED' | 'URL_DEL
       },
     });
 
-    const logEntry = `${new Date().toISOString()} - ${type} - ${url} - Status: ${res.statusText || 'OK'}\n`;
+    const logEntry = `${new Date().toISOString()} - ${type} - ${url} - Status: ${res.statusText || 'OK'} - Response: ${JSON.stringify(res.data)}\n`;
     fs.appendFileSync(LOG_FILE, logEntry);
     console.log(`[Indexing] Successfully notified Google: ${url}`);
-  } catch (error: any) {
-    const errorMsg = error.response?.data?.error?.message || error.message;
+  } catch (error) {
+    const errorMsg = (error as any)?.response?.data?.error?.message || (error as Error).message;
     const logEntry = `${new Date().toISOString()} - ERROR - ${url} - ${errorMsg}\n`;
     fs.appendFileSync(LOG_FILE, logEntry);
     console.error(`[Indexing] Error notifying Google for ${url}:`, errorMsg);
