@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 import * as dotenv from 'dotenv';
+import { execSync } from 'child_process';
 import { getPartitionedPath, normalizeSlug } from '../src/utils/articlePath';
 import { notifyIndexing } from './google-indexing';
 
@@ -149,6 +150,9 @@ async function sync() {
   const articles = await fetchAllArticles();
   console.log(`Found ${articles.length} published articles.`);
 
+  let syncedCount = 0;
+  let skippedCount = 0;
+
   // Load optimized metadata if available to override truncated/unoptimized data from DB
   const optimizedMap = new Map<string, OptimizedItem>();
   const optimizedFile = path.join(process.cwd(), 'optimized_articles.json');
@@ -209,21 +213,27 @@ async function sync() {
     // Clean content
     content = cleanContent(content);
 
-    // Check for optimized overrides
-    const optimized = optimizedMap.get(metadata.slug);
-    if (optimized) {
-      metadata.title = optimized.optimizedTitle;
-      metadata.slug = optimized.newSlug;
-      metadata.meta_description = optimized.metaDescription;
-      // Also update description/excerpt if they are missing or should match meta_description
-      if (!metadata.description) metadata.description = optimized.metaDescription;
+    // Validation Check
+    if (!metadata.title || !metadata.slug || !content) {
+      console.warn(`[Validation] Skipping article ${article.id}: Missing title, slug, or content.`);
+      skippedCount++;
+      continue;
     }
 
-    const originalSlug = metadata.slug;
-    const normalizedSlug = normalizeSlug(originalSlug);
+    const rawSlug = String(metadata.slug).trim();
 
-    // Update slug in metadata to ensure it's ALWAYS normalized
-    metadata.slug = normalizedSlug;
+    // Check for optimized overrides using raw slug from DB
+    const optimized = optimizedMap.get(rawSlug);
+    if (optimized) {
+      metadata.title = String(optimized.optimizedTitle).trim();
+      metadata.slug = normalizeSlug(String(optimized.newSlug));
+      metadata.meta_description = String(optimized.metaDescription).trim();
+      if (!metadata.description) metadata.description = metadata.meta_description;
+    } else {
+      metadata.slug = normalizeSlug(rawSlug);
+    }
+
+    const normalizedSlug = String(metadata.slug);
 
     // Change detection for Indexing API
     const oldEntry = oldIndexMap.get(normalizedSlug);
@@ -265,11 +275,17 @@ async function sync() {
     }
 
     fs.writeFileSync(fullPath, markdownContent);
+    syncedCount++;
   }
 
   // Save index
   fs.writeFileSync(indexFile, JSON.stringify(articleIndex, null, 2));
-  console.log(`Successfully synced ${articles.length} articles to GitHub structure.`);
+
+  console.log('\n--- Sync Report ---');
+  console.log(`Total published articles fetched: ${articles.length}`);
+  console.log(`Successfully synced: ${syncedCount}`);
+  console.log(`Skipped due to validation: ${skippedCount}`);
+  console.log('-------------------\n');
 
   // Trigger Google Indexing for changed articles
   if (changedUrls.length > 0) {
@@ -279,6 +295,14 @@ async function sync() {
     }
   } else {
     console.log('No new or updated articles detected for indexing.');
+  }
+
+  // Automatically update sitemap
+  console.log('Updating sitemap...');
+  try {
+    execSync('bun run sitemap', { stdio: 'inherit' });
+  } catch (error) {
+    console.error('Error updating sitemap:', error);
   }
 }
 
