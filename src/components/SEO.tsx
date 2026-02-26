@@ -29,7 +29,12 @@ const SEO = ({
   noindex,
 }: SEOProps) => {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} - Powerful Chrome Extensions for Productivity`;
-  const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+
+  // Ensure canonicalPath starts with / if it's not empty and doesn't already have one
+  const safePath = canonicalPath
+    ? (canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`)
+    : "";
+  const canonicalUrl = `${SITE_URL}${safePath}`;
 
   return (
     <Helmet>
