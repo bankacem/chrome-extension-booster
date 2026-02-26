@@ -21,10 +21,10 @@ status: published
 published_at: '2026-02-17T02:11:01.261+00:00'
 scheduled_at: '2026-02-17T02:11:00+00:00'
 author: AI Generator
-views: 0
+views: 2
 read_time: 6
 created_at: '2026-01-24T12:58:14.14487+00:00'
-updated_at: '2026-02-17T02:11:01.321741+00:00'
+updated_at: '2026-02-26T20:13:05.375967+00:00'
 description: >-
   Improve your online efficiency with our curated list of must-have extensions.
   From research tools to task managers, enhance your browsing experience.

@@ -11,10 +11,12 @@ import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
+      <SEO canonicalPath="/" />
       <Navbar />
       <HeroSection />
       <PartnersSection />

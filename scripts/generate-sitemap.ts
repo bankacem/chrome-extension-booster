@@ -79,9 +79,53 @@ async function generateSitemap() {
 
   const allPages = [...staticPages, ...articlePages, ...extensionPages];
 
-  const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+  // For SEO and scalability, if we exceed 45,000 URLs, we use a sitemap index.
+  // Sitemap protocol limit is 50,000 URLs or 50MB, but 45k is a safer buffer.
+  const CHUNK_SIZE = 45000;
+
+  if (allPages.length <= CHUNK_SIZE) {
+    const sitemapContent = generateSitemapXml(allPages);
+    const outputPath = path.join(process.cwd(), "public", "sitemap.xml");
+    fs.writeFileSync(outputPath, sitemapContent);
+    console.log(`Sitemap generated successfully at ${outputPath}`);
+  } else {
+    console.log(`Large volume detected (${allPages.length} URLs). Generating sitemap index...`);
+
+    const chunks: PageInfo[][] = [];
+    for (let i = 0; i < allPages.length; i += CHUNK_SIZE) {
+      chunks.push(allPages.slice(i, i + CHUNK_SIZE));
+    }
+
+    const sitemapFiles: string[] = [];
+    chunks.forEach((chunk, index) => {
+      const fileName = `sitemap-${index + 1}.xml`;
+      const content = generateSitemapXml(chunk);
+      const outputPath = path.join(process.cwd(), "public", fileName);
+      fs.writeFileSync(outputPath, content);
+      sitemapFiles.push(fileName);
+      console.log(`Part sitemap generated: ${fileName}`);
+    });
+
+    const indexContent = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapFiles.map(file => `  <sitemap>
+    <loc>${WEBSITE_URL}/${file}</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+  </sitemap>`).join('\n')}
+</sitemapindex>`;
+
+    const indexPath = path.join(process.cwd(), "public", "sitemap.xml");
+    fs.writeFileSync(indexPath, indexContent);
+    console.log(`Sitemap index generated at ${indexPath}`);
+  }
+
+  console.log(`Total URLs processed: ${allPages.length}`);
+}
+
+function generateSitemapXml(pages: PageInfo[]): string {
+  return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allPages
+${pages
   .map(
     (page) => `  <url>
     <loc>${WEBSITE_URL}${page.url}</loc>
@@ -92,11 +136,6 @@ ${allPages
   )
   .join("\n")}
 </urlset>`;
-
-  const outputPath = path.join(process.cwd(), "public", "sitemap.xml");
-  fs.writeFileSync(outputPath, sitemapContent);
-  console.log(`Sitemap generated successfully at ${outputPath}`);
-  console.log(`Total URLs: ${allPages.length}`);
 }
 
 generateSitemap();

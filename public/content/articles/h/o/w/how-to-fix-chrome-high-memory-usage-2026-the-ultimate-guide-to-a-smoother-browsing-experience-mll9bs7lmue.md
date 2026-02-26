@@ -22,10 +22,10 @@ status: published
 published_at: '2026-02-23T09:00:07.427+00:00'
 scheduled_at: '2026-02-23T09:00:00+00:00'
 author: AI Generator
-views: 0
+views: 1
 read_time: 5
 created_at: '2026-02-13T19:04:56.051728+00:00'
-updated_at: '2026-02-23T09:00:07.493218+00:00'
+updated_at: '2026-02-25T11:26:17.308561+00:00'
 ---
 
 <h1>How to Fix Chrome High Memory Usage 2026: The Ultimate Guide to a Smoother Browsing Experience</h1>

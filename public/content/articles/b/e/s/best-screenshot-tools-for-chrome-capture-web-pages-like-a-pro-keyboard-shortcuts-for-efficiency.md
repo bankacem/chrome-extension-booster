@@ -24,10 +24,10 @@ status: published
 published_at: '2026-02-21T14:11:00.723+00:00'
 scheduled_at: '2026-02-21T14:11:00+00:00'
 author: AI Generator
-views: 0
+views: 3
 read_time: 5
 created_at: '2026-01-21T14:32:24.234123+00:00'
-updated_at: '2026-02-21T14:11:00.784823+00:00'
+updated_at: '2026-02-26T09:48:51.836685+00:00'
 description: >-
   Enhance your visual communication with professional screen capture tools.
   Learn how to annotate, edit, and share your captures with teammates
