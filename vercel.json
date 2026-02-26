@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.extensionto.com"
+        }
+      ],
+      "destination": "https://extensionto.com/$1",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { 
       "source": "/sitemap.xml", 

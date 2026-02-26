@@ -9,6 +9,7 @@ interface SEOProps {
   ogType?: "website" | "article";
   articlePublishedTime?: string;
   articleAuthor?: string;
+  noindex?: boolean;
 }
 
 const SITE_NAME = "ExtensionTo";
@@ -32,6 +33,7 @@ const SEO = ({
   return (
     <Helmet>
       <title>{fullTitle}</title>
+      {noindex && <meta name="robots" content="noindex, nofollow" />}
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={canonicalUrl} />

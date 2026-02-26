@@ -187,13 +187,10 @@ async function sync() {
   // Ensure base directory exists
   if (!fs.existsSync(articlesDir)) {
     fs.mkdirSync(articlesDir, { recursive: true });
-  } else {
-    // Clean up old articles to avoid mixed case/normalized issues
-    fs.rmSync(articlesDir, { recursive: true, force: true });
-    fs.mkdirSync(articlesDir, { recursive: true });
   }
 
   const articleIndex: ArticleIndexItem[] = [];
+  const currentFiles = new Set<string>();
 
   for (const article of articles) {
     let { content } = article;
@@ -275,7 +272,29 @@ async function sync() {
     }
 
     fs.writeFileSync(fullPath, markdownContent);
+    currentFiles.add(fullPath);
     syncedCount++;
+  }
+
+  // Cleanup: Remove files that are no longer in the published list
+  console.log('Cleaning up orphaned article files...');
+  function walkDir(dir: string) {
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+      const fullPath = path.join(dir, file);
+      if (fs.statSync(fullPath).isDirectory()) {
+        walkDir(fullPath);
+        // Remove empty directories
+        if (fs.readdirSync(fullPath).length === 0) {
+          fs.rmdirSync(fullPath);
+        }
+      } else if (fullPath.endsWith('.md') && !currentFiles.has(fullPath)) {
+        fs.unlinkSync(fullPath);
+      }
+    }
+  }
+  if (fs.existsSync(articlesDir)) {
+    walkDir(articlesDir);
   }
 
   // Save index
