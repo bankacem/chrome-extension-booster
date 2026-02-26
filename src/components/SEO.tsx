@@ -26,6 +26,7 @@ const SEO = ({
   ogType = "website",
   articlePublishedTime,
   articleAuthor,
+  noindex,
 }: SEOProps) => {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} - Powerful Chrome Extensions for Productivity`;
   const canonicalUrl = `${SITE_URL}${canonicalPath}`;
