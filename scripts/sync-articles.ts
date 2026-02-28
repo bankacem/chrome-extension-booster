@@ -207,6 +207,11 @@ async function sync() {
       }
     }
 
+    // Handle missing category
+    if (!metadata.category) {
+      metadata.category = "Uncategorized";
+    }
+
     // Clean content
     content = cleanContent(content);
 
@@ -223,7 +228,8 @@ async function sync() {
     const optimized = optimizedMap.get(rawSlug);
     if (optimized) {
       metadata.title = String(optimized.optimizedTitle).trim();
-      metadata.slug = normalizeSlug(String(optimized.newSlug));
+      // Ensure we use the exact slug from DB (normalized) for filename alignment
+      metadata.slug = normalizeSlug(rawSlug);
       metadata.meta_description = String(optimized.metaDescription).trim();
       if (!metadata.description) metadata.description = metadata.meta_description;
     } else {

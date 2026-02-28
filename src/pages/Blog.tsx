@@ -46,13 +46,14 @@ const Blog = () => {
     }
   };
 
-  const categories = [...new Set(articles.map((a) => a.category))];
+  const categories = [...new Set(articles.map((a) => a.category || "Uncategorized"))].sort();
 
   const filteredArticles = articles.filter((article) => {
     const matchesSearch =
       article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       article.excerpt?.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = !selectedCategory || article.category === selectedCategory;
+    const articleCategory = article.category || "Uncategorized";
+    const matchesCategory = !selectedCategory || articleCategory === selectedCategory;
     return matchesSearch && matchesCategory;
   });
 
@@ -148,7 +149,7 @@ const Blog = () => {
                   <div className="p-6">
                     <div className="mb-3 flex items-center gap-3 text-xs text-muted-foreground">
                       <span className="rounded-full bg-primary/10 px-2 py-1 text-primary">
-                        {article.category}
+                        {article.category || "Uncategorized"}
                       </span>
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" />

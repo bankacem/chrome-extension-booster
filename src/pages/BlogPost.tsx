@@ -295,7 +295,7 @@ const BlogPost = () => {
           >
             <div className="mb-4 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
               <span className="rounded-full bg-primary/10 px-3 py-1 text-primary">
-                {article.category}
+                {article.category || "Uncategorized"}
               </span>
               <span className="flex items-center gap-1">
                 <Calendar className="h-4 w-4" />
