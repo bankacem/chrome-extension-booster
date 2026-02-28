@@ -41,6 +41,42 @@ const parseMarkdown = (text: string) => {
   }
 };
 
+const processArticleContent = (content: string) => {
+  if (!content) return "";
+
+  let processed = content;
+
+  // 1. Add loading="lazy" and decoding="async" to all <img> tags
+  // This regex handles both HTML <img> and Markdown ![alt](url)
+  // If it's Markdown, it will be converted to HTML later?
+  // Wait, the content in frontmatter is already HTML or Markdown?
+  // Based on sync-articles.ts, it fetches raw content which might be HTML or Markdown.
+  // In BlogPost.tsx, dangerouslySetInnerHTML={{ __html: article.content }} is used.
+  // This implies the content is ALREADY HTML.
+
+  processed = processed.replace(/<img([^>]*)>/gi, (match, attributes) => {
+    let newAttributes = attributes;
+    // Ensure space before adding attributes if they don't exist
+    if (!attributes.includes('loading=')) {
+      newAttributes = ` loading="lazy"${newAttributes}`;
+    }
+    if (!attributes.includes('decoding=')) {
+      newAttributes = ` decoding="async"${newAttributes}`;
+    }
+    return `<img${newAttributes}>`;
+  });
+
+  // 2. Semantic HTML Audit: Ensure exactly one <h1>
+  // Demote <h1> to <h2>
+  processed = processed.replace(/<h1([^>]*)>(.*?)<\/h1>/gi, '<h2$1>$2</h2>');
+
+  // Ensure all secondary headers are at most <h3>
+  // Demote <h4>, <h5>, <h6> to <h3>
+  processed = processed.replace(/<h[4-6]([^>]*)>(.*?)<\/h[4-6]>/gi, '<h3$1>$2</h3>');
+
+  return processed;
+};
+
 // Helper to convert slug to readable title for instant SEO
 const slugToTitle = (slug: string): string => {
   return slug
@@ -93,7 +129,8 @@ const BlogPost = () => {
         return;
       }
 
-      const fullArticle = { ...frontmatter, content } as Article;
+      const processedContent = processArticleContent(content);
+      const fullArticle = { ...frontmatter, content: processedContent } as Article;
       setArticle(fullArticle);
 
       // Increment views in Supabase using the latest count from the database
@@ -308,6 +345,7 @@ const BlogPost = () => {
               <img
                 src={article.featured_image}
                 alt={article.title}
+                decoding="async"
                 className="w-full"
               />
             </motion.div>
@@ -365,6 +403,8 @@ const BlogPost = () => {
                       <img
                         src={related.featured_image}
                         alt={related.title}
+                        loading="lazy"
+                        decoding="async"
                         className="h-full w-full object-cover"
                       />
                     </div>

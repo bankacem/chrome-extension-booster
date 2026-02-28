@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import Navbar from "@/components/Navbar";
+import SEO from "@/components/SEO";
 
 const AdminLogin = () => {
   const [email, setEmail] = useState("");
@@ -190,6 +191,7 @@ const AdminLogin = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO title="Admin Login" noindex />
       <Navbar />
 
       <main className="container mx-auto flex min-h-[calc(100vh-80px)] items-center justify-center px-4 pt-20">

@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { analyzeSEO, type SEOAnalysis } from "@/lib/seoAnalyzer";
+import SEO from "@/components/SEO";
 import { RadialScoreGauge } from "@/components/seo/RadialScoreGauge";
 import { KeywordsSidebar } from "@/components/seo/KeywordsSidebar";
 import { SEOStatsCards } from "@/components/seo/SEOStatsCards";
@@ -151,6 +152,11 @@ const SEOAnalyzer = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={`SEO Analysis: ${article.title}`}
+        description={`Detailed SEO analysis and optimization recommendations for "${article.title}".`}
+        noindex
+      />
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
         <div className="container mx-auto px-4 py-4">

@@ -39,6 +39,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import SEO from "@/components/SEO";
 import BulkScheduleDialog from "@/components/admin/BulkScheduleDialog";
 import BulkUpdateDialog from "@/components/admin/BulkUpdateDialog";
 import ArticleCategorizer from "@/components/admin/ArticleCategorizer";
@@ -395,20 +396,16 @@ const Admin = () => {
     
     setDeleting(true);
     try {
-      console.log("Deleting article:", articleToDelete.id, articleToDelete.title);
-      
-      const { error, count } = await supabase
+      const { error } = await supabase
         .from("articles")
         .delete()
         .eq("id", articleToDelete.id)
         .select();
       
       if (error) {
-        console.error("Delete error details:", error);
         throw error;
       }
       
-      console.log("Delete successful, affected rows:", count);
       toast({ title: "Success", description: "Article deleted successfully" });
       setArticleToDelete(null);
       fetchArticles();
@@ -844,6 +841,7 @@ Disallow: /admin/*`;
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO title="Admin Dashboard" noindex />
       {/* Admin Header */}
       <header className="fixed top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">

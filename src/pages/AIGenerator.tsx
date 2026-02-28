@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import SEO from "@/components/SEO";
 import {
   Sparkles, FileText, Layers, FolderOpen, 
   Settings2, Save, Trash2, Wand2, Check,
@@ -645,6 +646,11 @@ const AIGenerator = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
+      <SEO
+        title="AI Article Generator - Programmatic SEO"
+        description="Generate professional SEO-optimized articles using AI. Programmatic SEO engine for extensionto.com."
+        noindex
+      />
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b">
         <div className="container mx-auto px-4 py-4">
