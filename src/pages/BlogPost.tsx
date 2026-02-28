@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowLeft, Tag, User, Share2 } from "lucide-react";
@@ -30,14 +30,14 @@ interface Article {
 
 const parseMarkdown = (text: string) => {
   const match = text.match(/^---([\s\S]*?)---([\s\S]*)$/);
-  if (!match) return { frontmatter: {}, content: text };
+  if (!match) return { frontmatter: {} as Partial<Article>, content: text };
   try {
-    const frontmatter = yaml.load(match[1]) as any;
+    const frontmatter = yaml.load(match[1]) as Partial<Article>;
     const content = match[2].trim();
     return { frontmatter, content };
   } catch (e) {
     console.error("Error parsing frontmatter:", e);
-    return { frontmatter: {}, content: text };
+    return { frontmatter: {} as Partial<Article>, content: text };
   }
 };
 
@@ -97,13 +97,7 @@ const BlogPost = () => {
   const instantTitle = slug ? slugToTitle(slug) : "Loading Article";
   const instantDescription = `Read our article about ${instantTitle.toLowerCase()}. Discover tips, tutorials, and insights about browser extensions and productivity.`;
 
-  useEffect(() => {
-    if (slug) {
-      fetchArticle();
-    }
-  }, [slug]);
-
-  const fetchArticle = async () => {
+  const fetchArticle = useCallback(async () => {
     if (!slug) return;
     setLoading(true);
     setNotFound(false);
@@ -158,7 +152,7 @@ const BlogPost = () => {
       // Fetch related articles from index
       const indexResponse = await fetch("/content/articles-index.json");
       if (indexResponse.ok) {
-        const index = await indexResponse.json() as any[];
+        const index = await indexResponse.json() as Article[];
         const related = index
           .filter(a => a.category === frontmatter.category && a.id !== frontmatter.id)
           .slice(0, 3);
@@ -170,7 +164,13 @@ const BlogPost = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [slug]);
+
+  useEffect(() => {
+    if (slug) {
+      fetchArticle();
+    }
+  }, [slug, fetchArticle]);
 
   const handleShare = () => {
     if (navigator.share) {
