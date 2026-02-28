@@ -19,10 +19,10 @@ status: published
 published_at: '2026-02-28T14:11:00.65+00:00'
 scheduled_at: '2026-02-28T14:11:00+00:00'
 author: AI Generator
-views: 0
+views: 1
 read_time: 6
 created_at: '2026-01-20T23:11:57.447626+00:00'
-updated_at: '2026-02-28T14:11:00.699865+00:00'
+updated_at: '2026-02-28T15:11:22.963419+00:00'
 ---
 
 <h1>How to Protect Your Accounts from Identity Theft: A Comprehensive Guide</h1>
