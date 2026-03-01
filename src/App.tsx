@@ -37,6 +37,7 @@ const App = () => (
               <Route path="/settings" element={<AdminLogin />} />
               <Route path="/settings/manage" element={<Admin />} />
               <Route path="/settings/ai-generator" element={<AIGenerator />} />
+              <Route path="/settings/seo-dashboard" element={<SEODashboard />} />
               <Route path="/settings/seo/:slug" element={<SEOAnalyzer />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
