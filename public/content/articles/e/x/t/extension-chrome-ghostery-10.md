@@ -21,10 +21,10 @@ status: published
 published_at: '2026-02-08T14:11:01+00:00'
 scheduled_at: '2026-02-08T14:11:00+00:00'
 author: AI Generator
-views: 0
+views: 2
 read_time: 5
 created_at: '2026-01-24T14:11:55.818543+00:00'
-updated_at: '2026-02-13T19:06:11.544543+00:00'
+updated_at: '2026-02-28T22:21:42.601667+00:00'
 description: >-
   Protect your data with professional tracking protection. Learn how to
   configure advanced security settings and block invasive scripts for a safer
