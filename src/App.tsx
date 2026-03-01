@@ -13,6 +13,7 @@ import AdminLogin from "./pages/AdminLogin";
 import AIGenerator from "./pages/AIGenerator";
 import ExtensionPage from "./pages/ExtensionPage";
 import SEOAnalyzer from "./pages/SEOAnalyzer";
+import SEODashboard from "./pages/SEODashboard";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
