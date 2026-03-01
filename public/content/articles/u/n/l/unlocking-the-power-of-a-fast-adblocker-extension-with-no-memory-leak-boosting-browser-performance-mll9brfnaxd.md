@@ -21,10 +21,10 @@ status: published
 published_at: '2026-02-17T09:00:00.279+00:00'
 scheduled_at: '2026-02-17T09:00:00+00:00'
 author: AI Generator
-views: 1
+views: 2
 read_time: 6
 created_at: '2026-02-13T19:04:55.034757+00:00'
-updated_at: '2026-03-01T05:07:42.234632+00:00'
+updated_at: '2026-03-01T21:38:52.387196+00:00'
 description: >-
   Improve your online privacy with our expert setup guide. Discover the best
   ways to stop trackers from following you across different websites easily.
