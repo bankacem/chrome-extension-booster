@@ -121,16 +121,46 @@ const BlogPost = () => {
         const indexRes = await fetch("/content/articles-index.json");
         if (indexRes.ok) {
           const index = await indexRes.json() as Article[];
-          const normalizedSlug = slug.toLowerCase().replace(/[^a-z0-9]/g, '-');
+          const normalizedSlug = slug.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
 
-          // Try to find the article by ID or an exact matching normalized slug
-          const matched = index.find(a =>
+          // 1. Exact match by slug or ID
+          let matched = index.find(a =>
             a.slug === normalizedSlug ||
             a.id === slug
           );
 
+          // 2. Fuzzy match: extract significant words from the incoming slug
+          //    and find the article whose slug shares the most words
+          if (!matched) {
+            const incomingWords = normalizedSlug.split('-').filter(w => w.length > 2);
+            let bestScore = 0;
+            let bestMatch: typeof index[0] | null = null;
+
+            for (const article of index) {
+              const articleWords = new Set(article.slug.split('-').filter(w => w.length > 2));
+              let score = 0;
+              for (const word of incomingWords) {
+                if (articleWords.has(word)) score++;
+              }
+              // Require at least 3 matching words and better than previous best
+              if (score >= 3 && score > bestScore) {
+                bestScore = score;
+                bestMatch = article;
+              }
+            }
+
+            if (bestMatch) {
+              matched = bestMatch as Article;
+              console.log(`[Search-and-Rescue] Fuzzy matched "${slug}" → "${matched.slug}" (score: ${bestScore})`);
+            }
+          }
+
           if (matched) {
-            console.log(`[Search-and-Rescue] Resolved ${slug} to ${matched.slug}`);
+            // Redirect to the correct slug URL to consolidate SEO signals
+            if (matched.slug !== slug) {
+              console.log(`[Search-and-Rescue] Redirecting to /blog/${matched.slug}`);
+              window.history.replaceState(null, '', `/blog/${matched.slug}`);
+            }
             path = getPartitionedPath(matched.slug);
             response = await fetch(path);
           }

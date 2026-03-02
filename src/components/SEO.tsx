@@ -38,7 +38,7 @@ const SEO = ({
 
   return (
     <Helmet>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <title>{fullTitle}</title>
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       <meta name="description" content={description} />
