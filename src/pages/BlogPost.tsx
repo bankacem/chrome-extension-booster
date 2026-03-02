@@ -1,11 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Calendar, Clock, ArrowLeft, Tag, User, Share2 } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, Tag, User, Share2, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import DirectDownloadSection from "@/components/seo/DirectDownloadSection";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import yaml from "js-yaml";
@@ -88,6 +89,13 @@ const slugToTitle = (slug: string): string => {
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const [article, setArticle] = useState<Article | null>(null);
+
+  // Priority detection logic
+  const isPriorityArticle = (art: Article) => {
+    const priorityKeywords = ["adblocker", "idm", "ghostery", "facebook pixel helper"];
+    const textToSearch = `${art.title} ${art.content} ${art.slug} ${art.keywords?.join(" ")}`.toLowerCase();
+    return priorityKeywords.some(kw => textToSearch.includes(kw.toLowerCase()));
+  };
   const [relatedArticles, setRelatedArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
@@ -381,6 +389,14 @@ const BlogPost = () => {
             className="prose prose-lg dark:prose-invert max-w-none"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
+
+          {/* Direct Download Injection for Priority Articles */}
+          {isPriorityArticle(article) && (
+            <DirectDownloadSection
+              extensionName={article.title.split(" - ")[0].split(" | ")[0]}
+              lastUpdated={new Date(article.published_at).toLocaleDateString("en-US", { month: 'long', year: 'numeric' })}
+            />
+          )}
 
           {/* Tags */}
           {article.tags && article.tags.length > 0 && (

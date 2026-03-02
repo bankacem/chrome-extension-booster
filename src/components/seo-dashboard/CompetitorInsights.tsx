@@ -200,13 +200,20 @@ Poper Blocker\tpop up blocker for chrome\t90\t4.4\t3M+\tstable`;
                     <TableCell className="font-medium">{e.extension}</TableCell>
                     <TableCell className="font-mono text-sm text-muted-foreground">{e.keyword}</TableCell>
                     <TableCell className="text-center">
-                      <Badge className={
-                        e.ourPosition <= 10 ? "bg-green-500/20 text-green-400 border-green-500/30" :
-                        e.ourPosition <= 30 ? "bg-yellow-500/20 text-yellow-400 border-yellow-500/30" :
-                        "bg-destructive/20 text-destructive border-destructive/30"
-                      }>
-                        #{e.ourPosition}
-                      </Badge>
+                      <div className="flex flex-col items-center gap-1">
+                        <Badge className={
+                          e.ourPosition <= 10 ? "bg-green-500/20 text-green-400 border-green-500/30" :
+                          e.ourPosition <= 30 ? "bg-yellow-500/20 text-yellow-400 border-yellow-500/30" :
+                          "bg-destructive/20 text-destructive border-destructive/30"
+                        }>
+                          #{e.ourPosition}
+                        </Badge>
+                        {e.ourPosition <= 10 && (
+                          <Badge variant="outline" className="text-[10px] uppercase bg-green-500/10 text-green-400 border-green-500/20 px-1 py-0">
+                            Winner
+                          </Badge>
+                        )}
+                      </div>
                     </TableCell>
                     <TableCell className="text-center text-yellow-400">{e.storeRating} ★</TableCell>
                     <TableCell className="text-sm text-muted-foreground">{e.storeUsers}</TableCell>
