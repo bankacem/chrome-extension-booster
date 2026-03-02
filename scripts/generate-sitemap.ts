@@ -42,12 +42,29 @@ async function generateSitemap() {
   if (fs.existsSync(indexPath)) {
     console.log("Using local articles-index.json for sitemap generation...");
     const articles = JSON.parse(fs.readFileSync(indexPath, 'utf-8')) as ArticleRecord[];
-    articlePages = articles.map((article) => ({
-      url: `/blog/${normalizeSlug(article.slug)}`,
-      changefreq: "monthly",
-      priority: "0.7",
-      lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
-    }));
+    articlePages = articles.map((article) => {
+      const slug = normalizeSlug(article.slug);
+      const title = (article as { title?: string }).title?.toLowerCase() || "";
+
+      // Keyword prioritization
+      let priority = "0.7";
+      if (
+        title.includes("adblocker") ||
+        title.includes("adblock") ||
+        title.includes("android") ||
+        title.includes("idm extension") ||
+        title.includes("ghostery")
+      ) {
+        priority = "0.9";
+      }
+
+      return {
+        url: `/blog/${slug}`,
+        changefreq: "monthly",
+        priority: priority,
+        lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
+      };
+    });
   } else if (supabase) {
     console.log("Fetching articles from Supabase...");
     const { data: articles, error } = await supabase

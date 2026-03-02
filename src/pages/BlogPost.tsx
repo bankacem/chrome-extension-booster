@@ -104,9 +104,31 @@ const BlogPost = () => {
     
     try {
       // Fetch article from partitioned path
-      const path = getPartitionedPath(slug);
+      let path = getPartitionedPath(slug);
+      let response = await fetch(path);
 
-      const response = await fetch(path);
+      // Search-and-Rescue: Fallback mechanism for legacy URLs or mismatched slugs
+      if (!response.ok && response.status === 404) {
+        console.log(`[Search-and-Rescue] Article not found at ${path}. Attempting index-based resolution...`);
+        const indexRes = await fetch("/content/articles-index.json");
+        if (indexRes.ok) {
+          const index = await indexRes.json() as Article[];
+          const normalizedSlug = slug.toLowerCase().replace(/[^a-z0-9]/g, '-');
+
+          // Try to find the article by ID or an exact matching normalized slug
+          const matched = index.find(a =>
+            a.slug === normalizedSlug ||
+            a.id === slug
+          );
+
+          if (matched) {
+            console.log(`[Search-and-Rescue] Resolved ${slug} to ${matched.slug}`);
+            path = getPartitionedPath(matched.slug);
+            response = await fetch(path);
+          }
+        }
+      }
+
       if (!response.ok) {
         if (response.status === 404) {
           setNotFound(true);
