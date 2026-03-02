@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   Search, RefreshCw, BarChart3, Download, Link as LinkIcon,
-  LogOut, ArrowLeft, FileText, Layers, HeartPulse,
+  LogOut, ArrowLeft, FileText, Layers, HeartPulse, Target,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
