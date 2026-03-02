@@ -20,10 +20,10 @@ status: published
 published_at: '2026-02-24T09:00:01.663+00:00'
 scheduled_at: '2026-02-24T09:00:00+00:00'
 author: AI Generator
-views: 2
+views: 3
 read_time: 5
 created_at: '2026-02-13T19:04:56.192125+00:00'
-updated_at: '2026-03-02T12:12:56.715014+00:00'
+updated_at: '2026-03-02T22:31:25.966436+00:00'
 ---
 
 <h1>Best Extension to Reduce Chrome RAM Usage: Boosting Browser Performance</h1>
