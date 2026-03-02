@@ -203,6 +203,10 @@ const SEODashboard = () => {
             <TabsContent value="health">
               <ArticleHealth articles={publishedArticles} onRefresh={fetchArticles} />
             </TabsContent>
+
+            <TabsContent value="tracker">
+              <KeywordPerformanceTracker articles={publishedArticles} />
+            </TabsContent>
           </Tabs>
         </motion.div>
       </main>
