@@ -21,10 +21,10 @@ status: published
 published_at: '2026-03-02T20:11:01.386+00:00'
 scheduled_at: '2026-03-02T20:11:00+00:00'
 author: AI Generator
-views: 0
+views: 1
 read_time: 5
 created_at: '2026-01-20T22:00:49.290689+00:00'
-updated_at: '2026-03-02T20:11:01.486309+00:00'
+updated_at: '2026-03-02T23:21:27.237159+00:00'
 ---
 
 <h1>Safe Streaming: How to Block Popups on Movie Sites</h1>

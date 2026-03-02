@@ -47,27 +47,30 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
       let updatedKeywords = [...(article.keywords || [])];
       let needsUpdate = false;
 
-      // 1. Fix H1 Status (Demote extra H1s and Markdown # headers)
-      // First, handle Markdown H1s
-      const mdH1Matches = updatedContent.match(/^#\s+/gm);
-      if (mdH1Matches && mdH1Matches.length > 1) {
-        let count = 0;
-        updatedContent = updatedContent.replace(/^#\s+(.*)$/gm, (match, content) => {
-          count++;
-          return count === 1 ? match : `## ${content}`;
-        });
-        needsUpdate = true;
+      // 1. Unified H1 Status (Exactly one H1 across both Markdown and HTML)
+      const allH1s: { index: number; full: string; type: 'md' | 'html'; content: string; attrs?: string }[] = [];
+
+      let m;
+      const mdRe = /^#\s+(.*)$/gm;
+      while ((m = mdRe.exec(updatedContent)) !== null) {
+        allH1s.push({ index: m.index, full: m[0], type: 'md', content: m[1] });
       }
 
-      // Then, handle HTML H1s
-      const h1Matches = updatedContent.match(/<h1/gi);
-      if (h1Matches && h1Matches.length > 1) {
-        // Keep the first H1, demote the rest
-        let count = 0;
-        updatedContent = updatedContent.replace(/<h1([^>]*)>(.*?)<\/h1>/gi, (match, attrs, content) => {
-          count++;
-          return count === 1 ? match : `<h2${attrs}>${content}</h2>`;
-        });
+      const htmlRe = /<h1([^>]*)>(.*?)<\/h1>/gi;
+      while ((m = htmlRe.exec(updatedContent)) !== null) {
+        allH1s.push({ index: m.index, full: m[0], type: 'html', attrs: m[1], content: m[2] });
+      }
+
+      allH1s.sort((a, b) => a.index - b.index);
+
+      if (allH1s.length > 1) {
+        // Keep only the first one, demote the rest
+        // To avoid index issues when replacing, go backwards
+        for (let i = allH1s.length - 1; i > 0; i--) {
+          const item = allH1s[i];
+          const replacement = item.type === 'md' ? `## ${item.content}` : `<h2${item.attrs}>${item.content}</h2>`;
+          updatedContent = updatedContent.substring(0, item.index) + replacement + updatedContent.substring(item.index + item.full.length);
+        }
         needsUpdate = true;
       }
 
@@ -258,6 +261,7 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
               <TableHead>Article</TableHead>
               <TableHead className="text-center w-24">Score</TableHead>
               <TableHead>Critical Checks</TableHead>
+              <TableHead className="text-center">AI Actions</TableHead>
               <TableHead className="text-right">Actions</TableHead>
             </TableRow>
           </TableHeader>
@@ -296,22 +300,26 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
                     ))}
                   </div>
                 </TableCell>
+                <TableCell className="text-center">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="h-7 text-[10px] gap-1 px-2 border-primary/30 hover:border-primary"
+                    onClick={() => handleAutoFix(article)}
+                    disabled={fixingId === article.id}
+                  >
+                    {fixingId === article.id ? (
+                      <Loader2 className="h-3 w-3 animate-spin" />
+                    ) : totalScore === 100 ? (
+                      <CheckCircle2 className="h-3 w-3 text-green-400" />
+                    ) : (
+                      <Wand2 className="h-3 w-3" />
+                    )}
+                    Auto-Fix
+                  </Button>
+                </TableCell>
                 <TableCell className="text-right">
                   <div className="flex justify-end gap-2">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="h-7 text-[10px] gap-1 px-2 border-primary/30 hover:border-primary"
-                      onClick={() => handleAutoFix(article)}
-                      disabled={fixingId === article.id}
-                    >
-                      {fixingId === article.id ? (
-                        <Loader2 className="h-3 w-3 animate-spin" />
-                      ) : (
-                        <Wand2 className="h-3 w-3" />
-                      )}
-                      Auto-Fix
-                    </Button>
                     <a href={`/blog/${article.slug}`} target="_blank" rel="noopener">
                       <Badge variant="secondary" className="cursor-pointer hover:bg-secondary/80">
                         <Search className="h-3 w-3 mr-1" /> View
