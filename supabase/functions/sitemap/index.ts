@@ -38,7 +38,7 @@ type ArticleRow = {
   created_at: string | null;
 };
 
-async function fetchAllPublishedArticles(supabase: ReturnType<typeof createClient>) {
+async function fetchAllPublishedArticles(supabase: any) {
   const pageSize = 1000;
   let from = 0;
   let all: ArticleRow[] = [];
