@@ -174,6 +174,10 @@ const SEODashboard = () => {
                 <HeartPulse className="h-4 w-4" />
                 Article Health
               </TabsTrigger>
+              <TabsTrigger value="tracker" className="gap-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                <Target className="h-4 w-4" />
+                Performance Tracker
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="keywords">
