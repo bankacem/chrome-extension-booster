@@ -25,10 +25,10 @@ status: published
 published_at: '2026-01-28T09:00:01.023+00:00'
 scheduled_at: '2026-01-28T09:00:00+00:00'
 author: Admin
-views: 1
+views: 2
 read_time: 1
 created_at: '2026-01-19T13:57:25.813888+00:00'
-updated_at: '2026-03-02T19:49:00.410245+00:00'
+updated_at: '2026-03-02T22:58:13.004854+00:00'
 description: >-
   Improve your online privacy with our expert setup guide. Discover the best
   ways to stop trackers from following you across different websites easily.
