@@ -116,7 +116,7 @@ Deno.serve(async (req) => {
       priority: "0.6",
     }));
 
-    const allPages = [...staticPages, ...articlePages, ...extensionPages];
+    const allPages: Array<{ url: string; changefreq: string; priority: string; lastmod?: string }> = [...staticPages, ...articlePages, ...extensionPages];
 
     // Generate XML
     const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
