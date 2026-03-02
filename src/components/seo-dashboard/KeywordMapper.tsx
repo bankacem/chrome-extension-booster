@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { Search, Link as LinkIcon, CheckCircle, XCircle, ClipboardPaste, Download } from "lucide-react";
+import { Search, CheckCircle, XCircle, ClipboardPaste, Download, FilePlus, Copy, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
@@ -142,11 +142,29 @@ export default function KeywordMapper({ articles }: Props) {
     URL.revokeObjectURL(url);
   };
 
-  const sampleData = `adblocker for android chrome\t250\t75
+  const targetKeywords = `adblocker for android chrome\t250\t75
+idm extension\t450\t52
 ghostery chrome extension\t500\t67
-idm extension for chrome\t450\t52
-chrome extensions android\t1800\t83
+facebook pixel helper\t350\t88
 privacy badger chrome\t700\t94`;
+
+  const handleCopyDraft = (keyword: string) => {
+    const draft = `Draft Request: New Article
+Target Keyword: ${keyword}
+Primary Goal: Informative guide & Direct Download Utility
+Requirements:
+- Minimum 1200 words
+- SEO Title: Optimized for "${keyword}"
+- Meta Description: High-CTR conversion focused
+- Must include 'Direct Download Section' for CRX files
+- Clear H2/H3 structure with technical depth`;
+
+    navigator.clipboard.writeText(draft);
+    toast({
+      title: "Draft Copied",
+      description: `Draft request for "${keyword}" copied to clipboard.`,
+    });
+  };
 
   return (
     <div className="space-y-6">
@@ -155,21 +173,23 @@ privacy badger chrome\t700\t94`;
         <div className="flex items-center justify-between">
           <div>
             <h3 className="text-lg font-semibold font-[family-name:var(--font-heading)] text-foreground">
-              Paste Keywords
+              Keyword Mapping & Gap Identification
             </h3>
             <p className="text-sm text-muted-foreground">
-              One keyword per line. Supports tab-separated format: keyword → volume → position
+              Map your target keyword list against indexed articles. Gaps will trigger Draft Requests.
             </p>
           </div>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setRawInput(sampleData)}
-            className="gap-2"
-          >
-            <ClipboardPaste className="h-4 w-4" />
-            Load Sample
-          </Button>
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setRawInput(targetKeywords)}
+              className="gap-2 border-primary/50 text-primary hover:bg-primary/5"
+            >
+              <Zap className="h-4 w-4" />
+              Load Target Keywords
+            </Button>
+          </div>
         </div>
         <Textarea
           value={rawInput}
@@ -227,21 +247,21 @@ privacy badger chrome\t700\t94`;
                   <TableHead className="w-20">Vol.</TableHead>
                   <TableHead className="w-20">Pos.</TableHead>
                   <TableHead className="w-24">Match</TableHead>
-                  <TableHead>Matched Article</TableHead>
+                  <TableHead>Matched Article / Gap Action</TableHead>
                   <TableHead className="w-20">Score</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {filtered.map((r, i) => (
-                  <TableRow key={i} className={!r.matchedArticle ? "bg-destructive/5" : ""}>
-                    <TableCell className="font-mono text-sm">{r.keyword}</TableCell>
-                    <TableCell className="text-muted-foreground">{r.volume}</TableCell>
-                    <TableCell className="text-muted-foreground">{r.position}</TableCell>
+                  <TableRow key={i} className={!r.matchedArticle ? "bg-destructive/10" : ""}>
+                    <TableCell className="font-mono text-sm font-medium">{r.keyword}</TableCell>
+                    <TableCell className="text-muted-foreground font-mono text-xs">{r.volume}</TableCell>
+                    <TableCell className="text-muted-foreground font-mono text-xs">{r.position}</TableCell>
                     <TableCell>
-                      {r.matchType === "exact" && <Badge className="bg-green-500/20 text-green-400 border-green-500/30">Exact</Badge>}
+                      {r.matchType === "exact" && <Badge className="bg-green-500/20 text-green-400 border-green-500/30">Winner</Badge>}
                       {r.matchType === "slug" && <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">Slug</Badge>}
                       {r.matchType === "partial" && <Badge className="bg-yellow-500/20 text-yellow-400 border-yellow-500/30">Partial</Badge>}
-                      {r.matchType === "none" && <Badge variant="destructive">None</Badge>}
+                      {r.matchType === "none" && <Badge variant="destructive" className="animate-pulse">GAP</Badge>}
                     </TableCell>
                     <TableCell>
                       {r.matchedArticle ? (
@@ -257,14 +277,25 @@ privacy badger chrome\t700\t94`;
                           </a>
                         </div>
                       ) : (
-                        <div className="flex items-center gap-2 text-muted-foreground">
-                          <XCircle className="h-4 w-4 text-destructive shrink-0" />
-                          <span className="text-sm">No match found</span>
+                        <div className="flex items-center justify-between gap-4">
+                          <div className="flex items-center gap-2 text-destructive">
+                            <XCircle className="h-4 w-4 shrink-0" />
+                            <span className="text-xs font-semibold uppercase tracking-wider">Gap Identified</span>
+                          </div>
+                          <Button
+                            variant="secondary"
+                            size="sm"
+                            className="h-7 gap-1.5 text-[10px] bg-primary/10 text-primary hover:bg-primary/20"
+                            onClick={() => handleCopyDraft(r.keyword)}
+                          >
+                            <FilePlus className="h-3 w-3" />
+                            Generate Draft Request
+                          </Button>
                         </div>
                       )}
                     </TableCell>
                     <TableCell>
-                      <span className={`text-sm font-medium ${r.matchScore >= 80 ? "text-green-400" : r.matchScore >= 40 ? "text-yellow-400" : "text-destructive"}`}>
+                      <span className={`text-sm font-bold ${r.matchScore >= 80 ? "text-green-400" : r.matchScore >= 40 ? "text-yellow-400" : "text-destructive"}`}>
                         {r.matchScore}%
                       </span>
                     </TableCell>
