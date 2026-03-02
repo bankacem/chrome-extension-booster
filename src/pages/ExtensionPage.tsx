@@ -63,7 +63,7 @@ const ExtensionPage = () => {
       <main className="min-h-screen bg-background">
         <Navbar />
         <div className="container mx-auto px-4 py-24 text-center">
-          <h1 className="text-4xl font-bold mb-4">Extension Not Found</h1>
+          <h2 className="text-4xl font-bold mb-4">Extension Not Found</h2>
           <p className="text-muted-foreground mb-8">The extension you're looking for doesn't exist.</p>
           <Button asChild>
             <Link to="/#extensions">View All Extensions</Link>

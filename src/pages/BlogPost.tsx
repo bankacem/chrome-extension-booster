@@ -198,7 +198,7 @@ const BlogPost = () => {
         />
         <Navbar />
         <div className="container mx-auto px-4 pt-32 text-center">
-          <h1 className="mb-4 text-2xl font-bold">Article Not Found</h1>
+          <h2 className="mb-4 text-2xl font-bold">Article Not Found</h2>
           <p className="mb-6 text-muted-foreground">
             The article you're looking for doesn't exist or has been removed.
           </p>
