@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   Search, RefreshCw, BarChart3, Download, Link as LinkIcon,
-  LogOut, ArrowLeft, FileText, Layers, HeartPulse,
+  LogOut, ArrowLeft, FileText, Layers, HeartPulse, Target,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -16,6 +16,7 @@ import DownloadManager from "@/components/seo-dashboard/DownloadManager";
 import SlugAligner from "@/components/seo-dashboard/SlugAligner";
 import CompetitorInsights from "@/components/seo-dashboard/CompetitorInsights";
 import ArticleHealth from "@/components/seo-dashboard/ArticleHealth";
+import KeywordPerformanceTracker from "@/components/seo-dashboard/KeywordPerformanceTracker";
 
 interface Article {
   id: string;
@@ -173,6 +174,10 @@ const SEODashboard = () => {
                 <HeartPulse className="h-4 w-4" />
                 Article Health
               </TabsTrigger>
+              <TabsTrigger value="tracker" className="gap-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                <Target className="h-4 w-4" />
+                Performance Tracker
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="keywords">
@@ -197,6 +202,10 @@ const SEODashboard = () => {
 
             <TabsContent value="health">
               <ArticleHealth articles={publishedArticles} onRefresh={fetchArticles} />
+            </TabsContent>
+
+            <TabsContent value="tracker">
+              <KeywordPerformanceTracker articles={publishedArticles} />
             </TabsContent>
           </Tabs>
         </motion.div>
