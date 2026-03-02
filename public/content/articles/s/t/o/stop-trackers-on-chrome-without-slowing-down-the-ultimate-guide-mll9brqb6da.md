@@ -18,10 +18,10 @@ status: published
 published_at: '2026-02-19T09:00:00.259+00:00'
 scheduled_at: '2026-02-19T09:00:00+00:00'
 author: AI Generator
-views: 0
+views: 2
 read_time: 5
 created_at: '2026-02-13T19:04:55.417649+00:00'
-updated_at: '2026-02-19T09:00:00.313568+00:00'
+updated_at: '2026-03-02T12:12:33.305198+00:00'
 description: >-
   Discover expert tips for customizing your browsing experience. Learn how to
   integrate powerful addons that save you time and improve your focus.

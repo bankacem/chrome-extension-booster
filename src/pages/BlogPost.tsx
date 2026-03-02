@@ -92,7 +92,7 @@ const BlogPost = () => {
 
   // Priority detection logic
   const isPriorityArticle = (art: Article) => {
-    const priorityKeywords = ["adblocker", "idm", "ghostery", "facebook pixel helper"];
+    const priorityKeywords = ["adblocker", "idm", "ghostery", "facebook pixel helper", "popup blocker", "internet download manager"];
     const textToSearch = `${art.title} ${art.content} ${art.slug} ${art.keywords?.join(" ")}`.toLowerCase();
     return priorityKeywords.some(kw => textToSearch.includes(kw.toLowerCase()));
   };
