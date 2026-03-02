@@ -25,10 +25,10 @@ status: published
 published_at: '2026-02-01T09:00:00.272+00:00'
 scheduled_at: '2026-02-01T09:00:00+00:00'
 author: Admin
-views: 1
+views: 2
 read_time: 1
 created_at: '2026-01-19T13:57:21.719987+00:00'
-updated_at: '2026-02-02T13:59:27.790081+00:00'
+updated_at: '2026-03-02T19:48:51.030546+00:00'
 description: >-
   Get the most out of your web browser with our professional tool overview. We
   cover installation, configuration, and pro-tips for power users today.

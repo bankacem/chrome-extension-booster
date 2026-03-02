@@ -190,6 +190,8 @@ async function sync() {
 
   const articleIndex: ArticleIndexItem[] = [];
   const currentFiles = new Set<string>();
+  const processedIds = new Set<string>();
+  const processedSlugs = new Set<string>();
 
   for (const article of articles) {
     let { content } = article;
@@ -319,8 +321,70 @@ async function sync() {
 
     fs.writeFileSync(fullPath, markdownContent);
     currentFiles.add(fullPath);
+    processedIds.add(metadata.id as string);
+    processedSlugs.add(normalizedSlug);
     syncedCount++;
   }
+
+  // Process Local-Only Pillar Articles
+  console.log('Processing local-only pillar articles...');
+  function walkDirForLocal(dir: string) {
+    if (!fs.existsSync(dir)) return;
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+      const fullPath = path.join(dir, file);
+      if (fs.statSync(fullPath).isDirectory()) {
+        walkDirForLocal(fullPath);
+      } else if (fullPath.endsWith('.md') && !currentFiles.has(fullPath)) {
+        try {
+          const localFileContent = fs.readFileSync(fullPath, 'utf-8');
+          const match = localFileContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+          if (match) {
+            const metadata = yaml.load(match[1]) as Record<string, unknown>;
+            if (metadata.status === 'published') {
+              const normalizedSlug = normalizeSlug(String(metadata.slug || ""));
+              const id = (metadata.id || normalizedSlug) as string;
+
+              // Check if already processed
+              if (processedIds.has(id) || processedSlugs.has(normalizedSlug)) {
+                console.log(`[Pillar] Skipping already processed article: ${normalizedSlug}`);
+                currentFiles.add(fullPath); // Still mark as current so it's not deleted
+                continue;
+              }
+
+              // Add to index
+              articleIndex.push({
+                id: id,
+                title: metadata.title as string,
+                slug: normalizedSlug,
+                description: (metadata.description || metadata.excerpt || "") as string,
+                excerpt: metadata.excerpt as string,
+                published_at: metadata.published_at as string,
+                category: (metadata.category || "Uncategorized") as string,
+                author: (metadata.author || "Admin") as string,
+                image_url: (metadata.image_url || metadata.featured_image) as string,
+                featured_image: metadata.featured_image as string,
+                reading_time: (metadata.reading_time || metadata.read_time || 5) as number,
+                read_time: (metadata.read_time || 5) as number,
+                views: (metadata.views || 0) as number,
+                tags: (metadata.tags || []) as string[],
+                keywords: (metadata.keywords || []) as string[],
+                updated_at: (metadata.updated_at || new Date().toISOString()) as string
+              });
+
+              currentFiles.add(fullPath);
+              processedIds.add(id);
+              processedSlugs.add(normalizedSlug);
+              console.log(`[Pillar] Indexed local-only article: ${normalizedSlug}`);
+            }
+          }
+        } catch (e) {
+          console.warn(`[Pillar] Failed to process local article at ${fullPath}:`, e);
+        }
+      }
+    }
+  }
+  walkDirForLocal(articlesDir);
 
   // Cleanup: Remove files that are no longer in the database list
   console.log('Cleaning up orphaned article files...');

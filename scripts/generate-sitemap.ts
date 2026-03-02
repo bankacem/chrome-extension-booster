@@ -53,7 +53,9 @@ async function generateSitemap() {
         title.includes("adblock") ||
         title.includes("android") ||
         title.includes("idm extension") ||
-        title.includes("ghostery")
+        title.includes("ghostery") ||
+        title.includes("popup blocker") ||
+        title.includes("internet download manager")
       ) {
         priority = "0.9";
       }
