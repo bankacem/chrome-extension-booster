@@ -506,11 +506,15 @@ const BlogPost = () => {
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
 
-          {/* Direct Download Injection for Priority Articles */}
-          {isPriorityArticle(article) && (
+          {/* Smart Extension Bridge: shows internal extension CTA when matched */}
+          {matchedExtension && (
             <DirectDownloadSection
-              extensionName={article.title.split(" - ")[0].split(" | ")[0]}
-              lastUpdated={new Date(article.published_at).toLocaleDateString("en-US", { month: 'long', year: 'numeric' })}
+              extensionName={matchedExtension.name}
+              internalSlug={matchedExtension.slug}
+              storeUrl={matchedExtension.storeUrl}
+              users={matchedExtension.users}
+              rating={matchedExtension.rating}
+              lastUpdated={article.published_at ? new Date(article.published_at).toLocaleDateString("en-US", { month: 'long', year: 'numeric' }) : undefined}
             />
           )}
 
