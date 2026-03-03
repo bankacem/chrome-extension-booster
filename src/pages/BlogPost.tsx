@@ -29,6 +29,7 @@ interface Article {
   read_time: number;
   author: string;
   views: number;
+  related_extension_slug?: string;
 }
 
 const parseMarkdown = (text: string) => {
