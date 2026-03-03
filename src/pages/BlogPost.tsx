@@ -11,6 +11,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import yaml from "js-yaml";
 import { getPartitionedPath } from "@/utils/articlePath";
+import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
+import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
 
 interface Article {
   id: string;
