@@ -74,15 +74,31 @@ const SEODashboard = () => {
   const fetchArticles = async () => {
     setLoading(true);
     try {
-      const { data, error } = await supabase
-        .from("articles")
-        .select("*")
-        .order("published_at", { ascending: false });
-      if (error) throw error;
-      setArticles(data || []);
+      const res = await fetch("/content/articles-index.json");
+      if (!res.ok) throw new Error("Failed to fetch articles index");
+      const indexData = await res.json();
+      const mapped: Article[] = indexData.map((item: any) => ({
+        id: item.id || item.slug,
+        title: item.title || "",
+        slug: item.slug || "",
+        content: "",
+        excerpt: item.excerpt || item.description || null,
+        featured_image: item.featured_image || item.image_url || null,
+        category: item.category || null,
+        tags: item.tags || null,
+        keywords: item.keywords || null,
+        meta_description: item.description || null,
+        status: "published",
+        published_at: item.published_at || null,
+        author: item.author || null,
+        views: item.views || null,
+        read_time: item.read_time || item.reading_time || null,
+        updated_at: item.updated_at || "",
+      }));
+      setArticles(mapped);
     } catch (error) {
-      console.error("Error fetching articles:", error);
-      toast({ title: "Error", description: "Failed to fetch articles", variant: "destructive" });
+      console.error("Error fetching articles index:", error);
+      toast({ title: "Error", description: "Failed to fetch articles from local index", variant: "destructive" });
     } finally {
       setLoading(false);
     }

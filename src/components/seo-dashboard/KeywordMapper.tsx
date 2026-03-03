@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { Search, CheckCircle, XCircle, ClipboardPaste, Download, FilePlus, Copy, Zap } from "lucide-react";
+import { Search, CheckCircle, XCircle, Download, FilePlus, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
@@ -32,33 +32,67 @@ interface Props {
   articles: Article[];
 }
 
+// Synonym groups — if any member matches, all members count as matched
+const SYNONYM_GROUPS: string[][] = [
+  ["facebook pixel helper", "meta pixel helper", "fb pixel helper"],
+  ["idm extension", "internet download manager extension", "idm chrome extension", "idm integration module"],
+  ["adblocker for android chrome", "adblock chrome android", "ad blocker android chrome", "extension google chrome adblock android"],
+  ["ghostery chrome extension", "ghostery extension chrome", "extension chrome ghostery"],
+  ["privacy badger chrome", "privacy badger extension"],
+  ["vpn extension chrome", "vpn extension to chrome"],
+  ["grammarly extension chrome", "grammarly extension to chrome", "extension grammaire chrome"],
+  ["google translate extension chrome", "google translate extension to chrome", "google trad plugin"],
+  ["chatgpt extension chrome", "chatgpt extension to chrome"],
+  ["noscript chrome", "noscript chrome extension"],
+  ["dark mode chrome", "auto dark mode chrome", "dark mode extension chrome"],
+];
+
 function normalizeText(text: string): string {
   return text.toLowerCase().replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim();
 }
 
+function getSynonyms(keyword: string): string[] {
+  const norm = normalizeText(keyword);
+  for (const group of SYNONYM_GROUPS) {
+    if (group.some(s => normalizeText(s) === norm)) {
+      return group.map(normalizeText);
+    }
+  }
+  return [norm];
+}
+
 function scoreMatch(keyword: string, article: Article): { score: number; type: "exact" | "partial" | "slug" | "none" } {
   const normKw = normalizeText(keyword);
+  const synonyms = getSynonyms(keyword);
   const normTitle = normalizeText(article.title);
   const normSlug = normalizeText(article.slug.replace(/-/g, " "));
   const normKeywords = (article.keywords || []).map(k => normalizeText(k));
 
-  // Exact match in keywords array
-  if (normKeywords.includes(normKw)) return { score: 100, type: "exact" };
-  // Exact match in slug
-  if (normSlug === normKw) return { score: 95, type: "slug" };
-  // Title contains keyword
-  if (normTitle.includes(normKw)) return { score: 90, type: "exact" };
-  // Slug contains keyword
-  if (normSlug.includes(normKw)) return { score: 80, type: "slug" };
-  // Keyword contains slug words
+  // Check all synonyms against article data
+  for (const syn of synonyms) {
+    // Exact match in keywords array
+    if (normKeywords.includes(syn)) return { score: 100, type: "exact" };
+    // Exact slug match
+    if (normSlug === syn) return { score: 100, type: "exact" };
+    // Title contains keyword
+    if (normTitle.includes(syn)) return { score: 95, type: "exact" };
+    // Slug contains keyword
+    if (normSlug.includes(syn)) return { score: 90, type: "slug" };
+  }
+
+  // Word overlap scoring
   const kwWords = normKw.split(" ");
   const slugWords = normSlug.split(" ");
   const titleWords = normTitle.split(" ");
-  const slugOverlap = slugWords.filter(w => kwWords.includes(w)).length / Math.max(slugWords.length, 1);
-  const titleOverlap = titleWords.filter(w => kwWords.includes(w)).length / Math.max(titleWords.length, 1);
-  const bestOverlap = Math.max(slugOverlap, titleOverlap);
-  if (bestOverlap >= 0.6) return { score: Math.round(bestOverlap * 70), type: "partial" };
-  if (bestOverlap >= 0.3) return { score: Math.round(bestOverlap * 50), type: "partial" };
+  const keywordWords = normKeywords.flatMap(k => k.split(" "));
+
+  const allArticleWords = new Set([...slugWords, ...titleWords, ...keywordWords]);
+  const matchingWords = kwWords.filter(w => w.length > 2 && allArticleWords.has(w));
+  const overlap = matchingWords.length / Math.max(kwWords.length, 1);
+
+  if (overlap >= 0.8) return { score: Math.round(overlap * 85), type: "partial" };
+  if (overlap >= 0.5) return { score: Math.round(overlap * 70), type: "partial" };
+  if (overlap >= 0.3) return { score: Math.round(overlap * 50), type: "partial" };
   return { score: 0, type: "none" };
 }
 
@@ -71,7 +105,6 @@ export default function KeywordMapper({ articles }: Props) {
   const handleMap = () => {
     const lines = rawInput.split("\n").filter(l => l.trim());
     const results: MappedKeyword[] = lines.map(line => {
-      // Support tab-separated: keyword\tvolume\tposition
       const parts = line.split("\t").map(p => p.trim());
       const keyword = parts[0] || line.trim();
       const volume = parts[1] || "-";
@@ -104,7 +137,7 @@ export default function KeywordMapper({ articles }: Props) {
     const matched = results.filter(r => r.matchedArticle).length;
     toast({
       title: "Mapping Complete",
-      description: `${matched}/${results.length} keywords matched to articles`,
+      description: `${matched}/${results.length} keywords matched to articles (from ${articles.length} local articles)`,
     });
   };
 
@@ -121,7 +154,7 @@ export default function KeywordMapper({ articles }: Props) {
     total: mappedResults.length,
     matched: mappedResults.filter(r => r.matchedArticle).length,
     unmatched: mappedResults.filter(r => !r.matchedArticle).length,
-    exact: mappedResults.filter(r => r.matchType === "exact").length,
+    winners: mappedResults.filter(r => r.matchScore >= 90).length,
     partial: mappedResults.filter(r => r.matchType === "partial").length,
   }), [mappedResults]);
 
@@ -146,7 +179,21 @@ export default function KeywordMapper({ articles }: Props) {
 idm extension\t450\t52
 ghostery chrome extension\t500\t67
 facebook pixel helper\t350\t88
-privacy badger chrome\t700\t94`;
+privacy badger chrome\t700\t94
+internet download manager extension\t300\t60
+meta pixel helper\t200\t45
+vpn extension chrome\t600\t30
+grammarly extension chrome\t400\t40
+google translate extension chrome\t350\t55
+chatgpt extension chrome\t800\t35
+noscript chrome\t150\t70
+dark mode chrome\t900\t25
+extension chrome android\t250\t80
+chrome web store extensions\t500\t50
+add extension to chrome\t400\t60
+best chrome extensions privacy\t300\t45
+idm chrome extension\t350\t55
+adblock chrome android\t200\t65`;
 
   const handleCopyDraft = (keyword: string) => {
     const draft = `Draft Request: New Article
@@ -168,6 +215,12 @@ Requirements:
 
   return (
     <div className="space-y-6">
+      {/* Source indicator */}
+      <div className="flex items-center gap-2 text-xs text-muted-foreground bg-secondary/30 rounded-lg px-3 py-2 border border-border">
+        <Zap className="h-3.5 w-3.5 text-primary" />
+        Data Source: <strong className="text-foreground">Local Markdown Index</strong> — {articles.length} articles loaded from articles-index.json
+      </div>
+
       {/* Input Section */}
       <div className="rounded-xl border border-border bg-card p-6 space-y-4">
         <div className="flex items-center justify-between">
@@ -176,20 +229,18 @@ Requirements:
               Keyword Mapping & Gap Identification
             </h3>
             <p className="text-sm text-muted-foreground">
-              Map your target keyword list against indexed articles. Gaps will trigger Draft Requests.
+              Map target keywords against {articles.length} local Markdown articles. Synonyms are auto-linked.
             </p>
           </div>
-          <div className="flex gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => setRawInput(targetKeywords)}
-              className="gap-2 border-primary/50 text-primary hover:bg-primary/5"
-            >
-              <Zap className="h-4 w-4" />
-              Load Target Keywords
-            </Button>
-          </div>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setRawInput(targetKeywords)}
+            className="gap-2 border-primary/50 text-primary hover:bg-primary/5"
+          >
+            <Zap className="h-4 w-4" />
+            Load 19 Target Keywords
+          </Button>
         </div>
         <Textarea
           value={rawInput}
@@ -220,7 +271,7 @@ Requirements:
               { label: "Total", value: stats.total, color: "text-foreground" },
               { label: "Matched", value: stats.matched, color: "text-primary" },
               { label: "Unmatched", value: stats.unmatched, color: "text-destructive" },
-              { label: "Exact", value: stats.exact, color: "text-green-400" },
+              { label: "Winners (90%+)", value: stats.winners, color: "text-green-400" },
               { label: "Partial", value: stats.partial, color: "text-yellow-400" },
             ].map(s => (
               <div key={s.label} className="rounded-lg border border-border bg-card p-4 text-center">
@@ -230,7 +281,6 @@ Requirements:
             ))}
           </div>
 
-          {/* Filter */}
           <Input
             value={filter}
             onChange={e => setFilter(e.target.value)}
@@ -258,9 +308,9 @@ Requirements:
                     <TableCell className="text-muted-foreground font-mono text-xs">{r.volume}</TableCell>
                     <TableCell className="text-muted-foreground font-mono text-xs">{r.position}</TableCell>
                     <TableCell>
-                      {r.matchType === "exact" && <Badge className="bg-green-500/20 text-green-400 border-green-500/30">Winner</Badge>}
-                      {r.matchType === "slug" && <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">Slug</Badge>}
-                      {r.matchType === "partial" && <Badge className="bg-yellow-500/20 text-yellow-400 border-yellow-500/30">Partial</Badge>}
+                      {r.matchScore >= 90 && <Badge className="bg-green-500/20 text-green-400 border-green-500/30">Winner</Badge>}
+                      {r.matchScore >= 50 && r.matchScore < 90 && <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">Strong</Badge>}
+                      {r.matchScore >= 25 && r.matchScore < 50 && <Badge className="bg-yellow-500/20 text-yellow-400 border-yellow-500/30">Partial</Badge>}
                       {r.matchType === "none" && <Badge variant="destructive" className="animate-pulse">GAP</Badge>}
                     </TableCell>
                     <TableCell>
@@ -295,7 +345,7 @@ Requirements:
                       )}
                     </TableCell>
                     <TableCell>
-                      <span className={`text-sm font-bold ${r.matchScore >= 80 ? "text-green-400" : r.matchScore >= 40 ? "text-yellow-400" : "text-destructive"}`}>
+                      <span className={`text-sm font-bold ${r.matchScore >= 90 ? "text-green-400" : r.matchScore >= 50 ? "text-blue-400" : r.matchScore >= 25 ? "text-yellow-400" : "text-destructive"}`}>
                         {r.matchScore}%
                       </span>
                     </TableCell>
