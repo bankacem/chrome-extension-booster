@@ -206,7 +206,20 @@ const BlogPost = () => {
       const fullArticle = { ...(matched || {}), ...frontmatter, content: processedContent } as Article;
       setArticle(fullArticle);
 
-      // 4. Increment views (Protected: don't let Supabase failures break the page)
+      // Smart extension detection: frontmatter > slug lookup > content detection
+      const extSlug = (frontmatter as any).related_extension_slug;
+      let detectedExt: Extension | null = null;
+      if (extSlug) {
+        detectedExt = getExtensionBySlug(extSlug) || null;
+      }
+      if (!detectedExt) {
+        detectedExt = detectExtensionFromContent(
+          fullArticle.title || "",
+          fullArticle.content || "",
+          fullArticle.keywords || []
+        );
+      }
+      setMatchedExtension(detectedExt);
       if (frontmatter.id) {
         try {
           const { data } = await supabase
