@@ -88,12 +88,13 @@ const slugToTitle = (slug: string): string => {
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
-  const [article, setArticle] = useState<Article | null>(null);
+  const [article, setArticle] = useState<Partial<Article> | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   // Priority detection logic
-  const isPriorityArticle = (art: Article) => {
+  const isPriorityArticle = (art: Partial<Article>) => {
     const priorityKeywords = ["adblocker", "idm", "ghostery", "facebook pixel helper", "popup blocker", "internet download manager"];
-    const textToSearch = `${art.title} ${art.content} ${art.slug} ${art.keywords?.join(" ")}`.toLowerCase();
+    const textToSearch = `${art.title} ${art.content || ""} ${art.slug} ${art.keywords?.join(" ") || ""}`.toLowerCase();
     return priorityKeywords.some(kw => textToSearch.includes(kw.toLowerCase()));
   };
   const [relatedArticles, setRelatedArticles] = useState<Article[]>([]);
@@ -101,123 +102,132 @@ const BlogPost = () => {
   const [notFound, setNotFound] = useState(false);
   const { toast } = useToast();
 
-  // Generate instant SEO from slug before data loads
+  // Generate instant SEO fallback from slug
   const instantTitle = slug ? slugToTitle(slug) : "Loading Article";
   const instantDescription = `Read our article about ${instantTitle.toLowerCase()}. Discover tips, tutorials, and insights about browser extensions and productivity.`;
 
   const fetchArticle = useCallback(async () => {
-    if (!slug) return;
+    if (!slug) {
+      setLoading(false);
+      setNotFound(true);
+      return;
+    }
+
     setLoading(true);
     setNotFound(false);
+    setError(null);
     
     try {
-      // Fetch article from partitioned path
-      let path = getPartitionedPath(slug);
-      let response = await fetch(path);
+      // 1. Fetch index first for immediate SEO and Search-and-Rescue
+      const indexRes = await fetch("/content/articles-index.json");
+      let matched: Article | null = null;
+      let allArticles: Article[] = [];
 
-      // Search-and-Rescue: Fallback mechanism for legacy URLs or mismatched slugs
-      if (!response.ok && response.status === 404) {
-        console.log(`[Search-and-Rescue] Article not found at ${path}. Attempting index-based resolution...`);
-        const indexRes = await fetch("/content/articles-index.json");
-        if (indexRes.ok) {
-          const index = await indexRes.json() as Article[];
-          const normalizedSlug = slug.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+      if (indexRes.ok) {
+        allArticles = await indexRes.json() as Article[];
+        const normalizedSlug = slug.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
 
-          // 1. Exact match by slug or ID
-          let matched = index.find(a =>
-            a.slug === normalizedSlug ||
-            a.id === slug
-          );
+        // Exact match by slug or ID
+        matched = allArticles.find(a =>
+          a.slug === normalizedSlug ||
+          a.id === slug
+        ) || null;
 
-          // 2. Fuzzy match: extract significant words from the incoming slug
-          //    and find the article whose slug shares the most words
-          if (!matched) {
-            const incomingWords = normalizedSlug.split('-').filter(w => w.length > 2);
-            let bestScore = 0;
-            let bestMatch: typeof index[0] | null = null;
+        // Fuzzy match: if no exact match, find the closest slug
+        if (!matched) {
+          const incomingWords = normalizedSlug.split('-').filter(w => w.length > 2);
+          let bestScore = 0;
+          let bestMatch: Article | null = null;
 
-            for (const article of index) {
-              const articleWords = new Set(article.slug.split('-').filter(w => w.length > 2));
-              let score = 0;
-              for (const word of incomingWords) {
-                if (articleWords.has(word)) score++;
-              }
-              // Require at least 3 matching words and better than previous best
-              if (score >= 3 && score > bestScore) {
-                bestScore = score;
-                bestMatch = article;
-              }
+          for (const article of allArticles) {
+            const articleWords = new Set(article.slug.split('-').filter(w => w.length > 2));
+            let score = 0;
+            for (const word of incomingWords) {
+              if (articleWords.has(word)) score++;
             }
-
-            if (bestMatch) {
-              matched = bestMatch as Article;
-              console.log(`[Search-and-Rescue] Fuzzy matched "${slug}" → "${matched.slug}" (score: ${bestScore})`);
+            if (score >= 3 && score > bestScore) {
+              bestScore = score;
+              bestMatch = article;
             }
           }
 
-          if (matched) {
-            // Redirect to the correct slug URL to consolidate SEO signals
-            if (matched.slug !== slug) {
-              console.log(`[Search-and-Rescue] Redirecting to /blog/${matched.slug}`);
-              window.history.replaceState(null, '', `/blog/${matched.slug}`);
-            }
-            path = getPartitionedPath(matched.slug);
-            response = await fetch(path);
+          if (bestMatch) {
+            matched = bestMatch;
+            console.log(`[Search-and-Rescue] Fuzzy matched "${slug}" → "${matched.slug}" (score: ${bestScore})`);
           }
         }
       }
 
-      if (!response.ok) {
-        if (response.status === 404) {
-          setNotFound(true);
+      // 2. If matched, update SEO and basic info immediately
+      if (matched) {
+        setArticle(matched);
+        if (matched.slug !== slug) {
+          console.log(`[Search-and-Rescue] Correcting URL: /blog/${matched.slug}`);
+          window.history.replaceState(null, '', `/blog/${matched.slug}`);
+        }
+
+        // Fetch related articles while loading content
+        const related = allArticles
+          .filter(a => a.category === matched?.category && a.id !== matched?.id)
+          .slice(0, 3);
+        setRelatedArticles(related);
+      }
+
+      // 3. Fetch Markdown content from partitioned path
+      const fetchSlug = matched ? matched.slug : slug;
+      const path = getPartitionedPath(fetchSlug);
+      const response = await fetch(path);
+      const isHtml = response.headers.get("Content-Type")?.includes("text/html");
+
+      if (!response.ok || isHtml) {
+        if (response.status === 404 || isHtml) {
+          if (matched) {
+            setError(`Content file missing or invalid for article: ${matched.slug}`);
+            console.error(`[Critical] Article exists in index but file is missing or server returned HTML at ${path}`);
+          } else {
+            setNotFound(true);
+          }
           return;
         }
-        throw new Error(`Failed to fetch article: ${response.statusText}`);
+        throw new Error(`Failed to fetch article content: ${response.statusText}`);
       }
       
       const text = await response.text();
       const { frontmatter, content } = parseMarkdown(text);
 
       if (!frontmatter || !frontmatter.slug) {
-        setNotFound(true);
+        if (matched) {
+          setError(`Content file has invalid format for article: ${matched.slug}`);
+        } else {
+          setNotFound(true);
+        }
         return;
       }
 
       const processedContent = processArticleContent(content);
-      const fullArticle = { ...frontmatter, content: processedContent } as Article;
+      const fullArticle = { ...(matched || {}), ...frontmatter, content: processedContent } as Article;
       setArticle(fullArticle);
 
-      // Increment views in Supabase using the latest count from the database
-      // to avoid overwriting with stale data from the Markdown frontmatter.
-      supabase
-        .from("articles")
-        .select("views")
-        .eq("id", frontmatter.id)
-        .single()
-        .then(({ data, error: fetchError }) => {
-          if (fetchError) {
-            console.error("Error fetching current views:", fetchError);
-            return;
-          }
-          const currentViews = data?.views || 0;
-          supabase
-            .from("articles")
-            .update({ views: currentViews + 1 })
-            .eq("id", frontmatter.id)
-            .then(({ error: updateError }) => {
-              if (updateError) console.error("Error updating views:", updateError);
-            });
-        });
-
-      // Fetch related articles from index
-      const indexResponse = await fetch("/content/articles-index.json");
-      if (indexResponse.ok) {
-        const index = await indexResponse.json() as Article[];
-        const related = index
-          .filter(a => a.category === frontmatter.category && a.id !== frontmatter.id)
-          .slice(0, 3);
-        setRelatedArticles(related);
+      // 4. Increment views (Protected: don't let Supabase failures break the page)
+      if (frontmatter.id) {
+        supabase
+          .from("articles")
+          .select("views")
+          .eq("id", frontmatter.id)
+          .single()
+          .then(({ data }) => {
+            if (data) {
+              const currentViews = data.views || 0;
+              supabase
+                .from("articles")
+                .update({ views: currentViews + 1 })
+                .eq("id", frontmatter.id)
+                .then(() => {});
+            }
+          })
+          .catch(err => console.error("Non-critical view update error:", err));
       }
+
     } catch (error) {
       console.error("Error fetching article:", error);
       setNotFound(true);
@@ -246,6 +256,33 @@ const BlogPost = () => {
       });
     }
   };
+
+  // Show error if content is missing but article exists in index
+  if (error && !loading) {
+    return (
+      <div className="min-h-screen bg-background">
+        <SEO
+          title={article?.title || "Content Error"}
+          description={article?.meta_description || "Article content is currently unavailable."}
+          canonicalPath={`/blog/${slug}`}
+        />
+        <Navbar />
+        <div className="container mx-auto px-4 pt-32 text-center">
+          <h2 className="mb-4 text-2xl font-bold text-destructive">Content Unavailable</h2>
+          <p className="mb-6 text-muted-foreground">
+            {error}. Please try again later or contact support.
+          </p>
+          <Link to="/blog">
+            <Button>
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Blog
+            </Button>
+          </Link>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
 
   // Only show 404 after confirming article doesn't exist
   if (notFound && !loading) {
@@ -278,12 +315,14 @@ const BlogPost = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-background">
-        {/* SEO renders instantly based on slug */}
+        {/* SEO renders instantly based on article data if available from index, else fallback to slug */}
         <SEO
-          title={instantTitle}
-          description={instantDescription}
+          title={article?.title || instantTitle}
+          description={article?.meta_description || article?.excerpt || instantDescription}
           canonicalPath={`/blog/${slug}`}
           ogType="article"
+          articlePublishedTime={article?.published_at}
+          articleAuthor={article?.author}
         />
         <Navbar />
         <main className="pt-24 pb-16">
@@ -297,12 +336,30 @@ const BlogPost = () => {
             
             {/* Skeleton loading with title visible for SEO */}
             <header className="mb-8">
-              <div className="mb-4 flex items-center gap-3">
-                <div className="h-6 w-20 animate-pulse rounded-full bg-muted" />
-                <div className="h-4 w-32 animate-pulse rounded bg-muted" />
+              <div className="mb-4 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                {article?.category ? (
+                   <span className="rounded-full bg-primary/10 px-3 py-1 text-primary">
+                    {article.category}
+                  </span>
+                ) : (
+                  <div className="h-6 w-20 animate-pulse rounded-full bg-muted" />
+                )}
+
+                {article?.published_at ? (
+                  <span className="flex items-center gap-1">
+                    <Calendar className="h-4 w-4" />
+                    {new Date(article.published_at).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </span>
+                ) : (
+                  <div className="h-4 w-32 animate-pulse rounded bg-muted" />
+                )}
               </div>
               <h1 className="mb-4 font-heading text-3xl font-bold leading-tight md:text-5xl">
-                {instantTitle}
+                {article?.title || instantTitle}
               </h1>
               <p className="text-lg text-muted-foreground">Loading article content...</p>
             </header>
@@ -320,8 +377,26 @@ const BlogPost = () => {
     );
   }
 
-  if (!article) {
-    return null;
+  if (!article || !article.content) {
+    return (
+      <div className="min-h-screen bg-background">
+        <SEO title="Article Unavailable" canonicalPath={`/blog/${slug}`} />
+        <Navbar />
+        <div className="container mx-auto px-4 pt-32 text-center">
+          <h2 className="mb-4 text-2xl font-bold">Article Unavailable</h2>
+          <p className="mb-6 text-muted-foreground">
+            We encountered an issue loading this article's content.
+          </p>
+          <Link to="/blog">
+            <Button>
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Blog
+            </Button>
+          </Link>
+        </div>
+        <Footer />
+      </div>
+    );
   }
 
   return (
@@ -359,7 +434,7 @@ const BlogPost = () => {
               </span>
               <span className="flex items-center gap-1">
                 <Calendar className="h-4 w-4" />
-                {new Date(article.published_at).toLocaleDateString("en-US", {
+                {article.published_at && new Date(article.published_at).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",
                   day: "numeric",
