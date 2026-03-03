@@ -93,13 +93,8 @@ const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const [article, setArticle] = useState<Partial<Article> | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [matchedExtension, setMatchedExtension] = useState<Extension | null>(null);
 
-  // Priority detection logic
-  const isPriorityArticle = (art: Partial<Article>) => {
-    const priorityKeywords = ["adblocker", "idm", "ghostery", "facebook pixel helper", "popup blocker", "internet download manager"];
-    const textToSearch = `${art.title} ${art.content || ""} ${art.slug} ${art.keywords?.join(" ") || ""}`.toLowerCase();
-    return priorityKeywords.some(kw => textToSearch.includes(kw.toLowerCase()));
-  };
   const [relatedArticles, setRelatedArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
