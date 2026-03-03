@@ -1,5 +1,5 @@
-import { useMemo, useState } from "react";
-import { CheckCircle2, AlertCircle, Search, BarChart, Wand2, Loader2 } from "lucide-react";
+import { useMemo, useState, useEffect } from "react";
+import { CheckCircle2, AlertCircle, Search, BarChart, Wand2, Loader2, FileWarning } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/table";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { getPartitionedPath } from "@/utils/articlePath";
 
 interface Article {
   id: string;
@@ -39,7 +40,61 @@ interface Props {
 
 export default function ArticleHealth({ articles, onRefresh }: Props) {
   const [fixingId, setFixingId] = useState<string | null>(null);
+  const [fileStatuses, setFileStatuses] = useState<Record<string, boolean>>({});
   const { toast } = useToast();
+
+  useEffect(() => {
+    const checkFilePresence = async () => {
+      const uniqueSlugs = [...new Set(articles.map(a => a.slug))];
+      // Filter out slugs we already have statuses for to avoid redundant fetches
+      const slugs = uniqueSlugs.filter(slug => fileStatuses[slug] === undefined);
+
+      if (slugs.length === 0) return;
+
+      const CHUNK_SIZE = 50;
+
+      // Process in chunks to maintain performance and avoid UI blocking
+      for (let i = 0; i < slugs.length; i += CHUNK_SIZE) {
+        const chunk = slugs.slice(i, i + CHUNK_SIZE);
+        const results = await Promise.all(
+          chunk.map(async (slug) => {
+            try {
+              const path = getPartitionedPath(slug);
+              // Use HEAD request if possible for speed, fallback to GET if needed
+              const response = await fetch(path, { method: 'HEAD' });
+
+              // If HEAD is not allowed or fails, fallback to GET
+              if (response.status === 405 || response.status === 403) {
+                const getResponse = await fetch(path);
+                const isHtml = getResponse.headers.get("Content-Type")?.includes("text/html");
+                return { slug, exists: getResponse.ok && !isHtml };
+              }
+
+              const isHtml = response.headers.get("Content-Type")?.includes("text/html");
+              return { slug, exists: response.ok && !isHtml };
+            } catch (e) {
+              return { slug, exists: false };
+            }
+          })
+        );
+
+        setFileStatuses(prev => {
+          const next = { ...prev };
+          results.forEach(({ slug, exists }) => {
+            next[slug] = exists;
+          });
+          return next;
+        });
+
+        // Very short delay to yield to the main thread
+        await new Promise(resolve => setTimeout(resolve, 10));
+      }
+    };
+
+    if (articles.length > 0) {
+      checkFilePresence();
+    }
+  }, [articles]);
 
   const handleAutoFix = async (article: Article) => {
     setFixingId(article.id);
@@ -208,7 +263,17 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
         metrics.push({ name: "Keyword Density", score: 0, status: "error", message: "No target keywords defined" });
       }
 
-      // 4. Canonical Presence (Simulated check)
+      // 4. File Presence check
+      const fileExists = fileStatuses[article.slug];
+      if (fileExists === true) {
+        metrics.push({ name: "File Status", score: 100, status: "success", message: "Markdown file verified on disk" });
+      } else if (fileExists === false) {
+        metrics.push({ name: "File Status", score: 0, status: "error", message: "Markdown file missing from repository" });
+      } else {
+        metrics.push({ name: "File Status", score: 50, status: "warning", message: "Verifying file presence..." });
+      }
+
+      // 5. Canonical Presence (Simulated check)
       const hasCanonical = true; // Assuming SEO component handles this correctly
       metrics.push({ name: "Canonical", score: 100, status: "success", message: "Canonical tag active" });
 
@@ -216,7 +281,7 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
 
       return { article, totalScore, metrics };
     }).sort((a, b) => a.totalScore - b.totalScore); // Show problematic articles first
-  }, [articles]);
+  }, [articles, fileStatuses]);
 
   return (
     <div className="space-y-6">
@@ -271,7 +336,15 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
               <TableRow key={article.id}>
                 <TableCell>
                   <div className="space-y-1">
-                    <p className="font-medium text-sm line-clamp-1">{article.title}</p>
+                    <div className="flex items-center gap-2">
+                      <p className="font-medium text-sm line-clamp-1">{article.title}</p>
+                      {fileStatuses[article.slug] === false && (
+                        <Badge variant="destructive" className="h-5 gap-1 px-1.5 text-[10px] animate-pulse">
+                          <FileWarning className="h-3 w-3" />
+                          MISSING FILE
+                        </Badge>
+                      )}
+                    </div>
                     <p className="text-xs text-muted-foreground font-mono">{article.slug}</p>
                   </div>
                 </TableCell>
