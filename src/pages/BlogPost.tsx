@@ -210,22 +210,22 @@ const BlogPost = () => {
 
       // 4. Increment views (Protected: don't let Supabase failures break the page)
       if (frontmatter.id) {
-        supabase
-          .from("articles")
-          .select("views")
-          .eq("id", frontmatter.id)
-          .single()
-          .then(({ data }) => {
-            if (data) {
-              const currentViews = data.views || 0;
-              supabase
-                .from("articles")
-                .update({ views: currentViews + 1 })
-                .eq("id", frontmatter.id)
-                .then(() => {});
-            }
-          })
-          .catch(err => console.error("Non-critical view update error:", err));
+        try {
+          const { data } = await supabase
+            .from("articles")
+            .select("views")
+            .eq("id", frontmatter.id)
+            .single();
+          if (data) {
+            const currentViews = data.views || 0;
+            await supabase
+              .from("articles")
+              .update({ views: currentViews + 1 })
+              .eq("id", frontmatter.id);
+          }
+        } catch (err) {
+          console.error("Non-critical view update error:", err);
+        }
       }
 
     } catch (error) {
