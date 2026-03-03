@@ -58,18 +58,19 @@ const processArticleContent = (content: string) => {
     const originalSrc = srcMatch[1];
     const resolvedSrc = resolveImagePath(originalSrc);
 
-    // Try .webp version first if it's a standard image format
+    // Try .webp version first if it's a standard image format AND not external
     let displaySrc = resolvedSrc;
+    const isExternal = resolvedSrc.startsWith('http');
     const isStandardImage = /\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i.test(resolvedSrc);
 
-    if (isStandardImage) {
+    if (isStandardImage && !isExternal) {
       displaySrc = resolvedSrc.substring(0, resolvedSrc.lastIndexOf('.')) + '.webp';
     }
 
     let newAttributes = attributes.replace(/src=["']([^"']*)["']/i, `src="${displaySrc}"`);
 
-    // Add fallback to original extension if webp fails
-    if (displaySrc !== resolvedSrc && !newAttributes.includes('onerror=')) {
+    // Add fallback to original extension if webp fails and not external
+    if (!isExternal && displaySrc !== resolvedSrc && !newAttributes.includes('onerror=')) {
       newAttributes += ` onerror="this.onerror=null; this.src='${resolvedSrc}';"`;
     }
 
@@ -508,7 +509,11 @@ const BlogPost = () => {
               className="mb-8 overflow-hidden rounded-xl"
             >
               <img
-                src={resolveImagePath(article.featured_image).replace(/\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i, '.webp')}
+                src={
+                  resolveImagePath(article.featured_image).startsWith('http')
+                  ? resolveImagePath(article.featured_image)
+                  : resolveImagePath(article.featured_image).replace(/\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i, '.webp')
+                }
                 alt={article.title}
                 decoding="async"
                 className="w-full"

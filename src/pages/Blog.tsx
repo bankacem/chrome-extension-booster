@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { supabase } from "@/integrations/supabase/client";
+import { resolveImagePath } from "@/utils/articlePath";
 
 interface Article {
   id: string;
@@ -140,7 +141,7 @@ const Blog = () => {
                   {article.featured_image && (
                     <div className="aspect-video overflow-hidden">
                       <img
-                        src={article.featured_image}
+                        src={resolveImagePath(article.featured_image)}
                         alt={article.title}
                         className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                       />

@@ -21,21 +21,24 @@ export function getPartitionedPath(slug: string): string {
  * Handles legacy WordPress paths and ensures absolute root references.
  */
 export function resolveImagePath(src: string): string {
-  if (!src || src.startsWith('data:') || src.startsWith('blob:')) return src;
+  if (!src) return src;
 
-  let resolved = src;
+  const trimmedSrc = src.trim();
+  if (trimmedSrc.startsWith('data:') || trimmedSrc.startsWith('blob:')) return trimmedSrc;
 
-  // Handle protocol-relative URLs
-  if (resolved.startsWith('//')) {
-    resolved = 'https:' + resolved;
+  // Immediately return for external URLs or protocol-relative URLs
+  if (trimmedSrc.startsWith('http://') || trimmedSrc.startsWith('https://') || trimmedSrc.startsWith('//')) {
+    return trimmedSrc;
   }
+
+  let resolved = trimmedSrc;
 
   // Handle absolute URLs to same domain
   if (resolved.startsWith('https://extensionto.com/')) {
     resolved = resolved.replace('https://extensionto.com', '');
   }
 
-  // Already absolute or external
+  // Double check it's not external after domain stripping
   if (resolved.startsWith('http')) return resolved;
 
   // Handle legacy WordPress upload paths
