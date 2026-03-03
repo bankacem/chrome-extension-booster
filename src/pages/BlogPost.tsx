@@ -10,7 +10,7 @@ import DirectDownloadSection from "@/components/seo/DirectDownloadSection";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import yaml from "js-yaml";
-import { getPartitionedPath } from "@/utils/articlePath";
+import { getPartitionedPath, resolveImagePath } from "@/utils/articlePath";
 import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
 import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
 
@@ -50,23 +50,42 @@ const processArticleContent = (content: string) => {
 
   let processed = content;
 
-  // 1. Add loading="lazy" and decoding="async" to all <img> tags
-  // This regex handles both HTML <img> and Markdown ![alt](url)
-  // If it's Markdown, it will be converted to HTML later?
-  // Wait, the content in frontmatter is already HTML or Markdown?
-  // Based on sync-articles.ts, it fetches raw content which might be HTML or Markdown.
-  // In BlogPost.tsx, dangerouslySetInnerHTML={{ __html: article.content }} is used.
-  // This implies the content is ALREADY HTML.
-
+  // 1. Resolve image paths, add loading="lazy", decoding="async", and implement .webp fallback
   processed = processed.replace(/<img([^>]*)>/gi, (match, attributes) => {
-    let newAttributes = attributes;
-    // Ensure space before adding attributes if they don't exist
-    if (!attributes.includes('loading=')) {
+    const srcMatch = attributes.match(/src=["']([^"']*)["']/i);
+    if (!srcMatch) return match;
+
+    const originalSrc = srcMatch[1];
+    const resolvedSrc = resolveImagePath(originalSrc);
+
+    // Try .webp version first if it's a standard image format
+    let displaySrc = resolvedSrc;
+    const isStandardImage = /\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i.test(resolvedSrc);
+
+    if (isStandardImage) {
+      displaySrc = resolvedSrc.substring(0, resolvedSrc.lastIndexOf('.')) + '.webp';
+    }
+
+    let newAttributes = attributes.replace(/src=["']([^"']*)["']/i, `src="${displaySrc}"`);
+
+    // Add fallback to original extension if webp fails
+    if (displaySrc !== resolvedSrc && !newAttributes.includes('onerror=')) {
+      newAttributes += ` onerror="this.onerror=null; this.src='${resolvedSrc}';"`;
+    }
+
+    // Ensure absolute pathing for internal images
+    if (!displaySrc.startsWith('http') && !displaySrc.startsWith('/') && !displaySrc.startsWith('data:')) {
+      newAttributes = newAttributes.replace(`src="${displaySrc}"`, `src="/${displaySrc}"`);
+    }
+
+    // Add loading="lazy" and decoding="async" if missing
+    if (!newAttributes.includes('loading=')) {
       newAttributes = ` loading="lazy"${newAttributes}`;
     }
-    if (!attributes.includes('decoding=')) {
+    if (!newAttributes.includes('decoding=')) {
       newAttributes = ` decoding="async"${newAttributes}`;
     }
+
     return `<img${newAttributes}>`;
   });
 
@@ -207,7 +226,7 @@ const BlogPost = () => {
       setArticle(fullArticle);
 
       // Smart extension detection: frontmatter > slug lookup > content detection
-      const extSlug = (frontmatter as any).related_extension_slug;
+      const extSlug = (frontmatter as Record<string, unknown>).related_extension_slug as string | undefined;
       let detectedExt: Extension | null = null;
       if (extSlug) {
         detectedExt = getExtensionBySlug(extSlug) || null;
@@ -489,10 +508,19 @@ const BlogPost = () => {
               className="mb-8 overflow-hidden rounded-xl"
             >
               <img
-                src={article.featured_image}
+                src={resolveImagePath(article.featured_image).replace(/\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i, '.webp')}
                 alt={article.title}
                 decoding="async"
                 className="w-full"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  const originalSrc = resolveImagePath(article.featured_image || "");
+                  if (target.src !== originalSrc) {
+                    target.src = originalSrc;
+                    // Prevent infinite loop if both fail
+                    target.onerror = null;
+                  }
+                }}
               />
             </motion.div>
           )}

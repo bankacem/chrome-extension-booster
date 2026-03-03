@@ -15,3 +15,50 @@ export function getPartitionedPath(slug: string): string {
 
   return `/content/articles/${c1}/${c2}/${c3}/${s}.md`;
 }
+
+/**
+ * Resolves an image path to the local optimized storage.
+ * Handles legacy WordPress paths and ensures absolute root references.
+ */
+export function resolveImagePath(src: string): string {
+  if (!src || src.startsWith('data:') || src.startsWith('blob:')) return src;
+
+  let resolved = src;
+
+  // Handle protocol-relative URLs
+  if (resolved.startsWith('//')) {
+    resolved = 'https:' + resolved;
+  }
+
+  // Handle absolute URLs to same domain
+  if (resolved.startsWith('https://extensionto.com/')) {
+    resolved = resolved.replace('https://extensionto.com', '');
+  }
+
+  // Already absolute or external
+  if (resolved.startsWith('http')) return resolved;
+
+  // Handle legacy WordPress upload paths
+  if (resolved.includes('wp-content/uploads/')) {
+    const parts = resolved.split('/');
+    const filename = parts[parts.length - 1];
+    resolved = `/images/blog/${filename}`;
+  }
+
+  // Ensure it starts with /images/blog/ if it's a blog image but missing the prefix
+  if (!resolved.startsWith('/') && !resolved.startsWith('images/')) {
+    resolved = `/images/blog/${resolved}`;
+  }
+
+  // Force absolute root
+  if (resolved.startsWith('images/')) {
+    resolved = `/${resolved}`;
+  }
+
+  // Final safeguard: if it starts with images/ it must be /images/
+  if (resolved.startsWith('images/')) {
+    resolved = '/' + resolved;
+  }
+
+  return resolved;
+}

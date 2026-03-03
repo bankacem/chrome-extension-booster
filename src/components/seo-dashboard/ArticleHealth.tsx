@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/table";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-import { getPartitionedPath } from "@/utils/articlePath";
+import { getPartitionedPath, resolveImagePath } from "@/utils/articlePath";
 
 interface Article {
   id: string;
@@ -41,6 +41,7 @@ interface Props {
 export default function ArticleHealth({ articles, onRefresh }: Props) {
   const [fixingId, setFixingId] = useState<string | null>(null);
   const [fileStatuses, setFileStatuses] = useState<Record<string, boolean>>({});
+  const [imageStatuses, setImageStatuses] = useState<Record<string, boolean>>({});
   const { toast } = useToast();
 
   useEffect(() => {
@@ -94,7 +95,79 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
     if (articles.length > 0) {
       checkFilePresence();
     }
-  }, [articles]);
+  }, [articles, fileStatuses]);
+
+  useEffect(() => {
+    const checkImages = async () => {
+      const allImageUrls: string[] = [];
+      const articleImages: Record<string, string[]> = {};
+
+      articles.forEach(article => {
+        const urls: string[] = [];
+        const content = article.content || "";
+
+        // Match both <img> tags and Markdown image syntax
+        const imgRe = /<img[^>]+src=["']([^"']+)["']/gi;
+        const mdRe = /!\[.*?\]\((.*?)\)/g;
+
+        let m;
+        while ((m = imgRe.exec(content)) !== null) urls.push(m[1]);
+        while ((m = mdRe.exec(content)) !== null) urls.push(m[1]);
+
+        if (article.featured_image) urls.push(article.featured_image);
+
+        // Filter and normalize
+        const normalized = urls
+          .map(u => resolveImagePath(u))
+          .filter(u => !u.startsWith('data:'));
+
+        articleImages[article.id] = [...new Set(normalized)];
+        allImageUrls.push(...normalized);
+      });
+
+      const uniqueUrls = [...new Set(allImageUrls)].filter(url => imageStatuses[url] === undefined);
+      if (uniqueUrls.length === 0) return;
+
+      const CHUNK_SIZE = 20;
+      for (let i = 0; i < uniqueUrls.length; i += CHUNK_SIZE) {
+        const chunk = uniqueUrls.slice(i, i + CHUNK_SIZE);
+        const results = await Promise.all(
+          chunk.map(async (url) => {
+            try {
+              const res = await fetch(url, { method: 'HEAD' });
+              if (res.ok) return { url, ok: true };
+
+              // Try fallback for our optimized images if it was a .webp request or original
+              if (url.startsWith('/images/blog/')) {
+                  const altUrl = url.endsWith('.webp')
+                    ? url.replace('.webp', '.png') // Simple fallback guess
+                    : url.substring(0, url.lastIndexOf('.')) + '.webp';
+                  const altRes = await fetch(altUrl, { method: 'HEAD' });
+                  if (altRes.ok) return { url, ok: true };
+              }
+
+              return { url, ok: false };
+            } catch (e) {
+              return { url, ok: false };
+            }
+          })
+        );
+
+        setImageStatuses(prev => {
+          const next = { ...prev };
+          results.forEach(({ url, ok }) => {
+            next[url] = ok;
+          });
+          return next;
+        });
+        await new Promise(resolve => setTimeout(resolve, 50));
+      }
+    };
+
+    if (articles.length > 0) {
+      checkImages();
+    }
+  }, [articles, imageStatuses]);
 
   const handleAutoFix = async (article: Article) => {
     setFixingId(article.id);
@@ -273,7 +346,35 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
         metrics.push({ name: "File Status", score: 50, status: "warning", message: "Verifying file presence..." });
       }
 
-      // 5. Canonical Presence (Simulated check)
+      // 5. Image Status check
+      const imgUrls: string[] = [];
+      const imgRe = /<img[^>]+src=["']([^"']+)["']/gi;
+      const mdRe = /!\[.*?\]\((.*?)\)/g;
+
+      let imgM;
+      while ((imgM = imgRe.exec(content)) !== null) imgUrls.push(imgM[1]);
+      while ((imgM = mdRe.exec(content)) !== null) imgUrls.push(imgM[1]);
+
+      if (article.featured_image) imgUrls.push(article.featured_image);
+
+      const normalizedImgs = imgUrls
+        .map(u => resolveImagePath(u))
+        .filter(u => !u.startsWith('data:'));
+
+      const brokenImages = normalizedImgs.filter(url => imageStatuses[url] === false);
+      const pendingImages = normalizedImgs.filter(url => imageStatuses[url] === undefined);
+
+      if (normalizedImgs.length === 0) {
+        metrics.push({ name: "Images", score: 100, status: "success", message: "No images to verify" });
+      } else if (brokenImages.length > 0) {
+        metrics.push({ name: "Images", score: 0, status: "error", message: `${brokenImages.length} broken images detected` });
+      } else if (pendingImages.length > 0) {
+        metrics.push({ name: "Images", score: 50, status: "warning", message: "Verifying images..." });
+      } else {
+        metrics.push({ name: "Images", score: 100, status: "success", message: "All images verified" });
+      }
+
+      // 6. Canonical Presence (Simulated check)
       const hasCanonical = true; // Assuming SEO component handles this correctly
       metrics.push({ name: "Canonical", score: 100, status: "success", message: "Canonical tag active" });
 
@@ -281,7 +382,7 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
 
       return { article, totalScore, metrics };
     }).sort((a, b) => a.totalScore - b.totalScore); // Show problematic articles first
-  }, [articles, fileStatuses]);
+  }, [articles, fileStatuses, imageStatuses]);
 
   return (
     <div className="space-y-6">
@@ -342,6 +443,12 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
                         <Badge variant="destructive" className="h-5 gap-1 px-1.5 text-[10px] animate-pulse">
                           <FileWarning className="h-3 w-3" />
                           MISSING FILE
+                        </Badge>
+                      )}
+                      {metrics.find(m => m.name === "Images")?.status === "error" && (
+                        <Badge variant="destructive" className="h-5 gap-1 px-1.5 text-[10px]">
+                          <AlertCircle className="h-3 w-3" />
+                          BROKEN IMG
                         </Badge>
                       )}
                     </div>
