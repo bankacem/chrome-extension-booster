@@ -348,7 +348,6 @@ async function sync() {
               // Check if already processed
               if (processedIds.has(id) || processedSlugs.has(normalizedSlug)) {
                 console.log(`[Pillar] Skipping already processed article: ${normalizedSlug}`);
-                currentFiles.add(fullPath); // Still mark as current so it's not deleted
                 continue;
               }
 

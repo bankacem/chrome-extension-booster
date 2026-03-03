@@ -25,10 +25,10 @@ status: published
 published_at: '2026-01-20T14:37:11.547+00:00'
 scheduled_at: null
 author: Admin
-views: 3
+views: 4
 read_time: 1
 created_at: '2026-01-19T13:58:19.961831+00:00'
-updated_at: '2026-02-11T21:40:20.790021+00:00'
+updated_at: '2026-03-03T09:36:40.879601+00:00'
 description: >-
   Improve your online efficiency with our curated list of must-have extensions.
   From research tools to task managers, enhance your browsing experience.

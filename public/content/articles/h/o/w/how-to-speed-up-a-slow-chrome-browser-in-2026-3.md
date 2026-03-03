@@ -21,10 +21,10 @@ status: published
 published_at: '2026-01-23T16:29:00.345+00:00'
 scheduled_at: '2026-01-23T16:29:00+00:00'
 author: AI Generator
-views: 1
+views: 2
 read_time: 8
 created_at: '2026-01-20T14:42:02.641398+00:00'
-updated_at: '2026-02-13T19:06:20.46146+00:00'
+updated_at: '2026-03-03T09:25:29.938928+00:00'
 description: >-
   Boost your browsing speed and extend laptop battery life. Discover the best
   lightweight extensions for managing memory and reducing CPU load effectively.
