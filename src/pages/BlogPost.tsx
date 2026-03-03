@@ -11,6 +11,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import yaml from "js-yaml";
 import { getPartitionedPath } from "@/utils/articlePath";
+import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
+import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
 
 interface Article {
   id: string;
@@ -27,6 +29,7 @@ interface Article {
   read_time: number;
   author: string;
   views: number;
+  related_extension_slug?: string;
 }
 
 const parseMarkdown = (text: string) => {
@@ -90,13 +93,8 @@ const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const [article, setArticle] = useState<Partial<Article> | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [matchedExtension, setMatchedExtension] = useState<Extension | null>(null);
 
-  // Priority detection logic
-  const isPriorityArticle = (art: Partial<Article>) => {
-    const priorityKeywords = ["adblocker", "idm", "ghostery", "facebook pixel helper", "popup blocker", "internet download manager"];
-    const textToSearch = `${art.title} ${art.content || ""} ${art.slug} ${art.keywords?.join(" ") || ""}`.toLowerCase();
-    return priorityKeywords.some(kw => textToSearch.includes(kw.toLowerCase()));
-  };
   const [relatedArticles, setRelatedArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
@@ -208,7 +206,20 @@ const BlogPost = () => {
       const fullArticle = { ...(matched || {}), ...frontmatter, content: processedContent } as Article;
       setArticle(fullArticle);
 
-      // 4. Increment views (Protected: don't let Supabase failures break the page)
+      // Smart extension detection: frontmatter > slug lookup > content detection
+      const extSlug = (frontmatter as any).related_extension_slug;
+      let detectedExt: Extension | null = null;
+      if (extSlug) {
+        detectedExt = getExtensionBySlug(extSlug) || null;
+      }
+      if (!detectedExt) {
+        detectedExt = detectExtensionFromContent(
+          fullArticle.title || "",
+          fullArticle.content || "",
+          fullArticle.keywords || []
+        );
+      }
+      setMatchedExtension(detectedExt);
       if (frontmatter.id) {
         try {
           const { data } = await supabase
@@ -495,11 +506,15 @@ const BlogPost = () => {
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
 
-          {/* Direct Download Injection for Priority Articles */}
-          {isPriorityArticle(article) && (
+          {/* Smart Extension Bridge: shows internal extension CTA when matched */}
+          {matchedExtension && (
             <DirectDownloadSection
-              extensionName={article.title.split(" - ")[0].split(" | ")[0]}
-              lastUpdated={new Date(article.published_at).toLocaleDateString("en-US", { month: 'long', year: 'numeric' })}
+              extensionName={matchedExtension.name}
+              internalSlug={matchedExtension.slug}
+              storeUrl={matchedExtension.storeUrl}
+              users={matchedExtension.users}
+              rating={matchedExtension.rating}
+              lastUpdated={article.published_at ? new Date(article.published_at).toLocaleDateString("en-US", { month: 'long', year: 'numeric' }) : undefined}
             />
           )}
 
