@@ -6,7 +6,7 @@ import {
   Sparkles, FileText, Layers, FolderOpen, 
   Settings2, Save, Trash2, Wand2, Check,
   Loader2, ArrowLeft, Eye, RefreshCw, ListOrdered,
-  HelpCircle, Image, Table, Globe, Pencil, Key, Cpu
+  HelpCircle, Image, Table, Globe, Pencil, Key, Cpu, User
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
