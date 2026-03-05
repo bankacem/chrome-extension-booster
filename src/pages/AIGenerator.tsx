@@ -963,6 +963,54 @@ const AIGenerator = () => {
                     </p>
                   </div>
 
+                  {/* Author Name */}
+                  <div className="space-y-2">
+                    <Label className="flex items-center gap-2">
+                      <User className="h-4 w-4" />
+                      Author Name
+                    </Label>
+                    <Input
+                      placeholder="e.g. John Smith"
+                      value={authorName}
+                      onChange={(e) => setAuthorName(e.target.value)}
+                    />
+                    <p className="text-xs text-muted-foreground">
+                      Displayed as the article author (saved for next use)
+                    </p>
+                  </div>
+
+                  {/* Featured Image URL */}
+                  <div className="space-y-2">
+                    <Label className="flex items-center gap-2">
+                      <Image className="h-4 w-4" />
+                      Featured Image URL
+                    </Label>
+                    <Input
+                      placeholder="https://images.unsplash.com/photo-..."
+                      value={featuredImage}
+                      onChange={(e) => setFeaturedImage(e.target.value)}
+                    />
+                    <p className="text-xs text-muted-foreground">
+                      External image URL for article hero image
+                    </p>
+                  </div>
+
+                  {/* Featured Video URL */}
+                  <div className="space-y-2">
+                    <Label className="flex items-center gap-2">
+                      <Globe className="h-4 w-4" />
+                      Featured Video URL
+                    </Label>
+                    <Input
+                      placeholder="https://www.youtube.com/watch?v=..."
+                      value={featuredVideo}
+                      onChange={(e) => setFeaturedVideo(e.target.value)}
+                    />
+                    <p className="text-xs text-muted-foreground">
+                      YouTube or MP4 link shown at the top of the article
+                    </p>
+                  </div>
+
                   <div className="space-y-3 pt-2">
                     <Label>Content Options</Label>
                     
