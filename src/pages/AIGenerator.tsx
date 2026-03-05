@@ -6,7 +6,7 @@ import {
   Sparkles, FileText, Layers, FolderOpen, 
   Settings2, Save, Trash2, Wand2, Check,
   Loader2, ArrowLeft, Eye, RefreshCw, ListOrdered,
-  HelpCircle, Image, Table, Globe, Pencil, Key, Cpu
+  HelpCircle, Image, Table, Globe, Pencil, Key, Cpu, User
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -247,13 +247,17 @@ const AIGenerator = () => {
   const [category, setCategory] = useState("General");
   const [language, setLanguage] = useState("English");
   const [writingStyle, setWritingStyle] = useState("professional");
+  const [authorName, setAuthorName] = useState(() => localStorage.getItem('ai-generator-author') || "Admin");
+  const [featuredImage, setFeaturedImage] = useState("");
+  const [featuredVideo, setFeaturedVideo] = useState("");
 
   // Save provider settings to localStorage
   useEffect(() => {
     localStorage.setItem('ai-generator-provider', aiProvider);
     localStorage.setItem('ai-generator-apikey', customApiKey);
     localStorage.setItem('ai-generator-model', selectedModel);
-  }, [aiProvider, customApiKey, selectedModel]);
+    localStorage.setItem('ai-generator-author', authorName);
+  }, [aiProvider, customApiKey, selectedModel, authorName]);
 
   // Reset model when provider changes
   useEffect(() => {
@@ -501,8 +505,16 @@ const AIGenerator = () => {
       const article = selected[i];
       
       try {
-        // Use content as-is (internal linking will be done later on view)
-        const processedContent = article.content;
+        // Prepend video embed if provided
+        let processedContent = article.content;
+        if (featuredVideo) {
+          const ytMatch = featuredVideo.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+          if (ytMatch) {
+            processedContent = `<div class="aspect-video my-6 rounded-xl overflow-hidden border border-border"><iframe src="https://www.youtube-nocookie.com/embed/${ytMatch[1]}" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" loading="lazy"></iframe></div>\n\n` + processedContent;
+          } else {
+            processedContent = `<div class="aspect-video my-6 rounded-xl overflow-hidden border border-border"><video src="${featuredVideo}" controls preload="metadata" class="w-full h-full object-contain bg-black"></video></div>\n\n` + processedContent;
+          }
+        }
 
         // Calculate schedule time for this article
         let scheduledAt = null;
@@ -536,10 +548,11 @@ const AIGenerator = () => {
           keywords: article.keywords,
           meta_description: article.meta_description,
           read_time: article.readTime,
+          featured_image: featuredImage || null,
           status,
           scheduled_at: scheduledAt,
           published_at: publishedAt,
-          author: "AI Generator"
+          author: authorName || "Admin"
         });
 
         if (error) throw error;
@@ -955,6 +968,54 @@ const AIGenerator = () => {
                     </Select>
                     <p className="text-xs text-muted-foreground">
                       Choose a tone that matches your audience
+                    </p>
+                  </div>
+
+                  {/* Author Name */}
+                  <div className="space-y-2">
+                    <Label className="flex items-center gap-2">
+                      <User className="h-4 w-4" />
+                      Author Name
+                    </Label>
+                    <Input
+                      placeholder="e.g. John Smith"
+                      value={authorName}
+                      onChange={(e) => setAuthorName(e.target.value)}
+                    />
+                    <p className="text-xs text-muted-foreground">
+                      Displayed as the article author (saved for next use)
+                    </p>
+                  </div>
+
+                  {/* Featured Image URL */}
+                  <div className="space-y-2">
+                    <Label className="flex items-center gap-2">
+                      <Image className="h-4 w-4" />
+                      Featured Image URL
+                    </Label>
+                    <Input
+                      placeholder="https://images.unsplash.com/photo-..."
+                      value={featuredImage}
+                      onChange={(e) => setFeaturedImage(e.target.value)}
+                    />
+                    <p className="text-xs text-muted-foreground">
+                      External image URL for article hero image
+                    </p>
+                  </div>
+
+                  {/* Featured Video URL */}
+                  <div className="space-y-2">
+                    <Label className="flex items-center gap-2">
+                      <Globe className="h-4 w-4" />
+                      Featured Video URL
+                    </Label>
+                    <Input
+                      placeholder="https://www.youtube.com/watch?v=..."
+                      value={featuredVideo}
+                      onChange={(e) => setFeaturedVideo(e.target.value)}
+                    />
+                    <p className="text-xs text-muted-foreground">
+                      YouTube or MP4 link shown at the top of the article
                     </p>
                   </div>
 
