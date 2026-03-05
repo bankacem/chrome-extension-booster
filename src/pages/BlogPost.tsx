@@ -52,42 +52,15 @@ const processArticleContent = (content: string) => {
 
   let processed = content;
 
-  // 1. Resolve image paths — SKIP all processing for external URLs
+  // 1. Resolve image paths — render raw from resolveImagePath without optimization
   processed = processed.replace(/<img([^>]*)>/gi, (match, attributes) => {
     const srcMatch = attributes.match(/src=["']([^"']*)["']/i);
     if (!srcMatch) return match;
 
     const originalSrc = srcMatch[1].trim();
-
-    // External URL: render raw, no local prefixing, no WebP fallback (case-insensitive)
-    if (/^(https?:)?\/\//i.test(originalSrc)) {
-      let newAttributes = attributes;
-      if (!newAttributes.includes('loading=')) newAttributes = ` loading="lazy"${newAttributes}`;
-      if (!newAttributes.includes('decoding=')) newAttributes = ` decoding="async"${newAttributes}`;
-      return `<img${newAttributes}>`;
-    }
-
     const resolvedSrc = resolveImagePath(originalSrc);
 
-    // Try .webp version for local images only
-    let displaySrc = resolvedSrc;
-    const isStandardImage = /\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i.test(resolvedSrc);
-
-    if (isStandardImage) {
-      displaySrc = resolvedSrc.substring(0, resolvedSrc.lastIndexOf('.')) + '.webp';
-    }
-
-    let newAttributes = attributes.replace(/src=["']([^"']*)["']/i, `src="${displaySrc}"`);
-
-    // Add fallback to original extension if webp fails
-    if (displaySrc !== resolvedSrc && !newAttributes.includes('onerror=')) {
-      newAttributes += ` onerror="this.onerror=null; this.src='${resolvedSrc}';"`;
-    }
-
-    // Ensure absolute pathing for internal images
-    if (!displaySrc.startsWith('/') && !displaySrc.startsWith('data:')) {
-      newAttributes = newAttributes.replace(`src="${displaySrc}"`, `src="/${displaySrc}"`);
-    }
+    let newAttributes = attributes.replace(/src=["']([^"']*)["']/i, `src="${resolvedSrc}"`);
 
     if (!newAttributes.includes('loading=')) newAttributes = ` loading="lazy"${newAttributes}`;
     if (!newAttributes.includes('decoding=')) newAttributes = ` decoding="async"${newAttributes}`;
@@ -97,16 +70,8 @@ const processArticleContent = (content: string) => {
 
   // 1b. Handle Markdown image syntax: ![alt](url)
   processed = processed.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
-    const trimmedSrc = src.trim();
-    // External: render raw (case-insensitive)
-    if (/^(https?:)?\/\//i.test(trimmedSrc)) {
-      return `<img src="${trimmedSrc}" alt="${alt}" loading="lazy" decoding="async">`;
-    }
-    const resolved = resolveImagePath(trimmedSrc);
-    const isStd = /\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i.test(resolved);
-    const display = isStd ? resolved.substring(0, resolved.lastIndexOf('.')) + '.webp' : resolved;
-    const onerror = isStd ? ` onerror="this.onerror=null; this.src='${resolved}';"` : '';
-    return `<img src="${display}" alt="${alt}" loading="lazy" decoding="async"${onerror}>`;
+    const resolved = resolveImagePath(src);
+    return `<img src="${resolved}" alt="${alt}" loading="lazy" decoding="async">`;
   });
 
   // 1c. Convert YouTube/video links in content to embedded players
@@ -526,34 +491,22 @@ const BlogPost = () => {
             <VideoPlayer url={article.featured_video} title={article.title} />
           )}
 
-          {/* Featured Image — skip WebP fallback for external URLs */}
-          {article.featured_image && !article.featured_video && (() => {
-            const resolved = resolveImagePath(article.featured_image);
-            const isExternal = /^(https?:)?\/\//i.test(resolved);
-            return (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
-                className="mb-8 overflow-hidden rounded-xl"
-              >
-                <img
-                  src={isExternal ? resolved : resolved.replace(/\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i, '.webp')}
-                  alt={article.title}
-                  decoding="async"
-                  className="w-full"
-                  onError={isExternal ? undefined : (e) => {
-                    const target = e.target as HTMLImageElement;
-                    const originalSrc = resolved;
-                    if (target.src !== originalSrc) {
-                      target.src = originalSrc;
-                      target.onerror = null;
-                    }
-                  }}
-                />
-              </motion.div>
-            );
-          })()}
+          {/* Featured Image — direct raw loading */}
+          {article.featured_image && !article.featured_video && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="mb-8 overflow-hidden rounded-xl"
+            >
+              <img
+                src={resolveImagePath(article.featured_image)}
+                alt={article.title}
+                decoding="async"
+                className="w-full"
+              />
+            </motion.div>
+          )}
 
           {/* Article Content */}
           <motion.div
@@ -617,7 +570,7 @@ const BlogPost = () => {
                   {related.featured_image && (
                     <div className="aspect-video overflow-hidden">
                       <img
-                        src={related.featured_image}
+                        src={resolveImagePath(related.featured_image)}
                         alt={related.title}
                         loading="lazy"
                         decoding="async"
