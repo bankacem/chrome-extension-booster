@@ -195,6 +195,10 @@ const SEODashboard = () => {
                 <Target className="h-4 w-4" />
                 Performance Tracker
               </TabsTrigger>
+              <TabsTrigger value="duplicates" className="gap-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                <Shield className="h-4 w-4" />
+                SEO Shield
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="keywords">
