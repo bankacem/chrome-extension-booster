@@ -31,6 +31,7 @@ interface Article {
   author: string;
   views: number;
   related_extension_slug?: string;
+  featured_video?: string;
 }
 
 const parseMarkdown = (text: string) => {
