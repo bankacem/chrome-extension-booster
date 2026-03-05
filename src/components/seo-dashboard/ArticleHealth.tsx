@@ -135,8 +135,17 @@ export default function ArticleHealth({ articles, onRefresh }: Props) {
         const results = await Promise.all(
           chunk.map(async (url) => {
             try {
+              const isExternal = /^(https?:)?\/\//i.test(url);
+
+              // Try HEAD first
               const res = await fetch(url, { method: 'HEAD' });
               if (res.ok) return { url, ok: true };
+
+              // Fallback to GET if HEAD fails, especially for external URLs
+              if (isExternal) {
+                const getRes = await fetch(url);
+                if (getRes.ok) return { url, ok: true };
+              }
 
               // Try fallback for our optimized images if it was a .webp request or original
               if (url.startsWith('/images/blog/')) {

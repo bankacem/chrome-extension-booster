@@ -26,8 +26,8 @@ export function resolveImagePath(src: string): string {
   const trimmedSrc = src.trim();
   if (trimmedSrc.startsWith('data:') || trimmedSrc.startsWith('blob:')) return trimmedSrc;
 
-  // Immediately return for external URLs or protocol-relative URLs
-  if (trimmedSrc.startsWith('http://') || trimmedSrc.startsWith('https://') || trimmedSrc.startsWith('//')) {
+  // Immediately return for external URLs or protocol-relative URLs (case-insensitive)
+  if (/^(https?:)?\/\//i.test(trimmedSrc)) {
     return trimmedSrc;
   }
 
