@@ -17,6 +17,7 @@ import SlugAligner from "@/components/seo-dashboard/SlugAligner";
 import CompetitorInsights from "@/components/seo-dashboard/CompetitorInsights";
 import ArticleHealth from "@/components/seo-dashboard/ArticleHealth";
 import KeywordPerformanceTracker from "@/components/seo-dashboard/KeywordPerformanceTracker";
+import KeywordDuplicateChecker from "@/components/seo-dashboard/KeywordDuplicateChecker";
 
 interface Article {
   id: string;
