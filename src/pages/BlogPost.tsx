@@ -59,8 +59,8 @@ const processArticleContent = (content: string) => {
 
     const originalSrc = srcMatch[1].trim();
 
-    // External URL: render raw, no local prefixing, no WebP fallback
-    if (originalSrc.startsWith('http://') || originalSrc.startsWith('https://') || originalSrc.startsWith('//')) {
+    // External URL: render raw, no local prefixing, no WebP fallback (case-insensitive)
+    if (/^(https?:)?\/\//i.test(originalSrc)) {
       let newAttributes = attributes;
       if (!newAttributes.includes('loading=')) newAttributes = ` loading="lazy"${newAttributes}`;
       if (!newAttributes.includes('decoding=')) newAttributes = ` decoding="async"${newAttributes}`;
@@ -98,8 +98,8 @@ const processArticleContent = (content: string) => {
   // 1b. Handle Markdown image syntax: ![alt](url)
   processed = processed.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
     const trimmedSrc = src.trim();
-    // External: render raw
-    if (trimmedSrc.startsWith('http://') || trimmedSrc.startsWith('https://') || trimmedSrc.startsWith('//')) {
+    // External: render raw (case-insensitive)
+    if (/^(https?:)?\/\//i.test(trimmedSrc)) {
       return `<img src="${trimmedSrc}" alt="${alt}" loading="lazy" decoding="async">`;
     }
     const resolved = resolveImagePath(trimmedSrc);
@@ -529,7 +529,7 @@ const BlogPost = () => {
           {/* Featured Image — skip WebP fallback for external URLs */}
           {article.featured_image && !article.featured_video && (() => {
             const resolved = resolveImagePath(article.featured_image);
-            const isExternal = resolved.startsWith('http://') || resolved.startsWith('https://') || resolved.startsWith('//');
+            const isExternal = /^(https?:)?\/\//i.test(resolved);
             return (
               <motion.div
                 initial={{ opacity: 0 }}
