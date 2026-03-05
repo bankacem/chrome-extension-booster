@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   Search, RefreshCw, BarChart3, Download, Link as LinkIcon,
-  LogOut, ArrowLeft, FileText, Layers, HeartPulse, Target,
+  LogOut, ArrowLeft, FileText, Layers, HeartPulse, Target, Shield,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -17,6 +17,7 @@ import SlugAligner from "@/components/seo-dashboard/SlugAligner";
 import CompetitorInsights from "@/components/seo-dashboard/CompetitorInsights";
 import ArticleHealth from "@/components/seo-dashboard/ArticleHealth";
 import KeywordPerformanceTracker from "@/components/seo-dashboard/KeywordPerformanceTracker";
+import KeywordDuplicateChecker from "@/components/seo-dashboard/KeywordDuplicateChecker";
 
 interface Article {
   id: string;
@@ -194,6 +195,10 @@ const SEODashboard = () => {
                 <Target className="h-4 w-4" />
                 Performance Tracker
               </TabsTrigger>
+              <TabsTrigger value="duplicates" className="gap-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                <Shield className="h-4 w-4" />
+                SEO Shield
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="keywords">
@@ -222,6 +227,10 @@ const SEODashboard = () => {
 
             <TabsContent value="tracker">
               <KeywordPerformanceTracker articles={publishedArticles} />
+            </TabsContent>
+
+            <TabsContent value="duplicates">
+              <KeywordDuplicateChecker articles={publishedArticles} />
             </TabsContent>
           </Tabs>
         </motion.div>

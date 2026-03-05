@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import DirectDownloadSection from "@/components/seo/DirectDownloadSection";
+import VideoPlayer from "@/components/blog/VideoPlayer";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import yaml from "js-yaml";
@@ -30,6 +31,7 @@ interface Article {
   author: string;
   views: number;
   related_extension_slug?: string;
+  featured_video?: string;
 }
 
 const parseMarkdown = (text: string) => {
@@ -50,52 +52,71 @@ const processArticleContent = (content: string) => {
 
   let processed = content;
 
-  // 1. Resolve image paths, add loading="lazy", decoding="async", and implement .webp fallback
+  // 1. Resolve image paths — SKIP all processing for external URLs
   processed = processed.replace(/<img([^>]*)>/gi, (match, attributes) => {
     const srcMatch = attributes.match(/src=["']([^"']*)["']/i);
     if (!srcMatch) return match;
 
-    const originalSrc = srcMatch[1];
+    const originalSrc = srcMatch[1].trim();
+
+    // External URL: render raw, no local prefixing, no WebP fallback
+    if (originalSrc.startsWith('http://') || originalSrc.startsWith('https://') || originalSrc.startsWith('//')) {
+      let newAttributes = attributes;
+      if (!newAttributes.includes('loading=')) newAttributes = ` loading="lazy"${newAttributes}`;
+      if (!newAttributes.includes('decoding=')) newAttributes = ` decoding="async"${newAttributes}`;
+      return `<img${newAttributes}>`;
+    }
+
     const resolvedSrc = resolveImagePath(originalSrc);
 
-    // Try .webp version first if it's a standard image format AND not external
+    // Try .webp version for local images only
     let displaySrc = resolvedSrc;
-    const isExternal = resolvedSrc.startsWith('http');
     const isStandardImage = /\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i.test(resolvedSrc);
 
-    if (isStandardImage && !isExternal) {
+    if (isStandardImage) {
       displaySrc = resolvedSrc.substring(0, resolvedSrc.lastIndexOf('.')) + '.webp';
     }
 
     let newAttributes = attributes.replace(/src=["']([^"']*)["']/i, `src="${displaySrc}"`);
 
-    // Add fallback to original extension if webp fails and not external
-    if (!isExternal && displaySrc !== resolvedSrc && !newAttributes.includes('onerror=')) {
+    // Add fallback to original extension if webp fails
+    if (displaySrc !== resolvedSrc && !newAttributes.includes('onerror=')) {
       newAttributes += ` onerror="this.onerror=null; this.src='${resolvedSrc}';"`;
     }
 
     // Ensure absolute pathing for internal images
-    if (!displaySrc.startsWith('http') && !displaySrc.startsWith('/') && !displaySrc.startsWith('data:')) {
+    if (!displaySrc.startsWith('/') && !displaySrc.startsWith('data:')) {
       newAttributes = newAttributes.replace(`src="${displaySrc}"`, `src="/${displaySrc}"`);
     }
 
-    // Add loading="lazy" and decoding="async" if missing
-    if (!newAttributes.includes('loading=')) {
-      newAttributes = ` loading="lazy"${newAttributes}`;
-    }
-    if (!newAttributes.includes('decoding=')) {
-      newAttributes = ` decoding="async"${newAttributes}`;
-    }
+    if (!newAttributes.includes('loading=')) newAttributes = ` loading="lazy"${newAttributes}`;
+    if (!newAttributes.includes('decoding=')) newAttributes = ` decoding="async"${newAttributes}`;
 
     return `<img${newAttributes}>`;
   });
 
-  // 2. Semantic HTML Audit: Ensure exactly one <h1>
-  // Demote <h1> to <h2>
-  processed = processed.replace(/<h1([^>]*)>(.*?)<\/h1>/gi, '<h2$1>$2</h2>');
+  // 1b. Handle Markdown image syntax: ![alt](url)
+  processed = processed.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
+    const trimmedSrc = src.trim();
+    // External: render raw
+    if (trimmedSrc.startsWith('http://') || trimmedSrc.startsWith('https://') || trimmedSrc.startsWith('//')) {
+      return `<img src="${trimmedSrc}" alt="${alt}" loading="lazy" decoding="async">`;
+    }
+    const resolved = resolveImagePath(trimmedSrc);
+    const isStd = /\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i.test(resolved);
+    const display = isStd ? resolved.substring(0, resolved.lastIndexOf('.')) + '.webp' : resolved;
+    const onerror = isStd ? ` onerror="this.onerror=null; this.src='${resolved}';"` : '';
+    return `<img src="${display}" alt="${alt}" loading="lazy" decoding="async"${onerror}>`;
+  });
 
-  // Ensure all secondary headers are at most <h3>
-  // Demote <h4>, <h5>, <h6> to <h3>
+  // 1c. Convert YouTube/video links in content to embedded players
+  processed = processed.replace(
+    /<a[^>]*href=["'](https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})[^"']*)["'][^>]*>.*?<\/a>/gi,
+    '<div class="aspect-video my-6 rounded-xl overflow-hidden border border-border"><iframe src="https://www.youtube-nocookie.com/embed/$2" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" loading="lazy"></iframe></div>'
+  );
+
+  // 2. Semantic HTML Audit: Demote <h1> to <h2>
+  processed = processed.replace(/<h1([^>]*)>(.*?)<\/h1>/gi, '<h2$1>$2</h2>');
   processed = processed.replace(/<h[4-6]([^>]*)>(.*?)<\/h[4-6]>/gi, '<h3$1>$2</h3>');
 
   return processed;
@@ -500,35 +521,39 @@ const BlogPost = () => {
             </div>
           </motion.header>
 
-          {/* Featured Image */}
-          {article.featured_image && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="mb-8 overflow-hidden rounded-xl"
-            >
-              <img
-                src={
-                  resolveImagePath(article.featured_image).startsWith('http')
-                  ? resolveImagePath(article.featured_image)
-                  : resolveImagePath(article.featured_image).replace(/\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i, '.webp')
-                }
-                alt={article.title}
-                decoding="async"
-                className="w-full"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  const originalSrc = resolveImagePath(article.featured_image || "");
-                  if (target.src !== originalSrc) {
-                    target.src = originalSrc;
-                    // Prevent infinite loop if both fail
-                    target.onerror = null;
-                  }
-                }}
-              />
-            </motion.div>
+          {/* Featured Video */}
+          {article.featured_video && (
+            <VideoPlayer url={article.featured_video} title={article.title} />
           )}
+
+          {/* Featured Image — skip WebP fallback for external URLs */}
+          {article.featured_image && !article.featured_video && (() => {
+            const resolved = resolveImagePath(article.featured_image);
+            const isExternal = resolved.startsWith('http://') || resolved.startsWith('https://') || resolved.startsWith('//');
+            return (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="mb-8 overflow-hidden rounded-xl"
+              >
+                <img
+                  src={isExternal ? resolved : resolved.replace(/\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i, '.webp')}
+                  alt={article.title}
+                  decoding="async"
+                  className="w-full"
+                  onError={isExternal ? undefined : (e) => {
+                    const target = e.target as HTMLImageElement;
+                    const originalSrc = resolved;
+                    if (target.src !== originalSrc) {
+                      target.src = originalSrc;
+                      target.onerror = null;
+                    }
+                  }}
+                />
+              </motion.div>
+            );
+          })()}
 
           {/* Article Content */}
           <motion.div
