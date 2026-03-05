@@ -540,10 +540,11 @@ const AIGenerator = () => {
           keywords: article.keywords,
           meta_description: article.meta_description,
           read_time: article.readTime,
+          featured_image: featuredImage || null,
           status,
           scheduled_at: scheduledAt,
           published_at: publishedAt,
-          author: "AI Generator"
+          author: authorName || "Admin"
         });
 
         if (error) throw error;
