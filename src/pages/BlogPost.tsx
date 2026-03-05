@@ -64,6 +64,7 @@ const processArticleContent = (content: string) => {
 
     if (!newAttributes.includes('loading=')) newAttributes = ` loading="lazy"${newAttributes}`;
     if (!newAttributes.includes('decoding=')) newAttributes = ` decoding="async"${newAttributes}`;
+    if (!newAttributes.includes('referrerpolicy=')) newAttributes = ` referrerpolicy="no-referrer"${newAttributes}`;
 
     return `<img${newAttributes}>`;
   });
@@ -71,7 +72,7 @@ const processArticleContent = (content: string) => {
   // 1b. Handle Markdown image syntax: ![alt](url)
   processed = processed.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
     const resolved = resolveImagePath(src);
-    return `<img src="${resolved}" alt="${alt}" loading="lazy" decoding="async">`;
+    return `<img src="${resolved}" alt="${alt}" referrerpolicy="no-referrer" loading="lazy" decoding="async">`;
   });
 
   // 1c. Convert YouTube/video links in content to embedded players
@@ -503,6 +504,7 @@ const BlogPost = () => {
                 src={resolveImagePath(article.featured_image)}
                 alt={article.title}
                 decoding="async"
+                referrerPolicy="no-referrer"
                 className="w-full"
               />
             </motion.div>
@@ -574,6 +576,7 @@ const BlogPost = () => {
                         alt={related.title}
                         loading="lazy"
                         decoding="async"
+                        referrerPolicy="no-referrer"
                         className="h-full w-full object-cover"
                       />
                     </div>
