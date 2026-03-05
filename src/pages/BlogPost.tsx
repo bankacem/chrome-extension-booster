@@ -521,35 +521,39 @@ const BlogPost = () => {
             </div>
           </motion.header>
 
-          {/* Featured Image */}
-          {article.featured_image && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="mb-8 overflow-hidden rounded-xl"
-            >
-              <img
-                src={
-                  resolveImagePath(article.featured_image).startsWith('http')
-                  ? resolveImagePath(article.featured_image)
-                  : resolveImagePath(article.featured_image).replace(/\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i, '.webp')
-                }
-                alt={article.title}
-                decoding="async"
-                className="w-full"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  const originalSrc = resolveImagePath(article.featured_image || "");
-                  if (target.src !== originalSrc) {
-                    target.src = originalSrc;
-                    // Prevent infinite loop if both fail
-                    target.onerror = null;
-                  }
-                }}
-              />
-            </motion.div>
+          {/* Featured Video */}
+          {article.featured_video && (
+            <VideoPlayer url={article.featured_video} title={article.title} />
           )}
+
+          {/* Featured Image — skip WebP fallback for external URLs */}
+          {article.featured_image && !article.featured_video && (() => {
+            const resolved = resolveImagePath(article.featured_image);
+            const isExternal = resolved.startsWith('http://') || resolved.startsWith('https://') || resolved.startsWith('//');
+            return (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="mb-8 overflow-hidden rounded-xl"
+              >
+                <img
+                  src={isExternal ? resolved : resolved.replace(/\.(png|jpg|jpeg|jfif|pjpeg|pjp)$/i, '.webp')}
+                  alt={article.title}
+                  decoding="async"
+                  className="w-full"
+                  onError={isExternal ? undefined : (e) => {
+                    const target = e.target as HTMLImageElement;
+                    const originalSrc = resolved;
+                    if (target.src !== originalSrc) {
+                      target.src = originalSrc;
+                      target.onerror = null;
+                    }
+                  }}
+                />
+              </motion.div>
+            );
+          })()}
 
           {/* Article Content */}
           <motion.div

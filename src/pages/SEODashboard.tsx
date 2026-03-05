@@ -228,6 +228,10 @@ const SEODashboard = () => {
             <TabsContent value="tracker">
               <KeywordPerformanceTracker articles={publishedArticles} />
             </TabsContent>
+
+            <TabsContent value="duplicates">
+              <KeywordDuplicateChecker articles={publishedArticles} />
+            </TabsContent>
           </Tabs>
         </motion.div>
       </main>
