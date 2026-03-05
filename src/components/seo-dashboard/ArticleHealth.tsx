@@ -18,6 +18,7 @@ interface Article {
   meta_description?: string | null;
   keywords?: string[] | null;
   updated_at?: string;
+  featured_image?: string | null;
 }
 
 interface HealthMetric {
