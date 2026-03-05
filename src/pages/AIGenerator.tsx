@@ -256,7 +256,8 @@ const AIGenerator = () => {
     localStorage.setItem('ai-generator-provider', aiProvider);
     localStorage.setItem('ai-generator-apikey', customApiKey);
     localStorage.setItem('ai-generator-model', selectedModel);
-  }, [aiProvider, customApiKey, selectedModel]);
+    localStorage.setItem('ai-generator-author', authorName);
+  }, [aiProvider, customApiKey, selectedModel, authorName]);
 
   // Reset model when provider changes
   useEffect(() => {
