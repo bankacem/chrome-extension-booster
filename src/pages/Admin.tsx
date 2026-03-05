@@ -1050,6 +1050,7 @@ Disallow: /admin/*`;
                                     <img 
                                       src={article.featured_image} 
                                       alt="" 
+                                      referrerPolicy="no-referrer"
                                       className="w-full h-full object-cover"
                                       onError={(e) => {
                                         (e.target as HTMLImageElement).style.display = 'none';
