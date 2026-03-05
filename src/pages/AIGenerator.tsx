@@ -247,6 +247,9 @@ const AIGenerator = () => {
   const [category, setCategory] = useState("General");
   const [language, setLanguage] = useState("English");
   const [writingStyle, setWritingStyle] = useState("professional");
+  const [authorName, setAuthorName] = useState(() => localStorage.getItem('ai-generator-author') || "Admin");
+  const [featuredImage, setFeaturedImage] = useState("");
+  const [featuredVideo, setFeaturedVideo] = useState("");
 
   // Save provider settings to localStorage
   useEffect(() => {
