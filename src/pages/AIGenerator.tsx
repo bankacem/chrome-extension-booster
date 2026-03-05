@@ -505,8 +505,16 @@ const AIGenerator = () => {
       const article = selected[i];
       
       try {
-        // Use content as-is (internal linking will be done later on view)
-        const processedContent = article.content;
+        // Prepend video embed if provided
+        let processedContent = article.content;
+        if (featuredVideo) {
+          const ytMatch = featuredVideo.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+          if (ytMatch) {
+            processedContent = `<div class="aspect-video my-6 rounded-xl overflow-hidden border border-border"><iframe src="https://www.youtube-nocookie.com/embed/${ytMatch[1]}" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" loading="lazy"></iframe></div>\n\n` + processedContent;
+          } else {
+            processedContent = `<div class="aspect-video my-6 rounded-xl overflow-hidden border border-border"><video src="${featuredVideo}" controls preload="metadata" class="w-full h-full object-contain bg-black"></video></div>\n\n` + processedContent;
+          }
+        }
 
         // Calculate schedule time for this article
         let scheduledAt = null;
