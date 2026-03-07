@@ -81,8 +81,8 @@ const processArticleContent = (content: string) => {
     '<div class="aspect-video my-6 rounded-xl overflow-hidden border border-border"><iframe src="https://www.youtube-nocookie.com/embed/$2" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" loading="lazy"></iframe></div>'
   );
 
-  // 2. Semantic HTML Audit: Demote <h1> to <h2>
-  processed = processed.replace(/<h1([^>]*)>(.*?)<\/h1>/gi, '<h2$1>$2</h2>');
+  // 2. Semantic HTML Audit: Demote lower-level headings
+  // (H1 demotion removed to allow articles to keep their H1 tags for SEO)
   processed = processed.replace(/<h[4-6]([^>]*)>(.*?)<\/h[4-6]>/gi, '<h3$1>$2</h3>');
 
   return processed;
