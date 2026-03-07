@@ -34,6 +34,8 @@ description: >-
   From research tools to task managers, enhance your browsing experience.
 ---
 
+<h1>The Only Free Productivity Chrome Extensions You Actually Need: Securing Your Online Identity</h1>
+
 <p><!-- wp:image {"sizeSlug":"large"} --></p>
 <figure class="wp-block-image size-large"><img src="" alt="" /></figure>
 <p><!-- /wp:image --> <!-- wp:paragraph --></p>

@@ -32,6 +32,8 @@ description: >-
   cover installation, configuration, and pro-tips for power users today.
 ---
 
+<h1>Professional Browser Tools Guide: Advanced Power User Features</h1>
+
 <p><!-- wp:image {"sizeSlug":"large"} --></p>
 <figure class="wp-block-image size-large"><img src="" alt="" /></figure>
 <p><!-- /wp:image --> <!-- wp:paragraph --></p>
