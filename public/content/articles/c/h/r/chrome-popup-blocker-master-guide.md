@@ -14,6 +14,7 @@ views: 0
 tags: []
 keywords: ["chrome popup blocker", "pop up blocker for chrome", "block popups chrome"]
 updated_at: "2025-05-20T12:00:00.000Z"
+featured_image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200"
 ---
 
 # Chrome Popup Blocker Master Guide: Kill Intrusive Ads in 2025

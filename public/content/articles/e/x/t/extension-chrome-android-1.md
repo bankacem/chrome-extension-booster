@@ -14,6 +14,7 @@ views: 0
 tags: ["android", "chrome extensions"]
 keywords: ["chrome extensions android", "chrome android extensions", "mobile chrome extensions"]
 updated_at: "2026-02-13T19:06:16.718103+00:00"
+featured_image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200"
 ---
 
 # Chrome Extensions Android: The Ultimate Mobile Power User Guide

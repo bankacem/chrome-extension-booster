@@ -14,6 +14,7 @@ views: 0
 tags: []
 keywords: ["internet download manager extension", "idm chrome extension", "idm integration module"]
 updated_at: "2025-05-20T11:00:00.000Z"
+featured_image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1200"
 ---
 
 # Internet Download Manager Extension: Ultimate Guide to IDM Integration

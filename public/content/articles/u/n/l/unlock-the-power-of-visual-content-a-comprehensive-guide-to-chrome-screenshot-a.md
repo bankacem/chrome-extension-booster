@@ -4,8 +4,7 @@ title: >-
   Visual Content A CompUnlock the Power of Visual Content to Chrome Screenshot
   Addonsrehensive Guide to Chrome Screenshot Addons: Annotating & Editing
   Features
-slug: >-
-  unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a
+slug: unlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a
 excerpt: >-
   When it comes to capturing and sharing web content, Chrome Screenshot Addons
   have revolutionized the way we interact with the internet. Whether you're a
