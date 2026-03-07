@@ -8,7 +8,7 @@ excerpt: >-
   Are you tired of limited browsing capabilities on your Android device? Look no
   further! The Chrome Web Store offers a wide range of Android extensions that
   can
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

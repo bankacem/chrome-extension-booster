@@ -8,7 +8,7 @@ excerpt: >-
   Are you tired of the eye-straining bright interface of Facebook? Do you want
   to browse your favorite social media platform in style and comfort? Look no
   further
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
 category: Appearance & Themes
 tags: []
 keywords:

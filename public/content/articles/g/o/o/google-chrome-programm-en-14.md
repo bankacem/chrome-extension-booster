@@ -8,7 +8,7 @@ excerpt: >-
   Google Chrome, one of the most widely used web browsers, offers a vast array
   of features and tools to enhance user experience. For those who want to take
   their
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

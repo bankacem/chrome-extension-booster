@@ -8,7 +8,7 @@ excerpt: >-
   Are you tired of the bright and flashy YouTube interface on your desktop? Do
   you want to know how to get Dark Mode on YouTube desktop to reduce eye strain
   and i
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
 category: Appearance & Themes
 tags: []
 keywords:

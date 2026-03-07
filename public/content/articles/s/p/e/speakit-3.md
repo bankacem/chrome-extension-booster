@@ -6,7 +6,7 @@ excerpt: >-
   Imagine being able to interact with your computer or mobile device using just
   your voice. No more typing, no more clicking - just speak, and your device
   respond
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -6,7 +6,7 @@ excerpt: >-
   Are you tired of being tracked online while browsing with Chrome? Do you want
   to stop trackers on Chrome without slowing down your browsing experience?
   You're n
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
 category: Redirect & Navigation
 tags: []
 keywords:

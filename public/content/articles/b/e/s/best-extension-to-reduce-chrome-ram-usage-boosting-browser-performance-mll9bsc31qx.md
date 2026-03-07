@@ -7,7 +7,7 @@ excerpt: >-
   Google Chrome is one of the most popular web browsers, known for its speed,
   security, and extensive library of extensions. However, one of the common
   issues tha
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
 category: Redirect & Navigation
 tags: []
 keywords:

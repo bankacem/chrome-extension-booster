@@ -8,7 +8,7 @@ excerpt: >-
   Are you tired of tedious note-taking and tedious text highlighting while
   browsing the web? Look no further than the extension surligneur Chrome, a
   game-changer
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -9,7 +9,7 @@ excerpt: >-
   As we dive into 2026, online privacy has become a major concern for internet
   users. With the increasing number of data breaches and cyber attacks, it's
   essentia
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
 category: Redirect & Navigation
 tags: []
 keywords:

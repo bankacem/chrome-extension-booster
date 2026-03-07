@@ -9,7 +9,7 @@ excerpt: >-
   Are you a digital marketer or business owner looking to optimize your Facebook
   ads and track conversions effectively? Look no further than the extension
   chrome
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

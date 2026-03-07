@@ -8,7 +8,7 @@ excerpt: >-
   Welcome to the most comprehensive screenshot tool chrome guide available,
   designed to help you navigate the world of screenshot capture with ease and
   precision.
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

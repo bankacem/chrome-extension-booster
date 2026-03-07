@@ -6,7 +6,7 @@ excerpt: >-
   Are you tired of using the same old browser features and wanting to take your
   browsing experience to the next level? Look no further than Chrome Web Store
   exten
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

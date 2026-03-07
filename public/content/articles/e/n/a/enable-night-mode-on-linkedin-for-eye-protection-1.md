@@ -8,7 +8,7 @@ excerpt: >-
   As we spend more time on social media platforms like LinkedIn, it's essential
   to consider the impact of screen time on our eye health. One way to mitigate
   this
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
 category: Appearance & Themes
 tags: []
 keywords:

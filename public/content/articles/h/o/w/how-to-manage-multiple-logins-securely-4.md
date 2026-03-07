@@ -8,7 +8,7 @@ excerpt: >-
   Managing multiple logins securely is a crucial aspect of maintaining a safe
   and secure online presence. With the increasing number of online accounts, it
   can be
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
 category: Appearance & Themes
 tags: []
 keywords:

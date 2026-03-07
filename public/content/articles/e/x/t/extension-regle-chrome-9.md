@@ -8,7 +8,7 @@ excerpt: >-
   Welcome to the world of Chrome extensions, where you can enhance your browsing
   experience with a wide range of tools and features. In this article, we'll
   delve
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -6,7 +6,7 @@ excerpt: >-
   Welcome to the world of text-to-speech (TTS) technology, where the boundaries
   of reading and listening are blurred. With the rise of TTS Chrome extensions,
   user
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:
