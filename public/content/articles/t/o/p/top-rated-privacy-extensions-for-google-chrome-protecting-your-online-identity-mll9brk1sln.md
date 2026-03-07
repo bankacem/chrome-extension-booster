@@ -10,7 +10,7 @@ excerpt: >-
   right tools to protect your personal data while browsing the internet. Top
   rated pr
 featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: Redirect & Navigation
+category: "Security & Privacy"
 tags: []
 keywords:
   - Top rated privacy extensions for Google Chrome

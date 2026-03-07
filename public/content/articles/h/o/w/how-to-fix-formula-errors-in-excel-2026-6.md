@@ -10,7 +10,7 @@ excerpt: >-
   dynami
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEj_0mkxbji-NTY1NFk39pLX7nhDAMpZVgWQXyx4lbBOUpcUxqmdEe0_-SQi8Wdc8nbZLFxOurnish4LQJCMgTs_m1Vu7UwptIwsOPEHvHdhxf_5sZ5Anlb6gQiMhabVrZINko3dUir1b5hOWSICO4bQOX7q3ki0zlSldI-VdCpPdESi4AMyJusUE1Plejs
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - >-
     How to Fix Formula Errors in Excel 2026: A Comprehensive Troubleshooting

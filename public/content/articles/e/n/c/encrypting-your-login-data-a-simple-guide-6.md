@@ -7,7 +7,7 @@ excerpt: >-
   rise of cyberattacks and data breaches, it's crucial to take steps to protect
   your
 featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - 'Encrypting your login data: A simple guide'

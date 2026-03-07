@@ -10,7 +10,7 @@ excerpt: >-
   music, podcasts, and educational content. However, for audiophiles and
   profession
 featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - Chrome extension for YouTube MP3 320kbps

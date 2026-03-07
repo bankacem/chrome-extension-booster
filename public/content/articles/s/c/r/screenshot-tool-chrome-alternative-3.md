@@ -8,7 +8,7 @@ excerpt: >-
   alternative opti
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEjH0AM_uiZPbaNp8i8dJssly-PFcxm2qAdUBar12q2nkVTPK-5Sj37f_9UtooJsNE_4VSueuVmX1e8Q965L2QknMdNnNE110vnUB1-0QWftYThYvTn6mbpqvuS9aW_-YNMSwlh4ZzALInPmhq4w-YN6B-6CthyycsP7zzYfN7_WtwdmmxaGEX7Z0MpHSVU
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - >-
     Discover the Best Screenshot Tool Chrome Alternative for Enhanced

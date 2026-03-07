@@ -7,7 +7,7 @@ excerpt: >-
   while browsing the web? Look no further than the extension chrome deezer, a
   game-c
 featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: Screenshots & Screen Capture
+category: "General"
 tags: []
 keywords:
   - extension chrome deezer

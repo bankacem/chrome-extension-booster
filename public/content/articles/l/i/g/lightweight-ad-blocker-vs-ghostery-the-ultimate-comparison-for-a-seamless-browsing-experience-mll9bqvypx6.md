@@ -10,7 +10,7 @@ excerpt: >-
   page loads and compromising user experience. To combat this, many users turn
   to ad b
 featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
-category: Appearance & Themes
+category: "Redirect & Navigation"
 tags: []
 keywords:
   - Lightweight ad blocker vs Ghostery

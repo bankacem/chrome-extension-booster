@@ -9,7 +9,7 @@ excerpt: >-
   get chrome is a phrase that can unlock a world of possibilities. With the vast
   ar
 featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: Screenshots & Screen Capture
+category: "General"
 tags: []
 keywords:
   - extension get chrome

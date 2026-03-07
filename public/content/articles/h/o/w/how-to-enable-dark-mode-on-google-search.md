@@ -7,7 +7,7 @@ excerpt: >-
   you want to reduce eye strain and give your eyes a break? Enabling Dark Mode
   on Go
 featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: Screenshots & Screen Capture
+category: "Appearance & Themes"
 tags: []
 keywords:
   - How to enable Dark Mode on Google Search

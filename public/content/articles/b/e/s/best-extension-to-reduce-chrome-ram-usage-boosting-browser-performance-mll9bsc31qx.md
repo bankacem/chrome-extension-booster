@@ -8,7 +8,7 @@ excerpt: >-
   security, and extensive library of extensions. However, one of the common
   issues tha
 featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: Redirect & Navigation
+category: "Performance & Memory"
 tags: []
 keywords:
   - Best extension to reduce Chrome RAM usage

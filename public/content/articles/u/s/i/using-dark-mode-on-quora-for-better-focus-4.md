@@ -7,7 +7,7 @@ excerpt: >-
   challenging to focus on the content due to the bright screen? Using Dark Mode
   on Quora
 featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: Screenshots & Screen Capture
+category: "Appearance & Themes"
 tags: []
 keywords:
   - Using Dark Mode on Quora for better focus

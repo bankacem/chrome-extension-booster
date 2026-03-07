@@ -10,7 +10,7 @@ excerpt: >-
   audio content has never been higher. Whether you are a student looking to
   archive lect
 featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
-category: Appearance & Themes
+category: "Productivity & Tools"
 tags: []
 keywords:
   - Best YouTube to MP3 Chrome extension 2026

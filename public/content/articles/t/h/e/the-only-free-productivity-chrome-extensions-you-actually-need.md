@@ -9,7 +9,7 @@ excerpt: >-
   directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEj1LDff8q-RBszXv8DURoXm_fagulis_NA5a-u3ifTFv1cLvTziq88Bh0itYEPXbdqN99hA6fwzBUW0LuwRX1JvIiHY5AINH7s4oQYxIDJwL5MosKkFxNFCueVSp_BxY6s9JjWaeawvrBrJImKwpxVwTpVSPb-OQYlskAwuxlt5DaVnZpcBuznVZmcDv44
-category: Productivity & Tools
+category: "Security & Privacy"
 tags:
   - welcome
   - introduction

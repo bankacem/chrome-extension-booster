@@ -10,7 +10,7 @@ excerpt: >-
   yourself fro
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEhCXGtu4GDfo36tMEyKAk5Qvhqwfw8tLJKO0Ct2MHWPVJySZLYEB-XwL3ZYuwShM-luNB86ASr7HzZcVgL7CYBAue4VyCjPlanAYND_d2Jc2dpCfNJcee_4sPD1TSz9HiJgYQltoxPECdMSWPVmOj5z7Zfuv3cOIswqrF2yrq2-VDCBq0gtARjtQblk8wg
-category: Redirect & Navigation
+category: "Security & Privacy"
 tags:
   - Creating Strong
   - 'Unhackable Passwords for Beginners: A Comprehensive Guide'

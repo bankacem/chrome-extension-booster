@@ -10,7 +10,7 @@ excerpt: >-
   users. With the increasing number of data breaches and cyber attacks, it's
   essentia
 featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: Redirect & Navigation
+category: "Security & Privacy"
 tags: []
 keywords:
   - Best Chrome extensions for privacy 2026

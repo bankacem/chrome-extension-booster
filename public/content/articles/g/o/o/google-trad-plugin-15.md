@@ -10,7 +10,7 @@ excerpt: >-
   communicati
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEgxZ9z88EpkPGWG1PHB2Nz75X22A4GLFtzfZ3aiKWJxKCOkoivXL_Z5JRhr7xrw_vLWXVgATJkTKNZ-JGp_vMtT5N29qL4LRdzjAq9kKfDI-Nc11-Sn-n4rZCPfTSlH-cOZAEyKhG2Ji4uXOFYYJLYNsUFQPuaiiVqQRg9tsmz-UTXX_TJZYXKG_f1gEdA
-category: Screenshots & Screen Capture
+category: "General"
 tags: []
 keywords:
   - google trad plugin

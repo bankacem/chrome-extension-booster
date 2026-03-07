@@ -7,7 +7,7 @@ excerpt: >-
   people falling victim to this type of crime every year. Learning how to
   protect you
 featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: Redirect & Navigation
+category: "Security & Privacy"
 tags: []
 keywords:
   - How to protect your accounts from identity theft

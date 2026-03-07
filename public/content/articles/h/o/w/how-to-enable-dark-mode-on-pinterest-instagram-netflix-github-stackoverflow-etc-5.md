@@ -11,7 +11,7 @@ excerpt: >-
   Instagram, N
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEhCzHMGJIS_EAs54fyVjlpmTKm4cJLu5rB72Tz1LmDe5KH4E8Ha2ASHEtDJr4Kw9uWF3BplP0ctSuFEbIPzqA5B1Qjc2WxzMyonVDWflpRGfpiD9VIloks6_CB1fXZyJauWElcxJgbiWvoKTu4j2nf1gtcKQBKzflsrJ7Vy9xkyIsLx2-THIAapaxfvE58
-category: Screenshots & Screen Capture
+category: "Appearance & Themes"
 tags: []
 keywords:
   - How to enable Dark Mode on Pinterest Instagram

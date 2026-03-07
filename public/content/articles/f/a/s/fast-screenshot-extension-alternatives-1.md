@@ -10,7 +10,7 @@ excerpt: >-
   You'r
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEj-20fOEAvbIUudDyIOLmJDuAH8HLy704Ia_YPQBMYyN1_hHVFLfQVQqysta2CiRAts4Z13SfVVO-Y7J1PxC8KcRX32eRoz7dImwCYlyLjQoP5Wp99TZCeTaoP0Cvp9EzGjCXOiNbO1v9fW6oQ8NWntGqjjdmE-v5iBuJ_mEbpNB1or2o3wZzO9H8RxgvQ
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - >-
     Discover the Best Fast Screenshot Extension Alternatives for Seamless

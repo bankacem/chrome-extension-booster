@@ -10,7 +10,7 @@ excerpt: >-
   facilitates
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEinXhOUBIutAKMsFdYRTzz1eglp2D04dem4ef765rbazvpfienqCAPqx0yUC5mvAk1OpLkQcvAX84ZlJCdsy-w31nM9rIT46NzT0q976mJ6V-a8txYbYvJdm_6GJ5qGN3t2_2StHFxRstCtN2O9xLzDD-u1tU1o11i8WCnmMtnlVXCtHtuHgTAIHAHg-UA
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - >-
     Discover the Best Screenshot Editor Chrome: Unlocking Seamless Visual

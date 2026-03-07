@@ -10,7 +10,7 @@ excerpt: >-
   visualize da
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEgl5Zet9STNZWc3PFkXkhIlTqg_fFo1rnj4VBZt2r_5VQYAQMUozwdBnzqhrJnrCllK3i7bYBfunFSiIUKv_1-ZZIwpp3quEx3cq6mUVscXsN3ND5lWB71HAWoL5dDJyRpG3JYp_oqA-On40AQCKUBc7sq0ZFs3aj92sCJTN1Mrpo8fp5PJp9_g4qdm5Y0
-category: Screenshots & Screen Capture
+category: "Appearance & Themes"
 tags:
   - >-
     Best Spreadsheet Tools for Small Business Owners: A Comprehensive Guide for

@@ -9,7 +9,7 @@ excerpt: >-
   extension is crucial. Two popular options for Chrome users are Privacy Badger
   and Gh
 featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: Redirect & Navigation
+category: "Security & Privacy"
 tags: []
 keywords:
   - Privacy Badger vs Ghostery for Chrome

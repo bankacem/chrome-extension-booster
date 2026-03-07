@@ -5,7 +5,7 @@ slug: adblocker-for-android-chrome
 description: "Tired of intrusive ads on your Android phone? Discover the best adblocker for Android Chrome and learn how to install our verified Adblock CRX utility for a cleaner, faster mobile web."
 excerpt: "Tired of intrusive ads on your Android phone? Discover the best adblocker for Android Chrome and learn how to install our verified Adblock CRX utility for a cleaner, faster mobile web."
 published_at: "2025-05-20T10:00:00.000Z"
-category: "Security & Privacy"
+category: "Redirect & Navigation"
 author: "Admin"
 status: "published"
 reading_time: 5

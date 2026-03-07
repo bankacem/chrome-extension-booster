@@ -8,7 +8,7 @@ excerpt: >-
   sensitive i
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEieY2R6YnSBM_E1h7vvIAyuap4U4BE0tSyeiRDDY9Fb48vVrJ-c4eq3QlZji_MBYmxaXicwmKC3EzlgpENdKpZyXnV_CYE1R0PoVUsYI56bNoQ7v3CjUuEFFPdyGKkMZptRpGT00GAhEGk4G_RzbYOlePXrttOjLwIza-qXQztXxmVl8HpsWrTpu5lM7Bk
-category: Redirect & Navigation
+category: "Security & Privacy"
 tags:
   - 'How to Store Passwords Safely in Your Browser: A Comprehensive Guide'
 keywords:

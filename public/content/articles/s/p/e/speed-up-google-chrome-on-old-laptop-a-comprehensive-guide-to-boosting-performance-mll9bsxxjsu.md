@@ -10,7 +10,7 @@ excerpt: >-
   want to speed up Google Chrome on old laptop and enjoy a seamless browsing
   experi
 featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
-category: Appearance & Themes
+category: "Performance & Memory"
 tags: []
 keywords:
   - Speed up Google Chrome on old laptop

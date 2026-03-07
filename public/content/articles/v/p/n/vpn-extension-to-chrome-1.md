@@ -9,7 +9,7 @@ excerpt: >-
   internet? Installing a VPN extension to Chrome can be a game-changer. In this
   articl
 featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: Screenshots & Screen Capture
+category: "Redirect & Navigation"
 tags: []
 keywords:
   - vpn extension to chrome
