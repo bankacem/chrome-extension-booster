@@ -3,8 +3,7 @@ id: 31b52fdd-0f04-41b6-bb51-30819f438792
 title: >-
   Chrome CaptureUnlocking the Power of Chrome Capture Tools 2025 Tools 2025:
   Troubleshooting Capture Errors
-slug: >-
-  unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a
+slug: unlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide
 excerpt: >-
   Welcome to the world of Chrome Capture Tools 2025, where capturing and saving
   web pages, screenshots, and other online content has never been easier. As we

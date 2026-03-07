@@ -947,7 +947,7 @@
   {
     "id": "394205cf-041f-4eab-9b17-3825c7d5d1a0",
     "title": "Visual Content A CompUnlock the Power of Visual Content to Chrome Screenshot Addonsrehensive Guide to Chrome Screenshot Addons: Annotating & Editing Features",
-    "slug": "unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a",
+    "slug": "unlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a",
     "description": "Stop struggling with basic snips. Discover advanced Chrome screenshot extensions that offer one-click captures and powerful built-in image editors.",
     "excerpt": "When it comes to capturing and sharing web content, Chrome Screenshot Addons have revolutionized the way we interact with the internet. Whether you're a student",
     "published_at": "2026-02-22T18:24:08.373+00:00",
@@ -1129,7 +1129,7 @@
   {
     "id": "31b52fdd-0f04-41b6-bb51-30819f438792",
     "title": "Chrome CaptureUnlocking the Power of Chrome Capture Tools 2025 Tools 2025: Troubleshooting Capture Errors",
-    "slug": "unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a",
+    "slug": "unlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide",
     "description": "Enhance your visual communication with professional screen capture tools. Learn how to annotate, edit, and share your captures with teammates effortlessly.",
     "excerpt": "Welcome to the world of Chrome Capture Tools 2025, where capturing and saving web pages, screenshots, and other online content has never been easier. As we dive",
     "published_at": "2026-02-22T15:26:22.412+00:00",
@@ -3988,7 +3988,9 @@
       "mobile adblock",
       "block ads android chrome"
     ],
-    "updated_at": "2025-05-20T10:00:00.000Z"
+    "updated_at": "2025-05-20T10:00:00.000Z",
+    "image_url": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1200",
+    "featured_image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1200"
   },
   {
     "id": "pillar-idm-extension",
@@ -4008,7 +4010,9 @@
       "idm chrome extension",
       "idm integration module"
     ],
-    "updated_at": "2025-05-20T11:00:00.000Z"
+    "updated_at": "2025-05-20T11:00:00.000Z",
+    "image_url": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1200",
+    "featured_image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1200"
   },
   {
     "id": "pillar-popup-blocker-guide",
@@ -4028,6 +4032,8 @@
       "pop up blocker for chrome",
       "block popups chrome"
     ],
-    "updated_at": "2025-05-20T12:00:00.000Z"
+    "updated_at": "2025-05-20T12:00:00.000Z",
+    "image_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200",
+    "featured_image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200"
   }
 ]
