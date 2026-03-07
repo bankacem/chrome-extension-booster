@@ -8,7 +8,7 @@ excerpt: >-
   Are you tired of being limited by language barriers while browsing the
   internet? Do you wish you could effortlessly translate web pages, articles,
   and conversat
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

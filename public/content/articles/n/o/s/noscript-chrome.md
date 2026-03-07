@@ -8,7 +8,7 @@ excerpt: >-
   When it comes to browsing the internet, security and performance are two of
   the top priorities for users. One often overlooked feature that can
   significantly en
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -6,7 +6,7 @@ excerpt: >-
   Welcome to the ultimate quick screenshot Chrome guide, where you'll learn the
   secrets to capturing web pages with ease and precision. In today's digital
   age, sc
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

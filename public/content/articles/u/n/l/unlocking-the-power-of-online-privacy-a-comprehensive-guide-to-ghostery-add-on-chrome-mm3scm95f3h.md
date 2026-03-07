@@ -9,7 +9,7 @@ excerpt: >-
   Are you concerned about your online privacy and security while browsing the
   internet? With the rise of digital tracking and data collection, it's
   essential to t
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
 category: Redirect & Navigation
 tags: []
 keywords:

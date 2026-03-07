@@ -6,7 +6,7 @@ excerpt: >-
   Identity theft is a growing concern in today's digital age, with millions of
   people falling victim to this type of crime every year. Learning how to
   protect you
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
 category: Redirect & Navigation
 tags: []
 keywords:

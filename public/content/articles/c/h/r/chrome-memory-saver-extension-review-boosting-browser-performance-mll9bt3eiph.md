@@ -6,7 +6,7 @@ excerpt: >-
   Are you tired of experiencing slow browser performance due to excessive memory
   usage? Look no further than a Chrome memory saver extension review to discover
   th
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

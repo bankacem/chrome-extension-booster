@@ -9,7 +9,7 @@ excerpt: >-
   Are you tired of using a slow Google Chrome browser on your old laptop? Do you
   want to speed up Google Chrome on old laptop and enjoy a seamless browsing
   experi
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
 category: Appearance & Themes
 tags: []
 keywords:

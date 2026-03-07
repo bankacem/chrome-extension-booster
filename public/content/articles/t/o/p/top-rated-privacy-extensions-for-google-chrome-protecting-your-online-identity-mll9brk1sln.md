@@ -9,7 +9,7 @@ excerpt: >-
   With the increasing concern about online privacy, it's essential to have the
   right tools to protect your personal data while browsing the internet. Top
   rated pr
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
 category: Redirect & Navigation
 tags: []
 keywords:

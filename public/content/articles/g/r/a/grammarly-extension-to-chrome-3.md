@@ -8,7 +8,7 @@ excerpt: >-
   Are you tired of embarrassing typos and grammatical errors in your online
   writing? Look no further than the Grammarly extension to Chrome, a powerful
   tool desig
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -9,7 +9,7 @@ excerpt: >-
   When it comes to protecting your online privacy, choosing the right browser
   extension is crucial. Two popular options for Chrome users are Privacy Badger
   and Gh
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
 category: Redirect & Navigation
 tags: []
 keywords:

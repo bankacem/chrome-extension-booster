@@ -9,7 +9,7 @@ excerpt: >-
   Are you tired of annoying popups and intrusive ads disrupting your online
   experience? A poper blocker (popup blocker) is the solution you need. In this
   article,
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
 category: Redirect & Navigation
 tags: []
 keywords:

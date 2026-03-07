@@ -6,7 +6,7 @@ excerpt: >-
   With the increasing number of online accounts and passwords to manage, it's
   becoming more challenging to keep track of them all. This is where password
   vault ex
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
 category: Redirect & Navigation
 tags: []
 keywords:

@@ -9,7 +9,7 @@ excerpt: >-
   When it comes to online browsing, ads can be a major nuisance, slowing down
   page loads and compromising user experience. To combat this, many users turn
   to ad b
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
 category: Appearance & Themes
 tags: []
 keywords:

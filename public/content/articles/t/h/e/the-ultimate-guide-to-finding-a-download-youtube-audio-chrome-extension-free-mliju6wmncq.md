@@ -9,7 +9,7 @@ excerpt: >-
   In the digital age, audio content has become a cornerstone of our daily
   routines. Whether it is a podcast, a rare lecture, or a royalty-free music
   track for a c
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

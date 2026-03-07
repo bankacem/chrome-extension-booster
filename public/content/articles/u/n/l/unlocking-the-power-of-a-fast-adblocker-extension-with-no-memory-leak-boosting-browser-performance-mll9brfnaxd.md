@@ -9,7 +9,7 @@ excerpt: >-
   Are you tired of dealing with slow browser performance and annoying ads? Look
   no further than a fast adblocker extension that not only blocks unwanted ads
   but a
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
 category: Redirect & Navigation
 tags: []
 keywords:

@@ -6,7 +6,7 @@ excerpt: >-
   Are you looking to enhance your browsing experience on your Android device
   with the help of a Chrome extension to Chrome Android? With the vast array of
   extensi
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

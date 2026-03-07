@@ -9,7 +9,7 @@ excerpt: >-
   As we navigate the digital landscape of 2026, the demand for high-quality
   audio content has never been higher. Whether you are a student looking to
   archive lect
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
 category: Appearance & Themes
 tags: []
 keywords:

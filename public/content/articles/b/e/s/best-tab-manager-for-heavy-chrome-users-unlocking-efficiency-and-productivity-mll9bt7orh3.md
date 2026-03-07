@@ -7,7 +7,7 @@ excerpt: >-
   As a heavy Chrome user, you're likely no stranger to the frustration of
   dealing with multiple tabs open at once. Whether you're a researcher, a
   developer, or si
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=1200"
 category: Performance & Memory
 tags: []
 keywords:

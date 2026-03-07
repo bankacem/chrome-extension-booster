@@ -6,7 +6,7 @@ excerpt: >-
   When it comes to capturing web pages, a quick screenshot Chrome review is
   essential to understand the best tools available. In this article, we will
   delve into
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: Screenshots & Screen Capture
 tags: []
 keywords:

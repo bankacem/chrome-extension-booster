@@ -9,7 +9,7 @@ excerpt: >-
   When it comes to protecting your online privacy, choosing the right tool can
   be a daunting task. Two popular options, Privacy Badger and Ghostery, have
   been mak
-featured_image: null
+featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
 category: General
 tags: []
 keywords:
