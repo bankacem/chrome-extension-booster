@@ -7,7 +7,7 @@ excerpt: >-
   to stop trackers on Chrome without slowing down your browsing experience?
   You're n
 featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: Redirect & Navigation
+category: "Performance & Memory"
 tags: []
 keywords:
   - Stop trackers on Chrome without slowing down

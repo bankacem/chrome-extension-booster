@@ -10,7 +10,7 @@ excerpt: >-
   Chrom
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEhGYv3wW7VCCFqfCfZOgwmJIy4zW1uhMgDFwiIsJHBToaBxVPuPB8rvUf8AixxsX6rEZf1_Tb3DU4re8JhAYwM8qiXBNw5qwh_0CEEsVqeey82FNuktMf5KRXyM2oSqgv6qFZjmHfFRXthKy_8QwCz-BZI5ouLKF9diJ40PNu1Xz1kpuc_VINly7RThbs0
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - 'Capture Screen in Chrome: A Comprehensive Guide to Effortless Screenshotting'
 keywords:

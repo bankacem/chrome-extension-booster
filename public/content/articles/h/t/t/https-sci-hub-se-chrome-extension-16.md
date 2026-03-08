@@ -10,7 +10,7 @@ excerpt: >-
   knowledge. One such
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEhqaX02XKz6OY3iVZ-n2fuxgdcoiIJSnKdb_Q-hZN2Zt19PKDRT6XV5-z1gcA3rskAde1DrUct26YZY5pvHbF6I9LD04J0frzKiNCmaOdJEIen6h8iWc4yMnH0xPgfZiqNpBingYYL84hZxAKsB6boT1tdr0oeVr-QOME5TQYCNhW5GOAjGDyhxk_eYntw
-category: Screenshots & Screen Capture
+category: "General"
 tags: []
 keywords:
   - https sci hub se chrome extension

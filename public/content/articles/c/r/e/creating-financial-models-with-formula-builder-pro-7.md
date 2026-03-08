@@ -10,7 +10,7 @@ excerpt: >-
   you are
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEgoxNtAsqGYOZ6SUUfyXXOy93283dJkSkQX0Mgmu9R4HJgb4Ln7Edny7UmNurr43FdDTtNZ2PJMCiphViiVP6GWttWIaOOiQMvZhIgeJ7zRTEmsiP-Q0s4lFe0uhVabDuNzUbs1phLjrO0AXkFBHfyr84ixgTftNsgYiuzrOJwGjPwq3F_trlXqUNpQbog
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - >-
     Creating Financial Models with Formula Builder Pro: A Comprehensive Guide

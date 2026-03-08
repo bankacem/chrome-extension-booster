@@ -10,7 +10,7 @@ excerpt: >-
   was o
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEiU2X5osWZABZ4-Q7WLSKBfgXBv3EKu-tTcNVYmulvlRvPwJ8XkUAD6B6lM_izfr1ZiDPzAunw-zSM4eJiP5gndu2vuFvb82FGPvHIgxX3O4BwhpJrB5oSVpqu9p7f3m3J8tl2hNyAl2oa9ypjvPqYUd3gris01jO3FSYXjUEOyoXBPOKpUrmrGwUTvGq0
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags:
   - >-
     Top 10 Google Sheets Extensions for Accounting: Streamlining Financial

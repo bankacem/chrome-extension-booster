@@ -10,7 +10,7 @@ excerpt: >-
   many
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEiDvFRvIdafwWWF8knOtSDynzlnQUwaZvOud2Zlqpi6RmUv87thqRrnzndTXjygtEJS1nYJF9awZUO8m-r_McwxdiZpCCHdErIZUmptN8Rr_lNJ5ecFlGTbMtysa388PR3RmJ_8Vmkn8KzV9pXcAyzV1mjh9RnVKckiWwIHy2dXXAtBoBtDhVJMIyhgJb4
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags:
   - >-
     Why You Should Avoid Cloud-Based Password Managers: A Comprehensive Review

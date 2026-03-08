@@ -10,7 +10,7 @@ excerpt: >-
   no further than a fast adblocker extension that not only blocks unwanted ads
   but a
 featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: Redirect & Navigation
+category: "Performance & Memory"
 tags: []
 keywords:
   - Fast adblocker extension no memory leak

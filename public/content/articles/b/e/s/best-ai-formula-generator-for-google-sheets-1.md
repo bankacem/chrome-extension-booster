@@ -10,7 +10,7 @@ excerpt: >-
   managemen
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEh3aTZp7utr_-J3-bHeHvC4LeJ7oES9kTvsUiKbeAyxCjiRR0VU_IA_uZSlXPAbcrzDdoqeAEXPcF2vi944_MHACdQO_hhN38Spd8gF7spMXJl8KYheC_Btm7XtqTb4hcIrzwcaGIUIL5Ez5H0pFJVlIKtu9zgId2Ub3bQ1PzVxOFVZa69tsT1pliHK7PU
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - >-
     Best AI Formula Generator for Google Sheets: Enhancing Productivity with

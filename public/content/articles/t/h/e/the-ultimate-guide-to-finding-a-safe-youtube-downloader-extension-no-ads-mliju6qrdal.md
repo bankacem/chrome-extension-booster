@@ -10,7 +10,7 @@ excerpt: >-
   for offline access to video resources has never been greater. Whether you are
   a p
 featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - Safe YouTube downloader extension no ads

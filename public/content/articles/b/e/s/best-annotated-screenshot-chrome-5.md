@@ -10,7 +10,7 @@ excerpt: >-
   screensh
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEilwOtcyw6fdza_vTjUkx84nJGlrr9VWGUshrwVEdqDb2wyQ8hgRG1ThSm9_J6WCBrVoBliFX0UTmRKsb2ziK8ih1TM_ubyTAtEqqMS9hJYel8t1m7sHdmUcKG7whFKDlOwx2ChLbQOzgI0TQ8pzaXfOsNOcgImPUXU-RvaKvNTZj3NXLTZX0zofsrP4Fo
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - >-
     Unlock the Power of Visual Communication: Best Annotated Screenshot Chrome

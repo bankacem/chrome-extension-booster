@@ -10,7 +10,7 @@ excerpt: >-
   provide you with a higher level of browser security and privacy? Ghostery is a
   pop
 featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: Redirect & Navigation
+category: "Security & Privacy"
 tags: []
 keywords:
   - Open source alternative to Ghostery extension

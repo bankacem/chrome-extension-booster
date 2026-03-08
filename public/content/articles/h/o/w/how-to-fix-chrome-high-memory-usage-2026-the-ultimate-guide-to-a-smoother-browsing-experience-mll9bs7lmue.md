@@ -10,7 +10,7 @@ excerpt: >-
   Chrome high memory usage? You're not alone. Many users have been struggling
   with
 featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - How to fix Chrome high memory usage 2026

@@ -10,7 +10,7 @@ excerpt: >-
   Howe
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEiBnfxWKCrdi5moILNZIr4Q7mGIrmEFrYIbnzQFINXXxL_N87idcDeDxDRRaSuAgsA8_WpR8MK-hZ80kIOgI3gx8-nB6hhZnN61aFjfOZvpQ1Q-wIuOhLxQ7EuwuAEYGu6cEnzcPmU6nZXIt_cTU3CVn5Lnqs0M814uEssGsek_F6SCtOmG8cmoXsTGvfA
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - >-
     Automating Business Reports with Formula Builder: Enhancing Corporate

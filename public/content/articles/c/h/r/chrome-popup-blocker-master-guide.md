@@ -5,7 +5,7 @@ slug: chrome-popup-blocker-master-guide
 description: "Stop annoying pop-ups forever. Our master guide covers the best Chrome popup blocker settings and extensions to ensure a clean, distraction-free browsing experience."
 excerpt: "Stop annoying pop-ups forever. Our master guide covers the best Chrome popup blocker settings and extensions to ensure a clean, distraction-free browsing experience."
 published_at: "2025-05-20T12:00:00.000Z"
-category: "Utility"
+category: "Redirect & Navigation"
 author: "Admin"
 status: "published"
 reading_time: 5

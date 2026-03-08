@@ -10,7 +10,7 @@ excerpt: >-
   online security and protect your personal data from potential threats. With
   the rise of
 featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: Redirect & Navigation
+category: "Security & Privacy"
 tags: []
 keywords:
   - >-

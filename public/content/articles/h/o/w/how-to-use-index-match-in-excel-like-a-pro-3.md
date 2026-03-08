@@ -10,7 +10,7 @@ excerpt: >-
   professional
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEi87uRriAYBez2BnqTEF189DCeVPpQSUh-wLjnK4dOZvcEX4tfVMDWb9cssN-ALezAnfzk2KPZvntqebViLo7DPlnYEYcxPEYj3p6Jx736q8RSb_mV4sw2b-aRREaN9vikONzBDmKaqCTRG6Edpz1-KWuzPHUJMuZhC5eDkPl3mxAWDlQv_fpYt6ipPMno
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - 'How to use INDEX MATCH in Excel like a Pro: The Definitive Guide'
 keywords:
