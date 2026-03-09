@@ -7,8 +7,9 @@ excerpt: >-
   Google Chrome is one of the most popular web browsers, known for its speed,
   security, and extensive library of extensions. However, one of the common
   issues tha
-featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
+featured_image: >-
+  https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
 tags: []
 keywords:
   - Best extension to reduce Chrome RAM usage
@@ -20,10 +21,10 @@ status: published
 published_at: '2026-02-24T09:00:01.663+00:00'
 scheduled_at: '2026-02-24T09:00:00+00:00'
 author: AI Generator
-views: 3
+views: 14
 read_time: 5
 created_at: '2026-02-13T19:04:56.192125+00:00'
-updated_at: '2026-03-02T22:31:25.966436+00:00'
+updated_at: '2026-03-06T18:31:55.019834+00:00'
 ---
 
 <h1>Best Extension to Reduce Chrome RAM Usage: Boosting Browser Performance</h1>

@@ -10,7 +10,7 @@ excerpt: >-
   knowledge. One such
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEhqaX02XKz6OY3iVZ-n2fuxgdcoiIJSnKdb_Q-hZN2Zt19PKDRT6XV5-z1gcA3rskAde1DrUct26YZY5pvHbF6I9LD04J0frzKiNCmaOdJEIen6h8iWc4yMnH0xPgfZiqNpBingYYL84hZxAKsB6boT1tdr0oeVr-QOME5TQYCNhW5GOAjGDyhxk_eYntw
-category: "General"
+category: General
 tags: []
 keywords:
   - https sci hub se chrome extension
@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-01-24T18:21:56.386948+00:00'
-updated_at: '2026-02-22T17:31:02.032354+00:00'
+updated_at: '2026-03-03T17:57:29.350274+00:00'
 description: >-
   Improve your online efficiency with our curated list of must-have extensions.
   From research tools to task managers, enhance your browsing experience.

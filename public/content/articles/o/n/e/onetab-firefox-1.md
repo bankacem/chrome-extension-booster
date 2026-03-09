@@ -6,8 +6,9 @@ excerpt: >-
   Are you tired of cluttered browser tabs and decreased productivity? Look no
   further than OneTab Firefox, a game-changing extension that helps you
   streamline you
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
 tags: []
 keywords:
   - onetab firefox
@@ -21,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 4
 created_at: '2026-01-24T14:11:48.854248+00:00'
-updated_at: '2026-02-13T19:06:13.709139+00:00'
+updated_at: '2026-03-03T17:57:35.913188+00:00'
 description: >-
   Get the most out of your web browser with our professional tool overview. We
   cover installation, configuration, and pro-tips for power users today.

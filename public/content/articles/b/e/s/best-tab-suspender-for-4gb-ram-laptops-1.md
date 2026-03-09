@@ -24,7 +24,7 @@ author: AI Generator
 views: 1
 read_time: 8
 created_at: '2026-01-20T14:42:01.449735+00:00'
-updated_at: '2026-02-13T19:06:20.880628+00:00'
+updated_at: '2026-03-03T17:57:57.767882+00:00'
 description: >-
   Stop Chrome from hogging your system resources. Our guide shows you how to
   significantly reduce RAM usage and improve overall browser performance fast.

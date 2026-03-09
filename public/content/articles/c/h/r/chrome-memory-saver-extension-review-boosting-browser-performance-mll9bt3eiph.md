@@ -6,8 +6,9 @@ excerpt: >-
   Are you tired of experiencing slow browser performance due to excessive memory
   usage? Look no further than a Chrome memory saver extension review to discover
   th
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
 tags: []
 keywords:
   - Chrome memory saver extension review
@@ -22,7 +23,7 @@ author: AI Generator
 views: 1
 read_time: 6
 created_at: '2026-02-13T19:04:57.185808+00:00'
-updated_at: '2026-02-28T15:11:57.065594+00:00'
+updated_at: '2026-03-03T17:57:23.967902+00:00'
 ---
 
 <h1>Chrome Memory Saver Extension Review: Boosting Browser Performance</h1>

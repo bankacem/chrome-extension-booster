@@ -25,7 +25,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-21T14:32:25.598854+00:00'
-updated_at: '2026-02-21T02:11:01.898524+00:00'
+updated_at: '2026-03-03T17:57:44.623936+00:00'
 description: >-
   Our expert review covers the fastest ways to document your work visually. Find
   the perfect capture tool for tutorials, feedback, and documentation.

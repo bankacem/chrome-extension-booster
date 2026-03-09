@@ -8,8 +8,9 @@ excerpt: >-
   When it comes to capturing web pages, whether for personal or professional
   use, having the right tools at your disposal can make all the difference. One
   such to
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "General"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: General
 tags: []
 keywords:
   - extension chrome screen page
@@ -23,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-01-24T14:12:02.165139+00:00'
-updated_at: '2026-02-13T19:06:10.076658+00:00'
+updated_at: '2026-03-03T17:57:32.643139+00:00'
 description: >-
   Discover expert tips for customizing your browsing experience. Learn how to
   integrate powerful addons that save you time and improve your focus.

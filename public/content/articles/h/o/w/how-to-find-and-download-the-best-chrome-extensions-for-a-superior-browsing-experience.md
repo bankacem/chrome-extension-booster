@@ -9,8 +9,9 @@ excerpt: >-
   When it comes to customizing your Google Chrome browser, one of the most
   effective ways to enhance your browsing experience is through the use of
   Chrome extensi
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Productivity & Tools"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Productivity & Tools
 tags: []
 keywords:
   - chrome extension download

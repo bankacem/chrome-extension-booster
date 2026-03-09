@@ -6,8 +6,9 @@ excerpt: >-
   Music lovers rejoice! The extension Deezer Chrome has revolutionized the way
   we listen to music online. With its seamless integration with the Google
   Chrome bro
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "General"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: General
 tags: []
 keywords:
   - extension deezer chrome
@@ -21,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T18:21:49.253213+00:00'
-updated_at: '2026-02-13T19:06:08.816702+00:00'
+updated_at: '2026-03-03T17:57:31.800903+00:00'
 description: >-
   Get the most out of your web browser with our professional tool overview. We
   cover installation, configuration, and pro-tips for power users today.

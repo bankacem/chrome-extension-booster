@@ -10,7 +10,7 @@ excerpt: >-
   managemen
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEh3aTZp7utr_-J3-bHeHvC4LeJ7oES9kTvsUiKbeAyxCjiRR0VU_IA_uZSlXPAbcrzDdoqeAEXPcF2vi944_MHACdQO_hhN38Spd8gF7spMXJl8KYheC_Btm7XtqTb4hcIrzwcaGIUIL5Ez5H0pFJVlIKtu9zgId2Ub3bQ1PzVxOFVZa69tsT1pliHK7PU
-category: "Productivity & Tools"
+category: Productivity & Tools
 tags:
   - >-
     Best AI Formula Generator for Google Sheets: Enhancing Productivity with
@@ -27,7 +27,7 @@ author: AI Generator
 views: 3
 read_time: 9
 created_at: '2026-01-20T15:26:13.446852+00:00'
-updated_at: '2026-02-13T19:06:20.06045+00:00'
+updated_at: '2026-03-03T17:57:56.888053+00:00'
 description: >-
   Get the most out of your web browser with our professional tool overview. We
   cover installation, configuration, and pro-tips for power users today.

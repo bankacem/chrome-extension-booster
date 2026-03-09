@@ -6,8 +6,9 @@ excerpt: >-
   Are you an Android user looking to enhance your browsing experience with
   extension chrome android? You're in luck! Chrome extensions have
   revolutionized the way
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Mobile Optimization"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Mobile Optimization
 tags: []
 keywords:
   - extension chrome android
@@ -22,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T13:04:12.051631+00:00'
-updated_at: '2026-03-02T19:47:06.645206+00:00'
+updated_at: '2026-03-03T17:57:37.747095+00:00'
 ---
 
 <h1>Unlocking the Power of Chrome Extensions on Android: A <a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide">Comprehensive</a> Guide</h1>

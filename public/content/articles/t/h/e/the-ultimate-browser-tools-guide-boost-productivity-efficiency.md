@@ -28,7 +28,7 @@ author: Admin
 views: 1
 read_time: 1
 created_at: '2026-01-19T13:57:19.594423+00:00'
-updated_at: '2026-02-13T19:06:23.706678+00:00'
+updated_at: '2026-03-03T17:57:59.226779+00:00'
 description: >-
   Improve your online efficiency with our curated list of must-have extensions.
   From research tools to task managers, enhance your browsing experience.

@@ -6,8 +6,9 @@ excerpt: >-
   Are you tired of being tracked online while browsing with Chrome? Do you want
   to stop trackers on Chrome without slowing down your browsing experience?
   You're n
-featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
+featured_image: >-
+  https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
 tags: []
 keywords:
   - Stop trackers on Chrome without slowing down
@@ -21,7 +22,7 @@ author: AI Generator
 views: 2
 read_time: 5
 created_at: '2026-02-13T19:04:55.417649+00:00'
-updated_at: '2026-03-02T12:12:33.305198+00:00'
+updated_at: '2026-03-03T17:57:25.79854+00:00'
 description: >-
   Discover expert tips for customizing your browsing experience. Learn how to
   integrate powerful addons that save you time and improve your focus.

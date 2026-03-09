@@ -9,7 +9,8 @@ excerpt: >-
   Are you looking for the best Ghostery alternative for Chrome to enhance your
   browsing experience and protect your online privacy? Look no further. In this
   artic
-featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
+featured_image: >-
+  https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200
 category: Appearance & Themes
 tags: []
 keywords:
@@ -24,7 +25,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-02-13T19:04:54.048667+00:00'
-updated_at: '2026-02-13T19:06:02.163303+00:00'
+updated_at: '2026-03-03T17:57:27.046939+00:00'
 description: >-
   Improve your online privacy with our expert setup guide. Discover the best
   ways to stop trackers from following you across different websites easily.

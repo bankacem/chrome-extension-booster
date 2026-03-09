@@ -9,7 +9,7 @@ excerpt: >-
   directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEiyu_NEwNMe5aMSIF6nOIdeHZSsKGXFK6wvLGhTPsWBL21VhyIVQYXuthc4tgcgVghH5R3sp_IWuav9WJTccdDwYlLD3tTkKiOjTHaBfoZw5hSdwKmi0WOP9wB1JCDuEvq97_fD48TYEAxkmfFVcQ29abKRK0vbgekUmdeBBWAP4ti37PpmJiWBTI1oTvQ
-category: "Appearance & Themes"
+category: Appearance & Themes
 tags:
   - welcome
   - introduction
@@ -33,6 +33,7 @@ description: >-
   Get the most out of your web browser with our professional tool overview. We
   cover installation, configuration, and pro-tips for power users today.
 ---
+
 <h1>Google Chrome Addons Guide Unlock Your Browser's Full Potential: Customization & Theme Guide</h1>
 
 <p><!-- wp:paragraph --></p>

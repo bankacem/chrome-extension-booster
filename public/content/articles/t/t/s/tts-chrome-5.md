@@ -6,8 +6,9 @@ excerpt: >-
   Welcome to the world of text-to-speech (TTS) technology, where the boundaries
   of reading and listening are blurred. With the rise of TTS Chrome extensions,
   user
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "General"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: General
 tags: []
 keywords:
   - tts chrome
@@ -21,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 4
 created_at: '2026-01-24T14:11:51.700914+00:00'
-updated_at: '2026-02-13T19:06:12.524247+00:00'
+updated_at: '2026-03-03T17:57:34.753096+00:00'
 description: >-
   Improve your online efficiency with our curated list of must-have extensions.
   From research tools to task managers, enhance your browsing experience.

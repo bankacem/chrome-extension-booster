@@ -6,8 +6,9 @@ excerpt: >-
   Are you looking for ways to supercharge your browsing experience? Look no
   further than chrometana, a term that has been gaining traction in recent
   years. In thi
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "General"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: General
 tags: []
 keywords:
   - chrometana
@@ -21,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T14:11:52.428236+00:00'
-updated_at: '2026-02-13T19:06:12.29686+00:00'
+updated_at: '2026-03-03T17:57:34.545262+00:00'
 description: >-
   Get the most out of your web browser with our professional tool overview. We
   cover installation, configuration, and pro-tips for power users today.

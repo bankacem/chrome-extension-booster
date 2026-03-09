@@ -6,8 +6,9 @@ excerpt: >-
   Are you looking to harness the capabilities of artificial intelligence
   directly within your browser? The ChatGPT extension to Chrome is an innovative
   tool that
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "General"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: General
 tags: []
 keywords:
   - chatgpt extension to chrome
@@ -21,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T12:58:16.785987+00:00'
-updated_at: '2026-02-16T02:11:00.958666+00:00'
+updated_at: '2026-03-03T17:57:39.842297+00:00'
 description: >-
   Discover expert tips for customizing your browsing experience. Learn how to
   integrate powerful addons that save you time and improve your focus.

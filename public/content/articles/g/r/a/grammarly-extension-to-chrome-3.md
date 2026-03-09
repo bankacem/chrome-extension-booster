@@ -8,8 +8,9 @@ excerpt: >-
   Are you tired of embarrassing typos and grammatical errors in your online
   writing? Look no further than the Grammarly extension to Chrome, a powerful
   tool desig
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
 tags: []
 keywords:
   - grammarly extension to chrome
@@ -23,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T12:58:15.375271+00:00'
-updated_at: '2026-02-16T14:11:02.265331+00:00'
+updated_at: '2026-03-03T17:57:40.297401+00:00'
 description: >-
   Our performance benchmarks reveal the most efficient ways to fix a slow
   browser. Reclaim your RAM and enjoy a smoother, lag-free online experience.

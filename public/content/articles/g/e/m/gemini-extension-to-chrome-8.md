@@ -6,8 +6,9 @@ excerpt: >-
   Are you looking to enhance your browsing experience with the gemini extension
   to chrome? Look no further! In this article, we will delve into the world of
   Gemin
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "General"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: General
 tags: []
 keywords:
   - gemini extension to chrome
@@ -21,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T12:58:19.234546+00:00'
-updated_at: '2026-02-15T08:11:01.974538+00:00'
+updated_at: '2026-03-03T17:57:39.239873+00:00'
 description: >-
   Get the most out of your web browser with our professional tool overview. We
   cover installation, configuration, and pro-tips for power users today.

@@ -6,8 +6,9 @@ excerpt: >-
   Are you tired of straining your eyes while reading Wikipedia articles at
   night? Do you wish there was a way to activate dark mode on Wikipedia for a
   more comfor
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Appearance & Themes"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Appearance & Themes
 tags: []
 keywords:
   - Activate Dark Mode on Wikipedia for night reading
@@ -22,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-21T12:39:42.689952+00:00'
-updated_at: '2026-02-27T08:11:00.517892+00:00'
+updated_at: '2026-03-03T17:57:50.35855+00:00'
 ---
 
 <h1>Activate Dark Mode on Wikipedia for Night Reading: A Comprehensive Guide</h1>

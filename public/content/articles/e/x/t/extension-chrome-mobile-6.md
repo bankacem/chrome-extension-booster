@@ -6,8 +6,9 @@ excerpt: >-
   Are you tired of feeling limited by your mobile browser's capabilities? Do you
   wish you could enhance your browsing experience on-the-go? Look no further
   than e
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
 tags: []
 keywords:
   - extension chrome mobile
@@ -21,7 +22,7 @@ author: AI Generator
 views: 1
 read_time: 5
 created_at: '2026-01-24T13:04:13.940323+00:00'
-updated_at: '2026-03-02T22:31:50.032175+00:00'
+updated_at: '2026-03-03T17:57:36.978589+00:00'
 description: >-
   Improve your online efficiency with our curated list of must-have extensions.
   From research tools to task managers, enhance your browsing experience.

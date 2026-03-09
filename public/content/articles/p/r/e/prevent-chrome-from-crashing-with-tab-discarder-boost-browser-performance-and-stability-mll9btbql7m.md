@@ -9,8 +9,9 @@ excerpt: >-
   Google Chrome is one of the most widely used web browsers, known for its
   speed, simplicity, and extensive library of extensions. However, with multiple
   tabs ope
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
 tags: []
 keywords:
   - Prevent Chrome from crashing with tab discarder
@@ -25,7 +26,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-02-13T19:04:57.526272+00:00'
-updated_at: '2026-03-02T09:00:01.290907+00:00'
+updated_at: '2026-03-03T17:57:23.48885+00:00'
 ---
 
 <h1>Prevent Chrome from Crashing with Tab Discarder: Boost Browser Performance and Stability</h1>

@@ -9,8 +9,9 @@ excerpt: >-
   Are you tired of experiencing slow browsing speeds and frequent crashes due to
   Chrome high memory usage? You're not alone. Many users have been struggling
   with
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
 tags: []
 keywords:
   - How to fix Chrome high memory usage 2026
@@ -22,10 +23,10 @@ status: published
 published_at: '2026-02-23T09:00:07.427+00:00'
 scheduled_at: '2026-02-23T09:00:00+00:00'
 author: AI Generator
-views: 3
+views: 11
 read_time: 5
 created_at: '2026-02-13T19:04:56.051728+00:00'
-updated_at: '2026-03-02T12:12:51.42232+00:00'
+updated_at: '2026-03-06T19:20:15.628274+00:00'
 ---
 
 <h1>How to Fix Chrome High Memory Usage 2026: The Ultimate Guide to a Smoother Browsing Experience</h1>

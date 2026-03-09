@@ -8,7 +8,8 @@ excerpt: >-
   Welcome to the most comprehensive quick screenshot Chrome tutorial you'll ever
   need. In today's digital age, taking screenshots has become an essential skill
   fo
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
 category: Screenshots & Screen Capture
 tags: []
 keywords:
@@ -24,7 +25,7 @@ author: AI Generator
 views: 0
 read_time: 7
 created_at: '2026-01-21T13:00:22.222591+00:00'
-updated_at: '2026-02-24T20:11:00.395709+00:00'
+updated_at: '2026-03-03T17:57:48.000671+00:00'
 ---
 
 <h1>Mastering the Art of Capturing Screenshots: The Ultimate Quick Screenshot Chrome Tutorial</h1>

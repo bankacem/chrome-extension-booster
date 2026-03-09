@@ -6,8 +6,9 @@ excerpt: >-
   Are you tired of using a limited browser on your mobile device? Look no
   further! With extensions to Chrome mobile, you can enhance your browsing
   experience and
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Productivity & Tools"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Productivity & Tools
 tags: []
 keywords:
   - extensions to chrome mobile
@@ -21,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T12:58:26.316291+00:00'
-updated_at: '2026-02-14T02:11:00.848792+00:00'
+updated_at: '2026-03-03T17:57:38.145956+00:00'
 description: >-
   Get the most out of your web browser with our professional tool overview. We
   cover installation, configuration, and pro-tips for power users today.

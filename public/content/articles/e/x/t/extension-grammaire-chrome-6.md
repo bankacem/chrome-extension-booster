@@ -8,8 +8,9 @@ excerpt: >-
   As a writer, student, or professional, ensuring the accuracy and clarity of
   your written communication is paramount. In today's digital age, where content
   creat
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
 tags: []
 keywords:
   - extension grammaire chrome
@@ -23,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T18:21:51.336309+00:00'
-updated_at: '2026-02-13T19:06:07.823693+00:00'
+updated_at: '2026-03-03T17:57:31.212546+00:00'
 description: >-
   Boost your browsing speed and extend laptop battery life. Discover the best
   lightweight extensions for managing memory and reducing CPU load effectively.

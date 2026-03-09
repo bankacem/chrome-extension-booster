@@ -8,8 +8,9 @@ excerpt: >-
   Are you tired of annoying ads disrupting your browsing experience on your
   Android device? Look no further than the extension Google Chrome adblock
   Android, a ga
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Mobile Optimization"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Mobile Optimization
 tags: []
 keywords:
   - extension google chrome adblock android
@@ -23,7 +24,7 @@ author: AI Generator
 views: 11
 read_time: 5
 created_at: '2026-01-24T18:21:50.786838+00:00'
-updated_at: '2026-03-02T22:32:26.165563+00:00'
+updated_at: '2026-03-03T17:57:31.39826+00:00'
 description: >-
   Improve your online efficiency with our curated list of must-have extensions.
   From research tools to task managers, enhance your browsing experience.

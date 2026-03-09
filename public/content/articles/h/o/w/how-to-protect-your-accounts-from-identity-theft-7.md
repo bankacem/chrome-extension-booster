@@ -6,8 +6,9 @@ excerpt: >-
   Identity theft is a growing concern in today's digital age, with millions of
   people falling victim to this type of crime every year. Learning how to
   protect you
-featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
+featured_image: >-
+  https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
 tags: []
 keywords:
   - How to protect your accounts from identity theft
@@ -22,7 +23,7 @@ author: AI Generator
 views: 1
 read_time: 6
 created_at: '2026-01-20T23:11:57.447626+00:00'
-updated_at: '2026-02-28T15:11:22.963419+00:00'
+updated_at: '2026-03-03T17:57:51.413652+00:00'
 ---
 
 <h1>How to Protect Your Accounts from Identity Theft: A Comprehensive Guide</h1>
