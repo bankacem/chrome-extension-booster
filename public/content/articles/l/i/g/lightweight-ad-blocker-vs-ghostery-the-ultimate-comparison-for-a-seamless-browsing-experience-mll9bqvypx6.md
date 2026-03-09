@@ -9,8 +9,9 @@ excerpt: >-
   When it comes to online browsing, ads can be a major nuisance, slowing down
   page loads and compromising user experience. To combat this, many users turn
   to ad b
-featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
-category: "Redirect & Navigation"
+featured_image: >-
+  https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200
+category: Redirect & Navigation
 tags: []
 keywords:
   - Lightweight ad blocker vs Ghostery
@@ -25,7 +26,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-02-13T19:04:54.360451+00:00'
-updated_at: '2026-02-14T08:00:25.920248+00:00'
+updated_at: '2026-03-03T17:57:26.839394+00:00'
 description: >-
   Protect your data with professional tracking protection. Learn how to
   configure advanced security settings and block invasive scripts for a safer

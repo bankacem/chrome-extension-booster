@@ -6,8 +6,9 @@ excerpt: >-
   As we navigate the vast expanse of the internet, it's becoming increasingly
   important to prioritize our online privacy. With the rise of data tracking and
   targe
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
 tags: []
 keywords:
   - ghostery chrome extension
@@ -22,7 +23,7 @@ author: AI Generator
 views: 1
 read_time: 5
 created_at: '2026-02-26T18:17:17.899396+00:00'
-updated_at: '2026-03-02T22:31:35.635182+00:00'
+updated_at: '2026-03-03T17:57:22.794799+00:00'
 ---
 
 <h1>Unlocking Online Privacy: The Power of Ghostery Chrome Extension</h1>

@@ -10,7 +10,7 @@ excerpt: >-
   cursor lags
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEguk0CoxDUrM51q0rzWMoQK_VNu6RYWOZCTKlxhTyh_bpobMiz5ifoLLb_1bENT0Lamc4XR-qczMLXTN0O2PLgFh8uIqsgoce_eO8iXfBjx4C5vv6EO-8ZLN24bFpUDVEbLkpKTToQ3KCAar_zR8RTNyjKfFTQK9rQpWMEhp280h_izAU6YicUcm9qJaSU
-category: "Security & Privacy"
+category: Security & Privacy
 tags:
   - >-
     Stop Chrome From Freezing on Low-End PCs: The Ultimate Guide to a Faster

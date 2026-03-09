@@ -6,7 +6,8 @@ excerpt: >-
   As a programmer, you likely spend a significant amount of time staring at
   screens, typing away at your keyboard, and debugging code. But have you ever
   stopped t
-featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
+featured_image: >-
+  https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200
 category: Appearance & Themes
 tags: []
 keywords:
@@ -22,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-01-21T12:43:50.607234+00:00'
-updated_at: '2026-02-25T08:11:00.876824+00:00'
+updated_at: '2026-03-03T17:57:48.721553+00:00'
 ---
 
 <h1>Why Auto Dark Mode is essential for programmers</h1>

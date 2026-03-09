@@ -9,8 +9,9 @@ excerpt: >-
   Are you tired of using a slow Google Chrome browser on your old laptop? Do you
   want to speed up Google Chrome on old laptop and enjoy a seamless browsing
   experi
-featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
+featured_image: >-
+  https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
 tags: []
 keywords:
   - Speed up Google Chrome on old laptop
@@ -25,7 +26,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-02-13T19:04:57.040478+00:00'
-updated_at: '2026-02-27T09:00:00.555059+00:00'
+updated_at: '2026-03-03T17:57:24.170456+00:00'
 ---
 
 <h1>Speed up Google Chrome on Old Laptop: A Comprehensive Guide to Boosting Performance</h1>

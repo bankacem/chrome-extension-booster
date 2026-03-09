@@ -6,8 +6,9 @@ excerpt: >-
   Are you looking to enhance your browsing experience on your Android device
   with the help of a Chrome extension to Chrome Android? With the vast array of
   extensi
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Productivity & Tools"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Productivity & Tools
 tags: []
 keywords:
   - extension to chrome android
@@ -21,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T13:04:15.105262+00:00'
-updated_at: '2026-02-13T19:06:14.301179+00:00'
+updated_at: '2026-03-03T17:57:36.371858+00:00'
 description: >-
   Boost your daily productivity with these essential browser tools. Master
   advanced features and streamline your digital workflow for maximum efficiency.

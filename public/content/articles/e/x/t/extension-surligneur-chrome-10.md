@@ -8,8 +8,9 @@ excerpt: >-
   Are you tired of tedious note-taking and tedious text highlighting while
   browsing the web? Look no further than the extension surligneur Chrome, a
   game-changer
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Appearance & Themes"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Appearance & Themes
 tags: []
 keywords:
   - extension surligneur chrome
@@ -23,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T18:21:53.440849+00:00'
-updated_at: '2026-02-13T19:06:05.248163+00:00'
+updated_at: '2026-03-03T17:57:30.427414+00:00'
 description: >-
   Boost your daily productivity with these essential browser tools. Master
   advanced features and streamline your digital workflow for maximum efficiency.

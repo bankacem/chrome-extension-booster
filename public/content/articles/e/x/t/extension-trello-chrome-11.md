@@ -8,8 +8,9 @@ excerpt: >-
   Are you looking to boost your productivity and streamline your workflow with
   the help of extension Trello Chrome? Look no further. In this article, we will
   delv
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Productivity & Tools"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Productivity & Tools
 tags: []
 keywords:
   - extension trello chrome
@@ -23,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T18:21:53.97814+00:00'
-updated_at: '2026-02-13T19:06:05.020346+00:00'
+updated_at: '2026-03-03T17:57:30.22379+00:00'
 description: >-
   Improve your online efficiency with our curated list of must-have extensions.
   From research tools to task managers, enhance your browsing experience.

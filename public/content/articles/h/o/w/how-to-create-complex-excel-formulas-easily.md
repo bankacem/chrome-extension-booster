@@ -10,7 +10,7 @@ excerpt: >-
   Howev
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEjZRJcssp-WrXG_QpmeqeB6CFWWLVUkbFHuyq9PLEFme4wzkfWlrsSjLNAU0fbqNjUm9vvG92qvOdRI0Nj7gFPAAsD9p8qjpb6aGm9aLSxZm-MMdP4ua3aYx5znlCpETpBltA1gGGxNQQBVe9-clkXrYIfCw-tp9h2t_zD-bimgd7Hwcgk-fDYWHq-5GC0
-category: "Productivity & Tools"
+category: Productivity & Tools
 tags:
   - 'How to Create Complex Excel Formulas Easily: A Professional Guide'
 keywords:

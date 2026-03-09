@@ -10,7 +10,7 @@ excerpt: >-
   or org
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEg8ksnrXPUqqwQ4PPwXYRtoTHM1blPTEMy5Gq5e7d4cJCgJDT7TGJeGmd9IB-9YJ7IzGDMNEsi5Hm4nhIk_PcvJh9WmbinrDOoo3FdiKuJDsGDLKfmjJEuWisMc__lUvJqFkV_8SXOwnaOGi8fATl3_NDSGCaVpYZOF4Dfqr-778PYi2o5z9RWGlDoOeZI
-category: "Productivity & Tools"
+category: Productivity & Tools
 tags:
   - >-
     Writing VLOOKUP Formulas for Beginners: A Comprehensive Guide to Data

@@ -6,7 +6,8 @@ excerpt: >-
   Are you tired of using complicated screenshot tools that slow down your
   workflow? Look no further! In this comprehensive screenshot tool chrome
   tutorial, we'll
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
 category: Screenshots & Screen Capture
 tags: []
 keywords:
@@ -22,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-21T13:12:20.628812+00:00'
-updated_at: '2026-02-23T14:11:01.618433+00:00'
+updated_at: '2026-03-03T17:57:47.005147+00:00'
 ---
 
 <h1>Mastering the Art of Screenshots: The Ultimate Screenshot Tool Chrome Tutorial</h1>

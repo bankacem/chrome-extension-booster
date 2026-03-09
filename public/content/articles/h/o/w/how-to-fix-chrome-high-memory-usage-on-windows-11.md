@@ -24,7 +24,7 @@ author: AI Generator
 views: 1
 read_time: 8
 created_at: '2026-01-20T14:42:00.892287+00:00'
-updated_at: '2026-02-13T19:06:21.260367+00:00'
+updated_at: '2026-03-03T17:57:57.980548+00:00'
 description: >-
   Running out of memory on your PC? Learn how to use tab hibernation and
   performance tools to keep your browser snappy even with dozens of tabs open.

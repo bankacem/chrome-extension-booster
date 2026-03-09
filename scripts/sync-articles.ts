@@ -98,10 +98,57 @@ interface ArticleIndexItem {
   updated_at: string;
 }
 
+function deduplicateString(str: string): string {
+  if (!str || str.length < 10) return str;
+
+  // 1. Exact half repeat: "abcabc" -> "abc"
+  const mid = Math.floor(str.length / 2);
+  if (str.length % 2 === 0) {
+    const first = str.substring(0, mid);
+    const second = str.substring(mid);
+    if (first === second) return first;
+  }
+
+  // 2. Handle trailing repetitions: "Title Tools Tools" -> "Title Tools"
+  for (let len = Math.floor(str.length / 2); len >= 4; len--) {
+    const suffix = str.substring(str.length - len);
+    const lastIdx = str.lastIndexOf(suffix, str.length - len - 1);
+    if (lastIdx !== -1) {
+      const middle = str.substring(lastIdx + len, str.length - len).trim();
+      if (middle === "" || middle === "-" || middle === "|" || middle === ":") {
+        return str.substring(0, str.length - len).trim();
+      }
+    }
+  }
+
+  // 3. Handle leading repetitions: "Title Title with more" -> "Title with more"
+  for (let len = Math.floor(str.length / 2); len >= 4; len--) {
+    const prefix = str.substring(0, len);
+    const secondIdx = str.indexOf(prefix, len);
+    if (secondIdx !== -1 && secondIdx <= len + 10) {
+       const sep = str.substring(len, secondIdx).trim();
+       if (sep === "" || sep === "-" || sep === "|") {
+         return str.substring(secondIdx);
+       }
+    }
+  }
+
+  return str;
+}
+
 function cleanContent(content: string): string {
   if (!content) return content;
 
-  let cleaned = content;
+  let cleaned = content.trim();
+
+  // Fix "naked URL" corruption: remove raw Blogger image URLs that often appear
+  // at the start of content or after headings.
+  cleaned = cleaned.replace(/(^|\n|<\/h\d>|<\/p>)\s*https?:\/\/blogger\.googleusercontent\.com\/[^<>\s]+\s*(\n|<|$)/gi, '$1$2');
+  cleaned = cleaned.replace(/(^|\n|<\/h\d>|<\/p>)\s*https?:\/\/\S+\.(?:jpg|jpeg|png|webp|gif)\s*(\n|<|$)/gi, '$1$2');
+
+  // Fallback for very start of content without preceding tags
+  cleaned = cleaned.replace(/^(https?:\/\/blogger\.googleusercontent\.com\/\S+)\s*/i, '');
+  cleaned = cleaned.replace(/^(https?:\/\/\S+\.(?:jpg|jpeg|png|webp|gif))\s*/i, '');
 
   // If content is JSON-wrapped, handle the inner content
   let isJson = false;
@@ -198,12 +245,15 @@ async function sync() {
     const dbMetadata: Record<string, unknown> = { ...article };
     delete dbMetadata.content;
 
-    const rawSlugFromDb = String(dbMetadata.slug || "").trim();
+    let rawSlugFromDb = String(dbMetadata.slug || "").trim();
     if (!rawSlugFromDb) {
       console.warn(`[Validation] Skipping article ${article.id}: Missing slug.`);
       skippedCount++;
       continue;
     }
+
+    // Fix garbled repetitions in slugs from DB
+    rawSlugFromDb = deduplicateString(rawSlugFromDb);
 
     const normalizedSlug = normalizeSlug(rawSlugFromDb);
 
@@ -241,9 +291,13 @@ async function sync() {
     for (const key in m) {
       const val = m[key];
       if (typeof val === 'string') {
-        m[key] = val.trim();
+        let cleanedVal = val.trim();
+        if (key === 'title' || key === 'slug') {
+          cleanedVal = deduplicateString(cleanedVal);
+        }
+        m[key] = cleanedVal;
       } else if (Array.isArray(val)) {
-        m[key] = val.map((item: unknown) => typeof item === 'string' ? item.trim() : item);
+        m[key] = val.map((item: unknown) => typeof item === 'string' ? deduplicateString(item.trim()) : item);
       }
     }
 

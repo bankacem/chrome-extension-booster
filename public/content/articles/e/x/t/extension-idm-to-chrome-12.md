@@ -8,8 +8,9 @@ excerpt: >-
   Are you looking to take your Chrome browsing experience to the next level?
   Integrating an extension IDM to Chrome can be a game-changer. In this article,
   we'll
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Productivity & Tools"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Productivity & Tools
 tags: []
 keywords:
   - extension idm to chrome
@@ -23,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T12:58:23.545569+00:00'
-updated_at: '2026-02-14T08:11:01.279155+00:00'
+updated_at: '2026-03-03T17:57:38.397903+00:00'
 description: >-
   Improve your online efficiency with our curated list of must-have extensions.
   From research tools to task managers, enhance your browsing experience.

@@ -25,10 +25,10 @@ status: published
 published_at: '2026-01-30T09:00:01.037+00:00'
 scheduled_at: '2026-01-30T09:00:00+00:00'
 author: Admin
-views: 1
+views: 2
 read_time: 1
 created_at: '2026-01-19T13:57:24.243317+00:00'
-updated_at: '2026-02-02T13:59:30.681939+00:00'
+updated_at: '2026-03-03T17:57:00.594941+00:00'
 description: >-
   Discover expert tips for customizing your browsing experience. Learn how to
   integrate powerful addons that save you time and improve your focus.

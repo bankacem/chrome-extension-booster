@@ -6,8 +6,9 @@ excerpt: >-
   Are you tired of the bright and overwhelming interface of the Amazon website?
   Do you want to know how to force Dark Mode on Amazon website for a more
   comfortabl
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Appearance & Themes"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Appearance & Themes
 tags: []
 keywords:
   - How to force Dark Mode on Amazon website
@@ -22,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-21T12:39:43.298276+00:00'
-updated_at: '2026-02-27T02:11:00.888349+00:00'
+updated_at: '2026-03-03T17:57:50.105809+00:00'
 ---
 
 <h1>How to Force Dark Mode on Amazon Website: A Step-by-Step Guide</h1>

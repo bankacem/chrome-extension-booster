@@ -9,8 +9,9 @@ excerpt: >-
   Are you looking for an open source alternative to Ghostery extension that can
   provide you with a higher level of browser security and privacy? Ghostery is a
   pop
-featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
+featured_image: >-
+  https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
 tags: []
 keywords:
   - Open source alternative to Ghostery extension
@@ -24,7 +25,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-02-13T19:04:55.599279+00:00'
-updated_at: '2026-02-20T09:00:07.311946+00:00'
+updated_at: '2026-03-03T17:57:25.591002+00:00'
 description: >-
   Stay anonymous while browsing the web. Our guide covers essential tips for
   maintaining digital security and preventing unauthorized data collection.

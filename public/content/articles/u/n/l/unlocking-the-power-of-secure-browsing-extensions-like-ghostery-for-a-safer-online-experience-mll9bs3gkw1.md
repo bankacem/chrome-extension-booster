@@ -9,8 +9,9 @@ excerpt: >-
   As the internet continues to evolve, online security has become a major
   concern for individuals and organizations alike. With the rise of cyber
   threats and data
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
 tags: []
 keywords:
   - Secure browsing extension like Ghostery
@@ -24,7 +25,7 @@ author: AI Generator
 views: 2
 read_time: 5
 created_at: '2026-02-13T19:04:55.893666+00:00'
-updated_at: '2026-03-02T12:12:46.499435+00:00'
+updated_at: '2026-03-03T17:57:25.215076+00:00'
 description: >-
   Improve your online privacy with our expert setup guide. Discover the best
   ways to stop trackers from following you across different websites easily.

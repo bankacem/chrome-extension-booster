@@ -9,8 +9,9 @@ excerpt: >-
   Are you concerned about your online privacy and security while browsing the
   internet? With the rise of digital tracking and data collection, it's
   essential to t
-featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
+featured_image: >-
+  https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
 tags: []
 keywords:
   - ghostery add on chrome
@@ -22,10 +23,10 @@ status: published
 published_at: '2026-03-02T09:00:01.337+00:00'
 scheduled_at: '2026-03-02T09:00:00+00:00'
 author: AI Generator
-views: 0
+views: 6
 read_time: 5
 created_at: '2026-02-26T18:17:18.674111+00:00'
-updated_at: '2026-03-02T19:35:14.510907+00:00'
+updated_at: '2026-03-05T22:12:29.812747+00:00'
 ---
 
 <h1>Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery Add On Chrome</h1>

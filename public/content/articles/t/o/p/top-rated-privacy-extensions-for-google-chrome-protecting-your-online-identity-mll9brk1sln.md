@@ -9,8 +9,9 @@ excerpt: >-
   With the increasing concern about online privacy, it's essential to have the
   right tools to protect your personal data while browsing the internet. Top
   rated pr
-featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
+featured_image: >-
+  https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
 tags: []
 keywords:
   - Top rated privacy extensions for Google Chrome
@@ -22,10 +23,10 @@ status: published
 published_at: '2026-02-18T09:00:01.16+00:00'
 scheduled_at: '2026-02-18T09:00:00+00:00'
 author: AI Generator
-views: 0
+views: 3
 read_time: 5
 created_at: '2026-02-13T19:04:55.25577+00:00'
-updated_at: '2026-02-18T09:00:01.196498+00:00'
+updated_at: '2026-03-07T04:47:32.335331+00:00'
 description: >-
   Protect your data with professional tracking protection. Learn how to
   configure advanced security settings and block invasive scripts for a safer

@@ -9,7 +9,7 @@ excerpt: >-
   directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEg0pk1JWqr3lRxU8AgBHFCl6mxWiT-Y9M8LYY4Wz44BCa9XxVnCPOmdTkU0CWJnfaJbEXa6d_QgLRGP8-ZHY_2XWIgTN7id1PSNLeBoH695UPoi8w39jFXSfM5hx3sk1YykHhWAyqeIRBNM-Vzz1_hUrNIh2nc7qbbUySW1bYX3EKcQ387bVVUE-KFj8JU
-category: "Appearance & Themes"
+category: Appearance & Themes
 tags:
   - welcome
   - introduction

@@ -6,8 +6,9 @@ excerpt: >-
   With the increasing number of online accounts and passwords to manage, it's
   becoming more challenging to keep track of them all. This is where password
   vault ex
-featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
+featured_image: >-
+  https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
 tags: []
 keywords:
   - Top free password vault extensions for Chrome
@@ -22,7 +23,7 @@ author: AI Generator
 views: 1
 read_time: 6
 created_at: '2026-01-20T23:11:58.643469+00:00'
-updated_at: '2026-02-28T15:12:05.995726+00:00'
+updated_at: '2026-03-03T17:57:51.207593+00:00'
 ---
 
 <h1>Top Free Password Vault Extensions for Chrome: Secure Your Online Presence</h1>

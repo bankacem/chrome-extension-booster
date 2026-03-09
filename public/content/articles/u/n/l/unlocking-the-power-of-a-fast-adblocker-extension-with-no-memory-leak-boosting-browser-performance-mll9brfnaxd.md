@@ -9,8 +9,9 @@ excerpt: >-
   Are you tired of dealing with slow browser performance and annoying ads? Look
   no further than a fast adblocker extension that not only blocks unwanted ads
   but a
-featured_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
+featured_image: >-
+  https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
 tags: []
 keywords:
   - Fast adblocker extension no memory leak
@@ -24,7 +25,7 @@ author: AI Generator
 views: 2
 read_time: 6
 created_at: '2026-02-13T19:04:55.034757+00:00'
-updated_at: '2026-03-01T21:38:52.387196+00:00'
+updated_at: '2026-03-03T17:57:26.230973+00:00'
 description: >-
   Improve your online privacy with our expert setup guide. Discover the best
   ways to stop trackers from following you across different websites easily.

@@ -46,24 +46,10 @@ async function generateSitemap() {
       const slug = normalizeSlug(article.slug);
       const title = (article as { title?: string }).title?.toLowerCase() || "";
 
-      // Keyword prioritization
-      let priority = "0.7";
-      if (
-        title.includes("adblocker") ||
-        title.includes("adblock") ||
-        title.includes("android") ||
-        title.includes("idm extension") ||
-        title.includes("ghostery") ||
-        title.includes("popup blocker") ||
-        title.includes("internet download manager")
-      ) {
-        priority = "0.9";
-      }
-
       return {
         url: `/blog/${slug}`,
         changefreq: "monthly",
-        priority: priority,
+        priority: "0.7",
         lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
       };
     });

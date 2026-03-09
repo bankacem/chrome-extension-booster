@@ -8,8 +8,9 @@ excerpt: >-
   Are you tired of limited browsing capabilities on your Android device? Look no
   further! The Chrome Web Store offers a wide range of Android extensions that
   can
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Productivity & Tools"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Productivity & Tools
 tags: []
 keywords:
   - chrome web store android extensions download
@@ -23,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T13:04:14.320329+00:00'
-updated_at: '2026-02-13T19:06:14.740755+00:00'
+updated_at: '2026-03-03T17:57:36.782846+00:00'
 description: >-
   Get the most out of your web browser with our professional tool overview. We
   cover installation, configuration, and pro-tips for power users today.

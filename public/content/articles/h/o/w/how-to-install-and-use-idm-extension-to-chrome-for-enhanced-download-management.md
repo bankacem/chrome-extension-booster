@@ -9,8 +9,9 @@ excerpt: >-
   Are you tired of slow download speeds and disorganized file management in your
   Chrome browser? Look no further than the idm extension to chrome, a
   game-changing
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Productivity & Tools"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Productivity & Tools
 tags: []
 keywords:
   - idm extension to chrome
@@ -22,10 +23,10 @@ status: published
 published_at: '2026-02-17T08:11:00.338+00:00'
 scheduled_at: '2026-02-17T08:11:00+00:00'
 author: AI Generator
-views: 0
+views: 3
 read_time: 5
 created_at: '2026-01-24T12:58:13.273423+00:00'
-updated_at: '2026-03-02T19:47:07.133367+00:00'
+updated_at: '2026-03-07T04:45:56.906262+00:00'
 ---
 
 <h1>How to Install and Use IDM Extension to Chrome for Enhanced Download Management</h1>

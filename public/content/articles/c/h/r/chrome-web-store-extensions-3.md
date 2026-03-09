@@ -6,8 +6,9 @@ excerpt: >-
   Are you tired of using the same old browser features and wanting to take your
   browsing experience to the next level? Look no further than Chrome Web Store
   exten
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Appearance & Themes"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Appearance & Themes
 tags: []
 keywords:
   - chrome web store extensions
@@ -21,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T13:04:12.815297+00:00'
-updated_at: '2026-02-13T19:06:15.932178+00:00'
+updated_at: '2026-03-03T17:57:37.373867+00:00'
 description: >-
   Get the most out of your web browser with our professional tool overview. We
   cover installation, configuration, and pro-tips for power users today.

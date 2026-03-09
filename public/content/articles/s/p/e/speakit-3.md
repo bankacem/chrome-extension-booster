@@ -6,8 +6,9 @@ excerpt: >-
   Imagine being able to interact with your computer or mobile device using just
   your voice. No more typing, no more clicking - just speak, and your device
   respond
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Appearance & Themes"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Appearance & Themes
 tags: []
 keywords:
   - speakit
@@ -21,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-01-24T14:11:50.27173+00:00'
-updated_at: '2026-02-13T19:06:13.216538+00:00'
+updated_at: '2026-03-03T17:57:35.130163+00:00'
 description: >-
   Boost your daily productivity with these essential browser tools. Master
   advanced features and streamline your digital workflow for maximum efficiency.

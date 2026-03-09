@@ -8,8 +8,9 @@ excerpt: >-
   Are you looking to ajouter extension Chrome to your browser, but not sure
   where to start? With thousands of extensions available in the Chrome Web
   Store, it can
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "General"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: General
 tags: []
 keywords:
   - ajouter extension chrome
@@ -23,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-01-24T13:04:14.703533+00:00'
-updated_at: '2026-02-13T19:06:14.488189+00:00'
+updated_at: '2026-03-03T17:57:36.585557+00:00'
 description: >-
   Discover expert tips for customizing your browsing experience. Learn how to
   integrate powerful addons that save you time and improve your focus.

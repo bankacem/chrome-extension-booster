@@ -8,7 +8,8 @@ excerpt: >-
   Welcome to the most comprehensive screenshot tool chrome guide available,
   designed to help you navigate the world of screenshot capture with ease and
   precision.
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
 category: Screenshots & Screen Capture
 tags: []
 keywords:
@@ -24,7 +25,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-21T13:12:21.223192+00:00'
-updated_at: '2026-02-23T08:11:02.394364+00:00'
+updated_at: '2026-03-03T17:57:46.800087+00:00'
 ---
 
 <h1>Mastering the Art of Capturing Screenshots: The Ultimate Screenshot Tool Chrome Guide</h1>

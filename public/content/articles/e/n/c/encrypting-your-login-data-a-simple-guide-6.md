@@ -6,8 +6,9 @@ excerpt: >-
   In today's digital age, online security is more important than ever. With the
   rise of cyberattacks and data breaches, it's crucial to take steps to protect
   your
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
 tags: []
 keywords:
   - 'Encrypting your login data: A simple guide'
@@ -22,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-20T23:11:55.885565+00:00'
-updated_at: '2026-02-28T20:11:01.542796+00:00'
+updated_at: '2026-03-03T17:57:51.602068+00:00'
 ---
 
 <h1>Encrypting your login data: A simple guide</h1>

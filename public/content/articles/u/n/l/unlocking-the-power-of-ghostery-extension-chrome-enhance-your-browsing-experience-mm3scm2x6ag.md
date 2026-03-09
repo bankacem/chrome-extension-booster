@@ -9,7 +9,8 @@ excerpt: >-
   The Ghostery extension Chrome has become an essential tool for anyone looking
   to take control of their online privacy and security. With the rise of online
   trac
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
 category: General
 tags: []
 keywords:
@@ -25,7 +26,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-02-26T18:17:18.452989+00:00'
-updated_at: '2026-03-02T19:35:14.892943+00:00'
+updated_at: '2026-03-03T17:57:22.342271+00:00'
 ---
 
 <h1>Unlocking the Power of Ghostery Extension Chrome: Enhance Your Browsing Experience</h1>

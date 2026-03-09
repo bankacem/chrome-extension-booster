@@ -8,8 +8,9 @@ excerpt: >-
   Are you concerned about your online privacy and security? With the rise of
   digital tracking and data collection, it's essential to take control of your
   online p
-featured_image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
+featured_image: >-
+  https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
 tags: []
 keywords:
   - extension chrome ghostery
@@ -24,7 +25,7 @@ author: AI Generator
 views: 2
 read_time: 5
 created_at: '2026-01-24T14:11:55.818543+00:00'
-updated_at: '2026-02-28T22:21:42.601667+00:00'
+updated_at: '2026-03-03T17:57:33.770222+00:00'
 description: >-
   Protect your data with professional tracking protection. Learn how to
   configure advanced security settings and block invasive scripts for a safer
