@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 interface SEOProps {
   title?: string;
@@ -21,19 +22,26 @@ const SEO = ({
   title,
   description = "Discover powerful Chrome extensions built to boost your productivity, enhance security, and transform how you browse the web. Trusted by 50,000+ users.",
   keywords,
-  canonicalPath = "",
+  canonicalPath,
   ogImage = DEFAULT_IMAGE,
   ogType = "website",
   articlePublishedTime,
   articleAuthor,
   noindex,
 }: SEOProps) => {
+  const location = useLocation();
   const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} - Powerful Chrome Extensions for Productivity`;
 
-  // Ensure canonicalPath starts with / if it's not empty and doesn't already have one
-  const safePath = canonicalPath
-    ? (canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`)
+  // Determine the final path for the canonical URL
+  // If canonicalPath is provided, use it. Otherwise, use the current location.pathname.
+  const activePath = canonicalPath !== undefined ? canonicalPath : location.pathname;
+
+  // Ensure path starts with / if it's not empty and doesn't already have one
+  const safePath = activePath
+    ? (activePath.startsWith("/") ? activePath : `/${activePath}`)
     : "";
+
+  // Always use the non-www SITE_URL
   const canonicalUrl = `${SITE_URL}${safePath}`;
 
   return (
