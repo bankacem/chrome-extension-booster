@@ -104,7 +104,7 @@ interface BackupData {
   };
 }
 
-const WEBSITE_URL = "https://www.extensionto.com";
+const WEBSITE_URL = "https://extensionto.com";
 
 const defaultArticle: Partial<Article> = {
   title: "",
