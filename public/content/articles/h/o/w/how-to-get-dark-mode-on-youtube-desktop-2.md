@@ -1,9 +1,12 @@
 ---
 id: c3e4f574-663d-4b40-9a74-ca524aea1d2b
-title: "How to Enable YouTube Dark Mode on Desktop in 2026: Complete Guide"
+title: 'How to Enable YouTube Dark Mode on Desktop in 2026: Complete Guide'
 slug: how-to-get-dark-mode-on-youtube-desktop-2
-excerpt: "Learn how to enable YouTube dark mode on desktop in 2026. Step-by-step guide with screenshots and tips for Chrome, Firefox and Edge."
-featured_image: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200"
+excerpt: >-
+  Learn how to enable YouTube dark mode on desktop in 2026. Step-by-step guide
+  with screenshots and tips for Chrome, Firefox and Edge.
+featured_image: >-
+  https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1200
 category: Appearance & Themes
 tags: []
 keywords:
@@ -11,7 +14,9 @@ keywords:
   - how to enable dark mode youtube
   - youtube dark mode desktop
   - youtube dark mode 2026
-meta_description: "Learn how to enable YouTube dark mode on desktop in 2026. Step-by-step guide with screenshots and tips for Chrome, Firefox and Edge."
+meta_description: >-
+  Learn how to enable YouTube dark mode on desktop in 2026. Step-by-step guide
+  with screenshots and tips for Chrome, Firefox and Edge.
 status: published
 published_at: '2026-02-26T08:11:01.153+00:00'
 scheduled_at: '2026-02-26T08:11:00+00:00'
