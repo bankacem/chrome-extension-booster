@@ -104,7 +104,17 @@ export default async function handler(req: any, res: any) {
     priority: "0.6",
   }));
 
-  const allPages = [...staticPages, ...articlePages, ...extensionPages];
+  // 4. Supplemental URLs (User requested to ensure indexing)
+  const supplementalPages: PageInfo[] = [
+    { url: "/blog/best-full-page-screenshot-chrome-4", changefreq: "monthly", priority: "0.7" },
+    { url: "/blog/extension-chrome-youtube-mp3-downloader", changefreq: "monthly", priority: "0.7" },
+    { url: "/blog/how-to-speed-up-chrome", changefreq: "monthly", priority: "0.7" },
+    { url: "/blog/onetab-firefox-1", changefreq: "monthly", priority: "0.7" },
+    { url: "/blog/protab-suspender-vs-google-memory-saver-comparison-5", changefreq: "monthly", priority: "0.7" },
+    { url: "/blog/unlocking-the-power-of-chrome-extensions-on-android-a-comprehensive-guide", changefreq: "monthly", priority: "0.7" },
+  ];
+
+  const allPages = [...staticPages, ...articlePages, ...extensionPages, ...supplementalPages];
   const sitemapXml = generateSitemapXml(allPages);
 
   res.setHeader('Content-Type', 'application/xml');
