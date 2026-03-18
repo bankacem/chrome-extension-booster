@@ -20,10 +20,10 @@ status: published
 published_at: '2026-03-04T09:00:13.412+00:00'
 scheduled_at: '2026-03-04T09:00:00+00:00'
 author: AI Generator
-views: 0
+views: 2
 read_time: 5
 created_at: '2026-02-26T18:17:19.096758+00:00'
-updated_at: '2026-03-04T09:00:13.576877+00:00'
+updated_at: '2026-03-16T14:42:54.714256+00:00'
 ---
 
 <h1>Unlocking Online Privacy: A Comprehensive Guide to Ghostery for Chrome Android</h1>

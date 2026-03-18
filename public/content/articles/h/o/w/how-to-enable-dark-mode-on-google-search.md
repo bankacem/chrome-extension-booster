@@ -23,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-21T12:39:41.253618+00:00'
-updated_at: '2026-03-03T17:57:50.83363+00:00'
+updated_at: '2026-03-16T14:43:23.181067+00:00'
 ---
 
 <h1>How to Enable Dark Mode on Google Search: A Step-by-Step Guide</h1>

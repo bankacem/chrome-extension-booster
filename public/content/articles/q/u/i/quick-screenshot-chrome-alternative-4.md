@@ -23,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-01-21T13:00:23.845029+00:00'
-updated_at: '2026-03-03T17:57:47.402207+00:00'
+updated_at: '2026-03-16T14:43:20.560427+00:00'
 ---
 
 <h1>Quick Screenshot Chrome Alternative: The Ultimate Guide to Capturing Web Pages</h1>

@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-03-05T21:37:31.164738+00:00'
-updated_at: '2026-03-05T21:48:49.948274+00:00'
+updated_at: '2026-03-16T17:10:06.996823+00:00'
 ---
 
 <h1>Best Chrome Extensions for Online Safety: Protecting Your Digital Footprint</h1>

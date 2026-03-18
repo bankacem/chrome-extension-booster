@@ -25,7 +25,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-21T12:43:48.16067+00:00'
-updated_at: '2026-03-03T17:57:49.689497+00:00'
+updated_at: '2026-03-16T14:43:22.002365+00:00'
 ---
 
 <h1>Enable Night Mode on LinkedIn for Eye Protection: A Guide to Reduced Blue Light Emission</h1>

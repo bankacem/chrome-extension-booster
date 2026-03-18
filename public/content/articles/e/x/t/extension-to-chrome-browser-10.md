@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-24T13:04:15.479386+00:00'
-updated_at: '2026-03-03T17:57:36.137679+00:00'
+updated_at: '2026-03-16T14:43:08.847257+00:00'
 description: >-
   Improve your online efficiency with our curated list of must-have extensions.
   From research tools to task managers, enhance your browsing experience.

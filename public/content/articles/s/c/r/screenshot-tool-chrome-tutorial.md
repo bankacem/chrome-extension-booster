@@ -23,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-21T13:12:20.628812+00:00'
-updated_at: '2026-03-03T17:57:47.005147+00:00'
+updated_at: '2026-03-16T14:43:20.128905+00:00'
 ---
 
 <h1>Mastering the Art of Screenshots: The Ultimate Screenshot Tool Chrome Tutorial</h1>

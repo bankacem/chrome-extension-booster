@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-20T20:54:08.794991+00:00'
-updated_at: '2026-03-06T02:11:02.342931+00:00'
+updated_at: '2026-03-16T14:43:30.652992+00:00'
 ---
 
 <h1>Easy Screenshot Chrome Guide: Capturing Screens with Ease</h1>

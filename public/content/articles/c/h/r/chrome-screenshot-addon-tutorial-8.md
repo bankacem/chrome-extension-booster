@@ -28,7 +28,7 @@ author: AI Generator
 views: 0
 read_time: 7
 created_at: '2026-01-20T19:09:22.497611+00:00'
-updated_at: '2026-03-07T14:11:00.287038+00:00'
+updated_at: '2026-03-16T14:43:33.143498+00:00'
 ---
 
 <h1>Mastering the Art of Capturing Screenshots: The Ultimate Chrome Screenshot Addon Tutorial</h1>

@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-20T18:39:03.719331+00:00'
-updated_at: '2026-03-12T08:11:01.479652+00:00'
+updated_at: '2026-03-16T14:43:37.520563+00:00'
 ---
 
 <h1>How to Document Software Bugs with Screenshots: A Step-by-Step Guide</h1>

@@ -23,7 +23,7 @@ author: Admin
 views: 0
 read_time: 5
 created_at: '2026-01-20T19:01:22.775303+00:00'
-updated_at: '2026-03-10T08:11:00.623034+00:00'
+updated_at: '2026-03-16T14:43:35.57555+00:00'
 ---
 
 <h1>Protecting your browser from URL hijacking: A Comprehensive Guide to Secure Browsing</h1>

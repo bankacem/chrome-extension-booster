@@ -1,6 +1,8 @@
 import { createClient } from "@supabase/supabase-js";
 import { extensions } from "../src/lib/extensionsData.js";
 import { normalizeSlug } from "../src/utils/articlePath.js";
+import fs from "fs";
+import path from "path";
 
 // Use non-www version for URL consistency - matches Google indexed version
 const WEBSITE_URL = "https://extensionto.com";
@@ -47,25 +49,50 @@ export default async function handler(req: any, res: any) {
     { url: "/terms", changefreq: "yearly", priority: "0.3" },
   ];
 
-  // 2. Fetch latest 500 articles from Supabase
+  // 2. Fetch articles (prefer local index data if exists)
   let articlePages: PageInfo[] = [];
+  const indexPath = path.join(process.cwd(), "public", "content", "articles-index.json");
 
-  if (supabase) {
+  if (fs.existsSync(indexPath)) {
+    try {
+      const articles = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+      articlePages = articles.map((article: any) => {
+        const slug = normalizeSlug(article.slug);
+        // Use updated_at if available, otherwise published_at
+        const dateStr = article.updated_at || article.published_at;
+
+        return {
+          url: `/blog/${slug}`,
+          changefreq: "monthly",
+          priority: "0.7",
+          lastmod: dateStr ? new Date(dateStr).toISOString().split('T')[0] : undefined
+        };
+      });
+      console.log(`Included ${articlePages.length} articles from local index.`);
+    } catch (err) {
+      console.error("Error reading local articles index:", err);
+    }
+  }
+
+  // Fallback to Supabase if no local articles were found
+  if (articlePages.length === 0 && supabase) {
     const { data: articles, error } = await supabase
       .from("articles")
-      .select("slug, published_at")
+      .select("slug, published_at, updated_at")
       .eq("status", "published")
       .order("published_at", { ascending: false })
       .limit(500);
 
     if (error) {
-      console.error("Error fetching articles:", error);
+      console.error("Error fetching articles from Supabase:", error);
     } else if (articles) {
-      articlePages = (articles as ArticleRecord[]).map((article) => ({
+      articlePages = (articles as any[]).map((article) => ({
         url: `/blog/${normalizeSlug(article.slug)}`,
         changefreq: "monthly",
         priority: "0.7",
-        lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : undefined
+        lastmod: (article.updated_at || article.published_at)
+          ? new Date(article.updated_at || article.published_at).toISOString().split('T')[0]
+          : undefined
       }));
     }
   }

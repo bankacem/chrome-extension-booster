@@ -25,7 +25,7 @@ author: AI Generator
 views: 2
 read_time: 5
 created_at: '2026-01-24T14:11:55.818543+00:00'
-updated_at: '2026-03-03T17:57:33.770222+00:00'
+updated_at: '2026-03-16T14:43:06.854144+00:00'
 description: >-
   Protect your data with professional tracking protection. Learn how to
   configure advanced security settings and block invasive scripts for a safer

@@ -25,7 +25,7 @@ author: AI Generator
 views: 2
 read_time: 5
 created_at: '2026-02-13T19:04:55.893666+00:00'
-updated_at: '2026-03-03T17:57:25.215076+00:00'
+updated_at: '2026-03-16T14:42:57.694209+00:00'
 description: >-
   Improve your online privacy with our expert setup guide. Discover the best
   ways to stop trackers from following you across different websites easily.

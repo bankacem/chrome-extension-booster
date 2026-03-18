@@ -22,10 +22,10 @@ status: published
 published_at: '2026-02-21T20:11:01.223+00:00'
 scheduled_at: '2026-02-21T20:11:00+00:00'
 author: AI Generator
-views: 0
+views: 1
 read_time: 5
 created_at: '2026-01-21T14:32:23.392823+00:00'
-updated_at: '2026-03-03T17:57:45.285996+00:00'
+updated_at: '2026-03-16T15:36:14.737552+00:00'
 description: >-
   Stop struggling with basic snips. Discover advanced Chrome screenshot
   extensions that offer one-click captures and powerful built-in image editors.

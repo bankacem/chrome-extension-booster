@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-01-20T19:09:25.417109+00:00'
-updated_at: '2026-03-07T08:11:01.774091+00:00'
+updated_at: '2026-03-16T14:43:32.77319+00:00'
 ---
 
 <h1>Chrome Screenshot Addon Guide: The Ultimate Tool for Capturing Web Pages</h1>

@@ -23,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-21T12:39:42.689952+00:00'
-updated_at: '2026-03-03T17:57:50.35855+00:00'
+updated_at: '2026-03-16T14:43:22.834039+00:00'
 ---
 
 <h1>Activate Dark Mode on Wikipedia for Night Reading: A Comprehensive Guide</h1>

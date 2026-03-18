@@ -26,7 +26,7 @@ author: AI Generator
 views: 11
 read_time: 5
 created_at: '2026-02-13T19:04:56.051728+00:00'
-updated_at: '2026-03-06T19:20:15.628274+00:00'
+updated_at: '2026-03-16T14:42:57.465668+00:00'
 ---
 
 <h1>How to Fix Chrome High Memory Usage 2026: The Ultimate Guide to a Smoother Browsing Experience</h1>
