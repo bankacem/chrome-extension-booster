@@ -10,8 +10,7 @@ async function indexUserUrls() {
     return;
   }
 
-  const urls = JSON.parse(fs.readFileSync(CLEANED_URLS_PATH, 'utf-8'));
-  const urlsToPush = urls.slice(0, 200);
+  const urlsToPush = JSON.parse(fs.readFileSync(CLEANED_URLS_PATH, 'utf-8'));
 
   console.log(`Attempting to index ${urlsToPush.length} URLs...`);
 
