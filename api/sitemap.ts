@@ -1,6 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
-import { extensions } from "../src/lib/extensionsData";
-import { normalizeSlug } from "../src/utils/articlePath";
+import { extensions } from "../src/lib/extensionsData.js";
+import { normalizeSlug } from "../src/utils/articlePath.js";
 
 // Use non-www version for URL consistency - matches Google indexed version
 const WEBSITE_URL = "https://extensionto.com";
