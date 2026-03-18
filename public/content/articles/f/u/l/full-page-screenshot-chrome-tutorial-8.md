@@ -28,7 +28,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-01-20T20:54:13.358925+00:00'
-updated_at: '2026-03-05T02:11:01.316599+00:00'
+updated_at: '2026-03-16T14:43:29.200069+00:00'
 ---
 
 <h1>Full Page Screenshot Chrome Tutorial: A Step-by-Step Guide to Capturing Perfect Screenshots</h1>

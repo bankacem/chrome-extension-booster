@@ -22,7 +22,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-02-26T18:17:19.29666+00:00'
-updated_at: '2026-03-05T09:00:00.424499+00:00'
+updated_at: '2026-03-16T14:42:54.57416+00:00'
 ---
 
 <h1>Unlocking Online Privacy: The Power of Chrome Ghostery Extension</h1>

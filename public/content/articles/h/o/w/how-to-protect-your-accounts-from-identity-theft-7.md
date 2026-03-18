@@ -23,7 +23,7 @@ author: AI Generator
 views: 1
 read_time: 6
 created_at: '2026-01-20T23:11:57.447626+00:00'
-updated_at: '2026-03-03T17:57:51.413652+00:00'
+updated_at: '2026-03-16T14:43:23.880101+00:00'
 ---
 
 <h1>How to Protect Your Accounts from Identity Theft: A Comprehensive Guide</h1>

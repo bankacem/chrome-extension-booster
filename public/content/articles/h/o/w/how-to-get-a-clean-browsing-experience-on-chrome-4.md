@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-20T22:00:44.600043+00:00'
-updated_at: '2026-03-03T20:11:02.356544+00:00'
+updated_at: '2026-03-16T14:43:27.715792+00:00'
 ---
 
 <h1>How to Get a Clean Browsing Experience on Chrome: A Comprehensive Guide</h1>

@@ -25,7 +25,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-03-03T22:40:20.705362+00:00'
-updated_at: '2026-03-13T05:00:00.689753+00:00'
+updated_at: '2026-03-16T14:42:49.378342+00:00'
 ---
 
 <h1>Is there an IDM extension for Chrome Android? A Comprehensive Guide to Download Management</h1>

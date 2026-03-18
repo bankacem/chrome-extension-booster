@@ -22,7 +22,7 @@ author: Admin
 views: 0
 read_time: 5
 created_at: '2026-03-03T22:40:20.034064+00:00'
-updated_at: '2026-03-09T05:00:00.339849+00:00'
+updated_at: '2026-03-16T14:42:50.538677+00:00'
 ---
 
 <h1>How to Install IDM Extension in Chrome Manually 2026: A Step-by-Step Guide</h1>

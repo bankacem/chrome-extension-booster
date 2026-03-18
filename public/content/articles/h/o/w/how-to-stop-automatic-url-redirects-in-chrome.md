@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-20T19:01:16.637042+00:00'
-updated_at: '2026-03-11T08:11:01.460641+00:00'
+updated_at: '2026-03-16T14:43:36.605004+00:00'
 ---
 
 <h1>How to Stop Automatic URL Redirects in Chrome: A Comprehensive Guide</h1>

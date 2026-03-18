@@ -23,7 +23,7 @@ author: Admin
 views: 0
 read_time: 5
 created_at: '2026-01-20T19:01:35.116227+00:00'
-updated_at: '2026-03-09T02:11:00.652181+00:00'
+updated_at: '2026-03-16T14:43:34.642627+00:00'
 ---
 
 <h1>Why your browser keeps redirecting and how to fix it</h1>

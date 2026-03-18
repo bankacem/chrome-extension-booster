@@ -26,7 +26,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-02-13T19:04:57.040478+00:00'
-updated_at: '2026-03-03T17:57:24.170456+00:00'
+updated_at: '2026-03-16T14:42:56.781909+00:00'
 ---
 
 <h1>Speed up Google Chrome on Old Laptop: A Comprehensive Guide to Boosting Performance</h1>

@@ -22,10 +22,10 @@ status: published
 published_at: '2026-03-11T09:00:10.449+00:00'
 scheduled_at: '2026-03-11T09:00:00+00:00'
 author: AI Generator
-views: 0
+views: 2
 read_time: 5
 created_at: '2026-02-26T18:17:20.374117+00:00'
-updated_at: '2026-03-11T09:00:10.511231+00:00'
+updated_at: '2026-03-16T15:38:40.551234+00:00'
 ---
 
 <h1>Unlock the Power of a Free Pop Up Blocker Chrome Extension for a Seamless Browsing Experience</h1>

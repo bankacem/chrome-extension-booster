@@ -23,7 +23,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-20T23:11:55.885565+00:00'
-updated_at: '2026-03-03T17:57:51.602068+00:00'
+updated_at: '2026-03-16T14:43:24.13376+00:00'
 ---
 
 <h1>Encrypting your login data: A simple guide</h1>

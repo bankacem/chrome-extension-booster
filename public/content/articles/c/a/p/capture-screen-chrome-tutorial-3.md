@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 7
 created_at: '2026-01-20T19:08:56.012793+00:00'
-updated_at: '2026-03-08T14:11:01.522146+00:00'
+updated_at: '2026-03-16T14:43:33.875866+00:00'
 ---
 
 <h1>Capture Screen Chrome Tutorial: A Step-by-Step Guide to Mastering Screen Capture</h1>

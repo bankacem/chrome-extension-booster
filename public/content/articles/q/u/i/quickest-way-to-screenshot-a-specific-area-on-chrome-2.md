@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 7
 created_at: '2026-01-20T18:39:00.744676+00:00'
-updated_at: '2026-03-12T20:11:01.183345+00:00'
+updated_at: '2026-03-16T14:43:37.933921+00:00'
 ---
 
 <h1>Quickest Way to Screenshot a Specific Area on Chrome: A Step-by-Step Guide</h1>

@@ -26,7 +26,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-01-21T13:12:23.052616+00:00'
-updated_at: '2026-03-03T17:57:46.172276+00:00'
+updated_at: '2026-03-16T14:43:19.333756+00:00'
 description: >-
   Enhance your visual communication with professional screen capture tools.
   Learn how to annotate, edit, and share your captures with teammates

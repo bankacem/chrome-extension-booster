@@ -27,7 +27,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-20T19:08:51.426687+00:00'
-updated_at: '2026-03-03T17:57:54.926168+00:00'
+updated_at: '2026-03-16T14:43:34.317087+00:00'
 description: >-
   Capture high-resolution screenshots instantly. Master the best techniques for
   capturing full pages, regions, and scrolling content with these pro tools.

@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: '2026-01-20T22:00:43.428913+00:00'
-updated_at: '2026-03-04T02:11:00.902978+00:00'
+updated_at: '2026-03-16T14:43:27.971344+00:00'
 ---
 
 <h1>Stop Video Popups from Playing Automatically: A Comprehensive Guide</h1>

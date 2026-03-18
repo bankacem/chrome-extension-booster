@@ -28,7 +28,7 @@ author: Admin
 views: 10
 read_time: 1
 created_at: '2026-01-19T13:56:51.231251+00:00'
-updated_at: '2026-03-03T17:57:59.864173+00:00'
+updated_at: '2026-03-16T14:43:44.275017+00:00'
 description: >-
   Discover expert tips for customizing your browsing experience. Learn how to
   integrate powerful addons that save you time and improve your focus.

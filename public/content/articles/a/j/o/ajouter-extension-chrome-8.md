@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 6
 created_at: '2026-01-24T13:04:14.703533+00:00'
-updated_at: '2026-03-03T17:57:36.585557+00:00'
+updated_at: '2026-03-16T14:43:09.23794+00:00'
 description: >-
   Discover expert tips for customizing your browsing experience. Learn how to
   integrate powerful addons that save you time and improve your focus.

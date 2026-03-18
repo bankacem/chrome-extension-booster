@@ -21,7 +21,7 @@ author: Admin
 views: 0
 read_time: 5
 created_at: '2026-01-20T19:01:19.932094+00:00'
-updated_at: '2026-03-10T20:11:03.122045+00:00'
+updated_at: '2026-03-16T14:43:36.018145+00:00'
 ---
 
 <h1>Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide</h1>

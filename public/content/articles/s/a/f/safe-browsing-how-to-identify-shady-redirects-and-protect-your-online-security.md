@@ -23,7 +23,7 @@ author: Admin
 views: 1
 read_time: 5
 created_at: '2026-01-20T19:01:30.963523+00:00'
-updated_at: '2026-03-09T14:11:00.3722+00:00'
+updated_at: '2026-03-16T14:43:34.995039+00:00'
 ---
 
 <h1>Safe Browsing: How to Identify Shady Redirects and Protect Your Online Security</h1>
