@@ -19,7 +19,12 @@ export async function notifyIndexing(url: string, type: 'URL_UPDATED' | 'URL_DEL
 
   if (process.env.GOOGLE_INDEXING_KEY) {
     try {
-      authOptions.credentials = JSON.parse(process.env.GOOGLE_INDEXING_KEY);
+      const keyData = JSON.parse(process.env.GOOGLE_INDEXING_KEY);
+      // Sanitize private key - replace escaped newlines
+      if (keyData.private_key) {
+        keyData.private_key = keyData.private_key.replace(/\\n/g, '\n');
+      }
+      authOptions.credentials = keyData;
     } catch (e) {
       console.error('[Indexing] Error parsing GOOGLE_INDEXING_KEY environment variable:', (e as Error).message);
       return;

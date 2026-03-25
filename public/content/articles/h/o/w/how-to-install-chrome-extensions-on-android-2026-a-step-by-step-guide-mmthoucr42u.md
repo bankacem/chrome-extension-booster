@@ -20,10 +20,10 @@ status: published
 published_at: '2026-03-17T09:00:00.389+00:00'
 scheduled_at: '2026-03-17T09:00:00+00:00'
 author: Admin
-views: 0
+views: 1
 read_time: 5
 created_at: '2026-03-16T18:00:53.58049+00:00'
-updated_at: '2026-03-17T09:00:00.444671+00:00'
+updated_at: '2026-03-25T13:15:29.286175+00:00'
 ---
 
 <h1>How to Install Chrome Extensions on Android 2026: A Step-by-Step Guide</h1>

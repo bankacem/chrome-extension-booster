@@ -1,6 +1,6 @@
 ---
 id: 84169061-f67d-4108-bc74-1f5a897db510
-title: "Capture Screen Chrome Tutorial: Master Screenshots in 2026"
+title: 'Capture Screen Chrome Tutorial: Master Screenshots in 2026'
 slug: capture-screen-chrome-tutorial-3
 excerpt: >-
   Are you looking for a reliable way to capture screens in Chrome? Look no
