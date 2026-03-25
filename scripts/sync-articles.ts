@@ -1,83 +1,8 @@
-import { createClient } from '@supabase/supabase-js';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
-import * as dotenv from 'dotenv';
 import { execSync } from 'child_process';
-import { getPartitionedPath, normalizeSlug } from '../src/utils/articlePath';
-import { notifyIndexing } from './google-indexing';
-
-dotenv.config();
-
-const supabaseUrl = process.env.VITE_SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
-
-if (!supabaseUrl || !supabaseKey) {
-  console.error('Missing Supabase environment variables');
-  process.exit(1);
-}
-
-const supabase = createClient(supabaseUrl, supabaseKey);
-
-interface ArticleData {
-  id: string;
-  title: string;
-  slug: string;
-  content: string;
-  description?: string;
-  excerpt?: string;
-  published_at: string;
-  category: string;
-  author: string;
-  image_url?: string;
-  featured_image?: string;
-  reading_time?: number;
-  read_time?: number;
-  views: number;
-  tags?: string[];
-  keywords?: string[];
-  meta_description?: string;
-  updated_at: string;
-}
-
-async function fetchAllArticles(): Promise<ArticleData[]> {
-  let allArticles: ArticleData[] = [];
-  let page = 0;
-  const pageSize = 1000;
-  let hasMore = true;
-
-  while (hasMore) {
-    const { data, error } = await supabase
-      .from('articles')
-      .select('*')
-      .range(page * pageSize, (page + 1) * pageSize - 1)
-      .order('published_at', { ascending: false });
-
-    if (error) {
-      console.error('Error fetching articles:', error);
-      break;
-    }
-
-    if (data && data.length > 0) {
-      allArticles = [...allArticles, ...data as ArticleData[]];
-      page++;
-      if (data.length < pageSize) {
-        hasMore = false;
-      }
-    } else {
-      hasMore = false;
-    }
-  }
-
-  return allArticles;
-}
-
-interface OptimizedItem {
-  originalSlug: string;
-  optimizedTitle: string;
-  newSlug: string;
-  metaDescription: string;
-}
+import { normalizeSlug } from '../src/utils/articlePath';
 
 interface ArticleIndexItem {
   id: string;
@@ -98,377 +23,115 @@ interface ArticleIndexItem {
   updated_at: string;
 }
 
-function deduplicateString(str: string): string {
-  if (!str || str.length < 10) return str;
+const articlesDir = path.join(process.cwd(), 'public', 'content', 'articles');
+const indexFile = path.join(process.cwd(), 'public', 'content', 'articles-index.json');
 
-  // 1. Exact half repeat: "abcabc" -> "abc"
-  const mid = Math.floor(str.length / 2);
-  if (str.length % 2 === 0) {
-    const first = str.substring(0, mid);
-    const second = str.substring(mid);
-    if (first === second) return first;
-  }
-
-  // 2. Handle trailing repetitions: "Title Tools Tools" -> "Title Tools"
-  for (let len = Math.floor(str.length / 2); len >= 4; len--) {
-    const suffix = str.substring(str.length - len);
-    const lastIdx = str.lastIndexOf(suffix, str.length - len - 1);
-    if (lastIdx !== -1) {
-      const middle = str.substring(lastIdx + len, str.length - len).trim();
-      if (middle === "" || middle === "-" || middle === "|" || middle === ":") {
-        return str.substring(0, str.length - len).trim();
-      }
+function walkDir(dir: string, fileList: string[] = []): string[] {
+  if (!fs.existsSync(dir)) return fileList;
+  const files = fs.readdirSync(dir);
+  for (const file of files) {
+    const fullPath = path.join(dir, file);
+    if (fs.statSync(fullPath).isDirectory()) {
+      walkDir(fullPath, fileList);
+    } else if (fullPath.endsWith('.md')) {
+      fileList.push(fullPath);
     }
   }
-
-  // 3. Handle leading repetitions: "Title Title with more" -> "Title with more"
-  for (let len = Math.floor(str.length / 2); len >= 4; len--) {
-    const prefix = str.substring(0, len);
-    const secondIdx = str.indexOf(prefix, len);
-    if (secondIdx !== -1 && secondIdx <= len + 10) {
-       const sep = str.substring(len, secondIdx).trim();
-       if (sep === "" || sep === "-" || sep === "|") {
-         return str.substring(secondIdx);
-       }
-    }
-  }
-
-  return str;
+  return fileList;
 }
 
-function cleanContent(content: string): string {
-  if (!content) return content;
+async function rebuildIndex() {
+  console.log('Crawling articles directory for robust indexing...');
+  const allMdFiles = walkDir(articlesDir);
+  console.log(`Found ${allMdFiles.length} markdown files.`);
 
-  let cleaned = content.trim();
+  // Use Map to deduplicate by ID
+  const idMap = new Map<string, ArticleIndexItem>();
 
-  // Fix "naked URL" corruption: remove raw Blogger image URLs that often appear
-  // at the start of content or after headings.
-  cleaned = cleaned.replace(/(^|\n|<\/h\d>|<\/p>)\s*https?:\/\/blogger\.googleusercontent\.com\/[^<>\s]+\s*(\n|<|$)/gi, '$1$2');
-  cleaned = cleaned.replace(/(^|\n|<\/h\d>|<\/p>)\s*https?:\/\/\S+\.(?:jpg|jpeg|png|webp|gif)\s*(\n|<|$)/gi, '$1$2');
-
-  // Fallback for very start of content without preceding tags
-  cleaned = cleaned.replace(/^(https?:\/\/blogger\.googleusercontent\.com\/\S+)\s*/i, '');
-  cleaned = cleaned.replace(/^(https?:\/\/\S+\.(?:jpg|jpeg|png|webp|gif))\s*/i, '');
-
-  // If content is JSON-wrapped, handle the inner content
-  let isJson = false;
-  let jsonData: { optimizedContent?: string } | null = null;
-  try {
-    if (content.trim().startsWith('{')) {
-      jsonData = JSON.parse(content);
-      if (jsonData && jsonData.optimizedContent) {
-        cleaned = jsonData.optimizedContent;
-        isJson = true;
-      }
-    }
-  } catch (e) {
-    // Not JSON or failed to parse, continue with raw content
-  }
-
-  // Fix nested links: <a ...><a ...>...</a></a> -> <a ...>...</a>
-  // We keep the innermost link's content but potentially the outermost link's href?
-  // Actually, the nested links I saw were multiple <a> tags wrapping the same text.
-  // Example: <a href="A"><a href="B">Text</a></a>
-  // Usually we want to keep the inner one if it's more specific, or the outer one if it's the intended one.
-  // The corruption I saw had many levels of the same link.
-
-  let previous;
-  do {
-    previous = cleaned;
-    // Strip nested <a> tags, keeping the innermost content
-    // This regex looks for <a>...<a ...>...</a>...</a> and keeps the inner part.
-    // However, if they are nested like <a href="A"><a href="B">Text</a></a>,
-    // it's safer to just remove the outer <a> if it's immediately wrapping another <a>.
-    // We use a non-greedy match that ensures we don't skip over an </a> when looking for the inner <a>.
-    cleaned = cleaned.replace(/<a[^>]*>((?:(?!<\/a>).)*?<a[^>]*>.*?<\/a>.*?)\s*<\/a>/gs, '$1');
-  } while (cleaned !== previous);
-
-  if (isJson && jsonData) {
-    jsonData.optimizedContent = cleaned;
-    return JSON.stringify(jsonData, null, 2);
-  }
-
-  return cleaned;
-}
-
-async function sync() {
-  console.log('Fetching articles from Supabase...');
-  const articles = await fetchAllArticles();
-  console.log(`Found ${articles.length} articles.`);
-
-  let syncedCount = 0;
-  let skippedCount = 0;
-
-  // Load optimized metadata if available to override truncated/unoptimized data from DB
-  const optimizedMap = new Map<string, OptimizedItem>();
-  const optimizedFile = path.join(process.cwd(), 'optimized_articles.json');
-  if (fs.existsSync(optimizedFile)) {
-    console.log('Loading optimized metadata from optimized_articles.json...');
-    const optimizedData = JSON.parse(fs.readFileSync(optimizedFile, 'utf-8')) as OptimizedItem[];
-    for (const item of optimizedData) {
-      optimizedMap.set(item.originalSlug, item);
-    }
-  }
-
-  const articlesDir = path.join(process.cwd(), 'public', 'content', 'articles');
-  const indexFile = path.join(process.cwd(), 'public', 'content', 'articles-index.json');
-
-  // Load existing index for change detection
-  const oldIndexMap = new Map<string, ArticleIndexItem>();
-  if (fs.existsSync(indexFile)) {
-    console.log('Loading existing index for change detection...');
+  for (const filePath of allMdFiles) {
     try {
-      const oldIndex = JSON.parse(fs.readFileSync(indexFile, 'utf-8')) as ArticleIndexItem[];
-      for (const item of oldIndex) {
-        oldIndexMap.set(item.slug, item);
+      const fileContent = fs.readFileSync(filePath, 'utf-8');
+      const match = fileContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+
+      if (!match) {
+        console.warn(`[Index] Skipping file (no frontmatter): ${filePath}`);
+        continue;
       }
-    } catch (e) {
-      console.warn('Failed to parse existing index file, change detection will treat all as new.');
-    }
-  }
 
-  const changedUrls: string[] = [];
-  const WEBSITE_URL = 'https://extensionto.com';
+      const metadata = yaml.load(match[1]) as Record<string, unknown>;
 
-  // Ensure base directory exists
-  if (!fs.existsSync(articlesDir)) {
-    fs.mkdirSync(articlesDir, { recursive: true });
-  }
-
-  const articleIndex: ArticleIndexItem[] = [];
-  const currentFiles = new Set<string>();
-  const processedIds = new Set<string>();
-  const processedSlugs = new Set<string>();
-
-  for (const article of articles) {
-    let { content } = article;
-    const dbMetadata: Record<string, unknown> = { ...article };
-    delete dbMetadata.content;
-
-    let rawSlugFromDb = String(dbMetadata.slug || "").trim();
-    if (!rawSlugFromDb) {
-      console.warn(`[Validation] Skipping article ${article.id}: Missing slug.`);
-      skippedCount++;
-      continue;
-    }
-
-    // Fix garbled repetitions in slugs from DB
-    rawSlugFromDb = deduplicateString(rawSlugFromDb);
-
-    const normalizedSlug = normalizeSlug(rawSlugFromDb);
-
-    // Get partitioned path to check for existing local file (Zero-Touch Flow)
-    const relativePath = getPartitionedPath(normalizedSlug);
-    const fullPath = path.join(process.cwd(), 'public', relativePath);
-
-    let localMetadata: Record<string, unknown> = {};
-    if (fs.existsSync(fullPath)) {
-      try {
-        const localFileContent = fs.readFileSync(fullPath, 'utf-8');
-        const match = localFileContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
-        if (match) {
-          localMetadata = yaml.load(match[1]) as Record<string, unknown>;
-          content = match[2];
-          console.log(`[Zero-Touch] Using local content for: ${normalizedSlug}`);
-        }
-      } catch (e) {
-        console.warn(`[Zero-Touch] Failed to read local file for ${normalizedSlug}, falling back to DB.`);
+      // We only index published articles for the public site
+      if (metadata.status !== 'published') {
+        console.log(`[Index] Skipping non-published article: ${metadata.slug}`);
+        continue;
       }
-    }
 
-    // Merge metadata: Prioritize local, but preserve critical DB fields
-    const metadata: Record<string, unknown> = {
-      ...dbMetadata,
-      ...localMetadata,
-      id: dbMetadata.id, // Always use DB ID
-      views: dbMetadata.views, // Always use live DB views
-      status: dbMetadata.status, // Always use live DB status
-      updated_at: dbMetadata.updated_at // Always use live DB updated_at
-    };
+      const normalizedSlug = normalizeSlug(String(metadata.slug || ""));
+      const id = String(metadata.id || normalizedSlug);
 
-    // Clean metadata
-    const m = metadata as Record<string, unknown>;
-    for (const key in m) {
-      const val = m[key];
-      if (typeof val === 'string') {
-        let cleanedVal = val.trim();
-        if (key === 'title' || key === 'slug') {
-          cleanedVal = deduplicateString(cleanedVal);
-        }
-        m[key] = cleanedVal;
-      } else if (Array.isArray(val)) {
-        m[key] = val.map((item: unknown) => typeof item === 'string' ? deduplicateString(item.trim()) : item);
-      }
-    }
-
-    // Handle missing category
-    if (!metadata.category) {
-      metadata.category = "Uncategorized";
-    }
-
-    // Clean content (only if not from local, or always clean?)
-    // Project memory says sync-articles.ts includes a cleanup phase.
-    content = cleanContent(content);
-
-    // Validation Check
-    if (!metadata.title || !content) {
-      console.warn(`[Validation] Skipping article ${article.id}: Missing title or content.`);
-      skippedCount++;
-      continue;
-    }
-
-    // Apply SEO optimizations if article is published and not already optimized locally
-    if (metadata.status === 'published') {
-      const optimized = optimizedMap.get(normalizedSlug) || optimizedMap.get(rawSlugFromDb);
-      if (optimized) {
-        metadata.title = String(optimized.optimizedTitle).trim();
-        metadata.meta_description = String(optimized.metaDescription).trim();
-        if (!metadata.description) metadata.description = metadata.meta_description;
-      }
-    }
-
-    metadata.slug = normalizedSlug;
-
-    // Immediate Indexing for published articles
-    if (metadata.status === 'published') {
-      const oldEntry = oldIndexMap.get(normalizedSlug);
-      if (!oldEntry || oldEntry.updated_at !== metadata.updated_at) {
-        const url = `${WEBSITE_URL}/blog/${normalizedSlug}`;
-        console.log(`[Indexing] Notifying Google about new/updated published article: ${url}`);
-        await notifyIndexing(url).catch(e => console.error(`Indexing failed for ${url}`, e));
-      }
-    }
-
-    // Add to index (Only include published articles in public index/sitemap)
-    if (metadata.status === 'published') {
-      articleIndex.push({
-        id: metadata.id as string,
+      const newItem: ArticleIndexItem = {
+        id: id,
         title: metadata.title as string,
         slug: normalizedSlug,
         description: (metadata.description || metadata.excerpt || "") as string,
         excerpt: metadata.excerpt as string,
         published_at: metadata.published_at as string,
-        category: metadata.category as string,
-        author: metadata.author as string,
+        category: (metadata.category || "Uncategorized") as string,
+        author: (metadata.author || "Admin") as string,
         image_url: (metadata.image_url || metadata.featured_image) as string,
         featured_image: metadata.featured_image as string,
-        reading_time: (metadata.reading_time || metadata.read_time) as number,
-        read_time: metadata.read_time as number,
-        views: metadata.views as number,
-        tags: metadata.tags as string[],
-        keywords: metadata.keywords as string[],
-        updated_at: metadata.updated_at as string
-      });
-    }
+        reading_time: (metadata.reading_time || metadata.read_time || 5) as number,
+        read_time: (metadata.read_time || 5) as number,
+        views: (metadata.views || 0) as number,
+        tags: (metadata.tags || []) as string[],
+        keywords: (metadata.keywords || []) as string[],
+        updated_at: (metadata.updated_at || metadata.published_at || new Date().toISOString()) as string
+      };
 
-    // Create Markdown content
-    const frontmatter = yaml.dump(metadata);
-    // Use trim() on content to avoid extra newlines at the start/end
-    const markdownContent = `---\n${frontmatter}---\n\n${content.trim()}`;
-
-    // Path is already calculated as 'fullPath'
-    const dir = path.dirname(fullPath);
-
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-
-    fs.writeFileSync(fullPath, markdownContent);
-    currentFiles.add(fullPath);
-    processedIds.add(metadata.id as string);
-    processedSlugs.add(normalizedSlug);
-    syncedCount++;
-  }
-
-  // Process Local-Only Pillar Articles
-  console.log('Processing local-only pillar articles...');
-  function walkDirForLocal(dir: string) {
-    if (!fs.existsSync(dir)) return;
-    const files = fs.readdirSync(dir);
-    for (const file of files) {
-      const fullPath = path.join(dir, file);
-      if (fs.statSync(fullPath).isDirectory()) {
-        walkDirForLocal(fullPath);
-      } else if (fullPath.endsWith('.md') && !currentFiles.has(fullPath)) {
-        try {
-          const localFileContent = fs.readFileSync(fullPath, 'utf-8');
-          const match = localFileContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
-          if (match) {
-            const metadata = yaml.load(match[1]) as Record<string, unknown>;
-            if (metadata.status === 'published') {
-              const normalizedSlug = normalizeSlug(String(metadata.slug || ""));
-              const id = (metadata.id || normalizedSlug) as string;
-
-              // Check if already processed
-              if (processedIds.has(id) || processedSlugs.has(normalizedSlug)) {
-                console.log(`[Pillar] Skipping already processed article: ${normalizedSlug}`);
-                currentFiles.add(fullPath); // Still mark as current so it's not deleted
-                continue;
-              }
-
-              // Add to index
-              articleIndex.push({
-                id: id,
-                title: metadata.title as string,
-                slug: normalizedSlug,
-                description: (metadata.description || metadata.excerpt || "") as string,
-                excerpt: metadata.excerpt as string,
-                published_at: metadata.published_at as string,
-                category: (metadata.category || "Uncategorized") as string,
-                author: (metadata.author || "Admin") as string,
-                image_url: (metadata.image_url || metadata.featured_image) as string,
-                featured_image: metadata.featured_image as string,
-                reading_time: (metadata.reading_time || metadata.read_time || 5) as number,
-                read_time: (metadata.read_time || 5) as number,
-                views: (metadata.views || 0) as number,
-                tags: (metadata.tags || []) as string[],
-                keywords: (metadata.keywords || []) as string[],
-                updated_at: (metadata.updated_at || new Date().toISOString()) as string
-              });
-
-              currentFiles.add(fullPath);
-              processedIds.add(id);
-              processedSlugs.add(normalizedSlug);
-              console.log(`[Pillar] Indexed local-only article: ${normalizedSlug}`);
-            }
-          }
-        } catch (e) {
-          console.warn(`[Pillar] Failed to process local article at ${fullPath}:`, e);
+      // Deduplication Logic by ID:
+      const existingById = idMap.get(id);
+      if (existingById) {
+        const existingDate = new Date(existingById.updated_at).getTime();
+        const newDate = new Date(newItem.updated_at).getTime();
+        if (newDate > existingDate) {
+          idMap.set(id, newItem);
+          console.log(`[Deduplicate] Updating ID ${id} with newer content from ${normalizedSlug}`);
+        } else {
+          console.log(`[Deduplicate] Keeping existing content for ID ${id}, skipping ${normalizedSlug}`);
         }
+      } else {
+        idMap.set(id, newItem);
       }
+    } catch (e) {
+      console.error(`[Index] Error processing ${filePath}:`, e);
     }
   }
-  walkDirForLocal(articlesDir);
 
-  // Cleanup: Remove files that are no longer in the database list
-  console.log('Cleaning up orphaned article files...');
-  function walkDir(dir: string) {
-    const files = fs.readdirSync(dir);
-    for (const file of files) {
-      const fullPath = path.join(dir, file);
-      if (fs.statSync(fullPath).isDirectory()) {
-        walkDir(fullPath);
-        // Remove empty directories
-        if (fs.readdirSync(fullPath).length === 0) {
-          fs.rmdirSync(fullPath);
-        }
-      } else if (fullPath.endsWith('.md') && !currentFiles.has(fullPath)) {
-        fs.unlinkSync(fullPath);
+  // Final check for slug uniqueness among the deduplicated IDs
+  const finalArticles: ArticleIndexItem[] = [];
+  const slugMap = new Map<string, ArticleIndexItem>();
+
+  for (const item of idMap.values()) {
+    const existingBySlug = slugMap.get(item.slug);
+    if (existingBySlug) {
+      console.warn(`[Collision] Slug ${item.slug} collision between ID ${existingBySlug.id} and ${item.id}`);
+      const existingDate = new Date(existingBySlug.updated_at).getTime();
+      const newDate = new Date(item.updated_at).getTime();
+      if (newDate > existingDate) {
+        slugMap.set(item.slug, item);
       }
+    } else {
+      slugMap.set(item.slug, item);
     }
   }
-  if (fs.existsSync(articlesDir)) {
-    walkDir(articlesDir);
-  }
 
-  // Save index
+  const articleIndex = Array.from(slugMap.values());
+
+  // Sort by published_at descending
+  articleIndex.sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
+
   fs.writeFileSync(indexFile, JSON.stringify(articleIndex, null, 2));
-
-  console.log('\n--- Sync Report ---');
-  console.log(`Total articles fetched: ${articles.length}`);
-  console.log(`Successfully synced: ${syncedCount}`);
-  console.log(`Skipped due to validation: ${skippedCount}`);
-  console.log('-------------------\n');
+  console.log(`Successfully rebuilt index with ${articleIndex.length} unique articles.`);
 
   // Automatically update sitemap
   console.log('Updating sitemap...');
@@ -479,4 +142,4 @@ async function sync() {
   }
 }
 
-sync().catch(console.error);
+rebuildIndex().catch(console.error);
