@@ -14,7 +14,18 @@ schema:
   "@context": "https://schema.org"
   "@type": "Article"
   "headline": "Chrome vs. Edge vs. Brave: Which Uses Least RAM in 2026?"
-  "description": "Benchmark comparison of the three most popular web browsers in 2026."
+  "description": "Benchmark comparison of the three most popular web browsers in 2026. Find out which browser is the best for low-RAM systems and power users."
+  "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200"
+  "author":
+    "@type": "Person"
+    "name": "Admin"
+  "publisher":
+    "@type": "Organization"
+    "name": "ExtensionTo"
+    "logo":
+      "@type": "ImageObject"
+      "url": "https://extensionto.com/favicon.png"
+  "datePublished": "2026-03-25"
 ---
 
 # Chrome vs. Edge vs. Brave: Which Uses Least RAM in 2026?

@@ -14,10 +14,18 @@ schema:
   "@context": "https://schema.org"
   "@type": "Article"
   "headline": "Ultimate Chrome RAM & Memory Management Guide (2026)"
-  "description": "Comprehensive guide to managing and optimizing Google Chrome RAM usage."
+  "description": "Master Chrome RAM management with our definitive 3000+ word guide. Learn how to fix high memory usage and optimize performance for a faster browser."
+  "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1200"
   "author":
     "@type": "Person"
     "name": "Admin"
+  "publisher":
+    "@type": "Organization"
+    "name": "ExtensionTo"
+    "logo":
+      "@type": "ImageObject"
+      "url": "https://extensionto.com/favicon.png"
+  "datePublished": "2026-03-20"
 ---
 
 # Ultimate Chrome RAM & Memory Management Guide (2026)

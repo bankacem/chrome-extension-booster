@@ -125,7 +125,11 @@ const SEODashboard = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO title="SEO Dashboard — ExtensionTo" description="SEO analytics and content management dashboard" />
+      <SEO
+        title="SEO Dashboard — ExtensionTo"
+        description="SEO analytics and content management dashboard"
+        canonicalPath="/settings/seo"
+      />
 
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-xl">
