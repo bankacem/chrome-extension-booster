@@ -15,6 +15,22 @@ tags: []
 keywords: ["internet download manager extension", "idm chrome extension", "idm integration module"]
 updated_at: "2025-05-20T11:00:00.000Z"
 featured_image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1200"
+schema:
+  "@context": "https://schema.org"
+  "@type": "HowTo"
+  "name": "How to Integrate IDM with Chrome"
+  "description": "Master the Internet Download Manager extension for Chrome. Learn how to fix integration issues and boost speeds."
+  "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1200"
+  "step":
+    - "@type": "HowToStep"
+      "name": "Open Extensions Page"
+      "text": "Navigate to chrome://extensions in your browser."
+    - "@type": "HowToStep"
+      "name": "Enable IDM Module"
+      "text": "Find 'IDM Integration Module' and toggle the switch to Enabled."
+    - "@type": "HowToStep"
+      "name": "Configure Incognito"
+      "text": "Click Details and enable 'Allow in Incognito' for private downloads."
 ---
 
 # Internet Download Manager Extension: Ultimate Guide to IDM Integration

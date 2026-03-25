@@ -16,7 +16,10 @@ import SEO from "@/components/SEO";
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
-      <SEO canonicalPath="/" />
+      <SEO
+        title="ExtensionTo - Powerful Chrome Extensions for Productivity"
+        canonicalPath="/"
+      />
       <Navbar />
       <HeroSection />
       <PartnersSection />

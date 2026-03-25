@@ -27,6 +27,7 @@ interface Article {
   tags: string[];
   keywords: string[];
   meta_description: string;
+  canonicalPath?: string;
   published_at: string;
   read_time: number;
   author: string;
@@ -339,7 +340,7 @@ const BlogPost = () => {
         <SEO
           title={article?.title || instantTitle}
           description={article?.meta_description || article?.excerpt || instantDescription}
-          canonicalPath={`/blog/${slug}`}
+          canonicalPath={article?.canonicalPath || `/blog/${slug}`}
           ogType="article"
           articlePublishedTime={article?.published_at}
           articleAuthor={article?.author}
@@ -425,7 +426,7 @@ const BlogPost = () => {
         title={article.title}
         description={article.meta_description || article.excerpt || undefined}
         keywords={article.keywords?.join(", ")}
-        canonicalPath={`/blog/${article.slug}`}
+        canonicalPath={article.canonicalPath || `/blog/${article.slug}`}
         ogType="article"
         articlePublishedTime={article.published_at}
         articleAuthor={article.author}
@@ -495,20 +496,22 @@ const BlogPost = () => {
             <VideoPlayer url={article.featured_video} title={article.title} />
           )}
 
-          {/* Featured Image — direct raw loading */}
+          {/* Featured Image — direct raw loading with defined dimensions to prevent CLS */}
           {article.featured_image && !article.featured_video && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="mb-8 overflow-hidden rounded-xl"
+              className="mb-8 overflow-hidden rounded-xl bg-muted aspect-video"
             >
               <img
                 src={resolveImagePath(article.featured_image)}
                 alt={article.title}
+                width="1200"
+                height="675"
                 decoding="async"
                 referrerPolicy="no-referrer"
-                className="w-full"
+                className="w-full h-full object-cover"
               />
             </motion.div>
           )}

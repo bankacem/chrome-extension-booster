@@ -191,7 +191,11 @@ const AdminLogin = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO title="Admin Login" noindex />
+      <SEO
+        title="Admin Login"
+        noindex
+        canonicalPath="/settings"
+      />
       <Navbar />
 
       <main className="container mx-auto flex min-h-[calc(100vh-80px)] items-center justify-center px-4 pt-20">

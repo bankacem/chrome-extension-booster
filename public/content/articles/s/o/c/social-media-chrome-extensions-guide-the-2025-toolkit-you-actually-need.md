@@ -12,6 +12,7 @@ tags:
   - 'Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need'
 keywords:
   - 'Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need'
+canonicalPath: /blog/social-media-chrome-extensions-guide-the-2025-toolkit-you-actually-need
 meta_description: Discover curated, high-performance browser extensions.
 status: published
 published_at: '2026-03-18T02:11:00.894+00:00'

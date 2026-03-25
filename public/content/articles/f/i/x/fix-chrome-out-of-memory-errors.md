@@ -14,13 +14,18 @@ schema:
   "@context": "https://schema.org"
   "@type": "HowTo"
   "name": "How to Fix Chrome Out of Memory Errors"
+  "description": "Step-by-step tutorial on fixing 'Out of Memory' errors in Google Chrome. Recover from crashes and prevent future browser failures."
+  "image": "https://images.unsplash.com/photo-1590212151175-e58edd96b8f3?auto=format&fit=crop&q=80&w=1200"
   "step":
     - "@type": "HowToStep"
+      "name": "Find Heavy Tabs"
       "text": "Identify the high-RAM tab using Chrome Task Manager (Shift + Esc)."
     - "@type": "HowToStep"
-      "text": "Terminate the process and refresh the page."
+      "name": "Terminate Process"
+      "text": "Terminate the process and refresh the page to reclaim resources."
     - "@type": "HowToStep"
-      "text": "Clear the browser cache for that specific site."
+      "name": "Clear Site Cache"
+      "text": "Clear the browser cache for that specific site to resolve potential leaks."
 ---
 
 # How to Fix 'Out of Memory' Errors in Google Chrome (2026 Guide)

@@ -14,13 +14,18 @@ schema:
   "@context": "https://schema.org"
   "@type": "HowTo"
   "name": "How to Optimize Chrome Memory Saver Mode"
+  "description": "Discover the technology behind Chrome's native Memory Saver mode. Learn how to configure it for maximum RAM savings without sacrificing speed."
+  "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200"
   "step":
     - "@type": "HowToStep"
-      "text": "Open Chrome Settings and go to the Performance tab."
+      "name": "Open Performance Settings"
+      "text": "Open Chrome Settings and navigate to the Performance tab."
     - "@type": "HowToStep"
-      "text": "Toggle 'Memory Saver' to On."
+      "name": "Enable Memory Saver"
+      "text": "Toggle 'Memory Saver' to On to allow Chrome to reclaim RAM from inactive tabs."
     - "@type": "HowToStep"
-      "text": "Add critical sites to the 'Always keep these sites active' list."
+      "name": "Configure Whitelist"
+      "text": "Add critical domains to the 'Always keep these sites active' list to prevent them from being discarded."
 ---
 
 # Chrome Memory Saver Mode: How It Works & How to Optimize It (2026)

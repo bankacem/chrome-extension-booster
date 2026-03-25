@@ -841,7 +841,11 @@ Disallow: /admin/*`;
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO title="Admin Dashboard" noindex />
+      <SEO
+        title="Admin Dashboard"
+        noindex
+        canonicalPath="/settings/manage"
+      />
       {/* Admin Header */}
       <header className="fixed top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">

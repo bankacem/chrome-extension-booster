@@ -13,8 +13,25 @@ read_time: 5
 views: 0
 tags: []
 keywords: ["chrome popup blocker", "pop up blocker for chrome", "block popups chrome"]
+meta_description: "Master Chrome popup blocker settings and extensions. Our 2026 guide helps you kill intrusive ads and enjoy a clean browsing experience."
 updated_at: "2025-05-20T12:00:00.000Z"
 featured_image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200"
+schema:
+  "@context": "https://schema.org"
+  "@type": "HowTo"
+  "name": "How to Configure Chrome Popup Blocker"
+  "description": "Stop annoying pop-ups forever. Learn how to use Chrome's native settings and pro extensions for a clean browsing experience."
+  "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200"
+  "step":
+    - "@type": "HowToStep"
+      "name": "Open Site Settings"
+      "text": "Go to Chrome Settings > Privacy and Security > Site Settings."
+    - "@type": "HowToStep"
+      "name": "Block Pop-ups"
+      "text": "Click 'Pop-ups and redirects' and select 'Don't allow sites to send pop-ups'."
+    - "@type": "HowToStep"
+      "name": "Install Pro Extension"
+      "text": "Install a verified popup blocker extension for advanced overlay protection."
 ---
 
 # Chrome Popup Blocker Master Guide: Kill Intrusive Ads in 2025

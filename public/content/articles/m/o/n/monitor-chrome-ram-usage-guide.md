@@ -14,13 +14,18 @@ schema:
   "@context": "https://schema.org"
   "@type": "HowTo"
   "name": "How to Monitor Chrome RAM Usage"
+  "description": "Master Chrome's monitoring tools. Learn how to use the Task Manager and Performance tab to identify resource-heavy tabs and extensions."
+  "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200"
   "step":
     - "@type": "HowToStep"
+      "name": "Open Task Manager"
       "text": "Press Shift + Esc to open the Chrome Task Manager."
     - "@type": "HowToStep"
-      "text": "Check the 'Memory Footprint' column for high values."
+      "name": "Analyze Footprint"
+      "text": "Check the 'Memory Footprint' column for high values to identify heavy processes."
     - "@type": "HowToStep"
-      "text": "Right-click headers to add more metrics (CPU, GPU, Network)."
+      "name": "Add Custom Metrics"
+      "text": "Right-click headers to add more metrics like GPU Memory, CPU, and Network."
 ---
 
 # How to Monitor Chrome RAM Usage: Mastering the Task Manager
