@@ -19,15 +19,37 @@ export async function notifyIndexing(url: string, type: 'URL_UPDATED' | 'URL_DEL
 
   if (process.env.GOOGLE_INDEXING_KEY) {
     try {
-      authOptions.credentials = JSON.parse(process.env.GOOGLE_INDEXING_KEY);
+      const creds = JSON.parse(process.env.GOOGLE_INDEXING_KEY);
+      if (creds.private_key) {
+        creds.private_key = creds.private_key.replace(/\\n/g, '\n');
+      }
+      authOptions.credentials = creds;
     } catch (e) {
       console.error('[Indexing] Error parsing GOOGLE_INDEXING_KEY environment variable:', (e as Error).message);
       return;
     }
   } else if (fs.existsSync(KEY_FILE)) {
-    authOptions.keyFile = KEY_FILE;
+    try {
+      const creds = JSON.parse(fs.readFileSync(KEY_FILE, 'utf8'));
+      if (creds.private_key) {
+        creds.private_key = creds.private_key.replace(/\\n/g, '\n');
+      }
+      authOptions.credentials = creds;
+    } catch (e) {
+      console.error('[Indexing] Error parsing service-account.json:', (e as Error).message);
+      return;
+    }
   } else if (fs.existsSync(ALT_KEY_FILE)) {
-    authOptions.keyFile = ALT_KEY_FILE;
+    try {
+      const creds = JSON.parse(fs.readFileSync(ALT_KEY_FILE, 'utf8'));
+      if (creds.private_key) {
+        creds.private_key = creds.private_key.replace(/\\n/g, '\n');
+      }
+      authOptions.credentials = creds;
+    } catch (e) {
+      console.error('[Indexing] Error parsing google-indexing-key.json:', (e as Error).message);
+      return;
+    }
   } else {
     console.warn(`[Indexing] Skip: No key found (env GOOGLE_INDEXING_KEY or ${KEY_FILE} not found)`);
     return;
