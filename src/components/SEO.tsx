@@ -38,6 +38,7 @@ const SEO = ({
 
   return (
     <Helmet>
+      <html lang="en" />
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>{fullTitle}</title>
