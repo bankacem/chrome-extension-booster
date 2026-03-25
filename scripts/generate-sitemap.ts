@@ -24,6 +24,19 @@ interface PageInfo {
   lastmod?: string;
 }
 
+function escapeXml(unsafe: string): string {
+  return unsafe.replace(/[<>&'"]/g, (c) => {
+    switch (c) {
+      case '<': return '&lt;';
+      case '>': return '&gt;';
+      case '&': return '&amp;';
+      case '\'': return '&apos;';
+      case '"': return '&quot;';
+      default: return c;
+    }
+  });
+}
+
 async function generateSitemap() {
   console.log("Generating sitemap...");
 
@@ -133,10 +146,10 @@ function generateSitemapXml(pages: PageInfo[]): string {
 ${pages
   .map(
     (page) => `  <url>
-    <loc>${WEBSITE_URL}${page.url}</loc>
-    <changefreq>${page.changefreq}</changefreq>
-    <priority>${page.priority}</priority>${page.lastmod ? `
-    <lastmod>${page.lastmod}</lastmod>` : ''}
+    <loc>${escapeXml(WEBSITE_URL + page.url)}</loc>
+    <changefreq>${escapeXml(page.changefreq)}</changefreq>
+    <priority>${escapeXml(page.priority)}</priority>${page.lastmod ? `
+    <lastmod>${escapeXml(page.lastmod)}</lastmod>` : ''}
   </url>`
   )
   .join("\n")}

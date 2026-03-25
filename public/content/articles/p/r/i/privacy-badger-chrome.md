@@ -1,6 +1,6 @@
 ---
 id: c2686b5c-fc87-4903-8753-5ad5ad1e7f23
-title: "Privacy Badger Chrome Guide: Ultimate Tracker Blocking 2026"
+title: 'Privacy Badger Chrome Guide: Ultimate Tracker Blocking 2026'
 slug: privacy-badger-chrome
 excerpt: >-
   When it comes to protecting your online privacy, choosing the right browser

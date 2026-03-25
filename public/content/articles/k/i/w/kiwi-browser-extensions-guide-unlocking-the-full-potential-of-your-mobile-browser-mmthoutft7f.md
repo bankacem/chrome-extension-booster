@@ -22,10 +22,10 @@ status: published
 published_at: '2026-03-17T13:00:00.638+00:00'
 scheduled_at: '2026-03-17T13:00:00+00:00'
 author: Admin
-views: 0
+views: 2
 read_time: 6
 created_at: '2026-03-16T18:00:53.935131+00:00'
-updated_at: '2026-03-17T13:00:00.789652+00:00'
+updated_at: '2026-03-25T13:15:27.450424+00:00'
 ---
 
 <h1>Kiwi Browser Extensions Guide: Unlocking the Full Potential of Your Mobile Browser</h1>
