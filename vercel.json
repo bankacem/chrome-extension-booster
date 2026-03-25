@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/blog/how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue",
+      "destination": "/blog/how-to-fix-chrome-memory-2026",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/sitemap.xml",
