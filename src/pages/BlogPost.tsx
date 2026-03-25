@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import SchemaMarkup from "@/components/SchemaMarkup";
 import DirectDownloadSection from "@/components/seo/DirectDownloadSection";
 import VideoPlayer from "@/components/blog/VideoPlayer";
 import { supabase } from "@/integrations/supabase/client";
@@ -32,6 +33,7 @@ interface Article {
   views: number;
   related_extension_slug?: string;
   featured_video?: string;
+  schema?: any;
 }
 
 const parseMarkdown = (text: string) => {
@@ -428,6 +430,7 @@ const BlogPost = () => {
         articlePublishedTime={article.published_at}
         articleAuthor={article.author}
       />
+      {article.schema && <SchemaMarkup data={article.schema} />}
       <Navbar />
 
       <main className="pt-24 pb-16">
