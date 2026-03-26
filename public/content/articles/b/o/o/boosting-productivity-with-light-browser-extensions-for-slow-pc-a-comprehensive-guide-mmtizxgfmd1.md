@@ -19,13 +19,13 @@ meta_description: >-
   primary reasons for a slow computer is a resource-intensive browser. However,
   with t
 status: published
-published_at: '2026-03-23T08:00:01.407+00:00'
-scheduled_at: '2026-03-23T08:00:00+00:00'
+published_at: "2026-03-23T08:00:01.407+00:00"
+scheduled_at: "2026-03-23T08:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:37:30.022715+00:00'
-updated_at: '2026-03-23T08:00:01.440828+00:00'
+created_at: "2026-03-16T18:37:30.022715+00:00"
+updated_at: "2026-03-23T08:00:01.440828+00:00"
 ---
 
 <h1>Boosting Productivity with Light Browser Extensions for Slow PC: A Comprehensive Guide</h1>

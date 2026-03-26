@@ -1,6 +1,6 @@
 ---
 id: 4894deb9-5d3d-406f-89cb-052b7878ebc8
-title: 'kiwi browser vs yandex browser: A Comprehensive Comparison for the Modern User'
+title: "kiwi browser vs yandex browser: A Comprehensive Comparison for the Modern User"
 slug: >-
   kiwi-browser-vs-yandex-browser-a-comprehensive-comparison-for-the-modern-user-mmthox9h7jb
 excerpt: >-
@@ -17,13 +17,13 @@ meta_description: >-
   significantly impact your overall experience. Two popular alternatives to the
   mainstream brows
 status: published
-published_at: '2026-03-22T08:00:01.366+00:00'
-scheduled_at: '2026-03-22T08:00:00+00:00'
+published_at: "2026-03-22T08:00:01.366+00:00"
+scheduled_at: "2026-03-22T08:00:00+00:00"
 author: Admin
 views: 0
 read_time: 6
-created_at: '2026-03-16T18:00:57.139845+00:00'
-updated_at: '2026-03-22T08:00:01.45543+00:00'
+created_at: "2026-03-16T18:00:57.139845+00:00"
+updated_at: "2026-03-22T08:00:01.45543+00:00"
 ---
 
 <h1>kiwi browser vs yandex browser: A Comprehensive Comparison for the Modern User</h1>

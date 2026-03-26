@@ -19,13 +19,13 @@ meta_description: >-
   no further than Chrome mobile adblock solutions. As the world becomes
   increasingl
 status: published
-published_at: '2026-03-23T08:00:01.462+00:00'
-scheduled_at: '2026-03-23T08:00:00+00:00'
+published_at: "2026-03-23T08:00:01.462+00:00"
+scheduled_at: "2026-03-23T08:00:00+00:00"
 author: AI Generator
 views: 0
 read_time: 5
-created_at: '2026-02-26T18:17:22.677983+00:00'
-updated_at: '2026-03-23T08:00:01.603668+00:00'
+created_at: "2026-02-26T18:17:22.677983+00:00"
+updated_at: "2026-03-23T08:00:01.603668+00:00"
 ---
 
 <h1>Unlocking Ad-Free Browsing on-the-Go: The Ultimate Guide to Chrome Mobile Adblock</h1>

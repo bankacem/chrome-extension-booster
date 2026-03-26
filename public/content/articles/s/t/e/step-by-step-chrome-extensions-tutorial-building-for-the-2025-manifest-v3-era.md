@@ -1,6 +1,6 @@
 ---
 id: c18dec57-79d4-44fa-968e-01c6b9c4960e
-title: 'Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3 Era'
+title: "Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3 Era"
 slug: step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era
 excerpt: >-
   Discover the future of browser extensions with our curated, high-performance
@@ -18,13 +18,13 @@ keywords:
   - productivity
 meta_description: Discover curated, high-performance browser extensions.
 status: published
-published_at: '2026-03-18T20:11:00.24+00:00'
-scheduled_at: '2026-03-18T20:11:00+00:00'
+published_at: "2026-03-18T20:11:00.24+00:00"
+scheduled_at: "2026-03-18T20:11:00+00:00"
 author: Admin
 views: 0
 read_time: 1
-created_at: '2026-01-19T13:56:52.373854+00:00'
-updated_at: '2026-03-18T20:11:00.29202+00:00'
+created_at: "2026-01-19T13:56:52.373854+00:00"
+updated_at: "2026-03-18T20:11:00.29202+00:00"
 ---
 
 <p><!-- wp:image --></p>

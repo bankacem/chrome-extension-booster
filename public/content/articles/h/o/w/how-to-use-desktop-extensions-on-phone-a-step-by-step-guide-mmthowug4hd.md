@@ -1,6 +1,6 @@
 ---
 id: 7e511e56-e552-469d-83ec-1024c9caefb6
-title: 'How to Use Desktop Extensions on Phone: A Step-by-Step Guide'
+title: "How to Use Desktop Extensions on Phone: A Step-by-Step Guide"
 slug: how-to-use-desktop-extensions-on-phone-a-step-by-step-guide-mmthowug4hd
 excerpt: >-
   Are you tired of being limited to using your favorite desktop extensions only
@@ -16,13 +16,13 @@ meta_description: >-
   on your computer? With the advancement of technology, it's now possible to use
   des
 status: published
-published_at: '2026-03-21T13:00:00.855+00:00'
-scheduled_at: '2026-03-21T13:00:00+00:00'
+published_at: "2026-03-21T13:00:00.855+00:00"
+scheduled_at: "2026-03-21T13:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:00:56.77094+00:00'
-updated_at: '2026-03-21T13:00:00.902324+00:00'
+created_at: "2026-03-16T18:00:56.77094+00:00"
+updated_at: "2026-03-21T13:00:00.902324+00:00"
 ---
 
 <h1>How to Use Desktop Extensions on Phone: A Step-by-Step Guide</h1>

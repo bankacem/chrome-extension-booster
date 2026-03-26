@@ -19,13 +19,13 @@ meta_description: >-
   browser extensions download? With the vast array of options available, it can
   be overwhe
 status: published
-published_at: '2026-03-25T08:00:00.405+00:00'
-scheduled_at: '2026-03-25T08:00:00+00:00'
+published_at: "2026-03-25T08:00:00.405+00:00"
+scheduled_at: "2026-03-25T08:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:01:00.65669+00:00'
-updated_at: '2026-03-25T08:00:00.454617+00:00'
+created_at: "2026-03-16T18:01:00.65669+00:00"
+updated_at: "2026-03-25T08:00:00.454617+00:00"
 ---
 
 <h1>Discover the Best Lemur Browser Extensions Download for Enhanced Browsing Experience</h1>

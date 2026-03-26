@@ -1,6 +1,6 @@
 ---
 id: 15eb668c-bc83-45fd-b2b6-7fc499df57e5
-title: 'Breaking Free from Annoying Ads: The Power of Anti Popup Free Solutions'
+title: "Breaking Free from Annoying Ads: The Power of Anti Popup Free Solutions"
 slug: >-
   breaking-free-from-annoying-ads-the-power-of-anti-popup-free-solutions-mm3scpnc2b6
 excerpt: >-
@@ -17,13 +17,13 @@ meta_description: >-
   the internet? Look no further than anti popup free solutions, designed to give
   you
 status: published
-published_at: '2026-03-25T08:00:00.629+00:00'
-scheduled_at: '2026-03-25T08:00:00+00:00'
+published_at: "2026-03-25T08:00:00.629+00:00"
+scheduled_at: "2026-03-25T08:00:00+00:00"
 author: AI Generator
 views: 0
 read_time: 5
-created_at: '2026-02-26T18:17:23.050579+00:00'
-updated_at: '2026-03-25T08:00:00.656557+00:00'
+created_at: "2026-02-26T18:17:23.050579+00:00"
+updated_at: "2026-03-25T08:00:00.656557+00:00"
 ---
 
 <h1>Breaking Free from Annoying Ads: The Power of Anti Popup Free Solutions</h1>

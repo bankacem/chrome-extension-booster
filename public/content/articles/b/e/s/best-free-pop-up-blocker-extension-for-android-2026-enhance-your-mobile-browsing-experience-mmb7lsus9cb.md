@@ -19,13 +19,13 @@ meta_description: >-
   browsing experience on Android? Look no further! In this comprehensive guide,
   we'll e
 status: published
-published_at: '2026-03-17T05:00:00.235+00:00'
-scheduled_at: '2026-03-17T05:00:00+00:00'
+published_at: "2026-03-17T05:00:00.235+00:00"
+scheduled_at: "2026-03-17T05:00:00+00:00"
 author: AI Generator
 views: 0
 read_time: 4
-created_at: '2026-03-03T22:58:45.23761+00:00'
-updated_at: '2026-03-17T05:00:00.292113+00:00'
+created_at: "2026-03-03T22:58:45.23761+00:00"
+updated_at: "2026-03-17T05:00:00.292113+00:00"
 ---
 
 <h1>Best Free Pop Up Blocker Extension for Android 2026: Enhance Your Mobile Browsing Experience</h1>

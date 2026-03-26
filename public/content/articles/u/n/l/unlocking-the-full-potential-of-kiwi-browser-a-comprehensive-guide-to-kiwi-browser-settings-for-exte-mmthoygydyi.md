@@ -19,13 +19,13 @@ meta_description: >-
   capabilities and flexibility. One of the key features that sets Kiwi apart
   from other brows
 status: published
-published_at: '2026-03-23T12:00:00.491+00:00'
-scheduled_at: '2026-03-23T12:00:00+00:00'
+published_at: "2026-03-23T12:00:00.491+00:00"
+scheduled_at: "2026-03-23T12:00:00+00:00"
 author: Admin
 views: 0
 read_time: 6
-created_at: '2026-03-16T18:00:58.785966+00:00'
-updated_at: '2026-03-23T12:00:00.582778+00:00'
+created_at: "2026-03-16T18:00:58.785966+00:00"
+updated_at: "2026-03-23T12:00:00.582778+00:00"
 ---
 
 <h1>Unlocking the Full Potential of Kiwi Browser: A Comprehensive Guide to Kiwi Browser Settings for Extensions</h1>

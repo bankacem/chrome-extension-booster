@@ -11,7 +11,9 @@
     "preview": "vite preview",
     "sitemap": "bun scripts/generate-sitemap.ts",
     "sync-articles": "bun scripts/sync-articles.ts",
-    "index-sitemap": "bun scripts/index-sitemap.ts"
+    "sync-db-to-md": "bun scripts/sync-db-to-md.ts",
+    "index-sitemap": "bun scripts/index-sitemap.ts",
+    "pre-commit": "bun run sync-db-to-md && bun run sync-articles"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

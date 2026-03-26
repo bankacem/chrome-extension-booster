@@ -1,8 +1,6 @@
 ---
 id: f281a3d5-04e8-4fdb-b216-3c23c7fa9466
-title: >-
-  How to Install Chrome Extensions A Complete Step-by-Step Tutorial: Best Free
-  Alternatives 2025
+title: "How to Install Chrome Extensions: A Complete Step-by-Step Tutorial"
 slug: how-to-install-chrome-extensions-a-complete-step-by-step-tutorial
 excerpt: >-
   Discover the future of browser extensions with our curated, high-performance
@@ -18,20 +16,15 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: >-
-  Discover expert tips for customizing your browsing experience. Learn how to
-  integrate powerful addons that save you time and improve your focus.
+meta_description: Discover curated, high-performance browser extensions.
 status: published
-published_at: '2026-01-30T09:00:01.037+00:00'
-scheduled_at: '2026-01-30T09:00:00+00:00'
+published_at: "2026-01-30T09:00:01.037+00:00"
+scheduled_at: "2026-01-30T09:00:00+00:00"
 author: Admin
 views: 2
 read_time: 1
-created_at: '2026-01-19T13:57:24.243317+00:00'
-updated_at: '2026-03-03T17:57:00.594941+00:00'
-description: >-
-  Discover expert tips for customizing your browsing experience. Learn how to
-  integrate powerful addons that save you time and improve your focus.
+created_at: "2026-01-19T13:57:24.243317+00:00"
+updated_at: "2026-03-03T17:57:00.594941+00:00"
 ---
 
 <div class="editor-visual-editor__post-title-wrapper edit-post-visual-editor__post-title-wrapper" contenteditable="false">

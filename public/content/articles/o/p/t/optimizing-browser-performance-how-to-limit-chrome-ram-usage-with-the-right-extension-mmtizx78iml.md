@@ -19,13 +19,13 @@ meta_description: >-
   its speed, security, and extensive library of extensions. However, one of the
   comm
 status: published
-published_at: '2026-03-22T08:00:01.838+00:00'
-scheduled_at: '2026-03-22T08:00:00+00:00'
+published_at: "2026-03-22T08:00:01.838+00:00"
+scheduled_at: "2026-03-22T08:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:37:29.793322+00:00'
-updated_at: '2026-03-22T08:00:01.902692+00:00'
+created_at: "2026-03-16T18:37:29.793322+00:00"
+updated_at: "2026-03-22T08:00:01.902692+00:00"
 ---
 
 <h1>Optimizing Browser Performance: How to Limit Chrome RAM Usage with the Right Extension</h1>

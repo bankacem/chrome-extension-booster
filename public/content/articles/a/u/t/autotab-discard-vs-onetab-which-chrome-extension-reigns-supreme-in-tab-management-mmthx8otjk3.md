@@ -19,13 +19,13 @@ meta_description: >-
   out: Autotab Discard and Onetab. Both extensions aim to help users optimize
   their
 status: published
-published_at: '2026-03-19T09:00:00.472+00:00'
-scheduled_at: '2026-03-19T09:00:00+00:00'
+published_at: "2026-03-19T09:00:00.472+00:00"
+scheduled_at: "2026-03-19T09:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:07:25.423807+00:00'
-updated_at: '2026-03-19T09:00:00.500702+00:00'
+created_at: "2026-03-16T18:07:25.423807+00:00"
+updated_at: "2026-03-19T09:00:00.500702+00:00"
 ---
 
 <h1>Autotab Discard vs Onetab: Which Chrome Extension Reigns Supreme in Tab Management?</h1>

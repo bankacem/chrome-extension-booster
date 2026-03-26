@@ -19,13 +19,13 @@ meta_description: >-
   updates and new features, it's easy for Chrome to become bloated and sluggish.
   Howev
 status: published
-published_at: '2026-03-23T08:00:01.187+00:00'
-scheduled_at: '2026-03-23T08:00:00+00:00'
+published_at: "2026-03-23T08:00:01.187+00:00"
+scheduled_at: "2026-03-23T08:00:00+00:00"
 author: Admin
 views: 0
 read_time: 7
-created_at: '2026-03-16T18:07:26.776894+00:00'
-updated_at: '2026-03-23T08:00:01.348909+00:00'
+created_at: "2026-03-16T18:07:26.776894+00:00"
+updated_at: "2026-03-23T08:00:01.348909+00:00"
 ---
 
 <h1>Speed Up Google Chrome 2026: Expert Tips and Tricks to Boost Your Browsing Experience</h1>

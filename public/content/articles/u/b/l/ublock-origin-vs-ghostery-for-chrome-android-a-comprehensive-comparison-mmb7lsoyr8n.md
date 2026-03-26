@@ -1,6 +1,6 @@
 ---
 id: 4668daa1-bf35-4a65-b3d4-7f2f2d659f3a
-title: 'uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison'
+title: "uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison"
 slug: >-
   ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n
 excerpt: >-
@@ -11,7 +11,7 @@ featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEiUabqPn0BbwHtYujXBaSd5mpQbj8Fk-Zie59wpYES6uKlXKJ-mVymg_9g2yoVn1eDm6y8axWIKvy0NS7LeBA-a9C169WsufYZWhtFzdtiQUTd0y-5avombP5ZpSqlV7kEvxF7aqN4PEaOY3u5d6GEYEccqlSguMSsbJhYVtyUV-wFVsYk8udvkHIU3fCY
 category: Chrome Extensions
 tags:
-  - 'uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison'
+  - "uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison"
 keywords:
   - uBlock Origin vs Ghostery for Chrome Android
 meta_description: >-
@@ -19,13 +19,13 @@ meta_description: >-
   Android, two popular extensions stand out: uBlock Origin and Ghostery. Both
   extensions ha
 status: published
-published_at: '2026-03-16T14:42:12.807+00:00'
+published_at: "2026-03-16T14:42:12.807+00:00"
 scheduled_at: null
 author: AI Generator
 views: 1
 read_time: 5
-created_at: '2026-03-03T22:58:45.037087+00:00'
-updated_at: '2026-03-25T13:15:33.998216+00:00'
+created_at: "2026-03-03T22:58:45.037087+00:00"
+updated_at: "2026-03-25T13:15:33.998216+00:00"
 ---
 
 <h1>uBlock Origin vs <a href="/blog/unlocking-online-privacy-a-comprehensive-guide-to-ghostery-for-chrome-android-mm3scml5zl3" class="internal-link" title="Unlocking Online Privacy: A Comprehensive Guide to Ghostery for Chrome Android">Ghostery for Chrome Android</a>: A <a href="/blog/is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management-mmb6y4ldz8f" class="internal-link" title="Is there an IDM extension for Chrome Android? A Comprehensive Guide to Download Management">Comprehensive</a> Comparison</h1>

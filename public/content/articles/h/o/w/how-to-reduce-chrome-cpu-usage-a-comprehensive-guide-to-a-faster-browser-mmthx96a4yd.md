@@ -1,6 +1,6 @@
 ---
 id: 4ca0043d-6bde-472e-986d-e6262efd00d4
-title: 'How to Reduce Chrome CPU Usage: A Comprehensive Guide to a Faster Browser'
+title: "How to Reduce Chrome CPU Usage: A Comprehensive Guide to a Faster Browser"
 slug: >-
   how-to-reduce-chrome-cpu-usage-a-comprehensive-guide-to-a-faster-browser-mmthx96a4yd
 excerpt: >-
@@ -17,13 +17,13 @@ meta_description: >-
   computer and affecting your productivity? You're not alone. Many users face
   this is
 status: published
-published_at: '2026-03-20T09:00:01.08+00:00'
-scheduled_at: '2026-03-20T09:00:00+00:00'
+published_at: "2026-03-20T09:00:01.08+00:00"
+scheduled_at: "2026-03-20T09:00:00+00:00"
 author: Admin
 views: 0
 read_time: 6
-created_at: '2026-03-16T18:07:25.937187+00:00'
-updated_at: '2026-03-20T09:00:01.174741+00:00'
+created_at: "2026-03-16T18:07:25.937187+00:00"
+updated_at: "2026-03-20T09:00:01.174741+00:00"
 ---
 
 <h1>How to Reduce Chrome CPU Usage: A Comprehensive Guide to a Faster Browser</h1>
