@@ -1,6 +1,6 @@
 ---
 id: 0b9829b2-1391-49a2-b0e4-c5728884a2bb
-title: 'Fix Chrome High Memory Usage in 2026: 7 Proven Methods (No Extensions Needed)'
+title: "Fix Chrome High Memory Usage in 2026: 7 Proven Methods (No Extensions Needed)"
 slug: fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed
 excerpt: >-
   Discover the future of browser extensions with our curated, high-performance
@@ -16,15 +16,15 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Fix Chrome High Memory Usage in 2026: 7 Proven Methods (No Extensions Needed)'
+meta_description: "Fix Chrome High Memory Usage in 2026: 7 Proven Methods (No Extensions Needed)"
 status: published
-published_at: '2026-03-16T17:19:45.592+00:00'
+published_at: "2026-03-16T17:19:45.592+00:00"
 scheduled_at: null
 author: Admin
 views: 1
 read_time: 1
-created_at: '2026-01-19T13:57:22.686029+00:00'
-updated_at: '2026-03-16T17:19:47.816203+00:00'
+created_at: "2026-01-19T13:57:22.686029+00:00"
+updated_at: "2026-03-16T17:19:47.816203+00:00"
 ---
 
 <p><!-- wp:heading --></p>

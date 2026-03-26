@@ -19,13 +19,13 @@ meta_description: >-
   online experience? Look no further than the Yandex Browser, available on the
   Chrom
 status: published
-published_at: '2026-03-19T09:00:00.353+00:00'
-scheduled_at: '2026-03-19T09:00:00+00:00'
+published_at: "2026-03-19T09:00:00.353+00:00"
+scheduled_at: "2026-03-19T09:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:00:55.189777+00:00'
-updated_at: '2026-03-19T09:00:00.399575+00:00'
+created_at: "2026-03-16T18:00:55.189777+00:00"
+updated_at: "2026-03-19T09:00:00.399575+00:00"
 ---
 
 <h1>Unlocking the Power of Yandex Browser on Chrome Web Store: A Comprehensive Guide</h1>

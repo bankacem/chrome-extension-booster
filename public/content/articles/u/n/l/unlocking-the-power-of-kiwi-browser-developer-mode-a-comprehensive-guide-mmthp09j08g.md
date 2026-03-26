@@ -1,6 +1,6 @@
 ---
 id: 10213140-3e3a-427a-adbd-af56941e53e3
-title: 'Unlocking the Power of Kiwi Browser Developer Mode: A Comprehensive Guide'
+title: "Unlocking the Power of Kiwi Browser Developer Mode: A Comprehensive Guide"
 slug: >-
   unlocking-the-power-of-kiwi-browser-developer-mode-a-comprehensive-guide-mmthp09j08g
 excerpt: >-
@@ -17,13 +17,13 @@ meta_description: >-
   debugging your websites and applications across various browsers and devices.
   One
 status: published
-published_at: '2026-03-25T12:00:02.033+00:00'
-scheduled_at: '2026-03-25T12:00:00+00:00'
+published_at: "2026-03-25T12:00:02.033+00:00"
+scheduled_at: "2026-03-25T12:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:01:00.902789+00:00'
-updated_at: '2026-03-25T12:00:02.103112+00:00'
+created_at: "2026-03-16T18:01:00.902789+00:00"
+updated_at: "2026-03-25T12:00:02.103112+00:00"
 ---
 
 <h1>Unlocking the Power of Kiwi Browser Developer Mode: A Comprehensive Guide</h1>

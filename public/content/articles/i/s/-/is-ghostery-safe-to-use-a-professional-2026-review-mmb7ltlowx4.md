@@ -16,13 +16,13 @@ meta_description: >-
   arises is: Is Ghostery safe to use? With the increasing concern over online
   privacy an
 status: published
-published_at: '2026-03-23T04:00:01.166+00:00'
-scheduled_at: '2026-03-23T04:00:00+00:00'
+published_at: "2026-03-23T04:00:01.166+00:00"
+scheduled_at: "2026-03-23T04:00:00+00:00"
 author: AI Generator
 views: 0
 read_time: 6
-created_at: '2026-03-03T22:58:46.205476+00:00'
-updated_at: '2026-03-23T04:00:01.250096+00:00'
+created_at: "2026-03-03T22:58:46.205476+00:00"
+updated_at: "2026-03-23T04:00:01.250096+00:00"
 ---
 
 <h1>Is Ghostery Safe to Use? A Professional 2026 Review</h1>

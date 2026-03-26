@@ -1,6 +1,6 @@
 ---
 id: 66e42800-b72a-4757-94c1-0dfb2ac063bc
-title: 'Free Chrome Extension Reviews: How to Spot the Gems and Dodge the Junk'
+title: "Free Chrome Extension Reviews: How to Spot the Gems and Dodge the Junk"
 slug: free-chrome-extension-reviews-how-to-spot-the-gems-and-dodge-the-junk
 excerpt: >-
   Discover the future of browser extensions with our curated, high-performance
@@ -18,13 +18,13 @@ keywords:
   - productivity
 meta_description: Discover curated, high-performance browser extensions.
 status: published
-published_at: '2026-03-17T02:11:00.606+00:00'
-scheduled_at: '2026-03-17T02:11:00+00:00'
+published_at: "2026-03-17T02:11:00.606+00:00"
+scheduled_at: "2026-03-17T02:11:00+00:00"
 author: Admin
 views: 0
 read_time: 1
-created_at: '2026-01-19T13:56:57.518559+00:00'
-updated_at: '2026-03-17T02:11:00.660719+00:00'
+created_at: "2026-01-19T13:56:57.518559+00:00"
+updated_at: "2026-03-17T02:11:00.660719+00:00"
 ---
 
 <p><!-- wp:heading {"level":1} --></p>

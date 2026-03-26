@@ -19,13 +19,13 @@ meta_description: >-
   communication, battery life has become a major concern. With the numerous tabs
   and extension
 status: published
-published_at: '2026-03-25T08:00:00.515+00:00'
-scheduled_at: '2026-03-25T08:00:00+00:00'
+published_at: "2026-03-25T08:00:00.515+00:00"
+scheduled_at: "2026-03-25T08:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:37:30.406243+00:00'
-updated_at: '2026-03-25T08:00:00.540595+00:00'
+created_at: "2026-03-16T18:37:30.406243+00:00"
+updated_at: "2026-03-25T08:00:00.540595+00:00"
 ---
 
 <h1>Maximizing Laptop Battery Life: The Ultimate Guide to Chrome Battery Saver Extension</h1>

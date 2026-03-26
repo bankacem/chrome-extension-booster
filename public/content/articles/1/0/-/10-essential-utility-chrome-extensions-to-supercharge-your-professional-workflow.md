@@ -21,13 +21,13 @@ keywords:
   - productivity
 meta_description: Discover curated, high-performance browser extensions.
 status: published
-published_at: '2026-03-16T02:11:01.384+00:00'
-scheduled_at: '2026-03-16T02:11:00+00:00'
+published_at: "2026-03-16T02:11:01.384+00:00"
+scheduled_at: "2026-03-16T02:11:00+00:00"
 author: Admin
 views: 0
 read_time: 1
-created_at: '2026-01-19T13:57:03.244295+00:00'
-updated_at: '2026-03-16T14:43:43.310935+00:00'
+created_at: "2026-01-19T13:57:03.244295+00:00"
+updated_at: "2026-03-16T14:43:43.310935+00:00"
 ---
 
 <p><!-- wp:paragraph --></p>
@@ -56,7 +56,7 @@ updated_at: '2026-03-16T14:43:43.310935+00:00'
 <!-- /wp:list-item --> <!-- wp:list-item -->
 <li><a href="#stayfocusd">6. StayFocusd: Outsourcing Your Willpower</a></li>
 <!-- /wp:list-item --> <!-- wp:list-item -->
-<li>7. Awesome Screenshot: Visual <a href="/blog/google-trad-plugin-15" class="internal-link" title="Unlocking Global Communication: The Power of Google Trad Plugin">Communication</a> Mastered</li>
+<li><a href="#awesome-screenshot">7. Awesome Screenshot: Visual <a href="/blog/google-trad-plugin-15" class="internal-link" title="Unlocking Global Communication: The Power of Google Trad Plugin">Communication</a> Mastered</a></li>
 <!-- /wp:list-item --> <!-- wp:list-item -->
 <li><a href="#todoist">8. Todoist: The Art of Instant Capture</a></li>
 <!-- /wp:list-item --> <!-- wp:list-item -->

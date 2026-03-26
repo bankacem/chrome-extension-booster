@@ -18,13 +18,13 @@ keywords:
   - productivity
 meta_description: Discover curated, high-performance browser extensions.
 status: published
-published_at: '2026-03-17T20:11:02.833+00:00'
-scheduled_at: '2026-03-17T20:11:00+00:00'
+published_at: "2026-03-17T20:11:02.833+00:00"
+scheduled_at: "2026-03-17T20:11:00+00:00"
 author: Admin
 views: 0
 read_time: 1
-created_at: '2026-01-19T13:56:55.20542+00:00'
-updated_at: '2026-03-17T20:11:02.922906+00:00'
+created_at: "2026-01-19T13:56:55.20542+00:00"
+updated_at: "2026-03-17T20:11:02.922906+00:00"
 ---
 
 <p><!-- wp:paragraph --></p>

@@ -1,6 +1,6 @@
 ---
 id: 2557dbd4-707a-4b5c-af02-d41497dbd8a6
-title: 'Unlocking Ad-Free Browsing: The Ultimate Guide to Adblock in Chrome Android'
+title: "Unlocking Ad-Free Browsing: The Ultimate Guide to Adblock in Chrome Android"
 slug: >-
   unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-in-chrome-android-mm3scos4n36
 excerpt: >-
@@ -17,13 +17,13 @@ meta_description: >-
   Android device? Look no further! In this comprehensive guide, we'll explore
   the world
 status: published
-published_at: '2026-03-19T09:00:00.518+00:00'
-scheduled_at: '2026-03-19T09:00:00+00:00'
+published_at: "2026-03-19T09:00:00.518+00:00"
+scheduled_at: "2026-03-19T09:00:00+00:00"
 author: AI Generator
 views: 0
 read_time: 4
-created_at: '2026-02-26T18:17:21.941441+00:00'
-updated_at: '2026-03-19T09:00:00.549032+00:00'
+created_at: "2026-02-26T18:17:21.941441+00:00"
+updated_at: "2026-03-19T09:00:00.549032+00:00"
 ---
 
 <h1>Unlocking Ad-Free Browsing: The Ultimate Guide to Adblock in Chrome Android</h1>

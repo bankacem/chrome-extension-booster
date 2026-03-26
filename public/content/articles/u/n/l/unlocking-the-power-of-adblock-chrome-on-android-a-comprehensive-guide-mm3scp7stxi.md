@@ -1,6 +1,6 @@
 ---
 id: b87a203f-8a1d-424f-ab23-4fa2fc5fbae0
-title: 'Unlocking the Power of Adblock Chrome on Android: A Comprehensive Guide'
+title: "Unlocking the Power of Adblock Chrome on Android: A Comprehensive Guide"
 slug: >-
   unlocking-the-power-of-adblock-chrome-on-android-a-comprehensive-guide-mm3scp7stxi
 excerpt: >-
@@ -17,13 +17,13 @@ meta_description: >-
   Android device? Look no further than adblock Chrome on Android, a powerful
   solution to
 status: published
-published_at: '2026-03-22T08:00:01.914+00:00'
-scheduled_at: '2026-03-22T08:00:00+00:00'
+published_at: "2026-03-22T08:00:01.914+00:00"
+scheduled_at: "2026-03-22T08:00:00+00:00"
 author: AI Generator
 views: 0
 read_time: 5
-created_at: '2026-02-26T18:17:22.497399+00:00'
-updated_at: '2026-03-22T08:00:01.953822+00:00'
+created_at: "2026-02-26T18:17:22.497399+00:00"
+updated_at: "2026-03-22T08:00:01.953822+00:00"
 ---
 
 <h1>Unlocking the Power of Adblock Chrome on Android: A Comprehensive Guide</h1>

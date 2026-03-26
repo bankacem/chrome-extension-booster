@@ -19,13 +19,13 @@ meta_description: >-
   next level? Look no further! With the right extensions, you can supercharge
   your bro
 status: published
-published_at: '2026-03-22T12:00:01.277+00:00'
-scheduled_at: '2026-03-22T12:00:00+00:00'
+published_at: "2026-03-22T12:00:01.277+00:00"
+scheduled_at: "2026-03-22T12:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:00:57.467562+00:00'
-updated_at: '2026-03-22T12:00:01.375219+00:00'
+created_at: "2026-03-16T18:00:57.467562+00:00"
+updated_at: "2026-03-22T12:00:01.375219+00:00"
 ---
 
 <h1>Unlock the Full Potential of Kiwi Browser: Discover the Best Extensions for Enhanced Browsing</h1>

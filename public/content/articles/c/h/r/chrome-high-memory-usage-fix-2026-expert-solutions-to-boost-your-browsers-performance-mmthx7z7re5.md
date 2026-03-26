@@ -19,13 +19,13 @@ meta_description: >-
   your browsing experience? You're not alone. Many users have reported chrome
   high me
 status: published
-published_at: '2026-03-17T09:00:00.5+00:00'
-scheduled_at: '2026-03-17T09:00:00+00:00'
+published_at: "2026-03-17T09:00:00.5+00:00"
+scheduled_at: "2026-03-17T09:00:00+00:00"
 author: Admin
 views: 0
 read_time: 6
-created_at: '2026-03-16T18:07:24.458034+00:00'
-updated_at: '2026-03-17T09:00:00.568742+00:00'
+created_at: "2026-03-16T18:07:24.458034+00:00"
+updated_at: "2026-03-17T09:00:00.568742+00:00"
 ---
 
 <h1>Chrome High Memory Usage Fix 2026: Expert Solutions to Boost Your Browser's Performance</h1>

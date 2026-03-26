@@ -19,13 +19,13 @@ meta_description: >-
   Chrome extensions for Android APK? Look no further! In this article, we'll
   delve into t
 status: published
-published_at: '2026-03-19T13:00:02.166+00:00'
-scheduled_at: '2026-03-19T13:00:00+00:00'
+published_at: "2026-03-19T13:00:02.166+00:00"
+scheduled_at: "2026-03-19T13:00:00+00:00"
 author: Admin
 views: 0
 read_time: 4
-created_at: '2026-03-16T18:00:55.395174+00:00'
-updated_at: '2026-03-19T13:00:02.239693+00:00'
+created_at: "2026-03-16T18:00:55.395174+00:00"
+updated_at: "2026-03-19T13:00:02.239693+00:00"
 ---
 
 <h1>Unlocking the Power of Chrome Extensions for Android APK: A Comprehensive Guide</h1>

@@ -19,13 +19,13 @@ meta_description: >-
   the desktop version, but did you know that you can also access these
   extensions o
 status: published
-published_at: '2026-03-21T09:00:00.706+00:00'
-scheduled_at: '2026-03-21T09:00:00+00:00'
+published_at: "2026-03-21T09:00:00.706+00:00"
+scheduled_at: "2026-03-21T09:00:00+00:00"
 author: Admin
-views: 0
+views: 1
 read_time: 5
-created_at: '2026-03-16T18:00:56.275937+00:00'
-updated_at: '2026-03-21T09:00:00.778167+00:00'
+created_at: "2026-03-16T18:00:56.275937+00:00"
+updated_at: "2026-03-25T19:25:10.03153+00:00"
 ---
 
 <h1>Unlocking the Full Potential of Chrome Mobile: A Comprehensive Guide to Chrome Mobile Extensions Workaround</h1>

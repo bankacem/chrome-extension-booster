@@ -1,6 +1,6 @@
 ---
 id: 68ccc15f-1f6e-40b3-a04b-f0205f5d5225
-title: 'How to Run Chrome Extensions on Brave Android: A Step-by-Step Guide'
+title: "How to Run Chrome Extensions on Brave Android: A Step-by-Step Guide"
 slug: how-to-run-chrome-extensions-on-brave-android-a-step-by-step-guide-mmthozkhpgn
 excerpt: >-
   Are you a fan of Brave browser on your Android device, but missing the
@@ -16,13 +16,13 @@ meta_description: >-
   functionality of your favorite Chrome extensions? Well, you're in luck! In
   this article,
 status: published
-published_at: '2026-03-24T12:00:00.554+00:00'
-scheduled_at: '2026-03-24T12:00:00+00:00'
+published_at: "2026-03-24T12:00:00.554+00:00"
+scheduled_at: "2026-03-24T12:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:01:00.296677+00:00'
-updated_at: '2026-03-24T12:00:00.62354+00:00'
+created_at: "2026-03-16T18:01:00.296677+00:00"
+updated_at: "2026-03-24T12:00:00.62354+00:00"
 ---
 
 <h1>How to Run Chrome Extensions on Brave Android: A Step-by-Step Guide</h1>

@@ -1,6 +1,6 @@
 ---
 id: 2329a7b1-bdf9-4d9f-aac8-928f1f17606d
-title: 'How to Block YouTube Ads with Ghostery Extension: A Comprehensive Guide'
+title: "How to Block YouTube Ads with Ghostery Extension: A Comprehensive Guide"
 slug: >-
   how-to-block-youtube-ads-with-ghostery-extension-a-comprehensive-guide-mmb7lt82vtf
 excerpt: >-
@@ -17,13 +17,13 @@ meta_description: >-
   enhance your online experience and block YouTube ads once and for all? Look no
   fu
 status: published
-published_at: '2026-03-20T05:00:00.759+00:00'
-scheduled_at: '2026-03-20T05:00:00+00:00'
+published_at: "2026-03-20T05:00:00.759+00:00"
+scheduled_at: "2026-03-20T05:00:00+00:00"
 author: AI Generator
 views: 0
 read_time: 5
-created_at: '2026-03-03T22:58:45.717865+00:00'
-updated_at: '2026-03-20T05:00:00.82816+00:00'
+created_at: "2026-03-03T22:58:45.717865+00:00"
+updated_at: "2026-03-20T05:00:00.82816+00:00"
 ---
 
 <h1>How to Block YouTube Ads with Ghostery Extension: A Comprehensive Guide</h1>

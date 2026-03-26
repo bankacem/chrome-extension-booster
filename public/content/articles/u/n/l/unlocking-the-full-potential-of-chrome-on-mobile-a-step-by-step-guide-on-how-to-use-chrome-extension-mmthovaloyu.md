@@ -19,13 +19,13 @@ meta_description: >-
   browsing experience on your smartphone or tablet. Google Chrome, one of the
   most pop
 status: published
-published_at: '2026-03-18T13:01:00.639+00:00'
-scheduled_at: '2026-03-18T13:00:00+00:00'
+published_at: "2026-03-18T13:01:00.639+00:00"
+scheduled_at: "2026-03-18T13:00:00+00:00"
 author: Admin
 views: 0
 read_time: 5
-created_at: '2026-03-16T18:00:54.743217+00:00'
-updated_at: '2026-03-18T13:01:00.799796+00:00'
+created_at: "2026-03-16T18:00:54.743217+00:00"
+updated_at: "2026-03-18T13:01:00.799796+00:00"
 ---
 
 <h1>Unlocking the Full Potential of Chrome on Mobile: A Step-by-Step Guide on How to Use Chrome Extensions on Mobile</h1>

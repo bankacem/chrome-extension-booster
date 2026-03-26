@@ -19,13 +19,13 @@ meta_description: >-
   to prioritize your online privacy and security, especially when using Chrome
   Mobi
 status: published
-published_at: '2026-03-18T05:00:01.372+00:00'
-scheduled_at: '2026-03-18T05:00:00+00:00'
+published_at: "2026-03-18T05:00:01.372+00:00"
+scheduled_at: "2026-03-18T05:00:00+00:00"
 author: AI Generator
 views: 0
 read_time: 5
-created_at: '2026-03-03T22:58:45.410014+00:00'
-updated_at: '2026-03-18T05:00:01.475464+00:00'
+created_at: "2026-03-03T22:58:45.410014+00:00"
+updated_at: "2026-03-18T05:00:01.475464+00:00"
 ---
 
 <h1>Top 5 Privacy and Security Extensions for Chrome Mobile: Protect Your Online Identity</h1>

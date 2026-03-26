@@ -1,6 +1,6 @@
 ---
 id: ba4caec7-d744-4d62-a7f6-f0038e103297
-title: 'Top Alternatives to Ghostery for Chrome Browser: Boosting Privacy and Security'
+title: "Top Alternatives to Ghostery for Chrome Browser: Boosting Privacy and Security"
 slug: >-
   top-alternatives-to-ghostery-for-chrome-browser-boosting-privacy-and-security-mmb7ltgtqdm
 excerpt: >-
@@ -17,13 +17,13 @@ meta_description: >-
   your online privacy and security? Ghostery is a popular Chrome extension that
   blo
 status: published
-published_at: '2026-03-22T04:00:00.666+00:00'
-scheduled_at: '2026-03-22T04:00:00+00:00'
+published_at: "2026-03-22T04:00:00.666+00:00"
+scheduled_at: "2026-03-22T04:00:00+00:00"
 author: AI Generator
 views: 0
 read_time: 5
-created_at: '2026-03-03T22:58:46.049367+00:00'
-updated_at: '2026-03-22T04:00:00.722544+00:00'
+created_at: "2026-03-03T22:58:46.049367+00:00"
+updated_at: "2026-03-22T04:00:00.722544+00:00"
 ---
 
 <h1>Top Alternatives to Ghostery for Chrome Browser: Boosting Privacy and Security</h1>
