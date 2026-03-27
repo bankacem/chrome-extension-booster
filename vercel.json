@@ -1,6 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/blog/ultimate-chrome-ram-memory-management-guide",
+      "destination": "/blog/chrome-ram-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/adblocker-for-android-chrome",
+      "destination": "/blog/adblock-android-guide",
+      "permanent": true
+    },
+    {
       "source": "/blog/how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue",
       "destination": "/blog/how-to-fix-chrome-memory-2026",
       "permanent": true
