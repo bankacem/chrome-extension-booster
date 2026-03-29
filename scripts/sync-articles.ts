@@ -20,6 +20,7 @@ interface ArticleIndexItem {
   views: number;
   tags?: string[];
   keywords?: string[];
+  canonicalPath?: string;
   updated_at: string;
 }
 
@@ -85,6 +86,7 @@ async function rebuildIndex() {
         views: (metadata.views || 0) as number,
         tags: (metadata.tags || []) as string[],
         keywords: (metadata.keywords || []) as string[],
+        canonicalPath: metadata.canonicalPath as string | undefined,
         updated_at: (metadata.updated_at || metadata.published_at || new Date().toISOString()) as string
       };
 

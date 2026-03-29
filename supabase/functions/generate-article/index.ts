@@ -429,6 +429,10 @@ Article Structure Requirements:
 - If the article is about one of our extensions, mention it prominently and link to its page
 - Include internal links to related extensions where naturally appropriate${tableOfContentsInstruction}${faqInstruction}${imageInstruction}${comparisonInstruction}${extensionsList}
 
+SEO Requirements:
+- Provide a unique, compelling meta description (140-160 characters) that summarizes the article and includes the target keyword.
+- Format the meta description as: [META_DESCRIPTION] your description here [/META_DESCRIPTION]
+
 HTML Formatting Guidelines:
 - Wrap paragraphs in <p> tags
 - Use <strong> for emphasis and important points
@@ -439,7 +443,7 @@ HTML Formatting Guidelines:
 - For extension links use: <a href="/extension/SLUG" class="text-primary font-medium hover:underline">Extension Name</a>
 - Ensure all content is SEO-optimized with the target keyword naturally integrated
 
-Output only the HTML content, starting with the H1 title. Do not include any markdown or code blocks.`;
+Output the meta description first using the tags provided, followed by the HTML content starting with the H1 title. Do not include any markdown or code blocks.`;
 
     const userPrompt = `Write a comprehensive, SEO-optimized article about: "${keyword}"
 
@@ -568,17 +572,29 @@ Generate the complete HTML article now.`;
     const linkResult = addExtensionLinks(content, keyword, autoLinkExtension);
     content = linkResult.content;
 
+    // Extract meta description
+    const metaMatch = content.match(/\[META_DESCRIPTION\](.*?)\[\/META_DESCRIPTION\]/is);
+    let meta_description = "";
+    if (metaMatch) {
+      meta_description = metaMatch[1].trim();
+      content = content.replace(metaMatch[0], "").trim();
+    }
+
     // Extract title from H1
     const titleMatch = content.match(/<h1[^>]*>(.*?)<\/h1>/i);
     const title = titleMatch 
       ? titleMatch[1].replace(/<[^>]*>/g, '').trim() 
       : keyword;
 
-    // Generate excerpt from first paragraph
+    // Generate excerpt from first paragraph (used as fallback for meta_description if missing)
     const paragraphMatch = content.match(/<p[^>]*>(.*?)<\/p>/i);
     const excerpt = paragraphMatch 
       ? paragraphMatch[1].replace(/<[^>]*>/g, '').trim().slice(0, 160) 
       : '';
+
+    if (!meta_description) {
+      meta_description = excerpt;
+    }
 
     // Calculate read time
     const textContent = content.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ');
@@ -603,7 +619,7 @@ Generate the complete HTML article now.`;
       wordCount,
       category,
       keywords: [keyword],
-      meta_description: excerpt,
+      meta_description,
       linkedExtension: linkResult.linkedExtension ? linkResult.linkedExtension.slug : null,
       provider: aiProvider,
       model: selectedModel
