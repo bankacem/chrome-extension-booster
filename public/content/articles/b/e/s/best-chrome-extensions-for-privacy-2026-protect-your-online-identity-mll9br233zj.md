@@ -50,7 +50,7 @@ canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
     <li><a href="#intro"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></li>
     <li><a href="#best-extensions">Best Chrome Extensions for Privacy 2026</a></li>
     <li><a href="#features">Key Features to Look for in Privacy Extensions</a></li>
-    <li><a href="#comparison"><a href="/blog/privacy-badger-chrome-partial" class="internal-link" title="Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security">Comparison</a> of Top Privacy Extensions</a></li>
+    <li><a href="#comparison"><a href="/blog/best-chrome-privacy-extensions-2026-complete-guide" class="internal-link" title="Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security">Comparison</a> of Top Privacy Extensions</a></li>
     <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 

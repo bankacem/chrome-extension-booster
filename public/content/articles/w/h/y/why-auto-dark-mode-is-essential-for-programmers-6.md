@@ -92,7 +92,7 @@ canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
   <li>Take breaks: Even with <strong>Auto Dark Mode</strong>, it's still important to take breaks and give your eyes a rest. Try to take a break every hour or so to stretch and move around.</li>
 </ol>
 
-<h2 id="comparison-table"><a href="/blog/privacy-badger-chrome-partial" class="internal-link" title="Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security">Comparison</a> Table</h2>
+<h2 id="comparison-table"><a href="/blog/best-chrome-privacy-extensions-2026-complete-guide" class="internal-link" title="Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security">Comparison</a> Table</h2>
 
 <table class="table-auto">
   <thead>
