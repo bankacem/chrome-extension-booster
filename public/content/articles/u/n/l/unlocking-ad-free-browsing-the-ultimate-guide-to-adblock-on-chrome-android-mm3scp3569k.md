@@ -2,13 +2,17 @@
 id: cb5e325f-86d1-491b-ae36-bcb2ba74b17c
 title: 'Unlocking Ad-Free Browsing: The Ultimate Guide to Adblock on Chrome Android'
 slug: unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-on-chrome-android-mm3scp3569k
-excerpt: Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further! In this comprehensive guide, we'll delve into the world of
+excerpt: Are you tired of annoying ads disrupting your browsing experience on Chrome
+  Android? Look no further! In this comprehensive guide, we'll delve into the world
+  of
 featured_image: null
 category: Redirect & Navigation
 tags: []
 keywords:
-  - adblock on chrome android
-meta_description: Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further! In this comprehensive guide, we'll delve into the world of
+- adblock on chrome android
+meta_description: Are you tired of annoying ads disrupting your browsing experience
+  on Chrome Android? Look no further! In this comprehensive guide, we'll delve into
+  the world of
 status: published
 published_at: '2026-03-21T09:00:01.128+00:00'
 scheduled_at: '2026-03-21T09:00:00+00:00'
@@ -17,7 +21,7 @@ views: 0
 read_time: 4
 created_at: '2026-02-26T18:17:22.324554+00:00'
 updated_at: '2026-03-21T09:00:01.175013+00:00'
-canonicalPath: /blog/adblocker-for-android-chrome
+canonicalPath: /blog/adblock-chrome-android-complete-guide-2026
 ---
 
 <h1>Unlocking Ad-Free Browsing: The Ultimate Guide to Adblock on Chrome Android</h1>

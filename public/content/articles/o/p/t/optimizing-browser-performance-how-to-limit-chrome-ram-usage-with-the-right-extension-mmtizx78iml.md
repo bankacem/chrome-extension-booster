@@ -1,14 +1,19 @@
 ---
 id: 4ef2edb2-85f3-4e9e-84db-1fc5ba5cc766
-title: 'Optimizing Browser Performance: How to Limit Chrome RAM Usage with the Right Extension'
+title: 'Optimizing Browser Performance: How to Limit Chrome RAM Usage with the Right
+  Extension'
 slug: optimizing-browser-performance-how-to-limit-chrome-ram-usage-with-the-right-extension-mmtizx78iml
-excerpt: Google Chrome is one of the most popular web browsers in the world, known for its speed, security, and extensive library of extensions. However, one of the comm
+excerpt: Google Chrome is one of the most popular web browsers in the world, known
+  for its speed, security, and extensive library of extensions. However, one of the
+  comm
 featured_image: null
 category: Productivity
 tags: []
 keywords:
-  - limit chrome ram usage extension
-meta_description: Google Chrome is one of the most popular web browsers in the world, known for its speed, security, and extensive library of extensions. However, one of the comm
+- limit chrome ram usage extension
+meta_description: Google Chrome is one of the most popular web browsers in the world,
+  known for its speed, security, and extensive library of extensions. However, one
+  of the comm
 status: published
 published_at: '2026-03-22T08:00:01.838+00:00'
 scheduled_at: '2026-03-22T08:00:00+00:00'
@@ -17,7 +22,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-16T18:37:29.793322+00:00'
 updated_at: '2026-03-22T08:00:01.902692+00:00'
-canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 <h1>Optimizing Browser Performance: How to Limit Chrome RAM Usage with the Right Extension</h1>

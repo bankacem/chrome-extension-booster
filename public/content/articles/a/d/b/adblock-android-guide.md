@@ -1,14 +1,17 @@
 ---
-title: "Adblocker for Android Chrome: The Ultimate Guide to Ad-Free Mobile Browsing"
+title: 'Adblocker for Android Chrome: The Ultimate Guide to Ad-Free Mobile Browsing'
 slug: adblock-android-guide
-excerpt: "Tired of intrusive ads on your Android phone? Discover the best adblocker for Android Chrome and learn how to browse faster and cleaner."
-featured_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1200"
-category: "Redirect & Navigation"
-author: "Admin"
-published_at: "2026-03-20T00:00:00.000Z"
+excerpt: Tired of intrusive ads on your Android phone? Discover the best adblocker
+  for Android Chrome and learn how to browse faster and cleaner.
+featured_image: https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1200
+category: Redirect & Navigation
+author: Admin
+published_at: '2026-03-20T00:00:00.000Z'
 read_time: 12
 status: published
-meta_description: "Discover the best adblocker for Android Chrome. Learn how to block intrusive popups and speed up your mobile browsing experience today."
+meta_description: Discover the best adblocker for Android Chrome. Learn how to block
+  intrusive popups and speed up your mobile browsing experience today.
+canonicalPath: /blog/adblock-chrome-android-complete-guide-2026
 ---
 
 # Adblocker for Android Chrome: The Ultimate Guide

@@ -1,18 +1,22 @@
 ---
 id: e8e84495-ccbc-415e-86cb-94810d72cabc
-title: How to Enable Dark Mode on Pinterest, Instagram, Netflix, GitHub, StackOverflow, and More
+title: How to Enable Dark Mode on Pinterest, Instagram, Netflix, GitHub, StackOverflow,
+  and More
 slug: how-to-enable-dark-mode-on-pinterest-instagram-netflix-github-stackoverflow-etc-5
-excerpt: Are you tired of the bright, eye-straining interfaces of your favorite websites and apps? Do you want to know how to enable Dark Mode on Pinterest, Instagram, N
+excerpt: Are you tired of the bright, eye-straining interfaces of your favorite websites
+  and apps? Do you want to know how to enable Dark Mode on Pinterest, Instagram, N
 featured_image: https://blogger.googleusercontent.com/img/a/AVvXsEhCzHMGJIS_EAs54fyVjlpmTKm4cJLu5rB72Tz1LmDe5KH4E8Ha2ASHEtDJr4Kw9uWF3BplP0ctSuFEbIPzqA5B1Qjc2WxzMyonVDWflpRGfpiD9VIloks6_CB1fXZyJauWElcxJgbiWvoKTu4j2nf1gtcKQBKzflsrJ7Vy9xkyIsLx2-THIAapaxfvE58
 category: Screenshots & Screen Capture
 tags: []
 keywords:
-  - How to enable Dark Mode on Pinterest Instagram
-  - Netflix
-  - GitHub
-  - StackOverflow
-  - etc)
-meta_description: Are you tired of the bright, eye-straining interfaces of your favorite websites and apps? Do you want to know how to enable Dark Mode on Pinterest, Instagram, N
+- How to enable Dark Mode on Pinterest Instagram
+- Netflix
+- GitHub
+- StackOverflow
+- etc)
+meta_description: Are you tired of the bright, eye-straining interfaces of your favorite
+  websites and apps? Do you want to know how to enable Dark Mode on Pinterest, Instagram,
+  N
 status: published
 published_at: '2026-02-25T14:11:01.611+00:00'
 scheduled_at: '2026-02-25T14:11:00+00:00'
@@ -21,7 +25,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-21T12:43:50.116908+00:00'
 updated_at: '2026-03-03T17:57:48.933393+00:00'
-canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 <h1>How to Enable Dark Mode on Pinterest, Instagram, Netflix, GitHub, StackOverflow, and More</h1>

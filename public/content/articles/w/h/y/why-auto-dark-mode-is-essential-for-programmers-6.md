@@ -2,13 +2,17 @@
 id: 489e902e-14a1-489e-a827-be0f10763213
 title: Why Auto Dark Mode is essential for programmers
 slug: why-auto-dark-mode-is-essential-for-programmers-6
-excerpt: As a programmer, you likely spend a significant amount of time staring at screens, typing away at your keyboard, and debugging code. But have you ever stopped t
+excerpt: As a programmer, you likely spend a significant amount of time staring at
+  screens, typing away at your keyboard, and debugging code. But have you ever stopped
+  t
 featured_image: null
 category: Appearance & Themes
 tags: []
 keywords:
-  - Why Auto Dark Mode is essential for programmers
-meta_description: As a programmer, you likely spend a significant amount of time staring at screens, typing away at your keyboard, and debugging code. But have you ever stopped t
+- Why Auto Dark Mode is essential for programmers
+meta_description: As a programmer, you likely spend a significant amount of time staring
+  at screens, typing away at your keyboard, and debugging code. But have you ever
+  stopped t
 status: published
 published_at: '2026-02-25T08:11:00.821+00:00'
 scheduled_at: '2026-02-25T08:11:00+00:00'
@@ -17,7 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-21T12:43:50.607234+00:00'
 updated_at: '2026-03-16T14:43:21.225913+00:00'
-canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 <h1>Why Auto Dark Mode is essential for programmers</h1>

@@ -2,14 +2,17 @@
 id: 3f068c0c-dda0-4b58-a2ba-b3e07608024b
 title: 'Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro'
 slug: full-page-screenshot-chrome-guide-9
-excerpt: Welcome to the ultimate Full Page Screenshot Chrome Guide, where you'll learn how to capture entire web pages with ease. Taking full-page screenshots is an esse
+excerpt: Welcome to the ultimate Full Page Screenshot Chrome Guide, where you'll learn
+  how to capture entire web pages with ease. Taking full-page screenshots is an esse
 featured_image: https://blogger.googleusercontent.com/img/a/AVvXsEjLJBHyAQ63bvE7JDlf14BFkJA5lzejLzv2umZapUZoLxqEWxis-AUtal1IU6_TTeqMHmvtAJtEwmLXjoBkz_YRboanUt0-8URUY9auaRmOqZSNXXKneS2bNf8XGvewLt7uE-POnzHWoD9ivEWRr8sfyhzyFfL2U9Esqhw_a7NcIQGheFQ84KPNR2KtSFc
 category: Screenshots & Screen Capture
 tags:
-  - 'Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro'
+- 'Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro'
 keywords:
-  - Full Page Screenshot Chrome Guide
-meta_description: Welcome to the ultimate Full Page Screenshot Chrome Guide, where you'll learn how to capture entire web pages with ease. Taking full-page screenshots is an esse
+- Full Page Screenshot Chrome Guide
+meta_description: Welcome to the ultimate Full Page Screenshot Chrome Guide, where
+  you'll learn how to capture entire web pages with ease. Taking full-page screenshots
+  is an esse
 status: published
 published_at: '2026-01-20T21:33:27.192+00:00'
 scheduled_at: null
@@ -18,6 +21,7 @@ views: 4
 read_time: 5
 created_at: '2026-01-20T20:54:14.479438+00:00'
 updated_at: '2026-03-16T14:43:28.992321+00:00'
+canonicalPath: /blog/best-chrome-screenshot-extensions-2026-complete-guide
 ---
 
 <h1>Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro</h1>

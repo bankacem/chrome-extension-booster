@@ -1,14 +1,17 @@
 ---
-title: "Master Guide: Chrome Screenshot Extensions (2026)"
+title: 'Master Guide: Chrome Screenshot Extensions (2026)'
 slug: chrome-screenshot-guide
-excerpt: "Capture your screen like a pro. We review the best Chrome screenshot extensions for full-page captures, annotations, and sharing."
-featured_image: "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&q=80&w=1200"
-category: "Screenshots & Screen Capture"
-author: "Admin"
-published_at: "2026-03-20T00:00:00.000Z"
+excerpt: Capture your screen like a pro. We review the best Chrome screenshot extensions
+  for full-page captures, annotations, and sharing.
+featured_image: https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&q=80&w=1200
+category: Screenshots & Screen Capture
+author: Admin
+published_at: '2026-03-20T00:00:00.000Z'
 read_time: 10
 status: published
-meta_description: "Capture, annotate, and share your screen effortlessly. Discover the best Chrome screenshot extensions for developers and designers in 2026."
+meta_description: Capture, annotate, and share your screen effortlessly. Discover
+  the best Chrome screenshot extensions for developers and designers in 2026.
+canonicalPath: /blog/best-chrome-screenshot-extensions-2026-complete-guide
 ---
 
 # Master Guide: Chrome Screenshot Extensions

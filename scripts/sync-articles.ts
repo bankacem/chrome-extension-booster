@@ -52,7 +52,7 @@ async function rebuildIndex() {
   for (const filePath of allMdFiles) {
     try {
       const fileContent = fs.readFileSync(filePath, 'utf-8');
-      const match = fileContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+      const match = fileContent.match(/^---([\s\S]*?)---([\s\S]*)$/);
 
       if (!match) {
         console.warn(`[Index] Skipping file (no frontmatter): ${filePath}`);

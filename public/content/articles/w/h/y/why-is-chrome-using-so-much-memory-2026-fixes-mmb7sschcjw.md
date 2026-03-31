@@ -2,13 +2,17 @@
 id: e14927ea-8e56-46b0-af0d-9336385e2b70
 title: Why is Chrome using so much memory? (2026 Fixes)
 slug: why-is-chrome-using-so-much-memory-2026-fixes-mmb7sschcjw
-excerpt: Are you tired of wondering why is Chrome using so much memory? You're not alone. Many Chrome users have experienced the frustration of their browser consuming e
+excerpt: Are you tired of wondering why is Chrome using so much memory? You're not
+  alone. Many Chrome users have experienced the frustration of their browser consuming
+  e
 featured_image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiNBUPPXJgc1kqh3rnon1syMqXPh6b_QqYKmoScoNCkx2Thpj2D5736rDBBPAvv7YG37GhXiqlVUsO3XDWlt0EKMEmUyTJ-6S6NACBIRjQnSo2SbIG1Orm4isz8QpLQU6-buhjhaWEFUHqq42PBK_9f_BBySuEFukz9-MhvWtujKbMvEhRUkmpOCWPFds/s819/1000025505.jpg
 category: Chrome Extensions
 tags: []
 keywords:
-  - Why is Chrome using so much memory? (2026 Fixes)
-meta_description: Are you tired of wondering why is Chrome using so much memory? You're not alone. Many Chrome users have experienced the frustration of their browser consuming e
+- Why is Chrome using so much memory? (2026 Fixes)
+meta_description: Are you tired of wondering why is Chrome using so much memory? You're
+  not alone. Many Chrome users have experienced the frustration of their browser consuming
+  e
 status: published
 published_at: '2026-03-05T21:40:00.895+00:00'
 scheduled_at: null
@@ -17,7 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-03T23:04:11.171852+00:00'
 updated_at: '2026-03-16T14:42:48.380904+00:00'
-canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 <h1>Why is Chrome using so much memory? (2026 Fixes)</h1>

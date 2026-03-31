@@ -2,13 +2,17 @@
 id: edcf1372-8db4-4ce0-b6df-ba1b0823f59a
 title: 'Unlocking the Power of Noscript Chrome: Boosting Browser Security and Performance'
 slug: unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance
-excerpt: When it comes to browsing the internet, security and performance are two of the top priorities for users. One often overlooked feature that can significantly en
+excerpt: When it comes to browsing the internet, security and performance are two
+  of the top priorities for users. One often overlooked feature that can significantly
+  en
 featured_image: null
 category: Screenshots & Screen Capture
 tags: []
 keywords:
-  - noscript chrome
-meta_description: When it comes to browsing the internet, security and performance are two of the top priorities for users. One often overlooked feature that can significantly en
+- noscript chrome
+meta_description: When it comes to browsing the internet, security and performance
+  are two of the top priorities for users. One often overlooked feature that can significantly
+  en
 status: published
 published_at: '2026-02-11T02:11:01.357+00:00'
 scheduled_at: '2026-02-11T02:11:00+00:00'
@@ -17,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-24T14:11:48.25294+00:00'
 updated_at: '2026-03-02T19:47:08.874648+00:00'
+canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
 ---
 
 <h1>Unlocking the Power of Noscript Chrome: Boosting Browser Security and <a href="/blog/best-memory-saver-extension-for-chrome-4" class="internal-link" title="Best Memory Saver Extension for Chrome: Boost Performance and Reclaim Your RAM">Performance</a></h1>

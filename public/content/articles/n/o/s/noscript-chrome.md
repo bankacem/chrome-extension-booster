@@ -1,14 +1,18 @@
 ---
 id: edcf1372-8db4-4ce0-b6df-ba1b0823f59a
-title: 'Noscript Chrome Boosting Browser Security and Performance: Troubleshooting & Common Fixes'
+title: 'Noscript Chrome Boosting Browser Security and Performance: Troubleshooting
+  & Common Fixes'
 slug: noscript-chrome
-excerpt: When it comes to browsing the internet, security and performance are two of the top priorities for users. One often overlooked feature that can significantly en
+excerpt: When it comes to browsing the internet, security and performance are two
+  of the top priorities for users. One often overlooked feature that can significantly
+  en
 featured_image: https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&q=80&w=1200
 category: Screenshots & Screen Capture
 tags: []
 keywords:
-  - noscript chrome
-meta_description: Looking for the best privacy tools? Read our comprehensive analysis of top-rated extensions that keep your personal information secure and private.
+- noscript chrome
+meta_description: Looking for the best privacy tools? Read our comprehensive analysis
+  of top-rated extensions that keep your personal information secure and private.
 status: published
 published_at: '2026-02-11T02:11:01.357+00:00'
 scheduled_at: '2026-02-11T02:11:00+00:00'
@@ -17,7 +21,9 @@ views: 0
 read_time: 6
 created_at: '2026-01-24T14:11:48.25294+00:00'
 updated_at: '2026-02-11T21:40:17.044802+00:00'
-description: Looking for the best privacy tools? Read our comprehensive analysis of top-rated extensions that keep your personal information secure and private.
+description: Looking for the best privacy tools? Read our comprehensive analysis of
+  top-rated extensions that keep your personal information secure and private.
+canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
 ---
 
 <h1>Unlocking the Power of Noscript Chrome: Boosting Browser Security and <a href="/blog/best-memory-saver-extension-for-chrome-4" class="internal-link" title="Best Memory Saver Extension for Chrome: Boost Performance and Reclaim Your RAM">Performance</a></h1>
