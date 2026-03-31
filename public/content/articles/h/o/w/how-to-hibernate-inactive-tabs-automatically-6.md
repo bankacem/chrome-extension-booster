@@ -1,15 +1,19 @@
 ---
 id: 979bd783-8ab4-42c9-8c2a-0071917645a2
-title: 'How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster Browser'
+title: 'How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster
+  Browser'
 slug: how-to-hibernate-inactive-tabs-automatically-6
-excerpt: 'We’ve all been there: you start your morning with one tab open, and by lunchtime, your browser looks like a crowded parking lot. Your computer’s fan is screamin'
+excerpt: 'We’ve all been there: you start your morning with one tab open, and by lunchtime,
+  your browser looks like a crowded parking lot. Your computer’s fan is screamin'
 featured_image: https://blogger.googleusercontent.com/img/a/AVvXsEgkM3zJ0r2ne4JUKXfsOIs6WN1yQ2m-W3ho3PoAwe0iusXIAfPo-ryGZB1NlODl2C1bGUr33qOrZ83OPgJY9b2rnLSFqvXhpy33b0KAuW2ZIUXKOxU44t4KkMMu7HIOmmr8qHDKDZxXLbKf6onO0Kn4y1Pgxz_LldtOs1CtmfJdMlwtZW4BaB8uACdibGg
 category: Performance & Memory
 tags:
-  - 'How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster Browser'
+- 'How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster Browser'
 keywords:
-  - How to hibernate inactive tabs automatically
-meta_description: 'We’ve all been there: you start your morning with one tab open, and by lunchtime, your browser looks like a crowded parking lot. Your computer’s fan is screamin'
+- How to hibernate inactive tabs automatically
+meta_description: 'We’ve all been there: you start your morning with one tab open,
+  and by lunchtime, your browser looks like a crowded parking lot. Your computer’s
+  fan is screamin'
 status: published
 published_at: '2026-01-26T16:29:01.742+00:00'
 scheduled_at: '2026-01-26T16:29:00+00:00'
@@ -18,7 +22,7 @@ views: 1
 read_time: 8
 created_at: '2026-01-20T14:42:04.58382+00:00'
 updated_at: '2026-01-29T15:24:13.315105+00:00'
-canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 <h1>How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster Browser</h1>

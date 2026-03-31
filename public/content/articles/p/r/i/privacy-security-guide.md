@@ -1,14 +1,17 @@
 ---
-title: "Privacy & Security Guide: Protect Your Browser in 2026"
+title: 'Privacy & Security Guide: Protect Your Browser in 2026'
 slug: privacy-security-guide
-excerpt: "Stay safe online. Discover the best browser extensions for blocking trackers, managing passwords, and preventing URL hijacking."
-featured_image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1200"
-category: "Security & Privacy"
-author: "Admin"
-published_at: "2026-03-20T00:00:00.000Z"
+excerpt: Stay safe online. Discover the best browser extensions for blocking trackers,
+  managing passwords, and preventing URL hijacking.
+featured_image: https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1200
+category: Security & Privacy
+author: Admin
+published_at: '2026-03-20T00:00:00.000Z'
 read_time: 16
 status: published
-meta_description: "Take control of your online privacy. Our 2026 guide covers the essential security extensions every Chrome user needs."
+meta_description: Take control of your online privacy. Our 2026 guide covers the essential
+  security extensions every Chrome user needs.
+canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
 ---
 
 # Privacy & Security Guide: Protect Your Browser

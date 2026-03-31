@@ -1,14 +1,17 @@
 ---
-title: "The Ultimate Guide to YouTube Browser Tools & Downloaders (2026)"
+title: The Ultimate Guide to YouTube Browser Tools & Downloaders (2026)
 slug: youtube-tools-guide
-excerpt: "Enhance your YouTube experience. Learn how to block ads, download audio/video for offline use, and enable dark mode desktop."
-featured_image: "https://images.unsplash.com/photo-1527264934948-3c27adaa50c6?auto=format&fit=crop&q=80&w=1200"
-category: "Productivity & Tools"
-author: "Admin"
-published_at: "2026-03-20T00:00:00.000Z"
+excerpt: Enhance your YouTube experience. Learn how to block ads, download audio/video
+  for offline use, and enable dark mode desktop.
+featured_image: https://images.unsplash.com/photo-1527264934948-3c27adaa50c6?auto=format&fit=crop&q=80&w=1200
+category: Productivity & Tools
+author: Admin
+published_at: '2026-03-20T00:00:00.000Z'
 read_time: 14
 status: published
-meta_description: "Unlock the full potential of YouTube. Our comprehensive guide covers the best browser extensions for downloading, ad-blocking, and dark mode."
+meta_description: Unlock the full potential of YouTube. Our comprehensive guide covers
+  the best browser extensions for downloading, ad-blocking, and dark mode.
+canonicalPath: /blog/best-youtube-downloader-chrome-extension-2026
 ---
 
 # The Ultimate Guide to YouTube Browser Tools & Downloaders

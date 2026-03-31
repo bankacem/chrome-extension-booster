@@ -1,15 +1,21 @@
 ---
 id: bc77ba44-1105-4f65-8cb4-b9b5b2edc537
-title: 'Full Page Screenshot Chrome Tutorial: A Step-by-Step Guide to Capturing Perfect Screenshots'
+title: 'Full Page Screenshot Chrome Tutorial: A Step-by-Step Guide to Capturing Perfect
+  Screenshots'
 slug: full-page-screenshot-chrome-tutorial-8
-excerpt: Welcome to our comprehensive Full Page Screenshot Chrome Tutorial, where we will walk you through the process of capturing perfect full-page screenshots using G
+excerpt: Welcome to our comprehensive Full Page Screenshot Chrome Tutorial, where
+  we will walk you through the process of capturing perfect full-page screenshots
+  using G
 featured_image: https://blogger.googleusercontent.com/img/a/AVvXsEiIEhp4-AQKiYTo0uH62D59uZ35dspCX-OnWw5KJxOmzkAY97SjzVHmL_FXdASTmMB2DjZhLzKCBvddnwHZNGoumneOlkLoFO3slcR3mii_u56uuANHtyf032bq00AnYdUPQhDBfWHhPNeV_hAp6rUYc84hyULNT_ySozOtMtzcFuaekoYKYJMyzYX8ugg
 category: Screenshots & Screen Capture
 tags:
-  - 'Full Page Screenshot Chrome Tutorial: A Step-by-Step Guide to Capturing Perfect Screenshots'
+- 'Full Page Screenshot Chrome Tutorial: A Step-by-Step Guide to Capturing Perfect
+  Screenshots'
 keywords:
-  - Full Page Screenshot Chrome Tutorial
-meta_description: Welcome to our comprehensive Full Page Screenshot Chrome Tutorial, where we will walk you through the process of capturing perfect full-page screenshots using G
+- Full Page Screenshot Chrome Tutorial
+meta_description: Welcome to our comprehensive Full Page Screenshot Chrome Tutorial,
+  where we will walk you through the process of capturing perfect full-page screenshots
+  using G
 status: published
 published_at: '2026-03-05T02:11:01.262+00:00'
 scheduled_at: '2026-03-05T02:11:00+00:00'
@@ -18,6 +24,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-20T20:54:13.358925+00:00'
 updated_at: '2026-03-16T14:43:29.200069+00:00'
+canonicalPath: /blog/best-chrome-screenshot-extensions-2026-complete-guide
 ---
 
 <h1>Full Page Screenshot Chrome Tutorial: A Step-by-Step Guide to Capturing Perfect <a href="/blog/screenshot-tool-chrome-guide-1" class="internal-link" title="Mastering the Art of Capturing Screenshots: The Ultimate Screenshot Tool Chrome Guide">Screenshots</a></h1>

@@ -1,25 +1,28 @@
 ---
 title: 'Chrome vs. Edge vs. Brave: Which Uses Least RAM in 2026?'
 slug: chrome-vs-edge-vs-brave-ram-comparison
-excerpt: We benchmark the most popular browsers to see which is the most memory-efficient. Is Chrome still the RAM king, or has Edge or Brave taken the lead?
+excerpt: We benchmark the most popular browsers to see which is the most memory-efficient.
+  Is Chrome still the RAM king, or has Edge or Brave taken the lead?
 featured_image: https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200
 category: Performance & Memory
 tags:
-  - Chrome
-  - Edge
-  - Brave
-  - Browser Comparison
-  - Benchmarks
-meta_description: 2026 performance benchmarks for Chrome, Edge, and Brave. Find out which browser is the best for low-RAM systems and power users.
+- Chrome
+- Edge
+- Brave
+- Browser Comparison
+- Benchmarks
+meta_description: 2026 performance benchmarks for Chrome, Edge, and Brave. Find out
+  which browser is the best for low-RAM systems and power users.
 status: published
-published_at: 2026-03-25T00:00:00.000Z
+published_at: 2026-03-25 00:00:00+00:00
 author: Admin
 read_time: 12
 schema:
   '@context': https://schema.org
   '@type': Article
   headline: 'Chrome vs. Edge vs. Brave: Which Uses Least RAM in 2026?'
-  description: Benchmark comparison of the three most popular web browsers in 2026. Find out which browser is the best for low-RAM systems and power users.
+  description: Benchmark comparison of the three most popular web browsers in 2026.
+    Find out which browser is the best for low-RAM systems and power users.
   image: https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200
   author:
     '@type': Person
@@ -31,7 +34,7 @@ schema:
       '@type': ImageObject
       url: https://extensionto.com/favicon.png
   datePublished: '2026-03-25'
-canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 # Chrome vs. Edge vs. Brave: Which Uses Least RAM in 2026?

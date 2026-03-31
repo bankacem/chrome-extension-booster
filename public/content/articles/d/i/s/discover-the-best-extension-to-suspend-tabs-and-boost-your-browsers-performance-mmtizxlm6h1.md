@@ -2,13 +2,16 @@
 id: 02e3fe6a-e6f8-400f-9e65-3db69c78b77d
 title: Discover the Best Extension to Suspend Tabs and Boost Your Browser's Performance
 slug: discover-the-best-extension-to-suspend-tabs-and-boost-your-browsers-performance-mmtizxlm6h1
-excerpt: Are you tired of dealing with slow browser performance due to an excessive number of open tabs? Look no further! In this article, we'll explore the best extensi
+excerpt: Are you tired of dealing with slow browser performance due to an excessive
+  number of open tabs? Look no further! In this article, we'll explore the best extensi
 featured_image: null
 category: Productivity
 tags: []
 keywords:
-  - best extension to suspend tabs
-meta_description: Are you tired of dealing with slow browser performance due to an excessive number of open tabs? Look no further! In this article, we'll explore the best extensi
+- best extension to suspend tabs
+meta_description: Are you tired of dealing with slow browser performance due to an
+  excessive number of open tabs? Look no further! In this article, we'll explore the
+  best extensi
 status: published
 published_at: '2026-03-24T08:00:00.495+00:00'
 scheduled_at: '2026-03-24T08:00:00+00:00'
@@ -17,7 +20,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-16T18:37:30.202768+00:00'
 updated_at: '2026-03-24T08:00:00.535374+00:00'
-canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 <h1>Discover the Best Extension to Suspend Tabs and Boost Your Browser's Performance</h1>

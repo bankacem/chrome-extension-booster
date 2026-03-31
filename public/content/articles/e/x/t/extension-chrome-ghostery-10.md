@@ -2,13 +2,17 @@
 id: 6cd347aa-f5de-4679-a803-0153441202a6
 title: 'Unlocking Online Privacy: The Power of Extension Chrome Ghostery'
 slug: extension-chrome-ghostery-10
-excerpt: Are you concerned about your online privacy and security? With the rise of digital tracking and data collection, it's essential to take control of your online p
+excerpt: Are you concerned about your online privacy and security? With the rise of
+  digital tracking and data collection, it's essential to take control of your online
+  p
 featured_image: null
 category: Screenshots & Screen Capture
 tags: []
 keywords:
-  - extension chrome ghostery
-meta_description: Are you concerned about your online privacy and security? With the rise of digital tracking and data collection, it's essential to take control of your online p
+- extension chrome ghostery
+meta_description: Are you concerned about your online privacy and security? With the
+  rise of digital tracking and data collection, it's essential to take control of
+  your online p
 status: published
 published_at: '2026-02-08T14:11:01+00:00'
 scheduled_at: '2026-02-08T14:11:00+00:00'
@@ -17,6 +21,7 @@ views: 2
 read_time: 5
 created_at: '2026-01-24T14:11:55.818543+00:00'
 updated_at: '2026-03-16T14:43:06.854144+00:00'
+canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
 ---
 
 <h1>Unlocking Online Privacy: The Power of Extension Chrome Ghostery</h1>

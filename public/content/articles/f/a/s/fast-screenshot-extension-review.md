@@ -1,15 +1,20 @@
 ---
 id: 0b33dbe3-2d3a-4dca-add8-cbc21115ac5c
-title: 'Fast Screenshot Extension Review: Capturing the Perfect Shot with Quick Screenshot Lite'
+title: 'Fast Screenshot Extension Review: Capturing the Perfect Shot with Quick Screenshot
+  Lite'
 slug: fast-screenshot-extension-review
-excerpt: When it comes to capturing screenshots, speed and efficiency are key. A good screenshot extension can make all the difference in your productivity and workflow.
+excerpt: When it comes to capturing screenshots, speed and efficiency are key. A good
+  screenshot extension can make all the difference in your productivity and workflow.
 featured_image: https://blogger.googleusercontent.com/img/a/AVvXsEhblXjp8ml1_vYJ4-cf10px7bZl_alPryhxMNLJFgJOcJyLOHpjeIpTQCoaZ8lVzjbDo5y3iRp1vRuq3P91xBLM5c277-aODCjRDmgoBzhRuir5CLqolMraUJOmQweKhGPUXnjp0GG1gIuGP1GX5w8s0qKzPBdu26QCzoIEns_pU282dx_5xR1BqVAbowc
 category: Screenshots & Screen Capture
 tags:
-  - 'Fast Screenshot Extension Review: Capturing the Perfect Shot with Quick Screenshot Lite'
+- 'Fast Screenshot Extension Review: Capturing the Perfect Shot with Quick Screenshot
+  Lite'
 keywords:
-  - Fast Screenshot Extension Review
-meta_description: When it comes to capturing screenshots, speed and efficiency are key. A good screenshot extension can make all the difference in your productivity and workflow.
+- Fast Screenshot Extension Review
+meta_description: When it comes to capturing screenshots, speed and efficiency are
+  key. A good screenshot extension can make all the difference in your productivity
+  and workflow.
 status: published
 published_at: '2026-02-01T08:00:00.598+00:00'
 scheduled_at: '2026-02-01T08:00:00+00:00'
@@ -18,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-20T19:08:51.426687+00:00'
 updated_at: '2026-03-16T14:43:34.317087+00:00'
+canonicalPath: /blog/best-chrome-screenshot-extensions-2026-complete-guide
 ---
 
 <h1>Fast Screenshot Extension Review: Capturing the Perfect Shot with <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover: underline">Quick Screenshot Lite</a></h1>

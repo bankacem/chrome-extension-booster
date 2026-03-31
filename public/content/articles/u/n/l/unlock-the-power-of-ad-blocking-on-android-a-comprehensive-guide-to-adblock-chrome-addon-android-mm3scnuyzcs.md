@@ -1,14 +1,19 @@
 ---
 id: b0bb3134-1ed7-4532-84e0-1002bd62cf32
-title: 'Unlock the Power of Ad Blocking on Android: A Comprehensive Guide to Adblock Chrome Addon Android'
+title: 'Unlock the Power of Ad Blocking on Android: A Comprehensive Guide to Adblock
+  Chrome Addon Android'
 slug: unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android-mm3scnuyzcs
-excerpt: Are you tired of annoying ads disrupting your browsing experience on your Android device? Look no further than the Light Popup Blocker Chrome extension, a power
+excerpt: Are you tired of annoying ads disrupting your browsing experience on your
+  Android device? Look no further than the Light Popup Blocker Chrome extension, a
+  power
 featured_image: null
 category: Appearance & Themes
 tags: []
 keywords:
-  - adblock chrome addon android
-meta_description: Are you tired of annoying ads disrupting your browsing experience on your Android device? Look no further than the Light Popup Blocker Chrome extension, a power
+- adblock chrome addon android
+meta_description: Are you tired of annoying ads disrupting your browsing experience
+  on your Android device? Look no further than the Light Popup Blocker Chrome extension,
+  a power
 status: published
 published_at: '2026-03-13T09:00:02.434+00:00'
 scheduled_at: '2026-03-13T09:00:00+00:00'
@@ -17,7 +22,7 @@ views: 0
 read_time: 4
 created_at: '2026-02-26T18:17:20.751965+00:00'
 updated_at: '2026-03-16T14:42:52.639691+00:00'
-canonicalPath: /blog/adblocker-for-android-chrome
+canonicalPath: /blog/adblock-chrome-android-complete-guide-2026
 ---
 
 <h1>Unlock the Power of Ad Blocking on Android: A <a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comprehensive</a> Guide to Adblock Chrome Addon Android</h1>

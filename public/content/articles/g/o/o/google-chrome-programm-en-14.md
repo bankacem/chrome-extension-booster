@@ -1,14 +1,18 @@
 ---
 id: ecc80886-f055-442b-8d2e-4135cf4deaf6
-title: 'Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity'
+title: 'Mastering Google Chrome Programmé en: Unlocking the Power of Customization
+  and Productivity'
 slug: google-chrome-programmé-en-14
-excerpt: Google Chrome, one of the most widely used web browsers, offers a vast array of features and tools to enhance user experience. For those who want to take their
+excerpt: Google Chrome, one of the most widely used web browsers, offers a vast array
+  of features and tools to enhance user experience. For those who want to take their
 featured_image: null
 category: Screenshots & Screen Capture
 tags: []
 keywords:
-  - google chrome programmé en
-meta_description: Google Chrome, one of the most widely used web browsers, offers a vast array of features and tools to enhance user experience. For those who want to take their
+- google chrome programmé en
+meta_description: Google Chrome, one of the most widely used web browsers, offers
+  a vast array of features and tools to enhance user experience. For those who want
+  to take their
 status: published
 published_at: '2026-02-03T02:11:00.834+00:00'
 scheduled_at: '2026-02-03T02:11:00+00:00'
@@ -17,7 +21,7 @@ views: 0
 read_time: 4
 created_at: '2026-01-24T18:21:55.433546+00:00'
 updated_at: '2026-02-11T21:40:09.43224+00:00'
-canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 <h1>Mastering Google Chrome Programmé en: Unlocking the Power of Customization and <a href="/blog/extension-utile-chrome-12" class="internal-link" title="Unlocking Productivity: The Best Extension Utile Chrome for a Seamless Browsing Experience">Productivity</a></h1>

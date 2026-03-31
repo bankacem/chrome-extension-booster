@@ -1,14 +1,17 @@
 ---
-title: "Ultimate Chrome RAM & Memory Management Guide (2026)"
+title: Ultimate Chrome RAM & Memory Management Guide (2026)
 slug: chrome-ram-guide
-excerpt: "Master Chrome RAM management with our definitive guide. Learn how to fix high memory usage and optimize performance for a faster browser."
-featured_image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1200"
-category: "Performance & Memory"
-author: "Admin"
-published_at: "2026-03-20T00:00:00.000Z"
+excerpt: Master Chrome RAM management with our definitive guide. Learn how to fix
+  high memory usage and optimize performance for a faster browser.
+featured_image: https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1200
+category: Performance & Memory
+author: Admin
+published_at: '2026-03-20T00:00:00.000Z'
 read_time: 15
 status: published
-meta_description: "Master Chrome RAM management with our definitive guide. Learn how to fix high memory usage and optimize performance for a faster browser in 2026."
+meta_description: Master Chrome RAM management with our definitive guide. Learn how
+  to fix high memory usage and optimize performance for a faster browser in 2026.
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 # Ultimate Chrome RAM & Memory Management Guide

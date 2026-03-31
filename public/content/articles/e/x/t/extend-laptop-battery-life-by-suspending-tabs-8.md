@@ -2,13 +2,17 @@
 id: eb6e5cc6-7f18-4561-98b9-8f43720316f4
 title: 'How to Extend Laptop Battery Life by Suspending Tabs: The Ultimate Guide'
 slug: extend-laptop-battery-life-by-suspending-tabs-8
-excerpt: 'We’ve all been there: you’re working from a cozy coffee shop or finishing a presentation on a long flight when that dreaded "Low Battery" notification pops up.'
+excerpt: 'We’ve all been there: you’re working from a cozy coffee shop or finishing
+  a presentation on a long flight when that dreaded "Low Battery" notification pops
+  up.'
 featured_image: https://blogger.googleusercontent.com/img/a/AVvXsEhsXXnF9tY7eC4rV3KxzCKqjn5lNC4LQf4JECMXG4uRU2xiSiz2tMLVsPLzh5rmgoHGea7YFxA_jspZNTyAhTMRl27jWj2vT-H5ohswHomhckGDfm8EPMBYOmhOfE7M__PHX64i4vo8smsSWwOWQQnco5N6SwGFL3evrbi4CBJwvondWNz-SPSGMn6UtbM
 category: Performance & Memory
 tags: []
 keywords:
-  - Extend laptop battery life by suspending tabs
-meta_description: 'We’ve all been there: you’re working from a cozy coffee shop or finishing a presentation on a long flight when that dreaded "Low Battery" notification pops up.'
+- Extend laptop battery life by suspending tabs
+meta_description: 'We’ve all been there: you’re working from a cozy coffee shop or
+  finishing a presentation on a long flight when that dreaded "Low Battery" notification
+  pops up.'
 status: published
 published_at: '2026-01-28T16:29:01.175+00:00'
 scheduled_at: '2026-01-28T16:29:00+00:00'
@@ -17,7 +21,7 @@ views: 0
 read_time: 9
 created_at: '2026-01-20T14:42:05.753389+00:00'
 updated_at: '2026-03-03T17:57:57.110437+00:00'
-canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 <h1>How to Extend Laptop Battery Life by Suspending Tabs: The Ultimate Guide</h1>

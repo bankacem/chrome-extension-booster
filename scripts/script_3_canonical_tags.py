@@ -6,29 +6,29 @@ ARTICLES_DIR = 'public/content/articles'
 
 CLUSTERS = {
     'RAM': {
-        'pillar': '/blog/chrome-ram-guide',
+        'pillar': '/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide',
         'keywords': ['ram', 'memory', 'tabs', 'suspender', 'speed up chrome', 'high usage'],
-        'slugs': ['chrome-ram-guide']
+        'slugs': ['how-to-fix-chrome-high-memory-usage-2026-complete-guide']
     },
     'ADBLOCK': {
-        'pillar': '/blog/adblock-android-guide',
+        'pillar': '/blog/adblock-chrome-android-complete-guide-2026',
         'keywords': ['adblock', 'ad block', 'android chrome adblock', 'ad blocker android'],
-        'slugs': ['adblock-android-guide']
+        'slugs': ['adblock-chrome-android-complete-guide-2026']
     },
     'SCREENSHOT': {
-        'pillar': '/blog/chrome-screenshot-guide',
+        'pillar': '/blog/best-chrome-screenshot-extensions-2026-complete-guide',
         'keywords': ['screenshot', 'capture', 'screen grab', 'full page screenshot'],
-        'slugs': ['chrome-screenshot-guide']
+        'slugs': ['best-chrome-screenshot-extensions-2026-complete-guide']
     },
     'YOUTUBE': {
-        'pillar': '/blog/youtube-tools-guide',
+        'pillar': '/blog/best-youtube-downloader-chrome-extension-2026',
         'keywords': ['youtube', 'mp3 downloader', 'video downloader', 'youtube tools'],
-        'slugs': ['youtube-tools-guide']
+        'slugs': ['best-youtube-downloader-chrome-extension-2026']
     },
     'PRIVACY': {
-        'pillar': '/blog/privacy-security-guide',
+        'pillar': '/blog/best-chrome-privacy-extensions-2026-complete-guide',
         'keywords': ['privacy', 'security', 'ghostery', 'privacy badger', 'password manager', 'tracking'],
-        'slugs': ['privacy-security-guide']
+        'slugs': ['best-chrome-privacy-extensions-2026-complete-guide']
     }
 }
 

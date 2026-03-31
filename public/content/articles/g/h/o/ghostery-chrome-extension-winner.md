@@ -1,14 +1,18 @@
 ---
 id: f5800219-5b66-4d3a-ba02-4ac416127c94
-title: 'Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery Plugin Chrome'
+title: 'Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery Plugin
+  Chrome'
 slug: ghostery-chrome-extension-winner
-excerpt: Are you tired of being tracked online by advertisers and third-party companies? Do you want to take control of your online privacy and security? Look no further
+excerpt: Are you tired of being tracked online by advertisers and third-party companies?
+  Do you want to take control of your online privacy and security? Look no further
 featured_image: null
 category: Redirect & Navigation
 tags: []
 keywords:
-  - ghostery plugin chrome
-meta_description: Are you tired of being tracked online by advertisers and third-party companies? Do you want to take control of your online privacy and security? Look no further
+- ghostery plugin chrome
+meta_description: Are you tired of being tracked online by advertisers and third-party
+  companies? Do you want to take control of your online privacy and security? Look
+  no further
 status: published
 published_at: '2026-03-03T09:00:02.916+00:00'
 scheduled_at: '2026-03-03T09:00:00+00:00'
@@ -17,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-02-26T18:17:18.87692+00:00'
 updated_at: '2026-03-03T17:57:21.907652+00:00'
+canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
 ---
 
 <h1>Unlocking the Power of Online Privacy: A <a href="/blog/unlocking-the-power-of-online-privacy-a-comprehensive-guide-to-ghostery-add-on-chrome-mm3scm95f3h" class="internal-link" title="Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery Add On Chrome">Comprehensive</a> Guide to Ghostery Plugin Chrome</h1>

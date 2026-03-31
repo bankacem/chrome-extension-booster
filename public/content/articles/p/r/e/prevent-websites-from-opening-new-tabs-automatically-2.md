@@ -2,14 +2,18 @@
 id: e1411e92-b380-4844-bf8f-e33534a7ee86
 title: 'Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide'
 slug: prevent-websites-from-opening-new-tabs-automatically-2
-excerpt: Are you tired of websites opening new tabs automatically, cluttering your browser and disrupting your workflow? You're not alone. Many users face this issue dai
+excerpt: Are you tired of websites opening new tabs automatically, cluttering your
+  browser and disrupting your workflow? You're not alone. Many users face this issue
+  dai
 featured_image: https://blogger.googleusercontent.com/img/a/AVvXsEhWLpMUKeK58aa3w7OQF5UBIv1ZXqk_X3zc4lYj0JOTDkBsPeD9uiuSpO2faSOpx4stfa7FGWzGO-kyoVvanoHA5ciDg1-ZvvjogAyqGrSZqlkjzbqEllqgRBhi0fQ-TqGI2qoNnQjuvmqnEL2dNOvjdFcyShuQKsJFGPh8-giV34y8YLhkFXyJ6XpNirk
 category: Screenshots & Screen Capture
 tags:
-  - 'Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide'
+- 'Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide'
 keywords:
-  - Prevent websites from opening new tabs automatically
-meta_description: Are you tired of websites opening new tabs automatically, cluttering your browser and disrupting your workflow? You're not alone. Many users face this issue dai
+- Prevent websites from opening new tabs automatically
+meta_description: Are you tired of websites opening new tabs automatically, cluttering
+  your browser and disrupting your workflow? You're not alone. Many users face this
+  issue dai
 status: published
 published_at: '2026-03-10T20:11:02.949+00:00'
 scheduled_at: '2026-03-10T20:11:00+00:00'
@@ -18,7 +22,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-20T19:01:19.932094+00:00'
 updated_at: '2026-03-16T14:43:36.018145+00:00'
-canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
+canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 ---
 
 <h1>Prevent Websites from Opening New Tabs <a href="/blog/stop-video-popups-from-playing-automatically-3" class="internal-link" title="Stop Video Popups from Playing Automatically: A Comprehensive Guide">Automatically</a>: A <a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comprehensive</a> Guide</h1>

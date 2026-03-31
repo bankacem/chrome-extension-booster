@@ -1,14 +1,19 @@
 ---
 id: ed997344-9350-45c7-837f-32872c7a8736
-title: Discover the Best Open Source Alternative to Ghostery Extension for Enhanced Browser Security
+title: Discover the Best Open Source Alternative to Ghostery Extension for Enhanced
+  Browser Security
 slug: discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz
-excerpt: Are you looking for an open source alternative to Ghostery extension that can provide you with a higher level of browser security and privacy? Ghostery is a pop
+excerpt: Are you looking for an open source alternative to Ghostery extension that
+  can provide you with a higher level of browser security and privacy? Ghostery is
+  a pop
 featured_image: null
 category: Redirect & Navigation
 tags: []
 keywords:
-  - Open source alternative to Ghostery extension
-meta_description: Are you looking for an open source alternative to Ghostery extension that can provide you with a higher level of browser security and privacy? Ghostery is a pop
+- Open source alternative to Ghostery extension
+meta_description: Are you looking for an open source alternative to Ghostery extension
+  that can provide you with a higher level of browser security and privacy? Ghostery
+  is a pop
 status: published
 published_at: '2026-02-20T09:00:07.188+00:00'
 scheduled_at: '2026-02-20T09:00:00+00:00'
@@ -17,6 +22,7 @@ views: 0
 read_time: 6
 created_at: '2026-02-13T19:04:55.599279+00:00'
 updated_at: '2026-03-16T14:42:58.078472+00:00'
+canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
 ---
 
 <h1>Discover the Best Open Source Alternative to Ghostery Extension for Enhanced Browser Security</h1>
