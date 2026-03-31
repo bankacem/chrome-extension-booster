@@ -946,25 +946,6 @@
     "updated_at": "2026-03-20T00:00:00.000Z"
   },
   {
-    "id": "chrome-ram-guide",
-    "title": "Ultimate Chrome RAM & Memory Management Guide (2026)",
-    "slug": "chrome-ram-guide",
-    "description": "Master Chrome RAM management with our definitive guide. Learn how to fix high memory usage and optimize performance for a faster browser.",
-    "excerpt": "Master Chrome RAM management with our definitive guide. Learn how to fix high memory usage and optimize performance for a faster browser.",
-    "published_at": "2026-03-20T00:00:00.000Z",
-    "category": "Performance & Memory",
-    "author": "Admin",
-    "image_url": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1200",
-    "featured_image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1200",
-    "reading_time": 15,
-    "read_time": 15,
-    "views": 0,
-    "tags": [],
-    "keywords": [],
-    "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
-    "updated_at": "2026-03-20T00:00:00.000Z"
-  },
-  {
     "id": "ultimate-chrome-ram-memory-management-guide",
     "title": "Ultimate Chrome RAM & Memory Management Guide (2026)",
     "slug": "ultimate-chrome-ram-memory-management-guide",
@@ -7431,6 +7412,34 @@
       "productivity"
     ],
     "updated_at": "2026-03-06T18:33:06.802004+00:00"
+  },
+  {
+    "id": "chrome-ram-guide",
+    "title": "The Ultimate Chrome RAM Usage Guide: Optimize Performance in 2026",
+    "slug": "chrome-ram-guide",
+    "description": "Is Chrome eating your RAM? Learn professional techniques to optimize Chromium's memory management, understand the V8 engine, and discover the best RAM-saver extensions.",
+    "excerpt": "Stop the lag. Discover how to master Chrome's memory management with technical insights into Chromium architecture and expert optimization tips.",
+    "published_at": "2026-01-20",
+    "category": "Performance",
+    "author": "Jules",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "RAM",
+      "Optimization",
+      "Browser Tips",
+      "Chromium"
+    ],
+    "keywords": [
+      "chrome ram usage",
+      "reduce chrome memory",
+      "v8 engine optimization",
+      "tab suspender",
+      "chrome performance guide"
+    ],
+    "updated_at": "2026-01-20"
   },
   {
     "id": "0fd7e130-54b1-4977-8425-77b05bfe0ed1",
