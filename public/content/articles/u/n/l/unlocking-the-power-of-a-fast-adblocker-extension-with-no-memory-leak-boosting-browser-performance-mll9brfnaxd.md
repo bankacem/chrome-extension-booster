@@ -51,7 +51,7 @@ canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
     <li><a href="#importance-of-a-fast-adblocker-extension">Importance of a Fast AdBlocker Extension</a></li>
     <li><a href="#no-memory-leak-adblocker-extensions">No Memory Leak AdBlocker Extensions</a></li>
     <li><a href="#features-to-look-for-in-a-fast-adblocker-extension">Features to Look for in a Fast AdBlocker Extension</a></li>
-    <li><a href="#comparison-of-adblocker-extensions"><a href="/blog/privacy-badger-chrome-partial" class="internal-link" title="Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security">Comparison</a> of AdBlocker Extensions</a></li>
+    <li><a href="#comparison-of-adblocker-extensions"><a href="/blog/best-chrome-privacy-extensions-2026-complete-guide" class="internal-link" title="Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security">Comparison</a> of AdBlocker Extensions</a></li>
     <li><a href="#faq">FAQ</a></li>
 </ul>
 

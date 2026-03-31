@@ -52,7 +52,7 @@ canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
   <li><a href="#how-does-ghostery-plugin-chrome-work">How Does Ghostery Plugin Chrome Work?</a></li>
   <li><a href="#features-of-ghostery-plugin-chrome">Features of Ghostery Plugin Chrome</a></li>
   <li><a href="#benefits-of-using-ghostery-plugin-chrome">Benefits of Using Ghostery Plugin Chrome</a></li>
-  <li><a href="#comparison-with-other-privacy-extensions"><a href="/blog/privacy-badger-chrome-partial" class="internal-link" title="Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security">Comparison</a> with Other Privacy Extensions</a></li>
+  <li><a href="#comparison-with-other-privacy-extensions"><a href="/blog/best-chrome-privacy-extensions-2026-complete-guide" class="internal-link" title="Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security">Comparison</a> with Other Privacy Extensions</a></li>
   <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 

@@ -11,20 +11,34 @@
       "permanent": true
     },
     {
-      "source": "/blog/how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue",
-      "destination": "/blog/how-to-fix-chrome-memory-2026",
+      "source": "/blog/unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker-top-features-for-data-protection",
+      "destination": "/blog/poper-blocker-review-best-popup-blocker-chrome-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-a-faster-and-more-private-browsing-experience-with-the-best-ad-blocker-extension-to-chrome-how-to-block-trackers-effectively",
+      "destination": "/blog/best-ad-blocker-extension-chrome-block-trackers-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/visual-content-a-compunlock-the-power-of-visual-content-to-chrome-screenshot-addonsrehensive-guide-to-chrome-screenshot-addons-annotating-editing-features",
+      "destination": "/blog/chrome-screenshot-addons-guide-annotating-editing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-tools-2025-troubleshooting-capture-errors",
+      "destination": "/blog/chrome-capture-tools-2025-troubleshooting-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/visual-communication-best-annotated-screenshot-chrome-extensions-for-enhanced-productivity-best-high-quality-output-settings",
+      "destination": "/blog/best-annotated-screenshot-chrome-extensions-2026",
       "permanent": true
     }
   ],
   "rewrites": [
-    {
-      "source": "/sitemap.xml",
-      "destination": "/api/sitemap"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/sitemap.xml", "destination": "/api/sitemap" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {
