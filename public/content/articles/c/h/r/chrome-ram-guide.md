@@ -8,6 +8,7 @@ tags: ["Chrome", "RAM", "Optimization", "Browser Tips", "Chromium"]
 keywords: ["chrome ram usage", "reduce chrome memory", "v8 engine optimization", "tab suspender", "chrome performance guide"]
 author: "Jules"
 published_at: "2026-01-20"
+featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
 read_time: 12
 status: "published"
 schema:
