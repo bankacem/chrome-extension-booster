@@ -279,12 +279,6 @@
     <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/chrome-ram-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/ultimate-chrome-ram-memory-management-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -2056,6 +2050,12 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-01-20</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-ram-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-01-20</lastmod>
