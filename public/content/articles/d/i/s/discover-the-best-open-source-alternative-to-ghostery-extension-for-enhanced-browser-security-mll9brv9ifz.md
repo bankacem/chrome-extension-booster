@@ -6,7 +6,7 @@ slug: discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanc
 excerpt: Are you looking for an open source alternative to Ghostery extension that
   can provide you with a higher level of browser security and privacy? Ghostery is
   a pop
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

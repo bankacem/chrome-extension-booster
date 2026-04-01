@@ -3,7 +3,7 @@ id: 55d0d217-73f2-4894-8d3f-369a5df1596a
 title: 'Best Free Pop Up Blocker Extension for Android 2026: Enhance Your Mobile Browsing Experience'
 slug: best-free-pop-up-blocker-extension-for-android-2026-enhance-your-mobile-browsing-experience-mmb7lsus9cb
 excerpt: Are you tired of annoying pop-ups and intrusive ads disrupting your mobile browsing experience on Android? Look no further! In this comprehensive guide, we'll e
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

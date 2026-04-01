@@ -3,7 +3,7 @@ id: dfd85a29-8421-4f88-8dd2-ec15e9218348
 title: 'Save PC Resources with Chrome Tab Suspension: Boosting Browser Performance and Efficiency'
 slug: save-pc-resources-with-chrome-tab-suspension-boosting-browser-performance-and-efficiency-mll9bth0gxm
 excerpt: When it comes to browsing the internet, having multiple tabs open at the same time can be a convenient way to multitask and access different websites simultaneo
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

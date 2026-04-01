@@ -6,7 +6,7 @@ slug: unlocking-the-power-of-a-fast-adblocker-extension-with-no-memory-leak-boos
 excerpt: Are you tired of dealing with slow browser performance and annoying ads?
   Look no further than a fast adblocker extension that not only blocks unwanted ads
   but a
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

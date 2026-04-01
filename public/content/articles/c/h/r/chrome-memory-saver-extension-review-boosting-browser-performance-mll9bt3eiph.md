@@ -4,7 +4,7 @@ title: 'Chrome Memory Saver Extension Review: Boosting Browser Performance'
 slug: chrome-memory-saver-extension-review-boosting-browser-performance-mll9bt3eiph
 excerpt: Are you tired of experiencing slow browser performance due to excessive memory
   usage? Look no further than a Chrome memory saver extension review to discover th
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -3,7 +3,7 @@ id: e7581980-1edd-49c3-a2ca-39b15156b150
 title: Unlock Faster Downloads with IDM Extension for Chrome Free Download Latest Version
 slug: unlock-faster-downloads-with-idm-extension-for-chrome-free-download-latest-version-mmb6y473kzg
 excerpt: Are you tired of slow download speeds and interrupted files? Look no further than the IDM extension for Chrome free download latest version. This powerful tool
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

@@ -3,7 +3,7 @@ id: ad146e08-e5ba-43a9-89ef-469a84ddc79e
 title: Discover the Best Android Browser for Extensions to Enhance Your Mobile Browsing Experience
 slug: discover-the-best-android-browser-for-extensions-to-enhance-your-mobile-browsing-experience-mmthow5z77c
 excerpt: When it comes to browsing the internet on your Android device, having the right browser can make all the difference. With so many options available, it can be o
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

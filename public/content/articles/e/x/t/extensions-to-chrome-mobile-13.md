@@ -3,7 +3,7 @@ id: 6682a03d-b889-4b50-afca-c2101e8be683
 title: 'Unlock the Full Potential of Your Browser: Extensions to Chrome Mobile'
 slug: extensions-to-chrome-mobile-13
 excerpt: Are you tired of using a limited browser on your mobile device? Look no further! With extensions to Chrome mobile, you can enhance your browsing experience and
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -3,7 +3,7 @@ id: bfe0739b-41bc-478c-bf03-f3d5a0d06b00
 title: 'How to Enable Dark Mode on Google Search: A Step-by-Step Guide'
 slug: how-to-enable-dark-mode-on-google-search
 excerpt: Are you tired of the traditional bright white background of Google Search? Do you want to reduce eye strain and give your eyes a break? Enabling Dark Mode on Go
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

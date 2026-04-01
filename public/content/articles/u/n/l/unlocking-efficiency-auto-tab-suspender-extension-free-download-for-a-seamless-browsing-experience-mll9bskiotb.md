@@ -6,7 +6,7 @@ slug: unlocking-efficiency-auto-tab-suspender-extension-free-download-for-a-seam
 excerpt: Are you tired of dealing with sluggish browser performance due to numerous
   open tabs? An Auto tab suspender extension free download can be the solution you've
   b
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

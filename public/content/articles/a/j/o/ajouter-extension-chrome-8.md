@@ -3,7 +3,7 @@ id: f6c173e1-213d-4856-af45-260c07493156
 title: 'How to Ajouter Extension Chrome: A Step-by-Step Guide to Enhancing Your Browser'
 slug: ajouter-extension-chrome-8
 excerpt: Are you looking to ajouter extension Chrome to your browser, but not sure where to start? With thousands of extensions available in the Chrome Web Store, it can
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

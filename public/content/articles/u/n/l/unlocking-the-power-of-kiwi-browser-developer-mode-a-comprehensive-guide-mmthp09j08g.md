@@ -3,7 +3,7 @@ id: 10213140-3e3a-427a-adbd-af56941e53e3
 title: 'Unlocking the Power of Kiwi Browser Developer Mode: A Comprehensive Guide'
 slug: unlocking-the-power-of-kiwi-browser-developer-mode-a-comprehensive-guide-mmthp09j08g
 excerpt: As a web developer, you're likely familiar with the importance of testing and debugging your websites and applications across various browsers and devices. One
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

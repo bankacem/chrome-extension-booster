@@ -5,7 +5,7 @@ title: 'Unlocking the Power of Chrome: How to Enable Chrome Memory Saver Mode fo
 slug: unlocking-the-power-of-chrome-how-to-enable-chrome-memory-saver-mode-for-a-seamless-browsing-experie-mmthx9ioyu8
 excerpt: Are you tired of Chrome consuming excessive memory, slowing down your browsing
   experience? Enabling Chrome memory saver mode can be a game-changer. In this arti
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

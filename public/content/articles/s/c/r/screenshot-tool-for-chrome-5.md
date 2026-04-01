@@ -5,7 +5,7 @@ title: 'Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool f
 slug: screenshot-tool-for-chrome-5
 excerpt: Are you tired of tedious screenshot processes, only to be left with low-quality
   images that fail to convey your message? Look no further! A Screenshot Tool for
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

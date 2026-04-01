@@ -3,7 +3,7 @@ id: 05ad94e2-9996-4c3b-b9c9-f6c67bcb3b28
 title: 'lemur browser vs kiwi browser: A Comprehensive Comparison for Enhanced Browsing Experience'
 slug: lemur-browser-vs-kiwi-browser-a-comprehensive-comparison-for-enhanced-browsing-experience-mmthov1pg80
 excerpt: When it comes to browsing the internet, users have numerous options to choose from, with each browser offering unique features and functionalities. Two such bro
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

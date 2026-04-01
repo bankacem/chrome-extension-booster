@@ -5,7 +5,7 @@ slug: unlocking-online-privacy-the-power-of-chrome-ghostery-extension-mm3scmqpeo
 excerpt: As we navigate the vast expanse of the internet, it's becoming increasingly
   important to protect our online privacy. With the rise of tracking technologies
   and
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

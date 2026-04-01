@@ -3,7 +3,7 @@ id: bc87ba3f-0494-4944-9476-b4a4d0ff1e5c
 title: 'Stop Trackers on Chrome without Slowing Down: The Ultimate Guide'
 slug: stop-trackers-on-chrome-without-slowing-down-the-ultimate-guide-mll9brqb6da
 excerpt: Are you tired of being tracked online while browsing with Chrome? Do you want to stop trackers on Chrome without slowing down your browsing experience? You're n
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

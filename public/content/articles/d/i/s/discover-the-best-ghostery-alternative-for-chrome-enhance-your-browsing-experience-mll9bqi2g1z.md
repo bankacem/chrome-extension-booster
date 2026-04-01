@@ -4,7 +4,7 @@ title: 'Discover the Best Ghostery Alternative for Chrome: Enhance Your Browsing
 slug: discover-the-best-ghostery-alternative-for-chrome-enhance-your-browsing-experience-mll9bqi2g1z
 excerpt: Are you looking for the best Ghostery alternative for Chrome to enhance your
   browsing experience and protect your online privacy? Look no further. In this artic
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1200'
 category: Appearance & Themes
 tags: []
 keywords:

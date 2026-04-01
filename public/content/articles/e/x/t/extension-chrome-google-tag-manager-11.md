@@ -3,7 +3,7 @@ id: 1da33a92-2e89-4219-a47d-c2829621ee6a
 title: 'Unlocking the Power of Google Tag Manager: A Comprehensive Guide to the Extension Chrome Google Tag Manager'
 slug: extension-chrome-google-tag-manager-11
 excerpt: Are you looking to take your website analytics to the next level? Do you want to streamline your marketing efforts and gain valuable insights into your online p
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

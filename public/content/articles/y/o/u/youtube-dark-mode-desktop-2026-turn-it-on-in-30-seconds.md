@@ -5,7 +5,7 @@ slug: youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds
 excerpt: Are you tired of the bright and flashy YouTube interface on your desktop?
   Do you want to know how to get Dark Mode on YouTube desktop to reduce eye strain
   and i
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200'
 category: Appearance & Themes
 tags:
 - 'YouTube Dark Mode Desktop 2026: Turn It On in 30 Seconds'

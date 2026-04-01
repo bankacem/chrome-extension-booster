@@ -3,7 +3,7 @@ id: eb3dc2c5-a4fd-4f2d-9189-0a1521490cbe
 title: 'Discover the Best Dark Mode Extension for Facebook 2026: Enhance Your Browsing Experience'
 slug: best-dark-mode-extension-for-facebook-2026-1
 excerpt: Are you tired of the eye-straining bright interface of Facebook? Do you want to browse your favorite social media platform in style and comfort? Look no further
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200'
 category: Appearance & Themes
 tags: []
 keywords:

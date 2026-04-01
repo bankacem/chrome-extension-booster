@@ -4,7 +4,7 @@ title: 'Unlocking Online Privacy: A Comprehensive Guide to Ghostery for Chrome A
 slug: unlocking-online-privacy-a-comprehensive-guide-to-ghostery-for-chrome-android-mm3scml5zl3
 excerpt: As the world becomes increasingly digital, online privacy has become a pressing
   concern for many individuals. With the rise of tracking technologies and data co
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

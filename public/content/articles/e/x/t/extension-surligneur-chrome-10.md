@@ -3,7 +3,7 @@ id: 54dc07ef-a2d2-4d9e-9fa3-252bb2edaecb
 title: Unlock the Power of Highlighting with the Best Extension Surligneur Chrome
 slug: extension-surligneur-chrome-10
 excerpt: Are you tired of tedious note-taking and tedious text highlighting while browsing the web? Look no further than the extension surligneur Chrome, a game-changer
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

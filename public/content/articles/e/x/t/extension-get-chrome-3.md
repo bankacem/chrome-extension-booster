@@ -3,7 +3,7 @@ id: 7a72b006-2640-42f1-b3d7-721ad01b6966
 title: How to Get the Most Out of Your Browser with "Extension Get Chrome"
 slug: extension-get-chrome-3
 excerpt: When it comes to customizing and enhancing your browsing experience, extension get chrome is a phrase that can unlock a world of possibilities. With the vast ar
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

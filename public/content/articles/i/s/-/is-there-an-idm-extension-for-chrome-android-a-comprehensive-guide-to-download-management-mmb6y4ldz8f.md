@@ -3,7 +3,7 @@ id: 5328a619-4fda-4b37-8bd4-2cbef4e8983d
 title: Is there an IDM extension for Chrome Android? A Comprehensive Guide to Download Management
 slug: is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management-mmb6y4ldz8f
 excerpt: When it comes to managing downloads on Android devices, users often wonder is there an IDM extension for Chrome Android? Internet Download Manager (IDM) is a po
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

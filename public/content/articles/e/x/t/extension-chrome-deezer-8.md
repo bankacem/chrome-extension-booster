@@ -3,7 +3,7 @@ id: 6b018cb3-c87d-4395-9762-a9e88ba9b996
 title: 'Unlocking the Power of Music: The Ultimate Guide to Extension Chrome Deezer'
 slug: extension-chrome-deezer-8
 excerpt: Are you a music lover looking for a seamless way to enjoy your favorite tunes while browsing the web? Look no further than the extension chrome deezer, a game-c
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

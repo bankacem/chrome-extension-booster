@@ -3,7 +3,7 @@ id: e10b091f-5bd2-4c60-bd58-8ff7d0bf4bac
 title: How to Integrate Extension IDM to Chrome for Enhanced Browsing Experience
 slug: extension-idm-to-chrome-12
 excerpt: Are you looking to take your Chrome browsing experience to the next level? Integrating an extension IDM to Chrome can be a game-changer. In this article, we'll
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

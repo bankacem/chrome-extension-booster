@@ -3,7 +3,7 @@ id: 7c66b2c7-0ab6-4121-b135-826388910345
 title: 'How to Install uBlock Origin on Android Chrome: A Step-by-Step Guide'
 slug: how-to-install-ublock-origin-on-android-chrome-a-step-by-step-guide-mmthowe8g0u
 excerpt: Are you tired of annoying ads and trackers disrupting your browsing experience on Android Chrome? Look no further than uBlock Origin, a powerful ad blocker that
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

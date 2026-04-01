@@ -3,7 +3,7 @@ id: e87b7538-8513-448c-a6ee-c3ebde6d7cdf
 title: Unlock the Power of Facebook Pixel with the Extension Chrome Facebook Pixel Helper
 slug: unlock-the-power-of-facebook-pixel-with-the-extension-chrome-facebook-pixel-helper
 excerpt: Are you a digital marketer or business owner looking to optimize your Facebook ads and track conversions effectively? Look no further than the extension chrome
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

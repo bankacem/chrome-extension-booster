@@ -5,7 +5,7 @@ title: 'Mastering the Art of Capturing Screenshots: The Ultimate Screenshot Tool
 slug: screenshot-tool-chrome-guide-1
 excerpt: Welcome to the most comprehensive screenshot tool chrome guide available,
   designed to help you navigate the world of screenshot capture with ease and precision.
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -3,7 +3,7 @@ id: 317610a9-f767-47f8-9cfd-f72a2ae80ec8
 title: 'Activate Dark Mode on Wikipedia for Night Reading: A Comprehensive Guide'
 slug: activate-dark-mode-on-wikipedia-for-night-reading-2
 excerpt: Are you tired of straining your eyes while reading Wikipedia articles at night? Do you wish there was a way to activate dark mode on Wikipedia for a more comfor
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

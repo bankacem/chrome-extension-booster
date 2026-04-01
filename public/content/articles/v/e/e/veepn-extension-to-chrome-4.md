@@ -3,7 +3,7 @@ id: e2ae2def-2e0b-4c9b-b6af-48b77ab6a090
 title: 'Unlocking Secure Browsing: A Comprehensive Guide to the VeePN Extension for Chrome'
 slug: veepn-extension-to-chrome-4
 excerpt: Are you concerned about your online security and anonymity while browsing the web? Look no further than the VeePN extension for Chrome. In this article, we'll d
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

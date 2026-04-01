@@ -5,7 +5,7 @@ slug: unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-in-chrome-android
 excerpt: Are you tired of annoying ads disrupting your browsing experience on your
   Android device? Look no further! In this comprehensive guide, we'll explore the
   world
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

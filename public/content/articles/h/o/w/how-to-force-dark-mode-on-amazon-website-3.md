@@ -3,7 +3,7 @@ id: 1137707c-3144-4703-8a5c-a7d9a2926441
 title: 'How to Force Dark Mode on Amazon Website: A Step-by-Step Guide'
 slug: how-to-force-dark-mode-on-amazon-website-3
 excerpt: Are you tired of the bright and overwhelming interface of the Amazon website? Do you want to know how to force Dark Mode on Amazon website for a more comfortabl
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

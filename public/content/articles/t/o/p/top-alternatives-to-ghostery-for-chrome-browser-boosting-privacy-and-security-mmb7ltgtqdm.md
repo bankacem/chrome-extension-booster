@@ -4,7 +4,7 @@ title: 'Top Alternatives to Ghostery for Chrome Browser: Boosting Privacy and Se
 slug: top-alternatives-to-ghostery-for-chrome-browser-boosting-privacy-and-security-mmb7ltgtqdm
 excerpt: Are you looking for top alternatives to Ghostery for Chrome browser to enhance
   your online privacy and security? Ghostery is a popular Chrome extension that blo
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

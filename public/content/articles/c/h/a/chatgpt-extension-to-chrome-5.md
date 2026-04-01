@@ -3,7 +3,7 @@ id: 09c0b551-aa69-4eac-98c3-4d0dafebc170
 title: 'Unlocking the Power of AI: How to Add a ChatGPT Extension to Chrome'
 slug: chatgpt-extension-to-chrome-5
 excerpt: Are you looking to harness the capabilities of artificial intelligence directly within your browser? The ChatGPT extension to Chrome is an innovative tool that
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -3,7 +3,7 @@ id: 968cd461-9faa-41a6-9162-5249a3954f85
 title: 'Unlocking the Power of Yandex Browser on Chrome Web Store: A Comprehensive Guide'
 slug: unlocking-the-power-of-yandex-browser-on-chrome-web-store-a-comprehensive-guide-mmthovo77ng
 excerpt: Are you looking for a reliable and feature-rich browser that can enhance your online experience? Look no further than the Yandex Browser, available on the Chrom
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

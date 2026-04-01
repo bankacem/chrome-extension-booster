@@ -3,7 +3,7 @@ id: 716bb982-779c-47e9-82a8-76951891c7f7
 title: Unlock the Power of a Free Pop Up Blocker Chrome Extension for a Seamless Browsing Experience
 slug: unlock-the-power-of-a-free-pop-up-blocker-chrome-extension-for-a-seamless-browsing-experience-mm3scnkaas3
 excerpt: Are you tired of annoying pop-ups and intrusive ads ruining your online experience? Look no further than a free pop up blocker Chrome extension. In this article
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

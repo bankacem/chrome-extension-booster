@@ -5,7 +5,7 @@ slug: extension-chrome-ghostery-10
 excerpt: Are you concerned about your online privacy and security? With the rise of
   digital tracking and data collection, it's essential to take control of your online
   p
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

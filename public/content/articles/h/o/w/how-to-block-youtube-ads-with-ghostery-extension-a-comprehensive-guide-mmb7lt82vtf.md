@@ -5,7 +5,7 @@ slug: how-to-block-youtube-ads-with-ghostery-extension-a-comprehensive-guide-mmb
 excerpt: Are you tired of annoying ads interrupting your YouTube videos? Do you want
   to enhance your online experience and block YouTube ads once and for all? Look no
   fu
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

@@ -3,7 +3,7 @@ id: 2ef539c0-b64d-41be-9deb-e060e9373809
 title: 'Mastering the Art of Capturing Web Pages: The Ultimate Guide to Extension Chrome Screen Page'
 slug: extension-chrome-screen-page-16
 excerpt: When it comes to capturing web pages, whether for personal or professional use, having the right tools at your disposal can make all the difference. One such to
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

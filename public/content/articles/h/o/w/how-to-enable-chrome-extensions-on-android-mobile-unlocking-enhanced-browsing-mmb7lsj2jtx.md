@@ -3,7 +3,7 @@ id: f13f91a9-f690-4305-b0bb-57225335c67f
 title: 'How to Enable Chrome Extensions on Android Mobile: Unlocking Enhanced Browsing'
 slug: how-to-enable-chrome-extensions-on-android-mobile-unlocking-enhanced-browsing-mmb7lsj2jtx
 excerpt: Are you tired of limited browsing capabilities on your Android mobile device? Do you want to enable Chrome extensions on Android mobile to enhance your online e
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

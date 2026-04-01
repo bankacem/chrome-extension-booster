@@ -3,7 +3,7 @@ id: 4e72db38-14be-4ac9-9e64-6de090f879b0
 title: 'Unlocking the Power of Gemini Extension to Chrome: A Comprehensive Guide'
 slug: gemini-extension-to-chrome-8
 excerpt: Are you looking to enhance your browsing experience with the gemini extension to chrome? Look no further! In this article, we will delve into the world of Gemin
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

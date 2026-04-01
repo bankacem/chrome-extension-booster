@@ -3,7 +3,7 @@ id: 5f3b7aca-f354-40d6-81c0-2bd78d06b479
 title: 'Unlocking the Power of Your Browser: How to Install an Extension to Chrome Browser'
 slug: extension-to-chrome-browser-10
 excerpt: Are you looking to take your browsing experience to the next level? Installing an extension to Chrome browser can be a game-changer. With thousands of extension
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

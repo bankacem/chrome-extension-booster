@@ -3,7 +3,7 @@ id: 379bc17d-098c-4092-9afa-0b3cfc818268
 title: 'Autotab Discard vs Onetab: Which Chrome Extension Reigns Supreme in Tab Management?'
 slug: autotab-discard-vs-onetab-which-chrome-extension-reigns-supreme-in-tab-management-mmthx8otjk3
 excerpt: 'When it comes to managing tabs in Google Chrome, two popular extensions stand out: Autotab Discard and Onetab. Both extensions aim to help users optimize their'
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:
