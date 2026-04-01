@@ -979,6 +979,7 @@ Disallow: /admin/*`;
             <TabsList>
               <TabsTrigger value="articles">Articles</TabsTrigger>
               <TabsTrigger value="links">Links Manager</TabsTrigger>
+              <TabsTrigger value="images">Images</TabsTrigger>
               <TabsTrigger value="seo">SEO Tools</TabsTrigger>
               <TabsTrigger value="backup">Backup & Restore</TabsTrigger>
             </TabsList>
