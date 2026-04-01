@@ -1480,6 +1480,21 @@ Disallow: /admin/*`;
               </div>
             </TabsContent>
 
+            {/* Images Tab */}
+            <TabsContent value="images" className="space-y-4">
+              <FeaturedImageGenerator 
+                articles={articles.map(a => ({
+                  id: a.id,
+                  title: a.title,
+                  slug: a.slug,
+                  category: a.category,
+                  featured_image: a.featured_image,
+                  status: a.status,
+                }))}
+                onSuccess={fetchArticles}
+              />
+            </TabsContent>
+
             <TabsContent value="seo" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="glass-card p-6">
