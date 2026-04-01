@@ -43,6 +43,7 @@ import SEO from "@/components/SEO";
 import BulkScheduleDialog from "@/components/admin/BulkScheduleDialog";
 import BulkUpdateDialog from "@/components/admin/BulkUpdateDialog";
 import ArticleCategorizer from "@/components/admin/ArticleCategorizer";
+import FeaturedImageGenerator from "@/components/admin/FeaturedImageGenerator";
 import { processArticleWithLinks } from "@/lib/internalLinking";
 
 interface Article {
@@ -978,6 +979,7 @@ Disallow: /admin/*`;
             <TabsList>
               <TabsTrigger value="articles">Articles</TabsTrigger>
               <TabsTrigger value="links">Links Manager</TabsTrigger>
+              <TabsTrigger value="images">Images</TabsTrigger>
               <TabsTrigger value="seo">SEO Tools</TabsTrigger>
               <TabsTrigger value="backup">Backup & Restore</TabsTrigger>
             </TabsList>
@@ -1476,6 +1478,21 @@ Disallow: /admin/*`;
                   ))}
                 </div>
               </div>
+            </TabsContent>
+
+            {/* Images Tab */}
+            <TabsContent value="images" className="space-y-4">
+              <FeaturedImageGenerator 
+                articles={articles.map(a => ({
+                  id: a.id,
+                  title: a.title,
+                  slug: a.slug,
+                  category: a.category,
+                  featured_image: a.featured_image,
+                  status: a.status,
+                }))}
+                onSuccess={fetchArticles}
+              />
             </TabsContent>
 
             <TabsContent value="seo" className="space-y-4">
