@@ -43,6 +43,7 @@ import SEO from "@/components/SEO";
 import BulkScheduleDialog from "@/components/admin/BulkScheduleDialog";
 import BulkUpdateDialog from "@/components/admin/BulkUpdateDialog";
 import ArticleCategorizer from "@/components/admin/ArticleCategorizer";
+import FeaturedImageGenerator from "@/components/admin/FeaturedImageGenerator";
 import { processArticleWithLinks } from "@/lib/internalLinking";
 
 interface Article {
