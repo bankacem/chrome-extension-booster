@@ -21,12 +21,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-31</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/adblock-chrome-android-complete-guide-2026</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -46,6 +40,12 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-03-31</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-03-31</lastmod>
@@ -273,7 +273,19 @@
     <lastmod>2026-03-20</lastmod>
   </url>
   <url>
+    <loc>https://extensionto.com/blog/adblock-android-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-03-20</lastmod>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/chrome-screenshot-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-03-20</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/privacy-security-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-03-20</lastmod>
@@ -285,19 +297,7 @@
     <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/adblock-android-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/youtube-tools-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/privacy-security-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-03-20</lastmod>
