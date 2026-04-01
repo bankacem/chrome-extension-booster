@@ -3,7 +3,7 @@ id: 4c57f6b3-b65e-456c-926a-c56c71e8f384
 title: 'How to Add Extension to Chrome: A Step-by-Step Guide to Enhancing Your Browsing Experience'
 slug: add-extension-to-chrome-7
 excerpt: Are you looking to add extension to Chrome and take your browsing experience to the next level? With thousands of extensions available in the Chrome Web Store,
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

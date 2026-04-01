@@ -3,7 +3,7 @@ id: cd590be2-aed4-4922-b85f-37dafc2e6e5f
 title: 'Unlocking the Power of Google Chat in Chrome: A Comprehensive Guide to the Best Extension Google Chat Chrome'
 slug: extension-google-chat-chrome-4
 excerpt: Google Chat has revolutionized the way we communicate with colleagues, friends, and family. As a Chrome user, you can take your Google Chat experience to the ne
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

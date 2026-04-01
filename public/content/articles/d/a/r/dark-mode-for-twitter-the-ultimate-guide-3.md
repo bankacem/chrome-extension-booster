@@ -3,7 +3,7 @@ id: 7eb684ac-42fb-412d-896b-fa8fdf6736d6
 title: 'Dark Mode for Twitter: The Ultimate Guide'
 slug: dark-mode-for-twitter-the-ultimate-guide-3
 excerpt: Are you tired of the bright and overwhelming Twitter interface? Do you want to give your eyes a break and reduce screen glare? Look no further than Dark Mode fo
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

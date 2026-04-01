@@ -3,7 +3,7 @@ id: 16d7d938-7bd5-4c48-bb29-d3173b69681e
 title: 'Unlocking the Full Potential of Kiwi Browser: A Comprehensive Guide to Kiwi Browser Settings for Extensions'
 slug: unlocking-the-full-potential-of-kiwi-browser-a-comprehensive-guide-to-kiwi-browser-settings-for-exte-mmthoygydyi
 excerpt: As a user of the Kiwi browser, you're likely aware of its impressive capabilities and flexibility. One of the key features that sets Kiwi apart from other brows
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

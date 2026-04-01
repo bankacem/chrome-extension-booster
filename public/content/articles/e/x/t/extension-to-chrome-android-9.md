@@ -3,7 +3,7 @@ id: 6345ad6c-5064-479f-a2a7-b869a303dfe3
 title: 'How to Install an Extension to Chrome Android: A Step-by-Step Guide'
 slug: extension-to-chrome-android-9
 excerpt: Are you looking to enhance your browsing experience on your Android device with the help of a Chrome extension to Chrome Android? With the vast array of extensi
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -6,7 +6,7 @@ slug: unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adbloc
 excerpt: Are you tired of annoying ads disrupting your browsing experience on your
   Android device? Look no further than the Light Popup Blocker Chrome extension, a
   power
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?auto=format&fit=crop&q=80&w=1200'
 category: Appearance & Themes
 tags: []
 keywords:

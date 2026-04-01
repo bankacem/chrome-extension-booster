@@ -3,7 +3,7 @@ id: 13fcb99e-0b14-4ca7-a523-7f984b0564cd
 title: 'Unlocking Productivity with Extension Trello Chrome: A Comprehensive Guide'
 slug: extension-trello-chrome-11
 excerpt: Are you looking to boost your productivity and streamline your workflow with the help of extension Trello Chrome? Look no further. In this article, we will delv
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -4,7 +4,7 @@ title: 'How to Use Meta Pixel Helper for Conversion Tracking: A Step-by-Step Gui
 slug: how-to-use-meta-pixel-helper-for-conversion-tracking-a-step-by-step-guide-mmb6y3xkav4
 excerpt: As a digital marketer, understanding how to use Meta Pixel Helper for conversion
   tracking is crucial for measuring the effectiveness of your online campaigns. I
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

@@ -6,7 +6,7 @@ slug: optimizing-browser-performance-how-to-limit-chrome-ram-usage-with-the-righ
 excerpt: Google Chrome is one of the most popular web browsers in the world, known
   for its speed, security, and extensive library of extensions. However, one of the
   comm
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1200'
 category: Productivity
 tags: []
 keywords:

@@ -3,7 +3,7 @@ id: 14405113-885a-4107-aa87-015af25f0563
 title: 'Encrypting your login data: A simple guide'
 slug: encrypting-your-login-data-a-simple-guide-6
 excerpt: In today's digital age, online security is more important than ever. With the rise of cyberattacks and data breaches, it's crucial to take steps to protect your
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

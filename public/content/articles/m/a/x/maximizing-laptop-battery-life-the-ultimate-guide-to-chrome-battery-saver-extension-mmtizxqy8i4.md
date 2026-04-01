@@ -3,7 +3,7 @@ id: 07ba4341-2456-4a95-a374-c40f00eb6c5e
 title: 'Maximizing Laptop Battery Life: The Ultimate Guide to Chrome Battery Saver Extension'
 slug: maximizing-laptop-battery-life-the-ultimate-guide-to-chrome-battery-saver-extension-mmtizxqy8i4
 excerpt: As we increasingly rely on our laptops for work, entertainment, and communication, battery life has become a major concern. With the numerous tabs and extension
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1200'
 category: Productivity
 tags: []
 keywords:

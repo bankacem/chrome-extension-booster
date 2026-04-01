@@ -3,7 +3,7 @@ id: b0463ed6-95d3-4cec-977c-85d9735ef5cb
 title: 'Top Free Password Vault Extensions for Chrome: Secure Your Online Presence'
 slug: top-free-password-vault-extensions-for-chrome-8
 excerpt: With the increasing number of online accounts and passwords to manage, it's becoming more challenging to keep track of them all. This is where password vault ex
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

@@ -3,7 +3,7 @@ id: fe362fac-6c56-471f-a3d0-0affee26d527
 title: 'Unlocking the Power of Chrometana: A Comprehensive Guide to Enhanced Browsing'
 slug: chrometana-6
 excerpt: Are you looking for ways to supercharge your browsing experience? Look no further than chrometana, a term that has been gaining traction in recent years. In thi
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

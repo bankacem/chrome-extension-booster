@@ -5,7 +5,7 @@ slug: unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-perfo
 excerpt: When it comes to browsing the internet, security and performance are two
   of the top priorities for users. One often overlooked feature that can significantly
   en
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

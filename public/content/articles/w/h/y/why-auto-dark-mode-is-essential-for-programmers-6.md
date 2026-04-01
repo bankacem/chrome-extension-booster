@@ -5,7 +5,7 @@ slug: why-auto-dark-mode-is-essential-for-programmers-6
 excerpt: As a programmer, you likely spend a significant amount of time staring at
   screens, typing away at your keyboard, and debugging code. But have you ever stopped
   t
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
 category: Appearance & Themes
 tags: []
 keywords:

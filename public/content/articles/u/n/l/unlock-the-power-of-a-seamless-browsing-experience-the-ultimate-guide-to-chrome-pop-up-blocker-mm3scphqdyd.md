@@ -3,7 +3,7 @@ id: 12ef659c-cc6b-41b8-9aaf-408bbadb5b94
 title: 'Unlock the Power of a Seamless Browsing Experience: The Ultimate Guide to Chrome Pop Up Blocker'
 slug: unlock-the-power-of-a-seamless-browsing-experience-the-ultimate-guide-to-chrome-pop-up-blocker-mm3scphqdyd
 excerpt: Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a reliable Chrome pop up blocker. In this comprehens
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

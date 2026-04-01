@@ -3,7 +3,7 @@ id: 3e82436d-1a2b-45d9-b461-1186782a66f6
 title: 'Best Tab Manager for Heavy Chrome Users: Unlocking Efficiency and Productivity'
 slug: best-tab-manager-for-heavy-chrome-users-unlocking-efficiency-and-productivity-mll9bt7orh3
 excerpt: As a heavy Chrome user, you're likely no stranger to the frustration of dealing with multiple tabs open at once. Whether you're a researcher, a developer, or si
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
 category: Performance & Memory
 tags: []
 keywords:

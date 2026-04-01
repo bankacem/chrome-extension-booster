@@ -4,7 +4,7 @@ title: 'Best Chrome Extensions for Privacy 2026: Protect Your Online Identity'
 slug: best-chrome-extensions-for-privacy-2026-protect-your-online-identity-mll9br233zj
 excerpt: As we dive into 2026, online privacy has become a major concern for internet
   users. With the increasing number of data breaches and cyber attacks, it's essentia
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

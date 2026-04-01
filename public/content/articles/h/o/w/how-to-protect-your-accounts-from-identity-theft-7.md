@@ -3,7 +3,7 @@ id: fbb53e72-61e6-4887-b835-cee317afebd6
 title: 'How to Protect Your Accounts from Identity Theft: A Comprehensive Guide'
 slug: how-to-protect-your-accounts-from-identity-theft-7
 excerpt: Identity theft is a growing concern in today's digital age, with millions of people falling victim to this type of crime every year. Learning how to protect you
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

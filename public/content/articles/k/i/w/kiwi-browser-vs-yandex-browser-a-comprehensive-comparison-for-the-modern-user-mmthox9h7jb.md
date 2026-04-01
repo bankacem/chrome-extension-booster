@@ -3,7 +3,7 @@ id: 4894deb9-5d3d-406f-89cb-052b7878ebc8
 title: 'kiwi browser vs yandex browser: A Comprehensive Comparison for the Modern User'
 slug: kiwi-browser-vs-yandex-browser-a-comprehensive-comparison-for-the-modern-user-mmthox9h7jb
 excerpt: When it comes to browsing the internet, the choice of browser can significantly impact your overall experience. Two popular alternatives to the mainstream brows
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

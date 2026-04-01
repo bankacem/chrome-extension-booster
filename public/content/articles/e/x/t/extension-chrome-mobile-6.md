@@ -3,7 +3,7 @@ id: 21e0268e-96bb-4776-b56c-56e6bf1e5b96
 title: 'Unlocking the Power of Extension Chrome Mobile: A Comprehensive Guide'
 slug: extension-chrome-mobile-6
 excerpt: Are you tired of feeling limited by your mobile browser's capabilities? Do you wish you could enhance your browsing experience on-the-go? Look no further than e
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

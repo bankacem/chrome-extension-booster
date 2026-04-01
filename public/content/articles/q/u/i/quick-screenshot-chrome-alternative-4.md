@@ -5,7 +5,7 @@ slug: quick-screenshot-chrome-alternative-4
 excerpt: Are you looking for a quick screenshot Chrome alternative to capture web
   pages instantly? You're not alone. With the rise of online content creation, taking
   scr
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

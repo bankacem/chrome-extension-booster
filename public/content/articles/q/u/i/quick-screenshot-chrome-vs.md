@@ -5,7 +5,7 @@ slug: quick-screenshot-chrome-vs
 excerpt: When it comes to capturing web pages, quick screenshot Chrome extensions
   have become an essential tool for many users. With so many options available, it
   can be
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

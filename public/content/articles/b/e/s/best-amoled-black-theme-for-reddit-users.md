@@ -3,7 +3,7 @@ id: 316bb3e5-8f2b-4637-aefe-9f6471c933a4
 title: 'Discover the Best AMOLED Black Theme for Reddit Users: Enhance Your Browsing Experience'
 slug: best-amoled-black-theme-for-reddit-users
 excerpt: Are you a Reddit user looking to elevate your browsing experience with a sleek and battery-friendly theme? Look no further! In this article, we'll explore the B
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

@@ -3,7 +3,7 @@ id: 9694c115-4bdc-4f64-807a-9b38a0bc7c87
 title: 'Unlocking the Power of Chrome: How to Find the Best Extension to Chrome for Your Needs'
 slug: unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs
 excerpt: Are you looking to take your browsing experience to the next level? Installing an extension to Chrome can be a game-changer, providing you with a wide range of
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

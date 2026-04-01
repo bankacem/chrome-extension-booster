@@ -3,7 +3,7 @@ id: 4ca0043d-6bde-472e-986d-e6262efd00d4
 title: 'How to Reduce Chrome CPU Usage: A Comprehensive Guide to a Faster Browser'
 slug: how-to-reduce-chrome-cpu-usage-a-comprehensive-guide-to-a-faster-browser-mmthx96a4yd
 excerpt: Are you tired of Chrome consuming excessive CPU resources, slowing down your computer and affecting your productivity? You're not alone. Many users face this is
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

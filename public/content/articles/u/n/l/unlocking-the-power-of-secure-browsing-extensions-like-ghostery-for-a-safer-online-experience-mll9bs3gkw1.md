@@ -5,7 +5,7 @@ title: 'Unlocking the Power of Secure Browsing: Extensions like Ghostery for a S
 slug: unlocking-the-power-of-secure-browsing-extensions-like-ghostery-for-a-safer-online-experience-mll9bs3gkw1
 excerpt: As the internet continues to evolve, online security has become a major concern
   for individuals and organizations alike. With the rise of cyber threats and data
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

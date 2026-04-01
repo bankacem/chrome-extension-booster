@@ -30,7 +30,7 @@ author: Admin
 views: 0
 read_time: 12
 reading_time: 12
-featured_image: ''
+featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
 ---
 
 <p>If you have ever opened Chrome's Task Manager and stared in disbelief at the RAM numbers, you are not alone. Chrome regularly tops the charts as the most memory-hungry browser in the world — and in 2026, with more tabs, more extensions, and heavier web apps than ever before, the problem has only grown. This guide covers every proven method to cut Chrome's RAM usage, from built-in settings to the best third-party extensions.</p>

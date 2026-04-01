@@ -3,7 +3,7 @@ id: dcccb997-ed2d-4c88-937a-ab2ca5832ce0
 title: 'Mastering Chrome Extensions: A Comprehensive Guide to "extension regle chrome" and Beyond'
 slug: extension-regle-chrome-9
 excerpt: Welcome to the world of Chrome extensions, where you can enhance your browsing experience with a wide range of tools and features. In this article, we'll delve
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

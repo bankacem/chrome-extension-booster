@@ -6,7 +6,7 @@ slug: quick-screenshot-chrome-tutorial-1
 excerpt: Welcome to the most comprehensive quick screenshot Chrome tutorial you'll
   ever need. In today's digital age, taking screenshots has become an essential skill
   fo
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

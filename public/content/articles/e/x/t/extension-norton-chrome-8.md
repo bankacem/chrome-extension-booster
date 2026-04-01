@@ -4,7 +4,7 @@ title: 'Unlocking Cybersecurity: The Power of Extension Norton Chrome'
 slug: extension-norton-chrome-8
 excerpt: As the internet continues to evolve, so do the threats that lurk in the shadows.
   Cybersecurity has become a top priority for individuals and organizations alike
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

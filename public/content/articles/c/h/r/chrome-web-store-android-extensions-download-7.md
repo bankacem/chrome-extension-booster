@@ -3,7 +3,7 @@ id: 4987b240-4cef-4596-a8eb-3eba23e7697b
 title: 'Unlocking Android Browsing: A Comprehensive Guide to Chrome Web Store Android Extensions Download'
 slug: chrome-web-store-android-extensions-download-7
 excerpt: Are you tired of limited browsing capabilities on your Android device? Look no further! The Chrome Web Store offers a wide range of Android extensions that can
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

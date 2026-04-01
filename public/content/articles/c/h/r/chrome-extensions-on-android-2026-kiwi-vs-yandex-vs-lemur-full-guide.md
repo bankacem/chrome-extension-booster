@@ -3,7 +3,7 @@ id: 064163e6-ef34-4bcb-a81e-d4b9aec4b23f
 title: 'Chrome Extensions on Android 2026: Kiwi vs Yandex vs Lemur (Full Guide)'
 slug: chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide
 excerpt: Are you an Android user looking to enhance your browsing experience with extension chrome android? You're in luck! Chrome extensions have revolutionized the way
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags:
   - 'Chrome Extensions on Android 2026: Kiwi vs Yandex vs Lemur (Full Guide)'

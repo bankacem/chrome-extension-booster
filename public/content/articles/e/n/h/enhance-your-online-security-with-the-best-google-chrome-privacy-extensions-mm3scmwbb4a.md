@@ -4,7 +4,7 @@ title: Enhance Your Online Security with the Best Google Chrome Privacy Extensio
 slug: enhance-your-online-security-with-the-best-google-chrome-privacy-extensions-mm3scmwbb4a
 excerpt: Google Chrome is one of the most widely used web browsers, offering a vast
   array of features and extensions to enhance user experience. However, with the increa
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

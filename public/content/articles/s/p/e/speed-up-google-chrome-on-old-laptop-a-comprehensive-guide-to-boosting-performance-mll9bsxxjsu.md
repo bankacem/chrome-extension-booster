@@ -3,7 +3,7 @@ id: e1f14876-0450-450d-8289-9c3497a1d094
 title: 'Speed up Google Chrome on Old Laptop: A Comprehensive Guide to Boosting Performance'
 slug: speed-up-google-chrome-on-old-laptop-a-comprehensive-guide-to-boosting-performance-mll9bsxxjsu
 excerpt: Are you tired of using a slow Google Chrome browser on your old laptop? Do you want to speed up Google Chrome on old laptop and enjoy a seamless browsing experi
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
 category: Appearance & Themes
 tags: []
 keywords:

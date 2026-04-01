@@ -5,7 +5,7 @@ title: 'Mastering Google Chrome Programmé en: Unlocking the Power of Customizat
 slug: google-chrome-programmé-en-14
 excerpt: Google Chrome, one of the most widely used web browsers, offers a vast array
   of features and tools to enhance user experience. For those who want to take their
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

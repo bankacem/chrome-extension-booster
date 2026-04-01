@@ -3,7 +3,7 @@ id: 7e511e56-e552-469d-83ec-1024c9caefb6
 title: 'How to Use Desktop Extensions on Phone: A Step-by-Step Guide'
 slug: how-to-use-desktop-extensions-on-phone-a-step-by-step-guide-mmthowug4hd
 excerpt: Are you tired of being limited to using your favorite desktop extensions only on your computer? With the advancement of technology, it's now possible to use des
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

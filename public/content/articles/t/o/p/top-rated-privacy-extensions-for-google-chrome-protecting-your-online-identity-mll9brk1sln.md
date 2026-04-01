@@ -5,7 +5,7 @@ slug: top-rated-privacy-extensions-for-google-chrome-protecting-your-online-iden
 excerpt: With the increasing concern about online privacy, it's essential to have
   the right tools to protect your personal data while browsing the internet. Top rated
   pr
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

@@ -4,7 +4,7 @@ title: 'Screenshot Tool Chrome vs: The Ultimate Comparison Guide'
 slug: screenshot-tool-chrome-vs-5
 excerpt: When it comes to taking screenshots in Chrome, there are numerous tools available,
   each with its unique features and benefits. In this article, we'll delve into
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

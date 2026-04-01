@@ -3,7 +3,7 @@ id: 6c642d9d-de9a-486a-aa71-17253dad6df8
 title: 'Unlocking the Power of Ad-Blockers: Boosting Your Browsing Experience with Light Popup Blocker'
 slug: unlocking-the-power-of-ad-blockers-boosting-your-browsing-experience-with-light-popup-blocker-mm3scnflwya
 excerpt: Are you tired of annoying ads and intrusive popups ruining your online experience? Look no further than مجموعة منع الإعلانات والنوافذ المنبثقة (Ad-Blockers), a
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200'
 category: Redirect & Navigation
 tags: []
 keywords:

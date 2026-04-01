@@ -3,7 +3,7 @@ id: 5921a78f-80ce-43da-99bf-c593e1cfb76e
 title: 'Unlocking the Power of Extension Chrome WAPI: A Comprehensive Guide'
 slug: extension-chrome-wapi-17
 excerpt: Are you looking to enhance your browsing experience with the help of extension chrome wapi? Look no further! In this article, we will delve into the world of Ch
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

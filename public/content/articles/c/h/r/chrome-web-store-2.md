@@ -3,7 +3,7 @@ id: 5cac7910-54df-4a62-aaf1-2c7da98960af
 title: 'Unlocking the Power of the Chrome Web Store: A Comprehensive Guide'
 slug: chrome-web-store-2
 excerpt: Welcome to the world of Chrome extensions, where the Chrome Web Store is your one-stop-shop for discovering, installing, and managing a vast array of browser ex
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

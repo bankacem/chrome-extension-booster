@@ -3,7 +3,7 @@ id: 3a3ee33d-edf3-44a9-a8b8-83d92d63954f
 title: 'Unlock the Power of Text-to-Speech: A Comprehensive Guide to TTS Chrome Extensions'
 slug: tts-chrome-5
 excerpt: Welcome to the world of text-to-speech (TTS) technology, where the boundaries of reading and listening are blurred. With the rise of TTS Chrome extensions, user
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

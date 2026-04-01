@@ -5,7 +5,7 @@ title: 'How to Fix Chrome High Memory Usage 2026: The Ultimate Guide to a Smooth
 slug: how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue
 excerpt: Are you tired of experiencing slow browsing speeds and frequent crashes due
   to Chrome high memory usage? You're not alone. Many users have been struggling with
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

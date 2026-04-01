@@ -6,7 +6,7 @@ slug: windscribe-extension-to-chrome-9
 excerpt: Are you concerned about your online security and privacy while browsing the
   internet? Look no further than the Windscribe extension for Chrome. As a powerful
   to
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

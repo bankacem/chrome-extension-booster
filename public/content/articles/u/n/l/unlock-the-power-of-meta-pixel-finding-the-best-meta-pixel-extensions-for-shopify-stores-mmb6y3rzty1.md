@@ -3,7 +3,7 @@ id: 198f2db0-39ac-40f3-a8f3-34fbb0ccfc33
 title: 'Unlock the Power of Meta Pixel: Finding the Best Meta Pixel Extensions for Shopify Stores'
 slug: unlock-the-power-of-meta-pixel-finding-the-best-meta-pixel-extensions-for-shopify-stores-mmb6y3rzty1
 excerpt: As a Shopify store owner, you're likely no stranger to the importance of tracking and analyzing customer behavior on your website. One of the most effective way
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:

@@ -3,7 +3,7 @@ id: ba6f7d75-1c28-4136-a8a3-28f914741f82
 title: 'Unlock the Power of Voice: A Comprehensive Guide to SpeakIt'
 slug: speakit-3
 excerpt: Imagine being able to interact with your computer or mobile device using just your voice. No more typing, no more clicking - just speak, and your device respond
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

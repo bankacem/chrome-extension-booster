@@ -3,7 +3,7 @@ id: 0ae06ccc-1bbe-4653-8734-14eedab6cd52
 title: 'Using Dark Mode on Quora for Better Focus: A Comprehensive Guide'
 slug: using-dark-mode-on-quora-for-better-focus-4
 excerpt: Are you tired of straining your eyes while browsing Quora? Do you find it challenging to focus on the content due to the bright screen? Using Dark Mode on Quora
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200'
 category: Screenshots & Screen Capture
 tags: []
 keywords:

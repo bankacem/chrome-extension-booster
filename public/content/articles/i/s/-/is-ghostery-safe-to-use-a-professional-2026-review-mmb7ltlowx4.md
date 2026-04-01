@@ -5,7 +5,7 @@ slug: is-ghostery-safe-to-use-a-professional-2026-review-mmb7ltlowx4
 excerpt: 'As we delve into the world of browser extensions, one question that often
   arises is: Is Ghostery safe to use? With the increasing concern over online privacy
   an'
-featured_image: null
+featured_image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200'
 category: Chrome Extensions
 tags: []
 keywords:
