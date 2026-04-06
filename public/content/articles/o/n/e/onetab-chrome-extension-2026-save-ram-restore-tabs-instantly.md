@@ -1,5 +1,5 @@
 ---
-id: 225523a1-e736-4fb0-a66e-b1ee364bf150
+id: 7a9fe17c-16de-4919-a5ac-19a480c31223
 title: 'OneTab Chrome Extension 2026: Save RAM & Restore Tabs Instantly'
 slug: onetab-chrome-extension-2026-save-ram-restore-tabs-instantly
 excerpt: Are you tired of cluttered browser tabs and decreased productivity? Look

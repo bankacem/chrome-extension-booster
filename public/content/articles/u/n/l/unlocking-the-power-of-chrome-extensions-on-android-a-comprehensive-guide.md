@@ -1,5 +1,5 @@
 ---
-id: 064163e6-ef34-4bcb-a81e-d4b9aec4b23f
+id: dbe501ad-5295-42c5-b26d-66618249e4d1
 title: 'Unlocking the Power of Chrome Extensions on Android: A Comprehensive Guide'
 slug: unlocking-the-power-of-chrome-extensions-on-android-a-comprehensive-guide
 excerpt: Are you an Android user looking to enhance your browsing experience with extension chrome android? You're in luck! Chrome extensions have revolutionized the way

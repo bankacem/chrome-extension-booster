@@ -1,5 +1,5 @@
 ---
-id: 3c2aeccb-2026-45c3-ae24-5bcc5b0c777f
+id: 256ad9db-538d-43ce-894f-840178ada93d
 title: 'Best YouTube to MP3 Chrome Extension 2026: Top 5 Free & Safe Converters'
 slug: best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters
 excerpt: Are you tired of searching for your favorite songs on music streaming platforms?

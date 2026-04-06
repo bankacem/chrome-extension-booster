@@ -1,5 +1,5 @@
 ---
-id: f383f99e-6d40-4c1a-9328-b47152891095
+id: 9ced550c-9730-411d-bd4b-6d29649c6e9d
 title: 'Speed Up Slow Chrome in 2026: 10 Fixes That Actually Work'
 slug: speed-up-slow-chrome-in-2026-10-fixes-that-actually-work
 excerpt: We’ve all been there. You’re in the middle of a high-stakes project, or perhaps you're just trying to relax with some 8K streaming, and suddenly, your browser s

@@ -1,5 +1,5 @@
 ---
-id: 0b9829b2-1391-49a2-b0e4-c5728884a2bb
+id: da7ef45a-4781-4133-a5d9-eeb6cd281449
 title: 'How to Fix Chrome High Memory Usage The Ultimate 2026 Speed Up Guide: Reducing
   Browser Memory Leaks'
 slug: how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide
