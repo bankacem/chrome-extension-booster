@@ -1,5 +1,5 @@
 ---
-id: c3e4f574-663d-4b40-9a74-ca524aea1d2b
+id: 128381ea-6748-473d-aad4-6ddfcfa015a4
 title: 'YouTube Dark Mode Desktop 2026: Turn It On in 30 Seconds'
 slug: youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds
 excerpt: Are you tired of the bright and flashy YouTube interface on your desktop?

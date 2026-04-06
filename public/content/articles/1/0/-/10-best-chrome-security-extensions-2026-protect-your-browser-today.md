@@ -1,5 +1,5 @@
 ---
-id: b8904ca4-2da3-4e7f-b741-9e9644a40f48
+id: 86c88cc4-67c9-431c-a251-7cfb926cac44
 title: '10 Best Chrome Security Extensions 2026: Protect Your Browser Today'
 slug: 10-best-chrome-security-extensions-2026-protect-your-browser-today
 excerpt: Improve your online efficiency with our curated list of must-have extensions.

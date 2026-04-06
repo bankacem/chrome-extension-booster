@@ -1,5 +1,5 @@
 ---
-id: c2686b5c-fc87-4903-8753-5ad5ad1e7f23
+id: 477db9fd-d289-4511-a033-fa864f7a9c16
 title: 'Privacy Badger vs Ghostery for Chrome: Choosing the Best Browser Extension
   for Online Privacy'
 slug: privacy-badger-chrome

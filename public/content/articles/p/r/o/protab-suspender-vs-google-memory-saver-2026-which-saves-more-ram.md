@@ -1,5 +1,5 @@
 ---
-id: e2558a6f-da16-419a-bb8d-1f146803062c
+id: 8fcbdd35-4efb-40dc-b18d-3c21c39df2e1
 title: 'ProTab Suspender vs Google Memory Saver 2026: Which Saves More RAM?'
 slug: protab-suspender-vs-google-memory-saver-2026-which-saves-more-ram
 excerpt: We’ve all been there. You start your workday with one tab, and before you

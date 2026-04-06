@@ -1,5 +1,5 @@
 ---
-id: 0b9829b2-1391-49a2-b0e4-c5728884a2bb
+id: 1befd191-c8a0-4437-8cc3-a447d91cd673
 title: 'Fix Chrome High Memory Usage in 2026: 7 Proven Methods (No Extensions Needed)'
 slug: fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed
 excerpt: Discover expert tips for customizing your browsing experience. Learn how

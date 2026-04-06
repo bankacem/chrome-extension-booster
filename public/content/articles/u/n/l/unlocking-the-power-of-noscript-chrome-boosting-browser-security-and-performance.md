@@ -1,5 +1,5 @@
 ---
-id: edcf1372-8db4-4ce0-b6df-ba1b0823f59a
+id: b906064e-f269-48bd-9435-80049b0bff72
 title: 'Unlocking the Power of Noscript Chrome: Boosting Browser Security and Performance'
 slug: unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance
 excerpt: When it comes to browsing the internet, security and performance are two
