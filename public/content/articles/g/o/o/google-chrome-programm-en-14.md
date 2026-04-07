@@ -1,8 +1,7 @@
 ---
 id: ecc80886-f055-442b-8d2e-4135cf4deaf6
-title: 'Mastering Google Chrome Programmé en: Unlocking the Power of Customization
-  and Productivity'
-slug: google-chrome-programmé-en-14
+title: 'Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity'
+slug: google-chrome-programm-en-14
 excerpt: Google Chrome, one of the most widely used web browsers, offers a vast array
   of features and tools to enhance user experience. For those who want to take their
 featured_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200'
