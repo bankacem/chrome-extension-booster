@@ -1,7 +1,7 @@
 ---
 id: 90896843-c9c7-4a7b-b759-03dd69da9ff7
 title: 'Easy Screenshot Chrome Review: Capturing the Essence of Productivity'
-slug: easy-screenshot-chrome-review-
+slug: easy-screenshot-chrome-review
 excerpt: Welcome to our in-depth Easy Screenshot Chrome Review, where we delve into
   the world of screenshot capture and management, focusing on how this functionality
   ca

@@ -27,7 +27,7 @@ async function verifySitemap() {
   }
 
   if (missingInSitemap.length === 0) {
-    console.log('Verification SUCCESS: All 208 URLs are present in the sitemap.');
+    console.log(`Verification SUCCESS: All ${cleanedUrls.length} URLs are present in the sitemap.`);
   } else {
     console.log(`Verification FAILED: ${missingInSitemap.length} URLs are missing from sitemap.`);
     console.log(JSON.stringify(missingInSitemap, null, 2));

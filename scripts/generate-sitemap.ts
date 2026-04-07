@@ -15,6 +15,7 @@ const supabase = (supabaseUrl && supabaseKey) ? createClient(supabaseUrl, supaba
 interface ArticleRecord {
   slug: string;
   published_at?: string;
+  updated_at?: string;
 }
 
 interface PageInfo {
@@ -57,13 +58,13 @@ async function generateSitemap() {
     const articles = JSON.parse(fs.readFileSync(indexPath, 'utf-8')) as ArticleRecord[];
     articlePages = articles.map((article) => {
       const slug = normalizeSlug(article.slug);
-      const title = (article as { title?: string }).title?.toLowerCase() || "";
+      const dateStr = article.updated_at || article.published_at;
 
       return {
         url: `/blog/${slug}`,
         changefreq: "monthly",
         priority: "0.7",
-        lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
+        lastmod: dateStr ? new Date(dateStr).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
       };
     });
   } else if (supabase) {
