@@ -356,7 +356,7 @@ const Admin = () => {
         read_time: currentArticle.read_time,
         tags: tagsInput.split(",").map((t) => t.trim()).filter(Boolean),
         keywords: keywordsInput.split(",").map((k) => k.trim()).filter(Boolean),
-        published_at: currentArticle.status === "published" ? new Date().toISOString() : null,
+        published_at: currentArticle.status === "published" ? (currentArticle.published_at || new Date().toISOString()) : null,
         scheduled_at: currentArticle.status === "scheduled" ? currentArticle.scheduled_at : null,
       };
 
@@ -1742,9 +1742,14 @@ Disallow: /admin/*`;
                 <Label htmlFor="status">Status</Label>
                 <Select
                   value={currentArticle.status || "draft"}
-                  onValueChange={(value) =>
-                    setCurrentArticle({ ...currentArticle, status: value })
-                  }
+                  onValueChange={(value) => {
+                    const updates: Partial<Article> = {
+                      status: value,
+                      published_at: value === "published" ? (currentArticle.published_at || new Date().toISOString()) : null,
+                      scheduled_at: value === "scheduled" ? currentArticle.scheduled_at : null
+                    };
+                    setCurrentArticle({ ...currentArticle, ...updates });
+                  }}
                 >
                   <SelectTrigger>
                     <SelectValue />
