@@ -34,10 +34,14 @@
       "source": "/blog/visual-communication-best-annotated-screenshot-chrome-extensions-for-enhanced-productivity-best-high-quality-output-settings",
       "destination": "/blog/best-annotated-screenshot-chrome-extensions-2026",
       "permanent": true
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/api/sitemap",
+      "permanent": false
     }
   ],
   "rewrites": [
-    { "source": "/sitemap.xml", "destination": "/api/sitemap" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
@@ -52,8 +56,8 @@
     {
       "source": "/sitemap.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml" },
-        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=300" }
+        { "key": "Content-Type", "value": "application/xml; charset=UTF-8" },
+        { "key": "Cache-Control", "value": "public, s-maxage=3600, stale-while-revalidate=600" }
       ]
     }
   ]

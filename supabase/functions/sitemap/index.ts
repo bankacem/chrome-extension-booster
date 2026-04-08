@@ -8,7 +8,6 @@ const corsHeaders = {
 
 const WEBSITE_URL = "https://extensionto.com";
 
-// Extensions data (synchronized with src/lib/extensionsData.ts)
 const extensionSlugs = [
   "quick-screenshot-lite",
   "auto-dark-mode-switcher",
@@ -26,8 +25,16 @@ const escapeXml = (value: string) =>
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
-    .replace(/\"/g, "&quot;")
+    .replace(/"/g, "&quot;")
     .replace(/'/g, "&apos;");
+
+function normalizeSlug(slug: string): string {
+  return slug
+    .toLowerCase()
+    .replace(/[^a-z0-9-]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
 
 const buildLoc = (path: string) => escapeXml(`${WEBSITE_URL}${path}`);
 
@@ -42,22 +49,17 @@ async function fetchAllPublishedArticles(supabase: any) {
   const pageSize = 1000;
   let from = 0;
   let all: ArticleRow[] = [];
-  let totalCount: number | null = null;
 
   while (true) {
-    const { data, error, count } = await supabase
+    const { data, error } = await supabase
       .from("articles")
-      .select("slug, updated_at, published_at, created_at", { count: "exact" })
-      // Case-insensitive match to capture Published/published/PUBLISHED
+      .select("slug, updated_at, published_at, created_at")
       .ilike("status", "published")
-      // Stable ordering for pagination
       .order("published_at", { ascending: false, nullsFirst: false })
       .order("created_at", { ascending: false })
       .range(from, from + pageSize - 1);
 
     if (error) throw error;
-
-    if (totalCount === null) totalCount = count ?? null;
 
     const batch = (data ?? []) as ArticleRow[];
     all = all.concat(batch);
@@ -66,17 +68,11 @@ async function fetchAllPublishedArticles(supabase: any) {
     from += pageSize;
   }
 
-  console.log(
-    `Fetched ${all.length} published articles${
-      totalCount !== null ? ` (count=${totalCount})` : ""
-    }`
-  );
-
+  console.log(`Fetched ${all.length} published articles`);
   return all;
 }
 
 Deno.serve(async (req) => {
-  // Handle CORS preflight
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
@@ -84,12 +80,11 @@ Deno.serve(async (req) => {
   try {
     const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
     const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-    
+
     const supabase = createClient(supabaseUrl, supabaseKey);
 
-    // Fetch ALL published articles (no implicit limits; paginated for future-proofing)
     const articles = await fetchAllPublishedArticles(supabase);
-    // Static pages
+
     const staticPages = [
       { url: "/", changefreq: "weekly", priority: "1.0" },
       { url: "/blog", changefreq: "daily", priority: "0.8" },
@@ -97,9 +92,8 @@ Deno.serve(async (req) => {
       { url: "/terms", changefreq: "yearly", priority: "0.3" },
     ];
 
-    // Article pages
     const articlePages = (articles || []).map((article) => ({
-      url: `/blog/${encodeURIComponent(article.slug)}`,
+      url: `/blog/${normalizeSlug(article.slug)}`,
       changefreq: "monthly",
       priority: "0.7",
       lastmod: article.updated_at
@@ -109,16 +103,14 @@ Deno.serve(async (req) => {
           : undefined,
     }));
 
-    // Extension pages
     const extensionPages = extensionSlugs.map((slug) => ({
       url: `/extension/${slug}`,
       changefreq: "monthly",
       priority: "0.6",
     }));
 
-    const allPages: Array<{ url: string; changefreq: string; priority: string; lastmod?: string }> = [...staticPages, ...articlePages, ...extensionPages];
+    const allPages = [...staticPages, ...articlePages, ...extensionPages];
 
-    // Generate XML
     const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${allPages
@@ -127,22 +119,16 @@ ${allPages
     <loc>${buildLoc(page.url)}</loc>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>${
-      page.lastmod
-        ? `
-    <lastmod>${page.lastmod}</lastmod>`
-        : ""
+      page.lastmod ? `\n    <lastmod>${page.lastmod}</lastmod>` : ""
     }
   </url>`
   )
   .join("\n")}
 </urlset>`;
 
-    console.log(`Generated sitemap with ${allPages.length} URLs (${staticPages.length} static, ${articlePages.length} articles, ${extensionPages.length} extensions)`);
+    console.log(`Generated sitemap: ${allPages.length} URLs (${staticPages.length} static, ${articlePages.length} articles, ${extensionPages.length} extensions)`);
 
-    return new Response(sitemapXml, {
-      status: 200,
-      headers: corsHeaders,
-    });
+    return new Response(sitemapXml, { status: 200, headers: corsHeaders });
   } catch (error) {
     console.error("Sitemap generation error:", error);
     return new Response(
@@ -154,10 +140,7 @@ ${allPages
     <priority>1.0</priority>
   </url>
 </urlset>`,
-      {
-        status: 200,
-        headers: corsHeaders,
-      }
+      { status: 200, headers: corsHeaders }
     );
   }
 });
