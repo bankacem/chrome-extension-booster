@@ -34,7 +34,7 @@
       "source": "/blog/visual-communication-best-annotated-screenshot-chrome-extensions-for-enhanced-productivity-best-high-quality-output-settings",
       "destination": "/blog/best-annotated-screenshot-chrome-extensions-2026",
       "permanent": true
-    },
+    }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }

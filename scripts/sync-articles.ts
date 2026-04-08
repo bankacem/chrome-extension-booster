@@ -42,11 +42,10 @@ function walkDir(dir: string, fileList: string[] = []): string[] {
 }
 
 async function rebuildIndex() {
-  console.log('Crawling articles directory for robust indexing...');
+  console.log('Crawling articles directory...');
   const allMdFiles = walkDir(articlesDir);
   console.log(`Found ${allMdFiles.length} markdown files.`);
 
-  // Use Map to deduplicate by ID
   const idMap = new Map<string, ArticleIndexItem>();
 
   for (const filePath of allMdFiles) {
@@ -61,45 +60,42 @@ async function rebuildIndex() {
 
       const metadata = yaml.load(match[1]) as Record<string, unknown>;
 
-      // We only index published articles for the public site
-      if (metadata.status !== 'published') {
-        console.log(`[Index] Skipping non-published article: ${metadata.slug}`);
-        continue;
+      // ✅ FIX: Accept both "published" and "Published" (case-insensitive)
+      const status = String(metadata.status || '').toLowerCase();
+      if (status !== 'published') {
+        continue; // skip drafts, scheduled, etc.
       }
 
-      const normalizedSlug = normalizeSlug(String(metadata.slug || ""));
+      const normalizedSlug = normalizeSlug(String(metadata.slug || ''));
       const id = String(metadata.id || normalizedSlug);
 
       const newItem: ArticleIndexItem = {
         id: id,
         title: metadata.title as string,
         slug: normalizedSlug,
-        description: (metadata.description || metadata.excerpt || "") as string,
-        excerpt: metadata.excerpt as string,
+        description: (metadata.description || metadata.meta_description || metadata.excerpt || '') as string,
+        excerpt: (metadata.excerpt || metadata.description || '') as string,
         published_at: metadata.published_at as string,
-        category: (metadata.category || "Uncategorized") as string,
-        author: (metadata.author || "Admin") as string,
+        category: (metadata.category || 'Uncategorized') as string,
+        author: (metadata.author || 'Admin') as string,
         image_url: (metadata.image_url || metadata.featured_image) as string,
-        featured_image: metadata.featured_image as string,
+        featured_image: (metadata.featured_image || metadata.image_url) as string,
         reading_time: (metadata.reading_time || metadata.read_time || 5) as number,
         read_time: (metadata.read_time || 5) as number,
         views: (metadata.views || 0) as number,
         tags: (metadata.tags || []) as string[],
         keywords: (metadata.keywords || []) as string[],
-        canonicalPath: metadata.canonicalPath as string | undefined,
+        canonicalPath: (metadata.canonicalPath || `/blog/${normalizedSlug}`) as string,
         updated_at: (metadata.updated_at || metadata.published_at || new Date().toISOString()) as string
       };
 
-      // Deduplication Logic by ID:
-      const existingById = idMap.get(id);
-      if (existingById) {
-        const existingDate = new Date(existingById.updated_at).getTime();
+      // Deduplication by ID — keep newest
+      const existing = idMap.get(id);
+      if (existing) {
+        const existingDate = new Date(existing.updated_at).getTime();
         const newDate = new Date(newItem.updated_at).getTime();
         if (newDate > existingDate) {
           idMap.set(id, newItem);
-          console.log(`[Deduplicate] Updating ID ${id} with newer content from ${normalizedSlug}`);
-        } else {
-          console.log(`[Deduplicate] Keeping existing content for ID ${id}, skipping ${normalizedSlug}`);
         }
       } else {
         idMap.set(id, newItem);
@@ -109,36 +105,31 @@ async function rebuildIndex() {
     }
   }
 
-  // Final check for slug uniqueness among the deduplicated IDs
-  const finalArticles: ArticleIndexItem[] = [];
+  // Deduplicate by slug — keep newest
   const slugMap = new Map<string, ArticleIndexItem>();
-
   for (const item of idMap.values()) {
-    const existingBySlug = slugMap.get(item.slug);
-    if (existingBySlug) {
-      console.warn(`[Collision] Slug ${item.slug} collision between ID ${existingBySlug.id} and ${item.id}`);
-      const existingDate = new Date(existingBySlug.updated_at).getTime();
+    const existing = slugMap.get(item.slug);
+    if (existing) {
+      const existingDate = new Date(existing.updated_at).getTime();
       const newDate = new Date(item.updated_at).getTime();
-      if (newDate > existingDate) {
-        slugMap.set(item.slug, item);
-      }
+      if (newDate > existingDate) slugMap.set(item.slug, item);
     } else {
       slugMap.set(item.slug, item);
     }
   }
 
   const articleIndex = Array.from(slugMap.values());
-
-  // Sort by published_at descending
+  // Sort by published_at descending (newest first)
   articleIndex.sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
 
   fs.writeFileSync(indexFile, JSON.stringify(articleIndex, null, 2));
-  console.log(`Successfully rebuilt index with ${articleIndex.length} unique articles.`);
+  console.log(`Successfully rebuilt index with ${articleIndex.length} published articles.`);
 
-  // Automatically update sitemap
+  // Auto-update sitemap
   console.log('Updating sitemap...');
   try {
     execSync('bun run sitemap', { stdio: 'inherit' });
+    console.log('Sitemap updated.');
   } catch (error) {
     console.error('Error updating sitemap:', error);
   }

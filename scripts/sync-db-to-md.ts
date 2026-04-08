@@ -12,12 +12,11 @@ const supabaseUrl = process.env.VITE_SUPABASE_URL;
 const supabaseKey = process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
-  console.error("Missing Supabase URL or Key. Ensure VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY are set in .env");
+  console.error("Missing Supabase credentials. Set VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY in .env");
   process.exit(1);
 }
 
 const supabase = createClient(supabaseUrl, supabaseKey);
-
 const articlesDir = path.join(process.cwd(), 'public', 'content', 'articles');
 
 interface ArticleRecord {
@@ -76,24 +75,42 @@ function walkDir(dir: string, fileList: string[] = []): string[] {
 }
 
 async function syncDbToMd() {
-  console.log('Fetching articles from Supabase...');
-  const { data, error } = await supabase
-    .from('articles')
-    .select('*');
+  console.log('Fetching published articles from Supabase...');
 
-  if (error) {
-    console.error('Error fetching articles from Supabase:', error);
-    process.exit(1);
+  // ✅ FIX: Use ilike for case-insensitive match (handles "Published", "published", "PUBLISHED")
+  // Fetch ALL published articles using pagination to avoid 1000-row default limit
+  const pageSize = 1000;
+  let from = 0;
+  let allArticles: ArticleRecord[] = [];
+
+  while (true) {
+    const { data, error } = await supabase
+      .from('articles')
+      .select('*')
+      .ilike('status', 'published')
+      .order('published_at', { ascending: false })
+      .range(from, from + pageSize - 1);
+
+    if (error) {
+      console.error('Error fetching from Supabase:', error.message);
+      process.exit(1);
+    }
+
+    const batch = (data ?? []) as ArticleRecord[];
+    allArticles = allArticles.concat(batch);
+
+    if (batch.length < pageSize) break;
+    from += pageSize;
   }
 
-  const articles = data as ArticleRecord[];
-  console.log(`Found ${articles.length} articles in Supabase.`);
+  console.log(`Found ${allArticles.length} published articles in Supabase.`);
 
   if (!fs.existsSync(articlesDir)) {
     fs.mkdirSync(articlesDir, { recursive: true });
   }
 
-  console.log('Crawling local articles to build ID map...');
+  // Build map of existing MD files by article ID
+  console.log('Scanning local markdown files...');
   const allMdFiles = walkDir(articlesDir);
   const idToFilePath = new Map<string, string>();
 
@@ -116,10 +133,9 @@ async function syncDbToMd() {
   let createdCount = 0;
   let renamedCount = 0;
 
-  for (const article of articles) {
+  for (const article of allArticles) {
     const existingFilePath = idToFilePath.get(article.id);
     const targetSubPath = getPartitionedPath(article.slug);
-
     const relativePath = targetSubPath.replace('/content/articles/', '');
     const targetFilePath = path.join(articlesDir, relativePath);
 
@@ -144,44 +160,43 @@ async function syncDbToMd() {
     };
 
     const yamlStr = yaml.dump(frontmatter, {
-        forceQuotes: false,
-        quotingType: '"',
-        noRefs: true
+      forceQuotes: false,
+      quotingType: '"',
+      noRefs: true
     });
 
     const newFileContent = `---\n${yamlStr}---\n\n${article.content || ''}`;
 
-    if (existingFilePath) {
-      if (path.resolve(existingFilePath) !== path.resolve(targetFilePath)) {
-        console.log(`[Rename] ${article.slug}: ${existingFilePath} -> ${targetFilePath}`);
-        if (fs.existsSync(existingFilePath)) {
-          fs.unlinkSync(existingFilePath);
-        }
-        renamedCount++;
+    // Handle rename if slug changed
+    if (existingFilePath && path.resolve(existingFilePath) !== path.resolve(targetFilePath)) {
+      console.log(`[Rename] ${article.slug}: ${path.basename(existingFilePath)} -> ${path.basename(targetFilePath)}`);
+      if (fs.existsSync(existingFilePath)) {
+        fs.unlinkSync(existingFilePath);
       }
+      renamedCount++;
+    }
 
-      const dir = path.dirname(targetFilePath);
-      if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
-      }
+    // Write the file
+    const dir = path.dirname(targetFilePath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
 
-      fs.writeFileSync(targetFilePath, newFileContent);
-      updatedCount++;
-    } else {
-      console.log(`[Create] ${article.slug}: ${targetFilePath}`);
-      const dir = path.dirname(targetFilePath);
-      if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
-      }
-      fs.writeFileSync(targetFilePath, newFileContent);
+    fs.writeFileSync(targetFilePath, newFileContent);
+
+    if (!existingFilePath) {
+      console.log(`[Create] ${article.slug}`);
       createdCount++;
+    } else {
+      updatedCount++;
     }
   }
 
-  console.log(`Sync complete!`);
-  console.log(`Updated/Created: ${updatedCount + createdCount}`);
-  console.log(`- New files: ${createdCount}`);
-  console.log(`- Renamed: ${renamedCount}`);
+  console.log(`\nSync complete!`);
+  console.log(`  Total from Supabase: ${allArticles.length}`);
+  console.log(`  New files created:   ${createdCount}`);
+  console.log(`  Files updated:       ${updatedCount}`);
+  console.log(`  Files renamed:       ${renamedCount}`);
 }
 
 syncDbToMd().catch(console.error);
