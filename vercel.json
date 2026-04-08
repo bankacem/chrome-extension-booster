@@ -35,11 +35,6 @@
       "destination": "/blog/best-annotated-screenshot-chrome-extensions-2026",
       "permanent": true
     },
-    {
-      "source": "/sitemap.xml",
-      "destination": "/api/sitemap",
-      "permanent": false
-    }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
