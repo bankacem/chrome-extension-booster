@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://extensionto.com/</loc>
     <changefreq>weekly</changefreq>
@@ -22,12 +19,6 @@
     <loc>https://extensionto.com/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/discover-the-best-no-ads-chrome-extension-2026-for-a-seamless-browsing-experience-mmtld2uhhvw</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-08</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/unlock-the-power-of-seo-the-best-seo-extensions-for-chrome-2026-mmtm0dwx1nu</loc>
@@ -288,36 +279,6 @@
     <lastmod>2026-04-01</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-31</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/adblock-chrome-android-complete-guide-2026</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-31</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-31</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-31</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-31</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/unlocking-efficient-browsing-extensions-boosting-productivity-and-streamlining-your-online-experienc-mmtizywhjd8</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -426,12 +387,6 @@
     <lastmod>2026-03-26</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/chrome-vs-edge-vs-brave-ram-comparison</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-25</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/how-to-run-chrome-extensions-on-brave-android-a-step-by-step-guide-mmthozkhpgn</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -460,12 +415,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-03-26</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/monitor-chrome-ram-usage-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-24</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/unlocking-the-full-potential-of-kiwi-browser-a-comprehensive-guide-to-kiwi-browser-settings-for-exte-mmthoygydyi</loc>
@@ -504,12 +453,6 @@
     <lastmod>2026-03-26</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/fix-chrome-out-of-memory-errors</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-23</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/unlock-the-full-potential-of-kiwi-browser-discover-the-best-extensions-for-enhanced-browsing-mmthoxikuuo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -546,12 +489,6 @@
     <lastmod>2026-03-22</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/best-ram-saving-extensions-2026</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-22</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/how-to-use-desktop-extensions-on-phone-a-step-by-step-guide-mmthowug4hd</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -582,12 +519,6 @@
     <lastmod>2026-03-21</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/chrome-memory-saver-how-it-works</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-21</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/how-to-install-ublock-origin-on-android-chrome-a-step-by-step-guide-mmthowe8g0u</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -613,36 +544,6 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/how-to-block-youtube-ads-with-ghostery-extension-a-comprehensive-guide-mmb7lt82vtf</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/chrome-screenshot-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/ultimate-chrome-ram-memory-management-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/adblock-android-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/youtube-tools-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/privacy-security-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-03-20</lastmod>
@@ -1584,12 +1485,6 @@
     <lastmod>2026-03-16</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/how-to-fix-chrome-memory-2026</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-02-23</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1950,12 +1845,6 @@
     <lastmod>2026-03-16</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/unlocking-the-power-of-chrome-extensions-on-android-a-comprehensive-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-03</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/chrome-web-store-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -2256,12 +2145,6 @@
     <lastmod>2026-03-16</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-02-02</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -2442,34 +2325,10 @@
     <lastmod>2026-03-06</lastmod>
   </url>
   <url>
-    <loc>https://extensionto.com/blog/chrome-ram-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-01-20</lastmod>
-  </url>
-  <url>
     <loc>https://extensionto.com/blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-03-16</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/chrome-popup-blocker-master-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2025-05-20</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/internet-download-manager-extension</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2025-05-20</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/blog/adblocker-for-android-chrome</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2025-05-20</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/extension/quick-screenshot-lite</loc>

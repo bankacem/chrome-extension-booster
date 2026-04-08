@@ -42,9 +42,9 @@ function walkDir(dir: string, fileList: string[] = []): string[] {
 }
 
 async function rebuildIndex() {
-  console.log('🔄 Starting articles synchronization...');
+  console.log('Crawling articles directory for robust indexing...');
   const allMdFiles = walkDir(articlesDir);
-  console.log(`📄 Found ${allMdFiles.length} markdown files.`);
+  console.log(`Found ${allMdFiles.length} markdown files.`);
 
   // Use Map to deduplicate by ID
   const idMap = new Map<string, ArticleIndexItem>();
@@ -55,16 +55,15 @@ async function rebuildIndex() {
       const match = fileContent.match(/^---([\s\S]*?)---([\s\S]*)$/);
 
       if (!match) {
-        console.warn(`[Skip] No frontmatter: ${filePath}`);
+        console.warn(`[Index] Skipping file (no frontmatter): ${filePath}`);
         continue;
       }
 
       const metadata = yaml.load(match[1]) as Record<string, unknown>;
 
-      // ✅ Check article status - should be published
-      const status = String(metadata.status || '');
-      if (!status.toLowerCase().includes('publish')) {
-        console.log(`[Skip] Non-published article: ${metadata.slug} (Status: ${status})`);
+      // We only index published articles for the public site
+      if (metadata.status !== 'published') {
+        console.log(`[Index] Skipping non-published article: ${metadata.slug}`);
         continue;
       }
 
@@ -91,35 +90,37 @@ async function rebuildIndex() {
         updated_at: (metadata.updated_at || metadata.published_at || new Date().toISOString()) as string
       };
 
-      // ✅ Deduplication Logic by ID:
+      // Deduplication Logic by ID:
       const existingById = idMap.get(id);
       if (existingById) {
         const existingDate = new Date(existingById.updated_at).getTime();
         const newDate = new Date(newItem.updated_at).getTime();
         if (newDate > existingDate) {
           idMap.set(id, newItem);
-          console.log(`[Update] ID ${id} updated with newer content from ${normalizedSlug}`);
+          console.log(`[Deduplicate] Updating ID ${id} with newer content from ${normalizedSlug}`);
         } else {
-          console.log(`[Keep] ID ${id} already has newer or same content, skipping ${normalizedSlug}`);
+          console.log(`[Deduplicate] Keeping existing content for ID ${id}, skipping ${normalizedSlug}`);
         }
       } else {
         idMap.set(id, newItem);
       }
     } catch (e) {
-      console.error(`[Error] Processing ${filePath}:`, e);
+      console.error(`[Index] Error processing ${filePath}:`, e);
     }
   }
 
-  // ✅ Second pass to ensure slug uniqueness (important for SEO/Routing)
+  // Final check for slug uniqueness among the deduplicated IDs
+  const finalArticles: ArticleIndexItem[] = [];
   const slugMap = new Map<string, ArticleIndexItem>();
+
   for (const item of idMap.values()) {
     const existingBySlug = slugMap.get(item.slug);
     if (existingBySlug) {
+      console.warn(`[Collision] Slug ${item.slug} collision between ID ${existingBySlug.id} and ${item.id}`);
       const existingDate = new Date(existingBySlug.updated_at).getTime();
       const newDate = new Date(item.updated_at).getTime();
       if (newDate > existingDate) {
         slugMap.set(item.slug, item);
-        console.warn(`[Collision] Slug ${item.slug} collision, kept newer ID ${item.id}`);
       }
     } else {
       slugMap.set(item.slug, item);
@@ -128,19 +129,18 @@ async function rebuildIndex() {
 
   const articleIndex = Array.from(slugMap.values());
 
-  // ✅ Sort by published_at descending (newest first)
+  // Sort by published_at descending
   articleIndex.sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
 
   fs.writeFileSync(indexFile, JSON.stringify(articleIndex, null, 2));
-  console.log(`✅ Successfully rebuilt index with ${articleIndex.length} unique articles.`);
+  console.log(`Successfully rebuilt index with ${articleIndex.length} unique articles.`);
 
-  // ✅ Automatically update sitemap
-  console.log('🗺️  Updating sitemap...');
+  // Automatically update sitemap
+  console.log('Updating sitemap...');
   try {
     execSync('bun run sitemap', { stdio: 'inherit' });
-    console.log('✅ Sitemap updated successfully.');
   } catch (error) {
-    console.error('[Error] Updating sitemap:', error);
+    console.error('Error updating sitemap:', error);
   }
 }
 

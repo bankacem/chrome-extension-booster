@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 import * as dotenv from 'dotenv';
-import { getPartitionedPath, normalizeSlug } from '../src/utils/articlePath';
+import { getPartitionedPath } from '../src/utils/articlePath';
 
 // Load environment variables
 dotenv.config();
@@ -12,7 +12,7 @@ const supabaseUrl = process.env.VITE_SUPABASE_URL;
 const supabaseKey = process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
-  console.error("❌ Missing Supabase URL or Key. Ensure VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY are set in .env");
+  console.error("Missing Supabase URL or Key. Ensure VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY are set in .env");
   process.exit(1);
 }
 
@@ -39,7 +39,26 @@ interface ArticleRecord {
   read_time: number | null;
   created_at: string;
   updated_at: string;
-  canonicalPath?: string;
+}
+
+interface Frontmatter {
+  id: string;
+  title: string;
+  slug: string;
+  excerpt: string | null;
+  featured_image: string | null;
+  category: string | null;
+  tags: string[];
+  keywords: string[];
+  meta_description: string | null;
+  status: string;
+  published_at: string | null;
+  scheduled_at: string | null;
+  author: string | null;
+  views: number | null;
+  read_time: number | null;
+  created_at: string;
+  updated_at: string;
 }
 
 function walkDir(dir: string, fileList: string[] = []): string[] {
@@ -57,31 +76,31 @@ function walkDir(dir: string, fileList: string[] = []): string[] {
 }
 
 async function syncDbToMd() {
-  console.log('📡 Fetching articles from Supabase...');
+  console.log('Fetching articles from Supabase...');
   const { data, error } = await supabase
     .from('articles')
     .select('*');
 
   if (error) {
-    console.error('❌ Error fetching articles from Supabase:', error);
+    console.error('Error fetching articles from Supabase:', error);
     process.exit(1);
   }
 
   const articles = data as ArticleRecord[];
-  console.log(`✅ Found ${articles.length} articles in Supabase.`);
+  console.log(`Found ${articles.length} articles in Supabase.`);
 
   if (!fs.existsSync(articlesDir)) {
     fs.mkdirSync(articlesDir, { recursive: true });
   }
 
-  console.log('🔍 Crawling local articles to build ID map...');
+  console.log('Crawling local articles to build ID map...');
   const allMdFiles = walkDir(articlesDir);
   const idToFilePath = new Map<string, string>();
 
   for (const filePath of allMdFiles) {
     try {
       const fileContent = fs.readFileSync(filePath, 'utf-8');
-      const match = fileContent.match(/^---([\s\S]*?)---/);
+      const match = fileContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
       if (match) {
         const metadata = yaml.load(match[1]) as Record<string, unknown>;
         if (metadata && metadata.id) {
@@ -89,7 +108,7 @@ async function syncDbToMd() {
         }
       }
     } catch (e) {
-      console.warn(`⚠️ [Sync] Error reading frontmatter from ${filePath}:`, e);
+      console.warn(`[Sync] Error reading frontmatter from ${filePath}:`, e);
     }
   }
 
@@ -98,36 +117,31 @@ async function syncDbToMd() {
   let renamedCount = 0;
 
   for (const article of articles) {
-    const normalizedSlug = normalizeSlug(article.slug);
     const existingFilePath = idToFilePath.get(article.id);
-    const targetSubPath = getPartitionedPath(normalizedSlug);
+    const targetSubPath = getPartitionedPath(article.slug);
 
     const relativePath = targetSubPath.replace('/content/articles/', '');
     const targetFilePath = path.join(articlesDir, relativePath);
 
-    const frontmatter: any = {
+    const frontmatter: Frontmatter = {
       id: article.id,
       title: article.title,
-      slug: normalizedSlug,
-      excerpt: article.excerpt || article.meta_description,
+      slug: article.slug,
+      excerpt: article.excerpt,
       featured_image: article.featured_image,
-      category: article.category || 'Uncategorized',
+      category: article.category,
       tags: article.tags || [],
       keywords: article.keywords || [],
       meta_description: article.meta_description,
       status: article.status,
       published_at: article.published_at,
       scheduled_at: article.scheduled_at,
-      author: article.author || 'Admin',
-      views: article.views || 0,
-      read_time: article.read_time || 5,
+      author: article.author,
+      views: article.views,
+      read_time: article.read_time,
       created_at: article.created_at,
       updated_at: article.updated_at
     };
-
-    if (article.canonicalPath) {
-        frontmatter.canonicalPath = article.canonicalPath;
-    }
 
     const yamlStr = yaml.dump(frontmatter, {
         forceQuotes: false,
@@ -138,11 +152,8 @@ async function syncDbToMd() {
     const newFileContent = `---\n${yamlStr}---\n\n${article.content || ''}`;
 
     if (existingFilePath) {
-      const absoluteExisting = path.resolve(existingFilePath);
-      const absoluteTarget = path.resolve(targetFilePath);
-
-      if (absoluteExisting !== absoluteTarget) {
-        console.log(`🚚 [Rename] ${normalizedSlug}: ${existingFilePath} -> ${targetFilePath}`);
+      if (path.resolve(existingFilePath) !== path.resolve(targetFilePath)) {
+        console.log(`[Rename] ${article.slug}: ${existingFilePath} -> ${targetFilePath}`);
         if (fs.existsSync(existingFilePath)) {
           fs.unlinkSync(existingFilePath);
         }
@@ -157,7 +168,7 @@ async function syncDbToMd() {
       fs.writeFileSync(targetFilePath, newFileContent);
       updatedCount++;
     } else {
-      console.log(`✨ [Create] ${normalizedSlug}: ${targetFilePath}`);
+      console.log(`[Create] ${article.slug}: ${targetFilePath}`);
       const dir = path.dirname(targetFilePath);
       if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
@@ -167,11 +178,10 @@ async function syncDbToMd() {
     }
   }
 
-  console.log(`✨ Sync complete!`);
-  console.log(`📊 Statistics:`);
-  console.log(`   • Updated: ${updatedCount}`);
-  console.log(`   • Created: ${createdCount}`);
-  console.log(`   • Renamed: ${renamedCount}`);
+  console.log(`Sync complete!`);
+  console.log(`Updated/Created: ${updatedCount + createdCount}`);
+  console.log(`- New files: ${createdCount}`);
+  console.log(`- Renamed: ${renamedCount}`);
 }
 
 syncDbToMd().catch(console.error);

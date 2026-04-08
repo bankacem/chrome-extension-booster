@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 import { normalizeSlug } from "../src/utils/articlePath";
 
-// ✅ Use non-www version for URL consistency - matches Google indexed version
+// Use non-www version for URL consistency - matches Google indexed version
 const WEBSITE_URL = "https://extensionto.com";
 
 const supabaseUrl = process.env.VITE_SUPABASE_URL;
@@ -16,7 +16,6 @@ interface ArticleRecord {
   slug: string;
   published_at?: string;
   updated_at?: string;
-  status?: string;
 }
 
 interface PageInfo {
@@ -40,7 +39,7 @@ function escapeXml(unsafe: string): string {
 }
 
 async function generateSitemap() {
-  console.log("🗺️  Generating sitemap...");
+  console.log("Generating sitemap...");
 
   // 1. Static pages
   const staticPages: PageInfo[] = [
@@ -55,7 +54,7 @@ async function generateSitemap() {
   const indexPath = path.join(process.cwd(), "public", "content", "articles-index.json");
 
   if (fs.existsSync(indexPath)) {
-    console.log("📄 Using local articles-index.json for sitemap generation...");
+    console.log("Using local articles-index.json for sitemap generation...");
     const articles = JSON.parse(fs.readFileSync(indexPath, 'utf-8')) as ArticleRecord[];
     articlePages = articles.map((article) => {
       const slug = normalizeSlug(article.slug);
@@ -68,16 +67,15 @@ async function generateSitemap() {
         lastmod: dateStr ? new Date(dateStr).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
       };
     });
-    console.log(`✅ Loaded ${articlePages.length} articles from index.`);
   } else if (supabase) {
-    console.log("📦 Fetching articles from Supabase...");
+    console.log("Fetching articles from Supabase...");
     const { data: articles, error } = await supabase
       .from("articles")
       .select("slug, published_at")
       .eq("status", "published");
 
     if (error) {
-      console.error("❌ Error fetching articles:", error);
+      console.error("Error fetching articles:", error);
       process.exit(1);
     }
 
@@ -87,9 +85,8 @@ async function generateSitemap() {
       priority: "0.7",
       lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : undefined
     }));
-    console.log(`✅ Fetched ${articlePages.length} articles from Supabase.`);
   } else {
-    console.warn("⚠️  No articles index found and Supabase credentials missing. Skipping article pages.");
+    console.warn("No articles index found and Supabase credentials missing. Skipping article pages.");
   }
 
   // 3. Extensions
@@ -102,15 +99,16 @@ async function generateSitemap() {
   const allPages = [...staticPages, ...articlePages, ...extensionPages];
 
   // For SEO and scalability, if we exceed 45,000 URLs, we use a sitemap index.
+  // Sitemap protocol limit is 50,000 URLs or 50MB, but 45k is a safer buffer.
   const CHUNK_SIZE = 45000;
 
   if (allPages.length <= CHUNK_SIZE) {
     const sitemapContent = generateSitemapXml(allPages);
     const outputPath = path.join(process.cwd(), "public", "sitemap.xml");
     fs.writeFileSync(outputPath, sitemapContent);
-    console.log(`✅ Sitemap generated successfully: ${outputPath} (${allPages.length} URLs)`);
+    console.log(`Sitemap generated successfully at ${outputPath}`);
   } else {
-    console.log(`⚠️  Large volume detected (${allPages.length} URLs). Generating sitemap index...`);
+    console.log(`Large volume detected (${allPages.length} URLs). Generating sitemap index...`);
 
     const chunks: PageInfo[][] = [];
     for (let i = 0; i < allPages.length; i += CHUNK_SIZE) {
@@ -137,18 +135,15 @@ ${sitemapFiles.map(file => `  <sitemap>
 
     const indexPath = path.join(process.cwd(), "public", "sitemap.xml");
     fs.writeFileSync(indexPath, indexContent);
-    console.log(`✅ Sitemap index generated at ${indexPath}`);
+    console.log(`Sitemap index generated at ${indexPath}`);
   }
 
-  console.log(`📊 Total URLs processed: ${allPages.length}`);
+  console.log(`Total URLs processed: ${allPages.length}`);
 }
 
 function generateSitemapXml(pages: PageInfo[]): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages
   .map(
     (page) => `  <url>
