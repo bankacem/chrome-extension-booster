@@ -25,3 +25,4 @@ google-indexing-key.json
 *.njsproj
 *.sln
 *.sw?
+service-account.json
