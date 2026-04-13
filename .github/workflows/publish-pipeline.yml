@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add public/content/articles-index.json public/sitemap.xml public/content/articles/
+          git add public/content/articles-index.json public/content/articles/
           git diff --cached --quiet || git commit -m "chore: sync articles [$(date +'%Y-%m-%d %H:%M')]" && git push
       - name: Notify Google
         if: ${{ secrets.GOOGLE_INDEXING_KEY != '' }}
