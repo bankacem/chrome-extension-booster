@@ -1,57 +1,42 @@
 name: Publish Articles Pipeline
-
 on:
   push:
     branches: [main]
     paths:
       - 'public/content/articles-index.json'
       - 'public/content/articles/**'
-      - 'public/sitemap.xml'
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
-
 jobs:
   sync-and-notify:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - uses: actions/checkout@v4
-
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-
       - name: Install dependencies
         run: bun install
-
       - name: Sync DB to Markdown
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
         run: bun run sync-db-to-md
-
-      - name: Rebuild articles index and sitemap
+      - name: Rebuild index and sitemap
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
         run: bun run sync-articles
-
-      - name: Commit updated index and sitemap
+      - name: Commit changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add public/content/articles-index.json public/sitemap.xml public/content/articles/
-          if ! git diff --cached --exit-code; then
-            git commit -m "chore: sync articles and update sitemap [$(date +'%Y-%m-%d')]"
-            git push
-          else
-            echo "No changes to commit"
-          fi
-
-      - name: Notify Google Indexing API
+          git diff --cached --quiet || git commit -m "chore: sync articles [$(date +'%Y-%m-%d %H:%M')]" && git push
+      - name: Notify Google
         if: ${{ secrets.GOOGLE_INDEXING_KEY != '' }}
         env:
           GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
