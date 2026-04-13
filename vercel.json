@@ -1,59 +1,23 @@
 {
   "redirects": [
-    {
-      "source": "/blog/ultimate-chrome-ram-memory-management-guide",
-      "destination": "/blog/chrome-ram-guide",
-      "permanent": true
-    },
-    {
-      "source": "/blog/adblocker-for-android-chrome",
-      "destination": "/blog/adblock-android-guide",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker-top-features-for-data-protection",
-      "destination": "/blog/poper-blocker-review-best-popup-blocker-chrome-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlock-a-faster-and-more-private-browsing-experience-with-the-best-ad-blocker-extension-to-chrome-how-to-block-trackers-effectively",
-      "destination": "/blog/best-ad-blocker-extension-chrome-block-trackers-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/visual-content-a-compunlock-the-power-of-visual-content-to-chrome-screenshot-addonsrehensive-guide-to-chrome-screenshot-addons-annotating-editing-features",
-      "destination": "/blog/chrome-screenshot-addons-guide-annotating-editing",
-      "permanent": true
-    },
-    {
-      "source": "/blog/chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-tools-2025-troubleshooting-capture-errors",
-      "destination": "/blog/chrome-capture-tools-2025-troubleshooting-guide",
-      "permanent": true
-    },
-    {
-      "source": "/blog/visual-communication-best-annotated-screenshot-chrome-extensions-for-enhanced-productivity-best-high-quality-output-settings",
-      "destination": "/blog/best-annotated-screenshot-chrome-extensions-2026",
-      "permanent": true
-    }
+    {"source":"/blog/ultimate-chrome-ram-memory-management-guide","destination":"/blog/chrome-ram-guide","permanent":true},
+    {"source":"/blog/adblocker-for-android-chrome","destination":"/blog/adblock-android-guide","permanent":true},
+    {"source":"/blog/unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker-top-features-for-data-protection","destination":"/blog/poper-blocker-review-best-popup-blocker-chrome-2026","permanent":true},
+    {"source":"/blog/unlock-a-faster-and-more-private-browsing-experience-with-the-best-ad-blocker-extension-to-chrome-how-to-block-trackers-effectively","destination":"/blog/best-ad-blocker-extension-chrome-block-trackers-2026","permanent":true},
+    {"source":"/blog/visual-content-a-compunlock-the-power-of-visual-content-to-chrome-screenshot-addonsrehensive-guide-to-chrome-screenshot-addons-annotating-editing-features","destination":"/blog/chrome-screenshot-addons-guide-annotating-editing","permanent":true},
+    {"source":"/blog/chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-tools-2025-troubleshooting-capture-errors","destination":"/blog/chrome-capture-tools-2025-troubleshooting-guide","permanent":true},
+    {"source":"/blog/visual-communication-best-annotated-screenshot-chrome-extensions-for-enhanced-productivity-best-high-quality-output-settings","destination":"/blog/best-annotated-screenshot-chrome-extensions-2026","permanent":true}
   ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
+  "rewrites": [{"source":"/(.*)", "destination":"/index.html"}],
   "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
-      ]
-    },
-    {
-      "source": "/sitemap.xml",
-      "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=UTF-8" },
-        { "key": "Cache-Control", "value": "public, s-maxage=3600, stale-while-revalidate=600" }
-      ]
-    }
+    {"source":"/(.*)", "headers":[
+      {"key":"X-Frame-Options","value":"DENY"},
+      {"key":"X-Content-Type-Options","value":"nosniff"},
+      {"key":"Strict-Transport-Security","value":"max-age=63072000; includeSubDomains; preload"}
+    ]},
+    {"source":"/sitemap.xml","headers":[
+      {"key":"Content-Type","value":"application/xml; charset=UTF-8"},
+      {"key":"Cache-Control","value":"public, s-maxage=300, stale-while-revalidate=60"}
+    ]}
   ]
 }
