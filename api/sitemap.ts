@@ -100,25 +100,6 @@ export default async function handler(req: any, res: any) {
     console.error("Supabase fetch error:", err);
   }
 
-  if (articlePages.length === 0) {
-    const indexPath = path.join(process.cwd(), "public", "content", "articles-index.json");
-    if (fs.existsSync(indexPath)) {
-      const articles = JSON.parse(fs.readFileSync(indexPath, "utf-8")) as ArticleRecord[];
-      articlePages = articles.map((a) => {
-        const slug = normalizeSlug(a.slug);
-        const pillar = PILLAR_SLUGS[slug];
-        const dateStr = a.updated_at || a.published_at;
-        return {
-          url: `/blog/${slug}`,
-          changefreq: pillar ? pillar.changefreq : "monthly",
-          priority: pillar ? pillar.priority : "0.7",
-          lastmod: dateStr ? new Date(dateStr).toISOString().split("T")[0] : undefined,
-        };
-      });
-      console.log(`Fallback: ${articlePages.length} articles from local index`);
-    }
-  }
-
   const extensionPages: PageInfo[] = (extensions as Array<{ slug: string }>).map((e) => ({
     url: `/extension/${normalizeSlug(e.slug)}`,
     changefreq: "monthly",

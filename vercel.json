@@ -8,7 +8,10 @@
     {"source":"/blog/chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-tools-2025-troubleshooting-capture-errors","destination":"/blog/chrome-capture-tools-2025-troubleshooting-guide","permanent":true},
     {"source":"/blog/visual-communication-best-annotated-screenshot-chrome-extensions-for-enhanced-productivity-best-high-quality-output-settings","destination":"/blog/best-annotated-screenshot-chrome-extensions-2026","permanent":true}
   ],
-  "rewrites": [{"source":"/(.*)", "destination":"/index.html"}],
+  "rewrites": [
+    {"source": "/sitemap.xml", "destination": "/api/sitemap"},
+    {"source":"/(.*)", "destination":"/index.html"}
+  ],
   "headers": [
     {"source":"/(.*)", "headers":[
       {"key":"X-Frame-Options","value":"DENY"},
