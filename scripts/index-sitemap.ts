@@ -7,6 +7,7 @@ import 'dotenv/config';
 
 const SITEMAP_URL = 'https://extensionto.com/sitemap.xml';
 const LOCAL_SITEMAP_PATH = path.join(process.cwd(), 'public', 'sitemap.xml');
+const STATE_FILE_PATH = path.join(process.cwd(), 'scripts', 'indexed-urls.json');
 // ✅ FIX: 1 second delay between requests to avoid Google quota (200 req/day)
 const DELAY_MS = 1000;
 
@@ -19,6 +20,16 @@ async function indexSitemap() {
   if (!hasEnvKey && !hasFileKey) {
     console.error('[Sitemap-Indexing] Error: No Google Indexing credentials found. Please set GOOGLE_INDEXING_KEY or provide service-account.json.');
     process.exit(1);
+  }
+
+  // Load existing progress
+  let indexedUrls: string[] = [];
+  if (fs.existsSync(STATE_FILE_PATH)) {
+    try {
+      indexedUrls = JSON.parse(fs.readFileSync(STATE_FILE_PATH, 'utf-8'));
+    } catch (e) {
+      console.warn('[Sitemap-Indexing] Could not parse state file, starting fresh.');
+    }
   }
 
   let xml: string;
@@ -53,19 +64,33 @@ async function indexSitemap() {
   }
 
   const uniqueUrls = Array.from(new Set(urls));
-  console.log(`[Sitemap-Indexing] Found ${uniqueUrls.length} unique URLs to notify.`);
+  const pendingUrls = uniqueUrls.filter(u => !indexedUrls.includes(u));
+
+  console.log(`[Sitemap-Indexing] Found ${uniqueUrls.length} total URLs.`);
+  console.log(`[Sitemap-Indexing] ${indexedUrls.length} already indexed. ${pendingUrls.length} pending.`);
+
+  if (pendingUrls.length === 0) {
+    console.log('[Sitemap-Indexing] All URLs already indexed. Nothing to do.');
+    return;
+  }
 
   let successCount = 0;
   let failCount = 0;
   const failures: { url: string; error: string }[] = [];
 
-  for (let i = 0; i < uniqueUrls.length; i++) {
-    const url = uniqueUrls[i];
+  for (let i = 0; i < pendingUrls.length; i++) {
+    const url = pendingUrls[i];
     try {
-      console.log(`[${i + 1}/${uniqueUrls.length}] Notifying (URL_UPDATED): ${url}`);
+      console.log(`[${i + 1}/${pendingUrls.length}] Notifying (URL_UPDATED): ${url}`);
       // Explicitly use URL_UPDATED as requested
       await notifyIndexing(url, 'URL_UPDATED');
+
       successCount++;
+      indexedUrls.push(url);
+
+      // Save progress incrementally
+      fs.writeFileSync(STATE_FILE_PATH, JSON.stringify(indexedUrls, null, 2));
+
       // ✅ FIX: Mandatory 1s delay to respect Google's rate limits
       await new Promise(resolve => setTimeout(resolve, DELAY_MS));
     } catch (error) {
@@ -87,7 +112,7 @@ async function indexSitemap() {
   }
 
   console.log('\n--- Sitemap Indexing Summary ---');
-  console.log(`Submitted:  ${successCount} / ${uniqueUrls.length}`);
+  console.log(`Submitted:  ${successCount} / ${pendingUrls.length}`);
   console.log(`Failed:     ${failCount}`);
 
   if (failures.length > 0) {
