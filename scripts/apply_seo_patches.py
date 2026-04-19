@@ -3,7 +3,7 @@ import os
 
 def apply_patches():
     backup_file = "extensionto-backup-2026-03-07 (1).json"
-    output_file = "extensionto-backup-PATCHED.json"
+    output_file = "extensionto-backup-FINAL-SEO-FIXED.json"
     patch_files = [
         "patches-part1.json",
         "patches-part2.json",
@@ -53,9 +53,9 @@ def apply_patches():
             # else:
             #     print(f"Note: ID {article_id} not found in backup.")
 
-    print(f"Applied patches. Total processed: {total_patches_processed}, Matches found and updated: {total_matches_found}")
+    print(f"Applied patches. Total patches processed from files: {total_patches_processed}, Total article matches updated in backup: {total_matches_found}")
 
-    print(f"Saving patched data to {output_file}...")
+    print(f"Saving final SEO-fixed data to {output_file}...")
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
