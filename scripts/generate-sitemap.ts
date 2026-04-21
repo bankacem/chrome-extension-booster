@@ -1,18 +1,13 @@
-import { createClient } from "@supabase/supabase-js";
-import { extensions } from "../src/lib/extensionsData";
+import { extensions } from "../src/lib/extensionsData.js";
 import fs from "fs";
 import path from "path";
-import { normalizeSlug } from "../src/utils/articlePath";
+import { normalizeSlug } from "../src/utils/articlePath.js";
 
 // Use non-www version for URL consistency - matches Google indexed version
 const WEBSITE_URL = "https://extensionto.com";
 
-const supabaseUrl = process.env.VITE_SUPABASE_URL;
-const supabaseKey = process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
-
-const supabase = (supabaseUrl && supabaseKey) ? createClient(supabaseUrl, supabaseKey) : null;
-
 interface ArticleRecord {
+  title: string;
   slug: string;
   published_at?: string;
   updated_at?: string;
@@ -48,17 +43,22 @@ async function generateSitemap() {
     { url: "/privacy", changefreq: "yearly", priority: "0.3" },
     { url: "/terms", changefreq: "yearly", priority: "0.3" },
   ];
+  console.log(`Added ${staticPages.length} static pages.`);
 
-  // 2. Fetch articles (prefer local index data if exists)
+  // 2. Fetch articles (EXCLUSIVELY from local index)
   let articlePages: PageInfo[] = [];
   const indexPath = path.join(process.cwd(), "public", "content", "articles-index.json");
 
   if (fs.existsSync(indexPath)) {
-    console.log("Using local articles-index.json for sitemap generation...");
+    console.log("Using local articles-index.json as the SOLE source of truth for articles...");
     const articles = JSON.parse(fs.readFileSync(indexPath, 'utf-8')) as ArticleRecord[];
+
+    console.log("--- SAFETY LOG: Articles added to Sitemap ---");
     articlePages = articles.map((article) => {
       const slug = normalizeSlug(article.slug);
       const dateStr = article.updated_at || article.published_at;
+
+      console.log(`[Sitemap] Adding article: ${article.title} (/blog/${slug})`);
 
       return {
         url: `/blog/${slug}`,
@@ -67,26 +67,10 @@ async function generateSitemap() {
         lastmod: dateStr ? new Date(dateStr).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
       };
     });
-  } else if (supabase) {
-    console.log("Fetching articles from Supabase...");
-    const { data: articles, error } = await supabase
-      .from("articles")
-      .select("slug, published_at")
-      .eq("status", "published");
-
-    if (error) {
-      console.error("Error fetching articles:", error);
-      process.exit(1);
-    }
-
-    articlePages = (articles as ArticleRecord[]).map((article) => ({
-      url: `/blog/${normalizeSlug(article.slug)}`,
-      changefreq: "monthly",
-      priority: "0.7",
-      lastmod: article.published_at ? new Date(article.published_at).toISOString().split('T')[0] : undefined
-    }));
+    console.log("--- END OF SAFETY LOG ---");
   } else {
-    console.warn("No articles index found and Supabase credentials missing. Skipping article pages.");
+    console.error("CRITICAL: articles-index.json NOT FOUND. Articles will be missing from sitemap!");
+    process.exit(1);
   }
 
   // 3. Extensions
@@ -95,19 +79,33 @@ async function generateSitemap() {
     changefreq: "monthly",
     priority: "0.6",
   }));
+  console.log(`Added ${extensionPages.length} extensions.`);
 
   const allPages = [...staticPages, ...articlePages, ...extensionPages];
+  const expectedTotal = staticPages.length + articlePages.length + extensionPages.length;
+
+  console.log(`Total processed pages: ${allPages.length} (Expected: ${expectedTotal})`);
 
   // For SEO and scalability, if we exceed 45,000 URLs, we use a sitemap index.
-  // Sitemap protocol limit is 50,000 URLs or 50MB, but 45k is a safer buffer.
   const CHUNK_SIZE = 45000;
 
   if (allPages.length <= CHUNK_SIZE) {
     const sitemapContent = generateSitemapXml(allPages);
     const outputPath = path.join(process.cwd(), "public", "sitemap.xml");
     fs.writeFileSync(outputPath, sitemapContent);
+
+    // VERIFICATION
+    const urlCount = (sitemapContent.match(/<url>/g) || []).length;
+    console.log(`Verification: <url> tags in sitemap: ${urlCount}`);
+
+    if (urlCount !== expectedTotal) {
+       console.error(`CRITICAL: Sitemap URL count mismatch! Expected ${expectedTotal}, found ${urlCount}`);
+       process.exit(1);
+    }
+
     console.log(`Sitemap generated successfully at ${outputPath}`);
   } else {
+    // Large volume handling...
     console.log(`Large volume detected (${allPages.length} URLs). Generating sitemap index...`);
 
     const chunks: PageInfo[][] = [];
@@ -116,14 +114,21 @@ async function generateSitemap() {
     }
 
     const sitemapFiles: string[] = [];
+    let totalUrlTags = 0;
     chunks.forEach((chunk, index) => {
       const fileName = `sitemap-${index + 1}.xml`;
       const content = generateSitemapXml(chunk);
+      totalUrlTags += (content.match(/<url>/g) || []).length;
       const outputPath = path.join(process.cwd(), "public", fileName);
       fs.writeFileSync(outputPath, content);
       sitemapFiles.push(fileName);
       console.log(`Part sitemap generated: ${fileName}`);
     });
+
+    if (totalUrlTags !== expectedTotal) {
+       console.error(`CRITICAL: Split sitemaps URL count mismatch! Expected ${expectedTotal}, found ${totalUrlTags}`);
+       process.exit(1);
+    }
 
     const indexContent = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -138,7 +143,7 @@ ${sitemapFiles.map(file => `  <sitemap>
     console.log(`Sitemap index generated at ${indexPath}`);
   }
 
-  console.log(`Total URLs processed: ${allPages.length}`);
+  console.log(`Sitemap generation complete. Total URLs: ${allPages.length}`);
 }
 
 function generateSitemapXml(pages: PageInfo[]): string {
@@ -157,4 +162,7 @@ ${pages
 </urlset>`;
 }
 
-generateSitemap();
+generateSitemap().catch(err => {
+  console.error(err);
+  process.exit(1);
+});
