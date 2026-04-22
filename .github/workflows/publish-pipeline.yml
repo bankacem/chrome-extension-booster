@@ -31,11 +31,14 @@ jobs:
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
         run: bun run sync-db-to-md
 
-      - name: Rebuild index and sitemap
+      - name: Rebuild index
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
         run: bun run sync-articles
+
+      - name: Generate sitemap
+        run: bun run sitemap
 
       - name: Commit and push changes
         run: |
