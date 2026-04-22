@@ -104,6 +104,13 @@ async function generateSitemap() {
   }));
   console.log(`Added ${extensionPages.length} extensions.`);
 
+  // Sort articles by lastmod (newest first)
+  articlePages.sort((a, b) => {
+    const dateA = a.lastmod ? new Date(a.lastmod).getTime() : 0;
+    const dateB = b.lastmod ? new Date(b.lastmod).getTime() : 0;
+    return dateB - dateA;
+  });
+
   const allPages = [...staticPages, ...articlePages, ...extensionPages];
   const expectedTotal = staticPages.length + articlePages.length + extensionPages.length;
 
@@ -154,6 +161,7 @@ async function generateSitemap() {
     }
 
     const indexContent = `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapFiles.map(file => `  <sitemap>
     <loc>${WEBSITE_URL}/${file}</loc>
@@ -171,6 +179,7 @@ ${sitemapFiles.map(file => `  <sitemap>
 
 function generateSitemapXml(pages: PageInfo[]): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages
   .map(
