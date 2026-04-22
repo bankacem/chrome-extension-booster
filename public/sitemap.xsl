@@ -35,10 +35,32 @@
 						color: #666;
 						line-height: 1.6;
 					}
+					.stats {
+						display: flex;
+						gap: 20px;
+						margin-bottom: 2rem;
+						padding: 1rem;
+						background: #f1f3f4;
+						border-radius: 4px;
+					}
+					.stat-item {
+						display: flex;
+						flex-direction: column;
+					}
+					.stat-value {
+						font-size: 1.2rem;
+						font-weight: bold;
+						color: #1a73e8;
+					}
+					.stat-label {
+						font-size: 0.75rem;
+						text-transform: uppercase;
+						color: #5f6368;
+					}
 					table {
 						width: 100%;
 						border-collapse: collapse;
-						margin-top: 2rem;
+						margin-top: 1rem;
 					}
 					th {
 						text-align: left;
@@ -77,9 +99,12 @@
 					</p>
 
 					<xsl:if test="sitemap:sitemapindex">
-						<p>
-							Total Sitemaps in this index: <strong><xsl:value-of select="count(sitemap:sitemapindex/sitemap:sitemap)"/></strong>
-						</p>
+						<div class="stats">
+							<div class="stat-item">
+								<span class="stat-value"><xsl:value-of select="count(sitemap:sitemapindex/sitemap:sitemap)"/></span>
+								<span class="stat-label">Total Sitemaps</span>
+							</div>
+						</div>
 						<table>
 							<thead>
 								<tr>
@@ -108,9 +133,24 @@
 					</xsl:if>
 
 					<xsl:if test="sitemap:urlset">
-						<p>
-							Total URLs in this sitemap: <strong><xsl:value-of select="count(sitemap:urlset/sitemap:url)"/></strong>
-						</p>
+						<div class="stats">
+							<div class="stat-item">
+								<span class="stat-value"><xsl:value-of select="count(sitemap:urlset/sitemap:url)"/></span>
+								<span class="stat-label">Total URLs</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-value"><xsl:value-of select="count(sitemap:urlset/sitemap:url[contains(sitemap:loc, '/blog/')])"/></span>
+								<span class="stat-label">Articles</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-value"><xsl:value-of select="count(sitemap:urlset/sitemap:url[contains(sitemap:loc, '/extension/')])"/></span>
+								<span class="stat-label">Extensions</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-value"><xsl:value-of select="count(sitemap:urlset/sitemap:url[starts-with(sitemap:lastmod, '2026-04')])"/></span>
+								<span class="stat-label">April 2026 Updates</span>
+							</div>
+						</div>
 						<table>
 							<thead>
 								<tr>
