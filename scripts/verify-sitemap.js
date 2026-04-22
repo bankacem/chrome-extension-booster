@@ -1,22 +1,15 @@
 import fs from 'fs';
 import path from 'path';
-import sitemapHandler from '../api/sitemap.ts';
 
 async function verifySitemap() {
-  const req = {};
-  let sitemapXml = '';
-  const res = {
-    setHeader: () => {},
-    status: function(code) {
-      return this;
-    },
-    send: (data) => {
-      sitemapXml = data;
-    }
-  };
+  const sitemapPath = path.join(process.cwd(), 'public', 'sitemap.xml');
 
-  await sitemapHandler(req, res);
+  if (!fs.existsSync(sitemapPath)) {
+    console.error(`Verification FAILED: ${sitemapPath} does not exist.`);
+    process.exit(1);
+  }
 
+  const sitemapXml = fs.readFileSync(sitemapPath, 'utf-8');
   const cleanedUrls = JSON.parse(fs.readFileSync('scripts/cleaned-urls.json', 'utf-8'));
   const missingInSitemap = [];
 
@@ -27,19 +20,23 @@ async function verifySitemap() {
   }
 
   if (missingInSitemap.length === 0) {
-    console.log(`Verification SUCCESS: All ${cleanedUrls.length} URLs are present in the sitemap.`);
+    console.log(`Verification SUCCESS: All ${cleanedUrls.length} URLs are present in public/sitemap.xml.`);
   } else {
-    console.log(`Verification FAILED: ${missingInSitemap.length} URLs are missing from sitemap.`);
+    console.log(`Verification FAILED: ${missingInSitemap.length} URLs from cleaned-urls.json are missing from public/sitemap.xml.`);
     console.log(JSON.stringify(missingInSitemap, null, 2));
+    process.exit(1);
   }
 
-  // Basic XML validation (just check if it looks like XML)
+  // Basic XML validation
   if (sitemapXml.startsWith('<?xml') && sitemapXml.includes('</urlset>')) {
     console.log('Verification SUCCESS: XML format seems valid.');
   } else {
     console.log('Verification FAILED: XML format is invalid.');
-    // console.log(sitemapXml.substring(0, 100));
+    process.exit(1);
   }
 }
 
-verifySitemap().catch(console.error);
+verifySitemap().catch(err => {
+  console.error(err);
+  process.exit(1);
+});

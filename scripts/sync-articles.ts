@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 import { execSync } from 'child_process';
-import { normalizeSlug } from '../src/utils/articlePath';
+import { normalizeSlug } from '../src/utils/articlePath.js';
 
 interface ArticleIndexItem {
   id: string;
@@ -34,22 +34,37 @@ function walkDir(dir: string, fileList: string[] = []): string[] {
     const fullPath = path.join(dir, file);
     if (fs.statSync(fullPath).isDirectory()) {
       walkDir(fullPath, fileList);
-    } else if (fullPath.endsWith('.md')) {
+    } else {
+      if (!fullPath.endsWith('.md')) {
+        console.warn(`[Index] WARNING: File missing .md extension: ${fullPath}`);
+      }
       fileList.push(fullPath);
     }
   }
   return fileList;
 }
 
+const slugRegex = /^[a-z0-9-]+$/;
+
 async function rebuildIndex() {
   console.log('Crawling articles directory...');
-  const allMdFiles = walkDir(articlesDir);
-  console.log(`Found ${allMdFiles.length} markdown files.`);
+  const allFiles = walkDir(articlesDir);
+  console.log(`Found ${allFiles.length} files in articles directory.`);
 
   const idMap = new Map<string, ArticleIndexItem>();
+  let publishedOnDiskCount = 0;
 
-  for (const filePath of allMdFiles) {
+  for (const filePath of allFiles) {
     try {
+      if (!filePath.endsWith('.md')) {
+        console.warn(`[Index] Skipping file (not .md): ${filePath}`);
+        continue;
+      }
+
+      if (filePath.includes('//')) {
+         console.warn(`[Index] WARNING: Path contains double slashes: ${filePath}`);
+      }
+
       const fileContent = fs.readFileSync(filePath, 'utf-8');
       const match = fileContent.match(/^---([\s\S]*?)---([\s\S]*)$/);
 
@@ -59,14 +74,21 @@ async function rebuildIndex() {
       }
 
       const metadata = yaml.load(match[1]) as Record<string, unknown>;
-
-      // ✅ FIX: Accept both "published" and "Published" (case-insensitive)
       const status = String(metadata.status || '').toLowerCase();
+
       if (status !== 'published') {
+        console.log(`[Index] Skipping file (status: ${status}): ${filePath}`);
         continue; // skip drafts, scheduled, etc.
       }
 
-      const normalizedSlug = normalizeSlug(String(metadata.slug || ''));
+      publishedOnDiskCount++;
+
+      const rawSlug = String(metadata.slug || '');
+      if (!slugRegex.test(rawSlug)) {
+        console.warn(`[Index] WARNING: Slug contains non-standard characters: "${rawSlug}" in ${filePath}`);
+      }
+
+      const normalizedSlug = normalizeSlug(rawSlug);
       const id = String(metadata.id || normalizedSlug);
 
       const newItem: ArticleIndexItem = {
@@ -119,6 +141,19 @@ async function rebuildIndex() {
   }
 
   const articleIndex = Array.from(slugMap.values());
+
+  // FINAL VERIFICATION: Filesystem Truth vs Index
+  console.log(`Verification: Published on disk: ${publishedOnDiskCount}, Index size: ${articleIndex.length}`);
+  if (publishedOnDiskCount !== articleIndex.length) {
+    // If mismatch, it might be due to deduplication (same ID or same Slug)
+    console.warn(`[Index] Mismatch detected! Disk: ${publishedOnDiskCount} vs Index: ${articleIndex.length}`);
+    console.warn('[Index] This is likely due to duplicate IDs or Slugs in your markdown files.');
+    // In this "FORCE" mode, we might want to fail if the user expects an EXACT match,
+    // but usually deduplication is intended. However, the prompt says "If they don't match, the build MUST fail."
+    // Let's be strict as requested.
+    throw new Error(`CRITICAL: Published article count mismatch! Disk: ${publishedOnDiskCount}, Index: ${articleIndex.length}. Check for duplicates.`);
+  }
+
   // Sort by published_at descending (newest first)
   articleIndex.sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
 
@@ -132,7 +167,11 @@ async function rebuildIndex() {
     console.log('Sitemap updated.');
   } catch (error) {
     console.error('Error updating sitemap:', error);
+    process.exit(1);
   }
 }
 
-rebuildIndex().catch(console.error);
+rebuildIndex().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
