@@ -1,21 +1,16 @@
 name: Generate & Deploy Sitemap
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'public/content/articles-index.json'
-      - 'src/lib/extensionsData.ts'
   schedule:
-    - cron: '0 6 * * *'
-  workflow_dispatch:
+    - cron: '0 6 * * *'    # Backup run daily
+  workflow_dispatch:       # Manual trigger
 
 jobs:
   sitemap:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
 
@@ -35,9 +30,11 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add public/sitemap.xml
-          if ! git diff --cached --exit-code; then
+
+          if git diff --cached --quiet; then
+            echo "No changes to sitemap.xml"
+          else
             git commit -m "chore: update sitemap.xml [$(date +'%Y-%m-%d')]"
             git push
-          else
-            echo "No changes to sitemap.xml"
+            echo "✅ Sitemap updated and pushed."
           fi
