@@ -1,17 +1,11 @@
 import { extensions } from "../src/lib/extensionsData.js";
 import fs from "fs";
 import path from "path";
+import yaml from "js-yaml";
 import { normalizeSlug } from "../src/utils/articlePath.js";
 
 // Use non-www version for URL consistency - matches Google indexed version
 const WEBSITE_URL = "https://extensionto.com";
-
-interface ArticleRecord {
-  title: string;
-  slug: string;
-  published_at?: string;
-  updated_at?: string;
-}
 
 interface PageInfo {
   url: string;
@@ -33,6 +27,20 @@ function escapeXml(unsafe: string): string {
   });
 }
 
+function walkDir(dir: string, fileList: string[] = []): string[] {
+  if (!fs.existsSync(dir)) return fileList;
+  const files = fs.readdirSync(dir);
+  for (const file of files) {
+    const fullPath = path.join(dir, file);
+    if (fs.statSync(fullPath).isDirectory()) {
+      walkDir(fullPath, fileList);
+    } else if (fullPath.endsWith('.md')) {
+      fileList.push(fullPath);
+    }
+  }
+  return fileList;
+}
+
 async function generateSitemap() {
   console.log("Generating sitemap...");
 
@@ -45,31 +53,46 @@ async function generateSitemap() {
   ];
   console.log(`Added ${staticPages.length} static pages.`);
 
-  // 2. Fetch articles (EXCLUSIVELY from local index)
-  let articlePages: PageInfo[] = [];
-  const indexPath = path.join(process.cwd(), "public", "content", "articles-index.json");
+  // 2. Fetch articles (RECURSIVE FILE SCAN - FORCE)
+  const articlePages: PageInfo[] = [];
+  const articlesDir = path.join(process.cwd(), "public", "content", "articles");
 
-  if (fs.existsSync(indexPath)) {
-    console.log("Using local articles-index.json as the SOLE source of truth for articles...");
-    const articles = JSON.parse(fs.readFileSync(indexPath, 'utf-8')) as ArticleRecord[];
+  if (fs.existsSync(articlesDir)) {
+    console.log(`Scanning ${articlesDir} for articles...`);
+    const allFiles = walkDir(articlesDir);
+    console.log(`Found ${allFiles.length} markdown files on disk.`);
 
     console.log("--- SAFETY LOG: Articles added to Sitemap ---");
-    articlePages = articles.map((article) => {
-      const slug = normalizeSlug(article.slug);
-      const dateStr = article.updated_at || article.published_at;
+    for (const filePath of allFiles) {
+      try {
+        const fileContent = fs.readFileSync(filePath, 'utf-8');
+        const match = fileContent.match(/^---([\s\S]*?)---/);
 
-      console.log(`[Sitemap] Adding article: ${article.title} (/blog/${slug})`);
+        if (!match) {
+          console.warn(`[Sitemap] Skipping file (no frontmatter): ${filePath}`);
+          continue;
+        }
 
-      return {
-        url: `/blog/${slug}`,
-        changefreq: "monthly",
-        priority: "0.7",
-        lastmod: dateStr ? new Date(dateStr).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
-      };
-    });
+        const metadata = yaml.load(match[1]) as Record<string, unknown>;
+        const rawSlug = String(metadata.slug || '');
+        const slug = normalizeSlug(rawSlug);
+        const dateStr = metadata.updated_at || metadata.published_at;
+
+        console.log(`[Sitemap] Adding article: ${metadata.title || filePath} (/blog/${slug})`);
+
+        articlePages.push({
+          url: `/blog/${slug}`,
+          changefreq: "monthly",
+          priority: "0.7",
+          lastmod: dateStr ? new Date(dateStr).toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
+        });
+      } catch (e) {
+        console.error(`[Sitemap] Error processing ${filePath}:`, e);
+      }
+    }
     console.log("--- END OF SAFETY LOG ---");
   } else {
-    console.error("CRITICAL: articles-index.json NOT FOUND. Articles will be missing from sitemap!");
+    console.error("CRITICAL: articles directory NOT FOUND!");
     process.exit(1);
   }
 
