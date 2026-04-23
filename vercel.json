@@ -14,8 +14,8 @@
     {"source":"/blog/ultimate-chrome-ram-memory-management-guide","destination":"/blog/chrome-ram-guide","permanent":true},
     {"source":"/blog/adblocker-for-android-chrome","destination":"/blog/adblock-android-guide","permanent":true},
     {"source":"/blog/unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker-top-features-for-data-protection","destination":"/blog/unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker","permanent":true},
-    {"source":"/blog/visual-content-a-compunlock-the-power-of-visual-content-to-chrome-screenshot-addonsrehensive-guide-to-chrome-screenshot-addons-annotating-editing-features","destination":"/blog/unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a","permanent":true},
-    {"source":"/blog/chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-tools-2025-troubleshooting-capture-errors","destination":"/blog/unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a","permanent":true},
+    {"source":"/blog/visual-content-a-comprehensive-guide-to-chrome-screenshot-addons","destination":"/blog/unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a","permanent":true},
+    {"source":"/blog/chrome-capture-tools-2025-troubleshooting-capture-errors","destination":"/blog/unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a","permanent":true},
     {"source":"/blog/how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management-boosting-workflow-productivity","destination":"/blog/how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management","permanent":true},
     {"source":"/blog/the-best-chrome-plugins-for-media-downloading-in-2025-boosting-workflow-productivity","destination":"/blog/the-definitive-guide-to-the-best-chrome-plugins-for-media-downloading-in-2025-mliju7acduv","permanent":true},
 
@@ -53,7 +53,7 @@
   ],
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/api/sitemap" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/(?!assets/|api/|.*\\.[a-z0-9]+$).*", "destination": "/index.html" }
   ],
   "headers": [
     {"source":"/(.*)", "headers":[
