@@ -64,7 +64,7 @@ jobs:
         if: ${{ secrets.GOOGLE_INDEXING_KEY != '' }}
         env:
           GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
-        run: bun run index-sitemap
+        run: bun scripts/google-indexing.ts
 
       - name: Persist indexing state
         if: always()
