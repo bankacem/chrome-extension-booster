@@ -28,7 +28,7 @@ author: AI Generator
 views: 0
 read_time: 7
 created_at: "2026-01-20T18:39:05.240657+00:00"
-updated_at: "2026-03-16T14:43:37.341123+00:00"
+updated_at: "2026-04-23T12:28:46.041073+00:00"
 ---
 
 <h1>Saving Web Designs as Images in One Click: A Game-Changer for Designers and Developers</h1>
@@ -115,7 +115,7 @@ updated_at: "2026-03-16T14:43:37.341123+00:00"
 <h3>Step-by-Step Instructions</h3>
 
 <ol>
-  <li>Install <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
+  <li>Install <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a>.</li>
   <li>Click on the icon in your browser toolbar to open the extension.</li>
   <li>Choose to capture a full-page screenshot or a visible area screenshot.</li>
   <li>Save the screenshot as an image file.</li>
