@@ -18,7 +18,6 @@
     {"source":"/blog/chrome-capture-tools-2025-troubleshooting-capture-errors","destination":"/blog/unlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide","permanent":true},
     {"source":"/blog/how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management-boosting-workflow-productivity","destination":"/blog/how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management","permanent":true},
     {"source":"/blog/the-best-chrome-plugins-for-media-downloading-in-2025-boosting-workflow-productivity","destination":"/blog/the-definitive-guide-to-the-best-chrome-plugins-for-media-downloading-in-2025-mliju7acduv","permanent":true},
-
     {"source":"/blog/discover-the-best-fast-screenshot-extension-alternatives-for-seamless-browsing-fast-workflow-integration-tips","destination":"/blog/fast-screenshot-extension-alternatives-1","permanent":true},
     {"source":"/blog/chrome-extensions-on-android-comprehensive-feature-review","destination":"/blog/chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide","permanent":true},
     {"source":"/blog/pro-developer-chrome-extensions-comprehensive-feature-review","destination":"/blog/pro-developer-chrome-extensions","permanent":true},
@@ -56,14 +55,41 @@
     { "source": "/((?!api|assets|.*\\.).*)", "destination": "/index.html" }
   ],
   "headers": [
-    {"source":"/(.*)", "headers":[
-      {"key":"X-Frame-Options","value":"DENY"},
-      {"key":"X-Content-Type-Options","value":"nosniff"},
-      {"key":"Strict-Transport-Security","value":"max-age=63072000; includeSubDomains; preload"}
-    ]},
-    {"source":"/sitemap.xml","headers":[
-      {"key":"Content-Type","value":"application/xml; charset=UTF-8"},
-      {"key":"Cache-Control","value":"public, s-maxage=300, stale-while-revalidate=60"}
-    ]}
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" },
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/favicon.png",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/og-image.png",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=UTF-8" },
+        { "key": "Cache-Control", "value": "public, s-maxage=300, stale-while-revalidate=60" }
+      ]
+    }
   ]
 }
