@@ -24,7 +24,7 @@ author: AI Generator
 views: 0
 read_time: 5
 created_at: "2026-01-20T18:39:03.719331+00:00"
-updated_at: "2026-03-16T14:43:37.520563+00:00"
+updated_at: "2026-04-23T12:28:46.610566+00:00"
 ---
 
 <h1>How to Document Software Bugs with Screenshots: A Step-by-Step Guide</h1>
@@ -83,7 +83,7 @@ updated_at: "2026-03-16T14:43:37.520563+00:00"
 
 <p>Here's a step-by-step guide on how to <strong>document software bugs with screenshots</strong> using our <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> Chrome extension:</p>
 <ol>
-  <li>Install the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
+  <li>Install the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a>.</li>
   <li>Launch the application or website that is experiencing the bug.</li>
   <li>Click on the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> icon in the top right corner of the browser window.</li>
   <li>Select the screenshot option that best suits your needs (full-page or visible area).</li>

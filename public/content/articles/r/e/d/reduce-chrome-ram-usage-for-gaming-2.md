@@ -20,10 +20,10 @@ status: published
 published_at: "2026-01-22T16:29:00.353+00:00"
 scheduled_at: "2026-01-22T16:29:00+00:00"
 author: AI Generator
-views: 1
+views: 4
 read_time: 9
 created_at: "2026-01-20T14:42:02.082412+00:00"
-updated_at: "2026-03-16T14:43:39.358118+00:00"
+updated_at: "2026-04-21T10:56:52.353679+00:00"
 ---
 
 <h1>How to Reduce Chrome RAM Usage for Gaming: The Ultimate Lag-Free Guide</h1>
