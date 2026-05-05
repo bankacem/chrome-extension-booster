@@ -17,7 +17,7 @@ interface ArticleRequest {
   extensions?: string[];
   autoLinkExtension?: boolean;
   // AI Provider settings
-  aiProvider?: "lovable" | "openrouter" | "openai" | "gemini" | "groq";
+  aiProvider?: "lovable" | "openrouter" | "agentrouter" | "openai" | "gemini" | "groq";
   customApiKey?: string;
   model?: string;
 }
@@ -202,6 +202,20 @@ const providerConfigs: Record<string, ProviderConfig> = {
       "Content-Type": "application/json",
       "HTTP-Referer": "https://extensionto.com",
       "X-Title": "Extension SEO Generator",
+    }),
+    getBody: (model, messages) => ({
+      model,
+      messages,
+      temperature: 0.7,
+      max_tokens: 8000,
+    }),
+    extractContent: (data) => data.choices?.[0]?.message?.content || "",
+  },
+  agentrouter: {
+    url: "https://agentrouter.org/v1/chat/completions",
+    getHeaders: (apiKey) => ({
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
     }),
     getBody: (model, messages) => ({
       model,
