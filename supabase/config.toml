@@ -8,3 +8,6 @@ verify_jwt = false
 
 [functions.sitemap]
 verify_jwt = false
+
+[functions.seo-agent-pro]
+verify_jwt = false
