@@ -423,23 +423,24 @@ const AIGenerator = () => {
       ));
 
       try {
-        const response = await supabase.functions.invoke('generate-article', {
-          body: {
-            keyword: article.keyword,
-            category,
-            language,
-            writingStyle,
-            includeTableOfContents,
-            includeFAQSection,
-            includeImagePlaceholders,
-            includeComparisonTable,
-            extensions,
-            // AI Provider settings
-            aiProvider,
-            customApiKey: aiProvider !== "lovable" ? customApiKey : undefined,
-            model: selectedModel
-          }
-        });
+        const fnName = useAgentPro ? 'seo-agent-pro' : 'generate-article';
+        const fnBody = useAgentPro
+          ? { keyword: article.keyword, niche: category, model: selectedModel, category }
+          : {
+              keyword: article.keyword,
+              category,
+              language,
+              writingStyle,
+              includeTableOfContents,
+              includeFAQSection,
+              includeImagePlaceholders,
+              includeComparisonTable,
+              extensions,
+              aiProvider,
+              customApiKey: aiProvider !== "lovable" ? customApiKey : undefined,
+              model: selectedModel
+            };
+        const response = await supabase.functions.invoke(fnName, { body: fnBody });
 
         if (response.error) {
           throw new Error(response.error.message);
