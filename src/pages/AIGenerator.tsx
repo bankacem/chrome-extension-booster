@@ -148,7 +148,7 @@ const DEFAULT_TEMPLATES: ArticleTemplate[] = [
 ];
 
 // AI Provider types
-type AIProvider = "lovable" | "openrouter" | "openai" | "gemini" | "groq";
+type AIProvider = "lovable" | "openrouter" | "agentrouter" | "openai" | "gemini" | "groq";
 
 interface AIProviderConfig {
   id: AIProvider;
