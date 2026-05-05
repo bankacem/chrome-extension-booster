@@ -250,6 +250,7 @@ const AIGenerator = () => {
   const [authorName, setAuthorName] = useState(() => localStorage.getItem('ai-generator-author') || "Admin");
   const [featuredImage, setFeaturedImage] = useState("");
   const [featuredVideo, setFeaturedVideo] = useState("");
+  const [useAgentPro, setUseAgentPro] = useState(() => localStorage.getItem('ai-generator-agent-pro') === 'true');
 
   // Save provider settings to localStorage
   useEffect(() => {
@@ -257,7 +258,8 @@ const AIGenerator = () => {
     localStorage.setItem('ai-generator-apikey', customApiKey);
     localStorage.setItem('ai-generator-model', selectedModel);
     localStorage.setItem('ai-generator-author', authorName);
-  }, [aiProvider, customApiKey, selectedModel, authorName]);
+    localStorage.setItem('ai-generator-agent-pro', String(useAgentPro));
+  }, [aiProvider, customApiKey, selectedModel, authorName, useAgentPro]);
 
   // Reset model when provider changes
   useEffect(() => {
