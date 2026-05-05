@@ -77,6 +77,51 @@ export type Database = {
         }
         Relationships: []
       }
+      seo_agent_memory: {
+        Row: {
+          cluster: Json | null
+          competitor_data: Json | null
+          created_at: string
+          ctr: Json | null
+          id: string
+          keyword: string
+          model: string | null
+          niche: string | null
+          strategy: Json | null
+          successful_patterns: Json | null
+          user_id: string | null
+          word_count: number | null
+        }
+        Insert: {
+          cluster?: Json | null
+          competitor_data?: Json | null
+          created_at?: string
+          ctr?: Json | null
+          id?: string
+          keyword: string
+          model?: string | null
+          niche?: string | null
+          strategy?: Json | null
+          successful_patterns?: Json | null
+          user_id?: string | null
+          word_count?: number | null
+        }
+        Update: {
+          cluster?: Json | null
+          competitor_data?: Json | null
+          created_at?: string
+          ctr?: Json | null
+          id?: string
+          keyword?: string
+          model?: string | null
+          niche?: string | null
+          strategy?: Json | null
+          successful_patterns?: Json | null
+          user_id?: string | null
+          word_count?: number | null
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string

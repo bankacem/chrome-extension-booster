@@ -250,6 +250,7 @@ const AIGenerator = () => {
   const [authorName, setAuthorName] = useState(() => localStorage.getItem('ai-generator-author') || "Admin");
   const [featuredImage, setFeaturedImage] = useState("");
   const [featuredVideo, setFeaturedVideo] = useState("");
+  const [useAgentPro, setUseAgentPro] = useState(() => localStorage.getItem('ai-generator-agent-pro') === 'true');
 
   // Save provider settings to localStorage
   useEffect(() => {
@@ -257,7 +258,8 @@ const AIGenerator = () => {
     localStorage.setItem('ai-generator-apikey', customApiKey);
     localStorage.setItem('ai-generator-model', selectedModel);
     localStorage.setItem('ai-generator-author', authorName);
-  }, [aiProvider, customApiKey, selectedModel, authorName]);
+    localStorage.setItem('ai-generator-agent-pro', String(useAgentPro));
+  }, [aiProvider, customApiKey, selectedModel, authorName, useAgentPro]);
 
   // Reset model when provider changes
   useEffect(() => {
@@ -421,23 +423,24 @@ const AIGenerator = () => {
       ));
 
       try {
-        const response = await supabase.functions.invoke('generate-article', {
-          body: {
-            keyword: article.keyword,
-            category,
-            language,
-            writingStyle,
-            includeTableOfContents,
-            includeFAQSection,
-            includeImagePlaceholders,
-            includeComparisonTable,
-            extensions,
-            // AI Provider settings
-            aiProvider,
-            customApiKey: aiProvider !== "lovable" ? customApiKey : undefined,
-            model: selectedModel
-          }
-        });
+        const fnName = useAgentPro ? 'seo-agent-pro' : 'generate-article';
+        const fnBody = useAgentPro
+          ? { keyword: article.keyword, niche: category, model: selectedModel, category }
+          : {
+              keyword: article.keyword,
+              category,
+              language,
+              writingStyle,
+              includeTableOfContents,
+              includeFAQSection,
+              includeImagePlaceholders,
+              includeComparisonTable,
+              extensions,
+              aiProvider,
+              customApiKey: aiProvider !== "lovable" ? customApiKey : undefined,
+              model: selectedModel
+            };
+        const response = await supabase.functions.invoke(fnName, { body: fnBody });
 
         if (response.error) {
           throw new Error(response.error.message);
@@ -882,6 +885,32 @@ const AIGenerator = () => {
                     <Key className="h-3 w-3" />
                     <span>أدخل مفتاح API لاستخدام {AI_PROVIDERS.find(p => p.id === aiProvider)?.name}</span>
                   </div>
+                )}
+              </CardContent>
+            </Card>
+
+            {/* SEO Agent Pro toggle — multi-step learning pipeline */}
+            <Card className="border-primary/40">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Sparkles className="h-5 w-5 text-primary" />
+                  SEO Agent Pro
+                </CardTitle>
+                <CardDescription>
+                  Multi-step pipeline (Competitor analysis → Strategy → Article → CTR) with persistent learning memory.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center justify-between">
+                  <Label htmlFor="agent-pro" className="cursor-pointer">
+                    Use SEO Agent Pro pipeline
+                  </Label>
+                  <Switch id="agent-pro" checked={useAgentPro} onCheckedChange={setUseAgentPro} />
+                </div>
+                {useAgentPro && (
+                  <p className="text-xs text-muted-foreground mt-2">
+                    ✓ Each article runs the full agent pipeline and feeds the memory store for continuous improvement.
+                  </p>
                 )}
               </CardContent>
             </Card>
