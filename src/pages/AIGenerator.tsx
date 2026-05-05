@@ -186,6 +186,24 @@ const AI_PROVIDERS: AIProviderConfig[] = [
     ]
   },
   {
+    id: "agentrouter",
+    name: "AgentRouter",
+    description: "Use your AgentRouter API key (agentrouter.org)",
+    placeholder: "sk-...",
+    models: [
+      { value: "gpt-5", label: "GPT-5" },
+      { value: "gpt-5-codex", label: "GPT-5 Codex" },
+      { value: "claude-sonnet-4", label: "Claude Sonnet 4" },
+      { value: "claude-opus-4", label: "Claude Opus 4" },
+      { value: "gemini-2.5-pro", label: "Gemini 2.5 Pro" },
+      { value: "gemini-2.5-flash", label: "Gemini 2.5 Flash" },
+      { value: "deepseek-chat", label: "DeepSeek Chat" },
+      { value: "qwen-max", label: "Qwen Max" },
+      { value: "moonshot-v1-128k", label: "Moonshot 128K" },
+      { value: "grok-4", label: "Grok 4" },
+    ]
+  },
+  {
     id: "openai",
     name: "OpenAI",
     description: "Use your OpenAI API key",
