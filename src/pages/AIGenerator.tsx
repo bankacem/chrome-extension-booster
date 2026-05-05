@@ -889,6 +889,32 @@ const AIGenerator = () => {
               </CardContent>
             </Card>
 
+            {/* SEO Agent Pro toggle — multi-step learning pipeline */}
+            <Card className="border-primary/40">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Sparkles className="h-5 w-5 text-primary" />
+                  SEO Agent Pro
+                </CardTitle>
+                <CardDescription>
+                  Multi-step pipeline (Competitor analysis → Strategy → Article → CTR) with persistent learning memory.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center justify-between">
+                  <Label htmlFor="agent-pro" className="cursor-pointer">
+                    Use SEO Agent Pro pipeline
+                  </Label>
+                  <Switch id="agent-pro" checked={useAgentPro} onCheckedChange={setUseAgentPro} />
+                </div>
+                {useAgentPro && (
+                  <p className="text-xs text-muted-foreground mt-2">
+                    ✓ Each article runs the full agent pipeline and feeds the memory store for continuous improvement.
+                  </p>
+                )}
+              </CardContent>
+            </Card>
+
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {/* Article Settings */}
               <Card>
