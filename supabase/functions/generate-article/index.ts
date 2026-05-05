@@ -211,6 +211,20 @@ const providerConfigs: Record<string, ProviderConfig> = {
     }),
     extractContent: (data) => data.choices?.[0]?.message?.content || "",
   },
+  agentrouter: {
+    url: "https://agentrouter.org/v1/chat/completions",
+    getHeaders: (apiKey) => ({
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    }),
+    getBody: (model, messages) => ({
+      model,
+      messages,
+      temperature: 0.7,
+      max_tokens: 8000,
+    }),
+    extractContent: (data) => data.choices?.[0]?.message?.content || "",
+  },
   openai: {
     url: "https://api.openai.com/v1/chat/completions",
     getHeaders: (apiKey) => ({
