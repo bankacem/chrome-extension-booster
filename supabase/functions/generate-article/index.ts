@@ -17,7 +17,7 @@ interface ArticleRequest {
   extensions?: string[];
   autoLinkExtension?: boolean;
   // AI Provider settings
-  aiProvider?: "lovable" | "openrouter" | "openai" | "gemini" | "groq";
+  aiProvider?: "lovable" | "openrouter" | "agentrouter" | "openai" | "gemini" | "groq";
   customApiKey?: string;
   model?: string;
 }
