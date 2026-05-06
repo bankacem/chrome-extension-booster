@@ -557,9 +557,16 @@ const AIGenerator = () => {
           publishedAt = new Date().toISOString();
         }
 
-        // Generate unique slug with timestamp to avoid duplicates
-        const uniqueSlug = `${article.slug}-${Date.now().toString(36)}${Math.random().toString(36).substring(2, 5)}`;
-        
+        // Build a clean SEO slug; only add a tiny suffix on actual collision.
+        const { cleanSlug, withCollisionSuffix } = await import("@/utils/slug");
+        let uniqueSlug = cleanSlug(article.title || article.slug);
+        const { data: clash } = await supabase
+          .from("articles")
+          .select("id")
+          .eq("slug", uniqueSlug)
+          .maybeSingle();
+        if (clash) uniqueSlug = withCollisionSuffix(uniqueSlug);
+
         const { error } = await supabase.from("articles").insert({
           title: article.title,
           content: processedContent,
@@ -577,6 +584,26 @@ const AIGenerator = () => {
         });
 
         if (error) throw error;
+
+        // Auto-publish to GitHub as static Markdown so the article appears
+        // immediately on /blog without manual sync.
+        if (status === "published") {
+          supabase.functions.invoke("publish-to-github", {
+            body: {
+              slug: uniqueSlug,
+              title: article.title,
+              content: processedContent,
+              excerpt: article.excerpt,
+              meta_description: article.meta_description,
+              category: article.category,
+              keywords: article.keywords,
+              featured_image: featuredImage || null,
+              author: authorName || "Admin",
+              published_at: publishedAt,
+              read_time: article.readTime,
+            },
+          }).catch((e) => console.warn("publish-to-github failed:", e));
+        }
 
         setGeneratedArticles(prev => prev.map(a => 
           a.id === article.id ? { ...a, status: 'saved' as const } : a

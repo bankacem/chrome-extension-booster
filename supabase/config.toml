@@ -11,3 +11,6 @@ verify_jwt = false
 
 [functions.seo-agent-pro]
 verify_jwt = false
+
+[functions.publish-to-github]
+verify_jwt = false
