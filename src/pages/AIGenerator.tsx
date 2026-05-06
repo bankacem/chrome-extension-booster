@@ -585,6 +585,26 @@ const AIGenerator = () => {
 
         if (error) throw error;
 
+        // Auto-publish to GitHub as static Markdown so the article appears
+        // immediately on /blog without manual sync.
+        if (status === "published") {
+          supabase.functions.invoke("publish-to-github", {
+            body: {
+              slug: uniqueSlug,
+              title: article.title,
+              content: processedContent,
+              excerpt: article.excerpt,
+              meta_description: article.meta_description,
+              category: article.category,
+              keywords: article.keywords,
+              featured_image: featuredImage || null,
+              author: authorName || "Admin",
+              published_at: publishedAt,
+              read_time: article.readTime,
+            },
+          }).catch((e) => console.warn("publish-to-github failed:", e));
+        }
+
         setGeneratedArticles(prev => prev.map(a => 
           a.id === article.id ? { ...a, status: 'saved' as const } : a
         ));
