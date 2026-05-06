@@ -557,9 +557,16 @@ const AIGenerator = () => {
           publishedAt = new Date().toISOString();
         }
 
-        // Generate unique slug with timestamp to avoid duplicates
-        const uniqueSlug = `${article.slug}-${Date.now().toString(36)}${Math.random().toString(36).substring(2, 5)}`;
-        
+        // Build a clean SEO slug; only add a tiny suffix on actual collision.
+        const { cleanSlug, withCollisionSuffix } = await import("@/utils/slug");
+        let uniqueSlug = cleanSlug(article.title || article.slug);
+        const { data: clash } = await supabase
+          .from("articles")
+          .select("id")
+          .eq("slug", uniqueSlug)
+          .maybeSingle();
+        if (clash) uniqueSlug = withCollisionSuffix(uniqueSlug);
+
         const { error } = await supabase.from("articles").insert({
           title: article.title,
           content: processedContent,
