@@ -1,0 +1,1 @@
+# Nuclear Overhaul Plan — Blog, Slugs, Sitemap & Generation\n\n## Important trade-off you need to confirm first\n\nTwo things in your request conflict with how the project currently works:\n\n1. **Removing the random `mm…` suffix from every slug.**\n   The batch generator deliberately appends a short unique ID so that two articles with the same keyword (e.g. \
