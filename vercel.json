@@ -370,7 +370,7 @@
       "headers": [
         {
           "key": "Content-Type",
-          "value": "text/xml; charset=UTF-8"
+          "value": "application/xml; charset=UTF-8"
         },
         {
           "key": "Cache-Control",
@@ -383,7 +383,7 @@
       "headers": [
         {
           "key": "Content-Type",
-          "value": "text/xml; charset=UTF-8"
+          "value": "text/xsl; charset=UTF-8"
         },
         {
           "key": "Cache-Control",

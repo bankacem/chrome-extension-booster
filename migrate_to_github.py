@@ -176,7 +176,7 @@ def generate_sitemap(all_articles):
                 "securakey-pro","offline-reader-pro","cookie-banner-blocker"]:
         urls.append(f'  <url>\n    <loc>{WEBSITE_URL}/extension/{ext}</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>')
 
-    return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>"
+    return '<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>"
 
 
 def main():

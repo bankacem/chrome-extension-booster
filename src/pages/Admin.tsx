@@ -765,6 +765,7 @@ const Admin = () => {
     const publishedArticles = articles.filter((a) => a.status === "published");
     
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>${WEBSITE_URL}/</loc>
