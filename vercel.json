@@ -1,4 +1,6 @@
 {
+  "buildCommand": "npm run sitemap && npm run build",
+  "outputDirectory": "dist",
   "redirects": [
     {
       "source": "/:path*",
@@ -304,7 +306,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!api|assets|.*\\.).*)",
+      "source": "/((?!api)(?:[^.]*(?:/[^.]*)*))$",
       "destination": "/index.html"
     }
   ],
@@ -373,6 +375,10 @@
           "value": "application/xml; charset=UTF-8"
         },
         {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
           "key": "Cache-Control",
           "value": "public, s-maxage=300, stale-while-revalidate=60"
         }
@@ -384,6 +390,23 @@
         {
           "key": "Content-Type",
           "value": "text/xsl; charset=UTF-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://extensionto.com"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=UTF-8"
         },
         {
           "key": "Cache-Control",
