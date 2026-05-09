@@ -1,6 +1,4 @@
 {
-  "buildCommand": "npm run sitemap && npm run build",
-  "outputDirectory": "dist",
   "redirects": [
     {
       "source": "/:path*",
@@ -306,7 +304,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!api)(?:[^.]*(?:/[^.]*)*))$",
+      "source": "/((?!.*\\.).*)",
       "destination": "/index.html"
     }
   ],
@@ -375,10 +373,6 @@
           "value": "application/xml; charset=UTF-8"
         },
         {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
           "key": "Cache-Control",
           "value": "public, s-maxage=300, stale-while-revalidate=60"
         }
@@ -392,12 +386,12 @@
           "value": "text/xsl; charset=UTF-8"
         },
         {
-          "key": "Access-Control-Allow-Origin",
-          "value": "https://extensionto.com"
-        },
-        {
           "key": "Cache-Control",
           "value": "public, max-age=86400"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://extensionto.com"
         }
       ]
     },
@@ -414,5 +408,7 @@
         }
       ]
     }
-  ]
+  ],
+  "buildCommand": "bun run sitemap && bun run build",
+  "outputDirectory": "dist"
 }
