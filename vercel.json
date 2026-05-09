@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run sitemap && npm run build",
+  "buildCommand": "bun run sitemap && bun run build",
   "outputDirectory": "dist",
   "redirects": [
     {
@@ -306,8 +306,14 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!api)(?:[^.]*(?:/[^.]*)*))$",
-      "destination": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html",
+      "missing": [
+        {
+          "type": "file",
+          "value": "/$1"
+        }
+      ]
     }
   ],
   "headers": [
