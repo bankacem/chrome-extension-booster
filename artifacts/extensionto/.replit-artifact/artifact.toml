@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "ExtensionTo"
+version = "1.0.0"
+id = "artifacts/extensionto"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21194
+
+[services.development]
+run = "pnpm --filter @workspace/extensionto run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/extensionto", "run", "build" ]
+publicDir = "artifacts/extensionto/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21194"
+BASE_PATH = "/"
