@@ -38,7 +38,7 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
+import { supabase, isDevBypass } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
 interface GeneratedArticle {
@@ -342,7 +342,7 @@ const AIGenerator = () => {
   }, []);
 
   const checkAuth = async () => {
-    if (!isSupabaseConfigured) {
+    if (isDevBypass) {
       setIsAuthenticated(true);
       setLoading(false);
       return;

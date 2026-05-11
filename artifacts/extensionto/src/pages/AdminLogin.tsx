@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
+import { supabase, isDevBypass } from "@/integrations/supabase/client";
 import Navbar from "@/components/Navbar";
 import SEO from "@/components/SEO";
 
@@ -27,7 +27,7 @@ const AdminLogin = () => {
     }
 
     // Dev-bypass: skip Supabase checks when credentials are not configured
-    if (!isSupabaseConfigured) return;
+    if (isDevBypass) return;
 
     // Check if already authenticated
     const checkAuth = async () => {
@@ -77,7 +77,7 @@ const AdminLogin = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!isSupabaseConfigured) {
+    if (isDevBypass) {
       navigate("/settings/manage");
       return;
     }
@@ -147,7 +147,7 @@ const AdminLogin = () => {
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!isSupabaseConfigured) {
+    if (isDevBypass) {
       navigate("/settings/manage");
       return;
     }
@@ -236,7 +236,7 @@ const AdminLogin = () => {
               </p>
             </div>
 
-            {!isSupabaseConfigured && (
+            {isDevBypass && (
               <div className="mb-6 rounded-lg border border-yellow-500/30 bg-yellow-500/10 p-4 text-center">
                 <p className="mb-1 text-sm font-medium text-yellow-400">Dev Mode — No Auth Credentials</p>
                 <p className="mb-3 text-xs text-muted-foreground">
@@ -250,7 +250,7 @@ const AdminLogin = () => {
               </div>
             )}
 
-            <form onSubmit={isSignUp ? handleSignUp : handleLogin} className={`space-y-6 ${!isSupabaseConfigured ? "opacity-40 pointer-events-none select-none" : ""}`}>
+            <form onSubmit={isSignUp ? handleSignUp : handleLogin} className={`space-y-6 ${isDevBypass ? "opacity-40 pointer-events-none select-none" : ""}`}>
               <div className="space-y-2">
                 <Label htmlFor="email">Email Address</Label>
                 <div className="relative">

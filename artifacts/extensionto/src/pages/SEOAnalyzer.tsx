@@ -12,7 +12,7 @@ import {
   Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
+import { supabase, isDevBypass } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { analyzeSEO, type SEOAnalysis } from "@/lib/seoAnalyzer";
 import SEO from "@/components/SEO";
@@ -50,7 +50,7 @@ const SEOAnalyzer = () => {
 
   useEffect(() => {
     const checkAuth = async () => {
-      if (!isSupabaseConfigured) {
+      if (isDevBypass) {
         fetchArticle();
         return;
       }
@@ -83,7 +83,7 @@ const SEOAnalyzer = () => {
     if (!slug) return;
     setLoading(true);
 
-    if (!isSupabaseConfigured) {
+    if (isDevBypass) {
       // Dev-bypass: find article in markdown index, then fetch its content
       try {
         const idxRes = await fetch("/content/articles-index.json");

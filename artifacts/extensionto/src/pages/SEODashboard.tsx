@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
+import { supabase, isDevBypass } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import SEO from "@/components/SEO";
 import KeywordMapper from "@/components/seo-dashboard/KeywordMapper";
@@ -46,7 +46,7 @@ const SEODashboard = () => {
 
   useEffect(() => {
     const checkAuth = async () => {
-      if (!isSupabaseConfigured) {
+      if (isDevBypass) {
         fetchArticles();
         return;
       }
