@@ -12,7 +12,7 @@ import {
   Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { analyzeSEO, type SEOAnalysis } from "@/lib/seoAnalyzer";
 import SEO from "@/components/SEO";
@@ -50,6 +50,11 @@ const SEOAnalyzer = () => {
 
   useEffect(() => {
     const checkAuth = async () => {
+      if (!isSupabaseConfigured) {
+        fetchArticle();
+        return;
+      }
+
       const { data: { session } } = await supabase.auth.getSession();
       if (!session) {
         navigate("/settings");
@@ -70,14 +75,56 @@ const SEOAnalyzer = () => {
 
       fetchArticle();
     };
-    
+
     checkAuth();
   }, [slug, navigate]);
 
   const fetchArticle = async () => {
     if (!slug) return;
-    
     setLoading(true);
+
+    if (!isSupabaseConfigured) {
+      // Dev-bypass: find article in markdown index, then fetch its content
+      try {
+        const idxRes = await fetch("/content/articles-index.json");
+        const index = await idxRes.json();
+        const entry = index.find((a: any) => a.slug === slug);
+        if (!entry) throw new Error("Not found in index");
+
+        let content = "";
+        if (entry.filePath) {
+          const mdRes = await fetch(entry.filePath);
+          if (mdRes.ok) {
+            const raw = await mdRes.text();
+            // Strip frontmatter
+            content = raw.replace(/^---[\s\S]*?---\n?/, "").trim();
+          }
+        }
+
+        const article: Article = {
+          id: entry.id || slug,
+          title: entry.title || "",
+          slug: entry.slug || slug,
+          content,
+          excerpt: entry.excerpt || null,
+          featured_image: entry.featured_image || null,
+          category: entry.category || null,
+          tags: entry.tags || null,
+          keywords: entry.keywords || null,
+          meta_description: entry.description || null,
+          status: "published",
+        };
+        setArticle(article);
+        runAnalysis(article);
+      } catch {
+        toast({ title: "Error", description: "Article not found", variant: "destructive" });
+        navigate("/settings/manage");
+      } finally {
+        setLoading(false);
+      }
+      return;
+    }
+
     const { data, error } = await supabase
       .from("articles")
       .select("*")

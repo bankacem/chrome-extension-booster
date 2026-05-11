@@ -38,7 +38,7 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
 interface GeneratedArticle {
@@ -342,6 +342,12 @@ const AIGenerator = () => {
   }, []);
 
   const checkAuth = async () => {
+    if (!isSupabaseConfigured) {
+      setIsAuthenticated(true);
+      setLoading(false);
+      return;
+    }
+
     const { data: { session } } = await supabase.auth.getSession();
     if (!session) {
       navigate("/settings");
@@ -364,15 +370,18 @@ const AIGenerator = () => {
   };
 
   const fetchExtensions = async () => {
-    // Fetch published articles to use for internal linking
-    const { data } = await supabase
-      .from("articles")
-      .select("title, slug")
-      .eq("status", "published")
-      .limit(20);
-
-    if (data) {
-      setExtensions(data.map(a => `${a.title} (/blog/${a.slug})`));
+    // Fetch published articles for internal linking — always from markdown index
+    try {
+      const res = await fetch("/content/articles-index.json");
+      if (!res.ok) return;
+      const data = await res.json();
+      setExtensions(
+        (data as { title: string; slug: string }[])
+          .slice(0, 20)
+          .map(a => `${a.title} (/blog/${a.slug})`)
+      );
+    } catch {
+      // Non-critical — silently ignore
     }
   };
 

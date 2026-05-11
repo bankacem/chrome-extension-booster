@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import SEO from "@/components/SEO";
 import KeywordMapper from "@/components/seo-dashboard/KeywordMapper";
@@ -46,27 +46,26 @@ const SEODashboard = () => {
 
   useEffect(() => {
     const checkAuth = async () => {
-      // In development/test environment without credentials, we might skip auth
-      // This is safe because RLS is still active on the database
-      const isTestEnv = window.location.hostname === 'localhost' && new URLSearchParams(window.location.search).get('skipAuth') === 'true';
+      if (!isSupabaseConfigured) {
+        fetchArticles();
+        return;
+      }
 
       const { data: { session } } = await supabase.auth.getSession();
+      if (!session) { navigate("/settings"); return; }
 
-      if (!session && !isTestEnv) { navigate("/settings"); return; }
+      const { data: role, error: roleError } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", session.user.id)
+        .single();
 
-      if (session) {
-        const { data: role, error: roleError } = await supabase
-          .from("user_roles")
-          .select("role")
-          .eq("user_id", session.user.id)
-          .single();
-
-        if (roleError || role?.role !== "admin") {
-          await supabase.auth.signOut();
-          navigate("/settings");
-          return;
-        }
+      if (roleError || role?.role !== "admin") {
+        await supabase.auth.signOut();
+        navigate("/settings");
+        return;
       }
+
       fetchArticles();
     };
     checkAuth();

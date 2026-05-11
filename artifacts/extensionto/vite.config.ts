@@ -3,30 +3,27 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
+// PORT and BASE_PATH are only required for the dev/preview server.
+// During a production build (vite build) they are optional — Vercel never
+// sets PORT at build time and the server block is ignored anyway.
+const isBuild = process.argv.includes("build");
+
 const rawPort = process.env.PORT;
-
-if (!rawPort) {
-  throw new Error(
-    "PORT environment variable is required but was not provided.",
-  );
+if (!rawPort && !isBuild) {
+  throw new Error("PORT environment variable is required but was not provided.");
 }
-
-const port = Number(rawPort);
-
-if (Number.isNaN(port) || port <= 0) {
+const port = rawPort ? Number(rawPort) : 3000;
+if (!isBuild && (Number.isNaN(port) || port <= 0)) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
 }
 
 const basePath = process.env.BASE_PATH;
-
-if (!basePath) {
-  throw new Error(
-    "BASE_PATH environment variable is required but was not provided.",
-  );
+if (!basePath && !isBuild) {
+  throw new Error("BASE_PATH environment variable is required but was not provided.");
 }
 
 export default defineConfig({
-  base: basePath,
+  base: basePath || "/",
   plugins: [
     react(),
     runtimeErrorOverlay(),
