@@ -46,6 +46,34 @@ import ArticleCategorizer from "@/components/admin/ArticleCategorizer";
 import FeaturedImageGenerator from "@/components/admin/FeaturedImageGenerator";
 import { processArticleWithLinks } from "@/lib/internalLinking";
 
+interface PublishPayload {
+  slug: string;
+  title: string;
+  content: string;
+  excerpt?: string;
+  meta_description?: string;
+  category?: string;
+  keywords?: string[];
+  featured_image?: string | null;
+  author?: string;
+  published_at?: string | null;
+  read_time?: number;
+  tags?: string[];
+}
+
+async function publishToGitHub(payload: PublishPayload): Promise<void> {
+  try {
+    const { error } = await supabase.functions.invoke("publish-to-github", {
+      body: payload,
+    });
+    if (error) {
+      console.warn("[publish-to-github] Edge function error (non-blocking):", error);
+    }
+  } catch (e) {
+    console.warn("[publish-to-github] Failed (non-blocking):", e);
+  }
+}
+
 interface Article {
   id: string;
   title: string;
@@ -371,6 +399,23 @@ const Admin = () => {
         const { error } = await supabase.from("articles").insert([articleData]);
         if (error) throw error;
         toast({ title: "Success", description: "Article created successfully" });
+      }
+
+      if (articleData.status === "published") {
+        publishToGitHub({
+          slug: articleData.slug,
+          title: articleData.title,
+          content: articleData.content,
+          excerpt: articleData.excerpt ?? undefined,
+          meta_description: articleData.meta_description ?? undefined,
+          category: articleData.category ?? undefined,
+          keywords: articleData.keywords ?? undefined,
+          featured_image: articleData.featured_image ?? undefined,
+          author: articleData.author ?? undefined,
+          published_at: articleData.published_at ?? undefined,
+          read_time: articleData.read_time ?? undefined,
+          tags: articleData.tags ?? undefined,
+        });
       }
 
       setIsEditing(false);
@@ -722,6 +767,21 @@ const Admin = () => {
           errors.push(`${(post.title || slug).substring(0, 30)}... : ${error.message}`);
         } else {
           importedCount++;
+          if (articleStatus === "published") {
+            publishToGitHub({
+              slug: articleData.slug,
+              title: articleData.title,
+              content: articleData.content,
+              excerpt: articleData.excerpt,
+              meta_description: articleData.meta_description,
+              category: articleData.category,
+              keywords: articleData.keywords,
+              featured_image: articleData.featured_image,
+              author: articleData.author,
+              published_at: articleData.published_at,
+              read_time: articleData.read_time,
+            });
+          }
         }
       }
 

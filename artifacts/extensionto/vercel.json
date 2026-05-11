@@ -1,0 +1,414 @@
+{
+  "buildCommand": "node scripts/sync-articles.mjs && node scripts/generate-sitemap.mjs && vite build --config vite.config.ts",
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.extensionto.com"
+        }
+      ],
+      "destination": "https://extensionto.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa",
+      "destination": "/blog/media-saver-extension-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-instagram-story-downloader-chrome-a-comprehensive-guide-mmtvrhy39js",
+      "destination": "/blog/instagram-story-downloader-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-downloader-for-chrome-2026-unlock-seamless-file-downloads-mmtvrhjxy8w",
+      "destination": "/blog/best-downloader-for-chrome-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-file-downloading-the-best-chrome-extension-to-download-files-mmtvrgzypoz",
+      "destination": "/blog/chrome-extension-to-download-files",
+      "permanent": true
+    },
+    {
+      "source": "/blog/safe-video-downloader-for-chrome-protecting-your-device-from-malware-and-viruses-mmtvrfrtd6s",
+      "destination": "/blog/safe-video-downloader-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-social-media-video-downloading-a-comprehensive-guide-to-social-media-video-downl-mmtvrezdnal",
+      "destination": "/blog/social-media-video-downloader-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mastering-video-playback-the-ultimate-guide-to-video-speed-controller-chrome-extensions-mmtvrel7mji",
+      "destination": "/blog/video-speed-controller-chrome-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-media-downloader-for-android-chrome-a-comprehensive-guide-mmtvrdrejcf",
+      "destination": "/blog/best-media-downloader-android-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-save-images-from-protected-sites-in-chrome-a-step-by-step-guide-mmtvrdaazwp",
+      "destination": "/blog/save-images-from-protected-sites-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-tiktok-video-downloading-a-comprehensive-guide-to-tiktok-video-downloader-no-wat-mmtvrcknw9y",
+      "destination": "/blog/tiktok-video-downloader-chrome-no-watermark",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ultimate-chrome-ram-memory-management-guide",
+      "destination": "/blog/chrome-ram-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/adblocker-for-android-chrome",
+      "destination": "/blog/adblock-android-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker-top-features-for-data-protection",
+      "destination": "/blog/unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker",
+      "permanent": true
+    },
+    {
+      "source": "/blog/visual-content-a-comprehensive-guide-to-chrome-screenshot-addons",
+      "destination": "/blog/unlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-capture-tools-2025-troubleshooting-capture-errors",
+      "destination": "/blog/unlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management-boosting-workflow-productivity",
+      "destination": "/blog/how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-best-chrome-plugins-for-media-downloading-in-2025-boosting-workflow-productivity",
+      "destination": "/blog/the-definitive-guide-to-the-best-chrome-plugins-for-media-downloading-in-2025-mliju7acduv",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-fast-screenshot-extension-alternatives-for-seamless-browsing-fast-workflow-integration-tips",
+      "destination": "/blog/fast-screenshot-extension-alternatives-1",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-extensions-on-android-comprehensive-feature-review",
+      "destination": "/blog/chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pro-developer-chrome-extensions-comprehensive-feature-review",
+      "destination": "/blog/pro-developer-chrome-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-integrate-extension-idm-to-chrome-for-enhanced-browsing-experience-essential-tips-for-new-users",
+      "destination": "/blog/extension-idm-to-chrome-12",
+      "permanent": true
+    },
+    {
+      "source": "/blog/visual-communication-best-annotated-screenshot-chrome-extensions-for-enhanced-productivity-best-high-quality-output-settings",
+      "destination": "/blog/best-annotated-screenshot-chrome-5",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-how-to-find-the-best-extension-to-chrome-for-your-needs-professional-tool-overview",
+      "destination": "/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-best-security-chrome-extensions-free-to-install-in-2025-privacy-benefits-for-daily-use",
+      "destination": "/blog/the-best-security-chrome-extensions-free-to-install-in-2025",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-chrome-wapi-cross-platform-sync-benefits",
+      "destination": "/blog/extension-chrome-wapi-17",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-chrome-extensions-for-privacy-2026-protect-your-online-identity-privacy-benefits-for-daily-use",
+      "destination": "/blog/best-chrome-extensions-for-privacy-2026-protect-your-online-identity-mll9br233zj",
+      "permanent": true
+    },
+    {
+      "source": "/blog/your-browser-essential-extensions-to-chrome-advanced-power-user-features",
+      "destination": "/blog/essential-chrome-extensions-for-ad-free-browsing-user-experience-speed-productivity-clean-web-9",
+      "permanent": true
+    },
+    {
+      "source": "/blog/google-chrome-programm-en-unlocking-the-power-of-customization-and-productivity-fixing-high-ram-usage-guide",
+      "destination": "/blog/google-chrome-programm-en-14",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-a-faster-and-more-private-browsing-experience-with-the-best-ad-blocker-extension-to-chrome-how-to-block-trackers-effectively",
+      "destination": "/blog/unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android-mm3scnuyzcs",
+      "permanent": true
+    },
+    {
+      "source": "/blog/professional-browser-tools-guide-advanced-power-user-features",
+      "destination": "/blog/professional-browser-tools-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-chrome-extensions-for-browsing-guide-essential-tips-for-new-users",
+      "destination": "/blog/the-ultimate-chrome-extensions-for-browsing-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial-best-free-alternatives-2025",
+      "destination": "/blog/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial",
+      "permanent": true
+    },
+    {
+      "source": "/blog/your-browser-how-to-install-an-extension-to-chrome-browser-professional-tool-overview",
+      "destination": "/blog/add-extension-to-chrome-7",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-productivity-the-best-extension-utile-chrome-for-a-seamless-browsing-experience-cross-platform-sync-benefits",
+      "destination": "/blog/extension-utile-chrome-12",
+      "permanent": true
+    },
+    {
+      "source": "/blog/visual-sharing-free-screenshot-extensions-for-chrome-troubleshooting-capture-errors",
+      "destination": "/blog/free-screenshot-extensions-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/finding-a-safe-youtube-downloader-extension-no-ads-converter-performance-review",
+      "destination": "/blog/the-ultimate-guide-to-finding-a-safe-youtube-downloader-extension-no-ads-mliju6qrdal",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-add-extension-to-chrome-to-enhancing-your-browsing-experience-best-free-alternatives-2025",
+      "destination": "/blog/how-to-add-extensions-to-chrome-mobile-a-step-by-step-guide-mmthoys728s",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-cybersecurity-the-power-of-extension-norton-chrome-review-security-analysis",
+      "destination": "/blog/extension-norton-chrome-8",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-10-google-sheets-extensions-for-accounting-streamlining-financial-workflows-in-2025-securing-your-online-identity",
+      "destination": "/blog/top-10-google-sheets-extensions-for-accounting-8",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-secure-browsing-how-to-add-a-vpn-extension-to-chrome-professional-tool-overview",
+      "destination": "/blog/vpn-extension-to-chrome-1",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-screenshot-extensions-for-chrome-capture-web-pages-like-a-pro-review-is-it-the-best-tool",
+      "destination": "/blog/best-screenshot-extensions-for-chrome-1",
+      "permanent": true
+    },
+    {
+      "source": "/blog/linkedin-with-the-best-extension-linkedin-chrome-tools-comprehensive-feature-review",
+      "destination": "/blog/unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-quick-screenshot-chrome-tools-for-effortless-screen-captures-sharing-collaboration-tools",
+      "destination": "/blog/best-quick-screenshot-chrome-tools-3",
+      "permanent": true
+    },
+    {
+      "source": "/blog/quick-screenshot-chrome-overview-to-capturing-web-pages-sharing-collaboration-tools",
+      "destination": "/blog/capture-screen-chrome-review-5",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-web-store-extensions-customization-theme-guide",
+      "destination": "/blog/chrome-web-store-2",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools-cross-platform-sync-benefits",
+      "destination": "/blog/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-error-free-writing-the-power-of-extension-grammaire-chrome-optimizing-for-lag-free-gaming",
+      "destination": "/blog/extension-grammaire-chrome-6",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-art-of-capturing-web-pages-to-extension-chrome-screen-page-best-free-alternatives-2025",
+      "destination": "/blog/extension-chrome-screen-page-16",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boost-your-productivity-how-to-block-video-ads-with-the-best-chrome-extension-mmtld07291s",
+      "destination": "/blog/block-video-ads-chrome-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-full-potential-of-ublock-origin-best-settings-for-2026-mmtld0cv3o2",
+      "destination": "/blog/ublock-origin-best-settings-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bypass-adblock-detection-chrome-a-comprehensive-guide-to-unlocking-ad-free-browsing-mmtld0l8zoo",
+      "destination": "/blog/bypass-adblock-detection-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/stop-redirect-ads-chrome-mobile-how-to-block-annoying-pop-ups-and-enhance-your-browsing-experience-mmtld0q2nmr",
+      "destination": "/blog/stop-redirect-ads-chrome-mobile",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cleanweb-vs-total-adblock-the-ultimate-guide-to-a-distraction-free-browsing-experience-mmtld0v09fy",
+      "destination": "/blog/cleanweb-vs-total-adblock",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-best-free-adblocker-for-youtube-chrome-boost-your-productivity-and-enjoy-ad-free-videos-mmtld10lmb0",
+      "destination": "/blog/best-free-adblocker-youtube-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boost-your-streaming-experience-the-ultimate-guide-to-popup-blocker-for-streaming-sites-mmtld16syll",
+      "destination": "/blog/popup-blocker-streaming-sites",
+      "permanent": true
+    },
+    {
+      "source": "/blog/maximizing-productivity-the-benefits-of-a-remove-overlays-chrome-extension-mmtld1c0lue",
+      "destination": "/blog/remove-overlays-chrome-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-stop-annoying-ads-on-chrome-mobile-a-comprehensive-guide-mmtld1ibls8",
+      "destination": "/blog/stop-annoying-ads-chrome-mobile",
+      "permanent": true
+    },
+    {
+      "source": "/blog/adblock-plus-vs-ublock-origin-2026-the-ultimate-comparison-for-a-more-productive-browsing-experience-mmtld1nbkki",
+      "destination": "/blog/adblock-plus-vs-ublock-origin-2026",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!.*\\.).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/favicon.png",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/og-image.png",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=UTF-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=300, stale-while-revalidate=60"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xsl",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/xsl; charset=UTF-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://extensionto.com"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=UTF-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ]
+}
