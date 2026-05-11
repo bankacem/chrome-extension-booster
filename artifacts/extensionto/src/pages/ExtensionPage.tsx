@@ -13,7 +13,6 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { getExtensionBySlug, extensions } from "@/lib/extensionsData";
 import { useEffect, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 
 interface RelatedArticle {
   id: string;

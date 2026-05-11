@@ -9,7 +9,6 @@ import SEO from "@/components/SEO";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import DirectDownloadSection from "@/components/seo/DirectDownloadSection";
 import VideoPlayer from "@/components/blog/VideoPlayer";
-import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import yaml from "js-yaml";
 import { getPartitionedPath, resolveImagePath } from "@/utils/articlePath";
@@ -230,24 +229,6 @@ const BlogPost = () => {
         );
       }
       setMatchedExtension(detectedExt);
-      if (frontmatter.id) {
-        try {
-          const { data } = await supabase
-            .from("articles")
-            .select("views")
-            .eq("id", frontmatter.id)
-            .single();
-          if (data) {
-            const currentViews = data.views || 0;
-            await supabase
-              .from("articles")
-              .update({ views: currentViews + 1 })
-              .eq("id", frontmatter.id);
-          }
-        } catch (err) {
-          console.error("Non-critical view update error:", err);
-        }
-      }
 
     } catch (error) {
       console.error("Error fetching article:", error);
