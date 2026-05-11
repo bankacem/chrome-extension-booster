@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import Navbar from "@/components/Navbar";
 import SEO from "@/components/SEO";
 
@@ -25,6 +25,9 @@ const AdminLogin = () => {
     if (location.pathname === "/admin") {
       navigate("/settings", { replace: true });
     }
+
+    // Dev-bypass: skip Supabase checks when credentials are not configured
+    if (!isSupabaseConfigured) return;
 
     // Check if already authenticated
     const checkAuth = async () => {
@@ -67,8 +70,18 @@ const AdminLogin = () => {
     return () => subscription.unsubscribe();
   }, [navigate, location.pathname]);
 
+  const handleDevBypass = () => {
+    navigate("/settings/manage");
+  };
+
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!isSupabaseConfigured) {
+      navigate("/settings/manage");
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -134,6 +147,10 @@ const AdminLogin = () => {
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!isSupabaseConfigured) {
+      navigate("/settings/manage");
+      return;
+    }
     setLoading(true);
 
     try {
@@ -219,7 +236,21 @@ const AdminLogin = () => {
               </p>
             </div>
 
-            <form onSubmit={isSignUp ? handleSignUp : handleLogin} className="space-y-6">
+            {!isSupabaseConfigured && (
+              <div className="mb-6 rounded-lg border border-yellow-500/30 bg-yellow-500/10 p-4 text-center">
+                <p className="mb-1 text-sm font-medium text-yellow-400">Dev Mode — No Auth Credentials</p>
+                <p className="mb-3 text-xs text-muted-foreground">
+                  Set <code className="rounded bg-muted px-1">VITE_SUPABASE_URL</code> and{" "}
+                  <code className="rounded bg-muted px-1">VITE_SUPABASE_PUBLISHABLE_KEY</code> to enable real login.
+                </p>
+                <Button type="button" className="w-full" onClick={handleDevBypass}>
+                  <Shield className="mr-2 h-4 w-4" />
+                  Enter Admin Panel (Dev Mode)
+                </Button>
+              </div>
+            )}
+
+            <form onSubmit={isSignUp ? handleSignUp : handleLogin} className={`space-y-6 ${!isSupabaseConfigured ? "opacity-40 pointer-events-none select-none" : ""}`}>
               <div className="space-y-2">
                 <Label htmlFor="email">Email Address</Label>
                 <div className="relative">

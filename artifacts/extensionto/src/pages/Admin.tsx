@@ -37,7 +37,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import SEO from "@/components/SEO";
 import BulkScheduleDialog from "@/components/admin/BulkScheduleDialog";
@@ -184,6 +184,12 @@ const Admin = () => {
   const { toast } = useToast();
 
   useEffect(() => {
+    if (!isSupabaseConfigured) {
+      // Dev-bypass: no credentials — skip auth gate and load articles from index
+      fetchArticles();
+      return;
+    }
+
     // Check Supabase auth session
     const checkAuth = async () => {
       const { data: { session } } = await supabase.auth.getSession();
@@ -230,6 +236,15 @@ const Admin = () => {
 
   const fetchArticles = async () => {
     try {
+      if (!isSupabaseConfigured) {
+        // Dev-bypass: read from markdown index instead of Supabase DB
+        const res = await fetch("/content/articles-index.json");
+        if (!res.ok) throw new Error("Failed to load articles-index.json");
+        const data = await res.json();
+        setArticles(data || []);
+        return;
+      }
+
       const { data, error } = await supabase
         .from("articles")
         .select("*")

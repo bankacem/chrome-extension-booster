@@ -5,11 +5,17 @@ import type { Database } from './types';
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "";
 const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || "";
 
-// Import the supabase client like this:
-// import { supabase } from "@/integrations/supabase/client";
+// True only when real credentials are present — used to gate auth flows.
+// The public article system never reads this flag (it is markdown-only).
+export const isSupabaseConfigured =
+  Boolean(SUPABASE_URL && !SUPABASE_URL.includes("placeholder")) &&
+  Boolean(SUPABASE_PUBLISHABLE_KEY && !SUPABASE_PUBLISHABLE_KEY.includes("placeholder"));
 
-if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) {
-  console.warn("Supabase credentials missing. Check VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY in your environment.");
+if (!isSupabaseConfigured) {
+  console.warn(
+    "[Admin] Supabase credentials not set. Admin login is in dev-bypass mode. " +
+    "Set VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY to enable real auth."
+  );
 }
 
 export const supabase = createClient<Database>(
