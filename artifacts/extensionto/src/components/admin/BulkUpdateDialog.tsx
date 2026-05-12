@@ -98,7 +98,13 @@ const BulkUpdateDialog = ({
       return;
     }
 
-    const updateData: Record<string, any> = {};
+    const updateData: {
+      status?: string;
+      published_at?: string | null;
+      scheduled_at?: string | null;
+      category?: string;
+      author?: string;
+    } = {};
     
     if (updateField === "status") {
       updateData.status = newStatus;

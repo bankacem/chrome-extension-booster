@@ -83,7 +83,7 @@ function countLinks(html: string): { internal: number; external: number } {
   let internal = 0;
   let external = 0;
 
-  links.forEach(link => {
+  links.forEach((link: string) => {
     const hrefMatch = link.match(/href=["']([^"']+)["']/i);
     if (hrefMatch) {
       const href = hrefMatch[1];

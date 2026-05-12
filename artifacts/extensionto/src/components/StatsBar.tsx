@@ -41,6 +41,7 @@ const AnimatedCounter = ({
 
       return () => clearInterval(timer);
     }
+    return undefined;
   }, [isInView, value]);
 
   const formatNumber = (num: number) => {
