@@ -1,5 +1,11 @@
 {
   "buildCommand": "pnpm run build",
   "outputDirectory": "dist/public",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
