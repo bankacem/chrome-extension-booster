@@ -1,0 +1,174 @@
+You are a Principal Full-Stack + SEO Architect responsible for fixing a production-level content platform.
+
+The project is currently deployed and contains ~500 blog articles generated from Markdown with GitHub as the source of truth.
+
+A full architecture audit has already been completed. The following critical issues were identified:
+
+CRITICAL PROBLEMS:
+
+1. SPA / No SSR
+- The site is a React SPA
+- All SEO content (meta tags, article content, canonical URLs) is injected client-side
+- This severely impacts indexing and Google visibility
+
+2. Missing SEO Metadata
+- 499/499 articles are missing meta_description in the index layer
+- Only Markdown files contain partial metadata
+
+3. Keyword Cannibalization
+- 250–300 articles overlap in 6 major clusters:
+  - screenshots
+  - downloads
+  - RAM/memory
+  - ad-blockers
+  - privacy tools
+  - popup blockers
+
+4. Broken Taxonomy
+- "Screenshots & Screen Capture" category contains 43% of site content incorrectly grouped
+- Topic clustering is invalid and misleading
+
+5. AI Author Signal Issue
+- 337 articles use "AI Generator" as author
+- This is harmful for SEO trust signals
+
+6. Content Quality Issues
+- 40 duplicate excerpts
+- 5 partial articles in sitemap
+- 4 stub articles (<200 words)
+- 2 duplicate/corrupted slugs
+
+7. Crawl Waste
+- Admin routes (/settings, /admin, /seo-dashboard) are publicly indexable
+
+8. Sitemap is technically synced but semantically polluted
+
+---
+
+MISSION OBJECTIVE:
+
+Fix the entire SEO + architecture system WITHOUT breaking production.
+
+---
+
+HARD CONSTRAINTS:
+
+- DO NOT delete or modify content blindly
+- DO NOT break existing routes
+- DO NOT reintroduce Supabase
+- GitHub Markdown remains the single source of truth
+- All fixes must be reversible
+- Prefer incremental surgical changes over full rewrites
+
+---
+
+PHASE 1 — SAFETY + SEO PROTECTION (DO FIRST)
+
+1. Add noindex to all admin/system routes:
+   - /settings
+   - /admin
+   - /seo-dashboard
+   - /ai-generator
+
+2. Fix robots.txt:
+   - Block all admin/system routes
+   - Allow blog crawling only
+
+3. Protect sitemap from:
+   - partial articles
+   - stub articles
+   - corrupted slugs
+
+---
+
+PHASE 2 — METADATA REBUILD
+
+1. Ensure every article has:
+   - title
+   - meta_description (generate fallback if missing from Markdown)
+   - canonical URL
+   - valid slug
+
+2. If metadata missing:
+   - derive from Markdown content safely (first paragraph summary)
+
+---
+
+PHASE 3 — TAXONOMY FIX
+
+1. Rebuild category mapping system:
+   - Fix misclassified articles
+   - Reduce overlap between categories
+   - Ensure each article belongs to ONE primary cluster only
+
+2. Detect and flag:
+   - cannibalizing articles
+   - duplicate-intent articles
+
+---
+
+PHASE 4 — CONTENT QUALITY FILTER (IMPORTANT)
+
+Create a validation layer before indexing:
+
+Reject or exclude from sitemap if:
+- < 300 words (unless valid exception)
+- duplicate semantic content
+- missing headings structure
+- corrupted slug
+- low uniqueness score
+
+---
+
+PHASE 5 — AUTHOR FIX
+
+Replace:
+- "AI Generator"
+
+With:
+- neutral system author OR proper brand author
+
+Update OpenGraph metadata accordingly.
+
+---
+
+PHASE 6 — SPA SEO IMPROVEMENT (CRITICAL)
+
+Without breaking UI:
+
+- Ensure article pages support server-side rendering (SSR) or static generation (SSG) where possible
+- Ensure crawlers receive full HTML content without requiring JS execution
+- Fix meta injection timing issues
+
+---
+
+PHASE 7 — SITEMAP REBUILD (FINAL STEP)
+
+1. Rebuild sitemap from:
+   - ONLY validated Markdown articles
+2. Ensure:
+   - no broken URLs
+   - no duplicates
+   - no drafts
+3. Ensure Vercel regenerates sitemap on every deploy
+
+---
+
+OUTPUT REQUIREMENTS:
+
+Before making ANY change:
+- Explain root cause
+- Show risk level
+- Show what will be modified
+
+Then proceed with:
+- incremental fixes only
+- no bulk destructive changes
+
+FINAL GOAL:
+
+Transform this project from:
+"AI-generated SPA content site"
+
+into:
+"Clean, SEO-optimized, indexable content authority system"

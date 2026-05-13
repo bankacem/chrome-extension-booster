@@ -14,6 +14,7 @@ import yaml from "js-yaml";
 import { getPartitionedPath, resolveImagePath } from "@/utils/articlePath";
 import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
 import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
+import { findLinkMatches, addInternalLinks } from "@/lib/internalLinking";
 
 interface Article {
   id: string;
@@ -212,7 +213,25 @@ const BlogPost = () => {
       }
 
       const processedContent = processArticleContent(content);
-      const fullArticle = { ...(matched || {}), ...frontmatter, content: processedContent } as Article;
+
+      // Activate internal linking — injects contextual cross-article links into rendered HTML
+      const linkCandidates = allArticles
+        .filter(a => a.slug !== (matched?.slug || slug))
+        .map(a => ({
+          id: a.id,
+          title: a.title,
+          slug: a.slug,
+          content: "",
+          category: a.category || null,
+          tags: a.tags || null,
+          keywords: a.keywords || null,
+        }));
+      const linkMatches = findLinkMatches(processedContent, matched?.id || slug || "", linkCandidates);
+      const linkedContent = linkMatches.length > 0
+        ? addInternalLinks(processedContent, linkMatches)
+        : processedContent;
+
+      const fullArticle = { ...(matched || {}), ...frontmatter, content: linkedContent } as Article;
       setArticle(fullArticle);
 
       // Smart extension detection: frontmatter > slug lookup > content detection
@@ -412,7 +431,33 @@ const BlogPost = () => {
         articlePublishedTime={article.published_at}
         articleAuthor={article.author}
       />
-      {article.schema && <SchemaMarkup data={article.schema} />}
+      <SchemaMarkup data={article.schema ?? {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": `https://extensionto.com/blog/${article.slug}#article`,
+        "headline": article.title,
+        "description": article.meta_description || article.excerpt || "",
+        "datePublished": article.published_at,
+        "dateModified": article.published_at,
+        "author": {
+          "@type": "Organization",
+          "name": article.author || "ExtensionTo Editorial",
+          "url": "https://extensionto.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://extensionto.com/#organization",
+          "name": "ExtensionTo",
+          "logo": { "@type": "ImageObject", "url": "https://extensionto.com/favicon.png" }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `https://extensionto.com/blog/${article.slug}`
+        },
+        ...(article.featured_image ? {
+          "image": { "@type": "ImageObject", "url": article.featured_image }
+        } : {})
+      }} />
       <Navbar />
 
       <main className="pt-24 pb-16">
