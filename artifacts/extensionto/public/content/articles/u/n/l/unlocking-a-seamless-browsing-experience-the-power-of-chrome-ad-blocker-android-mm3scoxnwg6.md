@@ -78,7 +78,7 @@ updated_at: "2026-04-23T12:26:03.502773+00:00"
 <ol>
   <li><strong>Effectiveness</strong>: Look for an ad blocker that is effective at blocking ads and trackers, without compromising the functionality of the websites you visit.</li>
   <li><strong>Ease of use</strong>: Choose an ad blocker that is easy to install and use, with a simple and intuitive interface.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</strong>: Consider an ad blocker that offers customization options, such as the ability to whitelist certain websites or adjust the level of blocking.</li>
+  <li><strong>Customization options</strong>: Consider an ad blocker that offers customization options, such as the ability to whitelist certain websites or adjust the level of blocking.</li>
   <li><strong>Compatibility</strong>: Ensure that the ad blocker you choose is compatible with your device and browser, and that it won't slow down your browsing experience.</li>
 </ol>
 

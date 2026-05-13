@@ -100,7 +100,7 @@ updated_at: '2026-04-27T16:59:43.096Z'
 <p>A <strong>remove overlays Chrome extension</strong> can provide numerous benefits, including:</p>
 <ul>
   <li>Automated overlay removal: The extension can <a href="/blog/stop-video-popups-from-playing-automatically-3" class="internal-link" title="Stop Video Popups from Playing Automatically: A Comprehensive Guide">automatically</a> detect and remove overlays, saving you time and effort.</li>
-  <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options: Many extensions offer customization options, allowing you to tailor the overlay removal experience to your needs.</li>
+  <li>Customization options: Many extensions offer customization options, allowing you to tailor the overlay removal experience to your needs.</li>
   <li>Improved browsing experience: By removing overlays, you can enjoy a more seamless and efficient browsing experience.</li>
 </ul>
 

@@ -133,13 +133,13 @@ schema:
 <p>Go to <code>Settings > Performance</code> and toggle on <strong>Memory Saver</strong>. This allows Chrome to automatically reclaim memory from tabs you aren't currently using. You can also add specific mission-critical sites to an "Always keep active" list if they need to run background processes like music streaming or real-time data monitoring.</p>
 
 <h3>Step 2: Audit Your Extensions for Resource Leaks</h3>
-<p>Extensions are often the silent killers of performance. Each extension runs its own process and consumes its own slice of RAM. Use the <a href="/blog/best-chrome-extension-managers" class="text-primary hover:underline">Chrome Extension Manager</a> to audit and disable anything you don't use daily. Remember, even a "small" extension can use 50MB-100MB of RAM.</p>
+<p>Extensions are often the silent killers of performance. Each extension runs its own process and consumes its own slice of RAM. Use the Chrome Extension Manager to audit and disable anything you don't use daily. Remember, even a "small" extension can use 50MB-100MB of RAM.</p>
 
 <h3>Step 3: Master the Built-in Browser Task Manager</h3>
 <p>Press <code>Shift + Esc</code> while in Chrome to open the dedicated Browser Task Manager. This tool shows exactly how much RAM each tab, background script, and extension is using. Sort the list by "Memory footprint" to identify the culprits and end processes that are behaving abnormally without having to restart the entire browser.</p>
 
 <h3>Step 4: Manage Your Cache and Profile Size</h3>
-<p>A bloated cache can slow down disk I/O, making the browser feel sluggish even if physical RAM is available. Learn <a href="/blog/how-to-clear-cache-for-one-site" class="text-primary hover:underline">how to clear cache for one site</a> to keep your profile lean. This is particularly useful for web developers or those who spend a lot of time on asset-heavy sites like social media dashboards.</p>
+<p>A bloated cache can slow down disk I/O, making the browser feel sluggish even if physical RAM is available. Learn how to clear cache for one site to keep your profile lean. This is particularly useful for web developers or those who spend a lot of time on asset-heavy sites like social media dashboards.</p>
 
 <h2>5. Future-Proofing: How Much RAM Do You Really Need for Modern Browsing?</h2>
 
@@ -153,10 +153,10 @@ schema:
 
 <h2>Internal Resources for Further Optimization</h2>
 <ul>
-<li>Master your workflow with the <a href="/blog/best-chrome-extensions-for-productivity" class="text-primary hover:underline">Best Chrome Extensions for Productivity</a>.</li>
-<li>Keep your browser clean and organized with our <a href="/blog/best-chrome-tab-managers" class="text-primary hover:underline">Top Tab Managers Guide</a>.</li>
-<li>If you're moving to a new machine, don't forget to <a href="/blog/how-to-export-chrome-extensions" class="text-primary hover:underline">Export Chrome Extensions</a> safely.</li>
-<li>Troubleshoot technical issues with our guide on <a href="/blog/how-to-fix-chrome-extension-errors" class="text-primary hover:underline">Fixing Chrome Extension Errors</a>.</li>
+<li>Master your workflow with the Best Chrome Extensions for Productivity.</li>
+<li>Keep your browser clean and organized with our Top Tab Managers Guide.</li>
+<li>If you're moving to a new machine, don't forget to Export Chrome Extensions safely.</li>
+<li>Troubleshoot technical issues with our guide on Fixing Chrome Extension Errors.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>

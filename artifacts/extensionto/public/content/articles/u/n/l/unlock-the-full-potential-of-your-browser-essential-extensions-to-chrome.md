@@ -54,7 +54,7 @@ updated_at: "2026-04-23T12:27:17.879587+00:00"
 <ul>
   <li><strong>Enhanced productivity</strong>: With the right extensions, you can automate repetitive tasks, manage your time more efficiently, and stay focused on your work.</li>
   <li><strong>Improved security</strong>: Extensions like password managers and antivirus tools can help protect your online identity and keep your device safe from malware.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a></strong>: <strong>Extensions to Chrome</strong> allow you to personalize your browsing experience, from changing the appearance of your browser to adding new features and functionality.</li>
+  <li><strong>Customization</strong>: <strong>Extensions to Chrome</strong> allow you to personalize your browsing experience, from changing the appearance of your browser to adding new features and functionality.</li>
   <li><strong>Entertainment</strong>: With extensions like music players and game platforms, you can enjoy your favorite entertainment content directly within your browser.</li>
 </ul>
 

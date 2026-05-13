@@ -147,7 +147,7 @@ updated_at: "2026-03-16T14:43:22.834039+00:00"
     <p>A: Yes, dark mode is available on all Wikipedia pages, including articles, talk pages, and user pages.</p>
   </li>
   <li>Q: Can I customize the dark mode settings on Wikipedia?
-    <p>A: Limited <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options are available on Wikipedia's built-in dark mode. However, our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> Chrome extension offers more advanced customization options.</p>
+    <p>A: Limited customization options are available on Wikipedia's built-in dark mode. However, our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> Chrome extension offers more advanced customization options.</p>
   </li>
   <li>Q: Is the Auto Dark Mode Switcher extension compatible with other websites?
     <p>A: Yes, our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> Chrome extension is compatible with other websites that support dark mode.</p>

@@ -67,7 +67,7 @@ updated_at: "2026-04-23T12:28:01.576085+00:00"
   <li><strong>Image quality</strong>: The extension should be able to capture high-quality images that are clear and crisp.</li>
   <li><strong>Editing capabilities</strong>: The ability to edit screenshots, such as cropping, resizing, and annotating, can be a valuable feature.</li>
   <li><strong>Sharing options</strong>: The extension should allow you to share screenshots easily, whether it's through email, social media, or cloud storage.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</strong>: The ability to customize the screenshot tool, such as choosing the file format or setting a custom shortcut, can be useful.</li>
+  <li><strong>Customization options</strong>: The ability to customize the screenshot tool, such as choosing the file format or setting a custom shortcut, can be useful.</li>
 </ul>
 
 <h2 id="top-full-page-screenshot-chrome-extensions">Top Full Page Screenshot Chrome Extensions</h2>
@@ -118,7 +118,7 @@ updated_at: "2026-04-23T12:28:01.576085+00:00"
 <h2 id="faq">Frequently Asked Questions</h2>
 <p>Here are some frequently asked questions about full page screenshot Chrome extensions:</p>
 <ul>
-  <li>Q: What is the <a href="/blog/best-full-page-screenshot-chrome-4" class="internal-link" title="Best Full Page Screenshot Chrome: Capture Web Pages Like a Pro"><a href="/blog/best-full-page-screenshot-chrome-extension-2026-free-no-login-required" class="internal-link" title="Best Full Page Screenshot Chrome Extension 2026: Free &amp; No Login Required"><a href="/blog/best-full-page-screenshot-chrome-extension-2026-free-no-login-required" class="internal-link" title="Best Full Page Screenshot Chrome Extension 2026: Free &amp; No Login Required">best full page screenshot Chrome</a></a></a> extension?
+  <li>Q: What is the <a href="/blog/best-full-page-screenshot-chrome-extension-2026-free-no-login-required" class="internal-link" title="Best Full Page Screenshot Chrome Extension 2026: Free &amp; No Login Required"><a href="/blog/best-full-page-screenshot-chrome-extension-2026-free-no-login-required" class="internal-link" title="Best Full Page Screenshot Chrome Extension 2026: Free &amp; No Login Required">best full page screenshot Chrome</a></a> extension?
     <ul>
       <li>A: The best extension for you will depend on your specific needs and preferences. Consider factors such as image quality, editing capabilities, and sharing options when making your decision.</li>
     </ul>

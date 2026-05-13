@@ -70,7 +70,7 @@ updated_at: "2026-03-16T14:42:49.136209+00:00"
 <ol>
   <li><strong>Easy installation</strong>: The ad blocker should be easy to install and require no root access.</li>
   <li><strong>Effective ad blocking</strong>: The ad blocker should be able to block a wide range of ads, including popups, banners, and video ads.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</strong>: The ad blocker should offer customization options to allow you to whitelist certain websites or adjust the blocking settings.</li>
+  <li><strong>Customization options</strong>: The ad blocker should offer customization options to allow you to whitelist certain websites or adjust the blocking settings.</li>
   <li><strong>Regular updates</strong>: The ad blocker should receive regular updates to ensure it stays effective against new and emerging ad formats.</li>
 </ol>
 

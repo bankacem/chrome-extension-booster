@@ -61,7 +61,7 @@ updated_at: "2026-04-23T12:26:19.602531+00:00"
     <li><strong>Board and List Management</strong>: The ability to create, edit, and manage Trello boards and lists directly from your browser.</li>
     <li><strong>Task Automation</strong>: Features that allow for the automation of repetitive tasks, saving you time and effort.</li>
     <li><strong>Collaboration Tools</strong>: Integration with other collaboration tools to enhance team work and <a href="/blog/google-trad-plugin-15" class="internal-link" title="Unlocking Global Communication: The Power of Google Trad Plugin">communication</a>.</li>
-    <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> Options</strong>: The ability to customize the look and feel of your Trello boards to suit your preferences.</li>
+    <li><strong>Customization Options</strong>: The ability to customize the look and feel of your Trello boards to suit your preferences.</li>
 </ul>
 
 <h3>Enhancing Security with Extension Trello Chrome</h3>

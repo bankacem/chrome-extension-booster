@@ -75,7 +75,7 @@ updated_at: "2026-04-23T12:27:41.107186+00:00"
 <ul>
   <li><a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>: This extension automatically switches between dark and light modes on Facebook and other websites.</li>
   <li>Dark Mode for Facebook: This extension enables dark mode on Facebook with a single click.</li>
-  <li>Facebook Dark Mode: This extension offers a range of <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options for dark mode on Facebook.</li>
+  <li>Facebook Dark Mode: This extension offers a range of customization options for dark mode on Facebook.</li>
 </ul>
 
 <h2 id="how-to-enable-dark-mode-on-facebook">How to Enable Dark Mode on Facebook</h2>

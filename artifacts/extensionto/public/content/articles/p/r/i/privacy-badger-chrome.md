@@ -102,7 +102,7 @@ updated_at: "2026-04-23T12:26:10.321173+00:00"
 
 <ul>
   <li>May not block as many trackers as <strong>Ghostery</strong>.</li>
-  <li>Limited <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options.</li>
+  <li>Limited customization options.</li>
 </ul>
 
 <h4>Ghostery Pros and Cons</h4>

@@ -83,7 +83,7 @@ updated_at: "2026-04-23T12:27:19.357389+00:00"
     <li>Advanced productivity tools, such as our <a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a>, to help you stay focused and efficient</li>
     <li>Enhanced security features, like our <a href="/extension/securakey-pro" class="text-primary font-medium hover:underline">SecuraKey Pro</a>, to protect your online identity and data</li>
     <li>Entertainment and social media integration, making it easier to share and discover new content</li>
-    <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options to personalize your browsing experience</li>
+    <li>Customization options to personalize your browsing experience</li>
 </ul>
 
 <p>By leveraging these features, you can unlock the full potential of the <strong>gemini extension to chrome</strong> and take your browsing experience to the next level.</p>

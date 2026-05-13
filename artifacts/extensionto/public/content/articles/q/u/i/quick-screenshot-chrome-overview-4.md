@@ -84,7 +84,7 @@ updated_at: "2026-03-16T14:43:16.464147+00:00"
 <li>Editing and annotation tools, such as text, arrows, and shapes</li>
 <li>Sharing options, including social media, email, and cloud storage</li>
 <li>Organization capabilities, such as folders and tags</li>
-<li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options, such as screenshot size and format</li>
+<li>Customization options, such as screenshot size and format</li>
 </ol>
 
 <h3>Benefits of Advanced Features</h3>

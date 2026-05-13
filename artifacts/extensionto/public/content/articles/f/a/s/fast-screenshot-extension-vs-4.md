@@ -69,7 +69,7 @@ updated_at: "2026-04-23T12:27:36.639311+00:00"
 
 <ul>
   <li><strong>Speed</strong>: How quickly can the extension capture and process screenshots?</li>
-  <li><strong>Quality</strong>: What is the image quality like, and are there any options for <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a>?</li>
+  <li><strong>Quality</strong>: What is the image quality like, and are there any options for customization?</li>
   <li><strong>Annotation tools</strong>: Are there any built-in annotation tools, such as text, arrows, and shapes?</li>
   <li><strong>Sharing options</strong>: How easily can you share screenshots with others, and are there any integrations with popular platforms?</li>
   <li><strong>Security</strong>: Is the extension secure, and are there any risks associated with using it?</li>

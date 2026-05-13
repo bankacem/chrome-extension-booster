@@ -79,7 +79,7 @@ updated_at: "2026-04-23T12:28:39.616124+00:00"
   <li><strong>Image Quality</strong>: Look for tools that offer high-quality images, including options for PNG, JPEG, and GIF formats.</li>
   <li><strong>Editing Capabilities</strong>: Consider tools that offer basic editing features, such as cropping, resizing, and annotating.</li>
   <li><strong>Sharing Options</strong>: Choose tools that provide easy sharing options, including social media, email, and cloud storage.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a></strong>: Opt for tools that offer customization options, including hotkeys, delay timers, and screenshot formats.</li>
+  <li><strong>Customization</strong>: Opt for tools that offer customization options, including hotkeys, delay timers, and screenshot formats.</li>
 </ol>
 
 <h2 id="popular-screenshot-tools">Popular Screenshot Tools for Chrome</h2>

@@ -73,7 +73,7 @@ updated_at: "2026-04-23T12:26:10.012496+00:00"
     <li><strong>Speed</strong>: The extension should be optimized for speed, ensuring that it does not slow down your browser performance.</li>
     <li><strong>No memory leak</strong>: The extension should be designed to prevent memory leaks, ensuring that your browser performance is not affected.</li>
     <li><strong>Ad blocking</strong>: The extension should be able to block a wide range of ads, including pop-ups, banners, and trackers.</li>
-    <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a></strong>: The extension should provide customization options, allowing you to tailor your ad blocking experience to your needs.</li>
+    <li><strong>Customization</strong>: The extension should provide customization options, allowing you to tailor your ad blocking experience to your needs.</li>
     <li><strong>Regular updates</strong>: The extension should be regularly updated to ensure that it stays ahead of the latest ad blocking challenges.</li>
 </ul>
 

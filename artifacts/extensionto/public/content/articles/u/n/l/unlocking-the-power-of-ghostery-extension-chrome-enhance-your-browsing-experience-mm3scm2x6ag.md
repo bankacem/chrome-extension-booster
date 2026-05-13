@@ -64,7 +64,7 @@ updated_at: "2026-03-03T17:57:22.342271+00:00"
     <li>Tracker blocking: The Ghostery extension Chrome blocks trackers, scripts, and other malicious elements that can compromise your online security.</li>
     <li>Ad blocking: The Ghostery extension Chrome also blocks annoying ads, improving your browsing experience and reducing distractions.</li>
     <li>Anti-tracking: The Ghostery extension Chrome prevents trackers from collecting your personal data, giving you greater control over your online presence.</li>
-    <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: The Ghostery extension Chrome allows you to customize your settings, giving you greater control over what you block and what you allow.</li>
+    <li>Customization: The Ghostery extension Chrome allows you to customize your settings, giving you greater control over what you block and what you allow.</li>
 </ul>
 
 <h2>Benefits of Using Ghostery Extension Chrome</h2>

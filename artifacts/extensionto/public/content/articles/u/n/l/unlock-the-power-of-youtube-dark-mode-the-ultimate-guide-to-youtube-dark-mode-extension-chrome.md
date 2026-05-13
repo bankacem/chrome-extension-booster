@@ -107,7 +107,7 @@ updated_at: "2026-04-23T12:25:27.411388+00:00"
 
 <ul>
   <li><a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> for capturing screenshots of your favorite YouTube videos</li>
-  <li><a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a> for <a href="/blog/safe-video-downloader-for-chrome-protecting-your-device-from-malware-and-viruses-mmtvrfrtd6s" class="internal-link" title="Safe Video Downloader for Chrome: Protecting Your Device from Malware and Viruses">protecting</a> yourself from malicious redirects on YouTube</li>
+  <li><a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a> for protecting yourself from malicious redirects on YouTube</li>
   <li><a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a> for suspending inactive tabs and reducing memory usage on your browser</li>
   <li><a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a> for blocking annoying popups and ads on YouTube</li>
 </ul>

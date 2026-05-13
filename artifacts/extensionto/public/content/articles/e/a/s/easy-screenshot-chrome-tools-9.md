@@ -92,7 +92,7 @@ updated_at: "2026-03-03T17:57:41.204465+00:00"
   <li>Visible area screenshot capture</li>
   <li>Annotation and editing tools</li>
   <li>Sharing and collaboration features</li>
-  <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</li>
+  <li>Customization options</li>
 </ol>
 <p>Our <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension offers many of these features, making it an excellent choice for those looking for a reliable and efficient screenshotting tool.</p>
 

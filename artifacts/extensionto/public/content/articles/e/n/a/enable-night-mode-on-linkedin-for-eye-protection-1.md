@@ -104,7 +104,7 @@ updated_at: "2026-04-23T12:27:40.529888+00:00"
     </tr>
     <tr>
       <td>Other Night Mode Extensions</td>
-      <td>Manual switching, limited <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options</td>
+      <td>Manual switching, limited customization options</td>
       <td>Varying prices</td>
     </tr>
   </tbody>

@@ -67,7 +67,7 @@ updated_at: "2026-03-16T14:42:52.409944+00:00"
 
 <ol>
   <li><a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a>: Our popular extension that blocks annoying popups and intrusive ads.</li>
-  <li>uBlock Origin: A popular adblock extension that offers advanced features and <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options.</li>
+  <li>uBlock Origin: A popular adblock extension that offers advanced features and customization options.</li>
   <li>AdBlock Plus: A well-known adblock extension that offers a wide range of features and filtering options.</li>
 </ol>
 

@@ -89,7 +89,7 @@ updated_at: "2026-04-23T12:27:23.107979+00:00"
 <p>When choosing a <strong>Chrome Screenshot Addon</strong>, there are several features to look for, including:</p>
 <ul>
     <li><strong>Image quality</strong>: Look for addons that capture high-quality images with clear resolution and minimal compression.</li>
-    <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</strong>: Choose an addon that offers customization options, such as the ability to select a specific area of the page or add annotations.</li>
+    <li><strong>Customization options</strong>: Choose an addon that offers customization options, such as the ability to select a specific area of the page or add annotations.</li>
     <li><strong>Sharing options</strong>: Consider an addon that allows you to share your screenshots directly to social media or other online platforms.</li>
 </ul>
 

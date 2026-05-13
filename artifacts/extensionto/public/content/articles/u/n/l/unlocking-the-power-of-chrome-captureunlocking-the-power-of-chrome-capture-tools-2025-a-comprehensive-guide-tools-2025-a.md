@@ -82,7 +82,7 @@ updated_at: "2026-04-23T12:27:30.193642+00:00"
 
 <ul>
   <li>Full-page screenshots and selective captures</li>
-  <li>Easy editing and <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options</li>
+  <li>Easy editing and customization options</li>
   <li>Ability to add text, annotations, and other effects</li>
   <li>Seamless integration with other Chrome extensions and tools</li>
 </ul>

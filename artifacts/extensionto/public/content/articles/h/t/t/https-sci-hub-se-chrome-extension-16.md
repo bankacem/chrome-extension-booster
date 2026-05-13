@@ -67,7 +67,7 @@ updated_at: "2026-04-23T12:26:18.60986+00:00"
 <p>In addition to these features, the <strong>HTTPS Sci-Hub SE Chrome extension</strong> also offers several benefits, including:</p>
 
 <ol>
-  <li>Improved <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">productivity</a>: By providing efficient access to scientific papers and articles, the extension can help improve your productivity and reduce the time spent searching for relevant research.</li>
+  <li>Improved productivity: By providing efficient access to scientific papers and articles, the extension can help improve your productivity and reduce the time spent searching for relevant research.</li>
   <li>Enhanced security: The extension's secure browsing feature can help protect your data and prevent unauthorized access to your browsing history.</li>
   <li>Increased accessibility: The extension can help increase accessibility to scientific research, particularly for users in regions with limited access to scientific journals and publications.</li>
 </ol>

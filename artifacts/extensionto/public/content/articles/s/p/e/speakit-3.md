@@ -53,7 +53,7 @@ updated_at: "2026-03-16T14:43:08.43788+00:00"
 
 <ul>
     <li><strong>Hands-free control</strong>: With <strong>speakit</strong>, you can control your devices without having to physically interact with them. This is especially useful when you're driving, cooking, or exercising.</li>
-    <li><strong>Increased <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">productivity</a></strong>: <strong>speakit</strong> allows you to perform tasks quickly and efficiently, freeing up time for more important things. You can send messages, make calls, and set reminders - all with just your voice.</li>
+    <li><strong>Increased productivity</strong>: <strong>speakit</strong> allows you to perform tasks quickly and efficiently, freeing up time for more important things. You can send messages, make calls, and set reminders - all with just your voice.</li>
     <li><strong>Improved accessibility</strong>: <strong>speakit</strong> is a game-changer for people with disabilities. It provides an alternative way of interacting with devices, making it easier for people with mobility or dexterity impairments to access information and perform tasks.</li>
 </ul>
 

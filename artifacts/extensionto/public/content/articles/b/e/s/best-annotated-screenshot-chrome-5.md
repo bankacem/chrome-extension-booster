@@ -137,7 +137,7 @@ updated_at: "2026-04-04T22:56:27.255896+00:00"
     <p>A: Yes, most Chrome extensions, including <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a>, allow you to edit annotated screenshots, adding or removing annotations as needed.</p>
   </li>
   <li><strong>Q: How do I choose the best annotated screenshot Chrome extension for my needs?</strong>
-    <p>A: Consider your specific requirements, such as the type of annotations you need, the frequency of use, and the level of <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> required. Read reviews, compare features, and experiment with different extensions to find the best fit for your workflow.</p>
+    <p>A: Consider your specific requirements, such as the type of annotations you need, the frequency of use, and the level of customization required. Read reviews, compare features, and experiment with different extensions to find the best fit for your workflow.</p>
   </li>
 </ul>
 

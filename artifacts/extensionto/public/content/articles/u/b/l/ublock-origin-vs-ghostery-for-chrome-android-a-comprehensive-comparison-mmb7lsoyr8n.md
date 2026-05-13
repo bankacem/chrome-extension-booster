@@ -62,7 +62,7 @@ updated_at: "2026-04-23T12:25:58.935778+00:00"
     <li>Ad blocking: uBlock Origin can block ads, including pop-ups, banners, and video ads.</li>
     <li>Tracker blocking: uBlock Origin can block trackers, including cookies, scripts, and other tracking technologies.</li>
     <li>Malware protection: uBlock Origin can protect your device from malware and other online threats.</li>
-    <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: uBlock Origin allows you to customize your blocking settings, including whitelisting and blacklisting websites.</li>
+    <li>Customization: uBlock Origin allows you to customize your blocking settings, including whitelisting and blacklisting websites.</li>
 </ul>
 
 <h3>Key Features of Ghostery</h3>

@@ -104,7 +104,7 @@ updated_at: "2026-04-23T12:27:40.242225+00:00"
   </thead>
   <tbody>
     <tr>
-      <td><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</td>
+      <td>Customization options</td>
       <td>None</td>
       <td>Many</td>
     </tr>

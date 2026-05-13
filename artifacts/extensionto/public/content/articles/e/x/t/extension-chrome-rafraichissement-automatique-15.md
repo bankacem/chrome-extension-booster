@@ -68,9 +68,9 @@ updated_at: "2026-04-23T12:26:48.558812+00:00"
 <p>With so many <strong>extension chrome rafraichissement automatique</strong> options available, it can be overwhelming to choose the best one for your needs. Here are a few factors to consider:</p>
 
 <ol>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</strong>: Look for an extension that allows you to customize the refresh rate and other settings to suit your needs.</li>
+  <li><strong>Customization options</strong>: Look for an extension that allows you to customize the refresh rate and other settings to suit your needs.</li>
   <li><strong>Compatibility</strong>: Make sure the extension is compatible with your version of Chrome and other browsers.</li>
-  <li><strong>Reviews and ratings</strong>: Check out reviews and ratings from other users to get an idea of the extension's <a href="/blog/noscript-chrome" class="internal-link" title="Unlocking the Power of Noscript Chrome: Boosting Browser Security and Performance">performance</a> and reliability.</li>
+  <li><strong>Reviews and ratings</strong>: Check out reviews and ratings from other users to get an idea of the extension's performance and reliability.</li>
 </ol>
 
 <h2>Our Recommended Extension: Auto Dark Mode Switcher</h2>

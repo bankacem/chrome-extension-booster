@@ -65,7 +65,7 @@ updated_at: "2026-04-23T12:26:52.545921+00:00"
 
 <ol>
   <li><strong>Speech quality</strong>: Look for extensions that offer high-quality speech synthesis, with clear and natural-sounding voices.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</strong>: Choose extensions that allow you to adjust speech rates, pitches, and volumes to suit your preferences.</li>
+  <li><strong>Customization options</strong>: Choose extensions that allow you to adjust speech rates, pitches, and volumes to suit your preferences.</li>
   <li><strong>Compatibility</strong>: Ensure the extension is compatible with your device and browser version.</li>
 </ol>
 

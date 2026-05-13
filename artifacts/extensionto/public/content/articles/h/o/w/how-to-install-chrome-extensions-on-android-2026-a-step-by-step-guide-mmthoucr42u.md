@@ -64,7 +64,7 @@ updated_at: "2026-04-23T12:25:22.132406+00:00"
 <ul>
   <li>Improved productivity: With extensions like <a href="/extension/formula-builder-pro" class="text-primary font-medium hover:underline">Formula Builder Pro</a>, you can perform complex calculations and create financial models on the go.</li>
   <li>Enhanced security: Extensions like <a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a> can protect you from malicious redirects and phishing attacks.</li>
-  <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: With extensions like <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>, you can personalize your browsing experience to suit your preferences.</li>
+  <li>Customization: With extensions like <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>, you can personalize your browsing experience to suit your preferences.</li>
 </ul>
 
 <h2 id="installation">How to Install Chrome Extensions on Android 2026</h2>

@@ -64,7 +64,7 @@ updated_at: "2026-04-23T12:27:12.221916+00:00"
 <ul>
   <li>Enhanced productivity: Chrome Web Store extensions can help you stay focused, organized, and efficient while browsing.</li>
   <li>Improved entertainment: Chrome Web Store extensions can provide access to new games, music, and video content.</li>
-  <li>Increased <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a>: Chrome Web Store extensions allow you to personalize your browsing experience with custom themes, layouts, and features.</li>
+  <li>Increased customization: Chrome Web Store extensions allow you to personalize your browsing experience with custom themes, layouts, and features.</li>
 </ul>
 
 <h2 id="types-of-chrome-web-store-extensions">Types of Chrome Web Store Extensions</h2>

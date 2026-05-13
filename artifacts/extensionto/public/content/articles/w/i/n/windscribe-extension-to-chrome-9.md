@@ -75,7 +75,7 @@ updated_at: "2026-03-16T14:43:13.919237+00:00"
   <li>Port forwarding to enhance your online gaming experience</li>
 </ul>
 
-<p>In addition to these features, the <strong>Windscribe extension for Chrome</strong> also offers a range of <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options, allowing you to tailor your VPN experience to your specific needs. For example, you can choose which servers to connect to, and even set up a custom DNS server for added security.</p>
+<p>In addition to these features, the <strong>Windscribe extension for Chrome</strong> also offers a range of customization options, allowing you to tailor your VPN experience to your specific needs. For example, you can choose which servers to connect to, and even set up a custom DNS server for added security.</p>
 
 <h2 id="how-to-install-windscribe-extension">How to Install Windscribe Extension for Chrome</h2>
 

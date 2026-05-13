@@ -68,7 +68,7 @@ updated_at: "2026-04-23T12:25:27.607331+00:00"
   <li><strong>Improved comprehension</strong>: By slowing down a video, you can better understand complex concepts or instructions.</li>
   <li><strong>Time-saving</strong>: By speeding up a video, you can save time and quickly get through content that you're already familiar with.</li>
   <li><strong>Enhanced <a href="/blog/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm" class="internal-link" title="Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency">productivity</a></strong>: With a Chrome extension to control YouTube speed, you can optimize your video-watching experience to suit your learning style and productivity needs.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a></strong>: A Chrome extension to control YouTube speed allows you to customize the playback speed to your liking, providing a more personalized video-watching experience.</li>
+  <li><strong>Customization</strong>: A Chrome extension to control YouTube speed allows you to customize the playback speed to your liking, providing a more personalized video-watching experience.</li>
 </ul>
 
 <h2 id="how-to-use-a-chrome-extension-to-control-youtube-speed">How to Use a Chrome Extension to Control YouTube Speed</h2>

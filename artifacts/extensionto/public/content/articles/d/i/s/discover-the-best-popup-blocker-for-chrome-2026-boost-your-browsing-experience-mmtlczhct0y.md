@@ -80,7 +80,7 @@ updated_at: "2026-04-23T12:24:20.546694+00:00"
 
 <ol>
   <li>Effectiveness: Look for a popup blocker that can detect and block a wide range of popups and ads.</li>
-  <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: Choose a blocker that allows you to customize your settings and whitelist specific websites.</li>
+  <li>Customization: Choose a blocker that allows you to customize your settings and whitelist specific websites.</li>
   <li>Compatibility: Ensure the blocker is compatible with your browser and device.</li>
   <li>Ease of use: Opt for a blocker with a user-friendly interface that's easy to navigate.</li>
 </ol>

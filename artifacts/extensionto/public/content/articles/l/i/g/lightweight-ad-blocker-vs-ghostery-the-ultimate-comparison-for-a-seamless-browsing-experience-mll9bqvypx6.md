@@ -84,7 +84,7 @@ updated_at: "2026-04-23T12:26:10.846539+00:00"
 <ul>
   <li>Advanced ad blocking: Ghostery uses advanced algorithms to block ads, including those that use anti-ad blocking technology.</li>
   <li>Tracker blocking: Ghostery can also block trackers, which can help protect user privacy and prevent data collection.</li>
-  <li>Customizable: Ghostery offers a range of <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options, allowing users to tailor the extension to their specific needs.</li>
+  <li>Customizable: Ghostery offers a range of customization options, allowing users to tailor the extension to their specific needs.</li>
 </ul>
 
 <h2>Comparison Table</h2>

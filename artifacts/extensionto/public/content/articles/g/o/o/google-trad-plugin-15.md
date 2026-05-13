@@ -56,7 +56,7 @@ updated_at: "2026-04-23T12:26:18.840261+00:00"
     <li><strong>Real-Time Translation:</strong> Translate web pages, documents, and conversations instantly.</li>
     <li><strong>Multi-Language Support:</strong> Supports translation across numerous languages, making it a global communication tool.</li>
     <li><strong>Integration with Web Applications:</strong> Seamlessly integrates with various web applications for effortless translation.</li>
-    <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> Options:</strong> Offers users the ability to customize translation settings according to their preferences.</li>
+    <li><strong>Customization Options:</strong> Offers users the ability to customize translation settings according to their preferences.</li>
 </ul>
 
 <h2>Benefits of Using Google Trad Plugin</h2>

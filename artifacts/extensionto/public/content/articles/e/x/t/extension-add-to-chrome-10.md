@@ -58,7 +58,7 @@ updated_at: "2026-04-23T12:27:18.210433+00:00"
 
 <h2 id="what-are-chrome-extensions">What are Chrome Extensions?</h2>
 
-<p>Chrome extensions are small software programs that can be installed in the Google Chrome browser to add new features, functionality, and <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options. They can range from simple tools like ad blockers and password managers to complex applications like <a href="/extension/formula-builder-pro" class="text-primary font-medium hover:underline">Formula Builder Pro</a>, which allows you to build and calculate complex formulas in your browser.</p>
+<p>Chrome extensions are small software programs that can be installed in the Google Chrome browser to add new features, functionality, and customization options. They can range from simple tools like ad blockers and password managers to complex applications like <a href="/extension/formula-builder-pro" class="text-primary font-medium hover:underline">Formula Builder Pro</a>, which allows you to build and calculate complex formulas in your browser.</p>
 
 <h2 id="how-to-add-extensions-to-chrome">How to Add Extensions to Chrome</h2>
 

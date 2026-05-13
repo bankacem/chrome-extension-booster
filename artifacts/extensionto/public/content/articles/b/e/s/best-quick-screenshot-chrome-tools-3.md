@@ -68,7 +68,7 @@ updated_at: "2026-04-23T12:27:35.516101+00:00"
   <li><strong>Full-page capture</strong>: The ability to capture the entire webpage, not just the visible area.</li>
   <li><strong>Annotation tools</strong>: Options to annotate your screenshots, such as text, arrows, and highlights.</li>
   <li><strong>Easy sharing</strong>: Features that allow you to share your screenshots directly to social media, email, or other platforms.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</strong>: The ability to customize the screenshot process, such as choosing the capture area or delaying the capture.</li>
+  <li><strong>Customization options</strong>: The ability to customize the screenshot process, such as choosing the capture area or delaying the capture.</li>
 </ol>
 <p>For users who also need to manage their browser's performance, extensions like <a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a> can help by automatically suspending inactive tabs to save memory.</p>
 

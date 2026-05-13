@@ -65,7 +65,7 @@ updated_at: "2026-04-23T12:27:21.425769+00:00"
 
 <ol>
     <li>Effectiveness: Look for an ad blocker that can effectively block a wide range of ads, including pop-ups, banners, and tracking scripts.</li>
-    <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: Choose an ad blocker that allows you to customize your blocking settings, such as whitelisting specific websites or blocking specific types of ads.</li>
+    <li>Customization: Choose an ad blocker that allows you to customize your blocking settings, such as whitelisting specific websites or blocking specific types of ads.</li>
     <li>Performance: Opt for an ad blocker that is lightweight and won't slow down your browser.</li>
     <li>Ease of use: Select an ad blocker with a user-friendly interface that makes it easy to manage your blocking settings and view blocked ads.</li>
 </ol>

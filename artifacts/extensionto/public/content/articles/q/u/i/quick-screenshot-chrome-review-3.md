@@ -97,7 +97,7 @@ updated_at: "2026-04-23T12:27:39.571707+00:00"
 
 <h2 id="comparison-with-other-screenshot-extensions">Comparison with Other Screenshot Extensions</h2>
 
-<p>There are many screenshot extensions available for Chrome, but the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension stands out from the rest due to its ease of use, <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options, and sharing features. Here is a comparison table with other popular screenshot extensions:</p>
+<p>There are many screenshot extensions available for Chrome, but the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension stands out from the rest due to its ease of use, customization options, and sharing features. Here is a comparison table with other popular screenshot extensions:</p>
 
 <table class="table table-striped">
   <thead>

@@ -77,7 +77,7 @@ updated_at: "2026-04-23T12:27:36.046076+00:00"
   <li>Capture options: Can the extension capture full-page screenshots, or only visible areas?</li>
   <li>Editing tools: Are there built-in editing tools, such as annotation and cropping?</li>
   <li>Sharing options: Can the extension share screenshots to social media, email, or other platforms?</li>
-  <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: Are there options for customizing the extension, such as setting default capture settings?</li>
+  <li>Customization: Are there options for customizing the extension, such as setting default capture settings?</li>
 </ul>
 
 <h3 id="how-to-use-screenshot-extensions">How to Use Screenshot Extensions Effectively</h3>

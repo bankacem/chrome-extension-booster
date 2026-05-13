@@ -64,7 +64,7 @@ updated_at: "2026-04-23T12:26:21.044713+00:00"
   <ul>
     <li>Enhanced productivity: Streamline your workflow with features like automated chat logging and notification management.</li>
     <li>Improved communication: Enhance your Google Chat experience with features like video conferencing and file sharing.</li>
-    <li>Increased <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a>: Personalize your Google Chat interface with custom themes, notifications, and more.</li>
+    <li>Increased customization: Personalize your Google Chat interface with custom themes, notifications, and more.</li>
     <li>Seamless integration: Integrate Google Chat with other Google apps, such as Google Drive and Google Calendar.</li>
   </ul>
 </p>

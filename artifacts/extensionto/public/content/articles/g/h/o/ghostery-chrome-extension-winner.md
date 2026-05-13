@@ -88,7 +88,7 @@ updated_at: "2026-03-03T17:57:21.907652+00:00"
   <li>Improved online privacy: By blocking trackers and ads, Ghostery plugin Chrome helps you protect your online identity and keep your data private.</li>
   <li>Increased security: Ghostery plugin Chrome also blocks malicious trackers and ads, giving you a more secure browsing experience.</li>
   <li>Faster browsing: By blocking trackers and ads, Ghostery plugin Chrome can also help improve your browsing speed and <a href="/blog/save-pc-resources-with-chrome-tab-suspension-boosting-browser-performance-and-efficiency-mll9bth0gxm" class="internal-link" title="Save PC Resources with Chrome Tab Suspension: Boosting Browser Performance and Efficiency">performance</a>.</li>
-  <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: Ghostery plugin Chrome allows you to customize your blocking settings, so you can choose which trackers and ads to block and which to allow.</li>
+  <li>Customization: Ghostery plugin Chrome allows you to customize your blocking settings, so you can choose which trackers and ads to block and which to allow.</li>
 </ul>
 
 <h2 id="comparison-with-other-privacy-extensions">Comparison with Other Privacy Extensions</h2>

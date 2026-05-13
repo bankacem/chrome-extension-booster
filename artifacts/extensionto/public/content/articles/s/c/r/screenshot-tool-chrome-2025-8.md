@@ -75,7 +75,7 @@ updated_at: "2026-04-23T12:27:32.563848+00:00"
   <li>Visible area capture: The ability to capture only the visible area of the screen.</li>
   <li>Editing tools: Basic editing tools, such as cropping, resizing, and annotating.</li>
   <li>Sharing options: Easy sharing options, such as social media, email, or cloud storage.</li>
-  <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: Customization options, such as screenshot format, quality, and filename.</li>
+  <li>Customization: Customization options, such as screenshot format, quality, and filename.</li>
 </ul>
 
 <h2 id="top-screenshot-tools">Top Screenshot Tools for Chrome in 2025</h2>

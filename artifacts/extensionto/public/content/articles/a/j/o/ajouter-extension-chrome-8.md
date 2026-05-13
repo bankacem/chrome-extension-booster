@@ -125,7 +125,7 @@ updated_at: "2026-04-23T12:27:00.629471+00:00"
     <li><strong>Q: How often should I update my Chrome extensions?</strong>
     <p>A: You should update your Chrome extensions regularly to ensure you have the latest security patches and features.</p></li>
     <li><strong>Q: Can I customize my Chrome extensions?</strong>
-    <p>A: Yes, many Chrome extensions offer <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options. Check the extension's settings or options page to see what's available.</p></li>
+    <p>A: Yes, many Chrome extensions offer customization options. Check the extension's settings or options page to see what's available.</p></li>
 </ol>
 
 <table class="table-auto w-full text-left">

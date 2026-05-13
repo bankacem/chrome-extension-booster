@@ -126,7 +126,7 @@ updated_at: "2026-04-23T12:27:39.334051+00:00"
     </tr>
     <tr>
       <td>Other Tool 1</td>
-      <td>Capture full pages or visible areas; limited <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options</td>
+      <td>Capture full pages or visible areas; limited customization options</td>
       <td>Paid</td>
     </tr>
     <tr>

@@ -76,7 +76,7 @@ updated_at: "2026-04-23T12:25:16.757307+00:00"
   <li><strong>Compatibility</strong>: Make sure the extension is compatible with your Android tablet and the Chrome browser.</li>
   <li><strong><a href="/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk" class="internal-link" title="Unlocking Peak Performance: The Ultimate Guide to Browser Optimization Extensions">Performance</a></strong>: Choose an extension that is lightweight and won't slow down your browser.</li>
   <li><strong>Security</strong>: Opt for an extension that has a good reputation and is free from malware.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a></strong>: Look for an extension that allows you to customize its settings and options to suit your needs.</li>
+  <li><strong>Customization</strong>: Look for an extension that allows you to customize its settings and options to suit your needs.</li>
 </ol>
 
 <h2>Comparison Table</h2>

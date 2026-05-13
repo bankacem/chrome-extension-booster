@@ -79,7 +79,7 @@ updated_at: "2026-03-16T14:43:30.652992+00:00"
 <p>When choosing a screenshotting extension, consider the following factors:</p>
 <ul>
   <li>Ease of use</li>
-  <li>Features and <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options</li>
+  <li>Features and customization options</li>
   <li>Compatibility with Chrome</li>
   <li>Reviews and ratings</li>
 </ul>

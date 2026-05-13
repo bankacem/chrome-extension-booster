@@ -64,7 +64,7 @@ updated_at: "2026-03-16T14:42:52.850152+00:00"
 <ul>
   <li>Effectiveness: Can the extension block all types of pop-ups, including ads and malware?</li>
   <li>Ease of use: Is the extension easy to install and use?</li>
-  <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: Can you customize the extension to block specific types of pop-ups or allow certain websites to display pop-ups?</li>
+  <li>Customization: Can you customize the extension to block specific types of pop-ups or allow certain websites to display pop-ups?</li>
   <li>Compatibility: Is the extension compatible with the latest version of Google Chrome?</li>
 </ul>
 
