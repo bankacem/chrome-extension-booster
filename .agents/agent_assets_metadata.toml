@@ -18,3 +18,9 @@ id = "Z0UYU8m-SV7ULv5Fdlrll"
 uri = "file://VALIDATION_STATUS.md"
 type = "text"
 title = "VALIDATION_STATUS.md — Post-P0 State Report"
+
+[[outputs]]
+id = "UB5ut0XvZxhhGBJGvZzmw"
+uri = "file://SEO_RISK_REPORT.md"
+type = "text"
+title = "SEO_RISK_REPORT.md — Full Risk Analysis"
