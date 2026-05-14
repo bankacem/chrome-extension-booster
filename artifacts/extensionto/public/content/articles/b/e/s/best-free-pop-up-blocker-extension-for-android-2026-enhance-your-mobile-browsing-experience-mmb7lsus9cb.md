@@ -144,6 +144,13 @@ updated_at: "2026-04-23T12:25:57.701004+00:00"
 </table>
 
 <p>In conclusion, the <strong>best free pop up blocker extension for Android 2026</strong> is our <a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a>, which offers effective blocking, customization options, and a lightweight design. By choosing the right pop-up blocker, you can enhance your mobile browsing experience, improve your productivity, and protect your device from malicious scripts and malware.</p>
+<div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
+  <h3 class="text-base font-semibold mb-3">Related Reading</h3>
+  <ul class="space-y-1 text-sm">
+  <li><a href="/blog/chrome-popup-blocker-master-guide" class="internal-link">Complete guide: Chrome Popup Blocker Master Guide</a></li>
+  </ul>
+</div>
+
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">
   <h3 class="text-2xl font-bold mb-3">Get Redirect Shield Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Stop automatic redirects and protect from malicious chains.</p>

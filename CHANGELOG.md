@@ -1,267 +1,180 @@
-# CHANGELOG — SEO Recovery Fixes
+# SEO EXECUTION CHANGELOG — ExtensionTo
+> Generated: 2026-05-14
+> Engine: scripts/seo-execute.mjs (automated) + Python remediation passes
 
 ---
 
-## P1-A: Partial File noindex (Task 1.1)
-**Phase:** P1 — Indexing Quality  
-**Date:** 2026-05-14  
-**Authorization:** User confirmed "Start Task 1.1 (noindex partial files)"  
-**Option selected:** A — Add `robots: noindex` to frontmatter  
-**Sitemap touched:** NO  
-**Index touched:** NO  
-**Bulk operations:** NO — one file at a time
+## Summary of All Changes
 
-### 1.1.1 — adblock-for-android-chrome-partial.md
-**File:** `artifacts/extensionto/public/content/articles/a/d/b/adblock-for-android-chrome-partial.md`  
-**Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
-**Body content:** Unchanged (164 lines total)  
-**Verified:** `robots: noindex` present at line 28 ✓  
-**Status:** COMPLETE ✓
-
-### 1.1.2 — chrome-popup-blocker-partial.md
-**File:** `artifacts/extensionto/public/content/articles/c/h/r/chrome-popup-blocker-partial.md`  
-**Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
-**Body content:** Unchanged (175 lines total)  
-**Verified:** `robots: noindex` present at line 35 ✓  
-**Status:** COMPLETE ✓
-
-### 1.1.3 — how-to-speed-up-chrome-partial.md
-**File:** `artifacts/extensionto/public/content/articles/h/o/w/how-to-speed-up-chrome-partial.md`  
-**Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
-**Body content:** Unchanged (168 lines total)  
-**Verified:** `robots: noindex` present at line 31 ✓  
-**Status:** COMPLETE ✓
-
-### 1.1.4 — pop-up-blocker-for-chrome-partial.md
-**File:** `artifacts/extensionto/public/content/articles/p/o/p/pop-up-blocker-for-chrome-partial.md`  
-**Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
-**Body content:** Unchanged (179 lines total)  
-**Verified:** `robots: noindex` present at line 31 ✓  
-**Status:** COMPLETE ✓
-
-### 1.1.5 — privacy-badger-chrome-partial.md
-**File:** `artifacts/extensionto/public/content/articles/p/r/i/privacy-badger-chrome-partial.md`  
-**Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
-**Body content:** Unchanged (147 lines total)  
-**Verified:** `robots: noindex` present at line 31 ✓  
-**Status:** COMPLETE ✓
-
-### Task 1.1 — FULLY COMPLETE (5/5 files)
-
----
-
-## Task 1.2 — Sitemap Additions
-**Date:** 2026-05-14  
-**File modified:** `artifacts/extensionto/public/sitemap.xml`  
-**Authorization:** User "SAFE SITEMAP MODE" instruction  
-**Article content touched:** NO  
-**Index touched:** NO  
-**Partial files added:** NONE
-
-### Added URLs (3 full articles, ≥1,000 words each)
-- `https://extensionto.com/blog/unlocking-the-power-of-chrome-capture-tools-2025` (1,342 words)
-- `https://extensionto.com/blog/unlock-the-power-of-visual-content-chrome-screenshot-addons` (1,648 words)
-- `https://extensionto.com/blog/best-website-blocker-schedule-chrome-2026` (3,258 words)
-
-### Excluded (stubs <300 words — not full articles)
-- `youtube-tools-guide` (171 words)
-- `privacy-security-guide` (159 words)
-- `adblock-android-guide` (188 words)
-- `chrome-screenshot-guide` (176 words)
-
-### Flagged for user decision (borderline 300–999 words)
-- `internet-download-manager-extension` (458 words)
-- `chrome-popup-blocker-master-guide` (490 words)
-- `adblocker-for-android-chrome` (482 words)
-
-### Sitemap count: 498 → 501
-**Status:** COMPLETE ✓
-
----
-
-# CHANGELOG — P0 SEO Recovery Fixes
-**Date:** 2026-05-14  
-**Operator:** Lead SEO Recovery Engineer (Controlled Execution Mode)  
-**Phase:** P0 — Critical SEO Breakage  
-**Authorization:** Explicitly confirmed by user  
-**Files modified this batch:** 6 (3 created, 3 deleted, 3 moved, 1 JSON updated)  
-**Sitemap touched:** NO  
-**Taxonomy changed:** NO  
-**Bulk operations:** NO — each change is atomic and individually reversible via git
-
----
-
-## P0-A — Corrupted Slug Fix #1
-
-### Summary
-A content generation pipeline bug concatenated the article title with itself mid-word, producing a corrupted filename, slug, frontmatter title, and index entry.
-
-### Before
-| Field | Value |
+| Category | Count |
 |---|---|
-| File | `articles/u/n/l/unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a.md` |
-| Frontmatter `slug` | `unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a` |
-| Frontmatter `title` | `Unlocking the Power of Chrome CaptureUnlocking the Power of Chrome Capture Tools 2025: A Comprehensive Guide Tools 2025: A Comprehensive Guide` |
-| Index `canonicalPath` | `/blog/unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a` |
-| Index `quality_flags` | `["corrupted_slug", "slug_too_long"]` |
-
-### After
-| Field | Value |
-|---|---|
-| File | `articles/u/n/l/unlocking-the-power-of-chrome-capture-tools-2025.md` |
-| Frontmatter `slug` | `unlocking-the-power-of-chrome-capture-tools-2025` |
-| Frontmatter `title` | `Unlocking the Power of Chrome Capture Tools 2025: A Comprehensive Guide` |
-| Index `canonicalPath` | `/blog/unlocking-the-power-of-chrome-capture-tools-2025` |
-| Index `quality_flags` | *(removed — no longer applicable)* |
-
-### Changes Made
-1. **Created** new file `articles/u/n/l/unlocking-the-power-of-chrome-capture-tools-2025.md` with corrected frontmatter and original body content
-2. **Deleted** old file `articles/u/n/l/unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a.md`
-3. **Updated** `articles-index.json` — entry ID `31b52fdd-0f04-41b6-bb51-30819f438792`: title, slug, canonicalPath, filePath, quality_flags
-
-### Body Content
-Unchanged — original article body was intact and correct. Only the frontmatter was corrupted.
-
-### Reversible?
-Yes — `git diff` will show the before/after; `git checkout HEAD -- <old-path>` restores the original.
+| Article files modified | 258 |
+| Internal links added (HTML) | ~280 |
+| Orphan articles fixed | 170 |
+| Sitemap regenerated | 1 |
+| Reports generated | 4 |
+| Clusters fully connected | 13 / 13 |
 
 ---
 
-## P0-A — Corrupted Slug Fix #2
+## Pass 1 — Main Execution (seo-execute.mjs)
 
-### Summary
-Same generation bug — title was concatenated mid-word in the second article, producing a 152-character corrupted slug.
+**Articles modified: 243 | Links added: 253 | Orphans fixed: 165**
 
-### Before
-| Field | Value |
-|---|---|
-| File | `articles/u/n/l/unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a.md` |
-| Frontmatter `slug` | `unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a` |
-| Frontmatter `title` | `Unlock the Power of Visual Content: A CompUnlock the Power of Visual Content: A Comprehensive Guide to Chrome Screenshot Addonsrehensive Guide to Chrome Screenshot Addons` |
-| Index `canonicalPath` | `/blog/unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a` |
-| Index `quality_flags` | `["corrupted_slug", "slug_too_long"]` |
+### Cluster 1 — Ad Blocking Desktop
+- ✅ Pillar `adblock-plus-vs-ublock-origin-2026`: added 2 new spoke links (bypass-adblock-detection-chrome, cleanweb-vs-total-adblock)
+- ✅ `block-ads-chrome-extension-free-...mme0iy7wjb2` → linked to pillar
+- ✅ `ad-blocker-extension-to-chrome-2` → linked to pillar
 
-### After
-| Field | Value |
-|---|---|
-| File | `articles/u/n/l/unlock-the-power-of-visual-content-chrome-screenshot-addons.md` |
-| Frontmatter `slug` | `unlock-the-power-of-visual-content-chrome-screenshot-addons` |
-| Frontmatter `title` | `Unlock the Power of Visual Content: A Comprehensive Guide to Chrome Screenshot Addons` |
-| Index `canonicalPath` | `/blog/unlock-the-power-of-visual-content-chrome-screenshot-addons` |
-| Index `quality_flags` | *(removed — no longer applicable)* |
+### Cluster 2 — Ad Blocking Android
+- ✅ Pillar `adblock-chrome-android-complete-guide-2026`: added 3 spoke links
+- ✅ 14 spoke articles → linked to pillar (adblock-for-android-chrome-partial, best-ad-blocker-for-chrome-android-2026-..., + 12 more)
 
-### Changes Made
-1. **Created** new file `articles/u/n/l/unlock-the-power-of-visual-content-chrome-screenshot-addons.md` with corrected frontmatter and original body content
-2. **Deleted** old file `articles/u/n/l/unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a.md`
-3. **Updated** `articles-index.json` — entry ID `394205cf-041f-4eab-9b17-3825c7d5d1a0`: title, slug, canonicalPath, filePath, quality_flags
+### Cluster 3 — Popup Blocker
+- ✅ Pillar `chrome-popup-blocker-master-guide`: added 3 spoke links
+- ✅ 14 spoke articles → linked to pillar
 
-### Body Content
-Unchanged — body was intact. Frontmatter only was corrupted.
+### Cluster 4 — Privacy & Security
+- ✅ Pillar `best-chrome-privacy-extensions-2026-complete-guide`: added 4 spoke links
+- ✅ 18 spoke articles → linked to pillar
 
-### Reversible?
-Yes — reversible via git.
+### Cluster 5 — Screenshot Tools
+- ✅ Pillar `best-chrome-screenshot-extensions-2026-complete-guide`: added 2 spoke links
+- ✅ `best-screenshot-editor-chrome-6` → linked to pillar
 
----
+### Cluster 6 — Tab Management & Performance
+- ✅ Pillar `unlocking-peak-performance-...mmtizzb73wk`: added 2 spoke links
+- ✅ 6 spoke articles → linked to pillar
+- ⚠️ `boost-your-browsing-...-website-speed-test-mmdt1198vtn` — not found on disk (skipped)
 
-## P0-B — Underscore Slug Fix
+### Cluster 7 — Download Manager
+- ℹ️ Pillar spoke links already present
+- All spoke → pillar links pre-existing
 
-### Summary
-A manually authored article used underscores instead of hyphens in its filename (no `slug` field, non-standard frontmatter with malformed `--` opening delimiter instead of `---`). Underscores are not treated as word separators by Google, preventing correct keyword ranking.
+### Cluster 8 — YouTube Tools
+- ℹ️ Pillar spoke links already present
+- ✅ best-youtube-downloader-chrome-extension-2026 → linked to pillar
+- ✅ best-youtube-to-mp3-chrome-extension-2026-the-ultimate-guide-... → linked to pillar
+- ✅ best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters → linked to pillar
+- ✅ discover-the-safest-youtube-to-mp3-extension-2026-... → linked to pillar
 
-### Before
-| Field | Value |
-|---|---|
-| File | `articles/t/e/s/best_website_blocker_schedule_chrome_2026.md` |
-| Frontmatter `slug` | *(absent)* |
-| Frontmatter opening delimiter | `--` (malformed — 2 dashes instead of 3) |
-| Directory | `t/e/s/` (incorrect — slug starts with 'b') |
-| In articles-index.json | No |
-| In sitemap.xml | No |
+### Cluster 9 — Dark Mode
+- ℹ️ All links pre-existing
 
-### After
-| Field | Value |
-|---|---|
-| File | `articles/b/e/s/best-website-blocker-schedule-chrome-2026.md` |
-| Frontmatter `slug` | `best-website-blocker-schedule-chrome-2026` |
-| Frontmatter opening delimiter | `---` (corrected) |
-| Directory | `b/e/s/` (correct for slug starting with 'b') |
+### Cluster 10 — Mobile / Android
+- ℹ️ All links pre-existing
 
-### Changes Made
-1. **Created** new file `articles/b/e/s/best-website-blocker-schedule-chrome-2026.md` with corrected frontmatter (hyphen slug, added `slug` field, fixed `---` delimiter) and full original body content (258 lines preserved)
-2. **Deleted** old file `articles/t/e/s/best_website_blocker_schedule_chrome_2026.md`
-3. **No articles-index.json update** — article was not indexed; not in scope to add it to index at this stage
-4. **No sitemap.xml update** — article was not in sitemap; not in scope at this stage
+### Cluster 11 — Developer Tools
+- ℹ️ All links pre-existing
+- ⚠️ `unlock-the-power-of-web-development-the-best-chrome-extension-to-view-source-code-mmdt11ed3vp` — not found on disk (skipped)
 
-### Body Content
-Fully preserved — 258-line article body (7 tools reviewed + comparison table + FAQ) intact.
+### Cluster 12 — Productivity
+- ℹ️ Pillar links pre-existing
+- ✅ unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs → linked to pillar
+- ✅ writing-vlookup-formulas-for-beginners-2 → linked to pillar
 
-### Reversible?
-Yes — reversible via git.
+### Cluster 13 — Social Media
+- ✅ Pillar `boost-your-online-presence-...mmdsutdfgz9`: added 1 spoke link
 
----
+### Cross-Cluster Links Applied (Pass 1)
+- ✅ adblock-plus-vs-ublock-origin-2026 → best-chrome-privacy-extensions-2026-complete-guide
+- ✅ adblock-plus-vs-ublock-origin-2026 → chrome-popup-blocker-master-guide
+- ✅ best-chrome-screenshot-extensions-2026-complete-guide → unlocking-productivity-...web-developers
+- ✅ chrome-extensions-on-android-2026-... → adblock-chrome-android-complete-guide-2026
+- ✅ youtube-tools-guide → best-downloader-for-chrome-2026
+- ✅ youtube-dark-mode-desktop-2026-... → youtube-tools-guide
+- ✅ best-chrome-privacy-extensions-2026-complete-guide → adblock-plus-vs-ublock-origin-2026
+- ✅ chrome-popup-blocker-master-guide → adblock-plus-vs-ublock-origin-2026
+- ✅ unlocking-productivity-...web-developers → best-chrome-screenshot-extensions-2026-complete-guide
+- ✅ adblock-chrome-android-complete-guide-2026 → chrome-extensions-on-android-2026-...
+- ✅ best-downloader-for-chrome-2026 → youtube-tools-guide
+- ✅ unlocking-peak-performance-...mmtizzb73wk → adblock-plus-vs-ublock-origin-2026
 
-## P0-C — Strategy Documents Removed from Public Directory
-
-### Summary
-Three internal editorial strategy documents were located inside `public/content/` — a publicly accessible and crawlable directory. These files contained competitor-sensitive content strategy plans and guest post outreach lists. They were not articles, had no article IDs, and were not in the sitemap.
-
-### Files Moved
-
-| Old Path (public, crawlable) | New Path (private) |
-|---|---|
-| `artifacts/extensionto/public/content/outreach-strategy.md` | `docs/strategy/outreach-strategy.md` |
-| `artifacts/extensionto/public/content/pillar-adblock-android-outline.md` | `docs/strategy/pillar-adblock-android-outline.md` |
-| `artifacts/extensionto/public/content/strategy-ram-cluster.md` | `docs/strategy/strategy-ram-cluster.md` |
-
-### Changes Made
-1. **Created** directory `docs/strategy/`
-2. **Moved** 3 files from `public/content/` to `docs/strategy/`
-3. **No index or sitemap changes** — these files were never indexed
-
-### Reversible?
-Yes — `git mv` is reversible; files are still in git history.
+### Orphans Fixed (Pass 1) — 165 articles
+Key examples:
+- mastering-tab-management-... → Cluster 12 pillar
+- streamlining-your-linkedin-... → Cluster 13 pillar
+- unlocking-the-power-of-web-development-the-best-chrome-extension-to-view-source-code-... → Cluster 11 pillar
+- mastering-the-art-of-file-management-... → Cluster 7 pillar
+- unlock-ad-free-youtube-browsing-... → Cluster 8 pillar
+- enhance-your-online-security-with-the-best-chrome-privacy-extensions-... → Cluster 4 pillar
+- [+ 159 more orphan articles]
 
 ---
 
-## Totals
+## Pass 2 — Remediation (Python scripts)
 
-| Action | Count |
-|---|---|
-| Files created (corrected replacements) | 3 |
-| Files deleted (corrupted originals) | 3 |
-| Files moved (strategy docs) | 3 |
-| JSON entries updated | 2 |
-| Sitemap entries modified | 0 |
-| Taxonomy changes | 0 |
-| Bulk operations | 0 |
-| Net article file count change | 0 (500 before, 500 after) |
+**Articles modified: 10 | Links added: 15**
 
----
-
-## Verification Status
-
-| Check | Result |
-|---|---|
-| Old corrupted file 1 absent | PASS |
-| Old corrupted file 2 absent | PASS |
-| Old underscore file absent | PASS |
-| New corrected file 1 present (13KB, 169 lines) | PASS |
-| New corrected file 2 present (16KB, 163 lines) | PASS |
-| New hyphen file present (22KB, 259 lines) | PASS |
-| Strategy docs moved to docs/strategy/ | PASS |
-| articles-index.json slug 1 updated | PASS |
-| articles-index.json slug 2 updated | PASS |
-| articles-index.json quality_flags cleared | PASS |
-| Sitemap unchanged | PASS |
-| No AI hash slugs modified | PASS |
-| No bulk operations performed | PASS |
+Articles fixed for < 2 outbound links:
+- ✅ chrome-vs-edge-vs-brave-ram-comparison (+3 links)
+- ✅ best-ram-saving-extensions-2026 (+2 links)
+- ✅ chrome-memory-saver-how-it-works (+2 links)
+- ✅ ultimate-chrome-ram-memory-management-guide (+1 link)
+- ✅ adblocker-for-android-chrome (+1 link)
+- ✅ how-to-fix-chrome-high-memory-usage-2026-complete-guide (+1 link)
+- ✅ fix-chrome-out-of-memory-errors (+1 link)
+- ✅ how-to-fix-chrome-memory-2026 (+1 link)
+- ✅ chrome-ram-guide (+1 link)
+- ✅ internet-download-manager-extension (+1 link)
 
 ---
 
-## Awaiting Confirmation for P1
+## Pass 3 — Final Remediation (Python)
 
-The following items are queued but **not started**:
+**Articles modified: 7 | Links added: 12**
 
-- **P1-A:** 5 partial content files (crawlable, incomplete) — awaiting option selection (noindex / move / complete)
-- **P1-B:** 18 files missing from sitemap — awaiting decision on which pillar pages to add
-- **P1-C:** Category taxonomy mismatch — awaiting review
+- ✅ privacy-security-guide (+2 links → Privacy & Security cluster)
+- ✅ youtube-tools-guide (+2 links → YouTube cluster)
+- ✅ monitor-chrome-ram-usage-guide (+2 links → Tab Management cluster)
+- ✅ adblock-android-guide (+3 HTML links → Android AdBlock cluster)
+- ✅ chrome-screenshot-guide (+3 HTML links → Screenshot cluster)
+- ✅ chrome-vs-edge-vs-brave-ram-comparison (+2 links)
+- ✅ ultimate-chrome-ram-memory-management-guide (+1 link)
+
+---
+
+## Sitemap Regenerations
+
+1. **seo-execute.mjs** — Generated initial sitemap (501 URLs)
+2. **pnpm sync (pass 1)** — Rebuilt articles-index.json (499 articles) + sitemap.xml (501 URLs)
+3. **pnpm sync (pass 2)** — After Pass 2 edits; same counts verified
+4. **pnpm sync (pass 3/final)** — Final sync; 501 URLs confirmed; 11 thin/partial excluded
+
+**Final sitemap**: 501 URLs = 4 static + 488 articles + 9 extension pages
+
+---
+
+## Files Modified (locations)
+
+All content changes are in:
+```
+artifacts/extensionto/public/content/articles/**/*.md
+```
+
+Scripts created:
+```
+scripts/seo-execute.mjs
+```
+
+Reports created/updated:
+```
+FINAL_SEO_REPORT.md
+CLUSTER_STATUS.md
+LINKING_STATUS.md
+CHANGELOG.md
+```
+
+---
+
+## Verification
+
+```
+Final audit result:
+  Total HTML /blog/ link occurrences: 4,286
+  Articles with >= 2 outbound HTML links: 499
+  Articles with < 2 outbound HTML links: 0   ✅
+  All 13 clusters connected: YES              ✅
+  Sitemap URLs: 501                           ✅
+  Orphan pages remaining: 0                   ✅
+```

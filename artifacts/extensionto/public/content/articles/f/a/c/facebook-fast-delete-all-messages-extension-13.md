@@ -129,6 +129,13 @@ updated_at: "2026-04-23T12:26:19.070816+00:00"
     <li><strong>Q: Can I undo deleted messages?</strong>
     <p>A: No, deleted messages cannot be undone. Make sure to use the extension with caution and only delete messages that you are sure you want to remove.</p></li>
 </ol>
+<div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
+  <h3 class="text-base font-semibold mb-3">Related Reading</h3>
+  <ul class="space-y-1 text-sm">
+  <li><a href="/blog/boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing-mmdsutdfgz9" class="internal-link">Chrome Extensions for Social Media Marketing: Ultimate Guide</a></li>
+  </ul>
+</div>
+
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">
   <h3 class="text-2xl font-bold mb-3">Get Quick Screenshot Lite Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Capture full page or visible area screenshots instantly.</p>

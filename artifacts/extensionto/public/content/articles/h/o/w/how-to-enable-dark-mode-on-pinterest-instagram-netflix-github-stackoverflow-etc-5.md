@@ -171,6 +171,13 @@ updated_at: "2026-03-03T17:57:48.933393+00:00"
 </ol>
 
 <p>Now that you know <strong>how to enable Dark Mode on Pinterest, Instagram, Netflix, GitHub, StackOverflow, and more</strong>, you can enjoy a more comfortable and visually appealing browsing experience. Remember to also check out our other Chrome extensions, including <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a>, <a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a>, and <a href="/extension/securakey-pro" class="text-primary font-medium hover:underline">SecuraKey Pro</a>, to enhance your browsing experience even further.</p>
+<div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
+  <h3 class="text-base font-semibold mb-3">Related Reading</h3>
+  <ul class="space-y-1 text-sm">
+  <li><a href="/blog/youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds" class="internal-link">YouTube Dark Mode Desktop 2026: Turn It On in 30 Seconds</a></li>
+  </ul>
+</div>
+
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">
   <h3 class="text-2xl font-bold mb-3">Get Quick Screenshot Lite Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Capture full page or visible area screenshots instantly.</p>

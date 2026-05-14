@@ -75,3 +75,11 @@ Don't install all 10! The best stack for 2026 is: 1. **uBlock Origin** (to block
 3. **Auto Tab Discard** (for background management).
 
 For troubleshooting browser crashes, see our [Out of Memory fix guide](/blog/fix-chrome-out-of-memory-errors).
+
+<div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
+  <h3 class="text-base font-semibold mb-3">Related Reading</h3>
+  <ul class="space-y-1 text-sm">
+  <li><a href="/blog/chrome-vs-edge-vs-brave-ram-comparison" class="internal-link">Chrome vs Edge vs Brave RAM comparison</a></li>
+  <li><a href="/blog/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance-mll9bsc31qx" class="internal-link">reduce Chrome RAM usage</a></li>
+  </ul>
+</div>

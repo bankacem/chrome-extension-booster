@@ -65,3 +65,19 @@ Our direct download utility is designed for high-performance ad and popup suppre
 ## Direct Download Section
 
 Take control of your browser today by downloading our verified popup and ad-blocking utilities.
+
+<div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
+  <h3 class="text-base font-semibold mb-3">Related Reading</h3>
+  <ul class="space-y-1 text-sm">
+  <li><a href="/blog/best-free-popup-blocker-for-chrome-2026-enhance-your-browsing-experience-mll9brzi0mt" class="internal-link">best free popup blocker</a></li>
+  <li><a href="/blog/block-newsletter-popups-and-allow-notifications-prompts-5" class="internal-link">block newsletter popups</a></li>
+  <li><a href="/blog/discover-the-best-popup-blocker-for-android-boost-your-mobile-browsing-experience-mmtld1tfrpr" class="internal-link">popup blocker for Android</a></li>
+  </ul>
+</div>
+
+<div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
+  <h3 class="text-base font-semibold mb-3">Related Reading</h3>
+  <ul class="space-y-1 text-sm">
+  <li><a href="/blog/adblock-plus-vs-ublock-origin-2026" class="internal-link">ad blocker comparison guide</a></li>
+  </ul>
+</div>

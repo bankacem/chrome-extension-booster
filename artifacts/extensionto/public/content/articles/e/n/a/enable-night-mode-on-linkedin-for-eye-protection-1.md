@@ -123,6 +123,13 @@ updated_at: "2026-04-23T12:27:40.529888+00:00"
 </ol>
 
 <p>By <strong>enabling night mode on LinkedIn for eye protection</strong> and reducing blue light emission, you can create a healthier browsing experience and protect your eyes from the potential risks of screen time. Try using <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> today and start enjoying the benefits of night mode!</p>
+<div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
+  <h3 class="text-base font-semibold mb-3">Related Reading</h3>
+  <ul class="space-y-1 text-sm">
+  <li><a href="/blog/youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds" class="internal-link">YouTube Dark Mode Desktop 2026: Turn It On in 30 Seconds</a></li>
+  </ul>
+</div>
+
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">
   <h3 class="text-2xl font-bold mb-3">Get Auto Dark Mode Switcher Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Automatically switch between dark and light modes.</p>

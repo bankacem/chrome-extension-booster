@@ -157,3 +157,10 @@ updated_at: "2026-04-23T12:27:34.130179+00:00"
   ]
 }
 ```
+
+<div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
+  <h3 class="text-base font-semibold mb-3">Related Reading</h3>
+  <ul class="space-y-1 text-sm">
+  <li><a href="/blog/best-chrome-screenshot-extensions-2026-complete-guide" class="internal-link">Complete guide: Best Chrome Screenshot Extensions 2026: Complete Guide</a></li>
+  </ul>
+</div>

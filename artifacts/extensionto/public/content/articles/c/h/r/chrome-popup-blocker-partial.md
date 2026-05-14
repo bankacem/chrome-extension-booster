@@ -162,6 +162,13 @@ robots: noindex
   <li><strong>Q: Can I use other Chrome extensions with the Light Popup Blocker?</strong> A: Yes, you can use other Chrome extensions with the <a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a>, such as the <a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a> or the <a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a>.</li>
   <li><strong>Q: Where can I find more information on Chrome extensions and web apps?</strong> A: You can find more information on Chrome extensions and web apps by checking out our article on <a href="/blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025">Chrome Extensions vs. Web Apps: The Ultimate Comparison for Productivity in 2025</a> or our guide to <a href="/blog/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users">Pro Browsing Chrome Extensions: The Ultimate Workflow Upgrade for Power Users</a>.</li>
 </ul>
+<div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
+  <h3 class="text-base font-semibold mb-3">Related Reading</h3>
+  <ul class="space-y-1 text-sm">
+  <li><a href="/blog/chrome-popup-blocker-master-guide" class="internal-link">Complete guide: Chrome Popup Blocker Master Guide</a></li>
+  </ul>
+</div>
+
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">
   <h3 class="text-2xl font-bold mb-3">Get Redirect Shield Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Stop automatic redirects and protect from malicious chains.</p>

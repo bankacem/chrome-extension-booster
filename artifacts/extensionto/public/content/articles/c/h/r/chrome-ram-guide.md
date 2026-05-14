@@ -175,3 +175,11 @@ schema:
 
 <h3>Does the V8 engine affect RAM usage?</h3>
 <p>Absolutely. The V8 engine handles all JavaScript execution and garbage collection within the browser. Optimized code and efficient memory allocation within V8 are critical for maintaining low RAM usage in modern, script-heavy web applications.</p>
+
+
+<div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
+  <h3 class="text-base font-semibold mb-3">Related Reading</h3>
+  <ul class="space-y-1 text-sm">
+  <li><a href="/blog/chrome-vs-edge-vs-brave-ram-comparison" class="internal-link">Chrome vs Edge RAM comparison</a></li>
+  </ul>
+</div>
