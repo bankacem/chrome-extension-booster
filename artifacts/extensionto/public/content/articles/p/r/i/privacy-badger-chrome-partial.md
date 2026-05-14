@@ -25,6 +25,7 @@ views: 1
 read_time: 4
 created_at: "2026-02-26T18:17:18.230372+00:00"
 updated_at: "2026-04-23T12:26:05.814713+00:00"
+robots: noindex
 ---
 
 <h1>Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security</h1>

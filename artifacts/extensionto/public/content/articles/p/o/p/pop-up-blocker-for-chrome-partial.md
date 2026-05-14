@@ -25,6 +25,7 @@ views: 0
 read_time: 5
 created_at: "2026-02-26T18:17:20.560705+00:00"
 updated_at: "2026-03-16T14:42:52.850152+00:00"
+robots: noindex
 ---
 
 <h1>Get the Best Free Pop Up Blocker for Google Chrome to Enhance Your Browsing Experience</h1>

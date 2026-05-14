@@ -30,7 +30,23 @@
 **Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
 **Body content:** Unchanged (168 lines total)  
 **Verified:** `robots: noindex` present at line 31 ✓  
-**Status:** COMPLETE — awaiting user confirmation before 1.1.4
+**Status:** COMPLETE ✓
+
+### 1.1.4 — pop-up-blocker-for-chrome-partial.md
+**File:** `artifacts/extensionto/public/content/articles/p/o/p/pop-up-blocker-for-chrome-partial.md`  
+**Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
+**Body content:** Unchanged (179 lines total)  
+**Verified:** `robots: noindex` present at line 31 ✓  
+**Status:** COMPLETE ✓
+
+### 1.1.5 — privacy-badger-chrome-partial.md
+**File:** `artifacts/extensionto/public/content/articles/p/r/i/privacy-badger-chrome-partial.md`  
+**Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
+**Body content:** Unchanged (147 lines total)  
+**Verified:** `robots: noindex` present at line 31 ✓  
+**Status:** COMPLETE ✓
+
+### Task 1.1 — FULLY COMPLETE (5/5 files)
 
 ---
 
