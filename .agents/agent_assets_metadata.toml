@@ -24,3 +24,9 @@ id = "UB5ut0XvZxhhGBJGvZzmw"
 uri = "file://SEO_RISK_REPORT.md"
 type = "text"
 title = "SEO_RISK_REPORT.md — Full Risk Analysis"
+
+[[outputs]]
+id = "DvMuFOIvgStyrcJCDFJDV"
+uri = "file://SAFE_AUDIT_REPORT.md"
+type = "text"
+title = "SAFE_AUDIT_REPORT.md — Full P0/P1/P2 Classification"
