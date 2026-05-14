@@ -23,7 +23,14 @@
 **Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
 **Body content:** Unchanged (175 lines total)  
 **Verified:** `robots: noindex` present at line 35 ✓  
-**Status:** COMPLETE — awaiting user confirmation before 1.1.3
+**Status:** COMPLETE ✓
+
+### 1.1.3 — how-to-speed-up-chrome-partial.md
+**File:** `artifacts/extensionto/public/content/articles/h/o/w/how-to-speed-up-chrome-partial.md`  
+**Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
+**Body content:** Unchanged (168 lines total)  
+**Verified:** `robots: noindex` present at line 31 ✓  
+**Status:** COMPLETE — awaiting user confirmation before 1.1.4
 
 ---
 

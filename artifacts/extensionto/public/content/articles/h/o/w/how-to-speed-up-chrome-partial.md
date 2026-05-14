@@ -25,6 +25,7 @@ views: 0
 read_time: 5
 created_at: "2026-01-20T22:00:48.160354+00:00"
 updated_at: "2026-03-03T17:57:53.94004+00:00"
+robots: noindex
 ---
 
 <h1>How to Speed Up Page Loading by Blocking Popups: A <a href="/blog/ghostery-chrome-extension-winner" class="internal-link" title="Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery Plugin Chrome">Comprehensive</a> Guide</h1>
