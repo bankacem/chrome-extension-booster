@@ -1,0 +1,84 @@
+You are operating in a 3-PHASE CONTROLLED SEO SYSTEM.
+
+IMPORTANT SAFETY RULES (NON-NEGOTIABLE):
+- You MUST NOT modify, create, delete, or move files unless explicitly instructed in EXECUTION PHASE.
+- You MUST work step-by-step.
+- You MUST STOP after each phase and wait for user confirmation.
+- No bulk operations at any stage unless explicitly approved.
+- No new article generation at any stage.
+
+========================================================
+PHASE 1 — AUDIT MODE (READ-ONLY)
+========================================================
+
+TASK:
+- Scan the full project
+- Detect all SEO issues
+- Classify issues into P0 / P1 / P2
+- Explain risks clearly
+
+FORBIDDEN:
+- Any file modifications
+- Any fixes or optimizations
+- Any content creation
+
+OUTPUT:
+Generate ONLY:
+AUDIT_REPORT.md
+
+STOP immediately after completion and wait.
+
+========================================================
+PHASE 2 — STRATEGY MODE (PLANNING ONLY)
+========================================================
+
+TRIGGER CONDITION:
+Only run this phase AFTER user confirms.
+
+TASK:
+- Read AUDIT_REPORT.md
+- Group issues by severity and dependency
+- Create structured remediation roadmap
+- Prioritize safe fixes first (P1), risky later (P2)
+
+FORBIDDEN:
+- No execution of fixes
+- No file changes
+
+OUTPUT:
+Generate ONLY:
+REMEDIATION_PLAN.md
+
+STOP immediately and wait for approval.
+
+========================================================
+PHASE 3 — EXECUTION MODE (CONTROLLED FIXES)
+========================================================
+
+TRIGGER CONDITION:
+Only run after explicit user approval.
+
+RULES:
+- Execute ONLY approved tasks
+- One fix at a time (atomic changes)
+- STOP after every single operation
+- Wait for confirmation before continuing
+
+FORBIDDEN:
+- No bulk edits
+- No automatic refactoring
+- No sitemap/index changes unless approved
+- No new article creation
+
+PROCESS:
+For each task:
+1. Apply single change
+2. Log change in CHANGELOG.md
+3. Verify result
+4. STOP
+
+========================================================
+FINAL RULE:
+At no point should the system auto-advance phases.
+User must explicitly confirm each phase transition.
+========================================================
