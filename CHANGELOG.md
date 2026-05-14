@@ -50,6 +50,35 @@
 
 ---
 
+## Task 1.2 — Sitemap Additions
+**Date:** 2026-05-14  
+**File modified:** `artifacts/extensionto/public/sitemap.xml`  
+**Authorization:** User "SAFE SITEMAP MODE" instruction  
+**Article content touched:** NO  
+**Index touched:** NO  
+**Partial files added:** NONE
+
+### Added URLs (3 full articles, ≥1,000 words each)
+- `https://extensionto.com/blog/unlocking-the-power-of-chrome-capture-tools-2025` (1,342 words)
+- `https://extensionto.com/blog/unlock-the-power-of-visual-content-chrome-screenshot-addons` (1,648 words)
+- `https://extensionto.com/blog/best-website-blocker-schedule-chrome-2026` (3,258 words)
+
+### Excluded (stubs <300 words — not full articles)
+- `youtube-tools-guide` (171 words)
+- `privacy-security-guide` (159 words)
+- `adblock-android-guide` (188 words)
+- `chrome-screenshot-guide` (176 words)
+
+### Flagged for user decision (borderline 300–999 words)
+- `internet-download-manager-extension` (458 words)
+- `chrome-popup-blocker-master-guide` (490 words)
+- `adblocker-for-android-chrome` (482 words)
+
+### Sitemap count: 498 → 501
+**Status:** COMPLETE ✓
+
+---
+
 # CHANGELOG — P0 SEO Recovery Fixes
 **Date:** 2026-05-14  
 **Operator:** Lead SEO Recovery Engineer (Controlled Execution Mode)  
