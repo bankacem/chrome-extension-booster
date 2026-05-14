@@ -47,3 +47,8 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+# Google Indexing
+service-account.json
+google-indexing.log
+scripts/indexed-urls.json
