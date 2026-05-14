@@ -30,3 +30,9 @@ id = "DvMuFOIvgStyrcJCDFJDV"
 uri = "file://SAFE_AUDIT_REPORT.md"
 type = "text"
 title = "SAFE_AUDIT_REPORT.md — Full P0/P1/P2 Classification"
+
+[[outputs]]
+id = "LJOeN1ZC5wzSIHOuGaGSR"
+uri = "file://REMEDIATION_PLAN.md"
+type = "text"
+title = "REMEDIATION_PLAN.md — Phase 2 Strategy Output"
