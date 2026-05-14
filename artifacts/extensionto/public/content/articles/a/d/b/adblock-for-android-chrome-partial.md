@@ -25,6 +25,7 @@ views: 0
 read_time: 5
 created_at: "2026-02-26T18:17:21.569422+00:00"
 updated_at: "2026-04-18T18:40:22.4543+00:00"
+robots: noindex
 ---
 
 <h1>Unlock the Power of Ad-Free Browsing: The Best Adblock Extension for Chrome Android</h1>

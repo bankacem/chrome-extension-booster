@@ -1,3 +1,25 @@
+# CHANGELOG — SEO Recovery Fixes
+
+---
+
+## P1-A: Partial File noindex (Task 1.1)
+**Phase:** P1 — Indexing Quality  
+**Date:** 2026-05-14  
+**Authorization:** User confirmed "Start Task 1.1 (noindex partial files)"  
+**Option selected:** A — Add `robots: noindex` to frontmatter  
+**Sitemap touched:** NO  
+**Index touched:** NO  
+**Bulk operations:** NO — one file at a time
+
+### 1.1.1 — adblock-for-android-chrome-partial.md
+**File:** `artifacts/extensionto/public/content/articles/a/d/b/adblock-for-android-chrome-partial.md`  
+**Change:** Added `robots: noindex` to YAML frontmatter (after `updated_at` field, before closing `---`)  
+**Body content:** Unchanged (164 lines total)  
+**Verified:** `robots: noindex` present at line 28 ✓  
+**Status:** COMPLETE — awaiting user confirmation before 1.1.2
+
+---
+
 # CHANGELOG — P0 SEO Recovery Fixes
 **Date:** 2026-05-14  
 **Operator:** Lead SEO Recovery Engineer (Controlled Execution Mode)  
