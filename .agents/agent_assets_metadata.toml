@@ -12,3 +12,9 @@ id = "lelkqWxINsUb69LmZyJZI"
 uri = "file://CHANGELOG.md"
 type = "text"
 title = "CHANGELOG — P0 Fixes (6 operations)"
+
+[[outputs]]
+id = "Z0UYU8m-SV7ULv5Fdlrll"
+uri = "file://VALIDATION_STATUS.md"
+type = "text"
+title = "VALIDATION_STATUS.md — Post-P0 State Report"
