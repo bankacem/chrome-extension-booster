@@ -1,10 +1,7 @@
 ---
 id: 31b52fdd-0f04-41b6-bb51-30819f438792
-title: >-
-  Unlocking the Power of Chrome CaptureUnlocking the Power of Chrome Capture
-  Tools 2025: A Comprehensive Guide Tools 2025: A Comprehensive Guide
-slug: >-
-  unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a
+title: "Unlocking the Power of Chrome Capture Tools 2025: A Comprehensive Guide"
+slug: unlocking-the-power-of-chrome-capture-tools-2025
 excerpt: >-
   Welcome to the world of Chrome Capture Tools 2025, where capturing and saving
   web pages, screenshots, and other online content has never been easier. As we

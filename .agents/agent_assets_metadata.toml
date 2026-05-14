@@ -6,3 +6,9 @@ id = "qZcxT3rQVxswb4B-EE2OJ"
 uri = "file://AUDIT_REPORT.md"
 type = "text"
 title = "SEO AUDIT REPORT — Phase 1 (Read-Only)"
+
+[[outputs]]
+id = "lelkqWxINsUb69LmZyJZI"
+uri = "file://CHANGELOG.md"
+type = "text"
+title = "CHANGELOG — P0 Fixes (6 operations)"

@@ -1,7 +1,8 @@
---
+---
 title: "Best Website Blocker with Schedule for Chrome (2026): 7 Tested & Compared"
 description: "I tested 7 Chrome website blockers with scheduling features. Real pricing, features, and genuine weaknesses for each."
 keyword: "website blocker with schedule chrome extension"
+slug: best-website-blocker-schedule-chrome-2026
 date: 2026-05-12
 ---
 

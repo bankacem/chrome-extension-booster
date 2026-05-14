@@ -1,11 +1,7 @@
 ---
 id: 394205cf-041f-4eab-9b17-3825c7d5d1a0
-title: >-
-  Unlock the Power of Visual Content: A CompUnlock the Power of Visual Content:
-  A Comprehensive Guide to Chrome Screenshot Addonsrehensive Guide to Chrome
-  Screenshot Addons
-slug: >-
-  unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a
+title: "Unlock the Power of Visual Content: A Comprehensive Guide to Chrome Screenshot Addons"
+slug: unlock-the-power-of-visual-content-chrome-screenshot-addons
 excerpt: >-
   When it comes to capturing and sharing web content, Chrome Screenshot Addons
   have revolutionized the way we interact with the internet. Whether you're a
@@ -26,7 +22,7 @@ scheduled_at: null
 author: AI Generator
 views: 1
 read_time: 6
-created_at: "2026-01-21T18:56:53.537382+00:00"
+created_at: "2026-01-21T18:56:53.537432+00:00"
 updated_at: "2026-04-23T12:27:23.107979+00:00"
 ---
 
