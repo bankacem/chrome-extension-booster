@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "generated": "2026-05-14",
+  "description": "Client-side redirect map for SEO recovery. Maps source paths to canonical destinations. Used by App.tsx redirect handler. Do NOT redirect without confirming source has no important backlinks.",
+  "redirects": [
+    {
+      "from": "/blog/is-ghostery-safe-to-use-a-professional-2026-review-mmb7ltlowx4",
+      "to": "/blog/is-ghostery-safe-to-use-a-professional-2026-review-mmb7srbz193",
+      "reason": "Exact duplicate article — loser has 1 inbound link, winner has 18 inbound links and 1,072 words vs 1,067",
+      "risk": "LOW",
+      "verified": true,
+      "date_added": "2026-05-14",
+      "source_inbound": 1,
+      "target_inbound": 18
+    }
+  ],
+  "pending_review": [
+    {
+      "from": "/blog/quick-screenshot-chrome-tutorial-1",
+      "to": "/blog/screenshot-tool-chrome-guide-1",
+      "reason": "Cannibalization cluster — near-identical content",
+      "risk": "MEDIUM",
+      "verified": false,
+      "note": "Verify no unique content in source before redirecting. Check GSC for rankings."
+    },
+    {
+      "from": "/blog/unlocking-the-power-of-ghostery-extension-chrome",
+      "to": "/blog/ghostery-chrome-extension-winner",
+      "reason": "Cannibalization cluster — title variant of same topic",
+      "risk": "MEDIUM",
+      "verified": false,
+      "note": "Merge unique content to winner first. Check for backlinks."
+    }
+  ]
+}
