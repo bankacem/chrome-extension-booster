@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "qZcxT3rQVxswb4B-EE2OJ"
+uri = "file://AUDIT_REPORT.md"
+type = "text"
+title = "SEO AUDIT REPORT — Phase 1 (Read-Only)"
