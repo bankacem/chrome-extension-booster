@@ -29,7 +29,7 @@ date: 2026-05-12
 
 ## Why You Need a Website Blocker with Scheduling
 
-A basic website blocker that permanently blocks sites is easy to bypass — you just disable it when willpower runs out. What separates effective focus tools from gimmicks is **scheduling**: the ability to define exactly when each site is blocked and when it is accessible, automatically, without requiring you to make a decision in the moment of temptation.
+A basic website blocker that permanently blocks sites is easy to bypass — you just disable it when willpower runs out. What separates effective focus tools from gimmicks is **scheduling**: the ability to define exactly when each site is blocked and when it is accessible, automatically, without requiring you to make a decision in the moment of temptation. For the full free extension toolkit that complements focus tools, see our [best free Chrome extensions](//blog/best-free-chrome-extensions-the-2025-toolkit-you-actually-need) guide.
 
 Schedule-based blocking works because it removes the *decision point*. If Reddit is blocked from 9 AM to 5 PM every weekday, your brain does not negotiate with yourself at 2 PM — the system already decided. This is the difference between a tool you use once and one that actually changes your browsing habits.
 

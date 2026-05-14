@@ -38,7 +38,7 @@ canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 
 # 10 Best RAM Saving Extensions for Chrome (2026 Edition)
 
-While Google's native [Memory Saver mode](/blog/chrome-memory-saver-how-it-works) is excellent, power users with dozens (or hundreds) of tabs often need more granular control. In 2026, the market for performance-enhancing extensions has matured. This guide reviews the 10 best tools for reclaiming your RAM.
+While Google's native [Memory Saver mode](/blog/chrome-memory-saver-how-it-works) is excellent, power users with dozens (or hundreds) of tabs often need more granular control. In 2026, the market for performance-enhancing extensions has matured. This guide reviews the 10 best tools for reclaiming your RAM. For the full browser optimization context, see our [browser optimization extensions guide](/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk).
 
 ## Table of Contents
 1. [OneTab Pro: The All-in-One Tab Manager](#onetab-pro)

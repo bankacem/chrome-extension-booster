@@ -39,7 +39,7 @@ canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 
 # Chrome vs. Edge vs. Brave: Which Uses Least RAM in 2026?
 
-Is Google Chrome still the memory hog it used to be? In 2026, the browser landscape has changed. Microsoft Edge and Brave (both built on Chromium) have introduced aggressive performance features. This guide compares all three to see which is the best for low-RAM systems.
+Is Google Chrome still the memory hog it used to be? In 2026, the browser landscape has changed. Microsoft Edge and Brave (both built on Chromium) have introduced aggressive performance features. This guide compares all three to see which is the best for low-RAM systems. For the full collection of browser optimization tools, visit our [browser optimization extensions guide](/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk).
 
 ## Table of Contents
 1. [Google Chrome: The "Native" King](#chrome-benchmarks)
