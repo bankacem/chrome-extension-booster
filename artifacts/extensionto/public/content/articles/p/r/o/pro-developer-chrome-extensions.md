@@ -263,6 +263,6 @@ updated_at: "2026-04-23T12:28:51.757095+00:00"
 <div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
   <h3 class="text-base font-semibold mb-3">Related Reading</h3>
   <ul class="space-y-1 text-sm">
-  <li><a href="/blog/unlocking-productivity-the-best-chrome-extensions-for-web-developers-mmtm0ejlryv" class="internal-link">Best Chrome Extensions for Web Developers 2026</a></li>
+  <li><a href="/blog/unlocking-productivity-the-best-chrome-extensions-for-web-developers" class="internal-link">Best Chrome Extensions for Web Developers 2026</a></li>
   </ul>
 </div>

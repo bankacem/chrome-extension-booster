@@ -132,7 +132,7 @@ updated_at: "2026-04-23T12:26:19.070816+00:00"
 <div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
   <h3 class="text-base font-semibold mb-3">Related Reading</h3>
   <ul class="space-y-1 text-sm">
-  <li><a href="/blog/boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing-mmdsutdfgz9" class="internal-link">Chrome Extensions for Social Media Marketing: Ultimate Guide</a></li>
+  <li><a href="/blog/boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing" class="internal-link">Chrome Extensions for Social Media Marketing: Ultimate Guide</a></li>
   </ul>
 </div>
 

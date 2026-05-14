@@ -190,6 +190,6 @@ updated_at: "2026-03-03T17:57:57.980548+00:00"
 <div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
   <h3 class="text-base font-semibold mb-3">Related Reading</h3>
   <ul class="space-y-1 text-sm">
-  <li><a href="/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk" class="internal-link">Unlocking Peak Performance: Browser Optimization Extensions</a></li>
+  <li><a href="/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions" class="internal-link">Unlocking Peak Performance: Browser Optimization Extensions</a></li>
   </ul>
 </div>

@@ -39,7 +39,7 @@ canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 
 # Chrome vs. Edge vs. Brave: Which Uses Least RAM in 2026?
 
-Is Google Chrome still the memory hog it used to be? In 2026, the browser landscape has changed. Microsoft Edge and Brave (both built on Chromium) have introduced aggressive performance features. This guide compares all three to see which is the best for low-RAM systems. For the full collection of browser optimization tools, visit our [browser optimization extensions guide](/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk).
+Is Google Chrome still the memory hog it used to be? In 2026, the browser landscape has changed. Microsoft Edge and Brave (both built on Chromium) have introduced aggressive performance features. This guide compares all three to see which is the best for low-RAM systems. For the full collection of browser optimization tools, visit our [browser optimization extensions guide](/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions).
 
 ## Table of Contents
 1. [Google Chrome: The "Native" King](#chrome-benchmarks)
@@ -80,14 +80,14 @@ Need help fixing a browser crash? Check out [How to Fix 'Out of Memory' Errors](
 <div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
   <h3 class="text-base font-semibold mb-3">Related Reading</h3>
   <ul class="space-y-1 text-sm">
-  <li><a href="/blog/why-is-chrome-using-so-much-memory-2026-fixes-mmb7sschcjw" class="internal-link">why Chrome uses so much memory</a></li>
+  <li><a href="/blog/why-is-chrome-using-so-much-memory-2026-fixes" class="internal-link">why Chrome uses so much memory</a></li>
   </ul>
 </div>
 
 <div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
   <h3 class="text-base font-semibold mb-3">Related Reading</h3>
   <ul class="space-y-1 text-sm">
-  <li><a href="/blog/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance-mll9bsc31qx" class="internal-link">reduce Chrome RAM usage</a></li>
+  <li><a href="/blog/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance" class="internal-link">reduce Chrome RAM usage</a></li>
   <li><a href="/blog/best-memory-saver-extension-for-chrome-4" class="internal-link">best memory saver extension for Chrome</a></li>
   </ul>
 </div>

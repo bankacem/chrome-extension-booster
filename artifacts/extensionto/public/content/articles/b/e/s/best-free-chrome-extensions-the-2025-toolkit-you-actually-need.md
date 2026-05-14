@@ -44,7 +44,7 @@ I&rsquo;ve spent years hoarding extensions like digital trinkets. Most are garba
 
 Here is a curated, battle-tested list of the best chrome extensions free for everyone. No fluff. No "game-changers" that just change your default search engine. Just the tools that work.
 
-The "Sanity Savers" (<a href="/blog/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm" class="internal-link" title="Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency">Productivity</a> &amp; Focus)
+The "Sanity Savers" (<a href="/blog/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency" class="internal-link" title="Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency">Productivity</a> &amp; Focus)
 
 You can't buy time, but you can definitely stop wasting it on infinite scrolling. These tools act like guardrails for your brain.
 
@@ -57,7 +57,7 @@ Most to-do lists are too complicated. Todoist&rsquo;s browser extension is perfe
 Power User Tip: Use the keyboard shortcut q to quick-add a task without even opening the extension window. It feels like magic.
 
 3. StayFocusd
-Self-control is a myth. StayFocusd is the reality check. You set a time allowance for <a href="/blog/block-popups-on-chrome-mobile-guide-mastering-a-distraction-free-browsing-experience-mmtld2pmfet" class="internal-link" title="Block Popups on Chrome Mobile Guide: Mastering a Distraction-Free Browsing Experience">distraction</a> sites (Reddit, Twitter, YouTube). Once you burn through your 30 minutes? That's it. The site is blocked. No mercy.
+Self-control is a myth. StayFocusd is the reality check. You set a time allowance for <a href="/blog/block-popups-on-chrome-mobile-guide-mastering-a-distraction-free-browsing-experience" class="internal-link" title="Block Popups on Chrome Mobile Guide: Mastering a Distraction-Free Browsing Experience">distraction</a> sites (Reddit, Twitter, YouTube). Once you burn through your 30 minutes? That's it. The site is blocked. No mercy.
 The "Nuclear Option" feature is terrifyingly effective. It blocks everything except your whitelist for hours. Use it when deadlines are looming and you're still watching cat videos.
 
 The Privacy Guardians
@@ -65,7 +65,7 @@ The Privacy Guardians
 The internet is a surveillance machine. These tools put up a fight. And with Google's Manifest V3 changes shaking things up, you need tools that actually still work.
 
 4. uBlock Origin
-Let&rsquo;s be clear: this is not "AdBlock." It is better. uBlock Origin is the gold standard for blocking ads, trackers, and coin miners. It&rsquo;s <a href="/blog/discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience-mme0ixxxqdz" class="internal-link" title="Discover the Power of a Lightweight Ad Blocker Chrome: Boost Your Browsing Experience">lightweight</a> on your CPU (unlike others) and open-source.
+Let&rsquo;s be clear: this is not "AdBlock." It is better. uBlock Origin is the gold standard for blocking ads, trackers, and coin miners. It&rsquo;s <a href="/blog/discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience" class="internal-link" title="Discover the Power of a Lightweight Ad Blocker Chrome: Boost Your Browsing Experience">lightweight</a> on your CPU (unlike others) and open-source.
 Note: Google is making it harder for ad blockers to work with their new extension rules (Manifest V3). However, the "uBlock Origin Lite" version is adapting, and the original still works wonders on many browsers. It is the first thing I install on any new computer. Period.
 
 5. Bitwarden

@@ -43,15 +43,15 @@ Inserted immediately before the `<div class="extension-cta-final">` block (or ap
 | 5 | `extension-chrome-presearch-14` | 97 |
 | 6 | `ghostery-chrome-extension-winner` | 93 |
 | 7 | `chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025` | 91 |
-| 8 | `unlocking-efficiency-the-best-productivity-tools-for-chrome-browser-mll9bto578a` | 89 |
-| 9 | `unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk` | 88 |
-| 10 | `unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm` | 86 |
-| 11 | `ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n` | 80 |
+| 8 | `unlocking-efficiency-the-best-productivity-tools-for-chrome-browser` | 89 |
+| 9 | `unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions` | 88 |
+| 10 | `unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency` | 86 |
+| 11 | `ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison` | 80 |
 | 12 | `pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users` | 76 |
 | 13 | `cors-chrome-7` | 70 |
 | 14 | `screenshot-tool-chrome-guide-1` | 61 |
 | 15 | `best-chrome-screenshot-extensions-2026-complete-guide` | 60 |
-| 16 | `unlocking-productivity-the-best-chrome-extensions-for-web-developers-mmtm0ejlryv` | 86 |
+| 16 | `unlocking-productivity-the-best-chrome-extensions-for-web-developers` | 86 |
 | 17 | `adblock-plus-vs-ublock-origin-2026` | ~45 |
 | 18 | `adblock-chrome-android-complete-guide-2026` | ~35 |
 | 19 | `chrome-popup-blocker-master-guide` | ~30 |
@@ -128,13 +128,13 @@ Inserted immediately before the `<div class="extension-cta-final">` block (or ap
 |---|---|---|---|
 | adblock-plus-vs-ublock-origin-2026 | best-chrome-privacy-extensions-2026-complete-guide | "privacy extensions for Chrome" | ✅ Applied |
 | adblock-plus-vs-ublock-origin-2026 | chrome-popup-blocker-master-guide | "popup blocker guide" | ✅ Applied |
-| best-chrome-screenshot-extensions-2026-complete-guide | unlocking-productivity-the-best-chrome-extensions-for-web-developers-mmtm0ejlryv | "Chrome extensions for web developers" | ✅ Applied |
+| best-chrome-screenshot-extensions-2026-complete-guide | unlocking-productivity-the-best-chrome-extensions-for-web-developers | "Chrome extensions for web developers" | ✅ Applied |
 | chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide | adblock-chrome-android-complete-guide-2026 | "ad blocking on Android" | ✅ Applied |
 | youtube-tools-guide | best-downloader-for-chrome-2026 | "YouTube downloader extension" | ✅ Applied |
 | youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds | youtube-tools-guide | "YouTube extensions guide" | ✅ Applied |
 | best-chrome-privacy-extensions-2026-complete-guide | adblock-plus-vs-ublock-origin-2026 | "best ad blocker comparison" | ✅ Applied |
 | chrome-popup-blocker-master-guide | adblock-plus-vs-ublock-origin-2026 | "ad blocker comparison guide" | ✅ Applied |
-| unlocking-productivity-the-best-chrome-extensions-for-web-developers-mmtm0ejlryv | best-chrome-screenshot-extensions-2026-complete-guide | "best screenshot extensions" | ✅ Applied |
+| unlocking-productivity-the-best-chrome-extensions-for-web-developers | best-chrome-screenshot-extensions-2026-complete-guide | "best screenshot extensions" | ✅ Applied |
 | adblock-chrome-android-complete-guide-2026 | chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide | "Chrome extensions on Android guide" | ✅ Applied |
 | best-downloader-for-chrome-2026 | youtube-tools-guide | "YouTube tools guide" | ✅ Applied |
 | unlocking-peak-performance-...mmtizzb73wk | adblock-plus-vs-ublock-origin-2026 | "lightweight ad blocker" | ✅ Applied |

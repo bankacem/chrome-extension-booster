@@ -117,12 +117,12 @@ ExtensionTo is a 499-article Chrome extension content site built as a React SPA.
 |---|---|---|
 | `ghostery-chrome-extension-winner` | 948 | **93** |
 | `ublock-origin-vs-ghostery-for-chrome-android-...` | 849 | **80** |
-| `is-ghostery-safe-to-use-a-professional-2026-review-mmb7srbz193` | 1,072 | 18 |
+| `is-ghostery-safe-to-use-a-professional-2026-review` | 1,072 | 18 |
 | `unlocking-the-power-of-ghostery-extension-chrome-...` | 942 | 16 |
 | `discover-the-best-open-source-alternative-to-ghostery-...` | 1,033 | 12 |
 | `lightweight-ad-blocker-vs-ghostery-...` | 981 | 7 |
 | `unlocking-the-power-of-secure-browsing-extensions-like-ghostery-...` | 962 | 3 |
-| `is-ghostery-safe-to-use-a-professional-2026-review-mmb7ltlowx4` | 1,067 | 1 (**EXACT DUPLICATE**) |
+| `is-ghostery-safe-to-use-a-professional-2026-review-2` | 1,067 | 1 (**EXACT DUPLICATE**) |
 | `ghostery-vs-privacy-badger-full-2026-comparison` | 873 | 1 |
 | `how-to-block-youtube-ads-with-ghostery-extension-...` | 874 | 1 |
 | `top-alternatives-to-ghostery-for-chrome-browser-...` | 940 | 1 |
@@ -294,9 +294,9 @@ Articles: `discover-the-best-popup-blocker-chrome-extension-...`, `free-popup-bl
 261 articles (52%) have slugs ending in an 8–12 character alphanumeric machine ID (e.g. `...mmdrqpzd2wa`, `...mll9bt7orh3`, `...mm3scos4n36`). This is a direct signal to Google's spam classifier that content was generated programmatically in bulk.
 
 **Sample:**
-- `mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa`
-- `is-ghostery-safe-to-use-a-professional-2026-review-mmb7srbz193`
-- `how-to-install-chrome-extensions-manually-a-step-by-step-guide-mmdrxyk1fy1`
+- `mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity`
+- `is-ghostery-safe-to-use-a-professional-2026-review`
+- `how-to-install-chrome-extensions-manually-a-step-by-step-guide`
 
 ### Numeric Variant Slug Pattern
 
@@ -438,7 +438,7 @@ Canonical target: `ghostery-chrome-extension-winner` (93 inbound — clear autho
 - `extension-chrome-ghostery-10`
 
 ### Merge Group 3 — "Is Ghostery Safe?" exact duplicates (2 → 1)
-`is-ghostery-safe-to-use-a-professional-2026-review-mmb7srbz193` (18 inbound) **wins**. Redirect `...mmb7ltlowx4` (1 inbound) to it.
+`is-ghostery-safe-to-use-a-professional-2026-review` (18 inbound) **wins**. Redirect `...mmb7ltlowx4` (1 inbound) to it.
 
 ### Merge Group 4 — "Enhance Online Security" Privacy variants (3 → 1)
 Canonical target: `enhance-your-online-security-with-the-best-chrome-extension-to-protect-your-data` (1,112w).

@@ -115,7 +115,7 @@ updated_at: '2026-04-24T15:23:20.947024+00:00'
   <li>Consider using a batch downloader to save time and effort.</li>
   <li>Look for extensions that offer additional features, such as video conversion or editing tools.</li>
 </ul>
-<p>For more information on how to enhance your browsing experience, check out our article on <a href="/blog/enable-night-mode-on-linkedin-for-eye-protection-1" class="text-primary font-medium hover:underline">enabling night mode on LinkedIn for eye protection</a>. You can also explore our <a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a> extension, which automatically suspends inactive tabs to save memory and improve your browsing <a href="/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk" class="internal-link" title="Unlocking Peak Performance: The Ultimate Guide to Browser Optimization Extensions">performance</a>.</p>
+<p>For more information on how to enhance your browsing experience, check out our article on <a href="/blog/enable-night-mode-on-linkedin-for-eye-protection-1" class="text-primary font-medium hover:underline">enabling night mode on LinkedIn for eye protection</a>. You can also explore our <a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a> extension, which automatically suspends inactive tabs to save memory and improve your browsing <a href="/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions" class="internal-link" title="Unlocking Peak Performance: The Ultimate Guide to Browser Optimization Extensions">performance</a>.</p>
 
 <h2>Comparison Table</h2>
 <table class="table-auto">

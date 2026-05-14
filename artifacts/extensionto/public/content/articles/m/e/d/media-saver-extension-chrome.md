@@ -129,7 +129,7 @@ updated_at: '2026-04-18T18:39:37.143932+00:00'
 <p>There are many media saver extensions available for Chrome, each with its own unique features and benefits. In this <strong>media saver extension review</strong>, we'll explore some of the top media saver extensions, including:</p>
 
 <ul>
-  <li><a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a>: a <a href="/blog/discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience-mme0ixxxqdz" class="internal-link" title="Discover the Power of a Lightweight Ad Blocker Chrome: Boost Your Browsing Experience">lightweight</a> extension that allows users to capture screenshots of web pages</li>
+  <li><a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a>: a <a href="/blog/discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience" class="internal-link" title="Discover the Power of a Lightweight Ad Blocker Chrome: Boost Your Browsing Experience">lightweight</a> extension that allows users to capture screenshots of web pages</li>
   <li><a href="/extension/offline-reader-pro" class="text-primary font-medium hover:underline">Offline Reader Pro</a>: an extension that allows users to save web pages for offline reading</li>
   <li>Video Downloader: an extension that allows users to download videos from websites</li>
   <li>Image Downloader: an extension that allows users to download images from websites</li>

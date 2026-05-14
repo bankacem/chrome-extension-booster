@@ -40,7 +40,7 @@ canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 
 # Chrome Memory Saver Mode: How It Works & How to Optimize It (2026)
 
-In late 2022, Google introduced Memory Saver mode, and by 2026, it has become the backbone of Chrome's performance strategy. This guide explains the underlying "Tab Discarding" technology and how you can tune it for your specific workflow. For the broader landscape of browser optimization tools, see our [browser optimization extensions guide](/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk).
+In late 2022, Google introduced Memory Saver mode, and by 2026, it has become the backbone of Chrome's performance strategy. This guide explains the underlying "Tab Discarding" technology and how you can tune it for your specific workflow. For the broader landscape of browser optimization tools, see our [browser optimization extensions guide](/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions).
 
 ## Table of Contents
 1. [What is Memory Saver Mode?](#what-is-it)
@@ -87,6 +87,6 @@ Need help with crashes? Check out [How to Fix 'Out of Memory' Errors](/blog/fix-
   <h3 class="text-base font-semibold mb-3">Related Reading</h3>
   <ul class="space-y-1 text-sm">
   <li><a href="/blog/best-memory-saver-extension-for-chrome-4" class="internal-link">best memory saver extension for Chrome</a></li>
-  <li><a href="/blog/chrome-high-memory-usage-fix-2026-expert-solutions-to-boost-your-browsers-performance-mmthx7z7re5" class="internal-link">fix Chrome high memory usage</a></li>
+  <li><a href="/blog/chrome-high-memory-usage-fix-2026-expert-solutions-to-boost-your-browsers-performance" class="internal-link">fix Chrome high memory usage</a></li>
   </ul>
 </div>

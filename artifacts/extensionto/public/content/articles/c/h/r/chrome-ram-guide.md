@@ -44,7 +44,7 @@ schema:
 
 <p>If you’ve ever opened your Task Manager and felt a surge of panic at the sight of Google Chrome consuming gigabytes of memory, you’re not alone. Chrome’s "hunger" for RAM is legendary, but it isn't accidental. It is a byproduct of a sophisticated architecture designed for speed, security, and stability.</p>
 
-<p>In this professional guide, we will move beyond basic "close your tabs" advice. We will dive into the <strong>Chromium architecture</strong>, explore the <strong>V8 engine's</strong> role in memory management, and provide a technical framework to reclaim your system resources and restore your machine's peak efficiency. For the complete overview of browser optimization extensions, see our <a href="/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk" class="internal-link">browser optimization extensions guide</a>.</p>
+<p>In this professional guide, we will move beyond basic "close your tabs" advice. We will dive into the <strong>Chromium architecture</strong>, explore the <strong>V8 engine's</strong> role in memory management, and provide a technical framework to reclaim your system resources and restore your machine's peak efficiency. For the complete overview of browser optimization extensions, see our <a href="/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions" class="internal-link">browser optimization extensions guide</a>.</p>
 
 <h2>1. Understanding the Chromium Multi-Process Architecture</h2>
 

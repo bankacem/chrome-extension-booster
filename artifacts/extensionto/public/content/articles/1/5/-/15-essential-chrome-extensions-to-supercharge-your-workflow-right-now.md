@@ -33,7 +33,7 @@ Table of Contents
 
 The Current State of the Chrome Ecosystem
 
-<a href="/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser-mll9bto578a" class="internal-link" title="Unlocking Efficiency: The Best Productivity Tools for Chrome Browser">Productivity</a> Powerhouses
+<a href="/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser" class="internal-link" title="Unlocking Efficiency: The Best Productivity Tools for Chrome Browser">Productivity</a> Powerhouses
 
 AI and Automation: The New Standard
 

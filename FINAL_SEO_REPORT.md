@@ -33,14 +33,14 @@
 | 3 | Popup Blocker | `chrome-popup-blocker-master-guide` | 14 | 3 | 14 | ✅ Complete |
 | 4 | Privacy & Security | `best-chrome-privacy-extensions-2026-complete-guide` | 18 | 4 | 18 | ✅ Complete |
 | 5 | Screenshot Tools | `best-chrome-screenshot-extensions-2026-complete-guide` | 29 | 5 | 29 | ✅ Complete |
-| 6 | Tab Management & Performance | `unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk` | 22 | 4 | 21 | ✅ Complete |
+| 6 | Tab Management & Performance | `unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions` | 22 | 4 | 21 | ✅ Complete |
 | 7 | Download Manager | `best-downloader-for-chrome-2026` | 24 | 3 | 24 | ✅ Complete |
 | 8 | YouTube Tools | `youtube-tools-guide` | 14 | 3 | 14 | ✅ Complete |
 | 9 | Dark Mode | `youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds` | 7 | 2 | 7 | ✅ Complete |
 | 10 | Mobile / Android | `chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide` | 16 | 3 | 16 | ✅ Complete |
-| 11 | Developer Tools & SEO | `unlocking-productivity-the-best-chrome-extensions-for-web-developers-mmtm0ejlryv` | 20 | 3 | 19 | ✅ Complete |
+| 11 | Developer Tools & SEO | `unlocking-productivity-the-best-chrome-extensions-for-web-developers` | 20 | 3 | 19 | ✅ Complete |
 | 12 | Productivity & Focus | `best-free-chrome-extensions-the-2025-toolkit-you-actually-need` | 16 | 3 | 16 | ✅ Complete |
-| 13 | Social Media | `boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing-mmdsutdfgz9` | 12 | 3 | 12 | ✅ Complete |
+| 13 | Social Media | `boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing` | 12 | 3 | 12 | ✅ Complete |
 
 ---
 

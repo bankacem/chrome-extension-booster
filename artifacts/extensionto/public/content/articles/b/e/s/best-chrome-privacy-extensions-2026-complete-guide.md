@@ -240,7 +240,7 @@ featured_image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=
 <div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
   <h3 class="text-base font-semibold mb-3">Related Reading</h3>
   <ul class="space-y-1 text-sm">
-  <li><a href="/blog/unlocking-secure-browsing-a-guide-to-the-best-chrome-vpn-extension-free-options-mmdzl1ass5x" class="internal-link">best VPN extensions for Chrome</a></li>
+  <li><a href="/blog/unlocking-secure-browsing-a-guide-to-the-best-chrome-vpn-extension-free-options" class="internal-link">best VPN extensions for Chrome</a></li>
   <li><a href="/blog/best-local-password-manager-for-chrome-2026-1" class="internal-link">local password manager for Chrome</a></li>
   <li><a href="/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance" class="internal-link">NoScript for Chrome</a></li>
   <li><a href="/blog/why-your-browser-keeps-redirecting-and-how-to-fix-it-cybersecurity-safe-browsing-privacy-anti-adware-9" class="internal-link">browser redirect protection</a></li>

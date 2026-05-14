@@ -238,8 +238,8 @@ featured_image: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?au
 <div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
   <h3 class="text-base font-semibold mb-3">Related Reading</h3>
   <ul class="space-y-1 text-sm">
-  <li><a href="/blog/best-ad-blocker-for-chrome-android-2026-no-root-boost-your-mobile-browsing-experience-mmb7ls8d81s" class="internal-link">best ad blocker for Android Chrome</a></li>
-  <li><a href="/blog/unlocking-ad-free-browsing-on-the-go-the-ultimate-guide-to-chrome-mobile-adblock-mm3scpcgwtz" class="internal-link">mobile adblock guide</a></li>
+  <li><a href="/blog/best-ad-blocker-for-chrome-android-2026-no-root-boost-your-mobile-browsing-experience" class="internal-link">best ad blocker for Android Chrome</a></li>
+  <li><a href="/blog/unlocking-ad-free-browsing-on-the-go-the-ultimate-guide-to-chrome-mobile-adblock" class="internal-link">mobile adblock guide</a></li>
   <li><a href="/blog/adblock-android-guide" class="internal-link">AdBlock Android setup guide</a></li>
   </ul>
 </div>

@@ -20,10 +20,10 @@ YouTube is the world's largest video platform, but the default experience can be
 
 ## Must-Have YouTube Enhancements
 - [Best YouTube to MP3 Chrome Extensions](/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters)
-- [How to Block YouTube Ads with Ghostery](/blog/how-to-block-youtube-ads-with-ghostery-extension-a-comprehensive-guide-mmb7lt82vtf)
+- [How to Block YouTube Ads with Ghostery](/blog/how-to-block-youtube-ads-with-ghostery-extension-a-comprehensive-guide)
 - [Enable YouTube Dark Mode Desktop in 30 Seconds](/blog/youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds)
 - [YouTube video speed controller extensions for Chrome](/blog/video-speed-controller-chrome-extensions)
-- [Repeat YouTube videos extension for productivity and focus](/blog/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q)
+- [Repeat YouTube videos extension for productivity and focus](/blog/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus)
 
 ## Security and Safety Warning
 When using downloaders, always ensure you are using reputable extensions. Many third-party sites are filled with malicious redirects. Stick to our verified list of tools to stay safe.
@@ -39,6 +39,6 @@ When using downloaders, always ensure you are using reputable extensions. Many t
 <div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
   <h3 class="text-base font-semibold mb-3">Related Reading</h3>
   <ul class="space-y-1 text-sm">
-  <li><a href="/blog/unlock-the-full-potential-of-youtube-the-best-youtube-extensions-chrome-has-to-offer-mmdz4d36x0y" class="internal-link">best YouTube extensions for Chrome</a></li>
+  <li><a href="/blog/unlock-the-full-potential-of-youtube-the-best-youtube-extensions-chrome-has-to-offer" class="internal-link">best YouTube extensions for Chrome</a></li>
   </ul>
 </div>

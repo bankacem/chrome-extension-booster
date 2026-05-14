@@ -1,0 +1,96 @@
+{
+  "total_articles": 500,
+  "total_md_files": 500,
+  "real_hash_slugs_remaining": 0,
+  "hash_in_sitemap": 0,
+  "broken_links_unique": 0,
+  "broken_links_instances": 0,
+  "orphans": 0,
+  "redirect_count": 234,
+  "sitemap_urls": 502,
+  "top_inbound": [
+    [
+      "chrome-web-store-2",
+      670
+    ],
+    [
+      "the-elite-stack-essential-chrome-extensions-for-work-pro-environments",
+      417
+    ],
+    [
+      "how-to-fix-chrome-high-memory-usage-on-windows-11",
+      251
+    ],
+    [
+      "stop-video-popups-from-playing-automatically-3",
+      151
+    ],
+    [
+      "how-to-hibernate-inactive-tabs-automatically-6",
+      101
+    ],
+    [
+      "extension-chrome-presearch-14",
+      97
+    ],
+    [
+      "chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025",
+      96
+    ],
+    [
+      "https-sci-hub-se-chrome-extension-16",
+      95
+    ],
+    [
+      "cors-chrome-7",
+      93
+    ],
+    [
+      "ghostery-chrome-extension-winner",
+      93
+    ],
+    [
+      "unlocking-efficiency-the-best-productivity-tools-for-chrome-browser",
+      89
+    ],
+    [
+      "pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users",
+      89
+    ],
+    [
+      "unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency",
+      86
+    ],
+    [
+      "unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions",
+      84
+    ],
+    [
+      "ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison",
+      80
+    ],
+    [
+      "enable-night-mode-on-linkedin-for-eye-protection-1",
+      71
+    ],
+    [
+      "unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs",
+      64
+    ],
+    [
+      "screenshot-tool-chrome-guide-1",
+      61
+    ],
+    [
+      "screenshot-tool-chrome-2025-8",
+      61
+    ],
+    [
+      "best-chrome-screenshot-extensions-2026-complete-guide",
+      60
+    ]
+  ],
+  "broken_list": [],
+  "still_hashed": [],
+  "all_orphans": []
+}

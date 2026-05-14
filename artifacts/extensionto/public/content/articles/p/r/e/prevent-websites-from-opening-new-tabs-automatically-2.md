@@ -27,7 +27,7 @@ created_at: "2026-01-20T19:01:19.932094+00:00"
 updated_at: "2026-04-23T12:28:42.545801+00:00"
 ---
 
-<h1>Prevent Websites from Opening New Tabs <a href="/blog/stop-video-popups-from-playing-automatically-3" class="internal-link" title="Stop Video Popups from Playing Automatically: A Comprehensive Guide">Automatically</a>: A <a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comprehensive</a> Guide</h1>
+<h1>Prevent Websites from Opening New Tabs <a href="/blog/stop-video-popups-from-playing-automatically-3" class="internal-link" title="Stop Video Popups from Playing Automatically: A Comprehensive Guide">Automatically</a>: A <a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comprehensive</a> Guide</h1>
 
 <p>Are you tired of websites opening new tabs automatically, cluttering your browser and disrupting your workflow? You're not alone. Many users face this issue daily, and it can be frustrating, especially when you're in the middle of an important task. In this article, we'll explore how to <strong>prevent websites from opening new tabs automatically</strong> and provide you with practical solutions to take control of your browser.</p>
 
@@ -93,7 +93,7 @@ updated_at: "2026-04-23T12:28:42.545801+00:00"
 
 <p>In addition to these extensions, you can also use other Chrome extensions to enhance your browsing experience. For example, you can use <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> to capture screenshots of web pages or <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> to switch between dark and light modes automatically.</p>
 
-<p>For more information on Chrome extensions and how they can improve your <a href="/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser-mll9bto578a" class="internal-link" title="Unlocking Efficiency: The Best Productivity Tools for Chrome Browser">productivity</a>, check out our article on <a href="/blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025">Chrome Extensions vs. Web Apps: The Ultimate Comparison for Productivity in 2025</a>. You can also learn more about <a href="/blog/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users">Pro Browsing Chrome Extensions: The Ultimate Workflow Upgrade for Power Users</a> and <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments">The Elite Stack: Essential Chrome Extensions for Work Pro <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments">Environments</a></a>.</p>
+<p>For more information on Chrome extensions and how they can improve your <a href="/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser" class="internal-link" title="Unlocking Efficiency: The Best Productivity Tools for Chrome Browser">productivity</a>, check out our article on <a href="/blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025">Chrome Extensions vs. Web Apps: The Ultimate Comparison for Productivity in 2025</a>. You can also learn more about <a href="/blog/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users">Pro Browsing Chrome Extensions: The Ultimate Workflow Upgrade for Power Users</a> and <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments">The Elite Stack: Essential Chrome Extensions for Work Pro <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments">Environments</a></a>.</p>
 
 <h2>Comparison Table</h2>
 
@@ -142,7 +142,7 @@ updated_at: "2026-04-23T12:28:42.545801+00:00"
 <div class="related-articles my-8 p-5 rounded-xl bg-muted/40 border border-border">
   <h3 class="text-base font-semibold mb-3">Related Reading</h3>
   <ul class="space-y-1 text-sm">
-  <li><a href="/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk" class="internal-link">Unlocking Peak Performance: Browser Optimization Extensions</a></li>
+  <li><a href="/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions" class="internal-link">Unlocking Peak Performance: Browser Optimization Extensions</a></li>
   </ul>
 </div>
 

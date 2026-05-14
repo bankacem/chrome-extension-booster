@@ -63,7 +63,7 @@ updated_at: "2026-04-23T12:29:22.061228+00:00"
 </tr>
 <tr>
 <td>Dominant Category</td>
-<td><a href="/blog/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm" class="internal-link" title="Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency">Productivity</a> (46.8%)</td>
+<td><a href="/blog/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency" class="internal-link" title="Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency">Productivity</a> (46.8%)</td>
 </tr>
 <tr>
 <td>Avg. Review Time</td>

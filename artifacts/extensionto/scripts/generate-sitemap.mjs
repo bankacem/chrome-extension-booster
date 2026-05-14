@@ -52,7 +52,7 @@ const PILLAR_SLUGS = new Set([
   "best-chrome-screenshot-extensions-2026-complete-guide",
   "best-chrome-privacy-extensions-2026-complete-guide",
   "best-youtube-downloader-chrome-extension-2026",
-  "best-chrome-extensions-for-privacy-2026-protect-your-online-identity-mll9br233zj",
+  "best-chrome-extensions-for-privacy-2026-protect-your-online-identity",
   "chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide",
   "best-full-page-screenshot-chrome-extension-2026-free-no-login-required",
 ]);

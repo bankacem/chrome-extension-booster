@@ -75,7 +75,7 @@ updated_at: '2026-04-27T16:59:43.098Z'
   <li><a href="#what-are-annoying-ads">What are Annoying Ads?</a></li>
   <li><a href="#why-do-annoying-ads-appear-on-chrome-mobile">Why do Annoying Ads Appear on Chrome Mobile?</a></li>
   <li><a href="#how-to-stop-annoying-ads-on-chrome-mobile">How to Stop Annoying Ads on Chrome Mobile</a></li>
-  <li><a href="#using-chrome-extensions-to-stop-annoying-ads">Using Chrome <a href="/blog/effortless-image-downloading-a-comprehensive-guide-to-bulk-image-downloader-chrome-extensions-mmtvrglq5x1" class="internal-link" title="Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader Chrome Extensions">Extensions</a> to Stop Annoying Ads</a></li>
+  <li><a href="#using-chrome-extensions-to-stop-annoying-ads">Using Chrome <a href="/blog/effortless-image-downloading-a-comprehensive-guide-to-bulk-image-downloader-chrome-extensions" class="internal-link" title="Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader Chrome Extensions">Extensions</a> to Stop Annoying Ads</a></li>
   <li><a href="#tips-to-improve-your-browsing-experience-on-chrome-mobile">Tips to Improve Your Browsing Experience on Chrome Mobile</a></li>
   <li><a href="#faq">FAQ</a></li>
 </ul>

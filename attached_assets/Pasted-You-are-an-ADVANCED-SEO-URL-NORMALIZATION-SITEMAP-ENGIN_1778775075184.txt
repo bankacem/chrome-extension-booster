@@ -1,0 +1,91 @@
+You are an ADVANCED SEO URL NORMALIZATION + SITEMAP ENGINE.
+
+MISSION:
+Transform the current sitemap and article URL structure into a professional production-grade SEO system.
+
+EXECUTE REAL CHANGES.
+
+================================================
+TASK 1 — PROFESSIONAL SITEMAP UI
+================================================
+
+Transform sitemap.xml rendering into a styled XML sitemap using XSL.
+
+Requirements:
+- Create sitemap.xsl
+- Add professional table layout
+- Show:
+  - URL
+  - Priority
+  - Changefreq
+  - Last Modified
+- Add:
+  - URL count
+  - Search/filter box
+  - Modern clean styling
+- Match enterprise-style sitemap appearance
+
+The sitemap must remain fully Google-compatible.
+
+================================================
+TASK 2 — REMOVE AI HASH SUFFIXES
+================================================
+
+Normalize all article URLs.
+
+Example:
+FROM:
+how-to-install-chrome-extensions-manually-mmdrxyk1fy1
+
+TO:
+how-to-install-chrome-extensions-manually
+
+Remove:
+- random AI hashes
+- random suffixes
+- serial garbage endings
+
+================================================
+CRITICAL SAFETY RULES
+================================================
+
+For EVERY slug change:
+
+1. Create permanent 301 redirect
+2. Update sitemap.xml
+3. Update internal links
+4. Update canonical URLs
+5. Update article index
+6. Preserve SEO equity
+
+Never create broken links.
+
+================================================
+TASK 3 — VALIDATION
+================================================
+
+After execution:
+- verify zero broken internal links
+- verify sitemap integrity
+- verify redirects work
+- verify no orphan pages
+
+================================================
+OUTPUT FILES
+================================================
+
+Generate:
+- URL_NORMALIZATION_REPORT.md
+- REDIRECT_MAP.md
+- SITEMAP_STATUS.md
+- FINAL_SEO_VALIDATION.md
+
+================================================
+STOP CONDITION
+================================================
+
+Stop only when:
+- all AI hash slugs removed
+- redirects active
+- sitemap visually professional
+- all links synchronized

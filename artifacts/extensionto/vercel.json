@@ -1,5 +1,1177 @@
 {
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/blog/auto-tab-discarder-vs-the-great-suspender-2026-review-a-comprehensive-comparison-of-tab-management-e-mmb7ss1hyb9",
+      "destination": "/blog/auto-tab-discarder-vs-the-great-suspender-2026-review-a-comprehensive-comparison-of-tab-management-e",
+      "permanent": true
+    },
+    {
+      "source": "/blog/autotab-discard-vs-onetab-which-chrome-extension-reigns-supreme-in-tab-management-mmthx8otjk3",
+      "destination": "/blog/autotab-discard-vs-onetab-which-chrome-extension-reigns-supreme-in-tab-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-ad-blocker-for-chrome-android-2026-no-root-boost-your-mobile-browsing-experience-mmb7ls8d81s",
+      "destination": "/blog/best-ad-blocker-for-chrome-android-2026-no-root-boost-your-mobile-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-chrome-extensions-for-old-pcs-with-4gb-ram-boosting-performance-and-productivity-mmb7srvijtp",
+      "destination": "/blog/best-chrome-extensions-for-old-pcs-with-4gb-ram-boosting-performance-and-productivity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-chrome-extensions-for-online-safety-protecting-your-digital-footprint-mmdzl1pwuso",
+      "destination": "/blog/best-chrome-extensions-for-online-safety-protecting-your-digital-footprint",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-chrome-extensions-for-privacy-2026-protect-your-online-identity-mll9br233zj",
+      "destination": "/blog/best-chrome-extensions-for-privacy-2026-protect-your-online-identity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance-mll9bsc31qx",
+      "destination": "/blog/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-free-pop-up-blocker-extension-for-android-2026-enhance-your-mobile-browsing-experience-mmb7lsus9cb",
+      "destination": "/blog/best-free-pop-up-blocker-extension-for-android-2026-enhance-your-mobile-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-free-popup-blocker-for-chrome-2026-enhance-your-browsing-experience-mll9brzi0mt",
+      "destination": "/blog/best-free-popup-blocker-for-chrome-2026-enhance-your-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-ghostery-settings-for-maximum-online-privacy-a-comprehensive-guide-mmb7ltcfx00",
+      "destination": "/blog/best-ghostery-settings-for-maximum-online-privacy-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-tab-manager-for-heavy-chrome-users-unlocking-efficiency-and-productivity-mll9bt7orh3",
+      "destination": "/blog/best-tab-manager-for-heavy-chrome-users-unlocking-efficiency-and-productivity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-youtube-to-mp3-chrome-extension-2026-the-ultimate-guide-to-audio-extraction-mliju4j1hys",
+      "destination": "/blog/best-youtube-to-mp3-chrome-extension-2026-the-ultimate-guide-to-audio-extraction",
+      "permanent": true
+    },
+    {
+      "source": "/blog/block-ads-chrome-extension-free-enhance-your-browsing-experience-with-ad-free-surfing-mme0iy7wjb2",
+      "destination": "/blog/block-ads-chrome-extension-free-enhance-your-browsing-experience-with-ad-free-surfing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/block-popups-on-chrome-mobile-guide-mastering-a-distraction-free-browsing-experience-mmtld2pmfet",
+      "destination": "/blog/block-popups-on-chrome-mobile-guide-mastering-a-distraction-free-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boost-your-browsing-experience-with-the-best-chrome-extension-for-faster-downloads-mmdupfqejgi",
+      "destination": "/blog/boost-your-browsing-experience-with-the-best-chrome-extension-for-faster-downloads",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing-mmdsutdfgz9",
+      "destination": "/blog/boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boost-your-online-presence-with-the-best-chrome-extension-for-website-speed-test-mmdt1198vtn",
+      "destination": "/blog/boost-your-online-presence-with-the-best-chrome-extension-for-website-speed-test",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boost-your-twitter-productivity-with-the-best-chrome-extension-for-twitter-productivity-mmdsjeh52mg",
+      "destination": "/blog/boost-your-twitter-productivity-with-the-best-chrome-extension-for-twitter-productivity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boost-your-workflow-the-best-chrome-extensions-for-focus-and-productivity-mmdrqq4a7we",
+      "destination": "/blog/boost-your-workflow-the-best-chrome-extensions-for-focus-and-productivity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boosting-browser-security-the-best-chrome-security-extensions-for-a-safer-online-experience-mmdzl14pplb",
+      "destination": "/blog/boosting-browser-security-the-best-chrome-security-extensions-for-a-safer-online-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boosting-productivity-with-light-browser-extensions-for-slow-pc-a-comprehensive-guide-mmtizxgfmd1",
+      "destination": "/blog/boosting-productivity-with-light-browser-extensions-for-slow-pc-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/breaking-free-from-annoying-ads-the-power-of-anti-popup-free-solutions-mm3scpnc2b6",
+      "destination": "/blog/breaking-free-from-annoying-ads-the-power-of-anti-popup-free-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-high-memory-usage-fix-2026-expert-solutions-to-boost-your-browsers-performance-mmthx7z7re5",
+      "destination": "/blog/chrome-high-memory-usage-fix-2026-expert-solutions-to-boost-your-browsers-performance",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-memory-saver-extension-review-boosting-browser-performance-mll9bt3eiph",
+      "destination": "/blog/chrome-memory-saver-extension-review-boosting-browser-performance",
+      "permanent": true
+    },
+    {
+      "source": "/blog/detailed-seo-extension-vs-seoquake-a-comprehensive-comparison-for-enhanced-seo-analysis-mmtm0ebkaaz",
+      "destination": "/blog/detailed-seo-extension-vs-seoquake-a-comprehensive-comparison-for-enhanced-seo-analysis",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-ad-blocking-extension-for-chrome-boost-your-browsing-experience-mme0ixsa1fx",
+      "destination": "/blog/discover-the-best-ad-blocking-extension-for-chrome-boost-your-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-android-browser-for-extensions-to-enhance-your-mobile-browsing-experience-mmthow5z77c",
+      "destination": "/blog/discover-the-best-android-browser-for-extensions-to-enhance-your-mobile-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-chrome-extension-for-media-download-a-comprehensive-guide-mmdupgopifb",
+      "destination": "/blog/discover-the-best-chrome-extension-for-media-download-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-chrome-extension-like-idm-for-seamless-download-management-mmdupfvslt1",
+      "destination": "/blog/discover-the-best-chrome-extension-like-idm-for-seamless-download-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-chrome-extension-to-download-images-a-comprehensive-guide-mmdupgfwhnh",
+      "destination": "/blog/discover-the-best-chrome-extension-to-download-images-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-chrome-extension-to-download-videos-a-comprehensive-guide-mmdupgabxxi",
+      "destination": "/blog/discover-the-best-chrome-extension-to-download-videos-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q",
+      "destination": "/blog/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-chrome-extensions-marketplace-alternatives-for-a-seamless-browsing-experience-mmdrxzj1vwh",
+      "destination": "/blog/discover-the-best-chrome-extensions-marketplace-alternatives-for-a-seamless-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-download-manager-chrome-extension-for-a-seamless-browsing-experience-mmdupfh67n8",
+      "destination": "/blog/discover-the-best-download-manager-chrome-extension-for-a-seamless-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-extension-to-suspend-tabs-and-boost-your-browsers-performance-mmtizxlm6h1",
+      "destination": "/blog/discover-the-best-extension-to-suspend-tabs-and-boost-your-browsers-performance",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-file-downloader-extension-chrome-a-comprehensive-guide-mmdupg56roj",
+      "destination": "/blog/discover-the-best-file-downloader-extension-chrome-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-font-finder-extension-chrome-to-elevate-your-design-game-mmtm0gyrx36",
+      "destination": "/blog/discover-the-best-font-finder-extension-chrome-to-elevate-your-design-game",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-ghostery-alternative-for-chrome-enhance-your-browsing-experience-mll9bqi2g1z",
+      "destination": "/blog/discover-the-best-ghostery-alternative-for-chrome-enhance-your-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-image-downloader-chrome-extension-for-effortless-image-saving-mmtvrb6wws4",
+      "destination": "/blog/discover-the-best-image-downloader-chrome-extension-for-effortless-image-saving",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-lemur-browser-extensions-download-for-enhanced-browsing-experience-mmthozyfc2j",
+      "destination": "/blog/discover-the-best-lemur-browser-extensions-download-for-enhanced-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-no-ads-chrome-extension-2026-for-a-seamless-browsing-experience-mmtld2uhhvw",
+      "destination": "/blog/discover-the-best-no-ads-chrome-extension-2026-for-a-seamless-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz",
+      "destination": "/blog/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-popup-blocker-chrome-extension-for-a-seamless-browsing-experience-mme0iwwwapy",
+      "destination": "/blog/discover-the-best-popup-blocker-chrome-extension-for-a-seamless-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-popup-blocker-for-android-boost-your-mobile-browsing-experience-mmtld1tfrpr",
+      "destination": "/blog/discover-the-best-popup-blocker-for-android-boost-your-mobile-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-popup-blocker-for-chrome-2026-boost-your-browsing-experience-mmtlczhct0y",
+      "destination": "/blog/discover-the-best-popup-blocker-for-chrome-2026-boost-your-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-privacy-extension-chrome-protect-your-online-identity-mme0iytlky3",
+      "destination": "/blog/discover-the-best-privacy-extension-chrome-protect-your-online-identity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-screen-recorder-for-developers-a-comprehensive-guide-mmtm0evk4d4",
+      "destination": "/blog/discover-the-best-screen-recorder-for-developers-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-best-tab-management-extensions-2026-for-a-more-efficient-browsing-experience-mmtizy1dudi",
+      "destination": "/blog/discover-the-best-tab-management-extensions-2026-for-a-more-efficient-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-fastest-video-downloader-chrome-extension-for-seamless-video-saving-mmtvrj66p5v",
+      "destination": "/blog/discover-the-fastest-video-downloader-chrome-extension-for-seamless-video-saving",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience-mme0ixxxqdz",
+      "destination": "/blog/discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-safest-adblocker-for-chrome-protect-your-browsing-experience-mmtld2frotk",
+      "destination": "/blog/discover-the-safest-adblocker-for-chrome-protect-your-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/discover-the-safest-youtube-to-mp3-extension-2026-for-seamless-music-downloads-mmtvrbpdu1p",
+      "destination": "/blog/discover-the-safest-youtube-to-mp3-extension-2026-for-seamless-music-downloads",
+      "permanent": true
+    },
+    {
+      "source": "/blog/download-high-quality-mp3-chrome-a-comprehensive-guide-to-music-lovers-mmtvrfdndri",
+      "destination": "/blog/download-high-quality-mp3-chrome-a-comprehensive-guide-to-music-lovers",
+      "permanent": true
+    },
+    {
+      "source": "/blog/download-instagram-reels-chrome-a-step-by-step-guide-to-saving-your-favorite-videos-mmtvrc4yqhk",
+      "destination": "/blog/download-instagram-reels-chrome-a-step-by-step-guide-to-saving-your-favorite-videos",
+      "permanent": true
+    },
+    {
+      "source": "/blog/download-video-from-any-site-chrome-extension-a-comprehensive-guide-mmtvrahku1z",
+      "destination": "/blog/download-video-from-any-site-chrome-extension-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/effective-solutions-finding-the-best-chrome-extension-to-stop-popups-for-a-seamless-browsing-experie-mme0ixmzt1f",
+      "destination": "/blog/effective-solutions-finding-the-best-chrome-extension-to-stop-popups-for-a-seamless-browsing-experie",
+      "permanent": true
+    },
+    {
+      "source": "/blog/effortless-image-downloading-a-comprehensive-guide-to-bulk-image-downloader-chrome-extensions-mmtvrglq5x1",
+      "destination": "/blog/effortless-image-downloading-a-comprehensive-guide-to-bulk-image-downloader-chrome-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/effortlessly-remove-annoying-ads-with-the-best-chrome-extension-to-remove-ads-mme0iyd1klm",
+      "destination": "/blog/effortlessly-remove-annoying-ads-with-the-best-chrome-extension-to-remove-ads",
+      "permanent": true
+    },
+    {
+      "source": "/blog/enhance-your-online-experience-top-chrome-extensions-to-improve-browsing-experience-mmdrqq8mam6",
+      "destination": "/blog/enhance-your-online-experience-top-chrome-extensions-to-improve-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/enhance-your-online-security-with-the-best-chrome-extension-to-protect-privacy-mmdzl1g2wkc",
+      "destination": "/blog/enhance-your-online-security-with-the-best-chrome-extension-to-protect-privacy",
+      "permanent": true
+    },
+    {
+      "source": "/blog/enhance-your-online-security-with-the-best-chrome-privacy-extensions-mmdzl00pssm",
+      "destination": "/blog/enhance-your-online-security-with-the-best-chrome-privacy-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/enhance-your-online-security-with-the-best-google-chrome-privacy-extensions-mm3scmwbb4a",
+      "destination": "/blog/enhance-your-online-security-with-the-best-google-chrome-privacy-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/enhance-your-online-security-with-the-best-secure-browsing-chrome-extensions-mmdzl0rd465",
+      "destination": "/blog/enhance-your-online-security-with-the-best-secure-browsing-chrome-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/enhance-your-youtube-experience-with-a-chrome-extension-to-control-youtube-speed-mmdz7yn2v3z",
+      "destination": "/blog/enhance-your-youtube-experience-with-a-chrome-extension-to-control-youtube-speed",
+      "permanent": true
+    },
+    {
+      "source": "/blog/exploring-poper-blocker-alternatives-enhance-your-browsing-experience-with-effective-solutions-mmtld2ksri0",
+      "destination": "/blog/exploring-poper-blocker-alternatives-enhance-your-browsing-experience-with-effective-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide-mmb6y3me966",
+      "destination": "/blog/facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fix-chrome-freezing-with-many-tabs-a-comprehensive-guide-to-optimizing-your-browser-performance-mmthx9outvp",
+      "destination": "/blog/fix-chrome-freezing-with-many-tabs-a-comprehensive-guide-to-optimizing-your-browser-performance",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fix-high-cpu-usage-chrome-2026-a-comprehensive-guide-to-optimizing-your-browser-mmtizy6zct8",
+      "destination": "/blog/fix-high-cpu-usage-chrome-2026-a-comprehensive-guide-to-optimizing-your-browser",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fix-idm-download-bar-not-showing-in-google-chrome-a-step-by-step-guide-mmb6y4c242d",
+      "destination": "/blog/fix-idm-download-bar-not-showing-in-google-chrome-a-step-by-step-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/free-popup-blocker-for-chrome-the-ultimate-guide-to-a-distraction-free-browsing-experience-mme0ixfuf83",
+      "destination": "/blog/free-popup-blocker-for-chrome-the-ultimate-guide-to-a-distraction-free-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ghostery-vs-privacy-badger-full-2026-comparison-mmb7lt3s5za",
+      "destination": "/blog/ghostery-vs-privacy-badger-full-2026-comparison",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ghostery-vs-stands-adblocker-the-ultimate-comparison-for-a-seamless-browsing-experience-mm3scpyhd8d",
+      "destination": "/blog/ghostery-vs-stands-adblocker-the-ultimate-comparison-for-a-seamless-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ghostery-vs-ublock-origin-2026-a-comprehensive-comparison-for-enhanced-productivity-mmtld2a871i",
+      "destination": "/blog/ghostery-vs-ublock-origin-2026-a-comprehensive-comparison-for-enhanced-productivity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-add-extensions-to-chrome-mobile-a-step-by-step-guide-mmthoys728s",
+      "destination": "/blog/how-to-add-extensions-to-chrome-mobile-a-step-by-step-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-block-ads-on-chrome-android-a-step-by-step-guide-to-ad-free-browsing-mmtld1z2kti",
+      "destination": "/blog/how-to-block-ads-on-chrome-android-a-step-by-step-guide-to-ad-free-browsing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-block-youtube-ads-with-ghostery-extension-a-comprehensive-guide-mmb7lt82vtf",
+      "destination": "/blog/how-to-block-youtube-ads-with-ghostery-extension-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-disable-adblocker-detection-scripts-a-comprehensive-guide-to-enhanced-browsing-experience-mmtld24gueg",
+      "destination": "/blog/how-to-disable-adblocker-detection-scripts-a-comprehensive-guide-to-enhanced-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-disable-chrome-extensions-a-step-by-step-guide-to-simplifying-your-browser-mmdrxyx6he9",
+      "destination": "/blog/how-to-disable-chrome-extensions-a-step-by-step-guide-to-simplifying-your-browser",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-download-video-from-facebook-chrome-a-step-by-step-guide-mmtvridrp4n",
+      "destination": "/blog/how-to-download-video-from-facebook-chrome-a-step-by-step-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-enable-chrome-extensions-on-android-mobile-unlocking-enhanced-browsing-mmb7lsj2jtx",
+      "destination": "/blog/how-to-enable-chrome-extensions-on-android-mobile-unlocking-enhanced-browsing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue",
+      "destination": "/blog/how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting-mmb6y2rtgr2",
+      "destination": "/blog/how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management",
+      "destination": "/blog/how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-install-chrome-extensions-manually-a-step-by-step-guide-mmdrxyk1fy1",
+      "destination": "/blog/how-to-install-chrome-extensions-manually-a-step-by-step-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-install-chrome-extensions-on-android-2026-a-step-by-step-guide-mmthoucr42u",
+      "destination": "/blog/how-to-install-chrome-extensions-on-android-2026-a-step-by-step-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-install-idm-extension-in-chrome-manually-2026-a-step-by-step-guide-mmb6y42ngkw",
+      "destination": "/blog/how-to-install-idm-extension-in-chrome-manually-2026-a-step-by-step-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-install-ublock-origin-on-android-chrome-a-step-by-step-guide-mmthowe8g0u",
+      "destination": "/blog/how-to-install-ublock-origin-on-android-chrome-a-step-by-step-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-make-google-chrome-faster-on-windows-1110-a-comprehensive-guide-mmb7ss6qops",
+      "destination": "/blog/how-to-make-google-chrome-faster-on-windows-1110-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-reduce-chrome-cpu-usage-a-comprehensive-guide-to-a-faster-browser-mmthx96a4yd",
+      "destination": "/blog/how-to-reduce-chrome-cpu-usage-a-comprehensive-guide-to-a-faster-browser",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-reduce-chrome-ram-usage-without-extensions-a-comprehensive-guide-mmb7srpyinx",
+      "destination": "/blog/how-to-reduce-chrome-ram-usage-without-extensions-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-remove-chrome-extensions-a-step-by-step-guide-to-cleaning-up-your-browser-mmdrxz38v9j",
+      "destination": "/blog/how-to-remove-chrome-extensions-a-step-by-step-guide-to-cleaning-up-your-browser",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-run-chrome-extensions-on-brave-android-a-step-by-step-guide-mmthozkhpgn",
+      "destination": "/blog/how-to-run-chrome-extensions-on-brave-android-a-step-by-step-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-speed-up-chrome-on-low-end-pc-expert-tips-and-tricks-mmtizzi7h41",
+      "destination": "/blog/how-to-speed-up-chrome-on-low-end-pc-expert-tips-and-tricks",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-speed-up-idm-downloads-on-chrome-browser-a-comprehensive-guide-mmb6y4gqk7k",
+      "destination": "/blog/how-to-speed-up-idm-downloads-on-chrome-browser-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-update-chrome-extensions-a-step-by-step-guide-to-enhancing-your-browser-experience-mmdrxyqby0o",
+      "destination": "/blog/how-to-update-chrome-extensions-a-step-by-step-guide-to-enhancing-your-browser-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-use-desktop-extensions-on-phone-a-step-by-step-guide-mmthowug4hd",
+      "destination": "/blog/how-to-use-desktop-extensions-on-phone-a-step-by-step-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-use-meta-pixel-helper-for-conversion-tracking-a-step-by-step-guide-mmb6y3xkav4",
+      "destination": "/blog/how-to-use-meta-pixel-helper-for-conversion-tracking-a-step-by-step-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/is-ghostery-safe-to-use-a-professional-2026-review-mmb7ltlowx4",
+      "destination": "/blog/is-ghostery-safe-to-use-a-professional-2026-review-2",
+      "permanent": true
+    },
+    {
+      "source": "/blog/is-ghostery-safe-to-use-a-professional-2026-review-mmb7srbz193",
+      "destination": "/blog/is-ghostery-safe-to-use-a-professional-2026-review",
+      "permanent": true
+    },
+    {
+      "source": "/blog/is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management-mmb6y4ldz8f",
+      "destination": "/blog/is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kiwi-browser-extensions-guide-unlocking-the-full-potential-of-your-mobile-browser-mmthoutft7f",
+      "destination": "/blog/kiwi-browser-extensions-guide-unlocking-the-full-potential-of-your-mobile-browser",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kiwi-browser-vs-yandex-browser-a-comprehensive-comparison-for-the-modern-user-mmthox9h7jb",
+      "destination": "/blog/kiwi-browser-vs-yandex-browser-a-comprehensive-comparison-for-the-modern-user",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lemur-browser-vs-kiwi-browser-a-comprehensive-comparison-for-enhanced-browsing-experience-mmthov1pg80",
+      "destination": "/blog/lemur-browser-vs-kiwi-browser-a-comprehensive-comparison-for-enhanced-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lighthouse-audit-chrome-extension-guide-unlocking-the-secrets-to-a-faster-and-more-efficient-website-mmtm0ft1uyc",
+      "destination": "/blog/lighthouse-audit-chrome-extension-guide-unlocking-the-secrets-to-a-faster-and-more-efficient-website",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lightweight-ad-blocker-vs-ghostery-the-ultimate-comparison-for-a-seamless-browsing-experience-mll9bqvypx6",
+      "destination": "/blog/lightweight-ad-blocker-vs-ghostery-the-ultimate-comparison-for-a-seamless-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa",
+      "destination": "/blog/mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mastering-the-art-of-browser-productivity-a-comprehensive-guide-on-how-to-manage-chrome-extensions-mmdrxy6vrty",
+      "destination": "/blog/mastering-the-art-of-browser-productivity-a-comprehensive-guide-on-how-to-manage-chrome-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mastering-the-art-of-file-management-the-ultimate-guide-to-download-manager-mmdupf64qbd",
+      "destination": "/blog/mastering-the-art-of-file-management-the-ultimate-guide-to-download-manager",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mastering-the-art-of-web-development-a-comprehensive-guide-to-inspect-element-android-chrome-mmtm0epd1m4",
+      "destination": "/blog/mastering-the-art-of-web-development-a-comprehensive-guide-to-inspect-element-android-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/maximizing-laptop-battery-life-the-ultimate-guide-to-chrome-battery-saver-extension-mmtizxqy8i4",
+      "destination": "/blog/maximizing-laptop-battery-life-the-ultimate-guide-to-chrome-battery-saver-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/maximizing-your-media-experience-the-ultimate-guide-to-youtube-to-mp3-converter-for-chrome-browser-mliju5ve253",
+      "destination": "/blog/maximizing-your-media-experience-the-ultimate-guide-to-youtube-to-mp3-converter-for-chrome-browser",
+      "permanent": true
+    },
+    {
+      "source": "/blog/onetab-extension-review-2026-a-comprehensive-guide-to-boosting-productivity-mmtizyg08jk",
+      "destination": "/blog/onetab-extension-review-2026-a-comprehensive-guide-to-boosting-productivity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/optimize-your-browser-the-best-ram-saver-extensions-for-chrome-mmthx8f6vmd",
+      "destination": "/blog/optimize-your-browser-the-best-ram-saver-extensions-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
+      "destination": "/blog/optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/optimizing-browser-performance-how-to-limit-chrome-ram-usage-with-the-right-extension-mmtizx78iml",
+      "destination": "/blog/optimizing-browser-performance-how-to-limit-chrome-ram-usage-with-the-right-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/optimizing-browser-performance-how-to-limit-memory-per-tab-in-chrome-mmtizz38q14",
+      "destination": "/blog/optimizing-browser-performance-how-to-limit-memory-per-tab-in-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prevent-chrome-from-crashing-with-tab-discarder-boost-browser-performance-and-stability-mll9btbql7m",
+      "destination": "/blog/prevent-chrome-from-crashing-with-tab-discarder-boost-browser-performance-and-stability",
+      "permanent": true
+    },
+    {
+      "source": "/blog/protect-your-online-identity-finding-the-best-anti-tracking-chrome-extension-mmdzl0g5lkb",
+      "destination": "/blog/protect-your-online-identity-finding-the-best-anti-tracking-chrome-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/protect-your-online-privacy-the-best-chrome-extension-to-block-trackers-mmdzl08bddf",
+      "destination": "/blog/protect-your-online-privacy-the-best-chrome-extension-to-block-trackers",
+      "permanent": true
+    },
+    {
+      "source": "/blog/protecting-your-online-identity-the-best-chrome-extension-for-blocking-trackers-mme0iyo5n01",
+      "destination": "/blog/protecting-your-online-identity-the-best-chrome-extension-for-blocking-trackers",
+      "permanent": true
+    },
+    {
+      "source": "/blog/protecting-your-online-privacy-the-best-chrome-extension-to-detect-trackers-mmdzl1lbwjy",
+      "destination": "/blog/protecting-your-online-privacy-the-best-chrome-extension-to-detect-trackers",
+      "permanent": true
+    },
+    {
+      "source": "/blog/protecting-your-online-security-the-best-chrome-extension-to-block-malicious-websites-mmdzl0y1ool",
+      "destination": "/blog/protecting-your-online-security-the-best-chrome-extension-to-block-malicious-websites",
+      "permanent": true
+    },
+    {
+      "source": "/blog/save-pc-resources-with-chrome-tab-suspension-boosting-browser-performance-and-efficiency-mll9bth0gxm",
+      "destination": "/blog/save-pc-resources-with-chrome-tab-suspension-boosting-browser-performance-and-efficiency",
+      "permanent": true
+    },
+    {
+      "source": "/blog/save-youtube-audio-chrome-extension-a-comprehensive-guide-to-extracting-audio-from-youtube-videos-mmtvrg619vp",
+      "destination": "/blog/save-youtube-audio-chrome-extension-a-comprehensive-guide-to-extracting-audio-from-youtube-videos",
+      "permanent": true
+    },
+    {
+      "source": "/blog/seo-meta-in-1-click-review-streamlining-your-optimization-process-mmtm0gc2hpd",
+      "destination": "/blog/seo-meta-in-1-click-review-streamlining-your-optimization-process",
+      "permanent": true
+    },
+    {
+      "source": "/blog/speed-up-google-chrome-2026-expert-tips-and-tricks-to-boost-your-browsing-experience-mmthx9ww3cj",
+      "destination": "/blog/speed-up-google-chrome-2026-expert-tips-and-tricks-to-boost-your-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/speed-up-google-chrome-on-old-laptop-a-comprehensive-guide-to-boosting-performance-mll9bsxxjsu",
+      "destination": "/blog/speed-up-google-chrome-on-old-laptop-a-comprehensive-guide-to-boosting-performance",
+      "permanent": true
+    },
+    {
+      "source": "/blog/stop-chrome-from-freezing-with-many-tabs-expert-solutions-to-boost-browser-performance-mll9bsggevr",
+      "destination": "/blog/stop-chrome-from-freezing-with-many-tabs-expert-solutions-to-boost-browser-performance",
+      "permanent": true
+    },
+    {
+      "source": "/blog/stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions-mm3scn1bz3l",
+      "destination": "/blog/stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/stop-trackers-on-chrome-without-slowing-down-the-ultimate-guide-mll9brqb6da",
+      "destination": "/blog/stop-trackers-on-chrome-without-slowing-down-the-ultimate-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/streamline-your-social-media-management-with-the-best-chrome-extension-for-scheduling-posts-mmdsutjnkbw",
+      "destination": "/blog/streamline-your-social-media-management-with-the-best-chrome-extension-for-scheduling-posts",
+      "permanent": true
+    },
+    {
+      "source": "/blog/streamlining-your-linkedin-experience-the-best-chrome-extension-for-linkedin-automation-mmdsje1cc47",
+      "destination": "/blog/streamlining-your-linkedin-experience-the-best-chrome-extension-for-linkedin-automation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/streamlining-your-workflow-the-best-chrome-extension-for-bulk-downloads-mmdupgkigzv",
+      "destination": "/blog/streamlining-your-workflow-the-best-chrome-extension-for-bulk-downloads",
+      "permanent": true
+    },
+    {
+      "source": "/blog/supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
+      "destination": "/blog/supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-definitive-guide-to-chrome-extension-download-youtube-video-high-quality-enhancing-your-offline-mliju5mvrvj",
+      "destination": "/blog/the-definitive-guide-to-chrome-extension-download-youtube-video-high-quality-enhancing-your-offline",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-definitive-guide-to-chrome-extension-for-youtube-mp3-320kbps-enhancing-your-high-fidelity-audio-mliju6k2u1n",
+      "destination": "/blog/the-definitive-guide-to-chrome-extension-for-youtube-mp3-320kbps-enhancing-your-high-fidelity-audio",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-definitive-guide-to-the-best-chrome-plugins-for-media-downloading-in-2025-mliju7acduv",
+      "destination": "/blog/the-definitive-guide-to-the-best-chrome-plugins-for-media-downloading-in-2025",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-guide-to-choosing-a-youtube-video-downloader-for-pc-chrome-mliju74r9ry",
+      "destination": "/blog/the-ultimate-guide-to-choosing-a-youtube-video-downloader-for-pc-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-guide-to-finding-a-download-youtube-audio-chrome-extension-free-mliju6wmncq",
+      "destination": "/blog/the-ultimate-guide-to-finding-a-download-youtube-audio-chrome-extension-free",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-guide-to-finding-a-fast-youtube-downloader-chrome-plugin-efficiency-security-and-best-p-mliju62cbv5",
+      "destination": "/blog/the-ultimate-guide-to-finding-a-fast-youtube-downloader-chrome-plugin-efficiency-security-and-best-p",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-guide-to-finding-a-safe-youtube-downloader-extension-no-ads-mliju6qrdal",
+      "destination": "/blog/the-ultimate-guide-to-finding-a-safe-youtube-downloader-extension-no-ads",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-guide-to-youtube-to-mp4-converter-chrome-extensions-efficiency-safety-and-workflow-opti-mliju7fx72b",
+      "destination": "/blog/the-ultimate-guide-to-youtube-to-mp4-converter-chrome-extensions-efficiency-safety-and-workflow-opti",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-5-privacy-and-security-extensions-for-chrome-mobile-protect-your-online-identity-mmb7lsz3swu",
+      "destination": "/blog/top-5-privacy-and-security-extensions-for-chrome-mobile-protect-your-online-identity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-alternatives-to-ghostery-for-chrome-browser-boosting-privacy-and-security-mmb7ltgtqdm",
+      "destination": "/blog/top-alternatives-to-ghostery-for-chrome-browser-boosting-privacy-and-security",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-rated-privacy-extensions-for-google-chrome-protecting-your-online-identity-mll9brk1sln",
+      "destination": "/blog/top-rated-privacy-extensions-for-google-chrome-protecting-your-online-identity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n",
+      "destination": "/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-a-faster-and-more-secure-browsing-experience-the-best-free-adblocker-for-chrome-android-mmtlczy3tpr",
+      "destination": "/blog/unlock-a-faster-and-more-secure-browsing-experience-the-best-free-adblocker-for-chrome-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-a-seamless-youtube-experience-the-best-ad-blocker-that-works-on-youtube-chrome-mme0iyicafq",
+      "destination": "/blog/unlock-a-seamless-youtube-experience-the-best-ad-blocker-that-works-on-youtube-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-ad-free-youtube-browsing-the-ultimate-guide-to-youtube-ad-blocker-extension-chrome-mmdz7ycqcui",
+      "destination": "/blog/unlock-ad-free-youtube-browsing-the-ultimate-guide-to-youtube-ad-blocker-extension-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-efficient-downloads-with-the-best-free-download-manager-chrome-extension-mmdupg128fq",
+      "destination": "/blog/unlock-efficient-downloads-with-the-best-free-download-manager-chrome-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-faster-browsing-the-ultimate-guide-to-chrome-performance-booster-tools-mmtizynrlkk",
+      "destination": "/blog/unlock-faster-browsing-the-ultimate-guide-to-chrome-performance-booster-tools",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-faster-downloads-with-idm-extension-for-chrome-free-download-latest-version-mmb6y473kzg",
+      "destination": "/blog/unlock-faster-downloads-with-idm-extension-for-chrome-free-download-latest-version",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-full-potential-of-kiwi-browser-discover-the-best-extensions-for-enhanced-browsing-mmthoxikuuo",
+      "destination": "/blog/unlock-the-full-potential-of-kiwi-browser-discover-the-best-extensions-for-enhanced-browsing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-full-potential-of-linkedin-with-the-best-linkedin-chrome-extensions-mmdsjdsf6xu",
+      "destination": "/blog/unlock-the-full-potential-of-linkedin-with-the-best-linkedin-chrome-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-full-potential-of-your-browser-chrome-extensions-for-better-browsing-mmdrxzo9gfg",
+      "destination": "/blog/unlock-the-full-potential-of-your-browser-chrome-extensions-for-better-browsing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-full-potential-of-your-mobile-device-discover-the-best-mobile-browser-with-chrome-store-s-mmthp0npy6z",
+      "destination": "/blog/unlock-the-full-potential-of-your-mobile-device-discover-the-best-mobile-browser-with-chrome-store-s",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-full-potential-of-youtube-the-best-youtube-extensions-chrome-has-to-offer-mmdz4d36x0y",
+      "destination": "/blog/unlock-the-full-potential-of-youtube-the-best-youtube-extensions-chrome-has-to-offer",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-a-free-pop-up-blocker-chrome-extension-for-a-seamless-browsing-experience-mm3scnkaas3",
+      "destination": "/blog/unlock-the-power-of-a-free-pop-up-blocker-chrome-extension-for-a-seamless-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-a-popup-blocker-free-boosting-your-browsing-experience-mm3scpsw3rb",
+      "destination": "/blog/unlock-the-power-of-a-popup-blocker-free-boosting-your-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-a-seamless-browsing-experience-the-ultimate-guide-to-chrome-pop-up-blocker-mm3scphqdyd",
+      "destination": "/blog/unlock-the-power-of-a-seamless-browsing-experience-the-ultimate-guide-to-chrome-pop-up-blocker",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android-mm3scnuyzcs",
+      "destination": "/blog/unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-batch-image-downloader-extension-a-comprehensive-guide-mmtvre5kc7v",
+      "destination": "/blog/unlock-the-power-of-batch-image-downloader-extension-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-chrome-discover-the-best-chrome-extension-for-marketing-professionals-mmdt10wp8cu",
+      "destination": "/blog/unlock-the-power-of-chrome-discover-the-best-chrome-extension-for-marketing-professionals",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-color-with-the-best-color-picker-chrome-extension-free-mmtm0ezx77j",
+      "destination": "/blog/unlock-the-power-of-color-with-the-best-color-picker-chrome-extension-free",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-css-the-ultimate-guide-to-css-viewer-extension-for-chrome-mmtm0fy4u2w",
+      "destination": "/blog/unlock-the-power-of-css-the-ultimate-guide-to-css-viewer-extension-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-instagram-downloads-with-the-best-chrome-extension-for-instagram-download-mmdsjemn6y0",
+      "destination": "/blog/unlock-the-power-of-instagram-downloads-with-the-best-chrome-extension-for-instagram-download",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-json-the-ultimate-guide-to-json-formatter-chrome-extension-mmtm0fnlxhc",
+      "destination": "/blog/unlock-the-power-of-json-the-ultimate-guide-to-json-formatter-chrome-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-meta-pixel-finding-the-best-meta-pixel-extensions-for-shopify-stores-mmb6y3rzty1",
+      "destination": "/blog/unlock-the-power-of-meta-pixel-finding-the-best-meta-pixel-extensions-for-shopify-stores",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-meta-pixel-with-the-meta-pixel-helper-chrome-extension-download-link-mmb6y3b2j58",
+      "destination": "/blog/unlock-the-power-of-meta-pixel-with-the-meta-pixel-helper-chrome-extension-download-link",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-mobile-development-top-chrome-devtools-tips-for-mobile-mmtm0hanwsl",
+      "destination": "/blog/unlock-the-power-of-mobile-development-top-chrome-devtools-tips-for-mobile",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-music-the-best-chrome-extension-to-download-youtube-music-mmdz4dln1vq",
+      "destination": "/blog/unlock-the-power-of-music-the-best-chrome-extension-to-download-youtube-music",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-music-the-ultimate-guide-to-youtube-audio-downloader-chrome-extension-mmdz4dgys00",
+      "destination": "/blog/unlock-the-power-of-music-the-ultimate-guide-to-youtube-audio-downloader-chrome-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-responsive-design-the-ultimate-guide-to-responsive-design-tester-extension-mmtm0h38w7y",
+      "destination": "/blog/unlock-the-power-of-responsive-design-the-ultimate-guide-to-responsive-design-tester-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-seo-the-best-seo-extensions-for-chrome-2026-mmtm0dwx1nu",
+      "destination": "/blog/unlock-the-power-of-seo-the-best-seo-extensions-for-chrome-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-video-downloading-the-best-chrome-extension-for-youtube-downloader-mmdz4da9s5b",
+      "destination": "/blog/unlock-the-power-of-video-downloading-the-best-chrome-extension-for-youtube-downloader",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-web-scraping-the-ultimate-guide-to-web-scraper-extension-for-chrome-mmtm0gozela",
+      "destination": "/blog/unlock-the-power-of-web-scraping-the-ultimate-guide-to-web-scraper-extension-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-website-analysis-with-the-best-chrome-extension-for-website-analysis-mmdt10qgwzb",
+      "destination": "/blog/unlock-the-power-of-website-analysis-with-the-best-chrome-extension-for-website-analysis",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-your-browser-hidden-chrome-extensions-you-should-try-mmdrxztjzma",
+      "destination": "/blog/unlock-the-power-of-your-browser-hidden-chrome-extensions-you-should-try",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-youtube-subtitle-downloader-chrome-a-comprehensive-guide-mmdz4dqyokk",
+      "destination": "/blog/unlock-the-power-of-youtube-subtitle-downloader-chrome-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-your-full-potential-the-best-youtube-productivity-extensions-for-a-more-efficient-you-mmdz7y38wml",
+      "destination": "/blog/unlock-your-full-potential-the-best-youtube-productivity-extensions-for-a-more-efficient-you",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-a-seamless-browsing-experience-the-power-of-chrome-ad-blocker-android-mm3scoxnwg6",
+      "destination": "/blog/unlocking-a-seamless-browsing-experience-the-power-of-chrome-ad-blocker-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-a-comprehensive-guide-to-ad-block-chrome-android-mm3scocktyi",
+      "destination": "/blog/unlocking-ad-free-browsing-a-comprehensive-guide-to-ad-block-chrome-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-on-android-a-comprehensive-guide-to-android-chrome-adblock-mm3sco59uco",
+      "destination": "/blog/unlocking-ad-free-browsing-on-android-a-comprehensive-guide-to-android-chrome-adblock",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-on-the-go-the-ultimate-guide-to-chrome-mobile-adblock-mm3scpcgwtz",
+      "destination": "/blog/unlocking-ad-free-browsing-on-the-go-the-ultimate-guide-to-chrome-mobile-adblock",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android-mm3scomswm6",
+      "destination": "/blog/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-chrome-android-mm3sco03ug5",
+      "destination": "/blog/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-chrome-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-in-chrome-android-mm3scos4n36",
+      "destination": "/blog/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-in-chrome-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-on-chrome-android-mm3scp3569k",
+      "destination": "/blog/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-on-chrome-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-efficiency-auto-tab-suspender-extension-free-download-for-a-seamless-browsing-experience-mll9bskiotb",
+      "destination": "/blog/unlocking-efficiency-auto-tab-suspender-extension-free-download-for-a-seamless-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-efficiency-the-best-chrome-tools-for-productivity-to-boost-your-workflow-mmdrxz7mi4g",
+      "destination": "/blog/unlocking-efficiency-the-best-chrome-tools-for-productivity-to-boost-your-workflow",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser-mll9bto578a",
+      "destination": "/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-efficient-browsing-extensions-boosting-productivity-and-streamlining-your-online-experienc-mmtizywhjd8",
+      "destination": "/blog/unlocking-efficient-browsing-extensions-boosting-productivity-and-streamlining-your-online-experienc",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-online-privacy-a-comprehensive-guide-to-ghostery-for-chrome-android-mm3scml5zl3",
+      "destination": "/blog/unlocking-online-privacy-a-comprehensive-guide-to-ghostery-for-chrome-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension-mm3scmqpeo4",
+      "destination": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-online-privacy-the-power-of-ghostery-chrome-extension-mm3sclh7asr",
+      "destination": "/blog/unlocking-online-privacy-the-power-of-ghostery-chrome-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk",
+      "destination": "/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm",
+      "destination": "/blog/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-productivity-the-best-chrome-extension-for-web-developers-to-boost-efficiency-mmdt109l96v",
+      "destination": "/blog/unlocking-productivity-the-best-chrome-extension-for-web-developers-to-boost-efficiency",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-productivity-the-best-chrome-extensions-for-web-developers-mmtm0ejlryv",
+      "destination": "/blog/unlocking-productivity-the-best-chrome-extensions-for-web-developers",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-secure-browsing-a-guide-to-the-best-chrome-vpn-extension-free-options-mmdzl1ass5x",
+      "destination": "/blog/unlocking-secure-browsing-a-guide-to-the-best-chrome-vpn-extension-free-options",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-full-potential-of-chrome-mobile-a-comprehensive-guide-to-chrome-mobile-extensions-work-mmthowo8su8",
+      "destination": "/blog/unlocking-the-full-potential-of-chrome-mobile-a-comprehensive-guide-to-chrome-mobile-extensions-work",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-full-potential-of-chrome-on-mobile-a-step-by-step-guide-on-how-to-use-chrome-extension-mmthovaloyu",
+      "destination": "/blog/unlocking-the-full-potential-of-chrome-on-mobile-a-step-by-step-guide-on-how-to-use-chrome-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-full-potential-of-kiwi-browser-a-comprehensive-guide-to-kiwi-browser-settings-for-exte-mmthoygydyi",
+      "destination": "/blog/unlocking-the-full-potential-of-kiwi-browser-a-comprehensive-guide-to-kiwi-browser-settings-for-exte",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-full-potential-of-your-android-tablet-the-best-chrome-extension-for-android-tablet-mmthoxto10w",
+      "destination": "/blog/unlocking-the-full-potential-of-your-android-tablet-the-best-chrome-extension-for-android-tablet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-full-potential-of-your-browser-a-comprehensive-guide-to-chrome-extension-manager-tools-mmdrxzd24au",
+      "destination": "/blog/unlocking-the-full-potential-of-your-browser-a-comprehensive-guide-to-chrome-extension-manager-tools",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-full-potential-of-youtube-a-comprehensive-guide-to-youtube-extensions-mmdz4ci1q06",
+      "destination": "/blog/unlocking-the-full-potential-of-youtube-a-comprehensive-guide-to-youtube-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-a-fast-adblocker-extension-with-no-memory-leak-boosting-browser-performance-mll9brfnaxd",
+      "destination": "/blog/unlocking-the-power-of-a-fast-adblocker-extension-with-no-memory-leak-boosting-browser-performance",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-ad-blockers-boosting-your-browsing-experience-with-light-popup-blocker-mm3scnflwya",
+      "destination": "/blog/unlocking-the-power-of-ad-blockers-boosting-your-browsing-experience-with-light-popup-blocker",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-adblock-chrome-on-android-a-comprehensive-guide-mm3scp7stxi",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-api-testing-a-comprehensive-guide-to-api-tester-chrome-extension-mmtm0gtdjbe",
+      "destination": "/blog/unlocking-the-power-of-api-testing-a-comprehensive-guide-to-api-tester-chrome-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-chrome-extensions-for-android-apk-a-comprehensive-guide-mmthow0dkxi",
+      "destination": "/blog/unlocking-the-power-of-chrome-extensions-for-android-apk-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-chrome-how-to-enable-chrome-memory-saver-mode-for-a-seamless-browsing-experie-mmthx9ioyu8",
+      "destination": "/blog/unlocking-the-power-of-chrome-how-to-enable-chrome-memory-saver-mode-for-a-seamless-browsing-experie",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-chrome-how-to-use-a-chrome-extension-for-android-phone-mmthp0ezfp7",
+      "destination": "/blog/unlocking-the-power-of-chrome-how-to-use-a-chrome-extension-for-android-phone",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-data-analysis-the-best-chrome-extension-for-analytics-mmdt113oxr6",
+      "destination": "/blog/unlocking-the-power-of-data-analysis-the-best-chrome-extension-for-analytics",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-facebook-pixel-helper-chrome-2026-a-comprehensive-guide-mmtm0g85dyl",
+      "destination": "/blog/unlocking-the-power-of-facebook-pixel-helper-chrome-2026-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-facebook-pixel-the-ultimate-guide-to-chrome-extensions-for-enhanced-tracking-mmdsusvgbob",
+      "destination": "/blog/unlocking-the-power-of-facebook-pixel-the-ultimate-guide-to-chrome-extensions-for-enhanced-tracking",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-facebook-the-ultimate-guide-to-chrome-extensions-for-facebook-tools-mmdsje6nqce",
+      "destination": "/blog/unlocking-the-power-of-facebook-the-ultimate-guide-to-chrome-extensions-for-facebook-tools",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-ghostery-extension-chrome-enhance-your-browsing-experience-mm3scm2x6ag",
+      "destination": "/blog/unlocking-the-power-of-ghostery-extension-chrome-enhance-your-browsing-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-google-tag-assistant-extension-a-comprehensive-guide-mmtm0g2sjow",
+      "destination": "/blog/unlocking-the-power-of-google-tag-assistant-extension-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-inspect-element-chrome-extension-tools-a-comprehensive-guide-mmdt10kh9a3",
+      "destination": "/blog/unlocking-the-power-of-inspect-element-chrome-extension-tools-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-keyword-research-the-best-chrome-extension-for-keyword-research-mmdt0zk2znj",
+      "destination": "/blog/unlocking-the-power-of-keyword-research-the-best-chrome-extension-for-keyword-research",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-kiwi-browser-developer-mode-a-comprehensive-guide-mmthp09j08g",
+      "destination": "/blog/unlocking-the-power-of-kiwi-browser-developer-mode-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-meta-tags-the-ultimate-guide-to-chrome-extension-for-meta-tags-mmdt10189pc",
+      "destination": "/blog/unlocking-the-power-of-meta-tags-the-ultimate-guide-to-chrome-extension-for-meta-tags",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-online-privacy-a-comprehensive-guide-to-ghostery-add-on-chrome-mm3scm95f3h",
+      "destination": "/blog/unlocking-the-power-of-online-privacy-a-comprehensive-guide-to-ghostery-add-on-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-password-management-the-ultimate-guide-to-keepass-extension-for-chrome-mm3scn67cyp",
+      "destination": "/blog/unlocking-the-power-of-password-management-the-ultimate-guide-to-keepass-extension-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-react-devtools-for-chrome-mobile-a-comprehensive-guide-mmtm0fhykxq",
+      "destination": "/blog/unlocking-the-power-of-react-devtools-for-chrome-mobile-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-secure-browsing-extensions-like-ghostery-for-a-safer-online-experience-mll9bs3gkw1",
+      "destination": "/blog/unlocking-the-power-of-secure-browsing-extensions-like-ghostery-for-a-safer-online-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-secure-browsing-top-extensions-for-a-safe-online-experience-mm3scnaxehm",
+      "destination": "/blog/unlocking-the-power-of-secure-browsing-top-extensions-for-a-safe-online-experience",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-social-media-the-best-social-media-chrome-extensions-for-a-seamless-experienc-mmdsjecdo4o",
+      "destination": "/blog/unlocking-the-power-of-social-media-the-best-social-media-chrome-extensions-for-a-seamless-experienc",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-social-media-the-ultimate-guide-to-chrome-extension-for-social-analytics-mmdsutrnj8g",
+      "destination": "/blog/unlocking-the-power-of-social-media-the-ultimate-guide-to-chrome-extension-for-social-analytics",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-web-development-the-best-chrome-extension-to-view-source-code-mmdt11ed3vp",
+      "destination": "/blog/unlocking-the-power-of-web-development-the-best-chrome-extension-to-view-source-code",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-website-analysis-a-comprehensive-wappalyzer-chrome-extension-guide-mmtm0ggk7gb",
+      "destination": "/blog/unlocking-the-power-of-website-analysis-a-comprehensive-wappalyzer-chrome-extension-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-yandex-browser-on-chrome-web-store-a-comprehensive-guide-mmthovo77ng",
+      "destination": "/blog/unlocking-the-power-of-yandex-browser-on-chrome-web-store-a-comprehensive-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-is-chrome-using-so-much-memory-2026-fixes-mmb7sschcjw",
+      "destination": "/blog/why-is-chrome-using-so-much-memory-2026-fixes",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!.*\\.).*)",

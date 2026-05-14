@@ -15,7 +15,7 @@
 | 8 | YouTube Tools | `youtube-tools-guide` | 14 | 3 | 14 | 1 out, 1 in | ✅ COMPLETE |
 | 9 | Dark Mode | `youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds` | 7 | 2 | 7 | 1 out | ✅ COMPLETE |
 | 10 | Mobile / Android | `chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide` | 16 | 3 | 16 | 1 out, 1 in | ✅ COMPLETE |
-| 11 | Developer Tools & SEO | `unlocking-productivity-the-best-chrome-extensions-for-web-developers-mmtm0ejlryv` | 20 | 3 | 19 | 1 out, 1 in | ✅ COMPLETE |
+| 11 | Developer Tools & SEO | `unlocking-productivity-the-best-chrome-extensions-for-web-developers` | 20 | 3 | 19 | 1 out, 1 in | ✅ COMPLETE |
 | 12 | Productivity & Focus | `best-free-chrome-extensions-the-2025-toolkit-you-actually-need` | 16 | 3 | 16 | — | ✅ COMPLETE |
 | 13 | Social Media | `boost-your-online-presence-...mmdsutdfgz9` | 12 | 3 | 12 | — | ✅ COMPLETE |
 
@@ -61,7 +61,7 @@
 - **Cross-links in**: ← Developer Tools
 
 ### Cluster 6 — Tab Management & Browser Performance
-- **Pillar**: `/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk`
+- **Pillar**: `/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions`
 - **Spokes (22)**: auto-tab-discarder-vs-the-great-suspender-..., autotab-discard-vs-onetab-..., best-chrome-extensions-for-old-pcs-..., + 19 more
 - **Pillar → Spokes**: why-is-chrome-using-so-much-memory-..., best-tab-suspender-for-4gb-ram-..., chrome-vs-edge-vs-brave-ram-comparison, auto-tab-discarder-vs-the-great-suspender-...
 - **Cross-links out**: → Ad Blocking Desktop
@@ -94,7 +94,7 @@
 - **Cross-links in**: ← Ad Blocking Android
 
 ### Cluster 11 — Developer Tools & SEO Extensions
-- **Pillar**: `/blog/unlocking-productivity-the-best-chrome-extensions-for-web-developers-mmtm0ejlryv`
+- **Pillar**: `/blog/unlocking-productivity-the-best-chrome-extensions-for-web-developers`
 - **Spokes (20)**: bugherd-extension-chrome-2, chatgpt-extension-to-chrome-5, cors-chrome-7, + 17 more
 - **Pillar → Spokes**: cors-chrome-7, unlock-the-power-of-json-..., unlock-the-power-of-seo-the-best-seo-extensions-...
 - **Cross-links out**: → Screenshot Tools
@@ -106,7 +106,7 @@
 - **Pillar → Spokes**: best-website-blocker-schedule-chrome-2026, chrome-extensions-vs-web-apps-..., 15-essential-chrome-extensions-...
 
 ### Cluster 13 — Social Media Extensions
-- **Pillar**: `/blog/boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing-mmdsutdfgz9`
+- **Pillar**: `/blog/boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing`
 - **Spokes (12)**: boost-your-twitter-productivity-..., dark-mode-for-twitter-..., download-instagram-reels-chrome-..., + 9 more
 - **Pillar → Spokes**: unlock-the-full-potential-of-linkedin-..., boost-your-twitter-productivity-..., unlocking-the-power-of-facebook-pixel-helper-...
 
