@@ -19,11 +19,6 @@ interface Article {
   published_at: string;
 }
 
-interface IndexingKey {
-  private_key?: string;
-  client_email?: string;
-}
-
 /**
  * Notifies Google Indexing API about a new or updated URL.
  */
@@ -52,10 +47,10 @@ export async function notifyIndexing(url: string, type: 'URL_UPDATED' | 'URL_DEL
 
   try {
     const auth = new google.auth.GoogleAuth(authOptions);
-    const client = await auth.getClient();
+    const authClient = await auth.getClient();
     const indexing = google.indexing({
       version: 'v3',
-      auth: client as any,
+      auth: authClient as any,
     });
 
     const res = await indexing.urlNotifications.publish({
@@ -151,4 +146,6 @@ async function massIndexing() {
 }
 
 // Run if called directly
-massIndexing().catch(console.error);
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  massIndexing().catch(console.error);
+}
