@@ -39,6 +39,7 @@ import {
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { supabase, isDevBypass } from "@/integrations/supabase/client";
+import { useAdminSession } from "@/hooks/useAdminSession";
 import { useToast } from "@/hooks/use-toast";
 
 interface GeneratedArticle {
@@ -244,6 +245,7 @@ const AI_PROVIDERS: AIProviderConfig[] = [
 const AIGenerator = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { isAuthenticated: hasAdminSession } = useAdminSession();
 
   // Auth state
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -342,31 +344,38 @@ const AIGenerator = () => {
   }, []);
 
   const checkAuth = async () => {
-    if (isDevBypass) {
+    // Accept localStorage admin session (new /admin/* system) OR dev-bypass first
+    if (hasAdminSession || isDevBypass) {
       setIsAuthenticated(true);
       setLoading(false);
       return;
     }
 
-    const { data: { session } } = await supabase.auth.getSession();
-    if (!session) {
-      navigate("/settings");
-      return;
+    // Fallback: legacy Supabase session (for /settings/ai-generator route)
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        navigate("/settings");
+        return;
+      }
+
+      const { data: role } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", session.user.id)
+        .single();
+
+      if (role?.role !== "admin") {
+        navigate("/settings");
+        return;
+      }
+
+      setIsAuthenticated(true);
+      setLoading(false);
+    } catch {
+      // Supabase unreachable — redirect to admin login
+      navigate("/admin/login");
     }
-
-    const { data: role } = await supabase
-      .from("user_roles")
-      .select("role")
-      .eq("user_id", session.user.id)
-      .single();
-
-    if (role?.role !== "admin") {
-      navigate("/settings");
-      return;
-    }
-
-    setIsAuthenticated(true);
-    setLoading(false);
   };
 
   const fetchExtensions = async () => {

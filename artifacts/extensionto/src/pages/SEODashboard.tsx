@@ -8,6 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase, isDevBypass } from "@/integrations/supabase/client";
+import { useAdminSession } from "@/hooks/useAdminSession";
 import { useToast } from "@/hooks/use-toast";
 import SEO from "@/components/SEO";
 import KeywordMapper from "@/components/seo-dashboard/KeywordMapper";
@@ -43,33 +44,41 @@ const SEODashboard = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { isAuthenticated: hasAdminSession } = useAdminSession();
 
   useEffect(() => {
     const checkAuth = async () => {
-      if (isDevBypass) {
+      // Accept localStorage admin session (new /admin/* auth system) OR
+      // legacy Supabase session (old /settings/* system) OR dev-bypass.
+      if (hasAdminSession || isDevBypass) {
         fetchArticles();
         return;
       }
 
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) { navigate("/settings"); return; }
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) { navigate("/settings"); return; }
 
-      const { data: role, error: roleError } = await supabase
-        .from("user_roles")
-        .select("role")
-        .eq("user_id", session.user.id)
-        .single();
+        const { data: role, error: roleError } = await supabase
+          .from("user_roles")
+          .select("role")
+          .eq("user_id", session.user.id)
+          .single();
 
-      if (roleError || role?.role !== "admin") {
-        await supabase.auth.signOut();
-        navigate("/settings");
-        return;
+        if (roleError || role?.role !== "admin") {
+          await supabase.auth.signOut();
+          navigate("/settings");
+          return;
+        }
+
+        fetchArticles();
+      } catch {
+        // Supabase unreachable — fall through to local data
+        fetchArticles();
       }
-
-      fetchArticles();
     };
     checkAuth();
-  }, [navigate]);
+  }, [navigate, hasAdminSession]);
 
   const fetchArticles = async () => {
     setLoading(true);
