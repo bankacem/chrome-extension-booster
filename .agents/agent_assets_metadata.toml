@@ -1,0 +1,43 @@
+uploads = []
+
+[[generated]]
+id = "rLrr1wUrGQEWd-hzdPI3R"
+uri = "file://artifacts/extensionto/public/images/blog/useful-chrome-extensions.png"
+type = "image"
+title = "generated_image"
+
+[[outputs]]
+id = "qZcxT3rQVxswb4B-EE2OJ"
+uri = "file://AUDIT_REPORT.md"
+type = "text"
+title = "SEO AUDIT REPORT — Phase 1 (Read-Only)"
+
+[[outputs]]
+id = "lelkqWxINsUb69LmZyJZI"
+uri = "file://CHANGELOG.md"
+type = "text"
+title = "CHANGELOG — P0 Fixes (6 operations)"
+
+[[outputs]]
+id = "Z0UYU8m-SV7ULv5Fdlrll"
+uri = "file://VALIDATION_STATUS.md"
+type = "text"
+title = "VALIDATION_STATUS.md — Post-P0 State Report"
+
+[[outputs]]
+id = "UB5ut0XvZxhhGBJGvZzmw"
+uri = "file://SEO_RISK_REPORT.md"
+type = "text"
+title = "SEO_RISK_REPORT.md — Full Risk Analysis"
+
+[[outputs]]
+id = "DvMuFOIvgStyrcJCDFJDV"
+uri = "file://SAFE_AUDIT_REPORT.md"
+type = "text"
+title = "SAFE_AUDIT_REPORT.md — Full P0/P1/P2 Classification"
+
+[[outputs]]
+id = "LJOeN1ZC5wzSIHOuGaGSR"
+uri = "file://REMEDIATION_PLAN.md"
+type = "text"
+title = "REMEDIATION_PLAN.md — Phase 2 Strategy Output"

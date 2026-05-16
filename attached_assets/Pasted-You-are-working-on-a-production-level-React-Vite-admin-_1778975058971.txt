@@ -1,0 +1,114 @@
+You are working on a production-level React + Vite admin system with Supabase integration.
+
+CURRENT PROBLEM:
+- User can successfully login
+- BUT gets logged out when navigating to /admin pages
+- AND sometimes sees "failed to fetch" errors
+- Admin session is unstable or not persisted correctly
+
+────────────────────────────
+GOAL:
+────────────────────────────
+
+Fix authentication system so that:
+
+1. Login works and persists correctly across all /admin routes
+2. User does NOT get logged out when refreshing or navigating
+3. "failed to fetch" errors are eliminated
+4. Supabase connection is stable
+5. Protected routes work correctly
+
+────────────────────────────
+1. SESSION FIX (CRITICAL)
+────────────────────────────
+
+Implement a SINGLE reliable auth source:
+
+Use localStorage key:
+ext_admin_session_v2
+
+Session format:
+{
+  email: "dhaichione@gmail.com",
+  expiresAt: timestamp (8 hours from login)
+}
+
+Rules:
+- Session must be checked on EVERY protected route load
+- If expired or missing → redirect to /admin/login
+- Session must NOT be overwritten or cleared accidentally
+- Must persist across page refresh and navigation
+
+────────────────────────────
+2. PROTECTED ROUTES FIX
+────────────────────────────
+
+Ensure /admin routes are fully protected:
+
+/admin
+/admin/dashboard
+/admin/cms
+
+Behavior:
+- If session valid → allow access
+- If session invalid → redirect to /admin/login
+- Do NOT re-check Supabase on every navigation
+- Avoid infinite redirect loops
+
+────────────────────────────
+3. "FAILED TO FETCH" FIX (SUPABASE)
+────────────────────────────
+
+Fix Supabase connection issues:
+
+- Ensure VITE_SUPABASE_URL is correctly loaded
+- Ensure VITE_SUPABASE_PUBLISHABLE_KEY is used properly
+- Add error handling for network failures
+- Add fallback so UI does NOT crash if Supabase fails
+
+DO NOT break UI if API fails.
+
+Add safe wrapper:
+try/catch around all Supabase calls.
+
+────────────────────────────
+4. LOGIN FLOW
+────────────────────────────
+
+On login success:
+
+- Save session to localStorage immediately
+- Set expiration time (8 hours)
+- Redirect to /admin/dashboard
+
+DO NOT:
+- clear session on route change
+- revalidate login unnecessarily
+- call Supabase repeatedly on every render
+
+────────────────────────────
+5. DEBUG REQUIREMENTS
+────────────────────────────
+
+Add safe logs:
+
+console.log("AUTH SESSION:", session)
+
+But DO NOT log password or sensitive data.
+
+────────────────────────────
+6. IMPORTANT RULES
+
+- DO NOT modify blog articles system (500 posts)
+- DO NOT regenerate images
+- DO NOT change sitemap
+- ONLY fix auth + admin routing + Supabase connection stability
+
+────────────────────────────
+FINAL GOAL:
+
+A stable admin system where:
+- login persists
+- admin pages never log out user unexpectedly
+- no "failed to fetch" errors break navigation
+- system works in production (Vercel + Replit)

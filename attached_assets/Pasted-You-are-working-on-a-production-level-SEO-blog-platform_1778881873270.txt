@@ -1,0 +1,123 @@
+You are working on a production-level SEO blog platform (500+ articles) deployed on Vercel.
+
+GOAL:
+Inject structured data (JSON-LD) for SEO rich results WITHOUT breaking the site.
+
+────────────────────────────
+PHASE 1 — DETECT ARTICLE SYSTEM
+────────────────────────────
+
+For each blog article page, detect:
+- title (headline)
+- slug from URL
+- datePublished (from frontmatter or metadata)
+- canonical URL
+
+────────────────────────────
+PHASE 2 — INJECT ARTICLE SCHEMA
+────────────────────────────
+
+Inject ONE JSON-LD script per article inside <head> OR main layout:
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{title}}",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Carter"
+  },
+  "image": [
+    "https://extensionto.com/images/blog/{{slug}}.webp"
+  ],
+  "datePublished": "{{datePublished}}",
+  "dateModified": "{{currentDate}}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://extensionto.com/blog/{{slug}}"
+  }
+}
+</script>
+
+────────────────────────────
+PHASE 3 — INJECT BREADCRUMB SCHEMA
+────────────────────────────
+
+Also inject SECOND JSON-LD block:
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://extensionto.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://extensionto.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{title}}",
+      "item": "https://extensionto.com/blog/{{slug}}"
+    }
+  ]
+}
+</script>
+
+────────────────────────────
+PHASE 4 — SAFETY RULES (VERY IMPORTANT)
+────────────────────────────
+
+DO NOT:
+- modify slugs
+- modify sitemap
+- regenerate images
+- change URLs
+- duplicate JSON-LD blocks
+
+ENSURE:
+- only ONE Article schema per page
+- only ONE Breadcrumb schema per page
+- valid JSON (no trailing commas)
+- no rendering break
+- works in React / Next.js / Vite safely
+
+────────────────────────────
+PHASE 5 — IMPLEMENTATION METHOD
+────────────────────────────
+
+If project uses React/Next.js:
+- inject using <Helmet> OR next/head
+
+If Vite/SPA:
+- inject dynamically via document.head.appendChild(script)
+
+────────────────────────────
+PHASE 6 — VALIDATION
+────────────────────────────
+
+After deployment check:
+
+✔ 500/500 articles include JSON-LD
+✔ No duplicate schema
+✔ Google Rich Results Test passes
+✔ No console JSON errors
+
+────────────────────────────
+FINAL GOAL:
+────────────────────────────
+
+Make every article eligible for:
+- Google Rich Results
+- Google Discover boost
+- Higher CTR
+- Strong SEO structured data compliance

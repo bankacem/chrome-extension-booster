@@ -1,0 +1,86 @@
+You are building a secure Admin Authentication System for a production SEO blog platform.
+
+GOAL:
+Create a full login system + protected admin dashboard without breaking the existing blog (500 articles must remain untouched).
+
+────────────────────────────
+1. AUTH SYSTEM (LOGIN)
+────────────────────────────
+
+Create a login page at:
+
+/admin/login
+
+Requirements:
+- Email + Password authentication
+- Use Supabase Auth (if available) OR secure mock auth fallback
+- Validate credentials before access
+- Store session securely (localStorage or Supabase session)
+
+Hardcoded admin account (for now):
+- email: admin@extensionto.com
+- password: Admin@12345
+
+DO NOT expose this in frontend logs.
+
+────────────────────────────
+2. PROTECTED ROUTES
+────────────────────────────
+
+Protect these routes:
+
+/admin
+/admin/cms
+/admin/dashboard
+
+If user is NOT logged in:
+→ redirect to /admin/login
+
+If logged in:
+→ allow access normally
+
+────────────────────────────
+3. ADMIN DASHBOARD
+────────────────────────────
+
+Create a clean dashboard UI with:
+
+- Total Articles (fetch from existing system)
+- Create New Article button
+- Open CMS button (/admin/cms)
+- Logout button
+
+UI should be modern, minimal, and responsive.
+
+────────────────────────────
+4. SESSION HANDLING
+────────────────────────────
+
+- Persist login session after refresh
+- Auto-check session on app load
+- Auto-logout function
+
+────────────────────────────
+5. SECURITY RULES (IMPORTANT)
+────────────────────────────
+
+- Do NOT expose passwords in UI
+- Do NOT allow public access to admin routes
+- Do NOT modify existing blog articles
+- Do NOT regenerate images
+- Do NOT change SEO or sitemap logic
+- ONLY add authentication layer
+
+────────────────────────────
+6. INTEGRATION RULES
+────────────────────────────
+
+- Keep existing 500 articles system unchanged
+- Do not touch blog rendering logic
+- Admin system must be separate layer
+- Use Supabase only for authentication if available
+
+────────────────────────────
+FINAL GOAL:
+
+A secure admin login system that protects a full SEO blog CMS dashboard with session-based authentication and route protection, without breaking production system.

@@ -1,0 +1,100 @@
+TEST MODE — GENERATE IMAGE FOR ONLY ONE ARTICLE
+
+GOAL:
+Create ONE professional SEO blog featured image for a single article that currently has no image.
+
+IMPORTANT:
+This is a TEST ONLY before processing all articles.
+
+================================================
+TARGET ARTICLE
+================================================
+
+Find ONE article missing an image field.
+
+DO NOT process multiple articles.
+
+================================================
+IMAGE REQUIREMENTS
+================================================
+
+- format: WEBP only
+- dimensions: 1600x900
+- optimized for Google SEO
+- optimized for Google Discover
+- lightweight (<200KB preferred)
+- high quality
+- professional blog thumbnail style
+- modern typography
+- title overlay required
+
+================================================
+DESIGN
+================================================
+
+The image must:
+- match the article topic visually
+- look professional
+- use gradients/shapes/icons
+- avoid generic AI garbage
+- have clean readable title text
+- mobile-friendly
+
+================================================
+TECH RULES
+================================================
+
+Use ONLY lightweight local generation:
+- sharp
+- SVG
+- gradients
+- typography
+
+NO paid APIs.
+NO heavy AI models.
+
+================================================
+SAVE LOCATION
+================================================
+
+Save image to:
+
+public/images/blog/
+
+Filename:
+article-slug.webp
+
+================================================
+ARTICLE UPDATE
+================================================
+
+Add/update frontmatter:
+
+image: "/images/blog/article-slug.webp"
+
+================================================
+VALIDATION
+================================================
+
+After generation:
+
+1. Verify WEBP exists
+2. Verify image size
+3. Verify article updated correctly
+
+================================================
+FINAL OUTPUT
+================================================
+
+AFTER COMPLETION:
+PRINT ONLY:
+
+- article title
+- article slug
+- generated image path
+- public article URL
+- direct image URL
+- image size in KB
+
+IMPORTANT:
+Give the LIVE article URL so I can visually inspect the image quality before scaling to all articles.

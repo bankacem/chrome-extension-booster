@@ -1,0 +1,112 @@
+You are working on a production SEO blog system already partially processed.
+
+YOUR TASK:
+Stabilize the system and fix inconsistencies without regenerating everything.
+
+────────────────────────────
+1. AUTHOR ENFORCEMENT (STRICT)
+────────────────────────────
+
+Ensure ALL articles have:
+
+author: "Daniel Carter"
+
+RULES:
+- Must overwrite any existing author
+- No exceptions
+- Do NOT create multiple authors
+
+────────────────────────────
+2. IMAGE VALIDATION (DO NOT REGENERATE ALL)
+────────────────────────────
+
+For each article:
+
+IF image exists AND file exists in /public/images/blog/:
+    - KEEP image as-is
+    - ONLY validate path correctness
+
+IF image field exists BUT file is missing:
+    - REGENERATE ONLY THAT IMAGE
+    - Save as WebP 1200x630
+    - Store in /public/images/blog/<slug>.webp
+
+IF image field is null or missing:
+    - GENERATE new image only for that article
+
+IMPORTANT:
+- DO NOT regenerate existing valid images
+- DO NOT overwrite working files
+
+────────────────────────────
+3. FRONTMATTER NORMALIZATION
+────────────────────────────
+
+Enforce ONLY ONE field:
+
+image: "/images/blog/<slug>.webp"
+
+REMOVE:
+- featured_image
+- image_url
+- null fields
+- duplicates
+
+────────────────────────────
+4. IMAGE STYLE RULES (CONSISTENT BRAND)
+────────────────────────────
+
+All images must follow:
+
+FORMAT:
+- WebP
+- 1200x630 (SEO OpenGraph standard)
+- <100KB optimized
+
+STYLE:
+- Realistic editorial stock-photo style (NO AI look)
+- Human-centered (professional person present in image)
+- Tech/blog/business context depending on article category
+- Clean modern SaaS aesthetic
+
+CATEGORY VISUALS:
+- Adblock → Shield / security / browser protection
+- Productivity → Office / workspace / laptop
+- YouTube → Video / media / creator setup
+- Developer → Code / terminal / dark UI
+- Privacy → Lock / shield / anonymous tech
+- Social → Phone / analytics / charts
+
+────────────────────────────
+5. SAFETY RULES
+────────────────────────────
+
+DO NOT:
+- change slugs
+- modify URLs
+- regenerate sitemap
+- delete articles
+- duplicate images
+
+ONLY:
+- fix missing images
+- normalize frontmatter
+- enforce author
+
+────────────────────────────
+6. OUTPUT REPORT (IMPORTANT)
+────────────────────────────
+
+After completion, output:
+
+- Total articles scanned
+- Articles updated (author fix)
+- Images generated (ONLY new ones)
+- Images skipped (already valid)
+- Missing images fixed
+- Broken paths fixed
+- Final consistency check (PASS/FAIL)
+
+────────────────────────────
+GOAL:
+Make system stable, production-safe, and prevent duplicate generation or unnecessary workload.

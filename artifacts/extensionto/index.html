@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-94C4MW583Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-94C4MW583Z');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExtensionTo - Powerful Chrome Extensions for Productivity</title>
+    <meta name="description" content="Discover powerful Chrome extensions for productivity, security and browsing." />
+    <meta name="author" content="ExtensionTo" />
+    <meta name="keywords" content="Chrome extensions, browser extensions, productivity tools, web development, privacy, tab management" />
+
+    <meta property="og:title" content="ExtensionTo - Chrome Extensions" />
+    <meta property="og:description" content="Discover powerful Chrome extensions for productivity." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://extensionto.com/og-image.png" />
+    <meta property="og:site_name" content="ExtensionTo" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ExtensionTo" />
+    <meta name="twitter:image" content="https://extensionto.com/og-image.png" />
+    
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- WebSite + Organization schema — visible in raw HTML without JS execution -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://extensionto.com/#website",
+          "url": "https://extensionto.com",
+          "name": "ExtensionTo",
+          "description": "Discover powerful Chrome extensions for productivity, privacy, and performance.",
+          "publisher": { "@id": "https://extensionto.com/#organization" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": { "@type": "EntryPoint", "urlTemplate": "https://extensionto.com/blog?q={search_term_string}" },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://extensionto.com/#organization",
+          "name": "ExtensionTo",
+          "url": "https://extensionto.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://extensionto.com/favicon.png",
+            "width": 512,
+            "height": 512
+          },
+          "sameAs": []
+        }
+      ]
+    }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

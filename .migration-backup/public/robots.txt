@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://extensionto.com/sitemap.xml

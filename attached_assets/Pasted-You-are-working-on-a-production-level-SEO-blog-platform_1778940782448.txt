@@ -1,0 +1,101 @@
+You are working on a production-level SEO blog platform.
+
+TASK:
+Import and fully integrate a new blog article into the website system from a local HTML file.
+
+────────────────────────────
+1. SOURCE FILE
+────────────────────────────
+File path:
+artifacts/useful-chrome-extensions.html
+
+This file contains a complete SEO-optimized HTML article including:
+- Title and meta description
+- Open Graph tags
+- JSON-LD structured data
+- Full article content
+- Styling and layout
+
+────────────────────────────
+2. REQUIRED ACTIONS
+────────────────────────────
+
+A) ARTICLE IMPORT
+- Extract all relevant data (title, description, content)
+- Convert the HTML article into a native blog post in the existing system (React / Next.js / CMS structure)
+- Ensure the article slug is:
+
+/useful-chrome-extensions/
+
+B) FEATURED IMAGE GENERATION
+- Generate a high-quality, professional featured image for this article
+- Style prompt:
+  "modern productivity dashboard, chrome extensions UI, clean tech blog design, minimal, high resolution, 16:9 aspect ratio, professional SEO blog banner"
+- Save image to:
+
+/public/images/blog/useful-chrome-extensions.webp
+
+- Optimize image as WebP format
+
+C) METADATA / FRONTMATTER
+- Add or update blog metadata:
+
+title: "25 Useful Chrome Extensions You Need in 2026"
+slug: "useful-chrome-extensions"
+image: "/images/blog/useful-chrome-extensions.webp"
+author: "Daniel Carter"
+datePublished: keep original date or set today
+dateModified: today
+
+D) ROUTING
+- Ensure the article is accessible at:
+
+https://yourdomain.com/blog/useful-chrome-extensions/
+
+E) SITEMAP UPDATE
+- Automatically add this new article URL to sitemap.xml
+- Ensure correct SEO priority (0.7–0.9)
+- Ensure sitemap remains valid XML
+
+F) BLOG INDEX INTEGRATION
+- Add the article to the blog listing page
+- Ensure it appears with:
+  - Title
+  - Short excerpt
+  - Featured image
+  - Correct clickable slug link
+
+G) INTERNAL LINKING (IMPORTANT SEO STEP)
+- Add at least 3 internal links to other blog posts
+- Ensure contextual linking inside the article content
+
+H) VALIDATION
+After completing all steps, verify:
+
+✔ Article is accessible via URL
+✔ Featured image loads correctly
+✔ Sitemap includes the new article
+✔ No broken links
+✔ No console or build errors
+✔ SEO metadata is correct
+
+────────────────────────────
+3. OUTPUT REQUIRED
+────────────────────────────
+
+Return:
+
+1. Live article URL
+2. Featured image path
+3. Sitemap update confirmation
+4. Any issues found and fixed
+
+────────────────────────────
+4. IMPORTANT RULES
+────────────────────────────
+
+- DO NOT modify existing articles
+- DO NOT break routing or URLs
+- DO NOT delete or overwrite other content
+- ONLY add and integrate this new article safely
+- Ensure production-ready changes only

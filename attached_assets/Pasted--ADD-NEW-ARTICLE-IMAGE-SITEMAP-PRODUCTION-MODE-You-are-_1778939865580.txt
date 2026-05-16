@@ -1,0 +1,148 @@
+# ADD NEW ARTICLE + IMAGE + SITEMAP — PRODUCTION MODE
+
+You are working on the production SEO blog platform inside the existing Replit project.
+
+GOAL:
+Import the article file:
+
+artifacts/useful-chrome-extensions.html
+
+and fully integrate it into the live blog system professionally.
+
+━━━━━━━━━━━━━━━━━━━
+MANDATORY TASKS
+━━━━━━━━━━━━━━━━━━━
+
+1. IMPORT ARTICLE
+
+* Read the HTML article
+* Extract:
+
+  * title
+  * content
+  * headings
+  * meta description
+* Convert it into the same article format used by existing blog posts
+* Place it in the correct blog/articles directory
+* Generate a CLEAN SEO slug
+* DO NOT add AI hash suffixes
+* Slug must be human readable
+
+Example:
+useful-chrome-extensions
+
+━━━━━━━━━━━━━━━━━━━
+2. GENERATE PROFESSIONAL FEATURED IMAGE
+━━━━━━━━━━━━━━━━━━━
+
+Create a professional WebP featured image for this article.
+
+REQUIREMENTS:
+
+* Size: 1200x630
+* Format: .webp
+* Max size: under 120 KB
+* Modern tech/blog style
+* Use REAL HUMAN style visuals
+* NO AI generator text
+* NO fake futuristic robots
+* Make it look like a real editorial tech blog
+
+DESIGN:
+
+* Chrome extensions / productivity theme
+* Modern browser UI elements
+* Professional gradients
+* Clean typography
+* Article title on image
+* Elegant layout
+* High CTR style
+
+SAVE IMAGE TO:
+public/images/blog/<slug>.webp
+
+━━━━━━━━━━━━━━━━━━━
+3. FRONTMATTER
+━━━━━━━━━━━━━━━━━━━
+
+Ensure article frontmatter includes:
+
+title:
+slug:
+description:
+date:
+author: "Daniel Carter"
+image: "/images/blog/<slug>.webp"
+category:
+tags:
+status: "published"
+
+━━━━━━━━━━━━━━━━━━━
+4. INTERNAL SEO
+━━━━━━━━━━━━━━━━━━━
+
+* Automatically connect the article to the best matching topic cluster
+* Add 2–5 contextual internal links
+* Add backlinks from related articles if needed
+* Ensure article is NOT orphaned
+
+━━━━━━━━━━━━━━━━━━━
+5. UPDATE SITEMAP
+━━━━━━━━━━━━━━━━━━━
+
+* Rebuild sitemap.xml
+* Ensure new article appears in sitemap
+* Ensure clean URL only
+* Ensure priority/frequency are correct
+
+━━━━━━━━━━━━━━━━━━━
+6. VALIDATION
+━━━━━━━━━━━━━━━━━━━
+
+After completion verify:
+
+* Article renders correctly
+* Image loads correctly
+* Sitemap contains the article
+* No broken links
+* No missing frontmatter
+* No duplicate slug
+
+━━━━━━━━━━━━━━━━━━━
+7. FINAL OUTPUT (MANDATORY)
+━━━━━━━━━━━━━━━━━━━
+
+At the end print:
+
+1. Live article URL
+2. Direct image URL
+3. Final slug
+4. Category assigned
+5. Confirmation sitemap updated
+6. Image size in KB
+
+Example:
+
+Article URL:
+https://extensionto.com/blog/useful-chrome-extensions
+
+Image URL:
+https://extensionto.com/images/blog/useful-chrome-extensions.webp
+
+Sitemap:
+UPDATED ✅
+
+━━━━━━━━━━━━━━━━━━━
+IMPORTANT
+━━━━━━━━━━━━━━━━━━━
+
+DO NOT:
+
+* regenerate all articles
+* touch existing slugs
+* modify sitemap structure
+* change old articles unnecessarily
+
+ONLY:
+
+* integrate THIS new article professionally into the production system

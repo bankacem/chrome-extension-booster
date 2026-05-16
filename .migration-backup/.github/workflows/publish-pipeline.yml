@@ -1,0 +1,82 @@
+name: Publish Articles Pipeline
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # Runs every hour
+  workflow_dispatch:        # Manual trigger
+
+jobs:
+  sync-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Sync DB to Markdown
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+        run: bun run sync-db-to-md
+
+      - name: Rebuild index
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+        run: bun run sync-articles
+
+      - name: Generate sitemap
+        run: bun run sitemap
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add \
+            public/content/articles/ \
+            public/content/articles-index.json \
+            public/sitemap.xml
+
+          if git diff --cached --quiet; then
+            echo "✅ No changes detected — articles and sitemap are up to date."
+          else
+            CHANGED=$(git diff --cached --name-only | wc -l)
+            echo "📦 Committing $CHANGED changed file(s)..."
+            git commit -m "chore: auto-publish articles + sitemap [$(date +'%Y-%m-%d %H:%M UTC')]"
+            git push
+            echo "✅ Changes pushed successfully."
+          fi
+
+      - name: Notify Google Indexing API
+        if: ${{ secrets.GOOGLE_INDEXING_KEY != '' }}
+        env:
+          GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
+        run: bun scripts/google-indexing.ts
+
+      - name: Persist indexing state
+        if: always()
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add scripts/indexed-urls.json
+
+          if git diff --cached --quiet; then
+            echo "No indexing state changes."
+          else
+            git commit -m "chore: update indexing state [$(date +'%Y-%m-%d %H:%M UTC')]"
+            git push
+          fi

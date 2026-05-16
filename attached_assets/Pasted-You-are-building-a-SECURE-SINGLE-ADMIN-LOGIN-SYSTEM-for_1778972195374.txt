@@ -1,0 +1,111 @@
+You are building a SECURE SINGLE-ADMIN LOGIN SYSTEM for a production SEO blog platform.
+
+GOAL:
+Lock the admin panel so ONLY ONE predefined account can access the dashboard.
+
+────────────────────────────
+1. SINGLE ADMIN CREDENTIALS (HARD LOCKED)
+────────────────────────────
+
+The ONLY valid login credentials are:
+
+Email:
+dhaichione@gmail.com
+
+Password:
+0600231590m
+
+DO NOT allow any other signup or account creation.
+
+Remove:
+- "Create admin account"
+- "Sign up"
+- "Register"
+
+ONLY login is allowed.
+
+────────────────────────────
+2. LOGIN PAGE (/admin/login)
+────────────────────────────
+
+UI:
+- Email input (pre-filled with dhaichione@gmail.com)
+- Password input
+- Sign In button
+
+Validation logic:
+IF email === "dhaichione@gmail.com" AND password === "0600231590m"
+→ login success
+
+ELSE
+→ show error: "Invalid credentials"
+
+────────────────────────────
+3. SECURITY RULES
+────────────────────────────
+
+- Do NOT expose password anywhere in console or UI logs
+- Do NOT store credentials in backend database
+- Use localStorage session token ONLY after successful login
+- Session expires after 8 hours automatically
+- Auto logout on expiry
+
+────────────────────────────
+4. PROTECTED ROUTES
+────────────────────────────
+
+Protect all /admin routes:
+
+/admin
+/admin/dashboard
+/admin/cms
+
+If not logged in:
+→ redirect to /admin/login
+
+────────────────────────────
+5. SESSION LOGIC
+────────────────────────────
+
+On successful login:
+- store session token in localStorage
+- store timestamp
+- validate session on every page load
+
+If session expired:
+→ force logout and redirect to login
+
+────────────────────────────
+6. UI REQUIREMENTS
+────────────────────────────
+
+Login page text:
+
+Title:
+"Admin Login"
+
+Subtitle:
+"Enter your credentials to access the dashboard"
+
+Remove any:
+- signup links
+- create account links
+- social login
+
+Keep it simple, clean, and professional.
+
+────────────────────────────
+7. IMPORTANT SAFETY RULES
+
+- Do NOT modify blog articles system (500 articles remain untouched)
+- Do NOT regenerate images
+- Do NOT modify sitemap
+- Only modify /admin authentication layer
+- Keep system production safe
+
+────────────────────────────
+FINAL GOAL:
+
+A locked single-admin login system where ONLY:
+dhaichione@gmail.com + 0600231590m
+can access the admin dashboard, with secure session handling and protected routes.

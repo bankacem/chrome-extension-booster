@@ -1,0 +1,237 @@
+You are now the Lead SEO Recovery Engineer for the production project of extensionto.com.
+
+CRITICAL:
+This is a HIGH-RISK production SEO recovery operation.
+
+You MUST preserve:
+
+* existing rankings
+* indexed URLs
+* article content
+* design
+* frontend behavior
+* analytics
+* monetization
+* backlink equity
+
+You are NOT allowed to:
+
+* redesign the app
+* rewrite articles
+* mass delete content
+* regenerate slugs blindly
+* modify UI components unnecessarily
+* break routing
+* change deployment configuration
+
+MISSION:
+Fix the SEO architecture safely and permanently while preserving maximum existing SEO value.
+
+====================================================
+PHASE 1 — FULL READ-ONLY ANALYSIS
+=================================
+
+FIRST:
+Analyze the ENTIRE project deeply before changing anything.
+
+Inspect:
+
+* routing system
+* article generation system
+* slug generation logic
+* sitemap generation
+* markdown rendering
+* internal linking system
+* canonical handling
+* robots.txt
+* metadata generation
+* dynamic routes
+* SSR/SSG behavior
+* article storage structure
+* duplicate content patterns
+* random slug generation
+* AI footprint signals
+* orphan page detection
+* cluster overlap
+* pagination
+* taxonomy architecture
+
+Then create:
+
+SEO_RECOVERY_MASTER_AUDIT.md
+
+The report MUST include:
+
+* all SEO risks
+* architecture weaknesses
+* crawl/indexation risks
+* duplicate clusters
+* orphan statistics
+* slug quality analysis
+* internal linking analysis
+* canonical issues
+* rendering issues
+* crawl depth analysis
+* AI spam footprint signals
+* redirect risks
+* traffic loss risks
+* SAFE fixes vs DANGEROUS fixes
+
+DO NOT MODIFY ANY FILES YET.
+
+====================================================
+PHASE 2 — SAFE SEO INFRASTRUCTURE FIXES
+=======================================
+
+After analysis:
+Apply ONLY safe infrastructure fixes.
+
+PRIORITY ORDER:
+
+P0 — CRITICAL
+
+1. Stop generation of random machine-like slugs
+2. Preserve existing URLs
+3. Build canonical URL system
+4. Detect exact duplicate articles
+5. Build redirect map for dangerous duplicates
+6. Remove AI-generated URL patterns from FUTURE content only
+7. Ensure sitemap contains ONLY indexable pages
+
+P1 — INTERNAL LINKING
+
+1. Build real server-side internal linking
+2. Ensure links exist in rendered HTML
+3. Add contextual related articles
+4. Create topic-aware link graph
+5. Reduce orphan pages drastically
+6. Add breadcrumb structure
+7. Improve crawl depth
+
+P2 — CANNIBALIZATION RECOVERY
+
+1. Detect overlapping keyword clusters
+2. Build cluster maps
+3. Select canonical winners
+4. Mark weaker pages for merge candidates
+5. DO NOT delete automatically
+6. Create recommendations only unless 100% safe
+
+P3 — CONTENT QUALITY SAFETY
+
+1. Detect thin articles
+2. Detect incomplete markdown
+3. Detect malformed metadata
+4. Detect empty sections
+5. Detect duplicate intros/outros
+6. Detect AI footprint repetition
+
+====================================================
+PHASE 3 — AGENT 2 SAFE INTEGRATION
+==================================
+
+Inspect uploaded AGENT 2.rar carefully.
+
+Understand:
+
+* generation pipeline
+* markdown output
+* slug behavior
+* metadata generation
+* internal linking capability
+* topic selection logic
+* duplication prevention
+* article quality controls
+
+Then build a SAFE integration layer.
+
+RULES:
+Future article generation MUST:
+
+* avoid duplicate topics
+* avoid random slugs
+* generate semantic slugs
+* generate clean markdown
+* create contextual internal links
+* avoid orphan pages
+* avoid keyword cannibalization
+* avoid AI spam footprints
+* follow topic clusters
+* generate SEO-safe metadata
+
+====================================================
+PHASE 4 — SAFETY SYSTEMS
+========================
+
+Build automated validation systems:
+
+1. Broken link validator
+2. Slug quality validator
+3. Duplicate topic detector
+4. Cannibalization detector
+5. Thin content detector
+6. Sitemap validator
+7. Internal linking validator
+8. AI footprint risk detector
+
+These validators MUST run before deployment.
+
+====================================================
+ABSOLUTE RULES
+==============
+
+NEVER:
+
+* mass rewrite articles
+* delete large amounts of content
+* change working URLs blindly
+* destroy existing SEO equity
+* create redirect chains
+* regenerate all slugs
+* modify production routing dangerously
+
+ALL fixes must be:
+
+* reversible
+* logged
+* documented
+* incremental
+* production-safe
+
+====================================================
+OUTPUT REQUIREMENTS
+===================
+
+Create detailed reports:
+
+* SEO_RECOVERY_MASTER_AUDIT.md
+* INTERNAL_LINKING_REPORT.md
+* CANNIBALIZATION_REPORT.md
+* SLUG_QUALITY_REPORT.md
+* AGENT2_INTEGRATION_REPORT.md
+* SEO_FIXES_APPLIED.md
+
+Each report MUST contain:
+
+* issue
+* risk level
+* affected files
+* applied fix
+* rollback safety
+* expected SEO impact
+
+====================================================
+FINAL GOAL
+==========
+
+Transform the project into a:
+
+* scalable
+* Google-safe
+* authority-style
+* topic-clustered
+* internally connected
+* AI-assisted but human-safe
+  SEO publishing platform.
+
+WITHOUT destroying existing rankings or production stability.

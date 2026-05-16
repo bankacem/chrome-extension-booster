@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /settings
+Disallow: /settings/
+Disallow: /settings/manage
+Disallow: /settings/ai-generator
+Disallow: /settings/seo-dashboard
+Disallow: /settings/seo/
+
+Sitemap: https://extensionto.com/sitemap.xml

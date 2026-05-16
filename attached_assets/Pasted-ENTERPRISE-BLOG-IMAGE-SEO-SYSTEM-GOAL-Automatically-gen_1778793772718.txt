@@ -1,0 +1,178 @@
+ENTERPRISE BLOG IMAGE SEO SYSTEM
+
+GOAL:
+Automatically generate professional SEO-optimized featured images for all blog articles that do not already have images.
+
+STRICT REQUIREMENTS:
+
+================================================
+IMAGE FORMAT
+================================================
+
+- Generate images ONLY in:
+  WEBP format
+
+- Compression:
+  optimized for web performance
+
+- Max image size:
+  under 200KB preferred
+
+- Quality:
+  visually sharp but lightweight
+
+================================================
+GOOGLE SEO IMAGE STANDARDS
+================================================
+
+Use Google-friendly dimensions:
+
+PRIMARY SIZE:
+1600x900
+
+Fallback allowed:
+1200x675
+
+Requirements:
+- responsive
+- fast-loading
+- optimized for Core Web Vitals
+- blog/social sharing friendly
+- Open Graph compatible
+
+================================================
+DESIGN STYLE
+================================================
+
+Each image MUST:
+
+- look professional
+- modern tech-blog aesthetic
+- high CTR thumbnail style
+- include article title text
+- title typography must be clean and readable
+- use strong contrast
+- avoid clutter
+- no copyright material
+- no watermarks
+- no random AI artifacts
+
+================================================
+TITLE HANDLING
+================================================
+
+Extract article title automatically from frontmatter.
+
+Then:
+- place title text elegantly on image
+- auto-wrap long titles
+- typography hierarchy must look professional
+
+================================================
+VISUAL MATCHING
+================================================
+
+The image background MUST match article topic.
+
+Examples:
+- adblock articles → privacy/shield/browser visuals
+- screenshot tools → UI/capture visuals
+- productivity → workflow/desk visuals
+- YouTube → video/media visuals
+- SEO/dev tools → analytics/code/browser visuals
+
+================================================
+FILE STORAGE
+================================================
+
+Store generated images in:
+
+public/images/blog/
+
+Use clean filenames:
+
+/images/blog/clean-article-slug.webp
+
+Example:
+best-adblock-for-chrome.webp
+
+================================================
+ARTICLE INTEGRATION
+================================================
+
+For EACH article missing image:
+
+1. Generate image
+2. Save WEBP
+3. Add/update frontmatter:
+
+image: "/images/blog/slug.webp"
+
+4. If Open Graph fields exist:
+update them too.
+
+================================================
+PERFORMANCE RULES
+================================================
+
+- DO NOT generate oversized images
+- DO NOT use PNG
+- DO NOT use JPG
+- DO NOT duplicate images
+- SKIP articles that already have images
+- generate incrementally
+- optimize memory usage
+
+================================================
+REPLIT SAFETY
+================================================
+
+IMPORTANT:
+This project runs on Replit.
+
+So:
+- avoid heavy dependencies
+- avoid GPU libraries
+- avoid huge AI models
+- use lightweight image generation pipeline
+- process in batches
+- avoid crashing Replit memory
+
+================================================
+EXECUTION MODE
+================================================
+
+1. Scan all articles
+2. Detect missing images
+3. Generate images batch-by-batch
+4. Update article frontmatter
+5. Generate report:
+
+IMAGE_GENERATION_REPORT.md
+
+Report must include:
+- articles processed
+- images created
+- skipped articles
+- failed generations
+- total image size
+
+================================================
+FINAL VALIDATION
+================================================
+
+Verify:
+- all generated images exist
+- all paths valid
+- all images are WEBP
+- all article image fields valid
+- no broken references
+
+DO NOT:
+- modify slugs
+- modify article body
+- modify sitemap structure
+- modify SEO links
+
+ONLY:
+generate optimized professional WEBP featured images and connect them to articles.

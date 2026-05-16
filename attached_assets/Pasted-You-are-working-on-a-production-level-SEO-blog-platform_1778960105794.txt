@@ -1,0 +1,87 @@
+You are working on a production-level SEO blog platform already running with 500+ articles.
+
+TASK:
+Integrate Supabase authentication safely into the admin dashboard WITHOUT breaking existing blog system, SEO structure, or article rendering.
+
+────────────────────────────
+1. SUPABASE SETUP
+────────────────────────────
+
+Use this Supabase publishable key:
+sb_publishable_3zYVk7azJOltOkXpTuySqA_yaLX8hYA
+
+Initialize Supabase client in a dedicated file:
+
+/src/lib/supabaseClient.ts
+
+DO NOT modify existing blog logic or article rendering files.
+
+────────────────────────────
+2. AUTH SYSTEM (ADMIN ONLY)
+────────────────────────────
+
+Create secure admin authentication:
+
+- Email/password login via Supabase Auth
+- Only allow access to /admin routes
+- If user is NOT authenticated → redirect to /login
+- If authenticated → allow dashboard access
+
+DO NOT expose any Supabase secret keys in frontend.
+
+────────────────────────────
+3. ADMIN DASHBOARD
+────────────────────────────
+
+Create /admin panel with:
+
+- List all articles (read-only initially)
+- Button: "Edit Article"
+- Button: "Create New Article"
+- Button: "Sync Sitemap"
+
+DO NOT delete or modify existing articles automatically.
+
+────────────────────────────
+4. SECURITY RULES (CRITICAL)
+────────────────────────────
+
+- NEVER modify 500 existing blog articles
+- NEVER regenerate images automatically
+- NEVER overwrite sitemap unless user triggers action
+- NEVER touch SEO metadata logic unless required
+
+────────────────────────────
+5. DATABASE STRUCTURE (Supabase)
+────────────────────────────
+
+Table: articles
+
+Fields:
+- id (uuid)
+- title (text)
+- slug (text)
+- content (text)
+- image (text)
+- author (text)
+- date_published (timestamp)
+
+────────────────────────────
+6. SAFETY MODE
+────────────────────────────
+
+Enable "SAFE MODE":
+
+- All write operations must be manually triggered
+- Log every change in console
+- No bulk updates unless explicitly confirmed
+
+────────────────────────────
+7. FINAL GOAL
+────────────────────────────
+
+- Secure admin login system working
+- Supabase connected successfully
+- Blog system unchanged
+- SEO structure preserved
+- Dashboard ready for article management
