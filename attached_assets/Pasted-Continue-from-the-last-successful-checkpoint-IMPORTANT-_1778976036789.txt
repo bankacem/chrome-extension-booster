@@ -1,0 +1,129 @@
+Continue from the last successful checkpoint.
+
+IMPORTANT:
+Do NOT rebuild the admin system from scratch.
+Do NOT touch authentication again unless necessary.
+Do NOT modify public blog routes or markdown rendering.
+
+Current state:
+
+* Admin auth is already fixed
+* localStorage session system works
+* Dashboard now reads live Supabase data
+* CMS/SEO/AI pages now bypass Supabase auth correctly
+* Typecheck already passes
+
+Your task now is ONLY to finish and stabilize the admin system.
+
+==================================================
+TASKS
+=====
+
+1. VERIFY ALL ADMIN ROUTES
+
+* /admin/dashboard
+* /admin/cms
+* /admin/seo
+* /admin/ai-generator
+
+Requirements:
+
+* No redirects after login
+* No "failed to fetch"
+* No blank pages
+* No infinite loading
+
+==================================================
+2. ADD GLOBAL API ERROR HANDLER
+===============================
+
+Create a safe API wrapper for Supabase requests.
+
+Requirements:
+
+* Wrap all Supabase calls in try/catch
+* Show toast or warning banner on failure
+* Never destroy admin session
+* Never redirect user on network failure
+
+==================================================
+3. CMS STABILITY
+================
+
+Verify:
+
+* create article
+* save draft
+* publish article
+* slug generation
+* duplicate slug protection
+* article preview URL
+* image upload
+* image generation
+
+All must work safely.
+
+==================================================
+4. DASHBOARD IMPROVEMENTS
+=========================
+
+Add:
+
+* refresh button
+* loading skeletons
+* empty states
+* quick open article action
+* quick edit article action
+
+==================================================
+5. SEO DASHBOARD
+================
+
+Verify live article analysis works correctly.
+
+If Supabase is unavailable:
+
+* show warning
+* keep dashboard open
+* never logout admin
+
+==================================================
+6. AI GENERATOR
+===============
+
+Verify:
+
+* generate title
+* generate outline
+* generate article
+* save to draft
+
+Do not auto-publish.
+
+==================================================
+7. FINAL SAFETY CHECK
+=====================
+
+Before finishing:
+
+* npm run typecheck
+* npm run build
+* verify no TS errors
+* verify no console runtime errors
+* verify Vite clean
+* verify no existing markdown articles changed
+* verify sitemap still valid
+
+==================================================
+8. FINAL OUTPUT
+===============
+
+Provide:
+
+* files modified
+* issues fixed
+* routes verified
+* features confirmed working
+* deployment safety confirmation
+
+Work incrementally and safely.
