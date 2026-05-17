@@ -1,0 +1,163 @@
+You are working on a production system called ExtensionTo (SEO Blog Platform).
+
+🚨 ABSOLUTE RULE:
+
+* DO NOT DELETE ANY ARTICLE (published OR drafts)
+* DO NOT REMOVE markdown files
+* DO NOT RESET database or file system
+* DO NOT LOSE DATA UNDER ANY CIRCUMSTANCES
+
+━━━━━━━━━━━━━━━━━━
+🎯 GOAL: UNIFY THE ENTIRE SYSTEM (SAFE MIGRATION)
+━━━━━━━━━━━━━━━━━━
+
+We currently have a split architecture causing instability:
+
+❌ OLD SYSTEM:
+
+* /settings/* pages (Supabase-based auth + DB calls)
+* causes logout bugs and failed fetch
+* inconsistent article loading
+
+✅ NEW SYSTEM:
+
+* /admin/* pages (localStorage auth + markdown system)
+* drafts-index.json (52 drafts)
+* articles-index.json (published articles)
+* stable and correct
+
+━━━━━━━━━━━━━━━━━━
+🔥 TASK: FULL SYSTEM UNIFICATION (WITHOUT DATA LOSS)
+━━━━━━━━━━━━━━━━━━
+
+## 1. AUTH SYSTEM (CRITICAL FIX)
+
+* REMOVE ALL Supabase auth usage from UI layer
+
+* DELETE all calls to:
+  supabase.auth.getSession()
+  supabase.auth.onAuthStateChange()
+
+* KEEP ONLY ONE SYSTEM:
+  useAdminSession()
+
+Requirements:
+✔ localStorage session only
+✔ 8-hour persistence
+✔ auto recovery on refresh
+✔ no logout on navigation
+✔ no failed fetch crashes
+✔ no redirects loops
+
+━━━━━━━━━━━━━━━━━━
+
+## 2. REMOVE OLD SYSTEM SAFELY (NO DATA LOSS)
+
+* /settings/* routes must NOT be used anymore
+
+* Replace with redirect ONLY:
+  /settings/* → /admin/*
+
+* DO NOT delete any files
+
+* Just disable usage in UI routing
+
+━━━━━━━━━━━━━━━━━━
+
+## 3. ARTICLES SYSTEM (CRITICAL SAFETY)
+
+We have:
+
+* 52 draft articles in drafts-index.json
+* 484 published articles in articles-index.json + markdown files
+
+YOU MUST:
+✔ Merge both systems safely
+✔ Use markdown files as source of truth
+✔ NEVER overwrite or delete articles
+✔ NEVER regenerate content
+
+System must:
+
+* display ALL articles (draft + published)
+* support pagination
+* support search
+* support filters
+
+━━━━━━━━━━━━━━━━━━
+
+## 4. ADMIN DASHBOARD FIX
+
+Fix completely:
+
+* show ALL articles correctly (484 + 52)
+* add pagination (10–20 per page)
+* fix missing drafts visibility
+* unify data source (NO Supabase DB reads)
+
+Add:
+✔ Search
+✔ Filter by status
+✔ Bulk select
+✔ Bulk publish (safe)
+
+━━━━━━━━━━━━━━━━━━
+
+## 5. ONE CLICK PUBLISH (SAFE MODE)
+
+When publishing:
+
+ONLY DO:
+
+* update markdown frontmatter:
+  status: published
+  published_at: NOW()
+
+* update:
+  articles-index.json
+  drafts-index.json
+  sitemap.xml
+
+DO NOT:
+
+* delete files
+* overwrite unrelated articles
+* touch other content
+
+━━━━━━━━━━━━━━━━━━
+
+## 6. FAILED FETCH FIX (STABILITY)
+
+* Wrap ALL API calls in try/catch
+* Add retry logic (max 2 attempts)
+* Add fallback to local JSON
+* Never crash UI
+* Never logout user on network failure
+
+━━━━━━━━━━━━━━━━━━
+
+## 7. FINAL SYSTEM RESULT
+
+After completion:
+
+✔ One unified admin system (/admin only)
+✔ No Supabase auth in UI layer
+✔ No logout bugs
+✔ No failed fetch errors
+✔ All 52 drafts visible
+✔ All 484 articles visible
+✔ Stable pagination system
+✔ Safe publish system
+✔ Zero data loss guaranteed
+
+━━━━━━━━━━━━━━━━━━
+⚠️ IMPORTANT SAFETY CHECK
+━━━━━━━━━━━━━━━━━━
+
+Before applying changes:
+
+* Confirm no file deletion
+* Confirm no markdown overwrite
+* Confirm rollback point created
+
+This is a production system — changes must be safe and reversible.

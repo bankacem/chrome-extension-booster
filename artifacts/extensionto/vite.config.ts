@@ -198,8 +198,15 @@ async function doSchedule(slug: string, scheduledAt: string, res: ServerResponse
 }
 
 async function doDelete(slug: string, res: ServerResponse) {
+  // Remove from both indexes (never deletes the markdown file — it stays on disk)
   const drafts: Art[] = readJson(DRAFTS_INDEX);
   writeJson(DRAFTS_INDEX, drafts.filter((d) => d.slug !== slug));
+  const articles: Art[] = readJson(ARTICLES_INDEX);
+  const wasPublished = articles.some((a) => a.slug === slug);
+  if (wasPublished) {
+    writeJson(ARTICLES_INDEX, articles.filter((a) => a.slug !== slug));
+    regenerateSitemap();
+  }
   res.end(JSON.stringify({ ok: true, slug }));
 }
 
