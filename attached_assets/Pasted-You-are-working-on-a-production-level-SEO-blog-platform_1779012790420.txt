@@ -1,0 +1,292 @@
+You are working on a production-level SEO blog platform called ExtensionTo.
+
+IMPORTANT:
+
+* DO NOT delete or modify any existing published articles
+* DO NOT break SEO
+* DO NOT break routing
+* DO NOT touch public blog rendering
+* KEEP the markdown-based architecture
+* KEEP all existing URLs intact
+
+---
+
+# 🚨 CRITICAL AUTH FIXES
+
+The admin authentication system is unstable.
+
+Current problem:
+
+* User logs in successfully
+* Opening some admin pages logs the user out
+* Login page sometimes shows "Failed to fetch"
+* Protected pages incorrectly reject the valid session
+
+Fix the ENTIRE admin authentication system.
+
+---
+
+## AUTH REQUIREMENTS
+
+Use ONLY localStorage session auth.
+
+DO NOT depend on Supabase auth sessions.
+
+Use ONE centralized auth system:
+
+* ext_admin_session_v3
+
+Session object:
+
+```json
+{
+  "email": "dhaichione@gmail.com",
+  "expiresAt": "timestamp"
+}
+```
+
+Rules:
+
+* Session lasts 8 hours
+* All /admin/* routes must accept this session
+* NEVER call supabase.auth.getSession() inside admin pages
+* NEVER redirect valid users back to login
+* Add silent auto-refresh of session expiration while active
+* Add graceful handling for network errors
+* "Failed to fetch" must NEVER log user out
+* Add loading states while auth initializes
+* Add proper try/catch around every auth check
+
+---
+
+# 🎨 PROFESSIONAL ADMIN UI REDESIGN
+
+The current dashboard looks basic and unprofessional.
+
+Redesign the entire admin panel to look like a modern SaaS CMS.
+
+Requirements:
+
+* Modern sidebar navigation
+* Responsive layout
+* Sticky topbar
+* Better spacing/cards
+* Better typography
+* Smooth transitions
+* Search bar
+* Notification system
+* Dark mode ready
+* Pagination support everywhere
+
+Style inspiration:
+
+* Notion
+* Vercel Dashboard
+* Stripe Dashboard
+* Sanity CMS
+
+DO NOT use ugly placeholder cards.
+
+---
+
+# 📚 FULL ARTICLE MANAGEMENT SYSTEM
+
+Currently articles are not fully visible.
+
+Fix the article management system completely.
+
+---
+
+## ARTICLE LIST REQUIREMENTS
+
+Show ALL articles:
+
+* published articles
+* draft articles
+* scheduled articles
+
+DO NOT put all articles on one page.
+
+Add:
+
+* Pagination
+* Page numbers
+* Previous / Next
+* 10-20 articles per page
+
+Example:
+1 2 3 4 5 ...
+
+---
+
+# 📝 52 DRAFT ARTICLES
+
+The imported 52 draft articles currently do not appear correctly.
+
+Fix this completely.
+
+Requirements:
+
+* Load all 52 drafts from drafts-index.json
+* Show them inside Drafts Manager
+* Add filters:
+
+  * Draft
+  * Published
+  * Scheduled
+  * Category
+* Add live search
+* Add bulk selection
+
+---
+
+# 🚀 ARTICLE ACTIONS
+
+Every article must support:
+
+✅ Publish
+✅ Unpublish
+✅ Convert to Draft
+✅ Schedule
+✅ Delete
+✅ Preview
+✅ Edit
+
+---
+
+# ⏰ SCHEDULING SYSTEM
+
+Create a REAL scheduling system.
+
+Each article can have:
+
+* publish_at
+
+Rules:
+
+* If future date exists → article stays scheduled
+* Auto-publish when time arrives
+* Update sitemap automatically
+* Update blog index automatically
+
+---
+
+# ⚡ BULK ACTIONS
+
+Add:
+
+* Bulk publish
+* Bulk draft
+* Bulk schedule
+* Bulk delete
+
+Must work from dashboard UI.
+
+---
+
+# 🖼 FEATURED IMAGE SYSTEM
+
+The 52 imported articles currently have no images.
+
+Create a dynamic featured image generation system.
+
+Requirements:
+
+* Generate UNIQUE image for every article
+* NOT same image with changed title
+* Every image must visually match article topic
+* Add article title beautifully on image
+* Export as optimized WebP
+* 1200x630 OG size
+* Save into:
+  /public/images/blog/
+
+Use:
+
+* gradient backgrounds
+* extension icons
+* browser/productivity visuals
+* modern typography
+
+Every article MUST have a different image composition.
+
+---
+
+# 🔎 INSTANT INDEXING SYSTEM
+
+When article gets published:
+
+Automatically:
+
+* update sitemap.xml
+* update articles-index.json
+* ping Google Indexing API
+* ping Bing IndexNow
+* rebuild blog cache
+* show success toast
+
+This must happen immediately after publish.
+
+---
+
+# 📊 ADVANCED DASHBOARD
+
+Add real stats:
+
+* Total Articles
+* Published
+* Drafts
+* Scheduled
+* Indexed
+* Missing Images
+* SEO Issues
+
+Add charts:
+
+* Publishing activity
+* Categories distribution
+* SEO health
+
+---
+
+# 🔐 SECURITY
+
+* NEVER expose passwords
+* NEVER expose secrets
+* NEVER log credentials
+* Protect all admin routes
+* Add rate limiting to login
+* Add CSRF protection
+* Add session validation middleware
+
+---
+
+# 📁 IMPORTANT
+
+Articles remain markdown-based.
+
+DO NOT migrate to database.
+
+Current architecture must stay:
+
+* markdown files
+* drafts-index.json
+* articles-index.json
+
+---
+
+# 🎯 FINAL RESULT REQUIRED
+
+After implementation verify:
+
+✅ Login never randomly logs out
+✅ Failed-to-fetch no longer breaks auth
+✅ 52 draft articles visible
+✅ Pagination works
+✅ Bulk actions work
+✅ Scheduling works
+✅ One-click publish works
+✅ Auto indexing works
+✅ Featured images generated
+✅ Dashboard looks professional
+✅ Existing published articles untouched

@@ -24,6 +24,7 @@ import SEODashboard from "./pages/SEODashboard";
 import AdminAuthLogin from "./pages/AdminAuthLogin";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminDrafts from "./pages/AdminDrafts";
+import AdminArticles from "./pages/AdminArticles";
 import ProtectedAdminRoute from "./components/admin/ProtectedAdminRoute";
 
 const queryClient = new QueryClient();
@@ -51,44 +52,39 @@ const App = () => (
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
 
-              {/* ── /admin routes (new secure auth system) ─────────── */}
+              {/* ── /admin routes (localStorage auth, v3) ─────────── */}
               <Route
                 path="/admin/login"
                 element={<><NoIndex /><AdminAuthLogin /></>}
               />
-              <Route
-                path="/admin"
-                element={<Navigate to="/admin/dashboard" replace />}
-              />
+              <Route path="/admin" element={<Navigate to="/admin/dashboard" replace />} />
+
               <Route
                 path="/admin/dashboard"
-                element={
-                  <ProtectedAdminRoute>
-                    <NoIndex />
-                    <AdminDashboard />
-                  </ProtectedAdminRoute>
-                }
+                element={<ProtectedAdminRoute><NoIndex /><AdminDashboard /></ProtectedAdminRoute>}
+              />
+              <Route
+                path="/admin/articles"
+                element={<ProtectedAdminRoute><NoIndex /><AdminArticles /></ProtectedAdminRoute>}
               />
               <Route
                 path="/admin/drafts"
-                element={
-                  <ProtectedAdminRoute>
-                    <NoIndex />
-                    <AdminDrafts />
-                  </ProtectedAdminRoute>
-                }
+                element={<ProtectedAdminRoute><NoIndex /><AdminDrafts /></ProtectedAdminRoute>}
               />
               <Route
                 path="/admin/cms"
-                element={
-                  <ProtectedAdminRoute>
-                    <NoIndex />
-                    <CMSCreator />
-                  </ProtectedAdminRoute>
-                }
+                element={<ProtectedAdminRoute><NoIndex /><CMSCreator /></ProtectedAdminRoute>}
+              />
+              <Route
+                path="/admin/seo"
+                element={<ProtectedAdminRoute><NoIndex /><SEODashboard /></ProtectedAdminRoute>}
+              />
+              <Route
+                path="/admin/ai"
+                element={<ProtectedAdminRoute><NoIndex /><AIGenerator /></ProtectedAdminRoute>}
               />
 
-              {/* ── /settings routes (legacy system — unchanged) ───── */}
+              {/* ── /settings routes (legacy — unchanged) ─────────── */}
               <Route path="/settings" element={<><NoIndex /><AdminLogin /></>} />
               <Route path="/settings/manage" element={<><NoIndex /><Admin /></>} />
               <Route path="/settings/cms" element={<><NoIndex /><CMSCreator /></>} />
