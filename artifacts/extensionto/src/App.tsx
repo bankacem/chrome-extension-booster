@@ -23,6 +23,7 @@ import SEODashboard from "./pages/SEODashboard";
 
 import AdminAuthLogin from "./pages/AdminAuthLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminDrafts from "./pages/AdminDrafts";
 import ProtectedAdminRoute from "./components/admin/ProtectedAdminRoute";
 
 const queryClient = new QueryClient();
@@ -65,6 +66,15 @@ const App = () => (
                   <ProtectedAdminRoute>
                     <NoIndex />
                     <AdminDashboard />
+                  </ProtectedAdminRoute>
+                }
+              />
+              <Route
+                path="/admin/drafts"
+                element={
+                  <ProtectedAdminRoute>
+                    <NoIndex />
+                    <AdminDrafts />
                   </ProtectedAdminRoute>
                 }
               />
