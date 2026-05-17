@@ -1,0 +1,125 @@
+You are working on a production-grade SEO blog platform called "ExtensionTo".
+
+I have uploaded a ZIP file named "extensionto-52-articles.zip" containing 52 Markdown articles.
+
+---
+
+## 🔥 MAIN REQUIREMENT
+
+Import all 52 articles into the system BUT:
+
+### ❗ IMPORTANT RULE
+
+* DO NOT publish any article
+* All articles must be created as: `DRAFT ONLY`
+* No scheduling should be auto-activated
+* No article should appear live on the public blog until manually published from Admin Dashboard
+
+---
+
+## 1. IMPORT PROCESS
+
+* Extract ZIP file
+* Validate all Markdown files
+* Ensure each article has:
+
+  * title
+  * slug
+  * description
+  * category
+  * content
+
+If missing fields → auto-generate safely without breaking content.
+
+---
+
+## 2. STORAGE / DATA INTEGRATION
+
+Store all articles into the EXISTING system (detect automatically):
+
+* Markdown system OR
+* Supabase CMS OR
+* Hybrid system
+
+DO NOT assume structure — inspect the project first.
+
+---
+
+## 3. ADMIN DASHBOARD CONTROL
+
+All imported articles must appear in Admin Dashboard with:
+
+* Status = DRAFT
+* Editable content
+* Delete option
+* Manual publish button
+* Manual schedule button
+
+The admin must have FULL CONTROL.
+
+---
+
+## 4. SCHEDULING SYSTEM
+
+* Add `publish_at` field but keep it NULL by default
+* Scheduling is ONLY activated manually from Admin UI
+* No automatic publishing allowed
+
+---
+
+## 5. INTERNAL LINKING SYSTEM
+
+* Generate internal links between related articles
+* Group articles into clusters (SEO topics)
+* Add:
+
+  * Related Articles section
+  * Contextual links inside content
+
+BUT DO NOT modify meaning of content.
+
+---
+
+## 6. TABLE OF CONTENTS (TOC)
+
+For each article:
+
+* Auto-generate TOC from H2 / H3 headings
+* Add anchor links
+* Keep formatting consistent across all articles
+
+---
+
+## 7. SEO STRUCTURE
+
+Ensure every article includes:
+
+* meta title
+* meta description
+* canonical URL
+* OpenGraph tags
+* Twitter cards
+* JSON-LD Article schema
+
+---
+
+## 8. SAFETY RULES
+
+* DO NOT publish any article automatically
+* DO NOT change existing published content
+* DO NOT break current routing system
+* DO NOT delete or overwrite old articles
+* Work in safe migration mode only
+
+---
+
+## 9. FINAL OUTPUT
+
+After finishing, provide:
+
+* List of all imported articles
+* Confirmation they are all in DRAFT mode
+* Confirmation Admin Dashboard controls are working
+* Confirmation scheduling is manual only
+* Confirmation internal linking clusters created
+* Any missing info required from me
