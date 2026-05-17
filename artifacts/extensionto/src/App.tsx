@@ -84,12 +84,12 @@ const App = () => (
                 element={<ProtectedAdminRoute><NoIndex /><AIGenerator /></ProtectedAdminRoute>}
               />
 
-              {/* ── /settings routes (legacy — unchanged) ─────────── */}
-              <Route path="/settings" element={<><NoIndex /><AdminLogin /></>} />
-              <Route path="/settings/manage" element={<><NoIndex /><Admin /></>} />
-              <Route path="/settings/cms" element={<><NoIndex /><CMSCreator /></>} />
-              <Route path="/settings/ai-generator" element={<><NoIndex /><AIGenerator /></>} />
-              <Route path="/settings/seo-dashboard" element={<><NoIndex /><SEODashboard /></>} />
+              {/* ── /settings routes (legacy — redirect to new admin) ── */}
+              <Route path="/settings" element={<Navigate to="/admin/login" replace />} />
+              <Route path="/settings/manage" element={<Navigate to="/admin/dashboard" replace />} />
+              <Route path="/settings/cms" element={<Navigate to="/admin/cms" replace />} />
+              <Route path="/settings/ai-generator" element={<Navigate to="/admin/ai" replace />} />
+              <Route path="/settings/seo-dashboard" element={<Navigate to="/admin/seo" replace />} />
               <Route path="/settings/seo/:slug" element={<><NoIndex /><SEOAnalyzer /></>} />
 
               {/* ── Catch-all ──────────────────────────────────────── */}

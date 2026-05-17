@@ -1,0 +1,192 @@
+You are working on a production-grade project called ExtensionTo (SEO blog platform).
+
+🚨 ABSOLUTE SAFETY RULES:
+
+* Do NOT delete any existing markdown articles (including 52 imported drafts or 484 published articles)
+* Do NOT reset the database or file system
+* Do NOT break public blog routes
+* Do NOT change SEO structure or URLs
+* Only FIX and ADD improvements
+* Must be backward compatible
+
+━━━━━━━━━━━━━━━━━━
+🔥 CORE PROBLEMS TO FIX
+━━━━━━━━━━━━━━━━━━
+
+## 1. CRITICAL: ADMIN SESSION LOGOUT BUG
+
+Problem:
+
+* User logs in successfully
+* After navigating admin pages, user gets logged out
+* "Failed to fetch" appears
+* Session is unstable and inconsistent
+
+Root cause likely:
+
+* Mixed authentication systems (Supabase + localStorage)
+* Some pages still call supabase.auth.getSession()
+* Race conditions in auth initialization
+
+FIX REQUIREMENTS:
+
+* Create ONE unified auth system ONLY:
+  useAdminSession() hook
+
+* This hook must:
+  ✔ Use ONLY localStorage session (no Supabase auth dependency for admin UI)
+  ✔ Persist session across refresh
+  ✔ Auto-recover session on app reload
+  ✔ Prevent redirect loops
+  ✔ Handle offline mode safely
+  ✔ Never throw "failed to fetch"
+  ✔ Provide loading state before redirect decision
+
+* ALL /admin/* pages MUST use ONLY this hook
+
+* REMOVE all direct supabase.auth.getSession() usage from admin UI layer
+
+━━━━━━━━━━━━━━━━━━
+
+## 2. CRITICAL: 52 ARTICLES NOT SHOWING
+
+Problem:
+
+* 52 markdown articles exist on disk
+* But Admin Dashboard does NOT display them
+
+FIX REQUIREMENTS:
+
+* Build unified article loader:
+
+  loadAllArticles() must:
+  ✔ Load markdown articles (published + drafts)
+  ✔ Load drafts-index.json (52 articles)
+  ✔ Merge safely without duplicates
+  ✔ Support pagination (NOT single page list)
+  ✔ Support search by title + slug
+  ✔ Support filtering:
+  - draft
+  - published
+  - scheduled
+  - category
+
+* Must NOT break existing published articles system
+
+━━━━━━━━━━━━━━━━━━
+
+## 3. ADMIN DASHBOARD REBUILD (PROFESSIONAL UI)
+
+Redesign admin dashboard:
+
+Must include:
+
+* Sidebar navigation
+* Pagination system (10–20 per page)
+* Search bar (instant filter)
+* Filters (status/category)
+* Article cards or table view
+* Loading skeletons
+* Error states
+* Empty states
+* Responsive design (mobile ready)
+
+━━━━━━━━━━━━━━━━━━
+
+## 4. ONE-CLICK PUBLISH SYSTEM (REAL IMPLEMENTATION)
+
+When clicking "Publish":
+
+DO ALL OF THIS AUTOMATICALLY:
+
+* Update markdown frontmatter:
+  status: draft → published
+  published_at: NOW()
+
+* Update articles-index.json
+
+* Update drafts-index.json
+
+* Update sitemap.xml
+
+* Trigger build/sync script
+
+* Trigger Vercel deployment hook (if exists)
+
+* Show success UI toast
+
+* Update UI instantly (no refresh)
+
+NO MANUAL STEPS REQUIRED.
+
+━━━━━━━━━━━━━━━━━━
+
+## 5. FIX FAILED FETCH ERROR (CRITICAL)
+
+* Wrap ALL API calls in try/catch
+* Never allow fetch failure to break admin UI
+* Add fallback local data mode
+* Add retry mechanism (max 2 retries)
+* Add graceful error UI instead of crash
+
+━━━━━━━━━━━━━━━━━━
+
+## 6. PAGINATION (MANDATORY)
+
+Admin must NOT show all articles in one page.
+
+Implement:
+
+* page size: 10 or 20
+* pages: 1, 2, 3...
+* fast navigation
+* URL sync (?page=1)
+
+━━━━━━━━━━━━━━━━━━
+
+## 7. IMAGE SYSTEM (AUTO FIX)
+
+For the 52 articles:
+
+* Generate UNIQUE featured image per article
+
+* Image must include:
+  ✔ Article title
+  ✔ Different layout per category
+
+* Format:
+  ✔ WebP
+  ✔ 1200x630
+
+* Save path:
+  public/images/blog/
+
+* Auto inject into markdown frontmatter
+
+NO duplicate images allowed.
+
+━━━━━━━━━━━━━━━━━━
+
+## 8. STABILITY REQUIREMENTS (IMPORTANT)
+
+* No infinite loops
+* No auth flickering
+* No duplicate fetches
+* No multiple session systems
+* No console spam
+* No hydration issues
+
+━━━━━━━━━━━━━━━━━━
+
+## FINAL OUTPUT REQUIRED
+
+After completing:
+
+* Show full list of fixed files
+* Show auth flow diagram
+* Show article loading flow
+* Confirm 52 articles visible
+* Confirm login persistence stable
+* Confirm no failed fetch errors
+
+This must be production-ready and safe.

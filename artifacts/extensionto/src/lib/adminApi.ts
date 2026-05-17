@@ -1,6 +1,6 @@
 /**
  * adminApi.ts — typed fetch client for the Vite admin API middleware
- * All network errors are caught gracefully — never propagate to auth.
+ * Network errors are caught gracefully and retried — never propagate to auth.
  */
 
 export interface AdminStats {
@@ -46,14 +46,34 @@ export interface PageResult<T> {
   limit: number;
 }
 
-async function apiFetch<T>(url: string, opts?: RequestInit): Promise<T> {
-  const res = await fetch(url, {
-    ...opts,
-    headers: { "Content-Type": "application/json", ...opts?.headers },
-  });
-  const json = await res.json();
-  if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);
-  return json as T;
+const MAX_RETRIES = 2;
+const RETRY_DELAY = 600; // ms base — doubles each retry
+
+function sleep(ms: number) {
+  return new Promise<void>((resolve) => setTimeout(resolve, ms));
+}
+
+async function apiFetch<T>(url: string, opts?: RequestInit, attempt = 0): Promise<T> {
+  try {
+    const res = await fetch(url, {
+      ...opts,
+      headers: { "Content-Type": "application/json", ...opts?.headers },
+    });
+    const json = await res.json();
+    if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);
+    return json as T;
+  } catch (err) {
+    if (attempt < MAX_RETRIES) {
+      await sleep(RETRY_DELAY * Math.pow(2, attempt));
+      return apiFetch<T>(url, opts, attempt + 1);
+    }
+    // Surface a clean message — never "failed to fetch" raw
+    const raw = err instanceof Error ? err.message : String(err);
+    const clean = raw.toLowerCase().includes("failed to fetch")
+      ? "Could not reach the local API — make sure the dev server is running."
+      : raw;
+    throw new Error(clean);
+  }
 }
 
 export const adminApi = {

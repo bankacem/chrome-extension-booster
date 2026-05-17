@@ -45,6 +45,70 @@ function writeJson(p: string, data: unknown) {
   fs.writeFileSync(p, JSON.stringify(data, null, 2), "utf8");
 }
 
+// ── Inline sitemap regeneration ───────────────────────────────────────────────
+const SITEMAP_PATH  = path.join(__dirname, "public/sitemap.xml");
+const WEBSITE_URL   = "https://extensionto.com";
+const PILLAR_SLUGS  = new Set([
+  "how-to-fix-chrome-high-memory-usage-2026-complete-guide",
+  "adblock-chrome-android-complete-guide-2026",
+  "best-chrome-screenshot-extensions-2026-complete-guide",
+  "best-chrome-privacy-extensions-2026-complete-guide",
+  "best-youtube-downloader-chrome-extension-2026",
+  "best-chrome-extensions-for-privacy-2026-protect-your-online-identity",
+  "chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide",
+  "best-full-page-screenshot-chrome-extension-2026-free-no-login-required",
+]);
+const DISQUALIFYING = new Set(["thin", "partial", "corrupted_slug"]);
+
+function toDateStr(iso?: string | null) {
+  if (!iso) return new Date().toISOString().split("T")[0];
+  try { return new Date(iso).toISOString().split("T")[0]; } catch { return new Date().toISOString().split("T")[0]; }
+}
+function escXml(s: string) {
+  return String(s).replace(/[<>&'"]/g, (c: string) => ({"<":"&lt;",">":"&gt;","&":"&amp;","'":"&apos;",'"':"&quot;"})[c]!);
+}
+
+function regenerateSitemap() {
+  try {
+    const articles: Art[] = readJson(ARTICLES_INDEX);
+    const STATIC = [
+      { url: "/",        changefreq: "weekly",  priority: "1.0" },
+      { url: "/blog",    changefreq: "daily",   priority: "0.9" },
+      { url: "/privacy", changefreq: "yearly",  priority: "0.3" },
+      { url: "/terms",   changefreq: "yearly",  priority: "0.3" },
+    ];
+    const EXTENSIONS = [
+      "quick-screenshot-lite","auto-dark-mode-switcher","redirect-shield",
+      "protab-suspender","light-popup-blocker","formula-builder-pro",
+      "securakey-pro","offline-reader-pro","cookie-banner-blocker",
+    ];
+    const articlePages = articles
+      .filter((a) => {
+        const flags: string[] = (a as unknown as Record<string,string[]>).quality_flags || [];
+        return !flags.some((f) => DISQUALIFYING.has(f)) && !a.slug.includes("-partial");
+      })
+      .map((a) => {
+        const isPillar = PILLAR_SLUGS.has(a.slug);
+        const age = a.published_at ? Math.floor((Date.now() - new Date(a.published_at).getTime()) / 86400000) : 9999;
+        const isNew = age < 30;
+        return {
+          url: `/blog/${a.slug}`,
+          changefreq: isPillar || isNew ? "weekly" : "monthly",
+          priority: isPillar ? "0.85" : isNew ? "0.8" : "0.7",
+          lastmod: toDateStr((a as unknown as Record<string,string>).updated_at || a.published_at),
+        };
+      });
+    const extPages = EXTENSIONS.map((s) => ({ url: `/extension/${s}`, changefreq: "monthly", priority: "0.9", lastmod: undefined as string | undefined }));
+    const all = [...STATIC.map(p => ({...p, lastmod: undefined as string | undefined})), ...articlePages, ...extPages];
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${
+      all.map((p) => `  <url>\n    <loc>${escXml(WEBSITE_URL + p.url)}</loc>\n    <changefreq>${p.changefreq}</changefreq>\n    <priority>${p.priority}</priority>${p.lastmod ? `\n    <lastmod>${p.lastmod}</lastmod>` : ""}\n  </url>`).join("\n")
+    }\n</urlset>`;
+    fs.writeFileSync(SITEMAP_PATH, xml, "utf8");
+  } catch (e) {
+    console.warn("[admin-api] sitemap regeneration failed (non-blocking):", e);
+  }
+}
+
 interface Art {
   id: string; title: string; slug: string; category?: string | null;
   status: string; published_at?: string | null; scheduled_at?: string | null;
@@ -92,6 +156,8 @@ async function doPublish(slug: string, publishedAt: string, res: ServerResponse)
     writeJson(ARTICLES_INDEX, articles);
   }
   writeJson(DRAFTS_INDEX, drafts.filter((d) => d.slug !== slug));
+  // Regenerate sitemap so the newly published article is indexed
+  regenerateSitemap();
   res.end(JSON.stringify({ ok: true, slug, published_at: publishedAt }));
 }
 
@@ -154,7 +220,8 @@ function adminApiPlugin(): Plugin {
         try {
           // GET /api/admin/stats
           if (pathname === "/api/admin/stats" && method === "GET") {
-            const articles: Art[] = readJson(ARTICLES_INDEX);
+            // articles-index.json entries may lack a status field — treat them as published
+            const articles: Art[] = (readJson<Art[]>(ARTICLES_INDEX)).map((a) => ({ ...a, status: a.status || "published" }));
             const drafts: Art[] = readJson(DRAFTS_INDEX);
             const scheduled = drafts.filter((d) => d.status === "scheduled").length;
             const cats: Record<string, number> = {};
@@ -177,7 +244,8 @@ function adminApiPlugin(): Plugin {
             const limit = Math.min(50, Math.max(1, parseInt(url.searchParams.get("limit") ?? "20")));
             const q     = (url.searchParams.get("q") ?? "").toLowerCase();
             const cat   = url.searchParams.get("category") ?? "";
-            let data: Art[] = readJson(ARTICLES_INDEX);
+            // Normalize: articles-index.json entries may not have a status field
+            let data: Art[] = (readJson<Art[]>(ARTICLES_INDEX)).map((a) => ({ ...a, status: a.status || "published" }));
             if (q) data = data.filter((a) => a.title.toLowerCase().includes(q) || a.slug.includes(q));
             if (cat && cat !== "All") data = data.filter((a) => a.category === cat);
             const total = data.length;
