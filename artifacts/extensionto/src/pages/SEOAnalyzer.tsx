@@ -12,7 +12,6 @@ import {
   Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { supabase, isDevBypass } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { analyzeSEO, type SEOAnalysis } from "@/lib/seoAnalyzer";
 import SEO from "@/components/SEO";
@@ -48,102 +47,51 @@ const SEOAnalyzer = () => {
   const [loading, setLoading] = useState(true);
   const [analyzing, setAnalyzing] = useState(false);
 
+  // Auth guaranteed by ProtectedAdminRoute — just fetch the article
   useEffect(() => {
-    const checkAuth = async () => {
-      if (isDevBypass) {
-        fetchArticle();
-        return;
-      }
-
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) {
-        navigate("/settings");
-        return;
-      }
-
-      const { data: role, error: roleError } = await supabase
-        .from("user_roles")
-        .select("role")
-        .eq("user_id", session.user.id)
-        .single();
-
-      if (roleError || role?.role !== "admin") {
-        await supabase.auth.signOut();
-        navigate("/settings");
-        return;
-      }
-
-      fetchArticle();
-    };
-
-    checkAuth();
-  }, [slug, navigate]);
+    fetchArticle();
+  }, [slug]);
 
   const fetchArticle = async () => {
     if (!slug) return;
     setLoading(true);
+    try {
+      const idxRes = await fetch("/content/articles-index.json");
+      if (!idxRes.ok) throw new Error("Failed to load index");
+      const index = await idxRes.json();
+      const entry = index.find((a: any) => a.slug === slug);
+      if (!entry) throw new Error("Article not found in index");
 
-    if (isDevBypass) {
-      // Dev-bypass: find article in markdown index, then fetch its content
-      try {
-        const idxRes = await fetch("/content/articles-index.json");
-        const index = await idxRes.json();
-        const entry = index.find((a: any) => a.slug === slug);
-        if (!entry) throw new Error("Not found in index");
-
-        let content = "";
-        if (entry.filePath) {
-          const mdRes = await fetch(entry.filePath);
-          if (mdRes.ok) {
-            const raw = await mdRes.text();
-            // Strip frontmatter
-            content = raw.replace(/^---[\s\S]*?---\n?/, "").trim();
-          }
+      let content = "";
+      if (entry.filePath) {
+        const mdRes = await fetch(entry.filePath);
+        if (mdRes.ok) {
+          const raw = await mdRes.text();
+          content = raw.replace(/^---[\s\S]*?---\n?/, "").trim();
         }
-
-        const article: Article = {
-          id: entry.id || slug,
-          title: entry.title || "",
-          slug: entry.slug || slug,
-          content,
-          excerpt: entry.excerpt || null,
-          featured_image: entry.featured_image || null,
-          category: entry.category || null,
-          tags: entry.tags || null,
-          keywords: entry.keywords || null,
-          meta_description: entry.description || null,
-          status: "published",
-        };
-        setArticle(article);
-        runAnalysis(article);
-      } catch {
-        toast({ title: "Error", description: "Article not found", variant: "destructive" });
-        navigate("/settings/manage");
-      } finally {
-        setLoading(false);
       }
-      return;
+
+      const articleData: Article = {
+        id: entry.id || slug,
+        title: entry.title || "",
+        slug: entry.slug || slug,
+        content,
+        excerpt: entry.excerpt || null,
+        featured_image: entry.featured_image || null,
+        category: entry.category || null,
+        tags: entry.tags || null,
+        keywords: entry.keywords || null,
+        meta_description: entry.description || null,
+        status: "published",
+      };
+      setArticle(articleData);
+      runAnalysis(articleData);
+    } catch {
+      toast({ title: "Error", description: "Article not found", variant: "destructive" });
+      navigate("/admin/dashboard");
+    } finally {
+      setLoading(false);
     }
-
-    const { data, error } = await supabase
-      .from("articles")
-      .select("*")
-      .eq("slug", slug)
-      .single();
-
-    if (error) {
-      toast({
-        title: "Error",
-        description: "Article not found",
-        variant: "destructive"
-      });
-      navigate("/settings/manage");
-      return;
-    }
-
-    setArticle(data);
-    runAnalysis(data);
-    setLoading(false);
   };
 
   const runAnalysis = (articleData: Article) => {

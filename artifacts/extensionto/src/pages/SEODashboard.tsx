@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { supabase, isDevBypass } from "@/integrations/supabase/client";
+import { useAdminSession } from "@/hooks/useAdminSession";
 import { useToast } from "@/hooks/use-toast";
 import SEO from "@/components/SEO";
 import KeywordMapper from "@/components/seo-dashboard/KeywordMapper";
@@ -43,33 +43,12 @@ const SEODashboard = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { logout } = useAdminSession();
 
+  // Auth guaranteed by ProtectedAdminRoute — just load data
   useEffect(() => {
-    const checkAuth = async () => {
-      if (isDevBypass) {
-        fetchArticles();
-        return;
-      }
-
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) { navigate("/settings"); return; }
-
-      const { data: role, error: roleError } = await supabase
-        .from("user_roles")
-        .select("role")
-        .eq("user_id", session.user.id)
-        .single();
-
-      if (roleError || role?.role !== "admin") {
-        await supabase.auth.signOut();
-        navigate("/settings");
-        return;
-      }
-
-      fetchArticles();
-    };
-    checkAuth();
-  }, [navigate]);
+    fetchArticles();
+  }, []);
 
   const fetchArticles = async () => {
     setLoading(true);
@@ -106,9 +85,9 @@ const SEODashboard = () => {
 
   const publishedArticles = articles.filter(a => a.status === "published");
 
-  const handleLogout = async () => {
-    await supabase.auth.signOut();
-    navigate("/settings");
+  const handleLogout = () => {
+    logout();
+    navigate("/admin/login");
   };
 
   if (loading) {
@@ -134,7 +113,7 @@ const SEODashboard = () => {
       <header className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-xl">
         <div className="max-w-[1400px] mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" onClick={() => navigate("/settings/manage")} className="gap-2">
+            <Button variant="ghost" size="sm" onClick={() => navigate("/admin/dashboard")} className="gap-2">
               <ArrowLeft className="h-4 w-4" />
               Admin
             </Button>

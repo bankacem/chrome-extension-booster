@@ -16,7 +16,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { supabase, isDevBypass } from "@/integrations/supabase/client";
+import { supabase } from "@/integrations/supabase/client";
 import { useAdminSession } from "@/hooks/useAdminSession";
 import { useToast } from "@/hooks/use-toast";
 import SEO from "@/components/SEO";
@@ -127,7 +127,7 @@ function deriveExcerpt(content: string): string {
 export default function CMSCreator() {
   const navigate = useNavigate();
   const { toast } = useToast();
-  const { isAuthenticated: hasAdminSession } = useAdminSession();
+  const { logout } = useAdminSession();
 
   const [authChecked, setAuthChecked] = useState(false);
 
@@ -147,31 +147,10 @@ export default function CMSCreator() {
   const [publishedSlug, setPublishedSlug] = useState<string | null>(null);
   const [urlCopied, setUrlCopied] = useState(false);
 
+  // Auth is guaranteed by ProtectedAdminRoute — mark immediately
   useEffect(() => {
-    // Accept either auth path:
-    //   1. New localStorage admin session (/admin/cms route)
-    //   2. Legacy Supabase admin session (/settings/cms route)
-    //   3. Dev-bypass mode (no credentials set at all)
-    if (hasAdminSession || isDevBypass) {
-      setAuthChecked(true);
-      return;
-    }
-    const check = async () => {
-      try {
-        const { data: { session } } = await supabase.auth.getSession();
-        if (!session) { navigate("/settings"); return; }
-        const { data: role } = await supabase
-          .from("user_roles").select("role").eq("user_id", session.user.id).single();
-        if (role?.role !== "admin") { navigate("/settings"); return; }
-        setAuthChecked(true);
-      } catch {
-        // Supabase unreachable — if we got here without a local session,
-        // the user is not authenticated. Redirect to login.
-        navigate("/admin/login");
-      }
-    };
-    check();
-  }, [hasAdminSession, navigate]);
+    setAuthChecked(true);
+  }, []);
 
   useEffect(() => {
     if (!slugCustomized && title) {

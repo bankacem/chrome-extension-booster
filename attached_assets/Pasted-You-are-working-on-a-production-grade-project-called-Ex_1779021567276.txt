@@ -1,0 +1,116 @@
+You are working on a production-grade project called "ExtensionTo Admin System".
+
+CURRENT ISSUE:
+- Admin dashboard shows 0 articles and 0 drafts
+- JSON parsing errors like "Unexpected token '<'"
+- Data is not loading from /public/content files
+- System is partially broken after migration
+
+GOAL:
+Fix the entire admin data system so it properly reads articles and drafts WITHOUT using any API routes.
+
+----------------------------------------
+
+ABSOLUTE RULES:
+- DO NOT use /api endpoints anywhere for reading data
+- DO NOT use fetch("/api/...") for dashboard data
+- DO NOT delete any articles or drafts
+- DO NOT modify markdown content files (preserve all 484 published + 52 drafts)
+
+----------------------------------------
+
+CURRENT FILES THAT MUST BE USED:
+- public/content/articles-index.json
+- public/content/drafts-index.json
+- markdown article files on disk
+
+----------------------------------------
+
+TASKS:
+
+1. FIX DATA LOADING SYSTEM
+- Ensure Admin Dashboard, All Articles page, and Drafts page
+  correctly load data from:
+  - /public/content/articles-index.json
+  - /public/content/drafts-index.json
+
+- Use direct fetch from static files ONLY:
+  fetch("/content/articles-index.json")
+  fetch("/content/drafts-index.json")
+
+- Ensure Vite serves these files correctly via /public folder
+
+----------------------------------------
+
+2. REMOVE BROKEN API DEPENDENCY
+- Remove ALL calls to:
+  /api/admin/*
+  /api/articles
+  /api/drafts
+  /api/stats
+
+These endpoints are causing HTML responses instead of JSON.
+
+----------------------------------------
+
+3. FIX "Unexpected token '<'" ERROR
+
+Root cause:
+- API routes returning HTML (index.html fallback)
+
+Solution:
+- Eliminate API dependency completely for read operations
+- Only use static JSON files from /public/content/
+
+----------------------------------------
+
+4. IMPLEMENT SAFE DATA LAYER
+
+Create or fix:
+/src/lib/content-store.ts
+
+It must:
+- Load articles from /content/articles-index.json
+- Load drafts from /content/drafts-index.json
+- Cache data in memory
+- Provide:
+  - getAllArticles()
+  - getAllDrafts()
+  - getStats()
+
+NO NETWORK BACKEND DEPENDENCY.
+
+----------------------------------------
+
+5. ADMIN DASHBOARD FIX
+
+Fix Admin Dashboard so that:
+- Total Articles = correct count from articles-index.json
+- Drafts = correct count from drafts-index.json
+- Recent articles list displays real data
+- Pagination works (20 per page)
+- Search and filters work
+- No empty states when data exists
+
+----------------------------------------
+
+6. SAFETY REQUIREMENTS
+
+- NEVER delete articles or drafts
+- NEVER overwrite markdown content
+- Only read JSON index files for UI rendering
+
+----------------------------------------
+
+FINAL RESULT:
+
+After fix:
+- Dashboard shows real 484 published articles
+- Dashboard shows real 52 drafts
+- No JSON parsing errors
+- No "Unexpected token '<'"
+- No API dependency for reading data
+- Fully stable admin system
+- Instant loading UI
+
+This is a frontend-only, static data CMS system.
