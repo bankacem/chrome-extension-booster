@@ -1,0 +1,73 @@
+You are working on a production-grade project called "ExtensionTo Admin System".
+
+IMPORTANT RULES:
+- DO NOT delete or lose any existing articles (484 published + 52 drafts must remain intact).
+- DO NOT reset or wipe any data.
+- DO NOT break markdown-based article storage.
+- Treat all existing content as production data.
+
+CURRENT PROBLEMS TO FIX (CRITICAL):
+
+1. Admin Dashboard shows 0 articles
+   - Fix broken API / fetch calls returning HTML instead of JSON
+   - Ensure all dashboard data loads from:
+     - articles-index.json
+     - drafts-index.json
+     - markdown files on disk
+
+2. Error:
+   "Unexpected token '<', '<!doctype ...' is not valid JSON"
+   - Fix all fetch calls that assume JSON response
+   - Add safe JSON parsing with fallback handling
+   - Ensure API routes never return HTML when JSON is expected
+
+3. Admin logout / session bug
+   - Admin must NOT randomly log out
+   - Remove all unstable Supabase auth calls in admin UI
+   - Use only localStorage-based session (useAdminSession)
+   - Prevent redirect loops and failed auth fetch issues
+
+4. Missing articles in dashboard
+   - 52 drafts must be visible in Drafts Manager
+   - 484 published articles must appear in All Articles
+   - Implement proper pagination (10–20 per page)
+   - Fix filtering and category counts
+
+5. Data consistency
+   - Ensure markdown files are source of truth
+   - Sync indexes correctly:
+     articles-index.json
+     drafts-index.json
+   - Never overwrite or delete markdown files unless explicitly requested
+
+6. Sitemap issue
+   - Ensure sitemap.xml is updated automatically on publish/unpublish
+   - Do not break SEO structure
+
+7. UI Fixes
+   - Admin pages must NOT show empty state incorrectly
+   - Fix "No articles found" when data exists
+   - Ensure proper loading states
+
+8. One-click publish system
+   - Ensure publishing updates:
+     - frontmatter status
+     - articles-index.json
+     - drafts-index.json
+     - sitemap.xml
+   - Must be atomic and safe
+
+SAFE MODE:
+- Any fix must preserve all existing data
+- Prefer patching over rewriting
+- Do not remove routes or features unless broken
+- Keep /admin system only (remove old /settings conflicts safely via redirects only)
+
+FINAL GOAL:
+A fully working unified admin system where:
+- All 536 articles are visible
+- Drafts + published are correctly separated
+- No JSON/HTML errors exist
+- No logout bugs exist
+- Pagination works
+- Data is stable and persistent
