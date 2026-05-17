@@ -1,0 +1,137 @@
+You are working on a production-grade project called "ExtensionTo".
+
+MISSION:
+Convert the entire admin + content system into a fully stable architecture with ZERO API usage.
+
+ABSOLUTE RULES:
+- DO NOT use /api routes anywhere
+- DO NOT rely on fetch() for internal data
+- DO NOT use Supabase as runtime dependency for admin dashboard
+- DO NOT delete any articles or drafts
+- PRESERVE ALL DATA:
+  - 484 published articles
+  - 52 draft articles
+  - ALL markdown files
+
+GOAL:
+Build a fully local-data-driven admin system that is 100% stable and does not depend on backend API calls.
+
+----------------------------------------
+
+CORE TRANSFORMATION:
+
+1. REMOVE API DEPENDENCY
+- Replace all fetch("/api/...") calls
+- Replace all JSON API calls that depend on server routes
+- Remove any reliance on Vite middleware API responses
+
+Replace with direct imports or filesystem-based data:
+
+- articles-index.json
+- drafts-index.json
+- markdown files
+
+----------------------------------------
+
+2. DATA LAYER (NEW ARCHITECTURE)
+
+Create a unified data layer:
+
+/lib/content-store.ts
+
+It must:
+- Load articles from articles-index.json
+- Load drafts from drafts-index.json
+- Provide in-memory caching
+- Provide functions:
+  - getAllArticles()
+  - getAllDrafts()
+  - getArticleBySlug()
+  - getStats()
+
+NO NETWORK REQUESTS.
+
+----------------------------------------
+
+3. ADMIN DASHBOARD FIX
+
+Fix Admin Dashboard to:
+- Show real 484 published articles
+- Show real 52 drafts
+- Implement pagination (20 per page)
+- Implement filters (category, status, search)
+- Remove all loading errors caused by fetch()
+
+Everything must read from content-store.ts only.
+
+----------------------------------------
+
+4. DRAFT SYSTEM
+
+- Drafts Manager must read directly from drafts-index.json
+- Publishing must:
+  1. Update markdown frontmatter (status: published)
+  2. Move item from drafts-index.json → articles-index.json
+  3. Regenerate sitemap.xml locally
+- NO API CALLS
+
+----------------------------------------
+
+5. PUBLISH SYSTEM (ONE-CLICK)
+
+Implement safe one-click publish:
+- No server requests
+- Pure file + JSON updates
+- Atomic update system:
+  - update markdown file
+  - update indexes
+  - update sitemap
+
+----------------------------------------
+
+6. AUTH SYSTEM (KEEP SIMPLE)
+
+- Keep localStorage-based admin session ONLY
+- REMOVE all Supabase auth calls from admin UI
+- NO getSession()
+- NO onAuthStateChange()
+- NO network authentication
+
+----------------------------------------
+
+7. ERROR FIX
+
+Fix this permanently:
+"Unexpected token '<'"
+
+Cause:
+- API returning HTML instead of JSON
+
+Solution:
+- Remove all API fetch dependencies
+- Replace with local data imports
+
+----------------------------------------
+
+8. UI REQUIREMENTS
+
+- Admin dashboard must NEVER show empty state if data exists
+- Must show real stats instantly on load
+- Must not depend on network requests
+- Must be instant (no loading flicker)
+
+----------------------------------------
+
+FINAL RESULT:
+
+A fully stable system where:
+- Admin works offline (no API dependency)
+- 484 articles always visible
+- 52 drafts always visible
+- No JSON parsing errors
+- No logout bugs
+- No failed fetch errors
+- No Vite middleware dependency
+- 100% deterministic data layer
+
+This is a local-first CMS architecture.

@@ -350,6 +350,7 @@ export default defineConfig({
   },
   server: {
     port: parseInt(process.env.PORT || "5173"),
+    strictPort: true,   // fail loudly if port is taken — never silently serve old code on a different port
     host: "0.0.0.0",
     allowedHosts: true,
   },

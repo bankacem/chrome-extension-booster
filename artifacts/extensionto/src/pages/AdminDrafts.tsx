@@ -4,14 +4,18 @@ import {
   Search, Filter, Globe, Trash2, Calendar, Loader2,
   ChevronLeft, ChevronRight as ChevronRightIcon,
   CheckSquare, Square, RefreshCw, AlertCircle, Eye,
-  CheckCircle, Clock, PenLine,
+  Clock, PenLine,
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import AdminLayout from "@/components/admin/AdminLayout";
-import { adminApi, type AdminArticle } from "@/lib/adminApi";
+import {
+  getAllDrafts, filterArticles, paginateArticles,
+  invalidateCache, type Article, type PageResult,
+} from "@/lib/content-store";
+import { adminApi } from "@/lib/adminApi";
 
 const LIMIT = 20;
 
@@ -33,7 +37,6 @@ function fmtDate(raw?: string | null): string {
   catch { return raw; }
 }
 
-// Schedule Dialog
 function ScheduleDialog({ slug, onDone, onCancel }: { slug: string; onDone: () => void; onCancel: () => void }) {
   const { toast } = useToast();
   const [date, setDate] = useState(() => {
@@ -80,53 +83,72 @@ function ScheduleDialog({ slug, onDone, onCancel }: { slug: string; onDone: () =
 
 export default function AdminDrafts() {
   const { toast } = useToast();
-  const [articles, setArticles]   = useState<AdminArticle[]>([]);
-  const [total, setTotal]         = useState(0);
-  const [page, setPage]           = useState(1);
-  const [pages, setPages]         = useState(1);
-  const [loading, setLoading]     = useState(true);
-  const [search, setSearch]       = useState("");
-  const [cat, setCat]             = useState("All");
-  const [status, setStatus]       = useState("all");
-  const [selected, setSelected]   = useState<Set<string>>(new Set());
-  const [acting, setActing]       = useState<Set<string>>(new Set());
-  const [bulkLoading, setBulk]    = useState(false);
+
+  // All drafts loaded from static file — never from API middleware
+  const [allDrafts, setAllDrafts] = useState<Article[]>([]);
+
+  // Derived / filtered view
+  const [result, setResult]   = useState<PageResult<Article> | null>(null);
+  const [page, setPage]       = useState(1);
+  const [search, setSearch]   = useState("");
+  const [cat, setCat]         = useState("All");
+  const [status, setStatus]   = useState("all");
+  const [loading, setLoading] = useState(true);
+  const [error, setError]     = useState<string | null>(null);
+
+  const [selected, setSelected]     = useState<Set<string>>(new Set());
+  const [acting, setActing]         = useState<Set<string>>(new Set());
+  const [bulkLoading, setBulk]      = useState(false);
   const [scheduling, setScheduling] = useState<string | null>(null);
-  const [draftCount, setDraftCount] = useState(0);
-  const searchRef                   = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const load = useCallback(async (p = page, q = search, c = cat, s = status) => {
+  const searchRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Load all drafts from static JSON (no API middleware involved)
+  const loadDrafts = useCallback(async (fresh = false) => {
     setLoading(true);
+    setError(null);
     try {
-      const res = await adminApi.drafts({ page: p, limit: LIMIT, q: q || undefined, category: c !== "All" ? c : undefined, status: s !== "all" ? s : undefined });
-      setArticles(res.data);
-      setTotal(res.total);
-      setPages(res.pages);
-      if (p === 1 && !q && c === "All" && s === "all") setDraftCount(res.total);
+      if (fresh) invalidateCache();
+      const drafts = await getAllDrafts(fresh);
+      setAllDrafts(drafts);
     } catch (e: unknown) {
-      toast({ title: "Failed to load drafts", description: String(e), variant: "destructive" });
-    } finally { setLoading(false); }
-  }, [page, search, cat, status, toast]);
+      setError(String(e));
+    } finally {
+      setLoading(false);
+    }
+  }, []);
 
-  useEffect(() => { load(1, search, cat, status); setPage(1); setSelected(new Set()); }, [cat, status]);
+  useEffect(() => { loadDrafts(); }, [loadDrafts]);
 
-  useEffect(() => {
-    if (searchRef.current) clearTimeout(searchRef.current);
-    searchRef.current = setTimeout(() => { load(1, search, cat, status); setPage(1); setSelected(new Set()); }, 400);
-    return () => { if (searchRef.current) clearTimeout(searchRef.current); };
-  }, [search]);
-
-  // Auto-publish scheduled articles on mount
+  // Auto-publish any scheduled articles that are due (write operation via API)
   useEffect(() => {
     adminApi.checkScheduled().then((res) => {
       if (res.published.length > 0) {
         toast({ title: `${res.published.length} scheduled article${res.published.length > 1 ? "s" : ""} auto-published` });
-        load(page, search, cat, status);
+        loadDrafts(true);
       }
     }).catch(() => {});
   }, []);
 
-  const goPage = (p: number) => { setPage(p); setSelected(new Set()); load(p, search, cat, status); };
+  // Recompute filtered + paginated view whenever drafts, filters, or page change
+  useEffect(() => {
+    const filtered = filterArticles(allDrafts, { q: search, category: cat, status });
+    setResult(paginateArticles(filtered, page, LIMIT));
+  }, [allDrafts, search, cat, status, page]);
+
+  // Debounce search
+  useEffect(() => {
+    if (searchRef.current) clearTimeout(searchRef.current);
+    searchRef.current = setTimeout(() => setPage(1), 300);
+    return () => { if (searchRef.current) clearTimeout(searchRef.current); };
+  }, [search]);
+
+  // Reset page on filter changes
+  useEffect(() => { setPage(1); setSelected(new Set()); }, [cat, status]);
+
+  const articles = result?.data ?? [];
+  const total    = result?.total ?? 0;
+  const pages    = result?.pages ?? 1;
 
   const toggleSelect = (id: string) => setSelected((prev) => {
     const next = new Set(prev); if (next.has(id)) next.delete(id); else next.add(id); return next;
@@ -139,7 +161,8 @@ export default function AdminDrafts() {
     try {
       await adminApi.publish(slug);
       toast({ title: "Published!", description: slug });
-      load(page, search, cat, status);
+      invalidateCache();
+      await loadDrafts(true);
       setSelected((prev) => { const n = new Set(prev); n.delete(slug); return n; });
     } catch (e: unknown) {
       toast({ title: "Publish failed", description: String(e), variant: "destructive" });
@@ -152,7 +175,8 @@ export default function AdminDrafts() {
     try {
       await adminApi.delete(slug);
       toast({ title: "Removed from drafts", description: slug });
-      load(page, search, cat, status);
+      invalidateCache();
+      await loadDrafts(true);
     } catch (e: unknown) {
       toast({ title: "Delete failed", description: String(e), variant: "destructive" });
     } finally { setActing((p) => { const n = new Set(p); n.delete(slug); return n; }); }
@@ -167,7 +191,8 @@ export default function AdminDrafts() {
       await adminApi.bulk(action, slugs);
       toast({ title: `Bulk ${action} complete`, description: `${slugs.length} articles updated` });
       setSelected(new Set());
-      load(page, search, cat, status);
+      invalidateCache();
+      await loadDrafts(true);
     } catch (e: unknown) {
       toast({ title: "Bulk action failed", description: String(e), variant: "destructive" });
     } finally { setBulk(false); }
@@ -191,12 +216,15 @@ export default function AdminDrafts() {
     return <span className="rounded-full bg-amber-500/10 px-2 py-0.5 text-[11px] font-medium text-amber-600 dark:text-amber-400">draft</span>;
   };
 
+  // Total draft count (unfiltered) for the layout badge
+  const draftCount = allDrafts.filter((d) => d.status === "draft").length;
+
   return (
     <>
       {scheduling && (
         <ScheduleDialog
           slug={scheduling}
-          onDone={() => { setScheduling(null); load(page, search, cat, status); }}
+          onDone={() => { setScheduling(null); invalidateCache(); loadDrafts(true); }}
           onCancel={() => setScheduling(null)}
         />
       )}
@@ -208,6 +236,14 @@ export default function AdminDrafts() {
         </Helmet>
 
         <div className="space-y-4">
+          {/* Error */}
+          {error && (
+            <div className="flex items-center gap-3 rounded-lg border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+              <AlertCircle className="h-4 w-4 shrink-0" />
+              <span>{error}</span>
+            </div>
+          )}
+
           {/* Info banner */}
           <div className="flex items-start gap-3 rounded-lg border border-amber-500/30 bg-amber-500/8 px-4 py-3 text-sm">
             <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-amber-500" />
@@ -222,7 +258,6 @@ export default function AdminDrafts() {
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input placeholder="Search drafts…" value={search} onChange={(e) => setSearch(e.target.value)} className="pl-9" />
             </div>
-            {/* Status filter */}
             <div className="flex gap-1 rounded-lg border border-border bg-card p-1">
               {STATUSES.map((s) => (
                 <button key={s.value} onClick={() => setStatus(s.value)}
@@ -233,7 +268,7 @@ export default function AdminDrafts() {
                 </button>
               ))}
             </div>
-            <Button variant="ghost" size="sm" onClick={() => load(page, search, cat, status)} disabled={loading}>
+            <Button variant="ghost" size="sm" onClick={() => loadDrafts(true)} disabled={loading}>
               <RefreshCw className={`h-4 w-4 ${loading ? "animate-spin" : ""}`} />
             </Button>
           </div>
@@ -273,7 +308,6 @@ export default function AdminDrafts() {
 
           {/* Article list */}
           <div className="rounded-xl border border-border bg-card overflow-hidden">
-            {/* Header */}
             <div className="flex items-center gap-4 border-b border-border bg-muted/30 px-4 py-2.5 text-xs font-medium text-muted-foreground">
               <button onClick={toggleAll} className="shrink-0">
                 {allSelected ? <CheckSquare className="h-4 w-4 text-primary" /> : <Square className="h-4 w-4" />}
@@ -300,6 +334,10 @@ export default function AdminDrafts() {
               <div className="flex flex-col items-center gap-2 py-16 text-center text-muted-foreground">
                 <PenLine className="h-8 w-8 opacity-30" />
                 <p className="text-sm">No drafts match your filters.</p>
+                {search || cat !== "All" || status !== "all" ? (
+                  <button onClick={() => { setSearch(""); setCat("All"); setStatus("all"); }}
+                    className="mt-1 text-xs text-primary hover:underline">Clear filters</button>
+                ) : null}
               </div>
             ) : (
               <AnimatePresence initial={false}>
@@ -326,22 +364,18 @@ export default function AdminDrafts() {
                         <span className="hidden w-20 md:block">{statusBadge(a.status)}</span>
                         <span className="hidden w-24 text-xs text-muted-foreground lg:block">{fmtDate(a.created_at)}</span>
                         <div className="flex w-28 shrink-0 items-center justify-end gap-1">
-                          {/* Preview */}
                           <a href={`/blog/${a.slug}`} target="_blank" rel="noopener noreferrer"
                             className="rounded p-1 text-muted-foreground hover:bg-muted hover:text-foreground" title="Preview">
                             <Eye className="h-3.5 w-3.5" />
                           </a>
-                          {/* Schedule */}
                           <button onClick={() => setScheduling(a.slug)} disabled={isActing}
                             className="rounded p-1 text-muted-foreground hover:bg-muted hover:text-blue-500" title="Schedule">
                             <Clock className="h-3.5 w-3.5" />
                           </button>
-                          {/* Publish */}
                           <button onClick={() => doPublish(a.slug)} disabled={isActing}
                             className="rounded p-1 text-muted-foreground hover:bg-muted hover:text-green-500" title="Publish now">
                             {isActing ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Globe className="h-3.5 w-3.5" />}
                           </button>
-                          {/* Delete */}
                           <button onClick={() => doDelete(a.slug)} disabled={isActing}
                             className="rounded p-1 text-muted-foreground hover:bg-muted hover:text-destructive" title="Delete">
                             {isActing ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Trash2 className="h-3.5 w-3.5" />}
@@ -362,7 +396,7 @@ export default function AdminDrafts() {
                 {((page - 1) * LIMIT) + 1}–{Math.min(page * LIMIT, total)} of {total} drafts
               </p>
               <div className="flex items-center gap-1">
-                <Button variant="ghost" size="sm" onClick={() => goPage(page - 1)} disabled={page <= 1 || loading}>
+                <Button variant="ghost" size="sm" onClick={() => setPage(page - 1)} disabled={page <= 1 || loading}>
                   <ChevronLeft className="h-4 w-4" />
                 </Button>
                 {pagination.map((p, i) =>
@@ -370,13 +404,13 @@ export default function AdminDrafts() {
                     <span key={`ell-${i}`} className="px-2 text-muted-foreground">…</span>
                   ) : (
                     <Button key={p} variant={page === p ? "default" : "ghost"} size="sm"
-                      onClick={() => goPage(p as number)} disabled={loading}
+                      onClick={() => setPage(p as number)} disabled={loading}
                       className="h-8 w-8 p-0">
                       {p}
                     </Button>
                   )
                 )}
-                <Button variant="ghost" size="sm" onClick={() => goPage(page + 1)} disabled={page >= pages || loading}>
+                <Button variant="ghost" size="sm" onClick={() => setPage(page + 1)} disabled={page >= pages || loading}>
                   <ChevronRightIcon className="h-4 w-4" />
                 </Button>
               </div>

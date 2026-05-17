@@ -10,7 +10,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import AdminLayout from "@/components/admin/AdminLayout";
-import { adminApi, type AdminArticle } from "@/lib/adminApi";
+import {
+  getAllArticles, filterArticles, paginateArticles,
+  invalidateCache, type Article, type PageResult,
+} from "@/lib/content-store";
+import { adminApi } from "@/lib/adminApi";
 
 const LIMIT = 20;
 
@@ -29,41 +33,59 @@ function fmtDate(raw?: string | null): string {
 
 export default function AdminArticles() {
   const { toast } = useToast();
-  const [articles, setArticles]   = useState<AdminArticle[]>([]);
-  const [total, setTotal]         = useState(0);
-  const [page, setPage]           = useState(1);
-  const [pages, setPages]         = useState(1);
-  const [loading, setLoading]     = useState(true);
-  const [search, setSearch]       = useState("");
-  const [cat, setCat]             = useState("All");
-  const [selected, setSelected]   = useState<Set<string>>(new Set());
-  const [acting, setActing]       = useState<Set<string>>(new Set());
-  const [bulkLoading, setBulk]    = useState(false);
-  const searchRef                 = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const load = useCallback(async (p = page, q = search, c = cat) => {
+  // All articles loaded from static JSON — never from API middleware
+  const [allArticles, setAllArticles] = useState<Article[]>([]);
+
+  // Derived / filtered view
+  const [result, setResult]   = useState<PageResult<Article> | null>(null);
+  const [page, setPage]       = useState(1);
+  const [search, setSearch]   = useState("");
+  const [cat, setCat]         = useState("All");
+  const [loading, setLoading] = useState(true);
+  const [error, setError]     = useState<string | null>(null);
+
+  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [acting, setActing]     = useState<Set<string>>(new Set());
+  const [bulkLoading, setBulk]  = useState(false);
+  const searchRef               = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Load all articles from static JSON (no API middleware involved)
+  const loadArticles = useCallback(async (fresh = false) => {
     setLoading(true);
+    setError(null);
     try {
-      const res = await adminApi.articles({ page: p, limit: LIMIT, q: q || undefined, category: c !== "All" ? c : undefined });
-      setArticles(res.data);
-      setTotal(res.total);
-      setPages(res.pages);
+      if (fresh) invalidateCache();
+      const articles = await getAllArticles(fresh);
+      setAllArticles(articles);
     } catch (e: unknown) {
-      toast({ title: "Failed to load articles", description: String(e), variant: "destructive" });
+      setError(String(e));
     } finally {
       setLoading(false);
     }
-  }, [page, search, cat, toast]);
+  }, []);
 
-  useEffect(() => { load(1, search, cat); setPage(1); setSelected(new Set()); }, [cat]);
+  useEffect(() => { loadArticles(); }, [loadArticles]);
 
+  // Recompute filtered + paginated view whenever articles, filters, or page change
+  useEffect(() => {
+    const filtered = filterArticles(allArticles, { q: search, category: cat });
+    setResult(paginateArticles(filtered, page, LIMIT));
+  }, [allArticles, search, cat, page]);
+
+  // Debounce search
   useEffect(() => {
     if (searchRef.current) clearTimeout(searchRef.current);
-    searchRef.current = setTimeout(() => { load(1, search, cat); setPage(1); setSelected(new Set()); }, 400);
+    searchRef.current = setTimeout(() => setPage(1), 300);
     return () => { if (searchRef.current) clearTimeout(searchRef.current); };
   }, [search]);
 
-  const goPage = (p: number) => { setPage(p); setSelected(new Set()); load(p, search, cat); };
+  // Reset page on category change
+  useEffect(() => { setPage(1); setSelected(new Set()); }, [cat]);
+
+  const articles = result?.data ?? [];
+  const total    = result?.total ?? 0;
+  const pages    = result?.pages ?? 1;
 
   const toggleSelect = (id: string) => setSelected((prev) => {
     const next = new Set(prev); if (next.has(id)) next.delete(id); else next.add(id); return next;
@@ -81,10 +103,11 @@ export default function AdminArticles() {
         await adminApi.delete(slug);
         toast({ title: "Deleted", description: slug });
       }
-      load(page, search, cat);
       setSelected((prev) => { const n = new Set(prev); n.delete(slug); return n; });
+      invalidateCache();
+      await loadArticles(true);
     } catch (e: unknown) {
-      toast({ title: `Action failed`, description: String(e), variant: "destructive" });
+      toast({ title: "Action failed", description: String(e), variant: "destructive" });
     } finally {
       setActing((p) => { const n = new Set(p); n.delete(slug); return n; });
     }
@@ -99,12 +122,11 @@ export default function AdminArticles() {
       await adminApi.bulk(action, slugs);
       toast({ title: `Bulk ${action} complete`, description: `${slugs.length} articles updated` });
       setSelected(new Set());
-      load(page, search, cat);
+      invalidateCache();
+      await loadArticles(true);
     } catch (e: unknown) {
       toast({ title: "Bulk action failed", description: String(e), variant: "destructive" });
-    } finally {
-      setBulk(false);
-    }
+    } finally { setBulk(false); }
   };
 
   const pagination = (() => {
@@ -128,13 +150,21 @@ export default function AdminArticles() {
       </Helmet>
 
       <div className="space-y-4">
+        {/* Error */}
+        {error && (
+          <div className="flex items-center gap-3 rounded-lg border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+            <AlertCircle className="h-4 w-4 shrink-0" />
+            <span>{error}</span>
+          </div>
+        )}
+
         {/* Filters */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input placeholder="Search articles…" value={search} onChange={(e) => setSearch(e.target.value)} className="pl-9" />
           </div>
-          <Button variant="ghost" size="sm" onClick={() => load(page, search, cat)} disabled={loading}>
+          <Button variant="ghost" size="sm" onClick={() => loadArticles(true)} disabled={loading}>
             <RefreshCw className={`h-4 w-4 ${loading ? "animate-spin" : ""}`} />
           </Button>
         </div>
@@ -173,7 +203,6 @@ export default function AdminArticles() {
 
         {/* Table */}
         <div className="rounded-xl border border-border bg-card overflow-hidden">
-          {/* Header */}
           <div className="flex items-center gap-4 border-b border-border bg-muted/30 px-4 py-2.5 text-xs font-medium text-muted-foreground">
             <button onClick={toggleAll} className="shrink-0">
               {allSelected ? <CheckSquare className="h-4 w-4 text-primary" /> : <Square className="h-4 w-4" />}
@@ -200,6 +229,10 @@ export default function AdminArticles() {
             <div className="flex flex-col items-center gap-2 py-16 text-center text-muted-foreground">
               <AlertCircle className="h-8 w-8 opacity-30" />
               <p className="text-sm">No articles match your filters.</p>
+              {search || cat !== "All" ? (
+                <button onClick={() => { setSearch(""); setCat("All"); }}
+                  className="mt-1 text-xs text-primary hover:underline">Clear filters</button>
+              ) : null}
             </div>
           ) : (
             <AnimatePresence initial={false}>
@@ -253,7 +286,7 @@ export default function AdminArticles() {
               {((page - 1) * LIMIT) + 1}–{Math.min(page * LIMIT, total)} of {total.toLocaleString()} articles
             </p>
             <div className="flex items-center gap-1">
-              <Button variant="ghost" size="sm" onClick={() => goPage(page - 1)} disabled={page <= 1 || loading}>
+              <Button variant="ghost" size="sm" onClick={() => setPage(page - 1)} disabled={page <= 1 || loading}>
                 <ChevronLeft className="h-4 w-4" />
               </Button>
               {pagination.map((p, i) =>
@@ -261,13 +294,13 @@ export default function AdminArticles() {
                   <span key={`ell-${i}`} className="px-2 text-muted-foreground">…</span>
                 ) : (
                   <Button key={p} variant={page === p ? "default" : "ghost"} size="sm"
-                    onClick={() => goPage(p as number)} disabled={loading}
+                    onClick={() => setPage(p as number)} disabled={loading}
                     className="h-8 w-8 p-0">
                     {p}
                   </Button>
                 )
               )}
-              <Button variant="ghost" size="sm" onClick={() => goPage(page + 1)} disabled={page >= pages || loading}>
+              <Button variant="ghost" size="sm" onClick={() => setPage(page + 1)} disabled={page >= pages || loading}>
                 <ChevronRightIcon className="h-4 w-4" />
               </Button>
             </div>

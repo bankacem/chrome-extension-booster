@@ -1,50 +1,13 @@
 /**
- * adminApi.ts — typed fetch client for the Vite admin API middleware
- * Network errors are caught gracefully and retried — never propagate to auth.
+ * adminApi.ts — Write-only API client for admin mutations.
+ *
+ * READ operations (stats, article lists, draft lists) have been moved to
+ * content-store.ts which reads static JSON files directly — those never
+ * go through the Vite middleware and can never return HTML.
+ *
+ * This file only handles mutations that must write to disk:
+ *   publish / unpublish / schedule / delete / bulk / checkScheduled
  */
-
-export interface AdminStats {
-  published:       number;
-  drafts:          number;
-  scheduled:       number;
-  total:           number;
-  categories:      Record<string, number>;
-  recentPublished: AdminArticle[];
-  recentDrafts:    AdminArticle[];
-}
-
-export interface AdminArticle {
-  id:               string;
-  title:            string;
-  slug:             string;
-  category?:        string | null;
-  status:           string;
-  published_at?:    string | null;
-  scheduled_at?:    string | null;
-  created_at?:      string | null;
-  updated_at?:      string | null;
-  read_time?:       number;
-  reading_time?:    number;
-  word_count?:      number;
-  featured_image?:  string | null;
-  image_url?:       string;
-  meta_description?: string;
-  description?:     string;
-  filePath:         string;
-  canonicalPath:    string;
-  tags?:            string[];
-  keywords?:        string[];
-  author?:          string;
-  views?:           number;
-}
-
-export interface PageResult<T> {
-  data:  T[];
-  total: number;
-  page:  number;
-  pages: number;
-  limit: number;
-}
 
 const MAX_RETRIES = 2;
 const RETRY_DELAY = 600; // ms base — doubles each retry
@@ -59,73 +22,68 @@ async function apiFetch<T>(url: string, opts?: RequestInit, attempt = 0): Promis
       ...opts,
       headers: { "Content-Type": "application/json", ...opts?.headers },
     });
-    const json = await res.json();
-    if (!res.ok) throw new Error(json?.error ?? `HTTP ${res.status}`);
+    const text = await res.text();
+    // Guard: if the middleware returned HTML (SPA fallback), give a clear error
+    if (text.trimStart().startsWith("<")) {
+      throw new Error("API returned HTML instead of JSON — the dev server middleware may not be running.");
+    }
+    let json: unknown;
+    try { json = JSON.parse(text); } catch { throw new Error(`Invalid JSON from ${url}`); }
+    if (!res.ok) throw new Error((json as Record<string,string>)?.error ?? `HTTP ${res.status}`);
     return json as T;
   } catch (err) {
     if (attempt < MAX_RETRIES) {
       await sleep(RETRY_DELAY * Math.pow(2, attempt));
       return apiFetch<T>(url, opts, attempt + 1);
     }
-    // Surface a clean message — never "failed to fetch" raw
     const raw = err instanceof Error ? err.message : String(err);
     const clean = raw.toLowerCase().includes("failed to fetch")
-      ? "Could not reach the local API — make sure the dev server is running."
+      ? "Could not reach the dev server. Make sure `pnpm dev` is running."
       : raw;
     throw new Error(clean);
   }
 }
 
 export const adminApi = {
-  stats: () =>
-    apiFetch<AdminStats>("/api/admin/stats"),
-
-  articles: (params: { page?: number; limit?: number; q?: string; category?: string }) => {
-    const sp = new URLSearchParams();
-    if (params.page)     sp.set("page",     String(params.page));
-    if (params.limit)    sp.set("limit",    String(params.limit));
-    if (params.q)        sp.set("q",        params.q);
-    if (params.category) sp.set("category", params.category);
-    return apiFetch<PageResult<AdminArticle>>("/api/admin/articles?" + sp.toString());
-  },
-
-  drafts: (params: { page?: number; limit?: number; q?: string; category?: string; status?: string }) => {
-    const sp = new URLSearchParams();
-    if (params.page)     sp.set("page",     String(params.page));
-    if (params.limit)    sp.set("limit",    String(params.limit));
-    if (params.q)        sp.set("q",        params.q);
-    if (params.category) sp.set("category", params.category);
-    if (params.status)   sp.set("status",   params.status);
-    return apiFetch<PageResult<AdminArticle>>("/api/admin/drafts?" + sp.toString());
-  },
-
+  /** Publish a draft: updates markdown frontmatter + moves to articles-index.json + regenerates sitemap */
   publish: (slug: string) =>
     apiFetch<{ ok: boolean; slug: string; published_at: string }>(
-      `/api/admin/articles/${slug}/publish`, { method: "POST", body: JSON.stringify({ published_at: new Date().toISOString() }) }
+      `/api/admin/articles/${slug}/publish`,
+      { method: "POST", body: JSON.stringify({ published_at: new Date().toISOString() }) }
     ),
 
+  /** Move a published article back to drafts */
   unpublish: (slug: string) =>
     apiFetch<{ ok: boolean; slug: string }>(
-      `/api/admin/articles/${slug}/unpublish`, { method: "POST" }
+      `/api/admin/articles/${slug}/unpublish`,
+      { method: "POST" }
     ),
 
+  /** Schedule a draft to auto-publish at a future time */
   schedule: (slug: string, scheduled_at: string) =>
     apiFetch<{ ok: boolean; slug: string; scheduled_at: string }>(
-      `/api/admin/articles/${slug}/schedule`, { method: "POST", body: JSON.stringify({ scheduled_at }) }
+      `/api/admin/articles/${slug}/schedule`,
+      { method: "POST", body: JSON.stringify({ scheduled_at }) }
     ),
 
+  /** Remove an article from the indexes (markdown file is never deleted) */
   delete: (slug: string) =>
     apiFetch<{ ok: boolean; slug: string }>(
-      `/api/admin/articles/${slug}`, { method: "DELETE" }
+      `/api/admin/articles/${slug}`,
+      { method: "DELETE" }
     ),
 
+  /** Bulk action across multiple slugs */
   bulk: (action: "publish" | "draft" | "delete", slugs: string[]) =>
     apiFetch<{ ok: boolean; results: Array<{ slug: string; ok: boolean; error?: string }> }>(
-      "/api/admin/bulk", { method: "POST", body: JSON.stringify({ action, slugs }) }
+      "/api/admin/bulk",
+      { method: "POST", body: JSON.stringify({ action, slugs }) }
     ),
 
+  /** Check for scheduled articles that are now due and publish them */
   checkScheduled: () =>
     apiFetch<{ ok: boolean; published: string[] }>(
-      "/api/admin/check-scheduled", { method: "POST" }
+      "/api/admin/check-scheduled",
+      { method: "POST" }
     ),
 };

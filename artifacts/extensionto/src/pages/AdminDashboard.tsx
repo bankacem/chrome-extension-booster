@@ -12,9 +12,9 @@ import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell,
 } from "recharts";
 import AdminLayout from "@/components/admin/AdminLayout";
-import { adminApi, type AdminStats, type AdminArticle } from "@/lib/adminApi";
+import { getStats, type Stats, type Article } from "@/lib/content-store";
+import { adminApi } from "@/lib/adminApi";
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
 function fmtDate(raw: string | null | undefined): string {
   if (!raw) return "—";
   try { return new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric" }).format(new Date(raw)); }
@@ -22,16 +22,16 @@ function fmtDate(raw: string | null | undefined): string {
 }
 
 const CAT_COLORS: Record<string, string> = {
-  "Chrome Extensions":         "#6366f1",
-  "Privacy & Security":        "#ec4899",
-  "Ad Blocking":               "#f59e0b",
+  "Chrome Extensions":           "#6366f1",
+  "Privacy & Security":          "#ec4899",
+  "Ad Blocking":                 "#f59e0b",
   "Screenshot & Screen Capture": "#10b981",
-  "Performance & Memory":      "#3b82f6",
-  "Mobile & Android":          "#8b5cf6",
-  "Productivity & Workflow":   "#06b6d4",
-  "Downloads & Media":         "#f43f5e",
-  "Dark Mode & Themes":        "#64748b",
-  "Developer Tools":           "#84cc16",
+  "Performance & Memory":        "#3b82f6",
+  "Mobile & Android":            "#8b5cf6",
+  "Productivity & Workflow":     "#06b6d4",
+  "Downloads & Media":           "#f43f5e",
+  "Dark Mode & Themes":          "#64748b",
+  "Developer Tools":             "#84cc16",
 };
 
 function StatCard({ label, value, icon, color, href, loading }: {
@@ -57,7 +57,7 @@ function StatCard({ label, value, icon, color, href, loading }: {
   return href ? <Link to={href}>{inner}</Link> : inner;
 }
 
-function RecentRow({ a, type }: { a: AdminArticle; type: "published" | "draft" }) {
+function RecentRow({ a, type }: { a: Article; type: "published" | "draft" }) {
   return (
     <li className="flex items-center justify-between gap-4 px-4 py-3 transition-colors hover:bg-accent/30">
       <div className="min-w-0 flex-1">
@@ -89,7 +89,7 @@ function RecentRow({ a, type }: { a: AdminArticle; type: "published" | "draft" }
 }
 
 export default function AdminDashboard() {
-  const [stats, setStats]     = useState<AdminStats | null>(null);
+  const [stats, setStats]     = useState<Stats | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError]     = useState<string | null>(null);
   const [refreshing, setRefreshing] = useState(false);
@@ -98,9 +98,10 @@ export default function AdminDashboard() {
     if (isRefresh) setRefreshing(true); else setLoading(true);
     setError(null);
     try {
-      const s = await adminApi.stats();
+      // Read directly from static JSON files — never goes through API middleware
+      const s = await getStats(isRefresh);
       setStats(s);
-      // Silently auto-publish any scheduled articles that are due
+      // Silently check for scheduled articles that are due (write-only, non-blocking)
       adminApi.checkScheduled().catch(() => {});
     } catch (e: unknown) {
       setError(String(e));
@@ -138,9 +139,9 @@ export default function AdminDashboard() {
 
         {/* Error */}
         {error && (
-          <div className="flex items-center gap-3 rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-3 rounded-lg border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
             <AlertCircle className="h-4 w-4 shrink-0" />
-            <span>{error} — run the dev server with <code className="rounded bg-amber-500/20 px-1">pnpm dev</code></span>
+            <span>{error}</span>
           </div>
         )}
 
@@ -164,15 +165,14 @@ export default function AdminDashboard() {
 
         {/* Stat cards */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <StatCard label="Total Articles"  value={stats?.total ?? 0}     icon={<FileText className="h-5 w-5 text-primary" />}           color="bg-primary/10"       href="/admin/articles" loading={loading} />
-          <StatCard label="Live Published"  value={stats?.published ?? 0} icon={<CheckCircle className="h-5 w-5 text-green-500" />}        color="bg-green-500/10"     href="/admin/articles" loading={loading} />
-          <StatCard label="Drafts"          value={stats?.drafts ?? 0}    icon={<PenLine className="h-5 w-5 text-amber-500" />}            color="bg-amber-500/10"     href="/admin/drafts"   loading={loading} />
-          <StatCard label="Scheduled"       value={stats?.scheduled ?? 0} icon={<Calendar className="h-5 w-5 text-blue-500" />}            color="bg-blue-500/10"      href="/admin/drafts"   loading={loading} />
+          <StatCard label="Total Articles"  value={stats?.total ?? 0}     icon={<FileText className="h-5 w-5 text-primary" />}       color="bg-primary/10"   href="/admin/articles" loading={loading} />
+          <StatCard label="Live Published"  value={stats?.published ?? 0} icon={<CheckCircle className="h-5 w-5 text-green-500" />}   color="bg-green-500/10" href="/admin/articles" loading={loading} />
+          <StatCard label="Drafts"          value={stats?.drafts ?? 0}    icon={<PenLine className="h-5 w-5 text-amber-500" />}       color="bg-amber-500/10" href="/admin/drafts"   loading={loading} />
+          <StatCard label="Scheduled"       value={stats?.scheduled ?? 0} icon={<Calendar className="h-5 w-5 text-blue-500" />}       color="bg-blue-500/10"  href="/admin/drafts"   loading={loading} />
         </div>
 
         {/* Two-column: chart + quick actions */}
         <div className="grid gap-4 lg:grid-cols-3">
-          {/* Category distribution chart */}
           <div className="rounded-xl border border-border bg-card p-5 lg:col-span-2">
             <div className="mb-4 flex items-center justify-between">
               <h2 className="font-semibold">Category Distribution</h2>
@@ -194,24 +194,21 @@ export default function AdminDashboard() {
                     labelStyle={{ color: "hsl(var(--foreground))" }}
                   />
                   <Bar dataKey="count" radius={[4, 4, 0, 0]}>
-                    {catChartData.map((entry, i) => (
-                      <Cell key={i} fill={entry.color} />
-                    ))}
+                    {catChartData.map((entry, i) => <Cell key={i} fill={entry.color} />)}
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>
             )}
           </div>
 
-          {/* Quick actions */}
           <div className="rounded-xl border border-border bg-card p-5">
             <h2 className="mb-4 font-semibold">Quick Actions</h2>
             <div className="space-y-2">
               {[
-                { label: "CMS Creator",    desc: "Write & publish new article",  icon: <Sparkles className="h-4 w-4 text-primary" />,           href: "/admin/cms"      },
-                { label: "Drafts Manager", desc: "Review the 52 imported drafts", icon: <BookOpen className="h-4 w-4 text-amber-500" />,          href: "/admin/drafts"   },
-                { label: "All Articles",   desc: "Paginated article management",  icon: <FileText className="h-4 w-4 text-blue-500" />,            href: "/admin/articles" },
-                { label: "SEO Dashboard",  desc: "Audit article SEO health",      icon: <BarChart3 className="h-4 w-4 text-purple-500" />,         href: "/admin/seo"      },
+                { label: "CMS Creator",    desc: "Write & publish new article",  icon: <Sparkles className="h-4 w-4 text-primary" />,        href: "/admin/cms"      },
+                { label: "Drafts Manager", desc: "Review the 52 imported drafts", icon: <BookOpen className="h-4 w-4 text-amber-500" />,       href: "/admin/drafts"   },
+                { label: "All Articles",   desc: "Paginated article management",  icon: <FileText className="h-4 w-4 text-blue-500" />,         href: "/admin/articles" },
+                { label: "SEO Dashboard",  desc: "Audit article SEO health",      icon: <BarChart3 className="h-4 w-4 text-purple-500" />,      href: "/admin/seo"      },
               ].map((item) => (
                 <Link key={item.href} to={item.href}
                   className="group flex items-center gap-3 rounded-lg border border-border p-3 text-sm transition-colors hover:bg-accent/40">
@@ -227,9 +224,8 @@ export default function AdminDashboard() {
           </div>
         </div>
 
-        {/* Recent rows — two columns */}
+        {/* Recent rows */}
         <div className="grid gap-4 lg:grid-cols-2">
-          {/* Recent drafts */}
           <div className="rounded-xl border border-border bg-card overflow-hidden">
             <div className="flex items-center justify-between border-b border-border px-4 py-3">
               <h2 className="text-sm font-semibold">Recent Drafts</h2>
@@ -248,7 +244,6 @@ export default function AdminDashboard() {
             )}
           </div>
 
-          {/* Recent published */}
           <div className="rounded-xl border border-border bg-card overflow-hidden">
             <div className="flex items-center justify-between border-b border-border px-4 py-3">
               <h2 className="text-sm font-semibold">Recently Published</h2>
