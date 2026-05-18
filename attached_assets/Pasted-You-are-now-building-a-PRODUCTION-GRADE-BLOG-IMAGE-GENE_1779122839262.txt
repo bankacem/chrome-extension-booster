@@ -1,0 +1,202 @@
+You are now building a PRODUCTION-GRADE BLOG IMAGE GENERATION ENGINE.
+
+This system is responsible for generating UNIQUE SEO-OPTIMIZED FEATURE IMAGES for each blog article.
+
+════════════════════════════════════
+🔥 CORE OBJECTIVE
+════════════════════════════════════
+
+For every article, generate a completely UNIQUE image that:
+
+1. NEVER repeats visually with any other article
+2. Contains the article title INSIDE the image design
+3. Is optimized for Google Discover CTR
+4. Is exported as WebP (1200x630 + 1:1 variant)
+5. Matches article topic + intent precisely
+6. Looks like a premium SaaS editorial thumbnail
+
+════════════════════════════════════
+💀 CRITICAL FIX (YOUR CURRENT BUG)
+════════════════════════════════════
+
+The system is currently failing because:
+→ prompts are too similar
+→ layout is not randomized enough
+→ no strong entropy system exists
+
+YOU MUST FIX THIS BY INTRODUCING:
+
+════════════════════════════════════
+🧠 1. VISUAL ENTROPY ENGINE (MANDATORY)
+════════════════════════════════════
+
+Create a deterministic but UNIQUE seed:
+
+seed = SHA256(
+  title +
+  slug +
+  category +
+  tags +
+  excerpt +
+  publishDate
+)
+
+From this seed derive:
+
+- layout type
+- typography style
+- UI structure
+- background environment
+- lighting style
+- color palette
+- camera angle
+- composition density
+
+NO TWO ARTICLES CAN SHARE SAME COMBINATION.
+
+════════════════════════════════════
+🎨 2. LAYOUT SYSTEM (MUST RANDOMIZE)
+════════════════════════════════════
+
+Pick ONE per article:
+
+A. SaaS dashboard UI (browser mockup)
+B. Cinematic tech hero scene
+C. Minimal typography-first design
+D. Isometric 3D illustration
+E. Split-screen comparison layout
+F. Floating card UI stack
+G. Neon cyber futuristic interface
+H. Editorial magazine style
+
+Rule:
+→ same layout cannot repeat for 3 consecutive articles
+
+════════════════════════════════════
+🧩 3. TITLE INTEGRATION RULE (IMPORTANT)
+════════════════════════════════════
+
+The article title MUST be:
+
+- embedded inside UI card OR header panel
+- NOT plain text overlay
+- styled like SaaS product UI
+- readable on mobile
+- visually hierarchical (not flat text)
+
+Examples:
+✔ inside browser tab
+✔ inside dashboard header
+✔ inside glass morphism card
+✔ inside sidebar title panel
+
+NOT:
+✖ floating random text on image
+
+════════════════════════════════════
+🎯 4. CATEGORY VISUAL DNA
+════════════════════════════════════
+
+Each category must have strict visual identity:
+
+Security:
+- dark navy / cyber blue
+- shields, locks, firewall UI
+- glowing protection layers
+
+AI:
+- purple / neon magenta
+- neural networks, circuits, abstract intelligence
+
+Productivity:
+- clean white / soft blue
+- task boards, calendars, clean dashboards
+
+Extensions:
+- Chrome browser UI mockups
+- extension cards, toggles, toolbar UI
+
+Performance:
+- speed graphs, analytics dashboards
+
+Tutorials:
+- step-by-step UI panels
+- numbered instruction cards
+
+Downloads:
+- file systems, progress bars, download UI
+
+════════════════════════════════════
+🧱 5. IMAGE STRUCTURE (STRICT)
+════════════════════════════════════
+
+Each image must include:
+
+1. HERO FOCAL POINT (UI or object)
+2. TITLE AREA (integrated)
+3. SUPPORT ELEMENTS (icons, graphs, cards)
+4. BACKGROUND DEPTH LAYERS
+
+Must avoid:
+- empty backgrounds
+- random stock images
+- repeated layouts
+- generic tech wallpaper
+
+════════════════════════════════════
+🚀 6. SEO / CTR OPTIMIZATION LAYER
+════════════════════════════════════
+
+Each image must maximize:
+
+- Google Discover CTR
+- Emotional curiosity
+- Scroll stopping power
+
+Use:
+- depth shadows
+- glow effects
+- cinematic lighting
+- contrast hierarchy
+- “premium SaaS product feel”
+
+════════════════════════════════════
+🧪 7. OUTPUT FORMAT (STRICT JSON)
+════════════════════════════════════
+
+Return EXACTLY:
+
+{
+  "title": "",
+  "slug": "",
+  "seed": "",
+  "layout": "",
+  "category": "",
+  "image_prompt": "",
+  "negative_prompt": "",
+  "webp_1200x630": "",
+  "webp_1024x1024": "",
+  "visual_signature": ""
+}
+
+════════════════════════════════════
+⚠️ 8. HARD RULE (ANTI DUPLICATION)
+════════════════════════════════════
+
+Before finalizing prompt:
+
+COMPARE against previous outputs.
+
+If similarity > 0.2:
+→ force change:
+   - layout
+   - palette
+   - composition
+   - camera angle
+   - UI structure
+
+NEVER ALLOW SIMILAR OUTPUTS.
+
+════════════════════════════════════
+END SYSTEM
+════════════════════════════════════

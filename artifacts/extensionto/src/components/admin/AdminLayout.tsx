@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   LayoutDashboard, FileText, PenLine, Sparkles, BarChart3,
   Globe, LogOut, ShieldCheck, Menu, X, ChevronRight,
-  RefreshCw, Bell, ExternalLink, BookOpen, Cpu,
+  RefreshCw, Bell, ExternalLink, BookOpen, Cpu, ImagePlus,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAdminSession } from "@/hooks/useAdminSession";
@@ -58,6 +58,11 @@ export default function AdminLayout({ children, title, subtitle, actions, draftC
       label: "CMS Creator",
       href: "/admin/cms",
       icon: <Sparkles className="h-4 w-4" />,
+    },
+    {
+      label: "Image Engine",
+      href: "/admin/images",
+      icon: <ImagePlus className="h-4 w-4" />,
     },
     {
       label: "SEO Dashboard",

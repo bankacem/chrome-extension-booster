@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {
   FileText, PenLine, Clock, CheckCircle, Calendar,
   TrendingUp, Globe, BarChart3, Sparkles,
-  RefreshCw, ArrowRight, AlertCircle, BookOpen,
+  RefreshCw, ArrowRight, AlertCircle, BookOpen, ImagePlus,
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
@@ -205,10 +205,11 @@ export default function AdminDashboard() {
             <h2 className="mb-4 font-semibold">Quick Actions</h2>
             <div className="space-y-2">
               {[
-                { label: "CMS Creator",    desc: "Write & publish new article",  icon: <Sparkles className="h-4 w-4 text-primary" />,        href: "/admin/cms"      },
-                { label: "Drafts Manager", desc: "Review the 52 imported drafts", icon: <BookOpen className="h-4 w-4 text-amber-500" />,       href: "/admin/drafts"   },
-                { label: "All Articles",   desc: "Paginated article management",  icon: <FileText className="h-4 w-4 text-blue-500" />,         href: "/admin/articles" },
-                { label: "SEO Dashboard",  desc: "Audit article SEO health",      icon: <BarChart3 className="h-4 w-4 text-purple-500" />,      href: "/admin/seo"      },
+                { label: "CMS Creator",    desc: "Write & publish new article",     icon: <Sparkles  className="h-4 w-4 text-primary" />,       href: "/admin/cms"      },
+                { label: "Drafts Manager", desc: "Review the 52 imported drafts",  icon: <BookOpen  className="h-4 w-4 text-amber-500" />,      href: "/admin/drafts"   },
+                { label: "All Articles",   desc: "Paginated article management",   icon: <FileText  className="h-4 w-4 text-blue-500" />,        href: "/admin/articles" },
+                { label: "Image Engine",   desc: "Generate unique featured images", icon: <ImagePlus className="h-4 w-4 text-green-500" />,      href: "/admin/images"   },
+                { label: "SEO Dashboard",  desc: "Audit article SEO health",        icon: <BarChart3 className="h-4 w-4 text-purple-500" />,     href: "/admin/seo"      },
               ].map((item) => (
                 <Link key={item.href} to={item.href}
                   className="group flex items-center gap-3 rounded-lg border border-border p-3 text-sm transition-colors hover:bg-accent/40">
