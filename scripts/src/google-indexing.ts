@@ -17,6 +17,7 @@ const DELAY_MS = 1000; // 1 second delay between requests
 interface Article {
   slug: string;
   published_at: string;
+  updated_at: string;
 }
 
 /**
@@ -70,7 +71,7 @@ export async function notifyIndexing(url: string, type: 'URL_UPDATED' | 'URL_DEL
 }
 
 async function massIndexing() {
-  console.log('--- Starting Mass Indexing Event (Oldest First) ---');
+  console.log('--- Starting Mass Indexing Event (Recently Updated First) ---');
 
   const staticPages = [
     '/',
@@ -98,11 +99,11 @@ async function massIndexing() {
   const articles: Article[] = JSON.parse(fs.readFileSync(INDEX_FILE, 'utf-8'));
   console.log(`Found ${articles.length} articles in index.`);
 
-  // Sort by published_at ASC (oldest first)
+  // Sort by updated_at DESC (recently updated first)
   articles.sort((a, b) => {
-    const dateA = new Date(a.published_at).getTime();
-    const dateB = new Date(b.published_at).getTime();
-    return dateA - dateB;
+    const dateA = new Date(a.updated_at || a.published_at).getTime();
+    const dateB = new Date(b.updated_at || b.published_at).getTime();
+    return dateB - dateA;
   });
 
   const articleUrls = articles.map(a => `${BASE_URL}/blog/${a.slug}`);

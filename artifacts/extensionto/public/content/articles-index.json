@@ -6,8 +6,8 @@
     "meta_description": "I tested 7 Chrome website blockers with scheduling features. Real pricing, features, and genuine weaknesses for each.",
     "description": "I tested 7 Chrome website blockers with scheduling features. Real pricing, features, and genuine weaknesses for each.",
     "excerpt": "I tested 7 Chrome website blockers with scheduling features. Real pricing, features, and genuine weaknesses for each.",
-    "published_at": "2026-05-15T21:45:29.920Z",
-    "updated_at": "2026-05-15T21:45:29.921Z",
+    "published_at": "2026-05-18T20:28:31.594Z",
+    "updated_at": "2026-05-18T20:28:31.594Z",
     "category": "Productivity & Workflow",
     "original_category": "Uncategorized",
     "author": "Daniel Carter",
@@ -21,6 +21,28 @@
     "canonicalPath": "/blog/best-website-blocker-schedule-chrome-2026",
     "filePath": "/content/articles/b/e/s/best-website-blocker-schedule-chrome-2026.md",
     "word_count": 3283
+  },
+  {
+    "id": "a4ef0149-a902-410d-af9a-3e08d45bc327",
+    "title": "25 Useful Chrome Extensions You Need in 2026 (Tested)",
+    "slug": "useful-chrome-extensions",
+    "meta_description": "Discover the 25 most useful Chrome extensions in 2026, handpicked and tested. Boost productivity, privacy, and speed. Install today and transform your browsing.",
+    "description": "Discover the 25 most useful Chrome extensions in 2026, handpicked and tested. Boost productivity, privacy, and speed. Install today and transform your browsing.",
+    "excerpt": "Discover the 25 most useful Chrome extensions in 2026, handpicked and tested. Boost productivity, privacy, and speed. Install today and transform your browsing.",
+    "published_at": "2026-05-16T09:00:00.000+00:00",
+    "updated_at": "2026-05-16T09:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Daniel Carter",
+    "image_url": "/images/blog/useful-chrome-extensions.webp",
+    "featured_image": "/images/blog/useful-chrome-extensions.webp",
+    "reading_time": 9,
+    "read_time": 9,
+    "views": 0,
+    "tags": [],
+    "keywords": [],
+    "canonicalPath": "/blog/useful-chrome-extensions",
+    "filePath": "/content/articles/u/s/e/useful-chrome-extensions.md",
+    "word_count": 1692
   },
   {
     "id": "3143c31b-827c-4386-9fce-6d7a04e2044d",
@@ -11114,35 +11136,5 @@
     "quality_flags": [
       "thin"
     ]
-  },
-  {
-    "id": "a4ef0149-a902-410d-af9a-3e08d45bc327",
-    "title": "25 Useful Chrome Extensions You Need in 2026 (Tested)",
-    "slug": "useful-chrome-extensions",
-    "canonicalPath": "/blog/useful-chrome-extensions",
-    "filePath": "content/articles/u/s/e/useful-chrome-extensions.md",
-    "excerpt": "Discover the 25 most useful Chrome extensions in 2026, handpicked and tested. Boost productivity, privacy, and speed. Install today and transform your browsing.",
-    "description": "Discover the 25 most useful Chrome extensions in 2026, handpicked and tested. Boost productivity, privacy, and speed. Install today and transform your browsing.",
-    "category": "Chrome Extensions",
-    "tags": [
-      "chrome extensions",
-      "productivity",
-      "privacy",
-      "writing tools",
-      "developer tools"
-    ],
-    "keywords": [
-      "useful chrome extensions",
-      "best chrome extensions 2026",
-      "chrome extensions for productivity"
-    ],
-    "author": "Daniel Carter",
-    "image": "/images/blog/useful-chrome-extensions.webp",
-    "status": "published",
-    "published_at": "2026-05-16T09:00:00.000+00:00",
-    "created_at": "2026-05-16T09:00:00.000000+00:00",
-    "updated_at": "2026-05-16T09:00:00.000Z",
-    "read_time": 9,
-    "views": 0
   }
 ]
