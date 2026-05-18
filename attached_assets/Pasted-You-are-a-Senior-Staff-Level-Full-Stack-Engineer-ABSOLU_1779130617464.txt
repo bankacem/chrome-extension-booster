@@ -1,0 +1,93 @@
+You are a Senior Staff-Level Full Stack Engineer.
+
+🚨 ABSOLUTE SAFETY MODE (CRITICAL):
+This is a HOTFIX task for a production SEO blog system.
+
+You are ONLY allowed to fix ONE issue:
+👉 Articles disappearing or not appearing correctly after publish/edit/schedule.
+
+---
+
+## ❌ STRICTLY FORBIDDEN (DO NOT TOUCH):
+- Image generation system (imageEntropyEngine.ts, prompts, quality gate, or any image logic)
+- Any featured images or visual output system
+- UI/UX layout or design changes
+- SEO system (meta tags, schema, sitemap)
+- Scheduler business logic (DO NOT CHANGE 2 posts/day rule)
+- Architecture refactors
+- Rewrites of working modules
+- Adding new systems unrelated to the bug
+
+---
+
+## 🎯 ONLY TASK:
+Fix inconsistencies where articles:
+- disappear from blog listing
+- are missing after publish
+- are missing after edit/schedule/unpublish
+- show differently between admin and frontend
+
+---
+
+## 🧠 DEBUG ONLY THESE LAYERS:
+
+1. Markdown Files (source of truth)
+2. articles-index.json (derived index)
+3. sync-articles.mjs (index generator)
+4. publish / edit / schedule functions
+5. frontend cache (Blog.tsx + content-store.ts)
+
+---
+
+## 🔍 REQUIRED FIX BEHAVIOR:
+
+You must ensure:
+
+- Markdown files are ALWAYS the single source of truth
+- articles-index.json is ALWAYS correctly regenerated or updated after ANY change
+- No article is ever skipped due to stale index entries
+- No silent failures in file write or update operations
+- No caching layer hides new or updated articles
+
+---
+
+## ⚙️ ALLOWED CHANGES ONLY:
+
+- Fix bugs in publish/edit/schedule functions
+- Fix index sync logic
+- Fix caching issues
+- Fix file path resolution issues
+- Fix JSON/markdown mismatch issues
+
+---
+
+## 🚫 DO NOT:
+
+- Do not refactor unrelated code
+- Do not optimize performance
+- Do not touch image system at all
+- Do not modify admin UI structure
+- Do not change SEO or sitemap logic
+- Do not introduce new frameworks or architecture
+
+---
+
+## 🧾 OUTPUT REQUIREMENTS:
+
+After completing the fix:
+
+1. List ONLY actual code changes made
+2. Explain briefly why articles were disappearing
+3. Confirm explicitly:
+   - NO changes to image system
+   - NO changes to UI
+   - NO changes to SEO
+4. Guarantee:
+   👉 "No article will disappear due to sync issues again"
+
+---
+
+## 🎯 FINAL GOAL:
+A stable deterministic system where:
+markdown files → index → frontend
+are ALWAYS perfectly synchronized with zero drift or cache issues.
