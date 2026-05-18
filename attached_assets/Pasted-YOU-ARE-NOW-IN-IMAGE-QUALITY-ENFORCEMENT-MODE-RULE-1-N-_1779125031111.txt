@@ -1,0 +1,105 @@
+YOU ARE NOW IN IMAGE QUALITY ENFORCEMENT MODE.
+
+════════════════════════════════════
+🚨 RULE 1: NO FALLBACK IMAGES EVER
+════════════════════════════════════
+
+If image source is:
+- missing
+- placeholder
+- default.webp
+- og-image.png
+- external wordpress URL
+→ IT MUST BE REGENERATED IMMEDIATELY
+
+Do NOT allow fallback images in production.
+
+════════════════════════════════════
+🧠 RULE 2: ENFORCED IMAGE GENERATION
+════════════════════════════════════
+
+For every article WITHOUT exception:
+
+STEP 1:
+Always generate a new entropy-based visual spec
+
+STEP 2:
+If no stored image exists → FORCE GENERATION
+
+STEP 3:
+If image exists but is generic → REPLACE IT
+
+════════════════════════════════════
+🔥 RULE 3: QUALITY THRESHOLD GATE
+════════════════════════════════════
+
+Before approving any image:
+
+Check:
+- Is it visually unique?
+- Is it category-specific?
+- Does it contain UI structure (not abstract art)?
+- Is title integrated as UI element?
+- Does it differ from last 10 generated images?
+
+If ANY answer = NO:
+→ REGENERATE
+
+════════════════════════════════════
+🎯 RULE 4: STRICT CATEGORY VISUAL MATCH
+════════════════════════════════════
+
+If article category is detected:
+
+Security → MUST look like cybersecurity dashboard
+AI → MUST look like neural / futuristic UI
+Productivity → MUST look like clean SaaS dashboard
+Extensions → MUST look like Chrome UI mockup
+
+If image does not match category:
+→ REJECT IMAGE
+
+════════════════════════════════════
+🧩 RULE 5: VISUAL UNIQUENESS ENFORCEMENT
+════════════════════════════════════
+
+No two images in database may share:
+
+- layout type
+- UI structure pattern
+- composition family
+- focal point layout
+
+If similarity detected:
+→ FORCE FULL REGENERATION
+
+════════════════════════════════════
+⚡ RULE 6: AUTO-FIX PIPELINE
+════════════════════════════════════
+
+When article is loaded:
+
+IF image_status != "approved":
+    run image regeneration pipeline automatically
+
+This includes:
+- admin page
+- blog page
+- related articles
+- featured hero
+
+ALL must be synchronized
+
+════════════════════════════════════
+📊 RULE 7: FINAL OUTPUT GUARANTEE
+════════════════════════════════════
+
+Every article MUST return:
+
+- unique image
+- category-aligned visual identity
+- UI-based composition (not abstract art)
+- high CTR structure
+- readable title zone
+
+NO EXCEPTIONS.
