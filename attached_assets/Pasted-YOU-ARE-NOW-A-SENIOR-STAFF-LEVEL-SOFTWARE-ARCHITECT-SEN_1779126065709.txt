@@ -1,0 +1,183 @@
+YOU ARE NOW A SENIOR STAFF-LEVEL SOFTWARE ARCHITECT, SENIOR FRONTEND ENGINEER, DEVOPS ENGINEER, AND TECHNICAL AUDITOR.
+
+Your task is to perform a FULL SYSTEM-WIDE AUDIT of this entire project.
+
+You MUST NOT guess. You MUST ONLY analyze real files, real code, real structure.
+
+════════════════════════════════════
+🧠 MODE: DEEP CODEBASE ANALYSIS
+════════════════════════════════════
+
+You have full access to the entire repository.
+
+Scan EVERYTHING:
+
+- ALL source code files
+- ALL components
+- ALL utilities
+- ALL API routes
+- ALL CMS/admin logic
+- ALL image generation logic
+- ALL SEO logic
+- ALL routing system
+- ALL data files (JSON, Markdown, DB, etc.)
+- ALL build tools / configs
+
+No file is optional.
+
+════════════════════════════════════
+🔍 LEVEL 1 — STRUCTURE ANALYSIS
+════════════════════════════════════
+
+Analyze and map:
+
+1. Full architecture tree
+2. Data flow (end-to-end)
+3. Rendering pipeline (frontend)
+4. Content pipeline (CMS → blog → UI)
+5. Image generation pipeline
+6. Admin system architecture
+7. External dependencies usage
+
+Output must include:
+
+- System diagram (text-based)
+- Module relationships
+- Critical data flows
+
+════════════════════════════════════
+⚙️ LEVEL 2 — CODE QUALITY AUDIT
+════════════════════════════════════
+
+Analyze:
+
+- Component structure quality
+- Reusability issues
+- Code duplication
+- Performance bottlenecks
+- Memory leaks or unnecessary renders
+- Async handling issues
+- Broken or unsafe patterns
+- TypeScript correctness
+- API safety
+
+Rate each:
+
+- Architecture: /10
+- Maintainability: /10
+- Performance: /10
+- Scalability: /10
+- Code cleanliness: /10
+
+════════════════════════════════════
+🖼️ LEVEL 3 — IMAGE SYSTEM AUDIT
+════════════════════════════════════
+
+Deep audit of:
+
+- image generation system
+- fallback handling
+- duplication prevention logic
+- prompt quality system
+- category visual mapping
+- entropy/randomness engine
+- admin image tools
+
+Check for:
+
+- inconsistent images
+- fallback leakage
+- duplicate visuals
+- weak prompts
+- missing regeneration paths
+
+════════════════════════════════════
+🔎 LEVEL 4 — SEO AUDIT (CRITICAL)
+════════════════════════════════════
+
+Analyze:
+
+- metadata generation
+- headings structure (H1/H2/H3)
+- internal linking system
+- URL structure
+- sitemap generation
+- schema markup (if exists)
+- duplicate content risks
+- content hierarchy quality
+
+Give:
+
+- SEO score /100
+- Critical SEO issues list
+- Missing SEO features
+
+════════════════════════════════════
+⚡ LEVEL 5 — PERFORMANCE AUDIT
+════════════════════════════════════
+
+Check:
+
+- bundle size issues
+- lazy loading usage
+- image optimization
+- rendering bottlenecks
+- unnecessary re-renders
+- large dependencies
+- hydration issues (if SSR)
+
+════════════════════════════════════
+🚨 LEVEL 6 — PRODUCTION READINESS SCORE
+════════════════════════════════════
+
+Give FINAL SCORE:
+
+- Engineering quality /100
+- Production readiness /100
+- Scalability readiness /100
+
+AND classify:
+
+- ❌ Not ready
+- ⚠️ Needs improvement
+- ✅ Production ready
+- 🚀 Enterprise grade
+
+════════════════════════════════════
+🧠 LEVEL 7 — CRITICAL ISSUES ONLY
+════════════════════════════════════
+
+List ONLY:
+
+- blocking bugs
+- system risks
+- architecture failures
+- data corruption risks
+- image pipeline failures
+- SEO fatal issues
+
+DO NOT include minor suggestions here.
+
+════════════════════════════════════
+📦 FINAL OUTPUT FORMAT
+════════════════════════════════════
+
+1. SYSTEM OVERVIEW
+2. ARCHITECTURE MAP
+3. CODE QUALITY REPORT
+4. IMAGE SYSTEM REPORT
+5. SEO REPORT
+6. PERFORMANCE REPORT
+7. FINAL SCORECARD
+8. CRITICAL ISSUES (ONLY REAL BLOCKERS)
+
+════════════════════════════════════
+IMPORTANT RULES:
+════════════════════════════════════
+
+- NO hallucinations
+- NO guessing missing files
+- NO vague advice
+- ONLY evidence-based analysis from code
+- Be brutally honest
+- Treat this like a production audit for a $1M SaaS product
