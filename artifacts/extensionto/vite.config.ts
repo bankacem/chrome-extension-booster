@@ -8,6 +8,27 @@ import type { IncomingMessage, ServerResponse } from "http";
 const ARTICLES_DIR   = path.join(__dirname, "public/content/articles");
 const DRAFTS_INDEX   = path.join(__dirname, "public/content/drafts-index.json");
 const ARTICLES_INDEX = path.join(__dirname, "public/content/articles-index.json");
+const PUBLISH_LOG    = path.join(__dirname, "public/content/publish-log.json");
+
+interface PublishLogEntry {
+  slug: string;
+  title: string;
+  published_at: string;
+  triggered_by: "auto" | "manual" | "scheduled";
+  status: "success" | "failed";
+  error?: string;
+}
+
+function readPublishLog(): PublishLogEntry[] {
+  try { return JSON.parse(fs.readFileSync(PUBLISH_LOG, "utf8")) as PublishLogEntry[]; }
+  catch { return []; }
+}
+
+function appendPublishLog(entry: PublishLogEntry) {
+  const log = readPublishLog();
+  log.unshift(entry);
+  fs.writeFileSync(PUBLISH_LOG, JSON.stringify(log.slice(0, 500), null, 2), "utf8");
+}
 
 // ── Frontmatter helpers ────────────────────────────────────────────────────────
 function parseFm(content: string): Record<string, string> {
@@ -327,8 +348,69 @@ function adminApiPlugin(): Plugin {
             for (const d of toPublish) {
               const fake = { statusCode: 200, end() {} } as unknown as ServerResponse;
               await doPublish(d.slug, d.scheduled_at!, fake);
+              appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: "scheduled", status: "success" });
             }
             res.end(JSON.stringify({ ok: true, published: toPublish.map((d) => d.slug) }));
+            return;
+          }
+
+          // POST /api/admin/auto-publish  — publish up to `limit` scheduled articles for today
+          if (pathname === "/api/admin/auto-publish" && method === "POST") {
+            const body = await readBody(req);
+            const dailyLimit = Math.min(10, Math.max(1, parseInt(String(body.limit ?? "2"))));
+            const triggeredBy = (body.triggered_by as string) === "manual" ? "manual" : "auto";
+
+            // Count how many already published today (UTC day)
+            const todayStr = new Date().toISOString().slice(0, 10);
+            const log = readPublishLog();
+            const todayCount = log.filter((e) => e.published_at.startsWith(todayStr) && e.status === "success").length;
+            const remaining = Math.max(0, dailyLimit - todayCount);
+
+            if (remaining === 0) {
+              res.end(JSON.stringify({ ok: true, published: [], todayCount, message: `Daily limit of ${dailyLimit} already reached for ${todayStr}` }));
+              return;
+            }
+
+            // Pick oldest-scheduled articles that are due now
+            const drafts: Art[] = readJson(DRAFTS_INDEX);
+            const now = Date.now();
+            const due = drafts
+              .filter((d) => d.status === "scheduled" && d.scheduled_at && new Date(d.scheduled_at).getTime() <= now)
+              .sort((a, b) => new Date(a.scheduled_at!).getTime() - new Date(b.scheduled_at!).getTime())
+              .slice(0, remaining);
+
+            const published: string[] = [];
+            for (const d of due) {
+              try {
+                const fake = { statusCode: 200, end() {} } as unknown as ServerResponse;
+                await doPublish(d.slug, new Date().toISOString(), fake);
+                published.push(d.slug);
+                appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: triggeredBy as "auto" | "manual", status: "success" });
+              } catch (e) {
+                appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: triggeredBy as "auto" | "manual", status: "failed", error: String(e) });
+              }
+            }
+            res.end(JSON.stringify({ ok: true, published, todayCount: todayCount + published.length, dailyLimit, remaining: remaining - published.length }));
+            return;
+          }
+
+          // GET /api/admin/publish-log
+          if (pathname === "/api/admin/publish-log" && method === "GET") {
+            const log = readPublishLog();
+            res.end(JSON.stringify(log.slice(0, 100)));
+            return;
+          }
+
+          // GET /api/admin/schedule-queue  — all scheduled drafts sorted by scheduled_at
+          if (pathname === "/api/admin/schedule-queue" && method === "GET") {
+            const drafts: Art[] = readJson(DRAFTS_INDEX);
+            const queue = drafts
+              .filter((d) => d.status === "scheduled" && d.scheduled_at)
+              .sort((a, b) => new Date(a.scheduled_at!).getTime() - new Date(b.scheduled_at!).getTime());
+            const todayStr = new Date().toISOString().slice(0, 10);
+            const log = readPublishLog();
+            const todayPublished = log.filter((e) => e.published_at.startsWith(todayStr) && e.status === "success").length;
+            res.end(JSON.stringify({ queue, todayPublished }));
             return;
           }
 

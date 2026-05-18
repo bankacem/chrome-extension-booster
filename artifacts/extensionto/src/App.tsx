@@ -26,6 +26,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import AdminDrafts from "./pages/AdminDrafts";
 import AdminArticles from "./pages/AdminArticles";
 import AdminImageGen from "./pages/AdminImageGen";
+import AdminScheduler from "./pages/AdminScheduler";
 import ProtectedAdminRoute from "./components/admin/ProtectedAdminRoute";
 
 const queryClient = new QueryClient();
@@ -87,6 +88,10 @@ const App = () => (
               <Route
                 path="/admin/images"
                 element={<ProtectedAdminRoute><NoIndex /><AdminImageGen /></ProtectedAdminRoute>}
+              />
+              <Route
+                path="/admin/scheduler"
+                element={<ProtectedAdminRoute><NoIndex /><AdminScheduler /></ProtectedAdminRoute>}
               />
 
               {/* ── /settings routes (legacy — redirect to new admin) ── */}

@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   LayoutDashboard, FileText, PenLine, Sparkles, BarChart3,
   Globe, LogOut, ShieldCheck, Menu, X, ChevronRight,
-  RefreshCw, Bell, ExternalLink, BookOpen, Cpu, ImagePlus,
+  RefreshCw, Bell, ExternalLink, BookOpen, Cpu, ImagePlus, CalendarClock,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAdminSession } from "@/hooks/useAdminSession";
@@ -73,6 +73,11 @@ export default function AdminLayout({ children, title, subtitle, actions, draftC
       label: "AI Generator",
       href: "/admin/ai",
       icon: <Cpu className="h-4 w-4" />,
+    },
+    {
+      label: "Scheduler",
+      href: "/admin/scheduler",
+      icon: <CalendarClock className="h-4 w-4" />,
     },
   ];
 

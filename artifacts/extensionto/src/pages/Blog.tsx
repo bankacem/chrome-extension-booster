@@ -34,7 +34,7 @@ const Blog = () => {
 
   const fetchArticles = async () => {
     try {
-      const response = await fetch("/content/articles-index.json");
+      const response = await fetch("/content/articles-index.json", { cache: "no-store" });
       if (!response.ok) throw new Error("Failed to fetch articles index");
 
       const data = await response.json();

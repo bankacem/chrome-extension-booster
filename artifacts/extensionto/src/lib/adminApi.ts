@@ -86,4 +86,23 @@ export const adminApi = {
       "/api/admin/check-scheduled",
       { method: "POST" }
     ),
+
+  /** Auto-publish up to `limit` scheduled articles, respecting daily quota */
+  autoPublish: (limit = 2, triggered_by: "auto" | "manual" = "auto") =>
+    apiFetch<{ ok: boolean; published: string[]; todayCount: number; dailyLimit: number; remaining: number; message?: string }>(
+      "/api/admin/auto-publish",
+      { method: "POST", body: JSON.stringify({ limit, triggered_by }) }
+    ),
+
+  /** Get the publish activity log (last 100 entries) */
+  getPublishLog: () =>
+    apiFetch<Array<{ slug: string; title: string; published_at: string; triggered_by: string; status: string; error?: string }>>(
+      "/api/admin/publish-log"
+    ),
+
+  /** Get the scheduled articles queue + today's publish count */
+  getScheduleQueue: () =>
+    apiFetch<{ queue: Array<{ id: string; slug: string; title: string; category?: string; scheduled_at: string }>; todayPublished: number }>(
+      "/api/admin/schedule-queue"
+    ),
 };
