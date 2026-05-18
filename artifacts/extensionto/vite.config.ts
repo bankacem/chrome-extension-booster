@@ -50,12 +50,28 @@ function updateFm(content: string, updates: Record<string, string | null>): stri
   if (!m) return content;
   let fm = m[1];
   for (const [key, val] of Object.entries(updates)) {
-    const re = new RegExp(`^(${key}):\\s*.*$`, "m");
+    // FIX: match key line + any indented continuation lines (handles YAML block scalars like >- and |-)
+    const re = new RegExp(`^${key}:[ \\t]*[^\\n]*(?:\\n[ \\t]+[^\\n]*)*`, "m");
     const line = val === null ? `${key}: null` : `${key}: "${val}"`;
     if (re.test(fm)) fm = fm.replace(re, line);
     else fm += `\n${line}`;
   }
   return content.replace(/^---([\s\S]*?)---/, `---${fm}---`);
+}
+
+// FIX: resolve article file path from slug (canonical) with fallback to index-stored path.
+// Prevents silent skip when draft.filePath is stale or wrong.
+function findArticleFile(slug: string, fallbackFilePath?: string | null): { absPath: string; relFilePath: string } | null {
+  const norm = slug.toLowerCase().replace(/[^a-z0-9]/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
+  const c1 = norm[0] || "_"; const c2 = norm[1] || "_"; const c3 = norm[2] || "_";
+  const relPath = `/content/articles/${c1}/${c2}/${c3}/${norm}.md`;
+  const absPath = path.join(__dirname, "public" + relPath);
+  if (fs.existsSync(absPath)) return { absPath, relFilePath: relPath };
+  if (fallbackFilePath) {
+    const abs = path.join(__dirname, "public" + fallbackFilePath);
+    if (fs.existsSync(abs)) return { absPath: abs, relFilePath: fallbackFilePath };
+  }
+  return null;
 }
 
 function readJson<T = unknown>(p: string): T {
@@ -154,30 +170,40 @@ async function doPublish(slug: string, publishedAt: string, res: ServerResponse)
   const draft = drafts.find((d) => d.slug === slug);
   if (!draft) { res.statusCode = 404; res.end(JSON.stringify({ error: "Draft not found" })); return; }
 
-  const absPath = path.join(__dirname, "public" + draft.filePath);
-  if (fs.existsSync(absPath)) {
-    let c = fs.readFileSync(absPath, "utf8");
+  // FIX: resolve via canonical slug-derived path first; fall back to stored filePath.
+  // Previously used draft.filePath directly — silently skipped if path was stale.
+  const found = findArticleFile(slug, draft.filePath);
+  if (found) {
+    let c = fs.readFileSync(found.absPath, "utf8");
     c = updateFm(c, { status: "published", published_at: publishedAt, scheduled_at: null });
-    fs.writeFileSync(absPath, c, "utf8");
+    fs.writeFileSync(found.absPath, c, "utf8");
+  } else {
+    console.warn(`[admin-api] publish: markdown file not found for slug "${slug}" (checked canonical + ${draft.filePath})`);
   }
 
+  // FIX: always UPSERT — previous code did insert-only (if !find) so re-published or
+  // already-indexed articles were silently left with stale index data.
   const articles: Art[] = readJson(ARTICLES_INDEX);
-  if (!articles.find((a) => a.slug === slug)) {
-    const entry: Art = {
-      ...draft,
-      status: "published",
-      published_at: publishedAt,
-      scheduled_at: null,
-      image_url: draft.featured_image || `/images/blog/${slug}.webp`,
-      featured_image: draft.featured_image || `/images/blog/${slug}.webp`,
-      reading_time: draft.read_time,
-      views: 0,
-    };
-    articles.unshift(entry);
-    writeJson(ARTICLES_INDEX, articles);
-  }
+  const resolvedFilePath = found?.relFilePath ?? draft.filePath;
+  const entry: Art = {
+    ...draft,
+    status: "published",
+    published_at: publishedAt,
+    scheduled_at: null,
+    filePath: resolvedFilePath,
+    canonicalPath: `/blog/${slug}`,
+    image_url: draft.featured_image || draft.image_url || `/images/blog/${slug}.webp`,
+    featured_image: draft.featured_image || draft.image_url || `/images/blog/${slug}.webp`,
+    reading_time: draft.read_time ?? draft.reading_time,
+    views: draft.views ?? 0,
+    updated_at: publishedAt,
+  };
+  // Remove any existing entry with this slug, then prepend fresh one
+  const withoutSlug = articles.filter((a) => a.slug !== slug);
+  withoutSlug.unshift(entry);
+  writeJson(ARTICLES_INDEX, withoutSlug);
+
   writeJson(DRAFTS_INDEX, drafts.filter((d) => d.slug !== slug));
-  // Regenerate sitemap so the newly published article is indexed
   regenerateSitemap();
   res.end(JSON.stringify({ ok: true, slug, published_at: publishedAt }));
 }
@@ -187,18 +213,22 @@ async function doUnpublish(slug: string, res: ServerResponse) {
   const article = articles.find((a) => a.slug === slug);
   if (!article) { res.statusCode = 404; res.end(JSON.stringify({ error: "Not found" })); return; }
 
-  const absPath = path.join(__dirname, "public" + article.filePath);
-  if (fs.existsSync(absPath)) {
-    let c = fs.readFileSync(absPath, "utf8");
+  // FIX: use findArticleFile to locate file reliably
+  const found = findArticleFile(slug, article.filePath);
+  if (found) {
+    let c = fs.readFileSync(found.absPath, "utf8");
     c = updateFm(c, { status: "draft", published_at: null });
-    fs.writeFileSync(absPath, c, "utf8");
+    fs.writeFileSync(found.absPath, c, "utf8");
+  } else {
+    console.warn(`[admin-api] unpublish: markdown file not found for slug "${slug}"`);
   }
   writeJson(ARTICLES_INDEX, articles.filter((a) => a.slug !== slug));
   const drafts: Art[] = readJson(DRAFTS_INDEX);
-  if (!drafts.find((d) => d.slug === slug)) {
-    drafts.unshift({ ...article, status: "draft", published_at: null });
-    writeJson(DRAFTS_INDEX, drafts);
-  }
+  // FIX: always upsert into drafts — remove existing entry first so data is fresh
+  const draftEntry = { ...article, status: "draft", published_at: null, filePath: found?.relFilePath ?? article.filePath };
+  const draftsWithout = drafts.filter((d) => d.slug !== slug);
+  draftsWithout.unshift(draftEntry);
+  writeJson(DRAFTS_INDEX, draftsWithout);
   res.end(JSON.stringify({ ok: true, slug }));
 }
 
@@ -207,13 +237,17 @@ async function doSchedule(slug: string, scheduledAt: string, res: ServerResponse
   const idx = drafts.findIndex((d) => d.slug === slug);
   if (idx === -1) { res.statusCode = 404; res.end(JSON.stringify({ error: "Draft not found" })); return; }
 
-  const absPath = path.join(__dirname, "public" + drafts[idx].filePath);
-  if (fs.existsSync(absPath)) {
-    let c = fs.readFileSync(absPath, "utf8");
+  // FIX: use findArticleFile to locate file reliably
+  const found = findArticleFile(slug, drafts[idx].filePath);
+  if (found) {
+    let c = fs.readFileSync(found.absPath, "utf8");
     c = updateFm(c, { status: "scheduled", scheduled_at: scheduledAt });
-    fs.writeFileSync(absPath, c, "utf8");
+    fs.writeFileSync(found.absPath, c, "utf8");
+    drafts[idx] = { ...drafts[idx], status: "scheduled", scheduled_at: scheduledAt, filePath: found.relFilePath };
+  } else {
+    console.warn(`[admin-api] schedule: markdown file not found for slug "${slug}"`);
+    drafts[idx] = { ...drafts[idx], status: "scheduled", scheduled_at: scheduledAt };
   }
-  drafts[idx] = { ...drafts[idx], status: "scheduled", scheduled_at: scheduledAt };
   writeJson(DRAFTS_INDEX, drafts);
   res.end(JSON.stringify({ ok: true, slug, scheduled_at: scheduledAt }));
 }
@@ -235,6 +269,18 @@ function adminApiPlugin(): Plugin {
   return {
     name: "admin-api",
     configureServer(server) {
+      // FIX: prevent browser/Vite caching of the content JSON files so that freshly
+      // published articles always appear without a hard-refresh.
+      server.middlewares.use((req, res, next) => {
+        const p = req.url?.split("?")[0] ?? "";
+        if (p.startsWith("/content/") && p.endsWith(".json")) {
+          res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
+          res.setHeader("Pragma", "no-cache");
+          res.setHeader("Expires", "0");
+        }
+        next();
+      });
+
       server.middlewares.use(async (req, res, next) => {
         if (!req.url?.startsWith("/api/admin")) return next();
 
