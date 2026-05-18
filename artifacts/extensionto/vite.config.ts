@@ -349,8 +349,7 @@ export default defineConfig({
     alias: { "@": path.resolve(__dirname, "./src") },
   },
   server: {
-    port: parseInt(process.env.PORT || "5173"),
-    strictPort: true,   // fail loudly if port is taken — never silently serve old code on a different port
+    port: parseInt(process.env.PORT || "5000"),
     host: "0.0.0.0",
     allowedHosts: true,
   },

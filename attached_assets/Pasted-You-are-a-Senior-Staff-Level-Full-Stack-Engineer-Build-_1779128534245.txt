@@ -1,0 +1,163 @@
+You are a Senior Staff-Level Full-Stack Engineer.
+
+Build a PRODUCTION-GRADE Blog Scheduling & Publishing System integrated into an existing React + Vite + Supabase architecture.
+
+========================
+🎯 CORE OBJECTIVES
+========================
+
+1. Automated Publishing System:
+- Automatically publish 2 articles per day
+- Use a cron-based scheduler (or Supabase scheduled edge function)
+- Select from "approved / scheduled" articles only
+- Ensure no duplicates are published
+- If no scheduled articles exist → skip safely (no crash)
+
+2. Manual Control Panel (Admin):
+Add full admin control:
+- Publish Now button (instant publish any article)
+- Schedule Date Picker (choose exact publish time)
+- Bulk Schedule (select multiple drafts → schedule rotation)
+- Cancel Schedule button
+- Override system (manual publish always has priority over automation)
+
+3. Article Visibility Bug Fix (CRITICAL):
+Fix issue where articles "disappear" after editing.
+
+Root cause to solve:
+- index.json mismatch after edit
+- caching not invalidated
+- markdown update not synced to content-store
+
+Fix requirements:
+- After ANY edit → immediately re-run sync pipeline
+- Force refresh of articles-index.json
+- Invalidate frontend cache (content-store.ts)
+- Ensure slug consistency is preserved
+
+========================
+🧠 ARCHITECTURE RULES
+========================
+
+- Keep current static JSON system (DO NOT migrate to full DB rewrite)
+- Supabase only used for:
+  - scheduling metadata
+  - publish queue
+  - logs
+- Articles remain markdown-based
+
+========================
+⏰ SCHEDULING ENGINE
+========================
+
+Create:
+
+/src/lib/scheduler.ts
+
+Features:
+- Queue system (FIFO)
+- scheduleArticle(articleId, date)
+- publishNextBatch(limit = 2 per day)
+- getTodaySchedule()
+- prevent duplicate publishing
+- timezone safe (UTC handling)
+
+Add:
+
+Supabase Edge Function:
+- /functions/publish-scheduler
+- runs daily via cron
+- publishes exactly 2 articles/day
+- logs published articles in "publish_log"
+
+========================
+🧩 ADMIN UI FEATURES
+========================
+
+Create:
+
+/AdminScheduler.tsx
+
+UI includes:
+- Calendar view (scheduled articles)
+- "Publish Now" button
+- "Schedule Article" modal
+- "Today's Queue" list
+- Status badges:
+  - Scheduled
+  - Published
+  - Pending
+  - Failed
+
+Also integrate into AdminDashboard sidebar:
+- "Scheduler"
+
+========================
+🐛 CRITICAL BUG FIX
+========================
+
+Fix article disappearing bug:
+
+Ensure:
+- Any edit triggers:
+  sync-articles.mjs MUST run immediately
+- articles-index.json MUST regenerate after edit
+- Blog.tsx MUST re-fetch fresh index
+- content-store.ts must NOT cache stale data
+
+Add safety:
+- version hash in articles-index.json
+- if hash mismatch → force reload
+
+========================
+🔄 SYNC FLOW (IMPORTANT)
+========================
+
+WHEN ARTICLE IS:
+- edited
+- scheduled
+- published
+
+THEN ALWAYS RUN:
+
+1. update markdown file
+2. run sync-articles.mjs
+3. regenerate sitemap
+4. update articles-index.json
+5. refresh frontend cache
+
+========================
+⚡ NON-FUNCTIONAL REQUIREMENTS
+========================
+
+- No duplicate publishing
+- No race conditions in scheduler
+- Idempotent publish function
+- Must survive page refresh
+- Must work in production build (Vite + static deploy)
+- Logs for every publish action
+
+========================
+📊 SUCCESS CRITERIA
+========================
+
+- 2 articles automatically published daily
+- Manual publish works instantly
+- No missing articles after edit
+- No stale index issues
+- No duplicate scheduling
+- Admin can fully control everything visually
+
+========================
+🚀 OUTPUT REQUIRED
+========================
+
+Generate:
+- scheduler.ts
+- AdminScheduler.tsx
+- Supabase edge function
+- App.tsx route wiring
+- AdminDashboard sidebar integration
+- Fix for sync/refresh bug
+
+Make it production-ready, not demo code.
