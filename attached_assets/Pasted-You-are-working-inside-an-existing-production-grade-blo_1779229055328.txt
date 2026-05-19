@@ -1,0 +1,94 @@
+You are working inside an existing production-grade blog system.
+
+Your task is ONLY to import a ZIP file containing Markdown articles into the project as DRAFTS.
+
+⚠️ CRITICAL RULES (DO NOT BREAK ANY OF THESE):
+
+1. NEVER modify, delete, or overwrite existing published articles.
+2. NEVER touch SEO system, scheduler logic, UI components, or image generation system.
+3. NEVER auto-publish any article.
+4. All imported articles MUST be saved as: status: "draft" only.
+5. The user will handle scheduling manually later.
+
+---
+
+📦 INPUT:
+- A ZIP file exists in the project (articles-individual.zip or similar).
+- It contains Markdown (.md) files with frontmatter.
+
+---
+
+🧠 REQUIRED PROCESS:
+
+STEP 1 — SAFE EXTRACTION
+- Safely unzip the file.
+- Read all Markdown files.
+- Do NOT assume file count.
+- Log total extracted files.
+
+STEP 2 — VALIDATION
+For each Markdown file:
+- Ensure it contains frontmatter (--- YAML ---)
+- If missing status → ADD: status: "draft"
+- Normalize fields safely:
+  - title
+  - slug
+  - date (if exists)
+  - content
+- If frontmatter is broken → fix it without deleting content
+
+STEP 3 — DEDUPLICATION (IMPORTANT)
+- Compare by:
+  - slug OR
+  - SHA-256 hash of file content
+- If article already exists in system:
+  → DO NOT overwrite
+  → Rename new one with suffix: "-2", "-3", etc.
+
+STEP 4 — STORAGE RULE
+Save all imported articles into:
+- /content/drafts/
+OR the system's existing draft storage mechanism
+
+AND update drafts index ONLY:
+- drafts-index.json
+
+DO NOT touch:
+- articles-index.json (published index)
+- sitemap
+- cache system (unless already required by system)
+
+---
+
+STEP 5 — INDEX UPDATE
+- Append all new articles to drafts-index.json
+- Ensure no duplicates in drafts index
+- Keep structure consistent with existing system
+
+---
+
+STEP 6 — SAFETY LOGGING
+Print final report:
+- Total ZIP files found
+- Total articles extracted
+- Total imported as drafts
+- Total skipped (duplicates)
+- Total renamed (-2, -3, etc.)
+
+---
+
+🚫 STRICT FORBIDDEN ACTIONS:
+- No publishing
+- No scheduling
+- No modifying live articles
+- No deleting existing files
+- No rewriting SEO system
+- No touching scheduler logic
+
+---
+
+✅ SUCCESS CONDITION:
+After execution:
+- All new articles are visible in ADMIN as DRAFTS
+- User can manually schedule them later
+- Existing blog remains unchanged 100%
