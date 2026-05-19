@@ -1,0 +1,66 @@
+You are working inside an existing production blog system.
+
+GOAL:
+Import ALL markdown articles from TWO ZIP files into the project safely.
+Total expected: ~100 UNIQUE articles (NOT 52, NOT merged, NOT deduplicated by slug).
+
+CRITICAL RULES (DO NOT BREAK SYSTEM):
+1. NEVER delete existing articles.
+2. NEVER overwrite existing files unless exact same file path + exact same content hash.
+3. NEVER assume ZIP files are duplicates.
+4. DO NOT rely on slug comparison to detect duplicates.
+5. Each file must be treated as UNIQUE unless SHA-256 content hash is identical.
+
+TASK:
+
+Step 1 — Extract ZIP files
+- Extract both ZIP files:
+  - articles-individual-complete.zip
+  - extensionto-batch2-50articles.zip
+- Use Python or Node.js unzip library (whichever is available).
+
+Step 2 — Scan all markdown files
+For each .md file:
+- Read full content
+- Extract frontmatter (if exists)
+- Compute SHA-256 hash of full file content
+- Collect metadata:
+  - filename
+  - slug (if exists in frontmatter)
+  - content hash
+  - raw path
+
+Step 3 — Deduplication logic (IMPORTANT)
+- Only treat TWO files as duplicates if:
+  SHA-256(content) is EXACTLY identical
+- DO NOT use slug for deduplication
+
+Step 4 — Import strategy
+For each UNIQUE file:
+- Normalize frontmatter:
+  - status: "published"
+  - published_at: current timestamp if missing
+- Generate correct storage path using existing system:
+  c1/c2/c3 slug partition logic
+- Save markdown file into project WITHOUT overwriting unrelated files
+
+Step 5 — Index update
+- Update articles-index.json using sync-articles.mjs logic
+- Ensure ALL 100 articles appear after sync
+- Force full rebuild of index from disk (not incremental patching)
+
+Step 6 — Verification
+Print final report:
+- Total files found in ZIPs
+- Total unique by hash
+- Total imported into project
+- Total skipped (true duplicates only)
+- Final articles-index.json count
+
+IMPORTANT:
+- The system previously assumed 52 articles — that assumption is WRONG.
+- This import must correct that and restore full dataset (100 articles).
+- Do NOT modify image system, SEO system, or scheduler logic.
+
+OUTPUT:
+A final summary showing that all articles are imported successfully and visible in blog.
