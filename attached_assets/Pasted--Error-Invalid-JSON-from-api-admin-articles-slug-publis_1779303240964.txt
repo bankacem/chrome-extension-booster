@@ -1,0 +1,69 @@
+
+Error: Invalid JSON from /api/admin/articles/{slug}/publish
+هذا يعني أن الـ API يرجع HTML بدل JSON — وهذا يحدث لأن:
+
+الـ API middleware موجود فقط في Vite dev server — عندما تفتح الصفحة في المتصفح، الطلب يذهب لـ Vite، لكن Vite يرجع صفحة HTML (SPA fallback) بدل تشغيل الـ API route
+السبب الجذري: المشروع على Replit، وعند الضغط على Publish تذهب لـ /api/admin/articles/.../publish لكن Vite لا يعالج هذا الـ route إذا كان الـ dev server لم يبدأ بشكل صحيح أو أن هناك مشكلة في المنفذ
+
+الحل الفوري
+الخطوة 1: تحقق من أن Vite يعمل على المنفذ الصحيح
+افتح vite.config.ts وتأكد من هذا السطر:
+typescriptserver: {
+  port: parseInt(process.env.PORT || "5000"),
+  host: "0.0.0.0",
+الخطوة 2: إصلاح adminApi.ts — أضف تشخيصاً أفضل للخطأ
+ابحث في src/lib/adminApi.ts عن:
+typescriptif (text.trimStart().startsWith("<")) {
+  throw new Error(
+    "API returned HTML instead of JSON — the dev server middleware may not be running.",
+  );
+}
+استبدله بهذا:
+typescriptif (text.trimStart().startsWith("<")) {
+  throw new Error(
+    `API returned HTML instead of JSON.\n` +
+    `URL: ${url}\n` +
+    `Make sure the Vite dev server is running on the correct port.\n` +
+    `Check: window.location.origin = ${typeof window !== 'undefined' ? window.location.origin : 'unknown'}`
+  );
+}
+الخطوة 3: الإصلاح الحقيقي — أضف هذا الكود في vite.config.ts
+المشكلة الأساسية أن الـ middleware يحتاج أن يعمل قبل أي middleware آخر. ابحث عن:
+typescriptfunction adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    configureServer(server) {
+وتأكد أن الترتيب هكذا — الـ JSON headers تُضبط قبل أي شيء:
+typescriptfunction adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    configureServer(server) {
+      // أضف هذا الـ middleware في البداية - يمنع Vite من إرجاع HTML للـ API routes
+      server.middlewares.use((req, res, next) => {
+        if (req.url?.startsWith("/api/admin")) {
+          res.setHeader("Content-Type", "application/json");
+          res.setHeader("Cache-Control", "no-store");
+        }
+        next();
+      });
+الخطوة 4: الإصلاح الجذري في vite.config.ts — إضافة enforce: "pre"
+هذا هو الإصلاح الأهم. ابحث عن:
+typescriptfunction adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    configureServer(server) {
+استبدله بـ:
+typescriptfunction adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    enforce: "pre",
+    configureServer(server) {
+enforce: "pre" يجعل الـ plugin يعمل قبل plugins أخرى مثل React plugin — هذا يضمن أن الـ API routes تُعالج أولاً قبل أن يتدخل Vite ويرجع HTML.
+
+الخطوة 5: إصلاح شامل لملف vite.config.ts — استبدل دالة adminApiPlugin كاملة
+ابحث عن:
+typescriptfunction adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    configureServer(server) {
+      // FIX: prevent browser/Vite caching of the content JSON files so that freshly

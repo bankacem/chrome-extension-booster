@@ -466,10 +466,17 @@ async function runScheduledPublish(): Promise<void> {
 function adminApiPlugin(): Plugin {
   return {
     name: "admin-api",
+    enforce: "pre",
     configureServer(server) {
-      // FIX: prevent browser/Vite caching of the content JSON files so that freshly
-      // published articles always appear without a hard-refresh.
+      // Guard middleware — runs before every other Vite middleware.
+      // Sets Content-Type:application/json for all /api/ routes so Vite's SPA
+      // fallback never serves HTML in place of a missing API handler.
+      // Also disables caching for all content JSON files.
       server.middlewares.use((req, res, next) => {
+        if (req.url?.startsWith("/api/")) {
+          res.setHeader("Content-Type", "application/json");
+          res.setHeader("Cache-Control", "no-store");
+        }
         const p = req.url?.split("?")[0] ?? "";
         if (p.startsWith("/content/") && p.endsWith(".json")) {
           res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
@@ -596,7 +603,7 @@ function adminApiPlugin(): Plugin {
             const { action, slugs } = body as { action: string; slugs: string[] };
             const results: unknown[] = [];
             for (const slug of (slugs || [])) {
-              const fake = { statusCode: 200, end() {} } as unknown as ServerResponse;
+              const fake = { statusCode: 200, headersSent: false, end() {} } as unknown as ServerResponse;
               try {
                 if (action === "publish")   await doPublish(slug, new Date().toISOString(), fake);
                 else if (action === "draft") await doUnpublish(slug, fake);
@@ -614,7 +621,7 @@ function adminApiPlugin(): Plugin {
             const now = Date.now();
             const toPublish = drafts.filter((d) => d.status === "scheduled" && d.scheduled_at && new Date(d.scheduled_at).getTime() <= now);
             for (const d of toPublish) {
-              const fake = { statusCode: 200, end() {} } as unknown as ServerResponse;
+              const fake = { statusCode: 200, headersSent: false, end() {} } as unknown as ServerResponse;
               await doPublish(d.slug, d.scheduled_at!, fake);
               appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: "scheduled", status: "success" });
             }
@@ -650,7 +657,7 @@ function adminApiPlugin(): Plugin {
             const published: string[] = [];
             for (const d of due) {
               try {
-                const fake = { statusCode: 200, end() {} } as unknown as ServerResponse;
+                const fake = { statusCode: 200, headersSent: false, end() {} } as unknown as ServerResponse;
                 await doPublish(d.slug, new Date().toISOString(), fake);
                 published.push(d.slug);
                 appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: triggeredBy as "auto" | "manual", status: "success" });

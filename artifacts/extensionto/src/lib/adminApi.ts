@@ -46,7 +46,10 @@ async function apiFetch<T>(
     // confusing JSON parse failure.
     if (text.trimStart().startsWith("<")) {
       throw new Error(
-        "API returned HTML instead of JSON — the dev server middleware may not be running.",
+        `API returned HTML instead of JSON.\n` +
+        `URL: ${url}\n` +
+        `Origin: ${typeof window !== "undefined" ? window.location.origin : "unknown"}\n` +
+        `Make sure the Vite dev server is running and the admin-api plugin has enforce: "pre".`,
       );
     }
 

@@ -1,0 +1,389 @@
+هذا الخطأ واضح جداً. دعني أشرح السبب الحقيقي:
+
+## سبب الخطأ
+
+```
+Error: Invalid JSON from /api/admin/articles/{slug}/publish
+```
+
+هذا يعني أن الـ API يرجع **HTML بدل JSON** — وهذا يحدث لأن:
+
+1. **الـ API middleware موجود فقط في Vite dev server** — عندما تفتح الصفحة في المتصفح، الطلب يذهب لـ Vite، لكن Vite يرجع صفحة HTML (SPA fallback) بدل تشغيل الـ API route
+2. **السبب الجذري:** المشروع على Replit، وعند الضغط على Publish تذهب لـ `/api/admin/articles/.../publish` لكن **Vite لا يعالج هذا الـ route** إذا كان الـ dev server لم يبدأ بشكل صحيح أو أن هناك مشكلة في المنفذ
+
+## الحل الفوري
+
+### الخطوة 1: تحقق من أن Vite يعمل على المنفذ الصحيح
+
+افتح `vite.config.ts` وتأكد من هذا السطر:
+
+```typescript
+server: {
+  port: parseInt(process.env.PORT || "5000"),
+  host: "0.0.0.0",
+```
+
+### الخطوة 2: إصلاح `adminApi.ts` — أضف تشخيصاً أفضل للخطأ
+
+ابحث في `src/lib/adminApi.ts` عن:
+
+```typescript
+if (text.trimStart().startsWith("<")) {
+  throw new Error(
+    "API returned HTML instead of JSON — the dev server middleware may not be running.",
+  );
+}
+```
+
+استبدله بهذا:
+
+```typescript
+if (text.trimStart().startsWith("<")) {
+  throw new Error(
+    `API returned HTML instead of JSON.\n` +
+    `URL: ${url}\n` +
+    `Make sure the Vite dev server is running on the correct port.\n` +
+    `Check: window.location.origin = ${typeof window !== 'undefined' ? window.location.origin : 'unknown'}`
+  );
+}
+```
+
+### الخطوة 3: الإصلاح الحقيقي — أضف هذا الكود في `vite.config.ts`
+
+المشكلة الأساسية أن الـ middleware يحتاج أن يعمل **قبل** أي middleware آخر. ابحث عن:
+
+```typescript
+function adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    configureServer(server) {
+```
+
+وتأكد أن الترتيب هكذا — الـ JSON headers تُضبط **قبل** أي شيء:
+
+```typescript
+function adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    configureServer(server) {
+      // أضف هذا الـ middleware في البداية - يمنع Vite من إرجاع HTML للـ API routes
+      server.middlewares.use((req, res, next) => {
+        if (req.url?.startsWith("/api/admin")) {
+          res.setHeader("Content-Type", "application/json");
+          res.setHeader("Cache-Control", "no-store");
+        }
+        next();
+      });
+```
+
+### الخطوة 4: الإصلاح الجذري في `vite.config.ts` — إضافة `enforce: "pre"`
+
+هذا هو الإصلاح الأهم. ابحث عن:
+
+```typescript
+function adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    configureServer(server) {
+```
+
+استبدله بـ:
+
+```typescript
+function adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    enforce: "pre",
+    configureServer(server) {
+```
+
+`enforce: "pre"` يجعل الـ plugin يعمل **قبل** plugins أخرى مثل React plugin — هذا يضمن أن الـ API routes تُعالج أولاً قبل أن يتدخل Vite ويرجع HTML.
+
+---
+
+### الخطوة 5: إصلاح شامل لملف `vite.config.ts` — استبدل دالة `adminApiPlugin` كاملة
+
+ابحث عن:
+```typescript
+function adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    configureServer(server) {
+      // FIX: prevent browser/Vite caching of the content JSON files so that freshly
+```
+
+واستبدلها بالكود التالي كاملاً:
+
+```typescript
+function adminApiPlugin(): Plugin {
+  return {
+    name: "admin-api",
+    enforce: "pre",
+    configureServer(server) {
+      // CRITICAL: هذا يمنع Vite من تقديم HTML للـ API routes
+      server.middlewares.use((req, res, next) => {
+        if (req.url?.startsWith("/api/")) {
+          res.setHeader("Content-Type", "application/json");
+          res.setHeader("Cache-Control", "no-store");
+        }
+        // منع caching لملفات JSON
+        const p = req.url?.split("?")[0] ?? "";
+        if (p.startsWith("/content/") && p.endsWith(".json")) {
+          res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
+          res.setHeader("Pragma", "no-cache");
+          res.setHeader("Expires", "0");
+        }
+        next();
+      });
+
+      // Daily cron: 09:00 UTC
+      cron.schedule("0 9 * * *", () => {
+        runScheduledPublish().catch((e) =>
+          console.error("[SCHEDULER] Unexpected error:", e)
+        );
+      });
+      console.log("[SCHEDULER] Cron registered — next run:", nextRunAt());
+
+      server.middlewares.use(async (req, res, next) => {
+        if (!req.url?.startsWith("/api/admin")) return next();
+
+        // منع Vite من معالجة هذه الـ routes
+        res.setHeader("Content-Type", "application/json");
+        res.setHeader("Cache-Control", "no-store");
+
+        try {
+          const url      = new URL(req.url, "http://localhost");
+          const pathname = url.pathname;
+          const method   = req.method ?? "GET";
+
+          // GET /api/admin/stats
+          if (pathname === "/api/admin/stats" && method === "GET") {
+            const articles: Art[] = (readJson<Art[]>(ARTICLES_INDEX)).map((a) => ({ ...a, status: a.status || "published" }));
+            const drafts: Art[] = readJson(DRAFTS_INDEX);
+            const scheduled = drafts.filter((d) => d.status === "scheduled").length;
+            const cats: Record<string, number> = {};
+            for (const a of [...articles, ...drafts]) if (a.category) cats[a.category] = (cats[a.category] || 0) + 1;
+            res.end(JSON.stringify({
+              published:       articles.length,
+              drafts:          drafts.filter((d) => d.status === "draft").length,
+              scheduled,
+              total:           articles.length + drafts.length,
+              categories:      cats,
+              recentPublished: [...articles].sort((a, b) => new Date(b.published_at ?? 0).getTime() - new Date(a.published_at ?? 0).getTime()).slice(0, 10),
+              recentDrafts:    drafts.slice(0, 10),
+            }));
+            return;
+          }
+
+          // GET /api/admin/articles
+          if (pathname === "/api/admin/articles" && method === "GET") {
+            const page  = Math.max(1, parseInt(url.searchParams.get("page") ?? "1"));
+            const limit = Math.min(50, Math.max(1, parseInt(url.searchParams.get("limit") ?? "20")));
+            const q     = (url.searchParams.get("q") ?? "").toLowerCase();
+            const cat   = url.searchParams.get("category") ?? "";
+            let data: Art[] = (readJson<Art[]>(ARTICLES_INDEX)).map((a) => ({ ...a, status: a.status || "published" }));
+            if (q) data = data.filter((a) => a.title.toLowerCase().includes(q) || a.slug.includes(q));
+            if (cat && cat !== "All") data = data.filter((a) => a.category === cat);
+            const total = data.length;
+            res.end(JSON.stringify({ data: data.slice((page - 1) * limit, page * limit), total, page, pages: Math.ceil(total / limit), limit }));
+            return;
+          }
+
+          // GET /api/admin/drafts
+          if (pathname === "/api/admin/drafts" && method === "GET") {
+            const page   = Math.max(1, parseInt(url.searchParams.get("page") ?? "1"));
+            const limit  = Math.min(50, Math.max(1, parseInt(url.searchParams.get("limit") ?? "20")));
+            const q      = (url.searchParams.get("q") ?? "").toLowerCase();
+            const cat    = url.searchParams.get("category") ?? "";
+            const status = url.searchParams.get("status") ?? "";
+            let data: Art[] = readJson(DRAFTS_INDEX);
+            if (q) data = data.filter((d) => d.title.toLowerCase().includes(q) || d.slug.includes(q));
+            if (cat && cat !== "All") data = data.filter((d) => d.category === cat);
+            if (status && status !== "all") data = data.filter((d) => d.status === status);
+            const total = data.length;
+            res.end(JSON.stringify({ data: data.slice((page - 1) * limit, page * limit), total, page, pages: Math.ceil(total / limit), limit }));
+            return;
+          }
+
+          // POST /api/admin/articles/:slug/publish
+          const pubM = pathname.match(/^\/api\/admin\/articles\/([^/]+)\/publish$/);
+          if (pubM && method === "POST") {
+            const body = await readBody(req);
+            await doPublish(pubM[1], (body.published_at as string) || new Date().toISOString(), res);
+            return;
+          }
+
+          // POST /api/admin/articles/:slug/unpublish
+          const unpubM = pathname.match(/^\/api\/admin\/articles\/([^/]+)\/unpublish$/);
+          if (unpubM && method === "POST") { await doUnpublish(unpubM[1], res); return; }
+
+          // POST /api/admin/articles/:slug/schedule
+          const schedM = pathname.match(/^\/api\/admin\/articles\/([^/]+)\/schedule$/);
+          if (schedM && method === "POST") {
+            const body = await readBody(req);
+            if (!body.scheduled_at) { res.statusCode = 400; res.end(JSON.stringify({ error: "scheduled_at required" })); return; }
+            await doSchedule(schedM[1], body.scheduled_at as string, res);
+            return;
+          }
+
+          // PATCH /api/admin/articles/:slug/update
+          const updateM = pathname.match(/^\/api\/admin\/articles\/([^/]+)\/update$/);
+          if (updateM && method === "PATCH") {
+            const body = await readBody(req);
+            const patch: Record<string, string | null> = {};
+            if (typeof body.title === "string")            patch.title = body.title;
+            if (typeof body.meta_description === "string") patch.meta_description = body.meta_description;
+            if (typeof body.body === "string")             patch.body = body.body;
+            if (!Object.keys(patch).length) {
+              res.statusCode = 400;
+              res.end(JSON.stringify({ error: "Provide at least one field: title, meta_description, body" }));
+              return;
+            }
+            await doUpdate(updateM[1], patch, res);
+            return;
+          }
+
+          // DELETE /api/admin/articles/:slug
+          const delM = pathname.match(/^\/api\/admin\/articles\/([^/]+)$/);
+          if (delM && method === "DELETE") { await doDelete(delM[1], res); return; }
+
+          // POST /api/admin/bulk
+          if (pathname === "/api/admin/bulk" && method === "POST") {
+            const body = await readBody(req);
+            const { action, slugs } = body as { action: string; slugs: string[] };
+            const results: unknown[] = [];
+            for (const slug of (slugs || [])) {
+              const fake = { statusCode: 200, headersSent: false, end() {} } as unknown as ServerResponse;
+              try {
+                if (action === "publish")       await doPublish(slug, new Date().toISOString(), fake);
+                else if (action === "draft")    await doUnpublish(slug, fake);
+                else if (action === "delete")   await doDelete(slug, fake);
+                results.push({ slug, ok: true });
+              } catch (e) { results.push({ slug, ok: false, error: String(e) }); }
+            }
+            res.end(JSON.stringify({ ok: true, results }));
+            return;
+          }
+
+          // POST /api/admin/check-scheduled
+          if (pathname === "/api/admin/check-scheduled" && method === "POST") {
+            const drafts: Art[] = readJson(DRAFTS_INDEX);
+            const now = Date.now();
+            const toPublish = drafts.filter((d) => d.status === "scheduled" && d.scheduled_at && new Date(d.scheduled_at).getTime() <= now);
+            for (const d of toPublish) {
+              const fake = { statusCode: 200, headersSent: false, end() {} } as unknown as ServerResponse;
+              await doPublish(d.slug, d.scheduled_at!, fake);
+              appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: "scheduled", status: "success" });
+            }
+            res.end(JSON.stringify({ ok: true, published: toPublish.map((d) => d.slug) }));
+            return;
+          }
+
+          // POST /api/admin/auto-publish
+          if (pathname === "/api/admin/auto-publish" && method === "POST") {
+            const body = await readBody(req);
+            const dailyLimit   = Math.min(10, Math.max(1, parseInt(String(body.limit ?? "2"))));
+            const triggeredBy  = (body.triggered_by as string) === "manual" ? "manual" : "auto";
+            const todayStr     = new Date().toISOString().slice(0, 10);
+            const log          = readPublishLog();
+            const todayCount   = log.filter((e) => e.published_at.startsWith(todayStr) && e.status === "success").length;
+            const remaining    = Math.max(0, dailyLimit - todayCount);
+
+            if (remaining === 0) {
+              res.end(JSON.stringify({ ok: true, published: [], todayCount, dailyLimit, remaining: 0, message: `Daily limit of ${dailyLimit} already reached for ${todayStr}` }));
+              return;
+            }
+
+            const drafts: Art[] = readJson(DRAFTS_INDEX);
+            const now = Date.now();
+            const due = drafts
+              .filter((d) => d.status === "scheduled" && d.scheduled_at && new Date(d.scheduled_at).getTime() <= now)
+              .sort((a, b) => new Date(a.scheduled_at!).getTime() - new Date(b.scheduled_at!).getTime())
+              .slice(0, remaining);
+
+            const published: string[] = [];
+            for (const d of due) {
+              try {
+                const fake = { statusCode: 200, headersSent: false, end() {} } as unknown as ServerResponse;
+                await doPublish(d.slug, new Date().toISOString(), fake);
+                published.push(d.slug);
+                appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: triggeredBy as "auto" | "manual", status: "success" });
+              } catch (e) {
+                appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: triggeredBy as "auto" | "manual", status: "failed", error: String(e) });
+              }
+            }
+            res.end(JSON.stringify({ ok: true, published, todayCount: todayCount + published.length, dailyLimit, remaining: remaining - published.length }));
+            return;
+          }
+
+          // GET /api/admin/publish-log
+          if (pathname === "/api/admin/publish-log" && method === "GET") {
+            res.end(JSON.stringify(readPublishLog().slice(0, 100)));
+            return;
+          }
+
+          // GET /api/admin/schedule-queue
+          if (pathname === "/api/admin/schedule-queue" && method === "GET") {
+            const drafts: Art[] = readJson(DRAFTS_INDEX);
+            const queue = drafts
+              .filter((d) => d.status === "scheduled" && d.scheduled_at)
+              .sort((a, b) => new Date(a.scheduled_at!).getTime() - new Date(b.scheduled_at!).getTime());
+            const todayStr = new Date().toISOString().slice(0, 10);
+            const log = readPublishLog();
+            const todayPublished = log.filter((e) => e.published_at.startsWith(todayStr) && e.status === "success").length;
+            res.end(JSON.stringify({ queue, todayPublished }));
+            return;
+          }
+
+          // GET /api/admin/scheduler/status
+          if (pathname === "/api/admin/scheduler/status" && method === "GET") {
+            const drafts: Art[] = readJson(DRAFTS_INDEX);
+            const queuedCount = drafts.filter((d) => d.status === "draft").length;
+            const todayStr = new Date().toISOString().slice(0, 10);
+            const log = readPublishLog();
+            const todayPublished = log.filter((e) => e.published_at.startsWith(todayStr) && e.status === "success").length;
+            res.end(JSON.stringify({
+              last_run:              schedulerState.last_run,
+              last_published:        schedulerState.last_published,
+              next_run:              nextRunAt(),
+              queued_articles_count: queuedCount,
+              daily_limit:           DAILY_AUTO_LIMIT,
+              published_today:       todayPublished,
+              runs_total:            schedulerState.runs_total,
+            }));
+            return;
+          }
+
+          // POST /api/admin/scheduler/run
+          if (pathname === "/api/admin/scheduler/run" && method === "POST") {
+            if (!res.headersSent) res.end(JSON.stringify({ ok: true, message: "Scheduler triggered — check publish log" }));
+            setImmediate(() => {
+              runScheduledPublish().catch((e) =>
+                console.error("[SCHEDULER] Manual trigger error:", e)
+              );
+            });
+            return;
+          }
+
+          res.statusCode = 404;
+          res.end(JSON.stringify({ error: "Unknown route: " + pathname }));
+
+        } catch (err: unknown) {
+          if (!res.headersSent) {
+            res.statusCode = 500;
+            res.end(JSON.stringify({ error: String(err) }));
+          }
+        }
+      });
+    },
+  };
+}
+```
+
+---
+
+**الخلاصة:** الكود أعلاه يحل المشكلة من جذرها بثلاثة تغييرات:
+
+1. `enforce: "pre"` — يضمن أن الـ plugin يعمل أولاً قبل Vite
+2. Middleware منفصل في البداية يضبط `Content-Type: application/json` لكل `/api/` route قبل أي معالجة
+3. يكرر `res.setHeader("Content-Type", "application/json")` داخل الـ handler الرئيسي كـ safety net
