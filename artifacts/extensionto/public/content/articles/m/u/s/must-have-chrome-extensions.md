@@ -5,12 +5,13 @@ description: "The must-have Chrome extensions for 2026 that actually work after 
 meta_description: "The must-have Chrome extensions for 2026 that actually work after Manifest V3. Tested for RAM, privacy, and daily usefulness — no filler, no outdated picks."
 category: "Chrome Extensions"
 author: "ExtensionTo Team"
-status: draft
-published_at: null
+status: "published"
+published_at: "2026-05-20T12:00:00.000Z"
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
----
+
+scheduled_at: null---
 
 # Must-Have Chrome Extensions in 2026 (Tested, Ranked, MV3-Ready)
 

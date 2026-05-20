@@ -1,0 +1,122 @@
+💣 PROMPT قوي جداً (DEBUG + FIX PUBLISH SYSTEM)
+You are a Senior Production Debug Engineer.
+
+🚨 CRITICAL ISSUE:
+Publishing, scheduling, and article improvement are ALL failing.
+
+Symptoms:
+- API returns "Invalid JSON"
+- Publish button does nothing or fails
+- Schedule feature not working
+- Article update/optimization fails
+
+---
+
+# 🎯 TASK
+Find the EXACT root cause and fix it.
+
+---
+
+# 🔍 REQUIRED DEBUG STEPS
+
+## 1. TRACE FULL REQUEST FLOW
+For these endpoints:
+- /api/admin/articles/:slug/publish
+- /api/admin/articles/:slug/schedule
+- /api/admin/articles/:slug/update
+
+Log and inspect:
+- incoming request
+- middleware response
+- controller execution
+- file system operations
+- final response
+
+---
+
+## 2. FORCE JSON SAFETY
+
+Every endpoint MUST ALWAYS return:
+
+SUCCESS:
+```js
+return res.json({ success: true, data: result })
+
+ERROR:
+
+return res.status(500).json({
+  success: false,
+  error: err.message,
+  stack: process.env.NODE_ENV === "development" ? err.stack : undefined
+})
+
+NEVER:
+
+return HTML
+return empty response
+call res.end() without JSON
+double send response
+3. ADD GLOBAL ERROR CATCH (CRITICAL)
+
+Wrap ALL route handlers:
+
+try {
+   // logic
+} catch (err) {
+   console.error("API ERROR:", err)
+   return res.status(500).json({ success: false, error: err.message })
+}
+4. CHECK THESE POSSIBLE FAILURES
+
+Validate:
+
+draft.filePath exists before fs operations
+JSON.parse(frontmatter) never crashes
+slug mapping is correct
+file write permissions exist
+no undefined article objects
+5. VERIFY ONE ARTICLE MANUALLY
+
+Pick ONE article and simulate:
+
+publish
+schedule
+update
+
+Log every step.
+
+🚨 ACCEPTANCE CRITERIA
+
+After fix:
+
+✔ Publish works 100%
+✔ Schedule works 100%
+✔ Update works 100%
+✔ No "Invalid JSON"
+✔ No HTML responses from API
+✔ Every endpoint always returns JSON
+
+
+---
+
+# 💡 مهم جداً (تشخيص سريع مني لك)
+
+بناءً على اللي وصفته:
+
+👉 80% المشكلة الآن ليست timing  
+👉 بل **Exception داخل backend route**
+
+خصوصاً:
+- filePath mismatch
+- missing article object
+- corrupted markdown frontmatter
+
+---
+
+# إذا بغيتي أسرع حل مني
+
+ارسل لي فقط:
+- صورة الخطأ في console (network tab)
+- أو response body من publish request
+
+وأعطيك **السبب الحقيقي في سطر واحد + fix مباشر** بدون تخمين.
