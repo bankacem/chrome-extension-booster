@@ -170,8 +170,6 @@ async function doPublish(slug: string, publishedAt: string, res: ServerResponse)
   const draft = drafts.find((d) => d.slug === slug);
   if (!draft) { res.statusCode = 404; res.end(JSON.stringify({ error: "Draft not found" })); return; }
 
-  // FIX: resolve via canonical slug-derived path first; fall back to stored filePath.
-  // Previously used draft.filePath directly — silently skipped if path was stale.
   const found = findArticleFile(slug, draft.filePath);
   if (found) {
     let c = fs.readFileSync(found.absPath, "utf8");
@@ -181,8 +179,6 @@ async function doPublish(slug: string, publishedAt: string, res: ServerResponse)
     console.warn(`[admin-api] publish: markdown file not found for slug "${slug}" (checked canonical + ${draft.filePath})`);
   }
 
-  // FIX: always UPSERT — previous code did insert-only (if !find) so re-published or
-  // already-indexed articles were silently left with stale index data.
   const articles: Art[] = readJson(ARTICLES_INDEX);
   const resolvedFilePath = found?.relFilePath ?? draft.filePath;
   const entry: Art = {
@@ -198,14 +194,17 @@ async function doPublish(slug: string, publishedAt: string, res: ServerResponse)
     views: draft.views ?? 0,
     updated_at: publishedAt,
   };
-  // Remove any existing entry with this slug, then prepend fresh one
   const withoutSlug = articles.filter((a) => a.slug !== slug);
   withoutSlug.unshift(entry);
   writeJson(ARTICLES_INDEX, withoutSlug);
-
   writeJson(DRAFTS_INDEX, drafts.filter((d) => d.slug !== slug));
+
+  // FIX: respond BEFORE regenerating sitemap — sitemap write triggers Vite's file
+  // watcher which sends a HMR "full-reload" WebSocket message to the browser.
+  // If the browser acts on that message before res.end() fires, the fetch response
+  // body is empty → JSON.parse("") throws → "Invalid JSON" error in the UI.
+  if (!res.headersSent) res.end(JSON.stringify({ ok: true, slug, published_at: publishedAt }));
   regenerateSitemap();
-  res.end(JSON.stringify({ ok: true, slug, published_at: publishedAt }));
 }
 
 async function doUnpublish(slug: string, res: ServerResponse) {
@@ -213,7 +212,6 @@ async function doUnpublish(slug: string, res: ServerResponse) {
   const article = articles.find((a) => a.slug === slug);
   if (!article) { res.statusCode = 404; res.end(JSON.stringify({ error: "Not found" })); return; }
 
-  // FIX: use findArticleFile to locate file reliably
   const found = findArticleFile(slug, article.filePath);
   if (found) {
     let c = fs.readFileSync(found.absPath, "utf8");
@@ -224,12 +222,13 @@ async function doUnpublish(slug: string, res: ServerResponse) {
   }
   writeJson(ARTICLES_INDEX, articles.filter((a) => a.slug !== slug));
   const drafts: Art[] = readJson(DRAFTS_INDEX);
-  // FIX: always upsert into drafts — remove existing entry first so data is fresh
   const draftEntry = { ...article, status: "draft", published_at: null, filePath: found?.relFilePath ?? article.filePath };
   const draftsWithout = drafts.filter((d) => d.slug !== slug);
   draftsWithout.unshift(draftEntry);
   writeJson(DRAFTS_INDEX, draftsWithout);
-  res.end(JSON.stringify({ ok: true, slug }));
+  // Respond before sitemap write to avoid HMR race (same fix as doPublish)
+  if (!res.headersSent) res.end(JSON.stringify({ ok: true, slug }));
+  regenerateSitemap();
 }
 
 async function doSchedule(slug: string, scheduledAt: string, res: ServerResponse) {
@@ -258,11 +257,10 @@ async function doDelete(slug: string, res: ServerResponse) {
   writeJson(DRAFTS_INDEX, drafts.filter((d) => d.slug !== slug));
   const articles: Art[] = readJson(ARTICLES_INDEX);
   const wasPublished = articles.some((a) => a.slug === slug);
-  if (wasPublished) {
-    writeJson(ARTICLES_INDEX, articles.filter((a) => a.slug !== slug));
-    regenerateSitemap();
-  }
-  res.end(JSON.stringify({ ok: true, slug }));
+  if (wasPublished) writeJson(ARTICLES_INDEX, articles.filter((a) => a.slug !== slug));
+  // Respond before sitemap write to avoid HMR race
+  if (!res.headersSent) res.end(JSON.stringify({ ok: true, slug }));
+  if (wasPublished) regenerateSitemap();
 }
 
 function adminApiPlugin(): Plugin {
@@ -284,14 +282,13 @@ function adminApiPlugin(): Plugin {
       server.middlewares.use(async (req, res, next) => {
         if (!req.url?.startsWith("/api/admin")) return next();
 
-        res.setHeader("Content-Type", "application/json");
-        res.setHeader("Cache-Control", "no-store");
-
-        const url      = new URL(req.url, "http://localhost");
-        const pathname = url.pathname;
-        const method   = req.method ?? "GET";
-
         try {
+          res.setHeader("Content-Type", "application/json");
+          res.setHeader("Cache-Control", "no-store");
+
+          const url      = new URL(req.url, "http://localhost");
+          const pathname = url.pathname;
+          const method   = req.method ?? "GET";
           // GET /api/admin/stats
           if (pathname === "/api/admin/stats" && method === "GET") {
             // articles-index.json entries may lack a status field — treat them as published
@@ -463,8 +460,10 @@ function adminApiPlugin(): Plugin {
           res.statusCode = 404;
           res.end(JSON.stringify({ error: "Unknown route: " + pathname }));
         } catch (err: unknown) {
-          res.statusCode = 500;
-          res.end(JSON.stringify({ error: String(err) }));
+          if (!res.headersSent) {
+            res.statusCode = 500;
+            res.end(JSON.stringify({ error: String(err) }));
+          }
         }
       });
     },
@@ -480,5 +479,12 @@ export default defineConfig({
     port: parseInt(process.env.PORT || "5000"),
     host: "0.0.0.0",
     allowedHosts: true,
+    // Prevent Vite from watching content JSON files — writing articles-index.json
+    // or sitemap.xml during a publish would trigger a HMR "full-reload" WebSocket
+    // message that causes the browser to navigate away before the fetch response
+    // body arrives, producing an empty body → "Invalid JSON" error in the admin UI.
+    watch: {
+      ignored: ["**/public/content/**", "**/public/sitemap.xml"],
+    },
   },
 });

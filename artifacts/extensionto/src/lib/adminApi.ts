@@ -11,6 +11,10 @@
 
 const MAX_RETRIES = 2;
 const RETRY_DELAY = 600; // ms base — doubles each retry
+// Mutations (POST/DELETE) must not be retried — a publish that succeeds server-side
+// but whose response was dropped would cause a retry to return "Draft not found",
+// masking the fact that the publish actually worked. Pass retries=0 for mutations.
+const NO_RETRY = 0;
 
 function sleep(ms: number) {
   return new Promise<void>((resolve) => setTimeout(resolve, ms));
@@ -49,49 +53,56 @@ export const adminApi = {
   publish: (slug: string) =>
     apiFetch<{ ok: boolean; slug: string; published_at: string }>(
       `/api/admin/articles/${slug}/publish`,
-      { method: "POST", body: JSON.stringify({ published_at: new Date().toISOString() }) }
+      { method: "POST", body: JSON.stringify({ published_at: new Date().toISOString() }) },
+      NO_RETRY,
     ),
 
   /** Move a published article back to drafts */
   unpublish: (slug: string) =>
     apiFetch<{ ok: boolean; slug: string }>(
       `/api/admin/articles/${slug}/unpublish`,
-      { method: "POST" }
+      { method: "POST" },
+      NO_RETRY,
     ),
 
   /** Schedule a draft to auto-publish at a future time */
   schedule: (slug: string, scheduled_at: string) =>
     apiFetch<{ ok: boolean; slug: string; scheduled_at: string }>(
       `/api/admin/articles/${slug}/schedule`,
-      { method: "POST", body: JSON.stringify({ scheduled_at }) }
+      { method: "POST", body: JSON.stringify({ scheduled_at }) },
+      NO_RETRY,
     ),
 
   /** Remove an article from the indexes (markdown file is never deleted) */
   delete: (slug: string) =>
     apiFetch<{ ok: boolean; slug: string }>(
       `/api/admin/articles/${slug}`,
-      { method: "DELETE" }
+      { method: "DELETE" },
+      NO_RETRY,
     ),
 
   /** Bulk action across multiple slugs */
   bulk: (action: "publish" | "draft" | "delete", slugs: string[]) =>
     apiFetch<{ ok: boolean; results: Array<{ slug: string; ok: boolean; error?: string }> }>(
       "/api/admin/bulk",
-      { method: "POST", body: JSON.stringify({ action, slugs }) }
+      { method: "POST", body: JSON.stringify({ action, slugs }) },
+      NO_RETRY,
     ),
 
   /** Check for scheduled articles that are now due and publish them */
   checkScheduled: () =>
     apiFetch<{ ok: boolean; published: string[] }>(
       "/api/admin/check-scheduled",
-      { method: "POST" }
+      { method: "POST" },
+      NO_RETRY,
     ),
 
   /** Auto-publish up to `limit` scheduled articles, respecting daily quota */
   autoPublish: (limit = 2, triggered_by: "auto" | "manual" = "auto") =>
     apiFetch<{ ok: boolean; published: string[]; todayCount: number; dailyLimit: number; remaining: number; message?: string }>(
       "/api/admin/auto-publish",
-      { method: "POST", body: JSON.stringify({ limit, triggered_by }) }
+      { method: "POST", body: JSON.stringify({ limit, triggered_by }) },
+      NO_RETRY,
     ),
 
   /** Get the publish activity log (last 100 entries) */
