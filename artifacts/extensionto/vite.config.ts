@@ -252,6 +252,85 @@ async function doSchedule(slug: string, scheduledAt: string, res: ServerResponse
   res.end(JSON.stringify({ ok: true, slug, scheduled_at: scheduledAt }));
 }
 
+async function doUpdate(slug: string, patch: Record<string, string | null>, res: ServerResponse) {
+  const updatedAt = new Date().toISOString();
+  const updated: string[] = [];
+
+  // ── 1. Locate the markdown file (published index first, then drafts) ──────
+  const articles: Art[] = readJson(ARTICLES_INDEX);
+  const drafts:   Art[] = readJson(DRAFTS_INDEX);
+  const existing = articles.find((a) => a.slug === slug) ?? drafts.find((d) => d.slug === slug);
+  if (!existing) {
+    res.statusCode = 404;
+    res.end(JSON.stringify({ error: `Article not found: ${slug}` }));
+    return;
+  }
+
+  const found = findArticleFile(slug, existing.filePath);
+  if (!found) {
+    res.statusCode = 404;
+    res.end(JSON.stringify({ error: `Markdown file not found for slug: ${slug}` }));
+    return;
+  }
+
+  // ── 2. Read the file once ─────────────────────────────────────────────────
+  let content = fs.readFileSync(found.absPath, "utf8");
+
+  // ── 3. Patch frontmatter fields (title, meta_description, updated_at) ─────
+  const fmPatch: Record<string, string | null> = { updated_at: updatedAt };
+  if (typeof patch.title === "string" && patch.title.trim()) {
+    fmPatch.title = patch.title.trim();
+    updated.push("title");
+  }
+  if (typeof patch.meta_description === "string" && patch.meta_description.trim()) {
+    fmPatch.meta_description = patch.meta_description.trim();
+    updated.push("meta_description");
+  }
+  content = updateFm(content, fmPatch);
+
+  // ── 4. Replace body (everything after the closing ---) if provided ─────────
+  if (typeof patch.body === "string" && patch.body.trim()) {
+    const fmEnd = content.indexOf("---", 3);
+    if (fmEnd !== -1) {
+      content = content.slice(0, fmEnd + 3) + "\n\n" + patch.body.trim() + "\n";
+    }
+    updated.push("body");
+  }
+
+  // ── 5. Write the file ─────────────────────────────────────────────────────
+  fs.writeFileSync(found.absPath, content, "utf8");
+
+  // ── 6. Respond immediately ────────────────────────────────────────────────
+  if (!res.headersSent) {
+    res.end(JSON.stringify({ ok: true, slug, updated, updated_at: updatedAt }));
+  }
+
+  // ── 7. Patch the index entry in-place (deferred — never blocks response) ──
+  setImmediate(() => {
+    try {
+      const indexPatch: Partial<Art> = { updated_at: updatedAt } as unknown as Partial<Art>;
+      if (fmPatch.title)            (indexPatch as unknown as Record<string,string>).title = fmPatch.title;
+      if (fmPatch.meta_description) (indexPatch as unknown as Record<string,string>).meta_description = fmPatch.meta_description;
+
+      const arts = readJson<Art[]>(ARTICLES_INDEX);
+      const ai = arts.findIndex((a) => a.slug === slug);
+      if (ai !== -1) {
+        arts[ai] = { ...arts[ai], ...indexPatch };
+        writeJson(ARTICLES_INDEX, arts);
+      } else {
+        const drfs = readJson<Art[]>(DRAFTS_INDEX);
+        const di = drfs.findIndex((d) => d.slug === slug);
+        if (di !== -1) {
+          drfs[di] = { ...drfs[di], ...indexPatch };
+          writeJson(DRAFTS_INDEX, drfs);
+        }
+      }
+    } catch (e) {
+      console.warn("[admin-api] update: index patch failed (non-blocking):", e);
+    }
+  });
+}
+
 async function doDelete(slug: string, res: ServerResponse) {
   // Remove from both indexes (never deletes the markdown file — it stays on disk)
   const drafts: Art[] = readJson(DRAFTS_INDEX);
@@ -358,6 +437,23 @@ function adminApiPlugin(): Plugin {
             const body = await readBody(req);
             if (!body.scheduled_at) { res.statusCode = 400; res.end(JSON.stringify({ error: "scheduled_at required" })); return; }
             await doSchedule(schedM[1], body.scheduled_at as string, res);
+            return;
+          }
+
+          // PATCH /api/admin/articles/:slug/update
+          const updateM = pathname.match(/^\/api\/admin\/articles\/([^/]+)\/update$/);
+          if (updateM && method === "PATCH") {
+            const body = await readBody(req);
+            const patch: Record<string, string | null> = {};
+            if (typeof body.title === "string")            patch.title = body.title;
+            if (typeof body.meta_description === "string") patch.meta_description = body.meta_description;
+            if (typeof body.body === "string")             patch.body = body.body;
+            if (!Object.keys(patch).length) {
+              res.statusCode = 400;
+              res.end(JSON.stringify({ error: "Provide at least one field: title, meta_description, body" }));
+              return;
+            }
+            await doUpdate(updateM[1], patch, res);
             return;
           }
 

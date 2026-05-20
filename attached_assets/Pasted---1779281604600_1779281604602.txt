@@ -1,0 +1,138 @@
+تمام 👍 بما أن النظام الآن ثابت، هذه خطوة “ترقية منطقية” فعلاً.
+
+لكن خلّيني أعطيك تصميم صحيح قبل ما تكتب أي كود:
+
+---
+
+# 🚀 الهدف الجديد
+
+إنشاء:
+
+## `PATCH /api/admin/articles/:slug/update`
+
+يخليك:
+
+* تعديل title
+* تعديل meta_description
+* تعديل body (markdown)
+* بدون unpublish
+* بدون إعادة إنشاء slug
+* بدون كسر index
+
+---
+
+# 🧠 التصميم الصحيح (Production-safe)
+
+## 1. التحديث يكون على الملف مباشرة
+
+```ts id="p0k2nd"
+const filePath = findArticleFile(slug)
+
+const content = fs.readFileSync(filePath, 'utf-8')
+```
+
+---
+
+## 2. تعديل Frontmatter فقط (بدون لمس body إلا إذا مطلوب)
+
+```ts id="4x0k9a"
+updateFrontmatter(content, {
+  title,
+  meta_description,
+  updated_at: new Date().toISOString()
+})
+```
+
+---
+
+## 3. إعادة كتابة الملف
+
+```ts id="9q2mwx"
+fs.writeFileSync(filePath, updatedContent)
+```
+
+---
+
+## 4. تحديث index بدون إعادة build كامل
+
+```ts id="t8wq1c"
+updateArticleInIndex(slug, {
+  title,
+  meta_description,
+  updated_at
+})
+```
+
+---
+
+## 5. مهم جداً (لا نكسر النظام الحالي)
+
+### ❌ ممنوع:
+
+* regenerateSitemap() sync
+* إعادة بناء كل index
+* تغيير slug
+* إعادة publish workflow
+
+### ✅ فقط:
+
+* patch file
+* patch index entry
+
+---
+
+# ⚡ response API الصحيح
+
+```json id="u3m9dp"
+{
+  "ok": true,
+  "slug": "example",
+  "updated": ["title", "meta_description", "body"],
+  "updated_at": "2026-05-20T..."
+}
+```
+
+---
+
+# 🧠 حماية إضافية (important)
+
+## avoid race conditions:
+
+```ts id="r2k8aa"
+res.json({ ok: true })
+
+setImmediate(() => {
+  syncIndexForSlug(slug)
+})
+```
+
+---
+
+# 💣 أهم feature بعده (اقتراح قوي جداً)
+
+بعد هذا، أفضل upgrade هو:
+
+## 🔥 "Live Draft Preview System"
+
+* edit → preview instant
+* no publish required
+* same markdown renderer as frontend
+
+---
+
+# 🧾 الخلاصة
+
+نعم 👍 هذه خطوة صحيحة جداً الآن لأن:
+
+✔ النظام أصبح stable
+✔ publish solved
+✔ retry bug solved
+✔ now we move to editing layer
+
+---
+
+إذا تريد، أقدر أعطيك:
+
+### 🔥 prompt “enterprise-grade” جاهز للنسخ في Replit
+
+يبني endpoint + frontend UI + index sync بطريقة نظيفة 100% بدون bugs.

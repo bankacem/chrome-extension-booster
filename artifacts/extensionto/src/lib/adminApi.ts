@@ -105,6 +105,18 @@ export const adminApi = {
       NO_RETRY,
     ),
 
+  /**
+   * Patch an article's title, meta_description, and/or body in-place.
+   * The article stays published/drafted — no unpublish required.
+   * Slug is never changed.
+   */
+  update: (slug: string, patch: { title?: string; meta_description?: string; body?: string }) =>
+    apiFetch<{ ok: boolean; slug: string; updated: string[]; updated_at: string }>(
+      `/api/admin/articles/${slug}/update`,
+      { method: "PATCH", body: JSON.stringify(patch) },
+      NO_RETRY,
+    ),
+
   /** Remove an article from the indexes (markdown file is never deleted) */
   delete: (slug: string) =>
     apiFetch<{ ok: boolean; slug: string }>(
