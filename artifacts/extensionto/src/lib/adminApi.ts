@@ -11,34 +11,66 @@
 
 const MAX_RETRIES = 2;
 const RETRY_DELAY = 600; // ms base — doubles each retry
-// Mutations (POST/DELETE) must not be retried — a publish that succeeds server-side
-// but whose response was dropped would cause a retry to return "Draft not found",
-// masking the fact that the publish actually worked. Pass retries=0 for mutations.
+
+// Pass as `maxRetries` for mutations: 0 means no retries at all.
+// A publish that succeeds server-side but whose response body was dropped
+// must NOT be retried — the retry would return 404 "Draft not found",
+// masking the fact that the publish actually succeeded.
 const NO_RETRY = 0;
 
 function sleep(ms: number) {
   return new Promise<void>((resolve) => setTimeout(resolve, ms));
 }
 
-async function apiFetch<T>(url: string, opts?: RequestInit, attempt = 0): Promise<T> {
+/**
+ * @param maxRetries  How many additional attempts are allowed after the first
+ *                    failure. Pass NO_RETRY (0) for mutations so a successful
+ *                    server-side operation that drops its response is never
+ *                    replayed.
+ */
+async function apiFetch<T>(
+  url: string,
+  opts?: RequestInit,
+  maxRetries = MAX_RETRIES,
+  attempt = 0,
+): Promise<T> {
   try {
     const res = await fetch(url, {
       ...opts,
       headers: { "Content-Type": "application/json", ...opts?.headers },
     });
+
     const text = await res.text();
-    // Guard: if the middleware returned HTML (SPA fallback), give a clear error
+
+    // Guard: Vite SPA fallback returns HTML — give a clear error instead of a
+    // confusing JSON parse failure.
     if (text.trimStart().startsWith("<")) {
-      throw new Error("API returned HTML instead of JSON — the dev server middleware may not be running.");
+      throw new Error(
+        "API returned HTML instead of JSON — the dev server middleware may not be running.",
+      );
     }
-    let json: unknown;
-    try { json = JSON.parse(text); } catch { throw new Error(`Invalid JSON from ${url}`); }
-    if (!res.ok) throw new Error((json as Record<string,string>)?.error ?? `HTTP ${res.status}`);
-    return json as T;
+
+    // Single parse point — never double-parse.
+    let data: unknown;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      throw new Error(
+        `Invalid JSON from ${url}: ${text.slice(0, 120)}`,
+      );
+    }
+
+    if (!res.ok) {
+      throw new Error(
+        (data as Record<string, string>)?.error ?? `HTTP ${res.status}`,
+      );
+    }
+
+    return data as T;
   } catch (err) {
-    if (attempt < MAX_RETRIES) {
+    if (attempt < maxRetries) {
       await sleep(RETRY_DELAY * Math.pow(2, attempt));
-      return apiFetch<T>(url, opts, attempt + 1);
+      return apiFetch<T>(url, opts, maxRetries, attempt + 1);
     }
     const raw = err instanceof Error ? err.message : String(err);
     const clean = raw.toLowerCase().includes("failed to fetch")
@@ -108,12 +140,12 @@ export const adminApi = {
   /** Get the publish activity log (last 100 entries) */
   getPublishLog: () =>
     apiFetch<Array<{ slug: string; title: string; published_at: string; triggered_by: string; status: string; error?: string }>>(
-      "/api/admin/publish-log"
+      "/api/admin/publish-log",
     ),
 
   /** Get the scheduled articles queue + today's publish count */
   getScheduleQueue: () =>
     apiFetch<{ queue: Array<{ id: string; slug: string; title: string; category?: string; scheduled_at: string }>; todayPublished: number }>(
-      "/api/admin/schedule-queue"
+      "/api/admin/schedule-queue",
     ),
 };
