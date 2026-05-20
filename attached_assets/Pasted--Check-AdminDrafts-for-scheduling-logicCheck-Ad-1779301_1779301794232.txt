@@ -1,0 +1,405 @@
+ة كاملة عن المشروع. دعني أعطيك التحليل المفصل والحلول.Check AdminDrafts for scheduling logicCheck AdminDrafts for scheduling logicالآن لدي كل ما يلزم للتحليل الكامل. دعني أكتب التقرير والحلول:
+
+🔍 تحليل مفصل للمشروع
+هيكل المشروع
+المشروع هو موقع SEO blog (extensionto.com) مبني بـ React + Vite، يعمل على Replit. المقالات محفوظة كـ Markdown files في:
+public/content/articles/{c1}/{c2}/{c3}/{slug}.md
+وهناك ملفان مهمان جداً:
+
+public/content/articles-index.json — المقالات المنشورة
+public/content/drafts-index.json — المسودات والمجدولة
+
+
+🐛 المشاكل المكتشفة في نظام الجدولة والنشر
+المشكلة 1 — الجدولة التلقائية لا تعمل في الإنتاج (GitHub Actions)
+الملف: vite.config.ts — دالة runScheduledPublish()
+المشكلة: الجدولة cron.schedule("0 9 * * *", ...) مدمجة داخل Vite dev server plugin. هذا يعني:
+
+تعمل فقط عندما يكون pnpm dev شغّالاً
+في الإنتاج (Vercel/GitHub Pages) لا يوجد dev server → الـ cron لا يشتغل أبداً
+ملف publish-pipeline.yml يستدعي bun run sync-db-to-md من Supabase لكنك لا تستخدم Supabase، بل Markdown مباشرة → Pipeline فاشل
+
+الدليل:
+yaml# publish-pipeline.yml
+- name: Sync DB to Markdown
+  env:
+    VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}  # ← أنت لا تستخدم Supabase!
+  run: bun run sync-db-to-md  # ← هذا الأمر غير موجود في package.json الحالي
+
+المشكلة 2 — الـ runScheduledPublish() تنشر مسودات عادية لا المجدولة
+الملف: vite.config.ts السطر 393
+javascript// الكود الحالي — خطأ!
+const candidates = drafts
+  .filter((d) => d.status === "draft")  // ← يختار draft وليس scheduled!
+  .sort(...)
+  .slice(0, DAILY_AUTO_LIMIT);
+الدالة تجلب مقالات بـ status: "draft" وليس status: "scheduled" — أي أنها تنشر أي مسودة عشوائياً بدلاً من المقالات التي جدولتها فعلاً!
+
+المشكلة 3 — articles-index.json و drafts-index.json فارغان
+json// public/content/articles-index.json
+[]
+// public/content/drafts-index.json
+[]
+المقالات الموجودة في public/content/articles/ (أكثر من 500 ملف .md) غير مفهرسة في الـ JSON index. النظام يقرأ من JSON لا من الملفات مباشرة → لا يرى أي مقال!
+
+المشكلة 4 — filePath في المسودات قد يكون خاطئاً
+عند الجدولة، يُحفظ filePath في drafts-index.json. إذا كان المسار خاطئاً، دالة findArticleFile تنجح بـ fallback لكن تعطي تحذيراً فقط:
+javascriptconsole.warn(`[admin-api] publish: markdown file not found for slug "${slug}"`)
+// ← تكمل بدون تحديث الـ frontmatter!
+النتيجة: المقال يُضاف لـ articles-index.json لكن frontmatter بقي status: draft.
+
+المشكلة 5 — GitHub Actions Pipeline مكسور للـ Markdown workflow
+الـ publish-pipeline.yml القديم في .migration-backup مصمم لـ Supabase وليس للـ Markdown-only workflow الحالي.
+
+✅ الحلول — كود جاهز للنسخ
+الإصلاح 1: إصلاح runScheduledPublish() في vite.config.ts
+ابحث عن هذا الكود واستبدله:
+الكود القديم (ابحث عنه):
+javascriptconst candidates = drafts
+  .filter((d) => d.status === "draft")
+  .sort((a, b) => new Date(a.created_at ?? 0).getTime() - new Date(b.created_at ?? 0).getTime())
+  .slice(0, DAILY_AUTO_LIMIT);
+الكود الجديد (استبدله بهذا):
+javascriptconst now = Date.now();
+const candidates = drafts
+  .filter((d) => d.status === "scheduled" && d.scheduled_at && new Date(d.scheduled_at).getTime() <= now)
+  .sort((a, b) => new Date(a.scheduled_at!).getTime() - new Date(b.scheduled_at!).getTime())
+  .slice(0, DAILY_AUTO_LIMIT);
+
+الإصلاح 2: إصلاح doPublish لعدم إيقاف العملية عند عدم وجود الملف
+الكود القديم:
+javascript  } else {
+    console.warn(`[admin-api] publish: markdown file not found for slug "${slug}" (checked canonical + ${draft.filePath})`);
+  }
+الكود الجديد:
+javascript  } else {
+    console.warn(`[admin-api] publish: markdown file not found for slug "${slug}" (checked canonical + ${draft.filePath})`);
+    // FIX: إذا الملف غير موجود، أوقف العملية وأعد خطأ بدل الاستمرار
+    res.statusCode = 404;
+    res.end(JSON.stringify({ error: `Markdown file not found for slug: ${slug}` }));
+    return;
+  }
+
+الإصلاح 3: سكريبت لبناء articles-index.json و drafts-index.json من الملفات الموجودة
+احفظ هذا الملف باسم scripts/build-index.mjs وشغّله مرة واحدة:
+javascript#!/usr/bin/env node
+/**
+ * build-index.mjs
+ * يقرأ جميع ملفات .md ويبني articles-index.json و drafts-index.json
+ * شغّله: node scripts/build-index.mjs
+ */
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ARTICLES_DIR   = path.resolve(__dirname, '../artifacts/extensionto/public/content/articles');
+const ARTICLES_INDEX = path.resolve(__dirname, '../artifacts/extensionto/public/content/articles-index.json');
+const DRAFTS_INDEX   = path.resolve(__dirname, '../artifacts/extensionto/public/content/drafts-index.json');
+
+function parseFrontmatter(content) {
+  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!match) return {};
+  const fm = {};
+  for (const line of match[1].split('\n')) {
+    const kv = line.match(/^([a-zA-Z_][a-zA-Z0-9_]*):\s*(.*)/);
+    if (!kv) continue;
+    let v = kv[2].trim();
+    if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) {
+      v = v.slice(1, -1);
+    }
+    fm[kv[1]] = v;
+  }
+  return fm;
+}
+
+function slugFromPath(filePath) {
+  return path.basename(filePath, '.md');
+}
+
+function relPath(absPath) {
+  return absPath.replace(path.resolve(__dirname, '../artifacts/extensionto/public'), '');
+}
+
+function walkDir(dir) {
+  const results = [];
+  if (!fs.existsSync(dir)) return results;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) results.push(...walkDir(full));
+    else if (entry.name.endsWith('.md')) results.push(full);
+  }
+  return results;
+}
+
+const allFiles = walkDir(ARTICLES_DIR);
+console.log(`Found ${allFiles.length} markdown files`);
+
+const articles = [];
+const drafts   = [];
+
+for (const absPath of allFiles) {
+  const content = fs.readFileSync(absPath, 'utf8');
+  const fm = parseFrontmatter(content);
+  const slug = fm.slug || slugFromPath(absPath);
+  const status = fm.status || 'published';
+  const rel = relPath(absPath);
+  
+  // حساب reading time تقريبي
+  const wordCount = content.split(/\s+/).length;
+  const readTime  = Math.max(1, Math.round(wordCount / 200));
+
+  const entry = {
+    id:               slug,
+    title:            fm.title || slug,
+    slug:             slug,
+    category:         fm.category || null,
+    status:           status,
+    published_at:     fm.published_at || null,
+    scheduled_at:     fm.scheduled_at || null,
+    created_at:       fm.date || fm.created_at || null,
+    updated_at:       fm.updated_at || null,
+    read_time:        readTime,
+    reading_time:     readTime,
+    word_count:       wordCount,
+    featured_image:   fm.featured_image || fm.image_url || null,
+    image_url:        fm.featured_image || fm.image_url || `/images/blog/${slug}.webp`,
+    meta_description: fm.meta_description || fm.description || '',
+    description:      fm.description || fm.meta_description || '',
+    excerpt:          fm.excerpt || '',
+    filePath:         rel,
+    canonicalPath:    `/blog/${slug}`,
+    tags:             fm.tags ? fm.tags.split(',').map(t => t.trim()) : [],
+    keywords:         fm.keywords ? fm.keywords.split(',').map(k => k.trim()) : [],
+    author:           fm.author || 'ExtensionTo',
+    views:            0,
+  };
+
+  if (status === 'published') {
+    articles.push(entry);
+  } else {
+    // draft أو scheduled تذهب لـ drafts-index
+    drafts.push(entry);
+  }
+}
+
+// ترتيب: الأحدث أولاً
+articles.sort((a, b) => new Date(b.published_at || 0) - new Date(a.published_at || 0));
+drafts.sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0));
+
+fs.writeFileSync(ARTICLES_INDEX, JSON.stringify(articles, null, 2), 'utf8');
+fs.writeFileSync(DRAFTS_INDEX,   JSON.stringify(drafts,   null, 2), 'utf8');
+
+console.log(`✅ articles-index.json: ${articles.length} articles`);
+console.log(`✅ drafts-index.json:   ${drafts.length} drafts/scheduled`);
+
+الإصلاح 4: GitHub Actions — ملف Pipeline جديد للـ Markdown workflow
+احفظ هذا الملف في .github/workflows/publish-pipeline.yml (يستبدل القديم):
+yamlname: Publish Articles Pipeline
+
+on:
+  schedule:
+    - cron: '0 9 * * *'   # يعمل يومياً الساعة 9 صباحاً UTC
+  workflow_dispatch:        # تشغيل يدوي من GitHub
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run scheduled publish script
+        run: node scripts/github-publish.mjs
+
+      - name: Rebuild index from markdown files
+        run: node scripts/build-index.mjs
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add \
+            artifacts/extensionto/public/content/articles/ \
+            artifacts/extensionto/public/content/articles-index.json \
+            artifacts/extensionto/public/content/drafts-index.json
+
+          if git diff --cached --quiet; then
+            echo "✅ No changes — all scheduled articles are up to date."
+          else
+            CHANGED=$(git diff --cached --name-only | wc -l)
+            echo "📦 Committing $CHANGED changed file(s)..."
+            git commit -m "chore: auto-publish scheduled articles [$(date +'%Y-%m-%d %H:%M UTC')]"
+            git push
+            echo "✅ Done."
+          fi
+
+الإصلاح 5: سكريبت GitHub Actions للنشر التلقائي من الـ Markdown
+احفظ هذا الملف باسم scripts/github-publish.mjs:
+javascript#!/usr/bin/env node
+/**
+ * github-publish.mjs
+ * يعمل في GitHub Actions — ينشر المقالات المجدولة التي حان وقتها
+ * لا يحتاج Supabase ولا Vite — يعمل مباشرة على ملفات Markdown
+ */
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname    = path.dirname(fileURLToPath(import.meta.url));
+const ARTICLES_DIR = path.resolve(__dirname, '../artifacts/extensionto/public/content/articles');
+const DRAFTS_INDEX = path.resolve(__dirname, '../artifacts/extensionto/public/content/drafts-index.json');
+const ARTICLES_INDEX = path.resolve(__dirname, '../artifacts/extensionto/public/content/articles-index.json');
+const DAILY_LIMIT  = 2;
+
+function readJson(p) {
+  try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return []; }
+}
+function writeJson(p, data) {
+  fs.writeFileSync(p, JSON.stringify(data, null, 2), 'utf8');
+}
+
+function parseFm(content) {
+  const m = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!m) return {};
+  const out = {};
+  for (const line of m[1].split('\n')) {
+    const kv = line.match(/^([a-zA-Z_][a-zA-Z0-9_]*):\s*(.*)/);
+    if (!kv) continue;
+    let v = kv[2].trim();
+    if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) v = v.slice(1, -1);
+    out[kv[1]] = v;
+  }
+  return out;
+}
+
+function updateFm(content, updates) {
+  const m = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!m) return content;
+  let fm = m[1];
+  for (const [key, val] of Object.entries(updates)) {
+    const re = new RegExp(`^${key}:.*`, 'm');
+    const line = val === null ? `${key}: null` : `${key}: "${val}"`;
+    if (re.test(fm)) fm = fm.replace(re, line);
+    else fm += `\n${line}`;
+  }
+  return content.replace(/^---\n([\s\S]*?)\n---/, `---\n${fm}\n---`);
+}
+
+function findMdFile(slug) {
+  const norm = slug.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/, '');
+  const c1 = norm[0] || '_', c2 = norm[1] || '_', c3 = norm[2] || '_';
+  const p = path.join(ARTICLES_DIR, c1, c2, c3, `${norm}.md`);
+  return fs.existsSync(p) ? p : null;
+}
+
+async function main() {
+  const now = new Date();
+  const todayStr = now.toISOString().slice(0, 10);
+  console.log(`[github-publish] Running at ${now.toISOString()}`);
+
+  const drafts   = readJson(DRAFTS_INDEX);
+  const articles = readJson(ARTICLES_INDEX);
+
+  // عد ما نُشر اليوم
+  const todayPublished = articles.filter(a =>
+    a.published_at && a.published_at.startsWith(todayStr)
+  ).length;
+
+  console.log(`[github-publish] Published today: ${todayPublished}/${DAILY_LIMIT}`);
+
+  if (todayPublished >= DAILY_LIMIT) {
+    console.log(`[github-publish] Daily limit reached. Nothing to publish.`);
+    return;
+  }
+
+  const remaining = DAILY_LIMIT - todayPublished;
+
+  // جلب المقالات المجدولة التي حان وقتها
+  const due = drafts
+    .filter(d => d.status === 'scheduled' && d.scheduled_at && new Date(d.scheduled_at).getTime() <= now.getTime())
+    .sort((a, b) => new Date(a.scheduled_at).getTime() - new Date(b.scheduled_at).getTime())
+    .slice(0, remaining);
+
+  if (due.length === 0) {
+    console.log(`[github-publish] No scheduled articles are due now.`);
+    return;
+  }
+
+  console.log(`[github-publish] Articles to publish: ${due.map(d => d.slug).join(', ')}`);
+
+  const publishedSlugs = [];
+
+  for (const draft of due) {
+    const publishedAt = now.toISOString();
+    const mdPath = findMdFile(draft.slug);
+
+    if (!mdPath) {
+      console.error(`[github-publish] ERROR: Markdown file not found for slug "${draft.slug}"`);
+      continue;
+    }
+
+    // تحديث frontmatter
+    let content = fs.readFileSync(mdPath, 'utf8');
+    content = updateFm(content, {
+      status: 'published',
+      published_at: publishedAt,
+      scheduled_at: null,
+    });
+    fs.writeFileSync(mdPath, content, 'utf8');
+
+    // نقل من drafts إلى articles
+    const entry = {
+      ...draft,
+      status: 'published',
+      published_at: publishedAt,
+      scheduled_at: null,
+      updated_at: publishedAt,
+      filePath: mdPath.replace(path.resolve(__dirname, '../artifacts/extensionto/public'), ''),
+      canonicalPath: `/blog/${draft.slug}`,
+    };
+
+    articles.unshift(entry);
+    publishedSlugs.push(draft.slug);
+    console.log(`✅ Published: ${draft.slug}`);
+  }
+
+  // حفظ الـ index المحدث
+  const remainingDrafts = drafts.filter(d => !publishedSlugs.includes(d.slug));
+  writeJson(ARTICLES_INDEX, articles);
+  writeJson(DRAFTS_INDEX, remainingDrafts);
+
+  console.log(`[github-publish] Done. Published ${publishedSlugs.length} article(s).`);
+}
+
+main().catch(e => { console.error(e); process.exit(1); });
+
+الإصلاح 6: إضافة المقالات للـ drafts-index.json من Markdown مباشرة
+لإضافة مقال مجدول بدون Admin UI، أضف frontmatter بهذا الشكل في ملف .md:
+yaml---
+title: "عنوان المقال"
+slug: "article-slug"
+status: scheduled
+scheduled_at: "2026-05-25T09:00:00.000Z"
+category: "Ad Blocking"
+meta_description: "وصف المقال"
+---
+ثم شغّل:
+bashnode scripts/build-index.mjs
+سيظهر المقال في drafts-index.json بـ status: scheduled وينشر تلقائياً في موعده عبر GitHub Actions.
+
+ملخص المشاكل والحلول
+المشكلةالسببالإصلاحالجدولة لا تنشرrunScheduledPublish تختار draft بدل scheduledالإصلاح 1الإنتاج لا يعملcron داخل Vite لا يعمل في productionالإصلاحات 4 و5articles-index فارغالمقالات غير مفهرسةالإصلاح 3filePath خاطئ يكسر النشرلا يوقف العملية عند خطأالإصلاح 2Pipeline يعتمد Supabasemigration قديمالإصلاح 4

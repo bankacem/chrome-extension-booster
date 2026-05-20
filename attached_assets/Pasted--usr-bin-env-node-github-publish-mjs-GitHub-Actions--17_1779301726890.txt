@@ -1,0 +1,138 @@
+#!/usr/bin/env node
+/**
+ * github-publish.mjs
+ * يعمل في GitHub Actions — ينشر المقالات المجدولة التي حان وقتها
+ * لا يحتاج Supabase ولا Vite — يعمل مباشرة على ملفات Markdown
+ */
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname    = path.dirname(fileURLToPath(import.meta.url));
+const ARTICLES_DIR = path.resolve(__dirname, '../artifacts/extensionto/public/content/articles');
+const DRAFTS_INDEX = path.resolve(__dirname, '../artifacts/extensionto/public/content/drafts-index.json');
+const ARTICLES_INDEX = path.resolve(__dirname, '../artifacts/extensionto/public/content/articles-index.json');
+const DAILY_LIMIT  = 2;
+
+function readJson(p) {
+  try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return []; }
+}
+function writeJson(p, data) {
+  fs.writeFileSync(p, JSON.stringify(data, null, 2), 'utf8');
+}
+
+function parseFm(content) {
+  const m = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!m) return {};
+  const out = {};
+  for (const line of m[1].split('\n')) {
+    const kv = line.match(/^([a-zA-Z_][a-zA-Z0-9_]*):\s*(.*)/);
+    if (!kv) continue;
+    let v = kv[2].trim();
+    if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) v = v.slice(1, -1);
+    out[kv[1]] = v;
+  }
+  return out;
+}
+
+function updateFm(content, updates) {
+  const m = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!m) return content;
+  let fm = m[1];
+  for (const [key, val] of Object.entries(updates)) {
+    const re = new RegExp(`^${key}:.*`, 'm');
+    const line = val === null ? `${key}: null` : `${key}: "${val}"`;
+    if (re.test(fm)) fm = fm.replace(re, line);
+    else fm += `\n${line}`;
+  }
+  return content.replace(/^---\n([\s\S]*?)\n---/, `---\n${fm}\n---`);
+}
+
+function findMdFile(slug) {
+  const norm = slug.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/, '');
+  const c1 = norm[0] || '_', c2 = norm[1] || '_', c3 = norm[2] || '_';
+  const p = path.join(ARTICLES_DIR, c1, c2, c3, `${norm}.md`);
+  return fs.existsSync(p) ? p : null;
+}
+
+async function main() {
+  const now = new Date();
+  const todayStr = now.toISOString().slice(0, 10);
+  console.log(`[github-publish] Running at ${now.toISOString()}`);
+
+  const drafts   = readJson(DRAFTS_INDEX);
+  const articles = readJson(ARTICLES_INDEX);
+
+  // عد ما نُشر اليوم
+  const todayPublished = articles.filter(a =>
+    a.published_at && a.published_at.startsWith(todayStr)
+  ).length;
+
+  console.log(`[github-publish] Published today: ${todayPublished}/${DAILY_LIMIT}`);
+
+  if (todayPublished >= DAILY_LIMIT) {
+    console.log(`[github-publish] Daily limit reached. Nothing to publish.`);
+    return;
+  }
+
+  const remaining = DAILY_LIMIT - todayPublished;
+
+  // جلب المقالات المجدولة التي حان وقتها
+  const due = drafts
+    .filter(d => d.status === 'scheduled' && d.scheduled_at && new Date(d.scheduled_at).getTime() <= now.getTime())
+    .sort((a, b) => new Date(a.scheduled_at).getTime() - new Date(b.scheduled_at).getTime())
+    .slice(0, remaining);
+
+  if (due.length === 0) {
+    console.log(`[github-publish] No scheduled articles are due now.`);
+    return;
+  }
+
+  console.log(`[github-publish] Articles to publish: ${due.map(d => d.slug).join(', ')}`);
+
+  const publishedSlugs = [];
+
+  for (const draft of due) {
+    const publishedAt = now.toISOString();
+    const mdPath = findMdFile(draft.slug);
+
+    if (!mdPath) {
+      console.error(`[github-publish] ERROR: Markdown file not found for slug "${draft.slug}"`);
+      continue;
+    }
+
+    // تحديث frontmatter
+    let content = fs.readFileSync(mdPath, 'utf8');
+    content = updateFm(content, {
+      status: 'published',
+      published_at: publishedAt,
+      scheduled_at: null,
+    });
+    fs.writeFileSync(mdPath, content, 'utf8');
+
+    // نقل من drafts إلى articles
+    const entry = {
+      ...draft,
+      status: 'published',
+      published_at: publishedAt,
+      scheduled_at: null,
+      updated_at: publishedAt,
+      filePath: mdPath.replace(path.resolve(__dirname, '../artifacts/extensionto/public'), ''),
+      canonicalPath: `/blog/${draft.slug}`,
+    };
+
+    articles.unshift(entry);
+    publishedSlugs.push(draft.slug);
+    console.log(`✅ Published: ${draft.slug}`);
+  }
+
+  // حفظ الـ index المحدث
+  const remainingDrafts = drafts.filter(d => !publishedSlugs.includes(d.slug));
+  writeJson(ARTICLES_INDEX, articles);
+  writeJson(DRAFTS_INDEX, remainingDrafts);
+
+  console.log(`[github-publish] Done. Published ${publishedSlugs.length} article(s).`);
+}
+
+main().catch(e => { console.error(e); process.exit(1); });

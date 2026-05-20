@@ -178,7 +178,13 @@ async function doPublish(slug: string, publishedAt: string, res: ServerResponse)
     c = updateFm(c, { status: "published", published_at: publishedAt, scheduled_at: null });
     fs.writeFileSync(found.absPath, c, "utf8");
   } else {
+    // File missing — abort rather than writing a stale/broken index entry.
     console.warn(`[admin-api] publish: markdown file not found for slug "${slug}" (checked canonical + ${draft.filePath})`);
+    if (!res.headersSent) {
+      res.statusCode = 404;
+      res.end(JSON.stringify({ error: `Markdown file not found for slug: ${slug}` }));
+    }
+    return;
   }
 
   const articles: Art[] = readJson(ARTICLES_INDEX);
@@ -393,13 +399,14 @@ async function runScheduledPublish(): Promise<void> {
   console.log("[SCHEDULER] Running daily job...");
 
   const drafts: Art[] = readJson(DRAFTS_INDEX);
+  const now = Date.now();
   const candidates = drafts
-    .filter((d) => d.status === "draft")
-    .sort((a, b) => new Date(a.created_at ?? 0).getTime() - new Date(b.created_at ?? 0).getTime())
+    .filter((d) => d.status === "scheduled" && d.scheduled_at && new Date(d.scheduled_at).getTime() <= now)
+    .sort((a, b) => new Date(a.scheduled_at!).getTime() - new Date(b.scheduled_at!).getTime())
     .slice(0, DAILY_AUTO_LIMIT);
 
   if (candidates.length === 0) {
-    console.log("[SCHEDULER] No draft articles available to publish.");
+    console.log("[SCHEDULER] No scheduled articles are due now.");
     schedulerState.last_run = new Date().toISOString();
     schedulerState.last_published = [];
     schedulerState.runs_total += 1;
