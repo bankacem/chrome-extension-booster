@@ -224,6 +224,9 @@ importers:
       js-yaml:
         specifier: ^4.1.1
         version: 4.1.1
+      node-cron:
+        specifier: ^4.2.1
+        version: 4.2.1
       react-helmet-async:
         specifier: ^3.0.0
         version: 3.0.0(react@19.1.0)
@@ -339,6 +342,9 @@ importers:
       '@types/node':
         specifier: 'catalog:'
         version: 25.3.5
+      '@types/node-cron':
+        specifier: ^3.0.11
+        version: 3.0.11
       '@types/react':
         specifier: 'catalog:'
         version: 19.2.14
@@ -1737,6 +1743,9 @@ packages:
   '@types/js-yaml@4.0.9':
     resolution: {integrity: sha512-k4MGaQl5TGo/iipqb2UDG2UwjXziSWkh0uysQelTlJpX1qGlpUZYm8PnO4DxG1qBomtJUdYJ6qR6xdIah10JLg==}
 
+  '@types/node-cron@3.0.11':
+    resolution: {integrity: sha512-0ikrnug3/IyneSHqCBeslAhlK2aBfYek1fGo4bP4QnZPmiqSGRK+Oy7ZMisLWkesffJvQ1cqAcBnJC+8+nxIAg==}
+
   '@types/node@25.3.5':
     resolution: {integrity: sha512-oX8xrhvpiyRCQkG1MFchB09f+cXftgIXb3a7UUa4Y3wpmZPw5tyZGTLWhlESOLq1Rq6oDlc8npVU2/9xiCuXMA==}
 
@@ -2731,6 +2740,10 @@ packages:
     peerDependencies:
       react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
       react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+
+  node-cron@4.2.1:
+    resolution: {integrity: sha512-lgimEHPE/QDgFlywTd8yTR61ptugX3Qer29efeyWw2rv259HtGBNn1vZVmp8lB9uo9wC0t/AT4iGqXxia+CJFg==}
+    engines: {node: '>=6.0.0'}
 
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
@@ -4773,6 +4786,8 @@ snapshots:
 
   '@types/js-yaml@4.0.9': {}
 
+  '@types/node-cron@3.0.11': {}
+
   '@types/node@25.3.5':
     dependencies:
       undici-types: 7.18.2
@@ -5654,6 +5669,8 @@ snapshots:
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
+
+  node-cron@4.2.1: {}
 
   node-domexception@1.0.0: {}
 

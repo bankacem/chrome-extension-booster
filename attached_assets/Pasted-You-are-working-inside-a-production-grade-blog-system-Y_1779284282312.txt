@@ -1,0 +1,96 @@
+You are working inside a production-grade blog system.
+
+Your task is to implement a SAFE automatic scheduling system for all saved draft articles.
+
+GOAL:
+- Automatically publish 2 articles per day
+- Start from today
+- Only use articles with status = "draft"
+- Do NOT break existing publish system
+- Do NOT regenerate full index or sitemap in a blocking way
+- Avoid any retry or JSON race issues
+- Ensure idempotent scheduling (no duplicate publishing)
+
+━━━━━━━━━━━━━━━━━━━━━━
+1. CREATE SCHEDULER (CRON JOB)
+━━━━━━━━━━━━━━━━━━━━━━
+
+Implement a cron job using node-cron:
+
+Schedule:
+- Every day at 09:00 server time
+- Publish exactly 2 drafts per run
+
+Logic:
+- Read drafts-index.json
+- Filter where status === "draft"
+- Sort by created_at ascending
+- Pick first 2 items only
+
+━━━━━━━━━━━━━━━━━━━━━━
+2. PUBLISH LOGIC (SAFE)
+━━━━━━━━━━━━━━━━━━━━━━
+
+For each selected article:
+
+- Update status: "published"
+- Set published_at = new Date().toISOString()
+- Write markdown file update (frontmatter only)
+- Update articles-index.json incrementally (NOT full rebuild)
+- Remove from drafts-index.json
+
+IMPORTANT:
+- Use setImmediate() for sitemap regeneration AFTER response flush
+- NEVER block HTTP response with filesystem heavy operations
+- NEVER retry publish requests automatically
+
+━━━━━━━━━━━━━━━━━━━━━━
+3. LINKING ARTICLES (INTERNAL SEO)
+━━━━━━━━━━━━━━━━━━━━━━
+
+After publishing each article:
+
+- Add 2 internal links automatically:
+
+RULE:
+- Link to 2 random previously published articles
+- Insert links inside markdown body
+
+FORMAT:
+[Related Article](slug)
+
+Ensure:
+- No duplicate links in same article
+- Do not break markdown structure
+- Only link published articles
+
+━━━━━━━━━━━━━━━━━━━━━━
+4. SAFETY RULES (CRITICAL)
+
+- NO retry logic for POST/DELETE/PATCH
+- NO full regenerate of sitemap on request cycle
+- NO blocking fs operations before res.end()
+- NO duplicate publishing of same slug
+- Ensure idempotency: if article already published → skip
+
+━━━━━━━━━━━━━━━━━━━━━━
+5. OUTPUT LOGS
+
+Print:
+
+[SCHEDULER] Running daily job...
+[SCHEDULER] Selected articles: slug1, slug2
+[PUBLISH] slug START
+[PUBLISH] slug END
+[SCHEDULER] Completed successfully
+
+━━━━━━━━━━━━━━━━━━━━━━
+6. BONUS (OPTIONAL BUT RECOMMENDED)
+
+Add endpoint:
+GET /api/admin/scheduler/status
+
+Returns:
+- last_run
+- next_run
+- queued_articles_count

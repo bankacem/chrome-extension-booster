@@ -1,5 +1,75 @@
 [
   {
+    "id": "3188cd71-e05b-4885-b370-643f9b966a9a",
+    "title": "Can Chrome Extensions Steal Passwords? (Security Guide 2026)",
+    "slug": "can-chrome-extensions-steal-passwords",
+    "meta_description": "Can Chrome extensions really steal your passwords? We explain how it works, which permissions to watch, and how to protect yourself in 2026.",
+    "description": "Can Chrome extensions really steal your passwords? We explain how it works, which permissions to watch, and how to protect yourself in 2026.",
+    "excerpt": "Can Chrome extensions really steal your passwords? We explain how it works, which permissions to watch, and how to protect yourself in 2026.",
+    "category": "Privacy & Security",
+    "tags": [
+      "security",
+      "passwords",
+      "chrome extensions",
+      "malware"
+    ],
+    "keywords": [
+      "can chrome extensions steal passwords",
+      "security",
+      "passwords",
+      "chrome extensions",
+      "malware"
+    ],
+    "author": "Daniel Carter",
+    "status": "published",
+    "published_at": "2026-05-20T14:02:43.072Z",
+    "scheduled_at": null,
+    "created_at": "2026-05-17T01:07:29.249Z",
+    "updated_at": "2026-05-20T14:02:43.072Z",
+    "read_time": 3,
+    "views": 0,
+    "featured_image": "/images/blog/can-chrome-extensions-steal-passwords.webp",
+    "filePath": "/content/articles/c/a/n/can-chrome-extensions-steal-passwords.md",
+    "canonicalPath": "/blog/can-chrome-extensions-steal-passwords",
+    "image_url": "/images/blog/can-chrome-extensions-steal-passwords.webp",
+    "reading_time": 3
+  },
+  {
+    "id": "c0646d23-5037-48dd-8617-665acd348bc2",
+    "title": "Are Chrome Extensions Safe to Install? (2026 Guide)",
+    "slug": "are-chrome-extensions-safe-to-install",
+    "meta_description": "Are Chrome extensions safe? Learn how to evaluate extension safety, what risks exist, and how to install extensions without putting yourself at risk in 2026.",
+    "description": "Are Chrome extensions safe? Learn how to evaluate extension safety, what risks exist, and how to install extensions without putting yourself at risk in 2026.",
+    "excerpt": "Are Chrome extensions safe? Learn how to evaluate extension safety, what risks exist, and how to install extensions without putting yourself at risk in 2026.",
+    "category": "Chrome Extensions",
+    "tags": [
+      "chrome extensions",
+      "security",
+      "safe",
+      "privacy"
+    ],
+    "keywords": [
+      "are chrome extensions safe to install",
+      "chrome extensions",
+      "security",
+      "safe",
+      "privacy"
+    ],
+    "author": "Daniel Carter",
+    "status": "published",
+    "published_at": "2026-05-20T14:02:42.808Z",
+    "scheduled_at": null,
+    "created_at": "2026-05-17T01:07:29.249Z",
+    "updated_at": "2026-05-20T14:02:42.808Z",
+    "read_time": 3,
+    "views": 0,
+    "featured_image": "/images/blog/are-chrome-extensions-safe-to-install.webp",
+    "filePath": "/content/articles/a/r/e/are-chrome-extensions-safe-to-install.md",
+    "canonicalPath": "/blog/are-chrome-extensions-safe-to-install",
+    "image_url": "/images/blog/are-chrome-extensions-safe-to-install.webp",
+    "reading_time": 3
+  },
+  {
     "id": "9272909b-fd3b-4edd-86f5-8ba834c3d3f3",
     "title": "Best Chrome Extensions for Windows in 2026 (Updated)",
     "slug": "chrome-extensions-for-windows",

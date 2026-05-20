@@ -8,8 +8,8 @@ category: Chrome Extensions
 tags: ["chrome extensions", "security", "safe", "privacy"]
 keywords: ["are chrome extensions safe to install", "chrome extensions", "security", "safe", "privacy"]
 author: "Daniel Carter"
-status: draft
-published_at: null
+status: "published"
+published_at: "2026-05-20T14:02:42.808Z"
 scheduled_at: null
 created_at: "2026-05-17T01:07:29.249Z"
 updated_at: "2026-05-17T01:07:29.249Z"
@@ -152,3 +152,8 @@ Remove it immediately via `chrome://extensions`. Change passwords for any accoun
 - [How to Protect Your Accounts in Chrome (2026)](/blog/how-to-protect-accounts-chrome)
 - [How to Install IDM Extension in Chrome (2026)](/blog/how-to-install-idm-extension-chrome)
 - [How to Import Chrome Extensions to Edge (2026)](/blog/how-to-import-chrome-extensions-to-edge)
+
+## Related Articles
+
+- [Can Chrome Extensions Steal Passwords? (Security Guide 2026)](/blog/can-chrome-extensions-steal-passwords)
+- [Best Chrome Extensions for Windows in 2026 (Updated)](/blog/chrome-extensions-for-windows)

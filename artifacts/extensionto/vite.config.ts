@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import fs from "fs";
 import type { IncomingMessage, ServerResponse } from "http";
+import cron from "node-cron";
 
 // ── Absolute paths ─────────────────────────────────────────────────────────────
 const ARTICLES_DIR   = path.join(__dirname, "public/content/articles");
@@ -342,6 +343,119 @@ async function doDelete(slug: string, res: ServerResponse) {
   if (wasPublished) setImmediate(() => regenerateSitemap());
 }
 
+// ── Scheduler ─────────────────────────────────────────────────────────────────
+const DAILY_AUTO_LIMIT = 2;
+
+interface SchedulerState {
+  last_run: string | null;
+  last_published: string[];
+  runs_total: number;
+}
+
+const schedulerState: SchedulerState = {
+  last_run: null,
+  last_published: [],
+  runs_total: 0,
+};
+
+function nextRunAt(): string {
+  const now = new Date();
+  const next = new Date(now);
+  next.setHours(9, 0, 0, 0);
+  if (next <= now) next.setDate(next.getDate() + 1);
+  return next.toISOString();
+}
+
+// Append 2 internal links to an article's markdown body without touching frontmatter.
+// Links are appended as a "Related articles" block so they never break existing structure.
+function injectInternalLinks(content: string, targetSlug: string, published: Art[]): string {
+  const pool = published.filter((a) => a.slug !== targetSlug && a.title);
+  if (pool.length === 0) return content;
+
+  // Pick up to 2 random articles, deterministic per-slug to stay idempotent
+  const shuffled = [...pool].sort(() => (targetSlug.charCodeAt(0) % 3) - 1);
+  const picks = shuffled.slice(0, Math.min(2, shuffled.length));
+
+  // Don't inject if links already present
+  for (const p of picks) {
+    if (content.includes(`/blog/${p.slug}`)) return content;
+  }
+
+  const linkBlock =
+    "\n\n## Related Articles\n\n" +
+    picks.map((p) => `- [${p.title}](/blog/${p.slug})`).join("\n") +
+    "\n";
+
+  return content.trimEnd() + linkBlock;
+}
+
+async function runScheduledPublish(): Promise<void> {
+  console.log("[SCHEDULER] Running daily job...");
+
+  const drafts: Art[] = readJson(DRAFTS_INDEX);
+  const candidates = drafts
+    .filter((d) => d.status === "draft")
+    .sort((a, b) => new Date(a.created_at ?? 0).getTime() - new Date(b.created_at ?? 0).getTime())
+    .slice(0, DAILY_AUTO_LIMIT);
+
+  if (candidates.length === 0) {
+    console.log("[SCHEDULER] No draft articles available to publish.");
+    schedulerState.last_run = new Date().toISOString();
+    schedulerState.last_published = [];
+    schedulerState.runs_total += 1;
+    return;
+  }
+
+  console.log("[SCHEDULER] Selected articles:", candidates.map((c) => c.slug).join(", "));
+
+  const publishedSlugs: string[] = [];
+
+  for (const draft of candidates) {
+    try {
+      const fake = { statusCode: 200, headersSent: false, end() {} } as unknown as ServerResponse;
+      const publishedAt = new Date().toISOString();
+      await doPublish(draft.slug, publishedAt, fake);
+      publishedSlugs.push(draft.slug);
+      appendPublishLog({
+        slug: draft.slug,
+        title: draft.title,
+        published_at: publishedAt,
+        triggered_by: "auto",
+        status: "success",
+      });
+
+      // Inject internal links after successful publish (deferred, non-blocking)
+      setImmediate(() => {
+        try {
+          const currentPublished: Art[] = readJson(ARTICLES_INDEX);
+          const found = findArticleFile(draft.slug, draft.filePath);
+          if (!found) return;
+          const raw = fs.readFileSync(found.absPath, "utf8");
+          const updated = injectInternalLinks(raw, draft.slug, currentPublished);
+          if (updated !== raw) fs.writeFileSync(found.absPath, updated, "utf8");
+        } catch (e) {
+          console.warn("[SCHEDULER] Internal link injection failed for", draft.slug, e);
+        }
+      });
+    } catch (e) {
+      console.error("[SCHEDULER] Failed to publish", draft.slug, e);
+      appendPublishLog({
+        slug: draft.slug,
+        title: draft.title,
+        published_at: new Date().toISOString(),
+        triggered_by: "auto",
+        status: "failed",
+        error: String(e),
+      });
+    }
+  }
+
+  schedulerState.last_run = new Date().toISOString();
+  schedulerState.last_published = publishedSlugs;
+  schedulerState.runs_total += 1;
+  console.log("[SCHEDULER] Completed successfully. Published:", publishedSlugs.join(", ") || "(none)");
+}
+
 function adminApiPlugin(): Plugin {
   return {
     name: "admin-api",
@@ -357,6 +471,14 @@ function adminApiPlugin(): Plugin {
         }
         next();
       });
+
+      // ── Daily cron: publish 2 drafts at 09:00 every day ────────────────────
+      cron.schedule("0 9 * * *", () => {
+        runScheduledPublish().catch((e) =>
+          console.error("[SCHEDULER] Unexpected error:", e),
+        );
+      });
+      console.log("[SCHEDULER] Cron registered — next run:", nextRunAt());
 
       server.middlewares.use(async (req, res, next) => {
         if (!req.url?.startsWith("/api/admin")) return next();
@@ -550,6 +672,36 @@ function adminApiPlugin(): Plugin {
             const log = readPublishLog();
             const todayPublished = log.filter((e) => e.published_at.startsWith(todayStr) && e.status === "success").length;
             res.end(JSON.stringify({ queue, todayPublished }));
+            return;
+          }
+
+          // GET /api/admin/scheduler/status
+          if (pathname === "/api/admin/scheduler/status" && method === "GET") {
+            const drafts: Art[] = readJson(DRAFTS_INDEX);
+            const queuedCount = drafts.filter((d) => d.status === "draft").length;
+            const todayStr = new Date().toISOString().slice(0, 10);
+            const log = readPublishLog();
+            const todayPublished = log.filter((e) => e.published_at.startsWith(todayStr) && e.status === "success").length;
+            res.end(JSON.stringify({
+              last_run: schedulerState.last_run,
+              last_published: schedulerState.last_published,
+              next_run: nextRunAt(),
+              queued_articles_count: queuedCount,
+              daily_limit: DAILY_AUTO_LIMIT,
+              published_today: todayPublished,
+              runs_total: schedulerState.runs_total,
+            }));
+            return;
+          }
+
+          // POST /api/admin/scheduler/run  — trigger manually for testing
+          if (pathname === "/api/admin/scheduler/run" && method === "POST") {
+            if (!res.headersSent) res.end(JSON.stringify({ ok: true, message: "Scheduler triggered — check publish log" }));
+            setImmediate(() => {
+              runScheduledPublish().catch((e) =>
+                console.error("[SCHEDULER] Manual trigger error:", e),
+              );
+            });
             return;
           }
 

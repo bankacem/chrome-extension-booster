@@ -8,8 +8,8 @@ category: Privacy & Security
 tags: ["security", "passwords", "chrome extensions", "malware"]
 keywords: ["can chrome extensions steal passwords", "security", "passwords", "chrome extensions", "malware"]
 author: "Daniel Carter"
-status: draft
-published_at: null
+status: "published"
+published_at: "2026-05-20T14:02:43.072Z"
 scheduled_at: null
 created_at: "2026-05-17T01:07:29.249Z"
 updated_at: "2026-05-17T01:07:29.249Z"
@@ -129,3 +129,8 @@ Chrome's extension sandbox limits what extensions can do, but extensions with br
 - [How to Manage Passwords in Chrome (2026 Complete Guide)](/blog/how-to-manage-passwords-in-chrome)
 - [How to Store Passwords Safely in Chrome (2026)](/blog/how-to-store-passwords-safely-chrome)
 - [How to Stop Automatic Redirects in Chrome (2026)](/blog/how-to-stop-automatic-redirects-chrome)
+
+## Related Articles
+
+- [Top Chrome Extensions 2026: The Only List That Accounts for Manifest V3](/blog/top-chrome-extensions-2026)
+- [Must-Have Chrome Extensions in 2026 (Tested, Ranked, MV3-Ready)](/blog/must-have-chrome-extensions)

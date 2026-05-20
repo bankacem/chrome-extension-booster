@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "slug": "can-chrome-extensions-steal-passwords",
+    "title": "Can Chrome Extensions Steal Passwords? (Security Guide 2026)",
+    "published_at": "2026-05-20T14:02:43.072Z",
+    "triggered_by": "auto",
+    "status": "success"
+  },
+  {
+    "slug": "are-chrome-extensions-safe-to-install",
+    "title": "Are Chrome Extensions Safe to Install? (2026 Guide)",
+    "published_at": "2026-05-20T14:02:42.808Z",
+    "triggered_by": "auto",
+    "status": "success"
+  }
+]

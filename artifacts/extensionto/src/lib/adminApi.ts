@@ -160,4 +160,24 @@ export const adminApi = {
     apiFetch<{ queue: Array<{ id: string; slug: string; title: string; category?: string; scheduled_at: string }>; todayPublished: number }>(
       "/api/admin/schedule-queue",
     ),
+
+  /** Get the daily auto-scheduler status (last run, next run, queue size) */
+  getSchedulerStatus: () =>
+    apiFetch<{
+      last_run: string | null;
+      last_published: string[];
+      next_run: string;
+      queued_articles_count: number;
+      daily_limit: number;
+      published_today: number;
+      runs_total: number;
+    }>("/api/admin/scheduler/status"),
+
+  /** Manually trigger the daily scheduler (for testing) — NO_RETRY safe */
+  triggerScheduler: () =>
+    apiFetch<{ ok: boolean; message: string }>(
+      "/api/admin/scheduler/run",
+      { method: "POST" },
+      NO_RETRY,
+    ),
 };
