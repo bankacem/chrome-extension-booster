@@ -1,0 +1,156 @@
+You are a Senior Production Backend + Frontend Engineer working inside a live production blog system (Vite + Node API middleware).
+
+🚨 CRITICAL BUG:
+When publishing/scheduling articles, the frontend shows:
+"Invalid JSON from /api/admin/articles/{slug}/publish"
+
+This means the API request returns invalid JSON (empty response, HTML, or interrupted stream).
+
+---
+
+# 🎯 GOAL
+Fix this issue permanently WITHOUT breaking:
+- article publishing
+- scheduling system
+- sitemap generation
+- file writing system
+- Vite HMR workflow
+- admin UI
+
+---
+
+# 🔥 ROOT CAUSE (already identified)
+There are race conditions between:
+
+1. API response lifecycle
+2. regenerateSitemap()
+3. filesystem writes (articles-index.json / sitemap.xml)
+4. Vite file watcher (HMR reload)
+
+These cause:
+- response getting cut before res.json()
+- empty response body
+- frontend JSON.parse failure
+
+---
+
+# 🛠️ REQUIRED FIX (STRICT RULES)
+
+## 1. NEVER block API response
+Every endpoint MUST follow this pattern:
+
+- Step 1: finalize response FIRST
+- Step 2: return res.json({ success: true })
+- Step 3: move heavy operations to background
+
+---
+
+## 2. MOVE ALL SIDE EFFECTS TO ASYNC BACKGROUND
+
+Any of these MUST NOT block response:
+- regenerateSitemap()
+- writing articles-index.json
+- writing drafts-index.json
+- file system writes not required for response
+
+Use:
+- setImmediate()
+OR
+- queueMicrotask()
+OR
+- background async function
+
+---
+
+## 3. ADD SAFE RESPONSE GUARD
+
+In every API route:
+
+if (!res.headersSent) {
+   res.json(...)
+}
+
+Never allow double response or missing response.
+
+---
+
+## 4. FIX VITE HMR INTERFERENCE
+
+Update vite.config.ts:
+
+IGNORE file watching for:
+
+- public/content/**
+- public/sitemap.xml
+- articles-index.json
+- drafts-index.json
+
+This prevents full reload during API writes.
+
+---
+
+## 5. DISABLE FRONTEND RETRIES FOR MUTATIONS
+
+In adminApi.ts:
+- publish
+- schedule
+- delete
+- unpublish
+
+MUST have:
+NO retry logic (retry = 0)
+
+---
+
+## 6. ENSURE API ALWAYS RETURNS VALID JSON
+
+Every endpoint MUST return:
+
+{
+  success: true,
+  data?: any,
+  message?: string
+}
+
+Even in errors:
+
+{
+  success: false,
+  error: string
+}
+
+NO empty responses allowed.
+
+---
+
+## 7. DEBUG REQUIREMENT
+
+Add temporary logging:
+
+console.log("[PUBLISH]", slug, "START")
+console.log("[PUBLISH]", slug, "END")
+
+to verify response timing.
+
+---
+
+# 🚨 ACCEPTANCE CRITERIA
+
+- No more "Invalid JSON" errors
+- Publish works 100% reliably
+- Schedule works without UI errors
+- No Vite reload interrupts API
+- No race condition between sitemap and response
+- All endpoints always return valid JSON
+
+---
+
+# ⚠️ IMPORTANT
+
+Do NOT:
+- refactor full architecture
+- change database logic
+- change UI
+- remove features
+
+Only fix execution order + async safety + Vite interference.

@@ -166,6 +166,7 @@ async function readBody(req: IncomingMessage): Promise<Record<string, unknown>> 
 }
 
 async function doPublish(slug: string, publishedAt: string, res: ServerResponse) {
+  console.log("[PUBLISH]", slug, "START");
   const drafts: Art[] = readJson(DRAFTS_INDEX);
   const draft = drafts.find((d) => d.slug === slug);
   if (!draft) { res.statusCode = 404; res.end(JSON.stringify({ error: "Draft not found" })); return; }
@@ -199,12 +200,13 @@ async function doPublish(slug: string, publishedAt: string, res: ServerResponse)
   writeJson(ARTICLES_INDEX, withoutSlug);
   writeJson(DRAFTS_INDEX, drafts.filter((d) => d.slug !== slug));
 
-  // FIX: respond BEFORE regenerating sitemap — sitemap write triggers Vite's file
-  // watcher which sends a HMR "full-reload" WebSocket message to the browser.
-  // If the browser acts on that message before res.end() fires, the fetch response
-  // body is empty → JSON.parse("") throws → "Invalid JSON" error in the UI.
+  // Respond FIRST, then defer sitemap regeneration via setImmediate so it runs
+  // only after Node.js has fully flushed the response to the network.
+  // This eliminates the race where synchronous fs work after res.end() delays
+  // the TCP flush long enough for the browser to receive an empty body.
   if (!res.headersSent) res.end(JSON.stringify({ ok: true, slug, published_at: publishedAt }));
-  regenerateSitemap();
+  console.log("[PUBLISH]", slug, "END");
+  setImmediate(() => regenerateSitemap());
 }
 
 async function doUnpublish(slug: string, res: ServerResponse) {
@@ -226,9 +228,8 @@ async function doUnpublish(slug: string, res: ServerResponse) {
   const draftsWithout = drafts.filter((d) => d.slug !== slug);
   draftsWithout.unshift(draftEntry);
   writeJson(DRAFTS_INDEX, draftsWithout);
-  // Respond before sitemap write to avoid HMR race (same fix as doPublish)
   if (!res.headersSent) res.end(JSON.stringify({ ok: true, slug }));
-  regenerateSitemap();
+  setImmediate(() => regenerateSitemap());
 }
 
 async function doSchedule(slug: string, scheduledAt: string, res: ServerResponse) {
@@ -258,9 +259,8 @@ async function doDelete(slug: string, res: ServerResponse) {
   const articles: Art[] = readJson(ARTICLES_INDEX);
   const wasPublished = articles.some((a) => a.slug === slug);
   if (wasPublished) writeJson(ARTICLES_INDEX, articles.filter((a) => a.slug !== slug));
-  // Respond before sitemap write to avoid HMR race
   if (!res.headersSent) res.end(JSON.stringify({ ok: true, slug }));
-  if (wasPublished) regenerateSitemap();
+  if (wasPublished) setImmediate(() => regenerateSitemap());
 }
 
 function adminApiPlugin(): Plugin {
