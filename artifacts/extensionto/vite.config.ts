@@ -741,6 +741,16 @@ export default defineConfig({
     port: parseInt(process.env.PORT || "5000"),
     host: "0.0.0.0",
     allowedHosts: true,
+    // Proxy /api/* to the standalone API server on port 3001.
+    // This ensures POST/PATCH/DELETE requests from the browser reach the API
+    // correctly even when going through the Replit HTTPS proxy.
+    proxy: {
+      "/api": {
+        target: "http://localhost:3001",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
     // Prevent Vite from watching content JSON files — writing articles-index.json
     // or sitemap.xml during a publish would trigger a HMR "full-reload" WebSocket
     // message that causes the browser to navigate away before the fetch response

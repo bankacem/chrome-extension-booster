@@ -5,9 +5,9 @@ description: "Chrome extensions optimized for macOS users in 2026 — covering O
 meta_description: "Chrome extensions optimized for macOS users in 2026 — covering OLED battery savings, Mac workflow integration, and Apple ecosystem compatibility."
 category: "Chrome Extensions"
 author: "ExtensionTo Team"
-status: draft
+status: "scheduled"
 published_at: null
-scheduled_at: null
+scheduled_at: "2999-01-01T00:00:00.000Z"
 created_at: "2026-05-16T00:00:00.000Z"
 updated_at: "2026-05-16T00:00:00.000Z"
 read_time: 6
