@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "title": "Top Chrome Extensions 2026: The Only List That Accounts for Manifest V3",
+    "description": "The definitive top Chrome extensions list for 2026 — updated for Manifest V3, tested for RAM, privacy-vetted. No outdated picks, no sponsored fillers.",
+    "slug": "top-chrome-extensions-2026",
+    "date": "2026-05-16",
+    "author": "ExtensionTo Team",
+    "tags": ["chrome extensions", "2026", "manifest v3", "productivity", "best extensions"],
+    "canonical": "https://extensionto.com/top-chrome-extensions-2026/"
+  },
+  "introduction": "This list is built around the reality of Manifest V3. Every extension here is tested on Chrome 2026, Manifest V3 compatible, benchmarked for RAM usage, and checked for privacy. Nothing paid for placement. Nothing included just because it's popular.",
+  "sections": [
+    {
+      "id": "mv3-problem",
+      "heading": "The MV3 Problem Nobody Explains Clearly",
+      "content": "Manifest V3 (MV3) is the new Chrome extension standard Google enforced in 2025. Extensions can no longer intercept and dynamically filter network requests in real time. Instead, they use a pre-approved rule list with a cap of ~30,000 rules.",
+      "what_breaks": [
+        "Full uBlock Origin — the gold standard ad blocker — no longer runs on Chrome. It has been disabled by Google.",
+        "Any extension built on the old webRequest API is now defunct or severely limited on Chrome."
+      ],
+      "what_works": [
+        "uBlock Origin Lite — the official MV3 adaptation by the same developer. Blocks ~70-80% of what the full version blocked.",
+        "AdGuard MV3 extension — strong alternative, scores higher than uBlock Lite in tests.",
+        "All non-blocking extensions (password managers, dark mode, tab managers, screenshot tools) are completely unaffected."
+      ]
+    },
+    {
+      "id": "evaluation-criteria",
+      "heading": "How We Evaluated These Extensions",
+      "criteria": [
+        {
+          "name": "MV3 compatibility",
+          "description": "Does it actually work on Chrome right now? (May 2026)"
+        },
+        {
+          "name": "RAM benchmark",
+          "description": "Measured using Chrome Task Manager on a 16GB Windows 11 machine with 15 open tabs. Anything over 80MB idle was flagged."
+        },
+        {
+          "name": "Permission check",
+          "description": "Does the extension request permissions it doesn't actually need?"
+        },
+        {
+          "name": "Privacy audit",
+          "description": "Checked Chrome Web Store privacy disclosure, privacy policy, and whether the extension sends data to third-party analytics."
+        }
+      ]
+    },
+    {
+      "id": "ad-blocking",
+      "heading": "1. Ad Blocking — The MV3-Aware Picks",
+      "extensions": [
+        {
+          "name": "uBlock Origin Lite",
+          "badge": "Best Free for Chrome",
+          "developer": "Raymond Hill",
+          "description": "Official MV3 rebuild from Raymond Hill. Cleanest free choice on Chrome. No Acceptable Ads program, no data selling.",
+          "blocks": ["Standard banner ads", "Pre-roll video ads", "Tracking scripts", "Pop-ups", "Malware domains"],
+          "misses_vs_full": ["Server-Side Ad Injection (SSAI) on YouTube and Twitch", "Advanced dynamic filtering", "Custom element picker"],
+          "ram_usage_mb": 18,
+          "setup_steps": [
+            "Install from Chrome Web Store (verify developer: Raymond Hill)",
+            "Click the icon → Open dashboard",
+            "Under Filtering mode, switch from Basic to Optimal",
+            "Enable: EasyPrivacy, Online Malicious URL Blocklist",
+            "Click Apply changes"
+          ],
+          "best_for": "Chrome users who want a free, private, zero-hassle baseline."
+        },
+        {
+          "name": "AdGuard AdBlocker",
+          "badge": "Best if YouTube Ads Are Your Priority",
+          "description": "AdGuard's MV3 extension consistently outperforms uBlock Origin Lite on streaming ad detection. Scores 100/100 on AdBlock Tester.",
+          "unique_feature": "Stealth Mode — blocks search query leaking, removes tracking URL parameters, and resists browser fingerprinting.",
+          "ram_usage_mb": 42,
+          "youtube_blocking": "More reliable than uBlock Lite in 2026.",
+          "best_for": "Users who watch a lot of YouTube and want stronger tracker protection alongside ad blocking."
+        },
+        {
+          "name": "Blockify",
+          "badge": "Specialist for Streaming Ads",
+          "description": "Detects ad segments on YouTube, Spotify, or Twitch and either skips or mutes them. Uniquely effective where traditional blockers fail.",
+          "ram_usage_mb": 35,
+          "best_for": "Heavy video and music streaming users. Not a general-purpose blocker."
+        }
+      ],
+      "note": "Don't run two ad blockers simultaneously. Pick one and configure it well."
+    },
+    {
+      "id": "passwords",
+      "heading": "2. Password Management",
+      "extensions": [
+        {
+          "name": "Bitwarden",
+          "badge": "Best Overall",
+          "description": "Free, open source, end-to-end encrypted, independently audited (Cure53, 2022 and 2023), completely cross-platform.",
+          "ram_usage_mb": 25,
+          "setup_steps": [
+            "Create account at bitwarden.com (free)",
+            "Install the extension",
+            "Enable two-factor authentication — this is not optional",
+            "Set a strong master passphrase (4+ random words)",
+            "Import passwords from Chrome"
+          ],
+          "free_plan_covers": ["Unlimited passwords", "Unlimited devices", "Secure notes", "Password generator", "Breach alerts"],
+          "best_for": "Everyone. No exceptions."
+        }
+      ]
+    },
+    {
+      "id": "tabs",
+      "heading": "3. Tab Management",
+      "extensions": [
+        {
+          "name": "OneTab",
+          "badge": "Best for RAM Recovery",
+          "description": "Closes all tabs and stores their URLs as a list — recovering RAM instantly. In test with 20 tabs: RAM dropped from 3.1GB to 195MB.",
+          "ram_usage_mb": 12,
+          "best_practices": [
+            "Send all tabs to OneTab at end of workday",
+            "Name your groups descriptively",
+            "Lock important groups so they don't get merged",
+            "Use Share as web page to share links with teammates"
+          ]
+        },
+        {
+          "name": "TabGroup Vault",
+          "description": "Saves Chrome's native tab groups with their names and colors and lets you restore them with one click.",
+          "ram_usage_mb": 15,
+          "best_for": "Users who organize work into Chrome's native tab groups and don't want to lose them on browser restart."
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "heading": "4. Privacy and Tracking Protection",
+      "extensions": [
+        {
+          "name": "Privacy Badger",
+          "badge": "Best Behavioral Tracker Blocker",
+          "description": "Learns which domains are tracking you across sites and blocks them automatically. Catches trackers not on public block lists.",
+          "developer": "Electronic Frontier Foundation (EFF)",
+          "ram_usage_mb": 22,
+          "best_used_alongside": "uBlock Origin Lite. They complement rather than conflict."
+        },
+        {
+          "name": "ClearURLs",
+          "description": "Strips tracking parameters (UTM codes, fbclid, etc.) automatically before you visit the page.",
+          "ram_usage_mb": 8,
+          "note": "Zero configuration. Zero RAM impact."
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "heading": "5. Writing and Grammar",
+      "extensions": [
+        {
+          "name": "Grammarly",
+          "badge": "Best for Daily Writers",
+          "description": "Sends your text to its servers for AI grammar engine analysis. High RAM but saves time on emails, reports, and form submissions.",
+          "ram_usage_mb": 110,
+          "privacy_note": "For sensitive documents (legal briefs, medical records, financial data), disable Grammarly on that specific page.",
+          "free_plan": "Grammar and spelling correction."
+        },
+        {
+          "name": "WordTune",
+          "badge": "Best for Rewriting",
+          "description": "Select any text and get 5-8 alternative phrasings at different tones. Invaluable for non-native English speakers."
+        }
+      ]
+    },
+    {
+      "id": "dark-mode",
+      "heading": "6. Dark Mode and Reading",
+      "extensions": [
+        {
+          "name": "Dark Reader",
+          "badge": "Best Dark Mode Extension",
+          "description": "Applies consistent dark theme to every website with intelligent color adjustment.",
+          "battery_saving": "On OLED screens, reduces screen power consumption by 15-30%.",
+          "ram_usage_mb": 30,
+          "optimal_settings": {
+            "mode": "Filter+",
+            "brightness": "85%",
+            "sync_with_system": true
+          },
+          "limitation": "Some sites look slightly off. Maintain a personal whitelist."
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "heading": "7. Productivity and Focus",
+      "extensions": [
+        {
+          "name": "Todoist",
+          "badge": "Best Task Capture",
+          "description": "Right-click any page or link → Add to Todoist captures it as a task instantly. Stops the habit of leaving tabs open as task reminders.",
+          "ram_usage_mb": 20
+        },
+        {
+          "name": "StayFocusd",
+          "badge": "Best Focus Enforcer",
+          "description": "Blocks distracting sites after a daily time budget runs out. The Nuclear Option blocks all distracting sites for a set period with no way to undo.",
+          "ram_usage_mb": 10
+        }
+      ]
+    },
+    {
+      "id": "devtools",
+      "heading": "8. Developer Tools",
+      "extensions": [
+        {
+          "name": "React Developer Tools",
+          "description": "Adds Components tab and Profiler tab to Chrome DevTools for React application debugging.",
+          "developer": "Facebook's React team",
+          "users": "3M+"
+        },
+        {
+          "name": "Wappalyzer",
+          "description": "Shows complete technology stack of any website — framework, CMS, analytics, CDN, etc."
+        },
+        {
+          "name": "JSON Formatter",
+          "description": "Makes raw JSON responses readable with syntax highlighting and collapsible tree view.",
+          "ram_usage_mb": 5
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "heading": "9. AI-Powered Extensions",
+      "extensions": [
+        {
+          "name": "Monica",
+          "badge": "Best All-Round AI Assistant",
+          "description": "ChatGPT-style assistant sidebar on any webpage. Summarize articles, translate text, rewrite selections, ask questions about page content.",
+          "ram_usage_mb": 45,
+          "privacy_note": "Monica sends selected text to its AI servers. Do not use on pages with sensitive information."
+        },
+        {
+          "name": "Merlin",
+          "description": "Similar to Monica but with access to multiple AI models (GPT-4o, Claude, Gemini)."
+        }
+      ]
+    },
+    {
+      "id": "starter",
+      "heading": "10. The Starter Stack: 5 Extensions for Everyone",
+      "total_ram_mb": 105,
+      "all_free": true,
+      "stack": [
+        {"name": "uBlock Origin Lite", "purpose": "Ad + tracker blocking", "ram_mb": 18, "free": true},
+        {"name": "Bitwarden", "purpose": "Password manager", "ram_mb": 25, "free": true},
+        {"name": "Dark Reader", "purpose": "Dark mode everywhere", "ram_mb": 30, "free": true},
+        {"name": "OneTab", "purpose": "Tab + RAM management", "ram_mb": 12, "free": true},
+        {"name": "Todoist", "purpose": "Task capture", "ram_mb": 20, "free": true}
+      ]
+    }
+  ],
+  "left_out": [
+    {"name": "AdBlock Plus", "reason": "Participates in Acceptable Ads program — advertisers pay to bypass the blocker. Conflict of interest."},
+    {"name": "Honey", "reason": "Owned by PayPal. Collects detailed shopping behavior and browsing data."},
+    {"name": "LastPass", "reason": "Suffered a significant breach in 2022. Bitwarden is the better choice."},
+    {"name": "Full uBlock Origin", "reason": "Doesn't work on standard Chrome in 2026."}
+  ],
+  "faq": [
+    {
+      "question": "Do all of these work on Chrome in May 2026?",
+      "answer": "Yes. Every extension was verified on Chrome 146 and is Manifest V3 compatible."
+    },
+    {
+      "question": "How many extensions should I have active?",
+      "answer": "Keep active extensions under 10. More than that degrades performance and increases security risk."
+    },
+    {
+      "question": "Is Grammarly safe for work documents?",
+      "answer": "For most purposes, yes. For highly confidential documents, disable Grammarly on those specific pages."
+    },
+    {
+      "question": "What is the best setup if I use Chrome on both Windows and Mac?",
+      "answer": "The extensions work identically on both platforms. Sign into Chrome with your Google account — extensions sync automatically."
+    },
+    {
+      "question": "Can I get full uBlock Origin blocking power while staying on Chrome?",
+      "answer": "Install AdGuard's MV3 extension AND add NextDNS as your DNS provider for a two-layer approach."
+    }
+  ],
+  "publisher": "ExtensionTo"
+}

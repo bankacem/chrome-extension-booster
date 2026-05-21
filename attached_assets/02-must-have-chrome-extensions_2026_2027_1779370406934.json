@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "title": "Must-Have Chrome Extensions in 2026 (Tested, Ranked, MV3-Ready)",
+    "description": "The must-have Chrome extensions for 2026 that actually work after Manifest V3. Tested for RAM, privacy, and daily usefulness — no filler, no outdated picks.",
+    "slug": "must-have-chrome-extensions",
+    "date": "2026-05-16",
+    "author": "ExtensionTo Team",
+    "tags": ["must-have", "chrome extensions", "2026", "essential"],
+    "canonical": "https://extensionto.com/must-have-chrome-extensions/"
+  },
+  "introduction": "This list is what actually belongs on your Chrome in 2026 — nothing more, nothing less. Google's Manifest V3 rollout disabled the most-recommended ad blocker. Several previously trusted extensions were sold to bad actors. Chrome itself added features that made some extensions obsolete.",
+  "must_have_criteria": [
+    "Solve a daily problem Chrome itself cannot solve natively",
+    "Work on Chrome 146 with Manifest V3 — no exceptions",
+    "Use under 60MB RAM idle — heavy extensions need exceptional justification",
+    "Request only the permissions it needs",
+    "Have a verified privacy policy with no undisclosed data sales"
+  ],
+  "sections": [
+    {
+      "id": "security",
+      "heading": "Security Layer: The Non-Negotiables",
+      "description": "These two extensions address the two biggest attack vectors: malicious sites and weak passwords.",
+      "extensions": [
+        {
+          "rank": 1,
+          "name": "Bitwarden",
+          "category": "Password Manager",
+          "why_must_have": "Password reuse is the cause of most account takeovers. A password manager with autofill eliminates reuse.",
+          "why_bitwarden": "Free, open source, end-to-end encrypted, independently security-audited, cross-platform. Unlike Chrome's built-in manager, it works in Firefox, Edge, iOS, and Android.",
+          "ram_usage_mb": 25,
+          "must_do_after_installing": [
+            "Enable two-factor authentication on your Bitwarden account",
+            "Generate new passwords for your email and banking accounts immediately",
+            "Enable Vault timeout — set to lock after 15 minutes of inactivity"
+          ],
+          "free_plan_covers": ["Unlimited passwords", "Unlimited devices", "Password generator", "Breach alerts"]
+        },
+        {
+          "rank": 2,
+          "name": "uBlock Origin Lite",
+          "category": "Ad and Malware Blocker",
+          "why_must_have": "Ad networks regularly serve malvertising. Blocking ads is a security measure, not just comfort.",
+          "context_2026": "Full uBlock Origin no longer works on Chrome. uBlock Origin Lite is the official MV3 replacement by Raymond Hill.",
+          "ram_usage_mb": 18,
+          "setup_steps": [
+            "Click the extension icon → Open dashboard",
+            "Change filtering mode from Basic to Optimal",
+            "Enable EasyPrivacy and Online Malicious URL Blocklist",
+            "Click Apply changes"
+          ],
+          "stronger_blocking_tip": "Switch to Firefox for full uBlock Origin, or add NextDNS as your DNS resolver alongside uBlock Origin Lite."
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "heading": "Privacy Layer: What Chrome Doesn't Do By Default",
+      "description": "Chrome is made by Google — an advertising company. Its default settings optimize for Google's business, not your privacy.",
+      "extensions": [
+        {
+          "rank": 3,
+          "name": "ClearURLs",
+          "description": "Removes tracking parameters silently before you visit the page. The link still works — you just arrive without being identified.",
+          "ram_usage_mb": 8,
+          "permissions": "Minimal",
+          "data_collection": "None. Runs 100% locally."
+        },
+        {
+          "rank": 4,
+          "name": "Cookie AutoDelete",
+          "description": "Automatically deletes cookies when you close a tab — keeping whitelisted cookies and removing everything else.",
+          "ram_usage_mb": 20,
+          "setup_steps": [
+            "Install Cookie AutoDelete",
+            "Go to settings → Whitelist sites you want to stay logged into",
+            "Enable Auto-clean — cookies from unwhitelisted sites delete on tab close"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "heading": "Productivity Layer: Daily Workflow Upgrades",
+      "extensions": [
+        {
+          "rank": 5,
+          "name": "OneTab",
+          "description": "When switching tasks, send all open tabs to OneTab with one click. Open only what you need for the next task.",
+          "ram_recovered_test": "From 2.8GB (22 tabs) to 180MB — a 94% RAM reduction.",
+          "ram_usage_mb": 12,
+          "correct_usage": "Use it for task switching, not as a bookmark alternative."
+        },
+        {
+          "rank": 6,
+          "name": "Todoist for Chrome",
+          "description": "Right-click any page or link → Add to Todoist. Give it a due date, assign it to a project, close the tab.",
+          "ram_usage_mb": 20,
+          "solves": "Tabs being used as a to-do list."
+        }
+      ]
+    },
+    {
+      "id": "comfort",
+      "heading": "Comfort Layer: Browsing Quality of Life",
+      "extensions": [
+        {
+          "rank": 7,
+          "name": "Dark Reader",
+          "description": "Applies a real dark theme to every site — intelligent color adjustment, not just inversion.",
+          "battery_benefit": "On OLED screens, reduces screen energy consumption by 15-30%.",
+          "ram_usage_mb": 30,
+          "best_settings": {
+            "brightness": "85%",
+            "contrast": "90%",
+            "mode": "Filter+",
+            "sync_with_system": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "situational",
+      "heading": "Situational Extensions: Install Only If You Need Them",
+      "description": "Excellent extensions that belong on some browsers but not everyone's.",
+      "extensions": [
+        {"name": "Grammarly", "install_if": "Write a lot in English", "ram_mb": 110},
+        {"name": "React Developer Tools", "install_if": "Build React applications", "ram_mb": 25},
+        {"name": "Wappalyzer", "install_if": "Research competitor tech stacks", "ram_mb": 20},
+        {"name": "GoFullPage", "install_if": "Frequently take full-page screenshots", "ram_mb": 30},
+        {"name": "StayFocusd", "install_if": "Get distracted by social media", "ram_mb": 10},
+        {"name": "Monica (AI)", "install_if": "Want AI summarization while browsing", "ram_mb": 45}
+      ]
+    },
+    {
+      "id": "minimum",
+      "heading": "The 4-Extension Minimum Stack",
+      "description": "Best security and browsing experience with absolute minimum setup.",
+      "total_ram_mb": 81,
+      "stack": [
+        {"name": "Bitwarden", "problem_solved": "Password security", "ram_mb": 25},
+        {"name": "uBlock Origin Lite", "problem_solved": "Ads and malware", "ram_mb": 18},
+        {"name": "ClearURLs", "problem_solved": "Tracking link parameters", "ram_mb": 8},
+        {"name": "Dark Reader", "problem_solved": "Eye strain and OLED battery", "ram_mb": 30}
+      ]
+    },
+    {
+      "id": "uninstall",
+      "heading": "What to Uninstall Today",
+      "recommendations": [
+        {"name": "Full uBlock Origin (not Lite)", "reason": "Disabled or running degraded on Chrome. Replace with uBlock Origin Lite or AdGuard."},
+        {"name": "AdBlock Plus", "reason": "Acceptable Ads program lets advertisers pay to bypass the blocker."},
+        {"name": "Unused extensions", "reason": "Every inactive extension is a security surface and RAM consumer."},
+        {"name": "Extensions with no recent updates", "reason": "Last updated 2+ years ago = abandoned software, frequently sold for malicious tracking."},
+        {"name": "Shopping assistants", "reason": "Most collect detailed purchase behavior and browsing data."}
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "How do I know which extensions I currently have installed?",
+      "answer": "Go to chrome://extensions. Enable Developer mode to see all installed extensions."
+    },
+    {
+      "question": "Do must-have extensions differ between Windows and Mac?",
+      "answer": "No. The Chrome extension ecosystem is identical on Windows and Mac."
+    },
+    {
+      "question": "Can I use these extensions on Chromebooks?",
+      "answer": "Yes. Chromebooks support all Chrome Web Store extensions."
+    },
+    {
+      "question": "Should I install extensions recommended by websites I visit?",
+      "answer": "Never. Only install extensions you sought out yourself from the Chrome Web Store."
+    },
+    {
+      "question": "How often should I audit my extensions?",
+      "answer": "Once a month. Review at chrome://extensions and remove anything unused."
+    }
+  ],
+  "publisher": "ExtensionTo"
+}
