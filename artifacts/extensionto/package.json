@@ -82,7 +82,9 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",
+    "@types/markdown-it": "^14.1.2",
     "js-yaml": "^4.1.1",
+    "markdown-it": "^14.1.1",
     "node-cron": "^4.2.1",
     "react-helmet-async": "^3.0.0",
     "react-router-dom": "^7.15.0",

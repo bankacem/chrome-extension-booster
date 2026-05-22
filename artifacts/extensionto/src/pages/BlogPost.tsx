@@ -11,10 +11,18 @@ import DirectDownloadSection from "@/components/seo/DirectDownloadSection";
 import VideoPlayer from "@/components/blog/VideoPlayer";
 import { useToast } from "@/hooks/use-toast";
 import yaml from "js-yaml";
+import MarkdownIt from "markdown-it";
 import { getPartitionedPath, resolveImagePath } from "@/utils/articlePath";
 import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
 import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
 import { findLinkMatches, addInternalLinks } from "@/lib/internalLinking";
+
+const md = new MarkdownIt({
+  html: true,
+  linkify: true,
+  typographer: true,
+  breaks: false,
+});
 
 interface Article {
   id: string;
@@ -54,6 +62,9 @@ const processArticleContent = (content: string) => {
   if (!content) return "";
 
   let processed = content;
+
+  // 0. Convert Markdown to HTML (handles both pure-markdown and mixed HTML/markdown content)
+  processed = md.render(processed);
 
   // 1. Resolve image paths — render raw from resolveImagePath without optimization
   processed = processed.replace(/<img([^>]*)>/gi, (match, attributes) => {
