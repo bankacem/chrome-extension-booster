@@ -22,6 +22,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://extensionto.com/blog/best-password-manager-chrome-extension</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-22</lastmod>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/can-chrome-extensions-steal-passwords</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1181,8 +1187,8 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-03-31</lastmod>
   </url>
   <url>
@@ -1649,8 +1655,8 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
@@ -1661,8 +1667,8 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-full-page-screenshot-chrome-extension-2026-free-no-login-required</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
@@ -2723,8 +2729,8 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-chrome-extensions-for-privacy-2026-protect-your-online-identity</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>

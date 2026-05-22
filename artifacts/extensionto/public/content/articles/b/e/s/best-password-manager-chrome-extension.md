@@ -5,13 +5,13 @@ description: "The best password manager Chrome extensions in 2026. Bitwarden, 1P
 meta_description: "The best password manager Chrome extensions in 2026. Bitwarden, 1Password, KeePass, and NordPass compared by security, features, price, and offline access."
 category: "Chrome Extensions"
 author: "ExtensionTo Editorial"
-status: "scheduled"
-published_at: null
+status: "published"
+published_at: "2026-05-22T12:55:09.836Z"
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
 
-scheduled_at: "2026-05-20T10:00:00.000Z"---
+scheduled_at: null---
 
 # Best Password Manager Chrome Extension (2026) — Complete Guide
 

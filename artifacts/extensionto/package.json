@@ -10,7 +10,8 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "sync-articles": "node scripts/sync-articles.mjs",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
-    "sync": "node scripts/sync-articles.mjs && node scripts/generate-sitemap.mjs"
+    "sync": "node scripts/sync-articles.mjs && node scripts/generate-sitemap.mjs",
+    "generate-images": "node scripts/generate-article-images.mjs"
   },
   "devDependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -85,6 +86,8 @@
     "@types/markdown-it": "^14.1.2",
     "js-yaml": "^4.1.1",
     "markdown-it": "^14.1.1",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-attrs": "^4.5.0",
     "node-cron": "^4.2.1",
     "react-helmet-async": "^3.0.0",
     "react-router-dom": "^7.15.0",

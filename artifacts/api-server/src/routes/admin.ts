@@ -267,7 +267,7 @@ router.post("/admin/bulk", async (req, res) => {
   const { action, slugs } = req.body as { action: string; slugs: string[] };
   const results: { slug: string; ok: boolean; error?: string }[] = [];
   for (const slug of (slugs || [])) {
-    const fakeRes = { status: 200, headersSent: false, json() {}, status(_: number) { return this; } } as unknown as Response;
+    const fakeRes = { statusCode: 200, headersSent: false, json() {}, status(_: number) { return this; } } as unknown as Response;
     try {
       if (action === "publish") await doPublish(slug, new Date().toISOString(), fakeRes);
       else if (action === "draft") await doUnpublish(slug, fakeRes);
@@ -284,7 +284,7 @@ router.post("/admin/check-scheduled", async (req, res) => {
   const now = Date.now();
   const toPublish = drafts.filter((d) => d.status === "scheduled" && d.scheduled_at && new Date(d.scheduled_at).getTime() <= now);
   for (const d of toPublish) {
-    const fakeRes = { status: 200, headersSent: false, json() {}, status(_: number) { return this; } } as unknown as Response;
+    const fakeRes = { statusCode: 200, headersSent: false, json() {}, status(_: number) { return this; } } as unknown as Response;
     await doPublish(d.slug, d.scheduled_at!, fakeRes);
     appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: "scheduled", status: "success" });
   }
@@ -307,7 +307,7 @@ router.post("/admin/auto-publish", async (req, res) => {
   const published: string[] = [];
   for (const d of due) {
     try {
-      const fakeRes = { status: 200, headersSent: false, json() {}, status(_: number) { return this; } } as unknown as Response;
+      const fakeRes = { statusCode: 200, headersSent: false, json() {}, status(_: number) { return this; } } as unknown as Response;
       await doPublish(d.slug, new Date().toISOString(), fakeRes);
       published.push(d.slug);
       appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: triggeredBy, status: "success" });

@@ -12,6 +12,7 @@ import VideoPlayer from "@/components/blog/VideoPlayer";
 import { useToast } from "@/hooks/use-toast";
 import yaml from "js-yaml";
 import MarkdownIt from "markdown-it";
+import markdownItAttrs from "markdown-it-attrs";
 import { getPartitionedPath, resolveImagePath } from "@/utils/articlePath";
 import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
 import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
@@ -22,6 +23,10 @@ const md = new MarkdownIt({
   linkify: true,
   typographer: true,
   breaks: false,
+}).use(markdownItAttrs, {
+  leftDelimiter: "{",
+  rightDelimiter: "}",
+  allowedAttributes: ["id", "class"],
 });
 
 interface Article {
@@ -585,6 +590,22 @@ const BlogPost = () => {
             transition={{ delay: 0.3 }}
             className="prose prose-lg dark:prose-invert max-w-none"
             dangerouslySetInnerHTML={{ __html: article.content }}
+            onClick={(e) => {
+              const target = e.target as HTMLElement;
+              const link = target.closest("a");
+              if (!link || !link.href) return;
+              const isInternal = link.href.startsWith(window.location.origin) || link.href.startsWith("/");
+              fetch("/api/analytics/link", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  slug: article.slug,
+                  url: link.href,
+                  type: isInternal ? "internal" : "external",
+                  text: (link.textContent || "").slice(0, 120),
+                }),
+              }).catch(() => {});
+            }}
           />
 
           {/* Smart Extension Bridge: shows internal extension CTA when matched */}
