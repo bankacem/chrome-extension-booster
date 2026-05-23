@@ -486,13 +486,15 @@ function adminApiPlugin(): Plugin {
         next();
       });
 
-      // ── Daily cron: publish 2 drafts at 09:00 every day ────────────────────
-      cron.schedule("0 9 * * *", () => {
+      // ── Cron: publish due drafts at 09:00 AND 15:00 UTC every day ──────────
+      // IMPORTANT: articles are scheduled at both 09:00 and 15:00 slots.
+      // Running only at 09:00 means all 15:00 articles were never auto-published.
+      cron.schedule("0 9,15 * * *", () => {
         runScheduledPublish().catch((e) =>
           console.error("[SCHEDULER] Unexpected error:", e),
         );
       });
-      console.log("[SCHEDULER] Cron registered — next run:", nextRunAt());
+      console.log("[SCHEDULER] Cron registered (09:00 + 15:00 UTC) — next run:", nextRunAt());
 
       server.middlewares.use(async (req, res, next) => {
         if (!req.url?.startsWith("/api/admin")) return next();

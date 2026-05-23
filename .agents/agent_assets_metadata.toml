@@ -6,6 +6,12 @@ uri = "file://artifacts/extensionto/public/images/blog/useful-chrome-extensions.
 type = "image"
 title = "generated_image"
 
+[[generated]]
+id = "isOTSRpla3gE7qznoBzm6"
+uri = "file://artifacts/extensionto/public/images/author/daniel-carter.png"
+type = "image"
+title = "daniel-carter-author-headshot"
+
 [[outputs]]
 id = "qZcxT3rQVxswb4B-EE2OJ"
 uri = "file://AUDIT_REPORT.md"

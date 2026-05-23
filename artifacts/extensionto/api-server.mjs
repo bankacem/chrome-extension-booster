@@ -343,18 +343,18 @@ async function runScheduledPublish() {
   console.log("[SCHEDULER] Completed. Published:", publishedSlugs.join(", ") || "(none)");
 }
 
-// Register cron — schedule at 09:00 every day
+// Register cron — schedule at 09:00 AND 15:00 every day (both daily slots)
 let cronRegistered = false;
 async function startCron() {
   try {
     // dynamic import node-cron (it's a CJS module in this workspace)
     const nodeCron = await import("node-cron");
     const cron = nodeCron.default || nodeCron;
-    cron.schedule("0 9 * * *", () => {
+    cron.schedule("0 9,15 * * *", () => {
       runScheduledPublish().catch((e) => console.error("[SCHEDULER] Error:", e));
     });
     cronRegistered = true;
-    console.log("[SCHEDULER] Cron registered — next run:", nextRunAt());
+    console.log("[SCHEDULER] Cron registered (09:00 + 15:00 UTC) — next run:", nextRunAt());
   } catch (e) {
     console.warn("[SCHEDULER] node-cron not available, skipping cron:", e.message);
   }

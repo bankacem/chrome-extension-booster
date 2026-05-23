@@ -533,9 +533,17 @@ const BlogPost = () => {
                 <Clock className="h-4 w-4" />
                 {article.read_time} min read
               </span>
-              <span className="flex items-center gap-1">
-                <User className="h-4 w-4" />
-                {article.author}
+              {/* Author with professional photo — always Daniel Carter */}
+              <span className="flex items-center gap-2">
+                <img
+                  src="/images/author/daniel-carter.png"
+                  alt="Daniel Carter"
+                  width={28}
+                  height={28}
+                  className="h-7 w-7 rounded-full object-cover ring-2 ring-primary/20"
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
+                />
+                <span className="font-medium text-foreground">Daniel Carter</span>
               </span>
             </div>
 
@@ -643,6 +651,35 @@ const BlogPost = () => {
               {article.keywords.join(", ")}
             </div>
           )}
+
+          {/* ── Author Bio Card ──────────────────────────────────────────────── */}
+          <div className="mt-10 flex gap-5 rounded-2xl border border-border bg-card p-6">
+            <div className="shrink-0">
+              <img
+                src="/images/author/daniel-carter.png"
+                alt="Daniel Carter"
+                width={80}
+                height={80}
+                className="h-20 w-20 rounded-full object-cover ring-2 ring-primary/30"
+                onError={(e) => {
+                  const el = e.currentTarget as HTMLImageElement;
+                  el.style.display = "none";
+                }}
+              />
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary">
+                Written by
+              </p>
+              <h3 className="mt-0.5 font-heading text-lg font-bold">
+                Daniel Carter
+              </h3>
+              <p className="mt-1 text-sm text-muted-foreground leading-relaxed">
+                Chrome extensions researcher and tech writer with 8+ years covering browser productivity tools.
+                Daniel tests every extension hands-on before writing about it — no sponsored fluff, just honest picks.
+              </p>
+            </div>
+          </div>
         </article>
 
         {/* Related Articles */}

@@ -5,9 +5,9 @@ description: "Chrome extensions built for Windows users — covering system inte
 meta_description: "Chrome extensions built for Windows users — covering system integration, Windows-specific workflows, and extensions that work best with Windows features in 2026."
 category: "Chrome Extensions"
 author: "ExtensionTo Team"
-status: "scheduled"
-published_at: null
-scheduled_at: "2026-05-24T15:00:00.000Z"
+status: "published"
+published_at: "2026-05-23T20:24:04.097Z"
+scheduled_at: null
 created_at: "2026-05-16T00:00:00.000Z"
 updated_at: "2026-05-16T00:00:00.000Z"
 read_time: 7

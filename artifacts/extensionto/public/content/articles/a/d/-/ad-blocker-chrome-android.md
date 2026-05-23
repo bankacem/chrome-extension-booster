@@ -5,13 +5,13 @@ description: "Chrome for Android doesn't support ad blocker extensions. Here's w
 meta_description: "Chrome for Android doesn't support ad blocker extensions. Here's what actually works for blocking ads on Android Chrome in 2026 — no root required."
 category: "Chrome Extensions"
 author: "ExtensionTo Team"
-status: draft
-published_at: null
+status: "published"
+published_at: "2026-05-23T20:24:04.110Z"
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
 
-scheduled_at: "2026-05-25T09:00:00.000Z"---
+scheduled_at: null---
 
 # Ad Blocker for Chrome Android in 2026 (What Actually Works)
 
