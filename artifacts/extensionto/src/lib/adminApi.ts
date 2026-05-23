@@ -183,4 +183,15 @@ export const adminApi = {
       { method: "POST" },
       NO_RETRY,
     ),
+
+  /**
+   * Force-publish the next N scheduled articles immediately, ignoring scheduled time.
+   * Designed for manual override — bypasses daily limit and due-time checks.
+   */
+  forcePublish: (limit = 2) =>
+    apiFetch<{ ok: boolean; published: string[]; message?: string }>(
+      "/api/admin/force-publish",
+      { method: "POST", body: JSON.stringify({ limit }) },
+      NO_RETRY,
+    ),
 };

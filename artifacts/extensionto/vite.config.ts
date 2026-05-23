@@ -719,6 +719,34 @@ function adminApiPlugin(): Plugin {
             return;
           }
 
+          // POST /api/admin/force-publish  — publish next N scheduled articles ignoring time
+          if (pathname === "/api/admin/force-publish" && method === "POST") {
+            const body = await readBody(req);
+            const limit = Math.min(20, Math.max(1, parseInt(String((body as Record<string, unknown>).limit ?? "2"))));
+            const drafts: Art[] = readJson(DRAFTS_INDEX);
+            const due = drafts
+              .filter((d) => d.status === "scheduled" && d.scheduled_at)
+              .sort((a, b) => new Date(a.scheduled_at!).getTime() - new Date(b.scheduled_at!).getTime())
+              .slice(0, limit);
+            if (due.length === 0) {
+              if (!res.headersSent) res.end(JSON.stringify({ ok: true, published: [], message: "No scheduled articles found" }));
+              return;
+            }
+            const published: string[] = [];
+            for (const d of due) {
+              try {
+                const fake = { statusCode: 200, headersSent: false, end() {} } as unknown as ServerResponse;
+                await doPublish(d.slug, new Date().toISOString(), fake);
+                published.push(d.slug);
+                appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: "manual", status: "success" });
+              } catch (e) {
+                appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: "manual", status: "failed", error: String(e) });
+              }
+            }
+            if (!res.headersSent) res.end(JSON.stringify({ ok: true, published }));
+            return;
+          }
+
           res.statusCode = 404;
           res.end(JSON.stringify({ error: "Unknown route: " + pathname }));
         } catch (err: unknown) {
@@ -741,16 +769,6 @@ export default defineConfig({
     port: parseInt(process.env.PORT || "5000"),
     host: "0.0.0.0",
     allowedHosts: true,
-    // Proxy /api/* to the standalone API server on port 3001.
-    // This ensures POST/PATCH/DELETE requests from the browser reach the API
-    // correctly even when going through the Replit HTTPS proxy.
-    proxy: {
-      "/api": {
-        target: "http://localhost:3001",
-        changeOrigin: true,
-        secure: false,
-      },
-    },
     // Prevent Vite from watching content JSON files — writing articles-index.json
     // or sitemap.xml during a publish would trigger a HMR "full-reload" WebSocket
     // message that causes the browser to navigate away before the fetch response

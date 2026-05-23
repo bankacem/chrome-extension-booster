@@ -5,9 +5,9 @@ description: "New to Chrome extensions? This beginner's guide explains what they
 meta_description: "New to Chrome extensions? This beginner's guide explains what they are, how to install them safely, and the 5 best starter extensions for 2026."
 category: "Chrome Extensions"
 author: "ExtensionTo Team"
-status: "scheduled"
-published_at: null
-scheduled_at: "2026-05-24T09:00:00.000Z"
+status: "published"
+published_at: "2026-05-23T19:59:51.280Z"
+scheduled_at: null
 created_at: "2026-05-16T00:00:00.000Z"
 updated_at: "2026-05-16T00:00:00.000Z"
 read_time: 6

@@ -5,13 +5,13 @@ description: "Ranked comparison of free ad blockers for Chrome in 2026 — block
 meta_description: "Ranked comparison of free ad blockers for Chrome in 2026 — blocking effectiveness, RAM usage, privacy, and YouTube performance. No sponsored picks."
 category: "Chrome Extensions"
 author: "ExtensionTo Team"
-status: draft
+status: "scheduled"
 published_at: null
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
 
-scheduled_at: "2026-06-01T09:00:00.000Z"---
+scheduled_at: "2026-05-25T09:00:00.000Z"---
 
 # Best Free Ad Blocker for Chrome 2026 (Ranked by Actual Blocking Power)
 

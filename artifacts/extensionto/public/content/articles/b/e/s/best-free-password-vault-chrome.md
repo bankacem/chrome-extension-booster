@@ -5,13 +5,13 @@ description: "The best free password vaults for Chrome in 2026. Secure, unlimite
 meta_description: "The best free password vaults for Chrome in 2026. Secure, unlimited, and genuinely free — no device limits or paywalled autofill."
 category: "Chrome Extensions"
 author: "ExtensionTo Editorial"
-status: draft
-published_at: null
+status: "published"
+published_at: "2026-05-23T20:00:00.000Z"
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
 
-scheduled_at: "2026-06-02T09:00:00.000Z"---
+scheduled_at: null---
 
 # Best Free Password Vault for Chrome (2026)
 

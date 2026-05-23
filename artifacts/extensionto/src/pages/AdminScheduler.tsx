@@ -4,6 +4,7 @@ import {
   CalendarClock, Globe, Clock, CheckCircle2, XCircle, Loader2,
   RefreshCw, Zap, Calendar, AlertCircle, ChevronRight, Eye,
   ListChecks, CalendarDays, Activity, TrendingUp, CalendarRange,
+  SendHorizonal,
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
@@ -98,6 +99,8 @@ export default function AdminScheduler() {
   const [loadingLog, setLoadingLog] = useState(true);
   const [publishing, setPublishing] = useState(false);
   const [autoPublishing, setAutoPublishing] = useState(false);
+  const [forcePublishing, setForcePublishing] = useState(false);
+  const [forceLimit, setForceLimit] = useState(2);
   const [bulkOpen, setBulkOpen] = useState(false);
   const [cancellingSlug, setCancellingSlug] = useState<string | null>(null);
 
@@ -172,6 +175,30 @@ export default function AdminScheduler() {
       toast({ title: "Publish failed", description: String(e), variant: "destructive" });
     } finally {
       setPublishing(false);
+    }
+  };
+
+  const handleForcePublish = async () => {
+    setForcePublishing(true);
+    try {
+      const res = await adminApi.forcePublish(forceLimit);
+      if (res.published.length > 0) {
+        toast({
+          title: `✅ تم نشر ${res.published.length} مقال يدوياً`,
+          description: res.published.map(s => `• ${s}`).join("\n"),
+        });
+        invalidateCache();
+        await Promise.all([loadQueue(true), loadLog(), loadDrafts(true)]);
+      } else {
+        toast({
+          title: res.message ?? "لا توجد مقالات مجدولة",
+          variant: "destructive",
+        });
+      }
+    } catch (e) {
+      toast({ title: "فشل النشر", description: String(e), variant: "destructive" });
+    } finally {
+      setForcePublishing(false);
     }
   };
 
@@ -304,13 +331,63 @@ export default function AdminScheduler() {
             </motion.div>
           )}
 
+          {/* ── Manual Force Publish ── */}
+          <motion.div
+            initial={{ opacity: 0, y: -4 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="rounded-xl border-2 border-primary/30 bg-primary/5 p-4"
+          >
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h3 className="flex items-center gap-2 font-semibold text-sm">
+                  <SendHorizonal className="h-4 w-4 text-primary" />
+                  نشر يدوي فوري
+                </h3>
+                <p className="mt-0.5 text-xs text-muted-foreground">
+                  انشر المقالات المجدولة التالية الآن بغض النظر عن وقت الجدولة
+                </p>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1 rounded-lg border border-border bg-background">
+                  <button
+                    onClick={() => setForceLimit(Math.max(1, forceLimit - 1))}
+                    className="px-2 py-1 text-sm font-bold text-muted-foreground hover:text-foreground"
+                  >−</button>
+                  <span className="w-8 text-center text-sm font-semibold">{forceLimit}</span>
+                  <button
+                    onClick={() => setForceLimit(Math.min(10, forceLimit + 1))}
+                    className="px-2 py-1 text-sm font-bold text-muted-foreground hover:text-foreground"
+                  >+</button>
+                </div>
+                <Button
+                  onClick={handleForcePublish}
+                  disabled={forcePublishing || queue.length === 0}
+                  className="gap-1.5"
+                >
+                  {forcePublishing
+                    ? <Loader2 className="h-4 w-4 animate-spin" />
+                    : <SendHorizonal className="h-4 w-4" />}
+                  انشر {forceLimit} الآن
+                </Button>
+              </div>
+            </div>
+            {queue.length > 0 && (
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {queue.slice(0, forceLimit).map((q) => (
+                  <span key={q.slug} className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary truncate max-w-[200px]">
+                    {q.title}
+                  </span>
+                ))}
+              </div>
+            )}
+          </motion.div>
+
           {/* Daily limit info */}
           <div className="flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-3 text-sm">
             <Activity className="h-4 w-4 shrink-0 text-primary" />
             <span className="text-muted-foreground">
-              Daily limit: <span className="font-semibold text-foreground">{DAILY_LIMIT} articles/day</span>.
-              Auto-publish checks scheduled articles each time you open this page.
-              Use "Run Auto-Publish" to trigger it manually.
+              الحد اليومي التلقائي: <span className="font-semibold text-foreground">{DAILY_LIMIT} مقالات/يوم</span>.
+              النشر اليدوي الفوري لا يخضع للحد اليومي.
             </span>
           </div>
 

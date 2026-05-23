@@ -580,6 +580,34 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
+    // POST /api/admin/force-publish  — publish next N scheduled articles ignoring time
+    if (pathname === "/api/admin/force-publish" && method === "POST") {
+      const body = await readBody(req);
+      const limit = Math.min(20, Math.max(1, parseInt(String(body.limit ?? "2"))));
+      const drafts = readJson(DRAFTS_INDEX);
+      const due = drafts
+        .filter((d) => d.status === "scheduled" && d.scheduled_at)
+        .sort((a, b) => new Date(a.scheduled_at).getTime() - new Date(b.scheduled_at).getTime())
+        .slice(0, limit);
+      if (due.length === 0) {
+        json(res, { ok: true, published: [], message: "No scheduled articles found" });
+        return;
+      }
+      const published = [];
+      for (const d of due) {
+        try {
+          const fake = { headersSent: false, writeHead() {}, end() {} };
+          await doPublish(d.slug, new Date().toISOString(), fake);
+          published.push(d.slug);
+          appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: "manual", status: "success" });
+        } catch (e) {
+          appendPublishLog({ slug: d.slug, title: d.title, published_at: new Date().toISOString(), triggered_by: "manual", status: "failed", error: String(e) });
+        }
+      }
+      json(res, { ok: true, published });
+      return;
+    }
+
     json(res, { error: "Unknown route: " + pathname }, 404);
   } catch (err) {
     console.error("[api-server] Error:", err);
