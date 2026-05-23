@@ -10,7 +10,8 @@ published_at: null
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
----
+
+scheduled_at: "2026-05-31T09:00:00.000Z"---
 
 # Best Chrome Extensions List 2026 — 30 Picks by Category (MV3 Updated)
 

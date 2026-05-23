@@ -10,7 +10,8 @@ published_at: null
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
----
+
+scheduled_at: "2026-07-08T09:00:00.000Z"---
 
 # The Great Suspender Chrome — What Happened & Best Alternatives (2026)
 

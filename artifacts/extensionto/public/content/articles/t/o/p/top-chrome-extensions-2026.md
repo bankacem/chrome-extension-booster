@@ -5,8 +5,8 @@ description: "The definitive top Chrome extensions list for 2026 — updated for
 meta_description: "The definitive top Chrome extensions list for 2026 — updated for Manifest V3, tested for RAM, privacy-vetted. No outdated picks, no sponsored fillers."
 category: "Chrome Extensions"
 author: "ExtensionTo Team"
-status: "draft"
-published_at: null
+status: "published"
+published_at: "2026-05-23T19:32:54.739Z"
 scheduled_at: null
 created_at: "2026-05-16T00:00:00.000Z"
 updated_at: "2026-05-16T00:00:00.000Z"

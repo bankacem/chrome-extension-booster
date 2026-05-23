@@ -10,7 +10,8 @@ published_at: null
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
----
+
+scheduled_at: "2026-06-24T15:00:00.000Z"---
 
 # Fastest Ad Blocker for Chrome 2026 (Benchmark Test Results)
 

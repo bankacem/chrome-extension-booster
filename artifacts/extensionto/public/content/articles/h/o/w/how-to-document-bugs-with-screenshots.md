@@ -10,7 +10,7 @@ keywords: ["how to document bugs with screenshots", "bug tracking", "screenshots
 author: "Daniel Carter"
 status: draft
 published_at: null
-scheduled_at: null
+scheduled_at: "2026-07-16T09:00:00.000Z"
 created_at: "2026-05-17T01:07:29.249Z"
 updated_at: "2026-05-17T01:07:29.249Z"
 read_time: 4

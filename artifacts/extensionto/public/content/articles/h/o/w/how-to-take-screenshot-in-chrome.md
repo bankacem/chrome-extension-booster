@@ -10,7 +10,7 @@ keywords: ["how to take screenshot in chrome", "screenshot", "chrome", "producti
 author: "Daniel Carter"
 status: draft
 published_at: null
-scheduled_at: null
+scheduled_at: "2026-07-27T15:00:00.000Z"
 created_at: "2026-05-17T01:07:29.249Z"
 updated_at: "2026-05-17T01:07:29.249Z"
 read_time: 3

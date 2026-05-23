@@ -10,7 +10,8 @@ published_at: null
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
----
+
+scheduled_at: "2026-06-11T09:00:00.000Z"---
 
 # Chrome Ad Blocker Mobile 2026 — Every Working Method Explained
 

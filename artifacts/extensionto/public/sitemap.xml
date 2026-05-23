@@ -22,6 +22,18 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://extensionto.com/blog/must-have-chrome-extensions</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-23</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/top-chrome-extensions-2026</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-23</lastmod>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/best-password-manager-chrome-extension</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -359,44 +371,44 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/boost-your-workflow-the-best-chrome-extensions-for-focus-and-productivity</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/enhance-your-online-experience-top-chrome-extensions-to-improve-browsing-experience</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/mastering-the-art-of-browser-productivity-a-comprehensive-guide-on-how-to-manage-chrome-extensions</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/how-to-install-chrome-extensions-manually-a-step-by-step-guide</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/how-to-update-chrome-extensions-a-step-by-step-guide-to-enhancing-your-browser-experience</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/how-to-disable-chrome-extensions-a-step-by-step-guide-to-simplifying-your-browser</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
@@ -1187,8 +1199,8 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <lastmod>2026-03-31</lastmod>
   </url>
   <url>
@@ -1655,8 +1667,8 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
@@ -1667,8 +1679,8 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-full-page-screenshot-chrome-extension-2026-free-no-login-required</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
@@ -2729,8 +2741,8 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-chrome-extensions-for-privacy-2026-protect-your-online-identity</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <lastmod>2026-04-23</lastmod>
   </url>
   <url>
@@ -3325,7 +3337,7 @@
     <loc>https://extensionto.com/blog/best-website-blocker-schedule-chrome-2026</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-23</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/extension/quick-screenshot-lite</loc>

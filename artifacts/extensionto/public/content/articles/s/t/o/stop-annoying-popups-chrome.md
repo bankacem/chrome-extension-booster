@@ -10,7 +10,8 @@ published_at: null
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
----
+
+scheduled_at: "2026-07-06T09:00:00.000Z"---
 
 # Stop Annoying Popups in Chrome Once and For All (2026 Guide)
 

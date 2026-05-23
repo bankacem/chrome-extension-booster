@@ -10,7 +10,7 @@ keywords: ["is ghostery safe 2026", "ghostery", "privacy", "ad blocker", "chrome
 author: "Daniel Carter"
 status: draft
 published_at: null
-scheduled_at: null
+scheduled_at: "2026-07-30T09:00:00.000Z"
 created_at: "2026-05-17T01:07:29.249Z"
 updated_at: "2026-05-17T01:07:29.249Z"
 read_time: 3

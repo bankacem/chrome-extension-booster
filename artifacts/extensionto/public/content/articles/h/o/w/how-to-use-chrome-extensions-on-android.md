@@ -10,7 +10,7 @@ keywords: ["how to use chrome extensions on android", "chrome extensions", "andr
 author: "Daniel Carter"
 status: draft
 published_at: null
-scheduled_at: null
+scheduled_at: "2026-07-28T15:00:00.000Z"
 created_at: "2026-05-17T01:07:29.249Z"
 updated_at: "2026-05-17T01:07:29.249Z"
 read_time: 3

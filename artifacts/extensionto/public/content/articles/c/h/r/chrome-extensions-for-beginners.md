@@ -7,7 +7,7 @@ category: "Chrome Extensions"
 author: "ExtensionTo Team"
 status: "scheduled"
 published_at: null
-scheduled_at: "2999-01-01T00:00:00.000Z"
+scheduled_at: "2026-05-24T09:00:00.000Z"
 created_at: "2026-05-16T00:00:00.000Z"
 updated_at: "2026-05-16T00:00:00.000Z"
 read_time: 6

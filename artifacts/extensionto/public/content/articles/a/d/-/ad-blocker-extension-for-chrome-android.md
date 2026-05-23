@@ -10,7 +10,8 @@ published_at: null
 updated_at: "2026-05-19T22:19:28.081Z"
 created_at: "2026-05-19T22:19:28.081Z"
 read_time: 5
----
+
+scheduled_at: "2026-05-25T15:00:00.000Z"---
 
 # Ad Blocker Extension for Chrome Android 2026 — The Real Options
 

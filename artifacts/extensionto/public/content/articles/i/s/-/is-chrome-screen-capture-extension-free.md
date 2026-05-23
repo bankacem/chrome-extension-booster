@@ -10,7 +10,7 @@ keywords: ["is chrome screen capture extension free", "screenshot", "screen capt
 author: "Daniel Carter"
 status: draft
 published_at: null
-scheduled_at: null
+scheduled_at: "2026-07-29T09:00:00.000Z"
 created_at: "2026-05-17T01:07:29.249Z"
 updated_at: "2026-05-17T01:07:29.249Z"
 read_time: 3
