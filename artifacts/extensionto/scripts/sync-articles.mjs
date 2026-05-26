@@ -16,6 +16,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import yaml from "js-yaml";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ARTICLES_DIR = path.join(__dirname, "../public/content/articles");
@@ -99,44 +100,16 @@ function deriveMeta(raw, existing) {
   return (firstParagraph || "").trim().slice(0, 160);
 }
 
-// ─── YAML frontmatter parser (handles >- and |- block scalars) ───────────────
+// ─── YAML frontmatter parser ──────────────────────────────────────────────────
 function parseFrontmatter(content) {
   const match = content.match(/^---([\s\S]*?)---/);
   if (!match) return null;
-
-  const lines = match[1].split("\n");
-  const result = {};
-  let i = 0;
-
-  while (i < lines.length) {
-    const line = lines[i];
-    const keyMatch = line.match(/^([a-zA-Z_][a-zA-Z0-9_]*):\s*(.*)/);
-    if (!keyMatch) { i++; continue; }
-
-    const key = keyMatch[1];
-    let val = keyMatch[2].trim();
-
-    if (val === ">-" || val === "|-" || val === ">" || val === "|") {
-      const block = [];
-      i++;
-      while (i < lines.length && (lines[i].startsWith("  ") || lines[i] === "")) {
-        block.push(lines[i].trim());
-        i++;
-      }
-      result[key] = block.filter(Boolean).join(val.startsWith(">") ? " " : "\n");
-    } else {
-      if (
-        (val.startsWith('"') && val.endsWith('"')) ||
-        (val.startsWith("'") && val.endsWith("'"))
-      ) {
-        val = val.slice(1, -1);
-      }
-      result[key] = val;
-      i++;
-    }
+  try {
+    return yaml.load(match[1]);
+  } catch (e) {
+    console.error("YAML Parse Error:", e.message);
+    return null;
   }
-
-  return result;
 }
 
 function normalizeSlug(slug) {
@@ -240,8 +213,8 @@ for (const f of mdFiles) {
       reading_time:     parseInt(fm.read_time) || 5,
       read_time:        parseInt(fm.read_time) || 5,
       views:            parseInt(fm.views) || 0,
-      tags:             [],
-      keywords:         [],
+      tags:             Array.isArray(fm.tags) ? fm.tags : [],
+      keywords:         Array.isArray(fm.keywords) ? fm.keywords : [],
       canonicalPath:    `/blog/${slug}`,
       filePath:         `/content/articles/${c1}/${c2}/${c3}/${slug}.md`,
       word_count:       wordCount,
