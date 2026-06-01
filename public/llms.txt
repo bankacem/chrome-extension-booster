@@ -1,0 +1,22 @@
+# ExtensionTo
+
+> Discover powerful Chrome extensions for productivity, security, and performance.
+
+ExtensionTo is a curated directory and blog dedicated to enhancing the browser experience. We provide expert guides, performance benchmarks, and direct access to verified productivity tools.
+
+## Key Information
+- **Domain**: https://extensionto.com
+- **Core Topics**: Chrome Extensions, RAM Optimization, Browser Security, Productivity Tools.
+- **Audit Date**: March 2026
+- **Status**: Authority Score climbing, focus on High-CTR "2026" guides.
+
+## Top Resources
+- [How to Fix Chrome Memory Usage (2026)](https://extensionto.com/blog/how-to-fix-chrome-memory-2026)
+- [Ultimate Chrome RAM Management Guide](https://extensionto.com/blog/ultimate-chrome-ram-memory-management-guide)
+- [Adblocker for Android Chrome Guide](https://extensionto.com/blog/adblocker-for-android-chrome)
+- [Internet Download Manager Integration Guide](https://extensionto.com/blog/internet-download-manager-extension)
+
+## Editorial Standards
+- Titles: SEO optimized (50-60 chars), including target year.
+- Content: Cluster-based architecture (Pillar/Satellite).
+- Performance: Core Web Vitals optimized (LCP/CLS focused).
