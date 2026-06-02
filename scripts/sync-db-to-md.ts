@@ -9,10 +9,10 @@ import { getPartitionedPath } from '../src/utils/articlePath';
 dotenv.config();
 
 const supabaseUrl = process.env.VITE_SUPABASE_URL;
-const supabaseKey = process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
-  console.error("Missing Supabase credentials. Set VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY in .env");
+  console.error("Missing Supabase credentials. Set VITE_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY (or VITE_SUPABASE_PUBLISHABLE_KEY) in .env");
   process.exit(1);
 }
 
@@ -75,11 +75,10 @@ function walkDir(dir: string, fileList: string[] = []): string[] {
 }
 
 async function syncDbToMd() {
-  console.log('Fetching published articles from Supabase...');
+  console.log('Fetching all articles from Supabase (bypassing RLS)...');
 
-  // ✅ FIX: Use ilike for case-insensitive match (handles "Published", "published", "PUBLISHED")
-  // Fetch ALL published articles using pagination to avoid 1000-row default limit
-  const pageSize = 1000;
+  // Fetch ALL articles using strict pagination (200-row batches) to guarantee reliability
+  const pageSize = 200;
   let from = 0;
   let allArticles: ArticleRecord[] = [];
 
@@ -87,8 +86,7 @@ async function syncDbToMd() {
     const { data, error } = await supabase
       .from('articles')
       .select('*')
-      .ilike('status', 'published')
-      .order('published_at', { ascending: false })
+      .order('created_at', { ascending: false })
       .range(from, from + pageSize - 1);
 
     if (error) {
@@ -103,7 +101,7 @@ async function syncDbToMd() {
     from += pageSize;
   }
 
-  console.log(`Found ${allArticles.length} published articles in Supabase.`);
+  console.log(`Found ${allArticles.length} articles in Supabase.`);
 
   if (!fs.existsSync(articlesDir)) {
     fs.mkdirSync(articlesDir, { recursive: true });
