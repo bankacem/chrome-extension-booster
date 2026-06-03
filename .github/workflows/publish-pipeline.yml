@@ -1,12 +1,17 @@
 name: Publish Articles Pipeline
 
+# Disk is the source of truth. We do NOT touch Supabase here anymore —
+# the site is published purely from `public/content/articles/` and the
+# committed `public/sitemap.xml`. To bring new content from the DB, run
+# `bun scripts/export-all-from-db.ts` locally and commit the result.
+
 on:
   schedule:
-    - cron: '0 * * * *'   # Runs every hour
+    - cron: '0 * * * *'   # Hourly — refreshes index + sitemap from disk
   workflow_dispatch:        # Manual trigger
 
 jobs:
-  sync-and-publish:
+  build-index-and-sitemap:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -25,19 +30,10 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Sync DB to Markdown
-        env:
-          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
-        run: bun run sync-db-to-md
-
-      - name: Rebuild index
-        env:
-          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+      - name: Rebuild index from local markdown
         run: bun run sync-articles
 
-      - name: Generate sitemap
+      - name: Generate sitemap from local index
         run: bun run sitemap
 
       - name: Commit and push changes
@@ -46,18 +42,17 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
           git add \
-            public/content/articles/ \
             public/content/articles-index.json \
-            public/sitemap.xml
+            public/sitemap.xml \
+            "public/sitemap-*.xml" 2>/dev/null || true
 
           if git diff --cached --quiet; then
-            echo "✅ No changes detected — articles and sitemap are up to date."
+            echo "✅ Nothing to update — index and sitemap already in sync."
           else
             CHANGED=$(git diff --cached --name-only | wc -l)
-            echo "📦 Committing $CHANGED changed file(s)..."
-            git commit -m "chore: auto-publish articles + sitemap [$(date +'%Y-%m-%d %H:%M UTC')]"
+            echo "📦 Committing $CHANGED changed file(s)…"
+            git commit -m "chore: refresh index + sitemap [$(date +'%Y-%m-%d %H:%M UTC')]"
             git push
-            echo "✅ Changes pushed successfully."
           fi
 
       - name: Notify Google Indexing API
@@ -71,9 +66,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-          git add scripts/indexed-urls.json
-
+          git add scripts/indexed-urls.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No indexing state changes."
           else

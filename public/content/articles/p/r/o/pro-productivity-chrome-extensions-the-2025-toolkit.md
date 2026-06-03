@@ -2,9 +2,7 @@
 id: 54fc3a1f-a087-40ce-8b80-7d478afb43eb
 title: "Pro Productivity Chrome Extensions: The 2025 Toolkit"
 slug: pro-productivity-chrome-extensions-the-2025-toolkit
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEjvHY-hF1wunDCQX2B8a0vwRE_1472Zhna8KkCg_UIXkmgUDN-hLYuLtR2cNM2ed8_0AND-_iMLdMQTgHWTvyUi04AHHAhQQmDAvP4GpgYLqpZtHZ_vJnOo4_Sx7fpkP2iy_GI7YKPt4v-wWYmoeu2K464VJXiPbFnHOB8b-VrhQ_lOREvVPxgz12h2hpc
 category: Productivity & Tools

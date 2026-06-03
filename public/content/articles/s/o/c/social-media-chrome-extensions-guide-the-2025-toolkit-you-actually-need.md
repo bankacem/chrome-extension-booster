@@ -1,10 +1,8 @@
 ---
 id: b914e67f-89b5-4fff-86b0-b9cc4641e282
 title: "Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need"
-slug: "Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need"
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+slug: social-media-chrome-extensions-guide-the-2025-toolkit-you-actually-need
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEizNHS1T9yJUaKn5Mg18QWYusvO17YA1PCtEOumuoUJ5_mvyzXw0VMZ2FwVeU0Y4RL9iDqt9dMoZZro3fpAv-3jbIV8F9_IadOLpvFK6yD8idAwVsGsIDTmwgrYCrMjHeRQCl6p7RG_q9ElizDz02yIesckL82GBZiecHrUahZvlumz5eH-r_Rl3BHZFto
 category: Productivity & Tools

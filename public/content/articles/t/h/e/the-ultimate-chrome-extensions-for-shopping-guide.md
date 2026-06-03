@@ -2,9 +2,7 @@
 id: 713d0578-0699-44ce-9382-dd281eb27c35
 title: The Ultimate Chrome Extensions for Shopping Guide
 slug: the-ultimate-chrome-extensions-for-shopping-guide
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEgaEM28enPmTRY5t4M0lRH7_MLW2dLh_cLKPoILLQqX1pp8TUH6dCnipCmbyZDbmTkt3PLkFEyUVOFmrphWgYH7KwVPyAelBrwfVd6XonqegAG5yGng0d1SHGq3jW8wJfn6AS7sROyuFS5rDPj5S_icm_XICxusO4zwOAza5-bAs6m2TS7TfO8E7zt1BVw
 category: Cookies & Consent

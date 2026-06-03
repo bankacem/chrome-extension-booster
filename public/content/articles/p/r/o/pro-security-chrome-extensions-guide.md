@@ -2,9 +2,7 @@
 id: fcea42a1-2db2-4cc1-81b2-d8dcbb6fed30
 title: Pro Security Chrome Extensions Guide
 slug: pro-security-chrome-extensions-guide
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEhgskMUWYO20eWNkLjgX2URM_Vet7WlJZFYvW59bEDwgm3gXAzJibJpTWblET40AANKvQ60Bymv9t0faC5TZd5gEuwiyOuf562eQei0t9F2S9_Nwrlm4IJdqInq4c1tZqfIgvy-3cTGm6IV5i0VDycW5qTzBJLFc6jEj6xAYzBqIn-laMCCtTwqxJ5xiXs
 category: Security & Privacy

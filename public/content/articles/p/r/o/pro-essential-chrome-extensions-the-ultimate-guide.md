@@ -2,9 +2,7 @@
 id: 48a20a60-29d3-4465-8122-78e7ad16fd2e
 title: "Pro Essential Chrome Extensions: The Ultimate Guide"
 slug: pro-essential-chrome-extensions-the-ultimate-guide
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEg0pk1JWqr3lRxU8AgBHFCl6mxWiT-Y9M8LYY4Wz44BCa9XxVnCPOmdTkU0CWJnfaJbEXa6d_QgLRGP8-ZHY_2XWIgTN7id1PSNLeBoH695UPoi8w39jFXSfM5hx3sk1YykHhWAyqeIRBNM-Vzz1_hUrNIh2nc7qbbUySW1bYX3EKcQ387bVVUE-KFj8JU
 category: Performance & Memory

@@ -2,9 +2,7 @@
 id: b1e1ee60-e91c-475e-9971-3b596484b610
 title: The Ultimate Chrome Extensions for Browsing Guide
 slug: the-ultimate-chrome-extensions-for-browsing-guide
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEjvHY-hF1wunDCQX2B8a0vwRE_1472Zhna8KkCg_UIXkmgUDN-hLYuLtR2cNM2ed8_0AND-_iMLdMQTgHWTvyUi04AHHAhQQmDAvP4GpgYLqpZtHZ_vJnOo4_Sx7fpkP2iy_GI7YKPt4v-wWYmoeu2K464VJXiPbFnHOB8b-VrhQ_lOREvVPxgz12h2hpc
 category: Performance & Memory

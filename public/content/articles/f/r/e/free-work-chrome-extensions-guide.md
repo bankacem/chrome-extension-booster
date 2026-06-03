@@ -2,9 +2,7 @@
 id: 5e2b39c9-1f40-4f44-b4a8-b367a5d5c8b9
 title: Free Work Chrome Extensions Guide
 slug: free-work-chrome-extensions-guide
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEhgskMUWYO20eWNkLjgX2URM_Vet7WlJZFYvW59bEDwgm3gXAzJibJpTWblET40AANKvQ60Bymv9t0faC5TZd5gEuwiyOuf562eQei0t9F2S9_Nwrlm4IJdqInq4c1tZqfIgvy-3cTGm6IV5i0VDycW5qTzBJLFc6jEj6xAYzBqIn-laMCCtTwqxJ5xiXs
 category: Performance & Memory

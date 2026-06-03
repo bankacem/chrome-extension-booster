@@ -1,13 +1,8 @@
 ---
 id: d03f7375-dc13-4a01-9e06-debd984e6a65
-title: >-
-  10 Essential Utility Chrome Extensions to Supercharge Your Professional
-  Workflow
-slug: >-
-  10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+title: 10 Essential Utility Chrome Extensions to Supercharge Your Professional Workflow
+slug: 10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEjnpeSFq5ka3Zi5UW7JjoL-QEPOlvI2U__G5d6ytl54hA7j3LCr-8lwC4ZjF9eZGX_T1WtqL3CvNLvfLVEgMJUZ0t8246IHKPErSDN5LBZITkg9iM-8Q34VZ2hRF-ab0Cr5BH4pFK4Jlquk_P6fc1hItJc9UEKMJpjL3pwiinLkoCv3rYgbnWGf3ckY0L0
 category: Productivity & Tools
