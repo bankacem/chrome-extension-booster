@@ -2,9 +2,7 @@
 id: f281a3d5-04e8-4fdb-b216-3c23c7fa9466
 title: "How to Install Chrome Extensions: A Complete Step-by-Step Tutorial"
 slug: how-to-install-chrome-extensions-a-complete-step-by-step-tutorial
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEgr06R8hPbvQFcye4IfEFk-boh6z9GLlBulpIVO4y4FyFNdBq-PsCG-hSGfMgjqyMBYm-LfkvYumqeaO03hk1oIooXEWKHhD5zhS4IL_so9UDrekRBvhk4HNJqSI0WdDJ8IbznTVTMlojLQZ-NA2GwzNeNkLJVJzQL5_cSxiZrOuXOAJuSP6jB4ewu-8cs
 category: Productivity & Tools

@@ -2,9 +2,7 @@
 id: f48a7a45-6e1a-4665-b9e4-25cb489f270f
 title: Professional Browser Tools Guide
 slug: professional-browser-tools-guide
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEjnVoxxeZqt4TkAsnzFxoKG78WPimV1kEXcTotR_7hNwZjDJeFQbnz_QKRPZmjsS_zI0vyZ0PEoNJW7u6kbbApsj_QQZ3J1jXvqtizSfWINzaVQwJwWMwv7Vl0z7yErlUNxkHzQ-vsxtqp-JmfBbnNs0WVekF9XdR1Yg_8XyqVOseXrFyhTXYqCFS88P3U
 category: Productivity & Tools

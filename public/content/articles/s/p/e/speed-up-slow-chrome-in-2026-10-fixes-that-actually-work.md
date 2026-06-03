@@ -2,10 +2,7 @@
 id: f383f99e-6d40-4c1a-9328-b47152891095
 title: "Speed Up Slow Chrome in 2026: 10 Fixes That Actually Work"
 slug: speed-up-slow-chrome-in-2026-10-fixes-that-actually-work
-excerpt: >-
-  We’ve all been there. You’re in the middle of a high-stakes project, or
-  perhaps you're just trying to relax with some 8K streaming, and suddenly, your
-  browser s
+excerpt: We’ve all been there. You’re in the middle of a high-stakes project, or perhaps you're just trying to relax with some 8K streaming, and suddenly, your browser s
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEilZUkKlS0TSzs7zFsvg0sp-tW9XC5r72uEtGa0KQyBAzA3VEPXQl4LvCWyLkVVtMecT_fVE_DsACdR_oKSxrD23ZttafmDwvZ0aFt4DXOpCpcJWJtZOhtSr46m9_4ncXy8y2_--4t9s5qxD2A8YzTeYDWJLVVo4uOOaXGWmFu4myRfuEtD6D_nwXyedUA
 category: Performance & Memory
@@ -13,10 +10,7 @@ tags:
   - "Speed Up Slow Chrome in 2026: 10 Fixes That Actually Work"
 keywords:
   - How to speed up a slow Chrome browser in 2026
-meta_description: >-
-  We’ve all been there. You’re in the middle of a high-stakes project, or
-  perhaps you're just trying to relax with some 8K streaming, and suddenly, your
-  browser s
+meta_description: We’ve all been there. You’re in the middle of a high-stakes project, or perhaps you're just trying to relax with some 8K streaming, and suddenly, your browser s
 status: published
 published_at: "2026-03-16T17:25:21.312+00:00"
 scheduled_at: null

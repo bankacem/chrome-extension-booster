@@ -2,9 +2,7 @@
 id: 18362e2e-1eb9-49ac-8093-a311d7c0fbb8
 title: "The Elite Stack: Essential Chrome Extensions for Work Pro Environments"
 slug: the-elite-stack-essential-chrome-extensions-for-work-pro-environments
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEgwA8oAgagvmTrTU4jYyIhkZ-KuQKiyzRa8O6lIxKBAw-RJXv-2UchbiHsOkxKMDq1Nk3Gbd8-m0uokxYNDb24IRVyj2SuZw0BfjSuP8RubO87hqR_qa2oQPStIG9pfhaqN7ZPKb5iooiyMwPxoHrPa9FLgcEENtJLGSHRT0KV9AsfQchPVuRCq42c1qf4
 category: Performance & Memory

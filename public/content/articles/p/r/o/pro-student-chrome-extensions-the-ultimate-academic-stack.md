@@ -2,9 +2,7 @@
 id: 1065e3f9-2402-4f7e-89d8-75ade8a08195
 title: "Pro Student Chrome Extensions: The Ultimate Academic Stack"
 slug: pro-student-chrome-extensions-the-ultimate-academic-stack
-excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+excerpt: Discover the future of browser extensions with our curated, high-performance directory.
 featured_image: >-
   https://blogger.googleusercontent.com/img/a/AVvXsEj1LDff8q-RBszXv8DURoXm_fagulis_NA5a-u3ifTFv1cLvTziq88Bh0itYEPXbdqN99hA6fwzBUW0LuwRX1JvIiHY5AINH7s4oQYxIDJwL5MosKkFxNFCueVSp_BxY6s9JjWaeawvrBrJImKwpxVwTpVSPb-OQYlskAwuxlt5DaVnZpcBuznVZmcDv44
 category: Productivity & Tools
