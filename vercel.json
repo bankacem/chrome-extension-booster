@@ -1,6 +1,6 @@
 {
   "installCommand": "npm install --legacy-peer-deps",
-  "buildCommand": "npm run build && npx ts-node scripts/generate-sitemap.ts",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "headers": [
     {
@@ -33,51 +33,6 @@
         }
       ],
       "destination": "https://extensionto.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa",
-      "destination": "/blog/media-saver-extension-chrome",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlock-the-power-of-instagram-story-downloader-chrome-a-comprehensive-guide-mmtvrhy39js",
-      "destination": "/blog/instagram-story-downloader-chrome",
-      "permanent": true
-    },
-    {
-      "source": "/blog/discover-the-best-downloader-for-chrome-2026-unlock-seamless-file-downloads-mmtvrhjxy8w",
-      "destination": "/blog/best-downloader-for-chrome-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlock-the-power-of-file-downloading-the-best-chrome-extension-to-download-files-mmtvrgzypoz",
-      "destination": "/blog/chrome-extension-to-download-files",
-      "permanent": true
-    },
-    {
-      "source": "/blog/safe-video-downloader-for-chrome-protecting-your-device-from-malware-and-viruses-mmtvrfrtd6s",
-      "destination": "/blog/safe-video-downloader-for-chrome",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlock-the-power-of-social-media-video-downloading-a-comprehensive-guide-to-social-media-video-downl-mmtvrezdnal",
-      "destination": "/blog/social-media-video-downloader-chrome",
-      "permanent": true
-    },
-    {
-      "source": "/blog/mastering-video-playback-the-ultimate-guide-to-video-speed-controller-chrome-extensions-mmtvrel7mji",
-      "destination": "/blog/video-speed-controller-chrome-extensions",
-      "permanent": true
-    },
-    {
-      "source": "/blog/discover-the-best-media-downloader-for-android-chrome-a-comprehensive-guide-mmtvrdrejcf",
-      "destination": "/blog/best-media-downloader-android-chrome",
-      "permanent": true
-    },
-    {
-      "source": "/blog/how-to-save-images-from-protected-sites-in-chrome-a-step-by-step-guide-mmtvrdaazwp",
-      "destination": "/blog/save-images-from-protected-sites-chrome",
       "permanent": true
     }
   ]
