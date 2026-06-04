@@ -96,11 +96,28 @@ async function generateSitemap() {
 
   if (allPages.length <= CHUNK_SIZE) {
     const sitemapContent = generateSitemapXml(allPages);
-    const outputPath = path.join(process.cwd(), "public", "sitemap.xml");
-    fs.writeFileSync(outputPath, sitemapContent);
+
+    // Write to public/ (source) and dist/ (build output served by Vercel).
+    // postbuild runs AFTER vite copies public/ → dist/, so dist/ must be
+    // updated explicitly or it keeps the stale sitemap from build time.
+    const outputDirs = ["public", "dist"];
+    for (const dir of outputDirs) {
+      const dirPath = path.join(process.cwd(), dir);
+      if (!fs.existsSync(dirPath)) continue;
+      fs.writeFileSync(path.join(dirPath, "sitemap.xml"), sitemapContent);
+      console.log(`✅ Sitemap written to ${dir}/sitemap.xml`);
+
+      // Ensure the XSL stylesheet exists next to the sitemap.
+      const xslSrc = path.join(process.cwd(), "public", "sitemap.xsl");
+      const xslDst = path.join(dirPath, "sitemap.xsl");
+      if (fs.existsSync(xslSrc) && !fs.existsSync(xslDst)) {
+        fs.copyFileSync(xslSrc, xslDst);
+        console.log(`✅ Copied sitemap.xsl to ${dir}/`);
+      }
+    }
 
     const urlCount = (sitemapContent.match(/<url>/g) || []).length;
-    console.log(`✅ Sitemap generated: ${urlCount} URLs at ${outputPath}`);
+    console.log(`✅ Sitemap generated: ${urlCount} URLs`);
 
     if (urlCount !== expectedTotal) {
       console.error(`CRITICAL: Mismatch! Expected ${expectedTotal}, found ${urlCount}`);
