@@ -191,34 +191,17 @@ async function massIndexing() {
 
   console.log(`Found ${articles.length} published articles on disk.`);
 
-  // Prioritize April 2026
+  // Sort articles by published_at ASCENDING (oldest first)
   articles.sort((a, b) => {
-    const dateA = a.published_at ? String(a.published_at) : '';
-    const dateB = b.published_at ? String(b.published_at) : '';
-
-    const isAPriority = dateA.startsWith('2026-04');
-    const isBPriority = dateB.startsWith('2026-04');
-
-    if (isAPriority && !isBPriority) return -1;
-    if (!isAPriority && isBPriority) return 1;
-    return 0;
+    const dateA = a.published_at ? new Date(a.published_at).getTime() : 0;
+    const dateB = b.published_at ? new Date(b.published_at).getTime() : 0;
+    return dateA - dateB;
   });
 
   const articleUrls = articles.map(a => `${BASE_URL}/blog/${a.slug}`);
   const allTargetUrls = [...staticPages, ...articleUrls];
 
   const pendingUrls = allTargetUrls.filter(u => !indexedUrls.includes(u));
-
-  // Sort pendingUrls to honor MANUAL_PRIORITY_URLS first
-  pendingUrls.sort((a, b) => {
-    const aIndex = MANUAL_PRIORITY_URLS.indexOf(a);
-    const bIndex = MANUAL_PRIORITY_URLS.indexOf(b);
-
-    if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
-    if (aIndex !== -1) return -1;
-    if (bIndex !== -1) return 1;
-    return 0;
-  });
 
   console.log(`${pendingUrls.length} URLs pending indexing.`);
 
