@@ -1,6 +1,6 @@
 {
   "installCommand": "npm install --legacy-peer-deps",
-  "buildCommand": "npm run build && npm run sitemap",
+  "buildCommand": "npm run build && npx ts-node scripts/generate-sitemap.ts",
   "outputDirectory": "dist",
   "headers": [
     {
