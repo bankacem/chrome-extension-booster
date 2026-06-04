@@ -1,3 +1,24 @@
+{
+    "id": "test-manual-id-2026-06",
+    "title": "The Test Automated Sitemap Article",
+    "slug": "the-test-automated-sitemap-article",
+    "description": "A testing article placed inside the t/h/e directory to check the automatic sitemap refresh on Vercel.",
+    "excerpt": "A testing article placed inside the t/h/e directory to check the automatic sitemap refresh on Vercel.",
+    "published_at": "2026-06-04T19:30:00.000+00:00",
+    "category": "Screenshots & Screen Capture",
+    "author": "AI Generator",
+    "image_url": null,
+    "reading_time": 3,
+    "read_time": 3,
+    "views": 0,
+    "tags": [],
+    "keywords": [
+      "test automated sitemap"
+    ],
+    "canonicalPath": "/blog/the-test-automated-sitemap-article",
+    "updated_at": "2026-06-04T19:30:00.000+00:00"
+  },
+
 [
   {
     "id": "8ff0d74e-f783-4951-a579-bf707245aa98",
