@@ -14,7 +14,7 @@
     "sync-db-to-md": "bun scripts/sync-db-to-md.ts",
     "index-sitemap": "bun scripts/index-sitemap.ts",
     "publish": "bun run sync-db-to-md && bun run sync-articles && git add -A && git commit -m \"chore: publish articles\" && git push",
-    "postbuild": "node scripts/generate-sitemap.js",
+    "postbuild": "bun scripts/generate-sitemap.ts",
     "pre-commit": "bun run sync-db-to-md && bun run sync-articles"
   },
   "dependencies": {
