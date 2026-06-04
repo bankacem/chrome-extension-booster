@@ -1,7 +1,7 @@
 {
     "id": "test-manual-id-2026-06",
     "title": "The Test Automated Sitemap Article",
-    "slug": "the-test-automated-sitemap-article",
+    "slug": "the-test-automated-sitemap",
     "description": "A testing article placed inside the t/h/e directory to check the automatic sitemap refresh on Vercel.",
     "excerpt": "A testing article placed inside the t/h/e directory to check the automatic sitemap refresh on Vercel.",
     "published_at": "2026-06-04T19:30:00.000+00:00",
@@ -15,7 +15,7 @@
     "keywords": [
       "test automated sitemap"
     ],
-    "canonicalPath": "/blog/the-test-automated-sitemap-article",
+    "canonicalPath": "/blog/the-test-automated-sitemap",
     "updated_at": "2026-06-04T19:30:00.000+00:00"
   },
 
