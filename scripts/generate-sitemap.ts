@@ -119,7 +119,6 @@ async function generateSitemap() {
       sitemapFiles.push(fileName);
     });
     const indexContent = `<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapFiles.map(f => `  <sitemap>\n    <loc>${WEBSITE_URL}/${f}</loc>\n    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>\n  </sitemap>`).join('\n')}
 </sitemapindex>`;
@@ -130,7 +129,6 @@ ${sitemapFiles.map(f => `  <sitemap>\n    <loc>${WEBSITE_URL}/${f}</loc>\n    <l
 
 function generateSitemapXml(pages: PageInfo[]): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages
   .map(
