@@ -3,7 +3,7 @@ id: ecc80886-f055-442b-8d2e-4135cf4deaf6
 title: >-
   Mastering Google Chrome Programmé en: Unlocking the Power of Customization and
   Productivity
-slug: google-chrome-programmé-en-14
+slug: google-chrome-programm-en-14
 excerpt: >-
   Google Chrome, one of the most widely used web browsers, offers a vast array
   of features and tools to enhance user experience. For those who want to take
