@@ -2,14 +2,25 @@
   "installCommand": "npm install --legacy-peer-deps",
   "buildCommand": "npm run build && npm run sitemap",
   "outputDirectory": "dist",
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/sitemap.xml",
       "destination": "/sitemap.xml"
     },
     {
-      "source": "/api/sitemap.xml",
-      "destination": "/api/sitemap.xml.js"
+      "source": "/((?!api|assets|.*\\.).*)",
+      "destination": "/index.html"
     }
   ],
   "redirects": [
