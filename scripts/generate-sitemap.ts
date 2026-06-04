@@ -132,15 +132,27 @@ async function generateSitemap() {
     const sitemapFiles: string[] = [];
     chunks.forEach((chunk, index) => {
       const fileName = `sitemap-${index + 1}.xml`;
-      fs.writeFileSync(path.join(process.cwd(), "public", fileName), generateSitemapXml(chunk));
       sitemapFiles.push(fileName);
     });
     const indexContent = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapFiles.map(f => `  <sitemap>\n    <loc>${WEBSITE_URL}/${f}</loc>\n    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>\n  </sitemap>`).join('\n')}
 </sitemapindex>`;
-    fs.writeFileSync(path.join(process.cwd(), "public", "sitemap.xml"), indexContent);
-    console.log(`Sitemap index generated with ${chunks.length} parts`);
+
+    // Write chunk files and the sitemap index to both public/ (source) and
+    // dist/ (build output served by Vercel). postbuild runs AFTER vite copies
+    // public/ → dist/, so dist/ must be updated explicitly or it keeps the
+    // stale sitemap from build time.
+    const outputDirs = ["public", "dist"];
+    for (const dir of outputDirs) {
+      const dirPath = path.join(process.cwd(), dir);
+      if (!fs.existsSync(dirPath)) continue;
+      chunks.forEach((chunk, index) => {
+        fs.writeFileSync(path.join(dirPath, sitemapFiles[index]), generateSitemapXml(chunk));
+      });
+      fs.writeFileSync(path.join(dirPath, "sitemap.xml"), indexContent);
+      console.log(`✅ Sitemap index (${chunks.length} parts) written to ${dir}/`);
+    }
   }
 }
 
