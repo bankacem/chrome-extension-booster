@@ -1,28 +1,16 @@
 ---
-id: 22b08d34-3d55-43b1-be79-fe763f15adcc
-title: Free Student Chrome Extensions
-slug: free-student-chrome-extensions
-excerpt: Discover the future of browser extensions with our curated, high-performance directory.
-featured_image: >-
-  https://blogger.googleusercontent.com/img/a/AVvXsEgwA8oAgagvmTrTU4jYyIhkZ-KuQKiyzRa8O6lIxKBAw-RJXv-2UchbiHsOkxKMDq1Nk3Gbd8-m0uokxYNDb24IRVyj2SuZw0BfjSuP8RubO87hqR_qa2oQPStIG9pfhaqN7ZPKb5iooiyMwPxoHrPa9FLgcEENtJLGSHRT0KV9AsfQchPVuRCq42c1qf4
-category: Productivity & Tools
-tags:
-  - welcome
-  - introduction
-  - premium
-keywords:
-  - browser extensions
-  - premium tools
-  - productivity
-meta_description: Discover curated, high-performance browser extensions.
-status: published
-published_at: "2026-01-24T09:00:00.479+00:00"
-scheduled_at: "2026-01-24T09:00:00+00:00"
-author: Admin
-views: 1
+title: "Free Student Chrome Extensions"
+slug: "free-student-chrome-extensions"
+excerpt: "For the modern student, the difference between \"barely passing\" and \"Dean&rsquo;s List\" often isn't raw intelligence&mdash;it&rsquo;s system architecture . How..."
+meta_description: "For the modern student, the difference between \"barely passing\" and \"Dean&rsquo;s List\" often isn't raw intelligence&mdash;it&rsquo;s system architecture . How..."
+featured_image: "https://blogger.googleusercontent.com/img/a/AVvXsEgwA8oAgagvmTrTU4jYyIhkZ-KuQKiyzRa8O6lIxKBAw-RJXv-2UchbiHsOkxKMDq1Nk3Gbd8-m0uokxYNDb24IRVyj2SuZw0BfjSuP8RubO87hqR_qa2oQPStIG9pfhaqN7ZPKb5iooiyMwPxoHrPa9FLgcEENtJLGSHRT0KV9AsfQchPVuRCq42c1qf4"
+category: "Productivity & Tools"
+tags: ["welcome", "introduction", "premium"]
+keywords: ["browser extensions", "premium tools", "productivity"]
+status: "published"
+published_at: "2026-01-24"
+author: "Admin"
 read_time: 1
-created_at: "2026-01-19T13:57:29.475828+00:00"
-updated_at: "2026-04-24T15:24:48.446074+00:00"
 ---
 
 <p><!-- wp:paragraph --></p>

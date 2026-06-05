@@ -1,22 +1,15 @@
 ---
-id: bd7f9dd7-c158-43c4-b765-37ad82899ca2
-title: How to Install and Use IDM Extension to Chrome for Enhanced Download Management
-slug: how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management
-excerpt: Are you tired of slow download speeds and disorganized file management in your Chrome browser? Look no further than the idm extension to chrome, a game-changing
-featured_image: null
-category: Screenshots & Screen Capture
+title: "How to Install and Use IDM Extension to Chrome for Enhanced Download Management"
+slug: "how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management"
+excerpt: "How to Install and Use IDM Extension to Chrome for Enhanced Download Management Are you tired of slow download speeds and disorganized file management in your..."
+meta_description: "How to Install and Use IDM Extension to Chrome for Enhanced Download Management Are you tired of slow download speeds and disorganized file management in your..."
+category: "Screenshots & Screen Capture"
 tags: []
-keywords:
-  - idm extension to chrome
-meta_description: Are you tired of slow download speeds and disorganized file management in your Chrome browser? Look no further than the idm extension to chrome, a game-changing
-status: published
-published_at: "2026-02-17T08:11:00.338+00:00"
-scheduled_at: "2026-02-17T08:11:00+00:00"
-author: AI Generator
-views: 3
+keywords: ["idm extension to chrome"]
+status: "published"
+published_at: "2026-02-17"
+author: "AI Generator"
 read_time: 5
-created_at: "2026-01-24T12:58:13.273423+00:00"
-updated_at: "2026-04-24T15:24:25.484925+00:00"
 ---
 
 <h1>How to Install and Use IDM <a href="/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs" class="internal-link" title="Unlocking the Power of Chrome: How to Find the Best Extension to Chrome for Your Needs"><a href="/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs" class="internal-link" title="Unlocking the Power of Chrome: How to Find the Best Extension to Chrome for Your Needs"><a href="/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs" class="internal-link" title="Unlocking the Power of Chrome: How to Find the Best Extension to Chrome for Your Needs"><a href="/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs" class="internal-link" title="Unlocking the Power of Chrome: How to Find the Best Extension to Chrome for Your Needs"><a href="/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs" class="internal-link" title="Unlocking the Power of Chrome: How to Find the Best Extension to Chrome for Your Needs">Extension to Chrome</a></a></a></a></a> for Enhanced Download Management</h1>

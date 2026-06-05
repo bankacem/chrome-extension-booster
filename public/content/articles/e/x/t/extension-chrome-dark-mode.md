@@ -1,22 +1,15 @@
 ---
-id: b26e52ce-b3c6-4fb1-a099-f4068b09c596
-title: Extension Chrome Dark Mode
-slug: extension-chrome-dark-mode
-excerpt: Are you tired of straining your eyes while browsing the web at night? Do you wish there was a way to automatically switch between light and dark modes on your C
-featured_image: null
-category: Screenshots & Screen Capture
+title: "Extension Chrome Dark Mode"
+slug: "extension-chrome-dark-mode"
+excerpt: "```json { \"optimizedContent\": \" Extension Chrome Dark Mode Guide Are you tired of straining your eyes while browsing the web at night? Look for an extension..."
+meta_description: "```json { \"optimizedContent\": \" Extension Chrome Dark Mode Guide Are you tired of straining your eyes while browsing the web at night? Look for an extension..."
+category: "Screenshots & Screen Capture"
 tags: []
-keywords:
-  - extension chrome dark mode
-meta_description: Get the best extension chrome dark mode for your Chrome browser and enhance your browsing experience with reduced eye strain and battery life conservation.
-status: published
-published_at: "2026-05-12T10:15:03.071+00:00"
-scheduled_at: "2026-05-12T10:15:00+00:00"
-author: AI Generator
-views: 3
+keywords: ["extension chrome dark mode"]
+status: "published"
+published_at: "2026-05-12"
+author: "AI Generator"
 read_time: 6
-created_at: "2026-01-27T21:10:27.347305+00:00"
-updated_at: "2026-05-12T10:15:03.144288+00:00"
 ---
 
 ```json

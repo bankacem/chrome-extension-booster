@@ -1,23 +1,15 @@
 ---
-id: 064163e6-ef34-4bcb-a81e-d4b9aec4b23f
 title: "Chrome Extensions on Android 2026: Kiwi vs Yandex vs Lemur (Full Guide)"
-slug: chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide
-excerpt: Are you an Android user looking to enhance your browsing experience with extension chrome android? You're in luck! Chrome extensions have revolutionized the way
-featured_image: null
-category: Screenshots & Screen Capture
-tags:
-  - "Chrome Extensions on Android 2026: Kiwi vs Yandex vs Lemur (Full Guide)"
-keywords:
-  - extension chrome android
-meta_description: Are you an Android user looking to enhance your browsing experience with extension chrome android? You're in luck! Chrome extensions have revolutionized the way
-status: published
-published_at: "2026-03-16T17:27:37.129+00:00"
-scheduled_at: null
-author: AI Generator
-views: 1
+slug: "chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide"
+excerpt: "Unlocking the Power of Chrome Extensions on Android: A Comprehensive Guide Are you an Android user looking to enhance your browsing experience with extension..."
+meta_description: "Unlocking the Power of Chrome Extensions on Android: A Comprehensive Guide Are you an Android user looking to enhance your browsing experience with extension..."
+category: "Screenshots & Screen Capture"
+tags: ["Chrome Extensions on Android 2026: Kiwi vs Yandex vs Lemur (Full Guide)"]
+keywords: ["extension chrome android"]
+status: "published"
+published_at: "2026-03-16"
+author: "AI Generator"
 read_time: 5
-created_at: "2026-01-24T13:04:12.051631+00:00"
-updated_at: "2026-04-24T15:24:22.277109+00:00"
 ---
 
 <h1>Unlocking the Power of Chrome Extensions on Android: A <a href="/blog/https-sci-hub-se-chrome-extension-16" class="internal-link" title="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide"><a href="/blog/ghostery-chrome-extension-winner" class="internal-link" title="Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery Plugin Chrome">Comprehensive</a></a> Guide</h1>

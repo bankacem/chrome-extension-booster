@@ -1,23 +1,15 @@
 ---
-id: 45b28a3f-d0ba-403b-90df-e8c47a36d63e
 title: "Unlocking Website Optimization with Siteimprove Chrome: A Comprehensive Guide"
-slug: unlocking-website-optimization-with-siteimprove-chrome-a-comprehensive-guide
-excerpt: As a website owner or digital marketer, ensuring your online presence is optimized for user experience, accessibility, and search engine ranking is crucial. One
-featured_image: null
-category: Screenshots & Screen Capture
-tags:
-  - unlocking-website-optimization-with-siteimprove-chrome-a-comprehensive-guide
-keywords:
-  - unlocking-website-optimization-with-siteimprove-chrome-a-comprehensive-guide
-meta_description: As a website owner or digital marketer, ensuring your online presence is optimized for user experience, accessibility, and search engine ranking is crucial. One
-status: published
-published_at: "2026-05-01T14:15:02.978+00:00"
-scheduled_at: "2026-05-01T14:15:00+00:00"
-author: AI Generator
-views: 4
+slug: "unlocking-website-optimization-with-siteimprove-chrome-a-comprehensive-guide"
+excerpt: "Unlocking Website Optimization with Siteimprove Chrome: A Comprehensive Guide As a website owner or digital marketer, ensuring your online presence is..."
+meta_description: "Unlocking Website Optimization with Siteimprove Chrome: A Comprehensive Guide As a website owner or digital marketer, ensuring your online presence is..."
+category: "Screenshots & Screen Capture"
+tags: ["unlocking-website-optimization-with-siteimprove-chrome-a-comprehensive-guide"]
+keywords: ["unlocking-website-optimization-with-siteimprove-chrome-a-comprehensive-guide"]
+status: "published"
+published_at: "2026-05-01"
+author: "AI Generator"
 read_time: 6
-created_at: "2026-02-02T17:05:21.077053+00:00"
-updated_at: "2026-05-01T14:15:03.043654+00:00"
 ---
 
 <h1>Unlocking Website Optimization with Siteimprove Chrome: A Comprehensive Guide</h1>
