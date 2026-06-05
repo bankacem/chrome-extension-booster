@@ -1,25 +1,19 @@
 ---
-id: b914e67f-89b5-4fff-86b0-b9cc4641e282
 title: "Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need"
-slug: social-media-chrome-extensions-guide-the-2025-toolkit-you-actually-need
-excerpt: Discover the future of browser extensions with our curated, high-performance directory.
-featured_image: >-
-  https://blogger.googleusercontent.com/img/a/AVvXsEizNHS1T9yJUaKn5Mg18QWYusvO17YA1PCtEOumuoUJ5_mvyzXw0VMZ2FwVeU0Y4RL9iDqt9dMoZZro3fpAv-3jbIV8F9_IadOLpvFK6yD8idAwVsGsIDTmwgrYCrMjHeRQCl6p7RG_q9ElizDz02yIesckL82GBZiecHrUahZvlumz5eH-r_Rl3BHZFto
-category: Productivity & Tools
-tags:
-  - "Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need"
-keywords:
-  - "Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need"
-meta_description: Discover curated, high-performance browser extensions.
-status: published
-published_at: "2026-03-18T02:11:00.894+00:00"
-scheduled_at: "2026-03-18T02:11:00+00:00"
-author: Admin
-views: 2
+slug: "social-media-chrome-extensions-guide-the-2025-toolkit-you-actually-need"
+excerpt: "Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need Let&rsquo;s be real for a second. If you&rsquo;re a social media manager, your browser..."
+meta_description: "Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need Let&rsquo;s be real for a second. If you&rsquo;re a social media manager, your browser..."
+featured_image: "https://blogger.googleusercontent.com/img/a/AVvXsEizNHS1T9yJUaKn5Mg18QWYusvO17YA1PCtEOumuoUJ5_mvyzXw0VMZ2FwVeU0Y4RL9iDqt9dMoZZro3fpAv-3jbIV8F9_IadOLpvFK6yD8idAwVsGsIDTmwgrYCrMjHeRQCl6p7RG_q9ElizDz02yIesckL82GBZiecHrUahZvlumz5eH-r_Rl3BHZFto"
+category: "Productivity & Tools"
+tags: ["Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need"]
+keywords: ["Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need"]
+status: "published"
+published_at: "2026-03-18"
+author: "Admin"
 read_time: 1
-created_at: "2026-01-19T13:56:54.471632+00:00"
-updated_at: "2026-04-18T18:40:59.551316+00:00"
 ---
+
+<h1>Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need</h1>
 
 <p><!-- wp:code --></p>
 <pre class="wp-block-code">&nbsp;</pre>
