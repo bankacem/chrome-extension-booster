@@ -1,0 +1,18 @@
+{
+  "name": "extensionto-asset-optimizer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "optimize": "node scripts/local-asset-optimizer.mjs",
+    "optimize:test": "node scripts/local-asset-optimizer.mjs --test"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.2.0",
+    "gray-matter": "^4.0.3",
+    "sharp": "^0.33.5"
+  },
+  "dependencies": {
+    "glob": "^11.0.2"
+  }
+}
