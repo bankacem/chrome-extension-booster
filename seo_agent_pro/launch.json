@@ -1,0 +1,99 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Full Pipeline (Claude)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": [
+        "--mode", "full",
+        "--keyword", "best laptop for students",
+        "--niche", "technology",
+        "--model", "claude-sonnet-4"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Full Pipeline (GPT-4o)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": [
+        "--mode", "full",
+        "--keyword", "best laptop for students",
+        "--niche", "technology",
+        "--model", "gpt-4o"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Full Pipeline (Llama Groq — Fast)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": [
+        "--mode", "full",
+        "--keyword", "best laptop for students",
+        "--niche", "technology",
+        "--model", "llama-3.3-70b-groq"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Article Only",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": [
+        "--mode", "article",
+        "--keyword", "how to choose a laptop",
+        "--model", "claude-sonnet-4"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Cluster Map",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": [
+        "--mode", "cluster",
+        "--keyword", "laptop",
+        "--niche", "technology",
+        "--model", "gemini-flash"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Content Calendar",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": [
+        "--mode", "calendar",
+        "--keyword", "technology",
+        "--niche", "tech blog",
+        "--months", "3",
+        "--model", "claude-sonnet-4"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "List Models",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["--models"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Memory Stats",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["--stats"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

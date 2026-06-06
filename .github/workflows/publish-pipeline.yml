@@ -1,0 +1,75 @@
+name: Publish Articles Pipeline
+
+# Disk is the source of truth. We do NOT touch Supabase here anymore —
+# the site is published purely from `public/content/articles/` and the
+# committed `public/sitemap.xml`. To bring new content from the DB, run
+# `bun scripts/export-all-from-db.ts` locally and commit the result.
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # Hourly — refreshes index + sitemap from disk
+  workflow_dispatch:        # Manual trigger
+
+jobs:
+  build-index-and-sitemap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Rebuild index from local markdown
+        run: bun run sync-articles
+
+      - name: Generate sitemap from local index
+        run: bun run sitemap
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add \
+            public/content/articles-index.json \
+            public/sitemap.xml \
+            "public/sitemap-*.xml" 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "✅ Nothing to update — index and sitemap already in sync."
+          else
+            CHANGED=$(git diff --cached --name-only | wc -l)
+            echo "📦 Committing $CHANGED changed file(s)…"
+            git commit -m "chore: refresh index + sitemap [$(date +'%Y-%m-%d %H:%M UTC')]"
+            git push
+          fi
+
+      - name: Notify Google Indexing API
+        if: ${{ secrets.GOOGLE_INDEXING_KEY != '' }}
+        env:
+          GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
+        run: bun scripts/google-indexing.ts
+
+      - name: Persist indexing state
+        if: always()
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add scripts/indexed-urls.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No indexing state changes."
+          else
+            git commit -m "chore: update indexing state [$(date +'%Y-%m-%d %H:%M UTC')]"
+            git push
+          fi
