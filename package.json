@@ -1,24 +1,7 @@
 {
-<<<<<<< HEAD
-  "name": "extensionto-asset-optimizer",
+  "name": "extensionto-vite-app",
+  "private": true,
   "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "optimize": "node scripts/local-asset-optimizer.mjs",
-    "optimize:test": "node scripts/local-asset-optimizer.mjs --test"
-  },
-  "devDependencies": {
-    "fs-extra": "^11.2.0",
-    "gray-matter": "^4.0.3",
-    "sharp": "^0.33.5"
-  },
-  "dependencies": {
-    "glob": "^11.0.2"
-=======
-  "name": "vite_react_shadcn_ts",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -32,7 +15,9 @@
     "index-sitemap": "bun scripts/index-sitemap.ts",
     "publish": "bun run sync-db-to-md && bun run sync-articles && git add -A && git commit -m \"chore: publish articles\" && git push",
     "postbuild": "npx tsx scripts/generate-sitemap.ts",
-    "pre-commit": "bun run sync-db-to-md && bun run sync-articles"
+    "pre-commit": "bun run sync-db-to-md && bun run sync-articles",
+    "optimize": "node scripts/local-asset-optimizer.mjs",
+    "optimize:test": "node scripts/local-asset-optimizer.mjs --test"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -90,7 +75,8 @@
     "tailwindcss-animate": "^1.0.7",
     "tslib": "^2.8.1",
     "vaul": "^0.9.9",
-    "zod": "^3.25.76"
+    "zod": "^3.25.76",
+    "glob": "^11.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
@@ -109,10 +95,11 @@
     "globals": "^15.15.0",
     "lovable-tagger": "^1.1.11",
     "postcss": "^8.5.6",
+    "sharp": "^0.33.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
-    "vite": "^5.4.19"
->>>>>>> c556372732b2b906447713951cee582a8eff187f
+    "vite": "^5.4.19",
+    "fs-extra": "^11.2.0"
   }
 }
