@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <clipPath id="circle">
+      <circle cx="100" cy="100" r="98"/>
+    </clipPath>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#bg)"/>
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#e8ecf0" stroke-width="2"/>
+  <!-- White shirt collar -->
+  <path d="M85 130 L100 115 L115 130" fill="white" stroke="#ddd" stroke-width="1"/>
+  <!-- Suit jacket -->
+  <path d="M60 140 Q80 125 100 125 Q120 125 140 140 L145 180 Q125 190 100 190 Q75 190 55 180 Z" fill="#1e293b"/>
+  <path d="M60 140 L100 125 L140 140" fill="none" stroke="#334155" stroke-width="1"/>
+  <!-- Neck -->
+  <rect x="88" y="118" width="24" height="14" rx="3" fill="#f1d5c4"/>
+  <!-- Head shape -->
+  <ellipse cx="100" cy="82" rx="38" ry="42" fill="#f1d5c4"/>
+  <!-- Hair -->
+  <ellipse cx="100" cy="58" rx="40" ry="30" fill="#1e293b"/>
+  <path d="M60 65 Q60 45 80 38 Q95 32 110 36 Q130 40 138 58 Q140 65 140 70" fill="#1e293b"/>
+  <path d="M65 55 Q70 42 85 36 Q95 33 105 34 Q120 36 130 46 Q135 54 135 62" fill="#1e293b"/>
+  <!-- Eyes -->
+  <ellipse cx="86" cy="82" rx="5" ry="3.5" fill="white"/>
+  <ellipse cx="114" cy="82" rx="5" ry="3.5" fill="white"/>
+  <circle cx="86" cy="82" r="2.5" fill="#1e293b"/>
+  <circle cx="114" cy="82" r="2.5" fill="#1e293b"/>
+  <circle cx="87" cy="81" r="1" fill="white"/>
+  <circle cx="115" cy="81" r="1" fill="white"/>
+  <!-- Eyebrows -->
+  <path d="M78 76 Q86 72 94 75" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M106 75 Q114 72 122 76" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M100 84 Q103 92 99 97" fill="none" stroke="#d4a88a" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Mouth -->
+  <path d="M90 106 Q95 111 100 110 Q105 111 110 106" fill="none" stroke="#c4876a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Smile lines -->
+  <path d="M88 108 Q85 112 83 110" fill="none" stroke="#d4a88a" stroke-width="1" stroke-linecap="round"/>
+  <path d="M112 108 Q115 112 117 110" fill="none" stroke="#d4a88a" stroke-width="1" stroke-linecap="round"/>
+  <!-- Ears -->
+  <ellipse cx="60" cy="84" rx="4" ry="7" fill="#f1d5c4"/>
+  <ellipse cx="140" cy="84" rx="4" ry="7" fill="#f1d5c4"/>
+</svg>
