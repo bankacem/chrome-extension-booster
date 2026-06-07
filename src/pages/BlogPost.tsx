@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Calendar, Clock, ArrowLeft, Tag, User, Share2, Download } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, Tag, User, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -15,6 +15,7 @@ import yaml from "js-yaml";
 import { getPartitionedPath, resolveImagePath } from "@/utils/articlePath";
 import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
 import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
+import ReactMarkdown from "react-markdown";
 
 interface Article {
   id: string;
@@ -55,43 +56,19 @@ const processArticleContent = (content: string) => {
 
   let processed = content;
 
-  // 1. Resolve image paths — render raw from resolveImagePath without optimization
-  processed = processed.replace(/<img([^>]*)>/gi, (match, attributes) => {
-    const srcMatch = attributes.match(/src=["']([^"']*)["']/i);
-    if (!srcMatch) return match;
+  // 1. منع تكرار الصور: حذف أول صورة تظهر في بداية النص إذا كانت تطابق الصورة البارزة
+  processed = processed.replace(/^(!\[[^\]]*\]\([^)]+\)\s*)/i, "");
+  processed = processed.replace(/^(<img[^>]*>\s*)/i, "");
 
-    const originalSrc = srcMatch[1].trim();
-    const resolvedSrc = resolveImagePath(originalSrc);
-
-    let newAttributes = attributes.replace(/src=["']([^"']*)["']/i, `src="${resolvedSrc}"`);
-
-    if (!newAttributes.includes('loading=')) newAttributes = ` loading="lazy"${newAttributes}`;
-    if (!newAttributes.includes('decoding=')) newAttributes = ` decoding="async"${newAttributes}`;
-    if (!newAttributes.includes('referrerpolicy=')) newAttributes = ` referrerpolicy="no-referrer"${newAttributes}`;
-
-    return `<img${newAttributes}>`;
-  });
-
-  // 1b. Handle Markdown image syntax: ![alt](url)
-  processed = processed.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
-    const resolved = resolveImagePath(src);
-    return `<img src="${resolved}" alt="${alt}" referrerpolicy="no-referrer" loading="lazy" decoding="async">`;
-  });
-
-  // 1c. Convert YouTube/video links in content to embedded players
+  // 2. إصلاح روابط اليوتيوب وتحويلها إلى لاعب مدمج
   processed = processed.replace(
     /<a[^>]*href=["'](https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})[^"']*)["'][^>]*>.*?<\/a>/gi,
     '<div class="aspect-video my-6 rounded-xl overflow-hidden border border-border"><iframe src="https://www.youtube-nocookie.com/embed/$2" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" loading="lazy"></iframe></div>'
   );
 
-  // 2. Semantic HTML Audit: Demote lower-level headings
-  // (H1 demotion removed to allow articles to keep their H1 tags for SEO)
-  processed = processed.replace(/<h[4-6]([^>]*)>(.*?)<\/h[4-6]>/gi, '<h3$1>$2</h3>');
-
   return processed;
 };
 
-// Helper to convert slug to readable title for instant SEO
 const slugToTitle = (slug: string): string => {
   return slug
     .split("-")
@@ -110,7 +87,6 @@ const BlogPost = () => {
   const [notFound, setNotFound] = useState(false);
   const { toast } = useToast();
 
-  // Generate instant SEO fallback from slug
   const instantTitle = slug ? slugToTitle(slug) : "Loading Article";
   const instantDescription = `Read our article about ${instantTitle.toLowerCase()}. Discover tips, tutorials, and insights about browser extensions and productivity.`;
 
@@ -126,7 +102,6 @@ const BlogPost = () => {
     setError(null);
     
     try {
-      // 1. Fetch index first for immediate SEO and Search-and-Rescue
       const indexRes = await fetch("/content/articles-index.json");
       let matched: Article | null = null;
       let allArticles: Article[] = [];
@@ -135,13 +110,11 @@ const BlogPost = () => {
         allArticles = await indexRes.json() as Article[];
         const normalizedSlug = slug.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
 
-        // Exact match by slug or ID
         matched = allArticles.find(a =>
           a.slug === normalizedSlug ||
           a.id === slug
         ) || null;
 
-        // Fuzzy match: if no exact match, find the closest slug
         if (!matched) {
           const incomingWords = normalizedSlug.split('-').filter(w => w.length > 2);
           let bestScore = 0;
@@ -161,27 +134,22 @@ const BlogPost = () => {
 
           if (bestMatch) {
             matched = bestMatch;
-            console.log(`[Search-and-Rescue] Fuzzy matched "${slug}" → "${matched.slug}" (score: ${bestScore})`);
           }
         }
       }
 
-      // 2. If matched, update SEO and basic info immediately
       if (matched) {
         setArticle(matched);
         if (matched.slug !== slug) {
-          console.log(`[Search-and-Rescue] Correcting URL: /blog/${matched.slug}`);
           window.history.replaceState(null, '', `/blog/${matched.slug}`);
         }
 
-        // Fetch related articles while loading content
         const related = allArticles
           .filter(a => a.category === matched?.category && a.id !== matched?.id)
           .slice(0, 3);
         setRelatedArticles(related);
       }
 
-      // 3. Fetch Markdown content from partitioned path
       const fetchSlug = matched ? matched.slug : slug;
       const path = getPartitionedPath(fetchSlug);
       const response = await fetch(path);
@@ -191,7 +159,6 @@ const BlogPost = () => {
         if (response.status === 404 || isHtml) {
           if (matched) {
             setError(`Content file missing or invalid for article: ${matched.slug}`);
-            console.error(`[Critical] Article exists in index but file is missing or server returned HTML at ${path}`);
           } else {
             setNotFound(true);
           }
@@ -216,7 +183,6 @@ const BlogPost = () => {
       const fullArticle = { ...(matched || {}), ...frontmatter, content: processedContent } as Article;
       setArticle(fullArticle);
 
-      // Smart extension detection: frontmatter > slug lookup > content detection
       const extSlug = (frontmatter as Record<string, unknown>).related_extension_slug as string | undefined;
       let detectedExt: Extension | null = null;
       if (extSlug) {
@@ -230,6 +196,7 @@ const BlogPost = () => {
         );
       }
       setMatchedExtension(detectedExt);
+
       if (frontmatter.id) {
         try {
           const { data } = await supabase
@@ -278,118 +245,55 @@ const BlogPost = () => {
     }
   };
 
-  // Show error if content is missing but article exists in index
   if (error && !loading) {
     return (
       <div className="min-h-screen bg-background">
-        <SEO
-          title={article?.title || "Content Error"}
-          description={article?.meta_description || "Article content is currently unavailable."}
-          canonicalPath={`/blog/${slug}`}
-        />
+        <SEO title={article?.title || "Content Error"} description={article?.meta_description || "Article content is currently unavailable."} canonicalPath={`/blog/${slug}`} />
         <Navbar />
         <div className="container mx-auto px-4 pt-32 text-center">
           <h2 className="mb-4 text-2xl font-bold text-destructive">Content Unavailable</h2>
-          <p className="mb-6 text-muted-foreground">
-            {error}. Please try again later or contact support.
-          </p>
-          <Link to="/blog">
-            <Button>
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Blog
-            </Button>
-          </Link>
+          <p className="mb-6 text-muted-foreground">{error}. Please try again later or contact support.</p>
+          <Link to="/blog"><Button><ArrowLeft className="mr-2 h-4 w-4" />Back to Blog</Button></Link>
         </div>
         <Footer />
       </div>
     );
   }
 
-  // Only show 404 after confirming article doesn't exist
   if (notFound && !loading) {
     return (
       <div className="min-h-screen bg-background">
-        <SEO
-          title="Article Not Found"
-          description="The article you're looking for doesn't exist or has been removed."
-          canonicalPath={`/blog/${slug}`}
-        />
+        <SEO title="Article Not Found" description="The article you're looking for doesn't exist or has been removed." canonicalPath={`/blog/${slug}`} />
         <Navbar />
         <div className="container mx-auto px-4 pt-32 text-center">
           <h2 className="mb-4 text-2xl font-bold">Article Not Found</h2>
-          <p className="mb-6 text-muted-foreground">
-            The article you're looking for doesn't exist or has been removed.
-          </p>
-          <Link to="/blog">
-            <Button>
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Blog
-            </Button>
-          </Link>
+          <p className="mb-6 text-muted-foreground">The article you're looking for doesn't exist or has been removed.</p>
+          <Link to="/blog"><Button><ArrowLeft className="mr-2 h-4 w-4" />Back to Blog</Button></Link>
         </div>
         <Footer />
       </div>
     );
   }
 
-  // Loading state with SEO metadata already rendered
   if (loading) {
     return (
       <div className="min-h-screen bg-background">
-        {/* SEO renders instantly based on article data if available from index, else fallback to slug */}
-        <SEO
-          title={article?.title || instantTitle}
-          description={article?.meta_description || article?.excerpt || instantDescription}
-          canonicalPath={article?.canonicalPath || `/blog/${slug}`}
-          ogType="article"
-          articlePublishedTime={article?.published_at}
-          articleAuthor={article?.author}
-        />
+        <SEO title={article?.title || instantTitle} description={article?.meta_description || article?.excerpt || instantDescription} canonicalPath={article?.canonicalPath || `/blog/${slug}`} ogType="article" articlePublishedTime={article?.published_at} articleAuthor={article?.author} />
         <Navbar />
         <main className="pt-24 pb-16">
           <article className="container mx-auto max-w-4xl px-4">
-            <Link to="/blog">
-              <Button variant="ghost" className="mb-8">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Blog
-              </Button>
-            </Link>
-            
-            {/* Skeleton loading with title visible for SEO */}
+            <Link to="/blog"><Button variant="ghost" className="mb-8"><ArrowLeft className="mr-2 h-4 w-4" />Back to Blog</Button></Link>
             <header className="mb-8">
               <div className="mb-4 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-                {article?.category ? (
-                   <span className="rounded-full bg-primary/10 px-3 py-1 text-primary">
-                    {article.category}
-                  </span>
-                ) : (
-                  <div className="h-6 w-20 animate-pulse rounded-full bg-muted" />
-                )}
-
-                {article?.published_at ? (
-                  <span className="flex items-center gap-1">
-                    <Calendar className="h-4 w-4" />
-                    {new Date(article.published_at).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </span>
-                ) : (
-                  <div className="h-4 w-32 animate-pulse rounded bg-muted" />
-                )}
+                {article?.category ? <span className="rounded-full bg-primary/10 px-3 py-1 text-primary">{article.category}</span> : <div className="h-6 w-20 animate-pulse rounded-full bg-muted" />}
+                {article?.published_at ? <span className="flex items-center gap-1"><Calendar className="h-4 w-4" />{new Date(article.published_at).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span> : <div className="h-4 w-32 animate-pulse rounded bg-muted" />}
               </div>
-              <h1 className="mb-4 font-heading text-3xl font-bold leading-tight md:text-5xl">
-                {article?.title || instantTitle}
-              </h1>
+              <h1 className="mb-4 font-heading text-3xl font-bold leading-tight md:text-5xl">{article?.title || instantTitle}</h1>
               <p className="text-lg text-muted-foreground">Loading article content...</p>
             </header>
-            
             <div className="space-y-4">
               <div className="h-64 w-full animate-pulse rounded-xl bg-muted" />
               <div className="h-4 w-full animate-pulse rounded bg-muted" />
-              <div className="h-4 w-3/4 animate-pulse rounded bg-muted" />
-              <div className="h-4 w-5/6 animate-pulse rounded bg-muted" />
             </div>
           </article>
         </main>
@@ -398,200 +302,79 @@ const BlogPost = () => {
     );
   }
 
-  if (!article || !article.content) {
-    return (
-      <div className="min-h-screen bg-background">
-        <SEO title="Article Unavailable" canonicalPath={`/blog/${slug}`} />
-        <Navbar />
-        <div className="container mx-auto px-4 pt-32 text-center">
-          <h2 className="mb-4 text-2xl font-bold">Article Unavailable</h2>
-          <p className="mb-6 text-muted-foreground">
-            We encountered an issue loading this article's content.
-          </p>
-          <Link to="/blog">
-            <Button>
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Blog
-            </Button>
-          </Link>
-        </div>
-        <Footer />
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-background">
-      <SEO
-        title={article.title}
-        description={article.meta_description || article.excerpt || undefined}
-        keywords={article.keywords?.join(", ")}
-        canonicalPath={article.canonicalPath || `/blog/${article.slug}`}
-        ogType="article"
-        articlePublishedTime={article.published_at}
-        articleAuthor={article.author}
-      />
+      <SEO title={article.title} description={article.meta_description || article.excerpt || undefined} keywords={article.keywords?.join(", ")} canonicalPath={article.canonicalPath || `/blog/${article.slug}`} ogType="article" articlePublishedTime={article.published_at} articleAuthor={article.author} />
       {article.schema && <SchemaMarkup data={article.schema} />}
       <Navbar />
 
       <main className="pt-24 pb-16">
         <article className="container mx-auto max-w-4xl px-4">
-          {/* Back Button */}
-          <Link to="/blog">
-            <Button variant="ghost" className="mb-8">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Blog
-            </Button>
-          </Link>
+          <Link to="/blog"><Button variant="ghost" className="mb-8"><ArrowLeft className="mr-2 h-4 w-4" />Back to Blog</Button></Link>
 
-          {/* Article Header */}
-          <motion.header
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mb-8"
-          >
+          <motion.header initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
             <div className="mb-4 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-              <span className="rounded-full bg-primary/10 px-3 py-1 text-primary">
-                {article.category || "Uncategorized"}
-              </span>
-              <span className="flex items-center gap-1">
-                <Calendar className="h-4 w-4" />
-                {article.published_at && new Date(article.published_at).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </span>
-              <span className="flex items-center gap-1">
-                <Clock className="h-4 w-4" />
-                {article.read_time} min read
-              </span>
-              <span className="flex items-center gap-1">
-                <User className="h-4 w-4" />
-                {article.author}
-              </span>
+              <span className="rounded-full bg-primary/10 px-3 py-1 text-primary">{article.category || "Uncategorized"}</span>
+              <span className="flex items-center gap-1"><Calendar className="h-4 w-4" />{article.published_at && new Date(article.published_at).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
+              <span className="flex items-center gap-1"><Clock className="h-4 w-4" />{article.read_time} min read</span>
+              <span className="flex items-center gap-1"><User className="h-4 w-4" />{article.author}</span>
             </div>
-
-            <h1 className="mb-4 font-heading text-3xl font-bold leading-tight md:text-5xl">
-              {article.title}
-            </h1>
-
-            {article.excerpt && (
-              <p className="text-lg text-muted-foreground">{article.excerpt}</p>
-            )}
-
+            <h1 className="mb-4 font-heading text-3xl font-bold leading-tight md:text-5xl">{article.title}</h1>
+            {article.excerpt && <p className="text-lg text-muted-foreground">{article.excerpt}</p>}
             <div className="mt-4 flex items-center gap-4">
-              <Button variant="outline" size="sm" onClick={handleShare}>
-                <Share2 className="mr-2 h-4 w-4" />
-                Share
-              </Button>
-              <span className="text-sm text-muted-foreground">
-                {article.views} views
-              </span>
+              <Button variant="outline" size="sm" onClick={handleShare}><Share2 className="mr-2 h-4 w-4" />Share</Button>
+              <span className="text-sm text-muted-foreground">{article.views} views</span>
             </div>
           </motion.header>
 
-          {/* Featured Video */}
-          {article.featured_video && (
-            <VideoPlayer url={article.featured_video} title={article.title} />
-          )}
+          {article.featured_video && <VideoPlayer url={article.featured_video} title={article.title} />}
 
-          {/* Featured Image — direct raw loading with defined dimensions to prevent CLS */}
           {article.featured_image && !article.featured_video && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="mb-8 overflow-hidden rounded-xl bg-muted aspect-video"
-            >
-              <img
-                src={resolveImagePath(article.featured_image)}
-                alt={article.title}
-                width="1200"
-                height="675"
-                decoding="async"
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-cover"
-              />
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="mb-8 overflow-hidden rounded-xl bg-muted aspect-video">
+              <img src={resolveImagePath(article.featured_image)} alt={article.title} width="1200" height="675" decoding="async" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
             </motion.div>
           )}
 
-          {/* Article Content */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="prose prose-lg dark:prose-invert max-w-none"
-            dangerouslySetInnerHTML={{ __html: article.content }}
-          />
+          {/* التنسيق الاحترافي الجديد باستخدام ReactMarkdown والـ Tailwind Typography */}
+          <motion.div 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ delay: 0.3 }} 
+            className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-h2:text-2xl prose-h3:text-xl prose-p:text-muted-foreground prose-a:text-primary hover:prose-a:underline"
+          >
+            <ReactMarkdown>{article.content}</ReactMarkdown>
+          </motion.div>
 
-          {/* Smart Extension Bridge: shows internal extension CTA when matched */}
           {matchedExtension && (
-            <DirectDownloadSection
-              extensionName={matchedExtension.name}
-              internalSlug={matchedExtension.slug}
-              storeUrl={matchedExtension.storeUrl}
-              users={matchedExtension.users}
-              rating={matchedExtension.rating}
-              lastUpdated={article.published_at ? new Date(article.published_at).toLocaleDateString("en-US", { month: 'long', year: 'numeric' }) : undefined}
-            />
+            <DirectDownloadSection extensionName={matchedExtension.name} internalSlug={matchedExtension.slug} storeUrl={matchedExtension.storeUrl} users={matchedExtension.users} rating={matchedExtension.rating} lastUpdated={article.published_at ? new Date(article.published_at).toLocaleDateString("en-US", { month: 'long', year: 'numeric' }) : undefined} />
           )}
 
-          {/* Tags */}
           {article.tags && article.tags.length > 0 && (
             <div className="mt-8 flex flex-wrap gap-2 border-t border-border pt-8">
               <span className="text-sm font-medium">Tags:</span>
               {article.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="inline-flex items-center gap-1 rounded-full bg-muted px-3 py-1 text-sm"
-                >
-                  <Tag className="h-3 w-3" />
-                  {tag}
-                </span>
+                <span key={tag} className="inline-flex items-center gap-1 rounded-full bg-muted px-3 py-1 text-sm"><Tag className="h-3 w-3" />{tag}</span>
               ))}
             </div>
           )}
 
-          {/* Keywords */}
           {article.keywords && article.keywords.length > 0 && (
-            <div className="mt-4 text-sm text-muted-foreground">
-              <span className="font-medium">Keywords: </span>
-              {article.keywords.join(", ")}
-            </div>
+            <div className="mt-4 text-sm text-muted-foreground"><span className="font-medium">Keywords: </span>{article.keywords.join(", ")}</div>
           )}
         </article>
 
-        {/* Related Articles */}
         {relatedArticles.length > 0 && (
           <section className="container mx-auto mt-16 px-4">
-            <h2 className="mb-8 text-center font-heading text-2xl font-bold">
-              Related Articles
-            </h2>
+            <h2 className="mb-8 text-center font-heading text-2xl font-bold">Related Articles</h2>
             <div className="grid gap-6 md:grid-cols-3">
               {relatedArticles.map((related) => (
-                <Link
-                  key={related.id}
-                  to={`/blog/${related.slug}`}
-                  className="glass-card overflow-hidden transition-transform hover:scale-[1.02]"
-                >
+                <Link key={related.id} to={`/blog/${related.slug}`} className="glass-card overflow-hidden transition-transform hover:scale-[1.02]">
                   {related.featured_image && (
                     <div className="aspect-video overflow-hidden">
-                      <img
-                        src={resolveImagePath(related.featured_image)}
-                        alt={related.title}
-                        loading="lazy"
-                        decoding="async"
-                        referrerPolicy="no-referrer"
-                        className="h-full w-full object-cover"
-                      />
+                      <img src={resolveImagePath(related.featured_image)} alt={related.title} loading="lazy" decoding="async" referrerPolicy="no-referrer" className="h-full w-full object-cover" />
                     </div>
                   )}
-                  <div className="p-4">
-                    <h3 className="font-heading font-semibold line-clamp-2">
-                      {related.title}
-                    </h3>
-                  </div>
+                  <div className="p-4"><h3 className="font-heading font-semibold line-clamp-2">{related.title}</h3></div>
                 </Link>
               ))}
             </div>
