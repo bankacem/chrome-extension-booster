@@ -133,7 +133,7 @@ const BlogPost = () => {
     } catch (error) {
       console.error("Error fetching article:", error);
       setNotFound(true);
-    } finaly {
+    } finally {
       setLoading(false);
     }
   }, [slug]);
