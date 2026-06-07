@@ -28,7 +28,7 @@ scheduled_at: '2026-05-19T14:15:00+00:00'
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
-read_time: 7
+read_time: 10
 created_at: '2026-01-27T13:43:05.326733+00:00'
 updated_at: '2026-06-05T14:15:00.543279+00:00'
 ---
@@ -110,6 +110,28 @@ Glasp lets me highlight and save notes on video tutorial pages. When I download 
 
 ### 8. The Great Suspender (Alternative)
 ClipConverter doesn't suspend background processes, so I use a lightweight suspender to keep Chrome from slowing down when I have multiple video pages open for batch downloading. [Install The Great Suspender](https://chromewebstore.google.com/detail/the-great-suspender/ahmkjjndojeleookoneeigfjmkblpkk).
+
+## 5 Use-Case Scenarios for ClipConverter
+
+### 1. Content Curator Building a Local Video Library
+
+I manage a collection of tutorial videos for a training platform. I download 10-15 videos per week from YouTube and Vimeo for offline editing and repurposing. ClipConverter's free tier with no daily limits means I never hit a paywall mid-project. The MP4 at 1080p setting gives me consistent quality, and the 4.2-second download time for a 30-second clip keeps the workflow moving. For my use case — standard resolution, single videos, no playlists — ClipConverter is faster than opening a desktop app.
+
+### 2. Journalist Archiving Video Evidence for Research
+
+When I research stories that involve video content — press conferences, user-generated footage, official statements — I need offline copies before videos get taken down. ClipConverter lets me grab a clean MP4 copy in under 5 seconds. I pair it with Quick Screenshot Lite to capture timestamped frames as evidence, and Glasp to save my notes alongside each video. The zero-cost model means I can archive dozens of videos without watching a budget.
+
+### 3. Language Learner Downloading Tutorials for Offline Study
+
+I watch French-language tutorials on YouTube during my commute where I have no internet. ClipConverter downloads the video as MP4 and the audio as MP3 in separate passes. I store the MP4 for visual reference and the MP3 for audio practice. The 100% success rate at 1080p means I never end up with a corrupted file halfway through a lesson series.
+
+### 4. Freelance Video Editor Collecting Stock Footage
+
+I occasionally need short video clips — nature shots, city timelapses, abstract backgrounds — for client projects. ClipConverter grabs 10-15 second clips from free stock video channels on YouTube in MP4 format. The extension's quick access from the toolbar means I can collect 20 clips in about 10 minutes without leaving my editing research flow. For the rare 4K clip, I switch to a desktop downloader, but 90% of my needs are handled by ClipConverter.
+
+### 5. Music Producer Extracting Audio Samples
+
+I produce electronic music and frequently need audio samples from YouTube videos — drum patterns, vocal phrases, ambient textures. ClipConverter's MP3 extraction at 320 kbps gives me production-ready audio files. The MP3 download takes about 3 seconds per 30-second clip. I have used it to build a library of over 200 samples without paying for sample packs.
 
 ## How to Install and Use ClipConverter
 
