@@ -14,6 +14,7 @@
     "sync-db-to-md": "bun scripts/sync-db-to-md.ts",
     "index-sitemap": "bun scripts/index-sitemap.ts",
     "repartition-articles": "bun scripts/repartition-articles.ts",
+    "schedule-new-articles": "bun scripts/schedule-new-articles.ts",
     "publish": "bun run sync-db-to-md && bun run sync-articles && git add -A && git commit -m \"chore: publish articles\" && git push",
     "postbuild": "npx tsx scripts/generate-sitemap.ts",
     "pre-commit": "bun run sync-db-to-md && bun run sync-articles"
