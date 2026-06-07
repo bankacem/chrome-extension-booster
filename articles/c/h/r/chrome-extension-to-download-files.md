@@ -21,7 +21,7 @@ scheduled_at: '2026-04-02T14:15:00+00:00'
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
-read_time: 8
+read_time: 11
 created_at: '2026-03-17T00:34:50.647632+00:00'
 updated_at: '2026-04-24T15:23:18.837474+00:00'
 ---
