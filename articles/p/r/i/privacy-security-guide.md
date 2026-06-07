@@ -6,7 +6,8 @@ excerpt: >-
   managing passwords, and preventing URL hijacking.
 featured_image: /content/images/privacy-security-guide/featured.webp
 category: Security & Privacy
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 published_at: '2026-03-20T00:00:00.000Z'
 read_time: 16
 status: published

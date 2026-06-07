@@ -20,7 +20,8 @@ meta_description: >-
 status: published
 published_at: '2026-02-22T23:26:02.982+00:00'
 scheduled_at: null
-author: AI Generator
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 views: 6
 read_time: 5
 created_at: '2026-02-13T19:04:57.927545+00:00'

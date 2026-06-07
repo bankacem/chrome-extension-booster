@@ -6,7 +6,8 @@ excerpt: >-
   for offline use, and enable dark mode desktop.
 featured_image: /content/images/youtube-tools-guide/featured.webp
 category: Productivity & Tools
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 published_at: '2026-03-20T00:00:00.000Z'
 read_time: 14
 status: published

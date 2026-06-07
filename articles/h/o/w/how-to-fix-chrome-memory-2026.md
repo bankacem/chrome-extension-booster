@@ -17,7 +17,8 @@ meta_description: >-
   Reclaim 50%+ RAM and boost speed with our 10 pro tips. (100% Free)
 status: published
 published_at: 2026-02-23T10:00:00.000Z
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 read_time: 5
 schema:
   '@context': 'https://schema.org'

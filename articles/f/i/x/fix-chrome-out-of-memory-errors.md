@@ -16,7 +16,8 @@ meta_description: >-
   Recover from crashes and prevent future memory-related browser failures.
 status: published
 published_at: 2026-03-23T00:00:00.000Z
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 read_time: 7
 schema:
   '@context': 'https://schema.org'

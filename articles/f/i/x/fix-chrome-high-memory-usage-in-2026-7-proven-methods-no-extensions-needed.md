@@ -20,7 +20,8 @@ meta_description: 'Fix Chrome High Memory Usage in 2026: 7 Proven Methods (No Ex
 status: published
 published_at: '2026-03-16T17:19:45.592+00:00'
 scheduled_at: null
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 views: 1
 read_time: 1
 created_at: '2026-01-19T13:57:22.686029+00:00'

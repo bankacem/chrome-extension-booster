@@ -16,7 +16,8 @@ meta_description: >-
   Performance tab to identify resource-heavy tabs and extensions.
 status: published
 published_at: 2026-03-24T00:00:00.000Z
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 read_time: 6
 schema:
   '@context': 'https://schema.org'

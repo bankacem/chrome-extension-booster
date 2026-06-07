@@ -23,7 +23,8 @@ meta_description: 'Discover curated, high-performance browser extensions.'
 status: published
 published_at: '2026-02-22T22:33:00.457+00:00'
 scheduled_at: null
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 1
 created_at: '2026-01-19T13:56:56.806398+00:00'

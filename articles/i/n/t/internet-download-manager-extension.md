@@ -12,7 +12,8 @@ excerpt: >-
   IDM.
 published_at: '2025-05-20T11:00:00.000Z'
 category: Productivity & Tools
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 status: published
 reading_time: 5
 read_time: 5

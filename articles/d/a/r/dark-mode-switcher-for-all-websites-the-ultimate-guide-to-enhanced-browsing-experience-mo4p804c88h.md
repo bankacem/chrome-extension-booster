@@ -21,7 +21,8 @@ meta_description: >-
 status: draft
 published_at: null
 scheduled_at: null
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 6
 created_at: '2026-04-18T18:56:55.955554+00:00'

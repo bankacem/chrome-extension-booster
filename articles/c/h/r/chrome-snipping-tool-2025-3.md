@@ -22,7 +22,8 @@ meta_description: >-
 status: published
 published_at: '2026-02-22T18:15:10.274+00:00'
 scheduled_at: null
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 8
 created_at: '2026-01-21T18:56:49.285053+00:00'

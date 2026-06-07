@@ -18,7 +18,8 @@ meta_description: >-
   memory consumption and boost browser speed using native tools and extensions.
 status: published
 published_at: 2026-03-20T00:00:00.000Z
-author: Admin
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 read_time: 15
 schema:
   '@context': 'https://schema.org'

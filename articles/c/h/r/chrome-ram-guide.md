@@ -18,7 +18,8 @@ keywords:
   - reduce chrome memory
   - tab suspender
   - chrome performance guide
-author: Jules
+author: James Mitchell
+author_image: /content/images/authors/james-mitchell.png
 published_at: '2026-01-20'
 read_time: 9
 status: published
