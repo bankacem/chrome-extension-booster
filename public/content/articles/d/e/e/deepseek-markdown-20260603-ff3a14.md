@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-ff3a14
 status: published
 published_at: '2026-07-28'
+featured_image: /content/images/deepseek-markdown-20260603-ff3a14.jpg
+image_url: /content/images/deepseek-markdown-20260603-ff3a14.jpg
 ---
 # ✍️ Best AI Writing Assistants for Gmail Chrome (2026) — Stop Writing, Start Editing
 

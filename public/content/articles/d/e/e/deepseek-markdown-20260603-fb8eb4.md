@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-fb8eb4
 status: published
 published_at: '2026-07-27'
+featured_image: /content/images/deepseek-markdown-20260603-fb8eb4.jpg
+image_url: /content/images/deepseek-markdown-20260603-fb8eb4.jpg
 ---
 # ✍️ Best AI Blog Writer Chrome Extensions (2026) — From Keyword to Published Post
 

@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-266737
 status: published
 published_at: '2026-07-05'
+featured_image: /content/images/deepseek-markdown-20260603-266737.jpg
+image_url: /content/images/deepseek-markdown-20260603-266737.jpg
 ---
 # AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking Language Barriers
 

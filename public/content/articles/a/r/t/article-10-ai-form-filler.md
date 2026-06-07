@@ -2,6 +2,8 @@
 slug: article-10-ai-form-filler
 status: published
 published_at: '2026-06-09'
+featured_image: /content/images/article-10-ai-form-filler.jpg
+image_url: /content/images/article-10-ai-form-filler.jpg
 ---
 # AI Form Filler Chrome Extension: The Ultimate Guide for 2026
 

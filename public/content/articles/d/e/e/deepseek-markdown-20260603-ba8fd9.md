@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-ba8fd9
 status: published
 published_at: '2026-07-22'
+featured_image: /content/images/deepseek-markdown-20260603-ba8fd9.jpg
+image_url: /content/images/deepseek-markdown-20260603-ba8fd9.jpg
 ---
 # ChatGPT Tone Changer Chrome Extension: The Complete 2026 Guide to Perfecting Your AI Voice
 

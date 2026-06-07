@@ -2,6 +2,8 @@
 slug: article-17-chatgpt-slack-integration
 status: published
 published_at: '2026-06-16'
+featured_image: /content/images/article-17-chatgpt-slack-integration.jpg
+image_url: /content/images/article-17-chatgpt-slack-integration.jpg
 ---
 # ChatGPT for Slack Integration Chrome: The Ultimate Guide for 2026
 

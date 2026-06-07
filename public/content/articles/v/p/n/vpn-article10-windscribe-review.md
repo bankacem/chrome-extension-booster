@@ -2,6 +2,8 @@
 slug: vpn-article10-windscribe-review
 status: published
 published_at: '2026-08-03'
+featured_image: /content/images/vpn-article10-windscribe-review.jpg
+image_url: /content/images/vpn-article10-windscribe-review.jpg
 ---
 # Windscribe Chrome Extension Free Review 2026: The Build-Your-Own VPN That Gets It Right
 

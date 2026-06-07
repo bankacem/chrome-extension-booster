@@ -2,6 +2,8 @@
 slug: article-8-ai-seo-content-writer
 status: published
 published_at: '2026-06-24'
+featured_image: /content/images/article-8-ai-seo-content-writer.jpg
+image_url: /content/images/article-8-ai-seo-content-writer.jpg
 ---
 # AI SEO Content Writer Chrome Extension: The Ultimate Guide for 2026
 

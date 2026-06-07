@@ -2,6 +2,8 @@
 slug: pillar-adblock-android-outline
 status: published
 published_at: '2026-07-31'
+featured_image: /content/images/pillar-adblock-android-outline.jpg
+image_url: /content/images/pillar-adblock-android-outline.jpg
 ---
 # Pillar Page Strategy: AdBlock for Chrome Android
 **Target Keyword:** AdBlock for Chrome Android

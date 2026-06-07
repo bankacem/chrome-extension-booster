@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-823246
 status: published
 published_at: '2026-07-15'
+featured_image: /content/images/deepseek-markdown-20260603-823246.jpg
+image_url: /content/images/deepseek-markdown-20260603-823246.jpg
 ---
 # ⚙️ ChatGPT Custom Instructions Chrome Extensions (2026) — Make ChatGPT Sound Exactly Like You
 

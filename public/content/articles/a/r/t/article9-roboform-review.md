@@ -2,6 +2,8 @@
 slug: article9-roboform-review
 status: published
 published_at: '2026-07-04'
+featured_image: /content/images/article9-roboform-review.jpg
+image_url: /content/images/article9-roboform-review.jpg
 ---
 # RoboForm Chrome Extension Review 2026: The Form-Filling Veteran That Refuses to Retire
 

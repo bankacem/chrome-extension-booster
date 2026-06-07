@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-893918
 status: published
 published_at: '2026-07-16'
+featured_image: /content/images/deepseek-markdown-20260603-893918.jpg
+image_url: /content/images/deepseek-markdown-20260603-893918.jpg
 ---
 # ChatGPT Bookmark Manager Chrome Extension: The Complete 2026 Guide to Organizing Your AI Conversations
 

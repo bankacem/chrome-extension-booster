@@ -2,6 +2,8 @@
 slug: article-12-ai-study-guide-generator
 status: published
 published_at: '2026-06-11'
+featured_image: /content/images/article-12-ai-study-guide-generator.jpg
+image_url: /content/images/article-12-ai-study-guide-generator.jpg
 ---
 # AI Study Guide Generator Chrome Extension: The Ultimate Guide for Students in 2026
 

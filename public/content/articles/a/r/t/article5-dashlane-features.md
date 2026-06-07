@@ -2,6 +2,8 @@
 slug: article5-dashlane-features
 status: published
 published_at: '2026-06-30'
+featured_image: /content/images/article5-dashlane-features.jpg
+image_url: /content/images/article5-dashlane-features.jpg
 ---
 # Dashlane Chrome Extension Features in 2026: A Deep Dive Into the Premium-Only Powerhouse
 

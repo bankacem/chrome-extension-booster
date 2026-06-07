@@ -2,6 +2,8 @@
 slug: article6-keeper-review
 status: published
 published_at: '2026-07-01'
+featured_image: /content/images/article6-keeper-review.jpg
+image_url: /content/images/article6-keeper-review.jpg
 ---
 # Keeper Chrome Extension Review 2026: The Most Customizable Password Vault You've Never Heard Of
 

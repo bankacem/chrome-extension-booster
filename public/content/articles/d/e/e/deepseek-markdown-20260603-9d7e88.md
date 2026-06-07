@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-9d7e88
 status: published
 published_at: '2026-07-19'
+featured_image: /content/images/deepseek-markdown-20260603-9d7e88.jpg
+image_url: /content/images/deepseek-markdown-20260603-9d7e88.jpg
 ---
 # 🎯 Stop Wasting Time Typing the Same Prompts: Best ChatGPT Prompt Manager Extensions (2026)
 

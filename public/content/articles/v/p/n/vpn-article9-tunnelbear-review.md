@@ -2,6 +2,8 @@
 slug: vpn-article9-tunnelbear-review
 status: published
 published_at: '2026-08-12'
+featured_image: /content/images/vpn-article9-tunnelbear-review.jpg
+image_url: /content/images/vpn-article9-tunnelbear-review.jpg
 ---
 # TunnelBear Chrome Extension Review 2026: The Cute Bear That Takes Your Privacy Seriously
 

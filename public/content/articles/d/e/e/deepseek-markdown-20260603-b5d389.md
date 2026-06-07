@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-b5d389
 status: published
 published_at: '2026-07-21'
+featured_image: /content/images/deepseek-markdown-20260603-b5d389.jpg
+image_url: /content/images/deepseek-markdown-20260603-b5d389.jpg
 ---
 # 🎨 Best Free AI Image Generator Chrome Extensions (2026) — Create Art Without Leaving Your Tab
 

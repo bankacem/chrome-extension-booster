@@ -2,6 +2,8 @@
 slug: article-2-chatgpt-amazon-reviews
 status: published
 published_at: '2026-06-18'
+featured_image: /content/images/article-2-chatgpt-amazon-reviews.jpg
+image_url: /content/images/article-2-chatgpt-amazon-reviews.jpg
 ---
 # ChatGPT for Amazon Reviews Chrome Extension: The Ultimate Guide for 2026
 

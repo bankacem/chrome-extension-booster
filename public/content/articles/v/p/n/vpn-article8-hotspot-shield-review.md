@@ -2,6 +2,8 @@
 slug: vpn-article8-hotspot-shield-review
 status: published
 published_at: '2026-08-11'
+featured_image: /content/images/vpn-article8-hotspot-shield-review.jpg
+image_url: /content/images/vpn-article8-hotspot-shield-review.jpg
 ---
 # Hotspot Shield Chrome Extension Review 2026: The Speed Demon With a Sketchy Past
 

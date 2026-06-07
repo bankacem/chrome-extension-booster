@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-589870
 status: published
 published_at: '2026-07-10'
+featured_image: /content/images/deepseek-markdown-20260603-589870.jpg
+image_url: /content/images/deepseek-markdown-20260603-589870.jpg
 ---
 # ⚡ Free AI Content Summarizer Chrome Extensions (2026) — Read Less, Know More
 

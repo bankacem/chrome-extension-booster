@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-57250b
 status: published
 published_at: '2026-07-09'
+featured_image: /content/images/deepseek-markdown-20260603-57250b.jpg
+image_url: /content/images/deepseek-markdown-20260603-57250b.jpg
 ---
 # AI Cover Letter Writer Chrome Extension: The Complete 2026 Guide to Landing Your Dream Job
 

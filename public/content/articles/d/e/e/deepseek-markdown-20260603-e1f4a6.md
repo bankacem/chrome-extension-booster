@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-e1f4a6
 status: published
 published_at: '2026-07-24'
+featured_image: /content/images/deepseek-markdown-20260603-e1f4a6.jpg
+image_url: /content/images/deepseek-markdown-20260603-e1f4a6.jpg
 ---
 # ChatGPT Export Chat Chrome Extension: The Complete 2026 Guide to Saving, Sharing, and Backing Up Your Conversations
 

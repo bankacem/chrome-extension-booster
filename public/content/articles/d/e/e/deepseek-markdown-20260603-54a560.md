@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-54a560
 status: published
 published_at: '2026-07-08'
+featured_image: /content/images/deepseek-markdown-20260603-54a560.jpg
+image_url: /content/images/deepseek-markdown-20260603-54a560.jpg
 ---
 # 📧 The Ultimate Guide to AI Email Assistant Chrome Extensions (Save 10+ Hours/Week)
 

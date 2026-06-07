@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-80b899
 status: published
 published_at: '2026-07-14'
+featured_image: /content/images/deepseek-markdown-20260603-80b899.jpg
+image_url: /content/images/deepseek-markdown-20260603-80b899.jpg
 ---
 # 📌 ChatGPT Side Panel Chrome Extensions (2026) — AI on Every Tab
 

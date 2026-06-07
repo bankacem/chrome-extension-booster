@@ -2,6 +2,8 @@
 slug: article7-nordpass-review
 status: published
 published_at: '2026-07-02'
+featured_image: /content/images/article7-nordpass-review.jpg
+image_url: /content/images/article7-nordpass-review.jpg
 ---
 # NordPass Chrome Extension Review 2026: The Beautiful Underdog With One Frustrating Flaw
 

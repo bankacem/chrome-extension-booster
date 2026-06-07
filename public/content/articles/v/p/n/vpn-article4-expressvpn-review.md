@@ -2,6 +2,8 @@
 slug: vpn-article4-expressvpn-review
 status: published
 published_at: '2026-08-07'
+featured_image: /content/images/vpn-article4-expressvpn-review.jpg
+image_url: /content/images/vpn-article4-expressvpn-review.jpg
 ---
 # ExpressVPN Chrome Extension Review 2026: The Premium Standard (And Whether It's Worth $99/Year)
 

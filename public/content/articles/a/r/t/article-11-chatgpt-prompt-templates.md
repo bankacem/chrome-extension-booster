@@ -2,6 +2,8 @@
 slug: article-11-chatgpt-prompt-templates
 status: published
 published_at: '2026-06-10'
+featured_image: /content/images/article-11-chatgpt-prompt-templates.jpg
+image_url: /content/images/article-11-chatgpt-prompt-templates.jpg
 ---
 # ChatGPT Prompt Templates Chrome: The Ultimate Guide for 2026
 

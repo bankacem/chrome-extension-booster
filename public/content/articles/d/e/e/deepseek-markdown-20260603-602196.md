@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-602196
 status: published
 published_at: '2026-07-12'
+featured_image: /content/images/deepseek-markdown-20260603-602196.jpg
+image_url: /content/images/deepseek-markdown-20260603-602196.jpg
 ---
 # 🎙️ Best AI Meeting Notes Chrome Extensions (2026) — Never Take Notes Again
 

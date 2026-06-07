@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-8e6355
 status: published
 published_at: '2026-07-17'
+featured_image: /content/images/deepseek-markdown-20260603-8e6355.jpg
+image_url: /content/images/deepseek-markdown-20260603-8e6355.jpg
 ---
 # AI Product Description Writer Chrome Extension: The Complete 2026 Guide to Selling Faster on Amazon, Shopify & Etsy
 

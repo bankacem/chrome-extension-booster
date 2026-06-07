@@ -2,6 +2,8 @@
 slug: article2-bitwarden-setup-guide
 status: published
 published_at: '2026-06-27'
+featured_image: /content/images/article2-bitwarden-setup-guide.jpg
+image_url: /content/images/article2-bitwarden-setup-guide.jpg
 ---
 # How to Set Up the Bitwarden Chrome Extension in 2026: A Complete Step-by-Step Guide
 

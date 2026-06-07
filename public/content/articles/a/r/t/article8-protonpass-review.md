@@ -2,6 +2,8 @@
 slug: article8-protonpass-review
 status: published
 published_at: '2026-07-03'
+featured_image: /content/images/article8-protonpass-review.jpg
+image_url: /content/images/article8-protonpass-review.jpg
 ---
 # Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress
 

@@ -2,6 +2,8 @@
 slug: article-14-ai-outreach-email-writer
 status: published
 published_at: '2026-06-13'
+featured_image: /content/images/article-14-ai-outreach-email-writer.jpg
+image_url: /content/images/article-14-ai-outreach-email-writer.jpg
 ---
 # AI Outreach Email Writer Chrome Extension: The Ultimate Guide for 2026
 

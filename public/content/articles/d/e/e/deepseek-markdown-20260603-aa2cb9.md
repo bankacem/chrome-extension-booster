@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-aa2cb9
 status: published
 published_at: '2026-07-20'
+featured_image: /content/images/deepseek-markdown-20260603-aa2cb9.jpg
+image_url: /content/images/deepseek-markdown-20260603-aa2cb9.jpg
 ---
 # 📊 ChatGPT for Google Sheets Chrome Extensions (2026) — Turn Your Spreadsheet Into an AI Robot
 

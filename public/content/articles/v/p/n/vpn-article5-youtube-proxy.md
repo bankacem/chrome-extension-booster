@@ -2,6 +2,8 @@
 slug: vpn-article5-youtube-proxy
 status: published
 published_at: '2026-08-08'
+featured_image: /content/images/vpn-article5-youtube-proxy.jpg
+image_url: /content/images/vpn-article5-youtube-proxy.jpg
 ---
 # Free Proxy Chrome Extension for YouTube 2026: Unblock Videos Without a VPN (But Should You?)
 

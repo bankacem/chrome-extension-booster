@@ -2,6 +2,8 @@
 slug: article-16-ai-lesson-plan-generator
 status: published
 published_at: '2026-06-15'
+featured_image: /content/images/article-16-ai-lesson-plan-generator.jpg
+image_url: /content/images/article-16-ai-lesson-plan-generator.jpg
 ---
 # AI Lesson Plan Generator Chrome Extension: The Ultimate Guide for Teachers in 2026
 

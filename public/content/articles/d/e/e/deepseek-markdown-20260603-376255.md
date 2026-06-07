@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-376255
 status: published
 published_at: '2026-07-06'
+featured_image: /content/images/deepseek-markdown-20260603-376255.jpg
+image_url: /content/images/deepseek-markdown-20260603-376255.jpg
 ---
 # 🔍 ChatGPT Search History Chrome Extensions (2026) — Find That Lost Conversation in Seconds
 

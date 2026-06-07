@@ -2,6 +2,8 @@
 slug: article-15-chatgpt-reddit-posts
 status: published
 published_at: '2026-06-14'
+featured_image: /content/images/article-15-chatgpt-reddit-posts.jpg
+image_url: /content/images/article-15-chatgpt-reddit-posts.jpg
 ---
 # ChatGPT for Reddit Posts Chrome: The Ultimate Guide for 2026
 

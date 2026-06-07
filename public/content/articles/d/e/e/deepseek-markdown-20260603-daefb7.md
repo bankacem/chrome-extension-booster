@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-daefb7
 status: published
 published_at: '2026-07-23'
+featured_image: /content/images/deepseek-markdown-20260603-daefb7.jpg
+image_url: /content/images/deepseek-markdown-20260603-daefb7.jpg
 ---
 # ✅ Best Free AI Grammar Checker Chrome Extensions (2026) — Write Better Everywhere
 

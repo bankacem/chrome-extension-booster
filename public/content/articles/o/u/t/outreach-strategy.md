@@ -2,6 +2,8 @@
 slug: outreach-strategy
 status: published
 published_at: '2026-07-30'
+featured_image: /content/images/outreach-strategy.jpg
+image_url: /content/images/outreach-strategy.jpg
 ---
 # Guest Post Outreach Strategy & List
 **Site:** extensionto.com

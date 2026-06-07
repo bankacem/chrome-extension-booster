@@ -2,6 +2,8 @@
 slug: article-18-ai-competitor-analysis
 status: published
 published_at: '2026-06-17'
+featured_image: /content/images/article-18-ai-competitor-analysis.jpg
+image_url: /content/images/article-18-ai-competitor-analysis.jpg
 ---
 # AI Competitor Analysis Chrome Extension: The Ultimate Guide for 2026
 

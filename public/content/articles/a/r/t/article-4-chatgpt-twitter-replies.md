@@ -2,6 +2,8 @@
 slug: article-4-chatgpt-twitter-replies
 status: published
 published_at: '2026-06-20'
+featured_image: /content/images/article-4-chatgpt-twitter-replies.jpg
+image_url: /content/images/article-4-chatgpt-twitter-replies.jpg
 ---
 # ChatGPT for Twitter Replies Chrome Extension: The Ultimate Guide for 2026
 

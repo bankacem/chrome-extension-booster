@@ -2,6 +2,8 @@
 slug: article-13-chatgpt-google-docs
 status: published
 published_at: '2026-06-12'
+featured_image: /content/images/article-13-chatgpt-google-docs.jpg
+image_url: /content/images/article-13-chatgpt-google-docs.jpg
 ---
 # ChatGPT for Google Docs Chrome: The Ultimate Guide for 2026
 

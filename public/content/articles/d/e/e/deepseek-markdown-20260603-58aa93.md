@@ -2,6 +2,8 @@
 slug: deepseek-markdown-20260603-58aa93
 status: published
 published_at: '2026-07-11'
+featured_image: /content/images/deepseek-markdown-20260603-58aa93.jpg
+image_url: /content/images/deepseek-markdown-20260603-58aa93.jpg
 ---
 # AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds
 
