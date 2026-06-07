@@ -53,15 +53,32 @@ const parseMarkdown = (text: string) => {
   }
 };
 
-const processArticleContent = (content: string) => {
+const processArticleContent = (content: string, featuredImage?: string) => {
   if (!content) return "";
   let processed = content;
 
-  // تنظيف شامل لأي وسم صورة مكرر في بداية المقال لمنع ظهور صورتين
-  processed = processed.replace(/^<p>\s*\s*<\/p>\s*<figure\s+class="wp-block-image\s+size-large">\s*<img\s+src="[^"]*"\s+alt="[^"]*"\s*\/>\s*<\/figure>\s*<p>\s*/i, "");
+  if (featuredImage) {
+    const cleanFeatured = featuredImage.replace(/^\/+/, "");
+
+    const wpImageRegex = new RegExp(
+      `<p>\\s*\\s*<\\/p>\\s*<figure\\s+class="wp-block-image\\s+size-large">\\s*<img\\s+src="[^"]*${cleanFeatured}[^"]*"\\s+alt="[^"]*"\\s*\\/>\\s*<\\/figure>\\s*<p>\\s*`,
+      "i"
+    );
+    processed = processed.replace(wpImageRegex, "");
+
+    const generalImgRegex = new RegExp(`^\\s*<img[^>]+src="[^"]*${cleanFeatured}[/"]*[^>]*>\\s*`, "i");
+    processed = processed.replace(generalImgRegex, "");
+
+    const mdImgRegex = new RegExp(`^\\s*!\\[[^\\]]*\\]\\([^)]*${cleanFeatured}[^)]*\\)\\s*`, "i");
+    processed = processed.replace(mdImgRegex, "");
+  }
+
   processed = processed.replace(/^<p>\s*\s*<\/p>\s*<figure\s+class="wp-block-image\s+size-large">\s*<img\s+src=""\s+alt=""\s*\/>\s*<\/figure>/i, "");
-  processed = processed.replace(/^(!\[[^\]]*\]\([^)]+\)\s*)/i, "");
-  processed = processed.replace(/^(<img[^>]*>\s*)/i, "");
+
+  processed = processed.replace(
+    /<a[^>]*href=["'](https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})[^"']*)["'][^>]*>.*?<\/a>/gi,
+    '<div class="aspect-video my-6 rounded-xl overflow-hidden border border-border"><iframe src="https://www.youtube-nocookie.com/embed/$2" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" loading="lazy"></iframe></div>'
+  );
 
   return processed;
 };
@@ -78,10 +95,8 @@ const BlogPost = () => {
   const [relatedArticles, setRelatedArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
-  const { toast } = useToast();
 
   const instantTitle = slug ? slugToTitle(slug) : "Loading Article";
-  const instantDescription = `Read our article about ${instantTitle.toLowerCase()}. Discover tips, tutorials, and insights.`;
 
   const fetchArticle = useCallback(async () => {
     if (!slug) { setLoading(false); setNotFound(true); return; }
@@ -120,7 +135,7 @@ const BlogPost = () => {
       
       const text = await response.text();
       const { frontmatter, content } = parseMarkdown(text);
-      const processedContent = processArticleContent(content);
+      const processedContent = processArticleContent(content, frontmatter.featured_image);
       const fullArticle = { ...(matched || {}), ...frontmatter, content: processedContent } as Article;
       setArticle(fullArticle);
 
@@ -179,7 +194,6 @@ const BlogPost = () => {
             </div>
           )}
 
-          {/* دعم الجداول بشكل احترافي رائع بفضل remarkGfm و تزيين جداول Tailwind */}
           <div className="prose prose-lg dark:prose-invert max-w-none prose-table:border-collapse prose-th:border prose-th:border-border prose-th:p-3 prose-th:bg-muted prose-td:border prose-td:border-border prose-td:p-3">
             <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
               {article.content}

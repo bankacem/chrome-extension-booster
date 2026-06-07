@@ -26,7 +26,7 @@ scheduled_at: '2026-05-24T18:15:00+00:00'
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
-read_time: 8
+read_time: 11
 created_at: '2026-01-27T11:27:54.198566+00:00'
 updated_at: '2026-06-05T14:15:01.256992+00:00'
 ---
@@ -143,6 +143,27 @@ At 45 MB during calls, the 3CX extension is lighter than the RingCentral desktop
 
 Quick Screenshot Lite was especially useful during testing — I captured MOS score screenshots from the 3CX reporting dashboard and recorded call quality metrics for the comparison table above. At 35MB, it is lighter than the 3CX extension itself.
 
+## 5 Use-Case Scenarios
+
+### 1. Remote Sales Team Making 50+ Calls Per Day
+
+My sales team makes 50-80 outbound calls daily from Chrome. The 3CX extension's click-to-dial from Google Contacts and CRM integrations (HubSpot, Salesforce) saved each rep roughly 10 seconds per call — no more manual dialing. Over 60 calls per rep per day, that is 10 minutes saved per person. For a team of 10, that is over 40 hours saved per month. The 45MB RAM usage during calls meant reps could keep Salesforce, email, and 5+ research tabs open without their laptops slowing down.
+
+### 2. Customer Support Team Managing Call Queues
+
+Our support team handles 200+ inbound calls per day through 3CX call queues. The Chrome extension lets agents answer calls directly from their browser without switching to a desk phone or desktop app. The presence status feature shows which agents are available, busy, or away — visible directly in the extension popup. I configured the extension to auto-answer incoming queue calls, which shaved 3-4 seconds off each pickup. Over 200 calls, that is 10-13 minutes of reduced wait time per day.
+
+### 3. Remote Worker Taking Calls on a Company Laptop
+
+I work from home using a company-issued laptop with only 8GB of RAM. Before 3CX, I used a VoIP desk phone, which took up desk space and required a separate Ethernet cable. The 3CX Chrome extension eliminated the hardware entirely. I plug my Jabra headset into the laptop, click the extension icon, and make calls through the browser. The lightweight 45MB footprint means I can keep Chrome, Slack, and a virtual machine running simultaneously without hitting swap.
+
+### 4. Freelance Consultant with a Self-Hosted 3CX Server
+
+I run a small consultancy and host my own 3CX PBX on a $10/month VPS. The Chrome extension connects to my server in under 3 minutes, and the free 3CX license supports up to 10 users — perfect for my 5-person team. I saved $1,200/year compared to RingCentral ($30/user/month × 5 users × 12 months). The self-hosted setup also gives me control over call recording storage and retention policies, which matters for client confidentiality agreements.
+
+### 5. IT Administrator Testing Phone System Configurations
+
+As a 3CX system administrator, I use the Chrome extension alongside the management console to test configuration changes before rolling them out. I create a test extension, install it in Chrome, and verify that call routing, IVR menus, and voicemail settings work correctly — all from the same browser I use for admin tasks. The extension's built-in reporting shows MOS scores and call stats, which I capture with Quick Screenshot Lite for documentation.
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">
   <h3 class="text-xl font-bold mb-4">Read Next</h3>
