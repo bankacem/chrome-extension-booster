@@ -50,10 +50,47 @@ const parseMarkdown = (text: string) => {
   }
 };
 
-const processArticleContent = (content: string) => {
+const processArticleContent = (content: string, featuredImage?: string) => {
   if (!content) return "";
 
   let processed = content;
+
+  // 0. Strip duplicate leading featured image / legacy WordPress Gutenberg blocks.
+  // Articles ported from WordPress often embed the featured image again at the very
+  // top of the body via a <figure class="wp-block-image"> block or a bare <img>/markdown
+  // image, which then renders twice (once as the dedicated featured image, once inline).
+  const normalizeImgSrc = (src: string): string =>
+    src.trim().replace(/^https?:\/\/[^/]+/i, "").replace(/[?#].*$/, "");
+  const featuredSrc = featuredImage ? normalizeImgSrc(featuredImage) : "";
+
+  // Repeatedly remove leading whitespace, empty paragraphs, and image blocks from the top.
+  let previous: string;
+  do {
+    previous = processed;
+    processed = processed.replace(/^\s+/, "");
+    // Empty or whitespace-only leading paragraphs left behind by stripped blocks.
+    processed = processed.replace(/^<p>\s*<\/p>/i, "");
+
+    // Leading WordPress Gutenberg image figure block.
+    processed = processed.replace(
+      /^<figure[^>]*class=["'][^"']*wp-block-image[^"']*["'][^>]*>[\s\S]*?<\/figure>/i,
+      ""
+    );
+
+    // Leading <img> tag — only strip when it duplicates the featured image.
+    processed = processed.replace(/^<img\b[^>]*>/i, (imgTag) => {
+      if (!featuredSrc) return imgTag;
+      const srcMatch = imgTag.match(/src=["']([^"']*)["']/i);
+      if (srcMatch && normalizeImgSrc(srcMatch[1]) === featuredSrc) return "";
+      return imgTag;
+    });
+
+    // Leading markdown image ![alt](src) — only strip when it duplicates the featured image.
+    processed = processed.replace(/^!\[[^\]]*\]\(([^)]+)\)/, (mdImg, src) => {
+      if (!featuredSrc) return mdImg;
+      return normalizeImgSrc(src) === featuredSrc ? "" : mdImg;
+    });
+  } while (processed !== previous);
 
   // 1. Resolve image paths — render raw from resolveImagePath without optimization
   processed = processed.replace(/<img([^>]*)>/gi, (match, attributes) => {
@@ -212,7 +249,8 @@ const BlogPost = () => {
         return;
       }
 
-      const processedContent = processArticleContent(content);
+      const featuredImage = (frontmatter.featured_image || matched?.featured_image) as string | undefined;
+      const processedContent = processArticleContent(content, featuredImage);
       const fullArticle = { ...(matched || {}), ...frontmatter, content: processedContent } as Article;
       setArticle(fullArticle);
 

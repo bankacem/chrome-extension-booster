@@ -57,7 +57,7 @@ async function generateSitemap() {
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/(^-|-$)/g, "");
 
-      const date = data.date ? new Date(data.date).toISOString().split('T')[0] : new Date().toISOString().split('T')[0];
+      const date = data.published_at ? new Date(data.published_at).toISOString().split('T')[0] : new Date().toISOString().split('T')[0];
       
       articlesData.push({
         url: `${WEBSITE_URL}/blog/${slug}`,
