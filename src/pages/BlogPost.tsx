@@ -16,6 +16,7 @@ import { getPartitionedPath, resolveImagePath } from "@/utils/articlePath";
 import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
 import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 interface Article {
   id: string;
@@ -56,11 +57,12 @@ const processArticleContent = (content: string) => {
 
   let processed = content;
 
-  // 1. منع تكرار الصور: حذف أول صورة تظهر في بداية النص إذا كانت تطابق الصورة البارزة
+  // تنظيف الأوسام المكسورة والصور الفارغة الناتجة عن الووردبريس في البداية لمنع التكرار
+  processed = processed.replace(/^<p>\s*\s*<\/p>\s*<figure\s+class="wp-block-image\s+size-large">\s*<img\s+src=""\s+alt=""\s*\/>\s*<\/figure>\s*<p>\s*/i, "");
   processed = processed.replace(/^(!\[[^\]]*\]\([^)]+\)\s*)/i, "");
   processed = processed.replace(/^(<img[^>]*>\s*)/i, "");
 
-  // 2. إصلاح روابط اليوتيوب وتحويلها إلى لاعب مدمج
+  // إصلاح روابط اليوتيوب
   processed = processed.replace(
     /<a[^>]*href=["'](https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})[^"']*)["'][^>]*>.*?<\/a>/gi,
     '<div class="aspect-video my-6 rounded-xl overflow-hidden border border-border"><iframe src="https://www.youtube-nocookie.com/embed/$2" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" loading="lazy"></iframe></div>'
@@ -335,14 +337,14 @@ const BlogPost = () => {
             </motion.div>
           )}
 
-          {/* التنسيق الاحترافي الجديد باستخدام ReactMarkdown والـ Tailwind Typography */}
+          {/* التنسيق الاحترافي الذكي القادر على ترجمة وسطور الـ HTML والـ Markdown معاً */}
           <motion.div 
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }} 
             transition={{ delay: 0.3 }} 
-            className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-h2:text-2xl prose-h3:text-xl prose-p:text-muted-foreground prose-a:text-primary hover:prose-a:underline"
+            className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-h2:text-2xl prose-h3:text-xl prose-p:text-muted-foreground prose-a:text-primary hover:prose-a:underline prose-ol:list-decimal prose-ul:list-disc"
           >
-            <ReactMarkdown>{article.content}</ReactMarkdown>
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{article.content}</ReactMarkdown>
           </motion.div>
 
           {matchedExtension && (
