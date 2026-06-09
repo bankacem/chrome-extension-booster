@@ -4,6 +4,9 @@ status: published
 published_at: '2026-06-22'
 featured_image: /content/images/article-6-chatgpt-ebay-listings.jpg
 image_url: /content/images/article-6-chatgpt-ebay-listings.jpg
+title: 'ChatGPT for eBay Listings Chrome: The Ultimate Guide for Sellers in 2026'
+meta_description: 'ChatGPT for eBay Listings Chrome: The Ultimate Guide for Sellers in 2026'
+description: 'ChatGPT for eBay Listings Chrome: The Ultimate Guide for Sellers in 2026'
 ---
 # ChatGPT for eBay Listings Chrome: The Ultimate Guide for Sellers in 2026
 

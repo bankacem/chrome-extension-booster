@@ -4,6 +4,9 @@ status: published
 published_at: '2026-06-13'
 featured_image: /content/images/article-14-ai-outreach-email-writer.jpg
 image_url: /content/images/article-14-ai-outreach-email-writer.jpg
+title: 'AI Outreach Email Writer Chrome Extension: The Ultimate Guide for 2026'
+meta_description: 'AI Outreach Email Writer Chrome Extension: The Ultimate Guide for 2026'
+description: 'AI Outreach Email Writer Chrome Extension: The Ultimate Guide for 2026'
 ---
 # AI Outreach Email Writer Chrome Extension: The Ultimate Guide for 2026
 

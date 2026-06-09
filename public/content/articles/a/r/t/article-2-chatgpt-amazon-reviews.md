@@ -4,6 +4,9 @@ status: published
 published_at: '2026-06-18'
 featured_image: /content/images/article-2-chatgpt-amazon-reviews.jpg
 image_url: /content/images/article-2-chatgpt-amazon-reviews.jpg
+title: 'ChatGPT for Amazon Reviews Chrome Extension: The Ultimate Guide for 2026'
+meta_description: 'ChatGPT for Amazon Reviews Chrome Extension: The Ultimate Guide for 2026'
+description: 'ChatGPT for Amazon Reviews Chrome Extension: The Ultimate Guide for 2026'
 ---
 # ChatGPT for Amazon Reviews Chrome Extension: The Ultimate Guide for 2026
 

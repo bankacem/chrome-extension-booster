@@ -4,6 +4,15 @@ status: published
 published_at: '2026-07-04'
 featured_image: /content/images/article9-roboform-review.jpg
 image_url: /content/images/article9-roboform-review.jpg
+title: >-
+  RoboForm Chrome Extension Review 2026: The Form-Filling Veteran That Refuses
+  to Retire
+meta_description: >-
+  RoboForm Chrome Extension Review 2026: The Form-Filling Veteran That Refuses
+  to Retire
+description: >-
+  RoboForm Chrome Extension Review 2026: The Form-Filling Veteran That Refuses
+  to Retire
 ---
 # RoboForm Chrome Extension Review 2026: The Form-Filling Veteran That Refuses to Retire
 

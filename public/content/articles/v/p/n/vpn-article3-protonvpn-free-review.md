@@ -4,6 +4,15 @@ status: published
 published_at: '2026-08-06'
 featured_image: /content/images/vpn-article3-protonvpn-free-review.jpg
 image_url: /content/images/vpn-article3-protonvpn-free-review.jpg
+title: >-
+  ProtonVPN Chrome Extension Free Review 2026: The Only Free VPN That Doesn't
+  Sell Your Soul
+meta_description: >-
+  ProtonVPN Chrome Extension Free Review 2026: The Only Free VPN That Doesn't
+  Sell Your Soul
+description: >-
+  ProtonVPN Chrome Extension Free Review 2026: The Only Free VPN That Doesn't
+  Sell Your Soul
 ---
 # ProtonVPN Chrome Extension Free Review 2026: The Only Free VPN That Doesn't Sell Your Soul
 

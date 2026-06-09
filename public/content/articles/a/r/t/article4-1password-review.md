@@ -4,6 +4,9 @@ status: published
 published_at: '2026-06-29'
 featured_image: /content/images/article4-1password-review.jpg
 image_url: /content/images/article4-1password-review.jpg
+title: '1Password Chrome Extension Review 2026: Is the Premium Price Still Worth It?'
+meta_description: '1Password Chrome Extension Review 2026: Is the Premium Price Still Worth It?'
+description: '1Password Chrome Extension Review 2026: Is the Premium Price Still Worth It?'
 ---
 # 1Password Chrome Extension Review 2026: Is the Premium Price Still Worth It?
 

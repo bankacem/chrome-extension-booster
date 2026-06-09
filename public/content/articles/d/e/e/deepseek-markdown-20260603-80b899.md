@@ -4,6 +4,9 @@ status: published
 published_at: '2026-07-14'
 featured_image: /content/images/deepseek-markdown-20260603-80b899.jpg
 image_url: /content/images/deepseek-markdown-20260603-80b899.jpg
+title: 📌 ChatGPT Side Panel Chrome Extensions (2026) — AI on Every Tab
+meta_description: 📌 ChatGPT Side Panel Chrome Extensions 2026 — AI on Every Tab
+description: 📌 ChatGPT Side Panel Chrome Extensions 2026 — AI on Every Tab
 ---
 # 📌 ChatGPT Side Panel Chrome Extensions (2026) — AI on Every Tab
 

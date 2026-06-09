@@ -4,6 +4,9 @@ status: published
 published_at: '2026-06-20'
 featured_image: /content/images/article-4-chatgpt-twitter-replies.jpg
 image_url: /content/images/article-4-chatgpt-twitter-replies.jpg
+title: 'ChatGPT for Twitter Replies Chrome Extension: The Ultimate Guide for 2026'
+meta_description: 'ChatGPT for Twitter Replies Chrome Extension: The Ultimate Guide for 2026'
+description: 'ChatGPT for Twitter Replies Chrome Extension: The Ultimate Guide for 2026'
 ---
 # ChatGPT for Twitter Replies Chrome Extension: The Ultimate Guide for 2026
 

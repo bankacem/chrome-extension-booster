@@ -4,6 +4,9 @@ status: published
 published_at: '2026-06-17'
 featured_image: /content/images/article-18-ai-competitor-analysis.jpg
 image_url: /content/images/article-18-ai-competitor-analysis.jpg
+title: 'AI Competitor Analysis Chrome Extension: The Ultimate Guide for 2026'
+meta_description: 'AI Competitor Analysis Chrome Extension: The Ultimate Guide for 2026'
+description: 'AI Competitor Analysis Chrome Extension: The Ultimate Guide for 2026'
 ---
 # AI Competitor Analysis Chrome Extension: The Ultimate Guide for 2026
 

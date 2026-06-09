@@ -4,6 +4,15 @@ status: published
 published_at: '2026-07-11'
 featured_image: /content/images/deepseek-markdown-20260603-58aa93.jpg
 image_url: /content/images/deepseek-markdown-20260603-58aa93.jpg
+title: >-
+  AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going
+  Viral in Seconds
+meta_description: >-
+  AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going
+  Viral in Seconds
+description: >-
+  AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going
+  Viral in Seconds
 ---
 # AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds
 

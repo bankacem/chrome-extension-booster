@@ -4,6 +4,15 @@ status: published
 published_at: '2026-07-02'
 featured_image: /content/images/article7-nordpass-review.jpg
 image_url: /content/images/article7-nordpass-review.jpg
+title: >-
+  NordPass Chrome Extension Review 2026: The Beautiful Underdog With One
+  Frustrating Flaw
+meta_description: >-
+  NordPass Chrome Extension Review 2026: The Beautiful Underdog With One
+  Frustrating Flaw
+description: >-
+  NordPass Chrome Extension Review 2026: The Beautiful Underdog With One
+  Frustrating Flaw
 ---
 # NordPass Chrome Extension Review 2026: The Beautiful Underdog With One Frustrating Flaw
 

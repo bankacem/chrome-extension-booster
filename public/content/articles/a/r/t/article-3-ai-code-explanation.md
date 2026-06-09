@@ -4,6 +4,15 @@ status: published
 published_at: '2026-06-19'
 featured_image: /content/images/article-3-ai-code-explanation.jpg
 image_url: /content/images/article-3-ai-code-explanation.jpg
+title: >-
+  AI Code Explanation Chrome Extension: The Ultimate Guide for Developers in
+  2026
+meta_description: >-
+  AI Code Explanation Chrome Extension: The Ultimate Guide for Developers in
+  2026
+description: >-
+  AI Code Explanation Chrome Extension: The Ultimate Guide for Developers in
+  2026
 ---
 # AI Code Explanation Chrome Extension: The Ultimate Guide for Developers in 2026
 

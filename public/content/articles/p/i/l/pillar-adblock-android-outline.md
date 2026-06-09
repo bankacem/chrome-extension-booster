@@ -4,6 +4,13 @@ status: published
 published_at: '2026-07-31'
 featured_image: /content/images/pillar-adblock-android-outline.jpg
 image_url: /content/images/pillar-adblock-android-outline.jpg
+title: 'Pillar Page Strategy: AdBlock for Chrome Android'
+meta_description: >-
+  Core Objective: Establish ExtensionTo as the 1 authority for mobile
+  ad-blocking solutions.
+description: >-
+  Core Objective: Establish ExtensionTo as the 1 authority for mobile
+  ad-blocking solutions.
 ---
 # Pillar Page Strategy: AdBlock for Chrome Android
 **Target Keyword:** AdBlock for Chrome Android

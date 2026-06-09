@@ -4,6 +4,9 @@ status: published
 published_at: '2026-06-23'
 featured_image: /content/images/article-7-ai-headline-generator.jpg
 image_url: /content/images/article-7-ai-headline-generator.jpg
+title: 'AI Headline Generator Chrome Extension: The Ultimate Guide for 2026'
+meta_description: 'AI Headline Generator Chrome Extension: The Ultimate Guide for 2026'
+description: 'AI Headline Generator Chrome Extension: The Ultimate Guide for 2026'
 ---
 # AI Headline Generator Chrome Extension: The Ultimate Guide for 2026
 

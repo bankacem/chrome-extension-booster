@@ -4,6 +4,9 @@ status: published
 published_at: '2026-06-25'
 featured_image: /content/images/article-9-chatgpt-etsy-listings.jpg
 image_url: /content/images/article-9-chatgpt-etsy-listings.jpg
+title: 'ChatGPT for Etsy Listings Chrome: The Ultimate Guide for Sellers in 2026'
+meta_description: 'ChatGPT for Etsy Listings Chrome: The Ultimate Guide for Sellers in 2026'
+description: 'ChatGPT for Etsy Listings Chrome: The Ultimate Guide for Sellers in 2026'
 ---
 # ChatGPT for Etsy Listings Chrome: The Ultimate Guide for Sellers in 2026
 

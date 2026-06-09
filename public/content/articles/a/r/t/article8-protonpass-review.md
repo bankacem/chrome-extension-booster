@@ -4,6 +4,9 @@ status: published
 published_at: '2026-07-03'
 featured_image: /content/images/article8-protonpass-review.jpg
 image_url: /content/images/article8-protonpass-review.jpg
+title: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
+meta_description: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
+description: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
 ---
 # Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress
 

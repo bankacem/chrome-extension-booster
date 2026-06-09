@@ -4,6 +4,9 @@ status: published
 published_at: '2026-07-30'
 featured_image: /content/images/outreach-strategy.jpg
 image_url: /content/images/outreach-strategy.jpg
+title: Guest Post Outreach Strategy & List
+meta_description: 'Subject: Data-Driven Guide: Chrome Memory Optimization in 2026'
+description: 'Subject: Data-Driven Guide: Chrome Memory Optimization in 2026'
 ---
 # Guest Post Outreach Strategy & List
 **Site:** extensionto.com

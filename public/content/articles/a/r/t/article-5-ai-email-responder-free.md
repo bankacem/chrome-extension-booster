@@ -4,6 +4,9 @@ status: published
 published_at: '2026-06-21'
 featured_image: /content/images/article-5-ai-email-responder-free.jpg
 image_url: /content/images/article-5-ai-email-responder-free.jpg
+title: 'AI Email Responder Chrome Extension Free: The Ultimate Guide for 2026'
+meta_description: 'AI Email Responder Chrome Extension Free: The Ultimate Guide for 2026'
+description: 'AI Email Responder Chrome Extension Free: The Ultimate Guide for 2026'
 ---
 # AI Email Responder Chrome Extension Free: The Ultimate Guide for 2026
 

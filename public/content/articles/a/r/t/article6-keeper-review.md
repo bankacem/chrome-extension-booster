@@ -4,6 +4,15 @@ status: published
 published_at: '2026-07-01'
 featured_image: /content/images/article6-keeper-review.jpg
 image_url: /content/images/article6-keeper-review.jpg
+title: >-
+  Keeper Chrome Extension Review 2026: The Most Customizable Password Vault
+  You've Never Heard Of
+meta_description: >-
+  Keeper Chrome Extension Review 2026: The Most Customizable Password Vault
+  You've Never Heard Of
+description: >-
+  Keeper Chrome Extension Review 2026: The Most Customizable Password Vault
+  You've Never Heard Of
 ---
 # Keeper Chrome Extension Review 2026: The Most Customizable Password Vault You've Never Heard Of
 

@@ -4,6 +4,15 @@ status: published
 published_at: '2026-07-06'
 featured_image: /content/images/deepseek-markdown-20260603-376255.jpg
 image_url: /content/images/deepseek-markdown-20260603-376255.jpg
+title: >-
+  🔍 ChatGPT Search History Chrome Extensions (2026) — Find That Lost
+  Conversation in Seconds
+meta_description: >-
+  🔍 ChatGPT Search History Chrome Extensions 2026 — Find That Lost Conversation
+  in Seconds
+description: >-
+  🔍 ChatGPT Search History Chrome Extensions 2026 — Find That Lost Conversation
+  in Seconds
 ---
 # 🔍 ChatGPT Search History Chrome Extensions (2026) — Find That Lost Conversation in Seconds
 

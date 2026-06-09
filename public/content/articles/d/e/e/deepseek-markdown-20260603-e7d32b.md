@@ -4,6 +4,9 @@ status: published
 published_at: '2026-07-25'
 featured_image: /content/images/deepseek-markdown-20260603-e7d32b.jpg
 image_url: /content/images/deepseek-markdown-20260603-e7d32b.jpg
+title: 'ChatGPT Voice Input Chrome Extension: The Complete 2026 Guide to Talking to AI'
+meta_description: 'ChatGPT Voice Input Chrome Extension: The Complete 2026 Guide to Talking to AI'
+description: 'ChatGPT Voice Input Chrome Extension: The Complete 2026 Guide to Talking to AI'
 ---
 # ChatGPT Voice Input Chrome Extension: The Complete 2026 Guide to Talking to AI
 

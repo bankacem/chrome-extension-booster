@@ -4,6 +4,15 @@ status: published
 published_at: '2026-07-09'
 featured_image: /content/images/deepseek-markdown-20260603-57250b.jpg
 image_url: /content/images/deepseek-markdown-20260603-57250b.jpg
+title: >-
+  AI Cover Letter Writer Chrome Extension: The Complete 2026 Guide to Landing
+  Your Dream Job
+meta_description: >-
+  AI Cover Letter Writer Chrome Extension: The Complete 2026 Guide to Landing
+  Your Dream Job
+description: >-
+  AI Cover Letter Writer Chrome Extension: The Complete 2026 Guide to Landing
+  Your Dream Job
 ---
 # AI Cover Letter Writer Chrome Extension: The Complete 2026 Guide to Landing Your Dream Job
 

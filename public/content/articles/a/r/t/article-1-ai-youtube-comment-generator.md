@@ -4,6 +4,9 @@ status: published
 published_at: '2026-06-08'
 featured_image: /content/images/article-1-ai-youtube-comment-generator.jpg
 image_url: /content/images/article-1-ai-youtube-comment-generator.jpg
+title: 'AI YouTube Comment Generator Chrome Extension: The Ultimate Guide for 2026'
+meta_description: 'AI YouTube Comment Generator Chrome Extension: The Ultimate Guide for 2026'
+description: 'AI YouTube Comment Generator Chrome Extension: The Ultimate Guide for 2026'
 ---
 # AI YouTube Comment Generator Chrome Extension: The Ultimate Guide for 2026
 
