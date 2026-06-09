@@ -10,13 +10,13 @@ function generateSitemapXml(urls: string[]): string {
 }
 
 async function generateSitemap() {
-  console.log("Generating sitemap from optimized_articles.json...");
-  const staticUrls = [`${WEBSITE_URL}/`, `${WEBSITE_URL}/blog`];
+  console.log("Generating sitemap from public/content/articles-index.json...");
+  const staticUrls = [`${WEBSITE_URL}/`, `${WEBSITE_URL}/blog`, `${WEBSITE_URL}/privacy`, `${WEBSITE_URL}/terms`];
   const articleUrls: string[] = [];
-  const jsonPath = path.join(process.cwd(), "optimized_articles.json");
+  const jsonPath = path.join(process.cwd(), "public", "content", "articles-index.json");
   
   if (!fs.existsSync(jsonPath)) {
-    console.log("❌ Error: optimized_articles.json not found!");
+    console.log("❌ Error: public/content/articles-index.json not found!");
     return;
   }
   
@@ -26,14 +26,16 @@ async function generateSitemap() {
     const arr = Array.isArray(articles) ? articles : (articles.articles || []);
     
     const articlesData = arr.map((art: any) => {
-      let slug = art.newSlug || art.slug || art.id;
+      let slug = art.slug || art.id;
       if (!slug) return null;
       
+      // Clean slug just in case, though articles-index.json should be clean
       slug = slug.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-      const date = art.date || art.published_at || new Date().toISOString();
+      const date = art.published_at || art.date || new Date().toISOString();
       return { url: `${WEBSITE_URL}/blog/${slug}`, date: date.split('T')[0] };
     }).filter(Boolean);
     
+    // Sort articles by date descending (newest first)
     articlesData.sort((a: any, b: any) => b.date.localeCompare(a.date));
     articlesData.forEach((item: any) => articleUrls.push(item.url));
   } catch (e) {
