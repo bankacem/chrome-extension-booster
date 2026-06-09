@@ -1,0 +1,64 @@
+name: Daily Build & Deploy
+
+# Rebuilds the site once a day so scheduled (future-dated) articles go live
+# automatically. The site is static and the frontend filters out articles whose
+# published_at is after the last build time, so a fresh production build (new
+# build timestamp) is what actually publishes due articles. The Vercel Deploy
+# Hook below triggers that production build.
+
+on:
+  schedule:
+    # 00:05 UTC every day. Cron in GitHub Actions always runs in UTC.
+    - cron: '5 0 * * *'
+  # Allow manual runs from the Actions tab for testing / on-demand publishing.
+  workflow_dispatch:
+
+# Needed so the optional auto-commit step can push sitemap/index changes back.
+permissions:
+  contents: write
+
+jobs:
+  daily-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          # Use the default token; permissions.contents: write lets it push.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Rebuild article index & sitemap
+        run: bun run sync-articles
+
+      - name: Commit sitemap/index changes (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore: daily sitemap/index refresh [skip ci]"
+            git push origin main
+          else
+            echo "No sitemap/index changes to commit."
+          fi
+
+      - name: Trigger Vercel production deploy
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$VERCEL_DEPLOY_HOOK_URL" ]; then
+            echo "::error::VERCEL_DEPLOY_HOOK_URL secret is not set. See .github/workflows/daily-build.yml header for setup instructions."
+            exit 1
+          fi
+          echo "Triggering Vercel deploy hook..."
+          curl -fsSL -X POST "$VERCEL_DEPLOY_HOOK_URL"
+          echo "Deploy triggered."
