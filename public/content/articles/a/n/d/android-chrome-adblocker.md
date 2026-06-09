@@ -18,10 +18,7 @@ keywords:
   - best adblocker for Android Chrome 2026
   - Chrome adblock Android
   - mobile adblocker
-meta_description: >-
-  I tested 5 Android Chrome adblockers for a week. See which blocks the most
-  ads, which breaks the fewest sites, and which companion extensions complete
-  the setup.
+meta_description: "I tested 5 Android Chrome adblockers for a week. See which blocks the most ads, which breaks the fewest sites, and which companion extensions complete the..."
 status: published
 published_at: '2026-06-05T20:00:00.000000+00:00'
 scheduled_at: null

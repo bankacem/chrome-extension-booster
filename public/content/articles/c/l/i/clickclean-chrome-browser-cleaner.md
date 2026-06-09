@@ -16,10 +16,7 @@ keywords:
   - clickclean chrome
   - chrome browser cleaner
   - chrome cleanup tool
-meta_description: >-
-  Honest ClickClean Chrome review after testing 4 browser cleaners. Real cache
-  clearing speed, RAM recovery data, privacy analysis, and 8 companion
-  extensions you need.
+meta_description: "Honest ClickClean Chrome review after testing 4 browser cleaners. Real cache clearing speed, RAM recovery data, privacy analysis, and 8 companion..."
 status: published
 published_at: '2026-05-20T10:15:01.972+00:00'
 scheduled_at: '2026-05-20T10:15:00+00:00'

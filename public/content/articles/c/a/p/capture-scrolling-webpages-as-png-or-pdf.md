@@ -17,10 +17,7 @@ keywords:
   - capture full page screenshot chrome
   - webpage to pdf chrome
   - scrolling screenshot extension
-meta_description: >-
-  How to capture scrolling webpages as PNG or PDF tested with 4 methods.
-  Quick Screenshot Lite, Chrome Print to PDF, DevTools, and online tools
-  compared for speed, quality, and file size.
+meta_description: "How to capture scrolling webpages as PNG or PDF tested with 4 methods. Quick Screenshot Lite, Chrome Print to PDF, DevTools, and online tools compared for..."
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'

@@ -17,10 +17,7 @@ keywords:
   - clickclean google chrome
   - chrome cleaner extension
   - optimize chrome browser
-meta_description: >-
-  Full ClickClean for Google Chrome review after 2 weeks of testing. Real
-  performance data, privacy analysis, comparison against 3 alternatives, and 8
-  essential companion extensions.
+meta_description: "Full ClickClean for Google Chrome review after 2 weeks of testing. Real performance data, privacy analysis, comparison against 3 alternatives, and 8..."
 status: published
 published_at: '2026-05-20T06:15:00.604+00:00'
 scheduled_at: '2026-05-20T06:15:00+00:00'

@@ -16,10 +16,7 @@ keywords:
   - best annotated screenshot chrome
   - screenshot annotation tool
   - chrome screenshot markup
-meta_description: >-
-  I tested 8 annotated screenshot Chrome extensions over a week. Find out which
-  has the best markup tools, fastest capture, and which companion extensions to
-  pair with it.
+meta_description: "I tested 8 annotated screenshot Chrome extensions over a week. Find out which has the best markup tools, fastest capture, and which companion extensions..."
 status: published
 published_at: '2026-02-20T20:11:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'

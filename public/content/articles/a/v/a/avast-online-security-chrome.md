@@ -18,10 +18,7 @@ keywords:
   - avast privacy extension
   - avast chrome extension review
   - best security extensions chrome 2026
-meta_description: >-
-  I tested Avast Online Security & Privacy Chrome for two weeks. Real results on
-  phishing blocks, tracker prevention, performance impact, and which companion
-  extensions fill its gaps.
+meta_description: "I tested Avast Online Security & Privacy Chrome for two weeks. Real results on phishing blocks, tracker prevention, performance impact, and which..."
 status: published
 published_at: '2026-04-29T10:15:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'

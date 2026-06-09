@@ -18,10 +18,7 @@ keywords:
   - adblock plus vs ublock origin 2026
   - best ad blocker 2026
   - ublock origin vs adblock plus
-meta_description: >-
-  I tested AdBlock Plus and uBlock Origin side by side for a week. Here is which
-  blocks more, which is faster, and which companion extensions you need
-  alongside them.
+meta_description: "I tested AdBlock Plus and uBlock Origin side by side for a week. Here is which blocks more, which is faster, and which companion extensions you need..."
 status: published
 published_at: '2026-04-09T18:15:01.585+00:00'
 scheduled_at: '2026-04-09T18:15:00+00:00'

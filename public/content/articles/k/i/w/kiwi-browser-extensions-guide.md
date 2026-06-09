@@ -12,10 +12,7 @@ keywords:
   - kiwi browser extensions
   - chrome extensions kiwi
   - kiwi browser android
-meta_description: >-
-  Kiwi Browser lets you run Chrome extensions on Android. I tested 20 extensions
-  on Kiwi over a week on my Galaxy S23. Here is what works, what does not, and
-  how to set it up step by step.
+meta_description: "Kiwi Browser lets you run Chrome extensions on Android. I tested 20 extensions on Kiwi over a week on my Galaxy S23...."
 status: published
 published_at: '2026-05-23T14:15:00.217+00:00'
 scheduled_at: '2026-05-23T14:15:00+00:00'

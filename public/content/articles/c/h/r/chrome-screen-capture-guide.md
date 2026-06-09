@@ -17,10 +17,7 @@ keywords:
   - how to screenshot chrome
   - chrome screenshot tips
   - screen capture extension chrome
-meta_description: >-
-  Complete Chrome screen capture guide covering built-in tools, keyboard
-  shortcuts, extensions like Quick Screenshot Lite, annotation tips, and
-  workflow optimization for professionals.
+meta_description: "Complete Chrome screen capture guide covering built-in tools, keyboard shortcuts, extensions like Quick Screenshot Lite, annotation tips, and workflow..."
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'

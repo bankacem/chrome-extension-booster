@@ -18,10 +18,7 @@ keywords:
   - Chrome video downloader
   - download videos from Chrome
   - Ant.com extension
-meta_description: >-
-  Ant Video Downloader Chrome reviewed after 7 days of testing. See which sites
-  it works on, which companion tools you need, and whether it is worth
-  installing in 2026.
+meta_description: "Ant Video Downloader Chrome reviewed after 7 days of testing. See which sites it works on, which companion tools you need, and whether it is worth..."
 status: published
 published_at: '2026-06-05T22:00:00.000000+00:00'
 scheduled_at: null

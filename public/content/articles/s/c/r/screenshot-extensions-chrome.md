@@ -18,10 +18,7 @@ keywords:
   - screenshot extension chrome
   - screen capture chrome
   - best screenshot tool chrome
-meta_description: >-
-  Comprehensive review of 10 Chrome screenshot extensions. Full-page capture
-  speed, annotation tools, export formats, privacy, and 8 companion extensions
-  for developers and designers.
+meta_description: "Comprehensive review of 10 Chrome screenshot extensions. Full-page capture speed, annotation tools, export formats, privacy, and 8 companion extensions..."
 status: published
 published_at: '2026-03-08T02:11:00.898+00:00'
 scheduled_at: '2026-03-08T02:11:00+00:00'

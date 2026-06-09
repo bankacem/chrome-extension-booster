@@ -13,10 +13,7 @@ keywords:
   - chrome extensions for google meet
   - google meet enhancement extension
   - best meet extensions
-meta_description: >-
-  I tested 15 Chrome extensions for Google Meet across 30 meetings in two weeks.
-  Here is which ones improve recording, transcription, grid view, and noise
-  suppression without slowing Chrome down.
+meta_description: "I tested 15 Chrome extensions for Google Meet across 30 meetings in two weeks. Here is which ones improve recording, transcription, grid view, and noise..."
 status: published
 published_at: '2026-05-03T22:15:00.521+00:00'
 scheduled_at: '2026-05-03T22:15:00+00:00'

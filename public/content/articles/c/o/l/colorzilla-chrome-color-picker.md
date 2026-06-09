@@ -16,10 +16,7 @@ keywords:
   - colorzilla chrome
   - color picker chrome extension
   - eyedropper chrome
-meta_description: >-
-  Hands-on comparison of ColorZilla vs 5 color picker Chrome extensions. Tested
-  for eyedropper accuracy, iframe support, palette management, and speed across
-  20 design tools.
+meta_description: "Hands-on comparison of ColorZilla vs 5 color picker Chrome extensions. Tested for eyedropper accuracy, iframe support, palette management, and speed..."
 status: published
 published_at: '2026-05-19T06:15:00.460+00:00'
 scheduled_at: '2026-05-19T06:15:00+00:00'

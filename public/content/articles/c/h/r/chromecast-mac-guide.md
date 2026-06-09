@@ -16,10 +16,7 @@ keywords:
   - chromecast extension mac
   - cast from mac to tv
   - chrome casting mac
-meta_description: >-
-  Complete guide to using Chromecast on Mac. Setup instructions, Mac-specific
-  troubleshooting, audio codec fixes, and 8 companion Chrome extensions tested
-  for streaming from macOS.
+meta_description: "Complete guide to using Chromecast on Mac. Setup instructions, Mac-specific troubleshooting, audio codec fixes, and 8 companion Chrome extensions tested..."
 status: published
 published_at: '2026-05-20T14:15:00.361+00:00'
 scheduled_at: '2026-05-20T14:15:00+00:00'

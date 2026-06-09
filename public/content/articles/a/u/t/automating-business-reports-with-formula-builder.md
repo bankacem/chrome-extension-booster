@@ -18,10 +18,7 @@ keywords:
   - Formula Builder Pro
   - automate reports Chrome
   - business reporting tools
-meta_description: >-
-  I tested automating business reports with Formula Builder Pro for a week. See
-  how it compares to manual reporting and which companion tools complete the
-  workflow.
+meta_description: "I tested automating business reports with Formula Builder Pro for a week. See how it compares to manual reporting and which companion tools complete the..."
 status: published
 published_at: '2026-06-06T10:00:00.000000+00:00'
 scheduled_at: null

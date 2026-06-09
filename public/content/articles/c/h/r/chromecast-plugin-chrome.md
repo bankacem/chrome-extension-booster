@@ -16,10 +16,7 @@ keywords:
   - chromecast chrome plugin
   - cast from chrome
   - chrome cast to tv
-meta_description: >-
-  Complete guide to using Chromecast with Google Chrome. Setup instructions,
-  troubleshooting, latency comparison across 3 TV models, and 8 companion
-  extensions for better streaming.
+meta_description: "Complete guide to using Chromecast with Google Chrome. Setup instructions, troubleshooting, latency comparison across 3 TV models, and 8 companion..."
 status: published
 published_at: '2026-05-19T22:15:00.224+00:00'
 scheduled_at: '2026-05-19T22:15:00+00:00'

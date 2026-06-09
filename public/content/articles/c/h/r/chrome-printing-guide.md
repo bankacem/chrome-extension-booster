@@ -15,10 +15,7 @@ keywords:
   - chrome printing
   - chrome printer setup
   - print from chrome
-meta_description: >-
-  I tested Chrome's built-in printing, cloud print services, and PDF-first
-  workflows across 5 printer models. Here is how to print from Chrome without
-  wasting paper or time.
+meta_description: "I tested Chrome's built-in printing, cloud print services, and PDF-first workflows across 5 printer models...."
 status: published
 published_at: '2026-05-22T10:15:00.463+00:00'
 scheduled_at: '2026-05-22T10:15:00+00:00'

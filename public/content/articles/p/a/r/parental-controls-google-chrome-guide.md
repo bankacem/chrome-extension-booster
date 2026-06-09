@@ -17,10 +17,7 @@ keywords:
   - parental controls google chrome
   - chrome child safety
   - content filtering chrome
-meta_description: >-
-  Honest parental controls for Google Chrome review after testing 4 solutions
-  across 10 devices. Real blocking accuracy, bypass rates, setup complexity, and
-  8 companion extensions for complete protection.
+meta_description: "Honest parental controls for Google Chrome review after testing 4 solutions across 10 devices...."
 status: published
 published_at: '2026-05-19T10:15:00.725+00:00'
 scheduled_at: '2026-05-19T10:15:00+00:00'

@@ -16,10 +16,7 @@ keywords:
   - fireshot chrome
   - chrome screenshot extension
   - full page screenshot chrome
-meta_description: >-
-  Honest FireShot review after head-to-head testing against 7 screenshot
-  extensions. Full-page capture speed, annotation tools, export formats, and 8
-  companion extensions compared.
+meta_description: "Honest FireShot review after head-to-head testing against 7 screenshot extensions...."
 status: published
 published_at: '2026-05-21T02:15:00.909+00:00'
 scheduled_at: '2026-05-21T02:15:00+00:00'

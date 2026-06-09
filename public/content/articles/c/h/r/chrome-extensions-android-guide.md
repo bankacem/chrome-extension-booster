@@ -13,10 +13,7 @@ keywords:
   - chrome extensions android
   - chrome store extension android
   - kiwi browser extensions
-meta_description: >-
-  Tested Chrome extensions on Android using Kiwi, Yandex, and Lemur browsers.
-  Performance benchmarks, extension compatibility, privacy comparison, and 8
-  companion extensions.
+meta_description: "Tested Chrome extensions on Android using Kiwi, Yandex, and Lemur browsers. Performance benchmarks, extension compatibility, privacy comparison, and 8..."
 status: published
 published_at: '2026-05-21T18:15:01.667+00:00'
 scheduled_at: '2026-05-21T18:15:00+00:00'

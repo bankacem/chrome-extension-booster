@@ -12,10 +12,7 @@ keywords:
   - dark mode chrome extension
   - black mode chrome
   - chrome dark theme extension
-meta_description: >-
-  I tested DarkFlow, Dark Reader, and Midnight Lizard for a week on an OLED
-  laptop. Here is which dark mode Chrome extension saves 37% battery and causes
-  zero eye strain.
+meta_description: "I tested DarkFlow, Dark Reader, and Midnight Lizard for a week on an OLED laptop...."
 status: published
 published_at: '2026-05-24T10:15:00.376+00:00'
 scheduled_at: '2026-05-24T10:15:00+00:00'

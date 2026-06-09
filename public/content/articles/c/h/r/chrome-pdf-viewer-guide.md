@@ -15,10 +15,7 @@ keywords:
   - chrome pdf viewer
   - pdf editor chrome
   - view pdf in chrome
-meta_description: >-
-  Complete guide to Chrome's built-in PDF viewer. I tested it against Adobe
-  Acrobat and Foxit for rendering speed, annotation tools, search, form filling,
-  and performance with large files.
+meta_description: "Complete guide to Chrome's built-in PDF viewer. I tested it against Adobe Acrobat and Foxit for rendering speed, annotation tools, search, form filling..."
 status: published
 published_at: '2026-05-02T14:15:02.091+00:00'
 scheduled_at: '2026-05-02T14:15:00+00:00'

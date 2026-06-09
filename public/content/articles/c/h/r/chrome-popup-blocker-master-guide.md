@@ -18,10 +18,7 @@ keywords:
   - chrome popup blocker
   - pop up blocker for chrome
   - block popups chrome
-meta_description: >-
-  I tested 8 Chrome popup blockers for two weeks on 30 news sites. Find out
-  which blocks newsletter pop-ups, fake download buttons, autoplay video
-  overlays, and scam alerts — and which companion extensions to pair with it.
+meta_description: "I tested 8 Chrome popup blockers for two weeks on 30 news sites. Find out which blocks newsletter pop-ups, fake download buttons, autoplay video overlays..."
 status: published
 published_at: '2026-06-05T12:00:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'

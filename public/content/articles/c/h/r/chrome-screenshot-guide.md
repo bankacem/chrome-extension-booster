@@ -16,10 +16,7 @@ keywords:
   - chrome screenshot guide
   - best screenshot extensions chrome
   - screen capture chrome
-meta_description: >-
-  I tested 12 Chrome screenshot extensions over a month. Complete guide with
-  comparison tables, annotation tools, speed benchmarks, and 8 companion
-  extensions for developers and designers.
+meta_description: "I tested 12 Chrome screenshot extensions over a month. Complete guide with comparison tables, annotation tools, speed benchmarks, and 8 companion..."
 status: published
 published_at: '2026-03-20T00:00:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'

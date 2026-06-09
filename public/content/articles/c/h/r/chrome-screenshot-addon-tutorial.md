@@ -15,10 +15,7 @@ keywords:
   - chrome screenshot addon tutorial
   - how to screenshot chrome
   - chrome screenshot guide step by step
-meta_description: >-
-  A complete step-by-step Chrome screenshot addon tutorial. Install Quick
-  Screenshot Lite, capture visible area and full-page screenshots, annotate,
-  edit, and share with measured instructions.
+meta_description: "A complete step-by-step Chrome screenshot addon tutorial. Install Quick Screenshot Lite, capture visible area and full-page screenshots, annotate, edit..."
 status: published
 published_at: '2026-03-07T14:11:00.221+00:00'
 scheduled_at: '2026-03-07T14:11:00+00:00'

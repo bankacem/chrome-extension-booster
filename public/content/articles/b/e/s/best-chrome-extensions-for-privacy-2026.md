@@ -16,10 +16,7 @@ keywords:
   - best chrome extensions for privacy 2026
   - privacy extensions chrome
   - stop tracking chrome
-meta_description: >-
-  I tested 15 privacy Chrome extensions over a month. Find out which block
-  trackers, prevent fingerprinting, and protect your identity — plus the 8
-  companion extensions you need.
+meta_description: "I tested 15 privacy Chrome extensions over a month. Find out which block trackers, prevent fingerprinting, and protect your identity — plus the 8..."
 status: published
 published_at: '2026-02-15T09:00:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'

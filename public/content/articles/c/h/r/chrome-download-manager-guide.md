@@ -18,10 +18,7 @@ keywords:
   - chrome download manager
   - idm chrome
   - best download manager chrome
-meta_description: >-
-  I benchmarked 6 download managers for Chrome including IDM, Chrono, and native
-  extensions. Speed tests, resume reliability, batch download support, and 8
-  companion extensions compared.
+meta_description: "I benchmarked 6 download managers for Chrome including IDM, Chrono, and native extensions...."
 status: published
 published_at: '2026-05-23T02:15:00.264+00:00'
 scheduled_at: '2026-05-23T02:15:00+00:00'

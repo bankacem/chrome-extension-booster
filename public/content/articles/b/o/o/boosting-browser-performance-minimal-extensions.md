@@ -16,10 +16,7 @@ keywords:
   - minimal chrome extensions for speed
   - chrome performance optimization
   - speed up chrome
-meta_description: >-
-  I tested how each Chrome extension impacts browser speed. Find out which
-  extensions to keep, which to remove, and the minimal 5-extension stack for
-  peak performance.
+meta_description: "I tested how each Chrome extension impacts browser speed. Find out which extensions to keep, which to remove, and the minimal 5-extension stack for peak..."
 status: published
 published_at: '2026-04-24T10:15:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'

@@ -15,10 +15,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - Extension Performance Auditor
-meta_description: >-
-  Discover the power of Extension Performance Auditor and learn how to optimize
-  your browser extensions for peak performance, security, and user experience
-  with our expert guide
+meta_description: "Discover the power of Extension Performance Auditor and learn how to optimize your browser extensions for peak performance, security, and user experience..."
 status: draft
 published_at: null
 scheduled_at: null

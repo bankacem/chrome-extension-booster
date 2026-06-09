@@ -17,10 +17,7 @@ keywords:
   - best screenshot extension chrome
   - chrome screenshot tool comparison
   - screen capture extension
-meta_description: >-
-  Quick Screenshot Lite tested against 3 competitors for 2 weeks. Full-page
-  capture speed, annotation quality, export formats, and memory usage compared
-  with real benchmarks.
+meta_description: "Quick Screenshot Lite tested against 3 competitors for 2 weeks. Full-page capture speed, annotation quality, export formats, and memory usage compared..."
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'

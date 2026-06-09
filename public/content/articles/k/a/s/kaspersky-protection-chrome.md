@@ -17,10 +17,7 @@ keywords:
   - kaspersky protection chrome
   - chrome security extension
   - browser protection
-meta_description: >-
-  Hands-on testing of Kaspersky Protection for Chrome against 50 phishing sites,
-  30 malware samples, and 20 tech support scams. Real block rates, performance
-  impact, and comparison to free alternatives.
+meta_description: "Hands-on testing of Kaspersky Protection for Chrome against 50 phishing sites, 30 malware samples, and 20 tech support scams...."
 status: published
 published_at: '2026-05-22T22:15:02.386+00:00'
 scheduled_at: '2026-05-22T22:15:00+00:00'

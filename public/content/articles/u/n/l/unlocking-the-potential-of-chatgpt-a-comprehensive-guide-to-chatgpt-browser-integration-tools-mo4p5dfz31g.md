@@ -15,10 +15,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - ChatGPT Browser Integration Tools
-meta_description: >-
-  Discover the power of ChatGPT Browser Integration Tools and elevate your
-  browsing experience with our expert guide, featuring the best tools and
-  extensions for seamless integration
+meta_description: "Discover the power of ChatGPT Browser Integration Tools and elevate your browsing experience with our expert guide, featuring the best tools and..."
 status: draft
 published_at: null
 scheduled_at: null

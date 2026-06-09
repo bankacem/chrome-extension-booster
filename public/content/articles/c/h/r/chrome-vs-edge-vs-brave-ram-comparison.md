@@ -17,10 +17,7 @@ keywords:
   - chrome vs edge vs brave ram
   - browser ram comparison
   - best browser low ram
-meta_description: >-
-  2026 benchmarks for Chrome, Edge, and Brave. I tested RAM usage at 10, 20, and
-  50 tabs, measured startup time, ad blocking impact, and extension
-  compatibility. Find out which browser is best for low-RAM PCs.
+meta_description: "2026 benchmarks for Chrome, Edge, and Brave. I tested RAM usage at 10, 20, and 50 tabs, measured startup time, ad blocking impact, and extension..."
 status: published
 published_at: '2026-03-25T00:00:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'

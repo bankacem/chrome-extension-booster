@@ -16,10 +16,7 @@ keywords:
   - 3cx chrome extension
   - voip chrome extension
   - business phone chrome
-meta_description: >-
-  Testing the 3CX Chrome extension for business VoIP calls. Call quality test,
-  feature comparison against RingCentral, Zoom Phone, and Dialpad, Google
-  integration, and 8 companion extensions reviewed.
+meta_description: "Testing the 3CX Chrome extension for business VoIP calls. Call quality test, feature comparison against RingCentral, Zoom Phone, and Dialpad, Google..."
 status: published
 published_at: '2026-05-24T18:15:01.085+00:00'
 scheduled_at: '2026-05-24T18:15:00+00:00'

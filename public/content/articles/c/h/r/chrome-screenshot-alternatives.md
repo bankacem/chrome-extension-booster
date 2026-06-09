@@ -15,10 +15,7 @@ keywords:
   - chrome screenshot alternatives
   - screenshot tools chrome
   - best screenshot software
-meta_description: >-
-  I tested 10 screenshot methods including Chrome extensions, desktop apps, and
-  built-in tools. Full-page capture, annotations, scrolling screenshots, and
-  speed compared.
+meta_description: "I tested 10 screenshot methods including Chrome extensions, desktop apps, and built-in tools...."
 status: published
 published_at: '2026-03-06T20:11:02.413+00:00'
 scheduled_at: '2026-03-06T20:11:00+00:00'

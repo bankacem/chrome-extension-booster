@@ -15,10 +15,7 @@ keywords:
   - chrome web store kaspersky protection
   - kaspersky chrome extension
   - browser security extension
-meta_description: >-
-  Hands-on Kaspersky Protection Chrome extension review: tested against 15
-  phishing sites, 10 malicious downloads, and 20 tracking domains. Compared with
-  uBlock Origin, Bitdefender TrafficLight, and Chrome's built-in Safe Browsing.
+meta_description: "Hands-on Kaspersky Protection Chrome extension review: tested against 15 phishing sites, 10 malicious downloads, and 20 tracking domains...."
 status: published
 published_at: '2026-05-20T22:15:00.367+00:00'
 scheduled_at: '2026-05-20T22:15:00+00:00'

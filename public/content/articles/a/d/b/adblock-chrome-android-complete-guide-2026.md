@@ -10,9 +10,7 @@ excerpt: >-
   I tested every method to block ads on Android Chrome in 2026 — Kiwi Browser,
   Firefox, DNS, and more. Here is the setup that actually works and which
   companion extensions to pair with it.
-meta_description: >-
-  I tested every method to block ads on Android Chrome in 2026. Complete guide
-  with Kiwi Browser, Firefox, DNS blocking, and companion extensions.
+meta_description: "I tested every method to block ads on Android Chrome in 2026 — Kiwi Browser, Firefox, DNS, and more...."
 canonicalPath: /blog/adblock-chrome-android-complete-guide-2026
 category: Productivity & Tools
 tags:

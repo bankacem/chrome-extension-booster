@@ -12,10 +12,7 @@ keywords:
   - chrometana
   - bing to google redirect
   - cortana search redirect
-meta_description: >-
-  Chrometana extension review. Redirect Bing and Cortana searches to Google.
-  Tested against Bing2Google, Zero-Click Redirect, and Search Redirect for speed
-  and privacy.
+meta_description: "Chrometana extension review. Redirect Bing and Cortana searches to Google. Tested against Bing2Google, Zero-Click Redirect, and Search Redirect for speed..."
 status: published
 published_at: '2026-02-09T14:11:00.957+00:00'
 scheduled_at: '2026-02-09T14:11:00+00:00'

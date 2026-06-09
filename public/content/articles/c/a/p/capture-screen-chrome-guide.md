@@ -17,10 +17,7 @@ keywords:
   - how to screenshot in chrome
   - chrome screen capture
   - best way to screenshot chrome
-meta_description: >-
-  How to capture screen in Chrome with 4 methods. Keyboard shortcuts, DevTools,
-  Quick Screenshot Lite extension, and desktop apps tested for speed, quality,
-  and features.
+meta_description: "How to capture screen in Chrome with 4 methods. Keyboard shortcuts, DevTools, Quick Screenshot Lite extension, and desktop apps tested for speed, quality..."
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'

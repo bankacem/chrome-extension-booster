@@ -21,10 +21,7 @@ keywords:
   - best chrome extensions for work 2026
   - productivity chrome extensions
   - professional workflow extensions
-meta_description: >-
-  I tested 40+ productivity Chrome extensions against actual work scenarios.
-  These 10 earned a permanent spot in my toolbar — and they'll save you hours
-  every week.
+meta_description: "I tested 40+ productivity Chrome extensions against actual work scenarios. These 10 earned a permanent spot in my toolbar — and they'll save you hours..."
 status: published
 published_at: '2026-03-16T02:11:01.384+00:00'
 scheduled_at: '2026-03-16T02:11:00+00:00'

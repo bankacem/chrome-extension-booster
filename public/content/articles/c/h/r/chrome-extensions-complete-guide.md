@@ -13,10 +13,7 @@ keywords:
   - chrome extensions
   - best chrome extensions 2026
   - chrome extension guide
-meta_description: >-
-  I tested 40+ Chrome extensions on 50 sites across 5 categories with exact
-  memory measurements. Here is which ones improve your browsing and which ones
-  are just memory hogs.
+meta_description: "I tested 40+ Chrome extensions on 50 sites across 5 categories with exact memory measurements...."
 status: published
 published_at: '2026-05-24T22:15:00.745+00:00'
 scheduled_at: '2026-05-24T22:15:00+00:00'

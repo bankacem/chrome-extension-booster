@@ -15,10 +15,7 @@ keywords:
   - chrome store opera
   - opera chrome extensions
   - use chrome extensions in opera
-meta_description: >-
-  Complete guide to using Chrome extensions in Opera browser. Tested
-  compatibility, installation steps, known issues, and comparison with Vivaldi
-  and Edge for Chrome extension support.
+meta_description: "Complete guide to using Chrome extensions in Opera browser. Tested compatibility, installation steps, known issues, and comparison with Vivaldi and Edge..."
 status: published
 published_at: '2026-05-21T14:15:03.762+00:00'
 scheduled_at: '2026-05-21T14:15:00+00:00'

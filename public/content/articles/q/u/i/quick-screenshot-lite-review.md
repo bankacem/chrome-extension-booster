@@ -13,10 +13,7 @@ keywords:
   - quick screenshot lite review
   - chrome screenshot addon review
   - best screenshot extension chrome
-meta_description: >-
-  Honest review of Quick Screenshot Lite after 6 months of daily use. Capture
-  speed, image quality, privacy, and comparison with Awesome Screenshot, Nimbus,
-  and GoFullPage.
+meta_description: "Honest review of Quick Screenshot Lite after 6 months of daily use. Capture speed, image quality, privacy, and comparison with Awesome Screenshot, Nimbus..."
 status: published
 published_at: '2026-03-07T02:11:00.244+00:00'
 scheduled_at: '2026-03-07T02:11:00+00:00'

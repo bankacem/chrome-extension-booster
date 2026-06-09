@@ -17,10 +17,7 @@ keywords:
   - parental controls google chrome pc
   - chrome parental controls
   - safe browsing for kids
-meta_description: >-
-  Complete guide to setting up parental controls on Google Chrome for PC. I
-  tested Family Link, extensions, DNS filtering, and supervised accounts to find
-  the best setup.
+meta_description: "Complete guide to setting up parental controls on Google Chrome for PC. I tested Family Link, extensions, DNS filtering, and supervised accounts to find..."
 status: published
 published_at: '2026-05-18T14:15:02.303+00:00'
 scheduled_at: '2026-05-18T14:15:00+00:00'

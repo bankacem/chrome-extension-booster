@@ -15,10 +15,7 @@ keywords:
   - chrome screenshot addon guide
   - how to screenshot in chrome
   - chrome screenshot tips
-meta_description: >-
-  Step-by-step guide to using Chrome screenshot addons. Full-page capture,
-  annotations, keyboard shortcuts, editing techniques, and sharing workflows
-  tested and explained.
+meta_description: "Step-by-step guide to using Chrome screenshot addons. Full-page capture, annotations, keyboard shortcuts, editing techniques, and sharing workflows tested..."
 status: published
 published_at: '2026-03-07T08:11:01.719+00:00'
 scheduled_at: '2026-03-07T08:11:00+00:00'

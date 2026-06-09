@@ -16,10 +16,7 @@ keywords:
   - best chrome extensions for productivity
   - productivity chrome extensions
   - workflow extensions
-meta_description: >-
-  I tested 30+ productivity Chrome extensions over a month. Here is the curated
-  10-extension stack that saves hours per week — including 8 essential companion
-  extensions.
+meta_description: "I tested 30+ productivity Chrome extensions over a month. Here is the curated 10-extension stack that saves hours per week — including 8 essential..."
 status: draft
 published_at: '2026-04-18T18:51:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'

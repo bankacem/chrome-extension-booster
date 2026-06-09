@@ -13,10 +13,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - chrome facebook pixel
-meta_description: >-
-  Learn how to use the Chrome Facebook Pixel to create targeted ads and track
-  user behavior. Get tips on setting up and using the pixel to drive real
-  results for your business.
+meta_description: "Learn how to use the Chrome Facebook Pixel to create targeted ads and track user behavior...."
 status: published
 published_at: '2026-05-23T10:15:00.331+00:00'
 scheduled_at: '2026-05-23T10:15:00+00:00'

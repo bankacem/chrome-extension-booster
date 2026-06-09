@@ -17,10 +17,7 @@ keywords:
   - claroread chrome extension
   - text to speech chrome
   - reading support extension
-meta_description: >-
-  Testing the ClaroRead Chrome extension for text-to-speech accuracy, reading
-  speed, and literacy support features. Compared against Read&Write,
-  NaturalReader, and Speechify for accessibility.
+meta_description: "Testing the ClaroRead Chrome extension for text-to-speech accuracy, reading speed, and literacy support features...."
 status: published
 published_at: '2026-05-19T18:15:00.609+00:00'
 scheduled_at: '2026-05-19T18:15:00+00:00'

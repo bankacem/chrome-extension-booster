@@ -18,10 +18,7 @@ keywords:
   - The Great Suspender alternative
   - Chrome tab suspender safe
   - best tab suspender 2026
-meta_description: >-
-  The Great Suspender was removed from the Chrome Web Store for malware. I
-  tested 4 alternatives — here is which is safe, which saves the most RAM, and
-  which companion extensions you need.
+meta_description: "The Great Suspender was removed from the Chrome Web Store for malware. I tested 4 alternatives — here is which is safe, which saves the most RAM, and..."
 status: published
 published_at: '2026-06-06T08:00:00.000000+00:00'
 scheduled_at: null

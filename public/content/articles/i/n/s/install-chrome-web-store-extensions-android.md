@@ -17,10 +17,7 @@ keywords:
   - chrome web store extensions android
   - install chrome extensions android
   - kiwi browser chrome web store
-meta_description: >-
-  Step-by-step guide to installing Chrome Web Store extensions on Android using
-  Kiwi Browser. 20 extensions tested, 3 browsers compared, privacy risks
-  explained. Updated for 2026.
+meta_description: "Step-by-step guide to installing Chrome Web Store extensions on Android using Kiwi Browser...."
 status: published
 published_at: '2026-05-21T06:15:00.526+00:00'
 scheduled_at: '2026-05-21T06:15:00+00:00'

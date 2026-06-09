@@ -18,10 +18,7 @@ keywords:
   - Wikipedia night mode
   - Wikipedia dark mode 2026
   - dark mode Chrome extension Wikipedia
-meta_description: >-
-  I tested 6 ways to enable dark mode on Wikipedia in 2026 — from the built-in
-  option to Chrome extensions. Here is which method actually works best and
-  which companion tools to pair with it.
+meta_description: "I tested 6 ways to enable dark mode on Wikipedia in 2026 — from the built-in option to Chrome extensions...."
 status: published
 published_at: '2026-02-27T08:11:00.457+00:00'
 scheduled_at: '2026-02-27T08:11:00+00:00'

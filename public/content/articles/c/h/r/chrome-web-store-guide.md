@@ -13,10 +13,7 @@ keywords:
   - chrome web store
   - chrome extensions guide
   - safe chrome extensions
-meta_description: >-
-  Guide to the Chrome Web Store in 2026. How to find safe extensions, check
-  permissions, spot fake reviews, and compare extension stores across Chrome,
-  Edge, Firefox, and Opera.
+meta_description: "Guide to the Chrome Web Store in 2026. How to find safe extensions, check permissions, spot fake reviews, and compare extension stores across Chrome..."
 status: published
 published_at: '2026-02-13T08:11:01.656+00:00'
 scheduled_at: '2026-02-13T08:11:00+00:00'

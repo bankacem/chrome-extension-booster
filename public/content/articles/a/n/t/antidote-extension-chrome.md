@@ -18,10 +18,7 @@ keywords:
   - Antidote vs Grammarly
   - French writing tool
   - Chrome grammar checker
-meta_description: >-
-  Antidote Chrome extension reviewed after 14 days. See how it compares to
-  Grammarly and ProWritingAid for French and English writing, and which
-  companions complete the workflow.
+meta_description: "Antidote Chrome extension reviewed after 14 days. See how it compares to Grammarly and ProWritingAid for French and English writing, and which companions..."
 status: published
 published_at: '2026-06-06T04:00:00.000000+00:00'
 scheduled_at: null

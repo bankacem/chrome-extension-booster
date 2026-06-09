@@ -19,10 +19,7 @@ keywords:
   - chrome security
   - browser safety
   - malware protection chrome
-meta_description: >-
-  I tested 10 Chrome security extensions over two weeks. Find out which protect
-  against phishing, malware, and trackers — and which companion extensions fill
-  the gaps.
+meta_description: "I tested 10 Chrome security extensions over two weeks. Find out which protect against phishing, malware, and trackers — and which companion extensions..."
 status: published
 published_at: '2026-04-13T18:15:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'

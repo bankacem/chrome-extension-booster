@@ -15,10 +15,7 @@ keywords:
   - chrome web store pc
   - chrome extensions windows
   - manage chrome extensions pc
-meta_description: >-
-  Complete guide to using the Chrome Web Store on PC: 35 extensions tested for
-  RAM, CPU, and boot impact. Keyboard shortcuts, profile management, and the 8
-  PC essentials.
+meta_description: "Complete guide to using the Chrome Web Store on PC: 35 extensions tested for RAM, CPU, and boot impact...."
 status: published
 published_at: '2026-05-20T18:15:00.398+00:00'
 scheduled_at: '2026-05-20T18:15:00+00:00'

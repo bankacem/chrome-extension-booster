@@ -13,10 +13,7 @@ keywords:
   - chrome web store android extensions download
   - chrome extensions android download
   - install chrome extensions android
-meta_description: >-
-  Complete guide to downloading Chrome extensions on Android. Kiwi Browser
-  setup, Chrome Web Store access, safe vs unsafe extension sources, and browser
-  comparison.
+meta_description: "Complete guide to downloading Chrome extensions on Android. Kiwi Browser setup, Chrome Web Store access, safe vs unsafe extension sources, and browser..."
 status: published
 published_at: '2026-02-12T02:11:00.46+00:00'
 scheduled_at: '2026-02-12T02:11:00+00:00'

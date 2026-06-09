@@ -13,10 +13,7 @@ category: Productivity & Tools
 tags: []
 keywords:
   - chrome web store extensions
-meta_description: >-
-  I tested 42 Chrome Web Store extensions over three weeks. Detailed comparison
-  table with load times and resource usage, security audit checklist, and 10
-  extensions worth installing in 2026.
+meta_description: "I tested 42 Chrome Web Store extensions over three weeks. Detailed comparison table with load times and resource usage, security audit checklist, and 10..."
 status: published
 published_at: '2026-02-13T02:11:01.26+00:00'
 scheduled_at: '2026-02-13T02:11:00+00:00'

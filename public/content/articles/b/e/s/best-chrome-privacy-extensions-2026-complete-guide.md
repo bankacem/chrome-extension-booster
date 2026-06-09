@@ -10,10 +10,7 @@ excerpt: >-
   The best Chrome privacy extensions in 2026: Ghostery, Privacy Badger, and
   uBlock Origin compared for tracker blocking, speed, and data practices. Find
   the right one for you.
-meta_description: >-
-  The best Chrome privacy extensions in 2026: Ghostery, Privacy Badger, and
-  uBlock Origin compared for tracker blocking, speed, and data practices. Find
-  the right one for you.
+meta_description: "The best Chrome privacy extensions in 2026: Ghostery, Privacy Badger, and uBlock Origin compared for tracker blocking, speed, and data practices...."
 canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
 category: Privacy & Security
 tags:

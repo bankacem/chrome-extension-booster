@@ -13,10 +13,7 @@ keywords:
   - chrome web store application
   - chrome apps vs extensions
   - pwa vs chrome extension
-meta_description: >-
-  Chrome apps were deprecated in 2023. Complete guide to Chrome Web Store
-  extensions, themes, and Progressive Web Apps (PWAs). Comparison table and
-  migration guide for former Chrome app users.
+meta_description: "Chrome apps were deprecated in 2023. Complete guide to Chrome Web Store extensions, themes, and Progressive Web Apps (PWAs)...."
 status: published
 published_at: '2026-05-21T10:15:00.588+00:00'
 scheduled_at: '2026-05-21T10:15:00+00:00'

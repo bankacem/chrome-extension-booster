@@ -20,10 +20,7 @@ keywords:
   - cors chrome extension
   - fix cors chrome
   - cross origin resource sharing chrome
-meta_description: >-
-  CORS in Chrome explained and tested. I compared 4 CORS solutions (extensions,
-  proxy, server config, dev tools) across 10 real API integrations. Setup time,
-  reliability, and security impact compared.
+meta_description: "CORS in Chrome explained and tested. I compared 4 CORS solutions (extensions, proxy, server config, dev tools) across 10 real API integrations...."
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'

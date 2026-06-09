@@ -15,10 +15,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - Browser Resource Optimizer 2026
-meta_description: >-
-  Discover the ultimate Browser Resource Optimizer 2026 to boost your browsing
-  experience and learn how to optimize your browser's performance with our
-  expert guide
+meta_description: "Discover the ultimate Browser Resource Optimizer 2026 to boost your browsing experience and learn how to optimize your browser's performance with our..."
 status: draft
 published_at: null
 scheduled_at: null

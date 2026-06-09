@@ -18,10 +18,7 @@ keywords:
   - clipconverter extension chrome
   - video downloader chrome
   - youtube to mp4 chrome
-meta_description: >-
-  Honest ClipConverter Chrome extension review after testing 15 video
-  downloaders. Real download speeds, format support tested, privacy risks
-  uncovered, and 8 companion extensions you should pair with it.
+meta_description: "Honest ClipConverter Chrome extension review after testing 15 video downloaders. Real download speeds, format support tested, privacy risks uncovered, and..."
 status: published
 published_at: '2026-05-19T14:15:00.422+00:00'
 scheduled_at: '2026-05-19T14:15:00+00:00'

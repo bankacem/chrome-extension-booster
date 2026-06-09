@@ -15,10 +15,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - Custom CSS Injector Extensions
-meta_description: >-
-  Discover the power of Custom CSS Injector Extensions and how they can
-  revolutionize your browsing experience with enhanced functionality and
-  personalized styling
+meta_description: "Discover the power of Custom CSS Injector Extensions and how they can revolutionize your browsing experience with enhanced functionality and personalized..."
 status: draft
 published_at: null
 scheduled_at: null

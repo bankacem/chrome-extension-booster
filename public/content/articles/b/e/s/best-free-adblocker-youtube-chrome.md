@@ -16,10 +16,7 @@ keywords:
   - best free adblocker for youtube chrome
   - block youtube ads
   - youtube adblock 2026
-meta_description: >-
-  I tested 5 free YouTube adblockers for Chrome over two weeks. Find out which
-  blocks pre-roll, mid-roll, and sponsor segments — and which companion
-  extensions to pair with it.
+meta_description: "I tested 5 free YouTube adblockers for Chrome over two weeks. Find out which blocks pre-roll, mid-roll, and sponsor segments — and which companion..."
 status: published
 published_at: '2026-04-10T10:15:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'

@@ -20,10 +20,7 @@ keywords:
   - best ux analytics tool
   - heatmap chrome extension
   - contentsquare vs hotjar vs crazy egg
-meta_description: >-
-  Contentsquare extension for Chrome reviewed after 2 weeks of real testing
-  against Hotjar, Crazy Egg, and Microsoft Clarity. Heatmaps, session replays,
-  funnel analysis compared with data.
+meta_description: "Contentsquare extension for Chrome reviewed after 2 weeks of real testing against Hotjar, Crazy Egg, and Microsoft Clarity...."
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'

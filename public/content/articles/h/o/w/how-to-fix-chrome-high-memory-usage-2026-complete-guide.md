@@ -10,10 +10,7 @@ excerpt: >-
   Chrome using too much RAM? This complete 2026 guide covers every fix: Memory
   Saver, tab suspension, best extensions, and Windows 11 settings to cut
   Chrome's RAM by 50%.
-meta_description: >-
-  Chrome using too much RAM? This complete 2026 guide covers every fix: Memory
-  Saver, tab suspension, best extensions, and Windows 11 settings to cut
-  Chrome's RAM by 50%.
+meta_description: "Chrome using too much RAM? This complete 2026 guide covers every fix: Memory Saver, tab suspension, best extensions, and Windows 11 settings to cut..."
 canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 category: Performance & Memory
 tags:

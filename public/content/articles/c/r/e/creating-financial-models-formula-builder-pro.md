@@ -18,10 +18,7 @@ keywords:
   - formula builder pro review
   - best financial modeling extension
   - chrome extension for financial analysis
-meta_description: >-
-  Financial modeling tools tested for 2 weeks: Excel vs Google Sheets vs
-  Formula Builder Pro vs dedicated software. Speed, accuracy, and workflow
-  benchmarks with real data.
+meta_description: "Financial modeling tools tested for 2 weeks: Excel vs Google Sheets vs Formula Builder Pro vs dedicated software...."
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'

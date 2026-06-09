@@ -18,10 +18,7 @@ keywords:
   - best tab suspender Chrome 2026
   - Chrome memory saver extension
   - ProTab Suspender
-meta_description: >-
-  I tested AutoTab Discard vs OneTab vs ProTab Suspender for a week. See which
-  saves the most RAM, which keeps your tabs accessible, and which companion
-  tools complete the setup.
+meta_description: "I tested AutoTab Discard vs OneTab vs ProTab Suspender for a week. See which saves the most RAM, which keeps your tabs accessible, and which companion..."
 status: published
 published_at: '2026-06-06T06:00:00.000000+00:00'
 scheduled_at: null

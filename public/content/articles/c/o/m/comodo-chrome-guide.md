@@ -20,10 +20,7 @@ keywords:
   - secure browser comparison
   - best security browser 2026
   - comodo vs brave vs chrome
-meta_description: >-
-  Comodo Chrome review after 3 weeks of testing against Chrome, Brave, and
-  Firefox. Real security tests, speed benchmarks, memory usage data, and a clear
-  verdict on the best secure browser for 2026.
+meta_description: "Comodo Chrome review after 3 weeks of testing against Chrome, Brave, and Firefox...."
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'
