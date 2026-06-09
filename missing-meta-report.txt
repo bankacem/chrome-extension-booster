@@ -1,5 +1,5 @@
 SEO Fixer — Missing Title / Meta Description Report
-Generated: 2026-06-09T20:41:30.038Z
+Generated: 2026-06-09T21:51:28.805Z
 Total flagged: 1
 
 file	missing_title	missing_meta	slug
