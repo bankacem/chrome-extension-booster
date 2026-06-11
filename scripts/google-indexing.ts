@@ -111,9 +111,16 @@ export async function notifyIndexing(url: string, type: 'URL_UPDATED' | 'URL_DEL
     scopes: ['https://www.googleapis.com/auth/indexing'],
   };
 
-  if (process.env.GOOGLE_INDEXING_KEY) {
+  const envKey = process.env.GOOGLE_INDEXING_KEY;
+  let keyPath = '';
+
+  if (fs.existsSync(NEW_KEY_FILE)) keyPath = NEW_KEY_FILE;
+  else if (fs.existsSync(KEY_FILE)) keyPath = KEY_FILE;
+  else if (fs.existsSync(ALT_KEY_FILE)) keyPath = ALT_KEY_FILE;
+
+  if (envKey) {
     try {
-      const keyData = JSON.parse(process.env.GOOGLE_INDEXING_KEY) as IndexingKey;
+      const keyData = JSON.parse(envKey) as IndexingKey;
       if (keyData.private_key) {
         keyData.private_key = keyData.private_key.replace(/\\n/g, '\n');
       }
@@ -122,12 +129,18 @@ export async function notifyIndexing(url: string, type: 'URL_UPDATED' | 'URL_DEL
       console.error('[Indexing] Error parsing GOOGLE_INDEXING_KEY:', (e as Error).message);
       return;
     }
-  } else if (fs.existsSync(NEW_KEY_FILE)) {
-    authOptions.keyFile = NEW_KEY_FILE;
-  } else if (fs.existsSync(KEY_FILE)) {
-    authOptions.keyFile = KEY_FILE;
-  } else if (fs.existsSync(ALT_KEY_FILE)) {
-    authOptions.keyFile = ALT_KEY_FILE;
+  } else if (keyPath) {
+    try {
+      console.log(`[Indexing] Using key file: ${keyPath}`);
+      const keyData = JSON.parse(fs.readFileSync(keyPath, 'utf-8')) as IndexingKey;
+      if (keyData.private_key) {
+        keyData.private_key = keyData.private_key.replace(/\\n/g, '\n');
+      }
+      authOptions.credentials = keyData;
+    } catch (e) {
+      console.error(`[Indexing] Error reading key file ${keyPath}:`, (e as Error).message);
+      return;
+    }
   } else {
     console.warn(`[Indexing] Skip: No key found`);
     return;
