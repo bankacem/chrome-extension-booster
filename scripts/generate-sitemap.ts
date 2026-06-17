@@ -3,16 +3,27 @@ import path from "path";
 
 const WEBSITE_URL = "https://extensionto.com";
 
-function generateSitemapXml(urls: string[]): string {
+interface SitemapEntry {
+  url: string;
+  date: string;
+}
+
+function generateSitemapXml(entries: SitemapEntry[]): string {
   return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n" + 
-    urls.map(url => `  <url>\n    <loc>${url}</loc>\n    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>\n  </url>`).join("\n") + 
+    entries.map(({ url, date }) => `  <url>\n    <loc>${url}</loc>\n    <lastmod>${date}</lastmod>\n  </url>`).join("\n") + 
     "\n</urlset>";
 }
 
 async function generateSitemap() {
   console.log("Generating sitemap from public/content/articles-index.json...");
-  const staticUrls = [`${WEBSITE_URL}/`, `${WEBSITE_URL}/blog`, `${WEBSITE_URL}/privacy`, `${WEBSITE_URL}/terms`];
-  const articleUrls: string[] = [];
+  const today = new Date().toISOString().split('T')[0];
+  const staticEntries: SitemapEntry[] = [
+    { url: `${WEBSITE_URL}/`, date: today },
+    { url: `${WEBSITE_URL}/blog`, date: today },
+    { url: `${WEBSITE_URL}/privacy`, date: today },
+    { url: `${WEBSITE_URL}/terms`, date: today },
+  ];
+  const articleEntries: SitemapEntry[] = [];
   const jsonPath = path.join(process.cwd(), "public", "content", "articles-index.json");
   
   if (!fs.existsSync(jsonPath)) {
@@ -31,21 +42,23 @@ async function generateSitemap() {
       
       // Clean slug just in case, though articles-index.json should be clean
       slug = slug.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-      const date = art.published_at || art.date || new Date().toISOString();
+      // Use the article's own modification date so unchanged articles keep their
+      // original lastmod instead of being bumped to today's date on every run.
+      const date = art.updated_at || art.published_at || art.date || new Date().toISOString();
       return { url: `${WEBSITE_URL}/blog/${slug}`, date: date.split('T')[0] };
-    }).filter(Boolean);
+    }).filter(Boolean) as SitemapEntry[];
     
     // Sort articles by date descending (newest first)
-    articlesData.sort((a: any, b: any) => b.date.localeCompare(a.date));
-    articlesData.forEach((item: any) => articleUrls.push(item.url));
+    articlesData.sort((a: SitemapEntry, b: SitemapEntry) => b.date.localeCompare(a.date));
+    articlesData.forEach((item: SitemapEntry) => articleEntries.push(item));
   } catch (e) {
     console.error("❌ JSON Error:", e);
   }
   
-  const allUrls = [...staticUrls, ...articleUrls];
-  console.log(`Added ${articleUrls.length} articles (sorted newest first)`);
+  const allEntries = [...staticEntries, ...articleEntries];
+  console.log(`Added ${articleEntries.length} articles (sorted newest first)`);
   
-  const sitemapContent = generateSitemapXml(allUrls);
+  const sitemapContent = generateSitemapXml(allEntries);
   const outputDirs = ["public", "dist"];
   
   for (const dir of outputDirs) {
