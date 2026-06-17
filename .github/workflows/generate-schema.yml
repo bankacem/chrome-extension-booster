@@ -7,7 +7,15 @@ name: Generate Schema
 # overwrites an existing schema or modifies article bodies.
 
 on:
-  workflow_dispatch:        # Manual trigger from the Actions tab
+  workflow_dispatch:        # Manual trigger from the Actions tab (requires the
+                            # file to exist on the default branch to appear in UI)
+  push:
+    branches:
+      - seo-update-tunnelbear-review-2026-14581903959232008439
+    paths:
+      - 'public/content/articles/**'
+      - 'scripts/generate-schema.ts'
+      - '.github/workflows/generate-schema.yml'
 
 jobs:
   generate-schema:
