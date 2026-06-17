@@ -1,0 +1,60 @@
+name: Generate Schema
+
+# Manually-triggered SEO helper. Runs the deterministic scripts that inject
+# JSON-LD `schema` into article frontmatter (only where missing), then rebuilds
+# the article index and sitemap. Disk is the source of truth — this never
+# touches Supabase. The generate-schema script is idempotent and never
+# overwrites an existing schema or modifies article bodies.
+
+on:
+  workflow_dispatch:        # Manual trigger from the Actions tab
+
+jobs:
+  generate-schema:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Inject JSON-LD schema into article frontmatter
+        run: bun run generate-schema
+
+      - name: Rebuild index from local markdown
+        run: bun run sync-articles
+
+      - name: Generate sitemap from local index
+        run: bun run sitemap
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add \
+            public/content/articles \
+            public/content/articles-index.json \
+            public/sitemap.xml \
+            "public/sitemap-*.xml" 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "✅ Nothing to update — every article already has a schema."
+          else
+            CHANGED=$(git diff --cached --name-only | wc -l)
+            echo "📦 Committing $CHANGED changed file(s)…"
+            git commit -m "chore: generate article schema + refresh index/sitemap [$(date +'%Y-%m-%d %H:%M UTC')]"
+            git push
+          fi
