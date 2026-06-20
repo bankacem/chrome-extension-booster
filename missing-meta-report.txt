@@ -1,6 +1,0 @@
-SEO Fixer — Missing Title / Meta Description Report
-Generated: 2026-06-09T21:51:28.805Z
-Total flagged: 1
-
-file	missing_title	missing_meta	slug
-public\content\articles\1\1\1\1111111111111111111111111111111.md	YES	YES	1111111111111111111111111111111
