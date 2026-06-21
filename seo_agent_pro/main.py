@@ -43,7 +43,9 @@ def _save(filename: str, content: str) -> Path:
     return path
 
 def _slug(text: str) -> str:
-    return re.sub(r"[^\w\s-]", "", text).replace(" ", "_")[:35]
+    # Support Arabic characters and use hyphens for SEO
+    text = re.sub(r"[^\w\s\u0600-\u06FF-]", "", text).strip().lower()
+    return re.sub(r"[\s_]+", "-", text)[:45]
 
 def _ts() -> str:
     return datetime.now().strftime("%Y%m%d_%H%M")
@@ -59,7 +61,7 @@ def _header(title: str) -> None:
 #  Run modes
 # ──────────────────────────────────────────────────────────────
 
-def run_full(keyword: str, niche: str, model: str, months: int) -> None:
+def run_full(keyword: str, niche: str, model: str, months: int, lang: str = "en") -> None:
     memory = mem_module.load()
     ts     = _ts()
     slug   = _slug(keyword)
@@ -68,35 +70,36 @@ def run_full(keyword: str, niche: str, model: str, months: int) -> None:
     print(f"""
   Keyword   : {c('bold', keyword)}
   Niche     : {c('bold', niche or 'auto-detect')}
+  Language  : {c('bold', lang)}
   Model     : {c('cyan', model)}
   Articles  : {len(memory['articles_written'])} in memory
   Time      : {datetime.now().strftime('%Y-%m-%d %H:%M')}
 """)
 
     # ── 1. Competitor analysis ─────────────────────────────────
-    competitor_data = agent.analyze_competitors(keyword, model)
+    competitor_data = agent.analyze_competitors(keyword, model, lang)
 
     # ── 2. Strategy decision ───────────────────────────────────
     strategy = agent.decide_strategy(
         keyword, competitor_data,
-        len(memory["articles_written"]), model
+        len(memory["articles_written"]), model, lang
     )
 
     # ── 3. Write article ───────────────────────────────────────
-    article = agent.write_article(keyword, strategy, model)
+    article = agent.write_article(keyword, strategy, model, lang)
     _save(f"{slug}_{ts}.md", article)
 
     # ── 4. CTR optimization ────────────────────────────────────
-    ctr = agent.optimize_ctr(keyword, article, model)
+    ctr = agent.optimize_ctr(keyword, article, model, lang)
 
     # ── 5. Keyword cluster (V3) ────────────────────────────────
-    cluster = agent.build_cluster(keyword, niche, model)
+    cluster = agent.build_cluster(keyword, niche, model, lang)
     _save(f"cluster_{slug}_{ts}.json",
           json.dumps(cluster, ensure_ascii=False, indent=2))
 
     # ── 6. Content calendar (V3) ───────────────────────────────
     if niche:
-        calendar = agent.build_calendar(keyword, niche, months, model)
+        calendar = agent.build_calendar(keyword, niche, months, model, lang)
         _save(f"calendar_{slug}_{ts}.json",
               json.dumps(calendar, ensure_ascii=False, indent=2))
     else:
@@ -104,7 +107,7 @@ def run_full(keyword: str, niche: str, model: str, months: int) -> None:
 
     # ── 7. Authority score (V3) ────────────────────────────────
     if niche and len(memory["articles_written"]) >= 1:
-        authority = agent.score_authority(niche, memory["articles_written"], model)
+        authority = agent.score_authority(niche, memory["articles_written"], model, lang)
         mem_module.record_authority(memory, niche, authority)
 
     # ── 8. Update memory ───────────────────────────────────────
@@ -162,17 +165,17 @@ def run_full(keyword: str, niche: str, model: str, months: int) -> None:
 """)
 
 
-def run_article(keyword: str, model: str) -> None:
+def run_article(keyword: str, model: str, lang: str = "en") -> None:
     memory = mem_module.load()
     ts     = _ts()
     slug   = _slug(keyword)
 
     _header(f"Article Mode  [{model}]")
 
-    comp     = agent.analyze_competitors(keyword, model)
-    strategy = agent.decide_strategy(keyword, comp, len(memory["articles_written"]), model)
-    article  = agent.write_article(keyword, strategy, model)
-    ctr      = agent.optimize_ctr(keyword, article, model)
+    comp     = agent.analyze_competitors(keyword, model, lang)
+    strategy = agent.decide_strategy(keyword, comp, len(memory["articles_written"]), model, lang)
+    article  = agent.write_article(keyword, strategy, model, lang)
+    ctr      = agent.optimize_ctr(keyword, article, model, lang)
 
     output = f"""---
 title: {ctr.get('recommended_title', keyword)}
@@ -188,25 +191,25 @@ date: {datetime.now().strftime('%Y-%m-%d')}
     mem_module.record_article(memory, keyword, article, model)
 
 
-def run_cluster(keyword: str, niche: str, model: str) -> None:
+def run_cluster(keyword: str, niche: str, model: str, lang: str = "en") -> None:
     memory = mem_module.load()
     ts     = _ts()
     slug   = _slug(keyword)
 
     _header(f"Cluster Mode  [{model}]")
 
-    result = agent.build_cluster(keyword, niche, model)
+    result = agent.build_cluster(keyword, niche, model, lang)
     _save(f"cluster_{slug}_{ts}.json", json.dumps(result, ensure_ascii=False, indent=2))
     mem_module.record_cluster(memory, keyword, result)
 
 
-def run_calendar(keyword: str, niche: str, months: int, model: str) -> None:
+def run_calendar(keyword: str, niche: str, months: int, model: str, lang: str = "en") -> None:
     ts   = _ts()
     slug = _slug(keyword)
 
     _header(f"Calendar Mode  [{model}]")
 
-    result = agent.build_calendar(keyword, niche or keyword, months, model)
+    result = agent.build_calendar(keyword, niche or keyword, months, model, lang)
     _save(f"calendar_{slug}_{ts}.json", json.dumps(result, ensure_ascii=False, indent=2))
 
 
@@ -233,6 +236,7 @@ def main() -> None:
     )
     parser.add_argument("--keyword", help='Target keyword, e.g. "best laptop for students"')
     parser.add_argument("--niche",   default="", help='Content niche, e.g. "technology"')
+    parser.add_argument("--lang",    default="en", help='Language code (en, ar, fr, etc.)')
     parser.add_argument("--model",   default=DEFAULT_MODEL, help=f"Model name from config.py (default: {DEFAULT_MODEL})")
     parser.add_argument("--months",  type=int, default=3, help="Calendar duration in months (default: 3)")
     parser.add_argument("--models",  action="store_true", help="List all available models and exit")
@@ -259,13 +263,13 @@ def main() -> None:
     # ── Dispatch ───────────────────────────────────────────────
     try:
         if args.mode == "full":
-            run_full(args.keyword, args.niche, args.model, args.months)
+            run_full(args.keyword, args.niche, args.model, args.months, args.lang)
         elif args.mode == "article":
-            run_article(args.keyword, args.model)
+            run_article(args.keyword, args.model, args.lang)
         elif args.mode == "cluster":
-            run_cluster(args.keyword, args.niche, args.model)
+            run_cluster(args.keyword, args.niche, args.model, args.lang)
         elif args.mode == "calendar":
-            run_calendar(args.keyword, args.niche, args.months, args.model)
+            run_calendar(args.keyword, args.niche, args.months, args.model, args.lang)
 
     except KeyboardInterrupt:
         print(c("yellow", "\n\n  ⚠  Stopped by user."))
