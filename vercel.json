@@ -25,6 +25,56 @@
   ],
   "redirects": [
     {
+      "source": "/blog/ajouter-extension-chrome-8",
+      "destination": "/blog/how-to-add-extensions-to-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/easy-screenshot-chrome-tools-9",
+      "destination": "/blog/best-easy-screenshot-tools-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-grammaire-chrome-6",
+      "destination": "/blog/best-grammar-checker-chrome-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-regle-chrome-9",
+      "destination": "/blog/chrome-extension-rules-and-guidelines",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-surligneur-chrome-10",
+      "destination": "/blog/top-highlighter-extensions-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-utile-chrome-12",
+      "destination": "/blog/most-useful-chrome-extensions-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/google-chrome-programmé-en-14",
+      "destination": "/blog/what-is-google-chrome-programmed-in",
+      "permanent": true
+    },
+    {
+      "source": "/blog/google-trad-plugin-15",
+      "destination": "/blog/best-google-translate-chrome-plugins",
+      "permanent": true
+    },
+    {
+      "source": "/blog/google-translate-extension-to-chrome-6",
+      "destination": "/blog/how-to-use-google-translate-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mes-extensions-chrome-5",
+      "destination": "/blog/how-to-manage-chrome-extensions",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
