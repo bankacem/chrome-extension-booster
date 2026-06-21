@@ -85,6 +85,54 @@ def _call_anthropic(model_id: str, system: str, user: str, stream: bool) -> str:
 
 
 # ──────────────────────────────────────────────────────────────
+#  TokenRouter (OpenAI-compatible REST)
+# ──────────────────────────────────────────────────────────────
+
+def _call_tokenrouter(model_id: str, system: str, user: str, stream: bool) -> str:
+    url     = "https://api.tokenrouter.com/v1/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {API_KEYS['tokenrouter']}",
+        "Content-Type":  "application/json",
+    }
+    payload = {
+        "model":      model_id,
+        "max_tokens": SETTINGS["max_tokens"],
+        "stream":     stream,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user",   "content": user},
+        ],
+    }
+
+    req  = urllib.request.Request(url, json.dumps(payload).encode(), headers)
+    full = ""
+
+    with urllib.request.urlopen(req) as resp:
+        if stream:
+            for raw_line in resp:
+                line = raw_line.decode("utf-8").strip()
+                if not line.startswith("data:"):
+                    continue
+                data = line[5:].strip()
+                if data == "[DONE]":
+                    break
+                try:
+                    obj   = json.loads(data)
+                    delta = obj["choices"][0]["delta"].get("content", "")
+                    if delta:
+                        print(delta, end="", flush=True)
+                        full += delta
+                except (json.JSONDecodeError, KeyError):
+                    continue
+            print()
+        else:
+            body = json.loads(resp.read().decode("utf-8"))
+            full = body["choices"][0]["message"]["content"]
+
+    return full
+
+
+# ──────────────────────────────────────────────────────────────
 #  OpenRouter  (OpenAI-compatible REST)
 # ──────────────────────────────────────────────────────────────
 
@@ -215,6 +263,8 @@ def call(
             return _call_openrouter(model_id, system, user, stream)
         elif provider == "groq":
             return _call_groq(model_id, system, user, stream)
+        elif provider == "tokenrouter":
+            return _call_tokenrouter(model_id, system, user, stream)
         else:
             print(c("red", f"  ✗ Unknown provider: {provider}"))
             sys.exit(1)

@@ -210,6 +210,61 @@ def run_calendar(keyword: str, niche: str, months: int, model: str) -> None:
     _save(f"calendar_{slug}_{ts}.json", json.dumps(result, ensure_ascii=False, indent=2))
 
 
+def run_audit(slug_target: str, model: str, limit: int = 5) -> None:
+    _header(f"Audit Mode  [{model}]")
+
+    index_path = Path("public/content/articles-index.json")
+    if not index_path.exists():
+        print(c("red", "  ✗ Articles index not found."))
+        return
+
+    articles = json.loads(index_path.read_text(encoding="utf-8"))
+
+    # Filter if specific slug provided, else do a sample or latest
+    if slug_target:
+        targets = [a for a in articles if a["slug"] == slug_target]
+    else:
+        print(c("dim", f"  · No slug provided, auditing latest {limit} articles..."))
+        targets = articles[:limit]
+
+    if not targets:
+        print(c("red", f"  ✗ No articles found matching: {slug_target}"))
+        return
+
+    for item in targets:
+        slug = item["slug"]
+
+        # Determine path (partitioned)
+        s = re.sub(r'[^a-z0-9]', '-', slug.lower())
+        s = re.sub(r'-+', '-', s).strip('-')
+
+        c1 = s[0] if len(s) > 0 else '_'
+        c2 = s[1] if len(s) > 1 else '_'
+        c3 = s[2] if len(s) > 2 else '_'
+
+        article_path = Path(f"public/content/articles/{c1}/{c2}/{c3}/{slug}.md")
+
+        if not article_path.exists():
+            # Try legacy non-partitioned path just in case
+            article_path = Path(f"public/content/articles/{slug}.md")
+
+        if not article_path.exists():
+            print(c("yellow", f"  ⚠ Article file not found: {article_path}"))
+            continue
+
+        print(c("cyan", f"\n▸ Reading article: {slug}"))
+        content = article_path.read_text(encoding="utf-8")
+        # Strip frontmatter if possible
+        body = re.sub(r'^---[\s\S]*?---', '', content).strip()
+
+        try:
+            audit_result = agent.audit_content(item.get("title", slug), body, item, model)
+            _save(f"audit_{slug}_{_ts()}.json", json.dumps(audit_result, ensure_ascii=False, indent=2))
+        except Exception as e:
+            print(c("red", f"  ✗ Failed to audit {slug}: {e}"))
+            continue
+
+
 # ──────────────────────────────────────────────────────────────
 #  Entry point
 # ──────────────────────────────────────────────────────────────
@@ -222,19 +277,21 @@ def main() -> None:
     )
     parser.add_argument(
         "--mode",
-        choices=["full", "article", "cluster", "calendar"],
+        choices=["full", "article", "cluster", "calendar", "audit"],
         default="full",
         help=(
             "full     → Complete V2+V3 pipeline  (default)\n"
             "article  → Single article only\n"
             "cluster  → Keyword cluster map only\n"
-            "calendar → Publishing calendar only"
+            "calendar → Publishing calendar only\n"
+            "audit    → Audit existing articles"
         ),
     )
     parser.add_argument("--keyword", help='Target keyword, e.g. "best laptop for students"')
     parser.add_argument("--niche",   default="", help='Content niche, e.g. "technology"')
     parser.add_argument("--model",   default=DEFAULT_MODEL, help=f"Model name from config.py (default: {DEFAULT_MODEL})")
     parser.add_argument("--months",  type=int, default=3, help="Calendar duration in months (default: 3)")
+    parser.add_argument("--limit",   type=int, default=5, help="Number of articles to audit (default: 5)")
     parser.add_argument("--models",  action="store_true", help="List all available models and exit")
     parser.add_argument("--stats",   action="store_true", help="Show memory stats and exit")
 
@@ -252,8 +309,9 @@ def main() -> None:
         mem_module.print_stats(memory)
         return
 
-    # ── Keyword required for all run modes ─────────────────────
-    if not args.keyword:
+    # ── Validation ─────────────────────────────────────────────
+    # Keyword required for most modes, but audit can run on index
+    if not args.keyword and args.mode != "audit":
         parser.error("--keyword is required. Example: --keyword \"best laptop\"")
 
     # ── Dispatch ───────────────────────────────────────────────
@@ -266,6 +324,8 @@ def main() -> None:
             run_cluster(args.keyword, args.niche, args.model)
         elif args.mode == "calendar":
             run_calendar(args.keyword, args.niche, args.months, args.model)
+        elif args.mode == "audit":
+            run_audit(args.keyword, args.model, args.limit)
 
     except KeyboardInterrupt:
         print(c("yellow", "\n\n  ⚠  Stopped by user."))

@@ -329,3 +329,45 @@ Assess topical authority and return JSON:
         _info(f"Write next → {a}")
 
     return result
+
+
+# ──────────────────────────────────────────────────────────────
+#  Module 8 — Content Audit  (V3)
+# ──────────────────────────────────────────────────────────────
+
+def audit_content(title: str, content: str, metadata: dict, model: str) -> dict:
+    _step(f"Auditing Content  →  \"{title[:40]}...\"")
+
+    system = "You are a professional SEO auditor and content quality rater."
+    user = f"""Audit the following article for SEO quality and Information Gain.
+
+Title: {title}
+Metadata: {json.dumps(metadata, indent=2)}
+
+Content:
+{content[:15000]}  # Increased limit for full analysis
+
+Analyze and return JSON:
+{{
+  "quality_score": 0,  // 0-100
+  "seo_check": {{
+    "keyword_optimization": "poor|good|excellent",
+    "structure_quality":     "poor|good|excellent",
+    "readability":           "poor|good|excellent",
+    "internal_linking":      "poor|good|excellent"
+  }},
+  "strengths": ["list of positive aspects"],
+  "weaknesses": ["list of areas for improvement"],
+  "information_gain_score": 0, // 0-100 (uniqueness of insights)
+  "actionable_steps": ["list of 3-5 specific changes to improve ranking"],
+  "suggested_tags": ["5 highly relevant SEO tags"],
+  "is_thin_content": false
+}}"""
+
+    result = call_json(system, user, model)
+
+    _ok(f"Quality Score: {result.get('quality_score', 0)}/100")
+    _ok(f"Info Gain:    {result.get('information_gain_score', 0)}/100")
+    _info(f"Optimization: {result.get('seo_check', {}).get('keyword_optimization', '?')}")
+
+    return result
