@@ -14,10 +14,16 @@
 #    Groq        → https://console.groq.com/keys
 # ──────────────────────────────────────────────────────────────
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 API_KEYS = {
-    "anthropic":  "sk-ant-v7-u6PV6RBen5GQohiyNupoCKl7m1lnCJvG5iegV8WZTljtd6Z2",   # sk-u6PV6RBen5GQohiyNupoCKl7m1lnCJvG5iegV8WZTljtd6Z2
-    "openrouter": "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",   # OpenRouter Key
-    "groq":       "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",   # Groq Key
+    "anthropic":   os.getenv("ANTHROPIC_API_KEY", "sk-ant-v7-u6PV6RBen5GQohiyNupoCKl7m1lnCJvG5iegV8WZTljtd6Z2"),
+    "openrouter":  os.getenv("OPENROUTER_API_KEY", "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"),
+    "groq":        os.getenv("GROQ_API_KEY", "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"),
+    "tokenrouter": os.getenv("TOKENROUTER_API_KEY", "sk-P6O53IC2YVRNoDuqlJIWbgc1R76b2Ju4EPmbJaRXfgW6sMoS"),
 }
 
 # ──────────────────────────────────────────────────────────────
@@ -45,6 +51,9 @@ MODELS = {
     "llama-3.3-70b-groq":   ("groq",        "llama-3.3-70b-versatile"),
     "mixtral-8x7b-groq":    ("groq",        "mixtral-8x7b-32768"),
     "gemma2-9b-groq":       ("groq",        "gemma2-9b-it"),
+
+    # ── TokenRouter ──────────────────────────────────────────
+    "minimax-m3":           ("tokenrouter", "MiniMax-M3"),
 }
 
 # ──────────────────────────────────────────────────────────────
