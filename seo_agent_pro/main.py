@@ -210,7 +210,7 @@ def run_calendar(keyword: str, niche: str, months: int, model: str) -> None:
     _save(f"calendar_{slug}_{ts}.json", json.dumps(result, ensure_ascii=False, indent=2))
 
 
-def run_audit(slug_target: str, model: str) -> None:
+def run_audit(slug_target: str, model: str, limit: int = 5) -> None:
     _header(f"Audit Mode  [{model}]")
 
     index_path = Path("public/content/articles-index.json")
@@ -224,8 +224,8 @@ def run_audit(slug_target: str, model: str) -> None:
     if slug_target:
         targets = [a for a in articles if a["slug"] == slug_target]
     else:
-        print(c("dim", "  · No slug provided, auditing 3 latest articles..."))
-        targets = articles[:3]
+        print(c("dim", f"  · No slug provided, auditing latest {limit} articles..."))
+        targets = articles[:limit]
 
     if not targets:
         print(c("red", f"  ✗ No articles found matching: {slug_target}"))
@@ -257,9 +257,12 @@ def run_audit(slug_target: str, model: str) -> None:
         # Strip frontmatter if possible
         body = re.sub(r'^---[\s\S]*?---', '', content).strip()
 
-        audit_result = agent.audit_content(item.get("title", slug), body, item, model)
-
-        _save(f"audit_{slug}_{_ts()}.json", json.dumps(audit_result, ensure_ascii=False, indent=2))
+        try:
+            audit_result = agent.audit_content(item.get("title", slug), body, item, model)
+            _save(f"audit_{slug}_{_ts()}.json", json.dumps(audit_result, ensure_ascii=False, indent=2))
+        except Exception as e:
+            print(c("red", f"  ✗ Failed to audit {slug}: {e}"))
+            continue
 
 
 # ──────────────────────────────────────────────────────────────
@@ -288,6 +291,7 @@ def main() -> None:
     parser.add_argument("--niche",   default="", help='Content niche, e.g. "technology"')
     parser.add_argument("--model",   default=DEFAULT_MODEL, help=f"Model name from config.py (default: {DEFAULT_MODEL})")
     parser.add_argument("--months",  type=int, default=3, help="Calendar duration in months (default: 3)")
+    parser.add_argument("--limit",   type=int, default=5, help="Number of articles to audit (default: 5)")
     parser.add_argument("--models",  action="store_true", help="List all available models and exit")
     parser.add_argument("--stats",   action="store_true", help="Show memory stats and exit")
 
@@ -305,8 +309,9 @@ def main() -> None:
         mem_module.print_stats(memory)
         return
 
-    # ── Keyword required for all run modes ─────────────────────
-    if not args.keyword:
+    # ── Validation ─────────────────────────────────────────────
+    # Keyword required for most modes, but audit can run on index
+    if not args.keyword and args.mode != "audit":
         parser.error("--keyword is required. Example: --keyword \"best laptop\"")
 
     # ── Dispatch ───────────────────────────────────────────────
@@ -320,7 +325,7 @@ def main() -> None:
         elif args.mode == "calendar":
             run_calendar(args.keyword, args.niche, args.months, args.model)
         elif args.mode == "audit":
-            run_audit(args.keyword, args.model)
+            run_audit(args.keyword, args.model, args.limit)
 
     except KeyboardInterrupt:
         print(c("yellow", "\n\n  ⚠  Stopped by user."))
