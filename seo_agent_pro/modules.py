@@ -345,7 +345,7 @@ Title: {title}
 Metadata: {json.dumps(metadata, indent=2)}
 
 Content:
-{content[:5000]}  # Limit to avoid token overflow
+{content[:15000]}  # Increased limit for full analysis
 
 Analyze and return JSON:
 {{
