@@ -9,6 +9,7 @@ interface ArticleIndexItem {
   title: string;
   slug: string;
   description: string;
+  meta_description?: string;
   excerpt?: string;
   published_at: string;
   category: string;
@@ -91,11 +92,21 @@ async function rebuildIndex() {
       const normalizedSlug = normalizeSlug(rawSlug);
       const id = String(metadata.id || normalizedSlug);
 
+      // Clean up title and description from potential multiline/YAML artifacts
+      const cleanTitle = String(metadata.title || '')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      const cleanMetaDescription = String(metadata.meta_description || metadata.description || metadata.excerpt || '')
+        .replace(/\s+/g, ' ')
+        .trim();
+
       const newItem: ArticleIndexItem = {
         id: id,
-        title: metadata.title as string,
+        title: cleanTitle,
         slug: normalizedSlug,
-        description: (metadata.description || metadata.meta_description || metadata.excerpt || '') as string,
+        description: cleanMetaDescription,
+        meta_description: cleanMetaDescription,
         excerpt: (metadata.excerpt || metadata.description || '') as string,
         published_at: metadata.published_at as string,
         category: (metadata.category || 'Uncategorized') as string,

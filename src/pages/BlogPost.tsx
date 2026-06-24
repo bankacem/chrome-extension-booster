@@ -45,6 +45,17 @@ const parseMarkdown = (text: string) => {
   if (!match) return { frontmatter: {} as Partial<Article>, content: text };
   try {
     const frontmatter = yaml.load(match[1]) as Partial<Article>;
+
+    // Clean up title and other fields from potential YAML artifacts
+    if (frontmatter.title) {
+      frontmatter.title = String(frontmatter.title).replace(/\s+/g, ' ').trim();
+    }
+    if (frontmatter.meta_description) {
+      frontmatter.meta_description = String(frontmatter.meta_description).replace(/\s+/g, ' ').trim();
+    } else if (frontmatter.excerpt) {
+      frontmatter.meta_description = String(frontmatter.excerpt).replace(/\s+/g, ' ').trim();
+    }
+
     const content = match[2].trim();
     return { frontmatter, content };
   } catch (e) {
@@ -177,9 +188,62 @@ const BlogPost = () => {
 
   if (loading) { return <div className="min-h-screen bg-background"><Navbar /><div className="text-center pt-32">Loading...</div><Footer /></div>; }
 
+  const schemaData = article.title ? {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.meta_description || article.excerpt,
+    "image": article.featured_image ? resolveImagePath(article.featured_image) : undefined,
+    "author": {
+      "@type": "Person",
+      "name": article.author || "Admin"
+    },
+    "datePublished": article.published_at,
+    "dateModified": article.updated_at || article.published_at,
+    "publisher": {
+      "@type": "Organization",
+      "name": "ExtensionTo",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${window.location.origin}/logo.png`
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${window.location.origin}/blog/${article.slug}`
+    }
+  } : null;
+
+  const breadcrumbData = article.title ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": window.location.origin
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": `${window.location.origin}/blog`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": article.title,
+        "item": `${window.location.origin}/blog/${article.slug}`
+      }
+    ]
+  } : null;
+
   return (
     <div className="min-h-screen bg-background">
       <SEO title={article.title} description={article.meta_description || article.excerpt || undefined} canonicalPath={`/blog/${article.slug}`} ogType="article" />
+      {schemaData && <SchemaMarkup data={schemaData} />}
+      {breadcrumbData && <SchemaMarkup data={breadcrumbData} />}
       <Navbar />
       <main className="pt-24 pb-16">
         <article className="container mx-auto max-w-4xl px-4">
