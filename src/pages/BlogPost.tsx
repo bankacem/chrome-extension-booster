@@ -180,6 +180,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO title={article.title} description={article.meta_description || article.excerpt || undefined} canonicalPath={`/blog/${article.slug}`} ogType="article" />
+      {article.schema && <SchemaMarkup data={article.schema} />}
       <Navbar />
       <main className="pt-24 pb-16">
         <article className="container mx-auto max-w-4xl px-4">

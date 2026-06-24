@@ -22,6 +22,7 @@ interface ArticleIndexItem {
   keywords?: string[];
   canonicalPath?: string;
   updated_at: string;
+  schema?: any;
 }
 
 const articlesDir = path.join(process.cwd(), 'public', 'content', 'articles');
@@ -73,7 +74,8 @@ async function rebuildIndex() {
         continue;
       }
 
-      const metadata = yaml.load(match[1]) as Record<string, unknown>;
+      const metadata = yaml.load(match[1]) as Record<string, any>;
+      const content = match[2] || '';
       const status = String(metadata.status || '').toLowerCase();
 
       if (status !== 'published') {
@@ -91,12 +93,23 @@ async function rebuildIndex() {
       const normalizedSlug = normalizeSlug(rawSlug);
       const id = String(metadata.id || normalizedSlug);
 
+      // Extract a clean snippet from content as a final fallback
+      const contentSnippet = content
+        .replace(/---[\s\S]*?---/, '') // Remove frontmatter if it was somehow still there
+        .replace(/<[^>]*>/g, '') // Remove HTML tags
+        .replace(/#+\s+/g, '') // Remove Markdown headers
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Remove Markdown links but keep text
+        .replace(/[*_`]/g, '') // Remove formatting
+        .replace(/\s+/g, ' ') // Normalize whitespace
+        .trim()
+        .substring(0, 160);
+
       const newItem: ArticleIndexItem = {
         id: id,
-        title: metadata.title as string,
+        title: (metadata.title || normalizedSlug.replace(/-/g, ' ')) as string,
         slug: normalizedSlug,
-        description: (metadata.description || metadata.meta_description || metadata.excerpt || '') as string,
-        excerpt: (metadata.excerpt || metadata.description || '') as string,
+        description: (metadata.meta_description || metadata.excerpt || metadata.description || contentSnippet || '') as string,
+        excerpt: (metadata.excerpt || metadata.meta_description || metadata.description || contentSnippet || '') as string,
         published_at: metadata.published_at as string,
         category: (metadata.category || 'Uncategorized') as string,
         author: (metadata.author || 'Admin') as string,
@@ -108,7 +121,8 @@ async function rebuildIndex() {
         tags: (metadata.tags || []) as string[],
         keywords: (metadata.keywords || []) as string[],
         canonicalPath: (metadata.canonicalPath || `/blog/${normalizedSlug}`) as string,
-        updated_at: (metadata.updated_at || metadata.published_at || new Date().toISOString()) as string
+        updated_at: (metadata.updated_at || metadata.published_at || new Date().toISOString()) as string,
+        schema: metadata.schema
       };
 
       // Deduplication by ID — keep newest
