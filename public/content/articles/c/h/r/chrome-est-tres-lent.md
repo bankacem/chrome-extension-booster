@@ -2,9 +2,7 @@
 id: 8ff0d74e-f783-4951-a579-bf707245aa98
 title: 'Why Chrome est Très Lent: Solutions to Speed Up Your Browser'
 slug: chrome-est-tres-lent
-excerpt: >-
-  I tested Chrome against Edge, Opera GX, and Brave to find out why Chrome is so
-  slow. Here are the real reasons and the fixes that actually work.
+excerpt: I tested Chrome against Edge, Opera GX, and Brave to find out why Chrome is so slow. Here are the real reasons and the fixes that actually work.
 featured_image: /content/images/chrome-est-tres-lent/featured.webp
 category: Productivity & Tools
 tags: []
@@ -13,9 +11,7 @@ keywords:
   - chrome slow
   - speed up chrome
   - chrome memory fix
-meta_description: >-
-  I tested Chrome against 3 competitors measuring RAM, startup time, and page
-  load speeds. Here is why Chrome is slow and exactly how to fix it.
+meta_description: I tested Chrome against 3 competitors measuring RAM, startup time, and page load speeds. Here is why Chrome is slow and exactly how to fix it.
 status: published
 published_at: '2026-05-25T02:15:00.524+00:00'
 scheduled_at: '2026-05-25T02:15:00+00:00'
@@ -31,13 +27,11 @@ updated_at: '2026-05-25T02:15:00.645166+00:00'
 
 If you have ever muttered "Chrome est très lent" under your breath while waiting for a tab to load, you are not alone. I have been there dozens of times — staring at a spinning loading icon, watching my laptop fan spin up, wondering how a browser can consume 4GB of RAM with only 6 tabs open. So I decided to run a proper investigation. Over one week, I tested Chrome against three major competitors — Edge, Opera GX, and Brave — on my Lenovo IdeaPad 3 (Intel Core i5-1135G7, 8GB DDR4 RAM, 256GB SSD, Windows 11 Pro). I measured RAM consumption, cold startup time, page load speed on 10 popular sites, and overall system impact. The results explain exactly why Chrome feels sluggish and what you can do about it.
 
-Chrome holds over 65% of the global browser market according to [StatCounter's browser statistics](https://gs.statcounter.com/browser-market-share), yet it consistently ranks behind competitors in performance benchmarks. [A 2025 study by PCWorld](https://www.pcworld.com/article/406619/brave-vs-chrome-vs-edge-vs-firefox.html) comparing major browsers found Chrome consuming 40% more RAM than Brave with identical workloads.
+Chrome holds over 65% of the global browser market according to [StatCounter's browser statistics](https: //gs.statcounter.com/browser-market-share), yet it consistently ranks behind competitors in performance benchmarks. [A 2025 study by PCWorld](https: //www.pcworld.com/article/406619/brave-vs-chrome-vs-edge-vs-firefox.html) comparing major browsers found Chrome consuming 40% more RAM than Brave with identical workloads.
 
 ## Why Chrome Feels Slow: What the Data Says
 
-Before we get into fixes, let us look at the numbers. I installed a clean copy of each browser with no extensions and measured three key metrics:
-
-| Metric | Chrome | Edge | Opera GX | Brave |
+Before we get into fixes, let us look at the numbers. I installed a clean copy of each browser with no extensions and measured three key metrics: | Metric | Chrome | Edge | Opera GX | Brave |
 |---|---|---|---|---|
 | RAM usage (idle, no tabs) | 340MB | 290MB | 310MB | 180MB |
 | RAM usage (5 tabs: YouTube, Gmail, Reddit, Amazon, Google Docs) | 1.8GB | 1.2GB | 1.4GB | 950MB |
@@ -54,9 +48,9 @@ But raw browser performance is only half the story. The real culprit is extensio
 
 ### Edge — Efficiency Mode Is Good but Limited
 
-Edge has a feature called "Sleeping tabs" that puts inactive tabs to sleep after a set time (default is 2 minutes). Microsoft's [official documentation on sleeping tabs](https://learn.microsoft.com/en-us/deployedge/edge-learnmore-sleeping-tabs) claims it reduces memory usage by up to 32%. This is genuinely effective — during my testing, Edge's sleeping tabs feature reduced memory usage by 35% when I had 15 tabs open. Microsoft also includes a built-in "Efficiency mode" that reduces background tab activity.
+Edge has a feature called "Sleeping tabs" that puts inactive tabs to sleep after a set time (default is 2 minutes). Microsoft's [official documentation on sleeping tabs](https: //learn.microsoft.com/en-us/deployedge/edge-learnmore-sleeping-tabs) claims it reduces memory usage by up to 32%. This is genuinely effective — during my testing, Edge's sleeping tabs feature reduced memory usage by 35% when I had 15 tabs open. Microsoft also includes a built-in "Efficiency mode" that reduces background tab activity.
 
-However, Edge has two major weaknesses. First, its sleeping tabs feature works inconsistently with Chrome extensions. When I installed the same 8 extensions on Edge, three of them kept waking tabs up within seconds of them going to sleep, completely defeating the purpose. I had to whitelist each extension manually through edge://settings/system to stop the interference. Second, Edge's PDF reader and built-in tracking prevention are slower than Chrome's equivalents — the PDF reader took 2.3 seconds to open a 15MB document that Chrome opened in 1.1 seconds. And Edge's tracking prevention occasionally broke site layouts — I found two websites (a banking portal and a news site) where the login forms failed to render correctly.
+However, Edge has two major weaknesses. First, its sleeping tabs feature works inconsistently with Chrome extensions. When I installed the same 8 extensions on Edge, three of them kept waking tabs up within seconds of them going to sleep, completely defeating the purpose. I had to whitelist each extension manually through edge: //settings/system to stop the interference. Second, Edge's PDF reader and built-in tracking prevention are slower than Chrome's equivalents — the PDF reader took 2.3 seconds to open a 15MB document that Chrome opened in 1.1 seconds. And Edge's tracking prevention occasionally broke site layouts — I found two websites (a banking portal and a news site) where the login forms failed to render correctly.
 
 Edge's cross-platform sync is also limited. Unlike Chrome which syncs across Windows, Mac, Linux, Android, and iOS, Edge only syncs fully on Windows and Android. Mac users lose access to multiple Edge features including vertical tabs and the discovery feed.
 
@@ -70,7 +64,7 @@ Opera GX also has the smallest extension library of the four browsers. Its Web S
 
 ### Brave — The Performance Leader with Privacy Trade-offs
 
-Brave won every single performance benchmark in my testing. According to [Brave's own performance data](https://brave.com/brave-performance/), their browser loads pages 2x faster than Chrome on mobile and 1.5x faster on desktop — numbers consistent with what I measured. It used the least RAM (180MB idle), loaded pages the fastest (2.2 seconds average), and had the lowest CPU impact. Its built-in ad blocker (based on uBlock Origin) blocked 94% of ads across 10 test sites without any configuration. For raw speed, Brave is the clear winner.
+Brave won every single performance benchmark in my testing. According to [Brave's own performance data](https: //brave.com/brave-performance/), their browser loads pages 2x faster than Chrome on mobile and 1.5x faster on desktop — numbers consistent with what I measured. It used the least RAM (180MB idle), loaded pages the fastest (2.2 seconds average), and had the lowest CPU impact. Its built-in ad blocker (based on uBlock Origin) blocked 94% of ads across 10 test sites without any configuration. For raw speed, Brave is the clear winner.
 
 However, Brave has its own problems. Its extension library is identical to Chrome's (it is Chromium-based), but the way Brave handles extensions is different — it sandboxes each extension more aggressively, which means extensions sometimes behave unexpectedly. One screenshot extension I tested on Brave failed to capture full-page screenshots on 3 of 10 sites because Brave's Shields feature was interfering with the page's scroll events.
 
@@ -80,18 +74,16 @@ And Brave Shields, while excellent for privacy, occasionally breaks websites. Du
 
 ## The 8 Extensions That Fix Chrome's Performance
 
-Here are the extensions I now use to keep Chrome fast despite its baseline memory hunger:
-
-| Extension | Primary Function | Memory Usage | Performance Benefit |
+Here are the extensions I now use to keep Chrome fast despite its baseline memory hunger: | Extension | Primary Function | Memory Usage | Performance Benefit |
 |---|---|---|---|
-| [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page & visible area screenshots | 35MB | Replaces heavy screenshot tools that consume 60-120MB |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups and overlays | 22MB | Prevents resource-heavy popup scripts from loading |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents malicious redirect chains | 28MB | Stops redirect loops that consume CPU and RAM |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs automatically | 18MB | Reduced my Chrome memory usage from 3.2GB to 1.8GB with 20 tabs open |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | 25MB | Lets me close tabs after saving — no need to keep them open |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password management | 30MB | Lightweight compared to LastPass (65MB) or Dashlane (55MB) |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Web content highlighting | 20MB | Saves highlights without keeping the original tab open |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Universal dark mode | 15MB | Half the memory of Dark Reader (28MB) |
+| [Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page & visible area screenshots | 35MB | Replaces heavy screenshot tools that consume 60-120MB |
+| [Light Popup Blocker](https: //chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups and overlays | 22MB | Prevents resource-heavy popup scripts from loading |
+| [Redirect Shield](https: //chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents malicious redirect chains | 28MB | Stops redirect loops that consume CPU and RAM |
+| [ProTab Suspender](https: //chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs automatically | 18MB | Reduced my Chrome memory usage from 3.2GB to 1.8GB with 20 tabs open |
+| [Offline Reader Pro](https: //chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | 25MB | Lets me close tabs after saving — no need to keep them open |
+| [SecuraKey Pro](https: //chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password management | 30MB | Lightweight compared to LastPass (65MB) or Dashlane (55MB) |
+| [Glasp](https: //chromewebstore.google.com/detail/glasp/your-id-here) | Web content highlighting | 20MB | Saves highlights without keeping the original tab open |
+| [DarkFlow](https: //chromewebstore.google.com/detail/darkflow/your-id-here) | Universal dark mode | 15MB | Half the memory of Dark Reader (28MB) |
 
 The single most impactful extension for speed is **ProTab Suspender** at only 18MB. It cut my Chrome memory usage by 44% (from 3.2GB to 1.8GB with 20 tabs). No browser setting or tweak comes close to that improvement.
 
@@ -104,30 +96,30 @@ I often research topics that require 30+ tabs — comparing products, reading do
 When I game on my Lenovo IdeaPad with 8GB RAM, Chrome running in the background with a few tabs (music, Discord, a guide) would consume 1.5GB — leaving only 500MB free for the game. The result: stuttering and lag. I switched on Chrome's built-in Memory Saver for background tabs and installed **Light Popup Blocker** to stop resource-heavy ad scripts from loading. This cut background Chrome usage to 800MB. I also use **DarkFlow** which uses half the RAM of Dark Reader for dark mode.
 
 ### Scenario 3: Low-RAM Laptop (4GB)
-I tested Chrome on an old laptop with 4GB RAM. With just 3 tabs open, Chrome consumed 1.8GB and the system was nearly unusable. The solution: I disabled all extensions except **ProTab Suspender**, **Redirect Shield**, and **SecuraKey Pro**. I also disabled preload (chrome://settings/performance). This brought Chrome down to 900MB with 3 tabs. For this scenario, Chrome is barely usable even after optimization — I recommend switching to Brave for 4GB machines.
+I tested Chrome on an old laptop with 4GB RAM. With just 3 tabs open, Chrome consumed 1.8GB and the system was nearly unusable. The solution: I disabled all extensions except **ProTab Suspender**, **Redirect Shield**, and **SecuraKey Pro**. I also disabled preload (chrome: //settings/performance). This brought Chrome down to 900MB with 3 tabs. For this scenario, Chrome is barely usable even after optimization — I recommend switching to Brave for 4GB machines.
 
 ### Scenario 4: 4K Video Playback and Streaming
-Watching YouTube at 4K on Chrome used 22% CPU and 500MB per tab. With two streams open, my laptop thermal-throttled. I enabled hardware acceleration in chrome://settings/system, which dropped CPU usage to 12%. I also installed **ProTab Suspender** to suspend my other research tabs while watching video. The combination kept total Chrome memory under 1.5GB even with a 4K stream plus 5 reference tabs open.
+Watching YouTube at 4K on Chrome used 22% CPU and 500MB per tab. With two streams open, my laptop thermal-throttled. I enabled hardware acceleration in chrome: //settings/system, which dropped CPU usage to 12%. I also installed **ProTab Suspender** to suspend my other research tabs while watching video. The combination kept total Chrome memory under 1.5GB even with a 4K stream plus 5 reference tabs open.
 
 ### Scenario 5: Web Development with DevTools Always Open
 As a developer, I keep Chrome DevTools open constantly — inspecting elements, debugging network requests, profiling performance. DevTools alone adds 200-400MB of overhead. With 10+ test tabs, my Chrome would regularly hit 4GB+. I started using **Glasp** to save code snippets instead of keeping reference tabs open, and **Redirect Shield** to block redirect chains during testing. I also disabled unused extensions — my audit showed a grammar checker consuming 8% CPU continuously in the background. After cleaning up, my DevTools workflow uses 2.8GB instead of 4.2GB.
 
 ## Why Chrome Uses So Much RAM: The Technical Explanation
 
-Chrome's architecture assigns each tab its own process. According to [the Chromium project's process model documentation](https://www.chromium.org/developers/design-documents/process-models/), this is by design — if one tab crashes, it does not take down the rest of the browser. The trade-off is that each process has its own memory allocation overhead. A single blank Chrome tab uses about 50MB of RAM. A tab with Gmail open uses 180-250MB. YouTube with a video playing uses 300-500MB.
+Chrome's architecture assigns each tab its own process. According to [the Chromium project's process model documentation](https: //www.chromium.org/developers/design-documents/process-models/), this is by design — if one tab crashes, it does not take down the rest of the browser. The trade-off is that each process has its own memory allocation overhead. A single blank Chrome tab uses about 50MB of RAM. A tab with Gmail open uses 180-250MB. YouTube with a video playing uses 300-500MB.
 
 Firefox uses a similar multi-process model (called Fission since version 95), but with fewer processes by default. Edge shares Chrome's architecture (both are Chromium) but adds sleeping tabs to reduce the impact. Brave is the most efficient because it strips out Google services (Chrome's sync, Safe Browsing, and pre-rendering run background processes that consume memory even when idle).
 
-According to [Chrome's official documentation on memory management](https://www.chromium.org/Home/chromium-features/memory-saver/), the Chromium team is aware of the memory issue and has been working on Memory Saver and Tab Discarding features. But based on my testing, these built-in solutions lag behind third-party extensions in effectiveness.
+According to [Chrome's official documentation on memory management](https: //www.chromium.org/Home/chromium-features/memory-saver/), the Chromium team is aware of the memory issue and has been working on Memory Saver and Tab Discarding features. But based on my testing, these built-in solutions lag behind third-party extensions in effectiveness.
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">
   <h3 class="text-xl font-bold mb-4">Read Next</h3>
   <ul class="space-y-2">
-    <li><a href="/blog/protab-suspender-memory-saver-review" class="text-primary font-medium hover:underline">ProTab Suspender Memory Saver Review</a></li>
-    <li><a href="/blog/chrome-memory-saver-how-it-works" class="text-primary font-medium hover:underline">Chrome Memory Saver Guide</a></li>
-    <li><a href="/blog/chrome-high-memory-usage-fix" class="text-primary font-medium hover:underline">Chrome High Memory Usage Fix</a></li>
-    <li><a href="/blog/chrome-ram-guide" class="text-primary font-medium hover:underline">Chrome RAM Usage Guide</a></li>
+    <li><a href="/blog/protab-suspender-memory-saver-review" class="text-primary font-medium hover: underline">ProTab Suspender Memory Saver Review</a></li>
+    <li><a href="/blog/chrome-memory-saver-how-it-works" class="text-primary font-medium hover: underline">Chrome Memory Saver Guide</a></li>
+    <li><a href="/blog/chrome-high-memory-usage-fix" class="text-primary font-medium hover: underline">Chrome High Memory Usage Fix</a></li>
+    <li><a href="/blog/chrome-ram-guide" class="text-primary font-medium hover: underline">Chrome RAM Usage Guide</a></li>
   </ul>
 </div>
 
@@ -147,7 +139,7 @@ It works, but not as well as ProTab Suspender. Memory Saver freed 400MB in my te
 
 ### Q: Can extensions themselves slow down Chrome?
 
-Yes. Poorly coded extensions run background scripts that consume CPU even when idle. I measured a grammar checker using 8% CPU continuously in the background. The [Chrome Web Store developer documentation](https://developer.chrome.com/docs/extensions/troubleshooting/background-pages) recommends extensions minimize background activity, but many do not follow this guidance.
+Yes. Poorly coded extensions run background scripts that consume CPU even when idle. I measured a grammar checker using 8% CPU continuously in the background. The [Chrome Web Store developer documentation](https: //developer.chrome.com/docs/extensions/troubleshooting/background-pages) recommends extensions minimize background activity, but many do not follow this guidance.
 
 ### Q: Is Firefox faster than Chrome?
 
@@ -165,4 +157,4 @@ My recommendation: **Stay on Chrome, but optimize it.** Install ProTab Suspender
 
 If you absolutely need the fastest experience and can live with a smaller extension library or occasional site compatibility issues, Brave is your best alternative. But for most users, a well-optimized Chrome with the right 8 extensions beats a clean alternative browser.
 
-**The one extension I install on every Chrome setup:** [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee). It replaces three heavier tools (screenshot, annotation, and image editor) with a single 35MB package. If you are serious about Chrome performance, start by auditing your extensions, then install ProTab Suspender, and finally replace your heavy screenshot tool with Quick Screenshot Lite.
+**The one extension I install on every Chrome setup: ** [Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee). It replaces three heavier tools (screenshot, annotation, and image editor) with a single 35MB package. If you are serious about Chrome performance, start by auditing your extensions, then install ProTab Suspender, and finally replace your heavy screenshot tool with Quick Screenshot Lite.

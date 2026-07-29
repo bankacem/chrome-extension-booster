@@ -1,0 +1,158 @@
+=== READ-ONLY SEO & Technical Audit ===
+
+Image base dirs present on disk:
+  - public/content/images
+  - public/images
+  - public
+articles-index.json present: true
+
+Scanned 763 markdown files under public/content/articles
+
+## Health Summary
+
+| Check | Affected | % of total |
+| --- | --- | --- |
+| Missing title | 1 | 0.1% |
+| Missing/empty featured_image (frontmatter) | 0 | 0.0% |
+| Missing meta description | 1 | 0.1% |
+| Meta description too short (<120) | 122 | 16.0% |
+| Meta description too long (>160) | 4 | 0.5% |
+| Articles with broken internal links | 394 | 51.6% |
+| Articles with malformed external links | 0 | 0.0% |
+| Articles with broken images | 58 | 7.6% |
+| Orphan articles (0 internal links) | 218 | 28.6% |
+
+## Top-Priority Problem Articles
+
+
+Missing title (1):
+  - public/content/articles/1/1/1/1111111111111111111111111111111.md
+
+Missing meta description (1):
+  - public/content/articles/1/1/1/1111111111111111111111111111111.md
+
+Meta description too short (<120 chars) (122):
+  - public/content/articles/h/o/w/how-to-install-chrome-extensions-for-free-without-wrecking-your-browser.md
+  - public/content/articles/h/o/w/how-to-install-pro-chrome-extensions-the-definitive-guide.md
+  - public/content/articles/h/o/w/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-589870.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-376255.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-e7d32b.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-b5d389.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-fb8eb4.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-fb3c1d.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-58aa93.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-602196.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-daefb7.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-57250b.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-ba8fd9.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-e1f4a6.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-7479f6.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-9d7e88.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-893918.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-aa2cb9.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-4dd713.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-8ede21.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-8e6355.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-80b899.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-266737.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-823246.md
+  ...and 97 more
+
+Meta description too long (>160 chars) (4):
+  - public/content/articles/h/o/w/how-to-fix-chrome-high-memory-usage-2026-complete-guide.md
+  - public/content/articles/a/d/b/adblock-chrome-android-complete-guide-2026.md
+  - public/content/articles/b/e/s/best-chrome-privacy-extensions-2026-complete-guide.md
+  - public/content/articles/b/e/s/best-chrome-screenshot-extensions-2026-complete-guide.md
+
+Missing/empty featured_image (0):
+  (none)
+
+Broken internal links (394):
+  - public/content/articles/l/e/m/lemur-browser-vs-kiwi-browser-a-comprehensive-comparison-for-enhanced-browsing-experience-mmthov1pg80.md -> /blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa, /blog/cors-chrome-7, /blog/chrome-web-store-2, /blog/how-to-install-chrome-extensions-for-free
+  - public/content/articles/l/i/g/lighthouse-audit-chrome-extension-guide-unlocking-the-secrets-to-a-faster-and-more-efficient-website-mmtm0ft1uyc.md -> /blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa
+  - public/content/articles/l/i/g/lightweight-ad-blocker-vs-ghostery-the-ultimate-comparison-for-a-seamless-browsing-experience-mll9bqvypx6.md -> /blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025, /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-run-chrome-extensions-on-brave-android-a-step-by-step-guide-mmthozkhpgn.md -> /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-install-chrome-extensions-for-free-without-wrecking-your-browser.md -> /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-take-high-quality-screenshots-for-tutorials-1.md -> /blog/creating-financial-models-with-formula-builder-pro-7
+  - public/content/articles/h/o/w/how-to-use-meta-pixel-helper-for-conversion-tracking-a-step-by-step-guide-mmb6y3xkav4.md -> /blog/cors-chrome-7, /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-update-chrome-extensions-a-step-by-step-guide-to-enhancing-your-browser-experience-mmdrxyqby0o.md -> /blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa, /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-create-complex-excel-formulas-easily.md -> /blog/creating-financial-models-with-formula-builder-pro-7
+  - public/content/articles/h/o/w/how-to-block-ads-on-chrome-android-a-step-by-step-guide-to-ad-free-browsing-mmtld1z2kti.md -> /blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa, /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue.md -> /blog/cors-chrome-7, /blog/noscript-chrome, /blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025
+  - public/content/articles/h/o/w/how-to-capture-and-share-screenshots-instantly-blogging-web-design-bug-reporting-student-projects-7.md -> /blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025
+  - public/content/articles/h/o/w/how-to-reduce-chrome-ram-usage-without-extensions-a-comprehensive-guide-mmb7srpyinx.md -> /blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa, /blog/cors-chrome-7
+  - public/content/articles/h/o/w/how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management.md -> /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-remove-chrome-extensions-a-step-by-step-guide-to-cleaning-up-your-browser-mmdrxz38v9j.md -> /blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa, /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-disable-chrome-extensions-a-step-by-step-guide-to-simplifying-your-browser-mmdrxyx6he9.md -> /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-use-desktop-extensions-on-phone-a-step-by-step-guide-mmthowug4hd.md -> /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-fix-chrome-high-memory-usage-on-windows-11.md -> /blog/creating-financial-models-with-formula-builder-pro-7, /blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025
+  - public/content/articles/h/o/w/how-to-install-idm-extension-in-chrome-manually-2026-a-step-by-step-guide-mmb6y42ngkw.md -> /blog/chrome-web-store-2, /blog/cors-chrome-7
+  - public/content/articles/h/o/w/how-to-store-passwords-safely-in-your-browser.md -> /blog/privacy-badger-chrome-partial, /blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025
+  - public/content/articles/h/o/w/how-to-reduce-chrome-cpu-usage-a-comprehensive-guide-to-a-faster-browser-mmthx96a4yd.md -> /blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa
+  - public/content/articles/h/o/w/how-to-add-extensions-to-chrome-mobile-a-step-by-step-guide-mmthoys728s.md -> /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-install-chrome-extensions-manually-a-step-by-step-guide-mmdrxyk1fy1.md -> /blog/chrome-web-store-2
+  - public/content/articles/h/o/w/how-to-speed-up-chrome-on-low-end-pc-expert-tips-and-tricks-mmtizzi7h41.md -> /blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa, /blog/cors-chrome-7
+  - public/content/articles/h/o/w/how-to-use-index-match-in-excel-like-a-pro-3.md -> /blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025
+  ...and 369 more
+
+Malformed external links (0):
+  (none)
+
+Broken images (58):
+  - public/content/articles/h/o/w/how-to-add-in-chrome-a-comprehensive-guide-to-enhancing-your-browsing-experience-mm3umic5das.md -> add-to-chrome.jpg
+  - public/content/articles/h/o/w/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide.md -> https: //extensionto.com/wp-content/uploads/2025/12/How-to-Fix-Chrome-High-Memory-Usage-The-Ultimate-2026-Speed-Up-Guide-1024x585.png
+  - public/content/articles/d/a/r/dark-mode-switcher-for-all-websites-the-ultimate-guide-to-enhanced-browsing-experience-mo4p804c88h.md -> placeholder-image.jpg
+  - public/content/articles/q/u/i/quick-screenshot-capture-extension.md -> /content/images/quick-screenshot-capture-extension/featured.webp
+  - public/content/articles/s/c/r/screenshot-tools-chrome-comparison.md -> /content/images/screenshot-tools-chrome-comparison/featured.webp
+  - public/content/articles/s/u/p/supercharge-your-workflow-the-ultimate-productivity-chrome-extensions-guide.md -> https: //extensionto.com/wp-content/uploads/2025/12/image-1024x559.jpeg
+  - public/content/articles/s/e/c/secure-password-manager-extensions-protecting-your-online-identity-in-the-digital-age-mo4p1yusuqo.md -> placeholder-image.jpg
+  - public/content/articles/s/t/e/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era.md -> https: //extensionto.com/wp-content/uploads/2025/12/Step-by-Step-Chrome-Extensions-Tutorial-Building-for-the-2025-Manifest-V3-Era-1024x572.png
+  - public/content/articles/s/t/r/streamline-your-social-media-management-with-the-best-chrome-extension-for-scheduling-posts-mmdsutjnkbw.md -> placeholder-image.jpg
+  - public/content/articles/c/h/r/chrome-screen-capture-guide.md -> /content/images/chrome-screen-capture-guide/featured.webp
+  - public/content/articles/c/h/r/chrome-screenshot-tutorial.md -> /content/images/chrome-screenshot-tutorial/featured.webp
+  - public/content/articles/c/a/p/capture-screen-chrome-guide.md -> /content/images/capture-screen-chrome-guide/featured.webp
+  - public/content/articles/c/r/e/creating-financial-models-formula-builder-pro.md -> /content/images/creating-financial-models-formula-builder-pro/featured.webp
+  - public/content/articles/c/r/o/cross-browser-sync-tools-revolutionizing-your-browsing-experience-mo4p1d3gxi0.md -> cross-browser-sync-tools.jpg
+  - public/content/articles/u/n/l/unlocking-the-potential-of-voice-to-text-browser-tools-a-game-changer-for-modern-browsing-mo4si1d4yva.md -> voice-to-text-browser-tools.jpg
+  - public/content/articles/u/n/l/unlock-the-power-of-automatic-price-tracker-extensions-a-comprehensive-guide-mo4p3anj8mh.md -> automatic-price-tracker-extensions.jpg
+  - public/content/articles/u/n/l/unlocking-the-power-of-social-media-the-ultimate-guide-to-chrome-extension-for-social-analytics-mmdsutrnj8g.md -> social-analytics-dashboard.jpg
+  - public/content/articles/u/n/l/unlocking-efficiency-the-ultimate-guide-to-workflow-automation-browser-extensions-mo4sku5p23c.md -> placeholder-image.jpg
+  - public/content/articles/u/n/l/unlocking-access-to-scientific-knowledge-the-power-of-sci-hub-extension-mm3umi6njnq.md -> placeholder-image.jpg
+  - public/content/articles/u/n/l/unlock-efficient-coding-web-developer-debugging-tools-chrome-mo4p3a5tyl3.md -> placeholder-image.jpg
+  - public/content/articles/u/n/l/unlock-the-power-of-youtube-audio-the-ultimate-guide-to-youtube-audio-extension-mm3umin7mtl.md -> youtube-audio-extension.jpg
+  - public/content/articles/u/n/l/unlocking-the-full-potential-of-your-browser-a-comprehensive-guide-to-finding-the-best-extension-to-mm3umj4cbtf.md -> placeholder-image.jpg
+  - public/content/articles/u/n/l/unlocking-the-power-of-to-extension-a-comprehensive-guide-to-streamlining-your-online-experience-mm3umjk8o8t.md -> placeholder-image.jpg
+  - public/content/articles/u/n/l/unlocking-efficiency-the-best-spreadsheets-software-for-small-business-mm3umhvaeco.md -> placeholder-image.jpg
+  - public/content/articles/u/n/l/unlocking-the-full-potential-of-your-browser-a-comprehensive-guide-to-extensiontocom-mm3umiykxi3.md -> placeholder-image.jpg
+  ...and 33 more
+
+Orphan articles (218):
+  - public/content/articles/h/o/w/how-to-add-in-chrome-a-comprehensive-guide-to-enhancing-your-browsing-experience-mm3umic5das.md
+  - public/content/articles/h/o/w/how-to-fix-chrome-high-memory-usage-2026-complete-guide.md
+  - public/content/articles/h/o/w/how-to-fix-chrome-memory-2026.md
+  - public/content/articles/d/u/a/dualless-chrome-7.md
+  - public/content/articles/d/e/s/desktop-instagram-chrome-7.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-589870.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-376255.md
+  - public/content/articles/d/e/e/deezer-extension-chrome-5.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-e7d32b.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-b5d389.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-fb8eb4.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-fb3c1d.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-58aa93.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-602196.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-daefb7.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-57250b.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-ba8fd9.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-e1f4a6.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-7479f6.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-9d7e88.md
+  - public/content/articles/d/e/e/deezer-extension-4.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-893918.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-aa2cb9.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-4dd713.md
+  - public/content/articles/d/e/e/deepseek-markdown-20260603-8ede21.md
+  ...and 193 more
+
+=== End of audit (no files were modified) ===

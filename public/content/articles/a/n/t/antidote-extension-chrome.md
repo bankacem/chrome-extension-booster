@@ -2,10 +2,7 @@
 id: c31f1016-b24b-411f-9555-14f85d20ec50
 title: 'Antidote Extension Chrome Review 2026: Best French Writing Assistant?'
 slug: antidote-extension-chrome
-excerpt: >-
-  I tested Antidote Chrome extension for two weeks of French and English
-  writing. Here is how it compares to Grammarly and ProWritingAid, and which
-  companion extensions every writer needs.
+excerpt: I tested Antidote Chrome extension for two weeks of French and English writing. Here is how it compares to Grammarly and ProWritingAid, and which companion extensions every writer needs.
 featured_image: /content/images/antidote-extension-chrome/featured.webp
 category: Productivity & Tools
 tags:
@@ -18,7 +15,7 @@ keywords:
   - Antidote vs Grammarly
   - French writing tool
   - Chrome grammar checker
-meta_description: "Antidote Chrome extension reviewed after 14 days. See how it compares to Grammarly and ProWritingAid for French and English writing, and which companions..."
+meta_description: Antidote Chrome extension reviewed after 14 days. See how it compares to Grammarly and ProWritingAid for French and English writing, and which companions...
 status: published
 published_at: '2026-06-06T04:00:00.000000+00:00'
 scheduled_at: null
@@ -46,7 +43,7 @@ updated_at: '2026-06-06T04:00:00.000000+00:00'
 
 Antidote is a writing assistant developed by Druide Informatique, a Canadian company founded in 1993. Unlike Grammarly which focuses primarily on English, Antidote's strength is French — it includes 11 French dictionaries covering synonyms, antonyms, conjugations, word families, compound words, proper names, and regionalisms from France, Canada, Belgium, and Switzerland. It has 410 French grammar rules and 30 interactive guidebooks covering everything from typography to gender-neutral writing. It also supports English with full dictionaries, a grammar checker, and a thesaurus.
 
-I tested Antidote's Chrome extension for 14 days across Google Docs, Gmail, WordPress, LinkedIn, Twitter, and several French-language news sites (Le Monde, Le Figaro, Radio-Canada). I ran 20+ texts through it — some in English, some in French, some mixed (franglais) — and compared results against Grammarly and ProWritingAid on the same texts. I calculated error detection rates by intentionally inserting 50 common grammar mistakes into a French test document and counting how many each tool caught. For reference, I also read [Antidote's official site](https://www.antidote.info/en) and [comparison reviews on writing tool forums](https://www.reddit.com/r/French/comments/antidote_vs_grammarly/).
+I tested Antidote's Chrome extension for 14 days across Google Docs, Gmail, WordPress, LinkedIn, Twitter, and several French-language news sites (Le Monde, Le Figaro, Radio-Canada). I ran 20+ texts through it — some in English, some in French, some mixed (franglais) — and compared results against Grammarly and ProWritingAid on the same texts. I calculated error detection rates by intentionally inserting 50 common grammar mistakes into a French test document and counting how many each tool caught. For reference, I also read [Antidote's official site](https: //www.antidote.info/en) and [comparison reviews on writing tool forums](https: //www.reddit.com/r/French/comments/antidote_vs_grammarly/).
 
 ## Features I Tested {#features}
 
@@ -81,21 +78,19 @@ Antidote wins for French writing by a wide margin. Grammarly wins for English. P
 
 ## Companion Extensions for Writers {#companions}
 
-A good writing assistant is one part of a writer's toolkit. Here is what else I use:
+A good writing assistant is one part of a writer's toolkit. Here is what else I use: **Screenshot your writing.** Before submitting important text, capture it with [Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) so you have a permanent record of your draft. No account, no upload, one click.
 
-**Screenshot your writing.** Before submitting important text, capture it with [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) so you have a permanent record of your draft. No account, no upload, one click.
+**Save research pages for offline writing.** When researching for an article, save reference pages with [Offline Reader Pro](https: //chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) so you can consult them without internet.
 
-**Save research pages for offline writing.** When researching for an article, save reference pages with [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) so you can consult them without internet.
+**Tab management during research.** Writing research means 10+ reference tabs open. [ProTab Suspender](https: //chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) keeps Chrome fast by suspending background tabs.
 
-**Tab management during research.** Writing research means 10+ reference tabs open. [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) keeps Chrome fast by suspending background tabs.
+**Dark mode for writing.** Staring at a bright text editor for hours causes eye strain. [NightShield Pro](https: //chromewebstore.google.com/detail/nightshield-pro/pgjidjlmpacojfolcmeekgnnekmggenm) applies warm dark mode to Google Docs, WordPress, and any writing platform. [DarkFlow](https: //chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) gives per-domain control for sites that need fine-tuning.
 
-**Dark mode for writing.** Staring at a bright text editor for hours causes eye strain. [NightShield Pro](https://chromewebstore.google.com/detail/nightshield-pro/pgjidjlmpacojfolcmeekgnnekmggenm) applies warm dark mode to Google Docs, WordPress, and any writing platform. [DarkFlow](https://chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) gives per-domain control for sites that need fine-tuning.
+**Block redirects from writing resources.** Writing blogs and reference sites often redirect through affiliate links. [Redirect Blocker](https: //chromewebstore.google.com/detail/redirect-blocker/pofolffdhjffglfphiagpbnlegjbnbhp) keeps you on the real page.
 
-**Block redirects from writing resources.** Writing blogs and reference sites often redirect through affiliate links. [Redirect Blocker](https://chromewebstore.google.com/detail/redirect-blocker/pofolffdhjffglfphiagpbnlegjbnbhp) keeps you on the real page.
+**Password management for writing platforms.** Managing multiple writing accounts (Grammarly + Antidote + WordPress + Google) is tedious. [SecuraKey Pro](https: //chromewebstore.google.com/detail/securakey-pro-%E2%80%93-secure-pa/omeencccnkninlofbggfcfiohapajhgi) stores all logins with AES-256 encryption.
 
-**Password management for writing platforms.** Managing multiple writing accounts (Grammarly + Antidote + WordPress + Google) is tedious. [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-%E2%80%93-secure-pa/omeencccnkninlofbggfcfiohapajhgi) stores all logins with AES-256 encryption.
-
-**Block pop-ups on writing sites.** Writing tool documentation and tutorials often have intrusive sign-up pop-ups. [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) blocks them without breaking the writing interface.
+**Block pop-ups on writing sites.** Writing tool documentation and tutorials often have intrusive sign-up pop-ups. [Light Popup Blocker](https: //chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) blocks them without breaking the writing interface.
 
 ## Pricing {#pricing}
 
@@ -105,13 +100,13 @@ The Chrome extension requires the desktop version of Antidote to be installed �
 
 ## Verdict {#verdict}
 
-**Who should buy it:** Anyone who writes in French, especially professionally. Students, translators, journalists, and bilingual professionals will get the most value. The dictionary alone is worth the price if you write in French daily.
+**Who should buy it: ** Anyone who writes in French, especially professionally. Students, translators, journalists, and bilingual professionals will get the most value. The dictionary alone is worth the price if you write in French daily.
 
-**Who should skip it:** English-only writers. Grammarly is better for English and cheaper (free tier). ProWritingAid offers deeper style analysis for the same price.
+**Who should skip it: ** English-only writers. Grammarly is better for English and cheaper (free tier). ProWritingAid offers deeper style analysis for the same price.
 
-**My setup after testing:** Antidote (French + English writing) + Quick Screenshot Lite (capture drafts) + NightShield Pro (dark mode). The three tools together cover writing, saving, and comfort.
+**My setup after testing: ** Antidote (French + English writing) + Quick Screenshot Lite (capture drafts) + NightShield Pro (dark mode). The three tools together cover writing, saving, and comfort.
 
-If you only install one companion extension for Antidote, make it [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee). Before you send that important French email or submit that essay, capture it. One click and you have a permanent copy of your work at its best.
+If you only install one companion extension for Antidote, make it [Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee). Before you send that important French email or submit that essay, capture it. One click and you have a permanent copy of your work at its best.
 
 ## FAQ {#faq}
 

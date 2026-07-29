@@ -1,10 +1,7 @@
 ---
 title: 'ColorZilla for Chrome: Best Color Picker Extension Tested (2026)'
 slug: colorzilla-chrome-color-picker
-excerpt: >-
-  I tested ColorZilla against 5 other color picker extensions for Chrome. Here
-  is which one grabs accurate hex codes from any page, supports eyedropper
-  across iframes, and has the best history features.
+excerpt: I tested ColorZilla against 5 other color picker extensions for Chrome. Here is which one grabs accurate hex codes from any page, supports eyedropper across iframes, and has the best history features.
 featured_image: /content/images/colorzilla-chrome-color-picker/featured.webp
 category: Productivity & Tools
 tags:
@@ -16,7 +13,7 @@ keywords:
   - colorzilla chrome
   - color picker chrome extension
   - eyedropper chrome
-meta_description: "Hands-on comparison of ColorZilla vs 5 color picker Chrome extensions. Tested for eyedropper accuracy, iframe support, palette management, and speed..."
+meta_description: Hands-on comparison of ColorZilla vs 5 color picker Chrome extensions. Tested for eyedropper accuracy, iframe support, palette management, and speed...
 status: published
 published_at: '2026-05-19T06:15:00.460+00:00'
 scheduled_at: '2026-05-19T06:15:00+00:00'
@@ -106,14 +103,14 @@ All six extensions I tested keep color data local. None upload screenshots or co
 
 | Extension | Why You Need It |
 |-----------|-----------------|
-| [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture design mockups alongside color picker for reference |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) | Block pop-ups that overlay color picker target areas |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/jejehpnkckligbdmokpmmmffljjpdfe) | Stay on the current page while picking colors |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) | Keep Chrome fast while multiple design resources are open |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/odlodmnoehaemckpnlbngbdljjncebn) | Save color palette reference pages for offline access |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/amnmcjmoihjkpmjeighmjddfonmgoil) | Autofill login for premium design asset sites |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf) | Highlight and annotate color scheme inspiration pages |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) | Per-domain contrast for consistent color perception across sites |
+| [Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture design mockups alongside color picker for reference |
+| [Light Popup Blocker](https: //chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) | Block pop-ups that overlay color picker target areas |
+| [Redirect Shield](https: //chromewebstore.google.com/detail/redirect-shield/jejehpnkckligbdmokpmmmffljjpdfe) | Stay on the current page while picking colors |
+| [ProTab Suspender](https: //chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) | Keep Chrome fast while multiple design resources are open |
+| [Offline Reader Pro](https: //chromewebstore.google.com/detail/offline-reader-pro/odlodmnoehaemckpnlbngbdljjncebn) | Save color palette reference pages for offline access |
+| [SecuraKey Pro](https: //chromewebstore.google.com/detail/securakey-pro/amnmcjmoihjkpmjeighmjddfonmgoil) | Autofill login for premium design asset sites |
+| [Glasp](https: //chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf) | Highlight and annotate color scheme inspiration pages |
+| [DarkFlow](https: //chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) | Per-domain contrast for consistent color perception across sites |
 
 ## FAQ
 

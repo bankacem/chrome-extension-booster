@@ -1,22 +1,14 @@
 ---
 id: 9f641e1b-f6dd-4aa8-85e7-5f54eaf009b4
-title: >-
-  Unlocking the Power of everliker chrome: A Comprehensive Guide to Boosting
-  Productivity
+title: 'Unlocking the Power of everliker chrome: A Comprehensive Guide to Boosting Productivity'
 slug: everliker-chrome-mkzmqfniyji
-excerpt: >-
-  Are you tired of manually liking posts on social media platforms? Do you want
-  to increase your online presence without spending hours liking and commenting
-  on p
+excerpt: Are you tired of manually liking posts on social media platforms? Do you want to increase your online presence without spending hours liking and commenting on p
 featured_image: /content/images/everliker-chrome-mkzmqfniyji/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - everliker chrome
-meta_description: >-
-  Are you tired of manually liking posts on social media platforms? Do you want
-  to increase your online presence without spending hours liking and commenting
-  on p
+meta_description: Are you tired of manually liking posts on social media platforms? Do you want to increase your online presence without spending hours liking and commenting on p
 status: published
 published_at: '2026-05-07T06:15:03.686+00:00'
 scheduled_at: '2026-05-07T06:15:00+00:00'
@@ -38,16 +30,16 @@ updated_at: '2026-05-07T06:15:03.840315+00:00'
 
 <h2>What is everliker chrome?</h2>
 <div class="extension-backlink my-8 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20">
-  <div class="flex flex-col md:flex-row items-center gap-4">
-    <div class="flex-1 text-center md:text-left">
+  <div class="flex flex-col md: flex-row items-center gap-4">
+    <div class="flex-1 text-center md: text-left">
       <h4 class="text-lg font-bold mb-1">Quick Screenshot Lite</h4>
       <p class="text-sm text-muted-foreground mb-2">Capture full page or visible area screenshots instantly.</p>
     </div>
-    <div class="flex flex-col sm:flex-row gap-2">
-      <a href="/extension/quick-screenshot-lite" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary hover:bg-secondary/80 text-secondary-foreground font-medium transition-colors">
+    <div class="flex flex-col sm: flex-row gap-2">
+      <a href="/extension/quick-screenshot-lite" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary hover: bg-secondary/80 text-secondary-foreground font-medium transition-colors">
         Learn More
       </a>
-      <a href="https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground font-medium transition-colors gap-2">
+      <a href="https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary hover: bg-primary/90 text-primary-foreground font-medium transition-colors gap-2">
         Add to Chrome
       </a>
     </div>
@@ -101,12 +93,12 @@ updated_at: '2026-05-07T06:15:03.840315+00:00'
       <td>Free, with optional premium features</td>
     </tr>
     <tr>
-      <td><a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a></td>
+      <td><a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover: underline">Quick Screenshot Lite</a></td>
       <td>Capture full-page or visible area screenshots</td>
       <td>Free</td>
     </tr>
     <tr>
-      <td><a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a></td>
+      <td><a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover: underline">Auto Dark Mode Switcher</a></td>
       <td>Automatically switch between dark and light modes</td>
       <td>Free</td>
     </tr>
@@ -141,7 +133,7 @@ updated_at: '2026-05-07T06:15:03.840315+00:00'
 
 <h3>Q: Can I use everliker chrome with other Chrome extensions?</h3>
 
-<p>A: Yes, everliker chrome can be used with other Chrome extensions, including <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> and <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>.</p>
+<p>A: Yes, everliker chrome can be used with other Chrome extensions, including <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover: underline">Quick Screenshot Lite</a> and <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover: underline">Auto Dark Mode Switcher</a>.</p>
 
 <h3>Q: How do I download everliker chrome?</h3>
 
@@ -158,10 +150,10 @@ updated_at: '2026-05-07T06:15:03.840315+00:00'
   <h3 class="text-2xl font-bold mb-3">Get Quick Screenshot Lite Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Capture full page or visible area screenshots instantly.</p>
   <div class="flex flex-wrap justify-center gap-4">
-    <a href="https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-colors gap-2">
+    <a href="https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary hover: bg-primary/90 text-primary-foreground font-semibold transition-colors gap-2">
       Add to Chrome - It's Free
     </a>
-    <a href="/extension/quick-screenshot-lite" class="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-primary/50 hover:bg-primary/10 text-primary font-semibold transition-colors">
+    <a href="/extension/quick-screenshot-lite" class="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-primary/50 hover: bg-primary/10 text-primary font-semibold transition-colors">
       View Full Details
     </a>
   </div>

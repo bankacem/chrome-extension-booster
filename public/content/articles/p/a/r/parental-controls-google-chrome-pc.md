@@ -1,11 +1,7 @@
 ---
 title: 'Parental Controls for Google Chrome on PC: Complete Setup Guide (2026)'
 slug: parental-controls-google-chrome-pc
-excerpt: >-
-  I tested four parental control methods for Chrome on Windows: Family Link,
-  third-party extensions, DNS filtering, and Chrome's built-in supervised
-  accounts. Here's what actually blocks adult content without breaking everyday
-  sites.
+excerpt: 'I tested four parental control methods for Chrome on Windows: Family Link, third-party extensions, DNS filtering, and Chrome''s built-in supervised accounts. Here''s what actually blocks adult content without breaking everyday sites.'
 featured_image: /content/images/parental-controls-google-chrome-pc/featured.webp
 category: Productivity & Tools
 tags:
@@ -17,7 +13,7 @@ keywords:
   - parental controls google chrome pc
   - chrome parental controls
   - safe browsing for kids
-meta_description: "Complete guide to setting up parental controls on Google Chrome for PC. I tested Family Link, extensions, DNS filtering, and supervised accounts to find..."
+meta_description: Complete guide to setting up parental controls on Google Chrome for PC. I tested Family Link, extensions, DNS filtering, and supervised accounts to find...
 status: published
 published_at: '2026-05-18T14:15:02.303+00:00'
 scheduled_at: '2026-05-18T14:15:00+00:00'
@@ -39,14 +35,14 @@ I tested four approaches to parental controls on Chrome over two weeks: Google F
 
 Family Link is Google's official parental control app. It connects to your child's Google account and enforces restrictions across Chrome and Android devices.
 
-**How to set it up:**
+**How to set it up: **
 
 1. Create a Google account for your child (use the Family Link app or website)
 2. Download Family Link on your phone or visit families.google.com
 3. Link your child's account to your family group
 4. Set browsing restrictions in the Chrome section
 
-**Test results:**
+**Test results: **
 
 | Restriction Type | Block Rate (50 adult sites) | False Positive Rate (30 educational sites) |
 |-----------------|--------------------------|------------------------------------------|
@@ -57,13 +53,13 @@ Family Link is Google's official parental control app. It connects to your child
 
 Family Link's "approved sites only" mode is the most secure option but locks down browsing completely. The child can only visit sites you explicitly approve. The "block explicit" mode caught 46 of 50 test sites but blocked two educational pages about sexual health as false positives.
 
-**The big limitation:** Family Link requires your child to be signed into Chrome with the supervised account. If they create a separate Chrome profile or use Guest mode, the restrictions don't apply. You need to disable Guest mode and profile creation separately in Chrome's policies.
+**The big limitation: ** Family Link requires your child to be signed into Chrome with the supervised account. If they create a separate Chrome profile or use Guest mode, the restrictions don't apply. You need to disable Guest mode and profile creation separately in Chrome's policies.
 
 ## Method 2: Chrome Supervised Accounts (Built-in)
 
 Chrome has a built-in supervised user feature that works without Family Link. It's simpler but less powerful.
 
-**Setup steps:**
+**Setup steps: **
 
 1. Open Chrome Settings > You and Google > Add a new profile
 2. Create a supervised profile
@@ -85,13 +81,13 @@ Extensions can add content filtering, site blocking, and activity logging. I tes
 
 WebFilter Pro had the best balance of high block rates and low false positives. BlockSite is a good free option with decent activity monitoring.
 
-**Caveat:** Extensions can be disabled by the child if they know how to access Chrome's extension settings. You can prevent this by using Chrome's administrative policy to lock extension management. On Windows, you need to set a registry key or use Group Policy.
+**Caveat: ** Extensions can be disabled by the child if they know how to access Chrome's extension settings. You can prevent this by using Chrome's administrative policy to lock extension management. On Windows, you need to set a registry key or use Group Policy.
 
 ## Method 4: DNS-Level Filtering
 
 DNS filtering works at the network level, so it applies to every browser and app on the PC. The child cannot bypass it by switching browsers or using incognito mode.
 
-**Options I tested:**
+**Options I tested: **
 
 | DNS Provider | Block Rate | Setup Difficulty | Latency Impact |
 |-------------|-----------|-----------------|----------------|
@@ -102,7 +98,7 @@ DNS filtering works at the network level, so it applies to every browser and app
 
 CleanBrowsing had the best block rate at 93%. Cloudflare's family filter (1.1.1.3) blocked 82% but had the lowest latency impact.
 
-**How to set it up:**
+**How to set it up: **
 
 1. Open Control Panel > Network and Sharing Center
 2. Click your active connection > Properties
@@ -114,9 +110,7 @@ This takes five minutes and protects every browser on the PC. The downside is lo
 
 ## Recommended Multi-Layer Setup
 
-No single method is perfect. After testing, here's the combination I recommend and use on my own PC:
-
-1. **Family Link** for Google account-level filtering (blocks 92% of adult content)
+No single method is perfect. After testing, here's the combination I recommend and use on my own PC: 1. **Family Link** for Google account-level filtering (blocks 92% of adult content)
 2. **CleanBrowsing DNS** at the network level (blocks 93%, catches what Family Link misses)
 3. **One third-party extension** for activity logging (I use BlockSite for the free tier)
 4. **Disable Guest mode** via Chrome policy so the child can't bypass restrictions
@@ -126,42 +120,38 @@ This three-layer setup blocked 99.2% of adult sites in my tests with only 4% fal
 ## 8 Companion Extensions for Parental Controls
 
 ### 1. Light Popup Blocker
-Adult sites often spawn popups that bypass content filters. Light Popup Blocker catches them before they load. I tested it with 100 popup-heavy sites and it blocked every single one. [Get Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii).
+Adult sites often spawn popups that bypass content filters. Light Popup Blocker catches them before they load. I tested it with 100 popup-heavy sites and it blocked every single one. [Get Light Popup Blocker](https: //chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii).
 
 ### 2. Redirect Shield
-Some adult sites use redirect chains to evade filters. Redirect Shield stops those dead. It blocked all redirect chains in my tests. [Install Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/jejehpnkckligbdmokpmmmffljjpdfe).
+Some adult sites use redirect chains to evade filters. Redirect Shield stops those dead. It blocked all redirect chains in my tests. [Install Redirect Shield](https: //chromewebstore.google.com/detail/redirect-shield/jejehpnkckligbdmokpmmmffljjpdfe).
 
 ### 3. SecuraKey Pro
-If your child needs to log into school or educational sites, SecuraKey Pro keeps their passwords safe and autofills login forms. [Get SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/amnmcjmoihjkpmjeighmjddfonmgoil).
+If your child needs to log into school or educational sites, SecuraKey Pro keeps their passwords safe and autofills login forms. [Get SecuraKey Pro](https: //chromewebstore.google.com/detail/securakey-pro/amnmcjmoihjkpmjeighmjddfonmgoil).
 
 ### 4. Quick Screenshot Lite
-When you need to capture what your child sees on a problematic site for discussion, Quick Screenshot Lite grabs full-page screenshots in one click. [Get Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee).
+When you need to capture what your child sees on a problematic site for discussion, Quick Screenshot Lite grabs full-page screenshots in one click. [Get Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee).
 
 ### 5. Offline Reader Pro
-Save educational pages for offline reading so your child can access school materials even when the internet is restricted. [Install Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/odlodmnoehaemckpnlbngbdljjncebn).
+Save educational pages for offline reading so your child can access school materials even when the internet is restricted. [Install Offline Reader Pro](https: //chromewebstore.google.com/detail/offline-reader-pro/odlodmnoehaemckpnlbngbdljjncebn).
 
 ### 6. Formula Builder Pro
-Use Formula Builder Pro to calculate screen time schedules and set up time-based browsing windows for your children. [Get Formula Builder Pro](https://chromewebstore.google.com/detail/formula-builder-pro/ogkgojnmebpkipnnapcnpcjcaafcjhll).
+Use Formula Builder Pro to calculate screen time schedules and set up time-based browsing windows for your children. [Get Formula Builder Pro](https: //chromewebstore.google.com/detail/formula-builder-pro/ogkgojnmebpkipnnapcnpcjcaafcjhll).
 
 ### 7. Glasp
-Glasp lets you highlight and share articles about online safety with your child. Save important safety guidelines and revisit them later. [Get Glasp](https://chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf).
+Glasp lets you highlight and share articles about online safety with your child. Save important safety guidelines and revisit them later. [Get Glasp](https: //chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf).
 
 ### 8. The Great Suspender
-Children often leave many tabs open. The Great Suspender automatically suspends inactive tabs, keeping Chrome fast. [Install The Great Suspender](https://chromewebstore.google.com/detail/the-great-suspender/ahmkjjndojeleookoneeigfjmkblpkk).
+Children often leave many tabs open. The Great Suspender automatically suspends inactive tabs, keeping Chrome fast. [Install The Great Suspender](https: //chromewebstore.google.com/detail/the-great-suspender/ahmkjjndojeleookoneeigfjmkblpkk).
 
 ## How to Lock Extension Settings So Kids Can't Disable Them
 
-Extensions are only effective if your child can't turn them off. Here's how to lock them down on Windows:
-
-1. Press Win + R, type `gpedit.msc` (Group Policy Editor)
+Extensions are only effective if your child can't turn them off. Here's how to lock them down on Windows: 1. Press Win + R, type `gpedit.msc` (Group Policy Editor)
 2. Navigate to Computer Configuration > Administrative Templates > Google Chrome > Extensions
 3. Enable "Configure the list of force-installed extensions"
 4. Add each extension ID to the list
 5. Enable "Block external extensions" to prevent sideloading
 
-If you don't have Group Policy Editor (Windows Home), use the registry:
-
-1. Open RegEdit
+If you don't have Group Policy Editor (Windows Home), use the registry: 1. Open RegEdit
 2. Navigate to `HKLM\Software\Policies\Google\Chrome\ExtensionInstallForceList`
 3. Add string values with the extension IDs
 
@@ -205,4 +195,4 @@ If you want the quickest solution, set up CleanBrowsing DNS in five minutes. It 
 
 Skip Chrome's built-in supervised accounts unless you need a no-account setup — the block rate is too low at 84%.
 
-[Set up Family Link](https://families.google.com/familylink/) | [Configure CleanBrowsing](https://cleanbrowsing.org/)
+[Set up Family Link](https: //families.google.com/familylink/) | [Configure CleanBrowsing](https: //cleanbrowsing.org/)
