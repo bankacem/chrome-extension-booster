@@ -1,10 +1,7 @@
 ---
 title: 'Boosting Browser Performance: The Power of Minimal Chrome Extensions for Speed'
 slug: boosting-browser-performance-minimal-extensions
-excerpt: >-
-  Too many extensions slow Chrome down. I tested how each extension category
-  impacts performance — here is which to keep, which to cut, and the minimal
-  5-extension stack for peak speed.
+excerpt: Too many extensions slow Chrome down. I tested how each extension category impacts performance — here is which to keep, which to cut, and the minimal 5-extension stack for peak speed.
 featured_image: /content/images/boosting-browser-performance-minimal-extensions/featured.webp
 category: Productivity & Tools
 tags:
@@ -16,7 +13,7 @@ keywords:
   - minimal chrome extensions for speed
   - chrome performance optimization
   - speed up chrome
-meta_description: "I tested how each Chrome extension impacts browser speed. Find out which extensions to keep, which to remove, and the minimal 5-extension stack for peak..."
+meta_description: I tested how each Chrome extension impacts browser speed. Find out which extensions to keep, which to remove, and the minimal 5-extension stack for peak...
 status: published
 published_at: '2026-04-24T10:15:00.000+00:00'
 updated_at: '2026-06-05T12:00:00.000000+00:00'
@@ -34,10 +31,10 @@ Most users have 10-15 extensions installed. Each one adds startup time, memory u
 
 ## My Testing Setup
 
-- **Hardware:** Dell XPS 13, Intel i7-1255U, 16 GB RAM, Windows 11
-- **Chrome version:** 125 (latest stable)
-- **Test:** Cold startup time (from completely closed browser), warm page load time (10 high-traffic sites averaged), RAM usage in Chrome Task Manager
-- **Extensions tested:** Mix of ad blockers (4), dark mode (3), password managers (2), tab managers (3), grammar checkers (2), shopping assistants (2), screenshot tools (2), security (2)
+- **Hardware: ** Dell XPS 13, Intel i7-1255U, 16 GB RAM, Windows 11
+- **Chrome version: ** 125 (latest stable)
+- **Test: ** Cold startup time (from completely closed browser), warm page load time (10 high-traffic sites averaged), RAM usage in Chrome Task Manager
+- **Extensions tested: ** Mix of ad blockers (4), dark mode (3), password managers (2), tab managers (3), grammar checkers (2), shopping assistants (2), screenshot tools (2), security (2)
 
 I reset Chrome's cache between each test and ran each configuration for 2 days to account for normal browsing patterns.
 
@@ -72,23 +69,23 @@ Ad blockers are the only extension category that makes pages load faster (by blo
 
 ## The Minimal Performance Stack
 
-**Keep (no compromise, net positive on speed):**
+**Keep (no compromise, net positive on speed): **
 
 1. **uBlock Origin** — Blocks ad scripts that would otherwise add 2-5 seconds to page loads. It uses 50 MB of RAM but saves 200-500 MB by preventing ad scripts from loading. This is the only extension that is a net speed improvement.
 
-2. **[ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj)** — Saves 800+ MB of RAM by suspending inactive tabs after a configurable timeout. Uses 40 MB of RAM. Net savings: 760+ MB. Set a 15-minute timeout and whitelist critical tabs.
+2. **[ProTab Suspender](https: //chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj)** — Saves 800+ MB of RAM by suspending inactive tabs after a configurable timeout. Uses 40 MB of RAM. Net savings: 760+ MB. Set a 15-minute timeout and whitelist critical tabs.
 
-3. **[Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii)** — Blocks CPU-heavy overlay pop-ups (autoplay videos, newsletter modals, floating chat widgets) that consume processing power even when minimized. Uses only 20 MB of RAM.
+3. **[Light Popup Blocker](https: //chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii)** — Blocks CPU-heavy overlay pop-ups (autoplay videos, newsletter modals, floating chat widgets) that consume processing power even when minimized. Uses only 20 MB of RAM.
 
-**Keep if you use them daily:**
+**Keep if you use them daily: **
 
-4. **[NightShield Pro](https://chromewebstore.google.com/detail/nightshield-pro/pgjidjlmpacojfolcmeekgnnekmggenm)** — Dark mode adds 50 MB of RAM but reduces eye strain significantly if you browse at night. Only install if you actually browse after dark.
+4. **[NightShield Pro](https: //chromewebstore.google.com/detail/nightshield-pro/pgjidjlmpacojfolcmeekgnnekmggenm)** — Dark mode adds 50 MB of RAM but reduces eye strain significantly if you browse at night. Only install if you actually browse after dark.
 
-5. **[SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-%E2%80%93-secure-pa/omeencccnkninlofbggfcfiohapajhgi)** — Password manager adds ~80 MB but eliminates the need to remember 50+ passwords. The convenience tradeoff is worth it for most users.
+5. **[SecuraKey Pro](https: //chromewebstore.google.com/detail/securakey-pro-%E2%80%93-secure-pa/omeencccnkninlofbggfcfiohapajhgi)** — Password manager adds ~80 MB but eliminates the need to remember 50+ passwords. The convenience tradeoff is worth it for most users.
 
-**Remove (net negative on speed):**
+**Remove (net negative on speed): **
 
-- Grammar checkers (Grammarly, ProWritingAid) — Use [LanguageTool's](https://languagetool.org/) web version when needed instead
+- Grammar checkers (Grammarly, ProWritingAid) — Use [LanguageTool's](https: //languagetool.org/) web version when needed instead
 - Shopping assistants (Honey, Capital One Shopping) — Search manually for coupon codes
 - News sidebars — Use RSS feeds instead
 - Multiple dark mode extensions — Keep only one (NightShield Pro)
@@ -96,22 +93,20 @@ Ad blockers are the only extension category that makes pages load faster (by blo
 
 ## The 8 Companion Extensions (Add Only If Needed)
 
-If you need more functionality beyond the performance stack, add these one at a time and measure the impact:
-
-| Extension | RAM | Load Impact | When to Add | Net Value |
+If you need more functionality beyond the performance stack, add these one at a time and measure the impact: | Extension | RAM | Load Impact | When to Add | Net Value |
 |-----------|-----|-------------|-------------|-----------|
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) | ~35 MB | +20ms | Need per-domain dark mode tuning | Low |
-| [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | ~25 MB | None | Click-to-capture, zero background cost | High |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | ~30 MB | +10ms | Save articles for offline reading | Medium |
-| [Redirect Blocker](https://chromewebstore.google.com/detail/redirect-blocker/pofolffdhjffglfphiagpbnlegjbnbhp) | ~25 MB | +15ms | Need redirect protection | Medium |
+| [DarkFlow](https: //chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) | ~35 MB | +20ms | Need per-domain dark mode tuning | Low |
+| [Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | ~25 MB | None | Click-to-capture, zero background cost | High |
+| [Offline Reader Pro](https: //chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | ~30 MB | +10ms | Save articles for offline reading | Medium |
+| [Redirect Blocker](https: //chromewebstore.google.com/detail/redirect-blocker/pofolffdhjffglfphiagpbnlegjbnbhp) | ~25 MB | +15ms | Need redirect protection | Medium |
 
 ## Real-World Performance Tips
 
-**Audit monthly:** Open `chrome://extensions` → check the Memory column. If any extension is over 100 MB, disable it for a week and see if you miss it.
+**Audit monthly: ** Open `chrome: //extensions` → check the Memory column. If any extension is over 100 MB, disable it for a week and see if you miss it.
 
-**Use profiles:** Create separate Chrome profiles for work and personal use. Your work profile needs fewer extensions (maybe just uBlock Origin and a password manager). Your personal profile can have the full stack.
+**Use profiles: ** Create separate Chrome profiles for work and personal use. Your work profile needs fewer extensions (maybe just uBlock Origin and a password manager). Your personal profile can have the full stack.
 
-**Disable, do not uninstall:** If you are not sure about removing an extension, disable it first. Your settings are preserved if you need to re-enable it later.
+**Disable, do not uninstall: ** If you are not sure about removing an extension, disable it first. Your settings are preserved if you need to re-enable it later.
 
 ## FAQ
 
@@ -125,7 +120,7 @@ A: Yes. Extensions run background scripts even when you are not actively using t
 A: By default, yes. But some extensions request "Allow in Incognito" permission during installation, which reactivates them in private browsing.
 
 **Q: How do I find which extension is slowing Chrome?**
-A: Open `chrome://extensions` → click "Details" on each extension → check the Memory column. Anything over 100 MB needs justification. You can also use Chrome's Task Manager (Shift+Esc) to see real-time memory and CPU usage per extension.
+A: Open `chrome: //extensions` → click "Details" on each extension → check the Memory column. Anything over 100 MB needs justification. You can also use Chrome's Task Manager (Shift+Esc) to see real-time memory and CPU usage per extension.
 
 **Q: Do ad blockers really speed up Chrome?**
 A: Yes. Ad blockers prevent ad scripts from loading, which saves 2-5 seconds per page on ad-heavy sites. uBlock Origin is the most efficient — it uses 50 MB but saves 200-500 MB by blocking scripts.

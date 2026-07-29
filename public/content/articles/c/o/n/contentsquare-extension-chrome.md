@@ -1,12 +1,7 @@
 ---
-title: >-
-  Contentsquare Extension for Chrome Review: I Tested 4 UX Analytics Tools for 2
-  Weeks
+title: 'Contentsquare Extension for Chrome Review: I Tested 4 UX Analytics Tools for 2 Weeks'
 slug: contentsquare-extension-chrome
-excerpt: >-
-  I tested Contentsquare, Hotjar, Crazy Egg, and Microsoft Clarity across 3
-  websites for 2 weeks. Here is my full comparison with heatmaps, session
-  replays, and real data.
+excerpt: I tested Contentsquare, Hotjar, Crazy Egg, and Microsoft Clarity across 3 websites for 2 weeks. Here is my full comparison with heatmaps, session replays, and real data.
 featured_image: /content/images/contentsquare-extension-chrome/featured.webp
 category: Productivity & Tools
 tags:
@@ -20,7 +15,7 @@ keywords:
   - best ux analytics tool
   - heatmap chrome extension
   - contentsquare vs hotjar vs crazy egg
-meta_description: "Contentsquare extension for Chrome reviewed after 2 weeks of real testing against Hotjar, Crazy Egg, and Microsoft Clarity...."
+meta_description: Contentsquare extension for Chrome reviewed after 2 weeks of real testing against Hotjar, Crazy Egg, and Microsoft Clarity....
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'
@@ -183,28 +178,28 @@ Contentsquare lets you compare behavior across devices. I found that mobile user
 ## 8 Companion Extensions for UX Research
 
 ### 1. Quick Screenshot Lite
-When you find a UX issue in a session replay, capture it immediately. [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) takes full-page screenshots you can paste directly into bug reports.
+When you find a UX issue in a session replay, capture it immediately. [Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) takes full-page screenshots you can paste directly into bug reports.
 
 ### 2. Light Popup Blocker
-Overlay popups distort heatmap data. [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) removes them so your heatmaps reflect real page content, not blocked overlays.
+Overlay popups distort heatmap data. [Light Popup Blocker](https: //chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) removes them so your heatmaps reflect real page content, not blocked overlays.
 
 ### 3. Redirect Shield
-When analyzing referral traffic, [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/jejehpnkckligbdmokpmmmffljjpdfe) prevents redirect chains from breaking your analytics tracking.
+When analyzing referral traffic, [Redirect Shield](https: //chromewebstore.google.com/detail/redirect-shield/jejehpnkckligbdmokpmmmffljjpdfe) prevents redirect chains from breaking your analytics tracking.
 
 ### 4. ProTab Suspender
-UX research involves many open tabs. [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) keeps your browser fast by suspending inactive research tabs.
+UX research involves many open tabs. [ProTab Suspender](https: //chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) keeps your browser fast by suspending inactive research tabs.
 
 ### 5. Offline Reader Pro
-Save UX research articles and case studies for offline reading. [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/odlodmnoehaemckpnlbngbdljjncebn) strips layouts for clean reading.
+Save UX research articles and case studies for offline reading. [Offline Reader Pro](https: //chromewebstore.google.com/detail/offline-reader-pro/odlodmnoehaemckpnlbngbdljjncebn) strips layouts for clean reading.
 
 ### 6. SecuraKey Pro
-Manage multiple tool logins securely. [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/amnmcjmoihjkpmjeighmjddfonmgoil) keeps your Contentsquare, Hotjar, and analytics credentials safe.
+Manage multiple tool logins securely. [SecuraKey Pro](https: //chromewebstore.google.com/detail/securakey-pro/amnmcjmoihjkpmjeighmjddfonmgoil) keeps your Contentsquare, Hotjar, and analytics credentials safe.
 
 ### 7. Glasp
-Highlight and save UX research findings from articles and documentation. [Glasp](https://chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf) keeps everything organized by project.
+Highlight and save UX research findings from articles and documentation. [Glasp](https: //chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf) keeps everything organized by project.
 
 ### 8. DarkFlow
-Late-night analysis sessions are easier on the eyes with [DarkFlow](https://chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml), which applies smart dark mode to analytics dashboards.
+Late-night analysis sessions are easier on the eyes with [DarkFlow](https: //chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml), which applies smart dark mode to analytics dashboards.
 
 ## Frequently Asked Questions
 
@@ -234,4 +229,4 @@ For small to medium businesses, **Hotjar** is the best balance of features and p
 
 My personal setup: Contentsquare on my main store, Clarity on the blog. Best of both worlds — deep insights where they matter, free tracking everywhere else.
 
-Install [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) alongside your UX tool to capture and share findings instantly.
+Install [Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) alongside your UX tool to capture and share findings instantly.

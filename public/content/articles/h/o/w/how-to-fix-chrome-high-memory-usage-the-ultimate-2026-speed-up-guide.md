@@ -1,14 +1,9 @@
 ---
 id: da7ef45a-4781-4133-a5d9-eeb6cd281449
-title: >-
-  How to Fix Chrome High Memory Usage The Ultimate 2026 Speed Up Guide: Reducing
-  Browser Memory Leaks
+title: 'How to Fix Chrome High Memory Usage The Ultimate 2026 Speed Up Guide: Reducing Browser Memory Leaks'
 slug: how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide
-excerpt: >-
-  Boost your browsing speed and extend laptop battery life. Discover the best
-  lightweight extensions for managing memory and reducing CPU load effectively.
-featured_image: >-
-  /content/images/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide/featured.webp
+excerpt: Boost your browsing speed and extend laptop battery life. Discover the best lightweight extensions for managing memory and reducing CPU load effectively.
+featured_image: /content/images/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide/featured.webp
 category: Performance & Memory
 tags:
   - welcome
@@ -18,9 +13,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: >-
-  Boost your browsing speed and extend laptop battery life. Discover the best
-  lightweight extensions for managing memory and reducing CPU load effectively.
+meta_description: Boost your browsing speed and extend laptop battery life. Discover the best lightweight extensions for managing memory and reducing CPU load effectively.
 status: published
 published_at: '2026-01-31T09:00:00.27+00:00'
 scheduled_at: '2026-01-31T09:00:00+00:00'
@@ -30,10 +23,8 @@ views: 1
 read_time: 1
 created_at: '2026-01-19T13:57:22.686029+00:00'
 updated_at: '2026-02-02T13:59:31.055373+00:00'
-description: >-
-  Boost your browsing speed and extend laptop battery life. Discover the best
-  lightweight extensions for managing memory and reducing CPU load effectively.
-canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
+description: Boost your browsing speed and extend laptop battery life. Discover the best lightweight extensions for managing memory and reducing CPU load effectively.
+canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
 ---
 
 <img src="/content/images/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide/featured.webp" alt="How to Fix Chrome High Memory Usage The Ultimate 2026 Speed Up Guide: Reducing Browser Memory Leaks" width="1200" height="630" loading="lazy" class="featured-image">

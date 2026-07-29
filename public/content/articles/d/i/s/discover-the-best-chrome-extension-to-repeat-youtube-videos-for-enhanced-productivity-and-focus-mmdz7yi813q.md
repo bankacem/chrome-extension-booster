@@ -1,24 +1,14 @@
 ---
 id: 7c25c09b-c220-48a1-b50d-e05d7fbf2662
-title: >-
-  Discover the Best Chrome Extension to Repeat YouTube Videos for Enhanced
-  Productivity and Focus
-slug: >-
-  discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q
-excerpt: >-
-  Are you tired of manually replaying your favorite YouTube videos or loops?
-  Look no further! A Chrome extension to repeat YouTube videos can be a
-  game-changer fo
-featured_image: >-
-  /content/images/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q/featured.webp
+title: Discover the Best Chrome Extension to Repeat YouTube Videos for Enhanced Productivity and Focus
+slug: discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q
+excerpt: Are you tired of manually replaying your favorite YouTube videos or loops? Look no further! A Chrome extension to repeat YouTube videos can be a game-changer fo
+featured_image: /content/images/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q/featured.webp
 category: Appearance & Themes
 tags: []
 keywords:
   - chrome extension to repeat youtube videos
-meta_description: >-
-  Are you tired of manually replaying your favorite YouTube videos or loops?
-  Look no further! A Chrome extension to repeat YouTube videos can be a
-  game-changer fo
+meta_description: Are you tired of manually replaying your favorite YouTube videos or loops? Look no further! A Chrome extension to repeat YouTube videos can be a game-changer fo
 status: published
 published_at: '2026-04-15T02:15:00.966+00:00'
 scheduled_at: '2026-04-15T02:15:00+00:00'
@@ -40,16 +30,16 @@ updated_at: '2026-04-23T12:25:27.995962+00:00'
 
 <h2>Table of Contents</h2>
 <div class="extension-backlink my-8 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20">
-  <div class="flex flex-col md:flex-row items-center gap-4">
-    <div class="flex-1 text-center md:text-left">
+  <div class="flex flex-col md: flex-row items-center gap-4">
+    <div class="flex-1 text-center md: text-left">
       <h4 class="text-lg font-bold mb-1">Auto Dark Mode Switcher</h4>
       <p class="text-sm text-muted-foreground mb-2"><a href="/blog/stop-video-popups-from-playing-automatically-3" class="internal-link" title="Stop Video Popups from Playing Automatically: A Comprehensive Guide">Automatically</a> switch between dark and light modes.</p>
     </div>
-    <div class="flex flex-col sm:flex-row gap-2">
-      <a href="/extension/auto-dark-mode-switcher" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary hover:bg-secondary/80 text-secondary-foreground font-medium transition-colors">
+    <div class="flex flex-col sm: flex-row gap-2">
+      <a href="/extension/auto-dark-mode-switcher" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary hover: bg-secondary/80 text-secondary-foreground font-medium transition-colors">
         Learn More
       </a>
-      <a href="https://chromewebstore.google.com/detail/auto-dark-mode-switcher-u/obbhliekbfgpcdippngphefofiicgjml" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground font-medium transition-colors gap-2">
+      <a href="https: //chromewebstore.google.com/detail/auto-dark-mode-switcher-u/obbhliekbfgpcdippngphefofiicgjml" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary hover: bg-primary/90 text-primary-foreground font-medium transition-colors gap-2">
         Add to Chrome
       </a>
     </div>
@@ -70,7 +60,7 @@ updated_at: '2026-04-23T12:25:27.995962+00:00'
 
 <h2 id="benefits-of-using-a-chrome-extension-to-repeat-youtube-videos">Benefits of Using a Chrome Extension to Repeat YouTube Videos</h2>
 
-<p>Using a <strong>Chrome extension to repeat YouTube videos</strong> can have numerous benefits, including:</p>
+<p>Using a <strong>Chrome extension to repeat YouTube videos</strong> can have numerous benefits, including: </p>
 
 <ul>
   <li>Enhanced productivity: By creating a seamless loop of your favorite content, you can stay focused and avoid distractions.</li>
@@ -81,17 +71,17 @@ updated_at: '2026-04-23T12:25:27.995962+00:00'
 
 <h2 id="best-chrome-extensions-to-repeat-youtube-videos">Best Chrome Extensions to Repeat YouTube Videos</h2>
 
-<p>There are several Chrome extensions available that can help you repeat YouTube videos. Some of the best options include:</p>
+<p>There are several Chrome extensions available that can help you repeat YouTube videos. Some of the best options include: </p>
 
 <ul>
-  <li><a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a>: While not specifically designed to repeat YouTube videos, Redirect Shield can help you avoid annoying redirects and ads, making your viewing experience more enjoyable.</li>
-  <li><a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>: This extension can help you switch between dark and light modes, reducing eye strain and improving your overall viewing experience.</li>
-  <li><a href="/blog/enable-night-mode-on-linkedin-for-eye-protection-1" class="text-primary font-medium hover:underline">Enable Night Mode on LinkedIn</a>: This guide can help you reduce blue light emission and improve your eye protection while browsing LinkedIn.</li>
+  <li><a href="/extension/redirect-shield" class="text-primary font-medium hover: underline">Redirect Shield</a>: While not specifically designed to repeat YouTube videos, Redirect Shield can help you avoid annoying redirects and ads, making your viewing experience more enjoyable.</li>
+  <li><a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover: underline">Auto Dark Mode Switcher</a>: This extension can help you switch between dark and light modes, reducing eye strain and improving your overall viewing experience.</li>
+  <li><a href="/blog/enable-night-mode-on-linkedin-for-eye-protection-1" class="text-primary font-medium hover: underline">Enable Night Mode on LinkedIn</a>: This guide can help you reduce blue light emission and improve your eye protection while browsing LinkedIn.</li>
 </ul>
 
 <h2 id="how-to-use-a-chrome-extension-to-repeat-youtube-videos">How to Use a Chrome Extension to Repeat YouTube Videos</h2>
 
-<p>Using a <strong>Chrome extension to repeat YouTube videos</strong> is relatively straightforward. Here's a step-by-step guide:</p>
+<p>Using a <strong>Chrome extension to repeat YouTube videos</strong> is relatively straightforward. Here's a step-by-step guide: </p>
 
 <ol>
   <li>Install the Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</li>
@@ -102,17 +92,17 @@ updated_at: '2026-04-23T12:25:27.995962+00:00'
 
 <h2 id="tips-and-tricks-for-using-a-chrome-extension-to-repeat-youtube-videos">Tips and Tricks for Using a Chrome Extension to Repeat YouTube Videos</h2>
 
-<p>Here are some tips and tricks to help you get the most out of your <strong>Chrome extension to repeat YouTube videos</strong>:</p>
+<p>Here are some tips and tricks to help you get the most out of your <strong>Chrome extension to repeat YouTube videos</strong>: </p>
 
 <ul>
-  <li>Use the extension in conjunction with other productivity tools, such as the <a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a>, to boost your focus and efficiency.</li>
+  <li>Use the extension in conjunction with other productivity tools, such as the <a href="/extension/protab-suspender" class="text-primary font-medium hover: underline">ProTab Suspender</a>, to boost your focus and efficiency.</li>
   <li>Experiment with different repetition settings to find what works best for you.</li>
   <li>Use the extension to create a playlist of your favorite videos and repeat them in a loop.</li>
 </ul>
 
 <h2 id="faq">FAQ</h2>
 
-<p>Here are some frequently asked questions about using a <strong>Chrome extension to repeat YouTube videos</strong>:</p>
+<p>Here are some frequently asked questions about using a <strong>Chrome extension to repeat YouTube videos</strong>: </p>
 
 <ul>
   <li>Q: Is it safe to use a Chrome extension to repeat YouTube videos?</li>
@@ -137,12 +127,12 @@ updated_at: '2026-04-23T12:25:27.995962+00:00'
   </thead>
   <tbody>
     <tr>
-      <td><a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a></td>
+      <td><a href="/extension/redirect-shield" class="text-primary font-medium hover: underline">Redirect Shield</a></td>
       <td>Blocks redirects and ads</td>
       <td>Free</td>
     </tr>
     <tr>
-      <td><a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a></td>
+      <td><a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover: underline">Auto Dark Mode Switcher</a></td>
       <td>Switches between dark and light modes</td>
       <td>Free</td>
     </tr>
@@ -154,10 +144,10 @@ updated_at: '2026-04-23T12:25:27.995962+00:00'
   <h3 class="text-2xl font-bold mb-3">Get Auto Dark Mode Switcher Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Automatically switch between dark and light modes.</p>
   <div class="flex flex-wrap justify-center gap-4">
-    <a href="https://chromewebstore.google.com/detail/auto-dark-mode-switcher-u/obbhliekbfgpcdippngphefofiicgjml" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-colors gap-2">
+    <a href="https: //chromewebstore.google.com/detail/auto-dark-mode-switcher-u/obbhliekbfgpcdippngphefofiicgjml" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary hover: bg-primary/90 text-primary-foreground font-semibold transition-colors gap-2">
       Add to Chrome - It's Free
     </a>
-    <a href="/extension/auto-dark-mode-switcher" class="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-primary/50 hover:bg-primary/10 text-primary font-semibold transition-colors">
+    <a href="/extension/auto-dark-mode-switcher" class="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-primary/50 hover: bg-primary/10 text-primary font-semibold transition-colors">
       View Full Details
     </a>
   </div>

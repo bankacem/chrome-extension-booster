@@ -1,9 +1,7 @@
 ---
 title: How to Fix 'Out of Memory' Errors in Google Chrome (2026 Guide)
 slug: fix-chrome-out-of-memory-errors
-excerpt: >-
-  Encountering 'Aw Snap! Out of Memory' errors? Follow our step-by-step
-  troubleshooting guide to fix browser crashes and recover your data.
+excerpt: Encountering 'Aw Snap! Out of Memory' errors? Follow our step-by-step troubleshooting guide to fix browser crashes and recover your data.
 featured_image: /content/images/fix-chrome-out-of-memory-errors/featured.webp
 category: Performance & Memory
 tags:
@@ -11,23 +9,18 @@ tags:
   - Troubleshooting
   - RAM
   - Crash Fix
-meta_description: >-
-  Step-by-step tutorial on fixing 'Out of Memory' errors in Google Chrome.
-  Recover from crashes and prevent future memory-related browser failures.
+meta_description: Step-by-step tutorial on fixing 'Out of Memory' errors in Google Chrome. Recover from crashes and prevent future memory-related browser failures.
 status: published
 published_at: 2026-03-23T00:00:00.000Z
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 read_time: 7
 schema:
-  '@context': 'https://schema.org'
+  '@context': https://schema.org
   '@type': HowTo
   name: How to Fix Chrome Out of Memory Errors
-  description: >-
-    Step-by-step tutorial on fixing 'Out of Memory' errors in Google Chrome.
-    Recover from crashes and prevent future browser failures.
-  image: >-
-    https://images.unsplash.com/photo-1590212151175-e58edd96b8f3?auto=format&fit=crop&q=80&w=1200
+  description: Step-by-step tutorial on fixing 'Out of Memory' errors in Google Chrome. Recover from crashes and prevent future browser failures.
+  image: https://images.unsplash.com/photo-1590212151175-e58edd96b8f3?auto=format&fit=crop&q=80&w=1200
   step:
     - '@type': HowToStep
       name: Find Heavy Tabs
@@ -37,10 +30,8 @@ schema:
       text: Terminate the process and refresh the page to reclaim resources.
     - '@type': HowToStep
       name: Clear Site Cache
-      text: >-
-        Clear the browser cache for that specific site to resolve potential
-        leaks.
-canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
+      text: Clear the browser cache for that specific site to resolve potential leaks.
+canonicalPath: /blog/ultimate-chrome-ram-memory-management-guide
 ---
 
 <img src="/content/images/fix-chrome-out-of-memory-errors/featured.webp" alt="How to Fix 'Out of Memory' Errors in Google Chrome (2026 Guide)" width="1200" height="630" loading="lazy" class="featured-image">

@@ -1,10 +1,7 @@
 ---
 title: 'ClaroRead Chrome Extension: Read&Write Assistive Tech Tested (2026)'
 slug: claroread-chrome-extension
-excerpt: >-
-  I tested ClaroRead for Chrome against 5 other text-to-speech and literacy
-  support extensions. Here is which one provides the best reading support for
-  dyslexia, ESL learners, and accessibility needs.
+excerpt: I tested ClaroRead for Chrome against 5 other text-to-speech and literacy support extensions. Here is which one provides the best reading support for dyslexia, ESL learners, and accessibility needs.
 featured_image: /content/images/claroread-chrome-extension/featured.webp
 category: Productivity & Tools
 tags:
@@ -17,7 +14,7 @@ keywords:
   - claroread chrome extension
   - text to speech chrome
   - reading support extension
-meta_description: "Testing the ClaroRead Chrome extension for text-to-speech accuracy, reading speed, and literacy support features...."
+meta_description: Testing the ClaroRead Chrome extension for text-to-speech accuracy, reading speed, and literacy support features....
 status: published
 published_at: '2026-05-19T18:15:00.609+00:00'
 scheduled_at: '2026-05-19T18:15:00+00:00'
@@ -115,14 +112,14 @@ ClaroRead's free tier is more generous than Read&Write. The basic TTS and highli
 
 | Extension | Why You Need It |
 |-----------|-----------------|
-| [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture text content from pages that ClaroRead cannot read directly |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) | Block pop-ups that interrupt reading flow |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/jejehpnkckligbdmokpmmmffljjpdfe) | Stay on reading pages without being redirected |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/odlodmnoehaemckpnlbngbdljjncebn) | Save articles for offline reading with ClaroRead |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/amnmcjmoihjkpmjeighmjddfonmgoil) | Autofill login for school portals and reading platforms |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free up RAM while ClaroRead processes long documents |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf) | Highlight and save passages alongside ClaroRead's reading |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) | Per-domain contrast to reduce eye strain during long reading sessions |
+| [Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture text content from pages that ClaroRead cannot read directly |
+| [Light Popup Blocker](https: //chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) | Block pop-ups that interrupt reading flow |
+| [Redirect Shield](https: //chromewebstore.google.com/detail/redirect-shield/jejehpnkckligbdmokpmmmffljjpdfe) | Stay on reading pages without being redirected |
+| [Offline Reader Pro](https: //chromewebstore.google.com/detail/offline-reader-pro/odlodmnoehaemckpnlbngbdljjncebn) | Save articles for offline reading with ClaroRead |
+| [SecuraKey Pro](https: //chromewebstore.google.com/detail/securakey-pro/amnmcjmoihjkpmjeighmjddfonmgoil) | Autofill login for school portals and reading platforms |
+| [ProTab Suspender](https: //chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free up RAM while ClaroRead processes long documents |
+| [Glasp](https: //chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf) | Highlight and save passages alongside ClaroRead's reading |
+| [DarkFlow](https: //chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) | Per-domain contrast to reduce eye strain during long reading sessions |
 
 ## FAQ
 

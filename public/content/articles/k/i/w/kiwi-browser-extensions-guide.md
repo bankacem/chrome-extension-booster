@@ -2,9 +2,7 @@
 id: 690f42c5-48e7-49d7-8223-cf6d307d95ff
 title: 'Kiwi Browser Extensions Guide: How to Run Chrome Extensions on Android'
 slug: kiwi-browser-extensions-guide
-excerpt: >-
-  Kiwi Browser lets you run Chrome extensions on Android. I tested 20 extensions
-  on Kiwi over a week. Here is what works, what does not, and how to set it up.
+excerpt: Kiwi Browser lets you run Chrome extensions on Android. I tested 20 extensions on Kiwi over a week. Here is what works, what does not, and how to set it up.
 featured_image: /content/images/kiwi-browser-extensions-guide/featured.webp
 category: Productivity & Tools
 tags: []
@@ -12,7 +10,7 @@ keywords:
   - kiwi browser extensions
   - chrome extensions kiwi
   - kiwi browser android
-meta_description: "Kiwi Browser lets you run Chrome extensions on Android. I tested 20 extensions on Kiwi over a week on my Galaxy S23...."
+meta_description: Kiwi Browser lets you run Chrome extensions on Android. I tested 20 extensions on Kiwi over a week on my Galaxy S23....
 status: published
 published_at: '2026-05-23T14:15:00.217+00:00'
 scheduled_at: '2026-05-23T14:15:00+00:00'
@@ -34,7 +32,7 @@ Kiwi Browser is a Chromium-based Android browser developed by a single developer
 
 The browser also includes features that Chrome for Android lacks: a bottom address bar (essential for one-handed phone use), a built-in ad blocker (disabled by default, enable it in settings), a desktop mode toggle that actually works (it sends desktop user-agent and forces desktop layouts), and support for loading unpacked extensions in developer mode.
 
-Under the hood, Kiwi uses the same Chromium engine as desktop Chrome, updated every 2-4 weeks. This frequent update cycle means extension APIs stay current and security patches arrive quickly. The browser is fully open source with its code available on [GitHub](https://github.com/kiwibrowser/kiwibrowser).
+Under the hood, Kiwi uses the same Chromium engine as desktop Chrome, updated every 2-4 weeks. This frequent update cycle means extension APIs stay current and security patches arrive quickly. The browser is fully open source with its code available on [GitHub](https: //github.com/kiwibrowser/kiwibrowser).
 
 ## Kiwi Extension Compatibility Results
 
@@ -67,9 +65,7 @@ A niche session manager extension that saves and restores tab groups failed enti
 
 ## How to Install Extensions on Kiwi Browser
 
-The installation process takes about 30 seconds per extension and is nearly identical to desktop Chrome:
-
-1. Open Kiwi Browser and navigate to `chrome.google.com/webstore`
+The installation process takes about 30 seconds per extension and is nearly identical to desktop Chrome: 1. Open Kiwi Browser and navigate to `chrome.google.com/webstore`
 2. Tap the three-dot menu (top-right) and enable "Desktop site" — this forces the Chrome Web Store to load its desktop layout, which is required for extension installation
 3. Search for any extension (try Quick Screenshot Lite first — it is the most useful mobile extension)
 4. Tap "Add to Chrome" — the same blue button you see on desktop
@@ -125,14 +121,14 @@ The larger concern is privacy. Yandex Browser routes some traffic through Yandex
 
 | Extension | What It Does | Kiwi Compatibility |
 |---|---|---|
-| [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page & visible area screenshots — the most useful mobile extension | Perfect |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive mobile pop-ups that take over the screen | Perfect |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops malicious redirects that open the Play Store or scam pages | Perfect |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs to save battery and RAM on mobile | Perfect |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save any webpage for offline reading on flights or commutes | Perfect |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords without typing on a phone keyboard | Perfect |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save content while browsing on your phone | Perfect |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable night browsing on OLED screens | Works (no schedule) |
+| [Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page & visible area screenshots — the most useful mobile extension | Perfect |
+| [Light Popup Blocker](https: //chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive mobile pop-ups that take over the screen | Perfect |
+| [Redirect Shield](https: //chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops malicious redirects that open the Play Store or scam pages | Perfect |
+| [ProTab Suspender](https: //chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs to save battery and RAM on mobile | Perfect |
+| [Offline Reader Pro](https: //chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save any webpage for offline reading on flights or commutes | Perfect |
+| [SecuraKey Pro](https: //chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords without typing on a phone keyboard | Perfect |
+| [Glasp](https: //chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save content while browsing on your phone | Perfect |
+| [DarkFlow](https: //chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable night browsing on OLED screens | Works (no schedule) |
 
 Install Quick Screenshot Lite first — it is the one extension that Chrome for Android cannot replace with any built-in feature. Full-page mobile screenshots require a dedicated extension, and Quick Screenshot Lite is the fastest and most reliable option.
 
@@ -140,10 +136,10 @@ Install Quick Screenshot Lite first — it is the one extension that Chrome for 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">
   <h3 class="text-xl font-bold mb-4">Read Next</h3>
   <ul class="space-y-2">
-    <li><a href="/blog/chrome-extensions-on-android-2026-guide" class="text-primary font-medium hover:underline">Chrome Extensions on Android Guide</a></li>
-    <li><a href="/blog/best-chrome-extensions-google-meet" class="text-primary font-medium hover:underline">Best Chrome Extensions for Google Meet</a></li>
-    <li><a href="/blog/kiwi-vs-yandex-vs-lemur-android-extensions" class="text-primary font-medium hover:underline">Kiwi vs Yandex vs Lemur</a></li>
-    <li><a href="/blog/install-chrome-web-store-extensions-android" class="text-primary font-medium hover:underline">Install Web Store Extensions on Android</a></li>
+    <li><a href="/blog/chrome-extensions-on-android-2026-guide" class="text-primary font-medium hover: underline">Chrome Extensions on Android Guide</a></li>
+    <li><a href="/blog/best-chrome-extensions-google-meet" class="text-primary font-medium hover: underline">Best Chrome Extensions for Google Meet</a></li>
+    <li><a href="/blog/kiwi-vs-yandex-vs-lemur-android-extensions" class="text-primary font-medium hover: underline">Kiwi vs Yandex vs Lemur</a></li>
+    <li><a href="/blog/install-chrome-web-store-extensions-android" class="text-primary font-medium hover: underline">Install Web Store Extensions on Android</a></li>
   </ul>
 </div>
 
@@ -151,7 +147,7 @@ Install Quick Screenshot Lite first — it is the one extension that Chrome for 
 
 ### Q: Is Kiwi Browser safe?
 
-Yes. Kiwi Browser is fully open source with its code available on [GitHub](https://github.com/kiwibrowser/kiwibrowser). It has no telemetry, no analytics, no data collection. The developer (Arnaud Granal) has maintained the browser since 2019 and has a transparent track record. Unlike Yandex Browser, Kiwi has no corporate data collection policies. However, since it is maintained by a single developer, security updates depend on one person's availability — a risk inherent to any small open-source project.
+Yes. Kiwi Browser is fully open source with its code available on [GitHub](https: //github.com/kiwibrowser/kiwibrowser). It has no telemetry, no analytics, no data collection. The developer (Arnaud Granal) has maintained the browser since 2019 and has a transparent track record. Unlike Yandex Browser, Kiwi has no corporate data collection policies. However, since it is maintained by a single developer, security updates depend on one person's availability — a risk inherent to any small open-source project.
 
 ### Q: Do Kiwi extensions drain battery faster than Chrome for Android?
 
@@ -179,4 +175,4 @@ Kiwi Browser is the only viable option for running Chrome extensions on Android.
 
 If you use Chrome extensions on desktop and want the same tools on your phone, Kiwi Browser is the answer. Install Quick Screenshot Lite first for capturing full-page mobile screenshots, then add Light Popup Blocker, Redirect Shield, ProTab Suspender, Offline Reader Pro, SecuraKey Pro, Glasp, and DarkFlow to recreate your full desktop workflow on Android.
 
-[Get Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) — Capture full-page mobile screenshots with Kiwi Browser, something Chrome for Android cannot do.
+[Get Quick Screenshot Lite](https: //chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) — Capture full-page mobile screenshots with Kiwi Browser, something Chrome for Android cannot do.
