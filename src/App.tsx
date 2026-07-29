@@ -29,10 +29,19 @@ const App = () => (
           <Sonner />
           <BrowserRouter>
             <Routes>
+              {/* Default English routes */}
               <Route path="/" element={<Index />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/extension/:slug" element={<ExtensionPage />} />
+
+              {/* Multilingual routes */}
+              <Route path="/:lang" element={<Index />} />
+              <Route path="/:lang/blog" element={<Blog />} />
+              <Route path="/:lang/blog/:slug" element={<BlogPost />} />
+              <Route path="/:lang/extension/:slug" element={<ExtensionPage />} />
+
+              {/* Admin and settings routes */}
               <Route path="/admin" element={<AdminLogin />} />
               <Route path="/settings" element={<AdminLogin />} />
               <Route path="/settings/manage" element={<Admin />} />
