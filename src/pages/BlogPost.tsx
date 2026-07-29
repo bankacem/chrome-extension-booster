@@ -18,6 +18,7 @@ import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
+import { Helmet } from "react-helmet-async";
 
 interface Article {
   id: string;
@@ -38,6 +39,7 @@ interface Article {
   related_extension_slug?: string;
   featured_video?: string;
   schema?: any;
+  lang?: string;
 }
 
 const parseMarkdown = (text: string) => {
@@ -99,14 +101,16 @@ const slugToTitle = (slug: string): string => {
 };
 
 const BlogPost = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug, lang } = useParams<{ slug: string; lang?: string }>();
   const [article, setArticle] = useState<Partial<Article> | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [matchedExtension, setMatchedExtension] = useState<Extension | null>(null);
   const [relatedArticles, setRelatedArticles] = useState<Article[]>([]);
+  const [translations, setTranslations] = useState<Array<{ lang: string; slug: string }>>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
 
+  const currentLang = lang || 'en';
   const instantTitle = slug ? slugToTitle(slug) : "Loading Article";
 
   const fetchArticle = useCallback(async () => {
@@ -121,18 +125,31 @@ const BlogPost = () => {
       if (indexRes.ok) {
         allArticles = await indexRes.json() as Article[];
         const normalizedSlug = slug.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-        matched = allArticles.find(a => a.slug === normalizedSlug || a.id === slug) || null;
+
+        // Find article matching slug/ID and language
+        matched = allArticles.find(a => (a.slug === normalizedSlug || a.id === slug) && (a.lang || 'en') === currentLang) || null;
       }
 
       if (matched) {
         setArticle(matched);
-        if (matched.slug !== slug) { window.history.replaceState(null, '', `/blog/${matched.slug}`); }
-        const related = allArticles.filter(a => a.category === matched?.category && a.id !== matched?.id).slice(0, 3);
+        if (matched.slug !== slug) {
+          const newPath = currentLang === 'en' ? `/blog/${matched.slug}` : `/${currentLang}/blog/${matched.slug}`;
+          window.history.replaceState(null, '', newPath);
+        }
+
+        // Find related articles in same language
+        const related = allArticles.filter(a => a.category === matched?.category && a.id !== matched?.id && (a.lang || 'en') === currentLang).slice(0, 3);
         setRelatedArticles(related);
+
+        // Find alternate language translations
+        const otherTranslations = allArticles
+          .filter(a => a.id === matched?.id)
+          .map(a => ({ lang: a.lang || 'en', slug: a.slug }));
+        setTranslations(otherTranslations);
       }
 
       const fetchSlug = matched ? matched.slug : slug;
-      const path = getPartitionedPath(fetchSlug);
+      const path = getPartitionedPath(fetchSlug, currentLang);
       const response = await fetch(path);
       const isHtml = response.headers.get("Content-Type")?.includes("text/html");
 
@@ -162,7 +179,7 @@ const BlogPost = () => {
     } finally {
       setLoading(false);
     }
-  }, [slug]);
+  }, [slug, currentLang]);
 
   useEffect(() => { if (slug) { fetchArticle(); } }, [slug, fetchArticle]);
 
@@ -188,6 +205,8 @@ const BlogPost = () => {
 
   if (loading) { return <div className="min-h-screen bg-background"><Navbar /><div className="text-center pt-32">Loading...</div><Footer /></div>; }
 
+  const canonicalUrlPath = currentLang === 'en' ? `/blog/${article.slug}` : `/${currentLang}/blog/${article.slug}`;
+
   const schemaData = article.title ? {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -210,7 +229,7 @@ const BlogPost = () => {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `${window.location.origin}/blog/${article.slug}`
+      "@id": `${window.location.origin}${canonicalUrlPath}`
     }
   } : null;
 
@@ -234,14 +253,33 @@ const BlogPost = () => {
         "@type": "ListItem",
         "position": 3,
         "name": article.title,
-        "item": `${window.location.origin}/blog/${article.slug}`
+        "item": `${window.location.origin}${canonicalUrlPath}`
       }
     ]
   } : null;
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO title={article.title} description={article.meta_description || article.excerpt || undefined} canonicalPath={`/blog/${article.slug}`} ogType="article" />
+      <SEO title={article.title} description={article.meta_description || article.excerpt || undefined} canonicalPath={canonicalUrlPath} ogType="article" />
+      <Helmet>
+        {/* Localization Link Alternates */}
+        {translations.map(t => (
+          <link
+            key={t.lang}
+            rel="alternate"
+            hrefLang={t.lang}
+            href={`https://extensionto.com${t.lang === 'en' ? '' : `/${t.lang}`}/blog/${t.slug}`}
+          />
+        ))}
+        {/* x-default fallback to English version */}
+        {translations.some(t => t.lang === 'en') && (
+          <link
+            rel="alternate"
+            hrefLang="x-default"
+            href={`https://extensionto.com/blog/${translations.find(t => t.lang === 'en')?.slug}`}
+          />
+        )}
+      </Helmet>
       {schemaData && <SchemaMarkup data={schemaData} />}
       {breadcrumbData && <SchemaMarkup data={breadcrumbData} />}
       <Navbar />
