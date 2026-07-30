@@ -23,6 +23,8 @@ interface Article {
   id: string;
   title: string;
   slug: string;
+  lang?: string;
+  filePath?: string;
   content: string;
   excerpt: string;
   featured_image: string;
@@ -99,8 +101,9 @@ const slugToTitle = (slug: string): string => {
 };
 
 const BlogPost = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { lang = "en", slug } = useParams<{ lang?: string; slug: string }>();
   const [article, setArticle] = useState<Partial<Article> | null>(null);
+  const [translations, setTranslations] = useState<{ lang: string; slug: string }[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [matchedExtension, setMatchedExtension] = useState<Extension | null>(null);
   const [relatedArticles, setRelatedArticles] = useState<Article[]>([]);
@@ -117,22 +120,43 @@ const BlogPost = () => {
       const indexRes = await fetch("/content/articles-index.json");
       let matched: Article | null = null;
       let allArticles: Article[] = [];
+      let matchedTranslations: { lang: string; slug: string }[] = [];
 
       if (indexRes.ok) {
         allArticles = await indexRes.json() as Article[];
         const normalizedSlug = slug.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-        matched = allArticles.find(a => a.slug === normalizedSlug || a.id === slug) || null;
+        const targetLang = lang.toLowerCase();
+
+        matched = allArticles.find(a =>
+          (a.slug === normalizedSlug || a.id === slug) &&
+          (a.lang || 'en').toLowerCase() === targetLang
+        ) || null;
+
+        // If not found with target language, try matching by slug only as fallback
+        if (!matched) {
+          matched = allArticles.find(a => a.slug === normalizedSlug || a.id === slug) || null;
+        }
+
+        if (matched) {
+          matchedTranslations = allArticles
+            .filter(a => a.id === matched?.id && (a.lang || 'en') !== (matched?.lang || 'en'))
+            .map(a => ({ lang: a.lang || 'en', slug: a.slug }));
+        }
       }
 
       if (matched) {
         setArticle(matched);
-        if (matched.slug !== slug) { window.history.replaceState(null, '', `/blog/${matched.slug}`); }
+        setTranslations(matchedTranslations);
+        const currentPrefix = matched.lang && matched.lang !== 'en' ? `/${matched.lang}` : '';
+        if (matched.slug !== slug) {
+          window.history.replaceState(null, '', `${currentPrefix}/blog/${matched.slug}`);
+        }
         const related = allArticles.filter(a => a.category === matched?.category && a.id !== matched?.id).slice(0, 3);
         setRelatedArticles(related);
       }
 
       const fetchSlug = matched ? matched.slug : slug;
-      const path = getPartitionedPath(fetchSlug);
+      const path = matched?.filePath || getPartitionedPath(fetchSlug);
       const response = await fetch(path);
       const isHtml = response.headers.get("Content-Type")?.includes("text/html");
 
@@ -162,7 +186,7 @@ const BlogPost = () => {
     } finally {
       setLoading(false);
     }
-  }, [slug]);
+  }, [slug, lang]);
 
   useEffect(() => { if (slug) { fetchArticle(); } }, [slug, fetchArticle]);
 
@@ -239,9 +263,19 @@ const BlogPost = () => {
     ]
   } : null;
 
+  const langPrefix = article.lang && article.lang !== 'en' ? `/${article.lang}` : '';
+  const canonicalPath = `${langPrefix}/blog/${article.slug}`;
+
   return (
     <div className="min-h-screen bg-background">
-      <SEO title={article.title} description={article.meta_description || article.excerpt || undefined} canonicalPath={`/blog/${article.slug}`} ogType="article" />
+      <SEO
+        title={article.title}
+        description={article.meta_description || article.excerpt || undefined}
+        canonicalPath={canonicalPath}
+        ogType="article"
+        translations={translations}
+        lang={article.lang || 'en'}
+      />
       {schemaData && <SchemaMarkup data={schemaData} />}
       {breadcrumbData && <SchemaMarkup data={breadcrumbData} />}
       <Navbar />

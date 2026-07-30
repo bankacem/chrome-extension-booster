@@ -10,6 +10,8 @@ interface SEOProps {
   articlePublishedTime?: string;
   articleAuthor?: string;
   noindex?: boolean;
+  translations?: { lang: string; slug: string }[];
+  lang?: string;
 }
 
 const SITE_NAME = "ExtensionTo";
@@ -27,6 +29,8 @@ const SEO = ({
   articlePublishedTime,
   articleAuthor,
   noindex,
+  translations = [],
+  lang = "en",
 }: SEOProps) => {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} - Powerful Chrome Extensions for Productivity`;
 
@@ -36,9 +40,13 @@ const SEO = ({
     : "";
   const canonicalUrl = `${SITE_URL}${safePath}`;
 
+  // Find the English slug to use as the x-default
+  const englishTranslation = translations.find(t => t.lang === 'en');
+  const defaultSlug = englishTranslation ? englishTranslation.slug : (lang === 'en' ? canonicalPath.split('/').pop() : '');
+
   return (
     <Helmet>
-      <html lang="en" />
+      <html lang={lang} />
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>{fullTitle}</title>
@@ -46,6 +54,38 @@ const SEO = ({
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={canonicalUrl} />
+
+      {/* Multilingual Alternate hreflang links */}
+      {translations.map((trans) => {
+        const prefix = trans.lang === 'en' ? '' : `/${trans.lang}`;
+        const href = `${SITE_URL}${prefix}/blog/${trans.slug}`;
+        return (
+          <link
+            key={trans.lang}
+            rel="alternate"
+            hrefLang={trans.lang}
+            href={href}
+          />
+        );
+      })}
+
+      {/* Self-referential hreflang for the current language */}
+      {translations.length > 0 && (
+        <link
+          rel="alternate"
+          hrefLang={lang}
+          href={canonicalUrl}
+        />
+      )}
+
+      {/* x-default alternate link for search engines */}
+      {defaultSlug && (
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href={`${SITE_URL}/blog/${defaultSlug}`}
+        />
+      )}
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
