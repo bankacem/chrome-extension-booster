@@ -8,6 +8,8 @@ interface ArticleIndexItem {
   id: string;
   title: string;
   slug: string;
+  lang?: string;
+  filePath?: string;
   description: string;
   meta_description?: string;
   excerpt?: string;
@@ -91,6 +93,8 @@ async function rebuildIndex() {
 
       const normalizedSlug = normalizeSlug(rawSlug);
       const id = String(metadata.id || normalizedSlug);
+      const lang = String(metadata.lang || 'en').toLowerCase();
+      const relPath = '/' + path.relative(path.join(process.cwd(), 'public'), filePath).replace(/\\/g, '/');
 
       // Clean up title and description from potential multiline/YAML artifacts
       const cleanTitle = String(metadata.title || '')
@@ -101,10 +105,13 @@ async function rebuildIndex() {
         .replace(/\s+/g, ' ')
         .trim();
 
+      const langPrefix = lang === 'en' ? '' : `/${lang}`;
       const newItem: ArticleIndexItem = {
         id: id,
         title: cleanTitle,
         slug: normalizedSlug,
+        lang: lang,
+        filePath: relPath,
         description: cleanMetaDescription,
         meta_description: cleanMetaDescription,
         excerpt: (metadata.excerpt || metadata.description || '') as string,
@@ -118,36 +125,38 @@ async function rebuildIndex() {
         views: (metadata.views || 0) as number,
         tags: (metadata.tags || []) as string[],
         keywords: (metadata.keywords || []) as string[],
-        canonicalPath: (metadata.canonicalPath || `/blog/${normalizedSlug}`) as string,
+        canonicalPath: (metadata.canonicalPath || `${langPrefix}/blog/${normalizedSlug}`) as string,
         updated_at: (metadata.updated_at || metadata.published_at || new Date().toISOString()) as string
       };
 
-      // Deduplication by ID — keep newest
-      const existing = idMap.get(id);
+      // Deduplication by ID and Lang — keep newest
+      const idKey = `${id}-${lang}`;
+      const existing = idMap.get(idKey);
       if (existing) {
         const existingDate = new Date(existing.updated_at).getTime();
         const newDate = new Date(newItem.updated_at).getTime();
         if (newDate > existingDate) {
-          idMap.set(id, newItem);
+          idMap.set(idKey, newItem);
         }
       } else {
-        idMap.set(id, newItem);
+        idMap.set(idKey, newItem);
       }
     } catch (e) {
       console.error(`[Index] Error processing ${filePath}:`, e);
     }
   }
 
-  // Deduplicate by slug — keep newest
+  // Deduplicate by slug and Lang — keep newest
   const slugMap = new Map<string, ArticleIndexItem>();
   for (const item of idMap.values()) {
-    const existing = slugMap.get(item.slug);
+    const slugKey = `${item.slug}-${item.lang}`;
+    const existing = slugMap.get(slugKey);
     if (existing) {
       const existingDate = new Date(existing.updated_at).getTime();
       const newDate = new Date(item.updated_at).getTime();
-      if (newDate > existingDate) slugMap.set(item.slug, item);
+      if (newDate > existingDate) slugMap.set(slugKey, item);
     } else {
-      slugMap.set(item.slug, item);
+      slugMap.set(slugKey, item);
     }
   }
 

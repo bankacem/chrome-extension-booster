@@ -1,25 +1,68 @@
 import { Chrome, Github, Twitter, Linkedin, Mail, Settings } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Footer = () => {
+  const { lang = "en" } = useParams<{ lang?: string }>();
+  const langPrefix = lang === "en" ? "" : `/${lang}`;
+
+  const t: Record<string, string> = lang === "ar" ? {
+    brandDesc: "نبني إضافات كروم قوية تعزز الإنتاجية، وتحمي الخصوصية، وتغير تجربة التصفح الخاصة بك.",
+    product: "المنتج",
+    allExtensions: "جميع الإضافات",
+    pricing: "الأسعار",
+    changelog: "سجل التغييرات",
+    roadmap: "خارطة الطريق",
+    resources: "المصادر",
+    blog: "المدونة",
+    documentation: "التوثيق",
+    helpCenter: "مركز المساعدة",
+    community: "المجتمع",
+    company: "الشركة",
+    about: "حول",
+    contact: "اتصل بنا",
+    privacy: "سياسة الخصوصية",
+    terms: "شروط الخدمة",
+    rights: "© 2024 ExtensionTo. جميع الحقوق محفوظة.",
+    madeWith: "صُنع بـ ❤️ لمستخدمي كروم حول العالم",
+  } : {
+    brandDesc: "Building powerful Chrome extensions that enhance productivity, protect privacy, and transform your browsing experience.",
+    product: "Product",
+    allExtensions: "All Extensions",
+    pricing: "Pricing",
+    changelog: "Changelog",
+    roadmap: "Roadmap",
+    resources: "Resources",
+    blog: "Blog",
+    documentation: "Documentation",
+    helpCenter: "Help Center",
+    community: "Community",
+    company: "Company",
+    about: "About",
+    contact: "Contact",
+    privacy: "Privacy Policy",
+    terms: "Terms of Service",
+    rights: "© 2024 ExtensionTo. All rights reserved.",
+    madeWith: "Made with ❤️ for Chrome users worldwide",
+  };
+
   const footerLinks = {
     product: [
-      { label: "All Extensions", href: "#extensions" },
-      { label: "Pricing", href: "#" },
-      { label: "Changelog", href: "#" },
-      { label: "Roadmap", href: "#" },
+      { label: t.allExtensions, href: `${langPrefix}/#extensions` },
+      { label: t.pricing, href: "#" },
+      { label: t.changelog, href: "#" },
+      { label: t.roadmap, href: "#" },
     ],
     resources: [
-      { label: "Blog", href: "/blog" },
-      { label: "Documentation", href: "#" },
-      { label: "Help Center", href: "#" },
-      { label: "Community", href: "#" },
+      { label: t.blog, href: `${langPrefix}/blog` },
+      { label: t.documentation, href: "#" },
+      { label: t.helpCenter, href: "#" },
+      { label: t.community, href: "#" },
     ],
     company: [
-      { label: "About", href: "#" },
-      { label: "Contact", href: "#contact" },
-      { label: "Privacy Policy", href: "/privacy" },
-      { label: "Terms of Service", href: "/terms" },
+      { label: t.about, href: "#" },
+      { label: t.contact, href: `${langPrefix}/#contact` },
+      { label: t.privacy, href: "/privacy" },
+      { label: t.terms, href: "/terms" },
     ],
   };
 
@@ -32,19 +75,18 @@ const Footer = () => {
 
   return (
     <footer className="border-t border-border/50 bg-card/50">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-12" dir={lang === "ar" ? "rtl" : "ltr"}>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="/" className="mb-4 flex items-center gap-2">
+            <Link to={langPrefix === "" ? "/" : langPrefix} className="mb-4 flex items-center gap-2">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent">
                 <Chrome className="h-5 w-5 text-primary-foreground" />
               </div>
               <span className="font-heading text-xl font-bold">ExtensionTo</span>
-            </a>
+            </Link>
             <p className="mb-6 max-w-sm text-sm text-muted-foreground">
-              Building powerful Chrome extensions that enhance productivity, 
-              protect privacy, and transform your browsing experience.
+              {t.brandDesc}
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -62,7 +104,7 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="mb-4 font-heading font-semibold">Product</h4>
+            <h4 className="mb-4 font-heading font-semibold">{t.product}</h4>
             <ul className="space-y-2">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
@@ -78,7 +120,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="mb-4 font-heading font-semibold">Resources</h4>
+            <h4 className="mb-4 font-heading font-semibold">{t.resources}</h4>
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
@@ -94,7 +136,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="mb-4 font-heading font-semibold">Company</h4>
+            <h4 className="mb-4 font-heading font-semibold">{t.company}</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -113,11 +155,11 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © 2024 ExtensionTo. All rights reserved.
+            {t.rights}
           </p>
           <div className="flex items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              Made with ❤️ for Chrome users worldwide
+              {t.madeWith}
             </p>
             <Link 
               to="/settings" 

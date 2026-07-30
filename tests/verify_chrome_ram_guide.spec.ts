@@ -11,15 +11,15 @@ test('verify chrome-ram-guide rendering', async ({ page }) => {
   expect(title).toContain('The Ultimate Chrome RAM Usage Guide');
 
   // Check for the Comparison Table
-  const table = await page.locator('table');
+  const table = await page.locator('table').first();
   await expect(table).toBeVisible();
 
-  // Check for Pro-Tip box specifically
-  const proTip = await page.locator('div:has-text("Pro-Tip")').last();
-  await expect(proTip).toBeVisible();
+  // Check for Best RAM Optimization Setup
+  const setupSection = await page.locator('h2:has-text("Best RAM Optimization Setup")');
+  await expect(setupSection).toBeVisible();
 
   // Check for FAQ
-  const faq = await page.locator('h2:has-text("Frequently Asked Questions")');
+  const faq = await page.locator('h2:has-text("FAQ")');
   await expect(faq).toBeVisible();
 
   // Take a screenshot
