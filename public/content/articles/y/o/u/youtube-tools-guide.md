@@ -25,7 +25,7 @@ YouTube is the world's largest video platform, but the default experience can be
 
 ## Must-Have YouTube Enhancements
 - [Best YouTube to MP3 Chrome Extensions](/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters)
-- [How to Block YouTube Ads with Ghostery](/blog/how-to-block-youtube-ads-with-ghostery-extension-a-comprehensive-guide-mmb7lt82vtf)
+- [How to Block YouTube Ads with Ghostery](/blog/how-to-block-youtube-ads-with-ghostery-extension)
 - [Enable YouTube Dark Mode Desktop in 30 Seconds](/blog/youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds)
 
 ## Security and Safety Warning
