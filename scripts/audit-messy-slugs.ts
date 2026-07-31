@@ -58,6 +58,10 @@ function stripFiller(title: string): string {
   // below flag anything still too long for manual review instead of guessing.
   t = t.replace(FILLER_PHRASE_RE, "").replace(/\s{2,}/g, " ");
   t = t.replace(/([:\-–—])\s*(to|for|on)\s+/i, "$1 ");
+  // Same dangling connector word, but at the very start of the string
+  // (e.g. "The Ultimate Guide to Finding X" -> "to Finding X" after the
+  // phrase above is removed) - strip it there too.
+  t = t.replace(/^(to|for|on)\s+/i, "");
   t = t.replace(/\s*[:\-–—]\s*$/, "");
   return t.replace(/\s{2,}/g, " ").trim();
 }

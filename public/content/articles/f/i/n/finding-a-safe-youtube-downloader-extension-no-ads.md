@@ -1,7 +1,7 @@
 ---
 id: 03bd5c87-c237-473d-9554-5760276858bd
 title: The Ultimate Guide to Finding a Safe YouTube Downloader Extension No Ads
-slug: to-finding-a-safe-youtube-downloader-extension-no-ads
+slug: finding-a-safe-youtube-downloader-extension-no-ads
   the-ultimate-guide-to-finding-a-safe-youtube-downloader-extension-no-ads-mliju6qrdal
 excerpt: >-
   In an era where digital content consumption is at an all-time high, the demand

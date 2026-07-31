@@ -1,7 +1,7 @@
 ---
 id: 06e00933-1c6e-4e6d-b2ea-b8bee6898625
 title: The Ultimate Guide to Finding a Download YouTube Audio Chrome Extension Free
-slug: to-finding-a-download-youtube-audio-chrome-extension-free
+slug: finding-a-download-youtube-audio-chrome-extension-free
   the-ultimate-guide-to-finding-a-download-youtube-audio-chrome-extension-free-mliju6wmncq
 excerpt: >-
   In the digital age, audio content has become a cornerstone of our daily

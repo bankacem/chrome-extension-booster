@@ -1,7 +1,7 @@
 ---
 id: 70b80012-4470-4af5-9d11-8ace8d3fd4c0
 title: The Ultimate Guide to Choosing a YouTube Video Downloader for PC Chrome
-slug: to-choosing-a-youtube-video-downloader-for-pc-chrome
+slug: choosing-a-youtube-video-downloader-for-pc-chrome
   the-ultimate-guide-to-choosing-a-youtube-video-downloader-for-pc-chrome-mliju74r9ry
 excerpt: >-
   In the modern digital landscape, video content has become the primary medium
