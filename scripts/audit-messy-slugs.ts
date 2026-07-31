@@ -78,6 +78,20 @@ function slugify(text: string): string {
     .replace(/^-|-$/g, "");
 }
 
+function getPartitionedPath(slug: string): string {
+  return path.join(process.cwd(), "public", "content", "articles", slug[0], slug[1], slug[2], `${slug}.md`);
+}
+
+async function getSeoTitle(slug: string): Promise<string | null> {
+  try {
+    const raw = await fs.readFile(getPartitionedPath(slug), "utf-8");
+    const m = raw.match(/^seo_title:\s*"((?:[^"\\]|\\.)*)"\s*$/m);
+    return m ? m[1].replace(/\\"/g, '"') : null;
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
   const articles: Array<{ slug: string; title: string; seo_title?: string }> = await fs.readJson(
     INDEX_JSON_PATH
@@ -86,7 +100,7 @@ async function main() {
   const existingSlugs = new Set(articles.map((a) => a.slug));
   const proposedSlugCounts = new Map<string, number>();
 
-  const rows: string[] = ["old_slug,title,proposed_slug,status"];
+  const rows: string[] = ["old_slug,title,proposed_slug,status,basis_source"];
   let flagged = 0;
   let needsReview = 0;
 
@@ -95,8 +109,9 @@ async function main() {
     if (!isMessySuffix(lastSeg)) continue;
     flagged++;
 
-    const basis = a.seo_title || a.title || a.slug;
-    const defillered = stripFiller(basis);
+    const seoTitle = await getSeoTitle(a.slug);
+    const basis = seoTitle || a.title || a.slug;
+    const defillered = seoTitle ? seoTitle : stripFiller(basis);
     let candidate = slugify(defillered.length >= 6 ? defillered : basis);
 
     let status = "ok";
@@ -124,7 +139,7 @@ async function main() {
       }
     }
 
-    rows.push([a.slug, csvEscape(a.title), candidate, status].join(","));
+    rows.push([a.slug, csvEscape(a.title), candidate, status, seoTitle ? "seo_title" : "title"].join(","));
   }
 
   await fs.writeFile(OUT_CSV, rows.join("\n"), "utf-8");
