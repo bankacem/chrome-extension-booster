@@ -22,6 +22,7 @@ import remarkGfm from "remark-gfm";
 interface Article {
   id: string;
   title: string;
+  seo_title?: string;
   slug: string;
   content: string;
   excerpt: string;
@@ -241,7 +242,17 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO title={article.title} description={article.meta_description || article.excerpt || undefined} canonicalPath={`/blog/${article.slug}`} ogType="article" />
+      <SEO
+        title={article.seo_title || article.title}
+        description={article.meta_description || article.excerpt || undefined}
+        canonicalPath={`/blog/${article.slug}`}
+        ogType="article"
+        ogImage={
+          article.featured_image
+            ? `${window.location.origin}${resolveImagePath(article.featured_image)}`
+            : undefined
+        }
+      />
       {schemaData && <SchemaMarkup data={schemaData} />}
       {breadcrumbData && <SchemaMarkup data={breadcrumbData} />}
       <Navbar />

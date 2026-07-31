@@ -186,7 +186,8 @@ async function main() {
     }
 
     const { frontmatter, content } = parseMarkdown(raw);
-    const title: string = String(frontmatter.title || a.title || slug).replace(/\s+/g, " ").trim();
+    const fullTitle: string = String(frontmatter.title || a.title || slug).replace(/\s+/g, " ").trim();
+    const seoTitle: string = String(frontmatter.seo_title || fullTitle).replace(/\s+/g, " ").trim();
     const description: string = String(
       frontmatter.meta_description || a.meta_description || frontmatter.excerpt || a.excerpt || a.description || ""
     ).replace(/\s+/g, " ").trim();
@@ -194,14 +195,16 @@ async function main() {
     const publishedTime = frontmatter.published_at || a.published_at;
 
     const head = buildHead({
-      title,
+      title: seoTitle,
       description,
       canonicalPath: `/blog/${slug}`,
       ogImage,
       publishedTime,
       author: frontmatter.author || a.author,
     });
-    const schema = buildSchema({ ...a, slug }, title, description, ogImage);
+    // Schema.org headline/breadcrumb reflect the real editorial title (matches the
+    // on-page H1), while the <title>/OG tags above use the shortened seoTitle.
+    const schema = buildSchema({ ...a, slug }, fullTitle, description, ogImage);
 
     let bodyHtml = "";
     try {
@@ -210,7 +213,7 @@ async function main() {
       console.warn(`  ! Failed to render markdown for ${slug}:`, (e as Error).message);
     }
 
-    const articleHtml = `<article><h1>${escapeHtml(title)}</h1>${bodyHtml}</article>`;
+    const articleHtml = `<article><h1>${escapeHtml(fullTitle)}</h1>${bodyHtml}</article>`;
 
     let html = template
       .replace(/<title>[\s\S]*?<\/title>/, "")
