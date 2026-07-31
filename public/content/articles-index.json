@@ -1326,26 +1326,6 @@
     "updated_at": "2026-06-08"
   },
   {
-    "id": "1111111111111111111111111111111",
-    "title": "",
-    "slug": "1111111111111111111111111111111",
-    "description": "",
-    "meta_description": "",
-    "excerpt": "",
-    "published_at": "2026-06-07",
-    "category": "Uncategorized",
-    "author": "Admin",
-    "image_url": "/content/images/1111111111111111111111111111111.jpg",
-    "featured_image": "/content/images/1111111111111111111111111111111.jpg",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [],
-    "canonicalPath": "/blog/1111111111111111111111111111111",
-    "updated_at": "2026-06-07"
-  },
-  {
     "id": "quick-screenshot-capture-extension",
     "title": "Quick Screenshot Lite Review: I Tested 4 Screenshot Extensions for Chrome for 2 Weeks",
     "slug": "quick-screenshot-capture-extension",

@@ -25,6 +25,11 @@
   ],
   "redirects": [
     {
+      "source": "/blog/1111111111111111111111111111111",
+      "destination": "/blog/chrome-popup-blocker-master-guide",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
