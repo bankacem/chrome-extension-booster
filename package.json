@@ -14,7 +14,7 @@
     "sync-db-to-md": "bun scripts/sync-db-to-md.ts",
     "index-sitemap": "bun scripts/index-sitemap.ts",
     "publish": "bun run sync-db-to-md && bun run sync-articles && git add -A && git commit -m \"chore: publish articles\" && git push",
-    "postbuild": "npx tsx scripts/generate-sitemap.ts",
+    "postbuild": "npx tsx scripts/generate-sitemap.ts && npx tsx scripts/prerender-articles.ts",
     "pre-commit": "bun run sync-db-to-md && bun run sync-articles",
     "optimize": "node scripts/local-asset-optimizer.mjs",
     "optimize:test": "node scripts/local-asset-optimizer.mjs --test"
@@ -98,6 +98,7 @@
     "globals": "^15.15.0",
     "gray-matter": "^4.0.3",
     "lovable-tagger": "^1.1.11",
+    "marked": "^18.0.7",
     "postcss": "^8.5.6",
     "sharp": "^0.33.5",
     "tailwindcss": "^3.4.17",
