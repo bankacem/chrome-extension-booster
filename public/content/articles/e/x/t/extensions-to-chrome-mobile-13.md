@@ -1,4 +1,5 @@
 ---
+seo_title: "Extensions to Chrome Mobile"
 id: 6682a03d-b889-4b50-afca-c2101e8be683
 title: 'Unlock the Full Potential of Your Browser: Extensions to Chrome Mobile'
 slug: extensions-to-chrome-mobile-13

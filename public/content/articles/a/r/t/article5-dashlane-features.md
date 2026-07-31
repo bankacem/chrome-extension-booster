@@ -1,4 +1,5 @@
 ---
+seo_title: "Dashlane Chrome Extension Features in 2026"
 slug: article5-dashlane-features
 status: published
 published_at: '2026-06-30'

@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT Extension for Chrome"
 id: 09c0b551-aa69-4eac-98c3-4d0dafebc170
 title: 'ChatGPT Extension for Chrome: Full 2026 Guide – Setup, Features & Best Alternatives'
 slug: chatgpt-extension-chrome-guide

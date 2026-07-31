@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Block Pop-Under Ads and Redirects"
 id: 663532f8-3392-4392-ad52-93566ac2feab
 title: 'How to Block Pop-Under Ads and Redirects: A Comprehensive Guide'
 slug: how-to-block-pop-under-ads-and-redirects-a-comprehensive-guide

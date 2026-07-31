@@ -1,4 +1,5 @@
 ---
+seo_title: "Save YouTube Audio Chrome Extension"
 id: 7db70c4a-d0e5-4303-a1eb-ec487434ca85
 title: >-
   Save YouTube Audio Chrome Extension: A Comprehensive Guide to Extracting Audio

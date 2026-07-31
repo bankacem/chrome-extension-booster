@@ -1,4 +1,5 @@
 ---
+seo_title: "ClaroRead Chrome Extension"
 title: 'ClaroRead Chrome Extension: Read&Write Assistive Tech Tested (2026)'
 slug: claroread-chrome-extension
 excerpt: >-

@@ -1,4 +1,5 @@
 ---
+seo_title: "📌 ChatGPT Side Panel Chrome Extensions (2026)"
 slug: deepseek-markdown-20260603-80b899
 status: published
 published_at: '2026-07-14'

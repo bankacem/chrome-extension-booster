@@ -1,4 +1,5 @@
 ---
+seo_title: "The Ultimate Screenshot Tool for Chrome"
 id: 84d0ca13-516c-4c3b-b65a-901934013939
 title: >-
   Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool for

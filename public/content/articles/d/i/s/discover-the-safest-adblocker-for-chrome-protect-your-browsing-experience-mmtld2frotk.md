@@ -1,4 +1,5 @@
 ---
+seo_title: "Discover the Safest Adblocker for Chrome"
 id: 6f7534f2-509f-4b60-af5d-800bf1c2f1a6
 title: 'Discover the Safest Adblocker for Chrome: Protect Your Browsing Experience'
 slug: >-

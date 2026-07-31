@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Add Extensions to Chrome Mobile"
 id: 6d7ad6af-e985-4ddb-8955-a99381a5719b
 title: 'How to Add Extensions to Chrome Mobile: A Step-by-Step Guide'
 slug: how-to-add-extensions-to-chrome-mobile-a-step-by-step-guide-mmthoys728s

@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Translator Chrome Extension Free"
 slug: deepseek-markdown-20260603-266737
 status: published
 published_at: '2026-07-05'

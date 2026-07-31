@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Extension to Reduce Chrome RAM Usage"
 id: db7ed793-7af8-4b67-af73-61c13b1faf85
 title: 'Best Extension to Reduce Chrome RAM Usage: Boosting Browser Performance'
 slug: >-

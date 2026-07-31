@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Privacy Extensions 2026"
 id: 954ea46d-09c0-41e5-81bc-f80d25ba70fc
 title: 'Best Chrome Privacy Extensions 2026: Ghostery, uBlock & More'
 slug: best-chrome-privacy-extensions-2026-complete-guide

@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome vs. Edge vs. Brave"
 title: 'Chrome vs. Edge vs. Brave: Which Uses Least RAM in 2026?'
 slug: chrome-vs-edge-vs-brave-ram-comparison
 excerpt: >-

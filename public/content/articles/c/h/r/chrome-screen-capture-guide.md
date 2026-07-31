@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Screen Capture Guide"
 title: 'Chrome Screen Capture Guide: How to Take, Edit, and Manage Screenshots in 2026'
 slug: chrome-screen-capture-guide
 excerpt: >-

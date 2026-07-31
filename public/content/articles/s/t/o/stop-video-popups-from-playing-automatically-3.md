@@ -1,4 +1,5 @@
 ---
+seo_title: "Stop Video Popups from Playing Automatically"
 id: 70580db7-f05a-4c38-a4ff-224839e813bb
 title: 'Stop Video Popups from Playing Automatically: A Comprehensive Guide'
 slug: stop-video-popups-from-playing-automatically-3

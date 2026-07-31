@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT for Slack Integration Chrome"
 slug: article-17-chatgpt-slack-integration
 status: published
 published_at: '2026-06-16'

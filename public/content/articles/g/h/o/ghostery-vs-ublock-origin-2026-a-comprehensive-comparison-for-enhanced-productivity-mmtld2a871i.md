@@ -1,4 +1,5 @@
 ---
+seo_title: "Ghostery vs uBlock Origin 2026"
 id: 593a3bee-f94b-4b9d-ae54-a94088caf3c0
 title: >-
   Ghostery vs uBlock Origin 2026: A Comprehensive Comparison for Enhanced

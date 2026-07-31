@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock the Power of YouTube Dark Mode"
 id: 670e574d-8e63-40ee-acc0-0b8bb7b361a9
 title: >-
   Unlock the Power of YouTube Dark Mode: The Ultimate Guide to YouTube Dark Mode

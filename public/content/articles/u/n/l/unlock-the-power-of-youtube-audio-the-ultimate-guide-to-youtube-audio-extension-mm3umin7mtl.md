@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock the Power of YouTube Audio"
 id: 754890db-d2db-4824-8c71-b0bf310dc6a6
 title: >-
   Unlock the Power of YouTube Audio: The Ultimate Guide to YouTube Audio

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Extension Chrome CORS"
 id: df9642d1-b9b0-49da-8cab-eadc0bc27429
 title: 'Unlocking the Power of Extension Chrome CORS: A Comprehensive Guide'
 slug: extension-chrome-cors

@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Update Chrome Extensions"
 id: 9d759039-67ca-4ad0-9417-5b79b2397a7a
 title: >-
   How to Update Chrome Extensions: A Step-by-Step Guide to Enhancing Your

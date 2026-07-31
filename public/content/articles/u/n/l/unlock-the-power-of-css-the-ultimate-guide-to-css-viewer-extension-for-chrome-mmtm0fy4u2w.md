@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock the Power of CSS"
 id: 58dea4c5-6772-465e-8e0c-8d2916954281
 title: 'Unlock the Power of CSS: The Ultimate Guide to CSS Viewer Extension for Chrome'
 slug: >-

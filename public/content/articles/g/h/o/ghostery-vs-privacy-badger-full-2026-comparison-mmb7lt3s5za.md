@@ -1,4 +1,5 @@
 ---
+seo_title: "Ghostery vs Privacy Badger"
 id: 23e8d31b-b72b-4dda-a8e9-86ad742d29b4
 title: 'Ghostery vs Privacy Badger: Full 2026 Comparison'
 slug: ghostery-vs-privacy-badger-full-2026-comparison-mmb7lt3s5za

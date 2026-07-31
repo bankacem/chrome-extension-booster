@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Web Store Extensions Guide"
 id: bfe092dd-c184-4d16-8e62-f6c2e79cc1bc
 title: >-
   Chrome Web Store Extensions Guide: 42 Extensions Tested — Here Are the 10 You

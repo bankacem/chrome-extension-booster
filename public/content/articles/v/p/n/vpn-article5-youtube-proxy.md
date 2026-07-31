@@ -1,4 +1,5 @@
 ---
+seo_title: "Free Proxy Chrome Extension for YouTube 2026"
 slug: vpn-article5-youtube-proxy
 status: published
 published_at: '2026-08-08'

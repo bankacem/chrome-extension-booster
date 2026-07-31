@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Chrome Extension for Analytics"
 id: f5088066-ec37-49ec-8e8c-04b31694dc25
 title: 'Unlocking the Power of Data Analysis: The Best Chrome Extension for Analytics'
 slug: >-

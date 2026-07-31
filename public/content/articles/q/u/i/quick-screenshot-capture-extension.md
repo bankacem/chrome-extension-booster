@@ -1,4 +1,5 @@
 ---
+seo_title: "Quick Screenshot Lite Review"
 title: 'Quick Screenshot Lite Review: I Tested 4 Screenshot Extensions for Chrome for 2 Weeks'
 slug: quick-screenshot-capture-extension
 excerpt: >-

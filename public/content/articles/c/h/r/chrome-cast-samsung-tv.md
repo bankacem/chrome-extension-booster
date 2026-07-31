@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Cast Chrome to Samsung Smart TV"
 id: 84397935-0778-4622-bb17-4d825031314b
 title: 'How to Cast Chrome to Samsung Smart TV: Complete Guide for 2026'
 slug: chrome-cast-samsung-tv

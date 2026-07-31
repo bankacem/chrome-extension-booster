@@ -1,4 +1,5 @@
 ---
+seo_title: "Best AI Formula Generator for Google Sheets"
 id: 8f092d18-e38b-4098-9488-96a02f6f3627
 title: >-
   Best AI Formula Generator for Google Sheets: Enhancing Productivity with

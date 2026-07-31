@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock the Power of Ad Blocking on Android"
 id: b0bb3134-1ed7-4532-84e0-1002bd62cf32
 title: >-
   Unlock the Power of Ad Blocking on Android: A Comprehensive Guide to Adblock

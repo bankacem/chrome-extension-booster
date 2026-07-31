@@ -1,4 +1,5 @@
 ---
+seo_title: "Download Video Instagram Chrome Extension"
 id: 78eee35e-3d86-45d7-af0e-871ce07ffc90
 title: >-
   Download Video Instagram Chrome Extension: The Ultimate Guide to Saving Your

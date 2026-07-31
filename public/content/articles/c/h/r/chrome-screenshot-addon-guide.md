@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Screenshot Addon Guide"
 id: c263fced-6ece-48ac-88e0-afc0a0940b59
 title: >-
   Chrome Screenshot Addon Guide: How to Capture, Annotate, and Share Like a Pro

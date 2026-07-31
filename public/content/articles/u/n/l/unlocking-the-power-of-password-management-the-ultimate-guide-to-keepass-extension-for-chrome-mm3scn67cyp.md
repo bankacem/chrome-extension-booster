@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Password Management"
 id: eaa90a34-52ff-4b92-9aa0-59ab8e52f309
 title: >-
   Unlocking the Power of Password Management: The Ultimate Guide to KeePass

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Extension Chrome Joko"
 id: e03ae98c-9ee1-4f75-ba59-e32745018766
 title: 'Unlocking the Power of Extension Chrome Joko: A Comprehensive Guide'
 slug: extension-chrome-joko-mkzp4icwse6

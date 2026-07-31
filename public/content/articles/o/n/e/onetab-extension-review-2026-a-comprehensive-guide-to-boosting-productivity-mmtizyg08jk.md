@@ -1,4 +1,5 @@
 ---
+seo_title: "OneTab Extension Review 2026"
 id: 39de6c99-b25c-4cc0-9ce6-f864ffe0af47
 title: 'OneTab Extension Review 2026: A Comprehensive Guide to Boosting Productivity'
 slug: >-

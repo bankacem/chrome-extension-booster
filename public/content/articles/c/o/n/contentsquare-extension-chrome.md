@@ -1,4 +1,5 @@
 ---
+seo_title: "Contentsquare Extension for Chrome Review"
 title: >-
   Contentsquare Extension for Chrome Review: I Tested 4 UX Analytics Tools for 2
   Weeks

@@ -1,4 +1,5 @@
 ---
+seo_title: "Alishark Chrome Extension Review 2026"
 id: 07814b80-e3f9-4420-8b29-f06a13662fda
 title: 'Alishark Chrome Extension Review 2026: Is It Worth It for Dropshipping?'
 slug: alishark-chrome-extension

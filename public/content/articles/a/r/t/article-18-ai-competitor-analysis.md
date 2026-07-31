@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Competitor Analysis Chrome Extension"
 slug: article-18-ai-competitor-analysis
 status: published
 published_at: '2026-06-17'

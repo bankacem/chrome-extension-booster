@@ -1,4 +1,5 @@
 ---
+seo_title: "Detailed SEO Extension vs SEOQuake"
 id: 03531ef8-9902-4c12-aa00-67193c94bf74
 title: >-
   Detailed SEO Extension vs SEOQuake: A Comprehensive Comparison for Enhanced

@@ -1,4 +1,5 @@
 ---
+seo_title: "ClipConverter Extension for Chrome"
 title: >-
   ClipConverter Extension for Chrome: Full 2026 Review After Testing 15 Video
   Downloaders

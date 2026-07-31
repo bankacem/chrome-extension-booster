@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Chrome Extensions"
 id: d41398da-f44a-464b-95e5-62b8565c7870
 title: >-
   Unlocking the Power of Chrome Extensions: A Comprehensive Guide to Extension

@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering Ad Blocking on Chrome Android"
 id: ec961fb1-838f-4df9-8d1a-0f8fa1a43137
 title: >-
   Mastering Ad Blocking on Chrome Android: The Ultimate Guide to Extension

@@ -1,4 +1,5 @@
 ---
+seo_title: "NordVPN Chrome Extension Speed Test 2026"
 slug: vpn-article2-nordvpn-speed-test
 status: published
 published_at: '2026-08-05'

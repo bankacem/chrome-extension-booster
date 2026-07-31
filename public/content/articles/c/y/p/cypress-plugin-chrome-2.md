@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Cypress"
 id: 960d49b5-3db9-4b5a-b9aa-cbe35180c682
 title: 'Unlocking the Power of Cypress: A Comprehensive Guide to Cypress Plugin Chrome'
 slug: cypress-plugin-chrome-2

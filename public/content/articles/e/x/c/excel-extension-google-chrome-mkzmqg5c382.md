@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Excel in Google Chrome"
 id: 4f9b1b67-ea7d-4835-9745-ae59511f71e2
 title: >-
   Unlocking the Power of Excel in Google Chrome: The Ultimate Guide to Excel

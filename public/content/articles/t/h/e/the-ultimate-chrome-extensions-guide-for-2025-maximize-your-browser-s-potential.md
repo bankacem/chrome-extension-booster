@@ -1,4 +1,5 @@
 ---
+seo_title: "The Ultimate Chrome Extensions Guide for 2025"
 id: ea8bbaa6-9854-43eb-8611-ec35cd8fc9ec
 title: >-
   The Ultimate Chrome Extensions Guide for 2025: Maximize Your Browser’s

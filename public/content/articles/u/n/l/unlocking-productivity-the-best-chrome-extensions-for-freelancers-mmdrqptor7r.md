@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Chrome Extensions for Freelancers"
 id: f9c9e492-2f72-4de9-add1-137fc8ebdf48
 title: 'Unlocking Productivity: The Best Chrome Extensions for Freelancers'
 slug: unlocking-productivity-the-best-chrome-extensions-for-freelancers-mmdrqptor7r

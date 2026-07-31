@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Force Dark Mode on Amazon Website"
 id: 1137707c-3144-4703-8a5c-a7d9a2926441
 title: 'How to Force Dark Mode on Amazon Website: A Step-by-Step Guide'
 slug: how-to-force-dark-mode-on-amazon-website-3

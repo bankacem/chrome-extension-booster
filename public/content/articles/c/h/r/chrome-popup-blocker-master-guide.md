@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Popup Blocker Master Guide"
 title: 'Chrome Popup Blocker Master Guide: Kill Intrusive Ads in 2026'
 slug: chrome-popup-blocker-master-guide
 excerpt: >-

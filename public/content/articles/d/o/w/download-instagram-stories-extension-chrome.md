@@ -1,4 +1,5 @@
 ---
+seo_title: "Download Instagram Stories Extension Chrome"
 id: 0899ff5f-2cda-4e86-9f5c-f07fa65192ac
 title: >-
   Download Instagram Stories Extension Chrome: The Ultimate Guide to Saving Your

@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Install an Extension to Chrome Android"
 id: 6345ad6c-5064-479f-a2a7-b869a303dfe3
 title: 'How to Install an Extension to Chrome Android: A Step-by-Step Guide'
 slug: extension-to-chrome-android-9

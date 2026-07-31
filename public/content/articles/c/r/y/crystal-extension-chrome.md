@@ -1,4 +1,5 @@
 ---
+seo_title: "Crystal Extension for Chrome Review"
 title: 'Crystal Extension for Chrome Review: I Tested 4 Tab Manager Extensions for 2 Weeks'
 slug: crystal-extension-chrome
 excerpt: >-

@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Download Chrome Extension Opera"
 id: 09f64a96-590f-415c-a77f-6aabcf987d74
 title: 'How to Download Chrome Extension Opera: A Step-by-Step Guide'
 slug: download-chrome-extension-opera-10

@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering Screen Grab Chrome 2025"
 id: 0a1b94b2-d153-49f9-a4e0-910756894ec2
 title: >-
   Mastering Screen Grab Chrome 2025: A Comprehensive Guide to Capturing Web

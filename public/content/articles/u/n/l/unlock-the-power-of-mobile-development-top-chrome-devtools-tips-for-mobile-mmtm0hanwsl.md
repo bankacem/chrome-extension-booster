@@ -1,4 +1,5 @@
 ---
+seo_title: "Top Chrome DevTools Tips for Mobile"
 id: e7ea3a2d-f6e1-4eaf-8a7d-90fa8f71ea6b
 title: 'Unlock the Power of Mobile Development: Top Chrome DevTools Tips for Mobile'
 slug: >-

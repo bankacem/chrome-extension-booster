@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Eternl Chrome"
 id: 8833cd4c-1f19-4c86-a35e-f0e08ff22a0c
 title: >-
   Unlocking the Power of Eternl Chrome: A Comprehensive Guide to Enhanced

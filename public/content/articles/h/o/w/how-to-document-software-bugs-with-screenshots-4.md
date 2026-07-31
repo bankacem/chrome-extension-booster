@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Document Software Bugs with Screenshots"
 id: f1f4db1c-415c-484f-ba4f-de4c84eaf9c8
 title: 'How to Document Software Bugs with Screenshots: A Step-by-Step Guide'
 slug: how-to-document-software-bugs-with-screenshots-4

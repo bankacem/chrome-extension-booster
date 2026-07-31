@@ -1,4 +1,5 @@
 ---
+seo_title: "The Avast Plugin Chrome Guide"
 id: bf7b6393-5af6-4cd4-b2b1-941b2b327d32
 title: 'Unlocking Enhanced Browser Security: The Avast Plugin Chrome Guide'
 slug: unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide-ml5h00oyd4z

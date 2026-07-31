@@ -1,4 +1,5 @@
 ---
+seo_title: "Remove Overlays Chrome Extension"
 id: 2552810e-158d-425a-9206-ce40e91b233e
 title: 'Remove Overlays Chrome Extension: Boost Your Productivity'
 slug: remove-overlays-chrome-extension

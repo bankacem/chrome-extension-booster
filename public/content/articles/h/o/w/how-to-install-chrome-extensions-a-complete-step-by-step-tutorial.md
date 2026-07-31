@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Install Chrome Extensions"
 id: f281a3d5-04e8-4fdb-b216-3c23c7fa9466
 title: 'How to Install Chrome Extensions: A Complete Step-by-Step Tutorial'
 slug: how-to-install-chrome-extensions-a-complete-step-by-step-tutorial

@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Downloader for Chrome 2026"
 id: 4b5fe1a8-76b0-42cb-8611-f8a0b356ec16
 title: 'Best Downloader for Chrome 2026: Seamless Downloads'
 slug: best-downloader-for-chrome-2026

@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions on Android: Complete Guide"
 id: 4ca3866a-34f0-4e0d-9c40-0f68ed348baa
 title: 'Chrome Extensions on Android: Complete Guide for 2026'
 slug: chrome-extensions-android-guide

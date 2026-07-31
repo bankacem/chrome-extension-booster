@@ -1,4 +1,5 @@
 ---
+seo_title: "AI SEO Content Writer Chrome Extension"
 slug: article-8-ai-seo-content-writer
 status: published
 published_at: '2026-06-24'

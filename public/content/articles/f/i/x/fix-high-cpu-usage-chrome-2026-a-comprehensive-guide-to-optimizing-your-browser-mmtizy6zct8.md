@@ -1,4 +1,5 @@
 ---
+seo_title: "Fix High CPU Usage Chrome 2026"
 id: d7e1278f-158b-4dea-8e8b-3b43f01ea1f6
 title: >-
   Fix High CPU Usage Chrome 2026: A Comprehensive Guide to Optimizing Your

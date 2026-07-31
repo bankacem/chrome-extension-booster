@@ -1,4 +1,5 @@
 ---
+seo_title: "A Game-Changer for Efficient Browsing"
 id: 25cdc621-8829-41ec-9d76-662210e28d2c
 title: >-
   Unlocking Productivity with Extension Auto Refresh Plus: A Game-Changer for

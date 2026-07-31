@@ -1,4 +1,5 @@
 ---
+seo_title: "Pro Student Chrome Extensions"
 id: 1065e3f9-2402-4f7e-89d8-75ade8a08195
 title: 'Pro Student Chrome Extensions: The Ultimate Academic Stack'
 slug: pro-student-chrome-extensions-the-ultimate-academic-stack

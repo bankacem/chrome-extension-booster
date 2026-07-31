@@ -1,4 +1,5 @@
 ---
+seo_title: "🎯 Stop Wasting Time Typing the Same Prompts"
 slug: deepseek-markdown-20260603-9d7e88
 status: published
 published_at: '2026-07-19'

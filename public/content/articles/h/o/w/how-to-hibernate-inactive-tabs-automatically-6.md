@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Hibernate Inactive Tabs Automatically"
 id: 979bd783-8ab4-42c9-8c2a-0071917645a2
 title: >-
   How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster

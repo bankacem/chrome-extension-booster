@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Speed Up Chrome on Low End PC"
 id: 79b5bd0c-0c24-468b-858a-ddde4a13a48c
 title: 'How to Speed Up Chrome on Low End PC: Expert Tips and Tricks'
 slug: how-to-speed-up-chrome-on-low-end-pc-expert-tips-and-tricks-mmtizzi7h41

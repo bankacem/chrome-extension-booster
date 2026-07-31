@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Headline Generator Chrome Extension"
 slug: article-7-ai-headline-generator
 status: published
 published_at: '2026-06-23'

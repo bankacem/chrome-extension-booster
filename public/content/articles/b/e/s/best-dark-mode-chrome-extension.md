@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Dark Mode Chrome Extensions in 2026"
 id: f52f5aee-64ed-4319-b6c9-694b98575566
 title: 'Best Dark Mode Chrome Extensions in 2026: Tested for Eye Comfort'
 slug: best-dark-mode-chrome-extension

@@ -1,4 +1,5 @@
 ---
+seo_title: "Stop Trackers on Chrome without Slowing Down"
 id: bc87ba3f-0494-4944-9476-b4a4d0ff1e5c
 title: 'Stop Trackers on Chrome without Slowing Down: The Ultimate Guide'
 slug: stop-trackers-on-chrome-without-slowing-down-the-ultimate-guide-mll9brqb6da

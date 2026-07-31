@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT for WhatsApp Chrome Extension"
 slug: deepseek-markdown-20260603-fb3c1d
 status: published
 published_at: '2026-07-26'

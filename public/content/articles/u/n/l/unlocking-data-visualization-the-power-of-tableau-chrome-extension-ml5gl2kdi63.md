@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Tableau Chrome Extension"
 id: fcd9bfc8-fbc5-4207-a5ee-8eef3d702b3e
 title: 'Unlocking Data Visualization: The Power of Tableau Chrome Extension'
 slug: unlocking-data-visualization-the-power-of-tableau-chrome-extension-ml5gl2kdi63

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock the Power of JSON"
 id: 8f08ed0a-292c-4d74-8c70-1d9cab5e6ae0
 title: >-
   Unlock the Power of JSON: The Ultimate Guide to JSON Formatter Chrome

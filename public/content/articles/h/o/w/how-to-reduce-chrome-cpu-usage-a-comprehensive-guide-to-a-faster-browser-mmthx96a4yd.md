@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Reduce Chrome CPU Usage"
 id: 4ca0043d-6bde-472e-986d-e6262efd00d4
 title: 'How to Reduce Chrome CPU Usage: A Comprehensive Guide to a Faster Browser'
 slug: >-

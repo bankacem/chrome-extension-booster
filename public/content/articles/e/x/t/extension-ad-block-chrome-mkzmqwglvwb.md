@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Extension Ad Block Chrome"
 id: ee398b36-80bf-49a3-aa02-81e91417a108
 title: 'Unlock a Faster Browsing Experience: The Power of Extension Ad Block Chrome'
 slug: extension-ad-block-chrome-mkzmqwglvwb

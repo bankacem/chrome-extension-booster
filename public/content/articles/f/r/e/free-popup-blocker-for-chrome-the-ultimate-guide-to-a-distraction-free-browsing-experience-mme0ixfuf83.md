@@ -1,4 +1,5 @@
 ---
+seo_title: "Free Popup Blocker for Chrome"
 id: fc3aec7d-e6da-43de-a79c-d9080a917080
 title: >-
   Free Popup Blocker for Chrome: The Ultimate Guide to a Distraction-Free

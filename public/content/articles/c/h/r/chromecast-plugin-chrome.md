@@ -1,4 +1,5 @@
 ---
+seo_title: "Chromecast Plugin for Chrome"
 title: 'Chromecast Plugin for Chrome: Complete Setup & Streaming Guide (2026)'
 slug: chromecast-plugin-chrome
 excerpt: >-

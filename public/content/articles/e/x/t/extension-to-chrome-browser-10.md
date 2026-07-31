@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Install an Extension to Chrome Browser"
 id: 5f3b7aca-f354-40d6-81c0-2bd78d06b479
 title: >-
   Unlocking the Power of Your Browser: How to Install an Extension to Chrome

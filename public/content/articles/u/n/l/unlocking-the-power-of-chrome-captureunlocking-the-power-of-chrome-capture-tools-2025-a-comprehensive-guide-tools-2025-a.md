@@ -1,4 +1,5 @@
 ---
+seo_title: "A Comprehensive Guide Tools 2025"
 id: 31b52fdd-0f04-41b6-bb51-30819f438792
 title: >-
   Unlocking the Power of Chrome CaptureUnlocking the Power of Chrome Capture

@@ -1,4 +1,5 @@
 ---
+seo_title: "Easy Screenshot Chrome Alternatives"
 id: 4f77c0ac-df1d-4fb8-b708-c28dd584cbcb
 title: 'Easy Screenshot Chrome Alternatives: Capture Your Screen with Ease'
 slug: easy-screenshot-chrome-alternatives

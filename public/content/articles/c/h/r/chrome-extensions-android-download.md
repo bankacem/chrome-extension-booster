@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Download Chrome Extensions on Android"
 id: 4987b240-4cef-4596-a8eb-3eba23e7697b
 title: 'How to Download Chrome Extensions on Android: Complete Guide (2026)'
 slug: chrome-extensions-android-download

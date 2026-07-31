@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Chrome Extension for Keyword Research"
 id: 0a26a1a3-2479-4c96-9e28-695215183bc2
 title: >-
   Unlocking the Power of Keyword Research: The Best Chrome Extension for Keyword

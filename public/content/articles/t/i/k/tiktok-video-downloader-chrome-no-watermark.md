@@ -1,4 +1,5 @@
 ---
+seo_title: "TikTok Video Downloader Chrome"
 id: 96978db6-0fea-4153-a041-4d67d98e27d7
 title: 'TikTok Video Downloader Chrome: No Watermark Extensions'
 slug: tiktok-video-downloader-chrome-no-watermark

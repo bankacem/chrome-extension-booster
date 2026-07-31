@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Extension Auto Refresh Chrome"
 id: 0118ecd2-c0f6-4fb7-b3a8-df4490c6d701
 title: 'Unlocking Efficiency: The Power of Extension Auto Refresh Chrome'
 slug: extension-auto-refresh-chrome-mkzmtf3qb9z

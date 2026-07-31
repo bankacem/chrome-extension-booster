@@ -1,4 +1,5 @@
 ---
+seo_title: "Download MP3 YouTube Extension Google Chrome"
 id: 6d044c4f-f337-4a35-a511-6cc5acd92482
 title: >-
   Download MP3 YouTube Extension Google Chrome: A Comprehensive Guide to

@@ -1,4 +1,5 @@
 ---
+seo_title: "Screenshot Tool Chrome vs"
 id: 3edc0e8d-c2f3-4df1-a985-8d9c26a7e3da
 title: 'Screenshot Tool Chrome vs: The Ultimate Comparison Guide'
 slug: screenshot-tool-chrome-vs-5

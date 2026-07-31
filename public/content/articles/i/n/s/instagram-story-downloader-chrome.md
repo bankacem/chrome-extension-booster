@@ -1,4 +1,5 @@
 ---
+seo_title: "Instagram Story Downloader for Chrome"
 id: 0327b2a2-6f34-4043-a006-ec0e8142bf75
 title: 'Instagram Story Downloader for Chrome: Top Extensions'
 slug: instagram-story-downloader-chrome

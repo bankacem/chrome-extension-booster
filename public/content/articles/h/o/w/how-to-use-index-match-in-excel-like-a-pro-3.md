@@ -1,4 +1,5 @@
 ---
+seo_title: "How to use INDEX MATCH in Excel like a Pro"
 id: 08a7006a-0567-4976-8a11-6aad47337785
 title: 'How to use INDEX MATCH in Excel like a Pro: The Definitive Guide'
 slug: how-to-use-index-match-in-excel-like-a-pro-3

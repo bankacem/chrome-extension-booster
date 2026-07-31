@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Stop Annoying Ads on Chrome Mobile"
 id: 19b93cfd-e782-44e6-8e01-2ee80ea743d0
 title: 'How to Stop Annoying Ads on Chrome Mobile: 2026 Guide'
 slug: stop-annoying-ads-chrome-mobile

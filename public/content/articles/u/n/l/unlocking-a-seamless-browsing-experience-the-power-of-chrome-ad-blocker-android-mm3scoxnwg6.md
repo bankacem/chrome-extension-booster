@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Chrome Ad Blocker Android"
 id: f2ae7eae-85db-4f80-8093-3c422aac0699
 title: >-
   Unlocking a Seamless Browsing Experience: The Power of Chrome Ad Blocker

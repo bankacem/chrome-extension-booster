@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Screenshot Addon Tutorial"
 id: 855fbc33-dc6b-4946-80a0-7504b3bdb84b
 title: >-
   Chrome Screenshot Addon Tutorial: Step-by-Step Guide from Installation to

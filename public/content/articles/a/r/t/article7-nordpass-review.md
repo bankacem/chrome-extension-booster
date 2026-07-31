@@ -1,4 +1,5 @@
 ---
+seo_title: "NordPass Chrome Extension Review 2026"
 slug: article7-nordpass-review
 status: published
 published_at: '2026-07-02'

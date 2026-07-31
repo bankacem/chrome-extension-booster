@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Extension Chrome KeePass"
 id: 02c3a85c-e194-4990-9c7a-d4e5f1477844
 title: 'Unlocking Secure Browsing: The Power of Extension Chrome KeePass'
 slug: extension-chrome-keepass-13

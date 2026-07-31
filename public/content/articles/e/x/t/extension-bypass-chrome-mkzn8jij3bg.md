@@ -1,4 +1,5 @@
 ---
+seo_title: "Extension Bypass Chrome"
 id: 471ca4dc-fca4-4d47-b677-4ed0badb7b65
 title: >-
   Extension Bypass Chrome: The Ultimate Guide to Enhancing Your Browsing

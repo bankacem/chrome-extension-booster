@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Product Description Writer Chrome Extension"
 slug: deepseek-markdown-20260603-8e6355
 status: published
 published_at: '2026-07-17'

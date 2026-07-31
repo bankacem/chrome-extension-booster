@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Add an Extension to Chrome"
 title: 'How to Add an Extension to Chrome: A Step-by-Step Guide (2026)'
 slug: add-extension-to-chrome-7
 excerpt: >-

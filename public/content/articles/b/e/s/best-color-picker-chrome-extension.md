@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Color Picker Chrome Extensions 2026"
 id: e30bb111-bf22-4da6-85e3-ab9a20f66067
 title: 'Best Color Picker Chrome Extensions 2026: Tested for Accuracy and Speed'
 slug: best-color-picker-chrome-extension

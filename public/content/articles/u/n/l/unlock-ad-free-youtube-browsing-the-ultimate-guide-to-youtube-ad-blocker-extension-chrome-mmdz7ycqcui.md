@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock Ad-Free YouTube Browsing"
 id: 052dcd31-6092-480c-9dbf-6f962ba54892
 title: >-
   Unlock Ad-Free YouTube Browsing: The Ultimate Guide to YouTube Ad Blocker

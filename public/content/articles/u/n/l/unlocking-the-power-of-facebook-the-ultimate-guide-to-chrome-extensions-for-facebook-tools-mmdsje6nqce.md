@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Facebook"
 id: ddf7cfca-a1b3-4136-9cc0-0cc27615ba3e
 title: >-
   Unlocking the Power of Facebook: The Ultimate Guide to Chrome Extensions for

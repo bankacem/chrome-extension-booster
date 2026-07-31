@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT for eBay Listings Chrome"
 slug: article-6-chatgpt-ebay-listings
 status: published
 published_at: '2026-06-22'

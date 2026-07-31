@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Extension Adblock Chrome Android"
 id: faaded23-4288-40f6-a4af-136196064aea
 title: >-
   Unlock Ad-Free Browsing on Chrome Android: The Power of Extension Adblock

@@ -1,4 +1,5 @@
 ---
+seo_title: "Easy Screenshot Chrome Comparison"
 id: 0dd4ad6b-cde6-40a2-986a-89904ad0c22c
 title: 'Easy Screenshot Chrome Comparison: Capturing the Perfect Shot Made Simple'
 slug: easy-screenshot-chrome-comparison-2

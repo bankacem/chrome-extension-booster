@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of 1Password Chrome Extension"
 id: 9614f2a5-f1b8-40c6-a1a0-e7903847a96e
 title: >-
   Unlocking Seamless Password Management: The Power of 1Password Chrome

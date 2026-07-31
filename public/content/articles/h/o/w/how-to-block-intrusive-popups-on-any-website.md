@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Block Intrusive Popups on Any Website"
 id: 59997acf-9fa6-4ea6-9751-c054b8ef2424
 title: 'How to Block Intrusive Popups on Any Website: A Comprehensive Guide'
 slug: how-to-block-intrusive-popups-on-any-website

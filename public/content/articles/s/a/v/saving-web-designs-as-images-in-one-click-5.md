@@ -1,4 +1,5 @@
 ---
+seo_title: "Saving Web Designs as Images in One Click"
 id: 46df1b89-1fc6-40c4-9ac9-6dcdb4c7ca54
 title: >-
   Saving Web Designs as Images in One Click: A Game-Changer for Designers and

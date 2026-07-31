@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT Export Chat Chrome Extension"
 slug: deepseek-markdown-20260603-e1f4a6
 status: published
 published_at: '2026-07-24'

@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering Chrome Extensions"
 id: dcccb997-ed2d-4c88-937a-ab2ca5832ce0
 title: >-
   Mastering Chrome Extensions: A Comprehensive Guide to "extension regle chrome"

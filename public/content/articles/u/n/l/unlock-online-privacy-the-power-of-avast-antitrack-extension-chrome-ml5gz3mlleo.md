@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Avast Antitrack Extension Chrome"
 id: 23cd3add-e398-405a-8f4a-5ab7962303ea
 title: 'Unlock Online Privacy: The Power of Avast Antitrack Extension Chrome'
 slug: >-

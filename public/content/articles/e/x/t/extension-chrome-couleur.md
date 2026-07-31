@@ -1,4 +1,5 @@
 ---
+seo_title: "Discover the Power of Extension Chrome Couleur"
 id: a8b25342-9ca3-4173-8126-e0d484d896f3
 title: >-
   Discover the Power of Extension Chrome Couleur: Elevate Your Browsing

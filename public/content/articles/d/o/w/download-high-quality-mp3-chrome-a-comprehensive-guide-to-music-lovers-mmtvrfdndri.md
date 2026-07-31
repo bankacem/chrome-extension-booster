@@ -1,4 +1,5 @@
 ---
+seo_title: "Download High Quality MP3 Chrome"
 id: f8f39e07-e508-432c-992c-e88d548e0700
 title: 'Download High Quality MP3 Chrome: A Comprehensive Guide to Music Lovers'
 slug: >-

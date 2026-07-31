@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Code Explanation Chrome Extension"
 slug: article-3-ai-code-explanation
 status: published
 published_at: '2026-06-19'

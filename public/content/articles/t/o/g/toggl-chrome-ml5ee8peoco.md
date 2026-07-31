@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking Productivity with Toggl Chrome"
 id: b4899037-99db-458b-a046-26ad04e8399d
 title: 'Unlocking Productivity with Toggl Chrome: A Comprehensive Guide'
 slug: toggl-chrome-ml5ee8peoco

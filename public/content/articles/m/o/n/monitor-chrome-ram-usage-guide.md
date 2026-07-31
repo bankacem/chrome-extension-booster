@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Monitor Chrome RAM Usage"
 title: 'How to Monitor Chrome RAM Usage: Mastering the Task Manager'
 slug: monitor-chrome-ram-usage-guide
 excerpt: >-

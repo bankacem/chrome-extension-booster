@@ -1,4 +1,5 @@
 ---
+seo_title: "Enhance Your Online Experience"
 id: e702e0d0-a347-4b58-97ae-bd734428431e
 title: >-
   Enhance Your Online Experience: Top Chrome Extensions to Improve Browsing

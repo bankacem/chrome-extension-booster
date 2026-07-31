@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Chrome Facebook Pixel"
 id: 7dccbefb-8cb2-4d43-a057-dd10aa420192
 title: >-
   Unlocking the Power of Chrome Facebook Pixel: A Comprehensive Guide to

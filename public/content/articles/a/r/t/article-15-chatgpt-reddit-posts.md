@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT for Reddit Posts Chrome"
 slug: article-15-chatgpt-reddit-posts
 status: published
 published_at: '2026-06-14'

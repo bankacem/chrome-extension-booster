@@ -1,4 +1,5 @@
 ---
+seo_title: "Privacy Badger vs Ghostery for Chrome"
 id: c2686b5c-fc87-4903-8753-5ad5ad1e7f23
 title: >-
   Privacy Badger vs Ghostery for Chrome: Choosing the Best Browser Extension for

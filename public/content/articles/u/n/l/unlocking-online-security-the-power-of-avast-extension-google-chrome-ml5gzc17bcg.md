@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Avast Extension Google Chrome"
 id: dc8dba5c-6f99-46a8-b92d-5ad5307c53e4
 title: 'Unlocking Online Security: The Power of Avast Extension Google Chrome'
 slug: >-

@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Extension Auto Refresh Plus"
 id: 5b7ba05f-0845-43ee-910a-aab58da3ec94
 title: 'Unlocking Enhanced Productivity: The Power of Extension Auto Refresh Plus'
 slug: extension-auto-refresh-plus-3

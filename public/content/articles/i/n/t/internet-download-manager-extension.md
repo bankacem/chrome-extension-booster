@@ -1,4 +1,5 @@
 ---
+seo_title: "Internet Download Manager Extension"
 id: pillar-idm-extension
 title: 'Internet Download Manager Extension: Ultimate Guide to IDM Integration'
 slug: internet-download-manager-extension

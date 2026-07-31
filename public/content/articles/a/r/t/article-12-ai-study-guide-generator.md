@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Study Guide Generator Chrome Extension"
 slug: article-12-ai-study-guide-generator
 status: published
 published_at: '2026-06-11'

@@ -1,4 +1,5 @@
 ---
+seo_title: "The Ultimate Chrome RAM Usage Guide"
 title: 'The Ultimate Chrome RAM Usage Guide: Optimize Performance in 2026'
 slug: chrome-ram-guide
 description: >-

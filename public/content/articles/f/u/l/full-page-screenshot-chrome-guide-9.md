@@ -1,4 +1,5 @@
 ---
+seo_title: "Full Page Screenshot Chrome Guide"
 id: 3f068c0c-dda0-4b58-a2ba-b3e07608024b
 title: 'Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro'
 slug: full-page-screenshot-chrome-guide-9

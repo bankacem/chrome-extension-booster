@@ -1,4 +1,5 @@
 ---
+seo_title: "ClickClean for Google Chrome"
 title: 'ClickClean for Google Chrome: Full 2026 Review After Testing 4 Cleaners'
 slug: clickclean-google-chrome-review
 excerpt: >-

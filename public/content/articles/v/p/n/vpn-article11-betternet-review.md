@@ -1,4 +1,5 @@
 ---
+seo_title: "Betternet Chrome Extension Review 2026"
 slug: vpn-article11-betternet-review
 status: published
 published_at: '2026-08-04'

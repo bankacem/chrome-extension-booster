@@ -1,4 +1,5 @@
 ---
+seo_title: "The Ultimate Browser Tools Guide"
 id: ffc66852-4368-4089-b1af-e1765b3c7bbb
 title: 'The Ultimate Browser Tools Guide: Boost Productivity & Efficiency'
 slug: the-ultimate-browser-tools-guide-boost-productivity-efficiency

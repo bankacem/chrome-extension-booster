@@ -1,4 +1,5 @@
 ---
+seo_title: "Speed Up Slow Chrome in 2026"
 id: f383f99e-6d40-4c1a-9328-b47152891095
 title: 'Speed Up Slow Chrome in 2026: 10 Fixes That Actually Work'
 slug: speed-up-slow-chrome-in-2026-10-fixes-that-actually-work

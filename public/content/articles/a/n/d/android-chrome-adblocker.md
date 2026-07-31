@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Android Chrome Adblocker 2026"
 id: 04fafa50-d253-4b51-bc37-b2caeeb89894
 title: 'Best Android Chrome Adblocker 2026: I Tested 5 and Here Is the Winner'
 slug: android-chrome-adblocker

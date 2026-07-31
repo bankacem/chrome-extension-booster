@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best SEO Extensions for Chrome 2026"
 id: 0031ccb8-121e-426d-9ab7-792cb31c67d3
 title: 'Unlock the Power of SEO: The Best SEO Extensions for Chrome 2026'
 slug: unlock-the-power-of-seo-the-best-seo-extensions-for-chrome-2026-mmtm0dwx1nu

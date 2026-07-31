@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Screenshot Tutorial"
 title: 'Chrome Screenshot Tutorial: Step-by-Step Guide for Beginners and Pros'
 slug: chrome-screenshot-tutorial
 excerpt: >-

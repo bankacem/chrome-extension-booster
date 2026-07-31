@@ -1,4 +1,5 @@
 ---
+seo_title: "🤖 Gemini Chat Chrome Extensions"
 slug: deepseek-markdown-20260603-7479f6
 status: published
 published_at: '2026-07-13'

@@ -1,4 +1,5 @@
 ---
+seo_title: "Cleanweb vs Total Adblock"
 title: 'Cleanweb vs Total Adblock: Which Is Better for 2026?'
 slug: cleanweb-vs-total-adblock
 excerpt: >-

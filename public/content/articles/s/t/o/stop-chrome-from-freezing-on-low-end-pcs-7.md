@@ -1,4 +1,5 @@
 ---
+seo_title: "Stop Chrome From Freezing on Low-End PCs"
 id: 21435ba8-1951-48de-8609-1d0165c24144
 title: >-
   Stop Chrome From Freezing on Low-End PCs: The Ultimate Guide to a Faster

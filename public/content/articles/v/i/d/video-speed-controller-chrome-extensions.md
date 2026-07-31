@@ -1,4 +1,5 @@
 ---
+seo_title: "Video Speed Controller Chrome"
 id: 5f4fea8a-d2d5-4385-a023-98a61ac530fa
 title: 'Video Speed Controller Chrome: Best Playback Extensions'
 slug: video-speed-controller-chrome-extensions

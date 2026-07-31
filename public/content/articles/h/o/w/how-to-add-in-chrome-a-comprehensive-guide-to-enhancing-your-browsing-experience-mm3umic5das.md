@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Add in Chrome"
 id: dedc9b93-049c-4b9c-bb96-e7aacda459bf
 title: >-
   How to Add in Chrome: A Comprehensive Guide to Enhancing Your Browsing

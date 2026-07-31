@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Extensions for Online Safety"
 id: fb875d96-f54b-4c1a-b9d6-e588429bc796
 title: 'Best Chrome Extensions for Online Safety: Protecting Your Digital Footprint'
 slug: >-

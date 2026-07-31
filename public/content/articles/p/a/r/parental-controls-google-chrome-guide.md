@@ -1,4 +1,5 @@
 ---
+seo_title: "Parental Controls for Google Chrome"
 title: 'Parental Controls for Google Chrome: I Tested 4 Solutions for 2 Weeks — Here Is What Works'
 slug: parental-controls-google-chrome-guide
 excerpt: >-

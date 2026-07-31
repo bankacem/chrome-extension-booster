@@ -1,4 +1,5 @@
 ---
+seo_title: "Boosting Your Browsing Experience"
 id: e9436ffe-4a98-4981-a324-ee401eebd5c3
 title: 'Unlock the Power of a Popup Blocker Free: Boosting Your Browsing Experience'
 slug: >-

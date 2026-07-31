@@ -1,4 +1,5 @@
 ---
+seo_title: "Writing VLOOKUP Formulas for Beginners"
 id: d4823310-8881-44dc-a64c-134d9d57dfee
 title: 'Writing VLOOKUP Formulas for Beginners: A Comprehensive Guide to Data Mastery'
 slug: writing-vlookup-formulas-for-beginners-2

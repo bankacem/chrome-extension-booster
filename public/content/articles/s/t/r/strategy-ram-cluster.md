@@ -1,4 +1,5 @@
 ---
+seo_title: "12-Week Topic Cluster Strategy"
 slug: strategy-ram-cluster
 status: published
 published_at: '2026-08-01'

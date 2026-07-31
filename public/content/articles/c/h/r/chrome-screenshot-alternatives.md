@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Screenshot Alternatives"
 id: 17089c3d-77b4-4867-ab8f-2b721d2a367f
 title: >-
   Best Chrome Screenshot Alternatives: Desktop Apps vs Extensions vs Built-in

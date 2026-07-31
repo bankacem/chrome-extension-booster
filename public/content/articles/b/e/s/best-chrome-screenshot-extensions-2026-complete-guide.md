@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Screenshot Extensions 2026"
 id: 9af94f0a-bd7d-458e-bdd0-d570f5212fe5
 title: 'Best Chrome Screenshot Extensions 2026: Complete Guide'
 slug: best-chrome-screenshot-extensions-2026-complete-guide

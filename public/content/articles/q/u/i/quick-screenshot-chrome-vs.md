@@ -1,4 +1,5 @@
 ---
+seo_title: "Quick Screenshot Chrome vs"
 id: 391b7fc3-fd87-4cfb-9a3d-c7b3d7689a3f
 title: 'Quick Screenshot Chrome vs: The Ultimate Comparison for Capturing Web Pages'
 slug: quick-screenshot-chrome-vs

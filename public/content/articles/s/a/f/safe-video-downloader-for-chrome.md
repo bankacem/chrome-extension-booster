@@ -1,4 +1,5 @@
 ---
+seo_title: "Safe Video Downloader for Chrome"
 id: d2277830-f905-4626-8c55-d3b8ede737b1
 title: 'Safe Video Downloader for Chrome: Protecting Your Device'
 slug: safe-video-downloader-for-chrome

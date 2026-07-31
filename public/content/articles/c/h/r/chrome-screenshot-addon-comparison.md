@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Screenshot Addon Comparison"
 id: 934bc716-9725-4992-87a6-7d699a180f4e
 title: 'Chrome Screenshot Addon Comparison: 4 Extensions Tested Head-to-Head (2026)'
 slug: chrome-screenshot-addon-comparison

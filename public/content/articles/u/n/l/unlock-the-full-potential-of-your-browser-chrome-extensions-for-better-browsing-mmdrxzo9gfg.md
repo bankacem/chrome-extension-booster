@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions for Better Browsing"
 id: 2951b22e-541a-473a-be1b-f0008266451b
 title: >-
   Unlock the Full Potential of Your Browser: Chrome Extensions for Better

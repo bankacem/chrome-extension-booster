@@ -1,4 +1,5 @@
 ---
+seo_title: "1Password Chrome Extension Review 2026"
 slug: article4-1password-review
 status: published
 published_at: '2026-06-29'

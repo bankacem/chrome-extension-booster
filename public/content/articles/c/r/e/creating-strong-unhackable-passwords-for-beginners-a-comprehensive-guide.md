@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Password Manager for Chrome"
 title: 'Best Password Manager for Chrome: I Tested 4 Password Tools for 2 Weeks — Here Is the Winner'
 slug: creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide
 excerpt: >-

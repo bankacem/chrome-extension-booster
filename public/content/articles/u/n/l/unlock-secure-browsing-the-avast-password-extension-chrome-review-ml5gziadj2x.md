@@ -1,4 +1,5 @@
 ---
+seo_title: "The Avast Password Extension Chrome Review"
 id: b83bb880-3211-4af1-abb0-ba5f1bb15eca
 title: 'Unlock Secure Browsing: The Avast Password Extension Chrome Review'
 slug: unlock-secure-browsing-the-avast-password-extension-chrome-review-ml5gziadj2x

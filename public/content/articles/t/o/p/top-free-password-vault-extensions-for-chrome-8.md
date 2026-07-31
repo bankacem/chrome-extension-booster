@@ -1,4 +1,5 @@
 ---
+seo_title: "Top Free Password Vault Extensions for Chrome"
 id: b0463ed6-95d3-4cec-977c-85d9735ef5cb
 title: 'Top Free Password Vault Extensions for Chrome: Secure Your Online Presence'
 slug: top-free-password-vault-extensions-for-chrome-8

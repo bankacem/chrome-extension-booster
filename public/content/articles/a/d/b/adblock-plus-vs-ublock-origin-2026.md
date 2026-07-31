@@ -1,4 +1,5 @@
 ---
+seo_title: "AdBlock Plus vs uBlock Origin 2026"
 id: da1505ef-521a-430f-908a-f31ec61eacf1
 title: 'AdBlock Plus vs uBlock Origin 2026: Which Actually Blocks More?'
 slug: adblock-plus-vs-ublock-origin-2026

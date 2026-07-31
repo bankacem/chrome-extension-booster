@@ -1,4 +1,5 @@
 ---
+seo_title: "Instagram Downloader Chrome Extensions"
 title: >-
   Instagram Downloader Chrome Extensions: 5 Tools Tested for Photos, Reels &
   Stories (2026)

@@ -1,4 +1,5 @@
 ---
+seo_title: "Facebook Pixel Helper vs Meta Pixel Helper"
 id: 0e4c0db9-e846-4e07-82f4-a923540d2b67
 title: 'Facebook Pixel Helper vs Meta Pixel Helper: The 2026 Guide'
 slug: facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide-mmb6y3me966

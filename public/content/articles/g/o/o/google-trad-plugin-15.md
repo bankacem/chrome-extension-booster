@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Google Trad Plugin"
 id: 1ed45526-4998-49a0-9cf9-22a868a26c8b
 title: 'Unlocking Global Communication: The Power of Google Trad Plugin'
 slug: google-trad-plugin-15

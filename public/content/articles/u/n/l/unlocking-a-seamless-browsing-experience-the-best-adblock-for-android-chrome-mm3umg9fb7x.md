@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Adblock for Android Chrome"
 id: 44d5624d-244a-402e-850f-32e7ed687b6a
 title: 'Unlocking a Seamless Browsing Experience: The Best Adblock for Android Chrome'
 slug: >-

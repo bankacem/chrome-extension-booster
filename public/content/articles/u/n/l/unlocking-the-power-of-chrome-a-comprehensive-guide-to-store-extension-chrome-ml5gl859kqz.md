@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Chrome"
 id: ec27c6dc-6a42-4c12-b228-feea39747e95
 title: 'Unlocking the Power of Chrome: A Comprehensive Guide to Store Extension Chrome'
 slug: >-

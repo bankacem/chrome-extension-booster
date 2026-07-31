@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Screenshot Tools"
 title: 'Best Chrome Screenshot Tools: I Tested 5 Methods — Built-in vs Extensions vs Desktop Apps'
 slug: screenshot-tools-chrome-comparison
 excerpt: >-

@@ -1,4 +1,5 @@
 ---
+seo_title: "Ad Blocker for Android Chrome"
 id: 42f891f9-d3b7-4612-bb95-dd620b54af60
 title: 'Ad Blocker for Android Chrome: Complete Guide 2026'
 slug: adblock-chrome-android-complete-guide-2026

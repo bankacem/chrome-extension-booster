@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Cypress Extension Chrome"
 id: 99ddc353-967f-4f48-9cee-ae1fe419e6d9
 title: 'Unlocking Efficient Automation: The Power of Cypress Extension Chrome'
 slug: cypress-extension-chrome-1

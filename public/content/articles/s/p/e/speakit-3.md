@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock the Power of Voice"
 id: ba6f7d75-1c28-4136-a8a3-28f914741f82
 title: 'Unlock the Power of Voice: A Comprehensive Guide to SpeakIt'
 slug: speakit-3

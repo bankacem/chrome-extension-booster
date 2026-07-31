@@ -1,4 +1,5 @@
 ---
+seo_title: "Exploring Poper Blocker Alternatives"
 id: ec6a2851-cfe2-4972-8563-ff139e75fbb8
 title: >-
   Exploring Poper Blocker Alternatives: Enhance Your Browsing Experience with

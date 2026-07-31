@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock the Power of Fast Screenshot Extensions"
 id: e3bfbcc3-9951-4365-97f1-533ad0f0e32a
 title: 'Unlock the Power of Fast Screenshot Extensions: A Comprehensive Guide'
 slug: fast-screenshot-extensions-6

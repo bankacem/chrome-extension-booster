@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Ajouter Extension Chrome"
 id: f6c173e1-213d-4856-af45-260c07493156
 title: >-
   How to Ajouter Extension Chrome: A Step-by-Step Guide to Enhancing Your

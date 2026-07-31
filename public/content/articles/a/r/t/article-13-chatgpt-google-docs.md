@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT for Google Docs Chrome"
 slug: article-13-chatgpt-google-docs
 status: published
 published_at: '2026-06-12'

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking Ad-Free Browsing on Android"
 id: 4467a83e-fc68-42dd-b5a6-ba3f484ef683
 title: >-
   Unlocking Ad-Free Browsing on Android: A Comprehensive Guide to Android Chrome

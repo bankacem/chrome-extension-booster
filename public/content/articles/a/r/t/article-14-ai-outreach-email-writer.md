@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Outreach Email Writer Chrome Extension"
 slug: article-14-ai-outreach-email-writer
 status: published
 published_at: '2026-06-13'

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Extension Chrome WAPI"
 id: 5921a78f-80ce-43da-99bf-c593e1cfb76e
 title: 'Unlocking the Power of Extension Chrome WAPI: A Comprehensive Guide'
 slug: extension-chrome-wapi-17

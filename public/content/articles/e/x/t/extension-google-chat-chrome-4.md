@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Google Chat in Chrome"
 id: cd590be2-aed4-4922-b85f-37dafc2e6e5f
 title: >-
   Unlocking the Power of Google Chat in Chrome: A Comprehensive Guide to the

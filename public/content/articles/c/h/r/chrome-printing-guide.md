@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Printing Guide"
 id: 10609f9c-3d27-44ed-8074-6e25aaaa50a3
 title: >-
   Chrome Printing Guide: Best Print Settings, Extensions & Cloud Solutions

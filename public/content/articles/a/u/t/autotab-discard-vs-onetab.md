@@ -1,4 +1,5 @@
 ---
+seo_title: "AutoTab Discard vs OneTab vs ProTab Suspender"
 id: 379bc17d-098c-4092-9afa-0b3cfc818268
 title: 'AutoTab Discard vs OneTab vs ProTab Suspender: Best Tab Manager 2026'
 slug: autotab-discard-vs-onetab

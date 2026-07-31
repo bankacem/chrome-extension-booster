@@ -1,4 +1,5 @@
 ---
+seo_title: "OneTab Chrome Extension 2026"
 id: 225523a1-e736-4fb0-a66e-b1ee364bf150
 title: 'OneTab Chrome Extension 2026: Save RAM & Restore Tabs Instantly'
 slug: onetab-chrome-extension-2026-save-ram-restore-tabs-instantly

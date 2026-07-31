@@ -1,4 +1,5 @@
 ---
+seo_title: "Fast Screenshot Extension Vs"
 id: 91a86621-0460-4188-8ff2-4a7f11d6abfc
 title: 'Fast Screenshot Extension Vs: The Ultimate Comparison for Power Users'
 slug: fast-screenshot-extension-vs-4

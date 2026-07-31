@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Free Popup Blocker for Chrome 2026"
 id: 671e7528-bf31-4496-ba4a-297aed3a8a61
 title: 'Best Free Popup Blocker for Chrome 2026: Enhance Your Browsing Experience'
 slug: >-

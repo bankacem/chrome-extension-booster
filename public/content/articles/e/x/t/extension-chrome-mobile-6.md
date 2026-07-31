@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Extension Chrome Mobile"
 id: 21e0268e-96bb-4776-b56c-56e6bf1e5b96
 title: 'Unlocking the Power of Extension Chrome Mobile: A Comprehensive Guide'
 slug: extension-chrome-mobile-6

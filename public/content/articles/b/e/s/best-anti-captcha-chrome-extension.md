@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Anti Captcha Chrome Extensions in 2026"
 id: e9709f70-61d4-4839-ae6a-a6bae5f8a1a9
 title: 'Best Anti Captcha Chrome Extensions in 2026: Tested and Compared'
 slug: best-anti-captcha-chrome-extension

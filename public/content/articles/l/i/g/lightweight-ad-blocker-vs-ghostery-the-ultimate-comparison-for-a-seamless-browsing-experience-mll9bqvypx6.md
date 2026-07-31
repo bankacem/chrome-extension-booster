@@ -1,4 +1,5 @@
 ---
+seo_title: "Lightweight Ad Blocker vs Ghostery"
 id: 30e3a44e-41f2-41c7-a6ad-e845bbe251a0
 title: >-
   Lightweight Ad Blocker vs Ghostery: The Ultimate Comparison for a Seamless

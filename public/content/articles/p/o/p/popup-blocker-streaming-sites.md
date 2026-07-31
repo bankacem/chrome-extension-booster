@@ -1,4 +1,5 @@
 ---
+seo_title: "Popup Blocker for Streaming Sites"
 id: bac21b12-1456-45eb-90af-05464bd07e2f
 title: 'Popup Blocker for Streaming Sites: Best 2026 Guide'
 slug: popup-blocker-streaming-sites

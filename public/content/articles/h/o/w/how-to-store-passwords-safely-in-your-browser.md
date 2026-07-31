@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Store Passwords Safely in Your Browser"
 id: fd1562ed-31d8-4973-9499-5c0be3d45d1d
 title: 'How to Store Passwords Safely in Your Browser: A Comprehensive Guide'
 slug: how-to-store-passwords-safely-in-your-browser

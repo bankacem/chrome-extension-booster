@@ -1,4 +1,5 @@
 ---
+seo_title: "AI YouTube Comment Generator Chrome Extension"
 slug: article-1-ai-youtube-comment-generator
 status: published
 published_at: '2026-06-08'

@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Download Video from Facebook Chrome"
 id: 8e5b86ac-9c43-49ce-a62e-c4062bfef486
 title: 'How to Download Video from Facebook Chrome: A Step-by-Step Guide'
 slug: how-to-download-video-from-facebook-chrome-a-step-by-step-guide-mmtvridrp4n

@@ -1,4 +1,5 @@
 ---
+seo_title: "Fix Chrome Freezing with Many Tabs"
 id: 2a067e7e-e98b-4fc8-9485-5aeae2dd94e1
 title: >-
   Fix Chrome Freezing with Many Tabs: A Comprehensive Guide to Optimizing Your

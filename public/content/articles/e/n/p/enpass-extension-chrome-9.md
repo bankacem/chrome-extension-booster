@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking Password Security"
 id: ee47c344-bf74-4915-b134-962be2020ec5
 title: 'Unlocking Password Security: A Comprehensive Guide to Enpass Extension Chrome'
 slug: enpass-extension-chrome-9

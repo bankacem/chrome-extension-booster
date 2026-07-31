@@ -1,4 +1,5 @@
 ---
+seo_title: "Maximizing Laptop Battery Life"
 id: 07ba4341-2456-4a95-a374-c40f00eb6c5e
 title: >-
   Maximizing Laptop Battery Life: The Ultimate Guide to Chrome Battery Saver

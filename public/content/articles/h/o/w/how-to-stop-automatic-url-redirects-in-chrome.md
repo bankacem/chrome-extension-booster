@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Stop Automatic URL Redirects in Chrome"
 id: d8b2fa06-ce27-4468-971e-a504e87c379c
 title: 'How to Stop Automatic URL Redirects in Chrome: A Comprehensive Guide'
 slug: how-to-stop-automatic-url-redirects-in-chrome

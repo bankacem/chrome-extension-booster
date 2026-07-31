@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Disable Chrome Extensions"
 id: 6810ee1b-58db-4246-bc78-d29070f26937
 title: >-
   How to Disable Chrome Extensions: A Step-by-Step Guide to Simplifying Your

@@ -1,4 +1,5 @@
 ---
+seo_title: "Boosting Online Security and Convenience"
 id: 373c45dd-7c18-4001-83a9-585664b07957
 title: >-
   Unlocking the Power of Extension Password Manager: Boosting Online Security

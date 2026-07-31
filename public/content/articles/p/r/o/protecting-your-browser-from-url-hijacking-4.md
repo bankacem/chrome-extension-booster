@@ -1,4 +1,5 @@
 ---
+seo_title: "Protecting your browser from URL hijacking"
 id: 2b7bafb4-4da5-44c6-b01c-075d79c16f2d
 title: >-
   Protecting your browser from URL hijacking: A Comprehensive Guide to Secure

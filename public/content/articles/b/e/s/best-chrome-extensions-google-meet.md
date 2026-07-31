@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Extensions for Google Meet in 2026"
 id: 14b4c7ee-a3f8-495e-856d-812b26b5d817
 title: 'Best Chrome Extensions for Google Meet in 2026: Enhance Your Video Calls'
 slug: best-chrome-extensions-google-meet

@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering Tab Management"
 id: 3143c31b-827c-4386-9fce-6d7a04e2044d
 title: >-
   Mastering Tab Management: The Best Chrome Extensions to Organize Tabs for

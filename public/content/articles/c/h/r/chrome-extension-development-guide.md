@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extension Development Guide"
 id: 5570c49e-16f9-43a3-adf0-eacc8d778ad5
 title: 'Chrome Extension Development Guide: How to Build Your First Extension in 2026'
 slug: chrome-extension-development-guide

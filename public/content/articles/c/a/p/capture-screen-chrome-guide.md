@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Capture Screen in Chrome"
 title: 'How to Capture Screen in Chrome: 4 Methods Compared with Real Benchmarks'
 slug: capture-screen-chrome-guide
 excerpt: >-

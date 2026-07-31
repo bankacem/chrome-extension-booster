@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Form Filler Chrome Extension"
 slug: article-10-ai-form-filler
 status: published
 published_at: '2026-06-09'

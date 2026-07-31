@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering the Art of Capturing Screenshots"
 id: 1c3baa56-1bd0-4075-987d-833d9d80ee46
 title: >-
   Mastering the Art of Capturing Screenshots: The Ultimate Quick Screenshot

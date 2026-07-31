@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering the Art of Screenshots"
 id: 9839aa74-5cdc-4f0c-9cb1-186d00c1ed6e
 title: 'Mastering the Art of Screenshots: The Ultimate Screenshot Tool Chrome Tutorial'
 slug: screenshot-tool-chrome-tutorial

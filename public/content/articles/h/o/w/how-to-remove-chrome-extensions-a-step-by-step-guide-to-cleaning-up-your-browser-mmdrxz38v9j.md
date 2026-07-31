@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Remove Chrome Extensions"
 id: 8c2f8b23-8d60-4c63-af88-1260d1275fec
 title: >-
   How to Remove Chrome Extensions: A Step-by-Step Guide to Cleaning Up Your

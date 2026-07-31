@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Install Chrome Extensions Manually"
 id: 51e42bc3-4afe-4085-b567-9e9ca765697a
 title: 'How to Install Chrome Extensions Manually: A Step-by-Step Guide'
 slug: how-to-install-chrome-extensions-manually-a-step-by-step-guide-mmdrxyk1fy1

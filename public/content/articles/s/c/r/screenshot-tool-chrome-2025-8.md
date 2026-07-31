@@ -1,4 +1,5 @@
 ---
+seo_title: "Screenshot Tool Chrome 2025"
 id: d3018829-fad0-448d-bd76-4ac3a47bb078
 title: >-
   Screenshot Tool Chrome 2025: The Ultimate Guide to Capturing Web Pages like a

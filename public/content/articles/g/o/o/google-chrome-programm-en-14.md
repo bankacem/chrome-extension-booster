@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering Google Chrome Programmé en"
 id: ecc80886-f055-442b-8d2e-4135cf4deaf6
 title: >-
   Mastering Google Chrome Programmé en: Unlocking the Power of Customization and

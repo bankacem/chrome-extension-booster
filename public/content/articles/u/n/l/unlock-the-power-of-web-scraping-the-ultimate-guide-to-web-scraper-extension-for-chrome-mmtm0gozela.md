@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock the Power of Web Scraping"
 id: f036eded-6d64-44cc-b327-18fae616f43b
 title: >-
   Unlock the Power of Web Scraping: The Ultimate Guide to Web Scraper Extension

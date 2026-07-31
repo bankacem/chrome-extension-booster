@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Ad Block Chrome Extensions 2026"
 id: 5470ad45-be9f-4ba2-9c71-0c7166ff687c
 title: 'Best Ad Block Chrome Extensions 2026: Tested for Performance and Safety'
 slug: best-ad-block-chrome-extension

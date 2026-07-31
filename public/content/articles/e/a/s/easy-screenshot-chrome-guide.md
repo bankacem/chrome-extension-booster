@@ -1,4 +1,5 @@
 ---
+seo_title: "Easy Screenshot Chrome Guide"
 id: a5721aba-c947-411b-983b-c6c2764e81d0
 title: 'Easy Screenshot Chrome Guide: Capturing Screens with Ease'
 slug: easy-screenshot-chrome-guide

@@ -1,4 +1,5 @@
 ---
+seo_title: "Windscribe Chrome Extension Free Review 2026"
 slug: vpn-article10-windscribe-review
 status: published
 published_at: '2026-08-03'

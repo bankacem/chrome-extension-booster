@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Web Store Guide"
 id: 5cac7910-54df-4a62-aaf1-2c7da98960af
 title: 'Chrome Web Store Guide: How to Find Safe Extensions & Alternatives (2026)'
 slug: chrome-web-store-guide

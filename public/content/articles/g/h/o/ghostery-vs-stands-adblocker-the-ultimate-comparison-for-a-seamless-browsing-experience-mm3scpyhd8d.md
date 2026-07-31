@@ -1,4 +1,5 @@
 ---
+seo_title: "Ghostery vs Stands Adblocker"
 id: 971c87ef-436c-4244-a850-3cae0997de10
 title: >-
   Ghostery vs Stands Adblocker: The Ultimate Comparison for a Seamless Browsing

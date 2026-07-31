@@ -1,4 +1,5 @@
 ---
+seo_title: "Understanding the Extension Notion"
 id: e939c3d0-e86e-4ec5-beee-c59b666aad0e
 title: 'Unlocking the Power of Browser Extensions: Understanding the Extension Notion'
 slug: extension-notion-ml5ee96o8rm

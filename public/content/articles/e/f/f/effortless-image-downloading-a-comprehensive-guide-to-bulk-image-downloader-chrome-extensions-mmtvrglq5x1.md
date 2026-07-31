@@ -1,4 +1,5 @@
 ---
+seo_title: "Effortless Image Downloading"
 id: ecf46a88-ccbc-4433-a6bc-bcd3af053dd4
 title: >-
   Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader

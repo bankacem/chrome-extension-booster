@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Cookie Manager for Chrome"
 title: 'Best Cookie Manager for Chrome: I Tested 4 Cookie Extensions for 2 Weeks'
 slug: cookies-quick-manager-chrome
 excerpt: >-

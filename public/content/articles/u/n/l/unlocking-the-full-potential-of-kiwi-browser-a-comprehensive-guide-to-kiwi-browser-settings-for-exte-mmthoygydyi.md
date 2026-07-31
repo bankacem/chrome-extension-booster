@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Full Potential of Kiwi Browser"
 id: 16d7d938-7bd5-4c48-bb29-d3173b69681e
 title: >-
   Unlocking the Full Potential of Kiwi Browser: A Comprehensive Guide to Kiwi

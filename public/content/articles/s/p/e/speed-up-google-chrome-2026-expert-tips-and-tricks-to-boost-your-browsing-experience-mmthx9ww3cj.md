@@ -1,4 +1,5 @@
 ---
+seo_title: "Speed Up Google Chrome 2026"
 id: dae5401c-2873-40bf-b5fd-cff123fc3882
 title: >-
   Speed Up Google Chrome 2026: Expert Tips and Tricks to Boost Your Browsing

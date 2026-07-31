@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT for Twitter Replies Chrome Extension"
 slug: article-4-chatgpt-twitter-replies
 status: published
 published_at: '2026-06-20'

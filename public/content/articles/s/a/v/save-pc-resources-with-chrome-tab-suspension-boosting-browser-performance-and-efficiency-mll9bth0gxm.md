@@ -1,4 +1,5 @@
 ---
+seo_title: "Save PC Resources with Chrome Tab Suspension"
 id: dfd85a29-8421-4f88-8dd2-ec15e9218348
 title: >-
   Save PC Resources with Chrome Tab Suspension: Boosting Browser Performance and

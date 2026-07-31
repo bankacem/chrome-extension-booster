@@ -1,4 +1,5 @@
 ---
+seo_title: "Download Video from Any Site Chrome Extension"
 id: 922d5ef5-986c-425d-862e-76fab7615efe
 title: 'Download Video from Any Site Chrome Extension: A Comprehensive Guide'
 slug: >-

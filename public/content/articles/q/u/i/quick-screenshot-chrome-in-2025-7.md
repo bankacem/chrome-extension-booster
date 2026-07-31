@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering Quick Screenshot Chrome in 2025"
 id: c67e3ae6-7180-4ca0-a991-f40212ad7a9d
 title: >-
   Mastering Quick Screenshot Chrome in 2025: A Comprehensive Guide to Capturing

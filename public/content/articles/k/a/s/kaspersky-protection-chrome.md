@@ -1,4 +1,5 @@
 ---
+seo_title: "Kaspersky Protection for Chrome"
 title: 'Kaspersky Protection for Chrome: Real-World Security Testing (2026)'
 slug: kaspersky-protection-chrome
 excerpt: >-

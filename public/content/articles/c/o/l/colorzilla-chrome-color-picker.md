@@ -1,4 +1,5 @@
 ---
+seo_title: "ColorZilla for Chrome"
 title: 'ColorZilla for Chrome: Best Color Picker Extension Tested (2026)'
 slug: colorzilla-chrome-color-picker
 excerpt: >-

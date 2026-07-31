@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT for Amazon Reviews Chrome Extension"
 slug: article-2-chatgpt-amazon-reviews
 status: published
 published_at: '2026-06-18'

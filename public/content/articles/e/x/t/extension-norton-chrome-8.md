@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Extension Norton Chrome"
 id: 71e7b972-fff5-49b5-ae84-e5c984d0c677
 title: 'Unlocking Cybersecurity: The Power of Extension Norton Chrome'
 slug: extension-norton-chrome-8

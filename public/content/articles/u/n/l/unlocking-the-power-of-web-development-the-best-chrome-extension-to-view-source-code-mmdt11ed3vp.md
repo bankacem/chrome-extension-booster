@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Chrome Extension to View Source Code"
 id: 74b3efa7-80f7-447b-84fd-df6e6c6de1e0
 title: >-
   Unlocking the Power of Web Development: The Best Chrome Extension to View

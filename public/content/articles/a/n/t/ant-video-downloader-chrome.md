@@ -1,4 +1,5 @@
 ---
+seo_title: "Ant Video Downloader Chrome Review 2026"
 id: dff9cd9c-5d22-4e34-b41a-61d5ae653b16
 title: 'Ant Video Downloader Chrome Review 2026: Does It Still Work?'
 slug: ant-video-downloader-chrome

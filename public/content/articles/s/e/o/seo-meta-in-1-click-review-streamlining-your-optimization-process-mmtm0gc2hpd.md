@@ -1,4 +1,5 @@
 ---
+seo_title: "SEO Meta in 1 Click Review"
 id: ca70a007-c1d4-433e-b310-57d60d1058ab
 title: 'SEO Meta in 1 Click Review: Streamlining Your Optimization Process'
 slug: seo-meta-in-1-click-review-streamlining-your-optimization-process-mmtm0gc2hpd

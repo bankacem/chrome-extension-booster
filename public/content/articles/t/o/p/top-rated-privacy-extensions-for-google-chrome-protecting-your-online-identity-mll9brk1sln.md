@@ -1,4 +1,5 @@
 ---
+seo_title: "Top Rated Privacy Extensions for Google Chrome"
 id: a42e763a-c7f7-4ade-a7d7-425dae6e2f3e
 title: >-
   Top Rated Privacy Extensions for Google Chrome: Protecting Your Online

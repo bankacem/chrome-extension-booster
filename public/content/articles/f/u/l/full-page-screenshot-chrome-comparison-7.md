@@ -1,4 +1,5 @@
 ---
+seo_title: "Full Page Screenshot Chrome Comparison"
 id: 8eee35cf-6505-4fcb-b523-1dc74406ba84
 title: 'Full Page Screenshot Chrome Comparison: Choosing the Best Tool for Your Needs'
 slug: full-page-screenshot-chrome-comparison-7

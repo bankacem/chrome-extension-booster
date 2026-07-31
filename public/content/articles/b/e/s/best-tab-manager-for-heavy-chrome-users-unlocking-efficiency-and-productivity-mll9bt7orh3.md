@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Tab Manager for Heavy Chrome Users"
 id: 3e82436d-1a2b-45d9-b461-1186782a66f6
 title: 'Best Tab Manager for Heavy Chrome Users: Unlocking Efficiency and Productivity'
 slug: >-

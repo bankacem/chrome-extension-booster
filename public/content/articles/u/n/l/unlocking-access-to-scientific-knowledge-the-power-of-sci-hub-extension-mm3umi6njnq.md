@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Sci Hub Extension"
 id: 2284e131-1b50-4e5e-9bda-a9b84c4fa615
 title: 'Unlocking Access to Scientific Knowledge: The Power of Sci Hub Extension'
 slug: >-

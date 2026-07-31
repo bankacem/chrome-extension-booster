@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of API Testing"
 id: 3eec9d93-6529-44c5-b396-43b67957e634
 title: >-
   Unlocking the Power of API Testing: A Comprehensive Guide to API Tester Chrome

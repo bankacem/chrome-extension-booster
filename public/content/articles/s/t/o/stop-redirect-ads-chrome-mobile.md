@@ -1,4 +1,5 @@
 ---
+seo_title: "Stop Redirect Ads on Chrome Mobile"
 id: a8c3311e-18c9-4ce8-a28f-39b75a51659c
 title: 'Stop Redirect Ads on Chrome Mobile: Block Annoying Pop-ups'
 slug: stop-redirect-ads-chrome-mobile

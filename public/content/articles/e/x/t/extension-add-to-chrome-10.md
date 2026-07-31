@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Add Extensions to Chrome"
 id: 1c4be1a2-9eae-4a56-9d9a-1f1cad34082e
 title: >-
   How to Add Extensions to Chrome: A Step-by-Step Guide to Enhancing Your

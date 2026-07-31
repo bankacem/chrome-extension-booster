@@ -1,4 +1,5 @@
 ---
+seo_title: "Lighthouse Audit Chrome Extension Guide"
 id: 3d7113dd-3874-49f8-87bd-6ab087ab0008
 title: >-
   Lighthouse Audit Chrome Extension Guide: Unlocking the Secrets to a Faster and

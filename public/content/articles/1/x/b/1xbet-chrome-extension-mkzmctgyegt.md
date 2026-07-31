@@ -1,4 +1,5 @@
 ---
+seo_title: "1xbet Chrome Extension Review 2026"
 id: f87bf3ab-39d2-4386-ab6a-4a3d159bea3b
 title: '1xbet Chrome Extension Review 2026: Is It Worth Installing?'
 slug: 1xbet-chrome-extension-mkzmctgyegt

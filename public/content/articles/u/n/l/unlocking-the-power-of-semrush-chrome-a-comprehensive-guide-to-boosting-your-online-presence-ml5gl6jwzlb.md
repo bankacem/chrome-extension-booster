@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of SEMrush Chrome"
 id: 557267df-15d9-4d96-b98a-55859497ff88
 title: >-
   Unlocking the Power of SEMrush Chrome: A Comprehensive Guide to Boosting Your

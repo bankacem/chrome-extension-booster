@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Productivity Tools for Chrome Browser"
 id: 95cd4e3a-d34c-470d-a145-944d564a94ac
 title: 'Unlocking Efficiency: The Best Productivity Tools for Chrome Browser'
 slug: >-

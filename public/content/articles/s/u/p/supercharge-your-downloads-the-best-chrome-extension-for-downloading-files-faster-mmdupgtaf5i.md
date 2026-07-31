@@ -1,4 +1,5 @@
 ---
+seo_title: "Supercharge Your Downloads"
 id: c549e364-5e69-40ce-8f0e-336ee7780593
 title: >-
   Supercharge Your Downloads: The Best Chrome Extension for Downloading Files

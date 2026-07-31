@@ -1,4 +1,5 @@
 ---
+seo_title: "Boosting Browser Performance"
 title: 'Boosting Browser Performance: The Power of Minimal Chrome Extensions for Speed'
 slug: boosting-browser-performance-minimal-extensions
 excerpt: >-

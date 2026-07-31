@@ -1,4 +1,5 @@
 ---
+seo_title: "Chromecast Extension for Google Chrome"
 id: d3c66365-94f9-4dde-ad89-79b653ef1f9e
 title: 'Chromecast Extension for Google Chrome: The Ultimate Casting Guide for 2026'
 slug: chromecast-extension-google-chrome

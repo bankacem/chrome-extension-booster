@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Memory Saver Extension for Chrome"
 id: 84911b9b-28ec-44a5-a154-61579b4757ad
 title: 'Best Memory Saver Extension for Chrome: Boost Performance and Reclaim Your RAM'
 slug: best-memory-saver-extension-for-chrome-4

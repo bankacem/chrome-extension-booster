@@ -1,4 +1,5 @@
 ---
+seo_title: "Effortlessly Manage Your Browser"
 id: ac77b2f6-aab1-45f1-a29f-bdfc7c1c4542
 title: >-
   Effortlessly Manage Your Browser: A Comprehensive Guide to Export Extension

@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Free Adblocker for Chrome Android"
 id: 3a216abd-1f9d-473c-af58-33b6c8ce1d15
 title: >-
   Unlock a Faster and More Secure Browsing Experience: The Best Free Adblocker

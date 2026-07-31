@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Capture and Share Screenshots Instantly"
 id: 96f20d38-dc6c-4c72-9eaa-597d718889a8
 title: >-
   How to Capture and Share Screenshots Instantly: A Game-Changer for Blogging,

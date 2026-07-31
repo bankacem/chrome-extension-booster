@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Extensions for Privacy 2026"
 title: 'Best Chrome Extensions for Privacy 2026: Protect Your Online Identity'
 slug: best-chrome-extensions-for-privacy-2026
 excerpt: >-

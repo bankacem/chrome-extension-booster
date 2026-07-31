@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Reduce Chrome RAM Usage for Gaming"
 id: aa9089ee-ab82-4402-bbf7-879d0dea3e02
 title: 'How to Reduce Chrome RAM Usage for Gaming: The Ultimate Lag-Free Guide'
 slug: reduce-chrome-ram-usage-for-gaming-2

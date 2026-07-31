@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Built-in PDF Viewer"
 title: 'Chrome Built-in PDF Viewer: Complete Guide to Viewing, Editing & Printing PDFs'
 slug: chrome-pdf-viewer-guide
 excerpt: >-

@@ -1,4 +1,5 @@
 ---
+seo_title: "Streamlining Your LinkedIn Experience"
 id: 3f8ffaf1-a835-4b13-beee-190febb430f8
 title: >-
   Streamlining Your LinkedIn Experience: The Best Chrome Extension for LinkedIn

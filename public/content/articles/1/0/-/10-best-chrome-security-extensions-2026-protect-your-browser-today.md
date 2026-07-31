@@ -1,4 +1,5 @@
 ---
+seo_title: "10 Best Chrome Security Extensions 2026"
 id: b8904ca4-2da3-4e7f-b741-9e9644a40f48
 title: '10 Best Chrome Security Extensions 2026: Protect Your Browser Today'
 slug: 10-best-chrome-security-extensions-2026-protect-your-browser-today

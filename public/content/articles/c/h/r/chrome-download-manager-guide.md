@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Download Managers in 2026"
 title: >-
   Best Chrome Download Managers in 2026: IDM Integration, Extensions, and
   Benchmarks

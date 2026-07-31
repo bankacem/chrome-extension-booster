@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Memory Saver Mode"
 title: 'Chrome Memory Saver Mode: How It Works & How to Optimize It (2026)'
 slug: chrome-memory-saver-how-it-works
 excerpt: >-

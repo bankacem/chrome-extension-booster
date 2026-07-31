@@ -1,4 +1,5 @@
 ---
+seo_title: "Capturing Web Pages with Ease"
 id: 1bf01459-0f1f-41d1-b146-a7f4bcb384ef
 title: 'Capturing Web Pages with Ease: The Power of Extension Chrome Capture Page Web'
 slug: extension-chrome-capture-page-web

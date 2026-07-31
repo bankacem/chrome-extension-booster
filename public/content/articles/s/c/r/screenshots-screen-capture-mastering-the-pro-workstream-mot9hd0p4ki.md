@@ -1,4 +1,5 @@
 ---
+seo_title: "Screenshots & Screen Capture"
 id: 00d0d596-db2b-4d48-93da-0bb85cfe9ba6
 title: 'Screenshots & Screen Capture: Mastering the Pro Workstream'
 slug: screenshots-screen-capture-mastering-the-pro-workstream-mot9hd0p4ki

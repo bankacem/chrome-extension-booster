@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome High Memory Usage Fix 2026"
 id: 77a34b85-30da-46b9-8089-78c3e3c4b02c
 title: 'Chrome High Memory Usage Fix 2026: 7 Solutions That Actually Work'
 slug: chrome-high-memory-usage-fix

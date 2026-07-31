@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT Prompt Templates Chrome"
 slug: article-11-chatgpt-prompt-templates
 status: published
 published_at: '2026-06-10'

@@ -1,4 +1,5 @@
 ---
+seo_title: "Full Page Screenshot Chrome Tutorial"
 id: bc77ba44-1105-4f65-8cb4-b9b5b2edc537
 title: >-
   Full Page Screenshot Chrome Tutorial: A Step-by-Step Guide to Capturing

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Social Media"
 id: c9745fd3-779f-4125-bc35-d0867bde2488
 title: >-
   Unlocking the Power of Social Media: The Ultimate Guide to Chrome Extension

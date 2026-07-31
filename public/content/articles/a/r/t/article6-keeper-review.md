@@ -1,4 +1,5 @@
 ---
+seo_title: "Keeper Chrome Extension Review 2026"
 slug: article6-keeper-review
 status: published
 published_at: '2026-07-01'

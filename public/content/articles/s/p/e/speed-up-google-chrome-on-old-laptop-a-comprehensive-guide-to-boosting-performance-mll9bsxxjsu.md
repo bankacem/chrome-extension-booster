@@ -1,4 +1,5 @@
 ---
+seo_title: "Speed up Google Chrome on Old Laptop"
 id: e1f14876-0450-450d-8289-9c3497a1d094
 title: >-
   Speed up Google Chrome on Old Laptop: A Comprehensive Guide to Boosting

@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Lesson Plan Generator Chrome Extension"
 slug: article-16-ai-lesson-plan-generator
 status: published
 published_at: '2026-06-15'

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock the Power of Responsive Design"
 id: 0660cb87-2dd4-4e3d-9cd4-8898e9fbc91f
 title: >-
   Unlock the Power of Responsive Design: The Ultimate Guide to Responsive Design

@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering the Quick Screenshot Chrome Guide"
 id: 492b30a2-00cf-405a-928b-6cc2159241b7
 title: 'Mastering the Quick Screenshot Chrome Guide: Capture Web Pages Like a Pro'
 slug: quick-screenshot-chrome-guide-2

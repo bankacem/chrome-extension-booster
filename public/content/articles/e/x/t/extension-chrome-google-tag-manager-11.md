@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Google Tag Manager"
 id: 1da33a92-2e89-4219-a47d-c2829621ee6a
 title: >-
   Unlocking the Power of Google Tag Manager: A Comprehensive Guide to the

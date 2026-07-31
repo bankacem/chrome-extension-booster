@@ -1,4 +1,5 @@
 ---
+seo_title: "Kiwi Browser Extensions Guide"
 id: 690f42c5-48e7-49d7-8223-cf6d307d95ff
 title: 'Kiwi Browser Extensions Guide: How to Run Chrome Extensions on Android'
 slug: kiwi-browser-extensions-guide

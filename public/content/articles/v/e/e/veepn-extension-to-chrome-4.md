@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking Secure Browsing"
 id: e2ae2def-2e0b-4c9b-b6af-48b77ab6a090
 title: >-
   Unlocking Secure Browsing: A Comprehensive Guide to the VeePN Extension for

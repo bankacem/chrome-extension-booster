@@ -1,4 +1,5 @@
 ---
+seo_title: "Easy Screenshot Chrome Review"
 id: 90896843-c9c7-4a7b-b759-03dd69da9ff7
 title: 'Easy Screenshot Chrome Review: Capturing the Essence of Productivity'
 slug: easy-screenshot-chrome-review-

@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Chrome Extensions for Web Developers"
 id: 4a5e61b4-a8d3-41ee-8ac8-cc55ccfb6a12
 title: 'Unlocking Productivity: The Best Chrome Extensions for Web Developers'
 slug: >-

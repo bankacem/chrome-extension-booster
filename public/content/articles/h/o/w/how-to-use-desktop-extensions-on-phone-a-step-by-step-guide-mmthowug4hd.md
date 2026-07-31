@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Use Desktop Extensions on Phone"
 id: 7e511e56-e552-469d-83ec-1024c9caefb6
 title: 'How to Use Desktop Extensions on Phone: A Step-by-Step Guide'
 slug: how-to-use-desktop-extensions-on-phone-a-step-by-step-guide-mmthowug4hd

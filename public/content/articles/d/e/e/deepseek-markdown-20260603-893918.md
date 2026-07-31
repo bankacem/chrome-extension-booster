@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT Bookmark Manager Chrome Extension"
 slug: deepseek-markdown-20260603-893918
 status: published
 published_at: '2026-07-16'

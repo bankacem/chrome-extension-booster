@@ -1,4 +1,5 @@
 ---
+seo_title: "Avast Online Security & Privacy Chrome"
 title: 'Avast Online Security & Privacy Chrome: My Honest Testing Results (2026)'
 slug: avast-online-security-chrome
 excerpt: >-

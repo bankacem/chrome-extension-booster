@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Extension Adblock Google Chrome"
 id: 02691f4f-240c-44c2-b319-990fe26060b2
 title: >-
   Unlocking a Faster Browsing Experience: The Power of Extension Adblock Google

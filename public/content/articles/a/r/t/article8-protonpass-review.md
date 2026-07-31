@@ -1,4 +1,5 @@
 ---
+seo_title: "Proton Pass Chrome Extension Review 2026"
 slug: article8-protonpass-review
 status: published
 published_at: '2026-07-03'

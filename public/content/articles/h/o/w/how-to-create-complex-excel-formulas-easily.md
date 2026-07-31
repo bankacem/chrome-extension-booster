@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Create Complex Excel Formulas Easily"
 id: ef8c944b-c787-4a60-ab4b-fc98028d8c37
 title: 'How to Create Complex Excel Formulas Easily: A Professional Guide'
 slug: how-to-create-complex-excel-formulas-easily

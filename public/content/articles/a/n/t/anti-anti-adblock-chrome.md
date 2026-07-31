@@ -1,4 +1,5 @@
 ---
+seo_title: "Anti Anti Adblock Chrome"
 id: f22722d7-1726-417c-bc98-994ec47cf8dd
 title: 'Anti Anti Adblock Chrome: How to Beat Adblock Detection in 2026'
 slug: anti-anti-adblock-chrome

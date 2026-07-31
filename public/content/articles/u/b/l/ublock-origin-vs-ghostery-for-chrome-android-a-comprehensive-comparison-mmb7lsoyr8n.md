@@ -1,4 +1,5 @@
 ---
+seo_title: "uBlock Origin vs Ghostery for Chrome Android"
 id: 4668daa1-bf35-4a65-b3d4-7f2f2d659f3a
 title: 'uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison'
 slug: >-

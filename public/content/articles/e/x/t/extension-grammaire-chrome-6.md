@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Extension Grammaire Chrome"
 id: 07f3dbb7-58e7-43b7-87ed-033f2d2f1979
 title: 'Unlocking Error-Free Writing: The Power of Extension Grammaire Chrome'
 slug: extension-grammaire-chrome-6

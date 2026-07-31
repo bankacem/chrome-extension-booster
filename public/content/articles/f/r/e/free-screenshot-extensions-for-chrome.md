@@ -1,4 +1,5 @@
 ---
+seo_title: "Free Screenshot Extensions for Chrome"
 id: f54a6d27-e52d-4229-9414-ebdaec0b09d0
 title: 'Unlock the Power of Visual Sharing: Free Screenshot Extensions for Chrome'
 slug: free-screenshot-extensions-for-chrome

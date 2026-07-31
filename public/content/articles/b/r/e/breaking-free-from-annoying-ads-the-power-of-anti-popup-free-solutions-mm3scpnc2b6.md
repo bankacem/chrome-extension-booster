@@ -1,4 +1,5 @@
 ---
+seo_title: "Breaking Free from Annoying Ads"
 id: 15eb668c-bc83-45fd-b2b6-7fc499df57e5
 title: 'Breaking Free from Annoying Ads: The Power of Anti Popup Free Solutions'
 slug: >-

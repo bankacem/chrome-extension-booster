@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Ghostery Chrome Extension"
 id: 0314731e-6d53-4b0d-9238-dcc7e4413e9a
 title: 'Unlocking Online Privacy: The Power of Ghostery Chrome Extension'
 slug: unlocking-online-privacy-the-power-of-ghostery-chrome-extension-mm3sclh7asr

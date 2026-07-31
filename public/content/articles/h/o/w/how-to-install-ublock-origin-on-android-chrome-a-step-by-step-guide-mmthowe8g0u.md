@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Install uBlock Origin on Android Chrome"
 id: 7c66b2c7-0ab6-4121-b135-826388910345
 title: 'How to Install uBlock Origin on Android Chrome: A Step-by-Step Guide'
 slug: >-

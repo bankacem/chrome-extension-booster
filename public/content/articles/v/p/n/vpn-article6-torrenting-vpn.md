@@ -1,4 +1,5 @@
 ---
+seo_title: "Best VPN Chrome Extension for Torrenting 2026"
 slug: vpn-article6-torrenting-vpn
 status: published
 published_at: '2026-08-09'

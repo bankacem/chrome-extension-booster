@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of ExtensionHub"
 id: ec16c38e-c1cd-4c9f-8af2-adf2013bbddf
 title: >-
   Unlocking the Power of ExtensionHub: A Comprehensive Guide to Enhancing Your

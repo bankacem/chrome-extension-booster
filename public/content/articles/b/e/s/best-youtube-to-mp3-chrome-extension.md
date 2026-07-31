@@ -1,4 +1,5 @@
 ---
+seo_title: "Best YouTube to MP3 Chrome Extensions in 2026"
 id: 04ef090a-7234-4ac0-80a2-314cb3c14dda
 title: 'Best YouTube to MP3 Chrome Extensions in 2026: Safe, Fast, and Reliable'
 slug: best-youtube-to-mp3-chrome-extension

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Full Potential of Chrome Mobile"
 id: 08f8bfd8-921e-4e7e-8a2c-14da8327d132
 title: >-
   Unlocking the Full Potential of Chrome Mobile: A Comprehensive Guide to Chrome

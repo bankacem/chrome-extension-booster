@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Run Chrome Extensions on Brave Android"
 id: 68ccc15f-1f6e-40b3-a04b-f0205f5d5225
 title: 'How to Run Chrome Extensions on Brave Android: A Step-by-Step Guide'
 slug: how-to-run-chrome-extensions-on-brave-android-a-step-by-step-guide-mmthozkhpgn

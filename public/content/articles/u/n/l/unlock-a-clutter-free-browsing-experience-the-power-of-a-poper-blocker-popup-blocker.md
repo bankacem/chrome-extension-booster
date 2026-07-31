@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of a Poper Blocker (Popup Blocker)"
 id: 8f3255d5-2b26-4536-b341-0994eb523e5a
 title: >-
   Unlock a Clutter-Free Browsing Experience: The Power of a Poper Blocker (Popup

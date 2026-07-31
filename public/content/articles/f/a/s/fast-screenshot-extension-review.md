@@ -1,4 +1,5 @@
 ---
+seo_title: "Fast Screenshot Extension Review"
 id: 0b33dbe3-2d3a-4dca-add8-cbc21115ac5c
 title: >-
   Fast Screenshot Extension Review: Capturing the Perfect Shot with Quick

@@ -1,4 +1,5 @@
 ---
+seo_title: "Discover the Best Chrome Extensions Under 1MB"
 id: c9c081d7-745c-4ac6-aeb9-0834a3bbff86
 title: >-
   Discover the Best Chrome Extensions Under 1MB: Boost Your Browser Without

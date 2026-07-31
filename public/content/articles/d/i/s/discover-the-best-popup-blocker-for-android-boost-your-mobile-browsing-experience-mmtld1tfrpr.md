@@ -1,4 +1,5 @@
 ---
+seo_title: "Discover the Best Popup Blocker for Android"
 id: a92f5622-3b4f-4b74-97ab-2b96bee6e08c
 title: >-
   Discover the Best Popup Blocker for Android: Boost Your Mobile Browsing

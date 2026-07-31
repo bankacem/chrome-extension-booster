@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Screenshot Extensions for Chrome"
 title: >-
   Best Screenshot Extensions for Chrome: Full Capture, Annotation & Comparison
   (2026)

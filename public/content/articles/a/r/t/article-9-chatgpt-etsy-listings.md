@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT for Etsy Listings Chrome"
 slug: article-9-chatgpt-etsy-listings
 status: published
 published_at: '2026-06-25'

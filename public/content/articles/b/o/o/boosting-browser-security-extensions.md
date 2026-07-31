@@ -1,4 +1,5 @@
 ---
+seo_title: "Boosting Browser Security"
 title: >-
   Boosting Browser Security: The Best Chrome Security Extensions for a Safer
   Online Experience

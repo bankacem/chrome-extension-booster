@@ -1,4 +1,5 @@
 ---
+seo_title: "Essential Extensions to Chrome"
 id: 3af391ff-27f2-4ea9-b6a2-37411a1ee523
 title: 'Unlock the Full Potential of Your Browser: Essential Extensions to Chrome'
 slug: unlock-the-full-potential-of-your-browser-essential-extensions-to-chrome

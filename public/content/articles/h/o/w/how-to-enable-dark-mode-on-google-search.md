@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Enable Dark Mode on Google Search"
 id: bfe0739b-41bc-478c-bf03-f3d5a0d06b00
 title: 'How to Enable Dark Mode on Google Search: A Step-by-Step Guide'
 slug: how-to-enable-dark-mode-on-google-search

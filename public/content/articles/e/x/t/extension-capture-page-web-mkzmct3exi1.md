@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering the Art of Web Page Capture"
 id: 28adf0d2-db9e-46d0-9312-dab94d621ec7
 title: >-
   Mastering the Art of Web Page Capture: The Ultimate Guide to Extension Capture

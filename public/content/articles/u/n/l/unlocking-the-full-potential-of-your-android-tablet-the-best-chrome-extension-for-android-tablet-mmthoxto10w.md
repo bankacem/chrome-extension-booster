@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Chrome Extension for Android Tablet"
 id: 476283d1-1608-4afb-a15c-2e4d4ad9dff5
 title: >-
   Unlocking the Full Potential of Your Android Tablet: The Best Chrome Extension

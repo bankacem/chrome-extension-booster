@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock Lightning-Fast Video Playback"
 id: 7bffc3a0-d307-4c7f-811d-72d273536a41
 title: >-
   Unlock Lightning-Fast Video Playback: The Ultimate Guide to Extension

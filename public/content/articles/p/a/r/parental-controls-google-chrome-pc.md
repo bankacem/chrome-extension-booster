@@ -1,4 +1,5 @@
 ---
+seo_title: "Parental Controls for Google Chrome on PC"
 title: 'Parental Controls for Google Chrome on PC: Complete Setup Guide (2026)'
 slug: parental-controls-google-chrome-pc
 excerpt: >-

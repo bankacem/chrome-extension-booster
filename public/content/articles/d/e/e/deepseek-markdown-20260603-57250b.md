@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Cover Letter Writer Chrome Extension"
 slug: deepseek-markdown-20260603-57250b
 status: published
 published_at: '2026-07-09'

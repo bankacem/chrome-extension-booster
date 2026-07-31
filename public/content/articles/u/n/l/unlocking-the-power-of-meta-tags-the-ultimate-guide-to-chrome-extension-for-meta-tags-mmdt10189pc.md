@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Meta Tags"
 id: 35fac9ce-94e9-4999-aeb7-ac27b8e471cc
 title: >-
   Unlocking the Power of Meta Tags: The Ultimate Guide to Chrome Extension for

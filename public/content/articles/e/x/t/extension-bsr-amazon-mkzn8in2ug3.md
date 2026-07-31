@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Extension BSR Amazon"
 id: f1c616b3-4477-446b-a73d-8c7fbfd438b4
 title: >-
   Unlocking the Power of Extension BSR Amazon: A Comprehensive Guide to Boosting

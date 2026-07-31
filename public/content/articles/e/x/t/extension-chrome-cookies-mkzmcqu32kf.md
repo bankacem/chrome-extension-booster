@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering Extension Chrome Cookies"
 id: bacbca2c-7d08-480d-a887-7626f7b42ce1
 title: >-
   Mastering Extension Chrome Cookies: The Ultimate Guide to Enhanced Browsing

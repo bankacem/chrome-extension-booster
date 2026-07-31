@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Web Chrome Store Apps"
 id: becf0451-6582-4323-a678-d051073ee99f
 title: 'Unlocking the Power of Web Chrome Store Apps: A Comprehensive Guide'
 slug: web-chrome-store-apps-mkzmcrxxiqn

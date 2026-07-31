@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Redirect Blocker for Secure Browsing 2026"
 id: cbfd2575-79b6-496d-a7a0-3f0959957fa0
 title: >-
   Best Redirect Blocker for Secure Browsing 2026: Protect Yourself from

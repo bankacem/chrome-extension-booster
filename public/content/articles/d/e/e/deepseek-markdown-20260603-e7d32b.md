@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT Voice Input Chrome Extension"
 slug: deepseek-markdown-20260603-e7d32b
 status: published
 published_at: '2026-07-25'

@@ -1,4 +1,5 @@
 ---
+seo_title: "ExpressVPN Chrome Extension Review 2026"
 slug: vpn-article4-expressvpn-review
 status: published
 published_at: '2026-08-07'

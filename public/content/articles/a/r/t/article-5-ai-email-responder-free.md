@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Email Responder Chrome Extension Free"
 slug: article-5-ai-email-responder-free
 status: published
 published_at: '2026-06-21'

@@ -1,4 +1,5 @@
 ---
+seo_title: "Media Saver Extension"
 id: e36cb082-2f60-42af-bf8f-db562c4a9103
 title: 'Media Saver Extension: Best Chrome Tool to Save Files'
 slug: media-saver-extension-chrome

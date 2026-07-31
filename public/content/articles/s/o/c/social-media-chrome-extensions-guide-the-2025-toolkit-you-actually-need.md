@@ -1,4 +1,5 @@
 ---
+seo_title: "Social Media Chrome Extensions Guide"
 id: b914e67f-89b5-4fff-86b0-b9cc4641e282
 title: 'Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need'
 slug: social-media-chrome-extensions-guide-the-2025-toolkit-you-actually-need

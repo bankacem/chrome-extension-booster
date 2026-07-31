@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Avast Password Chrome"
 id: 0506736f-d831-4c1d-9a9f-e4c246d11f45
 title: >-
   Unlocking the Power of Avast Password Chrome: A Comprehensive Guide to Secure

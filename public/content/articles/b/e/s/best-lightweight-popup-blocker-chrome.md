@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Lightweight Popup Blocker for Chrome 2026"
 id: 6d5368c9-e6fa-4ef8-9a3b-2d68f188f3c4
 title: 'Best Lightweight Popup Blocker for Chrome 2026: Tested and Compared'
 slug: best-lightweight-popup-blocker-chrome

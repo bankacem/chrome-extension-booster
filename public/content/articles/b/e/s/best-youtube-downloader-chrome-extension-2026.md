@@ -1,4 +1,5 @@
 ---
+seo_title: "Best YouTube Downloader Chrome Extension 2026"
 id: fee36c91-689d-4681-ac15-e28652aba2c6
 title: 'Best YouTube Downloader Chrome Extension 2026: Safe & Fast'
 slug: best-youtube-downloader-chrome-extension-2026

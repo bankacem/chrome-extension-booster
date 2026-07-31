@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions on Opera"
 id: 9764dfe7-8a25-4390-8bc8-7501a9a7201a
 title: >-
   Chrome Extensions on Opera: Complete Guide to Installation and Compatibility

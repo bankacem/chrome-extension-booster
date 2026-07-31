@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Tab Suspender for 4GB RAM Laptops"
 id: adbefebd-a99b-474e-830a-bfc055e57bc2
 title: 'Best Tab Suspender for 4GB RAM Laptops: Keep Your Browser Fast and Responsive'
 slug: best-tab-suspender-for-4gb-ram-laptops-1

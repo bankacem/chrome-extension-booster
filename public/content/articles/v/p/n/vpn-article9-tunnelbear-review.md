@@ -1,4 +1,5 @@
 ---
+seo_title: "TunnelBear Chrome Extension Review 2026"
 id: vpn-article9-tunnelbear-review
 slug: vpn-article9-tunnelbear-review
 status: published

@@ -1,4 +1,5 @@
 ---
+seo_title: "Antidote Extension Chrome Review 2026"
 id: c31f1016-b24b-411f-9555-14f85d20ec50
 title: 'Antidote Extension Chrome Review 2026: Best French Writing Assistant?'
 slug: antidote-extension-chrome

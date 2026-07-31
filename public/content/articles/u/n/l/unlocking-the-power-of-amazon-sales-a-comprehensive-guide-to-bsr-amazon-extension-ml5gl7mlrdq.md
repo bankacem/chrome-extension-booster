@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Amazon Sales"
 id: 3fb1d44a-351f-4b71-b451-9efbfac5a84d
 title: >-
   Unlocking the Power of Amazon Sales: A Comprehensive Guide to BSR Amazon

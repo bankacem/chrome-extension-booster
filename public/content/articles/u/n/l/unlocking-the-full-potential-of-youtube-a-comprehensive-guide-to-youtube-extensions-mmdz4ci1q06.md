@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Full Potential of YouTube"
 id: c34a9fc0-5242-4a98-8f00-cc23e42b5b6a
 title: >-
   Unlocking the Full Potential of YouTube: A Comprehensive Guide to YouTube

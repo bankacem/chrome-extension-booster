@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Screenshot Tools for Chrome"
 id: a020c44e-56e9-4205-affe-b77808919486
 title: 'Best Screenshot Tools for Chrome: Capture Web Pages Like a Pro'
 slug: best-screenshot-tools-for-chrome-2

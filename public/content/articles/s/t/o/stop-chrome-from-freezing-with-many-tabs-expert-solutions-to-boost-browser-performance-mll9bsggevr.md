@@ -1,4 +1,5 @@
 ---
+seo_title: "Stop Chrome from Freezing with Many Tabs"
 id: a60af5fb-52da-47f6-bf28-a9042c3d52f6
 title: >-
   Stop Chrome from Freezing with Many Tabs: Expert Solutions to Boost Browser

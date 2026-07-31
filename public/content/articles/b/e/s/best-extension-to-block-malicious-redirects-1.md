@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Extension to Block Malicious Redirects"
 id: 37a2cbbf-d428-457c-8a8a-d70c9bb3b214
 title: 'Best Extension to Block Malicious Redirects: Protect Your Online Security'
 slug: best-extension-to-block-malicious-redirects-1

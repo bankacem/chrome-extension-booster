@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Extension Chrome Google Translate"
 id: d99aa18f-94b8-40bb-bc54-2709aa53b6c4
 title: 'Unlock Global Communication: The Power of Extension Chrome Google Translate'
 slug: extension-chrome-google-translate-mkzp2h3pbk0

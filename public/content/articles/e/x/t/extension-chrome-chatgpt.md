@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of AI"
 id: 2b04861b-82e5-4c13-9549-8297350e6cd9
 title: 'Unlocking the Power of AI: The Ultimate Guide to Extension Chrome ChatGPT'
 slug: extension-chrome-chatgpt

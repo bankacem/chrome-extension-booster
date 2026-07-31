@@ -1,4 +1,5 @@
 ---
+seo_title: "Optimizing Browser Performance"
 id: 50964105-56f0-4e3b-883f-796d2ef05864
 title: 'Optimizing Browser Performance: How to Limit Memory Per Tab in Chrome'
 slug: >-

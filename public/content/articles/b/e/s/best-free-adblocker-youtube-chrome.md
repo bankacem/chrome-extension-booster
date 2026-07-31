@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Free Adblocker for YouTube"
 title: 'Best Free Adblocker for YouTube: Chrome Extensions 2026'
 slug: best-free-adblocker-youtube-chrome
 excerpt: >-

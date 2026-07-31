@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT Tone Changer Chrome Extension"
 slug: deepseek-markdown-20260603-ba8fd9
 status: published
 published_at: '2026-07-22'

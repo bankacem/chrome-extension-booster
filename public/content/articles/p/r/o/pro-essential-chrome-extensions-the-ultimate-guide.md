@@ -1,4 +1,5 @@
 ---
+seo_title: "Pro Essential Chrome Extensions"
 id: 48a20a60-29d3-4465-8122-78e7ad16fd2e
 title: 'Pro Essential Chrome Extensions: The Ultimate Guide'
 slug: pro-essential-chrome-extensions-the-ultimate-guide

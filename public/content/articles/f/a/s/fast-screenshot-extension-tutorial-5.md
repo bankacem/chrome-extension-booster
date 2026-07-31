@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering the Art of Fast Screenshotting"
 id: 97371634-3257-4baf-a537-9c39edf6bad8
 title: >-
   Mastering the Art of Fast Screenshotting: A Comprehensive Fast Screenshot

@@ -1,4 +1,5 @@
 ---
+seo_title: "Screenshot Tool Chrome Review"
 id: b2e64cbc-df9f-4fde-a995-448256e0fb56
 title: 'Screenshot Tool Chrome Review: Capturing the Perfect Shot Every Time'
 slug: screenshot-tool-chrome-review-2

@@ -1,4 +1,5 @@
 ---
+seo_title: "uBlock Origin Best Settings 2026"
 id: 6f6d14e3-3bb4-4317-a925-3c4069a13134
 title: 'uBlock Origin Best Settings 2026: Ultimate Setup Guide'
 slug: ublock-origin-best-settings-2026

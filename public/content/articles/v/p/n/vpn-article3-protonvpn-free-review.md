@@ -1,4 +1,5 @@
 ---
+seo_title: "ProtonVPN Chrome Extension Free Review 2026"
 slug: vpn-article3-protonvpn-free-review
 status: published
 published_at: '2026-08-06'

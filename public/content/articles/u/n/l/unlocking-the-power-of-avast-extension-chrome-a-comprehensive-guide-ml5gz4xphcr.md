@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Avast Extension Chrome"
 id: fbe461fe-cae1-4986-b0f9-0756884b60a7
 title: 'Unlocking the Power of Avast Extension Chrome: A Comprehensive Guide'
 slug: >-

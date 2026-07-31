@@ -1,4 +1,5 @@
 ---
+seo_title: "Block Popups on Chrome Mobile Guide"
 id: d073c815-8d8b-460c-bcc8-e1ea507de4c8
 title: >-
   Block Popups on Chrome Mobile Guide: Mastering a Distraction-Free Browsing

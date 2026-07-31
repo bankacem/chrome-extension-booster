@@ -1,4 +1,5 @@
 ---
+seo_title: "Privacy & Security Guide"
 title: 'Privacy & Security Guide: Protect Your Browser in 2026'
 slug: privacy-security-guide
 excerpt: >-

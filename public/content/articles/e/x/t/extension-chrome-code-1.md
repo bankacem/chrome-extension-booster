@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Extension Chrome Code"
 id: 01a45d58-ec14-419d-9ca0-2e71263e0e87
 title: 'Unlocking the Power of Extension Chrome Code: A Comprehensive Guide'
 slug: extension-chrome-code-1

@@ -1,4 +1,5 @@
 ---
+seo_title: "Hidden Chrome Extensions You Should Try"
 id: 42c180df-f04a-401b-82e6-8b92325d54da
 title: 'Unlock the Power of Your Browser: Hidden Chrome Extensions You Should Try'
 slug: >-

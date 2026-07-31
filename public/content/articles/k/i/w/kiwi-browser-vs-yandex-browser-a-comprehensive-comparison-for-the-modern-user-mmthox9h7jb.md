@@ -1,4 +1,5 @@
 ---
+seo_title: "kiwi browser vs yandex browser"
 id: 4894deb9-5d3d-406f-89cb-052b7878ebc8
 title: 'kiwi browser vs yandex browser: A Comprehensive Comparison for the Modern User'
 slug: >-

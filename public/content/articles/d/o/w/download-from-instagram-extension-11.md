@@ -1,4 +1,5 @@
 ---
+seo_title: "Download from Instagram Extension"
 id: f365cef1-e683-4f64-b737-7b31fc394619
 title: >-
   Download from Instagram Extension: A Comprehensive Guide to Saving Your

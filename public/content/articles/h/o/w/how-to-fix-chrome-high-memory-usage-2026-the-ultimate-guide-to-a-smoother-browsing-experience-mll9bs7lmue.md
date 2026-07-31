@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Fix Chrome High Memory Usage 2026"
 id: 777e9975-27d0-4c91-ae56-d3a51331bf41
 title: >-
   How to Fix Chrome High Memory Usage 2026: The Ultimate Guide to a Smoother

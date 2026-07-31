@@ -1,4 +1,5 @@
 ---
+seo_title: "Hotspot Shield Chrome Extension Review 2026"
 slug: vpn-article8-hotspot-shield-review
 status: published
 published_at: '2026-08-11'

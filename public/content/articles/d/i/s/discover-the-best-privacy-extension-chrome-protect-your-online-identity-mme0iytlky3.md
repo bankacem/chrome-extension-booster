@@ -1,4 +1,5 @@
 ---
+seo_title: "Discover the Best Privacy Extension Chrome"
 id: 4be83748-0962-4161-aeaa-f700460fc56e
 title: 'Discover the Best Privacy Extension Chrome: Protect Your Online Identity'
 slug: >-

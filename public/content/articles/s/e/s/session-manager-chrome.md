@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Session Managers Tested"
 title: >-
   Chrome Session Managers Tested: SessionBox vs OneTab vs Tab Manager Plus
   (2026)

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Facebook Pixel"
 id: 3ae08709-bd18-4b76-9f51-ba1a8ec75c8f
 title: >-
   Unlocking the Power of Facebook Pixel: The Ultimate Guide to Chrome Extensions

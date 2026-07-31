@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Screenshot Tools Compared"
 id: 5c6eb754-c188-4e94-a17f-6c8352e62858
 title: >-
   Chrome Screenshot Tools Compared: Snipping Tool, DevTools, and Extensions

@@ -1,4 +1,5 @@
 ---
+seo_title: "Why Chrome est Très Lent"
 id: 8ff0d74e-f783-4951-a579-bf707245aa98
 title: 'Why Chrome est Très Lent: Solutions to Speed Up Your Browser'
 slug: chrome-est-tres-lent

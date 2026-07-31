@@ -1,4 +1,5 @@
 ---
+seo_title: "Easy Screenshot Chrome Tutorial"
 id: 5d543d51-57c6-4c0e-87fe-247750a93a3c
 title: >-
   Easy Screenshot Chrome Tutorial: A Step-by-Step Guide to Capturing Screens

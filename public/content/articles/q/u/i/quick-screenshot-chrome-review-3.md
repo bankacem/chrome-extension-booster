@@ -1,4 +1,5 @@
 ---
+seo_title: "Quick Screenshot Chrome Review"
 id: ce406fc6-14e7-4f8c-9a5e-633b5a2d310e
 title: 'Quick Screenshot Chrome Review: The Ultimate Tool for Capturing Web Pages'
 slug: quick-screenshot-chrome-review-3

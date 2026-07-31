@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Install Pro Chrome Extensions"
 id: 4adeba2e-8d2d-40f0-9440-6457673b1a58
 title: 'How to Install Pro Chrome Extensions: The Definitive Guide'
 slug: how-to-install-pro-chrome-extensions-the-definitive-guide

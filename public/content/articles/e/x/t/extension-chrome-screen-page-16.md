@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering the Art of Capturing Web Pages"
 id: 2ef539c0-b64d-41be-9deb-e060e9373809
 title: >-
   Mastering the Art of Capturing Web Pages: The Ultimate Guide to Extension

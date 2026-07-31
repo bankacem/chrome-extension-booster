@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Block Ads on Chrome Android"
 id: 69be5f9a-1b46-4920-ac22-6991728922a0
 title: 'How to Block Ads on Chrome Android: A Step-by-Step Guide to Ad-Free Browsing'
 slug: >-

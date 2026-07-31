@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Ghostery Extension Chrome 2026"
 id: 4db48368-d9a4-4551-b2a3-3ec49b4921c9
 title: 'Unlocking Online Transparency: The Power of Ghostery Extension Chrome 2026'
 slug: >-

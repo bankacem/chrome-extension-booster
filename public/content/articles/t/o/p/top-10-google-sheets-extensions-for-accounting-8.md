@@ -1,4 +1,5 @@
 ---
+seo_title: "Top 10 Google Sheets Extensions for Accounting"
 id: 21d29cda-6d90-45fa-b70b-d588085acdea
 title: >-
   Top 10 Google Sheets Extensions for Accounting: Streamlining Financial

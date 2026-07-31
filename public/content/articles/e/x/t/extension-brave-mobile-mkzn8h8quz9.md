@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Extension Brave Mobile"
 id: 0ccd5976-7cfc-4087-b77e-af6cd6a30b7d
 title: 'Unlocking the Power of Extension Brave Mobile: A Comprehensive Guide'
 slug: extension-brave-mobile-mkzn8h8quz9

@@ -1,4 +1,5 @@
 ---
+seo_title: "Privacy Badger vs Ghostery"
 id: 1d01248d-6cc3-4f15-8dc7-53ad05560b48
 title: >-
   Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online

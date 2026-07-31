@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions Complete Guide"
 id: a52c5891-e1cc-41d6-840b-46b16cae5e87
 title: 'Chrome Extensions Complete Guide: How to Transform Your Browser in 2026'
 slug: chrome-extensions-complete-guide

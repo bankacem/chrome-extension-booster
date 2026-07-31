@@ -1,4 +1,5 @@
 ---
+seo_title: "Auto Tab Discarder vs The Great Suspender 2026"
 id: babd4e43-164e-4b31-9b6f-af21017f11f5
 title: 'Auto Tab Discarder vs The Great Suspender 2026: Why You Should Switch'
 slug: auto-tab-discarder-vs-the-great-suspender

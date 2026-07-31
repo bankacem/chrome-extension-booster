@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Web Store Apps vs Extensions"
 id: e86d5c9f-b207-4468-bdac-550f3b3f5732
 title: 'Chrome Web Store Apps vs Extensions: What Is the Difference in 2026?'
 slug: chrome-web-store-apps-vs-extensions

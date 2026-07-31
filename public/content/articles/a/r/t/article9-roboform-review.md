@@ -1,4 +1,5 @@
 ---
+seo_title: "RoboForm Chrome Extension Review 2026"
 slug: article9-roboform-review
 status: published
 published_at: '2026-07-04'

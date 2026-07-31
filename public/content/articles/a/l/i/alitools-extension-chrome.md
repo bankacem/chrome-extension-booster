@@ -1,4 +1,5 @@
 ---
+seo_title: "AliTools Extension Chrome"
 id: efcbf65f-81a0-4a90-bc3d-daf55a4ff712
 title: 'AliTools Extension Chrome: The Ultimate Alibaba Shopping Companion'
 slug: alitools-extension-chrome

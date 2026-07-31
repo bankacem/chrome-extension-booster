@@ -1,4 +1,5 @@
 ---
+seo_title: "Introduction to Extension Chrome Presearch"
 id: 60512e74-be52-411e-b16d-e1536997431a
 title: 'Unlock the Power of Private Search: Introduction to Extension Chrome Presearch'
 slug: extension-chrome-presearch-14

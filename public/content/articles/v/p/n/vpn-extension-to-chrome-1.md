@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Add a VPN Extension to Chrome"
 id: 0714d2ff-ff13-445e-87d7-07a65c3ed0ed
 title: 'Unlock Secure Browsing: How to Add a VPN Extension to Chrome'
 slug: vpn-extension-to-chrome-1

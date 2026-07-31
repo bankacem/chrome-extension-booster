@@ -1,4 +1,5 @@
 ---
+seo_title: "Mastering Webpage Screenshot Chrome 2025"
 id: a2b1f871-e5e4-4ba2-83e0-c5c2995cf9f3
 title: >-
   Mastering Webpage Screenshot Chrome 2025: A Comprehensive Guide to Capturing

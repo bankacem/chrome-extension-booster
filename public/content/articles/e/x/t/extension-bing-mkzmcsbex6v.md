@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Extension Bing"
 id: baf43d8b-6a72-4a33-bed5-2f43aae70e0b
 title: >-
   Unlocking the Power of Extension Bing: A Comprehensive Guide to Enhancing Your

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Dualless Chrome"
 id: 91d74abc-9e64-4e44-80d2-ba43608a6bcb
 title: >-
   Unlocking the Power of Dualless Chrome: A Comprehensive Guide to Enhanced

@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Web Store on PC"
 id: 1052a091-9aea-407b-a45a-a8da49a63be4
 title: >-
   Chrome Web Store on PC: Complete Guide to Extensions, Shortcuts & Performance
