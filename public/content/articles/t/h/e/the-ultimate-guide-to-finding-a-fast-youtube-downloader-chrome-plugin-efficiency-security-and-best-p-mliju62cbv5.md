@@ -1,4 +1,5 @@
 ---
+seo_title: "A Fast, Safe YouTube Downloader for Chrome"
 id: 303ba81b-f4a3-4efc-84a9-2e4c20e77ca9
 title: >-
   The Ultimate Guide to Finding a Fast YouTube Downloader Chrome Plugin:

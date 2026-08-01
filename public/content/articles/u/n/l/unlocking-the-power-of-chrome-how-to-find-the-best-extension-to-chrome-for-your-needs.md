@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Find the Right Chrome Extension for You"
 id: 9694c115-4bdc-4f64-807a-9b38a0bc7c87
 title: >-
   Unlocking the Power of Chrome: How to Find the Best Extension to Chrome for

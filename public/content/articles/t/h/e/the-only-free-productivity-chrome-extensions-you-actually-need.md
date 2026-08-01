@@ -1,4 +1,5 @@
 ---
+seo_title: "The Only Free Productivity Extensions You Need"
 id: b790e228-a318-4f5d-863a-874e9732a1b2
 title: The Only Free Productivity Chrome Extensions You Actually Need
 slug: the-only-free-productivity-chrome-extensions-you-actually-need

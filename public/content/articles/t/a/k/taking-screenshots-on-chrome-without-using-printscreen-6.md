@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Screenshot in Chrome Without PrtScn"
 id: 7fb2858f-8413-4ebd-bb68-aa104b3bcf28
 title: 'Taking Screenshots on Chrome without Using PrintScreen: A Comprehensive Guide'
 slug: taking-screenshots-on-chrome-without-using-printscreen-6

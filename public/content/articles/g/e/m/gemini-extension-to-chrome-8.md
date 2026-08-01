@@ -1,4 +1,5 @@
 ---
+seo_title: "Bringing Gemini Into Your Chrome Browser"
 id: 4e72db38-14be-4ac9-9e64-6de090f879b0
 title: 'Unlocking the Power of Gemini Extension to Chrome: A Comprehensive Guide'
 slug: gemini-extension-to-chrome-8

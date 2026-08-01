@@ -1,4 +1,5 @@
 ---
+seo_title: "Browsing Extensions Like Ghostery, Compared"
 id: 63cf9456-4ee0-4c45-924a-2b07fd6503b5
 title: >-
   Unlocking the Power of Secure Browsing: Extensions like Ghostery for a Safer

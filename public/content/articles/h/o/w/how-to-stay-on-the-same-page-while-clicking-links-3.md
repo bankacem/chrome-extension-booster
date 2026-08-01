@@ -1,4 +1,5 @@
 ---
+seo_title: "Keep Links Opening in the Same Tab"
 id: 7a70711f-1343-40ca-b38b-788df17021c0
 title: 'How to Stay on the Same Page While Clicking Links: A Comprehensive Guide'
 slug: how-to-stay-on-the-same-page-while-clicking-links-3

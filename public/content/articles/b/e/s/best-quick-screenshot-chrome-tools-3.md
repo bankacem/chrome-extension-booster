@@ -1,4 +1,5 @@
 ---
+seo_title: "The Quickest Screenshot Tools for Chrome"
 id: 1f467f8e-6904-4b86-9f80-cde952c55d9c
 title: Discover the Best Quick Screenshot Chrome Tools for Effortless Screen Captures
 slug: best-quick-screenshot-chrome-tools-3

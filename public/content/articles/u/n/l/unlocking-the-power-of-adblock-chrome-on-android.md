@@ -1,4 +1,5 @@
 ---
+seo_title: "Using AdBlock on Chrome for Android"
 id: b87a203f-8a1d-424f-ab23-4fa2fc5fbae0
 title: 'Unlocking the Power of Adblock Chrome on Android: A Comprehensive Guide'
 slug: unlocking-the-power-of-adblock-chrome-on-android

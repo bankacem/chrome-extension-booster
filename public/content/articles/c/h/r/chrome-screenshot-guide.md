@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Screenshot Extensions: A Master Guide"
 title: 'Master Guide: Chrome Screenshot Extensions (2026)'
 slug: chrome-screenshot-guide
 excerpt: >-

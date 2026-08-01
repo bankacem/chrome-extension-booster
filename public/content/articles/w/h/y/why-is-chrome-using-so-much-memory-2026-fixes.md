@@ -1,4 +1,5 @@
 ---
+seo_title: "Why Chrome Uses So Much Memory (and the Fix)"
 id: e14927ea-8e56-46b0-af0d-9336385e2b70
 title: Why is Chrome using so much memory? (2026 Fixes)
 slug: why-is-chrome-using-so-much-memory-2026-fixes

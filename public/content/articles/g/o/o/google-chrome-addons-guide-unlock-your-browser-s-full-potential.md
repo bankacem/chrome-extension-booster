@@ -1,4 +1,5 @@
 ---
+seo_title: "A Guide to Getting More from Chrome Add-ons"
 id: cadae7c8-f284-4e38-85d5-dac83ce09eb0
 title: 'Google Chrome Addons Guide: Unlock Your Browser''s Full Potential'
 slug: google-chrome-addons-guide-unlock-your-browser-s-full-potential

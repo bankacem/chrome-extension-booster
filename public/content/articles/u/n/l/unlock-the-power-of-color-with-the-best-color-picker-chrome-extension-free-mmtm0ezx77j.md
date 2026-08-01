@@ -1,4 +1,5 @@
 ---
+seo_title: "A Free Color Picker Extension for Chrome"
 id: 17a67b02-b714-47d9-8798-61e1060d0b0c
 title: Unlock the Power of Color with the Best Color Picker Chrome Extension Free
 slug: >-

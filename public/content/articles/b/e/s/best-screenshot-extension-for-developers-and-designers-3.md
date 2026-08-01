@@ -1,4 +1,5 @@
 ---
+seo_title: "A Screenshot Extension for Devs and Designers"
 id: 48ae0078-94d4-468e-be20-ee22ab7ff0f4
 title: 'Best Screenshot Extension for Developers and Designers: A Comprehensive Guide'
 slug: best-screenshot-extension-for-developers-and-designers-3

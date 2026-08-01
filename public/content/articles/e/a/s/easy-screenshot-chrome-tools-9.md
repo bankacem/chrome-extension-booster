@@ -1,4 +1,5 @@
 ---
+seo_title: "Easy Screenshot Tools Built for Chrome"
 id: 29ebbd61-6c61-4d9f-873c-3121b722b081
 title: Unlock the Power of Easy Screenshot Chrome Tools for Seamless Browsing
 slug: easy-screenshot-chrome-tools-9

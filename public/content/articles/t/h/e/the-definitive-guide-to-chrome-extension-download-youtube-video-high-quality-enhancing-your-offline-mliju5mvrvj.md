@@ -1,4 +1,5 @@
 ---
+seo_title: "Downloading High-Quality YouTube Video"
 id: 82fe8df9-a5de-4d62-a961-991685911cad
 title: >-
   The Definitive Guide to Chrome Extension Download YouTube Video High Quality:

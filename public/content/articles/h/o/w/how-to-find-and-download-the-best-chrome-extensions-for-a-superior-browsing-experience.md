@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Find Extensions Worth Downloading"
 id: f82e9963-3785-44b2-b8fd-de7dbf6460dc
 title: >-
   How to Find and Download the Best Chrome Extensions for a Superior Browsing

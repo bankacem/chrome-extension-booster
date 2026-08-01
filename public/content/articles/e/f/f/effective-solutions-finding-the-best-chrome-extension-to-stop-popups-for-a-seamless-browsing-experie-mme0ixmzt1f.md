@@ -1,4 +1,5 @@
 ---
+seo_title: "Finally Stop Popups with This Chrome Extension"
 id: d665b92e-7aac-4a37-9120-457c20afcdd4
 title: >-
   Effective Solutions: Finding the Best Chrome Extension to Stop Popups for a

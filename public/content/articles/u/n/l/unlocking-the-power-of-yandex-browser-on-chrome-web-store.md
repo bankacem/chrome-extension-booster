@@ -1,4 +1,5 @@
 ---
+seo_title: "Does Yandex Browser Support Chrome Extensions?"
 id: 968cd461-9faa-41a6-9162-5249a3954f85
 title: >-
   Unlocking the Power of Yandex Browser on Chrome Web Store: A Comprehensive

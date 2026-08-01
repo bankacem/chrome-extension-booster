@@ -1,4 +1,5 @@
 ---
+seo_title: "A Fast Ad Blocker Without the Memory Leaks"
 id: 25a89b3d-1a0c-4453-ba57-1b6ab759867d
 title: >-
   Unlocking the Power of a Fast AdBlocker Extension with No Memory Leak:

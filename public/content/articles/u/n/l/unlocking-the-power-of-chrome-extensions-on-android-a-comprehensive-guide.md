@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions on Android, Explained"
 id: dbe501ad-5295-42c5-b26d-66618249e4d1
 title: 'Unlocking the Power of Chrome Extensions on Android: A Comprehensive Guide'
 slug: unlocking-the-power-of-chrome-extensions-on-android-a-comprehensive-guide

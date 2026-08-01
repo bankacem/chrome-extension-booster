@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Get a Cleaner, Ad-Free Chrome"
 id: 81d42656-b797-4d78-9147-9f821ce64c57
 title: 'How to Get a Clean Browsing Experience on Chrome: A Comprehensive Guide'
 slug: how-to-get-a-clean-browsing-experience-on-chrome-4

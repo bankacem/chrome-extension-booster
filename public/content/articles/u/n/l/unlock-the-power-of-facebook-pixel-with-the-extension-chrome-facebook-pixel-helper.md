@@ -1,4 +1,5 @@
 ---
+seo_title: "Facebook Pixel Helper: A Closer Look"
 id: e87b7538-8513-448c-a6ee-c3ebde6d7cdf
 title: >-
   Unlock the Power of Facebook Pixel with the Extension Chrome Facebook Pixel

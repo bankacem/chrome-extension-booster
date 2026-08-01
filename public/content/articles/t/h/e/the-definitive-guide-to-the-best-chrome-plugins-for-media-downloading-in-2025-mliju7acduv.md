@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Chrome Plugins for Downloading Media"
 id: 5bac4a01-ecdb-45d1-b678-00f9ae83366f
 title: The Definitive Guide to the Best Chrome Plugins for Media Downloading in 2025
 slug: >-

@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Stop Redirects on Movie Streaming Sites"
 id: be7b7a27-f049-48e3-9c3f-a9a16345081b
 title: 'Stop Annoying Redirects on Movie Streaming Sites: A Comprehensive Guide'
 slug: stop-annoying-redirects-on-movie-streaming-sites-a-comprehensive-guide

@@ -1,4 +1,5 @@
 ---
+seo_title: "Building Extensions for the Manifest V3 Era"
 id: c18dec57-79d4-44fa-968e-01c6b9c4960e
 title: 'Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3 Era'
 slug: step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era

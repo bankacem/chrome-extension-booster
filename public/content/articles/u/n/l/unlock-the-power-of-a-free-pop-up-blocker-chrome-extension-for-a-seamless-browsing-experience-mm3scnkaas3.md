@@ -1,4 +1,5 @@
 ---
+seo_title: "A Free Pop-Up Blocker Extension for Chrome"
 id: 716bb982-779c-47e9-82a8-76951891c7f7
 title: >-
   Unlock the Power of a Free Pop Up Blocker Chrome Extension for a Seamless

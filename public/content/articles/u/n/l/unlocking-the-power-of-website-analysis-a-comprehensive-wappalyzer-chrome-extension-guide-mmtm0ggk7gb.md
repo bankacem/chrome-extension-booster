@@ -1,4 +1,5 @@
 ---
+seo_title: "Wappalyzer for Chrome: What It Can Tell You"
 id: ab5e0971-a0f6-42ab-b8a2-3b33fd9f07d0
 title: >-
   Unlocking the Power of Website Analysis: A Comprehensive Wappalyzer Chrome

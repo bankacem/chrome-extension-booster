@@ -1,4 +1,5 @@
 ---
+seo_title: "Facebook Pixel Helper: What It Shows You"
 id: 33d3f678-4e3d-41d2-9469-6943d240dc91
 title: >-
   Unlocking the Power of Facebook Pixel Helper Chrome 2026: A Comprehensive

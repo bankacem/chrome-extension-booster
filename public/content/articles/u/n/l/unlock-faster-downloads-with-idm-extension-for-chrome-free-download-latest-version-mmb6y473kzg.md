@@ -1,4 +1,5 @@
 ---
+seo_title: "The Latest IDM Extension for Chrome, Free"
 id: e7581980-1edd-49c3-a2ca-39b15156b150
 title: >-
   Unlock Faster Downloads with IDM Extension for Chrome Free Download Latest

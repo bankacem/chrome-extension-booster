@@ -1,4 +1,5 @@
 ---
+seo_title: "A Safe YouTube Downloader Extension, No Ads"
 id: 03bd5c87-c237-473d-9554-5760276858bd
 title: The Ultimate Guide to Finding a Safe YouTube Downloader Extension No Ads
 slug: finding-a-safe-youtube-downloader-extension-no-ads

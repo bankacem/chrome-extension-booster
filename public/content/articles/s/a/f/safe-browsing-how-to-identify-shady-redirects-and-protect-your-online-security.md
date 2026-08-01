@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Spot a Shady Redirect Before It Hits"
 id: 25b86ab1-0a18-49fe-a3a5-110f7fe60c11
 title: >-
   Safe Browsing: How to Identify Shady Redirects and Protect Your Online

@@ -1,4 +1,5 @@
 ---
+seo_title: "7 Ways to Fix Chrome Memory, No Extensions"
 id: 0b9829b2-1391-49a2-b0e4-c5728884a2bb
 title: 'Fix Chrome High Memory Usage in 2026: 7 Proven Methods (No Extensions Needed)'
 slug: fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed

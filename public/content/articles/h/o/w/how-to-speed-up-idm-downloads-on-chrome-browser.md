@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Speed Up IDM Downloads in Chrome"
 id: f802bc17-b7ab-4701-b227-75e54b1d5fce
 title: 'How to Speed Up IDM Downloads on Chrome Browser: A Comprehensive Guide'
 slug: how-to-speed-up-idm-downloads-on-chrome-browser

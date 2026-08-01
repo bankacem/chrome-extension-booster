@@ -1,4 +1,5 @@
 ---
+seo_title: "Light Popup Blocker: A Lighter Ad Blocker"
 id: 6c642d9d-de9a-486a-aa71-17253dad6df8
 title: >-
   Unlocking the Power of Ad-Blockers: Boosting Your Browsing Experience with

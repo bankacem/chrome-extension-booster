@@ -1,4 +1,5 @@
 ---
+seo_title: "A Highlighting Extension for Chrome"
 id: 54dc07ef-a2d2-4d9e-9fa3-252bb2edaecb
 title: Unlock the Power of Highlighting with the Best Extension Surligneur Chrome
 slug: extension-surligneur-chrome-10

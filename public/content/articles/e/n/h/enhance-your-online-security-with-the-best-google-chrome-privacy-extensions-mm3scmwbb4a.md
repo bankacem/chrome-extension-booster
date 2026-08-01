@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Privacy Extensions Worth Adding Today"
 id: a51db9f3-1d02-4b60-9dee-47941ebf47c3
 title: Enhance Your Online Security with the Best Google Chrome Privacy Extensions
 slug: >-

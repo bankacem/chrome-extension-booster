@@ -1,4 +1,5 @@
 ---
+seo_title: "Cut Chrome's RAM Usage Without Any Extensions"
 id: a71c6b73-42a3-4406-8f60-90af9561bfe2
 title: 'How to Reduce Chrome RAM Usage Without Extensions: A Comprehensive Guide'
 slug: how-to-reduce-chrome-ram-usage-without-extensions

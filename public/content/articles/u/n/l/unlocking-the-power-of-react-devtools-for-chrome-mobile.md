@@ -1,4 +1,5 @@
 ---
+seo_title: "React DevTools on Chrome Mobile: Does It Work?"
 id: 00ed8c79-4450-483c-97e6-1c8551534fe9
 title: 'Unlocking the Power of React DevTools for Chrome Mobile: A Comprehensive Guide'
 slug: unlocking-the-power-of-react-devtools-for-chrome-mobile

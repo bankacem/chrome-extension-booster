@@ -1,4 +1,5 @@
 ---
+seo_title: "A Chrome Extension for High-Quality MP3s"
 id: df7a61b4-389b-4721-92f8-ee2a4ed2d541
 title: >-
   The Definitive Guide to Chrome Extension for YouTube MP3 320kbps: Enhancing

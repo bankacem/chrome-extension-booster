@@ -1,4 +1,5 @@
 ---
+seo_title: "A Guide to Chrome Screenshot Add-ons"
 id: 394205cf-041f-4eab-9b17-3825c7d5d1a0
 title: >-
   Unlock the Power of Visual Content: A CompUnlock the Power of Visual Content:

@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Actually Find Good Chrome Extensions"
 id: 7ab5d7aa-9094-44df-9f35-1cb12d29966c
 title: >-
   The Ultimate Chrome Extension Reviews Guide: How to Find the Best Browser

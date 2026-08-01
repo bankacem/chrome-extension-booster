@@ -1,4 +1,5 @@
 ---
+seo_title: "Fix IDM's Download Bar Not Showing in Chrome"
 id: 66b74ae2-fe7f-4e83-b208-cc361a2e746b
 title: 'Fix IDM Download Bar Not Showing in Google Chrome: A Step-by-Step Guide'
 slug: fix-idm-download-bar-not-showing-in-google-chrome

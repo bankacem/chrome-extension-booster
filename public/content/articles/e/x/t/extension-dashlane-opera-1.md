@@ -1,4 +1,5 @@
 ---
+seo_title: "Dashlane's Password Manager, Now on Opera"
 id: d1b0846e-129a-4333-9507-f4b9f1f260e8
 title: Unlock Seamless Password Management with the Extension Dashlane Opera
 slug: extension-dashlane-opera-1

@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Remove Overlay Ads from News Sites"
 id: 5c8b1621-d526-48fd-affa-2ae703188b2d
 title: >-
   Effective Ways to Remove Overlay Ads from Blogs and News Sites for a Seamless

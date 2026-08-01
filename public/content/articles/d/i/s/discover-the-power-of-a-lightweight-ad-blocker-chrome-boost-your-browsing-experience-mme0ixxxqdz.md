@@ -1,4 +1,5 @@
 ---
+seo_title: "A Lightweight Ad Blocker for Chrome"
 id: 494713ee-d61e-480f-815c-fb3a82c3f379
 title: >-
   Discover the Power of a Lightweight Ad Blocker Chrome: Boost Your Browsing

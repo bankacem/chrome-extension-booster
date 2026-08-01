@@ -1,4 +1,5 @@
 ---
+seo_title: "The Screen Recorder Developers Actually Use"
 id: 7e272fbe-20e7-42fd-90af-523bbdf2a32b
 title: 'Discover the Best Screen Recorder for Developers: A Comprehensive Guide'
 slug: discover-the-best-screen-recorder-for-developers

@@ -1,4 +1,5 @@
 ---
+seo_title: "Is There an IDM Extension for Chrome Android?"
 id: 5328a619-4fda-4b37-8bd4-2cbef4e8983d
 title: >-
   Is there an IDM extension for Chrome Android? A Comprehensive Guide to

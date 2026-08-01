@@ -1,4 +1,5 @@
 ---
+seo_title: "A Chrome Extension Built Around Sci-Hub"
 id: 2b174e0a-ee7f-4101-a028-f0d4e1753809
 title: >-
   Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A

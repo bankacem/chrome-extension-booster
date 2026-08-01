@@ -1,4 +1,5 @@
 ---
+seo_title: "Choosing a YouTube Video Downloader for Chrome"
 id: 70b80012-4470-4af5-9d11-8ace8d3fd4c0
 title: The Ultimate Guide to Choosing a YouTube Video Downloader for PC Chrome
 slug: choosing-a-youtube-video-downloader-for-pc-chrome

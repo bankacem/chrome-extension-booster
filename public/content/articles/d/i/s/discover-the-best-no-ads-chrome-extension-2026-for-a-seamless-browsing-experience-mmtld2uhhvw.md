@@ -1,4 +1,5 @@
 ---
+seo_title: "The No-Ads Chrome Extension Worth Installing"
 id: 16af549d-aa0c-42b2-85f4-78829e753033
 title: >-
   Discover the Best No Ads Chrome Extension 2026 for a Seamless Browsing

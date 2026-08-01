@@ -1,4 +1,5 @@
 ---
+seo_title: "Why Your Browser Keeps Redirecting"
 id: e6026898-3219-4f42-9e2f-3d3c79c401c9
 title: >-
   Why your browser keeps redirecting and how to fix it: Cybersecurity, Safe

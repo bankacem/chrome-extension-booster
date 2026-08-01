@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions That Block Video Ads"
 id: 77acb108-10d8-4f21-9c1c-de3134d3e668
 title: 'Block Video Ads: Best Chrome Extensions for Productivity'
 slug: block-video-ads-chrome-extension

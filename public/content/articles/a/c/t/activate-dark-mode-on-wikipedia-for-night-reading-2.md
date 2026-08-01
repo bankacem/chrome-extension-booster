@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Enable Dark Mode on Wikipedia"
 id: 317610a9-f767-47f8-9cfd-f72a2ae80ec8
 title: How to Enable Dark Mode on Wikipedia for Night Reading (2026 Guide)
 slug: activate-dark-mode-on-wikipedia-for-night-reading-2

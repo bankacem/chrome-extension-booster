@@ -1,4 +1,5 @@
 ---
+seo_title: "SecuraKey Pro: A Safer Web for Your Family"
 id: 19584238-ace2-4440-8af0-62c14aea2b4e
 title: >-
   Keeping your digital life secure with SecuraKey Pro: Hacking Prevention,

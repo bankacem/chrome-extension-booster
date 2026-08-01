@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Dark Mode Extension for Facebook"
 id: eb3dc2c5-a4fd-4f2d-9189-0a1521490cbe
 title: >-
   Discover the Best Dark Mode Extension for Facebook 2026: Enhance Your Browsing

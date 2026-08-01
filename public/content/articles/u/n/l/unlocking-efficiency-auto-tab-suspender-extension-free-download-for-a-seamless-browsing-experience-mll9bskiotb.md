@@ -1,4 +1,5 @@
 ---
+seo_title: "A Free Auto Tab Suspender Extension for Chrome"
 id: e0f5812c-99e9-42a3-aa9a-1c478c1bfbe4
 title: >-
   Unlocking Efficiency: Auto Tab Suspender Extension Free Download for a

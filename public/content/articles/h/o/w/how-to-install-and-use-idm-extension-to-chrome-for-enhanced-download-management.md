@@ -1,4 +1,5 @@
 ---
+seo_title: "Installing and Using IDM's Chrome Extension"
 id: bd7f9dd7-c158-43c4-b765-37ad82899ca2
 title: >-
   How to Install and Use IDM Extension to Chrome for Enhanced Download

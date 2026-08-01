@@ -1,4 +1,5 @@
 ---
+seo_title: "Why Cloud Password Managers Carry Real Risk"
 id: 524ed64e-1a53-4294-866a-a8d3b90960d9
 title: >-
   Why You Should Avoid Cloud-Based Password Managers: A Comprehensive Review of

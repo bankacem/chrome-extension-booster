@@ -1,4 +1,5 @@
 ---
+seo_title: "A Free Full-Page Screenshot Tool, No Login"
 id: 7e8cd08f-1c66-4355-9ea7-3cf53fca8435
 title: 'Best Full Page Screenshot Chrome Extension 2026: Free & No Login Required'
 slug: best-full-page-screenshot-chrome-extension-2026-free-no-login-required

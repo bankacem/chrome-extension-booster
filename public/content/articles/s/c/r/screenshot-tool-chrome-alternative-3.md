@@ -1,4 +1,5 @@
 ---
+seo_title: "A Screenshot Tool Alternative for Chrome"
 id: e01669d1-8ec0-4512-917c-8de6fb20a971
 title: Discover the Best Screenshot Tool Chrome Alternative for Enhanced Productivity
 slug: screenshot-tool-chrome-alternative-3

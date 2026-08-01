@@ -1,4 +1,5 @@
 ---
+seo_title: "Why Chrome Extensions Are Worth Having"
 id: 3b0c2265-79b6-4536-b1af-698768a64b06
 title: >-
   Unlocking the Power of Chrome: Why Extensions are Indispensable for a Seamless

@@ -1,4 +1,5 @@
 ---
+seo_title: "Identify Any Font on a Page Instantly"
 id: f69cca4b-6bd7-43f1-bdcd-6dafce1764b2
 title: Discover the Best Font Finder Extension Chrome to Elevate Your Design Game
 slug: >-

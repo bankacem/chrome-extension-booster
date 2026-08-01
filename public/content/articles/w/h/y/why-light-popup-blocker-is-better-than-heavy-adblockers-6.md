@@ -1,4 +1,5 @@
 ---
+seo_title: "Why a Light Popup Blocker Beats a Heavy One"
 id: 1cded944-4aca-49be-9f1f-3872bd3ccbcc
 title: 'Why Light Popup Blocker is Better than Heavy Adblockers: A Comprehensive Guide'
 slug: why-light-popup-blocker-is-better-than-heavy-adblockers-6

@@ -1,4 +1,5 @@
 ---
+seo_title: "A Chrome Extension Built for Programmers"
 id: 47409983-dc8b-488e-ba57-d68a270e8f3e
 title: >-
   Unlocking Productivity: The Best Chrome Extension for Programmers to Boost

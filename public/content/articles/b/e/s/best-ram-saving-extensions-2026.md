@@ -1,4 +1,5 @@
 ---
+seo_title: "10 Best RAM-Saving Extensions for Chrome"
 title: 10 Best RAM Saving Extensions for Chrome (2026 Edition)
 slug: best-ram-saving-extensions-2026
 excerpt: >-

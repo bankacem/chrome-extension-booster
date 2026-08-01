@@ -1,4 +1,5 @@
 ---
+seo_title: "Trello for Chrome: A Productivity Extension"
 id: 13fcb99e-0b14-4ca7-a523-7f984b0564cd
 title: 'Unlocking Productivity with Extension Trello Chrome: A Comprehensive Guide'
 slug: extension-trello-chrome-11

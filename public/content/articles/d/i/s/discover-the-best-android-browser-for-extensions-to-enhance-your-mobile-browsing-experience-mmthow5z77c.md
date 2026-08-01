@@ -1,4 +1,5 @@
 ---
+seo_title: "Which Android Browser Handles Extensions Best?"
 id: ad146e08-e5ba-43a9-89ef-469a84ddc79e
 title: >-
   Discover the Best Android Browser for Extensions to Enhance Your Mobile

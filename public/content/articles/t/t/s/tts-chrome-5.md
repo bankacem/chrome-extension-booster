@@ -1,4 +1,5 @@
 ---
+seo_title: "Text-to-Speech Extensions Worth Using"
 id: 3a3ee33d-edf3-44a9-a8b8-83d92d63954f
 title: >-
   Unlock the Power of Text-to-Speech: A Comprehensive Guide to TTS Chrome

@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions to Download Files, Tested"
 id: 854647e0-dc54-45d7-84e2-81602945ffbb
 title: 'Best Chrome Extensions to Download Files in 2026: Tested for Speed and Safety'
 slug: best-chrome-extension-download-files

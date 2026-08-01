@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Free Security Extensions for Chrome"
 id: fa106aba-1d94-45d0-b21e-868b266d9326
 title: The Best Security Chrome Extensions Free to Install in 2025
 slug: the-best-security-chrome-extensions-free-to-install-in-2025

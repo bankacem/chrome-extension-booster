@@ -1,4 +1,5 @@
 ---
+seo_title: "The Popup Blocker Worth Trying on Chrome"
 id: a9c7368f-9a43-4f90-ba28-995c7ed5f5ed
 title: >-
   Discover the Best Popup Blocker Chrome Extension for a Seamless Browsing

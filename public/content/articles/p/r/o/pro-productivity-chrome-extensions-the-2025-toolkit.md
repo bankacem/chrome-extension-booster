@@ -1,4 +1,5 @@
 ---
+seo_title: "The 2025 Productivity Toolkit for Chrome"
 id: 54fc3a1f-a087-40ce-8b80-7d478afb43eb
 title: 'Pro Productivity Chrome Extensions: The 2025 Toolkit'
 slug: pro-productivity-chrome-extensions-the-2025-toolkit

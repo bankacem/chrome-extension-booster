@@ -1,5 +1,5 @@
 ---
-seo_title: "Unlocking the Power of Social Media"
+seo_title: "Best Social Media Extensions for Chrome"
 id: 06a1be1d-a13c-4b47-874e-26179520a90c
 title: >-
   Unlocking the Power of Social Media: The Best Social Media Chrome Extensions

@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Install Chrome Extensions on Android"
 id: 2dd869a1-8e78-4540-90f8-ea4c3cb82ffc
 title: 'How to Install Chrome Extensions on Android 2026: A Step-by-Step Guide'
 slug: how-to-install-chrome-extensions-on-android-2026

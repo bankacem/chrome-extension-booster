@@ -1,4 +1,5 @@
 ---
+seo_title: "Ghostery for Chrome: What It Actually Blocks"
 id: 4241e697-ee18-47a6-ac92-5eb80976ea9f
 title: >-
   Unlocking the Power of Ghostery Extension Chrome: Enhance Your Browsing

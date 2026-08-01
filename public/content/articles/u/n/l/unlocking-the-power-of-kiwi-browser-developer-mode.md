@@ -1,4 +1,5 @@
 ---
+seo_title: "What Kiwi Browser's Developer Mode Unlocks"
 id: 10213140-3e3a-427a-adbd-af56941e53e3
 title: 'Unlocking the Power of Kiwi Browser Developer Mode: A Comprehensive Guide'
 slug: unlocking-the-power-of-kiwi-browser-developer-mode

@@ -1,4 +1,5 @@
 ---
+seo_title: "An Auto-Refresh Extension for Chrome"
 id: 9b0a6ff2-7aaf-472e-954f-f77d3fbc1991
 title: >-
   Boost Your Browsing Experience with the Best Extension Chrome Rafraichissement

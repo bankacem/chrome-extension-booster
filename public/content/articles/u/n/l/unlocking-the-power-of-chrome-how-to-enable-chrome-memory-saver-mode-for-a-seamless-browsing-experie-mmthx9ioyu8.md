@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Turn On Chrome's Memory Saver Mode"
 id: 7f8086e1-a66f-4d37-913d-24c9c276cc8a
 title: >-
   Unlocking the Power of Chrome: How to Enable Chrome Memory Saver Mode for a

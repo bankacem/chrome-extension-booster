@@ -1,4 +1,5 @@
 ---
+seo_title: "SecuraKey Pro: Safer Banking Passwords"
 id: 07b4c0bb-3054-4a32-8294-89c42ddd95fd
 title: 'SecuraKey Pro: The Safest Way to Store Banking Passwords'
 slug: securakey-pro-the-safest-way-to-store-banking-passwords-5

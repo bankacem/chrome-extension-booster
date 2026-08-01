@@ -1,4 +1,5 @@
 ---
+seo_title: "Stop Chrome from Crashing with a Tab Discarder"
 id: 139a5bd4-298f-4420-a6fd-22d46b183f2f
 title: >-
   Prevent Chrome from Crashing with Tab Discarder: Boost Browser Performance and

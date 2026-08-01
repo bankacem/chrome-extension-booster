@@ -1,4 +1,5 @@
 ---
+seo_title: "The Right Extension to Cap Chrome's RAM Usage"
 id: 4ef2edb2-85f3-4e9e-84db-1fc5ba5cc766
 title: >-
   Optimizing Browser Performance: How to Limit Chrome RAM Usage with the Right

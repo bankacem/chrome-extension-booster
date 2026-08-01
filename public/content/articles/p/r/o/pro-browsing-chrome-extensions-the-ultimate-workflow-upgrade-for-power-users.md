@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions Built for Power Users"
 id: 48a980bb-78f9-44f5-b89c-bd65144a4f50
 title: 'Pro Browsing Chrome Extensions: The Ultimate Workflow Upgrade for Power Users'
 slug: pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users

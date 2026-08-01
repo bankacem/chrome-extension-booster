@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Chrome Extensions for Online Shopping"
 id: 713d0578-0699-44ce-9382-dd281eb27c35
 title: The Ultimate Chrome Extensions for Shopping Guide
 slug: the-ultimate-chrome-extensions-for-shopping-guide

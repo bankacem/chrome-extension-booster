@@ -1,4 +1,5 @@
 ---
+seo_title: "10 Ways to Fix Chrome's Memory Usage Fast"
 title: 10 Best Ways to Fix Chrome Memory Usage Instantly in 2026 (Free Guide)
 slug: how-to-fix-chrome-memory-2026
 excerpt: >-

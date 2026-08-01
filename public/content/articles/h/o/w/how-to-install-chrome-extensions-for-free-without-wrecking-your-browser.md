@@ -1,4 +1,5 @@
 ---
+seo_title: "Installing Extensions Without Breaking Chrome"
 id: 9403e1e2-566b-405a-b979-f0433238b971
 title: How to Install Chrome Extensions for Free (Without Wrecking Your Browser)
 slug: how-to-install-chrome-extensions-for-free-without-wrecking-your-browser

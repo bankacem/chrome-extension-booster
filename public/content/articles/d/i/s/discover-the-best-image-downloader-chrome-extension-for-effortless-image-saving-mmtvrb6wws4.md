@@ -1,4 +1,5 @@
 ---
+seo_title: "An Image Downloader Extension for Chrome"
 id: 1834a63d-46d7-490c-90e9-2434ae6b9aab
 title: >-
   Discover the Best Image Downloader Chrome Extension for Effortless Image

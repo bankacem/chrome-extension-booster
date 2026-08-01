@@ -1,4 +1,5 @@
 ---
+seo_title: "Integrating IDM with Chrome Downloads"
 id: e10b091f-5bd2-4c60-bd58-8ff7d0bf4bac
 title: How to Integrate Extension IDM to Chrome for Enhanced Browsing Experience
 slug: extension-idm-to-chrome-12

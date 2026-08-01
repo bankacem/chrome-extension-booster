@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Extensions for PCs with 4GB RAM"
 id: e7ec10a6-1061-4b30-9d1f-46ce3406bd76
 title: >-
   Best Chrome Extensions for Old PCs with 4GB RAM: Boosting Performance and

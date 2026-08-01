@@ -1,4 +1,5 @@
 ---
+seo_title: "A Free Pop-Up Blocker Worth Installing"
 id: daf3e984-3228-4b8b-bba3-52ccb92c189a
 title: >-
   Get the Best Free Pop Up Blocker for Google Chrome to Enhance Your Browsing

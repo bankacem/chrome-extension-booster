@@ -1,4 +1,5 @@
 ---
+seo_title: "Extensions That Actually Boost Productivity"
 id: da0807ed-0889-4916-9029-e5c894b821ee
 title: 'Supercharge Your Workflow: The Ultimate Productivity Chrome Extensions Guide'
 slug: supercharge-your-workflow-the-ultimate-productivity-chrome-extensions-guide

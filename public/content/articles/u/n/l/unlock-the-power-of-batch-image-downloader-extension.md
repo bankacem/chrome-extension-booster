@@ -1,4 +1,5 @@
 ---
+seo_title: "Download Images in Bulk with This Extension"
 id: 886230a2-4e1a-482f-9949-c9b951a77939
 title: 'Unlock the Power of Batch Image Downloader Extension: A Comprehensive Guide'
 slug: unlock-the-power-of-batch-image-downloader-extension

@@ -1,4 +1,5 @@
 ---
+seo_title: "10 Utility Extensions for Your Chrome Workflow"
 id: d03f7375-dc13-4a01-9e06-debd984e6a65
 title: >-
   10 Essential Utility Chrome Extensions to Supercharge Your Professional

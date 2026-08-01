@@ -1,5 +1,5 @@
 ---
-seo_title: "Unlock the Power of YouTube Audio"
+seo_title: "YouTube Audio Downloader for Chrome"
 id: 48b2c984-72f3-4b0d-bece-eca2a9f1f9c0
 title: >-
   Unlock the Power of YouTube Audio: The Ultimate Guide to YouTube Audio

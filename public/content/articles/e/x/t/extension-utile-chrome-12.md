@@ -1,4 +1,5 @@
 ---
+seo_title: "A Genuinely Useful Chrome Extension"
 id: 467e9b1e-d0b3-4450-9a74-58ecb5e11caa
 title: >-
   Unlocking Productivity: The Best Extension Utile Chrome for a Seamless

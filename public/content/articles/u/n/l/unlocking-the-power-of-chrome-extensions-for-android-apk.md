@@ -1,4 +1,5 @@
 ---
+seo_title: "Running Chrome Extensions from an Android APK"
 id: b95971cc-e9c0-4a35-b9c7-968364bc6ebc
 title: >-
   Unlocking the Power of Chrome Extensions for Android APK: A Comprehensive

@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Make Chrome Faster on Windows 10 or 11"
 id: c9dac542-7700-428b-9092-a5d728b58ec6
 title: 'How to Make Google Chrome Faster on Windows 11/10: A Comprehensive Guide'
 slug: how-to-make-google-chrome-faster-on-windows-1110

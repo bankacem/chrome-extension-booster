@@ -1,4 +1,5 @@
 ---
+seo_title: "Extend Laptop Battery Life by Suspending Tabs"
 id: eb6e5cc6-7f18-4561-98b9-8f43720316f4
 title: 'How to Extend Laptop Battery Life by Suspending Tabs: The Ultimate Guide'
 slug: extend-laptop-battery-life-by-suspending-tabs-8

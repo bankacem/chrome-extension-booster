@@ -1,4 +1,5 @@
 ---
+seo_title: "Getting More Out of Deezer with This Extension"
 id: 71661d37-bc4a-4825-ba2c-9a879fddb1e9
 title: 'Unlocking the Power of Music: The Ultimate Guide to Extension Deezer Chrome'
 slug: extension-deezer-chrome-2

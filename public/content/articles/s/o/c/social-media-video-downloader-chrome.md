@@ -1,4 +1,5 @@
 ---
+seo_title: "Extensions for Downloading Social Videos"
 id: 041dbb1c-397e-43df-be2d-b21d324e2297
 title: Social Media Video Downloader Chrome Extensions 2026
 slug: social-media-video-downloader-chrome

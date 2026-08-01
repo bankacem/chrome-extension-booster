@@ -1,4 +1,5 @@
 ---
+seo_title: "An Ad-Blocking Extension That Actually Works"
 id: eefbe79d-f7c2-4dc5-9e47-8fb2844886bb
 title: >-
   Discover the Best Ad Blocking Extension for Chrome: Boost Your Browsing

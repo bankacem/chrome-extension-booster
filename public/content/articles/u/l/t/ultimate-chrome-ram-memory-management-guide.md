@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome RAM and Memory Management, Explained"
 title: Ultimate Chrome RAM & Memory Management Guide (2026)
 slug: ultimate-chrome-ram-memory-management-guide
 excerpt: >-

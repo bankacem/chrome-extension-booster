@@ -1,4 +1,5 @@
 ---
+seo_title: "Light Extensions That Work Well on Slow PCs"
 id: 41bfeb5c-81ff-4fd6-870b-7453d76f48c0
 title: >-
   Boosting Productivity with Light Browser Extensions for Slow PC: A

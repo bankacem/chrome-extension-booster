@@ -1,4 +1,5 @@
 ---
+seo_title: "The Free Extensions You Need for Too Many Tabs"
 id: 27be7b16-072f-4dba-a658-f4dfc65ecb18
 title: >-
   The Only Free Essential Chrome Extensions You Need to Survive the Tab

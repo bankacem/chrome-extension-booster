@@ -1,4 +1,5 @@
 ---
+seo_title: "The Fastest Video Downloader for Chrome"
 id: 9cc0ac3b-88a5-4378-a9e2-dc37878e3f1b
 title: >-
   Discover the Fastest Video Downloader Chrome Extension for Seamless Video

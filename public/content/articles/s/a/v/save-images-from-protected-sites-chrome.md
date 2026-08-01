@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Save Images from Protected Websites"
 id: b9d25a79-fe4f-4f78-8444-90a4ec97de80
 title: How to Save Images from Protected Sites in Chrome
 slug: save-images-from-protected-sites-chrome

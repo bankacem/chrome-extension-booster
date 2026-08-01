@@ -1,4 +1,5 @@
 ---
+seo_title: "Facebook Pixel Helper Not Working? Try This"
 id: 08f9db17-a6cc-423b-b6b0-a4fe1c700bf2
 title: >-
   How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to

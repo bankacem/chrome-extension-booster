@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions That Make Browsing Better"
 id: b1e1ee60-e91c-475e-9971-3b596484b610
 title: The Ultimate Chrome Extensions for Browsing Guide
 slug: the-ultimate-chrome-extensions-for-browsing-guide

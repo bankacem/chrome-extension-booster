@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrometana: Redirecting Bing to Google"
 id: fe362fac-6c56-471f-a3d0-0affee26d527
 title: 'Chrometana Review: Redirect Bing Searches to Google & Alternatives (2026)'
 slug: chrometana-extension-review

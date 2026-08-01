@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Way to Cut Chrome's RAM Usage"
 id: b55bb75c-dd03-4463-87da-b975a2d1e84d
 title: >-
   Optimize Your Browser: The Best Ways to Reduce RAM Usage with Chrome

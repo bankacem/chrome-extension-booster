@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Enable Extensions in Chrome Android"
 id: f13f91a9-f690-4305-b0bb-57225335c67f
 title: 'How to Enable Chrome Extensions on Android Mobile: Unlocking Enhanced Browsing'
 slug: >-

@@ -1,4 +1,5 @@
 ---
+seo_title: "A Tab Suspender Extension That Frees Up RAM"
 id: 02e3fe6a-e6f8-400f-9e65-3db69c78b77d
 title: >-
   Discover the Best Extension to Suspend Tabs and Boost Your Browser's

@@ -1,4 +1,5 @@
 ---
+seo_title: "Windscribe for Chrome: A VPN Extension"
 id: 5e653089-f870-48d9-b00e-a614bb2e1973
 title: >-
   Unlocking Online Security: A Comprehensive Guide to Windscribe Extension for

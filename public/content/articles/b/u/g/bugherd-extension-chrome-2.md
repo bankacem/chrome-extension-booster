@@ -1,4 +1,5 @@
 ---
+seo_title: "BugHerd for Chrome: Simpler Bug Tracking"
 id: 281fe238-066c-410d-94f5-2be7e49ba322
 title: >-
   Unlock Efficient Bug Tracking with Bugherd Extension Chrome: A Comprehensive

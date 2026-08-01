@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Popup Blocker for Chrome in 2026"
 id: 4f113cb1-cd14-4702-855f-8238da229e7f
 title: >-
   Discover the Best Popup Blocker for Chrome 2026: Boost Your Browsing

@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions for a Faster, Ad-Free Web"
 id: 3670d34a-8bb1-4428-bf95-2a9d54c4b23c
 title: >-
   Essential Chrome Extensions for Ad-Free Browsing: Unlocking a Faster, Cleaner,

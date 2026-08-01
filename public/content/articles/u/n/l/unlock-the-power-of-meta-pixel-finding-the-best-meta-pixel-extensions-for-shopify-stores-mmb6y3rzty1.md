@@ -1,4 +1,5 @@
 ---
+seo_title: "Meta Pixel Extensions Built for Shopify Stores"
 id: 198f2db0-39ac-40f3-a8f3-34fbb0ccfc33
 title: >-
   Unlock the Power of Meta Pixel: Finding the Best Meta Pixel Extensions for

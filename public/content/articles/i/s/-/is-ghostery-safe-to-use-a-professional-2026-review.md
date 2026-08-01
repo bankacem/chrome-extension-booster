@@ -1,4 +1,5 @@
 ---
+seo_title: "Is Ghostery Actually Safe to Use?"
 id: fe5ab5e2-07b0-4ad4-9de6-ae36214b4c97
 title: Is Ghostery Safe to Use? A Professional 2026 Review
 slug: is-ghostery-safe-to-use-a-professional-2026-review

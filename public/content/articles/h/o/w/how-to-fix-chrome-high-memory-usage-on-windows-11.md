@@ -1,4 +1,5 @@
 ---
+seo_title: "Fixing Chrome's Memory Usage on Windows 11"
 id: 36cb4615-8a87-4455-895a-4713ee839999
 title: >-
   How to Fix Chrome High Memory Usage on Windows 11: A Complete Guide to a

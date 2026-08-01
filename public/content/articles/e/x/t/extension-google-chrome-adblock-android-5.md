@@ -1,4 +1,5 @@
 ---
+seo_title: "Ad-Free Browsing on Android Chrome, Explained"
 id: 2365598a-182a-4854-ad83-97b7b39ac4be
 title: >-
   Unlock Ad-Free Browsing on Android: The Power of Extension Google Chrome

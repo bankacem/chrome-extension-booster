@@ -1,4 +1,5 @@
 ---
+seo_title: "Speed Up Page Loading by Blocking Popups First"
 id: cea062d4-a3d7-41cc-845b-0fa755107ab9
 title: 'How to Speed Up Page Loading by Blocking Popups: A Comprehensive Guide'
 slug: how-to-speed-up-chrome-partial

@@ -1,4 +1,5 @@
 ---
+seo_title: "A Chrome Extension Built for Your Privacy"
 id: 8a37fee5-521f-4476-a69d-5ee89b4e61c4
 title: Enhance Your Online Security with the Best Chrome Extension to Protect Privacy
 slug: >-

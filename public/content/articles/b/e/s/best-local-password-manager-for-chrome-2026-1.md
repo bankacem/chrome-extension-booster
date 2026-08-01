@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Local Password Manager for Chrome"
 id: 91c8ac76-b9e6-451d-b337-75f0d0d6f6d1
 title: >-
   Discover the Best Local Password Manager for Chrome 2026: Enhance Your Online

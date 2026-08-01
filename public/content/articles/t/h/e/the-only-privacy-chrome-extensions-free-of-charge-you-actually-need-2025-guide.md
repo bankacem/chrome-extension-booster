@@ -1,4 +1,5 @@
 ---
+seo_title: "The Only Free Privacy Extensions You Need"
 id: bd07d393-6fbf-4c8a-92a3-ffe4e99bfe2b
 title: >-
   The Only Privacy Chrome Extensions Free of Charge You Actually Need (2025

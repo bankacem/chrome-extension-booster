@@ -1,4 +1,5 @@
 ---
+seo_title: "5 Privacy Extensions for Chrome Mobile"
 id: 342dea18-6fa3-4c9a-8a21-18d38cb00e17
 title: >-
   Top 5 Privacy and Security Extensions for Chrome Mobile: Protect Your Online

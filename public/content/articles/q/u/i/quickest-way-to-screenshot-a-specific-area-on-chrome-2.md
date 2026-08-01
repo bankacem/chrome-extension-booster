@@ -1,4 +1,5 @@
 ---
+seo_title: "The Quickest Way to Screenshot Part of a Page"
 id: 57674c28-05ef-4f3a-8b42-10d21d8919d1
 title: 'Quickest Way to Screenshot a Specific Area on Chrome: A Step-by-Step Guide'
 slug: quickest-way-to-screenshot-a-specific-area-on-chrome-2

@@ -1,4 +1,5 @@
 ---
+seo_title: "NoScript for Chrome: Better Security and Speed"
 id: edcf1372-8db4-4ce0-b6df-ba1b0823f59a
 title: >-
   Unlocking the Power of Noscript Chrome: Boosting Browser Security and

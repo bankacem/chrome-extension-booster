@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Take Clean Screenshots for Tutorials"
 id: d3e4bc1c-5653-49a7-ad30-45423f7a1145
 title: 'How to Take High-Quality Screenshots for Tutorials: A Step-by-Step Guide'
 slug: how-to-take-high-quality-screenshots-for-tutorials-1

@@ -1,4 +1,5 @@
 ---
+seo_title: "The Tab Management Extensions Worth Using"
 id: f6f6eebd-77c8-415b-864d-aed22628e5c4
 title: >-
   Discover the Best Tab Management Extensions 2026 for a More Efficient Browsing

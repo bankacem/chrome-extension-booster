@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Block Newsletter Popups in Chrome"
 id: 5bda97eb-0d65-4e58-a7c0-446851ef46c8
 title: >-
   Block Newsletter Popups and "Allow Notifications" Prompts: Regaining Control

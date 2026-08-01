@@ -1,4 +1,5 @@
 ---
+seo_title: "Essential Chrome Extensions for Work"
 id: 18362e2e-1eb9-49ac-8093-a311d7c0fbb8
 title: 'The Elite Stack: Essential Chrome Extensions for Work Pro Environments'
 slug: the-elite-stack-essential-chrome-extensions-for-work-pro-environments

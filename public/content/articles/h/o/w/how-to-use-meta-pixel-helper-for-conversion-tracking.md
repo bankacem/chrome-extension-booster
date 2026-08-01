@@ -1,4 +1,5 @@
 ---
+seo_title: "Using Meta Pixel Helper to Track Conversions"
 id: 98bed27f-dde1-4a25-9ad6-049c9704aa7e
 title: 'How to Use Meta Pixel Helper for Conversion Tracking: A Step-by-Step Guide'
 slug: how-to-use-meta-pixel-helper-for-conversion-tracking

@@ -1,4 +1,5 @@
 ---
+seo_title: "Where to Download Meta Pixel Helper for Chrome"
 id: 6a3c85b4-0511-4450-921b-e8bb03e07543
 title: >-
   Unlock the Power of Meta Pixel with the Meta Pixel Helper Chrome Extension

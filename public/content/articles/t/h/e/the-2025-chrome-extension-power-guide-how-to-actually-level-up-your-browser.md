@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Actually Level Up Your Chrome Setup"
 id: ecf16f81-9e85-469e-a3e1-89c38892a7b8
 title: 'The 2025 Chrome Extension Power Guide: How to Actually Level Up Your Browser'
 slug: the-2025-chrome-extension-power-guide-how-to-actually-level-up-your-browser

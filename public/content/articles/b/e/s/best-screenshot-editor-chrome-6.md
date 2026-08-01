@@ -1,4 +1,5 @@
 ---
+seo_title: "A Screenshot Editor Worth Adding to Chrome"
 id: 13e06f66-d954-447e-9803-2c23a20c4831
 title: Unlock Seamless Visual Communication with the Top Screenshot Editor for Chrome
 slug: best-screenshot-editor-chrome-6

@@ -1,4 +1,5 @@
 ---
+seo_title: "Getting Extensions to Work on Lemur Browser"
 id: 4442ea0a-697c-45d8-8612-6cb1729723d7
 title: >-
   Discover the Best Lemur Browser Extensions Download for Enhanced Browsing

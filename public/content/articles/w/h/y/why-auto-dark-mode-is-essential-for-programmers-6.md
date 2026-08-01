@@ -1,4 +1,5 @@
 ---
+seo_title: "Why Auto Dark Mode Matters for Programmers"
 id: 489e902e-14a1-489e-a827-be0f10763213
 title: Why Auto Dark Mode is essential for programmers
 slug: why-auto-dark-mode-is-essential-for-programmers-6

@@ -1,4 +1,5 @@
 ---
+seo_title: "Fast Screenshot Extension Alternatives to Try"
 id: dd67cdea-2224-4525-97ea-7f688b371290
 title: Discover the Best Fast Screenshot Extension Alternatives for Seamless Browsing
 slug: fast-screenshot-extension-alternatives-1

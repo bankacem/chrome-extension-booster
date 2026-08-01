@@ -1,4 +1,5 @@
 ---
+seo_title: "An Ad Blocker That Actually Works on YouTube"
 id: 6aa8fe70-52f3-44aa-8428-b6472a4f386a
 title: >-
   Unlock a Seamless YouTube Experience: The Best Ad Blocker that Works on

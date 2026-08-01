@@ -1,4 +1,5 @@
 ---
+seo_title: "Spreadsheet Tools for Small Business Owners"
 id: 21adfc13-a9c8-4b95-8c27-d1ae277fd500
 title: >-
   Best Spreadsheet Tools for Small Business Owners: A Comprehensive Guide for

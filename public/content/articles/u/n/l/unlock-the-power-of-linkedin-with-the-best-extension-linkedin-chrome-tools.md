@@ -1,4 +1,5 @@
 ---
+seo_title: "LinkedIn Tools Worth Adding to Chrome"
 id: e31e6d8b-3c07-41f4-a25d-0bf7d81a7771
 title: Unlock the Power of LinkedIn with the Best Extension LinkedIn Chrome Tools
 slug: unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools

@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Block Popups on Movie Streaming Sites"
 id: 008ca12e-2c51-4d4e-ba57-6863265de74b
 title: 'Safe Streaming: How to Block Popups on Movie Sites'
 slug: safe-streaming-how-to-block-popups-on-movie-sites-8

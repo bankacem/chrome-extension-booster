@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Spot a Good Extension from a Bad One"
 id: 66e42800-b72a-4757-94c1-0dfb2ac063bc
 title: 'Free Chrome Extension Reviews: How to Spot the Gems and Dodge the Junk'
 slug: free-chrome-extension-reviews-how-to-spot-the-gems-and-dodge-the-junk

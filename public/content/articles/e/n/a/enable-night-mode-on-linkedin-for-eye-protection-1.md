@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Enable Night Mode on LinkedIn"
 id: 10be89d1-c939-48cf-a8fc-e914836b4c96
 title: >-
   Enable Night Mode on LinkedIn for Eye Protection: A Guide to Reduced Blue

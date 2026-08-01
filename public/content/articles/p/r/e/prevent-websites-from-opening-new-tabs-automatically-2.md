@@ -1,4 +1,5 @@
 ---
+seo_title: "Stop Websites from Opening New Tabs"
 id: e1411e92-b380-4844-bf8f-e33534a7ee86
 title: 'Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide'
 slug: prevent-websites-from-opening-new-tabs-automatically-2

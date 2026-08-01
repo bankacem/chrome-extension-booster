@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Enable Dark Mode on Nearly Any Website"
 id: e8e84495-ccbc-415e-86cb-94810d72cabc
 title: >-
   How to Enable Dark Mode on Pinterest, Instagram, Netflix, GitHub,

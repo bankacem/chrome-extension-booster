@@ -1,4 +1,5 @@
 ---
+seo_title: "A Ghostery Alternative Worth Considering"
 id: f94027f2-2c18-4856-93e8-8c738a2813fe
 title: >-
   Discover the Best Ghostery Alternative for Chrome: Enhance Your Browsing

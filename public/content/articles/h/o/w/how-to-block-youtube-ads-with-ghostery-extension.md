@@ -1,4 +1,5 @@
 ---
+seo_title: "Blocking YouTube Ads with Ghostery"
 id: 2329a7b1-bdf9-4d9f-aac8-928f1f17606d
 title: 'How to Block YouTube Ads with Ghostery Extension: A Comprehensive Guide'
 slug: how-to-block-youtube-ads-with-ghostery-extension

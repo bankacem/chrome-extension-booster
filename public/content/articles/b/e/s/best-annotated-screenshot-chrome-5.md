@@ -1,4 +1,5 @@
 ---
+seo_title: "Screenshot Extensions with Built-In Annotation"
 title: Best Annotated Screenshot Chrome Extensions for Enhanced Productivity
 slug: best-annotated-screenshot-chrome-5
 excerpt: >-

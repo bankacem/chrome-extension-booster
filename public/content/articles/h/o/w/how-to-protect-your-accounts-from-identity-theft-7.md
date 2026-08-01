@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Protect Your Accounts from Fraud"
 id: fbb53e72-61e6-4887-b835-cee317afebd6
 title: 'How to Protect Your Accounts from Identity Theft: A Comprehensive Guide'
 slug: how-to-protect-your-accounts-from-identity-theft-7

@@ -1,4 +1,5 @@
 ---
+seo_title: "Ghostery Alternatives Worth Checking Out"
 id: ba4caec7-d744-4d62-a7f6-f0038e103297
 title: 'Top Alternatives to Ghostery for Chrome Browser: Boosting Privacy and Security'
 slug: >-

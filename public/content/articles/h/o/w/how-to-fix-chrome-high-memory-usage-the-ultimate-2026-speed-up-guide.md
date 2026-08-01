@@ -1,4 +1,5 @@
 ---
+seo_title: "Fixing Chrome's Memory Usage for Good"
 id: da7ef45a-4781-4133-a5d9-eeb6cd281449
 title: >-
   How to Fix Chrome High Memory Usage The Ultimate 2026 Speed Up Guide: Reducing

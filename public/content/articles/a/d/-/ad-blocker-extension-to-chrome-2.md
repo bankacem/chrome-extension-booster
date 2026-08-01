@@ -1,4 +1,5 @@
 ---
+seo_title: "The Ad Blocker Extension That Actually Works"
 title: 'The Best Ad Blocker Extension for Chrome in 2026: What Actually Works'
 slug: ad-blocker-extension-to-chrome-2
 excerpt: >-

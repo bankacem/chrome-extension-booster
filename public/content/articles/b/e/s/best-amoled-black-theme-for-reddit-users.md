@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best AMOLED Black Theme for Reddit"
 id: 316bb3e5-8f2b-4637-aefe-9f6471c933a4
 title: >-
   Discover the Best AMOLED Black Theme for Reddit Users: Enhance Your Browsing

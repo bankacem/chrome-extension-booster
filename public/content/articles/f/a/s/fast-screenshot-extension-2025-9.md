@@ -1,4 +1,5 @@
 ---
+seo_title: "A Faster Screenshot Extension for 2025"
 id: 48fdced3-fd3c-485d-b890-adddbaded294
 title: >-
   Unlock the Power of Visual Communication with the Fast Screenshot Extension

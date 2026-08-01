@@ -1,4 +1,5 @@
 ---
+seo_title: "Using a Chrome Extension on Your Android Phone"
 id: 1dba01a6-78a3-4502-b676-b28ce7ec6762
 title: 'Unlocking the Power of Chrome: How to Use a Chrome Extension for Android Phone'
 slug: >-

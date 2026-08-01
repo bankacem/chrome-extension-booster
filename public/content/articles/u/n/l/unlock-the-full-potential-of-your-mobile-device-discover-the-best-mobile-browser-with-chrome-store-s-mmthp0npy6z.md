@@ -1,4 +1,5 @@
 ---
+seo_title: "Mobile Browsers That Support Chrome Extensions"
 id: 45ccfb3c-f44b-4301-895d-957b40365d6c
 title: >-
   Unlock the Full Potential of Your Mobile Device: Discover the Best Mobile

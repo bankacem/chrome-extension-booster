@@ -1,4 +1,5 @@
 ---
+seo_title: "An Open-Source Alternative to Ghostery"
 id: ed997344-9350-45c7-837f-32872c7a8736
 title: >-
   Discover the Best Open Source Alternative to Ghostery Extension for Enhanced

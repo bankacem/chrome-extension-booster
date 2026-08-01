@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Fix Chrome's Out of Memory Errors"
 title: How to Fix 'Out of Memory' Errors in Google Chrome (2026 Guide)
 slug: fix-chrome-out-of-memory-errors
 excerpt: >-
