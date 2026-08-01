@@ -1,5 +1,4 @@
 ---
-seo_title: "Unlock the Power of Music"
 id: ba94648c-40e2-465c-bf5d-2ff999c1ae46
 title: >-
   Unlock the Power of Music: The Ultimate Guide to YouTube MP3 Download

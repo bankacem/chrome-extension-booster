@@ -1,5 +1,4 @@
 ---
-seo_title: "Protecting Your Online Identity"
 id: e77ec0e6-3b9a-4837-8ba0-fe443b817662
 title: >-
   Protecting Your Online Identity: The Best Chrome Extension for Blocking

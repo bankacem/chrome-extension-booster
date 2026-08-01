@@ -1,5 +1,4 @@
 ---
-seo_title: "Discover the Power of Minimalism"
 id: fd08de1f-a0ff-41f6-9613-3914353059a2
 title: >-
   Discover the Power of Minimalism: The Ultimate Lightweight Chrome Extensions

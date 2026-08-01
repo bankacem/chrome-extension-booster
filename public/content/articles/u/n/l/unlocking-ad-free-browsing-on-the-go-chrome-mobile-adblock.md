@@ -1,5 +1,4 @@
 ---
-seo_title: "Unlocking Ad-Free Browsing on-the-Go"
 id: 37b6d7df-f0bb-4fbd-8c84-44262bf295ae
 title: >-
   Unlocking Ad-Free Browsing on-the-Go: The Ultimate Guide to Chrome Mobile

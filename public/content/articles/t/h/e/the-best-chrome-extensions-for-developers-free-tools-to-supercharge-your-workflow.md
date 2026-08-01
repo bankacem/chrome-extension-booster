@@ -1,5 +1,4 @@
 ---
-seo_title: "The Best Chrome Extensions for Developers"
 id: e4033112-c704-4f68-a9bb-c3b78548326f
 title: >-
   The Best Chrome Extensions for Developers: Free Tools to Supercharge Your

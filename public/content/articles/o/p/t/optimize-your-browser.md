@@ -1,5 +1,4 @@
 ---
-seo_title: "Optimize Your Browser"
 id: b55bb75c-dd03-4463-87da-b975a2d1e84d
 title: >-
   Optimize Your Browser: The Best Ways to Reduce RAM Usage with Chrome

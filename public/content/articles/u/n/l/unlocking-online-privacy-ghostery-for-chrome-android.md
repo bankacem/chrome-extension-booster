@@ -1,5 +1,4 @@
 ---
-seo_title: "Unlocking Online Privacy"
 id: 7bc98013-988e-4c51-a9eb-7ad6f096a7b6
 title: 'Unlocking Online Privacy: A Comprehensive Guide to Ghostery for Chrome Android'
 slug: unlocking-online-privacy-ghostery-for-chrome-android

@@ -1,5 +1,4 @@
 ---
-seo_title: "Protecting Your Online Security"
 id: 436abc2d-087c-4a97-bca5-28255979adb6
 title: >-
   Protecting Your Online Security: The Best Chrome Extension to Block Malicious

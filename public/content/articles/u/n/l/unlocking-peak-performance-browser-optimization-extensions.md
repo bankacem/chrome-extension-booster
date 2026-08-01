@@ -1,5 +1,4 @@
 ---
-seo_title: "Unlocking Peak Performance"
 id: 23db0497-f289-41cf-b446-230efe3aa030
 title: >-
   Unlocking Peak Performance: The Ultimate Guide to Browser Optimization

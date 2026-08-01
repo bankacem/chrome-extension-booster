@@ -1,5 +1,4 @@
 ---
-seo_title: "Unlocking the Full Potential of Your Browser"
 id: 3aee3f4b-1dcf-4621-8949-9bb7d18fadc1
 title: >-
   Unlocking the Full Potential of Your Browser: A Comprehensive Guide to

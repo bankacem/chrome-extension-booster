@@ -1,5 +1,4 @@
 ---
-seo_title: "Streamlining Your Workflow"
 id: b8823081-d69e-4088-9c49-873be63f769d
 title: 'Streamlining Your Workflow: The Best Chrome Extension for Bulk Downloads'
 slug: >-

@@ -1,5 +1,4 @@
 ---
-seo_title: "Unlocking Online Security"
 id: 5e653089-f870-48d9-b00e-a614bb2e1973
 title: >-
   Unlocking Online Security: A Comprehensive Guide to Windscribe Extension for

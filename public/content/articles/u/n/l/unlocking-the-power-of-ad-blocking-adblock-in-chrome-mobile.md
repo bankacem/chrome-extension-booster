@@ -1,5 +1,4 @@
 ---
-seo_title: "Unlocking the Power of Ad Blocking"
 id: ec294f7d-2b2a-40bb-a09d-2d74f6fcb15f
 title: >-
   Unlocking the Power of Ad Blocking: A Comprehensive Guide to Adblock in Chrome

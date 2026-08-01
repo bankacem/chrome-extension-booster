@@ -1,5 +1,4 @@
 ---
-seo_title: "Unlocking the Power of Google Chrome"
 id: 9abdcd82-5005-44e7-a313-1f4b6fc0238f
 title: >-
   Unlocking the Power of Google Chrome: A Comprehensive Guide to Extension

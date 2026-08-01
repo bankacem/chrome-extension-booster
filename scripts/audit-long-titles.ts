@@ -26,21 +26,9 @@ const SUFFIX = " | ExtensionTo"; // 14 characters
 const TARGET_TITLE_LEN = 60 - SUFFIX.length; // 46 - keeps the full displayed string within Google's ~60-char budget
 const MIN_ACCEPTABLE_LEN = 20; // never shorten a title down to something too thin to be meaningful
 
-const STOP_TAIL_WORDS = new Set([
-  "a", "an", "the", "for", "to", "of", "in", "on", "with", "and", "or", "your", "you",
-]);
-
 function csvEscape(v: string): string {
   const s = String(v ?? "");
   return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
-}
-
-function trimTrailingStopWord(s: string): string {
-  const parts = s.trim().split(/\s+/);
-  while (parts.length > 3 && STOP_TAIL_WORDS.has(parts[parts.length - 1].toLowerCase())) {
-    parts.pop();
-  }
-  return parts.join(" ").replace(/[:,;\-–—]+$/, "").trim();
 }
 
 // Generic marketing boilerplate that shows up across a large share of this
@@ -48,8 +36,7 @@ function trimTrailingStopWord(s: string): string {
 // Stripping these first preserves the actual keyword phrase instead of
 // gambling on which side of a colon is more meaningful.
 const FILLER_PATTERNS: RegExp[] = [
-  /:\s*(the ultimate guide|a comprehensive guide|the complete guide|a step-by-step guide)(\s+(to|for|on)\s+[^:]+)?$/i,
-  /\s*[-–—]\s*(the ultimate guide|a comprehensive guide|the complete guide|a step-by-step guide)(\s+(to|for|on)\s+[^:]+)?$/i,
+  /\b(the ultimate guide|a comprehensive guide|the complete guide|a step-by-step guide)\b/gi,
   /:\s*full\s+\d{4}\s+review(\s+after\s+[^:]+)?$/i,
   /\s+for\s+2026$/i,
 ];
@@ -57,12 +44,9 @@ const FILLER_PATTERNS: RegExp[] = [
 function stripFiller(title: string): string {
   let t = title;
   for (const re of FILLER_PATTERNS) t = t.replace(re, "");
-  // Generic hook prefixes ("Unlocking ...: ", "Unlock ...: ") - drop the hook,
-  // keep whatever specific phrase follows the colon if there is one.
-  const hookMatch = t.match(/^(unlocking|unlock)\s+[^:]+:\s*(.+)$/i);
-  if (hookMatch && hookMatch[2].trim().length >= MIN_ACCEPTABLE_LEN) {
-    t = hookMatch[2].trim();
-  }
+  t = t.replace(/([:\-–—])\s*(to|for|on)\s+/i, "$1 ");
+  t = t.replace(/^(to|for|on)\s+/i, "");
+  t = t.replace(/\s*[:\-–—]\s*$/, "");
   return t.replace(/\s{2,}/g, " ").trim();
 }
 
@@ -74,23 +58,12 @@ function proposeSeoTitle(original: string): { seoTitle: string; confidence: "hig
   if (defillered.length <= TARGET_TITLE_LEN && defillered.length >= MIN_ACCEPTABLE_LEN) {
     return { seoTitle: defillered[0].toUpperCase() + defillered.slice(1), confidence: "high" };
   }
-  const base = defillered.length >= MIN_ACCEPTABLE_LEN ? defillered : title;
-
-  // Try splitting on a natural delimiter next, keep the leading clause if
-  // it's a meaningful standalone length.
-  const delimiters = [": ", " — ", " – ", " - ", " | "];
-  for (const d of delimiters) {
-    const idx = base.indexOf(d);
-    if (idx > MIN_ACCEPTABLE_LEN && idx <= TARGET_TITLE_LEN) {
-      return { seoTitle: trimTrailingStopWord(base.slice(0, idx)), confidence: "high" };
-    }
-  }
-
-  // No safe delimiter found - a blind word-boundary cut here risks slicing off
-  // the actual product/keyword (e.g. "...Download Manager Chrome Extension")
-  // or producing the same shortened title for two different articles.
-  // Skip it: leave the original title in place. Google will still auto-truncate
-  // it gracefully with "…" at display time, same as it does today - no regression.
+  // No safe reduction found - stripping the generic filler phrase wasn't
+  // enough to get under budget, and guessing which side of a colon/dash
+  // holds the real keyword was tested in the slug-rename project and
+  // caused verified keyword loss in both directions. Skip it: leave the
+  // original title in place. Google will still auto-truncate it gracefully
+  // with "…" at display time, same as it does today - no regression.
   return { seoTitle: title, confidence: "skipped" };
 }
 

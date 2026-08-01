@@ -1,5 +1,4 @@
 ---
-seo_title: "Protect Your Online Privacy"
 id: cd88707c-ab6d-4a0d-b00b-69a0b66e1011
 title: 'Protect Your Online Privacy: The Best Chrome Extension to Block Trackers'
 slug: protect-your-online-privacy

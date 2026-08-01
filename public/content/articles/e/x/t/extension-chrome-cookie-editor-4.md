@@ -1,5 +1,4 @@
 ---
-seo_title: "Mastering Online Privacy"
 id: 39d01629-877f-43f6-a4a4-f451d4851f07
 title: 'Mastering Online Privacy: The Ultimate Guide to Extension Chrome Cookie Editor'
 slug: extension-chrome-cookie-editor-4

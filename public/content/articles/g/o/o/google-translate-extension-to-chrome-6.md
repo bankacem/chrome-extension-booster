@@ -1,5 +1,4 @@
 ---
-seo_title: "Breaking Language Barriers"
 id: 08a3864a-1fe0-4615-a2cb-dc6cf86ac2b7
 title: >-
   Breaking Language Barriers: How to Add the Google Translate Extension to

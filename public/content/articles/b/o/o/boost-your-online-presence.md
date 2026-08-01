@@ -1,5 +1,4 @@
 ---
-seo_title: "Boost Your Online Presence"
 id: a6111e60-4168-4730-8038-bf7802be7a7e
 title: >-
   Boost Your Online Presence: The Ultimate Guide to Chrome Extensions for Social
