@@ -1,4 +1,5 @@
 ---
+seo_title: "YouTube to MP3 Converter for Chrome Browser"
 id: ba76e987-a662-4554-b01c-5d25caec8095
 title: >-
   Maximizing Your Media Experience: The Ultimate Guide to YouTube to MP3

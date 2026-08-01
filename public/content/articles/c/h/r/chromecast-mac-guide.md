@@ -1,4 +1,5 @@
 ---
+seo_title: "Chromecast on Mac"
 title: 'Chromecast on Mac: Setup, Troubleshooting & Best Streaming Extensions (2026)'
 slug: chromecast-mac-guide
 excerpt: >-

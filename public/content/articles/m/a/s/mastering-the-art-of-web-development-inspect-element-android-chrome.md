@@ -1,4 +1,5 @@
 ---
+seo_title: "Inspect Element Android Chrome"
 id: dec8a212-fcc1-4edf-9992-887677275d6d
 title: >-
   Mastering the Art of Web Development: A Comprehensive Guide to Inspect Element

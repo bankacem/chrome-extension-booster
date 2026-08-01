@@ -1,4 +1,5 @@
 ---
+seo_title: "Download Manager"
 id: c6b14973-c0e9-42f8-89b9-593900999c98
 title: 'Mastering the Art of File Management: The Ultimate Guide to Download Manager'
 slug: mastering-the-art-of-file-management-download-manager

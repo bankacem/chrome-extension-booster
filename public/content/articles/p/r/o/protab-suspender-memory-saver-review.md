@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Memory Saver Extension Tested"
 id: f0bd342f-32ca-4ff9-bf7c-e9e8fdc8064a
 title: 'ProTab Suspender Review: Best Chrome Memory Saver Extension Tested'
 slug: protab-suspender-memory-saver-review

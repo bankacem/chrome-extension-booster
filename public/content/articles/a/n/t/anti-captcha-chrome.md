@@ -1,4 +1,5 @@
 ---
+seo_title: "Anti Captcha Chrome"
 id: 2eaa21bb-30ce-4a3b-8e56-c6784d228809
 title: 'Anti Captcha Chrome: Does Automated Captcha Solving Actually Work in 2026?'
 slug: anti-captcha-chrome

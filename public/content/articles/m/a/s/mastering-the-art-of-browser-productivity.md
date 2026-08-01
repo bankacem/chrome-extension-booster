@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Manage Chrome Extensions"
 id: 823b7023-2565-4a02-93b5-6acd1baf215e
 title: >-
   Mastering the Art of Browser Productivity: A Comprehensive Guide on How to

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlock the Full Potential of Kiwi Browser"
 id: 5702071e-09ac-412b-ac41-f9fd4cd0de3d
 title: >-
   Unlock the Full Potential of Kiwi Browser: Discover the Best Extensions for

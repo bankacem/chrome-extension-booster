@@ -1,4 +1,5 @@
 ---
+seo_title: "The Power of Extension Ad Block Plus"
 id: b95213e8-100e-44c2-93a7-5dd666a78cc2
 title: 'Unlocking a Faster Browsing Experience: The Power of Extension Ad Block Plus'
 slug: extension-ad-block-plus-mkzmr7fzdm9

@@ -1,4 +1,5 @@
 ---
+seo_title: "Ghostery Plugin Chrome"
 id: f5800219-5b66-4d3a-ba02-4ac416127c94
 title: >-
   Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery

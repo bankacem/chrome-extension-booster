@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Google Chat Extension"
 id: d476acee-1965-4b3b-83d4-f9de7851b3c9
 title: >-
   Unlocking the Power of Google Chat Extension: Boosting Productivity and

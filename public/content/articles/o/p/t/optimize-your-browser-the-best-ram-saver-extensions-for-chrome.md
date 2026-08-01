@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best RAM Saver Extensions for Chrome"
 id: 84c2d9bc-6ef1-4ad0-92a7-48612296b997
 title: 'Optimize Your Browser: The Best RAM Saver Extensions for Chrome'
 slug: optimize-your-browser-the-best-ram-saver-extensions-for-chrome

@@ -1,4 +1,5 @@
 ---
+seo_title: "The Ultimate Screenshot Tool Chrome Guide"
 id: 88ba9878-53d6-4471-b924-6f2b523c0547
 title: >-
   Mastering the Art of Capturing Screenshots: The Ultimate Screenshot Tool

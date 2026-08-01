@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extension Manager Tools"
 id: 37c57073-62a0-4d76-a123-e0c243b43b6b
 title: >-
   Unlocking the Full Potential of Your Browser: A Comprehensive Guide to Chrome

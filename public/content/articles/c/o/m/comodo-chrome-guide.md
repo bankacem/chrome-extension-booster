@@ -1,4 +1,5 @@
 ---
+seo_title: "Comodo Chrome Review"
 title: >-
   Comodo Chrome Review: I Tested the Secure Browser Against Chrome, Brave, and
   Firefox

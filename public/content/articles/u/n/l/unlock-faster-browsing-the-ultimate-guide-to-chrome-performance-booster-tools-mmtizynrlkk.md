@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Performance Booster Tools"
 id: d8dadebb-e8a4-428d-b339-3a11e6466e1a
 title: 'Unlock Faster Browsing: The Ultimate Guide to Chrome Performance Booster Tools'
 slug: >-

@@ -1,4 +1,5 @@
 ---
+seo_title: "Quick Screenshot Lite Review"
 id: 1574c35d-989e-4878-9c12-22d179779186
 title: 'Quick Screenshot Lite Review: Is It the Best Chrome Screenshot Addon in 2026?'
 slug: quick-screenshot-lite-review

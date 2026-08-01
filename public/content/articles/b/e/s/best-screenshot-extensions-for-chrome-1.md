@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Screenshot Extensions for Chrome"
 id: 6bd22977-86a3-4eb3-a45f-f839618cedbd
 title: 'Best Screenshot Extensions for Chrome: Capture Web Pages Like a Pro'
 slug: best-screenshot-extensions-for-chrome-1

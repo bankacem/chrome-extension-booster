@@ -1,4 +1,5 @@
 ---
+seo_title: "Browser Optimization Extensions"
 id: 23db0497-f289-41cf-b446-230efe3aa030
 title: >-
   Unlocking Peak Performance: The Ultimate Guide to Browser Optimization

@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking the Power of Secure Browsing"
 id: 25af87f7-67c1-4ec8-898f-5ad74d6fde61
 title: >-
   Unlocking the Power of Secure Browsing: Top Extensions for a Safe Online

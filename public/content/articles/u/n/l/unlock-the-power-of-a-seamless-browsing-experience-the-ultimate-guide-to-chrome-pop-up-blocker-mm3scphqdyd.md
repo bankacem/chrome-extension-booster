@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Pop Up Blocker"
 id: 12ef659c-cc6b-41b8-9aaf-408bbadb5b94
 title: >-
   Unlock the Power of a Seamless Browsing Experience: The Ultimate Guide to

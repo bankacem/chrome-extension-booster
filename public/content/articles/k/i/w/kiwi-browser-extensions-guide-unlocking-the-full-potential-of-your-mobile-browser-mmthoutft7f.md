@@ -1,4 +1,5 @@
 ---
+seo_title: "Kiwi Browser Extensions Guide"
 id: fe9b83cb-8659-4982-a9d6-28da51023978
 title: >-
   Kiwi Browser Extensions Guide: Unlocking the Full Potential of Your Mobile

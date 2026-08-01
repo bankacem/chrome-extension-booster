@@ -1,4 +1,5 @@
 ---
+seo_title: "Ghostery Add On Chrome"
 id: 6290e9b4-9bcd-45f4-a41a-e82fe074b1c3
 title: >-
   Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery Add

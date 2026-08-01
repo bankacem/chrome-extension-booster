@@ -1,4 +1,5 @@
 ---
+seo_title: "YouTube Audio Downloader Chrome Extension"
 id: 1f5ef62a-98af-4c90-bb55-3451f8b75866
 title: >-
   Unlock the Power of Music: The Ultimate Guide to YouTube Audio Downloader

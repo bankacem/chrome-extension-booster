@@ -1,4 +1,5 @@
 ---
+seo_title: "Adblock on Chrome Android"
 id: cb5e325f-86d1-491b-ae36-bcb2ba74b17c
 title: 'Unlocking Ad-Free Browsing: The Ultimate Guide to Adblock on Chrome Android'
 slug: unlocking-ad-free-browsing-adblock-on-chrome-android

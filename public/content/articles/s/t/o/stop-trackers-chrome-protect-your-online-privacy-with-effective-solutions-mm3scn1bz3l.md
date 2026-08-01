@@ -1,4 +1,5 @@
 ---
+seo_title: "Stop Trackers Chrome"
 id: dac72116-fcb7-4b67-9151-2ee5d9ab2628
 title: 'Stop Trackers Chrome: Protect Your Online Privacy with Effective Solutions'
 slug: >-

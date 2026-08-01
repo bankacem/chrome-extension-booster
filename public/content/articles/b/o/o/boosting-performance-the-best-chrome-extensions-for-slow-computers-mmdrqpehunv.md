@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Chrome Extensions for Slow Computers"
 id: 6e85faec-6046-441c-b818-21012db6bad0
 title: 'Boosting Performance: The Best Chrome Extensions for Slow Computers'
 slug: boosting-performance-the-best-chrome-extensions-for-slow-computers-mmdrqpehunv

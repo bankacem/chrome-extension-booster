@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Use Chrome Extensions on Mobile"
 id: 99fab65a-22e9-4f0d-a0da-65adf9042223
 title: >-
   Unlocking the Full Potential of Chrome on Mobile: A Step-by-Step Guide on How

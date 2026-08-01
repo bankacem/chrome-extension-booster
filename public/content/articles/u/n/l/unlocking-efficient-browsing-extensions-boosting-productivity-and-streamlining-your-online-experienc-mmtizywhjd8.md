@@ -1,4 +1,5 @@
 ---
+seo_title: "Unlocking Efficient Browsing Extensions"
 id: 0df3ab0b-9052-41f6-91e2-b3b37564f19c
 title: >-
   Unlocking Efficient Browsing Extensions: Boosting Productivity and
