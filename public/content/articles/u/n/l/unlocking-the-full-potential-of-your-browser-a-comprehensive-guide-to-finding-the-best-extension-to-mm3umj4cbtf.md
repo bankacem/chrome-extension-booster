@@ -1,4 +1,5 @@
 ---
+seo_title: "Finding the Right Browser Extension for You"
 id: 9d3b2a8e-e416-45f4-bd6f-71061a0a6dfe
 title: >-
   Unlocking the Full Potential of Your Browser: A Comprehensive Guide to Finding

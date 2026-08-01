@@ -1,4 +1,5 @@
 ---
+seo_title: "Spreadsheet Software Small Businesses Need"
 id: 82790656-1ad6-470f-bd68-d909c262f246
 title: >-
   Discover the Best Spreadsheets Software for Small Business: A Comprehensive

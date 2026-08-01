@@ -1,4 +1,5 @@
 ---
+seo_title: "A Look at the Avast Passwords Extension"
 id: 39a72c78-ca0b-4ac0-87c6-8b689db22f14
 title: 'Unlocking the Power of the Avast Passwords Extension: A Comprehensive Guide'
 slug: unlocking-the-power-of-the-avast-passwords-extension

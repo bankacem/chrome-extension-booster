@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Download Videos Straight from Chrome"
 id: 5113f8cc-7144-4fe4-bd0c-0a8cb73dfb1f
 title: 'Discover the Best Chrome Extension to Download Videos: A Comprehensive Guide'
 slug: >-

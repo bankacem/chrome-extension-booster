@@ -1,4 +1,5 @@
 ---
+seo_title: "How Kaspersky Protects You Inside Chrome"
 id: ad4021a2-30f2-44ba-aa78-804863f24dc2
 title: 'Unlocking Enhanced Browser Security: A Comprehensive Guide to Kaspersky Chrome'
 slug: unlocking-enhanced-browser-security-kaspersky-chrome

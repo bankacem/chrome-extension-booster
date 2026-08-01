@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Save Instagram Photos and Videos"
 id: 8abc5681-68be-4047-b71f-06e47de107ff
 title: >-
   How to Download Instagram Photos and Videos with the Best Extension Chrome

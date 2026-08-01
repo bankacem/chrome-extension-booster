@@ -1,4 +1,5 @@
 ---
+seo_title: "A Chrome Extension Marketers Will Actually Use"
 id: 9aa98173-160f-45e2-b126-6428f677e48d
 title: >-
   Unlock the Power of Chrome: Discover the Best Chrome Extension for Marketing

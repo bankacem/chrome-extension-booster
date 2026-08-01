@@ -1,4 +1,5 @@
 ---
+seo_title: "Which Spreadsheet Tool Fits Your Business?"
 id: 220df577-a4f1-4134-b0a0-93826feb3644
 title: 'Unlocking Efficiency: The Best Spreadsheets Software for Small Business'
 slug: unlocking-efficiency-the-best-spreadsheets-software-for-small-business

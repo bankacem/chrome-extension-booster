@@ -1,4 +1,5 @@
 ---
+seo_title: "Avast Passwords in Chrome: First Impressions"
 id: 613fbde0-b447-49c8-941e-2104d911f09d
 title: 'Unlocking the Power of Avast Passwords Extension Chrome: A Comprehensive Guide'
 slug: unlocking-the-power-of-avast-passwords-extension-chrome

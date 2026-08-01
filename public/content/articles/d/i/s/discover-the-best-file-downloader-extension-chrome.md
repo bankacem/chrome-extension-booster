@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best File Downloader Extension for Chrome"
 id: 556e6883-0641-4569-b4dc-b799448ca7c5
 title: 'Discover the Best File Downloader Extension Chrome: A Comprehensive Guide'
 slug: discover-the-best-file-downloader-extension-chrome

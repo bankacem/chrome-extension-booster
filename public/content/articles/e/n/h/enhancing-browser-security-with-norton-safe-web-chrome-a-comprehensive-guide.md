@@ -1,4 +1,5 @@
 ---
+seo_title: "Norton Safe Web for Chrome: Worth Installing?"
 id: af416ac0-bfd7-428f-8697-2b4d26b5e313
 title: 'Enhancing Browser Security with Norton Safe Web Chrome: A Comprehensive Guide'
 slug: enhancing-browser-security-with-norton-safe-web-chrome-a-comprehensive-guide

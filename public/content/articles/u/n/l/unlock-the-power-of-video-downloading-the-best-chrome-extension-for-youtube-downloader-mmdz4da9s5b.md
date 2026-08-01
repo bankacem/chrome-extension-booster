@@ -1,4 +1,5 @@
 ---
+seo_title: "A Reliable YouTube Downloader for Chrome"
 id: bd59cea0-bb8c-4611-8c1c-83541778b7b9
 title: >-
   Unlock the Power of Video Downloading: The Best Chrome Extension for YouTube

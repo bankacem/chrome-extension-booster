@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Free Download Manager for Chrome"
 id: 77818b2a-79bd-4b62-8238-17246a0596ab
 title: >-
   Unlock Efficient Downloads with the Best Free Download Manager Chrome

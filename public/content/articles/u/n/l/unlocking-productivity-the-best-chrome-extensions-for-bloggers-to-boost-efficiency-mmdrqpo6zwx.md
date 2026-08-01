@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions That Make Blogging Easier"
 id: fd680de0-6517-4c89-9c90-a516114c5a5d
 title: >-
   Unlocking Productivity: The Best Chrome Extensions for Bloggers to Boost

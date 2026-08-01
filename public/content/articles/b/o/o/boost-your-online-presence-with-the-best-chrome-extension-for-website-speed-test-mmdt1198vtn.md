@@ -1,4 +1,5 @@
 ---
+seo_title: "Test Your Website Speed Directly in Chrome"
 id: d74bae62-de17-4a59-85fb-952a224f94a2
 title: >-
   Boost Your Online Presence with the Best Chrome Extension for Website Speed

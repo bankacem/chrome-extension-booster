@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions That Make LinkedIn Better"
 id: 8c348a4c-0243-4646-b3e8-ee6dd5b4adf4
 title: Unlock the Full Potential of LinkedIn with the Best LinkedIn Chrome Extensions
 slug: >-

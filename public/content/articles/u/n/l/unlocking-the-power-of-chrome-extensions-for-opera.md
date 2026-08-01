@@ -1,4 +1,5 @@
 ---
+seo_title: "Can You Use Chrome Extensions in Opera?"
 id: 2d06676b-0b09-4b18-9d0c-dd7b9cb97ea7
 title: 'Unlocking the Power of Chrome Extensions for Opera: A Comprehensive Guide'
 slug: unlocking-the-power-of-chrome-extensions-for-opera

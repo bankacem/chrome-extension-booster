@@ -1,4 +1,5 @@
 ---
+seo_title: "Schedule Social Posts Without Leaving Chrome"
 id: e7c95d07-fde3-4250-a60e-c9ae1c001baf
 title: >-
   Streamline Your Social Media Management with the Best Chrome Extension for

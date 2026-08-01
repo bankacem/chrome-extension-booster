@@ -1,4 +1,5 @@
 ---
+seo_title: "Auto Refresh Plus: Smarter Tab Refreshing"
 id: 25cdc621-8829-41ec-9d76-662210e28d2c
 title: >-
   Unlocking Productivity with Extension Auto Refresh Plus: A Game-Changer for

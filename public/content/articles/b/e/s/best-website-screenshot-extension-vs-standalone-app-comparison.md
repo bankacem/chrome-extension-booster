@@ -1,4 +1,5 @@
 ---
+seo_title: "Screenshot Extension or Standalone App?"
 id: 160b79ce-3668-4436-b531-f0f26b897918
 title: >-
   Best Website Screenshot Extension vs Standalone App Comparison: A

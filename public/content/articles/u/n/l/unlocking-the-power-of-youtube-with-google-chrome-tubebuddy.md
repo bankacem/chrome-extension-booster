@@ -1,4 +1,5 @@
 ---
+seo_title: "TubeBuddy for Chrome: Features Creators Want"
 id: a64d294b-87b3-436b-91c5-46d1693b6328
 title: >-
   Unlocking the Power of YouTube with Google Chrome TubeBuddy: A Comprehensive

@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best YouTube Extensions for Chrome"
 id: 4c870e54-303b-44b7-8a9c-3ed9859c611a
 title: >-
   Unlock the Full Potential of YouTube: The Best YouTube Extensions Chrome Has

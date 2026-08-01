@@ -1,4 +1,5 @@
 ---
+seo_title: "A Chrome Extension for Saving Media Files"
 id: 83a55574-0b95-41a7-9af9-70a67c503637
 title: 'Discover the Best Chrome Extension for Media Download: A Comprehensive Guide'
 slug: >-

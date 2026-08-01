@@ -1,4 +1,5 @@
 ---
+seo_title: "Speed Up Downloads with This Chrome Extension"
 id: 16cd7a1d-159b-4067-a77c-152d845657cf
 title: >-
   Boost Your Browsing Experience with the Best Chrome Extension for Faster

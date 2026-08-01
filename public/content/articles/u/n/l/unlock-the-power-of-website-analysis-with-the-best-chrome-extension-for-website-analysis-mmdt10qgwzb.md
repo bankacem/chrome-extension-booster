@@ -1,4 +1,5 @@
 ---
+seo_title: "Analyze Any Website Right from Chrome"
 id: 5daa6afc-23c4-46c9-a182-c1bc8f30d1b0
 title: >-
   Unlock the Power of Website Analysis with the Best Chrome Extension for

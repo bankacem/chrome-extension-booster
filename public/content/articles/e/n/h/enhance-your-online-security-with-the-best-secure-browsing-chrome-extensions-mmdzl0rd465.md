@@ -1,4 +1,5 @@
 ---
+seo_title: "Extensions That Make Chrome Browsing Safer"
 id: abfa9376-3222-4f90-81a7-d72baaf012c8
 title: Enhance Your Online Security with the Best Secure Browsing Chrome Extensions
 slug: >-

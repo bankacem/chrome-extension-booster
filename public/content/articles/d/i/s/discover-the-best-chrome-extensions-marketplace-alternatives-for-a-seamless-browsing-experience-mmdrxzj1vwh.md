@@ -1,4 +1,5 @@
 ---
+seo_title: "Alternatives to the Chrome Web Store"
 id: 07b6ce03-bf54-47a5-a0eb-ded8f4c06b05
 title: >-
   Discover the Best Chrome Extensions Marketplace Alternatives for a Seamless

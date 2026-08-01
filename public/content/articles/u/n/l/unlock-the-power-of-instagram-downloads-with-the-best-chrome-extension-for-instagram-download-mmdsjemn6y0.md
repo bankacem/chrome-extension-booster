@@ -1,4 +1,5 @@
 ---
+seo_title: "Downloading Instagram Content from Chrome"
 id: f6e34bf5-8a9c-4e45-9048-c8a2906e6566
 title: >-
   Unlock the Power of Instagram Downloads with the Best Chrome Extension for

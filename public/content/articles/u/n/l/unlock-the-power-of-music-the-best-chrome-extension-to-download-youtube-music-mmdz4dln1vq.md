@@ -1,4 +1,5 @@
 ---
+seo_title: "Download YouTube Music Right from Chrome"
 id: f25cc6a1-a043-401d-9be3-b084185c246c
 title: 'Unlock the Power of Music: The Best Chrome Extension to Download YouTube Music'
 slug: >-

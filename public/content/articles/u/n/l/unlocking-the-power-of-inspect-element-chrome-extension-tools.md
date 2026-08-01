@@ -1,4 +1,5 @@
 ---
+seo_title: "Better Inspect Element Tools for Chrome"
 id: 2239c4e9-9897-4a3f-9ee0-32084bf37a56
 title: >-
   Unlocking the Power of Inspect Element Chrome Extension Tools: A Comprehensive

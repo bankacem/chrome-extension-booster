@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Choose the Right Browser Extension"
 id: 72adc5f2-609e-4a15-b7e7-b79f8749a22f
 title: >-
   Unlocking the Power of Browsers: A Comprehensive Guide to Finding the Best

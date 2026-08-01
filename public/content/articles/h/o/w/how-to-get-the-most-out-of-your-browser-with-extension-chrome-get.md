@@ -1,4 +1,5 @@
 ---
+seo_title: "Extension Chrome Get: What It Actually Does"
 id: 81b288c0-465d-4650-91fc-ed4ab7c5ee3f
 title: How to Get the Most Out of Your Browser with "Extension Chrome Get"
 slug: how-to-get-the-most-out-of-your-browser-with-extension-chrome-get

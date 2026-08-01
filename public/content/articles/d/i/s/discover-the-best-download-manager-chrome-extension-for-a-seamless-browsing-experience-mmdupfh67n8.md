@@ -1,4 +1,5 @@
 ---
+seo_title: "A Download Manager Extension Worth Installing"
 id: 75703882-68bd-4dcd-b440-ce9d30b3b491
 title: >-
   Discover the Best Download Manager Chrome Extension for a Seamless Browsing

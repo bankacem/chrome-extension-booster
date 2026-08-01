@@ -1,4 +1,5 @@
 ---
+seo_title: "A Chrome Extension for Power Twitter Users"
 id: 8778680c-8b00-490c-a00d-a95209670628
 title: >-
   Boost Your Twitter Productivity with the Best Chrome Extension for Twitter

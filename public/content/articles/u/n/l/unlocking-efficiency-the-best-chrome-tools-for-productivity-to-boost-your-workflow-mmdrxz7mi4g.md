@@ -1,4 +1,5 @@
 ---
+seo_title: "Productivity Tools Worth Adding to Chrome"
 id: 56abe92c-ef23-4c4c-b70c-42221e51ea89
 title: >-
   Unlocking Efficiency: The Best Chrome Tools for Productivity to Boost Your

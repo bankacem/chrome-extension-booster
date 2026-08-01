@@ -1,4 +1,5 @@
 ---
+seo_title: "Browsing Instagram Smarter with Chrome"
 id: 70d56e25-20fb-462d-8176-7659a0552239
 title: >-
   Unlocking the Power of Instagram with Extension Chrome Instagram: A

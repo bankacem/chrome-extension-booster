@@ -1,4 +1,5 @@
 ---
+seo_title: "The Best Anti-Tracking Extension for Chrome"
 id: 037330f0-c9d5-40a6-8021-3121cfb2679a
 title: 'Protect Your Online Identity: Finding the Best Anti Tracking Chrome Extension'
 slug: protect-your-online-identity

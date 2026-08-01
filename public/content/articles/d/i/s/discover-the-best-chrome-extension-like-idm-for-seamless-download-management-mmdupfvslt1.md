@@ -1,4 +1,5 @@
 ---
+seo_title: "Best IDM Alternative for Chrome"
 id: 4a4bfd5f-b618-4f98-ab05-71ba1119a6db
 title: Discover the Best Chrome Extension like IDM for Seamless Download Management
 slug: >-

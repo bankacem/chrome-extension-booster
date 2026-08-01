@@ -1,4 +1,5 @@
 ---
+seo_title: "What Avast Online Security Adds to Chrome"
 id: c3efefb4-8557-4002-a66e-59c3b44f2c41
 title: Enhancing Your Browsing Experience with Avast Online Security Chrome
 slug: enhancing-your-browsing-experience-with-avast-online-security-chrome

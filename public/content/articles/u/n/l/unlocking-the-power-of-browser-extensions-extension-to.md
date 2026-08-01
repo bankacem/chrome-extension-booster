@@ -1,4 +1,5 @@
 ---
+seo_title: "What Is the .to Browser Extension?"
 id: e5fc7071-afe2-4fe5-871e-52dcfe0bc52a
 title: >-
   Unlocking the Power of Browser Extensions: A Comprehensive Guide to "extension

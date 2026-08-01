@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions for Student Productivity"
 id: 54d0374c-d9a1-49c2-a367-1577b96dcdcf
 title: 'Unlocking Academic Success: Top Chrome Extensions for Students'' Productivity'
 slug: >-

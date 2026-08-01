@@ -1,4 +1,5 @@
 ---
+seo_title: "YouTube Extensions That Actually Save You Time"
 id: 56182bc5-3358-42d8-981c-44be8380b454
 title: >-
   Unlock Your Full Potential: The Best YouTube Productivity Extensions for a

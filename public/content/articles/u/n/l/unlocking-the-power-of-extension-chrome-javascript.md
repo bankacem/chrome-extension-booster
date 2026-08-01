@@ -1,4 +1,5 @@
 ---
+seo_title: "Managing JavaScript in Chrome with This Tool"
 id: b15a3eba-39c6-4da8-a0a6-af52c559991a
 title: 'Unlocking the Power of Extension Chrome JavaScript: A Comprehensive Guide'
 slug: unlocking-the-power-of-extension-chrome-javascript

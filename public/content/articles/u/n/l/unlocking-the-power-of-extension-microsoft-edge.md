@@ -1,4 +1,5 @@
 ---
+seo_title: "Bringing This Extension to Microsoft Edge"
 id: 8c46c0ad-658a-4e54-9b44-5e7b5c631215
 title: 'Unlocking the Power of Extension Microsoft Edge: A Comprehensive Guide'
 slug: unlocking-the-power-of-extension-microsoft-edge

@@ -1,4 +1,5 @@
 ---
+seo_title: "What Kaspersky's Chrome Extension Protects"
 id: 725784d1-376b-4a4a-b2bb-8e4ddc6e683d
 title: >-
   Unlocking Enhanced Browser Security: A Comprehensive Guide to Kaspersky

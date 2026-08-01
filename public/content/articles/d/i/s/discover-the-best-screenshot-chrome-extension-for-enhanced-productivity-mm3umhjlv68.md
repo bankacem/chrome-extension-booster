@@ -1,4 +1,5 @@
 ---
+seo_title: "A Chrome Screenshot Extension Worth Installing"
 id: b75a9435-2d12-4557-8cb2-252cb7d9f532
 title: Discover the Best Screenshot Chrome Extension for Enhanced Productivity
 slug: >-

@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome GPT: Bringing AI Into Your Browser"
 id: eb91b432-575c-4603-b638-e3a11d27504a
 title: 'Unlocking the Power of AI: The Ultimate Guide to Extension Chrome GPT'
 slug: unlocking-the-power-of-ai-extension-chrome-gpt

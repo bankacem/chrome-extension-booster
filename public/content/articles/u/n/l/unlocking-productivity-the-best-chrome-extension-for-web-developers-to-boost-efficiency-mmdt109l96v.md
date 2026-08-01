@@ -1,4 +1,5 @@
 ---
+seo_title: "A Chrome Extension Built for Web Developers"
 id: ca68b867-7313-4b18-942f-fdb2da512763
 title: >-
   Unlocking Productivity: The Best Chrome Extension for Web Developers to Boost

@@ -1,4 +1,5 @@
 ---
+seo_title: "Why You Need an Antivirus Extension for Chrome"
 id: ac3c31aa-318b-4d75-ae4c-4c97ce80cdf1
 title: >-
   Protecting Your Browsing Experience: The Importance of Extension Antivirus

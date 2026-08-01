@@ -1,4 +1,5 @@
 ---
+seo_title: "Free VPN Extensions Worth Trying in Chrome"
 id: 90b911e5-3a2e-4dce-bb17-14b04e270424
 title: >-
   Unlocking Secure Browsing: A Guide to the Best Chrome VPN Extension Free

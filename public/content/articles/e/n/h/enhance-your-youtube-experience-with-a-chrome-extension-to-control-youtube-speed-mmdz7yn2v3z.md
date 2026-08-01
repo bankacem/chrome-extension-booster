@@ -1,4 +1,5 @@
 ---
+seo_title: "Control YouTube Playback Speed in Chrome"
 id: 1efcb801-7ae0-44f3-8a42-86db276aa1c9
 title: >-
   Enhance Your YouTube Experience with a Chrome Extension to Control YouTube

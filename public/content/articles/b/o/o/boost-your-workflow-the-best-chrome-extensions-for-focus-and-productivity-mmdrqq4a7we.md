@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions for Staying Focused at Work"
 id: ac088230-5d30-4e0e-afa4-175a88af6be4
 title: 'Boost Your Workflow: The Best Chrome Extensions for Focus and Productivity'
 slug: >-

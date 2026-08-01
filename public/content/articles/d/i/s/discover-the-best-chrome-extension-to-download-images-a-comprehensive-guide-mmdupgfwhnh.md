@@ -1,4 +1,5 @@
 ---
+seo_title: "Downloading Images in Bulk with Chrome"
 id: 032b0a21-08ee-4d52-8665-16924a924c6b
 title: 'Discover the Best Chrome Extension to Download Images: A Comprehensive Guide'
 slug: >-

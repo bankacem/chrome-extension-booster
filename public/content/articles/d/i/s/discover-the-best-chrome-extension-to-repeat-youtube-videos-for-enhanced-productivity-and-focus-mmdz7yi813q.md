@@ -1,4 +1,5 @@
 ---
+seo_title: "Loop YouTube Videos with This Chrome Extension"
 id: 7c25c09b-c220-48a1-b50d-e05d7fbf2662
 title: >-
   Discover the Best Chrome Extension to Repeat YouTube Videos for Enhanced

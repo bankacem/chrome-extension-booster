@@ -1,4 +1,5 @@
 ---
+seo_title: "Autopager for Chrome: Endless Scrolling"
 id: 8904f0f9-92e8-492d-8f3b-8789de2e3480
 title: 'Unlock Endless Browsing with Autopager Chrome: A Game-Changer for Productivity'
 slug: a-game-changer-for-productivity

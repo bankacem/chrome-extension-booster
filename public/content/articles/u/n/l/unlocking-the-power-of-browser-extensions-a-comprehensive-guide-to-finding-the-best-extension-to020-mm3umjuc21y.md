@@ -1,4 +1,5 @@
 ---
+seo_title: "Comparing the Top Browser Extensions Out There"
 id: c5b77b60-ae6c-46c0-8826-baad74d6480c
 title: >-
   Unlocking the Power of Browser Extensions: A Comprehensive Guide to Finding

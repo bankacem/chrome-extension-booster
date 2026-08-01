@@ -1,4 +1,5 @@
 ---
+seo_title: "Siteimprove for Chrome: An SEO Extension Look"
 id: 45b28a3f-d0ba-403b-90df-e8c47a36d63e
 title: 'Unlocking Website Optimization with Siteimprove Chrome: A Comprehensive Guide'
 slug: unlocking-website-optimization-with-siteimprove-chrome-a-comprehensive-guide
