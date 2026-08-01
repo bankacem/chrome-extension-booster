@@ -1,5 +1,5 @@
 """
-LLM Router — Handles Anthropic, OpenRouter, and Groq seamlessly.
+LLM Router — Handles Anthropic, OpenRouter, Groq, and Bluesminds (experimental).
 """
 
 import anthropic
@@ -13,7 +13,7 @@ from config import API_KEYS, MODELS, SETTINGS
 
 # ──────────────────────────────────────────────────────────────
 #  Terminal colors
-# ──────────────────────────────────────────────────────────────
+# ──────────────────────────────────────────��───────────────────
 
 class Color:
     PURPLE = "\033[35m"
@@ -47,7 +47,7 @@ def validate_config(model_name: str) -> tuple[str, str]:
 
     if not key:
         print(c("red", f"\n  ✗ Missing API key for provider: {provider}"))
-        print(c("dim", f"  → Open config.py and set API_KEYS[\"{provider}\"]"))
+        print(c("dim", f"  → Open config.py and set API_KEYS[\"{provider}\"] or set the environment variable."))
         sys.exit(1)
 
     return provider, model_id
@@ -183,6 +183,65 @@ def _call_groq(model_id: str, system: str, user: str, stream: bool) -> str:
 
 
 # ──────────────────────────────────────────────────────────────
+#  Bluesminds (experimental) — uses the user's provided API
+#  NOTE: The exact endpoints and response format may differ. Adjust url
+#  and parsing according to Bluesminds API docs.
+# ──────────────────────────────────────────────────────────────
+
+def _call_bluesminds(model_id: str, system: str, user: str, stream: bool) -> str:
+    url     = "https://api.bluesminds.com/v1/chat/completions"  # Confirm with Bluesminds docs
+    headers = {
+        "Authorization": f"Bearer {API_KEYS['bluesminds']}",
+        "Content-Type":  "application/json",
+    }
+    payload = {
+        "model":      model_id,
+        "max_tokens": SETTINGS["max_tokens"],
+        "stream":     stream,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user",   "content": user},
+        ],
+    }
+
+    req  = urllib.request.Request(url, json.dumps(payload).encode(), headers)
+    full = ""
+
+    with urllib.request.urlopen(req) as resp:
+        if stream:
+            for raw_line in resp:
+                line = raw_line.decode("utf-8").strip()
+                if not line.startswith("data:"):
+                    continue
+                data = line[5:].strip()
+                if data == "[DONE]":
+                    break
+                try:
+                    obj   = json.loads(data)
+                    # Attempt OpenAI-like delta format
+                    delta = obj["choices"][0].get("delta", {}).get("content", "")
+                    if not delta:
+                        # Fallback to message.content
+                        delta = obj["choices"][0].get("message", {}).get("content", "")
+                    if delta:
+                        print(delta, end="", flush=True)
+                        full += delta
+                except (json.JSONDecodeError, KeyError):
+                    continue
+            print()
+        else:
+            body = json.loads(resp.read().decode("utf-8"))
+            # Attempt to parse OpenAI-compatible response
+            try:
+                full = body["choices"][0]["message"]["content"]
+            except Exception:
+                # As a fallback, dump entire body as string
+                full = json.dumps(body)
+
+    return full
+
+
+# ──────────────────────────────────────────────────────────────
 #  Public API
 # ──────────────────────────────────────────────────────────────
 
@@ -194,15 +253,6 @@ def call(
 ) -> str:
     """
     Route a prompt to the correct provider and return the response text.
-
-    Args:
-        system:     System prompt.
-        user:       User message.
-        model_name: Key from config.MODELS (e.g. "claude-sonnet-4").
-        stream:     Whether to stream tokens to stdout in real time.
-
-    Returns:
-        Full response string.
     """
     provider, model_id = validate_config(model_name)
 
@@ -215,6 +265,8 @@ def call(
             return _call_openrouter(model_id, system, user, stream)
         elif provider == "groq":
             return _call_groq(model_id, system, user, stream)
+        elif provider == "bluesminds":
+            return _call_bluesminds(model_id, system, user, stream)
         else:
             print(c("red", f"  ✗ Unknown provider: {provider}"))
             sys.exit(1)
