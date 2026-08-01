@@ -45,7 +45,7 @@ function stripFiller(title: string): string {
   let t = title;
   for (const re of FILLER_PATTERNS) t = t.replace(re, "");
   t = t.replace(/([:\-–—])\s*(to|for|on)\s+/i, "$1 ");
-  t = t.replace(/^(to|for|on)\s+/i, "");
+  t = t.replace(/^\s*(to|for|on)\s+/i, "");
   t = t.replace(/\s*[:\-–—]\s*$/, "");
   return t.replace(/\s{2,}/g, " ").trim();
 }

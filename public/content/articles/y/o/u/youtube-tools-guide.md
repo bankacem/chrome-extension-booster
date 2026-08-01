@@ -1,4 +1,5 @@
 ---
+seo_title: "YouTube Browser Tools & Downloaders (2026)"
 title: The Ultimate Guide to YouTube Browser Tools & Downloaders (2026)
 slug: youtube-tools-guide
 excerpt: >-
