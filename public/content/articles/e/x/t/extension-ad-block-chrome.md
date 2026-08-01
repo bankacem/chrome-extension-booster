@@ -1,4 +1,5 @@
 ---
+seo_title: "Ad Block Extension for Chrome: Full Guide"
 id: 704f5939-5bdf-4268-995c-b1a297b335ad
 title: 'Effortless Browsing: The Power of Extension Ad Block Chrome'
 slug: extension-ad-block-chrome

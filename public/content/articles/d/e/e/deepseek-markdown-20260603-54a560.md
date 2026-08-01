@@ -1,4 +1,5 @@
 ---
+seo_title: "Best AI Email Assistant Chrome Extensions"
 slug: deepseek-markdown-20260603-54a560
 status: published
 published_at: '2026-07-08'

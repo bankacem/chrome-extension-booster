@@ -1,4 +1,5 @@
 ---
+seo_title: "Best AI Writing Assistants for Gmail 2026"
 slug: deepseek-markdown-20260603-ff3a14
 status: published
 published_at: '2026-07-28'

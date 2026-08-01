@@ -1,4 +1,5 @@
 ---
+seo_title: "DoNotTrackMe for Chrome: Privacy Guide"
 id: 275617ff-da2e-43e8-88b3-799d0a283bd9
 title: 'Donottrackme Chrome: The Ultimate Guide to Protecting Your Online Privacy'
 slug: donottrackme-chrome-8

@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Free Chrome Extensions: 2026 Toolkit"
 title: 'Best Free Chrome Extensions: The 2026 Toolkit You Actually Need'
 slug: best-free-chrome-extensions-the-2026-toolkit-you-actually-need
 excerpt: >-

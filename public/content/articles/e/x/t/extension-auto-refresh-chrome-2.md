@@ -1,4 +1,5 @@
 ---
+seo_title: "Auto Refresh Extension for Chrome: Guide"
 id: dfce3769-caa3-46f2-9794-9d2ff7925c6f
 title: >-
   Unlock Efficient Browsing: Mastering Extension Auto Refresh Chrome for

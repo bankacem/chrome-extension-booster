@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Set Up Bitwarden Chrome Extension"
 slug: article2-bitwarden-setup-guide
 status: published
 published_at: '2026-06-27'

@@ -1,4 +1,5 @@
 ---
+seo_title: "Free AI Content Summarizer Extension 2026"
 slug: deepseek-markdown-20260603-589870
 status: published
 published_at: '2026-07-10'

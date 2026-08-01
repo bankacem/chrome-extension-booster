@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Set Chrome as Default Browser"
 id: 084ae035-0061-4a99-858f-d302fe02fb08
 title: How to Set Chrome as Default Browser on Windows and Mac (Chrome Par Defaut)
 slug: set-chrome-as-default-browser

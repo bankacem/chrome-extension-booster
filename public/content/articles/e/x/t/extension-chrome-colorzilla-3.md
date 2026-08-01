@@ -1,4 +1,5 @@
 ---
+seo_title: "ColorZilla Extension for Chrome: Full Guide"
 id: 991fe13c-3291-41ec-874e-f091cef0298a
 title: >-
   Unleashing the Power of Color with the Extension Chrome ColorZilla: A

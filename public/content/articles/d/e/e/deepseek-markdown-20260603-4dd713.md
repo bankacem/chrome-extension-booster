@@ -1,4 +1,5 @@
 ---
+seo_title: "Best ChatGPT Folder Organizer Extensions"
 slug: deepseek-markdown-20260603-4dd713
 status: published
 published_at: '2026-07-07'

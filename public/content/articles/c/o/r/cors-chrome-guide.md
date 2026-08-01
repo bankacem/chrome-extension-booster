@@ -1,4 +1,5 @@
 ---
+seo_title: "CORS Chrome Guide: Best Solutions Tested"
 title: >-
   CORS Chrome Guide: I Tested 4 CORS Solutions for Web Development — Here Is
   What Works

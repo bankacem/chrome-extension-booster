@@ -1,4 +1,5 @@
 ---
+seo_title: "Capture Scrolling Webpages as PNG or PDF"
 title: 'How to Capture Scrolling Webpages as PNG or PDF: I Tested 4 Methods'
 slug: capture-scrolling-webpages-as-png-or-pdf
 excerpt: >-

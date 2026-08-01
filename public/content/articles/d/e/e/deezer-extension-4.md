@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Deezer Extension for Chrome"
 id: b85e884b-53c6-40d6-83b2-6eb0cbdf2373
 title: Unlock the Full Potential of Deezer with the Ultimate Deezer Extension
 slug: deezer-extension-4

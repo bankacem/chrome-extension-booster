@@ -1,4 +1,5 @@
 ---
+seo_title: "EagleGet Free Downloader Extension for Chrome"
 id: 9852f15b-bcda-4ccd-9cfe-b15fe53c05fb
 title: >-
   Unlock Fast and Secure Downloads with EagleGet Free Downloader Extension

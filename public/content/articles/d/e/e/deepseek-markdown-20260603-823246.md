@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT Custom Instructions Extension 2026"
 slug: deepseek-markdown-20260603-823246
 status: published
 published_at: '2026-07-15'

@@ -1,4 +1,5 @@
 ---
+seo_title: "ClickClean Chrome: Does It Speed Up Browsing?"
 title: 'ClickClean Chrome: Does It Actually Speed Up Your Browser in 2026?'
 slug: clickclean-chrome-browser-cleaner
 excerpt: >-

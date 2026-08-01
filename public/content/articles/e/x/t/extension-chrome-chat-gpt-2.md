@@ -1,4 +1,5 @@
 ---
+seo_title: "Best ChatGPT Extension for Chrome Browsing"
 id: f0732356-86fd-40e6-ab3f-fac5e4c5e041
 title: >-
   Unlocking the Power of AI: The Best Extension Chrome Chat GPT for Enhanced

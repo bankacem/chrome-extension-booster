@@ -1,4 +1,5 @@
 ---
+seo_title: "Chrome Extensions on Android: Full Guide"
 id: d1004cd5-9c3f-4e2c-9564-55091ba160ba
 title: 'Unlocking the Power of Extension Android Google Chrome: A Comprehensive Guide'
 slug: extension-android-google-chrome

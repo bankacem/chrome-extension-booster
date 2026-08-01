@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Cookie Manager Extension for Chrome"
 id: 8e58ec16-7dfe-452f-ade6-3d6e7ca07e63
 title: >-
   Mastering Online Privacy: The Ultimate Guide to Choosing the Best Extension

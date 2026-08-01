@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Download YouTube Video as MP4"
 id: 6b8b3eb5-c7c9-475f-89a0-d9d255d2490f
 title: 'How to Download Video MP4 from YouTube using Chrome: A Step-by-Step Guide'
 slug: download-video-mp4-youtube-chrome

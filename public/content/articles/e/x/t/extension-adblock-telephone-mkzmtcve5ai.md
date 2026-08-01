@@ -1,4 +1,5 @@
 ---
+seo_title: "AdBlock Telephone: Block Unwanted Calls & Ads"
 id: cb011754-3e4b-4c04-ab97-133a39fbbc10
 title: >-
   Unlocking the Power of Extension Adblock Telephone: A Comprehensive Guide to

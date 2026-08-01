@@ -1,4 +1,5 @@
 ---
+seo_title: "Kaspersky Protection for Chrome: Review"
 id: fb3abbf0-1398-47d5-a7fa-d29c00f1d5d8
 title: >-
   Kaspersky Protection for Chrome: Tested Against 5 Security Extensions — Pros,

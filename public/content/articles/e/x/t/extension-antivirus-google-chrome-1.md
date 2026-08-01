@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Antivirus Extension for Google Chrome"
 id: e15ea966-e110-4340-9919-9d44e031a459
 title: >-
   Protecting Your Browsing Experience: The Importance of Extension Antivirus

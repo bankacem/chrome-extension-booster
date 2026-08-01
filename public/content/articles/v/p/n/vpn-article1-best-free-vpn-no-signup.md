@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Free VPN Chrome Extension No Sign Up"
 slug: vpn-article1-best-free-vpn-no-signup
 status: published
 published_at: '2026-08-02'

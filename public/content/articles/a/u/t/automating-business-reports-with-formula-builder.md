@@ -1,4 +1,5 @@
 ---
+seo_title: "Automate Business Reports with Formula Builder"
 id: bc16d225-475e-486e-b3cb-5b66a0b0a8fd
 title: 'Automating Business Reports with Formula Builder: A Practical Guide'
 slug: automating-business-reports-with-formula-builder

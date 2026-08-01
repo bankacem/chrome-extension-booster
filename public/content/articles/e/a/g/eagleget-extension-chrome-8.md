@@ -1,4 +1,5 @@
 ---
+seo_title: "EagleGet Extension for Chrome: Full Guide"
 id: 20ce73f7-443e-431f-99c7-63a927565a79
 title: 'Unlocking the Power of EagleGet Extension Chrome: A Comprehensive Guide'
 slug: eagleget-extension-chrome-8

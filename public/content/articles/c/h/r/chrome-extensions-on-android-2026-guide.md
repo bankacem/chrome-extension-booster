@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Browsers for Chrome Extensions on Android"
 id: d8201fab-2d4b-4a82-927c-acfa391d3dbb
 title: >-
   Best Browsers for Chrome Extensions on Android in 2026: Kiwi vs Yandex vs

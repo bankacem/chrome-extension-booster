@@ -1,4 +1,5 @@
 ---
+seo_title: "How to Download Instagram Pictures via Chrome"
 id: 5f3538ac-b218-41b3-b755-106b8c271af3
 title: 'How to Download Pictures from Instagram Using Chrome: A Step-by-Step Guide'
 slug: download-picture-instagram-chrome-3

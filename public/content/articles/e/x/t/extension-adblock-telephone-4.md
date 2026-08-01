@@ -1,4 +1,5 @@
 ---
+seo_title: "AdBlock Telephone Extension: Ad-Free Guide"
 id: ee1f275c-5eda-444f-a67d-7869c2935e6e
 title: >-
   Unlocking the Power of Extension Adblock Telephone: A Comprehensive Guide to

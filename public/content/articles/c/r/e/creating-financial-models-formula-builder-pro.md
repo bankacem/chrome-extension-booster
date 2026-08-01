@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Financial Modeling Tool: Formula Builder"
 title: 'I Tested 4 Financial Modeling Tools for 2 Weeks — Here Is Why Formula Builder Pro Won'
 slug: creating-financial-models-formula-builder-pro
 excerpt: >-

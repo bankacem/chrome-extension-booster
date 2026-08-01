@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT for Google Sheets Extensions 2026"
 slug: deepseek-markdown-20260603-aa2cb9
 status: published
 published_at: '2026-07-20'

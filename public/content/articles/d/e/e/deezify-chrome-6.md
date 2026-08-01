@@ -1,4 +1,5 @@
 ---
+seo_title: "Deezify for Chrome: Deezer Extension Guide"
 id: 44abd9e2-ecb4-4f67-b165-9cbf08d4c5d0
 title: 'Unlocking the Power of Deezer with Deezify Chrome: A Comprehensive Guide'
 slug: deezify-chrome-6

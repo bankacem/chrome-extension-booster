@@ -1,4 +1,5 @@
 ---
+seo_title: "Desktop Instagram for Chrome: Full Guide"
 id: a52ba30f-c0f5-4659-8622-0edd6125890b
 title: 'Unlocking the Power of Desktop Instagram Chrome: A Comprehensive Guide'
 slug: desktop-instagram-chrome-7

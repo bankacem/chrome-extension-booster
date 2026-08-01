@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Free Password Manager for Chrome"
 title: 'The Best Free Password Manager for Chrome in 2026: Why Bitwarden Still Wins'
 description: >-
   Looking for the best free password manager for Chrome in 2026? Find out why

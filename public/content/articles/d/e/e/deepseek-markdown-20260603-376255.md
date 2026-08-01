@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT Search History Extension 2026"
 slug: deepseek-markdown-20260603-376255
 status: published
 published_at: '2026-07-06'

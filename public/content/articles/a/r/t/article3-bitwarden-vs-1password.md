@@ -1,4 +1,5 @@
 ---
+seo_title: "Bitwarden vs 1Password Chrome Extension"
 slug: article3-bitwarden-vs-1password
 status: published
 published_at: '2026-06-28'

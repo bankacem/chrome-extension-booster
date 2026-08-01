@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Color Picker Extensions for Chrome"
 title: 'Best Color Picker Extensions for Chrome in 2026: Developer Tested'
 slug: color-picker-chrome-extensions
 excerpt: >-

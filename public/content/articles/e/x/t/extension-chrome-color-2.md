@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Color Extension for Chrome"
 id: cfb3f711-6f73-4cda-9499-65c9e79b9c84
 title: >-
   Unlocking the Power of Color with Chrome Extensions: A Comprehensive Guide to

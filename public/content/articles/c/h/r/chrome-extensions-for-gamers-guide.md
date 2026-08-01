@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Extensions for Opera GX Users 2026"
 id: ba7df2d0-fec1-430a-8e17-cdbe67cde09c
 title: Best Chrome Extensions for Opera GX Users in 2026
 slug: chrome-extensions-for-gamers-guide

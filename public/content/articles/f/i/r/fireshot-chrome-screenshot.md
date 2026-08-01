@@ -1,4 +1,5 @@
 ---
+seo_title: "FireShot for Chrome: Full Review 2026"
 title: 'FireShot for Chrome: Full Review After Testing Against 8 Screenshot Extensions'
 slug: fireshot-chrome-screenshot
 excerpt: >-

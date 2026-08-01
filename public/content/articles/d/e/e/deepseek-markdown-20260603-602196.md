@@ -1,4 +1,5 @@
 ---
+seo_title: "Best AI Meeting Notes Chrome Extensions"
 slug: deepseek-markdown-20260603-602196
 status: published
 published_at: '2026-07-12'

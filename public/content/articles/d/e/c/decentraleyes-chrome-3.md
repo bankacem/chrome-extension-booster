@@ -1,4 +1,5 @@
 ---
+seo_title: "Decentraleyes for Chrome: Online Security"
 id: 12810735-9b75-4877-b174-55510ffbb3f3
 title: 'Empowering Online Security: Unleashing the Potential of Decentraleyes Chrome'
 slug: decentraleyes-chrome-3

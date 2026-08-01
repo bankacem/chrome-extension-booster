@@ -1,4 +1,5 @@
 ---
+seo_title: "Merci App Extension for Chrome: Full Guide"
 id: 56af2500-cc56-46bf-9f34-14db0ab20042
 title: 'Unlocking the Power of Merci App Extension Chrome: A Comprehensive Guide'
 slug: unlocking-the-power-of-merci-app-extension-chrome

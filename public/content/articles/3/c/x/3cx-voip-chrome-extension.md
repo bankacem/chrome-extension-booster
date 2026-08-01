@@ -1,4 +1,5 @@
 ---
+seo_title: "3CX Chrome Extension: VoIP for Business"
 title: '3CX Chrome Extension: VoIP Phone System Tested for Business Calls (2026)'
 slug: 3cx-voip-chrome-extension
 excerpt: >-

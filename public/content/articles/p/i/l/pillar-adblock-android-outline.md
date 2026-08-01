@@ -1,4 +1,5 @@
 ---
+seo_title: "AdBlock for Chrome Android: Full Guide"
 slug: pillar-adblock-android-outline
 status: published
 published_at: '2026-07-31'

@@ -1,4 +1,5 @@
 ---
+seo_title: "Best AI Blog Writer Chrome Extensions 2026"
 slug: deepseek-markdown-20260603-fb8eb4
 status: published
 published_at: '2026-07-27'

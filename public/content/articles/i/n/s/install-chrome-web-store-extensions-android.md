@@ -1,4 +1,5 @@
 ---
+seo_title: "Install Chrome Extensions on Android 2026"
 title: >-
   How to Install Chrome Web Store Extensions on Android: Step-by-Step Guide
   (2026)

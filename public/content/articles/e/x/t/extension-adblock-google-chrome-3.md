@@ -1,4 +1,5 @@
 ---
+seo_title: "Best AdBlock Extensions for Google Chrome"
 id: a6190cbb-36a1-4c29-beca-6142f9697f99
 title: >-
   Maximizing Your Browsing Experience: The Best Extension Adblock Google Chrome
