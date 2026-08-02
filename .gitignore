@@ -27,3 +27,4 @@ google-indexing-key.json
 *.sw?
 service-account.json
 google-services.json
+__pycache__/
