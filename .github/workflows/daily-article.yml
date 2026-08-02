@@ -11,6 +11,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      issues: write
 
     steps:
       - name: Checkout repository
@@ -38,7 +39,23 @@ jobs:
         id: gen
         env:
           BLUESMINDS_KEY: ${{ secrets.BLUESMINDS_KEY }}
-        run: python3 seo_agent_pro/daily_article.py
+        run: python3 seo_agent_pro/daily_article.py 2>&1 | tee /tmp/gen_output.log
+
+      - name: Post debug output if generation failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "## Generation step failed - output:"
+            echo '```'
+            tail -c 6000 /tmp/gen_output.log
+            echo '```'
+          } > /tmp/debug_body.md
+          gh issue create \
+            --title "Daily article generation FAILED ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
+            --body-file /tmp/debug_body.md \
+            --repo ${{ github.repository }}
 
       - name: Rebuild index and sitemap
         run: |
