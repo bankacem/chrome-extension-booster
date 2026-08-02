@@ -65,21 +65,49 @@ jobs:
       - name: Create branch and commit
         id: commit
         run: |
+          set +e
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
 
           BRANCH="daily-article/${{ steps.gen.outputs.article_slug }}"
-          git checkout -b "$BRANCH"
+          git checkout -b "$BRANCH" 2>&1 | tee -a /tmp/commit_output.log
 
-          git add \
-            "${{ steps.gen.outputs.article_path }}" \
-            public/content/articles-index.json \
-            public/sitemap.xml \
-            seo_agent_pro/daily_article_state.json
+          git add "${{ steps.gen.outputs.article_path }}" 2>&1 | tee -a /tmp/commit_output.log
+          git add public/content/articles-index.json public/sitemap.xml 2>&1 | tee -a /tmp/commit_output.log
+          git add seo_agent_pro/daily_article_state.json 2>&1 | tee -a /tmp/commit_output.log
 
-          git commit -m "feat: daily article — ${{ steps.gen.outputs.article_title }}"
-          git push origin "$BRANCH" --force
+          git commit -m "feat: daily article — ${{ steps.gen.outputs.article_title }}" 2>&1 | tee -a /tmp/commit_output.log
+          COMMIT_EXIT=$?
+
+          git push origin "$BRANCH" --force 2>&1 | tee -a /tmp/commit_output.log
+          PUSH_EXIT=$?
+
           echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+
+          if [ $COMMIT_EXIT -ne 0 ] || [ $PUSH_EXIT -ne 0 ]; then
+            exit 1
+          fi
+
+      - name: Post debug output if commit/push failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "## Commit/push step failed - output:"
+            echo '```'
+            cat /tmp/commit_output.log 2>/dev/null || echo "(no log captured)"
+            echo '```'
+            echo ""
+            echo "## git status at time of failure"
+            echo '```'
+            git status 2>&1
+            echo '```'
+          } > /tmp/debug_commit.md
+          gh issue create \
+            --title "Daily article commit/push FAILED ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
+            --body-file /tmp/debug_commit.md \
+            --repo ${{ github.repository }}
 
       - name: Open Pull Request for review
         env:
