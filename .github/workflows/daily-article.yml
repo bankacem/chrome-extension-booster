@@ -3,7 +3,7 @@ name: Daily Article Generation
 on:
   schedule:
     - cron: '0 8 * * *'   # Daily at 08:00 UTC
-  workflow_dispatch: {}    # Manual trigger for testing
+  workflow_dispatch: {}  # Manual trigger for testing (re-registered)
 
 jobs:
   generate-article:
