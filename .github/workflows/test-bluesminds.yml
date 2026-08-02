@@ -1,0 +1,24 @@
+name: Test Bluesminds API Key
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test-key:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: List available models
+        env:
+          BLUESMINDS_KEY: ${{ secrets.BLUESMINDS_KEY }}
+        run: python3 seo_agent_pro/bluesminds_list_models.py
+
+      - name: Discover a working chat model
+        env:
+          BLUESMINDS_KEY: ${{ secrets.BLUESMINDS_KEY }}
+        run: python3 seo_agent_pro/test_bluesminds.py
