@@ -31,6 +31,10 @@ MODELS = {
 
     # ── Groq (ultra-fast) ──────────────────────────────────────
     "llama-3.1-70b-groq":   ("groq",        "llama-3.1-70b-versatile"),
+
+    # ── Bluesminds (confirmed working models, tested 2026-08-02) ─
+    "bluesminds-gpt4o":     ("bluesminds",  "gpt-4o"),
+    "bluesminds-llama-8b":  ("bluesminds",  "meta/llama-3.1-8b-instruct"),
 }
 
 # ──────────────────────────────────────────────────────────────
