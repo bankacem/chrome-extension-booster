@@ -6,6 +6,8 @@ on:
 jobs:
   test-key:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - uses: actions/checkout@v4
 
@@ -13,12 +15,27 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: List available models
+      - name: Run tests and capture output
         env:
           BLUESMINDS_KEY: ${{ secrets.BLUESMINDS_KEY }}
-        run: python3 seo_agent_pro/bluesminds_list_models.py
+        run: |
+          {
+            echo "## List models output"
+            echo '```'
+            python3 seo_agent_pro/bluesminds_list_models.py 2>&1 || true
+            echo '```'
+            echo ""
+            echo "## Model discovery output"
+            echo '```'
+            python3 seo_agent_pro/test_bluesminds.py 2>&1 || true
+            echo '```'
+          } > /tmp/results.md
 
-      - name: Discover a working chat model
+      - name: Post results as an issue
         env:
-          BLUESMINDS_KEY: ${{ secrets.BLUESMINDS_KEY }}
-        run: python3 seo_agent_pro/test_bluesminds.py
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "Bluesminds API test results ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
+            --body-file /tmp/results.md \
+            --repo ${{ github.repository }}
