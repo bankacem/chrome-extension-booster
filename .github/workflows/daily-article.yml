@@ -41,6 +41,15 @@ jobs:
           BLUESMINDS_KEY: ${{ secrets.BLUESMINDS_KEY }}
         run: python3 seo_agent_pro/daily_article.py 2>&1 | tee /tmp/gen_output.log
 
+      - name: Debug - show gen step outputs
+        run: |
+          echo "article_title=[${{ steps.gen.outputs.article_title }}]"
+          echo "article_slug=[${{ steps.gen.outputs.article_slug }}]"
+          echo "article_keyword=[${{ steps.gen.outputs.article_keyword }}]"
+          echo "article_path=[${{ steps.gen.outputs.article_path }}]"
+          echo "--- raw GITHUB_OUTPUT file (if readable) ---"
+          cat "$GITHUB_OUTPUT" || true
+
       - name: Post debug output if generation failed
         if: failure()
         env:
