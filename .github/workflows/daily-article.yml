@@ -42,13 +42,27 @@ jobs:
         run: python3 seo_agent_pro/daily_article.py 2>&1 | tee /tmp/gen_output.log
 
       - name: Debug - show gen step outputs
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          echo "article_title=[${{ steps.gen.outputs.article_title }}]"
-          echo "article_slug=[${{ steps.gen.outputs.article_slug }}]"
-          echo "article_keyword=[${{ steps.gen.outputs.article_keyword }}]"
-          echo "article_path=[${{ steps.gen.outputs.article_path }}]"
-          echo "--- raw GITHUB_OUTPUT file (if readable) ---"
-          cat "$GITHUB_OUTPUT" || true
+          {
+            echo "article_title=[${{ steps.gen.outputs.article_title }}]"
+            echo ""
+            echo "article_slug=[${{ steps.gen.outputs.article_slug }}]"
+            echo ""
+            echo "article_keyword=[${{ steps.gen.outputs.article_keyword }}]"
+            echo ""
+            echo "article_path=[${{ steps.gen.outputs.article_path }}]"
+            echo ""
+            echo "--- raw GITHUB_OUTPUT file ---"
+            echo '```'
+            cat "$GITHUB_OUTPUT" || echo "(could not read)"
+            echo '```'
+          } > /tmp/debug_outputs.md
+          gh issue create \
+            --title "DEBUG: gen step outputs ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
+            --body-file /tmp/debug_outputs.md \
+            --repo ${{ github.repository }}
 
       - name: Post debug output if generation failed
         if: failure()
