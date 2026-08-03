@@ -39,7 +39,9 @@ jobs:
         id: gen
         env:
           BLUESMINDS_KEY: ${{ secrets.BLUESMINDS_KEY }}
-        run: python3 seo_agent_pro/daily_article.py 2>&1 | tee /tmp/gen_output.log
+        run: |
+          set -o pipefail
+          python3 seo_agent_pro/daily_article.py 2>&1 | tee /tmp/gen_output.log
 
       - name: Debug - show gen step outputs
         env:
