@@ -7,6 +7,7 @@ import urllib.request
 import urllib.error
 import json
 import sys
+import time
 
 from config import API_KEYS, MODELS, SETTINGS
 
@@ -245,6 +246,11 @@ def _call_bluesminds(model_id: str, system: str, user: str, stream: bool) -> str
 #  Public API
 # ──────────────────────────────────────────────────────────────
 
+RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
+MAX_RETRIES = 3
+RETRY_BASE_DELAY_SECONDS = 5
+
+
 def call(
     system: str,
     user:   str,
@@ -253,33 +259,47 @@ def call(
 ) -> str:
     """
     Route a prompt to the correct provider and return the response text.
+    Automatically retries on transient server errors (rate limits, gateway
+    timeouts) instead of crashing the whole pipeline on the first blip.
     """
     provider, model_id = validate_config(model_name)
 
     print(c("dim", f"  ↳ {provider} / {model_id}"))
 
-    try:
-        if provider == "anthropic":
-            return _call_anthropic(model_id, system, user, stream)
-        elif provider == "openrouter":
-            return _call_openrouter(model_id, system, user, stream)
-        elif provider == "groq":
-            return _call_groq(model_id, system, user, stream)
-        elif provider == "bluesminds":
-            return _call_bluesminds(model_id, system, user, stream)
-        else:
-            print(c("red", f"  ✗ Unknown provider: {provider}"))
+    last_error = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            if provider == "anthropic":
+                return _call_anthropic(model_id, system, user, stream)
+            elif provider == "openrouter":
+                return _call_openrouter(model_id, system, user, stream)
+            elif provider == "groq":
+                return _call_groq(model_id, system, user, stream)
+            elif provider == "bluesminds":
+                return _call_bluesminds(model_id, system, user, stream)
+            else:
+                print(c("red", f"  ✗ Unknown provider: {provider}"))
+                sys.exit(1)
+
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", errors="replace")
+            last_error = e
+            if e.code in RETRYABLE_HTTP_CODES and attempt < MAX_RETRIES:
+                delay = RETRY_BASE_DELAY_SECONDS * attempt
+                print(c("dim", f"  ⚠ HTTP {e.code} (attempt {attempt}/{MAX_RETRIES}) - retrying in {delay}s..."))
+                time.sleep(delay)
+                continue
+            print(c("red", f"\n  ✗ HTTP {e.code}: {e.reason}"))
+            print(c("dim", f"  {body[:300]}"))
             sys.exit(1)
 
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")
-        print(c("red", f"\n  ✗ HTTP {e.code}: {e.reason}"))
-        print(c("dim", f"  {body[:300]}"))
-        sys.exit(1)
+        except Exception as e:
+            print(c("red", f"\n  ✗ Error calling {provider}: {e}"))
+            raise
 
-    except Exception as e:
-        print(c("red", f"\n  ✗ Error calling {provider}: {e}"))
-        raise
+    # Exhausted retries
+    print(c("red", f"\n  ✗ Gave up after {MAX_RETRIES} attempts: {last_error}"))
+    sys.exit(1)
 
 
 def call_json(system: str, user: str, model_name: str) -> dict | list:
