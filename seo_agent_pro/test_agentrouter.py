@@ -50,8 +50,6 @@ REQUEST_DELAY_SECONDS = 4
 CANDIDATE_BASE_URLS = [
     "https://agentrouter.org",
     "https://agentrouter.org/api",
-    "https://api.agentrouter.org",
-    "https://agentrouter.org/v1",
 ]
 
 
@@ -61,9 +59,13 @@ def try_list_models(base_url: str):
     req = urllib.request.Request(url, headers=HEADERS)
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
-            raw = resp.read().decode("utf-8")
+            print(f"  HTTP status: {resp.status}")
+            print(f"  Final URL (after any redirects): {resp.geturl()}")
+            print(f"  Content-Type: {resp.headers.get('Content-Type')}")
+            raw = resp.read().decode("utf-8", errors="replace")
+            print(f"  Body length: {len(raw)} chars")
+            print(f"  Body preview: {raw[:300]!r}")
             if not raw.strip():
-                print("  Empty response body")
                 return None, None
             body = json.loads(raw)
             ids = [m.get("id") for m in body.get("data", []) if m.get("id")]
@@ -73,7 +75,7 @@ def try_list_models(base_url: str):
             return base_url, ids
     except urllib.error.HTTPError as e:
         raw = e.read().decode("utf-8", errors="replace")
-        print(f"  HTTP {e.code}: {e.reason} - body: {raw[:300]}")
+        print(f"  HTTP {e.code}: {e.reason} - body: {raw[:300]!r}")
     except Exception as e:
         print(f"  Failed: {e}")
     return None, None
