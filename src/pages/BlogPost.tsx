@@ -149,7 +149,18 @@ const BlogPost = () => {
       const text = await response.text();
       const { frontmatter, content } = parseMarkdown(text);
       const processedContent = processArticleContent(content, frontmatter.featured_image);
-      const fullArticle = { ...(matched || {}), ...frontmatter, content: processedContent } as Article;
+      // IMPORTANT: never let a frontmatter `slug` field override the routing slug.
+      // Some legacy content files have a corrupted multi-line `slug:` value in
+      // their YAML frontmatter (a leftover from a past migration bug). The URL
+      // the visitor/crawler actually landed on (matched.slug from the index, or
+      // the URL param as a fallback) must always win, or the canonical tag and
+      // any generated links end up pointing at a URL that doesn't exist.
+      const fullArticle = {
+        ...(matched || {}),
+        ...frontmatter,
+        slug: (matched?.slug || fetchSlug || slug || "").toString().trim().split(/\s+/)[0],
+        content: processedContent,
+      } as Article;
       setArticle(fullArticle);
 
       const extSlug = (frontmatter as Record<string, unknown>).related_extension_slug as string | undefined;
