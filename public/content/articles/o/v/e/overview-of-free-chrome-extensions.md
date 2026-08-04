@@ -15,7 +15,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "A broad look at what free Chrome extensions can do, from tab management to blocking distractions, for anyone customizing their browser."
 status: published
 published_at: '2026-03-07T22:05:52.893+00:00'
 scheduled_at: null

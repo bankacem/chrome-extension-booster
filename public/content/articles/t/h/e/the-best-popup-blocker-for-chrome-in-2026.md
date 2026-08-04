@@ -14,10 +14,7 @@ category: Productivity
 tags: []
 keywords:
   - best popup blocker for chrome 2026
-meta_description: >-
-  Are you tired of annoying popups and intrusive ads ruining your browsing
-  experience on Google Chrome? Look no further! In this article, we'll explore
-  the best p
+meta_description: "Everything worth knowing about popup blocker for chrome in 2026, including installation steps and how it compares to alternatives."
 status: published
 published_at: '2026-04-11T14:15:00.474+00:00'
 scheduled_at: '2026-04-11T14:15:00+00:00'

@@ -20,7 +20,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "Lightweight, free Chrome extensions picked to fight tab overload and memory bloat so your browser stays fast instead of eating RAM."
 status: published
 published_at: '2026-02-22T22:33:00.457+00:00'
 scheduled_at: null

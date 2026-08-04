@@ -14,10 +14,7 @@ category: Appearance & Themes
 tags: []
 keywords:
   - adblock chrome addon android
-meta_description: >-
-  Are you tired of annoying ads disrupting your browsing experience on your
-  Android device? Look no further than the Light Popup Blocker Chrome extension,
-  a power
+meta_description: "A review of blocking ads on android with a chrome add-on, covering real-world use, setup steps, and honest limitations."
 status: published
 published_at: '2026-03-13T09:00:02.434+00:00'
 scheduled_at: '2026-03-13T09:00:00+00:00'

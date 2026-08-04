@@ -14,10 +14,7 @@ category: Productivity
 tags: []
 keywords:
   - best extension to suspend tabs
-meta_description: >-
-  Are you tired of dealing with slow browser performance due to an excessive
-  number of open tabs? Look no further! In this article, we'll explore the best
-  extensi
+meta_description: "A hands-on look at a tab suspender extension that frees up ram, covering setup, real features, and what to expect before installing it."
 status: published
 published_at: '2026-03-24T08:00:00.495+00:00'
 scheduled_at: '2026-03-24T08:00:00+00:00'

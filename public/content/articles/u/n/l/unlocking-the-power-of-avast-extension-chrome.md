@@ -14,10 +14,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - avast extension chrome
-meta_description: >-
-  When it comes to protecting your online presence, having the right tools is
-  crucial. The Avast extension Chrome is one such tool that has gained
-  popularity amon
+meta_description: "A hands-on look at the avast extension for chrome, covering setup, real features, and what to expect before installing it."
 status: published
 published_at: '2026-04-29T18:15:02.841+00:00'
 scheduled_at: '2026-04-29T18:15:00+00:00'

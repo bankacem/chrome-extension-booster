@@ -12,10 +12,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome wapi
-meta_description: >-
-  Are you looking to enhance your browsing experience with the help of extension
-  chrome wapi? Look no further! In this article, we will delve into the world of
-  Ch
+meta_description: "A practical breakdown of the chrome wapi extension: how it works, how to set it up, and where it falls short."
 status: published
 published_at: '2026-02-06T20:11:01.423+00:00'
 scheduled_at: '2026-02-06T20:11:00+00:00'

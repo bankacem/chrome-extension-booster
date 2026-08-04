@@ -32,7 +32,7 @@ updated_at: '2026-03-03T17:57:57.980548+00:00'
 
 <img src="/content/images/how-to-fix-chrome-high-memory-usage-on-windows-11/featured.webp" alt="How to Fix Chrome High Memory Usage on Windows 11: A Complete Guide to a Faster Browser" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>How to Fix <a href="/blog/full-page-screenshot-chrome-guide-9" class="internal-link" title="Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro">Chrome</a> High Memory Usage on Windows 11: A Complete Guide to a Faster Browser</h1>
+<h2>How to Fix <a href="/blog/full-page-screenshot-chrome-guide-9" class="internal-link" title="Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro">Chrome</a> High Memory Usage on Windows 11: A Complete Guide to a Faster Browser</h2>
 
 <p>We’ve all been there: you’re deep in the zone, working on an important project or researching your next big purchase, and suddenly, your computer starts acting like it’s walking through waist-deep peanut butter. You open the Task Manager, and there it is—Google Chrome is gobbling up gigabytes of RAM like it’s at an all-you-can-eat buffet. If you are wondering <strong>how to fix Chrome high memory usage on Windows 11</strong>, you aren’t alone. While Chrome is arguably the most powerful and versatile browser on the planet, its reputation as a "memory hog" is well-earned.</p>
 

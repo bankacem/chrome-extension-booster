@@ -14,10 +14,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - avast passwords extension
-meta_description: >-
-  Are you tired of using weak passwords or struggling to remember multiple
-  complex passwords? The Avast passwords extension is here to help. As a
-  powerful tool de
+meta_description: "A step-by-step walkthrough of the avast passwords extension, from installation to everyday use in Chrome."
 status: published
 published_at: '2026-04-28T18:15:00.55+00:00'
 scheduled_at: '2026-04-28T18:15:00+00:00'

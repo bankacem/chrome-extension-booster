@@ -17,7 +17,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "A curated 2025 toolkit of productivity Chrome extensions meant to automate routine tasks and pay for themselves within the first hour."
 status: published
 published_at: '2026-03-15T14:11:00.637+00:00'
 scheduled_at: '2026-03-15T14:11:00+00:00'

@@ -30,7 +30,7 @@ updated_at: '2026-05-12T10:15:03.144288+00:00'
 
 ```json
 {
-  "optimizedContent": "<h1>Extension Chrome Dark Mode Guide</h1>
+  "optimizedContent": "<h2>Extension Chrome Dark Mode Guide</h2>
 
 <p>Are you tired of straining your eyes while browsing the web at night? Look for an extension chrome dark mode to automatically switch between light and dark modes on your Chrome browser. In this guide, we will explore the world of dark mode extensions for Chrome and show you how to unlock their full potential with an extension chrome dark mode. With the help of our <a href=\"/extension/auto-dark-mode-switcher\" class=\"text-primary font-medium hover:underline\">Auto Dark Mode Switcher</a> extension, you can seamlessly switch between light and dark modes, enhancing your browsing experience and reducing eye strain using an extension chrome dark mode.</p>
 

@@ -20,7 +20,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "A 2025 roundup of Chrome extensions worth installing, filtered to cut through Web Store clutter and surface genuinely high-performance tools."
 status: published
 published_at: '2026-03-14T02:11:01.007+00:00'
 scheduled_at: '2026-03-14T02:11:00+00:00'

@@ -14,10 +14,7 @@ category: Chrome Extensions
 tags: []
 keywords:
   - chrome devtools tips for mobile
-meta_description: >-
-  As a web developer, you're likely no stranger to the importance of testing and
-  debugging your website or application on various devices, including mobile.
-  Chrom
+meta_description: "A practical breakdown of chrome devtools tips for mobile: how it works, how to set it up, and where it falls short."
 status: published
 published_at: '2026-04-05T02:15:01.059+00:00'
 scheduled_at: '2026-04-05T02:15:00+00:00'

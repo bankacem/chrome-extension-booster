@@ -29,7 +29,7 @@ updated_at: '2026-04-23T12:27:41.328012+00:00'
 
 <img src="/content/images/how-to-enable-dark-mode-on-google-search/featured.webp" alt="How to Enable Dark Mode on Google Search: A Step-by-Step Guide" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>How to Enable Dark Mode on Google Search: A Step-by-Step Guide</h1>
+<h2>How to Enable Dark Mode on Google Search: A Step-by-Step Guide</h2>
 
 <p>Are you tired of the traditional bright white background of Google Search? Do you want to reduce eye strain and give your eyes a break? Enabling Dark Mode on Google Search is a great way to achieve this. In this article, we will walk you through the process of <strong>how to enable Dark Mode on Google Search</strong> and provide you with some valuable tips and tricks to enhance your browsing experience.</p>
 

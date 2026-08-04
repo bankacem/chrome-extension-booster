@@ -15,7 +15,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "Chrome extensions built for students: citation tools, distraction blockers, and study aids to manage coursework without extra clutter."
 status: published
 published_at: '2026-01-24T09:00:00.479+00:00'
 scheduled_at: '2026-01-24T09:00:00+00:00'
@@ -38,7 +38,7 @@ updated_at: '2026-04-23T12:28:52.080856+00:00'
 <p><!-- /wp:paragraph --> <!-- wp:image {"sizeSlug":"large"} --></p>
 <figure class="wp-block-image size-large"><img src="" alt="" /></figure>
 <p><!-- /wp:image --> <!-- wp:heading {"level":1} --></p>
-<h1 class="wp-block-heading">The Student Stack: Table of Contents</h1>
+<h2 class="wp-block-heading">The Student Stack: Table of Contents</h2>
 <p><!-- /wp:heading --> <!-- wp:list --></p>
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li><a href="#productivity">1. Radical Focus &amp; Time Defense</a></li>

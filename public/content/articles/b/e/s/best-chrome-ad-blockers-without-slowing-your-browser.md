@@ -34,7 +34,7 @@ updated_at: '2026-08-04T08:55:00.000000+00:00'
 
 <img src="/content/images/best-chrome-ad-blockers-without-slowing-your-browser/featured.webp" alt="7 Chrome Extensions That Block Ads Without Slowing Your Browser Down" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>7 Chrome Extensions That Block Ads Without Slowing Your Browser Down</h1>
+<h2>7 Chrome Extensions That Block Ads Without Slowing Your Browser Down</h2>
 
 <p>Most people install an ad blocker expecting a faster browser. Then, six months later, Chrome is eating 4GB of RAM across twelve tabs and they can't figure out why — because the ad blocker itself is now the heaviest extension in the list.</p>
 

@@ -12,10 +12,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome json
-meta_description: >-
-  When it comes to customizing and enhancing your browsing experience, Chrome
-  extensions are the way to go. But have you ever wondered how these extensions
-  are bu
+meta_description: "A practical breakdown of json files in chrome: how it works, how to set it up, and where it falls short."
 status: published
 published_at: '2026-05-02T18:15:00.394+00:00'
 scheduled_at: '2026-05-02T18:15:00+00:00'

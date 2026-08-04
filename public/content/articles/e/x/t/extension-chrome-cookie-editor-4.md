@@ -12,10 +12,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome cookie editor
-meta_description: >-
-  As we navigate the vast expanse of the internet, our online activities are
-  constantly being tracked by websites, advertisers, and other third-party
-  entities. On
+meta_description: "A practical breakdown of extension chrome cookie editor: how it works, how to set it up, and where it falls short."
 status: published
 published_at: '2026-05-13T02:15:00.294+00:00'
 scheduled_at: '2026-05-13T02:15:00+00:00'

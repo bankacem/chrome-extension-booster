@@ -12,10 +12,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome color
-meta_description: >-
-  When it comes to customizing your browsing experience, few things can make as
-  big of an impact as the colors you surround yourself with. This is where the
-  conce
+meta_description: "Everything worth knowing about color extension for chrome, including installation steps and how it compares to alternatives."
 status: published
 published_at: '2026-05-13T10:15:02.908+00:00'
 scheduled_at: '2026-05-13T10:15:00+00:00'

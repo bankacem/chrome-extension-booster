@@ -14,10 +14,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - free popup blocker for chrome
-meta_description: >-
-  Are you tired of annoying popups and intrusive ads disrupting your browsing
-  experience on Google Chrome? Look no further! A free popup blocker for Chrome
-  is the
+meta_description: "A hands-on look at free popup blocker for chrome, covering setup, real features, and what to expect before installing it."
 status: published
 published_at: '2026-04-12T22:15:00.426+00:00'
 scheduled_at: '2026-04-12T22:15:00+00:00'

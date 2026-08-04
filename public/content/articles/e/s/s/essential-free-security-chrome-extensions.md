@@ -13,7 +13,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "Free security extensions to lock down Chrome's default settings against the tracking and malware gaps of an ad-funded browser."
 status: published
 published_at: '2026-03-18T14:11:00.732+00:00'
 scheduled_at: '2026-03-18T14:11:00+00:00'

@@ -14,10 +14,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - adblock in chrome android
-meta_description: >-
-  Are you tired of annoying ads disrupting your browsing experience on your
-  Android device? Look no further! In this comprehensive guide, we'll explore
-  the world
+meta_description: "What to know about adblock in chrome android before installing it, including setup and practical trade-offs."
 status: published
 published_at: '2026-03-19T09:00:00.518+00:00'
 scheduled_at: '2026-03-19T09:00:00+00:00'

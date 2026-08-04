@@ -12,10 +12,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - eternl chrome
-meta_description: >-
-  Are you looking to take your Chrome browsing experience to the next level?
-  Look no further than Eternl Chrome, a revolutionary approach to browsing that
-  combine
+meta_description: "A practical breakdown of eternl for chrome: how it works, how to set it up, and where it falls short."
 status: published
 published_at: '2026-05-07T10:15:00.312+00:00'
 scheduled_at: '2026-05-07T10:15:00+00:00'

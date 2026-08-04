@@ -14,10 +14,7 @@ category: Chrome Extensions
 tags: []
 keywords:
   - react devtools for chrome mobile
-meta_description: >-
-  As a web developer, you're likely familiar with the importance of debugging
-  and testing your React applications. One of the most powerful tools in your
-  arsenal
+meta_description: "A hands-on look at react devtools on chrome mobile, covering setup, real features, and what to expect before installing it."
 status: published
 published_at: '2026-04-07T06:15:00.282+00:00'
 scheduled_at: '2026-04-07T06:15:00+00:00'

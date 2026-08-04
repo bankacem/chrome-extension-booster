@@ -14,10 +14,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - ghostery add on chrome
-meta_description: >-
-  Are you concerned about your online privacy and security while browsing the
-  internet? With the rise of digital tracking and data collection, it's
-  essential to t
+meta_description: "A step-by-step walkthrough of ghostery add on chrome, from installation to everyday use in Chrome."
 status: published
 published_at: '2026-03-03T16:45:41.362+00:00'
 scheduled_at: null

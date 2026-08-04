@@ -12,10 +12,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - gemini extension to chrome
-meta_description: >-
-  Are you looking to enhance your browsing experience with the gemini extension
-  to chrome? Look no further! In this article, we will delve into the world of
-  Gemin
+meta_description: "A hands-on look at gemini into your chrome browser, covering setup, real features, and what to expect before installing it."
 status: published
 published_at: '2026-02-15T08:11:01.915+00:00'
 scheduled_at: '2026-02-15T08:11:00+00:00'

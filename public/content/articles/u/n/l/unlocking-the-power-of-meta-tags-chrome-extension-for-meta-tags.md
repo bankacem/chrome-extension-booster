@@ -14,10 +14,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - chrome extension for meta tags
-meta_description: >-
-  As the digital landscape continues to evolve, the importance of meta tags in
-  search engine optimization (SEO) cannot be overstated. Meta tags provide
-  crucial in
+meta_description: "A hands-on look at checking a page's meta tags right in chrome, covering setup, real features, and what to expect before installing it."
 status: published
 published_at: '2026-04-19T14:15:00.354+00:00'
 scheduled_at: '2026-04-19T14:15:00+00:00'

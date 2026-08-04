@@ -14,10 +14,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - adblock on chrome android
-meta_description: >-
-  Are you tired of annoying ads disrupting your browsing experience on Chrome
-  Android? Look no further! In this comprehensive guide, we'll delve into the
-  world of
+meta_description: "A step-by-step walkthrough of adblock on chrome android, from installation to everyday use in Chrome."
 status: published
 published_at: '2026-03-21T09:00:01.128+00:00'
 scheduled_at: '2026-03-21T09:00:00+00:00'

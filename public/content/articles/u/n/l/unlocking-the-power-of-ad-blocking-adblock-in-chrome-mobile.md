@@ -14,10 +14,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - adblock in chrome mobile
-meta_description: >-
-  Are you tired of annoying ads disrupting your browsing experience on Chrome
-  Mobile? Do you want to enhance your online security and privacy while surfing
-  the we
+meta_description: "Everything worth knowing about adblock in chrome mobile, including installation steps and how it compares to alternatives."
 status: published
 published_at: '2026-04-27T18:15:00.468+00:00'
 scheduled_at: '2026-04-27T18:15:00+00:00'
