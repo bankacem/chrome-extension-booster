@@ -33,6 +33,7 @@ interface Article {
   meta_description: string;
   canonicalPath?: string;
   published_at: string;
+  updated_at?: string;
   read_time: number;
   author: string;
   views: number;
@@ -206,7 +207,7 @@ const BlogPost = () => {
       "name": "ExtensionTo",
       "logo": {
         "@type": "ImageObject",
-        "url": `${window.location.origin}/logo.png`
+        "url": `${window.location.origin}/og-image.png`
       }
     },
     "mainEntityOfPage": {

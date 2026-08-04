@@ -136,7 +136,7 @@ function buildSchema(article: IndexArticle, title: string, description: string, 
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/og-image.png` },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/blog/${article.slug}` },
   };
