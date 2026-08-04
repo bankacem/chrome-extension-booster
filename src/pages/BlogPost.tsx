@@ -159,6 +159,11 @@ const BlogPost = () => {
         ...(matched || {}),
         ...frontmatter,
         slug: (matched?.slug || fetchSlug || slug || "").toString().trim().split(/\s+/)[0],
+        // The site's article-index.json is the authoritative source for taxonomy
+        // (category). Some legacy content files carry a stale/incorrect category
+        // in their own frontmatter from a past bulk-import; never let that silently
+        // override a corrected index entry.
+        category: matched?.category || frontmatter.category,
         content: processedContent,
       } as Article;
       setArticle(fullArticle);
@@ -207,6 +212,7 @@ const BlogPost = () => {
     "headline": article.title,
     "description": article.meta_description || article.excerpt,
     "image": article.featured_image ? resolveImagePath(article.featured_image) : undefined,
+    "articleSection": article.category || undefined,
     "author": {
       "@type": "Person",
       "name": article.author || "Admin"
