@@ -47,30 +47,40 @@ PRIORITY_MODELS = [
 REQUEST_DELAY_SECONDS = 4
 
 
-def try_list_models():
-    print("=" * 60)
-    print("STEP 1: Trying GET /v1/models ...")
-    print("=" * 60)
-    url = f"{BASE_URL}/v1/models"
+CANDIDATE_BASE_URLS = [
+    "https://agentrouter.org",
+    "https://agentrouter.org/api",
+    "https://api.agentrouter.org",
+    "https://agentrouter.org/v1",
+]
+
+
+def try_list_models(base_url: str):
+    url = f"{base_url}/v1/models" if not base_url.endswith("/v1") else f"{base_url}/models"
+    print(f"--- Trying {url} ---")
     req = urllib.request.Request(url, headers=HEADERS)
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
-            body = json.loads(resp.read().decode("utf-8"))
+            raw = resp.read().decode("utf-8")
+            if not raw.strip():
+                print("  Empty response body")
+                return None, None
+            body = json.loads(raw)
             ids = [m.get("id") for m in body.get("data", []) if m.get("id")]
-            print(f"SUCCESS - {len(ids)} models available. Full list:")
-            for mid in ids:
-                print(f"  - {mid}")
-            return ids
+            print(f"  SUCCESS - {len(ids)} models. First 20:")
+            for mid in ids[:20]:
+                print(f"    - {mid}")
+            return base_url, ids
     except urllib.error.HTTPError as e:
-        print(f"HTTP {e.code}: {e.reason}")
-        print(e.read().decode("utf-8", errors="replace")[:1000])
+        raw = e.read().decode("utf-8", errors="replace")
+        print(f"  HTTP {e.code}: {e.reason} - body: {raw[:300]}")
     except Exception as e:
-        print(f"Failed: {e}")
-    return []
+        print(f"  Failed: {e}")
+    return None, None
 
 
-def try_chat_completion(model_id: str):
-    url = f"{BASE_URL}/v1/chat/completions"
+def try_chat_completion(base_url: str, model_id: str):
+    url = f"{base_url}/v1/chat/completions" if not base_url.endswith("/v1") else f"{base_url}/chat/completions"
     payload = {
         "model": model_id,
         "max_tokens": 30,
@@ -81,7 +91,11 @@ def try_chat_completion(model_id: str):
     )
     try:
         with urllib.request.urlopen(req, timeout=25) as resp:
-            body = json.loads(resp.read().decode("utf-8"))
+            raw = resp.read().decode("utf-8")
+            if not raw.strip():
+                print(f"  [FAIL] '{model_id}': empty response body")
+                return False
+            body = json.loads(raw)
             try:
                 content = body["choices"][0]["message"]["content"]
             except Exception:
@@ -97,14 +111,42 @@ def try_chat_completion(model_id: str):
 
 
 def main():
-    all_models = try_list_models()
+    print("=" * 60)
+    print("STEP 1: Finding the correct base URL")
+    print("=" * 60)
+
+    working_base_url = None
+    discovered_models = []
+    for base_url in CANDIDATE_BASE_URLS:
+        result_base, ids = try_list_models(base_url)
+        if result_base:
+            working_base_url = result_base
+            discovered_models = ids or []
+            break
+
+    if not working_base_url:
+        print()
+        print("None of the candidate base URLs returned a valid /v1/models response.")
+        print("Trying chat completions directly against each candidate as a last resort...")
+        for base_url in CANDIDATE_BASE_URLS:
+            print(f"--- Trying chat completion at {base_url} ---")
+            if try_chat_completion(base_url, "gpt-4o"):
+                working_base_url = base_url
+                break
+
+    if not working_base_url:
+        print()
+        print("=" * 60)
+        print("SUMMARY: Could not find a working base URL at all.")
+        print("=" * 60)
+        return
 
     print()
     print("=" * 60)
-    print("STEP 2: Testing priority models (with delay to respect rate limits)")
+    print(f"STEP 2: Testing priority models against {working_base_url}")
     print("=" * 60)
 
-    to_test = [m for m in PRIORITY_MODELS if not all_models or m in all_models]
+    to_test = [m for m in PRIORITY_MODELS if not discovered_models or m in discovered_models]
     if not to_test:
         to_test = PRIORITY_MODELS
 
@@ -112,13 +154,14 @@ def main():
     for i, model_id in enumerate(to_test):
         if i > 0:
             time.sleep(REQUEST_DELAY_SECONDS)
-        if try_chat_completion(model_id):
+        if try_chat_completion(working_base_url, model_id):
             working.append(model_id)
 
     print()
     print("=" * 60)
     print("SUMMARY")
     print("=" * 60)
+    print(f"Working base URL: {working_base_url}")
     print(f"Working model(s): {working}")
 
 
