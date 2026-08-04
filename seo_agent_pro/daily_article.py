@@ -27,16 +27,25 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 import modules as agent  # noqa: E402
 import memory  # noqa: E402
-from llm_router import call  # noqa: E402
+from llm_router import call, find_working_model  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE_PATH = Path(__file__).parent / "keyword_queue.txt"
 STATE_PATH = Path(__file__).parent / "daily_article_state.json"
 ARTICLES_DIR = ROOT / "public" / "content" / "articles"
-# bluesminds-gpt4o pointed at a base URL (api.bluesminds.com) that never
-# actually worked — see llm_router.py. Default to the agentrouter provider,
-# override with SEO_AGENT_MODEL if needed.
-MODEL = os.environ.get("SEO_AGENT_MODEL", "agentrouter-gpt-4o")
+# Tried in this order until one actually responds. agentrouter.org is kept
+# first in case its WAF stops blocking GitHub Actions IPs later, but during
+# diagnosis it returned an Alibaba Cloud WAF block page (HTML, not JSON) for
+# every candidate URL — so groq/openrouter are the ones actually expected to
+# work today. Override the whole chain with SEO_AGENT_MODEL=<name> to force
+# a single specific model instead of probing.
+MODEL_FALLBACK_CHAIN = [
+    "agentrouter-gpt-4o",
+    "bluesminds-gpt4o",
+    "llama-3.1-70b-groq",
+    "gpt-4o-mini",
+    "claude-haiku",
+]
 
 DEFAULT_CATEGORY = "Productivity & Tools"
 DEFAULT_FEATURED_IMAGE = "/og-image.png"
@@ -139,6 +148,20 @@ def yaml_list(items: list) -> str:
 
 def main():
     keyword = pick_next_keyword()
+
+    # Pick the first model that actually responds instead of hardcoding one
+    # provider and failing the whole run if that provider is down (which is
+    # exactly what happened with agentrouter.org — see MODEL_FALLBACK_CHAIN
+    # comment above). SEO_AGENT_MODEL, if set, skips probing and forces a
+    # single specific model.
+    forced_model = os.environ.get("SEO_AGENT_MODEL")
+    if forced_model:
+        MODEL = forced_model
+        print(f"Using forced model: {MODEL!r} (SEO_AGENT_MODEL set)")
+    else:
+        MODEL = find_working_model(MODEL_FALLBACK_CHAIN)
+        print(f"Using model: {MODEL!r} (first working candidate in fallback chain)")
+
     print(f"Generating article for keyword: {keyword!r} (model={MODEL})")
 
     # Load real persistent memory instead of a throwaway empty dict — this is

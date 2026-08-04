@@ -41,9 +41,12 @@ jobs:
           # BLUESMINDS_KEY kept for backward compat only — that provider's
           # base URL never actually worked (see seo_agent_pro/llm_router.py).
           BLUESMINDS_KEY: ${{ secrets.BLUESMINDS_KEY }}
-          # Add an AGENTROUTER_KEY secret in repo Settings → Secrets → Actions
-          # for this to work — daily_article.py now defaults to this provider.
+          # agentrouter.org's WAF blocks GitHub Actions IPs outright (see
+          # llm_router.py comment) — kept in the fallback chain in case that
+          # changes, but don't rely on it alone.
           AGENTROUTER_KEY: ${{ secrets.AGENTROUTER_KEY }}
+          GROQ_KEY: ${{ secrets.GROQ_KEY }}
+          OPENROUTER_KEY: ${{ secrets.OPENROUTER_KEY }}
         run: |
           set -o pipefail
           python3 seo_agent_pro/daily_article.py 2>&1 | tee /tmp/gen_output.log

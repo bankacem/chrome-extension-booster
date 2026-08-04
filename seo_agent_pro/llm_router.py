@@ -408,6 +408,53 @@ def call_json(system: str, user: str, model_name: str) -> dict | list:
         raise ValueError(f"Could not parse JSON:\n{raw[:400]}")
 
 
+def find_working_model(candidates: list[str], test_prompt: str = "Reply with exactly: OK") -> str:
+    """
+    Try each model in `candidates`, in order, with a tiny cheap test call.
+    Returns the name of the first one that responds successfully. Skips (does
+    not even attempt) any candidate whose provider has no API key configured,
+    so a missing secret doesn't waste a network round-trip. Raises
+    RuntimeError if none of them work — with every individual failure reason
+    included so the cause is visible in one place instead of buried per-call.
+    """
+    failures: list[str] = []
+
+    for model_name in candidates:
+        if model_name not in MODELS:
+            failures.append(f"{model_name}: not a known model in MODELS")
+            continue
+
+        provider, _ = MODELS[model_name]
+        if not API_KEYS.get(provider, ""):
+            failures.append(f"{model_name}: no API key set for provider '{provider}' — skipped")
+            continue
+
+        print(c("dim", f"  ↳ probing {model_name}..."))
+        try:
+            reply = call(
+                "You are a connectivity check. Reply with exactly the requested text, nothing else.",
+                test_prompt,
+                model_name,
+                stream=False,
+            )
+            print(c("green", f"  ✓ {model_name} works — reply: {reply.strip()[:60]!r}"))
+            return model_name
+        except SystemExit:
+            # validate_config()/call()'s own exhausted-retries path calls
+            # sys.exit(1); treat that as "this candidate failed" rather than
+            # killing the whole probing loop.
+            failures.append(f"{model_name}: exited after exhausting retries")
+            continue
+        except Exception as e:
+            failures.append(f"{model_name}: {e}")
+            continue
+
+    detail = "\n".join(f"  - {f}" for f in failures)
+    raise RuntimeError(
+        f"No working model found among candidates: {candidates}\n{detail}"
+    )
+
+
 def list_models() -> None:
     """Print all available models grouped by provider."""
     providers: dict[str, list[str]] = {}
