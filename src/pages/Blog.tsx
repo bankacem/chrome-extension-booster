@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Search, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,6 +9,17 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { supabase } from "@/integrations/supabase/client";
 import { resolveImagePath } from "@/utils/articlePath";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
+
+const ARTICLES_PER_PAGE = 12;
 
 interface Article {
   id: string;
@@ -28,10 +39,35 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const currentPage = Math.max(1, parseInt(searchParams.get("page") || "1", 10) || 1);
+
+  const goToPage = (page: number) => {
+    const params = new URLSearchParams(searchParams);
+    if (page <= 1) {
+      params.delete("page");
+    } else {
+      params.set("page", String(page));
+    }
+    setSearchParams(params);
+    // Bring the user back to the top of the article list, not the whole page
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   useEffect(() => {
     fetchArticles();
   }, []);
+
+  // Whenever the search term or category filter changes, jump back to page 1
+  useEffect(() => {
+    if (currentPage !== 1) {
+      const params = new URLSearchParams(searchParams);
+      params.delete("page");
+      setSearchParams(params, { replace: true });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchTerm, selectedCategory]);
 
   const fetchArticles = async () => {
     try {
@@ -58,12 +94,45 @@ const Blog = () => {
     return matchesSearch && matchesCategory;
   });
 
+  const totalPages = Math.max(1, Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE));
+  const safePage = Math.min(currentPage, totalPages);
+  const paginatedArticles = filteredArticles.slice(
+    (safePage - 1) * ARTICLES_PER_PAGE,
+    safePage * ARTICLES_PER_PAGE
+  );
+
+  // Builds a compact page list like: 1 ... 4 5 [6] 7 8 ... 63
+  const pageNumbers = useMemo(() => {
+    const pages: (number | "ellipsis")[] = [];
+    const siblings = 1;
+    const range = (start: number, end: number) => {
+      const out: number[] = [];
+      for (let i = start; i <= end; i++) out.push(i);
+      return out;
+    };
+
+    if (totalPages <= 7) {
+      return range(1, totalPages);
+    }
+
+    const left = Math.max(2, safePage - siblings);
+    const right = Math.min(totalPages - 1, safePage + siblings);
+
+    pages.push(1);
+    if (left > 2) pages.push("ellipsis");
+    pages.push(...range(left, right));
+    if (right < totalPages - 1) pages.push("ellipsis");
+    pages.push(totalPages);
+
+    return pages;
+  }, [safePage, totalPages]);
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
         title="Blog - Latest Articles & Tips"
         description="Discover tips, tutorials, and insights about browser extensions, productivity, and web development. Stay updated with the latest Chrome extension news."
-        canonicalPath="/blog"
+        canonicalPath={safePage > 1 ? `/blog?page=${safePage}` : "/blog"}
       />
       <Navbar />
       
@@ -130,7 +199,7 @@ const Blog = () => {
             </div>
           ) : (
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {filteredArticles.map((article, index) => (
+              {paginatedArticles.map((article, index) => (
                 <motion.article
                   key={article.id}
                   initial={{ opacity: 0, y: 20 }}
@@ -190,6 +259,61 @@ const Blog = () => {
                   </div>
                 </motion.article>
               ))}
+            </div>
+          )}
+
+          {/* Pagination */}
+          {!loading && totalPages > 1 && (
+            <div className="mt-12">
+              <Pagination>
+                <PaginationContent>
+                  <PaginationItem>
+                    <PaginationPrevious
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (safePage > 1) goToPage(safePage - 1);
+                      }}
+                      className={safePage === 1 ? "pointer-events-none opacity-50" : ""}
+                    />
+                  </PaginationItem>
+
+                  {pageNumbers.map((page, idx) =>
+                    page === "ellipsis" ? (
+                      <PaginationItem key={`ellipsis-${idx}`}>
+                        <PaginationEllipsis />
+                      </PaginationItem>
+                    ) : (
+                      <PaginationItem key={page}>
+                        <PaginationLink
+                          href="#"
+                          isActive={page === safePage}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            goToPage(page);
+                          }}
+                        >
+                          {page}
+                        </PaginationLink>
+                      </PaginationItem>
+                    )
+                  )}
+
+                  <PaginationItem>
+                    <PaginationNext
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (safePage < totalPages) goToPage(safePage + 1);
+                      }}
+                      className={safePage === totalPages ? "pointer-events-none opacity-50" : ""}
+                    />
+                  </PaginationItem>
+                </PaginationContent>
+              </Pagination>
+              <p className="mt-4 text-center text-sm text-muted-foreground">
+                صفحة {safePage} من {totalPages} — {filteredArticles.length} مقال
+              </p>
             </div>
           )}
         </div>
