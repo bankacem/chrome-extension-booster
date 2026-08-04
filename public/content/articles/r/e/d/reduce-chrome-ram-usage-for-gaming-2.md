@@ -3,19 +3,13 @@ seo_title: "How to Reduce Chrome RAM Usage for Gaming"
 id: aa9089ee-ab82-4402-bbf7-879d0dea3e02
 title: 'How to Reduce Chrome RAM Usage for Gaming: The Ultimate Lag-Free Guide'
 slug: reduce-chrome-ram-usage-for-gaming-2
-excerpt: >-
-  We’ve all been there. You’re right in the middle of an intense gaming session,
-  perhaps a high-stakes match in Call of Duty or a complex raid in World of
-  Warcraf
+excerpt: "We’ve all been there. You’re right in the middle of an intense gaming session, perhaps a high-stakes match in Call of Duty or a complex raid in World of…"
 featured_image: /content/images/reduce-chrome-ram-usage-for-gaming-2/featured.webp
 category: Performance & Memory
 tags: []
 keywords:
   - Reduce Chrome RAM usage for gaming
-meta_description: >-
-  We’ve all been there. You’re right in the middle of an intense gaming session,
-  perhaps a high-stakes match in Call of Duty or a complex raid in World of
-  Warcraf
+meta_description: "We’ve all been there. You’re right in the middle of an intense gaming session, perhaps a high-stakes match in Call of Duty or a complex raid in World of…"
 status: published
 published_at: '2026-01-22T16:29:00.353+00:00'
 scheduled_at: '2026-01-22T16:29:00+00:00'
@@ -25,6 +19,7 @@ views: 4
 read_time: 9
 created_at: '2026-01-20T14:42:02.082412+00:00'
 updated_at: '2026-04-21T10:56:52.353679+00:00'
+description: "We’ve all been there. You’re right in the middle of an intense gaming session, perhaps a high-stakes match in Call of Duty or a complex raid in World of…"
 ---
 
 <img src="/content/images/reduce-chrome-ram-usage-for-gaming-2/featured.webp" alt="How to Reduce Chrome RAM Usage for Gaming: The Ultimate Lag-Free Guide" width="1200" height="630" loading="lazy" class="featured-image">

@@ -3,20 +3,14 @@ seo_title: "Full Page Screenshot Chrome Guide"
 id: 3f068c0c-dda0-4b58-a2ba-b3e07608024b
 title: 'Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro'
 slug: full-page-screenshot-chrome-guide-9
-excerpt: >-
-  Welcome to the ultimate Full Page Screenshot Chrome Guide, where you'll learn
-  how to capture entire web pages with ease. Taking full-page screenshots is an
-  esse
+excerpt: "Welcome to the ultimate Full Page Screenshot Chrome Guide, where you'll learn how to capture entire web pages with ease."
 featured_image: /content/images/full-page-screenshot-chrome-guide-9/featured.webp
 category: Screenshots & Screen Capture
 tags:
   - 'Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro'
 keywords:
   - Full Page Screenshot Chrome Guide
-meta_description: >-
-  Welcome to the ultimate Full Page Screenshot Chrome Guide, where you'll learn
-  how to capture entire web pages with ease. Taking full-page screenshots is an
-  esse
+meta_description: "Welcome to the ultimate Full Page Screenshot Chrome Guide, where you'll learn how to capture entire web pages with ease."
 status: published
 published_at: '2026-01-20T21:33:27.192+00:00'
 scheduled_at: null
@@ -26,6 +20,7 @@ views: 4
 read_time: 5
 created_at: '2026-01-20T20:54:14.479438+00:00'
 updated_at: '2026-04-23T12:27:52.562568+00:00'
+description: "Welcome to the ultimate Full Page Screenshot Chrome Guide, where you'll learn how to capture entire web pages with ease."
 ---
 
 <img src="/content/images/full-page-screenshot-chrome-guide-9/featured.webp" alt="Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro" width="1200" height="630" loading="lazy" class="featured-image">

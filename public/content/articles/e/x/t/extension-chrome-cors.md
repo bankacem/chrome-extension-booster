@@ -3,19 +3,13 @@ seo_title: "Unlocking the Power of Extension Chrome CORS"
 id: df9642d1-b9b0-49da-8cab-eadc0bc27429
 title: 'Unlocking the Power of Extension Chrome CORS: A Comprehensive Guide'
 slug: extension-chrome-cors
-excerpt: >-
-  When it comes to developing and using Chrome extensions, one crucial aspect to
-  consider is the extension Chrome CORS (Cross-Origin Resource Sharing) policy.
-  Thi
+excerpt: "When it comes to developing and using Chrome extensions, one crucial aspect to consider is the extension Chrome CORS (Cross-Origin Resource Sharing) policy."
 featured_image: /content/images/extension-chrome-cors/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome cors
-meta_description: >-
-  When it comes to developing and using Chrome extensions, one crucial aspect to
-  consider is the extension Chrome CORS (Cross-Origin Resource Sharing) policy.
-  Thi
+meta_description: "When it comes to developing and using Chrome extensions, one crucial aspect to consider is the extension Chrome CORS (Cross-Origin Resource Sharing) policy."
 status: published
 published_at: '2026-05-12T18:15:00.331+00:00'
 scheduled_at: '2026-05-12T18:15:00+00:00'
@@ -25,6 +19,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-27T14:48:27.804606+00:00'
 updated_at: '2026-05-12T18:15:00.409348+00:00'
+description: "When it comes to developing and using Chrome extensions, one crucial aspect to consider is the extension Chrome CORS (Cross-Origin Resource Sharing) policy."
 ---
 
 <img src="/content/images/extension-chrome-cors/featured.webp" alt="Unlocking the Power of Extension Chrome CORS: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

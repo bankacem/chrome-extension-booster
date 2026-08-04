@@ -5,19 +5,13 @@ title: >-
   Unlock Ad-Free Browsing on Android: The Power of Extension Google Chrome
   Adblock Android
 slug: extension-google-chrome-adblock-android-5
-excerpt: >-
-  Are you tired of annoying ads disrupting your browsing experience on your
-  Android device? Look no further than the extension Google Chrome adblock
-  Android, a ga
+excerpt: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 featured_image: /content/images/extension-google-chrome-adblock-android-5/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension google chrome adblock android
-meta_description: >-
-  Are you tired of annoying ads disrupting your browsing experience on your
-  Android device? Look no further than the extension Google Chrome adblock
-  Android, a ga
+meta_description: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 status: published
 published_at: '2026-02-05T08:11:00.489+00:00'
 scheduled_at: '2026-02-05T08:11:00+00:00'
@@ -27,6 +21,7 @@ views: 11
 read_time: 5
 created_at: '2026-01-24T18:21:50.786838+00:00'
 updated_at: '2026-04-23T12:26:20.837998+00:00'
+description: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 ---
 
 <img src="/content/images/extension-google-chrome-adblock-android-5/featured.webp" alt="Unlock Ad-Free Browsing on Android: The Power of Extension Google Chrome Adblock Android" width="1200" height="630" loading="lazy" class="featured-image">

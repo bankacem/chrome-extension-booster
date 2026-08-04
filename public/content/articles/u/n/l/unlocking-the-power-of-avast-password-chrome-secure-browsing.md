@@ -6,20 +6,14 @@ title: >-
   Browsing
 slug: unlocking-the-power-of-avast-password-chrome-secure-browsing
   unlocking-the-power-of-avast-password-chrome-a-comprehensive-guide-to-secure-browsing-ml5gzghoxn2
-excerpt: >-
-  Are you tired of remembering multiple passwords for your online accounts? Do
-  you struggle with creating strong, unique passwords for each website? Look no
-  furth
+excerpt: "Are you tired of remembering multiple passwords for your online accounts? Do you struggle with creating strong, unique passwords for each website?"
 featured_image: >-
   /content/images/unlocking-the-power-of-avast-password-chrome-a-comprehensive-guide-to-secure-browsing-ml5gzghoxn2/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - avast password chrome
-meta_description: >-
-  Are you tired of remembering multiple passwords for your online accounts? Do
-  you struggle with creating strong, unique passwords for each website? Look no
-  furth
+meta_description: "Are you tired of remembering multiple passwords for your online accounts? Do you struggle with creating strong, unique passwords for each website?"
 status: published
 published_at: '2026-04-29T02:15:00.701+00:00'
 scheduled_at: '2026-04-29T02:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 6
 created_at: '2026-02-02T17:55:07.842322+00:00'
 updated_at: '2026-04-29T02:15:00.763123+00:00'
+description: "Are you tired of remembering multiple passwords for your online accounts? Do you struggle with creating strong, unique passwords for each website?"
 ---
 
 <img src="/content/images/unlocking-the-power-of-avast-password-chrome-a-comprehensive-guide-to-secure-browsing-ml5gzghoxn2/featured.webp" alt="Unlocking the Power of Avast Password Chrome: A Comprehensive Guide to Secure Browsing" width="1200" height="630" loading="lazy" class="featured-image">

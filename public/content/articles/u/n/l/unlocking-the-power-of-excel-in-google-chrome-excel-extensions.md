@@ -5,19 +5,13 @@ title: >-
   Unlocking the Power of Excel in Google Chrome: The Ultimate Guide to Excel
   Extensions
 slug: unlocking-the-power-of-excel-in-google-chrome-excel-extensions
-excerpt: >-
-  Are you an avid Google Chrome user who also relies heavily on Microsoft Excel
-  for work or personal projects? Look no further! This article will delve into
-  the w
+excerpt: "Are you an avid Google Chrome user who also relies heavily on Microsoft Excel for work or personal projects? Look no further!"
 featured_image: /content/images/excel-extension-google-chrome-mkzmqg5c382/featured.webp
 category: Appearance & Themes
 tags: []
 keywords:
   - excel extension google chrome
-meta_description: >-
-  Are you an avid Google Chrome user who also relies heavily on Microsoft Excel
-  for work or personal projects? Look no further! This article will delve into
-  the w
+meta_description: "Are you an avid Google Chrome user who also relies heavily on Microsoft Excel for work or personal projects? Look no further!"
 status: published
 published_at: '2026-05-07T02:15:00.905+00:00'
 scheduled_at: '2026-05-07T02:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-29T15:49:22.408024+00:00'
 updated_at: '2026-05-07T02:15:00.999382+00:00'
+description: "Are you an avid Google Chrome user who also relies heavily on Microsoft Excel for work or personal projects? Look no further!"
 ---
 
 <img src="/content/images/excel-extension-google-chrome-mkzmqg5c382/featured.webp" alt="Unlocking the Power of Excel in Google Chrome: The Ultimate Guide to Excel Extensions" width="1200" height="630" loading="lazy" class="featured-image">

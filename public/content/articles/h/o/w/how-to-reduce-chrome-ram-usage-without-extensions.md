@@ -4,20 +4,14 @@ id: a71c6b73-42a3-4406-8f60-90af9561bfe2
 title: 'How to Reduce Chrome RAM Usage Without Extensions: A Comprehensive Guide'
 slug: how-to-reduce-chrome-ram-usage-without-extensions
   how-to-reduce-chrome-ram-usage-without-extensions-a-comprehensive-guide-mmb7srpyinx
-excerpt: >-
-  Google Chrome is one of the most popular web browsers, known for its speed,
-  simplicity, and extensive library of extensions. However, one of the common
-  complain
+excerpt: "Google Chrome is one of the most popular web browsers, known for its speed, simplicity, and extensive library of extensions."
 featured_image: >-
   /content/images/how-to-reduce-chrome-ram-usage-without-extensions-a-comprehensive-guide-mmb7srpyinx/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - How to reduce Chrome RAM usage without extensions
-meta_description: >-
-  Google Chrome is one of the most popular web browsers, known for its speed,
-  simplicity, and extensive library of extensions. However, one of the common
-  complain
+meta_description: "Google Chrome is one of the most popular web browsers, known for its speed, simplicity, and extensive library of extensions."
 status: published
 published_at: '2026-03-25T04:00:00.436+00:00'
 scheduled_at: '2026-03-25T04:00:00+00:00'
@@ -27,6 +21,7 @@ views: 1
 read_time: 5
 created_at: '2026-03-03T23:04:10.373962+00:00'
 updated_at: '2026-04-23T12:25:54.983258+00:00'
+description: "Google Chrome is one of the most popular web browsers, known for its speed, simplicity, and extensive library of extensions."
 ---
 
 <img src="/content/images/how-to-reduce-chrome-ram-usage-without-extensions-a-comprehensive-guide-mmb7srpyinx/featured.webp" alt="How to Reduce Chrome RAM Usage Without Extensions: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

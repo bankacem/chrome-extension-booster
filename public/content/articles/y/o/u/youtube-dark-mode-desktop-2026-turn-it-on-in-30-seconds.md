@@ -3,10 +3,7 @@ seo_title: "YouTube Dark Mode Desktop 2026"
 id: c3e4f574-663d-4b40-9a74-ca524aea1d2b
 title: 'YouTube Dark Mode Desktop 2026: Turn It On in 30 Seconds'
 slug: youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds
-excerpt: >-
-  Are you tired of the bright and flashy YouTube interface on your desktop? Do
-  you want to know how to get Dark Mode on YouTube desktop to reduce eye strain
-  and i
+excerpt: "Are you tired of the bright and flashy YouTube interface on your desktop?"
 featured_image: >-
   /content/images/youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds/featured.webp
 category: Appearance & Themes
@@ -14,10 +11,7 @@ tags:
   - 'YouTube Dark Mode Desktop 2026: Turn It On in 30 Seconds'
 keywords:
   - How to get Dark Mode on YouTube desktop
-meta_description: >-
-  Are you tired of the bright and flashy YouTube interface on your desktop? Do
-  you want to know how to get Dark Mode on YouTube desktop to reduce eye strain
-  and i
+meta_description: "Are you tired of the bright and flashy YouTube interface on your desktop?"
 status: published
 published_at: '2026-03-16T17:20:36.6+00:00'
 scheduled_at: null
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-21T12:43:48.606933+00:00'
 updated_at: '2026-04-23T12:27:40.242225+00:00'
+description: "Are you tired of the bright and flashy YouTube interface on your desktop?"
 ---
 
 <img src="/content/images/youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds/featured.webp" alt="YouTube Dark Mode Desktop 2026: Turn It On in 30 Seconds" width="1200" height="630" loading="lazy" class="featured-image">

@@ -6,20 +6,14 @@ title: >-
   Chrome Pop Up Blocker
 slug: chrome-pop-up-blocker
   unlock-the-power-of-a-seamless-browsing-experience-the-ultimate-guide-to-chrome-pop-up-blocker-mm3scphqdyd
-excerpt: >-
-  Are you tired of annoying pop-ups and intrusive ads disrupting your online
-  experience? Look no further than a reliable Chrome pop up blocker. In this
-  comprehens
+excerpt: "Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a reliable Chrome pop up blocker."
 featured_image: >-
   /content/images/unlock-the-power-of-a-seamless-browsing-experience-the-ultimate-guide-to-chrome-pop-up-blocker-mm3scphqdyd/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - chrome pop up blocker
-meta_description: >-
-  Are you tired of annoying pop-ups and intrusive ads disrupting your online
-  experience? Look no further than a reliable Chrome pop up blocker. In this
-  comprehens
+meta_description: "Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a reliable Chrome pop up blocker."
 status: published
 published_at: '2026-03-24T08:00:00.56+00:00'
 scheduled_at: '2026-03-24T08:00:00+00:00'
@@ -29,6 +23,7 @@ views: 1
 read_time: 5
 created_at: '2026-02-26T18:17:22.868786+00:00'
 updated_at: '2026-04-18T18:40:20.946298+00:00'
+description: "Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a reliable Chrome pop up blocker."
 ---
 
 <img src="/content/images/unlock-the-power-of-a-seamless-browsing-experience-the-ultimate-guide-to-chrome-pop-up-blocker-mm3scphqdyd/featured.webp" alt="Unlock the Power of a Seamless Browsing Experience: The Ultimate Guide to Chrome Pop Up Blocker" width="1200" height="630" loading="lazy" class="featured-image">

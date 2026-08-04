@@ -6,20 +6,14 @@ title: >-
   Browser Performance
 slug: fix-chrome-freezing-with-many-tabs-optimizing-your-browser-performance
   fix-chrome-freezing-with-many-tabs-a-comprehensive-guide-to-optimizing-your-browser-performance-mmthx9outvp
-excerpt: >-
-  Are you tired of experiencing Chrome freezing with many tabs open? You're not
-  alone. Many users face this issue, which can be frustrating and hinder
-  productivit
+excerpt: "Are you tired of experiencing Chrome freezing with many tabs open? You're not alone."
 featured_image: >-
   /content/images/fix-chrome-freezing-with-many-tabs-a-comprehensive-guide-to-optimizing-your-browser-performance-mmthx9outvp/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - fix chrome freezing with many tabs
-meta_description: >-
-  Are you tired of experiencing Chrome freezing with many tabs open? You're not
-  alone. Many users face this issue, which can be frustrating and hinder
-  productivit
+meta_description: "Are you tired of experiencing Chrome freezing with many tabs open? You're not alone."
 status: published
 published_at: '2026-03-22T08:00:01.683+00:00'
 scheduled_at: '2026-03-22T08:00:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 4
 created_at: '2026-03-16T18:07:26.440458+00:00'
 updated_at: '2026-04-18T18:39:59.913564+00:00'
+description: "Are you tired of experiencing Chrome freezing with many tabs open? You're not alone."
 ---
 
 <img src="/content/images/fix-chrome-freezing-with-many-tabs-a-comprehensive-guide-to-optimizing-your-browser-performance-mmthx9outvp/featured.webp" alt="Fix Chrome Freezing with Many Tabs: A Comprehensive Guide to Optimizing Your Browser Performance" width="1200" height="630" loading="lazy" class="featured-image">

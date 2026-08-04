@@ -5,19 +5,13 @@ title: >-
   Mastering Chrome Extensions: A Comprehensive Guide to "extension regle chrome"
   and Beyond
 slug: extension-regle-chrome-9
-excerpt: >-
-  Welcome to the world of Chrome extensions, where you can enhance your browsing
-  experience with a wide range of tools and features. In this article, we'll
-  delve
+excerpt: "Welcome to the world of Chrome extensions, where you can enhance your browsing experience with a wide range of tools and features."
 featured_image: /content/images/extension-regle-chrome-9/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension regle chrome
-meta_description: >-
-  Welcome to the world of Chrome extensions, where you can enhance your browsing
-  experience with a wide range of tools and features. In this article, we'll
-  delve
+meta_description: "Welcome to the world of Chrome extensions, where you can enhance your browsing experience with a wide range of tools and features."
 status: published
 published_at: '2026-02-04T08:11:00.958+00:00'
 scheduled_at: '2026-02-04T08:11:00+00:00'
@@ -27,6 +21,7 @@ views: 2
 read_time: 5
 created_at: '2026-01-24T18:21:52.919124+00:00'
 updated_at: '2026-04-23T12:26:19.995764+00:00'
+description: "Welcome to the world of Chrome extensions, where you can enhance your browsing experience with a wide range of tools and features."
 ---
 
 <img src="/content/images/extension-regle-chrome-9/featured.webp" alt="Mastering Chrome Extensions: A Comprehensive Guide to &quot;extension regle chrome&quot; and Beyond" width="1200" height="630" loading="lazy" class="featured-image">

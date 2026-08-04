@@ -6,20 +6,14 @@ title: >-
   Downloads
 slug: >-
   boost-your-browsing-experience-with-the-best-chrome-extension-for-faster-downloads-mmdupfqejgi
-excerpt: >-
-  Are you tired of waiting for what feels like an eternity for your files to
-  download? Do you find yourself frustrated with slow download speeds,
-  especially when
+excerpt: "Are you tired of waiting for what feels like an eternity for your files to download?"
 featured_image: >-
   /content/images/boost-your-browsing-experience-with-the-best-chrome-extension-for-faster-downloads-mmdupfqejgi/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - chrome extension for faster downloads
-meta_description: >-
-  Are you tired of waiting for what feels like an eternity for your files to
-  download? Do you find yourself frustrated with slow download speeds,
-  especially when
+meta_description: "Are you tired of waiting for what feels like an eternity for your files to download?"
 status: published
 published_at: '2026-04-17T22:15:00.495+00:00'
 scheduled_at: '2026-04-17T22:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-05T19:20:57.888383+00:00'
 updated_at: '2026-04-23T12:25:37.67+00:00'
+description: "Are you tired of waiting for what feels like an eternity for your files to download?"
 ---
 
 <img src="/content/images/boost-your-browsing-experience-with-the-best-chrome-extension-for-faster-downloads-mmdupfqejgi/featured.webp" alt="Boost Your Browsing Experience with the Best Chrome Extension for Faster Downloads" width="1200" height="630" loading="lazy" class="featured-image">

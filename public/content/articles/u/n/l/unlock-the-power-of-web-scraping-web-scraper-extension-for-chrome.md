@@ -6,20 +6,14 @@ title: >-
   for Chrome
 slug: unlock-the-power-of-web-scraping-web-scraper-extension-for-chrome
   unlock-the-power-of-web-scraping-the-ultimate-guide-to-web-scraper-extension-for-chrome-mmtm0gozela
-excerpt: >-
-  Are you tired of manually extracting data from websites? Look no further! A
-  web scraper extension for Chrome can revolutionize the way you collect and
-  analyze d
+excerpt: "Are you tired of manually extracting data from websites? Look no further!"
 featured_image: >-
   /content/images/unlock-the-power-of-web-scraping-the-ultimate-guide-to-web-scraper-extension-for-chrome-mmtm0gozela/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - web scraper extension for chrome
-meta_description: >-
-  Are you tired of manually extracting data from websites? Look no further! A
-  web scraper extension for Chrome can revolutionize the way you collect and
-  analyze d
+meta_description: "Are you tired of manually extracting data from websites? Look no further!"
 status: published
 published_at: '2026-04-05T18:15:01.009+00:00'
 scheduled_at: '2026-04-05T18:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-16T20:01:53.693559+00:00'
 updated_at: '2026-04-23T12:20:46.98576+00:00'
+description: "Are you tired of manually extracting data from websites? Look no further!"
 ---
 
 <img src="/content/images/unlock-the-power-of-web-scraping-the-ultimate-guide-to-web-scraper-extension-for-chrome-mmtm0gozela/featured.webp" alt="Unlock the Power of Web Scraping: The Ultimate Guide to Web Scraper Extension for Chrome" width="1200" height="630" loading="lazy" class="featured-image">

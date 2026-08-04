@@ -6,20 +6,14 @@ title: >-
   Performance
 slug: a-tab-suspender-extension-that-frees-up-ram
   discover-the-best-extension-to-suspend-tabs-and-boost-your-browsers-performance-mmtizxlm6h1
-excerpt: >-
-  Are you tired of dealing with slow browser performance due to an excessive
-  number of open tabs? Look no further! In this article, we'll explore the best
-  extensi
+excerpt: "Are you tired of dealing with slow browser performance due to an excessive number of open tabs? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-extension-to-suspend-tabs-and-boost-your-browsers-performance-mmtizxlm6h1/featured.webp
 category: Productivity
 tags: []
 keywords:
   - best extension to suspend tabs
-meta_description: >-
-  Are you tired of dealing with slow browser performance due to an excessive
-  number of open tabs? Look no further! In this article, we'll explore the best
-  extensi
+meta_description: "Are you tired of dealing with slow browser performance due to an excessive number of open tabs? Look no further!"
 status: published
 published_at: '2026-03-24T08:00:00.495+00:00'
 scheduled_at: '2026-03-24T08:00:00+00:00'
@@ -29,6 +23,7 @@ views: 1
 read_time: 5
 created_at: '2026-03-16T18:37:30.202768+00:00'
 updated_at: '2026-04-23T12:25:09.512021+00:00'
+description: "Are you tired of dealing with slow browser performance due to an excessive number of open tabs? Look no further!"
 ---
 
 <img src="/content/images/discover-the-best-extension-to-suspend-tabs-and-boost-your-browsers-performance-mmtizxlm6h1/featured.webp" alt="Discover the Best Extension to Suspend Tabs and Boost Your Browser's Performance" width="1200" height="630" loading="lazy" class="featured-image">

@@ -6,20 +6,14 @@ title: >-
   Chrome Addon Android
 slug: unlock-the-power-of-ad-blocking-on-android
   unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android-mm3scnuyzcs
-excerpt: >-
-  Are you tired of annoying ads disrupting your browsing experience on your
-  Android device? Look no further than the Light Popup Blocker Chrome extension,
-  a power
+excerpt: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 featured_image: >-
   /content/images/unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android-mm3scnuyzcs/featured.webp
 category: Appearance & Themes
 tags: []
 keywords:
   - adblock chrome addon android
-meta_description: >-
-  Are you tired of annoying ads disrupting your browsing experience on your
-  Android device? Look no further than the Light Popup Blocker Chrome extension,
-  a power
+meta_description: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 status: published
 published_at: '2026-03-13T09:00:02.434+00:00'
 scheduled_at: '2026-03-13T09:00:00+00:00'
@@ -29,6 +23,7 @@ views: 1
 read_time: 4
 created_at: '2026-02-26T18:17:20.751965+00:00'
 updated_at: '2026-04-06T11:39:09.323133+00:00'
+description: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 ---
 
 <img src="/content/images/unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android-mm3scnuyzcs/featured.webp" alt="Unlock the Power of Ad Blocking on Android: A Comprehensive Guide to Adblock Chrome Addon Android" width="1200" height="630" loading="lazy" class="featured-image">

@@ -6,20 +6,14 @@ title: >-
   Saving
 slug: an-image-downloader-extension-for-chrome
   discover-the-best-image-downloader-chrome-extension-for-effortless-image-saving-mmtvrb6wws4
-excerpt: >-
-  Are you tired of manually saving images from websites, one by one? Look no
-  further! The best image downloader Chrome extension can simplify your life and
-  make i
+excerpt: "Are you tired of manually saving images from websites, one by one? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-image-downloader-chrome-extension-for-effortless-image-saving-mmtvrb6wws4/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - best image downloader chrome
-meta_description: >-
-  Are you tired of manually saving images from websites, one by one? Look no
-  further! The best image downloader Chrome extension can simplify your life and
-  make i
+meta_description: "Are you tired of manually saving images from websites, one by one? Look no further!"
 status: published
 published_at: '2026-04-04T18:15:00.514+00:00'
 scheduled_at: '2026-04-04T18:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-17T00:34:43.034252+00:00'
 updated_at: '2026-04-23T12:20:45.125925+00:00'
+description: "Are you tired of manually saving images from websites, one by one? Look no further!"
 ---
 
 <img src="/content/images/discover-the-best-image-downloader-chrome-extension-for-effortless-image-saving-mmtvrb6wws4/featured.webp" alt="Discover the Best Image Downloader Chrome Extension for Effortless Image Saving" width="1200" height="630" loading="lazy" class="featured-image">

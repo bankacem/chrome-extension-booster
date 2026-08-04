@@ -6,20 +6,14 @@ title: >-
   Download Management
 slug: is-there-an-idm-extension-for-chrome-android-to-download-management
   is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management-mmb6y4ldz8f
-excerpt: >-
-  When it comes to managing downloads on Android devices, users often wonder is
-  there an IDM extension for Chrome Android? Internet Download Manager (IDM) is
-  a po
+excerpt: "When it comes to managing downloads on Android devices, users often wonder is there an IDM extension for Chrome Android?"
 featured_image: >-
   /content/images/is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management-mmb6y4ldz8f/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - Is there an IDM extension for Chrome Android?
-meta_description: >-
-  When it comes to managing downloads on Android devices, users often wonder is
-  there an IDM extension for Chrome Android? Internet Download Manager (IDM) is
-  a po
+meta_description: "When it comes to managing downloads on Android devices, users often wonder is there an IDM extension for Chrome Android?"
 status: published
 published_at: '2026-03-13T05:00:00.618+00:00'
 scheduled_at: '2026-03-13T05:00:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-03T22:40:20.705362+00:00'
 updated_at: '2026-03-16T14:42:49.378342+00:00'
+description: "When it comes to managing downloads on Android devices, users often wonder is there an IDM extension for Chrome Android?"
 ---
 
 <img src="/content/images/is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management-mmb6y4ldz8f/featured.webp" alt="Is there an IDM extension for Chrome Android? A Comprehensive Guide to Download Management" width="1200" height="630" loading="lazy" class="featured-image">

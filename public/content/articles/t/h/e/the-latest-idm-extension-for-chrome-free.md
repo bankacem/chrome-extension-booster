@@ -6,20 +6,14 @@ title: >-
   Version
 slug: the-latest-idm-extension-for-chrome-free
   unlock-faster-downloads-with-idm-extension-for-chrome-free-download-latest-version-mmb6y473kzg
-excerpt: >-
-  Are you tired of slow download speeds and interrupted files? Look no further
-  than the IDM extension for Chrome free download latest version. This powerful
-  tool
+excerpt: "Are you tired of slow download speeds and interrupted files? Look no further than the IDM extension for Chrome free download latest version."
 featured_image: >-
   /content/images/unlock-faster-downloads-with-idm-extension-for-chrome-free-download-latest-version-mmb6y473kzg/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - IDM extension for Chrome free download latest version
-meta_description: >-
-  Are you tired of slow download speeds and interrupted files? Look no further
-  than the IDM extension for Chrome free download latest version. This powerful
-  tool
+meta_description: "Are you tired of slow download speeds and interrupted files? Look no further than the IDM extension for Chrome free download latest version."
 status: published
 published_at: '2026-03-10T05:00:00.264+00:00'
 scheduled_at: '2026-03-10T05:00:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-03T22:40:20.210247+00:00'
 updated_at: '2026-04-23T12:25:59.945982+00:00'
+description: "Are you tired of slow download speeds and interrupted files? Look no further than the IDM extension for Chrome free download latest version."
 ---
 
 <img src="/content/images/unlock-faster-downloads-with-idm-extension-for-chrome-free-download-latest-version-mmb6y473kzg/featured.webp" alt="Unlock Faster Downloads with IDM Extension for Chrome Free Download Latest Version" width="1200" height="630" loading="lazy" class="featured-image">

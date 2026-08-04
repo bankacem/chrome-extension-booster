@@ -6,20 +6,14 @@ title: >-
   On Chrome
 slug: unlocking-the-power-of-online-privacy-ghostery-add-on-chrome
   unlocking-the-power-of-online-privacy-a-comprehensive-guide-to-ghostery-add-on-chrome-mm3scm95f3h
-excerpt: >-
-  Are you concerned about your online privacy and security while browsing the
-  internet? With the rise of digital tracking and data collection, it's
-  essential to t
+excerpt: "Are you concerned about your online privacy and security while browsing the internet?"
 featured_image: >-
   /content/images/unlocking-the-power-of-online-privacy-a-comprehensive-guide-to-ghostery-add-on-chrome-mm3scm95f3h/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - ghostery add on chrome
-meta_description: >-
-  Are you concerned about your online privacy and security while browsing the
-  internet? With the rise of digital tracking and data collection, it's
-  essential to t
+meta_description: "Are you concerned about your online privacy and security while browsing the internet?"
 status: published
 published_at: '2026-03-03T16:45:41.362+00:00'
 scheduled_at: null
@@ -29,6 +23,7 @@ views: 6
 read_time: 5
 created_at: '2026-02-26T18:17:18.674111+00:00'
 updated_at: '2026-04-23T12:26:05.403903+00:00'
+description: "Are you concerned about your online privacy and security while browsing the internet?"
 ---
 
 <img src="/content/images/unlocking-the-power-of-online-privacy-a-comprehensive-guide-to-ghostery-add-on-chrome-mm3scm95f3h/featured.webp" alt="Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery Add On Chrome" width="1200" height="630" loading="lazy" class="featured-image">

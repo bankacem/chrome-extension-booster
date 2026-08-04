@@ -6,20 +6,14 @@ title: >-
   Manage Chrome Extensions
 slug: mastering-the-art-of-browser-productivity
   mastering-the-art-of-browser-productivity-a-comprehensive-guide-on-how-to-manage-chrome-extensions-mmdrxy6vrty
-excerpt: >-
-  Are you tired of feeling overwhelmed by the numerous Chrome extensions
-  installed on your browser? Do you struggle to keep track of which ones are
-  useful and whi
+excerpt: "Are you tired of feeling overwhelmed by the numerous Chrome extensions installed on your browser?"
 featured_image: >-
   /content/images/mastering-the-art-of-browser-productivity-a-comprehensive-guide-on-how-to-manage-chrome-extensions-mmdrxy6vrty/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - how to manage chrome extensions
-meta_description: >-
-  Are you tired of feeling overwhelmed by the numerous Chrome extensions
-  installed on your browser? Do you struggle to keep track of which ones are
-  useful and whi
+meta_description: "Are you tired of feeling overwhelmed by the numerous Chrome extensions installed on your browser?"
 status: published
 published_at: '2026-04-23T02:15:01.755+00:00'
 scheduled_at: '2026-04-23T02:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 7
 created_at: '2026-03-05T18:03:36.303175+00:00'
 updated_at: '2026-04-23T12:25:53.067625+00:00'
+description: "Are you tired of feeling overwhelmed by the numerous Chrome extensions installed on your browser?"
 ---
 
 <img src="/content/images/mastering-the-art-of-browser-productivity-a-comprehensive-guide-on-how-to-manage-chrome-extensions-mmdrxy6vrty/featured.webp" alt="Mastering the Art of Browser Productivity: A Comprehensive Guide on How to Manage Chrome Extensions" width="1200" height="630" loading="lazy" class="featured-image">

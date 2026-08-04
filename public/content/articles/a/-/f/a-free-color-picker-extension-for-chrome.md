@@ -4,20 +4,14 @@ id: 17a67b02-b714-47d9-8798-61e1060d0b0c
 title: Unlock the Power of Color with the Best Color Picker Chrome Extension Free
 slug: a-free-color-picker-extension-for-chrome
   unlock-the-power-of-color-with-the-best-color-picker-chrome-extension-free-mmtm0ezx77j
-excerpt: >-
-  Are you a web designer, developer, or digital artist looking for a reliable
-  and efficient way to pick colors for your projects? Look no further than a
-  color pic
+excerpt: "Are you a web designer, developer, or digital artist looking for a reliable and efficient way to pick colors for your projects?"
 featured_image: >-
   /content/images/unlock-the-power-of-color-with-the-best-color-picker-chrome-extension-free-mmtm0ezx77j/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - color picker chrome extension free
-meta_description: >-
-  Are you a web designer, developer, or digital artist looking for a reliable
-  and efficient way to pick colors for your projects? Look no further than a
-  color pic
+meta_description: "Are you a web designer, developer, or digital artist looking for a reliable and efficient way to pick colors for your projects?"
 status: published
 published_at: '2026-04-07T10:15:00.386+00:00'
 scheduled_at: '2026-04-07T10:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-16T20:01:51.558081+00:00'
 updated_at: '2026-04-18T18:39:44.371111+00:00'
+description: "Are you a web designer, developer, or digital artist looking for a reliable and efficient way to pick colors for your projects?"
 ---
 
 <img src="/content/images/unlock-the-power-of-color-with-the-best-color-picker-chrome-extension-free-mmtm0ezx77j/featured.webp" alt="Unlock the Power of Color with the Best Color Picker Chrome Extension Free" width="1200" height="630" loading="lazy" class="featured-image">

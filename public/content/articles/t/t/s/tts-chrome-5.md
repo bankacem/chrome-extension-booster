@@ -5,19 +5,13 @@ title: >-
   Unlock the Power of Text-to-Speech: A Comprehensive Guide to TTS Chrome
   Extensions
 slug: tts-chrome-5
-excerpt: >-
-  Welcome to the world of text-to-speech (TTS) technology, where the boundaries
-  of reading and listening are blurred. With the rise of TTS Chrome extensions,
-  user
+excerpt: "Welcome to the world of text-to-speech (TTS) technology, where the boundaries of reading and listening are blurred."
 featured_image: /content/images/tts-chrome-5/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - tts chrome
-meta_description: >-
-  Welcome to the world of text-to-speech (TTS) technology, where the boundaries
-  of reading and listening are blurred. With the rise of TTS Chrome extensions,
-  user
+meta_description: "Welcome to the world of text-to-speech (TTS) technology, where the boundaries of reading and listening are blurred."
 status: published
 published_at: '2026-02-09T20:11:01.943+00:00'
 scheduled_at: '2026-02-09T20:11:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 4
 created_at: '2026-01-24T14:11:51.700914+00:00'
 updated_at: '2026-04-23T12:26:52.545921+00:00'
+description: "Welcome to the world of text-to-speech (TTS) technology, where the boundaries of reading and listening are blurred."
 ---
 
 <img src="/content/images/tts-chrome-5/featured.webp" alt="Unlock the Power of Text-to-Speech: A Comprehensive Guide to TTS Chrome Extensions" width="1200" height="630" loading="lazy" class="featured-image">

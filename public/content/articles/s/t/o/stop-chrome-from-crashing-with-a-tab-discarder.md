@@ -6,20 +6,14 @@ title: >-
   Stability
 slug: stop-chrome-from-crashing-with-a-tab-discarder
   prevent-chrome-from-crashing-with-tab-discarder-boost-browser-performance-and-stability-mll9btbql7m
-excerpt: >-
-  Google Chrome is one of the most widely used web browsers, known for its
-  speed, simplicity, and extensive library of extensions. However, with multiple
-  tabs ope
+excerpt: "Google Chrome is one of the most widely used web browsers, known for its speed, simplicity, and extensive library of extensions."
 featured_image: >-
   /content/images/prevent-chrome-from-crashing-with-tab-discarder-boost-browser-performance-and-stability-mll9btbql7m/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - Prevent Chrome from crashing with tab discarder
-meta_description: >-
-  Google Chrome is one of the most widely used web browsers, known for its
-  speed, simplicity, and extensive library of extensions. However, with multiple
-  tabs ope
+meta_description: "Google Chrome is one of the most widely used web browsers, known for its speed, simplicity, and extensive library of extensions."
 status: published
 published_at: '2026-03-02T09:00:01.232+00:00'
 scheduled_at: '2026-03-02T09:00:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-02-13T19:04:57.526272+00:00'
 updated_at: '2026-04-23T12:26:06.823065+00:00'
+description: "Google Chrome is one of the most widely used web browsers, known for its speed, simplicity, and extensive library of extensions."
 ---
 
 <img src="/content/images/prevent-chrome-from-crashing-with-tab-discarder-boost-browser-performance-and-stability-mll9btbql7m/featured.webp" alt="Prevent Chrome from Crashing with Tab Discarder: Boost Browser Performance and Stability" width="1200" height="630" loading="lazy" class="featured-image">

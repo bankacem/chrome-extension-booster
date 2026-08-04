@@ -5,19 +5,13 @@ title: >-
   Unlocking the Power of Color with Chrome Extensions: A Comprehensive Guide to
   Extension Chrome Color
 slug: extension-chrome-color-2
-excerpt: >-
-  When it comes to customizing your browsing experience, few things can make as
-  big of an impact as the colors you surround yourself with. This is where the
-  conce
+excerpt: "When it comes to customizing your browsing experience, few things can make as big of an impact as the colors you surround yourself with."
 featured_image: /content/images/extension-chrome-color-2/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome color
-meta_description: >-
-  When it comes to customizing your browsing experience, few things can make as
-  big of an impact as the colors you surround yourself with. This is where the
-  conce
+meta_description: "When it comes to customizing your browsing experience, few things can make as big of an impact as the colors you surround yourself with."
 status: published
 published_at: '2026-05-13T10:15:02.908+00:00'
 scheduled_at: '2026-05-13T10:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-27T14:38:07.497563+00:00'
 updated_at: '2026-05-13T10:15:03.007671+00:00'
+description: "When it comes to customizing your browsing experience, few things can make as big of an impact as the colors you surround yourself with."
 ---
 
 <img src="/content/images/extension-chrome-color-2/featured.webp" alt="Unlocking the Power of Color with Chrome Extensions: A Comprehensive Guide to Extension Chrome Color" width="1200" height="630" loading="lazy" class="featured-image">

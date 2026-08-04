@@ -4,20 +4,14 @@ id: b8823081-d69e-4088-9c49-873be63f769d
 title: 'Streamlining Your Workflow: The Best Chrome Extension for Bulk Downloads'
 slug: >-
   streamlining-your-workflow-the-best-chrome-extension-for-bulk-downloads-mmdupgkigzv
-excerpt: >-
-  Are you tired of downloading files one by one, wasting precious time and
-  energy? Look no further! A Chrome extension for bulk downloads can
-  revolutionize your w
+excerpt: "Are you tired of downloading files one by one, wasting precious time and energy? Look no further!"
 featured_image: >-
   /content/images/streamlining-your-workflow-the-best-chrome-extension-for-bulk-downloads-mmdupgkigzv/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - chrome extension for bulk downloads
-meta_description: >-
-  Are you tired of downloading files one by one, wasting precious time and
-  energy? Look no further! A Chrome extension for bulk downloads can
-  revolutionize your w
+meta_description: "Are you tired of downloading files one by one, wasting precious time and energy? Look no further!"
 status: published
 published_at: '2026-04-16T22:15:00.339+00:00'
 scheduled_at: '2026-04-16T22:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-05T19:20:58.957011+00:00'
 updated_at: '2026-04-23T12:25:35.163612+00:00'
+description: "Are you tired of downloading files one by one, wasting precious time and energy? Look no further!"
 ---
 
 <img src="/content/images/streamlining-your-workflow-the-best-chrome-extension-for-bulk-downloads-mmdupgkigzv/featured.webp" alt="Streamlining Your Workflow: The Best Chrome Extension for Bulk Downloads" width="1200" height="630" loading="lazy" class="featured-image">

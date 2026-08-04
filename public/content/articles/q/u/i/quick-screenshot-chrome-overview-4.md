@@ -3,19 +3,13 @@ seo_title: "Quick Screenshot Chrome Overview"
 id: 19ebf196-6cc5-4b46-831f-74655bf4f0b7
 title: 'Quick Screenshot Chrome Overview: A Comprehensive Guide to Capturing Web Pages'
 slug: quick-screenshot-chrome-overview-4
-excerpt: >-
-  When it comes to capturing web pages, a Quick Screenshot Chrome Overview is
-  essential for anyone looking to efficiently save and share online content.
-  With the
+excerpt: "When it comes to capturing web pages, a Quick Screenshot Chrome Overview is essential for anyone looking to efficiently save and share online content."
 featured_image: /content/images/quick-screenshot-chrome-overview-4/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - Quick Screenshot Chrome Overview
-meta_description: >-
-  When it comes to capturing web pages, a Quick Screenshot Chrome Overview is
-  essential for anyone looking to efficiently save and share online content.
-  With the
+meta_description: "When it comes to capturing web pages, a Quick Screenshot Chrome Overview is essential for anyone looking to efficiently save and share online content."
 status: published
 published_at: '2026-02-22T15:29:58.396+00:00'
 scheduled_at: null
@@ -25,6 +19,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-21T18:56:49.997086+00:00'
 updated_at: '2026-03-16T14:43:16.464147+00:00'
+description: "When it comes to capturing web pages, a Quick Screenshot Chrome Overview is essential for anyone looking to efficiently save and share online content."
 ---
 
 <img src="/content/images/quick-screenshot-chrome-overview-4/featured.webp" alt="Quick Screenshot Chrome Overview: A Comprehensive Guide to Capturing Web Pages" width="1200" height="630" loading="lazy" class="featured-image">

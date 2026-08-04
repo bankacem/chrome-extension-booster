@@ -3,19 +3,13 @@ seo_title: "How to Install an Extension to Chrome Android"
 id: 6345ad6c-5064-479f-a2a7-b869a303dfe3
 title: 'How to Install an Extension to Chrome Android: A Step-by-Step Guide'
 slug: extension-to-chrome-android-9
-excerpt: >-
-  Are you looking to enhance your browsing experience on your Android device
-  with the help of a Chrome extension to Chrome Android? With the vast array of
-  extensi
+excerpt: "Are you looking to enhance your browsing experience on your Android device with the help of a Chrome extension to Chrome Android?"
 featured_image: /content/images/extension-to-chrome-android-9/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension to chrome android
-meta_description: >-
-  Are you looking to enhance your browsing experience on your Android device
-  with the help of a Chrome extension to Chrome Android? With the vast array of
-  extensi
+meta_description: "Are you looking to enhance your browsing experience on your Android device with the help of a Chrome extension to Chrome Android?"
 status: published
 published_at: '2026-02-11T14:11:02.177+00:00'
 scheduled_at: '2026-02-11T14:11:00+00:00'
@@ -25,6 +19,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-24T13:04:15.105262+00:00'
 updated_at: '2026-04-23T12:26:59.019329+00:00'
+description: "Are you looking to enhance your browsing experience on your Android device with the help of a Chrome extension to Chrome Android?"
 ---
 
 <img src="/content/images/extension-to-chrome-android-9/featured.webp" alt="How to Install an Extension to Chrome Android: A Step-by-Step Guide" width="1200" height="630" loading="lazy" class="featured-image">

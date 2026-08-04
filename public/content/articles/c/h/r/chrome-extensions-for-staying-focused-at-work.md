@@ -4,20 +4,14 @@ id: ac088230-5d30-4e0e-afa4-175a88af6be4
 title: 'Boost Your Workflow: The Best Chrome Extensions for Focus and Productivity'
 slug: chrome-extensions-for-staying-focused-at-work
   boost-your-workflow-the-best-chrome-extensions-for-focus-and-productivity-mmdrqq4a7we
-excerpt: >-
-  Staying focused and productive in today's digital age can be a daunting task,
-  especially with the abundance of distractions available online. However, with
-  the
+excerpt: "Staying focused and productive in today's digital age can be a daunting task, especially with the abundance of distractions available online."
 featured_image: >-
   /content/images/boost-your-workflow-the-best-chrome-extensions-for-focus-and-productivity-mmdrqq4a7we/featured.webp
 category: Appearance & Themes
 tags: []
 keywords:
   - chrome extensions for focus and productivity
-meta_description: >-
-  Staying focused and productive in today's digital age can be a daunting task,
-  especially with the abundance of distractions available online. However, with
-  the
+meta_description: "Staying focused and productive in today's digital age can be a daunting task, especially with the abundance of distractions available online."
 status: published
 published_at: '2026-04-23T10:15:00.433+00:00'
 scheduled_at: '2026-04-23T10:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-05T17:57:59.146943+00:00'
 updated_at: '2026-04-23T12:25:54.084875+00:00'
+description: "Staying focused and productive in today's digital age can be a daunting task, especially with the abundance of distractions available online."
 ---
 
 <img src="/content/images/boost-your-workflow-the-best-chrome-extensions-for-focus-and-productivity-mmdrqq4a7we/featured.webp" alt="Boost Your Workflow: The Best Chrome Extensions for Focus and Productivity" width="1200" height="630" loading="lazy" class="featured-image">

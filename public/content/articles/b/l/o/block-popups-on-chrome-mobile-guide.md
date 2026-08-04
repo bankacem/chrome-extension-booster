@@ -6,20 +6,14 @@ title: >-
   Experience
 slug: block-popups-on-chrome-mobile-guide
   block-popups-on-chrome-mobile-guide-mastering-a-distraction-free-browsing-experience-mmtld2pmfet
-excerpt: >-
-  Are you tired of annoying popups interrupting your browsing experience on
-  Chrome mobile? Look no further! This comprehensive block popups on Chrome
-  mobile guide
+excerpt: "Are you tired of annoying popups interrupting your browsing experience on Chrome mobile? Look no further!"
 featured_image: >-
   /content/images/block-popups-on-chrome-mobile-guide-mastering-a-distraction-free-browsing-experience-mmtld2pmfet/featured.webp
 category: Productivity
 tags: []
 keywords:
   - block popups on chrome mobile guide
-meta_description: >-
-  Are you tired of annoying popups interrupting your browsing experience on
-  Chrome mobile? Look no further! This comprehensive block popups on Chrome
-  mobile guide
+meta_description: "Are you tired of annoying popups interrupting your browsing experience on Chrome mobile? Look no further!"
 status: published
 published_at: '2026-04-08T14:15:01.617+00:00'
 scheduled_at: '2026-04-08T14:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-16T19:43:42.52759+00:00'
 updated_at: '2026-04-18T18:39:49.95394+00:00'
+description: "Are you tired of annoying popups interrupting your browsing experience on Chrome mobile? Look no further!"
 ---
 
 <img src="/content/images/block-popups-on-chrome-mobile-guide-mastering-a-distraction-free-browsing-experience-mmtld2pmfet/featured.webp" alt="Block Popups on Chrome Mobile Guide: Mastering a Distraction-Free Browsing Experience" width="1200" height="630" loading="lazy" class="featured-image">

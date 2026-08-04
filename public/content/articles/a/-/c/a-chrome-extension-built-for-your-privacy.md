@@ -4,20 +4,14 @@ id: 8a37fee5-521f-4476-a69d-5ee89b4e61c4
 title: Enhance Your Online Security with the Best Chrome Extension to Protect Privacy
 slug: a-chrome-extension-built-for-your-privacy
   enhance-your-online-security-with-the-best-chrome-extension-to-protect-privacy-mmdzl1g2wkc
-excerpt: >-
-  As we navigate the vast expanse of the internet, our personal data and online
-  activities are constantly at risk of being compromised. With the ever-growing
-  thre
+excerpt: "As we navigate the vast expanse of the internet, our personal data and online activities are constantly at risk of being compromised."
 featured_image: >-
   /content/images/enhance-your-online-security-with-the-best-chrome-extension-to-protect-privacy-mmdzl1g2wkc/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - chrome extension to protect privacy
-meta_description: >-
-  As we navigate the vast expanse of the internet, our personal data and online
-  activities are constantly at risk of being compromised. With the ever-growing
-  thre
+meta_description: "As we navigate the vast expanse of the internet, our personal data and online activities are constantly at risk of being compromised."
 status: published
 published_at: '2026-04-13T10:15:01.417+00:00'
 scheduled_at: '2026-04-13T10:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-05T21:37:30.814915+00:00'
 updated_at: '2026-04-23T12:25:25.914718+00:00'
+description: "As we navigate the vast expanse of the internet, our personal data and online activities are constantly at risk of being compromised."
 ---
 
 <img src="/content/images/enhance-your-online-security-with-the-best-chrome-extension-to-protect-privacy-mmdzl1g2wkc/featured.webp" alt="Enhance Your Online Security with the Best Chrome Extension to Protect Privacy" width="1200" height="630" loading="lazy" class="featured-image">

@@ -3,19 +3,13 @@ seo_title: "The Power of Extension Auto Refresh Chrome"
 id: 0118ecd2-c0f6-4fb7-b3a8-df4490c6d701
 title: 'Unlocking Efficiency: The Power of Extension Auto Refresh Chrome'
 slug: unlocking-efficiency-the-power-of-extension-auto-refresh-chrome
-excerpt: >-
-  Are you tired of manually refreshing your browser tabs to stay updated with
-  the latest information? Look no further! The extension auto refresh chrome
-  feature i
+excerpt: "Are you tired of manually refreshing your browser tabs to stay updated with the latest information? Look no further!"
 featured_image: /content/images/extension-auto-refresh-chrome-mkzmtf3qb9z/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension auto refresh chrome
-meta_description: >-
-  Are you tired of manually refreshing your browser tabs to stay updated with
-  the latest information? Look no further! The extension auto refresh chrome
-  feature i
+meta_description: "Are you tired of manually refreshing your browser tabs to stay updated with the latest information? Look no further!"
 status: published
 published_at: '2026-05-05T06:15:00.418+00:00'
 scheduled_at: '2026-05-05T06:15:00+00:00'
@@ -25,6 +19,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-29T15:51:41.061754+00:00'
 updated_at: '2026-05-05T06:15:00.508763+00:00'
+description: "Are you tired of manually refreshing your browser tabs to stay updated with the latest information? Look no further!"
 ---
 
 <img src="/content/images/extension-auto-refresh-chrome-mkzmtf3qb9z/featured.webp" alt="Unlocking Efficiency: The Power of Extension Auto Refresh Chrome" width="1200" height="630" loading="lazy" class="featured-image">

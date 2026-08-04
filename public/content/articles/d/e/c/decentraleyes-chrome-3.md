@@ -3,19 +3,13 @@ seo_title: "Decentraleyes for Chrome: Online Security"
 id: 12810735-9b75-4877-b174-55510ffbb3f3
 title: 'Empowering Online Security: Unleashing the Potential of Decentraleyes Chrome'
 slug: decentraleyes-chrome-3
-excerpt: >-
-  As the digital landscape continues to evolve, the importance of online
-  security and privacy has never been more pressing. One tool that has been
-  gaining attenti
+excerpt: "As the digital landscape continues to evolve, the importance of online security and privacy has never been more pressing."
 featured_image: /content/images/decentraleyes-chrome-3/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - decentraleyes chrome
-meta_description: >-
-  As the digital landscape continues to evolve, the importance of online
-  security and privacy has never been more pressing. One tool that has been
-  gaining attenti
+meta_description: "As the digital landscape continues to evolve, the importance of online security and privacy has never been more pressing."
 status: published
 published_at: '2026-05-17T18:15:00.298+00:00'
 scheduled_at: '2026-05-17T18:15:00+00:00'
@@ -25,6 +19,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-27T13:52:09.293441+00:00'
 updated_at: '2026-05-17T18:15:00.3661+00:00'
+description: "As the digital landscape continues to evolve, the importance of online security and privacy has never been more pressing."
 ---
 
 <img src="/content/images/decentraleyes-chrome-3/featured.webp" alt="Empowering Online Security: Unleashing the Potential of Decentraleyes Chrome" width="1200" height="630" loading="lazy" class="featured-image">

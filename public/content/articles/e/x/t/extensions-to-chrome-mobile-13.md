@@ -3,19 +3,13 @@ seo_title: "Extensions to Chrome Mobile"
 id: 6682a03d-b889-4b50-afca-c2101e8be683
 title: 'Unlock the Full Potential of Your Browser: Extensions to Chrome Mobile'
 slug: extensions-to-chrome-mobile-13
-excerpt: >-
-  Are you tired of using a limited browser on your mobile device? Look no
-  further! With extensions to Chrome mobile, you can enhance your browsing
-  experience and
+excerpt: "Are you tired of using a limited browser on your mobile device? Look no further!"
 featured_image: /content/images/extensions-to-chrome-mobile-13/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extensions to chrome mobile
-meta_description: >-
-  Are you tired of using a limited browser on your mobile device? Look no
-  further! With extensions to Chrome mobile, you can enhance your browsing
-  experience and
+meta_description: "Are you tired of using a limited browser on your mobile device? Look no further!"
 status: published
 published_at: '2026-02-14T02:11:00.786+00:00'
 scheduled_at: '2026-02-14T02:11:00+00:00'
@@ -25,6 +19,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-24T12:58:26.316291+00:00'
 updated_at: '2026-04-23T12:27:17.448783+00:00'
+description: "Are you tired of using a limited browser on your mobile device? Look no further!"
 ---
 
 <img src="/content/images/extensions-to-chrome-mobile-13/featured.webp" alt="Unlock the Full Potential of Your Browser: Extensions to Chrome Mobile" width="1200" height="630" loading="lazy" class="featured-image">

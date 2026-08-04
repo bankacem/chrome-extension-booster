@@ -6,20 +6,14 @@ title: >-
   Comprehensive Guide
 slug: boosting-productivity-with-light-browser-extensions-for-slow-pc
   boosting-productivity-with-light-browser-extensions-for-slow-pc-a-comprehensive-guide-mmtizxgfmd1
-excerpt: >-
-  Are you tired of using a slow PC that hinders your productivity? One of the
-  primary reasons for a slow computer is a resource-intensive browser. However,
-  with t
+excerpt: "Are you tired of using a slow PC that hinders your productivity? One of the primary reasons for a slow computer is a resource-intensive browser."
 featured_image: >-
   /content/images/boosting-productivity-with-light-browser-extensions-for-slow-pc-a-comprehensive-guide-mmtizxgfmd1/featured.webp
 category: Productivity
 tags: []
 keywords:
   - light browser extensions for slow pc
-meta_description: >-
-  Are you tired of using a slow PC that hinders your productivity? One of the
-  primary reasons for a slow computer is a resource-intensive browser. However,
-  with t
+meta_description: "Are you tired of using a slow PC that hinders your productivity? One of the primary reasons for a slow computer is a resource-intensive browser."
 status: published
 published_at: '2026-03-23T08:00:01.407+00:00'
 scheduled_at: '2026-03-23T08:00:00+00:00'
@@ -29,6 +23,7 @@ views: 1
 read_time: 5
 created_at: '2026-03-16T18:37:30.022715+00:00'
 updated_at: '2026-04-23T12:25:09.669993+00:00'
+description: "Are you tired of using a slow PC that hinders your productivity? One of the primary reasons for a slow computer is a resource-intensive browser."
 ---
 
 <img src="/content/images/boosting-productivity-with-light-browser-extensions-for-slow-pc-a-comprehensive-guide-mmtizxgfmd1/featured.webp" alt="Boosting Productivity with Light Browser Extensions for Slow PC: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

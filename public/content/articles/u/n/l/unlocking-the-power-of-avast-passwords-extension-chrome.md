@@ -4,20 +4,14 @@ id: 613fbde0-b447-49c8-941e-2104d911f09d
 title: 'Unlocking the Power of Avast Passwords Extension Chrome: A Comprehensive Guide'
 slug: unlocking-the-power-of-avast-passwords-extension-chrome
   unlocking-the-power-of-avast-passwords-extension-chrome-a-comprehensive-guide-ml5gzz0lb9l
-excerpt: >-
-  Are you tired of juggling multiple passwords and struggling to remember them
-  all? Look no further than the Avast Passwords extension Chrome users swear by.
-  As a
+excerpt: "Are you tired of juggling multiple passwords and struggling to remember them all? Look no further than the Avast Passwords extension Chrome users swear by."
 featured_image: >-
   /content/images/unlocking-the-power-of-avast-passwords-extension-chrome-a-comprehensive-guide-ml5gzz0lb9l/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - avast passwords extension chrome
-meta_description: >-
-  Are you tired of juggling multiple passwords and struggling to remember them
-  all? Look no further than the Avast Passwords extension Chrome users swear by.
-  As a
+meta_description: "Are you tired of juggling multiple passwords and struggling to remember them all? Look no further than the Avast Passwords extension Chrome users swear by."
 status: published
 published_at: '2026-04-28T14:15:03.431+00:00'
 scheduled_at: '2026-04-28T14:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-02-02T17:55:31.623104+00:00'
 updated_at: '2026-04-28T14:15:03.532605+00:00'
+description: "Are you tired of juggling multiple passwords and struggling to remember them all? Look no further than the Avast Passwords extension Chrome users swear by."
 ---
 
 <img src="/content/images/unlocking-the-power-of-avast-passwords-extension-chrome-a-comprehensive-guide-ml5gzz0lb9l/featured.webp" alt="Unlocking the Power of Avast Passwords Extension Chrome: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

@@ -6,20 +6,14 @@ title: >-
   Slowing It Down
 slug: discover-the-best-chrome-extensions-under-1mb
   discover-the-best-chrome-extensions-under-1mb-boost-your-browser-without-slowing-it-down-mmdrqp3o64x
-excerpt: >-
-  When it comes to customizing your Chrome browser, extensions are a great way
-  to add new features and functionality. However, with so many options
-  available, it 
+excerpt: "When it comes to customizing your Chrome browser, extensions are a great way to add new features and functionality."
 featured_image: >-
   /content/images/discover-the-best-chrome-extensions-under-1mb-boost-your-browser-without-slowing-it-down-mmdrqp3o64x/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - chrome extensions under 1mb
-meta_description: >-
-  When it comes to customizing your Chrome browser, extensions are a great way
-  to add new features and functionality. However, with so many options
-  available, it 
+meta_description: "When it comes to customizing your Chrome browser, extensions are a great way to add new features and functionality."
 status: published
 published_at: '2026-04-24T14:15:00.544+00:00'
 scheduled_at: '2026-04-24T14:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 4
 created_at: '2026-03-05T17:57:57.852699+00:00'
 updated_at: '2026-04-24T15:23:55.277691+00:00'
+description: "When it comes to customizing your Chrome browser, extensions are a great way to add new features and functionality."
 ---
 
 <img src="/content/images/discover-the-best-chrome-extensions-under-1mb-boost-your-browser-without-slowing-it-down-mmdrqp3o64x/featured.webp" alt="Discover the Best Chrome Extensions Under 1MB: Boost Your Browser Without Slowing It Down" width="1200" height="630" loading="lazy" class="featured-image">

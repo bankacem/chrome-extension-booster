@@ -5,19 +5,13 @@ title: >-
   Unlocking the Power of Dualless Chrome: A Comprehensive Guide to Enhanced
   Browsing
 slug: dualless-chrome-7
-excerpt: >-
-  Are you tired of the limitations of traditional Chrome browsing? Do you want
-  to take your browsing experience to the next level? Look no further than
-  dualless c
+excerpt: "Are you tired of the limitations of traditional Chrome browsing? Do you want to take your browsing experience to the next level?"
 featured_image: /content/images/dualless-chrome-7/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - dualless chrome
-meta_description: >-
-  Are you tired of the limitations of traditional Chrome browsing? Do you want
-  to take your browsing experience to the next level? Look no further than
-  dualless c
+meta_description: "Are you tired of the limitations of traditional Chrome browsing? Do you want to take your browsing experience to the next level?"
 status: published
 published_at: '2026-05-15T14:15:00.437+00:00'
 scheduled_at: '2026-05-15T14:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-27T14:18:20.407546+00:00'
 updated_at: '2026-05-15T14:15:00.611644+00:00'
+description: "Are you tired of the limitations of traditional Chrome browsing? Do you want to take your browsing experience to the next level?"
 ---
 
 <img src="/content/images/dualless-chrome-7/featured.webp" alt="Unlocking the Power of Dualless Chrome: A Comprehensive Guide to Enhanced Browsing" width="1200" height="630" loading="lazy" class="featured-image">

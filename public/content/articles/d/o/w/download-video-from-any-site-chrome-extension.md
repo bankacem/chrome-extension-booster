@@ -4,20 +4,14 @@ id: 922d5ef5-986c-425d-862e-76fab7615efe
 title: 'Download Video from Any Site Chrome Extension: A Comprehensive Guide'
 slug: download-video-from-any-site-chrome-extension
   download-video-from-any-site-chrome-extension-a-comprehensive-guide-mmtvrahku1z
-excerpt: >-
-  With the vast amount of video content available online, it's no wonder that
-  many of us want to download our favorite videos for offline viewing. However,
-  not al
+excerpt: "With the vast amount of video content available online, it's no wonder that many of us want to download our favorite videos for offline viewing."
 featured_image: >-
   /content/images/download-video-from-any-site-chrome-extension-a-comprehensive-guide-mmtvrahku1z/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - download video from any site chrome extension
-meta_description: >-
-  With the vast amount of video content available online, it's no wonder that
-  many of us want to download our favorite videos for offline viewing. However,
-  not al
+meta_description: "With the vast amount of video content available online, it's no wonder that many of us want to download our favorite videos for offline viewing."
 status: published
 published_at: '2026-04-04T22:15:00.679+00:00'
 scheduled_at: '2026-04-04T22:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-17T00:34:42.280284+00:00'
 updated_at: '2026-04-23T12:20:45.534355+00:00'
+description: "With the vast amount of video content available online, it's no wonder that many of us want to download our favorite videos for offline viewing."
 ---
 
 <img src="/content/images/download-video-from-any-site-chrome-extension-a-comprehensive-guide-mmtvrahku1z/featured.webp" alt="Download Video from Any Site Chrome Extension: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

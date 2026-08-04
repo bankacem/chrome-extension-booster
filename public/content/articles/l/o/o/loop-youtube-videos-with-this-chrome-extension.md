@@ -6,20 +6,14 @@ title: >-
   Productivity and Focus
 slug: loop-youtube-videos-with-this-chrome-extension
   discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q
-excerpt: >-
-  Are you tired of manually replaying your favorite YouTube videos or loops?
-  Look no further! A Chrome extension to repeat YouTube videos can be a
-  game-changer fo
+excerpt: "Are you tired of manually replaying your favorite YouTube videos or loops? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q/featured.webp
 category: Appearance & Themes
 tags: []
 keywords:
   - chrome extension to repeat youtube videos
-meta_description: >-
-  Are you tired of manually replaying your favorite YouTube videos or loops?
-  Look no further! A Chrome extension to repeat YouTube videos can be a
-  game-changer fo
+meta_description: "Are you tired of manually replaying your favorite YouTube videos or loops? Look no further!"
 status: published
 published_at: '2026-04-15T02:15:00.966+00:00'
 scheduled_at: '2026-04-15T02:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-05T21:27:20.470597+00:00'
 updated_at: '2026-04-23T12:25:27.995962+00:00'
+description: "Are you tired of manually replaying your favorite YouTube videos or loops? Look no further!"
 ---
 
 <img src="/content/images/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q/featured.webp" alt="Discover the Best Chrome Extension to Repeat YouTube Videos for Enhanced Productivity and Focus" width="1200" height="630" loading="lazy" class="featured-image">

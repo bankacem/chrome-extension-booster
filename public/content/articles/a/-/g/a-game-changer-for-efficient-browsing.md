@@ -5,19 +5,13 @@ title: >-
   Unlocking Productivity with Extension Auto Refresh Plus: A Game-Changer for
   Efficient Browsing
 slug: a-game-changer-for-efficient-browsing
-excerpt: >-
-  Are you tired of manually refreshing web pages to stay updated with the latest
-  information? Look no further than extension auto refresh plus, a revolutionary
-  to
+excerpt: "Are you tired of manually refreshing web pages to stay updated with the latest information?"
 featured_image: /content/images/extension-auto-refresh-plus-mkzmtg4rbel/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension auto refresh plus
-meta_description: >-
-  Are you tired of manually refreshing web pages to stay updated with the latest
-  information? Look no further than extension auto refresh plus, a revolutionary
-  to
+meta_description: "Are you tired of manually refreshing web pages to stay updated with the latest information?"
 status: published
 published_at: '2026-05-05T02:15:00.247+00:00'
 scheduled_at: '2026-05-05T02:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-29T15:51:42.310799+00:00'
 updated_at: '2026-05-05T02:15:00.413371+00:00'
+description: "Are you tired of manually refreshing web pages to stay updated with the latest information?"
 ---
 
 <img src="/content/images/extension-auto-refresh-plus-mkzmtg4rbel/featured.webp" alt="Unlocking Productivity with Extension Auto Refresh Plus: A Game-Changer for Efficient Browsing" width="1200" height="630" loading="lazy" class="featured-image">

@@ -5,19 +5,13 @@ title: >-
   Protecting Your Browsing Experience: The Importance of Extension Antivirus
   Google Chrome
 slug: why-you-need-an-antivirus-extension-for-chrome
-excerpt: >-
-  As we navigate the vast expanse of the internet, our browsers are often the
-  first line of defense against malicious threats. Google Chrome, one of the
-  most popu
+excerpt: "As we navigate the vast expanse of the internet, our browsers are often the first line of defense against malicious threats."
 featured_image: /content/images/extension-antivirus-google-chrome-mkzmtemk5lv/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension antivirus google chrome
-meta_description: >-
-  As we navigate the vast expanse of the internet, our browsers are often the
-  first line of defense against malicious threats. Google Chrome, one of the
-  most popu
+meta_description: "As we navigate the vast expanse of the internet, our browsers are often the first line of defense against malicious threats."
 status: published
 published_at: '2026-05-05T10:15:00.385+00:00'
 scheduled_at: '2026-05-05T10:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-29T15:51:40.406007+00:00'
 updated_at: '2026-05-05T10:15:00.476569+00:00'
+description: "As we navigate the vast expanse of the internet, our browsers are often the first line of defense against malicious threats."
 ---
 
 <img src="/content/images/extension-antivirus-google-chrome-mkzmtemk5lv/featured.webp" alt="Protecting Your Browsing Experience: The Importance of Extension Antivirus Google Chrome" width="1200" height="630" loading="lazy" class="featured-image">

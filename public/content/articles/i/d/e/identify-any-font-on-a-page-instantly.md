@@ -4,20 +4,14 @@ id: f69cca4b-6bd7-43f1-bdcd-6dafce1764b2
 title: Discover the Best Font Finder Extension Chrome to Elevate Your Design Game
 slug: identify-any-font-on-a-page-instantly
   discover-the-best-font-finder-extension-chrome-to-elevate-your-design-game-mmtm0gyrx36
-excerpt: >-
-  As a designer, developer, or simply a web enthusiast, you understand the
-  importance of typography in creating a visually appealing and engaging online
-  experienc
+excerpt: "As a designer, developer, or simply a web enthusiast, you understand the importance of typography in creating a visually appealing and engaging online…"
 featured_image: >-
   /content/images/discover-the-best-font-finder-extension-chrome-to-elevate-your-design-game-mmtm0gyrx36/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - font finder extension chrome
-meta_description: >-
-  As a designer, developer, or simply a web enthusiast, you understand the
-  importance of typography in creating a visually appealing and engaging online
-  experienc
+meta_description: "As a designer, developer, or simply a web enthusiast, you understand the importance of typography in creating a visually appealing and engaging online…"
 status: published
 published_at: '2026-04-05T10:15:01.585+00:00'
 scheduled_at: '2026-04-05T10:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-16T20:01:54.084443+00:00'
 updated_at: '2026-04-23T12:20:46.384114+00:00'
+description: "As a designer, developer, or simply a web enthusiast, you understand the importance of typography in creating a visually appealing and engaging online…"
 ---
 
 <img src="/content/images/discover-the-best-font-finder-extension-chrome-to-elevate-your-design-game-mmtm0gyrx36/featured.webp" alt="Discover the Best Font Finder Extension Chrome to Elevate Your Design Game" width="1200" height="630" loading="lazy" class="featured-image">

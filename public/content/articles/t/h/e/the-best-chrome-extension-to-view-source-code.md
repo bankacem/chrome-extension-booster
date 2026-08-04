@@ -6,20 +6,14 @@ title: >-
   Source Code
 slug: the-best-chrome-extension-to-view-source-code
   unlocking-the-power-of-web-development-the-best-chrome-extension-to-view-source-code-mmdt11ed3vp
-excerpt: >-
-  As a web developer, being able to view the source code of a website is crucial
-  for understanding how it works, identifying potential issues, and learning
-  from o
+excerpt: "As a web developer, being able to view the source code of a website is crucial for understanding how it works, identifying potential issues, and learning…"
 featured_image: >-
   /content/images/unlocking-the-power-of-web-development-the-best-chrome-extension-to-view-source-code-mmdt11ed3vp/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - chrome extension to view source code
-meta_description: >-
-  As a web developer, being able to view the source code of a website is crucial
-  for understanding how it works, identifying potential issues, and learning
-  from o
+meta_description: "As a web developer, being able to view the source code of a website is crucial for understanding how it works, identifying potential issues, and learning…"
 status: published
 published_at: '2026-04-18T10:15:00.834+00:00'
 scheduled_at: '2026-04-18T10:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-05T18:33:59.945727+00:00'
 updated_at: '2026-04-23T12:25:39.298976+00:00'
+description: "As a web developer, being able to view the source code of a website is crucial for understanding how it works, identifying potential issues, and learning…"
 ---
 
 <img src="/content/images/unlocking-the-power-of-web-development-the-best-chrome-extension-to-view-source-code-mmdt11ed3vp/featured.webp" alt="Unlocking the Power of Web Development: The Best Chrome Extension to View Source Code" width="1200" height="630" loading="lazy" class="featured-image">

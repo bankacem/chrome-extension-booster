@@ -5,10 +5,7 @@ title: >-
   Stop Chrome From Freezing on Low-End PCs: The Ultimate Guide to a Faster
   Browser
 slug: stop-chrome-from-freezing-on-low-end-pcs-7
-excerpt: >-
-  We’ve all been there. You have three tabs open, you’re trying to finish a
-  quick task, and suddenly—the dreaded spinning wheel of death appears. Your
-  cursor lags
+excerpt: "We’ve all been there. You have three tabs open, you’re trying to finish a quick task, and suddenly—the dreaded spinning wheel of death appears."
 featured_image: /content/images/stop-chrome-from-freezing-on-low-end-pcs-7/featured.webp
 category: Performance & Memory
 tags:
@@ -17,10 +14,7 @@ tags:
     Browser
 keywords:
   - Stop Chrome from freezing on low-end PCs
-meta_description: >-
-  We’ve all been there. You have three tabs open, you’re trying to finish a
-  quick task, and suddenly—the dreaded spinning wheel of death appears. Your
-  cursor lags
+meta_description: "We’ve all been there. You have three tabs open, you’re trying to finish a quick task, and suddenly—the dreaded spinning wheel of death appears."
 status: published
 published_at: '2026-01-27T16:29:00.598+00:00'
 scheduled_at: '2026-01-27T16:29:00+00:00'
@@ -30,6 +24,7 @@ views: 0
 read_time: 8
 created_at: '2026-01-20T14:42:05.147768+00:00'
 updated_at: '2026-01-29T15:24:07.811969+00:00'
+description: "We’ve all been there. You have three tabs open, you’re trying to finish a quick task, and suddenly—the dreaded spinning wheel of death appears."
 ---
 
 <img src="/content/images/stop-chrome-from-freezing-on-low-end-pcs-7/featured.webp" alt="Stop Chrome From Freezing on Low-End PCs: The Ultimate Guide to a Faster Browser" width="1200" height="630" loading="lazy" class="featured-image">

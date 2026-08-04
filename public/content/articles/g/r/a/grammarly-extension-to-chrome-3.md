@@ -5,19 +5,13 @@ title: >-
   Unlock Error-Free Writing with the Grammarly Extension to Chrome: A
   Comprehensive Guide
 slug: grammarly-extension-to-chrome-3
-excerpt: >-
-  Are you tired of embarrassing typos and grammatical errors in your online
-  writing? Look no further than the Grammarly extension to Chrome, a powerful
-  tool desig
+excerpt: "Are you tired of embarrassing typos and grammatical errors in your online writing?"
 featured_image: /content/images/grammarly-extension-to-chrome-3/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - grammarly extension to chrome
-meta_description: >-
-  Are you tired of embarrassing typos and grammatical errors in your online
-  writing? Look no further than the Grammarly extension to Chrome, a powerful
-  tool desig
+meta_description: "Are you tired of embarrassing typos and grammatical errors in your online writing?"
 status: published
 published_at: '2026-02-16T14:11:02.198+00:00'
 scheduled_at: '2026-02-16T14:11:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-24T12:58:15.375271+00:00'
 updated_at: '2026-04-23T12:27:21.054637+00:00'
+description: "Are you tired of embarrassing typos and grammatical errors in your online writing?"
 ---
 
 <img src="/content/images/grammarly-extension-to-chrome-3/featured.webp" alt="Unlock Error-Free Writing with the Grammarly Extension to Chrome: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

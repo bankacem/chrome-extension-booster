@@ -3,19 +3,13 @@ seo_title: "The Power of Extension Chrome Ghostery"
 id: 6cd347aa-f5de-4679-a803-0153441202a6
 title: 'Unlocking Online Privacy: The Power of Extension Chrome Ghostery'
 slug: extension-chrome-ghostery-10
-excerpt: >-
-  Are you concerned about your online privacy and security? With the rise of
-  digital tracking and data collection, it's essential to take control of your
-  online p
+excerpt: "Are you concerned about your online privacy and security? With the rise of digital tracking and data collection, it's essential to take control of your…"
 featured_image: /content/images/extension-chrome-ghostery-10/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome ghostery
-meta_description: >-
-  Are you concerned about your online privacy and security? With the rise of
-  digital tracking and data collection, it's essential to take control of your
-  online p
+meta_description: "Are you concerned about your online privacy and security? With the rise of digital tracking and data collection, it's essential to take control of your…"
 status: published
 published_at: '2026-02-08T14:11:01+00:00'
 scheduled_at: '2026-02-08T14:11:00+00:00'
@@ -25,6 +19,7 @@ views: 2
 read_time: 5
 created_at: '2026-01-24T14:11:55.818543+00:00'
 updated_at: '2026-04-23T12:26:51.12978+00:00'
+description: "Are you concerned about your online privacy and security? With the rise of digital tracking and data collection, it's essential to take control of your…"
 ---
 
 <img src="/content/images/extension-chrome-ghostery-10/featured.webp" alt="Unlocking Online Privacy: The Power of Extension Chrome Ghostery" width="1200" height="630" loading="lazy" class="featured-image">

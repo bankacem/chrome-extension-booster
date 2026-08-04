@@ -3,20 +3,14 @@ seo_title: "Stop Trackers on Chrome without Slowing Down"
 id: bc87ba3f-0494-4944-9476-b4a4d0ff1e5c
 title: 'Stop Trackers on Chrome without Slowing Down: The Ultimate Guide'
 slug: stop-trackers-on-chrome-without-slowing-down
-excerpt: >-
-  Are you tired of being tracked online while browsing with Chrome? Do you want
-  to stop trackers on Chrome without slowing down your browsing experience?
-  You're n
+excerpt: "Are you tired of being tracked online while browsing with Chrome? Do you want to stop trackers on Chrome without slowing down your browsing experience?"
 featured_image: >-
   /content/images/stop-trackers-on-chrome-without-slowing-down-the-ultimate-guide-mll9brqb6da/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - Stop trackers on Chrome without slowing down
-meta_description: >-
-  Are you tired of being tracked online while browsing with Chrome? Do you want
-  to stop trackers on Chrome without slowing down your browsing experience?
-  You're n
+meta_description: "Are you tired of being tracked online while browsing with Chrome? Do you want to stop trackers on Chrome without slowing down your browsing experience?"
 status: published
 published_at: '2026-02-19T09:00:00.259+00:00'
 scheduled_at: '2026-02-19T09:00:00+00:00'
@@ -26,6 +20,7 @@ views: 2
 read_time: 5
 created_at: '2026-02-13T19:04:55.417649+00:00'
 updated_at: '2026-03-03T17:57:25.79854+00:00'
+description: "Are you tired of being tracked online while browsing with Chrome? Do you want to stop trackers on Chrome without slowing down your browsing experience?"
 ---
 
 <img src="/content/images/stop-trackers-on-chrome-without-slowing-down-the-ultimate-guide-mll9brqb6da/featured.webp" alt="Stop Trackers on Chrome without Slowing Down: The Ultimate Guide" width="1200" height="630" loading="lazy" class="featured-image">

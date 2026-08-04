@@ -4,20 +4,14 @@ id: 8904f0f9-92e8-492d-8f3b-8789de2e3480
 title: 'Unlock Endless Browsing with Autopager Chrome: A Game-Changer for Productivity'
 slug: a-game-changer-for-productivity
   unlock-endless-browsing-with-autopager-chrome-a-game-changer-for-productivity-ml5gz1lmsnz
-excerpt: >-
-  Are you tired of clicking through multiple pages to find the information you
-  need? Look no further than autopager Chrome, a revolutionary browser extension
-  that
+excerpt: "Are you tired of clicking through multiple pages to find the information you need?"
 featured_image: >-
   /content/images/unlock-endless-browsing-with-autopager-chrome-a-game-changer-for-productivity-ml5gz1lmsnz/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - autopager chrome
-meta_description: >-
-  Are you tired of clicking through multiple pages to find the information you
-  need? Look no further than autopager Chrome, a revolutionary browser extension
-  that
+meta_description: "Are you tired of clicking through multiple pages to find the information you need?"
 status: published
 published_at: '2026-04-30T02:15:00.554+00:00'
 scheduled_at: '2026-04-30T02:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 4
 created_at: '2026-02-02T17:54:48.845185+00:00'
 updated_at: '2026-04-30T02:15:00.733824+00:00'
+description: "Are you tired of clicking through multiple pages to find the information you need?"
 ---
 
 <img src="/content/images/unlock-endless-browsing-with-autopager-chrome-a-game-changer-for-productivity-ml5gz1lmsnz/featured.webp" alt="Unlock Endless Browsing with Autopager Chrome: A Game-Changer for Productivity" width="1200" height="630" loading="lazy" class="featured-image">

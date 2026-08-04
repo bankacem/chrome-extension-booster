@@ -6,20 +6,14 @@ title: >-
   Guide
 slug: unlocking-the-power-of-yandex-browser-on-chrome-web-store
   unlocking-the-power-of-yandex-browser-on-chrome-web-store-a-comprehensive-guide-mmthovo77ng
-excerpt: >-
-  Are you looking for a reliable and feature-rich browser that can enhance your
-  online experience? Look no further than the Yandex Browser, available on the
-  Chrom
+excerpt: "Are you looking for a reliable and feature-rich browser that can enhance your online experience?"
 featured_image: >-
   /content/images/unlocking-the-power-of-yandex-browser-on-chrome-web-store-a-comprehensive-guide-mmthovo77ng/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - yandex browser chrome web store
-meta_description: >-
-  Are you looking for a reliable and feature-rich browser that can enhance your
-  online experience? Look no further than the Yandex Browser, available on the
-  Chrom
+meta_description: "Are you looking for a reliable and feature-rich browser that can enhance your online experience?"
 status: published
 published_at: '2026-03-19T09:00:00.353+00:00'
 scheduled_at: '2026-03-19T09:00:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-16T18:00:55.189777+00:00'
 updated_at: '2026-04-23T12:25:18.952335+00:00'
+description: "Are you looking for a reliable and feature-rich browser that can enhance your online experience?"
 ---
 
 <img src="/content/images/unlocking-the-power-of-yandex-browser-on-chrome-web-store-a-comprehensive-guide-mmthovo77ng/featured.webp" alt="Unlocking the Power of Yandex Browser on Chrome Web Store: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

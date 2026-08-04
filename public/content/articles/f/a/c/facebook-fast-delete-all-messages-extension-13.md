@@ -5,19 +5,13 @@ title: >-
   Streamlining Your Facebook Inbox: The Power of Facebook Fast Delete All
   Messages Extension
 slug: facebook-fast-delete-all-messages-extension-13
-excerpt: >-
-  Managing your Facebook messages can be a daunting task, especially when you
-  have a large number of conversations to sift through. Fortunately, the
-  Facebook fast
+excerpt: "Managing your Facebook messages can be a daunting task, especially when you have a large number of conversations to sift through."
 featured_image: /content/images/facebook-fast-delete-all-messages-extension-13/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - facebook fast delete all messages extension
-meta_description: >-
-  Managing your Facebook messages can be a daunting task, especially when you
-  have a large number of conversations to sift through. Fortunately, the
-  Facebook fast
+meta_description: "Managing your Facebook messages can be a daunting task, especially when you have a large number of conversations to sift through."
 status: published
 published_at: '2026-02-03T08:11:01.516+00:00'
 scheduled_at: '2026-02-03T08:11:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-24T18:21:54.984551+00:00'
 updated_at: '2026-04-23T12:26:19.070816+00:00'
+description: "Managing your Facebook messages can be a daunting task, especially when you have a large number of conversations to sift through."
 ---
 
 <img src="/content/images/facebook-fast-delete-all-messages-extension-13/featured.webp" alt="Streamlining Your Facebook Inbox: The Power of Facebook Fast Delete All Messages Extension" width="1200" height="630" loading="lazy" class="featured-image">

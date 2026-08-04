@@ -6,20 +6,14 @@ title: >-
   Websites
 slug: protecting-your-online-security
   protecting-your-online-security-the-best-chrome-extension-to-block-malicious-websites-mmdzl0y1ool
-excerpt: >-
-  When browsing the internet, it's easy to stumble upon malicious websites that
-  can harm your device or steal your personal data. This is where a reliable
-  Chrome
+excerpt: "When browsing the internet, it's easy to stumble upon malicious websites that can harm your device or steal your personal data."
 featured_image: >-
   /content/images/protecting-your-online-security-the-best-chrome-extension-to-block-malicious-websites-mmdzl0y1ool/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - chrome extension to block malicious websites
-meta_description: >-
-  When browsing the internet, it's easy to stumble upon malicious websites that
-  can harm your device or steal your personal data. This is where a reliable
-  Chrome
+meta_description: "When browsing the internet, it's easy to stumble upon malicious websites that can harm your device or steal your personal data."
 status: published
 published_at: '2026-04-13T22:15:00.44+00:00'
 scheduled_at: '2026-04-13T22:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-05T21:37:30.180115+00:00'
 updated_at: '2026-04-18T18:40:10.187953+00:00'
+description: "When browsing the internet, it's easy to stumble upon malicious websites that can harm your device or steal your personal data."
 ---
 
 <img src="/content/images/protecting-your-online-security-the-best-chrome-extension-to-block-malicious-websites-mmdzl0y1ool/featured.webp" alt="Protecting Your Online Security: The Best Chrome Extension to Block Malicious Websites" width="1200" height="630" loading="lazy" class="featured-image">

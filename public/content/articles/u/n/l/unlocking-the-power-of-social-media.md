@@ -6,20 +6,14 @@ title: >-
   for Social Analytics
 slug: unlocking-the-power-of-social-media
   unlocking-the-power-of-social-media-the-ultimate-guide-to-chrome-extension-for-social-analytics-mmdsutrnj8g
-excerpt: >-
-  As a social media marketer or enthusiast, you're likely aware of the
-  importance of tracking your online presence and engagement. With the vast
-  array of social m
+excerpt: "As a social media marketer or enthusiast, you're likely aware of the importance of tracking your online presence and engagement."
 featured_image: >-
   /content/images/unlocking-the-power-of-social-media-the-ultimate-guide-to-chrome-extension-for-social-analytics-mmdsutrnj8g/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - chrome extension for social analytics
-meta_description: >-
-  As a social media marketer or enthusiast, you're likely aware of the
-  importance of tracking your online presence and engagement. With the vast
-  array of social m
+meta_description: "As a social media marketer or enthusiast, you're likely aware of the importance of tracking your online presence and engagement."
 status: published
 published_at: '2026-04-19T22:15:00.523+00:00'
 scheduled_at: '2026-04-19T22:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-05T18:29:10.192419+00:00'
 updated_at: '2026-04-23T12:25:45.536753+00:00'
+description: "As a social media marketer or enthusiast, you're likely aware of the importance of tracking your online presence and engagement."
 ---
 
 <img src="/content/images/unlocking-the-power-of-social-media-the-ultimate-guide-to-chrome-extension-for-social-analytics-mmdsutrnj8g/featured.webp" alt="Unlocking the Power of Social Media: The Ultimate Guide to Chrome Extension for Social Analytics" width="1200" height="630" loading="lazy" class="featured-image">

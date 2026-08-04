@@ -4,20 +4,14 @@ id: d8dadebb-e8a4-428d-b339-3a11e6466e1a
 title: 'Unlock Faster Browsing: The Ultimate Guide to Chrome Performance Booster Tools'
 slug: >-
   unlock-faster-browsing-the-ultimate-guide-to-chrome-performance-booster-tools-mmtizynrlkk
-excerpt: >-
-  Are you tired of slow browsing speeds and frustrated with the performance of
-  your Google Chrome browser? Look no further! In this comprehensive guide, we
-  will e
+excerpt: "Are you tired of slow browsing speeds and frustrated with the performance of your Google Chrome browser? Look no further!"
 featured_image: >-
   /content/images/unlock-faster-browsing-the-ultimate-guide-to-chrome-performance-booster-tools-mmtizynrlkk/featured.webp
 category: Productivity
 tags: []
 keywords:
   - chrome performance booster tools
-meta_description: >-
-  Are you tired of slow browsing speeds and frustrated with the performance of
-  your Google Chrome browser? Look no further! In this comprehensive guide, we
-  will e
+meta_description: "Are you tired of slow browsing speeds and frustrated with the performance of your Google Chrome browser? Look no further!"
 status: published
 published_at: '2026-03-30T08:00:00.354+00:00'
 scheduled_at: '2026-03-30T08:00:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-16T18:37:31.703883+00:00'
 updated_at: '2026-04-18T18:39:56.775492+00:00'
+description: "Are you tired of slow browsing speeds and frustrated with the performance of your Google Chrome browser? Look no further!"
 ---
 
 <img src="/content/images/unlock-faster-browsing-the-ultimate-guide-to-chrome-performance-booster-tools-mmtizynrlkk/featured.webp" alt="Unlock Faster Browsing: The Ultimate Guide to Chrome Performance Booster Tools" width="1200" height="630" loading="lazy" class="featured-image">

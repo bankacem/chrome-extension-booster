@@ -6,20 +6,14 @@ title: >-
   More Efficient Website
 slug: lighthouse-audit-chrome-extension-guide
   lighthouse-audit-chrome-extension-guide-unlocking-the-secrets-to-a-faster-and-more-efficient-website-mmtm0ft1uyc
-excerpt: >-
-  Welcome to our comprehensive Lighthouse audit Chrome extension guide, where
-  we'll delve into the world of website optimization and explore the best
-  practices fo
+excerpt: "Welcome to our comprehensive Lighthouse audit Chrome extension guide, where we'll delve into the world of website optimization and explore the best practices…"
 featured_image: >-
   /content/images/lighthouse-audit-chrome-extension-guide-unlocking-the-secrets-to-a-faster-and-more-efficient-website-mmtm0ft1uyc/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - lighthouse audit chrome extension guide
-meta_description: >-
-  Welcome to our comprehensive Lighthouse audit Chrome extension guide, where
-  we'll delve into the world of website optimization and explore the best
-  practices fo
+meta_description: "Welcome to our comprehensive Lighthouse audit Chrome extension guide, where we'll delve into the world of website optimization and explore the best practices…"
 status: published
 published_at: '2026-04-06T22:15:00.881+00:00'
 scheduled_at: '2026-04-06T22:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-16T20:01:52.55892+00:00'
 updated_at: '2026-04-18T18:39:43.63002+00:00'
+description: "Welcome to our comprehensive Lighthouse audit Chrome extension guide, where we'll delve into the world of website optimization and explore the best practices…"
 ---
 
 <img src="/content/images/lighthouse-audit-chrome-extension-guide-unlocking-the-secrets-to-a-faster-and-more-efficient-website-mmtm0ft1uyc/featured.webp" alt="Lighthouse Audit Chrome Extension Guide: Unlocking the Secrets to a Faster and More Efficient Website" width="1200" height="630" loading="lazy" class="featured-image">

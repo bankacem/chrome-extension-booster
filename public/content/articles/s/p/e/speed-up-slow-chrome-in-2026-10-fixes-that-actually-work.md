@@ -3,10 +3,7 @@ seo_title: "Speed Up Slow Chrome in 2026"
 id: f383f99e-6d40-4c1a-9328-b47152891095
 title: 'Speed Up Slow Chrome in 2026: 10 Fixes That Actually Work'
 slug: speed-up-slow-chrome-in-2026-10-fixes-that-actually-work
-excerpt: >-
-  We’ve all been there. You’re in the middle of a high-stakes project, or
-  perhaps you're just trying to relax with some 8K streaming, and suddenly, your
-  browser s
+excerpt: "We’ve all been there. You’re in the middle of a high-stakes project, or perhaps you're just trying to relax with some 8K streaming, and suddenly, your…"
 featured_image: >-
   /content/images/speed-up-slow-chrome-in-2026-10-fixes-that-actually-work/featured.webp
 category: Performance & Memory
@@ -14,10 +11,7 @@ tags:
   - 'Speed Up Slow Chrome in 2026: 10 Fixes That Actually Work'
 keywords:
   - How to speed up a slow Chrome browser in 2026
-meta_description: >-
-  We’ve all been there. You’re in the middle of a high-stakes project, or
-  perhaps you're just trying to relax with some 8K streaming, and suddenly, your
-  browser s
+meta_description: "We’ve all been there. You’re in the middle of a high-stakes project, or perhaps you're just trying to relax with some 8K streaming, and suddenly, your…"
 status: published
 published_at: '2026-03-16T17:25:21.312+00:00'
 scheduled_at: null
@@ -27,6 +21,7 @@ views: 2
 read_time: 8
 created_at: '2026-01-20T14:42:02.641398+00:00'
 updated_at: '2026-03-16T17:25:21.898828+00:00'
+description: "We’ve all been there. You’re in the middle of a high-stakes project, or perhaps you're just trying to relax with some 8K streaming, and suddenly, your…"
 ---
 
 <img src="/content/images/speed-up-slow-chrome-in-2026-10-fixes-that-actually-work/featured.webp" alt="Speed Up Slow Chrome in 2026: 10 Fixes That Actually Work" width="1200" height="630" loading="lazy" class="featured-image">

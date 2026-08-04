@@ -6,20 +6,14 @@ title: >-
   Online Presence
 slug: unlocking-the-power-of-semrush-chrome-boosting-your-online-presence
   unlocking-the-power-of-semrush-chrome-a-comprehensive-guide-to-boosting-your-online-presence-ml5gl6jwzlb
-excerpt: >-
-  As a digital marketer or SEO specialist, you're likely no stranger to the
-  importance of staying on top of your online game. With the ever-evolving
-  landscape of 
+excerpt: "As a digital marketer or SEO specialist, you're likely no stranger to the importance of staying on top of your online game."
 featured_image: >-
   /content/images/unlocking-the-power-of-semrush-chrome-a-comprehensive-guide-to-boosting-your-online-presence-ml5gl6jwzlb/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - semrush chrome
-meta_description: >-
-  As a digital marketer or SEO specialist, you're likely no stranger to the
-  importance of staying on top of your online game. With the ever-evolving
-  landscape of 
+meta_description: "As a digital marketer or SEO specialist, you're likely no stranger to the importance of staying on top of your online game."
 status: published
 published_at: '2026-04-30T18:15:00.265+00:00'
 scheduled_at: '2026-04-30T18:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 6
 created_at: '2026-02-02T17:44:00.04869+00:00'
 updated_at: '2026-04-30T18:15:00.297148+00:00'
+description: "As a digital marketer or SEO specialist, you're likely no stranger to the importance of staying on top of your online game."
 ---
 
 <img src="/content/images/unlocking-the-power-of-semrush-chrome-a-comprehensive-guide-to-boosting-your-online-presence-ml5gl6jwzlb/featured.webp" alt="Unlocking the Power of SEMrush Chrome: A Comprehensive Guide to Boosting Your Online Presence" width="1200" height="630" loading="lazy" class="featured-image">

@@ -6,10 +6,7 @@ title: >-
   Extension Chrome
 slug: >-
   unlock-the-power-of-youtube-dark-mode-the-ultimate-guide-to-youtube-dark-mode-extension-chrome
-excerpt: >-
-  Are you tired of the bright and overwhelming YouTube interface? Do you want to
-  reduce eye strain and improve your overall viewing experience? Look no
-  further! I
+excerpt: "Are you tired of the bright and overwhelming YouTube interface? Do you want to reduce eye strain and improve your overall viewing experience? Look no further!"
 featured_image: >-
   /content/images/unlock-the-power-of-youtube-dark-mode-the-ultimate-guide-to-youtube-dark-mode-extension-chrome/featured.webp
 category: Screenshots & Screen Capture
@@ -19,10 +16,7 @@ tags:
     Mode Extension Chrome
 keywords:
   - youtube dark mode extension chrome
-meta_description: >-
-  Are you tired of the bright and overwhelming YouTube interface? Do you want to
-  reduce eye strain and improve your overall viewing experience? Look no
-  further! I
+meta_description: "Are you tired of the bright and overwhelming YouTube interface? Do you want to reduce eye strain and improve your overall viewing experience? Look no further!"
 status: published
 published_at: '2026-04-14T18:15:00.376+00:00'
 scheduled_at: '2026-04-14T18:15:00+00:00'
@@ -32,6 +26,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-05T21:27:20.796198+00:00'
 updated_at: '2026-04-23T12:25:27.411388+00:00'
+description: "Are you tired of the bright and overwhelming YouTube interface? Do you want to reduce eye strain and improve your overall viewing experience? Look no further!"
 ---
 
 <img src="/content/images/unlock-the-power-of-youtube-dark-mode-the-ultimate-guide-to-youtube-dark-mode-extension-chrome/featured.webp" alt="Unlock the Power of YouTube Dark Mode: The Ultimate Guide to YouTube Dark Mode Extension Chrome" width="1200" height="630" loading="lazy" class="featured-image">

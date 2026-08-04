@@ -5,10 +5,7 @@ title: >-
   How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster
   Browser
 slug: how-to-hibernate-inactive-tabs-automatically-6
-excerpt: >-
-  We’ve all been there: you start your morning with one tab open, and by
-  lunchtime, your browser looks like a crowded parking lot. Your computer’s fan
-  is screamin
+excerpt: "We’ve all been there: you start your morning with one tab open, and by lunchtime, your browser looks like a crowded parking lot."
 featured_image: /content/images/how-to-hibernate-inactive-tabs-automatically-6/featured.webp
 category: Performance & Memory
 tags:
@@ -17,10 +14,7 @@ tags:
     Browser
 keywords:
   - How to hibernate inactive tabs automatically
-meta_description: >-
-  We’ve all been there: you start your morning with one tab open, and by
-  lunchtime, your browser looks like a crowded parking lot. Your computer’s fan
-  is screamin
+meta_description: "We’ve all been there: you start your morning with one tab open, and by lunchtime, your browser looks like a crowded parking lot."
 status: published
 published_at: '2026-01-26T16:29:01.742+00:00'
 scheduled_at: '2026-01-26T16:29:00+00:00'
@@ -30,6 +24,7 @@ views: 1
 read_time: 8
 created_at: '2026-01-20T14:42:04.58382+00:00'
 updated_at: '2026-01-29T15:24:13.315105+00:00'
+description: "We’ve all been there: you start your morning with one tab open, and by lunchtime, your browser looks like a crowded parking lot."
 ---
 
 <img src="/content/images/how-to-hibernate-inactive-tabs-automatically-6/featured.webp" alt="How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster Browser" width="1200" height="630" loading="lazy" class="featured-image">

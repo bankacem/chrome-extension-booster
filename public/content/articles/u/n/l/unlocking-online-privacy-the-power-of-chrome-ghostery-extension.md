@@ -3,20 +3,14 @@ seo_title: "The Power of Chrome Ghostery Extension"
 id: f4725c1c-fa69-4656-94d4-c1bdd6d3903d
 title: 'Unlocking Online Privacy: The Power of Chrome Ghostery Extension'
 slug: unlocking-online-privacy-the-power-of-chrome-ghostery-extension
-excerpt: >-
-  As we navigate the vast expanse of the internet, it's becoming increasingly
-  important to protect our online privacy. With the rise of tracking
-  technologies and
+excerpt: "As we navigate the vast expanse of the internet, it's becoming increasingly important to protect our online privacy."
 featured_image: >-
   /content/images/unlocking-online-privacy-the-power-of-chrome-ghostery-extension-mm3scmqpeo4/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - chrome ghostery extension
-meta_description: >-
-  As we navigate the vast expanse of the internet, it's becoming increasingly
-  important to protect our online privacy. With the rise of tracking
-  technologies and
+meta_description: "As we navigate the vast expanse of the internet, it's becoming increasingly important to protect our online privacy."
 status: published
 published_at: '2026-03-05T09:00:00.344+00:00'
 scheduled_at: '2026-03-05T09:00:00+00:00'
@@ -26,6 +20,7 @@ views: 0
 read_time: 6
 created_at: '2026-02-26T18:17:19.29666+00:00'
 updated_at: '2026-03-16T14:42:54.57416+00:00'
+description: "As we navigate the vast expanse of the internet, it's becoming increasingly important to protect our online privacy."
 ---
 
 <img src="/content/images/unlocking-online-privacy-the-power-of-chrome-ghostery-extension-mm3scmqpeo4/featured.webp" alt="Unlocking Online Privacy: The Power of Chrome Ghostery Extension" width="1200" height="630" loading="lazy" class="featured-image">

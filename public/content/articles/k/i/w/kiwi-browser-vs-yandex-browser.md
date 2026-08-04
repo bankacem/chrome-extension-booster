@@ -4,20 +4,14 @@ id: 4894deb9-5d3d-406f-89cb-052b7878ebc8
 title: 'kiwi browser vs yandex browser: A Comprehensive Comparison for the Modern User'
 slug: kiwi-browser-vs-yandex-browser
   kiwi-browser-vs-yandex-browser-a-comprehensive-comparison-for-the-modern-user-mmthox9h7jb
-excerpt: >-
-  When it comes to browsing the internet, the choice of browser can
-  significantly impact your overall experience. Two popular alternatives to the
-  mainstream brows
+excerpt: "When it comes to browsing the internet, the choice of browser can significantly impact your overall experience."
 featured_image: >-
   /content/images/kiwi-browser-vs-yandex-browser-a-comprehensive-comparison-for-the-modern-user-mmthox9h7jb/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - kiwi browser vs yandex browser
-meta_description: >-
-  When it comes to browsing the internet, the choice of browser can
-  significantly impact your overall experience. Two popular alternatives to the
-  mainstream brows
+meta_description: "When it comes to browsing the internet, the choice of browser can significantly impact your overall experience."
 status: published
 published_at: '2026-03-22T08:00:01.366+00:00'
 scheduled_at: '2026-03-22T08:00:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-16T18:00:57.139845+00:00'
 updated_at: '2026-04-18T18:40:05.208631+00:00'
+description: "When it comes to browsing the internet, the choice of browser can significantly impact your overall experience."
 ---
 
 <img src="/content/images/kiwi-browser-vs-yandex-browser-a-comprehensive-comparison-for-the-modern-user-mmthox9h7jb/featured.webp" alt="kiwi browser vs yandex browser: A Comprehensive Comparison for the Modern User" width="1200" height="630" loading="lazy" class="featured-image">

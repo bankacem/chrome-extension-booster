@@ -5,19 +5,13 @@ title: >-
   Unlocking Online Security: A Comprehensive Guide to Windscribe Extension for
   Chrome
 slug: windscribe-extension-to-chrome-9
-excerpt: >-
-  Are you concerned about your online security and privacy while browsing the
-  internet? Look no further than the Windscribe extension for Chrome. As a
-  powerful to
+excerpt: "Are you concerned about your online security and privacy while browsing the internet? Look no further than the Windscribe extension for Chrome."
 featured_image: /content/images/windscribe-extension-to-chrome-9/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - windscribe extension to chrome
-meta_description: >-
-  Are you concerned about your online security and privacy while browsing the
-  internet? Look no further than the Windscribe extension for Chrome. As a
-  powerful to
+meta_description: "Are you concerned about your online security and privacy while browsing the internet? Look no further than the Windscribe extension for Chrome."
 status: published
 published_at: '2026-02-15T02:11:01.462+00:00'
 scheduled_at: '2026-02-15T02:11:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-24T12:58:21.207225+00:00'
 updated_at: '2026-03-16T14:43:13.919237+00:00'
+description: "Are you concerned about your online security and privacy while browsing the internet? Look no further than the Windscribe extension for Chrome."
 ---
 
 <img src="/content/images/windscribe-extension-to-chrome-9/featured.webp" alt="Unlocking Online Security: A Comprehensive Guide to Windscribe Extension for Chrome" width="1200" height="630" loading="lazy" class="featured-image">

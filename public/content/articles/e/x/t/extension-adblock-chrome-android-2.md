@@ -5,19 +5,13 @@ title: >-
   Mastering Ad Blocking on Chrome Android: The Ultimate Guide to Extension
   Adblock Chrome Android
 slug: extension-adblock-chrome-android-2
-excerpt: >-
-  Are you tired of annoying ads disrupting your browsing experience on Chrome
-  Android? Look no further! In this comprehensive guide, we'll delve into the
-  world of
+excerpt: "Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further!"
 featured_image: /content/images/extension-adblock-chrome-android-2/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - extension adblock chrome android
-meta_description: >-
-  Are you tired of annoying ads disrupting your browsing experience on Chrome
-  Android? Look no further! In this comprehensive guide, we'll delve into the
-  world of
+meta_description: "Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further!"
 status: published
 published_at: '2026-05-11T22:15:00.339+00:00'
 scheduled_at: '2026-05-11T22:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-27T22:24:14.231337+00:00'
 updated_at: '2026-05-11T22:15:00.385613+00:00'
+description: "Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further!"
 ---
 
 <img src="/content/images/extension-adblock-chrome-android-2/featured.webp" alt="Mastering Ad Blocking on Chrome Android: The Ultimate Guide to Extension Adblock Chrome Android" width="1200" height="630" loading="lazy" class="featured-image">

@@ -5,19 +5,13 @@ title: >-
   Unlock Ad-Free Browsing on Chrome Android: The Power of Extension Adblock
   Chrome Android
 slug: the-power-of-extension-adblock-chrome-android
-excerpt: >-
-  Are you tired of annoying ads disrupting your browsing experience on Chrome
-  Android? Look no further! With the help of extension adblock Chrome Android,
-  you can
+excerpt: "Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further!"
 featured_image: /content/images/extension-adblock-chrome-android-mkzmrglz0eb/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - extension adblock chrome android
-meta_description: >-
-  Are you tired of annoying ads disrupting your browsing experience on Chrome
-  Android? Look no further! With the help of extension adblock Chrome Android,
-  you can
+meta_description: "Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further!"
 status: published
 published_at: '2026-05-06T06:15:00.317+00:00'
 scheduled_at: '2026-05-06T06:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-29T15:50:09.778375+00:00'
 updated_at: '2026-05-06T06:15:00.395095+00:00'
+description: "Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further!"
 ---
 
 <img src="/content/images/extension-adblock-chrome-android-mkzmrglz0eb/featured.webp" alt="Unlock Ad-Free Browsing on Chrome Android: The Power of Extension Adblock Chrome Android" width="1200" height="630" loading="lazy" class="featured-image">

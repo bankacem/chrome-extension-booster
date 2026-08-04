@@ -5,19 +5,13 @@ title: >-
   Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A
   Comprehensive Guide
 slug: https-sci-hub-se-chrome-extension-16
-excerpt: >-
-  The world of scientific research has become increasingly digital, with
-  numerous online platforms and tools available to facilitate access to
-  knowledge. One such
+excerpt: "The world of scientific research has become increasingly digital, with numerous online platforms and tools available to facilitate access to knowledge."
 featured_image: /content/images/https-sci-hub-se-chrome-extension-16/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - https sci hub se chrome extension
-meta_description: >-
-  The world of scientific research has become increasingly digital, with
-  numerous online platforms and tools available to facilitate access to
-  knowledge. One such
+meta_description: "The world of scientific research has become increasingly digital, with numerous online platforms and tools available to facilitate access to knowledge."
 status: published
 published_at: '2026-02-22T17:31:02.586+00:00'
 scheduled_at: null
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-24T18:21:56.386948+00:00'
 updated_at: '2026-04-23T12:26:18.60986+00:00'
+description: "The world of scientific research has become increasingly digital, with numerous online platforms and tools available to facilitate access to knowledge."
 ---
 
 <img src="/content/images/https-sci-hub-se-chrome-extension-16/featured.webp" alt="Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

@@ -6,20 +6,14 @@ title: >-
   Browsing Experience
 slug: how-to-fix-chrome-high-memory-usage-2026
   how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue
-excerpt: >-
-  Are you tired of experiencing slow browsing speeds and frequent crashes due to
-  Chrome high memory usage? You're not alone. Many users have been struggling
-  with
+excerpt: "Are you tired of experiencing slow browsing speeds and frequent crashes due to Chrome high memory usage? You're not alone."
 featured_image: >-
   /content/images/how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - How to fix Chrome high memory usage 2026
-meta_description: >-
-  Are you tired of experiencing slow browsing speeds and frequent crashes due to
-  Chrome high memory usage? You're not alone. Many users have been struggling
-  with
+meta_description: "Are you tired of experiencing slow browsing speeds and frequent crashes due to Chrome high memory usage? You're not alone."
 status: published
 published_at: '2026-02-23T09:00:07.427+00:00'
 scheduled_at: '2026-02-23T09:00:00+00:00'
@@ -29,6 +23,7 @@ views: 11
 read_time: 5
 created_at: '2026-02-13T19:04:56.051728+00:00'
 updated_at: '2026-04-23T12:26:08.819549+00:00'
+description: "Are you tired of experiencing slow browsing speeds and frequent crashes due to Chrome high memory usage? You're not alone."
 ---
 
 <img src="/content/images/how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue/featured.webp" alt="How to Fix Chrome High Memory Usage 2026: The Ultimate Guide to a Smoother Browsing Experience" width="1200" height="630" loading="lazy" class="featured-image">

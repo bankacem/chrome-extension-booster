@@ -6,20 +6,14 @@ title: >-
   Browser Security
 slug: an-open-source-alternative-to-ghostery
   discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz
-excerpt: >-
-  Are you looking for an open source alternative to Ghostery extension that can
-  provide you with a higher level of browser security and privacy? Ghostery is a
-  pop
+excerpt: "Are you looking for an open source alternative to Ghostery extension that can provide you with a higher level of browser security and privacy?"
 featured_image: >-
   /content/images/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - Open source alternative to Ghostery extension
-meta_description: >-
-  Are you looking for an open source alternative to Ghostery extension that can
-  provide you with a higher level of browser security and privacy? Ghostery is a
-  pop
+meta_description: "Are you looking for an open source alternative to Ghostery extension that can provide you with a higher level of browser security and privacy?"
 status: published
 published_at: '2026-02-20T09:00:07.188+00:00'
 scheduled_at: '2026-02-20T09:00:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 6
 created_at: '2026-02-13T19:04:55.599279+00:00'
 updated_at: '2026-04-23T12:26:09.609407+00:00'
+description: "Are you looking for an open source alternative to Ghostery extension that can provide you with a higher level of browser security and privacy?"
 ---
 
 <img src="/content/images/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz/featured.webp" alt="Discover the Best Open Source Alternative to Ghostery Extension for Enhanced Browser Security" width="1200" height="630" loading="lazy" class="featured-image">

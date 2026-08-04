@@ -5,19 +5,13 @@ title: >-
   Unlocking the Power of Google Chrome: A Comprehensive Guide to Extension
   Chrome Cast
 slug: extension-chrome-cast-1
-excerpt: >-
-  Google Chrome is one of the most popular web browsers in the world, and its
-  versatility is further enhanced by the vast array of extensions available.
-  Among the
+excerpt: "Google Chrome is one of the most popular web browsers in the world, and its versatility is further enhanced by the vast array of extensions available."
 featured_image: /content/images/extension-chrome-cast-1/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome cast
-meta_description: >-
-  Google Chrome is one of the most popular web browsers in the world, and its
-  versatility is further enhanced by the vast array of extensions available.
-  Among the
+meta_description: "Google Chrome is one of the most popular web browsers in the world, and its versatility is further enhanced by the vast array of extensions available."
 status: published
 published_at: '2026-05-14T02:15:01.682+00:00'
 scheduled_at: '2026-05-14T02:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-27T14:32:20.214346+00:00'
 updated_at: '2026-05-14T02:15:01.949667+00:00'
+description: "Google Chrome is one of the most popular web browsers in the world, and its versatility is further enhanced by the vast array of extensions available."
 ---
 
 <img src="/content/images/extension-chrome-cast-1/featured.webp" alt="Unlocking the Power of Google Chrome: A Comprehensive Guide to Extension Chrome Cast" width="1200" height="630" loading="lazy" class="featured-image">

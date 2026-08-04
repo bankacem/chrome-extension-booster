@@ -6,20 +6,14 @@ title: >-
   Browser
 slug: how-to-remove-chrome-extensions-cleaning-up-your-browser
   how-to-remove-chrome-extensions-a-step-by-step-guide-to-cleaning-up-your-browser-mmdrxz38v9j
-excerpt: >-
-  Are you tired of cluttered browser extensions slowing down your Chrome
-  experience? Do you want to learn how to remove Chrome extensions that are no
-  longer neede
+excerpt: "Are you tired of cluttered browser extensions slowing down your Chrome experience?"
 featured_image: >-
   /content/images/how-to-remove-chrome-extensions-a-step-by-step-guide-to-cleaning-up-your-browser-mmdrxz38v9j/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - how to remove chrome extensions
-meta_description: >-
-  Are you tired of cluttered browser extensions slowing down your Chrome
-  experience? Do you want to learn how to remove Chrome extensions that are no
-  longer neede
+meta_description: "Are you tired of cluttered browser extensions slowing down your Chrome experience?"
 status: published
 published_at: '2026-04-22T10:15:03.412+00:00'
 scheduled_at: '2026-04-22T10:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 4
 created_at: '2026-03-05T18:03:37.371789+00:00'
 updated_at: '2026-04-23T12:25:52.012826+00:00'
+description: "Are you tired of cluttered browser extensions slowing down your Chrome experience?"
 ---
 
 <img src="/content/images/how-to-remove-chrome-extensions-a-step-by-step-guide-to-cleaning-up-your-browser-mmdrxz38v9j/featured.webp" alt="How to Remove Chrome Extensions: A Step-by-Step Guide to Cleaning Up Your Browser" width="1200" height="630" loading="lazy" class="featured-image">

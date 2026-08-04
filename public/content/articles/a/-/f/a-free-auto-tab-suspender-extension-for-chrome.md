@@ -6,20 +6,14 @@ title: >-
   Seamless Browsing Experience
 slug: a-free-auto-tab-suspender-extension-for-chrome
   unlocking-efficiency-auto-tab-suspender-extension-free-download-for-a-seamless-browsing-experience-mll9bskiotb
-excerpt: >-
-  Are you tired of dealing with sluggish browser performance due to numerous
-  open tabs? An Auto tab suspender extension free download can be the solution
-  you've b
+excerpt: "Are you tired of dealing with sluggish browser performance due to numerous open tabs?"
 featured_image: >-
   /content/images/unlocking-efficiency-auto-tab-suspender-extension-free-download-for-a-seamless-browsing-experience-mll9bskiotb/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - Auto tab suspender extension free download
-meta_description: >-
-  Are you tired of dealing with sluggish browser performance due to numerous
-  open tabs? An Auto tab suspender extension free download can be the solution
-  you've b
+meta_description: "Are you tired of dealing with sluggish browser performance due to numerous open tabs?"
 status: published
 published_at: '2026-02-26T09:00:00.755+00:00'
 scheduled_at: '2026-02-26T09:00:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-02-13T19:04:56.530869+00:00'
 updated_at: '2026-04-23T12:26:07.660037+00:00'
+description: "Are you tired of dealing with sluggish browser performance due to numerous open tabs?"
 ---
 
 <img src="/content/images/unlocking-efficiency-auto-tab-suspender-extension-free-download-for-a-seamless-browsing-experience-mll9bskiotb/featured.webp" alt="Unlocking Efficiency: Auto Tab Suspender Extension Free Download for a Seamless Browsing Experience" width="1200" height="630" loading="lazy" class="featured-image">

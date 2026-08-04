@@ -3,20 +3,14 @@ seo_title: "Why Auto Dark Mode Matters for Programmers"
 id: 489e902e-14a1-489e-a827-be0f10763213
 title: Why Auto Dark Mode is essential for programmers
 slug: why-auto-dark-mode-is-essential-for-programmers-6
-excerpt: >-
-  As a programmer, you likely spend a significant amount of time staring at
-  screens, typing away at your keyboard, and debugging code. But have you ever
-  stopped t
+excerpt: "As a programmer, you likely spend a significant amount of time staring at screens, typing away at your keyboard, and debugging code."
 featured_image: >-
   /content/images/why-auto-dark-mode-is-essential-for-programmers-6/featured.webp
 category: Appearance & Themes
 tags: []
 keywords:
   - Why Auto Dark Mode is essential for programmers
-meta_description: >-
-  As a programmer, you likely spend a significant amount of time staring at
-  screens, typing away at your keyboard, and debugging code. But have you ever
-  stopped t
+meta_description: "As a programmer, you likely spend a significant amount of time staring at screens, typing away at your keyboard, and debugging code."
 status: published
 published_at: '2026-02-25T08:11:00.821+00:00'
 scheduled_at: '2026-02-25T08:11:00+00:00'
@@ -26,6 +20,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-21T12:43:50.607234+00:00'
 updated_at: '2026-04-23T12:27:40.025639+00:00'
+description: "As a programmer, you likely spend a significant amount of time staring at screens, typing away at your keyboard, and debugging code."
 ---
 
 <img src="/content/images/why-auto-dark-mode-is-essential-for-programmers-6/featured.webp" alt="Why Auto Dark Mode is essential for programmers" width="1200" height="630" loading="lazy" class="featured-image">

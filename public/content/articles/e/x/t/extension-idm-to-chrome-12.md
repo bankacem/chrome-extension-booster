@@ -3,19 +3,13 @@ seo_title: "Integrating IDM with Chrome Downloads"
 id: e10b091f-5bd2-4c60-bd58-8ff7d0bf4bac
 title: How to Integrate Extension IDM to Chrome for Enhanced Browsing Experience
 slug: extension-idm-to-chrome-12
-excerpt: >-
-  Are you looking to take your Chrome browsing experience to the next level?
-  Integrating an extension IDM to Chrome can be a game-changer. In this article,
-  we'll
+excerpt: "Are you looking to take your Chrome browsing experience to the next level? Integrating an extension IDM to Chrome can be a game-changer."
 featured_image: /content/images/extension-idm-to-chrome-12/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension idm to chrome
-meta_description: >-
-  Are you looking to take your Chrome browsing experience to the next level?
-  Integrating an extension IDM to Chrome can be a game-changer. In this article,
-  we'll
+meta_description: "Are you looking to take your Chrome browsing experience to the next level? Integrating an extension IDM to Chrome can be a game-changer."
 status: published
 published_at: '2026-02-14T08:11:01.224+00:00'
 scheduled_at: '2026-02-14T08:11:00+00:00'
@@ -25,6 +19,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-24T12:58:23.545569+00:00'
 updated_at: '2026-04-23T12:27:17.658537+00:00'
+description: "Are you looking to take your Chrome browsing experience to the next level? Integrating an extension IDM to Chrome can be a game-changer."
 ---
 
 <img src="/content/images/extension-idm-to-chrome-12/featured.webp" alt="How to Integrate Extension IDM to Chrome for Enhanced Browsing Experience" width="1200" height="630" loading="lazy" class="featured-image">

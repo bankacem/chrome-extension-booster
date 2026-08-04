@@ -6,20 +6,14 @@ title: >-
   Research
 slug: the-best-chrome-extension-for-keyword-research
   unlocking-the-power-of-keyword-research-the-best-chrome-extension-for-keyword-research-mmdt0zk2znj
-excerpt: >-
-  When it comes to search engine optimization (SEO), keyword research is a
-  crucial step in understanding your target audience and creating content that
-  resonates
+excerpt: "When it comes to search engine optimization (SEO), keyword research is a crucial step in understanding your target audience and creating content that…"
 featured_image: >-
   /content/images/unlocking-the-power-of-keyword-research-the-best-chrome-extension-for-keyword-research-mmdt0zk2znj/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - chrome extension for keyword research
-meta_description: >-
-  When it comes to search engine optimization (SEO), keyword research is a
-  crucial step in understanding your target audience and creating content that
-  resonates
+meta_description: "When it comes to search engine optimization (SEO), keyword research is a crucial step in understanding your target audience and creating content that…"
 status: published
 published_at: '2026-04-19T18:15:00.413+00:00'
 scheduled_at: '2026-04-19T18:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 7
 created_at: '2026-03-05T18:33:57.807243+00:00'
 updated_at: '2026-04-23T12:25:44.749545+00:00'
+description: "When it comes to search engine optimization (SEO), keyword research is a crucial step in understanding your target audience and creating content that…"
 ---
 
 <img src="/content/images/unlocking-the-power-of-keyword-research-the-best-chrome-extension-for-keyword-research-mmdt0zk2znj/featured.webp" alt="Unlocking the Power of Keyword Research: The Best Chrome Extension for Keyword Research" width="1200" height="630" loading="lazy" class="featured-image">

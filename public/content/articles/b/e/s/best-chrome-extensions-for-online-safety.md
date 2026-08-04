@@ -4,20 +4,14 @@ id: fb875d96-f54b-4c1a-b9d6-e588429bc796
 title: 'Best Chrome Extensions for Online Safety: Protecting Your Digital Footprint'
 slug: best-chrome-extensions-for-online-safety
   best-chrome-extensions-for-online-safety-protecting-your-digital-footprint-mmdzl1pwuso
-excerpt: >-
-  With the ever-increasing threat of cyber attacks, online safety has become a
-  top priority for internet users. Fortunately, Chrome extensions can provide an
-  extr
+excerpt: "With the ever-increasing threat of cyber attacks, online safety has become a top priority for internet users."
 featured_image: >-
   /content/images/best-chrome-extensions-for-online-safety-protecting-your-digital-footprint-mmdzl1pwuso/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - best chrome extensions for online safety
-meta_description: >-
-  With the ever-increasing threat of cyber attacks, online safety has become a
-  top priority for internet users. Fortunately, Chrome extensions can provide an
-  extr
+meta_description: "With the ever-increasing threat of cyber attacks, online safety has become a top priority for internet users."
 status: published
 published_at: '2026-03-05T21:48:48.804+00:00'
 scheduled_at: null
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-05T21:37:31.164738+00:00'
 updated_at: '2026-03-16T17:10:06.996823+00:00'
+description: "With the ever-increasing threat of cyber attacks, online safety has become a top priority for internet users."
 ---
 
 <img src="/content/images/best-chrome-extensions-for-online-safety-protecting-your-digital-footprint-mmdzl1pwuso/featured.webp" alt="Best Chrome Extensions for Online Safety: Protecting Your Digital Footprint" width="1200" height="630" loading="lazy" class="featured-image">

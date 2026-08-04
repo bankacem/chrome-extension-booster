@@ -5,10 +5,7 @@ title: >-
   Protecting your browser from URL hijacking: A Comprehensive Guide to Secure
   Browsing
 slug: protecting-your-browser-from-url-hijacking-4
-excerpt: >-
-  As we navigate the vast expanse of the internet, our browsers are constantly
-  at risk of falling prey to malicious attacks, including URL hijacking.
-  Protecting y
+excerpt: "As we navigate the vast expanse of the internet, our browsers are constantly at risk of falling prey to malicious attacks, including URL hijacking."
 featured_image: /content/images/protecting-your-browser-from-url-hijacking-4/featured.webp
 category: Redirect & Navigation
 tags:
@@ -17,10 +14,7 @@ tags:
     Browsing
 keywords:
   - Protecting your browser from URL hijacking
-meta_description: >-
-  As we navigate the vast expanse of the internet, our browsers are constantly
-  at risk of falling prey to malicious attacks, including URL hijacking.
-  Protecting y
+meta_description: "As we navigate the vast expanse of the internet, our browsers are constantly at risk of falling prey to malicious attacks, including URL hijacking."
 status: published
 published_at: '2026-03-10T08:11:00.58+00:00'
 scheduled_at: '2026-03-10T08:11:00+00:00'
@@ -30,6 +24,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-20T19:01:22.775303+00:00'
 updated_at: '2026-04-23T12:28:41.802534+00:00'
+description: "As we navigate the vast expanse of the internet, our browsers are constantly at risk of falling prey to malicious attacks, including URL hijacking."
 ---
 
 <img src="/content/images/protecting-your-browser-from-url-hijacking-4/featured.webp" alt="Protecting your browser from URL hijacking: A Comprehensive Guide to Secure Browsing" width="1200" height="630" loading="lazy" class="featured-image">

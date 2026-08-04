@@ -6,20 +6,14 @@ title: >-
   Efficiency
 slug: save-pc-resources-with-chrome-tab-suspension
   save-pc-resources-with-chrome-tab-suspension-boosting-browser-performance-and-efficiency-mll9bth0gxm
-excerpt: >-
-  When it comes to browsing the internet, having multiple tabs open at the same
-  time can be a convenient way to multitask and access different websites
-  simultaneo
+excerpt: "When it comes to browsing the internet, having multiple tabs open at the same time can be a convenient way to multitask and access different websites…"
 featured_image: >-
   /content/images/save-pc-resources-with-chrome-tab-suspension-boosting-browser-performance-and-efficiency-mll9bth0gxm/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - Save PC resources with Chrome tab suspension
-meta_description: >-
-  When it comes to browsing the internet, having multiple tabs open at the same
-  time can be a convenient way to multitask and access different websites
-  simultaneo
+meta_description: "When it comes to browsing the internet, having multiple tabs open at the same time can be a convenient way to multitask and access different websites…"
 status: published
 published_at: '2026-03-03T09:00:02.793+00:00'
 scheduled_at: '2026-03-03T09:00:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-02-13T19:04:57.746944+00:00'
 updated_at: '2026-04-23T12:26:06.631171+00:00'
+description: "When it comes to browsing the internet, having multiple tabs open at the same time can be a convenient way to multitask and access different websites…"
 ---
 
 <img src="/content/images/save-pc-resources-with-chrome-tab-suspension-boosting-browser-performance-and-efficiency-mll9bth0gxm/featured.webp" alt="Save PC Resources with Chrome Tab Suspension: Boosting Browser Performance and Efficiency" width="1200" height="630" loading="lazy" class="featured-image">

@@ -6,20 +6,14 @@ title: >-
   Test
 slug: test-your-website-speed-directly-in-chrome
   boost-your-online-presence-with-the-best-chrome-extension-for-website-speed-test-mmdt1198vtn
-excerpt: >-
-  Are you tired of slow-loading websites driving away your potential customers?
-  In today's digital age, website speed is crucial for providing a seamless user
-  exp
+excerpt: "Are you tired of slow-loading websites driving away your potential customers?"
 featured_image: >-
   /content/images/boost-your-online-presence-with-the-best-chrome-extension-for-website-speed-test-mmdt1198vtn/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - chrome extension for website speed test
-meta_description: >-
-  Are you tired of slow-loading websites driving away your potential customers?
-  In today's digital age, website speed is crucial for providing a seamless user
-  exp
+meta_description: "Are you tired of slow-loading websites driving away your potential customers?"
 status: published
 published_at: '2026-04-18T14:15:01.192+00:00'
 scheduled_at: '2026-04-18T14:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-05T18:33:59.771798+00:00'
 updated_at: '2026-04-23T12:25:40.043764+00:00'
+description: "Are you tired of slow-loading websites driving away your potential customers?"
 ---
 
 <img src="/content/images/boost-your-online-presence-with-the-best-chrome-extension-for-website-speed-test-mmdt1198vtn/featured.webp" alt="Boost Your Online Presence with the Best Chrome Extension for Website Speed Test" width="1200" height="630" loading="lazy" class="featured-image">

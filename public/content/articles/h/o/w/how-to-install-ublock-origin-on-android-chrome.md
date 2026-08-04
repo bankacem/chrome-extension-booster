@@ -4,20 +4,14 @@ id: 7c66b2c7-0ab6-4121-b135-826388910345
 title: 'How to Install uBlock Origin on Android Chrome: A Step-by-Step Guide'
 slug: how-to-install-ublock-origin-on-android-chrome
   how-to-install-ublock-origin-on-android-chrome-a-step-by-step-guide-mmthowe8g0u
-excerpt: >-
-  Are you tired of annoying ads and trackers disrupting your browsing experience
-  on Android Chrome? Look no further than uBlock Origin, a powerful ad blocker
-  that
+excerpt: "Are you tired of annoying ads and trackers disrupting your browsing experience on Android Chrome?"
 featured_image: >-
   /content/images/how-to-install-ublock-origin-on-android-chrome-a-step-by-step-guide-mmthowe8g0u/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - install ublock origin on android chrome
-meta_description: >-
-  Are you tired of annoying ads and trackers disrupting your browsing experience
-  on Android Chrome? Look no further than uBlock Origin, a powerful ad blocker
-  that
+meta_description: "Are you tired of annoying ads and trackers disrupting your browsing experience on Android Chrome?"
 status: published
 published_at: '2026-03-20T13:00:00.247+00:00'
 scheduled_at: '2026-03-20T13:00:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-16T18:00:56.040139+00:00'
 updated_at: '2026-04-18T18:40:05.703053+00:00'
+description: "Are you tired of annoying ads and trackers disrupting your browsing experience on Android Chrome?"
 ---
 
 <img src="/content/images/how-to-install-ublock-origin-on-android-chrome-a-step-by-step-guide-mmthowe8g0u/featured.webp" alt="How to Install uBlock Origin on Android Chrome: A Step-by-Step Guide" width="1200" height="630" loading="lazy" class="featured-image">

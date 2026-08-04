@@ -2,19 +2,13 @@
 id: 14405113-885a-4107-aa87-015af25f0563
 title: 'Encrypting your login data: A simple guide'
 slug: encrypting-your-login-data-a-simple-guide-6
-excerpt: >-
-  In today's digital age, online security is more important than ever. With the
-  rise of cyberattacks and data breaches, it's crucial to take steps to protect
-  your
+excerpt: "In today's digital age, online security is more important than ever. With the rise of cyberattacks and data breaches, it's crucial to take steps to protect…"
 featured_image: /content/images/encrypting-your-login-data-a-simple-guide-6/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - 'Encrypting your login data: A simple guide'
-meta_description: >-
-  In today's digital age, online security is more important than ever. With the
-  rise of cyberattacks and data breaches, it's crucial to take steps to protect
-  your
+meta_description: "In today's digital age, online security is more important than ever. With the rise of cyberattacks and data breaches, it's crucial to take steps to protect…"
 status: published
 published_at: '2026-02-28T20:11:01.477+00:00'
 scheduled_at: '2026-02-28T20:11:00+00:00'
@@ -24,6 +18,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-20T23:11:55.885565+00:00'
 updated_at: '2026-04-23T12:27:42.592147+00:00'
+description: "In today's digital age, online security is more important than ever. With the rise of cyberattacks and data breaches, it's crucial to take steps to protect…"
 ---
 
 <img src="/content/images/encrypting-your-login-data-a-simple-guide-6/featured.webp" alt="Encrypting your login data: A simple guide" width="1200" height="630" loading="lazy" class="featured-image">

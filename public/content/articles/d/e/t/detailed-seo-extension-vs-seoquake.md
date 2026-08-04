@@ -6,20 +6,14 @@ title: >-
   SEO Analysis
 slug: detailed-seo-extension-vs-seoquake
   detailed-seo-extension-vs-seoquake-a-comprehensive-comparison-for-enhanced-seo-analysis-mmtm0ebkaaz
-excerpt: >-
-  When it comes to optimizing your website for search engines, having the right
-  tools at your disposal is crucial. Two popular Chrome extensions that can help
-  you
+excerpt: "When it comes to optimizing your website for search engines, having the right tools at your disposal is crucial."
 featured_image: >-
   /content/images/detailed-seo-extension-vs-seoquake-a-comprehensive-comparison-for-enhanced-seo-analysis-mmtm0ebkaaz/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - detailed seo extension vs seoquake
-meta_description: >-
-  When it comes to optimizing your website for search engines, having the right
-  tools at your disposal is crucial. Two popular Chrome extensions that can help
-  you
+meta_description: "When it comes to optimizing your website for search engines, having the right tools at your disposal is crucial."
 status: published
 published_at: '2026-04-08T02:15:00.891+00:00'
 scheduled_at: '2026-04-08T02:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 7
 created_at: '2026-03-16T20:01:50.685339+00:00'
 updated_at: '2026-04-23T12:21:38.32087+00:00'
+description: "When it comes to optimizing your website for search engines, having the right tools at your disposal is crucial."
 ---
 
 <img src="/content/images/detailed-seo-extension-vs-seoquake-a-comprehensive-comparison-for-enhanced-seo-analysis-mmtm0ebkaaz/featured.webp" alt="Detailed SEO Extension vs SEOQuake: A Comprehensive Comparison for Enhanced SEO Analysis" width="1200" height="630" loading="lazy" class="featured-image">

@@ -6,20 +6,14 @@ title: >-
   to Use Chrome Extensions on Mobile
 slug: >-
   unlocking-the-full-potential-of-chrome-on-mobile-a-step-by-step-guide-on-how-to-use-chrome-extension-mmthovaloyu
-excerpt: >-
-  As the world becomes increasingly mobile, it's essential to have a seamless
-  browsing experience on your smartphone or tablet. Google Chrome, one of the
-  most pop
+excerpt: "As the world becomes increasingly mobile, it's essential to have a seamless browsing experience on your smartphone or tablet."
 featured_image: >-
   /content/images/unlocking-the-full-potential-of-chrome-on-mobile-a-step-by-step-guide-on-how-to-use-chrome-extension-mmthovaloyu/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - how to use chrome extensions on mobile
-meta_description: >-
-  As the world becomes increasingly mobile, it's essential to have a seamless
-  browsing experience on your smartphone or tablet. Google Chrome, one of the
-  most pop
+meta_description: "As the world becomes increasingly mobile, it's essential to have a seamless browsing experience on your smartphone or tablet."
 status: published
 published_at: '2026-03-18T13:01:00.639+00:00'
 scheduled_at: '2026-03-18T13:00:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-16T18:00:54.743217+00:00'
 updated_at: '2026-04-23T12:25:19.525133+00:00'
+description: "As the world becomes increasingly mobile, it's essential to have a seamless browsing experience on your smartphone or tablet."
 ---
 
 <img src="/content/images/unlocking-the-full-potential-of-chrome-on-mobile-a-step-by-step-guide-on-how-to-use-chrome-extension-mmthovaloyu/featured.webp" alt="Unlocking the Full Potential of Chrome on Mobile: A Step-by-Step Guide on How to Use Chrome Extensions on Mobile" width="1200" height="630" loading="lazy" class="featured-image">

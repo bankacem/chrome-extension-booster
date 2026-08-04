@@ -6,20 +6,14 @@ title: >-
   Media Marketing
 slug: boost-your-online-presence
   boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing-mmdsutdfgz9
-excerpt: >-
-  As a social media marketer, you're constantly looking for ways to streamline
-  your workflow, increase productivity, and stay ahead of the competition. One
-  often
+excerpt: "As a social media marketer, you're constantly looking for ways to streamline your workflow, increase productivity, and stay ahead of the competition."
 featured_image: >-
   /content/images/boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing-mmdsutdfgz9/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - chrome extension for social media marketing
-meta_description: >-
-  As a social media marketer, you're constantly looking for ways to streamline
-  your workflow, increase productivity, and stay ahead of the competition. One
-  often
+meta_description: "As a social media marketer, you're constantly looking for ways to streamline your workflow, increase productivity, and stay ahead of the competition."
 status: published
 published_at: '2026-04-20T06:15:00.801+00:00'
 scheduled_at: '2026-04-20T06:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-05T18:29:09.625574+00:00'
 updated_at: '2026-04-23T12:25:47.032077+00:00'
+description: "As a social media marketer, you're constantly looking for ways to streamline your workflow, increase productivity, and stay ahead of the competition."
 ---
 
 <img src="/content/images/boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing-mmdsutdfgz9/featured.webp" alt="Boost Your Online Presence: The Ultimate Guide to Chrome Extensions for Social Media Marketing" width="1200" height="630" loading="lazy" class="featured-image">

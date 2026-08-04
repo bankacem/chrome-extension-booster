@@ -5,19 +5,13 @@ title: >-
   Unlock Efficient Bug Tracking with Bugherd Extension Chrome: A Comprehensive
   Guide
 slug: bugherd-extension-chrome-2
-excerpt: >-
-  Are you tired of tedious bug tracking and project management processes? Look
-  no further than the Bugherd extension Chrome, a game-changing tool designed to
-  stre
+excerpt: "Are you tired of tedious bug tracking and project management processes?"
 featured_image: /content/images/bugherd-extension-chrome-2/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - bugherd extension chrome
-meta_description: >-
-  Are you tired of tedious bug tracking and project management processes? Look
-  no further than the Bugherd extension Chrome, a game-changing tool designed to
-  stre
+meta_description: "Are you tired of tedious bug tracking and project management processes?"
 status: published
 published_at: '2026-02-10T14:11:01.982+00:00'
 scheduled_at: '2026-02-10T14:11:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-24T14:11:49.50608+00:00'
 updated_at: '2026-04-23T12:26:53.395603+00:00'
+description: "Are you tired of tedious bug tracking and project management processes?"
 ---
 
 <img src="/content/images/bugherd-extension-chrome-2/featured.webp" alt="Unlock Efficient Bug Tracking with Bugherd Extension Chrome: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

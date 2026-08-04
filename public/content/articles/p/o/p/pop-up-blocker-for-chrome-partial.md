@@ -5,19 +5,13 @@ title: >-
   Get the Best Free Pop Up Blocker for Google Chrome to Enhance Your Browsing
   Experience
 slug: pop-up-blocker-for-chrome-partial
-excerpt: >-
-  Are you tired of annoying pop-ups and intrusive ads disrupting your online
-  experience? Look no further than a free pop up blocker for Google Chrome.
-  These handy
+excerpt: "Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a free pop up blocker for Google Chrome."
 featured_image: /content/images/pop-up-blocker-for-chrome-partial/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - free pop up blocker for google chrome
-meta_description: >-
-  Are you tired of annoying pop-ups and intrusive ads disrupting your online
-  experience? Look no further than a free pop up blocker for Google Chrome.
-  These handy
+meta_description: "Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a free pop up blocker for Google Chrome."
 status: published
 published_at: '2026-03-12T09:00:03.771+00:00'
 scheduled_at: '2026-03-12T09:00:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-02-26T18:17:20.560705+00:00'
 updated_at: '2026-03-16T14:42:52.850152+00:00'
+description: "Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a free pop up blocker for Google Chrome."
 ---
 
 <img src="/content/images/pop-up-blocker-for-chrome-partial/featured.webp" alt="Get the Best Free Pop Up Blocker for Google Chrome to Enhance Your Browsing Experience" width="1200" height="630" loading="lazy" class="featured-image">

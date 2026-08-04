@@ -6,20 +6,14 @@ title: >-
   Browser
 slug: how-to-disable-chrome-extensions-simplifying-your-browser
   how-to-disable-chrome-extensions-a-step-by-step-guide-to-simplifying-your-browser-mmdrxyx6he9
-excerpt: >-
-  Are you tired of having too many Chrome extensions running in the background,
-  slowing down your browser and consuming valuable resources? Learning how to
-  disabl
+excerpt: "Are you tired of having too many Chrome extensions running in the background, slowing down your browser and consuming valuable resources?"
 featured_image: >-
   /content/images/how-to-disable-chrome-extensions-a-step-by-step-guide-to-simplifying-your-browser-mmdrxyx6he9/featured.webp
 category: Appearance & Themes
 tags: []
 keywords:
   - how to disable chrome extensions
-meta_description: >-
-  Are you tired of having too many Chrome extensions running in the background,
-  slowing down your browser and consuming valuable resources? Learning how to
-  disabl
+meta_description: "Are you tired of having too many Chrome extensions running in the background, slowing down your browser and consuming valuable resources?"
 status: published
 published_at: '2026-04-22T14:15:01.035+00:00'
 scheduled_at: '2026-04-22T14:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-05T18:03:37.183664+00:00'
 updated_at: '2026-04-23T12:25:52.340441+00:00'
+description: "Are you tired of having too many Chrome extensions running in the background, slowing down your browser and consuming valuable resources?"
 ---
 
 <img src="/content/images/how-to-disable-chrome-extensions-a-step-by-step-guide-to-simplifying-your-browser-mmdrxyx6he9/featured.webp" alt="How to Disable Chrome Extensions: A Step-by-Step Guide to Simplifying Your Browser" width="1200" height="630" loading="lazy" class="featured-image">

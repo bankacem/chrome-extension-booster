@@ -3,19 +3,13 @@ seo_title: "Introduction to Extension Chrome Presearch"
 id: 60512e74-be52-411e-b16d-e1536997431a
 title: 'Unlock the Power of Private Search: Introduction to Extension Chrome Presearch'
 slug: extension-chrome-presearch-14
-excerpt: >-
-  Are you tired of using search engines that track your every move and sell your
-  data to third-party companies? Look no further than extension chrome
-  presearch, a
+excerpt: "Are you tired of using search engines that track your every move and sell your data to third-party companies?"
 featured_image: /content/images/extension-chrome-presearch-14/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome presearch
-meta_description: >-
-  Are you tired of using search engines that track your every move and sell your
-  data to third-party companies? Look no further than extension chrome
-  presearch, a
+meta_description: "Are you tired of using search engines that track your every move and sell your data to third-party companies?"
 status: published
 published_at: '2026-02-07T14:11:01.141+00:00'
 scheduled_at: '2026-02-07T14:11:00+00:00'
@@ -25,6 +19,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-24T14:11:59.174436+00:00'
 updated_at: '2026-04-23T12:26:49.983952+00:00'
+description: "Are you tired of using search engines that track your every move and sell your data to third-party companies?"
 ---
 
 <img src="/content/images/extension-chrome-presearch-14/featured.webp" alt="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch" width="1200" height="630" loading="lazy" class="featured-image">

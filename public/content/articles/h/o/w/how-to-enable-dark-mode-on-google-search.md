@@ -3,19 +3,13 @@ seo_title: "How to Enable Dark Mode on Google Search"
 id: bfe0739b-41bc-478c-bf03-f3d5a0d06b00
 title: 'How to Enable Dark Mode on Google Search: A Step-by-Step Guide'
 slug: how-to-enable-dark-mode-on-google-search
-excerpt: >-
-  Are you tired of the traditional bright white background of Google Search? Do
-  you want to reduce eye strain and give your eyes a break? Enabling Dark Mode
-  on Go
+excerpt: "Are you tired of the traditional bright white background of Google Search? Do you want to reduce eye strain and give your eyes a break?"
 featured_image: /content/images/how-to-enable-dark-mode-on-google-search/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - How to enable Dark Mode on Google Search
-meta_description: >-
-  Are you tired of the traditional bright white background of Google Search? Do
-  you want to reduce eye strain and give your eyes a break? Enabling Dark Mode
-  on Go
+meta_description: "Are you tired of the traditional bright white background of Google Search? Do you want to reduce eye strain and give your eyes a break?"
 status: published
 published_at: '2026-02-27T20:11:00.504+00:00'
 scheduled_at: '2026-02-27T20:11:00+00:00'
@@ -25,6 +19,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-21T12:39:41.253618+00:00'
 updated_at: '2026-04-23T12:27:41.328012+00:00'
+description: "Are you tired of the traditional bright white background of Google Search? Do you want to reduce eye strain and give your eyes a break?"
 ---
 
 <img src="/content/images/how-to-enable-dark-mode-on-google-search/featured.webp" alt="How to Enable Dark Mode on Google Search: A Step-by-Step Guide" width="1200" height="630" loading="lazy" class="featured-image">

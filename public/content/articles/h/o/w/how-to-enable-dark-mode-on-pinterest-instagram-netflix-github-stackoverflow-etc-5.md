@@ -6,10 +6,7 @@ title: >-
   StackOverflow, and More
 slug: >-
   how-to-enable-dark-mode-on-pinterest-instagram-netflix-github-stackoverflow-etc-5
-excerpt: >-
-  Are you tired of the bright, eye-straining interfaces of your favorite
-  websites and apps? Do you want to know how to enable Dark Mode on Pinterest,
-  Instagram, N
+excerpt: "Are you tired of the bright, eye-straining interfaces of your favorite websites and apps?"
 featured_image: >-
   /content/images/how-to-enable-dark-mode-on-pinterest-instagram-netflix-github-stackoverflow-etc-5/featured.webp
 category: Screenshots & Screen Capture
@@ -20,10 +17,7 @@ keywords:
   - GitHub
   - StackOverflow
   - etc)
-meta_description: >-
-  Are you tired of the bright, eye-straining interfaces of your favorite
-  websites and apps? Do you want to know how to enable Dark Mode on Pinterest,
-  Instagram, N
+meta_description: "Are you tired of the bright, eye-straining interfaces of your favorite websites and apps?"
 status: published
 published_at: '2026-02-25T14:11:01.611+00:00'
 scheduled_at: '2026-02-25T14:11:00+00:00'
@@ -33,6 +27,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-21T12:43:50.116908+00:00'
 updated_at: '2026-03-03T17:57:48.933393+00:00'
+description: "Are you tired of the bright, eye-straining interfaces of your favorite websites and apps?"
 ---
 
 <img src="/content/images/how-to-enable-dark-mode-on-pinterest-instagram-netflix-github-stackoverflow-etc-5/featured.webp" alt="How to Enable Dark Mode on Pinterest, Instagram, Netflix, GitHub, StackOverflow, and More" width="1200" height="630" loading="lazy" class="featured-image">

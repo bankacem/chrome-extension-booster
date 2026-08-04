@@ -5,19 +5,13 @@ title: >-
   Unlocking the Power of everliker chrome: A Comprehensive Guide to Boosting
   Productivity
 slug: everliker-chrome-mkzmqfniyji
-excerpt: >-
-  Are you tired of manually liking posts on social media platforms? Do you want
-  to increase your online presence without spending hours liking and commenting
-  on p
+excerpt: "Are you tired of manually liking posts on social media platforms? Do you want to increase your online presence without spending hours liking and commenting…"
 featured_image: /content/images/everliker-chrome-mkzmqfniyji/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - everliker chrome
-meta_description: >-
-  Are you tired of manually liking posts on social media platforms? Do you want
-  to increase your online presence without spending hours liking and commenting
-  on p
+meta_description: "Are you tired of manually liking posts on social media platforms? Do you want to increase your online presence without spending hours liking and commenting…"
 status: published
 published_at: '2026-05-07T06:15:03.686+00:00'
 scheduled_at: '2026-05-07T06:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-29T15:49:21.712223+00:00'
 updated_at: '2026-05-07T06:15:03.840315+00:00'
+description: "Are you tired of manually liking posts on social media platforms? Do you want to increase your online presence without spending hours liking and commenting…"
 ---
 
 <img src="/content/images/everliker-chrome-mkzmqfniyji/featured.webp" alt="Unlocking the Power of everliker chrome: A Comprehensive Guide to Boosting Productivity" width="1200" height="630" loading="lazy" class="featured-image">

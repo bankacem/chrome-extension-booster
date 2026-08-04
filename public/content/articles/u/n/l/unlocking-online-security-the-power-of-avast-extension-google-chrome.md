@@ -4,20 +4,14 @@ id: dc8dba5c-6f99-46a8-b92d-5ad5307c53e4
 title: 'Unlocking Online Security: The Power of Avast Extension Google Chrome'
 slug: unlocking-online-security-the-power-of-avast-extension-google-chrome
   unlocking-online-security-the-power-of-avast-extension-google-chrome-ml5gzc17bcg
-excerpt: >-
-  As the world becomes increasingly digital, online security has become a top
-  priority for internet users. With the rise of cyber threats and malicious
-  activities
+excerpt: "As the world becomes increasingly digital, online security has become a top priority for internet users."
 featured_image: >-
   /content/images/unlocking-online-security-the-power-of-avast-extension-google-chrome-ml5gzc17bcg/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - avast extension google chrome
-meta_description: >-
-  As the world becomes increasingly digital, online security has become a top
-  priority for internet users. With the rise of cyber threats and malicious
-  activities
+meta_description: "As the world becomes increasingly digital, online security has become a top priority for internet users."
 status: published
 published_at: '2026-04-29T14:15:02.17+00:00'
 scheduled_at: '2026-04-29T14:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-02-02T17:55:01.402602+00:00'
 updated_at: '2026-04-29T14:15:02.346494+00:00'
+description: "As the world becomes increasingly digital, online security has become a top priority for internet users."
 ---
 
 <img src="/content/images/unlocking-online-security-the-power-of-avast-extension-google-chrome-ml5gzc17bcg/featured.webp" alt="Unlocking Online Security: The Power of Avast Extension Google Chrome" width="1200" height="630" loading="lazy" class="featured-image">

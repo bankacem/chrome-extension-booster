@@ -5,19 +5,13 @@ title: >-
   Effortlessly Manage Your Browser: A Comprehensive Guide to Export Extension
   Chrome
 slug: effortlessly-manage-your-browser-export-extension-chrome
-excerpt: >-
-  Are you tired of manually reinstalling your favorite Chrome extensions every
-  time you switch to a new device or browser profile? Look no further! In this
-  articl
+excerpt: "Are you tired of manually reinstalling your favorite Chrome extensions every time you switch to a new device or browser profile? Look no further!"
 featured_image: /content/images/export-extension-chrome-mkzmqlg97qy/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - export extension chrome
-meta_description: >-
-  Are you tired of manually reinstalling your favorite Chrome extensions every
-  time you switch to a new device or browser profile? Look no further! In this
-  articl
+meta_description: "Are you tired of manually reinstalling your favorite Chrome extensions every time you switch to a new device or browser profile? Look no further!"
 status: published
 published_at: '2026-05-06T22:15:00.341+00:00'
 scheduled_at: '2026-05-06T22:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-29T15:49:29.327238+00:00'
 updated_at: '2026-05-06T22:15:00.404575+00:00'
+description: "Are you tired of manually reinstalling your favorite Chrome extensions every time you switch to a new device or browser profile? Look no further!"
 ---
 
 <img src="/content/images/export-extension-chrome-mkzmqlg97qy/featured.webp" alt="Effortlessly Manage Your Browser: A Comprehensive Guide to Export Extension Chrome" width="1200" height="630" loading="lazy" class="featured-image">

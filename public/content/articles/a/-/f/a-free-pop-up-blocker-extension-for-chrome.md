@@ -6,20 +6,14 @@ title: >-
   Browsing Experience
 slug: a-free-pop-up-blocker-extension-for-chrome
   unlock-the-power-of-a-free-pop-up-blocker-chrome-extension-for-a-seamless-browsing-experience-mm3scnkaas3
-excerpt: >-
-  Are you tired of annoying pop-ups and intrusive ads ruining your online
-  experience? Look no further than a free pop up blocker Chrome extension. In
-  this article
+excerpt: "Are you tired of annoying pop-ups and intrusive ads ruining your online experience? Look no further than a free pop up blocker Chrome extension."
 featured_image: >-
   /content/images/unlock-the-power-of-a-free-pop-up-blocker-chrome-extension-for-a-seamless-browsing-experience-mm3scnkaas3/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - free pop up blocker chrome
-meta_description: >-
-  Are you tired of annoying pop-ups and intrusive ads ruining your online
-  experience? Look no further than a free pop up blocker Chrome extension. In
-  this article
+meta_description: "Are you tired of annoying pop-ups and intrusive ads ruining your online experience? Look no further than a free pop up blocker Chrome extension."
 status: published
 published_at: '2026-03-11T09:00:10.449+00:00'
 scheduled_at: '2026-03-11T09:00:00+00:00'
@@ -29,6 +23,7 @@ views: 3
 read_time: 5
 created_at: '2026-02-26T18:17:20.374117+00:00'
 updated_at: '2026-03-26T12:00:53.57667+00:00'
+description: "Are you tired of annoying pop-ups and intrusive ads ruining your online experience? Look no further than a free pop up blocker Chrome extension."
 ---
 
 <img src="/content/images/unlock-the-power-of-a-free-pop-up-blocker-chrome-extension-for-a-seamless-browsing-experience-mm3scnkaas3/featured.webp" alt="Unlock the Power of a Free Pop Up Blocker Chrome Extension for a Seamless Browsing Experience" width="1200" height="630" loading="lazy" class="featured-image">

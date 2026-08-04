@@ -5,20 +5,14 @@ title: >-
   Enable Night Mode on LinkedIn for Eye Protection: A Guide to Reduced Blue
   Light Emission
 slug: enable-night-mode-on-linkedin-for-eye-protection-1
-excerpt: >-
-  As we spend more time on social media platforms like LinkedIn, it's essential
-  to consider the impact of screen time on our eye health. One way to mitigate
-  this
+excerpt: "As we spend more time on social media platforms like LinkedIn, it's essential to consider the impact of screen time on our eye health."
 featured_image: >-
   /content/images/enable-night-mode-on-linkedin-for-eye-protection-1/featured.webp
 category: Appearance & Themes
 tags: []
 keywords:
   - Enable Night Mode on LinkedIn for eye protection
-meta_description: >-
-  As we spend more time on social media platforms like LinkedIn, it's essential
-  to consider the impact of screen time on our eye health. One way to mitigate
-  this
+meta_description: "As we spend more time on social media platforms like LinkedIn, it's essential to consider the impact of screen time on our eye health."
 status: published
 published_at: '2026-02-26T14:11:00.913+00:00'
 scheduled_at: '2026-02-26T14:11:00+00:00'
@@ -28,6 +22,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-21T12:43:48.16067+00:00'
 updated_at: '2026-04-23T12:27:40.529888+00:00'
+description: "As we spend more time on social media platforms like LinkedIn, it's essential to consider the impact of screen time on our eye health."
 ---
 
 <img src="/content/images/enable-night-mode-on-linkedin-for-eye-protection-1/featured.webp" alt="Enable Night Mode on LinkedIn for Eye Protection: A Guide to Reduced Blue Light Emission" width="1200" height="630" loading="lazy" class="featured-image">

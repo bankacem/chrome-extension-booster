@@ -5,10 +5,7 @@ title: >-
   Full Page Screenshot Chrome Tutorial: A Step-by-Step Guide to Capturing
   Perfect Screenshots
 slug: full-page-screenshot-chrome-tutorial-8
-excerpt: >-
-  Welcome to our comprehensive Full Page Screenshot Chrome Tutorial, where we
-  will walk you through the process of capturing perfect full-page screenshots
-  using G
+excerpt: "Welcome to our comprehensive Full Page Screenshot Chrome Tutorial, where we will walk you through the process of capturing perfect full-page screenshots…"
 featured_image: /content/images/full-page-screenshot-chrome-tutorial-8/featured.webp
 category: Screenshots & Screen Capture
 tags:
@@ -17,10 +14,7 @@ tags:
     Perfect Screenshots
 keywords:
   - Full Page Screenshot Chrome Tutorial
-meta_description: >-
-  Welcome to our comprehensive Full Page Screenshot Chrome Tutorial, where we
-  will walk you through the process of capturing perfect full-page screenshots
-  using G
+meta_description: "Welcome to our comprehensive Full Page Screenshot Chrome Tutorial, where we will walk you through the process of capturing perfect full-page screenshots…"
 status: published
 published_at: '2026-03-05T02:11:01.262+00:00'
 scheduled_at: '2026-03-05T02:11:00+00:00'
@@ -30,6 +24,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-20T20:54:13.358925+00:00'
 updated_at: '2026-03-16T14:43:29.200069+00:00'
+description: "Welcome to our comprehensive Full Page Screenshot Chrome Tutorial, where we will walk you through the process of capturing perfect full-page screenshots…"
 ---
 
 <img src="/content/images/full-page-screenshot-chrome-tutorial-8/featured.webp" alt="Full Page Screenshot Chrome Tutorial: A Step-by-Step Guide to Capturing Perfect Screenshots" width="1200" height="630" loading="lazy" class="featured-image">

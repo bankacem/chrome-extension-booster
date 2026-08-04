@@ -4,20 +4,14 @@ id: 39de6c99-b25c-4cc0-9ce6-f864ffe0af47
 title: 'OneTab Extension Review 2026: A Comprehensive Guide to Boosting Productivity'
 slug: onetab-extension-review-2026-boosting-productivity
   onetab-extension-review-2026-a-comprehensive-guide-to-boosting-productivity-mmtizyg08jk
-excerpt: >-
-  Welcome to our OneTab extension review 2026, where we'll delve into the
-  features, benefits, and drawbacks of this popular Chrome extension. As someone
-  who's loo
+excerpt: "Welcome to our OneTab extension review 2026, where we'll delve into the features, benefits, and drawbacks of this popular Chrome extension."
 featured_image: >-
   /content/images/onetab-extension-review-2026-a-comprehensive-guide-to-boosting-productivity-mmtizyg08jk/featured.webp
 category: Productivity
 tags: []
 keywords:
   - onetab extension review 2026
-meta_description: >-
-  Welcome to our OneTab extension review 2026, where we'll delve into the
-  features, benefits, and drawbacks of this popular Chrome extension. As someone
-  who's loo
+meta_description: "Welcome to our OneTab extension review 2026, where we'll delve into the features, benefits, and drawbacks of this popular Chrome extension."
 status: published
 published_at: '2026-03-29T08:00:00.301+00:00'
 scheduled_at: '2026-03-29T08:00:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-16T18:37:31.401814+00:00'
 updated_at: '2026-04-23T12:25:02.723541+00:00'
+description: "Welcome to our OneTab extension review 2026, where we'll delve into the features, benefits, and drawbacks of this popular Chrome extension."
 ---
 
 <img src="/content/images/onetab-extension-review-2026-a-comprehensive-guide-to-boosting-productivity-mmtizyg08jk/featured.webp" alt="OneTab Extension Review 2026: A Comprehensive Guide to Boosting Productivity" width="1200" height="630" loading="lazy" class="featured-image">

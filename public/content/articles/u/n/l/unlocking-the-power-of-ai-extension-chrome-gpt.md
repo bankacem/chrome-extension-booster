@@ -3,19 +3,13 @@ seo_title: "Chrome GPT: Bringing AI Into Your Browser"
 id: eb91b432-575c-4603-b638-e3a11d27504a
 title: 'Unlocking the Power of AI: The Ultimate Guide to Extension Chrome GPT'
 slug: unlocking-the-power-of-ai-extension-chrome-gpt
-excerpt: >-
-  Welcome to the world of artificial intelligence, where extension chrome gpt is
-  revolutionizing the way we browse and interact with the internet. In this
-  compreh
+excerpt: "Welcome to the world of artificial intelligence, where extension chrome gpt is revolutionizing the way we browse and interact with the internet."
 featured_image: /content/images/extension-chrome-gpt-mkzp2hiqkfu/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome gpt
-meta_description: >-
-  Welcome to the world of artificial intelligence, where extension chrome gpt is
-  revolutionizing the way we browse and interact with the internet. In this
-  compreh
+meta_description: "Welcome to the world of artificial intelligence, where extension chrome gpt is revolutionizing the way we browse and interact with the internet."
 status: published
 published_at: '2026-05-03T14:15:00.41+00:00'
 scheduled_at: '2026-05-03T14:15:00+00:00'
@@ -25,6 +19,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-29T16:54:43.211625+00:00'
 updated_at: '2026-05-03T14:15:00.576338+00:00'
+description: "Welcome to the world of artificial intelligence, where extension chrome gpt is revolutionizing the way we browse and interact with the internet."
 ---
 
 <img src="/content/images/extension-chrome-gpt-mkzp2hiqkfu/featured.webp" alt="Unlocking the Power of AI: The Ultimate Guide to Extension Chrome GPT" width="1200" height="630" loading="lazy" class="featured-image">

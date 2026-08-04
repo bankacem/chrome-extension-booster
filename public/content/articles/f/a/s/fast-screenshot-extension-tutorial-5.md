@@ -5,10 +5,7 @@ title: >-
   Mastering the Art of Fast Screenshotting: A Comprehensive Fast Screenshot
   Extension Tutorial
 slug: fast-screenshot-extension-tutorial-5
-excerpt: >-
-  Are you tired of the hassle and frustration that comes with taking screenshots
-  the traditional way? Look no further! With the help of a fast screenshot
-  extensio
+excerpt: "Are you tired of the hassle and frustration that comes with taking screenshots the traditional way? Look no further!"
 featured_image: /content/images/fast-screenshot-extension-tutorial-5/featured.webp
 category: Screenshots & Screen Capture
 tags:
@@ -17,10 +14,7 @@ tags:
     Extension Tutorial
 keywords:
   - fast screenshot extension tutorial
-meta_description: >-
-  Are you tired of the hassle and frustration that comes with taking screenshots
-  the traditional way? Look no further! With the help of a fast screenshot
-  extensio
+meta_description: "Are you tired of the hassle and frustration that comes with taking screenshots the traditional way? Look no further!"
 status: published
 published_at: '2026-02-22T08:11:00.351+00:00'
 scheduled_at: '2026-02-22T08:11:00+00:00'
@@ -30,6 +24,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-21T13:12:23.548819+00:00'
 updated_at: '2026-04-23T12:27:36.445811+00:00'
+description: "Are you tired of the hassle and frustration that comes with taking screenshots the traditional way? Look no further!"
 ---
 
 <img src="/content/images/fast-screenshot-extension-tutorial-5/featured.webp" alt="Mastering the Art of Fast Screenshotting: A Comprehensive Fast Screenshot Extension Tutorial" width="1200" height="630" loading="lazy" class="featured-image">

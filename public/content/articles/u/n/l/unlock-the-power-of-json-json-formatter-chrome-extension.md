@@ -6,20 +6,14 @@ title: >-
   Extension
 slug: unlock-the-power-of-json-json-formatter-chrome-extension
   unlock-the-power-of-json-the-ultimate-guide-to-json-formatter-chrome-extension-mmtm0fnlxhc
-excerpt: >-
-  As a developer, working with JSON (JavaScript Object Notation) data is a daily
-  task. However, formatting and validating JSON data can be a tedious and
-  time-cons
+excerpt: "As a developer, working with JSON (JavaScript Object Notation) data is a daily task."
 featured_image: >-
   /content/images/unlock-the-power-of-json-the-ultimate-guide-to-json-formatter-chrome-extension-mmtm0fnlxhc/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - json formatter chrome extension
-meta_description: >-
-  As a developer, working with JSON (JavaScript Object Notation) data is a daily
-  task. However, formatting and validating JSON data can be a tedious and
-  time-cons
+meta_description: "As a developer, working with JSON (JavaScript Object Notation) data is a daily task."
 status: published
 published_at: '2026-04-07T02:15:00.331+00:00'
 scheduled_at: '2026-04-07T02:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-16T20:01:52.395708+00:00'
 updated_at: '2026-04-23T12:21:09.926838+00:00'
+description: "As a developer, working with JSON (JavaScript Object Notation) data is a daily task."
 ---
 
 <img src="/content/images/unlock-the-power-of-json-the-ultimate-guide-to-json-formatter-chrome-extension-mmtm0fnlxhc/featured.webp" alt="Unlock the Power of JSON: The Ultimate Guide to JSON Formatter Chrome Extension" width="1200" height="630" loading="lazy" class="featured-image">

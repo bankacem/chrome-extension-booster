@@ -5,19 +5,13 @@ title: >-
   Unlocking the Power of Google Tag Manager: A Comprehensive Guide to the
   Extension Chrome Google Tag Manager
 slug: extension-chrome-google-tag-manager-11
-excerpt: >-
-  Are you looking to take your website analytics to the next level? Do you want
-  to streamline your marketing efforts and gain valuable insights into your
-  online p
+excerpt: "Are you looking to take your website analytics to the next level? Do you want to streamline your marketing efforts and gain valuable insights into your…"
 featured_image: /content/images/extension-chrome-google-tag-manager-11/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension chrome google tag manager
-meta_description: >-
-  Are you looking to take your website analytics to the next level? Do you want
-  to streamline your marketing efforts and gain valuable insights into your
-  online p
+meta_description: "Are you looking to take your website analytics to the next level? Do you want to streamline your marketing efforts and gain valuable insights into your…"
 status: published
 published_at: '2026-02-08T08:11:00.943+00:00'
 scheduled_at: '2026-02-08T08:11:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-01-24T14:11:56.812187+00:00'
 updated_at: '2026-04-23T12:26:50.827356+00:00'
+description: "Are you looking to take your website analytics to the next level? Do you want to streamline your marketing efforts and gain valuable insights into your…"
 ---
 
 <img src="/content/images/extension-chrome-google-tag-manager-11/featured.webp" alt="Unlocking the Power of Google Tag Manager: A Comprehensive Guide to the Extension Chrome Google Tag Manager" width="1200" height="630" loading="lazy" class="featured-image">

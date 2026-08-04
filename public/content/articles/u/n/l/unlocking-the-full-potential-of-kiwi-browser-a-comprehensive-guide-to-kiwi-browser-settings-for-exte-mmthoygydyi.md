@@ -6,20 +6,14 @@ title: >-
   Browser Settings for Extensions
 slug: >-
   unlocking-the-full-potential-of-kiwi-browser-a-comprehensive-guide-to-kiwi-browser-settings-for-exte-mmthoygydyi
-excerpt: >-
-  As a user of the Kiwi browser, you're likely aware of its impressive
-  capabilities and flexibility. One of the key features that sets Kiwi apart
-  from other brows
+excerpt: "As a user of the Kiwi browser, you're likely aware of its impressive capabilities and flexibility."
 featured_image: >-
   /content/images/unlocking-the-full-potential-of-kiwi-browser-a-comprehensive-guide-to-kiwi-browser-settings-for-exte-mmthoygydyi/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - kiwi browser settings for extensions
-meta_description: >-
-  As a user of the Kiwi browser, you're likely aware of its impressive
-  capabilities and flexibility. One of the key features that sets Kiwi apart
-  from other brows
+meta_description: "As a user of the Kiwi browser, you're likely aware of its impressive capabilities and flexibility."
 status: published
 published_at: '2026-03-23T12:00:00.491+00:00'
 scheduled_at: '2026-03-23T12:00:00+00:00'
@@ -29,6 +23,7 @@ views: 1
 read_time: 6
 created_at: '2026-03-16T18:00:58.785966+00:00'
 updated_at: '2026-04-23T12:25:16.316543+00:00'
+description: "As a user of the Kiwi browser, you're likely aware of its impressive capabilities and flexibility."
 ---
 
 <img src="/content/images/unlocking-the-full-potential-of-kiwi-browser-a-comprehensive-guide-to-kiwi-browser-settings-for-exte-mmthoygydyi/featured.webp" alt="Unlocking the Full Potential of Kiwi Browser: A Comprehensive Guide to Kiwi Browser Settings for Extensions" width="1200" height="630" loading="lazy" class="featured-image">

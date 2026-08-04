@@ -6,20 +6,14 @@ title: >-
   Productivity
 slug: best-chrome-extensions-for-pcs-with-4gb-ram
   best-chrome-extensions-for-old-pcs-with-4gb-ram-boosting-performance-and-productivity-mmb7srvijtp
-excerpt: >-
-  Are you struggling to get the most out of your old PC with 4GB RAM? Do you
-  find that your browser is slow and unresponsive, making it difficult to stay
-  producti
+excerpt: "Are you struggling to get the most out of your old PC with 4GB RAM? Do you find that your browser is slow and unresponsive, making it difficult to stay…"
 featured_image: >-
   /content/images/best-chrome-extensions-for-old-pcs-with-4gb-ram-boosting-performance-and-productivity-mmb7srvijtp/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - Best Chrome extensions for old PCs with 4GB RAM
-meta_description: >-
-  Are you struggling to get the most out of your old PC with 4GB RAM? Do you
-  find that your browser is slow and unresponsive, making it difficult to stay
-  producti
+meta_description: "Are you struggling to get the most out of your old PC with 4GB RAM? Do you find that your browser is slow and unresponsive, making it difficult to stay…"
 status: published
 published_at: '2026-03-26T04:00:00.941+00:00'
 scheduled_at: '2026-03-26T04:00:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-03T23:04:10.565123+00:00'
 updated_at: '2026-04-23T12:25:54.79104+00:00'
+description: "Are you struggling to get the most out of your old PC with 4GB RAM? Do you find that your browser is slow and unresponsive, making it difficult to stay…"
 ---
 
 <img src="/content/images/best-chrome-extensions-for-old-pcs-with-4gb-ram-boosting-performance-and-productivity-mmb7srvijtp/featured.webp" alt="Best Chrome Extensions for Old PCs with 4GB RAM: Boosting Performance and Productivity" width="1200" height="630" loading="lazy" class="featured-image">

@@ -3,20 +3,14 @@ seo_title: "How to Stop Automatic URL Redirects in Chrome"
 id: d8b2fa06-ce27-4468-971e-a504e87c379c
 title: 'How to Stop Automatic URL Redirects in Chrome: A Comprehensive Guide'
 slug: how-to-stop-automatic-url-redirects-in-chrome
-excerpt: >-
-  Are you tired of being redirected to unwanted websites while browsing the
-  internet on Chrome? Automatic URL redirects can be frustrating and potentially
-  malicio
+excerpt: "Are you tired of being redirected to unwanted websites while browsing the internet on Chrome?"
 featured_image: /content/images/how-to-stop-automatic-url-redirects-in-chrome/featured.webp
 category: Screenshots & Screen Capture
 tags:
   - 'How to Stop Automatic URL Redirects in Chrome: A Comprehensive Guide'
 keywords:
   - How to stop automatic URL redirects in Chrome
-meta_description: >-
-  Are you tired of being redirected to unwanted websites while browsing the
-  internet on Chrome? Automatic URL redirects can be frustrating and potentially
-  malicio
+meta_description: "Are you tired of being redirected to unwanted websites while browsing the internet on Chrome?"
 status: published
 published_at: '2026-03-11T08:11:01.426+00:00'
 scheduled_at: '2026-03-11T08:11:00+00:00'
@@ -26,6 +20,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-20T19:01:16.637042+00:00'
 updated_at: '2026-03-16T14:43:36.605004+00:00'
+description: "Are you tired of being redirected to unwanted websites while browsing the internet on Chrome?"
 ---
 
 <img src="/content/images/how-to-stop-automatic-url-redirects-in-chrome/featured.webp" alt="How to Stop Automatic URL Redirects in Chrome: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

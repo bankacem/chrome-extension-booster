@@ -4,20 +4,14 @@ id: 23cd3add-e398-405a-8f4a-5ab7962303ea
 title: 'Unlock Online Privacy: The Power of Avast Antitrack Extension Chrome'
 slug: unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome
   unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome-ml5gz3mlleo
-excerpt: >-
-  Are you concerned about your online privacy and security while browsing the
-  internet? With the increasing number of cyber threats and data breaches, it's
-  essent
+excerpt: "Are you concerned about your online privacy and security while browsing the internet?"
 featured_image: >-
   /content/images/unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome-ml5gz3mlleo/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - avast antitrack extension chrome
-meta_description: >-
-  Are you concerned about your online privacy and security while browsing the
-  internet? With the increasing number of cyber threats and data breaches, it's
-  essent
+meta_description: "Are you concerned about your online privacy and security while browsing the internet?"
 status: published
 published_at: '2026-04-29T22:15:00.541+00:00'
 scheduled_at: '2026-04-29T22:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-02-02T17:54:50.577803+00:00'
 updated_at: '2026-04-29T22:15:00.707789+00:00'
+description: "Are you concerned about your online privacy and security while browsing the internet?"
 ---
 
 <img src="/content/images/unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome-ml5gz3mlleo/featured.webp" alt="Unlock Online Privacy: The Power of Avast Antitrack Extension Chrome" width="1200" height="630" loading="lazy" class="featured-image">

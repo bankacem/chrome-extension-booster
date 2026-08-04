@@ -3,10 +3,7 @@ seo_title: "Stop Websites from Opening New Tabs"
 id: e1411e92-b380-4844-bf8f-e33534a7ee86
 title: 'Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide'
 slug: prevent-websites-from-opening-new-tabs-automatically-2
-excerpt: >-
-  Are you tired of websites opening new tabs automatically, cluttering your
-  browser and disrupting your workflow? You're not alone. Many users face this
-  issue dai
+excerpt: "Are you tired of websites opening new tabs automatically, cluttering your browser and disrupting your workflow? You're not alone."
 featured_image: >-
   /content/images/prevent-websites-from-opening-new-tabs-automatically-2/featured.webp
 category: Screenshots & Screen Capture
@@ -14,10 +11,7 @@ tags:
   - 'Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide'
 keywords:
   - Prevent websites from opening new tabs automatically
-meta_description: >-
-  Are you tired of websites opening new tabs automatically, cluttering your
-  browser and disrupting your workflow? You're not alone. Many users face this
-  issue dai
+meta_description: "Are you tired of websites opening new tabs automatically, cluttering your browser and disrupting your workflow? You're not alone."
 status: published
 published_at: '2026-03-10T20:11:02.949+00:00'
 scheduled_at: '2026-03-10T20:11:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-20T19:01:19.932094+00:00'
 updated_at: '2026-04-23T12:28:42.545801+00:00'
+description: "Are you tired of websites opening new tabs automatically, cluttering your browser and disrupting your workflow? You're not alone."
 ---
 
 <img src="/content/images/prevent-websites-from-opening-new-tabs-automatically-2/featured.webp" alt="Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

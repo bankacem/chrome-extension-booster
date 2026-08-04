@@ -3,20 +3,14 @@ seo_title: "How to Install Chrome Extensions Manually"
 id: 51e42bc3-4afe-4085-b567-9e9ca765697a
 title: 'How to Install Chrome Extensions Manually: A Step-by-Step Guide'
 slug: how-to-install-chrome-extensions-manually
-excerpt: >-
-  Are you tired of being limited by the Chrome Web Store's restrictions on
-  installing extensions? Do you want to know how to install Chrome extensions
-  manually to
+excerpt: "Are you tired of being limited by the Chrome Web Store's restrictions on installing extensions?"
 featured_image: >-
   /content/images/how-to-install-chrome-extensions-manually-a-step-by-step-guide-mmdrxyk1fy1/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - how to install chrome extensions manually
-meta_description: >-
-  Are you tired of being limited by the Chrome Web Store's restrictions on
-  installing extensions? Do you want to know how to install Chrome extensions
-  manually to
+meta_description: "Are you tired of being limited by the Chrome Web Store's restrictions on installing extensions?"
 status: published
 published_at: '2026-04-22T22:15:00.739+00:00'
 scheduled_at: '2026-04-22T22:15:00+00:00'
@@ -26,6 +20,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-05T18:03:36.711861+00:00'
 updated_at: '2026-04-23T12:25:52.81182+00:00'
+description: "Are you tired of being limited by the Chrome Web Store's restrictions on installing extensions?"
 ---
 
 <img src="/content/images/how-to-install-chrome-extensions-manually-a-step-by-step-guide-mmdrxyk1fy1/featured.webp" alt="How to Install Chrome Extensions Manually: A Step-by-Step Guide" width="1200" height="630" loading="lazy" class="featured-image">

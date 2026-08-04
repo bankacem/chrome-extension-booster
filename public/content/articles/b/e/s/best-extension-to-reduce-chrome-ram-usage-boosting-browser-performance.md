@@ -4,10 +4,7 @@ id: db7ed793-7af8-4b67-af73-61c13b1faf85
 title: 'Best Extension to Reduce Chrome RAM Usage: Boosting Browser Performance'
 slug: best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance
   best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance-mll9bsc31qx
-excerpt: >-
-  Google Chrome is one of the most popular web browsers, known for its speed,
-  security, and extensive library of extensions. However, one of the common
-  issues tha
+excerpt: "Google Chrome is one of the most popular web browsers, known for its speed, security, and extensive library of extensions."
 featured_image: >-
   /content/images/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance-mll9bsc31qx/featured.webp
 category: Redirect & Navigation
@@ -15,10 +12,7 @@ tags:
   - 'Best Extension to Reduce Chrome RAM Usage: Boosting Browser Performance'
 keywords:
   - Best extension to reduce Chrome RAM usage
-meta_description: >-
-  Google Chrome is one of the most popular web browsers, known for its speed,
-  security, and extensive library of extensions. However, one of the common
-  issues tha
+meta_description: "Google Chrome is one of the most popular web browsers, known for its speed, security, and extensive library of extensions."
 status: published
 published_at: '2026-03-03T15:19:04.574+00:00'
 scheduled_at: null
@@ -28,6 +22,7 @@ views: 14
 read_time: 5
 created_at: '2026-02-13T19:04:56.192125+00:00'
 updated_at: '2026-03-06T18:31:55.019834+00:00'
+description: "Google Chrome is one of the most popular web browsers, known for its speed, security, and extensive library of extensions."
 ---
 
 <img src="/content/images/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance-mll9bsc31qx/featured.webp" alt="Best Extension to Reduce Chrome RAM Usage: Boosting Browser Performance" width="1200" height="630" loading="lazy" class="featured-image">

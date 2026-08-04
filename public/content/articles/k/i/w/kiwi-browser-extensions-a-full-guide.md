@@ -6,20 +6,14 @@ title: >-
   Browser
 slug: kiwi-browser-extensions-a-full-guide
   kiwi-browser-extensions-guide-unlocking-the-full-potential-of-your-mobile-browser-mmthoutft7f
-excerpt: >-
-  Welcome to the kiwi browser extensions guide, where we'll explore the world of
-  browser extensions and how they can enhance your mobile browsing experience.
-  Kiwi
+excerpt: "Welcome to the kiwi browser extensions guide, where we'll explore the world of browser extensions and how they can enhance your mobile browsing experience."
 featured_image: >-
   /content/images/kiwi-browser-extensions-guide-unlocking-the-full-potential-of-your-mobile-browser-mmthoutft7f/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - kiwi browser extensions guide
-meta_description: >-
-  Welcome to the kiwi browser extensions guide, where we'll explore the world of
-  browser extensions and how they can enhance your mobile browsing experience.
-  Kiwi
+meta_description: "Welcome to the kiwi browser extensions guide, where we'll explore the world of browser extensions and how they can enhance your mobile browsing experience."
 status: published
 published_at: '2026-03-17T13:00:00.638+00:00'
 scheduled_at: '2026-03-17T13:00:00+00:00'
@@ -29,6 +23,7 @@ views: 2
 read_time: 6
 created_at: '2026-03-16T18:00:53.935131+00:00'
 updated_at: '2026-04-23T12:25:21.467135+00:00'
+description: "Welcome to the kiwi browser extensions guide, where we'll explore the world of browser extensions and how they can enhance your mobile browsing experience."
 ---
 
 <img src="/content/images/kiwi-browser-extensions-guide-unlocking-the-full-potential-of-your-mobile-browser-mmthoutft7f/featured.webp" alt="Kiwi Browser Extensions Guide: Unlocking the Full Potential of Your Mobile Browser" width="1200" height="630" loading="lazy" class="featured-image">

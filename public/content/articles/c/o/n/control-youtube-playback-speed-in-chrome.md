@@ -6,20 +6,14 @@ title: >-
   Speed
 slug: control-youtube-playback-speed-in-chrome
   enhance-your-youtube-experience-with-a-chrome-extension-to-control-youtube-speed-mmdz7yn2v3z
-excerpt: >-
-  Are you tired of watching YouTube videos at a fixed speed? Do you want to slow
-  down or speed up your favorite videos to better understand the content or to
-  save
+excerpt: "Are you tired of watching YouTube videos at a fixed speed? Do you want to slow down or speed up your favorite videos to better understand the content or to…"
 featured_image: >-
   /content/images/enhance-your-youtube-experience-with-a-chrome-extension-to-control-youtube-speed-mmdz7yn2v3z/featured.webp
 category: Appearance & Themes
 tags: []
 keywords:
   - chrome extension to control youtube speed
-meta_description: >-
-  Are you tired of watching YouTube videos at a fixed speed? Do you want to slow
-  down or speed up your favorite videos to better understand the content or to
-  save
+meta_description: "Are you tired of watching YouTube videos at a fixed speed? Do you want to slow down or speed up your favorite videos to better understand the content or to…"
 status: published
 published_at: '2026-04-14T22:15:00.453+00:00'
 scheduled_at: '2026-04-14T22:15:00+00:00'
@@ -29,6 +23,7 @@ views: 0
 read_time: 5
 created_at: '2026-03-05T21:27:20.636086+00:00'
 updated_at: '2026-04-23T12:25:27.607331+00:00'
+description: "Are you tired of watching YouTube videos at a fixed speed? Do you want to slow down or speed up your favorite videos to better understand the content or to…"
 ---
 
 <img src="/content/images/enhance-your-youtube-experience-with-a-chrome-extension-to-control-youtube-speed-mmdz7yn2v3z/featured.webp" alt="Enhance Your YouTube Experience with a Chrome Extension to Control YouTube Speed" width="1200" height="630" loading="lazy" class="featured-image">

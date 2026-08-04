@@ -5,19 +5,13 @@ title: >-
   Breaking Language Barriers: How to Add the Google Translate Extension to
   Chrome
 slug: google-translate-extension-to-chrome-6
-excerpt: >-
-  Are you tired of being limited by language barriers while browsing the
-  internet? Do you wish you could effortlessly translate web pages, articles,
-  and conversat
+excerpt: "Are you tired of being limited by language barriers while browsing the internet?"
 featured_image: /content/images/google-translate-extension-to-chrome-6/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - google translate extension to chrome
-meta_description: >-
-  Are you tired of being limited by language barriers while browsing the
-  internet? Do you wish you could effortlessly translate web pages, articles,
-  and conversat
+meta_description: "Are you tired of being limited by language barriers while browsing the internet?"
 status: published
 published_at: '2026-02-15T20:11:01.239+00:00'
 scheduled_at: '2026-02-15T20:11:00+00:00'
@@ -27,6 +21,7 @@ views: 2
 read_time: 4
 created_at: '2026-01-24T12:58:17.568441+00:00'
 updated_at: '2026-04-23T12:27:20.09948+00:00'
+description: "Are you tired of being limited by language barriers while browsing the internet?"
 ---
 
 <img src="/content/images/google-translate-extension-to-chrome-6/featured.webp" alt="Breaking Language Barriers: How to Add the Google Translate Extension to Chrome" width="1200" height="630" loading="lazy" class="featured-image">

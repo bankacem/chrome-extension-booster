@@ -3,19 +3,13 @@ seo_title: "Enpass Extension for Chrome: Password Guide"
 id: ee47c344-bf74-4915-b134-962be2020ec5
 title: 'Unlocking Password Security: A Comprehensive Guide to Enpass Extension Chrome'
 slug: enpass-extension-chrome-9
-excerpt: >-
-  Are you tired of using weak passwords or struggling to remember multiple
-  complex passwords? Look no further than the Enpass extension Chrome users
-  trust to secu
+excerpt: "Are you tired of using weak passwords or struggling to remember multiple complex passwords?"
 featured_image: /content/images/enpass-extension-chrome-9/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - enpass extension chrome
-meta_description: >-
-  Are you tired of using weak passwords or struggling to remember multiple
-  complex passwords? Look no further than the Enpass extension Chrome users
-  trust to secu
+meta_description: "Are you tired of using weak passwords or struggling to remember multiple complex passwords?"
 status: published
 published_at: '2026-05-15T06:15:00.364+00:00'
 scheduled_at: '2026-05-15T06:15:00+00:00'
@@ -25,6 +19,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-27T14:18:21.232985+00:00'
 updated_at: '2026-05-15T06:15:00.439191+00:00'
+description: "Are you tired of using weak passwords or struggling to remember multiple complex passwords?"
 ---
 
 <img src="/content/images/enpass-extension-chrome-9/featured.webp" alt="Unlocking Password Security: A Comprehensive Guide to Enpass Extension Chrome" width="1200" height="630" loading="lazy" class="featured-image">

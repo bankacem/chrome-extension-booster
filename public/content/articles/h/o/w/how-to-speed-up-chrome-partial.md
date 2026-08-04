@@ -3,20 +3,14 @@ seo_title: "Speed Up Page Loading by Blocking Popups First"
 id: cea062d4-a3d7-41cc-845b-0fa755107ab9
 title: 'How to Speed Up Page Loading by Blocking Popups: A Comprehensive Guide'
 slug: how-to-speed-up-chrome-partial
-excerpt: >-
-  Are you tired of slow-loading web pages and annoying popups that disrupt your
-  browsing experience? You're not alone. Popups can significantly slow down page
-  loa
+excerpt: "Are you tired of slow-loading web pages and annoying popups that disrupt your browsing experience? You're not alone."
 featured_image: /content/images/how-to-speed-up-chrome-partial/featured.webp
 category: Screenshots & Screen Capture
 tags:
   - 'How to Speed Up Page Loading by Blocking Popups: A Comprehensive Guide'
 keywords:
   - How to speed up page loading by blocking popups
-meta_description: >-
-  Are you tired of slow-loading web pages and annoying popups that disrupt your
-  browsing experience? You're not alone. Popups can significantly slow down page
-  loa
+meta_description: "Are you tired of slow-loading web pages and annoying popups that disrupt your browsing experience? You're not alone."
 status: published
 published_at: '2026-03-03T02:11:02.163+00:00'
 scheduled_at: '2026-03-03T02:11:00+00:00'
@@ -26,6 +20,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-20T22:00:48.160354+00:00'
 updated_at: '2026-03-03T17:57:53.94004+00:00'
+description: "Are you tired of slow-loading web pages and annoying popups that disrupt your browsing experience? You're not alone."
 ---
 
 <img src="/content/images/how-to-speed-up-chrome-partial/featured.webp" alt="How to Speed Up Page Loading by Blocking Popups: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

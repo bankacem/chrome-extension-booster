@@ -5,19 +5,13 @@ title: >-
   Unlock Efficient Browsing: Mastering Extension Auto Refresh Chrome for
   Enhanced Productivity
 slug: extension-auto-refresh-chrome-2
-excerpt: >-
-  In today's fast-paced digital landscape, staying up-to-date with the latest
-  information is crucial for success. One of the most effective ways to achieve
-  this i
+excerpt: "In today's fast-paced digital landscape, staying up-to-date with the latest information is crucial for success."
 featured_image: /content/images/extension-auto-refresh-chrome-2/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension auto refresh chrome
-meta_description: >-
-  In today's fast-paced digital landscape, staying up-to-date with the latest
-  information is crucial for success. One of the most effective ways to achieve
-  this i
+meta_description: "In today's fast-paced digital landscape, staying up-to-date with the latest information is crucial for success."
 status: published
 published_at: '2026-05-10T22:15:01.437+00:00'
 scheduled_at: '2026-05-10T22:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-27T22:34:41.074265+00:00'
 updated_at: '2026-05-10T22:15:01.51079+00:00'
+description: "In today's fast-paced digital landscape, staying up-to-date with the latest information is crucial for success."
 ---
 
 <img src="/content/images/extension-auto-refresh-chrome-2/featured.webp" alt="Unlock Efficient Browsing: Mastering Extension Auto Refresh Chrome for Enhanced Productivity" width="1200" height="630" loading="lazy" class="featured-image">

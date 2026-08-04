@@ -5,19 +5,13 @@ title: >-
   Unlocking the Power of Eternl Chrome: A Comprehensive Guide to Enhanced
   Browsing
 slug: unlocking-the-power-of-eternl-chrome-enhanced-browsing
-excerpt: >-
-  Are you looking to take your Chrome browsing experience to the next level?
-  Look no further than Eternl Chrome, a revolutionary approach to browsing that
-  combine
+excerpt: "Are you looking to take your Chrome browsing experience to the next level?"
 featured_image: /content/images/eternl-chrome-mkzmqf2yj4q/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - eternl chrome
-meta_description: >-
-  Are you looking to take your Chrome browsing experience to the next level?
-  Look no further than Eternl Chrome, a revolutionary approach to browsing that
-  combine
+meta_description: "Are you looking to take your Chrome browsing experience to the next level?"
 status: published
 published_at: '2026-05-07T10:15:00.312+00:00'
 scheduled_at: '2026-05-07T10:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-29T15:49:21.080729+00:00'
 updated_at: '2026-05-07T10:15:00.378077+00:00'
+description: "Are you looking to take your Chrome browsing experience to the next level?"
 ---
 
 <img src="/content/images/eternl-chrome-mkzmqf2yj4q/featured.webp" alt="Unlocking the Power of Eternl Chrome: A Comprehensive Guide to Enhanced Browsing" width="1200" height="630" loading="lazy" class="featured-image">

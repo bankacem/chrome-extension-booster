@@ -4,20 +4,14 @@ id: b87a203f-8a1d-424f-ab23-4fa2fc5fbae0
 title: 'Unlocking the Power of Adblock Chrome on Android: A Comprehensive Guide'
 slug: unlocking-the-power-of-adblock-chrome-on-android
   unlocking-the-power-of-adblock-chrome-on-android-a-comprehensive-guide-mm3scp7stxi
-excerpt: >-
-  Are you tired of annoying ads disrupting your browsing experience on your
-  Android device? Look no further than adblock Chrome on Android, a powerful
-  solution to
+excerpt: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 featured_image: >-
   /content/images/unlocking-the-power-of-adblock-chrome-on-android-a-comprehensive-guide-mm3scp7stxi/featured.webp
 category: Redirect & Navigation
 tags: []
 keywords:
   - adblock chrome on android
-meta_description: >-
-  Are you tired of annoying ads disrupting your browsing experience on your
-  Android device? Look no further than adblock Chrome on Android, a powerful
-  solution to
+meta_description: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 status: published
 published_at: '2026-03-22T08:00:01.914+00:00'
 scheduled_at: '2026-03-22T08:00:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-02-26T18:17:22.497399+00:00'
 updated_at: '2026-04-23T12:26:03.163062+00:00'
+description: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 ---
 
 <img src="/content/images/unlocking-the-power-of-adblock-chrome-on-android-a-comprehensive-guide-mm3scp7stxi/featured.webp" alt="Unlocking the Power of Adblock Chrome on Android: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

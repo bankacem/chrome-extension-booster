@@ -4,20 +4,14 @@ id: fbe461fe-cae1-4986-b0f9-0756884b60a7
 title: 'Unlocking the Power of Avast Extension Chrome: A Comprehensive Guide'
 slug: unlocking-the-power-of-avast-extension-chrome
   unlocking-the-power-of-avast-extension-chrome-a-comprehensive-guide-ml5gz4xphcr
-excerpt: >-
-  When it comes to protecting your online presence, having the right tools is
-  crucial. The Avast extension Chrome is one such tool that has gained
-  popularity amon
+excerpt: "When it comes to protecting your online presence, having the right tools is crucial."
 featured_image: >-
   /content/images/unlocking-the-power-of-avast-extension-chrome-a-comprehensive-guide-ml5gz4xphcr/featured.webp
 category: Screenshots & Screen Capture
 tags: []
 keywords:
   - avast extension chrome
-meta_description: >-
-  When it comes to protecting your online presence, having the right tools is
-  crucial. The Avast extension Chrome is one such tool that has gained
-  popularity amon
+meta_description: "When it comes to protecting your online presence, having the right tools is crucial."
 status: published
 published_at: '2026-04-29T18:15:02.841+00:00'
 scheduled_at: '2026-04-29T18:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 5
 created_at: '2026-02-02T17:54:52.345903+00:00'
 updated_at: '2026-04-29T18:15:03.043282+00:00'
+description: "When it comes to protecting your online presence, having the right tools is crucial."
 ---
 
 <img src="/content/images/unlocking-the-power-of-avast-extension-chrome-a-comprehensive-guide-ml5gz4xphcr/featured.webp" alt="Unlocking the Power of Avast Extension Chrome: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">

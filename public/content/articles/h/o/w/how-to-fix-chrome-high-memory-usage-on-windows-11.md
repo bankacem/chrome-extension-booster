@@ -5,20 +5,14 @@ title: >-
   How to Fix Chrome High Memory Usage on Windows 11: A Complete Guide to a
   Faster Browser
 slug: how-to-fix-chrome-high-memory-usage-on-windows-11
-excerpt: >-
-  We’ve all been there: you’re deep in the zone, working on an important project
-  or researching your next big purchase, and suddenly, your computer starts
-  acting
+excerpt: "We’ve all been there: you’re deep in the zone, working on an important project or researching your next big purchase, and suddenly, your computer starts…"
 featured_image: >-
   /content/images/how-to-fix-chrome-high-memory-usage-on-windows-11/featured.webp
 category: Performance & Memory
 tags: []
 keywords:
   - How to fix Chrome High Memory usage on Windows 11
-meta_description: >-
-  We’ve all been there: you’re deep in the zone, working on an important project
-  or researching your next big purchase, and suddenly, your computer starts
-  acting
+meta_description: "We’ve all been there: you’re deep in the zone, working on an important project or researching your next big purchase, and suddenly, your computer starts…"
 status: published
 published_at: '2026-01-20T16:29:00.487+00:00'
 scheduled_at: '2026-01-20T16:29:00+00:00'
@@ -28,6 +22,7 @@ views: 1
 read_time: 8
 created_at: '2026-01-20T14:42:00.892287+00:00'
 updated_at: '2026-03-03T17:57:57.980548+00:00'
+description: "We’ve all been there: you’re deep in the zone, working on an important project or researching your next big purchase, and suddenly, your computer starts…"
 ---
 
 <img src="/content/images/how-to-fix-chrome-high-memory-usage-on-windows-11/featured.webp" alt="How to Fix Chrome High Memory Usage on Windows 11: A Complete Guide to a Faster Browser" width="1200" height="630" loading="lazy" class="featured-image">

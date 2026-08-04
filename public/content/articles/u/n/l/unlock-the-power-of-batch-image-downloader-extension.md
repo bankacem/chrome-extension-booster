@@ -4,20 +4,14 @@ id: 886230a2-4e1a-482f-9949-c9b951a77939
 title: 'Unlock the Power of Batch Image Downloader Extension: A Comprehensive Guide'
 slug: unlock-the-power-of-batch-image-downloader-extension
   unlock-the-power-of-batch-image-downloader-extension-a-comprehensive-guide-mmtvre5kc7v
-excerpt: >-
-  Are you tired of manually downloading images one by one from your favorite
-  websites? Look no further! A batch image downloader extension is the solution
-  you've
+excerpt: "Are you tired of manually downloading images one by one from your favorite websites? Look no further!"
 featured_image: >-
   /content/images/unlock-the-power-of-batch-image-downloader-extension-a-comprehensive-guide-mmtvre5kc7v/featured.webp
 category: Chrome Extensions
 tags: []
 keywords:
   - batch image downloader extension
-meta_description: >-
-  Are you tired of manually downloading images one by one from your favorite
-  websites? Look no further! A batch image downloader extension is the solution
-  you've
+meta_description: "Are you tired of manually downloading images one by one from your favorite websites? Look no further!"
 status: published
 published_at: '2026-04-03T18:15:00.449+00:00'
 scheduled_at: '2026-04-03T18:15:00+00:00'
@@ -27,6 +21,7 @@ views: 0
 read_time: 6
 created_at: '2026-03-17T00:34:46.781058+00:00'
 updated_at: '2026-04-23T12:20:21.396284+00:00'
+description: "Are you tired of manually downloading images one by one from your favorite websites? Look no further!"
 ---
 
 <img src="/content/images/unlock-the-power-of-batch-image-downloader-extension-a-comprehensive-guide-mmtvre5kc7v/featured.webp" alt="Unlock the Power of Batch Image Downloader Extension: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">
