@@ -28,7 +28,7 @@ description: "Are you tired of a slow and cluttered browser? Look no further! In
 
 <img src="/content/images/discover-the-power-of-minimalism-the-ultimate-lightweight-chrome-extensions-list-for-a-faster-browse-mmdrqoou66e/featured.webp" alt="Discover the Power of Minimalism: The Ultimate Lightweight Chrome Extensions List for a Faster Browser" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>Discover the Power of Minimalism: The Ultimate Lightweight Chrome Extensions List for a Faster Browser</h1>
+<h2>Discover the Power of Minimalism: The Ultimate Lightweight Chrome Extensions List for a Faster Browser</h2>
 
 <p>Are you tired of a slow and cluttered browser? Look no further! In this article, we'll explore the best <strong>lightweight Chrome extensions list</strong> to help you streamline your browsing experience and boost your productivity. With so many extensions available, it can be overwhelming to choose the right ones. That's why we've curated a list of the most efficient and <strong>lightweight Chrome extensions</strong> to help you get the most out of your browser.</p>
 

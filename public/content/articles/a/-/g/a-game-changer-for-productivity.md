@@ -26,7 +26,7 @@ description: "Are you tired of clicking through multiple pages to find the infor
 
 <img src="/content/images/unlock-endless-browsing-with-autopager-chrome-a-game-changer-for-productivity-ml5gz1lmsnz/featured.webp" alt="Unlock Endless Browsing with Autopager Chrome: A Game-Changer for Productivity" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>Unlock Endless Browsing with Autopager Chrome: A Game-Changer for Productivity</h1>
+<h2>Unlock Endless Browsing with Autopager Chrome: A Game-Changer for Productivity</h2>
 <p>Are you tired of clicking through multiple pages to find the information you need? Look no further than autopager Chrome, a revolutionary browser extension that simplifies your online experience. In this article, we'll explore the benefits of autopager Chrome and how it can transform your browsing habits. We'll also discuss how our <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> and <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extensions can enhance your autopager Chrome experience.</p>
 
 <h2>Table of Contents</h2>

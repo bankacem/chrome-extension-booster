@@ -23,7 +23,7 @@ description: "In today's digital age, online security is more important than eve
 
 <img src="/content/images/encrypting-your-login-data-a-simple-guide-6/featured.webp" alt="Encrypting your login data: A simple guide" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>Encrypting your login data: A simple guide</h1>
+<h2>Encrypting your login data: A simple guide</h2>
 
 <p>In today's digital age, online security is more important than ever. With the rise of cyberattacks and data breaches, it's crucial to take steps to protect your sensitive information, including your login data. <strong>Encrypting your login data</strong> is a simple yet effective way to add an extra layer of security to your online accounts. In this article, we'll explore the importance of encrypting your login data and provide a step-by-step guide on how to do it.</p>
 

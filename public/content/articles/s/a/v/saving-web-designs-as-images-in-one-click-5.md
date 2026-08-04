@@ -29,7 +29,7 @@ description: "Saving web designs as images in one click has become an essential 
 
 <img src="/content/images/saving-web-designs-as-images-in-one-click-5/featured.webp" alt="Saving Web Designs as Images in One Click: A Game-Changer for Designers and Developers" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>Saving Web Designs as Images in One Click: A Game-Changer for Designers and Developers</h1>
+<h2>Saving Web Designs as Images in One Click: A Game-Changer for Designers and Developers</h2>
 
 <table class="table-of-contents">
   <thead>

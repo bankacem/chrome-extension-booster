@@ -28,7 +28,7 @@ description: "When it comes to managing downloads on Android devices, users ofte
 
 <img src="/content/images/is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management-mmb6y4ldz8f/featured.webp" alt="Is there an IDM extension for Chrome Android? A Comprehensive Guide to Download Management" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>Is there an IDM extension for Chrome Android? A <a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comprehensive</a> Guide to Download Management</h1>
+<h2>Is there an IDM extension for Chrome Android? A <a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comprehensive</a> Guide to Download Management</h2>
 
 <p>When it comes to managing downloads on Android devices, users often wonder <strong>is there an IDM extension for Chrome Android?</strong> Internet Download Manager (IDM) is a popular download management tool for desktop devices, but its availability on Android devices, particularly as a Chrome extension, is a topic of interest. In this article, we will explore the possibilities of using an IDM extension for Chrome Android and provide valuable insights into download management on Android devices.</p>
 

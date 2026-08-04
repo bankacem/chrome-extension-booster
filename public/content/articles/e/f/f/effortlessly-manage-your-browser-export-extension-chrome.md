@@ -26,7 +26,7 @@ description: "Are you tired of manually reinstalling your favorite Chrome extens
 
 <img src="/content/images/export-extension-chrome-mkzmqlg97qy/featured.webp" alt="Effortlessly Manage Your Browser: A Comprehensive Guide to Export Extension Chrome" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>Effortlessly Manage Your Browser: A Comprehensive Guide to Export Extension Chrome</h1>
+<h2>Effortlessly Manage Your Browser: A Comprehensive Guide to Export Extension Chrome</h2>
 
 <p>Are you tired of manually reinstalling your favorite Chrome extensions every time you switch to a new device or browser profile? Look no further! In this article, we will delve into the world of <strong>export extension Chrome</strong> and explore the various methods and tools available to make your life easier. Whether you're a casual user or a power user, you'll learn how to seamlessly export and import your Chrome extensions, ensuring a smooth browsing experience across all your devices.</p>
 

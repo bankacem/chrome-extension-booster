@@ -19,7 +19,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "A 2025 guide to free Chrome privacy extensions that limit what Google and third parties can track as you browse."
 status: published
 published_at: '2026-03-16T14:11:00.319+00:00'
 scheduled_at: '2026-03-16T14:11:00+00:00'

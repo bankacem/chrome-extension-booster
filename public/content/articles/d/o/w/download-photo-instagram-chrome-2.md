@@ -24,7 +24,7 @@ description: "Are you looking for a way to download photo Instagram Chrome and s
 
 <img src="/content/images/download-photo-instagram-chrome-2/featured.webp" alt="How to Download Photo Instagram Chrome: A Step-by-Step Guide" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>How to Download Photo Instagram Chrome: A Step-by-Step Guide</h1>
+<h2>How to Download Photo Instagram Chrome: A Step-by-Step Guide</h2>
 
 <p>Are you looking for a way to <strong>download photo Instagram Chrome</strong> and save your favorite memories? With the rise of social media, Instagram has become one of the most popular platforms for sharing photos and videos. However, downloading photos from Instagram can be a challenge, especially if you're using Google Chrome as your browser. In this article, we'll show you how to <strong>download photo Instagram Chrome</strong> using a few simple methods.</p>
 

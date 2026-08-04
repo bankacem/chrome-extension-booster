@@ -17,7 +17,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "A developer's tutorial for building Chrome extensions in the Manifest V3 era, covering the 2025 shift away from Manifest V2."
 status: published
 published_at: '2026-03-18T20:11:00.24+00:00'
 scheduled_at: '2026-03-18T20:11:00+00:00'

@@ -17,7 +17,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "Chrome extensions built for power users who treat their browser as a full workflow engine, not just a way to view web pages."
 status: published
 published_at: '2026-01-20T14:37:50.243+00:00'
 scheduled_at: null

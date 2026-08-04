@@ -1,6 +1,6 @@
 ---
 seo_title: "YouTube Browser Tools & Downloaders (2026)"
-title: The Ultimate Guide to YouTube Browser Tools & Downloaders (2026)
+title: 'YouTube Browser Tools & Downloaders (2026)'
 slug: youtube-tools-guide
 excerpt: >-
   Enhance your YouTube experience. Learn how to block ads, download audio/video

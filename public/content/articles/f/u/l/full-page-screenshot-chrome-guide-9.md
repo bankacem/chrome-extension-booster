@@ -25,7 +25,7 @@ description: "Welcome to the ultimate Full Page Screenshot Chrome Guide, where y
 
 <img src="/content/images/full-page-screenshot-chrome-guide-9/featured.webp" alt="Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro</h1>
+<h2>Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro</h2>
 
 <p>Welcome to the ultimate Full Page Screenshot Chrome Guide, where you'll learn how to capture entire web pages with ease. Taking full-page screenshots is an essential skill for anyone who wants to save web pages for later reference, share them with others, or use them for documentation purposes. In this <a href="/blog/how-to-fix-formula-errors-in-excel-2026-6" class="internal-link" title="How to Fix Formula Errors in Excel 2026: A Comprehensive Troubleshooting Guide"><a href="/blog/creating-financial-models-with-formula-builder-pro-7" class="internal-link" title="Creating Financial Models with Formula Builder Pro: A Comprehensive Guide for Professionals">comprehensive</a></a> guide, we'll show you how to take full-page screenshots in Chrome using various methods, including our <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension.</p>
 

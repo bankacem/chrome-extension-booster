@@ -25,7 +25,7 @@ description: "Are you tired of being redirected to unwanted websites while brows
 
 <img src="/content/images/how-to-stop-automatic-url-redirects-in-chrome/featured.webp" alt="How to Stop Automatic URL Redirects in Chrome: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>How to Stop Automatic URL Redirects in Chrome: A <a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comprehensive</a> Guide</h1>
+<h2>How to Stop Automatic URL Redirects in Chrome: A <a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comprehensive</a> Guide</h2>
 
 <p>Are you tired of being redirected to unwanted websites while browsing the internet on Chrome? Automatic URL redirects can be frustrating and potentially malicious, compromising your online security. In this article, we will explore the ways to <strong>stop automatic URL redirects in Chrome</strong>, ensuring a safer and more seamless browsing experience. If you're looking for a solution to this problem, you've come to the right place. Our <a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a> extension is a powerful tool that can help you achieve this goal.</p>
 

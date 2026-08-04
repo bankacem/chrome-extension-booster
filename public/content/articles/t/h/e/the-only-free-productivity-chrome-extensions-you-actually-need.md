@@ -17,7 +17,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "No-fluff picks of free productivity Chrome extensions aimed at cutting distraction and tab clutter for people who need to focus."
 status: published
 published_at: '2026-01-27T09:00:00.647+00:00'
 scheduled_at: '2026-01-27T09:00:00+00:00'

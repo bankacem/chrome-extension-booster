@@ -25,7 +25,7 @@ description: "Are you tired of slow-loading web pages and annoying popups that d
 
 <img src="/content/images/how-to-speed-up-chrome-partial/featured.webp" alt="How to Speed Up Page Loading by Blocking Popups: A Comprehensive Guide" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>How to Speed Up Page Loading by Blocking Popups: A <a href="/blog/ghostery-chrome-extension-winner" class="internal-link" title="Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery Plugin Chrome">Comprehensive</a> Guide</h1>
+<h2>How to Speed Up Page Loading by Blocking Popups: A <a href="/blog/ghostery-chrome-extension-winner" class="internal-link" title="Unlocking the Power of Online Privacy: A Comprehensive Guide to Ghostery Plugin Chrome">Comprehensive</a> Guide</h2>
 
 <p>Are you tired of slow-loading web pages and annoying popups that disrupt your browsing <a href="/blog/unlocking-the-power-of-ghostery-extension-chrome-enhance-your-browsing-experience-mm3scm2x6ag" class="internal-link" title="Unlocking the Power of Ghostery Extension Chrome: Enhance Your Browsing Experience">experience</a>? You're not alone. <strong>Popups can significantly slow down page loading times</strong>, making it frustrating to navigate the internet. In this article, we'll explore the impact of popups on page loading speeds and provide you with effective solutions to block them, including the use of our <a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a> Chrome extension.</p>
 

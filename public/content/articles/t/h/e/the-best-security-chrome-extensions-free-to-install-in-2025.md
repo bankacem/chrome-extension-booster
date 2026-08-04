@@ -17,7 +17,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "Free security extensions worth installing in 2025 to cover the gaps Chrome's default settings leave open to hijacking and malicious pop-ups."
 status: published
 published_at: '2026-01-28T09:00:01.023+00:00'
 scheduled_at: '2026-01-28T09:00:00+00:00'

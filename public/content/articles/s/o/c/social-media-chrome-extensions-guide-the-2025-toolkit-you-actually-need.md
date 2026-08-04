@@ -13,7 +13,7 @@ tags:
   - 'Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need'
 keywords:
   - 'Social Media Chrome Extensions Guide: The 2025 Toolkit You Actually Need'
-meta_description: 'Discover curated, high-performance browser extensions.'
+meta_description: "Chrome extensions built for social media managers juggling scheduling, multiple accounts, and content drafts across dozens of tabs."
 status: published
 published_at: '2026-03-18T02:11:00.894+00:00'
 scheduled_at: '2026-03-18T02:11:00+00:00'

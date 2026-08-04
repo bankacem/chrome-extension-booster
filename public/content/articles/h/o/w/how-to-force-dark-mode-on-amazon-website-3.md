@@ -24,7 +24,7 @@ description: "Are you tired of the bright and overwhelming interface of the Amaz
 
 <img src="/content/images/how-to-force-dark-mode-on-amazon-website-3/featured.webp" alt="How to Force Dark Mode on Amazon Website: A Step-by-Step Guide" width="1200" height="630" loading="lazy" class="featured-image">
 
-<h1>How to Force Dark Mode on Amazon Website: A Step-by-Step Guide</h1>
+<h2>How to Force Dark Mode on Amazon Website: A Step-by-Step Guide</h2>
 
 <p>Are you tired of the bright and overwhelming interface of the Amazon website? Do you want to know <strong>how to force Dark Mode on Amazon website</strong> for a more comfortable browsing experience? You're not alone. Many users prefer the Dark Mode or night mode theme, which can be easier on the eyes, especially in low-light <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments">environments</a>. In this article, we'll show you the different methods to enable Dark Mode on Amazon, including using our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> Chrome extension.</p>
 
