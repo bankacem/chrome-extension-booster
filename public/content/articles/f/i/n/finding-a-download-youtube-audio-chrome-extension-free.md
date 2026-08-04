@@ -1,7 +1,7 @@
 ---
 seo_title: "A Free Chrome Extension for YouTube Audio"
 id: 06e00933-1c6e-4e6d-b2ea-b8bee6898625
-title: The Ultimate Guide to Finding a Download YouTube Audio Chrome Extension Free
+title: 'A Free Chrome Extension for YouTube Audio'
 slug: finding-a-download-youtube-audio-chrome-extension-free
   the-ultimate-guide-to-finding-a-download-youtube-audio-chrome-extension-free-mliju6wmncq
 excerpt: >-

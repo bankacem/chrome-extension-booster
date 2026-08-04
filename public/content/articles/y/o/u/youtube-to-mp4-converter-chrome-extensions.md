@@ -1,9 +1,7 @@
 ---
 seo_title: "YouTube to MP4 Converter Chrome Extensions"
 id: 9146d2c4-1286-49db-8ff1-556f73063f5a
-title: >-
-  The Ultimate Guide to YouTube to MP4 Converter Chrome Extensions: Efficiency,
-  Safety, and Workflow Optimization
+title: 'YouTube to MP4 Converter Chrome Extensions'
 slug: youtube-to-mp4-converter-chrome-extensions
   the-ultimate-guide-to-youtube-to-mp4-converter-chrome-extensions-efficiency-safety-and-workflow-opti-mliju7fx72b
 excerpt: >-
