@@ -15,7 +15,7 @@ description: >-
   ChatGPT Bookmark Manager Chrome Extension: The Complete 2026 Guide to
   Organizing Your AI Conversations
 ---
-# ChatGPT Bookmark Manager Chrome Extension: The Complete 2026 Guide to Organizing Your AI Conversations
+## ChatGPT Bookmark Manager Chrome Extension: The Complete 2026 Guide to Organizing Your AI Conversations
 
 ## 📚 Table of Contents
 - [Why You Need a ChatGPT Bookmark Manager in 2026](#why-you-need-a-chatgpt-bookmark-manager-in-2026)

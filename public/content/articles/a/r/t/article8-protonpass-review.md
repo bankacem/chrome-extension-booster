@@ -9,7 +9,7 @@ title: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
 meta_description: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
 description: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
 ---
-# Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress
+## Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress
 
 **Last Updated:** June 3, 2026 | **Reading Time:** 8 minutes
 

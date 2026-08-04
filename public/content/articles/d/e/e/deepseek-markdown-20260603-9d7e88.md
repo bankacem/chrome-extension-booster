@@ -15,7 +15,7 @@ description: >-
   🎯 Stop Wasting Time Typing the Same Prompts: Best ChatGPT Prompt Manager
   Extensions 2026
 ---
-# 🎯 Stop Wasting Time Typing the Same Prompts: Best ChatGPT Prompt Manager Extensions (2026)
+## 🎯 Stop Wasting Time Typing the Same Prompts: Best ChatGPT Prompt Manager Extensions (2026)
 
 > **Real talk:** How many times have you typed *"Rewrite this in a professional tone"* this week? Fifty? A hundred?
 >

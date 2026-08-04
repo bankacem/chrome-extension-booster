@@ -13,7 +13,7 @@ description: >-
   Core Objective: Establish ExtensionTo as the 1 authority for mobile
   ad-blocking solutions.
 ---
-# Pillar Page Strategy: AdBlock for Chrome Android
+## Pillar Page Strategy: AdBlock for Chrome Android
 **Target Keyword:** AdBlock for Chrome Android
 **Cumulative Search Volume:** 50,000+
 **Core Objective:** Establish ExtensionTo as the #1 authority for mobile ad-blocking solutions.

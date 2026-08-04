@@ -15,7 +15,7 @@ description: >-
   📁 I Tested Every ChatGPT Folder Organizer 1,400 Conversations. Here's What
   Actually Works.
 ---
-# 📁 I Tested Every ChatGPT Folder Organizer (1,400 Conversations). Here's What Actually Works.
+## 📁 I Tested Every ChatGPT Folder Organizer (1,400 Conversations). Here's What Actually Works.
 
 > **The nightmare scenario:** You have 1,400 ChatGPT conversations. You KNOW you had a brilliant analysis of competitor pricing three months ago. But search gives you nothing. You scroll. And scroll. And give up.
 >

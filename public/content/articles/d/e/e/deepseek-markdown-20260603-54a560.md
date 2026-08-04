@@ -13,7 +13,7 @@ description: >-
   📧 The Ultimate Guide to AI Email Assistant Chrome Extensions Save 10+
   Hours/Week
 ---
-# 📧 The Ultimate Guide to AI Email Assistant Chrome Extensions (Save 10+ Hours/Week)
+## 📧 The Ultimate Guide to AI Email Assistant Chrome Extensions (Save 10+ Hours/Week)
 
 > **Imagine this:** You have 127 unread emails. Your boss is asking for an update. A client is waiting for a proposal. And you just spent 20 minutes writing a two-sentence reply.
 >

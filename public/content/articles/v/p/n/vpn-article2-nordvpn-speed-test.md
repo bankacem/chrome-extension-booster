@@ -15,7 +15,7 @@ description: >-
   NordVPN Chrome Extension Speed Test 2026: We Tested 50+ Servers. Here Are the
   Real Numbers.
 ---
-# NordVPN Chrome Extension Speed Test 2026: We Tested 50+ Servers. Here Are the Real Numbers.
+## NordVPN Chrome Extension Speed Test 2026: We Tested 50+ Servers. Here Are the Real Numbers.
 
 **Last Updated:** June 3, 2026 | **Reading Time:** 9 minutes | **Tests Run:** 847 speed tests across 52 servers
 

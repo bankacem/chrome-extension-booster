@@ -15,7 +15,7 @@ description: >-
   AI Product Description Writer Chrome Extension: The Complete 2026 Guide to
   Selling Faster on Amazon, Shopify & Etsy
 ---
-# AI Product Description Writer Chrome Extension: The Complete 2026 Guide to Selling Faster on Amazon, Shopify & Etsy
+## AI Product Description Writer Chrome Extension: The Complete 2026 Guide to Selling Faster on Amazon, Shopify & Etsy
 
 ## 📚 Table of Contents
 - [Why You Need an AI Product Description Writer in 2026](#why-you-need-an-ai-product-description-writer-in-2026)

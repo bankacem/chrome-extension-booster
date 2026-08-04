@@ -9,7 +9,7 @@ title: 📌 ChatGPT Side Panel Chrome Extensions (2026) — AI on Every Tab
 meta_description: 📌 ChatGPT Side Panel Chrome Extensions 2026 — AI on Every Tab
 description: 📌 ChatGPT Side Panel Chrome Extensions 2026 — AI on Every Tab
 ---
-# 📌 ChatGPT Side Panel Chrome Extensions (2026) — AI on Every Tab
+## 📌 ChatGPT Side Panel Chrome Extensions (2026) — AI on Every Tab
 
 > **Imagine pressing Alt+G and having ChatGPT appear instantly — without leaving the article you're reading.**
 >

@@ -15,7 +15,7 @@ description: >-
   AI Code Explanation Chrome Extension: The Ultimate Guide for Developers in
   2026
 ---
-# AI Code Explanation Chrome Extension: The Ultimate Guide for Developers in 2026
+## AI Code Explanation Chrome Extension: The Ultimate Guide for Developers in 2026
 
 **Meta Description:** Discover the best AI code explanation Chrome extensions for 2026. Learn how to understand complex code instantly, debug faster, and level up your programming skills with AI-powered code analysis.
 

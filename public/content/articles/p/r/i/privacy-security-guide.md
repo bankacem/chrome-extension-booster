@@ -20,7 +20,7 @@ canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
 
 <img src="/content/images/privacy-security-guide/featured.webp" alt="Privacy & Security Guide: Protect Your Browser in 2026" width="1200" height="630" loading="lazy" class="featured-image">
 
-# Privacy & Security Guide: Protect Your Browser
+## Privacy & Security Guide: Protect Your Browser
 
 In 2026, privacy is no longer guaranteed. Between sophisticated trackers and the rise of data breaches, your browser needs a defense layer.
 

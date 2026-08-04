@@ -9,7 +9,7 @@ title: ⚡ Free AI Content Summarizer Chrome Extensions (2026) — Read Less, Kn
 meta_description: ⚡ Free AI Content Summarizer Chrome Extensions 2026 — Read Less, Know More
 description: ⚡ Free AI Content Summarizer Chrome Extensions 2026 — Read Less, Know More
 ---
-# ⚡ Free AI Content Summarizer Chrome Extensions (2026) — Read Less, Know More
+## ⚡ Free AI Content Summarizer Chrome Extensions (2026) — Read Less, Know More
 
 > **You don't have time to read that 3,000-word article. I don't either.**
 >

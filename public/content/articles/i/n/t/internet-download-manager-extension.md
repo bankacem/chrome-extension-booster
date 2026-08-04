@@ -49,7 +49,7 @@ schema:
 
 <img src="/content/images/internet-download-manager-extension/featured.webp" alt="Internet Download Manager Extension: Ultimate Guide to IDM Integration" width="1200" height="630" loading="lazy" class="featured-image">
 
-# Internet Download Manager Extension: Ultimate Guide to IDM Integration
+## Internet Download Manager Extension: Ultimate Guide to IDM Integration
 
 The **Internet Download Manager (IDM) extension** is a legendary tool that transforms your browser into a high-performance download machine. With its advanced download logic and multi-threaded support, it's the gold standard for anyone who downloads large files, videos, or documents daily.
 

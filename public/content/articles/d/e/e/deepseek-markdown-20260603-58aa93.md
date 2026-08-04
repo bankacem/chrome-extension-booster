@@ -15,7 +15,7 @@ description: >-
   AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going
   Viral in Seconds
 ---
-# AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds
+## AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds
 
 ## 📚 Table of Contents
 - [Why You Need an AI Social Media Caption Generator in 2026](#why-you-need-an-ai-social-media-caption-generator-in-2026)

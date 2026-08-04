@@ -9,7 +9,7 @@ title: '12-Week Topic Cluster Strategy: Chrome RAM & Memory Management'
 meta_description: '12-Week Topic Cluster Strategy: Chrome RAM & Memory Management'
 description: '12-Week Topic Cluster Strategy: Chrome RAM & Memory Management'
 ---
-# 12-Week Topic Cluster Strategy: Chrome RAM & Memory Management
+## 12-Week Topic Cluster Strategy: Chrome RAM & Memory Management
 
 **Target Keyword:** Chrome RAM/Memory Management
 **Total Search Volume:** 30,000+ monthly searches

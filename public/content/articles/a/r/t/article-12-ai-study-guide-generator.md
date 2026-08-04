@@ -15,7 +15,7 @@ description: >-
   AI Study Guide Generator Chrome Extension: The Ultimate Guide for Students in
   2026
 ---
-# AI Study Guide Generator Chrome Extension: The Ultimate Guide for Students in 2026
+## AI Study Guide Generator Chrome Extension: The Ultimate Guide for Students in 2026
 
 **Meta Description:** Discover the best AI study guide generator Chrome extensions for 2026. Learn how to transform lectures, textbooks, and notes into structured study materials, flashcards, and practice quizzes in seconds.
 

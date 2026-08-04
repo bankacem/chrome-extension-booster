@@ -15,7 +15,7 @@ description: >-
   ✍️ Best AI Writing Assistants for Gmail Chrome 2026 — Stop Writing, Start
   Editing
 ---
-# ✍️ Best AI Writing Assistants for Gmail Chrome (2026) — Stop Writing, Start Editing
+## ✍️ Best AI Writing Assistants for Gmail Chrome (2026) — Stop Writing, Start Editing
 
 > **I have a confession: I haven't "written" an email from scratch in six months.**
 >

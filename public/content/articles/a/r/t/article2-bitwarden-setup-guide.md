@@ -15,7 +15,7 @@ description: >-
   How to Set Up the Bitwarden Chrome Extension in 2026: A Complete Step-by-Step
   Guide
 ---
-# How to Set Up the Bitwarden Chrome Extension in 2026: A Complete Step-by-Step Guide
+## How to Set Up the Bitwarden Chrome Extension in 2026: A Complete Step-by-Step Guide
 
 **Last Updated:** June 3, 2026 | **Reading Time:** 6 minutes
 

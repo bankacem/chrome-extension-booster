@@ -9,7 +9,7 @@ title: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
 meta_description: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
 description: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
 ---
-# 🤖 Gemini Chat Chrome Extensions: The 2026 Power User's Guide
+## 🤖 Gemini Chat Chrome Extensions: The 2026 Power User's Guide
 
 > **Before you install anything: Chrome already has Gemini built-in.**
 >
