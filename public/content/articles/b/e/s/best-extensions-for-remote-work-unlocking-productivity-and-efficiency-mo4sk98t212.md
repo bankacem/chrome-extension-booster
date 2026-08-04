@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Extensions for Remote Work"
 id: faf26895-a204-4fe4-821b-6525c69b3f59
 title: 'Best Extensions for Remote Work: Unlocking Productivity and Efficiency'
 slug: >-

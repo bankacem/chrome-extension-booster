@@ -1,4 +1,5 @@
 ---
+seo_title: "Web Developer Debugging Tools"
 id: b59081ea-c03e-4b0d-9150-40733d1d7f6c
 title: 'Unlock Efficient Coding: Web Developer Debugging Tools Chrome'
 slug: unlock-efficient-coding-web-developer-debugging-tools-chrome-mo4p3a5tyl3

@@ -1,4 +1,5 @@
 ---
+seo_title: "Minimalist Browser Setup Tools"
 id: e69ba1b9-e7a9-4ad6-842a-8f866df15ef3
 title: 'Minimalist Browser Setup Tools: Simplify Your Browsing Experience'
 slug: minimalist-browser-setup-tools-simplify-your-browsing-experience-mo4p1d8hrsu

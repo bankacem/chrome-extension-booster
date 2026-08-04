@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Ad Blockers for Android Chrome (2026)"
 id: 94aa34df-ef15-450d-b3c2-953aec453c51
 title: 'Best Ad Blockers for Android Chrome: Enhance Your Browsing Experience'
 slug: >-

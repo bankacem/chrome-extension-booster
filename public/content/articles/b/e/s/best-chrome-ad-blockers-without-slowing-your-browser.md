@@ -1,5 +1,5 @@
 ---
-seo_title: "7 Chrome Ad Blockers That Won't Slow You Down (2026)"
+seo_title: "7 Chrome Ad Blockers That Won't Slow You Down"
 id: d0bd493c-ccc0-49a7-ad54-20329702ee0a
 title: '7 Chrome Extensions That Block Ads Without Slowing Your Browser Down'
 slug: best-chrome-ad-blockers-without-slowing-your-browser

@@ -1,4 +1,5 @@
 ---
+seo_title: "Custom CSS Injector Extensions"
 id: 564e6423-ba5a-4d1e-b065-de0c1a402d72
 title: >-
   Unlocking the Full Potential of Your Browser: A Comprehensive Guide to Custom

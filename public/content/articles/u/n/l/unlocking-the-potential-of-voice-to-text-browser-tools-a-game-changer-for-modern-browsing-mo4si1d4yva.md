@@ -1,4 +1,5 @@
 ---
+seo_title: "Voice-to-Text Browser Tools"
 id: 801e42e3-c0e1-44f1-bb25-aa4dc36acf9f
 title: >-
   Unlocking the Potential of Voice-to-Text Browser Tools: A Game-Changer for

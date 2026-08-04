@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Tab Manager for Chrome (High Memory)"
 id: 36fd2fa6-97be-4eea-9888-0cfc10620e94
 title: >-
   Optimizing Your Browser: The Ultimate Tab Manager for Chrome High Memory
