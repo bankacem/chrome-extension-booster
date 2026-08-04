@@ -1,0 +1,38 @@
+name: Test AgentRouter API Key
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test-key:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run discovery and capture output
+        env:
+          AGENTROUTER_KEY: ${{ secrets.AGENTROUTER_KEY }}
+        run: |
+          python3 seo_agent_pro/test_agentrouter.py > /tmp/results.log 2>&1 || true
+
+      - name: Post results as an issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "## AgentRouter test results"
+            echo '```'
+            cat /tmp/results.log
+            echo '```'
+          } > /tmp/results.md
+          gh issue create \
+            --title "AgentRouter API test results ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
+            --body-file /tmp/results.md \
+            --repo ${{ github.repository }}
