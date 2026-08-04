@@ -7,11 +7,17 @@ API keys to a public repository.
 import os
 
 API_KEYS = {
-    "anthropic":  os.getenv("ANTHROPIC_KEY", ""),
-    "openrouter": os.getenv("OPENROUTER_KEY", ""),
-    "groq":       os.getenv("GROQ_KEY", ""),
-    # Bluesminds (user-provided provider)
-    "bluesminds": os.getenv("BLUESMINDS_KEY", ""),
+    "anthropic":   os.getenv("ANTHROPIC_KEY", ""),
+    "openrouter":  os.getenv("OPENROUTER_KEY", ""),
+    "groq":        os.getenv("GROQ_KEY", ""),
+    # Bluesminds — kept for backward compatibility only. The base URL used by
+    # _call_bluesminds() (api.bluesminds.com) was never confirmed against real
+    # docs and does not resolve/serve the OpenAI-compatible API — this is the
+    # actual cause of the repeated 500/504 errors, not a transient outage.
+    "bluesminds":  os.getenv("BLUESMINDS_KEY", ""),
+    # Agentrouter.org — the provider actually validated in test_agentrouter.py.
+    # Set AGENTROUTER_KEY in your environment; never hardcode the key here.
+    "agentrouter": os.getenv("AGENTROUTER_KEY", ""),
 }
 
 # ──────────────────────────────────────────────────────────────
@@ -32,10 +38,21 @@ MODELS = {
     # ── Groq (ultra-fast) ──────────────────────────────────────
     "llama-3.1-70b-groq":   ("groq",        "llama-3.1-70b-versatile"),
 
-    # ── Bluesminds (confirmed working models, tested 2026-08-02) ─
+    # ── Bluesminds — DEPRECATED, base URL unconfirmed / not working ──
     "bluesminds-gpt4o":     ("bluesminds",  "gpt-4o"),
     "bluesminds-llama-8b":  ("bluesminds",  "meta/llama-3.1-8b-instruct"),
+
+    # ── Agentrouter.org — use these instead of the bluesminds-* entries ──
+    "agentrouter-gpt-4o":       ("agentrouter", "gpt-4o"),
+    "agentrouter-gpt-4o-mini":  ("agentrouter", "gpt-4o-mini"),
+    "agentrouter-claude-sonnet":("agentrouter", "claude-sonnet-4-5"),
+    "agentrouter-deepseek-v3":  ("agentrouter", "deepseek-v3"),
 }
+
+# NOTE: run `python test_agentrouter.py` (with AGENTROUTER_KEY set) once to
+# confirm which base URL (agentrouter.org vs agentrouter.org/api) and which
+# model IDs actually respond for your account before relying on these in
+# production — the candidate list above is not yet verified end-to-end.
 
 # ──────────────────────────────────────────────────────────────
 #  DEFAULT MODEL

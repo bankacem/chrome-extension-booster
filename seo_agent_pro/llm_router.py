@@ -243,6 +243,64 @@ def _call_bluesminds(model_id: str, system: str, user: str, stream: bool) -> str
 
 
 # ──────────────────────────────────────────────────────────────
+#  Agentrouter.org — OpenAI-compatible proxy, validated in test_agentrouter.py
+#  NOTE: confirm the base URL still resolves for your account (run
+#  test_agentrouter.py) before depending on this in production. Unlike
+#  Bluesminds this one was actually reachable during diagnosis, but the base
+#  URL and exact model IDs an account has access to can change.
+# ──────────────────────────────────────────────────────────────
+
+def _call_agentrouter(model_id: str, system: str, user: str, stream: bool) -> str:
+    url     = "https://agentrouter.org/v1/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {API_KEYS['agentrouter']}",
+        "Content-Type":  "application/json",
+        "Accept":        "application/json",
+        "User-Agent":    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                         "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    }
+    payload = {
+        "model":      model_id,
+        "max_tokens": SETTINGS["max_tokens"],
+        "stream":     stream,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user",   "content": user},
+        ],
+    }
+
+    req  = urllib.request.Request(url, json.dumps(payload).encode(), headers)
+    full = ""
+
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        if stream:
+            for raw_line in resp:
+                line = raw_line.decode("utf-8").strip()
+                if not line.startswith("data:"):
+                    continue
+                data = line[5:].strip()
+                if data == "[DONE]":
+                    break
+                try:
+                    obj   = json.loads(data)
+                    delta = obj["choices"][0].get("delta", {}).get("content", "")
+                    if delta:
+                        print(delta, end="", flush=True)
+                        full += delta
+                except (json.JSONDecodeError, KeyError):
+                    continue
+            print()
+        else:
+            raw = resp.read().decode("utf-8")
+            if not raw.strip():
+                raise ValueError("agentrouter.org returned an empty response body")
+            body = json.loads(raw)
+            full = body["choices"][0]["message"]["content"]
+
+    return full
+
+
+# ──────────────────────────────────────────────────────────────
 #  Public API
 # ──────────────────────────────────────────────────────────────
 
@@ -277,6 +335,8 @@ def call(
                 return _call_groq(model_id, system, user, stream)
             elif provider == "bluesminds":
                 return _call_bluesminds(model_id, system, user, stream)
+            elif provider == "agentrouter":
+                return _call_agentrouter(model_id, system, user, stream)
             else:
                 print(c("red", f"  ✗ Unknown provider: {provider}"))
                 sys.exit(1)

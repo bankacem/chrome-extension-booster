@@ -26,13 +26,17 @@ from pathlib import Path
 sys.path.insert(0, os.path.dirname(__file__))
 
 import modules as agent  # noqa: E402
+import memory  # noqa: E402
 from llm_router import call  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE_PATH = Path(__file__).parent / "keyword_queue.txt"
 STATE_PATH = Path(__file__).parent / "daily_article_state.json"
 ARTICLES_DIR = ROOT / "public" / "content" / "articles"
-MODEL = "bluesminds-gpt4o"
+# bluesminds-gpt4o pointed at a base URL (api.bluesminds.com) that never
+# actually worked — see llm_router.py. Default to the agentrouter provider,
+# override with SEO_AGENT_MODEL if needed.
+MODEL = os.environ.get("SEO_AGENT_MODEL", "agentrouter-gpt-4o")
 
 DEFAULT_CATEGORY = "Productivity & Tools"
 DEFAULT_FEATURED_IMAGE = "/og-image.png"
@@ -137,9 +141,14 @@ def main():
     keyword = pick_next_keyword()
     print(f"Generating article for keyword: {keyword!r} (model={MODEL})")
 
-    memory = {"articles_written": []}
+    # Load real persistent memory instead of a throwaway empty dict — this is
+    # what lets the strategy engine know how many articles already exist and
+    # steer the model away from repeating the same generic opening/angle.
+    mem = memory.load()
+    articles_written = len(mem.get("articles_written", []))
+
     competitor_data = agent.analyze_competitors(keyword, MODEL)
-    strategy = agent.decide_strategy(keyword, competitor_data, 0, MODEL)
+    strategy = agent.decide_strategy(keyword, competitor_data, articles_written, MODEL)
     raw_article = agent.write_article(keyword, strategy, MODEL)
 
     # Extract H1 as the title; everything after it is the body.
@@ -180,7 +189,7 @@ def main():
         f"category: {DEFAULT_CATEGORY}",
         f"tags:{yaml_list([])}",
         f"keywords:{yaml_list([keyword])}",
-        f"author: Admin",
+        "author: Admin",
         f"published_at: {datetime.now(timezone.utc).strftime('%Y-%m-%d')}",
         f"read_time: {read_time}",
         "---",
@@ -197,6 +206,10 @@ def main():
     out_path.write_text(full_content, encoding="utf-8")
 
     mark_keyword_used(keyword)
+
+    # Persist this run so the NEXT run knows the real article count and can
+    # keep steering away from angles/openings already used.
+    memory.record_article(mem, keyword, body, MODEL)
 
     print(f"Wrote: {out_path.relative_to(ROOT)}")
     print(f"Title: {title}")
