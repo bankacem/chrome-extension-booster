@@ -156,7 +156,7 @@
     },
     {
       "source": "/blog/is-ghostery-safe-to-use-a-professional-2026-review-mmb7ltlowx4",
-      "destination": "/blog/is-ghostery-safe-a-closer-look-for-2026",
+      "destination": "/blog/is-ghostery-safe-to-use-a-professional-2026-review",
       "permanent": true
     },
     {
@@ -1441,7 +1441,7 @@
     },
     {
       "source": "/blog/extension-android-google-chrome-mkzmte0ni0z",
-      "destination": "/blog/unlocking-the-power-of-extension-android-google-chrome",
+      "destination": "/blog/extension-android-google-chrome",
       "permanent": true
     },
     {
@@ -2664,6 +2664,26 @@
       "source": "/blog/stop-trackers-chrome-stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions-mm3scn1bz3l",
       "destination": "/blog",
       "permanent": false
+    },
+    {
+      "source": "/blog/extension-ad-block-plus-1",
+      "destination": "/blog/extension-ad-block-plus-faster-browsing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-extension-android-google-chrome",
+      "destination": "/blog/extension-android-google-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-antivirus-google-chrome-1",
+      "destination": "/blog/why-you-need-an-antivirus-extension-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/is-ghostery-safe-a-closer-look-for-2026",
+      "destination": "/blog/is-ghostery-safe-to-use-a-professional-2026-review",
+      "permanent": true
     }
   ]
 }
