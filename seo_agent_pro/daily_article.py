@@ -146,33 +146,13 @@ def yaml_list(items: list) -> str:
 #  Main pipeline
 # ──────────────────────────────────────────────────────────────
 
-def main():
-    keyword = pick_next_keyword()
-
-    # Pick the first model that actually responds instead of hardcoding one
-    # provider and failing the whole run if that provider is down (which is
-    # exactly what happened with agentrouter.org — see MODEL_FALLBACK_CHAIN
-    # comment above). SEO_AGENT_MODEL, if set, skips probing and forces a
-    # single specific model.
-    forced_model = os.environ.get("SEO_AGENT_MODEL")
-    if forced_model:
-        MODEL = forced_model
-        print(f"Using forced model: {MODEL!r} (SEO_AGENT_MODEL set)")
-    else:
-        MODEL = find_working_model(MODEL_FALLBACK_CHAIN)
-        print(f"Using model: {MODEL!r} (first working candidate in fallback chain)")
-
-    print(f"Generating article for keyword: {keyword!r} (model={MODEL})")
-
-    # Load real persistent memory instead of a throwaway empty dict — this is
-    # what lets the strategy engine know how many articles already exist and
-    # steer the model away from repeating the same generic opening/angle.
-    mem = memory.load()
-    articles_written = len(mem.get("articles_written", []))
-
-    competitor_data = agent.analyze_competitors(keyword, MODEL)
-    strategy = agent.decide_strategy(keyword, competitor_data, articles_written, MODEL)
-    raw_article = agent.write_article(keyword, strategy, MODEL)
+def _generate_content(keyword: str, articles_written: int, model: str) -> tuple[str, str, str]:
+    """Run the actual generation pipeline against one specific model. Raises
+    on any failure — the caller decides whether to fall back to the next
+    candidate model or give up."""
+    competitor_data = agent.analyze_competitors(keyword, model)
+    strategy = agent.decide_strategy(keyword, competitor_data, articles_written, model)
+    raw_article = agent.write_article(keyword, strategy, model)
 
     # Extract H1 as the title; everything after it is the body.
     lines = raw_article.strip().splitlines()
@@ -191,8 +171,64 @@ def main():
         "no preamble, no quotes, 140-160 characters.",
         f'Write a meta description for an article targeting the keyword "{keyword}". '
         f"Article title: {title}",
-        MODEL,
+        model,
     ).strip().strip('"')
+
+    return title, body, meta_description
+
+
+def main():
+    keyword = pick_next_keyword()
+
+    # Load real persistent memory instead of a throwaway empty dict — this is
+    # what lets the strategy engine know how many articles already exist and
+    # steer the model away from repeating the same generic opening/angle.
+    mem = memory.load()
+    articles_written = len(mem.get("articles_written", []))
+
+    forced_model = os.environ.get("SEO_AGENT_MODEL")
+    if forced_model:
+        candidates = [forced_model]
+        print(f"Using forced model: {forced_model!r} (SEO_AGENT_MODEL set, no fallback)")
+    else:
+        candidates = list(MODEL_FALLBACK_CHAIN)
+
+    # A model can pass the cheap connectivity probe in find_working_model()
+    # and still fail mid-pipeline on a long call (this happened for real
+    # during diagnosis: bluesminds-gpt4o answered a one-word probe fine, then
+    # hit HTTP 500 on the ~2000-word article-writing call). So retry the
+    # WHOLE pipeline against the next candidate instead of aborting the run
+    # the first time that happens, up until every candidate is exhausted.
+    MODEL = None
+    title = body = meta_description = None
+    remaining = list(candidates)
+    pipeline_errors: list[str] = []
+
+    while remaining:
+        try:
+            probe_model = find_working_model(remaining)
+        except RuntimeError as e:
+            pipeline_errors.append(str(e))
+            break
+
+        print(f"Attempting full generation with model: {probe_model!r}")
+        try:
+            title, body, meta_description = _generate_content(keyword, articles_written, probe_model)
+            MODEL = probe_model
+            break
+        except SystemExit:
+            pipeline_errors.append(f"{probe_model}: exited after exhausting retries mid-pipeline")
+        except Exception as e:
+            pipeline_errors.append(f"{probe_model}: failed mid-pipeline: {e}")
+
+        print(f"  ✗ {probe_model} failed mid-pipeline — trying the next candidate model...")
+        remaining = [m for m in remaining if m != probe_model]
+
+    if MODEL is None:
+        detail = "\n".join(f"  - {e}" for e in pipeline_errors)
+        raise RuntimeError(f"All candidate models failed to generate an article.\n{detail}")
+
+    print(f"Generating article for keyword: {keyword!r} (model={MODEL})")
 
     slug = slugify(title)
     seo_title = make_seo_title(title)
