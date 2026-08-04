@@ -2,12 +2,11 @@
 seo_title: "The Best Chrome Extension to View Source Code"
 id: 74b3efa7-80f7-447b-84fd-df6e6c6de1e0
 title: 'The Best Chrome Extension to View Source Code'
-slug: the-best-chrome-extension-to-view-source-code
-  unlocking-the-power-of-web-development-the-best-chrome-extension-to-view-source-code-mmdt11ed3vp
+slug: "the-best-chrome-extension-to-view-source-code"
 excerpt: "As a web developer, being able to view the source code of a website is crucial for understanding how it works, identifying potential issues, and learning…"
 featured_image: >-
   /content/images/unlocking-the-power-of-web-development-the-best-chrome-extension-to-view-source-code-mmdt11ed3vp/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - chrome extension to view source code

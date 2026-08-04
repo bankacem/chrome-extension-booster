@@ -5,7 +5,7 @@ title: 'How to use INDEX MATCH in Excel like a Pro: The Definitive Guide'
 slug: how-to-use-index-match-in-excel-like-a-pro-3
 excerpt: "For decades, the VLOOKUP function has been the cornerstone of data retrieval in spreadsheet software."
 featured_image: /content/images/how-to-use-index-match-in-excel-like-a-pro-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags:
   - 'How to use INDEX MATCH in Excel like a Pro: The Definitive Guide'
 keywords:

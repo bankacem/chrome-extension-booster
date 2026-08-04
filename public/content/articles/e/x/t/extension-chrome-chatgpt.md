@@ -5,7 +5,7 @@ title: 'ChatGPT Extension for Chrome: Full Guide'
 slug: extension-chrome-chatgpt
 excerpt: "With the rapid advancement of artificial intelligence, the way we interact with the internet is changing dramatically."
 featured_image: /content/images/extension-chrome-chatgpt/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - extension chrome chatgpt

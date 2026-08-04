@@ -4,8 +4,7 @@ id: 3670d34a-8bb1-4428-bf95-2a9d54c4b23c
 title: >-
   Essential Chrome Extensions for Ad-Free Browsing: Unlocking a Faster, Cleaner,
   and More Productive Web Experience
-slug: >-
-  essential-chrome-extensions-for-ad-free-browsing-user-experience-speed-productivity-clean-web-9
+slug: "essential-chrome-extensions-for-ad-free-browsing-user-experience-speed-productivity-clean-web-9"
 excerpt: "Are you tired of cluttered web pages, annoying pop-ups, and sluggish browsing speeds? Look no further!"
 featured_image: >-
   /content/images/essential-chrome-extensions-for-ad-free-browsing-user-experience-speed-productivity-clean-web-9/featured.webp

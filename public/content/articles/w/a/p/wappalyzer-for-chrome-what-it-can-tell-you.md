@@ -2,12 +2,11 @@
 seo_title: "Wappalyzer for Chrome: What It Can Tell You"
 id: ab5e0971-a0f6-42ab-b8a2-3b33fd9f07d0
 title: 'Wappalyzer for Chrome: What It Can Tell You'
-slug: wappalyzer-for-chrome-what-it-can-tell-you
-  unlocking-the-power-of-website-analysis-a-comprehensive-wappalyzer-chrome-extension-guide-mmtm0ggk7gb
+slug: "wappalyzer-for-chrome-what-it-can-tell-you"
 excerpt: "As a web developer, designer, or digital marketer, understanding the technology behind a website is crucial for optimization, security, and performance."
 featured_image: >-
   /content/images/unlocking-the-power-of-website-analysis-a-comprehensive-wappalyzer-chrome-extension-guide-mmtm0ggk7gb/featured.webp
-category: Chrome Extensions
+category: "Security & Privacy"
 tags: []
 keywords:
   - wappalyzer chrome extension guide

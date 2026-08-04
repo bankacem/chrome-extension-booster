@@ -2,12 +2,11 @@
 seo_title: "Bringing This Extension to Microsoft Edge"
 id: 8c46c0ad-658a-4e54-9b44-5e7b5c631215
 title: 'Bringing This Extension to Microsoft Edge'
-slug: unlocking-the-power-of-extension-microsoft-edge
-  unlocking-the-power-of-extension-microsoft-edge-a-comprehensive-guide-ml5gl609vt1
+slug: "unlocking-the-power-of-extension-microsoft-edge"
 excerpt: "As the world of web browsing continues to evolve, extension Microsoft Edge has become an essential tool for enhancing the user experience."
 featured_image: >-
   /content/images/unlocking-the-power-of-extension-microsoft-edge-a-comprehensive-guide-ml5gl609vt1/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension microsoft edge

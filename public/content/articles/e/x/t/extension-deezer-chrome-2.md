@@ -5,7 +5,7 @@ title: 'Getting More Out of Deezer with This Extension'
 slug: extension-deezer-chrome-2
 excerpt: "Music lovers rejoice! The extension Deezer Chrome has revolutionized the way we listen to music online."
 featured_image: /content/images/extension-deezer-chrome-2/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - extension deezer chrome

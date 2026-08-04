@@ -7,7 +7,7 @@ title: >-
 slug: google-translate-extension-to-chrome-6
 excerpt: "Are you tired of being limited by language barriers while browsing the internet?"
 featured_image: /content/images/google-translate-extension-to-chrome-6/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - google translate extension to chrome

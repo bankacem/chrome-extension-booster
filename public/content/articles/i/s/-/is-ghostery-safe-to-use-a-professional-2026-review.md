@@ -6,7 +6,7 @@ slug: is-ghostery-safe-to-use-a-professional-2026-review
 excerpt: "As we navigate the vast expanse of the internet, our online security and privacy have become increasingly important."
 featured_image: >-
   /content/images/is-ghostery-safe-to-use-a-professional-2026-review-mmb7srbz193/featured.webp
-category: Chrome Extensions
+category: "Security & Privacy"
 tags: []
 keywords:
   - Is Ghostery safe to use? A professional 2026 review

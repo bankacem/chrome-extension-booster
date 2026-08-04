@@ -2,12 +2,11 @@
 seo_title: "Download Images in Bulk with This Extension"
 id: 886230a2-4e1a-482f-9949-c9b951a77939
 title: 'Download Images in Bulk with This Extension'
-slug: unlock-the-power-of-batch-image-downloader-extension
-  unlock-the-power-of-batch-image-downloader-extension-a-comprehensive-guide-mmtvre5kc7v
+slug: "unlock-the-power-of-batch-image-downloader-extension"
 excerpt: "Are you tired of manually downloading images one by one from your favorite websites? Look no further!"
 featured_image: >-
   /content/images/unlock-the-power-of-batch-image-downloader-extension-a-comprehensive-guide-mmtvre5kc7v/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags: []
 keywords:
   - batch image downloader extension

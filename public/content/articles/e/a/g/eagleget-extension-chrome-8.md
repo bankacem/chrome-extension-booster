@@ -5,7 +5,7 @@ title: 'EagleGet Extension for Chrome: Full Guide'
 slug: eagleget-extension-chrome-8
 excerpt: "Are you tired of using a slow and clunky download manager in your Chrome browser?"
 featured_image: /content/images/eagleget-extension-chrome-8/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - eagleget extension chrome

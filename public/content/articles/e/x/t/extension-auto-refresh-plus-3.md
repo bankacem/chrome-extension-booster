@@ -5,7 +5,7 @@ title: 'Unlocking Enhanced Productivity: The Power of Extension Auto Refresh Plu
 slug: extension-auto-refresh-plus-3
 excerpt: "In today's fast-paced digital landscape, staying up-to-date with the latest information is crucial for success."
 featured_image: /content/images/extension-auto-refresh-plus-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - extension auto refresh plus

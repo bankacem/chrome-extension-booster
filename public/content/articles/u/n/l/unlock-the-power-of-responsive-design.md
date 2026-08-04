@@ -2,8 +2,7 @@
 seo_title: 'A Responsive Design Tester for Chrome'
 id: 0660cb87-2dd4-4e3d-9cd4-8898e9fbc91f
 title: 'A Responsive Design Tester Extension for Chrome'
-slug: unlock-the-power-of-responsive-design
-  unlock-the-power-of-responsive-design-the-ultimate-guide-to-responsive-design-tester-extension-mmtm0h38w7y
+slug: "unlock-the-power-of-responsive-design"
 excerpt: "As the world becomes increasingly digital, having a website that is optimized for all devices is no longer a luxury, but a necessity."
 featured_image: >-
   /content/images/unlock-the-power-of-responsive-design-the-ultimate-guide-to-responsive-design-tester-extension-mmtm0h38w7y/featured.webp

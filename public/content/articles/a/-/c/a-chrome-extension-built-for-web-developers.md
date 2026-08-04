@@ -4,12 +4,11 @@ id: ca68b867-7313-4b18-942f-fdb2da512763
 title: >-
   Unlocking Productivity: The Best Chrome Extension for Web Developers to Boost
   Efficiency
-slug: a-chrome-extension-built-for-web-developers
-  unlocking-productivity-the-best-chrome-extension-for-web-developers-to-boost-efficiency-mmdt109l96v
+slug: "a-chrome-extension-built-for-web-developers"
 excerpt: "As a web developer, you're constantly looking for ways to streamline your workflow, improve productivity, and stay ahead of the curve."
 featured_image: >-
   /content/images/unlocking-productivity-the-best-chrome-extension-for-web-developers-to-boost-efficiency-mmdt109l96v/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - best chrome extension for web developers

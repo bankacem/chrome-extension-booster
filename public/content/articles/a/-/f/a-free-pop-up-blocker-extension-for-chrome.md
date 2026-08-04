@@ -2,8 +2,7 @@
 seo_title: "A Free Pop-Up Blocker Extension for Chrome"
 id: 716bb982-779c-47e9-82a8-76951891c7f7
 title: 'A Free Pop-Up Blocker Extension for Chrome'
-slug: a-free-pop-up-blocker-extension-for-chrome
-  unlock-the-power-of-a-free-pop-up-blocker-chrome-extension-for-a-seamless-browsing-experience-mm3scnkaas3
+slug: "a-free-pop-up-blocker-extension-for-chrome"
 excerpt: "Are you tired of annoying pop-ups and intrusive ads ruining your online experience? Look no further than a free pop up blocker Chrome extension."
 featured_image: >-
   /content/images/unlock-the-power-of-a-free-pop-up-blocker-chrome-extension-for-a-seamless-browsing-experience-mm3scnkaas3/featured.webp

@@ -7,7 +7,7 @@ title: >-
 slug: a-game-changer-for-efficient-browsing
 excerpt: "Are you tired of manually refreshing web pages to stay updated with the latest information?"
 featured_image: /content/images/extension-auto-refresh-plus-mkzmtg4rbel/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - extension auto refresh plus

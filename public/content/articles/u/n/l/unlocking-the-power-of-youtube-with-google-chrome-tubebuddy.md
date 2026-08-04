@@ -2,12 +2,11 @@
 seo_title: "TubeBuddy for Chrome: Features Creators Want"
 id: a64d294b-87b3-436b-91c5-46d1693b6328
 title: 'TubeBuddy for Chrome: Features Creators Want'
-slug: unlocking-the-power-of-youtube-with-google-chrome-tubebuddy
-  unlocking-the-power-of-youtube-with-google-chrome-tubebuddy-a-comprehensive-guide-ml5gl5gyeni
+slug: "unlocking-the-power-of-youtube-with-google-chrome-tubebuddy"
 excerpt: "As a YouTube creator or enthusiast, you're likely no stranger to the importance of optimizing your videos for maximum visibility and engagement."
 featured_image: >-
   /content/images/unlocking-the-power-of-youtube-with-google-chrome-tubebuddy-a-comprehensive-guide-ml5gl5gyeni/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - google chrome tubebuddy

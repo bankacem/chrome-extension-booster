@@ -8,7 +8,7 @@ excerpt: >-
   experience cannot be overstated. With the rise of online threats and intrusive
   advertise
 featured_image: /content/images/ublock-origin-best-settings-2026/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags:
   - ublock origin
   - ad blocker settings

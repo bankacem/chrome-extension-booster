@@ -2,8 +2,7 @@
 seo_title: "Unlock Ad-Free YouTube Browsing"
 id: 052dcd31-6092-480c-9dbf-6f962ba54892
 title: 'Unlock Ad-Free YouTube Browsing'
-slug: unlock-ad-free-youtube-browsing-youtube-ad-blocker-extension-chrome
-  unlock-ad-free-youtube-browsing-the-ultimate-guide-to-youtube-ad-blocker-extension-chrome-mmdz7ycqcui
+slug: "unlock-ad-free-youtube-browsing-youtube-ad-blocker-extension-chrome"
 excerpt: "Are you tired of annoying ads interrupting your YouTube videos? Do you want to enhance your browsing experience and enjoy uninterrupted video streaming?"
 featured_image: >-
   /content/images/unlock-ad-free-youtube-browsing-the-ultimate-guide-to-youtube-ad-blocker-extension-chrome-mmdz7ycqcui/featured.webp

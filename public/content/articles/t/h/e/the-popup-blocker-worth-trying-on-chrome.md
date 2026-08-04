@@ -2,12 +2,11 @@
 seo_title: "The Popup Blocker Worth Trying on Chrome"
 id: a9c7368f-9a43-4f90-ba28-995c7ed5f5ed
 title: 'The Popup Blocker Worth Trying on Chrome'
-slug: the-popup-blocker-worth-trying-on-chrome
-  discover-the-best-popup-blocker-chrome-extension-for-a-seamless-browsing-experience-mme0iwwwapy
+slug: "the-popup-blocker-worth-trying-on-chrome"
 excerpt: "Are you tired of annoying popups and intrusive ads ruining your online experience? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-popup-blocker-chrome-extension-for-a-seamless-browsing-experience-mme0iwwwapy/featured.webp
-category: Screenshots & Screen Capture
+category: "Ad Blockers"
 tags: []
 keywords:
   - best popup blocker chrome extension

@@ -4,12 +4,11 @@ id: 4ef2edb2-85f3-4e9e-84db-1fc5ba5cc766
 title: >-
   Optimizing Browser Performance: How to Limit Chrome RAM Usage with the Right
   Extension
-slug: the-right-extension-to-cap-chromes-ram-usage
-  optimizing-browser-performance-how-to-limit-chrome-ram-usage-with-the-right-extension-mmtizx78iml
+slug: "the-right-extension-to-cap-chromes-ram-usage"
 excerpt: "Google Chrome is one of the most popular web browsers in the world, known for its speed, security, and extensive library of extensions."
 featured_image: >-
   /content/images/optimizing-browser-performance-how-to-limit-chrome-ram-usage-with-the-right-extension-mmtizx78iml/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - limit chrome ram usage extension

@@ -2,12 +2,11 @@
 seo_title: 'Chrome Extensions for Facebook Tools'
 id: ddf7cfca-a1b3-4136-9cc0-0cc27615ba3e
 title: 'Chrome Extensions Built for Facebook Power Users'
-slug: unlocking-the-power-of-facebook-chrome-extensions-for-facebook-tools
-  unlocking-the-power-of-facebook-the-ultimate-guide-to-chrome-extensions-for-facebook-tools-mmdsje6nqce
+slug: "unlocking-the-power-of-facebook-chrome-extensions-for-facebook-tools"
 excerpt: "Are you tired of navigating through Facebook's complex interface, searching for the right tools to manage your online presence? Look no further!"
 featured_image: >-
   /content/images/unlocking-the-power-of-facebook-the-ultimate-guide-to-chrome-extensions-for-facebook-tools-mmdsje6nqce/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - chrome extension for facebook tools

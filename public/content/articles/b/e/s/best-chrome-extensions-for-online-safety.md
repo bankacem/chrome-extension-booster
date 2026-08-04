@@ -2,12 +2,11 @@
 seo_title: "Best Chrome Extensions for Online Safety"
 id: fb875d96-f54b-4c1a-b9d6-e588429bc796
 title: 'Best Chrome Extensions for Online Safety: Protecting Your Digital Footprint'
-slug: best-chrome-extensions-for-online-safety
-  best-chrome-extensions-for-online-safety-protecting-your-digital-footprint-mmdzl1pwuso
+slug: "best-chrome-extensions-for-online-safety"
 excerpt: "With the ever-increasing threat of cyber attacks, online safety has become a top priority for internet users."
 featured_image: >-
   /content/images/best-chrome-extensions-for-online-safety-protecting-your-digital-footprint-mmdzl1pwuso/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - best chrome extensions for online safety

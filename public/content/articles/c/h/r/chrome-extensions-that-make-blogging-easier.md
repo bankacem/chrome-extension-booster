@@ -4,12 +4,11 @@ id: fd680de0-6517-4c89-9c90-a516114c5a5d
 title: >-
   Unlocking Productivity: The Best Chrome Extensions for Bloggers to Boost
   Efficiency
-slug: chrome-extensions-that-make-blogging-easier
-  unlocking-productivity-the-best-chrome-extensions-for-bloggers-to-boost-efficiency-mmdrqpo6zwx
+slug: "chrome-extensions-that-make-blogging-easier"
 excerpt: "As a blogger, you understand the importance of staying organized, focused, and efficient in your work."
 featured_image: >-
   /content/images/unlocking-productivity-the-best-chrome-extensions-for-bloggers-to-boost-efficiency-mmdrqpo6zwx/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - chrome extensions for bloggers

@@ -2,12 +2,11 @@
 seo_title: "Browser Optimization Extensions"
 id: 23db0497-f289-41cf-b446-230efe3aa030
 title: 'Browser Optimization Extensions'
-slug: unlocking-peak-performance-browser-optimization-extensions
-  unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk
+slug: "unlocking-peak-performance-browser-optimization-extensions"
 excerpt: "As we navigate the vast expanse of the internet, our browsers can quickly become cluttered and inefficient, leading to slower load times, increased memory…"
 featured_image: >-
   /content/images/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - browser optimization extensions

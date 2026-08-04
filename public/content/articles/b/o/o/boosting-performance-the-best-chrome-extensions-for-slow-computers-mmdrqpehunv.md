@@ -6,7 +6,7 @@ slug: boosting-performance-the-best-chrome-extensions-for-slow-computers-mmdrqpe
 excerpt: "Are you tired of using a slow computer that struggles to keep up with your browsing habits? You're not alone."
 featured_image: >-
   /content/images/boosting-performance-the-best-chrome-extensions-for-slow-computers-mmdrqpehunv/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - chrome extensions for slow computers

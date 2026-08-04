@@ -2,8 +2,7 @@
 seo_title: "A Download Manager Extension Worth Installing"
 id: 75703882-68bd-4dcd-b440-ce9d30b3b491
 title: 'A Download Manager Extension Worth Installing'
-slug: a-download-manager-extension-worth-installing
-  discover-the-best-download-manager-chrome-extension-for-a-seamless-browsing-experience-mmdupfh67n8
+slug: "a-download-manager-extension-worth-installing"
 excerpt: "When it comes to downloading files from the internet, a good download manager can make all the difference."
 featured_image: >-
   /content/images/discover-the-best-download-manager-chrome-extension-for-a-seamless-browsing-experience-mmdupfh67n8/featured.webp

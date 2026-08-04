@@ -8,7 +8,7 @@ excerpt: >-
   experience? Do you find yourself constantly closing unnecessary windows and
   alerts that
 featured_image: /content/images/remove-overlays-chrome-extension/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags:
   - remove overlays
   - chrome extension

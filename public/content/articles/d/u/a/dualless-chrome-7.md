@@ -5,7 +5,7 @@ title: 'Dualless for Chrome: What It Does'
 slug: dualless-chrome-7
 excerpt: "Are you tired of the limitations of traditional Chrome browsing? Do you want to take your browsing experience to the next level?"
 featured_image: /content/images/dualless-chrome-7/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - dualless chrome

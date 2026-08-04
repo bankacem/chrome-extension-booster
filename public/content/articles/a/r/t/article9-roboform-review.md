@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   RoboForm Chrome Extension Review 2026: The Form-Filling Veteran That Refuses
   to Retire
+category: "Chrome Extensions"
 ---
-# RoboForm Chrome Extension Review 2026: The Form-Filling Veteran That Refuses to Retire
 
 **Last Updated:** June 3, 2026 | **Reading Time:** 8 minutes
 

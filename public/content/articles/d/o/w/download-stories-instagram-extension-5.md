@@ -5,7 +5,7 @@ title: 'Downloading Instagram Stories with a Chrome Extension'
 slug: download-stories-instagram-extension-5
 excerpt: "Are you tired of watching Instagram stories that disappear after 24 hours? Do you want to save your favorite stories or download them for later use?"
 featured_image: /content/images/download-stories-instagram-extension-5/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - download stories instagram extension

@@ -10,8 +10,8 @@ title: >-
   Post
 meta_description: ✍️ Best AI Blog Writer Chrome Extensions 2026 — From Keyword to Published Post
 description: ✍️ Best AI Blog Writer Chrome Extensions 2026 — From Keyword to Published Post
+category: "AI Tools"
 ---
-# ✍️ Best AI Blog Writer Chrome Extensions (2026) — From Keyword to Published Post
 
 > **In 2026, writing blog posts isn't the hard part. The hard part is writing posts that actually rank.**
 >

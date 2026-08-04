@@ -2,12 +2,11 @@
 seo_title: "A Chrome Extension for Saving Media Files"
 id: 83a55574-0b95-41a7-9af9-70a67c503637
 title: 'A Chrome Extension for Saving Media Files'
-slug: >-
-  discover-the-best-chrome-extension-for-media-download-a-comprehensive-guide-mmdupgopifb
+slug: "discover-the-best-chrome-extension-for-media-download-a-comprehensive-guide-mmdupgopifb"
 excerpt: "Are you tired of struggling to download your favorite media files from the internet? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-chrome-extension-for-media-download-a-comprehensive-guide-mmdupgopifb/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - best chrome extension for media download

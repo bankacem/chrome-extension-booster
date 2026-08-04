@@ -2,12 +2,11 @@
 seo_title: 'YouTube Audio Extension for Chrome'
 id: 754890db-d2db-4824-8c71-b0bf310dc6a6
 title: 'Extracting Audio from YouTube with a Chrome Extension'
-slug: unlock-the-power-of-youtube-audio-youtube-audio-extension
-  unlock-the-power-of-youtube-audio-the-ultimate-guide-to-youtube-audio-extension-mm3umin7mtl
+slug: "unlock-the-power-of-youtube-audio-youtube-audio-extension"
 excerpt: "Are you tired of watching YouTube videos just to listen to the audio? Do you want to enjoy your favorite songs, podcasts, or audiobooks without the…"
 featured_image: >-
   /content/images/unlock-the-power-of-youtube-audio-the-ultimate-guide-to-youtube-audio-extension-mm3umin7mtl/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - youtube audio extension

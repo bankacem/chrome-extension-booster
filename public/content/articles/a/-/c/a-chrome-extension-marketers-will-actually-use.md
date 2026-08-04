@@ -2,12 +2,11 @@
 seo_title: "A Chrome Extension Marketers Will Actually Use"
 id: 9aa98173-160f-45e2-b126-6428f677e48d
 title: 'A Chrome Extension Marketers Will Actually Use'
-slug: a-chrome-extension-marketers-will-actually-use
-  unlock-the-power-of-chrome-discover-the-best-chrome-extension-for-marketing-professionals-mmdt10wp8cu
+slug: "a-chrome-extension-marketers-will-actually-use"
 excerpt: "As a marketing professional, you're constantly looking for ways to streamline your workflow, boost productivity, and stay ahead of the competition."
 featured_image: >-
   /content/images/unlock-the-power-of-chrome-discover-the-best-chrome-extension-for-marketing-professionals-mmdt10wp8cu/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - best chrome extension for marketing

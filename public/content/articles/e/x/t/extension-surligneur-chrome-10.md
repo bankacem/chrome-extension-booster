@@ -5,7 +5,7 @@ title: 'A Highlighting Extension for Chrome'
 slug: extension-surligneur-chrome-10
 excerpt: "Are you tired of tedious note-taking and tedious text highlighting while browsing the web?"
 featured_image: /content/images/extension-surligneur-chrome-10/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - extension surligneur chrome

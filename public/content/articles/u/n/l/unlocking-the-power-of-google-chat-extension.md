@@ -2,12 +2,11 @@
 seo_title: 'Google Chat Extension for Chrome'
 id: d476acee-1965-4b3b-83d4-f9de7851b3c9
 title: 'A Chrome Extension for Google Chat Notifications'
-slug: unlocking-the-power-of-google-chat-extension
-  unlocking-the-power-of-google-chat-extension-boosting-productivity-and-streamlining-communication-mm3umi0wby8
+slug: "unlocking-the-power-of-google-chat-extension"
 excerpt: "Effective communication is the backbone of any successful team or organization, and Google Chat extension has revolutionized the way we collaborate and…"
 featured_image: >-
   /content/images/unlocking-the-power-of-google-chat-extension-boosting-productivity-and-streamlining-communication-mm3umi0wby8/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - google chat extension

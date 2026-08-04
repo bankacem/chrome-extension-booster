@@ -7,7 +7,7 @@ title: >-
 slug: best-ai-formula-generator-for-google-sheets-1
 excerpt: "In the modern era of data-driven decision-making, spreadsheets serve as the backbone of business operations, academic research, and personal financial…"
 featured_image: /content/images/best-ai-formula-generator-for-google-sheets-1/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - >-
     Best AI Formula Generator for Google Sheets: Enhancing Productivity with

@@ -2,12 +2,11 @@
 seo_title: "OneTab Extension Review 2026"
 id: 39de6c99-b25c-4cc0-9ce6-f864ffe0af47
 title: 'OneTab Extension Review 2026: A Comprehensive Guide to Boosting Productivity'
-slug: onetab-extension-review-2026-boosting-productivity
-  onetab-extension-review-2026-a-comprehensive-guide-to-boosting-productivity-mmtizyg08jk
+slug: "onetab-extension-review-2026-boosting-productivity"
 excerpt: "Welcome to our OneTab extension review 2026, where we'll delve into the features, benefits, and drawbacks of this popular Chrome extension."
 featured_image: >-
   /content/images/onetab-extension-review-2026-a-comprehensive-guide-to-boosting-productivity-mmtizyg08jk/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - onetab extension review 2026

@@ -4,12 +4,11 @@ id: 8c2f8b23-8d60-4c63-af88-1260d1275fec
 title: >-
   How to Remove Chrome Extensions: A Step-by-Step Guide to Cleaning Up Your
   Browser
-slug: how-to-remove-chrome-extensions-cleaning-up-your-browser
-  how-to-remove-chrome-extensions-a-step-by-step-guide-to-cleaning-up-your-browser-mmdrxz38v9j
+slug: "how-to-remove-chrome-extensions-cleaning-up-your-browser"
 excerpt: "Are you tired of cluttered browser extensions slowing down your Chrome experience?"
 featured_image: >-
   /content/images/how-to-remove-chrome-extensions-a-step-by-step-guide-to-cleaning-up-your-browser-mmdrxz38v9j/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - how to remove chrome extensions

@@ -6,7 +6,7 @@ slug: how-to-download-video-from-facebook-chrome
 excerpt: "Are you looking for a way to download video from Facebook Chrome? Look no further!"
 featured_image: >-
   /content/images/how-to-download-video-from-facebook-chrome-a-step-by-step-guide-mmtvridrp4n/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags: []
 keywords:
   - download video from facebook chrome

@@ -5,7 +5,7 @@ title: 'Chromecast Extension for Chrome: Full Guide'
 slug: extension-chrome-cast-1
 excerpt: "Google Chrome is one of the most popular web browsers in the world, and its versatility is further enhanced by the vast array of extensions available."
 featured_image: /content/images/extension-chrome-cast-1/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome cast

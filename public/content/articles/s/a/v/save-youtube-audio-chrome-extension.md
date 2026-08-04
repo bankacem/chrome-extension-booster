@@ -4,12 +4,11 @@ id: 7db70c4a-d0e5-4303-a1eb-ec487434ca85
 title: >-
   Save YouTube Audio Chrome Extension: A Comprehensive Guide to Extracting Audio
   from YouTube Videos
-slug: save-youtube-audio-chrome-extension
-  save-youtube-audio-chrome-extension-a-comprehensive-guide-to-extracting-audio-from-youtube-videos-mmtvrg619vp
+slug: "save-youtube-audio-chrome-extension"
 excerpt: "Are you tired of searching for a reliable save YouTube audio Chrome extension to extract your favorite songs or podcasts from YouTube videos? Look no further!"
 featured_image: >-
   /content/images/save-youtube-audio-chrome-extension-a-comprehensive-guide-to-extracting-audio-from-youtube-videos-mmtvrg619vp/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags: []
 keywords:
   - save youtube audio chrome extension

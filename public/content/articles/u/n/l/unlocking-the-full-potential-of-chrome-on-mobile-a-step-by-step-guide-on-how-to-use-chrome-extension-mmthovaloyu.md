@@ -4,8 +4,7 @@ id: 99fab65a-22e9-4f0d-a0da-65adf9042223
 title: >-
   Unlocking the Full Potential of Chrome on Mobile: A Step-by-Step Guide on How
   to Use Chrome Extensions on Mobile
-slug: >-
-  unlocking-the-full-potential-of-chrome-on-mobile-a-step-by-step-guide-on-how-to-use-chrome-extension-mmthovaloyu
+slug: "unlocking-the-full-potential-of-chrome-on-mobile-a-step-by-step-guide-on-how-to-use-chrome-extension-mmthovaloyu"
 excerpt: "As the world becomes increasingly mobile, it's essential to have a seamless browsing experience on your smartphone or tablet."
 featured_image: >-
   /content/images/unlocking-the-full-potential-of-chrome-on-mobile-a-step-by-step-guide-on-how-to-use-chrome-extension-mmthovaloyu/featured.webp

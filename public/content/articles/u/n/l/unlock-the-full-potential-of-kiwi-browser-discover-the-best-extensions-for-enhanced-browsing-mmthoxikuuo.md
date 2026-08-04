@@ -2,8 +2,7 @@
 seo_title: "Unlock the Full Potential of Kiwi Browser"
 id: 5702071e-09ac-412b-ac41-f9fd4cd0de3d
 title: 'Unlock the Full Potential of Kiwi Browser'
-slug: >-
-  unlock-the-full-potential-of-kiwi-browser-discover-the-best-extensions-for-enhanced-browsing-mmthoxikuuo
+slug: "unlock-the-full-potential-of-kiwi-browser-discover-the-best-extensions-for-enhanced-browsing-mmthoxikuuo"
 excerpt: "Are you a Kiwi browser user looking to take your browsing experience to the next level? Look no further!"
 featured_image: >-
   /content/images/unlock-the-full-potential-of-kiwi-browser-discover-the-best-extensions-for-enhanced-browsing-mmthoxikuuo/featured.webp

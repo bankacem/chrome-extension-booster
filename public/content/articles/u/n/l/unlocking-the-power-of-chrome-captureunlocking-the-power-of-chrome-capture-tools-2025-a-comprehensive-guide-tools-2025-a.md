@@ -2,8 +2,7 @@
 seo_title: "A Comprehensive Guide Tools 2025"
 id: 31b52fdd-0f04-41b6-bb51-30819f438792
 title: 'A Comprehensive Guide Tools 2025'
-slug: >-
-  unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a
+slug: "unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a"
 excerpt: "Welcome to the world of Chrome Capture Tools 2025, where capturing and saving web pages, screenshots, and other online content has never been easier."
 featured_image: >-
   /content/images/unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a/featured.webp

@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   ChatGPT for WhatsApp Chrome Extension: The Complete 2026 Guide to AI Messaging
   Without Switching Tabs
+category: "AI Tools"
 ---
-# ChatGPT for WhatsApp Chrome Extension: The Complete 2026 Guide to AI Messaging Without Switching Tabs
 
 ## 📚 Table of Contents
 - [Why You Need ChatGPT on WhatsApp in 2026](#why-you-need-chatgpt-on-whatsapp-in-2026)

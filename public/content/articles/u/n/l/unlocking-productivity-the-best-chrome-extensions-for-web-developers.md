@@ -2,12 +2,11 @@
 seo_title: "The Best Chrome Extensions for Web Developers"
 id: 4a5e61b4-a8d3-41ee-8ac8-cc55ccfb6a12
 title: 'Unlocking Productivity: The Best Chrome Extensions for Web Developers'
-slug: unlocking-productivity-the-best-chrome-extensions-for-web-developers
-  unlocking-productivity-the-best-chrome-extensions-for-web-developers-mmtm0ejlryv
+slug: "unlocking-productivity-the-best-chrome-extensions-for-web-developers"
 excerpt: "As a web developer, you're likely no stranger to the importance of having the right tools at your disposal."
 featured_image: >-
   /content/images/unlocking-productivity-the-best-chrome-extensions-for-web-developers-mmtm0ejlryv/featured.webp
-category: Chrome Extensions
+category: "Productivity & Tools"
 tags: []
 keywords:
   - chrome extensions for web developers

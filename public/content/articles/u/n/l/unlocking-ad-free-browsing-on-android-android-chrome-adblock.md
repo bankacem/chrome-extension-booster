@@ -4,8 +4,7 @@ id: 4467a83e-fc68-42dd-b5a6-ba3f484ef683
 title: >-
   Unlocking Ad-Free Browsing on Android: A Comprehensive Guide to Android Chrome
   Adblock
-slug: unlocking-ad-free-browsing-on-android-android-chrome-adblock
-  unlocking-ad-free-browsing-on-android-a-comprehensive-guide-to-android-chrome-adblock-mm3sco59uco
+slug: "unlocking-ad-free-browsing-on-android-android-chrome-adblock"
 excerpt: "Are you tired of annoying ads disrupting your browsing experience on your Android device? Look no further!"
 featured_image: >-
   /content/images/unlocking-ad-free-browsing-on-android-a-comprehensive-guide-to-android-chrome-adblock-mm3sco59uco/featured.webp

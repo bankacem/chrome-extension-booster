@@ -2,12 +2,11 @@
 seo_title: "Download Video from Any Site Chrome Extension"
 id: 922d5ef5-986c-425d-862e-76fab7615efe
 title: 'Download Video from Any Site Chrome Extension: A Comprehensive Guide'
-slug: download-video-from-any-site-chrome-extension
-  download-video-from-any-site-chrome-extension-a-comprehensive-guide-mmtvrahku1z
+slug: "download-video-from-any-site-chrome-extension"
 excerpt: "With the vast amount of video content available online, it's no wonder that many of us want to download our favorite videos for offline viewing."
 featured_image: >-
   /content/images/download-video-from-any-site-chrome-extension-a-comprehensive-guide-mmtvrahku1z/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags: []
 keywords:
   - download video from any site chrome extension

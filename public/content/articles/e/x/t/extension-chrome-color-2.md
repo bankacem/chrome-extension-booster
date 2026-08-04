@@ -5,7 +5,7 @@ title: 'Best Color Extension for Chrome'
 slug: extension-chrome-color-2
 excerpt: "When it comes to customizing your browsing experience, few things can make as big of an impact as the colors you surround yourself with."
 featured_image: /content/images/extension-chrome-color-2/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome color

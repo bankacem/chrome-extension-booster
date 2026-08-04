@@ -5,7 +5,7 @@ title: 'Joko for Chrome: Cashback and Coupons, Explained'
 slug: unlocking-the-power-of-extension-chrome-joko
 excerpt: "Are you tired of feeling like your browser is holding you back? Do you wish you had more control over your online experience?"
 featured_image: /content/images/extension-chrome-joko-mkzp4icwse6/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome joko

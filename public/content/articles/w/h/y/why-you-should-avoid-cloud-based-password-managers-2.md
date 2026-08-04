@@ -8,7 +8,7 @@ slug: why-you-should-avoid-cloud-based-password-managers-2
 excerpt: "With the increasing number of online accounts and passwords to manage, it's no wonder that cloud-based password managers have become a popular solution for…"
 featured_image: >-
   /content/images/why-you-should-avoid-cloud-based-password-managers-2/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags:
   - >-
     Why You Should Avoid Cloud-Based Password Managers: A Comprehensive Review

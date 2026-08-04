@@ -2,12 +2,11 @@
 seo_title: "Download Manager"
 id: c6b14973-c0e9-42f8-89b9-593900999c98
 title: 'Download Manager'
-slug: mastering-the-art-of-file-management-download-manager
-  mastering-the-art-of-file-management-the-ultimate-guide-to-download-manager-mmdupf64qbd
+slug: "mastering-the-art-of-file-management-download-manager"
 excerpt: "Are you tired of dealing with slow download speeds, disorganized files, and frustrating download failures?"
 featured_image: >-
   /content/images/mastering-the-art-of-file-management-the-ultimate-guide-to-download-manager-mmdupf64qbd/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - Download Manager

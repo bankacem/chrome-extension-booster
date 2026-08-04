@@ -2,8 +2,7 @@
 seo_title: "An Open-Source Alternative to Ghostery"
 id: ed997344-9350-45c7-837f-32872c7a8736
 title: 'An Open-Source Alternative to Ghostery'
-slug: an-open-source-alternative-to-ghostery
-  discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz
+slug: "an-open-source-alternative-to-ghostery"
 excerpt: "Are you looking for an open source alternative to Ghostery extension that can provide you with a higher level of browser security and privacy?"
 featured_image: >-
   /content/images/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz/featured.webp

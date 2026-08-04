@@ -2,12 +2,11 @@
 seo_title: "The Best Chrome Extension for Analytics"
 id: f5088066-ec37-49ec-8e8c-04b31694dc25
 title: 'The Best Chrome Extension for Analytics'
-slug: the-best-chrome-extension-for-analytics
-  unlocking-the-power-of-data-analysis-the-best-chrome-extension-for-analytics-mmdt113oxr6
+slug: "the-best-chrome-extension-for-analytics"
 excerpt: "As a digital marketer, analyst, or business owner, understanding your website's performance and user behavior is crucial to making informed decisions."
 featured_image: >-
   /content/images/unlocking-the-power-of-data-analysis-the-best-chrome-extension-for-analytics-mmdt113oxr6/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - chrome extension for analytics

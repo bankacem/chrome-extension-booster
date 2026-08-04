@@ -2,8 +2,7 @@
 seo_title: 'A Web Scraper Extension for Chrome'
 id: f036eded-6d64-44cc-b327-18fae616f43b
 title: 'A Web Scraper Extension for Chrome'
-slug: unlock-the-power-of-web-scraping-web-scraper-extension-for-chrome
-  unlock-the-power-of-web-scraping-the-ultimate-guide-to-web-scraper-extension-for-chrome-mmtm0gozela
+slug: "unlock-the-power-of-web-scraping-web-scraper-extension-for-chrome"
 excerpt: "Are you tired of manually extracting data from websites? Look no further!"
 featured_image: >-
   /content/images/unlock-the-power-of-web-scraping-the-ultimate-guide-to-web-scraper-extension-for-chrome-mmtm0gozela/featured.webp

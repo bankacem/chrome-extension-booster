@@ -7,7 +7,7 @@ title: >-
 slug: extension-regle-chrome-9
 excerpt: "Welcome to the world of Chrome extensions, where you can enhance your browsing experience with a wide range of tools and features."
 featured_image: /content/images/extension-regle-chrome-9/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension regle chrome

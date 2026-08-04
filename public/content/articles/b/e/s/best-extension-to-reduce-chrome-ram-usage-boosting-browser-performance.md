@@ -2,8 +2,7 @@
 seo_title: "Best Extension to Reduce Chrome RAM Usage"
 id: db7ed793-7af8-4b67-af73-61c13b1faf85
 title: 'Best Extension to Reduce Chrome RAM Usage: Boosting Browser Performance'
-slug: best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance
-  best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance-mll9bsc31qx
+slug: "best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance"
 excerpt: "Google Chrome is one of the most popular web browsers, known for its speed, security, and extensive library of extensions."
 featured_image: >-
   /content/images/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance-mll9bsc31qx/featured.webp

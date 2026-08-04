@@ -7,7 +7,7 @@ excerpt: >-
   using Chrome? Look no further! In this article, we'll explore the best media
   download
 featured_image: /content/images/best-media-downloader-android-chrome/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags:
   - best media downloader for android chrome
   - best media

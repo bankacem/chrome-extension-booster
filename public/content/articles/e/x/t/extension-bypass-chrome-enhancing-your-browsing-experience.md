@@ -5,7 +5,7 @@ title: 'Extension Bypass Chrome'
 slug: extension-bypass-chrome-enhancing-your-browsing-experience
 excerpt: "Are you tired of being restricted by Chrome's built-in features and limitations? Look no further!"
 featured_image: /content/images/extension-bypass-chrome-mkzn8jij3bg/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension bypass chrome

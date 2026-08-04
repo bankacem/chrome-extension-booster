@@ -5,7 +5,7 @@ title: 'How to Create Complex Excel Formulas Easily: A Professional Guide'
 slug: how-to-create-complex-excel-formulas-easily
 excerpt: "In the modern data-driven landscape, proficiency in spreadsheet management is no longer a luxury—it is a fundamental requirement for professional success."
 featured_image: /content/images/how-to-create-complex-excel-formulas-easily/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags:
   - 'How to Create Complex Excel Formulas Easily: A Professional Guide'
 keywords:

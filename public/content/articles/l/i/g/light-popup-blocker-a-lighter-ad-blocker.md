@@ -2,8 +2,7 @@
 seo_title: "Light Popup Blocker: A Lighter Ad Blocker"
 id: 6c642d9d-de9a-486a-aa71-17253dad6df8
 title: 'Light Popup Blocker: A Lighter Ad Blocker'
-slug: light-popup-blocker-a-lighter-ad-blocker
-  unlocking-the-power-of-ad-blockers-boosting-your-browsing-experience-with-light-popup-blocker-mm3scnflwya
+slug: "light-popup-blocker-a-lighter-ad-blocker"
 excerpt: "Are you tired of annoying ads and intrusive popups ruining your online experience?"
 featured_image: >-
   /content/images/unlocking-the-power-of-ad-blockers-boosting-your-browsing-experience-with-light-popup-blocker-mm3scnflwya/featured.webp

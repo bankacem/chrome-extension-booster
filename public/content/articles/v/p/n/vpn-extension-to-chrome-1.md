@@ -5,7 +5,7 @@ title: 'Unlock Secure Browsing: How to Add a VPN Extension to Chrome'
 slug: vpn-extension-to-chrome-1
 excerpt: "Are you concerned about your online security and privacy while browsing the internet? Installing a VPN extension to Chrome can be a game-changer."
 featured_image: /content/images/vpn-extension-to-chrome-1/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - vpn extension to chrome

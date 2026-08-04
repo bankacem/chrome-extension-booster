@@ -4,8 +4,7 @@ id: d665b92e-7aac-4a37-9120-457c20afcdd4
 title: >-
   Effective Solutions: Finding the Best Chrome Extension to Stop Popups for a
   Seamless Browsing Experience
-slug: finally-stop-popups-with-this-chrome-extension
-  effective-solutions-finding-the-best-chrome-extension-to-stop-popups-for-a-seamless-browsing-experie-mme0ixmzt1f
+slug: "finally-stop-popups-with-this-chrome-extension"
 excerpt: "Are you tired of annoying popups disrupting your online activities? Do you find yourself constantly closing unwanted windows and ads while browsing the web?"
 featured_image: >-
   /content/images/effective-solutions-finding-the-best-chrome-extension-to-stop-popups-for-a-seamless-browsing-experie-mme0ixmzt1f/featured.webp

@@ -4,8 +4,7 @@ id: 08f8bfd8-921e-4e7e-8a2c-14da8327d132
 title: >-
   Unlocking the Full Potential of Chrome Mobile: A Comprehensive Guide to Chrome
   Mobile Extensions Workaround
-slug: unlocking-the-full-potential-of-chrome-mobile
-  unlocking-the-full-potential-of-chrome-mobile-a-comprehensive-guide-to-chrome-mobile-extensions-work-mmthowo8su8
+slug: "unlocking-the-full-potential-of-chrome-mobile"
 excerpt: "As a Chrome user, you're likely aware of the numerous extensions available for the desktop version, but did you know that you can also access these…"
 featured_image: >-
   /content/images/unlocking-the-full-potential-of-chrome-mobile-a-comprehensive-guide-to-chrome-mobile-extensions-work-mmthowo8su8/featured.webp

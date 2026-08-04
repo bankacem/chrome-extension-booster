@@ -9,7 +9,7 @@ excerpt: >-
   productivity.
 featured_image: >-
   /content/images/unlocking-productivity-the-best-chrome-extensions-for-freelancers-mmdrqptor7r/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - chrome extensions for freelancers

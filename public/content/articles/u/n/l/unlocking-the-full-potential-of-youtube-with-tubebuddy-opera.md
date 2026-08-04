@@ -7,7 +7,7 @@ title: >-
 slug: unlocking-the-full-potential-of-youtube-with-tubebuddy-opera
 excerpt: "As a content creator or YouTube enthusiast, you're likely no stranger to the challenges of managing your online presence and optimizing your videos for…"
 featured_image: /content/images/tubebuddy-opera-ml5ee7t0l32/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - tubebuddy opera

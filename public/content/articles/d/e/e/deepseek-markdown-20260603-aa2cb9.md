@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   📊 ChatGPT for Google Sheets Chrome Extensions 2026 — Turn Your Spreadsheet
   Into an AI Robot
+category: "AI Tools"
 ---
-# 📊 ChatGPT for Google Sheets Chrome Extensions (2026) — Turn Your Spreadsheet Into an AI Robot
 
 > **Imagine typing `=AI("Find the CEO of Apple")` into a cell and watching it populate with "Tim Cook."**
 >

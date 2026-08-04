@@ -2,8 +2,7 @@
 seo_title: "A Chrome Extension Built for Your Privacy"
 id: 8a37fee5-521f-4476-a69d-5ee89b4e61c4
 title: Enhance Your Online Security with the Best Chrome Extension to Protect Privacy
-slug: a-chrome-extension-built-for-your-privacy
-  enhance-your-online-security-with-the-best-chrome-extension-to-protect-privacy-mmdzl1g2wkc
+slug: "a-chrome-extension-built-for-your-privacy"
 excerpt: "As we navigate the vast expanse of the internet, our personal data and online activities are constantly at risk of being compromised."
 featured_image: >-
   /content/images/enhance-your-online-security-with-the-best-chrome-extension-to-protect-privacy-mmdzl1g2wkc/featured.webp

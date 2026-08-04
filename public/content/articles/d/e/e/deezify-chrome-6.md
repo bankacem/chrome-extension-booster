@@ -5,7 +5,7 @@ title: 'Deezify for Chrome: Deezer Extension Guide'
 slug: deezify-chrome-6
 excerpt: "Are you a music lover looking to enhance your Deezer experience on Chrome?"
 featured_image: /content/images/deezify-chrome-6/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - deezify chrome

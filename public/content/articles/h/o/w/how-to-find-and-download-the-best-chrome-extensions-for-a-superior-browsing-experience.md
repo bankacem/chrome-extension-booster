@@ -4,12 +4,11 @@ id: f82e9963-3785-44b2-b8fd-de7dbf6460dc
 title: >-
   How to Find and Download the Best Chrome Extensions for a Superior Browsing
   Experience
-slug: >-
-  how-to-find-and-download-the-best-chrome-extensions-for-a-superior-browsing-experience
+slug: "how-to-find-and-download-the-best-chrome-extensions-for-a-superior-browsing-experience"
 excerpt: "When it comes to customizing your Google Chrome browser, one of the most effective ways to enhance your browsing experience is through the use of Chrome…"
 featured_image: >-
   /content/images/how-to-find-and-download-the-best-chrome-extensions-for-a-superior-browsing-experience/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - chrome extension download

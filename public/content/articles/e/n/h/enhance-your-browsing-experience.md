@@ -2,8 +2,7 @@
 seo_title: "Ghostery for Chrome: What It Actually Blocks"
 id: 4241e697-ee18-47a6-ac92-5eb80976ea9f
 title: 'Ghostery for Chrome: What It Actually Blocks'
-slug: enhance-your-browsing-experience
-  unlocking-the-power-of-ghostery-extension-chrome-enhance-your-browsing-experience-mm3scm2x6ag
+slug: "enhance-your-browsing-experience"
 excerpt: "The Ghostery extension Chrome has become an essential tool for anyone looking to take control of their online privacy and security."
 featured_image: >-
   /content/images/unlocking-the-power-of-ghostery-extension-chrome-enhance-your-browsing-experience-mm3scm2x6ag/featured.webp

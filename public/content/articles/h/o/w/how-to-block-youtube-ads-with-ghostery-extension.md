@@ -2,12 +2,11 @@
 seo_title: "Blocking YouTube Ads with Ghostery"
 id: 2329a7b1-bdf9-4d9f-aac8-928f1f17606d
 title: 'How to Block YouTube Ads with Ghostery Extension: A Comprehensive Guide'
-slug: how-to-block-youtube-ads-with-ghostery-extension
-  how-to-block-youtube-ads-with-ghostery-extension-a-comprehensive-guide-mmb7lt82vtf
+slug: "how-to-block-youtube-ads-with-ghostery-extension"
 excerpt: "Are you tired of annoying ads interrupting your YouTube videos? Do you want to enhance your online experience and block YouTube ads once and for all?"
 featured_image: >-
   /content/images/how-to-block-youtube-ads-with-ghostery-extension-a-comprehensive-guide-mmb7lt82vtf/featured.webp
-category: Chrome Extensions
+category: "Security & Privacy"
 tags: []
 keywords:
   - How to block YouTube ads with Ghostery extension

@@ -13,7 +13,7 @@ excerpt: >-
   watermark.
 meta_description: "The best Chrome screenshot extensions in 2026: full-page capture, scrolling screenshots, annotation tools, and region selection — all free, no sign-up, no..."
 canonicalPath: /blog/best-chrome-screenshot-extensions-2026-complete-guide
-category: Screenshot Tools
+category: "Screenshots & Screen Capture"
 tags:
   - screenshot
   - chrome

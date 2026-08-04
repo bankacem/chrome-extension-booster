@@ -4,8 +4,7 @@ id: 8f3255d5-2b26-4536-b341-0994eb523e5a
 title: >-
   Unlock a Clutter-Free Browsing Experience: The Power of a Poper Blocker (Popup
   Blocker)
-slug: >-
-  unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker
+slug: "unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker"
 excerpt: >-
   Are you tired of annoying popups and intrusive ads disrupting your online
   experience? A poper blocker (popup blocker) is the solution you need. In this

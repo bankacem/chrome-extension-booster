@@ -6,7 +6,7 @@ slug: securakey-pro-the-safest-way-to-store-banking-passwords-5
 excerpt: "With the rise of online banking and digital transactions, it's more important than ever to keep your sensitive information secure."
 featured_image: >-
   /content/images/securakey-pro-the-safest-way-to-store-banking-passwords-5/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - 'SecuraKey Pro: The safest way to store banking passwords'

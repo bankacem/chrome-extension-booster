@@ -7,7 +7,7 @@ excerpt: >-
   wish there was a way to automatically switch between light and dark modes on
   your C
 featured_image: /content/images/extension-chrome-dark-mode/featured.webp
-category: Screenshots & Screen Capture
+category: "Appearance & Themes"
 tags: []
 keywords:
   - extension chrome dark mode

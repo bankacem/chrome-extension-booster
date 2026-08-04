@@ -2,12 +2,11 @@
 seo_title: "uBlock Origin vs Ghostery for Chrome Android"
 id: 4668daa1-bf35-4a65-b3d4-7f2f2d659f3a
 title: 'uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison'
-slug: ublock-origin-vs-ghostery-for-chrome-android
-  ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n
+slug: "ublock-origin-vs-ghostery-for-chrome-android"
 excerpt: "When it comes to protecting your online privacy and security on Chrome Android, two popular extensions stand out: uBlock Origin and Ghostery."
 featured_image: >-
   /content/images/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n/featured.webp
-category: Chrome Extensions
+category: "Ad Blockers"
 tags:
   - 'uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison'
 keywords:

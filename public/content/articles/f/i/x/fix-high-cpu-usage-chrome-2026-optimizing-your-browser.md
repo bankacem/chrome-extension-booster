@@ -4,12 +4,11 @@ id: d7e1278f-158b-4dea-8e8b-3b43f01ea1f6
 title: >-
   Fix High CPU Usage Chrome 2026: A Comprehensive Guide to Optimizing Your
   Browser
-slug: fix-high-cpu-usage-chrome-2026-optimizing-your-browser
-  fix-high-cpu-usage-chrome-2026-a-comprehensive-guide-to-optimizing-your-browser-mmtizy6zct8
+slug: "fix-high-cpu-usage-chrome-2026-optimizing-your-browser"
 excerpt: "Are you tired of experiencing high CPU usage Chrome 2026 issues that slow down your computer and hinder your productivity? You're not alone."
 featured_image: >-
   /content/images/fix-high-cpu-usage-chrome-2026-a-comprehensive-guide-to-optimizing-your-browser-mmtizy6zct8/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - fix high cpu usage chrome 2026

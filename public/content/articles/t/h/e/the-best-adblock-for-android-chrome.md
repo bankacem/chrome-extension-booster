@@ -2,8 +2,7 @@
 seo_title: "The Best Adblock for Android Chrome"
 id: 44d5624d-244a-402e-850f-32e7ed687b6a
 title: 'Unlocking a Seamless Browsing Experience: The Best Adblock for Android Chrome'
-slug: the-best-adblock-for-android-chrome
-  unlocking-a-seamless-browsing-experience-the-best-adblock-for-android-chrome-mm3umg9fb7x
+slug: "the-best-adblock-for-android-chrome"
 excerpt: "Are you tired of annoying ads disrupting your browsing experience on your Android device? Look no further!"
 featured_image: >-
   /content/images/unlocking-a-seamless-browsing-experience-the-best-adblock-for-android-chrome-mm3umg9fb7x/featured.webp

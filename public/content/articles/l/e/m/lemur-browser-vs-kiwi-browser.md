@@ -4,8 +4,7 @@ id: 05ad94e2-9996-4c3b-b9c9-f6c67bcb3b28
 title: >-
   lemur browser vs kiwi browser: A Comprehensive Comparison for Enhanced
   Browsing Experience
-slug: lemur-browser-vs-kiwi-browser
-  lemur-browser-vs-kiwi-browser-a-comprehensive-comparison-for-enhanced-browsing-experience-mmthov1pg80
+slug: "lemur-browser-vs-kiwi-browser"
 excerpt: "When it comes to browsing the internet, users have numerous options to choose from, with each browser offering unique features and functionalities."
 featured_image: >-
   /content/images/lemur-browser-vs-kiwi-browser-a-comprehensive-comparison-for-enhanced-browsing-experience-mmthov1pg80/featured.webp

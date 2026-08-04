@@ -4,12 +4,11 @@ id: 9d3b2a8e-e416-45f4-bd6f-71061a0a6dfe
 title: >-
   Unlocking the Full Potential of Your Browser: A Comprehensive Guide to Finding
   the Best Extension to Enhance Your Online Experience
-slug: finding-the-right-browser-extension-for-you
-  unlocking-the-full-potential-of-your-browser-a-comprehensive-guide-to-finding-the-best-extension-to--mm3umj4cbtf
+slug: "finding-the-right-browser-extension-for-you"
 excerpt: "When it comes to customizing your browsing experience, finding the right extension to enhance your browser can make all the difference."
 featured_image: >-
   /content/images/unlocking-the-full-potential-of-your-browser-a-comprehensive-guide-to-finding-the-best-extension-to--mm3umj4cbtf/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension to

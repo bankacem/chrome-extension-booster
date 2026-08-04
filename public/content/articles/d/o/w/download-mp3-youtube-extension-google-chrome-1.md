@@ -7,7 +7,7 @@ title: >-
 slug: download-mp3-youtube-extension-google-chrome-1
 excerpt: "Are you tired of searching for the perfect download mp3 youtube extension google chrome to enhance your music listening experience? Look no further!"
 featured_image: /content/images/download-mp3-youtube-extension-google-chrome-1/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - download mp3 youtube extension google chrome

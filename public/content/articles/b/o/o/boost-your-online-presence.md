@@ -2,12 +2,11 @@
 seo_title: "Chrome Extensions for Social Media Marketing"
 id: a6111e60-4168-4730-8038-bf7802be7a7e
 title: 'Chrome Extensions for Social Media Marketing'
-slug: boost-your-online-presence
-  boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing-mmdsutdfgz9
+slug: "boost-your-online-presence"
 excerpt: "As a social media marketer, you're constantly looking for ways to streamline your workflow, increase productivity, and stay ahead of the competition."
 featured_image: >-
   /content/images/boost-your-online-presence-the-ultimate-guide-to-chrome-extensions-for-social-media-marketing-mmdsutdfgz9/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - chrome extension for social media marketing

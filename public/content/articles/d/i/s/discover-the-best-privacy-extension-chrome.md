@@ -2,8 +2,7 @@
 seo_title: 'A Privacy Extension for Chrome'
 id: 4be83748-0962-4161-aeaa-f700460fc56e
 title: 'Choosing a Privacy Extension for Chrome'
-slug: discover-the-best-privacy-extension-chrome
-  discover-the-best-privacy-extension-chrome-protect-your-online-identity-mme0iytlky3
+slug: "discover-the-best-privacy-extension-chrome"
 excerpt: "With the ever-increasing concerns about online privacy, it's essential to find the best privacy extension Chrome to safeguard your personal data."
 featured_image: >-
   /content/images/discover-the-best-privacy-extension-chrome-protect-your-online-identity-mme0iytlky3/featured.webp

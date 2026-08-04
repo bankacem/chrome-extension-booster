@@ -4,12 +4,11 @@ id: c34a9fc0-5242-4a98-8f00-cc23e42b5b6a
 title: >-
   Unlocking the Full Potential of YouTube: A Comprehensive Guide to YouTube
   Extensions
-slug: unlocking-the-full-potential-of-youtube-youtube-extensions
-  unlocking-the-full-potential-of-youtube-a-comprehensive-guide-to-youtube-extensions-mmdz4ci1q06
+slug: "unlocking-the-full-potential-of-youtube-youtube-extensions"
 excerpt: "Are you tired of the same old YouTube experience? Do you wish you could customize your video-watching journey to suit your needs?"
 featured_image: >-
   /content/images/unlocking-the-full-potential-of-youtube-a-comprehensive-guide-to-youtube-extensions-mmdz4ci1q06/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - YouTube Extensions

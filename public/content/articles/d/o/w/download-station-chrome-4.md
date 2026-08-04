@@ -5,7 +5,7 @@ title: 'Download Station: A Download Manager for Chrome'
 slug: download-station-chrome-4
 excerpt: "Are you tired of tedious download management in your Chrome browser? Look no further than Download Station Chrome, a game-changing extension that streamlines…"
 featured_image: /content/images/download-station-chrome-4/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - download station chrome

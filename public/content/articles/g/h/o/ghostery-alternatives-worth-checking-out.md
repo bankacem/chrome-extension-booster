@@ -2,12 +2,11 @@
 seo_title: "Ghostery Alternatives Worth Checking Out"
 id: ba4caec7-d744-4d62-a7f6-f0038e103297
 title: 'Top Alternatives to Ghostery for Chrome Browser: Boosting Privacy and Security'
-slug: ghostery-alternatives-worth-checking-out
-  top-alternatives-to-ghostery-for-chrome-browser-boosting-privacy-and-security-mmb7ltgtqdm
+slug: "ghostery-alternatives-worth-checking-out"
 excerpt: "Are you looking for top alternatives to Ghostery for Chrome browser to enhance your online privacy and security?"
 featured_image: >-
   /content/images/top-alternatives-to-ghostery-for-chrome-browser-boosting-privacy-and-security-mmb7ltgtqdm/featured.webp
-category: Chrome Extensions
+category: "Security & Privacy"
 tags: []
 keywords:
   - Top alternatives to Ghostery for Chrome browser

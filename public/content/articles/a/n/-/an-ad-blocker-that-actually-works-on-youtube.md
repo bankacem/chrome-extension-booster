@@ -4,8 +4,7 @@ id: 6aa8fe70-52f3-44aa-8428-b6472a4f386a
 title: >-
   Unlock a Seamless YouTube Experience: The Best Ad Blocker that Works on
   YouTube Chrome
-slug: an-ad-blocker-that-actually-works-on-youtube
-  unlock-a-seamless-youtube-experience-the-best-ad-blocker-that-works-on-youtube-chrome-mme0iyicafq
+slug: "an-ad-blocker-that-actually-works-on-youtube"
 excerpt: "Are you tired of annoying ads interrupting your YouTube videos? Do you want to enhance your browsing experience with a reliable ad blocker that works on…"
 featured_image: >-
   /content/images/unlock-a-seamless-youtube-experience-the-best-ad-blocker-that-works-on-youtube-chrome-mme0iyicafq/featured.webp

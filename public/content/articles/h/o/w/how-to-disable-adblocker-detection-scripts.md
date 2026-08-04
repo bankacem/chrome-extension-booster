@@ -4,12 +4,11 @@ id: 0ce80161-44a3-43fb-b5f3-8fdce34c44ad
 title: >-
   How to Disable Adblocker Detection Scripts: A Comprehensive Guide to Enhanced
   Browsing Experience
-slug: how-to-disable-adblocker-detection-scripts
-  how-to-disable-adblocker-detection-scripts-a-comprehensive-guide-to-enhanced-browsing-experience-mmtld24gueg
+slug: "how-to-disable-adblocker-detection-scripts"
 excerpt: "Are you tired of being prompted to disable your adblocker while browsing the web?"
 featured_image: >-
   /content/images/how-to-disable-adblocker-detection-scripts-a-comprehensive-guide-to-enhanced-browsing-experience-mmtld24gueg/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - disable adblocker detection scripts

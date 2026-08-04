@@ -4,8 +4,7 @@ id: 96f20d38-dc6c-4c72-9eaa-597d718889a8
 title: >-
   How to Capture and Share Screenshots Instantly: A Game-Changer for Blogging,
   Web Design, Bug Reporting, and Student Projects
-slug: >-
-  how-to-capture-and-share-screenshots-instantly-blogging-web-design-bug-reporting-student-projects-7
+slug: "how-to-capture-and-share-screenshots-instantly-blogging-web-design-bug-reporting-student-projects-7"
 excerpt: "Capturing and sharing screenshots instantly has become an essential skill in today's digital age, particularly for bloggers, web designers, bug reporters…"
 featured_image: >-
   /content/images/how-to-capture-and-share-screenshots-instantly-blogging-web-design-bug-reporting-student-projects-7/featured.webp

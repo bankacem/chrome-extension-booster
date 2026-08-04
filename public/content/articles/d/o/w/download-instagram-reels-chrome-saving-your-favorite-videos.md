@@ -4,12 +4,11 @@ id: 517539b1-1e68-4534-8521-89a92879dcd0
 title: >-
   Download Instagram Reels Chrome: A Step-by-Step Guide to Saving Your Favorite
   Videos
-slug: download-instagram-reels-chrome-saving-your-favorite-videos
-  download-instagram-reels-chrome-a-step-by-step-guide-to-saving-your-favorite-videos-mmtvrc4yqhk
+slug: "download-instagram-reels-chrome-saving-your-favorite-videos"
 excerpt: "With the rise of Instagram Reels, users are now able to create and share engaging, short-form videos with their followers."
 featured_image: >-
   /content/images/download-instagram-reels-chrome-a-step-by-step-guide-to-saving-your-favorite-videos-mmtvrc4yqhk/featured.webp
-category: Chrome Extensions
+category: "Performance & Memory"
 tags: []
 keywords:
   - download instagram reels chrome

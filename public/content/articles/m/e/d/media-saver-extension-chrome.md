@@ -8,7 +8,7 @@ excerpt: >-
   them clutter your computer's storage? Look no further than a media saver
   extension
 featured_image: /content/images/media-saver-extension-chrome/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags:
   - media saver extension review
   - media saver

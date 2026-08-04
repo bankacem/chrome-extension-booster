@@ -4,12 +4,11 @@ id: bd7f9dd7-c158-43c4-b765-37ad82899ca2
 title: >-
   How to Install and Use IDM Extension to Chrome for Enhanced Download
   Management
-slug: >-
-  how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management
+slug: "how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management"
 excerpt: "Are you tired of slow download speeds and disorganized file management in your Chrome browser?"
 featured_image: >-
   /content/images/how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - idm extension to chrome

@@ -2,12 +2,11 @@
 seo_title: "Best Social Media Extensions for Chrome"
 id: 06a1be1d-a13c-4b47-874e-26179520a90c
 title: 'Best Social Media Extensions for Chrome'
-slug: best-social-media-extensions-for-chrome
-  unlocking-the-power-of-social-media-the-best-social-media-chrome-extensions-for-a-seamless-experienc-mmdsjecdo4o
+slug: "best-social-media-extensions-for-chrome"
 excerpt: "Are you tired of juggling multiple social media platforms, trying to keep up with the latest trends and updates? Look no further!"
 featured_image: >-
   /content/images/unlocking-the-power-of-social-media-the-best-social-media-chrome-extensions-for-a-seamless-experienc-mmdsjecdo4o/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - best social media chrome extensions

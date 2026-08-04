@@ -6,7 +6,7 @@ slug: optimize-your-browser-the-best-ram-saver-extensions-for-chrome
 excerpt: "Are you tired of your Chrome browser consuming excessive RAM, slowing down your computer, and hindering your productivity? You're not alone."
 featured_image: >-
   /content/images/optimize-your-browser-the-best-ram-saver-extensions-for-chrome-mmthx8f6vmd/featured.webp
-category: Chrome Extensions
+category: "Performance & Memory"
 tags: []
 keywords:
   - best ram saver extensions for chrome

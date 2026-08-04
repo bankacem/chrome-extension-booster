@@ -2,8 +2,7 @@
 seo_title: 'An API Tester Extension for Chrome'
 id: 3eec9d93-6529-44c5-b396-43b67957e634
 title: 'Testing APIs Right from Chrome'
-slug: unlocking-the-power-of-api-testing-api-tester-chrome-extension
-  unlocking-the-power-of-api-testing-a-comprehensive-guide-to-api-tester-chrome-extension-mmtm0gtdjbe
+slug: "unlocking-the-power-of-api-testing-api-tester-chrome-extension"
 excerpt: "As a developer, testing APIs is an essential part of the development process."
 featured_image: >-
   /content/images/unlocking-the-power-of-api-testing-a-comprehensive-guide-to-api-tester-chrome-extension-mmtm0gtdjbe/featured.webp

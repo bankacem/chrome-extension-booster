@@ -2,12 +2,11 @@
 seo_title: "How to Speed Up IDM Downloads in Chrome"
 id: f802bc17-b7ab-4701-b227-75e54b1d5fce
 title: 'How to Speed Up IDM Downloads on Chrome Browser: A Comprehensive Guide'
-slug: how-to-speed-up-idm-downloads-on-chrome-browser
-  how-to-speed-up-idm-downloads-on-chrome-browser-a-comprehensive-guide-mmb6y4gqk7k
+slug: "how-to-speed-up-idm-downloads-on-chrome-browser"
 excerpt: "Are you tired of slow downloads on your Chrome browser, especially when using Internet Download Manager (IDM)?"
 featured_image: >-
   /content/images/how-to-speed-up-idm-downloads-on-chrome-browser-a-comprehensive-guide-mmb6y4gqk7k/featured.webp
-category: Chrome Extensions
+category: "Performance & Memory"
 tags: []
 keywords:
   - How to speed up IDM downloads on Chrome browser

@@ -2,12 +2,11 @@
 seo_title: "The Best Popup Blocker for Chrome in 2026"
 id: 4f113cb1-cd14-4702-855f-8238da229e7f
 title: 'The Best Popup Blocker for Chrome in 2026'
-slug: the-best-popup-blocker-for-chrome-in-2026
-  discover-the-best-popup-blocker-for-chrome-2026-boost-your-browsing-experience-mmtlczhct0y
+slug: "the-best-popup-blocker-for-chrome-in-2026"
 excerpt: "Are you tired of annoying popups and intrusive ads ruining your browsing experience on Google Chrome? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-popup-blocker-for-chrome-2026-boost-your-browsing-experience-mmtlczhct0y/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - best popup blocker for chrome 2026

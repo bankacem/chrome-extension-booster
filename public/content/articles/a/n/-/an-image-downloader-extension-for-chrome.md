@@ -2,12 +2,11 @@
 seo_title: "An Image Downloader Extension for Chrome"
 id: 1834a63d-46d7-490c-90e9-2434ae6b9aab
 title: 'An Image Downloader Extension for Chrome'
-slug: an-image-downloader-extension-for-chrome
-  discover-the-best-image-downloader-chrome-extension-for-effortless-image-saving-mmtvrb6wws4
+slug: "an-image-downloader-extension-for-chrome"
 excerpt: "Are you tired of manually saving images from websites, one by one? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-image-downloader-chrome-extension-for-effortless-image-saving-mmtvrb6wws4/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags: []
 keywords:
   - best image downloader chrome

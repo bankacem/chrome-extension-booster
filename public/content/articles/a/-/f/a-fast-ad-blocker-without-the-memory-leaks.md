@@ -2,8 +2,7 @@
 seo_title: "A Fast Ad Blocker Without the Memory Leaks"
 id: 25a89b3d-1a0c-4453-ba57-1b6ab759867d
 title: 'A Fast Ad Blocker Without the Memory Leaks'
-slug: a-fast-ad-blocker-without-the-memory-leaks
-  unlocking-the-power-of-a-fast-adblocker-extension-with-no-memory-leak-boosting-browser-performance-mll9brfnaxd
+slug: "a-fast-ad-blocker-without-the-memory-leaks"
 excerpt: "Are you tired of dealing with slow browser performance and annoying ads?"
 featured_image: >-
   /content/images/unlocking-the-power-of-a-fast-adblocker-extension-with-no-memory-leak-boosting-browser-performance-mll9brfnaxd/featured.webp

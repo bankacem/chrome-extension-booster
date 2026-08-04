@@ -5,7 +5,7 @@ title: 'How to Speed Up Page Loading by Blocking Popups: A Comprehensive Guide'
 slug: how-to-speed-up-chrome-partial
 excerpt: "Are you tired of slow-loading web pages and annoying popups that disrupt your browsing experience? You're not alone."
 featured_image: /content/images/how-to-speed-up-chrome-partial/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags:
   - 'How to Speed Up Page Loading by Blocking Popups: A Comprehensive Guide'
 keywords:

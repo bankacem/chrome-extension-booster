@@ -5,7 +5,7 @@ title: 'Mastering the Art of Capturing Web Pages'
 slug: extension-chrome-screen-page-16
 excerpt: "When it comes to capturing web pages, whether for personal or professional use, having the right tools at your disposal can make all the difference."
 featured_image: /content/images/extension-chrome-screen-page-16/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome screen page

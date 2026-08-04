@@ -4,12 +4,11 @@ id: 9d759039-67ca-4ad0-9417-5b79b2397a7a
 title: >-
   How to Update Chrome Extensions: A Step-by-Step Guide to Enhancing Your
   Browser Experience
-slug: how-to-update-chrome-extensions-enhancing-your-browser-experience
-  how-to-update-chrome-extensions-a-step-by-step-guide-to-enhancing-your-browser-experience-mmdrxyqby0o
+slug: "how-to-update-chrome-extensions-enhancing-your-browser-experience"
 excerpt: "Are you wondering how to update Chrome extensions to ensure you have the latest features and security patches?"
 featured_image: >-
   /content/images/how-to-update-chrome-extensions-a-step-by-step-guide-to-enhancing-your-browser-experience-mmdrxyqby0o/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - how to update chrome extensions

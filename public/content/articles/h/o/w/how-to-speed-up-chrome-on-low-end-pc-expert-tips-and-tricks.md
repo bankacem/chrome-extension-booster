@@ -6,7 +6,7 @@ slug: how-to-speed-up-chrome-on-low-end-pc-expert-tips-and-tricks
 excerpt: "Are you tired of using a slow and sluggish Google Chrome browser on your low-end PC?"
 featured_image: >-
   /content/images/how-to-speed-up-chrome-on-low-end-pc-expert-tips-and-tricks-mmtizzi7h41/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - how to speed up chrome on low end pc

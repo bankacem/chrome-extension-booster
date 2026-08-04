@@ -2,8 +2,7 @@
 seo_title: "Chrome Privacy Extensions Worth Adding Today"
 id: a51db9f3-1d02-4b60-9dee-47941ebf47c3
 title: Enhance Your Online Security with the Best Google Chrome Privacy Extensions
-slug: chrome-privacy-extensions-worth-adding-today
-  enhance-your-online-security-with-the-best-google-chrome-privacy-extensions-mm3scmwbb4a
+slug: "chrome-privacy-extensions-worth-adding-today"
 excerpt: "Google Chrome is one of the most widely used web browsers, offering a vast array of features and extensions to enhance user experience."
 featured_image: >-
   /content/images/enhance-your-online-security-with-the-best-google-chrome-privacy-extensions-mm3scmwbb4a/featured.webp

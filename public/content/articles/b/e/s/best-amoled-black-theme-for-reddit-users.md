@@ -5,7 +5,7 @@ title: 'The Best AMOLED Black Theme for Reddit'
 slug: best-amoled-black-theme-for-reddit-users
 excerpt: "Are you a Reddit user looking to elevate your browsing experience with a sleek and battery-friendly theme? Look no further!"
 featured_image: /content/images/best-amoled-black-theme-for-reddit-users/featured.webp
-category: Screenshots & Screen Capture
+category: "Appearance & Themes"
 tags: []
 keywords:
   - Best AMOLED Black theme for Reddit users

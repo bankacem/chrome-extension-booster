@@ -4,8 +4,7 @@ id: 3d7113dd-3874-49f8-87bd-6ab087ab0008
 title: >-
   Lighthouse Audit Chrome Extension Guide: Unlocking the Secrets to a Faster and
   More Efficient Website
-slug: lighthouse-audit-chrome-extension-guide
-  lighthouse-audit-chrome-extension-guide-unlocking-the-secrets-to-a-faster-and-more-efficient-website-mmtm0ft1uyc
+slug: "lighthouse-audit-chrome-extension-guide"
 excerpt: "Welcome to our comprehensive Lighthouse audit Chrome extension guide, where we'll delve into the world of website optimization and explore the best practices…"
 featured_image: >-
   /content/images/lighthouse-audit-chrome-extension-guide-unlocking-the-secrets-to-a-faster-and-more-efficient-website-mmtm0ft1uyc/featured.webp

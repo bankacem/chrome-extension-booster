@@ -2,8 +2,7 @@
 seo_title: "The Chrome Extension That Removes Ads for Good"
 id: 7e36b423-747c-4d58-881b-2703bd03d35b
 title: Effortlessly Remove Annoying Ads with the Best Chrome Extension to Remove Ads
-slug: the-chrome-extension-that-removes-ads-for-good
-  effortlessly-remove-annoying-ads-with-the-best-chrome-extension-to-remove-ads-mme0iyd1klm
+slug: "the-chrome-extension-that-removes-ads-for-good"
 excerpt: "Are you tired of being bombarded with intrusive ads while browsing the internet? Look no further!"
 featured_image: >-
   /content/images/effortlessly-remove-annoying-ads-with-the-best-chrome-extension-to-remove-ads-mme0iyd1klm/featured.webp

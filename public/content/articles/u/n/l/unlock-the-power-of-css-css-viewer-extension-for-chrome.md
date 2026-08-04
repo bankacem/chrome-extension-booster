@@ -2,8 +2,7 @@
 seo_title: 'A CSS Viewer Extension for Chrome'
 id: 58dea4c5-6772-465e-8e0c-8d2916954281
 title: 'A CSS Viewer Extension for Chrome'
-slug: unlock-the-power-of-css-css-viewer-extension-for-chrome
-  unlock-the-power-of-css-the-ultimate-guide-to-css-viewer-extension-for-chrome-mmtm0fy4u2w
+slug: "unlock-the-power-of-css-css-viewer-extension-for-chrome"
 excerpt: "As a web developer or designer, understanding the CSS (Cascading Style Sheets) of a website is crucial for making modifications, customizations, or even just…"
 featured_image: >-
   /content/images/unlock-the-power-of-css-the-ultimate-guide-to-css-viewer-extension-for-chrome-mmtm0fy4u2w/featured.webp

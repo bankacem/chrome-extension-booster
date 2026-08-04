@@ -2,8 +2,7 @@
 seo_title: "Chrome Pop Up Blocker"
 id: 12ef659c-cc6b-41b8-9aaf-408bbadb5b94
 title: 'Chrome Pop Up Blocker'
-slug: chrome-pop-up-blocker
-  unlock-the-power-of-a-seamless-browsing-experience-the-ultimate-guide-to-chrome-pop-up-blocker-mm3scphqdyd
+slug: "chrome-pop-up-blocker"
 excerpt: "Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a reliable Chrome pop up blocker."
 featured_image: >-
   /content/images/unlock-the-power-of-a-seamless-browsing-experience-the-ultimate-guide-to-chrome-pop-up-blocker-mm3scphqdyd/featured.webp

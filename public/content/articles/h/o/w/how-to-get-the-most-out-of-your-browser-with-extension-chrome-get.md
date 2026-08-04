@@ -5,7 +5,7 @@ title: How to Get the Most Out of Your Browser with "Extension Chrome Get"
 slug: how-to-get-the-most-out-of-your-browser-with-extension-chrome-get
 excerpt: "When it comes to customizing your browsing experience, the phrase \"extension chrome get\" is more than just a search query - it's a gateway to unlocking a…"
 featured_image: /content/images/extension-chrome-get-mkzp2g8f7qr/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome get

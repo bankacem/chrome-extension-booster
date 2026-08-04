@@ -5,7 +5,7 @@ title: 'Working with JSON Files in Chrome'
 slug: unlocking-the-power-of-chrome-extensions-extension-chrome-json
 excerpt: "When it comes to customizing and enhancing your browsing experience, Chrome extensions are the way to go."
 featured_image: /content/images/extension-chrome-json-mkzp4iqflf9/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome json

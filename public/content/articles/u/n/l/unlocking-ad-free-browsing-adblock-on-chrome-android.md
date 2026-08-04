@@ -2,8 +2,7 @@
 seo_title: "Adblock on Chrome Android"
 id: cb5e325f-86d1-491b-ae36-bcb2ba74b17c
 title: 'Adblock on Chrome Android'
-slug: unlocking-ad-free-browsing-adblock-on-chrome-android
-  unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-on-chrome-android-mm3scp3569k
+slug: "unlocking-ad-free-browsing-adblock-on-chrome-android"
 excerpt: "Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further!"
 featured_image: >-
   /content/images/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-on-chrome-android-mm3scp3569k/featured.webp

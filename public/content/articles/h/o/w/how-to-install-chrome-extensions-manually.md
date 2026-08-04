@@ -6,7 +6,7 @@ slug: how-to-install-chrome-extensions-manually
 excerpt: "Are you tired of being limited by the Chrome Web Store's restrictions on installing extensions?"
 featured_image: >-
   /content/images/how-to-install-chrome-extensions-manually-a-step-by-step-guide-mmdrxyk1fy1/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - how to install chrome extensions manually

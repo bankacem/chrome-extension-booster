@@ -2,12 +2,11 @@
 seo_title: "How to Fix Chrome High Memory Usage 2026"
 id: 777e9975-27d0-4c91-ae56-d3a51331bf41
 title: 'How to Fix Chrome High Memory Usage 2026'
-slug: how-to-fix-chrome-high-memory-usage-2026
-  how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue
+slug: "how-to-fix-chrome-high-memory-usage-2026"
 excerpt: "Are you tired of experiencing slow browsing speeds and frequent crashes due to Chrome high memory usage? You're not alone."
 featured_image: >-
   /content/images/how-to-fix-chrome-high-memory-usage-2026-the-ultimate-guide-to-a-smoother-browsing-experience-mll9bs7lmue/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - How to fix Chrome high memory usage 2026

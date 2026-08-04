@@ -5,7 +5,7 @@ title: 'Unlocking Efficiency: The Power of Extension Auto Refresh Chrome'
 slug: unlocking-efficiency-the-power-of-extension-auto-refresh-chrome
 excerpt: "Are you tired of manually refreshing your browser tabs to stay updated with the latest information? Look no further!"
 featured_image: /content/images/extension-auto-refresh-chrome-mkzmtf3qb9z/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - extension auto refresh chrome

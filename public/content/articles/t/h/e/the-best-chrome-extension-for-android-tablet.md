@@ -4,8 +4,7 @@ id: 476283d1-1608-4afb-a15c-2e4d4ad9dff5
 title: >-
   Unlocking the Full Potential of Your Android Tablet: The Best Chrome Extension
   for Android Tablet
-slug: the-best-chrome-extension-for-android-tablet
-  unlocking-the-full-potential-of-your-android-tablet-the-best-chrome-extension-for-android-tablet-mmthoxto10w
+slug: "the-best-chrome-extension-for-android-tablet"
 excerpt: "As an Android tablet user, you're likely no stranger to the versatility and convenience that these devices offer."
 featured_image: >-
   /content/images/unlocking-the-full-potential-of-your-android-tablet-the-best-chrome-extension-for-android-tablet-mmthoxto10w/featured.webp

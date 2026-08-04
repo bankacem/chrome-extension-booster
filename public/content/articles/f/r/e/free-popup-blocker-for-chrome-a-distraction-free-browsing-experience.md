@@ -2,8 +2,7 @@
 seo_title: "Free Popup Blocker for Chrome"
 id: fc3aec7d-e6da-43de-a79c-d9080a917080
 title: 'Free Popup Blocker for Chrome'
-slug: free-popup-blocker-for-chrome-a-distraction-free-browsing-experience
-  free-popup-blocker-for-chrome-the-ultimate-guide-to-a-distraction-free-browsing-experience-mme0ixfuf83
+slug: "free-popup-blocker-for-chrome-a-distraction-free-browsing-experience"
 excerpt: "Are you tired of annoying popups and intrusive ads disrupting your browsing experience on Google Chrome? Look no further!"
 featured_image: >-
   /content/images/free-popup-blocker-for-chrome-the-ultimate-guide-to-a-distraction-free-browsing-experience-mme0ixfuf83/featured.webp

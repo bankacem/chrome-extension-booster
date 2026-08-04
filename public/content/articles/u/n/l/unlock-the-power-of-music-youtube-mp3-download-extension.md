@@ -2,8 +2,7 @@
 seo_title: "YouTube MP3 Download Extension"
 id: ba94648c-40e2-465c-bf5d-2ff999c1ae46
 title: 'YouTube MP3 Download Extension'
-slug: unlock-the-power-of-music-youtube-mp3-download-extension
-  unlock-the-power-of-music-the-ultimate-guide-to-youtube-mp3-download-extension-mm3umih5tmg
+slug: "unlock-the-power-of-music-youtube-mp3-download-extension"
 excerpt: "Are you tired of searching for your favorite songs on music streaming platforms? Do you want to enjoy your favorite YouTube videos in audio format?"
 featured_image: >-
   /content/images/unlock-the-power-of-music-the-ultimate-guide-to-youtube-mp3-download-extension-mm3umih5tmg/featured.webp

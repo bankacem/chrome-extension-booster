@@ -46,8 +46,6 @@ canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 
 <img src="/content/images/fix-chrome-out-of-memory-errors/featured.webp" alt="How to Fix 'Out of Memory' Errors in Google Chrome (2026 Guide)" width="1200" height="630" loading="lazy" class="featured-image">
 
-# How to Fix 'Out of Memory' Errors in Google Chrome (2026 Guide)
-
 "Aw, Snap! Out of Memory" is one of the most frustrating errors in Google Chrome. It usually happens when a tab exceeds its allocated memory limit or when your system RAM is completely full. In 2026, with heavy web apps, this is more common than ever. This guide provides a systematic approach to fixing these errors.
 
 ## Table of Contents

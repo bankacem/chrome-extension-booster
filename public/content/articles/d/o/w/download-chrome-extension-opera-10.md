@@ -5,7 +5,7 @@ title: 'How to Download Chrome Extension Opera: A Step-by-Step Guide'
 slug: download-chrome-extension-opera-10
 excerpt: "Are you looking to download Chrome extension Opera and enhance your browsing experience?"
 featured_image: /content/images/download-chrome-extension-opera-10/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - download chrome extension opera

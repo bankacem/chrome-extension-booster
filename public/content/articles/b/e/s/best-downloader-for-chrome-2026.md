@@ -8,7 +8,7 @@ excerpt: >-
   Chrome browser? Look no further! In this comprehensive guide, we'll explore
   the best
 featured_image: /content/images/best-downloader-for-chrome-2026/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags:
   - best downloader for chrome 2026
   - best downloader

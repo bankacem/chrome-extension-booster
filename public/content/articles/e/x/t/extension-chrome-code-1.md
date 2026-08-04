@@ -5,7 +5,7 @@ title: 'A Chrome Extension for Reading and Editing Code'
 slug: extension-chrome-code-1
 excerpt: "When it comes to enhancing the functionality of Google Chrome, extension chrome code plays a vital role."
 featured_image: /content/images/extension-chrome-code-1/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome code

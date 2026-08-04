@@ -2,12 +2,11 @@
 seo_title: "Chrome Extensions for Student Productivity"
 id: 54d0374c-d9a1-49c2-a367-1577b96dcdcf
 title: 'Unlocking Academic Success: Top Chrome Extensions for Students'' Productivity'
-slug: chrome-extensions-for-student-productivity
-  unlocking-academic-success-top-chrome-extensions-for-students-productivity-mmdrqpj4vcu
+slug: "chrome-extensions-for-student-productivity"
 excerpt: "As a student, managing your time and staying focused is crucial to achieving academic success."
 featured_image: >-
   /content/images/unlocking-academic-success-top-chrome-extensions-for-students-productivity-mmdrqpj4vcu/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - chrome extensions for students productivity

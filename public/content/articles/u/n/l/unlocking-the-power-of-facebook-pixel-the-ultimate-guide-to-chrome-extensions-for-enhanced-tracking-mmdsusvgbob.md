@@ -2,8 +2,7 @@
 seo_title: 'Facebook Pixel Tracking Extensions'
 id: 3ae08709-bd18-4b76-9f51-ba1a8ec75c8f
 title: 'Facebook Pixel Tracking Extensions for Chrome'
-slug: >-
-  unlocking-the-power-of-facebook-pixel-the-ultimate-guide-to-chrome-extensions-for-enhanced-tracking--mmdsusvgbob
+slug: "unlocking-the-power-of-facebook-pixel-the-ultimate-guide-to-chrome-extensions-for-enhanced-tracking-mmdsusvgbob"
 excerpt: "Are you a digital marketer or business owner looking to maximize your Facebook advertising efforts?"
 featured_image: >-
   /content/images/unlocking-the-power-of-facebook-pixel-the-ultimate-guide-to-chrome-extensions-for-enhanced-tracking--mmdsusvgbob/featured.webp

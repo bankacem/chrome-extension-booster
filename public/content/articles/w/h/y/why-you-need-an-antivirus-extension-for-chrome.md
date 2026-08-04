@@ -7,7 +7,7 @@ title: >-
 slug: why-you-need-an-antivirus-extension-for-chrome
 excerpt: "As we navigate the vast expanse of the internet, our browsers are often the first line of defense against malicious threats."
 featured_image: /content/images/extension-antivirus-google-chrome-mkzmtemk5lv/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - extension antivirus google chrome

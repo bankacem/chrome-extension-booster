@@ -2,8 +2,7 @@
 seo_title: "Best Tab Manager for Heavy Chrome Users"
 id: 3e82436d-1a2b-45d9-b461-1186782a66f6
 title: 'Best Tab Manager for Heavy Chrome Users: Unlocking Efficiency and Productivity'
-slug: best-tab-manager-for-heavy-chrome-users
-  best-tab-manager-for-heavy-chrome-users-unlocking-efficiency-and-productivity-mll9bt7orh3
+slug: "best-tab-manager-for-heavy-chrome-users"
 excerpt: "As a heavy Chrome user, you're likely no stranger to the frustration of dealing with multiple tabs open at once."
 featured_image: >-
   /content/images/best-tab-manager-for-heavy-chrome-users-unlocking-efficiency-and-productivity-mll9bt7orh3/featured.webp

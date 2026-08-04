@@ -4,12 +4,11 @@ id: e0f5812c-99e9-42a3-aa9a-1c478c1bfbe4
 title: >-
   Unlocking Efficiency: Auto Tab Suspender Extension Free Download for a
   Seamless Browsing Experience
-slug: a-free-auto-tab-suspender-extension-for-chrome
-  unlocking-efficiency-auto-tab-suspender-extension-free-download-for-a-seamless-browsing-experience-mll9bskiotb
+slug: "a-free-auto-tab-suspender-extension-for-chrome"
 excerpt: "Are you tired of dealing with sluggish browser performance due to numerous open tabs?"
 featured_image: >-
   /content/images/unlocking-efficiency-auto-tab-suspender-extension-free-download-for-a-seamless-browsing-experience-mll9bskiotb/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - Auto tab suspender extension free download

@@ -4,12 +4,11 @@ id: e7c95d07-fde3-4250-a60e-c9ae1c001baf
 title: >-
   Streamline Your Social Media Management with the Best Chrome Extension for
   Scheduling Posts
-slug: >-
-  streamline-your-social-media-management-with-the-best-chrome-extension-for-scheduling-posts-mmdsutjnkbw
+slug: "streamline-your-social-media-management-with-the-best-chrome-extension-for-scheduling-posts-mmdsutjnkbw"
 excerpt: "Are you tired of manually posting updates on your social media accounts? Do you struggle to keep track of your content calendar? Look no further!"
 featured_image: >-
   /content/images/streamline-your-social-media-management-with-the-best-chrome-extension-for-scheduling-posts-mmdsutjnkbw/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - chrome extension for scheduling posts

@@ -4,12 +4,11 @@ id: 494713ee-d61e-480f-815c-fb3a82c3f379
 title: >-
   Discover the Power of a Lightweight Ad Blocker Chrome: Boost Your Browsing
   Experience
-slug: a-lightweight-ad-blocker-for-chrome
-  discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience-mme0ixxxqdz
+slug: "a-lightweight-ad-blocker-for-chrome"
 excerpt: "Are you tired of annoying ads and popups disrupting your online experience? A lightweight ad blocker Chrome extension can be your solution."
 featured_image: >-
   /content/images/discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience-mme0ixxxqdz/featured.webp
-category: Screenshots & Screen Capture
+category: "Ad Blockers"
 tags: []
 keywords:
   - lightweight ad blocker chrome

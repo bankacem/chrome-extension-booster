@@ -2,8 +2,7 @@
 seo_title: "Ghostery Add On Chrome"
 id: 6290e9b4-9bcd-45f4-a41a-e82fe074b1c3
 title: 'Ghostery Add On Chrome'
-slug: unlocking-the-power-of-online-privacy-ghostery-add-on-chrome
-  unlocking-the-power-of-online-privacy-a-comprehensive-guide-to-ghostery-add-on-chrome-mm3scm95f3h
+slug: "unlocking-the-power-of-online-privacy-ghostery-add-on-chrome"
 excerpt: "Are you concerned about your online privacy and security while browsing the internet?"
 featured_image: >-
   /content/images/unlocking-the-power-of-online-privacy-a-comprehensive-guide-to-ghostery-add-on-chrome-mm3scm95f3h/featured.webp

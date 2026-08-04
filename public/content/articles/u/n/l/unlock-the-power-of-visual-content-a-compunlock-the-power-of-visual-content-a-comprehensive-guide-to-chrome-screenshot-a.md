@@ -2,8 +2,7 @@
 seo_title: "A Guide to Chrome Screenshot Add-ons"
 id: 394205cf-041f-4eab-9b17-3825c7d5d1a0
 title: 'A Guide to Chrome Screenshot Add-ons'
-slug: >-
-  unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a
+slug: "unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a"
 excerpt: "When it comes to capturing and sharing web content, Chrome Screenshot Addons have revolutionized the way we interact with the internet."
 featured_image: >-
   /content/images/unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a/featured.webp

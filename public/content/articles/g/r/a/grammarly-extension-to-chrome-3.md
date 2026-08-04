@@ -7,7 +7,7 @@ title: >-
 slug: grammarly-extension-to-chrome-3
 excerpt: "Are you tired of embarrassing typos and grammatical errors in your online writing?"
 featured_image: /content/images/grammarly-extension-to-chrome-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - grammarly extension to chrome

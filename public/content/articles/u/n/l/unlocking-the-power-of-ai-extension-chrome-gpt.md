@@ -5,7 +5,7 @@ title: 'Chrome GPT: Bringing AI Into Your Browser'
 slug: unlocking-the-power-of-ai-extension-chrome-gpt
 excerpt: "Welcome to the world of artificial intelligence, where extension chrome gpt is revolutionizing the way we browse and interact with the internet."
 featured_image: /content/images/extension-chrome-gpt-mkzp2hiqkfu/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome gpt

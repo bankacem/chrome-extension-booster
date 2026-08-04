@@ -2,8 +2,7 @@
 seo_title: "What Kiwi Browser's Developer Mode Unlocks"
 id: 10213140-3e3a-427a-adbd-af56941e53e3
 title: 'What Kiwi Browser''s Developer Mode Unlocks'
-slug: unlocking-the-power-of-kiwi-browser-developer-mode
-  unlocking-the-power-of-kiwi-browser-developer-mode-a-comprehensive-guide-mmthp09j08g
+slug: "unlocking-the-power-of-kiwi-browser-developer-mode"
 excerpt: "As a web developer, you're likely familiar with the importance of testing and debugging your websites and applications across various browsers and devices."
 featured_image: >-
   /content/images/unlocking-the-power-of-kiwi-browser-developer-mode-a-comprehensive-guide-mmthp09j08g/featured.webp

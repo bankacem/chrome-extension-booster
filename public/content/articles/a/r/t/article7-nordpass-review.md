@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   NordPass Chrome Extension Review 2026: The Beautiful Underdog With One
   Frustrating Flaw
+category: "Chrome Extensions"
 ---
-# NordPass Chrome Extension Review 2026: The Beautiful Underdog With One Frustrating Flaw
 
 **Last Updated:** June 3, 2026 | **Reading Time:** 8 minutes
 

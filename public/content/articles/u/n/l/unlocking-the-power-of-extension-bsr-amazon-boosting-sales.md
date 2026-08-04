@@ -5,7 +5,7 @@ title: 'Tracking Amazon Best Seller Rank with a Chrome Extension'
 slug: unlocking-the-power-of-extension-bsr-amazon-boosting-sales
 excerpt: "As an Amazon seller, you're likely no stranger to the importance of optimizing your product listings for maximum visibility and sales."
 featured_image: /content/images/extension-bsr-amazon-mkzn8in2ug3/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension bsr amazon

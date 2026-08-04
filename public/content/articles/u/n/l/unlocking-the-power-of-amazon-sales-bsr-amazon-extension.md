@@ -2,12 +2,11 @@
 seo_title: 'Amazon BSR Extension for Chrome'
 id: 3fb1d44a-351f-4b71-b451-9efbfac5a84d
 title: 'Checking Amazon Sales Rank Right from Chrome'
-slug: unlocking-the-power-of-amazon-sales-bsr-amazon-extension
-  unlocking-the-power-of-amazon-sales-a-comprehensive-guide-to-bsr-amazon-extension-ml5gl7mlrdq
+slug: "unlocking-the-power-of-amazon-sales-bsr-amazon-extension"
 excerpt: "As an Amazon seller, staying ahead of the competition is crucial to achieving success in the ever-changing e-commerce landscape."
 featured_image: >-
   /content/images/unlocking-the-power-of-amazon-sales-a-comprehensive-guide-to-bsr-amazon-extension-ml5gl7mlrdq/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - bsr amazon extension

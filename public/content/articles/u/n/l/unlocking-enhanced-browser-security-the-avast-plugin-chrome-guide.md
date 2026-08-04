@@ -6,7 +6,7 @@ slug: unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide
 excerpt: "When it comes to protecting your online presence, having the right tools at your disposal is crucial."
 featured_image: >-
   /content/images/unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide-ml5h00oyd4z/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - avast plugin chrome

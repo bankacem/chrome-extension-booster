@@ -2,8 +2,7 @@
 seo_title: "Top Chrome DevTools Tips for Mobile"
 id: e7ea3a2d-f6e1-4eaf-8a7d-90fa8f71ea6b
 title: 'Top Chrome DevTools Tips for Mobile'
-slug: top-chrome-devtools-tips-for-mobile
-  unlock-the-power-of-mobile-development-top-chrome-devtools-tips-for-mobile-mmtm0hanwsl
+slug: "top-chrome-devtools-tips-for-mobile"
 excerpt: "As a web developer, you're likely no stranger to the importance of testing and debugging your website or application on various devices, including mobile."
 featured_image: >-
   /content/images/unlock-the-power-of-mobile-development-top-chrome-devtools-tips-for-mobile-mmtm0hanwsl/featured.webp

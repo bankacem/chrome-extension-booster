@@ -4,12 +4,11 @@ id: 3a216abd-1f9d-473c-af58-33b6c8ce1d15
 title: >-
   Unlock a Faster and More Secure Browsing Experience: The Best Free Adblocker
   for Chrome Android
-slug: the-best-free-adblocker-for-chrome-android
-  unlock-a-faster-and-more-secure-browsing-experience-the-best-free-adblocker-for-chrome-android-mmtlczy3tpr
+slug: "the-best-free-adblocker-for-chrome-android"
 excerpt: "Are you tired of annoying ads slowing down your browsing experience on your Android device? Look no further!"
 featured_image: >-
   /content/images/unlock-a-faster-and-more-secure-browsing-experience-the-best-free-adblocker-for-chrome-android-mmtlczy3tpr/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - free adblocker for chrome android

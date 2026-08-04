@@ -6,7 +6,7 @@ slug: unlocking-online-privacy-the-power-of-ghostery-chrome-extension
 excerpt: "As we navigate the vast expanse of the internet, it's becoming increasingly important to prioritize our online privacy."
 featured_image: >-
   /content/images/unlocking-online-privacy-the-power-of-ghostery-chrome-extension-mm3sclh7asr/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - ghostery chrome extension

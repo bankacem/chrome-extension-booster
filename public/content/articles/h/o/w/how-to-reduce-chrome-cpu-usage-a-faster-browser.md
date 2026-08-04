@@ -2,12 +2,11 @@
 seo_title: "How to Reduce Chrome CPU Usage"
 id: 4ca0043d-6bde-472e-986d-e6262efd00d4
 title: 'How to Reduce Chrome CPU Usage: A Comprehensive Guide to a Faster Browser'
-slug: how-to-reduce-chrome-cpu-usage-a-faster-browser
-  how-to-reduce-chrome-cpu-usage-a-comprehensive-guide-to-a-faster-browser-mmthx96a4yd
+slug: "how-to-reduce-chrome-cpu-usage-a-faster-browser"
 excerpt: "Are you tired of Chrome consuming excessive CPU resources, slowing down your computer and affecting your productivity? You're not alone."
 featured_image: >-
   /content/images/how-to-reduce-chrome-cpu-usage-a-comprehensive-guide-to-a-faster-browser-mmthx96a4yd/featured.webp
-category: Chrome Extensions
+category: "Productivity & Tools"
 tags: []
 keywords:
   - how to reduce chrome cpu usage

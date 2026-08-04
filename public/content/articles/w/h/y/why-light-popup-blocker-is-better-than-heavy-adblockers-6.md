@@ -6,7 +6,7 @@ slug: why-light-popup-blocker-is-better-than-heavy-adblockers-6
 excerpt: "Are you tired of using heavy adblockers that slow down your browsing experience?"
 featured_image: >-
   /content/images/why-light-popup-blocker-is-better-than-heavy-adblockers-6/featured.webp
-category: Screenshots & Screen Capture
+category: "Ad Blockers"
 tags:
   - >-
     Why Light Popup Blocker is Better than Heavy Adblockers: A Comprehensive

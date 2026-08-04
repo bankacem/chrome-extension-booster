@@ -7,7 +7,7 @@ title: >-
 slug: facebook-fast-delete-all-messages-extension-13
 excerpt: "Managing your Facebook messages can be a daunting task, especially when you have a large number of conversations to sift through."
 featured_image: /content/images/facebook-fast-delete-all-messages-extension-13/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - facebook fast delete all messages extension

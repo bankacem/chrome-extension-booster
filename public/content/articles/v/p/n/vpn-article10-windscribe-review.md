@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   Windscribe Chrome Extension Free Review 2026: The Build-Your-Own VPN That Gets
   It Right
+category: "Security & Privacy"
 ---
-# Windscribe Chrome Extension Free Review 2026: The Build-Your-Own VPN That Gets It Right
 
 **Last Updated:** June 3, 2026 | **Reading Time:** 9 minutes | **Tested:** 4 weeks daily use
 

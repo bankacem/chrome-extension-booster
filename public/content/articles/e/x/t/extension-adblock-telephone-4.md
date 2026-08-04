@@ -5,7 +5,7 @@ title: 'AdBlock Telephone Extension: Ad-Free Guide'
 slug: extension-adblock-telephone-4
 excerpt: "Are you tired of annoying ads disrupting your browsing experience on your telephone? Look no further than extension adblock telephone solutions."
 featured_image: /content/images/extension-adblock-telephone-4/featured.webp
-category: Screenshots & Screen Capture
+category: "Ad Blockers"
 tags: []
 keywords:
   - extension adblock telephone

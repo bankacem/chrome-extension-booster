@@ -2,12 +2,11 @@
 seo_title: "The No-Ads Chrome Extension Worth Installing"
 id: 16af549d-aa0c-42b2-85f4-78829e753033
 title: 'The No-Ads Chrome Extension Worth Installing'
-slug: the-no-ads-chrome-extension-worth-installing
-  discover-the-best-no-ads-chrome-extension-2026-for-a-seamless-browsing-experience-mmtld2uhhvw
+slug: "the-no-ads-chrome-extension-worth-installing"
 excerpt: "Are you tired of annoying ads disrupting your online experience? Look no further than the no ads Chrome extension 2026, designed to block intrusive…"
 featured_image: >-
   /content/images/discover-the-best-no-ads-chrome-extension-2026-for-a-seamless-browsing-experience-mmtld2uhhvw/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - no ads chrome extension 2026

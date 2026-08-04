@@ -5,7 +5,7 @@ title: 'Getting Extensions to Work on Chrome Mobile'
 slug: extension-chrome-mobile-6
 excerpt: "Are you tired of feeling limited by your mobile browser's capabilities? Do you wish you could enhance your browsing experience on-the-go?"
 featured_image: /content/images/extension-chrome-mobile-6/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome mobile

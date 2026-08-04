@@ -5,7 +5,7 @@ title: 'How to Force Dark Mode on Amazon Website: A Step-by-Step Guide'
 slug: how-to-force-dark-mode-on-amazon-website-3
 excerpt: "Are you tired of the bright and overwhelming interface of the Amazon website?"
 featured_image: /content/images/how-to-force-dark-mode-on-amazon-website-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Appearance & Themes"
 tags: []
 keywords:
   - How to force Dark Mode on Amazon website

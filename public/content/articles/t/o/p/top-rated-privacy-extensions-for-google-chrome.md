@@ -4,8 +4,7 @@ id: a42e763a-c7f7-4ade-a7d7-425dae6e2f3e
 title: >-
   Top Rated Privacy Extensions for Google Chrome: Protecting Your Online
   Identity
-slug: top-rated-privacy-extensions-for-google-chrome
-  top-rated-privacy-extensions-for-google-chrome-protecting-your-online-identity-mll9brk1sln
+slug: "top-rated-privacy-extensions-for-google-chrome"
 excerpt: "With the increasing concern about online privacy, it's essential to have the right tools to protect your personal data while browsing the internet."
 featured_image: >-
   /content/images/top-rated-privacy-extensions-for-google-chrome-protecting-your-online-identity-mll9brk1sln/featured.webp

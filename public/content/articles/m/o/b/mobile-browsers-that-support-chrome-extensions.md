@@ -2,8 +2,7 @@
 seo_title: "Mobile Browsers That Support Chrome Extensions"
 id: 45ccfb3c-f44b-4301-895d-957b40365d6c
 title: 'Mobile Browsers That Support Chrome Extensions'
-slug: mobile-browsers-that-support-chrome-extensions
-  unlock-the-full-potential-of-your-mobile-device-discover-the-best-mobile-browser-with-chrome-store-s-mmthp0npy6z
+slug: "mobile-browsers-that-support-chrome-extensions"
 excerpt: >-
   Are you tired of using a mobile browser that lacks the functionality and
   flexibility you need? Look no further than a mobile browser with Chrome Store

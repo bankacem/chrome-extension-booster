@@ -2,12 +2,11 @@
 seo_title: "Better Inspect Element Tools for Chrome"
 id: 2239c4e9-9897-4a3f-9ee0-32084bf37a56
 title: 'Better Inspect Element Tools for Chrome'
-slug: unlocking-the-power-of-inspect-element-chrome-extension-tools
-  unlocking-the-power-of-inspect-element-chrome-extension-tools-a-comprehensive-guide-mmdt10kh9a3
+slug: "unlocking-the-power-of-inspect-element-chrome-extension-tools"
 excerpt: "As a web developer or a curious internet user, you've likely encountered the \"inspect element\" feature in Google Chrome."
 featured_image: >-
   /content/images/unlocking-the-power-of-inspect-element-chrome-extension-tools-a-comprehensive-guide-mmdt10kh9a3/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - inspect element chrome extension tools

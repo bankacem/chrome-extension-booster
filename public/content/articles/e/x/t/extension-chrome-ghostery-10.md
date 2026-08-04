@@ -5,7 +5,7 @@ title: 'Unlocking Online Privacy: The Power of Extension Chrome Ghostery'
 slug: extension-chrome-ghostery-10
 excerpt: "Are you concerned about your online privacy and security? With the rise of digital tracking and data collection, it's essential to take control of your…"
 featured_image: /content/images/extension-chrome-ghostery-10/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - extension chrome ghostery

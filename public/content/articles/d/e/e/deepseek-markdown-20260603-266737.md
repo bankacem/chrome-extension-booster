@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking
   Language Barriers
+category: "Chrome Extensions"
 ---
-# AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking Language Barriers
 
 ## 📚 Table of Contents
 - [Why You Need an AI Translator in 2026](#why-you-need-an-ai-translator-in-2026)

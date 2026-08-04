@@ -2,12 +2,11 @@
 seo_title: "The Best Chrome Extension for Bulk Downloads"
 id: b8823081-d69e-4088-9c49-873be63f769d
 title: 'Streamlining Your Workflow: The Best Chrome Extension for Bulk Downloads'
-slug: >-
-  streamlining-your-workflow-the-best-chrome-extension-for-bulk-downloads-mmdupgkigzv
+slug: "streamlining-your-workflow-the-best-chrome-extension-for-bulk-downloads-mmdupgkigzv"
 excerpt: "Are you tired of downloading files one by one, wasting precious time and energy? Look no further!"
 featured_image: >-
   /content/images/streamlining-your-workflow-the-best-chrome-extension-for-bulk-downloads-mmdupgkigzv/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - chrome extension for bulk downloads

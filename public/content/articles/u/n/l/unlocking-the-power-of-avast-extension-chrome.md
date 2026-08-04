@@ -2,12 +2,11 @@
 seo_title: 'The Avast Extension for Chrome'
 id: fbe461fe-cae1-4986-b0f9-0756884b60a7
 title: 'The Avast Extension for Chrome: What It Protects'
-slug: unlocking-the-power-of-avast-extension-chrome
-  unlocking-the-power-of-avast-extension-chrome-a-comprehensive-guide-ml5gz4xphcr
+slug: "unlocking-the-power-of-avast-extension-chrome"
 excerpt: "When it comes to protecting your online presence, having the right tools is crucial."
 featured_image: >-
   /content/images/unlocking-the-power-of-avast-extension-chrome-a-comprehensive-guide-ml5gz4xphcr/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - avast extension chrome

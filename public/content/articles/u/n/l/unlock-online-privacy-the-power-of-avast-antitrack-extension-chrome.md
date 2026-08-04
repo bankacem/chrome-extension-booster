@@ -2,12 +2,11 @@
 seo_title: "The Power of Avast Antitrack Extension Chrome"
 id: 23cd3add-e398-405a-8f4a-5ab7962303ea
 title: 'Unlock Online Privacy: The Power of Avast Antitrack Extension Chrome'
-slug: unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome
-  unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome-ml5gz3mlleo
+slug: "unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome"
 excerpt: "Are you concerned about your online privacy and security while browsing the internet?"
 featured_image: >-
   /content/images/unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome-ml5gz3mlleo/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - avast antitrack extension chrome

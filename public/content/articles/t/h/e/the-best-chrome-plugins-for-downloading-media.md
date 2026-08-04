@@ -2,12 +2,11 @@
 seo_title: "The Best Chrome Plugins for Downloading Media"
 id: 5bac4a01-ecdb-45d1-b678-00f9ae83366f
 title: 'The Best Chrome Plugins for Downloading Media'
-slug: the-best-chrome-plugins-for-downloading-media
-  the-definitive-guide-to-the-best-chrome-plugins-for-media-downloading-in-2025-mliju7acduv
+slug: "the-best-chrome-plugins-for-downloading-media"
 excerpt: "In the modern digital landscape, the ability to archive, save, and manage online media has become a cornerstone of professional and personal productivity."
 featured_image: >-
   /content/images/the-definitive-guide-to-the-best-chrome-plugins-for-media-downloading-in-2025-mliju7acduv/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - Best Chrome plugins for media downloading

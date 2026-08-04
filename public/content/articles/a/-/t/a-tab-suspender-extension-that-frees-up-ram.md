@@ -2,12 +2,11 @@
 seo_title: "A Tab Suspender Extension That Frees Up RAM"
 id: 02e3fe6a-e6f8-400f-9e65-3db69c78b77d
 title: 'A Tab Suspender Extension That Frees Up RAM'
-slug: a-tab-suspender-extension-that-frees-up-ram
-  discover-the-best-extension-to-suspend-tabs-and-boost-your-browsers-performance-mmtizxlm6h1
+slug: "a-tab-suspender-extension-that-frees-up-ram"
 excerpt: "Are you tired of dealing with slow browser performance due to an excessive number of open tabs? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-extension-to-suspend-tabs-and-boost-your-browsers-performance-mmtizxlm6h1/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - best extension to suspend tabs

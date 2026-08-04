@@ -5,7 +5,7 @@ title: 'A Bing Extension for Chrome, Explained'
 slug: unlocking-the-power-of-extension-bing
 excerpt: "When it comes to customizing and enhancing your browser experience, extension bing is a term that has been gaining traction."
 featured_image: /content/images/extension-bing-mkzmcsbex6v/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension bing

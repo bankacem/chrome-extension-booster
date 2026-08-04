@@ -2,12 +2,11 @@
 seo_title: "Chrome Performance Booster Tools"
 id: d8dadebb-e8a4-428d-b339-3a11e6466e1a
 title: 'Chrome Performance Booster Tools'
-slug: >-
-  unlock-faster-browsing-the-ultimate-guide-to-chrome-performance-booster-tools-mmtizynrlkk
+slug: "unlock-faster-browsing-the-ultimate-guide-to-chrome-performance-booster-tools-mmtizynrlkk"
 excerpt: "Are you tired of slow browsing speeds and frustrated with the performance of your Google Chrome browser? Look no further!"
 featured_image: >-
   /content/images/unlock-faster-browsing-the-ultimate-guide-to-chrome-performance-booster-tools-mmtizynrlkk/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - chrome performance booster tools

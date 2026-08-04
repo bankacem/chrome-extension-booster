@@ -2,12 +2,11 @@
 seo_title: "Where to Download Meta Pixel Helper for Chrome"
 id: 6a3c85b4-0511-4450-921b-e8bb03e07543
 title: 'Where to Download Meta Pixel Helper for Chrome'
-slug: where-to-download-meta-pixel-helper-for-chrome
-  unlock-the-power-of-meta-pixel-with-the-meta-pixel-helper-chrome-extension-download-link-mmb6y3b2j58
+slug: "where-to-download-meta-pixel-helper-for-chrome"
 excerpt: "As a digital marketer or business owner, you're likely familiar with the importance of tracking and optimizing your online campaigns."
 featured_image: >-
   /content/images/unlock-the-power-of-meta-pixel-with-the-meta-pixel-helper-chrome-extension-download-link-mmb6y3b2j58/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags: []
 keywords:
   - Meta Pixel Helper Chrome extension download link

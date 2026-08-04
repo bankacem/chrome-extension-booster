@@ -4,12 +4,11 @@ id: 4c870e54-303b-44b7-8a9c-3ed9859c611a
 title: >-
   Unlock the Full Potential of YouTube: The Best YouTube Extensions Chrome Has
   to Offer
-slug: the-best-youtube-extensions-for-chrome
-  unlock-the-full-potential-of-youtube-the-best-youtube-extensions-chrome-has-to-offer-mmdz4d36x0y
+slug: "the-best-youtube-extensions-for-chrome"
 excerpt: "Are you tired of the same old YouTube experience? Want to take your video watching to the next level?"
 featured_image: >-
   /content/images/unlock-the-full-potential-of-youtube-the-best-youtube-extensions-chrome-has-to-offer-mmdz4d36x0y/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - best youtube extensions chrome

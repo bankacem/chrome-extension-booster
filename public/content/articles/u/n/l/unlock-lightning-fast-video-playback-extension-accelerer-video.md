@@ -5,7 +5,7 @@ title: 'Unlock Lightning-Fast Video Playback'
 slug: unlock-lightning-fast-video-playback-extension-accelerer-video
 excerpt: "Are you tired of waiting for videos to load or buffer? Do you want to enhance your online video watching experience?"
 featured_image: /content/images/extension-accelerer-video-mkzmqpra1ne/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension accelerer video

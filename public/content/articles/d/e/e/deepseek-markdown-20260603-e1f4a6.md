@@ -14,6 +14,7 @@ meta_description: >-
 description: >-
   ChatGPT Export Chat Chrome Extension: The Complete 2026 Guide to Saving,
   Sharing, and Backing Up Your Conversations
+category: "AI Tools"
 ---
 ## 📚 Table of Contents
 - [Why You Need to Export ChatGPT Chats in 2026](#why-you-need-to-export-chatgpt-chats-in-2026)

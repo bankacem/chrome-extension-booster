@@ -4,15 +4,14 @@ id: dedc9b93-049c-4b9c-bb96-e7aacda459bf
 title: >-
   How to Add in Chrome: A Comprehensive Guide to Enhancing Your Browsing
   Experience
-slug: how-to-add-in-chrome-enhancing-your-browsing-experience
-  how-to-add-in-chrome-a-comprehensive-guide-to-enhancing-your-browsing-experience-mm3umic5das
+slug: "how-to-add-in-chrome-enhancing-your-browsing-experience"
 excerpt: >-
   Are you looking to add in Chrome new features, functionality, or tools to
   enhance your browsing experience? With the vast array of Chrome extensions
   available, 
 featured_image: >-
   /content/images/how-to-add-in-chrome-a-comprehensive-guide-to-enhancing-your-browsing-experience-mm3umic5das/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - add in chrome

@@ -2,8 +2,7 @@
 seo_title: "Identify Any Font on a Page Instantly"
 id: f69cca4b-6bd7-43f1-bdcd-6dafce1764b2
 title: 'Identify Any Font on a Page Instantly'
-slug: identify-any-font-on-a-page-instantly
-  discover-the-best-font-finder-extension-chrome-to-elevate-your-design-game-mmtm0gyrx36
+slug: "identify-any-font-on-a-page-instantly"
 excerpt: "As a designer, developer, or simply a web enthusiast, you understand the importance of typography in creating a visually appealing and engaging online…"
 featured_image: >-
   /content/images/discover-the-best-font-finder-extension-chrome-to-elevate-your-design-game-mmtm0gyrx36/featured.webp

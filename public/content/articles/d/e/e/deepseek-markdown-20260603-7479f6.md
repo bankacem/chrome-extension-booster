@@ -8,8 +8,8 @@ image_url: /content/images/deepseek-markdown-20260603-7479f6.jpg
 title: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
 meta_description: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
 description: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
+category: "Chrome Extensions"
 ---
-# 🤖 Gemini Chat Chrome Extensions: The 2026 Power User's Guide
 
 > **Before you install anything: Chrome already has Gemini built-in.**
 >

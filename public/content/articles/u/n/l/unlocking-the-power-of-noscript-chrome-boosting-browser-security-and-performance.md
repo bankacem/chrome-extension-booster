@@ -2,12 +2,11 @@
 seo_title: "NoScript for Chrome: Better Security and Speed"
 id: edcf1372-8db4-4ce0-b6df-ba1b0823f59a
 title: 'NoScript for Chrome: Better Security and Speed'
-slug: >-
-  unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance
+slug: "unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance"
 excerpt: "When it comes to browsing the internet, security and performance are two of the top priorities for users."
 featured_image: >-
   /content/images/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - noscript chrome

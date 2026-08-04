@@ -2,8 +2,7 @@
 seo_title: "How to Turn On Chrome's Memory Saver Mode"
 id: 7f8086e1-a66f-4d37-913d-24c9c276cc8a
 title: 'How to Turn On Chrome''s Memory Saver Mode'
-slug: how-to-turn-on-chromes-memory-saver-mode
-  unlocking-the-power-of-chrome-how-to-enable-chrome-memory-saver-mode-for-a-seamless-browsing-experie-mmthx9ioyu8
+slug: "how-to-turn-on-chromes-memory-saver-mode"
 excerpt: "Are you tired of Chrome consuming excessive memory, slowing down your browsing experience? Enabling Chrome memory saver mode can be a game-changer."
 featured_image: >-
   /content/images/unlocking-the-power-of-chrome-how-to-enable-chrome-memory-saver-mode-for-a-seamless-browsing-experie-mmthx9ioyu8/featured.webp

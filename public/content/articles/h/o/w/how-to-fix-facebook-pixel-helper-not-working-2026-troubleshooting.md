@@ -4,12 +4,11 @@ id: 08f9db17-a6cc-423b-b6b0-a4fe1c700bf2
 title: >-
   How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to
   Troubleshooting
-slug: how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting
-  how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting-mmb6y2rtgr2
+slug: "how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting"
 excerpt: "Are you struggling with the Facebook Pixel Helper not working as expected in 2026? You're not alone."
 featured_image: >-
   /content/images/how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting-mmb6y2rtgr2/featured.webp
-category: Chrome Extensions
+category: "Social Media Tools"
 tags: []
 keywords:
   - How to fix Facebook Pixel Helper not working 2026

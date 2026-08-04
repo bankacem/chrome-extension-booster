@@ -4,12 +4,11 @@ id: cbfd2575-79b6-496d-a7a0-3f0959957fa0
 title: >-
   Best Redirect Blocker for Secure Browsing 2026: Protect Yourself from
   Malicious Chains
-slug: >-
-  best-redirect-blocker-for-secure-browsing-2026-protect-yourself-from-malicious-chains
+slug: "best-redirect-blocker-for-secure-browsing-2026-protect-yourself-from-malicious-chains"
 excerpt: "As we navigate the vast expanse of the internet, we often encounter redirects that can lead us to unwanted or even malicious websites."
 featured_image: >-
   /content/images/best-redirect-blocker-for-secure-browsing-2026-protect-yourself-from-malicious-chains/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags:
   - >-
     Best Redirect Blocker for Secure Browsing 2026: Protect Yourself from

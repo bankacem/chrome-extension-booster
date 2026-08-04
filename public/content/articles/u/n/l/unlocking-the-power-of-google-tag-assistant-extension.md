@@ -2,8 +2,7 @@
 seo_title: "What Google Tag Assistant Actually Checks"
 id: 5882417a-3d40-46d3-9a98-d0925f4d0160
 title: 'What Google Tag Assistant Actually Checks'
-slug: unlocking-the-power-of-google-tag-assistant-extension
-  unlocking-the-power-of-google-tag-assistant-extension-a-comprehensive-guide-mmtm0g2sjow
+slug: "unlocking-the-power-of-google-tag-assistant-extension"
 excerpt: "Are you struggling to manage and optimize your Google tags? Look no further than the Google Tag Assistant extension, a powerful tool designed to simplify the…"
 featured_image: >-
   /content/images/unlocking-the-power-of-google-tag-assistant-extension-a-comprehensive-guide-mmtm0g2sjow/featured.webp

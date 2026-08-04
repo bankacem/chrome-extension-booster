@@ -7,7 +7,7 @@ title: >-
 slug: extension-utile-chrome-12
 excerpt: "Are you tired of a cluttered and inefficient browsing experience? Look no further than the world of extension utile Chrome, where you can discover a plethora…"
 featured_image: /content/images/extension-utile-chrome-12/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - extension utile chrome

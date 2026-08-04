@@ -7,8 +7,9 @@ image_url: /content/images/outreach-strategy.jpg
 title: Guest Post Outreach Strategy & List
 meta_description: 'Subject: Data-Driven Guide: Chrome Memory Optimization in 2026'
 description: 'Subject: Data-Driven Guide: Chrome Memory Optimization in 2026'
+category: "Chrome Extensions"
 ---
-# Guest Post Outreach Strategy & List
+
 **Site:** extensionto.com
 **Current Authority:** 0
 **Target Authority:** 5-10 (Month 3)

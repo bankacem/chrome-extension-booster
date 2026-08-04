@@ -4,12 +4,11 @@ id: 139a5bd4-298f-4420-a6fd-22d46b183f2f
 title: >-
   Prevent Chrome from Crashing with Tab Discarder: Boost Browser Performance and
   Stability
-slug: stop-chrome-from-crashing-with-a-tab-discarder
-  prevent-chrome-from-crashing-with-tab-discarder-boost-browser-performance-and-stability-mll9btbql7m
+slug: "stop-chrome-from-crashing-with-a-tab-discarder"
 excerpt: "Google Chrome is one of the most widely used web browsers, known for its speed, simplicity, and extensive library of extensions."
 featured_image: >-
   /content/images/prevent-chrome-from-crashing-with-tab-discarder-boost-browser-performance-and-stability-mll9btbql7m/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - Prevent Chrome from crashing with tab discarder

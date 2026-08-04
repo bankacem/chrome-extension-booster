@@ -2,12 +2,11 @@
 seo_title: "How to Install uBlock Origin on Android Chrome"
 id: 7c66b2c7-0ab6-4121-b135-826388910345
 title: 'How to Install uBlock Origin on Android Chrome: A Step-by-Step Guide'
-slug: how-to-install-ublock-origin-on-android-chrome
-  how-to-install-ublock-origin-on-android-chrome-a-step-by-step-guide-mmthowe8g0u
+slug: "how-to-install-ublock-origin-on-android-chrome"
 excerpt: "Are you tired of annoying ads and trackers disrupting your browsing experience on Android Chrome?"
 featured_image: >-
   /content/images/how-to-install-ublock-origin-on-android-chrome-a-step-by-step-guide-mmthowe8g0u/featured.webp
-category: Chrome Extensions
+category: "Ad Blockers"
 tags: []
 keywords:
   - install ublock origin on android chrome

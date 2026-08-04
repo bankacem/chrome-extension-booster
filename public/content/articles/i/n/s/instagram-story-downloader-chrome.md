@@ -8,7 +8,7 @@ excerpt: >-
   want to save disappear after 24 hours? Do you wish there was a way to download
   and ke
 featured_image: /content/images/instagram-story-downloader-chrome/featured.webp
-category: Chrome Extensions
+category: "Performance & Memory"
 tags:
   - instagram story downloader chrome
   - instagram story

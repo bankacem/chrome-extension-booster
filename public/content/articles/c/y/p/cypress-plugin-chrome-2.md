@@ -5,7 +5,7 @@ title: 'Using the Cypress Plugin for Chrome'
 slug: cypress-plugin-chrome-2
 excerpt: "Are you tired of tedious and time-consuming web automation tasks? Look no further than the cypress plugin chrome, a game-changing tool that streamlines your…"
 featured_image: /content/images/cypress-plugin-chrome-2/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - cypress plugin chrome

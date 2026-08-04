@@ -4,7 +4,7 @@ title: 'Dark Mode for Twitter: The Ultimate Guide'
 slug: dark-mode-for-twitter-the-ultimate-guide-3
 excerpt: "Are you tired of the bright and overwhelming Twitter interface? Do you want to give your eyes a break and reduce screen glare?"
 featured_image: /content/images/dark-mode-for-twitter-the-ultimate-guide-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Appearance & Themes"
 tags: []
 keywords:
   - 'Dark Mode for Twitter: The ultimate guide'

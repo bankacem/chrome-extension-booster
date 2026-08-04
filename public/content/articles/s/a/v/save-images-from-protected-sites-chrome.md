@@ -8,7 +8,7 @@ excerpt: >-
   images in Chrome? Look no further! In this comprehensive guide, we will walk
   you thro
 featured_image: /content/images/save-images-from-protected-sites-chrome/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags:
   - save images from protected sites chrome
   - save images

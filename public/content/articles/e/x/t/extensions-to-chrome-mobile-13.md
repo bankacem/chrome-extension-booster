@@ -5,7 +5,7 @@ title: 'Unlock the Full Potential of Your Browser: Extensions to Chrome Mobile'
 slug: extensions-to-chrome-mobile-13
 excerpt: "Are you tired of using a limited browser on your mobile device? Look no further!"
 featured_image: /content/images/extensions-to-chrome-mobile-13/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extensions to chrome mobile

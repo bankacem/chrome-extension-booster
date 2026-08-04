@@ -4,8 +4,7 @@ id: f2ae7eae-85db-4f80-8093-3c422aac0699
 title: >-
   Unlocking a Seamless Browsing Experience: The Power of Chrome Ad Blocker
   Android
-slug: the-power-of-chrome-ad-blocker-android
-  unlocking-a-seamless-browsing-experience-the-power-of-chrome-ad-blocker-android-mm3scoxnwg6
+slug: "the-power-of-chrome-ad-blocker-android"
 excerpt: "Are you tired of annoying ads disrupting your online experience on your Android device? Look no further than a Chrome ad blocker Android solution."
 featured_image: >-
   /content/images/unlocking-a-seamless-browsing-experience-the-power-of-chrome-ad-blocker-android-mm3scoxnwg6/featured.webp

@@ -5,7 +5,7 @@ title: 'Handling CORS in Chrome: What This Extension Does'
 slug: extension-chrome-cors
 excerpt: "When it comes to developing and using Chrome extensions, one crucial aspect to consider is the extension Chrome CORS (Cross-Origin Resource Sharing) policy."
 featured_image: /content/images/extension-chrome-cors/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome cors

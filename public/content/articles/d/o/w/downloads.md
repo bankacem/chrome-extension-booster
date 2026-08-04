@@ -7,7 +7,7 @@ title: >-
 slug: downloads
 excerpt: "Are you tired of slow and unreliable download managers? Look no further than the EagleGet free downloader extension Chrome users swear by."
 featured_image: /content/images/downloads/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - eagleget free downloader extension chrome

@@ -2,12 +2,11 @@
 seo_title: "Facebook Pixel Helper: A Closer Look"
 id: e87b7538-8513-448c-a6ee-c3ebde6d7cdf
 title: 'Facebook Pixel Helper: A Closer Look'
-slug: >-
-  unlock-the-power-of-facebook-pixel-with-the-extension-chrome-facebook-pixel-helper
+slug: "unlock-the-power-of-facebook-pixel-with-the-extension-chrome-facebook-pixel-helper"
 excerpt: "Are you a digital marketer or business owner looking to optimize your Facebook ads and track conversions effectively?"
 featured_image: >-
   /content/images/unlock-the-power-of-facebook-pixel-with-the-extension-chrome-facebook-pixel-helper/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - extension chrome facebook pixel helper

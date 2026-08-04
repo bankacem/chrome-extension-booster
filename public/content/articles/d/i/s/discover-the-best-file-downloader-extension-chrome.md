@@ -2,12 +2,11 @@
 seo_title: "The Best File Downloader Extension for Chrome"
 id: 556e6883-0641-4569-b4dc-b799448ca7c5
 title: 'The Best File Downloader Extension for Chrome'
-slug: discover-the-best-file-downloader-extension-chrome
-  discover-the-best-file-downloader-extension-chrome-a-comprehensive-guide-mmdupg56roj
+slug: "discover-the-best-file-downloader-extension-chrome"
 excerpt: "Are you tired of struggling with slow and unreliable file downloads on Chrome? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-file-downloader-extension-chrome-a-comprehensive-guide-mmdupg56roj/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - best file downloader extension chrome

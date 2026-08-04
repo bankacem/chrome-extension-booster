@@ -12,8 +12,8 @@ meta_description: >-
 description: >-
   Meta Description: Discover the best ChatGPT prompt template Chrome extensions
   for 2026. Learn how to save hours daily, get better AI responses, a...
+category: "AI Tools"
 ---
-# ChatGPT Prompt Templates Chrome: The Ultimate Guide for 2026
 
 **Meta Description:** Discover the best ChatGPT prompt template Chrome extensions for 2026. Learn how to save hours daily, get better AI responses, and build a personal prompt library that makes ChatGPT, Claude, and Gemini work harder for you.
 

@@ -7,7 +7,7 @@ title: >-
 slug: effortlessly-manage-your-browser-export-extension-chrome
 excerpt: "Are you tired of manually reinstalling your favorite Chrome extensions every time you switch to a new device or browser profile? Look no further!"
 featured_image: /content/images/export-extension-chrome-mkzmqlg97qy/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - export extension chrome

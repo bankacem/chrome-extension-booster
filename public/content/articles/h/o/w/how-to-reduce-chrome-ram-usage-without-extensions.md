@@ -2,12 +2,11 @@
 seo_title: "Cut Chrome's RAM Usage Without Any Extensions"
 id: a71c6b73-42a3-4406-8f60-90af9561bfe2
 title: 'How to Reduce Chrome RAM Usage Without Extensions: A Comprehensive Guide'
-slug: how-to-reduce-chrome-ram-usage-without-extensions
-  how-to-reduce-chrome-ram-usage-without-extensions-a-comprehensive-guide-mmb7srpyinx
+slug: "how-to-reduce-chrome-ram-usage-without-extensions"
 excerpt: "Google Chrome is one of the most popular web browsers, known for its speed, simplicity, and extensive library of extensions."
 featured_image: >-
   /content/images/how-to-reduce-chrome-ram-usage-without-extensions-a-comprehensive-guide-mmb7srpyinx/featured.webp
-category: Chrome Extensions
+category: "Performance & Memory"
 tags: []
 keywords:
   - How to reduce Chrome RAM usage without extensions

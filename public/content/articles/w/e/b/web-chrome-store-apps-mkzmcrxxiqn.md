@@ -5,7 +5,7 @@ title: 'Finding the Right Apps in the Chrome Web Store'
 slug: web-chrome-store-apps-mkzmcrxxiqn
 excerpt: "When it comes to enhancing your browsing experience, web Chrome store apps play a vital role."
 featured_image: /content/images/web-chrome-store-apps-mkzmcrxxiqn/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - web chrome store apps

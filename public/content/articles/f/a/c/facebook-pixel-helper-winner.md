@@ -8,7 +8,7 @@ excerpt: >-
   targeting and accurate tracking in your online advertising campaigns. One
   powerful
 featured_image: /content/images/facebook-pixel-helper-winner/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - chrome facebook pixel

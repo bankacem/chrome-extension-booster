@@ -2,8 +2,7 @@
 seo_title: "Using AdBlock on Chrome for Android"
 id: b87a203f-8a1d-424f-ab23-4fa2fc5fbae0
 title: 'Using AdBlock on Chrome for Android'
-slug: unlocking-the-power-of-adblock-chrome-on-android
-  unlocking-the-power-of-adblock-chrome-on-android-a-comprehensive-guide-mm3scp7stxi
+slug: "unlocking-the-power-of-adblock-chrome-on-android"
 excerpt: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 featured_image: >-
   /content/images/unlocking-the-power-of-adblock-chrome-on-android-a-comprehensive-guide-mm3scp7stxi/featured.webp

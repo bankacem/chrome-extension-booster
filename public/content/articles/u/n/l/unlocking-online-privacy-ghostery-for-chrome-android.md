@@ -2,12 +2,11 @@
 seo_title: "Ghostery for Chrome Android"
 id: 7bc98013-988e-4c51-a9eb-7ad6f096a7b6
 title: 'Unlocking Online Privacy: A Comprehensive Guide to Ghostery for Chrome Android'
-slug: unlocking-online-privacy-ghostery-for-chrome-android
-  unlocking-online-privacy-a-comprehensive-guide-to-ghostery-for-chrome-android-mm3scml5zl3
+slug: "unlocking-online-privacy-ghostery-for-chrome-android"
 excerpt: "As the world becomes increasingly digital, online privacy has become a pressing concern for many individuals."
 featured_image: >-
   /content/images/unlocking-online-privacy-a-comprehensive-guide-to-ghostery-for-chrome-android-mm3scml5zl3/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - ghostery for chrome android

@@ -4,8 +4,7 @@ id: dec8a212-fcc1-4edf-9992-887677275d6d
 title: >-
   Mastering the Art of Web Development: A Comprehensive Guide to Inspect Element
   Android Chrome
-slug: mastering-the-art-of-web-development-inspect-element-android-chrome
-  mastering-the-art-of-web-development-a-comprehensive-guide-to-inspect-element-android-chrome-mmtm0epd1m4
+slug: "mastering-the-art-of-web-development-inspect-element-android-chrome"
 excerpt: "As a web developer, you're likely no stranger to the importance of inspecting elements on a webpage."
 featured_image: >-
   /content/images/mastering-the-art-of-web-development-a-comprehensive-guide-to-inspect-element-android-chrome-mmtm0epd1m4/featured.webp

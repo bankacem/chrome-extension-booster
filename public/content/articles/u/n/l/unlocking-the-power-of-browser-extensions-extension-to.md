@@ -2,12 +2,11 @@
 seo_title: "What Is the .to Browser Extension?"
 id: e5fc7071-afe2-4fe5-871e-52dcfe0bc52a
 title: 'What Is the .to Browser Extension?'
-slug: unlocking-the-power-of-browser-extensions-extension-to
-  unlocking-the-power-of-browser-extensions-a-comprehensive-guide-to-extension-to-mm3umj9k6l1
+slug: "unlocking-the-power-of-browser-extensions-extension-to"
 excerpt: "Welcome to the world of browser extensions, where you can enhance your browsing experience with a wide range of tools and features."
 featured_image: >-
   /content/images/unlocking-the-power-of-browser-extensions-a-comprehensive-guide-to-extension-to-mm3umj9k6l1/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension .to

@@ -7,7 +7,7 @@ title: >-
 slug: download-from-instagram-extension-11
 excerpt: "Are you tired of wanting to save your favorite Instagram posts, stories, and reels, only to find that the platform doesn't allow it? Look no further!"
 featured_image: /content/images/download-from-instagram-extension-11/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - download from instagram extension

@@ -6,7 +6,7 @@ slug: unlock-the-full-potential-of-your-browser-essential-extensions-to-chrome
 excerpt: "Welcome to the world of Chrome extensions, where you can transform your browsing experience with a plethora of tools and features."
 featured_image: >-
   /content/images/unlock-the-full-potential-of-your-browser-essential-extensions-to-chrome/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extensions to chrome

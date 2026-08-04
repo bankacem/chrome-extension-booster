@@ -2,8 +2,7 @@
 seo_title: 'Ad Blocking on Android Chrome'
 id: b0bb3134-1ed7-4532-84e0-1002bd62cf32
 title: 'Blocking Ads on Android with a Chrome Add-on'
-slug: unlock-the-power-of-ad-blocking-on-android
-  unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android-mm3scnuyzcs
+slug: "unlock-the-power-of-ad-blocking-on-android"
 excerpt: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 featured_image: >-
   /content/images/unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android-mm3scnuyzcs/featured.webp

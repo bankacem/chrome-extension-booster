@@ -4,8 +4,7 @@ id: 436abc2d-087c-4a97-bca5-28255979adb6
 title: >-
   Protecting Your Online Security: The Best Chrome Extension to Block Malicious
   Websites
-slug: protecting-your-online-security
-  protecting-your-online-security-the-best-chrome-extension-to-block-malicious-websites-mmdzl0y1ool
+slug: "protecting-your-online-security"
 excerpt: "When browsing the internet, it's easy to stumble upon malicious websites that can harm your device or steal your personal data."
 featured_image: >-
   /content/images/protecting-your-online-security-the-best-chrome-extension-to-block-malicious-websites-mmdzl0y1ool/featured.webp

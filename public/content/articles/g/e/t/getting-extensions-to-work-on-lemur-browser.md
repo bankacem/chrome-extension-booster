@@ -2,12 +2,11 @@
 seo_title: "Getting Extensions to Work on Lemur Browser"
 id: 4442ea0a-697c-45d8-8612-6cb1729723d7
 title: 'Getting Extensions to Work on Lemur Browser'
-slug: getting-extensions-to-work-on-lemur-browser
-  discover-the-best-lemur-browser-extensions-download-for-enhanced-browsing-experience-mmthozyfc2j
+slug: "getting-extensions-to-work-on-lemur-browser"
 excerpt: "Are you looking for ways to enhance your browsing experience with lemur browser extensions download?"
 featured_image: >-
   /content/images/discover-the-best-lemur-browser-extensions-download-for-enhanced-browsing-experience-mmthozyfc2j/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags: []
 keywords:
   - lemur browser extensions download

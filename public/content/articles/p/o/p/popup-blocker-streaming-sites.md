@@ -8,7 +8,7 @@ excerpt: >-
   further! In this article, we'll explore the best solutions for a popup blocker
   for s
 featured_image: /content/images/popup-blocker-streaming-sites/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags:
   - popup blocker
   - streaming sites

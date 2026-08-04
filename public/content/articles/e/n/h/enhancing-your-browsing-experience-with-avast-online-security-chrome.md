@@ -2,15 +2,14 @@
 seo_title: "What Avast Online Security Adds to Chrome"
 id: c3efefb4-8557-4002-a66e-59c3b44f2c41
 title: Enhancing Your Browsing Experience with Avast Online Security Chrome
-slug: enhancing-your-browsing-experience-with-avast-online-security-chrome
-  enhancing-your-browsing-experience-with-avast-online-security-chrome-ml5gzevpc4e
+slug: "enhancing-your-browsing-experience-with-avast-online-security-chrome"
 excerpt: >-
   As we navigate the vast expanse of the internet, our online security has
   become a pressing concern. With the rise of cyber threats and malicious
   activities, it'
 featured_image: >-
   /content/images/enhancing-your-browsing-experience-with-avast-online-security-chrome-ml5gzevpc4e/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - avast online security chrome

@@ -6,7 +6,7 @@ slug: how-to-stay-on-the-same-page-while-clicking-links-3
 excerpt: "When browsing the internet, it can be frustrating to click on a link only to be taken away from the current page."
 featured_image: >-
   /content/images/how-to-stay-on-the-same-page-while-clicking-links-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags:
   - 'How to Stay on the Same Page While Clicking Links: A Comprehensive Guide'
 keywords:

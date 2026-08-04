@@ -2,12 +2,11 @@
 seo_title: "The Power of Sci Hub Extension"
 id: 2284e131-1b50-4e5e-9bda-a9b84c4fa615
 title: 'Unlocking Access to Scientific Knowledge: The Power of Sci Hub Extension'
-slug: the-power-of-sci-hub-extension
-  unlocking-access-to-scientific-knowledge-the-power-of-sci-hub-extension-mm3umi6njnq
+slug: "the-power-of-sci-hub-extension"
 excerpt: "The world of scientific research has become increasingly complex, with numerous journals and publications hosting a vast array of studies and papers."
 featured_image: >-
   /content/images/unlocking-access-to-scientific-knowledge-the-power-of-sci-hub-extension-mm3umi6njnq/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - sci hub extension

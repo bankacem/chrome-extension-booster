@@ -7,7 +7,7 @@ title: >-
 slug: bugherd-extension-chrome-2
 excerpt: "Are you tired of tedious bug tracking and project management processes?"
 featured_image: /content/images/bugherd-extension-chrome-2/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - bugherd extension chrome

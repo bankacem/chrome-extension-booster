@@ -7,7 +7,7 @@ title: >-
 slug: extension-chrome-rafraichissement-automatique-15
 excerpt: "Are you tired of manually refreshing your web pages to get the latest updates? Look no further!"
 featured_image: /content/images/extension-chrome-rafraichissement-automatique-15/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome rafraichissement automatique

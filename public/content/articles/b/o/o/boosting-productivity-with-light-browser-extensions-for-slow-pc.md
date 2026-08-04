@@ -4,12 +4,11 @@ id: 41bfeb5c-81ff-4fd6-870b-7453d76f48c0
 title: >-
   Boosting Productivity with Light Browser Extensions for Slow PC: A
   Comprehensive Guide
-slug: boosting-productivity-with-light-browser-extensions-for-slow-pc
-  boosting-productivity-with-light-browser-extensions-for-slow-pc-a-comprehensive-guide-mmtizxgfmd1
+slug: "boosting-productivity-with-light-browser-extensions-for-slow-pc"
 excerpt: "Are you tired of using a slow PC that hinders your productivity? One of the primary reasons for a slow computer is a resource-intensive browser."
 featured_image: >-
   /content/images/boosting-productivity-with-light-browser-extensions-for-slow-pc-a-comprehensive-guide-mmtizxgfmd1/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - light browser extensions for slow pc

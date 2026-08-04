@@ -2,12 +2,11 @@
 seo_title: "Downloading Images in Bulk with Chrome"
 id: 032b0a21-08ee-4d52-8665-16924a924c6b
 title: 'Downloading Images in Bulk with Chrome'
-slug: >-
-  discover-the-best-chrome-extension-to-download-images-a-comprehensive-guide-mmdupgfwhnh
+slug: "discover-the-best-chrome-extension-to-download-images-a-comprehensive-guide-mmdupgfwhnh"
 excerpt: "Are you tired of manually saving images from the web, one by one? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-chrome-extension-to-download-images-a-comprehensive-guide-mmdupgfwhnh/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - chrome extension to download images

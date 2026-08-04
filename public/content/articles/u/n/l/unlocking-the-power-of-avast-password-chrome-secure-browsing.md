@@ -2,12 +2,11 @@
 seo_title: 'Avast Password Manager for Chrome'
 id: 0506736f-d831-4c1d-9a9f-e4c246d11f45
 title: 'Avast Password Manager for Chrome, Reviewed'
-slug: unlocking-the-power-of-avast-password-chrome-secure-browsing
-  unlocking-the-power-of-avast-password-chrome-a-comprehensive-guide-to-secure-browsing-ml5gzghoxn2
+slug: "unlocking-the-power-of-avast-password-chrome-secure-browsing"
 excerpt: "Are you tired of remembering multiple passwords for your online accounts? Do you struggle with creating strong, unique passwords for each website?"
 featured_image: >-
   /content/images/unlocking-the-power-of-avast-password-chrome-a-comprehensive-guide-to-secure-browsing-ml5gzghoxn2/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - avast password chrome

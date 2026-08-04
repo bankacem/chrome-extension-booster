@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   Dashlane Chrome Extension Features in 2026: A Deep Dive Into the Premium-Only
   Powerhouse
+category: "Chrome Extensions"
 ---
-# Dashlane Chrome Extension Features in 2026: A Deep Dive Into the Premium-Only Powerhouse
 
 **Last Updated:** June 3, 2026 | **Reading Time:** 8 minutes
 

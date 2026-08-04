@@ -5,7 +5,7 @@ title: 'How to Download Pictures from Instagram Using Chrome: A Step-by-Step Gui
 slug: download-picture-instagram-chrome-3
 excerpt: "Are you tired of trying to download picture Instagram Chrome users have been searching for?"
 featured_image: /content/images/download-picture-instagram-chrome-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - download picture instagram chrome

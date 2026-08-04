@@ -5,7 +5,7 @@ title: 'A Look at the Chrome WAPI Extension'
 slug: extension-chrome-wapi-17
 excerpt: "Are you looking to enhance your browsing experience with the help of extension chrome wapi? Look no further!"
 featured_image: /content/images/extension-chrome-wapi-17/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome wapi

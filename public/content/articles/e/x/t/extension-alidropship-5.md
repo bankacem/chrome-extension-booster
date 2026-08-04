@@ -5,7 +5,7 @@ title: 'The AliDropship Extension: What It Does'
 slug: extension-alidropship-5
 excerpt: "Are you an entrepreneur looking to start a dropshipping business? Or perhaps you're already an experienced online store owner seeking to streamline your…"
 featured_image: /content/images/extension-alidropship-5/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension alidropship

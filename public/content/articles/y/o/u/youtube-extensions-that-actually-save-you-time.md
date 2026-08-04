@@ -4,12 +4,11 @@ id: 56182bc5-3358-42d8-981c-44be8380b454
 title: >-
   Unlock Your Full Potential: The Best YouTube Productivity Extensions for a
   More Efficient You
-slug: youtube-extensions-that-actually-save-you-time
-  unlock-your-full-potential-the-best-youtube-productivity-extensions-for-a-more-efficient-you-mmdz7y38wml
+slug: "youtube-extensions-that-actually-save-you-time"
 excerpt: "Are you tired of wasting hours watching YouTube videos that aren't relevant to your work or studies?"
 featured_image: >-
   /content/images/unlock-your-full-potential-the-best-youtube-productivity-extensions-for-a-more-efficient-you-mmdz7y38wml/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - best youtube productivity extensions

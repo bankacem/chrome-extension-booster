@@ -2,8 +2,7 @@
 seo_title: "Chrome Extensions for Staying Focused at Work"
 id: ac088230-5d30-4e0e-afa4-175a88af6be4
 title: 'Boost Your Workflow: The Best Chrome Extensions for Focus and Productivity'
-slug: chrome-extensions-for-staying-focused-at-work
-  boost-your-workflow-the-best-chrome-extensions-for-focus-and-productivity-mmdrqq4a7we
+slug: "chrome-extensions-for-staying-focused-at-work"
 excerpt: "Staying focused and productive in today's digital age can be a daunting task, especially with the abundance of distractions available online."
 featured_image: >-
   /content/images/boost-your-workflow-the-best-chrome-extensions-for-focus-and-productivity-mmdrqq4a7we/featured.webp

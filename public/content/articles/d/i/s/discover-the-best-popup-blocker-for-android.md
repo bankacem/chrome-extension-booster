@@ -2,12 +2,11 @@
 seo_title: 'A Popup Blocker for Android'
 id: a92f5622-3b4f-4b74-97ab-2b96bee6e08c
 title: 'A Popup Blocker Worth Using on Android'
-slug: discover-the-best-popup-blocker-for-android
-  discover-the-best-popup-blocker-for-android-boost-your-mobile-browsing-experience-mmtld1tfrpr
+slug: "discover-the-best-popup-blocker-for-android"
 excerpt: "Are you tired of annoying popups and intrusive ads disrupting your mobile browsing experience on Android? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-popup-blocker-for-android-boost-your-mobile-browsing-experience-mmtld1tfrpr/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - best popup blocker for android

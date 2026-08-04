@@ -4,8 +4,7 @@ id: 6810ee1b-58db-4246-bc78-d29070f26937
 title: >-
   How to Disable Chrome Extensions: A Step-by-Step Guide to Simplifying Your
   Browser
-slug: how-to-disable-chrome-extensions-simplifying-your-browser
-  how-to-disable-chrome-extensions-a-step-by-step-guide-to-simplifying-your-browser-mmdrxyx6he9
+slug: "how-to-disable-chrome-extensions-simplifying-your-browser"
 excerpt: "Are you tired of having too many Chrome extensions running in the background, slowing down your browser and consuming valuable resources?"
 featured_image: >-
   /content/images/how-to-disable-chrome-extensions-a-step-by-step-guide-to-simplifying-your-browser-mmdrxyx6he9/featured.webp

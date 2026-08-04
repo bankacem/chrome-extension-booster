@@ -2,12 +2,11 @@
 seo_title: "Maximizing Laptop Battery Life"
 id: 07ba4341-2456-4a95-a374-c40f00eb6c5e
 title: 'Maximizing Laptop Battery Life'
-slug: maximizing-laptop-battery-life-chrome-battery-saver-extension
-  maximizing-laptop-battery-life-the-ultimate-guide-to-chrome-battery-saver-extension-mmtizxqy8i4
+slug: "maximizing-laptop-battery-life-chrome-battery-saver-extension"
 excerpt: "As we increasingly rely on our laptops for work, entertainment, and communication, battery life has become a major concern."
 featured_image: >-
   /content/images/maximizing-laptop-battery-life-the-ultimate-guide-to-chrome-battery-saver-extension-mmtizxqy8i4/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - chrome battery saver extension

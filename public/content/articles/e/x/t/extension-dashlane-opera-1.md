@@ -5,7 +5,7 @@ title: Unlock Seamless Password Management with the Extension Dashlane Opera
 slug: extension-dashlane-opera-1
 excerpt: "Are you tired of struggling to remember multiple passwords across various websites and platforms?"
 featured_image: /content/images/extension-dashlane-opera-1/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - extension dashlane opera

@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   🔎 ChatGPT Conversation Search Chrome Extensions 2026 — Never Lose a Chat
   Again
+category: "AI Tools"
 ---
-# 🔎 ChatGPT Conversation Search Chrome Extensions (2026) — Never Lose a Chat Again
 
 > **You had the perfect conversation. The one where ChatGPT gave you the exact solution you need right now.**
 >

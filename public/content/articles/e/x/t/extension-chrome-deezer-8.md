@@ -5,7 +5,7 @@ title: 'Deezer for Chrome: Getting the Most Out of It'
 slug: extension-chrome-deezer-8
 excerpt: "Are you a music lover looking for a seamless way to enjoy your favorite tunes while browsing the web?"
 featured_image: /content/images/extension-chrome-deezer-8/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - extension chrome deezer

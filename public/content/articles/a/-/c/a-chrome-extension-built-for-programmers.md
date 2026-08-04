@@ -4,12 +4,11 @@ id: 47409983-dc8b-488e-ba57-d68a270e8f3e
 title: >-
   Unlocking Productivity: The Best Chrome Extension for Programmers to Boost
   Coding Efficiency
-slug: a-chrome-extension-built-for-programmers
-  unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm
+slug: "a-chrome-extension-built-for-programmers"
 excerpt: "As a programmer, you're likely no stranger to the importance of having the right tools at your disposal."
 featured_image: >-
   /content/images/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm/featured.webp
-category: Chrome Extensions
+category: "Performance & Memory"
 tags: []
 keywords:
   - best chrome extension for programmers

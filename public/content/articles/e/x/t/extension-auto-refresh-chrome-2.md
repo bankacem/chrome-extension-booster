@@ -7,7 +7,7 @@ title: >-
 slug: extension-auto-refresh-chrome-2
 excerpt: "In today's fast-paced digital landscape, staying up-to-date with the latest information is crucial for success."
 featured_image: /content/images/extension-auto-refresh-chrome-2/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - extension auto refresh chrome

@@ -2,12 +2,11 @@
 seo_title: "Grab YouTube Subtitles with This Extension"
 id: a255dfc9-f2fa-44b9-9747-52a3196eb245
 title: 'Grab YouTube Subtitles with This Extension'
-slug: unlock-the-power-of-youtube-subtitle-downloader-chrome
-  unlock-the-power-of-youtube-subtitle-downloader-chrome-a-comprehensive-guide-mmdz4dqyokk
+slug: "unlock-the-power-of-youtube-subtitle-downloader-chrome"
 excerpt: "Are you tired of struggling to understand your favorite YouTube videos due to poor audio quality or language barriers?"
 featured_image: >-
   /content/images/unlock-the-power-of-youtube-subtitle-downloader-chrome-a-comprehensive-guide-mmdz4dqyokk/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - youtube subtitle downloader chrome

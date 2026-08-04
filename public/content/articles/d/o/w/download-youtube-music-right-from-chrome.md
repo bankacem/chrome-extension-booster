@@ -2,12 +2,11 @@
 seo_title: "Download YouTube Music Right from Chrome"
 id: f25cc6a1-a043-401d-9be3-b084185c246c
 title: 'Download YouTube Music Right from Chrome'
-slug: download-youtube-music-right-from-chrome
-  unlock-the-power-of-music-the-best-chrome-extension-to-download-youtube-music-mmdz4dln1vq
+slug: "download-youtube-music-right-from-chrome"
 excerpt: "Are you tired of streaming your favorite songs on YouTube and wishing you could download them for offline listening? Look no further!"
 featured_image: >-
   /content/images/unlock-the-power-of-music-the-best-chrome-extension-to-download-youtube-music-mmdz4dln1vq/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - chrome extension to download youtube music

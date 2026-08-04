@@ -2,12 +2,11 @@
 seo_title: "Browsing Extensions Like Ghostery, Compared"
 id: 63cf9456-4ee0-4c45-924a-2b07fd6503b5
 title: 'Browsing Extensions Like Ghostery, Compared'
-slug: browsing-extensions-like-ghostery-compared
-  unlocking-the-power-of-secure-browsing-extensions-like-ghostery-for-a-safer-online-experience-mll9bs3gkw1
+slug: "browsing-extensions-like-ghostery-compared"
 excerpt: "As the internet continues to evolve, online security has become a major concern for individuals and organizations alike."
 featured_image: >-
   /content/images/unlocking-the-power-of-secure-browsing-extensions-like-ghostery-for-a-safer-online-experience-mll9bs3gkw1/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - Secure browsing extension like Ghostery

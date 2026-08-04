@@ -5,7 +5,7 @@ title: 'Understanding the Extension Notion'
 slug: understanding-the-extension-notion
 excerpt: "The extension notion has revolutionized the way we interact with our web browsers, enabling us to customize and enhance our browsing experience like never…"
 featured_image: /content/images/extension-notion-ml5ee96o8rm/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension notion

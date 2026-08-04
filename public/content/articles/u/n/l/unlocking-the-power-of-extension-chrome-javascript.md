@@ -5,7 +5,7 @@ title: 'Managing JavaScript in Chrome with This Tool'
 slug: unlocking-the-power-of-extension-chrome-javascript
 excerpt: "When it comes to enhancing your browsing experience, Chrome extensions are the way to go."
 featured_image: /content/images/extension-chrome-javascript-mkzp2ibkolm/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome javascript

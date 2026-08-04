@@ -4,12 +4,11 @@ id: e702e0d0-a347-4b58-97ae-bd734428431e
 title: >-
   Enhance Your Online Experience: Top Chrome Extensions to Improve Browsing
   Experience
-slug: enhance-your-online-experience
-  enhance-your-online-experience-top-chrome-extensions-to-improve-browsing-experience-mmdrqq8mam6
+slug: "enhance-your-online-experience"
 excerpt: "When it comes to browsing the internet, a seamless and efficient experience is crucial for productivity and entertainment."
 featured_image: >-
   /content/images/enhance-your-online-experience-top-chrome-extensions-to-improve-browsing-experience-mmdrqq8mam6/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - chrome extensions to improve browsing experience

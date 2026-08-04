@@ -2,8 +2,7 @@
 seo_title: 'A JSON Formatter for Chrome'
 id: 8f08ed0a-292c-4d74-8c70-1d9cab5e6ae0
 title: 'A JSON Formatter Extension for Chrome'
-slug: unlock-the-power-of-json-json-formatter-chrome-extension
-  unlock-the-power-of-json-the-ultimate-guide-to-json-formatter-chrome-extension-mmtm0fnlxhc
+slug: "unlock-the-power-of-json-json-formatter-chrome-extension"
 excerpt: "As a developer, working with JSON (JavaScript Object Notation) data is a daily task."
 featured_image: >-
   /content/images/unlock-the-power-of-json-the-ultimate-guide-to-json-formatter-chrome-extension-mmtm0fnlxhc/featured.webp

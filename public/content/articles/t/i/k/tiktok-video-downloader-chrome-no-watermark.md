@@ -8,7 +8,7 @@ excerpt: >-
   videos that you'd love to save for later or share with friends and family.
   However, do
 featured_image: /content/images/tiktok-video-downloader-chrome-no-watermark/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags:
   - tiktok video downloader no watermark chrome
   - tiktok video

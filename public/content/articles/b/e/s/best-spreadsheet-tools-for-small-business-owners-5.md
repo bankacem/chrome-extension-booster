@@ -8,7 +8,7 @@ slug: best-spreadsheet-tools-for-small-business-owners-5
 excerpt: "In the modern digital economy, data is the lifeblood of any successful enterprise."
 featured_image: >-
   /content/images/best-spreadsheet-tools-for-small-business-owners-5/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags:
   - >-
     Best Spreadsheet Tools for Small Business Owners: A Comprehensive Guide for

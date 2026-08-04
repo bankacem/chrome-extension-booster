@@ -5,7 +5,7 @@ title: 'Unlocking Efficient Automation: The Power of Cypress Extension Chrome'
 slug: cypress-extension-chrome-1
 excerpt: "When it comes to automating web applications, developers and testers alike are constantly on the lookout for tools that can streamline their workflow and…"
 featured_image: /content/images/cypress-extension-chrome-1/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - cypress extension chrome

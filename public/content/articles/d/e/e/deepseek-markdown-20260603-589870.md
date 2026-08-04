@@ -8,8 +8,8 @@ image_url: /content/images/deepseek-markdown-20260603-589870.jpg
 title: ⚡ Free AI Content Summarizer Chrome Extensions (2026) — Read Less, Know More
 meta_description: ⚡ Free AI Content Summarizer Chrome Extensions 2026 — Read Less, Know More
 description: ⚡ Free AI Content Summarizer Chrome Extensions 2026 — Read Less, Know More
+category: "AI Tools"
 ---
-# ⚡ Free AI Content Summarizer Chrome Extensions (2026) — Read Less, Know More
 
 > **You don't have time to read that 3,000-word article. I don't either.**
 >

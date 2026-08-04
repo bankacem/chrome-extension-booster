@@ -2,8 +2,7 @@
 seo_title: "Loop YouTube Videos with This Chrome Extension"
 id: 7c25c09b-c220-48a1-b50d-e05d7fbf2662
 title: 'Loop YouTube Videos with This Chrome Extension'
-slug: loop-youtube-videos-with-this-chrome-extension
-  discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q
+slug: "loop-youtube-videos-with-this-chrome-extension"
 excerpt: "Are you tired of manually replaying your favorite YouTube videos or loops? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q/featured.webp

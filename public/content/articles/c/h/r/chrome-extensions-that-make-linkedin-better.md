@@ -2,12 +2,11 @@
 seo_title: "Chrome Extensions That Make LinkedIn Better"
 id: 8c348a4c-0243-4646-b3e8-ee6dd5b4adf4
 title: Unlock the Full Potential of LinkedIn with the Best LinkedIn Chrome Extensions
-slug: chrome-extensions-that-make-linkedin-better
-  unlock-the-full-potential-of-linkedin-with-the-best-linkedin-chrome-extensions-mmdsjdsf6xu
+slug: "chrome-extensions-that-make-linkedin-better"
 excerpt: "Are you looking to boost your productivity, enhance your networking experience, and stay ahead of the competition on LinkedIn?"
 featured_image: >-
   /content/images/unlock-the-full-potential-of-linkedin-with-the-best-linkedin-chrome-extensions-mmdsjdsf6xu/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - best linkedin chrome extensions

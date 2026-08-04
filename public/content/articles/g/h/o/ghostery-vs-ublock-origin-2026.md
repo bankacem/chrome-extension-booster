@@ -4,12 +4,11 @@ id: 593a3bee-f94b-4b9d-ae54-a94088caf3c0
 title: >-
   Ghostery vs uBlock Origin 2026: A Comprehensive Comparison for Enhanced
   Productivity
-slug: ghostery-vs-ublock-origin-2026
-  ghostery-vs-ublock-origin-2026-a-comprehensive-comparison-for-enhanced-productivity-mmtld2a871i
+slug: "ghostery-vs-ublock-origin-2026"
 excerpt: "When it comes to blocking unwanted ads, trackers, and malware, two popular options come to mind: Ghostery and uBlock Origin."
 featured_image: >-
   /content/images/ghostery-vs-ublock-origin-2026-a-comprehensive-comparison-for-enhanced-productivity-mmtld2a871i/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - ghostery vs ublock origin 2026

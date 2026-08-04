@@ -2,12 +2,11 @@
 seo_title: "Facebook Pixel Helper: What It Shows You"
 id: 33d3f678-4e3d-41d2-9469-6943d240dc91
 title: 'Facebook Pixel Helper: What It Shows You'
-slug: unlocking-the-power-of-facebook-pixel-helper-chrome-2026
-  unlocking-the-power-of-facebook-pixel-helper-chrome-2026-a-comprehensive-guide-mmtm0g85dyl
+slug: "unlocking-the-power-of-facebook-pixel-helper-chrome-2026"
 excerpt: "As a digital marketer or business owner, you're likely no stranger to the importance of tracking and optimizing your online ads."
 featured_image: >-
   /content/images/unlocking-the-power-of-facebook-pixel-helper-chrome-2026-a-comprehensive-guide-mmtm0g85dyl/featured.webp
-category: Chrome Extensions
+category: "Social Media Tools"
 tags: []
 keywords:
   - facebook pixel helper chrome 2026

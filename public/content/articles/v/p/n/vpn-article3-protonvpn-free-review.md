@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   ProtonVPN Chrome Extension Free Review 2026: The Only Free VPN That Doesn't
   Sell Your Soul
+category: "Security & Privacy"
 ---
-# ProtonVPN Chrome Extension Free Review 2026: The Only Free VPN That Doesn't Sell Your Soul
 
 **Last Updated:** June 3, 2026 | **Reading Time:** 9 minutes | **Independently Audited:** Yes (Securitum 2022, Cure53)
 

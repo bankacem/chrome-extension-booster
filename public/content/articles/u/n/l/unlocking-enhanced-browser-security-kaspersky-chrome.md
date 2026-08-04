@@ -2,12 +2,11 @@
 seo_title: "How Kaspersky Protects You Inside Chrome"
 id: ad4021a2-30f2-44ba-aa78-804863f24dc2
 title: 'Unlocking Enhanced Browser Security: A Comprehensive Guide to Kaspersky Chrome'
-slug: unlocking-enhanced-browser-security-kaspersky-chrome
-  unlocking-enhanced-browser-security-a-comprehensive-guide-to-kaspersky-chrome-ml5gl4ydvlw
+slug: "unlocking-enhanced-browser-security-kaspersky-chrome"
 excerpt: "As the internet landscape continues to evolve, browser security has become a top priority for individuals and organizations alike."
 featured_image: >-
   /content/images/unlocking-enhanced-browser-security-a-comprehensive-guide-to-kaspersky-chrome-ml5gl4ydvlw/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - kaspersky chrome

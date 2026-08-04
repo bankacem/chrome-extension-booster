@@ -6,7 +6,7 @@ slug: unlocking-website-optimization-with-siteimprove-chrome-a-comprehensive-gui
 excerpt: "As a website owner or digital marketer, ensuring your online presence is optimized for user experience, accessibility, and search engine ranking is crucial."
 featured_image: >-
   /content/images/unlocking-website-optimization-with-siteimprove-chrome-a-comprehensive-guide/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags:
   - unlocking-website-optimization-with-siteimprove-chrome-a-comprehensive-guide
 keywords:

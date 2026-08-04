@@ -10,8 +10,8 @@ meta_description: "A hands-on look at chatgpt for google docs chrome, covering s
 description: >-
   Meta Description: Discover the best ChatGPT-powered Chrome extensions for
   Google Docs in 2026. Learn how to write, edit, and optimize documents w...
+category: "AI Tools"
 ---
-# ChatGPT for Google Docs Chrome: The Ultimate Guide for 2026
 
 **Meta Description:** Discover the best ChatGPT-powered Chrome extensions for Google Docs in 2026. Learn how to write, edit, and optimize documents with AI assistance directly inside Google Docs.
 

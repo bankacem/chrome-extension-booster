@@ -5,7 +5,7 @@ title: 'Unlock Global Communication: The Power of Extension Chrome Google Transl
 slug: the-power-of-extension-chrome-google-translate
 excerpt: "In today's interconnected world, language barriers can be a significant obstacle to communication and productivity."
 featured_image: /content/images/extension-chrome-google-translate-mkzp2h3pbk0/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - extension chrome google translate

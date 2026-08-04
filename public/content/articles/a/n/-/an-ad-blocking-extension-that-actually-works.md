@@ -2,8 +2,7 @@
 seo_title: "An Ad-Blocking Extension That Actually Works"
 id: eefbe79d-f7c2-4dc5-9e47-8fb2844886bb
 title: 'An Ad-Blocking Extension That Actually Works'
-slug: an-ad-blocking-extension-that-actually-works
-  discover-the-best-ad-blocking-extension-for-chrome-boost-your-browsing-experience-mme0ixsa1fx
+slug: "an-ad-blocking-extension-that-actually-works"
 excerpt: "Are you tired of annoying ads ruining your online experience? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-ad-blocking-extension-for-chrome-boost-your-browsing-experience-mme0ixsa1fx/featured.webp

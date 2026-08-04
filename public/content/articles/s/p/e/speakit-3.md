@@ -5,7 +5,7 @@ title: 'SpeakIt: A Text-to-Speech Extension for Chrome'
 slug: speakit-3
 excerpt: "Imagine being able to interact with your computer or mobile device using just your voice."
 featured_image: /content/images/speakit-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - speakit

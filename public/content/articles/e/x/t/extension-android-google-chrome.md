@@ -5,7 +5,7 @@ title: 'Chrome Extensions on Android: Full Guide'
 slug: extension-android-google-chrome
 excerpt: "With the rise of mobile browsing, the demand for a seamless and personalized browsing experience on Android devices has never been higher."
 featured_image: /content/images/extension-android-google-chrome/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension android google chrome

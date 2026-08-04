@@ -4,12 +4,11 @@ id: 90b911e5-3a2e-4dce-bb17-14b04e270424
 title: >-
   Unlocking Secure Browsing: A Guide to the Best Chrome VPN Extension Free
   Options
-slug: free-vpn-extensions-worth-trying-in-chrome
-  unlocking-secure-browsing-a-guide-to-the-best-chrome-vpn-extension-free-options-mmdzl1ass5x
+slug: "free-vpn-extensions-worth-trying-in-chrome"
 excerpt: "When it comes to browsing the internet, security and privacy are top priorities for many users."
 featured_image: >-
   /content/images/unlocking-secure-browsing-a-guide-to-the-best-chrome-vpn-extension-free-options-mmdzl1ass5x/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - chrome vpn extension free

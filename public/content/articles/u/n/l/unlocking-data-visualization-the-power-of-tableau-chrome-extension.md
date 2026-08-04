@@ -6,7 +6,7 @@ slug: unlocking-data-visualization-the-power-of-tableau-chrome-extension
 excerpt: "In today's data-driven world, making sense of complex information is crucial for businesses, organizations, and individuals alike."
 featured_image: >-
   /content/images/unlocking-data-visualization-the-power-of-tableau-chrome-extension-ml5gl2kdi63/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - tableau chrome extension

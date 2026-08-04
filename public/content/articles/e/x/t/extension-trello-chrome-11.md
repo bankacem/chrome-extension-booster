@@ -5,7 +5,7 @@ title: 'Unlocking Productivity with Extension Trello Chrome: A Comprehensive Gui
 slug: extension-trello-chrome-11
 excerpt: "Are you looking to boost your productivity and streamline your workflow with the help of extension Trello Chrome? Look no further."
 featured_image: /content/images/extension-trello-chrome-11/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - extension trello chrome

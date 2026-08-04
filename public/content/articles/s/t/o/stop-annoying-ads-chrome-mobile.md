@@ -8,7 +8,7 @@ excerpt: >-
   internet on your mobile device using Chrome? Look no further! In this article,
   we w
 featured_image: /content/images/stop-annoying-ads-chrome-mobile/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags:
   - stop annoying ads
   - chrome mobile

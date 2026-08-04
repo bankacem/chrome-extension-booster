@@ -5,7 +5,7 @@ title: 'MES Extensions for Chrome: What They Do'
 slug: mes-extensions-chrome-5
 excerpt: "When it comes to customizing and enhancing your Google Chrome browser, mes extensions chrome play a vital role."
 featured_image: /content/images/mes-extensions-chrome-5/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - mes extensions chrome

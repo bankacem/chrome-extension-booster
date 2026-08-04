@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   🎨 Best Free AI Image Generator Chrome Extensions 2026 — Create Art Without
   Leaving Your Tab
+category: "AI Tools"
 ---
-# 🎨 Best Free AI Image Generator Chrome Extensions (2026) — Create Art Without Leaving Your Tab
 
 > **You're writing a blog post. You need an image. You open a new tab, go to Midjourney/DALL-E, generate, download, upload to your site.**
 >

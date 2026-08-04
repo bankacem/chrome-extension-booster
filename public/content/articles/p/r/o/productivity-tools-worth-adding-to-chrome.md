@@ -4,12 +4,11 @@ id: 56abe92c-ef23-4c4c-b70c-42221e51ea89
 title: >-
   Unlocking Efficiency: The Best Chrome Tools for Productivity to Boost Your
   Workflow
-slug: productivity-tools-worth-adding-to-chrome
-  unlocking-efficiency-the-best-chrome-tools-for-productivity-to-boost-your-workflow-mmdrxz7mi4g
+slug: "productivity-tools-worth-adding-to-chrome"
 excerpt: "Are you tired of feeling like you're not getting the most out of your browser?"
 featured_image: >-
   /content/images/unlocking-efficiency-the-best-chrome-tools-for-productivity-to-boost-your-workflow-mmdrxz7mi4g/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - best chrome tools for productivity

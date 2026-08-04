@@ -4,12 +4,11 @@ id: dae5401c-2873-40bf-b5fd-cff123fc3882
 title: >-
   Speed Up Google Chrome 2026: Expert Tips and Tricks to Boost Your Browsing
   Experience
-slug: speed-up-google-chrome-2026
-  speed-up-google-chrome-2026-expert-tips-and-tricks-to-boost-your-browsing-experience-mmthx9ww3cj
+slug: "speed-up-google-chrome-2026"
 excerpt: "Is your Google Chrome browser slowing you down? With the constant stream of updates and new features, it's easy for Chrome to become bloated and sluggish."
 featured_image: >-
   /content/images/speed-up-google-chrome-2026-expert-tips-and-tricks-to-boost-your-browsing-experience-mmthx9ww3cj/featured.webp
-category: Chrome Extensions
+category: "Performance & Memory"
 tags: []
 keywords:
   - speed up google chrome 2026

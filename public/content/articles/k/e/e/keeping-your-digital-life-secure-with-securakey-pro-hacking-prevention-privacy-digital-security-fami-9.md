@@ -4,8 +4,7 @@ id: 19584238-ace2-4440-8af0-62c14aea2b4e
 title: >-
   Keeping your digital life secure with SecuraKey Pro: Hacking Prevention,
   Privacy, Digital Security, Family Safety
-slug: >-
-  keeping-your-digital-life-secure-with-securakey-pro-hacking-prevention-privacy-digital-security-fami-9
+slug: "keeping-your-digital-life-secure-with-securakey-pro-hacking-prevention-privacy-digital-security-fami-9"
 excerpt: "In today's digital age, it's more important than ever to prioritize your online security and protect your personal data from potential threats."
 featured_image: >-
   /content/images/keeping-your-digital-life-secure-with-securakey-pro-hacking-prevention-privacy-digital-security-fami-9/featured.webp

@@ -8,7 +8,7 @@ excerpt: >-
   many of us want to download our favorite videos to watch offline. However,
   downloadi
 featured_image: /content/images/safe-video-downloader-for-chrome/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags:
   - safe video downloader for chrome
   - safe video

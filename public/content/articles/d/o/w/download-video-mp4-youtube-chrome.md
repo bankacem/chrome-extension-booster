@@ -5,7 +5,7 @@ title: 'How to Download Video MP4 from YouTube using Chrome: A Step-by-Step Guid
 slug: download-video-mp4-youtube-chrome
 excerpt: "Are you looking for a way to download video mp4 youtube chrome and watch your favorite videos offline?"
 featured_image: /content/images/download-video-mp4-youtube-chrome/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - download video mp4 youtube chrome

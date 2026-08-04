@@ -4,8 +4,7 @@ id: 03531ef8-9902-4c12-aa00-67193c94bf74
 title: >-
   Detailed SEO Extension vs SEOQuake: A Comprehensive Comparison for Enhanced
   SEO Analysis
-slug: detailed-seo-extension-vs-seoquake
-  detailed-seo-extension-vs-seoquake-a-comprehensive-comparison-for-enhanced-seo-analysis-mmtm0ebkaaz
+slug: "detailed-seo-extension-vs-seoquake"
 excerpt: "When it comes to optimizing your website for search engines, having the right tools at your disposal is crucial."
 featured_image: >-
   /content/images/detailed-seo-extension-vs-seoquake-a-comprehensive-comparison-for-enhanced-seo-analysis-mmtm0ebkaaz/featured.webp

@@ -4,12 +4,11 @@ id: 37c57073-62a0-4d76-a123-e0c243b43b6b
 title: >-
   Unlocking the Full Potential of Your Browser: A Comprehensive Guide to Chrome
   Extension Manager Tools
-slug: chrome-extension-manager-tools
-  unlocking-the-full-potential-of-your-browser-a-comprehensive-guide-to-chrome-extension-manager-tools-mmdrxzd24au
+slug: "chrome-extension-manager-tools"
 excerpt: "As a Chrome user, you're likely no stranger to the vast array of extensions available to enhance your browsing experience."
 featured_image: >-
   /content/images/unlocking-the-full-potential-of-your-browser-a-comprehensive-guide-to-chrome-extension-manager-tools-mmdrxzd24au/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - chrome extension manager tools

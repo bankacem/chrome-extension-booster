@@ -5,7 +5,7 @@ title: 'Introduction to Extension Chrome Presearch'
 slug: extension-chrome-presearch-14
 excerpt: "Are you tired of using search engines that track your every move and sell your data to third-party companies?"
 featured_image: /content/images/extension-chrome-presearch-14/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome presearch

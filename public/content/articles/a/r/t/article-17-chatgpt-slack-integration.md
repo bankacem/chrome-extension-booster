@@ -8,8 +8,8 @@ image_url: /content/images/article-17-chatgpt-slack-integration.jpg
 title: 'ChatGPT for Slack Integration Chrome: The Ultimate Guide for 2026'
 meta_description: 'ChatGPT for Slack Integration Chrome: The Ultimate Guide for 2026'
 description: 'ChatGPT for Slack Integration Chrome: The Ultimate Guide for 2026'
+category: "AI Tools"
 ---
-# ChatGPT for Slack Integration Chrome: The Ultimate Guide for 2026
 
 **Meta Description:** Discover the best ChatGPT-powered Chrome extensions for Slack integration in 2026. Learn how to automate responses, summarize channels, and boost team productivity with AI inside Slack.
 

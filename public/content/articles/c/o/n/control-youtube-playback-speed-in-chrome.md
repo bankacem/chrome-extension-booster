@@ -4,8 +4,7 @@ id: 1efcb801-7ae0-44f3-8a42-86db276aa1c9
 title: >-
   Enhance Your YouTube Experience with a Chrome Extension to Control YouTube
   Speed
-slug: control-youtube-playback-speed-in-chrome
-  enhance-your-youtube-experience-with-a-chrome-extension-to-control-youtube-speed-mmdz7yn2v3z
+slug: "control-youtube-playback-speed-in-chrome"
 excerpt: "Are you tired of watching YouTube videos at a fixed speed? Do you want to slow down or speed up your favorite videos to better understand the content or to…"
 featured_image: >-
   /content/images/enhance-your-youtube-experience-with-a-chrome-extension-to-control-youtube-speed-mmdz7yn2v3z/featured.webp

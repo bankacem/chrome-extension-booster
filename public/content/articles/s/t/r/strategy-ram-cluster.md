@@ -8,8 +8,8 @@ image_url: /content/images/strategy-ram-cluster.jpg
 title: '12-Week Topic Cluster Strategy: Chrome RAM & Memory Management'
 meta_description: '12-Week Topic Cluster Strategy: Chrome RAM & Memory Management'
 description: '12-Week Topic Cluster Strategy: Chrome RAM & Memory Management'
+category: "Performance & Memory"
 ---
-# 12-Week Topic Cluster Strategy: Chrome RAM & Memory Management
 
 **Target Keyword:** Chrome RAM/Memory Management
 **Total Search Volume:** 30,000+ monthly searches

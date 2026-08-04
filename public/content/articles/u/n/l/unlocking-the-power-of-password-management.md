@@ -2,8 +2,7 @@
 seo_title: "KeePass for Chrome: Worth Trying"
 id: eaa90a34-52ff-4b92-9aa0-59ab8e52f309
 title: 'KeePass for Chrome: Worth Trying'
-slug: unlocking-the-power-of-password-management
-  unlocking-the-power-of-password-management-the-ultimate-guide-to-keepass-extension-for-chrome-mm3scn67cyp
+slug: "unlocking-the-power-of-password-management"
 excerpt: "As the digital landscape continues to evolve, password management has become a crucial aspect of online security."
 featured_image: >-
   /content/images/unlocking-the-power-of-password-management-the-ultimate-guide-to-keepass-extension-for-chrome-mm3scn67cyp/featured.webp

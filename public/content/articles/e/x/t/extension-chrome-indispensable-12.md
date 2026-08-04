@@ -5,7 +5,7 @@ title: 'Why Chrome Extensions Are Worth Having'
 slug: extension-chrome-indispensable-12
 excerpt: "When it comes to web browsing, Google Chrome is one of the most popular choices among users."
 featured_image: /content/images/extension-chrome-indispensable-12/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome indispensable

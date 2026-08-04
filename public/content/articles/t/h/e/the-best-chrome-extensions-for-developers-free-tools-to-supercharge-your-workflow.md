@@ -4,8 +4,7 @@ id: e4033112-c704-4f68-a9bb-c3b78548326f
 title: >-
   The Best Chrome Extensions for Developers: Free Tools to Supercharge Your
   Workflow
-slug: >-
-  the-best-chrome-extensions-for-developers-free-tools-to-supercharge-your-workflow
+slug: "the-best-chrome-extensions-for-developers-free-tools-to-supercharge-your-workflow"
 excerpt: >-
   Discover the future of browser extensions with our curated, high-performance
   directory.

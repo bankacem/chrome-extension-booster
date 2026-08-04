@@ -5,7 +5,7 @@ title: 'Can You Use Chrome Extensions in Opera?'
 slug: unlocking-the-power-of-chrome-extensions-for-opera
 excerpt: "Are you an Opera browser user looking to enhance your browsing experience with the vast library of Chrome extensions? You're not alone."
 featured_image: /content/images/extension-chrome-for-opera-mkzp2eu98bc/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome for opera

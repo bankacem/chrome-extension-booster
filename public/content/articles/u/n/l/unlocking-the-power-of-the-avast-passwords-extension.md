@@ -2,8 +2,7 @@
 seo_title: "A Look at the Avast Passwords Extension"
 id: 39a72c78-ca0b-4ac0-87c6-8b689db22f14
 title: 'A Look at the Avast Passwords Extension'
-slug: unlocking-the-power-of-the-avast-passwords-extension
-  unlocking-the-power-of-the-avast-passwords-extension-a-comprehensive-guide-ml5gzvoyxn4
+slug: "unlocking-the-power-of-the-avast-passwords-extension"
 excerpt: "Are you tired of using weak passwords or struggling to remember multiple complex passwords? The Avast passwords extension is here to help."
 featured_image: >-
   /content/images/unlocking-the-power-of-the-avast-passwords-extension-a-comprehensive-guide-ml5gzvoyxn4/featured.webp

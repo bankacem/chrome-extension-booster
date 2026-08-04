@@ -4,12 +4,11 @@ id: ec6a2851-cfe2-4972-8563-ff139e75fbb8
 title: >-
   Exploring Poper Blocker Alternatives: Enhance Your Browsing Experience with
   Effective Solutions
-slug: exploring-poper-blocker-alternatives
-  exploring-poper-blocker-alternatives-enhance-your-browsing-experience-with-effective-solutions-mmtld2ksri0
+slug: "exploring-poper-blocker-alternatives"
 excerpt: "Are you tired of dealing with annoying pop-ups and intrusive ads while browsing the internet?"
 featured_image: >-
   /content/images/exploring-poper-blocker-alternatives-enhance-your-browsing-experience-with-effective-solutions-mmtld2ksri0/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - poper blocker alternatives

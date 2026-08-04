@@ -5,7 +5,7 @@ title: 'Eternl for Chrome: A Cardano Wallet Extension'
 slug: unlocking-the-power-of-eternl-chrome-enhanced-browsing
 excerpt: "Are you looking to take your Chrome browsing experience to the next level?"
 featured_image: /content/images/eternl-chrome-mkzmqf2yj4q/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - eternl chrome

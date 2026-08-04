@@ -5,7 +5,7 @@ title: 'Bringing Gemini Into Your Chrome Browser'
 slug: gemini-extension-to-chrome-8
 excerpt: "Are you looking to enhance your browsing experience with the gemini extension to chrome? Look no further!"
 featured_image: /content/images/gemini-extension-to-chrome-8/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - gemini extension to chrome

@@ -5,7 +5,7 @@ title: 'Text-to-Speech Extensions Worth Using'
 slug: tts-chrome-5
 excerpt: "Welcome to the world of text-to-speech (TTS) technology, where the boundaries of reading and listening are blurred."
 featured_image: /content/images/tts-chrome-5/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - tts chrome

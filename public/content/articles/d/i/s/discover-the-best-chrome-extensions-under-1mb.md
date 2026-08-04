@@ -2,12 +2,11 @@
 seo_title: 'Chrome Extensions Under 1MB'
 id: c9c081d7-745c-4ac6-aeb9-0834a3bbff86
 title: 'Chrome Extensions That Stay Under 1MB'
-slug: discover-the-best-chrome-extensions-under-1mb
-  discover-the-best-chrome-extensions-under-1mb-boost-your-browser-without-slowing-it-down-mmdrqp3o64x
+slug: "discover-the-best-chrome-extensions-under-1mb"
 excerpt: "When it comes to customizing your Chrome browser, extensions are a great way to add new features and functionality."
 featured_image: >-
   /content/images/discover-the-best-chrome-extensions-under-1mb-boost-your-browser-without-slowing-it-down-mmdrqp3o64x/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - chrome extensions under 1mb

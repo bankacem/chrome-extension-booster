@@ -4,12 +4,11 @@ id: d073c815-8d8b-460c-bcc8-e1ea507de4c8
 title: >-
   Block Popups on Chrome Mobile Guide: Mastering a Distraction-Free Browsing
   Experience
-slug: block-popups-on-chrome-mobile-guide
-  block-popups-on-chrome-mobile-guide-mastering-a-distraction-free-browsing-experience-mmtld2pmfet
+slug: "block-popups-on-chrome-mobile-guide"
 excerpt: "Are you tired of annoying popups interrupting your browsing experience on Chrome mobile? Look no further!"
 featured_image: >-
   /content/images/block-popups-on-chrome-mobile-guide-mastering-a-distraction-free-browsing-experience-mmtld2pmfet/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - block popups on chrome mobile guide

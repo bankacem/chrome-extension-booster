@@ -5,7 +5,7 @@ title: 'Unlocking Password Security: A Comprehensive Guide to Enpass Extension C
 slug: enpass-extension-chrome-9
 excerpt: "Are you tired of using weak passwords or struggling to remember multiple complex passwords?"
 featured_image: /content/images/enpass-extension-chrome-9/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - enpass extension chrome

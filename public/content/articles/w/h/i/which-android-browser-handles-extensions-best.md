@@ -2,8 +2,7 @@
 seo_title: "Which Android Browser Handles Extensions Best?"
 id: ad146e08-e5ba-43a9-89ef-469a84ddc79e
 title: 'Which Android Browser Handles Extensions Best?'
-slug: which-android-browser-handles-extensions-best
-  discover-the-best-android-browser-for-extensions-to-enhance-your-mobile-browsing-experience-mmthow5z77c
+slug: "which-android-browser-handles-extensions-best"
 excerpt: "When it comes to browsing the internet on your Android device, having the right browser can make all the difference."
 featured_image: >-
   /content/images/discover-the-best-android-browser-for-extensions-to-enhance-your-mobile-browsing-experience-mmthow5z77c/featured.webp

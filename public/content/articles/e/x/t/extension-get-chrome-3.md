@@ -5,7 +5,7 @@ title: How to Get the Most Out of Your Browser with "Extension Get Chrome"
 slug: extension-get-chrome-3
 excerpt: "When it comes to customizing and enhancing your browsing experience, extension get chrome is a phrase that can unlock a world of possibilities."
 featured_image: /content/images/extension-get-chrome-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension get chrome

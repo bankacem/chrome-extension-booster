@@ -2,8 +2,7 @@
 seo_title: "Running Chrome Extensions from an Android APK"
 id: b95971cc-e9c0-4a35-b9c7-968364bc6ebc
 title: 'Running Chrome Extensions from an Android APK'
-slug: unlocking-the-power-of-chrome-extensions-for-android-apk
-  unlocking-the-power-of-chrome-extensions-for-android-apk-a-comprehensive-guide-mmthow0dkxi
+slug: "unlocking-the-power-of-chrome-extensions-for-android-apk"
 excerpt: "Are you an Android user looking to enhance your browsing experience with Chrome extensions for Android APK? Look no further!"
 featured_image: >-
   /content/images/unlocking-the-power-of-chrome-extensions-for-android-apk-a-comprehensive-guide-mmthow0dkxi/featured.webp

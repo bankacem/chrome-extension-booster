@@ -7,7 +7,7 @@ title: >-
 slug: extension-google-chrome-adblock-android-5
 excerpt: "Are you tired of annoying ads disrupting your browsing experience on your Android device?"
 featured_image: /content/images/extension-google-chrome-adblock-android-5/featured.webp
-category: Screenshots & Screen Capture
+category: "Ad Blockers"
 tags: []
 keywords:
   - extension google chrome adblock android

@@ -2,8 +2,7 @@
 seo_title: "A Ghostery Alternative Worth Considering"
 id: f94027f2-2c18-4856-93e8-8c738a2813fe
 title: 'A Ghostery Alternative Worth Considering'
-slug: a-ghostery-alternative-worth-considering
-  discover-the-best-ghostery-alternative-for-chrome-enhance-your-browsing-experience-mll9bqi2g1z
+slug: "a-ghostery-alternative-worth-considering"
 excerpt: "Are you looking for the best Ghostery alternative for Chrome to enhance your browsing experience and protect your online privacy? Look no further."
 featured_image: >-
   /content/images/discover-the-best-ghostery-alternative-for-chrome-enhance-your-browsing-experience-mll9bqi2g1z/featured.webp

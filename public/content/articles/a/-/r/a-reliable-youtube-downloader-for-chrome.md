@@ -2,12 +2,11 @@
 seo_title: "A Reliable YouTube Downloader for Chrome"
 id: bd59cea0-bb8c-4611-8c1c-83541778b7b9
 title: 'A Reliable YouTube Downloader for Chrome'
-slug: a-reliable-youtube-downloader-for-chrome
-  unlock-the-power-of-video-downloading-the-best-chrome-extension-for-youtube-downloader-mmdz4da9s5b
+slug: "a-reliable-youtube-downloader-for-chrome"
 excerpt: "Are you tired of being limited by YouTube's streaming-only policy? Do you want to download your favorite videos and watch them offline? Look no further!"
 featured_image: >-
   /content/images/unlock-the-power-of-video-downloading-the-best-chrome-extension-for-youtube-downloader-mmdz4da9s5b/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - chrome extension for youtube downloader

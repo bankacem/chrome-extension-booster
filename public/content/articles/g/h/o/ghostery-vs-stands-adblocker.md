@@ -4,8 +4,7 @@ id: 971c87ef-436c-4244-a850-3cae0997de10
 title: >-
   Ghostery vs Stands Adblocker: The Ultimate Comparison for a Seamless Browsing
   Experience
-slug: ghostery-vs-stands-adblocker
-  ghostery-vs-stands-adblocker-the-ultimate-comparison-for-a-seamless-browsing-experience-mm3scpyhd8d
+slug: "ghostery-vs-stands-adblocker"
 excerpt: "When it comes to blocking ads and protecting your online privacy, two popular options come to mind: Ghostery and Stands Adblocker."
 featured_image: >-
   /content/images/ghostery-vs-stands-adblocker-the-ultimate-comparison-for-a-seamless-browsing-experience-mm3scpyhd8d/featured.webp

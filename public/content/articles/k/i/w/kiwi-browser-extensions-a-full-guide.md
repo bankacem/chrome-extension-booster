@@ -4,8 +4,7 @@ id: fe9b83cb-8659-4982-a9d6-28da51023978
 title: >-
   Kiwi Browser Extensions Guide: Unlocking the Full Potential of Your Mobile
   Browser
-slug: kiwi-browser-extensions-a-full-guide
-  kiwi-browser-extensions-guide-unlocking-the-full-potential-of-your-mobile-browser-mmthoutft7f
+slug: "kiwi-browser-extensions-a-full-guide"
 excerpt: "Welcome to the kiwi browser extensions guide, where we'll explore the world of browser extensions and how they can enhance your mobile browsing experience."
 featured_image: >-
   /content/images/kiwi-browser-extensions-guide-unlocking-the-full-potential-of-your-mobile-browser-mmthoutft7f/featured.webp

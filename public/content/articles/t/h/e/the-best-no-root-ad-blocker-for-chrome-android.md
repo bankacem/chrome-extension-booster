@@ -4,12 +4,11 @@ id: 4ca35451-ad30-42da-83c1-967b12877ab7
 title: >-
   Best Ad blocker for Chrome Android 2026 (No Root): Boost Your Mobile Browsing
   Experience
-slug: the-best-no-root-ad-blocker-for-chrome-android
-  best-ad-blocker-for-chrome-android-2026-no-root-boost-your-mobile-browsing-experience-mmb7ls8d81s
+slug: "the-best-no-root-ad-blocker-for-chrome-android"
 excerpt: "Are you tired of annoying ads disrupting your mobile browsing experience on Chrome Android? Look no further!"
 featured_image: >-
   /content/images/best-ad-blocker-for-chrome-android-2026-no-root-boost-your-mobile-browsing-experience-mmb7ls8d81s/featured.webp
-category: Chrome Extensions
+category: "Ad Blockers"
 tags: []
 keywords:
   - Best adblocker for Chrome Android 2026 (No Root)

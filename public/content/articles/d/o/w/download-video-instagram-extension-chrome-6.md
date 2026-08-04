@@ -10,7 +10,7 @@ excerpt: >-
   that the platform doesn't provide a straightforward way to do so? Look no
   further!
 featured_image: /content/images/download-video-instagram-extension-chrome-6/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - download video instagram extension chrome

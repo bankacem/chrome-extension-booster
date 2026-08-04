@@ -2,12 +2,11 @@
 seo_title: 'Social Media Analytics Extension for Chrome'
 id: c9745fd3-779f-4125-bc35-d0867bde2488
 title: 'A Chrome Extension for Social Media Analytics'
-slug: unlocking-the-power-of-social-media
-  unlocking-the-power-of-social-media-the-ultimate-guide-to-chrome-extension-for-social-analytics-mmdsutrnj8g
+slug: "unlocking-the-power-of-social-media"
 excerpt: "As a social media marketer or enthusiast, you're likely aware of the importance of tracking your online presence and engagement."
 featured_image: >-
   /content/images/unlocking-the-power-of-social-media-the-ultimate-guide-to-chrome-extension-for-social-analytics-mmdsutrnj8g/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - chrome extension for social analytics

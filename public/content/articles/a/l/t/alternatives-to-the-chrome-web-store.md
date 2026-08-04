@@ -2,12 +2,11 @@
 seo_title: "Alternatives to the Chrome Web Store"
 id: 07b6ce03-bf54-47a5-a0eb-ded8f4c06b05
 title: 'Alternatives to the Chrome Web Store'
-slug: alternatives-to-the-chrome-web-store
-  discover-the-best-chrome-extensions-marketplace-alternatives-for-a-seamless-browsing-experience-mmdrxzj1vwh
+slug: "alternatives-to-the-chrome-web-store"
 excerpt: "When it comes to enhancing your Google Chrome browser, the Chrome Web Store is the go-to destination for millions of users."
 featured_image: >-
   /content/images/discover-the-best-chrome-extensions-marketplace-alternatives-for-a-seamless-browsing-experience-mmdrxzj1vwh/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - chrome extensions marketplace alternatives

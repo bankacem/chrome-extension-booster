@@ -2,12 +2,11 @@
 seo_title: "Finding Extensions in the Chrome Web Store"
 id: ec27c6dc-6a42-4c12-b228-feea39747e95
 title: 'Finding Extensions in the Chrome Web Store'
-slug: unlocking-the-power-of-chrome-store-extension-chrome
-  unlocking-the-power-of-chrome-a-comprehensive-guide-to-store-extension-chrome-ml5gl859kqz
+slug: "unlocking-the-power-of-chrome-store-extension-chrome"
 excerpt: "When it comes to enhancing your browsing experience, few things are as effective as leveraging the right store extension chrome options."
 featured_image: >-
   /content/images/unlocking-the-power-of-chrome-a-comprehensive-guide-to-store-extension-chrome-ml5gl859kqz/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - store extension chrome

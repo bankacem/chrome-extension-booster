@@ -4,12 +4,11 @@ id: 342dea18-6fa3-4c9a-8a21-18d38cb00e17
 title: >-
   Top 5 Privacy and Security Extensions for Chrome Mobile: Protect Your Online
   Identity
-slug: 5-privacy-extensions-for-chrome-mobile
-  top-5-privacy-and-security-extensions-for-chrome-mobile-protect-your-online-identity-mmb7lsz3swu
+slug: "5-privacy-extensions-for-chrome-mobile"
 excerpt: "With the increasing number of online threats and data breaches, it's essential to prioritize your online privacy and security, especially when using Chrome…"
 featured_image: >-
   /content/images/top-5-privacy-and-security-extensions-for-chrome-mobile-protect-your-online-identity-mmb7lsz3swu/featured.webp
-category: Chrome Extensions
+category: "Security & Privacy"
 tags: []
 keywords:
   - Top 5 privacy and security extensions for Chrome Mobile

@@ -4,8 +4,7 @@ id: e1f14876-0450-450d-8289-9c3497a1d094
 title: >-
   Speed up Google Chrome on Old Laptop: A Comprehensive Guide to Boosting
   Performance
-slug: speed-up-google-chrome-on-old-laptop-boosting-performance
-  speed-up-google-chrome-on-old-laptop-a-comprehensive-guide-to-boosting-performance-mll9bsxxjsu
+slug: "speed-up-google-chrome-on-old-laptop-boosting-performance"
 excerpt: "Are you tired of using a slow Google Chrome browser on your old laptop?"
 featured_image: >-
   /content/images/speed-up-google-chrome-on-old-laptop-a-comprehensive-guide-to-boosting-performance-mll9bsxxjsu/featured.webp

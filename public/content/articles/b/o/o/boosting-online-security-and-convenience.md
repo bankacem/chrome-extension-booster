@@ -2,8 +2,7 @@
 seo_title: "Why a Password Manager Extension Helps"
 id: 373c45dd-7c18-4001-83a9-585664b07957
 title: 'Why a Password Manager Extension Helps'
-slug: boosting-online-security-and-convenience
-  unlocking-the-power-of-extension-password-manager-boosting-online-security-and-convenience-ml5gl8ntwos
+slug: "boosting-online-security-and-convenience"
 excerpt: "With the ever-increasing number of online accounts, managing passwords has become a daunting task for many of us."
 featured_image: >-
   /content/images/unlocking-the-power-of-extension-password-manager-boosting-online-security-and-convenience-ml5gl8ntwos/featured.webp

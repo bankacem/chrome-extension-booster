@@ -4,12 +4,11 @@ id: 3f8ffaf1-a835-4b13-beee-190febb430f8
 title: >-
   Streamlining Your LinkedIn Experience: The Best Chrome Extension for LinkedIn
   Automation
-slug: streamlining-your-linkedin-experience
-  streamlining-your-linkedin-experience-the-best-chrome-extension-for-linkedin-automation-mmdsje1cc47
+slug: "streamlining-your-linkedin-experience"
 excerpt: "Are you tired of manually managing your LinkedIn presence, sending connection requests, and posting updates?"
 featured_image: >-
   /content/images/streamlining-your-linkedin-experience-the-best-chrome-extension-for-linkedin-automation-mmdsje1cc47/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - chrome extension for linkedin automation

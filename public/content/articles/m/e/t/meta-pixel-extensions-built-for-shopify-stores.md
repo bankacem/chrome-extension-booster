@@ -2,12 +2,11 @@
 seo_title: "Meta Pixel Extensions Built for Shopify Stores"
 id: 198f2db0-39ac-40f3-a8f3-34fbb0ccfc33
 title: 'Meta Pixel Extensions Built for Shopify Stores'
-slug: meta-pixel-extensions-built-for-shopify-stores
-  unlock-the-power-of-meta-pixel-finding-the-best-meta-pixel-extensions-for-shopify-stores-mmb6y3rzty1
+slug: "meta-pixel-extensions-built-for-shopify-stores"
 excerpt: "As a Shopify store owner, you're likely no stranger to the importance of tracking and analyzing customer behavior on your website."
 featured_image: >-
   /content/images/unlock-the-power-of-meta-pixel-finding-the-best-meta-pixel-extensions-for-shopify-stores-mmb6y3rzty1/featured.webp
-category: Chrome Extensions
+category: "Social Media Tools"
 tags: []
 keywords:
   - Best Meta Pixel extensions for Shopify stores

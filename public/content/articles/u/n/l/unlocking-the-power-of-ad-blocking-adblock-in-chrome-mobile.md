@@ -2,8 +2,7 @@
 seo_title: "Adblock in Chrome Mobile"
 id: ec294f7d-2b2a-40bb-a09d-2d74f6fcb15f
 title: 'Adblock in Chrome Mobile'
-slug: unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile
-  unlocking-the-power-of-ad-blocking-a-comprehensive-guide-to-adblock-in-chrome-mobile-mm3umh71j4p
+slug: "unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile"
 excerpt: "Are you tired of annoying ads disrupting your browsing experience on Chrome Mobile?"
 featured_image: >-
   /content/images/unlocking-the-power-of-ad-blocking-a-comprehensive-guide-to-adblock-in-chrome-mobile-mm3umh71j4p/featured.webp

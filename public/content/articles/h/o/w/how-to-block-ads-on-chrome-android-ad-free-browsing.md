@@ -2,15 +2,14 @@
 seo_title: "How to Block Ads on Chrome Android"
 id: 69be5f9a-1b46-4920-ac22-6991728922a0
 title: 'How to Block Ads on Chrome Android: A Step-by-Step Guide to Ad-Free Browsing'
-slug: how-to-block-ads-on-chrome-android-ad-free-browsing
-  how-to-block-ads-on-chrome-android-a-step-by-step-guide-to-ad-free-browsing-mmtld1z2kti
+slug: "how-to-block-ads-on-chrome-android-ad-free-browsing"
 excerpt: >-
   Are you tired of annoying ads disrupting your browsing experience on Chrome
   Android? Do you want to learn how to block ads on Chrome Android and enjoy a
   faster,
 featured_image: >-
   /content/images/how-to-block-ads-on-chrome-android-a-step-by-step-guide-to-ad-free-browsing-mmtld1z2kti/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - how to block ads on chrome android

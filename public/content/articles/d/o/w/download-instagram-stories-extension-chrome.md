@@ -5,7 +5,7 @@ title: 'Download Instagram Stories Extension Chrome'
 slug: download-instagram-stories-extension-chrome
 excerpt: "Are you looking for a way to download Instagram stories extension Chrome and save your favorite moments from the popular social media platform?"
 featured_image: /content/images/download-instagram-stories-extension-chrome/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - download instagram stories extension chrome

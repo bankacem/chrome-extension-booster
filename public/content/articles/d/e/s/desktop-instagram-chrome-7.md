@@ -5,7 +5,7 @@ title: 'Desktop Instagram for Chrome: Full Guide'
 slug: desktop-instagram-chrome-7
 excerpt: "Are you tired of accessing Instagram through your mobile device? Do you want to experience the full features of Instagram on your desktop?"
 featured_image: /content/images/desktop-instagram-chrome-7/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - desktop instagram chrome

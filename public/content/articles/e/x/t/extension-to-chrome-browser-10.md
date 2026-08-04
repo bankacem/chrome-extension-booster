@@ -5,7 +5,7 @@ title: 'How to Install an Extension to Chrome Browser'
 slug: extension-to-chrome-browser-10
 excerpt: "Are you looking to take your browsing experience to the next level? Installing an extension to Chrome browser can be a game-changer."
 featured_image: /content/images/extension-to-chrome-browser-10/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension to chrome browser

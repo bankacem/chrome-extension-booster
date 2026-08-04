@@ -2,8 +2,7 @@
 seo_title: "Breaking Free from Annoying Ads"
 id: 15eb668c-bc83-45fd-b2b6-7fc499df57e5
 title: 'Breaking Free from Annoying Ads: The Power of Anti Popup Free Solutions'
-slug: breaking-free-from-annoying-ads-the-power-of-anti-popup-free-solutions
-  breaking-free-from-annoying-ads-the-power-of-anti-popup-free-solutions-mm3scpnc2b6
+slug: "breaking-free-from-annoying-ads-the-power-of-anti-popup-free-solutions"
 excerpt: "Are you tired of being bombarded with intrusive popups and ads while browsing the internet?"
 featured_image: >-
   /content/images/breaking-free-from-annoying-ads-the-power-of-anti-popup-free-solutions-mm3scpnc2b6/featured.webp

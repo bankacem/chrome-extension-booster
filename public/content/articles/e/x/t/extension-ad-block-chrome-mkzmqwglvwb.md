@@ -5,7 +5,7 @@ title: 'Unlock a Faster Browsing Experience: The Power of Extension Ad Block Chr
 slug: extension-ad-block-chrome-mkzmqwglvwb
 excerpt: "Are you tired of annoying ads slowing down your browsing experience? Look no further than an extension ad block Chrome tool."
 featured_image: /content/images/extension-ad-block-chrome-mkzmqwglvwb/featured.webp
-category: Screenshots & Screen Capture
+category: "Ad Blockers"
 tags: []
 keywords:
   - extension ad block chrome

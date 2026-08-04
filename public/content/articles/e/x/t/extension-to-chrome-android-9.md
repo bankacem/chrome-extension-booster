@@ -5,7 +5,7 @@ title: 'How to Install an Extension to Chrome Android: A Step-by-Step Guide'
 slug: extension-to-chrome-android-9
 excerpt: "Are you looking to enhance your browsing experience on your Android device with the help of a Chrome extension to Chrome Android?"
 featured_image: /content/images/extension-to-chrome-android-9/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension to chrome android

@@ -5,7 +5,7 @@ title: 'AliDropship Extension: Full Guide'
 slug: extension-alidropship-mkzmtdamdgx
 excerpt: "Are you tired of navigating the complexities of dropshipping and seeking a streamlined solution to boost your online business?"
 featured_image: /content/images/extension-alidropship-mkzmtdamdgx/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension alidropship

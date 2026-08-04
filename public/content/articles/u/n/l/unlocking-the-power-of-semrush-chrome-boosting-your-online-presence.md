@@ -2,12 +2,11 @@
 seo_title: 'SEMrush Chrome Extension'
 id: 557267df-15d9-4d96-b98a-55859497ff88
 title: 'SEMrush for Chrome: What the Extension Shows You'
-slug: unlocking-the-power-of-semrush-chrome-boosting-your-online-presence
-  unlocking-the-power-of-semrush-chrome-a-comprehensive-guide-to-boosting-your-online-presence-ml5gl6jwzlb
+slug: "unlocking-the-power-of-semrush-chrome-boosting-your-online-presence"
 excerpt: "As a digital marketer or SEO specialist, you're likely no stranger to the importance of staying on top of your online game."
 featured_image: >-
   /content/images/unlocking-the-power-of-semrush-chrome-a-comprehensive-guide-to-boosting-your-online-presence-ml5gl6jwzlb/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - semrush chrome

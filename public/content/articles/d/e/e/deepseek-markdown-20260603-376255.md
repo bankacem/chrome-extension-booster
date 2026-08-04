@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   🔍 ChatGPT Search History Chrome Extensions 2026 — Find That Lost Conversation
   in Seconds
+category: "AI Tools"
 ---
-# 🔍 ChatGPT Search History Chrome Extensions (2026) — Find That Lost Conversation in Seconds
 
 > **You know you had that perfect conversation. The one where ChatGPT gave you the exact code snippet / marketing hook / business insight you need right now.**
 >

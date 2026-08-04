@@ -7,7 +7,7 @@ title: >-
 slug: how-to-save-instagram-photos-and-videos
 excerpt: "Are you tired of not being able to save your favorite Instagram photos and videos? Do you wish there was a way to download them easily and quickly?"
 featured_image: /content/images/extension-chrome-instagram-download-mkzp4hq1js6/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - extension chrome instagram download

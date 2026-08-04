@@ -4,8 +4,7 @@ id: d03f7375-dc13-4a01-9e06-debd984e6a65
 title: >-
   10 Essential Utility Chrome Extensions to Supercharge Your Professional
   Workflow
-slug: >-
-  10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow
+slug: "10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow"
 excerpt: >-
   I tested 40+ productivity Chrome extensions against actual work scenarios.
   These 10 earned a permanent spot in my toolbar — and they'll save you hours

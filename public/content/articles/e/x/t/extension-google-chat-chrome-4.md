@@ -5,7 +5,7 @@ title: 'Getting Google Chat Notifications in Chrome'
 slug: extension-google-chat-chrome-4
 excerpt: "Google Chat has revolutionized the way we communicate with colleagues, friends, and family."
 featured_image: /content/images/extension-google-chat-chrome-4/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension google chat chrome

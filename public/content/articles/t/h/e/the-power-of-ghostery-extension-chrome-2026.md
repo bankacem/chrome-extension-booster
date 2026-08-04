@@ -2,8 +2,7 @@
 seo_title: "The Power of Ghostery Extension Chrome 2026"
 id: 4db48368-d9a4-4551-b2a3-3ec49b4921c9
 title: 'Unlocking Online Transparency: The Power of Ghostery Extension Chrome 2026'
-slug: the-power-of-ghostery-extension-chrome-2026
-  unlocking-online-transparency-the-power-of-ghostery-extension-chrome-2026-mlydczzq6hd
+slug: "the-power-of-ghostery-extension-chrome-2026"
 excerpt: "As we navigate the vast expanse of the internet, it's becoming increasingly important to understand who's tracking our online activities and why."
 featured_image: >-
   /content/images/unlocking-online-transparency-the-power-of-ghostery-extension-chrome-2026-mlydczzq6hd/featured.webp

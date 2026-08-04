@@ -2,12 +2,11 @@
 seo_title: 'ExtensionHub for Chrome'
 id: ec16c38e-c1cd-4c9f-8af2-adf2013bbddf
 title: 'ExtensionHub: A Directory for Chrome Add-ons'
-slug: unlocking-the-power-of-extensionhub-enhancing-your-browser-experience
-  unlocking-the-power-of-extensionhub-a-comprehensive-guide-to-enhancing-your-browser-experience-mm3umjoz9kn
+slug: "unlocking-the-power-of-extensionhub-enhancing-your-browser-experience"
 excerpt: "Are you tired of sifting through countless extensions to find the perfect ones for your browser?"
 featured_image: >-
   /content/images/unlocking-the-power-of-extensionhub-a-comprehensive-guide-to-enhancing-your-browser-experience-mm3umjoz9kn/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extensionhub ،

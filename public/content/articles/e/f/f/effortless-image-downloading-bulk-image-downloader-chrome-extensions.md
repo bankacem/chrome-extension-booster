@@ -4,15 +4,14 @@ id: ecf46a88-ccbc-4433-a6bc-bcd3af053dd4
 title: >-
   Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader
   Chrome Extensions
-slug: effortless-image-downloading-bulk-image-downloader-chrome-extensions
-  effortless-image-downloading-a-comprehensive-guide-to-bulk-image-downloader-chrome-extensions-mmtvrglq5x1
+slug: "effortless-image-downloading-bulk-image-downloader-chrome-extensions"
 excerpt: >-
   Are you tired of manually downloading images one by one from your favorite
   websites? Look no further! With the help of bulk image downloader Chrome
   extensions,
 featured_image: >-
   /content/images/effortless-image-downloading-a-comprehensive-guide-to-bulk-image-downloader-chrome-extensions-mmtvrglq5x1/featured.webp
-category: Chrome Extensions
+category: "Media & Downloads"
 tags: []
 keywords:
   - bulk image downloader chrome

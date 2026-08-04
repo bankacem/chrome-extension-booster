@@ -7,7 +7,7 @@ title: >-
 slug: extension-chrome-colorzilla-3
 excerpt: "When it comes to web design and development, color plays a crucial role in creating an aesthetically pleasing and user-friendly interface."
 featured_image: /content/images/extension-chrome-colorzilla-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome colorzilla

@@ -6,7 +6,7 @@ slug: unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools
 excerpt: "As a professional, having a strong online presence is crucial, and LinkedIn is the perfect platform to showcase your skills, connect with colleagues, and…"
 featured_image: >-
   /content/images/unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension linkedin chrome

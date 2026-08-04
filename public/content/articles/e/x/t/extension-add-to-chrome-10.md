@@ -10,7 +10,7 @@ excerpt: >-
   to the next level? With thousands of extensions available in the Chrome Web
   Store,
 featured_image: /content/images/extension-add-to-chrome-10/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension add to chrome

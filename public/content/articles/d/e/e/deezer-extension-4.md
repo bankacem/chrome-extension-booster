@@ -5,7 +5,7 @@ title: Unlock the Full Potential of Deezer with the Ultimate Deezer Extension
 slug: deezer-extension-4
 excerpt: "Are you a music lover who spends hours streaming your favorite tunes on Deezer?"
 featured_image: /content/images/deezer-extension-4/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - deezer extension

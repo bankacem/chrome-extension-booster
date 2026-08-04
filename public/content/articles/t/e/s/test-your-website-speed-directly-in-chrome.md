@@ -4,12 +4,11 @@ id: d74bae62-de17-4a59-85fb-952a224f94a2
 title: >-
   Boost Your Online Presence with the Best Chrome Extension for Website Speed
   Test
-slug: test-your-website-speed-directly-in-chrome
-  boost-your-online-presence-with-the-best-chrome-extension-for-website-speed-test-mmdt1198vtn
+slug: "test-your-website-speed-directly-in-chrome"
 excerpt: "Are you tired of slow-loading websites driving away your potential customers?"
 featured_image: >-
   /content/images/boost-your-online-presence-with-the-best-chrome-extension-for-website-speed-test-mmdt1198vtn/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - chrome extension for website speed test

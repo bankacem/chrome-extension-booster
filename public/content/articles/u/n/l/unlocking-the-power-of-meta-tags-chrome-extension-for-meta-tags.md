@@ -2,8 +2,7 @@
 seo_title: 'A Meta Tags Extension for Chrome'
 id: 35fac9ce-94e9-4999-aeb7-ac27b8e471cc
 title: 'Checking a Page''s Meta Tags Right in Chrome'
-slug: unlocking-the-power-of-meta-tags-chrome-extension-for-meta-tags
-  unlocking-the-power-of-meta-tags-the-ultimate-guide-to-chrome-extension-for-meta-tags-mmdt10189pc
+slug: "unlocking-the-power-of-meta-tags-chrome-extension-for-meta-tags"
 excerpt: "As the digital landscape continues to evolve, the importance of meta tags in search engine optimization (SEO) cannot be overstated."
 featured_image: >-
   /content/images/unlocking-the-power-of-meta-tags-the-ultimate-guide-to-chrome-extension-for-meta-tags-mmdt10189pc/featured.webp

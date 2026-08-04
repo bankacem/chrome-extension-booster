@@ -7,7 +7,7 @@ title: >-
 slug: extension-adblock-google-chrome-3
 excerpt: "Are you tired of annoying ads disrupting your online experience? Look no further than the extension adblock Google Chrome solutions."
 featured_image: /content/images/extension-adblock-google-chrome-3/featured.webp
-category: Screenshots & Screen Capture
+category: "Ad Blockers"
 tags: []
 keywords:
   - extension adblock google chrome

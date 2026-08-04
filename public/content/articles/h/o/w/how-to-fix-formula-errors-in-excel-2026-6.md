@@ -5,7 +5,7 @@ title: 'How to Fix Formula Errors in Excel 2026: A Comprehensive Troubleshooting
 slug: how-to-fix-formula-errors-in-excel-2026-6
 excerpt: "Microsoft Excel remains the gold standard for data analysis, and the release of Excel 2026 has introduced even more sophisticated calculation engines and…"
 featured_image: /content/images/how-to-fix-formula-errors-in-excel-2026-6/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags:
   - >-
     How to Fix Formula Errors in Excel 2026: A Comprehensive Troubleshooting

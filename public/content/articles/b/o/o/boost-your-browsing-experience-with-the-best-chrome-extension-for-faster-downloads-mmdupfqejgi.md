@@ -4,12 +4,11 @@ id: 16cd7a1d-159b-4067-a77c-152d845657cf
 title: >-
   Boost Your Browsing Experience with the Best Chrome Extension for Faster
   Downloads
-slug: >-
-  boost-your-browsing-experience-with-the-best-chrome-extension-for-faster-downloads-mmdupfqejgi
+slug: "boost-your-browsing-experience-with-the-best-chrome-extension-for-faster-downloads-mmdupfqejgi"
 excerpt: "Are you tired of waiting for what feels like an eternity for your files to download?"
 featured_image: >-
   /content/images/boost-your-browsing-experience-with-the-best-chrome-extension-for-faster-downloads-mmdupfqejgi/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - chrome extension for faster downloads

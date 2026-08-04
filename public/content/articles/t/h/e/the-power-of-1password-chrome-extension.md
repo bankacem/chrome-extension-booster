@@ -7,7 +7,7 @@ title: >-
 slug: the-power-of-1password-chrome-extension
 excerpt: "As we navigate the vast expanse of the internet, managing passwords has become an indispensable aspect of our online lives."
 featured_image: /content/images/extension-1password-chrome-mkzmkt5eiiq/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - extension 1password chrome

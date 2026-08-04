@@ -2,12 +2,11 @@
 seo_title: "The Best Productivity Tools for Chrome Browser"
 id: 95cd4e3a-d34c-470d-a145-944d564a94ac
 title: 'Unlocking Efficiency: The Best Productivity Tools for Chrome Browser'
-slug: unlocking-efficiency-the-best-productivity-tools-for-chrome-browser
-  unlocking-efficiency-the-best-productivity-tools-for-chrome-browser-mll9bto578a
+slug: "unlocking-efficiency-the-best-productivity-tools-for-chrome-browser"
 excerpt: "In today's fast-paced digital landscape, maximizing productivity is crucial for achieving success."
 featured_image: >-
   /content/images/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser-mll9bto578a/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - Best productivity tools for Chrome browser

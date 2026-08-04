@@ -4,12 +4,11 @@ id: 823b7023-2565-4a02-93b5-6acd1baf215e
 title: >-
   Mastering the Art of Browser Productivity: A Comprehensive Guide on How to
   Manage Chrome Extensions
-slug: mastering-the-art-of-browser-productivity
-  mastering-the-art-of-browser-productivity-a-comprehensive-guide-on-how-to-manage-chrome-extensions-mmdrxy6vrty
+slug: "mastering-the-art-of-browser-productivity"
 excerpt: "Are you tired of feeling overwhelmed by the numerous Chrome extensions installed on your browser?"
 featured_image: >-
   /content/images/mastering-the-art-of-browser-productivity-a-comprehensive-guide-on-how-to-manage-chrome-extensions-mmdrxy6vrty/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - how to manage chrome extensions

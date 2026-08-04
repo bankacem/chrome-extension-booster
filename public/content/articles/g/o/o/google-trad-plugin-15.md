@@ -5,7 +5,7 @@ title: 'Unlocking Global Communication: The Power of Google Trad Plugin'
 slug: google-trad-plugin-15
 excerpt: "The internet has bridged geographical gaps, connecting people from diverse linguistic backgrounds."
 featured_image: /content/images/google-trad-plugin-15/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - google trad plugin

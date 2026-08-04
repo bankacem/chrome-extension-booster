@@ -5,7 +5,7 @@ title: 'Best ChatGPT Extension for Chrome Browsing'
 slug: extension-chrome-chat-gpt-2
 excerpt: "In recent years, the rise of artificial intelligence (AI) has revolutionized the way we interact with the internet."
 featured_image: /content/images/extension-chrome-chat-gpt-2/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome chat gpt

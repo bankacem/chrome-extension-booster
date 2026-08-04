@@ -5,7 +5,7 @@ title: 'Extension Chrome Cookie Editor'
 slug: extension-chrome-cookie-editor-4
 excerpt: "As we navigate the vast expanse of the internet, our online activities are constantly being tracked by websites, advertisers, and other third-party entities."
 featured_image: /content/images/extension-chrome-cookie-editor-4/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - extension chrome cookie editor

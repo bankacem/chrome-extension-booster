@@ -2,8 +2,7 @@
 seo_title: "The Power of Avast Extension Google Chrome"
 id: dc8dba5c-6f99-46a8-b92d-5ad5307c53e4
 title: 'Unlocking Online Security: The Power of Avast Extension Google Chrome'
-slug: unlocking-online-security-the-power-of-avast-extension-google-chrome
-  unlocking-online-security-the-power-of-avast-extension-google-chrome-ml5gzc17bcg
+slug: "unlocking-online-security-the-power-of-avast-extension-google-chrome"
 excerpt: "As the world becomes increasingly digital, online security has become a top priority for internet users."
 featured_image: >-
   /content/images/unlocking-online-security-the-power-of-avast-extension-google-chrome-ml5gzc17bcg/featured.webp

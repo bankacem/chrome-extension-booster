@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   Betternet Chrome Extension Review 2026: The "Free" VPN That Costs More Than
   You Think
+category: "Security & Privacy"
 ---
-# Betternet Chrome Extension Review 2026: The "Free" VPN That Costs More Than You Think
 
 **Last Updated:** June 3, 2026 | **Reading Time:** 8 minutes | **Tested:** 3 weeks daily use
 

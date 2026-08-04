@@ -5,7 +5,7 @@ title: 'Using Extensions on Brave Mobile'
 slug: unlocking-the-power-of-extension-brave-mobile
 excerpt: "Are you tired of feeling limited by your mobile browser's capabilities?"
 featured_image: /content/images/extension-brave-mobile-mkzn8h8quz9/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension brave mobile

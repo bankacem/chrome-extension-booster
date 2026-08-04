@@ -5,7 +5,7 @@ title: 'Unlocking Productivity with Toggl Chrome: A Comprehensive Guide'
 slug: unlocking-productivity-with-toggl-chrome
 excerpt: "As a professional looking to streamline your workflow and boost productivity, you're likely no stranger to the concept of time tracking."
 featured_image: /content/images/toggl-chrome-ml5ee8peoco/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - toggl chrome

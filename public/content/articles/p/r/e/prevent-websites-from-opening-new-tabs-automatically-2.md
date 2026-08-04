@@ -6,7 +6,7 @@ slug: prevent-websites-from-opening-new-tabs-automatically-2
 excerpt: "Are you tired of websites opening new tabs automatically, cluttering your browser and disrupting your workflow? You're not alone."
 featured_image: >-
   /content/images/prevent-websites-from-opening-new-tabs-automatically-2/featured.webp
-category: Screenshots & Screen Capture
+category: "Redirect & Navigation"
 tags:
   - 'Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide'
 keywords:

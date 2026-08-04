@@ -4,8 +4,7 @@ id: 27be7b16-072f-4dba-a658-f4dfc65ecb18
 title: >-
   The Only Free Essential Chrome Extensions You Need to Survive the Tab
   Apocalypse
-slug: >-
-  the-only-free-essential-chrome-extensions-you-need-to-survive-the-tab-apocalypse
+slug: "the-only-free-essential-chrome-extensions-you-need-to-survive-the-tab-apocalypse"
 excerpt: >-
   Discover the future of browser extensions with our curated, high-performance
   directory.

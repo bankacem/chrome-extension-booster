@@ -8,8 +8,8 @@ image_url: /content/images/deepseek-markdown-20260603-e7d32b.jpg
 title: 'ChatGPT Voice Input Chrome Extension: The Complete 2026 Guide to Talking to AI'
 meta_description: 'ChatGPT Voice Input Chrome Extension: The Complete 2026 Guide to Talking to AI'
 description: 'ChatGPT Voice Input Chrome Extension: The Complete 2026 Guide to Talking to AI'
+category: "AI Tools"
 ---
-# ChatGPT Voice Input Chrome Extension: The Complete 2026 Guide to Talking to AI
 
 ## 📚 Table of Contents
 - [Why You Need Voice Input for ChatGPT in 2026](#why-you-need-voice-input-for-chatgpt-in-2026)

@@ -5,7 +5,7 @@ title: 'Writing VLOOKUP Formulas for Beginners: A Comprehensive Guide to Data Ma
 slug: writing-vlookup-formulas-for-beginners-2
 excerpt: "In the modern digital workspace, data literacy is no longer a luxury—it is a fundamental requirement."
 featured_image: /content/images/writing-vlookup-formulas-for-beginners-2/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags:
   - >-
     Writing VLOOKUP Formulas for Beginners: A Comprehensive Guide to Data

@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   ChatGPT Tone Changer Chrome Extension: The Complete 2026 Guide to Perfecting
   Your AI Voice
+category: "AI Tools"
 ---
-# ChatGPT Tone Changer Chrome Extension: The Complete 2026 Guide to Perfecting Your AI Voice
 
 ## 📚 Table of Contents
 - [Why You Need a Tone Changer for ChatGPT in 2026](#why-you-need-a-tone-changer-for-chatgpt-in-2026)

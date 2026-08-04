@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   ⚙️ ChatGPT Custom Instructions Chrome Extensions 2026 — Make ChatGPT Sound
   Exactly Like You
+category: "AI Tools"
 ---
-# ⚙️ ChatGPT Custom Instructions Chrome Extensions (2026) — Make ChatGPT Sound Exactly Like You
 
 > **ChatGPT has a "Custom Instructions" feature. You've probably seen it. Two fields. That's it.**
 >

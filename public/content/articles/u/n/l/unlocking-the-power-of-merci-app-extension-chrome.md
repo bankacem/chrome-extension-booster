@@ -5,7 +5,7 @@ title: 'Merci App Extension for Chrome: Full Guide'
 slug: unlocking-the-power-of-merci-app-extension-chrome
 excerpt: "Are you looking for a way to enhance your browsing experience with the merci app extension chrome? Look no further!"
 featured_image: /content/images/merci-app-extension-chrome-mkzmcspy6bs/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - merci app extension chrome

@@ -4,12 +4,11 @@ id: a60af5fb-52da-47f6-bf28-a9042c3d52f6
 title: >-
   Stop Chrome from Freezing with Many Tabs: Expert Solutions to Boost Browser
   Performance
-slug: stop-chrome-from-freezing-with-many-tabs
-  stop-chrome-from-freezing-with-many-tabs-expert-solutions-to-boost-browser-performance-mll9bsggevr
+slug: "stop-chrome-from-freezing-with-many-tabs"
 excerpt: "Are you tired of Chrome freezing with many tabs open, causing frustration and hindering your productivity? You're not alone."
 featured_image: >-
   /content/images/stop-chrome-from-freezing-with-many-tabs-expert-solutions-to-boost-browser-performance-mll9bsggevr/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - Stop Chrome from freezing with many tabs

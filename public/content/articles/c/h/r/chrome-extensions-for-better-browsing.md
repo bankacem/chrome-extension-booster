@@ -4,12 +4,11 @@ id: 2951b22e-541a-473a-be1b-f0008266451b
 title: >-
   Unlock the Full Potential of Your Browser: Chrome Extensions for Better
   Browsing
-slug: chrome-extensions-for-better-browsing
-  unlock-the-full-potential-of-your-browser-chrome-extensions-for-better-browsing-mmdrxzo9gfg
+slug: "chrome-extensions-for-better-browsing"
 excerpt: "Are you tired of a cluttered and inefficient browsing experience? Do you wish you could customize your browser to fit your needs and boost your productivity?"
 featured_image: >-
   /content/images/unlock-the-full-potential-of-your-browser-chrome-extensions-for-better-browsing-mmdrxzo9gfg/featured.webp
-category: Screenshots & Screen Capture
+category: "Appearance & Themes"
 tags: []
 keywords:
   - chrome extensions for better browsing

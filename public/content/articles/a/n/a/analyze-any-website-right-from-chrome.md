@@ -2,12 +2,11 @@
 seo_title: "Analyze Any Website Right from Chrome"
 id: 5daa6afc-23c4-46c9-a182-c1bc8f30d1b0
 title: 'Analyze Any Website Right from Chrome'
-slug: analyze-any-website-right-from-chrome
-  unlock-the-power-of-website-analysis-with-the-best-chrome-extension-for-website-analysis-mmdt10qgwzb
+slug: "analyze-any-website-right-from-chrome"
 excerpt: "As a website owner, marketer, or developer, understanding your website's performance, user behavior, and technical aspects is crucial for success."
 featured_image: >-
   /content/images/unlock-the-power-of-website-analysis-with-the-best-chrome-extension-for-website-analysis-mmdt10qgwzb/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - chrome extension for website analysis

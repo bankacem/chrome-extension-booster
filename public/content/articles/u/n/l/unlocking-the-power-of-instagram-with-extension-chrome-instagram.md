@@ -5,7 +5,7 @@ title: 'Browsing Instagram Smarter with Chrome'
 slug: unlocking-the-power-of-instagram-with-extension-chrome-instagram
 excerpt: "Are you an avid Instagram user looking to enhance your browsing experience on Chrome? Look no further than Extension Chrome Instagram."
 featured_image: /content/images/extension-chrome-instagram-mkzp2hwpg6q/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - extension chrome instagram

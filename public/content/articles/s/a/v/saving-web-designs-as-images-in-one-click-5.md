@@ -7,7 +7,7 @@ title: >-
 slug: saving-web-designs-as-images-in-one-click-5
 excerpt: "Saving web designs as images in one click has become an essential task for designers, developers, and marketers alike."
 featured_image: /content/images/saving-web-designs-as-images-in-one-click-5/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags:
   - >-
     Saving Web Designs as Images in One Click: A Game-Changer for Designers and

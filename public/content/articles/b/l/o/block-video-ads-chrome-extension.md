@@ -8,7 +8,7 @@ excerpt: >-
   want to enhance your productivity and focus on the content that matters? Look
   no f
 featured_image: /content/images/block-video-ads-chrome-extension/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags:
   - block video ads
   - chrome extension

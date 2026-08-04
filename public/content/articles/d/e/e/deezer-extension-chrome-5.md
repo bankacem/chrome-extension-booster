@@ -7,7 +7,7 @@ title: >-
 slug: deezer-extension-chrome-5
 excerpt: "Are you a music lover who spends most of their time streaming your favorite tunes on Deezer? Look no further!"
 featured_image: /content/images/deezer-extension-chrome-5/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - deezer extension chrome

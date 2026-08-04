@@ -4,12 +4,11 @@ id: fd08de1f-a0ff-41f6-9613-3914353059a2
 title: >-
   Discover the Power of Minimalism: The Ultimate Lightweight Chrome Extensions
   List for a Faster Browser
-slug: discover-the-power-of-minimalism
-  discover-the-power-of-minimalism-the-ultimate-lightweight-chrome-extensions-list-for-a-faster-browse-mmdrqoou66e
+slug: "discover-the-power-of-minimalism"
 excerpt: "Are you tired of a slow and cluttered browser? Look no further! In this article, we'll explore the best lightweight Chrome extensions list to help you…"
 featured_image: >-
   /content/images/discover-the-power-of-minimalism-the-ultimate-lightweight-chrome-extensions-list-for-a-faster-browse-mmdrqoou66e/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - lightweight chrome extensions list

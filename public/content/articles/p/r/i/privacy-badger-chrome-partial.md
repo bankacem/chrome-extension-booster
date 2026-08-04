@@ -7,7 +7,7 @@ title: >-
 slug: privacy-badger-chrome-partial
 excerpt: "When it comes to protecting your online privacy, choosing the right tool can be a daunting task."
 featured_image: /content/images/privacy-badger-chrome-partial/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - privacy badger vs ghostery

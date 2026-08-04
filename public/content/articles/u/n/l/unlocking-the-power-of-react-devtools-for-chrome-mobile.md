@@ -2,8 +2,7 @@
 seo_title: "React DevTools on Chrome Mobile: Does It Work?"
 id: 00ed8c79-4450-483c-97e6-1c8551534fe9
 title: 'React DevTools on Chrome Mobile: Does It Work?'
-slug: unlocking-the-power-of-react-devtools-for-chrome-mobile
-  unlocking-the-power-of-react-devtools-for-chrome-mobile-a-comprehensive-guide-mmtm0fhykxq
+slug: "unlocking-the-power-of-react-devtools-for-chrome-mobile"
 excerpt: "As a web developer, you're likely familiar with the importance of debugging and testing your React applications."
 featured_image: >-
   /content/images/unlocking-the-power-of-react-devtools-for-chrome-mobile-a-comprehensive-guide-mmtm0fhykxq/featured.webp

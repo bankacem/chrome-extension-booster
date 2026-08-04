@@ -6,7 +6,7 @@ slug: ghostery-vs-privacy-badger-full-2026-comparison
 excerpt: "As online users, we're constantly concerned about our digital privacy and security."
 featured_image: >-
   /content/images/ghostery-vs-privacy-badger-full-2026-comparison-mmb7lt3s5za/featured.webp
-category: Chrome Extensions
+category: "Security & Privacy"
 tags: []
 keywords:
   - 'Ghostery vs Privacy Badger: Full 2026 Comparison'

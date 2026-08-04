@@ -2,12 +2,11 @@
 seo_title: "Hidden Chrome Extensions You Should Try"
 id: 42c180df-f04a-401b-82e6-8b92325d54da
 title: 'Hidden Chrome Extensions You Should Try'
-slug: >-
-  unlock-the-power-of-your-browser-hidden-chrome-extensions-you-should-try-mmdrxztjzma
+slug: "unlock-the-power-of-your-browser-hidden-chrome-extensions-you-should-try-mmdrxztjzma"
 excerpt: "Are you looking to take your browsing experience to the next level? Look no further than the world of hidden Chrome extensions you should try."
 featured_image: >-
   /content/images/unlock-the-power-of-your-browser-hidden-chrome-extensions-you-should-try-mmdrxztjzma/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - hidden chrome extensions you should try

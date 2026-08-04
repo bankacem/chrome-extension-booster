@@ -4,7 +4,7 @@ title: 'Encrypting your login data: A simple guide'
 slug: encrypting-your-login-data-a-simple-guide-6
 excerpt: "In today's digital age, online security is more important than ever. With the rise of cyberattacks and data breaches, it's crucial to take steps to protect…"
 featured_image: /content/images/encrypting-your-login-data-a-simple-guide-6/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - 'Encrypting your login data: A simple guide'

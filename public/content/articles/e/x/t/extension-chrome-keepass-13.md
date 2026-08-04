@@ -5,7 +5,7 @@ title: 'Unlocking Secure Browsing: The Power of Extension Chrome KeePass'
 slug: extension-chrome-keepass-13
 excerpt: "Are you tired of using weak passwords or struggling to remember complex ones?"
 featured_image: /content/images/extension-chrome-keepass-13/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - extension chrome keepass

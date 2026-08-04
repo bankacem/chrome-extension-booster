@@ -7,7 +7,7 @@ title: >-
 slug: top-10-google-sheets-extensions-for-accounting-8
 excerpt: "In the modern financial landscape, the ability to manage data with precision and speed is the hallmark of a successful professional."
 featured_image: /content/images/top-10-google-sheets-extensions-for-accounting-8/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags:
   - >-
     Top 10 Google Sheets Extensions for Accounting: Streamlining Financial

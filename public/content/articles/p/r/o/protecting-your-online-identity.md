@@ -4,8 +4,7 @@ id: e77ec0e6-3b9a-4837-8ba0-fe443b817662
 title: >-
   Protecting Your Online Identity: The Best Chrome Extension for Blocking
   Trackers
-slug: protecting-your-online-identity
-  protecting-your-online-identity-the-best-chrome-extension-for-blocking-trackers-mme0iyo5n01
+slug: "protecting-your-online-identity"
 excerpt: "As we navigate the vast expanse of the internet, it's becoming increasingly important to protect our online identities from prying eyes."
 featured_image: >-
   /content/images/protecting-your-online-identity-the-best-chrome-extension-for-blocking-trackers-mme0iyo5n01/featured.webp

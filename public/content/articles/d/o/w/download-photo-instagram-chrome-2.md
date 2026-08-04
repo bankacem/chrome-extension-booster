@@ -5,7 +5,7 @@ title: 'How to Download Photo Instagram Chrome: A Step-by-Step Guide'
 slug: download-photo-instagram-chrome-2
 excerpt: "Are you looking for a way to download photo Instagram Chrome and save your favorite memories?"
 featured_image: /content/images/download-photo-instagram-chrome-2/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - download photo instagram chrome

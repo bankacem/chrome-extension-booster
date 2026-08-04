@@ -2,12 +2,11 @@
 seo_title: "The Best Ghostery Settings for Real Privacy"
 id: 609a470e-cae3-450c-8c5d-3a00948343bf
 title: 'Best Ghostery settings for maximum online privacy: A Comprehensive Guide'
-slug: best-ghostery-settings-for-maximum-online-privacy
-  best-ghostery-settings-for-maximum-online-privacy-a-comprehensive-guide-mmb7ltcfx00
+slug: "best-ghostery-settings-for-maximum-online-privacy"
 excerpt: "In today's digital age, online privacy has become a major concern for internet users."
 featured_image: >-
   /content/images/best-ghostery-settings-for-maximum-online-privacy-a-comprehensive-guide-mmb7ltcfx00/featured.webp
-category: Chrome Extensions
+category: "Security & Privacy"
 tags: []
 keywords:
   - Best Ghostery settings for maximum online privacy

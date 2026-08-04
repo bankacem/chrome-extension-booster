@@ -4,12 +4,11 @@ id: e6026898-3219-4f42-9e2f-3d3c79c401c9
 title: >-
   Why your browser keeps redirecting and how to fix it: Cybersecurity, Safe
   Browsing, Privacy, Anti-Adware
-slug: >-
-  why-your-browser-keeps-redirecting-and-how-to-fix-it-cybersecurity-safe-browsing-privacy-anti-adware-9
+slug: "why-your-browser-keeps-redirecting-and-how-to-fix-it-cybersecurity-safe-browsing-privacy-anti-adware-9"
 excerpt: "Have you ever experienced the frustration of having your browser redirect you to unwanted websites or pages?"
 featured_image: >-
   /content/images/why-your-browser-keeps-redirecting-and-how-to-fix-it-cybersecurity-safe-browsing-privacy-anti-adware-9/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags:
   - 'Why your browser keeps redirecting and how to fix it: Cybersecurity'
   - Safe Browsing

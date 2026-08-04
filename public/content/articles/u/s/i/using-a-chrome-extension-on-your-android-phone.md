@@ -2,8 +2,7 @@
 seo_title: "Using a Chrome Extension on Your Android Phone"
 id: 1dba01a6-78a3-4502-b676-b28ce7ec6762
 title: 'Using a Chrome Extension on Your Android Phone'
-slug: using-a-chrome-extension-on-your-android-phone
-  unlocking-the-power-of-chrome-how-to-use-a-chrome-extension-for-android-phone-mmthp0ezfp7
+slug: "using-a-chrome-extension-on-your-android-phone"
 excerpt: "Are you an Android user looking to enhance your browsing experience on your mobile device? Look no further than a Chrome extension for Android phone."
 featured_image: >-
   /content/images/unlocking-the-power-of-chrome-how-to-use-a-chrome-extension-for-android-phone-mmthp0ezfp7/featured.webp

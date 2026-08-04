@@ -4,12 +4,11 @@ id: e8e84495-ccbc-415e-86cb-94810d72cabc
 title: >-
   How to Enable Dark Mode on Pinterest, Instagram, Netflix, GitHub,
   StackOverflow, and More
-slug: >-
-  how-to-enable-dark-mode-on-pinterest-instagram-netflix-github-stackoverflow-etc-5
+slug: "how-to-enable-dark-mode-on-pinterest-instagram-netflix-github-stackoverflow-etc-5"
 excerpt: "Are you tired of the bright, eye-straining interfaces of your favorite websites and apps?"
 featured_image: >-
   /content/images/how-to-enable-dark-mode-on-pinterest-instagram-netflix-github-stackoverflow-etc-5/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - How to enable Dark Mode on Pinterest Instagram

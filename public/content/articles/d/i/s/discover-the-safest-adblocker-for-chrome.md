@@ -2,12 +2,11 @@
 seo_title: "Discover the Safest Adblocker for Chrome"
 id: 6f7534f2-509f-4b60-af5d-800bf1c2f1a6
 title: 'Discover the Safest Adblocker for Chrome: Protect Your Browsing Experience'
-slug: discover-the-safest-adblocker-for-chrome
-  discover-the-safest-adblocker-for-chrome-protect-your-browsing-experience-mmtld2frotk
+slug: "discover-the-safest-adblocker-for-chrome"
 excerpt: "Are you tired of annoying ads disrupting your online activities? Do you want to ensure a safe and secure browsing experience?"
 featured_image: >-
   /content/images/discover-the-safest-adblocker-for-chrome-protect-your-browsing-experience-mmtld2frotk/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - safest adblocker for chrome

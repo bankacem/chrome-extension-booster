@@ -4,12 +4,11 @@ id: 8778680c-8b00-490c-a00d-a95209670628
 title: >-
   Boost Your Twitter Productivity with the Best Chrome Extension for Twitter
   Productivity
-slug: a-chrome-extension-for-power-twitter-users
-  boost-your-twitter-productivity-with-the-best-chrome-extension-for-twitter-productivity-mmdsjeh52mg
+slug: "a-chrome-extension-for-power-twitter-users"
 excerpt: "Are you tired of feeling overwhelmed by the sheer amount of information on Twitter? Do you struggle to stay focused and productive while using the platform?"
 featured_image: >-
   /content/images/boost-your-twitter-productivity-with-the-best-chrome-extension-for-twitter-productivity-mmdsjeh52mg/featured.webp
-category: Screenshots & Screen Capture
+category: "Social Media Tools"
 tags: []
 keywords:
   - chrome extension for twitter productivity

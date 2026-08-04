@@ -5,7 +5,7 @@ title: 'Everliker for Chrome: What It Automates'
 slug: everliker-chrome-mkzmqfniyji
 excerpt: "Are you tired of manually liking posts on social media platforms? Do you want to increase your online presence without spending hours liking and commenting…"
 featured_image: /content/images/everliker-chrome-mkzmqfniyji/featured.webp
-category: Screenshots & Screen Capture
+category: "Productivity & Tools"
 tags: []
 keywords:
   - everliker chrome

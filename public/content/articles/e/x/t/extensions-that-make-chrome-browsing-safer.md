@@ -2,8 +2,7 @@
 seo_title: "Extensions That Make Chrome Browsing Safer"
 id: abfa9376-3222-4f90-81a7-d72baaf012c8
 title: Enhance Your Online Security with the Best Secure Browsing Chrome Extensions
-slug: extensions-that-make-chrome-browsing-safer
-  enhance-your-online-security-with-the-best-secure-browsing-chrome-extensions-mmdzl0rd465
+slug: "extensions-that-make-chrome-browsing-safer"
 excerpt: "When it comes to browsing the internet, security is a top priority for many users."
 featured_image: >-
   /content/images/enhance-your-online-security-with-the-best-secure-browsing-chrome-extensions-mmdzl0rd465/featured.webp

@@ -7,7 +7,7 @@ title: >-
 slug: veepn-extension-to-chrome-4
 excerpt: "Are you concerned about your online security and anonymity while browsing the web? Look no further than the VeePN extension for Chrome."
 featured_image: /content/images/veepn-extension-to-chrome-4/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags: []
 keywords:
   - veepn extension to chrome

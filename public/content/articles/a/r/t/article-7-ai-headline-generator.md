@@ -8,8 +8,8 @@ image_url: /content/images/article-7-ai-headline-generator.jpg
 title: 'AI Headline Generator Chrome Extension: The Ultimate Guide for 2026'
 meta_description: 'AI Headline Generator Chrome Extension: The Ultimate Guide for 2026'
 description: 'AI Headline Generator Chrome Extension: The Ultimate Guide for 2026'
+category: "Chrome Extensions"
 ---
-# AI Headline Generator Chrome Extension: The Ultimate Guide for 2026
 
 **Meta Description:** Discover the best AI headline generator Chrome extensions for 2026. Learn how to craft click-worthy, SEO-optimized headlines that boost traffic and engagement in seconds.
 

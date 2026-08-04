@@ -4,12 +4,11 @@ id: 0df3ab0b-9052-41f6-91e2-b3b37564f19c
 title: >-
   Unlocking Efficient Browsing Extensions: Boosting Productivity and
   Streamlining Your Online Experience
-slug: unlocking-efficient-browsing-extensions
-  unlocking-efficient-browsing-extensions-boosting-productivity-and-streamlining-your-online-experienc-mmtizywhjd8
+slug: "unlocking-efficient-browsing-extensions"
 excerpt: "As we navigate the vast expanse of the internet, it's easy to get bogged down in a sea of distractions, inefficiencies, and frustration."
 featured_image: >-
   /content/images/unlocking-efficient-browsing-extensions-boosting-productivity-and-streamlining-your-online-experienc-mmtizywhjd8/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags: []
 keywords:
   - efficient browsing extensions

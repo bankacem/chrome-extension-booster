@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   ✅ Best Free AI Grammar Checker Chrome Extensions 2026 — Write Better
   Everywhere
+category: "Performance & Memory"
 ---
-# ✅ Best Free AI Grammar Checker Chrome Extensions (2026) — Write Better Everywhere
 
 > **You're writing an email. A typo slips through. You hit send. Regret.**
 >

@@ -8,7 +8,7 @@ excerpt: >-
   our online experience. From Facebook to Instagram, Twitter to LinkedIn, videos
   are
 featured_image: /content/images/social-media-video-downloader-chrome/featured.webp
-category: Chrome Extensions
+category: "Performance & Memory"
 tags:
   - social media video downloader extension
   - social media

@@ -2,12 +2,11 @@
 seo_title: "Downloading Instagram Content from Chrome"
 id: f6e34bf5-8a9c-4e45-9048-c8a2906e6566
 title: 'Downloading Instagram Content from Chrome'
-slug: downloading-instagram-content-from-chrome
-  unlock-the-power-of-instagram-downloads-with-the-best-chrome-extension-for-instagram-download-mmdsjemn6y0
+slug: "downloading-instagram-content-from-chrome"
 excerpt: "Are you tired of scrolling through your Instagram feed, wishing you could save your favorite posts or stories for later? Look no further!"
 featured_image: >-
   /content/images/unlock-the-power-of-instagram-downloads-with-the-best-chrome-extension-for-instagram-download-mmdsjemn6y0/featured.webp
-category: Screenshots & Screen Capture
+category: "Performance & Memory"
 tags: []
 keywords:
   - chrome extension for instagram download

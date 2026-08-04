@@ -2,12 +2,11 @@
 seo_title: 'The .to Extension, Explained'
 id: 9c06f65e-20d5-4867-bc55-ac5b9645e889
 title: 'What the .to Extension Actually Does'
-slug: unlocking-the-power-of-to-extension
-  unlocking-the-power-of-to-extension-a-comprehensive-guide-to-streamlining-your-online-experience-mm3umjk8o8t
+slug: "unlocking-the-power-of-to-extension"
 excerpt: "In today's digital age, the .to extension has become an essential tool for individuals and businesses looking to enhance their online presence."
 featured_image: >-
   /content/images/unlocking-the-power-of-to-extension-a-comprehensive-guide-to-streamlining-your-online-experience-mm3umjk8o8t/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - .to extension

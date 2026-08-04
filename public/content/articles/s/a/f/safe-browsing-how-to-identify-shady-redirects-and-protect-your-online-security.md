@@ -8,7 +8,7 @@ slug: safe-browsing-how-to-identify-shady-redirects-and-protect-your-online-secu
 excerpt: "As we navigate the vast expanse of the internet, it's essential to prioritize safe browsing practices to avoid falling prey to malicious activities."
 featured_image: >-
   /content/images/safe-browsing-how-to-identify-shady-redirects-and-protect-your-online-security/featured.webp
-category: Screenshots & Screen Capture
+category: "Security & Privacy"
 tags:
   - >-
     Safe Browsing: How to Identify Shady Redirects and Protect Your Online

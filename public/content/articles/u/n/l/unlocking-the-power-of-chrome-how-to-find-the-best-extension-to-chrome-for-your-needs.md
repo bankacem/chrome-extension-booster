@@ -2,12 +2,11 @@
 seo_title: "How to Find the Right Chrome Extension for You"
 id: 9694c115-4bdc-4f64-807a-9b38a0bc7c87
 title: 'How to Find the Right Chrome Extension for You'
-slug: >-
-  unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs
+slug: "unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs"
 excerpt: "Are you looking to take your browsing experience to the next level? Installing an extension to Chrome can be a game-changer, providing you with a wide range…"
 featured_image: >-
   /content/images/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension to chrome

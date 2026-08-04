@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   AI Cover Letter Writer Chrome Extension: The Complete 2026 Guide to Landing
   Your Dream Job
+category: "Chrome Extensions"
 ---
-# AI Cover Letter Writer Chrome Extension: The Complete 2026 Guide to Landing Your Dream Job
 
 ## 📚 Table of Contents
 - [Why You Need an AI Cover Letter Writer in 2026](#why-you-need-an-ai-cover-letter-writer-in-2026)

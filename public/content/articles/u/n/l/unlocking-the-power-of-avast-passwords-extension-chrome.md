@@ -2,8 +2,7 @@
 seo_title: "Avast Passwords in Chrome: First Impressions"
 id: 613fbde0-b447-49c8-941e-2104d911f09d
 title: 'Avast Passwords in Chrome: First Impressions'
-slug: unlocking-the-power-of-avast-passwords-extension-chrome
-  unlocking-the-power-of-avast-passwords-extension-chrome-a-comprehensive-guide-ml5gzz0lb9l
+slug: "unlocking-the-power-of-avast-passwords-extension-chrome"
 excerpt: "Are you tired of juggling multiple passwords and struggling to remember them all? Look no further than the Avast Passwords extension Chrome users swear by."
 featured_image: >-
   /content/images/unlocking-the-power-of-avast-passwords-extension-chrome-a-comprehensive-guide-ml5gzz0lb9l/featured.webp

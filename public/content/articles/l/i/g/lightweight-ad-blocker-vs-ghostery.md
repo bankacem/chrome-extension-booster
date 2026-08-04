@@ -4,8 +4,7 @@ id: 30e3a44e-41f2-41c7-a6ad-e845bbe251a0
 title: >-
   Lightweight Ad Blocker vs Ghostery: The Ultimate Comparison for a Seamless
   Browsing Experience
-slug: lightweight-ad-blocker-vs-ghostery
-  lightweight-ad-blocker-vs-ghostery-the-ultimate-comparison-for-a-seamless-browsing-experience-mll9bqvypx6
+slug: "lightweight-ad-blocker-vs-ghostery"
 excerpt: "When it comes to online browsing, ads can be a major nuisance, slowing down page loads and compromising user experience."
 featured_image: >-
   /content/images/lightweight-ad-blocker-vs-ghostery-the-ultimate-comparison-for-a-seamless-browsing-experience-mll9bqvypx6/featured.webp

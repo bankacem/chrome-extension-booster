@@ -2,8 +2,7 @@
 seo_title: 'Extensions for Safer Browsing'
 id: 25af87f7-67c1-4ec8-898f-5ad74d6fde61
 title: 'Extensions That Make Browsing Safer'
-slug: top-extensions-for-a-safe-online-experience
-  unlocking-the-power-of-secure-browsing-top-extensions-for-a-safe-online-experience-mm3scnaxehm
+slug: "top-extensions-for-a-safe-online-experience"
 excerpt: >-
   As we navigate the vast expanse of the internet, our personal data and online
   security are constantly at risk. With the rise of cyber threats and data

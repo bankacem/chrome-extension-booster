@@ -5,7 +5,7 @@ title: 'Google Tag Manager: What This Chrome Extension Shows'
 slug: extension-chrome-google-tag-manager-11
 excerpt: "Are you looking to take your website analytics to the next level? Do you want to streamline your marketing efforts and gain valuable insights into your…"
 featured_image: /content/images/extension-chrome-google-tag-manager-11/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome google tag manager

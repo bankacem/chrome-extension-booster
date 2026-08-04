@@ -2,8 +2,7 @@
 seo_title: "A Free Color Picker Extension for Chrome"
 id: 17a67b02-b714-47d9-8798-61e1060d0b0c
 title: 'A Free Color Picker Extension for Chrome'
-slug: a-free-color-picker-extension-for-chrome
-  unlock-the-power-of-color-with-the-best-color-picker-chrome-extension-free-mmtm0ezx77j
+slug: "a-free-color-picker-extension-for-chrome"
 excerpt: "Are you a web designer, developer, or digital artist looking for a reliable and efficient way to pick colors for your projects?"
 featured_image: >-
   /content/images/unlock-the-power-of-color-with-the-best-color-picker-chrome-extension-free-mmtm0ezx77j/featured.webp

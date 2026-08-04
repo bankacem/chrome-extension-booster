@@ -4,12 +4,11 @@ id: 77818b2a-79bd-4b62-8238-17246a0596ab
 title: >-
   Unlock Efficient Downloads with the Best Free Download Manager Chrome
   Extension
-slug: the-best-free-download-manager-for-chrome
-  unlock-efficient-downloads-with-the-best-free-download-manager-chrome-extension-mmdupg128fq
+slug: "the-best-free-download-manager-for-chrome"
 excerpt: "Are you tired of struggling with slow downloads, lost files, and disorganized folders?"
 featured_image: >-
   /content/images/unlock-efficient-downloads-with-the-best-free-download-manager-chrome-extension-mmdupg128fq/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - free download manager chrome extension

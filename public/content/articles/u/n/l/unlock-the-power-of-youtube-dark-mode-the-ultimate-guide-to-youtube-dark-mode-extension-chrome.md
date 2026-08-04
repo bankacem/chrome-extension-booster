@@ -2,12 +2,11 @@
 seo_title: 'YouTube Dark Mode Extension for Chrome'
 id: 670e574d-8e63-40ee-acc0-0b8bb7b361a9
 title: 'A Dark Mode Extension for YouTube on Chrome'
-slug: >-
-  unlock-the-power-of-youtube-dark-mode-the-ultimate-guide-to-youtube-dark-mode-extension-chrome
+slug: "unlock-the-power-of-youtube-dark-mode-the-ultimate-guide-to-youtube-dark-mode-extension-chrome"
 excerpt: "Are you tired of the bright and overwhelming YouTube interface? Do you want to reduce eye strain and improve your overall viewing experience? Look no further!"
 featured_image: >-
   /content/images/unlock-the-power-of-youtube-dark-mode-the-ultimate-guide-to-youtube-dark-mode-extension-chrome/featured.webp
-category: Screenshots & Screen Capture
+category: "Appearance & Themes"
 tags:
   - >-
     Unlock the Power of YouTube Dark Mode: The Ultimate Guide to YouTube Dark

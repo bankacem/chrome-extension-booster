@@ -4,8 +4,7 @@ id: 160b79ce-3668-4436-b531-f0f26b897918
 title: >-
   Best Website Screenshot Extension vs Standalone App Comparison: A
   Comprehensive Guide
-slug: best-website-screenshot-extension-vs-standalone-app-comparison
-  best-website-screenshot-extension-vs-standalone-app-comparison-a-comprehensive-guide-mm3umhd3ucc
+slug: "best-website-screenshot-extension-vs-standalone-app-comparison"
 excerpt: "When it comes to capturing website screenshots, users are often torn between using a best website screenshot extension or a standalone app."
 featured_image: >-
   /content/images/best-website-screenshot-extension-vs-standalone-app-comparison-a-comprehensive-guide-mm3umhd3ucc/featured.webp

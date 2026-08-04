@@ -7,7 +7,7 @@ title: >-
 slug: https-sci-hub-se-chrome-extension-16
 excerpt: "The world of scientific research has become increasingly digital, with numerous online platforms and tools available to facilitate access to knowledge."
 featured_image: /content/images/https-sci-hub-se-chrome-extension-16/featured.webp
-category: Screenshots & Screen Capture
+category: "Chrome Extensions"
 tags: []
 keywords:
   - https sci hub se chrome extension

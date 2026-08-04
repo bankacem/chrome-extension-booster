@@ -14,8 +14,8 @@ meta_description: >-
 description: >-
   AI Lesson Plan Generator Chrome Extension: The Ultimate Guide for Teachers in
   2026
+category: "Chrome Extensions"
 ---
-# AI Lesson Plan Generator Chrome Extension: The Ultimate Guide for Teachers in 2026
 
 **Meta Description:** Discover the best AI lesson plan generator Chrome extensions for 2026. Learn how to create engaging, standards-aligned lesson plans in minutes instead of hours with AI-powered teaching tools.
 

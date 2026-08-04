@@ -2,8 +2,7 @@
 seo_title: "The Best Chrome Extension to Detect Trackers"
 id: c3404f92-626e-4894-addc-236d23a130bb
 title: 'Protecting Your Online Privacy: The Best Chrome Extension to Detect Trackers'
-slug: protecting-your-online-privacy
-  protecting-your-online-privacy-the-best-chrome-extension-to-detect-trackers-mmdzl1lbwjy
+slug: "protecting-your-online-privacy"
 excerpt: "As we navigate the vast expanse of the internet, it's easy to overlook the numerous trackers that follow our every move."
 featured_image: >-
   /content/images/protecting-your-online-privacy-the-best-chrome-extension-to-detect-trackers-mmdzl1lbwjy/featured.webp

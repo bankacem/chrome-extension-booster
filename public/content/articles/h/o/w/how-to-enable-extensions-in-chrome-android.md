@@ -2,8 +2,7 @@
 seo_title: "How to Enable Extensions in Chrome Android"
 id: f13f91a9-f690-4305-b0bb-57225335c67f
 title: 'How to Enable Chrome Extensions on Android Mobile: Unlocking Enhanced Browsing'
-slug: how-to-enable-extensions-in-chrome-android
-  how-to-enable-chrome-extensions-on-android-mobile-unlocking-enhanced-browsing-mmb7lsj2jtx
+slug: "how-to-enable-extensions-in-chrome-android"
 excerpt: "Are you tired of limited browsing capabilities on your Android mobile device?"
 featured_image: >-
   /content/images/how-to-enable-chrome-extensions-on-android-mobile-unlocking-enhanced-browsing-mmb7lsj2jtx/featured.webp

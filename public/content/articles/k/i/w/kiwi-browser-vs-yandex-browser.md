@@ -2,8 +2,7 @@
 seo_title: "kiwi browser vs yandex browser"
 id: 4894deb9-5d3d-406f-89cb-052b7878ebc8
 title: 'kiwi browser vs yandex browser: A Comprehensive Comparison for the Modern User'
-slug: kiwi-browser-vs-yandex-browser
-  kiwi-browser-vs-yandex-browser-a-comprehensive-comparison-for-the-modern-user-mmthox9h7jb
+slug: "kiwi-browser-vs-yandex-browser"
 excerpt: "When it comes to browsing the internet, the choice of browser can significantly impact your overall experience."
 featured_image: >-
   /content/images/kiwi-browser-vs-yandex-browser-a-comprehensive-comparison-for-the-modern-user-mmthox9h7jb/featured.webp

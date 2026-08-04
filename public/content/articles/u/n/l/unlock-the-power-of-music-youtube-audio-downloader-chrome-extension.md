@@ -2,12 +2,11 @@
 seo_title: "YouTube Audio Downloader Chrome Extension"
 id: 1f5ef62a-98af-4c90-bb55-3451f8b75866
 title: 'YouTube Audio Downloader Chrome Extension'
-slug: unlock-the-power-of-music-youtube-audio-downloader-chrome-extension
-  unlock-the-power-of-music-the-ultimate-guide-to-youtube-audio-downloader-chrome-extension-mmdz4dgys00
+slug: "unlock-the-power-of-music-youtube-audio-downloader-chrome-extension"
 excerpt: "Are you tired of searching for your favorite songs on YouTube, only to be forced to watch the video along with the audio?"
 featured_image: >-
   /content/images/unlock-the-power-of-music-the-ultimate-guide-to-youtube-audio-downloader-chrome-extension-mmdz4dgys00/featured.webp
-category: Screenshots & Screen Capture
+category: "Media & Downloads"
 tags: []
 keywords:
   - youtube audio downloader chrome extension

@@ -15,6 +15,7 @@ tags:
   - tunnelbear
   - privacy
   - free vpn
+category: "Security & Privacy"
 ---
 
 <img src="/content/images/vpn-article9-tunnelbear-review.jpg" alt="TunnelBear Chrome Extension Review 2026" width="1200" height="630" loading="lazy" class="featured-image">

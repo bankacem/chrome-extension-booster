@@ -8,7 +8,7 @@ excerpt: >-
   on your Chrome mobile browser? These redirect ads can be frustrating and
   disrupt y
 featured_image: /content/images/stop-redirect-ads-chrome-mobile/featured.webp
-category: Productivity
+category: "Productivity & Tools"
 tags:
   - stop redirect ads
   - chrome mobile

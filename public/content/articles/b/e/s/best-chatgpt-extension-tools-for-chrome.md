@@ -5,7 +5,7 @@ title: 'Best ChatGPT Extension Tools for Chrome'
 slug: best-chatgpt-extension-tools-for-chrome
 excerpt: "As the internet continues to evolve, the need for intelligent browsing tools has never been more pressing."
 featured_image: /content/images/extension-chatgpt-chrome-mkzmcrjn3it/featured.webp
-category: Screenshots & Screen Capture
+category: "AI Tools"
 tags: []
 keywords:
   - extension chatgpt chrome

@@ -4,8 +4,7 @@ id: ea8bbaa6-9854-43eb-8611-ec35cd8fc9ec
 title: >-
   The Ultimate Chrome Extensions Guide for 2025: Maximize Your Browser’s
   Potential
-slug: >-
-  the-ultimate-chrome-extensions-guide-for-2025-maximize-your-browser-s-potential
+slug: "the-ultimate-chrome-extensions-guide-for-2025-maximize-your-browser-s-potential"
 excerpt: >-
   Discover the future of browser extensions with our curated, high-performance
   directory.
