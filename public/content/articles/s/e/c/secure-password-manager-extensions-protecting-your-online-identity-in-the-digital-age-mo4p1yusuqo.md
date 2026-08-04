@@ -1,4 +1,5 @@
 ---
+seo_title: "Secure Password Manager Extensions"
 id: 15e9b35a-fe7e-4a8a-9923-b0e5e4ed877d
 title: >-
   Secure Password Manager Extensions: Protecting Your Online Identity in the

@@ -1,4 +1,5 @@
 ---
+seo_title: "Privacy-Focused Browser Extensions"
 id: 3041b01c-ccc5-4206-b32e-c8c2e13b9bf4
 title: Enhance Your Online Security with Privacy Focused Browser Extensions
 slug: >-

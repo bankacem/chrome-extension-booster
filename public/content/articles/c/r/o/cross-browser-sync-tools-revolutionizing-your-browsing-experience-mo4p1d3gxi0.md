@@ -1,4 +1,5 @@
 ---
+seo_title: "Cross-Browser Sync Tools for Chrome"
 id: b0d5c974-81b6-408f-b5eb-2b37b7af74e4
 title: 'Cross-Browser Sync Tools: Revolutionizing Your Browsing Experience'
 slug: cross-browser-sync-tools-revolutionizing-your-browsing-experience-mo4p1d3gxi0

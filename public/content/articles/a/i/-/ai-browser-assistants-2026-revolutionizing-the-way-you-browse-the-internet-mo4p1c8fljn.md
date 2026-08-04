@@ -1,4 +1,5 @@
 ---
+seo_title: "AI Browser Assistants (2026 Guide)"
 id: 70a42f27-03c6-4e8c-9fd2-f451f4a62959
 title: 'AI Browser Assistants 2026: Revolutionizing the Way You Browse the Internet'
 slug: >-

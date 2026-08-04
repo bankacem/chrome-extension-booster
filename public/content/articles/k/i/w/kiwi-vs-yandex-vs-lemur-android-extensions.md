@@ -1,4 +1,5 @@
 ---
+seo_title: "Kiwi vs Yandex vs Lemur: Android Extensions"
 id: 064163e6-ef34-4bcb-a81e-d4b9aec4b23f
 title: 'Kiwi vs Yandex vs Lemur 2026: Best Browser for Chrome Extensions on Android'
 slug: kiwi-vs-yandex-vs-lemur-android-extensions

@@ -1,4 +1,5 @@
 ---
+seo_title: "Best Chrome Extensions for Productivity"
 title: 'Best Chrome Extensions for Productivity: Unlock Your Full Potential'
 slug: best-chrome-extensions-for-productivity
 excerpt: >-

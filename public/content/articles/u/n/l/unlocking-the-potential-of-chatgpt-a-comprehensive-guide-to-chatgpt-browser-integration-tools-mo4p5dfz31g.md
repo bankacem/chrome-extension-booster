@@ -1,4 +1,5 @@
 ---
+seo_title: "ChatGPT Browser Integration Tools"
 id: df3b8314-c90b-4189-bedd-789bbc680098
 title: >-
   Unlocking the Potential of ChatGPT: A Comprehensive Guide to ChatGPT Browser
