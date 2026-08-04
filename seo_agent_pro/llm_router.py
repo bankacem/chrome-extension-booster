@@ -251,7 +251,6 @@ def _call_bluesminds(model_id: str, system: str, user: str, stream: bool) -> str
 # ──────────────────────────────────────────────────────────────
 
 def _call_agentrouter(model_id: str, system: str, user: str, stream: bool) -> str:
-    url     = "https://agentrouter.org/v1/chat/completions"
     headers = {
         "Authorization": f"Bearer {API_KEYS['agentrouter']}",
         "Content-Type":  "application/json",
@@ -268,36 +267,66 @@ def _call_agentrouter(model_id: str, system: str, user: str, stream: bool) -> st
             {"role": "user",   "content": user},
         ],
     }
+    body_bytes = json.dumps(payload).encode()
 
-    req  = urllib.request.Request(url, json.dumps(payload).encode(), headers)
-    full = ""
+    # test_agentrouter.py found the API could live at either of these — try
+    # the root first, fall back to /api if it doesn't return real JSON. This
+    # was NOT observed working during diagnosis (see comment above), so both
+    # candidates are attempted before giving up.
+    candidate_urls = [
+        "https://agentrouter.org/v1/chat/completions",
+        "https://agentrouter.org/api/v1/chat/completions",
+    ]
 
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        if stream:
-            for raw_line in resp:
-                line = raw_line.decode("utf-8").strip()
-                if not line.startswith("data:"):
-                    continue
-                data = line[5:].strip()
-                if data == "[DONE]":
-                    break
-                try:
-                    obj   = json.loads(data)
-                    delta = obj["choices"][0].get("delta", {}).get("content", "")
-                    if delta:
-                        print(delta, end="", flush=True)
-                        full += delta
-                except (json.JSONDecodeError, KeyError):
-                    continue
-            print()
-        else:
-            raw = resp.read().decode("utf-8")
-            if not raw.strip():
-                raise ValueError("agentrouter.org returned an empty response body")
-            body = json.loads(raw)
-            full = body["choices"][0]["message"]["content"]
+    last_error: Exception | None = None
+    for url in candidate_urls:
+        req  = urllib.request.Request(url, body_bytes, headers)
+        full = ""
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                if stream:
+                    for raw_line in resp:
+                        line = raw_line.decode("utf-8").strip()
+                        if not line.startswith("data:"):
+                            continue
+                        data = line[5:].strip()
+                        if data == "[DONE]":
+                            break
+                        try:
+                            obj   = json.loads(data)
+                            delta = obj["choices"][0].get("delta", {}).get("content", "")
+                            if delta:
+                                print(delta, end="", flush=True)
+                                full += delta
+                        except (json.JSONDecodeError, KeyError):
+                            continue
+                    print()
+                else:
+                    raw = resp.read().decode("utf-8")
+                    if not raw.strip():
+                        raise ValueError(f"{url} returned an empty response body (HTTP 200)")
+                    try:
+                        parsed = json.loads(raw)
+                    except json.JSONDecodeError as e:
+                        # Surface what was actually returned (often an HTML
+                        # error/login page rather than JSON) instead of a
+                        # bare parser error with no way to diagnose it from
+                        # the Actions log.
+                        raise ValueError(
+                            f"{url} did not return valid JSON (HTTP {resp.status}, "
+                            f"Content-Type: {resp.headers.get('Content-Type')}). "
+                            f"First 300 chars of body: {raw[:300]!r}"
+                        ) from e
+                    full = parsed["choices"][0]["message"]["content"]
+            return full
+        except (ValueError, urllib.error.HTTPError) as e:
+            last_error = e
+            print(c("dim", f"  ⚠ {url} failed ({e}); trying next candidate URL..."))
+            continue
 
-    return full
+    raise ValueError(
+        f"agentrouter.org: none of the candidate base URLs worked. Last error: {last_error}"
+    )
 
 
 # ──────────────────────────────────────────────────────────────
