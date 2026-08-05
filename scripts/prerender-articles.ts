@@ -187,7 +187,10 @@ async function main() {
     }
 
     const { frontmatter, content } = parseMarkdown(raw);
-    const fullTitle: string = String(frontmatter.title || a.title || slug).replace(/\s+/g, " ").trim();
+    // articles-index.json (a.title) is the source of truth; frontmatter.title
+    // can carry a stale copy from initial import (see BlogPost.tsx for the
+    // same precedence fix on the client-render path).
+    const fullTitle: string = String(a.title || frontmatter.title || slug).replace(/\s+/g, " ").trim();
     const seoTitle: string = String(frontmatter.seo_title || fullTitle).replace(/\s+/g, " ").trim();
     const description: string = String(
       frontmatter.meta_description || a.meta_description || frontmatter.excerpt || a.excerpt || a.description || ""

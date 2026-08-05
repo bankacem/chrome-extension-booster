@@ -155,15 +155,25 @@ const BlogPost = () => {
       // the visitor/crawler actually landed on (matched.slug from the index, or
       // the URL param as a fallback) must always win, or the canonical tag and
       // any generated links end up pointing at a URL that doesn't exist.
+      // The site's article-index.json is the single source of truth for this
+      // article's metadata (title, slug, category, description, etc.) -- it's
+      // what actually gets curated/fixed over time. Individual markdown files
+      // can carry stale copies of these same fields from whenever they were
+      // first imported (a recurring class of bug: a corrected index entry got
+      // silently undone by frontmatter reasserting the old value at
+      // hydration). To make this whole class of bug impossible rather than
+      // patching it field-by-field, `matched` now always wins over
+      // `frontmatter` for any key both objects define. Frontmatter is only
+      // used to fill in fields the index doesn't carry at all (seo_title,
+      // related_extension_slug, featured_video, schema, etc.) plus the
+      // rendered article body.
       const fullArticle = {
-        ...(matched || {}),
         ...frontmatter,
+        ...(matched || {}),
+        // matched.slug can theoretically be missing/malformed if the index
+        // lookup failed; fall back to the URL param rather than trust
+        // frontmatter's (potentially corrupted) slug either way.
         slug: (matched?.slug || fetchSlug || slug || "").toString().trim().split(/\s+/)[0],
-        // The site's article-index.json is the authoritative source for taxonomy
-        // (category). Some legacy content files carry a stale/incorrect category
-        // in their own frontmatter from a past bulk-import; never let that silently
-        // override a corrected index entry.
-        category: matched?.category || frontmatter.category,
         content: processedContent,
       } as Article;
       setArticle(fullArticle);
