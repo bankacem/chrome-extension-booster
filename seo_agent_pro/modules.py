@@ -26,11 +26,12 @@ def _info(msg: str) -> None:
 #  Module 1 — Competitor Analysis
 # ──────────────────────────────────────────────────────────────
 
-def analyze_competitors(keyword: str, model: str) -> dict:
+def analyze_competitors(keyword: str, model: str, lang: str = "en") -> dict:
     _step(f"Competitor Analysis  →  \"{keyword}\"")
 
     system = (
-        "You are a senior SEO analyst. Based on your knowledge of web content patterns, "
+        f"You are a senior SEO analyst specializing in {lang} content. "
+        "Based on your knowledge of web content patterns, "
         "analyze what the top-ranking pages for a given keyword typically look like."
     )
     user = f"""Analyze the competitive landscape for the keyword: "{keyword}"
@@ -60,7 +61,7 @@ Return a JSON object:
 #  Module 2 — Strategy Decision
 # ──────────────────────────────────────────────────────────────
 
-def decide_strategy(keyword: str, competitor_data: dict, articles_written: int, model: str) -> dict:
+def decide_strategy(keyword: str, competitor_data: dict, articles_written: int, model: str, lang: str = "en") -> dict:
     _step("Strategy Decision Engine")
 
     system = (
@@ -98,7 +99,7 @@ Decide and return JSON:
 #  Module 3 — Article Writer
 # ──────────────────────────────────────────────────────────────
 
-def write_article(keyword: str, strategy: dict, model: str) -> str:
+def write_article(keyword: str, strategy: dict, model: str, lang: str = "en") -> str:
     length   = strategy.get("ideal_length", 1500)
     sections = strategy.get("required_sections", [])
     angle    = strategy.get("unique_angle", "")
@@ -106,12 +107,16 @@ def write_article(keyword: str, strategy: dict, model: str) -> str:
 
     _step(f"Writing Article  —  {length} words")
 
+    lang_instruction = f"Write in clear, engaging {lang}. Never sound robotic."
+    if lang == "ar":
+        lang_instruction = "Write in professional, engaging Arabic (Modern Standard Arabic). Use a natural flow and avoid literal translations from English."
+
     system = (
-        "You are a professional SEO content writer. "
-        "Write in clear, engaging English. Never sound robotic. "
+        f"You are a professional SEO content writer. "
+        f"{lang_instruction} "
         "Prioritize Information Gain — include unique insights not found elsewhere."
     )
-    user = f"""Write a complete, high-ranking SEO article for: "{keyword}"
+    user = f"""Write a complete, high-ranking SEO article for: "{keyword}" in {lang}
 
 Specifications:
 - Target length:    {length} words
@@ -159,7 +164,7 @@ Rules:
 #  Module 4 — CTR Optimizer
 # ──────────────────────────────────────────────────────────────
 
-def optimize_ctr(keyword: str, article_snippet: str, model: str) -> dict:
+def optimize_ctr(keyword: str, article_snippet: str, model: str, lang: str = "en") -> dict:
     _step("CTR Optimization  —  Title & Meta Description")
 
     system = "You are a search CTR specialist. Write titles and descriptions that maximize click-through rate."
@@ -199,7 +204,7 @@ Rules for descriptions:
 #  Module 5 — Keyword Cluster Builder  (V3)
 # ──────────────────────────────────────────────────────────────
 
-def build_cluster(keyword: str, niche: str, model: str) -> dict:
+def build_cluster(keyword: str, niche: str, model: str, lang: str = "en") -> dict:
     _step(f"Keyword Cluster Map  —  Niche: {niche or 'auto-detect'}")
 
     system = "You are a keyword architecture expert. Build comprehensive topic clusters for SEO authority."
@@ -252,7 +257,7 @@ Return JSON:
 #  Module 6 — Content Calendar  (V3)
 # ──────────────────────────────────────────────────────────────
 
-def build_calendar(keyword: str, niche: str, months: int, model: str) -> list:
+def build_calendar(keyword: str, niche: str, months: int, model: str, lang: str = "en") -> list:
     _step(f"Content Calendar  —  {months} months")
 
     system = "You are a strategic content planner. Build data-driven publishing calendars for SEO growth."
@@ -299,7 +304,7 @@ Return a JSON array (one object per article):
 #  Module 7 — Topical Authority Score  (V3)
 # ──────────────────────────────────────────────────────────────
 
-def score_authority(niche: str, articles_written: list, model: str) -> dict:
+def score_authority(niche: str, articles_written: list, model: str, lang: str = "en") -> dict:
     _step("Topical Authority Score")
 
     titles = [a.get("keyword", "") for a in articles_written[-20:]]
