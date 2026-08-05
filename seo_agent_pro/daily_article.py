@@ -47,6 +47,12 @@ MODEL_FALLBACK_CHAIN = [
     "claude-haiku",
 ]
 
+# Fallback ONLY - used when a keyword_queue.txt line doesn't pin an explicit
+# category via "keyword | Category". Real taxonomy in use across the site
+# (see public/content/articles/**/*.md `category:` field): Productivity &
+# Tools, Chrome Extensions, Security & Privacy, Performance & Memory,
+# Media & Downloads, Appearance & Themes, AI Tools, Social Media Tools,
+# Ad Blockers, Screenshots & Screen Capture, Redirect & Navigation.
 DEFAULT_CATEGORY = "Productivity & Tools"
 DEFAULT_FEATURED_IMAGE = "/og-image.png"
 SUFFIX = " | ExtensionTo"
@@ -58,10 +64,24 @@ TARGET_TITLE_LEN = 60 - len(SUFFIX)  # 46 - same budget used across the site
 # ──────────────────────────────────────────────────────────────
 
 def load_queue() -> list:
+    """Each line is either just a keyword, or 'keyword | Category' to pin
+    an explicit category (must match one used elsewhere on the site - see
+    the comment above DEFAULT_CATEGORY). Falls back to DEFAULT_CATEGORY
+    only when no category is given, instead of always using it."""
     if not QUEUE_PATH.exists():
         return []
     lines = QUEUE_PATH.read_text(encoding="utf-8").splitlines()
-    return [ln.strip() for ln in lines if ln.strip() and not ln.strip().startswith("#")]
+    entries = []
+    for ln in lines:
+        ln = ln.strip()
+        if not ln or ln.startswith("#"):
+            continue
+        if "|" in ln:
+            kw, _, cat = ln.partition("|")
+            entries.append((kw.strip(), cat.strip() or DEFAULT_CATEGORY))
+        else:
+            entries.append((ln, DEFAULT_CATEGORY))
+    return entries
 
 
 def load_state() -> dict:
@@ -74,13 +94,14 @@ def save_state(state: dict) -> None:
     STATE_PATH.write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def pick_next_keyword() -> str:
+def pick_next_keyword() -> tuple[str, str]:
+    """Returns (keyword, category)."""
     queue = load_queue()
     state = load_state()
     used = set(state.get("used_keywords", []))
-    for kw in queue:
+    for kw, category in queue:
         if kw not in used:
-            return kw
+            return kw, category
     raise SystemExit(
         "Keyword queue exhausted - add more lines to seo_agent_pro/keyword_queue.txt"
     )
@@ -90,6 +111,26 @@ def mark_keyword_used(keyword: str) -> None:
     state = load_state()
     state.setdefault("used_keywords", []).append(keyword)
     save_state(state)
+
+
+# ──────────────────────────────────────────────────────────────
+#  Content cleanup
+# ──────────────────────────────────────────────────────────────
+
+# The model occasionally writes a markdown image reference for a screenshot
+# it can't actually produce (e.g. "![Screenshot of X](image-url-placeholder)").
+# This is not a real image path, so publishing it verbatim renders a broken
+# image on the live article. Strip any markdown image whose target is an
+# obvious placeholder rather than a real path (starts with "/", "http", or a
+# real relative file with an extension).
+PLACEHOLDER_IMAGE_RE = re.compile(
+    r"!\[[^\]]*\]\((?!/|https?://|\./)[^)]*(?:placeholder|your-image|example\.com|image-url)[^)]*\)\s*\n?",
+    re.IGNORECASE,
+)
+
+
+def strip_placeholder_images(body: str) -> str:
+    return PLACEHOLDER_IMAGE_RE.sub("", body)
 
 
 # ──────────────────────────────────────────────────────────────
@@ -203,7 +244,7 @@ def _generate_content(keyword: str, articles_written: int, model: str) -> tuple[
 
 
 def main():
-    keyword = pick_next_keyword()
+    keyword, category = pick_next_keyword()
 
     # Load real persistent memory instead of a throwaway empty dict — this is
     # what lets the strategy engine know how many articles already exist and
@@ -255,6 +296,8 @@ def main():
 
     print(f"Generating article for keyword: {keyword!r} (model={MODEL})")
 
+    body = strip_placeholder_images(body)
+
     slug = slugify(title)
     seo_title = make_seo_title(title)
     word_count = len(body.split())
@@ -277,7 +320,7 @@ def main():
         f"excerpt: {yaml_str(meta_description)}",
         f"meta_description: {yaml_str(meta_description)}",
         f"featured_image: {DEFAULT_FEATURED_IMAGE}",
-        f"category: {DEFAULT_CATEGORY}",
+        f"category: {category}",
         f"tags:{yaml_list([])}",
         f"keywords:{yaml_list([keyword])}",
         "author: Admin",

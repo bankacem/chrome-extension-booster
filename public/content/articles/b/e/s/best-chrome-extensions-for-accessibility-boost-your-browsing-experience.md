@@ -60,7 +60,6 @@ A popular choice, **Dark Reader** transforms any website into dark mode, reducin
 2. Search for "Dark Reader" and click **Add to Chrome**.  
 3. Adjust the settings via the extension icon in your toolbar.  
 
-![Screenshot of Dark Reader in action](image-url-placeholder)  
 
 ### 2. **ZoomText**  
 For those with low vision, **ZoomText** offers magnification and reading tools. It enlarges text and automatically reformats pages for better readability.  
