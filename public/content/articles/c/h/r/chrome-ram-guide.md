@@ -5,6 +5,9 @@ slug: chrome-ram-guide
 description: >-
   Is Chrome eating your RAM? I tested multiple optimization strategies,
   extensions, and Chrome settings to find what actually reduces memory usage.
+meta_description: >-
+  Chrome using too much RAM? See the settings, extensions, and habits that
+  actually cut memory usage, tested across 50 tabs and multiple configurations.
 excerpt: >-
   I tested Chrome's RAM usage across 50 tabs and multiple configurations to find
   which settings, extensions, and habits save the most memory.
