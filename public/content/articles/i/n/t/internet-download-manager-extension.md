@@ -7,6 +7,9 @@ description: >-
   Master the Internet Download Manager extension for Chrome. Learn how to fix
   integration issues, boost download speeds by 5x, and capture any media with
   IDM.
+meta_description: >-
+  Fix Internet Download Manager Chrome integration issues, boost download
+  speeds, and capture streaming media with this complete IDM setup guide.
 excerpt: >-
   Master the Internet Download Manager extension for Chrome. Learn how to fix
   integration issues, boost download speeds by 5x, and capture any media with
