@@ -1,27 +1,34 @@
 # Keyword queue for the daily article pipeline (seo_agent_pro/daily_article.py)
 #
-# One keyword per line. The pipeline pops the FIRST unused line each day
-# (tracked in daily_article_state.json) and generates an article for it.
+# Format: "keyword" OR "keyword | Category" (category is optional - falls
+# back to DEFAULT_CATEGORY in daily_article.py if omitted). Category must
+# match the real taxonomy used across the site, e.g.: Productivity & Tools,
+# Chrome Extensions, Security & Privacy, Performance & Memory,
+# Media & Downloads, Appearance & Themes, AI Tools, Social Media Tools,
+# Ad Blockers, Screenshots & Screen Capture.
+#
+# The pipeline pops the FIRST unused line each day (tracked in
+# daily_article_state.json) and generates an article for it.
 # Add more keywords here any time — the queue never needs to be "full".
 # Lines starting with # are ignored.
 
-best chrome extensions for accessibility
-how to clear chrome cache and cookies
-best chrome extensions for remote work
-chrome extensions for reading pdfs online
-how to manage chrome bookmarks efficiently
-best chrome extensions for note taking
-chrome extensions for online privacy in 2026
-how to speed up a slow chrome browser
-best chrome extensions for social media managers
-chrome extensions for tracking package deliveries
-best chrome extensions for freelancers
-how to sync chrome bookmarks across devices
-chrome extensions for online course students
-best chrome extensions for email productivity
-chrome extensions for comparing prices while shopping
-how to disable chrome notifications
-best chrome extensions for web accessibility testing
-chrome extensions for time zone conversion
-best chrome extensions for meeting notes
-chrome extensions for reducing eye strain
+best chrome extensions for accessibility | Productivity & Tools
+how to clear chrome cache and cookies | Performance & Memory
+best chrome extensions for remote work | Productivity & Tools
+chrome extensions for reading pdfs online | Productivity & Tools
+how to manage chrome bookmarks efficiently | Productivity & Tools
+best chrome extensions for note taking | Productivity & Tools
+chrome extensions for online privacy in 2026 | Security & Privacy
+how to speed up a slow chrome browser | Performance & Memory
+best chrome extensions for social media managers | Social Media Tools
+chrome extensions for tracking package deliveries | Productivity & Tools
+best chrome extensions for freelancers | Productivity & Tools
+how to sync chrome bookmarks across devices | Productivity & Tools
+chrome extensions for online course students | Productivity & Tools
+best chrome extensions for email productivity | Productivity & Tools
+chrome extensions for comparing prices while shopping | Productivity & Tools
+how to disable chrome notifications | Performance & Memory
+best chrome extensions for web accessibility testing | Productivity & Tools
+chrome extensions for time zone conversion | Productivity & Tools
+best chrome extensions for meeting notes | Productivity & Tools
+chrome extensions for reducing eye strain | Appearance & Themes

@@ -200,7 +200,7 @@
     "description": "Discover the best Chrome extensions for accessibility to enhance your browsing experience. Simplify navigation with these top tools designed for everyone.",
     "meta_description": "Discover the best Chrome extensions for accessibility to enhance your browsing experience. Simplify navigation with these top tools designed for everyone.",
     "excerpt": "Discover the best Chrome extensions for accessibility to enhance your browsing experience. Simplify navigation with these top tools designed for everyone.",
-    "published_at": "2026-08-04",
+    "published_at": "2026-08-04T00:00:00.000Z",
     "category": "Productivity & Tools",
     "author": "Admin",
     "image_url": "/og-image.png",
@@ -213,7 +213,7 @@
       "best chrome extensions for accessibility"
     ],
     "canonicalPath": "/blog/best-chrome-extensions-for-accessibility-boost-your-browsing-experience",
-    "updated_at": "2026-08-04"
+    "updated_at": "2026-08-04T00:00:00.000Z"
   },
   {
     "id": "vpn-article11-betternet-review",
@@ -1376,218 +1376,34 @@
     "updated_at": "2026-06-08"
   },
   {
-    "id": "quick-screenshot-capture-extension",
-    "title": "Quick Screenshot Lite Review: I Tested 4 Screenshot Extensions for Chrome for 2 Weeks",
-    "slug": "quick-screenshot-capture-extension",
-    "description": "Quick Screenshot Lite tested against 3 competitors for 2 weeks. Full-page capture speed, annotation quality, export formats, and memory usage compared...",
-    "meta_description": "Quick Screenshot Lite tested against 3 competitors for 2 weeks. Full-page capture speed, annotation quality, export formats, and memory usage compared...",
-    "excerpt": "I tested 4 Chrome screenshot extensions including Quick Screenshot Lite, FireShot, Nimbus, and GoFullPage for 2 weeks. Speed, features, and image quality compared with real data.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "id": "bc16d225-475e-486e-b3cb-5b66a0b0a8fd",
+    "title": "Automating Business Reports with Formula Builder: A Practical Guide",
+    "slug": "automating-business-reports-with-formula-builder",
+    "description": "I tested automating business reports with Formula Builder Pro for a week. See how it compares to manual reporting and which companion tools complete the...",
+    "meta_description": "I tested automating business reports with Formula Builder Pro for a week. See how it compares to manual reporting and which companion tools complete the...",
+    "excerpt": "I spent a week automating business reports with Formula Builder Pro. Here is how it compares to manual Excel work, which companion extensions fill the gaps, and whether it saves enough time to matter.",
+    "published_at": "2026-06-06T10:00:00.000000+00:00",
     "category": "Productivity & Tools",
     "author": "James Mitchell",
-    "image_url": "/content/images/quick-screenshot-capture-extension/featured.webp",
-    "featured_image": "/content/images/quick-screenshot-capture-extension/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
+    "image_url": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
+    "featured_image": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
+    "reading_time": 7,
+    "read_time": 7,
     "views": 0,
     "tags": [
-      "quick screenshot lite",
-      "screenshot extension",
-      "chrome screenshot",
-      "screen capture"
+      "formula builder",
+      "business reports",
+      "automation",
+      "Chrome extensions"
     ],
     "keywords": [
-      "quick screenshot lite review",
-      "best screenshot extension chrome",
-      "chrome screenshot tool comparison",
-      "screen capture extension"
+      "Automating business reports with Formula Builder",
+      "Formula Builder Pro",
+      "automate reports Chrome",
+      "business reporting tools"
     ],
-    "canonicalPath": "/blog/quick-screenshot-capture-extension",
-    "updated_at": "2026-06-06T10:00:00.000+00:00"
-  },
-  {
-    "id": "comodo-chrome-guide",
-    "title": "Comodo Chrome Review: I Tested the Secure Browser Against Chrome, Brave, and Firefox",
-    "slug": "comodo-chrome-guide",
-    "description": "Comodo Chrome review after 3 weeks of testing against Chrome, Brave, and Firefox....",
-    "meta_description": "Comodo Chrome review after 3 weeks of testing against Chrome, Brave, and Firefox....",
-    "excerpt": "I spent 3 weeks testing Comodo Chrome against Google Chrome, Brave, and Firefox for security, speed, and memory usage. Here is my full review with benchmark results.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/comodo-chrome-guide/featured.webp",
-    "featured_image": "/content/images/comodo-chrome-guide/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "comodo chrome",
-      "secure browser",
-      "browser comparison",
-      "online security",
-      "privacy browser"
-    ],
-    "keywords": [
-      "comodo chrome review",
-      "secure browser comparison",
-      "best security browser 2026",
-      "comodo vs brave vs chrome"
-    ],
-    "canonicalPath": "/blog/comodo-chrome-guide",
-    "updated_at": "2026-06-06T10:00:00.000+00:00"
-  },
-  {
-    "id": "cookies-quick-manager-chrome",
-    "title": "Best Cookie Manager for Chrome: I Tested 4 Cookie Extensions for 2 Weeks",
-    "slug": "cookies-quick-manager-chrome",
-    "description": "Best cookie manager for Chrome tested: I compared 4 cookie extensions across 30 sites....",
-    "meta_description": "Best cookie manager for Chrome tested: I compared 4 cookie extensions across 30 sites....",
-    "excerpt": "I tested 4 cookie manager extensions on Chrome across 30 sites for 2 weeks. Real data on memory usage, features, privacy protection, and which one keeps your browsing clean.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/cookies-quick-manager-chrome/featured.webp",
-    "featured_image": "/content/images/cookies-quick-manager-chrome/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "cookie manager",
-      "chrome extension",
-      "privacy",
-      "cookie management",
-      "browser cleanup"
-    ],
-    "keywords": [
-      "best cookie manager chrome",
-      "cookie quick manager chrome review",
-      "cookie auto delete extension",
-      "chrome cookie cleaner"
-    ],
-    "canonicalPath": "/blog/cookies-quick-manager-chrome",
-    "updated_at": "2026-06-06T10:00:00.000+00:00"
-  },
-  {
-    "id": "contentsquare-extension-chrome",
-    "title": "Contentsquare Extension for Chrome Review: I Tested 4 UX Analytics Tools for 2 Weeks",
-    "slug": "contentsquare-extension-chrome",
-    "description": "Contentsquare extension for Chrome reviewed after 2 weeks of real testing against Hotjar, Crazy Egg, and Microsoft Clarity....",
-    "meta_description": "Contentsquare extension for Chrome reviewed after 2 weeks of real testing against Hotjar, Crazy Egg, and Microsoft Clarity....",
-    "excerpt": "I tested Contentsquare, Hotjar, Crazy Egg, and Microsoft Clarity across 3 websites for 2 weeks. Here is my full comparison with heatmaps, session replays, and real data.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/contentsquare-extension-chrome/featured.webp",
-    "featured_image": "/content/images/contentsquare-extension-chrome/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "contentsquare",
-      "ux analytics",
-      "heatmap tool",
-      "session replay",
-      "chrome extension"
-    ],
-    "keywords": [
-      "contentsquare extension chrome review",
-      "best ux analytics tool",
-      "heatmap chrome extension",
-      "contentsquare vs hotjar vs crazy egg"
-    ],
-    "canonicalPath": "/blog/contentsquare-extension-chrome",
-    "updated_at": "2026-06-06T10:00:00.000+00:00"
-  },
-  {
-    "id": "cors-chrome-guide",
-    "title": "CORS Chrome Guide: I Tested 4 CORS Solutions for Web Development — Here Is What Works",
-    "slug": "cors-chrome-guide",
-    "description": "CORS in Chrome explained and tested. I compared 4 CORS solutions (extensions, proxy, server config, dev tools) across 10 real API integrations....",
-    "meta_description": "CORS in Chrome explained and tested. I compared 4 CORS solutions (extensions, proxy, server config, dev tools) across 10 real API integrations....",
-    "excerpt": "I tested 4 approaches to handling CORS in Chrome across 10 API integrations. Real data on setup time, reliability, security tradeoffs, and which CORS solution you should use in 2026.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/cors-chrome-guide/featured.webp",
-    "featured_image": "/content/images/cors-chrome-guide/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "cors",
-      "chrome",
-      "web development",
-      "api",
-      "cross-origin"
-    ],
-    "keywords": [
-      "cors chrome",
-      "cors chrome extension",
-      "fix cors chrome",
-      "cross origin resource sharing chrome"
-    ],
-    "canonicalPath": "/blog/cors-chrome-guide",
-    "updated_at": "2026-06-06T10:00:00.000+00:00"
-  },
-  {
-    "id": "chrome-screenshot-tutorial",
-    "title": "Chrome Screenshot Tutorial: Step-by-Step Guide for Beginners and Pros",
-    "slug": "chrome-screenshot-tutorial",
-    "description": "Complete step-by-step Chrome screenshot tutorial for beginners and professionals....",
-    "meta_description": "Complete step-by-step Chrome screenshot tutorial for beginners and professionals....",
-    "excerpt": "Step-by-step Chrome screenshot tutorial covering every method. From basic shortcuts to advanced full-page captures with annotations, blur, and cloud save. Real examples included.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/chrome-screenshot-tutorial/featured.webp",
-    "featured_image": "/content/images/chrome-screenshot-tutorial/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "screenshot tutorial",
-      "chrome screenshot",
-      "screen capture tutorial",
-      "how to screenshot chrome"
-    ],
-    "keywords": [
-      "chrome screenshot tutorial",
-      "how to screenshot in chrome",
-      "chrome screenshot step by step",
-      "screenshot chrome extension tutorial"
-    ],
-    "canonicalPath": "/blog/chrome-screenshot-tutorial",
-    "updated_at": "2026-06-06T10:00:00.000+00:00"
-  },
-  {
-    "id": "chrome-screen-capture-guide",
-    "title": "Chrome Screen Capture Guide: How to Take, Edit, and Manage Screenshots in 2026",
-    "slug": "chrome-screen-capture-guide",
-    "description": "Complete Chrome screen capture guide covering built-in tools, keyboard shortcuts, extensions like Quick Screenshot Lite, annotation tips, and workflow...",
-    "meta_description": "Complete Chrome screen capture guide covering built-in tools, keyboard shortcuts, extensions like Quick Screenshot Lite, annotation tips, and workflow...",
-    "excerpt": "Complete guide to screen capture in Chrome. From keyboard shortcuts to extensions, learn how to take, annotate, and manage screenshots efficiently with tips from real daily use.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/chrome-screen-capture-guide/featured.webp",
-    "featured_image": "/content/images/chrome-screen-capture-guide/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "screen capture",
-      "chrome screenshot",
-      "screenshot guide",
-      "screen capture tips"
-    ],
-    "keywords": [
-      "chrome screen capture guide",
-      "how to screenshot chrome",
-      "chrome screenshot tips",
-      "screen capture extension chrome"
-    ],
-    "canonicalPath": "/blog/chrome-screen-capture-guide",
-    "updated_at": "2026-06-06T10:00:00.000+00:00"
+    "canonicalPath": "/blog/automating-business-reports-with-formula-builder",
+    "updated_at": "2026-06-06T10:00:00.000000+00:00"
   },
   {
     "id": "capture-screen-chrome-guide",
@@ -1647,6 +1463,190 @@
       "scrolling screenshot extension"
     ],
     "canonicalPath": "/blog/capture-scrolling-webpages-as-png-or-pdf",
+    "updated_at": "2026-06-06T10:00:00.000+00:00"
+  },
+  {
+    "id": "chrome-screen-capture-guide",
+    "title": "Chrome Screen Capture Guide: How to Take, Edit, and Manage Screenshots in 2026",
+    "slug": "chrome-screen-capture-guide",
+    "description": "Complete Chrome screen capture guide covering built-in tools, keyboard shortcuts, extensions like Quick Screenshot Lite, annotation tips, and workflow...",
+    "meta_description": "Complete Chrome screen capture guide covering built-in tools, keyboard shortcuts, extensions like Quick Screenshot Lite, annotation tips, and workflow...",
+    "excerpt": "Complete guide to screen capture in Chrome. From keyboard shortcuts to extensions, learn how to take, annotate, and manage screenshots efficiently with tips from real daily use.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-screen-capture-guide/featured.webp",
+    "featured_image": "/content/images/chrome-screen-capture-guide/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "screen capture",
+      "chrome screenshot",
+      "screenshot guide",
+      "screen capture tips"
+    ],
+    "keywords": [
+      "chrome screen capture guide",
+      "how to screenshot chrome",
+      "chrome screenshot tips",
+      "screen capture extension chrome"
+    ],
+    "canonicalPath": "/blog/chrome-screen-capture-guide",
+    "updated_at": "2026-06-06T10:00:00.000+00:00"
+  },
+  {
+    "id": "chrome-screenshot-tutorial",
+    "title": "Chrome Screenshot Tutorial: Step-by-Step Guide for Beginners and Pros",
+    "slug": "chrome-screenshot-tutorial",
+    "description": "Complete step-by-step Chrome screenshot tutorial for beginners and professionals....",
+    "meta_description": "Complete step-by-step Chrome screenshot tutorial for beginners and professionals....",
+    "excerpt": "Step-by-step Chrome screenshot tutorial covering every method. From basic shortcuts to advanced full-page captures with annotations, blur, and cloud save. Real examples included.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-screenshot-tutorial/featured.webp",
+    "featured_image": "/content/images/chrome-screenshot-tutorial/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "screenshot tutorial",
+      "chrome screenshot",
+      "screen capture tutorial",
+      "how to screenshot chrome"
+    ],
+    "keywords": [
+      "chrome screenshot tutorial",
+      "how to screenshot in chrome",
+      "chrome screenshot step by step",
+      "screenshot chrome extension tutorial"
+    ],
+    "canonicalPath": "/blog/chrome-screenshot-tutorial",
+    "updated_at": "2026-06-06T10:00:00.000+00:00"
+  },
+  {
+    "id": "comodo-chrome-guide",
+    "title": "Comodo Chrome Review: I Tested the Secure Browser Against Chrome, Brave, and Firefox",
+    "slug": "comodo-chrome-guide",
+    "description": "Comodo Chrome review after 3 weeks of testing against Chrome, Brave, and Firefox....",
+    "meta_description": "Comodo Chrome review after 3 weeks of testing against Chrome, Brave, and Firefox....",
+    "excerpt": "I spent 3 weeks testing Comodo Chrome against Google Chrome, Brave, and Firefox for security, speed, and memory usage. Here is my full review with benchmark results.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/comodo-chrome-guide/featured.webp",
+    "featured_image": "/content/images/comodo-chrome-guide/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "comodo chrome",
+      "secure browser",
+      "browser comparison",
+      "online security",
+      "privacy browser"
+    ],
+    "keywords": [
+      "comodo chrome review",
+      "secure browser comparison",
+      "best security browser 2026",
+      "comodo vs brave vs chrome"
+    ],
+    "canonicalPath": "/blog/comodo-chrome-guide",
+    "updated_at": "2026-06-06T10:00:00.000+00:00"
+  },
+  {
+    "id": "contentsquare-extension-chrome",
+    "title": "Contentsquare Extension for Chrome Review: I Tested 4 UX Analytics Tools for 2 Weeks",
+    "slug": "contentsquare-extension-chrome",
+    "description": "Contentsquare extension for Chrome reviewed after 2 weeks of real testing against Hotjar, Crazy Egg, and Microsoft Clarity....",
+    "meta_description": "Contentsquare extension for Chrome reviewed after 2 weeks of real testing against Hotjar, Crazy Egg, and Microsoft Clarity....",
+    "excerpt": "I tested Contentsquare, Hotjar, Crazy Egg, and Microsoft Clarity across 3 websites for 2 weeks. Here is my full comparison with heatmaps, session replays, and real data.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/contentsquare-extension-chrome/featured.webp",
+    "featured_image": "/content/images/contentsquare-extension-chrome/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "contentsquare",
+      "ux analytics",
+      "heatmap tool",
+      "session replay",
+      "chrome extension"
+    ],
+    "keywords": [
+      "contentsquare extension chrome review",
+      "best ux analytics tool",
+      "heatmap chrome extension",
+      "contentsquare vs hotjar vs crazy egg"
+    ],
+    "canonicalPath": "/blog/contentsquare-extension-chrome",
+    "updated_at": "2026-06-06T10:00:00.000+00:00"
+  },
+  {
+    "id": "cookies-quick-manager-chrome",
+    "title": "Best Cookie Manager for Chrome: I Tested 4 Cookie Extensions for 2 Weeks",
+    "slug": "cookies-quick-manager-chrome",
+    "description": "Best cookie manager for Chrome tested: I compared 4 cookie extensions across 30 sites....",
+    "meta_description": "Best cookie manager for Chrome tested: I compared 4 cookie extensions across 30 sites....",
+    "excerpt": "I tested 4 cookie manager extensions on Chrome across 30 sites for 2 weeks. Real data on memory usage, features, privacy protection, and which one keeps your browsing clean.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/cookies-quick-manager-chrome/featured.webp",
+    "featured_image": "/content/images/cookies-quick-manager-chrome/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "cookie manager",
+      "chrome extension",
+      "privacy",
+      "cookie management",
+      "browser cleanup"
+    ],
+    "keywords": [
+      "best cookie manager chrome",
+      "cookie quick manager chrome review",
+      "cookie auto delete extension",
+      "chrome cookie cleaner"
+    ],
+    "canonicalPath": "/blog/cookies-quick-manager-chrome",
+    "updated_at": "2026-06-06T10:00:00.000+00:00"
+  },
+  {
+    "id": "cors-chrome-guide",
+    "title": "CORS Chrome Guide: I Tested 4 CORS Solutions for Web Development — Here Is What Works",
+    "slug": "cors-chrome-guide",
+    "description": "CORS in Chrome explained and tested. I compared 4 CORS solutions (extensions, proxy, server config, dev tools) across 10 real API integrations....",
+    "meta_description": "CORS in Chrome explained and tested. I compared 4 CORS solutions (extensions, proxy, server config, dev tools) across 10 real API integrations....",
+    "excerpt": "I tested 4 approaches to handling CORS in Chrome across 10 API integrations. Real data on setup time, reliability, security tradeoffs, and which CORS solution you should use in 2026.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/cors-chrome-guide/featured.webp",
+    "featured_image": "/content/images/cors-chrome-guide/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "cors",
+      "chrome",
+      "web development",
+      "api",
+      "cross-origin"
+    ],
+    "keywords": [
+      "cors chrome",
+      "cors chrome extension",
+      "fix cors chrome",
+      "cross origin resource sharing chrome"
+    ],
+    "canonicalPath": "/blog/cors-chrome-guide",
     "updated_at": "2026-06-06T10:00:00.000+00:00"
   },
   {
@@ -1743,6 +1743,36 @@
     "updated_at": "2026-06-06T10:00:00.000+00:00"
   },
   {
+    "id": "quick-screenshot-capture-extension",
+    "title": "Quick Screenshot Lite Review: I Tested 4 Screenshot Extensions for Chrome for 2 Weeks",
+    "slug": "quick-screenshot-capture-extension",
+    "description": "Quick Screenshot Lite tested against 3 competitors for 2 weeks. Full-page capture speed, annotation quality, export formats, and memory usage compared...",
+    "meta_description": "Quick Screenshot Lite tested against 3 competitors for 2 weeks. Full-page capture speed, annotation quality, export formats, and memory usage compared...",
+    "excerpt": "I tested 4 Chrome screenshot extensions including Quick Screenshot Lite, FireShot, Nimbus, and GoFullPage for 2 weeks. Speed, features, and image quality compared with real data.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/quick-screenshot-capture-extension/featured.webp",
+    "featured_image": "/content/images/quick-screenshot-capture-extension/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "quick screenshot lite",
+      "screenshot extension",
+      "chrome screenshot",
+      "screen capture"
+    ],
+    "keywords": [
+      "quick screenshot lite review",
+      "best screenshot extension chrome",
+      "chrome screenshot tool comparison",
+      "screen capture extension"
+    ],
+    "canonicalPath": "/blog/quick-screenshot-capture-extension",
+    "updated_at": "2026-06-06T10:00:00.000+00:00"
+  },
+  {
     "id": "screenshot-tools-chrome-comparison",
     "title": "Best Chrome Screenshot Tools: I Tested 5 Methods — Built-in vs Extensions vs Desktop Apps",
     "slug": "screenshot-tools-chrome-comparison",
@@ -1771,36 +1801,6 @@
     ],
     "canonicalPath": "/blog/screenshot-tools-chrome-comparison",
     "updated_at": "2026-06-06T10:00:00.000+00:00"
-  },
-  {
-    "id": "bc16d225-475e-486e-b3cb-5b66a0b0a8fd",
-    "title": "Automating Business Reports with Formula Builder: A Practical Guide",
-    "slug": "automating-business-reports-with-formula-builder",
-    "description": "I tested automating business reports with Formula Builder Pro for a week. See how it compares to manual reporting and which companion tools complete the...",
-    "meta_description": "I tested automating business reports with Formula Builder Pro for a week. See how it compares to manual reporting and which companion tools complete the...",
-    "excerpt": "I spent a week automating business reports with Formula Builder Pro. Here is how it compares to manual Excel work, which companion extensions fill the gaps, and whether it saves enough time to matter.",
-    "published_at": "2026-06-06T10:00:00.000000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
-    "featured_image": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
-    "reading_time": 7,
-    "read_time": 7,
-    "views": 0,
-    "tags": [
-      "formula builder",
-      "business reports",
-      "automation",
-      "Chrome extensions"
-    ],
-    "keywords": [
-      "Automating business reports with Formula Builder",
-      "Formula Builder Pro",
-      "automate reports Chrome",
-      "business reporting tools"
-    ],
-    "canonicalPath": "/blog/automating-business-reports-with-formula-builder",
-    "updated_at": "2026-06-06T10:00:00.000000+00:00"
   },
   {
     "id": "babd4e43-164e-4b31-9b6f-af21017f11f5",
@@ -6214,7 +6214,7 @@
   {
     "id": "3143c31b-827c-4386-9fce-6d7a04e2044d",
     "title": "Mastering Tab Management: The Best Chrome Extensions to Organize Tabs for Enhanced Productivity",
-    "slug": "mastering-tab-management mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa",
+    "slug": "mastering-tab-management-mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa",
     "description": "Are you tired of feeling overwhelmed by the sheer number of tabs you have open in your Chrome browser? Do you struggle to find the information you need amidst a",
     "meta_description": "Are you tired of feeling overwhelmed by the sheer number of tabs you have open in your Chrome browser? Do you struggle to find the information you need amidst a",
     "excerpt": "Are you tired of feeling overwhelmed by the sheer number of tabs you have open in your Chrome browser? Do you struggle to find the information you need amidst a",
@@ -6230,7 +6230,7 @@
     "keywords": [
       "chrome extensions to organize tabs"
     ],
-    "canonicalPath": "/blog/mastering-tab-management mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa",
+    "canonicalPath": "/blog/mastering-tab-management-mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa",
     "updated_at": "2026-04-23T14:15:02.119709+00:00"
   },
   {
@@ -7138,7 +7138,7 @@
   {
     "id": "c549e364-5e69-40ce-8f0e-336ee7780593",
     "title": "Supercharge Your Downloads: The Best Chrome Extension for Downloading Files Faster",
-    "slug": "supercharge-your-downloads supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
+    "slug": "supercharge-your-downloads-supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
     "description": "Everything worth knowing about your downloads, including installation steps and how it compares to alternatives.",
     "meta_description": "Everything worth knowing about your downloads, including installation steps and how it compares to alternatives.",
     "excerpt": "Are you tired of waiting for what feels like an eternity for your files to download? Do you wish there was a way to speed up the process and get your files fast",
@@ -7154,7 +7154,7 @@
     "keywords": [
       "chrome extension for downloading files faster"
     ],
-    "canonicalPath": "/blog/supercharge-your-downloads supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
+    "canonicalPath": "/blog/supercharge-your-downloads-supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
     "updated_at": "2026-04-23T12:25:33.737337+00:00"
   },
   {
@@ -9263,6 +9263,73 @@
     "updated_at": "2026-04-18T18:39:56.250706+00:00"
   },
   {
+    "id": "42f891f9-d3b7-4612-bb95-dd620b54af60",
+    "title": "Ad Blocker for Android Chrome: Complete Guide 2026",
+    "slug": "adblock-chrome-android-complete-guide-2026",
+    "description": "I tested every method to block ads on Android Chrome in 2026 — Kiwi Browser, Firefox, DNS, and more....",
+    "meta_description": "I tested every method to block ads on Android Chrome in 2026 — Kiwi Browser, Firefox, DNS, and more....",
+    "excerpt": "I tested every method to block ads on Android Chrome in 2026 — Kiwi Browser, Firefox, DNS, and more. Here is the setup that actually works and which companion extensions to pair with it.",
+    "published_at": "2026-03-31T08:51:05.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/adblock-chrome-android-complete-guide-2026/featured.webp",
+    "featured_image": "/content/images/adblock-chrome-android-complete-guide-2026/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "adblock",
+      "android",
+      "chrome",
+      "mobile",
+      "ublock",
+      "kiwi"
+    ],
+    "keywords": [
+      "adblock chrome android",
+      "ad blocker android chrome",
+      "best ad blocker android chrome 2026",
+      "ublock origin android",
+      "chrome android adblock no root"
+    ],
+    "canonicalPath": "/blog/adblock-chrome-android-complete-guide-2026",
+    "updated_at": "2026-06-05T12:00:00.000000+00:00"
+  },
+  {
+    "id": "954ea46d-09c0-41e5-81bc-f80d25ba70fc",
+    "title": "Best Chrome Privacy Extensions 2026: Ghostery, uBlock & More",
+    "slug": "best-chrome-privacy-extensions-2026-complete-guide",
+    "description": "The best Chrome privacy extensions in 2026: Ghostery, Privacy Badger, and uBlock Origin compared for tracker blocking, speed, and data practices....",
+    "meta_description": "The best Chrome privacy extensions in 2026: Ghostery, Privacy Badger, and uBlock Origin compared for tracker blocking, speed, and data practices....",
+    "excerpt": "The best Chrome privacy extensions in 2026: Ghostery, Privacy Badger, and uBlock Origin compared for tracker blocking, speed, and data practices. Find the right one for you.",
+    "published_at": "2026-03-31T08:51:05.000+00:00",
+    "category": "Security & Privacy",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-chrome-privacy-extensions-2026-complete-guide/featured.webp",
+    "featured_image": "/content/images/best-chrome-privacy-extensions-2026-complete-guide/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "privacy",
+      "ghostery",
+      "tracker",
+      "ublock",
+      "chrome",
+      "security",
+      "privacy-badger"
+    ],
+    "keywords": [
+      "best chrome privacy extensions 2026",
+      "ghostery chrome review",
+      "privacy badger vs ghostery",
+      "block trackers chrome",
+      "is ghostery safe"
+    ],
+    "canonicalPath": "/blog/best-chrome-privacy-extensions-2026-complete-guide",
+    "updated_at": "2026-03-31T08:51:05.000+00:00"
+  },
+  {
     "id": "9af94f0a-bd7d-458e-bdd0-d570f5212fe5",
     "title": "Best Chrome Screenshot Extensions 2026: Complete Guide",
     "slug": "best-chrome-screenshot-extensions-2026-complete-guide",
@@ -9330,40 +9397,6 @@
     "updated_at": "2026-03-31T08:51:05.000+00:00"
   },
   {
-    "id": "954ea46d-09c0-41e5-81bc-f80d25ba70fc",
-    "title": "Best Chrome Privacy Extensions 2026: Ghostery, uBlock & More",
-    "slug": "best-chrome-privacy-extensions-2026-complete-guide",
-    "description": "The best Chrome privacy extensions in 2026: Ghostery, Privacy Badger, and uBlock Origin compared for tracker blocking, speed, and data practices....",
-    "meta_description": "The best Chrome privacy extensions in 2026: Ghostery, Privacy Badger, and uBlock Origin compared for tracker blocking, speed, and data practices....",
-    "excerpt": "The best Chrome privacy extensions in 2026: Ghostery, Privacy Badger, and uBlock Origin compared for tracker blocking, speed, and data practices. Find the right one for you.",
-    "published_at": "2026-03-31T08:51:05.000+00:00",
-    "category": "Security & Privacy",
-    "author": "James Mitchell",
-    "image_url": "/content/images/best-chrome-privacy-extensions-2026-complete-guide/featured.webp",
-    "featured_image": "/content/images/best-chrome-privacy-extensions-2026-complete-guide/featured.webp",
-    "reading_time": 11,
-    "read_time": 11,
-    "views": 0,
-    "tags": [
-      "privacy",
-      "ghostery",
-      "tracker",
-      "ublock",
-      "chrome",
-      "security",
-      "privacy-badger"
-    ],
-    "keywords": [
-      "best chrome privacy extensions 2026",
-      "ghostery chrome review",
-      "privacy badger vs ghostery",
-      "block trackers chrome",
-      "is ghostery safe"
-    ],
-    "canonicalPath": "/blog/best-chrome-privacy-extensions-2026-complete-guide",
-    "updated_at": "2026-03-31T08:51:05.000+00:00"
-  },
-  {
     "id": "2f9e800e-9150-4023-a72a-11e014116d85",
     "title": "How to Fix Chrome High Memory Usage in 2026: Complete Guide",
     "slug": "how-to-fix-chrome-high-memory-usage-2026-complete-guide",
@@ -9394,39 +9427,6 @@
     ],
     "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
     "updated_at": "2026-03-31T08:51:05.000+00:00"
-  },
-  {
-    "id": "42f891f9-d3b7-4612-bb95-dd620b54af60",
-    "title": "Ad Blocker for Android Chrome: Complete Guide 2026",
-    "slug": "adblock-chrome-android-complete-guide-2026",
-    "description": "I tested every method to block ads on Android Chrome in 2026 — Kiwi Browser, Firefox, DNS, and more....",
-    "meta_description": "I tested every method to block ads on Android Chrome in 2026 — Kiwi Browser, Firefox, DNS, and more....",
-    "excerpt": "I tested every method to block ads on Android Chrome in 2026 — Kiwi Browser, Firefox, DNS, and more. Here is the setup that actually works and which companion extensions to pair with it.",
-    "published_at": "2026-03-31T08:51:05.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/adblock-chrome-android-complete-guide-2026/featured.webp",
-    "featured_image": "/content/images/adblock-chrome-android-complete-guide-2026/featured.webp",
-    "reading_time": 10,
-    "read_time": 10,
-    "views": 0,
-    "tags": [
-      "adblock",
-      "android",
-      "chrome",
-      "mobile",
-      "ublock",
-      "kiwi"
-    ],
-    "keywords": [
-      "adblock chrome android",
-      "ad blocker android chrome",
-      "best ad blocker android chrome 2026",
-      "ublock origin android",
-      "chrome android adblock no root"
-    ],
-    "canonicalPath": "/blog/adblock-chrome-android-complete-guide-2026",
-    "updated_at": "2026-06-05T12:00:00.000000+00:00"
   },
   {
     "id": "0df3ab0b-9052-41f6-91e2-b3b37564f19c",
@@ -9629,7 +9629,7 @@
   {
     "id": "b55bb75c-dd03-4463-87da-b975a2d1e84d",
     "title": "Optimize Your Browser: The Best Ways to Reduce RAM Usage with Chrome Extensions",
-    "slug": "optimize-your-browser optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
+    "slug": "optimize-your-browser-optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
     "description": "Are you tired of your browser consuming excessive RAM, slowing down your computer, and hindering your productivity? You're not alone. Many users face this issue",
     "meta_description": "Are you tired of your browser consuming excessive RAM, slowing down your computer, and hindering your productivity? You're not alone. Many users face this issue",
     "excerpt": "Are you tired of your browser consuming excessive RAM, slowing down your computer, and hindering your productivity? You're not alone. Many users face this issue",
@@ -9645,7 +9645,7 @@
     "keywords": [
       "reduce ram usage chrome extension"
     ],
-    "canonicalPath": "/blog/optimize-your-browser optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
+    "canonicalPath": "/blog/optimize-your-browser-optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
     "updated_at": "2026-04-23T12:25:09.098678+00:00"
   },
   {
@@ -9949,7 +9949,7 @@
     "description": "Master Chrome's monitoring tools. Learn how to use the Task Manager and Performance tab to identify resource-heavy tabs and extensions.",
     "meta_description": "Master Chrome's monitoring tools. Learn how to use the Task Manager and Performance tab to identify resource-heavy tabs and extensions.",
     "excerpt": "Learn how to find out which tab or extension is slowing you down. A complete guide to using Chrome's built-in monitoring tools for performance.",
-    "published_at": "2026-03-24 00:00:00+00:00",
+    "published_at": "2026-03-24T00:00:00.000Z",
     "category": "Performance & Memory",
     "author": "James Mitchell",
     "image_url": "/content/images/monitor-chrome-ram-usage-guide/featured.webp",
@@ -9965,7 +9965,7 @@
     ],
     "keywords": [],
     "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
-    "updated_at": "2026-03-24 00:00:00+00:00"
+    "updated_at": "2026-03-24T00:00:00.000Z"
   },
   {
     "id": "16d7d938-7bd5-4c48-bb29-d3173b69681e",
@@ -10106,7 +10106,7 @@
     "description": "Step-by-step tutorial on fixing 'Out of Memory' errors in Google Chrome. Recover from crashes and prevent future memory-related browser failures.",
     "meta_description": "Step-by-step tutorial on fixing 'Out of Memory' errors in Google Chrome. Recover from crashes and prevent future memory-related browser failures.",
     "excerpt": "Encountering 'Aw Snap! Out of Memory' errors? Follow our step-by-step troubleshooting guide to fix browser crashes and recover your data.",
-    "published_at": "2026-03-23 00:00:00+00:00",
+    "published_at": "2026-03-23T00:00:00.000Z",
     "category": "Performance & Memory",
     "author": "James Mitchell",
     "image_url": "/content/images/fix-chrome-out-of-memory-errors/featured.webp",
@@ -10122,7 +10122,7 @@
     ],
     "keywords": [],
     "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
-    "updated_at": "2026-03-23 00:00:00+00:00"
+    "updated_at": "2026-03-23T00:00:00.000Z"
   },
   {
     "id": "5702071e-09ac-412b-ac41-f9fd4cd0de3d",
@@ -10535,26 +10535,6 @@
     "updated_at": "2026-04-23T12:25:56.236022+00:00"
   },
   {
-    "id": "privacy-security-guide",
-    "title": "Privacy & Security Guide: Protect Your Browser in 2026",
-    "slug": "privacy-security-guide",
-    "description": "Take control of your online privacy. Our 2026 guide covers the essential security extensions every Chrome user needs.",
-    "meta_description": "Take control of your online privacy. Our 2026 guide covers the essential security extensions every Chrome user needs.",
-    "excerpt": "Stay safe online. Discover the best browser extensions for blocking trackers, managing passwords, and preventing URL hijacking.",
-    "published_at": "2026-03-20T00:00:00.000Z",
-    "category": "Security & Privacy",
-    "author": "James Mitchell",
-    "image_url": "/content/images/privacy-security-guide/featured.webp",
-    "featured_image": "/content/images/privacy-security-guide/featured.webp",
-    "reading_time": 16,
-    "read_time": 16,
-    "views": 0,
-    "tags": [],
-    "keywords": [],
-    "canonicalPath": "/blog/best-chrome-privacy-extensions-2026-complete-guide",
-    "updated_at": "2026-03-20T00:00:00.000Z"
-  },
-  {
     "id": "chrome-screenshot-guide",
     "title": "Master Guide: Chrome Screenshot Extensions (2026)",
     "slug": "chrome-screenshot-guide",
@@ -10584,6 +10564,52 @@
     "updated_at": "2026-06-05T12:00:00.000000+00:00"
   },
   {
+    "id": "privacy-security-guide",
+    "title": "Privacy & Security Guide: Protect Your Browser in 2026",
+    "slug": "privacy-security-guide",
+    "description": "Take control of your online privacy. Our 2026 guide covers the essential security extensions every Chrome user needs.",
+    "meta_description": "Take control of your online privacy. Our 2026 guide covers the essential security extensions every Chrome user needs.",
+    "excerpt": "Stay safe online. Discover the best browser extensions for blocking trackers, managing passwords, and preventing URL hijacking.",
+    "published_at": "2026-03-20T00:00:00.000Z",
+    "category": "Security & Privacy",
+    "author": "James Mitchell",
+    "image_url": "/content/images/privacy-security-guide/featured.webp",
+    "featured_image": "/content/images/privacy-security-guide/featured.webp",
+    "reading_time": 16,
+    "read_time": 16,
+    "views": 0,
+    "tags": [],
+    "keywords": [],
+    "canonicalPath": "/blog/best-chrome-privacy-extensions-2026-complete-guide",
+    "updated_at": "2026-03-20T00:00:00.000Z"
+  },
+  {
+    "id": "ultimate-chrome-ram-memory-management-guide",
+    "title": "Ultimate Chrome RAM & Memory Management Guide (2026)",
+    "slug": "ultimate-chrome-ram-memory-management-guide",
+    "description": "Learn how to optimize Chrome RAM usage with our comprehensive guide. Fix high memory consumption and boost browser speed using native tools and extensions.",
+    "meta_description": "Learn how to optimize Chrome RAM usage with our comprehensive guide. Fix high memory consumption and boost browser speed using native tools and extensions.",
+    "excerpt": "Master Chrome RAM management with our definitive 3000+ word guide. Learn how to fix high memory usage, optimize performance, and use advanced tools for a faster browser in 2026.",
+    "published_at": "2026-03-20T00:00:00.000Z",
+    "category": "Performance & Memory",
+    "author": "James Mitchell",
+    "image_url": "/content/images/ultimate-chrome-ram-memory-management-guide/featured.webp",
+    "featured_image": "/content/images/ultimate-chrome-ram-memory-management-guide/featured.webp",
+    "reading_time": 15,
+    "read_time": 15,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "RAM",
+      "Performance",
+      "Optimization",
+      "Memory Management"
+    ],
+    "keywords": [],
+    "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
+    "updated_at": "2026-03-20T00:00:00.000Z"
+  },
+  {
     "id": "youtube-tools-guide",
     "title": "YouTube Browser Tools & Downloaders (2026)",
     "slug": "youtube-tools-guide",
@@ -10602,32 +10628,6 @@
     "keywords": [],
     "canonicalPath": "/blog/best-youtube-downloader-chrome-extension-2026",
     "updated_at": "2026-03-20T00:00:00.000Z"
-  },
-  {
-    "id": "ultimate-chrome-ram-memory-management-guide",
-    "title": "Ultimate Chrome RAM & Memory Management Guide (2026)",
-    "slug": "ultimate-chrome-ram-memory-management-guide",
-    "description": "Learn how to optimize Chrome RAM usage with our comprehensive guide. Fix high memory consumption and boost browser speed using native tools and extensions.",
-    "meta_description": "Learn how to optimize Chrome RAM usage with our comprehensive guide. Fix high memory consumption and boost browser speed using native tools and extensions.",
-    "excerpt": "Master Chrome RAM management with our definitive 3000+ word guide. Learn how to fix high memory usage, optimize performance, and use advanced tools for a faster browser in 2026.",
-    "published_at": "2026-03-20 00:00:00+00:00",
-    "category": "Performance & Memory",
-    "author": "James Mitchell",
-    "image_url": "/content/images/ultimate-chrome-ram-memory-management-guide/featured.webp",
-    "featured_image": "/content/images/ultimate-chrome-ram-memory-management-guide/featured.webp",
-    "reading_time": 15,
-    "read_time": 15,
-    "views": 0,
-    "tags": [
-      "Chrome",
-      "RAM",
-      "Performance",
-      "Optimization",
-      "Memory Management"
-    ],
-    "keywords": [],
-    "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
-    "updated_at": "2026-03-20 00:00:00+00:00"
   },
   {
     "id": "b95971cc-e9c0-4a35-b9c7-968364bc6ebc",
@@ -11057,26 +11057,26 @@
   },
   {
     "id": "064163e6-ef34-4bcb-a81e-d4b9aec4b23f",
-    "title": "Kiwi vs Yandex vs Lemur 2026: Best Browser for Chrome Extensions on Android",
-    "slug": "kiwi-vs-yandex-vs-lemur-android-extensions",
-    "description": "I tested Kiwi, Yandex, and Lemur browsers on a Galaxy S23 with 10 Chrome extensions each. Here is which runs extensions best and protects your privacy.",
-    "meta_description": "I tested Kiwi, Yandex, and Lemur browsers on a Galaxy S23 with 10 Chrome extensions each. Here is which runs extensions best and protects your privacy.",
-    "excerpt": "I tested Chrome extensions on Kiwi, Yandex, and Lemur browsers for Android. Here is which one runs extensions best without compromising privacy.",
+    "title": "Chrome Extensions vs Web Apps 2026: Which Is Better for Productivity?",
+    "slug": "chrome-extensions-vs-web-apps-comparison",
+    "description": "I tested Chrome extensions against web apps for 10 productivity tasks over two weeks. Here is which approach wins for each use case.",
+    "meta_description": "I tested Chrome extensions against web apps for 10 productivity tasks over two weeks. Here is which approach wins for each use case.",
+    "excerpt": "I spent two weeks comparing Chrome extensions against web apps for 10 common productivity tasks. Here is when to use each.",
     "published_at": "2026-03-16T17:27:37.129+00:00",
     "category": "Productivity & Tools",
     "author": "James Mitchell",
-    "image_url": "/content/images/kiwi-vs-yandex-vs-lemur-android-extensions/featured.webp",
-    "featured_image": "/content/images/kiwi-vs-yandex-vs-lemur-android-extensions/featured.webp",
+    "image_url": "/content/images/chrome-extensions-vs-web-apps-comparison/featured.webp",
+    "featured_image": "/content/images/chrome-extensions-vs-web-apps-comparison/featured.webp",
     "reading_time": 8,
     "read_time": 8,
     "views": 1,
     "tags": [],
     "keywords": [
-      "kiwi vs yandex vs lemur",
-      "chrome extensions on android",
-      "android browser with extensions"
+      "chrome extensions vs web apps",
+      "extensions vs web apps",
+      "chrome extension or web app"
     ],
-    "canonicalPath": "/blog/kiwi-vs-yandex-vs-lemur-android-extensions",
+    "canonicalPath": "/blog/chrome-extensions-vs-web-apps-comparison",
     "updated_at": "2026-04-23T12:27:14.12643+00:00"
   },
   {
@@ -12579,7 +12579,7 @@
   {
     "id": "dac72116-fcb7-4b67-9151-2ee5d9ab2628",
     "title": "Stop Trackers Chrome: Protect Your Online Privacy with Effective Solutions",
-    "slug": "stop-trackers-chrome stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions-mm3scn1bz3l",
+    "slug": "stop-trackers-chrome-stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions-mm3scn1bz3l",
     "description": "A practical breakdown of stop trackers chrome: how it works, how to set it up, and where it falls short.",
     "meta_description": "A practical breakdown of stop trackers chrome: how it works, how to set it up, and where it falls short.",
     "excerpt": "In today's digital age, online privacy has become a major concern for internet users. With the rise of tracking technologies, it's easier than ever for companie",
@@ -12595,7 +12595,7 @@
     "keywords": [
       "stop trackers chrome"
     ],
-    "canonicalPath": "/blog/stop-trackers-chrome stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions-mm3scn1bz3l",
+    "canonicalPath": "/blog/stop-trackers-chrome-stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions-mm3scn1bz3l",
     "updated_at": "2026-04-23T12:26:04.477105+00:00"
   },
   {
@@ -14185,7 +14185,7 @@
     "description": "Is Chrome slow? Learn how to fix Chrome high memory usage instantly in 2026. Reclaim 50%+ RAM and boost speed with our 10 pro tips. (100% Free)",
     "meta_description": "Is Chrome slow? Learn how to fix Chrome high memory usage instantly in 2026. Reclaim 50%+ RAM and boost speed with our 10 pro tips. (100% Free)",
     "excerpt": "Is Chrome slow? Learn how to fix Chrome high memory usage instantly in 2026. Reclaim 50%+ RAM and boost speed with our 10 pro tips. (100% Free)",
-    "published_at": "2026-02-23 10:00:00+00:00",
+    "published_at": "2026-02-23T10:00:00.000Z",
     "category": "Performance & Memory",
     "author": "James Mitchell",
     "image_url": "/content/images/how-to-fix-chrome-memory-2026/featured.webp",
@@ -14202,7 +14202,7 @@
     ],
     "keywords": [],
     "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
-    "updated_at": "2026-02-23 10:00:00+00:00"
+    "updated_at": "2026-02-23T10:00:00.000Z"
   },
   {
     "id": "777e9975-27d0-4c91-ae56-d3a51331bf41",
