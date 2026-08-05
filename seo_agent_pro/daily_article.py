@@ -125,20 +125,23 @@ def make_seo_title(title: str) -> str | None:
     # giving up (the previous behavior — this is exactly what produced an
     # 86-char <title> tag for the accessibility article: cleanup couldn't
     # get it under budget, so seo_title was left unset and the site fell
-    # back to the full uncut title + " | ExtensionTo"). Two more attempts,
-    # in order, before finally giving up:
+    # back to the full uncut title + " | ExtensionTo"), hard-truncate at
+    # the last word boundary that fits, never mid-word.
     #
-    # 1. Titles are usually "Main Keyword Phrase: Subtitle" — the part
-    #    before the first colon/dash is normally the actual keyword target
-    #    and reads fine standalone. Use it if it fits the budget.
-    head = re.split(r"[:\u2013\u2014]|(?<!\w)-(?!\w)", cleaned, maxsplit=1)[0].strip()
-    if 6 <= len(head) <= TARGET_TITLE_LEN:
-        return head[0].upper() + head[1:]
-
-    # 2. Hard word-boundary truncation — cut at the last whitespace that
-    #    still fits, never mid-word.
+    # NOTE: an earlier version of this fallback also tried "take the part
+    # before the first colon/dash" first, on the theory that titles are
+    # usually "Keyword Phrase: Subtitle". That was proven wrong here: for
+    # "Unlocking the Power of Chrome: A Comprehensive Guide to Store
+    # Extension Chrome" it returned "Unlocking the Power of Chrome",
+    # dropping "Store Extension Chrome" - the actual product name - which
+    # is the exact keyword-loss failure mode already found and removed
+    # from scripts/audit-messy-slugs.ts and scripts/audit-long-titles.ts
+    # for the same reason. Word-boundary truncation of the full cleaned
+    # string doesn't privilege one side over the other, so it can't
+    # reproduce that specific failure.
     if len(cleaned) > TARGET_TITLE_LEN:
         truncated = cleaned[:TARGET_TITLE_LEN].rsplit(" ", 1)[0].strip()
+        truncated = re.sub(r"[:\-\u2013\u2014,]+$", "", truncated).strip()
         if 6 <= len(truncated) <= TARGET_TITLE_LEN:
             return truncated[0].upper() + truncated[1:]
 
