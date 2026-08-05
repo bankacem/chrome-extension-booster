@@ -120,7 +120,29 @@ def make_seo_title(title: str) -> str | None:
     cleaned = re.sub(r"\s{2,}", " ", cleaned).strip()
     if 6 <= len(cleaned) <= TARGET_TITLE_LEN:
         return cleaned[0].upper() + cleaned[1:]
-    return None  # couldn't safely shorten - leave seo_title unset, same policy as the rest of the site
+
+    # Still too long after the light cleanup above. Rather than silently
+    # giving up (the previous behavior — this is exactly what produced an
+    # 86-char <title> tag for the accessibility article: cleanup couldn't
+    # get it under budget, so seo_title was left unset and the site fell
+    # back to the full uncut title + " | ExtensionTo"). Two more attempts,
+    # in order, before finally giving up:
+    #
+    # 1. Titles are usually "Main Keyword Phrase: Subtitle" — the part
+    #    before the first colon/dash is normally the actual keyword target
+    #    and reads fine standalone. Use it if it fits the budget.
+    head = re.split(r"[:\u2013\u2014]|(?<!\w)-(?!\w)", cleaned, maxsplit=1)[0].strip()
+    if 6 <= len(head) <= TARGET_TITLE_LEN:
+        return head[0].upper() + head[1:]
+
+    # 2. Hard word-boundary truncation — cut at the last whitespace that
+    #    still fits, never mid-word.
+    if len(cleaned) > TARGET_TITLE_LEN:
+        truncated = cleaned[:TARGET_TITLE_LEN].rsplit(" ", 1)[0].strip()
+        if 6 <= len(truncated) <= TARGET_TITLE_LEN:
+            return truncated[0].upper() + truncated[1:]
+
+    return None  # genuinely couldn't produce a safe short title (e.g. one giant word)
 
 
 def partitioned_path(slug: str) -> Path:

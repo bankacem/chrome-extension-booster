@@ -1,5 +1,6 @@
 ---
 id: 4ae4896f-122c-445a-93a6-8257bf656c59
+seo_title: "Best Chrome Extensions for Accessibility"
 title: "Best Chrome Extensions for Accessibility: Boost Your Browsing Experience"
 slug: best-chrome-extensions-for-accessibility-boost-your-browsing-experience
 status: published
@@ -134,7 +135,7 @@ While Chrome extensions are immensely helpful, accessibility can extend beyond j
 2. **Assistive Technology**: Screen readers like NVDA (free) or JAWS (paid premium) can make a world of difference for desktop users.  
 3. **Other Browsers**: Firefox and Edge also have excellent accessibility settings and extensions.  
 
-For more on broader accessibility software, check out our [guide to assistive tools](#).  
+For more on broader accessibility software, check out our [ClaroRead accessibility extension review](/blog/claroread-chrome-extension).  
 
 ---
 
@@ -160,4 +161,4 @@ Thanks to Chrome’s robust extension library, accessibility challenges don’t 
 
 Our recommendation? Start with one or two extensions that directly target your specific needs, and don’t hesitate to experiment with substitutes. Accessibility is a journey, not a destination, and the tools you use today might evolve tomorrow.  
 
-Ready to transform your browsing experience? Head over to the [Chrome Web Store](https://chrome.google.com/webstore) and start empowering your internet journey today! And for more digital accessibility tools, explore our [in-depth guide here](#).
+Ready to transform your browsing experience? Head over to the [Chrome Web Store](https://chrome.google.com/webstore) and start empowering your internet journey today! And for more Chrome extension guides, [explore our full blog](/blog).
