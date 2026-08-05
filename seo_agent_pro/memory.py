@@ -10,7 +10,11 @@ from pathlib import Path
 from config import SETTINGS
 from llm_router import c
 
-MEMORY_PATH = Path(SETTINGS["memory_file"])
+# Anchored to this file's directory (not the process cwd) so it always
+# resolves to seo_agent_pro/seo_memory.json — whether the script is invoked
+# as `python3 daily_article.py` or `python3 seo_agent_pro/daily_article.py`
+# from the repo root (as the GitHub Actions workflow does).
+MEMORY_PATH = Path(__file__).resolve().parent / SETTINGS["memory_file"]
 
 
 def load() -> dict:

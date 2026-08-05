@@ -243,6 +243,93 @@ def _call_bluesminds(model_id: str, system: str, user: str, stream: bool) -> str
 
 
 # ──────────────────────────────────────────────────────────────
+#  Agentrouter.org — OpenAI-compatible proxy, validated in test_agentrouter.py
+#  NOTE: confirm the base URL still resolves for your account (run
+#  test_agentrouter.py) before depending on this in production. Unlike
+#  Bluesminds this one was actually reachable during diagnosis, but the base
+#  URL and exact model IDs an account has access to can change.
+# ──────────────────────────────────────────────────────────────
+
+def _call_agentrouter(model_id: str, system: str, user: str, stream: bool) -> str:
+    headers = {
+        "Authorization": f"Bearer {API_KEYS['agentrouter']}",
+        "Content-Type":  "application/json",
+        "Accept":        "application/json",
+        "User-Agent":    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                         "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    }
+    payload = {
+        "model":      model_id,
+        "max_tokens": SETTINGS["max_tokens"],
+        "stream":     stream,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user",   "content": user},
+        ],
+    }
+    body_bytes = json.dumps(payload).encode()
+
+    # test_agentrouter.py found the API could live at either of these — try
+    # the root first, fall back to /api if it doesn't return real JSON. This
+    # was NOT observed working during diagnosis (see comment above), so both
+    # candidates are attempted before giving up.
+    candidate_urls = [
+        "https://agentrouter.org/v1/chat/completions",
+        "https://agentrouter.org/api/v1/chat/completions",
+    ]
+
+    last_error: Exception | None = None
+    for url in candidate_urls:
+        req  = urllib.request.Request(url, body_bytes, headers)
+        full = ""
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                if stream:
+                    for raw_line in resp:
+                        line = raw_line.decode("utf-8").strip()
+                        if not line.startswith("data:"):
+                            continue
+                        data = line[5:].strip()
+                        if data == "[DONE]":
+                            break
+                        try:
+                            obj   = json.loads(data)
+                            delta = obj["choices"][0].get("delta", {}).get("content", "")
+                            if delta:
+                                print(delta, end="", flush=True)
+                                full += delta
+                        except (json.JSONDecodeError, KeyError):
+                            continue
+                    print()
+                else:
+                    raw = resp.read().decode("utf-8")
+                    if not raw.strip():
+                        raise ValueError(f"{url} returned an empty response body (HTTP 200)")
+                    try:
+                        parsed = json.loads(raw)
+                    except json.JSONDecodeError as e:
+                        # Surface what was actually returned (often an HTML
+                        # error/login page rather than JSON) instead of a
+                        # bare parser error with no way to diagnose it from
+                        # the Actions log.
+                        raise ValueError(
+                            f"{url} did not return valid JSON (HTTP {resp.status}, "
+                            f"Content-Type: {resp.headers.get('Content-Type')}). "
+                            f"First 300 chars of body: {raw[:300]!r}"
+                        ) from e
+                    full = parsed["choices"][0]["message"]["content"]
+            return full
+        except (ValueError, urllib.error.HTTPError) as e:
+            last_error = e
+            print(c("dim", f"  ⚠ {url} failed ({e}); trying next candidate URL..."))
+            continue
+
+    raise ValueError(
+        f"agentrouter.org: none of the candidate base URLs worked. Last error: {last_error}"
+    )
+
+
+# ──────────────────────────────────────────────────────────────
 #  Public API
 # ──────────────────────────────────────────────────────────────
 
@@ -277,6 +364,8 @@ def call(
                 return _call_groq(model_id, system, user, stream)
             elif provider == "bluesminds":
                 return _call_bluesminds(model_id, system, user, stream)
+            elif provider == "agentrouter":
+                return _call_agentrouter(model_id, system, user, stream)
             else:
                 print(c("red", f"  ✗ Unknown provider: {provider}"))
                 sys.exit(1)
@@ -317,6 +406,53 @@ def call_json(system: str, user: str, model_name: str) -> dict | list:
         if match:
             return json.loads(match.group())
         raise ValueError(f"Could not parse JSON:\n{raw[:400]}")
+
+
+def find_working_model(candidates: list[str], test_prompt: str = "Reply with exactly: OK") -> str:
+    """
+    Try each model in `candidates`, in order, with a tiny cheap test call.
+    Returns the name of the first one that responds successfully. Skips (does
+    not even attempt) any candidate whose provider has no API key configured,
+    so a missing secret doesn't waste a network round-trip. Raises
+    RuntimeError if none of them work — with every individual failure reason
+    included so the cause is visible in one place instead of buried per-call.
+    """
+    failures: list[str] = []
+
+    for model_name in candidates:
+        if model_name not in MODELS:
+            failures.append(f"{model_name}: not a known model in MODELS")
+            continue
+
+        provider, _ = MODELS[model_name]
+        if not API_KEYS.get(provider, ""):
+            failures.append(f"{model_name}: no API key set for provider '{provider}' — skipped")
+            continue
+
+        print(c("dim", f"  ↳ probing {model_name}..."))
+        try:
+            reply = call(
+                "You are a connectivity check. Reply with exactly the requested text, nothing else.",
+                test_prompt,
+                model_name,
+                stream=False,
+            )
+            print(c("green", f"  ✓ {model_name} works — reply: {reply.strip()[:60]!r}"))
+            return model_name
+        except SystemExit:
+            # validate_config()/call()'s own exhausted-retries path calls
+            # sys.exit(1); treat that as "this candidate failed" rather than
+            # killing the whole probing loop.
+            failures.append(f"{model_name}: exited after exhausting retries")
+            continue
+        except Exception as e:
+            failures.append(f"{model_name}: {e}")
+            continue
+
+    detail = "\n".join(f"  - {f}" for f in failures)
+    raise RuntimeError(
+        f"No working model found among candidates: {candidates}\n{detail}"
+    )
 
 
 def list_models() -> None:

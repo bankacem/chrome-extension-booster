@@ -26,13 +26,26 @@ from pathlib import Path
 sys.path.insert(0, os.path.dirname(__file__))
 
 import modules as agent  # noqa: E402
-from llm_router import call  # noqa: E402
+import memory  # noqa: E402
+from llm_router import call, find_working_model  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE_PATH = Path(__file__).parent / "keyword_queue.txt"
 STATE_PATH = Path(__file__).parent / "daily_article_state.json"
 ARTICLES_DIR = ROOT / "public" / "content" / "articles"
-MODEL = "bluesminds-gpt4o"
+# Tried in this order until one actually responds. agentrouter.org is kept
+# first in case its WAF stops blocking GitHub Actions IPs later, but during
+# diagnosis it returned an Alibaba Cloud WAF block page (HTML, not JSON) for
+# every candidate URL — so groq/openrouter are the ones actually expected to
+# work today. Override the whole chain with SEO_AGENT_MODEL=<name> to force
+# a single specific model instead of probing.
+MODEL_FALLBACK_CHAIN = [
+    "agentrouter-gpt-4o",
+    "bluesminds-gpt4o",
+    "llama-3.1-70b-groq",
+    "gpt-4o-mini",
+    "claude-haiku",
+]
 
 DEFAULT_CATEGORY = "Productivity & Tools"
 DEFAULT_FEATURED_IMAGE = "/og-image.png"
@@ -133,14 +146,13 @@ def yaml_list(items: list) -> str:
 #  Main pipeline
 # ──────────────────────────────────────────────────────────────
 
-def main():
-    keyword = pick_next_keyword()
-    print(f"Generating article for keyword: {keyword!r} (model={MODEL})")
-
-    memory = {"articles_written": []}
-    competitor_data = agent.analyze_competitors(keyword, MODEL)
-    strategy = agent.decide_strategy(keyword, competitor_data, 0, MODEL)
-    raw_article = agent.write_article(keyword, strategy, MODEL)
+def _generate_content(keyword: str, articles_written: int, model: str) -> tuple[str, str, str]:
+    """Run the actual generation pipeline against one specific model. Raises
+    on any failure — the caller decides whether to fall back to the next
+    candidate model or give up."""
+    competitor_data = agent.analyze_competitors(keyword, model)
+    strategy = agent.decide_strategy(keyword, competitor_data, articles_written, model)
+    raw_article = agent.write_article(keyword, strategy, model)
 
     # Extract H1 as the title; everything after it is the body.
     lines = raw_article.strip().splitlines()
@@ -159,8 +171,64 @@ def main():
         "no preamble, no quotes, 140-160 characters.",
         f'Write a meta description for an article targeting the keyword "{keyword}". '
         f"Article title: {title}",
-        MODEL,
+        model,
     ).strip().strip('"')
+
+    return title, body, meta_description
+
+
+def main():
+    keyword = pick_next_keyword()
+
+    # Load real persistent memory instead of a throwaway empty dict — this is
+    # what lets the strategy engine know how many articles already exist and
+    # steer the model away from repeating the same generic opening/angle.
+    mem = memory.load()
+    articles_written = len(mem.get("articles_written", []))
+
+    forced_model = os.environ.get("SEO_AGENT_MODEL")
+    if forced_model:
+        candidates = [forced_model]
+        print(f"Using forced model: {forced_model!r} (SEO_AGENT_MODEL set, no fallback)")
+    else:
+        candidates = list(MODEL_FALLBACK_CHAIN)
+
+    # A model can pass the cheap connectivity probe in find_working_model()
+    # and still fail mid-pipeline on a long call (this happened for real
+    # during diagnosis: bluesminds-gpt4o answered a one-word probe fine, then
+    # hit HTTP 500 on the ~2000-word article-writing call). So retry the
+    # WHOLE pipeline against the next candidate instead of aborting the run
+    # the first time that happens, up until every candidate is exhausted.
+    MODEL = None
+    title = body = meta_description = None
+    remaining = list(candidates)
+    pipeline_errors: list[str] = []
+
+    while remaining:
+        try:
+            probe_model = find_working_model(remaining)
+        except RuntimeError as e:
+            pipeline_errors.append(str(e))
+            break
+
+        print(f"Attempting full generation with model: {probe_model!r}")
+        try:
+            title, body, meta_description = _generate_content(keyword, articles_written, probe_model)
+            MODEL = probe_model
+            break
+        except SystemExit:
+            pipeline_errors.append(f"{probe_model}: exited after exhausting retries mid-pipeline")
+        except Exception as e:
+            pipeline_errors.append(f"{probe_model}: failed mid-pipeline: {e}")
+
+        print(f"  ✗ {probe_model} failed mid-pipeline — trying the next candidate model...")
+        remaining = [m for m in remaining if m != probe_model]
+
+    if MODEL is None:
+        detail = "\n".join(f"  - {e}" for e in pipeline_errors)
+        raise RuntimeError(f"All candidate models failed to generate an article.\n{detail}")
+
+    print(f"Generating article for keyword: {keyword!r} (model={MODEL})")
 
     slug = slugify(title)
     seo_title = make_seo_title(title)
@@ -180,7 +248,7 @@ def main():
         f"category: {DEFAULT_CATEGORY}",
         f"tags:{yaml_list([])}",
         f"keywords:{yaml_list([keyword])}",
-        f"author: Admin",
+        "author: Admin",
         f"published_at: {datetime.now(timezone.utc).strftime('%Y-%m-%d')}",
         f"read_time: {read_time}",
         "---",
@@ -197,6 +265,10 @@ def main():
     out_path.write_text(full_content, encoding="utf-8")
 
     mark_keyword_used(keyword)
+
+    # Persist this run so the NEXT run knows the real article count and can
+    # keep steering away from angles/openings already used.
+    memory.record_article(mem, keyword, body, MODEL)
 
     print(f"Wrote: {out_path.relative_to(ROOT)}")
     print(f"Title: {title}")
