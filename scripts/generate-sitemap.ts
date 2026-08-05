@@ -74,6 +74,14 @@ async function generateSitemap() {
 
     if (!slug) continue;
 
+    // Skip articles whose canonicalPath points to a DIFFERENT URL.
+    // These are thin/duplicate pages that intentionally defer their SEO
+    // signal elsewhere — including them in the sitemap would contradict
+    // their own canonical tag and send Google a mixed signal.
+    if (art.canonicalPath && art.canonicalPath !== `/blog/${slug}`) {
+      continue;
+    }
+
     if (frozenDates[slug]) {
       // Use the frozen date — never update it from articles-index
       articleEntries.push({ url: `${WEBSITE_URL}/blog/${slug}`, date: frozenDates[slug] });
