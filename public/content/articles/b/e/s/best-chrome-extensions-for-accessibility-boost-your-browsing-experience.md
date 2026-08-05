@@ -2,6 +2,7 @@
 id: 4ae4896f-122c-445a-93a6-8257bf656c59
 title: "Best Chrome Extensions for Accessibility: Boost Your Browsing Experience"
 slug: best-chrome-extensions-for-accessibility-boost-your-browsing-experience
+status: published
 excerpt: "Discover the best Chrome extensions for accessibility to enhance your browsing experience. Simplify navigation with these top tools designed for everyone."
 meta_description: "Discover the best Chrome extensions for accessibility to enhance your browsing experience. Simplify navigation with these top tools designed for everyone."
 featured_image: /og-image.png

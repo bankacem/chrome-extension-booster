@@ -242,6 +242,13 @@ def main():
         f"id: {uuid.uuid4()}",
         f"title: {yaml_str(title)}",
         f"slug: {slug}",
+        # sync-articles.ts skips (silently excludes from the index AND
+        # sitemap) any article whose frontmatter status != "published".
+        # This field was missing entirely before, so every article this
+        # script generated was written to disk successfully but never
+        # showed up in articles-index.json, sitemap.xml, or the /blog
+        # listing — the run looked 100% green with no error anywhere.
+        "status: published",
         f"excerpt: {yaml_str(meta_description)}",
         f"meta_description: {yaml_str(meta_description)}",
         f"featured_image: {DEFAULT_FEATURED_IMAGE}",
