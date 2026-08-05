@@ -132,6 +132,12 @@ const Admin = () => {
   const [tagsInput, setTagsInput] = useState("");
   const [keywordsInput, setKeywordsInput] = useState("");
 
+  // Account settings states
+  const [newEmail, setNewEmail] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [updatingAccount, setUpdatingAccount] = useState(false);
+
   const [contentEditorMode, setContentEditorMode] = useState<"html" | "preview">("html");
   const contentTextareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -832,6 +838,52 @@ Disallow: /admin/*`;
     return matchesSearch && matchesStatus;
   });
 
+  const handleUpdateAccount = async () => {
+    if (newPassword && newPassword !== confirmPassword) {
+      toast({
+        title: "Error",
+        description: "Passwords do not match",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setUpdatingAccount(true);
+    try {
+      const updateData: any = {};
+      if (newEmail) updateData.email = newEmail;
+      if (newPassword) updateData.password = newPassword;
+
+      const { error } = await supabase.auth.updateUser(updateData);
+
+      if (error) throw error;
+
+      toast({
+        title: "Success",
+        description: newEmail
+          ? "Account updated. Please check your new email for a confirmation link."
+          : "Password updated successfully.",
+      });
+
+      setNewEmail("");
+      setNewPassword("");
+      setConfirmPassword("");
+
+      if (newEmail) {
+        await handleLogout();
+      }
+    } catch (error: any) {
+      console.error("Error updating account:", error);
+      toast({
+        title: "Error",
+        description: error.message || "Failed to update account credentials",
+        variant: "destructive",
+      });
+    } finally {
+      setUpdatingAccount(false);
+    }
+  };
+
   const stats = {
     total: articles.length,
     published: articles.filter((a) => a.status === "published").length,
@@ -982,6 +1034,7 @@ Disallow: /admin/*`;
               <TabsTrigger value="images">Images</TabsTrigger>
               <TabsTrigger value="seo">SEO Tools</TabsTrigger>
               <TabsTrigger value="backup">Backup & Restore</TabsTrigger>
+              <TabsTrigger value="account">Account</TabsTrigger>
             </TabsList>
 
             <TabsContent value="articles" className="space-y-4">
@@ -1663,6 +1716,108 @@ Disallow: /admin/*`;
                     <Download className="mr-2 h-4 w-4" />
                     Export Articles
                   </Button>
+                </div>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="account" className="space-y-4">
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="glass-card p-6">
+                  <div className="mb-4 flex items-center gap-3">
+                    <Shield className="h-8 w-8 text-primary" />
+                    <div>
+                      <h3 className="font-heading text-lg font-semibold">Account Settings</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Update your login credentials
+                      </p>
+                    </div>
+                  </div>
+
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      handleUpdateAccount();
+                    }}
+                    className="space-y-4"
+                  >
+                    <div className="space-y-2">
+                      <Label htmlFor="new-email">New Email Address</Label>
+                      <Input
+                        id="new-email"
+                        type="email"
+                        value={newEmail}
+                        onChange={(e) => setNewEmail(e.target.value)}
+                        placeholder="Leave blank to keep current"
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="new-password">New Password</Label>
+                      <Input
+                        id="new-password"
+                        type="password"
+                        value={newPassword}
+                        onChange={(e) => setNewPassword(e.target.value)}
+                        placeholder="Min 6 characters"
+                        minLength={6}
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="confirm-password">Confirm New Password</Label>
+                      <Input
+                        id="confirm-password"
+                        type="password"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        placeholder="Repeat new password"
+                        minLength={6}
+                      />
+                    </div>
+
+                    <Button
+                      type="submit"
+                      className="w-full"
+                      disabled={updatingAccount || (!newEmail && !newPassword)}
+                    >
+                      {updatingAccount ? (
+                        <>
+                          <div className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
+                          Updating...
+                        </>
+                      ) : (
+                        <>
+                          <Save className="mr-2 h-4 w-4" />
+                          Update Credentials
+                        </>
+                      )}
+                    </Button>
+
+                    <p className="text-xs text-muted-foreground text-center">
+                      Note: Changing your email will require confirmation from the new address.
+                    </p>
+                  </form>
+                </div>
+
+                <div className="glass-card p-6">
+                  <h3 className="mb-4 font-heading text-lg font-semibold">Security Information</h3>
+                  <div className="space-y-4 text-sm text-muted-foreground">
+                    <p>
+                      • Your account is protected by Supabase Auth.
+                    </p>
+                    <p>
+                      • For security reasons, we recommend using a password of at least 8 characters with a mix of letters, numbers, and symbols.
+                    </p>
+                    <p>
+                      • If you change your email, you will be logged out and need to verify the new email address before you can log in again.
+                    </p>
+                    <div className="rounded-lg bg-yellow-500/10 p-4 text-yellow-600 dark:text-yellow-500">
+                      <p className="font-medium">Admin Notice:</p>
+                      <p className="mt-1">
+                        These credentials are used to access the site settings and article management. Keep them safe.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </TabsContent>
