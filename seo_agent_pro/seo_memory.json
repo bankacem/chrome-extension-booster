@@ -5,15 +5,22 @@
       "model": "bluesminds-gpt4o",
       "word_count": 1305,
       "date": "2026-08-04T23:52:38.582171"
+    },
+    {
+      "keyword": "how to clear chrome cache and cookies",
+      "model": "bluesminds-gpt4o",
+      "word_count": 1176,
+      "date": "2026-08-05T10:30:45.379261"
     }
   ],
   "clusters": {},
   "authority_scores": {},
   "successful_patterns": [],
   "keywords_done": [
-    "best chrome extensions for accessibility"
+    "best chrome extensions for accessibility",
+    "how to clear chrome cache and cookies"
   ],
-  "total_runs": 1,
+  "total_runs": 2,
   "created_at": "2026-08-04T23:45:16.608709",
-  "updated_at": "2026-08-04T23:52:38.582181"
+  "updated_at": "2026-08-05T10:30:45.379268"
 }
