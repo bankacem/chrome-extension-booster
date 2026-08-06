@@ -6,6 +6,7 @@ import anthropic
 import urllib.request
 import urllib.error
 import json
+import re
 import sys
 import time
 
@@ -382,6 +383,18 @@ def call(
             last_error = e
             if e.code in RETRYABLE_HTTP_CODES and attempt < MAX_RETRIES:
                 delay = RETRY_BASE_DELAY_SECONDS * attempt
+                if e.code == 429:
+                    # Real failure seen in production: Groq's free-tier TPM
+                    # window (8000 tokens/min) got exceeded mid-pipeline, and
+                    # our fixed 5s/10s backoff was shorter than the ~21s the
+                    # provider actually needed — so retries were exhausted
+                    # before the window ever reset. Providers (Groq included)
+                    # commonly say exactly how long to wait in the error body
+                    # ("Please try again in 21.59s") — use that when present,
+                    # padded slightly, instead of guessing.
+                    wait_match = re.search(r"try again in (\d+(?:\.\d+)?)\s*s", body, re.IGNORECASE)
+                    if wait_match:
+                        delay = float(wait_match.group(1)) + 2
                 print(c("dim", f"  ⚠ HTTP {e.code} (attempt {attempt}/{MAX_RETRIES}) - retrying in {delay}s..."))
                 time.sleep(delay)
                 continue
@@ -400,19 +413,34 @@ def call(
 
 def call_json(system: str, user: str, model_name: str) -> dict | list:
     """Call the model and parse the response as JSON."""
-    import re
-
     system_j = system + "\n\nIMPORTANT: Return only valid JSON — no prose, no markdown fences."
     raw      = call(system_j, user, model_name, stream=False)
     raw      = re.sub(r"```(?:json)?", "", raw).strip()
 
-    try:
-        return json.loads(raw)
-    except json.JSONDecodeError:
-        match = re.search(r"[\[{][\s\S]*[\]}]", raw)
-        if match:
-            return json.loads(match.group())
-        raise ValueError(f"Could not parse JSON:\n{raw[:400]}")
+    def _try_parse(text: str):
+        return json.loads(text)
+
+    def _strip_trailing_commas(text: str) -> str:
+        # Real failure seen in production: "Expecting ',' delimiter" from a
+        # trailing comma before a closing ]/} — a common small mistake models
+        # make in generated JSON. Cheap, safe repair before giving up.
+        return re.sub(r",(\s*[\]}])", r"\1", text)
+
+    attempts = [raw]
+    match = re.search(r"[\[{][\s\S]*[\]}]", raw)
+    if match:
+        attempts.append(match.group())
+    attempts += [_strip_trailing_commas(a) for a in list(attempts)]
+
+    last_error = None
+    for attempt in attempts:
+        try:
+            return _try_parse(attempt)
+        except json.JSONDecodeError as e:
+            last_error = e
+            continue
+
+    raise ValueError(f"Could not parse JSON ({last_error}):\n{raw[:400]}")
 
 
 def find_working_model(candidates: list[str], test_prompt: str = "Reply with exactly: OK") -> str:
