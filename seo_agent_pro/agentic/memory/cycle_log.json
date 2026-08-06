@@ -1,0 +1,31 @@
+[
+  {
+    "keyword": "best chrome extensions for language learning",
+    "model": "llama-3.1-70b-groq",
+    "revision_count": 2,
+    "score": 20,
+    "approved": false,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "Missing required sections: Installation & Setup Guide, Pricing & Subscription Details (updated 2024), Pros and Cons, User Reviews & Testimonials, Best Extension for Specific Languages, Accessibility & Inclusion Analysis, Data Privacy & Security Assessment, Integration Workflows with Duolingo/Anki/Memrise, Cross‑Device Usage Strategies, In‑Depth Case Studies, Tips for Maximizing Learning, Alternatives & Complementary Tools, FAQ (structured data), Conclusion & Final Recommendation, Downloadable Quick‑Reference Cheat Sheet.",
+      "Length falls far short of the 2100‑word target; current draft is only a fraction of required length.",
+      "The comparison table lacks the interactive filter functionality promised; only a static markdown table is provided.",
+      "No FAQ accordion with structured data markup is included.",
+      "Absent statistics and charts visualizing user success rates; only textual percentages are mentioned.",
+      "Case study sidebars with before‑after metrics are not presented beyond a brief mention.",
+      "No detailed accessibility checklist per extension; only a single accessibility score column without explanation.",
+      "Privacy/security scorecard is limited to a numeric rating without a supporting audit or rationale.",
+      "Integration workflow diagrams are not provided; only textual descriptions exist.",
+      "Cross‑device usage guide infographic is missing; no visual guidance for desktop vs. Android.",
+      "No high‑resolution screenshots, GIFs, or any visual assets to demonstrate extension UI.",
+      "CTA button linking to the Chrome Web Store is absent; only a generic link in the header.",
+      "Internal links to related articles are minimal (only one link in the header).",
+      "Author bio with language‑learning expertise is not included.",
+      "Schema.org ItemList markup is incomplete; only the first item is fleshed out and the rest omitted.",
+      "The article does not adhere to the 'aggressive' SEO strategy: missing keyword density checks, internal linking structure, meta description guidance, and LSI terms."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "recorded_at": "2026-08-06T08:07:12.917969+00:00"
+  }
+]
