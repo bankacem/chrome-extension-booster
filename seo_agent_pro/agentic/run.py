@@ -97,27 +97,56 @@ def main():
     articles_written = memory_store.articles_written_count()
 
     forced_model = os.environ.get("SEO_AGENT_MODEL")
+    candidates = [forced_model] if forced_model else list(MODEL_FALLBACK_CHAIN)
     if forced_model:
-        active_model = forced_model
-        print(f"Using forced model: {forced_model!r} (SEO_AGENT_MODEL set, no probing)")
-    else:
-        active_model = find_working_model(MODEL_FALLBACK_CHAIN)
+        print(f"Using forced model: {forced_model!r} (SEO_AGENT_MODEL set, no fallback)")
 
     print(f"\n{c('bold', '=== SEO Agent Pro — Multi-Agent Pipeline ===')}")
-    print(f"Keyword: {keyword!r} | Model: {active_model!r} | Articles in memory: {articles_written}\n")
+    print(f"Keyword: {keyword!r} | Articles in memory: {articles_written}\n")
 
     graph = build_graph()
-    initial_state = {
-        "keyword": keyword,
-        "niche": args.niche,
-        "articles_written": articles_written,
-        "model_chain": MODEL_FALLBACK_CHAIN,
-        "active_model": active_model,
-        "revision_count": 0,
-        "max_revisions": MAX_REVISIONS,
-    }
 
-    final_state = graph.invoke(initial_state)
+    # Same lesson learned in daily_article.py: a model can pass the cheap
+    # connectivity probe and still die mid-pipeline on a long/late call (this
+    # happened for real: bluesminds-gpt4o wrote the whole article fine, then
+    # hit HTTP 500/504 specifically on the LAST optimizer call). So retry the
+    # WHOLE graph against the next candidate on any failure, instead of
+    # crashing the run — up until every candidate is exhausted.
+    final_state = None
+    remaining = list(candidates)
+    pipeline_errors: list[str] = []
+
+    while remaining:
+        try:
+            probe_model = find_working_model(remaining)
+        except RuntimeError as e:
+            pipeline_errors.append(str(e))
+            break
+
+        print(f"Attempting full pipeline with model: {probe_model!r}\n")
+        initial_state = {
+            "keyword": keyword,
+            "niche": args.niche,
+            "articles_written": articles_written,
+            "model_chain": candidates,
+            "active_model": probe_model,
+            "revision_count": 0,
+            "max_revisions": MAX_REVISIONS,
+        }
+        try:
+            final_state = graph.invoke(initial_state)
+            break
+        except SystemExit:
+            pipeline_errors.append(f"{probe_model}: exited after exhausting retries mid-pipeline")
+        except Exception as e:
+            pipeline_errors.append(f"{probe_model}: failed mid-pipeline: {e}")
+
+        print(f"\n  ✗ {probe_model} failed mid-pipeline — trying the next candidate model...\n")
+        remaining = [m for m in remaining if m != probe_model]
+
+    if final_state is None:
+        detail = "\n".join(f"  - {e}" for e in pipeline_errors)
+        raise RuntimeError(f"All candidate models failed to complete the pipeline.\n{detail}")
 
     status = final_state.get("final_status", "failed")
     if status == "published":
