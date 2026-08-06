@@ -93,6 +93,25 @@ def _deterministic_checks(state: dict) -> list[str]:
             "(looks truncated mid-sentence/mid-word)"
         )
 
+    # Fabrication guard: catch the common surface patterns of invented
+    # "evidence" that shouldn't appear in a static content article —
+    # a specific study/survey sample size, or a hosted screenshot link
+    # (this site has no way to actually capture/host screenshots).
+    fabrication_re = re.search(
+        r"\b(pilot study|n\s*=\s*\d+|survey of \d+|in a study of \d+)\b"
+        r"|https?://i\.imgur\.com/\S+"
+        r"|https?://\S+/(screenshot|IMG_\d+)",
+        body,
+        re.IGNORECASE,
+    )
+    if fabrication_re:
+        issues.append(
+            f"body contains a likely-fabricated citation or fake hosted "
+            f"image link ('{fabrication_re.group(0)}') — this site cannot "
+            f"verify studies or host screenshots, so this is almost "
+            f"certainly invented"
+        )
+
     return issues
 
 
@@ -100,7 +119,16 @@ def _llm_review(state: dict, model: str) -> dict:
     system = (
         "You are a strict, independent SEO/content critic. You do not write "
         "content — you only evaluate it against the brief and flag real problems. "
-        "Be specific and concrete; vague praise is not useful feedback."
+        "Be specific and concrete; vague praise is not useful feedback.\n\n"
+        "IMPORTANT: this is a static Markdown article on a content site with "
+        "no JavaScript/interactivity and no ability to host real screenshots "
+        "or downloadable files. Do NOT penalize the article for lacking "
+        "interactive elements, embedded images/GIFs, or downloadable "
+        "assets — those were never deliverable, and penalizing their "
+        "absence only pushes the writer to fake having them next time. "
+        "Judge the article on what a well-written static article can "
+        "actually provide: clarity, accuracy, organization, completeness, "
+        "and genuine (not invented) usefulness."
     )
     user = f"""Keyword: "{state.get('keyword')}"
 

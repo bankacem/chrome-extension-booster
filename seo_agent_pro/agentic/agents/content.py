@@ -88,10 +88,21 @@ A: ...
 Rules:
 - Keyword in first 100 words naturally
 - Keyword density 1–2%, natural placement
-- Real or realistic statistics and data
+- NEVER invent statistics, studies, survey numbers, user counts, review
+  scores, or named testimonials. If you don't have a verified real number,
+  describe things qualitatively instead (e.g. "many users report faster
+  load times" not "94% of users report a 2.3x speedup"). A false specific
+  number is worse than no number — this exact failure mode produced a
+  published article with a fake pilot study (N=312) and fake user reviews
+  that had to be pulled and rewritten.
+- Do NOT invent URLs, screenshot links, or claim to have verified/tested
+  something you have no way to have tested (e.g. specific TLS versions,
+  specific pricing you cannot confirm as current)
 - Human, conversational tone
-- Add Information Gain: insights competitors missed
-- Do NOT include any markdown links or images unless you have a real, complete URL for them — the Optimizer agent adds real internal links afterward{revision_note}"""
+- Add Information Gain: insights competitors missed — through better
+  organization and explanation, not invented data
+- Do NOT include any markdown links or images unless you have a real, complete URL for them — the Optimizer agent adds real internal links afterward
+- End on a complete sentence — never stop mid-sentence or mid-word{revision_note}"""
 
     print(c("dim", "  " + "─" * 56))
     raw_article = call(system, user, model, stream=True)
