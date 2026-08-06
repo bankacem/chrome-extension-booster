@@ -82,34 +82,51 @@ def run(state: dict) -> dict:
             f"  {'✓' if tag_len <= 60 else '⚠'} title tag: {tag_len} chars"
             + (f" (seo_title: \"{seo_title}\")" if seo_title else "")))
 
-    # 2. real internal links
+    # 2. real internal links — deterministic, no LLM round-trip of the full
+    # body. A real production failure (Groq free-tier TPM limit: 8000
+    # tokens/min, request was 8159) showed that sending the ENTIRE article
+    # body to an LLM just to ask it to echo it back with 1-3 links inserted
+    # is both wasteful and fragile at scale. Instead: for each shortlisted
+    # candidate, look for its own title text (or a distinctive chunk of it)
+    # already occurring naturally in the body, and turn the FIRST such
+    # occurrence into a markdown link in Python. This only ever links text
+    # the article already organically mentions — no LLM judgment needed, and
+    # it can't invent a URL because it never generates one.
     index = _load_index()
     candidates = _shortlist_candidate_links(keyword, title, index)
     internal_links_used: list[str] = []
 
-    if candidates:
-        candidate_list = "\n".join(f'- "{a["title"]}" -> /blog/{a["slug"]}' for a in candidates)
-        link_system = (
-            "You insert 1-3 internal links into an article body by lightly editing "
-            "existing sentences into markdown links. You ONLY use URLs from the "
-            "provided candidate list — never invent a URL, never use '#'. If none "
-            "of the candidates genuinely fit, return the body unchanged."
-        )
-        link_user = f"""Article title: "{title}"
+    for cand in candidates:
+        if len(internal_links_used) >= 3:
+            break
+        slug = cand.get("slug", "")
+        cand_title = cand.get("title", "")
+        if not slug or not cand_title:
+            continue
+        # Try the whole title first, then progressively shorter leading
+        # phrases (e.g. "Google Translate for Chrome: ..." -> "Google
+        # Translate for Chrome" -> "Google Translate") so a natural mention
+        # in running prose still matches even if the article's exact title
+        # doesn't appear verbatim.
+        phrase_candidates = [cand_title]
+        head = re.split(r"[:\u2013\u2014]", cand_title, maxsplit=1)[0].strip()
+        if head and head != cand_title:
+            phrase_candidates.append(head)
+        words = head.split()
+        if len(words) > 2:
+            phrase_candidates.append(" ".join(words[:3]))
+            phrase_candidates.append(" ".join(words[:2]))
 
-Real candidate articles you may link to (use their exact slug):
-{candidate_list}
-
-Article body (markdown):
-{body}
-
-Return ONLY the full article body with 1-3 natural internal links added
-(markdown format: [anchor text](/blog/slug)), or unchanged if nothing fits."""
-        new_body = call(link_system, link_user, model, stream=False)
-        if new_body.strip():
-            body = new_body.strip()
-        internal_links_used = [f"/blog/{a['slug']}" for a in candidates
-                                if f"/blog/{a['slug']}" in body]
+        for phrase in phrase_candidates:
+            if len(phrase) < 4:
+                continue
+            pattern = re.compile(r"(?<!\]\()(?<![\[\w])" + re.escape(phrase) + r"(?![\w\]])", re.IGNORECASE)
+            m = pattern.search(body)
+            if m:
+                matched_text = body[m.start():m.end()]
+                body = body[:m.start()] + f"[{matched_text}](/blog/{slug})" + body[m.end():]
+                internal_links_used.append(f"/blog/{slug}")
+                break
 
     # Belt-and-suspenders: strip any '#' or empty-anchor placeholder links
     # that slipped through despite the instructions above, rather than
