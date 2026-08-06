@@ -160,7 +160,12 @@
     "reading_time": 6,
     "read_time": 6,
     "views": 0,
-    "tags": [],
+    "tags": [
+      "chrome cache",
+      "cookies",
+      "browser performance",
+      "privacy"
+    ],
     "keywords": [
       "how to clear chrome cache and cookies"
     ],
