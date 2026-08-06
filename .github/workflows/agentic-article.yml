@@ -1,0 +1,168 @@
+name: Agentic Article Generation (Phase 1 — 7-agent pipeline)
+
+# Manual trigger ONLY for now, deliberately not on a schedule like
+# daily-article.yml — this is the new multi-agent pipeline (research →
+# strategy → content → optimize → evaluate → learning, with a real
+# revise-on-rejection loop) and should be run and reviewed by hand a few
+# times before it's trusted to run unattended. Switch to `schedule:` once
+# it's proven out.
+on:
+  workflow_dispatch:
+    inputs:
+      keyword:
+        description: "Force a specific keyword (optional — otherwise pulls the next one from keyword_queue.txt)"
+        required: false
+        default: ""
+
+jobs:
+  generate-article:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install -r seo_agent_pro/requirements.txt
+
+      - name: Setup Bun (for index/sitemap regeneration)
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install JS dependencies
+        run: bun install
+
+      - name: Run the 7-agent pipeline
+        id: gen
+        env:
+          BLUESMINDS_KEY:  ${{ secrets.BLUESMINDS_KEY || secrets.BLUESMINDS }}
+          AGENTROUTER_KEY: ${{ secrets.AGENTROUTER_KEY || secrets.AGENTROUTER }}
+          GROQ_KEY:        ${{ secrets.GROQ_KEY || secrets.GROQ }}
+          OPENROUTER_KEY:  ${{ secrets.OPENROUTER_KEY || secrets.OPENROUTER }}
+        run: |
+          set -o pipefail
+          cd seo_agent_pro/agentic
+          if [ -n "${{ github.event.inputs.keyword }}" ]; then
+            python3 run.py --keyword "${{ github.event.inputs.keyword }}" 2>&1 | tee /tmp/gen_output.log
+          else
+            python3 run.py 2>&1 | tee /tmp/gen_output.log
+          fi
+
+      - name: Post debug output if generation failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "## Agentic pipeline failed - output:"
+            echo '```'
+            tail -c 8000 /tmp/gen_output.log
+            echo '```'
+          } > /tmp/debug_body.md
+          gh issue create \
+            --title "Agentic article generation FAILED ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
+            --body-file /tmp/debug_body.md \
+            --repo ${{ github.repository }}
+
+      - name: Rebuild index and sitemap
+        run: |
+          bun run sync-articles
+          bun run sitemap
+
+      - name: Create branch and commit
+        id: commit
+        run: |
+          set +e
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          STATUS="${{ steps.gen.outputs.status }}"
+          PREFIX="agentic-article"
+          if [ "$STATUS" != "published" ]; then PREFIX="agentic-review"; fi
+          BRANCH="${PREFIX}/${{ steps.gen.outputs.article_slug }}"
+          git checkout -b "$BRANCH" 2>&1 | tee -a /tmp/commit_output.log
+
+          git add "${{ steps.gen.outputs.article_path }}" 2>&1 | tee -a /tmp/commit_output.log
+          git add public/content/articles-index.json public/sitemap.xml 2>&1 | tee -a /tmp/commit_output.log
+          git add seo_agent_pro/keyword_queue.txt seo_agent_pro/daily_article_state.json 2>&1 | tee -a /tmp/commit_output.log
+          # Tier 1 memory (cycle_log.json) and the accumulating lessons.md —
+          # without committing these, every run starts back at zero learning,
+          # same class of bug as the disconnected seo_memory.json before.
+          git add seo_agent_pro/agentic/memory/cycle_log.json seo_agent_pro/agentic/memory/lessons.md 2>&1 | tee -a /tmp/commit_output.log
+
+          git commit -m "feat(agentic): ${{ steps.gen.outputs.status }} — ${{ steps.gen.outputs.article_title }}" 2>&1 | tee -a /tmp/commit_output.log
+          COMMIT_EXIT=$?
+
+          git push origin "$BRANCH" --force 2>&1 | tee -a /tmp/commit_output.log
+          PUSH_EXIT=$?
+
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+
+          if [ $COMMIT_EXIT -ne 0 ] || [ $PUSH_EXIT -ne 0 ]; then
+            exit 1
+          fi
+
+      - name: Post debug output if commit/push failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "## Commit/push step failed - output:"
+            echo '```'
+            cat /tmp/commit_output.log 2>/dev/null || echo "(no log captured)"
+            echo '```'
+          } > /tmp/debug_commit.md
+          gh issue create \
+            --title "Agentic article commit/push FAILED ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
+            --body-file /tmp/debug_commit.md \
+            --repo ${{ github.repository }}
+
+      - name: Open Pull Request for review
+        run: |
+          set +e
+          STATUS="${{ steps.gen.outputs.status }}"
+          cat > /tmp/pr_body.md << PRBODY
+          Auto-generated by the agentic (7-agent) pipeline. Status from the Evaluator Agent: **${STATUS}**.
+
+          **Keyword:** ${{ steps.gen.outputs.article_keyword }}
+          **Slug:** ${{ steps.gen.outputs.article_slug }}
+          **File:** ${{ steps.gen.outputs.article_path }}
+
+          $(if [ "$STATUS" != "published" ]; then echo "⚠️ **This article did NOT pass the Evaluator Agent** after the maximum revision attempts. It was written with \`status: draft\`, so it will NOT appear on the live site even if this PR is merged, until a human reviews \`seo_agent_pro/agentic/memory/cycle_log.json\` (last entry) and manually changes the frontmatter to \`status: published\`."; else echo "✅ Passed the Evaluator Agent's checks (deterministic rules + LLM quality score) before this PR was opened. Still human-review the content before merging — this is not a substitute for editorial review."; fi)
+          PRBODY
+
+          GH_TOKEN=${{ github.token }} gh pr create \
+            --title "Agentic (${STATUS}): ${{ steps.gen.outputs.article_title }}" \
+            --body-file /tmp/pr_body.md \
+            --base main \
+            --head "${{ steps.commit.outputs.branch }}" 2>&1 | tee /tmp/pr_output.log
+          exit ${PIPESTATUS[0]}
+
+      - name: Post debug output if PR creation failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "## PR creation step failed - output:"
+            echo '```'
+            cat /tmp/pr_output.log 2>/dev/null || echo "(no log captured)"
+            echo '```'
+          } > /tmp/debug_pr.md
+          gh issue create \
+            --title "Agentic article PR creation FAILED ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
+            --body-file /tmp/debug_pr.md \
+            --repo ${{ github.repository }}

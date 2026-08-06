@@ -36,7 +36,14 @@ MODELS = {
     "gpt-4o-mini":          ("openrouter",  "openai/gpt-4o-mini"),
 
     # ── Groq (ultra-fast) ──────────────────────────────────────
-    "llama-3.1-70b-groq":   ("groq",        "llama-3.1-70b-versatile"),
+    # Groq — llama-3.1-70b-versatile / llama-3.3-70b-versatile were BOTH
+    # deprecated by Groq (confirmed live: the 3.1 one errors with
+    # "model_decommissioned" as of Aug 2026). Current recommended
+    # general-purpose model per Groq's own deprecation notice is
+    # openai/gpt-oss-120b (smaller: openai/gpt-oss-20b). Re-check
+    # https://console.groq.com/docs/deprecations before trusting this long-term
+    # — Groq's model lineup churns fast.
+    "llama-3.1-70b-groq":   ("groq",        "openai/gpt-oss-120b"),
 
     # ── Bluesminds — DEPRECATED, base URL unconfirmed / not working ──
     "bluesminds-gpt4o":     ("bluesminds",  "gpt-4o"),
