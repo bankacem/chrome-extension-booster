@@ -137,8 +137,17 @@ def strip_placeholder_images(body: str) -> str:
 #  Formatting helpers (mirrors scripts/audit-long-titles.ts logic)
 # ──────────────────────────────────────────────────────────────
 
+# Generalized on purpose: hardcoding exact article+adjective pairs (e.g. only
+# "the complete guide" but not "a complete guide") is exactly what produced
+# the truncated seo_title "How to Clear Chrome Cache and Cookies: A" for the
+# 2026-08-05 cache/cookies article — the filler wasn't stripped because "a
+# complete guide" wasn't one of the hardcoded pairs, so the code fell through
+# to hard word-boundary truncation and cut right after the dangling "A".
+# Matching any (the|a|an) + adjective + guide combination closes that whole
+# class of bug instead of patching one missed phrase at a time.
 FILLER_PHRASE_RE = re.compile(
-    r"\b(the ultimate guide|a comprehensive guide|the complete guide|a step-by-step guide)\b",
+    r"\b(the|an?)\s+(ultimate|comprehensive|complete|full|definitive|"
+    r"step-by-step|in-depth|detailed|essential)\s+guide\b",
     re.IGNORECASE,
 )
 
@@ -155,10 +164,19 @@ def make_seo_title(title: str) -> str | None:
     if len(title) <= TARGET_TITLE_LEN:
         return None  # not needed - full title already fits
     cleaned = FILLER_PHRASE_RE.sub("", title)
-    cleaned = re.sub(r"([:\-\u2013\u2014])\s*(to|for|on)\s+", r"\1 ", cleaned, flags=re.IGNORECASE)
-    cleaned = re.sub(r"^\s*(to|for|on)\s+", "", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"([:\-\u2013\u2014])\s*(to|for|on|with|and)\s+", r"\1 ", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"^\s*(to|for|on|with|and)\s+", "", cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r"\s*[:\-\u2013\u2014]\s*$", "", cleaned)
     cleaned = re.sub(r"\s{2,}", " ", cleaned).strip()
+    # Also drop a dangling connector word left stranded at the very end
+    # (e.g. "...Cookies: with" after filler removal) — a title should never
+    # end mid-phrase on a preposition/conjunction.
+    cleaned = re.sub(
+        r"[:\-\u2013\u2014]?\s*\b(to|for|on|with|and|a|an|the)\s*$",
+        "",
+        cleaned,
+        flags=re.IGNORECASE,
+    ).strip()
     if 6 <= len(cleaned) <= TARGET_TITLE_LEN:
         return cleaned[0].upper() + cleaned[1:]
 
@@ -183,6 +201,14 @@ def make_seo_title(title: str) -> str | None:
     if len(cleaned) > TARGET_TITLE_LEN:
         truncated = cleaned[:TARGET_TITLE_LEN].rsplit(" ", 1)[0].strip()
         truncated = re.sub(r"[:\-\u2013\u2014,]+$", "", truncated).strip()
+        # Same stranded-connector guard as above, applied after hard
+        # truncation too — truncation can just as easily land on "with"/"a".
+        truncated = re.sub(
+            r"[:\-\u2013\u2014]?\s*\b(to|for|on|with|and|a|an|the)\s*$",
+            "",
+            truncated,
+            flags=re.IGNORECASE,
+        ).strip()
         if 6 <= len(truncated) <= TARGET_TITLE_LEN:
             return truncated[0].upper() + truncated[1:]
 
