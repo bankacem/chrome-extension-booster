@@ -144,6 +144,13 @@ def _call_groq(model_id: str, system: str, user: str, stream: bool) -> str:
     headers = {
         "Authorization": f"Bearer {API_KEYS['groq']}",
         "Content-Type":  "application/json",
+        "Accept":        "application/json",
+        # Without a browser-like User-Agent, requests from GitHub Actions
+        # runners were getting HTTP 403 (Cloudflare error 1010) — Cloudflare
+        # (in front of api.groq.com) blocks the default urllib UA on some
+        # rule sets. This was diagnosed from a real failed run, not assumed.
+        "User-Agent":    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                         "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     }
     payload = {
         "model":      model_id,
