@@ -344,6 +344,11 @@ def _call_agentrouter(model_id: str, system: str, user: str, stream: bool) -> st
 RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
 MAX_RETRIES = 3
 RETRY_BASE_DELAY_SECONDS = 5
+# 429 gets its own, larger retry budget: unlike a flaky-server 500/504, a
+# 429 tells us exactly how long until it will succeed (see the wait_match
+# parsing below) — it's not a guess, so it's worth spending a few more
+# attempts on rather than giving up and burning a whole different provider.
+MAX_RETRIES_429 = 5
 
 
 def call(
@@ -362,7 +367,9 @@ def call(
     print(c("dim", f"  ↳ {provider} / {model_id}"))
 
     last_error = None
-    for attempt in range(1, MAX_RETRIES + 1):
+    attempt = 0
+    while True:
+        attempt += 1
         try:
             if provider == "anthropic":
                 return _call_anthropic(model_id, system, user, stream)
@@ -381,7 +388,8 @@ def call(
         except urllib.error.HTTPError as e:
             body = e.read().decode("utf-8", errors="replace")
             last_error = e
-            if e.code in RETRYABLE_HTTP_CODES and attempt < MAX_RETRIES:
+            effective_max = MAX_RETRIES_429 if e.code == 429 else MAX_RETRIES
+            if e.code in RETRYABLE_HTTP_CODES and attempt < effective_max:
                 delay = RETRY_BASE_DELAY_SECONDS * attempt
                 if e.code == 429:
                     # Real failure seen in production: Groq's free-tier TPM
@@ -395,7 +403,7 @@ def call(
                     wait_match = re.search(r"try again in (\d+(?:\.\d+)?)\s*s", body, re.IGNORECASE)
                     if wait_match:
                         delay = float(wait_match.group(1)) + 2
-                print(c("dim", f"  ⚠ HTTP {e.code} (attempt {attempt}/{MAX_RETRIES}) - retrying in {delay}s..."))
+                print(c("dim", f"  ⚠ HTTP {e.code} (attempt {attempt}/{effective_max}) - retrying in {delay}s..."))
                 time.sleep(delay)
                 continue
             print(c("red", f"\n  ✗ HTTP {e.code}: {e.reason}"))
@@ -405,10 +413,6 @@ def call(
         except Exception as e:
             print(c("red", f"\n  ✗ Error calling {provider}: {e}"))
             raise
-
-    # Exhausted retries
-    print(c("red", f"\n  ✗ Gave up after {MAX_RETRIES} attempts: {last_error}"))
-    sys.exit(1)
 
 
 def call_json(system: str, user: str, model_name: str) -> dict | list:
