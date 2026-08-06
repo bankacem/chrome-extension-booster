@@ -18,6 +18,13 @@ API_KEYS = {
     # Agentrouter.org — the provider actually validated in test_agentrouter.py.
     # Set AGENTROUTER_KEY in your environment; never hardcode the key here.
     "agentrouter": os.getenv("AGENTROUTER_KEY", ""),
+    # Google AI Studio (Gemini) — used only by image_agent.py for featured
+    # images (Imagen 3 via the Gemini API). Set GEMINI_KEY in your
+    # environment / as a GitHub Actions secret. Must be a real AI Studio
+    # API key (starts with "AIzaSy...", from aistudio.google.com/apikey) —
+    # an OAuth access token will NOT work here and typically expires within
+    # an hour, so don't paste one of those into this variable.
+    "gemini": os.getenv("GEMINI_KEY", ""),
 }
 
 # ──────────────────────────────────────────────────────────────

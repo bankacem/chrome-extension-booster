@@ -2,12 +2,14 @@
 Orchestrator — the LangGraph StateGraph that wires the seven agents into the
 plan → execute → verify → correct loop described in the design doc.
 
-    research → strategy → content → optimize → evaluate ─┬─→ (approved OR
-                             ▲                            │    revisions
-                             └────────────────────────────┘    exhausted)
-                                                                    │
-                                                                    ▼
-                                                                learning → END
+    research → strategy → content → optimize → evaluate ─┬─→ approved
+                             ▲                            │     │
+                             └────────────────────────────┘     ▼
+                                revisions              generate_image
+                                                                  │
+                                exhausted ────────────────────┐  │
+                                                                ▼  ▼
+                                                              learning → END
 
 Only `content → optimize → evaluate` repeats on rejection (not research/
 strategy) — the brief doesn't need to be redone just because the title tag
@@ -25,7 +27,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from langgraph.graph import StateGraph, END
 
 from state import GraphState
-from agents import research, strategy, content, optimizer, evaluator, learning
+from agents import research, strategy, content, optimizer, evaluator, learning, image_agent
 from llm_router import c
 
 
@@ -66,6 +68,7 @@ def build_graph():
     graph.add_node("increment_revision", _increment_revision)
     graph.add_node("finalize_approved", _finalize_approved)
     graph.add_node("finalize_exhausted", _finalize_exhausted)
+    graph.add_node("generate_image", image_agent.run)
     graph.add_node("learning", learning.run)
 
     graph.set_entry_point("research")
@@ -84,7 +87,8 @@ def build_graph():
         },
     )
     graph.add_edge("increment_revision", "content")  # loop back — this is the "correct" step
-    graph.add_edge("finalize_approved", "learning")
+    graph.add_edge("finalize_approved", "generate_image")
+    graph.add_edge("generate_image", "learning")
     graph.add_edge("finalize_exhausted", "learning")
     graph.add_edge("learning", END)
 

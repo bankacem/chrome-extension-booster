@@ -69,7 +69,7 @@ def write_article_file(final_state: dict) -> Path:
         f"status: {status}",
         f"excerpt: {legacy.yaml_str(meta_description)}",
         f"meta_description: {legacy.yaml_str(meta_description)}",
-        f"featured_image: {legacy.DEFAULT_FEATURED_IMAGE}",
+        f"featured_image: {final_state.get('featured_image_path') or legacy.DEFAULT_FEATURED_IMAGE}",
         f"category: {category}",
         f"tags:{legacy.yaml_list([])}",
         f"keywords:{legacy.yaml_list([keyword])}",
