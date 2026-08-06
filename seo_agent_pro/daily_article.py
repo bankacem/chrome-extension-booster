@@ -94,11 +94,51 @@ def save_state(state: dict) -> None:
     STATE_PATH.write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+def _infer_category(keyword: str) -> str:
+    """Lightweight heuristic categorizer for keywords sourced from GSC,
+    which don't come with a pre-assigned category the way keyword_queue.txt
+    lines do. Falls back to a safe default — getting the category slightly
+    wrong is much cheaper than skipping a real, evidenced keyword."""
+    kw = keyword.lower()
+    buckets = {
+        "Performance & Memory": ["memory", "ram", "speed", "slow", "performance", "cache"],
+        "Security & Privacy": ["privacy", "security", "vpn", "block", "password", "track"],
+        "Productivity & Tools": ["productivity", "workflow", "tab", "notes", "translat"],
+        "Ad Blockers": ["ad block", "adblock", "popup", "pop-up"],
+    }
+    for category, words in buckets.items():
+        if any(w in kw for w in words):
+            return category
+    return "Chrome Extensions"
+
+
 def pick_next_keyword() -> tuple[str, str]:
-    """Returns (keyword, category)."""
-    queue = load_queue()
+    """Returns (keyword, category).
+
+    Prefers a real, evidenced keyword opportunity from Google Search
+    Console (queries the site already gets impressions for but ranks
+    poorly on) over the hand-written queue — real search demand beats a
+    guess. Falls back to keyword_queue.txt if GSC is unavailable/
+    unconfigured/errors, or has nothing new to offer, so this never
+    blocks a run.
+    """
     state = load_state()
     used = set(state.get("used_keywords", []))
+
+    try:
+        import gsc_client
+        for opp in gsc_client.fetch_opportunity_keywords():
+            kw = opp["query"].strip().lower()
+            if kw and kw not in used:
+                print(
+                    f"[Keyword] Using real GSC opportunity: {kw!r} "
+                    f"({opp['impressions']} impressions, position {opp['position']})"
+                )
+                return kw, _infer_category(kw)
+    except Exception as e:
+        print(f"[Keyword] GSC lookup unavailable ({e}) — falling back to keyword_queue.txt")
+
+    queue = load_queue()
     for kw, category in queue:
         if kw not in used:
             return kw, category
