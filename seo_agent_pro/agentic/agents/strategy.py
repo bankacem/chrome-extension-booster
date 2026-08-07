@@ -34,7 +34,18 @@ def run(state: dict) -> dict:
         "'interactive' anything, downloadable PDFs/cheat sheets, embedded "
         "screenshots/GIFs, or live widgets — asking for these forces the "
         "writer to fabricate fake evidence of features that don't exist, "
-        "which has caused real published-content problems before."
+        "which has caused real published-content problems before.\n\n"
+        "SIZE CONSTRAINT (equally important — a brief this pipeline has "
+        "actually failed to deliver on before): this is written in a "
+        "single pass by one model call, including smaller/faster models. "
+        "Keep ideal_length between 1000 and 1800 words, and "
+        "required_sections to at most 6-8 H2 headings — roughly one "
+        "section per 150-250 words. A brief asking for 20+ sections in "
+        "2000 words is not achievable in one pass: the writer either cuts "
+        "the article short (truncated mid-sentence) or thins every "
+        "section down to a fragment. A focused 6-section, 1400-word "
+        "article that's actually complete beats an ambitious 20-section "
+        "outline that never gets finished."
     )
     user = f"""Keyword: "{keyword}"
 
@@ -70,6 +81,32 @@ Decide and return JSON:
     if dropped:
         print(c("yellow", f"  ⚠ Dropped undeliverable elements: {dropped}"))
     strategy["must_have_elements"] = clean_elements
+
+    # Defense in depth again: cap ideal_length and required_sections
+    # deterministically, regardless of whether the model followed the
+    # size guidance above. This is what actually caused the previous
+    # failure (30/100, truncated at ~450 words against a 20-section/
+    # 2100-word brief) — the model just couldn't finish, so it stopped
+    # mid-sentence. Capping here guarantees every future brief is
+    # achievable in one pass, no matter which model is active.
+    MAX_SECTIONS = 8
+    MAX_WORDS = 1800
+    MIN_WORDS = 1000
+
+    sections = strategy.get("required_sections", []) or []
+    if len(sections) > MAX_SECTIONS:
+        print(c("yellow", f"  ⚠ Capped required_sections from {len(sections)} to {MAX_SECTIONS}"))
+        strategy["required_sections"] = sections[:MAX_SECTIONS]
+
+    ideal_length = strategy.get("ideal_length") or 0
+    try:
+        ideal_length = int(ideal_length)
+    except (TypeError, ValueError):
+        ideal_length = 0
+    if ideal_length > MAX_WORDS or ideal_length < MIN_WORDS:
+        clamped = max(MIN_WORDS, min(ideal_length or MIN_WORDS, MAX_WORDS))
+        print(c("yellow", f"  ⚠ Clamped ideal_length from {ideal_length} to {clamped}"))
+        strategy["ideal_length"] = clamped
 
     print(c("green", f"  ✓ {strategy.get('strategy','?').upper()} strategy, "
                       f"~{strategy.get('ideal_length','?')} words, angle: {strategy.get('unique_angle','?')}"))
