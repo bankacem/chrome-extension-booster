@@ -35,6 +35,13 @@ def run(state: dict) -> dict:
         "screenshots/GIFs, or live widgets — asking for these forces the "
         "writer to fabricate fake evidence of features that don't exist, "
         "which has caused real published-content problems before.\n\n"
+        "SAME REASON, ALSO FORBIDDEN: quantitative benchmarks (CPU/memory "
+        "numbers), cost-benefit/ROI calculations, and named case studies. "
+        "This pipeline has no way to actually run performance tests or "
+        "source real case-study data, so asking for them produces the "
+        "same fabrication failure mode — invented numbers presented as "
+        "measured data. Qualitative comparisons (Low/Medium/High, general "
+        "pros/cons) are fine; specific invented figures are not.\n\n"
         "SIZE CONSTRAINT (equally important — a brief this pipeline has "
         "actually failed to deliver on before): this is written in a "
         "single pass by one model call, including smaller/faster models. "
@@ -78,7 +85,9 @@ Decide and return JSON:
     # article can't deliver, instead of letting Content fabricate it.
     FORBIDDEN_ELEMENT_RE = __import__("re").compile(
         r"interactive|downloadable|download|screenshot|gif|video|widget|"
-        r"live demo|embed|calculator|quiz|poll",
+        r"live demo|embed|calculator|quiz|poll|"
+        r"benchmark|quantitative|cost-benefit|cost benefit|roi\b|"
+        r"case stud|real-world use case|real world use case",
         __import__("re").IGNORECASE,
     )
     elements = strategy.get("must_have_elements", []) or []
