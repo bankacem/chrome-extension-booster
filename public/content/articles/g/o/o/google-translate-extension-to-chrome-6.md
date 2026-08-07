@@ -11,7 +11,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - google translate extension to chrome
-meta_description: "Are you tired of being limited by language barriers while browsing the internet?"
+meta_description: "How to add the Google Translate extension to Chrome for real-time translation of web pages, articles, and conversations across languages."
 status: published
 published_at: '2026-02-15T20:11:01.239+00:00'
 scheduled_at: '2026-02-15T20:11:00+00:00'

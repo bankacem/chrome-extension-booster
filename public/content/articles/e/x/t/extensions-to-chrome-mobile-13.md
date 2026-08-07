@@ -9,7 +9,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - extensions to chrome mobile
-meta_description: "Are you tired of using a limited browser on your mobile device? Look no further!"
+meta_description: "A look at what's possible with extensions on Chrome for mobile, and how they expand a normally limited mobile browsing experience."
 status: published
 published_at: '2026-02-14T02:11:00.786+00:00'
 scheduled_at: '2026-02-14T02:11:00+00:00'
