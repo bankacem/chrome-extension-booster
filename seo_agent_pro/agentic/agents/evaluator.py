@@ -112,6 +112,27 @@ def _deterministic_checks(state: dict) -> list[str]:
             f"certainly invented"
         )
 
+    # Word-count-vs-target check: catches the semantic-incompleteness case
+    # the punctuation check above can miss (e.g. the remote-work article
+    # that ended on a real sentence mid-topic — "...StayFocusd is a." —
+    # technically valid punctuation, but the article was still only ~450
+    # words against a 1500-word brief). If the model fell far short of
+    # what Strategy asked for, that's a real signal something cut it off,
+    # regardless of how the last sentence happens to be punctuated.
+    ideal_length = state.get("strategy", {}).get("ideal_length")
+    word_count = state.get("word_count") or len(body.split())
+    if ideal_length:
+        try:
+            ideal_length = int(ideal_length)
+            if word_count < 0.65 * ideal_length:
+                issues.append(
+                    f"body is only {word_count} words against a "
+                    f"{ideal_length}-word brief ({round(100 * word_count / ideal_length)}%) "
+                    f"— likely cut short partway through, not actually finished"
+                )
+        except (TypeError, ValueError):
+            pass
+
     return issues
 
 
@@ -128,7 +149,12 @@ def _llm_review(state: dict, model: str) -> dict:
         "absence only pushes the writer to fake having them next time. "
         "Judge the article on what a well-written static article can "
         "actually provide: clarity, accuracy, organization, completeness, "
-        "and genuine (not invented) usefulness."
+        "and genuine (not invented) usefulness.\n\n"
+        "The strategy brief's required_sections and must_have_elements are "
+        "the concrete checklist — grade completeness against those. "
+        "unique_angle is directional color (one differentiating idea), "
+        "NOT a literal second checklist — don't penalize the article for "
+        "every nuance of unique_angle not being individually addressed."
     )
     user = f"""Keyword: "{state.get('keyword')}"
 

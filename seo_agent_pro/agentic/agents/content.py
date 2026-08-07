@@ -125,4 +125,5 @@ Rules:
         "raw_article": raw_article,
         "title": title,
         "body": body,
+        "word_count": word_count,
     }

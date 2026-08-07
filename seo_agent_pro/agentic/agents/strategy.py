@@ -45,7 +45,13 @@ def run(state: dict) -> dict:
         "the article short (truncated mid-sentence) or thins every "
         "section down to a fragment. A focused 6-section, 1400-word "
         "article that's actually complete beats an ambitious 20-section "
-        "outline that never gets finished."
+        "outline that never gets finished.\n\n"
+        "unique_angle should be ONE differentiating idea in 1-2 sentences "
+        "(e.g. 'focus on remote-work-specific pain points competitors "
+        "ignore') — not a second checklist of extra sections, data "
+        "points, or features layered on top of required_sections. It "
+        "gets shown to the reviewer as directional color, not as a "
+        "literal list of additional deliverables to grade against."
     )
     user = f"""Keyword: "{keyword}"
 
@@ -107,6 +113,16 @@ Decide and return JSON:
         clamped = max(MIN_WORDS, min(ideal_length or MIN_WORDS, MAX_WORDS))
         print(c("yellow", f"  ⚠ Clamped ideal_length from {ideal_length} to {clamped}"))
         strategy["ideal_length"] = clamped
+
+    # unique_angle is meant to be one directional sentence, not a second
+    # requirements list — cap it hard so it can't smuggle in extra scope
+    # the evaluator then grades the article against.
+    angle = strategy.get("unique_angle", "") or ""
+    MAX_ANGLE_WORDS = 40
+    angle_words = angle.split()
+    if len(angle_words) > MAX_ANGLE_WORDS:
+        print(c("yellow", f"  ⚠ Trimmed unique_angle from {len(angle_words)} to {MAX_ANGLE_WORDS} words"))
+        strategy["unique_angle"] = " ".join(angle_words[:MAX_ANGLE_WORDS]).rstrip(",;:") + "."
 
     print(c("green", f"  ✓ {strategy.get('strategy','?').upper()} strategy, "
                       f"~{strategy.get('ideal_length','?')} words, angle: {strategy.get('unique_angle','?')}"))
