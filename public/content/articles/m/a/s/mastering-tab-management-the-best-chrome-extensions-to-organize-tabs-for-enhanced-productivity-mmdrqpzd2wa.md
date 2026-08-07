@@ -4,8 +4,7 @@ id: 3143c31b-827c-4386-9fce-6d7a04e2044d
 title: >-
   Mastering Tab Management: The Best Chrome Extensions to Organize Tabs for
   Enhanced Productivity
-slug: mastering-tab-management
-  mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa
+slug: mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa
 excerpt: >-
   Are you tired of feeling overwhelmed by the sheer number of tabs you have open
   in your Chrome browser? Do you struggle to find the information you need

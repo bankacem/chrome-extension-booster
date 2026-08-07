@@ -2,8 +2,7 @@
 seo_title: "Stop Trackers Chrome"
 id: dac72116-fcb7-4b67-9151-2ee5d9ab2628
 title: 'Stop Trackers Chrome: Protect Your Online Privacy with Effective Solutions'
-slug: stop-trackers-chrome
-  stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions-mm3scn1bz3l
+slug: stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions-mm3scn1bz3l
 excerpt: >-
   In today's digital age, online privacy has become a major concern for internet
   users. With the rise of tracking technologies, it's easier than ever for
