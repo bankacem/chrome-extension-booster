@@ -93,7 +93,17 @@ def main():
     parser.add_argument("--niche", default="")
     args = parser.parse_args()
 
-    keyword = args.keyword or legacy.pick_next_keyword()
+    if args.keyword:
+        keyword, category = args.keyword, ""
+    else:
+        # pick_next_keyword() always returns (keyword, category) — a bare
+        # `args.keyword or legacy.pick_next_keyword()` used to assign the
+        # whole tuple to `keyword` whenever no --keyword was passed, which
+        # only ever worked by accident because every prior successful run
+        # happened to pass --keyword explicitly. First unattended run (no
+        # --keyword) hit this for real: "can only concatenate str (not
+        # tuple) to str" mid-pipeline.
+        keyword, category = legacy.pick_next_keyword()
     articles_written = memory_store.articles_written_count()
 
     forced_model = os.environ.get("SEO_AGENT_MODEL")
@@ -126,6 +136,7 @@ def main():
         print(f"Attempting full pipeline with model: {probe_model!r}\n")
         initial_state = {
             "keyword": keyword,
+            "category": category,
             "niche": args.niche,
             "articles_written": articles_written,
             "model_chain": candidates,
