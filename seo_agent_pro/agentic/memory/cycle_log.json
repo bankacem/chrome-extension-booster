@@ -1,0 +1,23 @@
+[
+  {
+    "keyword": "best chrome extensions for remote work",
+    "model": "llama-3.1-70b-groq",
+    "revision_count": 2,
+    "score": 35,
+    "approved": false,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "Missing dedicated section \"How to install and configure each extension (step‑by‑step checklist)\"; no checklist provided for any extension.",
+      "Missing explicit \"Pricing, security, and privacy overview\" section; only scattered privacy ratings are present.",
+      "Missing \"Best workflow integrations and use‑case recommendations\" section; workflow advice is only brief and not organized as required.",
+      "No FAQ section despite being a required element; article ends abruptly without any Q&A.",
+      "Article is incomplete – truncates at extension 10 with an unfinished heading, indicating missing content.",
+      "Pros/cons are embedded per extension but not presented as a consolidated pros/cons list element as required.",
+      "No separate comparison element beyond the table; brief does not include a side‑by‑side feature comparison matrix.",
+      "Likely below the ideal length of 1400 words due to abrupt ending."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "recorded_at": "2026-08-07T22:21:41.410814+00:00"
+  }
+]
