@@ -12,7 +12,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - chrome extension for website speed test
-meta_description: "Are you tired of slow-loading websites driving away your potential customers?"
+meta_description: "A Chrome extension for testing website speed directly in the browser, useful for catching slow-loading pages that hurt user experience and rankings."
 status: published
 published_at: '2026-04-18T14:15:01.192+00:00'
 scheduled_at: '2026-04-18T14:15:00+00:00'
