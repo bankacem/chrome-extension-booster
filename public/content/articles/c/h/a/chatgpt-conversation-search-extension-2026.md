@@ -9,9 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-8ede21.jpg
 title: >-
   🔎 ChatGPT Conversation Search Chrome Extensions (2026) — Never Lose a Chat
   Again
-meta_description: >-
-  🔎 ChatGPT Conversation Search Chrome Extensions 2026 — Never Lose a Chat
-  Again
+meta_description: "Extensions that let you search across your entire ChatGPT conversation history, so you can find that one answer from months ago in seconds."
 description: >-
   🔎 ChatGPT Conversation Search Chrome Extensions 2026 — Never Lose a Chat
   Again
