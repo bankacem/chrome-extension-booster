@@ -9,7 +9,7 @@ category: "Appearance & Themes"
 tags: []
 keywords:
   - How to force Dark Mode on Amazon website
-meta_description: "Are you tired of the bright and overwhelming interface of the Amazon website?"
+meta_description: "A step-by-step guide to forcing dark mode on Amazon's website, since the retailer doesn't offer a native dark theme option."
 status: published
 published_at: '2026-02-27T02:11:00.833+00:00'
 scheduled_at: '2026-02-27T02:11:00+00:00'

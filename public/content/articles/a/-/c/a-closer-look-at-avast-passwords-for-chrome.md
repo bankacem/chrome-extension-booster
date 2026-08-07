@@ -10,7 +10,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - extension avast password
-meta_description: "Are you tired of using weak passwords and struggling to remember them?"
+meta_description: "A look at Avast's password manager extension for Chrome: how it stores and autofills logins, and what its security features actually cover."
 status: published
 published_at: '2026-05-04T22:15:01.576+00:00'
 scheduled_at: '2026-05-04T22:15:00+00:00'

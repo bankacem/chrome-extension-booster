@@ -11,7 +11,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - bugherd extension chrome
-meta_description: "Are you tired of tedious bug tracking and project management processes?"
+meta_description: "How the BugHerd Chrome extension turns visual feedback on any webpage into trackable tickets, streamlining bug reporting for dev and QA teams."
 status: published
 published_at: '2026-02-10T14:11:01.982+00:00'
 scheduled_at: '2026-02-10T14:11:00+00:00'

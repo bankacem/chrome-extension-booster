@@ -4,8 +4,7 @@ id: c549e364-5e69-40ce-8f0e-336ee7780593
 title: >-
   Supercharge Your Downloads: The Best Chrome Extension for Downloading Files
   Faster
-slug: supercharge-your-downloads
-  supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i
+slug: supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i
 excerpt: >-
   Are you tired of waiting for what feels like an eternity for your files to
   download? Do you wish there was a way to speed up the process and get your

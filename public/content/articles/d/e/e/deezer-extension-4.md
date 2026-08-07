@@ -9,7 +9,7 @@ category: "Social Media Tools"
 tags: []
 keywords:
   - deezer extension
-meta_description: "Are you a music lover who spends hours streaming your favorite tunes on Deezer?"
+meta_description: "A guide to the Deezer Chrome extension, covering the extra playback controls and features it adds on top of the standard Deezer web player."
 status: published
 published_at: '2026-05-17T14:15:03.056+00:00'
 scheduled_at: '2026-05-17T14:15:00+00:00'

@@ -4,8 +4,7 @@ id: b55bb75c-dd03-4463-87da-b975a2d1e84d
 title: >-
   Optimize Your Browser: The Best Ways to Reduce RAM Usage with Chrome
   Extensions
-slug: optimize-your-browser
-  optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao
+slug: optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao
 excerpt: >-
   Are you tired of your browser consuming excessive RAM, slowing down your
   computer, and hindering your productivity? You're not alone. Many users face

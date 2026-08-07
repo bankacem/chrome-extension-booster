@@ -7,7 +7,7 @@ published_at: '2026-07-10'
 featured_image: /content/images/deepseek-markdown-20260603-589870.jpg
 image_url: /content/images/deepseek-markdown-20260603-589870.jpg
 title: ⚡ Free AI Content Summarizer Chrome Extensions (2026) — Read Less, Know More
-meta_description: ⚡ Free AI Content Summarizer Chrome Extensions 2026 — Read Less, Know More
+meta_description: "Free Chrome extensions that summarize long articles in seconds — tested picks that don't require a paid ChatGPT subscription to use."
 description: ⚡ Free AI Content Summarizer Chrome Extensions 2026 — Read Less, Know More
 category: "AI Tools"
 ---

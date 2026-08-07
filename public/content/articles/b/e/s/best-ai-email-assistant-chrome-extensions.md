@@ -7,9 +7,7 @@ published_at: '2026-07-08'
 featured_image: /content/images/deepseek-markdown-20260603-54a560.jpg
 image_url: /content/images/deepseek-markdown-20260603-54a560.jpg
 title: 'Best AI Email Assistant Chrome Extensions'
-meta_description: >-
-  📧 The Ultimate Guide to AI Email Assistant Chrome Extensions Save 10+
-  Hours/Week
+meta_description: "Free AI email assistant extensions built to cut hours off inbox management by drafting replies and summarizing threads automatically."
 description: >-
   📧 The Ultimate Guide to AI Email Assistant Chrome Extensions Save 10+
   Hours/Week

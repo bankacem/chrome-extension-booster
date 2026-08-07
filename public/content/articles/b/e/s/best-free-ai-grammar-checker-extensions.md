@@ -9,9 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-daefb7.jpg
 title: >-
   ✅ Best Free AI Grammar Checker Chrome Extensions (2026) — Write Better
   Everywhere
-meta_description: >-
-  ✅ Best Free AI Grammar Checker Chrome Extensions 2026 — Write Better
-  Everywhere
+meta_description: "Free, open-source AI grammar checkers that run on your own API key instead of expensive subscriptions that store and learn from your writing."
 description: >-
   ✅ Best Free AI Grammar Checker Chrome Extensions 2026 — Write Better
   Everywhere

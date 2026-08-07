@@ -7,7 +7,7 @@ published_at: '2026-07-13'
 featured_image: /content/images/deepseek-markdown-20260603-7479f6.jpg
 image_url: /content/images/deepseek-markdown-20260603-7479f6.jpg
 title: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
-meta_description: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
+meta_description: "Chrome's built-in Gemini sidebar is useful but limited — no folders, no saved prompts, no comparisons. Here's when a dedicated extension is worth adding."
 description: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
 category: "Chrome Extensions"
 ---

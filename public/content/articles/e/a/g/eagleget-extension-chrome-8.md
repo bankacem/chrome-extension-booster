@@ -9,7 +9,7 @@ category: "Media & Downloads"
 tags: []
 keywords:
   - eagleget extension chrome
-meta_description: "Are you tired of using a slow and clunky download manager in your Chrome browser?"
+meta_description: "A full guide to the EagleGet extension for Chrome, a download manager built to replace the browser's slower built-in downloader."
 status: published
 published_at: '2026-05-15T10:15:00.771+00:00'
 scheduled_at: '2026-05-15T10:15:00+00:00'

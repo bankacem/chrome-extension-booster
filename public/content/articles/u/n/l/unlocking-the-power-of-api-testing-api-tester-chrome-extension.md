@@ -10,7 +10,7 @@ category: Chrome Extensions
 tags: []
 keywords:
   - api tester chrome extension
-meta_description: "As a developer, testing APIs is an essential part of the development process."
+meta_description: "How API tester Chrome extensions let developers test endpoints directly in the browser, skipping the need for separate desktop tools."
 status: published
 published_at: '2026-04-05T14:15:00.297+00:00'
 scheduled_at: '2026-04-05T14:15:00+00:00'

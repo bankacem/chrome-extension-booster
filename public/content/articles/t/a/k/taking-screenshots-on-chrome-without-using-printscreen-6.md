@@ -123,7 +123,7 @@ description: "Are you tired of using the PrintScreen button to capture screensho
 <p>In addition to the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> and <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extensions, there are several other third-party Chrome extensions available that can be used for taking screenshots. Some popular options include:</p>
 
 <ul>
-  <li><a href="https://chromewebstore.google.com/detail/screenshot-capture/ckibcdcciaobbnjihlficjgjdpbmekmg" class="text-primary font-medium hover:underline">Screenshot Capture</a></li>
+  <li><a href="https://chromewebstore.google.com/detail/screenshot-capture/giabbpobpebjfegnpcclkocepcgockkc" class="text-primary font-medium hover:underline">Screenshot Capture</a></li>
   <li><a href="https://chromewebstore.google.com/detail/nimbus-screenshot-screen/vmhpgmdmcafnphgghodogpojmmmpjlkg" class="text-primary font-medium hover:underline">Nimbus Screenshot</a></li>
 </ul>
 
@@ -146,7 +146,7 @@ description: "Are you tired of using the PrintScreen button to capture screensho
       <td>Free</td>
     </tr>
     <tr>
-      <td><a href="https://chromewebstore.google.com/detail/screenshot-capture/ckibcdcciaobbnjihlficjgjdpbmekmg" class="text-primary font-medium hover:underline">Screenshot Capture</a></td>
+      <td><a href="https://chromewebstore.google.com/detail/screenshot-capture/giabbpobpebjfegnpcclkocepcgockkc" class="text-primary font-medium hover:underline">Screenshot Capture</a></td>
       <td>Capture full-page or selected area screenshots, annotate and edit screenshots</td>
       <td>Free trial, $9.99/year</td>
     </tr>
@@ -164,7 +164,7 @@ description: "Are you tired of using the PrintScreen button to capture screensho
 
 <ol>
   <li><strong>Q: What is the best way to take screenshots on Chrome without using PrintScreen?</strong>
-    <p>A: The best way to take screenshots on Chrome without using PrintScreen is to use a Chrome extension such as <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> or <a href="https://chromewebstore.google.com/detail/screenshot-capture/ckibcdcciaobbnjihlficjgjdpbmekmg" class="text-primary font-medium hover:underline">Screenshot Capture</a>.</p>
+    <p>A: The best way to take screenshots on Chrome without using PrintScreen is to use a Chrome extension such as <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> or <a href="https://chromewebstore.google.com/detail/screenshot-capture/giabbpobpebjfegnpcclkocepcgockkc" class="text-primary font-medium hover:underline">Screenshot Capture</a>.</p>
   </li>
   <li><strong>Q: Can I use keyboard shortcuts to take screenshots on Chrome?</strong>
     <p>A: Yes, you can use keyboard shortcuts such as Ctrl + PrintScreen (Windows) or Cmd + Shift + 4 (Mac) to capture screenshots on Chrome.</p>
@@ -176,7 +176,7 @@ description: "Are you tired of using the PrintScreen button to capture screensho
     <p>A: Yes, you can customize the screenshot-taking experience on Chrome by using Chrome extensions, keyboard shortcuts, and built-in screenshot tools.</p>
   </li>
   <li><strong>Q: Are there any third-party Chrome extensions available for taking screenshots?</strong>
-    <p>A: Yes, there are several third-party Chrome extensions available for taking screenshots, including <a href="https://chromewebstore.google.com/detail/screenshot-capture/ckibcdcciaobbnjihlficjgjdpbmekmg" class="text-primary font-medium hover:underline">Screenshot Capture</a> and <a href="https://chromewebstore.google.com/detail/nimbus-screenshot-screen/vmhpgmdmcafnphgghodogpojmmmpjlkg" class="text-primary font-medium hover:underline">Nimbus Screenshot</a>.</p>
+    <p>A: Yes, there are several third-party Chrome extensions available for taking screenshots, including <a href="https://chromewebstore.google.com/detail/screenshot-capture/giabbpobpebjfegnpcclkocepcgockkc" class="text-primary font-medium hover:underline">Screenshot Capture</a> and <a href="https://chromewebstore.google.com/detail/nimbus-screenshot-screen/vmhpgmdmcafnphgghodogpojmmmpjlkg" class="text-primary font-medium hover:underline">Nimbus Screenshot</a>.</p>
   </li>
   <li><strong>Q: How do I choose the best Chrome extension for taking screenshots?</strong>
     <p>A: To choose the best Chrome extension for taking screenshots, consider factors such as features, pricing, and user reviews. You can also read our article on <a href="/blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025" class="text-primary font-medium hover:underline">Chrome Extensions vs. Web Apps: The Ultimate Comparison for Productivity in 2025</a> for more information.</p>
