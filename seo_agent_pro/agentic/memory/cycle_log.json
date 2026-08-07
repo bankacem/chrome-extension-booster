@@ -1,0 +1,30 @@
+[
+  {
+    "keyword": "best chrome extensions for remote work",
+    "model": "llama-3.1-70b-groq",
+    "revision_count": 2,
+    "score": 30,
+    "approved": false,
+    "deterministic_issues": [
+      "body does not end with sentence-ending punctuation (looks truncated mid-sentence/mid-word)"
+    ],
+    "llm_issues": [
+      "Article length is far below the 1500-word target; the content stops mid‑sentence after the first pros‑and‑cons list.",
+      "Missing required sections: 'Performance, Compatibility, and Security Benchmarks', 'Real‑World Use Cases & Cost‑Benefit Analysis', 'Quick‑Start Installation & Setup Checklist', 'FAQ', and 'Conclusion' are absent.",
+      "Only a partial 'Evaluation Criteria' section is present; a dedicated 'Performance, Compatibility, and Security Benchmarks' section with detailed data is required.",
+      "The 'Real‑World Use Cases & Cost‑Benefit Analysis' section is not provided; no concrete team case studies or ROI calculations are included.",
+      "The 'Quick‑Start Installation & Setup Checklist' is missing entirely; readers have no step‑by‑step guide to install any extension.",
+      "FAQ section does not exist; at least five common questions must be answered.",
+      "Pros‑and‑cons checklists are only started for Todoist and are incomplete; each recommended extension needs a full checklist.",
+      "The summary table is missing columns for explicit pricing tiers, feature comparison beyond core benefit, and rating source; the table also lacks a clear headline indicating it is the required 'summary table'.",
+      "Performance comparison chart is required (CPU & memory impact). The provided table shows qualitative 'Low/Medium/High' labels but not a visual chart or quantitative numbers, which does not meet the brief.",
+      "No cost‑benefit analysis figures or calculations are presented; the article only makes vague statements about ROI.",
+      "The unique angle mentions pairing benchmarks with case studies, but no actual case study data is shown.",
+      "Formatting inconsistencies: stray markdown link syntax in the title line and broken bullet list under the Todoist pros‑and‑cons (truncated bullet).",
+      "Missing conclusion that summarizes key takeaways and calls to action."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "recorded_at": "2026-08-07T22:12:03.238378+00:00"
+  }
+]
