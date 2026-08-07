@@ -66,8 +66,6 @@ Follow these steps to clear Chrome’s cache and cookies on a computer:
    - Click the three-dot menu in the top-right corner.
    - Select **Settings** from the dropdown.
 
-   ![Screenshot of accessing Chrome Settings](https://via.placeholder.com/800x430)
-
 3. **Navigate to Privacy and Security**  
    Scroll down and click on **Privacy and security**.
 
@@ -78,8 +76,6 @@ Follow these steps to clear Chrome’s cache and cookies on a computer:
    - Go to the **Basic** tab.
    - Check the boxes for **Cached images and files** and **Cookies and other site data**.
    - Choose a time range from the dropdown (e.g., Last hour, Last 7 days, All time).
-
-   ![Screenshot of Clear Browsing Data options](https://via.placeholder.com/800x430)
 
 6. **Clear Data**  
    Hit the **Clear data** button, and you’re done!
@@ -102,8 +98,6 @@ For those who primarily browse on their phones, here is how to clear Chrome’s 
 4. **Select What to Clear**  
    - Under the **Basic** tab, select **Cookies, site data** and **Cached images and files**.
    - Choose the time range (e.g., Last hour, Last 24 hours).
-
-   ![Screenshot of mobile Clear Browsing Data window](https://via.placeholder.com/800x430)
 
 5. **Confirm Clearing**  
    Tap **Clear data** to finalize the process.
@@ -180,4 +174,4 @@ A: Yes, clearing cookies will sign you out of most websites since cookies store 
 
 Clearing cache and cookies in Chrome is a simple yet powerful way to ensure faster browsing, enhanced security, and fewer website issues. When paired with comparisons to other browsers, automation tips, and real-world examples, managing your browser’s performance becomes much easier and more effective. 
 
-Take charge of your browsing experience today — try out these tips and tricks to keep your browser optimized! And don’t forget to [subscribe to our newsletter](#) for regular updates and expert insights to help you navigate the ever-changing digital world.
+Take charge of your browsing experience today — try out these tips and tricks to keep your browser optimized! And don’t forget to subscribing to our newsletter for regular updates and expert insights to help you navigate the ever-changing digital world.
