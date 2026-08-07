@@ -1,0 +1,27 @@
+[
+  {
+    "keyword": "best chrome extensions for remote work",
+    "model": "llama-3.1-70b-groq",
+    "revision_count": 2,
+    "score": 30,
+    "approved": false,
+    "deterministic_issues": [
+      "body does not end with sentence-ending punctuation (looks truncated mid-sentence/mid-word)"
+    ],
+    "llm_issues": [
+      "Length: article is far below the ideal 2100 words; current content is only ~450 words.",
+      "Missing required sections: the brief lists 20+ sections (e.g., Productivity Extensions, Communication & Collaboration Extensions, Time‑Tracking & Focus Extensions, Security & Privacy Extensions, Performance Impact & Resource Usage, Integration with Niche Remote‑Work Tools, Accessibility & Inclusive Design Evaluation, Cost‑Benefit Analysis, Data‑Privacy Audit & Compliance, Offline & Low‑Bandwidth Scenarios, Future‑Proofing: AI‑Enhanced Extensions, How to Install, Manage, and Sync Extensions, Pricing & Alternatives, FAQs, Conclusion) none of which appear in the draft.",
+      "Missing required elements: no pros‑cons list for each extension, no printable checklist, no step‑by‑step installation instructions, and no dedicated FAQ section.",
+      "Comparison table is incomplete: only 7 extensions shown, while the brief expects a side‑by‑side comparison of the top 15 extensions across five functional categories.",
+      "Statistics block is insufficient: only one statistic (average six hours browsing) is provided; the brief expects a richer data‑driven block (e.g., productivity uplift percentages, adoption rates, performance metrics across extensions).",
+      "Unique angle not fully realized: the article mentions performance, privacy, and AI, but lacks detailed persona‑focused scenarios, quantitative performance impact data per extension, and deep privacy compliance audit results.",
+      "Methodology table lacks citation of sources or links to raw data; the brief expects transparent methodology with references to tools and data sources.",
+      "No conclusion or call‑to‑action, despite being listed as a required section.",
+      "Missing internal linking consistency: the intro links to unrelated SEO articles, which does not reinforce the remote‑work topic.",
+      "Formatting: sections are separated by horizontal rules but headings do not follow a consistent hierarchy (e.g., missing H2 for many required sections)."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "recorded_at": "2026-08-07T07:56:04.620024+00:00"
+  }
+]
