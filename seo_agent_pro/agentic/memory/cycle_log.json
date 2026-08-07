@@ -1,0 +1,25 @@
+[
+  {
+    "keyword": "best chrome extensions for remote work",
+    "model": "llama-3.1-70b-groq",
+    "revision_count": 2,
+    "score": 0,
+    "approved": false,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "Missing required sections: In‑Depth Comparison Table, Real‑World ROI & Case Studies, Accessibility, Privacy, and Future‑Roadmap Checklist, Step‑by‑Step: Install, Manage, and Optimize Extensions, and FAQ.",
+      "The 'Top Chrome Extensions' section omits the Security category entirely; only Productivity, Communication, and Time Management are covered.",
+      "Comparison tables are fragmented per category rather than a single comprehensive side‑by‑side table as required by the brief.",
+      "Article ends abruptly during the StayFocusd description, indicating incomplete content and likely failing the 1500‑word target.",
+      "No quantitative ROI analysis or calculations; the mention of ROI is vague and lacks data‑driven case study evidence.",
+      "Performance statistics are minimal (only generic RAM/CPU estimates) and do not include benchmark data or aggregated performance impact across extensions.",
+      "No dedicated pros‑and‑cons list outside of the table cells; the brief expects a clear, separate list for each extension.",
+      "Absence of a checklist format that addresses accessibility, privacy, and future‑roadmap considerations.",
+      "No step‑by‑step installation and optimization guide, which is a mandatory element.",
+      "FAQ section is completely missing."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "recorded_at": "2026-08-07T08:09:03.223600+00:00"
+  }
+]
