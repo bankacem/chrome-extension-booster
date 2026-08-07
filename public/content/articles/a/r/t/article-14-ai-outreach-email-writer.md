@@ -6,14 +6,11 @@ published_at: '2026-06-13'
 featured_image: /content/images/article-14-ai-outreach-email-writer.jpg
 image_url: /content/images/article-14-ai-outreach-email-writer.jpg
 title: 'AI Outreach Email Writer Chrome Extension: The Ultimate Guide for 2026'
-meta_description: 'AI Outreach Email Writer Chrome Extension: The Ultimate Guide for 2026'
-description: 'AI Outreach Email Writer Chrome Extension: The Ultimate Guide for 2026'
+meta_description: "Discover the best AI outreach email writer Chrome extensions for 2026. Learn how to write personalized cold emails that get replies, book meetings, and."
+description: "Discover the best AI outreach email writer Chrome extensions for 2026. Learn how to write personalized cold emails that get replies, book meetings, and."
 category: "Chrome Extensions"
 ---
 
-**Meta Description:** Discover the best AI outreach email writer Chrome extensions for 2026. Learn how to write personalized cold emails that get replies, book meetings, and drive sales with AI-powered browser tools.
-
----
 
 ## Table of Contents
 
