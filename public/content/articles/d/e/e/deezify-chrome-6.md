@@ -9,7 +9,7 @@ category: "Social Media Tools"
 tags: []
 keywords:
   - deezify chrome
-meta_description: "Are you a music lover looking to enhance your Deezer experience on Chrome?"
+meta_description: "A guide to Deezify, a Chrome extension that adds extra playback controls and features on top of the standard Deezer web player."
 status: published
 published_at: '2026-05-17T06:15:00.502+00:00'
 scheduled_at: '2026-05-17T06:15:00+00:00'

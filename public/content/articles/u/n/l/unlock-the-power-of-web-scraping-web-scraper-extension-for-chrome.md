@@ -10,7 +10,7 @@ category: Chrome Extensions
 tags: []
 keywords:
   - web scraper extension for chrome
-meta_description: "Are you tired of manually extracting data from websites? Look no further!"
+meta_description: "How a web scraper extension for Chrome automates pulling structured data from websites, replacing tedious manual copy-and-paste work."
 status: published
 published_at: '2026-04-05T18:15:01.009+00:00'
 scheduled_at: '2026-04-05T18:15:00+00:00'

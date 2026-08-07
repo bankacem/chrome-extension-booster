@@ -6,7 +6,7 @@ published_at: '2026-07-03'
 featured_image: /content/images/article8-protonpass-review.jpg
 image_url: /content/images/article8-protonpass-review.jpg
 title: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
-meta_description: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
+meta_description: "A review of Proton Pass, the password manager from the team behind Proton Mail and Proton VPN, and how its Swiss privacy model holds up daily."
 description: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
 category: "Security & Privacy"
 ---

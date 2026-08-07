@@ -7,7 +7,7 @@ published_at: '2026-07-14'
 featured_image: /content/images/deepseek-markdown-20260603-80b899.jpg
 image_url: /content/images/deepseek-markdown-20260603-80b899.jpg
 title: 📌 ChatGPT Side Panel Chrome Extensions (2026) — AI on Every Tab
-meta_description: 📌 ChatGPT Side Panel Chrome Extensions 2026 — AI on Every Tab
+meta_description: "Side panel extensions keep ChatGPT open in a permanent sidebar so you can ask questions or rewrite text without leaving the tab you're on."
 description: 📌 ChatGPT Side Panel Chrome Extensions 2026 — AI on Every Tab
 category: "AI Tools"
 ---
