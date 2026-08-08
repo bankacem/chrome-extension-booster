@@ -1,0 +1,80 @@
+name: Generate Image for Article (on demand)
+
+# Runs from GitHub Actions specifically because this environment has real
+# network access to the Gemini API — the sandbox used to write/maintain
+# this pipeline cannot reach generativelanguage.googleapis.com at all
+# (network egress is restricted to a small allowlist), so this step can
+# only ever be verified by actually running it here.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Slug of the already-published article to generate an image for"
+        required: true
+
+jobs:
+  generate-image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install -r seo_agent_pro/requirements.txt
+
+      - name: Generate image
+        id: gen
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+        run: |
+          set -o pipefail
+          python3 seo_agent_pro/generate_image_for_article.py "${{ github.event.inputs.slug }}" 2>&1 | tee /tmp/image_gen_output.log
+
+      - name: Post debug output if generation failed or produced nothing
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! grep -q "^DONE:" /tmp/image_gen_output.log; then
+            {
+              echo "Full output:"
+              echo '```'
+              cat /tmp/image_gen_output.log
+              echo '```'
+            } > /tmp/issue_body.txt
+            gh issue create \
+              --title "Image generation for '${{ github.event.inputs.slug }}' did not produce an image ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
+              --body-file /tmp/issue_body.txt
+          fi
+
+      - name: Rebuild sitemap/index (image path changed)
+        if: always()
+        run: |
+          npm --version || true
+          curl -fsSL https://bun.sh/install | bash
+          export PATH="$HOME/.bun/bin:$PATH"
+          bun install
+          bun run scripts/sync-articles.ts || true
+
+      - name: Commit and push if an image was generated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No changes to commit (image generation likely no-op'd — see log/issue)."
+            exit 0
+          fi
+          git add public/content/images/ public/content/articles/ public/content/articles-index.json
+          git commit -m "feat: generate featured image for ${{ github.event.inputs.slug }}"
+          git push origin main
