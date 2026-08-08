@@ -13,7 +13,7 @@ keywords:
   - dark mode chrome extension
   - black mode chrome
   - chrome dark theme extension
-meta_description: "I tested DarkFlow, Dark Reader, and Midnight Lizard for a week on an OLED laptop...."
+meta_description: "After testing DarkFlow, Dark Reader, and Midnight Lizard for a week on an OLED laptop, here's which dark mode extension is easiest on your eyes and battery."
 status: published
 published_at: '2026-05-24T10:15:00.376+00:00'
 scheduled_at: '2026-05-24T10:15:00+00:00'

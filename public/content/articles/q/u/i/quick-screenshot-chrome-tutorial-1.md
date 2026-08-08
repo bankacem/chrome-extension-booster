@@ -11,7 +11,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - quick screenshot chrome tutorial
-meta_description: "Welcome to the most comprehensive quick screenshot Chrome tutorial you'll ever need."
+meta_description: "A complete tutorial on taking quick screenshots in Chrome, covering full-page capture, selected areas, keyboard shortcuts, and the best extensions to use."
 status: published
 published_at: '2026-02-24T20:11:00.335+00:00'
 scheduled_at: '2026-02-24T20:11:00+00:00'
