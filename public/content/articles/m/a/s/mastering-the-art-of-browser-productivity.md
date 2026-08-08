@@ -12,7 +12,7 @@ category: "Productivity & Tools"
 tags: []
 keywords:
   - how to manage chrome extensions
-meta_description: "Are you tired of feeling overwhelmed by the numerous Chrome extensions installed on your browser?"
+meta_description: "Overwhelmed by the number of Chrome extensions installed on your browser? Here's how to manage, group, and disable extensions to keep Chrome running smoothly."
 status: published
 published_at: '2026-04-23T02:15:01.755+00:00'
 scheduled_at: '2026-04-23T02:15:00+00:00'
