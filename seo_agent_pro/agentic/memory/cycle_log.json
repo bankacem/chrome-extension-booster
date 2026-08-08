@@ -1,0 +1,22 @@
+[
+  {
+    "keyword": "best chrome extensions for language learning",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 2,
+    "score": 7,
+    "approved": false,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article is incomplete, abruptly cutting off mid-sentence in the 'Read Aloud' section.",
+      "The required section 'Privacy and Data Considerations When Using Extensions' is missing.",
+      "The 'Integrating Extensions with Your Existing Learning Workflow' section is missing.",
+      "The 'Step-by-Step Installation and Best Practices' section is missing.",
+      "The 'Frequently Asked Questions' section is missing, including the schema markup.",
+      "The required feature comparison table is missing, as only a placeholder mentioning the table's presence is provided.",
+      "Some specific user-level suitability details are provided, but the 'user-level suitability checklist' is not fulfilled as a distinct, clear checklist."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "recorded_at": "2026-08-08T08:09:17.622389+00:00"
+  }
+]
