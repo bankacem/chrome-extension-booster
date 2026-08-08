@@ -3921,17 +3921,17 @@
     "updated_at": "2026-05-13T02:15:00.337785+00:00"
   },
   {
-    "id": "internet-download-manager-chrome-extension",
+    "id": "cookie-manager-chrome-extension",
     "title": "Best Cookie Manager Extension for Chrome",
-    "slug": "internet-download-manager-chrome-extension",
-    "description": "As the internet continues to evolve, concerns about online privacy have become more pressing than ever.",
-    "meta_description": "As the internet continues to evolve, concerns about online privacy have become more pressing than ever.",
+    "slug": "cookie-manager-chrome-extension",
+    "description": "Cookies can quietly track your browsing and compromise your privacy. Here's how a Chrome cookie manager extension helps you view, control, and clear them.",
+    "meta_description": "Cookies can quietly track your browsing and compromise your privacy. Here's how a Chrome cookie manager extension helps you view, control, and clear them.",
     "excerpt": "As the internet continues to evolve, concerns about online privacy have become more pressing than ever.",
     "published_at": "2026-05-12T22:15:02.295+00:00",
-    "category": "Redirect & Navigation",
+    "category": "Security & Privacy",
     "author": "James Mitchell",
-    "image_url": "/content/images/internet-download-manager-chrome-extension/featured.webp",
-    "featured_image": "/content/images/internet-download-manager-chrome-extension/featured.webp",
+    "image_url": "/content/images/cookie-manager-chrome-extension/featured.webp",
+    "featured_image": "/content/images/cookie-manager-chrome-extension/featured.webp",
     "reading_time": 6,
     "read_time": 6,
     "views": 0,
@@ -3939,7 +3939,7 @@
     "keywords": [
       "extension chrome cookie manager"
     ],
-    "canonicalPath": "/blog/internet-download-manager-chrome-extension",
+    "canonicalPath": "/blog/cookie-manager-chrome-extension",
     "updated_at": "2026-05-12T22:15:02.442916+00:00"
   },
   {
