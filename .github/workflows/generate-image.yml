@@ -43,19 +43,15 @@ jobs:
 
       - name: Post debug output if generation failed or produced nothing
         if: always()
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
-          if ! grep -q "^DONE:" /tmp/image_gen_output.log; then
-            {
-              echo "Full output:"
-              echo '```'
-              cat /tmp/image_gen_output.log
-              echo '```'
-            } > /tmp/issue_body.txt
-            gh issue create \
-              --title "Image generation for '${{ github.event.inputs.slug }}' did not produce an image ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
-              --body-file /tmp/issue_body.txt
+          echo "## Image generation output for slug: ${{ github.event.inputs.slug }}" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat /tmp/image_gen_output.log >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          if grep -q "^DONE:" /tmp/image_gen_output.log; then
+            echo "✅ Image generated successfully." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "⚠️ No image was generated — see output above for why (missing/invalid GEMINI_KEY, API error, etc.)." >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Rebuild sitemap/index (image path changed)
