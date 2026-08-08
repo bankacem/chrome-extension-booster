@@ -133,6 +133,54 @@ def _deterministic_checks(state: dict) -> list[str]:
         except (TypeError, ValueError):
             pass
 
+    # Brief-compliance check: the Strategy Agent's required_sections is
+    # supposed to be a concrete checklist, not a suggestion — verify each one
+    # actually has a matching heading in the body instead of trusting the
+    # Content Agent said it included them. Real failure this caught: an
+    # article whose Strategy brief required 5 sections (Privacy, Workflow
+    # Integration, Installation Steps, FAQ, comparison table) but the
+    # Content Agent only wrote 2 of them and the LLM critic had to notice it
+    # after the fact — this makes it a hard, cheap, pre-LLM-review check
+    # instead of relying on the critic to catch it every time.
+    required_sections = state.get("strategy", {}).get("required_sections") or []
+    if required_sections:
+        # Normalize headings actually present in the body (H2/H3 text).
+        present_headings = [
+            re.sub(r"[^a-z0-9 ]", "", h.lower()).strip()
+            for h in re.findall(r"^#{2,3}\s+(.+)$", body, re.MULTILINE)
+        ]
+        missing = []
+        for section in required_sections:
+            norm = re.sub(r"[^a-z0-9 ]", "", section.lower()).strip()
+            section_words = set(norm.split())
+            if not section_words:
+                continue
+            # Common abbreviation alias — "FAQ" is a legitimate heading for
+            # "Frequently Asked Questions" but shares zero words with it, so
+            # the word-overlap check below would false-positive reject it.
+            if "frequently asked questions" in norm and any(
+                "faq" in h for h in present_headings
+            ):
+                continue
+            found = any(
+                len(section_words & set(h.split())) / len(section_words) >= 0.5
+                for h in present_headings
+            )
+            if not found:
+                missing.append(section)
+        if missing:
+            issues.append(
+                f"{len(missing)}/{len(required_sections)} required section(s) from the "
+                f"Strategy brief have no matching heading in the body: {'; '.join(missing)}"
+            )
+
+    must_have = state.get("strategy", {}).get("must_have_elements") or []
+    if any("table" in str(e).lower() for e in must_have) and "|" not in body:
+        issues.append(
+            "Strategy brief requires a comparison table (must_have_elements), "
+            "but the body contains no markdown table (no '|' characters found)"
+        )
+
     return issues
 
 
