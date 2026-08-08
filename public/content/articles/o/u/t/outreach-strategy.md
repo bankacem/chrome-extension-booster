@@ -1,6 +1,6 @@
 ---
 slug: outreach-strategy
-status: published
+status: draft
 published_at: '2026-07-30'
 featured_image: /content/images/outreach-strategy.jpg
 image_url: /content/images/outreach-strategy.jpg
