@@ -16,11 +16,20 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Run discovery and capture output
+      - name: Install anthropic SDK
+        run: pip install anthropic
+
+      - name: Run discovery (OpenAI-compatible path - known blocked, kept for record)
         env:
           AGENTROUTER_KEY: ${{ secrets.AGENTROUTER_KEY }}
         run: |
           python3 seo_agent_pro/test_agentrouter.py > /tmp/results.log 2>&1 || true
+
+      - name: Run discovery (documented Anthropic SDK path)
+        env:
+          AGENTROUTER_KEY: ${{ secrets.AGENTROUTER_KEY }}
+        run: |
+          python3 seo_agent_pro/test_agentrouter_anthropic.py > /tmp/results_anthropic.log 2>&1 || true
 
       - name: Post results as an issue
         env:
@@ -28,8 +37,13 @@ jobs:
         run: |
           {
             echo "## AgentRouter test results"
+            echo "### OpenAI-compatible path"
             echo '```'
             cat /tmp/results.log
+            echo '```'
+            echo "### Anthropic SDK path (documented alt. integration)"
+            echo '```'
+            cat /tmp/results_anthropic.log
             echo '```'
           } > /tmp/results.md
           gh issue create \
