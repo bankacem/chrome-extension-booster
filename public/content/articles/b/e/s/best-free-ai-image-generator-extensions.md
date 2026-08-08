@@ -9,9 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-b5d389.jpg
 title: >-
   🎨 Best Free AI Image Generator Chrome Extensions (2026) — Create Art Without
   Leaving Your Tab
-meta_description: >-
-  🎨 Best Free AI Image Generator Chrome Extensions 2026 — Create Art Without
-  Leaving Your Tab
+meta_description: "Generate images directly in Chrome's side panel without switching tabs. Here's what's actually free among AI image generator extensions in 2026."
 description: >-
   🎨 Best Free AI Image Generator Chrome Extensions 2026 — Create Art Without
   Leaving Your Tab

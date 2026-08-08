@@ -9,9 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-4dd713.jpg
 title: >-
   📁 I Tested Every ChatGPT Folder Organizer (1,400 Conversations). Here's What
   Actually Works.
-meta_description: >-
-  📁 I Tested Every ChatGPT Folder Organizer 1,400 Conversations. Here's What
-  Actually Works.
+meta_description: "After testing every ChatGPT folder organizer across 1,400 conversations, here's which extensions actually keep your chats sorted and easy to find."
 description: >-
   📁 I Tested Every ChatGPT Folder Organizer 1,400 Conversations. Here's What
   Actually Works.
