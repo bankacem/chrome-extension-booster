@@ -9,7 +9,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - tts chrome
-meta_description: "Welcome to the world of text-to-speech (TTS) technology, where the boundaries of reading and listening are blurred."
+meta_description: "Text-to-speech extensions turn any webpage into audio you can listen to instead of read. Here's a look at the best TTS extensions for Chrome worth trying."
 status: published
 published_at: '2026-02-09T20:11:01.943+00:00'
 scheduled_at: '2026-02-09T20:11:00+00:00'

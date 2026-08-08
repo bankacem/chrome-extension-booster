@@ -12,7 +12,7 @@ category: "Productivity & Tools"
 tags: []
 keywords:
   - limit chrome ram usage extension
-meta_description: "How to pick an extension that caps Chrome's RAM usage, with setup steps and real memory-saving results."
+meta_description: "Chrome is fast and feature-packed, but it can also eat through RAM fast. Here's the right extension to cap Chrome's memory usage and keep it running smoothly."
 status: published
 published_at: '2026-03-22T08:00:01.838+00:00'
 scheduled_at: '2026-03-22T08:00:00+00:00'

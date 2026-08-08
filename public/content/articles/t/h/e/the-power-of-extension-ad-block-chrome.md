@@ -10,7 +10,7 @@ category: "Ad Blockers"
 tags: []
 keywords:
   - extension ad block chrome
-meta_description: "A step-by-step walkthrough of a faster browsing experience, from installation to everyday use in Chrome."
+meta_description: "Ads can slow your browsing down as much as they annoy you. Here's how an ad block extension for Chrome speeds up page loads and removes the clutter."
 status: published
 published_at: '2026-05-06T14:15:01.639+00:00'
 scheduled_at: '2026-05-06T14:15:00+00:00'
