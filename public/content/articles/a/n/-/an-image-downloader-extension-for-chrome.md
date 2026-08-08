@@ -10,7 +10,7 @@ category: "Media & Downloads"
 tags: []
 keywords:
   - best image downloader chrome
-meta_description: "Are you tired of manually saving images from websites, one by one? Look no further!"
+meta_description: "A look at the best image downloader extensions for Chrome, built to save multiple images from a page at once instead of one by one."
 status: published
 published_at: '2026-04-04T18:15:00.514+00:00'
 scheduled_at: '2026-04-04T18:15:00+00:00'

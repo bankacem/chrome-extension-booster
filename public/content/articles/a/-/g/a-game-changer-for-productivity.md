@@ -10,7 +10,7 @@ category: "Productivity & Tools"
 tags: []
 keywords:
   - autopager chrome
-meta_description: "Are you tired of clicking through multiple pages to find the information you need?"
+meta_description: "A look at Autopager for Chrome, an extension that auto-loads the next page of results so you stop clicking through pagination manually."
 status: published
 published_at: '2026-04-30T02:15:00.554+00:00'
 scheduled_at: '2026-04-30T02:15:00+00:00'
