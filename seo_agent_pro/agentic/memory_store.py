@@ -100,6 +100,80 @@ def load_lessons() -> str:
     return LESSONS_PATH.read_text(encoding="utf-8")
 
 
+def add_positive_pattern_if_new(pattern_text: str) -> bool:
+    """
+    Sibling to add_lesson_if_new(), but for POSITIVE patterns extracted from
+    demonstrations (see record_demonstration() below) rather than failures
+    the Evaluator caught. Kept in the same lessons.md file, under its own
+    heading, so content.py's existing "load the whole file into the system
+    prompt" logic picks these up automatically — no separate wiring needed
+    for demonstrations to start influencing future agent runs.
+    """
+    current = load_lessons()
+    if "## Patterns that work well" not in current:
+        with open(LESSONS_PATH, "a", encoding="utf-8") as f:
+            f.write(
+                "\n## Patterns that work well (from real published demonstrations)\n\n"
+                "Extracted from articles that scored well and were published — either by "
+                "the agent pipeline itself, or by a human/Claude writing a demonstration "
+                "article the pipeline currently can't reliably produce end-to-end yet. "
+                "Positive guidance, not hard rules — follow the spirit, not necessarily "
+                "the letter.\n\n"
+            )
+        current = load_lessons()
+
+    normalized_existing = {
+        line.strip().lower().lstrip("- ")
+        for line in current.splitlines()
+        if line.strip().startswith("-")
+    }
+    normalized_new = pattern_text.strip().lower().lstrip("- ")
+    if not normalized_new or normalized_new in normalized_existing:
+        return False
+    with open(LESSONS_PATH, "a", encoding="utf-8") as f:
+        f.write(f"- {pattern_text.strip()}\n")
+    return True
+
+
+def record_demonstration(
+    keyword: str,
+    category: str,
+    score: int,
+    notes: str,
+    positive_patterns: list[str],
+) -> list[str]:
+    """
+    Ingest a manually-written ("Claude standing in for the pipeline")
+    published article into long-term memory, so it feeds back into future
+    AUTOMATED runs — this is the actual answer to "can the agents learn from
+    the independent work you (Claude) do outside the pipeline": yes, by
+    calling this after publishing a demonstration article.
+
+    - Adds a cycle_log.json entry (source: model="claude-manual-standin",
+      same convention already in use) so relevant_past_cycles() can surface
+      it to the Research Agent for related future keywords.
+    - Adds each positive_pattern to lessons.md's positive-patterns section,
+      which content.py already loads wholesale into its system prompt — so
+      the very next agent run, automated or not, sees these patterns.
+
+    Returns the list of patterns that were actually new (for logging).
+    """
+    append_cycle({
+        "keyword": keyword,
+        "model": "claude-manual-standin",
+        "revision_count": 0,
+        "score": score,
+        "approved": True,
+        "deterministic_issues": [],
+        "llm_issues": [],
+        "category": category,
+        "final_status": "published",
+        "notes": notes,
+    })
+    added = [p for p in positive_patterns if add_positive_pattern_if_new(p)]
+    return added
+
+
 def add_lesson_if_new(lesson_text: str) -> bool:
     """Append a new lesson line if its normalized text isn't already present
     (crude but effective dedup — good enough for a slowly-growing rule list

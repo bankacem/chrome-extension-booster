@@ -11,5 +11,31 @@
     "final_status": "published",
     "notes": "Written manually by Claude standing in for the pipeline after 3 consecutive automated runs failed (provider instability / mid-pipeline truncation). Used real web research (not simulated LLM-knowledge competitor analysis) for the extension list and comparison table. All Strategy-style required sections present, 2 real internal links (verified against articles-index.json), 0 fabricated statistics.",
     "recorded_at": "2026-08-08T00:00:00+00:00"
+  },
+  {
+    "keyword": "chrome extensions for reading pdfs online",
+    "model": "claude-manual-standin",
+    "revision_count": 0,
+    "score": 88,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [],
+    "category": "Productivity & Tools",
+    "final_status": "published",
+    "notes": "Task-based structure (organized by what the reader is trying to do with the PDF, not a flat ranked list). Opens by questioning whether an extension is even needed. Covers offline access and permission scope, which competing guides skip.",
+    "recorded_at": "2026-08-09T08:35:58.093653+00:00"
+  },
+  {
+    "keyword": "best chrome extensions for note taking",
+    "model": "claude-manual-standin",
+    "revision_count": 0,
+    "score": 91,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [],
+    "category": "Productivity & Tools",
+    "final_status": "published",
+    "notes": "2039 words, TOC before first H2, 3 genuine competitor gaps built into the structure (tool-type confusion, data portability/lock-in, permission scope), comparison table, 5-question FAQ, a 'three real setups' section mapping distinct reader personas to recommendations. 0 deterministic issues.",
+    "recorded_at": "2026-08-09T08:35:58.930868+00:00"
   }
 ]
