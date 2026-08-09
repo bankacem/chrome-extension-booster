@@ -81,7 +81,7 @@ description: "Are you concerned about your online security and anonymity while b
 <h2 id="how-to-install-veepn">How to Install VeePN Extension for Chrome</h2>
 <p>Installing the VeePN extension for Chrome is a simple process. Here's a step-by-step guide:</p>
 <ol>
-  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a></a> and search for the VeePN extension.</li>
+  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the VeePN extension.</li>
   <li>Click the "Add to Chrome" button to install the extension.</li>
   <li>Wait for the extension to download and install.</li>
   <li>Once installed, click the VeePN icon in the top right corner of your browser to connect to the VPN.</li>

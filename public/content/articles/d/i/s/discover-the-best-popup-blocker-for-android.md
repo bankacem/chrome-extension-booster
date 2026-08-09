@@ -115,7 +115,7 @@ description: "Are you tired of annoying popups and intrusive ads disrupting your
 
 <h2>Table of Contents</h2>
 
-<p><a href="#intro"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#what-is-a-popup-blocker">What is a Popup Blocker, and How Does it Work?</a></p>
 <p><a href="#key-features">Key Features of a Reliable Popup Blocker for Android</a></p>
 <p><a href="#top-recommendations">Top Recommendations for the Best Popup Blocker for Android</a></p>

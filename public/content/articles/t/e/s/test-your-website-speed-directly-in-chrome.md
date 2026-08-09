@@ -92,7 +92,7 @@ description: "Are you tired of slow-loading websites driving away your potential
 <p>Using a <strong>chrome extension for website speed test</strong> is relatively straightforward. Here's a step-by-step guide to get you started:</p>
 
 <ol>
-  <li>Install the chrome extension: Browse the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a> and install the <strong>chrome extension for website speed test</strong> of your choice.</li>
+  <li>Install the chrome extension: Browse the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and install the <strong>chrome extension for website speed test</strong> of your choice.</li>
   <li>Launch the extension: Click on the extension's icon in the top-right corner of your browser to launch it.</li>
   <li>Enter your website's URL: Enter your website's URL into the extension's input field and click "Test" or "Analyze."</li>
   <li>Review the results: The extension will provide you with a detailed report of your website's performance, including loading times, page size, and <a href="/blog/seo-meta-in-1-click-review-streamlining-your-optimization-process-mmtm0gc2hpd" class="internal-link" title="SEO Meta in 1 Click Review: Streamlining Your Optimization Process">optimization</a> suggestions.</li>

@@ -48,7 +48,7 @@ description: "Are you tired of waiting for what feels like an eternity for your 
     </div>
   </div>
 </div>
-<p><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#features-to-look-for">Features to Look for in a Fast Video Downloader Chrome Extension</a></p>
 <p><a href="#top-extensions">Top Fastest Video Downloader Chrome Extensions</a></p>
 <p><a href="#tips-and-tricks">Tips and Tricks for Using Video Downloader Chrome Extensions</a></p>

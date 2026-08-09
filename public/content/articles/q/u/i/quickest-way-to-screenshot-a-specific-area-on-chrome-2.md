@@ -69,7 +69,7 @@ description: "Are you tired of taking full-page screenshots only to crop out the
 <p>Our <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension is the <strong>quickest way to screenshot a specific area on Chrome</strong>. With its simple and intuitive interface, you can capture full-page or visible area screenshots instantly. To use the Quick Screenshot Lite extension, simply follow these steps:</p>
 
 <ul>
-    <li>Install the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a>.</li>
+    <li>Install the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
     <li>Click on the Quick Screenshot Lite icon in the top right corner of the browser window.</li>
     <li>Select the area of the page you want to capture by clicking and dragging the crosshairs.</li>
     <li>Release the mouse button to capture the screenshot.</li>

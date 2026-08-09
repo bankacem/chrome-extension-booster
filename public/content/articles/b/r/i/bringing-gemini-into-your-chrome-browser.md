@@ -65,7 +65,7 @@ description: "Are you looking to enhance your browsing experience with the gemin
 <p>Installing the <strong>gemini extension to chrome</strong> is a straightforward process. Simply follow these steps:</p>
 
 <ul>
-    <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a></a> and search for Gemini Extension</li>
+    <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for Gemini Extension</li>
     <li>Click the "Add to Chrome" button</li>
     <li>Wait for the extension to download and install</li>
     <li>Click the Gemini Extension icon in your browser toolbar to access its features</li>
@@ -112,7 +112,7 @@ description: "Are you looking to enhance your browsing experience with the gemin
 
 <h2 id="comparison-with-other-extensions">Comparison with Other Extensions</h2>
 
-<p>So, how does the <strong>gemini extension to chrome</strong> compare to other <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments"><a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments"><a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments"><a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments">browser extensions</a></a></a></a>? Let's take a look:</p>
+<p>So, how does the <strong>gemini extension to chrome</strong> compare to other <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments">browser extensions</a>? Let's take a look:</p>
 
 <table class="comparison-table">
     <thead>

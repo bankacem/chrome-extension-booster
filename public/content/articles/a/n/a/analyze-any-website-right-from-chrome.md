@@ -91,7 +91,7 @@ description: "As a website owner, marketer, or developer, understanding your web
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#why-use-a-chrome-extension-for-website-analysis">Why Use a Chrome Extension for Website Analysis?</a></p>
 <p><a href="#key-features-of-a-chrome-extension-for-website-analysis">Key Features of a Chrome Extension for Website Analysis</a></p>
 <p><a href="#top-chrome-extensions-for-website-analysis">Top Chrome Extensions for Website Analysis</a></p>

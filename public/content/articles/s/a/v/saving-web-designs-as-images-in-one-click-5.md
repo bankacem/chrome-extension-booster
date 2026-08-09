@@ -39,7 +39,7 @@ description: "Saving web designs as images in one click has become an essential 
   </thead>
   <tbody>
     <tr>
-      <td><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></td>
+      <td><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></td>
     </tr>
     <tr>
       <td><a href="#why-save-web-designs-as-images">Why Save Web Designs as Images?</a></td>
@@ -113,7 +113,7 @@ description: "Saving web designs as images in one click has become an essential 
 <h3>Step-by-Step Instructions</h3>
 
 <ol>
-  <li>Install <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a>.</li>
+  <li>Install <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Click on the icon in your browser toolbar to open the extension.</li>
   <li>Choose to capture a full-page screenshot or a visible area screenshot.</li>
   <li>Save the screenshot as an image file.</li>

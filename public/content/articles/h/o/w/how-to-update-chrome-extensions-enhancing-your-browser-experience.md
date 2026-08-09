@@ -55,7 +55,7 @@ description: "Are you wondering how to update Chrome extensions to ensure you ha
   <li><a href="#how-to-update-chrome-extensions">How to Update Chrome Extensions</a></li>
   <li><a href="#automatic-updates">Automatic Updates</a></li>
   <li><a href="#manual-updates">Manual Updates</a></li>
-  <li><a href="#troubleshooting"><a href="/blog/how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting-mmb6y2rtgr2" class="internal-link" title="How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to Troubleshooting">Troubleshooting</a></a></li>
+  <li><a href="/blog/how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting-mmb6y2rtgr2" class="internal-link" title="How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to Troubleshooting">Troubleshooting</a></li>
   <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 

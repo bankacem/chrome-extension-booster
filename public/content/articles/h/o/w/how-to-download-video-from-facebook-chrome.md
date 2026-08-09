@@ -51,7 +51,7 @@ description: "Are you looking for a way to download video from Facebook Chrome? 
 <ul>
   <li><a href="#what-are-chrome-extensions">What are Chrome Extensions?</a></li>
   <li><a href="#how-to-download-video-from-facebook-chrome">How to Download Video from Facebook Chrome</a></li>
-  <li><a href="#best-chrome-extensions-for-downloading-facebook-videos">Best Chrome Extensions for <a href="/blog/unlock-the-power-of-file-downloading-the-best-chrome-extension-to-download-files-mmtvrgzypoz" class="internal-link" title="Unlock the Power of File Downloading: The Best Chrome Extension to Download Files">Downloading</a> Facebook Videos</a></li>
+  <li><a href="#best-chrome-extensions-for-downloading-facebook-videos">Best Chrome Extensions for </a><a href="/blog/unlock-the-power-of-file-downloading-the-best-chrome-extension-to-download-files-mmtvrgzypoz" class="internal-link" title="Unlock the Power of File Downloading: The Best Chrome Extension to Download Files">Downloading</a> Facebook Videos</li>
   <li><a href="#tips-and-tricks-for-downloading-facebook-videos">Tips and Tricks for Downloading Facebook Videos</a></li>
   <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
@@ -62,7 +62,7 @@ description: "Are you looking for a way to download video from Facebook Chrome? 
 <h2 id="how-to-download-video-from-facebook-chrome">How to Download Video from Facebook Chrome</h2>
 <p>To <strong>download video from Facebook Chrome</strong>, you'll need to install a Chrome extension specifically designed for video downloads. Here's a step-by-step guide:</p>
 <ol>
-  <li>Open the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a> and search for "Facebook video downloader" or "download video from Facebook Chrome".</li>
+  <li>Open the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for "Facebook video downloader" or "download video from Facebook Chrome".</li>
   <li>Choose a reputable extension and click the "Add to Chrome" button.</li>
   <li>Once installed, go to Facebook and find the video you want to download.</li>
   <li>Click the extension's icon in the top right corner of the browser and follow the prompts to download the video.</li>

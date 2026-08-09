@@ -40,7 +40,7 @@ description: "Are you tired of cluttered web pages, annoying popups, and intrusi
   </thead>
   <tbody>
     <tr>
-      <td><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></td>
+      <td><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></td>
     </tr>
     <tr>
       <td><a href="#clean-browsing-extensions">Clean Browsing Extensions</a></td>

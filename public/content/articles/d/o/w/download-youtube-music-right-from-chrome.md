@@ -83,7 +83,7 @@ description: "Are you tired of streaming your favorite songs on YouTube and wish
 <p>Using a <strong>Chrome extension to download YouTube music</strong> is relatively straightforward. Here's a step-by-step guide:</p>
 
 <ol>
-  <li>Install the extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</li>
+  <li>Install the extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Go to the YouTube video you want to download.</li>
   <li>Click the extension's icon in the top right corner of the browser.</li>
   <li>Follow the prompts to convert the video to an MP3 file.</li>

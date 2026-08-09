@@ -97,7 +97,7 @@ description: "Are you tired of wondering why is Chrome using so much memory? You
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#understanding-chrome-memory-usage">Understanding Chrome's Memory Usage</a></p>
 <p><a href="#common-causes-of-high-memory-usage-in-chrome">Common Causes of High Memory Usage in Chrome</a></p>
 <p><a href="#2026-fixes-to-reduce-chrome-memory-usage">2026 Fixes to Reduce Chrome's Memory Usage</a></p>

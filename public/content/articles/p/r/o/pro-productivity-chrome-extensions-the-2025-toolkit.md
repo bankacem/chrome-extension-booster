@@ -47,7 +47,7 @@ updated_at: '2026-03-26T11:57:19.200834+00:00'
 <!-- /wp:list-item --> <!-- wp:list-item -->
 <li><a href="#deep-work-architecture">Deep Work Architecture: Focus &amp; Tab Management</a></li>
 <!-- /wp:list-item --> <!-- wp:list-item -->
-<li><a href="#communication-velocity"><a href="/blog/google-trad-plugin-15" class="internal-link" title="Unlocking Global Communication: The Power of Google Trad Plugin">Communication</a> Velocity: Async &amp; Meetings</a></li>
+<li><a href="/blog/google-trad-plugin-15" class="internal-link" title="Unlocking Global Communication: The Power of Google Trad Plugin">Communication</a> Velocity: Async &amp; Meetings</li>
 <!-- /wp:list-item --> <!-- wp:list-item -->
 <li><a href="#workflow-stacks">The Professional Stacks (Marketer, Dev, Sales)</a></li>
 <!-- /wp:list-item --> <!-- wp:list-item -->

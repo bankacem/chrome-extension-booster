@@ -111,7 +111,7 @@ description: "Are you tired of annoying popups disrupting your online activities
 <h2 id="faq">FAQ</h2>
 <ol>
   <li><strong>Q: How do I install a Chrome extension to stop popups?</strong>
-    <p>A: To install a <strong>Chrome extension to stop popups</strong>, visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>, search for the extension you wish to install, and click the "Add to Chrome" button. Follow the prompts to complete the installation.</p>
+    <p>A: To install a <strong>Chrome extension to stop popups</strong>, visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension you wish to install, and click the "Add to Chrome" button. Follow the prompts to complete the installation.</p>
   </li>
   <li><strong>Q: Are Chrome extensions to stop popups safe to use?</strong>
     <p>A: Most <strong>Chrome extensions to stop popups</strong> are safe to use, but it's essential to choose extensions from reputable developers and read reviews before installing.</p>

@@ -71,7 +71,7 @@ description: "As the world becomes increasingly digital, having a website that i
 <h2 id="how-to-use-a-responsive-design-tester-extension">How to Use a Responsive Design Tester Extension</h2>
 <p>Using a <strong>responsive design tester extension</strong> is straightforward. Here are the steps to follow:</p>
 <ol>
-  <li>Install the <strong>responsive design tester extension</strong> from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</li>
+  <li>Install the <strong>responsive design tester extension</strong> from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Launch the extension and enter the URL of the website you want to test.</li>
   <li>Simulate different devices, screen sizes, and orientations to test your website's responsive design.</li>
   <li>Identify and fix any issues with your website's responsive design, such as layout problems or image sizing issues.</li>

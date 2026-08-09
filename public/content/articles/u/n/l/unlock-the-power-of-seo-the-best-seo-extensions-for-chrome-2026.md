@@ -80,7 +80,7 @@ description: "As we dive into 2026, the world of Search Engine Optimization (SEO
 <h2 id="how-to-install-seo-extensions">How to Install SEO Extensions</h2>
 <p>Installing SEO extensions is a straightforward process. Here's a step-by-step guide to get you started:</p>
 <ol>
-  <li>Open the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a> and search for the SEO extension you want to install</li>
+  <li>Open the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the SEO extension you want to install</li>
   <li>Click the "Add to Chrome" button to install the extension</li>
   <li>Follow the prompts to complete the installation process</li>
   <li>Once installed, click the extension icon in the top right corner of your browser to access its features and tools</li>

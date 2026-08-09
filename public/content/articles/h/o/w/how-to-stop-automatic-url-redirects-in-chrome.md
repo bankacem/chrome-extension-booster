@@ -51,7 +51,7 @@ description: "Are you tired of being redirected to unwanted websites while brows
     <li><a href="#why-are-automatic-url-redirects-a-problem">Why are Automatic URL Redirects a Problem?</a></li>
     <li><a href="#how-to-stop-automatic-url-redirects-in-chrome">How to Stop Automatic URL Redirects in Chrome</a></li>
     <li><a href="#using-redirect-shield-extension">Using Redirect Shield Extension</a></li>
-    <li><a href="#tips-for-safe-browsing">Tips for <a href="/blog/why-your-browser-keeps-redirecting-and-how-to-fix-it-cybersecurity-safe-browsing-privacy-anti-adware-9" class="internal-link" title="Why your browser keeps redirecting and how to fix it: Cybersecurity, Safe Browsing, Privacy, Anti-Adware">Safe Browsing</a></a></li>
+    <li><a href="#tips-for-safe-browsing">Tips for </a><a href="/blog/why-your-browser-keeps-redirecting-and-how-to-fix-it-cybersecurity-safe-browsing-privacy-anti-adware-9" class="internal-link" title="Why your browser keeps redirecting and how to fix it: Cybersecurity, Safe Browsing, Privacy, Anti-Adware">Safe Browsing</a></li>
     <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 

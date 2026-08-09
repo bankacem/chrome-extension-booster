@@ -31,7 +31,7 @@ description: "Google Chrome is one of the most popular web browsers, known for i
 
 <p>Before we dive into the tips and tricks, it's essential to understand why Chrome consumes so much RAM. Chrome's architecture is designed to prioritize speed and responsiveness, which means it uses more memory to cache web pages, store browsing data, and run background processes. While extensions can enhance your browsing experience, they can also contribute to increased RAM usage. Therefore, learning <strong>how to reduce Chrome RAM usage without extensions</strong> is crucial for a seamless browsing experience.</p>
 
-<h2><a href="/blog/cors-chrome-7" class="internal-link" title="Understanding CORS Chrome: A Comprehensive Guide to Web Development"><a href="/blog/cors-chrome-7" class="internal-link" title="Understanding CORS Chrome: A Comprehensive Guide to Web Development">Understanding</a></a> Chrome's RAM Usage</h2>
+<h2><a href="/blog/cors-chrome-7" class="internal-link" title="Understanding CORS Chrome: A Comprehensive Guide to Web Development">Understanding</a> Chrome's RAM Usage</h2>
 <div class="extension-backlink my-8 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20">
   <div class="flex flex-col md:flex-row items-center gap-4">
     <div class="flex-1 text-center md:text-left">
@@ -96,7 +96,7 @@ description: "Google Chrome is one of the most popular web browsers, known for i
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#understanding-chrome-ram-usage">Understanding Chrome's RAM Usage</a></p>
 <p><a href="#methods-to-reduce-chrome-ram-usage">Methods to Reduce Chrome RAM Usage Without Extensions</a></p>
 <p><a href="#alternative-solutions">Alternative Solutions: Using Chrome Extensions to Reduce RAM Usage</a></p>

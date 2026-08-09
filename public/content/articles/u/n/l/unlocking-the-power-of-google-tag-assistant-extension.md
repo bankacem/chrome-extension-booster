@@ -51,7 +51,7 @@ description: "Are you struggling to manage and optimize your Google tags? Look n
   <li><a href="#key-features-of-google-tag-assistant-extension">Key Features of Google Tag Assistant Extension</a></li>
   <li><a href="#benefits-of-using-google-tag-assistant-extension">Benefits of Using Google Tag Assistant Extension</a></li>
   <li><a href="#how-to-use-google-tag-assistant-extension">How to Use Google Tag Assistant Extension</a></li>
-  <li><a href="#troubleshooting-common-issues-with-google-tag-assistant-extension"><a href="/blog/how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting-mmb6y2rtgr2" class="internal-link" title="How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to Troubleshooting">Troubleshooting</a> Common Issues with Google Tag Assistant Extension</a></li>
+  <li><a href="/blog/how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting-mmb6y2rtgr2" class="internal-link" title="How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to Troubleshooting">Troubleshooting</a> Common Issues with Google Tag Assistant Extension</li>
   <li><a href="#faq">FAQ</a></li>
 </ul>
 
@@ -88,7 +88,7 @@ description: "Are you struggling to manage and optimize your Google tags? Look n
 <p>Using the <strong>Google Tag Assistant extension</strong> is straightforward. Simply follow these steps:</p>
 
 <ol>
-  <li>Install the extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</li>
+  <li>Install the extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Click on the extension icon in your browser toolbar to open the Tag Assistant interface.</li>
   <li>Enter the URL of the webpage you want to inspect and click the "Inspect" button.</li>
   <li>The extension will then inspect your tags and provide a report on any issues or errors it detects.</li>

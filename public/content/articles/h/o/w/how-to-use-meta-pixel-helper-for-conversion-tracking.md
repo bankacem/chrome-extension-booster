@@ -67,7 +67,7 @@ description: "As a digital marketer, understanding how to use Meta Pixel Helper 
 <p>Using Meta Pixel Helper for conversion tracking is a straightforward process. Here's a step-by-step guide to get you started:</p>
 
 <ol>
-  <li>Install the Meta Pixel Helper Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a>.</li>
+  <li>Install the Meta Pixel Helper Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Go to your website and navigate to the page where you've installed the Meta Pixel.</li>
   <li>Click on the Meta Pixel Helper icon in the top right corner of your browser.</li>
   <li>Verify that your pixel is set up correctly and tracking conversions accurately.</li>

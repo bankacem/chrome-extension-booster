@@ -47,7 +47,7 @@ description: "When it comes to browsing the internet on your Android device, hav
   </div>
 </div>
 <ul>
-  <li><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></li>
   <li><a href="#top-browsers">Top Browsers for Extensions</a></li>
   <li><a href="#features-to-consider">Features to Consider</a></li>
   <li><a href="#extension-support">Extension Support</a></li>
@@ -67,7 +67,7 @@ description: "When it comes to browsing the internet on your Android device, hav
   <li>Brave</li>
   <li>Microsoft Edge</li>
 </ul>
-<p>Each of these browsers has its own strengths and weaknesses, and some may be more suitable for your needs than others. For example, if you're already using Chrome on your desktop, you may prefer to use Chrome on your Android device as well, to take advantage of features like cross-device syncing and access to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</p>
+<p>Each of these browsers has its own strengths and weaknesses, and some may be more suitable for your needs than others. For example, if you're already using Chrome on your desktop, you may prefer to use Chrome on your Android device as well, to take advantage of features like cross-device syncing and access to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</p>
 
 <h2 id="features-to-consider">Features to Consider</h2>
 <p>When choosing the <strong>best android browser for extensions</strong>, there are several features to consider, including:</p>

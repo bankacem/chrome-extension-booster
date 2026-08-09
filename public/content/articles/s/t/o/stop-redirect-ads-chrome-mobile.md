@@ -118,7 +118,7 @@ updated_at: '2026-04-27T16:59:43.090Z'
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction" class="text-primary font-medium hover:underline"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#understanding-redirect-ads" class="text-primary font-medium hover:underline">Understanding Redirect Ads and Their Impact</a></p>
 <p><a href="#solutions-to-stop-redirect-ads" class="text-primary font-medium hover:underline">Solutions to Stop Redirect Ads Chrome Mobile</a></p>
 <p><a href="#additional-tips" class="text-primary font-medium hover:underline">Additional Tips to Enhance Your Browsing Experience</a></p>

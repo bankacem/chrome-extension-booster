@@ -139,7 +139,7 @@ updated_at: '2026-04-23T12:25:09.098678+00:00'
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction" class="text-primary font-medium hover:underline"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#why-reduce-ram-usage" class="text-primary font-medium hover:underline">Why Reduce RAM Usage in Chrome?</a></p>
 <p><a href="#best-extensions" class="text-primary font-medium hover:underline">Best Chrome Extensions to Reduce RAM Usage</a></p>
 <p><a href="#additional-tips" class="text-primary font-medium hover:underline">Additional Tips to Reduce RAM Usage in Chrome</a></p>
@@ -164,7 +164,7 @@ updated_at: '2026-04-23T12:25:09.098678+00:00'
     <p>A: Yes, you can use multiple <strong>reduce RAM usage Chrome extensions</strong> at the same time, but it's essential to choose extensions that complement each other and don't conflict with each other's features.</p>
   </li>
   <li><strong>Q: How do I install reduce RAM usage Chrome extensions?</strong>
-    <p>A: You can install <strong>reduce RAM usage Chrome extensions</strong> from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>. Simply search for the extension you want to install, click the "Add to Chrome" button, and follow the installation instructions.</p>
+    <p>A: You can install <strong>reduce RAM usage Chrome extensions</strong> from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>. Simply search for the extension you want to install, click the "Add to Chrome" button, and follow the installation instructions.</p>
   </li>
 </ol>
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">

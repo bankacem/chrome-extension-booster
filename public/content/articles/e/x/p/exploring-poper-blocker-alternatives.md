@@ -122,7 +122,7 @@ description: "Are you tired of dealing with annoying pop-ups and intrusive ads w
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction" class="text-primary font-medium hover:underline"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#why-look-for-poper-blocker-alternatives" class="text-primary font-medium hover:underline">Why Look for Poper Blocker Alternatives?</a></p>
 <p><a href="#prominent-poper-blocker-alternatives" class="text-primary font-medium hover:underline">Prominent Poper Blocker Alternatives</a></p>
 <p><a href="#comparison-of-poper-blocker-alternatives" class="text-primary font-medium hover:underline">Comparison of Poper Blocker Alternatives</a></p>

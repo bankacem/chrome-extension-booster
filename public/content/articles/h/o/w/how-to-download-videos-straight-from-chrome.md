@@ -73,7 +73,7 @@ description: "Are you tired of struggling to download your favorite videos from 
 <p>Using a Chrome extension to download videos is relatively straightforward. Here's a step-by-step guide to get you started:</p>
 
 <ol>
-  <li>Install the extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</li>
+  <li>Install the extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Navigate to the video you want to download.</li>
   <li>Click the extension's icon in the top right corner of your browser.</li>
   <li>Follow the prompts to select the video quality and format.</li>
@@ -138,7 +138,7 @@ description: "Are you tired of struggling to download your favorite videos from 
 <h2>Table of Contents</h2>
 
 <ol>
-  <li><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></li>
   <li><a href="#what-to-look-for">What to Look for in a Chrome Extension to Download Videos</a></li>
   <li><a href="#top-extensions">Top Chrome Extensions to Download Videos</a></li>
   <li><a href="#how-to-use">How to Use a Chrome Extension to Download Videos</a></li>

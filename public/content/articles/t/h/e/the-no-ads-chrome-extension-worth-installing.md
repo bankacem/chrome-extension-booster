@@ -93,7 +93,7 @@ description: "Are you tired of annoying ads disrupting your online experience? L
 <h2 id="how-to-install-a-no-ads-chrome-extension">How to Install a No Ads Chrome Extension</h2>
 <p>Installing a <strong>no ads Chrome extension 2026</strong> is easy:</p>
 <ol>
-  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a> and search for the extension you want to install.</li>
+  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the extension you want to install.</li>
   <li>Click the "Add to Chrome" button to install the extension.</li>
   <li>Follow the prompts to complete the installation process.</li>
 </ol>

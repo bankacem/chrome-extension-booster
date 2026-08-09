@@ -69,7 +69,7 @@ description: "Are you tired of the same old YouTube experience? Do you wish you 
 <p>Installing <strong>YouTube Extensions</strong> is a straightforward process. To get started, simply follow these steps:</p>
 
 <ol>
-  <li>Open your browser and navigate to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</li>
+  <li>Open your browser and navigate to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Search for the YouTube Extension you want to install.</li>
   <li>Click the "Add to Chrome" button to install the extension.</li>
   <li>Wait for the extension to download and install.</li>

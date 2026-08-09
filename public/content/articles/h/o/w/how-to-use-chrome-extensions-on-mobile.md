@@ -55,7 +55,7 @@ description: "As the world becomes increasingly mobile, it's essential to have a
   <li><a href="#benefits">Benefits of Using Chrome Extensions on Mobile</a></li>
   <li><a href="#installation">How to Install Chrome Extensions on Mobile</a></li>
   <li><a href="#top-picks">Top Picks for Must-Have Chrome Extensions on Mobile</a></li>
-  <li><a href="#troubleshooting"><a href="/blog/how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting-mmb6y2rtgr2" class="internal-link" title="How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to Troubleshooting">Troubleshooting</a> Common Issues with Chrome Extensions on Mobile</a></li>
+  <li><a href="/blog/how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting-mmb6y2rtgr2" class="internal-link" title="How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to Troubleshooting">Troubleshooting</a> Common Issues with Chrome Extensions on Mobile</li>
   <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 
@@ -72,7 +72,7 @@ description: "As the world becomes increasingly mobile, it's essential to have a
 <ol>
   <li>Open the Google Chrome browser on your mobile device.</li>
   <li>Tap the three dots in the top-right corner and select "Desktop site" or "Request desktop site."</li>
-  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a> and search for the extension you want to install.</li>
+  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the extension you want to install.</li>
   <li>Tap the "Add to Chrome" button to install the extension.</li>
   <li>Once installed, the extension will be available in your Chrome browser on mobile.</li>
 </ol>

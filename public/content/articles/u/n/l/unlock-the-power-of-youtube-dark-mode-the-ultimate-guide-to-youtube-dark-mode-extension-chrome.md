@@ -189,7 +189,7 @@ description: "Are you tired of the bright and overwhelming YouTube interface? Do
   </li>
   <li>Q: How do I install a YouTube dark mode extension?
     <ul>
-      <li>A: To install a YouTube dark mode extension, follow these steps: go to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome web store</a></a>, search for the extension, click on the "Add to Chrome" button, and follow the prompts to install the extension.</li>
+      <li>A: To install a YouTube dark mode extension, follow these steps: go to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome web store</a>, search for the extension, click on the "Add to Chrome" button, and follow the prompts to install the extension.</li>
     </ul>
   </li>
   <li>Q: Can I customize the settings of a YouTube dark mode extension?

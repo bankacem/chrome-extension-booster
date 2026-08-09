@@ -53,7 +53,7 @@ description: "Are you tired of annoying ads and trackers disrupting your browsin
   <li><a href="#why-install-ublock-origin-on-android-chrome">Why Install uBlock Origin on Android Chrome?</a></li>
   <li><a href="#how-to-install-ublock-origin-on-android-chrome">How to Install uBlock Origin on Android Chrome</a></li>
   <li><a href="#tips-and-tricks-for-using-ublock-origin-on-android-chrome">Tips and Tricks for Using uBlock Origin on Android Chrome</a></li>
-  <li><a href="#alternative-ad-blockers-for-android-chrome"><a href="/blog/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz" class="internal-link" title="Discover the Best Open Source Alternative to Ghostery Extension for Enhanced Browser Security">Alternative</a> Ad Blockers for Android Chrome</a></li>
+  <li><a href="/blog/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz" class="internal-link" title="Discover the Best Open Source Alternative to Ghostery Extension for Enhanced Browser Security">Alternative</a> Ad Blockers for Android Chrome</li>
   <li><a href="#faq">FAQ</a></li>
 </ul>
 

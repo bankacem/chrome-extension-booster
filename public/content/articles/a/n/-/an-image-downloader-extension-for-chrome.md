@@ -84,7 +84,7 @@ description: "Are you tired of manually saving images from websites, one by one?
 <p>Using the best image downloader Chrome extension is easy! Here's a step-by-step guide:</p>
 
 <ol>
-  <li>Install the extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</li>
+  <li>Install the extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Click on the extension icon in the top right corner of your browser.</li>
   <li>Select the images you want to download, or choose to download all images on the page.</li>
   <li>Choose the format and quality of the images you want to download.</li>

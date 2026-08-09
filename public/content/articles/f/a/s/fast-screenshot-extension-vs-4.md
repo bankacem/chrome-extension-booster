@@ -39,7 +39,7 @@ description: "Are you tired of using clunky and slow screenshot tools that hinde
   <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 
-<h2 id="introduction">Introduction to <a href="/blog/fast-screenshot-extensions-6" class="internal-link" title="Unlock the Power of Fast Screenshot Extensions: A Comprehensive Guide"><a href="/blog/fast-screenshot-extensions-6" class="internal-link" title="Unlock the Power of Fast Screenshot Extensions: A Comprehensive Guide"><a href="/blog/fast-screenshot-extensions-6" class="internal-link" title="Unlock the Power of Fast Screenshot Extensions: A Comprehensive Guide"><a href="/blog/fast-screenshot-extensions-6" class="internal-link" title="Unlock the Power of Fast Screenshot Extensions: A Comprehensive Guide">Fast Screenshot Extensions</a></a></a></a></h2>
+<h2 id="introduction">Introduction to <a href="/blog/fast-screenshot-extensions-6" class="internal-link" title="Unlock the Power of Fast Screenshot Extensions: A Comprehensive Guide">Fast Screenshot Extensions</a></h2>
 <div class="extension-backlink my-8 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20">
   <div class="flex flex-col md:flex-row items-center gap-4">
     <div class="flex-1 text-center md:text-left">

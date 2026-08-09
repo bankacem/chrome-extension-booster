@@ -90,7 +90,7 @@ description: "As a developer, working with JSON (JavaScript Object Notation) dat
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction" class="text-primary font-medium hover:underline"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#benefits" class="text-primary font-medium hover:underline">Benefits of Using a JSON Formatter Chrome Extension</a></p>
 <p><a href="#features" class="text-primary font-medium hover:underline">Features to Look for in a JSON Formatter Chrome Extension</a></p>
 <p><a href="#popular-extensions" class="text-primary font-medium hover:underline">Popular JSON Formatter Chrome Extensions</a></p>
@@ -114,7 +114,7 @@ description: "As a developer, working with JSON (JavaScript Object Notation) dat
 <p>A: Yes, there are several free JSON formatter Chrome extensions available, including JSON Formatter and JSON Viewer.</p>
 
 <p><strong>Q: How do I install a JSON formatter Chrome extension?</strong></p>
-<p>A: To install a JSON formatter Chrome extension, simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>, search for the extension you want to install, and click the "Add to Chrome" button.</p>
+<p>A: To install a JSON formatter Chrome extension, simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension you want to install, and click the "Add to Chrome" button.</p>
 
 <h2>Comparison Table</h2>
 

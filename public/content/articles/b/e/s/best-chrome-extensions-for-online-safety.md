@@ -47,7 +47,7 @@ description: "With the ever-increasing threat of cyber attacks, online safety ha
   </div>
 </div>
 <ul>
-  <li><a href="#introduction-to-online-safety"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Online Safety</a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Online Safety</li>
   <li><a href="#best-chrome-extensions-for-online-safety">Best Chrome Extensions for Online Safety</a></li>
   <li><a href="#features-to-look-for-in-online-safety-extensions">Features to Look for in Online Safety Extensions</a></li>
   <li><a href="#how-to-install-and-use-online-safety-extensions">How to Install and Use Online Safety Extensions</a></li>

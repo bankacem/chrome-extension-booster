@@ -129,7 +129,7 @@ description: "Are you tired of downloading files one by one, wasting precious ti
     <p>A: No, it's essential to respect copyright laws and only download content that you're authorized to access.</p>
   </li>
   <li><strong>Q: How do I install a Chrome extension for bulk downloads?</strong>
-    <p>A: Installing a Chrome extension for bulk downloads is straightforward. Simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>, search for the extension, and click the "Add to Chrome" button.</p>
+    <p>A: Installing a Chrome extension for bulk downloads is straightforward. Simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension, and click the "Add to Chrome" button.</p>
   </li>
   <li><strong>Q: Can I use a Chrome extension for bulk downloads on other browsers?</strong>
     <p>A: No, Chrome extensions are exclusive to the Chrome browser. However, some browsers, like Firefox, offer similar extensions for bulk downloads.</p>

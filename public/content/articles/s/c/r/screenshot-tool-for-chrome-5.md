@@ -28,7 +28,7 @@ description: "Are you tired of tedious screenshot processes, only to be left wit
 
 <table of contents>
     <ul>
-        <li><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></li>
+        <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></li>
         <li><a href="#benefits-of-screenshot-tools">Benefits of Screenshot Tools</a></li>
         <li><a href="#features-to-look-for">Features to Look for in a Screenshot Tool for Chrome</a></li>
         <li><a href="#how-to-choose-the-right-screenshot-tool">How to Choose the Right Screenshot Tool for Chrome</a></li>

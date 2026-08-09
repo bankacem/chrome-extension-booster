@@ -51,9 +51,9 @@ description: "When it comes to managing downloads on Android devices, users ofte
   </div>
 </div>
 <ul>
-  <li><a href="#introduction-to-idm"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to IDM</a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to IDM</li>
   <li><a href="#idm-extension-for-chrome-android">IDM Extension for Chrome Android</a></li>
-  <li><a href="#alternatives-to-idm-extensions"><a href="/blog/easy-screenshot-chrome-alternatives" class="internal-link" title="Easy Screenshot Chrome Alternatives: Capture Your Screen with Ease">Alternatives</a> to IDM Extensions</a></li>
+  <li><a href="/blog/easy-screenshot-chrome-alternatives" class="internal-link" title="Easy Screenshot Chrome Alternatives: Capture Your Screen with Ease">Alternatives</a> to IDM Extensions</li>
   <li><a href="#chrome-extensions-for-download-management">Chrome Extensions for Download Management</a></li>
   <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>

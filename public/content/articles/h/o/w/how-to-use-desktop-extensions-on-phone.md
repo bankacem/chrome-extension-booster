@@ -129,7 +129,7 @@ description: "Are you tired of being limited to using your favorite desktop exte
     <li><strong>Q: Can I use desktop extensions on any mobile browser?</strong>
     <p>A: No, not all mobile browsers support desktop extensions. You'll need to use a browser like Chrome or Firefox that has an extensions store.</p></li>
     <li><strong>Q: Are desktop extensions safe to use on my phone?</strong>
-    <p>A: Yes, desktop extensions are generally safe to use on your phone, but you should only install extensions from reputable sources like the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</p></li>
+    <p>A: Yes, desktop extensions are generally safe to use on your phone, but you should only install extensions from reputable sources like the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</p></li>
     <li><strong>Q: Can I use desktop extensions on my tablet?</strong>
     <p>A: Yes, you can use desktop extensions on your tablet, as long as you're using a browser that supports extensions.</p></li>
     <li><strong>Q: How do I manage my desktop extensions on my phone?</strong>

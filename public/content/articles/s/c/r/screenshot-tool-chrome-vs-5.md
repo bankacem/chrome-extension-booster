@@ -31,7 +31,7 @@ description: "When it comes to taking screenshots in Chrome, there are numerous 
 <p>Before we dive into the comparison, let's take a look at the table of contents to get an overview of what we'll be covering:</p>
 
 <ul>
-  <li><a href="#introduction-to-screenshot-tools"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Screenshot Tools</a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Screenshot Tools</li>
   <li><a href="#top-screenshot-tools-for-chrome">Top Screenshot Tools for Chrome</a></li>
   <li><a href="#features-to-consider">Features to Consider</a></li>
   <li><a href="#screenshot-tool-chrome-vs-comparison">Screenshot Tool Chrome vs Comparison</a></li>
@@ -73,7 +73,7 @@ description: "When it comes to taking screenshots in Chrome, there are numerous 
 
 <h2 id="features-to-consider">Features to Consider</h2>
 
-<p>When choosing a <a href="/blog/screenshot-tool-for-chrome-5" class="internal-link" title="Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool for Chrome"><a href="/blog/screenshot-tool-for-chrome-5" class="internal-link" title="Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool for Chrome"><a href="/blog/screenshot-tool-for-chrome-5" class="internal-link" title="Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool for Chrome"><a href="/blog/screenshot-tool-for-chrome-5" class="internal-link" title="Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool for Chrome">screenshot tool for Chrome</a></a></a></a>, there are several features to consider. These include:</p>
+<p>When choosing a <a href="/blog/screenshot-tool-for-chrome-5" class="internal-link" title="Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool for Chrome">screenshot tool for Chrome</a>, there are several features to consider. These include:</p>
 
 <ul>
   <li>Ease of use: Look for a tool with a simple and intuitive interface.</li>

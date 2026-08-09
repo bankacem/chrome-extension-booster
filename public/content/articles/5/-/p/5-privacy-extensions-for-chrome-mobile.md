@@ -51,7 +51,7 @@ description: "With the increasing number of online threats and data breaches, it
   </div>
 </div>
 <ul>
-  <li><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></li>
   <li><a href="#top-5-extensions">Top 5 Privacy and Security Extensions for Chrome Mobile</a></li>
   <li><a href="#features-to-consider">Features to Consider When Choosing a Privacy and Security Extension</a></li>
   <li><a href="#comparison-table">Comparison Table: Top 5 Privacy and Security Extensions for Chrome Mobile</a></li>
@@ -159,7 +159,7 @@ description: "With the increasing number of online threats and data breaches, it
     <p>A: Yes, most of these extensions are available for desktop Chrome as well. You can install them on your desktop browser to enhance your online security and privacy.</p>
   </li>
   <li><strong>Q: How do I install these extensions on Chrome Mobile?</strong>
-    <p>A: To install these extensions on Chrome Mobile, simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>, search for the extension, and click the "Add to Chrome" button.</p>
+    <p>A: To install these extensions on Chrome Mobile, simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension, and click the "Add to Chrome" button.</p>
   </li>
   <li><strong>Q: Are these extensions free?</strong>
     <p>A: Some of these extensions offer free versions, while others may require a subscription or one-time payment. Be sure to check the pricing model before installing.</p>

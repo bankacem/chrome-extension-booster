@@ -80,7 +80,7 @@ updated_at: '2026-04-23T12:22:04.490409+00:00'
 
 <ol>
   <li>Open the Chrome browser on your Android device.</li>
-  <li>Go to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a> and search for the <a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a> extension.</li>
+  <li>Go to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the <a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a> extension.</li>
   <li>Click the "Add to Chrome" button to install the extension.</li>
   <li>Once installed, the extension will <a href="/blog/stop-video-popups-from-playing-automatically-3" class="internal-link" title="Stop Video Popups from Playing Automatically: A Comprehensive Guide">automatically</a> block ads and popups on Chrome Android.</li>
 </ol>

@@ -152,7 +152,7 @@ description: "When it comes to capturing web pages, quick screenshot Chrome exte
     </li>
 </ol>
 
-<p>For more information on how to use <strong>quick screenshot Chrome</strong> extensions, check out our <a href="/blog/full-page-screenshot-chrome-guide-9" class="text-primary font-medium hover:underline"><a href="/blog/full-page-screenshot-chrome-guide-9" class="internal-link" title="Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro">Full Page Screenshot Chrome Guide</a></a>. You can also explore our other <a href="/blog/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users" class="text-primary font-medium hover:underline">Pro Browsing Chrome Extensions</a> for more productivity tools.</p>
+<p>For more information on how to use <strong>quick screenshot Chrome</strong> extensions, check out our <a href="/blog/full-page-screenshot-chrome-guide-9" class="internal-link" title="Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro">Full Page Screenshot Chrome Guide</a>. You can also explore our other <a href="/blog/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users" class="text-primary font-medium hover:underline">Pro Browsing Chrome Extensions</a> for more productivity tools.</p>
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">
   <h3 class="text-2xl font-bold mb-3">Get Quick Screenshot Lite Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Capture full page or visible area screenshots instantly.</p>

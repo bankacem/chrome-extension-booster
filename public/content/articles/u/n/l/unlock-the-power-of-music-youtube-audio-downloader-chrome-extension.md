@@ -83,7 +83,7 @@ description: "Are you tired of searching for your favorite songs on YouTube, onl
 <h2>How to Use a YouTube Audio Downloader Chrome Extension</h2>
 <p>Using a YouTube audio downloader Chrome extension is relatively straightforward. Here's a step-by-step guide to get you started:</p>
 <ol>
-  <li>Install the extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome web store</a></a>. You can find a range of YouTube audio downloader Chrome extensions by searching for "YouTube audio downloader Chrome extension" in the Chrome web store.</li>
+  <li>Install the extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome web store</a>. You can find a range of YouTube audio downloader Chrome extensions by searching for "YouTube audio downloader Chrome extension" in the Chrome web store.</li>
   <li>Once the extension is installed, navigate to the YouTube video you want to download the audio from.</li>
   <li>Click on the extension's icon in the top right corner of the browser, and select the audio quality and file format you want to download.</li>
   <li>Click the "Download" button to start the download process.</li>

@@ -78,7 +78,7 @@ description: "Are you tired of annoying popups and intrusive ads disrupting your
 <h2 id="how-to-use-a-free-popup-blocker">How to Use a Free Popup Blocker</h2>
 <p>Using a <strong>free popup blocker for Chrome</strong> is straightforward:</p>
 <ol>
-  <li>Install the popup blocker extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</li>
+  <li>Install the popup blocker extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Configure the blocking settings to your preferences.</li>
   <li>Enjoy a distraction-free browsing experience.</li>
 </ol>

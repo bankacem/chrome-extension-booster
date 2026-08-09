@@ -74,7 +74,7 @@ description: "Welcome to the world of Screen Grab Chrome 2025, where capturing w
 <h2 id="how-to-screen-grab-in-chrome">How to Screen Grab in Chrome</h2>
 <p>So, how do you <strong>screen grab in Chrome</strong>? Here are the steps:</p>
 <ol>
-  <li>Install the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a></a>.</li>
+  <li>Install the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Click on the extension icon in the top right corner of your browser window.</li>
   <li>Select the type of screenshot you want to capture: full-page or visible area.</li>
   <li>Wait for the screenshot to be generated and saved to your computer.</li>

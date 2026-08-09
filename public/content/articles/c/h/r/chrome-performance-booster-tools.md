@@ -98,7 +98,7 @@ description: "Are you tired of slow browsing speeds and frustrated with the perf
 
 <h2>Table of Contents</h2>
 
-<p><a href="#intro"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#what-are-chrome-performance-booster-tools">What are Chrome Performance Booster Tools?</a></p>
 <p><a href="#benefits-of-using-chrome-performance-booster-tools">Benefits of Using Chrome Performance Booster Tools</a></p>
 <p><a href="#top-chrome-performance-booster-tools">Top Chrome Performance Booster Tools</a></p>

@@ -45,7 +45,7 @@ description: "As a web developer, you're likely no stranger to the importance of
   </div>
 </div>
 <ul>
-  <li><a href="#introduction-to-chrome-devtools"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Chrome DevTools</a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Chrome DevTools</li>
   <li><a href="#setting-up-chrome-devtools-for-mobile">Setting Up Chrome DevTools for Mobile</a></li>
   <li><a href="#debugging-on-mobile-devices">Debugging on Mobile Devices</a></li>
   <li><a href="#optimizing-performance-on-mobile">Optimizing Performance on Mobile</a></li>

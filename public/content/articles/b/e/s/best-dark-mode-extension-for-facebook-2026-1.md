@@ -76,7 +76,7 @@ description: "Are you tired of the eye-straining bright interface of Facebook? D
 <h2 id="how-to-enable-dark-mode-on-facebook">How to Enable Dark Mode on Facebook</h2>
 <p>Enabling dark mode on Facebook is easier than you think. Here's a step-by-step guide:</p>
 <ol>
-  <li>Install the <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a></a>.</li>
+  <li>Install the <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Click on the extension icon in the top right corner of your browser.</li>
   <li>Toggle the switch to enable dark mode on Facebook.</li>
 </ol>

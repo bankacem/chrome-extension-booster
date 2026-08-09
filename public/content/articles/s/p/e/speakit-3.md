@@ -84,7 +84,7 @@ description: "Imagine being able to interact with your computer or mobile device
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction" class="text-primary font-medium hover:underline"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#benefits" class="text-primary font-medium hover:underline">Benefits of SpeakIt</a></p>
 <p><a href="#applications" class="text-primary font-medium hover:underline">Applications of SpeakIt</a></p>
 <p><a href="#speakit-and-chrome-extensions" class="text-primary font-medium hover:underline">SpeakIt and Chrome Extensions</a></p>

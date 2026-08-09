@@ -111,7 +111,7 @@ description: "Are you tired of Chrome consuming excessive memory, slowing down y
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#understanding-chrome-memory-management">Understanding Chrome's Memory Management</a></p>
 <p><a href="#methods-to-limit-memory-per-tab">Methods to Limit Memory Per Tab in Chrome</a></p>
 <p><a href="#recommended-tool">Recommended Tool: ProTab Suspender</a></p>

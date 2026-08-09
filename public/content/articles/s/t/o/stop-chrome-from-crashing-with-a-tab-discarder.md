@@ -135,7 +135,7 @@ description: "Google Chrome is one of the most widely used web browsers, known f
     <p>A: Currently, ProTab Suspender is only available for Google Chrome. However, we may develop versions for other browsers in the future.</p>
   </li>
   <li><strong>Q: How do I install ProTab Suspender?</strong>
-    <p>A: You can install ProTab Suspender by visiting the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a></a> and searching for "ProTab Suspender". Click the "Add to Chrome" button to install the extension.</p>
+    <p>A: You can install ProTab Suspender by visiting the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and searching for "ProTab Suspender". Click the "Add to Chrome" button to install the extension.</p>
   </li>
   <li><strong>Q: What if I need help with ProTab Suspender or have questions about its features?</strong>
     <p>A: If you need help with ProTab Suspender or have questions about its features, please visit our <a href="/support" class="text-primary font-medium hover:underline">support page</a> for more information.</p>

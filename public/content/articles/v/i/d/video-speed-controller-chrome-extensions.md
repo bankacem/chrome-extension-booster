@@ -110,7 +110,7 @@ updated_at: '2026-04-24T15:23:19.985349+00:00'
 <p>Using a <strong>video speed controller Chrome</strong> extension is straightforward. Here's a step-by-step guide to get you started:</p>
 
 <ol>
-  <li>Install a video speed controller Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a>.</li>
+  <li>Install a video speed controller Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Visit a website with a video player, such as YouTube or Vimeo.</li>
   <li>Click on the extension's icon in the top-right corner of the browser window.</li>
   <li>Adjust the playback speed using the extension's controls, such as a slider or buttons.</li>

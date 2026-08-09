@@ -87,7 +87,7 @@ description: "When it comes to customizing your Chrome browser, extensions are a
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#why-choose-chrome-extensions-under-1mb">Why Choose Chrome Extensions Under 1MB?</a></p>
 <p><a href="#top-chrome-extensions-under-1mb">Top Chrome Extensions Under 1MB</a></p>
 <p><a href="#how-to-choose-the-best-chrome-extensions-under-1mb">How to Choose the Best Chrome Extensions Under 1MB</a></p>

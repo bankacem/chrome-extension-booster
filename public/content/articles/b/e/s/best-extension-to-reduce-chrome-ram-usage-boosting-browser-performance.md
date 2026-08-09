@@ -124,7 +124,7 @@ https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWRwxH5qENdGMTtJyLhLu
 
 <h2>Table of Contents</h2>
 
-<p><a href="#intro" class="text-primary font-medium hover:underline"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#why-reduce-chrome-ram-usage" class="text-primary font-medium hover:underline">Why Reduce Chrome RAM Usage?</a></p>
 <p><a href="#best-extensions-to-reduce-chrome-ram-usage" class="text-primary font-medium hover:underline">Best Extensions to Reduce Chrome RAM Usage</a></p>
 <p><a href="#how-to-choose-the-best-extension-to-reduce-chrome-ram-usage" class="text-primary font-medium hover:underline">How to Choose the Best Extension to Reduce Chrome RAM Usage</a></p>

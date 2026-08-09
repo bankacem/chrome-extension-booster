@@ -48,7 +48,7 @@ updated_at: '2026-04-23T12:29:22.061228+00:00'
 <li>▶ <strong>Strict Security Policies:</strong> Security is tighter. "Verified Uploads" and the "One Appeal" rule mean policy compliance is non-negotiable.</li>
 <!-- /wp:list-item --></ul>
 <p><!-- /wp:list --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">The State of the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a> in 2025</h2>
+<h2 class="wp-block-heading">The State of the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> in 2025</h2>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>
 <p>Understand the market before you start coding. The extension landscape has matured. While the total count hovers around 113,000 active extensions, the quality bar is higher. Google's aggressive removal of outdated Manifest V2 extensions cleared the clutter, creating opportunities for tools built on modern web standards.</p>
 <p><!-- /wp:paragraph --> <!-- wp:table --></p>
@@ -293,7 +293,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) =&gt; {
 <p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
 <h3 class="wp-block-heading">Ready to start building?</h3>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Open your terminal and run <code>npm create wxt@latest</code> to begin.<a href="https://developer.chrome.com/docs/extensions/mv3/intro/">View Official <a href="/blog/screenshot-tool-for-chrome-5" class="internal-link" title="Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool for Chrome">Documentation</a></a></p>
+<p>Open your terminal and run <code>npm create wxt@latest</code> to begin.<a href="https://developer.chrome.com/docs/extensions/mv3/intro/">View Official </a><a href="/blog/screenshot-tool-for-chrome-5" class="internal-link" title="Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool for Chrome">Documentation</a></p>
 <p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
 <p>&nbsp;</p>
 <p><!-- /wp:paragraph --></p>

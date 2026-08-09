@@ -83,7 +83,7 @@ updated_at: '2026-04-23T12:20:16.233107+00:00'
 <h2 id="how-to-use-a-bulk-image-downloader-chrome-extension">How to Use a Bulk Image Downloader Chrome Extension</h2>
 <p>Using a bulk image downloader Chrome extension is relatively straightforward. Here's a step-by-step guide to get you started:</p>
 <ol>
-  <li>Install the bulk image downloader Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>.</li>
+  <li>Install the bulk image downloader Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Navigate to the website containing the images you want to download.</li>
   <li>Click on the bulk image downloader Chrome extension icon in the top-right corner of the browser.</li>
   <li>Select the images you want to download, or choose the "Select all" option to download all images on the page.</li>

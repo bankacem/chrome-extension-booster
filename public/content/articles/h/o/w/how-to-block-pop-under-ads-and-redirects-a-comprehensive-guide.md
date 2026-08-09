@@ -34,8 +34,8 @@ description: "Are you tired of being bombarded with annoying pop-under ads and r
 <ul>
   <li><a href="#what-are-pop-under-ads-and-redirects">What are Pop-Under Ads and Redirects?</a></li>
   <li><a href="#why-should-you-block-pop-under-ads-and-redirects">Why Should You Block Pop-Under Ads and Redirects?</a></li>
-  <li><a href="#using-chrome-extensions-to-block-pop-under-ads-and-redirects">Using Chrome <a href="/blog/best-chrome-extensions-for-online-safety-protecting-your-digital-footprint-mmdzl1pwuso" class="internal-link" title="Best Chrome Extensions for Online Safety: Protecting Your Digital Footprint">Extensions</a> to Block Pop-Under Ads and Redirects</a></li>
-  <li><a href="#alternative-methods-to-block-pop-under-ads-and-redirects"><a href="/blog/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz" class="internal-link" title="Discover the Best Open Source Alternative to Ghostery Extension for Enhanced Browser Security">Alternative</a> Methods to Block Pop-Under Ads and Redirects</a></li>
+  <li><a href="#using-chrome-extensions-to-block-pop-under-ads-and-redirects">Using Chrome </a><a href="/blog/best-chrome-extensions-for-online-safety-protecting-your-digital-footprint-mmdzl1pwuso" class="internal-link" title="Best Chrome Extensions for Online Safety: Protecting Your Digital Footprint">Extensions</a> to Block Pop-Under Ads and Redirects</li>
+  <li><a href="/blog/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz" class="internal-link" title="Discover the Best Open Source Alternative to Ghostery Extension for Enhanced Browser Security">Alternative</a> Methods to Block Pop-Under Ads and Redirects</li>
   <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 

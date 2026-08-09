@@ -83,7 +83,7 @@ description: "Are you concerned about your online privacy and security while bro
 <p>Installing the Ghostery add on Chrome is a straightforward process. Simply follow these steps:</p>
 
 <ol>
-  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a></a></a> and search for "Ghostery".</li>
+  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for "Ghostery".</li>
   <li>Click the "Add to Chrome" button to install the extension.</li>
   <li>Once installed, click the Ghostery icon in your browser toolbar to access the extension's settings and features.</li>
 </ol>

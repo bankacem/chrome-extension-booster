@@ -50,9 +50,9 @@ description: "Capturing full-page screenshots in Chrome can be a challenge, espe
   </div>
 </div>
 <ul>
-  <li><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></li>
   <li><a href="#best-extensions">Best Full Page Screenshot Chrome Extensions</a></li>
-  <li><a href="#methods"><a href="/blog/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz" class="internal-link" title="Discover the Best Open Source Alternative to Ghostery Extension for Enhanced Browser Security">Alternative</a> Methods for Capturing Full-Page Screenshots</a></li>
+  <li><a href="/blog/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz" class="internal-link" title="Discover the Best Open Source Alternative to Ghostery Extension for Enhanced Browser Security">Alternative</a> Methods for Capturing Full-Page Screenshots</li>
   <li><a href="#features">Key Features to Consider When Choosing a Full-Page Screenshot Extension</a></li>
   <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
@@ -107,7 +107,7 @@ description: "Capturing full-page screenshots in Chrome can be a challenge, espe
 <ol>
   <li>Use the Chrome browser's built-in screenshot feature: Press Ctrl + Shift + I (Windows) or Command + Shift + I (Mac) to open the Developer Tools, then click on the "Elements" tab and select the "Screenshot" option.</li>
   <li>Use a third-party screenshot tool: There are many third-party screenshot tools available, such as Snagit or Skitch, that allow you to capture full-page screenshots.</li>
-  <li>Use a browser extension with screenshot capabilities: Some <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments"><a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments"><a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments"><a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments">browser extensions</a></a></a></a>, such as the <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension, offer screenshot capabilities as an additional feature.</li>
+  <li>Use a browser extension with screenshot capabilities: Some <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments">browser extensions</a>, such as the <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension, offer screenshot capabilities as an additional feature.</li>
 </ol>
 
 <h2 id="features">Key Features to Consider When Choosing a Full-Page Screenshot Extension</h2

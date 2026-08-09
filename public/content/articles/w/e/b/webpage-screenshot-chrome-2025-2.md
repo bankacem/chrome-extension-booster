@@ -50,7 +50,7 @@ description: "As we dive into 2025, the importance of capturing webpage screensh
   </div>
 </div>
 <ul>
-    <li><a href="#introduction-to-webpage-screenshot-chrome-2025"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Webpage Screenshot Chrome 2025</a></li>
+    <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Webpage Screenshot Chrome 2025</li>
     <li><a href="#why-capture-webpage-screenshots">Why Capture Webpage Screenshots?</a></li>
     <li><a href="#methods-for-capturing-webpage-screenshots">Methods for Capturing Webpage Screenshots</a></li>
     <li><a href="#introducing-quick-screenshot-lite">Introducing Quick Screenshot Lite</a></li>

@@ -90,7 +90,7 @@ description: "Are you tired of annoying ads disrupting your mobile browsing expe
 
 <h2>Table of Contents</h2>
 
-<p><a href="#intro"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#why">Why Do You Need Chrome Mobile Adblock?</a></p>
 <p><a href="#features">Features to Look for in a Chrome Mobile Adblock Solution</a></p>
 <p><a href="#solutions">Best Chrome Mobile Adblock Solutions</a></p>

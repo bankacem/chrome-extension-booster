@@ -142,7 +142,7 @@ description: "Are you tired of annoying ads disrupting your mobile browsing expe
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#why-do-you-need-an-ad-blocker-for-chrome-android">Why Do You Need an Ad Blocker for Chrome Android?</a></p>
 <p><a href="#features-of-the-best-ad-blocker-for-chrome-android-2026-no-root">Features of the Best Ad blocker for Chrome Android 2026 (No Root)</a></p>
 <p><a href="#how-to-install-the-best-ad-blocker-for-chrome-android-2026-no-root">How to Install the Best Ad blocker for Chrome Android 2026 (No Root)</a></p>

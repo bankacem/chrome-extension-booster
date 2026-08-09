@@ -103,7 +103,7 @@ description: "As we navigate the vast expanse of the internet, it's easy to over
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#why-you-need-a-chrome-extension-to-detect-trackers">Why You Need a Chrome Extension to Detect Trackers</a></p>
 <p><a href="#best-chrome-extensions-to-detect-trackers">Best Chrome Extensions to Detect Trackers</a></p>
 <p><a href="#additional-tips-for-protecting-your-online-privacy">Additional Tips for Protecting Your Online Privacy</a></p>

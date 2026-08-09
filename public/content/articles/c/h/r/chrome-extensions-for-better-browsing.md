@@ -34,7 +34,7 @@ description: "Are you tired of a cluttered and inefficient browsing experience? 
 <p>Before we dive in, let's take a look at the table of contents to get an idea of what we'll be covering:</p>
 
 <ul>
-  <li><a href="#introduction-to-chrome-extensions"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Chrome Extensions</a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a> to Chrome Extensions</li>
   <li><a href="#productivity-extensions">Productivity Extensions</a></li>
   <li><a href="#security-extensions">Security Extensions</a></li>
   <li><a href="#entertainment-extensions">Entertainment Extensions</a></li>

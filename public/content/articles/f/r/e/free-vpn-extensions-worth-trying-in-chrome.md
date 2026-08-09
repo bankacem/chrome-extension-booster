@@ -100,7 +100,7 @@ description: "When it comes to browsing the internet, security and privacy are t
 
 <h2>Table of Contents</h2>
 
-<p><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></p>
+<p><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></p>
 <p><a href="#why-do-you-need-a-chrome-vpn-extension">Why Do You Need a Chrome VPN Extension?</a></p>
 <p><a href="#features-to-look-for-in-a-chrome-vpn-extension">Features to Look for in a Chrome VPN Extension</a></p>
 <p><a href="#best-chrome-vpn-extension-free-options">Best Chrome VPN Extension Free Options</a></p>
@@ -125,7 +125,7 @@ description: "When it comes to browsing the internet, security and privacy are t
 <p>A: Some Chrome VPN extensions may offer apps for other devices, such as smartphones and tablets. Be sure to check the VPN's website for more information.</p>
 
 <p>Q: How do I install a Chrome VPN extension?</p>
-<p>A: To install a Chrome VPN extension, simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>, search for the VPN extension you want to install, and click the "Add to Chrome" button.</p>
+<p>A: To install a Chrome VPN extension, simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the VPN extension you want to install, and click the "Add to Chrome" button.</p>
 
 <h2>Comparison Table</h2>
 

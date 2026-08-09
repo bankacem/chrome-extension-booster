@@ -102,7 +102,7 @@ description: "Are you tired of annoying pop-ups and intrusive ads disrupting you
 <p>For easy navigation, here is a table of contents with anchor links to each section:</p>
 
 <ul>
-  <li><a href="#introduction"><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></a></li>
+  <li><a href="/blog/extension-chrome-presearch-14" class="internal-link" title="Unlock the Power of Private Search: Introduction to Extension Chrome Presearch">Introduction</a></li>
   <li><a href="#why-do-you-need-a-free-pop-up-blocker">Why Do You Need a Free Pop Up Blocker for Google Chrome?</a></li>
   <li><a href="#features-to-look-for">Features to Look for in a Free Pop Up Blocker for Google Chrome</a></li>
   <li><a href="#recommended-free-pop-up-blockers">Recommended Free Pop Up Blockers for Google Chrome</a></li>

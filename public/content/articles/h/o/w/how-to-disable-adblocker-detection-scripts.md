@@ -54,7 +54,7 @@ description: "Are you tired of being prompted to disable your adblocker while br
   <li><a href="#what-are-adblocker-detection-scripts">What are Adblocker Detection Scripts?</a></li>
   <li><a href="#why-do-websites-use-adblocker-detection-scripts">Why do Websites use Adblocker Detection Scripts?</a></li>
   <li><a href="#how-to-disable-adblocker-detection-scripts">How to Disable Adblocker Detection Scripts</a></li>
-  <li><a href="#using-chrome-extensions-to-disable-adblocker-detection-scripts">Using Chrome <a href="/blog/effortless-image-downloading-a-comprehensive-guide-to-bulk-image-downloader-chrome-extensions-mmtvrglq5x1" class="internal-link" title="Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader Chrome Extensions">Extensions</a> to Disable Adblocker Detection Scripts</a></li>
+  <li><a href="#using-chrome-extensions-to-disable-adblocker-detection-scripts">Using Chrome </a><a href="/blog/effortless-image-downloading-a-comprehensive-guide-to-bulk-image-downloader-chrome-extensions-mmtvrglq5x1" class="internal-link" title="Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader Chrome Extensions">Extensions</a> to Disable Adblocker Detection Scripts</li>
   <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 

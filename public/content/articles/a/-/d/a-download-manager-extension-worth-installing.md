@@ -106,7 +106,7 @@ description: "When it comes to downloading files from the internet, a good downl
     </li>
     <li>Q: How do I install a download manager Chrome extension?
         <ul>
-            <li>A: Installing a download manager Chrome extension is easy. Simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide"><a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a></a>, search for the extension you want to install, and click the "Add to Chrome" button.</li>
+            <li>A: Installing a download manager Chrome extension is easy. Simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension you want to install, and click the "Add to Chrome" button.</li>
         </ul>
     </li>
     <li>Q: Are download manager Chrome extensions safe to use?
