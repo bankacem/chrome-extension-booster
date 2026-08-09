@@ -8,9 +8,7 @@ image_url: /content/images/vpn-article11-betternet-review.jpg
 title: >-
   Betternet Chrome Extension Review 2026: The "Free" VPN That Costs More Than
   You Think
-meta_description: >-
-  Betternet Chrome Extension Review 2026: The "Free" VPN That Costs More Than
-  You Think
+meta_description: "After three weeks of daily use, here's why Betternet's 'free' Chrome VPN extension ends up costing more than it seems, and what to use instead."
 description: >-
   Betternet Chrome Extension Review 2026: The "Free" VPN That Costs More Than
   You Think

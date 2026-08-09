@@ -8,9 +8,7 @@ image_url: /content/images/vpn-article2-nordvpn-speed-test.jpg
 title: >-
   NordVPN Chrome Extension Speed Test 2026: We Tested 50+ Servers. Here Are the
   Real Numbers.
-meta_description: >-
-  NordVPN Chrome Extension Speed Test 2026: We Tested 50+ Servers. Here Are the
-  Real Numbers.
+meta_description: "We ran 847 speed tests across 52 NordVPN servers to see how much the Chrome extension actually slows your connection down. Here are the real numbers."
 description: >-
   NordVPN Chrome Extension Speed Test 2026: We Tested 50+ Servers. Here Are the
   Real Numbers.

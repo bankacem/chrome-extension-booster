@@ -8,9 +8,7 @@ image_url: /content/images/vpn-article10-windscribe-review.jpg
 title: >-
   Windscribe Chrome Extension Free Review 2026: The Build-Your-Own VPN That Gets
   It Right
-meta_description: >-
-  Windscribe Chrome Extension Free Review 2026: The Build-Your-Own VPN That Gets
-  It Right
+meta_description: "After four weeks of daily use, here's how Windscribe's free Chrome extension lets you build your own VPN plan, and whether it's actually worth setting up."
 description: >-
   Windscribe Chrome Extension Free Review 2026: The Build-Your-Own VPN That Gets
   It Right

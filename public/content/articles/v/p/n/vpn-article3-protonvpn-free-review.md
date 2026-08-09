@@ -8,9 +8,7 @@ image_url: /content/images/vpn-article3-protonvpn-free-review.jpg
 title: >-
   ProtonVPN Chrome Extension Free Review 2026: The Only Free VPN That Doesn't
   Sell Your Soul
-meta_description: >-
-  ProtonVPN Chrome Extension Free Review 2026: The Only Free VPN That Doesn't
-  Sell Your Soul
+meta_description: "ProtonVPN's Chrome extension is independently audited (Securitum, Cure53) and free with no data cap. Here's how it actually performs after real-world testing."
 description: >-
   ProtonVPN Chrome Extension Free Review 2026: The Only Free VPN That Doesn't
   Sell Your Soul
