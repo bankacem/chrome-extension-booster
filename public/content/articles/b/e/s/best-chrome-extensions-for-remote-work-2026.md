@@ -6,7 +6,7 @@ canonicalPath: /blog/best-chrome-extensions-for-remote-work-2026
 status: published
 excerpt: "Discover the best Chrome extensions for remote work, organized by the problem they solve: staying focused, secure, and connected with your team."
 meta_description: "Discover the best Chrome extensions for remote work, organized by the problem they solve: staying focused, secure, and connected with your team."
-featured_image: /og-image.png
+featured_image: /content/images/best-chrome-extensions-for-remote-work-2026/featured.webp
 category: Productivity & Tools
 tags:
   - remote work
