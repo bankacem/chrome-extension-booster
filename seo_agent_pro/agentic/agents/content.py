@@ -62,21 +62,23 @@ Hard rules accumulated from real past mistakes on this site — follow every one
 Specifications:
 - Target length:    {length} words
 - Unique angle:     {angle}
-- Required H2s:     {', '.join(sections) if sections else 'choose the best structure'}
 - Must include:     {', '.join(elements) if elements else 'decide based on topic'}
+
+⚠️ REQUIRED SECTIONS — every one of these MUST appear as its own H2 heading.
+This is a hard checklist, not a suggestion — an article missing any of these
+will be REJECTED by the Evaluator regardless of how good the writing is:
+{chr(10).join(f'{i+1}. {s}' for i, s in enumerate(sections)) if sections else '(no specific sections required — choose the best structure)'}
 
 Structure:
 # [H1 — includes primary keyword, compelling and clear, under 70 characters]
 
 [Strong hook introduction — 3 paragraphs, establish the problem and promise]
 
-## [H2]
-### [H3 if needed]
-[Content with real data, examples, actionable advice]
+[One ## H2 section for EACH required section listed above, in a sensible
+order — do not skip, merge, or rename any of them beyond light rephrasing]
 
-[Repeat for all sections]
-
-[Comparison table if applicable]
+[Comparison table if a table is in "Must include" above — an ACTUAL
+markdown table with | pipes, not a sentence saying a table exists]
 
 ## Frequently Asked Questions
 **Q: ...**

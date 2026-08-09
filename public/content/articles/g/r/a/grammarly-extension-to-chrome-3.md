@@ -11,7 +11,7 @@ category: "Performance & Memory"
 tags: []
 keywords:
   - grammarly extension to chrome
-meta_description: "Are you tired of embarrassing typos and grammatical errors in your online writing?"
+meta_description: "A guide to the Grammarly extension for Chrome, covering setup, what it actually catches, and how it compares to Chrome's built-in spellcheck."
 status: published
 published_at: '2026-02-16T14:11:02.198+00:00'
 scheduled_at: '2026-02-16T14:11:00+00:00'

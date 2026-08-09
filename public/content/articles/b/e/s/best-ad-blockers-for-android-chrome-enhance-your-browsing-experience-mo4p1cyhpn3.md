@@ -14,9 +14,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - Best Ad Blockers for Android Chrome
-meta_description: >-
-  Discover the best ad blockers for Android Chrome to enhance your browsing
-  experience and stay safe online
+meta_description: "Tired of ads disrupting your browsing on Android Chrome? Here's a comparison of the best ad blockers, covering speed, filter lists, and setup."
 status: draft
 published_at: null
 scheduled_at: null

@@ -11,7 +11,7 @@ category: "Media & Downloads"
 tags: []
 keywords:
   - chrome extension to download images
-meta_description: "Are you tired of manually saving images from the web, one by one? Look no further!"
+meta_description: "How a Chrome extension can download images in bulk, saving the manual work of right-clicking and saving pictures one at a time."
 status: published
 published_at: '2026-04-17T02:15:00.363+00:00'
 scheduled_at: '2026-04-17T02:15:00+00:00'

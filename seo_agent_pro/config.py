@@ -79,7 +79,10 @@ DEFAULT_MODEL = "claude-sonnet-4"
 # ──────────────────────────────────────────────────────────────
 
 SETTINGS = {
-    "max_tokens":    4096,
+    # Bumped from 4096: articles now carry a longer hard-required section
+    # checklist (see content.py) and were getting cut off mid-sentence
+    # before finishing every required section within the old budget.
+    "max_tokens":    7000,
     "temperature":   0.7,
     "stream":        True,
     "output_dir":    "output",

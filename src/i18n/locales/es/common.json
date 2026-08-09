@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "extensions": "Extensiones",
+    "home": "Inicio"
+  },
+  "blog": {
+    "title": "Blog de Extensiones Chrome",
+    "subtitle": "Guías, reseñas y consejos para sacar el máximo partido a tu navegador",
+    "search_placeholder": "Buscar artículos...",
+    "all_categories": "Todas las categorías",
+    "back_to_blog": "Volver al blog",
+    "read_more": "Leer más",
+    "min_read": "min de lectura",
+    "published": "Publicado el",
+    "author": "Autor",
+    "tags": "Etiquetas",
+    "related": "Artículos relacionados",
+    "not_found": "Artículo no encontrado",
+    "loading": "Cargando...",
+    "no_results": "No se encontraron artículos",
+    "page": "Página"
+  },
+  "seo": {
+    "site_name": "ExtensionTo",
+    "default_description": "Descubre las mejores extensiones de Chrome para aumentar tu productividad, mejorar tu seguridad y transformar tu experiencia de navegación. Con la confianza de más de 50.000 usuarios."
+  },
+  "footer": {
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio",
+    "rights": "Todos los derechos reservados"
+  },
+  "lang": {
+    "select": "Idioma",
+    "en": "English",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

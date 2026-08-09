@@ -10,12 +10,20 @@ interface SEOProps {
   articlePublishedTime?: string;
   articleAuthor?: string;
   noindex?: boolean;
+  /** Pass the current page lang ('en' | 'fr' | 'es'). Defaults to 'en'. */
+  lang?: "en" | "fr" | "es";
 }
 
 const SITE_NAME = "ExtensionTo";
-// Use non-www version for URL consistency - matches Google indexed version
 const SITE_URL = "https://extensionto.com";
 const DEFAULT_IMAGE = "https://extensionto.com/og-image.png";
+
+/** Maps a canonical EN path to its equivalent per-language path prefix. */
+function buildHreflangPath(canonicalPath: string, lang: "en" | "fr" | "es"): string {
+  if (lang === "en") return canonicalPath;
+  // e.g. /blog/some-slug  →  /fr/blog/some-slug
+  return `/${lang}${canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`}`;
+}
 
 const SEO = ({
   title,
@@ -27,18 +35,29 @@ const SEO = ({
   articlePublishedTime,
   articleAuthor,
   noindex,
+  lang = "en",
 }: SEOProps) => {
-  const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} - Powerful Chrome Extensions for Productivity`;
+  const fullTitle = title
+    ? `${title} | ${SITE_NAME}`
+    : `${SITE_NAME} - Powerful Chrome Extensions for Productivity`;
 
-  // Ensure canonicalPath starts with / if it's not empty and doesn't already have one
   const safePath = canonicalPath
-    ? (canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`)
+    ? canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`
     : "";
-  const canonicalUrl = `${SITE_URL}${safePath}`;
+
+  // The canonical URL always points to the language-prefixed version of this page.
+  const canonicalUrl = `${SITE_URL}${lang === "en" ? safePath : buildHreflangPath(safePath, lang)}`;
+
+  // hreflang alternate URLs (x-default = English)
+  const hreflangUrls = {
+    en: `${SITE_URL}${safePath}`,
+    fr: `${SITE_URL}${buildHreflangPath(safePath, "fr")}`,
+    es: `${SITE_URL}${buildHreflangPath(safePath, "es")}`,
+  };
 
   return (
     <Helmet>
-      <html lang="en" />
+      <html lang={lang} />
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>{fullTitle}</title>
@@ -47,6 +66,12 @@ const SEO = ({
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={canonicalUrl} />
 
+      {/* hreflang — tells Google which language version to show per user */}
+      <link rel="alternate" hrefLang="en" href={hreflangUrls.en} />
+      <link rel="alternate" hrefLang="fr" href={hreflangUrls.fr} />
+      <link rel="alternate" hrefLang="es" href={hreflangUrls.es} />
+      <link rel="alternate" hrefLang="x-default" href={hreflangUrls.en} />
+
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
@@ -54,6 +79,7 @@ const SEO = ({
       <meta property="og:type" content={ogType} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content={SITE_NAME} />
+      <meta property="og:locale" content={lang === "fr" ? "fr_FR" : lang === "es" ? "es_ES" : "en_US"} />
 
       {/* Article-specific meta */}
       {ogType === "article" && articlePublishedTime && (

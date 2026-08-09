@@ -10,7 +10,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - best chrome extensions for online safety
-meta_description: "With the ever-increasing threat of cyber attacks, online safety has become a top priority for internet users."
+meta_description: "With cyber threats on the rise, these Chrome extensions for online safety help block malicious sites and flag phishing attempts before they reach you."
 status: published
 published_at: '2026-03-05T21:48:48.804+00:00'
 scheduled_at: null

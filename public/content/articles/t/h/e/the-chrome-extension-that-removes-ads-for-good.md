@@ -10,7 +10,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - chrome extension to remove ads
-meta_description: "Are you tired of being bombarded with intrusive ads while browsing the internet? Look no further!"
+meta_description: "Tired of being bombarded with intrusive ads while browsing? Here's the Chrome extension that blocks them for good, and how to set it up in minutes."
 status: published
 published_at: '2026-04-12T02:15:00.469+00:00'
 scheduled_at: '2026-04-12T02:15:00+00:00'

@@ -11,7 +11,7 @@ category: "Security & Privacy"
 tags: []
 keywords:
   - windscribe extension to chrome
-meta_description: "A hands-on look at online security, covering setup, real features, and what to expect before installing it."
+meta_description: "Concerned about your online security and privacy while browsing? Here's how the Windscribe extension for Chrome encrypts your traffic and blocks trackers."
 status: published
 published_at: '2026-02-15T02:11:01.462+00:00'
 scheduled_at: '2026-02-15T02:11:00+00:00'

@@ -12,7 +12,7 @@ category: Chrome Extensions
 tags: []
 keywords:
   - inspect element android chrome
-meta_description: "A hands-on look at web development, covering setup, real features, and what to expect before installing it."
+meta_description: "Inspecting elements isn't limited to desktop Chrome. Here's how to open and use Inspect Element on Android Chrome to debug pages directly from your phone."
 status: published
 published_at: '2026-04-07T18:15:00.294+00:00'
 scheduled_at: '2026-04-07T18:15:00+00:00'

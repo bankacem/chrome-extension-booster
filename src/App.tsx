@@ -18,6 +18,9 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
+// i18n — must be imported before any component that uses useTranslation
+import "./i18n";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -29,10 +32,23 @@ const App = () => (
           <Sonner />
           <BrowserRouter>
             <Routes>
+              {/* ── English (default) ── */}
               <Route path="/" element={<Index />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/extension/:slug" element={<ExtensionPage />} />
+
+              {/* ── French ── */}
+              <Route path="/fr" element={<Index />} />
+              <Route path="/fr/blog" element={<Blog />} />
+              <Route path="/fr/blog/:slug" element={<BlogPost />} />
+
+              {/* ── Spanish ── */}
+              <Route path="/es" element={<Index />} />
+              <Route path="/es/blog" element={<Blog />} />
+              <Route path="/es/blog/:slug" element={<BlogPost />} />
+
+              {/* ── Admin / internal ── */}
               <Route path="/admin" element={<AdminLogin />} />
               <Route path="/settings" element={<AdminLogin />} />
               <Route path="/settings/manage" element={<Admin />} />

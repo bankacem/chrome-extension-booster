@@ -9,8 +9,8 @@ featured_image: >-
 category: "Chrome Extensions"
 tags: []
 keywords:
-  - extensionhub ،
-meta_description: "Are you tired of sifting through countless extensions to find the perfect ones for your browser?"
+  - extensionhub
+meta_description: "ExtensionHub is a directory built to help you find the right Chrome add-ons faster, cutting through listings so you can browse by category and rating."
 status: published
 published_at: '2026-04-25T02:15:02.312+00:00'
 scheduled_at: '2026-04-25T02:15:00+00:00'

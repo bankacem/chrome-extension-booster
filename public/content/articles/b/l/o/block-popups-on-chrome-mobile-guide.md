@@ -12,7 +12,7 @@ category: "Productivity & Tools"
 tags: []
 keywords:
   - block popups on chrome mobile guide
-meta_description: "Are you tired of annoying popups interrupting your browsing experience on Chrome mobile? Look no further!"
+meta_description: "Popups on Chrome mobile can be blocked with a few built-in settings plus the right extension. Here's how to stop intrusive ads on your phone or tablet for good."
 status: published
 published_at: '2026-04-08T14:15:01.617+00:00'
 scheduled_at: '2026-04-08T14:15:00+00:00'

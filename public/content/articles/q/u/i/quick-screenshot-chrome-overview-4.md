@@ -9,7 +9,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - Quick Screenshot Chrome Overview
-meta_description: "A practical breakdown of quick screenshot chrome overview: how it works, how to set it up, and where it falls short."
+meta_description: "A practical breakdown of quick screenshot tools for Chrome: how capture works, how to set each extension up, and where they fall short for editing."
 status: published
 published_at: '2026-02-22T15:29:58.396+00:00'
 scheduled_at: null

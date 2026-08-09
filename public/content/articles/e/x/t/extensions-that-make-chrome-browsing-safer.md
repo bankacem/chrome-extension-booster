@@ -10,7 +10,7 @@ category: Appearance & Themes
 tags: []
 keywords:
   - secure browsing chrome extensions
-meta_description: "When it comes to browsing the internet, security is a top priority for many users."
+meta_description: "Chrome extensions that make everyday browsing safer, covering the essential protections against tracking, phishing, and malicious sites."
 status: published
 published_at: '2026-04-14T02:15:00.279+00:00'
 scheduled_at: '2026-04-14T02:15:00+00:00'

@@ -1,7 +1,7 @@
 ---
 seo_title: "12-Week Topic Cluster Strategy"
 slug: strategy-ram-cluster
-status: published
+status: draft
 published_at: '2026-08-01'
 featured_image: /content/images/strategy-ram-cluster.jpg
 image_url: /content/images/strategy-ram-cluster.jpg

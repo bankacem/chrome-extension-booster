@@ -9,7 +9,7 @@ category: Screenshots & Screen Capture
 tags: []
 keywords:
   - extension capture page web
-meta_description: "A hands-on look at web page capture, covering setup, real features, and what to expect before installing it."
+meta_description: "Capturing web pages the right way takes more than a basic screenshot. Here's how a page capture extension for Chrome grabs full pages, cleanly and reliably."
 status: published
 published_at: '2026-05-09T18:15:00.563+00:00'
 scheduled_at: '2026-05-09T18:15:00+00:00'
