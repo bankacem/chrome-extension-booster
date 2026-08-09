@@ -6,11 +6,11 @@ slug: "chrome-pop-up-blocker"
 excerpt: "Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a reliable Chrome pop up blocker."
 featured_image: >-
   /content/images/unlock-the-power-of-a-seamless-browsing-experience-the-ultimate-guide-to-chrome-pop-up-blocker-mm3scphqdyd/featured.webp
-category: Redirect & Navigation
+category: "Ad Blockers"
 tags: []
 keywords:
   - chrome pop up blocker
-meta_description: "A practical breakdown of chrome pop up blocker: how it works, how to set it up, and where it falls short."
+meta_description: "Tired of annoying pop-ups and intrusive ads disrupting your browsing? Here's what makes a reliable Chrome pop-up blocker, and how to set one up."
 status: published
 published_at: '2026-03-24T08:00:00.56+00:00'
 scheduled_at: '2026-03-24T08:00:00+00:00'

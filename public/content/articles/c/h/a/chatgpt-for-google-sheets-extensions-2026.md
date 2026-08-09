@@ -9,9 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-aa2cb9.jpg
 title: >-
   📊 ChatGPT for Google Sheets Chrome Extensions (2026) — Turn Your Spreadsheet
   Into an AI Robot
-meta_description: >-
-  📊 ChatGPT for Google Sheets Chrome Extensions 2026 — Turn Your Spreadsheet
-  Into an AI Robot
+meta_description: "Imagine typing a prompt into a spreadsheet cell and getting an instant answer back. Here's how ChatGPT extensions turn Google Sheets into an AI-powered tool."
 description: >-
   📊 ChatGPT for Google Sheets Chrome Extensions 2026 — Turn Your Spreadsheet
   Into an AI Robot

@@ -9,9 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-823246.jpg
 title: >-
   ⚙️ ChatGPT Custom Instructions Chrome Extensions (2026) — Make ChatGPT Sound
   Exactly Like You
-meta_description: >-
-  ⚙️ ChatGPT Custom Instructions Chrome Extensions 2026 — Make ChatGPT Sound
-  Exactly Like You
+meta_description: "ChatGPT's built-in Custom Instructions is just two text fields. Here's how a Chrome extension takes it further to make ChatGPT sound exactly like you."
 description: >-
   ⚙️ ChatGPT Custom Instructions Chrome Extensions 2026 — Make ChatGPT Sound
   Exactly Like You

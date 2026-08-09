@@ -9,9 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-893918.jpg
 title: >-
   ChatGPT Bookmark Manager Chrome Extension: The Complete 2026 Guide to
   Organizing Your AI Conversations
-meta_description: >-
-  ChatGPT Bookmark Manager Chrome Extension: The Complete 2026 Guide to
-  Organizing Your AI Conversations
+meta_description: "Losing track of useful ChatGPT conversations? Here's the complete 2026 guide to Chrome extensions that let you bookmark and organize your AI chats."
 description: >-
   ChatGPT Bookmark Manager Chrome Extension: The Complete 2026 Guide to
   Organizing Your AI Conversations

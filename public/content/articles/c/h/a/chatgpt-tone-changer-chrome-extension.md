@@ -9,9 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-ba8fd9.jpg
 title: >-
   ChatGPT Tone Changer Chrome Extension: The Complete 2026 Guide to Perfecting
   Your AI Voice
-meta_description: >-
-  ChatGPT Tone Changer Chrome Extension: The Complete 2026 Guide to Perfecting
-  Your AI Voice
+meta_description: "Get ChatGPT to sound exactly how you want, every time. Here's the complete 2026 guide to tone changer extensions and why you need one for consistent AI writing."
 description: >-
   ChatGPT Tone Changer Chrome Extension: The Complete 2026 Guide to Perfecting
   Your AI Voice

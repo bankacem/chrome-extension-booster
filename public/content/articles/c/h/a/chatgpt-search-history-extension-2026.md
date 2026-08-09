@@ -9,9 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-376255.jpg
 title: >-
   🔍 ChatGPT Search History Chrome Extensions (2026) — Find That Lost
   Conversation in Seconds
-meta_description: >-
-  🔍 ChatGPT Search History Chrome Extensions 2026 — Find That Lost Conversation
-  in Seconds
+meta_description: "Ever lost a perfect ChatGPT conversation in your history? Here's how a Chrome extension lets you search and find any past chat in seconds."
 description: >-
   🔍 ChatGPT Search History Chrome Extensions 2026 — Find That Lost Conversation
   in Seconds

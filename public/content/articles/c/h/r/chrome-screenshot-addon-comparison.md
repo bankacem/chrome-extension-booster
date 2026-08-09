@@ -14,7 +14,7 @@ keywords:
   - chrome screenshot addon comparison
   - best screenshot extension chrome
   - fireshot vs nimbus vs lightshot
-meta_description: "Head-to-head test of 4 Chrome screenshot extensions: Nimbus, Fireshot, Lightshot, and Quick Screenshot Lite...."
+meta_description: "We tested Nimbus, Fireshot, Lightshot, and Quick Screenshot Lite across 7 scenarios — capture speed, scrolling accuracy, file size, and annotation quality."
 status: published
 published_at: '2026-03-07T20:11:01.893+00:00'
 scheduled_at: '2026-03-07T20:11:00+00:00'
