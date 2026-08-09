@@ -19,7 +19,7 @@ keywords:
   - best tab manager chrome
   - chrome tab organizer extension
   - crystal vs workona vs toby
-meta_description: "Crystal extension for Chrome tested against Workona, Toby, and OneTab for 2 weeks...."
+meta_description: "We tested 4 tab manager extensions on Chrome, including Crystal, Workona, Toby, and OneTab. Here's which one actually keeps your tabs under control."
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'

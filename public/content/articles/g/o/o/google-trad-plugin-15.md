@@ -9,7 +9,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - google trad plugin
-meta_description: "The internet has bridged geographical gaps, connecting people from diverse linguistic backgrounds."
+meta_description: "The internet has bridged geographical gaps, connecting people from different linguistic backgrounds. Here's how a Google Translate plugin for Chrome helps."
 status: published
 published_at: '2026-02-22T17:33:12.454+00:00'
 scheduled_at: null

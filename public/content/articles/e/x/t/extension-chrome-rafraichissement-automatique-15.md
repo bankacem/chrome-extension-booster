@@ -11,7 +11,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome rafraichissement automatique
-meta_description: "Are you tired of manually refreshing your web pages to get the latest updates? Look no further!"
+meta_description: "Tired of manually refreshing web pages to catch the latest updates? Here's how an auto-refresh extension for Chrome does the work for you automatically."
 status: published
 published_at: '2026-02-07T08:11:00.28+00:00'
 scheduled_at: '2026-02-07T08:11:00+00:00'

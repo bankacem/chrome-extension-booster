@@ -6,11 +6,11 @@ slug: "loop-youtube-videos-with-this-chrome-extension"
 excerpt: "Are you tired of manually replaying your favorite YouTube videos or loops? Look no further!"
 featured_image: >-
   /content/images/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus-mmdz7yi813q/featured.webp
-category: Appearance & Themes
+category: "Media & Downloads"
 tags: []
 keywords:
   - chrome extension to repeat youtube videos
-meta_description: "Are you tired of manually replaying your favorite YouTube videos or loops? Look no further!"
+meta_description: "Tired of manually replaying your favorite YouTube videos on repeat? Here's the Chrome extension that lets you loop any video with a single click."
 status: published
 published_at: '2026-04-15T02:15:00.966+00:00'
 scheduled_at: '2026-04-15T02:15:00+00:00'

@@ -10,7 +10,7 @@ category: "Media & Downloads"
 tags: []
 keywords:
   - lemur browser extensions download
-meta_description: "Are you looking for ways to enhance your browsing experience with lemur browser extensions download?"
+meta_description: "Looking for ways to enhance your browsing with Lemur Browser extensions? Here's how to get standard Chrome extensions working properly on Lemur."
 status: published
 published_at: '2026-03-25T08:00:00.405+00:00'
 scheduled_at: '2026-03-25T08:00:00+00:00'
