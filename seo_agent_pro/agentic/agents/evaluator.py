@@ -155,11 +155,15 @@ def _deterministic_checks(state: dict) -> list[str]:
             section_words = set(norm.split())
             if not section_words:
                 continue
-            # Common abbreviation alias — "FAQ" is a legitimate heading for
-            # "Frequently Asked Questions" but shares zero words with it, so
-            # the word-overlap check below would false-positive reject it.
-            if "frequently asked questions" in norm and any(
-                "faq" in h for h in present_headings
+            # Common abbreviation alias — "FAQ" and "Frequently Asked
+            # Questions" are the same section but share zero words, so the
+            # word-overlap check below would false-positive reject either
+            # direction (required says "FAQ" but body says the long form,
+            # or vice versa) without this explicit bidirectional check.
+            is_faq_required = "faq" in norm or "frequently asked questions" in norm
+            if is_faq_required and any(
+                "faq" in h or "frequently asked questions" in h
+                for h in present_headings
             ):
                 continue
             found = any(
