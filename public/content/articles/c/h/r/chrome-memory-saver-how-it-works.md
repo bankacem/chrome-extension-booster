@@ -124,12 +124,12 @@ This configuration saved 1.1 GB of RAM in my 50-tab test with zero broken sites 
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture pages before they get suspended so you do not lose content |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks CPU-heavy pop-ups that consume memory |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops redirect chains that open unnecessary background tabs |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save articles offline so you can close tabs without losing access |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager that does not need tabs open to autofill |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Per-domain dark mode that reduces GPU usage on OLED screens |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save content from pages before tabs get discarded |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks CPU-heavy pop-ups that consume memory |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stops redirect chains that open unnecessary background tabs |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save articles offline so you can close tabs without losing access |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager that does not need tabs open to autofill |
+| DarkFlow | Per-domain dark mode that reduces GPU usage on OLED screens |
+| Glasp | Highlight and save content from pages before tabs get discarded |
 | ProTab Suspender | Already covered above as the recommended replacement for Memory Saver |
 
 Quick Screenshot Lite was useful during testing when I needed to capture page content before a tab was discarded — I could screenshot the full page and close the tab without worrying about losing it. At 35MB with zero background scripts, it does not interfere with Memory Saver's operation.

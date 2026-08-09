@@ -98,13 +98,13 @@ To access an extension's popup (like clicking the toolbar icon on desktop), tap 
 | Extension | Why You Need It on Android |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Android has no built-in scrolling screenshot on all devices — Quick Screenshot Lite fills this gap |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Mobile pop-ups are harder to close on touch screens — block them proactively |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents redirect chains that are more aggressive on mobile websites |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Phones have less RAM than desktops — suspend background tabs to keep the browser responsive |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages when you have data and read them offline later |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords on mobile sites — typing on a phone keyboard is slow and error-prone |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save text from your phone during research sessions |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Force dark mode on mobile sites — saves battery on OLED screens |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Mobile pop-ups are harder to close on touch screens — block them proactively |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents redirect chains that are more aggressive on mobile websites |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Phones have less RAM than desktops — suspend background tabs to keep the browser responsive |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages when you have data and read them offline later |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords on mobile sites — typing on a phone keyboard is slow and error-prone |
+| Glasp | Highlight and save text from your phone during research sessions |
+| DarkFlow | Force dark mode on mobile sites — saves battery on OLED screens |
 
 ## Performance Impact of Extensions on Android
 

@@ -102,13 +102,13 @@ Total memory for all 10: 243MB — less than a single heavy extension like Adobe
 | Extension | What It Does | Chrome Web Store Link |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page and visible area screenshots in 0.4s | Install |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks pop-ups on any website | Install |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops automatic redirect and malicious redirect chains | Install |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs to save up to 200MB RAM | Install |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves pages as PDF for offline reading | Install |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Local-only password manager with autofill | Install |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and organize text across any website | Install |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Forces dark mode on unsupported sites | Install |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks pop-ups on any website | Install |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stops automatic redirect and malicious redirect chains | Install |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs to save up to 200MB RAM | Install |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves pages as PDF for offline reading | Install |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Local-only password manager with autofill | Install |
+| Glasp | Highlight and organize text across any website | Install |
+| DarkFlow | Forces dark mode on unsupported sites | Install |
 
 ## How to Audit Extension Permissions
 

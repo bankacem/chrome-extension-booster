@@ -79,7 +79,7 @@ Brave's lower CPU usage translates to about 1 hour more battery life on a standa
 
 ## How to Optimize Each Browser
 
-**Chrome:** Install [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) + uBlock Origin. This combination saves about 1.2 GB compared to stock Chrome with no extensions. ProTab Suspender handles tab discarding with a configurable timeout and whitelist. uBlock Origin blocks ad scripts that consume RAM.
+**Chrome:** Install [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) + uBlock Origin. This combination saves about 1.2 GB compared to stock Chrome with no extensions. ProTab Suspender handles tab discarding with a configurable timeout and whitelist. uBlock Origin blocks ad scripts that consume RAM.
 
 **Edge:** Enable Sleeping Tabs in Settings > System and Performance. Set the inactivity timeout to 5 minutes. Enable the startup boost feature for faster cold starts. Edge's built-in ad blocker is sufficient for most users; adding uBlock Origin is optional and saves an additional 200 MB.
 
@@ -106,14 +106,14 @@ All 20 extensions worked in all three browsers. However, some extensions (like t
 
 | Extension | Chrome | Edge | Brave | Why |
 |-----------|--------|------|-------|-----|
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | ✅ | ✅ | ✅ | Tab suspension with whitelist and custom timeouts |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | ✅ | ✅ | ✅ | Blocks overlay pop-ups that waste CPU and RAM |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | ✅ | ✅ | ✅ | Prevents redirect chains from opening spam tabs |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | ✅ | ✅ | ✅ | Tab suspension with whitelist and custom timeouts |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | ✅ | ✅ | ✅ | Blocks overlay pop-ups that waste CPU and RAM |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | ✅ | ✅ | ✅ | Prevents redirect chains from opening spam tabs |
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | ✅ | ✅ | ✅ | Capture benchmark results and performance data |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | ✅ | ✅ | ✅ | Save pages to reduce tab count |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | ✅ | ✅ | ✅ | Password manager synced across browsers |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | ✅ | ✅ | ✅ | Annotate and save research across all browsers |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | ✅ | ✅ | ✅ | Consistent dark mode across any browser |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | ✅ | ✅ | ✅ | Save pages to reduce tab count |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | ✅ | ✅ | ✅ | Password manager synced across browsers |
+| Glasp | ✅ | ✅ | ✅ | Annotate and save research across all browsers |
+| DarkFlow | ✅ | ✅ | ✅ | Consistent dark mode across any browser |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

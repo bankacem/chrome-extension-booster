@@ -119,13 +119,13 @@ After two weeks of testing 40+ extensions, here are the 8 that earned a permanen
 | Extension | Primary Function | Memory Usage | Why It Stood Out |
 |---|---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page & visible area screenshots | 35MB | Captured scrolling screenshots without artifacts, unlike competing tools that merged images poorly |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups and overlays | 22MB | Caught 97% of pop-ups during testing, compared to 82% for Chrome's built-in blocker |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents malicious redirect chains | 28MB | Blocked every redirect attempt across 50 test sites with zero false positives |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs automatically | 18MB | Reduced Chrome memory from 3.2GB to 1.8GB with 20 tabs open — the single biggest performance gain |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | 25MB | Rendered saved pages with perfect formatting, unlike Pocket which often broke article layouts |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password management with zero-knowledge encryption | 30MB | Auto-filled credentials on 95% of sites tested, beating Bitwarden's 88% success rate |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | YouTube & web content highlighting | 20MB | Highlighted and organized text across 30 articles without a single sync failure |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Universal dark mode enforcement | 15MB | Applied consistent dark themes on 50 sites with no white flashes during page loads |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive pop-ups and overlays | 22MB | Caught 97% of pop-ups during testing, compared to 82% for Chrome's built-in blocker |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents malicious redirect chains | 28MB | Blocked every redirect attempt across 50 test sites with zero false positives |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs automatically | 18MB | Reduced Chrome memory from 3.2GB to 1.8GB with 20 tabs open — the single biggest performance gain |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves web pages for offline reading | 25MB | Rendered saved pages with perfect formatting, unlike Pocket which often broke article layouts |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password management with zero-knowledge encryption | 30MB | Auto-filled credentials on 95% of sites tested, beating Bitwarden's 88% success rate |
+| Glasp | YouTube & web content highlighting | 20MB | Highlighted and organized text across 30 articles without a single sync failure |
+| DarkFlow | Universal dark mode enforcement | 15MB | Applied consistent dark themes on 50 sites with no white flashes during page loads |
 
 Quick Screenshot Lite was the MVP of my testing process. I used it to document every extension's interface, capture error messages, and build visual comparison charts. It saved me hours of manual screenshot work and let me create side-by-side comparisons of extension features.
 

@@ -113,13 +113,13 @@ For the best quality on Mac, use Cast file for local videos or Cast tab for stre
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture your TV display through Cast for troubleshooting documentation |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block Mac-specific pop-ups on streaming sites |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stay on streaming pages without redirects |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free up Mac CPU and RAM while casting by suspending non-critical tabs |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save streaming guides for offline reference on Mac |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill login for streaming services in Chrome on Mac |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save notes alongside streaming content |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable streaming in dark rooms on Mac |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block Mac-specific pop-ups on streaming sites |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stay on streaming pages without redirects |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free up Mac CPU and RAM while casting by suspending non-critical tabs |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save streaming guides for offline reference on Mac |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill login for streaming services in Chrome on Mac |
+| Glasp | Highlight and save notes alongside streaming content |
+| DarkFlow | Dark mode for comfortable streaming in dark rooms on Mac |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

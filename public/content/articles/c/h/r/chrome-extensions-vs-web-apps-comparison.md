@@ -121,13 +121,13 @@ These extensions complement your web app workflow by handling the capture and au
 | Extension | What It Does |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | One-click screenshot capture for documentation |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block distractions while using web apps |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stay on web apps without redirect interruptions |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free RAM when running multiple web apps |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save web app content for offline reference |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords across all web apps |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save content from web apps |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable web app use |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block distractions while using web apps |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stay on web apps without redirect interruptions |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free RAM when running multiple web apps |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save web app content for offline reference |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords across all web apps |
+| Glasp | Highlight and save content from web apps |
+| DarkFlow | Dark mode for comfortable web app use |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

@@ -102,13 +102,13 @@ Brave lacks any gaming-specific features. No RAM limiter, no CPU limiter, no Twi
 | Extension | What It Does | Gaming Use Case |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page & visible area screenshots | Capture gaming scores, achievements, and stream moments |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups | Stop ads and notifications from interrupting gameplay |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents malicious redirect chains | Protect against phishing links in game chat and forums |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs to save RAM | Free memory for demanding games — replaces Opera GX's RAM limiter |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | Save game guides and walkthroughs for offline reference |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager with encryption | Auto-fill on gaming platforms like Steam, Epic Games, and GOG |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Web highlighter and organizer | Highlight tips in gaming forums, build guides, and tutorials |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Universal dark mode enforcement | Reduce eye strain during long gaming sessions |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive pop-ups | Stop ads and notifications from interrupting gameplay |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents malicious redirect chains | Protect against phishing links in game chat and forums |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs to save RAM | Free memory for demanding games — replaces Opera GX's RAM limiter |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves web pages for offline reading | Save game guides and walkthroughs for offline reference |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager with encryption | Auto-fill on gaming platforms like Steam, Epic Games, and GOG |
+| Glasp | Web highlighter and organizer | Highlight tips in gaming forums, build guides, and tutorials |
+| DarkFlow | Universal dark mode enforcement | Reduce eye strain during long gaming sessions |
 
 ProTab Suspender is the closest Chrome gets to Opera GX's RAM limiter. I measured Chrome's RAM usage dropping from 1.2GB to 680MB with 15 tabs open and ProTab Suspender set to a 5-minute timeout — that is better than Opera GX's 780MB with the same tabs. The key difference is that ProTab Suspender reclaims memory from inactive tabs rather than capping total Chrome memory, which means active tabs still have full memory available for smooth performance.
 

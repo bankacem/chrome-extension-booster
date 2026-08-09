@@ -114,13 +114,13 @@ Light Popup Blocker works great alongside a dedicated ad blocker (I use both sim
 | Extension | What It Does |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture clean, ad-free page screenshots for documentation |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Extra pop-up protection alongside your main ad blocker |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Block redirect chains that bypass ad blockers |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free RAM when ad blockers scan page content |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save ad-free pages for offline reading |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager that keeps logins secure |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight content on ad-free pages |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable reading |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Extra pop-up protection alongside your main ad blocker |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Block redirect chains that bypass ad blockers |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free RAM when ad blockers scan page content |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save ad-free pages for offline reading |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager that keeps logins secure |
+| Glasp | Highlight content on ad-free pages |
+| DarkFlow | Dark mode for comfortable reading |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

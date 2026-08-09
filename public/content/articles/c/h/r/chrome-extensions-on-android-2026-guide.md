@@ -118,13 +118,13 @@ The 4-month update gap is the critical issue. Chrome's extension APIs evolve rap
 | Extension | What It Does | Kiwi | Yandex | Lemur |
 |---|---|---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page mobile screenshots — #1 most useful mobile extension | ✅ Works | ✅ Works | ✅ Works |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block aggressive mobile pop-ups | ✅ Works | ✅ Works | ✅ Works |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevent redirect chains that open Play Store | ✅ Works | ✅ Works | ✅ Works |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Save battery by suspending inactive mobile tabs | ✅ Works | ✅ Works | ❌ Failed |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages for offline reading | ✅ Works | ✅ Works | ✅ Works |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords without mobile keyboard typing | ✅ Works | ✅ Works | ✅ Works |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight content while browsing on phone | ✅ Works | ✅ Works | ❌ Failed |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable night browsing | ✅ Works | ❌ Failed | ⚠️ Broken UI |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block aggressive mobile pop-ups | ✅ Works | ✅ Works | ✅ Works |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevent redirect chains that open Play Store | ✅ Works | ✅ Works | ✅ Works |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Save battery by suspending inactive mobile tabs | ✅ Works | ✅ Works | ❌ Failed |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages for offline reading | ✅ Works | ✅ Works | ✅ Works |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords without mobile keyboard typing | ✅ Works | ✅ Works | ✅ Works |
+| Glasp | Highlight content while browsing on phone | ✅ Works | ✅ Works | ❌ Failed |
+| DarkFlow | Dark mode for comfortable night browsing | ✅ Works | ❌ Failed | ⚠️ Broken UI |
 
 ## How to Choose the Right Browser
 

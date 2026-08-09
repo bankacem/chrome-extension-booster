@@ -110,13 +110,13 @@ For users who already own IDM, the extension is the best download manager for Ch
 | Extension | What It Does | Why Pair with a Download Manager |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page screenshots | Capture download confirmations, receipts, and error messages |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups | Stop ad pop-ups on download sites |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents malicious redirect chains | Block fake download button redirects |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs | Free RAM during large file downloads |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | Save download tutorials and setup guides |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager with encryption | Auto-fill on file hosting sites that require login |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Web highlighter and organizer | Highlight download links and organize them |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Universal dark mode enforcement | Comfort during late-night download sessions |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive pop-ups | Stop ad pop-ups on download sites |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents malicious redirect chains | Block fake download button redirects |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs | Free RAM during large file downloads |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves web pages for offline reading | Save download tutorials and setup guides |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager with encryption | Auto-fill on file hosting sites that require login |
+| Glasp | Web highlighter and organizer | Highlight download links and organize them |
+| DarkFlow | Universal dark mode enforcement | Comfort during late-night download sessions |
 
 Quick Screenshot Lite was essential during testing — I captured error messages, fake download buttons, and installation wizard screens for side-by-side comparison.
 

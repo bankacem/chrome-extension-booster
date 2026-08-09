@@ -98,13 +98,13 @@ Lightshot also saves in JPG format only, which introduces compression artifacts.
 | Extension | How It Helps with Screenshots |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | 0.4s visible-area captures, 2.1s full-page scrolling, 35MB — the fastest Chrome screenshot extension |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks pop-ups that appear when hovering over screenshot buttons on tutorial sites |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stay on the screenshot page instead of being redirected to ad pages |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free RAM from unused tabs so screenshot extensions have resources for large full-page captures |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages as HTML/PDF — an alternative to screenshotting for reading later |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill login credentials before capturing screenshots of authenticated dashboards |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save text snippets alongside visual screenshots for complete documentation |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Switch to light mode before screenshots — dark mode captures look inconsistent in documents |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks pop-ups that appear when hovering over screenshot buttons on tutorial sites |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stay on the screenshot page instead of being redirected to ad pages |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free RAM from unused tabs so screenshot extensions have resources for large full-page captures |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages as HTML/PDF — an alternative to screenshotting for reading later |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill login credentials before capturing screenshots of authenticated dashboards |
+| Glasp | Highlight and save text snippets alongside visual screenshots for complete documentation |
+| DarkFlow | Switch to light mode before screenshots — dark mode captures look inconsistent in documents |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

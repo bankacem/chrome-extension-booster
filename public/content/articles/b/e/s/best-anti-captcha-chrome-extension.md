@@ -103,13 +103,13 @@ The Chrome Extension Developers community on [Stack Overflow's Chrome extension 
 | Extension | What It Does | How It Complements Anti Captcha |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page screenshots | Document CAPTCHA failures to report bugs or track solving patterns |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups | Blocks pop-ups that trigger extra CAPTCHA challenges on some sites |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops unwanted redirect chains | Prevents malicious redirects that some CAPTCHA pages use as traps |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs | Frees RAM so CAPTCHA extensions solve faster without browser lag |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | Save pages from sites with aggressive CAPTCHAs and read later |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager | Auto-fill credentials after CAPTCHA solve for seamless logins |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Web highlighter | Mark up research without interruptions from CAPTCHA puzzles |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode | Reduce eye strain during long sessions with frequent CAPTCHA stops |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive pop-ups | Blocks pop-ups that trigger extra CAPTCHA challenges on some sites |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stops unwanted redirect chains | Prevents malicious redirects that some CAPTCHA pages use as traps |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs | Frees RAM so CAPTCHA extensions solve faster without browser lag |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves web pages for offline reading | Save pages from sites with aggressive CAPTCHAs and read later |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager | Auto-fill credentials after CAPTCHA solve for seamless logins |
+| Glasp | Web highlighter | Mark up research without interruptions from CAPTCHA puzzles |
+| DarkFlow | Dark mode | Reduce eye strain during long sessions with frequent CAPTCHA stops |
 
 Quick Screenshot Lite became my testing sidekick — I captured every failed CAPTCHA attempt to compare solving patterns across extensions. The visible area capture mode was perfect for grabbing the CAPTCHA widget and its surrounding context without extra editing.
 

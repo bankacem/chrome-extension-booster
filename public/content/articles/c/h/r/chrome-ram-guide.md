@@ -127,12 +127,12 @@ According to [V8's official memory management documentation](https://v8.dev/docs
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture pages before suspension so you don't lose content |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks CPU-heavy pop-ups that waste memory |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents redirect chains from opening unnecessary tabs |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save articles offline so you can close tabs without losing them |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager that works without keeping tabs open |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode that reduces GPU memory usage on OLED screens |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight content before tabs get discarded |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks CPU-heavy pop-ups that waste memory |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents redirect chains from opening unnecessary tabs |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save articles offline so you can close tabs without losing them |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager that works without keeping tabs open |
+| DarkFlow | Dark mode that reduces GPU memory usage on OLED screens |
+| Glasp | Highlight content before tabs get discarded |
 | ProTab Suspender | Already covered — the core RAM optimization extension |
 
 Quick Screenshot Lite was useful during testing when I needed to capture page states before tabs were discarded. I used it to save reference content from tabs I was about to close, at 35MB with no background overhead.

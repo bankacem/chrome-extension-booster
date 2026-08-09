@@ -122,13 +122,13 @@ Quick Screenshot Lite has the best balance of essential tools and speed. Nimbus 
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Fastest Chrome screenshot extension — 0.3s capture, full-page scrolling, essential annotations, 25MB RAM |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks pop-ups and cookie consent banners that appear while capturing clean screenshots |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents redirects from interrupting your capture workflow on ad-heavy pages |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Keeps Chrome responsive while editing large full-page captures by freeing RAM from unused tabs |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages offline before capturing to eliminate loading delays and dynamic content shifts |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Store API keys and login credentials securely for pages you screenshot regularly |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save text alongside screenshots for richer bug reports and documentation |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Per-domain contrast for consistent screenshot appearance across light and dark sites |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks pop-ups and cookie consent banners that appear while capturing clean screenshots |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents redirects from interrupting your capture workflow on ad-heavy pages |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Keeps Chrome responsive while editing large full-page captures by freeing RAM from unused tabs |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages offline before capturing to eliminate loading delays and dynamic content shifts |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Store API keys and login credentials securely for pages you screenshot regularly |
+| Glasp | Highlight and save text alongside screenshots for richer bug reports and documentation |
+| DarkFlow | Per-domain contrast for consistent screenshot appearance across light and dark sites |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

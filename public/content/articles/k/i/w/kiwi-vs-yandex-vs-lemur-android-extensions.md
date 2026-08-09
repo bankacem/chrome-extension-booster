@@ -132,13 +132,13 @@ These extensions work best on Kiwi Browser and transform your Android browsing i
 | Extension | What It Does |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page screenshots on mobile — works perfectly on Kiwi |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block mobile pop-ups that are even more aggressive than desktop |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stop mobile redirect chains that open the Play Store |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Save battery by suspending inactive mobile tabs |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save articles for offline reading on flights or commutes |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords on mobile without typing |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save content while browsing on phone |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable phone browsing at night |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block mobile pop-ups that are even more aggressive than desktop |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stop mobile redirect chains that open the Play Store |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Save battery by suspending inactive mobile tabs |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save articles for offline reading on flights or commutes |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords on mobile without typing |
+| Glasp | Highlight and save content while browsing on phone |
+| DarkFlow | Dark mode for comfortable phone browsing at night |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

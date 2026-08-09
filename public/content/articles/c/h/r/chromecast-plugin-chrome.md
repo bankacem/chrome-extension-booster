@@ -126,13 +126,13 @@ Casting from YouTube and Netflix delivers the highest quality because the Chrome
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture screenshots of your TV display through the Cast session for documentation |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block pop-ups that interrupt cast sessions |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stay on streaming pages without being redirected away |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspend non-casting tabs while streaming to free up system resources |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save streaming guides and instructions for offline reference |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill login for streaming services that require authentication |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save notes from streaming guides |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable streaming in dark rooms |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block pop-ups that interrupt cast sessions |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stay on streaming pages without being redirected away |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspend non-casting tabs while streaming to free up system resources |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save streaming guides and instructions for offline reference |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill login for streaming services that require authentication |
+| Glasp | Highlight and save notes from streaming guides |
+| DarkFlow | Dark mode for comfortable streaming in dark rooms |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

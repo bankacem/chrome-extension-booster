@@ -91,13 +91,13 @@ GoFullPage uses 55MB of RAM and requests 3 permissions, which is reasonable. But
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | The fastest, lightest, most reliable Chrome screenshot extension I have used in 2026 |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks newsletter sign-up popups that appear before you can screenshot the content |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents redirect chains — screenshot the page you actually intended to capture |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Saves RAM from background tabs, leaving more memory for large full-page screenshot renders |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages as PDF or MHTML — a searchable alternative to screenshot images |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords before capturing screenshots of authenticated dashboards |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save text alongside visual screenshots for complete searchable documentation |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Toggle to light mode before screenshots — dark mode captures look uneven in documents |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks newsletter sign-up popups that appear before you can screenshot the content |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents redirect chains — screenshot the page you actually intended to capture |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Saves RAM from background tabs, leaving more memory for large full-page screenshot renders |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages as PDF or MHTML — a searchable alternative to screenshot images |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords before capturing screenshots of authenticated dashboards |
+| Glasp | Highlight and save text alongside visual screenshots for complete searchable documentation |
+| DarkFlow | Toggle to light mode before screenshots — dark mode captures look uneven in documents |
 
 ## Where Quick Screenshot Lite Falls Short
 

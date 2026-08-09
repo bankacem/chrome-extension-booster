@@ -112,18 +112,17 @@ In my testing, this combined setup blocked 99% of all pop-ups and overlays acros
 4. Disable Chrome's built-in popup blocker (it conflicts with extensions) — go to Settings > Privacy and security > Site Settings > Pop-ups and redirects > Blocked (default)
 5. Test on a high-popup site like CNN or MSNBC — you should see zero overlays
 
-## 8 Companion Extensions
+## 7 Companion Extensions
 
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture examples of intrusive pop-ups for reporting to filter list maintainers |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Blocks redirect chains triggered by accidental pop-up clicks before the blocker activates |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Keeps Chrome fast while popup blocker runs in background — saves ~1 GB RAM |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save clean article pages after pop-ups are blocked, without dynamic reload issues |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords without interacting with pop-up dialogs that mimic login screens |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save content from pages where pop-up removal creates time pressure |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Per-domain contrast for consistent visual experience after pop-up overlays are removed |
-| [The Great Suspender](https://chromewebstore.google.com/detail/the-great-suspender/your-id-here) | Suspend tabs on ad-heavy sites that still consume CPU even with pop-ups blocked |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Blocks redirect chains triggered by accidental pop-up clicks before the blocker activates |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Keeps Chrome fast while popup blocker runs in background — saves ~1 GB RAM |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save clean article pages after pop-ups are blocked, without dynamic reload issues |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords without interacting with pop-up dialogs that mimic login screens |
+| Glasp | Highlight and save content from pages where pop-up removal creates time pressure |
+| DarkFlow | Per-domain contrast for consistent visual experience after pop-up overlays are removed |
 
 Quick Screenshot Lite was essential during testing — I captured every pop-up variant I encountered and used the screenshots to verify which blockers caught which types. At 35 MB, it added negligible overhead alongside my blocker testing.
 

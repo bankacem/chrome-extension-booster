@@ -117,13 +117,13 @@ Once Chrome is set as your default browser, these 8 companion extensions complet
 | Extension | What It Does |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture setup guides and bookmark migration screenshots |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block Microsoft Edge's "switch back" nag pop-ups |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevent Edge from hijacking HTTP/HTTPS associations after updates |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free RAM that Edge and Safari leave behind after uninstallation |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save bookmarked pages offline before migrating from another browser |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Import and autofill passwords in your new default browser |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight migration guides and tutorials |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable browsing in your newly configured browser |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block Microsoft Edge's "switch back" nag pop-ups |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevent Edge from hijacking HTTP/HTTPS associations after updates |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free RAM that Edge and Safari leave behind after uninstallation |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save bookmarked pages offline before migrating from another browser |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Import and autofill passwords in your new default browser |
+| Glasp | Highlight migration guides and tutorials |
+| DarkFlow | Dark mode for comfortable browsing in your newly configured browser |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

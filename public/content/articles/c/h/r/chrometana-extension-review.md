@@ -98,13 +98,13 @@ Chrometana is the only open-source option. The source code is available on GitHu
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture screenshots of search redirect behavior for troubleshooting documentation |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block pop-ups that appear after search redirects on some sites |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Works alongside search redirectors — blocks malicious redirects while allowing search redirects |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free RAM after Cortana opens Edge — close Edge tabs automatically with tab suspension |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save search results pages for offline reference |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords on Google after being redirected from Bing |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight text from search results and save for research |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Force dark mode on Bing pages before the redirect completes — prevents flash of white background |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block pop-ups that appear after search redirects on some sites |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Works alongside search redirectors — blocks malicious redirects while allowing search redirects |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free RAM after Cortana opens Edge — close Edge tabs automatically with tab suspension |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save search results pages for offline reference |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords on Google after being redirected from Bing |
+| Glasp | Highlight text from search results and save for research |
+| DarkFlow | Force dark mode on Bing pages before the redirect completes — prevents flash of white background |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

@@ -132,12 +132,12 @@ At 45 MB during calls, the 3CX extension is lighter than the RingCentral desktop
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture call logs and CRM screenshots for documentation |
 | [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) | Block browser pop-ups during screen sharing sessions |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stay on web pages while clicking phone numbers |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free up RAM while 3CX runs in background during calls |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save call scripts and FAQs for offline reference |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Secure password management for CRM and phone system admin |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save call notes alongside CRM records |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable phone system management |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stay on web pages while clicking phone numbers |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free up RAM while 3CX runs in background during calls |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save call scripts and FAQs for offline reference |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Secure password management for CRM and phone system admin |
+| Glasp | Highlight and save call notes alongside CRM records |
+| DarkFlow | Dark mode for comfortable phone system management |
 
 Quick Screenshot Lite was especially useful during testing — I captured MOS score screenshots from the 3CX reporting dashboard and recorded call quality metrics for the comparison table above. At 35MB, it is lighter than the 3CX extension itself.
 

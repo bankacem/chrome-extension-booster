@@ -124,13 +124,13 @@ All Chromium browsers have similar memory usage with the same extensions. Edge i
 | Extension | Why You Need It in Opera |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Works perfectly in Opera — capture full-page or visible area screenshots instantly |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks Opera-specific bundled ads and pop-ups |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents redirects on all Chromium browsers including Opera |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Opera does not have built-in tab suspension — this fills the gap |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages for offline reading in any Chromium browser |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords in Opera — works with all Chromium-based browsers |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save text across all Chromium browsers including Opera |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Force dark mode on any website in Opera — works alongside Opera's built-in dark mode |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks Opera-specific bundled ads and pop-ups |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents redirects on all Chromium browsers including Opera |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Opera does not have built-in tab suspension — this fills the gap |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages for offline reading in any Chromium browser |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords in Opera — works with all Chromium-based browsers |
+| Glasp | Highlight and save text across all Chromium browsers including Opera |
+| DarkFlow | Force dark mode on any website in Opera — works alongside Opera's built-in dark mode |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

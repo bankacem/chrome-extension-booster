@@ -119,13 +119,13 @@ Instagram changes its web interface regularly, which is why extensions occasiona
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture Instagram Stories that disappear before you can download them |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block pop-ups on Instagram web that appear when hovering over download buttons |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stay on Instagram without being redirected to ad pages from download sites |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save Instagram profile pages for offline reference |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill login for Instagram without typing credentials |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Keep Chrome fast when browsing image-heavy Instagram feeds |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save captions alongside downloaded content |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable Instagram browsing at night |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block pop-ups on Instagram web that appear when hovering over download buttons |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stay on Instagram without being redirected to ad pages from download sites |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save Instagram profile pages for offline reference |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill login for Instagram without typing credentials |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Keep Chrome fast when browsing image-heavy Instagram feeds |
+| Glasp | Highlight and save captions alongside downloaded content |
+| DarkFlow | Dark mode for comfortable Instagram browsing at night |
 
 Quick Screenshot Lite was my backup tool during testing — when an extension failed to download a Story, I captured it as a screenshot instead. The scrolling capture feature was useful for saving full comment threads and profile pages that extensions could not handle.
 

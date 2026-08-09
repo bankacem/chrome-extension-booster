@@ -108,13 +108,13 @@ YouTube tutorials are great for visual learners who want to see the development 
 | Extension | What It Does | Why Developers Need It |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page screenshots | Document your extension UI at every stage of development |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups | Keep dev environments clean without ad distractions |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents malicious redirects | Test your extension without redirect interference |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs | Free memory when running multiple Chrome profiles for testing |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | Save API docs and tutorials for offline reference |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager with encryption | Store Chrome Web Store developer credentials securely |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Web highlighter and organizer | Highlight key sections in the extension doc for quick reference |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Universal dark mode enforcement | Reduce eye strain during late-night coding sessions |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive pop-ups | Keep dev environments clean without ad distractions |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents malicious redirects | Test your extension without redirect interference |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs | Free memory when running multiple Chrome profiles for testing |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves web pages for offline reading | Save API docs and tutorials for offline reference |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager with encryption | Store Chrome Web Store developer credentials securely |
+| Glasp | Web highlighter and organizer | Highlight key sections in the extension doc for quick reference |
+| DarkFlow | Universal dark mode enforcement | Reduce eye strain during late-night coding sessions |
 
 Quick Screenshot Lite documented my entire development process. I used it to capture error messages, API responses, and before-after screenshots of my extension's UI during testing — essential for comparing behavior across different Chrome versions.
 

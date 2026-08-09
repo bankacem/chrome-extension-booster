@@ -105,13 +105,13 @@ Do not install y2mate or any extension claiming to be y2mate. The official site 
 | Extension | What It Does | Why It Pairs with YouTube MP3 |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page screenshots | Capture video info and playlist details before conversion |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups | Block ad pop-ups on conversion sites |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents malicious redirect chains | Stop fake download button redirects |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs | Free memory during batch conversions |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | Save music blog articles and reviews |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager with encryption | Keep your YouTube account credentials secure |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Web highlighter and organizer | Highlight song recommendations and music guides |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Universal dark mode enforcement | Comfortable browsing during late-night music discovery |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive pop-ups | Block ad pop-ups on conversion sites |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents malicious redirect chains | Stop fake download button redirects |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs | Free memory during batch conversions |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves web pages for offline reading | Save music blog articles and reviews |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager with encryption | Keep your YouTube account credentials secure |
+| Glasp | Web highlighter and organizer | Highlight song recommendations and music guides |
+| DarkFlow | Universal dark mode enforcement | Comfortable browsing during late-night music discovery |
 
 Quick Screenshot Lite helped me document the installation process for each extension — capturing the permission screens, adware offers, and fake download buttons so I could compare them side by side. Redirect Shield blocked the fake download button redirects on ClipConverter and Online YouTube Converter's sites.
 

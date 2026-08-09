@@ -104,13 +104,13 @@ For Edge, Brave, and Opera: visit the same Chrome Web Store URL and click "Add t
 | Extension | Category | Why You Need It |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Screenshots | Fastest Chrome screenshot extension — 0.4s visible area, 2 permissions only |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Ad blocking | Blocks pop-ups without slowing down page load |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Security | Prevents redirect chains that lead to malicious sites |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Tab management | Frees RAM by suspending inactive tabs automatically |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Offline reading | Save any page as PDF or MHTML for offline access |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Passwords | Zero-knowledge password manager with autofill |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Note taking | Highlight text and save notes across websites |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode | Per-domain dark mode settings for consistent viewing |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Ad blocking | Blocks pop-ups without slowing down page load |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Security | Prevents redirect chains that lead to malicious sites |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Tab management | Frees RAM by suspending inactive tabs automatically |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Offline reading | Save any page as PDF or MHTML for offline access |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Passwords | Zero-knowledge password manager with autofill |
+| Glasp | Note taking | Highlight text and save notes across websites |
+| DarkFlow | Dark mode | Per-domain dark mode settings for consistent viewing |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

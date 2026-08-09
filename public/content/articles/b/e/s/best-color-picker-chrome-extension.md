@@ -105,13 +105,13 @@ A color picker solves one problem. These 8 companion extensions solve everything
 | Extension | What It Does |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture full-page design references alongside your color picks |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block ads and pop-ups on design inspiration sites like Dribbble and Behance |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stay on design resources without getting redirected to spam |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free RAM when running Figma, Canva, or Photoshop in the browser |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save color palette tutorials and design guides for offline reading |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords on design tool logins without breaking flow |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight color theory articles and save them for later reference |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode reduces eye strain during late-night design sessions |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block ads and pop-ups on design inspiration sites like Dribbble and Behance |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stay on design resources without getting redirected to spam |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free RAM when running Figma, Canva, or Photoshop in the browser |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save color palette tutorials and design guides for offline reading |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords on design tool logins without breaking flow |
+| Glasp | Highlight color theory articles and save them for later reference |
+| DarkFlow | Dark mode reduces eye strain during late-night design sessions |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

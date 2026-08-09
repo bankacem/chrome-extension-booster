@@ -111,13 +111,13 @@ PC users have full keyboards with dedicated function keys, number pads, and medi
 | Extension | Why PC Users Need It | Chrome Web Store Link |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Fastest full-page capture on PC — assign `Ctrl+Shift+S` for instant screenshots | Install |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks PC-targeted pop-ups and survey overlays that are more aggressive on desktop | Install |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops redirect chains — PC ad networks use more aggressive redirect techniques | Install |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Saves 200MB+ RAM per 10 suspended tabs — essential for PC multitaskers | Install |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages as PDF for offline reading during commute or travel | Install |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Local-only password manager — autofill with `Ctrl+Shift+9` or similar shortcut | Install |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and organize research across projects — PC is the primary research platform | Install |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Force dark mode on sites — reduces eye strain during long PC work sessions | Install |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks PC-targeted pop-ups and survey overlays that are more aggressive on desktop | Install |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stops redirect chains — PC ad networks use more aggressive redirect techniques | Install |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Saves 200MB+ RAM per 10 suspended tabs — essential for PC multitaskers | Install |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages as PDF for offline reading during commute or travel | Install |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Local-only password manager — autofill with `Ctrl+Shift+9` or similar shortcut | Install |
+| Glasp | Highlight and organize research across projects — PC is the primary research platform | Install |
+| DarkFlow | Force dark mode on sites — reduces eye strain during long PC work sessions | Install |
 
 ## How to Set Up Keyboard Shortcuts for Extensions on PC
 

@@ -100,13 +100,13 @@ Popup blockers alone are not enough. Modern browsers face redirect chains, phish
 | Extension | What It Does |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture pop-up evidence and clean page screenshots for documentation |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | The lightweight champion — 97% block rate at 18MB |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Block redirect chains that pop-ups trigger when you click anywhere on a page |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free RAM so Chrome does not slow down under pop-up attack |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save article content offline after closing pop-up-laden pages |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Protect credentials from phishing pop-ups that mimic login forms |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save text from pages before pop-ups force you to close |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Reduce eye strain when browsing pop-up-heavy sites at night |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | The lightweight champion — 97% block rate at 18MB |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Block redirect chains that pop-ups trigger when you click anywhere on a page |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free RAM so Chrome does not slow down under pop-up attack |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save article content offline after closing pop-up-laden pages |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Protect credentials from phishing pop-ups that mimic login forms |
+| Glasp | Highlight and save text from pages before pop-ups force you to close |
+| DarkFlow | Reduce eye strain when browsing pop-up-heavy sites at night |
 
 Installing all 8 companion extensions alongside Light Popup Blocker adds roughly 80MB of total RAM usage — less than a single YouTube tab — and gives you comprehensive protection against every pop-up variant currently circulating.
 
@@ -133,7 +133,7 @@ Light Popup Blocker added only 18MB of RAM and 0.3% CPU usage during my testing 
 
 ### Q: Can pop-up blockers protect me from malware?
 
-Indirectly, yes. Many malicious pop-ups carry fake "your computer is infected" messages designed to trick you into calling a scam support number or downloading malware. A good pop-up blocker prevents these overlays from rendering. However, pop-up blockers are not antivirus tools. For comprehensive protection, pair your pop-up blocker with [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) for phishing protection and a dedicated antivirus suite.
+Indirectly, yes. Many malicious pop-ups carry fake "your computer is infected" messages designed to trick you into calling a scam support number or downloading malware. A good pop-up blocker prevents these overlays from rendering. However, pop-up blockers are not antivirus tools. For comprehensive protection, pair your pop-up blocker with [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) for phishing protection and a dedicated antivirus suite.
 
 ### Q: Why do some pop-ups still get through?
 

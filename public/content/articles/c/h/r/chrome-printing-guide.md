@@ -122,13 +122,13 @@ For printing shipping labels or forms:
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture pages that print poorly as images instead — often clearer than printed output |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block print dialog pop-ups and "Subscribe to print" prompts on article sites |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevent redirects when clicking "Print" buttons on document sites |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free memory from heavy document tabs after printing |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages as offline documents instead of printing physical copies |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill shipping and billing info on print order forms |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight text before printing so only your notes print |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Switch to light mode before printing — dark mode pages waste ink |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block print dialog pop-ups and "Subscribe to print" prompts on article sites |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevent redirects when clicking "Print" buttons on document sites |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free memory from heavy document tabs after printing |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages as offline documents instead of printing physical copies |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill shipping and billing info on print order forms |
+| Glasp | Highlight text before printing so only your notes print |
+| DarkFlow | Switch to light mode before printing — dark mode pages waste ink |
 
 Quick Screenshot Lite was my backup tool during testing. When a complex page with JavaScript-generated content refused to print correctly (the print preview showed blank sections), I captured the page as a full-scrolling screenshot instead, then printed the image. This worked 100% of the time where direct printing failed on 3 of 5 test pages.
 

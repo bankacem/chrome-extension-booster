@@ -93,13 +93,13 @@ Kiwi supports the complete Chrome Web Store. I installed Quick Screenshot Lite, 
 | Extension | Why You Need It on Android |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture full-page mobile screenshots — Android does not have built-in scrolling capture |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block mobile pop-ups and overlay ads that are harder to close on touch screens |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stop redirect chains that are more aggressive on mobile sites |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free RAM on your phone by suspending background tabs — critical on 4GB devices |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages for offline reading on your phone when you do not have a data connection |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords on mobile sites — typing on a phone keyboard is slow |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save text from your phone for research on the go |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Force dark mode on all mobile sites — reduces battery drain on OLED screens |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block mobile pop-ups and overlay ads that are harder to close on touch screens |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stop redirect chains that are more aggressive on mobile sites |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free RAM on your phone by suspending background tabs — critical on 4GB devices |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages for offline reading on your phone when you do not have a data connection |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords on mobile sites — typing on a phone keyboard is slow |
+| Glasp | Highlight and save text from your phone for research on the go |
+| DarkFlow | Force dark mode on all mobile sites — reduces battery drain on OLED screens |
 
 ## Performance Tips for Extensions on Mobile
 

@@ -102,13 +102,13 @@ Not every site benefits from dark mode. Research from the [University of British
 | Extension | What It Does | Why It Pairs with Dark Mode |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page screenshots | Capture dark mode comparisons across different extensions |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups | Prevents bright pop-up ads from ruining your dark browsing experience |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops malicious redirect chains | Keeps you on legitimate sites without redirects that reset dark mode |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs | Complements DarkFlow's low memory profile |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | Read saved articles in dark mode without internet |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager | Auto-fill credentials on dark-themed login pages |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Web highlighter | Highlight text with dark-friendly color palettes |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Universal dark mode | The star — consistent dark themes everywhere at 15MB |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive pop-ups | Prevents bright pop-up ads from ruining your dark browsing experience |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stops malicious redirect chains | Keeps you on legitimate sites without redirects that reset dark mode |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs | Complements DarkFlow's low memory profile |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves web pages for offline reading | Read saved articles in dark mode without internet |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager | Auto-fill credentials on dark-themed login pages |
+| Glasp | Web highlighter | Highlight text with dark-friendly color palettes |
+| DarkFlow | Universal dark mode | The star — consistent dark themes everywhere at 15MB |
 
 Quick Screenshot Lite was invaluable during testing — I captured side-by-side screenshots of how each extension rendered the same page, making it easy to compare image inversion artifacts and text contrast quality across all 30 test sites.
 

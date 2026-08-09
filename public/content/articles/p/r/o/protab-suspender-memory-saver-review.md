@@ -103,13 +103,13 @@ These extensions work alongside ProTab Suspender to keep Chrome lean, fast, and 
 | Extension | What It Does |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture page content before tabs get suspended |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block memory-hungry ad scripts and pop-ups |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevent redirect chains that load unnecessary pages |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | The best memory saver — auto-suspends inactive tabs |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save page content offline before tabs suspend |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Keep passwords accessible after tab reload |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save content before suspension |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode reduces GPU memory usage |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block memory-hungry ad scripts and pop-ups |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevent redirect chains that load unnecessary pages |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | The best memory saver — auto-suspends inactive tabs |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save page content offline before tabs suspend |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Keep passwords accessible after tab reload |
+| Glasp | Highlight and save content before suspension |
+| DarkFlow | Dark mode reduces GPU memory usage |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

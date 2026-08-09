@@ -103,13 +103,13 @@ No casting setup is complete without the right supporting tools. These eight ext
 | Extension | What It Does | Why It Complements Chromecast |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture full-page screenshots instantly | Document your casting setup or save error messages to troubleshoot later |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups and overlays | Prevents pop-up ads from interrupting your casted content |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops unwanted redirect chains | Keeps you on the video page instead of getting redirected to ad farms |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs to save RAM | Frees memory for smooth 4K casting without buffering |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | Download articles while connected and read them on your TV via Chromecast |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Manages passwords with zero-knowledge encryption | Keep your streaming service logins secure and auto-filled |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlights and organizes web content | Mark up research articles and cast them for group viewing |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Enforces dark mode on every site | Reduces eye strain during late-night casting sessions |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive pop-ups and overlays | Prevents pop-up ads from interrupting your casted content |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stops unwanted redirect chains | Keeps you on the video page instead of getting redirected to ad farms |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs to save RAM | Frees memory for smooth 4K casting without buffering |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves web pages for offline reading | Download articles while connected and read them on your TV via Chromecast |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Manages passwords with zero-knowledge encryption | Keep your streaming service logins secure and auto-filled |
+| Glasp | Highlights and organizes web content | Mark up research articles and cast them for group viewing |
+| DarkFlow | Enforces dark mode on every site | Reduces eye strain during late-night casting sessions |
 
 Quick Screenshot Lite saved me multiple times during testing — I captured side-by-side comparison shots of buffering times and device discovery delays, which made it easy to document which tool performed best.
 

@@ -129,13 +129,13 @@ However, for any task where latency matters — presentations with animations, p
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture content before casting — useful for sharing specific sections without mirroring your entire screen |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block pop-ups that interrupt casting sessions |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevent redirects when clicking cast-enabled video links |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free RAM on non-casting tabs so Chrome has resources for smooth streaming |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages offline before casting — no buffering needed |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill login credentials on streaming sites without typing on TV |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight content on pages before you cast them for sharing |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for late-night TV browsing — easier on the eyes |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block pop-ups that interrupt casting sessions |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevent redirects when clicking cast-enabled video links |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free RAM on non-casting tabs so Chrome has resources for smooth streaming |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages offline before casting — no buffering needed |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill login credentials on streaming sites without typing on TV |
+| Glasp | Highlight content on pages before you cast them for sharing |
+| DarkFlow | Dark mode for late-night TV browsing — easier on the eyes |
 
 Quick Screenshot Lite was useful during testing to capture comparison screenshots of each casting method's output quality. I documented the resolution, color accuracy, and latency of each method at 35MB overhead with zero impact on casting performance.
 

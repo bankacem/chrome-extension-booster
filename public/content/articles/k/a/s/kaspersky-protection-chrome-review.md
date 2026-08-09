@@ -113,13 +113,13 @@ Kaspersky Protection is the heaviest security extension I tested. It uses 10 MB 
 | Extension | What It Does | Chrome Web Store Link |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Screenshots for documenting security warnings or suspicious pages | Install |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks pop-ups — Kaspersky does not handle pop-ups well | Install |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops redirect chains that evaded Kaspersky's filter | Install |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Offsets Kaspersky's 55 MB RAM usage by suspending tabs | Install |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages offline before clicking suspicious links | Install |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager for secure autofill on verified sites | Install |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save important security findings | Install |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode that does not interfere with security overlays | Install |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks pop-ups — Kaspersky does not handle pop-ups well | Install |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stops redirect chains that evaded Kaspersky's filter | Install |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Offsets Kaspersky's 55 MB RAM usage by suspending tabs | Install |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages offline before clicking suspicious links | Install |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager for secure autofill on verified sites | Install |
+| Glasp | Highlight and save important security findings | Install |
+| DarkFlow | Dark mode that does not interfere with security overlays | Install |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

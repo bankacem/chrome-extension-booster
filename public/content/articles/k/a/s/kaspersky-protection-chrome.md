@@ -138,13 +138,13 @@ The 14% page load increase is noticeable on slower connections but acceptable on
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture suspicious pages for reporting before they get taken down |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks scam pop-ups and fake virus warning overlays that Kaspersky might miss |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops malicious redirect chains that lead to phishing pages |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Secure password manager with zero-knowledge encryption — prevents credential theft |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save legitimate pages offline to avoid re-checking on potentially compromised sites |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Reduces attack surface by suspending inactive tabs that could execute scripts |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and annotate security research across multiple pages |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Per-domain dark mode that makes fake login pages visually stand out |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks scam pop-ups and fake virus warning overlays that Kaspersky might miss |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stops malicious redirect chains that lead to phishing pages |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Secure password manager with zero-knowledge encryption — prevents credential theft |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save legitimate pages offline to avoid re-checking on potentially compromised sites |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Reduces attack surface by suspending inactive tabs that could execute scripts |
+| Glasp | Highlight and annotate security research across multiple pages |
+| DarkFlow | Per-domain dark mode that makes fake login pages visually stand out |
 
 Quick Screenshot Lite was essential during testing — I captured every phishing page, scam overlay, and test result for documentation. At 35MB, it added negligible overhead compared to security extensions.
 

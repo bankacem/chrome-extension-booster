@@ -142,13 +142,13 @@ Yandex Browser sends usage data to Yandex servers, including search queries and 
 | Extension | Why on Mobile |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Android's screenshot cannot scroll — Quick Screenshot Lite captures full mobile pages |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Mobile pop-ups are more aggressive — block them all |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stop redirect chains common on mobile ad networks |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Save RAM on phones with limited memory |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages to read offline without using mobile data |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords on mobile without Android's clunky framework |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and organize content while browsing on mobile |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Force dark mode on sites Kiwi's built-in dark mode misses |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Mobile pop-ups are more aggressive — block them all |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stop redirect chains common on mobile ad networks |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Save RAM on phones with limited memory |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages to read offline without using mobile data |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords on mobile without Android's clunky framework |
+| Glasp | Highlight and organize content while browsing on mobile |
+| DarkFlow | Force dark mode on sites Kiwi's built-in dark mode misses |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

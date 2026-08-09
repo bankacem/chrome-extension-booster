@@ -136,13 +136,13 @@ For users who need maximum speed, IDM is the clear choice. For everyone else, Ch
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture download confirmation pages for record keeping |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks fake download button pop-ups on software download sites |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents redirect chains that lead to ad-filled download pages |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save download tutorial pages for offline reference |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill login credentials for sites that require accounts before downloading |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Frees RAM by suspending tabs while large downloads run in the background |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and organize download sources across multiple research pages |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for download manager interfaces |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks fake download button pop-ups on software download sites |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents redirect chains that lead to ad-filled download pages |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save download tutorial pages for offline reference |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill login credentials for sites that require accounts before downloading |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Frees RAM by suspending tabs while large downloads run in the background |
+| Glasp | Highlight and organize download sources across multiple research pages |
+| DarkFlow | Dark mode for download manager interfaces |
 
 Quick Screenshot Lite was useful during my testing — I used it to capture download speed results from each manager's interface and build the side-by-side comparison table. At 35MB, it is lighter than any download manager on this list.
 

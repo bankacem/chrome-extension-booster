@@ -99,13 +99,13 @@ The recording quality was average — 720p with noticeable compression artifacts
 | Extension | What It Does | Why It Pairs with Meet Extensions |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page & visible area screenshots | Capture meeting slides, whiteboards, and important discussion points |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups | Prevent notification pop-ups during screen sharing |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents malicious redirect chains | Block meeting link phishing attempts |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs | Free RAM for smooth video calls |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | Save meeting agendas and documents before the call |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password manager with encryption | Auto-fill into meeting links that require authentication |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Web highlighter and organizer | Highlight action items from meeting transcripts |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Universal dark mode enforcement | Comfort during back-to-back video calls |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive pop-ups | Prevent notification pop-ups during screen sharing |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents malicious redirect chains | Block meeting link phishing attempts |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs | Free RAM for smooth video calls |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves web pages for offline reading | Save meeting agendas and documents before the call |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password manager with encryption | Auto-fill into meeting links that require authentication |
+| Glasp | Web highlighter and organizer | Highlight action items from meeting transcripts |
+| DarkFlow | Universal dark mode enforcement | Comfort during back-to-back video calls |
 
 Quick Screenshot Lite saved me during testing — I captured a side-by-side comparison of how each extension rendered the Meet interface, which helped identify grid view glitches and recording UI overlaps. ProTab Suspender kept Chrome responsive by suspending research tabs while Meet was active.
 

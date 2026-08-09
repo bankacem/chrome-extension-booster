@@ -124,13 +124,13 @@ Removing 7 unused extensions saved 26% of memory — significant but not enough 
 | Extension | What It Does |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture page content before closing or suspending tabs |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block memory-hungry ad scripts that load on every page |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevent redirect chains that spawn unnecessary new tabs |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | The #1 fix — auto-suspends inactive tabs to free RAM |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save tabs as offline pages before closing or suspending |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Keep passwords accessible when clearing session data |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Save highlights and notes before closing tabs |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode reduces GPU processing overhead |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block memory-hungry ad scripts that load on every page |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevent redirect chains that spawn unnecessary new tabs |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | The #1 fix — auto-suspends inactive tabs to free RAM |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save tabs as offline pages before closing or suspending |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Keep passwords accessible when clearing session data |
+| Glasp | Save highlights and notes before closing tabs |
+| DarkFlow | Dark mode reduces GPU processing overhead |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

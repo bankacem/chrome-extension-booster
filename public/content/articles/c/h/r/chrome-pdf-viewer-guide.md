@@ -128,13 +128,13 @@ The core issue: no third-party extension matches the speed, security, or resourc
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture PDF pages as images when export to image formats is needed |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block PDF-embedded pop-ups in forms |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Block redirects when clicking PDF links on download sites |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free up RAM when large PDFs are left open in background tabs |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save PDF links for offline access |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Store passwords for PDF-protected documents |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save text from PDF views for research notes |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable PDF reading sessions |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block PDF-embedded pop-ups in forms |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Block redirects when clicking PDF links on download sites |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Free up RAM when large PDFs are left open in background tabs |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save PDF links for offline access |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Store passwords for PDF-protected documents |
+| Glasp | Highlight and save text from PDF views for research notes |
+| DarkFlow | Dark mode for comfortable PDF reading sessions |
 
 Quick Screenshot Lite was useful during testing when I needed to extract a PDF page as an image for documentation — Chrome's viewer cannot export pages to image formats, so I captured them as screenshots instead. At 35MB, it is lighter than most annotation tools and serves as a practical workaround for Chrome's missing export feature.
 

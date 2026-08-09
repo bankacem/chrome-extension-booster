@@ -118,14 +118,14 @@ SessionBox is the only extension with cloud sync and collaboration features. You
 
 | Extension | Why You Need It |
 |---|---|
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Use alongside session managers for granular tab suspension control — suspend individual tabs without saving a full session |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Use alongside session managers for granular tab suspension control — suspend individual tabs without saving a full session |
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture session layouts and tab group configurations for documentation |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block pop-ups that appear when restoring sessions containing ad-heavy or news sites |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevent redirect chains from opening extra unwanted tabs during session restore |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save key pages as PDF before closing sessions — you can read them offline without restoring the full session |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill logins when restoring sessions with authenticated sites — saves re-entering credentials |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight notes and text across session tabs for research workflows that span multiple pages |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Consistent dark mode across all sessions — prevents eye strain when restoring 30 tabs at once at night |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Block pop-ups that appear when restoring sessions containing ad-heavy or news sites |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevent redirect chains from opening extra unwanted tabs during session restore |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save key pages as PDF before closing sessions — you can read them offline without restoring the full session |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill logins when restoring sessions with authenticated sites — saves re-entering credentials |
+| Glasp | Highlight notes and text across session tabs for research workflows that span multiple pages |
+| DarkFlow | Consistent dark mode across all sessions — prevents eye strain when restoring 30 tabs at once at night |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">
@@ -171,4 +171,4 @@ A: OneTab handles 100+ tabs best because it serializes all tabs into a single li
 
 **Better OneTab** is a minor improvement over OneTab. The search bar and selective restore are nice, but the core limitations remain.
 
-[Install ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) alongside your session manager for granular tab suspension control.
+[Install ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) alongside your session manager for granular tab suspension control.

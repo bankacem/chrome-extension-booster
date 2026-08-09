@@ -87,13 +87,13 @@ If you need PDF export with searchable text, FireShot is your best free option. 
 | Extension | Why You Need It |
 |-----------|-----------------|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Faster captures with built-in annotation — use this for daily screenshot work |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks pop-ups that interfere with clean captures on ad-heavy sites |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents redirects from interrupting your capture workflow |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Keeps Chrome responsive while editing large full-page captures |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages offline before capturing to avoid dynamic content shifts |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords if you need to log into sites before capturing |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight text alongside screenshots for richer documentation |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Per-domain contrast for consistent screenshot appearance across light and dark sites |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks pop-ups that interfere with clean captures on ad-heavy sites |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents redirects from interrupting your capture workflow |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Keeps Chrome responsive while editing large full-page captures |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages offline before capturing to avoid dynamic content shifts |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords if you need to log into sites before capturing |
+| Glasp | Highlight text alongside screenshots for richer documentation |
+| DarkFlow | Per-domain contrast for consistent screenshot appearance across light and dark sites |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

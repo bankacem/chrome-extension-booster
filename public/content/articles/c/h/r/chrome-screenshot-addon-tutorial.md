@@ -133,13 +133,13 @@ The lack of visible-area capture is the biggest gap. If I need to screenshot som
 | Extension | How It Complements This Tutorial |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Your primary capture tool — 0.4s visible, 2.3s full-page, 35MB, 2 permissions |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks sign-up popups so they do not appear in your screenshots |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Keeps you on the intended page during capture — no unwanted redirects |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Frees RAM from background tabs so full-page capture renders smoothly |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save pages as PDF — a searchable alternative to screenshot images |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords before capturing screenshots of logged-in pages |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save text alongside screenshots for searchable documentation |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Switch to light mode before capturing — screenshots look consistent in light-mode documents |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks sign-up popups so they do not appear in your screenshots |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Keeps you on the intended page during capture — no unwanted redirects |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Frees RAM from background tabs so full-page capture renders smoothly |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save pages as PDF — a searchable alternative to screenshot images |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords before capturing screenshots of logged-in pages |
+| Glasp | Highlight and save text alongside screenshots for searchable documentation |
+| DarkFlow | Switch to light mode before capturing — screenshots look consistent in light-mode documents |
 
 
 <div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">

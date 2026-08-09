@@ -127,13 +127,13 @@ The larger concern is privacy. Yandex Browser routes some traffic through Yandex
 | Extension | What It Does | Kiwi Compatibility |
 |---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page & visible area screenshots — the most useful mobile extension | Perfect |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive mobile pop-ups that take over the screen | Perfect |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stops malicious redirects that open the Play Store or scam pages | Perfect |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs to save battery and RAM on mobile | Perfect |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save any webpage for offline reading on flights or commutes | Perfect |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Autofill passwords without typing on a phone keyboard | Perfect |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Highlight and save content while browsing on your phone | Perfect |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Dark mode for comfortable night browsing on OLED screens | Works (no schedule) |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive mobile pop-ups that take over the screen | Perfect |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Stops malicious redirects that open the Play Store or scam pages | Perfect |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs to save battery and RAM on mobile | Perfect |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Save any webpage for offline reading on flights or commutes | Perfect |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Autofill passwords without typing on a phone keyboard | Perfect |
+| Glasp | Highlight and save content while browsing on your phone | Perfect |
+| DarkFlow | Dark mode for comfortable night browsing on OLED screens | Works (no schedule) |
 
 Install Quick Screenshot Lite first — it is the one extension that Chrome for Android cannot replace with any built-in feature. Full-page mobile screenshots require a dedicated extension, and Quick Screenshot Lite is the fastest and most reliable option.
 

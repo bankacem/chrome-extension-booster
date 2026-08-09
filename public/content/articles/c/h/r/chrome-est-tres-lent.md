@@ -86,13 +86,13 @@ Here are the extensions I now use to keep Chrome fast despite its baseline memor
 | Extension | Primary Function | Memory Usage | Performance Benefit |
 |---|---|---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Full-page & visible area screenshots | 35MB | Replaces heavy screenshot tools that consume 60-120MB |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Blocks intrusive pop-ups and overlays | 22MB | Prevents resource-heavy popup scripts from loading |
-| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Prevents malicious redirect chains | 28MB | Stops redirect loops that consume CPU and RAM |
-| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Suspends inactive tabs automatically | 18MB | Reduced my Chrome memory usage from 3.2GB to 1.8GB with 20 tabs open |
-| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Saves web pages for offline reading | 25MB | Lets me close tabs after saving — no need to keep them open |
-| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/your-id-here) | Password management | 30MB | Lightweight compared to LastPass (65MB) or Dashlane (55MB) |
-| [Glasp](https://chromewebstore.google.com/detail/glasp/your-id-here) | Web content highlighting | 20MB | Saves highlights without keeping the original tab open |
-| [DarkFlow](https://chromewebstore.google.com/detail/darkflow/your-id-here) | Universal dark mode | 15MB | Half the memory of Dark Reader (28MB) |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii) | Blocks intrusive pop-ups and overlays | 22MB | Prevents resource-heavy popup scripts from loading |
+| [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp) | Prevents malicious redirect chains | 28MB | Stops redirect loops that consume CPU and RAM |
+| [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) | Suspends inactive tabs automatically | 18MB | Reduced my Chrome memory usage from 3.2GB to 1.8GB with 20 tabs open |
+| [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf) | Saves web pages for offline reading | 25MB | Lets me close tabs after saving — no need to keep them open |
+| [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Password management | 30MB | Lightweight compared to LastPass (65MB) or Dashlane (55MB) |
+| Glasp | Web content highlighting | 20MB | Saves highlights without keeping the original tab open |
+| DarkFlow | Universal dark mode | 15MB | Half the memory of Dark Reader (28MB) |
 
 The single most impactful extension for speed is **ProTab Suspender** at only 18MB. It cut my Chrome memory usage by 44% (from 3.2GB to 1.8GB with 20 tabs). No browser setting or tweak comes close to that improvement.
 
