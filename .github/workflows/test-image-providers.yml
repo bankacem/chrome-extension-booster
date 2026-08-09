@@ -1,0 +1,39 @@
+name: Test Image Generation Providers
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test-image-providers:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run image provider discovery
+        env:
+          AGENTROUTER_KEY: ${{ secrets.AGENTROUTER_KEY || secrets.AGENTROUTER }}
+          BLUESMINDS_KEY: ${{ secrets.BLUESMINDS_KEY || secrets.BLUESMINDS }}
+        run: |
+          python3 seo_agent_pro/test_image_providers.py > /tmp/results.log 2>&1 || true
+
+      - name: Post results as an issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "## Image generation provider test results"
+            echo '```'
+            cat /tmp/results.log
+            echo '```'
+          } > /tmp/results.md
+          gh issue create \
+            --title "Image provider test results ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
+            --body-file /tmp/results.md \
+            --repo ${{ github.repository }}
