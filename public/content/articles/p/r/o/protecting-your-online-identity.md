@@ -12,7 +12,7 @@ category: Appearance & Themes
 tags: []
 keywords:
   - chrome extension for blocking trackers
-meta_description: "A practical breakdown of online identity: how it works, how to set it up, and where it falls short."
+meta_description: "As we spend more time online, protecting our identity from prying eyes matters more than ever. Here's the best Chrome extension for blocking trackers."
 status: published
 published_at: '2026-04-11T18:15:00.498+00:00'
 scheduled_at: '2026-04-11T18:15:00+00:00'

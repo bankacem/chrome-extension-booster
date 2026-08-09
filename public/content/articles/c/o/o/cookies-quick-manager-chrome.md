@@ -19,7 +19,7 @@ keywords:
   - cookie quick manager chrome review
   - cookie auto delete extension
   - chrome cookie cleaner
-meta_description: "Best cookie manager for Chrome tested: I compared 4 cookie extensions across 30 sites...."
+meta_description: "We tested 4 cookie manager extensions on Chrome across 30 sites for 2 weeks. Here's the real data on memory usage, features, and privacy protection."
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'

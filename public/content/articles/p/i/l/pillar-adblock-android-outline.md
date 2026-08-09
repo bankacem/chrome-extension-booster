@@ -6,9 +6,7 @@ published_at: '2026-07-31'
 featured_image: /content/images/pillar-adblock-android-outline.jpg
 image_url: /content/images/pillar-adblock-android-outline.jpg
 title: 'Pillar Page Strategy: AdBlock for Chrome Android'
-meta_description: >-
-  Core Objective: Establish ExtensionTo as the 1 authority for mobile
-  ad-blocking solutions.
+meta_description: "Ads can slow down browsing and drain your data on Android. Here's how to block them on Chrome for Android with the right adblock extension."
 description: >-
   Core Objective: Establish ExtensionTo as the 1 authority for mobile
   ad-blocking solutions.

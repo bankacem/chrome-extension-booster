@@ -14,7 +14,7 @@ tags:
     Browsing
 keywords:
   - Protecting your browser from URL hijacking
-meta_description: "A practical breakdown of browser from url hijacking: how it works, how to set it up, and where it falls short."
+meta_description: "Our browsers are constantly at risk of malicious attacks, including URL hijacking. Here's a complete guide to protecting yours and browsing securely."
 status: published
 published_at: '2026-03-10T08:11:00.58+00:00'
 scheduled_at: '2026-03-10T08:11:00+00:00'

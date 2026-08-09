@@ -6,11 +6,11 @@ slug: "protecting-your-online-privacy"
 excerpt: "As we navigate the vast expanse of the internet, it's easy to overlook the numerous trackers that follow our every move."
 featured_image: >-
   /content/images/protecting-your-online-privacy-the-best-chrome-extension-to-detect-trackers-mmdzl1lbwjy/featured.webp
-category: Redirect & Navigation
+category: "Security & Privacy"
 tags: []
 keywords:
   - chrome extension to detect trackers
-meta_description: "A hands-on look at online privacy, covering setup, real features, and what to expect before installing it."
+meta_description: "As we browse the internet, it's easy to overlook the trackers following our every move. Here's the best Chrome extension for detecting and blocking them."
 status: published
 published_at: '2026-04-13T06:15:00.405+00:00'
 scheduled_at: '2026-04-13T06:15:00+00:00'

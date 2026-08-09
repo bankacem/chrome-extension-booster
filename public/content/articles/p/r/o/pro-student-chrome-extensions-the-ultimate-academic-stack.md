@@ -17,7 +17,7 @@ keywords:
   - browser extensions
   - premium tools
   - productivity
-meta_description: "An academic-focused Chrome extension stack covering citations, research, and distraction management for students."
+meta_description: "Discover a curated, high-performance directory of Chrome extensions built for students, covering note-taking, research, writing, and staying organized."
 status: published
 published_at: '2026-01-27T12:57:39.769+00:00'
 scheduled_at: null
