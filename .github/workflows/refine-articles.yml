@@ -1,0 +1,116 @@
+name: Refine Existing Articles
+
+# Reviews a small batch of ALREADY-PUBLISHED articles per run and fixes
+# concrete, well-understood issues (missing/malformed meta_description,
+# leftover placeholder links/images, empty category, etc. — see
+# agentic/agents/refine.py for the exact deterministic checks reused from
+# the generation pipeline's own Evaluator agent).
+#
+# Deliberately conservative:
+#   - Never rewrites a whole article body, only specific detected issues.
+#   - Opens a PR for human review every run - does NOT auto-merge, unlike
+#     some of the lower-risk workflows elsewhere in this project. A wrong
+#     automated edit to a live page is worse than a wrong edit to a draft
+#     that was never public yet, so this gets an explicit review step.
+#
+# First run should be triggered manually (workflow_dispatch) to sanity
+# check the PR it produces before trusting the schedule.
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # Once/day at 03:00 UTC - batch of 20 ≈ full
+                            # ~750-article backlog covered in about 5-6 weeks,
+                            # then it's just maintenance on new articles.
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: 'How many articles to review this run'
+        required: false
+        default: '20'
+
+jobs:
+  refine-articles:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install -r seo_agent_pro/requirements.txt
+
+      - name: Setup Bun (for index/sitemap regeneration)
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install JS dependencies
+        run: bun install
+
+      - name: Run refine batch
+        id: refine
+        env:
+          BLUESMINDS_KEY:  ${{ secrets.BLUESMINDS_KEY || secrets.BLUESMINDS }}
+          AGENTROUTER_KEY: ${{ secrets.AGENTROUTER_KEY || secrets.AGENTROUTER }}
+          GROQ_KEY:        ${{ secrets.GROQ_KEY || secrets.GROQ }}
+          OPENROUTER_KEY:  ${{ secrets.OPENROUTER_KEY || secrets.OPENROUTER }}
+        run: |
+          set -o pipefail
+          python3 seo_agent_pro/refine_articles.py \
+            --batch "${{ github.event.inputs.batch_size || '20' }}" \
+            2>&1 | tee /tmp/refine_output.log
+
+      - name: Rebuild index + sitemap if anything changed
+        if: steps.refine.outputs.has_changes == 'true'
+        run: |
+          bun run scripts/sync-articles.ts
+          bun run scripts/generate-sitemap.ts
+
+      - name: Open PR with this batch's fixes
+        if: steps.refine.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "refine-agent[bot]"
+          git config user.email "refine-agent@users.noreply.github.com"
+
+          BRANCH="refine/batch-$(date -u +%Y-%m-%d-%H%M)"
+          git checkout -b "$BRANCH"
+          git add public/content/articles/ public/content/articles-index.json public/sitemap.xml seo_agent_pro/refine_state.json
+          git commit -m "fix: refine agent batch - ${{ steps.refine.outputs.fixed_count }} article(s) fixed"
+          git push origin "$BRANCH"
+
+          cat > /tmp/pr_body.md << PRBODY
+          Automated batch from the Refine Agent (\`seo_agent_pro/refine_articles.py\`).
+
+          - **Fixed:** ${{ steps.refine.outputs.fixed_count }}
+          - **Already clean:** ${{ steps.refine.outputs.clean_count }}
+          - **Flagged for human review (model couldn't produce a confident fix):** ${{ steps.refine.outputs.unfixed_count }}
+
+          Every change here is a targeted fix for one specific detected issue
+          (see the run log below) - never a full rewrite of an article body.
+          Please review before merging.
+
+          <details><summary>Full run log</summary>
+
+          \`\`\`
+          $(cat /tmp/refine_output.log | tail -200)
+          \`\`\`
+          </details>
+          PRBODY
+
+          gh pr create \
+            --title "fix: refine agent batch ($(date -u +%Y-%m-%d))" \
+            --body-file /tmp/pr_body.md \
+            --base main \
+            --head "$BRANCH"
