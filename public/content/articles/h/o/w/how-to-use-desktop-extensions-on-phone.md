@@ -10,7 +10,7 @@ category: Chrome Extensions
 tags: []
 keywords:
   - use desktop extensions on phone
-meta_description: "Are you tired of being limited to using your favorite desktop extensions only on your computer?"
+meta_description: "Tired of being limited to using your favorite desktop extensions only on your computer? Here's a step-by-step guide to using them on your phone too."
 status: published
 published_at: '2026-03-21T13:00:00.855+00:00'
 scheduled_at: '2026-03-21T13:00:00+00:00'

@@ -10,7 +10,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - how to install chrome extensions manually
-meta_description: "Are you tired of being limited by the Chrome Web Store's restrictions on installing extensions?"
+meta_description: "Tired of being limited by the Chrome Web Store's restrictions on installing extensions? Here's a step-by-step guide to installing extensions manually instead."
 status: published
 published_at: '2026-04-22T22:15:00.739+00:00'
 scheduled_at: '2026-04-22T22:15:00+00:00'

@@ -11,7 +11,7 @@ tags:
   - 'How to Block Pop-Under Ads and Redirects: A Comprehensive Guide'
 keywords:
   - 'How to Block Pop-Under Ads and Redirects: A Comprehensive Guide'
-meta_description: "Are you tired of being bombarded with annoying pop-under ads and redirects while browsing the internet?"
+meta_description: "Tired of being bombarded with annoying pop-under ads and redirects while browsing? Here's a complete guide to blocking both for good in Chrome."
 status: published
 published_at: '2026-03-09T20:11:01.393+00:00'
 scheduled_at: '2026-03-09T20:11:00+00:00'

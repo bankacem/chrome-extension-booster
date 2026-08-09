@@ -12,7 +12,7 @@ category: "Media & Downloads"
 tags: []
 keywords:
   - idm extension to chrome
-meta_description: "Are you tired of slow download speeds and disorganized file management in your Chrome browser?"
+meta_description: "Tired of slow download speeds and disorganized files in Chrome? Here's how to install and use the IDM extension for faster, better-organized downloads."
 status: published
 published_at: '2026-02-17T08:11:00.338+00:00'
 scheduled_at: '2026-02-17T08:11:00+00:00'

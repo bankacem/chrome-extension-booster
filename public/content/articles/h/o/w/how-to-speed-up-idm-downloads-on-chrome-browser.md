@@ -10,7 +10,7 @@ category: "Performance & Memory"
 tags: []
 keywords:
   - How to speed up IDM downloads on Chrome browser
-meta_description: "Are you tired of slow downloads on your Chrome browser, especially when using Internet Download Manager (IDM)?"
+meta_description: "Tired of slow downloads in Chrome, especially when using Internet Download Manager? Here's how to speed up IDM downloads with a few configuration changes."
 status: published
 published_at: '2026-03-12T05:00:00.518+00:00'
 scheduled_at: '2026-03-12T05:00:00+00:00'

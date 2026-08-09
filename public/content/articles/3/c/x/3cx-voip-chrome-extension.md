@@ -131,7 +131,7 @@ At 45 MB during calls, the 3CX extension is lighter than the RingCentral desktop
 | Extension | Why You Need It |
 |---|---|
 | [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) | Capture call logs and CRM screenshots for documentation |
-| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/your-id-here) | Block browser pop-ups during screen sharing sessions |
+| [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) | Block browser pop-ups during screen sharing sessions |
 | [Redirect Shield](https://chromewebstore.google.com/detail/redirect-shield/your-id-here) | Stay on web pages while clicking phone numbers |
 | [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/your-id-here) | Free up RAM while 3CX runs in background during calls |
 | [Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/your-id-here) | Save call scripts and FAQs for offline reference |

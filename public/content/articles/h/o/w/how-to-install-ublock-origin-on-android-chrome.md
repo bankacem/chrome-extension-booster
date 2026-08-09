@@ -10,7 +10,7 @@ category: "Ad Blockers"
 tags: []
 keywords:
   - install ublock origin on android chrome
-meta_description: "Are you tired of annoying ads and trackers disrupting your browsing experience on Android Chrome?"
+meta_description: "Tired of annoying ads and trackers disrupting your browsing on Android Chrome? Here's a step-by-step guide to installing uBlock Origin on Android."
 status: published
 published_at: '2026-03-20T13:00:00.247+00:00'
 scheduled_at: '2026-03-20T13:00:00+00:00'

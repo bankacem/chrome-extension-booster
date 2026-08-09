@@ -16,7 +16,7 @@ keywords:
   - GitHub
   - StackOverflow
   - etc)
-meta_description: "Are you tired of the bright, eye-straining interfaces of your favorite websites and apps?"
+meta_description: "Tired of the bright, eye-straining interfaces of your favorite sites and apps? Here's how to enable dark mode on Pinterest, Instagram, Netflix, and more."
 status: published
 published_at: '2026-02-25T14:11:01.611+00:00'
 scheduled_at: '2026-02-25T14:11:00+00:00'
