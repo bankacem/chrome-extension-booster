@@ -106,8 +106,8 @@ I use Formula Builder Pro to calculate video bitrates, file sizes, and storage n
 ### 7. Glasp
 Glasp lets me highlight and save notes on video tutorial pages. When I download a tutorial via ClipConverter, I use Glasp to keep timestamped notes that sync across devices. [Get Glasp](https://chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf).
 
-### 8. The Great Suspender (Alternative)
-ClipConverter doesn't suspend background processes, so I use a lightweight suspender to keep Chrome from slowing down when I have multiple video pages open for batch downloading. [Install The Great Suspender](https://chromewebstore.google.com/detail/the-great-suspender/ahmkjjndojeleookoneeigfjmkblpkk).
+### 8. ProTab Suspender (Alternative)
+ClipConverter doesn't suspend background processes, so I use a lightweight suspender to keep Chrome from slowing down when I have multiple video pages open for batch downloading. [Get ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj).
 
 ## How to Install and Use ClipConverter
 

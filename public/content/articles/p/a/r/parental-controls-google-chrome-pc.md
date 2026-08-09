@@ -147,8 +147,8 @@ Use Formula Builder Pro to calculate screen time schedules and set up time-based
 ### 7. Glasp
 Glasp lets you highlight and share articles about online safety with your child. Save important safety guidelines and revisit them later. [Get Glasp](https://chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf).
 
-### 8. The Great Suspender
-Children often leave many tabs open. The Great Suspender automatically suspends inactive tabs, keeping Chrome fast. [Install The Great Suspender](https://chromewebstore.google.com/detail/the-great-suspender/ahmkjjndojeleookoneeigfjmkblpkk).
+### 8. ProTab Suspender
+Children often leave many tabs open. ProTab Suspender automatically suspends inactive tabs, keeping Chrome fast. [Get ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj).
 
 ## How to Lock Extension Settings So Kids Can't Disable Them
 

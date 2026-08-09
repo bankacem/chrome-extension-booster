@@ -90,7 +90,7 @@ description: "As we increasingly rely on our laptops for work, entertainment, an
 <p>There are numerous <strong>Chrome battery saver extensions</strong> available, each with its unique features and benefits. Some of the top extensions include:</p>
 
 <ul>
-  <li><a href="https://chromewebstore.google.com/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg" target="_blank">The Great Suspender</a></li>
+  <li>The Great Suspender (⚠️ was pulled from the Chrome Web Store in 2021 after being sold to a party that added adware — only use the verified open-source fork, if at all)</li>
   <li><a href="https://chromewebstore.google.com/detail/auto-tab-discard/jihpiflfabmmcdgknpcpkeehpmmkjihp" target="_blank">Auto Tab Discard</a></li>
   <li><a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a></li>
 </ul>
@@ -143,7 +143,7 @@ description: "As we increasingly rely on our laptops for work, entertainment, an
       <td>Free</td>
     </tr>
     <tr>
-      <td><a href="https://chromewebstore.google.com/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg" target="_blank">The Great Suspender</a></td>
+      <td>The Great Suspender (⚠️ discontinued — 2021 adware incident, use the open-source fork only)</td>
       <td>Suspend tabs, reduce memory usage</td>
       <td>Free</td>
     </tr>

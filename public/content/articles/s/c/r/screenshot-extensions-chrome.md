@@ -123,7 +123,6 @@ Quick Screenshot Lite, FireShot, GoFullPage, and Screen Capture keep everything 
 | [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/amnmcjmoihjkpmjeighmjddfonmgoil) | Autofill login for sites before capturing authenticated content |
 | [Glasp](https://chromewebstore.google.com/detail/glasp/igilnjniiicbbiohbmjmacnmkjpdfbf) | Highlight and save text alongside screenshots for richer documentation |
 | [DarkFlow](https://chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) | Consistent contrast across light and dark sites for clean captures |
-| [The Great Suspender](https://chromewebstore.google.com/detail/the-great-suspender/ahmkjjndojeleookoneeigfjmkblpkk) | Suspend resource-heavy pages while you edit captures in another tab |
 
 ## FAQ
 
