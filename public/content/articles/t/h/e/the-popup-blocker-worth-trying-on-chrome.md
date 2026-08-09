@@ -10,7 +10,7 @@ category: "Ad Blockers"
 tags: []
 keywords:
   - best popup blocker chrome extension
-meta_description: "A step-by-step walkthrough of the popup blocker worth trying on chrome, from installation to everyday use in Chrome."
+meta_description: "Tired of annoying popups and intrusive ads ruining your browsing? Here's the popup blocker for Chrome worth trying, and how it compares to the rest."
 status: published
 published_at: '2026-04-13T02:15:00.57+00:00'
 scheduled_at: '2026-04-13T02:15:00+00:00'

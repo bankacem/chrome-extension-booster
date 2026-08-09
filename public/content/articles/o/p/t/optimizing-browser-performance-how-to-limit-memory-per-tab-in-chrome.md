@@ -10,7 +10,7 @@ category: "Productivity & Tools"
 tags: []
 keywords:
   - limit memory per tab chrome
-meta_description: "How to limit memory usage per tab in Chrome, with practical steps to keep the browser from bogging down."
+meta_description: "Tired of Chrome eating up memory and slowing your browsing down? Here's how to limit memory per tab in Chrome and keep it running fast under heavy use."
 status: published
 published_at: '2026-04-01T08:00:00.411+00:00'
 scheduled_at: '2026-04-01T08:00:00+00:00'

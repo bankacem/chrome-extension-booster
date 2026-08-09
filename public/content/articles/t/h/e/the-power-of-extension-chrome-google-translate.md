@@ -9,7 +9,7 @@ category: "Productivity & Tools"
 tags: []
 keywords:
   - extension chrome google translate
-meta_description: "In today's interconnected world, language barriers can be a significant obstacle to communication and productivity."
+meta_description: "Language barriers can slow down communication and productivity online. Here's how the Google Translate extension for Chrome translates pages in real time."
 status: published
 published_at: '2026-05-03T18:15:00.734+00:00'
 scheduled_at: '2026-05-03T18:15:00+00:00'

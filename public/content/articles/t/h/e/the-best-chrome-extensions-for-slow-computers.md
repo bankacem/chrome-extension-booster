@@ -11,7 +11,7 @@ category: "Performance & Memory"
 tags: []
 keywords:
   - chrome extensions for slow computers
-meta_description: "Are you tired of using a slow computer that struggles to keep up with your browsing habits? You're not alone."
+meta_description: "Struggling with a slow computer that can't keep up with your browsing habits? Here are the Chrome extensions that actually lighten the load, not add to it."
 status: published
 published_at: '2026-04-24T06:15:00.321+00:00'
 scheduled_at: '2026-04-24T06:15:00+00:00'
