@@ -18,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write
 
     steps:
       - name: Checkout repository
@@ -43,6 +44,8 @@ jobs:
 
       - name: Post debug output if generation failed or produced nothing
         if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           echo "## Image generation output for slug: ${{ github.event.inputs.slug }}" >> "$GITHUB_STEP_SUMMARY"
           echo '```' >> "$GITHUB_STEP_SUMMARY"
@@ -51,7 +54,16 @@ jobs:
           if grep -q "^DONE:" /tmp/image_gen_output.log; then
             echo "✅ Image generated successfully." >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "⚠️ No image was generated — see output above for why (missing/invalid GEMINI_KEY, API error, etc.)." >> "$GITHUB_STEP_SUMMARY"
+            echo "⚠️ No image was generated — see output above for why." >> "$GITHUB_STEP_SUMMARY"
+            {
+              echo "Full output:"
+              echo '```'
+              cat /tmp/image_gen_output.log
+              echo '```'
+            } > /tmp/issue_body.txt
+            gh issue create \
+              --title "Image generation for '${{ github.event.inputs.slug }}' produced no image" \
+              --body-file /tmp/issue_body.txt || echo "gh issue create also failed — see step summary above instead"
           fi
 
       - name: Rebuild sitemap/index (image path changed)
@@ -67,8 +79,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet; then
-            echo "No changes to commit (image generation likely no-op'd — see log/issue)."
+          if ! grep -q "^DONE:" /tmp/image_gen_output.log; then
+            echo "No image was generated (see log/issue) — not committing the incidental sync-articles reformat."
+            git checkout -- public/content/articles-index.json 2>/dev/null || true
             exit 0
           fi
           git add public/content/images/ public/content/articles/ public/content/articles-index.json
