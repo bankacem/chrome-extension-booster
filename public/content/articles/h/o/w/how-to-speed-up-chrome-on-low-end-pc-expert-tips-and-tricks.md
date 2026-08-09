@@ -10,7 +10,7 @@ category: "Productivity & Tools"
 tags: []
 keywords:
   - how to speed up chrome on low end pc
-meta_description: "Are you tired of using a slow and sluggish Google Chrome browser on your low-end PC?"
+meta_description: "Tired of using a slow, sluggish Chrome browser on your low-end PC? Here are expert tips and tricks to speed it up without buying new hardware."
 status: published
 published_at: '2026-04-03T08:00:00.283+00:00'
 scheduled_at: '2026-04-03T08:00:00+00:00'

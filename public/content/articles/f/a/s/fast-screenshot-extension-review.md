@@ -17,7 +17,7 @@ tags:
     Screenshot Lite
 keywords:
   - Fast Screenshot Extension Review
-meta_description: "A practical breakdown of fast screenshot extension review: how it works, how to set it up, and where it falls short."
+meta_description: "When it comes to capturing screenshots, speed and accuracy matter. Here's a hands-on review of Quick Screenshot Lite and how it holds up in daily use."
 status: published
 published_at: '2026-02-01T08:00:00.598+00:00'
 scheduled_at: '2026-02-01T08:00:00+00:00'

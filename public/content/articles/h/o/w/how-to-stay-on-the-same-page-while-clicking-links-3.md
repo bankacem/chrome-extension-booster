@@ -11,7 +11,7 @@ tags:
   - 'How to Stay on the Same Page While Clicking Links: A Comprehensive Guide'
 keywords:
   - How to stay on the same page while clicking links
-meta_description: "When browsing the internet, it can be frustrating to click on a link only to be taken away from the current page."
+meta_description: "Tired of clicking a link only to be taken away from the page you're reading? Here's how to open links in new tabs and stay on the same page in Chrome."
 status: published
 published_at: '2026-03-10T14:11:00.643+00:00'
 scheduled_at: '2026-03-10T14:11:00+00:00'
