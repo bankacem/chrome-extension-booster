@@ -117,6 +117,20 @@ def run(state: dict) -> dict:
             phrase_candidates.append(" ".join(words[:3]))
             phrase_candidates.append(" ".join(words[:2]))
 
+        # Generic 2-3 word leading phrases like "How to" or "Best Chrome"
+        # appear constantly in ordinary prose with zero topical relevance
+        # to the specific candidate article — matching on them produces a
+        # real, confirmed bug: linking an unrelated mention of "how to" in
+        # a bookmarks article straight to an unrelated cache-clearing
+        # article, just because both titles happen to start with "How to".
+        # Require at least one content word beyond generic filler.
+        GENERIC_LEAD_RE = re.compile(
+            r"^(how to|the best|best chrome|top \d+|a guide|what is|"
+            r"chrome extensions?)$",
+            re.IGNORECASE,
+        )
+        phrase_candidates = [p for p in phrase_candidates if not GENERIC_LEAD_RE.match(p.strip())]
+
         for phrase in phrase_candidates:
             if len(phrase) < 4:
                 continue
