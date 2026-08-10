@@ -33,7 +33,6 @@ import yaml
 from llm_router import find_working_model, c
 from agentic import memory_store
 from agentic.agents import refiner
-from daily_article import yaml_str  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 ARTICLES_DIR = ROOT / "public" / "content" / "articles"
@@ -97,21 +96,16 @@ def _oldest_unrefined_articles(count: int, forced_slug: str | None) -> list[Path
 
 
 def _write_back(path: Path, fm: dict, body: str) -> None:
-    lines = ["---"]
-    for key, value in fm.items():
-        if isinstance(value, str):
-            lines.append(f"{key}: {yaml_str(value)}")
-        elif isinstance(value, list):
-            if value:
-                lines.append(f"{key}:")
-                for item in value:
-                    lines.append(f"  - {item}")
-            else:
-                lines.append(f"{key}: []")
-        else:
-            lines.append(f"{key}: {value}")
-    lines.append("---")
-    path.write_text("\n".join(lines) + "\n" + body, encoding="utf-8")
+    # Use a real YAML dumper for the whole frontmatter block instead of a
+    # hand-rolled per-key formatter — the previous version's fallback for
+    # non-str/list values (dicts, e.g. an existing HowTo 'schema' field) just
+    # str()'d them, which happens to produce valid YAML flow syntax for
+    # simple cases (confirmed on this run) but isn't a rule you can rely on
+    # for arbitrarily nested data. yaml.safe_dump is the actually-correct tool.
+    frontmatter_yaml = yaml.safe_dump(
+        fm, allow_unicode=True, sort_keys=False, default_flow_style=False, width=1000
+    )
+    path.write_text(f"---\n{frontmatter_yaml}---\n{body}", encoding="utf-8")
 
 
 def refine_one(path: Path, model: str) -> dict:
