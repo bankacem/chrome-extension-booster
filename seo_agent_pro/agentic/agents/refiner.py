@@ -30,6 +30,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from llm_router import call, call_json, c
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from optimizer import _load_index, _shortlist_candidate_links  # noqa: E402 — reuse, don't duplicate
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1].parent))
 from daily_article import make_seo_title, SUFFIX  # noqa: E402
 
@@ -80,6 +83,49 @@ def _fix_metadata(fm: dict, body: str, model: str) -> tuple[dict, str, dict]:
             changes["meta_description"] = new_meta
 
     return fm, body, changes
+
+
+def _add_internal_links(title: str, keyword: str, body: str, max_links: int = 2) -> tuple[str, list[str]]:
+    """
+    Same deterministic phrase-matching approach as optimizer.py: only ever
+    turns text the article ALREADY says into a link, using a real slug from
+    articles-index.json — never invents anchor text or a URL. Real incident
+    this fixes: the Refiner's original design fixed metadata and added gap
+    sections but never touched links at all, so a fully "refined" article
+    could still ship with zero internal/external links.
+    """
+    index = _load_index()
+    candidates = _shortlist_candidate_links(keyword, title, index)
+    links_added = []
+
+    for cand in candidates:
+        if len(links_added) >= max_links:
+            break
+        slug = cand.get("slug", "")
+        cand_title = cand.get("title", "")
+        if not slug or not cand_title or f"](/blog/{slug})" in body:
+            continue
+        phrase_candidates = [cand_title]
+        head = re.split(r"[:\u2013\u2014]", cand_title, maxsplit=1)[0].strip()
+        if head and head != cand_title:
+            phrase_candidates.append(head)
+        words = head.split()
+        if len(words) > 2:
+            phrase_candidates.append(" ".join(words[:3]))
+            phrase_candidates.append(" ".join(words[:2]))
+
+        for phrase in phrase_candidates:
+            if len(phrase) < 4:
+                continue
+            pattern = re.compile(r"(?<!\]\()(?<![\[\w])" + re.escape(phrase) + r"(?![\w\]])", re.IGNORECASE)
+            m = pattern.search(body)
+            if m:
+                matched_text = body[m.start():m.end()]
+                body = body[:m.start()] + f"[{matched_text}](/blog/{slug})" + body[m.end():]
+                links_added.append(f"/blog/{slug}")
+                break
+
+    return body, links_added
 
 
 def _find_competitor_gap(title: str, keyword: str, body: str, model: str, avoid: list[str] | None = None) -> dict:
@@ -163,6 +209,13 @@ def run(state: dict) -> dict:
     if not metadata_changes:
         print(c("dim", "  · metadata already clean"))
 
+    _step("Internal link check")
+    body, links_added = _add_internal_links(title, keyword, body)
+    if links_added:
+        print(c("green", f"  ✓ added {len(links_added)} internal link(s): {', '.join(links_added)}"))
+    else:
+        print(c("dim", "  · no new natural internal link match found"))
+
     starting_word_count = len(body.split())
     max_sections = (
         MAX_GAP_SECTIONS_FOR_THIN_ARTICLES if starting_word_count < THIN_ARTICLE_WORD_THRESHOLD else 1
@@ -191,6 +244,7 @@ def run(state: dict) -> dict:
         "frontmatter": fm,
         "body": body,
         "metadata_changes": metadata_changes,
+        "internal_links_added": links_added,
         "gap_analysis": gap,
         "gap_added": gap_added,
         "gaps_added_titles": gaps_added,
