@@ -12,7 +12,7 @@ import VideoPlayer from "@/components/blog/VideoPlayer";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import yaml from "js-yaml";
-import { getPartitionedPath, resolveImagePath } from "@/utils/articlePath";
+import { getPartitionedPath, getLocalizedPartitionedPath, getLocalizedIndexPath, isSupportedLocale, resolveImagePath } from "@/utils/articlePath";
 import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
 import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
 import ReactMarkdown from "react-markdown";
@@ -101,21 +101,27 @@ const slugToTitle = (slug: string): string => {
 };
 
 const BlogPost = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug, lang: rawLang } = useParams<{ slug: string; lang?: string }>();
+  const lang = isSupportedLocale(rawLang) ? rawLang : undefined;
   const [article, setArticle] = useState<Partial<Article> | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [matchedExtension, setMatchedExtension] = useState<Extension | null>(null);
   const [relatedArticles, setRelatedArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
+  const [notYetTranslated, setNotYetTranslated] = useState(false);
 
   const instantTitle = slug ? slugToTitle(slug) : "Loading Article";
 
   const fetchArticle = useCallback(async () => {
     if (!slug) { setLoading(false); setNotFound(true); return; }
-    setLoading(true); setNotFound(false); setError(null);
-    
+    setLoading(true); setNotFound(false); setNotYetTranslated(false); setError(null);
+
     try {
+      // Always load the English index first -- it's the source of truth for
+      // taxonomy/canonical slug even when rendering a translated page, and
+      // it's what related-article suggestions and the English fallback link
+      // are built from.
       const indexRes = await fetch("/content/articles-index.json");
       let matched: Article | null = null;
       let allArticles: Article[] = [];
@@ -127,14 +133,41 @@ const BlogPost = () => {
       }
 
       if (matched) {
-        setArticle(matched);
-        if (matched.slug !== slug) { window.history.replaceState(null, '', `/blog/${matched.slug}`); }
+        if (!lang) setArticle(matched);
+        const routePrefix = lang ? `/${lang}` : "";
+        if (matched.slug !== slug) { window.history.replaceState(null, '', `${routePrefix}/blog/${matched.slug}`); }
         const related = allArticles.filter(a => a.category === matched?.category && a.id !== matched?.id).slice(0, 3);
         setRelatedArticles(related);
       }
 
       const fetchSlug = matched ? matched.slug : slug;
-      const path = getPartitionedPath(fetchSlug);
+
+      let localizedEntry: Partial<Article> | null = null;
+      if (lang) {
+        try {
+          const locIndexRes = await fetch(getLocalizedIndexPath(lang));
+          if (locIndexRes.ok) {
+            const locArticles = await locIndexRes.json() as Partial<Article>[];
+            localizedEntry = locArticles.find(a => a.slug === fetchSlug) || null;
+          }
+        } catch {
+          // fall through to "not yet translated" handling below
+        }
+        if (!localizedEntry) {
+          // Graceful fallback: this article exists in English but has no
+          // translation yet. Show a clear message + link rather than a
+          // soft-404 -- never leave a URL from a translated sitemap pointing
+          // at a blank/broken page.
+          setNotYetTranslated(true);
+          setArticle(matched);
+          setLoading(false);
+          return;
+        }
+      }
+
+      const path = lang
+        ? getLocalizedPartitionedPath(fetchSlug, lang)
+        : getPartitionedPath(fetchSlug);
       const response = await fetch(path);
       const isHtml = response.headers.get("Content-Type")?.includes("text/html");
 
@@ -170,6 +203,12 @@ const BlogPost = () => {
       const fullArticle = {
         ...frontmatter,
         ...(matched || {}),
+        // When rendering a translated page, the localized index entry's
+        // title/description/excerpt must win over the English matched
+        // entry's -- otherwise a French/Spanish page would show an English
+        // title with a French body, which is exactly the "half-translated"
+        // sloppiness a professional multilingual site never ships.
+        ...(localizedEntry || {}),
         // matched.slug can theoretically be missing/malformed if the index
         // lookup failed; fall back to the URL param rather than trust
         // frontmatter's (potentially corrupted) slug either way.
@@ -214,7 +253,37 @@ const BlogPost = () => {
     );
   }
 
+  if (notYetTranslated && !loading) {
+    const fallbackMsg: Record<string, { heading: string; body: string; cta: string }> = {
+      fr: {
+        heading: "Traduction pas encore disponible",
+        body: "Cet article n'a pas encore de version française. Vous pouvez le lire en anglais en attendant.",
+        cta: "Lire en anglais",
+      },
+      es: {
+        heading: "Traducción aún no disponible",
+        body: "Este artículo todavía no tiene una versión en español. Mientras tanto, puedes leerlo en inglés.",
+        cta: "Leer en inglés",
+      },
+    };
+    const msg = fallbackMsg[lang || "fr"];
+    return (
+      <div className="min-h-screen bg-background">
+        <SEO title={msg.heading} noindex canonicalPath={`/blog/${slug}`} lang={(lang as "en" | "fr" | "es") || "fr"} />
+        <Navbar />
+        <div className="container mx-auto px-4 pt-32 text-center">
+          <h2 className="text-2xl font-bold mb-4">{msg.heading}</h2>
+          <p className="text-muted-foreground mb-6">{msg.body}</p>
+          <Link to={`/blog/${slug}`}><Button>{msg.cta}</Button></Link>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
   if (loading) { return <div className="min-h-screen bg-background"><Navbar /><div className="text-center pt-32">Loading...</div><Footer /></div>; }
+
+  const routePrefix = lang ? `/${lang}` : "";
 
   const schemaData = article.title ? {
     "@context": "https://schema.org",
@@ -223,6 +292,7 @@ const BlogPost = () => {
     "description": article.meta_description || article.excerpt,
     "image": article.featured_image ? resolveImagePath(article.featured_image) : undefined,
     "articleSection": article.category || undefined,
+    "inLanguage": lang || "en",
     "author": {
       "@type": "Person",
       "name": article.author || "Admin"
@@ -239,7 +309,7 @@ const BlogPost = () => {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `${window.location.origin}/blog/${article.slug}`
+      "@id": `${window.location.origin}${routePrefix}/blog/${article.slug}`
     }
   } : null;
 
@@ -257,13 +327,13 @@ const BlogPost = () => {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": `${window.location.origin}/blog`
+        "item": `${window.location.origin}${routePrefix}/blog`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": article.title,
-        "item": `${window.location.origin}/blog/${article.slug}`
+        "item": `${window.location.origin}${routePrefix}/blog/${article.slug}`
       }
     ]
   } : null;
@@ -275,6 +345,7 @@ const BlogPost = () => {
         description={article.meta_description || article.excerpt || undefined}
         canonicalPath={`/blog/${article.slug}`}
         ogType="article"
+        lang={(lang as "en" | "fr" | "es") || "en"}
         ogImage={
           article.featured_image
             ? `${window.location.origin}${resolveImagePath(article.featured_image)}`
@@ -286,7 +357,7 @@ const BlogPost = () => {
       <Navbar />
       <main className="pt-24 pb-16">
         <article className="container mx-auto max-w-4xl px-4">
-          <Link to="/blog"><Button variant="ghost" className="mb-8"><ArrowLeft className="mr-2 h-4 w-4" />Back to Blog</Button></Link>
+          <Link to={`${routePrefix}/blog`}><Button variant="ghost" className="mb-8"><ArrowLeft className="mr-2 h-4 w-4" />Back to Blog</Button></Link>
           <header className="mb-8">
             <h1 className="mb-4 font-heading text-3xl font-bold md:text-5xl">{article.title}</h1>
           </header>

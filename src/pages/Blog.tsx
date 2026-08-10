@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams, useParams } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Search, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { supabase } from "@/integrations/supabase/client";
-import { resolveImagePath } from "@/utils/articlePath";
+import { resolveImagePath, getLocalizedIndexPath, isSupportedLocale } from "@/utils/articlePath";
 import {
   Pagination,
   PaginationContent,
@@ -35,6 +35,9 @@ interface Article {
 }
 
 const Blog = () => {
+  const { lang: rawLang } = useParams<{ lang?: string }>();
+  const lang = isSupportedLocale(rawLang) ? rawLang : undefined;
+  const routePrefix = lang ? `/${lang}` : "";
   const [articles, setArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
@@ -71,7 +74,8 @@ const Blog = () => {
 
   const fetchArticles = async () => {
     try {
-      const response = await fetch("/content/articles-index.json");
+      const path = lang ? getLocalizedIndexPath(lang) : "/content/articles-index.json";
+      const response = await fetch(path);
       if (!response.ok) throw new Error("Failed to fetch articles index");
 
       const data = await response.json();
@@ -130,9 +134,18 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Blog - Latest Articles & Tips"
-        description="Discover tips, tutorials, and insights about browser extensions, productivity, and web development. Stay updated with the latest Chrome extension news."
-        canonicalPath={safePage > 1 ? `/blog?page=${safePage}` : "/blog"}
+        title={
+          lang === "fr" ? "Blog - Derniers Articles et Astuces"
+          : lang === "es" ? "Blog - Últimos Artículos y Consejos"
+          : "Blog - Latest Articles & Tips"
+        }
+        description={
+          lang === "fr" ? "Découvrez des astuces, tutoriels et analyses sur les extensions de navigateur, la productivité et le développement web."
+          : lang === "es" ? "Descubre consejos, tutoriales e ideas sobre extensiones de navegador, productividad y desarrollo web."
+          : "Discover tips, tutorials, and insights about browser extensions, productivity, and web development. Stay updated with the latest Chrome extension news."
+        }
+        canonicalPath={safePage > 1 ? `/blog?page=${safePage}` : `/blog`}
+        lang={(lang as "en" | "fr" | "es") || "en"}
       />
       <Navbar />
       
@@ -250,7 +263,7 @@ const Blog = () => {
                         ))}
                       </div>
                     )}
-                    <Link to={`/blog/${article.slug}`}>
+                    <Link to={`${routePrefix}/blog/${article.slug}`}>
                       <Button variant="ghost" size="sm" className="group p-0">
                         Read More
                         <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
