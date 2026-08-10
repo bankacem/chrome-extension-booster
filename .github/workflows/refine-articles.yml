@@ -1,12 +1,12 @@
-name: Refine Article Metadata (proofread, don't rewrite)
+name: Refiner Agent (8th agent — metadata fixes + competitor-gap section, oldest-published-first, learns via memory_store)
 
 on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "How many flagged articles to process this run"
+        description: "How many oldest un-refined articles to process this run"
         required: false
-        default: "15"
+        default: "1"
       model:
         description: "Force a specific model (optional)"
         required: false
@@ -42,7 +42,7 @@ jobs:
       - name: Install JS dependencies
         run: bun install
 
-      - name: Run the Refinement Agent
+      - name: Run the Refiner Agent
         id: refine
         env:
           BLUESMINDS_KEY:  ${{ secrets.BLUESMINDS_KEY || secrets.BLUESMINDS }}
@@ -53,7 +53,7 @@ jobs:
         run: |
           set -o pipefail
           cd seo_agent_pro/agentic
-          python3 refine_articles.py --limit "${{ github.event.inputs.limit }}" 2>&1 | tee /tmp/refine_output.log
+          python3 refine_run.py --count "${{ github.event.inputs.limit }}" 2>&1 | tee /tmp/refine_output.log
 
       - name: Post debug output if refinement failed
         if: failure()
@@ -87,6 +87,7 @@ jobs:
 
           git add public/content/articles
           git add public/content/articles-index.json public/sitemap.xml public/content/sitemap-dates.json
+          git add seo_agent_pro/agentic/memory/refined_articles.json seo_agent_pro/agentic/memory/cycle_log.json seo_agent_pro/agentic/memory/lessons.md
 
           if git diff --cached --quiet; then
             echo "No changes to commit (all flagged files were already clean or nothing was fixable)."
