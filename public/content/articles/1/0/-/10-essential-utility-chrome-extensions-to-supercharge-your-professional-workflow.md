@@ -1,17 +1,11 @@
 ---
 seo_title: "10 Utility Extensions for Your Chrome Workflow"
-id: d03f7375-dc13-4a01-9e06-debd984e6a65
-title: >-
-  10 Essential Utility Chrome Extensions to Supercharge Your Professional
-  Workflow
+id: "d03f7375-dc13-4a01-9e06-debd984e6a65"
+title: "10 Essential Utility Chrome Extensions to Supercharge Your Professional Workflow"
 slug: "10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow"
-excerpt: >-
-  I tested 40+ productivity Chrome extensions against actual work scenarios.
-  These 10 earned a permanent spot in my toolbar — and they'll save you hours
-  every week.
-featured_image: >-
-  /content/images/10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow/featured.webp
-category: Productivity & Tools
+excerpt: "I tested 40+ productivity Chrome extensions against actual work scenarios. These 10 earned a permanent spot in my toolbar — and they'll save you hours every week."
+featured_image: "/content/images/10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow/featured.webp"
+category: "Productivity & Tools"
 tags:
   - Chrome productivity
   - professional workflow
@@ -21,16 +15,16 @@ keywords:
   - best chrome extensions for work 2026
   - productivity chrome extensions
   - professional workflow extensions
-meta_description: "I tested 40+ productivity Chrome extensions against actual work scenarios. These 10 earned a permanent spot in my toolbar — and they'll save you hours..."
-status: published
-published_at: '2026-03-16T02:11:01.384+00:00'
-scheduled_at: '2026-03-16T02:11:00+00:00'
-author: James Mitchell
-author_image: /content/images/authors/james-mitchell.png
+meta_description: "Discover 10 must‑have Chrome extensions—from Workona to OneTab—that boost productivity, secure data, and streamline your professional workflow."
+status: "published"
+published_at: "2026-03-16T02:11:01.384+00:00"
+scheduled_at: "2026-03-16T02:11:00+00:00"
+author: "James Mitchell"
+author_image: "/content/images/authors/james-mitchell.png"
 views: 3
 read_time: 9
-created_at: '2026-01-19T13:57:03.244295+00:00'
-updated_at: '2026-06-05T12:00:00.000000+00:00'
+created_at: "2026-01-19T13:57:03.244295+00:00"
+updated_at: "2026-06-05T12:00:00.000000+00:00"
 ---
 
 <img src="/content/images/10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow/featured.webp" alt="10 Essential Utility Chrome Extensions to Supercharge Your Professional Workflow" width="1200" height="630" loading="lazy" class="featured-image">
