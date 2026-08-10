@@ -117,19 +117,28 @@ def run(state: dict) -> dict:
             phrase_candidates.append(" ".join(words[:3]))
             phrase_candidates.append(" ".join(words[:2]))
 
-        # Generic 2-3 word leading phrases like "How to" or "Best Chrome"
-        # appear constantly in ordinary prose with zero topical relevance
-        # to the specific candidate article — matching on them produces a
-        # real, confirmed bug: linking an unrelated mention of "how to" in
-        # a bookmarks article straight to an unrelated cache-clearing
-        # article, just because both titles happen to start with "How to".
-        # Require at least one content word beyond generic filler.
-        GENERIC_LEAD_RE = re.compile(
-            r"^(how to|the best|best chrome|top \d+|a guide|what is|"
-            r"chrome extensions?)$",
-            re.IGNORECASE,
-        )
-        phrase_candidates = [p for p in phrase_candidates if not GENERIC_LEAD_RE.match(p.strip())]
+        # Generic phrases like "How to", "Best Chrome", or "Chrome
+        # Extensions For" appear constantly in ordinary prose with zero
+        # topical relevance to the specific candidate article — matching on
+        # them produces a real, confirmed bug: e.g. "chrome extensions for"
+        # in an unrelated sentence linking straight to a PDF-reading
+        # article, just because both titles happen to start that way.
+        # Rather than an ever-growing list of exact banned phrases (which
+        # only catches combinations someone happened to test), require
+        # every candidate phrase to contain at least one non-generic
+        # "content" word — a word that isn't one of the terms so common
+        # across this site's own titles that it carries no topical
+        # specificity by itself.
+        SITE_GENERIC_WORDS = {
+            "how", "to", "the", "best", "top", "a", "an", "for", "of", "in",
+            "on", "and", "or", "what", "is", "guide", "chrome", "extension",
+            "extensions", "your", "you", "with", "vs", "2026", "2025",
+        }
+        def _has_content_word(phrase: str) -> bool:
+            words = re.findall(r"[a-zA-Z0-9]+", phrase.lower())
+            return any(w not in SITE_GENERIC_WORDS and len(w) > 2 for w in words)
+
+        phrase_candidates = [p for p in phrase_candidates if _has_content_word(p)]
 
         for phrase in phrase_candidates:
             if len(phrase) < 4:
