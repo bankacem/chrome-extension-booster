@@ -82,11 +82,17 @@ def _fix_metadata(fm: dict, body: str, model: str) -> tuple[dict, str, dict]:
     return fm, body, changes
 
 
-def _find_competitor_gap(title: str, keyword: str, body: str, model: str) -> dict:
+def _find_competitor_gap(title: str, keyword: str, body: str, model: str, avoid: list[str] | None = None) -> dict:
     """LLM-knowledge-based (same honest limitation as research.py — no live
     SERP API configured for this project). Grounded in the ARTICLE'S OWN
     current body so it can only propose something genuinely absent, not
     something already covered under different wording."""
+    avoid_note = ""
+    if avoid:
+        avoid_note = (
+            "\nDo NOT propose any of these gaps — they were already identified "
+            f"and filled earlier in this same refinement pass: {'; '.join(avoid)}"
+        )
     system = (
         "You are a competitive content analyst. You are given an existing "
         "published article and asked what the top 3 ranking competitor pages "
@@ -100,6 +106,7 @@ Target keyword: "{keyword}"
 Current article body (this is everything the article already covers — do
 not propose anything already present here):
 {body[:6000]}
+{avoid_note}
 
 Return JSON:
 {{
@@ -112,6 +119,29 @@ Return JSON:
 If you genuinely can't identify a real, specific, non-generic gap, set
 gap_found to false rather than inventing a weak one."""
     return call_json(system, user, model)
+
+
+# A single ~200-word section is a reasonable addition to an already-
+# substantial article, but real incident: an article that started at only
+# ~500 body words was still thin after adding just one section, and got
+# correctly called out as not being publication-quality. Below this
+# threshold, keep adding genuine gap sections (each still independently
+# grounded and still allowed to say "no more real gaps found" rather than
+# padding) instead of stopping after one.
+THIN_ARTICLE_WORD_THRESHOLD = 1200
+MAX_GAP_SECTIONS_FOR_THIN_ARTICLES = 4
+
+
+def _insert_section(body: str, section: str) -> str:
+    insertion_point = None
+    for marker in [r"^##\s+Conclusion", r"^##\s+Frequently Asked Questions"]:
+        m = re.search(marker, body, re.IGNORECASE | re.MULTILINE)
+        if m:
+            insertion_point = m.start()
+            break
+    if insertion_point is not None:
+        return body[:insertion_point] + section + "\n\n" + body[insertion_point:]
+    return body.rstrip() + "\n\n" + section + "\n"
 
 
 def run(state: dict) -> dict:
@@ -133,29 +163,29 @@ def run(state: dict) -> dict:
     if not metadata_changes:
         print(c("dim", "  · metadata already clean"))
 
-    _step("Competitor gap analysis (top 3, LLM-knowledge-based)")
-    gap = _find_competitor_gap(title, keyword, body, model)
-    gap_added = False
+    starting_word_count = len(body.split())
+    max_sections = (
+        MAX_GAP_SECTIONS_FOR_THIN_ARTICLES if starting_word_count < THIN_ARTICLE_WORD_THRESHOLD else 1
+    )
+    if max_sections > 1:
+        print(c("yellow", f"  ⚠ article is thin ({starting_word_count} words) — "
+                           f"allowing up to {max_sections} gap sections instead of 1"))
 
-    if gap.get("gap_found") and gap.get("gap_section_markdown", "").strip():
+    gaps_added: list[str] = []
+    last_gap = {}
+    for i in range(max_sections):
+        _step(f"Competitor gap analysis (top 3, LLM-knowledge-based) — pass {i+1}/{max_sections}")
+        gap = _find_competitor_gap(title, keyword, body, model, avoid=gaps_added)
+        last_gap = gap
+        if not (gap.get("gap_found") and gap.get("gap_section_markdown", "").strip()):
+            print(c("dim", "  · no further genuine gap identified — stopping (no filler added)"))
+            break
         print(c("yellow", f"  + gap found: {gap.get('gap_title')} — {gap.get('gap_reasoning', '')}"))
-        section = gap["gap_section_markdown"].strip()
-        # Insert before "## Conclusion" or "## Frequently Asked Questions" if
-        # either exists (keeps the FAQ/conclusion as the natural closer),
-        # otherwise append at the very end — but NEVER touch any existing text.
-        insertion_point = None
-        for marker in [r"^##\s+Conclusion", r"^##\s+Frequently Asked Questions"]:
-            m = re.search(marker, body, re.IGNORECASE | re.MULTILINE)
-            if m:
-                insertion_point = m.start()
-                break
-        if insertion_point is not None:
-            body = body[:insertion_point] + section + "\n\n" + body[insertion_point:]
-        else:
-            body = body.rstrip() + "\n\n" + section + "\n"
-        gap_added = True
-    else:
-        print(c("dim", "  · no genuine gap identified — leaving article as-is (no filler added)"))
+        body = _insert_section(body, gap["gap_section_markdown"].strip())
+        gaps_added.append(gap.get("gap_title", ""))
+
+    gap_added = bool(gaps_added)
+    gap = last_gap
 
     return {
         "frontmatter": fm,
@@ -163,4 +193,5 @@ def run(state: dict) -> dict:
         "metadata_changes": metadata_changes,
         "gap_analysis": gap,
         "gap_added": gap_added,
+        "gaps_added_titles": gaps_added,
     }
