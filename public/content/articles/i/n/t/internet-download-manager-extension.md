@@ -81,7 +81,7 @@ The setup steps above cover the standard case, but IDM's Chrome integration brea
 
 **Downloads still go through Chrome's native downloader even with IDM enabled.** This is almost always a file-type mismatch — the extension only intercepts file types you've told it to, in the Extension Options → File Types tab covered above. If a file type isn't listed there, Chrome handles it by default, which looks identical to "IDM isn't working" if you don't know to check that tab.
 
-**"Failed to connect to IDM" errors on download attempts.** This means the desktop IDM application itself isn't running — the Chrome extension is only a bridge to the actual download engine on your machine, not a standalone downloader. Confirm IDM is open (not just installed) before troubleshooting anything else.
+**"Failed to connect to IDM" errors on download attempts.** This means the desktop IDM application itself isn't running — the Chrome extension is only a bridge to the actual download engine on your machine, not a standalone downloader. Confirm IDM is open (not just installed) before troubleshooting anything else. If the toolbar icon is missing entirely rather than just disconnected, see our dedicated guide on [fixing the IDM download bar not showing in Chrome](/blog/fix-idm-download-bar-not-showing-in-google-chrome).
 
 **IDM conflicts with another download manager or extension.** Running two download managers with broad "intercept downloads" permissions at once is a common, easy-to-miss cause of downloads silently failing or duplicating. Disable any other download-manager extension before assuming IDM itself is broken.
 
@@ -89,7 +89,7 @@ The setup steps above cover the standard case, but IDM's Chrome integration brea
 
 The manual installation method covered above — dragging an `.crx` file directly into Chrome's extensions page — is real and it works, but it's worth understanding why Chrome makes this harder than a normal Web Store install and treating it with a bit more caution than a one-click install.
 
-Chrome deliberately disables silent `.crx` installation from arbitrary sources specifically to prevent malicious extensions from being side-loaded without a Web Store review. When you manually drag in an `.crx` file, you're bypassing that review layer, and Chrome's warning about that when you do it is not a formality. The reason it's a reasonable step for IDM specifically is that the file comes from your own existing, licensed IDM installation on your PC, not a downloaded file from a third-party site — you already trust the source, you're just re-pointing Chrome at a component that's already on your machine. The same manual-install method used with a `.crx` file downloaded from an unfamiliar website is a meaningfully different, much riskier situation, and isn't something this guide is suggesting.
+Chrome deliberately disables silent `.crx` installation from arbitrary sources specifically to prevent malicious extensions from being side-loaded without a Web Store review. When you manually drag in an `.crx` file, you're bypassing that review layer, and Chrome's warning about that when you do it is not a formality. The reason it's a reasonable step for IDM specifically is that the file comes from your own existing, licensed IDM installation on your PC — installed from [IDM's official site](https://www.internetdownloadmanager.com/), not a downloaded file from a third-party site — you already trust the source, you're just re-pointing Chrome at a component that's already on your machine. The same manual-install method used with a `.crx` file downloaded from an unfamiliar website is a meaningfully different, much riskier situation, and isn't something this guide is suggesting.
 
 ## IDM vs. the Alternatives
 
@@ -99,6 +99,8 @@ Chrome deliberately disables silent `.crx` installation from arbitrary sources s
 | Chrome's native downloader | Occasional, light downloading | No | Free, built in |
 | Free Download Manager | A free alternative with similar speed features | Yes | Free |
 | DownThemAll | Bulk-downloading many files/images from one page | Limited | Free |
+
+For a wider benchmark of how IDM stacks up against several Chrome-native download managers side by side, see our [Chrome download managers comparison and benchmarks](/blog/chrome-download-manager-guide). If you're specifically chasing more download speed rather than switching tools, our [guide to speeding up IDM downloads on Chrome](/blog/how-to-speed-up-idm-downloads-on-chrome-browser) covers connection-level tweaks beyond what's in the Advanced tab above.
 
 ## Keeping IDM From Slowing Down Your Actual Browsing
 
@@ -126,6 +128,9 @@ A: IDM offers similar integration modules for other Chromium-based browsers (Edg
 
 **Q: Does IDM work with streaming sites that use adaptive bitrate (HLS/DASH) video?**
 A: IDM's media grabber detects most standard progressive video, but modern adaptive-streaming players (the kind that switch quality automatically) are hit or miss — if the download button doesn't appear on a given video, that's usually why, and it's a limitation of the underlying stream format rather than a misconfiguration on your end.
+
+**Q: Is there an IDM extension for Chrome on Android?**
+A: Not in the same form — see our dedicated breakdown of [IDM on Chrome for Android and what actually works there](/blog/is-there-an-idm-extension-for-chrome-android-to-download-management) for the mobile-specific answer.
 
 ## Conclusion
 
