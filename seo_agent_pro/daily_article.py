@@ -112,6 +112,62 @@ def _infer_category(keyword: str) -> str:
     return "Chrome Extensions"
 
 
+_KEYWORD_GENERIC_WORDS = {
+    "how", "to", "a", "an", "the", "for", "of", "in", "on", "and", "or",
+    "what", "is", "guide", "chrome", "extension", "extensions", "your",
+    "you", "with", "vs", "2026", "2025", "best", "top",
+}
+
+
+def _content_words(text: str) -> set[str]:
+    words = re.findall(r"[a-zA-Z0-9]+", text.lower())
+    return {w for w in words if w not in _KEYWORD_GENERIC_WORDS and len(w) > 2}
+
+
+def _is_topically_duplicate(keyword: str, index_path: Path = None) -> str | None:
+    """Returns the slug of an existing published article this keyword
+    would duplicate the intent of, or None if it's genuinely distinct.
+
+    Cheap content-word-overlap check — not semantic/AI, just enough to
+    catch the obvious case: pick_next_keyword() only ever checked whether
+    the exact keyword STRING was used before, with no check against what's
+    already published. First real run hit this directly: 'how to speed up
+    a slow chrome browser' would have duplicated an existing article
+    titled 'Speed Up Slow Chrome in 2026: 10 Fixes That Actually Work'
+    almost word-for-word in intent.
+    """
+    index_path = index_path or (ROOT / "public" / "content" / "articles-index.json")
+    if not index_path.exists():
+        return None
+    try:
+        with open(index_path, encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return None
+    arr = data if isinstance(data, list) else data.get("articles", [])
+
+    kw_words = _content_words(keyword)
+    if len(kw_words) < 3:
+        # Short/broad keywords (e.g. "online privacy") naturally share all
+        # their significant words with many narrower single-tool articles
+        # without actually duplicating intent — a broad category roundup
+        # is legitimately different from a single-product review even at
+        # 100% word overlap. Only apply this check once there's enough
+        # signal (3+ real content words) to distinguish coincidental
+        # vocabulary overlap from genuine duplicate intent.
+        return None
+
+    for a in arr:
+        title = a.get("title", "")
+        title_words = _content_words(title)
+        if not title_words:
+            continue
+        overlap = kw_words & title_words
+        if len(overlap) / len(kw_words) >= 0.6:
+            return a.get("slug", "")
+    return None
+
+
 def pick_next_keyword() -> tuple[str, str]:
     """Returns (keyword, category).
 
@@ -120,7 +176,8 @@ def pick_next_keyword() -> tuple[str, str]:
     poorly on) over the hand-written queue — real search demand beats a
     guess. Falls back to keyword_queue.txt if GSC is unavailable/
     unconfigured/errors, or has nothing new to offer, so this never
-    blocks a run.
+    blocks a run. Skips any candidate that would duplicate an existing
+    published article's intent rather than returning it blindly.
     """
     state = load_state()
     used = set(state.get("used_keywords", []))
@@ -130,6 +187,10 @@ def pick_next_keyword() -> tuple[str, str]:
         for opp in gsc_client.fetch_opportunity_keywords():
             kw = opp["query"].strip().lower()
             if kw and kw not in used:
+                dup = _is_topically_duplicate(kw)
+                if dup:
+                    print(f"[Keyword] Skipping GSC opportunity {kw!r} — duplicates existing article: {dup}")
+                    continue
                 print(
                     f"[Keyword] Using real GSC opportunity: {kw!r} "
                     f"({opp['impressions']} impressions, position {opp['position']})"
@@ -140,8 +201,13 @@ def pick_next_keyword() -> tuple[str, str]:
 
     queue = load_queue()
     for kw, category in queue:
-        if kw not in used:
-            return kw, category
+        if kw in used:
+            continue
+        dup = _is_topically_duplicate(kw)
+        if dup:
+            print(f"[Keyword] Skipping queue keyword {kw!r} — duplicates existing article: {dup}")
+            continue
+        return kw, category
     raise SystemExit(
         "Keyword queue exhausted - add more lines to seo_agent_pro/keyword_queue.txt"
     )
