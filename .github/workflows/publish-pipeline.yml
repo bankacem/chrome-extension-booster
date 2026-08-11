@@ -61,10 +61,14 @@ jobs:
           fi
 
       - name: Notify Google Indexing API
-        if: ${{ secrets.GOOGLE_INDEXING_KEY != '' }}
         env:
           GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
-        run: bun scripts/google-indexing.ts
+        run: |
+          if [ -z "$GOOGLE_INDEXING_KEY" ]; then
+            echo "No GOOGLE_INDEXING_KEY set — skipping indexing notification."
+            exit 0
+          fi
+          bun scripts/google-indexing.ts
 
       - name: Persist indexing state
         if: always()
