@@ -50,5 +50,18 @@
     "final_status": "refined",
     "notes": "Metadata changes: []. Gap added: True — ## Configuring IDM Extension Settings for Custom Downloads",
     "recorded_at": "2026-08-10T00:10:25.010305+00:00"
+  },
+  {
+    "keyword": "chrome ram usage",
+    "model": "bluesminds-gpt4o",
+    "cycle_type": "refinement",
+    "score": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [],
+    "category": "Productivity & Tools",
+    "final_status": "refined",
+    "notes": "Metadata changes: []. Gap added: True — ## Impact of Chrome Experiments and Flags on RAM Usage",
+    "recorded_at": "2026-08-11T09:02:10.705208+00:00"
   }
 ]
