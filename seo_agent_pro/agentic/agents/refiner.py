@@ -75,6 +75,7 @@ def _fix_metadata(fm: dict, body: str, model: str) -> tuple[dict, str, dict]:
             "complete sentence that does not end with '...'.",
             f'Article title: "{title}"\n\nArticle text (excerpt):\n{body[:3000]}',
             model,
+            max_tokens=200,
         ).strip().strip('"')
         if new_meta and new_meta != old_meta:
             fm["meta_description"] = new_meta
@@ -85,7 +86,7 @@ def _fix_metadata(fm: dict, body: str, model: str) -> tuple[dict, str, dict]:
     return fm, body, changes
 
 
-def _add_internal_links(title: str, keyword: str, body: str, max_links: int = 2) -> tuple[str, list[str]]:
+def _add_internal_links(title: str, keyword: str, body: str, own_slug: str = "", max_links: int = 2) -> tuple[str, list[str]]:
     """
     Same deterministic phrase-matching approach as optimizer.py: only ever
     turns text the article ALREADY says into a link, using a real slug from
@@ -95,7 +96,7 @@ def _add_internal_links(title: str, keyword: str, body: str, max_links: int = 2)
     could still ship with zero internal/external links.
     """
     index = _load_index()
-    candidates = _shortlist_candidate_links(keyword, title, index)
+    candidates = [a for a in _shortlist_candidate_links(keyword, title, index) if a.get("slug") != own_slug]
     links_added = []
 
     for cand in candidates:
@@ -164,7 +165,7 @@ Return JSON:
 
 If you genuinely can't identify a real, specific, non-generic gap, set
 gap_found to false rather than inventing a weak one."""
-    return call_json(system, user, model)
+    return call_json(system, user, model, max_tokens=1200)
 
 
 # A single ~200-word section is a reasonable addition to an already-
@@ -210,7 +211,7 @@ def run(state: dict) -> dict:
         print(c("dim", "  · metadata already clean"))
 
     _step("Internal link check")
-    body, links_added = _add_internal_links(title, keyword, body)
+    body, links_added = _add_internal_links(title, keyword, body, own_slug=fm.get("slug", ""))
     if links_added:
         print(c("green", f"  ✓ added {len(links_added)} internal link(s): {', '.join(links_added)}"))
     else:

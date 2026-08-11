@@ -370,6 +370,7 @@ def _generate_content(keyword: str, articles_written: int, model: str) -> tuple[
         f'Write a meta description for an article targeting the keyword "{keyword}". '
         f"Article title: {title}",
         model,
+        max_tokens=200,
     ).strip().strip('"')
 
     return title, body, meta_description
