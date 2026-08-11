@@ -1,5 +1,11 @@
 # SEO Agent Pro — Multi-Model Edition
 
+> **If you are a Claude/AI session picking up this project: read
+> [`agentic/AGENT_HANDOFF.md`](./agentic/AGENT_HANDOFF.md) in full before
+> touching any article or agent file.** Multiple sessions work on this repo
+> over time; that file exists to stop them from conflicting with each
+> other.
+
 A production-ready SEO content pipeline that supports **Anthropic**, **OpenRouter**, and **Groq** — run any model from a single command.
 
 ---
