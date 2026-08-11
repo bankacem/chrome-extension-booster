@@ -9,7 +9,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - speakit
-meta_description: "Imagine being able to interact with your computer or mobile device using just your voice."
+meta_description: "A guide to SpeakIt, a text-to-speech Chrome extension that reads selected text aloud instead of requiring you to read everything yourself."
 status: published
 published_at: '2026-02-10T08:11:01.198+00:00'
 scheduled_at: '2026-02-10T08:11:00+00:00'

@@ -8,9 +8,7 @@ image_url: /content/images/article7-nordpass-review.jpg
 title: >-
   NordPass Chrome Extension Review 2026: The Beautiful Underdog With One
   Frustrating Flaw
-meta_description: >-
-  NordPass Chrome Extension Review 2026: The Beautiful Underdog With One
-  Frustrating Flaw
+meta_description: "A 2026 review of NordPass testing whether the password manager from the NordVPN team is more than a bundled afterthought, flaw included."
 description: >-
   NordPass Chrome Extension Review 2026: The Beautiful Underdog With One
   Frustrating Flaw

@@ -10,7 +10,7 @@ category: Chrome Extensions
 tags: []
 keywords:
   - json formatter chrome extension
-meta_description: "As a developer, working with JSON (JavaScript Object Notation) data is a daily task."
+meta_description: "A JSON formatter Chrome extension that turns messy, unreadable JSON data into clean, validated output for developers working with APIs daily."
 status: published
 published_at: '2026-04-07T02:15:00.331+00:00'
 scheduled_at: '2026-04-07T02:15:00+00:00'

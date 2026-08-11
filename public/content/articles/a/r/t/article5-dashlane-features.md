@@ -8,9 +8,7 @@ image_url: /content/images/article5-dashlane-features.jpg
 title: >-
   Dashlane Chrome Extension Features in 2026: A Deep Dive Into the Premium-Only
   Powerhouse
-meta_description: >-
-  Dashlane Chrome Extension Features in 2026: A Deep Dive Into the Premium-Only
-  Powerhouse
+meta_description: "A deep dive into Dashlane's Chrome extension features in 2026, testing whether going premium-only after killing its free plan paid off."
 description: >-
   Dashlane Chrome Extension Features in 2026: A Deep Dive Into the Premium-Only
   Powerhouse

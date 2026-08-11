@@ -8,9 +8,7 @@ image_url: /content/images/article2-bitwarden-setup-guide.jpg
 title: >-
   How to Set Up the Bitwarden Chrome Extension in 2026: A Complete Step-by-Step
   Guide
-meta_description: >-
-  How to Set Up the Bitwarden Chrome Extension in 2026: A Complete Step-by-Step
-  Guide
+meta_description: "A complete 2026 step-by-step guide to setting up the Bitwarden Chrome extension, from installing it to importing existing saved passwords."
 description: >-
   How to Set Up the Bitwarden Chrome Extension in 2026: A Complete Step-by-Step
   Guide
