@@ -6,8 +6,13 @@ name: Publish Articles Pipeline
 # `bun scripts/export-all-from-db.ts` locally and commit the result.
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/content/articles/**'
+      - 'public/content/articles-index.json'
   schedule:
-    - cron: '0 * * * *'   # Hourly — refreshes index + sitemap from disk
+    - cron: '0 * * * *'   # Hourly fallback — catches anything the push trigger missed
   workflow_dispatch:        # Manual trigger
 
 jobs:
