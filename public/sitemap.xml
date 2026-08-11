@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://extensionto.com/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-11</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-11</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/privacy</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-11</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/terms</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-11</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/vpn-article9-tunnelbear-review</loc>
@@ -38,6 +38,10 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/chrome-extensions-for-reading-pdfs-online</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extensions-for-tracking-package-deliveries</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
@@ -186,6 +190,14 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/vpn-article11-betternet-review</loc>
+    <lastmod>2026-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/fr/blog/best-chrome-ad-blockers-without-slowing-your-browser</loc>
+    <lastmod>2026-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/es/blog/best-chrome-ad-blockers-without-slowing-your-browser</loc>
     <lastmod>2026-08-04</lastmod>
   </url>
   <url>
@@ -1825,6 +1837,14 @@
     <lastmod>2026-03-22</lastmod>
   </url>
   <url>
+    <loc>https://extensionto.com/fr/blog/best-ram-saving-extensions-2026</loc>
+    <lastmod>2026-03-22</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/es/blog/best-ram-saving-extensions-2026</loc>
+    <lastmod>2026-03-22</lastmod>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/how-to-use-desktop-extensions-on-phone</loc>
     <lastmod>2026-03-21</lastmod>
   </url>
@@ -2991,17 +3011,5 @@
   <url>
     <loc>https://extensionto.com/blog/internet-download-manager-extension</loc>
     <lastmod>2025-05-20</lastmod>
-  </url>
-  <url>
-    <loc>https://extensionto.com/fr/blog/best-ram-saving-extensions-2026</loc>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://extensionto.com/es/blog/best-ram-saving-extensions-2026</loc>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 </urlset>
