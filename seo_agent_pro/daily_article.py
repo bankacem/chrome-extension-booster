@@ -147,14 +147,29 @@ def _is_topically_duplicate(keyword: str, index_path: Path = None) -> str | None
     arr = data if isinstance(data, list) else data.get("articles", [])
 
     kw_words = _content_words(keyword)
-    if len(kw_words) < 3:
-        # Short/broad keywords (e.g. "online privacy") naturally share all
-        # their significant words with many narrower single-tool articles
-        # without actually duplicating intent — a broad category roundup
-        # is legitimately different from a single-product review even at
-        # 100% word overlap. Only apply this check once there's enough
-        # signal (3+ real content words) to distinguish coincidental
-        # vocabulary overlap from genuine duplicate intent.
+    if len(kw_words) == 0:
+        return None
+    if len(kw_words) == 1:
+        # A single content word only over-triggers when that word is a
+        # generic domain term (e.g. "privacy" alone would match too much).
+        # A single LONG/specific word (e.g. "freelancers") is actually a
+        # strong, precise signal on its own — missed exactly this case:
+        # 'best chrome extensions for freelancers' vs an existing 'Best
+        # Chrome Extensions for Freelancers' article, skipped because the
+        # old 3-word minimum excluded it entirely. Require the word be
+        # reasonably specific (7+ chars) rather than requiring a word count
+        # that a real duplicate can trivially fall under.
+        word = next(iter(kw_words))
+        if len(word) < 7:
+            return None
+        for a in arr:
+            if word in _content_words(a.get("title", "")):
+                return a.get("slug", "")
+        return None
+    if len(kw_words) == 2:
+        # Two generic domain words (e.g. "online privacy") legitimately
+        # overlap 100% with narrower single-product titles without being
+        # duplicate intent — not enough signal on its own either way.
         return None
 
     for a in arr:
