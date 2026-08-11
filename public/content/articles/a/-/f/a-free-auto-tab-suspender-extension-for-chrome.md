@@ -12,7 +12,7 @@ category: "Performance & Memory"
 tags: []
 keywords:
   - Auto tab suspender extension free download
-meta_description: "Are you tired of dealing with sluggish browser performance due to numerous open tabs?"
+meta_description: "A free auto tab suspender extension that automatically frees up memory from idle tabs, fixing the sluggish performance of an overloaded browser."
 status: published
 published_at: '2026-02-26T09:00:00.755+00:00'
 scheduled_at: '2026-02-26T09:00:00+00:00'

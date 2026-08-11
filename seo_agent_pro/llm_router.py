@@ -59,14 +59,14 @@ def validate_config(model_name: str) -> tuple[str, str]:
 #  Anthropic
 # ──────────────────────────────────────────────────────────────
 
-def _call_anthropic(model_id: str, system: str, user: str, stream: bool) -> str:
+def _call_anthropic(model_id: str, system: str, user: str, stream: bool, max_tokens: int) -> str:
     client = anthropic.Anthropic(api_key=API_KEYS["anthropic"])
     full   = ""
 
     if stream:
         with client.messages.stream(
             model=model_id,
-            max_tokens=SETTINGS["max_tokens"],
+            max_tokens=max_tokens,
             system=system,
             messages=[{"role": "user", "content": user}],
         ) as s:
@@ -77,7 +77,7 @@ def _call_anthropic(model_id: str, system: str, user: str, stream: bool) -> str:
     else:
         msg  = client.messages.create(
             model=model_id,
-            max_tokens=SETTINGS["max_tokens"],
+            max_tokens=max_tokens,
             system=system,
             messages=[{"role": "user", "content": user}],
         )
@@ -90,7 +90,7 @@ def _call_anthropic(model_id: str, system: str, user: str, stream: bool) -> str:
 #  OpenRouter  (OpenAI-compatible REST)
 # ──────────────────────────────────────────────────────────────
 
-def _call_openrouter(model_id: str, system: str, user: str, stream: bool) -> str:
+def _call_openrouter(model_id: str, system: str, user: str, stream: bool, max_tokens: int) -> str:
     url     = "https://openrouter.ai/api/v1/chat/completions"
     headers = {
         "Authorization":  f"Bearer {API_KEYS['openrouter']}",
@@ -100,7 +100,7 @@ def _call_openrouter(model_id: str, system: str, user: str, stream: bool) -> str
     }
     payload = {
         "model":      model_id,
-        "max_tokens": SETTINGS["max_tokens"],
+        "max_tokens": max_tokens,
         "stream":     stream,
         "messages": [
             {"role": "system", "content": system},
@@ -140,7 +140,7 @@ def _call_openrouter(model_id: str, system: str, user: str, stream: bool) -> str
 #  Groq  (OpenAI-compatible REST — no streaming via urllib)
 # ──────────────────────────────────────────────────────────────
 
-def _call_groq(model_id: str, system: str, user: str, stream: bool) -> str:
+def _call_groq(model_id: str, system: str, user: str, stream: bool, max_tokens: int) -> str:
     url     = "https://api.groq.com/openai/v1/chat/completions"
     headers = {
         "Authorization": f"Bearer {API_KEYS['groq']}",
@@ -155,7 +155,7 @@ def _call_groq(model_id: str, system: str, user: str, stream: bool) -> str:
     }
     payload = {
         "model":      model_id,
-        "max_tokens": SETTINGS["max_tokens"],
+        "max_tokens": max_tokens,
         "stream":     stream,
         "messages": [
             {"role": "system", "content": system},
@@ -197,7 +197,7 @@ def _call_groq(model_id: str, system: str, user: str, stream: bool) -> str:
 #  and parsing according to Bluesminds API docs.
 # ──────────────────────────────────────────────────────────────
 
-def _call_bluesminds(model_id: str, system: str, user: str, stream: bool) -> str:
+def _call_bluesminds(model_id: str, system: str, user: str, stream: bool, max_tokens: int) -> str:
     url     = "https://api.bluesminds.com/v1/chat/completions"  # Confirm with Bluesminds docs
     headers = {
         "Authorization": f"Bearer {API_KEYS['bluesminds']}",
@@ -205,7 +205,7 @@ def _call_bluesminds(model_id: str, system: str, user: str, stream: bool) -> str
     }
     payload = {
         "model":      model_id,
-        "max_tokens": SETTINGS["max_tokens"],
+        "max_tokens": max_tokens,
         "stream":     stream,
         "messages": [
             {"role": "system", "content": system},
@@ -258,7 +258,7 @@ def _call_bluesminds(model_id: str, system: str, user: str, stream: bool) -> str
 #  URL and exact model IDs an account has access to can change.
 # ──────────────────────────────────────────────────────────────
 
-def _call_agentrouter(model_id: str, system: str, user: str, stream: bool) -> str:
+def _call_agentrouter(model_id: str, system: str, user: str, stream: bool, max_tokens: int) -> str:
     headers = {
         "Authorization": f"Bearer {API_KEYS['agentrouter']}",
         "Content-Type":  "application/json",
@@ -268,7 +268,7 @@ def _call_agentrouter(model_id: str, system: str, user: str, stream: bool) -> st
     }
     payload = {
         "model":      model_id,
-        "max_tokens": SETTINGS["max_tokens"],
+        "max_tokens": max_tokens,
         "stream":     stream,
         "messages": [
             {"role": "system", "content": system},
@@ -356,15 +356,25 @@ def call(
     user:   str,
     model_name: str,
     stream: bool = True,
+    max_tokens: int | None = None,
 ) -> str:
     """
     Route a prompt to the correct provider and return the response text.
     Automatically retries on transient server errors (rate limits, gateway
     timeouts) instead of crashing the whole pipeline on the first blip.
+
+    max_tokens defaults to SETTINGS["max_tokens"] (sized for full article
+    generation) when not given. Real failure this parameter fixes: every
+    call — including small ones like a JSON category classification or a
+    150-word meta description — was requesting the SAME large budget as a
+    full article write, and Groq's TPM rate limit counts the requested
+    max_tokens against the cap regardless of how much is actually used, so
+    small calls were eating a full article's worth of quota for no reason.
     """
     provider, model_id = validate_config(model_name)
+    effective_max_tokens = max_tokens or SETTINGS["max_tokens"]
 
-    print(c("dim", f"  ↳ {provider} / {model_id}"))
+    print(c("dim", f"  ↳ {provider} / {model_id} (max_tokens={effective_max_tokens})"))
 
     last_error = None
     attempt = 0
@@ -372,15 +382,15 @@ def call(
         attempt += 1
         try:
             if provider == "anthropic":
-                return _call_anthropic(model_id, system, user, stream)
+                return _call_anthropic(model_id, system, user, stream, effective_max_tokens)
             elif provider == "openrouter":
-                return _call_openrouter(model_id, system, user, stream)
+                return _call_openrouter(model_id, system, user, stream, effective_max_tokens)
             elif provider == "groq":
-                return _call_groq(model_id, system, user, stream)
+                return _call_groq(model_id, system, user, stream, effective_max_tokens)
             elif provider == "bluesminds":
-                return _call_bluesminds(model_id, system, user, stream)
+                return _call_bluesminds(model_id, system, user, stream, effective_max_tokens)
             elif provider == "agentrouter":
-                return _call_agentrouter(model_id, system, user, stream)
+                return _call_agentrouter(model_id, system, user, stream, effective_max_tokens)
             else:
                 print(c("red", f"  ✗ Unknown provider: {provider}"))
                 sys.exit(1)
@@ -415,10 +425,14 @@ def call(
             raise
 
 
-def call_json(system: str, user: str, model_name: str) -> dict | list:
-    """Call the model and parse the response as JSON."""
+def call_json(system: str, user: str, model_name: str, max_tokens: int = 1500) -> dict | list:
+    """Call the model and parse the response as JSON. Defaults to a much
+    smaller max_tokens than full article generation — JSON responses (even
+    ones embedding a short markdown section, like the Refiner's gap
+    analysis) are far shorter than a full article, and requesting the full
+    budget was needlessly eating into providers' per-minute token limits."""
     system_j = system + "\n\nIMPORTANT: Return only valid JSON — no prose, no markdown fences."
-    raw      = call(system_j, user, model_name, stream=False)
+    raw      = call(system_j, user, model_name, stream=False, max_tokens=max_tokens)
     raw      = re.sub(r"```(?:json)?", "", raw).strip()
 
     def _try_parse(text: str):

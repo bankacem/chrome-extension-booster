@@ -174,6 +174,7 @@ def run(state: dict) -> dict:
         f'Valid categories:\n{json.dumps(taxonomy, indent=2)}\n\n'
         f'Return JSON: {{"category": "<one of the valid categories, verbatim>"}}',
         model,
+        max_tokens=100,
     )
     category = cat_result.get("category", "").strip()
     if category not in taxonomy:
@@ -188,6 +189,7 @@ def run(state: dict) -> dict:
         f'Write a meta description for an article targeting the keyword "{keyword}". '
         f"Article title: {title}",
         model,
+        max_tokens=200,
     ).strip().strip('"')
     print(c("green", f"  ✓ meta description: {len(meta_description)} chars"))
 
