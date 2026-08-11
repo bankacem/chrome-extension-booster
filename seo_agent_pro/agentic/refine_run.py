@@ -33,10 +33,12 @@ import yaml
 from llm_router import find_working_model, c
 from agentic import memory_store
 from agentic.agents import refiner
+from agentic import live_check
 
 ROOT = Path(__file__).resolve().parents[2]
 ARTICLES_DIR = ROOT / "public" / "content" / "articles"
 REFINED_LOG_PATH = Path(__file__).resolve().parent / "memory" / "refined_articles.json"
+STALE_FLAGGED_LOG_PATH = Path(__file__).resolve().parent / "memory" / "stale_git_flagged.json"
 
 MODEL_FALLBACK_CHAIN = [
     "bluesminds-gpt4o",
@@ -64,6 +66,28 @@ def _mark_refined(slug: str) -> None:
     )
 
 
+def _load_stale_flagged() -> dict:
+    """slug -> details dict, for articles where git looked stale vs. live
+    production the last time we checked. Kept separate from the normal
+    refined-slugs log because these are NOT done - they're skipped pending
+    a human reconciling git with production, and should stay visible."""
+    if not STALE_FLAGGED_LOG_PATH.exists():
+        return {}
+    try:
+        return json.loads(STALE_FLAGGED_LOG_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def _mark_stale_flagged(slug: str, details: dict) -> None:
+    flagged = _load_stale_flagged()
+    flagged[slug] = details
+    STALE_FLAGGED_LOG_PATH.parent.mkdir(exist_ok=True)
+    STALE_FLAGGED_LOG_PATH.write_text(
+        json.dumps(flagged, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+
+
 def _parse(path: Path):
     text = path.read_text(encoding="utf-8")
     m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.DOTALL)
@@ -75,6 +99,7 @@ def _parse(path: Path):
 def _oldest_unrefined_articles(count: int, forced_slug: str | None) -> list[Path]:
     files = glob.glob(str(ARTICLES_DIR / "**" / "*.md"), recursive=True)
     refined = _load_refined_slugs()
+    stale_flagged = set(_load_stale_flagged().keys())
 
     candidates = []
     for f in files:
@@ -86,7 +111,7 @@ def _oldest_unrefined_articles(count: int, forced_slug: str | None) -> list[Path
             if slug == forced_slug:
                 return [Path(f)]
             continue
-        if slug in refined:
+        if slug in refined or slug in stale_flagged:
             continue
         published_at = str(fm.get("published_at") or "")
         candidates.append((published_at, Path(f)))
@@ -112,6 +137,19 @@ def refine_one(path: Path, model: str) -> dict:
     fm, body = _parse(path)
     if fm is None:
         return {"path": str(path), "skipped": "no frontmatter"}
+
+    slug = fm.get("slug", "")
+    check = live_check.check_git_matches_live(slug, body)
+    if check["status"] == "stale_git":
+        print(c("red", f"  ✗ SKIPPING - git looks stale vs. live production "
+                        f"(live: {check['live_words']} words, git: {check['git_words']} words, "
+                        f"ratio {check['ratio']}x). Flagged for manual reconciliation, not touched."))
+        _mark_stale_flagged(slug, check)
+        return {"path": str(path), "slug": slug, "skipped": "stale_git", "live_check": check}
+    elif check["status"] == "unverified":
+        print(c("dim", f"  · live-vs-git check inconclusive ({check['reason']}) - proceeding anyway"))
+    else:
+        print(c("dim", f"  · live-vs-git check OK (live: {check['live_words']}w, git: {check['git_words']}w)"))
 
     result = refiner.run({
         "frontmatter": fm,
@@ -168,6 +206,7 @@ def main():
     model = forced_model or find_working_model(MODEL_FALLBACK_CHAIN)
     print(f"Using model: {model!r}\n")
 
+    stale_skipped = 0
     for path in targets:
         rel = path.relative_to(ROOT)
         print(c("bold", f"\n=== {rel} ==="))
@@ -176,10 +215,19 @@ def main():
         except Exception as e:
             print(c("red", f"  ✗ error: {e}"))
             continue
+        if result.get("skipped") == "stale_git":
+            stale_skipped += 1
+            continue
         if result.get("metadata_changes"):
             print(c("green", f"  metadata fixed: {list(result['metadata_changes'].keys())}"))
         if result.get("gap_added"):
             print(c("yellow", f"  section added: {result.get('gap_title')}"))
+
+    if stale_skipped:
+        print(c("yellow", f"\n⚠ {stale_skipped} article(s) skipped this run because git looked "
+                           f"stale vs. live production - see seo_agent_pro/agentic/memory/"
+                           f"stale_git_flagged.json. These need a human to reconcile git with "
+                           f"production before the Refiner Agent will touch them again."))
 
 
 if __name__ == "__main__":
