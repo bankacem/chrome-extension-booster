@@ -399,7 +399,18 @@ def call(
             body = e.read().decode("utf-8", errors="replace")
             last_error = e
             effective_max = MAX_RETRIES_429 if e.code == 429 else MAX_RETRIES
-            if e.code in RETRYABLE_HTTP_CODES and attempt < effective_max:
+            # Bluesminds has been seen returning HTTP 400 with a body like
+            # {"error":{"type":"no_db_connection", ...}} for what is really
+            # a transient backend outage on their end, not an actual bad
+            # request from us — normal HTTP semantics would treat 400 as
+            # non-retryable (client error), which killed a real refiner run
+            # partway through a 15-article batch on a purely transient blip.
+            # Detect this specific case and retry it like a 500 would be.
+            is_transient_db_error = (
+                e.code == 400
+                and re.search(r"no_db_connection|no connected db", body, re.IGNORECASE)
+            )
+            if (e.code in RETRYABLE_HTTP_CODES or is_transient_db_error) and attempt < effective_max:
                 delay = RETRY_BASE_DELAY_SECONDS * attempt
                 if e.code == 429:
                     # Real failure seen in production: Groq's free-tier TPM
