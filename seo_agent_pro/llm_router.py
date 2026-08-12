@@ -429,7 +429,15 @@ def call(
                 continue
             print(c("red", f"\n  ✗ HTTP {e.code}: {e.reason}"))
             print(c("dim", f"  {body[:300]}"))
-            sys.exit(1)
+            # Raise rather than sys.exit(1): a bare SystemExit doesn't
+            # inherit from Exception, so callers using `except Exception`
+            # to skip a single failed item and continue a batch (like
+            # refine_run.py processing 15 articles) never actually caught
+            # this — one article's exhausted-retries LLM failure was
+            # silently killing the entire batch instead of just that one
+            # article. Re-raising the original HTTPError lets any caller
+            # decide: catch-and-continue, or let it propagate and exit.
+            raise
 
         except Exception as e:
             print(c("red", f"\n  ✗ Error calling {provider}: {e}"))
