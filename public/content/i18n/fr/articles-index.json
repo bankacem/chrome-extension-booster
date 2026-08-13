@@ -54,5 +54,32 @@
     ],
     "canonicalPath": "/fr/blog/best-chrome-ad-blockers-without-slowing-your-browser",
     "updated_at": "2026-08-04T08:55:00.000000+00:00"
+  },
+  {
+    "id": "how-to-store-passwords-safely-in-your-browser",
+    "title": "Comment stocker vos mots de passe en toute sécurité dans votre navigateur",
+    "slug": "how-to-store-passwords-safely-in-your-browser",
+    "description": "Découvrez comment stocker vos mots de passe en toute sécurité dans votre navigateur : gestionnaires intégrés vs tiers, bonnes pratiques et authentification à deux facteurs.",
+    "meta_description": "Découvrez comment stocker vos mots de passe en toute sécurité dans votre navigateur : gestionnaires intégrés vs tiers, bonnes pratiques et authentification à deux facteurs.",
+    "excerpt": "Stocker vos mots de passe en toute sécurité dans votre navigateur est un aspect essentiel de la sécurité en ligne. Voici les bonnes pratiques pour protéger vos comptes.",
+    "published_at": "2026-03-02T08:11:02.401+00:00",
+    "category": "Security & Privacy",
+    "author": "James Mitchell",
+    "image_url": "/content/images/how-to-store-passwords-safely-in-your-browser/featured.webp",
+    "featured_image": "/content/images/how-to-store-passwords-safely-in-your-browser/featured.webp",
+    "reading_time": 6,
+    "read_time": 6,
+    "views": 0,
+    "tags": [
+      "mots de passe",
+      "securite",
+      "gestionnaire de mots de passe"
+    ],
+    "keywords": [
+      "stocker mots de passe navigateur en securite",
+      "gestionnaire mots de passe chrome"
+    ],
+    "canonicalPath": "/fr/blog/how-to-store-passwords-safely-in-your-browser",
+    "updated_at": "2026-03-16T14:43:26.575768+00:00"
   }
 ]

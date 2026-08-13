@@ -54,5 +54,32 @@
     ],
     "canonicalPath": "/es/blog/best-chrome-ad-blockers-without-slowing-your-browser",
     "updated_at": "2026-08-04T08:55:00.000000+00:00"
+  },
+  {
+    "id": "how-to-store-passwords-safely-in-your-browser",
+    "title": "Cómo guardar tus contraseñas de forma segura en tu navegador",
+    "slug": "how-to-store-passwords-safely-in-your-browser",
+    "description": "Descubre cómo guardar tus contraseñas de forma segura en el navegador: gestores integrados frente a terceros, buenas prácticas y autenticación de dos factores.",
+    "meta_description": "Descubre cómo guardar tus contraseñas de forma segura en el navegador: gestores integrados frente a terceros, buenas prácticas y autenticación de dos factores.",
+    "excerpt": "Guardar tus contraseñas de forma segura en tu navegador es un aspecto esencial de la seguridad en línea. Estas son las mejores prácticas para proteger tus cuentas.",
+    "published_at": "2026-03-02T08:11:02.401+00:00",
+    "category": "Security & Privacy",
+    "author": "James Mitchell",
+    "image_url": "/content/images/how-to-store-passwords-safely-in-your-browser/featured.webp",
+    "featured_image": "/content/images/how-to-store-passwords-safely-in-your-browser/featured.webp",
+    "reading_time": 6,
+    "read_time": 6,
+    "views": 0,
+    "tags": [
+      "contraseñas",
+      "seguridad",
+      "gestor de contraseñas"
+    ],
+    "keywords": [
+      "guardar contraseñas navegador de forma segura",
+      "gestor de contraseñas chrome"
+    ],
+    "canonicalPath": "/es/blog/how-to-store-passwords-safely-in-your-browser",
+    "updated_at": "2026-03-16T14:43:26.575768+00:00"
   }
 ]

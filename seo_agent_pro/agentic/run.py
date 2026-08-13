@@ -160,8 +160,17 @@ def main():
         raise RuntimeError(f"All candidate models failed to complete the pipeline.\n{detail}")
 
     status = final_state.get("final_status", "failed")
-    if status == "published":
-        legacy.mark_keyword_used(keyword)
+    # Always mark the keyword used, regardless of final status — not just
+    # on "published". The original intent of only marking on success was
+    # to let a rejected keyword retry with a fresh angle the next day, but
+    # the real effect: a rejected/draft PR sits open awaiting human review,
+    # and the next day's run has no way to know that keyword is already
+    # "in flight", so it generates ANOTHER attempt at the exact same topic
+    # — confirmed happening for real (two separate 'online course students'
+    # PRs, #259 and #263, three days apart, neither aware of the other).
+    # A human can always deliberately remove a keyword from used_keywords
+    # to force a genuine retry after closing/rejecting its PR.
+    legacy.mark_keyword_used(keyword)
 
     out_path = write_article_file(final_state)
     rel = out_path.relative_to(ROOT)
