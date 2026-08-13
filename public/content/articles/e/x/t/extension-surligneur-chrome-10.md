@@ -1,15 +1,15 @@
 ---
-seo_title: "A Highlighting Extension for Chrome"
+seo_title: A Highlighting Extension for Chrome
 id: 54dc07ef-a2d2-4d9e-9fa3-252bb2edaecb
-title: 'A Highlighting Extension for Chrome'
+title: A Highlighting Extension for Chrome
 slug: extension-surligneur-chrome-10
-excerpt: "Are you tired of tedious note-taking and tedious text highlighting while browsing the web?"
+excerpt: Are you tired of tedious note-taking and tedious text highlighting while browsing the web?
 featured_image: /content/images/extension-surligneur-chrome-10/featured.webp
-category: "Productivity & Tools"
+category: Productivity & Tools
 tags: []
 keywords:
-  - extension surligneur chrome
-meta_description: "Are you tired of tedious note-taking and tedious text highlighting while browsing the web?"
+- extension surligneur chrome
+meta_description: Are you tired of tedious note-taking and tedious text highlighting while browsing the web?
 status: published
 published_at: '2026-02-04T02:11:00.582+00:00'
 scheduled_at: '2026-02-04T02:11:00+00:00'
@@ -19,7 +19,7 @@ views: 0
 read_time: 5
 created_at: '2026-01-24T18:21:53.440849+00:00'
 updated_at: '2026-04-23T12:26:19.803212+00:00'
-description: "Are you tired of tedious note-taking and tedious text highlighting while browsing the web?"
+description: Are you tired of tedious note-taking and tedious text highlighting while browsing the web?
 ---
 
 <img src="/content/images/extension-surligneur-chrome-10/featured.webp" alt="Unlock the Power of Highlighting with the Best Extension Surligneur Chrome" width="1200" height="630" loading="lazy" class="featured-image">
@@ -128,3 +128,26 @@ description: "Are you tired of tedious note-taking and tedious text highlighting
     </a>
   </div>
 </div>
+
+## How to Install and Set Up a Chrome Highlighting Extension
+
+Getting started with any **extension surligneur Chrome** is easier than you might think. Follow these three simple steps and you’ll be highlighting web pages in no time.
+
+1. **Add the extension to Chrome**
+   - Open the Chrome Web Store and search for the extension name (e.g., *Quick Screenshot Lite* or any other highlighter you prefer).
+   - Click **Add to Chrome** and confirm the permissions dialog. Chrome will download and install the extension automatically; you’ll see its icon appear to the right of the address bar.
+
+2. **Configure your highlighter preferences**
+   - Click the new icon and select **Options** or **Settings** from the dropdown menu.
+   - Choose your default colours, line thickness, and whether you want highlights to be saved automatically.
+   - Enable optional features such as **auto‑sync with Google Drive**, **keyboard shortcuts**, or **export to PDF** if the extension offers them.
+
+3. **Create your first highlight**
+   - Navigate to any web page you want to study.
+   - Highlight text by clicking and dragging, or use the shortcut you defined (e.g., `Ctrl+Shift+H`).
+   - Add a note by clicking the small pencil icon that appears next to the selection.
+   - Your highlights are saved instantly; you can view them later by opening the extension’s sidebar or by clicking the **My Highlights** tab.
+
+**Pro tip:** If you work across multiple devices, enable the sync feature in the settings panel. This stores your highlights in the cloud, allowing you to access them from any Chrome browser where you’re signed in.
+
+With the extension now installed and personalized, you’re ready to turn any web page into an interactive study aid. Happy highlighting!
