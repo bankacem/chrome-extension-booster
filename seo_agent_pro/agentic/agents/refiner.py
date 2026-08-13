@@ -86,6 +86,45 @@ def _fix_metadata(fm: dict, body: str, model: str) -> tuple[dict, str, dict]:
     return fm, body, changes
 
 
+def _protected_spans(body: str) -> list[tuple[int, int]]:
+    """Spans of `body` that must never have a Markdown link inserted into
+    them: HTML tags/attributes themselves (e.g. `alt="..."`), and the text
+    content of heading tags specifically (`<h1>`/`<h2>`/`<h3>`) — this site's
+    renderer doesn't re-process Markdown found inside raw HTML, so a link
+    inserted there shows up as literal broken `[text](url)` on the live
+    page instead of an actual link. Real incident this fixes: a refiner
+    batch inserted links into `<img alt="...">` and `<h2>...</h2>` across
+    10 already-published articles, visibly breaking their headings/alt text.
+    """
+    spans = [m.span() for m in re.finditer(r"<[^>]*>", body)]
+    for m in re.finditer(r"<h[123][^>]*>(.*?)</h[123]>", body, re.DOTALL):
+        spans.append(m.span(1))
+    return spans
+
+
+def _in_protected_span(pos: int, spans: list[tuple[int, int]]) -> bool:
+    return any(start <= pos < end for start, end in spans)
+
+
+# Same generic-word filter as optimizer.py's — a phrase made entirely of
+# terms so common across this site's own titles (chrome, extension(s),
+# best, top, guide, how, for, etc.) carries no real topical specificity,
+# and matching on one links completely unrelated articles together. This
+# refiner has its own separate link-insertion code path from optimizer.py
+# and didn't inherit that fix — found the exact same failure mode here
+# independently (e.g. "[How to Fix]" linked to an unrelated article).
+_SITE_GENERIC_WORDS = {
+    "how", "to", "the", "best", "top", "a", "an", "for", "of", "in", "on",
+    "and", "or", "what", "is", "guide", "chrome", "extension", "extensions",
+    "your", "you", "with", "vs", "2026", "2025",
+}
+
+
+def _has_content_word(phrase: str) -> bool:
+    words = re.findall(r"[a-zA-Z0-9]+", phrase.lower())
+    return any(w not in _SITE_GENERIC_WORDS and len(w) > 2 for w in words)
+
+
 def _add_internal_links(title: str, keyword: str, body: str, own_slug: str = "", max_links: int = 2) -> tuple[str, list[str]]:
     """
     Same deterministic phrase-matching approach as optimizer.py: only ever
@@ -114,12 +153,15 @@ def _add_internal_links(title: str, keyword: str, body: str, own_slug: str = "",
         if len(words) > 2:
             phrase_candidates.append(" ".join(words[:3]))
             phrase_candidates.append(" ".join(words[:2]))
+        phrase_candidates = [p for p in phrase_candidates if _has_content_word(p)]
 
         for phrase in phrase_candidates:
             if len(phrase) < 4:
                 continue
             pattern = re.compile(r"(?<!\]\()(?<![\[\w])" + re.escape(phrase) + r"(?![\w\]])", re.IGNORECASE)
-            m = pattern.search(body)
+            protected = _protected_spans(body)
+            m = next((cand_m for cand_m in pattern.finditer(body)
+                      if not _in_protected_span(cand_m.start(), protected)), None)
             if m:
                 matched_text = body[m.start():m.end()]
                 body = body[:m.start()] + f"[{matched_text}](/blog/{slug})" + body[m.end():]

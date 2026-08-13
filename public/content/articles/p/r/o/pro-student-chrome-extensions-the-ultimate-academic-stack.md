@@ -26,7 +26,7 @@ created_at: '2026-01-19T13:57:43.148887+00:00'
 updated_at: '2026-02-02T13:41:21.892982+00:00'
 ---
 
-<img src="/content/images/pro-student-chrome-extensions-the-ultimate-academic-stack/featured.webp" alt="Pro Student Chrome Extensions: [The Ultimate](/blog/the-ultimate-chrome-extensions-for-shopping-guide) Academic Stack" width="1200" height="630" loading="lazy" class="featured-image">
+<img src="/content/images/pro-student-chrome-extensions-the-ultimate-academic-stack/featured.webp" alt="Pro Student Chrome Extensions: The Ultimate Academic Stack" width="1200" height="630" loading="lazy" class="featured-image">
 
 <p><!-- wp:heading {"level":4} --></p>
 <h4 class="wp-block-heading">The Academic Arsenal: Mastering Chrome Extensions for Students Pro Level</h4>

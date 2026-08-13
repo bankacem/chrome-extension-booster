@@ -21,7 +21,7 @@ created_at: '2026-01-20T14:42:05.753389+00:00'
 updated_at: '2026-03-03T17:57:57.110437+00:00'
 ---
 
-<img src="/content/images/extend-laptop-battery-life-by-suspending-tabs-8/featured.webp" alt="[How to](/blog/article2-bitwarden-setup-guide) Extend Laptop Battery Life by Suspending Tabs: The Ultimate Guide" width="1200" height="630" loading="lazy" class="featured-image">
+<img src="/content/images/extend-laptop-battery-life-by-suspending-tabs-8/featured.webp" alt="How to Extend Laptop Battery Life by Suspending Tabs: The Ultimate Guide" width="1200" height="630" loading="lazy" class="featured-image">
 
 <h2>How to Extend Laptop Battery Life by Suspending Tabs: The Ultimate Guide</h2>
 

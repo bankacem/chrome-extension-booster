@@ -23,7 +23,7 @@ updated_at: '2026-04-23T12:27:52.562568+00:00'
 description: Welcome to the ultimate Full Page Screenshot Chrome Guide, where you'll learn how to capture entire web pages with ease.
 ---
 
-<img src="/content/images/full-page-screenshot-chrome-guide-9/featured.webp" alt="[Full Page Screenshot](/blog/full-page-screenshot-chrome-tutorial-8) Chrome Guide: Capture Web Pages Like a Pro" width="1200" height="630" loading="lazy" class="featured-image">
+<img src="/content/images/full-page-screenshot-chrome-guide-9/featured.webp" alt="Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro" width="1200" height="630" loading="lazy" class="featured-image">
 
 <h2>Full Page Screenshot Chrome Guide: Capture Web Pages Like a Pro</h2>
 
