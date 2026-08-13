@@ -32,7 +32,7 @@ updated_at: '2026-04-23T12:28:52.080856+00:00'
 <p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
 <p>The answer lies in the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>. But wading through thousands of "<a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">productivity</a> boosters" to find the ones that aren't just disguised spyware or paywall traps is a full-time job. I&rsquo;ve done it for you.</p>
 <p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
-<p>Below is a curated, battle-tested arsenal of [free Chrome](/blog/free-chrome-extension-reviews-how-to-spot-the-gems-and-dodge-the-junk) <a href="/blog/top-10-google-sheets-extensions-for-accounting-8" class="internal-link" title="Top 10 Google Sheets Extensions for Accounting: Streamlining Financial Workflows in 2025">extensions</a> for 2024-2025 that will fundamentally alter your academic workflow.</p>
+<p>Below is a curated, battle-tested arsenal of <a href="/blog/free-chrome-extension-reviews-how-to-spot-the-gems-and-dodge-the-junk" class="internal-link" title="Free Chrome Extension Reviews: How to Spot the Gems and Dodge the Junk">free Chrome extension</a> <a href="/blog/top-10-google-sheets-extensions-for-accounting-8" class="internal-link" title="Top 10 Google Sheets Extensions for Accounting: Streamlining Financial Workflows in 2025">extensions</a> for 2024-2025 that will fundamentally alter your academic workflow.</p>
 <p><!-- /wp:paragraph --> <!-- wp:image {"sizeSlug":"large"} --></p>
 <figure class="wp-block-image size-large"><img src="" alt="" /></figure>
 <p><!-- /wp:image --> <!-- wp:heading {"level":1} --></p>
@@ -150,7 +150,7 @@ updated_at: '2026-04-23T12:28:52.080856+00:00'
 <p><!-- /wp:list --> <!-- wp:heading --></p>
 <h2 id="workflow" class="wp-block-heading">5. The "Power User" Workflow</h2>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Don't just install these extensions; make them talk to each other. Here is a <a href="/blog/how-to-create-complex-excel-formulas-easily" class="internal-link" title="[How to](/blog/how-to-install-chrome-extensions-for-free-without-wrecking-your-browser) Create Complex Excel Formulas Easily: A Professional Guide">professional</a> workflow for a research paper:</p>
+<p>Don't just install these extensions; make them talk to each other. Here is a <a href="/blog/how-to-create-complex-excel-formulas-easily" class="internal-link" title="How to Create Complex Excel Formulas Easily: A Professional Guide">professional</a> workflow for a research paper:</p>
 <p><!-- /wp:paragraph --> <!-- wp:list {"ordered":true} --></p>
 <ol class="wp-block-list"><!-- wp:list-item -->
 <li><strong>Discovery:</strong> Use <strong>Google Scholar Button</strong> (another must-have) to find papers. If you hit a paywall, let <strong>Unpaywall</strong> fetch the PDF.</li>
