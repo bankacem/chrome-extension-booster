@@ -1,0 +1,22 @@
+# Minimal override on top of SearXNG's own defaults (use_default_settings:
+# true keeps everything else - engines, UI, etc. - at upstream defaults).
+#
+# This file exists for exactly one reason: SearXNG disables the JSON output
+# format by default (it only serves HTML) as an anti-scraping measure. Our
+# GitHub Actions workflow needs JSON so daily_article.py can parse results
+# programmatically. Mounted read-only into the ephemeral container started
+# by .github/workflows/daily-article.yml - never deployed anywhere persistent,
+# never exposed outside that single job run.
+use_default_settings: true
+
+server:
+  # Any fixed value works - this instance never persists between runs and
+  # is never reachable from outside the job's own localhost network, so
+  # there's no real secret to protect here.
+  secret_key: "ephemeral-ci-instance-not-a-real-secret"
+  limiter: false  # the rate limiter is for public-facing instances; this one only ever serves one client (the job itself)
+
+search:
+  formats:
+    - html
+    - json

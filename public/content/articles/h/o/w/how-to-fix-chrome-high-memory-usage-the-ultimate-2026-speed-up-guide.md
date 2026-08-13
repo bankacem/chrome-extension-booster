@@ -37,7 +37,7 @@ canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 <h2 class="wp-block-heading">How to Fix Chrome High Memory Usage: The <a href="/blog/extend-laptop-battery-life-by-suspending-tabs-8" class="internal-link" title="How to Extend Laptop Battery Life by Suspending Tabs: The Ultimate Guide">Ultimate</a> 2026 Speed Up Guide</h2>
 <p><!-- /wp: heading --> <!-- wp: image {"id": 72,"sizeSlug": "large","linkDestination": "none"} --></p>
 <figure class="wp-block-image size-large"><img class="wp-image-72" src="https: //extensionto.com/wp-content/uploads/2025/12/How-to-Fix-Chrome-High-Memory-Usage-The-Ultimate-2026-Speed-Up-Guide-1024x585.png" alt="How to Fix Chrome High Memory Usage The Ultimate 2026 Speed Up Guide" />
-<figcaption class="wp-element-caption">[How to Fix](/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide) Chrome High Memory Usage [The Ultimate](/blog/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools) 2026 Speed Up Guide</figcaption>
+<figcaption class="wp-element-caption">How to Fix Chrome High Memory Usage The Ultimate 2026 Speed Up Guide</figcaption>
 </figure>
 <p><!-- /wp: image --> <!-- wp: paragraph --></p>
 <p>We&rsquo;ve all been there. You&rsquo;re in the middle of a project, you have maybe ten tabs open&mdash;hardly a digital hoard&mdash;and suddenly your fan sounds like a jet engine preparing for takeoff. Your mouse cursor starts to stutter. You check your system stats, and there it is: Google Chrome, gobbling up 80% of your RAM like it&rsquo;s an all-you-can-eat buffet.</p>
