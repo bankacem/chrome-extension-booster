@@ -440,5 +440,44 @@
     "final_status": "refined",
     "notes": "Metadata changes: []. Gap added: True — How to Install and Set Up an Extension Surligneur Chrome",
     "recorded_at": "2026-08-13T07:40:53.337331+00:00"
+  },
+  {
+    "keyword": "chrome ram usage",
+    "model": "llama-3.1-70b-groq",
+    "cycle_type": "refinement",
+    "score": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [],
+    "category": "Productivity & Tools",
+    "final_status": "refined",
+    "notes": "Metadata changes: []. Gap added: True — Inspecting Chrome’s Memory Usage with Task Manager and about:memory",
+    "recorded_at": "2026-08-13T23:57:48.855998+00:00"
+  },
+  {
+    "keyword": "browser extensions",
+    "model": "llama-3.1-70b-groq",
+    "cycle_type": "refinement",
+    "score": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [],
+    "category": "Productivity & Tools",
+    "final_status": "refined",
+    "notes": "Metadata changes: []. Gap added: True — ## Bookmark Management & Visual Organization",
+    "recorded_at": "2026-08-13T23:57:51.478123+00:00"
+  },
+  {
+    "keyword": "browser extensions",
+    "model": "llama-3.1-70b-groq",
+    "cycle_type": "refinement",
+    "score": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [],
+    "category": "Productivity & Tools",
+    "final_status": "refined",
+    "notes": "Metadata changes: []. Gap added: True — ## Enterprise Deployment & Policy Management of Browser Extensions",
+    "recorded_at": "2026-08-13T23:58:13.375332+00:00"
   }
 ]
