@@ -67,8 +67,6 @@ description: Are you looking to boost your productivity and streamline your work
 
 <p>Security is a top priority when it comes to managing your tasks and projects online. <strong>Extension Trello Chrome</strong> can offer enhanced security features such as encryption and secure authentication to protect your data. For an additional layer of security, consider using our <a href="/extension/securakey-pro" class="text-primary font-medium hover:underline">SecuraKey Pro</a> password manager to securely store your login credentials.</p>
 
-<img src="placeholder-image.jpg" alt="Trello boards on Chrome" class="w-full rounded-lg my-4" />
-
 <h2>Popular Extension Trello Chrome Options</h2>
 
 <p>There are several popular <strong>extension Trello Chrome</strong> options available, each with its unique features and benefits. Some of the top extensions include:</p>

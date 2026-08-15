@@ -96,8 +96,6 @@ description: "As the internet continues to evolve, so do the threats that lurk i
 
 <p>In conclusion, the <strong>extension Norton Chrome</strong> is a powerful tool that can help protect users from online threats. By installing this extension, users can enjoy a safer and more secure browsing experience. Remember to also utilize our <a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a> extension to block annoying popups and intrusive ads, further enhancing your online experience. Whether you're a casual browser or a heavy internet user, the <strong>extension Norton Chrome</strong> is an essential addition to your online security arsenal.</p>
 
-<img src="placeholder-image.jpg" alt="Extension Norton Chrome screenshot" class="w-full rounded-lg my-4" />
-
 <h2>Table of Contents</h2>
 
 <p><a href="#introduction" class="text-primary font-medium hover:underline">Introduction to Browser Extensions</a></p>

@@ -157,8 +157,8 @@ We tested the Chrome extensions of all major competitors under identical conditi
 
 **NordVPN wins on raw speed.** Surfshark comes close (only 4% slower) and offers unlimited devices. ExpressVPN is more consistent across all servers but slightly slower on average.
 
-> **Related:** See how NordVPN compares feature-for-feature in our [NordVPN vs ExpressVPN Chrome Extension comparison](article4.md).
-> **Related:** Looking for unlimited devices? Check our [Surfshark Chrome Extension Review](article2.md).
+> **Related:** See how NordVPN compares feature-for-feature in our [NordVPN vs ExpressVPN Chrome Extension comparison](/blog/vpn-article4-expressvpn-review).
+> **Related:** Looking for unlimited devices? Check our [Surfshark Chrome Extension Review](/blog/vpn-article2-nordvpn-speed-test).
 
 ---
 
@@ -277,10 +277,10 @@ For 90% of users, no. The extension handles streaming, browsing, and video calls
 
 ## Related Reading
 
-> **Related:** See our full [NordVPN Chrome Extension Review](article2.md) for features beyond speed.
-> **Related:** Compare NordVPN to the fastest alternative: [ExpressVPN Chrome Extension Review 2026](article4.md).
-> **Related:** Need a free option? Check [ProtonVPN Chrome Extension Free Review](article3.md).
-> **Related:** Want unlimited devices? Read our [Surfshark Chrome Extension Speed Test](article2.md).
+> **Related:** See our full [NordVPN Chrome Extension Review](/blog/vpn-article2-nordvpn-speed-test) for features beyond speed.
+> **Related:** Compare NordVPN to the fastest alternative: [ExpressVPN Chrome Extension Review 2026](/blog/vpn-article4-expressvpn-review).
+> **Related:** Need a free option? Check [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Want unlimited devices? Read our [Surfshark Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
 
 ---
 

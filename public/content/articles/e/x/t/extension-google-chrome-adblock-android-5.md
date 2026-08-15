@@ -95,8 +95,6 @@ description: "Are you tired of annoying ads disrupting your browsing experience 
   <li>Keep your Adblock extension up to date: Make sure to regularly update your Adblock extension to ensure that you have the latest filters and features.</li>
 </ul>
 
-<img src="placeholder-image.jpg" alt="A person holding an Android device with a blocked ad on the screen" class="w-full rounded-lg my-4" />
-
 <h2>Related Chrome Extensions</h2>
 <p>In addition to Adblock extensions, there are many other Chrome extensions that can enhance your browsing experience. Some popular options include:</p>
 <ul>

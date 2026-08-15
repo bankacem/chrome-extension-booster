@@ -92,8 +92,6 @@ description: "As a social media marketer or enthusiast, you're likely aware of t
 </ul>
 <p>Additionally, you may want to consider using other Chrome extensions that can help you optimize your social media experience, such as our <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension for capturing screenshots or our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension for reducing eye strain.</p>
 
-<img src="social-analytics-dashboard.jpg" alt="Social analytics dashboard with metrics and insights" class="w-full rounded-lg my-4" />
-
 <h2>Finding the Best <a href="/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs" class="internal-link" title="Unlocking the Power of Chrome: How to Find the Best Extension to Chrome for Your Needs">Extension to Chrome</a> for Your Needs</h2>
 <p>To find the best Chrome extension for your needs, you can check out our guide on <a href="/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs" class="text-primary font-medium hover:underline">Unlocking the Power of Chrome: How to Find the Best Extension to Chrome for Your Needs</a>. This guide provides tips and tricks for finding the perfect extension to enhance your browsing experience.</p>
 

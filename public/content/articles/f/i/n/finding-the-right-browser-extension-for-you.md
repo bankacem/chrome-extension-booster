@@ -81,8 +81,6 @@ description: "When it comes to customizing your browsing experience, finding the
 
 <p>3. <strong>Check compatibility</strong>: Ensure that the <strong>extension to</strong> you choose is compatible with your browser and operating system.</p>
 
-<img src="placeholder-image.jpg" alt="extension to screenshot" class="w-full rounded-lg my-4" />
-
 <h3>Popular Extensions to</h3>
 
 <p>Some popular <strong>extensions to</strong> that are worth considering include:</p>

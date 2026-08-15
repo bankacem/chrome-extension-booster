@@ -72,8 +72,6 @@ description: Are you tired of tedious note-taking and tedious text highlighting 
 
 <p>While there are many <strong>extension surligneur Chrome</strong> options available, our top pick is the <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension. This powerful tool allows you to capture full-page or visible area screenshots instantly, making it easy to highlight and annotate web pages. With its intuitive interface and customizable options, <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> is the perfect choice for anyone looking to streamline their online research and productivity.</p>
 
-<img src="quick-screenshot-lite-placeholder.jpg" alt="Quick Screenshot Lite extension screenshot" class="w-full rounded-lg my-4" />
-
 <h3>Other Useful Extensions</h3>
 
 <p>In addition to <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a>, there are several other useful extensions that can help you with your online research and productivity. Some of our top picks include:</p>

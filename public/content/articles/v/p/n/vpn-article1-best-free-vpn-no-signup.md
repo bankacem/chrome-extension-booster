@@ -44,7 +44,7 @@ If you need a free VPN Chrome extension with **zero signup** right now, here are
 | **#4** | **Betternet** | Unlimited | Slow | 5/10 | Basic privacy |
 | **#5** | **Touch VPN** | Unlimited | Slow | 4/10 | Last resort |
 
-**Reality check:** Every single "no signup" free VPN has a catch. Usually, it's your data being sold. If you can handle a 30-second email verification, [ProtonVPN](article3.md) and [Windscribe](article10.md) offer genuinely secure free tiers that are infinitely better.
+**Reality check:** Every single "no signup" free VPN has a catch. Usually, it's your data being sold. If you can handle a 30-second email verification, [ProtonVPN](/blog/vpn-article3-protonvpn-free-review) and [Windscribe](/blog/vpn-article10-windscribe-review) offer genuinely secure free tiers that are infinitely better.
 
 ---
 
@@ -89,8 +89,8 @@ Browsec is the most popular no-signup VPN extension on Chrome with approximately
 
 **Verdict:** Browsec is functional and convenient. But "no signup" means "no accountability." Use it for casual browsing only. Never for banking, shopping, or anything sensitive.
 
-> **Related:** For a truly secure free VPN (requires signup), see our [ProtonVPN Chrome Extension Review](article3.md).
-> **Related:** Compare all free options in our [Windscribe Chrome Extension Free Review](article10.md).
+> **Related:** For a truly secure free VPN (requires signup), see our [ProtonVPN Chrome Extension Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Compare all free options in our [Windscribe Chrome Extension Free Review](/blog/vpn-article10-windscribe-review).
 
 ---
 
@@ -259,10 +259,10 @@ You should consider a paid VPN if you:
 - Value actual privacy over convenience
 
 **Best affordable paid options:**
-- [NordVPN](article2.md): $3.39/month — fastest speeds, best for streaming
-- [ProtonVPN](article3.md): Free tier available, Plus at $4.99/month — best privacy
-- [Windscribe](article10.md): $5.75/month — build your own plan
-- [Surfshark](article2.md): $2.19/month — unlimited devices
+- [NordVPN](/blog/vpn-article2-nordvpn-speed-test): $3.39/month — fastest speeds, best for streaming
+- [ProtonVPN](/blog/vpn-article3-protonvpn-free-review): Free tier available, Plus at $4.99/month — best privacy
+- [Windscribe](/blog/vpn-article10-windscribe-review): $5.75/month — build your own plan
+- [Surfshark](/blog/vpn-article2-nordvpn-speed-test): $2.19/month — unlimited devices
 
 ---
 
@@ -315,10 +315,10 @@ Browsec or 1ClickVPN work best for unblocking YouTube on restricted networks. Ho
 
 ## Related Reading
 
-> **Related:** For a truly secure free VPN, read our [ProtonVPN Chrome Extension Free Review](article3.md).
-> **Related:** Need speed? See our [NordVPN Chrome Extension Speed Test](article2.md).
-> **Related:** Want unlimited devices? Check [Surfshark vs Chrome VPN Extensions](article2.md).
-> **Related:** Compare all free options: [Windscribe Chrome Extension Free Review](article10.md).
+> **Related:** For a truly secure free VPN, read our [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Need speed? See our [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Want unlimited devices? Check [Surfshark vs Chrome VPN Extensions](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Compare all free options: [Windscribe Chrome Extension Free Review](/blog/vpn-article10-windscribe-review).
 
 ---
 

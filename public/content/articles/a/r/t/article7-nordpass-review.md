@@ -197,9 +197,9 @@ For NordVPN subscribers, the bundle deal makes NordPass a no-brainer. For everyo
 
 ## Related Reading
 
-> **Related:** Compare NordPass to the free champion in our [Best Free Password Manager for Chrome guide](article1.md).
-> **Related:** See how NordPass compares to 1Password in our [Bitwarden vs 1Password comparison](article3.md).
-> **Related:** Looking for Swiss privacy? Read our [Proton Pass Chrome Extension Review](article8.md).
+> **Related:** Compare NordPass to the free champion in our [Best Free Password Manager for Chrome guide](/blog/article1-best-free-password-manager).
+> **Related:** See how NordPass compares to 1Password in our [Bitwarden vs 1Password comparison](/blog/article3-bitwarden-vs-1password).
+> **Related:** Looking for Swiss privacy? Read our [Proton Pass Chrome Extension Review](/blog/article8-protonpass-review).
 
 ---
 

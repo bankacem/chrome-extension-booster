@@ -80,8 +80,6 @@ updated_at: '2026-04-23T12:00:34.416648+00:00'
 
 <p>To maximize the benefits of Voice-to-Text Browser Tools, it's essential to explore integrations with other browser extensions. For instance, combining a Voice-to-Text Browser Tool with our <a href="/extension/formula-builder-pro" class="text-primary font-medium hover:underline">Formula Builder Pro</a> can streamline data entry and calculation tasks, while pairing it with our <a href="/extension/offline-reader-pro" class="text-primary font-medium hover:underline">Offline Reader Pro</a> can enable seamless note-taking and research capabilities, even without an internet connection.</p>
 
-<img src="voice-to-text-browser-tools.jpg" alt="Voice-to-Text Browser Tools in action" class="w-full rounded-lg my-4" />
-
 <h2>Best Practices for Using Voice-to-Text Browser Tools</h2>
 
 <p>To get the most out of Voice-to-Text Browser Tools, follow these best practices:</p>

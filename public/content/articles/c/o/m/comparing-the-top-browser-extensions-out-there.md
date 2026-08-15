@@ -114,7 +114,6 @@ By following these steps, you can find the best <strong>extension to020</strong>
 <p><strong>Q: Can I uninstall a browser extension?</strong></p>
 <p>A: Yes, you can uninstall a browser extension by going to your browser's extensions page, finding the extension, and clicking the "Remove" or "Uninstall" button.</p>
 
-<img src="placeholder-image.jpg" alt="Browser extensions on a desktop" class="w-full rounded-lg my-4" />
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">
   <h3 class="text-2xl font-bold mb-3">Get Quick Screenshot Lite Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Capture full page or visible area screenshots instantly.</p>

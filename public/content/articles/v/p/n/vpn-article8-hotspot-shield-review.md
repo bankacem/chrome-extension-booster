@@ -45,7 +45,7 @@ category: "Chrome Extensions"
 | **Price** | 6/10 | $7.99/month — overpriced for what you get |
 | **Overall** | **6.5/10** | Fast but untrustworthy. Better options exist. |
 
-**Bottom line:** Hotspot Shield is genuinely fast thanks to its proprietary Catapult Hydra protocol. But its privacy history, US jurisdiction, and opaque data practices make it hard to recommend when [NordVPN](article2.md) is faster, cheaper, and more trustworthy.
+**Bottom line:** Hotspot Shield is genuinely fast thanks to its proprietary Catapult Hydra protocol. But its privacy history, US jurisdiction, and opaque data practices make it hard to recommend when [NordVPN](/blog/vpn-article2-nordvpn-speed-test) is faster, cheaper, and more trustworthy.
 
 ---
 
@@ -295,10 +295,10 @@ For speed + privacy: NordVPN. For free unlimited: ProtonVPN. For streaming: Expr
 
 ## Related Reading
 
-> **Related:** See our full [NordVPN Chrome Extension Speed Test](article2.md) for the fastest alternative.
-> **Related:** Want genuinely free? Read [ProtonVPN Chrome Extension Free Review](article3.md).
-> **Related:** Compare premium options: [ExpressVPN Chrome Extension Review 2026](article4.md).
-> **Related:** Need no signup? Check [Best Free VPN Chrome Extension No Sign Up](article1.md).
+> **Related:** See our full [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test) for the fastest alternative.
+> **Related:** Want genuinely free? Read [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Compare premium options: [ExpressVPN Chrome Extension Review 2026](/blog/vpn-article4-expressvpn-review).
+> **Related:** Need no signup? Check [Best Free VPN Chrome Extension No Sign Up](/blog/vpn-article1-best-free-vpn-no-signup).
 
 ---
 

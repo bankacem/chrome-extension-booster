@@ -77,8 +77,8 @@ The free plan lacks advanced features like encrypted file storage, emergency acc
 
 **Verdict:** If you want the best free password manager for Chrome in 2026, stop reading and install Bitwarden. Seriously.
 
-> **Related:** Want to set up Bitwarden properly? Read our complete [Bitwarden Chrome Extension Setup Guide](article2.md).
-> **Related:** Curious how Bitwarden stacks up against premium options? See our [Bitwarden vs 1Password comparison](article3.md).
+> **Related:** Want to set up Bitwarden properly? Read our complete [Bitwarden Chrome Extension Setup Guide](/blog/article2-bitwarden-setup-guide).
+> **Related:** Curious how Bitwarden stacks up against premium options? See our [Bitwarden vs 1Password comparison](/blog/article3-bitwarden-vs-1password).
 
 ---
 
@@ -100,7 +100,7 @@ The free plan only works on **one device at a time**. If you primarily use Chrom
 
 **Verdict:** A beautiful tool with a frustrating device limit. Worth it if you're a single-device user.
 
-> **Related:** Read our full [NordPass Chrome Extension Review](article7.md) for deeper analysis.
+> **Related:** Read our full [NordPass Chrome Extension Review](/blog/article7-nordpass-review) for deeper analysis.
 
 ---
 
@@ -125,7 +125,7 @@ The Proton Pass Chrome extension is solid but still maturing. It handles autofil
 
 **Verdict:** If privacy is your #1 priority and you trust the Proton brand, this is your pick. For pure functionality, Bitwarden still edges ahead.
 
-> **Related:** See our detailed [Proton Pass Chrome Extension Review](article8.md).
+> **Related:** See our detailed [Proton Pass Chrome Extension Review](/blog/article8-protonpass-review).
 
 ---
 
@@ -147,7 +147,7 @@ The RoboForm Chrome extension is functional but cramped. The dropdown window fee
 
 **Verdict:** Not the prettiest tool, but if form-filling is your priority, RoboForm delivers where flashier competitors struggle.
 
-> **Related:** Check our full [RoboForm Chrome Extension Review](article9.md).
+> **Related:** Check our full [RoboForm Chrome Extension Review](/blog/article9-roboform-review).
 
 ---
 
@@ -169,7 +169,7 @@ Keeper's Chrome extension is responsive and reliably offers to save or autofill 
 
 **Verdict:** A solid choice with excellent customization, but the single-device free limit and occasional autofill quirks keep it from the top spot.
 
-> **Related:** Read our complete [Keeper Chrome Extension Review](article6.md).
+> **Related:** Read our complete [Keeper Chrome Extension Review](/blog/article6-keeper-review).
 
 ---
 

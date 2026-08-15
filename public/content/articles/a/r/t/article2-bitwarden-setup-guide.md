@@ -207,8 +207,8 @@ Your vault syncs across all devices automatically. To complete the setup:
 
 Now that Bitwarden is set up, you might be wondering how it compares to premium alternatives. Is it worth paying for 1Password, or does Bitwarden's free plan cover everything you need?
 
-> **Related:** Read our head-to-head comparison: [Bitwarden vs 1Password Chrome Extension](article3.md).
-> **Related:** Want to explore other options? See our guide to the [Best Free Password Manager for Chrome in 2026](article1.md).
+> **Related:** Read our head-to-head comparison: [Bitwarden vs 1Password Chrome Extension](/blog/article3-bitwarden-vs-1password).
+> **Related:** Want to explore other options? See our guide to the [Best Free Password Manager for Chrome in 2026](/blog/article1-best-free-password-manager).
 
 ---
 

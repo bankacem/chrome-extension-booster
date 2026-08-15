@@ -93,8 +93,6 @@ description: "As a social media marketer, you're constantly looking for ways to 
 
 <p>Remember to choose a Chrome extension that fits your needs, and don't be afraid to experiment with different tools until you find the one that works best for you. With the right Chrome extension for social media marketing, you can streamline your workflow, grow your online audience, and achieve your marketing goals.</p>
 
-<img src="social-media-marketing.jpg" alt="Social media marketing illustration" class="w-full rounded-lg my-4" />
-
 <h2>Table of Contents</h2>
 
 <p><a href="#what-is-a-chrome-extension-for-social-media-marketing" class="text-primary font-medium hover:underline">What is a Chrome Extension for Social Media Marketing?</a></p>

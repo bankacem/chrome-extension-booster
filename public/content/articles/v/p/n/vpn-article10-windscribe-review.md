@@ -288,10 +288,10 @@ Ukrainian authorities seized an unconfigured Windscribe server. Due to a configu
 
 ## Related Reading
 
-> **Related:** Compare unlimited free options: [ProtonVPN Chrome Extension Free Review](article3.md).
-> **Related:** Need speed? See our [NordVPN Chrome Extension Speed Test](article2.md).
-> **Related:** Want no signup at all? Read [Best Free VPN Chrome Extension No Sign Up](article1.md).
-> **Related:** Compare premium options: [ExpressVPN Chrome Extension Review 2026](article4.md).
+> **Related:** Compare unlimited free options: [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Need speed? See our [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Want no signup at all? Read [Best Free VPN Chrome Extension No Sign Up](/blog/vpn-article1-best-free-vpn-no-signup).
+> **Related:** Compare premium options: [ExpressVPN Chrome Extension Review 2026](/blog/vpn-article4-expressvpn-review).
 
 ---
 

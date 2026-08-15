@@ -84,8 +84,6 @@ updated_at: '2026-04-26T14:15:01.573963+00:00'
     <li>Confirm the installation by clicking "Add extension" in the pop-up window.</li>
 </ol>
 
-<img src="add-to-chrome.jpg" alt="Add to Chrome button" class="w-full rounded-lg my-4" />
-
 <h2 id="our-chrome-extensions">Our Chrome Extensions</h2>
 
 <p>We offer a range of Chrome extensions that can be easily <strong>added in Chrome</strong> to enhance your browsing experience. Some of our popular extensions include:</p>

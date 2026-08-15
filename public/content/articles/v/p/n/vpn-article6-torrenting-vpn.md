@@ -140,7 +140,7 @@ NordVPN is our top pick for torrenting. Here's why:
 
 **Verdict:** The fastest, most reliable torrenting VPN. The dedicated P2P infrastructure is unmatched.
 
-> **Related:** See detailed speed tests in our [NordVPN Chrome Extension Speed Test](article2.md).
+> **Related:** See detailed speed tests in our [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
 
 ---
 
@@ -207,7 +207,7 @@ ExpressVPN doesn't have dedicated P2P servers — all servers allow torrenting. 
 
 **Verdict:** Reliable and easy to use, but expensive. The lack of dedicated P2P servers means slightly less optimized speeds. Best for users who prioritize simplicity.
 
-> **Related:** Full review: [ExpressVPN Chrome Extension Review 2026](article4.md).
+> **Related:** Full review: [ExpressVPN Chrome Extension Review 2026](/blog/vpn-article4-expressvpn-review).
 
 ---
 
@@ -240,7 +240,7 @@ ProtonVPN's Plus plan offers dedicated P2P servers with Swiss privacy protection
 
 **Verdict:** Slower than NordVPN and Surfshark, but unmatched privacy credentials. Swiss jurisdiction + court-verified no-logs + open source = maximum trust.
 
-> **Related:** Free tier review: [ProtonVPN Chrome Extension Free Review](article3.md).
+> **Related:** Free tier review: [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
 
 ---
 
@@ -373,10 +373,10 @@ A SOCKS5 proxy changes your IP but doesn't encrypt traffic. A VPN encrypts every
 
 ## Related Reading
 
-> **Related:** See speed tests: [NordVPN Chrome Extension Speed Test](article2.md).
-> **Related:** Compare premium options: [ExpressVPN Chrome Extension Review 2026](article4.md).
-> **Related:** Want privacy-focused? Read [ProtonVPN Chrome Extension Free Review](article3.md).
-> **Related:** Need unlimited devices? Check [Surfshark in our comparison guides](article2.md).
+> **Related:** See speed tests: [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Compare premium options: [ExpressVPN Chrome Extension Review 2026](/blog/vpn-article4-expressvpn-review).
+> **Related:** Want privacy-focused? Read [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Need unlimited devices? Check [Surfshark in our comparison guides](/blog/vpn-article2-nordvpn-speed-test).
 
 ---
 

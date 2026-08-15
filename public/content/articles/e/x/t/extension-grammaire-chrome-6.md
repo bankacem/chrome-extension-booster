@@ -57,8 +57,6 @@ description: "As a writer, student, or professional, ensuring the accuracy and c
 
 <p>The <strong>extension grammaire chrome</strong> refers to a category of Chrome extensions designed to assist users in improving their writing by checking for grammatical errors, suggesting corrections, and enhancing overall readability. These extensions are invaluable tools for anyone who writes regularly, whether it's for academic purposes, professional communication, or personal blogging. By integrating seamlessly with your Chrome browser, they offer real-time feedback and corrections, making the writing process more efficient and less prone to errors.</p>
 
-<img src="placeholder-image.jpg" alt="Grammar extension in action" class="w-full rounded-lg my-4" />
-
 <h2 id="benefits-of-using-grammar-extensions">Benefits of Using Grammar Extensions</h2>
 
 <p>Utilizing a <strong>extension grammaire chrome</strong> can have numerous benefits for writers. Some of the key advantages include:</p>

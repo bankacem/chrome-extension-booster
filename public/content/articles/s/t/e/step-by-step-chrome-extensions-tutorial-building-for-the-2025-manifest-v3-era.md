@@ -32,7 +32,6 @@ updated_at: '2026-04-23T12:29:22.061228+00:00'
 <img src="/content/images/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era/featured.webp" alt="Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3 Era" width="1200" height="630" loading="lazy" class="featured-image">
 
 <p><!-- wp:image --></p>
-<figure class="wp-block-image"><img src="https://extensionto.com/wp-content/uploads/2025/12/Step-by-Step-Chrome-Extensions-Tutorial-Building-for-the-2025-Manifest-V3-Era-1024x572.png" alt="Current image: Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3 Era" /></figure>
 <p><!-- /wp:image --> <!-- wp:paragraph --></p>
 <p>The browser isn't just a window to the web anymore; it is the operating system for modern work. As of late 2025, the Chrome extension ecosystem has shifted dramatically. With Manifest V2 officially retired and built-in browser AI taking center stage, developers need a new strategy. This <strong>chrome extensions tutorial</strong> outlines the exact steps to build secure, high-performance tools in this new environment.</p>
 <p><!-- /wp:paragraph --> <!-- wp:heading --></p>

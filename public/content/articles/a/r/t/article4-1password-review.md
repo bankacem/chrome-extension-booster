@@ -205,9 +205,9 @@ Is that 15% worth $36/year? For me, yes. For you? Only you can decide.
 
 ## Related Reading
 
-> **Related:** See how 1Password compares to the free champion in our [Bitwarden vs 1Password comparison](article3.md).
-> **Related:** Explore free alternatives in our [Best Free Password Manager for Chrome guide](article1.md).
-> **Related:** Looking for business features? Check our [Dashlane Chrome Extension Features](article5.md) review.
+> **Related:** See how 1Password compares to the free champion in our [Bitwarden vs 1Password comparison](/blog/article3-bitwarden-vs-1password).
+> **Related:** Explore free alternatives in our [Best Free Password Manager for Chrome guide](/blog/article1-best-free-password-manager).
+> **Related:** Looking for business features? Check our [Dashlane Chrome Extension Features](/blog/article5-dashlane-features) review.
 
 ---
 

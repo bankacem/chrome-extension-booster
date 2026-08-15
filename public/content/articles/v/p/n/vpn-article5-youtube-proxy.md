@@ -42,7 +42,7 @@ category: "Security & Privacy"
 | **Privacy while watching** | VPN | Proxies don't encrypt — ISP sees everything |
 | **Occasional casual use** | Proxy | Fine for quick access, no commitment |
 
-**Bottom line:** Proxies work for unblocking YouTube on restricted networks (school, work). They do NOT protect your privacy. For anything sensitive, use a real VPN like [ProtonVPN](article3.md) (free) or [NordVPN](article2.md).
+**Bottom line:** Proxies work for unblocking YouTube on restricted networks (school, work). They do NOT protect your privacy. For anything sensitive, use a real VPN like [ProtonVPN](/blog/vpn-article3-protonvpn-free-review) (free) or [NordVPN](/blog/vpn-article2-nordvpn-speed-test).
 
 ---
 
@@ -149,7 +149,7 @@ Browsec is technically a VPN extension, but its free tier is so basic it functio
 
 **My testing:** Browsec unblocked YouTube on all tested networks. 1080p streaming was smooth on US and European servers. Asian servers struggled with HD.
 
-> **Related:** See our full [Best Free VPN Chrome Extension No Sign Up](article1.md) guide for more details on Browsec.
+> **Related:** See our full [Best Free VPN Chrome Extension No Sign Up](/blog/vpn-article1-best-free-vpn-no-signup) guide for more details on Browsec.
 
 ---
 
@@ -273,10 +273,10 @@ Upgrade from proxies to a VPN when you:
 - Download files via P2P
 
 **Best affordable VPNs for YouTube:**
-- [ProtonVPN Free](article3.md): Unlimited data, 5 countries, genuinely secure
-- [NordVPN](article2.md): $3.39/month, fastest speeds, best for streaming
-- [Surfshark](article2.md): $2.19/month, unlimited devices
-- [Windscribe Free](article10.md): 10GB/month, 10 countries
+- [ProtonVPN Free](/blog/vpn-article3-protonvpn-free-review): Unlimited data, 5 countries, genuinely secure
+- [NordVPN](/blog/vpn-article2-nordvpn-speed-test): $3.39/month, fastest speeds, best for streaming
+- [Surfshark](/blog/vpn-article2-nordvpn-speed-test): $2.19/month, unlimited devices
+- [Windscribe Free](/blog/vpn-article10-windscribe-review): 10GB/month, 10 countries
 
 ---
 
@@ -316,10 +316,10 @@ For maximum safety: use a reputable VPN (ProtonVPN free or NordVPN paid) on a pe
 
 ## Related Reading
 
-> **Related:** For actual privacy, see our [ProtonVPN Chrome Extension Free Review](article3.md).
-> **Related:** Need speed for streaming? Check [NordVPN Chrome Extension Speed Test](article2.md).
-> **Related:** Want no signup at all? Read [Best Free VPN Chrome Extension No Sign Up](article1.md).
-> **Related:** Compare all free options: [Windscribe Chrome Extension Free Review](article10.md).
+> **Related:** For actual privacy, see our [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Need speed for streaming? Check [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Want no signup at all? Read [Best Free VPN Chrome Extension No Sign Up](/blog/vpn-article1-best-free-vpn-no-signup).
+> **Related:** Compare all free options: [Windscribe Chrome Extension Free Review](/blog/vpn-article10-windscribe-review).
 
 ---
 

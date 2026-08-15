@@ -45,7 +45,7 @@ category: "Security & Privacy"
 | **Price** | 5/10 | $7.99/month premium — poor value |
 | **Overall** | **4.5/10** | There are much better free and paid options |
 
-**Bottom line:** Betternet is technically functional and genuinely free (no signup required for basic use). But the aggressive ads, heavy throttling, data collection, and US jurisdiction make it hard to recommend. For free VPNs, [ProtonVPN](article3.md) and [Windscribe](article10.md) are infinitely better. For paid, [NordVPN](article2.md) costs less and delivers 7x the speed.
+**Bottom line:** Betternet is technically functional and genuinely free (no signup required for basic use). But the aggressive ads, heavy throttling, data collection, and US jurisdiction make it hard to recommend. For free VPNs, [ProtonVPN](/blog/vpn-article3-protonvpn-free-review) and [Windscribe](/blog/vpn-article10-windscribe-review) are infinitely better. For paid, [NordVPN](/blog/vpn-article2-nordvpn-speed-test) costs less and delivers 7x the speed.
 
 ---
 
@@ -311,10 +311,10 @@ ProtonVPN Free: unlimited data, audited no-logs, Swiss privacy, genuinely secure
 
 ## Related Reading
 
-> **Related:** For a genuinely secure free VPN, read our [ProtonVPN Chrome Extension Free Review](article3.md).
-> **Related:** Want more free data? Check [Windscribe Chrome Extension Free Review](article10.md).
-> **Related:** Need speed? See our [NordVPN Chrome Extension Speed Test](article2.md).
-> **Related:** Want no signup? Read [Best Free VPN Chrome Extension No Sign Up](article1.md).
+> **Related:** For a genuinely secure free VPN, read our [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Want more free data? Check [Windscribe Chrome Extension Free Review](/blog/vpn-article10-windscribe-review).
+> **Related:** Need speed? See our [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Want no signup? Read [Best Free VPN Chrome Extension No Sign Up](/blog/vpn-article1-best-free-vpn-no-signup).
 
 ---
 

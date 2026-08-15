@@ -75,8 +75,6 @@ description: "Welcome to the world of browser extensions, where extensionto.com 
 
 <p>One of the best things about <strong>extensionto.com</strong> is its ability to help you stay productive and focused. With extensions like <a href="/extension/formula-builder-pro" class="text-primary font-medium hover:underline">Formula Builder Pro</a> and <a href="/extension/securakey-pro" class="text-primary font-medium hover:underline">SecuraKey Pro</a>, you'll be able to tackle even the toughest tasks with ease.</p>
 
-<img src="placeholder-image.jpg" alt="Productivity extensions on extensionto.com" class="w-full rounded-lg my-4" />
-
 <h2>Security and Safety on <strong>extensionto.com</strong></h2>
 
 <p>When it comes to online security, <strong>extensionto.com</strong> has got you covered. With extensions like <a href="/extension/cookie-banner-blocker" class="text-primary font-medium hover:underline">Cookie Banner Blocker</a> and <a href="/extension/offline-reader-pro" class="text-primary font-medium hover:underline">Offline Reader Pro</a>, you'll be able to browse the web with confidence.</p>

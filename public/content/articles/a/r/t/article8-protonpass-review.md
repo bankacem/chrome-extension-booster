@@ -192,9 +192,9 @@ For the privacy-conscious user who values transparency over polish, Proton Pass 
 
 ## Related Reading
 
-> **Related:** Compare Proton Pass to free options in our [Best Free Password Manager for Chrome guide](article1.md).
-> **Related:** See how Proton Pass compares to 1Password in our [Bitwarden vs 1Password comparison](article3.md).
-> **Related:** Looking for a beautiful interface? Read our [NordPass Chrome Extension Review](article7.md).
+> **Related:** Compare Proton Pass to free options in our [Best Free Password Manager for Chrome guide](/blog/article1-best-free-password-manager).
+> **Related:** See how Proton Pass compares to 1Password in our [Bitwarden vs 1Password comparison](/blog/article3-bitwarden-vs-1password).
+> **Related:** Looking for a beautiful interface? Read our [NordPass Chrome Extension Review](/blog/article7-nordpass-review).
 
 ---
 

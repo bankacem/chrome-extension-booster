@@ -125,7 +125,6 @@ description: "In today's digital age, the .to extension has become an essential 
 
 <p>A: Setting up a custom .to extension URL is straightforward and easy. Simply register for a .to extension domain, set up your custom URL, and start sharing it with others.</p>
 
-<img src="placeholder-image.jpg" alt="descriptive alt text" class="w-full rounded-lg my-4" />
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">
   <h3 class="text-2xl font-bold mb-3">Get Quick Screenshot Lite Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Capture full page or visible area screenshots instantly.</p>

@@ -107,8 +107,6 @@ description: "Are you tired of watching YouTube videos just to listen to the aud
 
 <p>In conclusion, a YouTube audio extension is a powerful tool that can revolutionize your listening experience. With the ability to extract audio from YouTube videos and save them as audio files, you can enjoy your favorite audio content without the distraction of videos. Whether you're a music lover, podcast enthusiast, or audiobook fan, a YouTube audio extension is a must-have tool. So why not give it a try today and discover a new world of audio possibilities? Don't forget to enhance your browsing experience with our <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> and <a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a> extensions.</p>
 
-<img src="youtube-audio-extension.jpg" alt="YouTube audio extension screenshot" class="w-full rounded-lg my-4" />
-
 <h2>Table of Contents</h2>
 
 <p><a href="#what-is-a-youtube-audio-extension" class="text-primary font-medium hover:underline">What is a YouTube Audio Extension?</a></p>

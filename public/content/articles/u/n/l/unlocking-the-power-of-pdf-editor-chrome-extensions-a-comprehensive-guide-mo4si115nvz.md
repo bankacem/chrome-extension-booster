@@ -84,8 +84,6 @@ updated_at: '2026-04-23T12:00:36.246171+00:00'
 
 <p>To maximize the benefits of PDF Editor Chrome Extensions, consider using them in conjunction with other productivity tools. For example, you can use our <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension to capture screenshots of your PDF files, or utilize <a href="/extension/formula-builder-pro" class="text-primary font-medium hover:underline">Formula Builder Pro</a> to create complex formulas and calculations within your PDF documents.</p>
 
-<img src="pdf-editor-chrome-extensions.jpg" alt="PDF Editor Chrome Extensions screenshot" class="w-full rounded-lg my-4" />
-
 <h2>Best Practices for Using PDF Editor Chrome Extensions</h2>
 
 <p>To ensure a seamless and efficient experience when using PDF Editor Chrome Extensions, follow these best practices:</p>

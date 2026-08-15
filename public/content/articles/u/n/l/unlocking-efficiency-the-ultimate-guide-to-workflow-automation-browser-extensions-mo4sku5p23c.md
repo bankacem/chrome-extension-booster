@@ -96,8 +96,6 @@ updated_at: '2026-04-23T11:59:58.775698+00:00'
     <li>Stay up-to-date with extension updates: Regularly check for updates to your extensions and install the latest versions to ensure you have the latest features and security patches.</li>
 </ul>
 
-<img src="placeholder-image.jpg" alt="workflow automation browser extensions in action" class="w-full rounded-lg my-4" />
-
 <h2>Conclusion</h2>
 
 <p>Workflow Automation Browser Extensions have the potential to revolutionize the way you work, enabling you to streamline tasks, reduce manual labor, and boost productivity. By choosing the right extensions and following best practices, you can unlock the full potential of your browser and take your workflow to the next level. Explore our top picks, including <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> and <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>, and discover the power of Workflow Automation Browser Extensions for yourself.</p>

@@ -188,9 +188,9 @@ However, if you're price-conscious, 1Password offers a similar core experience f
 
 ## Related Reading
 
-> **Related:** Compare Dashlane to the free alternative in our [Best Free Password Manager for Chrome guide](article1.md).
-> **Related:** See how Dashlane stacks up against 1Password in our [Bitwarden vs 1Password comparison](article3.md).
-> **Related:** Looking for a privacy-focused option? Read our [Proton Pass Chrome Extension Review](article8.md).
+> **Related:** Compare Dashlane to the free alternative in our [Best Free Password Manager for Chrome guide](/blog/article1-best-free-password-manager).
+> **Related:** See how Dashlane stacks up against 1Password in our [Bitwarden vs 1Password comparison](/blog/article3-bitwarden-vs-1password).
+> **Related:** Looking for a privacy-focused option? Read our [Proton Pass Chrome Extension Review](/blog/article8-protonpass-review).
 
 ---
 

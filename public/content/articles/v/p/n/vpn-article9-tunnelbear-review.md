@@ -72,7 +72,7 @@ category: "Security & Privacy"
 | **Price** | 6/10 | $3.33/month — fair but limited features |
 | **Overall** | **6.8/10** | Best for beginners, worst for power users |
 
-**Bottom line:** TunnelBear is the most user-friendly VPN on the market. The bear animations, simple interface, and transparent privacy practices make it perfect for VPN first-timers. But it's slow, doesn't unblock streaming, and the 2GB free limit is restrictive. For serious use, [NordVPN](article2.md) or [ProtonVPN](article3.md) are better choices.
+**Bottom line:** TunnelBear is the most user-friendly VPN on the market. The bear animations, simple interface, and transparent privacy practices make it perfect for VPN first-timers. But it's slow, doesn't unblock streaming, and the 2GB free limit is restrictive. For serious use, [NordVPN](/blog/vpn-article2-nordvpn-speed-test) or [ProtonVPN](/blog/vpn-article3-protonvpn-free-review) are better choices.
 
 ---
 
@@ -323,10 +323,10 @@ For beginners and ease of use: yes. For privacy, speed, features, and free tier:
 
 ## Related Reading
 
-> **Related:** Need speed? See our [NordVPN Chrome Extension Speed Test](article2.md).
-> **Related:** Want free unlimited data? Read [ProtonVPN Chrome Extension Free Review](article3.md).
-> **Related:** Compare premium options: [ExpressVPN Chrome Extension Review 2026](article4.md).
-> **Related:** Best value option: [Surfshark in our comparison guides](article2.md).
+> **Related:** Need speed? See our [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Want free unlimited data? Read [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Compare premium options: [ExpressVPN Chrome Extension Review 2026](/blog/vpn-article4-expressvpn-review).
+> **Related:** Best value option: [Surfshark in our comparison guides](/blog/vpn-article2-nordvpn-speed-test).
 
 ---
 

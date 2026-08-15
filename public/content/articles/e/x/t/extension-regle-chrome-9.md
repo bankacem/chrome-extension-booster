@@ -98,8 +98,6 @@ description: "Welcome to the world of Chrome extensions, where you can enhance y
     <li>Use the Chrome task manager to monitor and manage extension resource usage.</li>
 </ol>
 
-<img src="placeholder-image.jpg" alt="descriptive alt text" class="w-full rounded-lg my-4" />
-
 <h2>Conclusion</h2>
 
 <p>In conclusion, "extension regle chrome" is an essential concept that can help you make the most out of your Chrome extensions. By understanding the rules and guidelines that govern Chrome extensions, you can create a personalized browsing experience that meets your needs and preferences. With the right extensions and optimization techniques, you can boost your productivity, enhance your security, and take your browsing experience to the next level.</p>

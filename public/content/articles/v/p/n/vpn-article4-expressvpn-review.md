@@ -205,8 +205,8 @@ Unlike NordVPN's Threat Protection or ProtonVPN's NetShield, ExpressVPN doesn't 
 
 **Verdict:** NordVPN wins on value, speed, and features. ExpressVPN wins on streaming reliability and interface polish. Choose ExpressVPN if streaming is your primary use case. Choose NordVPN for everything else.
 
-> **Related:** See detailed speed comparisons in our [NordVPN Chrome Extension Speed Test](article2.md).
-> **Related:** Compare free alternatives: [ProtonVPN Chrome Extension Free Review](article3.md).
+> **Related:** See detailed speed comparisons in our [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Compare free alternatives: [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
 
 ---
 
@@ -249,10 +249,10 @@ ExpressVPN is dramatically better than any free VPN in every category: speed, se
 
 ## Related Reading
 
-> **Related:** Compare speeds directly: [NordVPN Chrome Extension Speed Test](article2.md).
-> **Related:** Looking for free? See [ProtonVPN Chrome Extension Free Review](article3.md).
-> **Related:** Need unlimited devices? Check [Surfshark Chrome Extension Review](article2.md).
-> **Related:** Want no signup? Read [Best Free VPN Chrome Extension No Sign Up](article1.md).
+> **Related:** Compare speeds directly: [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Looking for free? See [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Need unlimited devices? Check [Surfshark Chrome Extension Review](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Want no signup? Read [Best Free VPN Chrome Extension No Sign Up](/blog/vpn-article1-best-free-vpn-no-signup).
 
 ---
 

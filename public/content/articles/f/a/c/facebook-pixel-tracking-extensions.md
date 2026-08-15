@@ -92,8 +92,6 @@ description: "Are you a digital marketer or business owner looking to maximize y
 
 <p>Remember to consider the features and benefits of different Chrome extensions for Facebook Pixel, and don't hesitate to reach out if you have any questions or need further guidance. With the right Chrome extension and a little practice, you can unlock the full potential of Facebook Pixel and take your advertising efforts to the next level.</p>
 
-<img src="facebook-pixel-chrome-extension.jpg" alt="Facebook Pixel Chrome extension" class="w-full rounded-lg my-4" />
-
 <h2 id="faq">Frequently Asked Questions</h2>
 <ol>
   <li><strong>What is a Chrome extension for Facebook Pixel?</strong>: A Chrome extension for Facebook Pixel is a tool that simplifies and enhances your Facebook Pixel management and optimization efforts, providing you with a range of features and benefits to maximize your Facebook advertising efforts.</li>

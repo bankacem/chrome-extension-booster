@@ -59,8 +59,6 @@ description: "As a small business owner, managing finances, tracking inventory, 
 
 <p>Spreadsheets software for small business is designed to help you manage and analyze data efficiently. With a user-friendly interface and robust features, these tools enable you to create budgets, track expenses, and forecast revenue. Whether you're a solo entrepreneur or a team of employees, <strong>spreadsheets software for small business</strong> can help you stay organized and focused on your goals.</p>
 
-<img src="placeholder-image.jpg" alt="Spreadsheets software for small business" class="w-full rounded-lg my-4" />
-
 <h2 id="benefits-of-spreadheets-software">Benefits of Spreadsheets Software for Small Business</h2>
 
 <p>The benefits of using <strong>spreadsheets software for small business</strong> are numerous. Some of the most significant advantages include:</p>

@@ -100,8 +100,6 @@ updated_at: '2026-04-23T12:00:41.859857+00:00'
     <li>Keep it organized: Keep custom CSS code organized and well-documented to make it easier to manage and maintain.</li>
 </ul>
 
-<img src="placeholder-image.jpg" alt="Custom CSS Injector Extensions in action" class="w-full rounded-lg my-4" />
-
 <h2>Applications of Custom CSS Injector Extensions</h2>
 
 <p>Custom CSS Injector Extensions have a wide range of applications, including:</p>

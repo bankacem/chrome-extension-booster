@@ -277,10 +277,10 @@ Yes. The free tier requires only an email address. No payment information needed
 
 ## Related Reading
 
-> **Related:** Need no-signup options? See our [Best Free VPN Chrome Extension No Sign Up](article1.md) guide.
-> **Related:** Compare speeds: [NordVPN Chrome Extension Speed Test](article2.md).
-> **Related:** Want unlimited devices? Check [Windscribe Chrome Extension Free Review](article10.md).
-> **Related:** See how ProtonVPN compares to premium: [ExpressVPN Chrome Extension Review 2026](article4.md).
+> **Related:** Need no-signup options? See our [Best Free VPN Chrome Extension No Sign Up](/blog/vpn-article1-best-free-vpn-no-signup) guide.
+> **Related:** Compare speeds: [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
+> **Related:** Want unlimited devices? Check [Windscribe Chrome Extension Free Review](/blog/vpn-article10-windscribe-review).
+> **Related:** See how ProtonVPN compares to premium: [ExpressVPN Chrome Extension Review 2026](/blog/vpn-article4-expressvpn-review).
 
 ---
 

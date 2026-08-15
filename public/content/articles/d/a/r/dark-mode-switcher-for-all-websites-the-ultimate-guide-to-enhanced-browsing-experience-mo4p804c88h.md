@@ -85,8 +85,6 @@ updated_at: '2026-04-23T12:00:36.504136+00:00'
     <li>User scripts, such as Tampermonkey or Greasemonkey, which can be used to create custom dark mode switching scripts.</li>
 </ul>
 
-<img src="placeholder-image.jpg" alt="Dark Mode Switcher for All Websites screenshot" class="w-full rounded-lg my-4" />
-
 <h2>Conclusion</h2>
 
 <p>In conclusion, a Dark Mode Switcher for All Websites is an essential tool for anyone who wants to enjoy a consistent browsing experience across all websites, without manual intervention. Our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> Chrome extension is a popular solution that can help you achieve this seamless browsing experience. By following the steps outlined in this guide, you can start using a Dark Mode Switcher for All Websites and enjoy the benefits of reduced eye strain, improved digital well-being, and enhanced browsing experience.</p>

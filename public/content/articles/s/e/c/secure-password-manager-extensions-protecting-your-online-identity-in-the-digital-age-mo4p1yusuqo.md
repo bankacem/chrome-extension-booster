@@ -87,8 +87,6 @@ updated_at: '2026-04-23T12:00:49.432526+00:00'
 
 <p>After careful consideration, our top recommendation for a Secure Password Manager Extension is <a href="/extension/securakey-pro" class="text-primary font-medium hover:underline">SecuraKey Pro</a>. This extension offers advanced encryption methods, password generation features, and auto-fill functionality, making it the perfect solution for managing your passwords securely. With SecuraKey Pro, you can rest assured that your online identity is fully protected, and you'll never have to worry about remembering multiple complex passwords again.</p>
 
-<img src="placeholder-image.jpg" alt="Secure Password Manager Extensions" class="w-full rounded-lg my-4" />
-
 <h2>Other Notable Mentions</h2>
 
 <p>While SecuraKey Pro is our top recommendation, there are other notable Secure Password Manager Extensions available. Some other popular options include LastPass, 1Password, and Dashlane. When selecting a Secure Password Manager Extension, be sure to research each option carefully, considering factors such as encryption methods, password generation features, and auto-fill functionality.</p>

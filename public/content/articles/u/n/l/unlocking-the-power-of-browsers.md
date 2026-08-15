@@ -121,7 +121,6 @@ description: "Welcome to the world of browser extensions, where a simple add-on 
 <p>Q: Can I use extensions to on mobile devices?</p>
 <p>A: Yes, many extensions to are available for mobile devices, and can be installed through the Chrome Web Store or other app stores.</p>
 
-<img src="placeholder-image.jpg" alt="descriptive alt text" class="w-full rounded-lg my-4" />
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">
   <h3 class="text-2xl font-bold mb-3">Get Quick Screenshot Lite Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Capture full page or visible area screenshots instantly.</p>

@@ -87,8 +87,6 @@ updated_at: '2026-04-23T12:00:53.231478+00:00'
 
 <p>At our website, we offer a range of Chrome extensions that can enhance your browsing experience and work seamlessly with Cross-Browser Sync Tools. For example, our <a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> extension allows you to capture full-page or visible area screenshots instantly, while our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension enables you to automatically switch between dark and light modes. By using our Chrome extensions in conjunction with Cross-Browser Sync Tools, you can take your browsing experience to the next level and enjoy a more streamlined and productive workflow.</p>
 
-<img src="cross-browser-sync-tools.jpg" alt="Cross-Browser Sync Tools in action" class="w-full rounded-lg my-4" />
-
 <h2>Best Practices for Using Cross-Browser Sync Tools</h2>
 
 <p>To get the most out of Cross-Browser Sync Tools, it's essential to follow best practices for using these tools. Some tips include:</p>

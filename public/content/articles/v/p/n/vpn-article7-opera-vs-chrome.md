@@ -332,10 +332,10 @@ Opera claims they don't log, but there's no independent verification. Their priv
 
 ## Related Reading
 
-> **Related:** See our full [NordVPN Chrome Extension Speed Test](article2.md) for detailed performance data.
-> **Related:** Compare privacy-focused options: [ProtonVPN Chrome Extension Free Review](article3.md).
-> **Related:** Want premium streaming? Read [ExpressVPN Chrome Extension Review 2026](article4.md).
-> **Related:** Need a free option? Check [Best Free VPN Chrome Extension No Sign Up](article1.md).
+> **Related:** See our full [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test) for detailed performance data.
+> **Related:** Compare privacy-focused options: [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
+> **Related:** Want premium streaming? Read [ExpressVPN Chrome Extension Review 2026](/blog/vpn-article4-expressvpn-review).
+> **Related:** Need a free option? Check [Best Free VPN Chrome Extension No Sign Up](/blog/vpn-article1-best-free-vpn-no-signup).
 
 ---
 

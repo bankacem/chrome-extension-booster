@@ -104,8 +104,6 @@ description: "Managing your Facebook messages can be a daunting task, especially
 
 <p>For those looking to enhance their online productivity, our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension is a useful tool, <a href="/blog/how-to-hibernate-inactive-tabs-automatically-6" class="internal-link" title="How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster Browser">automatically</a> switching between dark and light modes to reduce eye strain. Additionally, our <a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a> extension can help protect against malicious redirects and phishing attacks.</p>
 
-<img src="placeholder-image.jpg" alt="Facebook messages inbox" class="w-full rounded-lg my-4" />
-
 <h2>Conclusion</h2>
 
 <p>In conclusion, the Facebook fast delete all messages extension is a powerful tool for managing your Facebook inbox. With its ability to quickly and easily delete all messages, this extension can save users a significant amount of time and help keep their inbox organized. Whether you're looking to streamline your Facebook experience or simply free up some space in your inbox, the Facebook fast delete all messages extension is definitely worth considering.</p>

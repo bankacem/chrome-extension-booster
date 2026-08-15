@@ -191,9 +191,9 @@ Your mileage may vary.
 
 ## Related Reading
 
-> **Related:** New to password managers? Start with our guide to the [Best Free Password Manager for Chrome in 2026](article1.md).
-> **Related:** Ready to set up Bitwarden? Follow our complete [Bitwarden Chrome Extension Setup Guide](article2.md).
-> **Related:** Want the premium experience? Read our full [1Password Chrome Extension Review](article4.md).
+> **Related:** New to password managers? Start with our guide to the [Best Free Password Manager for Chrome in 2026](/blog/article1-best-free-password-manager).
+> **Related:** Ready to set up Bitwarden? Follow our complete [Bitwarden Chrome Extension Setup Guide](/blog/article2-bitwarden-setup-guide).
+> **Related:** Want the premium experience? Read our full [1Password Chrome Extension Review](/blog/article4-1password-review).
 
 ---
 

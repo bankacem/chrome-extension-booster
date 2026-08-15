@@ -85,8 +85,6 @@ description: "The internet has bridged geographical gaps, connecting people from
 
 <p>In conclusion, the Google Trad Plugin is a revolutionary tool that has transformed the way we communicate online. By understanding its features, benefits, and applications, users can unlock new avenues of global interaction. When combined with other utility extensions, it can significantly enhance productivity and browsing experience. Whether for personal, educational, or professional purposes, the Google Trad Plugin, along with complementary tools like our Chrome extensions, is set to redefine the boundaries of online communication.</p>
 
-<img src="google-trad-plugin-screenshot.jpg" alt="Google Trad Plugin in action" class="w-full rounded-lg my-4" />
-
 <h2>Table of Contents</h2>
 
 <ul>
