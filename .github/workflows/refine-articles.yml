@@ -42,6 +42,23 @@ jobs:
       - name: Install JS dependencies
         run: bun install
 
+      - name: Start SearXNG (ephemeral real-search backend, this job only)
+        run: |
+          docker run -d --name searxng \
+            -p 8080:8080 \
+            -v "$(pwd)/seo_agent_pro/searxng-settings.yml:/etc/searxng/settings.yml:ro" \
+            searxng/searxng:latest
+
+          echo "Waiting for SearXNG to become ready..."
+          for i in $(seq 1 30); do
+            if curl -sf "http://localhost:8080/search?q=test&format=json" > /dev/null; then
+              echo "SearXNG is ready."
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "::warning::SearXNG did not become ready in time - refiner.py's competitor-gap analysis will fall back to model-estimated analysis for this run. Not treated as a hard failure."
+
       - name: Run the Refiner Agent
         id: refine
         env:
@@ -50,10 +67,15 @@ jobs:
           GROQ_KEY:        ${{ secrets.GROQ_KEY || secrets.GROQ }}
           OPENROUTER_KEY:  ${{ secrets.OPENROUTER_KEY || secrets.OPENROUTER }}
           SEO_AGENT_MODEL: ${{ github.event.inputs.model }}
+          SEARXNG_URL: "http://localhost:8080"
         run: |
           set -o pipefail
           cd seo_agent_pro/agentic
           python3 refine_run.py --count "${{ github.event.inputs.limit }}" 2>&1 | tee /tmp/refine_output.log
+
+      - name: Stop SearXNG
+        if: always()
+        run: docker rm -f searxng 2>/dev/null || true
 
       - name: Post debug output if refinement failed
         if: failure()

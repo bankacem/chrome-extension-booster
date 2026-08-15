@@ -30,6 +30,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from llm_router import call, call_json, c
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from agentic import web_search  # noqa: E402
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from optimizer import _load_index, _shortlist_candidate_links  # noqa: E402 — reuse, don't duplicate
 
@@ -172,26 +175,49 @@ def _add_internal_links(title: str, keyword: str, body: str, own_slug: str = "",
 
 
 def _find_competitor_gap(title: str, keyword: str, body: str, model: str, avoid: list[str] | None = None) -> dict:
-    """LLM-knowledge-based (same honest limitation as research.py — no live
-    SERP API configured for this project). Grounded in the ARTICLE'S OWN
-    current body so it can only propose something genuinely absent, not
-    something already covered under different wording."""
+    """Uses real web search (SearXNG, see agentic/web_search.py) when
+    available; falls back to LLM-knowledge-based analysis otherwise (same
+    honest limitation research.py used to have unconditionally). Grounded
+    in the ARTICLE'S OWN current body either way, so it can only propose
+    something genuinely absent, not something already covered under
+    different wording."""
     avoid_note = ""
     if avoid:
         avoid_note = (
             "\nDo NOT propose any of these gaps — they were already identified "
             f"and filled earlier in this same refinement pass: {'; '.join(avoid)}"
         )
-    system = (
-        "You are a competitive content analyst. You are given an existing "
-        "published article and asked what the top 3 ranking competitor pages "
-        "for its topic likely cover that this specific article does NOT. "
-        "You must check the provided body text carefully — do not propose "
-        "something that's already covered, even under different wording."
-    )
+
+    research = web_search.research_keyword(keyword)
+    if research:
+        sources_block = "\n".join(
+            f'- "{r["title"]}" — {r["url"]}\n  {r["snippet"][:200]}'
+            for r in research["top_results"] if r.get("url")
+        )
+        system = (
+            "You are a competitive content analyst. You are given an existing "
+            "published article AND real search results for its target keyword. "
+            "Identify what those real competing pages cover that this specific "
+            "article does NOT. Check the provided body text carefully — do not "
+            "propose something already covered, even under different wording."
+        )
+        research_block = f"""
+Real search results for this keyword (titles, URLs, snippets):
+{sources_block}
+"""
+    else:
+        system = (
+            "You are a competitive content analyst. You are given an existing "
+            "published article and asked what the top 3 ranking competitor pages "
+            "for its topic likely cover that this specific article does NOT. "
+            "You must check the provided body text carefully — do not propose "
+            "something that's already covered, even under different wording."
+        )
+        research_block = ""
+
     user = f"""Article title: "{title}"
 Target keyword: "{keyword}"
-
+{research_block}
 Current article body (this is everything the article already covers — do
 not propose anything already present here):
 {body[:6000]}
@@ -207,7 +233,9 @@ Return JSON:
 
 If you genuinely can't identify a real, specific, non-generic gap, set
 gap_found to false rather than inventing a weak one."""
-    return call_json(system, user, model, max_tokens=1200)
+    result = call_json(system, user, model, max_tokens=1200)
+    result["research_source"] = "searxng" if research else "llm_estimate"
+    return result
 
 
 # A single ~200-word section is a reasonable addition to an already-
