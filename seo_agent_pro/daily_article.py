@@ -18,6 +18,7 @@ Usage:
 import json
 import os
 import re
+import subprocess
 import sys
 import uuid
 from datetime import datetime, timezone
@@ -232,6 +233,51 @@ def mark_keyword_used(keyword: str) -> None:
     state = load_state()
     state.setdefault("used_keywords", []).append(keyword)
     save_state(state)
+    _commit_state_to_main_immediately(keyword)
+
+
+def _commit_state_to_main_immediately(keyword: str) -> None:
+    """Push the used_keywords update directly to main right now, decoupled
+    from the article's own feature-branch PR that comes later in the
+    workflow.
+
+    Root cause this fixes: daily_article.py runs on main, but the actual
+    article + its updated copy of daily_article_state.json only get
+    committed to a NEW feature branch in a later workflow step — so the
+    "keyword used" fact was trapped on that branch until its PR got
+    reviewed and merged. Confirmed happening for real: two separate
+    'best chrome extensions for email productivity' PRs, a day apart,
+    neither one ever merged, so main's daily_article_state.json still
+    showed the keyword as unused both times pick_next_keyword() ran.
+
+    This is intentionally a tiny, isolated commit pushed the moment a
+    keyword is chosen — before any expensive generation work — so the
+    fact "this keyword was attempted" survives on main regardless of
+    whether the subsequent article generation, evaluation, or PR review
+    ever succeeds.
+    """
+    try:
+        subprocess.run(["git", "add", str(STATE_PATH)], check=True, cwd=ROOT)
+        result = subprocess.run(
+            ["git", "commit", "-m", f"chore: mark keyword used - {keyword!r}"],
+            cwd=ROOT, capture_output=True, text=True,
+        )
+        if result.returncode != 0:
+            if "nothing to commit" in (result.stdout + result.stderr):
+                return
+            print(f"[Keyword] Note: state commit failed (non-fatal): {result.stderr.strip()}")
+            return
+        push = subprocess.run(
+            ["git", "push", "origin", "HEAD:main"],
+            cwd=ROOT, capture_output=True, text=True,
+        )
+        if push.returncode != 0:
+            print(f"[Keyword] Note: state push failed (non-fatal, will retry via the normal PR flow): {push.stderr.strip()}")
+        else:
+            print(f"[Keyword] Marked {keyword!r} used directly on main.")
+    except Exception as e:
+        # Never let bookkeeping failure block the actual article run.
+        print(f"[Keyword] Note: could not push state immediately (non-fatal): {e}")
 
 
 # ──────────────────────────────────────────────────────────────
