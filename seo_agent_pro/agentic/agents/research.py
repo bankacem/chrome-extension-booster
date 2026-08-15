@@ -1,17 +1,16 @@
 """
 Research & Intelligence Agent.
 
-Phase-1 scope (see README): no live SERP/Search Console API key exists for
-this project yet, so competitor analysis is LLM-knowledge-based, same as the
-original analyze_competitors(). What this agent adds on top of that: it
-pulls semantically related PAST cycles from long-term memory (Tier 3 of
-memory_store) and surfaces what the critic said about them last time, so the
-Strategy/Content agents aren't starting from zero on topics we've partially
-covered before.
+Uses real web search (SearXNG, see agentic/web_search.py — no API key, no
+per-query billing) when available. The workflow starts an ephemeral SearXNG
+instance for the job; if that's not configured (e.g. running locally) or a
+query fails, this falls back to the original LLM-knowledge-based analysis
+rather than blocking the run.
 
-Wiring in a real SERP API (DataForSEO/SerpAPI) or Search Console later is a
-drop-in replacement for `_llm_competitor_analysis()` — the rest of the graph
-doesn't care where competitor_data came from.
+This agent also pulls semantically related PAST cycles from long-term
+memory (Tier 3 of memory_store) and surfaces what the critic said about
+them last time, so the Strategy/Content agents aren't starting from zero on
+topics we've partially covered before.
 """
 
 from __future__ import annotations
@@ -24,13 +23,41 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # seo_agent_pro/
 
 from llm_router import call_json, c
 from agentic import memory_store
+from agentic import web_search
 
 
 def _step(label: str) -> None:
     print(f"\n{c('cyan', '▸')} {c('bold', 'Research Agent — ' + label)}")
 
 
-def _llm_competitor_analysis(keyword: str, model: str) -> dict:
+def _llm_competitor_analysis(keyword: str, model: str, research: dict | None) -> dict:
+    if research:
+        sources_block = "\n".join(
+            f'- "{r["title"]}" — {r["url"]}\n  {r["snippet"][:200]}'
+            for r in research["top_results"] if r.get("url")
+        )
+        system = (
+            "You are a senior SEO analyst. You are given REAL search results for "
+            "a keyword. Base your analysis on this actual data, not general assumptions."
+        )
+        user = f"""Analyze the competitive landscape for the keyword: "{keyword}"
+
+Real search results (titles, URLs, snippets) for this keyword:
+{sources_block}
+
+Return a JSON object:
+{{
+  "common_sections":    ["H2/H3 headings likely used, inferred from these real titles/snippets"],
+  "missing_gaps":       ["topics these real results rarely cover"],
+  "content_length_avg": "estimated average word count",
+  "seo_patterns":       ["structural or formatting patterns used"],
+  "weaknesses":         ["what most of these real results do poorly"],
+  "why_they_rank":      "main reason these results rank (depth/authority/UX/etc)"
+}}"""
+        result = call_json(system, user, model)
+        result["research_source"] = "searxng"
+        return result
+
     system = (
         "You are a senior SEO analyst. Based on your knowledge of web content patterns, "
         "analyze what the top-ranking pages for a given keyword typically look like."
@@ -46,7 +73,9 @@ Return a JSON object:
   "weaknesses":         ["what most articles do poorly"],
   "why_they_rank":      "main reason top results rank (depth/authority/UX/etc)"
 }}"""
-    return call_json(system, user, model)
+    result = call_json(system, user, model)
+    result["research_source"] = "llm_estimate"
+    return result
 
 
 def run(state: dict) -> dict:
@@ -54,7 +83,15 @@ def run(state: dict) -> dict:
     model = state["active_model"]
 
     _step(keyword)
-    competitor_data = _llm_competitor_analysis(keyword, model)
+
+    research = web_search.research_keyword(keyword)
+    if research:
+        print(c("green", f"  ✓ real search data found: {len(research['top_results'])} pages (SearXNG)"))
+    else:
+        print(c("dim", "  · no real search data available (SearXNG not configured or query "
+                        "failed) — falling back to model-estimated analysis"))
+
+    competitor_data = _llm_competitor_analysis(keyword, model, research)
 
     past = memory_store.relevant_past_cycles(keyword, n=3)
     if past:

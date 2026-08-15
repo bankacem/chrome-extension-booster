@@ -48,6 +48,23 @@ jobs:
       - name: Install JS dependencies
         run: bun install
 
+      - name: Start SearXNG (ephemeral real-search backend, this job only)
+        run: |
+          docker run -d --name searxng \
+            -p 8080:8080 \
+            -v "$(pwd)/seo_agent_pro/searxng-settings.yml:/etc/searxng/settings.yml:ro" \
+            searxng/searxng:latest
+
+          echo "Waiting for SearXNG to become ready..."
+          for i in $(seq 1 30); do
+            if curl -sf "http://localhost:8080/search?q=test&format=json" > /dev/null; then
+              echo "SearXNG is ready."
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "::warning::SearXNG did not become ready in time - research.py/refiner.py will fall back to model-estimated competitor analysis for this run. Not treated as a hard failure."
+
       - name: Run the 7-agent pipeline
         id: gen
         env:
@@ -58,6 +75,7 @@ jobs:
           SEO_AGENT_MODEL: ${{ github.event.inputs.model }}
           GEMINI_KEY:              ${{ secrets.GEMINI_KEY }}
           GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          SEARXNG_URL: "http://localhost:8080"
         run: |
           set -o pipefail
           cd seo_agent_pro/agentic
@@ -82,6 +100,10 @@ jobs:
             --title "Agentic article generation FAILED ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
             --body-file /tmp/debug_body.md \
             --repo ${{ github.repository }}
+
+      - name: Stop SearXNG
+        if: always()
+        run: docker rm -f searxng 2>/dev/null || true
 
       - name: Rebuild index and sitemap
         run: |
