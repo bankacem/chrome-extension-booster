@@ -60,6 +60,41 @@ log and know exactly where things stand without re-reading the whole repo.
 
 ## Session Log
 
+### 2026-08-15 — Claude session (this one)
+- Adopted this protocol: merged PR #244 (`AGENT_HANDOFF.md` itself).
+  Confirmed PR #243 (redundant audit script, flagged in the entry below)
+  was already closed — no action needed there.
+- Ran the checklist's step 3 (`git ls-remote --heads | grep refine/`) and
+  found ~15 `refine/*` / `content-audit*` branches with **no open PR**.
+  Did NOT delete any — `git merge-base --is-ancestor` is unreliable for
+  branches merged with squash (no ancestor relationship survives), so
+  "not merged" in that check does not reliably mean abandoned; several are
+  almost certainly already squash-merged (e.g.
+  `refine/internet-download-manager-extension`, referenced in the entry
+  below as already merged with the real refiner agent). Needs a proper
+  merged-content check (diff against main, not ancestry) before any
+  cleanup — left for a future session or the person's explicit go-ahead.
+- **New discovery, not previously documented here**: a separate automated
+  system ("Jules") is also opening PRs against this repo, independent of
+  any Claude session — currently ~15 open PRs from it (multilingual/i18n
+  support, sitemap architecture changes, an "emergency hotfix" to the SEO
+  sync pipeline, RLS bypass, article deduplication, and more). None of
+  these were reviewed or actioned this session. This protocol's "check
+  before building" step should probably extend to checking Jules' open
+  PRs too, not just other Claude sessions' branches — worth the person's
+  attention specifically, since several of these (RLS bypass, emergency
+  hotfix, sitemap architecture) sound higher-risk than routine content
+  work and shouldn't be merged without review.
+- Also completed this session (before finding this protocol): merged 2
+  refine batches (3 + 14 articles, the second one hand-separated from a
+  stale/reverting PR #261), found and fixed 11 live articles with a
+  markdown-link-inside-raw-HTML bug a previous session's cleanup pass
+  missed, fixed the underlying max_tokens/self-link bugs in
+  `refiner.py`/`llm_router.py`, and manually proofread 5 older articles
+  for AI-cliché phrasing and a grammar error (no body rewrites).
+- **Nothing left mid-flight.** No uncommitted changes, no article
+  refinement in progress.
+
 ### 2026-08-11 — Session A
 - Built `seo_agent_pro/agentic/audit_articles.py`: a zero-LLM diagnostic
   script reusing `evaluator._deterministic_checks()` against all published
