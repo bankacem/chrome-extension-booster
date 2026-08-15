@@ -1675,11 +1675,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/seo-meta-in-1-click-review-streamlining-your-optimization-process",
-      "destination": "/blog/seo-meta-in-1-click-review-streamlining-your-optimization-process",
-      "permanent": true
-    },
-    {
       "source": "/blog/unlock-the-power-of-music-the-best-chrome-extension-to-download-youtube-music",
       "destination": "/blog/unlock-the-power-of-music-youtube-mp3-download-extension",
       "permanent": true
@@ -1905,11 +1900,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/optimizing-browser-performance-how-to-limit-memory-per-tab-in-chrome",
-      "destination": "/blog/optimizing-browser-performance-how-to-limit-memory-per-tab-in-chrome",
-      "permanent": true
-    },
-    {
       "source": "/blog/unlock-the-power-of-visual-content-chrome-screenshot-addons",
       "destination": "/blog/unlock-the-power-of-visual-content-a-compunlock-the-power-of-visual-content-a-comprehensive-guide-to-chrome-screenshot-a",
       "permanent": true
@@ -2070,11 +2060,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance",
-      "destination": "/blog/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance",
-      "permanent": true
-    },
-    {
       "source": "/blog/unlocking-productivity-with-onetab-firefox-comprehensive-feature-review",
       "destination": "/blog/onetab-extension-review-2026-boosting-productivity",
       "permanent": true
@@ -2112,11 +2097,6 @@
     {
       "source": "/blog/boost-your-twitter-productivity-with-the-best-chrome-extension-for-twitter-productivity",
       "destination": "/blog",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser",
-      "destination": "/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser",
       "permanent": true
     },
     {
@@ -2247,11 +2227,6 @@
     {
       "source": "/blog/capture-extension-chrome-mkzmhabd14f",
       "destination": "/blog",
-      "permanent": true
-    },
-    {
-      "source": "/blog/how-to-capture-and-share-screenshots-instantly-blogging-web-design-bug-reporting-student-projects-7",
-      "destination": "/blog/how-to-capture-and-share-screenshots-instantly-blogging-web-design-bug-reporting-student-projects-7",
       "permanent": true
     },
     {
@@ -3688,6 +3663,81 @@
     {
       "source": "/blog/web-chrome-store-apps-mkzmcrxxiqn",
       "destination": "/blog/finding-apps-in-the-chrome-web-store",
+      "permanent": true
+    },
+    {
+      "source": "/blog/protab-suspender-vs-google-memory-saver-comparison-5",
+      "destination": "/blog/protab-suspender-vs-google-memory-saver-2026-which-saves-more-ram",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pro-student-chrome-extensions",
+      "destination": "/blog/pro-student-chrome-extensions-the-ultimate-academic-stack",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-ajouter-extension-chrome-8",
+      "destination": "/blog/ajouter-extension-chrome-8",
+      "permanent": true
+    },
+    {
+      "source": "/blog/noscript-chrome",
+      "destination": "/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mastering-the-art-of-screenshots-the-ultimate-screenshot-tool-chrome-tutorial",
+      "destination": "/blog/screenshot-tool-chrome-tutorial",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-screenshot-addon-alternatives-1",
+      "destination": "/blog/fast-screenshot-extension-alternatives-1",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extensions-to-chrome-mobile",
+      "destination": "/blog/how-to-use-chrome-extensions-on-mobile",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-speed-up-chrome",
+      "destination": "/blog/how-to-speed-up-chrome-on-low-end-pc-expert-tips-and-tricks",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-fix-chrome-high-memory-usage",
+      "destination": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-install-chrome-extensions-for-free",
+      "destination": "/blog/how-to-install-chrome-extensions-for-free-without-wrecking-your-browser",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capture-screen-in-chrome-7",
+      "destination": "/blog/chrome-screen-capture-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-get-dark-mode-on-youtube-desktop-2",
+      "destination": "/blog/youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-speed-up-a-slow-chrome-browser-in-2026",
+      "destination": "/blog/speed-up-slow-chrome-in-2026-10-fixes-that-actually-work",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025",
+      "destination": "/blog/chrome-extensions-vs-web-apps-comparison",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-chrome-extensions-reviews-guide-how-to-find-the-best-browser-tools",
+      "destination": "/blog/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools",
       "permanent": true
     }
   ]
