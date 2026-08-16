@@ -27,6 +27,33 @@ async function generateSitemap() {
     { url: `${WEBSITE_URL}/terms`, date: today },
   ];
 
+  // --- Extension product pages (/extension/:slug) ---
+  // These are static product pages (src/pages/ExtensionPage.tsx, data in
+  // src/lib/extensionsData.ts), NOT articles — they were never covered by
+  // this script at all, so all 9 of them were completely invisible to
+  // Google despite being real, live, linked-to pages (blog articles link
+  // to them regularly). Extracted via regex rather than importing the .ts
+  // file directly, since this script runs under plain Node without a
+  // TS/JSX loader. Uses today's date like the other static pages above —
+  // there's no meaningful per-extension "content changed" date to freeze,
+  // unlike articles which have a real published_at.
+  const extensionsDataPath = path.join(process.cwd(), "src", "lib", "extensionsData.ts");
+  const extensionEntries: SitemapEntry[] = [];
+  if (fs.existsSync(extensionsDataPath)) {
+    const extensionsSource = fs.readFileSync(extensionsDataPath, "utf-8");
+    const slugMatches = [...extensionsSource.matchAll(/slug:\s*"([^"]+)"/g)];
+    const seenExtensionSlugs = new Set<string>();
+    for (const m of slugMatches) {
+      const slug = m[1];
+      if (seenExtensionSlugs.has(slug)) continue; // getExtensionBySlug helper also matches "slug:" text — dedupe
+      seenExtensionSlugs.add(slug);
+      extensionEntries.push({ url: `${WEBSITE_URL}/extension/${slug}`, date: today });
+    }
+    console.log(`✅ Found ${extensionEntries.length} extension product page(s) in extensionsData.ts`);
+  } else {
+    console.log("ℹ️  src/lib/extensionsData.ts not found — skipping extension product pages.");
+  }
+
   // --- sitemap-dates.json: frozen first-publish dates per slug ---
   // This file acts as a lock: once a slug's date is written here it never
   // changes unless the article content is intentionally updated.
@@ -158,7 +185,7 @@ async function generateSitemap() {
   articleEntries.sort((a, b) => b.date.localeCompare(a.date));
   console.log(`Added ${articleEntries.length} articles to sitemap`);
 
-  const allEntries = [...staticEntries, ...articleEntries];
+  const allEntries = [...staticEntries, ...extensionEntries, ...articleEntries];
   const sitemapContent = generateSitemapXml(allEntries);
 
   const outputDirs = ["public", "dist"];
