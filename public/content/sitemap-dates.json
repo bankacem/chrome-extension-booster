@@ -102,6 +102,7 @@
   "best-chrome-extensions-for-pcs-with-4gb-ram": "2026-03-26",
   "best-chrome-extensions-for-privacy-2026": "2026-02-15",
   "best-chrome-extensions-for-remote-work-2026": "2026-08-07",
+  "best-chrome-extensions-for-web-accessibility-testing": "2026-08-17",
   "best-chrome-extensions-google-meet": "2026-05-03",
   "best-chrome-privacy-extensions-2026-complete-guide": "2026-03-31",
   "best-chrome-screenshot-extensions-2026-complete-guide": "2026-03-31",
@@ -287,6 +288,7 @@
   "es:best-chrome-ad-blockers-without-slowing-your-browser": "2026-08-04",
   "es:best-chrome-privacy-extensions-2026-complete-guide": "2026-03-31",
   "es:best-chrome-screenshot-extensions-2026-complete-guide": "2026-03-31",
+  "es:best-color-picker-chrome-extension": "2026-05-22",
   "es:best-lightweight-popup-blocker-chrome": "2026-03-04",
   "es:best-ram-saving-extensions-2026": "2026-03-22",
   "es:chromecast-extension-google-chrome": "2026-05-20",
@@ -371,6 +373,7 @@
   "fr:best-chrome-ad-blockers-without-slowing-your-browser": "2026-08-04",
   "fr:best-chrome-privacy-extensions-2026-complete-guide": "2026-03-31",
   "fr:best-chrome-screenshot-extensions-2026-complete-guide": "2026-03-31",
+  "fr:best-color-picker-chrome-extension": "2026-05-22",
   "fr:best-lightweight-popup-blocker-chrome": "2026-03-04",
   "fr:best-ram-saving-extensions-2026": "2026-03-22",
   "fr:chromecast-extension-google-chrome": "2026-05-20",
@@ -772,7 +775,5 @@
   "writing-vlookup-formulas-for-beginners-2": "2026-01-23",
   "youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds": "2026-03-16",
   "youtube-extensions-that-actually-save-you-time": "2026-04-15",
-  "youtube-to-mp4-converter-chrome-extensions": "2026-02-20",
-  "fr:best-color-picker-chrome-extension": "2026-05-22",
-  "es:best-color-picker-chrome-extension": "2026-05-22"
+  "youtube-to-mp4-converter-chrome-extensions": "2026-02-20"
 }
