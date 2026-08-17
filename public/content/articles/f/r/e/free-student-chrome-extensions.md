@@ -34,7 +34,6 @@ updated_at: '2026-04-23T12:28:52.080856+00:00'
 <p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
 <p>Below is a curated, battle-tested arsenal of <a href="/blog/free-chrome-extension-reviews-how-to-spot-the-gems-and-dodge-the-junk" class="internal-link" title="Free Chrome Extension Reviews: How to Spot the Gems and Dodge the Junk">free Chrome extension</a> <a href="/blog/top-10-google-sheets-extensions-for-accounting-8" class="internal-link" title="Top 10 Google Sheets Extensions for Accounting: Streamlining Financial Workflows in 2025">extensions</a> for 2024-2025 that will fundamentally alter your academic workflow.</p>
 <p><!-- /wp:paragraph --> <!-- wp:image {"sizeSlug":"large"} --></p>
-<figure class="wp-block-image size-large"><img src="" alt="" /></figure>
 <p><!-- /wp:image --> <!-- wp:heading {"level":1} --></p>
 <h2 class="wp-block-heading">The Student Stack: Table of Contents</h2>
 <p><!-- /wp:heading --> <!-- wp:list --></p>

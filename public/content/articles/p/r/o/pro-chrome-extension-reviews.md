@@ -32,7 +32,6 @@ updated_at: '2026-03-16T14:43:41.755405+00:00'
 <p><!-- wp:paragraph --></p>
 <p>Pro Chrome Extension Reviews: The Ultimate 2025 Guide</p>
 <p><!-- /wp:paragraph --> <!-- wp:image {"sizeSlug":"large"} --></p>
-<figure class="wp-block-image size-large"><img src="" alt="" /></figure>
 <p><!-- /wp:image --> <!-- wp:heading {"level":4} --></p>
 <h4 class="wp-block-heading">Pro Chrome Extension Reviews: The 2025 Power User's Guide</h4>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>

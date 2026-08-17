@@ -34,7 +34,6 @@ updated_at: '2026-04-23T12:29:17.253175+00:00'
 <p><!-- wp:heading {"level":1} --></p>
 <h2 class="wp-block-heading">&nbsp;</h2>
 <p><!-- /wp:heading --> <!-- wp:image {"sizeSlug":"large"} --></p>
-<figure class="wp-block-image size-large"><img src="" alt="" /></figure>
 <p><!-- /wp:image --> <!-- wp:paragraph --></p>
 <p>Your browser is basically naked. It&rsquo;s functional, sure. It loads pages. It plays videos. But right out of the box, Google Chrome is like a Swiss Army knife that only has a spoon attached. To actually get work done&mdash;or to stop annoying ads from following you across the internet&mdash;you need to beef it up.</p>
 <p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>

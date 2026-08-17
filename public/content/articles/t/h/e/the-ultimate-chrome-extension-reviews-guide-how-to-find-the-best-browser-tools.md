@@ -29,7 +29,6 @@ updated_at: '2026-04-23T12:29:02.571418+00:00'
 <img src="/content/images/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools/featured.webp" alt="The Ultimate Chrome Extension Reviews Guide: How to Find the Best Browser Tools" width="1200" height="630" loading="lazy" class="featured-image">
 
 <p><!-- wp:image {"id":25,"sizeSlug":"large","linkDestination":"none"} --></p>
-<figure class="wp-block-image size-large"><img class="wp-image-25" src="" alt="" /></figure>
 <p><!-- /wp:image --> <!-- wp:image --></p>
 <figure class="wp-block-image"><img alt="" /></figure>
 <p><!-- /wp:image --> <!-- wp:paragraph --></p>
