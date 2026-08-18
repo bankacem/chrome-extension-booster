@@ -87,7 +87,7 @@ def _deterministic_checks(state: dict) -> list[str]:
     # catch every truncation, but it catches the common case where a
     # provider response was cut short and still got treated as final.
     stripped_body = body.rstrip()
-    if stripped_body and not re.search(r'[.!?"\')\]\u2019\u201d]$|```$', stripped_body):
+    if stripped_body and not re.search(r'[.!?"\')\]\u2019\u201d*_~]$|```$|</\w+>$', stripped_body):
         issues.append(
             "body does not end with sentence-ending punctuation "
             "(looks truncated mid-sentence/mid-word)"
