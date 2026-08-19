@@ -130,13 +130,6 @@ description: "Welcome to the world of Chrome extensions, where you can enhance y
 
 <p>You don't need to read the full policy document to protect yourself — a few checks cover most of what actually matters. Open the Store listing and check whether the description matches what the extension's permissions request; a "screenshot tool" asking for access to every site you visit, all the time, is a mismatch worth questioning. Check the developer's other listed extensions and how long the account has been active — a pattern of near-identical extensions from a brand-new account is a common signature of Store spam rather than a genuine single-purpose tool. Finally, a privacy policy link should exist for anything that collects data at all; its absence on an extension that clearly does collect something is itself a policy gap.</p>
 
-<ul>
-<li><strong>Rejection at submission.</strong> The most common outcome — the reviewer flags the issue, you fix it, and resubmit. This is the "wait-fix-resubmit loop" most first-time developers hit at least once.</li>
-<li><strong>Removal after publishing.</strong> If a previously-approved extension is later found to violate policy (or the policy changes), it can be pulled from the Store even after users have already installed it.</li>
-<li><strong>Developer account ban.</strong> Reserved for clear bad-faith patterns — manipulated reviews, scam behavior, or repeated policy violations across multiple extensions from the same developer.</li>
-<li><strong>Security-triggered removal.</strong> If an extension is linked to a security vulnerability that could compromise users or other software, Google can remove it and require specific remediation before it's allowed back.</li>
-</ul>
-
 <h2>Managing and Optimizing Your Chrome Extensions</h2>
 
 <p>To get the most out of your Chrome extensions, it's essential to manage and optimize them regularly. Here are some tips to help you do so:</p>
@@ -175,11 +168,11 @@ description: "Welcome to the world of Chrome extensions, where you can enhance y
 
 <h2>Conclusion</h2>
 
-<p>In conclusion, "extension regle chrome" is an essential concept that can help you make the most out of your Chrome extensions. By understanding the rules and guidelines that govern Chrome extensions — single purpose, limited data use, no remote code, and no manipulation — you can create a personalized browsing experience that meets your needs and preferences, or build an extension that passes review the first time. With the right extensions and optimization techniques, you can boost your productivity, enhance your security, and take your browsing experience to the next level.</p>
+<p>In conclusion, understanding the rules that govern Chrome extensions — single purpose, limited data use, no remote code, and no manipulation — helps you get more out of the extensions you install, or build one that passes review the first time. With the right extensions and optimization techniques, you can boost your productivity, enhance your security, and take your browsing experience to the next level.</p>
 
 <h2 id="faq">FAQ</h2>
 
-<p>Here are some frequently asked questions about "extension regle chrome" and Chrome extensions:</p>
+<p>Here are some frequently asked questions about Chrome extension rules and policies:</p>
 
 <ol>
     <li><strong>Q: What is the purpose of "extension regle chrome"?</strong>
@@ -195,13 +188,15 @@ description: "Welcome to the world of Chrome extensions, where you can enhance y
     <li><strong>Q: What happens if my extension violates a policy after it's already published?</strong>
     <p>A: It can be removed from the Store even after users have installed it, and repeated or severe violations can lead to a full developer account ban — see "What Happens If You Break the Rules?" above.</p></li>
     <li><strong>Q: Can I use Chrome extensions on other browsers?</strong>
-    <p>A: No, Chrome extensions are specific to the Google Chrome browser and cannot be used on other browsers.</p></li>
+    <p>A: Often, yes — Chromium-based browsers like Microsoft Edge, Brave, Opera, and Vivaldi can install extensions directly from the Chrome Web Store, since they share the same underlying extension platform. Firefox and Safari use different extension systems and generally can't run Chrome extensions unmodified.</p></li>
     <li><strong>Q: How do I optimize my Chrome extension performance?</strong>
     <p>A: You can optimize your Chrome extension performance by using extensions that are optimized for performance, disabling or removing unnecessary extensions, and monitoring extension resource usage.</p></li>
     <li><strong>Q: What does it actually cost to publish an extension?</strong>
     <p>A: A one-time $5 Chrome Web Store Developer Dashboard registration fee, plus mandatory 2-Step Verification on your account — see the Publishing Checklist above for the full list.</p></li>
     <li><strong>Q: Are enterprise extensions held to the same rules?</strong>
     <p>A: Mostly, but not entirely — extensions published specifically to an enterprise's own domain are exempt from the Single Purpose policy, since they aren't competing for placement in the public Chrome Web Store the way consumer extensions are.</p></li>
+    <li><strong>Q: Does Google review extension updates the same way as new submissions?</strong>
+    <p>A: Yes — every update goes through the same review process as an initial submission, not a lighter check. This is why a previously-approved extension can still be flagged and rejected later: a policy update, or a change you made in a new version, can trigger a fresh review that catches something the original version never had.</p></li>
     <li><strong>Q: Can I develop my own Chrome extension?</strong>
     <p>A: Yes, you can develop your own Chrome extension using JavaScript, HTML, and CSS. Our <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">guide to programming Chrome extensions</a> walks through a complete working example.</p></li>
 </ol>
