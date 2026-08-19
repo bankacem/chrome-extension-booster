@@ -54,6 +54,33 @@
     "updated_at": "2026-08-17T00:00:00.000Z"
   },
   {
+    "id": "fe6dab6d-a4c9-4e9a-82ab-97caef3ca633",
+    "title": "Chrome Extensions for Time Zone Conversion",
+    "slug": "chrome-extensions-for-time-zone-conversion",
+    "description": "Chrome extensions for time zone conversion — scheduling tools vs clock widgets, Daylight Saving Time handling, and calendar integration.",
+    "meta_description": "Chrome extensions for time zone conversion — scheduling tools vs clock widgets, Daylight Saving Time handling, and calendar integration.",
+    "excerpt": "Chrome extensions for time zone conversion — scheduling tools vs clock widgets, Daylight Saving Time handling, and calendar integration.",
+    "published_at": "2026-08-17T00:00:00.000Z",
+    "category": "Productivity & Tools",
+    "author": "Admin",
+    "image_url": "/og-image.png",
+    "featured_image": "/og-image.png",
+    "reading_time": 9,
+    "read_time": 9,
+    "views": 0,
+    "tags": [
+      "time zones",
+      "scheduling",
+      "productivity",
+      "chrome extensions"
+    ],
+    "keywords": [
+      "chrome extensions for time zone conversion"
+    ],
+    "canonicalPath": "/blog/chrome-extensions-for-time-zone-conversion",
+    "updated_at": "2026-08-17T00:00:00.000Z"
+  },
+  {
     "id": "c74188ec-7afd-4b17-8c98-99a37e859acd",
     "title": "How to Disable Chrome Notifications: A Complete Guide",
     "slug": "how-to-disable-chrome-notifications",
