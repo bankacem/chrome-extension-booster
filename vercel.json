@@ -2350,6 +2350,11 @@
       "permanent": true
     },
     {
+      "source": "/blog/is-ghostery-safe-to-use-a-professional-2026-review",
+      "destination": "/blog/is-ghostery-safe-a-closer-look-for-2026",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
