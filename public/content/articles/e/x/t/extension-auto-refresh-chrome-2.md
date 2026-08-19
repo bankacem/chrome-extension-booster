@@ -11,7 +11,7 @@ category: "Productivity & Tools"
 tags: []
 keywords:
   - extension auto refresh chrome
-meta_description: "A hands-on look at efficient browsing, covering setup, real features, and what to expect before installing it."
+meta_description: "Tired of manually refreshing web pages to catch the latest updates? Here's how an auto-refresh extension for Chrome automates it on a schedule you control."
 status: published
 published_at: '2026-05-10T22:15:01.437+00:00'
 scheduled_at: '2026-05-10T22:15:00+00:00'

@@ -9,7 +9,7 @@ category: "Security & Privacy"
 tags: []
 keywords:
   - extension chrome cookie editor
-meta_description: "A practical breakdown of extension chrome cookie editor: how it works, how to set it up, and where it falls short."
+meta_description: "Need to view, edit, or delete cookies for testing and debugging? Here's how a cookie editor extension for Chrome gives you full control over site data."
 status: published
 published_at: '2026-05-13T02:15:00.294+00:00'
 scheduled_at: '2026-05-13T02:15:00+00:00'

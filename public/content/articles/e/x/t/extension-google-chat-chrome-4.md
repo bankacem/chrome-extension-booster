@@ -9,7 +9,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - extension google chat chrome
-meta_description: "Google Chat has revolutionized the way we communicate with colleagues, friends, and family."
+meta_description: "Tired of switching tabs to check Google Chat while working in Chrome? Here's how a dedicated extension keeps your messages one click away at all times."
 status: published
 published_at: '2026-02-05T14:11:01.038+00:00'
 scheduled_at: '2026-02-05T14:11:00+00:00'

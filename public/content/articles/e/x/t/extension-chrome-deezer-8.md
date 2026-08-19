@@ -9,7 +9,7 @@ category: "Social Media Tools"
 tags: []
 keywords:
   - extension chrome deezer
-meta_description: "Are you a music lover looking for a seamless way to enjoy your favorite tunes while browsing the web?"
+meta_description: "Want to control your Deezer music without switching tabs? Here's how a Deezer extension for Chrome adds playback controls right in your browser toolbar."
 status: published
 published_at: '2026-02-09T02:11:01.174+00:00'
 scheduled_at: '2026-02-09T02:11:00+00:00'
