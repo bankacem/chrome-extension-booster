@@ -15,7 +15,7 @@ category: "Media & Downloads"
 tags: []
 keywords:
   - bulk image downloader chrome
-meta_description: "A hands-on look at image downloading, covering setup, real features, and what to expect before installing it."
+meta_description: "Tired of manually downloading images one by one from your favorite sites? Here's a complete guide to bulk image downloader extensions for Chrome."
 status: published
 published_at: '2026-04-02T18:15:00.332+00:00'
 scheduled_at: '2026-04-02T18:15:00+00:00'

@@ -9,7 +9,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome presearch
-meta_description: "Are you tired of using search engines that track your every move and sell your data to third-party companies?"
+meta_description: "Tired of search engines tracking your every move and selling your data? Here's an introduction to the Presearch extension for Chrome and how it works."
 status: published
 published_at: '2026-02-07T14:11:01.141+00:00'
 scheduled_at: '2026-02-07T14:11:00+00:00'

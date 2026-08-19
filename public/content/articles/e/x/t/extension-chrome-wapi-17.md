@@ -9,7 +9,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome wapi
-meta_description: "A practical breakdown of the chrome wapi extension: how it works, how to set it up, and where it falls short."
+meta_description: "Looking to enhance your browsing experience with the WAPI extension for Chrome? Here's a closer look at what it does and how to get it set up."
 status: published
 published_at: '2026-02-06T20:11:01.423+00:00'
 scheduled_at: '2026-02-06T20:11:00+00:00'

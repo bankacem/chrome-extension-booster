@@ -9,7 +9,7 @@ category: Productivity & Tools
 tags: []
 keywords:
 - extension surligneur chrome
-meta_description: Are you tired of tedious note-taking and tedious text highlighting while browsing the web?
+meta_description: "Tired of tedious note-taking and manual text highlighting while browsing? Here's how a highlighter extension for Chrome speeds up reading and research."
 status: published
 published_at: '2026-02-04T02:11:00.582+00:00'
 scheduled_at: '2026-02-04T02:11:00+00:00'

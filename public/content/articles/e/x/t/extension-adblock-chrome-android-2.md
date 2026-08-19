@@ -5,11 +5,11 @@ title: 'Mastering Ad Blocking on Chrome Android'
 slug: extension-adblock-chrome-android-2
 excerpt: "Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further!"
 featured_image: /content/images/extension-adblock-chrome-android-2/featured.webp
-category: Redirect & Navigation
+category: "Ad Blockers"
 tags: []
 keywords:
   - extension adblock chrome android
-meta_description: "What to know about ad blocking on chrome android before installing it, including setup and practical trade-offs."
+meta_description: "Tired of annoying ads disrupting your browsing on Chrome Android? Here's how to master ad blocking on Android and browse without the constant interruptions."
 status: published
 published_at: '2026-05-11T22:15:00.339+00:00'
 scheduled_at: '2026-05-11T22:15:00+00:00'
