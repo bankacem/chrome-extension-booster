@@ -30,7 +30,6 @@ updated_at: '2026-04-23T12:29:02.571418+00:00'
 
 <p><!-- wp:image {"id":25,"sizeSlug":"large","linkDestination":"none"} --></p>
 <p><!-- /wp:image --> <!-- wp:image --></p>
-<figure class="wp-block-image"><img alt="" /></figure>
 <p><!-- /wp:image --> <!-- wp:paragraph --></p>
 <p>Let&rsquo;s be honest. Your browser is a mess. You have 47 tabs open, three of them are playing audio you can&rsquo;t locate, and your RAM is crying for mercy. We&rsquo;ve all been there. But here&rsquo;s the thing: most people use Chrome like a blunt instrument when it could be a scalpel.</p>
 <p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>

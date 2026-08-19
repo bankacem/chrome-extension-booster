@@ -89,8 +89,6 @@ updated_at: '2026-05-12T10:15:03.144288+00:00'
   <li>Compatibility: Compatible with all Chrome versions and devices with an extension chrome dark mode. This ensures that our extension will work seamlessly with your device, regardless of the Chrome version or device you're using.</li>
 </ul>
 
-<img src=\"auto-dark-mode-switcher-screenshot.jpg\" alt=\"Auto Dark Mode Switcher screenshot\" class=\"w-full rounded-lg my-4\" />
-
 <h2>Conclusion</h2>
 
 <p>In conclusion, dark mode extensions are a powerful tool for enhancing your browsing experience with an extension chrome dark mode. With the help of our <a href=\"/extension/auto-dark-mode-switcher\" class=\"text-primary font-medium hover:underline\">Auto Dark Mode Switcher</a> extension, you can seamlessly switch between light and dark modes, reducing eye strain and conserving battery life using an extension chrome dark mode. Whether you're a casual browser or a power user, our Auto Dark Mode Switcher extension is the perfect solution for you with an extension chrome dark mode. So why wait? Install our <a href=\"/extension/auto-dark-mode-switcher\" class=\"text-primary font-medium hover:underline\">Auto Dark Mode Switcher</a> extension today and experience the power of seamless dark mode switching with an extension chrome dark mode!</p>
