@@ -28,3 +28,7 @@ google-indexing-key.json
 service-account.json
 google-services.json
 __pycache__/
+
+# Generated modern image variants are created by the prebuild optimizer
+public/**/*.avif
+public/**/*.webp

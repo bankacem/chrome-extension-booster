@@ -1,12 +1,16 @@
 ---
-seo_title: "Best Chrome Extensions for Language Learning"
+seo_title: Best Chrome Extensions for Language Learning
 id: fe5d2522-20a9-4304-9df0-f5bae61b4970
-title: "Best Chrome Extensions for Language Learning"
+title: Best Chrome Extensions for Language Learning
 slug: best-chrome-extensions-for-language-learning
 status: published
-excerpt: "A researched, up-to-date comparison of the best Chrome extensions for language learning in 2026, from AI subtitle tools to reading and flashcard apps."
-meta_description: "A researched comparison of the best Chrome extensions for language learning in 2026 — subtitle tools, reading extensions, flashcards, pricing, and picks."
-featured_image: /og-image.png
+excerpt: >-
+  A researched, up-to-date comparison of the best Chrome extensions for language
+  learning in 2026, from AI subtitle tools to reading and flashcard apps.
+meta_description: >-
+  A researched comparison of the best Chrome extensions for language learning in
+  2026 — subtitle tools, reading extensions, flashcards, pricing, and picks.
+featured_image: /content/images/generated/best-chrome-extensions-for-language-learning.jpg
 category: Chrome Extensions
 tags:
   - language learning
@@ -16,7 +20,7 @@ tags:
 keywords:
   - best chrome extensions for language learning
 author: Admin
-published_at: 2026-08-08
+published_at: 2026-08-08T00:00:00.000Z
 read_time: 8
 ---
 Learning a language while you already spend hours a day in Chrome — watching videos, reading articles, scrolling social media — is one of the most efficient ways to pick up vocabulary without carving out separate "study time." A handful of Chrome extensions have built entire feature sets around exactly that idea: turning ordinary browsing, Netflix binges, and YouTube rabbit holes into passive or active language practice. This guide compares the extensions actually worth installing in 2026, based on their real feature sets, platform support, and pricing.

@@ -1,13 +1,18 @@
 ---
 id: 8cea7e06-c7cb-4905-aa9f-e85ff42cb4f4
-title: "Best Chrome Extensions for Web Accessibility Testing"
-seo_title: "Best Extensions for Accessibility Testing"
+title: Best Chrome Extensions for Web Accessibility Testing
+seo_title: Best Extensions for Accessibility Testing
 slug: best-chrome-extensions-for-web-accessibility-testing
 canonicalPath: /blog/best-chrome-extensions-for-web-accessibility-testing
 status: published
-excerpt: "The best Chrome extensions for web accessibility testing — automated scanners, contrast checking, keyboard navigation, and screen reader testing."
-meta_description: "The best Chrome extensions for web accessibility testing — automated scanners, contrast checking, keyboard navigation, and screen reader testing."
-featured_image: /og-image.png
+excerpt: >-
+  The best Chrome extensions for web accessibility testing — automated scanners,
+  contrast checking, keyboard navigation, and screen reader testing.
+meta_description: >-
+  The best Chrome extensions for web accessibility testing — automated scanners,
+  contrast checking, keyboard navigation, and screen reader testing.
+featured_image: >-
+  /content/images/generated/best-chrome-extensions-for-web-accessibility-testing.jpg
 category: Productivity & Tools
 tags:
   - accessibility
@@ -17,7 +22,7 @@ tags:
 keywords:
   - best chrome extensions for web accessibility testing
 author: Admin
-published_at: 2026-08-17
+published_at: 2026-08-17T00:00:00.000Z
 read_time: 10
 ---
 Most "best accessibility extensions" guides list tools without explaining the single most important thing to know before using any of them: an automated scanner passing your site does not mean your site is actually accessible. Automated tools reliably catch somewhere around 30-40% of real WCAG issues — things like missing alt text, insufficient color contrast, and missing form labels. The rest requires manual testing: keyboard navigation, screen reader compatibility, logical focus order, and content that only a human (or real assistive technology) can properly evaluate.

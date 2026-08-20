@@ -1,13 +1,17 @@
 ---
 id: c74188ec-7afd-4b17-8c98-99a37e859acd
-title: "How to Disable Chrome Notifications: A Complete Guide"
-seo_title: "How to Disable Chrome Notifications"
+title: 'How to Disable Chrome Notifications: A Complete Guide'
+seo_title: How to Disable Chrome Notifications
 slug: how-to-disable-chrome-notifications
 canonicalPath: /blog/how-to-disable-chrome-notifications
 status: published
-excerpt: "How to disable Chrome notifications you've already allowed — site-by-site cleanup, OS-level settings, and Chrome for Android."
-meta_description: "How to disable Chrome notifications you've already allowed — site-by-site cleanup, OS-level settings, and Chrome for Android."
-featured_image: /og-image.png
+excerpt: >-
+  How to disable Chrome notifications you've already allowed — site-by-site
+  cleanup, OS-level settings, and Chrome for Android.
+meta_description: >-
+  How to disable Chrome notifications you've already allowed — site-by-site
+  cleanup, OS-level settings, and Chrome for Android.
+featured_image: /content/images/generated/how-to-disable-chrome-notifications.jpg
 category: Productivity & Tools
 tags:
   - notifications
@@ -17,7 +21,7 @@ tags:
 keywords:
   - how to disable chrome notifications
 author: Admin
-published_at: 2026-08-17
+published_at: 2026-08-17T00:00:00.000Z
 read_time: 6
 ---
 There are actually two different problems hiding behind "disable Chrome notifications." One is stopping the popup that asks "Allow notifications?" when you visit a new site. The other is turning off notifications from sites you've already said yes to, sometimes without remembering which ones. This guide is about the second problem — managing and disabling notifications you've already granted, plus the settings layers most guides skip entirely: what happens at the operating-system level, and how this works differently on Chrome for Android.

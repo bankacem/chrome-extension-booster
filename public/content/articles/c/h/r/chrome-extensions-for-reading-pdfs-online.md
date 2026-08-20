@@ -1,13 +1,17 @@
 ---
 id: f991b940-f96d-4a28-b541-b830d396bb31
-title: "Chrome Extensions for Reading PDFs Online: A Task-Based Guide"
-seo_title: "Chrome Extensions for Reading PDFs Online"
+title: 'Chrome Extensions for Reading PDFs Online: A Task-Based Guide'
+seo_title: Chrome Extensions for Reading PDFs Online
 slug: chrome-extensions-for-reading-pdfs-online
 canonicalPath: /blog/chrome-extensions-for-reading-pdfs-online
 status: published
-excerpt: "A task-based guide to Chrome PDF extensions — for reading, annotating, and form-filling, plus the offline and permission checks other guides skip."
-meta_description: "A task-based guide to Chrome PDF extensions — for reading, annotating, and form-filling, plus the offline and permission checks other guides skip."
-featured_image: /og-image.png
+excerpt: >-
+  A task-based guide to Chrome PDF extensions — for reading, annotating, and
+  form-filling, plus the offline and permission checks other guides skip.
+meta_description: >-
+  A task-based guide to Chrome PDF extensions — for reading, annotating, and
+  form-filling, plus the offline and permission checks other guides skip.
+featured_image: /content/images/generated/chrome-extensions-for-reading-pdfs-online.jpg
 category: Productivity & Tools
 tags:
   - pdf
@@ -17,7 +21,7 @@ tags:
 keywords:
   - chrome extensions for reading pdfs online
 author: Admin
-published_at: 2026-08-09
+published_at: 2026-08-09T00:00:00.000Z
 read_time: 6
 ---
 Most "best PDF extensions" lists jump straight into a list of ten tools without asking the one question that actually matters: what are you trying to do with the PDF? Reading a report is a different problem than annotating a research paper, and both are different from filling out and signing a form. This guide is organized by that question instead of by popularity, and it covers a few things most PDF-extension roundups skip entirely — like whether you need an extension at all, and what permissions you're actually granting when you install one.

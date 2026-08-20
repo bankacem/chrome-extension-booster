@@ -1,13 +1,17 @@
 ---
 id: 75777b9d-b1fb-4c18-aeb7-f326781aabec
-title: "Best Chrome Extensions for Note Taking: A Task-Based Guide"
-seo_title: "Best Chrome Extensions for Note Taking"
+title: 'Best Chrome Extensions for Note Taking: A Task-Based Guide'
+seo_title: Best Chrome Extensions for Note Taking
 slug: best-chrome-extensions-for-note-taking
 canonicalPath: /blog/best-chrome-extensions-for-note-taking
 status: published
-excerpt: "A task-based guide to Chrome note-taking extensions — which type you actually need, real data-portability answers, and the permissions other guides skip."
-meta_description: "A task-based guide to Chrome note-taking extensions — which type you actually need, real data-portability answers, and the permissions other guides skip."
-featured_image: /og-image.png
+excerpt: >-
+  A task-based guide to Chrome note-taking extensions — which type you actually
+  need, real data-portability answers, and the permissions other guides skip.
+meta_description: >-
+  A task-based guide to Chrome note-taking extensions — which type you actually
+  need, real data-portability answers, and the permissions other guides skip.
+featured_image: /content/images/generated/best-chrome-extensions-for-note-taking.jpg
 category: Productivity & Tools
 tags:
   - note taking
@@ -17,7 +21,7 @@ tags:
 keywords:
   - best chrome extensions for note taking
 author: Admin
-published_at: 2026-08-09
+published_at: 2026-08-09T00:00:00.000Z
 read_time: 9
 ---
 Type "best note-taking Chrome extensions" into Google and you'll get a dozen lists that all do the same thing: ten logos, one line each, no real distinction between them. What almost none of them tell you is that "note-taking extension" actually means three different products wearing the same label — a lightweight sticky-note tool that lives entirely in your browser, a clipper that saves pages into a bigger app you already pay for, and a markdown-first tool built for people who never want to leave plain text. Installing the wrong type is why so many people install a note extension, use it twice, and forget it exists.

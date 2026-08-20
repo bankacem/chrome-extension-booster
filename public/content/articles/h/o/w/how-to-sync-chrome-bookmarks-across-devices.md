@@ -1,13 +1,17 @@
 ---
 id: 06fb1066-9d5d-4593-aab2-0539fae539b5
-title: "How to Sync Chrome Bookmarks Across Devices: Troubleshooting Guide"
-seo_title: "How to Sync Chrome Bookmarks Across Devices"
+title: 'How to Sync Chrome Bookmarks Across Devices: Troubleshooting Guide'
+seo_title: How to Sync Chrome Bookmarks Across Devices
 slug: how-to-sync-chrome-bookmarks-across-devices
 canonicalPath: /blog/how-to-sync-chrome-bookmarks-across-devices
 status: published
-excerpt: "Step-by-step troubleshooting for Chrome bookmark sync — profile conflicts, edit conflicts, verifying sync works, and moving to a new computer."
-meta_description: "Step-by-step troubleshooting for Chrome bookmark sync — profile conflicts, edit conflicts, verifying sync works, and moving to a new computer."
-featured_image: /og-image.png
+excerpt: >-
+  Step-by-step troubleshooting for Chrome bookmark sync — profile conflicts,
+  edit conflicts, verifying sync works, and moving to a new computer.
+meta_description: >-
+  Step-by-step troubleshooting for Chrome bookmark sync — profile conflicts,
+  edit conflicts, verifying sync works, and moving to a new computer.
+featured_image: /content/images/generated/how-to-sync-chrome-bookmarks-across-devices.jpg
 category: Productivity & Tools
 tags:
   - bookmarks
@@ -17,7 +21,7 @@ tags:
 keywords:
   - how to sync chrome bookmarks across devices
 author: Admin
-published_at: 2026-08-09
+published_at: 2026-08-09T00:00:00.000Z
 read_time: 7
 ---
 If you haven't set up a folder structure and workflow for your bookmarks yet, [a complete system for managing them efficiently](/blog/how-to-manage-chrome-bookmarks-efficiently) is worth reading first. Bookmark sync usually works silently in the background, which is exactly why it's confusing when it doesn't: there's no obvious error message, just a bookmark that isn't where you expect it. This guide is a step-by-step troubleshooting companion — turning sync on correctly, the specific case of personal vs. work profiles, what actually happens when you edit the same bookmark on two devices, how to verify sync is really working (not just enabled), and moving bookmarks to a new computer.

@@ -1,18 +1,23 @@
 ---
 id: 4ae4896f-122c-445a-93a6-8257bf656c59
-seo_title: "Best Chrome Extensions for Accessibility"
-title: "Best Chrome Extensions for Accessibility: Boost Your Browsing Experience"
+seo_title: Best Chrome Extensions for Accessibility
+title: 'Best Chrome Extensions for Accessibility: Boost Your Browsing Experience'
 slug: best-chrome-extensions-for-accessibility-boost-your-browsing-experience
 status: published
-excerpt: "Discover the best Chrome extensions for accessibility to enhance your browsing experience. Simplify navigation with these top tools designed for everyone."
-meta_description: "Discover the best Chrome extensions for accessibility to enhance your browsing experience. Simplify navigation with these top tools designed for everyone."
-featured_image: /og-image.png
+excerpt: >-
+  Discover the best Chrome extensions for accessibility to enhance your browsing
+  experience. Simplify navigation with these top tools designed for everyone.
+meta_description: >-
+  Discover the best Chrome extensions for accessibility to enhance your browsing
+  experience. Simplify navigation with these top tools designed for everyone.
+featured_image: >-
+  /content/images/generated/best-chrome-extensions-for-accessibility-boost-your-browsing-experience.jpg
 category: Productivity & Tools
 tags: []
 keywords:
   - best chrome extensions for accessibility
 author: Admin
-published_at: 2026-08-04
+published_at: 2026-08-04T00:00:00.000Z
 read_time: 7
 ---
 The internet is the great equalizer—unless it isn’t. For millions of users worldwide, navigating websites is a challenge due to visual impairments, motor disabilities, or cognitive difficulties. Thankfully, we’re in an age where digital accessibility is catching up, and tools like Chrome extensions can bridge the gap. In this guide, we’ll explore the **best Chrome extensions for accessibility**, with real-world scenarios, actionable steps, and insights designed for both tech-savvy users and beginners.  

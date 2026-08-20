@@ -1,13 +1,17 @@
 ---
 id: ee78df07-8ecb-489b-9e74-05bd4852423c
-title: "Chrome Extensions for Online Privacy in 2026: A Threat-Based Guide"
-seo_title: "Chrome Extensions for Online Privacy in 2026"
+title: 'Chrome Extensions for Online Privacy in 2026: A Threat-Based Guide'
+seo_title: Chrome Extensions for Online Privacy in 2026
 slug: chrome-extensions-for-online-privacy-2026
 canonicalPath: /blog/chrome-extensions-for-online-privacy-2026
 status: published
-excerpt: "A threat-based guide to Chrome privacy extensions in 2026 — trackers, fingerprinting, passwords, and what Manifest V3 actually changed."
-meta_description: "A threat-based guide to Chrome privacy extensions in 2026 — trackers, fingerprinting, passwords, and what Manifest V3 actually changed."
-featured_image: /og-image.png
+excerpt: >-
+  A threat-based guide to Chrome privacy extensions in 2026 — trackers,
+  fingerprinting, passwords, and what Manifest V3 actually changed.
+meta_description: >-
+  A threat-based guide to Chrome privacy extensions in 2026 — trackers,
+  fingerprinting, passwords, and what Manifest V3 actually changed.
+featured_image: /content/images/generated/chrome-extensions-for-online-privacy-2026.jpg
 category: Security & Privacy
 tags:
   - privacy
@@ -17,7 +21,7 @@ tags:
 keywords:
   - chrome extensions for online privacy in 2026
 author: Admin
-published_at: 2026-08-09
+published_at: 2026-08-09T00:00:00.000Z
 read_time: 8
 ---
 Search "chrome extensions for online privacy" and you'll get the same list everywhere: a handful of tracker-blockers, maybe a VPN, done. What almost none of these lists do is separate the actual threats you're defending against — because "online privacy" isn't one problem. Third-party tracking, browser fingerprinting, unencrypted DNS lookups, and weak passwords are four genuinely different holes, and no single extension plugs all four.

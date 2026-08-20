@@ -1,12 +1,16 @@
 ---
 id: fe6dab6d-a4c9-4e9a-82ab-97caef3ca633
-title: "Chrome Extensions for Time Zone Conversion"
+title: Chrome Extensions for Time Zone Conversion
 slug: chrome-extensions-for-time-zone-conversion
 canonicalPath: /blog/chrome-extensions-for-time-zone-conversion
 status: published
-excerpt: "Chrome extensions for time zone conversion — scheduling tools vs clock widgets, Daylight Saving Time handling, and calendar integration."
-meta_description: "Chrome extensions for time zone conversion — scheduling tools vs clock widgets, Daylight Saving Time handling, and calendar integration."
-featured_image: /og-image.png
+excerpt: >-
+  Chrome extensions for time zone conversion — scheduling tools vs clock
+  widgets, Daylight Saving Time handling, and calendar integration.
+meta_description: >-
+  Chrome extensions for time zone conversion — scheduling tools vs clock
+  widgets, Daylight Saving Time handling, and calendar integration.
+featured_image: /content/images/generated/chrome-extensions-for-time-zone-conversion.jpg
 category: Productivity & Tools
 tags:
   - time zones
@@ -16,7 +20,7 @@ tags:
 keywords:
   - chrome extensions for time zone conversion
 author: Admin
-published_at: 2026-08-17
+published_at: 2026-08-17T00:00:00.000Z
 read_time: 9
 ---
 Most "time zone extension" guides show a list of clock widgets and call it done, but the actual hard problem people searching this phrase usually have isn't "what time is it in Tokyo right now" — it's "if I schedule this call for 3pm my time, what time is that for the four other people in three different time zones, and will that still be true after Daylight Saving Time changes next month." This guide is built around that real problem: scheduling, not just display.

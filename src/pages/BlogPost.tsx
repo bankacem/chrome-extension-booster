@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import ResponsiveArticleImage from "@/components/ResponsiveArticleImage";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import DirectDownloadSection from "@/components/seo/DirectDownloadSection";
 import VideoPlayer from "@/components/blog/VideoPlayer";
@@ -406,13 +407,13 @@ const BlogPost = () => {
 
           {article.featured_image && (
             <div className="mb-8 overflow-hidden rounded-xl bg-muted aspect-video">
-              <img
+              <ResponsiveArticleImage
                 src={resolveImagePath(article.featured_image)}
                 alt={article.title}
                 width={1200}
                 height={675}
+                loading="eager"
                 fetchPriority="high"
-                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>

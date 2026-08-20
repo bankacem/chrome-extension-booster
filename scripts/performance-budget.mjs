@@ -5,6 +5,11 @@ const root = process.cwd();
 const dist = path.join(root, "dist");
 const failures = [];
 
+const assertExists = (file, label) => {
+  if (!fs.existsSync(file)) failures.push(`${label}: missing file ${path.relative(root, file)}`);
+  else console.log(`${label}: present`);
+};
+
 const bytes = (file) => fs.statSync(file).size;
 const assertMax = (file, maxBytes, label) => {
   if (!fs.existsSync(file)) {
@@ -25,6 +30,15 @@ assertMax(
   30_000,
   "sample article HTML",
 );
+
+for (const image of [
+  "best-chrome-extensions-for-web-accessibility-testing",
+  "chrome-extensions-for-online-privacy-2026",
+  "best-chrome-extensions-for-language-learning",
+]) {
+  assertExists(path.join(dist, "content", "images", "generated", `${image}.webp`), `${image} WebP`);
+  assertExists(path.join(dist, "content", "images", "generated", `${image}.avif`), `${image} AVIF`);
+}
 
 const assetDir = path.join(dist, "assets");
 if (fs.existsSync(assetDir)) {

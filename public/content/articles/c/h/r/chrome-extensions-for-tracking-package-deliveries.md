@@ -1,13 +1,18 @@
 ---
 id: d0fad31c-d456-477d-aa7d-46d3a4ac8aa2
-title: "Chrome Extensions for Tracking Package Deliveries: A Complete Guide"
-seo_title: "Chrome Extensions for Package Tracking"
+title: 'Chrome Extensions for Tracking Package Deliveries: A Complete Guide'
+seo_title: Chrome Extensions for Package Tracking
 slug: chrome-extensions-for-tracking-package-deliveries
 canonicalPath: /blog/chrome-extensions-for-tracking-package-deliveries
 status: published
-excerpt: "A complete guide to Chrome package-tracking extensions — single-carrier vs multi-carrier, data privacy, permissions, and fixing auto-detect failures."
-meta_description: "A complete guide to Chrome package-tracking extensions — single-carrier vs multi-carrier, data privacy, permissions, and fixing auto-detect failures."
-featured_image: /og-image.png
+excerpt: >-
+  A complete guide to Chrome package-tracking extensions — single-carrier vs
+  multi-carrier, data privacy, permissions, and fixing auto-detect failures.
+meta_description: >-
+  A complete guide to Chrome package-tracking extensions — single-carrier vs
+  multi-carrier, data privacy, permissions, and fixing auto-detect failures.
+featured_image: >-
+  /content/images/generated/chrome-extensions-for-tracking-package-deliveries.jpg
 category: Productivity & Tools
 tags:
   - package tracking
@@ -17,7 +22,7 @@ tags:
 keywords:
   - chrome extensions for tracking package deliveries
 author: Admin
-published_at: 2026-08-09
+published_at: 2026-08-09T00:00:00.000Z
 read_time: 9
 ---
 Most guides to package-tracking extensions jump straight into a list of tools without asking the one question that actually determines which one you need: are you tracking packages from one carrier, or juggling shipments across several retailers and couriers at once? Getting that wrong is how people end up with three overlapping tracking extensions installed when one aggregator would have covered everything.
