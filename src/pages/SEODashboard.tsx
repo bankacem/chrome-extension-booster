@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -18,6 +18,26 @@ import CompetitorInsights from "@/components/seo-dashboard/CompetitorInsights";
 import ArticleHealth from "@/components/seo-dashboard/ArticleHealth";
 import KeywordPerformanceTracker from "@/components/seo-dashboard/KeywordPerformanceTracker";
 import KeywordDuplicateChecker from "@/components/seo-dashboard/KeywordDuplicateChecker";
+
+interface ArticleIndexItem {
+  id?: string;
+  slug?: string;
+  title?: string;
+  excerpt?: string;
+  description?: string;
+  featured_image?: string;
+  image_url?: string;
+  category?: string;
+  tags?: string[];
+  keywords?: string[];
+  meta_description?: string;
+  published_at?: string;
+  author?: string;
+  views?: number;
+  read_time?: number;
+  reading_time?: number;
+  updated_at?: string;
+}
 
 interface Article {
   id: string;
@@ -44,41 +64,13 @@ const SEODashboard = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  useEffect(() => {
-    const checkAuth = async () => {
-      // In development/test environment without credentials, we might skip auth
-      // This is safe because RLS is still active on the database
-      const isTestEnv = window.location.hostname === 'localhost' && new URLSearchParams(window.location.search).get('skipAuth') === 'true';
-
-      const { data: { session } } = await supabase.auth.getSession();
-
-      if (!session && !isTestEnv) { navigate("/settings"); return; }
-
-      if (session) {
-        const { data: role, error: roleError } = await supabase
-          .from("user_roles")
-          .select("role")
-          .eq("user_id", session.user.id)
-          .single();
-
-        if (roleError || role?.role !== "admin") {
-          await supabase.auth.signOut();
-          navigate("/settings");
-          return;
-        }
-      }
-      fetchArticles();
-    };
-    checkAuth();
-  }, [navigate]);
-
-  const fetchArticles = async () => {
+  const fetchArticles = useCallback(async () => {
     setLoading(true);
     try {
       const res = await fetch("/content/articles-index.json");
       if (!res.ok) throw new Error("Failed to fetch articles index");
-      const indexData = await res.json();
-      const mapped: Article[] = indexData.map((item: any) => ({
+      const indexData = await res.json() as ArticleIndexItem[];
+      const mapped: Article[] = indexData.map((item) => ({
         id: item.id || item.slug,
         title: item.title || "",
         slug: item.slug || "",
@@ -103,7 +95,32 @@ const SEODashboard = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [toast]);
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      const isTestEnv = window.location.hostname === 'localhost' && new URLSearchParams(window.location.search).get('skipAuth') === 'true';
+      const { data: { session } } = await supabase.auth.getSession();
+
+      if (!session && !isTestEnv) { navigate("/settings"); return; }
+
+      if (session) {
+        const { data: role, error: roleError } = await supabase
+          .from("user_roles")
+          .select("role")
+          .eq("user_id", session.user.id)
+          .single();
+
+        if (roleError || role?.role !== "admin") {
+          await supabase.auth.signOut();
+          navigate("/settings");
+          return;
+        }
+      }
+      void fetchArticles();
+    };
+    void checkAuth();
+  }, [fetchArticles, navigate]);
 
   const publishedArticles = articles.filter(a => a.status === "published");
 

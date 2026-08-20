@@ -29,6 +29,7 @@ import {
 } from "@/components/ui/table";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { getErrorMessage } from "@/lib/errorMessage";
 
 interface Article {
   id: string;
@@ -103,7 +104,7 @@ const BulkScheduleDialog = ({
       });
     } else if (distributionMode === "daily") {
       // Distribute X articles per day within working hours
-      let currentDate = new Date(start);
+      const currentDate = new Date(start);
       currentDate.setHours(startHour, 0, 0, 0);
       let articlesThisDay = 0;
       const hoursSpread = endHour - startHour;
@@ -220,10 +221,10 @@ const BulkScheduleDialog = ({
           variant: "destructive",
         });
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       toast({
         title: "Error",
-        description: error.message || "An error occurred",
+        description: getErrorMessage(error),
         variant: "destructive",
       });
     } finally {
@@ -265,7 +266,7 @@ const BulkScheduleDialog = ({
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h3 className="font-semibold">Select Articles</h3>
-              <Select value={filterStatus} onValueChange={(v) => setFilterStatus(v as any)}>
+              <Select value={filterStatus} onValueChange={(v) => setFilterStatus(v as "all" | "draft" | "scheduled")}>
                 <SelectTrigger className="w-32">
                   <SelectValue />
                 </SelectTrigger>

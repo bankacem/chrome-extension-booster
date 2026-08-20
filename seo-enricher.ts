@@ -49,7 +49,7 @@ for (const filePath of targetFiles) {
   const match = rawContent.match(/^(---\n[\s\S]*?\n---)([\s\S]*)$/);
   if (!match) continue;
 
-  let fmText = match[1];
+  const fmText = match[1];
   const bodyText = match[2];
 
   // أتمتة استخراج العنوان الذكي (من الـ H1 الداخلي للمقال)
@@ -70,7 +70,7 @@ for (const filePath of targetFiles) {
   // أتمتة استخراج الميتا ديسكربشن (من أول فقرة نصية غنية في المقال)
   let extractedMeta = "";
   const paragraphs = bodyText.split("\n")
-    .map(p => p.replace(/[#*`_\[\]()]/g, "").trim()) // تنظيف علامات الماركداون
+    .map(p => p.replace(/[#*`_()[\]]/g, "").trim()) // تنظيف علامات الماركداون
     .filter(p => p.length > 60); // تخطي الأسطر القصيرة أو العناوين
 
   if (paragraphs.length > 0) {

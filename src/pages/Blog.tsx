@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import { useCallback } from "react";
 import { motion } from "framer-motion";
 import { Link, useSearchParams, useParams } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Search, Tag, User } from "lucide-react";
@@ -59,10 +60,6 @@ const Blog = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  useEffect(() => {
-    fetchArticles();
-  }, []);
-
   // Whenever the search term or category filter changes, jump back to page 1
   useEffect(() => {
     if (currentPage !== 1) {
@@ -73,7 +70,7 @@ const Blog = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm, selectedCategory]);
 
-  const fetchArticles = async () => {
+  const fetchArticles = useCallback(async () => {
     try {
       const path = lang ? getLocalizedIndexPath(lang) : "/content/articles-index.json";
       const response = await fetch(path);
@@ -86,7 +83,11 @@ const Blog = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [lang]);
+
+  useEffect(() => {
+    void fetchArticles();
+  }, [fetchArticles]);
 
   const categories = [...new Set(articles.map((a) => a.category || "Uncategorized"))].sort();
 

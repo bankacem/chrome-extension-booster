@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 interface SchemaMarkupProps {
-  data: Record<string, any>;
+  data: Record<string, unknown>;
 }
 
 /**

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from 'react';
 import { motion } from "framer-motion";
 import { 
   TrendingUp, 
@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
+import { getErrorMessage } from "@/lib/errorMessage";
 
 interface SearchConsoleData {
   position: number;
@@ -32,7 +33,7 @@ export const GoogleSearchConsoleCard = ({ articleSlug, articleUrl }: GoogleSearc
   const [error, setError] = useState<string | null>(null);
   const [dataSource, setDataSource] = useState<'google_api' | 'simulated'>('simulated');
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     setLoading(true);
     setError(null);
     
@@ -53,17 +54,17 @@ export const GoogleSearchConsoleCard = ({ articleSlug, articleUrl }: GoogleSearc
       } else {
         throw new Error(response.error || 'Failed to fetch data');
       }
-    } catch (err: any) {
-      console.error('GSC fetch error:', err);
-      setError(err.message || 'Failed to load Search Console data');
+    } catch (err: unknown) {
+      console.error('GSC fetch error:', getErrorMessage(err));
+      setError(getErrorMessage(err, 'Failed to load Search Console data'));
     } finally {
       setLoading(false);
     }
-  };
+  }, [articleSlug, articleUrl]);
 
   useEffect(() => {
     fetchData();
-  }, [articleSlug]);
+  }, [fetchData]);
 
   if (loading) {
     return (

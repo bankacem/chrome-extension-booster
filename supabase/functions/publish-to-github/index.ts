@@ -2,6 +2,11 @@
 // /blog renderer picks it up on the next Vercel deploy.
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
+interface IndexEntry {
+  slug?: string;
+  [key: string]: unknown;
+}
+
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
@@ -104,13 +109,13 @@ serve(async (req) => {
     const idxRes = await fetch(`https://api.github.com/repos/${repo}/contents/${idxPath}`, {
       headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json" },
     });
-    let arr: any[] = [];
+    let arr: IndexEntry[] = [];
     let idxSha: string | undefined;
     if (idxRes.ok) {
-      const j = await idxRes.json();
+      const j = await idxRes.json() as { sha?: string; content?: string };
       idxSha = j.sha;
       try {
-        arr = JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g, "")))));
+        arr = JSON.parse(decodeURIComponent(escape(atob(j.content?.replace(/\n/g, "") ?? "")))) as IndexEntry[];
       } catch { arr = []; }
     }
     const entry = {

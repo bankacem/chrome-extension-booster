@@ -137,9 +137,10 @@ async function generateSitemap() {
     const locIndexPath = path.join(process.cwd(), "public", "content", "i18n", lang, "articles-index.json");
     if (!fs.existsSync(locIndexPath)) continue;
 
-    let locArticles: any[] = [];
+    interface LocaleArticle { slug?: string; id?: string; published_at?: string; date?: string }
+    let locArticles: LocaleArticle[] = [];
     try {
-      locArticles = JSON.parse(fs.readFileSync(locIndexPath, "utf-8"));
+      locArticles = JSON.parse(fs.readFileSync(locIndexPath, "utf-8")) as LocaleArticle[];
     } catch (e) {
       console.error(`❌ Failed to parse i18n index for ${lang} — skipping:`, e);
       continue;

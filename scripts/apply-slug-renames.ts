@@ -95,7 +95,14 @@ async function main() {
   }
 
   // 2) Update articles-index.json (slug + canonicalPath).
-  const index: Array<Record<string, any>> = await fs.readJson(INDEX_JSON_PATH);
+  interface ArticleIndexEntry {
+  slug: string;
+  canonicalPath?: string;
+  [key: string]: unknown;
+}
+interface RedirectEntry { source: string }
+
+  const index: ArticleIndexEntry[] = await fs.readJson(INDEX_JSON_PATH);
   let indexUpdated = 0;
   for (const a of index) {
     const newSlug = renameMap.get(a.slug);
@@ -131,7 +138,7 @@ async function main() {
 
   // 4) Add 301 redirects to vercel.json.
   const vercelConfig = await fs.readJson(VERCEL_JSON_PATH);
-  const existingSources = new Set((vercelConfig.redirects || []).map((r: any) => r.source));
+  const existingSources = new Set((vercelConfig.redirects || []).map((r: RedirectEntry) => r.source));
   let redirectsAdded = 0;
   for (const [oldSlug, newSlug] of renameMap) {
     const source = `/blog/${oldSlug}`;

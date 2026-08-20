@@ -9,6 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import Navbar from "@/components/Navbar";
 import SEO from "@/components/SEO";
+import { getErrorMessage } from "@/lib/errorMessage";
 
 const AdminLogin = () => {
   const [email, setEmail] = useState("");
@@ -120,11 +121,11 @@ const AdminLogin = () => {
         description: "Successfully logged in to the dashboard",
       });
       navigate("/settings/manage");
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Login error:", error);
       toast({
         title: "Login Failed",
-        description: error.message || "Invalid email or password",
+        description: getErrorMessage(error, "Invalid email or password"),
         variant: "destructive",
       });
     } finally {
@@ -177,11 +178,11 @@ const AdminLogin = () => {
         description: "تم تسجيل دخولك إلى لوحة التحكم.",
       });
       navigate("/settings/manage");
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Sign up error:", error);
       toast({
         title: "فشل إنشاء الحساب",
-        description: error.message || "Could not create account",
+        description: getErrorMessage(error, "Could not create account"),
         variant: "destructive",
       });
     } finally {

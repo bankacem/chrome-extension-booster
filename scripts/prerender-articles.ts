@@ -80,11 +80,13 @@ function absoluteImage(src?: string): string {
   return `${SITE_URL}${src.startsWith("/") ? "" : "/"}${src}`;
 }
 
-function parseMarkdown(raw: string): { frontmatter: Record<string, any>; content: string } {
+type FrontmatterRecord = Record<string, unknown>;
+
+function parseMarkdown(raw: string): { frontmatter: FrontmatterRecord; content: string } {
   const match = raw.match(/^---([\s\S]*?)---([\s\S]*)$/);
   if (!match) return { frontmatter: {}, content: raw };
   try {
-    const frontmatter = (yaml.load(match[1]) as Record<string, any>) || {};
+    const frontmatter = (yaml.load(match[1]) as FrontmatterRecord) || {};
     return { frontmatter, content: match[2].trim() };
   } catch (e) {
     console.warn("  ! Failed to parse frontmatter:", (e as Error).message);

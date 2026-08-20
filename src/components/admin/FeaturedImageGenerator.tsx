@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { getErrorMessage } from "@/lib/errorMessage";
 
 interface Article {
   id: string;
@@ -46,8 +47,8 @@ export default function FeaturedImageGenerator({ articles, onSuccess }: Props) {
       if (data?.error) throw new Error(data.error);
 
       return { title: article.title, success: true, url: data.imageUrl };
-    } catch (err: any) {
-      console.error(`Failed for "${article.title}":`, err);
+    } catch (err: unknown) {
+      console.error(`Failed for "${article.title}":`, getErrorMessage(err));
       return { title: article.title, success: false };
     }
   };

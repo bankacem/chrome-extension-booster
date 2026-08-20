@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { getErrorMessage } from "@/lib/errorMessage";
 import { motion } from "framer-motion";
 import SEO from "@/components/SEO";
 import {
@@ -149,6 +150,7 @@ const DEFAULT_TEMPLATES: ArticleTemplate[] = [
 
 // AI Provider types
 type AIProvider = "lovable" | "openrouter" | "agentrouter" | "openai" | "gemini" | "groq";
+type SaveMode = "draft" | "published" | "scheduled";
 
 interface AIProviderConfig {
   id: AIProvider;
@@ -288,7 +290,7 @@ const AIGenerator = () => {
         setSelectedModel(provider.models[0].value);
       }
     }
-  }, [aiProvider]);
+  }, [aiProvider, selectedModel]);
   
   // Content options
   const [includeTableOfContents, setIncludeTableOfContents] = useState(true);
@@ -297,7 +299,7 @@ const AIGenerator = () => {
   const [includeComparisonTable, setIncludeComparisonTable] = useState(false);
 
   // Save options
-  const [saveMode, setSaveMode] = useState<"draft" | "published" | "scheduled">("draft");
+  const [saveMode, setSaveMode] = useState<SaveMode>("draft");
   const [scheduleDate, setScheduleDate] = useState("");
   const [scheduleTime, setScheduleTime] = useState("09:00");
   const [articlesPerDay, setArticlesPerDay] = useState(2);
@@ -336,12 +338,7 @@ const AIGenerator = () => {
   }, [generatedArticles]);
   const selectedCount = generatedArticles.filter(a => a.selected && a.status === 'ready').length;
 
-  useEffect(() => {
-    checkAuth();
-    fetchExtensions();
-  }, []);
-
-  const checkAuth = async () => {
+  const checkAuth = useCallback(async () => {
     const { data: { session } } = await supabase.auth.getSession();
     if (!session) {
       navigate("/settings");
@@ -361,9 +358,9 @@ const AIGenerator = () => {
 
     setIsAuthenticated(true);
     setLoading(false);
-  };
+  }, [navigate]);
 
-  const fetchExtensions = async () => {
+  const fetchExtensions = useCallback(async () => {
     // Fetch published articles to use for internal linking
     const { data } = await supabase
       .from("articles")
@@ -374,7 +371,12 @@ const AIGenerator = () => {
     if (data) {
       setExtensions(data.map(a => `${a.title} (/blog/${a.slug})`));
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    void checkAuth();
+    void fetchExtensions();
+  }, [checkAuth, fetchExtensions]);
 
   const parseKeywords = (): string[] => {
     return keywordsText
@@ -481,13 +483,13 @@ const AIGenerator = () => {
           } : a
         ));
 
-      } catch (error: any) {
+      } catch (error: unknown) {
         console.error("Generation error:", error);
         setGeneratedArticles(prev => prev.map(a => 
           a.id === article.id ? { 
             ...a, 
             status: 'error' as const, 
-            error: error.message || "Generation failed" 
+            error: getErrorMessage(error, "Generation failed")
           } : a
         ));
       }
@@ -540,7 +542,7 @@ const AIGenerator = () => {
         // Calculate schedule time for this article
         let scheduledAt = null;
         let publishedAt = null;
-        let status = saveMode;
+        const status = saveMode;
 
         if (saveMode === "scheduled") {
           // Calculate which day and which slot within that day
@@ -610,11 +612,11 @@ const AIGenerator = () => {
         ));
         savedCount++;
 
-      } catch (error: any) {
+      } catch (error: unknown) {
         console.error("Save error:", error);
         toast({
           title: "Save Error",
-          description: `Failed to save "${article.title}": ${error.message}`,
+          description: `Failed to save "${article.title}": ${getErrorMessage(error)}`,
           variant: "destructive"
         });
       }
@@ -684,9 +686,9 @@ const AIGenerator = () => {
         } : a
       ));
 
-    } catch (error: any) {
+    } catch (error: unknown) {
       setGeneratedArticles(prev => prev.map(a => 
-        a.id === article.id ? { ...a, status: 'error' as const, error: error.message } : a
+        a.id === article.id ? { ...a, status: 'error' as const, error: getErrorMessage(error) } : a
       ));
     }
   };
@@ -875,10 +877,10 @@ const AIGenerator = () => {
                                 title: "✅ الاتصال ناجح!", 
                                 description: `مفتاح ${AI_PROVIDERS.find(p => p.id === aiProvider)?.name} يعمل بشكل صحيح`
                               });
-                            } catch (error: any) {
+                            } catch (error: unknown) {
                               toast({ 
                                 title: "❌ فشل الاتصال", 
-                                description: error.message || "تحقق من صحة مفتاح API",
+                                description: getErrorMessage(error, "تحقق من صحة مفتاح API"),
                                 variant: "destructive"
                               });
                             }
@@ -1177,7 +1179,7 @@ const AIGenerator = () => {
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <Label>Save Mode</Label>
-                    <Select value={saveMode} onValueChange={(v: any) => setSaveMode(v)}>
+                    <Select value={saveMode} onValueChange={(v) => setSaveMode(v as SaveMode)}>
                       <SelectTrigger>
                         <SelectValue />
                       </SelectTrigger>

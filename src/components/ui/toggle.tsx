@@ -34,4 +34,6 @@ const Toggle = React.forwardRef<
 
 Toggle.displayName = TogglePrimitive.Root.displayName;
 
+// shadcn/ui compatibility: keep the toggle variant helper co-located with its component API.
+// eslint-disable-next-line react-refresh/only-export-components
 export { Toggle, toggleVariants };

@@ -8,6 +8,12 @@ const WEBSITE_URL = "https://extensionto.com";
 
 interface ArticleRecord { slug: string; published_at?: string | null; updated_at?: string | null; }
 interface PageInfo { url: string; changefreq: string; priority: string; lastmod?: string; }
+interface SitemapRequest { method?: string }
+interface SitemapResponse {
+  setHeader(name: string, value: string): void;
+  status(code: number): SitemapResponse;
+  send(body: string): void;
+}
 
 const PILLARS: Record<string, { priority: string; changefreq: string }> = {
   "how-to-fix-chrome-high-memory-usage-2026-complete-guide": { priority: "0.9", changefreq: "weekly" },
@@ -25,7 +31,7 @@ function buildXml(pages: PageInfo[]): string {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(p=>`  <url>\n    <loc>${escapeXml(WEBSITE_URL+p.url)}</loc>\n    <changefreq>${p.changefreq}</changefreq>\n    <priority>${p.priority}</priority>${p.lastmod?`\n    <lastmod>${p.lastmod}</lastmod>`:""}\n  </url>`).join("\n")}\n</urlset>`;
 }
 
-export default async function handler(req: any, res: any) {
+export default async function handler(_req: SitemapRequest, res: SitemapResponse) {
   const supabaseUrl = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL || "https://svzfurufpzsrqoxlwxgx.supabase.co";
   const supabaseKey = process.env.VITE_SUPABASE_PUBLISHABLE_KEY || process.env.SUPABASE_PUBLISHABLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN2emZ1cnVmcHpzcnFveGx3eGd4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg1MjEyNzQsImV4cCI6MjA4NDA5NzI3NH0.pGcICWref_LNLMkhMCjhjg3KCxi9xsIkTEr1piH80uQ";
   const supabase = createClient(supabaseUrl, supabaseKey, {

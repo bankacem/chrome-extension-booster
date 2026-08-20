@@ -24,4 +24,6 @@ const Toaster = ({ ...props }: ToasterProps) => {
   );
 };
 
+// shadcn/ui compatibility: toast and its Toaster provider intentionally share one module API.
+// eslint-disable-next-line react-refresh/only-export-components
 export { Toaster, toast };

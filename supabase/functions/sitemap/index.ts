@@ -1,4 +1,4 @@
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { createClient, type SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -45,7 +45,7 @@ type ArticleRow = {
   created_at: string | null;
 };
 
-async function fetchAllPublishedArticles(supabase: any) {
+async function fetchAllPublishedArticles(supabase: SupabaseClient) {
   const pageSize = 1000;
   let from = 0;
   let all: ArticleRow[] = [];

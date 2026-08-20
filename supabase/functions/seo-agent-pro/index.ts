@@ -12,6 +12,22 @@ const corsHeaders = {
 
 const GATEWAY = "https://ai.gateway.lovable.dev/v1/chat/completions";
 
+type JsonObject = Record<string, unknown>;
+interface AgentRequest { keyword?: string; niche?: string; model?: string; category?: string }
+interface ChatResponse { choices?: Array<{ message?: { content?: string } }> }
+interface Strategy extends JsonObject {
+  ideal_length?: number;
+  required_sections?: string[];
+  must_have_elements?: string[];
+  unique_angle?: string;
+}
+interface CtrData extends JsonObject {
+  recommended_title?: string;
+  recommended_description?: string;
+  titles?: string[];
+  descriptions?: string[];
+}
+
 async function callAI(
   apiKey: string,
   model: string,
@@ -19,7 +35,7 @@ async function callAI(
   user: string,
   jsonMode = false,
 ): Promise<string> {
-  const body: any = {
+  const body: JsonObject = {
     model,
     messages: [
       { role: "system", content: system },
@@ -43,11 +59,11 @@ async function callAI(
     if (resp.status === 402) throw new Error("AI credits exhausted. Add funds in Settings → Workspace → Usage.");
     throw new Error(`AI gateway error ${resp.status}: ${t}`);
   }
-  const data = await resp.json();
+  const data = await resp.json() as ChatResponse;
   return data.choices?.[0]?.message?.content ?? "";
 }
 
-function safeJSON<T = any>(text: string, fallback: T): T {
+function safeJSON<T = unknown>(text: string, fallback: T): T {
   try {
     const m = text.match(/\{[\s\S]*\}|\[[\s\S]*\]/);
     return JSON.parse(m ? m[0] : text);
@@ -77,7 +93,7 @@ serve(async (req) => {
       niche = "",
       model = "google/gemini-3-flash-preview",
       category = "General",
-    } = await req.json();
+    } = await req.json() as AgentRequest;
 
     if (!keyword) throw new Error("keyword is required");
 
@@ -112,7 +128,7 @@ Return JSON:
 }`,
       true,
     );
-    const competitor = safeJSON(competitorRaw, {});
+    const competitor = safeJSON<JsonObject>(competitorRaw, {});
 
     // 2. Strategy decision (uses memory)
     const strategyRaw = await callAI(
@@ -137,7 +153,7 @@ Return JSON:
 }`,
       true,
     );
-    const strategy = safeJSON<any>(strategyRaw, { ideal_length: 1800 });
+    const strategy = safeJSON<Strategy>(strategyRaw, { ideal_length: 1800 });
 
     // 3. Article writer
     const article = await callAI(
@@ -181,7 +197,7 @@ Return JSON:
 Title <= 60 chars, description <= 155 chars, include keyword.`,
       true,
     );
-    const ctr = safeJSON<any>(ctrRaw, {});
+    const ctr = safeJSON<CtrData>(ctrRaw, {});
 
     const title = ctr.recommended_title || keyword;
     const meta = ctr.recommended_description || "";
@@ -221,9 +237,10 @@ Title <= 60 chars, description <= 155 chars, include keyword.`,
       }),
       { headers: { ...corsHeaders, "Content-Type": "application/json" } },
     );
-  } catch (e: any) {
-    console.error("seo-agent-pro error:", e);
-    return new Response(JSON.stringify({ error: e.message ?? "Unknown error" }), {
+  } catch (e: unknown) {
+    const message = e instanceof Error ? e.message : "Unknown error";
+    console.error("seo-agent-pro error:", message);
+    return new Response(JSON.stringify({ error: message }), {
       status: 500,
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
