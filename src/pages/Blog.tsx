@@ -228,6 +228,11 @@ const Blog = () => {
                       <img
                         src={resolveImagePath(article.featured_image)}
                         alt={article.title}
+                        width={1200}
+                        height={675}
+                        loading={index === 0 ? "eager" : "lazy"}
+                        fetchPriority={index === 0 ? "high" : "auto"}
+                        decoding="async"
                         referrerPolicy="no-referrer"
                         className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                       />

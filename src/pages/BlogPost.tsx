@@ -406,7 +406,15 @@ const BlogPost = () => {
 
           {article.featured_image && (
             <div className="mb-8 overflow-hidden rounded-xl bg-muted aspect-video">
-              <img src={resolveImagePath(article.featured_image)} alt={article.title} className="w-full h-full object-cover" />
+              <img
+                src={resolveImagePath(article.featured_image)}
+                alt={article.title}
+                width={1200}
+                height={675}
+                fetchPriority="high"
+                decoding="async"
+                className="w-full h-full object-cover"
+              />
             </div>
           )}
 

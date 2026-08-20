@@ -60,6 +60,9 @@ jobs:
       - name: Build and prerender
         run: npm run build
 
+      - name: Performance budgets
+        run: npm run test:performance
+
       - name: SEO smoke tests
         run: npm run test:seo
 

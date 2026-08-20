@@ -149,12 +149,17 @@ function buildHomeBody(articles: ArticleIndexEntry[]): string {
 }
 
 function buildBlogBody(articles: ArticleIndexEntry[]): string {
-  const links = articles.map((article) => {
+  // Keep the first response intentionally small. The full catalogue remains
+  // available through the client-side index and sitemap.xml, while the first
+  // page exposes the most recent articles and a crawlable pagination link.
+  const visibleArticles = articles.slice(0, 12);
+  const links = visibleArticles.map((article) => {
     const slug = normalizeSlug(article.slug);
     const description = article.excerpt || article.meta_description || article.description || "Chrome extension guide and practical tips.";
     return `<li><a href="/blog/${escapeHtml(slug)}">${escapeHtml(article.title)}</a><p>${escapeHtml(description)}</p></li>`;
   }).join("\n");
-  return `<main><article><h1>Chrome Extension Guides and Reviews</h1><p>Practical guides, comparisons, and reviews to help you choose and use Chrome extensions.</p><ul>${links}</ul></article></main>`;
+  const totalLabel = articles.length === 1 ? "article" : "articles";
+  return `<main><article><h1>Chrome Extension Guides and Reviews</h1><p>Practical guides, comparisons, and reviews to help you choose and use Chrome extensions.</p><ul>${links}</ul><p>Showing the latest ${visibleArticles.length} of ${articles.length} ${totalLabel}.</p><p><a href="/blog?page=2" rel="next">Browse older guides</a> · <a href="/sitemap.xml">View the complete sitemap</a></p></article></main>`;
 }
 
 function buildExtensionBody(extension: ExtensionEntry): string {
