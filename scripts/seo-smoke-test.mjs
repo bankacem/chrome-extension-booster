@@ -18,7 +18,7 @@ const vercel = JSON.parse(read("vercel.json"));
 const rewrites = vercel.rewrites || [];
 assert(!rewrites.some((rewrite) => rewrite.source === "/:path*" || /\(\?/.test(rewrite.source || "")), "vercel.json must not contain a catch-all rewrite");
 
-const baseRoutes = ["https://extensionto.com/", "https://extensionto.com/blog", "https://extensionto.com/privacy", "https://extensionto.com/terms"];
+const baseRoutes = ["https://extensionto.com/", "https://extensionto.com/blog", "https://extensionto.com/privacy", "https://extensionto.com/terms", "https://extensionto.com/editorial-policy"];
 for (const url of baseRoutes) {
   const html = htmlFor(url);
   const pathname = new URL(url).pathname === "/" ? "/" : new URL(url).pathname;
@@ -37,6 +37,9 @@ for (const article of articleSample) {
   assert(/<h1\b/i.test(html), `${url} has no prerendered H1`);
   assert(html.includes(`<link rel="canonical" href="${url}"`), `${url} has no self canonical`);
   assert(/<article\b/i.test(html), `${url} has no article element`);
+  assert(/Written by/.test(html), `${url} has no visible author attribution`);
+  assert(/editorial-policy/.test(html), `${url} has no editorial methodology link`);
+  assert(/reviewedBy/.test(html), `${url} has no reviewedBy schema signal`);
 }
 
 const extensionSource = read("src/lib/extensionsData.ts");
@@ -77,7 +80,7 @@ assert(urls.length > 0, "sitemap is empty");
 assert(new Set(urls).size === urls.length, "sitemap contains duplicate URLs");
 for (const url of urls) {
   const pathname = new URL(url).pathname;
-  if (pathname === "/" || pathname === "/blog" || pathname === "/privacy" || pathname === "/terms") continue;
+  if (pathname === "/" || pathname === "/blog" || pathname === "/privacy" || pathname === "/terms" || pathname === "/editorial-policy") continue;
   assert(fs.existsSync(htmlPathFor(url)), `sitemap URL has no static HTML: ${url}`);
 }
 

@@ -25,6 +25,7 @@ async function generateSitemap() {
     { url: `${WEBSITE_URL}/blog`, date: today },
     { url: `${WEBSITE_URL}/privacy`, date: today },
     { url: `${WEBSITE_URL}/terms`, date: today },
+    { url: `${WEBSITE_URL}/editorial-policy`, date: today },
   ];
 
   // --- Extension product pages (/extension/:slug) ---
