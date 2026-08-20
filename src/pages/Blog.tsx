@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Link, useSearchParams, useParams } from "react-router-dom";
-import { Calendar, Clock, ArrowRight, Search, Tag } from "lucide-react";
+import { Calendar, Clock, ArrowRight, Search, Tag, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Navbar from "@/components/Navbar";
@@ -30,6 +30,7 @@ interface Article {
   category: string;
   tags: string[];
   published_at: string;
+  updated_at?: string;
   read_time: number;
   author: string;
 }
@@ -164,9 +165,9 @@ const Blog = () => {
               Latest Articles & Tips
             </h1>
             <p className="mx-auto max-w-2xl text-muted-foreground">
-              Discover tips, tutorials, and insights about browser extensions,
-              productivity, and web development.
+              Discover practical, reviewed guides about browser extensions, privacy, productivity, and performance.
             </p>
+            <Link to="/editorial-policy" className="mt-4 inline-block text-sm text-primary hover:underline">Learn how ExtensionTo reviews and updates its guides</Link>
           </motion.div>
 
           {/* Search and Filter */}
@@ -242,6 +243,10 @@ const Blog = () => {
                       <span className="flex items-center gap-1">
                         <Clock className="h-3 w-3" />
                         {article.read_time} min read
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <User className="h-3 w-3" />
+                        {article.author || "ExtensionTo Editorial Team"}
                       </span>
                     </div>
                     <h2 className="mb-2 font-heading text-xl font-semibold line-clamp-2">

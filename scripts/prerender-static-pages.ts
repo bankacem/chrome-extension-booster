@@ -125,8 +125,17 @@ function buildHead(options: {
     ${schema}`;
 }
 
-function buildHomeBody(): string {
-  return `<main><section><h1>Powerful Chrome Extensions for Productivity</h1><p>Discover Chrome extensions that help you work faster, browse more safely, and improve your everyday workflow.</p><p><a href="/extension/quick-screenshot-lite">Explore featured extensions</a> or <a href="/blog">read Chrome extension guides and reviews</a>.</p></section></main>`;
+function buildHomeBody(articles: ArticleIndexEntry[]): string {
+  const featuredSlugs = [
+    "chrome-extensions-complete-guide",
+    "best-chrome-privacy-extensions-2026-complete-guide",
+    "the-elite-stack-essential-chrome-extensions-for-work-pro-environments",
+  ];
+  const featured = featuredSlugs
+    .map((slug) => articles.find((article) => normalizeSlug(article.slug) === slug))
+    .filter((article): article is ArticleIndexEntry => Boolean(article));
+  const links = featured.map((article) => `<li><a href="/blog/${escapeHtml(normalizeSlug(article.slug))}">${escapeHtml(article.title)}</a><p>${escapeHtml(article.excerpt || article.meta_description || article.description || "Practical Chrome extension guide.")}</p></li>`).join("\n");
+  return `<main><section><h1>Powerful Chrome Extensions for Productivity</h1><p>Discover Chrome extensions that help you work faster, browse more safely, and improve your everyday workflow.</p><p><a href="/extension/quick-screenshot-lite">Explore featured extensions</a> or <a href="/blog">read Chrome extension guides and reviews</a>.</p></section><section><h2>Start with our reviewed guides</h2><ul>${links}</ul><p><a href="/editorial-policy">Learn how our editorial team reviews extensions</a>.</p></section></main>`;
 }
 
 function buildBlogBody(articles: ArticleIndexEntry[]): string {
@@ -146,6 +155,10 @@ function buildExtensionBody(extension: ExtensionEntry): string {
 function buildLegalBody(title: string, summary: string, sections: string[]): string {
   const content = sections.map((section) => `<p>${escapeHtml(section)}</p>`).join("\n");
   return `<main><article><h1>${escapeHtml(title)}</h1><p>${escapeHtml(summary)}</p>${content}<p><a href="/">Back to ExtensionTo</a></p></article></main>`;
+}
+
+function buildEditorialPolicyBody(): string {
+  return `<main><article><h1>Editorial Policy and Review Methodology</h1><p>ExtensionTo publishes practical, transparent guides that explain the benefits, trade-offs, limitations, and privacy considerations of Chrome extensions.</p><h2>How we review</h2><ul><li>We assess the stated use case, setup friction, core workflow, performance, and limitations.</li><li>We consider requested permissions and published privacy information when privacy is relevant.</li><li>We distinguish documented facts, observed behavior, and editorial opinion.</li><li>We review important pages when products, browser policies, or material claims change.</li></ul><h2>Who writes and reviews</h2><p>Articles are credited to James Mitchell or the ExtensionTo Editorial Team. Author labels describe editorial responsibility; readers should use the methodology and documentation to evaluate individual claims.</p><h2>Corrections</h2><p>Readers can contact ExtensionTo about inaccurate claims, outdated details, or broken links so that material corrections can be reviewed and reflected in the article when appropriate.</p><p><a href="/blog">Read the latest guides</a> · <a href="/">Back to ExtensionTo</a></p></article></main>`;
 }
 
 function parseExtensions(): ExtensionEntry[] {
@@ -224,13 +237,14 @@ async function main() {
 
   const homeDescription = "Discover powerful Chrome extensions built to boost productivity, enhance security, and transform how you browse the web.";
   const homeSchema = { "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: SITE_URL };
-  const homeHtml = replaceRoot(replaceHead(template, buildHead({ title: "Powerful Chrome Extensions for Productivity", description: homeDescription, canonicalPath: "/", schema: homeSchema })), buildHomeBody());
+  const homeHtml = replaceRoot(replaceHead(template, buildHead({ title: "Powerful Chrome Extensions for Productivity", description: homeDescription, canonicalPath: "/", schema: homeSchema })), buildHomeBody(articles));
   await fs.writeFile(path.join(DIST_DIR, "index.html"), homeHtml, "utf8");
 
   const blogDescription = "Practical Chrome extension guides, comparisons, and reviews for productivity, privacy, performance, and accessibility.";
   await writeRoute("/blog", template, "Chrome Extension Guides and Reviews", blogDescription, buildBlogBody(articles), "website");
   await writeRoute("/privacy", template, "Privacy Policy", "Learn how ExtensionTo protects your privacy and handles information on its website and Chrome extensions.", buildLegalBody("Privacy Policy", "ExtensionTo is committed to protecting your privacy.", ["Our Chrome extensions are designed to keep settings local where possible and to avoid unnecessary collection of personal information.", "The website may process information you voluntarily submit through contact forms or subscriptions. Any information is used to provide and improve the service.", "For questions about this policy, contact ExtensionTo through the website contact page."]), "website");
   await writeRoute("/terms", template, "Terms of Service", "Read the Terms of Service for ExtensionTo Chrome extensions and website.", buildLegalBody("Terms of Service", "By using the ExtensionTo website or extensions, you agree to these terms.", ["The extensions are provided for their stated browsing and productivity purposes and must be used lawfully.", "The software and website are provided as is. ExtensionTo may update, suspend, or discontinue features and may update these terms.", "For questions about these terms, contact ExtensionTo through the website contact page."]), "website");
+  await writeRoute("/editorial-policy", template, "Editorial Policy and Review Methodology", "Learn how ExtensionTo researches, reviews, and maintains Chrome extension guides and product pages.", buildEditorialPolicyBody(), "website");
 
   for (const extension of extensions) {
     const description = extension.longDescription || extension.description;

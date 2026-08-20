@@ -15,6 +15,7 @@ import yaml from "js-yaml";
 import { getPartitionedPath, getLocalizedPartitionedPath, getLocalizedIndexPath, isSupportedLocale, resolveImagePath } from "@/utils/articlePath";
 import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
 import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
+import { getEditorialProfile } from "@/lib/editorialProfiles";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
@@ -285,6 +286,8 @@ const BlogPost = () => {
 
   const routePrefix = lang ? `/${lang}` : "";
 
+  const editorialProfile = getEditorialProfile(article.author);
+
   const schemaData = article.title ? {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -294,8 +297,14 @@ const BlogPost = () => {
     "articleSection": article.category || undefined,
     "inLanguage": lang || "en",
     "author": {
-      "@type": "Person",
-      "name": article.author || "Admin"
+      "@type": editorialProfile.type,
+      "name": editorialProfile.name,
+      "url": `${window.location.origin}${editorialProfile.url}`
+    },
+    "reviewedBy": {
+      "@type": "Organization",
+      "name": "ExtensionTo Editorial Team",
+      "url": `${window.location.origin}/editorial-policy`
     },
     "datePublished": article.published_at,
     "dateModified": article.updated_at || article.published_at,
@@ -360,6 +369,16 @@ const BlogPost = () => {
           <Link to={`${routePrefix}/blog`}><Button variant="ghost" className="mb-8"><ArrowLeft className="mr-2 h-4 w-4" />Back to Blog</Button></Link>
           <header className="mb-8">
             <h1 className="mb-4 font-heading text-3xl font-bold md:text-5xl">{article.title}</h1>
+            <div className="rounded-xl border border-border/60 bg-card/60 p-4 text-sm text-muted-foreground">
+              <p>
+                Written by <Link to={editorialProfile.url} className="font-medium text-foreground hover:text-primary">{editorialProfile.name}</Link> · {editorialProfile.role}
+              </p>
+              <p className="mt-1">
+                Published {article.published_at ? new Date(article.published_at).toLocaleDateString() : ""}
+                {article.updated_at && ` · Updated ${new Date(article.updated_at).toLocaleDateString()}`}
+                {" · "}<Link to="/editorial-policy" className="text-primary hover:underline">Our review methodology</Link>
+              </p>
+            </div>
           </header>
 
           {article.featured_image && (

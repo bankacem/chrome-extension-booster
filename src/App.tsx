@@ -16,6 +16,7 @@ import SEOAnalyzer from "./pages/SEOAnalyzer";
 import SEODashboard from "./pages/SEODashboard";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import EditorialPolicy from "./pages/EditorialPolicy";
 import NotFound from "./pages/NotFound";
 
 // i18n — must be imported before any component that uses useTranslation
@@ -57,6 +58,7 @@ const App = () => (
               <Route path="/settings/seo/:slug" element={<SEOAnalyzer />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
+              <Route path="/editorial-policy" element={<EditorialPolicy />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
