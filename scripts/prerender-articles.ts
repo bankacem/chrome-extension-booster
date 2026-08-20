@@ -83,6 +83,8 @@ function absoluteImage(src?: string): string {
 
 type FrontmatterRecord = Record<string, unknown>;
 
+type FAQItem = { question: string; answer: string };
+
 function parseMarkdown(raw: string): { frontmatter: FrontmatterRecord; content: string } {
   const match = raw.match(/^---([\s\S]*?)---([\s\S]*)$/);
   if (!match) return { frontmatter: {}, content: raw };
@@ -141,7 +143,7 @@ function buildHead(opts: {
 
 }
 
-function buildSchema(article: IndexArticle, title: string, description: string, ogImage: string, canonicalPath: string): string {
+function buildSchema(article: IndexArticle, title: string, description: string, ogImage: string, canonicalPath: string, faq?: FAQItem[]): string {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -175,8 +177,18 @@ function buildSchema(article: IndexArticle, title: string, description: string, 
     ],
   };
 
+  const faqPage = faq?.length ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
+  } : null;
+
   return `<script type="application/ld+json">${JSON.stringify(schema)}</script>
-    <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>`;
+    <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>${faqPage ? `\n    <script type="application/ld+json">${JSON.stringify(faqPage)}</script>` : ""}`;
 }
 
 async function main() {
@@ -252,7 +264,10 @@ async function main() {
     });
     // Schema.org headline/breadcrumb reflect the real editorial title (matches the
     // on-page H1), while the <title>/OG tags above use the shortened seoTitle.
-    const schema = buildSchema({ ...a, slug }, fullTitle, description, ogImage, canonicalPath);
+    const faq = Array.isArray(frontmatter.faq)
+      ? (frontmatter.faq as FAQItem[]).filter((item) => item && typeof item.question === "string" && typeof item.answer === "string")
+      : undefined;
+    const schema = buildSchema({ ...a, slug }, fullTitle, description, ogImage, canonicalPath, faq);
 
     let bodyHtml = "";
     try {

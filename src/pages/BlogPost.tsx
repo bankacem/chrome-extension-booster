@@ -42,6 +42,7 @@ interface Article {
   related_extension_slug?: string;
   featured_video?: string;
   schema?: Record<string, unknown>;
+  faq?: Array<{ question: string; answer: string }>;
 }
 
 const parseMarkdown = (text: string) => {
@@ -366,6 +367,19 @@ const BlogPost = () => {
     ]
   } : null;
 
+  const faqData = article.faq?.length ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": article.faq.map(({ question, answer }) => ({
+      "@type": "Question",
+      "name": question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": answer,
+      },
+    })),
+  } : null;
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
@@ -387,6 +401,7 @@ const BlogPost = () => {
       />
       {schemaData && <SchemaMarkup data={schemaData} />}
       {breadcrumbData && <SchemaMarkup data={breadcrumbData} />}
+      {faqData && <SchemaMarkup data={faqData} />}
       <Navbar />
       <main className="pt-24 pb-16">
         <article className="container mx-auto max-w-4xl px-4">
