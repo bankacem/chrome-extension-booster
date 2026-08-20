@@ -95,11 +95,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions-mm3scn1bz3l",
-      "destination": "/blog",
-      "permanent": true
-    },
-    {
       "source": "/blog/unlock-faster-downloads-with-idm-extension-for-chrome-free-download-latest-version-mmb6y473kzg",
       "destination": "/blog/the-latest-idm-extension-for-chrome-free",
       "permanent": true
@@ -555,11 +550,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
-      "destination": "/blog",
-      "permanent": true
-    },
-    {
       "source": "/blog/unlock-the-power-of-a-popup-blocker-free-boosting-your-browsing-experience-mm3scpsw3rb",
       "destination": "/blog/boosting-your-browsing-experience",
       "permanent": true
@@ -655,11 +645,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
-      "destination": "/blog",
-      "permanent": true
-    },
-    {
       "source": "/blog/unlocking-the-power-of-web-development-the-best-chrome-extension-to-view-source-code-mmdt11ed3vp",
       "destination": "/blog/the-best-chrome-extension-to-view-source-code",
       "permanent": true
@@ -702,11 +687,6 @@
     {
       "source": "/blog/enhance-your-online-experience-top-chrome-extensions-to-improve-browsing-experience-mmdrqq8mam6",
       "destination": "/blog/enhance-your-online-experience",
-      "permanent": true
-    },
-    {
-      "source": "/blog/mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa",
-      "destination": "/blog",
       "permanent": true
     },
     {
@@ -836,7 +816,7 @@
     },
     {
       "source": "/blog/unlocking-online-privacy-the-power-of-ghostery-chrome-extension-mm3sclh7asr",
-      "destination": "/blog/unlocking-online-privacy-the-power-of-ghostery-chrome-extension",
+      "destination": "/blog/best-ghostery-settings-for-maximum-online-privacy",
       "permanent": true
     },
     {
@@ -1621,7 +1601,7 @@
     },
     {
       "source": "/blog/discover-the-best-chrome-extension-to-repeat-youtube-videos-for-enhanced-productivity-and-focus",
-      "destination": "/blog/mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa",
+      "destination": "/blog",
       "permanent": true
     },
     {
@@ -1746,7 +1726,7 @@
     },
     {
       "source": "/blog/visual-communication-best-annotated-screenshot-chrome-extensions-for-enhanced-productivity-best-high-quality-output-settings",
-      "destination": "/blog/mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa",
+      "destination": "/blog",
       "permanent": true
     },
     {
@@ -1817,11 +1797,6 @@
     {
       "source": "/blog/the-definitive-guide-to-the-best-chrome-plugins-for-media-downloading-in-2025",
       "destination": "/blog/the-best-chrome-plugins-for-downloading-media",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlocking-online-privacy-the-power-of-ghostery-chrome-extension",
-      "destination": "/blog/best-ghostery-settings-for-maximum-online-privacy",
       "permanent": true
     },
     {
@@ -1956,7 +1931,7 @@
     },
     {
       "source": "/blog/supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster",
-      "destination": "/blog/supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
+      "destination": "/blog",
       "permanent": true
     },
     {
@@ -2156,7 +2131,7 @@
     },
     {
       "source": "/blog/mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity",
-      "destination": "/blog/mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa",
+      "destination": "/blog",
       "permanent": true
     },
     {
@@ -3411,26 +3386,6 @@
       "permanent": false
     },
     {
-      "source": "/blog/extension-ad-block-plus-1",
-      "destination": "/blog/extension-ad-block-plus-faster-browsing",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlocking-the-power-of-extension-android-google-chrome",
-      "destination": "/blog/extension-android-google-chrome",
-      "permanent": true
-    },
-    {
-      "source": "/blog/extension-antivirus-google-chrome-1",
-      "destination": "/blog/why-you-need-an-antivirus-extension-for-chrome",
-      "permanent": true
-    },
-    {
-      "source": "/blog/is-ghostery-safe-a-closer-look-for-2026",
-      "destination": "/blog/is-ghostery-safe-to-use-a-professional-2026-review",
-      "permanent": true
-    },
-    {
       "source": "/blog/1xbet-chrome-extension-mkzmctgyegt",
       "destination": "/blog/1xbet-chrome-extension-review-2026",
       "permanent": true
@@ -3738,6 +3693,41 @@
     {
       "source": "/blog/the-ultimate-chrome-extensions-reviews-guide-how-to-find-the-best-browser-tools",
       "destination": "/blog/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools",
+      "permanent": true
+    },
+    {
+      "source": "/blog/protect-your-online-privacy-the-best-chrome-extension-to-block-trackers",
+      "destination": "/blog/enhance-your-online-security-with-the-best-chrome-privacy-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-chrome-extensions-for-privacy-2026-protect-your-online-identity-privacy-benefits-for-daily-use",
+      "destination": "/blog/chrome-extensions-for-online-privacy-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/linkedin-with-the-best-extension-linkedin-chrome-tools-comprehensive-feature-review",
+      "destination": "/blog/unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-rated-privacy-extensions-for-google-chrome-protecting-your-online-identity-troubleshooting-common-fixes",
+      "destination": "/blog/top-rated-privacy-extensions-for-google-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-ad-block-plus-1",
+      "destination": "/blog/extension-ad-block-plus-faster-browsing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-antivirus-google-chrome-1",
+      "destination": "/blog/why-you-need-an-antivirus-extension-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/is-ghostery-safe-a-closer-look-for-2026",
+      "destination": "/blog/is-ghostery-safe-to-use-a-professional-2026-review",
       "permanent": true
     }
   ]
