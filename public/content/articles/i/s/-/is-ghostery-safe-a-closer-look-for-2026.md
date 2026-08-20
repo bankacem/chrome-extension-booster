@@ -17,7 +17,8 @@ meta_description: >-
   As we delve into the world of browser extensions, one question that often
   arises is: Is Ghostery safe to use? With the increasing concern over online
   privacy an
-status: published
+status: merged
+redirect_to: "/blog/is-ghostery-safe-to-use-a-professional-2026-review"
 published_at: '2026-03-23T04:00:01.166+00:00'
 scheduled_at: '2026-03-23T04:00:00+00:00'
 author: James Mitchell

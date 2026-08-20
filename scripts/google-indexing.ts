@@ -9,6 +9,7 @@ const NEW_KEY_FILE = path.join(process.cwd(), 'google-services.json');
 const STATE_FILE = path.join(process.cwd(), 'scripts', 'indexed-urls.json');
 const LOG_FILE = path.join(process.cwd(), 'google-indexing.log');
 const ARTICLES_DIR = path.join(process.cwd(), 'public', 'content', 'articles');
+const MERGED_ARTICLES_FILE = path.join(process.cwd(), 'public', 'content', 'merged-articles.json');
 const BASE_URL = process.env.VITE_WEBSITE_URL || 'https://extensionto.com';
 
 const DELAY_MS = 1000; // 1 second delay between requests
@@ -192,12 +193,15 @@ async function massIndexing() {
 
   // Scan disk
   console.log(`Scanning articles in ${ARTICLES_DIR}...`);
+  const mergedArticles: Record<string, { redirect_to: string }> = fs.existsSync(MERGED_ARTICLES_FILE)
+    ? JSON.parse(fs.readFileSync(MERGED_ARTICLES_FILE, 'utf-8')) as Record<string, { redirect_to: string }>
+    : {};
   const mdFiles = walkDir(ARTICLES_DIR);
   const articles: ArticleMeta[] = [];
 
   for (const file of mdFiles) {
     const meta = getArticleMeta(file);
-    if (meta && meta.status?.toLowerCase() === 'published') {
+    if (meta && meta.status?.toLowerCase() === 'published' && !mergedArticles[meta.slug]) {
       articles.push(meta);
     }
   }

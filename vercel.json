@@ -3839,6 +3839,36 @@
       "source": "/blog/is-ghostery-safe-a-closer-look-for-2026",
       "destination": "/blog/is-ghostery-safe-to-use-a-professional-2026-review",
       "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-adblock-on-chrome-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-adblock-in-chrome-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-adblock-chrome-for-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-enhanced-browser-security-kaspersky-extension-chrome",
+      "destination": "/blog/unlocking-enhanced-browser-security-kaspersky-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-online-privacy-the-power-of-ghostery-chrome-extension",
+      "destination": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-chrome-ghostery-10",
+      "destination": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
+      "permanent": true
     }
   ]
 }

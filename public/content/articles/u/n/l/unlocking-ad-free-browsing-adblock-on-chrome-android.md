@@ -11,7 +11,8 @@ tags: []
 keywords:
   - adblock on chrome android
 meta_description: "A step-by-step walkthrough of adblock on chrome android, from installation to everyday use in Chrome."
-status: published
+status: merged
+redirect_to: "/blog/unlocking-the-power-of-adblock-chrome-on-android"
 published_at: '2026-03-21T09:00:01.128+00:00'
 scheduled_at: '2026-03-21T09:00:00+00:00'
 author: James Mitchell

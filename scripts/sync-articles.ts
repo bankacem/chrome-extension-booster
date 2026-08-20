@@ -27,6 +27,12 @@ interface ArticleIndexItem {
 
 const articlesDir = path.join(process.cwd(), 'public', 'content', 'articles');
 const indexFile = path.join(process.cwd(), 'public', 'content', 'articles-index.json');
+const mergedArticlesFile = path.join(process.cwd(), 'public', 'content', 'merged-articles.json');
+
+type MergedArticle = { redirect_to: string; reason?: string };
+const mergedArticles: Record<string, MergedArticle> = fs.existsSync(mergedArticlesFile)
+  ? JSON.parse(fs.readFileSync(mergedArticlesFile, 'utf-8')) as Record<string, MergedArticle>
+  : {};
 
 function walkDir(dir: string, fileList: string[] = []): string[] {
   if (!fs.existsSync(dir)) return fileList;
@@ -82,14 +88,17 @@ async function rebuildIndex() {
         continue; // skip drafts, scheduled, etc.
       }
 
-      publishedOnDiskCount++;
-
       const rawSlug = String(metadata.slug || '');
       if (!slugRegex.test(rawSlug)) {
         console.warn(`[Index] WARNING: Slug contains non-standard characters: "${rawSlug}" in ${filePath}`);
       }
 
       const normalizedSlug = normalizeSlug(rawSlug);
+      if (mergedArticles[normalizedSlug]) {
+        console.log(`[Index] Skipping merged article: ${normalizedSlug} -> ${mergedArticles[normalizedSlug].redirect_to}`);
+        continue;
+      }
+      publishedOnDiskCount++;
       const id = String(metadata.id || normalizedSlug);
 
       // Clean up title and description from potential multiline/YAML artifacts

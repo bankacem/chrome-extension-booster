@@ -10,7 +10,8 @@ tags: []
 keywords:
   - extension chrome ghostery
 meta_description: "Curious who's tracking your online activity and why? Here's how the Ghostery extension for Chrome blocks trackers and shows you exactly what it stops."
-status: published
+status: merged
+redirect_to: "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension"
 published_at: '2026-02-08T14:11:01+00:00'
 scheduled_at: '2026-02-08T14:11:00+00:00'
 author: James Mitchell

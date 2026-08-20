@@ -12,7 +12,8 @@ tags: []
 keywords:
   - kaspersky extension chrome
 meta_description: "As the digital landscape continues to evolve, cybersecurity has become a top priority for individuals and organizations alike."
-status: published
+status: merged
+redirect_to: "/blog/unlocking-enhanced-browser-security-kaspersky-chrome"
 published_at: '2026-05-02T02:15:01.322+00:00'
 scheduled_at: '2026-05-02T02:15:00+00:00'
 author: James Mitchell
