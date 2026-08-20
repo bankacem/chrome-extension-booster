@@ -85,7 +85,7 @@ description: "As we spend more time on social media platforms like LinkedIn, it'
   <li>Taking regular breaks to rest your eyes</li>
 </ul>
 
-<p>For more tips on reducing blue light emission and protecting your eyes, check out our article on <a href="/blog/how-to-fix-chrome-high-memory-usage-on-windows-11" class="internal-link" title="How to Fix Chrome High Memory Usage on Windows 11: A Complete Guide to a Faster Browser">How to Fix Chrome High Memory Usage on Windows 11</a>. You can also explore our collection of <a href="/blog/pro-student-chrome-extensions-the-ultimate-academic-stack" class="text-primary font-medium hover:underline">Pro Student Chrome Extensions</a> for more <a href="/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser-mll9bto578a" class="internal-link" title="Unlocking Efficiency: The Best Productivity Tools for Chrome Browser">productivity</a> tools and tips.</p>
+<p>For more tips on reducing blue light emission and protecting your eyes, check out our article on <a href="/blog/how-to-fix-chrome-high-memory-usage-on-windows-11" class="internal-link" title="How to Fix Chrome High Memory Usage on Windows 11: A Complete Guide to a Faster Browser">How to Fix Chrome High Memory Usage on Windows 11</a>. You can also explore our collection of <a href="/blog/pro-student-chrome-extensions-the-ultimate-academic-stack" class="text-primary font-medium hover:underline">Pro Student Chrome Extensions</a> for more <a href="/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser" class="internal-link" title="Unlocking Efficiency: The Best Productivity Tools for Chrome Browser">productivity</a> tools and tips.</p>
 
 <h2>Comparison Table: Night Mode Extensions</h2>
 <table class="table table-striped">
@@ -104,7 +104,7 @@ description: "As we spend more time on social media platforms like LinkedIn, it'
     </tr>
     <tr>
       <td>Other Night Mode Extensions</td>
-      <td>Manual switching, limited <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options</td>
+      <td>Manual switching, limited <a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options</td>
       <td>Varying prices</td>
     </tr>
   </tbody>

@@ -86,7 +86,7 @@ description: "As a Shopify store owner, you're likely no stranger to the importa
 
 <p>For more information on how to use Chrome extensions with your Shopify store, check out our article on <a href="/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs">Unlocking the Power of Chrome: How to Find the Best </a><a href="/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs" class="internal-link" title="Unlocking the Power of Chrome: How to Find the Best Extension to Chrome for Your Needs">Extension to Chrome</a> for Your Needs.</p>
 
-<h2><a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comparison</a> Table</h2>
+<h2><a href="/blog/ublock-origin-vs-ghostery-for-chrome-android" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comparison</a> Table</h2>
 <table class="table-auto">
   <thead>
     <tr>
@@ -98,7 +98,7 @@ description: "As a Shopify store owner, you're likely no stranger to the importa
   <tbody>
     <tr>
       <td>Meta Pixel Manager</td>
-      <td>Easy installation and <a href="/blog/is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management-mmb6y4ldz8f" class="internal-link" title="Is there an IDM extension for Chrome Android? A Comprehensive Guide to Download Management">management</a> of Meta Pixel</td>
+      <td>Easy installation and <a href="/blog/is-there-an-idm-extension-for-chrome-android-to-download-management" class="internal-link" title="Is there an IDM extension for Chrome Android? A Comprehensive Guide to Download Management">management</a> of Meta Pixel</td>
       <td>Free</td>
     </tr>
     <tr>

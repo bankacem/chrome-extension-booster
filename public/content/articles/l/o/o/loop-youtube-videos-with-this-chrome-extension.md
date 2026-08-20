@@ -27,7 +27,7 @@ description: "Are you tired of manually replaying your favorite YouTube videos o
 
 <p>Are you tired of manually replaying your favorite YouTube videos or loops? Look no further! A <strong>Chrome extension to repeat YouTube videos</strong> can be a game-changer for anyone who wants to boost their productivity, focus, or simply enjoy their favorite content without interruptions. In this article, we'll delve into the world of Chrome extensions and explore the best options to repeat YouTube videos, making your browsing experience more efficient and enjoyable.</p>
 
-<p>Before we dive into the details, let's talk about why you might need a <strong>Chrome extension to repeat YouTube videos</strong>. Whether you're a student, a <a href="/blog/is-ghostery-safe-to-use-a-professional-2026-review-mmb7srbz193" class="internal-link" title="Is Ghostery Safe to Use? A Professional 2026 Review">professional</a>, or simply a YouTube enthusiast, repetition can be a powerful tool for learning, focus, or relaxation. By using a Chrome extension to repeat YouTube videos, you can create a seamless loop of your favorite content, eliminating the need to manually replay videos or deal with annoying ads.</p>
+<p>Before we dive into the details, let's talk about why you might need a <strong>Chrome extension to repeat YouTube videos</strong>. Whether you're a student, a <a href="/blog/is-ghostery-safe-to-use-a-professional-2026-review" class="internal-link" title="Is Ghostery Safe to Use? A Professional 2026 Review">professional</a>, or simply a YouTube enthusiast, repetition can be a powerful tool for learning, focus, or relaxation. By using a Chrome extension to repeat YouTube videos, you can create a seamless loop of your favorite content, eliminating the need to manually replay videos or deal with annoying ads.</p>
 
 <h2>Table of Contents</h2>
 <div class="extension-backlink my-8 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20">
@@ -85,7 +85,7 @@ description: "Are you tired of manually replaying your favorite YouTube videos o
 <p>Using a <strong>Chrome extension to repeat YouTube videos</strong> is relatively straightforward. Here's a step-by-step guide:</p>
 
 <ol>
-  <li>Install the Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
+  <li>Install the Chrome extension from the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Go to the YouTube video you want to repeat.</li>
   <li>Click the Chrome extension icon in the top right corner of the browser.</li>
   <li>Select the "Repeat" or "Loop" option to start repeating the video.</li>

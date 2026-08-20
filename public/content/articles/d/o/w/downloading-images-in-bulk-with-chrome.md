@@ -51,7 +51,7 @@ description: "Are you tired of manually saving images from the web, one by one? 
 <p>So, why use a <strong>chrome extension to download images</strong> in the first place? Here are just a few benefits of using one:</p>
 
 <ul>
-  <li><strong>Convenience</strong>: With a chrome extension to download images, you can save images with just a few clicks, without having to navigate to a new page or use a separate <a href="/blog/mastering-the-art-of-file-management-the-ultimate-guide-to-download-manager-mmdupf64qbd" class="internal-link" title="Mastering the Art of File Management: The Ultimate Guide to Download Manager">download manager</a>.</li>
+  <li><strong>Convenience</strong>: With a chrome extension to download images, you can save images with just a few clicks, without having to navigate to a new page or use a separate <a href="/blog/mastering-the-art-of-file-management-download-manager" class="internal-link" title="Mastering the Art of File Management: The Ultimate Guide to Download Manager">download manager</a>.</li>
   <li><strong>Time-saving</strong>: Imagine being able to download multiple images at once, without having to manually save each one. A chrome extension to download images can save you hours of time and effort.</li>
   <li><strong>Organization</strong>: Many chrome extensions to download images allow you to organize your saved images into folders, making it easy to find what you need later.</li>
 </ul>
@@ -119,7 +119,7 @@ description: "Are you tired of manually saving images from the web, one by one? 
   <li><strong>Q: Can I use a chrome extension to download images to download videos as well?</strong>
   <p>A: Some chrome extensions to download images may also support video downloading, but it depends on the specific extension. Be sure to check the extension's features before installing it.</p></li>
   <li><strong>Q: How do I install a chrome extension to download images?</strong>
-  <p>A: Installing a chrome extension to download images is easy. Simply go to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension you want to install, and click the "Add to Chrome" button.</p></li>
+  <p>A: Installing a chrome extension to download images is easy. Simply go to the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension you want to install, and click the "Add to Chrome" button.</p></li>
   <li><strong>Q: Can I use a chrome extension to download images on my mobile device?</strong>
   <p>A: Some chrome extensions to download images may be available for mobile devices, but it depends on the specific extension. Be sure to check the extension's compatibility before installing it.</p></li>
   <li><strong>Q: How do I troubleshoot issues with my chrome extension to download images?</strong>

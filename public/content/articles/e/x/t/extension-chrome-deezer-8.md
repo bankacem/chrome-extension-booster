@@ -78,7 +78,7 @@ description: "Are you a music lover looking for a seamless way to enjoy your fav
 <h2 id="how-to-install-extension-chrome-deezer">How to Install Extension Chrome Deezer</h2>
 <p>Installing the <strong>extension chrome deezer</strong> is easy. Simply follow these steps:</p>
 <ol>
-  <li>Open the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for "Deezer"</li>
+  <li>Open the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for "Deezer"</li>
   <li>Click the "Add to Chrome" button to install the extension</li>
   <li>Follow the prompts to sign in to your Deezer account or create a new one</li>
   <li>Once installed, you can access the extension by clicking the Deezer icon in the Chrome toolbar</li>

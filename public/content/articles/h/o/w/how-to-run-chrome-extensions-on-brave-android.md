@@ -59,7 +59,7 @@ updated_at: '2026-04-23T12:25:15.87333+00:00'
   <li><a href="#enabling-chrome-extensions">Enabling Chrome Extensions on Brave Android</a></li>
   <li><a href="#installing-chrome-extensions">Installing Chrome Extensions on Brave Android</a></li>
   <li><a href="#managing-chrome-extensions">Managing Chrome Extensions on Brave Android</a></li>
-  <li><a href="/blog/how-to-fix-facebook-pixel-helper-not-working-2026-a-comprehensive-guide-to-troubleshooting-mmb6y2rtgr2" class="internal-link" title="How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to Troubleshooting">Troubleshooting</a> Common Issues</li>
+  <li><a href="/blog/how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting" class="internal-link" title="How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to Troubleshooting">Troubleshooting</a> Common Issues</li>
   <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 
@@ -67,7 +67,7 @@ updated_at: '2026-04-23T12:25:15.87333+00:00'
 <p>To get started, you'll need to install the Brave browser on your Android device. You can download it from the Google Play Store or the Brave website. Once installed, launch the browser and follow the prompts to set it up.</p>
 
 <h2 id="enabling-chrome-extensions">Enabling Chrome Extensions on Brave Android</h2>
-<p>By default, Brave browser doesn't allow Chrome extensions to be installed. However, you can enable this feature by going to the Brave browser settings, then tapping on "Extensions" and toggling the switch to enable "Developer Mode". This will allow you to install Chrome extensions from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</p>
+<p>By default, Brave browser doesn't allow Chrome extensions to be installed. However, you can enable this feature by going to the Brave browser settings, then tapping on "Extensions" and toggling the switch to enable "Developer Mode". This will allow you to install Chrome extensions from the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</p>
 
 <h2 id="installing-chrome-extensions">Installing Chrome Extensions on Brave Android</h2>
 <p>Now that you've enabled Chrome extensions, you can start installing your favorite extensions from the Chrome Web Store. To do this, follow these steps:</p>

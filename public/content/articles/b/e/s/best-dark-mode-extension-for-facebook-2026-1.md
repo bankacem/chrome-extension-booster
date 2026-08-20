@@ -62,7 +62,7 @@ description: "Are you tired of the eye-straining bright interface of Facebook? D
   <li>Reduced eye strain: Dark mode can help alleviate eye fatigue caused by prolonged screen time.</li>
   <li>Improved battery life: Dark mode can help conserve battery life on devices with OLED screens.</li>
   <li>Enhanced visual appeal: Dark mode can add a touch of elegance and sophistication to a website's design.</li>
-  <li>Increased <a href="/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser-mll9bto578a" class="internal-link" title="Unlocking Efficiency: The Best Productivity Tools for Chrome Browser">productivity</a>: Dark mode can help minimize distractions and improve focus.</li>
+  <li>Increased <a href="/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser" class="internal-link" title="Unlocking Efficiency: The Best Productivity Tools for Chrome Browser">productivity</a>: Dark mode can help minimize distractions and improve focus.</li>
 </ul>
 
 <h2 id="best-dark-mode-extensions-for-facebook">Best Dark Mode Extensions for Facebook 2026</h2>
@@ -70,13 +70,13 @@ description: "Are you tired of the eye-straining bright interface of Facebook? D
 <ul>
   <li><a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>: This extension automatically switches between dark and light modes on Facebook and other websites.</li>
   <li>Dark Mode for Facebook: This extension enables dark mode on Facebook with a single click.</li>
-  <li>Facebook Dark Mode: This extension offers a range of <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options for dark mode on Facebook.</li>
+  <li>Facebook Dark Mode: This extension offers a range of <a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">customization</a> options for dark mode on Facebook.</li>
 </ul>
 
 <h2 id="how-to-enable-dark-mode-on-facebook">How to Enable Dark Mode on Facebook</h2>
 <p>Enabling dark mode on Facebook is easier than you think. Here's a step-by-step guide:</p>
 <ol>
-  <li>Install the <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
+  <li>Install the <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension from the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Click on the extension icon in the top right corner of your browser.</li>
   <li>Toggle the switch to enable dark mode on Facebook.</li>
 </ol>

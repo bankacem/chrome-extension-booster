@@ -3869,6 +3869,56 @@
       "source": "/blog/extension-chrome-ghostery-10",
       "destination": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
       "permanent": true
+    },
+    {
+      "source": "/blog/chrome-web-store-2",
+      "destination": "/blog/chrome-web-store-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/google-chrome-programmé-en-14",
+      "destination": "/blog/google-chrome-programm-en-14",
+      "permanent": true
+    },
+    {
+      "source": "/blog/media-saver-extension-review-a-comprehensive-guide-to-saving-media-files-mmtvriryoxa",
+      "destination": "/blog/media-saver-extension-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/creating-financial-models-with-formula-builder-pro-7",
+      "destination": "/blog/creating-financial-models-formula-builder-pro",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-file-downloading-the-best-chrome-extension-to-download-files-mmtvrgzypoz",
+      "destination": "/blog/best-chrome-extension-download-files",
+      "permanent": true
+    },
+    {
+      "source": "/blog/safe-video-downloader-for-chrome-protecting-your-device-from-malware-and-viruses-mmtvrfrtd6s",
+      "destination": "/blog/safe-video-downloader-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-to-chrome",
+      "destination": "/blog/extension-to-chrome-browser-10",
+      "permanent": true
+    },
+    {
+      "source": "/blog/save-pc-resources-with-chrome-tab-suspension-boosting-browser-performance-and-efficiency",
+      "destination": "/blog/save-pc-resources-with-chrome-tab-suspension",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-extension-download-4",
+      "destination": "/blog/best-chrome-extension-download-files",
+      "permanent": true
+    },
+    {
+      "source": "/extensions",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }

@@ -71,7 +71,7 @@ description: "We’ve all been there. You’re in the middle of a high-stakes pr
     "A single poorly coded extension can slow down your entire browsing experience more than fifty open tabs combined."
 </blockquote>
 
-<p>It is vital to distinguish between what you need and what is just "bloat." For instance, choosing between <a href="/blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025">Chrome extensions vs. web apps</a> can significantly impact your performance. If a tool is available as a lightweight web app, use that instead of an extension that stays active 24/7.</p>
+<p>It is vital to distinguish between what you need and what is just "bloat." For instance, choosing between <a href="/blog/chrome-extensions-vs-web-apps-comparison">Chrome extensions vs. web apps</a> can significantly impact your performance. If a tool is available as a lightweight web app, use that instead of an extension that stays active 24/7.</p>
 
 <h4>How to Audit Your Extensions:</h4>
 <ul>

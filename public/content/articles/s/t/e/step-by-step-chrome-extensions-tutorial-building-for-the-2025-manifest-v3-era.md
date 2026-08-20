@@ -47,7 +47,7 @@ updated_at: '2026-04-23T12:29:22.061228+00:00'
 <li>▶ <strong>Strict Security Policies:</strong> Security is tighter. "Verified Uploads" and the "One Appeal" rule mean policy compliance is non-negotiable.</li>
 <!-- /wp:list-item --></ul>
 <p><!-- /wp:list --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">The State of the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> in 2025</h2>
+<h2 class="wp-block-heading">The State of the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> in 2025</h2>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>
 <p>Understand the market before you start coding. The extension landscape has matured. While the total count hovers around 113,000 active extensions, the quality bar is higher. Google's aggressive removal of outdated Manifest V2 extensions cleared the clutter, creating opportunities for tools built on modern web standards.</p>
 <p><!-- /wp:paragraph --> <!-- wp:table --></p>
@@ -66,7 +66,7 @@ updated_at: '2026-04-23T12:29:22.061228+00:00'
 </tr>
 <tr>
 <td>Dominant Category</td>
-<td><a href="/blog/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm" class="internal-link" title="Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency">Productivity</a> (46.8%)</td>
+<td><a href="/blog/a-chrome-extension-built-for-programmers" class="internal-link" title="Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency">Productivity</a> (46.8%)</td>
 </tr>
 <tr>
 <td>Avg. Review Time</td>
@@ -94,7 +94,7 @@ updated_at: '2026-04-23T12:29:22.061228+00:00'
 <li><strong>Basic JavaScript/TypeScript:</strong> TypeScript is recommended for managing complex Chrome API types.</li>
 <!-- /wp:list-item --></ul>
 <p><!-- /wp:list --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Phase 2: <a href="/blog/cors-chrome-7" class="internal-link" title="Understanding CORS Chrome: A Comprehensive Guide to Web Development">Understanding</a> the Manifest.json</h2>
+<h2 class="wp-block-heading">Phase 2: <a href="/blog" class="internal-link" title="Understanding CORS Chrome: A Comprehensive Guide to Web Development">Understanding</a> the Manifest.json</h2>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>
 <p>The <code>manifest.json</code> file is your project's command center. It dictates what the extension does, the permissions it requires, and which files execute. Manifest V3 locks this file down significantly to prioritize user privacy.</p>
 <p><!-- /wp:paragraph --> <!-- wp:preformatted --></p>

@@ -66,7 +66,7 @@ description: "Are you tired of cluttered browser tabs and decreased productivity
   <li><strong>Tab Management</strong>: OneTab Firefox helps you manage your tabs by converting them into a list, making it easier to find and access the information you need.</li>
   <li><strong>Memory Savings</strong>: By closing unnecessary tabs, OneTab Firefox helps reduce memory usage, resulting in a faster and more responsive browser.</li>
   <li><strong>Productivity Boost</strong>: With OneTab Firefox, you can focus on the task at hand, without distractions from multiple open tabs.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a></strong>: OneTab Firefox allows you to customize your tab list, making it easy to organize and prioritize your tabs.</li>
+  <li><strong><a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a></strong>: OneTab Firefox allows you to customize your tab list, making it easy to organize and prioritize your tabs.</li>
 </ul>
 
 <h3>Comparison with Other Tab Management Tools</h3>

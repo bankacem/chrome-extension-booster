@@ -27,7 +27,7 @@ description: "As a web developer, you're likely familiar with the importance of 
 
 <p>As a web developer, you're likely familiar with the importance of debugging and testing your React applications. One of the most powerful tools in your arsenal is React DevTools, a set of extensions that allow you to inspect and debug your React components directly in the browser. But what about when you're working on a mobile device? Can you still use React DevTools for Chrome mobile? In this article, we'll explore the world of React DevTools for Chrome mobile and show you how to get the most out of these powerful tools.</p>
 
-<p>Before we dive in, let's talk about why <strong>React DevTools</strong> are so important. With the ability to inspect and debug your React components, you can identify and fix issues faster, improving your overall <a href="/blog/unlock-the-power-of-mobile-development-top-chrome-devtools-tips-for-mobile-mmtm0hanwsl" class="internal-link" title="Unlock the Power of Mobile Development: Top Chrome DevTools Tips for Mobile">development</a> workflow. And with the rise of mobile devices, it's more important than ever to have tools that work seamlessly on smaller screens. That's where <strong>React DevTools for Chrome mobile</strong> come in.</p>
+<p>Before we dive in, let's talk about why <strong>React DevTools</strong> are so important. With the ability to inspect and debug your React components, you can identify and fix issues faster, improving your overall <a href="/blog/top-chrome-devtools-tips-for-mobile" class="internal-link" title="Unlock the Power of Mobile Development: Top Chrome DevTools Tips for Mobile">development</a> workflow. And with the rise of mobile devices, it's more important than ever to have tools that work seamlessly on smaller screens. That's where <strong>React DevTools for Chrome mobile</strong> come in.</p>
 
 <h2>What are React DevTools for Chrome Mobile?</h2>
 <div class="extension-backlink my-8 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20">
@@ -53,10 +53,10 @@ description: "As a web developer, you're likely familiar with the importance of 
   <li>Inspect and debug your React components</li>
   <li>View component hierarchies and props</li>
   <li>Debug state and props changes</li>
-  <li>Test and optimize your application's <a href="/blog/unlocking-peak-performance-the-ultimate-guide-to-browser-optimization-extensions-mmtizzb73wk" class="internal-link" title="Unlocking Peak Performance: The Ultimate Guide to Browser Optimization Extensions">performance</a></li>
+  <li>Test and optimize your application's <a href="/blog/unlocking-peak-performance-browser-optimization-extensions" class="internal-link" title="Unlocking Peak Performance: The Ultimate Guide to Browser Optimization Extensions">performance</a></li>
 </ul>
 
-<p>But how do you get started with React DevTools for Chrome mobile? First, you'll need to install the <a href="https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi" class="text-primary font-medium hover:underline">React DevTools extension</a> from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>. Once installed, you can access the tools by opening the Chrome DevTools panel and switching to the "Components" tab.</p>
+<p>But how do you get started with React DevTools for Chrome mobile? First, you'll need to install the <a href="https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi" class="text-primary font-medium hover:underline">React DevTools extension</a> from the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>. Once installed, you can access the tools by opening the Chrome DevTools panel and switching to the "Components" tab.</p>
 
 <h3>Using React DevTools for Chrome Mobile</h3>
 

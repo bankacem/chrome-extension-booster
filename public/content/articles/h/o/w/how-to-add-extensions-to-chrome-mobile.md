@@ -63,7 +63,7 @@ description: "Are you looking to enhance your browsing experience on Chrome mobi
   <li>Open the Chrome browser on your mobile device.</li>
   <li>Tap the three dots in the top right corner and select "Settings".</li>
   <li>Scroll down and select "Desktop site".</li>
-  <li>Go to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the extension you want to add.</li>
+  <li>Go to the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the extension you want to add.</li>
   <li>Tap "Add to Chrome" to install the extension.</li>
   <li>Confirm the installation by tapping "Add" again.</li>
 </ol>

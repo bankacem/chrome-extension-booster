@@ -36,7 +36,7 @@ updated_at: '2026-04-23T12:26:04.260827+00:00'
     <li><a href="#why-do-you-need-secure-browsing-extensions">Why Do You Need Secure Browsing Extensions?</a></li>
     <li><a href="#features-of-secure-browsing-extensions">Features of Secure Browsing Extensions</a></li>
     <li><a href="#top-secure-browsing-extensions">Top Secure Browsing Extensions</a></li>
-    <li><a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comparison</a> Table</li>
+    <li><a href="/blog/ublock-origin-vs-ghostery-for-chrome-android" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comparison</a> Table</li>
     <li><a href="#faq">Frequently Asked Questions</a></li>
 </ul>
 
@@ -159,7 +159,7 @@ updated_at: '2026-04-23T12:26:04.260827+00:00'
     </li>
     <li>Q: How do I install a secure browsing extension?
         <ul>
-            <li>A: To install a secure browsing extension, visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension, and click the "Add to Chrome" button.</li>
+            <li>A: To install a secure browsing extension, visit the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension, and click the "Add to Chrome" button.</li>
         </ul>
     </li>
 </ul>

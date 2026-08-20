@@ -67,7 +67,7 @@ description: "Are you tired of annoying ads disrupting your browsing experience 
 <ul>
   <li>Improved browsing speed: By blocking ads, Adblock can significantly improve your browsing speed and reduce page load times.</li>
   <li>Enhanced security: Adblock can help protect you from malicious ads and malware, keeping your device and personal data safe.</li>
-  <li>Increased <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">productivity</a>: With fewer distractions and interruptions, you can focus on your work or entertainment without annoying ads getting in the way.</li>
+  <li>Increased <a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">productivity</a>: With fewer distractions and interruptions, you can focus on your work or entertainment without annoying ads getting in the way.</li>
 </ul>
 
 <h2 id="how-to-install-adblock">How to Install Adblock on Android</h2>
@@ -76,7 +76,7 @@ description: "Are you tired of annoying ads disrupting your browsing experience 
   <li>Open the Google Chrome browser on your Android device.</li>
   <li>Tap the three vertical dots in the top right corner of the screen.</li>
   <li>Tap "Settings" and then "Extensions".</li>
-  <li>Search for "Adblock" in the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
+  <li>Search for "Adblock" in the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Select the Adblock extension you want to install and tap "Add to Chrome".</li>
 </ol>
 

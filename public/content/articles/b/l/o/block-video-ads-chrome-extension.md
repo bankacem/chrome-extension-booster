@@ -108,7 +108,7 @@ updated_at: '2026-04-27T16:59:43.065Z'
 <h2 id="how-to-install-and-use-the-light-popup-blocker">How to Install and Use the Light Popup Blocker</h2>
 <p>Installing and using the <a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a> is straightforward:</p>
 <ol>
-  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the <a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a>.</li>
+  <li>Visit the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the <a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a>.</li>
   <li>Click the "Add to Chrome" button to install the extension.</li>
   <li>Once installed, click the extension's icon in the top right corner of your browser to access its settings.</li>
   <li>Customize your ad-blocking experience by adjusting the filters and settings to suit your needs.</li>

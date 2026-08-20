@@ -63,7 +63,7 @@ description: "Are you looking to enhance your browsing experience on your Androi
 <ul>
   <li>Improved productivity: With extensions like <a href="/extension/formula-builder-pro" class="text-primary font-medium hover:underline">Formula Builder Pro</a>, you can perform complex calculations and create financial models on the go.</li>
   <li>Enhanced security: Extensions like <a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a> can protect you from malicious redirects and phishing attacks.</li>
-  <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: With extensions like <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>, you can personalize your browsing experience to suit your preferences.</li>
+  <li><a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a>: With extensions like <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a>, you can personalize your browsing experience to suit your preferences.</li>
 </ul>
 
 <h2 id="installation">How to Install Chrome Extensions on Android 2026</h2>
@@ -76,7 +76,7 @@ description: "Are you looking to enhance your browsing experience on your Androi
   <li>Scroll down to the "Advanced" section and select "Extensions" from the list.</li>
   <li>Toggle the switch next to "Developer mode" to enable it.</li>
   <li>Tap "Update" to ensure you have the latest version of Chrome.</li>
-  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the extension you want to install.</li>
+  <li>Visit the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the extension you want to install.</li>
   <li>Tap the "Add to Chrome" button to install the extension.</li>
 </ol>
 

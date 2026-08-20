@@ -54,7 +54,7 @@ description: "As a developer, you understand the importance of creating high-qua
   <li><strong>Multiple screen support</strong>: If you work with multiple screens, you'll want a screen recorder that can handle this setup with ease.</li>
   <li><strong>Editing capabilities</strong>: A built-in editor can save you time and effort, allowing you to trim, cut, and arrange your recordings as needed.</li>
   <li><strong>Audio support</strong>: Good audio quality is essential for creating engaging tutorials and presentations.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</strong>: The ability to customize your recordings, such as adding annotations, watermarks, or logos, can help you create a professional brand.</li>
+  <li><strong><a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options</strong>: The ability to customize your recordings, such as adding annotations, watermarks, or logos, can help you create a professional brand.</li>
 </ul>
 
 <h3>Popular Screen Recorders for Developers</h3>

@@ -86,7 +86,7 @@ description: "Are you tired of navigating through Facebook's complex interface, 
 <ul>
   <li><strong>Compatibility</strong>: Make sure the extension is compatible with your version of Chrome and Facebook.</li>
   <li><strong>Security</strong>: Choose an extension that prioritizes security and protects your Facebook account from malicious activity.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a></strong>: Look for an extension that offers customization options, such as scheduling posts or responding to comments.</li>
+  <li><strong><a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a></strong>: Look for an extension that offers customization options, such as scheduling posts or responding to comments.</li>
   <li><strong>Analytics</strong>: Consider an extension that provides analytics and insights into your Facebook performance.</li>
 </ul>
 
@@ -99,7 +99,7 @@ description: "Are you tired of navigating through Facebook's complex interface, 
     <p>A: A Chrome extension for Facebook tools is a software program that can be installed in the Chrome browser to enhance the Facebook experience, providing features such as scheduling posts, responding to comments, and analyzing engagement metrics.</p>
   </li>
   <li><strong>Q: How do I install a Chrome extension for Facebook tools?</strong>
-    <p>A: To install a Chrome extension for Facebook tools, simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension, and click the "Add to Chrome" button.</p>
+    <p>A: To install a Chrome extension for Facebook tools, simply visit the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the extension, and click the "Add to Chrome" button.</p>
   </li>
   <li><strong>Q: Are Chrome extensions for Facebook tools safe?</strong>
     <p>A: Yes, most Chrome extensions for Facebook tools are safe, but it's essential to choose an extension from a reputable developer and read reviews before installing.</p>

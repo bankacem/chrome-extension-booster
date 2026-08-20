@@ -95,7 +95,7 @@ description: "The extension notion has revolutionized the way we interact with o
 
 <p>The <strong>extension notion</strong> has created a thriving ecosystem of developers, users, and extensions. This ecosystem has given rise to a wide range of resources and communities, including:</p>
 
-<blockquote>The <a href="/blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025" class="text-primary font-medium hover:underline">Chrome Extensions vs. Web Apps</a> article provides a comprehensive comparison of the two, highlighting the benefits and drawbacks of each.</blockquote>
+<blockquote>The <a href="/blog/chrome-extensions-vs-web-apps-comparison" class="text-primary font-medium hover:underline">Chrome Extensions vs. Web Apps</a> article provides a comprehensive comparison of the two, highlighting the benefits and drawbacks of each.</blockquote>
 
 <h2 id="how-to-install-extensions">How to Install Extensions</h2>
 

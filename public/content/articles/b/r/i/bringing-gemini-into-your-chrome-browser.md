@@ -65,7 +65,7 @@ description: "Are you looking to enhance your browsing experience with the gemin
 <p>Installing the <strong>gemini extension to chrome</strong> is a straightforward process. Simply follow these steps:</p>
 
 <ul>
-    <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for Gemini Extension</li>
+    <li>Visit the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for Gemini Extension</li>
     <li>Click the "Add to Chrome" button</li>
     <li>Wait for the extension to download and install</li>
     <li>Click the Gemini Extension icon in your browser toolbar to access its features</li>
@@ -81,7 +81,7 @@ description: "Are you looking to enhance your browsing experience with the gemin
     <li>Advanced productivity tools, such as our <a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a>, to help you stay focused and efficient</li>
     <li>Enhanced security features, like our <a href="/extension/securakey-pro" class="text-primary font-medium hover:underline">SecuraKey Pro</a>, to protect your online identity and data</li>
     <li>Entertainment and social media integration, making it easier to share and discover new content</li>
-    <li><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options to personalize your browsing experience</li>
+    <li><a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> options to personalize your browsing experience</li>
 </ul>
 
 <p>By leveraging these features, you can unlock the full potential of the <strong>gemini extension to chrome</strong> and take your browsing experience to the next level.</p>
