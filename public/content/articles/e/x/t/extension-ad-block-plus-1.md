@@ -16,7 +16,8 @@ meta_description: >-
   The internet can be a distracting place, with ads popping up left and right,
   slowing down our browsing experience and making it harder to focus on what
   really m
-status: published
+status: merged
+redirect_to: "/blog/extension-ad-block-plus-faster-browsing"
 published_at: '2026-05-12T02:15:00.71+00:00'
 scheduled_at: '2026-05-12T02:15:00+00:00'
 author: James Mitchell

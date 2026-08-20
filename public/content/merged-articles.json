@@ -1,0 +1,38 @@
+{
+  "unlocking-ad-free-browsing-adblock-on-chrome-android": {
+    "redirect_to": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
+    "reason": "Duplicate Android adblock intent"
+  },
+  "unlocking-ad-free-browsing-adblock-in-chrome-android": {
+    "redirect_to": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
+    "reason": "Duplicate Android adblock intent"
+  },
+  "unlocking-ad-free-browsing-adblock-chrome-for-android": {
+    "redirect_to": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
+    "reason": "Duplicate Android adblock intent"
+  },
+  "unlocking-enhanced-browser-security-kaspersky-extension-chrome": {
+    "redirect_to": "/blog/unlocking-enhanced-browser-security-kaspersky-chrome",
+    "reason": "Duplicate Kaspersky Chrome intent"
+  },
+  "unlocking-online-privacy-the-power-of-ghostery-chrome-extension": {
+    "redirect_to": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
+    "reason": "Duplicate Ghostery Chrome intent"
+  },
+  "extension-chrome-ghostery-10": {
+    "redirect_to": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
+    "reason": "Duplicate Ghostery Chrome intent"
+  },
+  "extension-ad-block-plus-1": {
+    "redirect_to": "/blog/extension-ad-block-plus-faster-browsing",
+    "reason": "Existing redirect source retained in Vercel"
+  },
+  "extension-antivirus-google-chrome-1": {
+    "redirect_to": "/blog/why-you-need-an-antivirus-extension-for-chrome",
+    "reason": "Existing redirect source retained in Vercel"
+  },
+  "is-ghostery-safe-a-closer-look-for-2026": {
+    "redirect_to": "/blog/is-ghostery-safe-to-use-a-professional-2026-review",
+    "reason": "Existing redirect source retained in Vercel"
+  }
+}

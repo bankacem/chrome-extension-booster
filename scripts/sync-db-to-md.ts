@@ -18,6 +18,11 @@ if (!supabaseUrl || !supabaseKey) {
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 const articlesDir = path.join(process.cwd(), 'public', 'content', 'articles');
+const mergedArticlesFile = path.join(process.cwd(), 'public', 'content', 'merged-articles.json');
+type MergedArticle = { redirect_to: string; reason?: string };
+const mergedArticles: Record<string, MergedArticle> = fs.existsSync(mergedArticlesFile)
+  ? JSON.parse(fs.readFileSync(mergedArticlesFile, 'utf-8')) as Record<string, MergedArticle>
+  : {};
 
 interface ArticleRecord {
   id: string;
@@ -134,6 +139,10 @@ async function syncDbToMd() {
   let renamedCount = 0;
 
   for (const article of allArticles) {
+    if (mergedArticles[article.slug]) {
+      console.log(`[Sync] Skipping merged article: ${article.slug} -> ${mergedArticles[article.slug].redirect_to}`);
+      continue;
+    }
     const existingFilePath = idToFilePath.get(article.id);
     const targetSubPath = getPartitionedPath(article.slug);
     const relativePath = targetSubPath.replace('/content/articles/', '');

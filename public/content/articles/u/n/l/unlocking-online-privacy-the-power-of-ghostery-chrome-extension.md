@@ -11,7 +11,8 @@ tags: []
 keywords:
   - ghostery chrome extension
 meta_description: "A step-by-step walkthrough of online privacy, from installation to everyday use in Chrome."
-status: published
+status: merged
+redirect_to: "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension"
 published_at: '2026-02-27T09:00:00.608+00:00'
 scheduled_at: '2026-02-27T09:00:00+00:00'
 author: James Mitchell

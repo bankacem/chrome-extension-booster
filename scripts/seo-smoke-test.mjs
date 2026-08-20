@@ -65,6 +65,14 @@ for (const lang of ["fr", "es"]) {
 
 const sitemap = read("dist/sitemap.xml");
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+const mergedArticles = JSON.parse(read("public/content/merged-articles.json"));
+const redirectMap = new Map((vercel.redirects || []).map((redirect) => [redirect.source, redirect.destination]));
+for (const [source, entry] of Object.entries(mergedArticles)) {
+  const sourcePath = `/blog/${source}`;
+  assert(!urls.includes(`https://extensionto.com${sourcePath}`), `merged source remains in sitemap: ${sourcePath}`);
+  assert(redirectMap.get(sourcePath) === entry.redirect_to, `missing direct redirect for merged source: ${sourcePath}`);
+  assert(!redirectMap.has(entry.redirect_to), `redirect target is itself another redirect: ${entry.redirect_to}`);
+}
 assert(urls.length > 0, "sitemap is empty");
 assert(new Set(urls).size === urls.length, "sitemap contains duplicate URLs");
 for (const url of urls) {

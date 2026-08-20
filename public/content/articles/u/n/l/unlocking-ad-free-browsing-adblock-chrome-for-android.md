@@ -11,7 +11,8 @@ tags: []
 keywords:
   - adblock chrome for android
 meta_description: "A review of adblock chrome for android, covering real-world use, setup steps, and honest limitations."
-status: published
+status: merged
+redirect_to: "/blog/unlocking-the-power-of-adblock-chrome-on-android"
 published_at: '2026-04-27T22:15:00.483+00:00'
 scheduled_at: '2026-04-27T22:15:00+00:00'
 author: James Mitchell

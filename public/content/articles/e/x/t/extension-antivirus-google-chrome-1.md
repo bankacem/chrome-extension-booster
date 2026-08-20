@@ -18,7 +18,8 @@ meta_description: >-
   As the internet continues to evolve, the threat of malware and viruses has
   become a significant concern for users worldwide. With the rise of Google
   Chrome as a
-status: published
+status: merged
+redirect_to: "/blog/why-you-need-an-antivirus-extension-for-chrome"
 published_at: '2026-05-11T02:15:00.319+00:00'
 scheduled_at: '2026-05-11T02:15:00+00:00'
 author: James Mitchell
