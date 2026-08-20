@@ -63,7 +63,12 @@ async function callGeminiAPI(apiKey: string, systemPrompt: string, userPrompt: s
 }
 
 // Extract content from provider response
-function extractContent(data: any, provider: string): string {
+interface ProviderResponse {
+  candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>;
+  choices?: Array<{ message?: { content?: string } }>;
+}
+
+function extractContent(data: ProviderResponse, provider: string): string {
   if (provider === "Gemini") {
     return data.candidates?.[0]?.content?.parts?.[0]?.text || "";
   }

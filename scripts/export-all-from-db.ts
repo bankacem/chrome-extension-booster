@@ -137,7 +137,9 @@ async function main() {
       const arr = idToPaths.get(id) || [];
       arr.push(file);
       idToPaths.set(id, arr);
-    } catch {}
+    } catch (error) {
+      console.warn("Skipping unreadable existing article file:", error);
+    }
   }
 
   let created = 0;
@@ -186,7 +188,9 @@ async function main() {
       try {
         fs.unlinkSync(p);
         removed++;
-      } catch {}
+      } catch (error) {
+        console.warn("Could not remove stale article file:", p, error);
+      }
     }
     if (stale.length) renamed++;
 
@@ -211,7 +215,9 @@ async function main() {
       try {
         fs.unlinkSync(file);
         orphans++;
-      } catch {}
+      } catch (error) {
+        console.warn("Could not remove orphan article file:", file, error);
+      }
     }
   }
 

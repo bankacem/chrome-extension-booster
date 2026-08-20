@@ -12,7 +12,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { getExtensionBySlug, extensions } from "@/lib/extensionsData";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
 interface RelatedArticle {
@@ -23,24 +23,22 @@ interface RelatedArticle {
   published_at: string;
 }
 
+interface RelatedArticleIndex extends RelatedArticle {
+  keywords?: string[];
+}
+
 const ExtensionPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const extension = getExtensionBySlug(slug || "");
   const [relatedArticles, setRelatedArticles] = useState<RelatedArticle[]>([]);
 
-  useEffect(() => {
-    if (extension) {
-      fetchRelatedArticles();
-    }
-  }, [extension]);
-
-  const fetchRelatedArticles = async () => {
+  const fetchRelatedArticles = useCallback(async () => {
     if (!extension) return;
     
     try {
       const response = await fetch("/content/articles-index.json");
       if (response.ok) {
-        const index = await response.json() as any[];
+        const index = await response.json() as RelatedArticleIndex[];
 
         // Filter articles that mention this extension in title or keywords
         const related = index
@@ -56,7 +54,13 @@ const ExtensionPage = () => {
     } catch (error) {
       console.error("Error fetching related articles from index:", error);
     }
-  };
+  }, [extension]);
+
+  useEffect(() => {
+    if (extension) {
+      void fetchRelatedArticles();
+    }
+  }, [extension, fetchRelatedArticles]);
 
   if (!extension) {
     return (

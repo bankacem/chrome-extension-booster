@@ -40,7 +40,7 @@ interface Article {
   views: number;
   related_extension_slug?: string;
   featured_video?: string;
-  schema?: any;
+  schema?: Record<string, unknown>;
 }
 
 const parseMarkdown = (text: string) => {
@@ -230,7 +230,7 @@ const BlogPost = () => {
     } finally {
       setLoading(false);
     }
-  }, [slug]);
+  }, [lang, slug]);
 
   useEffect(() => { if (slug) { fetchArticle(); } }, [slug, fetchArticle]);
 

@@ -10,6 +10,13 @@ const ADBLOCK_PILLAR = '/blog/adblocker-for-android-chrome';
 const RAM_KEYWORDS = ['ram', 'memory', 'tabs', 'suspender', 'speed up chrome'];
 const ADBLOCK_KEYWORDS = ['adblock', 'ad block', 'android chrome adblock', 'ad blocker android'];
 
+interface SeoMetadata {
+  title?: string;
+  slug?: string;
+  canonicalPath?: string;
+  [key: string]: unknown;
+}
+
 function walkDir(dir: string, fileList: string[] = []): string[] {
   if (!fs.existsSync(dir)) return fileList;
   const files = fs.readdirSync(dir);
@@ -75,9 +82,9 @@ async function cleanup() {
 
       if (!match) continue;
 
-      let frontmatterStr = match[1];
+      const frontmatterStr = match[1];
       let content = match[2];
-      const metadata = yaml.load(frontmatterStr) as Record<string, any>;
+      const metadata = yaml.load(frontmatterStr) as SeoMetadata;
       const originalMetadata = JSON.stringify(metadata);
 
       // 2. Fix broken titles in frontmatter

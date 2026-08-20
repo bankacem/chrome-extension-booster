@@ -274,7 +274,16 @@ extension .to\t20\t10\t0\t20\t0`;
             ].map(s => (
               <button
                 key={s.label}
-                onClick={() => setFilterZone(filterZone === s.label.split(" ")[1]?.toLowerCase() as any ? "all" : s.label.includes("Winner") ? "winner" : s.label.includes("Striking") ? "striking" : s.label.includes("Climbing") ? "climbing" : "deep")}
+                onClick={() => {
+                  const targetZone: TrackedKeyword["rankZone"] = s.label.includes("Winner")
+                    ? "winner"
+                    : s.label.includes("Striking")
+                      ? "striking"
+                      : s.label.includes("Climbing")
+                        ? "climbing"
+                        : "deep";
+                  setFilterZone(filterZone === targetZone ? "all" : targetZone);
+                }}
                 className={`rounded-lg border border-border p-4 text-center transition-all hover:scale-[1.02] ${s.bg}`}
               >
                 <p className={`text-3xl font-bold font-[family-name:var(--font-heading)] ${s.color}`}>{s.value}</p>

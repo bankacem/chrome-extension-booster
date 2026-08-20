@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
+import { useCallback } from "react";
 import { motion } from "framer-motion";
 import { 
   ArrowLeft, 
@@ -48,33 +49,24 @@ const SEOAnalyzer = () => {
   const [loading, setLoading] = useState(true);
   const [analyzing, setAnalyzing] = useState(false);
 
-  useEffect(() => {
-    const checkAuth = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) {
-        navigate("/settings");
-        return;
-      }
-
-      const { data: role, error: roleError } = await supabase
-        .from("user_roles")
-        .select("role")
-        .eq("user_id", session.user.id)
-        .single();
-
-      if (roleError || role?.role !== "admin") {
-        await supabase.auth.signOut();
-        navigate("/settings");
-        return;
-      }
-
-      fetchArticle();
-    };
+  const runAnalysis = useCallback((articleData: Article) => {
+    setAnalyzing(true);
     
-    checkAuth();
-  }, [slug, navigate]);
+    // Simulate processing time for visual effect
+    setTimeout(() => {
+      const result = analyzeSEO(
+        articleData.title,
+        articleData.content,
+        articleData.meta_description,
+        articleData.category,
+        articleData.keywords
+      );
+      setAnalysis(result);
+      setAnalyzing(false);
+    }, 500);
+  }, []);
 
-  const fetchArticle = async () => {
+  const fetchArticle = useCallback(async () => {
     if (!slug) return;
     
     setLoading(true);
@@ -97,24 +89,33 @@ const SEOAnalyzer = () => {
     setArticle(data);
     runAnalysis(data);
     setLoading(false);
-  };
+  }, [navigate, runAnalysis, slug, toast]);
 
-  const runAnalysis = (articleData: Article) => {
-    setAnalyzing(true);
+  useEffect(() => {
+    const checkAuth = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        navigate("/settings");
+        return;
+      }
+
+      const { data: role, error: roleError } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", session.user.id)
+        .single();
+
+      if (roleError || role?.role !== "admin") {
+        await supabase.auth.signOut();
+        navigate("/settings");
+        return;
+      }
+
+      void fetchArticle();
+    };
     
-    // Simulate processing time for visual effect
-    setTimeout(() => {
-      const result = analyzeSEO(
-        articleData.title,
-        articleData.content,
-        articleData.meta_description,
-        articleData.category,
-        articleData.keywords
-      );
-      setAnalysis(result);
-      setAnalyzing(false);
-    }, 500);
-  };
+    void checkAuth();
+  }, [fetchArticle, navigate]);
 
   const handleRefresh = () => {
     if (article) {

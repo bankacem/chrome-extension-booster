@@ -5,6 +5,14 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 };
 
+interface SearchAnalyticsRow {
+  keys?: string[];
+  clicks?: number;
+  impressions?: number;
+  position?: number;
+}
+interface SearchAnalyticsResponse { rows?: SearchAnalyticsRow[] }
+
 interface SearchConsoleData {
   position: number;
   ctr: number;
@@ -148,13 +156,13 @@ serve(async (req) => {
         );
 
         if (response.ok) {
-          const data = await response.json();
-          const rows = data.rows || [];
+          const data = await response.json() as SearchAnalyticsResponse;
+          const rows = data.rows ?? [];
 
-          const totalClicks = rows.reduce((sum: number, row: any) => sum + row.clicks, 0);
-          const totalImpressions = rows.reduce((sum: number, row: any) => sum + row.impressions, 0);
+          const totalClicks = rows.reduce((sum, row) => sum + (row.clicks ?? 0), 0);
+          const totalImpressions = rows.reduce((sum, row) => sum + (row.impressions ?? 0), 0);
           const avgPosition = rows.length > 0
-            ? rows.reduce((sum: number, row: any) => sum + row.position, 0) / rows.length
+            ? rows.reduce((sum, row) => sum + (row.position ?? 0), 0) / rows.length
             : 0;
           const avgCtr = totalImpressions > 0 ? (totalClicks / totalImpressions) * 100 : 0;
 
@@ -163,11 +171,11 @@ serve(async (req) => {
             ctr: Math.round(avgCtr * 100) / 100,
             clicks: totalClicks,
             impressions: totalImpressions,
-            topQueries: rows.slice(0, 10).map((row: any) => ({
-              query: row.keys[0],
-              clicks: row.clicks,
-              impressions: row.impressions,
-              position: Math.round(row.position * 10) / 10,
+            topQueries: rows.slice(0, 10).map((row) => ({
+              query: row.keys?.[0] ?? "",
+              clicks: row.clicks ?? 0,
+              impressions: row.impressions ?? 0,
+              position: Math.round((row.position ?? 0) * 10) / 10,
             })),
           };
 

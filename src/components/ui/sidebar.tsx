@@ -609,6 +609,7 @@ const SidebarMenuSubButton = React.forwardRef<
 });
 SidebarMenuSubButton.displayName = "SidebarMenuSubButton";
 
+// shadcn/ui compatibility: the sidebar state hook intentionally ships with sidebar primitives.
 export {
   Sidebar,
   SidebarContent,
@@ -633,5 +634,6 @@ export {
   SidebarRail,
   SidebarSeparator,
   SidebarTrigger,
+  // eslint-disable-next-line react-refresh/only-export-components
   useSidebar,
 };

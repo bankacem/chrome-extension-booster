@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
@@ -45,6 +45,7 @@ import BulkUpdateDialog from "@/components/admin/BulkUpdateDialog";
 import ArticleCategorizer from "@/components/admin/ArticleCategorizer";
 import FeaturedImageGenerator from "@/components/admin/FeaturedImageGenerator";
 import { processArticleWithLinks } from "@/lib/internalLinking";
+import { getErrorMessage } from "@/lib/errorMessage";
 
 interface Article {
   id: string;
@@ -91,6 +92,9 @@ interface ImportedPost {
 interface ImportData {
   posts?: ImportedPost[];
 }
+
+type RawImportedPost = Partial<ImportedPost> & Record<string, unknown>;
+type AccountUpdate = { email?: string; password?: string };
 
 interface BackupData {
   version: string;
@@ -161,42 +165,6 @@ const Admin = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  useEffect(() => {
-    // Check Supabase auth session
-    const checkAuth = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) {
-        navigate("/settings");
-        return;
-      }
-
-      // Verify admin role
-      const { data: role, error: roleError } = await supabase
-        .from("user_roles")
-        .select("role")
-        .eq("user_id", session.user.id)
-        .single();
-
-      if (roleError || role?.role !== "admin") {
-        await supabase.auth.signOut();
-        navigate("/settings");
-        return;
-      }
-
-      fetchArticles();
-    };
-    checkAuth();
-
-    // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      if (event === "SIGNED_OUT" || !session) {
-        navigate("/settings");
-      }
-    });
-
-    return () => subscription.unsubscribe();
-  }, [navigate]);
-
   const handleLogout = async () => {
     await supabase.auth.signOut();
     toast({
@@ -206,7 +174,7 @@ const Admin = () => {
     navigate("/settings");
   };
 
-  const fetchArticles = async () => {
+  const fetchArticles = useCallback(async () => {
     try {
       const { data, error } = await supabase
         .from("articles")
@@ -225,7 +193,40 @@ const Admin = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [toast]);
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        navigate("/settings");
+        return;
+      }
+
+      const { data: role, error: roleError } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", session.user.id)
+        .single();
+
+      if (roleError || role?.role !== "admin") {
+        await supabase.auth.signOut();
+        navigate("/settings");
+        return;
+      }
+
+      void fetchArticles();
+    };
+    void checkAuth();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === "SIGNED_OUT" || !session) {
+        navigate("/settings");
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, [fetchArticles, navigate]);
 
   const generateSlug = (title: string) => {
     const base = (title ?? "")
@@ -298,7 +299,7 @@ const Admin = () => {
     return t || h || "Untitled";
   };
 
-  const normalizeImportedPost = (raw: any): ImportedPost => {
+  const normalizeImportedPost = (raw: RawImportedPost): ImportedPost => {
     const rawContent = typeof raw?.content === "string" ? raw.content : "";
 
     let htmlTitle: string | null = null;
@@ -384,11 +385,11 @@ const Admin = () => {
       setTagsInput("");
       setKeywordsInput("");
       fetchArticles();
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error saving article:", error);
       toast({
         title: "Error",
-        description: error.message || "Failed to save article",
+        description: getErrorMessage(error, "Failed to save article"),
         variant: "destructive",
       });
     }
@@ -416,11 +417,11 @@ const Admin = () => {
       toast({ title: "Success", description: "Article deleted successfully" });
       setArticleToDelete(null);
       fetchArticles();
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error deleting article:", error);
       toast({
         title: "Error",
-        description: error?.message || "Failed to delete article. Check console for details.",
+        description: getErrorMessage(error, "Failed to delete article. Check console for details."),
         variant: "destructive",
       });
     } finally {
@@ -517,11 +518,11 @@ const Admin = () => {
         description: `Successfully restored ${articlesToRestore.length} articles` 
       });
       fetchArticles();
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error restoring backup:", error);
       toast({
         title: "Restore Failed",
-        description: error.message || "Failed to restore backup. Check file format.",
+        description: getErrorMessage(error, "Failed to restore backup. Check file format."),
         variant: "destructive",
       });
     }
@@ -563,11 +564,11 @@ const Admin = () => {
         description: `Imported ${importedCount} new articles (${articlesToImport.length - importedCount} duplicates skipped)` 
       });
       fetchArticles();
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error importing articles:", error);
       toast({
         title: "Import Failed",
-        description: error.message || "Failed to import articles. Check file format.",
+        description: getErrorMessage(error, "Failed to import articles. Check file format."),
         variant: "destructive",
       });
     }
@@ -608,11 +609,11 @@ const Admin = () => {
         title: "File Loaded",
         description: `Found ${normalized.length} articles ready for import`,
       });
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error parsing JSON:", error);
       toast({
         title: "Import Failed",
-        description: error.message || "Failed to parse JSON file",
+        description: getErrorMessage(error, "Failed to parse JSON file"),
         variant: "destructive",
       });
     }
@@ -755,11 +756,11 @@ const Admin = () => {
       setImportedPosts([]);
       setSelectedPosts(new Set());
       fetchArticles();
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error during bulk import:", error);
       toast({
         title: "Import Error",
-        description: error.message || "An error occurred during import",
+        description: getErrorMessage(error, "An error occurred during import"),
         variant: "destructive",
       });
     } finally {
@@ -850,7 +851,7 @@ Disallow: /admin/*`;
 
     setUpdatingAccount(true);
     try {
-      const updateData: any = {};
+      const updateData: AccountUpdate = {};
       if (newEmail) updateData.email = newEmail;
       if (newPassword) updateData.password = newPassword;
 
@@ -872,11 +873,11 @@ Disallow: /admin/*`;
       if (newEmail) {
         await handleLogout();
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error updating account:", error);
       toast({
         title: "Error",
-        description: error.message || "Failed to update account credentials",
+        description: getErrorMessage(error, "Failed to update account credentials"),
         variant: "destructive",
       });
     } finally {
@@ -1300,10 +1301,10 @@ Disallow: /admin/*`;
                           description: `Updated ${updatedCount} articles with internal links`,
                         });
                         fetchArticles();
-                      } catch (error: any) {
+                      } catch (error: unknown) {
                         toast({
                           title: "Error",
-                          description: error.message || "Failed to apply internal links",
+                          description: getErrorMessage(error, "Failed to apply internal links"),
                           variant: "destructive",
                         });
                       } finally {
@@ -2204,7 +2205,7 @@ Disallow: /admin/*`;
               <div className="grid gap-4 md:grid-cols-3">
                 <div className="space-y-2">
                   <Label>Status for All Articles</Label>
-                  <Select value={bulkStatus} onValueChange={(v) => setBulkStatus(v as any)}>
+                  <Select value={bulkStatus} onValueChange={(v) => setBulkStatus(v as "draft" | "published" | "scheduled")}>
                     <SelectTrigger>
                       <SelectValue />
                     </SelectTrigger>

@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/select";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { getErrorMessage } from "@/lib/errorMessage";
 
 interface Article {
   id: string;
@@ -39,6 +40,9 @@ interface BulkUpdateDialogProps {
 }
 
 type UpdateField = "status" | "category" | "author";
+type FilterStatus = "all" | "draft" | "published" | "scheduled";
+type NewStatus = "draft" | "published";
+type ArticleUpdate = { status?: NewStatus; published_at?: string | null; scheduled_at?: string | null; category?: string; author?: string };
 
 const BulkUpdateDialog = ({
   open,
@@ -49,11 +53,11 @@ const BulkUpdateDialog = ({
   const { toast } = useToast();
   
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
-  const [filterStatus, setFilterStatus] = useState<"all" | "draft" | "published" | "scheduled">("all");
+  const [filterStatus, setFilterStatus] = useState<FilterStatus>("all");
   
   // Update settings
   const [updateField, setUpdateField] = useState<UpdateField>("status");
-  const [newStatus, setNewStatus] = useState<"draft" | "published">("draft");
+  const [newStatus, setNewStatus] = useState<NewStatus>("draft");
   const [newCategory, setNewCategory] = useState("");
   const [newAuthor, setNewAuthor] = useState("");
   
@@ -98,7 +102,7 @@ const BulkUpdateDialog = ({
       return;
     }
 
-    const updateData: Record<string, any> = {};
+    const updateData: ArticleUpdate = {};
     
     if (updateField === "status") {
       updateData.status = newStatus;
@@ -160,10 +164,10 @@ const BulkUpdateDialog = ({
           variant: "destructive",
         });
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       toast({
         title: "Error",
-        description: error.message || "An error occurred",
+        description: getErrorMessage(error),
         variant: "destructive",
       });
     } finally {
@@ -189,7 +193,7 @@ const BulkUpdateDialog = ({
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h3 className="font-semibold">Select Articles</h3>
-              <Select value={filterStatus} onValueChange={(v) => setFilterStatus(v as any)}>
+              <Select value={filterStatus} onValueChange={(v) => setFilterStatus(v as FilterStatus)}>
                 <SelectTrigger className="w-32">
                   <SelectValue />
                 </SelectTrigger>
@@ -275,7 +279,7 @@ const BulkUpdateDialog = ({
               {updateField === "status" && (
                 <div className="space-y-2">
                   <Label>New Status</Label>
-                  <Select value={newStatus} onValueChange={(v) => setNewStatus(v as any)}>
+                  <Select value={newStatus} onValueChange={(v) => setNewStatus(v as NewStatus)}>
                     <SelectTrigger>
                       <SelectValue />
                     </SelectTrigger>

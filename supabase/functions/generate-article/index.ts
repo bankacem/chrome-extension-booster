@@ -173,11 +173,16 @@ function addExtensionLinks(content: string, keyword: string, autoLinkExtension: 
 }
 
 // Provider-specific API configurations
+interface ProviderResponse {
+  choices?: Array<{ message?: { content?: string } }>;
+  candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>;
+}
+
 interface ProviderConfig {
   url: string;
   getHeaders: (apiKey: string) => Record<string, string>;
   getBody: (model: string, messages: { role: string; content: string }[]) => object;
-  extractContent: (data: any) => string;
+  extractContent: (data: ProviderResponse) => string;
 }
 
 const providerConfigs: Record<string, ProviderConfig> = {
