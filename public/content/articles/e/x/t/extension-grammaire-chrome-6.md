@@ -5,11 +5,11 @@ title: 'Unlocking Error-Free Writing: The Power of Extension Grammaire Chrome'
 slug: extension-grammaire-chrome-6
 excerpt: "As a writer, student, or professional, ensuring the accuracy and clarity of your written communication is paramount."
 featured_image: /content/images/extension-grammaire-chrome-6/featured.webp
-category: "Performance & Memory"
+category: "Productivity & Tools"
 tags: []
 keywords:
   - extension grammaire chrome
-meta_description: "As a writer, student, or professional, ensuring the accuracy and clarity of your written communication is paramount."
+meta_description: "As a writer, student, or professional, clear and accurate writing matters. Here's how a grammar-checking extension for Chrome catches errors as you type."
 status: published
 published_at: '2026-02-05T02:11:01.369+00:00'
 scheduled_at: '2026-02-05T02:11:00+00:00'

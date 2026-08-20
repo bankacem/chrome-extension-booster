@@ -9,7 +9,7 @@ category: "Security & Privacy"
 tags: []
 keywords:
   - extension chrome ghostery
-meta_description: "A practical breakdown of online privacy: how it works, how to set it up, and where it falls short."
+meta_description: "Curious who's tracking your online activity and why? Here's how the Ghostery extension for Chrome blocks trackers and shows you exactly what it stops."
 status: published
 published_at: '2026-02-08T14:11:01+00:00'
 scheduled_at: '2026-02-08T14:11:00+00:00'

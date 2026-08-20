@@ -9,7 +9,7 @@ category: "Ad Blockers"
 tags: []
 keywords:
   - extension adblock telephone
-meta_description: "A closer look at adblock telephone extension, focused on what it actually does rather than marketing claims."
+meta_description: "Tired of ads disrupting your browsing on your phone? Here's how an adblock extension for mobile Chrome works, and which options are worth installing."
 status: published
 published_at: '2026-05-11T14:15:00.38+00:00'
 scheduled_at: '2026-05-11T14:15:00+00:00'

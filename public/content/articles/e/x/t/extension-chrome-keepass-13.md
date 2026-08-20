@@ -9,7 +9,7 @@ category: "Security & Privacy"
 tags: []
 keywords:
   - extension chrome keepass
-meta_description: "A hands-on look at secure browsing, covering setup, real features, and what to expect before installing it."
+meta_description: "Want to use your KeePass password vault directly in Chrome? Here's how the KeePass extension autofills logins securely without leaving your browser."
 status: published
 published_at: '2026-02-07T20:11:00.421+00:00'
 scheduled_at: '2026-02-07T20:11:00+00:00'

@@ -9,7 +9,7 @@ category: "Security & Privacy"
 tags: []
 keywords:
   - enpass extension chrome
-meta_description: "A practical breakdown of password security: how it works, how to set it up, and where it falls short."
+meta_description: "Tired of using weak passwords or struggling to remember multiple complex ones? Here's a comprehensive guide to the Enpass extension for Chrome."
 status: published
 published_at: '2026-05-15T06:15:00.364+00:00'
 scheduled_at: '2026-05-15T06:15:00+00:00'
