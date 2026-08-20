@@ -60,6 +60,13 @@ log and know exactly where things stand without re-reading the whole repo.
 
 ## Session Log
 
+### 2026-08-20 — Manus session
+- Re-pulled `main` and confirmed no existing branch claimed `ai-cover-letter-writer-chrome-extension`.
+- Analyzed the article and official competitor sources; found the local article truncated at 446 body words with unsupported product claims and no keywords/internal links.
+- Ran the existing Refiner Agent on a dedicated branch using a sandbox-only model connection, then performed a manual editorial rewrite to remove unsupported pricing, user-count, rating, and ATS-score claims, complete the article, add source-based metadata, privacy guidance, FAQ, and two relevant internal links.
+- Local checks passed: lint, build, SEO smoke test (775 URLs), and internal-link smoke test (8,067 links, 0 redirect links, 6 documented exceptions).
+- Current branch contains the article revision plus the required refinement tracking entries; no merge has been performed yet.
+
 ### 2026-08-15 — Claude session (this one)
 - Adopted this protocol: merged PR #244 (`AGENT_HANDOFF.md` itself).
   Confirmed PR #243 (redundant audit script, flagged in the entry below)
