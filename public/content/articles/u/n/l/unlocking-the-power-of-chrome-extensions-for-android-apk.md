@@ -68,7 +68,7 @@ description: "Are you an Android user looking to enhance your browsing experienc
     <li>Tap the three vertical dots in the top right corner and select "Settings"</li>
     <li>Scroll down and select "Extensions"</li>
     <li>Toggle the switch to enable extensions</li>
-    <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the extension you want to install</li>
+    <li>Visit the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the extension you want to install</li>
     <li>Tap the "Add to Chrome" button to install the extension</li>
 </ol>
 

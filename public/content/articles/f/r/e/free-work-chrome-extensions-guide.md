@@ -200,7 +200,7 @@ updated_at: '2026-04-23T12:29:16.924945+00:00'
 <p><!-- /wp:paragraph --> <!-- wp:heading --></p>
 <h2 id="sales-email" class="wp-block-heading">5. Email Mastery &amp; Sales Intelligence</h2>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Inbox Zero might be a myth, but Inbox Control is attainable. For sales <a href="/blog/unlock-the-power-of-chrome-discover-the-best-chrome-extension-for-marketing-professionals-mmdt10wp8cu" class="internal-link" title="Unlock the Power of Chrome: Discover the Best Chrome Extension for Marketing Professionals">professionals</a> and marketers, the browser is a research vessel.</p>
+<p>Inbox Zero might be a myth, but Inbox Control is attainable. For sales <a href="/blog/a-chrome-extension-marketers-will-actually-use" class="internal-link" title="Unlock the Power of Chrome: Discover the Best Chrome Extension for Marketing Professionals">professionals</a> and marketers, the browser is a research vessel.</p>
 <p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
 <h3 id="hunter" class="wp-block-heading">Hunter - Email Finder Extension</h3>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>
@@ -222,7 +222,7 @@ updated_at: '2026-04-23T12:29:16.924945+00:00'
 <p><!-- /wp:paragraph --> <!-- wp:heading --></p>
 <h2 id="design-dev" class="wp-block-heading">6. Design &amp; Developer Utilities</h2>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Even if you aren't a coder, <a href="/blog/cors-chrome-7" class="internal-link" title="Understanding CORS Chrome: A Comprehensive Guide to Web Development">understanding</a> the makeup of a webpage is a superpower. These tools peel back the curtain of the internet.</p>
+<p>Even if you aren't a coder, <a href="/blog" class="internal-link" title="Understanding CORS Chrome: A Comprehensive Guide to Web Development">understanding</a> the makeup of a webpage is a superpower. These tools peel back the curtain of the internet.</p>
 <p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
 <h3 id="colorzilla" class="wp-block-heading">ColorZilla</h3>
 <p><!-- /wp:heading --> <!-- wp:paragraph --></p>

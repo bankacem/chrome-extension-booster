@@ -83,7 +83,7 @@ description: "When it comes to enhancing your browsing experience, web Chrome st
 
 <blockquote>When choosing <strong>web Chrome store apps</strong>, consider your needs and goals. Think about what you want to achieve with the app, and look for apps that offer the features and functionality you need.</blockquote>
 
-<p>For more information on choosing the right Chrome extensions, check out our article on <a href="/blog/the-ultimate-chrome-extensions-reviews-guide-how-to-find-the-best-browser-tools" class="text-primary font-medium hover:underline">The Ultimate Chrome Extension Reviews Guide</a>.</p>
+<p>For more information on choosing the right Chrome extensions, check out our article on <a href="/blog/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools" class="text-primary font-medium hover:underline">The Ultimate Chrome Extension Reviews Guide</a>.</p>
 
 <h2>Conclusion</h2>
 

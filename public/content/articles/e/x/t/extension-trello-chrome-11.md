@@ -60,7 +60,7 @@ description: Are you looking to boost your productivity and streamline your work
     <li><strong>Board and List Management</strong>: The ability to create, edit, and manage Trello boards and lists directly from your browser.</li>
     <li><strong>Task Automation</strong>: Features that allow for the automation of repetitive tasks, saving you time and effort.</li>
     <li><strong>Collaboration Tools</strong>: Integration with other collaboration tools to enhance team work and <a href="/blog/google-trad-plugin-15" class="internal-link" title="Unlocking Global Communication: The Power of Google Trad Plugin">communication</a>.</li>
-    <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> Options</strong>: The ability to customize the look and feel of your Trello boards to suit your preferences.</li>
+    <li><strong><a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> Options</strong>: The ability to customize the look and feel of your Trello boards to suit your preferences.</li>
 </ul>
 
 <h3>Enhancing Security with Extension Trello Chrome</h3>
@@ -100,7 +100,7 @@ description: Are you looking to boost your productivity and streamline your work
 <p>A: Extension Trello Chrome refers to <a href="/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments" class="internal-link" title="The Elite Stack: Essential Chrome Extensions for Work Pro Environments">browser extensions</a> designed to enhance and integrate Trello with the Google Chrome browser, offering additional features and functionalities to the basic Trello application.</p>
 
 <p><strong>Q: How do I install an extension Trello Chrome?</strong></p>
-<p>A: To install an <strong>extension Trello Chrome</strong>, simply visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the desired extension, and click the "Add to Chrome" button. Follow the prompts to complete the installation.</p>
+<p>A: To install an <strong>extension Trello Chrome</strong>, simply visit the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>, search for the desired extension, and click the "Add to Chrome" button. Follow the prompts to complete the installation.</p>
 
 <p><strong>Q: Are extension Trello Chrome options free?</strong></p>
 <p>A: Many <strong>extension Trello Chrome</strong> options are free, offering basic features to enhance your Trello experience. However, some extensions may offer premium features or subscriptions for additional functionalities.</p>

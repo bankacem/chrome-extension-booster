@@ -67,7 +67,7 @@ description: "Are you tired of using search engines that track your every move a
   <li><strong>Enhanced Privacy</strong>: By using <strong>extension chrome presearch</strong>, you can keep your online activities private and secure, protecting yourself from data breaches and cyber attacks.</li>
   <li><strong>Improved Search Results</strong>: The extension's decentralized network provides more accurate and relevant search results, giving you a better browsing experience.</li>
   <li><strong>Increased Security</strong>: <strong>extension chrome presearch</strong> uses advanced encryption to protect your searches and data, ensuring that your online presence remains secure.</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> Options</strong>: You can tailor your search experience to suit your needs, making it easier to find what you're looking for.</li>
+  <li><strong><a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> Options</strong>: You can tailor your search experience to suit your needs, making it easier to find what you're looking for.</li>
 </ol>
 
 <h3>Comparison to Traditional Search Engines</h3>
@@ -111,7 +111,7 @@ description: "Are you tired of using search engines that track your every move a
 <p>Ready to take the leap and start using <strong>extension chrome presearch</strong>? Here's how to get started:</p>
 
 <ol>
-  <li><strong>Install the Extension</strong>: Head to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and install the <strong>extension chrome presearch</strong> extension.</li>
+  <li><strong>Install the Extension</strong>: Head to the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and install the <strong>extension chrome presearch</strong> extension.</li>
   <li><strong>Configure Your Settings</strong>: Adjust your search settings to suit your needs, including search filters and result sorting.</li>
   <li><strong>Start Searching</strong>: Begin searching the internet privately and securely, using the power of <strong>extension chrome presearch</strong>.</li>
 </ol>

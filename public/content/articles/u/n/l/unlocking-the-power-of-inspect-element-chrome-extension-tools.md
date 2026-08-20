@@ -66,7 +66,7 @@ description: "As a web developer or a curious internet user, you've likely encou
 <ul>
   <li>Advanced debugging tools</li>
   <li>Code editing and testing features</li>
-  <li>Performance <a href="/blog/seo-meta-in-1-click-review-streamlining-your-optimization-process-mmtm0gc2hpd" class="internal-link" title="SEO Meta in 1 Click Review: Streamlining Your Optimization Process">optimization</a> tools</li>
+  <li>Performance <a href="/blog/seo-meta-in-1-click-review-streamlining-your-optimization-process" class="internal-link" title="SEO Meta in 1 Click Review: Streamlining Your Optimization Process">optimization</a> tools</li>
   <li>Security testing and analysis features</li>
   <li>Collaboration and project management tools</li>
 </ul>
@@ -111,7 +111,7 @@ description: "As a web developer or a curious internet user, you've likely encou
 <p>Using <strong>inspect element Chrome extension tools</strong> is relatively straightforward. Here are the general steps:</p>
 
 <ol>
-  <li>Install the Chrome extension from the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
+  <li>Install the Chrome extension from the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a>.</li>
   <li>Launch the extension by clicking on the icon in the toolbar.</li>
   <li>Follow the prompts to configure the extension and set up your preferences.</li>
   <li>Use the extension to debug, test, and optimize your websites.</li>

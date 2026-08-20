@@ -155,7 +155,7 @@ description: "As a website owner or digital marketer, ensuring your online prese
     <p>Siteimprove Chrome offers a free trial, but it requires a subscription for ongoing use.</p>
   </li>
   <li><strong>Can I use Siteimprove Chrome with other website optimization tools?</strong>
-    <p>Yes, Siteimprove Chrome can be used in conjunction with other website optimization tools, such as <a href="/blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025" class="text-primary font-medium hover:underline">Chrome extensions</a> and web apps, to enhance your website optimization efforts.</p>
+    <p>Yes, Siteimprove Chrome can be used in conjunction with other website optimization tools, such as <a href="/blog/chrome-extensions-vs-web-apps-comparison" class="text-primary font-medium hover:underline">Chrome extensions</a> and web apps, to enhance your website optimization efforts.</p>
   </li>
 </ol>
 

@@ -51,7 +51,7 @@ description: "Are you tired of annoying ads disrupting your browsing experience 
 
 <ul>
   <li>Reduce data consumption and save battery life by blocking ads and trackers</li>
-  <li>Improve page loading speeds and overall browsing <a href="/blog/save-pc-resources-with-chrome-tab-suspension-boosting-browser-performance-and-efficiency-mll9bth0gxm" class="internal-link" title="Save PC Resources with Chrome Tab Suspension: Boosting Browser Performance and Efficiency">performance</a></li>
+  <li>Improve page loading speeds and overall browsing <a href="/blog/save-pc-resources-with-chrome-tab-suspension" class="internal-link" title="Save PC Resources with Chrome Tab Suspension: Boosting Browser Performance and Efficiency">performance</a></li>
   <li>Enhance online security by blocking malicious ads and malware</li>
   <li>Protect your privacy by blocking third-party trackers and cookies</li>
 </ul>

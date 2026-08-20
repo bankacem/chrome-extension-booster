@@ -62,7 +62,7 @@ description: "Are you tired of being limited by language barriers while browsing
 <h2 id="how-to-install-google-translate-extension">How to Install the Google Translate Extension to Chrome</h2>
 <p>Installing the <strong>Google Translate extension to Chrome</strong> is a breeze. Simply follow these steps:</p>
 <ol>
-  <li>Open the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for "Google Translate"</li>
+  <li>Open the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for "Google Translate"</li>
   <li>Click the "Add to Chrome" button</li>
   <li>Confirm the installation by clicking "Add extension"</li>
 </ol>

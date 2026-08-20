@@ -66,7 +66,7 @@ description: "Are you looking to take your website analytics to the next level? 
 <h2 id="how-to-install-the-extension-chrome-google-tag-manager">How to Install the Extension Chrome Google Tag Manager</h2>
 <p>Installing the <strong>extension chrome google tag manager</strong> is a straightforward process. Simply follow these steps:</p>
 <ol>
-  <li>Go to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for "Google Tag Manager".
+  <li>Go to the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for "Google Tag Manager".
 
   <li>Click the "Add to Chrome" button to install the extension.
 
@@ -118,7 +118,7 @@ description: "Are you looking to take your website analytics to the next level? 
 
   <li>Take advantage of the trigger and variable options to customize your tags and track specific events and behaviors.
 
-  <li>Use the extension in conjunction with other tools, such as the <a href="/extension/formula-builder-pro" class="text-primary font-medium hover:underline">Formula Builder Pro</a> and the <a href="/extension/securakey-pro" class="text-primary font-medium hover:underline">SecuraKey Pro</a>, to streamline your workflow and improve your <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">productivity</a>.
+  <li>Use the extension in conjunction with other tools, such as the <a href="/extension/formula-builder-pro" class="text-primary font-medium hover:underline">Formula Builder Pro</a> and the <a href="/extension/securakey-pro" class="text-primary font-medium hover:underline">SecuraKey Pro</a>, to streamline your workflow and improve your <a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">productivity</a>.
 </ul>
 
 <h2 id="faq">Frequently Asked Questions</h2>

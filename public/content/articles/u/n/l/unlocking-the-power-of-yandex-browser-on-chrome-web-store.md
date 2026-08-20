@@ -82,7 +82,7 @@ description: "Are you looking for a reliable and feature-rich browser that can e
   <li><strong>Advanced Security</strong>: <strong>Yandex Browser</strong> includes robust security features, including anti-virus protection and phishing detection, to protect your online identity</li>
   <li><strong>Intuitive Interface</strong>: The browser's user-friendly interface makes it easy to navigate and find what you need, even for novice users</li>
   <li><strong>Lightning-Fast Performance</strong>: <strong>Yandex Browser</strong> delivers fast page loading and smooth performance, even on demanding websites</li>
-  <li><strong><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> Options</strong>: Personalize your browsing experience with a range of customization options, including themes, extensions, and settings</li>
+  <li><strong><a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> Options</strong>: Personalize your browsing experience with a range of customization options, including themes, extensions, and settings</li>
 </ul>
 
 <h2>Benefits of Using Yandex Browser on Chrome Web Store</h2>
@@ -92,7 +92,7 @@ description: "Are you looking for a reliable and feature-rich browser that can e
 <ol>
   <li><strong>Enhanced Security</strong>: <strong>Yandex Browser</strong> provides an additional layer of security, protecting your online identity and sensitive information</li>
   <li><strong>Improved Performance</strong>: The browser's lightning-fast performance and smooth interface make it ideal for demanding tasks and applications</li>
-  <li><strong>Increased <a href="/blog/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm" class="internal-link" title="Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency">Productivity</a></strong>: With <strong>Yandex Browser</strong>, you can streamline your workflow and stay focused on your tasks, thanks to its intuitive interface and customization options</li>
+  <li><strong>Increased <a href="/blog/a-chrome-extension-built-for-programmers" class="internal-link" title="Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency">Productivity</a></strong>: With <strong>Yandex Browser</strong>, you can streamline your workflow and stay focused on your tasks, thanks to its intuitive interface and customization options</li>
   <li><strong>Seamless Integration</strong>: The browser integrates seamlessly with other Chrome extensions, including our <a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a> and <a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a> extensions</li>
 </ol>
 

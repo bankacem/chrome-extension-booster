@@ -85,13 +85,13 @@ description: "With the ever-increasing threat of cyber attacks, online safety ha
 <h2 id="how-to-install-and-use-online-safety-extensions">How to Install and Use Online Safety Extensions</h2>
 <p>Installing and using online safety extensions is relatively straightforward. Here's a step-by-step guide:</p>
 <ol>
-  <li>Visit the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the extension you want to install.</li>
+  <li>Visit the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> and search for the extension you want to install.</li>
   <li>Click the "Add to Chrome" button to install the extension.</li>
   <li>Follow the prompts to configure the extension and set up any necessary features.</li>
   <li>Test the extension to ensure it's working correctly and providing the desired level of protection.</li>
 </ol>
 
-<h2><a href="/blog/ublock-origin-vs-ghostery-for-chrome-android-a-comprehensive-comparison-mmb7lsoyr8n" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comparison</a> Table</h2>
+<h2><a href="/blog/ublock-origin-vs-ghostery-for-chrome-android" class="internal-link" title="uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison">Comparison</a> Table</h2>
 <table class="table-auto w-full text-left">
   <thead>
     <tr>

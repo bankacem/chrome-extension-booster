@@ -63,7 +63,7 @@ description: "When it comes to customizing your Google Chrome browser, one of th
 
 <p>Chrome extensions are small software programs that can be installed in the Google Chrome browser to add new features, functionality, and improvements to the browsing experience. They can range from simple tools like <a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a>, which helps protect against malicious redirects, to complex applications like <a href="/extension/formula-builder-pro" class="text-primary font-medium hover:underline">Formula Builder Pro</a>, which allows you to build and calculate complex formulas directly in your browser.</p>
 
-<p>With Chrome extensions, you can customize your browser to fit your specific needs, whether you're a student looking for tools to enhance your <a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">productivity</a>, a developer seeking to improve your workflow, or simply a user wanting to make your browsing experience more enjoyable.</p>
+<p>With Chrome extensions, you can customize your browser to fit your specific needs, whether you're a student looking for tools to enhance your <a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">productivity</a>, a developer seeking to improve your workflow, or simply a user wanting to make your browsing experience more enjoyable.</p>
 
 <h2 id="how-to-find-chrome-extensions">How to Find Chrome Extensions</h2>
 

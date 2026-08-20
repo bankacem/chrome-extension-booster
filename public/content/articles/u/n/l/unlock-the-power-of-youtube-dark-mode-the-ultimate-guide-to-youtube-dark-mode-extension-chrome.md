@@ -96,13 +96,13 @@ description: "Are you tired of the bright and overwhelming YouTube interface? Do
 
 <p>With these benefits, it's no wonder why YouTube dark mode extension Chrome is becoming increasingly popular among YouTube users.</p>
 
-<h2>Other <a href="/blog/effortless-image-downloading-a-comprehensive-guide-to-bulk-image-downloader-chrome-extensions-mmtvrglq5x1" class="internal-link" title="Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader Chrome Extensions">Extensions</a> to Enhance Your YouTube Experience</h2>
+<h2>Other <a href="/blog/effortless-image-downloading-bulk-image-downloader-chrome-extensions" class="internal-link" title="Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader Chrome Extensions">Extensions</a> to Enhance Your YouTube Experience</h2>
 
 <p>In addition to our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension, there are other extensions that can enhance your YouTube experience. Some of these extensions include:</p>
 
 <ul>
   <li><a href="/extension/quick-screenshot-lite" class="text-primary font-medium hover:underline">Quick Screenshot Lite</a> for capturing screenshots of your favorite YouTube videos</li>
-  <li><a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a> for <a href="/blog/safe-video-downloader-for-chrome-protecting-your-device-from-malware-and-viruses-mmtvrfrtd6s" class="internal-link" title="Safe Video Downloader for Chrome: Protecting Your Device from Malware and Viruses">protecting</a> yourself from malicious redirects on YouTube</li>
+  <li><a href="/extension/redirect-shield" class="text-primary font-medium hover:underline">Redirect Shield</a> for <a href="/blog/safe-video-downloader-for-chrome" class="internal-link" title="Safe Video Downloader for Chrome: Protecting Your Device from Malware and Viruses">protecting</a> yourself from malicious redirects on YouTube</li>
   <li><a href="/extension/protab-suspender" class="text-primary font-medium hover:underline">ProTab Suspender</a> for suspending inactive tabs and reducing memory usage on your browser</li>
   <li><a href="/extension/light-popup-blocker" class="text-primary font-medium hover:underline">Light Popup Blocker</a> for blocking annoying popups and ads on YouTube</li>
 </ul>
@@ -189,7 +189,7 @@ description: "Are you tired of the bright and overwhelming YouTube interface? Do
   </li>
   <li>Q: How do I install a YouTube dark mode extension?
     <ul>
-      <li>A: To install a YouTube dark mode extension, follow these steps: go to the <a href="/blog/chrome-web-store-2" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome web store</a>, search for the extension, click on the "Add to Chrome" button, and follow the prompts to install the extension.</li>
+      <li>A: To install a YouTube dark mode extension, follow these steps: go to the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome web store</a>, search for the extension, click on the "Add to Chrome" button, and follow the prompts to install the extension.</li>
     </ul>
   </li>
   <li>Q: Can I customize the settings of a YouTube dark mode extension?

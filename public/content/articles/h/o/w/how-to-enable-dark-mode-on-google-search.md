@@ -115,7 +115,7 @@ description: "Are you tired of the traditional bright white background of Google
       <td>No</td>
     </tr>
     <tr>
-      <td><a href="/blog/google-chrome-programmé-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> Options</td>
+      <td><a href="/blog/google-chrome-programm-en-14" class="internal-link" title="Mastering Google Chrome Programmé en: Unlocking the Power of Customization and Productivity">Customization</a> Options</td>
       <td>Limited</td>
       <td>Limited</td>
       <td>Limited</td>
@@ -123,7 +123,7 @@ description: "Are you tired of the traditional bright white background of Google
   </tbody>
 </table>
 
-<p>In conclusion, enabling Dark Mode on Google Search is a simple process that can enhance your browsing experience. By following the steps outlined in this article, you can easily <strong>enable Dark Mode on Google Search</strong> and take advantage of the benefits it offers. Additionally, you can use Chrome extensions like our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension to automate the process and enhance your overall browsing experience. For more information on Chrome extensions and how to use them to improve your <a href="/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser-mll9bto578a" class="internal-link" title="Unlocking Efficiency: The Best Productivity Tools for Chrome Browser">productivity</a>, check out our articles on <a href="/blog/how-to-fix-chrome-high-memory-usage-on-windows-11" class="internal-link" title="How to Fix Chrome High Memory Usage on Windows 11: A Complete Guide to a Faster Browser">how to fix Chrome high memory usage on Windows 11</a> and <a href="/blog/chrome-extensions-vs-web-apps-the-ultimate-comparison-for-productivity-in-2025">Chrome extensions vs. web apps</a>.</p>
+<p>In conclusion, enabling Dark Mode on Google Search is a simple process that can enhance your browsing experience. By following the steps outlined in this article, you can easily <strong>enable Dark Mode on Google Search</strong> and take advantage of the benefits it offers. Additionally, you can use Chrome extensions like our <a href="/extension/auto-dark-mode-switcher" class="text-primary font-medium hover:underline">Auto Dark Mode Switcher</a> extension to automate the process and enhance your overall browsing experience. For more information on Chrome extensions and how to use them to improve your <a href="/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser" class="internal-link" title="Unlocking Efficiency: The Best Productivity Tools for Chrome Browser">productivity</a>, check out our articles on <a href="/blog/how-to-fix-chrome-high-memory-usage-on-windows-11" class="internal-link" title="How to Fix Chrome High Memory Usage on Windows 11: A Complete Guide to a Faster Browser">how to fix Chrome high memory usage on Windows 11</a> and <a href="/blog/chrome-extensions-vs-web-apps-comparison">Chrome extensions vs. web apps</a>.</p>
 <div class="extension-cta-final mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 text-center">
   <h3 class="text-2xl font-bold mb-3">Get Quick Screenshot Lite Now</h3>
   <p class="text-muted-foreground mb-6 max-w-xl mx-auto">Capture full page or visible area screenshots instantly.</p>
