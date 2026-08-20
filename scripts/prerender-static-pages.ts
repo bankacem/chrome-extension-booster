@@ -81,12 +81,13 @@ function loadTemplate(): string {
 
 function replaceHead(template: string, head: string): string {
   return template
-    .replace(/<title>[\s\S]*?<\/title>/i, "")
-    .replace(/<meta name="description"[^>]*>\s*/i, "")
-    .replace(/<link rel="canonical"[^>]*>\s*/i, "")
-    .replace(/<meta property="og:[^"]+"[^>]*>\s*/gi, "")
-    .replace(/<meta name="twitter:[^"]+"[^>]*>\s*/gi, "")
-    .replace(/<meta name="robots"[^>]*>\s*/i, "")
+    .replace(/<title[\s\S]*?<\/title>/i, "")
+    .replace(/<meta\s+[^>]*name=["'](?:description|robots|keywords|author)["'][^>]*>\s*/gi, "")
+    .replace(/<meta\s+[^>]*property=["'](?:og:[^"']+|article:[^"']+)["'][^>]*>\s*/gi, "")
+    .replace(/<meta\s+[^>]*name=["']twitter:[^"']+["'][^>]*>\s*/gi, "")
+    .replace(/<link\s+[^>]*rel=["']canonical["'][^>]*>\s*/gi, "")
+    .replace(/<link\s+[^>]*rel=["']alternate["'][^>]*>\s*/gi, "")
+    .replace(/<script\s+[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>\s*/gi, "")
     .replace("</head>", `${head}\n</head>`);
 }
 
@@ -102,26 +103,35 @@ function buildHead(options: {
   image?: string;
   noindex?: boolean;
   schema?: Record<string, unknown>;
+  alternateLanguages?: { lang: "en" | "fr" | "es"; url: string }[];
 }): string {
   const canonical = `${SITE_URL}${options.canonicalPath}`;
   const title = `${options.title} | ${SITE_NAME}`;
-  const robots = options.noindex ? `<meta name="robots" content="noindex,follow" />` : "";
-  const schema = options.schema ? `<script type="application/ld+json">${JSON.stringify(options.schema)}</script>` : "";
+  const robots = `<meta data-rh="true" name="robots" content="${options.noindex ? "noindex,follow" : "index,follow,max-image-preview:large"}" />`;
+  const alternates = (options.alternateLanguages || [])
+    .map(({ lang, url }) => `<link data-rh="true" rel="alternate" hrefLang="${lang}" href="${escapeHtml(url)}" />`)
+    .join("\n    ");
+  const xDefault = options.alternateLanguages?.some(({ lang }) => lang === "en")
+    ? `<link data-rh="true" rel="alternate" hrefLang="x-default" href="${escapeHtml(options.alternateLanguages.find(({ lang }) => lang === "en")?.url || canonical)}" />`
+    : "";
+  const schema = options.schema ? `<script data-rh="true" type="application/ld+json">${JSON.stringify(options.schema)}</script>` : "";
   return `
-    <title>${escapeHtml(title)}</title>
-    <meta name="description" content="${escapeHtml(options.description)}" />
+    <title data-rh="true">${escapeHtml(title)}</title>
+    <meta data-rh="true" name="description" content="${escapeHtml(options.description)}" />
     ${robots}
-    <link rel="canonical" href="${escapeHtml(canonical)}" />
-    <meta property="og:title" content="${escapeHtml(title)}" />
-    <meta property="og:description" content="${escapeHtml(options.description)}" />
-    <meta property="og:url" content="${escapeHtml(canonical)}" />
-    <meta property="og:type" content="${options.type || "website"}" />
-    <meta property="og:image" content="${escapeHtml(options.image || DEFAULT_OG_IMAGE)}" />
-    <meta property="og:site_name" content="${SITE_NAME}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${escapeHtml(title)}" />
-    <meta name="twitter:description" content="${escapeHtml(options.description)}" />
-    <meta name="twitter:image" content="${escapeHtml(options.image || DEFAULT_OG_IMAGE)}" />
+    <link data-rh="true" rel="canonical" href="${escapeHtml(canonical)}" />
+    ${alternates}
+    ${xDefault}
+    <meta data-rh="true" property="og:title" content="${escapeHtml(title)}" />
+    <meta data-rh="true" property="og:description" content="${escapeHtml(options.description)}" />
+    <meta data-rh="true" property="og:url" content="${escapeHtml(canonical)}" />
+    <meta data-rh="true" property="og:type" content="${options.type || "website"}" />
+    <meta data-rh="true" property="og:image" content="${escapeHtml(options.image || DEFAULT_OG_IMAGE)}" />
+    <meta data-rh="true" property="og:site_name" content="${SITE_NAME}" />
+    <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+    <meta data-rh="true" name="twitter:title" content="${escapeHtml(title)}" />
+    <meta data-rh="true" name="twitter:description" content="${escapeHtml(options.description)}" />
+    <meta data-rh="true" name="twitter:image" content="${escapeHtml(options.image || DEFAULT_OG_IMAGE)}" />
     ${schema}`;
 }
 
@@ -181,8 +191,8 @@ function parseExtensions(): ExtensionEntry[] {
   }).filter((entry) => entry.slug && entry.name);
 }
 
-async function writeRoute(route: string, template: string, title: string, description: string, body: string, type: "website" | "article", schema?: Record<string, unknown>) {
-  const html = replaceRoot(replaceHead(template, buildHead({ title, description, canonicalPath: route, type, schema })), body);
+async function writeRoute(route: string, template: string, title: string, description: string, body: string, type: "website" | "article", schema?: Record<string, unknown>, alternateLanguages?: { lang: "en" | "fr" | "es"; url: string }[]) {
+  const html = replaceRoot(replaceHead(template, buildHead({ title, description, canonicalPath: route, type, schema, alternateLanguages })), body);
   const outputDir = path.join(DIST_DIR, route.replace(/^\//, ""));
   await fs.ensureDir(outputDir);
   await fs.writeFile(path.join(outputDir, "index.html"), html, "utf8");
@@ -203,13 +213,23 @@ async function prerenderLocalizedContent(template: string, lang: string) {
   const localePrefix = `/${lang}`;
   const homeBody = `<main><section><h1>${escapeHtml(copy.homeTitle)}</h1><p>${escapeHtml(copy.blogDescription)}</p><p><a href="${localePrefix}/blog">${escapeHtml(copy.blogTitle)}</a></p></section></main>`;
   const homeSchema = { "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: `${SITE_URL}${localePrefix}`, inLanguage: lang };
-  const homeHtml = replaceRoot(replaceHead(template, buildHead({ title: copy.homeTitle, description: copy.blogDescription, canonicalPath: localePrefix, schema: homeSchema })), homeBody);
+  const homeAlternates = [
+    { lang: "en" as const, url: `${SITE_URL}/` },
+    { lang: "fr" as const, url: `${SITE_URL}/fr` },
+    { lang: "es" as const, url: `${SITE_URL}/es` },
+  ];
+  const homeHtml = replaceRoot(replaceHead(template, buildHead({ title: copy.homeTitle, description: copy.blogDescription, canonicalPath: localePrefix, schema: homeSchema, alternateLanguages: homeAlternates })), homeBody);
   await fs.ensureDir(path.join(DIST_DIR, lang));
   await fs.writeFile(path.join(DIST_DIR, lang, "index.html"), homeHtml, "utf8");
 
   const blogLinks = articles.map((article) => `<li><a href="${localePrefix}/blog/${escapeHtml(normalizeSlug(article.slug))}">${escapeHtml(article.title)}</a><p>${escapeHtml(article.excerpt || article.meta_description || article.description || copy.blogDescription)}</p></li>`).join("\n");
   const blogBody = `<main><article><h1>${escapeHtml(copy.blogTitle)}</h1><p>${escapeHtml(copy.blogDescription)}</p><ul>${blogLinks}</ul></article></main>`;
-  await writeRoute(`${localePrefix}/blog`, template, copy.blogTitle, copy.blogDescription, blogBody, "website");
+  const blogAlternates = [
+    { lang: "en" as const, url: `${SITE_URL}/blog` },
+    { lang: "fr" as const, url: `${SITE_URL}/fr/blog` },
+    { lang: "es" as const, url: `${SITE_URL}/es/blog` },
+  ];
+  await writeRoute(`${localePrefix}/blog`, template, copy.blogTitle, copy.blogDescription, blogBody, "website", undefined, blogAlternates);
 
   let written = 0;
   for (const article of articles) {
@@ -223,7 +243,10 @@ async function prerenderLocalizedContent(template: string, lang: string) {
     const bodyHtml = marked.parse(parsed.content, { async: false }) as string;
     const body = `<article><h1>${escapeHtml(title)}</h1>${bodyHtml}</article>`;
     const schema = { "@context": "https://schema.org", "@type": "Article", headline: title, description, image, inLanguage: lang, author: { "@type": "Person", name: article.author || "Editorial team" }, datePublished: article.published_at, dateModified: article.updated_at || article.published_at, mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}${localePrefix}/blog/${slug}` } };
-    await writeRoute(`${localePrefix}/blog/${slug}`, template, title, description, body, "article", schema);
+    await writeRoute(`${localePrefix}/blog/${slug}`, template, title, description, body, "article", schema, [
+      { lang: "en", url: `${SITE_URL}/blog/${slug}` },
+      { lang: lang as "fr" | "es", url: `${SITE_URL}${localePrefix}/blog/${slug}` },
+    ]);
     written++;
   }
   console.log(`✅ Prerendered ${written} ${lang} article pages.`);
@@ -237,11 +260,21 @@ async function main() {
 
   const homeDescription = "Discover powerful Chrome extensions built to boost productivity, enhance security, and transform how you browse the web.";
   const homeSchema = { "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: SITE_URL };
-  const homeHtml = replaceRoot(replaceHead(template, buildHead({ title: "Powerful Chrome Extensions for Productivity", description: homeDescription, canonicalPath: "/", schema: homeSchema })), buildHomeBody(articles));
+  const allLanguageHomeAlternates = [
+    { lang: "en" as const, url: `${SITE_URL}/` },
+    { lang: "fr" as const, url: `${SITE_URL}/fr` },
+    { lang: "es" as const, url: `${SITE_URL}/es` },
+  ];
+  const homeHtml = replaceRoot(replaceHead(template, buildHead({ title: "Powerful Chrome Extensions for Productivity", description: homeDescription, canonicalPath: "/", schema: homeSchema, alternateLanguages: allLanguageHomeAlternates })), buildHomeBody(articles));
   await fs.writeFile(path.join(DIST_DIR, "index.html"), homeHtml, "utf8");
 
   const blogDescription = "Practical Chrome extension guides, comparisons, and reviews for productivity, privacy, performance, and accessibility.";
-  await writeRoute("/blog", template, "Chrome Extension Guides and Reviews", blogDescription, buildBlogBody(articles), "website");
+  const allLanguageBlogAlternates = [
+    { lang: "en" as const, url: `${SITE_URL}/blog` },
+    { lang: "fr" as const, url: `${SITE_URL}/fr/blog` },
+    { lang: "es" as const, url: `${SITE_URL}/es/blog` },
+  ];
+  await writeRoute("/blog", template, "Chrome Extension Guides and Reviews", blogDescription, buildBlogBody(articles), "website", undefined, allLanguageBlogAlternates);
   await writeRoute("/privacy", template, "Privacy Policy", "Learn how ExtensionTo protects your privacy and handles information on its website and Chrome extensions.", buildLegalBody("Privacy Policy", "ExtensionTo is committed to protecting your privacy.", ["Our Chrome extensions are designed to keep settings local where possible and to avoid unnecessary collection of personal information.", "The website may process information you voluntarily submit through contact forms or subscriptions. Any information is used to provide and improve the service.", "For questions about this policy, contact ExtensionTo through the website contact page."]), "website");
   await writeRoute("/terms", template, "Terms of Service", "Read the Terms of Service for ExtensionTo Chrome extensions and website.", buildLegalBody("Terms of Service", "By using the ExtensionTo website or extensions, you agree to these terms.", ["The extensions are provided for their stated browsing and productivity purposes and must be used lawfully.", "The software and website are provided as is. ExtensionTo may update, suspend, or discontinue features and may update these terms.", "For questions about these terms, contact ExtensionTo through the website contact page."]), "website");
   await writeRoute("/editorial-policy", template, "Editorial Policy and Review Methodology", "Learn how ExtensionTo researches, reviews, and maintains Chrome extension guides and product pages.", buildEditorialPolicyBody(), "website");

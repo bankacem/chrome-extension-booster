@@ -148,6 +148,7 @@ const Blog = () => {
         }
         canonicalPath={safePage > 1 ? `/blog?page=${safePage}` : `/blog`}
         lang={(lang as "en" | "fr" | "es") || "en"}
+        hreflangLanguages={["en", "fr", "es"]}
       />
       <Navbar />
       

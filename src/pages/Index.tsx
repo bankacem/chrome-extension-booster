@@ -19,6 +19,7 @@ const Index = () => {
       <SEO
         title="ExtensionTo - Powerful Chrome Extensions for Productivity"
         canonicalPath="/"
+        hreflangLanguages={["en", "fr", "es"]}
       />
       <Navbar />
       <HeroSection />

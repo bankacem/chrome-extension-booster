@@ -111,6 +111,7 @@ const BlogPost = () => {
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
   const [notYetTranslated, setNotYetTranslated] = useState(false);
+  const [availableHreflangLanguages, setAvailableHreflangLanguages] = useState<("en" | "fr" | "es")[]>(["en"]);
 
   const instantTitle = slug ? slugToTitle(slug) : "Loading Article";
 
@@ -134,6 +135,23 @@ const BlogPost = () => {
       }
 
       if (matched) {
+        const hreflangLanguages: ("en" | "fr" | "es")[] = lang ? ["en", lang] : ["en"];
+        if (!lang) {
+          const localizedAvailability = await Promise.all((['fr', 'es'] as const).map(async (locale) => {
+            try {
+              const response = await fetch(getLocalizedIndexPath(locale));
+              if (!response.ok) return null;
+              const localizedArticles = await response.json() as Partial<Article>[];
+              return localizedArticles.some((entry) => entry.slug === matched?.slug) ? locale : null;
+            } catch {
+              return null;
+            }
+          }));
+          for (const locale of localizedAvailability) {
+            if (locale) hreflangLanguages.push(locale);
+          }
+        }
+        setAvailableHreflangLanguages([...new Set(hreflangLanguages)]);
         if (!lang) setArticle(matched);
         const routePrefix = lang ? `/${lang}` : "";
         if (matched.slug !== slug) { window.history.replaceState(null, '', `${routePrefix}/blog/${matched.slug}`); }
@@ -352,9 +370,14 @@ const BlogPost = () => {
       <SEO
         title={article.seo_title || article.title}
         description={article.meta_description || article.excerpt || undefined}
-        canonicalPath={`/blog/${article.slug}`}
+        canonicalPath={article.canonicalPath || `/blog/${article.slug}`}
+        noindex={Boolean(article.canonicalPath && article.canonicalPath !== `/blog/${article.slug}`)}
         ogType="article"
+        articlePublishedTime={article.published_at}
+        articleModifiedTime={article.updated_at || article.published_at}
+        articleAuthor={editorialProfile.name}
         lang={(lang as "en" | "fr" | "es") || "en"}
+        hreflangLanguages={availableHreflangLanguages}
         ogImage={
           article.featured_image
             ? `${window.location.origin}${resolveImagePath(article.featured_image)}`

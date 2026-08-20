@@ -47,6 +47,7 @@ interface IndexArticle {
   author?: string;
   published_at?: string;
   updated_at?: string;
+  canonicalPath?: string;
 }
 
 function normalizeSlug(slug: string): string {
@@ -102,33 +103,45 @@ function buildHead(opts: {
   publishedTime?: string;
   modifiedTime?: string;
   author?: string;
+  alternateLanguages?: { lang: "en" | "fr" | "es"; url: string }[];
+  noindex?: boolean;
 }): string {
   const fullTitle = `${opts.title} | ${SITE_NAME}`;
   const canonicalUrl = `${SITE_URL}${opts.canonicalPath}`;
   const t = escapeHtml(fullTitle);
-  const d = escapeHtml(opts.description);
+    const d = escapeHtml(opts.description);
+  const alternates = (opts.alternateLanguages || [])
+    .map(({ lang, url }) => `<link data-rh="true" rel="alternate" hrefLang="${lang}" href="${escapeHtml(url)}" />`)
+    .join("\n    ");
+  const xDefault = opts.alternateLanguages?.some(({ lang }) => lang === "en")
+    ? `<link data-rh="true" rel="alternate" hrefLang="x-default" href="${escapeHtml(canonicalUrl)}" />`
+    : "";
 
-  return `<title>${t}</title>
-    <meta name="description" content="${d}" />
-    <link rel="canonical" href="${canonicalUrl}" />
+  return `<title data-rh="true">${t}</title>
+    <meta data-rh="true" name="robots" content="${opts.noindex ? "noindex,follow" : "index,follow,max-image-preview:large"}" />
+    <meta data-rh="true" name="description" content="${d}" />
+    <link data-rh="true" rel="canonical" href="${canonicalUrl}" />
+    ${alternates}
+    ${xDefault}
 
-    <meta property="og:title" content="${t}" />
-    <meta property="og:description" content="${d}" />
-    <meta property="og:url" content="${canonicalUrl}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="${escapeHtml(opts.ogImage)}" />
-    <meta property="og:site_name" content="${SITE_NAME}" />
-    ${opts.publishedTime ? `<meta property="article:published_time" content="${escapeHtml(opts.publishedTime)}" />` : ""}
-    ${opts.modifiedTime ? `<meta property="article:modified_time" content="${escapeHtml(opts.modifiedTime)}" />` : ""}
-    ${opts.author ? `<meta property="article:author" content="${escapeHtml(opts.author)}" />` : ""}
+    <meta data-rh="true" property="og:title" content="${t}" />
+    <meta data-rh="true" property="og:description" content="${d}" />
+    <meta data-rh="true" property="og:url" content="${canonicalUrl}" />
+    <meta data-rh="true" property="og:type" content="article" />
+    <meta data-rh="true" property="og:image" content="${escapeHtml(opts.ogImage)}" />
+    <meta data-rh="true" property="og:site_name" content="${SITE_NAME}" />
+    ${opts.publishedTime ? `<meta data-rh="true" property="article:published_time" content="${escapeHtml(opts.publishedTime)}" />` : ""}
+    ${opts.modifiedTime ? `<meta data-rh="true" property="article:modified_time" content="${escapeHtml(opts.modifiedTime)}" />` : ""}
+    ${opts.author ? `<meta data-rh="true" property="article:author" content="${escapeHtml(opts.author)}" />` : ""}
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${t}" />
-    <meta name="twitter:description" content="${d}" />
-    <meta name="twitter:image" content="${escapeHtml(opts.ogImage)}" />`;
+    <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+    <meta data-rh="true" name="twitter:title" content="${t}" />
+    <meta data-rh="true" name="twitter:description" content="${d}" />
+    <meta data-rh="true" name="twitter:image" content="${escapeHtml(opts.ogImage)}" />`;
+
 }
 
-function buildSchema(article: IndexArticle, title: string, description: string, ogImage: string): string {
+function buildSchema(article: IndexArticle, title: string, description: string, ogImage: string, canonicalPath: string): string {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -148,7 +161,8 @@ function buildSchema(article: IndexArticle, title: string, description: string, 
       name: SITE_NAME,
       logo: { "@type": "ImageObject", url: `${SITE_URL}/og-image.png` },
     },
-    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/blog/${article.slug}` },
+    inLanguage: "en",
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}${canonicalPath}` },
   };
 
   const breadcrumb = {
@@ -209,18 +223,36 @@ async function main() {
     const modifiedTime = frontmatter.updated_at || a.updated_at || publishedTime;
     const editorialProfile = getEditorialProfile(String(frontmatter.author || a.author || ""));
 
+    const canonicalPath = typeof a.canonicalPath === "string" && a.canonicalPath.startsWith("/blog/")
+      ? a.canonicalPath
+      : `/blog/${slug}`;
+    const hasNonSelfCanonical = canonicalPath !== `/blog/${slug}`;
+    const alternateLanguages: { lang: "en" | "fr" | "es"; url: string }[] = hasNonSelfCanonical
+      ? []
+      : [{ lang: "en", url: `${SITE_URL}/blog/${slug}` }];
+    for (const lang of ["fr", "es"] as const) {
+      const localizedIndexPath = path.join(DIST_DIR, "content", "i18n", lang, "articles-index.json");
+      if (!fs.existsSync(localizedIndexPath)) continue;
+      const localizedArticles = JSON.parse(await fs.readFile(localizedIndexPath, "utf-8")) as { slug?: string; id?: string }[];
+      if (localizedArticles.some((entry) => normalizeSlug(entry.slug || entry.id || "") === slug)) {
+        alternateLanguages.push({ lang, url: `${SITE_URL}/${lang}/blog/${slug}` });
+      }
+    }
+
     const head = buildHead({
       title: seoTitle,
       description,
-      canonicalPath: `/blog/${slug}`,
+      canonicalPath,
       ogImage,
       publishedTime,
       modifiedTime,
       author: editorialProfile.name,
+      alternateLanguages,
+      noindex: hasNonSelfCanonical,
     });
     // Schema.org headline/breadcrumb reflect the real editorial title (matches the
     // on-page H1), while the <title>/OG tags above use the shortened seoTitle.
-    const schema = buildSchema({ ...a, slug }, fullTitle, description, ogImage);
+    const schema = buildSchema({ ...a, slug }, fullTitle, description, ogImage, canonicalPath);
 
     let bodyHtml = "";
     try {
@@ -234,18 +266,15 @@ async function main() {
     const articleHtml = `<article><header><h1>${escapeHtml(fullTitle)}</h1><p>Written by <a href="${escapeHtml(editorialProfile.url)}">${escapeHtml(editorialProfile.name)}</a> · ${escapeHtml(editorialProfile.role)}${dateLabel ? ` · Published ${escapeHtml(dateLabel)}` : ""}${updatedLabel ? ` · Updated ${escapeHtml(updatedLabel)}` : ""}</p><p>Reviewed using the <a href="/editorial-policy">ExtensionTo editorial methodology</a>.</p></header>${bodyHtml}</article>`;
 
     let html = template
-      .replace(/<title>[\s\S]*?<\/title>/, "")
-      .replace(/<meta name="description"[^>]*>/, "")
-      .replace(/<meta property="og:title"[^>]*>\s*/, "")
-      .replace(/<meta property="og:description"[^>]*>\s*/, "")
-      .replace(/<meta property="og:type"[^>]*>\s*/, "")
-      .replace(/<meta property="og:image"[^>]*>\s*/, "")
-      .replace(/<meta property="og:site_name"[^>]*>\s*/, "")
-      .replace(/<meta name="twitter:card"[^>]*>\s*/, "")
-      .replace(/<meta name="twitter:image"[^>]*>\s*/, "")
-      .replace(/<meta name="twitter:site"[^>]*>\s*/, "");
+      .replace(/<title[\s\S]*?<\/title>/i, "")
+      .replace(/<meta\s+[^>]*name=["'](?:description|robots|keywords|author)["'][^>]*>\s*/gi, "")
+      .replace(/<meta\s+[^>]*property=["'](?:og:[^"']+|article:[^"']+)["'][^>]*>\s*/gi, "")
+      .replace(/<meta\s+[^>]*name=["']twitter:[^"']+["'][^>]*>\s*/gi, "")
+      .replace(/<link\s+[^>]*rel=["']canonical["'][^>]*>\s*/gi, "")
+      .replace(/<link\s+[^>]*rel=["']alternate["'][^>]*>\s*/gi, "")
+      .replace(/<script\s+[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>\s*/gi, "");
 
-    html = html.replace("</head>", `  ${head}\n    ${schema}\n  </head>`);
+    html = html.replace("</head>", `  ${head}\n    ${schema.replaceAll('<script type="application/ld+json">', '<script data-rh="true" type="application/ld+json">')}\n  </head>`);
     html = html.replace('<div id="root"></div>', `<div id="root">${articleHtml}</div>`);
 
     const outDir = path.join(DIST_DIR, "blog", slug);

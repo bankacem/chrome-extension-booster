@@ -1,23 +1,24 @@
 import { Toaster } from "@/components/ui/toaster";
+import { lazy, Suspense } from "react";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import { HelmetProvider } from "react-helmet-async";
-import Index from "./pages/Index";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import Admin from "./pages/Admin";
-import AdminLogin from "./pages/AdminLogin";
-import AIGenerator from "./pages/AIGenerator";
-import ExtensionPage from "./pages/ExtensionPage";
-import SEOAnalyzer from "./pages/SEOAnalyzer";
-import SEODashboard from "./pages/SEODashboard";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import EditorialPolicy from "./pages/EditorialPolicy";
-import NotFound from "./pages/NotFound";
+const Index = lazy(() => import("./pages/Index"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const Admin = lazy(() => import("./pages/Admin"));
+const AdminLogin = lazy(() => import("./pages/AdminLogin"));
+const AIGenerator = lazy(() => import("./pages/AIGenerator"));
+const ExtensionPage = lazy(() => import("./pages/ExtensionPage"));
+const SEOAnalyzer = lazy(() => import("./pages/SEOAnalyzer"));
+const SEODashboard = lazy(() => import("./pages/SEODashboard"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const Terms = lazy(() => import("./pages/Terms"));
+const EditorialPolicy = lazy(() => import("./pages/EditorialPolicy"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 // i18n — must be imported before any component that uses useTranslation
 import "./i18n";
@@ -32,7 +33,8 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
-            <Routes>
+            <Suspense fallback={<div className="min-h-screen bg-background text-foreground flex items-center justify-center">Loading…</div>}>
+              <Routes>
               {/* ── English (default) ── */}
               <Route path="/" element={<Index />} />
               <Route path="/blog" element={<Blog />} />
@@ -60,7 +62,8 @@ const App = () => (
               <Route path="/terms" element={<Terms />} />
               <Route path="/editorial-policy" element={<EditorialPolicy />} />
               <Route path="*" element={<NotFound />} />
-            </Routes>
+              </Routes>
+            </Suspense>
           </BrowserRouter>
         </TooltipProvider>
       </ThemeProvider>

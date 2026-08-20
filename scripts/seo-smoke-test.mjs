@@ -12,18 +12,38 @@ const htmlPathFor = (url) => {
   return path.join(dist, pathname, "index.html");
 };
 const htmlFor = (url) => fs.readFileSync(htmlPathFor(url), "utf8");
+const count = (html, pattern) => [...html.matchAll(pattern)].length;
+const seoAssertions = (html, url, expectedCanonical = url) => {
+  assert(count(html, /<title\b[^>]*>/gi) === 1, `${url} must contain exactly one title`);
+  assert(count(html, /<meta\b[^>]*name=["']description["'][^>]*>/gi) === 1, `${url} must contain exactly one meta description`);
+  assert(count(html, /<link\b[^>]*rel=["']canonical["'][^>]*>/gi) === 1, `${url} must contain exactly one canonical`);
+  assert(count(html, /<meta\b[^>]*property=["']og:title["'][^>]*>/gi) === 1, `${url} must contain exactly one og:title`);
+  assert(count(html, /<meta\b[^>]*property=["']og:description["'][^>]*>/gi) === 1, `${url} must contain exactly one og:description`);
+  assert(count(html, /<meta\b[^>]*name=["']robots["'][^>]*>/gi) === 1, `${url} must contain exactly one robots directive`);
+  assert(html.includes(`href="${expectedCanonical}"`), `${url} has an unexpected canonical target`);
+};
 
 assert(fs.existsSync(dist), "dist directory is missing; run npm run build first");
 const vercel = JSON.parse(read("vercel.json"));
 const rewrites = vercel.rewrites || [];
 assert(!rewrites.some((rewrite) => rewrite.source === "/:path*" || /\(\?/.test(rewrite.source || "")), "vercel.json must not contain a catch-all rewrite");
 
-const baseRoutes = ["https://extensionto.com/", "https://extensionto.com/blog", "https://extensionto.com/privacy", "https://extensionto.com/terms", "https://extensionto.com/editorial-policy"];
+const baseRoutes = [
+  "https://extensionto.com/",
+  "https://extensionto.com/blog",
+  "https://extensionto.com/privacy",
+  "https://extensionto.com/terms",
+  "https://extensionto.com/editorial-policy",
+  "https://extensionto.com/fr",
+  "https://extensionto.com/es",
+  "https://extensionto.com/fr/blog",
+  "https://extensionto.com/es/blog",
+];
 for (const url of baseRoutes) {
   const html = htmlFor(url);
   const pathname = new URL(url).pathname === "/" ? "/" : new URL(url).pathname;
   assert(/<h1\b/i.test(html), `${pathname} has no prerendered H1`);
-  assert(html.includes(`<link rel="canonical" href="https://extensionto.com${pathname}"`), `${pathname} has no self canonical`);
+  seoAssertions(html, url);
 }
 
 const articleIndex = JSON.parse(read("public/content/articles-index.json"));
@@ -35,7 +55,8 @@ for (const article of articleSample) {
   const url = `https://extensionto.com/blog/${slug}`;
   const html = htmlFor(url);
   assert(/<h1\b/i.test(html), `${url} has no prerendered H1`);
-  assert(html.includes(`<link rel="canonical" href="${url}"`), `${url} has no self canonical`);
+  const expectedCanonical = article.canonicalPath ? `https://extensionto.com${article.canonicalPath}` : url;
+  seoAssertions(html, url, expectedCanonical);
   assert(/<article\b/i.test(html), `${url} has no article element`);
   assert(/Written by/.test(html), `${url} has no visible author attribution`);
   assert(/editorial-policy/.test(html), `${url} has no editorial methodology link`);
@@ -49,7 +70,7 @@ for (const slug of extensionSlugs) {
   const url = `https://extensionto.com/extension/${slug}`;
   const html = htmlFor(url);
   assert(/<h1\b/i.test(html), `${url} has no prerendered H1`);
-  assert(html.includes(`<link rel="canonical" href="${url}"`), `${url} has no self canonical`);
+  seoAssertions(html, url);
   assert(/SoftwareApplication/.test(html), `${url} has no SoftwareApplication schema`);
 }
 
@@ -62,7 +83,8 @@ for (const lang of ["fr", "es"]) {
     const url = `https://extensionto.com/${lang}/blog/${slug}`;
     const html = htmlFor(url);
     assert(/<h1\b/i.test(html), `${url} has no prerendered H1`);
-    assert(html.includes(`<link rel="canonical" href="${url}"`), `${url} has no self canonical`);
+    seoAssertions(html, url);
+    assert(/hreflang="en"/i.test(html) && new RegExp(`hreflang="${lang}"`, "i").test(html), `${url} is missing reciprocal hreflang`);
   }
 }
 
@@ -78,6 +100,16 @@ for (const [source, entry] of Object.entries(mergedArticles)) {
 }
 assert(urls.length > 0, "sitemap is empty");
 assert(new Set(urls).size === urls.length, "sitemap contains duplicate URLs");
+for (const requiredUrl of [
+  "https://extensionto.com/",
+  "https://extensionto.com/blog",
+  "https://extensionto.com/fr",
+  "https://extensionto.com/es",
+  "https://extensionto.com/fr/blog",
+  "https://extensionto.com/es/blog",
+]) {
+  assert(urls.includes(requiredUrl), `required static route missing from sitemap: ${requiredUrl}`);
+}
 for (const url of urls) {
   const pathname = new URL(url).pathname;
   if (pathname === "/" || pathname === "/blog" || pathname === "/privacy" || pathname === "/terms" || pathname === "/editorial-policy") continue;
