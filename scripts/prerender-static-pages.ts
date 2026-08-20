@@ -143,6 +143,11 @@ function buildExtensionBody(extension: ExtensionEntry): string {
   return `<main><article><h1>${escapeHtml(extension.name)} Chrome Extension</h1><p>${escapeHtml(extension.longDescription)}</p><p><strong>Category:</strong> ${escapeHtml(extension.category)}</p><h2>Key features</h2><ul>${features}</ul><p><a href="${escapeHtml(extension.storeUrl)}" rel="nofollow">View ${escapeHtml(extension.name)} in the Chrome Web Store</a></p><p><a href="/">Back to ExtensionTo</a> · <a href="/blog">Read related guides</a></p></article></main>`;
 }
 
+function buildLegalBody(title: string, summary: string, sections: string[]): string {
+  const content = sections.map((section) => `<p>${escapeHtml(section)}</p>`).join("\n");
+  return `<main><article><h1>${escapeHtml(title)}</h1><p>${escapeHtml(summary)}</p>${content}<p><a href="/">Back to ExtensionTo</a></p></article></main>`;
+}
+
 function parseExtensions(): ExtensionEntry[] {
   const sourcePath = path.join(ROOT, "src", "lib", "extensionsData.ts");
   const source = fs.readFileSync(sourcePath, "utf8");
@@ -224,6 +229,8 @@ async function main() {
 
   const blogDescription = "Practical Chrome extension guides, comparisons, and reviews for productivity, privacy, performance, and accessibility.";
   await writeRoute("/blog", template, "Chrome Extension Guides and Reviews", blogDescription, buildBlogBody(articles), "website");
+  await writeRoute("/privacy", template, "Privacy Policy", "Learn how ExtensionTo protects your privacy and handles information on its website and Chrome extensions.", buildLegalBody("Privacy Policy", "ExtensionTo is committed to protecting your privacy.", ["Our Chrome extensions are designed to keep settings local where possible and to avoid unnecessary collection of personal information.", "The website may process information you voluntarily submit through contact forms or subscriptions. Any information is used to provide and improve the service.", "For questions about this policy, contact ExtensionTo through the website contact page."]), "website");
+  await writeRoute("/terms", template, "Terms of Service", "Read the Terms of Service for ExtensionTo Chrome extensions and website.", buildLegalBody("Terms of Service", "By using the ExtensionTo website or extensions, you agree to these terms.", ["The extensions are provided for their stated browsing and productivity purposes and must be used lawfully.", "The software and website are provided as is. ExtensionTo may update, suspend, or discontinue features and may update these terms.", "For questions about these terms, contact ExtensionTo through the website contact page."]), "website");
 
   for (const extension of extensions) {
     const description = extension.longDescription || extension.description;

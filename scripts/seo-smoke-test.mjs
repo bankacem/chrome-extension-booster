@@ -15,9 +15,10 @@ const htmlFor = (url) => fs.readFileSync(htmlPathFor(url), "utf8");
 
 assert(fs.existsSync(dist), "dist directory is missing; run npm run build first");
 const vercel = JSON.parse(read("vercel.json"));
-assert(!vercel.rewrites || vercel.rewrites.length === 0, "vercel.json must not contain a catch-all rewrite");
+const rewrites = vercel.rewrites || [];
+assert(!rewrites.some((rewrite) => rewrite.source === "/:path*" || /\(\?/.test(rewrite.source || "")), "vercel.json must not contain a catch-all rewrite");
 
-const baseRoutes = ["https://extensionto.com/", "https://extensionto.com/blog"];
+const baseRoutes = ["https://extensionto.com/", "https://extensionto.com/blog", "https://extensionto.com/privacy", "https://extensionto.com/terms"];
 for (const url of baseRoutes) {
   const html = htmlFor(url);
   const pathname = new URL(url).pathname === "/" ? "/" : new URL(url).pathname;

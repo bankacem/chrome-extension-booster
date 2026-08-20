@@ -13,6 +13,11 @@
       ]
     }
   ],
+  "rewrites": [
+    { "source": "/admin", "destination": "/index.html" },
+    { "source": "/settings", "destination": "/index.html" },
+    { "source": "/settings/:path*", "destination": "/index.html" }
+  ],
   "redirects": [
     {
       "source": "/blog/the-definitive-guide-to-chrome-extension-download-youtube-video-high-quality-enhancing-your-offline-mliju5mvrvj",
