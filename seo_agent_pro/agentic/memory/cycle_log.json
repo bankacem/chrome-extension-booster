@@ -583,5 +583,18 @@
     "final_status": "published",
     "notes": "Manually written; explicitly separated blocking the permission prompt from disabling already-granted notifications, covered OS-level interplay.",
     "recorded_at": "2026-08-16T07:35:24.015055+00:00"
+  },
+  {
+    "keyword": "AI Cover Letter Writer Chrome Extension: The Complete 2026 Guide to Landing Your Dream Job",
+    "model": "builtin-gpt-5-mini",
+    "cycle_type": "refinement",
+    "score": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [],
+    "category": "Chrome Extensions",
+    "final_status": "refined",
+    "notes": "Refiner Agent added competitor-gap drafts; then manual editorial pass replaced the truncated article, removed unsupported pricing/ATS/user claims, verified official product sources, added source-based metadata, FAQ, privacy guidance, and internal links.",
+    "recorded_at": "2026-08-20T13:28:25.160354+00:00"
   }
 ]
