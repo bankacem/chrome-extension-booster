@@ -79,21 +79,18 @@ function countImages(html: string): number {
 }
 
 function countLinks(html: string): { internal: number; external: number } {
-  const links = html.match(/<a[^>]*href=["']([^"']+)["'][^>]*>/gi) || [];
+  const linkPattern = /<a[^>]*href=["']([^"']+)["'][^>]*>/gi;
   let internal = 0;
   let external = 0;
 
-  links.forEach(link => {
-    const hrefMatch = link.match(/href=["']([^"']+)["']/i);
-    if (hrefMatch) {
-      const href = hrefMatch[1];
-      if (href.startsWith('/') || href.includes('extensionto.com')) {
-        internal++;
-      } else if (href.startsWith('http')) {
-        external++;
-      }
+  for (const match of html.matchAll(linkPattern)) {
+    const href = match[1] ?? "";
+    if (href.startsWith('/') || href.includes('extensionto.com')) {
+      internal++;
+    } else if (href.startsWith('http')) {
+      external++;
     }
-  });
+  }
 
   return { internal, external };
 }

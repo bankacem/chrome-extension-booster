@@ -1,16 +1,12 @@
 // Publishes a Markdown file to the project's GitHub repo so the static
 // /blog renderer picks it up on the next Vercel deploy.
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { corsHeaders, jsonResponse, requireAdmin } from "../_shared/auth.ts";
 
 interface IndexEntry {
   slug?: string;
   [key: string]: unknown;
 }
-
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
 
 interface Payload {
   slug: string;
@@ -84,7 +80,12 @@ function b64(s: string): string {
 }
 
 serve(async (req) => {
-  if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
+  if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders(req) });
+  if (req.method !== "POST") return jsonResponse(req, { error: "Method not allowed" }, 405);
+
+  const auth = await requireAdmin(req);
+  if (auth instanceof Response) return auth;
+
   try {
     const token = Deno.env.get("GITHUB_TOKEN");
     const repo = Deno.env.get("GITHUB_REPO"); // "owner/repo"
@@ -92,6 +93,9 @@ serve(async (req) => {
 
     const p = (await req.json()) as Payload;
     if (!p.slug || !p.title || !p.content) throw new Error("slug, title and content required");
+    if (p.slug.length > 120 || p.slug.includes("/") || p.slug.includes("\\") || p.slug.includes("..")) {
+      throw new Error("Invalid slug");
+    }
 
     const filePath = partitionedPath(p.slug);
     const md = frontMatter(p) + p.content + "\n";
@@ -139,13 +143,13 @@ serve(async (req) => {
     }
 
     return new Response(JSON.stringify({ ok: true, path: filePath }), {
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
     });
   } catch (e) {
     console.error("publish-to-github error", e);
     return new Response(JSON.stringify({ error: e instanceof Error ? e.message : String(e) }), {
       status: 500,
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
     });
   }
 });

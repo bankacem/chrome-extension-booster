@@ -1,16 +1,20 @@
 project_id = "svzfurufpzsrqoxlwxgx"
 
 [functions.google-search-console]
-verify_jwt = false
-
+verify_jwt = true
 [functions.seo-optimizer]
-verify_jwt = false
-
+verify_jwt = true
 [functions.sitemap]
 verify_jwt = false
-
 [functions.seo-agent-pro]
-verify_jwt = false
-
+verify_jwt = true
 [functions.publish-to-github]
+verify_jwt = true
+[functions.generate-article]
+verify_jwt = true
+[functions.generate-featured-image]
+verify_jwt = true
+# The function performs its own admin JWT or internal secret check so that
+# a scheduler can invoke it without exposing a browser session.
+[functions.publish-scheduled-articles]
 verify_jwt = false

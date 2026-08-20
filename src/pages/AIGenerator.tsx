@@ -255,9 +255,8 @@ const AIGenerator = () => {
   const [aiProvider, setAiProvider] = useState<AIProvider>(() => {
     return (localStorage.getItem('ai-generator-provider') as AIProvider) || "lovable";
   });
-  const [customApiKey, setCustomApiKey] = useState(() => {
-    return localStorage.getItem('ai-generator-apikey') || "";
-  });
+  // API keys are intentionally held in memory only; never persist secrets in localStorage.
+  const [customApiKey, setCustomApiKey] = useState("");
   const [selectedModel, setSelectedModel] = useState(() => {
     return localStorage.getItem('ai-generator-model') || "google/gemini-3-flash-preview";
   });
@@ -275,11 +274,10 @@ const AIGenerator = () => {
   // Save provider settings to localStorage
   useEffect(() => {
     localStorage.setItem('ai-generator-provider', aiProvider);
-    localStorage.setItem('ai-generator-apikey', customApiKey);
     localStorage.setItem('ai-generator-model', selectedModel);
     localStorage.setItem('ai-generator-author', authorName);
     localStorage.setItem('ai-generator-agent-pro', String(useAgentPro));
-  }, [aiProvider, customApiKey, selectedModel, authorName, useAgentPro]);
+  }, [aiProvider, selectedModel, authorName, useAgentPro]);
 
   // Reset model when provider changes
   useEffect(() => {

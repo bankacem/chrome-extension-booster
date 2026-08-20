@@ -1,9 +1,6 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-};
+import { corsHeaders, jsonResponse, requireAdmin } from "../_shared/auth.ts";
 
 interface SearchAnalyticsRow {
   keys?: string[];
@@ -96,8 +93,12 @@ async function getAccessTokenFromServiceAccount(key: ServiceAccountKey): Promise
 
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
-    return new Response(null, { headers: corsHeaders });
+    return new Response(null, { headers: corsHeaders(req) });
   }
+  if (req.method !== 'POST') return jsonResponse(req, { error: 'Method not allowed' }, 405);
+
+  const auth = await requireAdmin(req);
+  if (auth instanceof Response) return auth;
 
   try {
     const { articleSlug, domain } = await req.json();
@@ -184,7 +185,7 @@ serve(async (req) => {
             data: result,
             source: 'google_api',
           }), {
-            headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+            headers: { ...corsHeaders(req), 'Content-Type': 'application/json' },
           });
         } else {
           const detail = await response.text();
@@ -214,7 +215,7 @@ serve(async (req) => {
         'This endpoint will not return simulated/fake numbers.',
     }), {
       status: 200,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      headers: { ...corsHeaders(req), 'Content-Type': 'application/json' },
     });
 
   } catch (error: unknown) {
@@ -225,7 +226,7 @@ serve(async (req) => {
       error: errorMessage,
     }), {
       status: 500,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      headers: { ...corsHeaders(req), 'Content-Type': 'application/json' },
     });
   }
 });

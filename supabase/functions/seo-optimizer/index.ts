@@ -1,9 +1,5 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
-
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
+import { corsHeaders, jsonResponse, requireAdmin } from "../_shared/auth.ts";
 
 interface OptimizeRequest {
   content: string;
@@ -77,8 +73,12 @@ function extractContent(data: ProviderResponse, provider: string): string {
 
 serve(async (req) => {
   if (req.method === "OPTIONS") {
-    return new Response(null, { headers: corsHeaders });
+    return new Response(null, { headers: corsHeaders(req) });
   }
+  if (req.method !== "POST") return jsonResponse(req, { error: "Method not allowed" }, 405);
+
+  const auth = await requireAdmin(req);
+  if (auth instanceof Response) return auth;
 
   try {
     const { 
@@ -220,12 +220,12 @@ Return ONLY a valid JSON object (no markdown code blocks):
         } else if (response.status === 429) {
           return new Response(
             JSON.stringify({ error: "Rate limit exceeded. Please try again in a minute." }),
-            { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+            { status: 429, headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
           );
         } else if (response.status === 401) {
           return new Response(
             JSON.stringify({ error: "Invalid API key. Please check your GROQ_API_KEY secret." }),
-            { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+            { status: 401, headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
           );
         }
       }
@@ -367,7 +367,7 @@ Return ONLY a valid JSON object (no markdown code blocks):
     console.log("Successfully parsed optimization result");
 
     return new Response(JSON.stringify(result), {
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
     });
 
   } catch (error) {
@@ -377,7 +377,7 @@ Return ONLY a valid JSON object (no markdown code blocks):
         error: error instanceof Error ? error.message : "Unknown error",
         details: "Failed to optimize content"
       }),
-      { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
     );
   }
 });

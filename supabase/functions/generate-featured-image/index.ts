@@ -1,10 +1,6 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.1";
-
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
+import { corsHeaders, jsonResponse, requireAdmin } from "../_shared/auth.ts";
 
 // Category color themes for varied image styles
 const CATEGORY_THEMES: Record<string, string> = {
@@ -21,8 +17,12 @@ const CATEGORY_THEMES: Record<string, string> = {
 
 serve(async (req) => {
   if (req.method === "OPTIONS") {
-    return new Response(null, { headers: corsHeaders });
+    return new Response(null, { headers: corsHeaders(req) });
   }
+  if (req.method !== "POST") return jsonResponse(req, { error: "Method not allowed" }, 405);
+
+  const auth = await requireAdmin(req);
+  if (auth instanceof Response) return auth;
 
   try {
     const { articleId, title, category, slug } = await req.json();
@@ -30,7 +30,7 @@ serve(async (req) => {
     if (!articleId || !title) {
       return new Response(
         JSON.stringify({ error: "articleId and title are required" }),
-        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        { status: 400, headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
       );
     }
 
@@ -38,7 +38,7 @@ serve(async (req) => {
     if (!lovableApiKey) {
       return new Response(
         JSON.stringify({ error: "LOVABLE_API_KEY not configured" }),
-        { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
       );
     }
 
@@ -78,7 +78,7 @@ Make the text the PRIMARY focus - it should be large and impossible to miss.`;
       console.error("AI response error:", errorText);
       return new Response(
         JSON.stringify({ error: `AI generation failed: ${aiResponse.status}` }),
-        { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
       );
     }
 
@@ -88,7 +88,7 @@ Make the text the PRIMARY focus - it should be large and impossible to miss.`;
     if (!imageData) {
       return new Response(
         JSON.stringify({ error: "No image generated from AI" }),
-        { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
       );
     }
 
@@ -97,7 +97,7 @@ Make the text the PRIMARY focus - it should be large and impossible to miss.`;
     if (!base64Match) {
       return new Response(
         JSON.stringify({ error: "Invalid image data format" }),
-        { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
       );
     }
 
@@ -106,7 +106,10 @@ Make the text the PRIMARY focus - it should be large and impossible to miss.`;
     const imageBytes = Uint8Array.from(atob(base64Data), c => c.charCodeAt(0));
 
     // Upload to storage
-    const fileName = `featured/${slug || articleId}.webp`;
+    const safeSlug = typeof slug === "string" && /^[\p{L}\p{N}_-]{1,120}$/u.test(slug)
+      ? slug
+      : articleId;
+    const fileName = `featured/${safeSlug}.webp`;
     
     const { error: uploadError } = await supabase.storage
       .from("article-images")
@@ -119,7 +122,7 @@ Make the text the PRIMARY focus - it should be large and impossible to miss.`;
       console.error("Upload error:", uploadError);
       return new Response(
         JSON.stringify({ error: `Upload failed: ${uploadError.message}` }),
-        { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
       );
     }
 
@@ -146,7 +149,7 @@ Make the text the PRIMARY focus - it should be large and impossible to miss.`;
         imageUrl: publicUrl,
         articleId 
       }),
-      { headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      { headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
     );
 
   } catch (error: unknown) {
@@ -154,7 +157,7 @@ Make the text the PRIMARY focus - it should be large and impossible to miss.`;
     console.error("Error:", message);
     return new Response(
       JSON.stringify({ error: message }),
-      { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" } }
     );
   }
 });

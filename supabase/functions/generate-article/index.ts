@@ -1,9 +1,5 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
-
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
+import { corsHeaders, jsonResponse, requireAdmin } from "../_shared/auth.ts";
 
 interface ArticleRequest {
   keyword: string;
@@ -349,8 +345,12 @@ async function fetchWithRetry(
 
 serve(async (req) => {
   if (req.method === "OPTIONS") {
-    return new Response(null, { headers: corsHeaders });
+    return new Response(null, { headers: corsHeaders(req) });
   }
+  if (req.method !== "POST") return jsonResponse(req, { error: "Method not allowed" }, 405);
+
+  const auth = await requireAdmin(req);
+  if (auth instanceof Response) return auth;
 
   try {
     const { 
@@ -488,7 +488,6 @@ Generate the complete HTML article now.`;
     }
 
     console.log(`Using provider: ${aiProvider}, model: ${selectedModel}`);
-    console.log(`API URL: ${apiUrl}`);
 
     // Use retry logic with timeout
     let response: Response;
@@ -510,7 +509,7 @@ Generate the complete HTML article now.`;
         details: String(retryError)
       }), {
         status: 503,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       });
     }
 
@@ -533,7 +532,7 @@ Generate the complete HTML article now.`;
             suggestedModel: "llama-3.3-70b-versatile"
           }), {
             status: 400,
-            headers: { ...corsHeaders, "Content-Type": "application/json" },
+            headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           });
         }
         
@@ -542,7 +541,7 @@ Generate the complete HTML article now.`;
             error: `Your ${aiProvider} account has run out of credits. Please add more credits to continue.`
           }), {
             status: 402,
-            headers: { ...corsHeaders, "Content-Type": "application/json" },
+            headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           });
         }
       } catch {
@@ -555,7 +554,7 @@ Generate the complete HTML article now.`;
           retryAfter: response.headers.get('retry-after') || '60'
         }), {
           status: 429,
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         });
       }
       
@@ -565,7 +564,7 @@ Generate the complete HTML article now.`;
           details: errorDetails
         }), {
           status: 401,
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         });
       }
       
@@ -574,7 +573,7 @@ Generate the complete HTML article now.`;
         details: errorDetails
       }), {
         status: 500,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       });
     }
 
@@ -643,7 +642,7 @@ Generate the complete HTML article now.`;
       provider: aiProvider,
       model: selectedModel
     }), {
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
     });
 
   } catch (error) {
@@ -652,7 +651,7 @@ Generate the complete HTML article now.`;
       error: error instanceof Error ? error.message : "Unknown error" 
     }), {
       status: 500,
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
     });
   }
 });

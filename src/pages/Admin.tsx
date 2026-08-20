@@ -93,7 +93,7 @@ interface ImportData {
   posts?: ImportedPost[];
 }
 
-type RawImportedPost = Partial<ImportedPost> & Record<string, unknown>;
+type RawImportedPost = Partial<ImportedPost>;
 type AccountUpdate = { email?: string; password?: string };
 
 interface BackupData {

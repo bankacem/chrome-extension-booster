@@ -35,6 +35,9 @@ jobs:
       - name: Install dependencies
         run: bun install
 
+      - name: Typecheck application
+        run: bun run typecheck
+
       - name: Rebuild index from local markdown
         run: bun run sync-articles
 
