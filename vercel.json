@@ -3919,6 +3919,16 @@
       "source": "/extensions",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/blog/google-chrome-programme-en-14",
+      "destination": "/blog/google-chrome-programm-en-14",
+      "permanent": true
+    },
+    {
+      "source": "/blog/google-chrome-programm%C3%A9-en-14",
+      "destination": "/blog/google-chrome-programm-en-14",
+      "permanent": true
     }
   ]
 }
