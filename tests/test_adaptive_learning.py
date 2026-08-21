@@ -63,12 +63,48 @@ class AdaptiveLearningTests(unittest.TestCase):
                         "internal_links_used": ["/blog/related"],
                         "gaps_added_titles": ["A useful missing section"],
                         "word_count": 1400,
+                        "gsc_evidence": {
+                            "eligible": True,
+                            "impressions": 650,
+                            "ctr_delta_vs_baseline": 0.012,
+                            "position_stable": True,
+                        },
                     }
                 )
                 records = json.loads(memory_store.CYCLE_LOG_PATH.read_text(encoding="utf-8"))
                 self.assertEqual(records[-1]["score_delta_from_previous_same_keyword"], 14)
                 self.assertEqual(records[-1]["competitor_count"], 3)
                 self.assertTrue(result["positive_patterns_applied"])
+            finally:
+                memory_store.CYCLE_LOG_PATH = old_cycle_path
+                memory_store.LESSONS_PATH = old_lessons_path
+
+    def test_learning_gate_blocks_lessons_without_gsc_evidence(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            old_cycle_path = memory_store.CYCLE_LOG_PATH
+            old_lessons_path = memory_store.LESSONS_PATH
+            try:
+                memory_store.CYCLE_LOG_PATH = Path(tmp) / "cycle_log.json"
+                memory_store.LESSONS_PATH = Path(tmp) / "lessons.md"
+                result = learning.run(
+                    {
+                        "keyword": "ungated keyword",
+                        "active_model": "test-model",
+                        "revision_count": 0,
+                        "evaluation": {
+                            "approved": False,
+                            "score": 40,
+                            "deterministic_issues": ["placeholder link found"],
+                            "llm_issues": [],
+                        },
+                        "final_status": "needs_human_review",
+                        "gsc_evidence": {},
+                    }
+                )
+                self.assertEqual(result["lessons_applied"], [])
+                self.assertEqual(result["positive_patterns_applied"], [])
+                record = json.loads(memory_store.CYCLE_LOG_PATH.read_text(encoding="utf-8"))[-1]
+                self.assertFalse(record["gsc_learning_eligible"])
             finally:
                 memory_store.CYCLE_LOG_PATH = old_cycle_path
                 memory_store.LESSONS_PATH = old_lessons_path

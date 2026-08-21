@@ -596,5 +596,225 @@
     "final_status": "refined",
     "notes": "Refiner Agent added competitor-gap drafts; then manual editorial pass replaced the truncated article, removed unsupported pricing/ATS/user claims, verified official product sources, added source-based metadata, FAQ, privacy guidance, and internal links.",
     "recorded_at": "2026-08-20T13:28:25.160354+00:00"
+  },
+  {
+    "keyword": "AI Tab Manager Chrome Extension",
+    "model": "builtin-gpt-5-mini",
+    "revision_count": 1,
+    "score": 72,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": false,
+    "deterministic_issues": [
+      "8/8 required section(s) from the Strategy brief have no matching heading in the body: TL;DR & Quick verdict; What is an AI Tab Manager Chrome Extension? (Overview & who it's for); Key features and user workflow; Technical AI details: model type, inference location, and implications; Install, permissions & step-by-step getting started checklist; Privacy, security & data handling (explicit audit checklist); Accessibility, performance impact & best practices; Comparison table, pricing summary & FAQ"
+    ],
+    "llm_issues": [
+      "Missing required deliverables: The article does not include the required comparison_table, pricing summary, or FAQ sections. The brief explicitly lists these as required_sections/must_have_elements; their absence is a major omission.",
+      "Truncated content: The 'Step-by-step getting started' section ends mid-sentence (\"After insta\"). Complete the step-paths and post-install tests so readers can finish setup and verification.",
+      "Accessibility checklist absent: The brief requires an accessibility_checklist and an 'Accessibility, performance impact & best practices' section. The article only calls out a few accessibility gaps (e.g., lack of keyboard navigation) but does not provide a concrete checklist (keyboard navigation tests, ARIA roles, screen-reader reading order, focus management, color contrast, text scaling, caption/alt text guidance).",
+      "Privacy/security audit checklist needs explicit, testable items: The vendor-interrogation questions are good, but the brief asked for an 'explicit audit checklist' (step-by-step tests and acceptance criteria). Add concrete checks (e.g., exact network-inspection steps with example filters, how to verify encryption in transit, how to validate retention via API response, sample criteria for acceptable retention periods).",
+      "Install/permissions checklist is partial and not prescriptive enough: It lists good items, but lacks exact post-install validation steps (e.g., how to confirm 'On click' vs 'All sites' in the permissions UI, how to inspect active service worker calls in DevTools with precise click-paths, and how to test uninstall/rollback).",
+      "No comparison criteria or columns defined: The brief's comparison_table must be present and should compare concrete axes (inference location, model size/capability, permissions required, admin controls, pricing tiers, retention/data deletion options, open-source/licensing). The article promises a 'compact comparison table' but doesn't provide it or state evaluation columns.",
+      "Pricing summary absent: The buyer brief requires a pricing summary (at least pricing axes and what to expect from free vs paid tiers). The article doesn't cover pricing models (per-user, per-seat, freemium limits, enterprise contracts), which is critical for technical buyers.",
+      "Enterprise/admin guidance is underdeveloped: The Quick verdict mentions SSO/SAML and admin policies, but there's no concrete enterprise deployment checklist (group policy, Chrome Enterprise controls, extension allowlist/blocklist, how to enforce local-only inference via policy, or what to require in a procurement contract).",
+      "Performance impact guidance is thin: The article references hibernation and measuring with Chrome Task Manager but lacks best-practice steps for measuring memory/CPU impact, acceptable baseline thresholds, or guidance on testing on representative devices.",
+      "No explicit examples or red-team style test cases: For a 'privacy-first' technical guide, include a few small, replicable tests (e.g., a minimal network-inspection scenario with expected observable behaviors) instead of only conceptual descriptions. The current text hints at tests but doesn't provide reproducible examples.",
+      "Tone/content completeness: Several sections are high-level and rely on vendor answers rather than offering more self-contained verification steps. For a technical buyer's guide, balance vendor questions with OS/browser-specific commands and sample DevTools filters so readers can verify claims themselves.",
+      "Length and structure: The brief's ideal_length is 1400 words. The supplied article is noticeably shorter and missing full sections. Expand to hit the target length and ensure each required_section is clearly labeled and complete."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "llm_estimate",
+    "competitor_count": 0,
+    "competitor_urls": [],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "recorded_at": "2026-08-21T18:20:19.381230+00:00",
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "correction": "Historical record corrected after enforcing the 500-impression and site-baseline GSC learning gate."
+  },
+  {
+    "keyword": "AI Tab Manager Chrome Extension",
+    "model": "builtin-gpt-5-mini",
+    "revision_count": 2,
+    "score": 35,
+    "score_delta_from_previous_same_keyword": -37,
+    "approved": false,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "Missing required section: \"Accessibility, performance impact & best practices\" — the brief requires a dedicated accessibility + performance section with verifiable checks; the draft only alludes to accessibility and does not provide any checklist or tests.",
+      "Missing required section: \"Comparison table & pricing summary (plus pros and cons)\" — there is no comparison_table, no pricing summary, and no pros/cons list as required by the brief.",
+      "Missing required section: \"FAQ\" — the article does not include an FAQ section at all.",
+      "Truncated content / incomplete audit checklist: the \"Capture OAuth/token flows\" step ends mid-sentence and the audit checklist lacks completion (no steps for inspecting background/service worker logs, storage contents, or how to analyze HAR beyond searching for a sentinel).",
+      "Missing must-have element: \"comparison_table\" — the brief mandates a compact comparison table for quick rule-in/out for enterprise use; none is present.",
+      "Missing must-have element: \"FAQ\" — required but absent.",
+      "Missing must-have element: \"accessibility_checklist\" — although accessibility is promised, there is no accessibility checklist (e.g., axe/Lighthouse commands, keyboard navigation checks, ARIA expectations) with reproducible steps.",
+      "Missing must-have element: \"pros_cons_list\" — the article lacks an explicit, bulleted pros and cons section that decision-makers expect.",
+      "Audit checklist is actionable but incomplete: network-capture test is good, but lacks alternatives (e.g., using tcpdump/Wireshark), explicit HAR parsing commands, how to decode WebSocket frames, and guidance for analyzing encrypted traffic or SNI indications when TLS hides payload.",
+      "Install/getting-started checklist is present but light on enterprise deployment details: no instructions for installing via Chrome Enterprise policies / GPO, no guidance on blocking/updating via admin console, and no notes on extension auto-updates or update_url risks beyond manifest flags.",
+      "Manifest inspection advice is good but missing concrete commands and examples: no show-how to open the extension folder from chrome://extensions (Developer mode) or CLI commands to search for .wasm/.tflite files recursively, and Linux path is missing.",
+      "No performance impact measuring steps: article mentions CPU spike hintily but lacks reproducible tests (e.g., using Chrome Task Manager, Performance tab recording, sampling intervals, memory measurements) and thresholds to guide pass/fail.",
+      "No enterprise manageability checklist: missing checks for policy support (installation_mode, allowed_types, recommended_extensions), VRP/third-party update URL handling, or recommendation to request vendor SOC/ISO attestations.",
+      "No clear remediation or risk-tier guidance: article flags risks but doesn't give an enterprise-ready risk matrix or decision criteria (e.g., allow-block conditions based on host_permissions + inference location).",
+      "Missing cross-platform file paths and exact commands: Windows and macOS paths are given but Linux path is omitted; commands to locate extension folder and tools to read manifest.json (jq, cat) are not provided.",
+      "Tone/structure: article opens with a strong promise of 'exact DevTools commands' but does not consistently deliver concrete commands (e.g., exact DevTools console expressions, chrome.* APIs to inspect, or CLI HAR search examples).",
+      "Length/coverage: brief requested ~1400 words; current draft is shorter and appears unfinished due to truncation and missing sections."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "llm_estimate",
+    "competitor_count": 0,
+    "competitor_urls": [],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-21T18:29:23.288185+00:00"
+  },
+  {
+    "keyword": "AI Tab Manager Chrome Extension",
+    "model": "builtin-gpt-5-mini",
+    "revision_count": 2,
+    "score": 83,
+    "score_delta_from_previous_same_keyword": 48,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "Mitmproxy instructions are incomplete: you don't tell readers to install/trust mitmproxy's CA in the test Chrome profile, nor to disable QUIC (--disable-quic) or other Chrome features that can bypass proxying. Without the CA install and QUIC disable guidance, HTTPS payloads will not be visible and the token test can give false negatives.",
+      "Manifest V3 / service worker handling is not addressed. The guide repeatedly assumes a persistent \"background page\" (Inspect) but many extensions use MV3 service workers which are non-persistent and require different inspection steps (e.g., \"Inspect views: Service worker\" on chrome://extensions, chrome://serviceworker-internals, chrome://inspect/#service-worker, or methods to keep the worker alive). Add explicit MV3 instructions and how to capture network activity for service workers.",
+      "PowerShell/path mistakes that will trip readers: several commands concatenate $env:LOCALAPPDATA and the subpath without a path separator (e.g. \"$env:LOCALAPPDATA\\Google\\...\" is required). The Get-ChildItem examples mix approaches (Where-Object vs -Include) and may not robustly find files; provide corrected, copy/paste-tested PowerShell commands (use Join-Path or explicit backslashes and -File/-Filter/-Include consistently).",
+      "Network capture/export steps are underspecified: you tell readers to \"record a 30s capture\" but don't explain how to export/save a HAR from the extension's DevTools Network panel (right-click → Save as HAR) or how to capture background/service-worker traffic reliably. Add precise export steps and filenames for reproducible reporting.",
+      "Proxy test caveats missing: extensions can use chrome.sockets, native messaging, or platform-native binaries which bypass the browser proxy entirely. The article should explain these failure modes and how to detect them (search for chrome.sockets usage, nativeMessaging permission, or invocation of native binaries in extension files).",
+      "Commands that are platform-ambiguous or likely to fail as written: e.g., start chrome.exe --user-data-dir on Windows may need a full path or quoting and may not be found on PATH; macOS open -a \"Google Chrome\" --args --user-data-dir works only if Chrome is at the default location. Recommend giving alternate methods or explicit examples using full paths and quoting.",
+      "Accessibility checks are high-level and lack reproducible automation options: recommend adding concrete commands/examples for running axe-core (axe browser extension or npm/CLI), how to dump the accessibility tree from DevTools, and a minimal NVDA/VoiceOver checklist (how to start the screen reader and which keystrokes to test) so reviewers can produce repeatable evidence.",
+      "Local artifact search and WASM detection could be expanded: note that model artifacts may be packaged/obfuscated or loaded from remote blobs/ArrayBuffers, so absence of .wasm/.tflite files is not definitive — provide actionable heuristics to detect runtime-loaded binaries (monitor fetch responses, look for ArrayBuffer usage, inspect DevTools Sources at runtime).",
+      "Comparison table is a template/example only: the brief asked for a comparison table and pricing summary — include an explicit empty/template table and a short reproducible checklist for each column so reviewers fill it consistently (e.g., required evidence types for \"Inference Location\" and exact artifact names to record).",
+      "Safety/privacy guidance is good but could be more prescriptive about redaction: the article says \"redact personal data\" but should recommend specific redaction techniques/tools and an explicit checklist of what to remove before publishing (tokens, session IDs, user emails, full page HTML)."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "llm_estimate",
+    "competitor_count": 0,
+    "competitor_urls": [],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-21T18:36:16.294289+00:00",
+    "auto_publish_disabled": true,
+    "correction": "Internal score passed, but this local cycle is a draft-only experiment; human review is required before publication."
+  },
+  {
+    "recorded_at": "2026-08-21T20:25:09.345313+00:00",
+    "cycle_type": "live_competitor_research_and_article_update",
+    "keyword": "AI Tab Manager Chrome Extension",
+    "site": "extensionto.com",
+    "search_method": "live search result extraction followed by full-page source reading",
+    "ranking_scope": "organic external result set returned by the live search tool; rankings can vary by location, device, and personalization",
+    "competitor_source": "live_search_extracted_organic_set",
+    "competitor_count": 4,
+    "competitors": [
+      {
+        "rank_in_live_result_set": 1,
+        "url": "https://notegpt.io/blog/top-10-ai-tab-extensions",
+        "type": "editorial listicle",
+        "structural_evidence": {
+          "h1": true,
+          "toc": true,
+          "faq": false,
+          "tables": false,
+          "word_count_estimate": 1845
+        },
+        "verified_weaknesses": [
+          "feature and marketplace descriptions dominate",
+          "no reproducible manifest, network, or storage audit"
+        ]
+      },
+      {
+        "rank_in_live_result_set": 2,
+        "url": "https://tabgroupvault.com/blog/chrome-ai-tab-organizer-guide",
+        "type": "practical guide and product-led page",
+        "structural_evidence": {
+          "h1": true,
+          "toc": false,
+          "faq": true,
+          "tables": true,
+          "word_count_estimate": 1650
+        },
+        "verified_weaknesses": [
+          "version-sensitive privacy and rollout claims need independent verification",
+          "no manifest, HAR, or extension-storage protocol"
+        ]
+      },
+      {
+        "rank_in_live_result_set": 3,
+        "url": "https://www.rabbitpair.com/en/blog/10-best-tab-manager-chrome-extensions-2025",
+        "type": "tested commercial roundup",
+        "structural_evidence": {
+          "h1": true,
+          "toc": true,
+          "faq": true,
+          "tables": true,
+          "word_count_estimate": 4300
+        },
+        "verified_weaknesses": [
+          "tested label lacks a repeatable protocol",
+          "pricing, users, ratings, and feature claims are time-sensitive",
+          "no MV3 or data-flow audit"
+        ]
+      },
+      {
+        "rank_in_live_result_set": 4,
+        "url": "https://workona.com/",
+        "type": "product landing page",
+        "structural_evidence": {
+          "h1": true,
+          "toc": false,
+          "faq": false,
+          "tables": false,
+          "word_count_estimate": 430
+        },
+        "verified_weaknesses": [
+          "marketing-led value propositions and testimonials",
+          "no independent comparison, permissions analysis, or reproducible tests"
+        ]
+      }
+    ],
+    "gap_pillars": {
+      "missing_information_gap": "No shared, reproducible data-flow and retention map covering tab URLs, page text, chrome.storage, IndexedDB, deletion, and the difference between organizing and suspending tabs.",
+      "technical_depth_gap": "No complete MV3/service-worker, host-permission, package, DevTools Network, HAR, Storage, IndexedDB, and proxy workflow with corrected Windows, macOS, and Linux examples.",
+      "user_intent_gap": "Readers receive feature lists and recommendations but not pass/investigate/fail criteria for deciding whether an extension is appropriate for sensitive browsing or managed deployment."
+    },
+    "article": {
+      "path": "public/content/articles/a/i/-/ai-tab-manager-chrome-extension-a-verification-first-buyers-guide.md",
+      "status": "draft",
+      "seo_title": "\"AI Tab Manager Chrome Extension\"",
+      "word_count": 3328,
+      "h1_count": 0,
+      "h2_count": 0,
+      "internal_links": [],
+      "placeholder_link": false
+    },
+    "references": [
+      "https://notegpt.io/blog/top-10-ai-tab-extensions",
+      "https://tabgroupvault.com/blog/chrome-ai-tab-organizer-guide",
+      "https://www.rabbitpair.com/en/blog/10-best-tab-manager-chrome-extensions-2025",
+      "https://workona.com/",
+      "https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers",
+      "https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/basics",
+      "https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions",
+      "https://developer.chrome.com/docs/extensions/get-started/tutorial/debug",
+      "https://developer.chrome.com/docs/devtools/storage/extensionstorage",
+      "https://developer.chrome.com/docs/devtools/storage/indexeddb",
+      "https://developer.chrome.com/docs/devtools/network"
+    ],
+    "human_review_required": true,
+    "auto_publish": false
   }
 ]

@@ -212,6 +212,41 @@ def fetch_page_performance(page_url: str, days: int = 28) -> dict:
     }
 
 
+def fetch_site_performance(days: int = 28) -> dict:
+    """Return site-wide GSC performance for the same finalized window.
+
+    This is a control series for conservative learning: a page-level CTR or
+    position change should not become a lesson when the whole property moved
+    in the same direction because of seasonality or a Google update.
+    """
+    end = datetime.now(timezone.utc).date() - timedelta(days=3)
+    start = end - timedelta(days=max(1, days) - 1)
+    rows = _query_search_analytics({
+        "startDate": start.isoformat(),
+        "endDate": end.isoformat(),
+        "dimensions": ["date"],
+        "type": "web",
+        "aggregationType": "auto",
+        "rowLimit": 100,
+    })
+    clicks = sum(float(r.get("clicks", 0)) for r in rows)
+    impressions = sum(float(r.get("impressions", 0)) for r in rows)
+    return {
+        "start_date": start.isoformat(),
+        "end_date": end.isoformat(),
+        "days": len(rows),
+        "clicks": round(clicks, 2),
+        "impressions": round(impressions, 2),
+        "ctr": round(clicks / impressions, 6) if impressions else 0.0,
+        "average_position": round(
+            sum(float(r.get("position", 0)) * float(r.get("impressions", 0)) for r in rows) / impressions,
+            2,
+        ) if impressions else None,
+        "daily_rows": rows,
+        "source": "google_search_console_site_baseline",
+    }
+
+
 def inspect_url(page_url: str) -> dict:
     """Return URL Inspection status for a managed property, or a safe error."""
     creds = _load_credentials()

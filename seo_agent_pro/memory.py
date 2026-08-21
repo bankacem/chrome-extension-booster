@@ -16,6 +16,43 @@ from llm_router import c
 # from the repo root (as the GitHub Actions workflow does).
 MEMORY_PATH = Path(__file__).resolve().parent / SETTINGS["memory_file"]
 
+# Mandatory protocol for every future article request.  The workflow must
+# fetch and inspect live competitors before drafting, then turn verified gaps
+# into the article structure without inventing facts or copying language.
+ADAPTIVE_SEO_PROTOCOL = {
+    "name": "Live Gap Analysis Protocol",
+    "version": "1.0",
+    "required_before_drafting": [
+        "Fetch the full content of the first three or four relevant organic results.",
+        "Exclude the target site, ads, duplicate domains, generic directories, and search snippets as evidence.",
+        "Teardown each source for missing technical information, superficial treatment, privacy/security omissions, outdated architecture, and UX gaps.",
+        "Extract three pillars: information gap, technical depth gap, and user intent gap.",
+        "Design headings, checklists, or comparison tables that directly close all three gaps.",
+    ],
+    "truthfulness_guardrails": [
+        "Treat titles, snippets, feature claims, ratings, prices, and competitor copy as hypotheses until verified on the source page.",
+        "Never claim a live competitor analysis when the source fetch failed; record the actual source and leave gap requirements unselected.",
+        "Never copy competitor wording or invent product, privacy, performance, or pricing facts.",
+        "Cite official primary documentation for technical claims and label device/version-specific observations.",
+    ],
+    "minimum_article_requirements": [
+        "Use accurate Manifest V3 and extension service-worker terminology.",
+        "Include actionable setup, permissions, network, storage, and accessibility checks when relevant.",
+        "Keep SEO title under 60 characters, avoid placeholder links/images, and require human review before publication.",
+    ],
+    "performance_learning_gate": [
+        "Do not promote positive or negative lessons without at least 500 impressions in comparable windows.",
+        "Compare page performance with the site's overall baseline before recording a lesson or pattern.",
+    ],
+    "self_reflection": "Yes. This session confirmed that the information gap, technical depth gap, and user intent gap are complementary: the first finds omitted evidence, the second converts it into accurate implementation checks, and the third turns those checks into a decision workflow. For every future article, complete the live fetch and teardown first, record the three pillars, and make the outline visibly close each one with verified facts, tables, or reproducible tests.",
+    "session_lessons": [
+        "Feature lists and a tested label do not prove privacy, performance, or reproducibility.",
+        "A current Chrome guide must use Manifest V3 service-worker terminology, not assume a permanent background page.",
+        "A local model artifact, a missing artifact, or an empty Network panel is a signal—not conclusive proof of inference location.",
+        "Network captures and storage evidence must be redacted before sharing.",
+    ],
+}
+
 
 def load() -> dict:
     if MEMORY_PATH.exists():
@@ -38,6 +75,15 @@ def load() -> dict:
 def save(mem: dict) -> None:
     mem["updated_at"] = datetime.now().isoformat()
     MEMORY_PATH.write_text(json.dumps(mem, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def save_protocols(mem: dict) -> None:
+    """Persist the mandatory workflow so future runs cannot skip live gap analysis."""
+    mem["operating_protocols"] = {
+        "adaptive_seo": ADAPTIVE_SEO_PROTOCOL,
+        "last_confirmed": datetime.now().isoformat(),
+    }
+    save(mem)
 
 
 def record_article(mem: dict, keyword: str, article: str, model: str) -> None:

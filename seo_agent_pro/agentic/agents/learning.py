@@ -39,6 +39,11 @@ def run(state: dict) -> dict:
     llm_issues = evaluation.get("llm_issues", [])
     keyword = state.get("keyword", "")
     score = evaluation.get("score", 0)
+    gsc_evidence = state.get("gsc_evidence", {}) or {}
+    # Article-generation runs normally have no finalized GSC window yet. In
+    # that case the cycle is still logged, but neither negative lessons nor
+    # positive patterns may be promoted into lessons.md.
+    gsc_learning_eligible = bool(gsc_evidence.get("eligible")) and float(gsc_evidence.get("impressions", 0)) >= 500
     previous = memory_store.previous_cycles_for_keyword(keyword, limit=5)
     previous_scores = [p.get("score") for p in previous if isinstance(p.get("score"), (int, float))]
     score_delta = score - previous_scores[-1] if previous_scores and isinstance(score, (int, float)) else None
@@ -64,7 +69,7 @@ def run(state: dict) -> dict:
         else:
             lesson = issue  # fallback: store as-is if we don't have a generalization rule for it
 
-        if memory_store.add_lesson_if_new(lesson):
+        if gsc_learning_eligible and memory_store.add_lesson_if_new(lesson):
             new_lessons.append(lesson)
 
     if new_lessons:
@@ -76,7 +81,7 @@ def run(state: dict) -> dict:
 
     final_status = state.get("final_status", "failed")
     positive_patterns: list[str] = []
-    if evaluation.get("approved") and not deterministic_issues and isinstance(score, (int, float)) and score >= 80:
+    if gsc_learning_eligible and evaluation.get("approved") and not deterministic_issues and isinstance(score, (int, float)) and score >= 80:
         if state.get("competitor_source", "").startswith("searxng") and state.get("competitor_count", 0) >= 3:
             positive_patterns.append("When real top-three competitor snapshots are available, use their structural gaps as hypotheses and cover one or two defensible gaps without copying wording or inventing product facts.")
         if state.get("internal_links_used"):
@@ -108,7 +113,11 @@ def run(state: dict) -> dict:
         "word_count": state.get("word_count", 0),
         "new_lessons": new_lessons,
         "new_positive_patterns": new_patterns,
+        "gsc_learning_eligible": gsc_learning_eligible,
+        "gsc_evidence": gsc_evidence,
     })
+    if not gsc_learning_eligible:
+        print(c("dim", "  · GSC learning gate closed: no lesson/pattern promotion without >=500 impressions and a baseline-controlled signal"))
     print(c("green", f"  ✓ cycle recorded (status: {final_status}, score delta: {score_delta})"))
 
     return {"lessons_applied": new_lessons, "positive_patterns_applied": new_patterns}
