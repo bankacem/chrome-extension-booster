@@ -211,7 +211,11 @@ def _llm_review(state: dict, model: str) -> dict:
         "the concrete checklist — grade completeness against those. "
         "unique_angle is directional color (one differentiating idea), "
         "NOT a literal second checklist — don't penalize the article for "
-        "every nuance of unique_angle not being individually addressed."
+        "every nuance of unique_angle not being individually addressed. "
+        "If competitor_gap_requirements are present, check whether the article "
+        "addresses at least one with concrete, useful guidance. Do not require "
+        "unverified competitor or product facts; reward a clearly labeled, "
+        "sourceable gap-filling angle instead."
     )
     user = f"""Keyword: "{state.get('keyword')}"
 

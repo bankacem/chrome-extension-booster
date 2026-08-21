@@ -69,6 +69,13 @@ def articles_written_count() -> int:
     return sum(1 for r in load_cycle_log() if r.get("final_status") == "published")
 
 
+def previous_cycles_for_keyword(keyword: str, limit: int = 5) -> list[dict]:
+    """Return prior runs for the same keyword in chronological order."""
+    wanted = keyword.strip().casefold()
+    matches = [r for r in load_cycle_log() if str(r.get("keyword", "")).strip().casefold() == wanted]
+    return matches[-limit:]
+
+
 # ──────────────────────────────────────────────────────────────
 #  Tier 2 — accumulating lessons file
 # ──────────────────────────────────────────────────────────────

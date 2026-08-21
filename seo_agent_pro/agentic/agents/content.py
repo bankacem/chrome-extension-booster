@@ -30,11 +30,13 @@ def run(state: dict) -> dict:
     strategy = state.get("strategy", {})
     revision_count = state.get("revision_count", 0)
     prev_eval = state.get("evaluation", {})
+    lang = state.get("lang", "en")
 
     length = strategy.get("ideal_length", 1500)
     sections = strategy.get("required_sections", [])
     angle = strategy.get("unique_angle", "")
     elements = strategy.get("must_have_elements", [])
+    competitor_gaps = strategy.get("competitor_gap_requirements", []) or []
 
     lessons = memory_store.load_lessons()
 
@@ -50,8 +52,17 @@ them in this rewrite, don't just repeat the same draft:
 
     _step(f"Writing {'(revision ' + str(revision_count + 1) + ')' if revision_count else '(first draft)'} — {length} words")
 
-    system = f"""You are a professional SEO content writer. Write in clear, engaging \
-English. Never sound robotic. Prioritize Information Gain — include unique \
+    if lang == "ar":
+        language_instruction = "Write in professional, natural Modern Standard Arabic, not literal translation."
+    elif lang == "fr":
+        language_instruction = "Write in clear, natural professional French."
+    elif lang == "es":
+        language_instruction = "Write in clear, natural professional Spanish."
+    else:
+        language_instruction = "Write in clear, engaging English."
+
+    system = f"""You are a professional SEO content writer. {language_instruction} \
+Never sound robotic. Prioritize Information Gain — include unique \
 insights not found elsewhere.
 
 Hard rules accumulated from real past mistakes on this site — follow every one:
@@ -62,6 +73,7 @@ Hard rules accumulated from real past mistakes on this site — follow every one
 Specifications:
 - Target length:    {length} words
 - Unique angle:     {angle}
+- Competitor-gap opportunities: {', '.join(competitor_gaps) if competitor_gaps else 'none selected; do not pretend competitor research exists'}
 - Must include:     {', '.join(elements) if elements else 'decide based on topic'}
 
 ⚠️ REQUIRED SECTIONS — every one of these MUST appear as its own H2 heading.
@@ -103,6 +115,7 @@ Rules:
 - Human, conversational tone
 - Add Information Gain: insights competitors missed — through better
   organization and explanation, not invented data
+- If competitor-gap opportunities are provided, address them with useful sections or checklists. Treat competitor snippets and headings as hypotheses, do not copy competitor wording, and never claim a product fact without a verifiable source.
 - Do NOT include any markdown links or images unless you have a real, complete URL for them — the Optimizer agent adds real internal links afterward
 - End on a complete sentence — never stop mid-sentence or mid-word{revision_note}"""
 

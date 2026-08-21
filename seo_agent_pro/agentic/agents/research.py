@@ -33,7 +33,12 @@ def _step(label: str) -> None:
 def _llm_competitor_analysis(keyword: str, model: str, research: dict | None) -> dict:
     if research:
         sources_block = "\n".join(
-            f'- "{r["title"]}" — {r["url"]}\n  {r["snippet"][:200]}'
+            f'- Rank {r.get("rank", "?")}: "{r.get("title", "")}" — {r.get("url", "")}\n'
+            f'  Snippet: {r.get("snippet", "")[:220]}\n'
+            f'  Page title: {r.get("page_title", "search result only")} | '
+            f'H2s: {", ".join(r.get("h2s", [])[:8]) or "not fetched"} | '
+            f'Words≈{r.get("word_count_estimate", "unknown")} | '
+            f'FAQ={r.get("has_faq_signal", "unknown")} | Table={r.get("has_table_signal", "unknown")}'
             for r in research["top_results"] if r.get("url")
         )
         system = (
@@ -55,7 +60,9 @@ Return a JSON object:
   "why_they_rank":      "main reason these results rank (depth/authority/UX/etc)"
 }}"""
         result = call_json(system, user, model)
-        result["research_source"] = "searxng"
+        result["research_source"] = research.get("source", "searxng")
+        result["competitor_count"] = research.get("competitor_count", len(research.get("top_results", [])))
+        result["competitor_snapshots"] = research.get("top_results", [])
         return result
 
     system = (
@@ -92,6 +99,9 @@ def run(state: dict) -> dict:
                         "failed) — falling back to model-estimated analysis"))
 
     competitor_data = _llm_competitor_analysis(keyword, model, research)
+    if not research:
+        competitor_data["competitor_count"] = 0
+        competitor_data["competitor_snapshots"] = []
 
     past = memory_store.relevant_past_cycles(keyword, n=3)
     if past:
@@ -106,4 +116,10 @@ def run(state: dict) -> dict:
     print(c("green", f"  ✓ {len(competitor_data.get('common_sections', []))} common sections, "
                       f"{len(competitor_data.get('missing_gaps', []))} content gaps identified"))
 
-    return {"competitor_data": competitor_data}
+    snapshots = competitor_data.get("competitor_snapshots", [])
+    return {
+        "competitor_data": competitor_data,
+        "competitor_source": competitor_data.get("research_source", "llm_estimate"),
+        "competitor_count": int(competitor_data.get("competitor_count", len(snapshots))),
+        "competitor_urls": [r.get("url", "") for r in snapshots if r.get("url")],
+    }

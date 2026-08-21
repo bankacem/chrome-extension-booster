@@ -191,7 +191,12 @@ def _find_competitor_gap(title: str, keyword: str, body: str, model: str, avoid:
     research = web_search.research_keyword(keyword)
     if research:
         sources_block = "\n".join(
-            f'- "{r["title"]}" — {r["url"]}\n  {r["snippet"][:200]}'
+            f'- Rank {r.get("rank", "?")}: "{r.get("title", "")}" — {r.get("url", "")}\n'
+            f'  Snippet: {r.get("snippet", "")[:220]}\n'
+            f'  Page title: {r.get("page_title", "search result only")} | '
+            f'H2s: {", ".join(r.get("h2s", [])[:8]) or "not fetched"} | '
+            f'Words≈{r.get("word_count_estimate", "unknown")} | '
+            f'FAQ={r.get("has_faq_signal", "unknown")} | Table={r.get("has_table_signal", "unknown")}'
             for r in research["top_results"] if r.get("url")
         )
         system = (
@@ -234,7 +239,9 @@ Return JSON:
 If you genuinely can't identify a real, specific, non-generic gap, set
 gap_found to false rather than inventing a weak one."""
     result = call_json(system, user, model, max_tokens=1200)
-    result["research_source"] = "searxng" if research else "llm_estimate"
+    result["research_source"] = research.get("source", "searxng") if research else "llm_estimate"
+    result["competitor_count"] = research.get("competitor_count", len(research.get("top_results", []))) if research else 0
+    result["competitor_urls"] = [r.get("url", "") for r in research.get("top_results", []) if r.get("url")] if research else []
     return result
 
 

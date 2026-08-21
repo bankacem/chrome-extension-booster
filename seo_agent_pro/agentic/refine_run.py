@@ -176,6 +176,10 @@ def refine_one(path: Path, model: str) -> dict:
         "llm_issues": [],
         "category": fm.get("category"),
         "final_status": "refined",
+        "competitor_source": gap.get("research_source", "llm_estimate"),
+        "competitor_count": gap.get("competitor_count", 0),
+        "competitor_urls": gap.get("competitor_urls", []),
+        "gaps_added_titles": result.get("gaps_added_titles", []),
         "notes": (
             f"Metadata changes: {list(result.get('metadata_changes', {}).keys())}. "
             f"Gap added: {result.get('gap_added')}"

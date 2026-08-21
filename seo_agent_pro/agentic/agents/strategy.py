@@ -53,6 +53,12 @@ def run(state: dict) -> dict:
         "section down to a fragment. A focused 6-section, 1400-word "
         "article that's actually complete beats an ambitious 20-section "
         "outline that never gets finished.\n\n"
+        "When real competitor research is available, use the top-three snapshots as evidence. "
+        "Turn only defensible missing gaps into 1-3 competitor_gap_requirements. "
+        "Treat snippets and headings as hypotheses, never as proof of product facts; "
+        "do not copy competitor wording or claim a competitor feature without a source. "
+        "If research is unavailable, leave competitor_gap_requirements empty rather "
+        "than pretending the model inspected search results.\n\n"
         "unique_angle should be ONE differentiating idea in 1-2 sentences "
         "(e.g. 'focus on remote-work-specific pain points competitors "
         "ignore') — not a second checklist of extra sections, data "
@@ -73,12 +79,23 @@ Decide and return JSON:
   "ideal_length":       0,
   "required_sections":  ["list of H2 headings to include"],
   "must_have_elements": ["table|FAQ|statistics|comparison|checklist|..."],
+  "competitor_gap_requirements": ["specific, verifiable gaps to cover; max 3"],
   "unique_angle":       "what makes this article stand out",
   "strategy":           "aggressive or strategic",
   "reasoning":          "one-sentence explanation"
 }}"""
 
     strategy = call_json(system, user, model)
+
+    # Keep competitor gaps explicit and bounded so Content can cover them
+    # deliberately without turning every model speculation into a hard claim.
+    raw_gaps = strategy.get("competitor_gap_requirements", []) or []
+    if not isinstance(raw_gaps, list):
+        raw_gaps = []
+    real_research = str(competitor_data.get("research_source", "")).startswith("searxng")
+    if not real_research:
+        raw_gaps = []
+    strategy["competitor_gap_requirements"] = [str(g).strip() for g in raw_gaps[:3] if str(g).strip()]
 
     # Defense in depth: don't just trust the prompt — deterministically
     # strip any element the model asked for anyway that a static Markdown
@@ -135,5 +152,7 @@ Decide and return JSON:
 
     print(c("green", f"  ✓ {strategy.get('strategy','?').upper()} strategy, "
                       f"~{strategy.get('ideal_length','?')} words, angle: {strategy.get('unique_angle','?')}"))
+    if strategy.get("competitor_gap_requirements"):
+        print(c("dim", f"  · competitor gaps selected: {len(strategy['competitor_gap_requirements'])}"))
 
     return {"strategy": strategy}

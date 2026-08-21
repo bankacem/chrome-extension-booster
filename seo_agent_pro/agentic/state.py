@@ -32,6 +32,9 @@ class GraphState(TypedDict, total=False):
 
     # ── research agent output ──
     competitor_data: dict
+    competitor_source: str
+    competitor_count: int
+    competitor_urls: list[str]
 
     # ── strategy agent output ──
     strategy: dict
@@ -52,9 +55,12 @@ class GraphState(TypedDict, total=False):
 
     # ── evaluator agent output ──
     evaluation: EvaluationResult
+    evaluation_history: list[EvaluationResult]
 
     # ── learning agent output ──
     lessons_applied: list[str]      # which past lessons were injected into this run
+    positive_patterns_applied: list[str]
+    gaps_added_titles: list[str]
 
     # ── final ──
     final_status: str               # "published" | "needs_human_review" | "failed"
