@@ -13,7 +13,7 @@
     {"id":"Worker-04","slug":"pro-student-chrome-extensions-the-ultimate-academic-stack","branch":"refine/pro-student-chrome-extensions-the-ultimate-academic-stack","status":"queued"},
     {"id":"Worker-05","slug":"professional-browser-tools-guide","branch":"refine/professional-browser-tools-guide","status":"queued"},
     {"id":"Worker-06","slug":"google-chrome-programm-en-14","branch":"refine/google-chrome-programm-en-14","status":"queued"},
-    {"id":"Worker-07","slug":"pro-essential-chrome-extensions-the-ultimate-guide","branch":"refine/pro-essential-chrome-extensions-the-ultimate-guide","status":"queued"},
+    {"id":"Worker-07","slug":"pro-essential-chrome-extensions-the-ultimate-guide","branch":"refine/pro-essential-chrome-extensions-the-ultimate-guide","status":"merged","integration_commit":"13bd48915056805b467a68a32b8c1518207e83a2","worker_commit":"8d4430f2e4b0a016a2de26a1384491b33398352d","html_bytes":21035,"schema":{"Article":1,"BreadcrumbList":1,"FAQPage":0,"HowTo":0},"tests":{"sync_articles":"passed","build":"passed","typecheck":"passed","performance":"passed","seo":"passed","links":"passed","diff_check":"passed"}},
     {"id":"Worker-08","slug":"how-to-create-complex-excel-formulas-easily","branch":"refine/how-to-create-complex-excel-formulas-easily","status":"queued"},
     {"id":"Worker-09","slug":"stop-chrome-from-freezing-on-low-end-pcs-7","branch":"refine/stop-chrome-from-freezing-on-low-end-pcs-7","status":"queued"},
     {"id":"Worker-10","slug":null,"branch":"integration/wave-1","status":"reserved","role":"integration"}

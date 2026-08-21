@@ -26,10 +26,20 @@
 | Worker-04 | Pro Student Chrome Extensions: The Ultimate Academic Stack | `public/content/articles/p/r/o/pro-student-chrome-extensions-the-ultimate-academic-stack.md` | `pro-student-chrome-extensions-the-ultimate-academic-stack` | `refine/pro-student-chrome-extensions-the-ultimate-academic-stack` | `queued` | Article file and its audit only |
 | Worker-05 | Professional Browser Tools Guide | `public/content/articles/p/r/o/professional-browser-tools-guide.md` | `professional-browser-tools-guide` | `refine/professional-browser-tools-guide` | `queued` | Article file and its audit only |
 | Worker-06 | Mastering Google Chrome Programmé en | `public/content/articles/g/o/o/google-chrome-programm-en-14.md` | `google-chrome-programm-en-14` | `refine/google-chrome-programm-en-14` | `queued` | Article file and its audit only |
-| Worker-07 | Pro Essential Chrome Extensions: The Ultimate Guide | `public/content/articles/p/r/o/pro-essential-chrome-extensions-the-ultimate-guide.md` | `pro-essential-chrome-extensions-the-ultimate-guide` | `refine/pro-essential-chrome-extensions-the-ultimate-guide` | `ready_for_merge` | Article file and its audit only |
+| Worker-07 | Pro Essential Chrome Extensions: The Ultimate Guide | `public/content/articles/p/r/o/pro-essential-chrome-extensions-the-ultimate-guide.md` | `pro-essential-chrome-extensions-the-ultimate-guide` | `refine/pro-essential-chrome-extensions-the-ultimate-guide` | `merged` | Article file and its audit only |
 | Worker-08 | How to Create Complex Excel Formulas Easily | `public/content/articles/h/o/w/how-to-create-complex-excel-formulas-easily.md` | `how-to-create-complex-excel-formulas-easily` | `refine/how-to-create-complex-excel-formulas-easily` | `queued` | Article file and its audit only |
 | Worker-09 | Stop Chrome From Freezing on Low-End PCs | `public/content/articles/s/t/o/stop-chrome-from-freezing-on-low-end-pcs-7.md` | `stop-chrome-from-freezing-on-low-end-pcs-7` | `refine/stop-chrome-from-freezing-on-low-end-pcs-7` | `queued` | Article file and its audit only |
 | Worker-10 | Integration and release coordinator | Repository-wide review only | n/a | `integration/wave-1` | `reserved` | Owns sequential merge, index, sitemap, and release gate |
+
+## Integration decision log
+
+### Worker-07 — `pro-essential-chrome-extensions-the-ultimate-guide`
+
+- **Worker branch and commit:** `refine/pro-essential-chrome-extensions-the-ultimate-guide` at `8d4430f2e4b0a016a2de26a1384491b33398352d`.
+- **Integration commit:** `13bd48915056805b467a68a32b8c1518207e83a2`.
+- **Files accepted:** assigned article, its audit, the branch-local index change, and the Worker-07 status row. No other article was changed; no shared sitemap change was introduced.
+- **Rendered validation:** article HTML `21,035` bytes; `Article` 1, `BreadcrumbList` 1, `FAQPage` 0, `HowTo` 0. The article intentionally has no visible FAQ.
+- **Release gate:** `sync-articles`, `build`, `typecheck`, `test:performance`, `test:seo`, `test:links`, and `git diff --check` all passed. The initial sync attempt was blocked by missing local `tsx`; after installing the locked dependencies, the same cycle passed.
 
 ## Completed baseline articles
 
