@@ -24,6 +24,7 @@ import json
 import os
 import re
 import sys
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -158,6 +159,9 @@ def refine_one(path: Path, model: str) -> dict:
         "keyword": (fm.get("keywords") or [fm.get("title", "")])[0],
     })
 
+    # Refinements are attributed to the fictional editorial reviewer profile.
+    result["frontmatter"]["author"] = "Frah Nssim"
+    result["frontmatter"]["last_updated"] = date.today().isoformat()
     _write_back(path, result["frontmatter"], result["body"])
     _mark_refined(fm.get("slug", str(path)))
 
