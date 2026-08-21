@@ -517,7 +517,7 @@ def main():
         f"category: {category}",
         f"tags:{yaml_list([])}",
         f"keywords:{yaml_list([keyword])}",
-        "author: Admin",
+        "author: Miccart Phen",
         f"published_at: {datetime.now(timezone.utc).strftime('%Y-%m-%d')}",
         f"read_time: {read_time}",
         "---",

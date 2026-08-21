@@ -73,7 +73,7 @@ def write_article_file(final_state: dict) -> Path:
         f"category: {category}",
         f"tags:{legacy.yaml_list([])}",
         f"keywords:{legacy.yaml_list([keyword])}",
-        "author: Admin",
+        "author: Miccart Phen",
         f"published_at: {datetime.now(timezone.utc).strftime('%Y-%m-%d')}",
         f"read_time: {read_time}",
         "---",

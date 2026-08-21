@@ -319,7 +319,8 @@ const BlogPost = () => {
     "author": {
       "@type": editorialProfile.type,
       "name": editorialProfile.name,
-      "url": `${window.location.origin}${editorialProfile.url}`
+      "url": `${window.location.origin}${editorialProfile.url}`,
+      "image": `${window.location.origin}${resolveImagePath(editorialProfile.image)}`
     },
     "reviewedBy": {
       "@type": "Organization",
@@ -409,9 +410,22 @@ const BlogPost = () => {
           <header className="mb-8">
             <h1 className="mb-4 font-heading text-3xl font-bold md:text-5xl">{article.title}</h1>
             <div className="rounded-xl border border-border/60 bg-card/60 p-4 text-sm text-muted-foreground">
-              <p>
-                Written by <Link to={editorialProfile.url} className="font-medium text-foreground hover:text-primary">{editorialProfile.name}</Link> · {editorialProfile.role}
-              </p>
+              <div className="flex items-center gap-3">
+                <img
+                  src={resolveImagePath(editorialProfile.image)}
+                  alt={`${editorialProfile.name} author portrait`}
+                  width={48}
+                  height={48}
+                  loading="lazy"
+                  className="h-12 w-12 rounded-full object-cover ring-2 ring-border"
+                />
+                <div>
+                  <p>
+                    Written by <Link to={editorialProfile.url} className="font-medium text-foreground hover:text-primary">{editorialProfile.name}</Link>
+                  </p>
+                  <p className="mt-0.5">{editorialProfile.role}</p>
+                </div>
+              </div>
               <p className="mt-1">
                 Published {article.published_at ? new Date(article.published_at).toLocaleDateString() : ""}
                 {article.updated_at && ` · Updated ${new Date(article.updated_at).toLocaleDateString()}`}
