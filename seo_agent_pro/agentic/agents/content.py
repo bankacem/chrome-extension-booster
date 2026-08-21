@@ -131,7 +131,44 @@ Rules:
             title = line.strip()[2:].strip()
             body_start = i + 1
             break
-    body = "\n".join(lines[body_start:]).strip()
+    else:
+        # Some OpenAI-compatible models return a visually clear title without
+        # the Markdown marker. Treat the first non-empty line as H1 rather than
+        # letting the evaluator misread the entire article structure.
+        for i, line in enumerate(lines):
+            stripped = line.strip()
+            if not stripped:
+                continue
+            lower_stripped = stripped.lower()
+            if lower_stripped.startswith("strong hook") or lower_stripped in {"introduction", "intro", "opening"}:
+                title = keyword
+                body_start = i + 1
+            else:
+                title = stripped
+                body_start = i + 1
+            break
+
+    body_lines = lines[body_start:]
+    # Defense in depth: the prompt requires H2s, but a model may emit section
+    # names as plain lines. Promote only lines that substantially match a
+    # required section, never arbitrary prose, so heading-based evaluation is
+    # faithful to the article's visible structure.
+    def _norm_heading(value: str) -> str:
+        return re.sub(r"[^a-z0-9 ]", "", value.lower()).strip()
+
+    normalized_sections = [_norm_heading(str(s)) for s in sections if str(s).strip()]
+    for idx, line in enumerate(body_lines):
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        norm_line = _norm_heading(stripped)
+        for norm_section in normalized_sections:
+            section_words = set(norm_section.split())
+            line_words = set(norm_line.split())
+            if section_words and len(line_words) <= max(12, int(len(section_words) * 1.5)) and (norm_line == norm_section or len(section_words & line_words) / len(section_words) >= 0.5):
+                body_lines[idx] = f"## {stripped}"
+                break
+    body = "\n".join(body_lines).strip()
 
     word_count = len(body.split())
     print(c("green", f"  ✓ draft complete — {word_count} words, title: \"{title}\""))

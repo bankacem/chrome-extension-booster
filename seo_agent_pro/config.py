@@ -25,6 +25,9 @@ API_KEYS = {
     # an OAuth access token will NOT work here and typically expires within
     # an hour, so don't paste one of those into this variable.
     "gemini": os.getenv("GEMINI_KEY", ""),
+    # Manus built-in OpenAI-compatible proxy for local, reproducible tests.
+    # Credentials are injected by the sandbox and are never committed.
+    "openai_compat": os.getenv("OPENAI_API_KEY", ""),
 }
 
 # ──────────────────────────────────────────────────────────────
@@ -41,6 +44,9 @@ MODELS = {
     # ── OpenRouter ─────────────────────────────────────────────
     "gpt-4o":               ("openrouter",  "openai/gpt-4o"),
     "gpt-4o-mini":          ("openrouter",  "openai/gpt-4o-mini"),
+
+    # ── Manus built-in OpenAI-compatible proxy ──────────────────
+    "builtin-gpt-5-mini":   ("openai_compat", "gpt-5-mini"),
 
     # ── Groq (ultra-fast) ──────────────────────────────────────
     # Groq — llama-3.1-70b-versatile / llama-3.3-70b-versatile were BOTH

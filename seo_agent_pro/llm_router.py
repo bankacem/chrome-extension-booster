@@ -3,6 +3,7 @@ LLM Router — Handles Anthropic, OpenRouter, Groq, and Bluesminds (experimental
 """
 
 import anthropic
+import os
 import urllib.request
 import urllib.error
 import json
@@ -338,6 +339,47 @@ def _call_agentrouter(model_id: str, system: str, user: str, stream: bool, max_t
 
 
 # ──────────────────────────────────────────────────────────────
+#  Manus built-in OpenAI-compatible proxy (GPT-5 family)
+# ──────────────────────────────────────────────────────────────
+
+def _call_openai_compat(model_id: str, system: str, user: str, stream: bool, max_tokens: int) -> str:
+    """Call the sandbox's OpenAI-compatible proxy.
+
+    GPT-5 uses max_completion_tokens and the proxy currently does not expose
+    streaming. The caller's stream preference is therefore intentionally
+    ignored for this provider.
+    """
+    base = os.getenv("OPENAI_API_BASE", "").rstrip("/")
+    if not base:
+        raise ValueError("OPENAI_API_BASE is not set")
+    url = f"{base}/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {API_KEYS['openai_compat']}",
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "model": model_id,
+        "max_completion_tokens": max_tokens,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
+        ],
+        "stream": False,
+    }
+    req = urllib.request.Request(url, json.dumps(payload).encode(), headers)
+    with urllib.request.urlopen(req, timeout=180) as resp:
+        body = json.loads(resp.read().decode("utf-8"))
+    try:
+        content = body["choices"][0]["message"]["content"]
+    except (KeyError, IndexError, TypeError) as exc:
+        raise ValueError(f"OpenAI-compatible proxy returned unexpected response: {body!r}") from exc
+    if not content:
+        raise ValueError(f"OpenAI-compatible proxy returned empty content: {body!r}")
+    print(content)
+    return content
+
+
+# ──────────────────────────────────────────────────────────────
 #  Public API
 # ──────────────────────────────────────────────────────────────
 
@@ -391,6 +433,8 @@ def call(
                 return _call_bluesminds(model_id, system, user, stream, effective_max_tokens)
             elif provider == "agentrouter":
                 return _call_agentrouter(model_id, system, user, stream, effective_max_tokens)
+            elif provider == "openai_compat":
+                return _call_openai_compat(model_id, system, user, stream, effective_max_tokens)
             else:
                 print(c("red", f"  ✗ Unknown provider: {provider}"))
                 sys.exit(1)

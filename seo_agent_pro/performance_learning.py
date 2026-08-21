@@ -11,7 +11,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from gsc_client import fetch_page_performance, inspect_url
+from gsc_client import fetch_page_performance, fetch_site_performance, inspect_url
 from agentic import memory_store
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -47,22 +47,50 @@ def _page_url(article: dict) -> str:
     return f"https://extensionto.com/blog/{article['slug']}"
 
 
-def _propose_evidence_lessons(previous: list[dict], current: dict) -> list[str]:
-    """Return lessons only for repeated, measurable signals; avoid causality claims."""
-    if not previous or current.get("impressions", 0) < 100:
+MIN_LEARNING_IMPRESSIONS = 500
+
+
+def _propose_evidence_lessons(
+    previous_rows: list[dict],
+    current: dict,
+    current_baseline: dict,
+) -> list[str]:
+    """Return conservative lessons only after page + site-control evidence.
+
+    Two comparable windows are required. The page must have at least 500
+    impressions in both windows, and the page signal must beat the site's
+    aggregate movement rather than merely move during a global trend.
+    """
+    if not previous_rows:
         return []
-    prior = previous[-1]
-    if prior.get("impressions", 0) < 100:
+    prior_row = previous_rows[-1]
+    prior = prior_row.get("performance", {})
+    prior_baseline = prior_row.get("site_baseline", {})
+    if min(float(current.get("impressions", 0)), float(prior.get("impressions", 0))) < MIN_LEARNING_IMPRESSIONS:
         return []
-    lessons: list[str] = []
+    if min(float(current_baseline.get("impressions", 0)), float(prior_baseline.get("impressions", 0))) < MIN_LEARNING_IMPRESSIONS:
+        return []
+
     current_ctr = float(current.get("ctr", 0))
     prior_ctr = float(prior.get("ctr", 0))
+    site_ctr_delta = float(current_baseline.get("ctr", 0)) - float(prior_baseline.get("ctr", 0))
+    page_ctr_delta = current_ctr - prior_ctr
     current_position = current.get("average_position")
     prior_position = prior.get("average_position")
-    if current_ctr - prior_ctr >= 0.01 and current_position is not None and prior_position is not None and abs(current_position - prior_position) <= 3:
-        lessons.append("Treat a sustained CTR increase of at least one percentage point across comparable GSC windows, without a large position change, as evidence worth studying in the article's title and meta description; do not assume causality from one window.")
-    if prior_position is not None and current_position is not None and prior_position - current_position >= 2 and current.get("impressions", 0) >= 100:
-        lessons.append("When a page's average GSC position improves by at least two positions with meaningful impressions, preserve the article's intent coverage and internal-link structure as a candidate successful pattern; verify across another window before generalizing.")
+    current_site_position = current_baseline.get("average_position")
+    prior_site_position = prior_baseline.get("average_position")
+    if None in {current_position, prior_position, current_site_position, prior_site_position}:
+        return []
+
+    lessons: list[str] = []
+    page_position_change = float(prior_position) - float(current_position)
+    site_position_change = float(prior_site_position) - float(current_site_position)
+    # +1 percentage point beyond the site's own CTR movement, with stable page position.
+    if page_ctr_delta >= 0.01 and (page_ctr_delta - site_ctr_delta) >= 0.01 and abs(float(current_position) - float(prior_position)) <= 3:
+        lessons.append("Across comparable GSC windows with at least 500 page impressions, a page-level CTR increase of at least one percentage point beyond the site's baseline, with stable average position, is evidence worth studying in the title and meta description; it is not proof of causality.")
+    # Two-position page improvement that is not explained by a site-wide shift.
+    if page_position_change >= 2 and (page_position_change - site_position_change) >= 2:
+        lessons.append("Across comparable GSC windows with at least 500 page impressions, preserve intent coverage and internal-link structure as candidate successful patterns when page position improves by at least two positions beyond the site's baseline; verify another window before generalizing.")
     return lessons
 
 
@@ -77,6 +105,7 @@ def run(limit: int = 25, slug: str | None = None) -> dict:
     for article in articles:
         url = _page_url(article)
         performance = fetch_page_performance(url)
+        site_baseline = fetch_site_performance()
         inspection = inspect_url(url)
         snapshot = {
             "slug": article["slug"],
@@ -84,13 +113,14 @@ def run(limit: int = 25, slug: str | None = None) -> dict:
             "url": url,
             "recorded_at": datetime.now(timezone.utc).isoformat(),
             "performance": performance,
+            "site_baseline": site_baseline,
             "inspection": inspection,
         }
-        prior = [
-            row["performance"] for row in log
+        prior_rows = [
+            row for row in log
             if row.get("slug") == article["slug"] and row.get("performance", {}).get("source") == performance.get("source")
         ]
-        for lesson in _propose_evidence_lessons(prior, performance):
+        for lesson in _propose_evidence_lessons(prior_rows, performance, site_baseline):
             if memory_store.add_positive_pattern_if_new(lesson):
                 lessons_added.append(lesson)
         snapshots.append(snapshot)

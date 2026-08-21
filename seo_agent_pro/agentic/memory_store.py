@@ -232,10 +232,22 @@ def relevant_past_cycles(keyword: str, n: int = 3) -> list[dict]:
         text = f"{rec.get('keyword','')} — issues: {'; '.join(rec.get('deterministic_issues', []) + rec.get('llm_issues', []))}"
         docs.append(text)
         ids.append(str(i))
+        raw_score = rec.get("score", 0)
+        # Chroma metadata accepts scalar primitives but not JSON null. Some
+        # earlier refinement cycles intentionally had no score, so normalize
+        # those records instead of letting semantic retrieval crash a run.
+        if raw_score is None:
+            raw_score = 0
+        try:
+            raw_score = float(raw_score)
+            if raw_score.is_integer():
+                raw_score = int(raw_score)
+        except (TypeError, ValueError):
+            raw_score = 0
         metadatas.append({
-            "keyword": rec.get("keyword", ""),
-            "score": rec.get("score", 0),
-            "final_status": rec.get("final_status", ""),
+            "keyword": str(rec.get("keyword", "")),
+            "score": raw_score,
+            "final_status": str(rec.get("final_status", "")),
         })
 
     collection.add(documents=docs, ids=ids, metadatas=metadatas)

@@ -18,6 +18,7 @@ was too long; only the draft does.
 
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
@@ -48,7 +49,12 @@ def _increment_revision(state: GraphState) -> dict:
 
 
 def _finalize_approved(state: GraphState) -> dict:
-    return {"final_status": "published"}
+    # Human review is mandatory by default. Auto-publishing is an explicit,
+    # opt-in exception for a separately controlled deployment environment.
+    if os.getenv("SEO_AGENT_ALLOW_AUTO_PUBLISH") == "1":
+        return {"final_status": "published"}
+    print(f"\n{c('yellow', '⚠')} Draft passed internal checks, but auto-publish is disabled; routing to human review.")
+    return {"final_status": "needs_human_review"}
 
 
 def _finalize_exhausted(state: GraphState) -> dict:

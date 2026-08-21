@@ -225,7 +225,7 @@ Strategy brief:
 Article title: {state.get('title')}
 
 Article body:
-{state.get('body', '')[:6000]}
+{state.get('body', '')[:18000]}
 
 Evaluate against the brief and general quality standards. Return JSON:
 {{
