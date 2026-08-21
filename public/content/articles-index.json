@@ -17475,34 +17475,34 @@
     "updated_at": "2026-03-06T18:33:06.802004+00:00"
   },
   {
-    "id": "chrome-ram-guide",
-    "title": "The Ultimate Chrome RAM Usage Guide: Optimize Performance in 2026",
+    "id": "9c7c917a-7e28-4df4-92c0-8b14e13b2f71",
+    "title": "Chrome Using Too Much RAM? How to Diagnose and Reduce Memory",
     "slug": "chrome-ram-guide",
-    "description": "Chrome using too much RAM? See the settings, extensions, and habits that actually cut memory usage, tested across 50 tabs and multiple configurations.",
-    "meta_description": "Chrome using too much RAM? See the settings, extensions, and habits that actually cut memory usage, tested across 50 tabs and multiple configurations.",
-    "excerpt": "I tested Chrome's RAM usage across 50 tabs and multiple configurations to find which settings, extensions, and habits save the most memory.",
+    "description": "Chrome using too much RAM? Diagnose the real cause with Chrome Task Manager, then reduce memory usage with safer tab, extension, and Performance settings.",
+    "meta_description": "Chrome using too much RAM? Diagnose the real cause with Chrome Task Manager, then reduce memory usage with safer tab, extension, and Performance settings.",
+    "excerpt": "Learn how to find the tab or extension using the most memory, configure Chrome’s performance controls, and reduce RAM usage without losing important work.",
     "published_at": "2026-01-20",
     "category": "Productivity & Tools",
     "author": "James Mitchell",
     "image_url": "/content/images/chrome-ram-guide/featured.webp",
     "featured_image": "/content/images/chrome-ram-guide/featured.webp",
-    "reading_time": 9,
-    "read_time": 9,
+    "reading_time": 8,
+    "read_time": 8,
     "views": 0,
     "tags": [
-      "Chrome",
-      "RAM",
-      "Optimization",
-      "Browser Tips"
+      "Chrome performance",
+      "RAM usage",
+      "Memory Saver",
+      "tab management"
     ],
     "keywords": [
-      "chrome ram usage",
-      "reduce chrome memory",
-      "tab suspender",
-      "chrome performance guide"
+      "chrome using too much ram",
+      "reduce chrome memory usage",
+      "chrome memory saver",
+      "chrome task manager"
     ],
     "canonicalPath": "/blog/chrome-ram-guide",
-    "updated_at": "2026-01-20"
+    "updated_at": "2026-08-21T00:00:00.000+00:00"
   },
   {
     "id": "pillar-idm-extension",
