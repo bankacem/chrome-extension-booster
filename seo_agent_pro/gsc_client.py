@@ -145,3 +145,108 @@ def fetch_opportunity_keywords(max_results: int = 15) -> list[dict]:
 
     opportunities.sort(key=lambda x: x["impressions"], reverse=True)
     return opportunities[:max_results]
+
+
+INSPECTION_URL = "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect"
+
+
+def _query_search_analytics(payload: dict) -> list[dict]:
+    """Run one authorized Search Analytics query and return rows safely."""
+    creds = _load_credentials()
+    if creds is None:
+        return []
+    token = _get_access_token(creds)
+    if not token:
+        return []
+    try:
+        resp = requests.post(
+            QUERY_URL,
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+            json=payload,
+            timeout=TIMEOUT_SECONDS,
+        )
+    except Exception as exc:
+        print(f"  ⚠ GSC: analytics request failed: {exc}")
+        return []
+    if not resp.ok:
+        print(f"  ⚠ GSC: analytics returned {resp.status_code}: {resp.text[:300]}")
+        return []
+    try:
+        return resp.json().get("rows", [])
+    except Exception as exc:
+        print(f"  ⚠ GSC: analytics JSON failed: {exc}")
+        return []
+
+
+def fetch_page_performance(page_url: str, days: int = 28) -> dict:
+    """Return daily web performance for one page over the last finalized window."""
+    end = datetime.now(timezone.utc).date() - timedelta(days=3)
+    start = end - timedelta(days=max(1, days) - 1)
+    rows = _query_search_analytics({
+        "startDate": start.isoformat(),
+        "endDate": end.isoformat(),
+        "dimensions": ["date"],
+        "type": "web",
+        "dimensionFilterGroups": [{"groupType": "and", "filters": [
+            {"dimension": "page", "operator": "equals", "expression": page_url}
+        ]}],
+        "aggregationType": "auto",
+        "rowLimit": 100,
+    })
+    clicks = sum(float(r.get("clicks", 0)) for r in rows)
+    impressions = sum(float(r.get("impressions", 0)) for r in rows)
+    return {
+        "page": page_url,
+        "start_date": start.isoformat(),
+        "end_date": end.isoformat(),
+        "days": len(rows),
+        "clicks": round(clicks, 2),
+        "impressions": round(impressions, 2),
+        "ctr": round(clicks / impressions, 6) if impressions else 0.0,
+        "average_position": round(
+            sum(float(r.get("position", 0)) * float(r.get("impressions", 0)) for r in rows) / impressions,
+            2,
+        ) if impressions else None,
+        "daily_rows": rows,
+        "source": "google_search_console_search_analytics",
+    }
+
+
+def inspect_url(page_url: str) -> dict:
+    """Return URL Inspection status for a managed property, or a safe error."""
+    creds = _load_credentials()
+    if creds is None:
+        return {"url": page_url, "status": "unavailable", "reason": "missing_credentials"}
+    token = _get_access_token(creds)
+    if not token:
+        return {"url": page_url, "status": "unavailable", "reason": "token_refresh_failed"}
+    try:
+        resp = requests.post(
+            INSPECTION_URL,
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+            json={"inspectionUrl": page_url, "siteUrl": SITE_URL, "languageCode": "en-US"},
+            timeout=TIMEOUT_SECONDS,
+        )
+    except Exception as exc:
+        return {"url": page_url, "status": "unavailable", "reason": str(exc)[:200]}
+    if not resp.ok:
+        return {"url": page_url, "status": "unavailable", "http_status": resp.status_code, "reason": resp.text[:300]}
+    try:
+        result = resp.json().get("inspectionResult", {})
+        index = result.get("indexStatusResult", {})
+        return {
+            "url": page_url,
+            "status": "ok",
+            "verdict": index.get("verdict"),
+            "coverage_state": index.get("coverageState"),
+            "robots_txt_state": index.get("robotsTxtState"),
+            "indexing_state": index.get("indexingState"),
+            "last_crawl_time": index.get("lastCrawlTime"),
+            "google_canonical": index.get("googleCanonical"),
+            "user_canonical": index.get("userCanonical"),
+            "page_fetch_state": index.get("pageFetchState"),
+            "rich_results": result.get("richResultsResult", {}),
+            "source": "google_search_console_url_inspection",
+        }
+    except Exception as exc:
+        return {"url": page_url, "status": "unavailable", "reason": f"response_parse:{exc}"}

@@ -1,0 +1,73 @@
+name: SEO performance learning
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Optional article slug to inspect"
+        required: false
+        default: ""
+  schedule:
+    - cron: "17 3 * * 1"
+
+jobs:
+  measure-and-propose:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install -r seo_agent_pro/requirements.txt
+
+      - name: Collect GSC performance and index status
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          ARTICLE_SLUG: ${{ github.event.inputs.slug }}
+        run: |
+          set -o pipefail
+          if [ -n "$ARTICLE_SLUG" ]; then
+            python3 seo_agent_pro/performance_learning.py --slug "$ARTICLE_SLUG" | tee /tmp/performance_learning.json
+          else
+            python3 seo_agent_pro/performance_learning.py | tee /tmp/performance_learning.json
+          fi
+
+      - name: Create review branch and commit evidence
+        id: commit
+        run: |
+          set -e
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          BRANCH="seo-performance/$(date -u +%G-%V)"
+          git checkout -B "$BRANCH"
+          git add seo_agent_pro/agentic/memory/performance_log.json seo_agent_pro/agentic/memory/lessons.md
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore(seo): record Google performance learning"
+          git push origin "$BRANCH" --force
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Open Pull Request for review
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr create \
+            --base main \
+            --head "${{ steps.commit.outputs.branch }}" \
+            --title "SEO performance learning: $(date -u +%G-%V)" \
+            --body-file /tmp/performance_learning.json
