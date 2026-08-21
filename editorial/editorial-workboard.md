@@ -20,14 +20,14 @@
 
 | Worker | Article title | Article path | Slug | Branch | Status | Ownership rule |
 |---|---|---|---|---|---|---|
-| Worker-01 | How to Get the Most Out of Your Browser with Extension Get Chrome | `public/content/articles/h/o/w/how-to-get-the-most-out-of-your-browser-with-extension-chrome-get.md` | `how-to-get-the-most-out-of-your-browser-with-extension-chrome-get` | `refine/how-to-get-the-most-out-of-your-browser-with-extension-chrome-get` | `queued` | Article file and its audit only |
-| Worker-02 | Pro Browsing Chrome Extensions: The Ultimate Workflow Upgrade for Power Users | `public/content/articles/p/r/o/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users.md` | `pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users` | `refine/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users` | `queued` | Article file and its audit only |
-| Worker-03 | How to Fix Chrome High Memory Usage: The Ultimate 2026 Speed Up Guide | `public/content/articles/h/o/w/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide.md` | `how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide` | `refine/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide` | `queued` | Article file and its audit only |
-| Worker-04 | Pro Student Chrome Extensions: The Ultimate Academic Stack | `public/content/articles/p/r/o/pro-student-chrome-extensions-the-ultimate-academic-stack.md` | `pro-student-chrome-extensions-the-ultimate-academic-stack` | `refine/pro-student-chrome-extensions-the-ultimate-academic-stack` | `queued` | Article file and its audit only |
-| Worker-05 | Professional Browser Tools Guide | `public/content/articles/p/r/o/professional-browser-tools-guide.md` | `professional-browser-tools-guide` | `refine/professional-browser-tools-guide` | `queued` | Article file and its audit only |
-| Worker-06 | Mastering Google Chrome Programmé en | `public/content/articles/g/o/o/google-chrome-programm-en-14.md` | `google-chrome-programm-en-14` | `refine/google-chrome-programm-en-14` | `queued` | Article file and its audit only |
+| Worker-01 | How to Get the Most Out of Your Browser with Extension Get Chrome | `public/content/articles/h/o/w/how-to-get-the-most-out-of-your-browser-with-extension-chrome-get.md` | `how-to-get-the-most-out-of-your-browser-with-extension-chrome-get` | `refine/how-to-get-the-most-out-of-your-browser-with-extension-chrome-get` | `blocked` | Branch not found after fetch; no diff or audit available |
+| Worker-02 | Pro Browsing Chrome Extensions: The Ultimate Workflow Upgrade for Power Users | `public/content/articles/p/r/o/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users.md` | `pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users` | `refine/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users` | `needs_revision` | Branch has article/audit but remains queued, not ready_for_merge; integration did not run its release gate |
+| Worker-03 | How to Fix Chrome High Memory Usage: The Ultimate 2026 Speed Up Guide | `public/content/articles/h/o/w/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide.md` | `how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide` | `refine/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide` | `blocked` | Branch not found after fetch; no diff or audit available |
+| Worker-04 | Pro Student Chrome Extensions: The Ultimate Academic Stack | `public/content/articles/p/r/o/pro-student-chrome-extensions-the-ultimate-academic-stack.md` | `pro-student-chrome-extensions-the-ultimate-academic-stack` | `refine/pro-student-chrome-extensions-the-ultimate-academic-stack` | `blocked` | Branch not found after fetch; no diff or audit available |
+| Worker-05 | Professional Browser Tools Guide | `public/content/articles/p/r/o/professional-browser-tools-guide.md` | `professional-browser-tools-guide` | `refine/professional-browser-tools-guide` | `needs_revision` | Branch has article/audit but remains queued, not ready_for_merge; integration did not run its release gate |
+| Worker-06 | Mastering Google Chrome Programmé en | `public/content/articles/g/o/o/google-chrome-programm-en-14.md` | `google-chrome-programm-en-14` | `refine/google-chrome-programm-en-14` | `needs_revision` | Missing required audit; modifies unrelated `seo_agent_pro/agentic/agents/evaluator.py`; no ready_for_merge status |
 | Worker-07 | Pro Essential Chrome Extensions: The Ultimate Guide | `public/content/articles/p/r/o/pro-essential-chrome-extensions-the-ultimate-guide.md` | `pro-essential-chrome-extensions-the-ultimate-guide` | `refine/pro-essential-chrome-extensions-the-ultimate-guide` | `merged` | Article file and its audit only |
-| Worker-08 | How to Create Complex Excel Formulas Easily | `public/content/articles/h/o/w/how-to-create-complex-excel-formulas-easily.md` | `how-to-create-complex-excel-formulas-easily` | `refine/how-to-create-complex-excel-formulas-easily` | `queued` | Article file and its audit only |
+| Worker-08 | How to Create Complex Excel Formulas Easily | `public/content/articles/h/o/w/how-to-create-complex-excel-formulas-easily.md` | `how-to-create-complex-excel-formulas-easily` | `refine/how-to-create-complex-excel-formulas-easily` | `blocked` | Branch not found after fetch; no diff or audit available |
 | Worker-09 | Stop Chrome From Freezing on Low-End PCs | `public/content/articles/s/t/o/stop-chrome-from-freezing-on-low-end-pcs-7.md` | `stop-chrome-from-freezing-on-low-end-pcs-7` | `refine/stop-chrome-from-freezing-on-low-end-pcs-7` | `merged` | Article file and its audit only |
 | Worker-10 | Integration and release coordinator | Repository-wide review only | n/a | `integration/wave-1` | `reserved` | Owns sequential merge, index, sitemap, and release gate |
 
@@ -44,10 +44,20 @@
 ### Worker-09 — `stop-chrome-from-freezing-on-low-end-pcs-7`
 
 - **Worker branch and commit:** `refine/stop-chrome-from-freezing-on-low-end-pcs-7` at `cb5ce238ac8d7a671b6500593758241a4f58f400`.
-- **Integration commit:** recorded after the sequential merge and validation cycle.
+- **Integration commit:** `3188c703` (merge commit).
 - **Files accepted:** assigned article, its audit, the Worker-09 status row, and the generated target entry in `public/content/articles-index.json`. `public/sitemap.xml` remained unchanged. No other article was changed.
 - **Rendered validation:** article HTML `26,413` bytes; `Article` 1, `BreadcrumbList` 1, `FAQPage` 1 matching the visible six-question FAQ, `HowTo` 0.
 - **Release gate:** `sync-articles`, `build`, `typecheck`, `test:performance`, `test:seo`, `test:links`, and `git diff --check` all passed. The index diff was limited to the target slug.
+
+### Rejected or blocked branches
+
+- **Worker-01 / `refine/how-to-get-the-most-out-of-your-browser-with-extension-chrome-get`:** `blocked`; branch absent after `git fetch origin --prune`, so no review or merge was possible.
+- **Worker-02 / `refine/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users`:** `needs_revision`; article and audit exist, but the authoritative workboard row is still `queued`, so the branch does not satisfy the mandatory `ready_for_merge` gate. It was not merged and no integration tests were run for it.
+- **Worker-03 / `refine/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide`:** `blocked`; branch absent after fetch, so no review or merge was possible.
+- **Worker-04 / `refine/pro-student-chrome-extensions-the-ultimate-academic-stack`:** `blocked`; branch absent after fetch, so no review or merge was possible.
+- **Worker-05 / `refine/professional-browser-tools-guide`:** `needs_revision`; article and audit exist, but the authoritative workboard row is still `queued`, so the branch does not satisfy the mandatory `ready_for_merge` gate. It was not merged and no integration tests were run for it.
+- **Worker-06 / `refine/google-chrome-programm-en-14`:** `needs_revision`; required `article-audit-google-chrome-programm-en-14.md` is absent, and the diff changes unrelated `seo_agent_pro/agentic/agents/evaluator.py` in addition to the article. It was not merged.
+- **Worker-08 / `refine/how-to-create-complex-excel-formulas-easily`:** `blocked`; branch absent after fetch, so no review or merge was possible.
 
 ## Completed baseline articles
 
