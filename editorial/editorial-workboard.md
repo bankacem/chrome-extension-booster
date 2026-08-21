@@ -28,7 +28,7 @@
 | Worker-06 | Mastering Google Chrome Programmé en | `public/content/articles/g/o/o/google-chrome-programm-en-14.md` | `google-chrome-programm-en-14` | `refine/google-chrome-programm-en-14` | `queued` | Article file and its audit only |
 | Worker-07 | Pro Essential Chrome Extensions: The Ultimate Guide | `public/content/articles/p/r/o/pro-essential-chrome-extensions-the-ultimate-guide.md` | `pro-essential-chrome-extensions-the-ultimate-guide` | `refine/pro-essential-chrome-extensions-the-ultimate-guide` | `merged` | Article file and its audit only |
 | Worker-08 | How to Create Complex Excel Formulas Easily | `public/content/articles/h/o/w/how-to-create-complex-excel-formulas-easily.md` | `how-to-create-complex-excel-formulas-easily` | `refine/how-to-create-complex-excel-formulas-easily` | `queued` | Article file and its audit only |
-| Worker-09 | Stop Chrome From Freezing on Low-End PCs | `public/content/articles/s/t/o/stop-chrome-from-freezing-on-low-end-pcs-7.md` | `stop-chrome-from-freezing-on-low-end-pcs-7` | `refine/stop-chrome-from-freezing-on-low-end-pcs-7` | `ready_for_merge` | Article file and its audit only |
+| Worker-09 | Stop Chrome From Freezing on Low-End PCs | `public/content/articles/s/t/o/stop-chrome-from-freezing-on-low-end-pcs-7.md` | `stop-chrome-from-freezing-on-low-end-pcs-7` | `refine/stop-chrome-from-freezing-on-low-end-pcs-7` | `merged` | Article file and its audit only |
 | Worker-10 | Integration and release coordinator | Repository-wide review only | n/a | `integration/wave-1` | `reserved` | Owns sequential merge, index, sitemap, and release gate |
 
 ## Integration decision log
@@ -40,6 +40,14 @@
 - **Files accepted:** assigned article, its audit, the branch-local index change, and the Worker-07 status row. No other article was changed; no shared sitemap change was introduced.
 - **Rendered validation:** article HTML `21,035` bytes; `Article` 1, `BreadcrumbList` 1, `FAQPage` 0, `HowTo` 0. The article intentionally has no visible FAQ.
 - **Release gate:** `sync-articles`, `build`, `typecheck`, `test:performance`, `test:seo`, `test:links`, and `git diff --check` all passed. The initial sync attempt was blocked by missing local `tsx`; after installing the locked dependencies, the same cycle passed.
+
+### Worker-09 — `stop-chrome-from-freezing-on-low-end-pcs-7`
+
+- **Worker branch and commit:** `refine/stop-chrome-from-freezing-on-low-end-pcs-7` at `cb5ce238ac8d7a671b6500593758241a4f58f400`.
+- **Integration commit:** recorded after the sequential merge and validation cycle.
+- **Files accepted:** assigned article, its audit, the Worker-09 status row, and the generated target entry in `public/content/articles-index.json`. `public/sitemap.xml` remained unchanged. No other article was changed.
+- **Rendered validation:** article HTML `26,413` bytes; `Article` 1, `BreadcrumbList` 1, `FAQPage` 1 matching the visible six-question FAQ, `HowTo` 0.
+- **Release gate:** `sync-articles`, `build`, `typecheck`, `test:performance`, `test:seo`, `test:links`, and `git diff --check` all passed. The index diff was limited to the target slug.
 
 ## Completed baseline articles
 

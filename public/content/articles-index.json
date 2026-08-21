@@ -16924,25 +16924,30 @@
     "id": "21435ba8-1951-48de-8609-1d0165c24144",
     "title": "Stop Chrome From Freezing on Low-End PCs",
     "slug": "stop-chrome-from-freezing-on-low-end-pcs-7",
-    "description": "We’ve all been there. You have three tabs open, you’re trying to finish a quick task, and suddenly—the dreaded spinning wheel of death appears.",
-    "meta_description": "We’ve all been there. You have three tabs open, you’re trying to finish a quick task, and suddenly—the dreaded spinning wheel of death appears.",
-    "excerpt": "We’ve all been there. You have three tabs open, you’re trying to finish a quick task, and suddenly—the dreaded spinning wheel of death appears.",
+    "description": "Chrome keeps freezing on an older PC? Use Task Manager, Incognito, and a symptom-based checklist to find the cause before changing settings.",
+    "meta_description": "Chrome keeps freezing on an older PC? Use Task Manager, Incognito, and a symptom-based checklist to find the cause before changing settings.",
+    "excerpt": "Chrome keeps freezing on an older PC? Use Task Manager, Incognito, and a symptom-based checklist to find the cause before changing settings.",
     "published_at": "2026-01-27T16:29:00.598+00:00",
     "category": "Performance & Memory",
     "author": "James Mitchell",
     "image_url": "/content/images/stop-chrome-from-freezing-on-low-end-pcs-7/featured.webp",
     "featured_image": "/content/images/stop-chrome-from-freezing-on-low-end-pcs-7/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
+    "reading_time": 10,
+    "read_time": 10,
     "views": 0,
     "tags": [
-      "Stop Chrome From Freezing on Low-End PCs: The Ultimate Guide to a Faster Browser"
+      "Chrome performance",
+      "troubleshooting",
+      "low-end PCs"
     ],
     "keywords": [
-      "Stop Chrome from freezing on low-end PCs"
+      "stop Chrome from freezing on low-end PCs",
+      "Chrome keeps freezing",
+      "Chrome not responding",
+      "Chrome Task Manager"
     ],
     "canonicalPath": "/blog/stop-chrome-from-freezing-on-low-end-pcs-7",
-    "updated_at": "2026-01-29T15:24:07.811969+00:00"
+    "updated_at": "2026-08-21T00:00:00.000+00:00"
   },
   {
     "id": "1065e3f9-2402-4f7e-89d8-75ade8a08195",
