@@ -28,6 +28,20 @@ faq:
     answer: "The Chrome Web Store listing identifies Picture-in-Picture Extension (by Google) as developed by Google. Its listing documents the Alt + P shortcut on Windows and Linux and the Option + P shortcut on macOS, along with its current privacy disclosure."
   - question: "Why does PiP work on one website but not another?"
     answer: "Websites use different players and policies. One may expose a standard HTML video while another uses an embedded or custom player, intercepts the context menu, or restricts PiP. Compare a simple test video with the affected site before changing Chrome settings."
+howto:
+  name: "How to use Picture-in-Picture in Chrome"
+  description: "Open a supported Chrome video in a floating Picture-in-Picture window."
+  total_time: "PT3M"
+  tool: "Google Chrome"
+  steps:
+    - name: "Start playback"
+      text: "Open the video in Chrome and start playback in the active tab."
+    - name: "Open the video menu"
+      text: "Open the video context menu; right-click twice on sites with a custom menu."
+    - name: "Choose PiP"
+      text: "Choose Picture in Picture, the site’s own PiP control, or Chrome media controls when available."
+    - name: "Use the official extension"
+      text: "If needed, install Picture-in-Picture Extension (by Google) and use its toolbar action or documented shortcut."
 ---
 
 Picture-in-Picture (PiP) puts a supported video in a small floating window so you can keep watching while working in another tab or application. In Chrome, the feature is not a single switch that works identically on every website. The page may expose the browser’s video control, the site may provide its own PiP button, or the official Google extension may be the quickest fallback.
@@ -40,6 +54,7 @@ This guide gives you a reliable decision path instead of promising that every vi
 - [How to use PiP in Chrome](#how-to-use-the-built-in-pip-control)
 - [PiP keyboard shortcuts](#pip-keyboard-shortcuts-by-platform)
 - [Document Picture-in-Picture](#when-document-picture-in-picture-matters)
+- [Standard Video PiP vs Document PiP API](#standard-video-pip-vs-document-pip-api)
 - [Troubleshooting Chrome PiP](#fix-common-chrome-pip-problems)
 - [Site-specific fixes](#site-specific-pip-troubleshooting)
 - [Chrome Flags](#chrome-flags-for-experimental-auto-pip)
@@ -100,7 +115,7 @@ The official Google extension documents a shortcut, while Chrome’s built-in Pi
 
 > **Screenshot placeholder — shortcut settings:** Capture `chrome://extensions/shortcuts` with the PiP extension row visible and the shortcut field highlighted. Suggested alt text: “Chrome extension keyboard shortcuts page showing the Picture-in-Picture shortcut.”
 
-The safest rule is simple: use the built-in menu first, use **Alt + P** or **Option + P** only for the official extension, and check the current shortcut-management page when a key combination stops responding.
+The safest rule is simple: use the built-in menu first, use **Alt + P** or **Option + P** only for the official extension, and check the current shortcut-management page when a key combination stops responding. For broader browser workflows, see our [power-user Chrome extensions workflow guide](/blog/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users).
 
 ## When Document Picture-in-Picture matters
 
@@ -115,6 +130,18 @@ if ('documentPictureInPicture' in window) {
 ```
 
 A site should still provide a normal in-page experience when the API is unavailable. For a viewer, this means that a missing custom PiP window may be an application compatibility decision rather than a Chrome setting you can repair.
+
+## Standard Video PiP vs Document PiP API
+
+| Technical area | Standard Video PiP | Document PiP API |
+|---|---|---|
+| Target element | A compatible HTML `<video>` element | An always-on-top window populated with arbitrary HTML |
+| Trigger mechanism | Site/player control, Chrome video menu or media controls, or a supported extension | The participating web app calls `documentPictureInPicture.requestWindow()` from a user gesture |
+| Controls supported | A small set of browser/player controls; captions, playlists, and custom controls may be unavailable | The web app can add custom controls, captions, playlists, and other HTML interfaces |
+| Developer effort | Usually none for the viewer; the site needs a compatible video and PiP support | The site must feature-detect the API, request permission through user action, move/render its interface, and handle window close events |
+| Browser compatibility | Depends on Chrome, the site player, permissions, and content policy | Chrome/Edge 116+, Firefox 151+, Safari not supported according to current Chrome Developers documentation [1] |
+
+The comparison is practical rather than absolute: an extension cannot turn a standard video PiP window into Document PiP, and a web app must implement Document PiP before viewers can use its richer controls.[1]
 
 ## Why PiP may not appear
 
@@ -194,7 +221,7 @@ Chrome documents conferencing Auto-PiP from Chrome 120 on desktop for eligible w
 
 Use one PiP window at a time while diagnosing a problem. Keep the source tab open until playback is stable, and avoid changing several browser settings simultaneously. If you use PiP for meetings, treat the floating window as a view of the call rather than a replacement for the meeting tab; controls such as mute, presenting, or chat may remain in the original application.
 
-For privacy, install only the official extension or a third-party tool whose publisher, requested access, update path, and source you can evaluate. A PiP tool that asks to read every site deserves the same review as any other Chrome extension. Our [Chrome extension management guide](/blog/how-to-get-the-most-out-of-your-browser-with-extension-chrome-get) explains how to review publisher information and site access before adding a browser tool.
+For privacy, install only the official extension or a third-party tool whose publisher, requested access, update path, and source you can evaluate. A PiP tool that asks to read every site deserves the same review as any other Chrome extension. Our [Chrome extension management guide](/blog/how-to-get-the-most-out-of-your-browser-with-extension-chrome-get) explains how to review publisher information and site access before adding a browser tool. For a wider extension-selection framework, see the [complete Chrome extensions guide](/blog/chrome-extensions-complete-guide).
 
 ## Frequently asked questions
 
@@ -218,17 +245,7 @@ No. Video PiP detaches an HTML video, while Document Picture-in-Picture lets a p
 
 Test another video, check the site’s own control, disable one conflicting extension, and try the official Google extension. Then update Chrome and retest. Avoid installing several unofficial extensions or changing hardware acceleration before isolating the affected player.
 
-## Copy-ready JSON-LD examples
 
-The site already generates `Article` and `BreadcrumbList`. The following compact block is ready to paste into a CMS that accepts custom JSON-LD; it is shown as code here to avoid duplicate live schemas.
-
-### HowTo + FAQPage JSON-LD
-
-This single `@graph` contains both schemas. Keep its visible steps and questions synchronized with the article.
-
-```html
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"How to use Picture-in-Picture in Chrome","description":"Open a supported Chrome video in a floating Picture-in-Picture window.","totalTime":"PT3M","tool":{"@type":"HowToTool","name":"Google Chrome"},"step":[{"@type":"HowToStep","name":"Start playback","text":"Open the video in Chrome and start playback in the active tab."},{"@type":"HowToStep","name":"Open the video menu","text":"Open the video context menu; right-click twice on sites with a custom menu."},{"@type":"HowToStep","name":"Choose PiP","text":"Choose Picture in Picture, the site’s own PiP control, or Chrome media controls when available."},{"@type":"HowToStep","name":"Use the official extension","text":"If needed, install Picture-in-Picture Extension (by Google) and use its toolbar action or documented shortcut."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Picture-in-Picture built into Chrome?","acceptedAnswer":{"@type":"Answer","text":"Chrome supports Picture-in-Picture for compatible video experiences, but the visible control depends on the player and website."}},{"@type":"Question","name":"Is the Google PiP extension an official extension?","acceptedAnswer":{"@type":"Answer","text":"The Chrome Web Store listing identifies Picture-in-Picture Extension (by Google) as developed by Google."}},{"@type":"Question","name":"Why does PiP work on one website but not another?","acceptedAnswer":{"@type":"Answer","text":"Websites use different players and policies, so one may expose a standard HTML video while another uses an embedded or custom player or restricts PiP."}}]}]}</script>
-```
 
 ## Final checklist
 

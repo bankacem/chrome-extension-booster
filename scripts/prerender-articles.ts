@@ -84,6 +84,8 @@ function absoluteImage(src?: string): string {
 type FrontmatterRecord = Record<string, unknown>;
 
 type FAQItem = { question: string; answer: string };
+type HowToStep = { name: string; text: string };
+type HowToData = { name: string; description?: string; total_time?: string; tool?: string; steps: HowToStep[] };
 
 function parseMarkdown(raw: string): { frontmatter: FrontmatterRecord; content: string } {
   const match = raw.match(/^---([\s\S]*?)---([\s\S]*)$/);
@@ -143,7 +145,7 @@ function buildHead(opts: {
 
 }
 
-function buildSchema(article: IndexArticle, title: string, description: string, ogImage: string, canonicalPath: string, faq?: FAQItem[]): string {
+function buildSchema(article: IndexArticle, title: string, description: string, ogImage: string, canonicalPath: string, faq?: FAQItem[], howTo?: HowToData): string {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -178,7 +180,6 @@ function buildSchema(article: IndexArticle, title: string, description: string, 
   };
 
   const faqPage = faq?.length ? {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faq.map(({ question, answer }) => ({
       "@type": "Question",
@@ -187,8 +188,19 @@ function buildSchema(article: IndexArticle, title: string, description: string, 
     })),
   } : null;
 
+  const howToSchema = howTo?.steps?.length ? {
+    "@type": "HowTo",
+    name: howTo.name,
+    description: howTo.description || description,
+    totalTime: howTo.total_time,
+    tool: howTo.tool ? { "@type": "HowToTool", name: howTo.tool } : undefined,
+    step: howTo.steps.map(({ name, text }) => ({ "@type": "HowToStep", name, text })),
+  } : null;
+  const richSchemas = [howToSchema, faqPage].filter(Boolean);
+  const richSchemaGraph = richSchemas.length ? `\n    <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@graph": richSchemas })}</script>` : "";
+
   return `<script type="application/ld+json">${JSON.stringify(schema)}</script>
-    <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>${faqPage ? `\n    <script type="application/ld+json">${JSON.stringify(faqPage)}</script>` : ""}`;
+    <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>${richSchemaGraph}`;
 }
 
 async function main() {
@@ -267,7 +279,17 @@ async function main() {
     const faq = Array.isArray(frontmatter.faq)
       ? (frontmatter.faq as FAQItem[]).filter((item) => item && typeof item.question === "string" && typeof item.answer === "string")
       : undefined;
-    const schema = buildSchema({ ...a, slug }, fullTitle, description, ogImage, canonicalPath, faq);
+    const rawHowTo = frontmatter.howto as Partial<HowToData> | undefined;
+    const howTo = rawHowTo && Array.isArray(rawHowTo.steps)
+      ? {
+          name: String(rawHowTo.name || fullTitle),
+          description: rawHowTo.description ? String(rawHowTo.description) : undefined,
+          total_time: rawHowTo.total_time ? String(rawHowTo.total_time) : undefined,
+          tool: rawHowTo.tool ? String(rawHowTo.tool) : undefined,
+          steps: rawHowTo.steps.filter((item): item is HowToStep => Boolean(item && typeof item.name === "string" && typeof item.text === "string")),
+        }
+      : undefined;
+    const schema = buildSchema({ ...a, slug }, fullTitle, description, ogImage, canonicalPath, faq, howTo);
 
     let bodyHtml = "";
     try {
