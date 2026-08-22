@@ -93,6 +93,12 @@ def main():
     parser.add_argument("--niche", default="")
     args = parser.parse_args()
 
+    if os.environ.get("SEO_AGENT_REQUIRE_EXPLICIT_KEYWORD") == "1" and not args.keyword:
+        parser.error(
+            "Coordinated production requires an explicit --keyword; "
+            "Manus must reserve the topic before seo_agent_pro runs."
+        )
+
     if args.keyword:
         keyword, category = args.keyword, ""
     else:

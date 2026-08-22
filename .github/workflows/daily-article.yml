@@ -1,9 +1,9 @@
 name: Daily Article Generation
 
+# Disabled during the coordinated Manus + seo_agent_pro pilot.
+# Manual dispatch remains available only for explicitly approved emergency runs.
 on:
-  schedule:
-    - cron: '0 8 * * *'   # Daily at 08:00 UTC
-  workflow_dispatch: {}  # Manual trigger for testing (re-registered)
+  workflow_dispatch: {}
 
 jobs:
   generate-article:
