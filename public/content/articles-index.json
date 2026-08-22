@@ -1,5 +1,36 @@
 [
   {
+    "id": "9f3b2d7d-6f06-4a89-a3e0-1a2d9a6b1c54",
+    "title": "Mailtrack for Gmail in Chrome: Setup, Read Receipts, and Privacy Limits",
+    "slug": "mailtrack-gmail-chrome-guide",
+    "description": "Learn how to install Mailtrack for Gmail in Chrome, understand open signals, compare native Gmail read receipts, and review privacy limits.",
+    "meta_description": "Learn how to install Mailtrack for Gmail in Chrome, understand open signals, compare native Gmail read receipts, and review privacy limits.",
+    "excerpt": "Learn how to install Mailtrack for Gmail in Chrome, interpret open signals, compare it with Gmail read receipts, and review privacy and account-access limits.",
+    "published_at": "2026-08-22T00:00:00.000Z",
+    "category": "Productivity & Tools",
+    "author": "Miccart Phen",
+    "image_url": "/og-image.png",
+    "featured_image": "/og-image.png",
+    "reading_time": 9,
+    "read_time": 9,
+    "views": 0,
+    "tags": [
+      "mailtrack",
+      "gmail",
+      "email tracking",
+      "privacy"
+    ],
+    "keywords": [
+      "gmail mailtrack",
+      "mailtrack for gmail",
+      "mailtrack chrome extension",
+      "gmail read receipt",
+      "email tracking privacy"
+    ],
+    "canonicalPath": "/blog/mailtrack-gmail-chrome-guide",
+    "updated_at": "2026-08-22T00:00:00.000Z"
+  },
+  {
     "id": "02930aac-a163-4200-b830-fbe78682bb4e",
     "title": "Picture-in-Picture Chrome: How to Use It and Fix Common Problems",
     "slug": "picture-in-picture-chrome-guide",
