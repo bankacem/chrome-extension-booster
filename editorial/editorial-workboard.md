@@ -39,7 +39,7 @@ The first coordinated pilot contains ten distinct topic records. Only the three 
 |---|---|---|---|---|---|
 | tp001 | `tampermonkey chrome` | new article | `tampermonkey-chrome-userscripts-guide` | `merged` | `seo_agent_pro` — PR #315, integration PR #316, main `fc241da5`, live HTTP 200, index once, sitemap present |
 | tp002 | `pip chrome` | new article | `picture-in-picture-chrome-guide` | `merged` | `seo_agent_pro` — PR #318, path-fix PR #319, integration PR #320, main `dacc71c0`, live HTTP 200, index once, sitemap present |
-| tp003 | `gmail mailtrack` | new article | `mailtrack-gmail-chrome-guide` | `approved_for_generation` | `seo_agent_pro` |
+| tp003 | `gmail mailtrack` | new article | `mailtrack-gmail-chrome-guide` | `merged` | `seo_agent_pro` — agent PR #325 superseded; reviewed content PR #326; integration PR #327; main `4e9402d6`; live HTTP 200; index once, sitemap present |
 | tp004 | `omniboxes` | new article | `chrome-omnibox-guide` | `needs_intent_validation` | `manus` |
 | tp005 | `extension zoom chrome` | new article | `zoom-chrome-extension-guide` | `needs_product_validation` | `manus` |
 | tp006 | `tag assistant google` | update | `unlocking-the-power-of-google-tag-assistant-extension` | `update_existing` | `manus` |
@@ -48,7 +48,7 @@ The first coordinated pilot contains ten distinct topic records. Only the three 
 | tp009 | `screenshoter chrome` | consolidate | `fast-screenshot-extension-alternatives-1` | `consolidation_review` | `manus` |
 | tp010 | `adblock chrome` | update or merge | `best-ad-block-chrome-extension` | `consolidation_review` | `manus` |
 
-The reservation source of truth is `editorial/pilot-batch-001.json`. tp001 and tp002 are now merged and live; tp003 remains generation-approved but is intentionally not started until the pilot review is complete. Each article job must use an explicit keyword and a separate branch. The integration owner alone updates the final index and sitemap.
+The reservation source of truth is `editorial/pilot-batch-001.json`. tp001, tp002, and tp003 are now merged and live; the pilot is recorded as `pilot_validated_pending_scale_review`. Each article job must use an explicit keyword and a separate branch. The integration owner alone updates the final index and sitemap.
 
 ## Integration decision log
 
@@ -68,6 +68,16 @@ The reservation source of truth is `editorial/pilot-batch-001.json`. tp001 and t
 - **Rendered and release validation:** the corrected build prerendered 752 English article pages with no missing-Markdown warning. `sync-articles`, `build`, `typecheck`, `test:performance`, `test:seo`, `test:links`, and `git diff --check` all passed. The SEO smoke test reported 784 sitemap URLs and 752 English articles; the link test scanned 8,020 links with 0 redirect links and 6 documented exceptions. The slug appears once in the local index and once in `public/sitemap.xml`.
 - **Live validation:** Vercel deployment `dpl_6PKE99hyBVL3NraT4HZRHG1bXLZb` for verified main commit `dacc71c` reached `READY` on Production. The live URL returned the article after an initial 404 while the deployment was queued. The live title, meta description, canonical, `Article`, and `BreadcrumbList` were checked; the page exposes no unsupported `FAQPage` schema.
 - **Decision:** tp002 is recorded as `merged` and live. The initial queue-related 404 was transient and did not indicate a missing source article. This confirms the value of a path-aware prerender check, separate content/path/integration PRs, and post-deployment HTML verification; it is not evidence of Google ranking or indexing.
+
+### tp003 — `mailtrack-gmail-chrome-guide`
+
+- **Keyword and intent:** `gmail mailtrack`; product-specific setup plus privacy and tracking-signal limits. Keyword source: internal KeywordStats export, cross-checked against the live index; no existing Mailtrack/Gmail tracking article was found.
+- **Agent run:** GitHub Actions run [32578466529](https://github.com/bankacem/chrome-extension-booster/actions/runs/32578466529) ran `seo_agent_pro` with the explicit reserved keyword. Agent PR #325 was closed as superseded because its generated slug differed from the reserved slug and its draft required human correction of privacy, accuracy, delivery, mobile, legal, and product claims.
+- **Accepted content:** clean reviewed branch `refine/mailtrack-gmail-chrome-guide`, content PR #326, article path `public/content/articles/m/a/i/mailtrack-gmail-chrome-guide.md`; the article distinguishes Gmail native read receipts from Mailtrack tracking events, uses official publisher/privacy sources, and avoids treating an open event as proof of reading.
+- **Integration:** PR #327 updated only `public/content/articles-index.json`, `public/content/sitemap-dates.json`, and `public/sitemap.xml` after the content merge. Main commit is `4e9402d6`.
+- **Validation:** local and GitHub quality gates passed: sync, build, typecheck, performance budgets, SEO smoke tests, internal-link smoke tests, and `git diff --check`. The final build prerendered 753 English article pages; the exact slug occurs once in the index and the canonical URL occurs once in the sitemap. The article includes three verified ExtensionTo internal links.
+- **Live validation:** Vercel deployment `dpl_7o8Y619BMYCdPcDonUmL5YHjNRby` for verified main commit `4e9402d6` reached `READY` on Production. The live URL `https://extensionto.com/blog/mailtrack-gmail-chrome-guide` returned HTTP 200. The live HTML contains the expected title, meta description, self-canonical, `Article`, `BreadcrumbList`, and one `FAQPage`; no JSON-LD appears in body.
+- **Decision:** tp003 is recorded as `merged` and live. This is technical publication evidence only, not evidence of Google indexing or ranking. The pipeline lesson is recorded in `seo_agent_pro/agentic/memory/lessons.md`: preserve reserved slugs, distinguish native receipts from provider tracking, and require human review for privacy-sensitive product claims.
 
 ### Worker-09 — `stop-chrome-from-freezing-on-low-end-pcs-7`
 
