@@ -63,3 +63,14 @@ The agent run must use the explicit keyword `omniboxes`, the reserved slug `chro
 ## Decision
 
 `tp004` is **approved_for_generation** under the split-path brief above. The next action is one explicit `seo_agent_pro` run. If the agent produces a different slug or collapses the two intents into a generic tips list, the draft must be returned for revision rather than merged.
+
+
+## Human review record: agent run #32598239714
+
+The agent run was executed with the explicit keyword `omniboxes` and produced PR #331 (`agentic-review/omniboxes-everything-you-need-to-know-about-their-benefits-and-risks`). The PR was **superseded and must not be merged**. Its file used the unreserved slug `omniboxes-everything-you-need-to-know-about-their-benefits-and-risks`, a generic “benefits and risks” title, and a broad browser overview rather than the approved split-path brief. The cycle log recorded `needs_human_review`; it did not establish new reusable lessons or any Search Console evidence.
+
+The agent draft was useful as evidence of the failure mode, but not as publication content. Its competitor set focused on hijacker/removal and generic jargon pages, which did not replace the approved Chrome Help and Chrome Developers source set. Claims about query handling, browser data, and security therefore required qualification and official-source review rather than automatic reuse.
+
+The human-reviewed replacement keeps the reserved slug `chrome-omnibox-guide` and the exact `c/h/r` partition path. It opens with the two reader paths, adds a decision table, documents the Chrome Settings site-search flow, explains extension keyword activation and the `chrome.omnibox` event model, includes a compact Manifest V3 example, and labels extension data handling as implementation-dependent. It also adds troubleshooting for profiles and managed devices, cleanup guidance, four visible FAQ answers matching the `faq` frontmatter, a visible setup sequence matching the `howto` frontmatter, and four verified contextual internal links. No index or sitemap file is included in the content PR; those belong to the separate integration cycle.
+
+**Review decision:** the replacement article is accepted for content-branch quality gates. PR #331 remains rejected as superseded because of the reserved-slug violation, generic intent, and insufficient human/source/privacy review.
