@@ -20,8 +20,16 @@
       "content_action": "new_article",
       "search_intent": "how-to + troubleshooting",
       "target_slug": "picture-in-picture-chrome-guide",
-      "status": "approved_for_generation",
+      "status": "merged",
       "owner": "seo_agent_pro",
+      "branch": "agentic-review/how-to-use-picture-in-picture-pip-in-chrome-complete-guide",
+      "pr": 318,
+      "path_fix_pr": 319,
+      "integration_pr": 320,
+      "integration_commit": "dacc71c0",
+      "live_http": 200,
+      "index_occurrences": 1,
+      "sitemap_present": true,
       "counted_toward_500": true
     },
     {
