@@ -41,3 +41,8 @@ Extracted from articles that scored well and were published — either by the ag
 - Disclose affiliate-link behavior plainly and matter-of-factly when covering coupon/cashback extensions — builds trust and is rarely addressed by competing content.
 - For any Chrome-settings-based 'how to disable/turn off X' keyword, explicitly check and cover whether the OS itself (Windows/macOS) has a separate permission layer that can override Chrome's own setting — a very common, rarely-covered source of 'I disabled it but it's still happening' confusion.
 - When a keyword could mean two genuinely different user problems (blocking a future prompt vs. disabling something already active), name and separate both explicitly in the opening section, and be clear which one this specific article covers.
+
+
+- For a reserved pilot keyword, preserve the Manus-approved title and slug; do not derive a new slug from a creative title without checking the reservation first.
+- For email-tracking topics, separate Gmail's native read receipts from provider tracking, describe opens as technical signals rather than proof of reading, and cite the current official privacy/store disclosures.
+- A `needs_human_review` article must not be merged as published until a human verifies the slug, product identity, current product claims, privacy wording, and visible FAQ/schema alignment.
