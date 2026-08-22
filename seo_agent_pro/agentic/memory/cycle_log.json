@@ -816,5 +816,36 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "extension chrome incognito",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 89,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article is slightly under the ideal word count of 1500 (approximately 1390 words). Adding more depth to certain sections, such as 'Common Benefits of Using Extensions in Incognito Mode,' could help bring it closer.",
+      "The comparison table of popular Chrome extensions does not sufficiently address specific incognito support features or limitations of each extension. For example, whether all of their functionalities work as expected in Incognito mode.",
+      "The FAQ is well-structured but could benefit from a few more targeted questions to address less common queries or concerns users might have, e.g., whether enabling extensions in Incognito impacts performance or how it affects Chrome browser speed.",
+      "The step-by-step tutorial for enabling extensions is clear, but it could include a screenshot equivalent description for users unfamiliar with the layout of Chrome's settings."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://support.google.com/chrome/a/answer/13130396?hl=en",
+      "https://developer.chrome.com/docs/extensions/reference/manifest/incognito",
+      "https://chromewebstore.google.com/detail/incognito-mode-for-chrome/bcikapbfiaeidokloagofmknmaolfpjp"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-22T22:50:06.899726+00:00"
   }
 ]
