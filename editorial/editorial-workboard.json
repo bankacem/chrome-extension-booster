@@ -250,8 +250,15 @@
         "content_action": "new_article",
         "search_intent": "how-to + safety review",
         "target_slug": "tampermonkey-chrome-userscripts-guide",
-        "status": "approved_for_generation",
+        "status": "merged",
         "owner": "seo_agent_pro",
+        "branch": "agentic-review/tampermonkey-chrome-a-beginner-to-expert-guide-for-managing-and-creating-userscripts",
+        "pr": 315,
+        "integration_pr": 316,
+        "integration_commit": "fc241da5",
+        "live_http": 200,
+        "index_occurrences": 1,
+        "sitemap_present": true,
         "counted_toward_500": true
       },
       {
