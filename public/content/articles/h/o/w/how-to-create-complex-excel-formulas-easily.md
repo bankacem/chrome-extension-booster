@@ -1,6 +1,6 @@
 ---
 seo_title: "How to Create Complex Excel Formulas Easily"
-id: ef8c980c-c787-4a60-ab4b-fc98028d8c37
+id: ef8c944b-c787-4a60-ab4b-fc98028d8c37
 title: "How to Create Complex Excel Formulas Easily: A Practical Method"
 slug: how-to-create-complex-excel-formulas-easily
 excerpt: "Learn a repeatable method for building advanced Excel formulas: define the output, test each condition, choose the right function, and debug the result."
