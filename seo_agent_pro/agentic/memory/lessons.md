@@ -46,3 +46,6 @@ Extracted from articles that scored well and were published — either by the ag
 - For a reserved pilot keyword, preserve the Manus-approved title and slug; do not derive a new slug from a creative title without checking the reservation first.
 - For email-tracking topics, separate Gmail's native read receipts from provider tracking, describe opens as technical signals rather than proof of reading, and cite the current official privacy/store disclosures.
 - A `needs_human_review` article must not be merged as published until a human verifies the slug, product identity, current product claims, privacy wording, and visible FAQ/schema alignment.
+
+- Before an agent workflow creates its first commit or PR for a reserved pilot topic, compare the proposed slug and exact partition path with the Manus reservation. If they differ, stop the workflow and return the draft for revision; never rely on a later human rename. The agent content branch must also leave the shared article index and Sitemap to the separate integration branch.
+- For mixed consumer/developer keywords such as `omniboxes`, state the intent split in the opening and use official consumer and developer sources separately; do not collapse the topic into a generic benefits/risks overview.
