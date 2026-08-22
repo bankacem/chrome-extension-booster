@@ -1,7 +1,7 @@
 {
   "id": "pilot-batch-001",
   "goal": "Validate coordinated Manus + seo_agent_pro production before scaling to 500 accepted articles",
-  "status": "reserved_for_review",
+  "status": "pilot_validated_pending_scale_review",
   "run_policy": "Only topics marked approved_for_generation may be sent to seo_agent_pro; the rest require a separate intent or update review.",
   "topics": [
     {
@@ -10,8 +10,14 @@
       "content_action": "new_article",
       "search_intent": "how-to + safety review",
       "target_slug": "tampermonkey-chrome-userscripts-guide",
-      "status": "approved_for_generation",
+      "status": "merged",
       "owner": "seo_agent_pro",
+      "content_pr": 315,
+      "integration_pr": 316,
+      "integration_commit": "fc241da5",
+      "live_http": 200,
+      "index_occurrences": 1,
+      "sitemap_present": true,
       "counted_toward_500": true
     },
     {
@@ -38,8 +44,18 @@
       "content_action": "new_article",
       "search_intent": "setup + privacy limits",
       "target_slug": "mailtrack-gmail-chrome-guide",
-      "status": "approved_for_generation",
+      "status": "merged",
       "owner": "seo_agent_pro",
+      "agent_pr": 325,
+      "superseded_agent_pr": 325,
+      "content_pr": 326,
+      "integration_pr": 327,
+      "integration_commit": "4e9402d6",
+      "live_http": 200,
+      "live_url": "https://extensionto.com/blog/mailtrack-gmail-chrome-guide",
+      "index_occurrences": 1,
+      "sitemap_present": true,
+      "human_review": "completed",
       "counted_toward_500": true
     },
     {
