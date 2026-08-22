@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "gmail mailtrack",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 91,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "Privacy and Security Considerations section is overly brief and does not provide a thorough deep dive into privacy and data protection measures, which is critical to this topic.",
+      "The Use Cases for Gmail Mailtrack section does not sufficiently touch on industry-specific applications as requested in the competitor_gap_requirements.",
+      "While the article provides a comparison table, the detailed assessment of alternative trackers focuses primarily on feature differences without elaborating on real-world use cases or strengths/weaknesses of these alternatives as competitive gaps."
+    ],
+    "category": "Productivity & Tools",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://mailtrack.email/",
+      "https://mailtrack.com/",
+      "https://mailsuite.com/en/features/mailtrack"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-22T14:23:50.234589+00:00"
   }
 ]
