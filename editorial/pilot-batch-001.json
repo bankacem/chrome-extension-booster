@@ -62,10 +62,11 @@
       "topic_id": "tp004",
       "primary_keyword": "omniboxes",
       "content_action": "new_article",
-      "search_intent": "intent validation required",
+      "search_intent": "built-in address-bar shortcuts + extension keyword actions",
       "target_slug": "chrome-omnibox-guide",
-      "status": "needs_intent_validation",
-      "owner": "manus",
+      "status": "approved_for_generation",
+      "owner": "seo_agent_pro",
+      "decision_audit": "editorial/article-audit-chrome-omnibox-guide.md",
       "counted_toward_500": true
     },
     {
