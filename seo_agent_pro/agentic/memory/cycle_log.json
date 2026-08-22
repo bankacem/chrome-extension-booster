@@ -816,5 +816,36 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "extension zoom chrome",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 94,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article omits direct mention of 'how to use the Chrome extension with other Chromium-based browsers' despite addressing it in the FAQ.",
+      "While the FAQ section is present, it could include more actionable questions such as ‘How secure is the Zoom Chrome Extension?’ or ‘What are the limitations compared to the desktop app?’",
+      "The comparison section is somewhat light on depth, especially for competitors like Microsoft Teams and Cisco WebEx. Additional specifics about unique pros/cons or user scenarios can strengthen the section.",
+      "The tips list could benefit from more detail around advanced settings in Zoom, such as enabling integrations with third-party apps or optimizing video/audio quality directly from the extension."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060514",
+      "https://chromewebstore.google.com/detail/zoom-chrome-extension/kgjfgplpablkjnlkjmjdecgdpfankdle?hl=en-US",
+      "https://zoom.us/download"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-22T22:47:12.603778+00:00"
   }
 ]
