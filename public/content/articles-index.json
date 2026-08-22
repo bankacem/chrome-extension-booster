@@ -1,5 +1,34 @@
 [
   {
+    "id": "f275ef3c-c412-432a-a97a-ac56b7f8dfeb",
+    "title": "Tampermonkey Chrome: Install and Run Userscripts Safely",
+    "slug": "tampermonkey-chrome-userscripts-guide",
+    "description": "Install Tampermonkey in Chrome, review userscripts, grant the right permission, and run a small script safely with a practical checklist.",
+    "meta_description": "Install Tampermonkey in Chrome, review userscripts, grant the right permission, and run a small script safely with a practical checklist.",
+    "excerpt": "Learn how to install Tampermonkey in Chrome, review userscripts, grant the right permission, and create a small script without exposing every website to unknown code.",
+    "published_at": "2026-08-22T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/og-image.png",
+    "featured_image": "/og-image.png",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "tampermonkey",
+      "userscripts",
+      "chrome security"
+    ],
+    "keywords": [
+      "tampermonkey chrome",
+      "install tampermonkey",
+      "chrome userscripts",
+      "userscript permissions"
+    ],
+    "canonicalPath": "/blog/tampermonkey-chrome-userscripts-guide",
+    "updated_at": "2026-08-22T00:00:00.000Z"
+  },
+  {
     "id": "3d68f5db-1ef0-4ad2-9f70-4c7bfbe7626d",
     "title": "AI Tab Manager Chrome Extension: An Evidence-Based Audit Guide",
     "slug": "ai-tab-manager-chrome-extension-a-verification-first-buyers-guide",
