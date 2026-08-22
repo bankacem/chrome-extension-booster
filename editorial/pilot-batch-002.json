@@ -1,0 +1,193 @@
+{
+  "id": "pilot-batch-002",
+  "goal": "Validate ten controlled article jobs before any merge, indexing, scheduling, or publication",
+  "status": "reserved_pending_generation",
+  "policy": "No article from this batch may be merged to main, added to the shared index/Sitemap, scheduled, or published until human review and explicit approval.",
+  "generation_mode": "two controlled groups of five; one independent branch and PR per article",
+  "source_of_truth": "editorial/pilot-batch-002.json",
+  "topics": [
+    {
+      "topic_id": "b002-01",
+      "primary_keyword": "extension zoom chrome",
+      "volume": 5000,
+      "competition": "Faible",
+      "competition_indexed": 0,
+      "search_intent": "product-specific setup and current compatibility: Zoom Chrome Extension scheduler versus Zoom Workplace web app",
+      "target_slug": "zoom-chrome-extension-guide",
+      "content_action": "new_article",
+      "status": "approved_for_generation",
+      "sources": [
+        "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060514",
+        "https://chromewebstore.google.com/detail/zoom-chrome-extension/kgjfgplpablkjnlkjmjdecgdpfankdle?hl=en-US"
+      ],
+      "overlap": "No exact dedicated Zoom Chrome Extension article found; must not become a generic meeting-tools roundup.",
+      "gap": "Separate the official scheduling extension from Zoom Workplace and legacy/third-party listings; explain permissions, Google Calendar flow, account requirements, and troubleshooting.",
+      "title": "Zoom Chrome Extension: What It Does, How to Set It Up, and What It Is Not"
+    },
+    {
+      "topic_id": "b002-02",
+      "primary_keyword": "extension chrome incognito",
+      "volume": 500,
+      "competition": "Faible",
+      "competition_indexed": 1,
+      "search_intent": "enable and evaluate selected Chrome extensions in Incognito while understanding privacy and managed-device limits",
+      "target_slug": "chrome-extensions-incognito-guide",
+      "content_action": "new_article",
+      "status": "approved_for_generation",
+      "sources": [
+        "https://support.google.com/chrome/a/answer/13130396?hl=en",
+        "https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions",
+        "https://support.google.com/chrome/answer/2664769?hl=en"
+      ],
+      "overlap": "One incidental match is a general Chrome-freezing article; no dedicated Incognito extension-permission guide exists.",
+      "gap": "Explain the user toggle, permission/data implications, managed policies, file URLs, and why Incognito is not automatically private from the extension or network provider.",
+      "title": "Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely"
+    },
+    {
+      "topic_id": "b002-03",
+      "primary_keyword": "chrome logger",
+      "volume": 500,
+      "competition": "Faible",
+      "competition_indexed": 0,
+      "search_intent": "developer setup and security review for Chrome Logger server-side debugging",
+      "target_slug": "chrome-logger-debugging-guide",
+      "content_action": "new_article",
+      "status": "approved_for_generation",
+      "sources": [
+        "https://craig.is/writing/chrome-logger",
+        "https://github.com/ccampbell/chromelogger",
+        "https://chromewebstore.google.com/detail/chrome-logger/noaneddfkdjfnfdakjjmocngnfkfehhd?hl=en"
+      ],
+      "overlap": "Existing developer and blogging articles mention Chrome tools but do not own the Chrome Logger debugging task.",
+      "gap": "Cover the server library/header model, supported maintenance reality, local/staging-only workflow, sensitive-log risks, and modern alternatives instead of presenting it as a universal production tool.",
+      "title": "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits"
+    },
+    {
+      "topic_id": "b002-04",
+      "primary_keyword": "chrome plugins java",
+      "volume": 500,
+      "competition": "Faible",
+      "competition_indexed": 0,
+      "search_intent": "diagnose whether Java applets/plugins can run in current Chrome and choose a supported alternative",
+      "target_slug": "java-plugins-chrome-compatibility-guide",
+      "content_action": "new_article",
+      "status": "approved_for_generation",
+      "sources": [
+        "https://www.java.com/en/download/help/chrome.html",
+        "https://developer.chrome.com/apps/npapi"
+      ],
+      "overlap": "A legacy French-titled Chrome programming article exists, but no current English guide answers the Java-plugin compatibility question directly.",
+      "gap": "Give a clear no-unsupported-workaround answer for NPAPI applets, distinguish applets from Web Start, and explain enterprise migration/alternative paths without unsafe flags or old downloads.",
+      "title": "Java Plugins in Chrome: What Still Works, What Does Not, and Safer Alternatives"
+    },
+    {
+      "topic_id": "b002-05",
+      "primary_keyword": "ie tab chrome",
+      "volume": 500,
+      "competition": "Faible",
+      "competition_indexed": 0,
+      "search_intent": "use IE Tab in Chrome for legacy web applications and assess enterprise/security constraints",
+      "target_slug": "ie-tab-chrome-legacy-sites-guide",
+      "content_action": "new_article",
+      "status": "approved_for_generation",
+      "sources": [
+        "https://www.ietab.net/",
+        "https://chromewebstore.google.com/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd?hl=en-US"
+      ],
+      "overlap": "No direct IE Tab guide appears in the current index; generic browser compatibility pages are adjacent but not the same task.",
+      "gap": "Separate legacy-site compatibility from ordinary browsing, cover Auto URL Filters/GPO, native-client or platform requirements, security boundaries, and an exit plan for obsolete web apps.",
+      "title": "IE Tab for Chrome: Run Legacy Sites, Configure URL Rules, and Manage the Risks"
+    },
+    {
+      "topic_id": "b002-06",
+      "primary_keyword": "web store firefox",
+      "volume": 500,
+      "competition": "Faible",
+      "competition_indexed": 0,
+      "search_intent": "understand Chrome Web Store versus Firefox Add-ons and move extensions through supported compatibility paths",
+      "target_slug": "chrome-web-store-firefox-extensions-guide",
+      "content_action": "new_article",
+      "status": "approved_for_generation",
+      "sources": [
+        "https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension/",
+        "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Chrome_incompatibilities",
+        "https://support.mozilla.org/en-US/kb/switching-chrome-firefox"
+      ],
+      "overlap": "Existing Chrome Web Store guides focus on finding/installing Chrome extensions; this page must own cross-browser compatibility and must not claim direct Chrome Web Store installation in Firefox.",
+      "gap": "Explain Add-ons stores, WebExtensions compatibility, manifest/API differences, testing, migration of settings, and safe alternatives for users who cannot port an extension.",
+      "title": "Chrome Web Store vs Firefox Add-ons: Compatibility, Migration, and Safe Installation"
+    },
+    {
+      "topic_id": "b002-07",
+      "primary_keyword": "betterttv google chrome",
+      "volume": 50,
+      "competition": "Inconnu",
+      "competition_indexed": null,
+      "search_intent": "product-specific BetterTTV installation, Twitch/YouTube chat features, privacy, and free-versus-Pro boundaries",
+      "target_slug": "betterttv-google-chrome-guide",
+      "content_action": "new_article",
+      "status": "approved_for_generation",
+      "sources": [
+        "https://betterttv.com/",
+        "https://chromewebstore.google.com/detail/betterttv/ajopnjidmegmdimjlfnijceegpefgped?hl=en"
+      ],
+      "overlap": "No direct BetterTTV article appears in the index; avoid competing with generic Twitch tools or streaming roundups.",
+      "gap": "Map features to Twitch/YouTube use cases, distinguish free behavior from Pro/account/cloud features, cover permissions/privacy, and explain how to disable chat alterations.",
+      "title": "BetterTTV for Chrome: Setup, Twitch Features, YouTube Support, and Privacy Checks"
+    },
+    {
+      "topic_id": "b002-08",
+      "primary_keyword": "agenda chrome extension",
+      "volume": 50,
+      "competition": "Faible",
+      "competition_indexed": 29,
+      "search_intent": "evaluate and use a Chrome extension that turns unstructured text into calendar entries",
+      "target_slug": "agenda-hero-chrome-extension-guide",
+      "content_action": "new_article",
+      "status": "approved_for_generation",
+      "sources": [
+        "https://chromewebstore.google.com/detail/agenda-hero-for-chrome/fglfichcambfnfmcjmppcnojneccedne?hl=en-US",
+        "https://calendar.google.com/"
+      ],
+      "overlap": "The index has broad productivity and calendar-adjacent articles but no dedicated Agenda Hero page; article must stay product-specific.",
+      "gap": "Explain the text-to-calendar workflow, confirmation before creating events, data/privacy questions, account and calendar permissions, and failure cases for ambiguous dates or recurring meetings.",
+      "title": "Agenda Hero Chrome Extension: Turn Text into Calendar Events Carefully"
+    },
+    {
+      "topic_id": "b002-09",
+      "primary_keyword": "blackbox extension google chrome",
+      "volume": 50,
+      "competition": "Inconnu",
+      "competition_indexed": null,
+      "search_intent": "identify and evaluate the Blackbox AI Chrome extension without confusing it with other Blackbox products",
+      "target_slug": "blackbox-ai-chrome-extension-guide",
+      "content_action": "new_article",
+      "status": "approved_for_generation",
+      "sources": [
+        "https://chromewebstore.google.com/detail/blackboxai/mcgbeeipkmelnpldkobichboakdfaeon",
+        "https://www.blackbox.ai/"
+      ],
+      "overlap": "Existing AI and developer-extension articles are broad; no exact Blackbox AI Chrome guide appears in the index.",
+      "gap": "Establish product identity, map browser permissions and account/data flows, distinguish website/editor integrations, and avoid unsupported claims about models, pricing, or privacy retention.",
+      "title": "Blackbox AI Chrome Extension: Identity, Setup, Permissions, and Practical Limits"
+    },
+    {
+      "topic_id": "b002-10",
+      "primary_keyword": "chrome samsung smart tv",
+      "volume": 50,
+      "competition": "Faible",
+      "competition_indexed": 0,
+      "search_intent": "connect or cast Chrome content to a Samsung Smart TV without implying Chrome can be installed directly on the TV",
+      "target_slug": "chrome-samsung-smart-tv-casting-guide",
+      "content_action": "new_article",
+      "status": "approved_for_generation",
+      "sources": [
+        "https://support.google.com/chrome/answer/3228332?hl=en",
+        "https://www.samsung.com/us/support/answer/ANS10001896/"
+      ],
+      "overlap": "Several Chromecast and TV-related pages exist; this page must be a decision guide for Chrome tab casting versus Samsung screen mirroring, not another Chromecast product roundup.",
+      "gap": "Answer the install-versus-cast ambiguity first, then cover supported paths, same-network checks, Smart View/mirroring boundaries, browser/TV compatibility, and troubleshooting.",
+      "title": "Chrome on Samsung Smart TV: Casting, Screen Mirroring, and What You Cannot Install"
+    }
+  ]
+}

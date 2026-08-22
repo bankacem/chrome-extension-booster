@@ -1,0 +1,34 @@
+# Audit — `chrome-extensions-incognito-guide`
+
+**Primary keyword:** `extension chrome incognito`  
+**KeywordStats signal:** 500 average monthly searches; competition `Faible`; indexed competition `1`. These are planning data, not Search Console performance.
+
+**Proposed title:** Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely  
+**Reserved slug:** `chrome-extensions-incognito-guide`  
+**Search intent:** enable and evaluate selected Chrome extensions in Incognito while understanding privacy and managed-device limits
+
+## Internal overlap decision
+
+One incidental match is a general Chrome-freezing article; no dedicated Incognito extension-permission guide exists.
+
+## Competitor/content gap to address
+
+Explain the user toggle, permission/data implications, managed policies, file URLs, and why Incognito is not automatically private from the extension or network provider.
+
+## Editorial plan
+
+The article must open with the reader decision represented by the intent above, then give a task-specific setup or compatibility path, followed by limitations, privacy/security considerations, troubleshooting, and a concise final decision. It must not copy a generic introduction, TL;DR, FAQ, comparison table, or image from another article. Any product claim must be checked against the first-party sources below at generation time.
+
+## Acceptance constraints
+
+The agent must use the exact reserved slug and write only the assigned article plus its audit on its own branch. The content PR must not modify `public/content/articles-index.json`, `public/sitemap.xml`, or another article. The article remains `status: draft` until human review; this batch is intentionally not published or scheduled.
+
+## Sources
+
+[1]: https://support.google.com/chrome/a/answer/13130396?hl=en
+[2]: https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions
+[3]: https://support.google.com/chrome/answer/2664769?hl=en
+
+## Reserved status
+
+`approved_for_generation` — generation is authorized for this controlled batch, not publication authorization.
