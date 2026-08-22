@@ -31,6 +31,25 @@
 | Worker-09 | Stop Chrome From Freezing on Low-End PCs | `public/content/articles/s/t/o/stop-chrome-from-freezing-on-low-end-pcs-7.md` | `stop-chrome-from-freezing-on-low-end-pcs-7` | `refine/stop-chrome-from-freezing-on-low-end-pcs-7` | `merged` | Article file and its audit only |
 | Worker-10 | Integration and release coordinator | Repository-wide review only | n/a | `integration/wave-1` | `reserved` | Owns sequential merge, index, sitemap, and release gate |
 
+## Pilot batch 001 — coordinated Manus + seo_agent_pro production
+
+The first coordinated pilot contains ten distinct topic records. Only the three rows marked `approved_for_generation` may be sent to `seo_agent_pro` now; the other seven are reserved for intent validation, updates, or consolidation and are not new-article generation jobs yet. This distinction prevents high-volume Android, screenshot, Auto Refresh, and AdBlock terms from creating more duplicate pages.
+
+| Topic | Primary keyword | Action | Target slug | Status | Owner |
+|---|---|---|---|---|---|
+| tp001 | `tampermonkey chrome` | new article | `tampermonkey-chrome-userscripts-guide` | `approved_for_generation` | `seo_agent_pro` |
+| tp002 | `pip chrome` | new article | `picture-in-picture-chrome-guide` | `approved_for_generation` | `seo_agent_pro` |
+| tp003 | `gmail mailtrack` | new article | `mailtrack-gmail-chrome-guide` | `approved_for_generation` | `seo_agent_pro` |
+| tp004 | `omniboxes` | new article | `chrome-omnibox-guide` | `needs_intent_validation` | `manus` |
+| tp005 | `extension zoom chrome` | new article | `zoom-chrome-extension-guide` | `needs_product_validation` | `manus` |
+| tp006 | `tag assistant google` | update | `unlocking-the-power-of-google-tag-assistant-extension` | `update_existing` | `manus` |
+| tp007 | `autoreload chrome` | update or merge | `extension-auto-refresh-chrome-2` | `update_existing` | `manus` |
+| tp008 | `extension chrome android` | consolidate | `chrome-extensions-on-android-2026-guide` | `consolidation_review` | `manus` |
+| tp009 | `screenshoter chrome` | consolidate | `fast-screenshot-extension-alternatives-1` | `consolidation_review` | `manus` |
+| tp010 | `adblock chrome` | update or merge | `best-ad-block-chrome-extension` | `consolidation_review` | `manus` |
+
+The reservation source of truth is `editorial/pilot-batch-001.json`. Each article job must use an explicit keyword and a separate branch. The integration owner alone updates the final index and sitemap.
+
 ## Integration decision log
 
 ### Worker-07 — `pro-essential-chrome-extensions-the-ultimate-guide`

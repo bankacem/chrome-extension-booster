@@ -7,21 +7,343 @@
     "public/sitemap.xml"
   ],
   "workers": [
-    {"id":"Worker-01","slug":"how-to-get-the-most-out-of-your-browser-with-extension-chrome-get","branch":"refine/recover-worker-01","status":"merged","worker_commit":"3434daa6","integration_branch":"integration/recover-workers-1348","integration_commit":"a50cf7f9f6b7607ac25556c8d7ebfdaa1c8077c2","html_bytes":14940,"schema":{"Article":1,"BreadcrumbList":1,"FAQPage":0,"HowTo":0},"tests":{"sync_articles":"passed","build":"passed","typecheck":"passed","performance":"passed","seo":"passed","links":"passed","diff_check":"passed"}},
-    {"id":"Worker-02","slug":"pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users","branch":"refine/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users","status":"merged","integration_commit":"00c14af336dcda3ec9e9f73437109c5e6105e242","html_bytes":24540,"schema":{"Article":1,"BreadcrumbList":1,"FAQPage":1,"HowTo":0},"tests":{"sync_articles":"passed","build":"passed","typecheck":"passed","performance":"passed","seo":"passed","links":"passed","diff_check":"passed"}},
-    {"id":"Worker-03","slug":"how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide","branch":"refine/recover-worker-03","status":"merged","worker_commit":"531580d2","integration_branch":"integration/recover-workers-1348","integration_commit":"a50cf7f9f6b7607ac25556c8d7ebfdaa1c8077c2","html_bytes":15816,"schema":{"Article":1,"BreadcrumbList":1,"FAQPage":0,"HowTo":0},"tests":{"sync_articles":"passed","build":"passed","typecheck":"passed","performance":"passed","seo":"passed","links":"passed","diff_check":"passed"}},
-    {"id":"Worker-04","slug":"pro-student-chrome-extensions-the-ultimate-academic-stack","branch":"refine/recover-worker-04","status":"merged","worker_commit":"ce8486b8","integration_branch":"integration/recover-workers-1348","integration_commit":"a50cf7f9f6b7607ac25556c8d7ebfdaa1c8077c2","html_bytes":18052,"schema":{"Article":1,"BreadcrumbList":1,"FAQPage":0,"HowTo":0},"tests":{"sync_articles":"passed","build":"passed","typecheck":"passed","performance":"passed","seo":"passed","links":"passed","diff_check":"passed"}},
-    {"id":"Worker-05","slug":"professional-browser-tools-guide","branch":"refine/professional-browser-tools-guide","status":"merged","integration_commit":"00c14af336dcda3ec9e9f73437109c5e6105e242","html_bytes":27210,"schema":{"Article":1,"BreadcrumbList":1,"FAQPage":1,"HowTo":0},"tests":{"sync_articles":"passed","build":"passed","typecheck":"passed","performance":"passed","seo":"passed","links":"passed","diff_check":"passed"}},
-    {"id":"Worker-06","slug":"google-chrome-programm-en-14","branch":"refine/google-chrome-programm-en-14","status":"merged","integration_commit":"00c14af336dcda3ec9e9f73437109c5e6105e242","html_bytes":23948,"schema":{"Article":1,"BreadcrumbList":1,"FAQPage":0,"HowTo":0},"tests":{"sync_articles":"passed","build":"passed","typecheck":"passed","performance":"passed","seo":"passed","links":"passed","diff_check":"passed"}},
-    {"id":"Worker-07","slug":"pro-essential-chrome-extensions-the-ultimate-guide","branch":"refine/pro-essential-chrome-extensions-the-ultimate-guide","status":"merged","integration_commit":"13bd48915056805b467a68a32b8c1518207e83a2","worker_commit":"8d4430f2e4b0a016a2de26a1384491b33398352d","html_bytes":21035,"schema":{"Article":1,"BreadcrumbList":1,"FAQPage":0,"HowTo":0},"tests":{"sync_articles":"passed","build":"passed","typecheck":"passed","performance":"passed","seo":"passed","links":"passed","diff_check":"passed"}},
-    {"id":"Worker-08","slug":"how-to-create-complex-excel-formulas-easily","branch":"refine/recover-worker-08","status":"merged","worker_commit":"7db4ff83","integration_branch":"integration/recover-workers-1348","integration_commit":"a50cf7f9f6b7607ac25556c8d7ebfdaa1c8077c2","html_bytes":17387,"schema":{"Article":1,"BreadcrumbList":1,"FAQPage":0,"HowTo":0},"tests":{"sync_articles":"passed","build":"passed","typecheck":"passed","performance":"passed","seo":"passed","links":"passed","diff_check":"passed"}},
-    {"id":"Worker-09","slug":"stop-chrome-from-freezing-on-low-end-pcs-7","branch":"refine/stop-chrome-from-freezing-on-low-end-pcs-7","status":"merged","integration_commit":"3188c703","worker_commit":"cb5ce238ac8d7a671b6500593758241a4f58f400","html_bytes":26413,"schema":{"Article":1,"BreadcrumbList":1,"FAQPage":1,"HowTo":0},"tests":{"sync_articles":"passed","build":"passed","typecheck":"passed","performance":"passed","seo":"passed","links":"passed","diff_check":"passed"}},
-    {"id":"Worker-10","slug":null,"branch":"integration/wave-1","status":"reserved","role":"integration"}
+    {
+      "id": "Worker-01",
+      "slug": "how-to-get-the-most-out-of-your-browser-with-extension-chrome-get",
+      "branch": "refine/recover-worker-01",
+      "status": "merged",
+      "worker_commit": "3434daa6",
+      "integration_branch": "integration/recover-workers-1348",
+      "integration_commit": "a50cf7f9f6b7607ac25556c8d7ebfdaa1c8077c2",
+      "html_bytes": 14940,
+      "schema": {
+        "Article": 1,
+        "BreadcrumbList": 1,
+        "FAQPage": 0,
+        "HowTo": 0
+      },
+      "tests": {
+        "sync_articles": "passed",
+        "build": "passed",
+        "typecheck": "passed",
+        "performance": "passed",
+        "seo": "passed",
+        "links": "passed",
+        "diff_check": "passed"
+      }
+    },
+    {
+      "id": "Worker-02",
+      "slug": "pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users",
+      "branch": "refine/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users",
+      "status": "merged",
+      "integration_commit": "00c14af336dcda3ec9e9f73437109c5e6105e242",
+      "html_bytes": 24540,
+      "schema": {
+        "Article": 1,
+        "BreadcrumbList": 1,
+        "FAQPage": 1,
+        "HowTo": 0
+      },
+      "tests": {
+        "sync_articles": "passed",
+        "build": "passed",
+        "typecheck": "passed",
+        "performance": "passed",
+        "seo": "passed",
+        "links": "passed",
+        "diff_check": "passed"
+      }
+    },
+    {
+      "id": "Worker-03",
+      "slug": "how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+      "branch": "refine/recover-worker-03",
+      "status": "merged",
+      "worker_commit": "531580d2",
+      "integration_branch": "integration/recover-workers-1348",
+      "integration_commit": "a50cf7f9f6b7607ac25556c8d7ebfdaa1c8077c2",
+      "html_bytes": 15816,
+      "schema": {
+        "Article": 1,
+        "BreadcrumbList": 1,
+        "FAQPage": 0,
+        "HowTo": 0
+      },
+      "tests": {
+        "sync_articles": "passed",
+        "build": "passed",
+        "typecheck": "passed",
+        "performance": "passed",
+        "seo": "passed",
+        "links": "passed",
+        "diff_check": "passed"
+      }
+    },
+    {
+      "id": "Worker-04",
+      "slug": "pro-student-chrome-extensions-the-ultimate-academic-stack",
+      "branch": "refine/recover-worker-04",
+      "status": "merged",
+      "worker_commit": "ce8486b8",
+      "integration_branch": "integration/recover-workers-1348",
+      "integration_commit": "a50cf7f9f6b7607ac25556c8d7ebfdaa1c8077c2",
+      "html_bytes": 18052,
+      "schema": {
+        "Article": 1,
+        "BreadcrumbList": 1,
+        "FAQPage": 0,
+        "HowTo": 0
+      },
+      "tests": {
+        "sync_articles": "passed",
+        "build": "passed",
+        "typecheck": "passed",
+        "performance": "passed",
+        "seo": "passed",
+        "links": "passed",
+        "diff_check": "passed"
+      }
+    },
+    {
+      "id": "Worker-05",
+      "slug": "professional-browser-tools-guide",
+      "branch": "refine/professional-browser-tools-guide",
+      "status": "merged",
+      "integration_commit": "00c14af336dcda3ec9e9f73437109c5e6105e242",
+      "html_bytes": 27210,
+      "schema": {
+        "Article": 1,
+        "BreadcrumbList": 1,
+        "FAQPage": 1,
+        "HowTo": 0
+      },
+      "tests": {
+        "sync_articles": "passed",
+        "build": "passed",
+        "typecheck": "passed",
+        "performance": "passed",
+        "seo": "passed",
+        "links": "passed",
+        "diff_check": "passed"
+      }
+    },
+    {
+      "id": "Worker-06",
+      "slug": "google-chrome-programm-en-14",
+      "branch": "refine/google-chrome-programm-en-14",
+      "status": "merged",
+      "integration_commit": "00c14af336dcda3ec9e9f73437109c5e6105e242",
+      "html_bytes": 23948,
+      "schema": {
+        "Article": 1,
+        "BreadcrumbList": 1,
+        "FAQPage": 0,
+        "HowTo": 0
+      },
+      "tests": {
+        "sync_articles": "passed",
+        "build": "passed",
+        "typecheck": "passed",
+        "performance": "passed",
+        "seo": "passed",
+        "links": "passed",
+        "diff_check": "passed"
+      }
+    },
+    {
+      "id": "Worker-07",
+      "slug": "pro-essential-chrome-extensions-the-ultimate-guide",
+      "branch": "refine/pro-essential-chrome-extensions-the-ultimate-guide",
+      "status": "merged",
+      "integration_commit": "13bd48915056805b467a68a32b8c1518207e83a2",
+      "worker_commit": "8d4430f2e4b0a016a2de26a1384491b33398352d",
+      "html_bytes": 21035,
+      "schema": {
+        "Article": 1,
+        "BreadcrumbList": 1,
+        "FAQPage": 0,
+        "HowTo": 0
+      },
+      "tests": {
+        "sync_articles": "passed",
+        "build": "passed",
+        "typecheck": "passed",
+        "performance": "passed",
+        "seo": "passed",
+        "links": "passed",
+        "diff_check": "passed"
+      }
+    },
+    {
+      "id": "Worker-08",
+      "slug": "how-to-create-complex-excel-formulas-easily",
+      "branch": "refine/recover-worker-08",
+      "status": "merged",
+      "worker_commit": "7db4ff83",
+      "integration_branch": "integration/recover-workers-1348",
+      "integration_commit": "a50cf7f9f6b7607ac25556c8d7ebfdaa1c8077c2",
+      "html_bytes": 17387,
+      "schema": {
+        "Article": 1,
+        "BreadcrumbList": 1,
+        "FAQPage": 0,
+        "HowTo": 0
+      },
+      "tests": {
+        "sync_articles": "passed",
+        "build": "passed",
+        "typecheck": "passed",
+        "performance": "passed",
+        "seo": "passed",
+        "links": "passed",
+        "diff_check": "passed"
+      }
+    },
+    {
+      "id": "Worker-09",
+      "slug": "stop-chrome-from-freezing-on-low-end-pcs-7",
+      "branch": "refine/stop-chrome-from-freezing-on-low-end-pcs-7",
+      "status": "merged",
+      "integration_commit": "3188c703",
+      "worker_commit": "cb5ce238ac8d7a671b6500593758241a4f58f400",
+      "html_bytes": 26413,
+      "schema": {
+        "Article": 1,
+        "BreadcrumbList": 1,
+        "FAQPage": 1,
+        "HowTo": 0
+      },
+      "tests": {
+        "sync_articles": "passed",
+        "build": "passed",
+        "typecheck": "passed",
+        "performance": "passed",
+        "seo": "passed",
+        "links": "passed",
+        "diff_check": "passed"
+      }
+    },
+    {
+      "id": "Worker-10",
+      "slug": null,
+      "branch": "integration/wave-1",
+      "status": "reserved",
+      "role": "integration"
+    }
   ],
   "completed_slugs": [
     "fast-screenshot-extension-alternatives-1",
     "chrome-ram-guide",
     "internet-download-manager-extension",
     "the-ultimate-chrome-extensions-for-browsing-guide"
-  ]
+  ],
+  "pilot_batch_001": {
+    "id": "pilot-batch-001",
+    "goal": "Validate coordinated Manus + seo_agent_pro production before scaling to 500 accepted articles",
+    "status": "reserved_for_review",
+    "run_policy": "Only topics marked approved_for_generation may be sent to seo_agent_pro; the rest require a separate intent or update review.",
+    "topics": [
+      {
+        "topic_id": "tp001",
+        "primary_keyword": "tampermonkey chrome",
+        "content_action": "new_article",
+        "search_intent": "how-to + safety review",
+        "target_slug": "tampermonkey-chrome-userscripts-guide",
+        "status": "approved_for_generation",
+        "owner": "seo_agent_pro",
+        "counted_toward_500": true
+      },
+      {
+        "topic_id": "tp002",
+        "primary_keyword": "pip chrome",
+        "content_action": "new_article",
+        "search_intent": "how-to + troubleshooting",
+        "target_slug": "picture-in-picture-chrome-guide",
+        "status": "approved_for_generation",
+        "owner": "seo_agent_pro",
+        "counted_toward_500": true
+      },
+      {
+        "topic_id": "tp003",
+        "primary_keyword": "gmail mailtrack",
+        "content_action": "new_article",
+        "search_intent": "setup + privacy limits",
+        "target_slug": "mailtrack-gmail-chrome-guide",
+        "status": "approved_for_generation",
+        "owner": "seo_agent_pro",
+        "counted_toward_500": true
+      },
+      {
+        "topic_id": "tp004",
+        "primary_keyword": "omniboxes",
+        "content_action": "new_article",
+        "search_intent": "intent validation required",
+        "target_slug": "chrome-omnibox-guide",
+        "status": "needs_intent_validation",
+        "owner": "manus",
+        "counted_toward_500": true
+      },
+      {
+        "topic_id": "tp005",
+        "primary_keyword": "extension zoom chrome",
+        "content_action": "new_article",
+        "search_intent": "product/entity validation required",
+        "target_slug": "zoom-chrome-extension-guide",
+        "status": "needs_product_validation",
+        "owner": "manus",
+        "counted_toward_500": true
+      },
+      {
+        "topic_id": "tp006",
+        "primary_keyword": "tag assistant google",
+        "content_action": "update",
+        "search_intent": "troubleshooting + tag verification",
+        "target_slug": "unlocking-the-power-of-google-tag-assistant-extension",
+        "status": "update_existing",
+        "owner": "manus",
+        "counted_toward_500": false
+      },
+      {
+        "topic_id": "tp007",
+        "primary_keyword": "autoreload chrome",
+        "content_action": "update_or_merge",
+        "search_intent": "auto refresh setup + limits",
+        "target_slug": "extension-auto-refresh-chrome-2",
+        "status": "update_existing",
+        "owner": "manus",
+        "counted_toward_500": false
+      },
+      {
+        "topic_id": "tp008",
+        "primary_keyword": "extension chrome android",
+        "content_action": "consolidate",
+        "search_intent": "Android extension availability and alternatives",
+        "target_slug": "chrome-extensions-on-android-2026-guide",
+        "status": "consolidation_review",
+        "owner": "manus",
+        "counted_toward_500": false
+      },
+      {
+        "topic_id": "tp009",
+        "primary_keyword": "screenshoter chrome",
+        "content_action": "consolidate",
+        "search_intent": "screenshot tool selection",
+        "target_slug": "fast-screenshot-extension-alternatives-1",
+        "status": "consolidation_review",
+        "owner": "manus",
+        "counted_toward_500": false
+      },
+      {
+        "topic_id": "tp010",
+        "primary_keyword": "adblock chrome",
+        "content_action": "update_or_merge",
+        "search_intent": "ad blocker selection and privacy",
+        "target_slug": "best-ad-block-chrome-extension",
+        "status": "consolidation_review",
+        "owner": "manus",
+        "counted_toward_500": false
+      }
+    ]
+  }
 }
