@@ -1,0 +1,108 @@
+{
+  "id": "pilot-batch-001",
+  "goal": "Validate coordinated Manus + seo_agent_pro production before scaling to 500 accepted articles",
+  "status": "reserved_for_review",
+  "run_policy": "Only topics marked approved_for_generation may be sent to seo_agent_pro; the rest require a separate intent or update review.",
+  "topics": [
+    {
+      "topic_id": "tp001",
+      "primary_keyword": "tampermonkey chrome",
+      "content_action": "new_article",
+      "search_intent": "how-to + safety review",
+      "target_slug": "tampermonkey-chrome-userscripts-guide",
+      "status": "approved_for_generation",
+      "owner": "seo_agent_pro",
+      "counted_toward_500": true
+    },
+    {
+      "topic_id": "tp002",
+      "primary_keyword": "pip chrome",
+      "content_action": "new_article",
+      "search_intent": "how-to + troubleshooting",
+      "target_slug": "picture-in-picture-chrome-guide",
+      "status": "approved_for_generation",
+      "owner": "seo_agent_pro",
+      "counted_toward_500": true
+    },
+    {
+      "topic_id": "tp003",
+      "primary_keyword": "gmail mailtrack",
+      "content_action": "new_article",
+      "search_intent": "setup + privacy limits",
+      "target_slug": "mailtrack-gmail-chrome-guide",
+      "status": "approved_for_generation",
+      "owner": "seo_agent_pro",
+      "counted_toward_500": true
+    },
+    {
+      "topic_id": "tp004",
+      "primary_keyword": "omniboxes",
+      "content_action": "new_article",
+      "search_intent": "intent validation required",
+      "target_slug": "chrome-omnibox-guide",
+      "status": "needs_intent_validation",
+      "owner": "manus",
+      "counted_toward_500": true
+    },
+    {
+      "topic_id": "tp005",
+      "primary_keyword": "extension zoom chrome",
+      "content_action": "new_article",
+      "search_intent": "product/entity validation required",
+      "target_slug": "zoom-chrome-extension-guide",
+      "status": "needs_product_validation",
+      "owner": "manus",
+      "counted_toward_500": true
+    },
+    {
+      "topic_id": "tp006",
+      "primary_keyword": "tag assistant google",
+      "content_action": "update",
+      "search_intent": "troubleshooting + tag verification",
+      "target_slug": "unlocking-the-power-of-google-tag-assistant-extension",
+      "status": "update_existing",
+      "owner": "manus",
+      "counted_toward_500": false
+    },
+    {
+      "topic_id": "tp007",
+      "primary_keyword": "autoreload chrome",
+      "content_action": "update_or_merge",
+      "search_intent": "auto refresh setup + limits",
+      "target_slug": "extension-auto-refresh-chrome-2",
+      "status": "update_existing",
+      "owner": "manus",
+      "counted_toward_500": false
+    },
+    {
+      "topic_id": "tp008",
+      "primary_keyword": "extension chrome android",
+      "content_action": "consolidate",
+      "search_intent": "Android extension availability and alternatives",
+      "target_slug": "chrome-extensions-on-android-2026-guide",
+      "status": "consolidation_review",
+      "owner": "manus",
+      "counted_toward_500": false
+    },
+    {
+      "topic_id": "tp009",
+      "primary_keyword": "screenshoter chrome",
+      "content_action": "consolidate",
+      "search_intent": "screenshot tool selection",
+      "target_slug": "fast-screenshot-extension-alternatives-1",
+      "status": "consolidation_review",
+      "owner": "manus",
+      "counted_toward_500": false
+    },
+    {
+      "topic_id": "tp010",
+      "primary_keyword": "adblock chrome",
+      "content_action": "update_or_merge",
+      "search_intent": "ad blocker selection and privacy",
+      "target_slug": "best-ad-block-chrome-extension",
+      "status": "consolidation_review",
+      "owner": "manus",
+      "counted_toward_500": false
+    }
+  ]
+}
