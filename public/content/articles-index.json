@@ -1,5 +1,34 @@
 [
   {
+    "id": "02930aac-a163-4200-b830-fbe78682bb4e",
+    "title": "Picture-in-Picture Chrome: How to Use It and Fix Common Problems",
+    "slug": "picture-in-picture-chrome-guide",
+    "description": "Learn how to use Picture-in-Picture in Chrome, when to use Google's extension, and how to fix missing controls, blank windows, and compatibility issues.",
+    "meta_description": "Learn how to use Picture-in-Picture in Chrome, when to use Google's extension, and how to fix missing controls, blank windows, and compatibility issues.",
+    "excerpt": "Use Picture-in-Picture in Chrome without guessing: learn the built-in video workflow, the official Google extension, current limits, and a practical troubleshooting path.",
+    "published_at": "2026-08-22T00:00:00.000Z",
+    "category": "Media & Downloads",
+    "author": "Miccart Phen",
+    "image_url": "/og-image.png",
+    "featured_image": "/og-image.png",
+    "reading_time": 7,
+    "read_time": 7,
+    "views": 0,
+    "tags": [
+      "picture-in-picture",
+      "chrome video",
+      "multitasking"
+    ],
+    "keywords": [
+      "pip chrome",
+      "picture in picture chrome",
+      "chrome pip not working",
+      "picture in picture extension"
+    ],
+    "canonicalPath": "/blog/picture-in-picture-chrome-guide",
+    "updated_at": "2026-08-22T00:00:00.000Z"
+  },
+  {
     "id": "f275ef3c-c412-432a-a97a-ac56b7f8dfeb",
     "title": "Tampermonkey Chrome: Install and Run Userscripts Safely",
     "slug": "tampermonkey-chrome-userscripts-guide",
