@@ -816,5 +816,34 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "omniboxes",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 92,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "Lacks a dedicated 'Pros and Cons' list; pros are scattered across sections, and cons are limited to risks.",
+      "The discussion on technology behind omnibox functionalities is somewhat generic and lacks depth compared to the competitor gap requirements."
+    ],
+    "category": "Redirect & Navigation",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://www.pcrisk.com/removal-guides/8672-omniboxes-com-redirect",
+      "https://learn.microsoft.com/en-us/answers/questions/2687541/how-do-i-remove-the-omniboxes-hijacker",
+      "https://www.computerhope.com/jargon/o/omnibox.htm"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-22T21:00:26.010137+00:00"
   }
 ]
