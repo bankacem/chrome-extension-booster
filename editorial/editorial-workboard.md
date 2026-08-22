@@ -38,7 +38,7 @@ The first coordinated pilot contains ten distinct topic records. Only the three 
 | Topic | Primary keyword | Action | Target slug | Status | Owner |
 |---|---|---|---|---|---|
 | tp001 | `tampermonkey chrome` | new article | `tampermonkey-chrome-userscripts-guide` | `merged` | `seo_agent_pro` — PR #315, integration PR #316, main `fc241da5`, live HTTP 200, index once, sitemap present |
-| tp002 | `pip chrome` | new article | `picture-in-picture-chrome-guide` | `approved_for_generation` | `seo_agent_pro` |
+| tp002 | `pip chrome` | new article | `picture-in-picture-chrome-guide` | `merged` | `seo_agent_pro` — PR #318, path-fix PR #319, integration PR #320, main `dacc71c0`, live HTTP 200, index once, sitemap present |
 | tp003 | `gmail mailtrack` | new article | `mailtrack-gmail-chrome-guide` | `approved_for_generation` | `seo_agent_pro` |
 | tp004 | `omniboxes` | new article | `chrome-omnibox-guide` | `needs_intent_validation` | `manus` |
 | tp005 | `extension zoom chrome` | new article | `zoom-chrome-extension-guide` | `needs_product_validation` | `manus` |
@@ -48,7 +48,7 @@ The first coordinated pilot contains ten distinct topic records. Only the three 
 | tp009 | `screenshoter chrome` | consolidate | `fast-screenshot-extension-alternatives-1` | `consolidation_review` | `manus` |
 | tp010 | `adblock chrome` | update or merge | `best-ad-block-chrome-extension` | `consolidation_review` | `manus` |
 
-The reservation source of truth is `editorial/pilot-batch-001.json`. tp001 is now merged and live; the remaining generation-approved topics are tp002 and tp003. Each article job must use an explicit keyword and a separate branch. The integration owner alone updates the final index and sitemap.
+The reservation source of truth is `editorial/pilot-batch-001.json`. tp001 and tp002 are now merged and live; tp003 remains generation-approved but is intentionally not started until the pilot review is complete. Each article job must use an explicit keyword and a separate branch. The integration owner alone updates the final index and sitemap.
 
 ## Integration decision log
 
@@ -59,6 +59,15 @@ The reservation source of truth is `editorial/pilot-batch-001.json`. tp001 is no
 - **Files accepted:** assigned article, its audit, the branch-local index change, and the Worker-07 status row. No other article was changed; no shared sitemap change was introduced.
 - **Rendered validation:** article HTML `21,035` bytes; `Article` 1, `BreadcrumbList` 1, `FAQPage` 0, `HowTo` 0. The article intentionally has no visible FAQ.
 - **Release gate:** `sync-articles`, `build`, `typecheck`, `test:performance`, `test:seo`, `test:links`, and `git diff --check` all passed. The initial sync attempt was blocked by missing local `tsx`; after installing the locked dependencies, the same cycle passed.
+
+### tp002 — `picture-in-picture-chrome-guide`
+
+- **Worker branch and content PR:** `agentic-review/how-to-use-picture-in-picture-pip-in-chrome-complete-guide`, PR #318, content commits `7073f325` and `57af7e2a`, merged as `8792acd2`.
+- **Defect caught and fixed:** the slug-derived prerender partition is `p/i/c`, but the file initially lived under `p/i/p`. PR #319 moved only the article file to `public/content/articles/p/i/c/picture-in-picture-chrome-guide.md`; its merge commit was `af8cc3a3eecbfac10dffafa72edf81a49dc9f170`.
+- **Integration:** PR #320 added the generated article-index entry, sitemap date, and sitemap URL; main integration commit `dacc71c05707a40265ca1963c18bab859a14502a`.
+- **Rendered and release validation:** the corrected build prerendered 752 English article pages with no missing-Markdown warning. `sync-articles`, `build`, `typecheck`, `test:performance`, `test:seo`, `test:links`, and `git diff --check` all passed. The SEO smoke test reported 784 sitemap URLs and 752 English articles; the link test scanned 8,020 links with 0 redirect links and 6 documented exceptions. The slug appears once in the local index and once in `public/sitemap.xml`.
+- **Live validation:** Vercel deployment `dpl_6PKE99hyBVL3NraT4HZRHG1bXLZb` for verified main commit `dacc71c` reached `READY` on Production. The live URL returned the article after an initial 404 while the deployment was queued. The live title, meta description, canonical, `Article`, and `BreadcrumbList` were checked; the page exposes no unsupported `FAQPage` schema.
+- **Decision:** tp002 is recorded as `merged` and live. The initial queue-related 404 was transient and did not indicate a missing source article. This confirms the value of a path-aware prerender check, separate content/path/integration PRs, and post-deployment HTML verification; it is not evidence of Google ranking or indexing.
 
 ### Worker-09 — `stop-chrome-from-freezing-on-low-end-pcs-7`
 
