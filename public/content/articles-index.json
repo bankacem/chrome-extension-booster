@@ -1,5 +1,35 @@
 [
   {
+    "id": "f0dba3b5-9d8f-4c3b-94ac-2c0e20260822",
+    "title": "Chrome Omnibox Guide: Address-Bar Shortcuts and Extension Keywords",
+    "slug": "chrome-omnibox-guide",
+    "description": "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point.",
+    "meta_description": "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point.",
+    "excerpt": "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point.",
+    "published_at": "2026-08-22T00:00:00.000Z",
+    "category": "Browser Productivity",
+    "author": "Miccart Phen",
+    "image_url": "/og-image.png",
+    "featured_image": "/og-image.png",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "Omnibox",
+      "Browser shortcuts",
+      "Chrome extensions"
+    ],
+    "keywords": [
+      "omniboxes",
+      "Chrome Omnibox",
+      "Chrome address bar shortcuts",
+      "Chrome extension Omnibox API"
+    ],
+    "canonicalPath": "/blog/chrome-omnibox-guide",
+    "updated_at": "2026-08-22T00:00:00.000Z"
+  },
+  {
     "id": "9f3b2d7d-6f06-4a89-a3e0-1a2d9a6b1c54",
     "title": "Mailtrack for Gmail in Chrome: Setup, Read Receipts, and Privacy Limits",
     "slug": "mailtrack-gmail-chrome-guide",
