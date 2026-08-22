@@ -3,7 +3,7 @@ seo_title: "Picture-in-Picture Chrome: Setup and Fixes"
 id: 02930aac-a163-4200-b830-fbe78682bb4e
 title: "Picture-in-Picture Chrome: How to Use It and Fix Common Problems"
 slug: picture-in-picture-chrome-guide
-status: draft
+status: published
 excerpt: "Use Picture-in-Picture in Chrome without guessing: learn the built-in video workflow, the official Google extension, current limits, and a practical troubleshooting path."
 meta_description: "Learn how to use Picture-in-Picture in Chrome, when to use Google's extension, and how to fix missing controls, blank windows, and compatibility issues."
 featured_image: /og-image.png
