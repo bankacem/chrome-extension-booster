@@ -3,7 +3,7 @@ seo_title: "Tampermonkey Chrome: Safe Userscript Setup"
 id: f275ef3c-c412-432a-a97a-ac56b7f8dfeb
 title: "Tampermonkey Chrome: Install and Run Userscripts Safely"
 slug: tampermonkey-chrome-userscripts-guide
-status: draft
+status: published
 excerpt: "Learn how to install Tampermonkey in Chrome, review userscripts, grant the right permission, and create a small script without exposing every website to unknown code."
 meta_description: "Install Tampermonkey in Chrome, review userscripts, grant the right permission, and run a small script safely with a practical checklist."
 featured_image: /og-image.png
