@@ -40,7 +40,7 @@ The first coordinated pilot contains ten distinct topic records. Only the three 
 | tp001 | `tampermonkey chrome` | new article | `tampermonkey-chrome-userscripts-guide` | `merged` | `seo_agent_pro` — PR #315, integration PR #316, main `fc241da5`, live HTTP 200, index once, sitemap present |
 | tp002 | `pip chrome` | new article | `picture-in-picture-chrome-guide` | `merged` | `seo_agent_pro` — PR #318, path-fix PR #319, integration PR #320, main `dacc71c0`, live HTTP 200, index once, sitemap present |
 | tp003 | `gmail mailtrack` | new article | `mailtrack-gmail-chrome-guide` | `merged` | `seo_agent_pro` — agent PR #325 superseded; reviewed content PR #326; integration PR #327; main `4e9402d6`; live HTTP 200; index once, sitemap present |
-| tp004 | `omniboxes` | new article | `chrome-omnibox-guide` | `needs_intent_validation` | `manus` |
+| tp004 | `omniboxes` | new article | `chrome-omnibox-guide` | `approved_for_generation` | `seo_agent_pro` — decision audit `editorial/article-audit-chrome-omnibox-guide.md`; split-path brief: built-in address-bar/site-search shortcuts plus extension keyword actions |
 | tp005 | `extension zoom chrome` | new article | `zoom-chrome-extension-guide` | `needs_product_validation` | `manus` |
 | tp006 | `tag assistant google` | update | `unlocking-the-power-of-google-tag-assistant-extension` | `update_existing` | `manus` |
 | tp007 | `autoreload chrome` | update or merge | `extension-auto-refresh-chrome-2` | `update_existing` | `manus` |
@@ -48,7 +48,15 @@ The first coordinated pilot contains ten distinct topic records. Only the three 
 | tp009 | `screenshoter chrome` | consolidate | `fast-screenshot-extension-alternatives-1` | `consolidation_review` | `manus` |
 | tp010 | `adblock chrome` | update or merge | `best-ad-block-chrome-extension` | `consolidation_review` | `manus` |
 
-The reservation source of truth is `editorial/pilot-batch-001.json`. tp001, tp002, and tp003 are now merged and live; the pilot is recorded as `pilot_validated_pending_scale_review`. Each article job must use an explicit keyword and a separate branch. The integration owner alone updates the final index and sitemap.
+The reservation source of truth is `editorial/pilot-batch-001.json`. tp001, tp002, and tp003 are merged and live; tp004 is now approved for one controlled generation run under its decision audit. The pilot remains `pilot_validated_pending_scale_review`. Each article job must use an explicit keyword and a separate branch. The integration owner alone updates the final index and sitemap.
+
+## tp004 decision log — `chrome-omnibox-guide`
+
+- **Keyword source:** the internal KeywordStats export contains `omniboxes` with 5,000 average monthly searches, zero recorded three-month and year-over-year variation, and medium competition in the export. These are keyword-planning data, not Search Console results.
+- **Intent decision:** approve a split-path guide covering built-in address-bar/site-search shortcuts and extension-defined Omnibox keyword actions. The opening must separate the two paths so the article does not duplicate generic Chrome productivity coverage.
+- **Overlap decision:** no dedicated Omnibox or Chrome address-bar article exists in the 752-entry index. Eleven incidental metadata matches were found, mainly bookmarks, screenshots, SEO/search, and address-bar mentions; the new guide must link rather than duplicate those topics.
+- **Competitor gap:** current competitor coverage is broad consumer tips, while official Chrome material is split between consumer site-search settings and the developer API. ExtensionTo can own the bridge with a decision table, explicit setup paths, extension limitations, maintenance, privacy, managed-device caveats, and troubleshooting.
+- **Acceptance rule:** run `seo_agent_pro` only with explicit keyword `omniboxes` and reserved slug `chrome-omnibox-guide`; reject any draft that changes the slug, collapses the two intents into generic tips, or makes unsupported claims about account-dependent/experimental features. Content, index/Sitemap integration, release gates, and live verification remain separate steps.
 
 ## Integration decision log
 
