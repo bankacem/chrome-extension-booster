@@ -5112,25 +5112,31 @@
   },
   {
     "id": "81b288c0-465d-4650-91fc-ed4ab7c5ee3f",
-    "title": "How to Get the Most Out of Your Browser with \"Extension Chrome Get\"",
+    "title": "How to Get the Most Out of Your Browser with Chrome Extensions",
     "slug": "how-to-get-the-most-out-of-your-browser-with-extension-chrome-get",
-    "description": "A hands-on look at get the most out of your browser with \"extension chrome get\", covering setup, real features, and what to expect before installing it.",
-    "meta_description": "A hands-on look at get the most out of your browser with \"extension chrome get\", covering setup, real features, and what to expect before installing it.",
-    "excerpt": "When it comes to customizing your browsing experience, the phrase \"extension chrome get\" is more than just a search query - it's a gateway to unlocking a…",
+    "description": "Learn how to find, install, review, limit, and manage Chrome extensions without turning your browser into a slow or risky collection of add-ons.",
+    "meta_description": "Learn how to find, install, review, limit, and manage Chrome extensions without turning your browser into a slow or risky collection of add-ons.",
+    "excerpt": "A practical Chrome extension workflow: discover the right tool, review permissions, test site access, and remove what no longer earns its place.",
     "published_at": "2026-05-04T02:15:01.688+00:00",
     "category": "Chrome Extensions",
     "author": "James Mitchell",
     "image_url": "/content/images/extension-chrome-get-mkzp2g8f7qr/featured.webp",
     "featured_image": "/content/images/extension-chrome-get-mkzp2g8f7qr/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
+    "reading_time": 7,
+    "read_time": 7,
     "views": 0,
-    "tags": [],
+    "tags": [
+      "chrome extensions",
+      "browser management",
+      "privacy"
+    ],
     "keywords": [
-      "extension chrome get"
+      "extension chrome get",
+      "how to get Chrome extensions",
+      "manage Chrome extensions"
     ],
     "canonicalPath": "/blog/how-to-get-the-most-out-of-your-browser-with-extension-chrome-get",
-    "updated_at": "2026-05-04T02:15:01.743783+00:00"
+    "updated_at": "2026-08-22T07:25:00+00:00"
   },
   {
     "id": "14b4c7ee-a3f8-495e-856d-812b26b5d817",
@@ -16793,31 +16799,31 @@
   },
   {
     "id": "da7ef45a-4781-4133-a5d9-eeb6cd281449",
-    "title": "How to Fix Chrome High Memory Usage The Ultimate 2026 Speed Up Guide: Reducing Browser Memory Leaks",
+    "title": "How to Fix Chrome High Memory Usage: A Diagnostic Guide",
     "slug": "how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
-    "description": "Boost your browsing speed and extend laptop battery life. Discover the best lightweight extensions for managing memory and reducing CPU load effectively.",
-    "meta_description": "Boost your browsing speed and extend laptop battery life. Discover the best lightweight extensions for managing memory and reducing CPU load effectively.",
-    "excerpt": "Boost your browsing speed and extend laptop battery life. Discover the best lightweight extensions for managing memory and reducing CPU load effectively.",
+    "description": "Learn how to diagnose and reduce Chrome's high memory usage using Task Manager, Memory Saver, extension audits, and safe troubleshooting steps.",
+    "meta_description": "Learn how to diagnose and reduce Chrome's high memory usage using Task Manager, Memory Saver, extension audits, and safe troubleshooting steps.",
+    "excerpt": "Find the tab, extension, or setting behind Chrome's high memory use, then apply the least disruptive fix with a repeatable diagnostic workflow.",
     "published_at": "2026-01-31T09:00:00.27+00:00",
     "category": "Performance & Memory",
     "author": "James Mitchell",
     "image_url": "/content/images/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide/featured.webp",
     "featured_image": "/content/images/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide/featured.webp",
-    "reading_time": 1,
-    "read_time": 1,
+    "reading_time": 8,
+    "read_time": 8,
     "views": 1,
     "tags": [
-      "welcome",
-      "introduction",
-      "premium"
+      "Chrome performance",
+      "memory usage",
+      "troubleshooting"
     ],
     "keywords": [
-      "browser extensions",
-      "premium tools",
-      "productivity"
+      "Chrome high memory usage",
+      "reduce Chrome RAM usage",
+      "Chrome Memory Saver"
     ],
-    "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
-    "updated_at": "2026-02-02T13:59:31.055373+00:00"
+    "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+    "updated_at": "2026-08-22T07:32:00+00:00"
   },
   {
     "id": "f281a3d5-04e8-4fdb-b216-3c23c7fa9466",
@@ -16980,31 +16986,31 @@
   },
   {
     "id": "1065e3f9-2402-4f7e-89d8-75ade8a08195",
-    "title": "Pro Student Chrome Extensions: The Ultimate Academic Stack",
+    "title": "Chrome Extensions for Students: Build a Practical Academic Stack",
     "slug": "pro-student-chrome-extensions-the-ultimate-academic-stack",
-    "description": "Discover a curated, high-performance directory of Chrome extensions built for students, covering note-taking, research, writing, and staying organized.",
-    "meta_description": "Discover a curated, high-performance directory of Chrome extensions built for students, covering note-taking, research, writing, and staying organized.",
-    "excerpt": "Discover the future of browser extensions with our curated, high-performance directory.",
+    "description": "Build a useful Chrome extension stack for students with task-based recommendations for research, citations, writing, focus, accessibility, and privacy.",
+    "meta_description": "Build a useful Chrome extension stack for students with task-based recommendations for research, citations, writing, focus, accessibility, and privacy.",
+    "excerpt": "Choose Chrome extensions by academic task—from capturing sources to protecting focus and checking drafts—without surrendering privacy or authorship.",
     "published_at": "2026-01-27T12:57:39.769+00:00",
     "category": "Productivity & Tools",
     "author": "James Mitchell",
     "image_url": "/content/images/pro-student-chrome-extensions-the-ultimate-academic-stack/featured.webp",
     "featured_image": "/content/images/pro-student-chrome-extensions-the-ultimate-academic-stack/featured.webp",
-    "reading_time": 1,
-    "read_time": 1,
+    "reading_time": 8,
+    "read_time": 8,
     "views": 2,
     "tags": [
-      "welcome",
-      "introduction",
-      "premium"
+      "students",
+      "research",
+      "study tools"
     ],
     "keywords": [
-      "browser extensions",
-      "premium tools",
-      "productivity"
+      "chrome extensions for students",
+      "student Chrome extensions",
+      "academic browser workflow"
     ],
     "canonicalPath": "/blog/pro-student-chrome-extensions-the-ultimate-academic-stack",
-    "updated_at": "2026-02-02T13:41:21.892982+00:00"
+    "updated_at": "2026-08-22T07:38:00+00:00"
   },
   {
     "id": "48a20a60-29d3-4465-8122-78e7ad16fd2e",
@@ -17418,27 +17424,31 @@
   },
   {
     "id": "ef8c944b-c787-4a60-ab4b-fc98028d8c37",
-    "title": "How to Create Complex Excel Formulas Easily: A Professional Guide",
+    "title": "How to Create Complex Excel Formulas Easily: A Practical Method",
     "slug": "how-to-create-complex-excel-formulas-easily",
-    "description": "In the modern data-driven landscape, proficiency in spreadsheet management is no longer a luxury—it is a fundamental requirement for professional success.",
-    "meta_description": "In the modern data-driven landscape, proficiency in spreadsheet management is no longer a luxury—it is a fundamental requirement for professional success.",
-    "excerpt": "In the modern data-driven landscape, proficiency in spreadsheet management is no longer a luxury—it is a fundamental requirement for professional success.",
+    "description": "Build complex Excel formulas with a clear step-by-step method using helper cells, XLOOKUP, LET, FILTER, and reliable debugging techniques.",
+    "meta_description": "Build complex Excel formulas with a clear step-by-step method using helper cells, XLOOKUP, LET, FILTER, and reliable debugging techniques.",
+    "excerpt": "Learn a repeatable method for building advanced Excel formulas: define the output, test each condition, choose the right function, and debug the result.",
     "published_at": "2026-01-21T08:00:01.516+00:00",
-    "category": "Chrome Extensions",
+    "category": "Spreadsheets & Productivity",
     "author": "James Mitchell",
     "image_url": "/content/images/how-to-create-complex-excel-formulas-easily/featured.webp",
     "featured_image": "/content/images/how-to-create-complex-excel-formulas-easily/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
+    "reading_time": 9,
+    "read_time": 9,
     "views": 3,
     "tags": [
-      "How to Create Complex Excel Formulas Easily: A Professional Guide"
+      "Excel formulas",
+      "spreadsheets",
+      "productivity"
     ],
     "keywords": [
-      "How to create complex Excel formulas easily"
+      "how to create complex Excel formulas easily",
+      "advanced Excel formulas",
+      "Excel formula troubleshooting"
     ],
     "canonicalPath": "/blog/how-to-create-complex-excel-formulas-easily",
-    "updated_at": "2026-02-08T14:12:54.75311+00:00"
+    "updated_at": "2026-08-22T07:44:00+00:00"
   },
   {
     "id": "3f068c0c-dda0-4b58-a2ba-b3e07608024b",
