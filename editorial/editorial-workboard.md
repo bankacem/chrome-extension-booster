@@ -37,7 +37,7 @@ The first coordinated pilot contains ten distinct topic records. Only the three 
 
 | Topic | Primary keyword | Action | Target slug | Status | Owner |
 |---|---|---|---|---|---|
-| tp001 | `tampermonkey chrome` | new article | `tampermonkey-chrome-userscripts-guide` | `approved_for_generation` | `seo_agent_pro` |
+| tp001 | `tampermonkey chrome` | new article | `tampermonkey-chrome-userscripts-guide` | `merged` | `seo_agent_pro` — PR #315, integration PR #316, main `fc241da5`, live HTTP 200, index once, sitemap present |
 | tp002 | `pip chrome` | new article | `picture-in-picture-chrome-guide` | `approved_for_generation` | `seo_agent_pro` |
 | tp003 | `gmail mailtrack` | new article | `mailtrack-gmail-chrome-guide` | `approved_for_generation` | `seo_agent_pro` |
 | tp004 | `omniboxes` | new article | `chrome-omnibox-guide` | `needs_intent_validation` | `manus` |
@@ -48,7 +48,7 @@ The first coordinated pilot contains ten distinct topic records. Only the three 
 | tp009 | `screenshoter chrome` | consolidate | `fast-screenshot-extension-alternatives-1` | `consolidation_review` | `manus` |
 | tp010 | `adblock chrome` | update or merge | `best-ad-block-chrome-extension` | `consolidation_review` | `manus` |
 
-The reservation source of truth is `editorial/pilot-batch-001.json`. Each article job must use an explicit keyword and a separate branch. The integration owner alone updates the final index and sitemap.
+The reservation source of truth is `editorial/pilot-batch-001.json`. tp001 is now merged and live; the remaining generation-approved topics are tp002 and tp003. Each article job must use an explicit keyword and a separate branch. The integration owner alone updates the final index and sitemap.
 
 ## Integration decision log
 
