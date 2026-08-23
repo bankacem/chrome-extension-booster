@@ -12,6 +12,7 @@ description: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
 category: "Chrome Extensions"
 ---
 
+
 > **Before you install anything: Chrome already has Gemini built-in.**
 >
 > Yes, really. Google added a Gemini sidebar to Chrome in 2026. Press **Alt + G** and it appears. It can read your current tab, answer questions about web pages, and even work across multiple tabs at once[citation:10].
@@ -68,6 +69,9 @@ This is Google's native Gemini integration. Try this BEFORE installing anything 
 
 ## 📁 #2: Toolbox for Gemini — For Organization Freaks
 
+![Gemini Chat Chrome Extensions Overview](/content/images/gemini-chat-chrome-extensions/gemini-chat-chrome-extensions-overview.webp "Gemini Chat Chrome Extensions Overview")
+
+
 **Freemium | Chrome Web Store[citation:5]**
 
 If you use Gemini daily and have dozens of conversations, this extension is for you.
@@ -118,6 +122,9 @@ Sider adds a floating sidebar that works across any website. Its superpower? **M
 ---
 
 ## 💾 #4: PI Prompts — Never Retype a Prompt Again
+
+![Gemini Chat Chrome Extensions Features](/content/images/gemini-chat-chrome-extensions/gemini-chat-chrome-extensions-features.webp "Gemini Chat Chrome Extensions Features")
+
 
 **Freemium | Chrome Web Store[citation:5]**
 
