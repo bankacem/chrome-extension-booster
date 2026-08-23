@@ -16,6 +16,7 @@ description: >-
 category: "AI Tools"
 ---
 
+
 > **Imagine typing `=AI("Find the CEO of Apple")` into a cell and watching it populate with "Tim Cook."**
 >
 > No scripts. No APIs. No copy-paste from ChatGPT. Just a formula that runs AI inside your spreadsheet.
@@ -114,6 +115,9 @@ Type `=AI("Write a tweet about this product")` in any cell. It works like a norm
 
 ## 🛠️ #3: GPT for Sheets — For Developers
 
+![Chatgpt For Google Sheets Extensions 2026 Overview](/content/images/chatgpt-for-google-sheets-extensions-2026/chatgpt-for-google-sheets-extensions-2026-overview.webp "Chatgpt For Google Sheets Extensions 2026 Overview")
+
+
 **Free | Requires OpenAI API key**
 
 This open-source tool is the most powerful — but also the most technical.
@@ -179,6 +183,9 @@ Coefficient doesn't just add AI — it connects Sheets to live data sources (Sal
 ---
 
 ## 💰 Cost Comparison (For 10,000 AI calls/month)
+
+![Chatgpt For Google Sheets Extensions 2026 Features](/content/images/chatgpt-for-google-sheets-extensions-2026/chatgpt-for-google-sheets-extensions-2026-features.webp "Chatgpt For Google Sheets Extensions 2026 Features")
+
 
 | Tool | Monthly Cost | Requires API Key? |
 |------|--------------|-------------------|
