@@ -24,6 +24,7 @@ author: Admin
 published_at: 2026-08-17T00:00:00.000Z
 read_time: 6
 ---
+
 There are actually two different problems hiding behind "disable Chrome notifications." One is stopping the popup that asks "Allow notifications?" when you visit a new site. The other is turning off notifications from sites you've already said yes to, sometimes without remembering which ones. This guide is about the second problem — managing and disabling notifications you've already granted, plus the settings layers most guides skip entirely: what happens at the operating-system level, and how this works differently on Chrome for Android.
 
 ## Blocking the Permission Prompt vs. Disabling Active Notifications
@@ -45,6 +46,9 @@ This is the fastest option if you want to stop notification prompts entirely and
 
 ## Managing Notifications Site by Site
 
+![How To Disable Chrome Notifications Overview](/content/images/how-to-disable-chrome-notifications/how-to-disable-chrome-notifications-overview.webp "How To Disable Chrome Notifications Overview")
+
+
 This is where most guides stop short — the global toggle is easy, but reviewing and cleaning up dozens of already-approved sites is where the real clutter usually is.
 
 1. Go back to **Settings → Privacy and security → Site settings → Notifications**.
@@ -65,6 +69,9 @@ This is a genuinely common point of confusion: you've disabled a site's notifica
 If you've correctly turned off a site's notifications in Chrome and still see something, checking the OS-level notification settings for Chrome as an application is the next place to look, not assuming Chrome's setting failed.
 
 ## Notifications on Chrome for Android
+
+![How To Disable Chrome Notifications Features](/content/images/how-to-disable-chrome-notifications/how-to-disable-chrome-notifications-features.webp "How To Disable Chrome Notifications Features")
+
 
 Mobile Chrome uses a different settings path, which trips people up when following desktop-focused instructions:
 
