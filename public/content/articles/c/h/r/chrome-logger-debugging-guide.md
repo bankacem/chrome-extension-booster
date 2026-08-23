@@ -1,5 +1,5 @@
 ---
-id: b002-03-draft
+id: aa338d09-c7d2-45ca-b7b3-065e78551970
 title: "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits"
 slug: chrome-logger-debugging-guide
 status: draft
@@ -11,7 +11,7 @@ tags: [Chrome, browser extensions]
 keywords: ["chrome logger"]
 author: Miccart Phen
 published_at: 2026-08-23
-read_time: 8
+read_time: 6
 ---
 
 ## What is Chrome Logger?
