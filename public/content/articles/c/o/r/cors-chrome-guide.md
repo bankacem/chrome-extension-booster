@@ -33,6 +33,7 @@ created_at: '2026-06-06T10:00:00.000+00:00'
 updated_at: '2026-06-06T10:00:00.000+00:00'
 ---
 
+
 <img src="/content/images/cors-chrome-guide/featured.webp" alt="CORS Chrome Guide: I Tested 4 CORS Solutions for Web Development — Here Is What Works" width="1200" height="630" loading="lazy" class="featured-image">
 
 <img src="/content/images/cors-chrome-guide/featured.webp" alt="CORS Chrome Guide: I Tested 4 CORS Solutions for Web Development" width="1200" height="630" loading="lazy" class="featured-image">
@@ -67,6 +68,9 @@ I tested four CORS solutions against 10 different API integrations. The APIs inc
 | Chrome DevTools flag override | Developer tools | Free | 2 minutes |
 
 ## CORS Chrome Extension
+
+![Cors Chrome Guide Overview](/content/images/cors-chrome-guide/cors-chrome-guide-overview.webp "Cors Chrome Guide Overview")
+
 
 I tested the most popular CORS Chrome extension ("Allow CORS: Access-Control-Allow-Origin") which adds a toggle button to disable CORS checks in Chrome.
 
@@ -136,6 +140,9 @@ CORS(app, origins=['http://localhost:3000'])
 
 ## Chrome DevTools Flag Override
 
+![Cors Chrome Guide Features](/content/images/cors-chrome-guide/cors-chrome-guide-features.webp "Cors Chrome Guide Features")
+
+
 Chrome has a hidden flag that disables CORS checks. Open `chrome://flags/#ignore-cors` and enable the flag. Chrome will stop enforcing CORS until you disable the flag again.
 
 | Metric | Result |
@@ -175,6 +182,9 @@ If you are building a mobile app with a web view that makes API calls, CORS is n
 Some legacy APIs do not support CORS at all. They were built before CORS became standard. For these, a proxy server is the only option. I maintain a small Node.js proxy that adds CORS headers to legacy API responses. It is a temporary solution, but it keeps development moving while the API team plans an upgrade.
 
 ## Comparison: 4 CORS Solutions
+
+![Cors Chrome Guide Guide](/content/images/cors-chrome-guide/cors-chrome-guide-guide.webp "Cors Chrome Guide Guide")
+
 
 | Feature | CORS Extension | Proxy Server | Server Config | DevTools Flag |
 |---------|---------------|-------------|---------------|---------------|
