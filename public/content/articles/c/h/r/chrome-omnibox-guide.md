@@ -47,6 +47,7 @@ howto:
       text: "Confirm that the result opens on the intended site, then deactivate or delete the shortcut if you no longer trust or use it."
 ---
 
+
 Chrome’s **Omnibox** is the name Chrome uses for its address bar. It is more than a URL field: it can search the web, open a known address, surface bookmarks and history, and route a query to a selected site. Chrome also lets extensions register their own keyword so a user can hand a query to that extension instead of sending it to the default search engine.[1] [2]
 
 The word can describe two different workflows. If you want to search a website quickly, Chrome’s built-in **site-search shortcut** may be enough. If you want an extension to receive your text, provide suggestions, or run an extension-specific action, you are looking at the **Omnibox extension API**. This guide covers both paths and explains when each is the safer, simpler choice.
@@ -76,6 +77,9 @@ Do not install an extension merely to create a site-search shortcut. Start with 
 <a id="create-a-chrome-site-search-shortcut"></a>
 ## Create a Chrome site-search shortcut
 
+![Chrome Omnibox Guide Overview](/content/images/chrome-omnibox-guide/chrome-omnibox-guide-overview.webp "Chrome Omnibox Guide Overview")
+
+
 Chrome’s official desktop instructions place these controls under **Settings → Search engine → Manage search engines and site search**.[3] The labels can move slightly between Chrome releases, but the underlying workflow is the same.
 
 1. Open Chrome and select **More → Settings**.
@@ -102,6 +106,9 @@ A keyword is not a magic bypass around Chrome security. The extension still oper
 
 <a id="what-an-omnibox-extension-can-do"></a>
 ## What an Omnibox extension can do
+
+![Chrome Omnibox Guide Features](/content/images/chrome-omnibox-guide/chrome-omnibox-guide-features.webp "Chrome Omnibox Guide Features")
+
 
 The `chrome.omnibox` API gives an extension an input-event model. Chrome documents events for when keyword mode starts, when the input changes, when the user cancels, and when the user accepts an entry. An extension can use changing input to return formatted suggestions, then act on the accepted text.[1] [2] If your goal is only to return to saved pages, a [Chrome bookmarks organization system](/blog/how-to-manage-chrome-bookmarks-efficiently) is a simpler fit than an extension keyword.
 
@@ -142,6 +149,9 @@ For users, this distinction matters because an extension keyword can send every 
 
 <a id="privacy-and-maintenance"></a>
 ## Privacy and maintenance
+
+![Chrome Omnibox Guide Guide](/content/images/chrome-omnibox-guide/chrome-omnibox-guide-guide.webp "Chrome Omnibox Guide Guide")
+
 
 Chrome’s address bar may combine local browser data with search-provider suggestions. Chrome’s site-search settings let you add, edit, deactivate, and delete shortcuts, so review that list periodically rather than allowing unused entries to accumulate.[3]
 
