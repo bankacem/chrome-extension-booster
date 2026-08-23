@@ -242,7 +242,16 @@ function escapeRegExp(string: string): string {
 }
 
 function escapeHtml(text: string): string {
-  const div = document.createElement("div");
-  div.textContent = text;
-  return div.innerHTML;
+  // String-based escape — safe to call from browser, Node, or any SSR/prerender
+  // context. The previous implementation relied on `document.createElement("div")`
+  // which throws a ReferenceError anywhere `document` is undefined (tests, SSR,
+  // prerender scripts). The other escapeHtml() helpers in this repo (scripts/
+  // prerender-articles.ts, scripts/prerender-static-pages.ts) already use the
+  // same string-replacement pattern, so this keeps the codebase consistent.
+  return String(text)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }

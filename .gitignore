@@ -14,6 +14,14 @@ dist-ssr
 
 google-indexing-key.json
 
+# Environment files — never commit real environment configuration.
+# .env can hold Supabase service-role keys, AI provider keys, or other
+# secrets that must never reach a public repo even though the publishable
+# anon key is also inlined into the client bundle via VITE_* variables.
+.env
+.env.*
+!.env.example
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -1,153 +1,126 @@
-# SEO Agent Pro — Multi-Model Edition
+# chrome-extension-booster
 
-A production-ready SEO content pipeline that supports **Anthropic**, **OpenRouter**, and **Groq** — run any model from a single command.
+Production React + Vite + TypeScript marketing site for **ExtensionTo** —
+a Chrome extensions review and recommendation hub with a multilingual
+(EN / FR / ES) SEO content pipeline.
 
----
-
-## Quick Start
-
-### 1. Install
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Add Your API Keys
-Open `config.py` and fill in your keys:
-```python
-API_KEYS = {
-    "anthropic":  "sk-ant-api03-...",   # https://console.anthropic.com
-    "openrouter": "sk-or-v1-...",       # https://openrouter.ai/keys
-    "groq":       "gsk_...",            # https://console.groq.com/keys
-}
-```
-You only need keys for the providers you want to use.
-
-### 3. Run
-```bash
-python main.py --keyword "best laptop for students" --niche "technology"
-```
+The site itself is the root project; the Python-based content-generation
+pipeline that produces the published articles lives in
+[`seo_agent_pro/`](./seo_agent_pro/) and is documented separately in
+[`seo_agent_pro/README.md`](./seo_agent_pro/README.md).
 
 ---
 
-## Run Modes
+## Stack
 
-| Mode | Command | Output |
-|------|---------|--------|
-| **Full pipeline** (default) | `--mode full` | Article + Cluster + Calendar + Report |
-| **Article only** | `--mode article` | Single SEO article |
-| **Keyword cluster** | `--mode cluster` | Topic map JSON |
-| **Content calendar** | `--mode calendar` | Publishing schedule JSON |
+| Layer            | Tech                                                     |
+|------------------|----------------------------------------------------------|
+| Framework        | React 18 + Vite 5                                       |
+| Language         | TypeScript (strict, with `@/*` alias to `./src`)        |
+| Styling          | Tailwind CSS + shadcn/ui components (`@/components/ui`)  |
+| Routing          | react-router-dom (BrowserRouter, lazy routes)           |
+| State / data     | @tanstack/react-query + Supabase (auth + DB)             |
+| i18n             | i18next + react-i18next (EN / FR / ES)                  |
+| SEO              | react-helmet-async + prerendered static HTML at build    |
+| Markdown         | react-markdown + remark-gfm + rehype-raw                 |
+| Backend          | Supabase (Postgres, Auth, Edge Functions)               |
 
 ---
 
-## Model Examples
+## Quick start
 
 ```bash
-# Anthropic Claude
-python main.py --keyword "best laptop" --model claude-sonnet-4
+# 1. Install dependencies
+npm install --legacy-peer-deps
 
-# OpenAI GPT-4o via OpenRouter
-python main.py --keyword "best laptop" --model gpt-4o
+# 2. Copy environment template and fill in your Supabase anon key
+cp .env.example .env
+#   then edit .env and replace the placeholders with your project's values
 
-# Google Gemini Flash via OpenRouter
-python main.py --keyword "best laptop" --model gemini-flash
+# 3. Start the dev server (http://localhost:8080)
+npm run dev
 
-# Meta Llama via Groq (fastest)
-python main.py --keyword "best laptop" --model llama-3.3-70b-groq
-
-# DeepSeek R1 via OpenRouter
-python main.py --keyword "best laptop" --model deepseek-r1
+# 4. Production build (also runs prebuild image optimizer + postbuild prerender)
+npm run build
 ```
 
-List all available models:
-```bash
-python main.py --models
+> **Note on the build:** `npm run build` runs three steps in sequence:
+> 1. `prebuild` — `node scripts/optimize-images.mjs` (generates `.webp` / `.avif` variants of every PNG/JPG under `public/`)
+> 2. `vite build` — bundles the React SPA into `dist/`
+> 3. `postbuild` — `tsx scripts/generate-sitemap.ts && tsx scripts/prerender-articles.ts && tsx scripts/prerender-static-pages.ts`
+>
+> The prerender step is what makes Googlebot and social scrapers see real
+> `<title>`, meta, canonical, and JSON-LD on first byte instead of the
+> generic SPA fallback. If you only run `npx vite build` (skipping the
+> npm script), the SEO smoke test will fail because the prerendered HTML
+> files won't exist.
+
+---
+
+## Project layout
+
+```
+chrome-extension-booster/
+├── src/                      ← React application (the live site)
+│   ├── pages/                ← Route components (Index, Blog, BlogPost, Admin, ...)
+│   ├── components/            ← Reusable UI + sections (Navbar, Footer, SEO, shadcn/ui)
+│   ├── lib/                  ← extensionsData, internalLinking, seoAnalyzer, etc.
+│   ├── hooks/                ← useLang, use-toast, use-mobile
+│   ├── i18n/                 ← i18next config + locales/{en,fr,es}/common.json
+│   ├── integrations/supabase ← Generated Supabase client + types
+│   └── utils/                ← slug, articlePath helpers
+├── scripts/                  ← Build-time scripts (sitemap, prerender, audits)
+├── supabase/                 ← Migrations + edge functions
+├── public/content/           ← Article markdown files + generated indexes
+├── seo_agent_pro/            ← Python SEO content pipeline (see its own README)
+├── .github/workflows/        ← CI: lint, typecheck, build, daily article pipeline
+└── tests/                    ← Playwright + Node:test + Python unit tests
 ```
 
 ---
 
-## VS Code Integration
+## Useful scripts
 
-The `.vscode/launch.json` file includes 8 ready-to-run configurations.
-
-1. Open the folder in VS Code
-2. Press `F5` or open the **Run and Debug** panel
-3. Select a configuration and click the green play button
-
----
-
-## Project Structure
-
-```
-seo_agent_pro/
-├── config.py         ← API keys + model registry (edit this)
-├── main.py           ← Entry point + CLI
-├── llm_router.py     ← Multi-provider routing (Anthropic / OpenRouter / Groq)
-├── modules.py        ← SEO pipeline modules
-├── memory.py         ← Persistent memory system
-├── requirements.txt
-├── .vscode/
-│   └── launch.json   ← VS Code run configurations
-└── output/           ← Generated articles and reports (auto-created)
-```
+| Script                          | What it does                                                  |
+|---------------------------------|---------------------------------------------------------------|
+| `npm run dev`                   | Vite dev server on port 8080                                  |
+| `npm run build`                 | Production build + prerender (see note above)                 |
+| `npm run lint`                  | ESLint across the codebase                                    |
+| `npm run typecheck`             | `tsc --noEmit` against `tsconfig.app.json`                    |
+| `npm run test:seo`              | SEO smoke test (requires a prior `npm run build`)             |
+| `npm run test:links`            | Internal link redirect smoke test                             |
+| `npm run test:performance`      | Performance budget check                                      |
+| `npm run sitemap`               | Regenerate sitemap only                                       |
+| `npm run sync-articles`         | Rebuild `articles-index.json` from local markdown             |
 
 ---
 
-## Pipeline Steps
+## Environment variables
 
-```
-  Input keyword
-       │
-  [1] Competitor Analysis    → discovers content gaps
-       │
-  [2] Strategy Decision      → sets length, angle, structure
-       │
-  [3] Article Writer         → streams full article
-       │
-  [4] CTR Optimizer          → title + meta description
-       │
-  [5] Keyword Cluster (V3)   → topic map for the niche
-       │
-  [6] Content Calendar (V3)  → 3-month publishing schedule
-       │
-  [7] Authority Score (V3)   → tracks niche coverage progress
-       │
-  [8] Memory Update          → learns from every run
-```
+All variables are loaded by Vite from `.env` (which is gitignored — copy
+`.env.example` to get started). Only variables prefixed with `VITE_` are
+inlined into the client bundle; the bare `SUPABASE_*` variants are read
+by Node-side scripts (sitemap, prerender, etc.).
+
+| Variable                          | Used by          | Purpose                              |
+|-----------------------------------|------------------|--------------------------------------|
+| `VITE_SUPABASE_URL`               | Browser bundle   | Supabase project URL                 |
+| `VITE_SUPABASE_PUBLISHABLE_KEY`   | Browser bundle   | Supabase anon key (safe to expose)  |
+| `VITE_SUPABASE_PROJECT_ID`        | Browser bundle   | Project reference for diagnostics    |
+| `SUPABASE_URL`                    | Node scripts     | Same as VITE_ variant                |
+| `SUPABASE_PUBLISHABLE_KEY`        | Node scripts     | Same as VITE_ variant                |
+
+> **Security note:** never put a Supabase `service_role` key in any
+> `VITE_*`-prefixed variable — that key bypasses Row Level Security and
+> must only ever live in a Supabase Edge Function or server-side code.
 
 ---
 
-## Available Models
+## CI
 
-| Name | Provider | Notes |
-|------|----------|-------|
-| `claude-sonnet-4` | Anthropic | Best quality |
-| `claude-haiku` | Anthropic | Fast + cheap |
-| `gpt-4o` | OpenRouter | Strong all-rounder |
-| `gpt-4o-mini` | OpenRouter | Fast + affordable |
-| `gemini-pro` | OpenRouter | Long context |
-| `gemini-flash` | OpenRouter | Very fast |
-| `mistral-large` | OpenRouter | Good for structured output |
-| `llama-3.3-70b` | OpenRouter | Open-weight |
-| `deepseek-r1` | OpenRouter | Strong reasoning |
-| `qwen-2.5-72b` | OpenRouter | Multilingual |
-| `llama-3.1-70b-groq` | Groq | Ultra-fast inference |
-| `llama-3.3-70b-groq` | Groq | Ultra-fast inference |
-| `mixtral-8x7b-groq` | Groq | Fast + capable |
-| `gemma2-9b-groq` | Groq | Lightweight + fast |
+`.github/workflows/seo-quality.yml` runs on every push and pull request
+to `main`. It runs `npm run lint`, `npm run typecheck`, `npm run build`,
+`npm run test:performance`, `npm run test:seo`, and `npm run test:links`.
 
----
-
-## Output Files
-
-All files are saved in the `output/` folder:
-
-```
-output/
-├── best_laptop_{timestamp}.md           ← The article
-├── cluster_best_laptop_{timestamp}.json ← Keyword cluster map
-├── calendar_best_laptop_{timestamp}.json← Publishing calendar
-└── report_best_laptop_{timestamp}.md    ← Full run report
-
-seo_memory.json                          ← Persistent memory (grows over time)
-```
+The other workflows in `.github/workflows/` drive the daily article
+publishing pipeline (see `seo_agent_pro/` for details).
