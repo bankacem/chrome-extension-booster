@@ -18,6 +18,7 @@ description: >-
 category: "Chrome Extensions"
 ---
 
+
 ## 📚 Table of Contents
 - [Why You Need an AI Social Media Caption Generator in 2026](#why-you-need-an-ai-social-media-caption-generator-in-2026)
 - [Top 3 Free AI Caption Extensions Compared](#top-3-free-ai-caption-extensions-compared)
@@ -46,6 +47,9 @@ This guide names the **real tools that work** — for free — in 2026.
 ---
 
 ## Top 3 Free Chrome Extensions Compared
+
+![Ai Social Media Captions Chrome Extension Overview](/content/images/ai-social-media-captions-chrome-extension/ai-social-media-captions-chrome-extension-overview.webp "Ai Social Media Captions Chrome Extension Overview")
+
 
 | Extension | Free Tier Limit | Platforms | Hashtag Suggestions | Tone Options |
 |-----------|----------------|-----------|---------------------|--------------|
@@ -77,6 +81,9 @@ Google has retired the old store URL. The **only** official URL in 2026 is:
 ---
 
 ## Real-World Walkthrough
+
+![Ai Social Media Captions Chrome Extension Features](/content/images/ai-social-media-captions-chrome-extension/ai-social-media-captions-chrome-extension-features.webp "Ai Social Media Captions Chrome Extension Features")
+
 
 **Scenario 1 — Instagram post:**  
 You took a photo of your coffee and laptop at a trendy cafe.
@@ -150,6 +157,9 @@ Output: *"Dinner in 10 minutes. One pan. Zero cleanup. Save this for your lazy c
 ---
 
 ## Privacy & Security Guide
+
+![Ai Social Media Captions Chrome Extension Guide](/content/images/ai-social-media-captions-chrome-extension/ai-social-media-captions-chrome-extension-guide.webp "Ai Social Media Captions Chrome Extension Guide")
+
 
 **Before installing any AI caption generator extension, check these 3 things:**
 
