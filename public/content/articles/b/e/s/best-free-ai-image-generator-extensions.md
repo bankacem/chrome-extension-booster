@@ -16,6 +16,7 @@ description: >-
 category: "AI Tools"
 ---
 
+
 > **You're writing a blog post. You need an image. You open a new tab, go to Midjourney/DALL-E, generate, download, upload to your site.**
 >
 > That's 4 steps. What if it was 1 step? What if you could generate images directly in Chrome's side panel without ever leaving the page you're working on?
@@ -73,6 +74,9 @@ You're writing in Google Docs? Working on a Canva design? Reading an article? Op
 ---
 
 ## 📦 #2: Whisk Automator — The Bulk Generator
+
+![Best Free Ai Image Generator Extensions Overview](/content/images/best-free-ai-image-generator-extensions/best-free-ai-image-generator-extensions-overview.webp "Best Free Ai Image Generator Extensions Overview")
+
 
 **20,000 users | Updated May 11, 2026 | 4.09 stars** [citation:7]
 
@@ -147,6 +151,9 @@ Visit chat.openai.com, activate Infinity Mode, and ChatGPT generates infinite re
 ---
 
 ## 📊 Quick Comparison
+
+![Best Free Ai Image Generator Extensions Features](/content/images/best-free-ai-image-generator-extensions/best-free-ai-image-generator-extensions-features.webp "Best Free Ai Image Generator Extensions Features")
+
 
 | Feature | Free Nano Cloud | Whisk Automator | ChatGPT Infinity |
 |---------|-----------------|-----------------|------------------|
