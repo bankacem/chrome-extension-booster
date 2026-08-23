@@ -26,9 +26,6 @@ read_time: 8
 created_at: '2026-01-27T13:08:29.731796+00:00'
 updated_at: '2026-05-22T18:15:00.487708+00:00'
 ---
-
-<img src="/content/images/set-chrome-as-default-browser/featured.webp" alt="How to Set Chrome as Default Browser on Windows and Mac (Chrome Par Defaut)" width="1200" height="630" loading="lazy" class="featured-image">
-
 I spent a weekend testing every method to set Chrome as the default browser across Windows 11, Windows 10, and macOS Sonoma. I timed each approach, checked reliability (does it stick after a system update?), and tested whether Chrome handles all link types once set as default — HTTP, HTTPS, mailto, and file associations. I also tested what happens when Edge or Safari fights back with their own default prompts. Here is the complete guide to making Chrome par defaut on any device.
 
 ## Default Browser Setup Comparison
@@ -45,6 +42,9 @@ I spent a weekend testing every method to set Chrome as the default browser acro
 The Chrome settings menu method works on both platforms, takes 30 seconds, and never failed in my testing across 3 different machines. The first-run prompt is fastest (15 seconds) but only appears when you launch Chrome for the very first time after installation — miss it and you need one of the other methods.
 
 ## Step-by-Step: How to Set Chrome as Default
+
+![Set Chrome As Default Browser Overview](/content/images/set-chrome-as-default-browser/set-chrome-as-default-browser-overview.webp "Set Chrome As Default Browser Overview")
+
 
 ### Method 1: Chrome Settings Menu (Windows and Mac)
 
@@ -94,6 +94,9 @@ If you close the prompt accidentally, you can trigger it again by resetting Chro
 
 ## How Microsoft Edge and Safari Fight Back
 
+![Set Chrome As Default Browser Features](/content/images/set-chrome-as-default-browser/set-chrome-as-default-browser-features.webp "Set Chrome As Default Browser Features")
+
+
 Setting Chrome as default is straightforward. Keeping it as default is the real battle.
 
 **Microsoft Edge** on Windows 11 is aggressive. After setting Chrome as default, Edge displays a full-screen prompt on its next launch asking you to switch back. The prompt includes a "Use recommended browser settings" button that resets Microsoft Edge as default if clicked without reading. On Windows 11 24H2, Edge also injects a sidebar widget showing browser tips that leads back to the default browser settings. According to a [The Verge report on Microsoft's default browser tactics](https://www.theverge.com/2023/5/4/23710458/microsoft-edge-popup-chrome-download), Microsoft has been using these prompts since 2023 and has only increased their frequency since.
@@ -103,6 +106,9 @@ To block Edge's takeover attempts, install Redirect Shield. It prevents Edge fro
 **Safari** on macOS is more passive. It does not nag you to switch back, but macOS resets the default to Safari after major OS updates. After upgrading macOS, check the default browser setting before assuming Chrome is still active.
 
 ## The Cost of Not Setting Chrome as Default
+
+![Set Chrome As Default Browser Guide](/content/images/set-chrome-as-default-browser/set-chrome-as-default-browser-guide.webp "Set Chrome As Default Browser Guide")
+
 
 Running Edge or Safari as your default browser carries hidden costs that most users do not consider:
 
@@ -124,17 +130,6 @@ Once Chrome is set as your default browser, these 8 companion extensions complet
 | [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi) | Import and autofill passwords in your new default browser |
 | Glasp | Highlight migration guides and tutorials |
 | DarkFlow | Dark mode for comfortable browsing in your newly configured browser |
-
-
-<div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">
-  <h3 class="text-xl font-bold mb-4">Read Next</h3>
-  <ul class="space-y-2">
-    <li><a href="/blog/chrome-extensions-complete-guide" class="text-primary font-medium hover:underline">Chrome Extensions Complete Guide</a></li>
-    <li><a href="/blog/chrome-extension-development-guide" class="text-primary font-medium hover:underline">Chrome Extension Development Guide</a></li>
-    <li><a href="/blog/best-dark-mode-chrome-extension" class="text-primary font-medium hover:underline">Best Dark Mode Chrome Extensions</a></li>
-    <li><a href="/blog/chrome-extensions-for-gamers-guide" class="text-primary font-medium hover:underline">Chrome Extensions for Gamers</a></li>
-  </ul>
-</div>
 
 ## Frequently Asked Questions
 
