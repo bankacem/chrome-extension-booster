@@ -15,6 +15,7 @@ description: >-
 category: "Chrome Extensions"
 ---
 
+
 **Last Updated:** June 3, 2026 | **Reading Time:** 8 minutes
 
 ---
@@ -106,6 +107,9 @@ Full FIDO2-compliant passkey support:
 
 ## Chrome Extension Interface
 
+![Article5 Dashlane Features Overview](/content/images/article5-dashlane-features/article5-dashlane-features-overview.webp "Article5 Dashlane Features Overview")
+
+
 Dashlane's Chrome extension is a masterclass in modern UI design:
 
 - **Dropdown panel:** Clean, card-based layout with quick access to passwords, notes, and IDs.
@@ -155,6 +159,9 @@ Unlike 1Password's extensive developer ecosystem, Dashlane offers minimal CLI or
 ---
 
 ## Who Should Choose Dashlane?
+
+![Article5 Dashlane Features Features](/content/images/article5-dashlane-features/article5-dashlane-features-features.webp "Article5 Dashlane Features Features")
+
 
 ### Yes, If You:
 - Want **everything automated** (password changes, dark web monitoring, VPN)
