@@ -22,6 +22,9 @@ The extension is especially beneficial in enterprises that need to maintain acce
 
 ---
 
+![IE Tab for Chrome: Run Legacy Sites, Configure URL Rules, and Manage the Risks workflow illustration](/content/images/ie-tab-chrome-legacy-sites-guide/ie-tab-chrome-legacy-sites-guide-workflow.webp)
+*Screenshot: Editorial illustration of the practical ie tab chrome workflow described in this guide; it is not a product screenshot.*
+
 ## Installing IE Tab: A Step-by-Step Guide
 
 To set up and start using IE Tab in Chrome, follow these steps:
@@ -49,16 +52,16 @@ To set up and start using IE Tab in Chrome, follow these steps:
 
 IE Tab offers a suite of functionality designed to support legacy web application use cases:
 
-- **ActiveX and Legacy Protocol Support**  
+- **ActiveX and Legacy Protocol Support**
 Allows access to obsolete technologies like ActiveX controls, Silverlight, and Java applets, which are no longer supported in modern browsers.
 
-- **Auto URL Filters**  
+- **Auto URL Filters**
 Administrators can create custom rules to automatically open specified URLs in IE Tab mode. This is handy for enterprises accessing the same set of legacy services repeatedly.
 
-- **Native Windows Integration**  
+- **Native Windows Integration**
 IE Tab requires a Windows-based helper tool to load the IE engine, ensuring rendering is accurate for legacy applications.
 
-- **Group Policy Objects (GPO) Support**  
+- **Group Policy Objects (GPO) Support**
 For enterprise users, IE Tab can be managed using GPO to enforce consistent configurations across an organization's employee base—e.g., restricting which URLs can be opened in IE Tab.
 
 ---
@@ -106,19 +109,19 @@ While IE Tab is widely used, alternatives may better suit organizations requirin
 
 To maximize the benefits of IE Tab while minimizing risks:
 
-1. **Deploy IE Tab Strategically**  
+1. **Deploy IE Tab Strategically**
 Only use IE Tab for specific, essential legacy applications. Configure Auto URL Filters or GPO rules where possible to restrict its operational scope.
 
-2. **Secure Your Network**  
+2. **Secure Your Network**
 Route all traffic through secure internal networks or utilize a robust Virtual Private Network (VPN) to safeguard sensitive data.
 
-3. **Plan Legacy App Modernization**  
+3. **Plan Legacy App Modernization**
 Begin investing in transitioning away from outdated applications. Leveraging progressive replacement strategies can eliminate dependency on Internet Explorer’s rendering engine.
 
-4. **Engineer Employee Education Programs**  
+4. **Engineer Employee Education Programs**
 Educate employees on safe browsing practices, especially if accessing sensitive or internal systems prone to phishing attacks.
 
-5. **Conduct Security Audits**  
+5. **Conduct Security Audits**
 Regularly review the utilization of IE Tab and associated helper tools to identify and mitigate vulnerabilities within your environment.
 
 ---
@@ -127,13 +130,13 @@ Regularly review the utilization of IE Tab and associated helper tools to identi
 
 ### Issues
 
-1. **IE Tab Doesn’t Work**  
+1. **IE Tab Doesn’t Work**
 Ensure the IE Tab Helper Tool has been successfully installed. Without it, the extension will not function.
 
-2. **Blocked by Antivirus**  
+2. **Blocked by Antivirus**
 Verify security software and corporate firewalls, as these may identify the helper tool as suspicious software.
 
-3. **Failure to Render Legacy Sites**  
+3. **Failure to Render Legacy Sites**
 Check if the legacy application being accessed requires additional settings or components that are not supported.
 
 ### Potential Fixes
@@ -146,19 +149,19 @@ Check if the legacy application being accessed requires additional settings or c
 
 ## FAQs
 
-**Q: What is the cost of using IE Tab?**  
+**Q: What is the cost of using IE Tab?**
 A: Basic functionality is free, but enterprise features such as Auto URL Filters and Group Policy management may require a paid license.
 
-**Q: Is IE Tab available for macOS or Linux?**  
+**Q: Is IE Tab available for macOS or Linux?**
 A: No, IE Tab only functions on Windows operating systems due to its reliance on Internet Explorer components.
 
-**Q: What are the risks of using IE Tab?**  
+**Q: What are the risks of using IE Tab?**
 A: It uses outdated Internet Explorer technology and installs a helper tool outside Chrome’s secure environment, both of which introduce potential vulnerabilities if not properly managed.
 
-**Q: Can IE Tab be used for all websites requiring Internet Explorer?**  
+**Q: Can IE Tab be used for all websites requiring Internet Explorer?**
 A: No, its effectiveness may vary depending on the site and the specific technologies being used, such as ActiveX or Java plugins.
 
-**Q: Is there a replacement or alternative to IE Tab?**  
+**Q: Is there a replacement or alternative to IE Tab?**
 A: Microsoft Edge’s IE Mode is a robust alternative for enterprises, providing stronger security and management capabilities.
 
 ---
@@ -168,7 +171,7 @@ A: Microsoft Edge’s IE Mode is a robust alternative for enterprises, providing
 For a related workflow, see the [Chrome extension manager tools](/blog/chrome-extension-manager-tools) on ExtensionTo.
 For a related workflow, see the [Chrome browser compatibility guide](/blog/which-android-browser-handles-extensions-best) on ExtensionTo.
 
-## References  
+## References
 
-1. [IE Tab Official Website](https://www.ietab.net/)  
+1. [IE Tab Official Website](https://www.ietab.net/)
 2. [IE Tab Chrome Web Store Listing](https://chromewebstore.google.com/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd?hl=en-US)

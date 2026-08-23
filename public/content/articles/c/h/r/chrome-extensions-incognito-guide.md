@@ -26,6 +26,9 @@ By default, extensions are disabled in Incognito mode. This limitation exists be
 
 ---
 
+![Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely workflow illustration](/content/images/chrome-extensions-incognito-guide/chrome-extensions-incognito-guide-workflow.webp)
+*Screenshot: Editorial illustration of the practical extension chrome incognito workflow described in this guide; it is not a product screenshot.*
+
 ## How to Enable Chrome Extensions in Incognito Mode
 
 To use an extension in Incognito mode, enabling it explicitly is required. By default, extensions do not work in Incognito to prevent potential privacy issues, as extensions can interact with your browsing activities.

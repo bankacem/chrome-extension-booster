@@ -24,6 +24,9 @@ Supporting a range of programming languages, including **PHP**, **Python**, **Ru
 
 ---
 
+![Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits workflow illustration](/content/images/chrome-logger-debugging-guide/chrome-logger-debugging-guide-workflow.webp)
+*Screenshot: Editorial illustration of the practical chrome logger workflow described in this guide; it is not a product screenshot.*
+
 ## The Technology Behind Chrome Logger
 
 Chrome Logger operates through a header-driven logging system. The process consists of three primary components:
@@ -172,6 +175,6 @@ For a related workflow, see the [AI code explanation extension guide](/blog/arti
 
 ## References
 
-1. [Chrome Logger Official Website](https://craig.is/writing/chrome-logger)  
-2. [Chrome Logger GitHub Repository](https://github.com/ccampbell/chromelogger)  
+1. [Chrome Logger Official Website](https://craig.is/writing/chrome-logger)
+2. [Chrome Logger GitHub Repository](https://github.com/ccampbell/chromelogger)
 3. [Chrome Logger Extension on Chrome Web Store](https://chromewebstore.google.com/detail/chrome-logger/noaneddfkdjfnfdakjjmocngnfkfehhd?hl=en)

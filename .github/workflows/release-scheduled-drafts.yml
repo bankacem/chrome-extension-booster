@@ -1,24 +1,66 @@
-name: Release scheduled draft test
+name: Release scheduled draft articles
 
 on:
   schedule:
-    # 2026-08-23, Africa/Algiers (UTC+1): 14:30, 16:00, 17:30, 19:00, 20:30.
-    # GitHub Actions cron is UTC and may start late; the script accepts a bounded window.
-    - cron: '30 13 23 8 *'
-    - cron: '0 15 23 8 *'
-    - cron: '30 16 23 8 *'
-    - cron: '0 18 23 8 *'
-    - cron: '30 19 23 8 *'
+    - cron: '0 8 24 8 *' # release_slot 2: chrome-extension-permissions-guide
+    - cron: '0 11 24 8 *' # release_slot 3: momentum-chrome-extension-guide
+    - cron: '30 14 24 8 *' # release_slot 4: chrome-extensions-incognito-guide
+    - cron: '30 17 24 8 *' # release_slot 5: chrome-extension-host-permissions-guide
+    - cron: '0 20 24 8 *' # release_slot 6: chrome-new-tab-extension-guide
+    - cron: '0 8 25 8 *' # release_slot 7: chrome-logger-debugging-guide
+    - cron: '0 11 25 8 *' # release_slot 8: allow-chrome-extension-file-urls-guide
+    - cron: '30 14 25 8 *' # release_slot 9: printfriendly-chrome-extension-guide
+    - cron: '30 17 25 8 *' # release_slot 10: java-plugins-chrome-compatibility-guide
+    - cron: '0 20 25 8 *' # release_slot 11: chrome-extension-not-working-on-website-guide
+    - cron: '0 8 26 8 *' # release_slot 12: user-agent-switcher-chrome-guide
+    - cron: '0 11 26 8 *' # release_slot 13: ie-tab-chrome-legacy-sites-guide
+    - cron: '30 14 26 8 *' # release_slot 14: chrome-extension-blocked-by-administrator-guide
+    - cron: '30 17 26 8 *' # release_slot 15: google-dictionary-chrome-extension-guide
+    - cron: '0 20 26 8 *' # release_slot 16: chrome-web-store-firefox-extensions-guide
+    - cron: '0 8 27 8 *' # release_slot 17: chrome-extension-keyboard-shortcuts-guide
+    - cron: '0 11 27 8 *' # release_slot 18: tag-assistant-chrome-extension-troubleshooting-guide
+    - cron: '30 14 27 8 *' # release_slot 19: betterttv-google-chrome-guide
+    - cron: '30 17 27 8 *' # release_slot 20: chrome-extension-side-panel-guide
+    - cron: '0 20 27 8 *' # release_slot 21: chrome-extensions-separate-profiles-guide
+    - cron: '0 8 28 8 *' # release_slot 22: agenda-hero-chrome-extension-guide
+    - cron: '0 11 28 8 *' # release_slot 23: manifest-v3-chrome-extension-compatibility-guide
+    - cron: '30 14 28 8 *' # release_slot 24: pin-chrome-extension-to-toolbar-guide
+    - cron: '30 17 28 8 *' # release_slot 25: blackbox-ai-chrome-extension-guide
+    - cron: '0 20 28 8 *' # release_slot 26: chrome-extension-service-worker-guide
+    - cron: '0 8 29 8 *' # release_slot 27: chrome-extension-disabled-after-update-guide
+    - cron: '0 11 29 8 *' # release_slot 28: chrome-samsung-smart-tv-casting-guide
+    - cron: '30 14 29 8 *' # release_slot 29: chrome-load-unpacked-extension-guide
+    - cron: '30 17 29 8 *' # release_slot 30: chrome-web-store-extension-installation-error-guide
+    - cron: '0 20 29 8 *' # release_slot 31: chrome-extension-developer-mode-guide
+    - cron: '0 8 30 8 *' # release_slot 32: chrome-add-to-chrome-button-not-working-guide
+    - cron: '0 11 30 8 *' # release_slot 33: chrome-extension-content-scripts-guide
+    - cron: '30 14 30 8 *' # release_slot 34: chrome-extension-not-working-on-web-store-guide
+    - cron: '30 17 30 8 *' # release_slot 35: chrome-extension-declarative-net-request-guide
+    - cron: '0 20 30 8 *' # release_slot 36: repair-corrupted-chrome-extension-guide
+    - cron: '0 8 31 8 *' # release_slot 37: chrome-extension-options-page-guide
+    - cron: '0 11 31 8 *' # release_slot 38: chrome-extension-conflict-troubleshooting-guide
+    - cron: '30 14 31 8 *' # release_slot 39: chrome-extension-context-menu-guide
+    - cron: '30 17 31 8 *' # release_slot 40: chrome-extension-notifications-not-working-guide
+    - cron: '0 20 31 8 *' # release_slot 41: chrome-accessibility-extensions-keyboard-navigation-guide
+    - cron: '0 8 1 9 *' # release_slot 42: chrome-extension-profile-switch-guide
+    - cron: '0 11 1 9 *' # release_slot 43: chrome-live-captions-extension-guide
+    - cron: '30 14 1 9 *' # release_slot 44: install-chrome-extension-linux-guide
+    - cron: '30 17 1 9 *' # release_slot 45: chrome-extension-camera-microphone-permissions-guide
+    - cron: '0 20 1 9 *' # release_slot 46: remove-chrome-extension-completely-guide
+    - cron: '0 8 2 9 *' # release_slot 47: session-buddy-chrome-extension-guide
+    - cron: '0 11 2 9 *' # release_slot 48: chrome-extension-data-privacy-check-guide
+    - cron: '30 14 2 9 *' # release_slot 49: google-keep-chrome-extension-guide
+    - cron: '30 17 2 9 *' # release_slot 50: update-chrome-extension-manually-guide
   workflow_dispatch:
     inputs:
-      slot:
-        description: 'Test slot number (1-5); leave auto for scheduled execution'
+      release_slot:
+        description: 'Release slot 1-50; use auto only for scheduled execution'
         required: false
         default: auto
         type: string
 
 concurrency:
-  group: release-scheduled-drafts-day-1
+  group: release-scheduled-drafts-50
   cancel-in-progress: false
 
 jobs:
@@ -41,46 +83,44 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: Release only the due slot
+      - name: Release only the due and image-ready slot
         env:
-          MANUAL_SLOT: ${{ inputs.slot }}
+          MANUAL_SLOT: ${{ inputs.release_slot }}
         run: |
           python3 - <<'PY'
-          import json, os, re, subprocess, sys
+          import json, os, re, subprocess
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
 
-          schedule_path = Path('editorial/publishing-schedule-day-1-live-test.json')
-          schedule = json.loads(schedule_path.read_text())
+          schedule = json.loads(Path('editorial/publishing-schedule-50-active.json').read_text())
           entries = schedule['entries']
           manual = os.environ.get('MANUAL_SLOT', 'auto').strip().lower()
           now = datetime.now(timezone.utc)
-          local = now + timedelta(hours=1)
-
           due = None
           if manual not in ('', 'auto'):
               if not manual.isdigit() or not 1 <= int(manual) <= len(entries):
-                  raise SystemExit('Manual slot must be 1-5 or auto')
+                  raise SystemExit('release_slot must be 1-50 or auto')
               due = entries[int(manual)-1]
           else:
-              # Only the five planned windows on 2026-08-23 UTC are eligible.
-              if local.date().isoformat() != schedule['local_date']:
-                  print(f'No release: local date is {local.date()}, target is {schedule["local_date"]}.')
-                  raise SystemExit(0)
-              best = []
+              candidates = []
               for e in entries:
+                  if not e.get('due_utc') or not e.get('publish_enabled'):
+                      continue
                   due_at = datetime.fromisoformat(e['due_utc'].replace('Z','+00:00'))
                   delta = (now - due_at).total_seconds()
                   if 0 <= delta <= schedule['late_window_seconds']:
-                      best.append((abs(delta), e))
-              if best:
-                  due = min(best, key=lambda x: x[0])[1]
+                      candidates.append((abs(delta), e))
+              if candidates:
+                  due = min(candidates, key=lambda x:x[0])[1]
               else:
-                  print(f'No due slot at {now.isoformat()}; scheduled runs are idempotent and will exit.')
+                  print(f'No due release slot at {now.isoformat()}; exiting idempotently.')
                   raise SystemExit(0)
 
-          if due['release_enabled'] is not True:
-              raise SystemExit('Refusing: selected slot is not release-enabled')
+          if due.get('release_slot') == 1 or due['slug'] == 'zoom-chrome-extension-guide':
+              print('Refusing to dispatch Zoom: it was already published in the controlled release.')
+              raise SystemExit(0)
+          if due.get('publish_enabled') is not True or due.get('visual_ready') is not True:
+              raise SystemExit(f'Refusing slot without release and visual gates: {due["slug"]}')
           article = Path(due['article_path'])
           if not article.exists():
               raise SystemExit(f'Missing article: {article}')
@@ -88,18 +128,25 @@ jobs:
           if not re.search(r'^status:\s*draft\s*$', text, re.M):
               print(f'Slot already released or unexpected status: {due["slug"]}')
               raise SystemExit(0)
+          refs = re.findall(r'!\[[^\]]*\]\((/content/images/[^)]+\.webp)\)', text)
+          if len(refs) < 1:
+              raise SystemExit(f'Visual gate failed: no inline WebP reference in {due["slug"]}')
+          for ref in refs:
+              asset = Path('public') / ref.lstrip('/')
+              sibling = asset.with_suffix('.avif')
+              if not asset.exists() or not sibling.exists():
+                  raise SystemExit(f'Visual gate failed: missing optimized sibling for {ref}')
           updated = re.sub(r'^status:\s*draft\s*$', 'status: published', text, count=1, flags=re.M)
           article.write_text(updated)
           subprocess.run(['git','config','user.name','github-actions[bot]'], check=True)
           subprocess.run(['git','config','user.email','github-actions[bot]@users.noreply.github.com'], check=True)
           subprocess.run(['git','add',str(article)], check=True)
-          subprocess.run(['git','commit','-m',f'content: release scheduled draft slot {due["slot"]}'], check=True)
+          subprocess.run(['git','commit','-m',f'content: release scheduled article slot {due["release_slot"]}'], check=True)
           subprocess.run(['git','push','origin','main'], check=True)
-          print(f'Released slot {due["slot"]}: {due["slug"]}')
-          print('The release commit was pushed; the next step rebuilds the index and sitemap in this same run.')
+          print(f'Released slot {due["release_slot"]}: {due["slug"]}')
           PY
 
-      - name: Rebuild index and sitemap for released article
+      - name: Rebuild index and sitemap after release
         if: success()
         run: |
           bun run sync-articles
@@ -110,6 +157,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'Index and sitemap already synchronized.'
           else
-            git commit -m "chore: refresh index and sitemap after scheduled release"
+            git commit -m 'chore: refresh index and sitemap after scheduled release'
             git push origin main
           fi
