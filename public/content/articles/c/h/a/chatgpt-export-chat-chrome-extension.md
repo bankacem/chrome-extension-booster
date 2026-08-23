@@ -15,6 +15,7 @@ description: >-
   Sharing, and Backing Up Your Conversations
 category: "AI Tools"
 ---
+
 ## 📚 Table of Contents
 - [Why You Need to Export ChatGPT Chats in 2026](#why-you-need-to-export-chatgpt-chats-in-2026)
 - [Top 3 Free ChatGPT Export Extensions Compared](#top-3-free-chatgpt-export-extensions-compared)
@@ -55,6 +56,9 @@ This guide names the **real tools that work** — for free — in 2026.
 ---
 
 ## How to Install (2026 Chrome Web Store)
+
+![Chatgpt Export Chat Chrome Extension Overview](/content/images/chatgpt-export-chat-chrome-extension/chatgpt-export-chat-chrome-extension-overview.webp "Chatgpt Export Chat Chrome Extension Overview")
+
 
 Google has retired the old store URL. The **only** official URL in 2026 is:
 
