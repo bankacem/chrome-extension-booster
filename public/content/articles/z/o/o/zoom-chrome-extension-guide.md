@@ -53,6 +53,9 @@ Installing and using the Zoom Chrome Extension is a straightforward process. Fol
 
 The Zoom Scheduler icon will now appear in your browser's extension toolbar, usually located near the top-right corner.
 
+![Official Chrome Web Store listing for Zoom Chrome Extension with the Add to Chrome button visible](/content/images/zoom-chrome-extension-guide/zoom-scheduler-add-to-chrome-official.webp)
+*Screenshot: The official Chrome Web Store listing showing where the Add to Chrome button appears. Source: Zoom Chrome Extension listing in the Chrome Web Store.*
+
 ### Using the Zoom Chrome Extension
 After installation, you can begin leveraging its features:
 
@@ -60,6 +63,10 @@ After installation, you can begin leveraging its features:
 2. **Schedule a Meeting:**
    - Open **Google Calendar** and click the `Create` button to begin creating a new calendar event.
    - Select the **Make it a Zoom Meeting** option within the Google Calendar event window to automatically generate the Zoom meeting link.
+
+![Google Calendar event form showing the Make it a Zoom Meeting option from Zoom Scheduler](/content/images/zoom-chrome-extension-guide/zoom-scheduler-google-calendar-official.webp)
+*Screenshot: An official Zoom Scheduler Chrome Web Store media image showing the Google Calendar event form and its Make it a Zoom Meeting control.*
+
 3. **Start an Instant Meeting:** Click on the Zoom extension icon in your browser and use the "Meet Now" feature to host a spontaneous meeting. This will generate a joinable link for you to share immediately.
 4. **Manage Scheduled Meetings in Your Browser:** Use the "My Meetings" tab in the extension to view and manage your upcoming Zoom meetings. You can copy meeting links or Meeting IDs without needing to log into the full Zoom app or web client.
 
