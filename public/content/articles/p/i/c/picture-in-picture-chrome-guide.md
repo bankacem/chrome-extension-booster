@@ -44,6 +44,7 @@ howto:
       text: "If needed, install Picture-in-Picture Extension (by Google) and use its toolbar action or documented shortcut."
 ---
 
+
 Picture-in-Picture (PiP) puts a supported video in a small floating window so you can keep watching while working in another tab or application. In Chrome, the feature is not a single switch that works identically on every website. The page may expose the browser’s video control, the site may provide its own PiP button, or the official Google extension may be the quickest fallback.
 
 This guide gives you a reliable decision path instead of promising that every video or streaming service supports the same controls. You will learn the built-in method, how to use the official **Picture-in-Picture Extension (by Google)**, what the newer Document Picture-in-Picture API is for, and how to isolate the cause when PiP is missing or closes immediately.
@@ -76,6 +77,9 @@ The normal Picture-in-Picture API places an HTML `<video>` element in a floating
 Do not confuse normal video PiP with **Document Picture-in-Picture**. Chrome’s Document PiP API can place arbitrary HTML content in an always-on-top window, which makes it useful for custom video players, conferencing controls, and productivity interfaces. Chrome Developers documents desktop support beginning with Chrome 116, but a website must implement the API and request the window from an appropriate user action.[1]
 
 ## How to use the built-in PiP control
+
+![Picture In Picture Chrome Guide Overview](/content/images/picture-in-picture-chrome-guide/picture-in-picture-chrome-guide-overview.webp "Picture In Picture Chrome Guide Overview")
+
 
 Try the built-in route before installing anything:
 
@@ -119,6 +123,9 @@ The safest rule is simple: use the built-in menu first, use **Alt + P** or **Opt
 
 ## When Document Picture-in-Picture matters
 
+![Picture In Picture Chrome Guide Features](/content/images/picture-in-picture-chrome-guide/picture-in-picture-chrome-guide-features.webp "Picture In Picture Chrome Guide Features")
+
+
 Most viewers only need video PiP. Document PiP matters when you are building or using a web app that needs more than a video rectangle: a meeting window with controls, a custom player with a playlist, a floating task list, or a small companion interface.
 
 The API is controlled by the web app. It cannot be used as a universal button that forces every third-party site into a custom floating window. Chrome’s documentation notes that the request must be initiated by a user gesture and that the PiP window does not outlive its opener page.[1] If you are a developer, feature-detect it before using it:
@@ -156,6 +163,9 @@ Use this sequence instead of installing several unofficial PiP extensions at onc
 5. Update Chrome from **Settings → About Chrome**, then relaunch it. Keep this as maintenance, not as a promise that an update overrides a site restriction.
 
 ## Fix common Chrome PiP problems
+
+![Picture In Picture Chrome Guide Guide](/content/images/picture-in-picture-chrome-guide/picture-in-picture-chrome-guide-guide.webp "Picture In Picture Chrome Guide Guide")
+
 
 ### PiP is missing from the right-click menu
 
@@ -218,6 +228,9 @@ Chrome documents conferencing Auto-PiP from Chrome 120 on desktop for eligible w
 > **Screenshot placeholder — Chrome Flags:** Capture `chrome://flags` with an Auto-PiP result and its **Default/Enabled** selector. Suggested alt text: “Chrome Flags page showing an Auto Picture-in-Picture experimental setting.”
 
 ## Keep PiP stable while multitasking
+
+![Picture In Picture Chrome Guide Results](/content/images/picture-in-picture-chrome-guide/picture-in-picture-chrome-guide-results.webp "Picture In Picture Chrome Guide Results")
+
 
 Use one PiP window at a time while diagnosing a problem. Keep the source tab open until playback is stable, and avoid changing several browser settings simultaneously. If you use PiP for meetings, treat the floating window as a view of the call rather than a replacement for the meeting tab; controls such as mute, presenting, or chat may remain in the original application.
 
