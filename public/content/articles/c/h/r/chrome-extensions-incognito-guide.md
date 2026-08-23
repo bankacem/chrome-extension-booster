@@ -5,7 +5,7 @@ slug: chrome-extensions-incognito-guide
 status: draft
 excerpt: "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode while understanding privacy considerations and restrictions."
 meta_description: "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode. Understand privacy, permissions, and managed device policies."
-featured_image: /og-image.png
+featured_image: /content/images/chrome-extensions-incognito-guide/featured.webp
 category: Chrome Extensions
 tags: [Chrome, browser extensions]
 keywords: ["extension chrome incognito"]
