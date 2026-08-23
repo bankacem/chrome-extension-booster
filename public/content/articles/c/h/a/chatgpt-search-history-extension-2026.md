@@ -16,6 +16,7 @@ description: >-
 category: "AI Tools"
 ---
 
+
 > **You know you had that perfect conversation. The one where ChatGPT gave you the exact code snippet / marketing hook / business insight you need right now.**
 >
 > But you can't find it. ChatGPT's built-in search is... let's be honest, basically useless. You scroll. And scroll. And scroll some more. Then you give up and start from scratch.
@@ -78,6 +79,9 @@ Click a search result and you're taken straight to the original conversation. No
 
 ## 🔎 #2: 1Proompt — Best for ChatGPT-Only Users
 
+![Chatgpt Search History Extension 2026 Overview](/content/images/chatgpt-search-history-extension-2026/chatgpt-search-history-extension-2026-overview.webp "Chatgpt Search History Extension 2026 Overview")
+
+
 **Free | 869KiB | Updated January 13, 2026 | Chrome Web Store** [citation:6]
 
 1Proompt focuses on one thing and does it well: **searching your ChatGPT conversation history**.
@@ -134,6 +138,9 @@ StylerGPT is primarily a **theme and organization tool** — 1000+ themes, chat 
 ---
 
 ## 📊 Quick Comparison
+
+![Chatgpt Search History Extension 2026 Features](/content/images/chatgpt-search-history-extension-2026/chatgpt-search-history-extension-2026-features.webp "Chatgpt Search History Extension 2026 Features")
+
 
 | Feature | LLMnesia | 1Proompt | StylerGPT |
 |---------|----------|----------|-----------|
