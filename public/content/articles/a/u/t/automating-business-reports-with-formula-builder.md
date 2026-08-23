@@ -31,6 +31,7 @@ created_at: '2026-01-20T15:26:15.728089+00:00'
 updated_at: '2026-06-06T10:00:00.000000+00:00'
 ---
 
+
 <img src="/content/images/automating-business-reports-with-formula-builder/featured.webp" alt="Automating Business Reports with Formula Builder: A Practical Guide" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Table of Contents
@@ -50,6 +51,9 @@ Manual reporting is slow, error-prone, and eats hours of your week. You pull dat
 I spent a week testing Formula Builder Pro to automate this process across 3 real business scenarios: weekly sales tracking, marketing cost analysis, and inventory forecasting. I compared the time and accuracy against doing the same work manually in Excel and Google Sheets. For reference, I also read [Formula Builder Pro's documentation](https://formulabuilderpro.com/) and [Smartsheet's guide to automated reporting](https://www.smartsheet.com/content/automated-reporting).
 
 ## What Formula Builder Pro Does {#what}
+
+![Automating Business Reports With Formula Builder Overview](/content/images/automating-business-reports-with-formula-builder/automating-business-reports-with-formula-builder-overview.webp "Automating Business Reports With Formula Builder Overview")
+
 
 Formula Builder Pro is a Chrome extension that lets you build and run formulas directly on web page data. You select numbers on a page, assign them as variables, then build formulas using a visual builder — no coding required. The formulas update automatically when the source data changes.
 
@@ -73,6 +77,9 @@ Key features I tested:
 The time savings compound. After one week, I had saved about 3 hours of manual work. After a month, that is 12+ hours.
 
 ## Companion Extensions for Report Automation {#companions}
+
+![Automating Business Reports With Formula Builder Features](/content/images/automating-business-reports-with-formula-builder/automating-business-reports-with-formula-builder-features.webp "Automating Business Reports With Formula Builder Features")
+
 
 Formula Builder Pro handles the calculation. But automation is only one piece of the reporting puzzle. During my test week, I found that a complete reporting workflow needs tools for capture, backup, performance, security, and comfort. Here is what I used alongside Formula Builder Pro:
 
