@@ -30,6 +30,7 @@ created_at: '2026-06-06T10:00:00.000+00:00'
 updated_at: '2026-06-06T10:00:00.000+00:00'
 ---
 
+
 <img src="/content/images/quick-screenshot-capture-extension/featured.webp" alt="Quick Screenshot Lite Review: I Tested 4 Screenshot Extensions for Chrome for 2 Weeks" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Quick Screenshot Lite Review: I Tested 4 Screenshot Extensions on 25 Sites
@@ -52,6 +53,9 @@ I used a Windows 11 machine with Chrome 125, 16 GB RAM. I captured screenshots o
 | GoFullPage | Full-page screenshots | Free | 500,000+ |
 
 ## Capture Speed
+
+![Quick Screenshot Capture Extension Overview](/content/images/quick-screenshot-capture-extension/quick-screenshot-capture-extension-overview.webp "Quick Screenshot Capture Extension Overview")
+
 
 I measured how long each extension took to capture a full-page screenshot of a long article (CNN, 4,200 words).
 
@@ -83,6 +87,9 @@ Nimbus produces larger files (420 KB avg) because it adds extra metadata and alw
 
 ## Annotation and Editing Tools
 
+![Quick Screenshot Capture Extension Features](/content/images/quick-screenshot-capture-extension/quick-screenshot-capture-extension-features.webp "Quick Screenshot Capture Extension Features")
+
+
 | Feature | Quick Screenshot Lite | FireShot | Nimbus | GoFullPage |
 |---------|---------------------|---------|--------|------------|
 | Crop | ✅ Yes | ✅ Yes | ✅ Yes | ❌ No |
@@ -113,6 +120,9 @@ Quick Screenshot Lite is the most memory-efficient at 8 MB idle and 25 MB during
 If you keep many tabs open and take screenshots frequently, Quick Screenshot Lite's low memory footprint makes a noticeable difference.
 
 ## Comparison Table
+
+![Quick Screenshot Capture Extension Guide](/content/images/quick-screenshot-capture-extension/quick-screenshot-capture-extension-guide.webp "Quick Screenshot Capture Extension Guide")
+
 
 | Feature | Quick Screenshot Lite | FireShot | Nimbus | GoFullPage |
 |---------|---------------------|---------|--------|------------|
