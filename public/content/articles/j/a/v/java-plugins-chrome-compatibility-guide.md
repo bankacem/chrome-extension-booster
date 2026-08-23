@@ -5,7 +5,7 @@ slug: java-plugins-chrome-compatibility-guide
 status: draft
 excerpt: "Are Java applets still supported in Chrome? Get a clear answer, understand the current compatibility landscape, and explore safer, supported alternatives in this detailed guide."
 meta_description: "Learn whether Java plugins are still supported in Chrome and discover safe alternatives for running Java-based applications. Comprehensive and up-to-date guidance."
-featured_image: /og-image.png
+featured_image: /content/images/java-plugins-chrome-compatibility-guide/featured.webp
 category: Chrome Extensions
 tags: [Chrome, browser extensions]
 keywords: ["chrome plugins java"]
