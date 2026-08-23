@@ -1,0 +1,227 @@
+{
+  "batch_id": "batch-005",
+  "count": 20,
+  "status": "draft",
+  "method": "manual_local_editorial_composition_after_llm_unavailability",
+  "rows": [
+    {
+      "slug": "chrome-extension-sync-not-working-guide",
+      "title": "Chrome Extensions Not Syncing: Causes, Checks, and Safe Recovery",
+      "keyword": "chrome extension sync not working",
+      "path": "public/content/articles/c/h/r/chrome-extension-sync-not-working-guide.md",
+      "words": 435,
+      "sources": [
+        "https://support.google.com/chrome/answer/9175737?hl=en",
+        "https://developer.chrome.com/docs/extensions/reference/api/storage"
+      ]
+    },
+    {
+      "slug": "chrome-extension-popup-not-opening-guide",
+      "title": "Chrome Extension Popup Not Opening: A Practical Diagnostic Guide",
+      "keyword": "chrome extension popup not opening",
+      "path": "public/content/articles/c/h/r/chrome-extension-popup-not-opening-guide.md",
+      "words": 424,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/reference/api/action",
+        "https://developer.chrome.com/docs/extensions/get-started/tutorial/debug"
+      ]
+    },
+    {
+      "slug": "chrome-extension-icon-missing-toolbar-guide",
+      "title": "Chrome Extension Icon Missing from the Toolbar: Find and Pin It Safely",
+      "keyword": "chrome extension icon missing toolbar",
+      "path": "public/content/articles/c/h/r/chrome-extension-icon-missing-toolbar-guide.md",
+      "words": 388,
+      "sources": [
+        "https://support.google.com/chrome_webstore/answer/2664769?hl=en",
+        "https://developer.chrome.com/docs/extensions/reference/api/action"
+      ]
+    },
+    {
+      "slug": "chrome-extension-update-delayed-guide",
+      "title": "Why a Chrome Extension Update Is Delayed: Idle State, Policies, and Checks",
+      "keyword": "chrome extension update delayed",
+      "path": "public/content/articles/c/h/r/chrome-extension-update-delayed-guide.md",
+      "words": 388,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/develop/concepts/extensions-update-lifecycle",
+        "https://developer.chrome.com/docs/extensions/reference/api/runtime"
+      ]
+    },
+    {
+      "slug": "chrome-extension-settings-lost-after-reinstall-guide",
+      "title": "Chrome Extension Settings Lost After Reinstall: What Can Be Recovered",
+      "keyword": "chrome extension settings lost after reinstall",
+      "path": "public/content/articles/c/h/r/chrome-extension-settings-lost-after-reinstall-guide.md",
+      "words": 394,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/reference/api/storage",
+        "https://support.google.com/chrome/answer/9175737?hl=en"
+      ]
+    },
+    {
+      "slug": "chrome-extensions-backup-and-restore-guide",
+      "title": "How to Back Up Chrome Extension Settings and Restore Them Safely",
+      "keyword": "backup chrome extension settings",
+      "path": "public/content/articles/c/h/r/chrome-extensions-backup-and-restore-guide.md",
+      "words": 383,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/reference/api/storage",
+        "https://support.google.com/chrome/answer/96816?hl=en"
+      ]
+    },
+    {
+      "slug": "chrome-extension-storage-limits-guide",
+      "title": "Chrome Extension Storage Limits: Local, Sync, and Session Data Explained",
+      "keyword": "chrome extension storage limits",
+      "path": "public/content/articles/c/h/r/chrome-extension-storage-limits-guide.md",
+      "words": 383,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/reference/api/storage"
+      ]
+    },
+    {
+      "slug": "chrome-web-store-pending-review-guide",
+      "title": "Chrome Web Store Extension Pending Review: What Developers Can Check",
+      "keyword": "chrome extension pending review",
+      "path": "public/content/articles/c/h/r/chrome-web-store-pending-review-guide.md",
+      "words": 381,
+      "sources": [
+        "https://developer.chrome.com/docs/webstore/publish",
+        "https://developer.chrome.com/docs/webstore/program-policies"
+      ]
+    },
+    {
+      "slug": "chrome-web-store-extension-rejected-guide",
+      "title": "Chrome Web Store Extension Rejected: How to Read the Reason and Respond",
+      "keyword": "chrome extension rejected chrome web store",
+      "path": "public/content/articles/c/h/r/chrome-web-store-extension-rejected-guide.md",
+      "words": 373,
+      "sources": [
+        "https://developer.chrome.com/docs/webstore/program-policies",
+        "https://developer.chrome.com/docs/webstore/publish"
+      ]
+    },
+    {
+      "slug": "chrome-extension-offscreen-documents-guide",
+      "title": "Chrome Extension Offscreen Documents: When MV3 Needs a Hidden DOM Page",
+      "keyword": "chrome extension offscreen document",
+      "path": "public/content/articles/c/h/r/chrome-extension-offscreen-documents-guide.md",
+      "words": 388,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/reference/api/offscreen",
+        "https://developer.chrome.com/docs/extensions/develop/concepts/service-workers"
+      ]
+    },
+    {
+      "slug": "chrome-extension-user-scripts-api-guide",
+      "title": "Chrome User Scripts API: Capabilities, Permissions, and Safe Use",
+      "keyword": "chrome user scripts api",
+      "path": "public/content/articles/c/h/r/chrome-extension-user-scripts-api-guide.md",
+      "words": 374,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/reference/api/userScripts",
+        "https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts"
+      ]
+    },
+    {
+      "slug": "chrome-extension-content-security-policy-guide",
+      "title": "Chrome Extension Content Security Policy: Common MV3 Errors and Fixes",
+      "keyword": "chrome extension content security policy",
+      "path": "public/content/articles/c/h/r/chrome-extension-content-security-policy-guide.md",
+      "words": 384,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy",
+        "https://developer.chrome.com/docs/extensions/develop/migrate/improve-security"
+      ]
+    },
+    {
+      "slug": "chrome-extension-web-accessible-resources-guide",
+      "title": "Chrome Extension Web Accessible Resources: Scope, Risks, and Testing",
+      "keyword": "chrome extension web accessible resources",
+      "path": "public/content/articles/c/h/r/chrome-extension-web-accessible-resources-guide.md",
+      "words": 371,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/reference/manifest/web-accessible-resources",
+        "https://developer.chrome.com/docs/extensions/develop/concepts/messaging"
+      ]
+    },
+    {
+      "slug": "chrome-extension-guest-mode-guide",
+      "title": "Chrome Extensions in Guest Mode: What Works and What Does Not",
+      "keyword": "chrome extensions guest mode",
+      "path": "public/content/articles/c/h/r/chrome-extension-guest-mode-guide.md",
+      "words": 361,
+      "sources": [
+        "https://support.google.com/chrome/answer/6130773?hl=en",
+        "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+      ]
+    },
+    {
+      "slug": "chrome-extension-chrome-pages-access-guide",
+      "title": "Can Chrome Extensions Access chrome:// Pages? Limits and Safer Alternatives",
+      "keyword": "chrome extension access chrome pages",
+      "path": "public/content/articles/c/h/r/chrome-extension-chrome-pages-access-guide.md",
+      "words": 364,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/develop/concepts/match-patterns",
+        "https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions"
+      ]
+    },
+    {
+      "slug": "chrome-extension-clipboard-permission-guide",
+      "title": "Chrome Extension Clipboard Access: Permissions, User Gestures, and Safer Patterns",
+      "keyword": "chrome extension clipboard permission",
+      "path": "public/content/articles/c/h/r/chrome-extension-clipboard-permission-guide.md",
+      "words": 356,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/reference/api/offscreen",
+        "https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions"
+      ]
+    },
+    {
+      "slug": "chrome-extension-background-error-console-guide",
+      "title": "Chrome Extension Background Errors: How to Inspect the Right Console",
+      "keyword": "chrome extension background error console",
+      "path": "public/content/articles/c/h/r/chrome-extension-background-error-console-guide.md",
+      "words": 360,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/get-started/tutorial/debug",
+        "https://developer.chrome.com/docs/devtools/console/understand-messages"
+      ]
+    },
+    {
+      "slug": "chrome-extension-version-check-guide",
+      "title": "How to Check a Chrome Extension Version and Update Status",
+      "keyword": "check chrome extension version",
+      "path": "public/content/articles/c/h/r/chrome-extension-version-check-guide.md",
+      "words": 373,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/develop/concepts/extensions-update-lifecycle",
+        "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+      ]
+    },
+    {
+      "slug": "chrome-tab-groups-save-restore-extension-guide",
+      "title": "Save and Restore Chrome Tab Groups with an Extension: What to Check",
+      "keyword": "save chrome tab groups extension",
+      "path": "public/content/articles/c/h/r/chrome-tab-groups-save-restore-extension-guide.md",
+      "words": 377,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions/reference/api/tabGroups",
+        "https://developer.chrome.com/docs/extensions/reference/api/tabs"
+      ]
+    },
+    {
+      "slug": "chrome-extension-reading-list-workflow-guide",
+      "title": "Chrome Extensions for a Reliable Read-Later Workflow: Capture, Review, and Export",
+      "keyword": "chrome extension read later workflow",
+      "path": "public/content/articles/c/h/r/chrome-extension-reading-list-workflow-guide.md",
+      "words": 393,
+      "sources": [
+        "https://developer.chrome.com/docs/extensions",
+        "https://support.google.com/chrome/answer/7343019?hl=en"
+      ]
+    }
+  ]
+}

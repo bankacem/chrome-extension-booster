@@ -1,0 +1,145 @@
+{
+  "count": 20,
+  "items": [
+    {
+      "slug": "chrome-extension-sync-not-working-guide",
+      "ref": "/content/images/chrome-extension-sync-not-working-guide/chrome-extension-sync-not-working-guide-workflow.webp",
+      "alt": "Chrome Extensions Not Syncing: Causes, Checks, and Safe Recovery workflow illustration",
+      "caption": "Editorial illustration of the chrome extension sync not working workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-sync-not-working-guide.md"
+    },
+    {
+      "slug": "chrome-extension-popup-not-opening-guide",
+      "ref": "/content/images/chrome-extension-popup-not-opening-guide/chrome-extension-popup-not-opening-guide-workflow.webp",
+      "alt": "Chrome Extension Popup Not Opening: A Practical Diagnostic Guide workflow illustration",
+      "caption": "Editorial illustration of the chrome extension popup not opening workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-popup-not-opening-guide.md"
+    },
+    {
+      "slug": "chrome-extension-icon-missing-toolbar-guide",
+      "ref": "/content/images/chrome-extension-icon-missing-toolbar-guide/chrome-extension-icon-missing-toolbar-guide-workflow.webp",
+      "alt": "Chrome Extension Icon Missing from the Toolbar: Find and Pin It Safely workflow illustration",
+      "caption": "Editorial illustration of the chrome extension icon missing toolbar workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-icon-missing-toolbar-guide.md"
+    },
+    {
+      "slug": "chrome-extension-update-delayed-guide",
+      "ref": "/content/images/chrome-extension-update-delayed-guide/chrome-extension-update-delayed-guide-workflow.webp",
+      "alt": "Why a Chrome Extension Update Is Delayed: Idle State, Policies, and Checks workflow illustration",
+      "caption": "Editorial illustration of the chrome extension update delayed workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-update-delayed-guide.md"
+    },
+    {
+      "slug": "chrome-extension-settings-lost-after-reinstall-guide",
+      "ref": "/content/images/chrome-extension-settings-lost-after-reinstall-guide/chrome-extension-settings-lost-after-reinstall-guide-workflow.webp",
+      "alt": "Chrome Extension Settings Lost After Reinstall: What Can Be Recovered workflow illustration",
+      "caption": "Editorial illustration of the chrome extension settings lost after reinstall workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-settings-lost-after-reinstall-guide.md"
+    },
+    {
+      "slug": "chrome-extensions-backup-and-restore-guide",
+      "ref": "/content/images/chrome-extensions-backup-and-restore-guide/chrome-extensions-backup-and-restore-guide-workflow.webp",
+      "alt": "How to Back Up Chrome Extension Settings and Restore Them Safely workflow illustration",
+      "caption": "Editorial illustration of the backup chrome extension settings workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extensions-backup-and-restore-guide.md"
+    },
+    {
+      "slug": "chrome-extension-storage-limits-guide",
+      "ref": "/content/images/chrome-extension-storage-limits-guide/chrome-extension-storage-limits-guide-workflow.webp",
+      "alt": "Chrome Extension Storage Limits: Local, Sync, and Session Data Explained workflow illustration",
+      "caption": "Editorial illustration of the chrome extension storage limits workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-storage-limits-guide.md"
+    },
+    {
+      "slug": "chrome-web-store-pending-review-guide",
+      "ref": "/content/images/chrome-web-store-pending-review-guide/chrome-web-store-pending-review-guide-workflow.webp",
+      "alt": "Chrome Web Store Extension Pending Review: What Developers Can Check workflow illustration",
+      "caption": "Editorial illustration of the chrome extension pending review workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-web-store-pending-review-guide.md"
+    },
+    {
+      "slug": "chrome-web-store-extension-rejected-guide",
+      "ref": "/content/images/chrome-web-store-extension-rejected-guide/chrome-web-store-extension-rejected-guide-workflow.webp",
+      "alt": "Chrome Web Store Extension Rejected: How to Read the Reason and Respond workflow illustration",
+      "caption": "Editorial illustration of the chrome extension rejected chrome web store workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-web-store-extension-rejected-guide.md"
+    },
+    {
+      "slug": "chrome-extension-offscreen-documents-guide",
+      "ref": "/content/images/chrome-extension-offscreen-documents-guide/chrome-extension-offscreen-documents-guide-workflow.webp",
+      "alt": "Chrome Extension Offscreen Documents: When MV3 Needs a Hidden DOM Page workflow illustration",
+      "caption": "Editorial illustration of the chrome extension offscreen document workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-offscreen-documents-guide.md"
+    },
+    {
+      "slug": "chrome-extension-user-scripts-api-guide",
+      "ref": "/content/images/chrome-extension-user-scripts-api-guide/chrome-extension-user-scripts-api-guide-workflow.webp",
+      "alt": "Chrome User Scripts API: Capabilities, Permissions, and Safe Use workflow illustration",
+      "caption": "Editorial illustration of the chrome user scripts api workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-user-scripts-api-guide.md"
+    },
+    {
+      "slug": "chrome-extension-content-security-policy-guide",
+      "ref": "/content/images/chrome-extension-content-security-policy-guide/chrome-extension-content-security-policy-guide-workflow.webp",
+      "alt": "Chrome Extension Content Security Policy: Common MV3 Errors and Fixes workflow illustration",
+      "caption": "Editorial illustration of the chrome extension content security policy workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-content-security-policy-guide.md"
+    },
+    {
+      "slug": "chrome-extension-web-accessible-resources-guide",
+      "ref": "/content/images/chrome-extension-web-accessible-resources-guide/chrome-extension-web-accessible-resources-guide-workflow.webp",
+      "alt": "Chrome Extension Web Accessible Resources: Scope, Risks, and Testing workflow illustration",
+      "caption": "Editorial illustration of the chrome extension web accessible resources workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-web-accessible-resources-guide.md"
+    },
+    {
+      "slug": "chrome-extension-guest-mode-guide",
+      "ref": "/content/images/chrome-extension-guest-mode-guide/chrome-extension-guest-mode-guide-workflow.webp",
+      "alt": "Chrome Extensions in Guest Mode: What Works and What Does Not workflow illustration",
+      "caption": "Editorial illustration of the chrome extensions guest mode workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-guest-mode-guide.md"
+    },
+    {
+      "slug": "chrome-extension-chrome-pages-access-guide",
+      "ref": "/content/images/chrome-extension-chrome-pages-access-guide/chrome-extension-chrome-pages-access-guide-workflow.webp",
+      "alt": "Can Chrome Extensions Access chrome:// Pages? Limits and Safer Alternatives workflow illustration",
+      "caption": "Editorial illustration of the chrome extension access chrome pages workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-chrome-pages-access-guide.md"
+    },
+    {
+      "slug": "chrome-extension-clipboard-permission-guide",
+      "ref": "/content/images/chrome-extension-clipboard-permission-guide/chrome-extension-clipboard-permission-guide-workflow.webp",
+      "alt": "Chrome Extension Clipboard Access: Permissions, User Gestures, and Safer Patterns workflow illustration",
+      "caption": "Editorial illustration of the chrome extension clipboard permission workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-clipboard-permission-guide.md"
+    },
+    {
+      "slug": "chrome-extension-background-error-console-guide",
+      "ref": "/content/images/chrome-extension-background-error-console-guide/chrome-extension-background-error-console-guide-workflow.webp",
+      "alt": "Chrome Extension Background Errors: How to Inspect the Right Console workflow illustration",
+      "caption": "Editorial illustration of the chrome extension background error console workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-background-error-console-guide.md"
+    },
+    {
+      "slug": "chrome-extension-version-check-guide",
+      "ref": "/content/images/chrome-extension-version-check-guide/chrome-extension-version-check-guide-workflow.webp",
+      "alt": "How to Check a Chrome Extension Version and Update Status workflow illustration",
+      "caption": "Editorial illustration of the check chrome extension version workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-version-check-guide.md"
+    },
+    {
+      "slug": "chrome-tab-groups-save-restore-extension-guide",
+      "ref": "/content/images/chrome-tab-groups-save-restore-extension-guide/chrome-tab-groups-save-restore-extension-guide-workflow.webp",
+      "alt": "Save and Restore Chrome Tab Groups with an Extension: What to Check workflow illustration",
+      "caption": "Editorial illustration of the save chrome tab groups extension workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-tab-groups-save-restore-extension-guide.md"
+    },
+    {
+      "slug": "chrome-extension-reading-list-workflow-guide",
+      "ref": "/content/images/chrome-extension-reading-list-workflow-guide/chrome-extension-reading-list-workflow-guide-workflow.webp",
+      "alt": "Chrome Extensions for a Reliable Read-Later Workflow: Capture, Review, and Export workflow illustration",
+      "caption": "Editorial illustration of the chrome extension read later workflow workflow; it is not a product screenshot.",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-reading-list-workflow-guide.md"
+    }
+  ]
+}

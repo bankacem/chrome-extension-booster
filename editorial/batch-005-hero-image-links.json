@@ -1,0 +1,125 @@
+{
+  "count": 20,
+  "items": [
+    {
+      "slug": "chrome-extension-sync-not-working-guide",
+      "featured_image": "/content/images/chrome-extension-sync-not-working-guide/chrome-extension-sync-not-working-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-sync-not-working-guide/chrome-extension-sync-not-working-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-sync-not-working-guide.md"
+    },
+    {
+      "slug": "chrome-extension-popup-not-opening-guide",
+      "featured_image": "/content/images/chrome-extension-popup-not-opening-guide/chrome-extension-popup-not-opening-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-popup-not-opening-guide/chrome-extension-popup-not-opening-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-popup-not-opening-guide.md"
+    },
+    {
+      "slug": "chrome-extension-icon-missing-toolbar-guide",
+      "featured_image": "/content/images/chrome-extension-icon-missing-toolbar-guide/chrome-extension-icon-missing-toolbar-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-icon-missing-toolbar-guide/chrome-extension-icon-missing-toolbar-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-icon-missing-toolbar-guide.md"
+    },
+    {
+      "slug": "chrome-extension-update-delayed-guide",
+      "featured_image": "/content/images/chrome-extension-update-delayed-guide/chrome-extension-update-delayed-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-update-delayed-guide/chrome-extension-update-delayed-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-update-delayed-guide.md"
+    },
+    {
+      "slug": "chrome-extension-settings-lost-after-reinstall-guide",
+      "featured_image": "/content/images/chrome-extension-settings-lost-after-reinstall-guide/chrome-extension-settings-lost-after-reinstall-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-settings-lost-after-reinstall-guide/chrome-extension-settings-lost-after-reinstall-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-settings-lost-after-reinstall-guide.md"
+    },
+    {
+      "slug": "chrome-extensions-backup-and-restore-guide",
+      "featured_image": "/content/images/chrome-extensions-backup-and-restore-guide/chrome-extensions-backup-and-restore-guide-hero.webp",
+      "avif": "/content/images/chrome-extensions-backup-and-restore-guide/chrome-extensions-backup-and-restore-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extensions-backup-and-restore-guide.md"
+    },
+    {
+      "slug": "chrome-extension-storage-limits-guide",
+      "featured_image": "/content/images/chrome-extension-storage-limits-guide/chrome-extension-storage-limits-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-storage-limits-guide/chrome-extension-storage-limits-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-storage-limits-guide.md"
+    },
+    {
+      "slug": "chrome-web-store-pending-review-guide",
+      "featured_image": "/content/images/chrome-web-store-pending-review-guide/chrome-web-store-pending-review-guide-hero.webp",
+      "avif": "/content/images/chrome-web-store-pending-review-guide/chrome-web-store-pending-review-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-web-store-pending-review-guide.md"
+    },
+    {
+      "slug": "chrome-web-store-extension-rejected-guide",
+      "featured_image": "/content/images/chrome-web-store-extension-rejected-guide/chrome-web-store-extension-rejected-guide-hero.webp",
+      "avif": "/content/images/chrome-web-store-extension-rejected-guide/chrome-web-store-extension-rejected-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-web-store-extension-rejected-guide.md"
+    },
+    {
+      "slug": "chrome-extension-offscreen-documents-guide",
+      "featured_image": "/content/images/chrome-extension-offscreen-documents-guide/chrome-extension-offscreen-documents-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-offscreen-documents-guide/chrome-extension-offscreen-documents-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-offscreen-documents-guide.md"
+    },
+    {
+      "slug": "chrome-extension-user-scripts-api-guide",
+      "featured_image": "/content/images/chrome-extension-user-scripts-api-guide/chrome-extension-user-scripts-api-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-user-scripts-api-guide/chrome-extension-user-scripts-api-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-user-scripts-api-guide.md"
+    },
+    {
+      "slug": "chrome-extension-content-security-policy-guide",
+      "featured_image": "/content/images/chrome-extension-content-security-policy-guide/chrome-extension-content-security-policy-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-content-security-policy-guide/chrome-extension-content-security-policy-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-content-security-policy-guide.md"
+    },
+    {
+      "slug": "chrome-extension-web-accessible-resources-guide",
+      "featured_image": "/content/images/chrome-extension-web-accessible-resources-guide/chrome-extension-web-accessible-resources-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-web-accessible-resources-guide/chrome-extension-web-accessible-resources-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-web-accessible-resources-guide.md"
+    },
+    {
+      "slug": "chrome-extension-guest-mode-guide",
+      "featured_image": "/content/images/chrome-extension-guest-mode-guide/chrome-extension-guest-mode-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-guest-mode-guide/chrome-extension-guest-mode-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-guest-mode-guide.md"
+    },
+    {
+      "slug": "chrome-extension-chrome-pages-access-guide",
+      "featured_image": "/content/images/chrome-extension-chrome-pages-access-guide/chrome-extension-chrome-pages-access-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-chrome-pages-access-guide/chrome-extension-chrome-pages-access-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-chrome-pages-access-guide.md"
+    },
+    {
+      "slug": "chrome-extension-clipboard-permission-guide",
+      "featured_image": "/content/images/chrome-extension-clipboard-permission-guide/chrome-extension-clipboard-permission-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-clipboard-permission-guide/chrome-extension-clipboard-permission-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-clipboard-permission-guide.md"
+    },
+    {
+      "slug": "chrome-extension-background-error-console-guide",
+      "featured_image": "/content/images/chrome-extension-background-error-console-guide/chrome-extension-background-error-console-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-background-error-console-guide/chrome-extension-background-error-console-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-background-error-console-guide.md"
+    },
+    {
+      "slug": "chrome-extension-version-check-guide",
+      "featured_image": "/content/images/chrome-extension-version-check-guide/chrome-extension-version-check-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-version-check-guide/chrome-extension-version-check-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-version-check-guide.md"
+    },
+    {
+      "slug": "chrome-tab-groups-save-restore-extension-guide",
+      "featured_image": "/content/images/chrome-tab-groups-save-restore-extension-guide/chrome-tab-groups-save-restore-extension-guide-hero.webp",
+      "avif": "/content/images/chrome-tab-groups-save-restore-extension-guide/chrome-tab-groups-save-restore-extension-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-tab-groups-save-restore-extension-guide.md"
+    },
+    {
+      "slug": "chrome-extension-reading-list-workflow-guide",
+      "featured_image": "/content/images/chrome-extension-reading-list-workflow-guide/chrome-extension-reading-list-workflow-guide-hero.webp",
+      "avif": "/content/images/chrome-extension-reading-list-workflow-guide/chrome-extension-reading-list-workflow-guide-hero.avif",
+      "article_path": "public/content/articles/c/h/r/chrome-extension-reading-list-workflow-guide.md"
+    }
+  ]
+}

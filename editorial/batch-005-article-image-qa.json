@@ -1,0 +1,228 @@
+{
+  "count": 20,
+  "drafts": 20,
+  "unique_inline_webp": 20,
+  "unique_hero_webp": 20,
+  "rows": [
+    {
+      "slug": "chrome-extension-sync-not-working-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-sync-not-working-guide/chrome-extension-sync-not-working-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-sync-not-working-guide/chrome-extension-sync-not-working-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-sync-not-working-guide/chrome-extension-sync-not-working-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-sync-not-working-guide/chrome-extension-sync-not-working-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 150
+    },
+    {
+      "slug": "chrome-extension-popup-not-opening-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-popup-not-opening-guide/chrome-extension-popup-not-opening-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-popup-not-opening-guide/chrome-extension-popup-not-opening-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-popup-not-opening-guide/chrome-extension-popup-not-opening-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-popup-not-opening-guide/chrome-extension-popup-not-opening-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 150
+    },
+    {
+      "slug": "chrome-extension-icon-missing-toolbar-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-icon-missing-toolbar-guide/chrome-extension-icon-missing-toolbar-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-icon-missing-toolbar-guide/chrome-extension-icon-missing-toolbar-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-icon-missing-toolbar-guide/chrome-extension-icon-missing-toolbar-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-icon-missing-toolbar-guide/chrome-extension-icon-missing-toolbar-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 156
+    },
+    {
+      "slug": "chrome-extension-update-delayed-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-update-delayed-guide/chrome-extension-update-delayed-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-update-delayed-guide/chrome-extension-update-delayed-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-update-delayed-guide/chrome-extension-update-delayed-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-update-delayed-guide/chrome-extension-update-delayed-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 160
+    },
+    {
+      "slug": "chrome-extension-settings-lost-after-reinstall-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-settings-lost-after-reinstall-guide/chrome-extension-settings-lost-after-reinstall-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-settings-lost-after-reinstall-guide/chrome-extension-settings-lost-after-reinstall-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-settings-lost-after-reinstall-guide/chrome-extension-settings-lost-after-reinstall-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-settings-lost-after-reinstall-guide/chrome-extension-settings-lost-after-reinstall-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 155
+    },
+    {
+      "slug": "chrome-extensions-backup-and-restore-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extensions-backup-and-restore-guide/chrome-extensions-backup-and-restore-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extensions-backup-and-restore-guide/chrome-extensions-backup-and-restore-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extensions-backup-and-restore-guide/chrome-extensions-backup-and-restore-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extensions-backup-and-restore-guide/chrome-extensions-backup-and-restore-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 150
+    },
+    {
+      "slug": "chrome-extension-storage-limits-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-storage-limits-guide/chrome-extension-storage-limits-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-storage-limits-guide/chrome-extension-storage-limits-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-storage-limits-guide/chrome-extension-storage-limits-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-storage-limits-guide/chrome-extension-storage-limits-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 158
+    },
+    {
+      "slug": "chrome-web-store-pending-review-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-web-store-pending-review-guide/chrome-web-store-pending-review-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-web-store-pending-review-guide/chrome-web-store-pending-review-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-web-store-pending-review-guide/chrome-web-store-pending-review-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-web-store-pending-review-guide/chrome-web-store-pending-review-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 154
+    },
+    {
+      "slug": "chrome-web-store-extension-rejected-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-web-store-extension-rejected-guide/chrome-web-store-extension-rejected-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-web-store-extension-rejected-guide/chrome-web-store-extension-rejected-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-web-store-extension-rejected-guide/chrome-web-store-extension-rejected-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-web-store-extension-rejected-guide/chrome-web-store-extension-rejected-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 157
+    },
+    {
+      "slug": "chrome-extension-offscreen-documents-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-offscreen-documents-guide/chrome-extension-offscreen-documents-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-offscreen-documents-guide/chrome-extension-offscreen-documents-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-offscreen-documents-guide/chrome-extension-offscreen-documents-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-offscreen-documents-guide/chrome-extension-offscreen-documents-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 156
+    },
+    {
+      "slug": "chrome-extension-user-scripts-api-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-user-scripts-api-guide/chrome-extension-user-scripts-api-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-user-scripts-api-guide/chrome-extension-user-scripts-api-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-user-scripts-api-guide/chrome-extension-user-scripts-api-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-user-scripts-api-guide/chrome-extension-user-scripts-api-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 150
+    },
+    {
+      "slug": "chrome-extension-content-security-policy-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-content-security-policy-guide/chrome-extension-content-security-policy-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-content-security-policy-guide/chrome-extension-content-security-policy-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-content-security-policy-guide/chrome-extension-content-security-policy-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-content-security-policy-guide/chrome-extension-content-security-policy-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 155
+    },
+    {
+      "slug": "chrome-extension-web-accessible-resources-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-web-accessible-resources-guide/chrome-extension-web-accessible-resources-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-web-accessible-resources-guide/chrome-extension-web-accessible-resources-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-web-accessible-resources-guide/chrome-extension-web-accessible-resources-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-web-accessible-resources-guide/chrome-extension-web-accessible-resources-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 154
+    },
+    {
+      "slug": "chrome-extension-guest-mode-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-guest-mode-guide/chrome-extension-guest-mode-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-guest-mode-guide/chrome-extension-guest-mode-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-guest-mode-guide/chrome-extension-guest-mode-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-guest-mode-guide/chrome-extension-guest-mode-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 147
+    },
+    {
+      "slug": "chrome-extension-chrome-pages-access-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-chrome-pages-access-guide/chrome-extension-chrome-pages-access-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-chrome-pages-access-guide/chrome-extension-chrome-pages-access-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-chrome-pages-access-guide/chrome-extension-chrome-pages-access-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-chrome-pages-access-guide/chrome-extension-chrome-pages-access-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 160
+    },
+    {
+      "slug": "chrome-extension-clipboard-permission-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-clipboard-permission-guide/chrome-extension-clipboard-permission-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-clipboard-permission-guide/chrome-extension-clipboard-permission-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-clipboard-permission-guide/chrome-extension-clipboard-permission-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-clipboard-permission-guide/chrome-extension-clipboard-permission-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 160
+    },
+    {
+      "slug": "chrome-extension-background-error-console-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-background-error-console-guide/chrome-extension-background-error-console-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-background-error-console-guide/chrome-extension-background-error-console-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-background-error-console-guide/chrome-extension-background-error-console-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-background-error-console-guide/chrome-extension-background-error-console-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 154
+    },
+    {
+      "slug": "chrome-extension-version-check-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-version-check-guide/chrome-extension-version-check-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-version-check-guide/chrome-extension-version-check-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-version-check-guide/chrome-extension-version-check-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-version-check-guide/chrome-extension-version-check-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 143
+    },
+    {
+      "slug": "chrome-tab-groups-save-restore-extension-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-tab-groups-save-restore-extension-guide/chrome-tab-groups-save-restore-extension-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-tab-groups-save-restore-extension-guide/chrome-tab-groups-save-restore-extension-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-tab-groups-save-restore-extension-guide/chrome-tab-groups-save-restore-extension-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-tab-groups-save-restore-extension-guide/chrome-tab-groups-save-restore-extension-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 153
+    },
+    {
+      "slug": "chrome-extension-reading-list-workflow-guide",
+      "status": "draft",
+      "inline_webp": "public/content/images/chrome-extension-reading-list-workflow-guide/chrome-extension-reading-list-workflow-guide-workflow.webp",
+      "inline_avif": "public/content/images/chrome-extension-reading-list-workflow-guide/chrome-extension-reading-list-workflow-guide-workflow.avif",
+      "hero_webp": "public/content/images/chrome-extension-reading-list-workflow-guide/chrome-extension-reading-list-workflow-guide-hero.webp",
+      "hero_avif": "public/content/images/chrome-extension-reading-list-workflow-guide/chrome-extension-reading-list-workflow-guide-hero.avif",
+      "inline_dimensions": "1200x750",
+      "hero_dimensions": "1600x900",
+      "meta_description_chars": 160
+    }
+  ]
+}
