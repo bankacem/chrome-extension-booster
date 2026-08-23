@@ -16,6 +16,7 @@ description: >-
 category: "AI Tools"
 ---
 
+
 > **ChatGPT has a "Custom Instructions" feature. You've probably seen it. Two fields. That's it.**
 >
 > Two fields to tell ChatGPT everything about who you are, how you write, and what you need. It's like trying to describe your entire personality in a tweet.
@@ -91,6 +92,9 @@ Privacy-friendly by design. StylerGPT focuses on local customization and local w
 
 ## 🛠️ Alternative: DIY with Plume AI
 
+![Chatgpt Custom Instructions Extension 2026 Overview](/content/images/chatgpt-custom-instructions-extension-2026/chatgpt-custom-instructions-extension-2026-overview.webp "Chatgpt Custom Instructions Extension 2026 Overview")
+
+
 **Free (with API key) | Open source | Updated April 2026** [citation:4]
 
 Plume AI is different — it's a grammar checker and rewriter, not a prompt manager. But if you have specific "custom instructions" for grammar style, you can implement them via Plume's tone presets.
@@ -131,6 +135,9 @@ Plume AI lets you connect your own API key for Gemini, Claude, OpenAI, or Mistra
 ---
 
 ## 🏁 Final Verdict
+
+![Chatgpt Custom Instructions Extension 2026 Features](/content/images/chatgpt-custom-instructions-extension-2026/chatgpt-custom-instructions-extension-2026-features.webp "Chatgpt Custom Instructions Extension 2026 Features")
+
 
 | Your Scenario | Best Choice |
 |---------------|-------------|
