@@ -31,6 +31,7 @@ created_at: '2026-03-03T23:04:10.788396+00:00'
 updated_at: '2026-06-06T08:00:00.000000+00:00'
 ---
 
+
 <img src="/content/images/auto-tab-discarder-vs-the-great-suspender/featured.webp" alt="Auto Tab Discarder vs The Great Suspender 2026: Why You Should Switch" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Table of Contents
@@ -49,6 +50,9 @@ The Great Suspender was one of the most popular Chrome extensions, with over 2 m
 I tested 4 safe alternatives for a week to find the best replacement. For reference, I read [Google's security advisory on The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender-orig/ahmkjjgdligadogjedmnoghhpedkmdnn) and [BleepingComputer's report on the malware](https://www.bleepingcomputer.com/news/security/the-great-suspender-chrome-extension-found-serving-malware/).
 
 ## 4 Safe Alternatives I Tested {#alternatives}
+
+![Auto Tab Discarder Vs The Great Suspender Overview](/content/images/auto-tab-discarder-vs-the-great-suspender/auto-tab-discarder-vs-the-great-suspender-overview.webp "Auto Tab Discarder Vs The Great Suspender Overview")
+
 
 **ProTab Suspender** — The best direct replacement. Suspends tabs automatically after a set timeout. Keeps tabs in the tab bar. Reload on click takes ~1 second. Free, no ads, no data collection. [Available on Chrome Web Store](https://chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj).
 
@@ -74,6 +78,9 @@ I tested all four across the same workload: 30 tabs open across Chrome, includin
 | Price | Free | Free | Free | Free |
 
 ## Companion Extensions for Tab Management {#companions}
+
+![Auto Tab Discarder Vs The Great Suspender Features](/content/images/auto-tab-discarder-vs-the-great-suspender/auto-tab-discarder-vs-the-great-suspender-features.webp "Auto Tab Discarder Vs The Great Suspender Features")
+
 
 Whatever tab manager you choose, you still need these:
 
