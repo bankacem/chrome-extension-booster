@@ -1,5 +1,5 @@
 ---
-id: b002-05-draft
+id: 63150bb5-4d8d-430a-8bf8-c3474e3f36f1
 title: "IE Tab for Chrome: Run Legacy Sites, Configure URL Rules, and Manage the Risks"
 slug: ie-tab-chrome-legacy-sites-guide
 status: draft
@@ -11,7 +11,7 @@ tags: [Chrome, browser extensions]
 keywords: ["ie tab chrome"]
 author: Miccart Phen
 published_at: 2026-08-23
-read_time: 8
+read_time: 7
 ---
 
 ## How Does IE Tab for Chrome Work?
