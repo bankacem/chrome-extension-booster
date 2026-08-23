@@ -29,6 +29,7 @@ created_at: '2026-01-27T13:43:07.494384+00:00'
 updated_at: '2026-06-05T14:15:00.536418+00:00'
 ---
 
+
 <img src="/content/images/colorzilla-chrome-color-picker/featured.webp" alt="ColorZilla for Chrome: Best Color Picker Extension Tested (2026)" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## ColorZilla for Chrome: Is It Still the Best Color Picker in 2026?
@@ -55,6 +56,9 @@ I measured each extension's ability to pick the exact hex code from known colors
 Five of six extensions returned exact hex codes. Instant Eyedropper was off by one in two of four tests, likely due to a sub-pixel rounding issue.
 
 ## Iframe Support
+
+![Colorzilla Chrome Color Picker Overview](/content/images/colorzilla-chrome-color-picker/colorzilla-chrome-color-picker-overview.webp "Colorzilla Chrome Color Picker Overview")
+
 
 Many modern web pages use iframes (embedded Figma frames, CodePen demos, YouTube embeds). I tested whether each extension can pick colors from inside iframes.
 
@@ -100,6 +104,9 @@ I measured time from clicking the extension icon to having a hex code copied to 
 Eye Dropper and Instant Eyedropper are faster because they have simpler interfaces. ColorZilla's 1.8s is still fast enough for practical use, and the extra features justify the additional click.
 
 ## Privacy
+
+![Colorzilla Chrome Color Picker Features](/content/images/colorzilla-chrome-color-picker/colorzilla-chrome-color-picker-features.webp "Colorzilla Chrome Color Picker Features")
+
 
 All six extensions I tested keep color data local. None upload screenshots or color data to external servers. I verified this by monitoring network requests during use.
 
