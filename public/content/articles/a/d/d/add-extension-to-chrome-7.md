@@ -28,6 +28,7 @@ views: 1
 read_time: 7
 ---
 
+
 <img src="/content/images/add-extension-to-chrome-7/featured.webp" alt="How to Add an Extension to Chrome: A Step-by-Step Guide (2026)" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Table of Contents
@@ -59,6 +60,9 @@ I tested this process on Chrome 125 on Windows 11 and macOS Sonoma. It took 28 s
 
 ## Alternative Installation Methods {#alternatives}
 
+![Add Extension To Chrome 7 Overview](/content/images/add-extension-to-chrome-7/add-extension-to-chrome-7-overview.webp "Add Extension To Chrome 7 Overview")
+
+
 The Chrome Web Store is not the only way to install extensions:
 
 **Via chrome://extensions:** You can open `chrome://extensions` in your address bar, toggle "Developer mode" in the top-right corner, and drag a `.crx` or unpacked folder directly onto the page. This is useful if you are testing a custom extension or installing something from a developer's GitHub page.
@@ -82,6 +86,9 @@ Most guides — including the Chrome Web Store's own help pages — skip this pa
 **Check reviews with sorting.** Sort by "Most recent" rather than "Most helpful." The top reviews might be years old or incentivized. Recent negative reviews often flag issues after an update.
 
 ## Understanding Permissions {#permissions}
+
+![Add Extension To Chrome 7 Features](/content/images/add-extension-to-chrome-7/add-extension-to-chrome-7-features.webp "Add Extension To Chrome 7 Features")
+
 
 Chrome extensions request permissions at install time. Here is what the common ones actually mean:
 
@@ -110,6 +117,9 @@ After testing dozens of extensions, these eight cover every major category:
 I installed these eight on a fresh Chrome profile and used them for a week. My RAM usage went from 1.2 GB baseline to 1.8 GB with all eight active — a 600 MB increase that is noticeable but manageable on a 16 GB machine.
 
 ## Managing Your Extensions {#management}
+
+![Add Extension To Chrome 7 Guide](/content/images/add-extension-to-chrome-7/add-extension-to-chrome-7-guide.webp "Add Extension To Chrome 7 Guide")
+
 
 Go to `chrome://extensions` to see everything installed. Chrome now shows a **Memory** column — anything consuming over 100 MB needs a justification. Use the toggle to disable extensions you do not use daily rather than uninstalling them, so your settings are preserved if you need them later.
 
