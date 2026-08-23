@@ -27,9 +27,6 @@ read_time: 8
 created_at: '2026-01-27T11:28:14.974845+00:00'
 updated_at: '2026-05-24T06:15:00.615145+00:00'
 ---
-
-<img src="/content/images/chrome-extension-development-guide/featured.webp" alt="Chrome Extension Development Guide: How to Build Your First Extension in 2026" width="1200" height="630" loading="lazy" class="featured-image">
-
 I set myself a challenge: build three Chrome extensions from scratch in one week, using nothing but Google's official Chrome extension documentation and community resources. The first was a simple tab manager that groups tabs by domain. The second was a screenshot tool that captures visible and full-page screenshots. The third was a dark mode toggler that injects custom CSS on any page. By the end of the week, I had three working extensions and a clear understanding of where the Chrome extension doc shines and where it falls short for real-world development. Here is everything I learned.
 
 ## What the Chrome Extension Doc Covers Well
@@ -41,6 +38,9 @@ The service worker documentation is also solid. It covers service worker lifecyc
 Messaging between extension components is well-documented. The `chrome.runtime.sendMessage` and `chrome.tabs.sendMessage` APIs are explained with clear patterns for one-time requests, long-lived connections, and response handling. The documentation includes a working example of a content script requesting data from the service worker and receiving a response — the most common messaging pattern in real extensions.
 
 ## Where the Chrome Extension Doc Falls Short
+
+![Chrome Extension Development Guide Overview](/content/images/chrome-extension-development-guide/chrome-extension-development-guide-overview.webp "Chrome Extension Development Guide Overview")
+
 
 Three areas caused me significant frustration during development:
 
@@ -66,6 +66,9 @@ The official documentation lists submission guidelines and technical requirement
 - **Insufficient privacy policy:** Extensions that handle user data need a privacy policy linked from the store listing. The documentation mentions this requirement in passing but does not provide a template or example.
 
 ## How I Built Three Extensions
+
+![Chrome Extension Development Guide Features](/content/images/chrome-extension-development-guide/chrome-extension-development-guide-features.webp "Chrome Extension Development Guide Features")
+
 
 ### Extension 1: Tab Manager (187 lines, 4 hours)
 
@@ -93,6 +96,9 @@ The dark mode toggler was the simplest extension because it uses the `scripting.
 
 ## 3 Competitors to the Chrome Extension Doc
 
+![Chrome Extension Development Guide Guide](/content/images/chrome-extension-development-guide/chrome-extension-development-guide-guide.webp "Chrome Extension Development Guide Guide")
+
+
 | Resource | Coverage | Code Samples | Community Support | Up-to-Date |
 |---|---|---|---|---|
 | Official Chrome Extension Doc | Excellent for MV3 basics | Good (working examples) | No community features | Yes (MV3 focused) |
@@ -117,17 +123,6 @@ YouTube tutorials are great for visual learners who want to see the development 
 | DarkFlow | Universal dark mode enforcement | Reduce eye strain during late-night coding sessions |
 
 Quick Screenshot Lite documented my entire development process. I used it to capture error messages, API responses, and before-after screenshots of my extension's UI during testing — essential for comparing behavior across different Chrome versions.
-
-
-<div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">
-  <h3 class="text-xl font-bold mb-4">Read Next</h3>
-  <ul class="space-y-2">
-    <li><a href="/blog/chrome-extensions-complete-guide" class="text-primary font-medium hover:underline">Chrome Extensions Complete Guide</a></li>
-    <li><a href="/blog/best-dark-mode-chrome-extension" class="text-primary font-medium hover:underline">Best Dark Mode Chrome Extensions</a></li>
-    <li><a href="/blog/chrome-extensions-for-gamers-guide" class="text-primary font-medium hover:underline">Chrome Extensions for Gamers</a></li>
-    <li><a href="/blog/set-chrome-as-default-browser" class="text-primary font-medium hover:underline">Set Chrome as Default Browser</a></li>
-  </ul>
-</div>
 
 ## Frequently Asked Questions
 
