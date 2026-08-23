@@ -1,5 +1,5 @@
 ---
-id: b002-02-draft
+id: 77f85717-3324-4a51-ba1f-8a465bb80781
 title: "Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely"
 slug: chrome-extensions-incognito-guide
 status: draft
@@ -11,7 +11,7 @@ tags: [Chrome, browser extensions]
 keywords: ["extension chrome incognito"]
 author: Miccart Phen
 published_at: 2026-08-23
-read_time: 8
+read_time: 5
 ---
 
 ## Can Chrome Extensions Work in Incognito Mode?
