@@ -15,6 +15,7 @@ description: >-
 category: "Chrome Extensions"
 ---
 
+
 **Last Updated:** June 3, 2026 | **Reading Time:** 6 minutes
 
 ---
@@ -85,6 +86,9 @@ Before we touch Chrome, you need a Bitwarden account. Here's how:
 ---
 
 ## Step 4: Import Your Existing Passwords (3 Minutes)
+
+![Article2 Bitwarden Setup Guide Overview](/content/images/article2-bitwarden-setup-guide/article2-bitwarden-setup-guide-overview.webp "Article2 Bitwarden Setup Guide Overview")
+
 
 If you've been using Chrome's built-in password manager, transferring everything to Bitwarden is straightforward:
 
@@ -159,6 +163,9 @@ This is the step most people skip. Don't be most people.
 ---
 
 ## Step 8: Mobile Setup (Optional but Recommended)
+
+![Article2 Bitwarden Setup Guide Features](/content/images/article2-bitwarden-setup-guide/article2-bitwarden-setup-guide-features.webp "Article2 Bitwarden Setup Guide Features")
+
 
 Your vault syncs across all devices automatically. To complete the setup:
 
