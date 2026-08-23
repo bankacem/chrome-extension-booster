@@ -22,6 +22,7 @@ published_at: 2026-08-22
 read_time: 8
 ---
 
+
 Tampermonkey is a userscript manager for Chrome. It lets you run small JavaScript programs that change a page or add a narrowly defined feature, but it also places executable code between you and the websites you visit. The useful question is therefore not simply “How do I install Tampermonkey?” It is “Which script should run, on which pages, with which permissions, and how can I turn it off?”
 
 This guide follows that safer workflow. You will install the extension from the official Chrome Web Store, enable the permission required by current Chrome-based browsers, inspect a script before installing it, create a harmless test script, and troubleshoot the most common reasons a userscript does not run. It does not recommend a list of anonymous scripts or promise that any script is safe merely because it has many installs.
@@ -43,6 +44,9 @@ That flexibility is also the security boundary. If a script matches a page conta
 
 ## How to install Tampermonkey in Chrome
 
+![Tampermonkey Chrome Userscripts Guide Overview](/content/images/tampermonkey-chrome-userscripts-guide/tampermonkey-chrome-userscripts-guide-overview.webp "Tampermonkey Chrome Userscripts Guide Overview")
+
+
 1. Open the [official Tampermonkey listing in the Chrome Web Store](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en). Check the publisher, website, current version, and privacy section before selecting **Add to Chrome**. The listing identifies the official website and discloses data-use categories; those details can change, so read the current listing rather than relying on an old screenshot.[2]
 2. Confirm Chrome's installation dialog. After installation, open the Extensions menu using the puzzle-piece button and pin Tampermonkey if you want quick access.
 3. Open **Manage extension** from Tampermonkey's menu. On Chrome-based browsers that require the newer userscript authorization flow, Tampermonkey's current FAQ says Chrome 138+ users may need to enable **Allow User Scripts**; the alternative described there is enabling **Developer mode** on the extensions page.[3]
@@ -63,6 +67,9 @@ Userscript directories can be useful starting points, but a directory is not a s
 A useful rule is: **scope first, code second, trust third**. A popular script can still be outdated, and a small script can still be dangerous if it runs on the wrong pages.
 
 ## Install a script with the smallest possible scope
+
+![Tampermonkey Chrome Userscripts Guide Features](/content/images/tampermonkey-chrome-userscripts-guide/tampermonkey-chrome-userscripts-guide-features.webp "Tampermonkey Chrome Userscripts Guide Features")
+
 
 A maintained userscript page normally provides an installation button that opens Tampermonkey's review screen. Stop at that screen and inspect the code before confirming. If the script asks for a permission or page scope that does not match its stated purpose, cancel the installation and investigate.
 
@@ -94,6 +101,9 @@ When a page behaves strangely, disable the most recently installed or updated sc
 For removal, open `chrome://extensions`, find Tampermonkey, and choose **Remove**. If you only want to remove one script, delete or disable it from the Tampermonkey dashboard instead. Keep a backup only when you understand what the backup contains; userscripts may include private configuration values or tokens.
 
 ## Troubleshoot a script that does not run
+
+![Tampermonkey Chrome Userscripts Guide Guide](/content/images/tampermonkey-chrome-userscripts-guide/tampermonkey-chrome-userscripts-guide-guide.webp "Tampermonkey Chrome Userscripts Guide Guide")
+
 
 ### The script is installed but nothing changes
 
