@@ -34,6 +34,7 @@ faq:
     answer: "Tracking depends on the recipient's mail client, image loading, privacy or security systems, message type, and the service's integration. An absent or repeated signal is not a definitive delivery or reading result."
 ---
 
+
 If you search for **Gmail Mailtrack**, you may be looking for two different things: Gmail’s native read-receipt feature and the third-party **Mailtrack® – Email Tracker for Gmail** Chrome extension from Mailsuite. They are not interchangeable. Google’s native read receipts are restricted to work or school accounts, while Mailtrack is an extension and service that adds tracking signals to messages sent from Gmail.[1] [2]
 
 This guide follows the practical path: verify the official listing, install and connect the extension, send a controlled test, interpret the signal cautiously, and review privacy and account-access implications before using it for client, recruiting, sales, or personal messages. It does not treat an open event as proof that a recipient read or approved your message.
@@ -61,6 +62,9 @@ Google’s official instructions say native read receipts do not work with perso
 
 ## What Mailtrack actually measures
 
+![Mailtrack Gmail Chrome Guide Overview](/content/images/mailtrack-gmail-chrome-guide/mailtrack-gmail-chrome-guide-overview.webp "Mailtrack Gmail Chrome Guide Overview")
+
+
 Mailsuite describes Mailtrack as an email tracker for Gmail with open and click tracking, check marks, notifications, and follow-up features. The Chrome Web Store listing also discloses that the extension handles personally identifiable information and personal communications.[2] These are product and publisher statements, not an independent ExtensionTo test or guarantee.
 
 In general, an email tracker records a technical event associated with a message. That event may be caused by an image request, a link request, or another integration signal. It is not a mind-reading event. An open marker cannot establish that the recipient read every paragraph, was the intended person, agreed with the content, or will reply.
@@ -82,6 +86,9 @@ Use the official Chrome Web Store listing rather than a download mirror. For a b
 The current Mailsuite support page lists Chrome, Edge, Opera, and Vivaldi as compatible browsers and warns that other tracking or tracking-blocking extensions can conflict with Mailtrack. Treat that list as Mailsuite’s compatibility guidance, because browser and extension behavior can change.[3]
 
 ## Send a safe test email
+
+![Mailtrack Gmail Chrome Guide Features](/content/images/mailtrack-gmail-chrome-guide/mailtrack-gmail-chrome-guide-features.webp "Mailtrack Gmail Chrome Guide Features")
+
 
 Before using tracking in a real client or workplace workflow, test it with an address you control:
 
@@ -107,6 +114,9 @@ The safest interpretation is:
 For follow-up decisions, combine the signal with the context: the recipient, the purpose of the message, the expected response time, and whether tracking is appropriate for that communication.
 
 ## Privacy, permissions, and recipient expectations
+
+![Mailtrack Gmail Chrome Guide Guide](/content/images/mailtrack-gmail-chrome-guide/mailtrack-gmail-chrome-guide-guide.webp "Mailtrack Gmail Chrome Guide Guide")
+
 
 Mailtrack is not a passive visual decoration. The Chrome Web Store disclosure says that the extension handles **personally identifiable information** and **personal communications**.[2] Mailsuite’s privacy policy describes different processing roles for user data and recipient communication data, and lists information that can be involved in providing the service, including email identifiers, subjects, message content temporarily during transmission, send times, open confirmations, link URLs and click history, and—in some functions—IP address, browser, and operating system.[4]
 
