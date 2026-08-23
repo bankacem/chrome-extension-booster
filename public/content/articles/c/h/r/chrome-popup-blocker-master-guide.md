@@ -28,9 +28,6 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 8
 ---
-
-<img src="/content/images/chrome-popup-blocker-master-guide/featured.webp" alt="Chrome Popup Blocker Master Guide: Kill Intrusive Ads in 2026" width="1200" height="630" loading="lazy" class="featured-image">
-
 I am a news junkie. I visit 20+ news sites daily, and every single one tries to assault me with pop-ups — newsletter sign-ups that trigger when I move my mouse toward the close button, fake download buttons that look like the real "Play" icon, autoplay video overlays that follow me as I scroll, cookie consent walls that cover the entire page, and the occasional "Your computer is infected" scam overlay. I tested 8 popup blockers over two weeks on 30 high-traffic sites to find which ones actually stop this nonsense. My test machine was a Lenovo IdeaPad 3 (Intel Core i5-1135G7, 8GB RAM, Windows 11 Pro, Chrome 125 stable). Here is what I found.
 
 ## My Test Methodology
@@ -48,6 +45,9 @@ The problem: Chrome cannot block modern overlay pop-ups. These are rendered with
 According to [Google's documentation on Chrome's popup blocker](https://support.google.com/chrome/answer/95472), the built-in system only targets "pop-ups that open in a new browser window or tab." Overlays rendered within the page are explicitly outside its scope.
 
 ## Comparison Table: 8 Popup Blockers Tested
+
+![Chrome Popup Blocker Master Guide Overview](/content/images/chrome-popup-blocker-master-guide/chrome-popup-blocker-master-guide-overview.webp "Chrome Popup Blocker Master Guide Overview")
+
 
 | Extension | Pop-up Windows | Overlay Modals | Newsletter Pop-ups | Autoplay Videos | RAM | Sites Broken |
 |---|---|---|---|---|---|---|
@@ -69,6 +69,9 @@ The secret: Light Popup Blocker uses DOM pattern recognition rather than filter 
 At 20 MB of RAM, it is also the lightest dedicated popup blocker. AdBlock Plus used 140 MB — 7x more — and still blocked fewer pop-ups. Light Popup Blocker broke 0 out of 30 sites.
 
 ## Competitor Weaknesses
+
+![Chrome Popup Blocker Master Guide Features](/content/images/chrome-popup-blocker-master-guide/chrome-popup-blocker-master-guide-features.webp "Chrome Popup Blocker Master Guide Features")
+
 
 ### AdBlock Plus — Heavy and Too Permissive
 
@@ -106,6 +109,9 @@ In my testing, this combined setup blocked 99% of all pop-ups and overlays acros
 
 ## How to Configure
 
+![Chrome Popup Blocker Master Guide Guide](/content/images/chrome-popup-blocker-master-guide/chrome-popup-blocker-master-guide-guide.webp "Chrome Popup Blocker Master Guide Guide")
+
+
 1. Install uBlock Origin from the Chrome Web Store — use default settings (medium mode)
 2. Install Light Popup Blocker
 3. In Light Popup Blocker settings, enable "Block newsletter overlays" and "Block autoplay videos"
@@ -125,17 +131,6 @@ In my testing, this combined setup blocked 99% of all pop-ups and overlays acros
 | DarkFlow | Per-domain contrast for consistent visual experience after pop-up overlays are removed |
 
 Quick Screenshot Lite was essential during testing — I captured every pop-up variant I encountered and used the screenshots to verify which blockers caught which types. At 35 MB, it added negligible overhead alongside my blocker testing.
-
-
-<div class="related-articles mt-12 p-6 rounded-xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20">
-  <h3 class="text-xl font-bold mb-4">Read Next</h3>
-  <ul class="space-y-2">
-    <li><a href="/blog/kaspersky-protection-chrome" class="text-primary font-medium hover:underline">Kaspersky Protection Chrome</a></li>
-    <li><a href="/blog/kaspersky-protection-chrome-review" class="text-primary font-medium hover:underline">Kaspersky Chrome Extension Review</a></li>
-    <li><a href="/blog/best-ad-block-chrome-extension" class="text-primary font-medium hover:underline">Best Ad Block Chrome Extensions</a></li>
-    <li><a href="/blog/best-anti-captcha-chrome-extension" class="text-primary font-medium hover:underline">Best Anti Captcha Chrome Extensions</a></li>
-  </ul>
-</div>
 
 ## FAQ
 
