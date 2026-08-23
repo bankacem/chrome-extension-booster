@@ -100,31 +100,6 @@
     "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
-    "id": "63150bb5-4d8d-430a-8bf8-c3474e3f36f1",
-    "title": "IE Tab for Chrome: Run Legacy Sites, Configure URL Rules, and Manage the Risks",
-    "slug": "ie-tab-chrome-legacy-sites-guide",
-    "description": "Learn how to use IE Tab in Chrome for legacy applications, manage risks, configure Auto URL Filters, and explore enterprise constraints and alternatives.",
-    "meta_description": "Learn how to use IE Tab in Chrome for legacy applications, manage risks, configure Auto URL Filters, and explore enterprise constraints and alternatives.",
-    "excerpt": "A practical guide to using IE Tab in Chrome to access legacy applications. Understand configuration options, manage security challenges, and explore enterprise alternatives.",
-    "published_at": "2026-08-23T00:00:00.000Z",
-    "category": "Chrome Extensions",
-    "author": "Miccart Phen",
-    "image_url": "/content/images/ie-tab-chrome-legacy-sites-guide/featured.webp",
-    "featured_image": "/content/images/ie-tab-chrome-legacy-sites-guide/featured.webp",
-    "reading_time": 7,
-    "read_time": 7,
-    "views": 0,
-    "tags": [
-      "Chrome",
-      "browser extensions"
-    ],
-    "keywords": [
-      "ie tab chrome"
-    ],
-    "canonicalPath": "/blog/ie-tab-chrome-legacy-sites-guide",
-    "updated_at": "2026-08-23T00:00:00.000Z"
-  },
-  {
     "id": "f0dba3b5-9d8f-4c3b-94ac-2c0e20260822",
     "title": "Chrome Omnibox Guide: Address-Bar Shortcuts and Extension Keywords",
     "slug": "chrome-omnibox-guide",
@@ -267,35 +242,6 @@
       "chrome extensions for citation and bibliography management"
     ],
     "canonicalPath": "/blog/chrome-extensions-for-citation-and-bibliography-management",
-    "updated_at": "2026-08-21T00:00:00.000Z"
-  },
-  {
-    "id": "3d68f5db-1ef0-4ad2-9f70-4c7bfbe7626d",
-    "title": "AI Tab Manager Chrome Extension: An Evidence-Based Audit Guide",
-    "slug": "ai-tab-manager-chrome-extension-a-verification-first-buyers-guide",
-    "description": "Evaluate an AI Tab Manager Chrome Extension with MV3, network, storage, privacy, and performance checks before you install or deploy it.",
-    "meta_description": "Evaluate an AI Tab Manager Chrome Extension with MV3, network, storage, privacy, and performance checks before you install or deploy it.",
-    "excerpt": "A technical guide to evaluating AI tab managers with MV3 checks, network capture, storage inspection, performance tests, and privacy criteria.",
-    "published_at": "2026-08-21T00:00:00.000Z",
-    "category": "Chrome Extensions",
-    "author": "Miccart Phen",
-    "image_url": "/og-image.png",
-    "featured_image": "/og-image.png",
-    "reading_time": 12,
-    "read_time": 12,
-    "views": 0,
-    "tags": [
-      "AI tools",
-      "tab management",
-      "Chrome security"
-    ],
-    "keywords": [
-      "AI Tab Manager Chrome Extension",
-      "chrome tab memory saver AI",
-      "best chrome extension organize tabs automatically",
-      "auto tab suspend AI"
-    ],
-    "canonicalPath": "/blog/ai-tab-manager-chrome-extension-a-verification-first-buyers-guide",
     "updated_at": "2026-08-21T00:00:00.000Z"
   },
   {
@@ -1166,26 +1112,6 @@
     "updated_at": "2026-07-18"
   },
   {
-    "id": "ai-product-description-writer-chrome-extension",
-    "title": "AI Product Description Writer Chrome Extension: The Complete 2026 Guide to Selling Faster on Amazon, Shopify & Etsy",
-    "slug": "ai-product-description-writer-chrome-extension",
-    "description": "AI Product Description Writer Chrome Extension: The Complete 2026 Guide to Selling Faster on Amazon, Shopify & Etsy",
-    "meta_description": "AI Product Description Writer Chrome Extension: The Complete 2026 Guide to Selling Faster on Amazon, Shopify & Etsy",
-    "excerpt": "AI Product Description Writer Chrome Extension: The Complete 2026 Guide to Selling Faster on Amazon, Shopify & Etsy",
-    "published_at": "2026-07-17",
-    "category": "Chrome Extensions",
-    "author": "Admin",
-    "image_url": "/content/images/deepseek-markdown-20260603-8e6355.jpg",
-    "featured_image": "/content/images/deepseek-markdown-20260603-8e6355.jpg",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [],
-    "canonicalPath": "/blog/ai-product-description-writer-chrome-extension",
-    "updated_at": "2026-07-17"
-  },
-  {
     "id": "chatgpt-bookmark-manager-chrome-extension",
     "title": "ChatGPT Bookmark Manager Chrome Extension: The Complete 2026 Guide to Organizing Your AI Conversations",
     "slug": "chatgpt-bookmark-manager-chrome-extension",
@@ -1286,26 +1212,6 @@
     "updated_at": "2026-07-12"
   },
   {
-    "id": "ai-social-media-captions-chrome-extension",
-    "title": "AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds",
-    "slug": "ai-social-media-captions-chrome-extension",
-    "description": "AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds",
-    "meta_description": "AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds",
-    "excerpt": "AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds",
-    "published_at": "2026-07-11",
-    "category": "Chrome Extensions",
-    "author": "Admin",
-    "image_url": "/content/images/deepseek-markdown-20260603-58aa93.jpg",
-    "featured_image": "/content/images/deepseek-markdown-20260603-58aa93.jpg",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [],
-    "canonicalPath": "/blog/ai-social-media-captions-chrome-extension",
-    "updated_at": "2026-07-11"
-  },
-  {
     "id": "free-ai-content-summarizer-extension-2026",
     "title": "⚡ Free AI Content Summarizer Chrome Extensions (2026) — Read Less, Know More",
     "slug": "free-ai-content-summarizer-extension-2026",
@@ -1324,37 +1230,6 @@
     "keywords": [],
     "canonicalPath": "/blog/free-ai-content-summarizer-extension-2026",
     "updated_at": "2026-07-10"
-  },
-  {
-    "id": "ai-cover-letter-writer-chrome-extension",
-    "title": "AI Cover Letter Chrome Extensions: 2026 Guide",
-    "slug": "ai-cover-letter-writer-chrome-extension",
-    "description": "Compare AI cover letter tools for Chrome in 2026: job-page integration, resume inputs, templates, privacy, output formats, and practical setup tips.",
-    "meta_description": "Compare AI cover letter tools for Chrome in 2026: job-page integration, resume inputs, templates, privacy, output formats, and practical setup tips.",
-    "excerpt": "Compare AI cover letter tools for Chrome in 2026: job-page integration, resume inputs, templates, privacy, output formats, and practical setup tips.",
-    "published_at": "2026-07-09",
-    "category": "Chrome Extensions",
-    "author": "James Mitchell",
-    "image_url": "/content/images/deepseek-markdown-20260603-57250b.jpg",
-    "featured_image": "/content/images/deepseek-markdown-20260603-57250b.jpg",
-    "reading_time": 9,
-    "read_time": 9,
-    "views": 0,
-    "tags": [
-      "AI tools",
-      "job search",
-      "cover letters",
-      "Chrome extensions"
-    ],
-    "keywords": [
-      "AI cover letter Chrome extension",
-      "cover letter generator Chrome",
-      "best AI cover letter tools",
-      "ATS cover letter",
-      "job application Chrome extension"
-    ],
-    "canonicalPath": "/blog/ai-cover-letter-writer-chrome-extension",
-    "updated_at": "2026-08-20"
   },
   {
     "id": "best-ai-email-assistant-chrome-extensions",
@@ -1415,26 +1290,6 @@
     "keywords": [],
     "canonicalPath": "/blog/chatgpt-search-history-extension-2026",
     "updated_at": "2026-07-06"
-  },
-  {
-    "id": "ai-translator-chrome-extension-free",
-    "title": "AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking Language Barriers",
-    "slug": "ai-translator-chrome-extension-free",
-    "description": "AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking Language Barriers",
-    "meta_description": "AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking Language Barriers",
-    "excerpt": "AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking Language Barriers",
-    "published_at": "2026-07-05",
-    "category": "Chrome Extensions",
-    "author": "Admin",
-    "image_url": "/content/images/deepseek-markdown-20260603-266737.jpg",
-    "featured_image": "/content/images/deepseek-markdown-20260603-266737.jpg",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [],
-    "canonicalPath": "/blog/ai-translator-chrome-extension-free",
-    "updated_at": "2026-07-05"
   },
   {
     "id": "article9-roboform-review",
@@ -5223,50 +5078,6 @@
     "updated_at": "2026-05-05T06:15:00.508763+00:00"
   },
   {
-    "id": "25cdc621-8829-41ec-9d76-662210e28d2c",
-    "title": "Unlocking Productivity with Extension Auto Refresh Plus: A Game-Changer for Efficient Browsing",
-    "slug": "a-game-changer-for-efficient-browsing",
-    "description": "Are you tired of manually refreshing web pages to stay updated with the latest information?",
-    "meta_description": "Are you tired of manually refreshing web pages to stay updated with the latest information?",
-    "excerpt": "Are you tired of manually refreshing web pages to stay updated with the latest information?",
-    "published_at": "2026-05-05T02:15:00.247+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/extension-auto-refresh-plus-mkzmtg4rbel/featured.webp",
-    "featured_image": "/content/images/extension-auto-refresh-plus-mkzmtg4rbel/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "extension auto refresh plus"
-    ],
-    "canonicalPath": "/blog/a-game-changer-for-efficient-browsing",
-    "updated_at": "2026-05-05T02:15:00.413371+00:00"
-  },
-  {
-    "id": "0fb8e6ed-de92-481a-a360-559010a24aff",
-    "title": "A Closer Look at Avast Passwords for Chrome",
-    "slug": "a-closer-look-at-avast-passwords-for-chrome",
-    "description": "A look at Avast's password manager extension for Chrome: how it stores and autofills logins, and what its security features actually cover.",
-    "meta_description": "A look at Avast's password manager extension for Chrome: how it stores and autofills logins, and what its security features actually cover.",
-    "excerpt": "Are you tired of using weak passwords and struggling to remember them?",
-    "published_at": "2026-05-04T22:15:01.576+00:00",
-    "category": "Redirect & Navigation",
-    "author": "James Mitchell",
-    "image_url": "/content/images/extension-avast-password-mkzmtgklzkx/featured.webp",
-    "featured_image": "/content/images/extension-avast-password-mkzmtgklzkx/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "extension avast password"
-    ],
-    "canonicalPath": "/blog/a-closer-look-at-avast-passwords-for-chrome",
-    "updated_at": "2026-05-04T22:15:01.671698+00:00"
-  },
-  {
     "id": "0ccd5976-7cfc-4087-b77e-af6cd6a30b7d",
     "title": "Using Extensions on Brave Mobile",
     "slug": "unlocking-the-power-of-extension-brave-mobile",
@@ -5879,28 +5690,6 @@
     "updated_at": "2026-04-30T06:15:00.617719+00:00"
   },
   {
-    "id": "8904f0f9-92e8-492d-8f3b-8789de2e3480",
-    "title": "Unlock Endless Browsing with Autopager Chrome: A Game-Changer for Productivity",
-    "slug": "a-game-changer-for-productivity",
-    "description": "A look at Autopager for Chrome, an extension that auto-loads the next page of results so you stop clicking through pagination manually.",
-    "meta_description": "A look at Autopager for Chrome, an extension that auto-loads the next page of results so you stop clicking through pagination manually.",
-    "excerpt": "Are you tired of clicking through multiple pages to find the information you need?",
-    "published_at": "2026-04-30T02:15:00.554+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/unlock-endless-browsing-with-autopager-chrome-a-game-changer-for-productivity-ml5gz1lmsnz/featured.webp",
-    "featured_image": "/content/images/unlock-endless-browsing-with-autopager-chrome-a-game-changer-for-productivity-ml5gz1lmsnz/featured.webp",
-    "reading_time": 4,
-    "read_time": 4,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "autopager chrome"
-    ],
-    "canonicalPath": "/blog/a-game-changer-for-productivity",
-    "updated_at": "2026-04-30T02:15:00.733824+00:00"
-  },
-  {
     "id": "23cd3add-e398-405a-8f4a-5ab7962303ea",
     "title": "Unlock Online Privacy: The Power of Avast Antitrack Extension Chrome",
     "slug": "unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome",
@@ -6216,28 +6005,6 @@
     ],
     "canonicalPath": "/blog/best-website-screenshot-extension-vs-standalone-app-comparison",
     "updated_at": "2026-04-27T14:15:00.672412+00:00"
-  },
-  {
-    "id": "b75a9435-2d12-4557-8cb2-252cb7d9f532",
-    "title": "A Chrome Screenshot Extension Worth Installing",
-    "slug": "a-chrome-screenshot-extension-worth-installing",
-    "description": "Are you tired of using cumbersome screenshot tools that slow down your workflow? Look no further!",
-    "meta_description": "Are you tired of using cumbersome screenshot tools that slow down your workflow? Look no further!",
-    "excerpt": "Are you tired of using cumbersome screenshot tools that slow down your workflow? Look no further!",
-    "published_at": "2026-04-27T10:15:00.437+00:00",
-    "category": "Screenshots & Screen Capture",
-    "author": "James Mitchell",
-    "image_url": "/content/images/discover-the-best-screenshot-chrome-extension-for-enhanced-productivity-mm3umhjlv68/featured.webp",
-    "featured_image": "/content/images/discover-the-best-screenshot-chrome-extension-for-enhanced-productivity-mm3umhjlv68/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "best screenshot chrome extension"
-    ],
-    "canonicalPath": "/blog/a-chrome-screenshot-extension-worth-installing",
-    "updated_at": "2026-04-27T10:15:00.487959+00:00"
   },
   {
     "id": "82790656-1ad6-470f-bd68-d909c262f246",
@@ -7105,28 +6872,6 @@
     "updated_at": "2026-04-23T12:25:48.566859+00:00"
   },
   {
-    "id": "8778680c-8b00-490c-a00d-a95209670628",
-    "title": "Boost Your Twitter Productivity with the Best Chrome Extension for Twitter Productivity",
-    "slug": "a-chrome-extension-for-power-twitter-users",
-    "description": "Are you tired of feeling overwhelmed by the sheer amount of information on Twitter? Do you struggle to stay focused and productive while using the platform?",
-    "meta_description": "Are you tired of feeling overwhelmed by the sheer amount of information on Twitter? Do you struggle to stay focused and productive while using the platform?",
-    "excerpt": "Are you tired of feeling overwhelmed by the sheer amount of information on Twitter? Do you struggle to stay focused and productive while using the platform?",
-    "published_at": "2026-04-20T18:15:00.516+00:00",
-    "category": "Social Media Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/boost-your-twitter-productivity-with-the-best-chrome-extension-for-twitter-productivity-mmdsjeh52mg/featured.webp",
-    "featured_image": "/content/images/boost-your-twitter-productivity-with-the-best-chrome-extension-for-twitter-productivity-mmdsjeh52mg/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "chrome extension for twitter productivity"
-    ],
-    "canonicalPath": "/blog/a-chrome-extension-for-power-twitter-users",
-    "updated_at": "2026-04-23T12:25:48.340246+00:00"
-  },
-  {
     "id": "f6e34bf5-8a9c-4e45-9048-c8a2906e6566",
     "title": "Downloading Instagram Content from Chrome",
     "slug": "downloading-instagram-content-from-chrome",
@@ -7281,28 +7026,6 @@
     "updated_at": "2026-04-23T12:25:43.425884+00:00"
   },
   {
-    "id": "ca68b867-7313-4b18-942f-fdb2da512763",
-    "title": "Unlocking Productivity: The Best Chrome Extension for Web Developers to Boost Efficiency",
-    "slug": "a-chrome-extension-built-for-web-developers",
-    "description": "As a web developer, you're constantly looking for ways to streamline your workflow, improve productivity, and stay ahead of the curve.",
-    "meta_description": "As a web developer, you're constantly looking for ways to streamline your workflow, improve productivity, and stay ahead of the curve.",
-    "excerpt": "As a web developer, you're constantly looking for ways to streamline your workflow, improve productivity, and stay ahead of the curve.",
-    "published_at": "2026-04-19T10:15:00.337+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/unlocking-productivity-the-best-chrome-extension-for-web-developers-to-boost-efficiency-mmdt109l96v/featured.webp",
-    "featured_image": "/content/images/unlocking-productivity-the-best-chrome-extension-for-web-developers-to-boost-efficiency-mmdt109l96v/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "best chrome extension for web developers"
-    ],
-    "canonicalPath": "/blog/a-chrome-extension-built-for-web-developers",
-    "updated_at": "2026-04-23T12:25:42.795655+00:00"
-  },
-  {
     "id": "2239c4e9-9897-4a3f-9ee0-32084bf37a56",
     "title": "Better Inspect Element Tools for Chrome",
     "slug": "unlocking-the-power-of-inspect-element-chrome-extension-tools",
@@ -7345,28 +7068,6 @@
     ],
     "canonicalPath": "/blog/analyze-any-website-right-from-chrome",
     "updated_at": "2026-04-23T12:25:41.377152+00:00"
-  },
-  {
-    "id": "9aa98173-160f-45e2-b126-6428f677e48d",
-    "title": "A Chrome Extension Marketers Will Actually Use",
-    "slug": "a-chrome-extension-marketers-will-actually-use",
-    "description": "As a marketing professional, you're constantly looking for ways to streamline your workflow, boost productivity, and stay ahead of the competition.",
-    "meta_description": "As a marketing professional, you're constantly looking for ways to streamline your workflow, boost productivity, and stay ahead of the competition.",
-    "excerpt": "As a marketing professional, you're constantly looking for ways to streamline your workflow, boost productivity, and stay ahead of the competition.",
-    "published_at": "2026-04-18T22:15:00.42+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/unlock-the-power-of-chrome-discover-the-best-chrome-extension-for-marketing-professionals-mmdt10wp8cu/featured.webp",
-    "featured_image": "/content/images/unlock-the-power-of-chrome-discover-the-best-chrome-extension-for-marketing-professionals-mmdt10wp8cu/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "best chrome extension for marketing"
-    ],
-    "canonicalPath": "/blog/a-chrome-extension-marketers-will-actually-use",
-    "updated_at": "2026-04-23T12:25:41.145823+00:00"
   },
   {
     "id": "f5088066-ec37-49ec-8e8c-04b31694dc25",
@@ -7455,28 +7156,6 @@
     ],
     "canonicalPath": "/blog/mastering-the-art-of-file-management-download-manager",
     "updated_at": "2026-04-18T18:40:15.394857+00:00"
-  },
-  {
-    "id": "75703882-68bd-4dcd-b440-ce9d30b3b491",
-    "title": "A Download Manager Extension Worth Installing",
-    "slug": "a-download-manager-extension-worth-installing",
-    "description": "When it comes to downloading files from the internet, a good download manager can make all the difference.",
-    "meta_description": "When it comes to downloading files from the internet, a good download manager can make all the difference.",
-    "excerpt": "When it comes to downloading files from the internet, a good download manager can make all the difference.",
-    "published_at": "2026-04-18T02:15:01.556+00:00",
-    "category": "Appearance & Themes",
-    "author": "James Mitchell",
-    "image_url": "/content/images/discover-the-best-download-manager-chrome-extension-for-a-seamless-browsing-experience-mmdupfh67n8/featured.webp",
-    "featured_image": "/content/images/discover-the-best-download-manager-chrome-extension-for-a-seamless-browsing-experience-mmdupfh67n8/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "best download manager chrome extension"
-    ],
-    "canonicalPath": "/blog/a-download-manager-extension-worth-installing",
-    "updated_at": "2026-04-23T12:25:38.379184+00:00"
   },
   {
     "id": "16cd7a1d-159b-4067-a77c-152d845657cf",
@@ -7633,28 +7312,6 @@
     "updated_at": "2026-04-23T12:25:35.163612+00:00"
   },
   {
-    "id": "83a55574-0b95-41a7-9af9-70a67c503637",
-    "title": "A Chrome Extension for Saving Media Files",
-    "slug": "a-chrome-extension-for-saving-media-files",
-    "description": "Are you tired of struggling to download your favorite media files from the internet? Look no further!",
-    "meta_description": "Are you tired of struggling to download your favorite media files from the internet? Look no further!",
-    "excerpt": "Are you tired of struggling to download your favorite media files from the internet? Look no further!",
-    "published_at": "2026-04-16T18:15:00.547+00:00",
-    "category": "Media & Downloads",
-    "author": "James Mitchell",
-    "image_url": "/content/images/discover-the-best-chrome-extension-for-media-download-a-comprehensive-guide-mmdupgopifb/featured.webp",
-    "featured_image": "/content/images/discover-the-best-chrome-extension-for-media-download-a-comprehensive-guide-mmdupgopifb/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "best chrome extension for media download"
-    ],
-    "canonicalPath": "/blog/a-chrome-extension-for-saving-media-files",
-    "updated_at": "2026-04-23T12:25:34.635262+00:00"
-  },
-  {
     "id": "c549e364-5e69-40ce-8f0e-336ee7780593",
     "title": "Supercharge Your Downloads: The Best Chrome Extension for Downloading Files Faster",
     "slug": "supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
@@ -7719,28 +7376,6 @@
     ],
     "canonicalPath": "/blog/the-best-youtube-extensions-for-chrome",
     "updated_at": "2026-04-23T12:25:32.180659+00:00"
-  },
-  {
-    "id": "bd59cea0-bb8c-4611-8c1c-83541778b7b9",
-    "title": "A Reliable YouTube Downloader for Chrome",
-    "slug": "a-reliable-youtube-downloader-for-chrome",
-    "description": "Are you tired of being limited by YouTube's streaming-only policy? Do you want to download your favorite videos and watch them offline? Look no further!",
-    "meta_description": "Are you tired of being limited by YouTube's streaming-only policy? Do you want to download your favorite videos and watch them offline? Look no further!",
-    "excerpt": "Are you tired of being limited by YouTube's streaming-only policy? Do you want to download your favorite videos and watch them offline? Look no further!",
-    "published_at": "2026-04-16T02:15:00.343+00:00",
-    "category": "Media & Downloads",
-    "author": "James Mitchell",
-    "image_url": "/content/images/unlock-the-power-of-video-downloading-the-best-chrome-extension-for-youtube-downloader-mmdz4da9s5b/featured.webp",
-    "featured_image": "/content/images/unlock-the-power-of-video-downloading-the-best-chrome-extension-for-youtube-downloader-mmdz4da9s5b/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "chrome extension for youtube downloader"
-    ],
-    "canonicalPath": "/blog/a-reliable-youtube-downloader-for-chrome",
-    "updated_at": "2026-04-23T12:25:31.378712+00:00"
   },
   {
     "id": "1f5ef62a-98af-4c90-bb55-3451f8b75866",
@@ -8083,28 +7718,6 @@
     "updated_at": "2026-04-23T12:25:26.249698+00:00"
   },
   {
-    "id": "8a37fee5-521f-4476-a69d-5ee89b4e61c4",
-    "title": "Enhance Your Online Security with the Best Chrome Extension to Protect Privacy",
-    "slug": "a-chrome-extension-built-for-your-privacy",
-    "description": "A practical breakdown of chrome extension to protect privacy: how it works, how to set it up, and where it falls short.",
-    "meta_description": "A practical breakdown of chrome extension to protect privacy: how it works, how to set it up, and where it falls short.",
-    "excerpt": "As we navigate the vast expanse of the internet, our personal data and online activities are constantly at risk of being compromised.",
-    "published_at": "2026-04-13T10:15:01.417+00:00",
-    "category": "Redirect & Navigation",
-    "author": "James Mitchell",
-    "image_url": "/content/images/enhance-your-online-security-with-the-best-chrome-extension-to-protect-privacy-mmdzl1g2wkc/featured.webp",
-    "featured_image": "/content/images/enhance-your-online-security-with-the-best-chrome-extension-to-protect-privacy-mmdzl1g2wkc/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "chrome extension to protect privacy"
-    ],
-    "canonicalPath": "/blog/a-chrome-extension-built-for-your-privacy",
-    "updated_at": "2026-04-23T12:25:25.914718+00:00"
-  },
-  {
     "id": "c3404f92-626e-4894-addc-236d23a130bb",
     "title": "Protecting Your Online Privacy: The Best Chrome Extension to Detect Trackers",
     "slug": "protecting-your-online-privacy",
@@ -8193,50 +7806,6 @@
     "updated_at": "2026-04-23T12:25:24.986011+00:00"
   },
   {
-    "id": "eefbe79d-f7c2-4dc5-9e47-8fb2844886bb",
-    "title": "An Ad-Blocking Extension That Actually Works",
-    "slug": "an-ad-blocking-extension-that-actually-works",
-    "description": "A look at what separates an ad blocker that genuinely works from the many that don't, and how to pick one that protects without slowing you down.",
-    "meta_description": "A look at what separates an ad blocker that genuinely works from the many that don't, and how to pick one that protects without slowing you down.",
-    "excerpt": "Are you tired of annoying ads ruining your online experience? Look no further!",
-    "published_at": "2026-04-12T14:15:00.388+00:00",
-    "category": "Redirect & Navigation",
-    "author": "James Mitchell",
-    "image_url": "/content/images/discover-the-best-ad-blocking-extension-for-chrome-boost-your-browsing-experience-mme0ixsa1fx/featured.webp",
-    "featured_image": "/content/images/discover-the-best-ad-blocking-extension-for-chrome-boost-your-browsing-experience-mme0ixsa1fx/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "best ad blocking extension for chrome"
-    ],
-    "canonicalPath": "/blog/an-ad-blocking-extension-that-actually-works",
-    "updated_at": "2026-04-23T12:25:24.686657+00:00"
-  },
-  {
-    "id": "494713ee-d61e-480f-815c-fb3a82c3f379",
-    "title": "Discover the Power of a Lightweight Ad Blocker Chrome: Boost Your Browsing Experience",
-    "slug": "a-lightweight-ad-blocker-for-chrome",
-    "description": "Are you tired of annoying ads and popups disrupting your online experience? A lightweight ad blocker Chrome extension can be your solution.",
-    "meta_description": "Are you tired of annoying ads and popups disrupting your online experience? A lightweight ad blocker Chrome extension can be your solution.",
-    "excerpt": "Are you tired of annoying ads and popups disrupting your online experience? A lightweight ad blocker Chrome extension can be your solution.",
-    "published_at": "2026-04-12T10:15:00.267+00:00",
-    "category": "Ad Blockers",
-    "author": "James Mitchell",
-    "image_url": "/content/images/discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience-mme0ixxxqdz/featured.webp",
-    "featured_image": "/content/images/discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience-mme0ixxxqdz/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "lightweight ad blocker chrome"
-    ],
-    "canonicalPath": "/blog/a-lightweight-ad-blocker-for-chrome",
-    "updated_at": "2026-04-18T18:40:08.179303+00:00"
-  },
-  {
     "id": "7e36b423-747c-4d58-881b-2703bd03d35b",
     "title": "Effortlessly Remove Annoying Ads with the Best Chrome Extension to Remove Ads",
     "slug": "the-chrome-extension-that-removes-ads-for-good",
@@ -8257,28 +7826,6 @@
     ],
     "canonicalPath": "/blog/the-chrome-extension-that-removes-ads-for-good",
     "updated_at": "2026-04-23T12:25:23.646023+00:00"
-  },
-  {
-    "id": "6aa8fe70-52f3-44aa-8428-b6472a4f386a",
-    "title": "Unlock a Seamless YouTube Experience: The Best Ad Blocker that Works on YouTube Chrome",
-    "slug": "an-ad-blocker-that-actually-works-on-youtube",
-    "description": "Everything worth knowing about a seamless youtube experience, including installation steps and how it compares to alternatives.",
-    "meta_description": "Everything worth knowing about a seamless youtube experience, including installation steps and how it compares to alternatives.",
-    "excerpt": "Are you tired of annoying ads interrupting your YouTube videos? Do you want to enhance your browsing experience with a reliable ad blocker that works on…",
-    "published_at": "2026-04-11T22:15:00.71+00:00",
-    "category": "Performance & Memory",
-    "author": "James Mitchell",
-    "image_url": "/content/images/unlock-a-seamless-youtube-experience-the-best-ad-blocker-that-works-on-youtube-chrome-mme0iyicafq/featured.webp",
-    "featured_image": "/content/images/unlock-a-seamless-youtube-experience-the-best-ad-blocker-that-works-on-youtube-chrome-mme0iyicafq/featured.webp",
-    "reading_time": 4,
-    "read_time": 4,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "ad blocker that works on youtube chrome"
-    ],
-    "canonicalPath": "/blog/an-ad-blocker-that-actually-works-on-youtube",
-    "updated_at": "2026-04-23T12:25:23.288371+00:00"
   },
   {
     "id": "e77ec0e6-3b9a-4837-8ba0-fe443b817662",
@@ -8890,28 +8437,6 @@
     "updated_at": "2026-04-18T18:39:44.558621+00:00"
   },
   {
-    "id": "17a67b02-b714-47d9-8798-61e1060d0b0c",
-    "title": "A Free Color Picker Extension for Chrome",
-    "slug": "a-free-color-picker-extension-for-chrome",
-    "description": "Are you a web designer, developer, or digital artist looking for a reliable and efficient way to pick colors for your projects?",
-    "meta_description": "Are you a web designer, developer, or digital artist looking for a reliable and efficient way to pick colors for your projects?",
-    "excerpt": "Are you a web designer, developer, or digital artist looking for a reliable and efficient way to pick colors for your projects?",
-    "published_at": "2026-04-07T10:15:00.386+00:00",
-    "category": "Chrome Extensions",
-    "author": "James Mitchell",
-    "image_url": "/content/images/unlock-the-power-of-color-with-the-best-color-picker-chrome-extension-free-mmtm0ezx77j/featured.webp",
-    "featured_image": "/content/images/unlock-the-power-of-color-with-the-best-color-picker-chrome-extension-free-mmtm0ezx77j/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "color picker chrome extension free"
-    ],
-    "canonicalPath": "/blog/a-free-color-picker-extension-for-chrome",
-    "updated_at": "2026-04-18T18:39:44.371111+00:00"
-  },
-  {
     "id": "00ed8c79-4450-483c-97e6-1c8551534fe9",
     "title": "React DevTools on Chrome Mobile: Does It Work?",
     "slug": "unlocking-the-power-of-react-devtools-for-chrome-mobile",
@@ -9088,28 +8613,6 @@
     "updated_at": "2026-04-23T12:20:51.801139+00:00"
   },
   {
-    "id": "47409983-dc8b-488e-ba57-d68a270e8f3e",
-    "title": "Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency",
-    "slug": "a-chrome-extension-built-for-programmers",
-    "description": "As a programmer, you're likely no stranger to the importance of having the right tools at your disposal.",
-    "meta_description": "As a programmer, you're likely no stranger to the importance of having the right tools at your disposal.",
-    "excerpt": "As a programmer, you're likely no stranger to the importance of having the right tools at your disposal.",
-    "published_at": "2026-04-05T22:15:00.404+00:00",
-    "category": "Performance & Memory",
-    "author": "James Mitchell",
-    "image_url": "/content/images/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm/featured.webp",
-    "featured_image": "/content/images/unlocking-productivity-the-best-chrome-extension-for-programmers-to-boost-coding-efficiency-mmtm0gk4vfm/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "best chrome extension for programmers"
-    ],
-    "canonicalPath": "/blog/a-chrome-extension-built-for-programmers",
-    "updated_at": "2026-04-23T12:20:48.248772+00:00"
-  },
-  {
     "id": "f036eded-6d64-44cc-b327-18fae616f43b",
     "title": "A Web Scraper Extension for Chrome",
     "slug": "unlock-the-power-of-web-scraping-web-scraper-extension-for-chrome",
@@ -9240,28 +8743,6 @@
     ],
     "canonicalPath": "/blog/download-video-from-any-site-chrome-extension",
     "updated_at": "2026-04-23T12:20:45.534355+00:00"
-  },
-  {
-    "id": "1834a63d-46d7-490c-90e9-2434ae6b9aab",
-    "title": "An Image Downloader Extension for Chrome",
-    "slug": "an-image-downloader-extension-for-chrome",
-    "description": "A look at the best image downloader extensions for Chrome, built to save multiple images from a page at once instead of one by one.",
-    "meta_description": "A look at the best image downloader extensions for Chrome, built to save multiple images from a page at once instead of one by one.",
-    "excerpt": "Are you tired of manually saving images from websites, one by one? Look no further!",
-    "published_at": "2026-04-04T18:15:00.514+00:00",
-    "category": "Media & Downloads",
-    "author": "James Mitchell",
-    "image_url": "/content/images/discover-the-best-image-downloader-chrome-extension-for-effortless-image-saving-mmtvrb6wws4/featured.webp",
-    "featured_image": "/content/images/discover-the-best-image-downloader-chrome-extension-for-effortless-image-saving-mmtvrb6wws4/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "best image downloader chrome"
-    ],
-    "canonicalPath": "/blog/an-image-downloader-extension-for-chrome",
-    "updated_at": "2026-04-23T12:20:45.125925+00:00"
   },
   {
     "id": "20a72629-1544-4f64-8b12-5ae1d41c8f91",
@@ -10396,28 +9877,6 @@
     "updated_at": "2026-04-18T18:40:20.946298+00:00"
   },
   {
-    "id": "02e3fe6a-e6f8-400f-9e65-3db69c78b77d",
-    "title": "A Tab Suspender Extension That Frees Up RAM",
-    "slug": "a-tab-suspender-extension-that-frees-up-ram",
-    "description": "A hands-on look at a tab suspender extension that frees up ram, covering setup, real features, and what to expect before installing it.",
-    "meta_description": "A hands-on look at a tab suspender extension that frees up ram, covering setup, real features, and what to expect before installing it.",
-    "excerpt": "Are you tired of dealing with slow browser performance due to an excessive number of open tabs? Look no further!",
-    "published_at": "2026-03-24T08:00:00.495+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/discover-the-best-extension-to-suspend-tabs-and-boost-your-browsers-performance-mmtizxlm6h1/featured.webp",
-    "featured_image": "/content/images/discover-the-best-extension-to-suspend-tabs-and-boost-your-browsers-performance-mmtizxlm6h1/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 1,
-    "tags": [],
-    "keywords": [
-      "best extension to suspend tabs"
-    ],
-    "canonicalPath": "/blog/a-tab-suspender-extension-that-frees-up-ram",
-    "updated_at": "2026-04-23T12:25:09.512021+00:00"
-  },
-  {
     "id": "6d7ad6af-e985-4ddb-8955-a99381a5719b",
     "title": "How to Add Extensions to Chrome Mobile: A Step-by-Step Guide",
     "slug": "how-to-add-extensions-to-chrome-mobile",
@@ -10438,28 +9897,6 @@
     ],
     "canonicalPath": "/blog/how-to-add-extensions-to-chrome-mobile",
     "updated_at": "2026-04-23T12:25:16.072363+00:00"
-  },
-  {
-    "id": "fe5ab5e2-07b0-4ad4-9de6-ae36214b4c97",
-    "title": "Is Ghostery Safe to Use? A Professional 2026 Review",
-    "slug": "is-ghostery-safe-to-use-a-professional-2026-review",
-    "description": "A hands-on look at ghostery safe to use? a professional 2026 review, covering setup, real features, and what to expect before installing it.",
-    "meta_description": "A hands-on look at ghostery safe to use? a professional 2026 review, covering setup, real features, and what to expect before installing it.",
-    "excerpt": "As we navigate the vast expanse of the internet, our online security and privacy have become increasingly important.",
-    "published_at": "2026-03-24T04:00:01.061+00:00",
-    "category": "Security & Privacy",
-    "author": "James Mitchell",
-    "image_url": "/content/images/is-ghostery-safe-to-use-a-professional-2026-review-mmb7srbz193/featured.webp",
-    "featured_image": "/content/images/is-ghostery-safe-to-use-a-professional-2026-review-mmb7srbz193/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 1,
-    "tags": [],
-    "keywords": [
-      "Is Ghostery safe to use? A professional 2026 review"
-    ],
-    "canonicalPath": "/blog/is-ghostery-safe-to-use-a-professional-2026-review",
-    "updated_at": "2026-04-23T12:25:55.158277+00:00"
   },
   {
     "id": "monitor-chrome-ram-usage-guide",
@@ -11315,28 +10752,6 @@
     ],
     "canonicalPath": "/blog/lemur-browser-vs-kiwi-browser",
     "updated_at": "2026-04-23T12:25:21.03185+00:00"
-  },
-  {
-    "id": "342dea18-6fa3-4c9a-8a21-18d38cb00e17",
-    "title": "Top 5 Privacy and Security Extensions for Chrome Mobile: Protect Your Online Identity",
-    "slug": "5-privacy-extensions-for-chrome-mobile",
-    "description": "With the increasing number of online threats and data breaches, it's essential to prioritize your online privacy and security, especially when using Chrome…",
-    "meta_description": "With the increasing number of online threats and data breaches, it's essential to prioritize your online privacy and security, especially when using Chrome…",
-    "excerpt": "With the increasing number of online threats and data breaches, it's essential to prioritize your online privacy and security, especially when using Chrome…",
-    "published_at": "2026-03-18T05:00:01.372+00:00",
-    "category": "Security & Privacy",
-    "author": "James Mitchell",
-    "image_url": "/content/images/top-5-privacy-and-security-extensions-for-chrome-mobile-protect-your-online-identity-mmb7lsz3swu/featured.webp",
-    "featured_image": "/content/images/top-5-privacy-and-security-extensions-for-chrome-mobile-protect-your-online-identity-mmb7lsz3swu/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 2,
-    "tags": [],
-    "keywords": [
-      "Top 5 privacy and security extensions for Chrome Mobile"
-    ],
-    "canonicalPath": "/blog/5-privacy-extensions-for-chrome-mobile",
-    "updated_at": "2026-04-23T12:25:56.66935+00:00"
   },
   {
     "id": "b914e67f-89b5-4fff-86b0-b9cc4641e282",
@@ -12342,28 +11757,6 @@
     "updated_at": "2026-04-23T12:29:05.605111+00:00"
   },
   {
-    "id": "5328a619-4fda-4b37-8bd4-2cbef4e8983d",
-    "title": "Is there an IDM extension for Chrome Android? A Comprehensive Guide to Download Management",
-    "slug": "is-there-an-idm-extension-for-chrome-android-to-download-management",
-    "description": "When it comes to managing downloads on Android devices, users often wonder is there an IDM extension for Chrome Android?",
-    "meta_description": "When it comes to managing downloads on Android devices, users often wonder is there an IDM extension for Chrome Android?",
-    "excerpt": "When it comes to managing downloads on Android devices, users often wonder is there an IDM extension for Chrome Android?",
-    "published_at": "2026-03-13T05:00:00.618+00:00",
-    "category": "Media & Downloads",
-    "author": "James Mitchell",
-    "image_url": "/content/images/is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management-mmb6y4ldz8f/featured.webp",
-    "featured_image": "/content/images/is-there-an-idm-extension-for-chrome-android-a-comprehensive-guide-to-download-management-mmb6y4ldz8f/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "Is there an IDM extension for Chrome Android?"
-    ],
-    "canonicalPath": "/blog/is-there-an-idm-extension-for-chrome-android-to-download-management",
-    "updated_at": "2026-03-16T14:42:49.378342+00:00"
-  },
-  {
     "id": "57674c28-05ef-4f3a-8b42-10d21d8919d1",
     "title": "Quickest Way to Screenshot a Specific Area on Chrome: A Step-by-Step Guide",
     "slug": "quickest-way-to-screenshot-a-specific-area-on-chrome-2",
@@ -12556,28 +11949,6 @@
     ],
     "canonicalPath": "/blog/how-to-capture-and-share-screenshots-instantly-blogging-web-design-bug-reporting-student-projects-7",
     "updated_at": "2026-04-23T12:28:43.141601+00:00"
-  },
-  {
-    "id": "716bb982-779c-47e9-82a8-76951891c7f7",
-    "title": "A Free Pop-Up Blocker Extension for Chrome",
-    "slug": "a-free-pop-up-blocker-extension-for-chrome",
-    "description": "Are you tired of annoying pop-ups and intrusive ads ruining your online experience? Look no further than a free pop up blocker Chrome extension.",
-    "meta_description": "Are you tired of annoying pop-ups and intrusive ads ruining your online experience? Look no further than a free pop up blocker Chrome extension.",
-    "excerpt": "Are you tired of annoying pop-ups and intrusive ads ruining your online experience? Look no further than a free pop up blocker Chrome extension.",
-    "published_at": "2026-03-11T09:00:10.449+00:00",
-    "category": "Redirect & Navigation",
-    "author": "James Mitchell",
-    "image_url": "/content/images/unlock-the-power-of-a-free-pop-up-blocker-chrome-extension-for-a-seamless-browsing-experience-mm3scnkaas3/featured.webp",
-    "featured_image": "/content/images/unlock-the-power-of-a-free-pop-up-blocker-chrome-extension-for-a-seamless-browsing-experience-mm3scnkaas3/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 3,
-    "tags": [],
-    "keywords": [
-      "free pop up blocker chrome"
-    ],
-    "canonicalPath": "/blog/a-free-pop-up-blocker-extension-for-chrome",
-    "updated_at": "2026-03-26T12:00:53.57667+00:00"
   },
   {
     "id": "d8b2fa06-ce27-4468-971e-a504e87c379c",
@@ -14376,28 +13747,6 @@
     "updated_at": "2026-04-23T12:27:40.529888+00:00"
   },
   {
-    "id": "e0f5812c-99e9-42a3-aa9a-1c478c1bfbe4",
-    "title": "Unlocking Efficiency: Auto Tab Suspender Extension Free Download for a Seamless Browsing Experience",
-    "slug": "a-free-auto-tab-suspender-extension-for-chrome",
-    "description": "A free auto tab suspender extension that automatically frees up memory from idle tabs, fixing the sluggish performance of an overloaded browser.",
-    "meta_description": "A free auto tab suspender extension that automatically frees up memory from idle tabs, fixing the sluggish performance of an overloaded browser.",
-    "excerpt": "Are you tired of dealing with sluggish browser performance due to numerous open tabs?",
-    "published_at": "2026-02-26T09:00:00.755+00:00",
-    "category": "Performance & Memory",
-    "author": "James Mitchell",
-    "image_url": "/content/images/unlocking-efficiency-auto-tab-suspender-extension-free-download-for-a-seamless-browsing-experience-mll9bskiotb/featured.webp",
-    "featured_image": "/content/images/unlocking-efficiency-auto-tab-suspender-extension-free-download-for-a-seamless-browsing-experience-mll9bskiotb/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "Auto tab suspender extension free download"
-    ],
-    "canonicalPath": "/blog/a-free-auto-tab-suspender-extension-for-chrome",
-    "updated_at": "2026-04-23T12:26:07.660037+00:00"
-  },
-  {
     "id": "7eb684ac-42fb-412d-896b-fa8fdf6736d6",
     "title": "Dark Mode for Twitter: The Ultimate Guide",
     "slug": "dark-mode-for-twitter-the-ultimate-guide-3",
@@ -15298,28 +14647,6 @@
     "updated_at": "2026-04-23T12:26:12.505013+00:00"
   },
   {
-    "id": "ed997344-9350-45c7-837f-32872c7a8736",
-    "title": "An Open-Source Alternative to Ghostery",
-    "slug": "an-open-source-alternative-to-ghostery",
-    "description": "Are you looking for an open source alternative to Ghostery extension that can provide you with a higher level of browser security and privacy?",
-    "meta_description": "Are you looking for an open source alternative to Ghostery extension that can provide you with a higher level of browser security and privacy?",
-    "excerpt": "Are you looking for an open source alternative to Ghostery extension that can provide you with a higher level of browser security and privacy?",
-    "published_at": "2026-02-20T09:00:07.188+00:00",
-    "category": "Redirect & Navigation",
-    "author": "James Mitchell",
-    "image_url": "/content/images/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz/featured.webp",
-    "featured_image": "/content/images/discover-the-best-open-source-alternative-to-ghostery-extension-for-enhanced-browser-security-mll9brv9ifz/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "Open source alternative to Ghostery extension"
-    ],
-    "canonicalPath": "/blog/an-open-source-alternative-to-ghostery",
-    "updated_at": "2026-04-23T12:26:09.609407+00:00"
-  },
-  {
     "id": "d3018829-fad0-448d-bd76-4ac3a47bb078",
     "title": "Screenshot Tool Chrome 2025",
     "slug": "screenshot-tool-chrome-2025-8",
@@ -15520,28 +14847,6 @@
     ],
     "canonicalPath": "/blog/finding-a-download-youtube-audio-chrome-extension-free",
     "updated_at": "2026-04-23T12:26:14.59468+00:00"
-  },
-  {
-    "id": "25a89b3d-1a0c-4453-ba57-1b6ab759867d",
-    "title": "A Fast Ad Blocker Without the Memory Leaks",
-    "slug": "a-fast-ad-blocker-without-the-memory-leaks",
-    "description": "A practical breakdown of a fast ad blocker without the memory leaks: how it works, how to set it up, and where it falls short.",
-    "meta_description": "A practical breakdown of a fast ad blocker without the memory leaks: how it works, how to set it up, and where it falls short.",
-    "excerpt": "Are you tired of dealing with slow browser performance and annoying ads?",
-    "published_at": "2026-02-17T09:00:00.279+00:00",
-    "category": "Redirect & Navigation",
-    "author": "James Mitchell",
-    "image_url": "/content/images/unlocking-the-power-of-a-fast-adblocker-extension-with-no-memory-leak-boosting-browser-performance-mll9brfnaxd/featured.webp",
-    "featured_image": "/content/images/unlocking-the-power-of-a-fast-adblocker-extension-with-no-memory-leak-boosting-browser-performance-mll9brfnaxd/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 2,
-    "tags": [],
-    "keywords": [
-      "Fast adblocker extension no memory leak"
-    ],
-    "canonicalPath": "/blog/a-fast-ad-blocker-without-the-memory-leaks",
-    "updated_at": "2026-04-23T12:26:10.012496+00:00"
   },
   {
     "id": "bd7f9dd7-c158-43c4-b765-37ad82899ca2",
@@ -15777,28 +15082,6 @@
     "updated_at": "2026-06-05T12:00:00.000000+00:00"
   },
   {
-    "id": "df7a61b4-389b-4721-92f8-ee2a4ed2d541",
-    "title": "A Chrome Extension for High-Quality MP3s",
-    "slug": "a-chrome-extension-for-high-quality-mp3s",
-    "description": "In the digital age, YouTube has evolved into the world’s largest repository of music, podcasts, and educational content.",
-    "meta_description": "In the digital age, YouTube has evolved into the world’s largest repository of music, podcasts, and educational content.",
-    "excerpt": "In the digital age, YouTube has evolved into the world’s largest repository of music, podcasts, and educational content.",
-    "published_at": "2026-02-15T09:00:00.459+00:00",
-    "category": "Media & Downloads",
-    "author": "James Mitchell",
-    "image_url": "/content/images/the-definitive-guide-to-chrome-extension-for-youtube-mp3-320kbps-enhancing-your-high-fidelity-audio--mliju6k2u1n/featured.webp",
-    "featured_image": "/content/images/the-definitive-guide-to-chrome-extension-for-youtube-mp3-320kbps-enhancing-your-high-fidelity-audio--mliju6k2u1n/featured.webp",
-    "reading_time": 9,
-    "read_time": 9,
-    "views": 1,
-    "tags": [],
-    "keywords": [
-      "Chrome extension for YouTube MP3 320kbps"
-    ],
-    "canonicalPath": "/blog/a-chrome-extension-for-high-quality-mp3s",
-    "updated_at": "2026-04-23T12:26:15.286031+00:00"
-  },
-  {
     "id": "best-chrome-extensions-for-privacy-2026",
     "title": "Best Chrome Extensions for Privacy 2026: Protect Your Online Identity",
     "slug": "best-chrome-extensions-for-privacy-2026",
@@ -15947,28 +15230,6 @@
     "updated_at": "2026-04-23T12:27:17.658537+00:00"
   },
   {
-    "id": "303ba81b-f4a3-4efc-84a9-2e4c20e77ca9",
-    "title": "A Fast, Safe YouTube Downloader for Chrome",
-    "slug": "a-fast-safe-youtube-downloader-for-chrome",
-    "description": "In the modern digital landscape, the demand for offline video consumption has reached an all-time high.",
-    "meta_description": "In the modern digital landscape, the demand for offline video consumption has reached an all-time high.",
-    "excerpt": "In the modern digital landscape, the demand for offline video consumption has reached an all-time high.",
-    "published_at": "2026-02-14T08:00:26.029+00:00",
-    "category": "Security & Privacy",
-    "author": "James Mitchell",
-    "image_url": "/content/images/the-ultimate-guide-to-finding-a-fast-youtube-downloader-chrome-plugin-efficiency-security-and-best-p-mliju62cbv5/featured.webp",
-    "featured_image": "/content/images/the-ultimate-guide-to-finding-a-fast-youtube-downloader-chrome-plugin-efficiency-security-and-best-p-mliju62cbv5/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 1,
-    "tags": [],
-    "keywords": [
-      "Fast YouTube downloader Chrome plugin"
-    ],
-    "canonicalPath": "/blog/a-fast-safe-youtube-downloader-for-chrome",
-    "updated_at": "2026-04-23T12:26:16.180966+00:00"
-  },
-  {
     "id": "30e3a44e-41f2-41c7-a6ad-e845bbe251a0",
     "title": "Lightweight Ad Blocker vs Ghostery: The Ultimate Comparison for a Seamless Browsing Experience",
     "slug": "lightweight-ad-blocker-vs-ghostery",
@@ -16033,28 +15294,6 @@
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs",
     "updated_at": "2026-04-23T12:27:16.546225+00:00"
-  },
-  {
-    "id": "f94027f2-2c18-4856-93e8-8c738a2813fe",
-    "title": "A Ghostery Alternative Worth Considering",
-    "slug": "a-ghostery-alternative-worth-considering",
-    "description": "Are you looking for the best Ghostery alternative for Chrome to enhance your browsing experience and protect your online privacy? Look no further.",
-    "meta_description": "Are you looking for the best Ghostery alternative for Chrome to enhance your browsing experience and protect your online privacy? Look no further.",
-    "excerpt": "Are you looking for the best Ghostery alternative for Chrome to enhance your browsing experience and protect your online privacy? Look no further.",
-    "published_at": "2026-02-13T19:05:00.246+00:00",
-    "category": "Appearance & Themes",
-    "author": "James Mitchell",
-    "image_url": "/content/images/discover-the-best-ghostery-alternative-for-chrome-enhance-your-browsing-experience-mll9bqi2g1z/featured.webp",
-    "featured_image": "/content/images/discover-the-best-ghostery-alternative-for-chrome-enhance-your-browsing-experience-mll9bqi2g1z/featured.webp",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "Best Ghostery alternative for Chrome"
-    ],
-    "canonicalPath": "/blog/a-ghostery-alternative-worth-considering",
-    "updated_at": "2026-04-23T12:26:11.224288+00:00"
   },
   {
     "id": "dbe501ad-5295-42c5-b26d-66618249e4d1",
