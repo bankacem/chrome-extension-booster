@@ -15,6 +15,7 @@ description: >-
 category: "Chrome Extensions"
 ---
 
+
 **Last Updated:** June 3, 2026 | **Reading Time:** 8 minutes
 
 ---
@@ -108,6 +109,9 @@ Full FIDO2-compliant passkey creation and storage:
 
 ## The Chrome Extension vs. Native App
 
+![Article7 Nordpass Review Overview](/content/images/article7-nordpass-review/article7-nordpass-review-overview.webp "Article7 Nordpass Review Overview")
+
+
 NordPass's Chrome extension provides access to almost all features, including secure notes. However, some advanced features (like detailed breach reports) are better experienced in the native desktop or mobile app.
 
 **Cross-platform sync** is automatic and seamless. Changes propagate instantly across all devices.
@@ -150,6 +154,9 @@ Unlike 1Password's extensive developer ecosystem, NordPass offers minimal CLI or
 ---
 
 ## NordPass vs. Competitors
+
+![Article7 Nordpass Review Features](/content/images/article7-nordpass-review/article7-nordpass-review-features.webp "Article7 Nordpass Review Features")
+
 
 | Feature | NordPass | Bitwarden | 1Password | Proton Pass |
 |---------|----------|-----------|-----------|-------------|
