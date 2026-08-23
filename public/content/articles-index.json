@@ -1,5 +1,130 @@
 [
   {
+    "id": "77f85717-3324-4a51-ba1f-8a465bb80781",
+    "title": "Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely",
+    "slug": "chrome-extensions-incognito-guide",
+    "description": "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode. Understand privacy, permissions, and managed device policies.",
+    "meta_description": "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode. Understand privacy, permissions, and managed device policies.",
+    "excerpt": "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode while understanding privacy considerations and restrictions.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/content/images/chrome-extensions-incognito-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extensions-incognito-guide/featured.webp",
+    "reading_time": 5,
+    "read_time": 5,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "browser extensions"
+    ],
+    "keywords": [
+      "extension chrome incognito"
+    ],
+    "canonicalPath": "/blog/chrome-extensions-incognito-guide",
+    "updated_at": "2026-08-23T00:00:00.000Z"
+  },
+  {
+    "id": "aa338d09-c7d2-45ca-b7b3-065e78551970",
+    "title": "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits",
+    "slug": "chrome-logger-debugging-guide",
+    "description": "Learn how to set up Chrome Logger for server-side debugging, its header-based logging model, security considerations, and modern alternatives for development workflows.",
+    "meta_description": "Learn how to set up Chrome Logger for server-side debugging, its header-based logging model, security considerations, and modern alternatives for development workflows.",
+    "excerpt": "Understand Chrome Logger's server-side debugging capabilities, setup process, security concerns, and alternatives for safer development workflows.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/content/images/chrome-logger-debugging-guide/featured.webp",
+    "featured_image": "/content/images/chrome-logger-debugging-guide/featured.webp",
+    "reading_time": 6,
+    "read_time": 6,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "browser extensions"
+    ],
+    "keywords": [
+      "chrome logger"
+    ],
+    "canonicalPath": "/blog/chrome-logger-debugging-guide",
+    "updated_at": "2026-08-23T00:00:00.000Z"
+  },
+  {
+    "id": "63150bb5-4d8d-430a-8bf8-c3474e3f36f1",
+    "title": "IE Tab for Chrome: Run Legacy Sites, Configure URL Rules, and Manage the Risks",
+    "slug": "ie-tab-chrome-legacy-sites-guide",
+    "description": "Learn how to use IE Tab in Chrome for legacy applications, manage risks, configure Auto URL Filters, and explore enterprise constraints and alternatives.",
+    "meta_description": "Learn how to use IE Tab in Chrome for legacy applications, manage risks, configure Auto URL Filters, and explore enterprise constraints and alternatives.",
+    "excerpt": "A practical guide to using IE Tab in Chrome to access legacy applications. Understand configuration options, manage security challenges, and explore enterprise alternatives.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/content/images/ie-tab-chrome-legacy-sites-guide/featured.webp",
+    "featured_image": "/content/images/ie-tab-chrome-legacy-sites-guide/featured.webp",
+    "reading_time": 7,
+    "read_time": 7,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "browser extensions"
+    ],
+    "keywords": [
+      "ie tab chrome"
+    ],
+    "canonicalPath": "/blog/ie-tab-chrome-legacy-sites-guide",
+    "updated_at": "2026-08-23T00:00:00.000Z"
+  },
+  {
+    "id": "8258d0e7-5600-4bcd-a275-f8c29d8dbd83",
+    "title": "Java Plugins in Chrome: What Still Works, What Does Not, and Safer Alternatives",
+    "slug": "java-plugins-chrome-compatibility-guide",
+    "description": "Learn whether Java plugins are still supported in Chrome and discover safe alternatives for running Java-based applications. Comprehensive and up-to-date guidance.",
+    "meta_description": "Learn whether Java plugins are still supported in Chrome and discover safe alternatives for running Java-based applications. Comprehensive and up-to-date guidance.",
+    "excerpt": "Are Java applets still supported in Chrome? Get a clear answer, understand the current compatibility landscape, and explore safer, supported alternatives in this detailed guide.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/content/images/java-plugins-chrome-compatibility-guide/featured.webp",
+    "featured_image": "/content/images/java-plugins-chrome-compatibility-guide/featured.webp",
+    "reading_time": 6,
+    "read_time": 6,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "browser extensions"
+    ],
+    "keywords": [
+      "chrome plugins java"
+    ],
+    "canonicalPath": "/blog/java-plugins-chrome-compatibility-guide",
+    "updated_at": "2026-08-23T00:00:00.000Z"
+  },
+  {
+    "id": "e6c28b0f-a601-4443-ba01-12325ba8386d",
+    "title": "Zoom Chrome Extension: What It Does, How to Set It Up, and What It Is Not",
+    "slug": "zoom-chrome-extension-guide",
+    "description": "Learn how to use the official Zoom Chrome Extension to schedule and manage meetings via Google Calendar, and find out how it differs from Zoom's web app.",
+    "meta_description": "Learn how to use the official Zoom Chrome Extension to schedule and manage meetings via Google Calendar, and find out how it differs from Zoom's web app.",
+    "excerpt": "A clear guide to the Zoom Chrome Extension. Learn how to set up and use it efficiently and how it differs from Zoom's web app.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/content/images/zoom-chrome-extension-guide/featured.webp",
+    "featured_image": "/content/images/zoom-chrome-extension-guide/featured.webp",
+    "reading_time": 6,
+    "read_time": 6,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "browser extensions"
+    ],
+    "keywords": [
+      "extension zoom chrome"
+    ],
+    "canonicalPath": "/blog/zoom-chrome-extension-guide",
+    "updated_at": "2026-08-23T00:00:00.000Z"
+  },
+  {
     "id": "f0dba3b5-9d8f-4c3b-94ac-2c0e20260822",
     "title": "Chrome Omnibox Guide: Address-Bar Shortcuts and Extension Keywords",
     "slug": "chrome-omnibox-guide",

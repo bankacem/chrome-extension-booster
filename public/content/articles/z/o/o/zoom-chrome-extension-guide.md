@@ -2,7 +2,7 @@
 id: e6c28b0f-a601-4443-ba01-12325ba8386d
 title: "Zoom Chrome Extension: What It Does, How to Set It Up, and What It Is Not"
 slug: zoom-chrome-extension-guide
-status: draft
+status: published
 excerpt: "A clear guide to the Zoom Chrome Extension. Learn how to set up and use it efficiently and how it differs from Zoom's web app."
 meta_description: "Learn how to use the official Zoom Chrome Extension to schedule and manage meetings via Google Calendar, and find out how it differs from Zoom's web app."
 featured_image: /content/images/zoom-chrome-extension-guide/featured.webp
