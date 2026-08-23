@@ -14,6 +14,7 @@ category: "Chrome Extensions"
 ---
 
 
+
 ## Table of Contents
 
 1. [The Cram Session That Changed Everything](#the-cram-session-that-changed-everything)
@@ -61,6 +62,9 @@ If you're a student, you know this story. You've lived it. The difference betwee
 
 ## Why Traditional Studying Is Broken (And How AI Fixes It)
 
+![Article 12 Ai Study Guide Generator Overview](/content/images/article-12-ai-study-guide-generator/article-12-ai-study-guide-generator-overview.webp "Article 12 Ai Study Guide Generator Overview")
+
+
 ### The Brutal Statistics
 
 | Metric | Impact |
@@ -104,6 +108,9 @@ An AI study guide generator Chrome extension is a browser tool that transforms e
 ---
 
 ## The 5 Best AI Study Guide Generator Chrome Extensions (2026)
+
+![Article 12 Ai Study Guide Generator Features](/content/images/article-12-ai-study-guide-generator/article-12-ai-study-guide-generator-features.webp "Article 12 Ai Study Guide Generator Features")
+
 
 ### 1. ExtensionTo Study AI ⭐ Editor's Choice
 
@@ -253,6 +260,9 @@ Wisdolia is the specialist for video learners. Watch a YouTube lecture, and it a
 
 ## The Science of Effective Studying: What Research Actually Shows
 
+![Article 12 Ai Study Guide Generator Guide](/content/images/article-12-ai-study-guide-generator/article-12-ai-study-guide-generator-guide.webp "Article 12 Ai Study Guide Generator Guide")
+
+
 ### The Forgetting Curve (And How to Beat It)
 
 Hermann Ebbinghaus discovered that we forget 50% of new information within an hour, 70% within 24 hours, and 90% within a week—unless we review it.
@@ -340,6 +350,9 @@ Students consistently overestimate how much they know. After re-reading a chapte
 ---
 
 ## Step-by-Step: Using ExtensionTo for Study Guide Creation
+
+![Article 12 Ai Study Guide Generator Results](/content/images/article-12-ai-study-guide-generator/article-12-ai-study-guide-generator-results.webp "Article 12 Ai Study Guide Generator Results")
+
 
 ### Step 1: Install and Set Up (2 minutes)
 1. Add ExtensionTo from Chrome Web Store
