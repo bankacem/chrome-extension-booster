@@ -783,10 +783,5 @@
   "tampermonkey-chrome-userscripts-guide": "2026-08-22",
   "picture-in-picture-chrome-guide": "2026-08-22",
   "mailtrack-gmail-chrome-guide": "2026-08-22",
-  "chrome-omnibox-guide": "2026-08-22",
-  "chrome-extensions-incognito-guide": "2026-08-23",
-  "chrome-logger-debugging-guide": "2026-08-23",
-  "ie-tab-chrome-legacy-sites-guide": "2026-08-23",
-  "java-plugins-chrome-compatibility-guide": "2026-08-23",
-  "zoom-chrome-extension-guide": "2026-08-23"
+  "chrome-omnibox-guide": "2026-08-22"
 }
