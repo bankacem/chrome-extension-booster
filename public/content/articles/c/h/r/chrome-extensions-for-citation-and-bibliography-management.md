@@ -20,6 +20,7 @@ last_updated: 2026-08-21
 read_time: 11
 ---
 
+
 # Chrome Extensions for Citation & Bibliography Management
 
 ## Introduction
@@ -49,6 +50,9 @@ For a related PDF workflow, see [Chrome extensions for reading PDFs online](/blo
 Quick decision: if data portability and long-term access matter, start with Zotero Connector. If collaborative Google Docs is your daily driver and you don’t mind a subscription, try Paperpile.
 
 ## Top Chrome extensions for citation & bibliography management (short list)
+
+![Chrome Extensions For Citation And Bibliography Management Overview](/content/images/chrome-extensions-for-citation-and-bibliography-management/chrome-extensions-for-citation-and-bibliography-management-overview.webp "Chrome Extensions For Citation And Bibliography Management Overview")
+
 
 - Zotero Connector (Zotero)
 
@@ -83,6 +87,9 @@ Compatibility (core targets — bulleted):
 | Cite This For Me | Generate formatted citations quickly | Plain text APA/MLA/Chicago; export to copy | Copy/paste to Google Docs/Word; limited exports | Reads current page metadata; minimal cloud use for simple citations | Free basic; some premium features paid |
 
 ## Extension breakdowns (features, pros & cons, compatibility)
+
+![Chrome Extensions For Citation And Bibliography Management Features](/content/images/chrome-extensions-for-citation-and-bibliography-management/chrome-extensions-for-citation-and-bibliography-management-features.webp "Chrome Extensions For Citation And Bibliography Management Features")
+
 
 ### Zotero Connector
 
@@ -297,6 +304,9 @@ Privacy & Permissions Checks
 How to use the checklist: run each accuracy test with 3–5 sample references you care about (e.g., seminal papers, non-English authors, conference proceedings). If an extension fails two or more critical tests (DOI missing, author order broken, no export), treat it as high risk for long projects.
 
 ## How to choose + step-by-step workflows for academic projects
+
+![Chrome Extensions For Citation And Bibliography Management Guide](/content/images/chrome-extensions-for-citation-and-bibliography-management/chrome-extensions-for-citation-and-bibliography-management-guide.webp "Chrome Extensions For Citation And Bibliography Management Guide")
+
 
 How to choose: prioritize portability and the integrations you need. If you use LaTeX heavily, prefer tools that export clean BibTeX. If your team uses Google Docs, prioritize native Google Docs integration. Always verify data portability (export formats) before locking in.
 
