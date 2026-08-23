@@ -30,6 +30,7 @@ created_at: '2026-06-06T10:00:00.000+00:00'
 updated_at: '2026-06-06T10:00:00.000+00:00'
 ---
 
+
 <img src="/content/images/capture-scrolling-webpages-as-png-or-pdf/featured.webp" alt="How to Capture Scrolling Webpages as PNG or PDF: I Tested 4 Methods" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## How to Capture Scrolling Webpages as PNG or PDF: I Tested 4 Methods
@@ -52,6 +53,9 @@ I used a Windows 11 machine with Chrome 125 and a 500 Mbps connection. I capture
 | Print Friendly | Online tool | Free / Premium | PDF |
 
 ## Capture Speed
+
+![Capture Scrolling Webpages As Png Or Pdf Overview](/content/images/capture-scrolling-webpages-as-png-or-pdf/capture-scrolling-webpages-as-png-or-pdf-overview.webp "Capture Scrolling Webpages As Png Or Pdf Overview")
+
 
 I measured time from initiating the capture to having the file ready to save. All tests on a 6,500-word documentation page.
 
@@ -88,6 +92,9 @@ Print Friendly does the best job of cleaning up the page — it removes ads, sid
 
 ## Full-Page vs Print Layout
 
+![Capture Scrolling Webpages As Png Or Pdf Features](/content/images/capture-scrolling-webpages-as-png-or-pdf/capture-scrolling-webpages-as-png-or-pdf-features.webp "Capture Scrolling Webpages As Png Or Pdf Features")
+
+
 A key difference between PNG and PDF captures is how they handle the page layout.
 
 **PNG/WebP capture (Quick Screenshot Lite, DevTools):**
@@ -118,6 +125,9 @@ For design documentation and bug reports where visual accuracy matters, use PNG/
 Quick Screenshot Lite is the only method that allows annotation and editing after capture. If you need to add arrows, blur sensitive data, or crop the captured page, it is the only choice.
 
 ## Comparison Table: 4 Methods
+
+![Capture Scrolling Webpages As Png Or Pdf Guide](/content/images/capture-scrolling-webpages-as-png-or-pdf/capture-scrolling-webpages-as-png-or-pdf-guide.webp "Capture Scrolling Webpages As Png Or Pdf Guide")
+
 
 | Feature | Quick Screenshot Lite | Print to PDF | DevTools | Print Friendly |
 |---------|---------------------|-------------|---------|---------------|
