@@ -24,6 +24,9 @@ This change might pose challenges if you rely on Java applets for tasks like run
 
 ---
 
+![Java Plugins in Chrome: What Still Works, What Does Not, and Safer Alternatives workflow illustration](/content/images/java-plugins-chrome-compatibility-guide/java-plugins-chrome-compatibility-guide-workflow.webp)
+*Screenshot: Editorial illustration of the practical chrome plugins java workflow described in this guide; it is not a product screenshot.*
+
 ## What No Longer Works: Java Applets and the Demise of NPAPI
 
 Java applets, which once allowed interactive Java applications to run directly in browser windows, relied on NPAPI technology. As of Chrome version 45 (released in September 2015), NPAPI support has been completely removed. This means:
@@ -84,7 +87,7 @@ Even without applet support, developers can still enhance their productivity and
 
 ---
 
-## Common Troubleshooting Issues 
+## Common Troubleshooting Issues
 
 ### Java Applets Do Not Work in Chrome
 
@@ -104,19 +107,19 @@ Extensions used for testing or debugging Java applications often require access 
 
 ## Frequently Asked Questions
 
-**Q: Can I use Java plugins in modern versions of Chrome?**  
+**Q: Can I use Java plugins in modern versions of Chrome?**
 No, Chrome no longer supports NPAPI-based plugins, which are required for Java applets. It is not possible to run Java directly within modern Chrome browsers.
 
-**Q: What is the alternative to Java applets in Chrome?**  
+**Q: What is the alternative to Java applets in Chrome?**
 The recommended alternative is Java Web Start, which allows Java applications to run outside the browser, independent of plugin support.
 
-**Q: Are there any safe workarounds to enable Java applets in Chrome?**  
+**Q: Are there any safe workarounds to enable Java applets in Chrome?**
 All Chrome-approved methods for NPAPI support have been removed as of 2015. Using unsupported workarounds may compromise browser security and is not recommended.
 
-**Q: Can I use older versions of Chrome to run Java applets?**  
+**Q: Can I use older versions of Chrome to run Java applets?**
 While older versions may still support NPAPI, downgrading Chrome is strongly discouraged due to the significant security vulnerabilities in unsupported versions.
 
-**Q: How can I migrate a legacy Java applet?**  
+**Q: How can I migrate a legacy Java applet?**
 Legacy Java applets can often be rewritten using modern technologies such as Java Web Start, HTML5, JavaScript, or by shifting the logic to server-side platforms.
 
 ---
@@ -128,5 +131,5 @@ For a related workflow, see the [professional developer Chrome extensions](/blog
 
 ## References
 
-1. [Java.com: Support for Java Plugin in Chrome](https://www.java.com/en/download/help/chrome.html)  
+1. [Java.com: Support for Java Plugin in Chrome](https://www.java.com/en/download/help/chrome.html)
 2. [Google Developer Resources: NPAPI Deprecation](https://developer.chrome.com/apps/npapi)
