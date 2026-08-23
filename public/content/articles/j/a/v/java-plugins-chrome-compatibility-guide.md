@@ -1,5 +1,5 @@
 ---
-id: b002-04-draft
+id: 8258d0e7-5600-4bcd-a275-f8c29d8dbd83
 title: "Java Plugins in Chrome: What Still Works, What Does Not, and Safer Alternatives"
 slug: java-plugins-chrome-compatibility-guide
 status: draft
@@ -11,7 +11,7 @@ tags: [Chrome, browser extensions]
 keywords: ["chrome plugins java"]
 author: Miccart Phen
 published_at: 2026-08-23
-read_time: 8
+read_time: 6
 ---
 
 ## Understanding Java Support in Chrome
