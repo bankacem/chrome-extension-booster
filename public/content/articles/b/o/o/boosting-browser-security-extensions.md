@@ -30,6 +30,7 @@ views: 0
 read_time: 10
 ---
 
+
 <img src="/content/images/boosting-browser-security-extensions/featured.webp" alt="Boosting Browser Security: The Best Chrome Security Extensions for a Safer Online Experience" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## How I Tested 10 Security Extensions
@@ -49,6 +50,9 @@ Phishing attacks increased 40% year-over-year according to the [Anti-Phishing Wo
 The key advantage of security extensions over antivirus software: extensions see the URL before the page loads. They can block a phishing page before your browser even renders it, while antivirus software only scans files after they are downloaded.
 
 ## Comparison Table
+
+![Boosting Browser Security Extensions Overview](/content/images/boosting-browser-security-extensions/boosting-browser-security-extensions-overview.webp "Boosting Browser Security Extensions Overview")
+
 
 | Extension | Phishing Protection | Malware Blocking | Tracker Blocking | False Positives | RAM Usage | Page Load Impact |
 |-----------|-------------------|-----------------|-----------------|-----------------|-----------|-----------------|
@@ -90,6 +94,9 @@ Fake tech support scams, "Your computer is infected" pop-ups, and malicious over
 In my testing, it blocked 94% of malicious overlay pop-ups. The 6% it missed were first-party dialogs that Chrome itself triggered.
 
 ## The Complete Companion Extension Set
+
+![Boosting Browser Security Extensions Features](/content/images/boosting-browser-security-extensions/boosting-browser-security-extensions-features.webp "Boosting Browser Security Extensions Features")
+
 
 | Extension | Category | Security Benefit | RAM |
 |-----------|----------|-----------------|-----|
