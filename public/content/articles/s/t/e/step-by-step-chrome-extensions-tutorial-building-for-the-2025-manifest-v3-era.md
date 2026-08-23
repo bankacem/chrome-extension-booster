@@ -1,11 +1,13 @@
 ---
-seo_title: "Building Extensions for the Manifest V3 Era"
+seo_title: "Build Chrome Extensions for Manifest V3"
 id: c18dec57-79d4-44fa-968e-01c6b9c4960e
 title: 'Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3 Era'
 slug: step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era
 excerpt: >-
-  Discover the future of browser extensions with our curated, high-performance
-  directory.
+  A complete, hands-on tutorial for building Chrome extensions with Manifest V3 in 2025.
+  Covers project setup, manifest.json structure, service workers, content scripts,
+  permissions, and publishing to the Chrome Web Store — including a V2-to-V3 migration
+  checklist.
 featured_image: >-
   /content/images/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era/featured.webp
 category: Security & Privacy
@@ -14,98 +16,173 @@ tags:
     Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3
     Era
 keywords:
-  - browser extensions
-  - premium tools
-  - productivity
-meta_description: "A developer's tutorial for building Chrome extensions in the Manifest V3 era, covering the 2025 shift away from Manifest V2."
+  - Manifest V3
+  - Chrome extension tutorial
+  - service worker
+  - content script
+  - Chrome Web Store publishing
+meta_description: >-
+  Build Chrome extensions with Manifest V3 in 2025. Step-by-step guide covering
+  manifest.json, service workers, content scripts, permissions, and Chrome Web Store publishing.
 status: published
 published_at: '2026-03-18T20:11:00.24+00:00'
 scheduled_at: '2026-03-18T20:11:00+00:00'
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
-read_time: 1
+read_time: 14
 created_at: '2026-01-19T13:56:52.373854+00:00'
 updated_at: '2026-04-23T12:29:22.061228+00:00'
+faq:
+  - question: Is Manifest V2 still supported in Chrome?
+    answer: >-
+      No. Google deprecated Manifest V2 in June 2024 and completed the phase-out in mid-2025.
+      Chrome no longer loads Manifest V2 extensions. All new and existing extensions must
+      use Manifest V3 to function.
+  - question: What is the difference between a service worker and a background page?
+    answer: >-
+      Manifest V2 used persistent background pages — a hidden HTML page running indefinitely
+      in the background, consuming memory and CPU. Manifest V3 replaces this with service
+      workers that are event-driven: they wake on an event and terminate when idle,
+      typically within 30 seconds of inactivity.
+  - question: How do content scripts work in Manifest V3?
+    answer: >-
+      Content scripts inject JavaScript into web pages the user visits. In Manifest V3,
+      you declare them statically in manifest.json under the `content_scripts` field, or
+      inject them dynamically using `chrome.scripting.executeScript()`. Dynamic injection
+      is preferred because it reduces memory footprint and avoids injecting code into
+      every matching page.
+  - question: What permissions should I request for my Chrome extension?
+    answer: >-
+      Request the minimum set of permissions necessary. Use `activeTab` instead of broad
+      `tabs` permission when you only need access to the current tab on user interaction.
+      Use `host_permissions` for specific origins rather than `<all_urls>`. Google's review
+      process scrutinizes overly broad permissions and may reject your submission.
+  - question: How long does Chrome Web Store review take in 2025?
+    answer: >-
+      Standard reviews take 48 to 72 hours. Extensions requesting sensitive permissions
+      (broad host access, `debugger`, `devtools`) or flagged for additional review can
+      take significantly longer. Google enforces a strict "one appeal" policy for policy
+      violations, so ensure full compliance before submitting.
+howto:
+  name: Build a Manifest V3 Chrome Extension
+  description: >-
+    Step-by-step guide to scaffolding, configuring, and coding a Chrome extension
+    using Manifest V3 with a service worker, content script, and side panel UI.
+  total_time: PT60M
+  tool: VS Code + Chrome
+  steps:
+    - name: Initialize the project
+      text: >-
+        Create a new directory for your extension. Open it in VS Code and initialize
+        a package.json if you plan to use a build tool like WXT or Plasmo.
+    - name: Create manifest.json
+      text: >-
+        Create a manifest.json file at the project root. Set `manifest_version` to 3,
+        declare your permissions, configure the service worker under `background`,
+        and register any content scripts or side panel paths.
+    - name: Write the service worker
+      text: >-
+        Create background.js referenced in your manifest. Implement event listeners
+        for `chrome.runtime.onMessage`, alarms, or web requests. Remember that
+        service workers are stateless — persist data in chrome.storage.
+    - name: Build content scripts
+      text: >-
+        Write a content script that runs in the context of web pages. Use Shadow DOM
+        to isolate your UI from host page styles. Register it in manifest.json or
+        inject it dynamically with chrome.scripting.executeScript().
+    - name: Test in Chrome
+      text: >-
+        Navigate to chrome://extensions, enable Developer mode, and click "Load unpacked"
+        to load your extension directory. Test the service worker, content script, and
+        side panel independently using the dedicated DevTools contexts.
+    - name: Package and publish
+      text: >-
+        Zip the extension directory (exclude unnecessary files). Upload to the Chrome
+        Web Store Developer Dashboard, fill in the listing details, icon assets,
+        privacy policy URL, and submit for review.
 ---
 
 <img src="/content/images/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era/featured.webp" alt="Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3 Era" width="1200" height="630" loading="lazy" class="featured-image">
 
-<p><!-- wp:image --></p>
-<p><!-- /wp:image --> <!-- wp:paragraph --></p>
-<p>The browser isn't just a window to the web anymore; it is the operating system for modern work. As of late 2025, the Chrome extension ecosystem has shifted dramatically. With Manifest V2 officially retired and built-in browser AI taking center stage, developers need a new strategy. This <strong>chrome extensions tutorial</strong> outlines the exact steps to build secure, high-performance tools in this new environment.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Key Takeaways for 2025</h2>
-<p><!-- /wp:heading --> <!-- wp:list --></p>
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>▶ <strong>Manifest V3 is Mandatory:</strong> Manifest V2 is dead. Development must focus entirely on Service Workers and declarative APIs.</li>
-<!-- /wp:list-item --> <!-- wp:list-item -->
-<li>▶ <strong>Side Panel is the New Popup:</strong> Persistent UI via the <code>chrome.sidePanel</code> API is now the UX standard, replacing transient popups.</li>
-<!-- /wp:list-item --> <!-- wp:list-item -->
-<li>▶ <strong>Local AI Integration:</strong> Chrome 140+ grants direct access to Gemini Nano via <code>window.ai</code> for offline LLM features.</li>
-<!-- /wp:list-item --> <!-- wp:list-item -->
-<li>▶ <strong>Strict Security Policies:</strong> Security is tighter. "Verified Uploads" and the "One Appeal" rule mean policy compliance is non-negotiable.</li>
-<!-- /wp:list-item --></ul>
-<p><!-- /wp:list --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">The State of the <a href="/blog/chrome-web-store-guide" class="internal-link" title="Unlocking the Power of the Chrome Web Store: A Comprehensive Guide">Chrome Web Store</a> in 2025</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Understand the market before you start coding. The extension landscape has matured. While the total count hovers around 113,000 active extensions, the quality bar is higher. Google's aggressive removal of outdated Manifest V2 extensions cleared the clutter, creating opportunities for tools built on modern web standards.</p>
-<p><!-- /wp:paragraph --> <!-- wp:table --></p>
-<figure class="wp-block-table">
-<table class="has-fixed-layout">
-<thead>
-<tr>
-<th>Metric</th>
-<th>2025 Data Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Total Active Extensions</td>
-<td>~113,051</td>
-</tr>
-<tr>
-<td>Dominant Category</td>
-<td><a href="/blog/a-chrome-extension-built-for-programmers" class="internal-link" title="Unlocking Productivity: The Best Chrome Extension for Programmers to Boost Coding Efficiency">Productivity</a> (46.8%)</td>
-</tr>
-<tr>
-<td>Avg. Review Time</td>
-<td>48&ndash;72 Hours</td>
-</tr>
-<tr>
-<td>Manifest V3 Adoption</td>
-<td>100% (Mandatory)</td>
-</tr>
-</tbody>
-</table>
-</figure>
-<p><!-- /wp:table --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Phase 1: Setting Up Your Environment</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>This <strong>chrome extensions tutorial</strong> focuses on the modern stack. While you can use a basic text editor, professional developers in 2025 use frameworks to manage Manifest V3 nuances. Tools like <strong>WXT</strong> or <strong>Plasmo</strong> are standard. They provide Hot Module Replacement (HMR), allowing you to see changes instantly without manual reloads.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
-<h3 class="wp-block-heading">Prerequisites</h3>
-<p><!-- /wp:heading --> <!-- wp:list --></p>
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Node.js (v20+):</strong> Essential for modern build tools.</li>
-<!-- /wp:list-item --> <!-- wp:list-item -->
-<li><strong>Google Chrome (v130+):</strong> Required to access the latest APIs.</li>
-<!-- /wp:list-item --> <!-- wp:list-item -->
-<li><strong>Basic JavaScript/TypeScript:</strong> TypeScript is recommended for managing complex Chrome API types.</li>
-<!-- /wp:list-item --></ul>
-<p><!-- /wp:list --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Phase 2: <a href="/blog" class="internal-link" title="Understanding CORS Chrome: A Comprehensive Guide to Web Development">Understanding</a> the Manifest.json</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>The <code>manifest.json</code> file is your project's command center. It dictates what the extension does, the permissions it requires, and which files execute. Manifest V3 locks this file down significantly to prioritize user privacy.</p>
-<p><!-- /wp:paragraph --> <!-- wp:preformatted --></p>
-<pre class="wp-block-preformatted">{
+Yes, you can still build and publish Chrome extensions in 2025 — but only if you use Manifest V3. Google fully retired Manifest V2 in mid-2025, which means persistent background pages, wide-reaching host permissions, and remotely hosted code are no longer viable. This tutorial walks you through every technical step: scaffolding a project, writing a `manifest.json`, implementing service workers and content scripts, managing permissions, and publishing to the [Chrome Web Store](/blog/chrome-web-store-guide) under the new review guidelines.
+
+## Manifest V2 vs V3: What Changed
+
+Understanding the architectural shift is essential before writing any code. The table below covers the key differences that affect how you build, test, and ship extensions.
+
+| Feature | Manifest V2 | Manifest V3 |
+|---|---|---|
+| Background execution | Persistent background page (HTML) | Event-driven service worker (JS only) |
+| Network requests | `chrome.webRequest` (blocking) | `chrome.declarativeNetRequest` (declarative rules) |
+| Remote code | Allowed (eval, inline scripts) | Strictly prohibited; all code bundled locally |
+| Permissions model | Broad, runtime-grantable | Minimum required; `activeTab` preferred over `tabs` |
+| Content Security Policy | Relaxed (customizable) | Strict default; no `unsafe-eval` or `unsafe-inline` |
+| Storage | `chrome.storage` (local, sync) | Adds `chrome.storage.session` (memory-backed, clears on browser close) |
+| Messaging | `chrome.runtime.sendMessage` | Same API, but service worker may be inactive — handle async wake-up |
+| UI surface | Popup (closes on click-away) | Side Panel API (persistent alongside tabs) |
+
+## Project Setup
+
+### Prerequisites
+
+Before writing any code, ensure your environment matches these requirements:
+
+- **Node.js v20+** — required for modern build tools like WXT and Plasmo
+- **Google Chrome v130+** — ensures access to the latest Manifest V3 APIs including `chrome.sidePanel`
+- **VS Code** (or your preferred editor) with the ESLint and Prettier extensions for consistent code quality
+- **TypeScript** — strongly recommended. Chrome's API types are complex, and TypeScript catches mismatches at compile time
+
+### Scaffolding the Project
+
+For this tutorial, we build a vanilla Manifest V3 extension without a framework. This keeps the architecture transparent and makes each component easy to understand. If you prefer HMR and framework integration, run `npm create wxt@latest` or `npx plasmo init` instead. Frameworks handle Manifest V3 configuration [automatically](/blog/stop-video-popups-from-playing-automatically-3), including hot module replacement, content script bundling, and multi-entry-point builds.
+
+1. Create a project directory and open it in VS Code:
+
+```bash
+mkdir my-manifest-v3-extension && cd my-manifest-v3-extension
+code .
+```
+
+2. Create the following file structure:
+
+```
+my-manifest-v3-extension/
+├── manifest.json
+├── background.js
+├── content.js
+├── sidepanel.html
+├── sidepanel.js
+├── icons/
+│   ├── icon-16.png
+│   ├── icon-48.png
+│   └── icon-128.png
+└── README.md
+```
+
+## The manifest.json Structure
+
+The `manifest.json` is the single source of truth for your extension. It declares the extension's identity, permissions, entry points, and capabilities. Manifest V3 enforces stricter validation on this file — malformed declarations will prevent the extension from loading.
+
+Here is a complete `manifest.json` for a modern extension using the Side Panel API:
+
+```json
+{
   "manifest_version": 3,
-  "name": "2025 AI Assistant",
+  "name": "Page Analyzer Pro",
   "version": "1.0.0",
-  "description": "A modern extension using Gemini Nano.",
-  "permissions": ["sidePanel", "storage", "aiLanguageModelOriginTrial"],
+  "description": "Analyzes page content using content scripts and displays results in a persistent side panel.",
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.example.com/*"
+  ],
   "action": {
-    "default_title": "Open Assistant"
+    "default_title": "Open Side Panel"
   },
   "side_panel": {
     "default_path": "sidepanel.html"
@@ -115,184 +192,266 @@ updated_at: '2026-04-23T12:29:22.061228+00:00'
     "type": "module"
   }
 }
-</pre>
-<p><!-- /wp:preformatted --> <!-- wp:paragraph --></p>
-<p><strong>Crucial Change:</strong> The <code>background.service_worker</code> is the critical shift. Manifest V2 used persistent background pages that consumed memory indefinitely. Manifest V3 uses ephemeral Service Workers. They wake on events and sleep when idle. This represents the biggest stumbling block for developers migrating from older tutorials.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Phase 3: Building the User Interface (Side Panel API)</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Popups were the old standard, but they vanish when a user clicks away. In 2025, the <strong>Side Panel API</strong> is the superior choice. It creates a persistent UI that remains visible as the user navigates between tabs, offering a smoother workflow.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
-<h3 class="wp-block-heading">Step 1: Creating the Side Panel HTML</h3>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Create a file named <code>sidepanel.html</code>. We will use Tailwind CSS via CDN here for simplicity.</p>
-<p><!-- /wp:paragraph --> <!-- wp:preformatted --></p>
-<pre class="wp-block-preformatted">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body class="bg-slate-50 p-4"&gt;
-    &lt;h1 class="text-xl font-bold text-indigo-600"&gt;AI Assistant&lt;/h1&gt;
-    &lt;div id="response" class="mt-4 p-3 bg-white border rounded shadow-sm min-h-[100px]"&gt;
-        Waiting for input...
-    &lt;/div&gt;
-    &lt;button id="analyze-btn" class="mt-4 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition"&gt;
-        Analyze Page
-    &lt;/button&gt;
-    &lt;script src="sidepanel.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-<p><!-- /wp:preformatted --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Phase 4: Implementing the Service Worker</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>The Service Worker acts as the orchestrator. Since it lacks direct access to the DOM, it communicates with the side panel and content scripts via <strong>Message Passing</strong>. This pattern is the backbone of any reliable extension.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
-<h3 class="wp-block-heading">The background.js Logic</h3>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>This script listens for the extension icon click and ensures the side panel triggers correctly.</p>
-<p><!-- /wp:paragraph --> <!-- wp:preformatted --></p>
-<pre class="wp-block-preformatted">chrome.sidePanel
-  .setPanelBehavior({ openPanelOnActionClick: true })
-  .catch((error) =&gt; console.error(error));
+```
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) =&gt; {
-  if (message.type === 'PROCESS_DATA') {
-    // Handle heavy logic here
-    console.log("Processing data from content script...");
-    sendResponse({ status: 'success' });
+### Key Fields Explained
+
+- **`manifest_version: 3`** — mandatory. Chrome rejects any other value.
+- **`permissions`** — lists API permissions the extension needs. Use `activeTab` instead of `tabs` whenever possible; it grants temporary access to the current tab only upon user action (clicking the extension icon).
+- **`host_permissions`** — declares which origins the extension can access via content scripts or `fetch()`. Keep these as narrow as possible.
+- **`background.service_worker`** — the path to your service worker script. This replaces V2's `background.page`. Service workers cannot contain DOM APIs (`document`, `window`).
+- **`side_panel.default_path`** — sets the HTML file loaded in Chrome's side panel. This is the recommended UI surface in 2025 over the transient popup.
+
+## Service Workers vs Background Pages
+
+This is the single most disruptive change in Manifest V3. In V2, the background page was a persistent HTML document that stayed alive for the lifetime of the browser session. It could hold global state, maintain WebSocket connections, and run intervals indefinitely.
+
+Manifest V3 replaces this with a **service worker** — a JavaScript file with no DOM, no persistent state, and a strict lifecycle:
+
+1. **Wake** — Chrome starts the service worker when a relevant event fires (message, alarm, `chrome.webRequest` event, extension install/update).
+2. **Execute** — The worker runs event handler code.
+3. **Terminate** — Chrome kills the worker approximately 30 seconds after the last event. All in-memory state is lost.
+
+### Service Worker Implementation
+
+```javascript
+// background.js
+chrome.sidePanel
+  .setPanelBehavior({ openPanelOnActionClick: true })
+  .catch((error) => console.error("Side panel setup failed:", error));
+
+// Listen for messages from content scripts or the side panel
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === "EXTRACT_PAGE_DATA") {
+    chrome.storage.local.set({ pageData: message.payload }, () => {
+      sendResponse({ status: "stored" });
+    });
+    return true; // Keep the message channel open for async response
+  }
+
+  if (message.type === "GET_PAGE_DATA") {
+    chrome.storage.local.get("pageData", (result) => {
+      sendResponse(result.pageData || null);
+    });
+    return true;
   }
 });
-</pre>
-<p><!-- /wp:preformatted --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Phase 5: Leveraging Chrome&rsquo;s Built-in AI (Gemini Nano)</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>The standout feature of 2025 is the <strong>Prompt API</strong>. Chrome now ships with a local version of Gemini Nano. You can build AI tools without costly API keys or privacy concerns, as the data processing stays on the device.</p>
-<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
-<p>Note: Currently, this feature requires the "AI Prototyping" flag enabled or participation in the Chrome Origin Trial.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
-<h3 class="wp-block-heading">Implementing Local Summarization</h3>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Inside your <code>sidepanel.js</code>, call the local model directly:</p>
-<p><!-- /wp:paragraph --> <!-- wp:preformatted --></p>
-<pre class="wp-block-preformatted">document.getElementById('analyze-btn').addEventListener('click', async () =&gt; {
-    const responseDiv = document.getElementById('response');
-    responseDiv.innerText = "Thinking...";
 
-    try {
-        const session = await window.ai.languageModel.create();
-        const result = await session.prompt("Summarize the current webpage content.");
-        responseDiv.innerText = result;
-    } catch (e) {
-        responseDiv.innerText = "Error: " + e.message;
-        console.error("AI Model failed", e);
-    }
+// Replace setInterval with chrome.alarms for periodic tasks
+chrome.alarms.create("cleanup", { periodInMinutes: 30 });
+chrome.alarms.onAlarm.addListener((alarm) => {
+  if (alarm.name === "cleanup") {
+    chrome.storage.local.remove(["pageData"]);
+  }
 });
-</pre>
-<p><!-- /wp:preformatted --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Phase 6: Content Scripts and the Shadow DOM</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Injecting UI directly into a website (like a "Summarize" button on Medium) requires <strong>Content Scripts</strong>. However, complex host site CSS can easily break your styling.</p>
-<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
-<p>The professional solution is the <strong>Shadow DOM</strong>. By creating a Shadow Root, you isolate your extension's CSS from the website's styles, ensuring your UI looks consistent everywhere.</p>
-<p><!-- /wp:paragraph --> <!-- wp:list --></p>
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Expert Tip:</strong> Prefer <code>chrome.scripting.executeScript</code> for dynamic injection instead of declaring everything in the manifest. This improves performance and keeps your extension's memory footprint low.</li>
-<!-- /wp:list-item --></ul>
-<p><!-- /wp:list --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Phase 7: Debugging and Testing</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Debugging extensions differs from standard web development because you must monitor three separate contexts:</p>
-<p><!-- /wp:paragraph --> <!-- wp:table --></p>
-<figure class="wp-block-table">
-<table class="has-fixed-layout">
-<thead>
-<tr>
-<th>Context</th>
-<th>How to Debug</th>
-<th>Common Issues</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Service Worker</td>
-<td>Click "service worker" link in <code>chrome://extensions</code></td>
-<td>Worker going idle; global variables lost.</td>
-</tr>
-<tr>
-<td>Popup/Side Panel</td>
-<td>Right-click the UI and select "Inspect"</td>
-<td>CSS conflicts; script load order errors.</td>
-</tr>
-<tr>
-<td>Content Script</td>
-<td>Standard F12 DevTools on the target website</td>
-<td>CORS errors; DOM not ready.</td>
-</tr>
-</tbody>
-</table>
-</figure>
-<p><!-- /wp:table --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Phase 8: Publishing to the Chrome Web Store</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>The review process is rigorous. Google strictly forbids <strong>Remote Hosted Code</strong>. All logic must reside within the extension package.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
-<h3 class="wp-block-heading">The 2025 Checklist for Approval</h3>
-<p><!-- /wp:heading --> <!-- wp:list --></p>
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Privacy Policy:</strong> A hosted privacy policy is mandatory, even if you don't collect data.</li>
-<!-- /wp:list-item --> <!-- wp:list-item -->
-<li><strong>Justification of Permissions:</strong> You must explain <em>why</em> you need each permission in the developer console (e.g., explaining the need for <code>storage</code>).</li>
-<!-- /wp:list-item --> <!-- wp:list-item -->
-<li><strong>Two-Factor Authentication:</strong> Required for all developer accounts to prevent supply-chain attacks.</li>
-<!-- /wp:list-item --> <!-- wp:list-item -->
-<li><strong>Icon Assets:</strong> Prepare 16x16, 48x48, and 128x128 PNG files.</li>
-<!-- /wp:list-item --></ul>
-<p><!-- /wp:list --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Monetization Strategies in the Modern Era</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Google deprecated its internal payment system, necessitating third-party solutions for revenue.</p>
-<p><!-- /wp:paragraph --> <!-- wp:list --></p>
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Stripe Integration:</strong> The most common method. Redirect users to Stripe Checkout and use a unique "Client ID" to verify subscriptions via your backend.</li>
-<!-- /wp:list-item --> <!-- wp:list-item -->
-<li><strong>ExtensionPay:</strong> A popular wrapper service that simplifies adding payments to a few lines of code.</li>
-<!-- /wp:list-item --> <!-- wp:list-item -->
-<li><strong>Freemium AI:</strong> Many 2025 extensions offer basic local AI features for free, requiring a subscription for "Cloud AI" (like GPT-4o or Claude 3.5) integration.</li>
-<!-- /wp:list-item --></ul>
-<p><!-- /wp:list --> <!-- wp:heading {"level":3} --></p>
-<h3 class="wp-block-heading">Warning: The "One Appeal" Rule</h3>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Google enforces a strict "One Appeal" policy. If your extension gets flagged for a serious policy violation (like malware or deceptive practices), you get one chance to argue your case. A rejected appeal often means a permanent developer account ban. <strong>Read the Program Policies before submitting.</strong></p>
-<p><!-- /wp:paragraph --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Frequently Asked Questions</h2>
-<p><!-- /wp:heading --> <!-- wp:heading {"level":4} --></p>
-<h4 class="wp-block-heading">Can I still use Manifest V2 in 2025?</h4>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>No. Manifest V2 reached end-of-life in mid-2025. All extensions must use Manifest V3. Any tutorial suggesting otherwise is obsolete.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading {"level":4} --></p>
-<h4 class="wp-block-heading">How do I store user data securely?</h4>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Use <code>chrome.storage.local</code> for general data and <code>chrome.storage.session</code> for sensitive data that should clear when the browser closes. Use <code>chrome.storage.sync</code> for cross-device syncing.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading {"level":4} --></p>
-<h4 class="wp-block-heading">Does my extension work on Brave or Edge?</h4>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Yes. Brave, Microsoft Edge, and Opera run on the Chromium engine. Extensions built for Chrome work on these browsers, though slight UI differences in features like <code>chrome.sidePanel</code> may exist.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading {"level":4} --></p>
-<h4 class="wp-block-heading">How do I use React or Vue in an extension?</h4>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Use a framework like <strong>Plasmo</strong>. It handles build configuration <a href="/blog/stop-video-popups-from-playing-automatically-3" class="internal-link" title="Stop Video Popups from Playing Automatically: A Comprehensive Guide">automatically</a>, allowing you to write your popup and side panel code as standard React or Vue components.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading --></p>
-<h2 class="wp-block-heading">Conclusion</h2>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Building a Chrome extension in 2025 offers a powerful way to integrate directly into user workflows. While the shift to Manifest V3 presents technical challenges, the new APIs&mdash;specifically the <strong>Side Panel</strong> and <strong>Built-in AI</strong>&mdash;allow for deeper functionality than ever before.</p>
-<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
-<p>Follow this <strong>chrome extensions tutorial</strong> to move beyond the basics. Success in the current ecosystem requires focusing on performance (via Service Workers), maintaining a persistent user experience (via Side Panels), and utilizing local machine learning. Start small, test across different Chromium browsers, and prioritize privacy.</p>
-<p><!-- /wp:paragraph --> <!-- wp:heading {"level":3} --></p>
-<h3 class="wp-block-heading">Ready to start building?</h3>
-<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
-<p>Open your terminal and run <code>npm create wxt@latest</code> to begin.<a href="https://developer.chrome.com/docs/extensions/mv3/intro/">View Official </a><a href="/blog/screenshot-tool-for-chrome-5" class="internal-link" title="Unlock the Power of Visual Documentation: The Ultimate Screenshot Tool for Chrome">Documentation</a></p>
-<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
-<p>&nbsp;</p>
-<p><!-- /wp:paragraph --></p>
+```
+
+### Critical Implications
+
+- **No `setInterval`/`setTimeout` for long-running tasks.** Use `chrome.alarms` API instead, which reliably wakes the service worker at the scheduled time.
+- **Global variables are lost on termination.** Persist all necessary state to `chrome.storage.local` or `chrome.storage.session`.
+- **Always `return true`** from `onMessage` listeners that call `sendResponse` asynchronously. Without it, the message channel closes before the response is sent.
+
+## Content Scripts
+
+Content scripts run in the context of web pages. They can access the page's DOM but share a separate JavaScript execution environment from the page's own scripts. This isolation prevents conflicts with the host page.
+
+### Static vs Dynamic Injection
+
+You have two options for loading content scripts:
+
+- **Static injection** — declare in `manifest.json` under `content_scripts`. Chrome injects the script automatically on every matching page. Simple but potentially wasteful.
+- **Dynamic injection** — use `chrome.scripting.executeScript()` from the service worker or side panel. This injects the script only when needed, on demand. Preferred for performance.
+
+### Content Script Implementation
+
+```javascript
+// content.js
+(function () {
+  // Prevent double-injection
+  if (window.__pageAnalyzerInjected) return;
+  window.__pageAnalyzerInjected = true;
+
+  // Extract meaningful data from the page
+  const pageTitle = document.title;
+  const metaDescription = document.querySelector('meta[name="description"]')?.content || "";
+  const headingCount = document.querySelectorAll("h1, h2, h3").length;
+  const wordCount = document.body.innerText.split(/\s+/).filter(Boolean).length;
+
+  const pageData = {
+    title: pageTitle,
+    description: metaDescription,
+    headings: headingCount,
+    words: wordCount,
+    url: window.location.href,
+    timestamp: Date.now(),
+  };
+
+  // Send data to the service worker
+  chrome.runtime.sendMessage({
+    type: "EXTRACT_PAGE_DATA",
+    payload: pageData,
+  });
+})();
+```
+
+### Using Shadow DOM for UI Isolation
+
+If your content script injects UI elements into the page (buttons, floating panels), wrap them in a Shadow DOM to prevent the host page's CSS from affecting your extension's styles:
+
+```javascript
+const host = document.createElement("div");
+host.id = "my-extension-root";
+document.body.appendChild(host);
+
+const shadow = host.attachShadow({ mode: "closed" });
+shadow.innerHTML = `
+  <style>
+    .ext-btn {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: sans-serif;
+    }
+    .ext-btn:hover { background: #4338ca; }
+  </style>
+  <button class="ext-btn">Analyze Page</button>
+`;
+```
+
+## Permissions
+
+Permissions are the most scrutinized aspect of your extension during Chrome Web Store review. A poorly justified permission set is the most common reason extensions are rejected. Follow these principles:
+
+- **Principle of least privilege.** Request only what you need. A text-highlighter extension does not need `history` or `bookmarks`. Every additional permission increases user friction during installation and raises review scrutiny.
+- **Use `activeTab` over `tabs`.** The `activeTab` permission grants access to the current tab's URL, title, and favicon only when the user explicitly interacts with your extension (clicking the action button or using a keyboard shortcut). Unlike `tabs`, it does not trigger the permissions warning banner during installation.
+- **Scope `host_permissions` narrowly.** Use specific origin patterns like `"https://*.example.com/*"` instead of `"<all_urls>"`. The [Productivity](/blog/a-chrome-extension-built-for-programmers) category on the Chrome Web Store is the most competitive — narrow permissions improve your chances of approval and reduce user anxiety.
+- **Separate `permissions` and `host_permissions`.** Manifest V3 splits these into two distinct fields. API permissions (`storage`, `sidePanel`, `scripting`) go in `permissions`. URL access patterns go in `host_permissions`. This separation lets users see exactly which websites the extension can interact with, separate from which browser APIs it accesses.
+
+## Publishing to the Chrome Web Store
+
+### Preparation Checklist
+
+Before uploading, assemble these assets:
+
+- **Icon set:** 16x16, 48x48, and 128x128 PNG files at the root of your extension (declared in `manifest.json` under `icons`)
+- **Privacy policy:** A hosted privacy policy page is mandatory, even if your extension collects no data
+- **Zip file:** Package the extension directory as a `.zip`. Exclude `node_modules`, `.git`, and test files
+- **Developer account:** Two-factor authentication is required for all Chrome Web Store developer accounts
+
+![Navigate to the Chrome Web Store Developer Dashboard and click "New Item" to begin uploading your extension](/content/images/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era/chrome-web-store-upload.webp)
+
+### Step-by-Step Publishing Process
+
+1. Navigate to the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole) and sign in with your developer account.
+
+2. Click **"New Item"** and upload your `.zip` file.
+
+![Upload your zipped extension package and wait for the automated validation to complete](/content/images/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era/extension-upload-validation.webp)
+
+3. Fill in the listing details: name, description, category, language, and screenshots (1280x800 or 640x400 PNG).
+
+4. Under **"Privacy Practices,"** declare every permission and explain why your extension needs it. Be specific — vague justifications trigger manual review.
+
+![Complete the privacy practices section by justifying each permission your extension requests](/content/images/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era/privacy-practices-form.webp)
+
+5. Submit for review. Standard reviews complete within 48–72 hours.
+
+### The "One Appeal" Rule
+
+Google enforces a strict policy: if your extension is flagged for a serious violation (malware, deceptive practices, policy circumvention), you receive a single appeal. A rejected appeal can result in a permanent developer account ban. Read the [program policies](https://developer.chrome.com/docs/webstore/program-policies/) thoroughly before submitting.
+
+Additionally, Google now enforces a "Verified Uploads" requirement for all new developer accounts. You must verify your identity with a government-issued ID before publishing your first extension. This policy targets supply-chain attacks and compromised developer accounts.
+
+## Manifest V3 Migration Checklist
+
+If you are migrating an existing V2 extension to V3, work through this checklist systematically:
+
+- [ ] **Change `manifest_version` to `3`** in `manifest.json`
+- [ ] **Replace `background.page` with `background.service_worker`** and remove all DOM references from the background script
+- [ ] **Convert `chrome.webRequest` blocking listeners** to `chrome.declarativeNetRequest` rules
+- [ ] **Move all inline scripts and `eval()` calls** into bundled JS files; CSP no longer permits `unsafe-eval` or `unsafe-inline`
+- [ ] **Replace `setInterval`/`setTimeout`** in the background script with `chrome.alarms`
+- [ ] **Persist all global state** from the background page to `chrome.storage.local` or `chrome.storage.session`
+- [ ] **Split permissions:** move URL patterns from `permissions` to `host_permissions`
+- [ ] **Replace `chrome.tabs.executeScript`** with `chrome.scripting.executeScript` (requires the `scripting` permission)
+- [ ] **Ensure all `sendResponse` calls** in `onMessage` listeners return `true` for async responses
+- [ ] **Audit external network requests** — all code must be bundled locally; no remote code execution
+- [ ] **Test on Chrome v130+** with Developer Mode enabled via `chrome://extensions`
+
+## Common Pitfalls and How to Avoid Them
+
+### Service Worker Terminates Before Async Work Completes
+
+**Problem:** You start a `fetch()` or `chrome.storage` operation in the service worker, but Chrome terminates the worker before the callback fires.
+
+**Fix:** Return `true` from `onMessage` listeners to keep the worker alive. For non-message-driven work, use `chrome.alarms` to schedule periodic wake-ups, or ensure you await all promises before the event handler returns.
+
+### `chrome.runtime.sendMessage` Fails Silently
+
+**Problem:** Sending a message to a service worker that is not yet awake results in the error: "Could not establish connection. Receiving end does not exist."
+
+**Fix:** Use `chrome.runtime.sendMessage` with error handling, or call `sendMessage` from a context that guarantees the worker is active (e.g., after a user click on the extension action). Alternatively, use `chrome.runtime.getBackgroundPage()` is no longer available — use `chrome.runtime.getBackgroundClient()` or relay through `chrome.storage.onChanged` events.
+
+### Content Script CSS Leaks
+
+**Problem:** Your injected UI inherits styles from the host page, breaking your layout.
+
+**Fix:** Always use Shadow DOM (`element.attachShadow({ mode: "closed" })`) for any UI you inject into web pages. For simple styling without DOM injection, prefix all CSS class names with a unique namespace.
+
+### Overly Broad Permissions Cause Rejection
+
+**Problem:** Your extension requests `<all_urls>` or `"tabs"` when `activeTab` would suffice.
+
+**Fix:** Audit every permission. Use `activeTab` for user-initiated tab access. Use specific `host_permissions` patterns. Document each permission's purpose in the Chrome Web Store privacy practices form.
+
+### Zip Package Includes Unnecessary Files
+
+**Problem:** Your uploaded `.zip` contains `node_modules`, `.git`, or test files, inflating the package size and potentially including sensitive data.
+
+**Fix:** Create a dedicated build script that copies only the required files into a `dist/` directory before zipping:
+
+```bash
+mkdir -p dist && cp manifest.json background.js content.js sidepanel.html sidepanel.js dist/
+cp -r icons/ dist/
+cd dist && zip -r ../extension.zip . && cd ..
+```
+
+## Debugging Across Extension Contexts
+
+Debugging a Manifest V3 extension requires monitoring three separate execution contexts:
+
+| Context | How to Access DevTools | Common Issues |
+|---|---|---|
+| Service Worker | Click "Inspect views: service worker" on `chrome://extensions` | Worker idle timeout; state loss |
+| Side Panel / Popup | Right-click the panel and select "Inspect" | CSP violations; script load order |
+| Content Script | Standard F12 DevTools on the target web page | DOM not ready; CORS on `fetch()` |
+
+## Frequently Asked Questions
+
+### Is Manifest V2 still supported in Chrome?
+
+No. Google deprecated Manifest V2 in June 2024 and completed the phase-out in mid-2025. Chrome no longer loads Manifest V2 extensions. All new and existing extensions must use Manifest V3 to function.
+
+### What is the difference between a service worker and a background page?
+
+Manifest V2 used persistent background pages — a hidden HTML page running indefinitely in the background, consuming memory and CPU. Manifest V3 replaces this with service workers that are event-driven: they wake on an event and terminate when idle, typically within 30 seconds of inactivity.
+
+### How do content scripts work in Manifest V3?
+
+Content scripts inject JavaScript into web pages the user visits. In Manifest V3, you declare them statically in `manifest.json` under the `content_scripts` field, or inject them dynamically using `chrome.scripting.executeScript()`. Dynamic injection is preferred because it reduces memory footprint and avoids injecting code into every matching page.
+
+### What permissions should I request for my Chrome extension?
+
+Request the minimum set of permissions necessary. Use `activeTab` instead of broad `tabs` permission when you only need access to the current tab on user interaction. Use `host_permissions` for specific origins rather than `<all_urls>`. Google's review process scrutinizes overly broad permissions and may reject your submission.
+
+### How long does Chrome Web Store review take in 2025?
+
+Standard reviews take 48 to 72 hours. Extensions requesting sensitive permissions (broad host access, `debugger`, `devtools`) or flagged for additional review can take significantly longer. Google enforces a strict "one appeal" policy for policy violations, so ensure full compliance before submitting.
+
+---
+
+The [Chrome extension ecosystem](/blog) in 2025 rewards developers who build on modern APIs — service workers for efficiency, the Side Panel for persistent UX, and strict permissions for user trust. The shift from Manifest V2 required rethinking fundamental architecture patterns, but the result is a more secure, performant platform. Start with the vanilla approach in this tutorial, then graduate to frameworks like WXT or Plasmo for production projects that need React support, hot reloading, and automated builds. Open your terminal, run `npm create wxt@latest`, and ship your first [Manifest V3 extension](/blog/screenshot-tool-for-chrome-5) this week.
