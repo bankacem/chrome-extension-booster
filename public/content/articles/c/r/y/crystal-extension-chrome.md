@@ -31,6 +31,7 @@ created_at: '2026-06-06T10:00:00.000+00:00'
 updated_at: '2026-06-06T10:00:00.000+00:00'
 ---
 
+
 <img src="/content/images/crystal-extension-chrome/featured.webp" alt="Crystal Extension for Chrome Review: I Tested 4 Tab Manager Extensions for 2 Weeks" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Crystal Extension for Chrome Review: I Tested 4 Tab Managers for 2 Weeks
@@ -53,6 +54,9 @@ I used a Windows 11 machine with Chrome 125, 16 GB RAM, and a 500 Mbps connectio
 | OneTab | Tab suspender + session saver | Free | 2,000,000+ |
 
 ## Memory Savings
+
+![Crystal Extension Chrome Overview](/content/images/crystal-extension-chrome/crystal-extension-chrome-overview.webp "Crystal Extension Chrome Overview")
+
 
 I measured memory usage with 25 tabs open before and after using each extension. All measurements taken from Chrome's Task Manager.
 
@@ -91,6 +95,9 @@ OneTab is the simplest: one click saves all tabs into one long list. It saves ma
 
 ## Visual Organization Experience
 
+![Crystal Extension Chrome Features](/content/images/crystal-extension-chrome/crystal-extension-chrome-features.webp "Crystal Extension Chrome Features")
+
+
 I rated how each extension looks and feels during daily use.
 
 | Extension | Visual Appeal | Learning Curve | Daily Friction | Rating |
@@ -123,6 +130,9 @@ Crystal's session management is the most automatic. When I close Chrome and reop
 Workona is better if you manage completely separate projects. For example, you might have a "Client A" workspace with 10 tabs and a "Personal" workspace with 5 tabs. Switching between them closes the old tabs and opens the new ones, keeping memory usage low.
 
 ## Comparison Table: 4 Tab Managers
+
+![Crystal Extension Chrome Guide](/content/images/crystal-extension-chrome/crystal-extension-chrome-guide.webp "Crystal Extension Chrome Guide")
+
 
 | Feature | Crystal | Workona | Toby | OneTab |
 |---------|---------|---------|------|--------|
