@@ -5,7 +5,7 @@ slug: ie-tab-chrome-legacy-sites-guide
 status: draft
 excerpt: "A practical guide to using IE Tab in Chrome to access legacy applications. Understand configuration options, manage security challenges, and explore enterprise alternatives."
 meta_description: "Learn how to use IE Tab in Chrome for legacy applications, manage risks, configure Auto URL Filters, and explore enterprise constraints and alternatives."
-featured_image: /og-image.png
+featured_image: /content/images/ie-tab-chrome-legacy-sites-guide/featured.webp
 category: Chrome Extensions
 tags: [Chrome, browser extensions]
 keywords: ["ie tab chrome"]
