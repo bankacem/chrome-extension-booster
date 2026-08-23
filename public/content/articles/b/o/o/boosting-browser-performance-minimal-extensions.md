@@ -27,6 +27,7 @@ views: 0
 read_time: 9
 ---
 
+
 <img src="/content/images/boosting-browser-performance-minimal-extensions/featured.webp" alt="Boosting Browser Performance: The Power of Minimal Chrome Extensions for Speed" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Every Extension Costs Speed
@@ -55,6 +56,9 @@ I reset Chrome's cache between each test and ran each configuration for 2 days t
 The pattern is clear: each extension adds roughly 0.15s to startup and 0.12s to page loads. At 15+ extensions, the slowdown becomes painful. At 20 extensions, Chrome takes 4.3 seconds to load a page — more than double the baseline.
 
 ## Which Extensions Cost the Most (And Which Are Worth It)
+
+![Boosting Browser Performance Minimal Extensions Overview](/content/images/boosting-browser-performance-minimal-extensions/boosting-browser-performance-minimal-extensions-overview.webp "Boosting Browser Performance Minimal Extensions Overview")
+
 
 | Extension Category | RAM Cost | Startup Impact | Page Load Impact | Net Benefit | Verdict |
 |-------------------|----------|---------------|-----------------|-------------|---------|
@@ -107,6 +111,9 @@ If you need more functionality beyond the performance stack, add these one at a 
 | [Redirect Blocker](https://chromewebstore.google.com/detail/redirect-blocker/pofolffdhjffglfphiagpbnlegjbnbhp) | ~25 MB | +15ms | Need redirect protection | Medium |
 
 ## Real-World Performance Tips
+
+![Boosting Browser Performance Minimal Extensions Features](/content/images/boosting-browser-performance-minimal-extensions/boosting-browser-performance-minimal-extensions-features.webp "Boosting Browser Performance Minimal Extensions Features")
+
 
 **Audit monthly:** Open `chrome://extensions` → check the Memory column. If any extension is over 100 MB, disable it for a week and see if you miss it.
 
