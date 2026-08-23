@@ -16,6 +16,7 @@ description: >-
 category: "Performance & Memory"
 ---
 
+
 > **You're writing an email. A typo slips through. You hit send. Regret.**
 >
 > We've all been there. Grammar checkers exist, but most are expensive subscriptions that send your text to the cloud and learn from your mistakes.
@@ -112,6 +113,9 @@ Use the **Test connection** button to verify your key before saving [citation:4]
 
 ## 📚 #2: Trinka AI — For Academic & Technical Writing
 
+![Best Free Ai Grammar Checker Extensions Overview](/content/images/best-free-ai-grammar-checker-extensions/best-free-ai-grammar-checker-extensions-overview.webp "Best Free Ai Grammar Checker Extensions Overview")
+
+
 **Completely free | 435KiB | Updated February 25, 2026 | Chrome Web Store** [citation:9]
 
 Trinka AI is designed specifically for **academic and technical writing** — not general content.
@@ -167,6 +171,9 @@ Trinka AI is designed specifically for **academic and technical writing** — no
 ---
 
 ## 🏁 Final Verdict
+
+![Best Free Ai Grammar Checker Extensions Features](/content/images/best-free-ai-grammar-checker-extensions/best-free-ai-grammar-checker-extensions-features.webp "Best Free Ai Grammar Checker Extensions Features")
+
 
 | Your Scenario | Best Choice |
 |---------------|-------------|
