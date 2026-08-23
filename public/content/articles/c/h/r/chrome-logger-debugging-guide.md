@@ -2,7 +2,7 @@
 id: aa338d09-c7d2-45ca-b7b3-065e78551970
 title: "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits"
 slug: chrome-logger-debugging-guide
-status: draft
+status: published
 excerpt: "Understand Chrome Logger's server-side debugging capabilities, setup process, security concerns, and alternatives for safer development workflows."
 meta_description: "Learn how to set up Chrome Logger for server-side debugging, its header-based logging model, security considerations, and modern alternatives for development workflows."
 featured_image: /content/images/chrome-logger-debugging-guide/featured.webp
