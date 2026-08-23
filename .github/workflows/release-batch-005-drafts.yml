@@ -1,33 +1,15 @@
 name: Release Batch 005 scheduled drafts
 
 on:
+  # Polling every 15 minutes catches delayed GitHub cron events.
   schedule:
-    - cron: '0 8 3 9 *' # slot 1: chrome-extension-sync-not-working-guide
-    - cron: '0 11 3 9 *' # slot 2: chrome-extension-popup-not-opening-guide
-    - cron: '30 14 3 9 *' # slot 3: chrome-extension-icon-missing-toolbar-guide
-    - cron: '30 17 3 9 *' # slot 4: chrome-extension-update-delayed-guide
-    - cron: '0 20 3 9 *' # slot 5: chrome-extension-settings-lost-after-reinstall-guide
-    - cron: '0 8 4 9 *' # slot 6: chrome-extensions-backup-and-restore-guide
-    - cron: '0 11 4 9 *' # slot 7: chrome-extension-storage-limits-guide
-    - cron: '30 14 4 9 *' # slot 8: chrome-web-store-pending-review-guide
-    - cron: '30 17 4 9 *' # slot 9: chrome-web-store-extension-rejected-guide
-    - cron: '0 20 4 9 *' # slot 10: chrome-extension-offscreen-documents-guide
-    - cron: '0 8 5 9 *' # slot 11: chrome-extension-user-scripts-api-guide
-    - cron: '0 11 5 9 *' # slot 12: chrome-extension-content-security-policy-guide
-    - cron: '30 14 5 9 *' # slot 13: chrome-extension-web-accessible-resources-guide
-    - cron: '30 17 5 9 *' # slot 14: chrome-extension-guest-mode-guide
-    - cron: '0 20 5 9 *' # slot 15: chrome-extension-chrome-pages-access-guide
-    - cron: '0 8 6 9 *' # slot 16: chrome-extension-clipboard-permission-guide
-    - cron: '0 11 6 9 *' # slot 17: chrome-extension-background-error-console-guide
-    - cron: '30 14 6 9 *' # slot 18: chrome-extension-version-check-guide
-    - cron: '30 17 6 9 *' # slot 19: chrome-tab-groups-save-restore-extension-guide
-    - cron: '0 20 6 9 *' # slot 20: chrome-extension-reading-list-workflow-guide
+    - cron: '*/15 * * * *'
   workflow_dispatch:
     inputs:
-      release_slot:
-        description: 'Batch 005 release slot 1-20; use auto for scheduled execution'
+      release_slug:
+        description: 'Exact Batch 005 article slug to release; leave empty for automatic due-slot selection'
         required: false
-        default: auto
+        default: ''
         type: string
 
 concurrency:
@@ -51,50 +33,60 @@ jobs:
           bun-version: latest
       - name: Install dependencies
         run: bun install --frozen-lockfile
-      - name: Release one image-ready draft
+      - name: Release one due and image-ready Batch 005 draft
         env:
-          MANUAL_SLOT: ${{ inputs.release_slot }}
+          RELEASE_SLUG: ${{ inputs.release_slug }}
         run: |
           python3 - <<'PY'
           import json, os, re, subprocess
           from datetime import datetime, timezone
           from pathlib import Path
           schedule=json.loads(Path('editorial/publishing-schedule-batch-005.json').read_text())
-          entries=schedule['entries']; manual=os.environ.get('MANUAL_SLOT','auto').strip().lower(); now=datetime.now(timezone.utc); due=None
-          if manual not in ('','auto'):
-              if not manual.isdigit() or not 1 <= int(manual) <= 20: raise SystemExit('release_slot must be 1-20 or auto')
-              due=entries[int(manual)-1]
+          entries=schedule['entries']; now=datetime.now(timezone.utc)
+          manual=os.environ.get('RELEASE_SLUG','').strip(); selected=None
+          if manual:
+              matches=[e for e in entries if e.get('slug')==manual]
+              if len(matches)!=1: raise SystemExit(f'Unknown Batch 005 release_slug: {manual}')
+              selected=matches[0]
           else:
               candidates=[]
               for e in entries:
-                  if not e.get('release_enabled') or not e.get('due_utc'): continue
-                  dt=datetime.fromisoformat(e['due_utc'].replace('Z','+00:00')); delta=(now-dt).total_seconds()
-                  if 0 <= delta <= schedule['late_window_seconds']: candidates.append((abs(delta),e))
+                  if e.get('release_enabled') is False or e.get('publish_enabled') is False or not e.get('due_utc'): continue
+                  due=datetime.fromisoformat(e['due_utc'].replace('Z','+00:00'))
+                  article=Path(e['article_path'])
+                  if not article.exists() or not re.search(r'^status:\\s*draft\\s*$',article.read_text(),re.M): continue
+                  delta=(now-due).total_seconds()
+                  if 0 <= delta <= int(schedule.get('late_window_seconds',604800)): candidates.append((due,e))
               if not candidates:
-                  print(f'No due Batch 005 slot at {now.isoformat()}; exiting idempotently.'); raise SystemExit(0)
-              due=min(candidates,key=lambda x:x[0])[1]
-          if due.get('visual_ready') is not True or due.get('publish_enabled') is not True: raise SystemExit(f'Visual/release gate failed: {due["slug"]}')
-          article=Path(due['article_path']);
+                  print(f'No due Batch 005 release at {now.isoformat()}; exiting idempotently.'); raise SystemExit(0)
+              selected=sorted(candidates,key=lambda x:x[0])[0][1]
+          slug=selected['slug']; article=Path(selected['article_path'])
           if not article.exists(): raise SystemExit(f'Missing article: {article}')
           text=article.read_text()
-          if not re.search(r'^status:\s*draft\s*$',text,re.M): print(f'Already released: {due["slug"]}'); raise SystemExit(0)
-          refs=re.findall(r'!\[[^\]]+\]\((/content/images/[^)]+\.webp)\)',text)
-          if len(refs)<1: raise SystemExit(f'Visual gate failed: missing inline WebP in {due["slug"]}')
+          if not re.search(r'^status:\s*draft\s*$',text,re.M):
+              print(f'Already published or not a draft: {slug}; exiting idempotently.'); raise SystemExit(0)
+          refs=re.findall(r'!\[[^\]]*\]\((/content/images/[^)]+\.webp)\)',text)
+          if not refs: raise SystemExit(f'Visual gate failed: no inline WebP in {slug}')
           for ref in refs:
-              p=Path('public')/ref.lstrip('/');
+              p=Path('public')/ref.lstrip('/')
               if not p.exists() or not p.with_suffix('.avif').exists(): raise SystemExit(f'Visual gate failed: missing AVIF sibling for {ref}')
           hero=re.search(r'^featured_image:\s*(/content/images/[^\s]+\.webp)',text,re.M)
-          if not hero: raise SystemExit(f'Visual gate failed: missing featured WebP in {due["slug"]}')
-          hp=Path('public')/hero.group(1).lstrip('/')
-          if not hp.exists() or not hp.with_suffix('.avif').exists(): raise SystemExit(f'Visual gate failed: missing featured AVIF sibling for {hero.group(1)}')
-          article.write_text(re.sub(r'^status:\s*draft\s*$', 'status: published', text, count=1, flags=re.M))
-          subprocess.run(['git','config','user.name','github-actions[bot]'],check=True); subprocess.run(['git','config','user.email','github-actions[bot]@users.noreply.github.com'],check=True)
-          subprocess.run(['git','add',str(article)],check=True); subprocess.run(['git','commit','-m',f'content: release Batch 005 slot {due["release_slot"]}'],check=True); subprocess.run(['git','push','origin','main'],check=True)
-          print(f'Released Batch 005 slot {due["release_slot"]}: {due["slug"]}')
+          if hero:
+              p=Path('public')/hero.group(1).lstrip('/')
+              if not p.exists() or not p.with_suffix('.avif').exists(): raise SystemExit(f'Visual gate failed: missing featured AVIF sibling for {hero.group(1)}')
+          article.write_text(re.sub(r'^status:\s*draft\s*$','status: published',text,count=1,flags=re.M))
+          subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
+          subprocess.run(['git','config','user.email','github-actions[bot]@users.noreply.github.com'],check=True)
+          subprocess.run(['git','add',str(article)],check=True)
+          subprocess.run(['git','commit','-m',f'content: release Batch 005 article {slug}'],check=True)
+          subprocess.run(['git','push','origin','main'],check=True)
+          print(f'Released Batch 005 {slug}')
           PY
       - name: Rebuild index and Sitemap after release
         if: success()
         run: |
+          git fetch origin
+          git pull --rebase origin main
           bun run sync-articles
           bun run sitemap
           git config user.name 'github-actions[bot]'

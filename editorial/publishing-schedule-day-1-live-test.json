@@ -3,7 +3,7 @@
   "local_date": "2026-08-23",
   "timezone": "Africa/Algiers",
   "utc_note": "GitHub Actions cron is UTC; local times are UTC+1 proposal.",
-  "late_window_seconds": 3600,
+  "late_window_seconds": 604800,
   "execution_purpose": "Controlled five-article publication test only",
   "execution_enabled": true,
   "daily_limit": 5,
@@ -139,5 +139,8 @@
     "Only these five slugs are eligible.",
     "All other drafts remain untouched.",
     "Do not request Google indexing automatically; sitemap presence is not proof of Google indexing."
+  ],
+  "notes": [
+    "Catch-up protection: the workflow checks every 15 minutes and releases the oldest due draft, one article per run, within the seven-day safety window."
   ]
 }
