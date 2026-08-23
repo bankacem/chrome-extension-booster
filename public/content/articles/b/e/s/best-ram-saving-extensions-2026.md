@@ -30,6 +30,7 @@ views: 0
 read_time: 9
 ---
 
+
 <img src="/content/images/best-ram-saving-extensions-2026/featured.webp" alt="10 Best RAM Saving Extensions for Chrome (2026 Edition)" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Chrome Is a Memory Hog — Here Is the Fix
@@ -56,6 +57,9 @@ Extensions solve all three problems.
 I measured RAM using Chrome's built-in Task Manager (Shift+Esc) and Windows' Resource Monitor. Each extension ran for 2 days to account for normal browsing patterns.
 
 ## The 10 Extensions I Tested
+
+![Best Ram Saving Extensions 2026 Overview](/content/images/best-ram-saving-extensions-2026/best-ram-saving-extensions-2026-overview.webp "Best Ram Saving Extensions 2026 Overview")
+
 
 | Extension | RAM Saved | Reload Time | Sites Broken | Custom Timeouts | Whitelist | Ease of Setup |
 |-----------|-----------|-------------|--------------|-----------------|-----------|---------------|
@@ -97,6 +101,9 @@ After testing, the perfect 3-extension stack is:
 **3. Light Popup Blocker** (overlay blocker) — Autoplay video modals, newsletter pop-ups, and floating chat widgets use surprising amounts of CPU and memory. [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) stops them from rendering at 20 MB of RAM usage.
 
 ## Companion Extensions
+
+![Best Ram Saving Extensions 2026 Features](/content/images/best-ram-saving-extensions-2026/best-ram-saving-extensions-2026-features.webp "Best Ram Saving Extensions 2026 Features")
+
 
 | Extension | Purpose | Why It Helps | RAM Cost |
 |-----------|---------|-------------|----------|
