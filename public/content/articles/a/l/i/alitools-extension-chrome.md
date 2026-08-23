@@ -33,6 +33,7 @@ created_at: '2026-01-29T15:42:11.896053+00:00'
 updated_at: '2026-06-05T18:00:00.000000+00:00'
 ---
 
+
 <img src="/content/images/alitools-extension-chrome/featured.webp" alt="AliTools Extension Chrome: The Ultimate Alibaba Shopping Companion" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Table of Contents
@@ -51,6 +52,9 @@ AliTools is a Chrome extension for Alibaba shoppers. It adds supplier verificati
 I tested AliTools for two weeks while sourcing products across 5 categories (electronics, home goods, apparel, packaging, and pet supplies). I placed test orders with 3 suppliers to verify the data accuracy. Here is what I found. For comparison, I also used [AliTools' own site](https://alitools.com/) and read [AliExpress dropshipping guides](https://www.salehoo.com/blog/aliexpress-dropshipping) for sourcing best practices.
 
 ## Features I Tested {#features}
+
+![Alitools Extension Chrome Overview](/content/images/alitools-extension-chrome/alitools-extension-chrome-overview.webp "Alitools Extension Chrome Overview")
+
 
 **Supplier Verification.** AliTools flags suppliers with positive transaction history, verified badges, and high response rates. In my testing, the data matched the actual supplier profiles 9 out of 10 times. One flagged "verified" supplier had fake reviews — a risk no tool can fully eliminate, but AliTools caught the warning signs faster than manual checking.
 
@@ -74,6 +78,9 @@ I tested AliTools for two weeks while sourcing products across 5 categories (ele
 The time savings are real. I cut product research time by about 50%. The extension does not replace due diligence — you should still message suppliers directly — but it eliminates the first round of manual grunt work.
 
 ## What AliTools Misses {#misses}
+
+![Alitools Extension Chrome Features](/content/images/alitools-extension-chrome/alitools-extension-chrome-features.webp "Alitools Extension Chrome Features")
+
 
 AliTools has three weaknesses I noticed during testing. First, the supplier verification score is based on Alibaba's own data, which means fake reviews can still slip through — one "verified" supplier I tested had 40+ five-star reviews posted within the same week, a clear red flag. Second, the price comparison feature only works when multiple suppliers list the same product with identical specifications, which happens less often than you would expect. Third, the Chrome extension itself is minimal — it shows data but does not let you export, annotate, or screenshot anything.
 
