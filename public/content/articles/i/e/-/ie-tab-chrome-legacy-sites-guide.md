@@ -27,7 +27,7 @@ The extension is especially beneficial in enterprises that need to maintain acce
 To set up and start using IE Tab in Chrome, follow these steps:
 
 1. **Install the Extension**
-   - Visit the [official IE Tab page on the Chrome Web Store](https://chrome.google.com/webstore/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd?hl=en-US).
+   - Visit the [official IE Tab page on the Chrome Web Store](https://chromewebstore.google.com/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd?hl=en-US).
    - Click on **Add to Chrome**. You’ll be prompted to confirm by clicking **Add Extension**.
 
 2. **Download the IE Tab Helper Tool**
@@ -171,4 +171,4 @@ For a related workflow, see the [Chrome browser compatibility guide](/blog/which
 ## References  
 
 1. [IE Tab Official Website](https://www.ietab.net/)  
-2. [IE Tab Chrome Web Store Listing](https://chrome.google.com/webstore/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd?hl=en-US)
+2. [IE Tab Chrome Web Store Listing](https://chromewebstore.google.com/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd?hl=en-US)
