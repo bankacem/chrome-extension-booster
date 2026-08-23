@@ -25,6 +25,31 @@
     "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
+    "id": "aa338d09-c7d2-45ca-b7b3-065e78551970",
+    "title": "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits",
+    "slug": "chrome-logger-debugging-guide",
+    "description": "Learn how to set up Chrome Logger for server-side debugging, its header-based logging model, security considerations, and modern alternatives for development workflows.",
+    "meta_description": "Learn how to set up Chrome Logger for server-side debugging, its header-based logging model, security considerations, and modern alternatives for development workflows.",
+    "excerpt": "Understand Chrome Logger's server-side debugging capabilities, setup process, security concerns, and alternatives for safer development workflows.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/content/images/chrome-logger-debugging-guide/featured.webp",
+    "featured_image": "/content/images/chrome-logger-debugging-guide/featured.webp",
+    "reading_time": 6,
+    "read_time": 6,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "browser extensions"
+    ],
+    "keywords": [
+      "chrome logger"
+    ],
+    "canonicalPath": "/blog/chrome-logger-debugging-guide",
+    "updated_at": "2026-08-23T00:00:00.000Z"
+  },
+  {
     "id": "77f85717-3324-4a51-ba1f-8a465bb80781",
     "title": "Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely",
     "slug": "chrome-extensions-incognito-guide",
