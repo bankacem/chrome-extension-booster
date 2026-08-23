@@ -1,0 +1,143 @@
+{
+  "schedule_id": "extensionto-day-1-live-test-2026-08-23",
+  "local_date": "2026-08-23",
+  "timezone": "Africa/Algiers",
+  "utc_note": "GitHub Actions cron is UTC; local times are UTC+1 proposal.",
+  "late_window_seconds": 3600,
+  "execution_purpose": "Controlled five-article publication test only",
+  "execution_enabled": true,
+  "daily_limit": 5,
+  "entries": [
+    {
+      "sequence": 1,
+      "batch": "batch-002",
+      "batch_index": 1,
+      "topic_id": "b002-01",
+      "title": "Zoom Chrome Extension: What It Does, How to Set It Up, and What It Is Not",
+      "keyword": "extension zoom chrome",
+      "slug": "zoom-chrome-extension-guide",
+      "branch": "refine/batch-002-b002-01",
+      "commit": "62f32651be049e8a4398810b6f78a420db1f2640",
+      "article_path": "public/content/articles/z/o/o/zoom-chrome-extension-guide.md",
+      "status": "draft",
+      "slot": 1,
+      "due_utc": "2026-08-23T13:30:00Z",
+      "local_time": "13:30 UTC+1",
+      "release_enabled": true,
+      "indexing_request_enabled": false,
+      "status_before": "draft",
+      "status_after": "published",
+      "verification_required": [
+        "production_url_http_200",
+        "article_index_contains_slug",
+        "sitemap_contains_canonical_url"
+      ]
+    },
+    {
+      "sequence": 2,
+      "batch": "batch-002",
+      "batch_index": 2,
+      "topic_id": "b002-02",
+      "title": "Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely",
+      "keyword": "extension chrome incognito",
+      "slug": "chrome-extensions-incognito-guide",
+      "branch": "refine/batch-002-b002-02",
+      "commit": "787ee475d8c75c88c88dc1000bec0fcf67bc13b8",
+      "article_path": "public/content/articles/c/h/r/chrome-extensions-incognito-guide.md",
+      "status": "draft",
+      "slot": 2,
+      "due_utc": "2026-08-23T15:00:00Z",
+      "local_time": "15:00 UTC+1",
+      "release_enabled": true,
+      "indexing_request_enabled": false,
+      "status_before": "draft",
+      "status_after": "published",
+      "verification_required": [
+        "production_url_http_200",
+        "article_index_contains_slug",
+        "sitemap_contains_canonical_url"
+      ]
+    },
+    {
+      "sequence": 3,
+      "batch": "batch-002",
+      "batch_index": 3,
+      "topic_id": "b002-03",
+      "title": "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits",
+      "keyword": "chrome logger",
+      "slug": "chrome-logger-debugging-guide",
+      "branch": "refine/batch-002-b002-03",
+      "commit": "1978518274abbe95a387bb7e7692d852a620ea93",
+      "article_path": "public/content/articles/c/h/r/chrome-logger-debugging-guide.md",
+      "status": "draft",
+      "slot": 3,
+      "due_utc": "2026-08-23T16:30:00Z",
+      "local_time": "16:30 UTC+1",
+      "release_enabled": true,
+      "indexing_request_enabled": false,
+      "status_before": "draft",
+      "status_after": "published",
+      "verification_required": [
+        "production_url_http_200",
+        "article_index_contains_slug",
+        "sitemap_contains_canonical_url"
+      ]
+    },
+    {
+      "sequence": 4,
+      "batch": "batch-002",
+      "batch_index": 4,
+      "topic_id": "b002-04",
+      "title": "Java Plugins in Chrome: What Still Works, What Does Not, and Safer Alternatives",
+      "keyword": "chrome plugins java",
+      "slug": "java-plugins-chrome-compatibility-guide",
+      "branch": "refine/batch-002-b002-04",
+      "commit": "4bbcc0d414de3892ff07700bdd8eadb4451b63ea",
+      "article_path": "public/content/articles/j/a/v/java-plugins-chrome-compatibility-guide.md",
+      "status": "draft",
+      "slot": 4,
+      "due_utc": "2026-08-23T18:00:00Z",
+      "local_time": "18:00 UTC+1",
+      "release_enabled": true,
+      "indexing_request_enabled": false,
+      "status_before": "draft",
+      "status_after": "published",
+      "verification_required": [
+        "production_url_http_200",
+        "article_index_contains_slug",
+        "sitemap_contains_canonical_url"
+      ]
+    },
+    {
+      "sequence": 5,
+      "batch": "batch-002",
+      "batch_index": 5,
+      "topic_id": "b002-05",
+      "title": "IE Tab for Chrome: Run Legacy Sites, Configure URL Rules, and Manage the Risks",
+      "keyword": "ie tab chrome",
+      "slug": "ie-tab-chrome-legacy-sites-guide",
+      "branch": "refine/batch-002-b002-05",
+      "commit": "4f78e94e9cafa7ce7b8e53287bd9cedb2b5132f8",
+      "article_path": "public/content/articles/i/e/-/ie-tab-chrome-legacy-sites-guide.md",
+      "status": "draft",
+      "slot": 5,
+      "due_utc": "2026-08-23T19:30:00Z",
+      "local_time": "19:30 UTC+1",
+      "release_enabled": true,
+      "indexing_request_enabled": false,
+      "status_before": "draft",
+      "status_after": "published",
+      "verification_required": [
+        "production_url_http_200",
+        "article_index_contains_slug",
+        "sitemap_contains_canonical_url"
+      ]
+    }
+  ],
+  "after_each_release": "Existing publish-pipeline.yml rebuilds index and sitemap on the main push; verify before relying on the next slot.",
+  "safety": [
+    "Only these five slugs are eligible.",
+    "All other drafts remain untouched.",
+    "Do not request Google indexing automatically; sitemap presence is not proof of Google indexing."
+  ]
+}

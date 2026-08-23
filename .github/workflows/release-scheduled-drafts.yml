@@ -1,0 +1,92 @@
+name: Release scheduled draft test
+
+on:
+  schedule:
+    # 2026-08-23, Africa/Algiers (UTC+1): 14:30, 16:00, 17:30, 19:00, 20:30.
+    # GitHub Actions cron is UTC and may start late; the script accepts a bounded window.
+    - cron: '30 13 23 8 *'
+    - cron: '0 15 23 8 *'
+    - cron: '30 16 23 8 *'
+    - cron: '0 18 23 8 *'
+    - cron: '30 19 23 8 *'
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Test slot number (1-5); leave auto for scheduled execution'
+        required: false
+        default: auto
+        type: string
+
+concurrency:
+  group: release-scheduled-drafts-day-1
+  cancel-in-progress: false
+
+jobs:
+  release-one:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Release only the due slot
+        env:
+          MANUAL_SLOT: ${{ inputs.slot }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess, sys
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+
+          schedule_path = Path('editorial/publishing-schedule-day-1-live-test.json')
+          schedule = json.loads(schedule_path.read_text())
+          entries = schedule['entries']
+          manual = os.environ.get('MANUAL_SLOT', 'auto').strip().lower()
+          now = datetime.now(timezone.utc)
+          local = now + timedelta(hours=1)
+
+          due = None
+          if manual not in ('', 'auto'):
+              if not manual.isdigit() or not 1 <= int(manual) <= len(entries):
+                  raise SystemExit('Manual slot must be 1-5 or auto')
+              due = entries[int(manual)-1]
+          else:
+              # Only the five planned windows on 2026-08-23 UTC are eligible.
+              if local.date().isoformat() != schedule['local_date']:
+                  print(f'No release: local date is {local.date()}, target is {schedule["local_date"]}.')
+                  raise SystemExit(0)
+              best = []
+              for e in entries:
+                  due_at = datetime.fromisoformat(e['due_utc'].replace('Z','+00:00'))
+                  delta = (now - due_at).total_seconds()
+                  if 0 <= delta <= schedule['late_window_seconds']:
+                      best.append((abs(delta), e))
+              if best:
+                  due = min(best, key=lambda x: x[0])[1]
+              else:
+                  print(f'No due slot at {now.isoformat()}; scheduled runs are idempotent and will exit.')
+                  raise SystemExit(0)
+
+          if due['release_enabled'] is not True:
+              raise SystemExit('Refusing: selected slot is not release-enabled')
+          article = Path(due['article_path'])
+          if not article.exists():
+              raise SystemExit(f'Missing article: {article}')
+          text = article.read_text()
+          if not re.search(r'^status:\s*draft\s*$', text, re.M):
+              print(f'Slot already released or unexpected status: {due["slug"]}')
+              raise SystemExit(0)
+          updated = re.sub(r'^status:\s*draft\s*$', 'status: published', text, count=1, flags=re.M)
+          article.write_text(updated)
+          subprocess.run(['git','config','user.name','github-actions[bot]'], check=True)
+          subprocess.run(['git','config','user.email','github-actions[bot]@users.noreply.github.com'], check=True)
+          subprocess.run(['git','add',str(article)], check=True)
+          subprocess.run(['git','commit','-m',f'content: release scheduled draft slot {due["slot"]}'], check=True)
+          subprocess.run(['git','push','origin','main'], check=True)
+          print(f'Released slot {due["slot"]}: {due["slug"]}')
+          print('The existing Publish Articles Pipeline will rebuild the article index and sitemap after this push.')
+          PY
