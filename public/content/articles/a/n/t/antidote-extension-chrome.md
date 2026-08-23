@@ -31,6 +31,7 @@ created_at: '2026-01-29T15:46:52.027691+00:00'
 updated_at: '2026-06-06T04:00:00.000000+00:00'
 ---
 
+
 <img src="/content/images/antidote-extension-chrome/featured.webp" alt="Antidote Extension Chrome Review 2026: Best French Writing Assistant?" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Table of Contents
@@ -50,6 +51,9 @@ Antidote is a writing assistant developed by Druide Informatique, a Canadian com
 I tested Antidote's Chrome extension for 14 days across Google Docs, Gmail, WordPress, LinkedIn, Twitter, and several French-language news sites (Le Monde, Le Figaro, Radio-Canada). I ran 20+ texts through it — some in English, some in French, some mixed (franglais) — and compared results against Grammarly and ProWritingAid on the same texts. I calculated error detection rates by intentionally inserting 50 common grammar mistakes into a French test document and counting how many each tool caught. For reference, I also read [Antidote's official site](https://www.antidote.info/en) and [comparison reviews on writing tool forums](https://www.reddit.com/r/French/comments/antidote_vs_grammarly/).
 
 ## Features I Tested {#features}
+
+![Antidote Extension Chrome Overview](/content/images/antidote-extension-chrome/antidote-extension-chrome-overview.webp "Antidote Extension Chrome Overview")
+
 
 **French Grammar Checker.** This is Antidote's killer feature. It catches errors Grammarly misses in French — agreement, conjugation, pronoun placement. In my testing, it flagged 94% of intentionally planted errors in a French text versus Grammarly's 62%.
 
@@ -81,6 +85,9 @@ I tested Antidote's Chrome extension for 14 days across Google Docs, Gmail, Word
 Antidote wins for French writing by a wide margin. Grammarly wins for English. ProWritingAid is the best for in-depth style analysis.
 
 ## Companion Extensions for Writers {#companions}
+
+![Antidote Extension Chrome Features](/content/images/antidote-extension-chrome/antidote-extension-chrome-features.webp "Antidote Extension Chrome Features")
+
 
 A good writing assistant is one part of a writer's toolkit. Here is what else I use:
 
