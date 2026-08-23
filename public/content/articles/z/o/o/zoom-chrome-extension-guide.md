@@ -1,5 +1,5 @@
 ---
-id: b002-01-draft
+id: e6c28b0f-a601-4443-ba01-12325ba8386d
 title: "Zoom Chrome Extension: What It Does, How to Set It Up, and What It Is Not"
 slug: zoom-chrome-extension-guide
 status: draft
@@ -11,7 +11,7 @@ tags: [Chrome, browser extensions]
 keywords: ["extension zoom chrome"]
 author: Miccart Phen
 published_at: 2026-08-23
-read_time: 8
+read_time: 6
 ---
 
 ## Understanding the Zoom Chrome Extension
