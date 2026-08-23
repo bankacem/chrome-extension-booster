@@ -18,6 +18,7 @@ description: >-
 category: "Chrome Extensions"
 ---
 
+
 ## 📚 Table of Contents
 - [Why You Need an AI Translator in 2026](#why-you-need-an-ai-translator-in-2026)
 - [Top 3 Free AI Translator Extensions Compared](#top-3-free-ai-translator-extensions-compared)
@@ -46,6 +47,9 @@ This guide names the **real tools that work** — for free — in 2026.
 ---
 
 ## Top 3 Free Chrome Extensions Compared
+
+![Ai Translator Chrome Extension Free Overview](/content/images/ai-translator-chrome-extension-free/ai-translator-chrome-extension-free-overview.webp "Ai Translator Chrome Extension Free Overview")
+
 
 | Extension | Free Tier Limit | Languages | Full Page Translation | Best For |
 |-----------|----------------|-----------|----------------------|-----------|
@@ -77,6 +81,9 @@ Google has retired the old store URL. The **only** official URL in 2026 is:
 ---
 
 ## Real-World Walkthrough
+
+![Ai Translator Chrome Extension Free Features](/content/images/ai-translator-chrome-extension-free/ai-translator-chrome-extension-free-features.webp "Ai Translator Chrome Extension Free Features")
+
 
 **Scenario 1 — Reading a foreign news article:**  
 You find a Spanish article about AI regulation. Your Spanish is basic.
@@ -140,6 +147,9 @@ You open a French PDF in Chrome. Academic paper. Dense terminology.
 ---
 
 ## Privacy & Security Guide
+
+![Ai Translator Chrome Extension Free Guide](/content/images/ai-translator-chrome-extension-free/ai-translator-chrome-extension-free-guide.webp "Ai Translator Chrome Extension Free Guide")
+
 
 **Before installing any AI translator extension, check these 3 things:**
 
