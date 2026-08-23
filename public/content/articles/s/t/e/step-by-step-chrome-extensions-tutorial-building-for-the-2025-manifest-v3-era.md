@@ -1,7 +1,7 @@
 ---
-seo_title: "Build Chrome Extensions for Manifest V3"
+seo_title: "Build Chrome Extensions with Manifest V3"
 id: c18dec57-79d4-44fa-968e-01c6b9c4960e
-title: 'Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3 Era'
+title: "Step-by-Step Chrome Extensions Tutorial: Building for the Manifest V3 Era"
 slug: step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era
 excerpt: >-
   A complete, hands-on tutorial for building Chrome extensions with Manifest V3 in 2025.
@@ -10,20 +10,17 @@ excerpt: >-
   checklist.
 featured_image: >-
   /content/images/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era/featured.webp
-category: Security & Privacy
+category: "Developer Tools"
 tags:
-  - >-
-    Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3
-    Era
-keywords:
+  - developers
   - Manifest V3
-  - Chrome extension tutorial
-  - service worker
-  - content script
-  - Chrome Web Store publishing
-meta_description: >-
-  Build Chrome extensions with Manifest V3 in 2025. Step-by-step guide covering
-  manifest.json, service workers, content scripts, permissions, and Chrome Web Store publishing.
+  - tutorial
+keywords:
+  - Manifest V3 tutorial
+  - build Chrome extension
+  - Chrome service worker
+  - publish Chrome extension
+meta_description: "Build and publish a Chrome extension with Manifest V3, service workers, content scripts, permissions, testing, and Web Store preparation."
 status: published
 published_at: '2026-03-18T20:11:00.24+00:00'
 scheduled_at: '2026-03-18T20:11:00+00:00'
@@ -105,7 +102,7 @@ howto:
 
 <img src="/content/images/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era/featured.webp" alt="Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3 Era" width="1200" height="630" loading="lazy" class="featured-image">
 
-Yes, you can still build and publish Chrome extensions in 2025 — but only if you use Manifest V3. Google fully retired Manifest V2 in mid-2025, which means persistent background pages, wide-reaching host permissions, and remotely hosted code are no longer viable. This tutorial walks you through every technical step: scaffolding a project, writing a `manifest.json`, implementing service workers and content scripts, managing permissions, and publishing to the [Chrome Web Store](/blog/chrome-web-store-guide) under the new review guidelines.
+You can build and publish Chrome extensions with Manifest V3. Chrome’s official [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline) records that Manifest V2 was disabled for all users in Chrome 138 on July 24, 2025, while remaining Manifest V2 extensions are scheduled for removal from the Chrome Web Store on August 31, 2026. This tutorial covers project setup, `manifest.json`, service workers, content scripts, permissions, testing, and publishing.
 
 ## Manifest V2 vs V3: What Changed
 
