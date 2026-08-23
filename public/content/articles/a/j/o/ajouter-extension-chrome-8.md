@@ -33,6 +33,7 @@ created_at: '2026-01-24T13:04:14.703533+00:00'
 updated_at: '2026-06-05T14:00:00.000000+00:00'
 ---
 
+
 <img src="/content/images/ajouter-extension-chrome-8/featured.webp" alt="How to Ajouter Extension Chrome: A Step-by-Step Guide to Enhancing Your Browser" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Table of Contents
@@ -52,6 +53,9 @@ Chrome extensions are small programs that add features to your browser — ad bl
 I spent a week installing and testing 30+ extensions across 5 categories. I compared them on memory usage, feature depth, privacy impact, and real-world usefulness. I also read [How-To Geek's guide on choosing extensions](https://www.howtogeek.com/809946/best-chrome-extensions/) and [TechRadar's best extensions list for 2026](https://www.techradar.com/best/best-chrome-extensions). Both cover the basics well. What they miss is the practical security angle and the companion tools that make the popular extensions actually usable.
 
 ## How to Ajouter Extension Chrome {#how-to}
+
+![Ajouter Extension Chrome 8 Overview](/content/images/ajouter-extension-chrome-8/ajouter-extension-chrome-8-overview.webp "Ajouter Extension Chrome 8 Overview")
+
 
 Ajouter extension Chrome takes about 30 seconds:
 
@@ -78,6 +82,9 @@ I grouped the 30+ extensions I tested into 5 categories. Here is what I found:
 **Popup & Distraction Control.** Pop-up blockers are among the oldest Chrome extensions, but most are either too aggressive (break site functionality) or not aggressive enough (let intrusive ads through). [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) hit the sweet spot in my testing — it blocked 98% of pop-ups on news and streaming sites without breaking login forms or payment flows.
 
 ## Performance Comparison Table {#table}
+
+![Ajouter Extension Chrome 8 Features](/content/images/ajouter-extension-chrome-8/ajouter-extension-chrome-8-features.webp "Ajouter Extension Chrome 8 Features")
+
 
 | Category | Best Extension | Runner-Up | Second Runner-Up |
 |----------|---------------|-----------|-----------------|
