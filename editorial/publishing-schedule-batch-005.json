@@ -25,7 +25,7 @@
   "github_push_enabled": true,
   "sitemap_update_after_each_release": true,
   "indexing_request_enabled": false,
-  "late_window_seconds": 2700,
+  "late_window_seconds": 604800,
   "image_gate": "Each article must contain one unique inline WebP reference with an AVIF sibling and a unique featured WebP with an AVIF sibling.",
   "google_indexing_note": "This workflow performs technical publication and Sitemap updates only. Do not use Google Indexing API for general blog guides; Search Console is required for Google indexing evidence.",
   "entries": [
@@ -492,6 +492,7 @@
   "notes": [
     "This schedule starts after the active 50-article schedule ends on 2026-09-02.",
     "Each slot is idempotent and exits when the article is no longer draft.",
-    "Articles remain draft in Git until the corresponding release slot runs."
+    "Articles remain draft in Git until the corresponding release slot runs.",
+    "Catch-up protection: the workflow checks every 15 minutes and releases the oldest due draft, one article per run, within the seven-day safety window."
   ]
 }

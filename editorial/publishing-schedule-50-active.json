@@ -37,7 +37,7 @@
   "indexing_request_enabled": false,
   "google_indexing_note": "Do not use Google Indexing API for general blog guides; verify technical publication and Sitemap, and use Search Console for Google indexing evidence.",
   "image_gate": "Every pending article must contain its unique inline WebP reference and a matching AVIF sibling before release.",
-  "late_window_seconds": 2700,
+  "late_window_seconds": 604800,
   "entries": [
     {
       "sequence": 1,
@@ -1245,6 +1245,7 @@
     "Zoom is recorded as completed from the earlier controlled release and must never be dispatched again.",
     "The final day has four remaining articles because one of the 50 was already published; do not create a duplicate release to force five.",
     "Every release job is idempotent: if the article is no longer draft, it exits without changing content.",
-    "The release workflow rebuilds articles-index.json and sitemap.xml after each successful article release."
+    "The release workflow rebuilds articles-index.json and sitemap.xml after each successful article release.",
+    "Catch-up protection: the workflow checks every 15 minutes and releases the oldest due draft, one article per run, within the seven-day safety window."
   ]
 }
