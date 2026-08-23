@@ -31,6 +31,7 @@ created_at: '2026-03-16T18:07:25.423807+00:00'
 updated_at: '2026-06-06T06:00:00.000000+00:00'
 ---
 
+
 <img src="/content/images/autotab-discard-vs-onetab/featured.webp" alt="AutoTab Discard vs OneTab vs ProTab Suspender: Best Tab Manager 2026" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Table of Contents
@@ -50,6 +51,9 @@ Chrome is a memory hog. Open 30 tabs and your system starts swapping. Open 50 an
 I tested three approaches for a week across my daily workflow — research (20+ tabs), writing (5 tabs), and development (15+ tabs). I measured RAM savings, tab recovery speed, and workflow disruption. For reference, I read [Chrome's own documentation on tab discarding](https://support.google.com/chrome/answer/95467) and [How-To Geek's guide on saving RAM in Chrome](https://www.howtogeek.com/437113/how-to-save-ram-in-google-chrome/).
 
 ## The 3 I Tested {#tested}
+
+![Autotab Discard Vs Onetab Overview](/content/images/autotab-discard-vs-onetab/autotab-discard-vs-onetab-overview.webp "Autotab Discard Vs Onetab Overview")
+
 
 **AutoTab Discard** — Automatically discards tabs after a set period of inactivity. Discarded tabs are removed from memory but remain visible in the tab bar (greyed out with a spinner icon). Clicking a discarded tab reloads it (takes 1–3 seconds depending on page complexity). Free and open source. Customizable timeout per domain. Supports a whitelist for tabs you never want discarded.
 
@@ -71,6 +75,9 @@ I tested three approaches for a week across my daily workflow — research (20+ 
 | Price | Free | Free | Free |
 
 ## The Real Problem with Tab Managers {#gaps}
+
+![Autotab Discard Vs Onetab Features](/content/images/autotab-discard-vs-onetab/autotab-discard-vs-onetab-features.webp "Autotab Discard Vs Onetab Features")
+
 
 Every tab manager has the same blind spots. Here is what they miss:
 
