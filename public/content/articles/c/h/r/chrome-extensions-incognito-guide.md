@@ -2,7 +2,7 @@
 id: 77f85717-3324-4a51-ba1f-8a465bb80781
 title: "Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely"
 slug: chrome-extensions-incognito-guide
-status: draft
+status: published
 excerpt: "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode while understanding privacy considerations and restrictions."
 meta_description: "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode. Understand privacy, permissions, and managed device policies."
 featured_image: /content/images/chrome-extensions-incognito-guide/featured.webp
