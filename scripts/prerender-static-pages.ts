@@ -2,6 +2,7 @@ import fs from "fs-extra";
 import path from "path";
 import yaml from "js-yaml";
 import { marked } from "marked";
+import { getEditorialProfile } from "../src/lib/editorialProfiles";
 
 const ROOT = process.cwd();
 const DIST_DIR = path.join(ROOT, "dist");
@@ -9,6 +10,14 @@ const TEMPLATE_PATH = path.join(DIST_DIR, "index.html");
 const SITE_URL = "https://extensionto.com";
 const SITE_NAME = "ExtensionTo";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
+
+type FAQItem = { question: string; answer: string };
+
+const LOCALE_BY_LANG: Record<string, string> = {
+  en: "en_US",
+  fr: "fr_FR",
+  es: "es_ES",
+};
 
 type ArticleIndexEntry = {
   id?: string;
@@ -91,6 +100,16 @@ function replaceHead(template: string, head: string): string {
     .replace("</head>", `${head}\n</head>`);
 }
 
+function replaceHtmlLang(html: string, lang: string): string {
+  // Vite bakes <html lang="en"> into the template at build time. The React
+  // SEO component would fix this at runtime via <html lang>, but crawlers
+  // see the prerendered HTML before JS runs. We must replace it statically
+  // for every FR/ES page, otherwise the page's declared language (in JSON-LD
+  // inLanguage and in hreflang alternates) contradicts the <html lang="en">
+  // attribute — a mixed signal Google flags.
+  return html.replace(/<html\s+lang=["'][^"']*["']/i, `<html lang="${lang}"`);
+}
+
 function replaceRoot(template: string, body: string): string {
   return template.replace(/<div id="root">[\s\S]*?<\/div>/i, `<div id="root">${body}</div>`);
 }
@@ -103,17 +122,34 @@ function buildHead(options: {
   image?: string;
   noindex?: boolean;
   schema?: Record<string, unknown>;
+  lang?: "en" | "fr" | "es";
   alternateLanguages?: { lang: "en" | "fr" | "es"; url: string }[];
 }): string {
+  const lang = options.lang || "en";
   const canonical = `${SITE_URL}${options.canonicalPath}`;
   const title = `${options.title} | ${SITE_NAME}`;
   const robots = `<meta data-rh="true" name="robots" content="${options.noindex ? "noindex,follow" : "index,follow,max-image-preview:large"}" />`;
   const alternates = (options.alternateLanguages || [])
-    .map(({ lang, url }) => `<link data-rh="true" rel="alternate" hrefLang="${lang}" href="${escapeHtml(url)}" />`)
+    .map(({ lang: l, url }) => `<link data-rh="true" rel="alternate" hrefLang="${l}" href="${escapeHtml(url)}" />`)
     .join("\n    ");
-  const xDefault = options.alternateLanguages?.some(({ lang }) => lang === "en")
-    ? `<link data-rh="true" rel="alternate" hrefLang="x-default" href="${escapeHtml(options.alternateLanguages.find(({ lang }) => lang === "en")?.url || canonical)}" />`
+  const xDefault = options.alternateLanguages?.some(({ lang: l }) => l === "en")
+    ? `<link data-rh="true" rel="alternate" hrefLang="x-default" href="${escapeHtml(options.alternateLanguages.find(({ lang: l }) => l === "en")?.url || canonical)}" />`
     : "";
+  // og:locale tells Facebook/LinkedIn/Slack/WhatsApp which language the page
+  // is in when generating a social preview. og:locale:alternate advertises
+  // the other language versions that exist for this URL. Both are produced
+  // by the React SEO.tsx component at runtime, but crawlers that don't run
+  // JS would otherwise miss them entirely on the prerendered HTML.
+  const ogLocale = LOCALE_BY_LANG[lang] || "en_US";
+  const ogAlternateLocales = (options.alternateLanguages || [])
+    .filter(({ lang: l }) => l !== lang)
+    .map(({ lang: l }) => LOCALE_BY_LANG[l])
+    .filter(Boolean);
+  const ogLocaleTags = `<meta data-rh="true" property="og:locale" content="${ogLocale}" />${
+    ogAlternateLocales.length
+      ? "\n    " + ogAlternateLocales.map((l) => `<meta data-rh="true" property="og:locale:alternate" content="${l}" />`).join("\n    ")
+      : ""
+  }`;
   const schema = options.schema ? `<script data-rh="true" type="application/ld+json">${JSON.stringify(options.schema)}</script>` : "";
   return `
     <title data-rh="true">${escapeHtml(title)}</title>
@@ -128,6 +164,7 @@ function buildHead(options: {
     <meta data-rh="true" property="og:type" content="${options.type || "website"}" />
     <meta data-rh="true" property="og:image" content="${escapeHtml(options.image || DEFAULT_OG_IMAGE)}" />
     <meta data-rh="true" property="og:site_name" content="${SITE_NAME}" />
+    ${ogLocaleTags}
     <meta data-rh="true" name="twitter:card" content="summary_large_image" />
     <meta data-rh="true" name="twitter:title" content="${escapeHtml(title)}" />
     <meta data-rh="true" name="twitter:description" content="${escapeHtml(options.description)}" />
@@ -196,8 +233,21 @@ function parseExtensions(): ExtensionEntry[] {
   }).filter((entry) => entry.slug && entry.name);
 }
 
-async function writeRoute(route: string, template: string, title: string, description: string, body: string, type: "website" | "article", schema?: Record<string, unknown>, alternateLanguages?: { lang: "en" | "fr" | "es"; url: string }[]) {
-  const html = replaceRoot(replaceHead(template, buildHead({ title, description, canonicalPath: route, type, schema, alternateLanguages })), body);
+async function writeRoute(route: string, template: string, title: string, description: string, body: string, type: "website" | "article", schema?: Record<string, unknown>, alternateLanguages?: { lang: "en" | "fr" | "es"; url: string }[], lang: "en" | "fr" | "es" = "en", schemas?: Record<string, unknown>[]) {
+  let html = replaceRoot(replaceHead(template, buildHead({ title, description, canonicalPath: route, type, schema, alternateLanguages, lang })), body);
+  // Replace <html lang="en"> for non-English routes. Vite's index.html
+  // template hardcodes lang="en"; without this replacement, every FR/ES
+  // page would ship with the wrong document language attribute.
+  if (lang !== "en") {
+    html = replaceHtmlLang(html, lang);
+  }
+  // Append additional JSON-LD schemas (e.g. BreadcrumbList, FAQPage) as
+  // separate <script> blocks after the main schema. The single-schema
+  // path above remains for backwards compatibility with existing callers.
+  if (schemas && schemas.length) {
+    const extraScripts = schemas.map((s) => `\n    <script data-rh="true" type="application/ld+json">${JSON.stringify(s)}</script>`).join("");
+    html = html.replace("</head>", `${extraScripts}\n  </head>`);
+  }
   const outputDir = path.join(DIST_DIR, route.replace(/^\//, ""));
   await fs.ensureDir(outputDir);
   await fs.writeFile(path.join(outputDir, "index.html"), html, "utf8");
@@ -223,7 +273,11 @@ async function prerenderLocalizedContent(template: string, lang: string) {
     { lang: "fr" as const, url: `${SITE_URL}/fr` },
     { lang: "es" as const, url: `${SITE_URL}/es` },
   ];
-  const homeHtml = replaceRoot(replaceHead(template, buildHead({ title: copy.homeTitle, description: copy.blogDescription, canonicalPath: localePrefix, schema: homeSchema, alternateLanguages: homeAlternates })), homeBody);
+  // FR/ES home: pass `lang` so buildHead emits the correct og:locale + og:locale:alternate,
+  // and replaceHtmlLang so the <html lang="en"> from the Vite template becomes
+  // <html lang="fr"> / <html lang="es"> on the prerendered file.
+  let homeHtml = replaceRoot(replaceHead(template, buildHead({ title: copy.homeTitle, description: copy.blogDescription, canonicalPath: localePrefix, schema: homeSchema, alternateLanguages: homeAlternates, lang: lang as "fr" | "es" })), homeBody);
+  homeHtml = replaceHtmlLang(homeHtml, lang);
   await fs.ensureDir(path.join(DIST_DIR, lang));
   await fs.writeFile(path.join(DIST_DIR, lang, "index.html"), homeHtml, "utf8");
 
@@ -234,7 +288,7 @@ async function prerenderLocalizedContent(template: string, lang: string) {
     { lang: "fr" as const, url: `${SITE_URL}/fr/blog` },
     { lang: "es" as const, url: `${SITE_URL}/es/blog` },
   ];
-  await writeRoute(`${localePrefix}/blog`, template, copy.blogTitle, copy.blogDescription, blogBody, "website", undefined, blogAlternates);
+  await writeRoute(`${localePrefix}/blog`, template, copy.blogTitle, copy.blogDescription, blogBody, "website", undefined, blogAlternates, lang as "fr" | "es");
 
   let written = 0;
   for (const article of articles) {
@@ -246,12 +300,64 @@ async function prerenderLocalizedContent(template: string, lang: string) {
     const description = String(article.meta_description || article.excerpt || article.description || frontmatterString(parsed.frontmatter, "meta_description")).replace(/\s+/g, " ").trim();
     const image = absoluteImage(article.featured_image || frontmatterString(parsed.frontmatter, "featured_image") || undefined);
     const bodyHtml = marked.parse(parsed.content, { async: false }) as string;
-    const body = `<article><h1>${escapeHtml(title)}</h1>${bodyHtml}</article>`;
-    const schema = { "@context": "https://schema.org", "@type": "Article", headline: title, description, image, inLanguage: lang, author: { "@type": "Person", name: article.author || "Editorial team" }, datePublished: article.published_at, dateModified: article.updated_at || article.published_at, mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}${localePrefix}/blog/${slug}` } };
-    await writeRoute(`${localePrefix}/blog/${slug}`, template, title, description, body, "article", schema, [
+    // Pull editorial profile (mirrors what prerender-articles.ts does for EN) so the
+    // translated page also carries a real, named author with a link to the editorial
+    // policy page — instead of just "Editorial team". This closes the EEAT gap between
+    // EN and FR/ES article pages.
+    const editorialProfile = getEditorialProfile(String(article.author || frontmatterString(parsed.frontmatter, "author") || ""));
+    const dateLabel = article.published_at ? String(article.published_at).slice(0, 10) : "";
+    const updatedLabel = article.updated_at && article.updated_at !== article.published_at ? String(article.updated_at).slice(0, 10) : "";
+    const body = `<article><header><h1>${escapeHtml(title)}</h1><p>Written by <a href="${escapeHtml(editorialProfile.url)}">${escapeHtml(editorialProfile.name)}</a> · ${escapeHtml(editorialProfile.role)}${dateLabel ? ` · Published ${escapeHtml(dateLabel)}` : ""}${updatedLabel ? ` · Updated ${escapeHtml(updatedLabel)}` : ""}</p><p>Reviewed using the <a href="/editorial-policy">ExtensionTo editorial methodology</a>.</p></header>${bodyHtml}</article>`;
+    // Build the Article schema with reviewedBy + publisher (matching the EN prerender),
+    // plus a BreadcrumbList schema and (if frontmatter.faq exists) a FAQPage schema.
+    // The EN prerender (prerender-articles.ts) emits all three; the previous FR/ES
+    // code emitted only a stripped-down Article schema, which meant translated pages
+    // were invisible to rich-result eligibility (FAQ + Breadcrumb) and lost the
+    // reviewedBy signal that helps Google's EEAT scoring.
+    const articleSchema = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: title,
+      description,
+      image,
+      articleSection: article.category || frontmatterString(parsed.frontmatter, "category") || undefined,
+      inLanguage: lang,
+      author: { "@type": editorialProfile.type, name: editorialProfile.name, url: `${SITE_URL}${editorialProfile.url}` },
+      reviewedBy: { "@type": "Organization", name: "ExtensionTo Editorial Team", url: `${SITE_URL}/editorial-policy` },
+      datePublished: article.published_at,
+      dateModified: article.updated_at || article.published_at,
+      publisher: { "@type": "Organization", name: SITE_NAME, logo: { "@type": "ImageObject", url: `${SITE_URL}/og-image.png` } },
+      mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}${localePrefix}/blog/${slug}` },
+    };
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}${localePrefix}/blog` },
+        { "@type": "ListItem", position: 3, name: title, item: `${SITE_URL}${localePrefix}/blog/${slug}` },
+      ],
+    };
+    const rawFaq = parsed.frontmatter.faq;
+    const faqItems: FAQItem[] = Array.isArray(rawFaq)
+      ? (rawFaq as FAQItem[]).filter((item) => item && typeof item.question === "string" && typeof item.answer === "string")
+      : [];
+    const faqSchema = faqItems.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqItems.map(({ question, answer }) => ({
+            "@type": "Question",
+            name: question,
+            acceptedAnswer: { "@type": "Answer", text: answer },
+          })),
+        }
+      : null;
+    const extraSchemas = [breadcrumbSchema, faqSchema].filter((s): s is Record<string, unknown> => s !== null);
+    await writeRoute(`${localePrefix}/blog/${slug}`, template, title, description, body, "article", articleSchema, [
       { lang: "en", url: `${SITE_URL}/blog/${slug}` },
       { lang: lang as "fr" | "es", url: `${SITE_URL}${localePrefix}/blog/${slug}` },
-    ]);
+    ], lang as "fr" | "es", extraSchemas);
     written++;
   }
   console.log(`✅ Prerendered ${written} ${lang} article pages.`);
@@ -270,7 +376,10 @@ async function main() {
     { lang: "fr" as const, url: `${SITE_URL}/fr` },
     { lang: "es" as const, url: `${SITE_URL}/es` },
   ];
-  const homeHtml = replaceRoot(replaceHead(template, buildHead({ title: "Powerful Chrome Extensions for Productivity", description: homeDescription, canonicalPath: "/", schema: homeSchema, alternateLanguages: allLanguageHomeAlternates })), buildHomeBody(articles));
+  // EN home — explicitly pass lang="en" so buildHead emits og:locale=en_US plus
+  // og:locale:alternate entries for fr/es. The previous buildHead did not emit
+  // either tag, so social scrapers had no language hint for the prerendered HTML.
+  const homeHtml = replaceRoot(replaceHead(template, buildHead({ title: "Powerful Chrome Extensions for Productivity", description: homeDescription, canonicalPath: "/", schema: homeSchema, alternateLanguages: allLanguageHomeAlternates, lang: "en" })), buildHomeBody(articles));
   await fs.writeFile(path.join(DIST_DIR, "index.html"), homeHtml, "utf8");
 
   const blogDescription = "Practical Chrome extension guides, comparisons, and reviews for productivity, privacy, performance, and accessibility.";
@@ -279,10 +388,10 @@ async function main() {
     { lang: "fr" as const, url: `${SITE_URL}/fr/blog` },
     { lang: "es" as const, url: `${SITE_URL}/es/blog` },
   ];
-  await writeRoute("/blog", template, "Chrome Extension Guides and Reviews", blogDescription, buildBlogBody(articles), "website", undefined, allLanguageBlogAlternates);
-  await writeRoute("/privacy", template, "Privacy Policy", "Learn how ExtensionTo protects your privacy and handles information on its website and Chrome extensions.", buildLegalBody("Privacy Policy", "ExtensionTo is committed to protecting your privacy.", ["Our Chrome extensions are designed to keep settings local where possible and to avoid unnecessary collection of personal information.", "The website may process information you voluntarily submit through contact forms or subscriptions. Any information is used to provide and improve the service.", "For questions about this policy, contact ExtensionTo through the website contact page."]), "website");
-  await writeRoute("/terms", template, "Terms of Service", "Read the Terms of Service for ExtensionTo Chrome extensions and website.", buildLegalBody("Terms of Service", "By using the ExtensionTo website or extensions, you agree to these terms.", ["The extensions are provided for their stated browsing and productivity purposes and must be used lawfully.", "The software and website are provided as is. ExtensionTo may update, suspend, or discontinue features and may update these terms.", "For questions about these terms, contact ExtensionTo through the website contact page."]), "website");
-  await writeRoute("/editorial-policy", template, "Editorial Policy and Review Methodology", "Learn how ExtensionTo researches, reviews, and maintains Chrome extension guides and product pages.", buildEditorialPolicyBody(), "website");
+  await writeRoute("/blog", template, "Chrome Extension Guides and Reviews", blogDescription, buildBlogBody(articles), "website", undefined, allLanguageBlogAlternates, "en");
+  await writeRoute("/privacy", template, "Privacy Policy", "Learn how ExtensionTo protects your privacy and handles information on its website and Chrome extensions.", buildLegalBody("Privacy Policy", "ExtensionTo is committed to protecting your privacy.", ["Our Chrome extensions are designed to keep settings local where possible and to avoid unnecessary collection of personal information.", "The website may process information you voluntarily submit through contact forms or subscriptions. Any information is used to provide and improve the service.", "For questions about this policy, contact ExtensionTo through the website contact page."]), "website", undefined, undefined, "en");
+  await writeRoute("/terms", template, "Terms of Service", "Read the Terms of Service for ExtensionTo Chrome extensions and website.", buildLegalBody("Terms of Service", "By using the ExtensionTo website or extensions, you agree to these terms.", ["The extensions are provided for their stated browsing and productivity purposes and must be used lawfully.", "The software and website are provided as is. ExtensionTo may update, suspend, or discontinue features and may update these terms.", "For questions about these terms, contact ExtensionTo through the website contact page."]), "website", undefined, undefined, "en");
+  await writeRoute("/editorial-policy", template, "Editorial Policy and Review Methodology", "Learn how ExtensionTo researches, reviews, and maintains Chrome extension guides and product pages.", buildEditorialPolicyBody(), "website", undefined, undefined, "en");
 
   for (const extension of extensions) {
     const description = extension.longDescription || extension.description;
@@ -296,7 +405,7 @@ async function main() {
       url: `${SITE_URL}/extension/${extension.slug}`,
       downloadUrl: extension.storeUrl,
     };
-    await writeRoute(`/extension/${extension.slug}`, template, `${extension.name} Chrome Extension`, description, buildExtensionBody(extension), "website", schema);
+    await writeRoute(`/extension/${extension.slug}`, template, `${extension.name} Chrome Extension`, description, buildExtensionBody(extension), "website", schema, undefined, "en");
   }
 
   console.log(`✅ Prerendered home, blog index, and ${extensions.length} extension pages.`);

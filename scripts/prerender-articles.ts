@@ -99,6 +99,12 @@ function parseMarkdown(raw: string): { frontmatter: FrontmatterRecord; content: 
   }
 }
 
+const LOCALE_BY_LANG: Record<string, string> = {
+  en: "en_US",
+  fr: "fr_FR",
+  es: "es_ES",
+};
+
 function buildHead(opts: {
   title: string;
   description: string;
@@ -121,6 +127,23 @@ function buildHead(opts: {
     ? `<link data-rh="true" rel="alternate" hrefLang="x-default" href="${escapeHtml(canonicalUrl)}" />`
     : "";
 
+  // og:locale + og:locale:alternate. This script only emits English articles
+  // (canonicalUrl = /blog/<slug>), so the current page language is always "en"
+  // and any other languages come from alternateLanguages. The React SEO.tsx
+  // component also emits these at runtime, but crawlers and social scrapers
+  // that don't run JS would otherwise miss them on the prerendered HTML —
+  // a real gap identified during the SEO audit.
+  const ogLocale = "en_US";
+  const ogAlternateLocales = (opts.alternateLanguages || [])
+    .filter(({ lang }) => lang !== "en")
+    .map(({ lang }) => LOCALE_BY_LANG[lang])
+    .filter(Boolean);
+  const ogLocaleTags = `<meta data-rh="true" property="og:locale" content="${ogLocale}" />${
+    ogAlternateLocales.length
+      ? "\n    " + ogAlternateLocales.map((l) => `<meta data-rh="true" property="og:locale:alternate" content="${l}" />`).join("\n    ")
+      : ""
+  }`;
+
   return `<title data-rh="true">${t}</title>
     <meta data-rh="true" name="robots" content="${opts.noindex ? "noindex,follow" : "index,follow,max-image-preview:large"}" />
     <meta data-rh="true" name="description" content="${d}" />
@@ -134,6 +157,7 @@ function buildHead(opts: {
     <meta data-rh="true" property="og:type" content="article" />
     <meta data-rh="true" property="og:image" content="${escapeHtml(opts.ogImage)}" />
     <meta data-rh="true" property="og:site_name" content="${SITE_NAME}" />
+    ${ogLocaleTags}
     ${opts.publishedTime ? `<meta data-rh="true" property="article:published_time" content="${escapeHtml(opts.publishedTime)}" />` : ""}
     ${opts.modifiedTime ? `<meta data-rh="true" property="article:modified_time" content="${escapeHtml(opts.modifiedTime)}" />` : ""}
     ${opts.author ? `<meta data-rh="true" property="article:author" content="${escapeHtml(opts.author)}" />` : ""}
