@@ -5,7 +5,7 @@ slug: chrome-logger-debugging-guide
 status: draft
 excerpt: "Understand Chrome Logger's server-side debugging capabilities, setup process, security concerns, and alternatives for safer development workflows."
 meta_description: "Learn how to set up Chrome Logger for server-side debugging, its header-based logging model, security considerations, and modern alternatives for development workflows."
-featured_image: /og-image.png
+featured_image: /content/images/chrome-logger-debugging-guide/featured.webp
 category: Chrome Extensions
 tags: [Chrome, browser extensions]
 keywords: ["chrome logger"]
