@@ -2,7 +2,7 @@
 id: "60451c45-45ed-4b27-a787-7a3d55bfdc0f"
 title: "Chrome Extension Permissions: How to Review Access Before You Install"
 slug: chrome-extension-permissions-guide
-status: draft
+status: published
 excerpt: "Before you click “Add to Chrome,” learn how to read permission warnings, recognize optional permissions and activeTab, and limit site access safely."
 meta_description: "A practical guide to Chrome extension permissions: how to read warnings, prefer optional permissions and activeTab, and limit site access before and after install."
 featured_image: /og-image.png
