@@ -2,7 +2,7 @@
 id: "35b0b10e-181f-450e-be1b-f5858c5715e8"
 title: "Momentum Chrome Extension: Setup, Focus Tools, and Privacy Checks"
 slug: momentum-chrome-extension-guide
-status: draft
+status: published
 excerpt: "A practical guide to evaluating and configuring the Momentum Chrome extension as your New Tab dashboard—covering setup, Focus tools, to‑dos, optional Plus features, and the privacy choices you should review before and after installation."
 meta_description: "Evaluate and configure the Momentum Chrome extension as your New Tab dashboard. Learn setup steps, Focus tools, to‑dos, optional Plus features, and key privacy checks."
 featured_image: /og-image.png
