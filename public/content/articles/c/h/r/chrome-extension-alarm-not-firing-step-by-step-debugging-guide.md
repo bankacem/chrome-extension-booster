@@ -25,6 +25,12 @@ Let’s dive in and get your alarms functioning reliably!
 
 The Chrome Alarms API allows extensions to schedule code to run at specified intervals or times. It’s a lightweight tool perfect for tasks like syncing data, generating notifications, or updating content periodically. A key advantage of this API is its ability to work seamlessly within the extension’s event-driven architecture, making it suitable for background tasks.
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-alarm-not-firing-step-by-step-debugging-guide -->
+
+![Chrome extension alarm not firing: step-by-step debugging workflow illustration](/content/images/chrome-extension-alarm-not-firing-step-by-step-debugging-guide/chrome-extension-alarm-not-firing-step-by-step-debugging-guide-workflow.webp)
+
+*Illustration: Editorial illustration of the Chrome extension alarm not firing diagnostic workflow; it is not a product screenshot.*
+
 The API primarily revolves around three main methods:
 
 1. **`chrome.alarms.create()`**  
