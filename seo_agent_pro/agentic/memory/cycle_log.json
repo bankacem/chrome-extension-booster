@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension alarm not firing",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 2,
+    "score": 94,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The FAQ section could be expanded to include more unique questions tied explicitly to the Chrome Alarms API, like handling alarms across multiple tabs.",
+      "The 'Additional Resources and FAQs' section lacks links to advanced debugging tools or third-party tutorials, which could have further enhanced the value for developers.",
+      "The Best Practices section, while strong overall, could include guidance on testing alarms in scenarios such as handling multiple simultaneous alarms, as this is a known developer challenge."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/alarms",
+      "https://www.reddit.com/r/forestapp/comments/ihned7/any_updates_on_the_alarm_in_chrome_extension/",
+      "https://stackoverflow.com/questions/68967309/chrome-extension-alarms-not-being-fired"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-23T23:33:30.784474+00:00"
   }
 ]
