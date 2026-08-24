@@ -816,5 +816,37 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome tab capture extension",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 87,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The 'Introduction to Chrome Tab Capture Extensions' section does not fully distinguish Chrome tab capture extensions from other screen recording tools, which could better establish the article's unique angle.",
+      "The step-by-step instructions in 'How to Set Up a Chrome Tab Capture Extension' lack clarity due to inconsistent formatting (e.g., '#2' in Step 2 and extra hashtags in Step 4). This could confuse readers.",
+      "The comparison table is helpful but does not delve deeply into real-world differences, such as specific performance benchmarks, stability, or compatibility with other Chrome features.",
+      "The advanced use cases section lacks concrete real-world examples or anecdotes, as required by the competitor gap directive, to make the article more practical and engaging.",
+      "The limitations section does not adequately address solutions or recommended actions for common issues like DRM restrictions or system performance concerns, making it less actionable."
+    ],
+    "category": "Screenshots & Screen Capture",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/tabCapture",
+      "https://chromewebstore.google.com/detail/chrome-tab-capture-extens/bpjcidijcddpljhddfphogeolfmeefjk",
+      "https://chrome.jscn.org/docs/extensions/reference/tabCapture/"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:59:41.663348+00:00"
   }
 ]
