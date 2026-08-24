@@ -23,6 +23,12 @@ The Chrome Declarative Content API provides a powerful, event-based way for deve
 
 The Declarative Content API is a high-level Chrome extension API introduced as an alternative to traditional background scripts. Its primary advantage lies in its ability to define rules declaratively, allowing the browser to handle changes in content state without your extension constantly running in the background.
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-declarative-content-api-a-comprehensive-guide-with-examples -->
+
+![Chrome Extension Declarative Content API rules and activation workflow illustration](/content/images/chrome-extension-declarative-content-api-a-comprehensive-guide-with-examples/chrome-extension-declarative-content-api-a-comprehensive-guide-with-examples-workflow.webp)
+
+*Illustration: Editorial illustration of the Chrome Extension Declarative Content API rules workflow; it is not a product screenshot.*
+
 ### Key Features:
 - **Event-based functionality:** Instead of polling in the background, extensions can trigger actions when specific rules are met.
 - **Improved Performance:** By offloading state monitoring to the browser, the API reduces memory and CPU usage.
