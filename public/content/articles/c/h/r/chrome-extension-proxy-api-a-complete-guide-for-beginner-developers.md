@@ -17,7 +17,7 @@ read_time: 6
 ---
 Developing Chrome extensions that interact with proxies can feel intimidating, especially for beginners without much experience in networking concepts or API design. How do you set up and use the Chrome Extension Proxy API effectively? What are its real-world applications? And how does it compare to other proxy solutions?
 
-In this guide, we’ll break down the Chrome Proxy API into digestible sections with practical examples and actionable advice. By the end, you’ll not only understand how to leverage the API, but also gain clarity on when to opt for alternative proxy tools. 
+In this guide, we’ll break down the Chrome Proxy API into digestible sections with practical examples and actionable advice. By the end, you’ll not only understand how to leverage the API, but also gain clarity on when to opt for alternative proxy tools.
 
 <!-- ExtensionTo Batch 006 visual: chrome-extension-proxy-api-a-complete-guide-for-beginner-developers -->
 
@@ -42,7 +42,7 @@ Whether you're building an extension to optimize browsing for specific regions o
 To effectively use this feature, you need to understand its key components. The Chrome Proxy API relies primarily on **proxy rules** and **PAC (Proxy Auto-Configuration) files** — let’s drill into each.
 
 ### Key Concepts:
-1. **Proxy Rules**  
+1. **Proxy Rules**
    These define settings for managing proxies and bypassing certain URLs. For instance:
    ```javascript
    chrome.proxy.settings.set(
@@ -51,7 +51,7 @@ To effectively use this feature, you need to understand its key components. The 
    ```
    In this example, every request is routed through the proxy `127.0.0.1:8080`.
 
-2. **PAC Files**  
+2. **PAC Files**
    PAC files offer more complexity, allowing conditional routing. A PAC file is essentially a JavaScript function that determines which proxy to use for a given request:
    ```javascript
    function FindProxyForURL(url, host) {
@@ -90,10 +90,10 @@ To effectively use this feature, you need to understand its key components. The 
       scope: 'regular'
   });
   ```
-- The `mode` can vary:  
-  - `"direct"`: Do not use a proxy.  
-  - `"auto_detect"`: Automatically detect proxy settings.  
-  - `"fixed_servers"`: Specify a specific proxy server.  
+- The `mode` can vary:
+  - `"direct"`: Do not use a proxy.
+  - `"auto_detect"`: Automatically detect proxy settings.
+  - `"fixed_servers"`: Specify a specific proxy server.
   - `"pac_script"`: Use a PAC file.
 
 This flexibility is a huge advantage for developers, but to make it useful, let’s dive into [how to set](/blog/article2-bitwarden-setup-guide) it up in a real-world scenario.
@@ -104,10 +104,10 @@ This flexibility is a huge advantage for developers, but to make it useful, let�
 
 ### Step-by-Step Tutorial
 
-1. **Create Your Basic Extension**  
+1. **Create Your Basic Extension**
    Start with a basic `manifest.json` file and ensure the `proxy` permission is included (refer to the example above). Create a folder to house this file, along with your code and PAC file (if needed).
 
-2. **Set the Proxy Rules**  
+2. **Set the Proxy Rules**
    Use the Proxy API to define your rules. For instance, if you want to route traffic through a proxy and bypass social media sites:
    ```javascript
    chrome.proxy.settings.set({
@@ -126,7 +126,7 @@ This flexibility is a huge advantage for developers, but to make it useful, let�
    });
    ```
 
-3. **Implement Authentication (If Required)**  
+3. **Implement Authentication (If Required)**
    If your proxy server requires authentication, use `onAuthRequired`:
    ```javascript
    chrome.webRequest.onAuthRequired.addListener(
@@ -142,11 +142,11 @@ This flexibility is a huge advantage for developers, but to make it useful, let�
    );
    ```
 
-4. **Test Your Extension**  
+4. **Test Your Extension**
 ## Load your extension into Chrome as an unpacked extension by navigating to:
    `chrome://extensions > Load unpacked > Select your folder`.
 
-5. **Validate Proxy Functionality**  
+5. **Validate Proxy Functionality**
    Open the browser and navigate to one of the URLs specified in your rules or PAC file. Use Chrome Developer Tools to confirm network requests are routed through the proxy.
 
 ---
@@ -155,12 +155,12 @@ This flexibility is a huge advantage for developers, but to make it useful, let�
 
 ## The capabilities of the Proxy API make it ideal for scenarios such as:
 
-1. **Bypassing Geoblocks**: Redirect specific websites through proxies based in another country.  
-   E.g., ensuring users can access region-locked streaming services.  
+1. **Bypassing Geoblocks**: Redirect specific websites through proxies based in another country.
+   E.g., ensuring users can access region-locked streaming services.
 
-2. **Parental Controls**: Block or bypass websites such as social media or adult content.  
+2. **Parental Controls**: Block or bypass websites such as social media or adult content.
 
-3. **Privacy Tools**: Enhance anonymity by routing all browsing through encrypted external proxies.  
+3. **Privacy Tools**: Enhance anonymity by routing all browsing through encrypted external proxies.
 
 4. **Traffic Monitoring**: Use local proxies to capture and analyze application network activity for development or debugging purposes.
 
@@ -189,13 +189,13 @@ When should you use the Chrome Proxy API versus alternative tools? Here’s a br
 ## **Q: Can beginners use the Chrome Proxy API without much coding experience?**
 A: Yes, following beginner-friendly examples (like the ones above) makes it accessible, although basic JavaScript knowledge is helpful.
 
-**Q: Do I need a PAC file for every proxy configuration?**  
+**Q: Do I need a PAC file for every proxy configuration?**
 A: Not necessarily. You can use simpler `fixed_servers` rules for basic configurations.
 
-**Q: Does the API work across all platforms and OS?**  
+**Q: Does the API work across all platforms and OS?**
 A: Yes, as long as the Google Chrome browser is supported, the Proxy API will work consistently.
 
-**Q: How do I debug proxy issues?**  
+**Q: How do I debug proxy issues?**
 A: Use Chrome DevTools' network tab to inspect requests and verify routing. Additionally, check the Console for any API errors.
 
 ## **Q: Are there security concerns when using the Proxy API?**
