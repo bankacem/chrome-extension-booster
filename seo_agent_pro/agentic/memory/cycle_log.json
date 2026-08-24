@@ -816,5 +816,37 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension proxy api",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 2,
+    "score": 8,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": false,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The introductory section is clear but could benefit from explicitly tying its context to the 'Complete Guide for Beginner Developers' promised in the headline.",
+      "The explanation of PAC files, while good, could include a brief mention of some common challenges developers face when working with them.",
+      "The step-by-step tutorial for setup is helpful but lacks clarity in its test and validation sections. For instance, 'Validate Proxy Functionality' could provide more specific steps for debugging or expected outputs from Chrome Developer Tools.",
+      "The comparative analysis table is a good addition but could be expanded to cover specific examples of third-party extensions or standalone software options to better fill competitor gap requirements.",
+      "Real-world examples are present, but they are heavily code-focused. Including additional narrative context or scenarios (e.g., explaining how a company might use this in practice) could better meet the brief’s expectations."
+    ],
+    "category": "Developer Tools",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/proxy",
+      "https://chrome.jscn.org/docs/extensions/reference/proxy/",
+      "https://chromewebstore.google.com/detail/switchy-proxy/kobjmggdncflgoclmpielmahbggkcaha"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T01:06:32.186094+00:00"
   }
 ]
