@@ -23,6 +23,12 @@ If you’ve been developing Chrome extensions, you’re likely familiar with the
 
 The `browser` namespace, introduced as part of the WebExtension API, standardizes extension development across multiple browsers. Unlike the `chrome` namespace, which is proprietary to Chromium-based browsers, the `browser` namespace adheres to the promises-based approach established by the WebExtensions API. This means you can use it not just in Chrome, but also in browsers like Firefox and others adopting the same spec.
 
+<!-- ExtensionTo Batch 006 visual: understanding-the-chrome-extension-browser-namespace-practical-implementation-guide -->
+
+![Chrome extension browser namespace API implementation workflow illustration](/content/images/understanding-the-chrome-extension-browser-namespace-practical-implementation-guide/understanding-the-chrome-extension-browser-namespace-practical-implementation-guide-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome extension browser namespace implementation workflow; it is not a product screenshot.*
+
 **Example Use Case**  
 Let’s say you want to create a cross-browser extension that manipulates tabs. With the `chrome` namespace, you'd write something like:
 
