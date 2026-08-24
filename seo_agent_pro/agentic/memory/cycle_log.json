@@ -816,5 +816,34 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension page capture mhtml",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 1,
+    "score": 90,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The section 'Tips for Integrating Page Capture with Other Workflows' could use more depth, such as additional examples or tools beyond the few mentioned.",
+      "The article does not strongly emphasize troubleshooting tips for performance issues like latency or capture failures on complex pages, which could align better with the unique_angle and the troubleshooting section."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/pageCapture",
+      "https://bestchromeextensions.com/docs/guides/page-capture/",
+      "https://chromewebstore.google.com/detail/page-capture-pro/gaafnkeecbmdjemkenbjbdhhigcgknbc"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T01:14:19.793463+00:00"
   }
 ]
