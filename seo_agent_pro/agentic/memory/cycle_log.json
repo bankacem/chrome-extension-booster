@@ -816,5 +816,37 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension match patterns",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 87,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article does not meet the ideal length of 1400 words, as it is slightly shorter.",
+      "The FAQ section could be expanded with more questions to make it more comprehensive.",
+      "The `practical code snippets` requirement is partially met. While examples are included, the article could benefit from additional detailed code snippets demonstrating advanced uses of match patterns (e.g., working with specific conditions or scenarios).",
+      "The comparison of Chrome match patterns to other browsers, while provided, is somewhat surface-level and could go deeper into exploring compatibility or implementation nuances across browsers beyond just syntactical differences.",
+      "The troubleshooting section covers some common issues but could include more concrete examples or detailed steps (e.g., explicitly explain how to use debugging tools like `chrome.runtime.lastError` or walk through an example of resolving pattern conflicts)."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/develop/concepts/match-patterns",
+      "https://dev.to/nguyenduchuyz190/chrome-extensions-and-match-patterns-21m3",
+      "https://chromium.googlesource.com/chromium/+/HEAD/chrome/common/extensions/docs/templates/articles/match_patterns.html"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T01:24:19.889817+00:00"
   }
 ]
