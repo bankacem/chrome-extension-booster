@@ -19,6 +19,12 @@ Native messaging is an essential feature of Chrome extensions, enabling seamless
 
 This detailed guide covers how native messaging in Chrome extensions works, how to set it up correctly, and how to troubleshoot common problems. We'll also compare Chrome’s implementation to other browsers and share practical security best practices to ensure you mitigate risks effectively.
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-native-messaging-troubleshooting-security-and-comparisons -->
+
+![Chrome Extension Native Messaging bridge and security workflow illustration](/content/images/chrome-extension-native-messaging-troubleshooting-security-and-comparisons/chrome-extension-native-messaging-troubleshooting-security-and-comparisons-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome Extension Native Messaging bridge and security workflow; it is not a product screenshot.*
+
 ---
 
 ## Introduction to Native Messaging in Chrome Extensions
