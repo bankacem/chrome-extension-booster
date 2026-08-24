@@ -171,23 +171,23 @@ Here’s a simple example to track completed navigation events to a specific dom
 
 ## FAQ - Frequently Asked Questions
 
-**Q: Do I need to add host permissions for `webNavigation`?**  
+**Q: Do I need to add host permissions for `webNavigation`?**
 A: No, you only need to add `"webNavigation"` to `permissions` in the `manifest.json`. However, for interacting with web pages via content scripts, you’ll need to declare appropriate `"host_permissions"`.
 
 ## **Q: Can the `webNavigation` API detect sub-frame entries?**
 A: Yes, `webNavigation` supports monitoring sub-frame events. The `frameId` field in event details can help identify when loading occurs in a sub-frame.
 
-**Q: What is the difference between `webNavigation` and `webRequest` APIs?**  
+**Q: What is the difference between `webNavigation` and `webRequest` APIs?**
 A: `webNavigation` provides information about navigation events, while `webRequest` focuses on HTTP/HTTPS lifecycle events. They serve complementary purposes and can often be used together.
 
-**Q: Does `webNavigation` work with Manifest V3?**  
+**Q: Does `webNavigation` work with Manifest V3?**
 A: Yes, it is fully functional in Manifest V3 but relies on service workers instead of background pages.
 
 ---
 
 ## Conclusion
 
-The **Chrome webNavigation API** serves as a robust tool for monitoring and managing navigation events within Chrome extensions. By understanding its core functions, correctly sequencing events, and optimizing its usage, developers can build efficient, high-performing extensions tailored to user needs. 
+The **Chrome webNavigation API** serves as a robust tool for monitoring and managing navigation events within Chrome extensions. By understanding its core functions, correctly sequencing events, and optimizing its usage, developers can build efficient, high-performing extensions tailored to user needs.
 
 With practical troubleshooting solutions, integration tips, and a step-by-step implementation example, you now have the tools to effectively harness the power of `webNavigation`. Whether you’re debugging SPAs or enhancing load times, the insights provided here should help you take your extensions to the next level.
 
