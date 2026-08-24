@@ -816,5 +816,37 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension management api",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 2,
+    "score": 89,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The word count is slightly below the ideal length; the article is approximately 1600 words instead of the required 1650.",
+      "The 'Best Practices for Secure Implementation' section is somewhat generic and could benefit from more specific examples or actionable steps, such as sample code snippets for credential management or detailed scope-restriction guidance.",
+      "The troubleshooting section lacks depth in some answers (e.g., 'Missing Permissions' could include specific steps for setting OAuth 2.0 scopes in Google Cloud Console).",
+      "While the use cases section is comprehensive, competitor gap requirement 'security-focused best practices' could be emphasized more strongly through additional real-world security scenarios leveraging the API.",
+      "The comparison table, although present, is somewhat high-level and could explore more specific differences in API functionality, like code examples, performance nuances, or integration challenges."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/management",
+      "https://developers.google.com/chrome/management/",
+      "https://bestchromeextensions.com/docs/guides/management-api/"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:39:13.716218+00:00"
   }
 ]
