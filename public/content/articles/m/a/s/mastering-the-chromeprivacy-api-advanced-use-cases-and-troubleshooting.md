@@ -19,6 +19,12 @@ Browser privacy is a hot topic in today’s digital world, and developers play a
 
 This guide dives deep into everything you need to know about using the chrome.privacy API. Whether you’re a seasoned developer or troubleshooting your first extension, this article covers essential details, advanced scenarios, and practical tips for harnessing the full potential of this API.
 
+<!-- ExtensionTo Batch 006 visual: mastering-the-chromeprivacy-api-advanced-use-cases-and-troubleshooting -->
+
+![Chrome privacy API settings and diagnostic workflow illustration](/content/images/mastering-the-chromeprivacy-api-advanced-use-cases-and-troubleshooting/mastering-the-chromeprivacy-api-advanced-use-cases-and-troubleshooting-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome privacy API settings and diagnostic workflow; it is not a product screenshot.*
+
 ---
 
 ## Table of Contents  
