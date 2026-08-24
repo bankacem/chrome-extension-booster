@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome webnavigation api guide",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 2,
+    "score": 8,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": false,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The checklist mentioned in the 'must_have_elements' is missing. While the API features and optimization tips provide a structured overview, there's no specific checklist for developers to follow, which was explicitly requested in the brief.",
+      "The 'Comparison of chrome.webNavigation with similar APIs' was mentioned briefly but lacks depth. The article could expand this section with more specific comparisons beyond the table provided, highlighting unique strengths and differences of webNavigation versus alternatives like webRequest and tabs APIs.",
+      "Best practices for optimizing performance are present, but they could benefit from more specific examples or links to resources, especially for developers looking for advanced optimization strategies."
+    ],
+    "category": "Redirect & Navigation",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation",
+      "https://help.opera.com/en/extensions/web-navigation/",
+      "https://www.benjaminrancourt.ca/lessons-learned-from-creating-a-chrome-extension/"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:43:02.432524+00:00"
   }
 ]
