@@ -23,6 +23,12 @@ Capturing and recording content directly from your browser can be a game-changer
 
 The concept of a tab capture extension revolves around recording the visual and audio activity of a specific browser tab. Chrome provides developers with the **chrome.tabCapture API**, which allows extensions to capture the content being displayed or streamed within a tab. 
 
+<!-- ExtensionTo Batch 006 visual: the-ultimate-guide-to-chrome-tab-capture-extensions-features-setup-and-advanced-use-cases -->
+
+![Chrome tab capture extension media stream workflow illustration](/content/images/the-ultimate-guide-to-chrome-tab-capture-extensions-features-setup-and-advanced-use-cases/the-ultimate-guide-to-chrome-tab-capture-extensions-features-setup-and-advanced-use-cases-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome tab capture extension media workflow; it is not a product screenshot.*
+
 For general users, this translates into the possibility of recording meetings, live streams, or video tutorials with ease. Meanwhile, developers can integrate this functionality into their custom applications or use it for debugging purposes. But why choose Chrome tab capture extensions over generic screen recording tools? The key is in their precision and scope. These extensions focus solely on the tab in question and avoid recording unnecessary background activity.
 
 If you've ever found yourself wishing you could quickly capture a tab or automate recordings, Chrome tab capture extensions might be exactly what you need. Let’s dive into how they work and how to set one up today.
