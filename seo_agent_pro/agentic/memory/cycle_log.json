@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension cookies api",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 2,
+    "score": 89,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The section 'Methods and Events in the Cookies API' lacks detailed code examples for methods like `getAll` and `onChanged`. Including these would make the section more actionable for beginners.",
+      "The 'Checklist' element specified in the brief is missing. A summarized list of actionable steps or prerequisites for using the Cookies API would improve clarity.",
+      "The FAQ section could cover additional beginner-relevant questions, such as how to debug permissions issues or limitations on cookie operations in Manifest V3."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/cookies",
+      "https://chrome.jscn.org/docs/extensions/reference/cookies/",
+      "https://chromium.googlesource.com/chromium/src/+/HEAD/chrome/browser/extensions/api/cookies/cookies_api.h"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:32:44.459894+00:00"
   }
 ]
