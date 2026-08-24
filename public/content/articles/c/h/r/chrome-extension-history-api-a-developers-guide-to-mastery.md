@@ -19,6 +19,12 @@ The Chrome Extension History API is a powerful tool for developers looking to cr
 
 In this article, we'll go beyond the basics to cover advanced troubleshooting, performance optimization tips, and common developer challenges. Whether you're just starting out or looking to optimize your extension, this comprehensive guide has you covered.
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-history-api-a-developers-guide-to-mastery -->
+
+![Chrome Extension History API search and privacy workflow illustration](/content/images/chrome-extension-history-api-a-developers-guide-to-mastery/chrome-extension-history-api-a-developers-guide-to-mastery-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome Extension History API search and privacy workflow; it is not a product screenshot.*
+
 ---
 
 ## What Is the Chrome Extension History API?
