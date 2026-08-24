@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension downloads api",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 92,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article is missing a detailed comparison of similar APIs such as Firefox's Downloads API beyond a brief mention in the FAQ. It should elaborate on specific differences.",
+      "The 'Advanced Techniques and Edge Cases' section could benefit from more detailed real-world scenarios or illustrative examples, as the brief emphasizes code examples for edge cases and performance considerations.",
+      "Cross-device synchronization in the 'Common Use Cases' section could be expanded with more concrete implementation guidance."
+    ],
+    "category": "Developer Tools",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/downloads",
+      "https://chrome.jscn.org/docs/extensions/reference/downloads/",
+      "https://support.google.com/chrome/thread/308223332/potential-privacy-issue-chrome-download-api-starts-access-user-s-old-download-history?hl=en"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:23:30.379422+00:00"
   }
 ]
