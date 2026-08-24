@@ -19,6 +19,12 @@ The **Chrome webNavigation API** is a vital tool for developers looking to monit
 
 In this guide, we’ll go beyond standard documentation and dive into **practical troubleshooting techniques**, **performance optimization best practices**, and **real-world use cases**. Whether you're new to Chrome extensions or looking to refine your implementation of `webNavigation`, this guide is designed to make you an expert.
 
+<!-- ExtensionTo Batch 006 visual: chrome-webnavigation-api-guide-troubleshooting-and-performance-optimization -->
+
+![Chrome webNavigation API event and performance diagnostic workflow illustration](/content/images/chrome-webnavigation-api-guide-troubleshooting-and-performance-optimization/chrome-webnavigation-api-guide-troubleshooting-and-performance-optimization-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome webNavigation API event and performance workflow; it is not a product screenshot.*
+
 ---
 
 ## Introduction to the Chrome webNavigation API
