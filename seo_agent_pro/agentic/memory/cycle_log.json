@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension browser namespace",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 2,
+    "score": 8,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": false,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The section 'Performance Implications of Using the Browser Namespace' lacks detailed evidence or in-depth elaboration on performance differences between the two namespaces beyond general observations.",
+      "The article includes a table but does not provide sufficient depth or insights in the comparison section, particularly around use cases or limitations in specific browsers.",
+      "No concrete real-world examples were provided for how the browser namespace resolves common issues during migration; examples focus primarily on basic API syntax changes."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/develop/concepts/browser-namespace",
+      "https://github.com/mdn/content/issues/44114",
+      "https://groups.google.com/a/chromium.org/g/chromium-extensions/c/gK1Sd57p4go/m/ZLsLz7GSAwAJ"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:57:48.826681+00:00"
   }
 ]
