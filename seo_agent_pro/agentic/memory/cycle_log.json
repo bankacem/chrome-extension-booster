@@ -816,5 +816,36 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension bookmarks api",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 85,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The step-by-step guide lacks elaboration in areas like popup UI integration and handling nested bookmark structures.",
+      "The 'Best Practices' section mentions general guidance but doesn't go in-depth about 'efficient API usage,' an explicit competitor gap requirement.",
+      "Real-world use cases and practical examples are notably underdeveloped beyond vague scenarios. More concrete examples would improve utility and address competitor gaps more effectively.",
+      "The troubleshooting section does not include a checklist format for debugging common errors, as required by the brief."
+    ],
+    "category": "Developer Tools",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/bookmarks",
+      "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Work_with_the_Bookmarks_API",
+      "https://stackoverflow.com/questions/5570760/chrome-bookmarks-api"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:15:14.609078+00:00"
   }
 ]
