@@ -19,6 +19,12 @@ Chrome desktop capture extensions are powerful tools that allow users to record,
 
 In this guide, we’ll walk you through everything you need to know — from selecting the best Chrome desktop capture extension to using it effectively and addressing potential problems. By the end, you’ll have actionable steps to enhance your screen-sharing or recording experience.  
 
+<!-- ExtensionTo Batch 006 visual: mastering-chrome-desktop-capture-extensions-a-complete-user-guide -->
+
+![Chrome desktop capture extension permissions and recording workflow illustration](/content/images/mastering-chrome-desktop-capture-extensions-a-complete-user-guide/mastering-chrome-desktop-capture-extensions-a-complete-user-guide-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome desktop capture extension workflow; it is not a product screenshot.*
+
 ---
 
 ## Introduction to Chrome Desktop Capture Extensions  
