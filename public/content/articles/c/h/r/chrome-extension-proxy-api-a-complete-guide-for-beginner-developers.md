@@ -19,6 +19,12 @@ Developing Chrome extensions that interact with proxies can feel intimidating, e
 
 In this guide, we’ll break down the Chrome Proxy API into digestible sections with practical examples and actionable advice. By the end, you’ll not only understand how to leverage the API, but also gain clarity on when to opt for alternative proxy tools. 
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-proxy-api-a-complete-guide-for-beginner-developers -->
+
+![Chrome Extension Proxy API routing and security workflow illustration](/content/images/chrome-extension-proxy-api-a-complete-guide-for-beginner-developers/chrome-extension-proxy-api-a-complete-guide-for-beginner-developers-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome Extension Proxy API routing and security workflow; it is not a product screenshot.*
+
 ---
 
 ## Introduction to Chrome Extension Proxy API
