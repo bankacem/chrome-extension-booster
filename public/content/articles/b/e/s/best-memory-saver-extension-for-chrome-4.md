@@ -32,7 +32,6 @@ description: "Compare Chrome Memory Saver with four tab-management options by co
 
 > **Quick answer:** Start with Chrome’s built-in Memory Saver if you want a simple, no-install option. Choose a tab-suspension extension only when you need controls such as custom timers, manual suspension, or detailed site exceptions. Use one tab-management policy at a time, keep important forms and live dashboards active, and measure the result in Chrome Task Manager instead of trusting a fixed RAM-saving percentage.
 
-![Best Memory Saver Extension For Chrome 4 — workflow visual](/content/images/best-memory-saver-extension-for-chrome-4/inline-context.webp "Best Memory Saver Extension For Chrome 4 workflow visual")
 
 
 We’ve all been there. You’re deep into a research project, a complex coding task, or even just a chaotic online shopping spree. Before you know it, you have forty tabs open, and your computer starts sounding like a jet engine taking off. Your mouse cursor lags, your video calls start stuttering, and your browser feels like it’s wading through waist-deep molasses. This happens because Google Chrome is notorious for its massive appetite for RAM (Random Access Memory).
@@ -101,6 +100,9 @@ This is a lightweight, highly efficient extension that focuses on simplicity. It
 - Built-in "Battery Save" mode.
 - Automatic tab discarding using Chrome's native API.
 - Screen capture of the suspended tab so you remember what was there.
+
+
+![Saved Chrome tabs and Memory Saver workflow](/content/images/best-memory-saver-extension-for-chrome-4/inline-context.webp "Saved Chrome tabs and Memory Saver workflow")
 
 ## Feature Comparison Table
 

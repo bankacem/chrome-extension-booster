@@ -39,7 +39,6 @@ description: "Chrome using too much RAM? Find the tab or extension causing it, t
 
 > **Quick answer:** If Chrome is using too much RAM, press `Shift` + `Esc` to open Chrome Task Manager and sort by **Memory footprint**. Identify whether one tab, extension, or browser process is responsible, then close or reload only that item. Next, open **Settings > Performance**, enable Memory Saver for inactive tabs, and test extensions one at a time. Do not disable Chrome security features or install several tab suspenders before measuring the cause.
 
-![How To Fix Chrome High Memory Usage The Ultimate 2026 Speed Up Guide — workflow visual](/content/images/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide/inline-context.webp "How To Fix Chrome High Memory Usage The Ultimate 2026 Speed Up Guide workflow visual")
 
 
 Chrome using a large amount of memory is not automatically a memory leak. A tab may be rendering a complex application, an extension may be active on many sites, or Chrome may be keeping a page ready for a quick return. The reliable fix starts with identifying the process that is responsible instead of applying every “speed-up” tip at once.
@@ -70,6 +69,9 @@ On desktop Chrome, open **More > Settings > Performance**. Google documents seve
 Turn on Memory Saver if you regularly keep more tabs open than your computer can comfortably keep active. Chrome can deactivate eligible inactive tabs and reload them when you return. Add sites that must remain active—such as an unsaved form, a live dashboard, or a web call—to the exception list instead of disabling the feature for every tab.
 
 The goal is not to make every tab sleep immediately. It is to let Chrome prioritize active work while protecting the few pages that would lose state or require a long reconnection. Check the result in Chrome Task Manager after using your normal workflow for a while.
+
+
+![Chrome Task Manager workflow for checking memory usage](/content/images/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide/inline-context.webp "Chrome Task Manager workflow for checking memory usage")
 
 ## Audit extensions one at a time
 
