@@ -178,7 +178,7 @@ Test badges on Windows, macOS, and Linux for potential rendering differences.
 
 ## Best Practices for Preventing Badge Display Problems
 
-1. **Use Static Defaults**  
+1. **Use Static Defaults**
 Set a clear default badge in `onInstalled` events:
 ```javascript
 chrome.runtime.onInstalled.addListener(() => {
@@ -207,16 +207,16 @@ Adapt to Manifest V3 requirements by shifting badge logic into service workers.
 
 ## FAQs on Chrome Extension Badges
 
-**Q: Why are my badge updates not persisting?**  
+**Q: Why are my badge updates not persisting?**
 A: In Manifest V3, use service workers instead of background scripts to handle persistent badge logic.
 
-**Q: Can badges display icons or images instead of text?**  
+**Q: Can badges display icons or images instead of text?**
 A: No, badges support only short text strings. Use `action.setIcon` for visual updates.
 
-**Q: What should I do if badges stop working after a Chrome update?**  
+**Q: What should I do if badges stop working after a Chrome update?**
 A: Test against beta builds, check API deprecations, and validate your implementation for new manifest requirements.
 
-**Q: Do badges support dynamic updates from APIs?**  
+**Q: Do badges support dynamic updates from APIs?**
 A: Yes, use asynchronous calls to fetch data and apply `setBadgeText` dynamically.
 
 ---
