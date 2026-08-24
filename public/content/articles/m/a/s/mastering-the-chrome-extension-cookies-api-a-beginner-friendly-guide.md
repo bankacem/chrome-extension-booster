@@ -19,6 +19,12 @@ Building Chrome extensions often requires dealing with web cookies, whether for 
 
 This guide simplifies the learning process for using the Chrome Cookies API by providing practical examples, explaining the key permissions required, and addressing common pitfalls. By the end, you’ll have the foundation to build powerful extensions leveraging cookies with confidence.
 
+<!-- ExtensionTo Batch 006 visual: mastering-the-chrome-extension-cookies-api-a-beginner-friendly-guide -->
+
+![Chrome Extension Cookies API privacy and permission workflow illustration](/content/images/mastering-the-chrome-extension-cookies-api-a-beginner-friendly-guide/mastering-the-chrome-extension-cookies-api-a-beginner-friendly-guide-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome Extension Cookies API privacy workflow; it is not a product screenshot.*
+
 ---
 
 ## Introduction to the Chrome Cookies API
