@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension privacy api",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 88,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article does not explicitly reach the ideal length of 1500 words, though it is close and covers the required sections well.",
+      "The checklist is underutilized with only three items; adding more entries would boost its usefulness.",
+      "The `Comparison of chrome.privacy with Other Browser Privacy APIs` section could benefit from greater depth about specific differences."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/privacy",
+      "https://chrome.jscn.org/docs/extensions/reference/privacy",
+      "https://sunnyzhou-1024.github.io/chrome-extension-docs/extensions/privacy.html"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T01:08:42.344901+00:00"
   }
 ]
