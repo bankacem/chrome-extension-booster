@@ -19,6 +19,12 @@ Chrome extension badges are a key element of user interaction, offering visual n
 
 If you’re a developer struggling with this issue, this guide focuses on deep troubleshooting, actionable code samples, and advanced testing methodologies. By the end of this article, you’ll have a clear understanding of common causes, debugging steps, and best practices to prevent badge problems.
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-badge-not-showing-advanced-troubleshooting-guide -->
+
+![Chrome extension badge not showing diagnostic workflow illustration](/content/images/chrome-extension-badge-not-showing-advanced-troubleshooting-guide/chrome-extension-badge-not-showing-advanced-troubleshooting-guide-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome extension badge troubleshooting workflow; it is not a product screenshot.*
+
 ---
 
 ## Understanding Chrome Extension Badges
