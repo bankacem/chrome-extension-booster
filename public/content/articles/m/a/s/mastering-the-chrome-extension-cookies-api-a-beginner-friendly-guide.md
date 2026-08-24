@@ -51,21 +51,21 @@ Before your extension can access browser cookies, you must declare specific perm
 ### Essential Permissions
 Here are the key permissions you’ll need in `manifest.json`:
 
-1. **`cookies`**  
+1. **`cookies`**
    This is the primary permission that grants an extension access to browser cookies.
 
    ```json
    "permissions": ["cookies"]
    ```
 
-2. **`host_permissions`**  
+2. **`host_permissions`**
 ## Specify the domains where the extension is allowed to manipulate cookies.
 
    ```json
    "host_permissions": ["https://*/*", "http://example.com/*"]
    ```
 
-3. (Optional) **`storage`**  
+3. (Optional) **`storage`**
    If your extension needs to store additional state data locally, include this permission.
 
    ```json
@@ -173,7 +173,7 @@ chrome.cookies.getAll({ domain: "example.com" }, (cookies) => {
   });
 });
 ```
-**Explanation**:  
+**Explanation**:
 ## - The `getAll()` method fetches all cookies related to `example.com`.
 - The `cookies` array allows iterating through individual cookie objects.
 
@@ -190,8 +190,8 @@ chrome.cookies.set({
   expirationDate: Math.floor(Date.now() / 1000) + 3600, // Expires in 1 hour
 });
 ```
-**Explanation**:  
-- The `expirationDate` is specified as a Unix timestamp.  
+**Explanation**:
+- The `expirationDate` is specified as a Unix timestamp.
 - Ensure the `url` is HTTPS-enabled if dealing with secure cookies.
 
 ---
@@ -209,9 +209,9 @@ chrome.cookies.onChanged.addListener((changeInfo) => {
   }
 });
 ```
-**Explanation**:  
-- The `onChanged` event listens for cookie modifications in real time.  
-- `changeInfo` contains details of the cookie and the type of change (added, deleted, modified).  
+**Explanation**:
+- The `onChanged` event listens for cookie modifications in real time.
+- `changeInfo` contains details of the cookie and the type of change (added, deleted, modified).
 
 ---
 
@@ -220,10 +220,10 @@ chrome.cookies.onChanged.addListener((changeInfo) => {
 ## **Q: Does the Chrome Cookies API work with Manifest V3 extensions?**
 A: Yes, but you need to adapt your code for the new service worker architecture in MV3 as background pages are no longer supported.
 
-**Q: Can I access cookies on all websites with this API?**  
+**Q: Can I access cookies on all websites with this API?**
 A: Only if your extension has the right `host_permissions` declared. Cross-domain access is also subject to browser security policies.
 
-**Q: Why isn’t my `cookies.set()` call working?**  
+**Q: Why isn’t my `cookies.set()` call working?**
 A: Common causes include missing required fields (like `url`) or insufficient permissions. Ensure your `manifest.json` has the `cookies` permission.
 
 ---
