@@ -816,5 +816,37 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension native messaging",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 83,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article exceeds the ideal length of 1500 words, which might impact reader engagement.",
+      "The comparison table is present but lacks detailed analysis. For instance, 'Setup Complexity' and 'Security Best Practices Enforced' could elaborate on each browser's nuances in these categories.",
+      "While the troubleshooting section includes useful points, it could benefit from more depth, such as providing explicit examples of diagnosing errors with code or tools.",
+      "The ‘Real-World Applications and Use Cases’ section is brief and could explore more scenarios or elaborate further on existing examples.",
+      "The content does not explicitly address the competitor gap of giving 'in-depth security best practices.' While it lists security measures, no detailed explanation is offered on topics like handling secure installation or mitigating specific attack vectors."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/develop/concepts/native-messaging",
+      "https://martinuke0.github.io/posts/2026-03-31-chrome-native-messaging-building-secure-bridge-between-extensions-and-native-applications/",
+      "https://www.reddit.com/r/firefox/comments/7ac88b/native_messaging_hosts_what_are_they_and_are_they/"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T01:16:07.133215+00:00"
   }
 ]
