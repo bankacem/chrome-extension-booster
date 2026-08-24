@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension badge not showing",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 1,
+    "score": 92,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "Testing Badge Functionality Across Browser Versions section could emphasize manual testing steps more concretely for beta and canary builds.",
+      "The Best Practices section could be expanded with more examples or considerations (e.g., caching strategies, development environment tips).",
+      "Some instructions, like using Puppeteer, assume familiarity with tools that might not be accessible or common for all developers; a brief explanation or alternative suggestion could help improve accessibility."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://dev.to/paulasantamaria/chrome-extensions-adding-a-badge-644",
+      "https://developer.chrome.com/docs/devtools/elements/badges",
+      "https://medium.com/@sorixx222/how-to-get-the-featured-badge-on-the-chrome-web-store-step-by-step-30eddd519a05"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T01:21:36.876942+00:00"
   }
 ]
