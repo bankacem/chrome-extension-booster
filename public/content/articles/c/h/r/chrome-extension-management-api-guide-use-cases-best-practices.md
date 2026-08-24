@@ -19,6 +19,12 @@ Managing browser extensions across multiple devices or users can quickly become 
 
 In this guide, we’ll explore everything you need to know about the Chrome Management API. From understanding how it works to real-world use cases, troubleshooting, and secure implementation, this deep dive will address **gaps you won’t find in other articles**.  
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-management-api-guide-use-cases-best-practices -->
+
+![Chrome Extension Management API control and audit workflow illustration](/content/images/chrome-extension-management-api-guide-use-cases-best-practices/chrome-extension-management-api-guide-use-cases-best-practices-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome Extension Management API control workflow; it is not a product screenshot.*
+
 ---
 
 ## Table of Contents  
