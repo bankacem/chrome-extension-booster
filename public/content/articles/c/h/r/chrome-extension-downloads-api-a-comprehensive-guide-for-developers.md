@@ -19,6 +19,12 @@ The Chrome Downloads API is a powerful yet underutilized feature for Chrome exte
 
 In this guide, we’ll break down the Chrome Downloads API, explain its core methods and events, and explore advanced techniques to save you time and effort in your projects. Whether you're a new developer exploring Chrome extensions or a seasoned coder building productive tools, you’ll walk away with actionable insights, detailed code examples, comparison tables, and expert tips to make the most of this API.  
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-downloads-api-a-comprehensive-guide-for-developers -->
+
+![Chrome Extension Downloads API file and event workflow illustration](/content/images/chrome-extension-downloads-api-a-comprehensive-guide-for-developers/chrome-extension-downloads-api-a-comprehensive-guide-for-developers-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome Extension Downloads API file-management workflow; it is not a product screenshot.*
+
 ---
 
 ## Overview of the Chrome Downloads API  
