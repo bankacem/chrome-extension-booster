@@ -33,7 +33,7 @@ The Declarative Content API is a high-level Chrome extension API introduced as a
 - **Event-based functionality:** Instead of polling in the background, extensions can trigger actions when specific rules are met.
 - **Improved Performance:** By offloading state monitoring to the browser, the API reduces memory and CPU usage.
 - **Browser-managed rules:** Once registered, the rules persist even if the extension or browser undergoes a restart.
-  
+
 For example, if you want an extension that turns on a specific page action (like enabling dark mode) for shopping websites, you can use the Declarative Content API to target sites with particular URLs and CSS elements without active monitoring.
 
 ---
@@ -220,13 +220,13 @@ A: Yes. You can leverage the Declarative Content API for state-driven actions wh
 ## **Q: Does the Declarative Content API support Manifest V3?**
 A: Yes, it is fully compatible with Manifest V3 as background scripts were redesigned in this manifest version.
 
-**Q: Can I update rules dynamically at runtime?**  
+**Q: Can I update rules dynamically at runtime?**
 A: Yes, but you need to use `chrome.declarativeContent.onPageChanged.removeRules()` to clear the old rules, and then add new ones.
 
-**Q: What happens if two rules overlap?**  
+**Q: What happens if two rules overlap?**
 A: The browser prioritizes rules based on their order of addition. Ensure actions for different rules do not conflict.
 
-**Q: Is this API available on all Chromium-based browsers?**  
+**Q: Is this API available on all Chromium-based browsers?**
 A: Yes, most Chromium-based browsers like Edge and Brave support this API, but always verify browser-specific documentation.
 
 ---
