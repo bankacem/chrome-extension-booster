@@ -788,5 +788,11 @@
   "chrome-extensions-incognito-guide": "2026-08-23",
   "chrome-logger-debugging-guide": "2026-08-23",
   "java-plugins-chrome-compatibility-guide": "2026-08-23",
-  "ie-tab-chrome-legacy-sites-guide": "2026-08-23"
+  "ie-tab-chrome-legacy-sites-guide": "2026-08-23",
+  "chrome-extensions-that-actually-respect-your-privacy": "2026-08-24",
+  "chrome-extensions-that-slow-down-your-browser-real-tests": "2026-08-24",
+  "chrome-manifest-v3-migration-guide-what-users-need-to-know": "2026-08-24",
+  "chrome-extension-security-risks-permission-audit-guide": "2026-08-24",
+  "how-to-manage-chrome-extensions-organize-disable-clean-up": "2026-08-24",
+  "best-chrome-extensions-for-remote-workers-2026": "2026-08-24"
 }
