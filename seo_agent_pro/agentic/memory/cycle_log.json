@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension history api",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 85,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article does not include a checklist, which is a required element in the brief.",
+      "The FAQ section could be further expanded to address more developer queries and provide additional insight, as highlighted in the competitor gap requirements.",
+      "The 'Advanced Troubleshooting and Common Mistakes' section covers some issues, but does not delve deeply into advanced troubleshooting scenarios or provide extensive examples for debugging."
+    ],
+    "category": "Developer Tools",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/history",
+      "https://chrome.jscn.org/docs/extensions/reference/history/",
+      "https://bestchromeextensions.com/docs/guides/history-api/"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:26:44.905725+00:00"
   }
 ]
