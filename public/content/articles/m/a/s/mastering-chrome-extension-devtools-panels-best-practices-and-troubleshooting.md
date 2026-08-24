@@ -119,7 +119,7 @@ chrome.runtime.onMessage.addListener(message => {
 
 ## Best Practices for Extending DevTools Functionality
 
-1. **Optimize Panel Performance**: 
+1. **Optimize Panel Performance**:
    - Avoid heavy DOM manipulations in the panel. Lazy-load scripts and resources where possible.
    - Implement conditional rendering by leveraging the `onShown` and `onHidden` events.
 
@@ -129,7 +129,7 @@ chrome.runtime.onMessage.addListener(message => {
 
 3. **Ensure Accessibility**:
    - Design your UI with accessibility (a11y) in mind. Use semantic HTML tags and implement keyboard navigation support.
-   
+
 4. **Debug Panel During Development**:
    - Use the `chrome://extensions` page in Developer Mode to enable debugging tools for your own DevTools panel.
 
@@ -169,16 +169,16 @@ Each choice comes with trade-offs, so align your selection with your project’s
 
 ## Frequently Asked Questions
 
-**Q: Can I use external libraries like React or Vue to design the panel UI?**  
+**Q: Can I use external libraries like React or Vue to design the panel UI?**
 A: Yes, you can include libraries like React or Vue in your panel’s `panel.html`. Just adhere to Chrome’s CSP rules and bundle the code properly.
 
-**Q: How do I debug my custom panel during development?**  
+**Q: How do I debug my custom panel during development?**
 A: Enable "Developer Mode" via `chrome://extensions`. Locate your extension and click "Inspect views" to open a debugging console for the DevTools page or panel.
 
-**Q: Is it possible to have multiple custom panels in a single extension?**  
+**Q: Is it possible to have multiple custom panels in a single extension?**
 A: Yes, you can create multiple panels using `chrome.devtools.panels.create()` with unique names and corresponding HTML files.
 
-**Q: Are there any API limitations I should be aware of?**  
+**Q: Are there any API limitations I should be aware of?**
 A: Custom DevTools panels cannot directly manipulate the browser’s DOM; they can only interact with the inspected page via message passing.
 
 ---
