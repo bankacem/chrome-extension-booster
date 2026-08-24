@@ -19,6 +19,12 @@ Chrome extensions have revolutionized how users experience the web, providing cu
 
 In this guide, we’ll demystify match patterns, explain how to implement them correctly, troubleshoot common issues, and explore their equivalents in other browsers like Firefox and Edge. Whether you're a developer aiming to optimize your extension or someone curious about the rules governing web extensions, we’ve got you covered.  
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-match-patterns-a-complete-guide -->
+
+![Chrome Extension match patterns URL decision workflow illustration](/content/images/chrome-extension-match-patterns-a-complete-guide/chrome-extension-match-patterns-a-complete-guide-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome Extension match patterns URL decision workflow; it is not a product screenshot.*
+
 ---
 
 ## What Are Chrome Extension Match Patterns?  
