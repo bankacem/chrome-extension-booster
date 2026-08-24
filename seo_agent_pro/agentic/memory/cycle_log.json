@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension message passing runtime",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 85,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article lacks explicit advanced debugging techniques for addressing common message passing errors, as required in the competitor_gap_requirements. The debugging section covers basic strategies but doesn't delve into advanced methods like using breakpoints or inspecting message payloads in detail.",
+      "The article does not fully explain the benefits and real-world use cases of long-lived connections in depth, missing an opportunity to connect the API's functionality to practical, relatable examples.",
+      "The FAQ section could be more comprehensive; while it covers some relevant questions, it does not address details like scenarios where message passing fails, proactive permissions setup, or troubleshooting service worker-based background scripts."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/develop/concepts/messaging",
+      "https://stackoverflow.com/questions/20077487/chrome-extension-message-passing-response-not-sent",
+      "https://victoronsoftware.com/posts/message-passing-in-chrome-extension/"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:54:02.980269+00:00"
   }
 ]
