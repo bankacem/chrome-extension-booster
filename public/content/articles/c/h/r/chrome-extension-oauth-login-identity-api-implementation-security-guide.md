@@ -147,7 +147,7 @@ Even when following documentation, developers often encounter integration roadbl
 
 1. **Incorrect Redirect URI**
    - One of the most common issues is a mismatch between the redirect URI configured in the OAuth2 console and your `manifest.json`.
-   - **Solution**: Ensure the redirect URI follows the format:  
+   - **Solution**: Ensure the redirect URI follows the format:
      ```
      https://<your-extension-id>.chromiumapp.org/
      ```
@@ -170,23 +170,23 @@ Even when following documentation, developers often encounter integration roadbl
 
 OAuth2 introduces powerful capabilities but also potential vulnerabilities if implemented carelessly. Follow these security best practices to safeguard user tokens:
 
-1. **Token Storage**:  
-   – Never store tokens directly in `localStorage` or `sessionStorage`, as they’re vulnerable to XSS attacks.  
+1. **Token Storage**:
+   – Never store tokens directly in `localStorage` or `sessionStorage`, as they’re vulnerable to XSS attacks.
    – Rely on `chrome.identity` for secure token management.
 
-2. **Regular Token Renewal**:  
+2. **Regular Token Renewal**:
    – Refresh tokens periodically using `chrome.identity.getAuthToken`.
 
-3. **Minimize Permissions**:  
+3. **Minimize Permissions**:
    – Use the principle of least privilege by only requesting the exact permissions your extension needs.
 
-4. **Check Token Scopes**:  
+4. **Check Token Scopes**:
    – Ensure tokens are scoped as narrowly as possible. Decline unnecessary requests.
 
-5. **Handle Errors Gracefully**:  
+5. **Handle Errors Gracefully**:
    – Log all errors securely and guide your users by providing actionable resolution steps.
 
-6. **Stay Updated on API Changes**:  
+6. **Stay Updated on API Changes**:
    – API providers often deprecate older security mechanisms; keep your app updated to maintain compatibility.
 
 ---
@@ -204,19 +204,19 @@ Integrating OAuth2 with Google Chrome extensions can seem intimidating, but with
 
 ## Frequently Asked Questions
 
-**Q: Can I use the `chrome.identity` API for third-party OAuth providers like Facebook or GitHub?**  
+**Q: Can I use the `chrome.identity` API for third-party OAuth providers like Facebook or GitHub?**
 A: While the `chrome.identity` API is optimized for Google OAuth2, you can use the `launchWebAuthFlow()` method for other providers. However, you'll need to handle token management manually.
 
-**Q: How do I handle users with multiple accounts (e.g., two Google accounts)?**  
+**Q: How do I handle users with multiple accounts (e.g., two Google accounts)?**
 A: Use `chrome.identity.getAccounts` to retrieve a list of available accounts and allow users to choose.
 
-**Q: What happens if the user revokes my app’s access?**  
+**Q: What happens if the user revokes my app’s access?**
 A: The token becomes invalid. Handle this error by prompting the user to re-authenticate.
 
-**Q: Are refresh tokens supported in Chrome extensions?**  
+**Q: Are refresh tokens supported in Chrome extensions?**
 A: No, Chrome extensions rely on access tokens. When the `getAuthToken` call returns a new token, it automatically handles token refresh.
 
-**Q: Can I increase the lifetime of access tokens?**  
+**Q: Can I increase the lifetime of access tokens?**
 A: Access token lifetimes are set by the API provider and cannot be modified client-side.
 
 ---
