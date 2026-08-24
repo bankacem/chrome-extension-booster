@@ -237,6 +237,39 @@
     "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
+    "id": "60451c45-45ed-4b27-a787-7a3d55bfdc0f",
+    "title": "Chrome Extension Permissions: How to Review Access Before You Install",
+    "slug": "chrome-extension-permissions-guide",
+    "description": "A practical guide to Chrome extension permissions: how to read warnings, prefer optional permissions and activeTab, and limit site access before and after install.",
+    "meta_description": "A practical guide to Chrome extension permissions: how to read warnings, prefer optional permissions and activeTab, and limit site access before and after install.",
+    "excerpt": "Before you click “Add to Chrome,” learn how to read permission warnings, recognize optional permissions and activeTab, and limit site access safely.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/og-image.png",
+    "featured_image": "/og-image.png",
+    "reading_time": 7,
+    "read_time": 7,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "Extensions",
+      "Permissions",
+      "Privacy",
+      "Security"
+    ],
+    "keywords": [
+      "chrome extension permissions guide",
+      "permission warnings",
+      "optional permissions",
+      "activeTab",
+      "host permissions",
+      "site access controls"
+    ],
+    "canonicalPath": "/blog/chrome-extension-permissions-guide",
+    "updated_at": "2026-08-23T00:00:00.000Z"
+  },
+  {
     "id": "77f85717-3324-4a51-ba1f-8a465bb80781",
     "title": "Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely",
     "slug": "chrome-extensions-incognito-guide",
