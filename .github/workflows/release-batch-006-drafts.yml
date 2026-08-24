@@ -1,0 +1,129 @@
+name: Release Batch 006 scheduled drafts
+
+on:
+  # GitHub may delay cron events; the catch-up loop finds the oldest due draft.
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+    inputs:
+      release_slug:
+        description: 'Exact Batch 006 article slug to release; leave empty for automatic due-slot selection'
+        required: false
+        default: ''
+        type: string
+
+concurrency:
+  group: release-batch-006-drafts
+  cancel-in-progress: false
+
+jobs:
+  release-one:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Release one due and image-ready Batch 006 draft
+        env:
+          RELEASE_SLUG: ${{ inputs.release_slug }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          schedule_path = Path('editorial/publishing-schedule-batch-006.json')
+          schedule = json.loads(schedule_path.read_text())
+          entries = schedule.get('entries', [])
+          now = datetime.now(timezone.utc)
+          manual_slug = os.environ.get('RELEASE_SLUG', '').strip()
+          selected = None
+
+          if manual_slug:
+              matches = [e for e in entries if e.get('slug') == manual_slug]
+              if len(matches) != 1:
+                  raise SystemExit(f'Unknown Batch 006 release_slug: {manual_slug}')
+              selected = matches[0]
+          else:
+              candidates = []
+              for entry in entries:
+                  if entry.get('release_enabled') is False or entry.get('publish_enabled') is False:
+                      continue
+                  if not entry.get('due_utc'):
+                      continue
+                  due = datetime.fromisoformat(entry['due_utc'].replace('Z', '+00:00'))
+                  article = Path(entry['article_path'])
+                  if not article.exists():
+                      continue
+                  text = article.read_text()
+                  if not re.search(r'^status:\s*draft\s*$', text, re.M):
+                      continue
+                  delta = (now - due).total_seconds()
+                  if 0 <= delta <= int(schedule.get('late_window_seconds', 604800)):
+                      candidates.append((due, entry))
+              if not candidates:
+                  print(f'No due Batch 006 release at {now.isoformat()}; exiting idempotently.')
+                  raise SystemExit(0)
+              selected = sorted(candidates, key=lambda pair: pair[0])[0][1]
+
+          slug = selected['slug']
+          article = Path(selected['article_path'])
+          if not article.exists():
+              raise SystemExit(f'Missing article: {article}')
+          text = article.read_text()
+          if not re.search(r'^status:\s*draft\s*$', text, re.M):
+              print(f'Already published or not a draft: {slug}; exiting idempotently.')
+              raise SystemExit(0)
+
+          refs = re.findall(r'!\[[^\]]*\]\((/content/images/[^)]+\.webp)\)', text)
+          if not refs:
+              raise SystemExit(f'Visual gate failed: no inline WebP in {slug}')
+          for ref in refs:
+              asset = Path('public') / ref.lstrip('/')
+              if not asset.exists() or not asset.with_suffix('.avif').exists():
+                  raise SystemExit(f'Visual gate failed: missing AVIF sibling for {ref}')
+
+          featured = re.search(r'^featured_image:\s*(/content/images/[^\s]+\.webp)', text, re.M)
+          if featured:
+              asset = Path('public') / featured.group(1).lstrip('/')
+              if not asset.exists() or not asset.with_suffix('.avif').exists():
+                  raise SystemExit(f'Visual gate failed: missing featured AVIF sibling for {featured.group(1)}')
+
+          article.write_text(re.sub(r'^status:\s*draft\s*$', 'status: published', text, count=1, flags=re.M))
+          subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
+          subprocess.run(['git', 'config', 'user.email', 'github-actions[bot]@users.noreply.github.com'], check=True)
+          subprocess.run(['git', 'add', str(article)], check=True)
+          subprocess.run(['git', 'commit', '-m', f'content: release Batch 006 article {slug}'], check=True)
+          subprocess.run(['git', 'push', 'origin', 'main'], check=True)
+          print(f'Released Batch 006 {slug}')
+          PY
+
+      - name: Rebuild index and Sitemap after release
+        if: success()
+        run: |
+          git fetch origin
+          git pull --rebase origin main
+          bun run sync-articles
+          bun run sitemap
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add public/content/articles-index.json public/sitemap.xml public/content/sitemap-dates.json
+          if git diff --cached --quiet; then
+            echo 'Index and Sitemap already synchronized.'
+          else
+            git commit -m 'chore: refresh index and sitemap after Batch 006 release'
+            git push origin main
+          fi
