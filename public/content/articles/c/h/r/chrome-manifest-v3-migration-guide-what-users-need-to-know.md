@@ -13,14 +13,14 @@ keywords:
   - chrome extension not working 2026
   - what is manifest v3
 meta_description: "Complete guide to Chrome Manifest V3 migration for users. Check which extensions are updated, understand what changed, and learn what to do if extensions stop working."
-status: published
-published_at: "2026-08-24T01:28:48.000+00:00"
-scheduled_at: "2026-08-24T01:28:48+00:00"
+status: draft
+published_at: "2026-08-27T12:00:00+01:00"
+scheduled_at: "2026-08-27T12:00:00+01:00"
 author: "James Mitchell"
 author_image: /content/images/authors/james-mitchell.png
 read_time: 7
-created_at: "2026-08-24T01:28:48.000+00:00"
-updated_at: "2026-08-24T01:28:48.000+00:00"
+created_at: "2026-08-24T12:00:00+01:00"
+updated_at: "2026-08-24T12:00:00+01:00"
 description: "Google has fully deprecated Manifest V2. This guide explains what changed, which extensions are affected, how to check your status, and what to do if an extension stops working."
 ---
 

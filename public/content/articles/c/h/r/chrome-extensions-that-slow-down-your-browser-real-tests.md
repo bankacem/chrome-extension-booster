@@ -14,13 +14,13 @@ keywords:
   - browser slow because of extensions
 meta_description: "Real Chrome Task Manager tests showing which extensions use the most RAM and CPU in 2026. Measured data, not guesses. Includes fixes for a slow browser."
 status: published
-published_at: "2026-08-24T01:28:48.000+00:00"
-scheduled_at: "2026-08-24T01:28:48+00:00"
+published_at: "2026-08-24T12:00:00+01:00"
+scheduled_at: "2026-08-24T12:00:00+01:00"
 author: "James Mitchell"
 author_image: /content/images/authors/james-mitchell.png
 read_time: 8
-created_at: "2026-08-24T01:28:48.000+00:00"
-updated_at: "2026-08-24T01:28:48.000+00:00"
+created_at: "2026-08-24T12:00:00+01:00"
+updated_at: "2026-08-24T12:00:00+01:00"
 description: "We tested 20 popular Chrome extensions with Chrome Task Manager and measured actual RAM and CPU impact. Here are the results and what to do about it."
 ---
 

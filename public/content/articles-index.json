@@ -18156,5 +18156,198 @@
     ],
     "canonicalPath": "/blog/internet-download-manager-extension",
     "updated_at": "2026-08-21T00:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-perf-0001",
+    "title": "Chrome Extensions That Slow Down Your Browser in 2026: Real Performance Tests",
+    "slug": "chrome-extensions-that-slow-down-your-browser-real-tests",
+    "description": "We tested 20 popular Chrome extensions with Chrome Task Manager and measured actual RAM and CPU impact. Here are the results and what to do about it.",
+    "meta_description": "Real Chrome Task Manager tests showing which extensions use the most RAM and CPU in 2026. Measured data, not guesses. Includes fixes for a slow browser.",
+    "excerpt": "We tested 20 popular Chrome extensions with Chrome Task Manager and measured actual RAM and CPU impact. Here are the results and what to do about it.",
+    "featured_image": "/content/images/chrome-extensions-that-slow-down-your-browser-real-tests/featured.webp",
+    "category": "Performance & Memory",
+    "tags": [
+      "performance",
+      "memory",
+      "ram",
+      "cpu",
+      "browser speed"
+    ],
+    "keywords": [
+      "chrome extensions slow down browser",
+      "chrome extension memory usage",
+      "which chrome extensions use most ram",
+      "browser slow because of extensions"
+    ],
+    "author": "James Mitchell",
+    "author_image": "/content/images/authors/james-mitchell.png",
+    "image_url": "/content/images/chrome-extensions-that-slow-down-your-browser-real-tests/featured.webp",
+    "published_at": "2026-08-24T12:00:00+01:00",
+    "reading_time": 8,
+    "read_time": 8,
+    "canonicalPath": "/blog/chrome-extensions-that-slow-down-your-browser-real-tests",
+    "status": "published",
+    "scheduled_at": "2026-08-24T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-sec-0002",
+    "title": "Chrome Extension Security Risks: How to Audit Extension Permissions in 2026",
+    "slug": "chrome-extension-security-risks-permission-audit-guide",
+    "description": "Most Chrome users install extensions without checking what permissions they request. This guide shows you exactly how to audit your extensions, spot red flags, and remove risky ones.",
+    "meta_description": "Step-by-step guide to auditing Chrome extension permissions. Learn which permissions are dangerous, how to check what extensions can access, and how to remove risky ones.",
+    "excerpt": "Most Chrome users install extensions without checking what permissions they request. This guide shows you exactly how to audit your extensions, spot red flags, and remove risky ones.",
+    "featured_image": "/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp",
+    "category": "Security & Privacy",
+    "tags": [
+      "security",
+      "privacy",
+      "permissions",
+      "audit",
+      "chrome extensions"
+    ],
+    "keywords": [
+      "chrome extension security risks",
+      "how to check chrome extension permissions",
+      "are chrome extensions safe",
+      "chrome extension permission audit"
+    ],
+    "author": "James Mitchell",
+    "author_image": "/content/images/authors/james-mitchell.png",
+    "image_url": "/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp",
+    "published_at": "2026-08-25T12:00:00+01:00",
+    "reading_time": 9,
+    "read_time": 9,
+    "canonicalPath": "/blog/chrome-extension-security-risks-permission-audit-guide",
+    "status": "draft",
+    "scheduled_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-remote-0003",
+    "title": "Best Chrome Extensions for Remote Workers in 2026: Tools That Actually Help",
+    "slug": "best-chrome-extensions-for-remote-workers-2026",
+    "description": "Working remotely comes with unique challenges: time zones, video calls, async communication, and focus. These Chrome extensions solve real remote work problems, not generic productivity ones.",
+    "meta_description": "Chrome extensions specifically for remote workers: time zone management, video call tools, async communication, and focus extensions tested for real work-from-home scenarios.",
+    "excerpt": "Working remotely comes with unique challenges: time zones, video calls, async communication, and focus. These Chrome extensions solve real remote work problems, not generic productivity ones.",
+    "featured_image": "/content/images/best-chrome-extensions-for-remote-workers-2026/featured.webp",
+    "category": "Productivity & Tools",
+    "tags": [
+      "remote work",
+      "productivity",
+      "video calls",
+      "time zones",
+      "communication"
+    ],
+    "keywords": [
+      "best chrome extensions for remote workers",
+      "chrome extensions for work from home",
+      "remote work tools chrome",
+      "wfh chrome extensions"
+    ],
+    "author": "James Mitchell",
+    "author_image": "/content/images/authors/james-mitchell.png",
+    "image_url": "/content/images/best-chrome-extensions-for-remote-workers-2026/featured.webp",
+    "published_at": "2026-08-26T12:00:00+01:00",
+    "reading_time": 8,
+    "read_time": 8,
+    "canonicalPath": "/blog/best-chrome-extensions-for-remote-workers-2026",
+    "status": "draft",
+    "scheduled_at": "2026-08-26T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-mv3-0004",
+    "title": "Chrome Manifest V3 Migration Guide: What Users Need to Know in 2026",
+    "slug": "chrome-manifest-v3-migration-guide-what-users-need-to-know",
+    "description": "Google has fully deprecated Manifest V2. This guide explains what changed, which extensions are affected, how to check your status, and what to do if an extension stops working.",
+    "meta_description": "Complete guide to Chrome Manifest V3 migration for users. Check which extensions are updated, understand what changed, and learn what to do if extensions stop working.",
+    "excerpt": "Google has fully deprecated Manifest V2. This guide explains what changed, which extensions are affected, how to check your status, and what to do if an extension stops working.",
+    "featured_image": "/content/images/chrome-manifest-v3-migration-guide-what-users-need-to-know/featured.webp",
+    "category": "Chrome Extensions",
+    "tags": [
+      "manifest v3",
+      "chrome extensions",
+      "migration",
+      "deprecation",
+      "chrome web store"
+    ],
+    "keywords": [
+      "chrome manifest v3 migration",
+      "manifest v2 deprecated",
+      "chrome extension not working 2026",
+      "what is manifest v3"
+    ],
+    "author": "James Mitchell",
+    "author_image": "/content/images/authors/james-mitchell.png",
+    "image_url": "/content/images/chrome-manifest-v3-migration-guide-what-users-need-to-know/featured.webp",
+    "published_at": "2026-08-27T12:00:00+01:00",
+    "reading_time": 7,
+    "read_time": 7,
+    "canonicalPath": "/blog/chrome-manifest-v3-migration-guide-what-users-need-to-know",
+    "status": "draft",
+    "scheduled_at": "2026-08-27T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-mgmt-0005",
+    "title": "How to Manage Chrome Extensions: Organize, Disable, and Clean Up in 2026",
+    "slug": "how-to-manage-chrome-extensions-organize-disable-clean-up",
+    "description": "A practical guide to organizing your Chrome extensions, disabling unused ones, creating extension groups, and using keyboard shortcuts for faster access.",
+    "meta_description": "Learn how to organize, group, disable, and manage Chrome extensions efficiently. Includes keyboard shortcuts, the toolbar pin system, and a cleanup workflow for removing unused extensions.",
+    "excerpt": "A practical guide to organizing your Chrome extensions, disabling unused ones, creating extension groups, and using keyboard shortcuts for faster access.",
+    "featured_image": "/content/images/how-to-manage-chrome-extensions-organize-disable-clean-up/featured.webp",
+    "category": "Productivity & Tools",
+    "tags": [
+      "organization",
+      "management",
+      "chrome extensions",
+      "productivity",
+      "keyboard shortcuts"
+    ],
+    "keywords": [
+      "how to manage chrome extensions",
+      "organize chrome extensions",
+      "disable chrome extensions",
+      "chrome extension groups",
+      "chrome extension keyboard shortcuts"
+    ],
+    "author": "James Mitchell",
+    "author_image": "/content/images/authors/james-mitchell.png",
+    "image_url": "/content/images/how-to-manage-chrome-extensions-organize-disable-clean-up/featured.webp",
+    "published_at": "2026-08-28T12:00:00+01:00",
+    "reading_time": 7,
+    "read_time": 7,
+    "canonicalPath": "/blog/how-to-manage-chrome-extensions-organize-disable-clean-up",
+    "status": "draft",
+    "scheduled_at": "2026-08-28T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-priv-0006",
+    "title": "Chrome Extensions That Actually Respect Your Privacy in 2026",
+    "slug": "chrome-extensions-that-actually-respect-your-privacy",
+    "description": "Not all privacy extensions are equally private. Some collect data while claiming to protect it. We analyzed the data practices of 15 popular privacy-focused Chrome extensions.",
+    "meta_description": "Analysis of which Chrome extensions actually protect your privacy versus which ones collect data. Covers open-source options, data practices, and configuration tips for maximum privacy.",
+    "excerpt": "Not all privacy extensions are equally private. Some collect data while claiming to protect it. We analyzed the data practices of 15 popular privacy-focused Chrome extensions.",
+    "featured_image": "/content/images/chrome-extensions-that-actually-respect-your-privacy/featured.webp",
+    "category": "Security & Privacy",
+    "tags": [
+      "privacy",
+      "data collection",
+      "open source",
+      "tracking",
+      "chrome extensions"
+    ],
+    "keywords": [
+      "chrome extensions that respect privacy",
+      "privacy chrome extensions no tracking",
+      "chrome extension data collection",
+      "private browsing extensions"
+    ],
+    "author": "James Mitchell",
+    "author_image": "/content/images/authors/james-mitchell.png",
+    "image_url": "/content/images/chrome-extensions-that-actually-respect-your-privacy/featured.webp",
+    "published_at": "2026-08-29T12:00:00+01:00",
+    "reading_time": 8,
+    "read_time": 8,
+    "canonicalPath": "/blog/chrome-extensions-that-actually-respect-your-privacy",
+    "status": "draft",
+    "scheduled_at": "2026-08-29T12:00:00+01:00"
   }
 ]

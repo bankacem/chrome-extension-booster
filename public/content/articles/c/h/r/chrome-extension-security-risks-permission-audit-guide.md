@@ -13,14 +13,14 @@ keywords:
   - are chrome extensions safe
   - chrome extension permission audit
 meta_description: "Step-by-step guide to auditing Chrome extension permissions. Learn which permissions are dangerous, how to check what extensions can access, and how to remove risky ones."
-status: published
-published_at: "2026-08-24T01:28:48.000+00:00"
-scheduled_at: "2026-08-24T01:28:48+00:00"
+status: draft
+published_at: "2026-08-25T12:00:00+01:00"
+scheduled_at: "2026-08-25T12:00:00+01:00"
 author: "James Mitchell"
 author_image: /content/images/authors/james-mitchell.png
 read_time: 9
-created_at: "2026-08-24T01:28:48.000+00:00"
-updated_at: "2026-08-24T01:28:48.000+00:00"
+created_at: "2026-08-24T12:00:00+01:00"
+updated_at: "2026-08-24T12:00:00+01:00"
 description: "Most Chrome users install extensions without checking what permissions they request. This guide shows you exactly how to audit your extensions, spot red flags, and remove risky ones."
 ---
 

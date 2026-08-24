@@ -13,14 +13,14 @@ keywords:
   - remote work tools chrome
   - wfh chrome extensions
 meta_description: "Chrome extensions specifically for remote workers: time zone management, video call tools, async communication, and focus extensions tested for real work-from-home scenarios."
-status: published
-published_at: "2026-08-24T01:28:48.000+00:00"
-scheduled_at: "2026-08-24T01:28:48+00:00"
+status: draft
+published_at: "2026-08-26T12:00:00+01:00"
+scheduled_at: "2026-08-26T12:00:00+01:00"
 author: "James Mitchell"
 author_image: /content/images/authors/james-mitchell.png
 read_time: 8
-created_at: "2026-08-24T01:28:48.000+00:00"
-updated_at: "2026-08-24T01:28:48.000+00:00"
+created_at: "2026-08-24T12:00:00+01:00"
+updated_at: "2026-08-24T12:00:00+01:00"
 description: "Working remotely comes with unique challenges: time zones, video calls, async communication, and focus. These Chrome extensions solve real remote work problems, not generic productivity ones."
 ---
 
