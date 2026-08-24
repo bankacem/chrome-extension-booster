@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome desktop capture extension",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 1,
+    "score": 90,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article does not explicitly address the competitor gap requirement of detailing specific use cases for different extensions beyond general categories.",
+      "The troubleshooting section could benefit from elaborating on solutions (e.g., providing additional steps or alternative fixes for scenarios like hardware acceleration conflict).",
+      "The comparison table lacks mentions of specific annotation and editing feature capabilities per extension, which could provide clearer differentiation."
+    ],
+    "category": "Screenshots & Screen Capture",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/desktopCapture",
+      "https://stackoverflow.com/questions/24162346/desktop-capture-chrome-plugin",
+      "https://gofullpage.com/"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T01:03:17.292277+00:00"
   }
 ]
