@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension bookmarks api",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 85,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The 'Comparison with Other Browsers' Bookmark APIs' section does not offer substantial detail or sources; it feels superficial, and the comparison table lacks robust information on API features, performance, or specific use cases.",
+      "The Step-by-Step Guide could be more visually structured, with numbered or bulleted instructions for clarity and easier readability.",
+      "Use case examples are limited in depth; while innovative use cases are mentioned, they lack code snippets or detailed steps that would genuinely guide implementation."
+    ],
+    "category": "Developer Tools",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/bookmarks",
+      "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Work_with_the_Bookmarks_API",
+      "https://chromewebstore.google.com/detail/better-chrome-bookmarks-p/elmodehopiphjgpjpglfogecodmcoedf"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:20:44.409411+00:00"
   }
 ]
