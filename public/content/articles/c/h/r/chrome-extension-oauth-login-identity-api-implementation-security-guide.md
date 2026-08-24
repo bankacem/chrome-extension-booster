@@ -19,6 +19,12 @@ Chrome extensions are incredibly versatile tools that enhance productivity, stre
 
 If you’re a developer struggling with OAuth2 integration using the `chrome.identity` API—or simply trying to create a robust and secure implementation—this guide is for you. We’ll provide step-by-step instructions, tackle common troubleshooting pain points, and share best practices for token security and handling multi-user scenarios.
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-oauth-login-identity-api-implementation-security-guide -->
+
+![Chrome Extension OAuth login and identity security workflow illustration](/content/images/chrome-extension-oauth-login-identity-api-implementation-security-guide/chrome-extension-oauth-login-identity-api-implementation-security-guide-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome Extension OAuth login and identity security workflow; it is not a product screenshot.*
+
 ---
 
 ## Introduction to Chrome Extensions and OAuth2
