@@ -19,6 +19,12 @@ Chrome DevTools offers an unparalleled suite of tools for debugging and web deve
 
 In this guide, we’ll break down everything you need to know about implementing **custom Chrome DevTools panels**, tackle common issues, offer advanced best practices, and even compare alternatives to help you make informed decisions. By the end, you’ll not only know how to build a robust panel but also how to troubleshoot and optimize it for real-world use.
 
+<!-- ExtensionTo Batch 006 visual: mastering-chrome-extension-devtools-panels-best-practices-and-troubleshooting -->
+
+![Chrome Extension DevTools panel inspection and troubleshooting workflow illustration](/content/images/mastering-chrome-extension-devtools-panels-best-practices-and-troubleshooting/mastering-chrome-extension-devtools-panels-best-practices-and-troubleshooting-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome Extension DevTools panel debugging workflow; it is not a product screenshot.*
+
 ---
 
 ## Introduction to Chrome DevTools Panels
