@@ -33,8 +33,8 @@ The Chrome Alarms API allows extensions to schedule code to run at specified int
 
 The API primarily revolves around three main methods:
 
-1. **`chrome.alarms.create()`**  
-   This method creates an alarm. You can specify a delay (`delayInMinutes` or `when`) and even set recurring alarms using the `periodInMinutes` property.  
+1. **`chrome.alarms.create()`**
+   This method creates an alarm. You can specify a delay (`delayInMinutes` or `when`) and even set recurring alarms using the `periodInMinutes` property.
    Example usage:
    ```javascript
    chrome.alarms.create('myAlarm', {
@@ -43,8 +43,8 @@ The API primarily revolves around three main methods:
    });
    ```
 
-2. **`chrome.alarms.onAlarm.addListener()`**  
-   This adds a listener to execute code once an alarm is triggered.  
+2. **`chrome.alarms.onAlarm.addListener()`**
+   This adds a listener to execute code once an alarm is triggered.
    ```javascript
    chrome.alarms.onAlarm.addListener((alarm) => {
        console.log('Alarm triggered:', alarm.name);
@@ -52,8 +52,8 @@ The API primarily revolves around three main methods:
    });
    ```
 
-3. **`chrome.alarms.clearAll()`**  
-   This method clears all active alarms, useful when you want to reset your scheduling logic.  
+3. **`chrome.alarms.clearAll()`**
+   This method clears all active alarms, useful when you want to reset your scheduling logic.
    ```javascript
    chrome.alarms.clearAll(() => {
        console.log('All alarms cleared.');
@@ -69,7 +69,7 @@ The API primarily revolves around three main methods:
 Several factors could cause your Chrome extension alarms to fail:
 
 1. **Incorrect alarm configuration:** Misconfigured parameters for `chrome.alarms.create()` can result in alarms failing to initialize.
-   
+
 2. **Manifest V3 requirements:** Forgetting to migrate to a service worker-based background script can lead to inconsistent behavior. Manifest V3 restricts persistent background pages, which were often used for alarms in Manifest V2.
 
 3. **Timer resolution limitations:** Alarm intervals shorter than 1 minute are not allowed. If a shorter interval is set, the alarm won’t function.
@@ -87,8 +87,8 @@ Several factors could cause your Chrome extension alarms to fail:
 Follow this systematic approach to identify and resolve issues with your Chrome extension alarms:
 
 ### 1. Verify Your Alarm Configuration
-- Double-check the parameters passed to `chrome.alarms.create()`. Ensure you’re not violating API limitations (e.g., keep intervals at or above 1 minute).  
-  Example of a valid alarm setup:  
+- Double-check the parameters passed to `chrome.alarms.create()`. Ensure you’re not violating API limitations (e.g., keep intervals at or above 1 minute).
+  Example of a valid alarm setup:
   ```javascript
   chrome.alarms.create('myAlarm', {
       delayInMinutes: 2,
@@ -120,7 +120,7 @@ Follow this systematic approach to identify and resolve issues with your Chrome 
 
 ### 4. Adapt for Manifest V3 Service Workers
 - Ensure your background script is correctly defined and utilizes a service worker:
-  Example `manifest.json`:  
+  Example `manifest.json`:
   ```json
   {
       "name": "My Extension",
@@ -142,7 +142,7 @@ Follow this systematic approach to identify and resolve issues with your Chrome 
   ```
 
 ### 6. Debug Conflicts or Overlaps
-- Check for potential overlaps in alarm names and ensure they’re unique.  
+- Check for potential overlaps in alarm names and ensure they’re unique.
   Use `chrome.alarms.clearAll()` to reset:
   ```javascript
   chrome.alarms.clearAll(() => {
@@ -176,7 +176,7 @@ Follow this systematic approach to identify and resolve issues with your Chrome 
 3. **Account for environment variability:** To simulate real-world scenarios:
    - Test your extension on devices with varying power settings.
    - Temporarily enable throttling in Chrome DevTools to mimic slow execution or latency.
-4. **Plan for failure gracefully:** Always include error handling in your listener functions. For example:  
+4. **Plan for failure gracefully:** Always include error handling in your listener functions. For example:
    ```javascript
    try {
        // Critical task
@@ -192,19 +192,19 @@ Follow this systematic approach to identify and resolve issues with your Chrome 
 
 ### Frequently Asked Questions
 
-**Q: Can I set an alarm that fires every second?**  
+**Q: Can I set an alarm that fires every second?**
 A: No, Chrome Alarms API doesn’t support intervals shorter than one minute. For more frequent tasks, consider using `setInterval` in combination with a long-lived connection to your service worker.
 
-**Q: Why are alarms not firing after I reload my extension?**  
+**Q: Why are alarms not firing after I reload my extension?**
 A: Ensure the alarm is being re-registered each time the service worker starts, as it doesn’t persist across reinitializations.
 
-**Q: How can I debug alarms in production?**  
+**Q: How can I debug alarms in production?**
 A: Use `chrome.alarms.getAll()` to confirm alarm registration. Add extensive logging within `onAlarm` listeners and check errors using `chrome.runtime.lastError`.
 
-**Q: Do alarms work if the browser is closed?**  
+**Q: Do alarms work if the browser is closed?**
 A: No. Alarms only fire when the browser is running, as they depend on the browser’s background process.
 
-**Q: Can alarms be used to trigger notifications automatically?**  
+**Q: Can alarms be used to trigger notifications automatically?**
 A: Yes. You can invoke `chrome.notifications.create` within your alarm listener to show notifications at scheduled intervals.
 
 ---
