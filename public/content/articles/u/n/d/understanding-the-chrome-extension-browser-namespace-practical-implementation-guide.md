@@ -29,7 +29,7 @@ The `browser` namespace, introduced as part of the WebExtension API, standardize
 
 *Illustration: Editorial illustration of a Chrome extension browser namespace implementation workflow; it is not a product screenshot.*
 
-**Example Use Case**  
+**Example Use Case**
 Let’s say you want to create a cross-browser extension that manipulates tabs. With the `chrome` namespace, you'd write something like:
 
 ```javascript
@@ -70,16 +70,16 @@ For extensions targeting multiple browsers, using the `browser` namespace minimi
 
 ## Migrating to the `browser` namespace offers several benefits:
 
-1. **Cross-Browser Compatibility**  
+1. **Cross-Browser Compatibility**
    Extensions written with the `browser` namespace can run on Firefox, Chrome, Edge, and Opera with minimal changes, expanding your potential user base.
 
-2. **Simplified Async Operations**  
+2. **Simplified Async Operations**
    Writing Promises-based code eliminates the "callback hell" common in `chrome` APIs. This results in cleaner, more readable, and maintainable code.
 
-3. **Future-Proofing**  
+3. **Future-Proofing**
    As more browsers adopt the WebExtension API standard, they’ll likely prefer the `browser` namespace over `chrome`. This ensures that your extensions remain functional and compliant without constant re-writes.
 
-**Real-World Scenario**  
+**Real-World Scenario**
 Suppose you're building an extension with complex chaining of events, like opening a new tab, injecting content, and fetching data from storage. In `chrome`, this would involve nested callbacks that quickly become difficult to debug. With the `browser` namespace and Promises, you handle each step sequentially:
 
 ```javascript
@@ -124,16 +124,16 @@ This approach can ensure broader compatibility during migration while maintainin
 
 Migrating to the `browser` namespace can be a smooth process if approached methodically. Here's a step-by-step checklist:
 
-1. **Audit Your Extension**  
+1. **Audit Your Extension**
    Identify all instances of the `chrome` namespace in your codebase and map them to their `browser` equivalents using the MDN documentation.
 
-2. **Use Feature Detection**  
+2. **Use Feature Detection**
    Include a fallback mechanism to dynamically detect which namespace is available:
    ```javascript
    const api = window.browser || window.chrome;
    ```
 
-3. **Refactor Asynchronous Code**  
+3. **Refactor Asynchronous Code**
    Transform all callback-based calls to Promises for better readability:
    ```javascript
    // Before
@@ -147,16 +147,16 @@ Migrating to the `browser` namespace can be a smooth process if approached metho
        .catch(error => console.error(error));
    ```
 
-4. **Test Thoroughly on All Platforms**  
+4. **Test Thoroughly on All Platforms**
    Verify that your extension works seamlessly in Chrome, Firefox, Edge, and other target browsers.
 
-5. **Debug Errors Using `.catch()`**  
+5. **Debug Errors Using `.catch()`**
    Promises make it easier to handle errors systematically. Always include `.catch()` to log or recover from errors.
 
-6. **Optimize Manifest for Cross-Browser Compatibility**  
+6. **Optimize Manifest for Cross-Browser Compatibility**
    Ensure that your `manifest.json` includes compatible syntax and features.
 
-**Example Migration Scenario**  
+**Example Migration Scenario**
 
 Before migration (using `chrome`):
 
@@ -169,10 +169,10 @@ chrome.notifications.create('test', { title: 'Hello', message: 'World', type: 'b
 After migration (using `browser`):
 
 ```javascript
-browser.notifications.create('test', { 
-    title: 'Hello', 
-    message: 'World', 
-    type: 'basic' 
+browser.notifications.create('test', {
+    title: 'Hello',
+    message: 'World',
+    type: 'basic'
 })
 .then(id => console.log('Notification created:', id))
 .catch(error => console.error('Error:', error));
@@ -182,33 +182,33 @@ browser.notifications.create('test', {
 
 ## Common Issues and Troubleshooting Tips
 
-### Issue 1: `browser` is Undefined  
+### Issue 1: `browser` is Undefined
 Not all browsers support the `browser` namespace natively. Use a polyfill or fallback method:
 
 ```javascript
 const api = window.browser || window.chrome;
 ```
 
-### Issue 2: API Behaves Differently Across Browsers  
+### Issue 2: API Behaves Differently Across Browsers
 Check the MDN compatibility table for APIs and implement browser-specific adjustments if necessary.
 
-### Issue 3: Deprecated Features in Manifest  
+### Issue 3: Deprecated Features in Manifest
 Ensure your `manifest.json` adheres to the Manifest V3 specification, as older versions may not fully support `browser` namespace APIs.
 
 ---
 
-## Frequently Asked Questions  
+## Frequently Asked Questions
 
 ## **Q: Are there performance trade-offs when using the browser namespace over chrome?**
 A: Performance differences are negligible for most use cases. The cleaner async handling with Promises in the `browser` namespace can indirectly improve efficiency by reducing callback-related bugs.
 
-**Q: How can I ensure compatibility with older Chromium browsers?**  
+**Q: How can I ensure compatibility with older Chromium browsers?**
 A: Use feature detection to fallback to the `chrome` namespace where needed. For example:
 ```javascript
 const api = window.browser || window.chrome;
 ```
 
-**Q: What happens to extensions using the chrome namespace in future browser updates?**  
+**Q: What happens to extensions using the chrome namespace in future browser updates?**
 A: While support for the `chrome` namespace is unlikely to vanish soon in Chromium browsers, relying on the `browser` namespace ensures compliance with the evolving WebExtensions standards.
 
 ---
