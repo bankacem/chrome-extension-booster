@@ -19,6 +19,12 @@ Chrome extensions provide developers with powerful tools to enhance browser func
 
 In this guide, we’ll simplify concepts like one-time messages, long-lived connections, and debugging common issues. With clear examples and actionable steps, you'll learn how to effectively implement and troubleshoot Chrome extension message passing, even as a beginner.
 
+<!-- ExtensionTo Batch 006 visual: mastering-chrome-extension-message-passing-with-chromeruntime-apis -->
+
+![Chrome extension message passing and runtime API workflow illustration](/content/images/mastering-chrome-extension-message-passing-with-chromeruntime-apis/mastering-chrome-extension-message-passing-with-chromeruntime-apis-workflow.webp)
+
+*Illustration: Editorial illustration of Chrome extension message passing between extension contexts; it is not a product screenshot.*
+
 ---
 
 ## Introduction to Chrome Extension Message Passing  
