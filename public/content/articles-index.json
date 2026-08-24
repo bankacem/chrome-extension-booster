@@ -295,6 +295,41 @@
     "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
+    "id": "35b0b10e-181f-450e-be1b-f5858c5715e8",
+    "title": "Momentum Chrome Extension: Setup, Focus Tools, and Privacy Checks",
+    "slug": "momentum-chrome-extension-guide",
+    "description": "Evaluate and configure the Momentum Chrome extension as your New Tab dashboard. Learn setup steps, Focus tools, to‑dos, optional Plus features, and key privacy checks.",
+    "meta_description": "Evaluate and configure the Momentum Chrome extension as your New Tab dashboard. Learn setup steps, Focus tools, to‑dos, optional Plus features, and key privacy checks.",
+    "excerpt": "A practical guide to evaluating and configuring the Momentum Chrome extension as your New Tab dashboard—covering setup, Focus tools, to‑dos, optional Plus features, and the privacy choices you should review before and after installation.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/og-image.png",
+    "featured_image": "/og-image.png",
+    "reading_time": 9,
+    "read_time": 9,
+    "views": 0,
+    "tags": [
+      "Chrome Extensions",
+      "Productivity",
+      "New Tab",
+      "Momentum"
+    ],
+    "keywords": [
+      "momentum chrome extension",
+      "momentum new tab",
+      "focus mode",
+      "to-do list",
+      "productivity dashboard",
+      "momentum plus",
+      "chrome new tab replacement",
+      "privacy checks",
+      "setup guide"
+    ],
+    "canonicalPath": "/blog/momentum-chrome-extension-guide",
+    "updated_at": "2026-08-23T00:00:00.000Z"
+  },
+  {
     "id": "8258d0e7-5600-4bcd-a275-f8c29d8dbd83",
     "title": "Java Plugins in Chrome: What Still Works, What Does Not, and Safer Alternatives",
     "slug": "java-plugins-chrome-compatibility-guide",
