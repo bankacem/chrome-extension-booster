@@ -19,6 +19,12 @@ The Chrome Bookmarks API offers developers a powerful way to interact with and m
 
 In this guide, we'll explore the Chrome Bookmarks API in depth, covering its core features, implementation steps, best practices, and common troubleshooting tips. By the end, you'll have the knowledge needed to leverage the API effectively while creating a seamless user experience.  
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-bookmarks-api-a-developers-comprehensive-guide -->
+
+![Chrome Extension Bookmarks API developer workflow illustration](/content/images/chrome-extension-bookmarks-api-a-developers-comprehensive-guide/chrome-extension-bookmarks-api-a-developers-comprehensive-guide-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome Extension Bookmarks API organization and permissions workflow; it is not a product screenshot.*
+
 ---
 
 ## Overview of the Chrome Bookmarks API
