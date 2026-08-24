@@ -816,5 +816,37 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension devtools panels",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 82,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The article is missing a dedicated checklist for implementing custom panels, which is explicitly required by the brief.",
+      "The table summarizing API methods is present but lacks complete descriptions and slightly inconsistent formatting across entries. For example, 'getWindow()' does not include an example or more practical usage details.",
+      "The 'Best Practices for Extending DevTools Functionality' section does not fully cover advanced practices, such as collaboration features or integrating analytics.",
+      "The pros/cons list in 'Alternatives and Complementary Tools' is reasonably detailed but could benefit from an extra layer of specificity around trade-offs for certain APIs like chrome.debugger.",
+      "While the common issues and troubleshooting section addresses integration challenges, it does not go into enough depth or provide truly advanced or detailed solutions to stand out as superior gap-filling content compared to competitors."
+    ],
+    "category": "Developer Tools",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/devtools/panels",
+      "https://www.raymondcamden.com/2012/07/15/How-to-add-a-panel-to-Chrome-Dev-Tools",
+      "https://chrome.jscn.org/docs/extensions/reference/devtools_panels/"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T01:18:09.259681+00:00"
   }
 ]
