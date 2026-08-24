@@ -816,5 +816,35 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "chrome extension oauth login identity api",
+    "model": "bluesminds-gpt4o",
+    "revision_count": 0,
+    "score": 89,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "The section 'Overview of the chrome.identity API' contains a formatting error in its list where '# -' appears instead of properly formatted bullet points.",
+      "'Handling multi-user scenarios' from the competitor_gap_requirements isn't fully addressed; while the FAQ touches on multiple accounts, more depth would be helpful.",
+      "The article could provide a checklist for security best practices, as it is mentioned in the must_have_elements but implemented as a simple list. A proper checklist format would enhance clarity."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "needs_human_review",
+    "competitor_source": "searxng_top_three_external",
+    "competitor_count": 3,
+    "competitor_urls": [
+      "https://developer.chrome.com/docs/extensions/reference/api/identity",
+      "https://bestchromeextensions.com/docs/guides/chrome-extension-oauth2-authentication/",
+      "https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/chrome-extensions/references/extensions/auth-identity.md"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-24T00:35:04.080726+00:00"
   }
 ]
