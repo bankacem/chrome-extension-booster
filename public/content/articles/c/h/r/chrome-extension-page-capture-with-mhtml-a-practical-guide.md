@@ -19,6 +19,12 @@ Capturing webpages for offline access, research, or archival purposes is a commo
 
 This guide will walk you through everything you need to know about using Chrome extensions to capture pages as MHTML files. We’ll compare MHTML to other formats, explain key use cases, troubleshoot common issues, and even provide advanced tips for integrating page captures into your workflow.  
 
+<!-- ExtensionTo Batch 006 visual: chrome-extension-page-capture-with-mhtml-a-practical-guide -->
+
+![Chrome extension page capture with MHTML archive workflow illustration](/content/images/chrome-extension-page-capture-with-mhtml-a-practical-guide/chrome-extension-page-capture-with-mhtml-a-practical-guide-workflow.webp)
+
+*Illustration: Editorial illustration of a Chrome extension page capture and MHTML archive workflow; it is not a product screenshot.*
+
 ---
 
 ## Introduction to Chrome Extension Page Capture and MHTML  
