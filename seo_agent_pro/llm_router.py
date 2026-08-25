@@ -103,6 +103,9 @@ def _call_openrouter(model_id: str, system: str, user: str, stream: bool, max_to
         "model":      model_id,
         "max_tokens": max_tokens,
         "stream":     stream,
+        # Keep Ox Alpha reasoning internal so small JSON responses are not
+        # consumed by visible reasoning tokens.
+        "reasoning":  {"effort": os.getenv("OPENROUTER_REASONING_EFFORT", "low"), "exclude": True},
         "messages": [
             {"role": "system", "content": system},
             {"role": "user",   "content": user},
@@ -132,7 +135,13 @@ def _call_openrouter(model_id: str, system: str, user: str, stream: bool, max_to
             print()
         else:
             body = json.loads(resp.read().decode("utf-8"))
-            full = body["choices"][0]["message"]["content"]
+            message = body.get("choices", [{}])[0].get("message", {})
+            full = message.get("content")
+            if not isinstance(full, str) or not full.strip():
+                raise ValueError(
+                    "OpenRouter returned no final message content; "
+                    f"response keys: {sorted(body.keys())}"
+                )
 
     return full
 
@@ -496,6 +505,8 @@ def call_json(system: str, user: str, model_name: str, max_tokens: int = 1500) -
     budget was needlessly eating into providers' per-minute token limits."""
     system_j = system + "\n\nIMPORTANT: Return only valid JSON — no prose, no markdown fences."
     raw      = call(system_j, user, model_name, stream=False, max_tokens=max_tokens)
+    if not isinstance(raw, str) or not raw.strip():
+        raise ValueError("Model returned empty content for a JSON request")
     raw      = re.sub(r"```(?:json)?", "", raw).strip()
 
     def _try_parse(text: str):

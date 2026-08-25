@@ -53,7 +53,7 @@ def run(state: dict) -> dict:
         "section down to a fragment. A focused 6-section, 1400-word "
         "article that's actually complete beats an ambitious 20-section "
         "outline that never gets finished.\n\n"
-        "When real competitor research is available, use the top-three snapshots as evidence. "
+        "When real competitor research is available, use the top-five snapshots as evidence. "
         "Turn only defensible missing gaps into 1-3 competitor_gap_requirements. "
         "Treat snippets and headings as hypotheses, never as proof of product facts; "
         "do not copy competitor wording or claim a competitor feature without a source. "
@@ -85,7 +85,7 @@ Decide and return JSON:
   "reasoning":          "one-sentence explanation"
 }}"""
 
-    strategy = call_json(system, user, model)
+    strategy = call_json(system, user, model, max_tokens=2400)
 
     # Keep competitor gaps explicit and bounded so Content can cover them
     # deliberately without turning every model speculation into a hard claim.

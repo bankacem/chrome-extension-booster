@@ -63,7 +63,14 @@ python main.py --keyword "best laptop" --model llama-3.3-70b-groq
 
 # DeepSeek R1 via OpenRouter
 python main.py --keyword "best laptop" --model deepseek-r1
+
+# Ox Alpha via OpenRouter (agentic article pipeline)
+OPENROUTER_KEY=sk-or-v1-... SEO_AGENT_MODEL=ox-alpha \
+SEO_AGENT_RESEARCH_FILE=editorial/research-snapshot-chrome-extension-security-risks.json \
+python agentic/run.py --keyword "chrome extension security risks" --niche "browser security"
 ```
+
+For reproducible local competitor research, `SEO_AGENT_RESEARCH_FILE` must point to an audited JSON snapshot with five external competitor pages. In CI, the agentic workflow can instead use its ephemeral SearXNG backend. The API key is read from the environment only and must never be committed.
 
 List all available models:
 ```bash
@@ -131,6 +138,7 @@ seo_agent_pro/
 | `claude-haiku` | Anthropic | Fast + cheap |
 | `gpt-4o` | OpenRouter | Strong all-rounder |
 | `gpt-4o-mini` | OpenRouter | Fast + affordable |
+| `ox-alpha` | OpenRouter (`stealth/ox-alpha`) | Reasoning model; use with a real five-page research snapshot or SearXNG |
 | `gemini-pro` | OpenRouter | Long context |
 | `gemini-flash` | OpenRouter | Very fast |
 | `mistral-large` | OpenRouter | Good for structured output |

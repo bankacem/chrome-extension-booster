@@ -1,0 +1,62 @@
+{
+  "keyword": "chrome extension security risks",
+  "captured_at": "2026-08-25",
+  "source": "manual_real_search",
+  "top_results": [
+    {
+      "rank": 1,
+      "title": "Understand the risks of permissions for Chrome extensions",
+      "url": "https://support.google.com/chrome/a/answer/9897812?hl=en",
+      "snippet": "Google's guide helps administrators evaluate the security risk of different Chrome extension permissions and next steps. It covers permission definitions, declarations, common permissions by risk level, and management steps.",
+      "page_title": "Understand the risks of permissions for Chrome extensions",
+      "h2s": ["In this guide", "Related topics"],
+      "has_faq_signal": false,
+      "has_table_signal": false,
+      "fetch_status": "manual_audit"
+    },
+    {
+      "rank": 2,
+      "title": "Browser Extension Vulnerabilities - OWASP Cheat Sheet Series",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Browser_Extension_Vulnerabilities_Cheat_Sheet.html",
+      "snippet": "OWASP covers permissions overreach, data leakage, cross-site scripting, insecure communication, code injection, malicious updates, and third-party dependencies, with mitigation guidance such as least privilege, HTTPS, CSP, safe storage, and privacy transparency.",
+      "page_title": "Browser Extension Vulnerabilities - OWASP Cheat Sheet Series",
+      "h2s": ["Permissions Overreach", "Data Leakage", "Cross-Site Scripting (XSS)", "Insecure Communication", "Code Injection", "Malicious Updates", "Third-Party Dependencies"],
+      "has_faq_signal": false,
+      "has_table_signal": false,
+      "fetch_status": "manual_audit"
+    },
+    {
+      "rank": 3,
+      "title": "Chrome Extensions: Are you getting more than you bargained for?",
+      "url": "https://www.security.com/threat-intelligence/chrome-extensions-are-you-getting-more-you-bargained",
+      "snippet": "Security.com describes malicious extensions exposing clipboard data, exfiltrating cookies, using command-and-control infrastructure, hijacking search, tracking users, and containing an XSS vulnerability. It uses four incident-style examples and recommends removal.",
+      "page_title": "Chrome Extensions: Are you getting more than you bargained for?",
+      "h2s": ["Example 1: Good Tab - exposes clipboard to remote third party", "Example 2: Children Protection - data exfiltration and remote code execution with C&C framework", "Example 3: DPS Websafe - search hijacking", "Example 4: Stock Informer - XSS vulnerability"],
+      "has_faq_signal": false,
+      "has_table_signal": false,
+      "fetch_status": "manual_audit"
+    },
+    {
+      "rank": 4,
+      "title": "Top 5 Browser Extension Security Risks & 5 Ways to Prevent Them",
+      "url": "https://seraphicsecurity.com/learn/browser-security/top-5-browser-extension-security-risks-and-5-ways-to-prevent-them/",
+      "snippet": "Seraphic lists malware and malicious code, data privacy concerns and leaks, over-permissioned extensions, supply-chain attacks, and legitimate extensions turning malicious.",
+      "page_title": "Top 5 Browser Extension Security Risks & 5 Ways to Prevent Them",
+      "h2s": ["Common Security Risks in Browser Extensions", "How Big Is the Problem? Malware in Google's Chrome Web Store", "5 Best Practices for Secure Use of Browser Extensions"],
+      "has_faq_signal": false,
+      "has_table_signal": false,
+      "fetch_status": "manual_audit"
+    },
+    {
+      "rank": 5,
+      "title": "Malicious Browser Extensions: An Overlooked Security Threat",
+      "url": "https://www.grip.security/blog/browser-extensions-security-threat",
+      "snippet": "Grip presents extensions as unmanaged SaaS and identity-adjacent attack paths, explaining DOM access, clipboard and screenshot risks, session-token theft, extension hijacking, a CyberHaven case, and enterprise controls.",
+      "page_title": "Malicious Browser Extensions: An Overlooked Security Threat",
+      "h2s": ["Browser Extensions are SaaS", "How a Breach from a Browser Extension Unfolds", "How Browser Extension Risks Sneak Past Traditional Controls", "How to Protect Against Malicious Browser Extensions (Without Killing Productivity)"],
+      "has_faq_signal": false,
+      "has_table_signal": true,
+      "fetch_status": "manual_audit"
+    }
+  ]
+}

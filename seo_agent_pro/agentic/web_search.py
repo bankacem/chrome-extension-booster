@@ -145,7 +145,7 @@ def _fetch_snapshot(result: dict, rank: int) -> dict:
     return snapshot
 
 
-def _select_external_top_three(results: list[dict]) -> list[dict]:
+def _select_external_top_five(results: list[dict]) -> list[dict]:
     selected: list[dict] = []
     seen_urls: set[str] = set()
     seen_domains: set[str] = set()
@@ -159,25 +159,25 @@ def _select_external_top_three(results: list[dict]) -> list[dict]:
         seen_urls.add(normalized)
         seen_domains.add(domain)
         selected.append(result)
-        if len(selected) == 3:
+        if len(selected) == 5:
             break
     return selected
 
 
 def research_keyword(keyword: str) -> dict | None:
-    """Return up to three external competitor snapshots when search is available."""
+    """Return up to five external competitor snapshots when search is available."""
     if not is_available():
         return None
-    top_three = _select_external_top_three(search(keyword, max_results=8))
-    if not top_three:
+    top_five = _select_external_top_five(search(keyword, max_results=10))
+    if not top_five:
         return None
-    snapshots: list[dict] = [None] * len(top_three)  # type: ignore[list-item]
-    with ThreadPoolExecutor(max_workers=min(3, len(top_three))) as pool:
-        jobs = {pool.submit(_fetch_snapshot, result, i + 1): i for i, result in enumerate(top_three)}
+    snapshots: list[dict] = [None] * len(top_five)  # type: ignore[list-item]
+    with ThreadPoolExecutor(max_workers=min(5, len(top_five))) as pool:
+        jobs = {pool.submit(_fetch_snapshot, result, i + 1): i for i, result in enumerate(top_five)}
         for job in as_completed(jobs):
             snapshots[jobs[job]] = job.result()
     return {
         "top_results": snapshots,
         "competitor_count": len(snapshots),
-        "source": "searxng_top_three_external",
+        "source": "searxng_top_five_external",
     }

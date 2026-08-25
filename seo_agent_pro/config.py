@@ -44,6 +44,8 @@ MODELS = {
     # ── OpenRouter ─────────────────────────────────────────────
     "gpt-4o":               ("openrouter",  "openai/gpt-4o"),
     "gpt-4o-mini":          ("openrouter",  "openai/gpt-4o-mini"),
+    # OpenRouter Ox Alpha — use OPENROUTER_KEY from the environment only.
+    "ox-alpha":             ("openrouter",  "stealth/ox-alpha"),
 
     # ── Manus built-in OpenAI-compatible proxy ──────────────────
     "builtin-gpt-5-mini":   ("openai_compat", "gpt-5-mini"),
