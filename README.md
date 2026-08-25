@@ -2,7 +2,7 @@
 
 Production React + Vite + TypeScript marketing site for **ExtensionTo** —
 a Chrome extensions review and recommendation hub with a multilingual
-(EN / FR / ES) SEO content pipeline.
+(EN / FR / ES / PT / AR) SEO content pipeline.
 
 The site itself is the root project; the Python-based content-generation
 pipeline that produces the published articles lives in
@@ -20,7 +20,7 @@ pipeline that produces the published articles lives in
 | Styling          | Tailwind CSS + shadcn/ui components (`@/components/ui`)  |
 | Routing          | react-router-dom (BrowserRouter, lazy routes)           |
 | State / data     | @tanstack/react-query + Supabase (auth + DB)             |
-| i18n             | i18next + react-i18next (EN / FR / ES)                  |
+| i18n             | i18next + react-i18next (EN / FR / ES / PT / AR)        |
 | SEO              | react-helmet-async + prerendered static HTML at build    |
 | Markdown         | react-markdown + remark-gfm + rehype-raw                 |
 | Backend          | Supabase (Postgres, Auth, Edge Functions)               |
@@ -90,6 +90,7 @@ chrome-extension-booster/
 | `npm run test:seo`              | SEO smoke test (requires a prior `npm run build`)             |
 | `npm run test:links`            | Internal link redirect smoke test                             |
 | `npm run test:performance`      | Performance budget check                                      |
+| `npm run test:e2e`              | Playwright browser smoke tests                               |
 | `npm run sitemap`               | Regenerate sitemap only                                       |
 | `npm run sync-articles`         | Rebuild `articles-index.json` from local markdown             |
 
@@ -119,8 +120,10 @@ by Node-side scripts (sitemap, prerender, etc.).
 ## CI
 
 `.github/workflows/seo-quality.yml` runs on every push and pull request
-to `main`. It runs `npm run lint`, `npm run typecheck`, `npm run build`,
-`npm run test:performance`, `npm run test:seo`, and `npm run test:links`.
+ to `main`. It runs `npm run lint`, `npm run typecheck`, the Python unit
+ tests, `npm run build`, `npm run test:performance`, `npm run test:seo`,
+ `npm run test:links`, and `npm run test:e2e` after installing the Playwright
+ Chromium browser.
 
 The other workflows in `.github/workflows/` drive the daily article
 publishing pipeline (see `seo_agent_pro/` for details).

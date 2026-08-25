@@ -33,6 +33,7 @@ const ARTICLES_DIR = path.join(DIST_DIR, "content", "articles");
 
 const SITE_NAME = "ExtensionTo";
 const SITE_URL = "https://extensionto.com";
+type SiteLang = "en" | "fr" | "es" | "pt" | "ar";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 interface IndexArticle {
@@ -99,10 +100,12 @@ function parseMarkdown(raw: string): { frontmatter: FrontmatterRecord; content: 
   }
 }
 
-const LOCALE_BY_LANG: Record<string, string> = {
+const LOCALE_BY_LANG: Record<SiteLang, string> = {
   en: "en_US",
   fr: "fr_FR",
   es: "es_ES",
+  pt: "pt_BR",
+  ar: "ar_SA",
 };
 
 function buildHead(opts: {
@@ -113,7 +116,7 @@ function buildHead(opts: {
   publishedTime?: string;
   modifiedTime?: string;
   author?: string;
-  alternateLanguages?: { lang: "en" | "fr" | "es"; url: string }[];
+  alternateLanguages?: { lang: SiteLang; url: string }[];
   noindex?: boolean;
 }): string {
   const fullTitle = `${opts.title} | ${SITE_NAME}`;
@@ -275,10 +278,10 @@ async function main() {
       ? a.canonicalPath
       : `/blog/${slug}`;
     const hasNonSelfCanonical = canonicalPath !== `/blog/${slug}`;
-    const alternateLanguages: { lang: "en" | "fr" | "es"; url: string }[] = hasNonSelfCanonical
+    const alternateLanguages: { lang: SiteLang; url: string }[] = hasNonSelfCanonical
       ? []
       : [{ lang: "en", url: `${SITE_URL}/blog/${slug}` }];
-    for (const lang of ["fr", "es"] as const) {
+    for (const lang of ["fr", "es", "pt", "ar"] as const) {
       const localizedIndexPath = path.join(DIST_DIR, "content", "i18n", lang, "articles-index.json");
       if (!fs.existsSync(localizedIndexPath)) continue;
       const localizedArticles = JSON.parse(await fs.readFile(localizedIndexPath, "utf-8")) as { slug?: string; id?: string }[];
@@ -351,6 +354,7 @@ async function main() {
     console.log(`⚠️  ${failures.length} article(s) had no matching markdown file and were left as SPA-only:`);
     for (const f of failures.slice(0, 20)) console.log(`   - ${f}`);
     if (failures.length > 20) console.log(`   ...and ${failures.length - 20} more`);
+    throw new Error(`Cannot prerender ${failures.length} indexed article(s); every published index entry must have a Markdown file.`);
   }
 }
 

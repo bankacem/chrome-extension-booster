@@ -2,12 +2,23 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const articlesRoot = path.join(root, "public", "content", "articles");
+const contentRoots = [path.join(root, "public", "content", "articles")];
 const index = JSON.parse(fs.readFileSync(path.join(root, "public", "content", "articles-index.json"), "utf8"));
-const articleSlugs = new Set(index.map((article) => article.slug));
+const articleSlugs = new Set(index.map((article) => article.slug || article.id));
+const localizedSlugs = new Map();
+for (const lang of ["fr", "es", "pt", "ar"]) {
+  const localizedIndexPath = path.join(root, "public", "content", "i18n", lang, "articles-index.json");
+  if (!fs.existsSync(localizedIndexPath)) continue;
+  const localizedIndex = JSON.parse(fs.readFileSync(localizedIndexPath, "utf8"));
+  localizedSlugs.set(lang, new Set(localizedIndex.map((article) => article.slug || article.id)));
+  contentRoots.push(path.join(root, "public", "content", "i18n", lang, "articles"));
+}
 const extensionsSource = fs.readFileSync(path.join(root, "src", "lib", "extensionsData.ts"), "utf8");
 const extensionIds = [...extensionsSource.matchAll(/\bid:\s*["']([^"']+)["']/g)].map((match) => match[1]);
-const validPaths = new Set(["/", "/blog", "/privacy", "/terms", ...extensionIds.map((id) => `/extension/${id}`), ...[...articleSlugs].map((slug) => `/blog/${slug}`)]);
+const validPaths = new Set(["/", "/blog", "/privacy", "/terms", "/editorial-policy", ...["fr", "es", "pt", "ar"].flatMap((lang) => [`/${lang}`, `/${lang}/blog`]), ...extensionIds.map((id) => `/extension/${id}`), ...[...articleSlugs].map((slug) => `/blog/${slug}`)]);
+for (const [lang, slugs] of localizedSlugs) {
+  for (const slug of slugs) validPaths.add(`/${lang}/blog/${slug}`);
+}
 const merged = JSON.parse(fs.readFileSync(path.join(root, "public", "content", "merged-articles.json"), "utf8"));
 const vercel = JSON.parse(fs.readFileSync(path.join(root, "vercel.json"), "utf8"));
 const redirects = new Map((vercel.redirects || []).map((redirect) => [redirect.source, redirect.destination]));
@@ -39,7 +50,8 @@ function normalize(raw) {
 const broken = new Map();
 const redirectLinks = new Map();
 let links = 0;
-for (const file of filesIn(articlesRoot)) {
+for (const contentRoot of contentRoots) {
+  for (const file of filesIn(contentRoot)) {
   const text = fs.readFileSync(file, "utf8");
   const matches = [
     ...text.matchAll(/href=["']([^"']+)["']/gi),
@@ -51,6 +63,7 @@ for (const file of filesIn(articlesRoot)) {
     links += 1;
     if (redirects.has(target)) redirectLinks.set(target, (redirectLinks.get(target) || 0) + 1);
     else if (!validPaths.has(target) && !Object.hasOwn(merged, target.replace(/^\/blog\//, ""))) broken.set(target, (broken.get(target) || 0) + 1);
+  }
   }
 }
 const unexpected = [...broken.keys()].filter((target) => !knownExceptions.has(target));

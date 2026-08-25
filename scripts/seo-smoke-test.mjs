@@ -36,8 +36,12 @@ const baseRoutes = [
   "https://extensionto.com/editorial-policy",
   "https://extensionto.com/fr",
   "https://extensionto.com/es",
+  "https://extensionto.com/pt",
+  "https://extensionto.com/ar",
   "https://extensionto.com/fr/blog",
   "https://extensionto.com/es/blog",
+  "https://extensionto.com/pt/blog",
+  "https://extensionto.com/ar/blog",
 ];
 for (const url of baseRoutes) {
   const html = htmlFor(url);
@@ -74,10 +78,12 @@ for (const slug of extensionSlugs) {
   assert(/SoftwareApplication/.test(html), `${url} has no SoftwareApplication schema`);
 }
 
-for (const lang of ["fr", "es"]) {
+let localizedArticleCount = 0;
+for (const lang of ["fr", "es", "pt", "ar"]) {
   const indexPath = `public/content/i18n/${lang}/articles-index.json`;
   const localized = JSON.parse(read(indexPath));
-  assert(localized.length === 10, `expected 10 ${lang} articles, found ${localized.length}`);
+  assert(localized.length > 0, `expected at least one ${lang} article`);
+  localizedArticleCount += localized.length;
   for (const article of localized) {
     const slug = String(article.slug || article.id).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
     const url = `https://extensionto.com/${lang}/blog/${slug}`;
@@ -105,8 +111,12 @@ for (const requiredUrl of [
   "https://extensionto.com/blog",
   "https://extensionto.com/fr",
   "https://extensionto.com/es",
+  "https://extensionto.com/pt",
+  "https://extensionto.com/ar",
   "https://extensionto.com/fr/blog",
   "https://extensionto.com/es/blog",
+  "https://extensionto.com/pt/blog",
+  "https://extensionto.com/ar/blog",
 ]) {
   assert(urls.includes(requiredUrl), `required static route missing from sitemap: ${requiredUrl}`);
 }
@@ -116,4 +126,4 @@ for (const url of urls) {
   assert(fs.existsSync(htmlPathFor(url)), `sitemap URL has no static HTML: ${url}`);
 }
 
-console.log(`SEO smoke tests passed: ${urls.length} sitemap URLs, ${articles.length} English articles, ${extensionSlugs.length} extensions, 20 localized articles.`);
+console.log(`SEO smoke tests passed: ${urls.length} sitemap URLs, ${articles.length} English articles, ${extensionSlugs.length} extensions, ${localizedArticleCount} localized articles.`);

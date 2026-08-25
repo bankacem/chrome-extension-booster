@@ -41,25 +41,18 @@ const App = () => (
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/extension/:slug" element={<ExtensionPage />} />
 
-              {/* ── French ── */}
+              {/* ── Localized home pages ── */}
               <Route path="/fr" element={<Index />} />
-              <Route path="/fr/blog" element={<Blog />} />
-              <Route path="/fr/blog/:slug" element={<BlogPost />} />
-
-              {/* ── Spanish ── */}
               <Route path="/es" element={<Index />} />
-              <Route path="/es/blog" element={<Blog />} />
-              <Route path="/es/blog/:slug" element={<BlogPost />} />
-
-              {/* ── Portuguese (BR) ── */}
               <Route path="/pt" element={<Index />} />
-              <Route path="/pt/blog" element={<Blog />} />
-              <Route path="/pt/blog/:slug" element={<BlogPost />} />
-
-              {/* ── Arabic (MSA / RTL) ── */}
               <Route path="/ar" element={<Index />} />
-              <Route path="/ar/blog" element={<Blog />} />
-              <Route path="/ar/blog/:slug" element={<BlogPost />} />
+
+              {/* ── Localized blog routes ──
+                  Keep the locale as a real route parameter. Blog and BlogPost
+                  derive the active language from the URL via useLang(), so the
+                  hydrated app reads the same localized index/body as prerender. */}
+              <Route path="/:lang/blog" element={<Blog />} />
+              <Route path="/:lang/blog/:slug" element={<BlogPost />} />
 
               {/* ── Admin / internal ── */}
               <Route path="/admin" element={<AdminLogin />} />

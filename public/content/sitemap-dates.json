@@ -797,5 +797,15 @@
   "best-chrome-extensions-for-remote-workers-2026": "2026-08-24",
   "chrome-extension-permissions-guide": "2026-08-23",
   "momentum-chrome-extension-guide": "2026-08-23",
-  "how-to-fix-chrome-memory-2026": "2026-08-25"
+  "how-to-fix-chrome-memory-2026": "2026-08-25",
+  "pt:chrome-extension-security-risks-permission-audit-guide": "2026-08-26",
+  "pt:chrome-extensions-that-slow-down-your-browser-real-tests": "2026-08-26",
+  "pt:zoom-chrome-extension-guide": "2026-08-26",
+  "pt:chrome-logger-debugging-guide": "2026-08-26",
+  "pt:chrome-extension-permissions-guide": "2026-08-26",
+  "ar:chrome-extension-security-risks-permission-audit-guide": "2026-08-26",
+  "ar:chrome-extensions-that-slow-down-your-browser-real-tests": "2026-08-26",
+  "ar:zoom-chrome-extension-guide": "2026-08-26",
+  "ar:chrome-logger-debugging-guide": "2026-08-26",
+  "ar:chrome-extension-permissions-guide": "2026-08-26"
 }
