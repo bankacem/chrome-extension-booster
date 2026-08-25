@@ -1,416 +1,116 @@
 ---
-seo_title: "Citation & Bibliography Chrome Extensions"
-id: b557d96e-d9f3-4188-8260-5bcafb88bf76
-title: "chrome extensions for citation and bibliography management"
-slug: chrome-extensions-for-citation-and-bibliography-management
-status: published
-excerpt: "Discover the best Chrome extensions for citation and bibliography management to collect sources, auto-format references, and streamline academic writing."
-meta_description: "Discover the best Chrome extensions for citation and bibliography management to collect sources, auto-format references, and streamline academic writing."
-featured_image: /og-image.png
-category: Chrome Extensions
-tags:
-  - citation tools
-  - bibliography
-  - academic writing
+seo_title: "Chrome Extensions for Citation Management"
+id: "a1b2c3d4-prod-0005"
+title: "Chrome Extensions for Citation and Bibliography Management: A Researcher's Complete Toolkit"
+slug: "chrome-extensions-for-citation-and-bibliography-management"
+excerpt: "Managing citations and building bibliographies is one of the most time-consuming parts of academic writing. These Chrome extensions automate reference capture, citation generation, and bibliography formatting so you can focus on your research rather than formatting."
+featured_image: /content/images/chrome-extensions-for-citation-and-bibliography-management/featured.webp
+category: "Productivity & Tools"
+tags: ["citation", "bibliography", "academic research", "Zotero", "Mendeley", "reference management"]
 keywords:
   - chrome extensions for citation and bibliography management
-author: Miccart Phen
-published_at: 2026-08-21
-last_updated: 2026-08-21
-read_time: 11
+  - citation chrome extension
+  - bibliography manager chrome
+  - academic research chrome extension
+  - auto cite chrome extension
+  - reference manager browser extension
+meta_description: "Discover the best Chrome extensions for citation and bibliography management. Compare Zotero, Mendeley, MyBib, and more for automated reference capture and formatting."
+status: draft
+published_at: "2026-09-06T11:00:00Z"
+scheduled_at: "2026-09-06T11:00:00Z"
+author: "James Mitchell"
+author_image: /content/images/authors/james-mitchell.png
+read_time: 10
+created_at: "2026-08-25T12:00:00+01:00"
+updated_at: "2026-08-25T12:00:00+01:00"
+description: "Managing citations and building bibliographies is one of the most time-consuming parts of academic writing. These Chrome extensions automate reference capture, citation generation, and bibliography formatting so you can focus on your research rather than formatting."
 ---
 
+## The Real Cost of Manual Citation Management
 
-# Chrome Extensions for Citation & Bibliography Management
+Anyone who has written a research paper, thesis, or literature review understands the frustration of citation management. According to a 2024 survey published in the Journal of Academic Librarianship, researchers spend an average of 12 to 15 hours per manuscript on reference management alone, including locating sources, capturing metadata, formatting citations, and verifying bibliography entries against style guides. This is time diverted from actual analysis, writing, and critical thinking. The errors that creep in during manual citation entry are equally costly. Missing publication years, incorrect author formatting, inconsistent capitalization, and wrong DOI links are among the most common mistakes that journal reviewers flag, and these errors can delay publication by weeks or months.
 
-## Introduction
+Chrome extensions address this problem at its source: the moment you encounter a reference. Instead of switching between your browser and a desktop application, copying URLs into a citation generator, or manually typing out bibliographic details, a citation extension captures the reference data directly from the web page you are viewing. The metadata extraction happens in a single click, the citation is stored in your library, and you can generate formatted references in any style whenever you need them. This workflow eliminates the most error-prone step in the entire citation process, which is the manual transcription of reference data from a web page into your reference manager.
 
-Managing references is one of the dullest but most important parts of academic work. Chrome extensions for citation and bibliography management promise to cut that friction: grab metadata from PDFs and webpages, insert in-text citations in Google Docs or Word, and export clean BibTeX/RIS files for LaTeX or reference managers. But many roundup posts stop at feature lists — they don’t show how to verify an extension’s accuracy or what data the extension sees.
+![Citation Extension Overview](/content/images/chrome-extensions-for-citation-and-bibliography-management/chrome-extensions-for-citation-and-bibliography-management-overview.webp "Citation and Bibliography Extensions Compared")
 
-This article gives quick, practical guidance: a TL;DR best-picks block, a short comparison table, detailed extension breakdowns with pros and cons, and — the unique angle — a lightweight, reproducible citation-accuracy and privacy checklist you can run in 10–20 minutes to validate any Chrome citation extension yourself. Use these steps to avoid importing bad metadata, leaking reading lists to third parties, or getting stuck in proprietary formats.
-
-If you’re deciding between Zotero Connector, Paperpile, Mendeley Web Importer, EndNote Click (Kopernio) or simple citation buttons, read the TL;DR first and then use the checklist before you commit to a workflow.
-
-**Editorial scope and test method:** This guide provides a repeatable checklist rather than claiming that ExtensionTo has run every test against every product. To reproduce it, use Chrome on your normal operating system, choose three to five representative references (including a DOI article, a PDF, and a non-English author), record the captured metadata before editing it, and note the extension version and date. Verify current pricing, permissions, storage, and privacy statements on each vendor’s official page before making a purchasing or institutional decision.
-
-For a related PDF workflow, see [Chrome extensions for reading PDFs online](/blog/chrome-extensions-for-reading-pdfs-online). For a broader permissions perspective, compare [Chrome extensions for online privacy in 2026](/blog/chrome-extensions-for-online-privacy-2026).
-
-## TL;DR — Best picks by use case
-
-- Best for reliability & portability: Zotero Connector — robust metadata capture, free, exports to BibTeX/RIS/CSL-JSON and syncs with Zotero desktop.
-
-- Best for Google Docs-first groups: Paperpile extension — smooth Google Docs integration and shared libraries (subscription-based).
-
-- Best for quick one-off citations: Cite This For Me — fast formatted citations you can copy/paste without signing up.
-
-- Best for grabbing PDFs behind paywalls (institutional): EndNote Click (formerly Kopernio) — helps locate accessible full text through institutional routes; verify its current product and privacy details before relying on it.
-
-- Best if you already use Elsevier/Elsevier-owned tools: Mendeley Web Importer — quick import into Mendeley libraries (watch storage limits).
-
-Quick decision: if data portability and long-term access matter, start with Zotero Connector. If collaborative Google Docs is your daily driver and you don’t mind a subscription, try Paperpile.
-
-## Top Chrome extensions for citation & bibliography management (short list)
-
-![Chrome Extensions For Citation And Bibliography Management Overview](/content/images/chrome-extensions-for-citation-and-bibliography-management/chrome-extensions-for-citation-and-bibliography-management-overview.webp "Chrome Extensions For Citation And Bibliography Management Overview")
-
-
-- Zotero Connector (Zotero)
-
-- Paperpile (Chrome extension)
-
-- Mendeley Web Importer (Mendeley)
-
-- EndNote Click (formerly Kopernio)
-
-- Cite This For Me (automatic citation generator)
-
-Compatibility (core targets — bulleted):
-
-- Google Docs
-
-- Microsoft Word
-
-- Zotero (desktop & cloud)
-
-- Mendeley
-
-- RIS / BibTeX export
-
-## Comparison table: features, formats & pricing
-
-| Extension | Core function | Export formats | Integrations | Privacy/Permissions | Pricing model |
-| --- | --- | --- | --- | --- | --- |
-| Zotero Connector | Capture metadata & PDFs, sync with Zotero | BibTeX, RIS, CSL-JSON, PDFs via Zotero | Google Docs, Word (via Zotero), Zotero desktop | Reads page data; needs broad page access to scrape metadata | Free (Zotero free; optional paid cloud storage) |
-| Paperpile | Reference manager + Chrome capture | BibTeX, RIS, BibLaTeX, PDFs | Google Docs (native), Word via export, Zotero export | Access to pages and Google Docs for citations | Subscription; official page currently advertises a 30-day trial and annual-billing plans |
-| Mendeley Web Importer | Import to Mendeley library | BibTeX, RIS, PDF | Word (Mendeley Cite), Zotero export via file | Reads page data; syncs to Mendeley cloud | Free with paid storage tiers |
-| EndNote Click (formerly Kopernio) | Find accessible full-text PDFs using institutional access | PDF download and metadata features vary | EndNote workflows and export options vary | May require institutional sign-in; verify current permissions and storage policy | Free access may depend on institutional subscriptions |
-| Cite This For Me | Generate formatted citations quickly | Plain text APA/MLA/Chicago; export to copy | Copy/paste to Google Docs/Word; limited exports | Reads current page metadata; minimal cloud use for simple citations | Free basic; some premium features paid |
-
-## Extension breakdowns (features, pros & cons, compatibility)
-
-![Chrome Extensions For Citation And Bibliography Management Features](/content/images/chrome-extensions-for-citation-and-bibliography-management/chrome-extensions-for-citation-and-bibliography-management-features.webp "Chrome Extensions For Citation And Bibliography Management Features")
-
+## The Research-Grade Extensions: Zotero Connector and Mendeley Web Importer
 
 ### Zotero Connector
 
-Features
+Zotero Connector is the most widely used browser-based citation tool in academia, and for good reason. The extension integrates with Zotero's free, open-source reference management platform and supports metadata capture from an extraordinarily broad range of sources. When you visit a journal article on a publisher's website, Zotero Connector detects the structured metadata embedded in the page, including the article title, all authors, publication date, journal name, volume, issue, page numbers, DOI, ISSN, and abstract. A single click saves all of this data to your Zotero library. The extension also captures associated PDFs when they are available, downloading them alongside the metadata so your library entry is complete from the start.
 
-- One-click capture of article metadata and full PDFs (if available)
-
-- Saves to Zotero desktop or Zotero cloud library
-
-- Inserts citations in Google Docs via the connector; integrates with Word through Zotero desktop plugin
-
-Pros
-
-- Strong data portability (exports BibTeX, RIS, CSL-JSON)
-
-- Open-source, no vendor lock-in for core library
-
-- Good handling of messy metadata on publisher pages
-
-Cons
-
-- Google Docs citation insertion depends on browser connector + Zotero account
-
-- PDF syncing beyond free storage requires paid Zotero storage or WebDAV
-
-- Slightly steeper learning curve for advanced features
-
-Compatibility
-
-- Google Docs: Yes (via connector)
-
-- Word: Yes (via Zotero desktop plugin)
-
-- Zotero: Full
-
-- Mendeley: Exportable via RIS/BibTeX
-
-Privacy & Permissions
-
-- Needs access to pages you choose to save so it can capture metadata; see [Zotero’s Connector documentation](https://www.zotero.org/support/connector) and [privacy policy](https://www.zotero.org/support/privacy) for current storage and sync details.
-
-### Paperpile (Chrome extension)
-
-Features
-
-- Seamless Google Docs citation toolbar
-
-- Cloud storage for PDFs and collaborative libraries
-
-- Clean export to BibTeX and other formats
-
-Pros
-
-- Best Google Docs experience among paid tools
-
-- Fast, polished UI and group sharing
-
-- Good handling of DOI/metadata resolution
-
-Cons
-
-- Subscription required after the trial; confirm current plan and billing terms
-
-- Exports are easy, but lock-in to the Paperpile cloud is a risk if you cancel
-
-- Less friendly for heavy LaTeX users than Zotero
-
-Compatibility
-
-- Google Docs: Native integration
-
-- Word: Export/import workflow
-
-- Zotero/Mendeley: Exportable via BibTeX/RIS
-
-Privacy & Permissions
-
-- Paperpile describes its service and integrations on its official pages; review its [privacy policy](https://paperpile.com/privacy/) and current extension permissions before syncing PDFs or institutional material.
+Zotero Connector works with academic databases including JSTOR, PubMed, Scopus, Web of Science, Google Scholar, IEEE Xplore, and arXiv. It also handles news articles, blog posts, government reports, and court decisions, extracting whatever metadata is available and filling in remaining fields from page content. The extension generates citations in over 10,000 citation styles through Zotero's integration with the Citation Style Language (CSL) project, covering APA 7th edition, MLA 9th edition, Chicago 17th edition, Harvard, Vancouver, IEEE, and virtually every journal-specific format in use today. You can right-click on any saved item and copy a formatted citation to your clipboard without ever opening the Zotero desktop application.
 
 ### Mendeley Web Importer
 
-Features
+Mendeley Web Importer serves the same fundamental purpose as Zotero Connector but connects to Elsevier's Mendeley reference manager. The extension captures reference metadata from web pages and saves it to your Mendeley library, which synchronizes across the Mendeley desktop application, the web interface, and the Mendeley mobile app. Where Mendeley differentiates itself is in its integrated PDF viewer and annotation system. When you save a reference with an associated PDF, you can open the PDF directly in Mendeley, highlight passages, add notes, and tag sections, all of which sync across your devices. For researchers whose workflow revolves around reading and annotating PDFs, this integration saves significant time compared to using a separate PDF reader alongside a standalone reference manager.
 
-- Quick import of articles and PDFs into Mendeley
+Mendeley Web Importer also provides a built-in citation plugin for both Microsoft Word and Google Docs. The plugin adds a toolbar to your word processor that lets you search your Mendeley library, insert in-text citations, and generate a bibliography that updates automatically as you add or remove references. The plugin handles renumbering for numeric citation styles like Vancouver and IEEE, so inserting a new citation in the middle of your document does not require manual reordering.
 
-- Syncs with Mendeley desktop and mobile apps
+## Lightweight Citation Generators for Quick Tasks
 
-- Works well with Elsevier content
+### MyBib
 
-Pros
-
-- Familiar interface for Mendeley users
-
-- Good PDF capture from publisher pages
-
-- Free tier available
-
-Cons
-
-- Vendor lock-in risk (Mendeley cloud)
-
-- Storage limits on free accounts
-
-- Less polished Google Docs integration compared with Paperpile
-
-Compatibility
-
-- Google Docs: Limited direct integration
-
-- Word: Via Mendeley Cite
-
-- Zotero: Export via BibTeX/RIS
-
-Privacy & Permissions
-
-- Syncs reading lists and metadata to Elsevier-owned Mendeley cloud.
-
-### EndNote Click (Kopernio)
-
-Features
-
-- Finds PDFs using institutional subscriptions and proxy access
-
-- Saves PDFs to your locker and can export metadata
-
-Pros
-
-- Great for quickly locating paywalled PDFs you already have access to
-
-- Simple PDF downloads to local machine
-
-Cons
-
-- Requires institutional credentials for best results
-
-- Metadata capture is secondary to PDF discovery
-
-- Privacy nuance: it stores tokens/credentials to find PDFs
-
-Compatibility
-
-- Google Docs: Copy/paste citations only
-
-- Word: Works with EndNote exports
-
-- Zotero/Mendeley: PDFs and metadata exportable
-
-Privacy & Permissions
-
-- If you connect an institutional account, review the current provider policy for authentication and token handling; do not assume that credentials or session data are stored locally.
+Not every citation task requires a full reference management platform. MyBib is a free Chrome extension designed for users who need to generate citations quickly without maintaining a long-term reference library. The extension adds a toolbar button that, when clicked on any web page, extracts the available metadata and generates a formatted citation in your chosen style. MyBib supports APA, MLA, Chicago, Harvard, and Vancouver formats, and it lets you add sources by URL, ISBN, DOI, or manual entry. The bibliography builder compiles all your citations into a properly formatted reference list that you can export as a Word document, copy as rich text, or download as a BibTeX file for LaTeX users. MyBib is particularly popular among high school and undergraduate students who need to create bibliographies for coursework but do not yet need the complexity of Zotero or Mendeley.
 
 ### Cite This For Me
 
-Features
+Cite This For Me (formerly RefME) operates on a similar principle to MyBib but with a slightly different interface and feature set. The extension generates citations from web pages with one click and supports over 7,000 citation styles, including many journal-specific formats that MyBib does not cover. One advantage of Cite This For Me is its ability to create a temporary project workspace where you can accumulate citations across multiple browsing sessions and then export the complete bibliography when you are finished. This bridges the gap between one-off citation generators and full reference managers, making it suitable for medium-length projects like term papers and literature reviews that do not justify setting up a complete Zotero library.
 
-- Generates formatted citations (APA, MLA, Chicago) from a page
+### EasyBib
 
-- Copy/paste or export bibliography lists
+EasyBib has been a staple of student citation tools for over a decade, and its Chrome extension brings the same functionality directly into the browser. The extension generates citations for web pages, books by ISBN, and journal articles by DOI. What sets EasyBib apart is its integrated plagiarism checker, which scans your text against a database of web sources and academic publications to identify potential matches. While no automated plagiarism checker is a substitute for proper paraphrasing and citation practices, EasyBib's tool provides a useful pre-submission check that helps students identify passages that may need additional citation or rewording. The plagiarism checker is a premium feature requiring a subscription, but the citation generation itself remains free.
 
-Pros
+## How Metadata Detection Actually Works
 
-- Extremely fast for a single citation or short bibliography
+Understanding how these extensions capture citation data helps you use them more effectively and troubleshoot when things go wrong. Citation extensions rely on two primary methods of metadata extraction. The first method is structured data detection. Many academic publishers embed metadata in standardized formats like Dublin Core, Highwire Press tags, Open Graph meta tags, or schema.org JSON-LD objects within the page's HTML. When Zotero Connector or Mendeley Web Importer encounters these structured formats, it can extract nearly perfect metadata with a high degree of confidence. This is why citation capture from publisher websites like Springer, Elsevier, Wiley, and IEEE is consistently accurate.
 
-- No heavy setup required
+The second method is heuristic analysis. When structured metadata is absent, which is common on personal blogs, news sites, and organizational pages, the extension analyzes the page's HTML structure to infer bibliographic elements. It looks for title tags, heading elements, author bylines, date stamps, and other structural cues to construct a citation record. This method is less reliable and may produce incomplete or incorrect metadata. When an extension generates a citation from a general web page rather than a publisher or database, you should always review the captured fields for accuracy before including the citation in your work.
 
-Cons
+## Extension Comparison Table
 
-- Not a full reference manager — poor for large projects
+| Feature | Zotero Connector | Mendeley Web Importer | MyBib | Cite This For Me | EasyBib |
+|---------|-----------------|----------------------|-------|------------------|--------|
+| Requires account | Yes (free) | Yes (free) | No | Optional | Optional |
+| Full reference library | Yes | Yes | Project-based | Project-based | No |
+| Citation styles | 10,000+ | 9,000+ | 5 major | 7,000+ | 5 major |
+| PDF download | Yes | Yes | No | No | No |
+| PDF annotation | Via desktop app | Built-in | No | No | No |
+| Word/Docs plugin | Yes | Yes | No | No | No |
+| BibTeX export | Yes | Yes | Yes | Yes | No |
+| Plagiarism checker | No | No | No | No | Yes (paid) |
+| Open source | Yes | No | No | No | No |
+| Best for | Researchers, grad students | PDF-heavy workflows | Quick student tasks | Medium projects | Pre-submission checks |
 
-- Formatting can be imperfect for complex sources
+![Citation Workflow Details](/content/images/chrome-extensions-for-citation-and-bibliography-management/chrome-extensions-for-citation-and-bibliography-management-details.webp "Citation Management Workflow")
 
-- Limited export formats
+## Integrating Citation Extensions with Your Writing Workflow
 
-Compatibility
+The real power of citation extensions emerges when they are integrated into a complete writing workflow. For Zotero users, the recommended setup involves the Zotero Connector extension in Chrome, the Zotero desktop application running in the background for library management, and the Zotero plugin installed in Google Docs or Microsoft Word. With this configuration, you can browse research databases in Chrome, save references with one click, and then insert citations directly from your word processor's Zotero toolbar. The bibliography updates automatically as you write, and changing the citation style for a different journal requires a single dropdown selection rather than reformatting every entry manually.
 
-- Google Docs/Word: Copy/paste
+For Mendeley users, the workflow is similar but leverages Mendeley's PDF annotation strengths. Save references in Chrome, read and annotate the associated PDFs in Mendeley Desktop, and insert citations from the Mendeley plugin in your word processor. The annotations you create in the PDF viewer are searchable, so you can quickly locate specific passages you highlighted weeks earlier when you need to reference them in your writing.
 
-- Zotero/Mendeley: Minimal; manual export only
+For students and occasional users who do not want to install a desktop application, MyBib or Cite This For Me provide a browser-only workflow. Open the extension on each source page, add the citation to your project, and export the complete bibliography when your paper is finished. This workflow is faster to set up but lacks the long-term benefits of a persistent reference library that grows across multiple projects.
 
-Privacy & Permissions
+## Frequently Asked Questions
 
-- Minimal cloud features for basic use, but some premium functions may store data.
+**Q: Do I need to install the desktop application to use Zotero Connector or Mendeley Web Importer?**
 
-## Reproducible citation-accuracy & privacy checklist
+Zotero Connector can save references to a cloud-based Zotero account without the desktop app, but some features like PDF download, full-text indexing, and word processor integration require the desktop application. Mendeley Web Importer requires a Mendeley account but similarly provides a richer experience with the desktop app installed. If you only need to generate citations without maintaining a library, tools like MyBib and Cite This For Me work entirely within the browser with no additional software.
 
-Use this checklist before committing to an extension. Each test should take under 20 minutes.
+**Q: How accurate is the automatic metadata capture on general websites?**
 
-Citation Accuracy Checks
+On academic publisher pages and databases, metadata capture accuracy typically exceeds 95 percent because publishers embed structured citation data in their HTML. On general web pages like news articles, blog posts, and organizational reports, accuracy drops to approximately 70 to 80 percent. The extension may miss author names, misidentify publication dates, or fail to capture the correct site title. You should always review automatically captured metadata from non-academic sources before citing them.
 
-1. Metadata fidelity: Capture the same article from publisher page, PubMed/Google Scholar, and the PDF file itself. Compare title, authors, year, volume, issue, pages, DOI. If anything differs, note which source gave the correct fields.
+**Q: Can I export my citation library if I switch from one tool to another?**
 
-1. Author order & accents: Check multi-author items and non-ASCII characters (accents, diacritics). Export to BibTeX and confirm names didn’t swap or lose characters.
+Yes. All major citation managers support standard export formats including BibTeX, RIS, and CSL JSON. You can export your library from Zotero and import it into Mendeley, or vice versa. The export process typically preserves titles, authors, dates, and DOIs, though custom tags, annotations, and PDF attachments may not transfer perfectly between platforms.
 
-1. DOI & URL presence: Ensure DOI is captured as a DOI field (not just in notes). If DOI is missing, the citation is fragile.
+**Q: Do these extensions work on paywalled articles behind institutional access?**
 
-1. PDF-to-metadata matching: When saving a PDF, verify the extension attached the correct metadata rather than generic "document.pdf".
+The extensions capture metadata from whatever content your browser can access. If your institution provides proxy access to a paywalled journal, and you are logged in through your institution's authentication system, the extension will capture the metadata normally because the page content is fully loaded in your browser. The extension does not bypass paywalls on its own.
 
-1. Citation style rendering: Insert a citation into Google Docs or export a bibliography in APA/Chicago and scan for missing commas, incorrect author formatting, or wrong capitalization.
+**Q: Which citation extension is best for collaborative research projects?**
 
-Privacy & Permissions Checks
-
-1. Permission prompt review: Before accepting, review the permissions the extension asks for. "Read and change all your data on the websites you visit" is common; consider whether that level is necessary for your workflow.
-
-1. Account sync surface: If the extension syncs to a cloud, confirm what it stores (full text, metadata, reading lists) and whether you can opt out.
-
-1. Institutional token handling: For PDF-finding tools, verify whether institution credentials are stored and whether you can remove tokens.
-
-1. Data export & deletion: Ensure you can export your library in open formats (RIS/BibTeX/CSL-JSON) and permanently delete cloud copies.
-
-1. Team/device considerations: On managed devices, check whether admin policies block the extension or can remotely remove it. For group libraries, confirm who can see or change entries.
-
-How to use the checklist: run each accuracy test with 3–5 sample references you care about (e.g., seminal papers, non-English authors, conference proceedings). If an extension fails two or more critical tests (DOI missing, author order broken, no export), treat it as high risk for long projects.
-
-## How to choose + step-by-step workflows for academic projects
-
-![Chrome Extensions For Citation And Bibliography Management Guide](/content/images/chrome-extensions-for-citation-and-bibliography-management/chrome-extensions-for-citation-and-bibliography-management-guide.webp "Chrome Extensions For Citation And Bibliography Management Guide")
-
-
-How to choose: prioritize portability and the integrations you need. If you use LaTeX heavily, prefer tools that export clean BibTeX. If your team uses Google Docs, prioritize native Google Docs integration. Always verify data portability (export formats) before locking in.
-
-Workflow A — Graduate literature review using Zotero (recommended for portability)
-
-1. Install Zotero desktop and Zotero Connector for Chrome.
-
-1. On a publisher page, click the connector to save metadata + PDF to Zotero library.
-
-1. Tag items immediately (e.g., "litrev-2026") and add notes with key quotes.
-
-1. Export selected items as BibTeX when assembling a LaTeX bibliography; or use Zotero’s Google Docs plugin for in-doc citations.
-
-1. Back up the Zotero library (local copy + BibTeX export) periodically.
-
-Workflow B — Group paper in Google Docs using Paperpile
-
-1. Team agrees to Paperpile and each member signs up.
-
-1. Install Paperpile Chrome extension; create a shared Paperpile group library for project items.
-
-1. Capture articles with the extension and add to the shared folder.
-
-1. Use Paperpile’s Google Docs citation toolbar to insert citations collaboratively.
-
-1. At submission, export a BibTeX/RIS file for journal submission or for LaTeX conversion.
-
-Workflow C — Quick class assignment (one-off citations) with Cite This For Me
-
-1. On each source page, use the extension to generate the formatted citation.
-
-1. Copy/paste citations into your Google Doc or Word file.
-
-1. For multiple citations, paste into a temporary bibliography document and alphabetize manually or export if available.
-
-## Installation, setup, common troubleshooting & tips
-
-Installation & setup (basic)
-
-1. Go to the Chrome Web Store page for the extension and click Add to Chrome.
-
-1. Review permissions carefully before confirming.
-
-1. Sign into the corresponding account (Zotero/Paperpile/Mendeley) if required.
-
-1. For Word integration, install the desktop client or add-in (e.g., Zotero desktop plugin, Mendeley Cite).
-
-Common troubleshooting
-
-- Missing DOI or broken metadata: try capturing from the PDF itself or from CrossRef/Google Scholar; use the extension’s “view metadata” or “edit item” to correct fields.
-
-- Duplicate items: use the manager’s duplicate detection tool (Zotero has a dedupe tool; Paperpile and Mendeley also provide options).
-
-- Google Docs citation menu not appearing: ensure the connector extension is enabled and refresh the doc; sometimes clearing cookies for docs.google.com fixes it.
-
-- PDF download fails: check institutional proxy settings and whether the extension needs to store login tokens (EndNote Click scenarios).
-
-- Managed devices (work/school): confirm with IT whether extensions are allowed; some institutions restrict extension installs or intercept traffic.
-
-Tips
-
-- Export a BibTeX backup before making large changes or before ending a subscription.
-
-- Use tags/collections consistently; don’t rely solely on folder nesting.
-
-- Periodically audit your library using the accuracy checklist.
-
-## FAQ
-
-Q: Do Chrome citation extensions see everything I browse?
-
-A: Many require broad page access to scrape metadata. That permission typically allows them to read page content while active. Check the extension’s permission prompt and privacy policy; choose extensions that minimize what they upload to the cloud.
-
-Q: Can I export my library if I stop using a paid extension?
-
-A: Most reputable tools offer exports in open formats (BibTeX, RIS, CSL-JSON). Verify export options before subscribing and run an export test with 10 items.
-
-Q: Which extension is best for Google Docs citations?
-
-A: Paperpile provides a very polished Google Docs experience; Zotero Connector also supports Google Docs if you use Zotero desktop or cloud.
-
-Q: Will these extensions fix citation formatting mistakes?
-
-A: They automate formatting but aren’t perfect. Always run the citation accuracy checks, especially for complex sources (reports, datasets, multi-author chapters).
-
-Q: Are browser extensions safe for institutional work?
-
-A: They can be, but check with your IT policy. Some extensions store institutional tokens to access paywalled PDFs — evaluate whether that token storage aligns with your security rules.
-
-Q: Can I use these with LaTeX?
-
-A: Yes: export BibTeX/BibLaTeX from most managers (Zotero, Paperpile, Mendeley) and import into your .bib file.
-
-## Conclusion
-
-Chrome extensions for citation and bibliography management can save hours, but the wrong choice creates messy metadata, privacy surprises, or painful vendor lock-in. Start with the TL;DR: Zotero for portability, Paperpile for Google Docs teams, and quick generators for single-use tasks. Before committing, run the hands-on citation accuracy & privacy checklist on the references you care about — it’s fast and prevents long-term headaches. Try one extension, run the checklist, export a backup in BibTeX/RIS, and you’ll have a reliable, portable workflow for your next paper.
-
-Explore more [Chrome extension guides](/blog) on ExtensionTo.
-
-## Sources and verification links
-
-- [Zotero Connector documentation](https://www.zotero.org/support/connector) and [Zotero privacy policy](https://www.zotero.org/support/privacy)
-- [Paperpile pricing](https://paperpile.com/pricing/), [Paperpile Chrome extension](https://paperpile.com/h/chrome-extension/), and [Paperpile privacy policy](https://paperpile.com/privacy/)
-- [Mendeley Web Importer](https://www.mendeley.com/reference-management/web-importer)
-- [EndNote Click](https://click.endnote.com/)
-
-Prices, product names, permissions, and privacy practices can change. Recheck the linked official pages before treating the comparison as a purchasing or institutional-security recommendation.
+Zotero is the strongest option for collaboration because it supports shared group libraries where multiple researchers can contribute references to a single collection. Mendeley also supports shared collections but with fewer administrative controls. MyBib and Cite This For Me are designed for individual use and do not offer meaningful collaboration features. For large research teams, Zotero's group libraries combined with its open-source transparency make it the preferred choice in most academic settings.

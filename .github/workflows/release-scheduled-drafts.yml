@@ -56,6 +56,7 @@ jobs:
               Path('editorial/publishing-schedule-day-1-live-test.json'),
               Path('editorial/publishing-schedule-50-active.json'),
               Path('editorial/publishing-schedule-competitive-seo.json'),
+              Path('editorial/publishing-schedule-remaining-batch.json'),
           ]
           schedules = [json.loads(p.read_text()) for p in schedule_paths if p.exists()]
           all_entries = []
