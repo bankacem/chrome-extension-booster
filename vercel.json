@@ -14,6 +14,20 @@
     }
   ],
   "rewrites": [
+    { "source": "/fr", "destination": "/index.html" },
+    { "source": "/fr/:path*", "destination": "/index.html" },
+    { "source": "/es", "destination": "/index.html" },
+    { "source": "/es/:path*", "destination": "/index.html" },
+    { "source": "/pt", "destination": "/index.html" },
+    { "source": "/pt/:path*", "destination": "/index.html" },
+    { "source": "/ar", "destination": "/index.html" },
+    { "source": "/ar/:path*", "destination": "/index.html" },
+    { "source": "/blog", "destination": "/index.html" },
+    { "source": "/blog/:path*", "destination": "/index.html" },
+    { "source": "/extension/:path*", "destination": "/index.html" },
+    { "source": "/privacy", "destination": "/index.html" },
+    { "source": "/terms", "destination": "/index.html" },
+    { "source": "/editorial-policy", "destination": "/index.html" },
     { "source": "/admin", "destination": "/index.html" },
     { "source": "/settings", "destination": "/index.html" },
     { "source": "/settings/:path*", "destination": "/index.html" }
