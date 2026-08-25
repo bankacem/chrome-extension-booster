@@ -37,25 +37,25 @@ updated_at: '2026-08-25T00:00:00.000Z'
 canonicalPath: /blog/google-chrome-programm-en-14
 description: "Build a small Chrome extension with Manifest V3. Learn manifest.json, permissions, service workers, popup code, and safe testing steps."
 ---
-Chrome is more than just a browser you click around in — under the hood, it runs on the same web technologies you'd use to build a website: HTML, CSS, and JavaScript. That's what makes it programmable. Whether you're customizing how the browser behaves or building your own extension from scratch, understanding how Chrome extensions are actually put together opens up a lot more than the Chrome Web Store's ready-made options ever will.
+Chrome extensions are small web applications that can add browser actions, page features, or background behavior. They are built with HTML, CSS, JavaScript, and a manifest that declares the extension's identity and capabilities. This guide uses the current Manifest V3 model and a small popup example; the [official Chrome for Developers documentation](https://developer.chrome.com/docs/extensions) remains the source of truth for API details and platform changes.
 
 > **Quick answer:** To build a Chrome extension, start with `manifest.json`, choose the narrowest permissions that fit the feature, and add only the components you need: a popup for user controls, a service worker for event-driven background work, or a content script for page interaction. Load the project unpacked from `chrome://extensions`, test it in Chrome, and consult the current Manifest V3 documentation before publishing.
 
 ## Table of Contents
 
-[Introduction to Programming Chrome](#intro)
-[Extension Architecture: Picking the Right Pattern](#architecture)
-[Manifest V3 and the Service Worker Change](#manifest-v3)
-[Benefits of Programming Your Own Chrome Behavior](#benefits)
-[Build Your First Extension: A Real Walkthrough](#tutorial)
-[Common Mistakes When Programming Chrome Extensions](#mistakes)
-[Tools and Languages Worth Knowing](#tools)
-[Getting Started: Your Action Plan](#getting-started)
-[Frequently Asked Questions](#faq)
+[Introduction to Building Chrome Extensions](#introduction-to-building-chrome-extensions)
+[Extension Architecture: Picking the Right Pattern](#extension-architecture-picking-the-right-pattern)
+[Manifest V3 and the Service Worker Change](#manifest-v3-and-the-service-worker-change)
+[Benefits of Programming Your Own Chrome Behavior](#benefits-of-programming-your-own-chrome-behavior)
+[Build Your First Extension: A Real Walkthrough](#build-your-first-extension-a-real-walkthrough)
+[Common Mistakes When Programming Chrome Extensions](#common-mistakes-when-programming-chrome-extensions)
+[Tools and Languages Worth Knowing](#tools-and-languages-worth-knowing)
+[Getting Started: Your Action Plan](#getting-started-your-action-plan)
+[Frequently Asked Questions](#frequently-asked-questions)
 
 ## Introduction to Building Chrome Extensions
 
-Chrome extensions are small web applications that can add browser actions, page features, or background behavior. They are built with HTML, CSS, JavaScript, and a manifest that declares the extension's identity and capabilities. This guide uses the current Manifest V3 model and a small popup example; the [official Chrome for Developers documentation](https://developer.chrome.com/docs/extensions) remains the source of truth for API details and platform changes.
+Before writing code, decide what the extension should do, which page or browser event it needs to access, and whether the feature needs a popup, a service worker, or a content script. Starting with that narrow scope makes the manifest easier to review and reduces unnecessary permissions.
 
 ### The manifest.json File: Where Every Extension Starts
 

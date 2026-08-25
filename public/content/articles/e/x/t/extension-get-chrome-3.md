@@ -97,10 +97,3 @@ Open `chrome://extensions`, select **Details** for the extension, and adjust sit
 You manage the extension from regular Chrome settings. If you want an extension to run in Incognito, open its **Details** page and explicitly enable **Allow in incognito** after reviewing the privacy implications.
 
 The safest way to get more from Chrome is to choose extensions for a specific job, inspect their access before installation, and review them periodically from `chrome://extensions`. Disable or remove anything you no longer trust or need.
-
-### Get Quick Screenshot Lite Now
-
-Capture full page or visible area screenshots instantly.
-
-[Add to Chrome - It's Free](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
-[View Full Details](/extension/quick-screenshot-lite)
