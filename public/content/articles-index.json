@@ -1,5 +1,36 @@
 [
   {
+    "id": "a1b2c3d4-sec-0002",
+    "title": "Chrome Extension Security Risks: A 10-Minute Permission Audit",
+    "slug": "chrome-extension-security-risks-permission-audit-guide",
+    "description": "Spot Chrome extension security risks in 10 minutes. Learn how to read permissions, restrict site access, audit updates, and remove risky extensions.",
+    "meta_description": "Spot Chrome extension security risks in 10 minutes. Learn how to read permissions, restrict site access, audit updates, and remove risky extensions.",
+    "excerpt": "Learn how to spot Chrome extension security risks, interpret permissions, restrict site access, and remove extensions you cannot justify.",
+    "published_at": "2026-08-25T12:00:00+01:00",
+    "category": "Security & Privacy",
+    "author": "Manus AI",
+    "image_url": "/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "security",
+      "privacy",
+      "permissions",
+      "audit",
+      "chrome extensions"
+    ],
+    "keywords": [
+      "chrome extension security risks",
+      "how to check chrome extension permissions",
+      "are Chrome extensions safe",
+      "Chrome extension permission audit"
+    ],
+    "canonicalPath": "/blog/chrome-extension-security-risks-permission-audit-guide",
+    "updated_at": "2026-08-25"
+  },
+  {
     "id": "a1b2c3d4-perf-0001",
     "title": "Chrome Extensions That Slow Down Your Browser in 2026: Real Performance Tests",
     "slug": "chrome-extensions-that-slow-down-your-browser-real-tests",

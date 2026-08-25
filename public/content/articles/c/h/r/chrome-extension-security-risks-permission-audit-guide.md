@@ -13,8 +13,8 @@ keywords:
   - are Chrome extensions safe
   - Chrome extension permission audit
 meta_description: "Spot Chrome extension security risks in 10 minutes. Learn how to read permissions, restrict site access, audit updates, and remove risky extensions."
-status: draft
-published_at: "2026-08-25"
+status: published
+published_at: "2026-08-25T12:00:00+01:00"
 scheduled_at: "2026-08-25T12:00:00+01:00"
 author: "Manus AI"
 read_time: 11
@@ -38,6 +38,8 @@ Chrome’s own documentation separates extension permissions from host permissio
 There is also a simple accumulation problem. Old extensions remain installed long after the original need disappears. A forgotten tool still has whatever access it was granted, even if you no longer use its feature. A periodic audit is therefore more useful than trying to decide whether every extension is safe forever.
 
 ## The Main Risks to Understand Before Auditing
+
+![Chrome extension security risks and browser permissions](/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp "Chrome extension security risks and browser permissions")
 
 **Excessive site access** is the most important signal for most users. An extension set to read and change data on all websites may be able to interact with pages across your logged-in services. That access can be reasonable for a content blocker or page-transformation tool, but it deserves a much stronger explanation from a calculator, clock, or simple new-tab utility.
 
@@ -73,6 +75,8 @@ Finally, check whether the extension is actively maintained and whether the list
 
 ## How to Audit Extensions Already Installed in Chrome
 
+![Auditing Chrome extension permissions and site access](/content/images/chrome-extension-security-risks-permission-audit-guide/permission-audit.webp "Auditing Chrome extension permissions and site access")
+
 The fastest audit starts at `chrome://extensions`. Chrome’s help documentation confirms that users can review and change an extension’s permissions after installation [3]. Open the page and work through the following sequence.
 
 **First, make an inventory.** Read every name and remove anything you do not recognize or have not used for months. Removing is preferable to leaving forgotten software installed “just in case.” If you may need an extension later, save the product name and publisher separately rather than keeping unnecessary access active.
@@ -94,6 +98,8 @@ Use this compact checklist as you go:
 | Do I still use it? | Regular, necessary use | Forgotten, duplicated, or abandoned tool |
 
 ## What Manifest V3 Improves—and What It Does Not
+
+![Manifest V3 bundled code and Chrome extension update security](/content/images/chrome-extension-security-risks-permission-audit-guide/manifest-v3-updates.webp "Manifest V3 bundled code and Chrome extension update security")
 
 Manifest V3 changed an important part of the extension platform. Chrome Web Store guidance says that remotely hosted executable code, such as JavaScript or WebAssembly loaded from outside the extension package, is not allowed; extension code must be bundled into the package [4]. This reduces the possibility of an approved extension fetching and executing arbitrary remote code later.
 
