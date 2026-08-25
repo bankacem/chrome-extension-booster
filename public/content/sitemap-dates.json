@@ -337,7 +337,7 @@
   "extension-chrome-wapi-17": "2026-02-06",
   "extension-dashlane-opera-1": "2026-02-06",
   "extension-deezer-chrome-2": "2026-02-06",
-  "extension-get-chrome-3": "2026-02-05",
+  "extension-get-chrome-3": "2026-08-25",
   "extension-google-chat-chrome-4": "2026-02-05",
   "extension-google-chrome-adblock-android-5": "2026-02-05",
   "extension-grammaire-chrome-6": "2026-02-05",
@@ -399,7 +399,7 @@
   "ghostery-vs-stands-adblocker": "2026-03-27",
   "ghostery-vs-ublock-origin-2026": "2026-04-09",
   "google-chrome-addons-guide-unlock-your-browser-s-full-potential": "2026-02-01",
-  "google-chrome-programm-en-14": "2026-02-03",
+  "google-chrome-programm-en-14": "2026-08-25",
   "google-trad-plugin-15": "2026-02-22",
   "google-translate-extension-to-chrome-6": "2026-02-15",
   "grammarly-extension-to-chrome-3": "2026-02-16",
@@ -431,7 +431,7 @@
   "how-to-force-dark-mode-on-amazon-website-3": "2026-02-27",
   "how-to-get-a-clean-browsing-experience-on-chrome-4": "2026-03-03",
   "how-to-get-the-most-out-of-your-browser-with-extension-chrome-get": "2026-05-04",
-  "how-to-hibernate-inactive-tabs-automatically-6": "2026-01-26",
+  "how-to-hibernate-inactive-tabs-automatically-6": "2026-08-25",
   "how-to-install-and-use-idm-extension-to-chrome-for-enhanced-download-management": "2026-02-17",
   "how-to-install-chrome-extensions-a-complete-step-by-step-tutorial": "2026-01-30",
   "how-to-install-chrome-extensions-for-free-without-wrecking-your-browser": "2026-03-16",
@@ -773,7 +773,7 @@
   "why-you-should-avoid-cloud-based-password-managers-2": "2026-03-01",
   "why-your-browser-keeps-redirecting-and-how-to-fix-it-cybersecurity-safe-browsing-privacy-anti-adware-9": "2026-03-09",
   "windscribe-extension-to-chrome-9": "2026-02-15",
-  "writing-vlookup-formulas-for-beginners-2": "2026-01-23",
+  "writing-vlookup-formulas-for-beginners-2": "2026-08-25",
   "youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds": "2026-03-16",
   "youtube-extensions-that-actually-save-you-time": "2026-04-15",
   "youtube-to-mp4-converter-chrome-extensions": "2026-02-20",
@@ -796,5 +796,6 @@
   "how-to-manage-chrome-extensions-organize-disable-clean-up": "2026-08-24",
   "best-chrome-extensions-for-remote-workers-2026": "2026-08-24",
   "chrome-extension-permissions-guide": "2026-08-23",
-  "momentum-chrome-extension-guide": "2026-08-23"
+  "momentum-chrome-extension-guide": "2026-08-23",
+  "how-to-fix-chrome-memory-2026": "2026-08-25"
 }
