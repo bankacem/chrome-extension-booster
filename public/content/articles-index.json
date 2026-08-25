@@ -16681,18 +16681,26 @@
     "slug": "extension-chrome-screen-page-16",
     "description": "Need to capture a full web page in Chrome? Compare capture modes, follow a reliable screenshot workflow, annotate and export safely, and review extension permissions.",
     "meta_description": "Need to capture a full web page in Chrome? Compare capture modes, follow a reliable screenshot workflow, annotate and export safely, and review extension permissions.",
-    "excerpt": "When it comes to capturing web pages, whether for personal or professional use, having the right tools at your disposal can make all the difference.",
+    "excerpt": "Learn when to use visible-area, selected-area, or full-page capture in Chrome, how to annotate and export screenshots, and how to review extension permissions.",
     "published_at": "2026-02-07T02:11:00.948+00:00",
     "category": "Chrome Extensions",
     "author": "James Mitchell",
     "image_url": "/content/images/extension-chrome-screen-page-16/featured.webp",
     "featured_image": "/content/images/extension-chrome-screen-page-16/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
+    "reading_time": 8,
+    "read_time": 8,
     "views": 0,
-    "tags": [],
+    "tags": [
+      "screenshot extensions",
+      "Chrome productivity",
+      "web capture",
+      "browser privacy"
+    ],
     "keywords": [
-      "extension chrome screen page"
+      "extension chrome screen page",
+      "capture full webpage Chrome",
+      "full page screenshot Chrome extension",
+      "webpage screenshot workflow"
     ],
     "canonicalPath": "/blog/extension-chrome-screen-page-16",
     "updated_at": "2026-08-25T00:00:00.000000+00:00"
