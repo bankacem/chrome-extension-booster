@@ -4084,6 +4084,11 @@
       "source": "/blog/how-to-fix-chrome-high-memory-usage-on-windows-11-a-complete-guide-to-a-faster-browser-performance-review-benchmarks",
       "destination": "/blog/how-to-fix-chrome-high-memory-usage-on-windows-11",
       "permanent": true
+    },
+    {
+      "source": "/blog/music-how-to-use-an-extension-chrome-youtube-mp3-downloader-comparison-of-top-downloaders",
+      "destination": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+      "permanent": true
     }
   ]
 }
