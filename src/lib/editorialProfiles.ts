@@ -32,6 +32,14 @@ const profiles: Record<string, EditorialProfile> = {
     url: "/editorial-policy#reviewers",
     image: "/content/images/authors/frah-nssim.png",
   },
+  "Manus AI": {
+    name: "Manus AI",
+    role: "Editorial team",
+    bio: "Manus AI supports ExtensionTo research and drafting while the editorial team verifies sources, structure, and publishing quality.",
+    type: "Organization",
+    url: "/editorial-policy",
+    image: "/content/images/authors/manus-ai.webp",
+  },
   Admin: {
     name: "ExtensionTo Editorial Team",
     role: "Editorial team",
