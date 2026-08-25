@@ -94,6 +94,11 @@
       "permanent": true
     },
     {
+      "source": "/blog/privacy-badger-vs-ghostery-for-chrome-choosing-the-best-browser-extension-for-online-privacy-how-to-block-trackers-effectively",
+      "destination": "/blog/privacy-badger-chrome",
+      "permanent": true
+    },
+    {
       "source": "/blog/enhance-your-online-security-with-the-best-google-chrome-privacy-extensions-mm3scmwbb4a",
       "destination": "/blog/chrome-privacy-extensions-worth-adding-today",
       "permanent": true
