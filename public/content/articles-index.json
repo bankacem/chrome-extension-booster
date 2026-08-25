@@ -4723,10 +4723,10 @@
   },
   {
     "id": "d1004cd5-9c3f-4e2c-9564-55091ba160ba",
-    "title": "Chrome Extensions on Android: Full Guide",
+    "title": "Chrome Extensions on Android: What Works in 2026",
     "slug": "extension-android-google-chrome",
-    "description": "With the rise of mobile browsing, the demand for a seamless and personalized browsing experience on Android devices has never been higher.",
-    "meta_description": "With the rise of mobile browsing, the demand for a seamless and personalized browsing experience on Android devices has never been higher.",
+    "description": "Can Chrome on Android run desktop extensions? Learn what Google’s official Add to Desktop flow actually does, which browser choices support extensions, and how to review permissions safely.",
+    "meta_description": "Can Chrome on Android run desktop extensions? Learn the official Add to Desktop flow, platform limits, browser alternatives, and permission checks.",
     "excerpt": "With the rise of mobile browsing, the demand for a seamless and personalized browsing experience on Android devices has never been higher.",
     "published_at": "2026-05-11T06:15:00.582+00:00",
     "category": "Chrome Extensions",
@@ -4741,7 +4741,7 @@
       "extension android google chrome"
     ],
     "canonicalPath": "/blog/extension-android-google-chrome",
-    "updated_at": "2026-05-11T06:15:00.722754+00:00"
+    "updated_at": "2026-08-25T00:00:00.000000+00:00"
   },
   {
     "id": "dfce3769-caa3-46f2-9794-9d2ff7925c6f",
