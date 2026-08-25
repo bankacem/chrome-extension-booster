@@ -51,6 +51,16 @@ const App = () => (
               <Route path="/es/blog" element={<Blog />} />
               <Route path="/es/blog/:slug" element={<BlogPost />} />
 
+              {/* ── Portuguese (BR) ── */}
+              <Route path="/pt" element={<Index />} />
+              <Route path="/pt/blog" element={<Blog />} />
+              <Route path="/pt/blog/:slug" element={<BlogPost />} />
+
+              {/* ── Arabic (MSA / RTL) ── */}
+              <Route path="/ar" element={<Index />} />
+              <Route path="/ar/blog" element={<Blog />} />
+              <Route path="/ar/blog/:slug" element={<BlogPost />} />
+
               {/* ── Admin / internal ── */}
               <Route path="/admin" element={<AdminLogin />} />
               <Route path="/settings" element={<AdminLogin />} />

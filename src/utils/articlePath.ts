@@ -36,7 +36,7 @@ export function getLocalizedIndexPath(lang: string): string {
   return `/content/i18n/${lang}/articles-index.json`;
 }
 
-export const SUPPORTED_LOCALES = ["fr", "es"] as const;
+export const SUPPORTED_LOCALES = ["fr", "es", "pt", "ar"] as const;
 export type SupportedLocale = typeof SUPPORTED_LOCALES[number];
 
 export function isSupportedLocale(lang: string | undefined): lang is SupportedLocale {

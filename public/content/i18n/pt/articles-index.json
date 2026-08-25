@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "chrome-extension-security-risks-permission-audit-guide",
+    "title": "Riscos de Segurança de Extensões do Chrome: Uma Auditoria de Permissões em 10 Minutos",
+    "seo_title": "Riscos de Segurança de Extensões do Chrome: Auditoria de 10 Minutos",
+    "excerpt": "Aprenda a identificar riscos de segurança em extensões do Chrome, interpretar permissões, restringir acesso a sites e remover extensões injustificadas.",
+    "featured_image": "/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp",
+    "category": "Segurança e Privacidade",
+    "tags": [
+      "segurança",
+      "privacidade",
+      "permissões",
+      "auditoria",
+      "extensões do chrome"
+    ],
+    "keywords": [
+      "riscos de segurança extensão chrome",
+      "como verificar permissões extensão chrome",
+      "extensões chrome são seguras",
+      "auditoria de permissões extensão chrome"
+    ],
+    "meta_description": "Identifique riscos de segurança de extensões do Chrome em 10 minutos. Aprenda a ler permissões, restringir acesso a sites, auditar atualizações e remover extensões arriscadas.",
+    "published_at": "2026-08-26T12:00:00+01:00",
+    "author": "ExtensionTo",
+    "read_time": 8
+  },
+  {
+    "slug": "chrome-extensions-that-slow-down-your-browser-real-tests",
+    "title": "Extensões do Chrome Que Desaceleram Seu Navegador em 2026: Testes Reais de Desempenho",
+    "seo_title": "Extensões do Chrome Lentas? Testes Reais de Desempenho",
+    "excerpt": "Testamos 20 extensões populares do Chrome com o Gerenciador de Tarefas e medimos o impacto real de RAM e CPU. Confira os resultados.",
+    "featured_image": "/content/images/chrome-extensions-that-slow-down-your-browser-real-tests/featured.webp",
+    "category": "Desempenho e Memória",
+    "tags": [
+      "desempenho",
+      "memória",
+      "ram",
+      "cpu",
+      "velocidade do navegador"
+    ],
+    "keywords": [
+      "extensões chrome lentas",
+      "uso de memória extensão chrome",
+      "quais extensões chrome usam mais ram",
+      "navegador lento por causa de extensões"
+    ],
+    "meta_description": "Testes reais com o Gerenciador de Tarefas do Chrome mostrando quais extensões mais consomem RAM e CPU em 2026. Dados reais, não suposições.",
+    "published_at": "2026-08-26T12:00:00+01:00",
+    "author": "ExtensionTo",
+    "read_time": 8
+  },
+  {
+    "slug": "zoom-chrome-extension-guide",
+    "title": "Guia Completo da Extensão do Zoom para Chrome: Instalação e Dicas",
+    "seo_title": "Guia da Extensão do Zoom para Chrome em 2026",
+    "excerpt": "Guia passo a passo para instalar, configurar e usar a extensão do Zoom no Chrome para reuniões mais rápidas e produtivas.",
+    "featured_image": "/content/images/zoom-chrome-extension-guide/featured.webp",
+    "category": "Produtividade",
+    "tags": [
+      "zoom",
+      "videoconferência",
+      "reuniões",
+      "chrome",
+      "produtividade"
+    ],
+    "keywords": [
+      "extensão zoom chrome",
+      "instalar zoom chrome",
+      "zoom extensão navegador",
+      "usar zoom no chrome"
+    ],
+    "meta_description": "Guia completo da extensão do Zoom para Chrome em 2026. Aprenda a instalar, configurar e otimizar o Zoom diretamente no navegador.",
+    "published_at": "2026-08-26T12:00:00+01:00",
+    "author": "ExtensionTo",
+    "read_time": 8
+  },
+  {
+    "slug": "chrome-logger-debugging-guide",
+    "title": "Chrome Logger: Guia Completo de Depuração e Logging no Chrome",
+    "seo_title": "Chrome Logger: Guia de Depuração para Desenvolvedores",
+    "excerpt": "Domine as ferramentas de logging e depuração do Chrome DevTools para encontrar bugs mais rápido e melhorar seu código.",
+    "featured_image": "/content/images/chrome-logger-debugging-guide/featured.webp",
+    "category": "Desenvolvimento",
+    "tags": [
+      "debugging",
+      "logging",
+      "devtools",
+      "chrome",
+      "desenvolvimento"
+    ],
+    "keywords": [
+      "chrome logger debug",
+      "ferramentas depuração chrome",
+      "chrome devtools console",
+      "depuração javascript chrome"
+    ],
+    "meta_description": "Guia completo de depuração e logging no Chrome. Aprenda a usar o Console, breakpoints e logs avançados para encontrar bugs mais rápido.",
+    "published_at": "2026-08-26T12:00:00+01:00",
+    "author": "ExtensionTo",
+    "read_time": 8
+  },
+  {
+    "slug": "chrome-extension-permissions-guide",
+    "title": "Guia Completo de Permissões de Extensões do Chrome em 2026",
+    "seo_title": "Guia de Permissões de Extensões do Chrome",
+    "excerpt": "Entenda todas as permissões de extensões do Chrome, o que cada uma significa e como gerenciar o acesso das suas extensões.",
+    "featured_image": "/content/images/chrome-extension-permissions-guide/featured.webp",
+    "category": "Segurança e Privacidade",
+    "tags": [
+      "permissões",
+      "segurança",
+      "privacidade",
+      "extensões do chrome",
+      "manifest v3"
+    ],
+    "keywords": [
+      "permissões extensão chrome",
+      "o que significam permissões chrome",
+      "gerenciar permissões extensões",
+      "manifest v3 permissões"
+    ],
+    "meta_description": "Guia completo sobre permissões de extensões do Chrome em 2026. Entenda o que cada permissão faz e como proteger seus dados.",
+    "published_at": "2026-08-26T12:00:00+01:00",
+    "author": "ExtensionTo",
+    "read_time": 8
+  }
+]

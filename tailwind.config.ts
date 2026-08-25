@@ -16,8 +16,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['Outfit', 'sans-serif'],
-        body: ['DM Sans', 'sans-serif'],
+        heading: ['Outfit', 'Noto Sans Arabic', 'sans-serif'],
+        body: ['DM Sans', 'Noto Sans Arabic', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

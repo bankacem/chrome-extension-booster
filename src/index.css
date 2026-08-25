@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -220,4 +220,33 @@
       linear-gradient(to bottom, hsl(222 30% 18% / 0.3) 1px, transparent 1px);
     background-size: 60px 60px;
   }
+}
+
+/* ── RTL (Arabic) overrides ── */
+html[dir="rtl"] {
+  --font-heading: 'Noto Sans Arabic', 'Outfit', sans-serif;
+  --font-body: 'Noto Sans Arabic', 'DM Sans', sans-serif;
+}
+
+html[dir="rtl"] .prose {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .prose :where(ul, ol):not(:where([class~="not-prose"])) {
+  padding-right: 1.625em;
+  padding-left: 0;
+  list-style-position: outside;
+}
+
+html[dir="rtl"] .prose :where(blockquote):not(:where([class~="not-prose"])) {
+  border-right-width: 0.25rem;
+  border-left-width: 0;
+  padding-right: 1em;
+  padding-left: 0;
+}
+
+html[dir="rtl"] .prose :where(img):not(:where([class~="not-prose"])) {
+  margin-left: auto;
+  margin-right: 0;
 }
