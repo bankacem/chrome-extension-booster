@@ -13,7 +13,7 @@ import VideoPlayer from "@/components/blog/VideoPlayer";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import yaml from "js-yaml";
-import { getPartitionedPath, getLocalizedPartitionedPath, getLocalizedIndexPath, isSupportedLocale, resolveImagePath } from "@/utils/articlePath";
+import { getPartitionedPath, getLocalizedPartitionedPath, getLocalizedIndexPath, isSupportedLocale, resolveImagePath, SupportedLocale } from "@/utils/articlePath";
 import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
 import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
 import { getEditorialProfile } from "@/lib/editorialProfiles";
@@ -113,7 +113,7 @@ const BlogPost = () => {
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
   const [notYetTranslated, setNotYetTranslated] = useState(false);
-  const [availableHreflangLanguages, setAvailableHreflangLanguages] = useState<("en" | "fr" | "es")[]>(["en"]);
+  const [availableHreflangLanguages, setAvailableHreflangLanguages] = useState<("en" | SupportedLocale)[]>(["en"]);
 
   const instantTitle = slug ? slugToTitle(slug) : "Loading Article";
 
@@ -137,7 +137,7 @@ const BlogPost = () => {
       }
 
       if (matched) {
-        const hreflangLanguages: ("en" | "fr" | "es")[] = lang ? ["en", lang] : ["en"];
+        const hreflangLanguages: ("en" | SupportedLocale)[] = lang ? ["en", lang] : ["en"];
         if (!lang) {
           const localizedAvailability = await Promise.all((['fr', 'es'] as const).map(async (locale) => {
             try {
