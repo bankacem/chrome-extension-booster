@@ -1,27 +1,45 @@
 ---
-seo_title: "Mastering Google Chrome Programmé en"
+seo_title: "How to Build a Chrome Extension with Manifest V3"
+title: "How to Build a Chrome Extension with Manifest V3: Beginner Guide"
 id: ecc80886-f055-442b-8d2e-4135cf4deaf6
-title: 'Mastering Google Chrome Programmé en'
 slug: "google-chrome-programm-en-14"
-excerpt: "Learn how Chrome extensions are actually built — a real manifest.json example, the JavaScript-only stack, and a realistic first project to try today."
+excerpt: "Learn the current building blocks of a Chrome extension: manifest.json, a popup, permissions, and a practical Manifest V3 starter project."
 featured_image: /content/images/google-chrome-programmé-en-14/featured.webp
-category: "Performance & Memory"
-tags: []
+category: "Chrome Extensions"
+tags:
+  - chrome extensions
+  - manifest v3
+  - javascript
 keywords:
-  - google chrome programmé en
-meta_description: "Learn how Chrome extensions are actually built — a real manifest.json example, the JavaScript-only stack, and a realistic first project to try today."
+  - build a Chrome extension
+  - Chrome extension Manifest V3
+meta_description: "Build a small Chrome extension with Manifest V3. Learn manifest.json, permissions, service workers, popup code, and safe testing steps."
+faq:
+  - question: "What do I need to build a Chrome extension?"
+    answer: "You need a manifest.json file and the HTML, CSS, and JavaScript files required by your extension. A popup, service worker, and content script are optional components chosen for the behavior you want."
+  - question: "What is Manifest V3 in Chrome extensions?"
+    answer: "Manifest V3 is the current Chrome extensions platform model. It uses service workers for event-driven background work and restricts remotely hosted executable code."
+  - question: "Can a Chrome extension use a service worker as a permanent background page?"
+    answer: "No. A Manifest V3 service worker is event-driven and can be stopped when idle, so persistent state should be stored with an extension storage API rather than only in a JavaScript variable."
+  - question: "What permissions should a beginner request?"
+    answer: "Request only the permissions needed for the feature. Use a narrow permission such as activeTab when it fits, and explain broader host access clearly to users."
+  - question: "How do I test a Chrome extension before publishing it?"
+    answer: "Load the project as an unpacked extension from chrome://extensions with Developer mode enabled, test the user flow, inspect the service worker console when relevant, and review the requested permissions."
 status: published
 published_at: '2026-02-03T02:11:00.834+00:00'
 scheduled_at: '2026-02-03T02:11:00+00:00'
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
-read_time: 4
+read_time: 7
 created_at: '2026-01-24T18:21:55.433546+00:00'
-updated_at: '2026-02-11T21:40:09.43224+00:00'
-description: "Learn how Chrome extensions are actually built — a real manifest.json example, the JavaScript-only stack, and a realistic first project to try today."
+updated_at: '2026-08-25T00:00:00.000Z'
+canonicalPath: /blog/google-chrome-programm-en-14
+description: "Build a small Chrome extension with Manifest V3. Learn manifest.json, permissions, service workers, popup code, and safe testing steps."
 ---
 Chrome is more than just a browser you click around in — under the hood, it runs on the same web technologies you'd use to build a website: HTML, CSS, and JavaScript. That's what makes it programmable. Whether you're customizing how the browser behaves or building your own extension from scratch, understanding how Chrome extensions are actually put together opens up a lot more than the Chrome Web Store's ready-made options ever will.
+
+> **Quick answer:** To build a Chrome extension, start with `manifest.json`, choose the narrowest permissions that fit the feature, and add only the components you need: a popup for user controls, a service worker for event-driven background work, or a content script for page interaction. Load the project unpacked from `chrome://extensions`, test it in Chrome, and consult the current Manifest V3 documentation before publishing.
 
 ## Table of Contents
 
@@ -35,9 +53,9 @@ Chrome is more than just a browser you click around in — under the hood, it ru
 [Getting Started: Your Action Plan](#getting-started)
 [Frequently Asked Questions](#faq)
 
-## [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch") to Programming Chrome
+## Introduction to Building Chrome Extensions
 
-At its core, programming for Chrome means using web technologies to automate or customize the browser's behavior. This can range from simple tasks like [automatically](/blog/how-to-hibernate-inactive-tabs-automatically-6 "How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster Browser") switching between dark and light modes to building genuinely complex tools — Formula Builder Pro, for instance, calculates spreadsheet-style formulas directly inside the browser. The [official Chrome for Developers documentation](https://developer.chrome.com/docs/extensions) is the authoritative reference once you go beyond the basics covered here, but you don't need to read all of it to get started.
+Chrome extensions are small web applications that can add browser actions, page features, or background behavior. They are built with HTML, CSS, JavaScript, and a manifest that declares the extension's identity and capabilities. This guide uses the current Manifest V3 model and a small popup example; the [official Chrome for Developers documentation](https://developer.chrome.com/docs/extensions) remains the source of truth for API details and platform changes.
 
 ### The manifest.json File: Where Every Extension Starts
 
@@ -56,27 +74,24 @@ Every Chrome extension, no matter how simple or complex, starts with a single re
 }
 ```
 
-That's genuinely it for a minimal extension — `manifest_version`, a name, a version, and whatever permissions it actually needs. One rule worth knowing before you start: Chrome's Web Store policy requires all of an extension's logic to ship inside the package itself — you can't have it download and run JavaScript from an external server at runtime. It's a security requirement, not a technical limitation, and it shapes how every real extension is built. The full list of accepted fields lives in the [official manifest reference](https://developer.chrome.com/docs/extensions/reference/manifest) if you want to see everything available beyond this minimal example.
+That is enough for a minimal popup extension, but each field should match the feature you are implementing. Manifest V3 also does not allow an extension to execute remotely hosted JavaScript; executable logic must be included in the reviewed extension package. See the [official manifest reference](https://developer.chrome.com/docs/extensions/reference/manifest) for the fields and restrictions that apply to the current platform.
 
 ## Extension Architecture: Picking the Right Pattern
-
-![Google Chrome Programm En 14 Overview](/content/images/google-chrome-programm-en-14/google-chrome-programm-en-14-overview.webp "Google Chrome Programm En 14 Overview")
-
 
 Before writing any code, it's worth knowing that almost every Chrome extension follows one of four architecture patterns. Picking the wrong one is the single most common reason beginner projects get overcomplicated:
 
 | Pattern | What It Can Do | Complexity | Typical Use Case |
 | --- | --- | --- | --- |
 | Popup only | Runs code only while its popup is open; no background activity | Lowest | A calculator, color picker, or quick-reference tool |
-| Popup + Service Worker | Popup triggers actions; service worker keeps working after the popup closes | Low-Medium | Setting alarms, scheduled reminders, periodic API calls |
-| Popup + Service Worker + Content Script | Full stack — reads/modifies the page, coordinates state, has a settings UI | Medium-High | Ad blockers with a settings panel, productivity tools like our [ProTab Suspender](/extension/protab-suspender) |
+| Popup + Service Worker | Popup starts actions; the service worker responds to supported events after the popup closes | Low-Medium | Alarms, event handling, or scheduled work |
+| Popup + Service Worker + Content Script | User controls, event-driven background work, and page interaction | Medium-High | Tools that coordinate settings with page behavior |
 | Content Script only | Runs automatically on matching pages, no popup or persistent background needed | Low | Dark mode injectors, readability tools, simple page modifiers |
 
-If you're building your first extension, start at the top of that table and only add complexity when you actually need it. A content script that can't access privileged Chrome APIs directly has to send a message to the service worker to request that access — a detail that trips up a lot of people moving from simple popup-only projects to anything that reads or modifies the current page.
+If you're building your first extension, start with the smallest pattern that can deliver the feature. A content script that needs privileged extension APIs should communicate with the extension's service worker or another permitted context; it should not assume that page code can call every Chrome API directly.
 
 ## Manifest V3 and the Service Worker Change
 
-If you find an older tutorial, watch for one specific difference: Manifest V3 replaced the old persistent "background page" with a service worker, and the two don't behave the same way. A background page in the previous manifest version stayed running the entire time Chrome was open. A service worker is event-driven — it wakes up to handle something (a message, an alarm, a tab update) and Chrome shuts it down after roughly five minutes of inactivity to save resources.
+If you find an older tutorial, check whether it uses Manifest V2. Manifest V3 uses an event-driven service worker instead of a long-lived background page. The worker wakes for supported events and may be stopped when idle, so code must not depend on a global variable remaining in memory between events. Store persistent state with `chrome.storage` when the feature requires it. See Chrome’s [Manifest V3 overview](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3) and [service worker migration guide](https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers).
 
 This single change is responsible for the most common error beginners hit when following an outdated guide:
 
@@ -85,7 +100,7 @@ Error: The "background.scripts" key cannot be used with manifest_version 3.
 Use the "background.service_worker" key instead.
 ```
 
-The fix is a one-line change in `manifest.json` — swap `"background": { "scripts": [...] }` for `"background": { "service_worker": "background.js" }` — but it catches almost everyone copying code from a pre-2023 tutorial. A second, related gotcha: host permissions (which sites your extension can access) moved into their own `host_permissions` field, separate from the general `permissions` array. Mixing the two up produces a manifest that loads without errors but silently doesn't work.
+The migration is not just a label change: replace the old background-page declaration with the Manifest V3 `background.service_worker` field and review the rest of the APIs used by the tutorial. Keep site access in the appropriate permission fields, request only what the feature needs, and test the extension after loading it unpacked. Chrome’s migration documentation lists the platform changes rather than assuming an old example still applies.
 
 ### Benefits of Programming Your Own Chrome Behavior
 
@@ -97,9 +112,6 @@ The benefits are concrete, not abstract:
 - Improve their overall browsing experience with features like our [Redirect Shield](/extension/redirect-shield) to protect against malicious redirects
 
 ## Build Your First Extension: A Real Walkthrough
-
-![Google Chrome Programm En 14 Features](/content/images/google-chrome-programm-en-14/google-chrome-programm-en-14-features.webp "Google Chrome Programm En 14 Features")
-
 
 Theory only gets you so far. Here's a complete, working extension — a popup that changes the current page's background color, the same "hello world" project most official tutorials use because it touches every core piece (manifest, popup, and a script that talks to the active tab).
 
@@ -146,16 +158,13 @@ That's a complete, functional extension in three files. The `scripting` permissi
 
 A few issues account for most of the frustration beginners run into:
 
-- **Following a Manifest V2 tutorial.** The Chrome Web Store no longer accepts Manifest V2 submissions at all — if a guide's manifest uses `"background": { "scripts": [...] }`, it's outdated. Use `service_worker` instead.
-- **Requesting broader permissions than needed.** Asking for access to all sites when `activeTab` would do slows down Chrome Web Store review and looks suspicious to security-conscious users inspecting the permissions list before installing.
+- **Following an old Manifest V2 tutorial.** If a guide uses a persistent background page, check the current Manifest V3 migration requirements and update the example rather than copying it unchanged.
+- **Requesting broader permissions than needed.** Use a narrow permission when it fits the feature, explain any broader host access, and review the current Chrome Web Store permission and disclosure requirements before publishing.
 - **Expecting the service worker to stay alive.** Any state you store in a plain JavaScript variable inside the service worker disappears when it goes idle. Use `chrome.storage` for anything that needs to persist — not `localStorage`, which service workers can't reliably access at all.
 - **Assuming content scripts can do anything.** They can read and modify the page's DOM, but they can't call most privileged Chrome APIs directly — that has to be routed through the service worker via message passing.
 - **Not knowing how to debug a service worker.** Unlike a regular webpage, a service worker doesn't show up if you right-click and "Inspect" the page. Go to `chrome://extensions`, find your extension, and click the "service worker" link under its name — that opens a dedicated DevTools console for it, including any errors that happened while it was asleep.
 
 ## Tools and Languages Worth Knowing
-
-![Google Chrome Programm En 14 Guide](/content/images/google-chrome-programm-en-14/google-chrome-programm-en-14-guide.webp "Google Chrome Programm En 14 Guide")
-
 
 You don't need a long list of tools to get started — a text editor and Chrome's own Developer Mode are enough.
 
@@ -165,7 +174,7 @@ Looking at how existing extensions are built is one of the fastest ways to learn
 
 ### The Only Language You Actually Need: JavaScript
 
-Chrome extensions run entirely on HTML, CSS, and JavaScript — the same stack as any website. There's no Python or other language involved in the extension itself, even though you might use a different language on a server your extension talks to. A service worker can watch for tab changes and switch between Chrome profiles automatically; a content script can read and modify the page you're currently looking at. Both are just JavaScript files declared in `manifest.json`.
+The extension package commonly uses HTML, CSS, and JavaScript. A service worker can respond to extension events, while a content script can read or modify permitted page content. Both are declared through the manifest and must follow the permissions and platform rules for the feature; a separate server is optional, not required for a basic extension.
 
 ## Getting Started: Your Action Plan
 
@@ -178,45 +187,26 @@ The fastest way in isn't reading more theory — it's building one small thing:
 
 ## Conclusion
 
-Chrome extensions look intimidating from the outside, but the barrier to entry is really just three files and a basic grasp of JavaScript. Manifest V3's service-worker model trips up a lot of beginners coming from older tutorials — now you know why, and what the fix looks like. Start small, load your extension unpacked, and iterate from there. For related reading, check out our posts on [optimizing Chrome](/blog/how-to-fix-chrome-high-memory-usage-on-windows-11) [performance](/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance "Unlocking the Power of Noscript Chrome: Boosting Browser Security and Performance") and [essential Chrome extensions](/blog/pro-essential-chrome-extensions-the-ultimate-guide).
+A small Manifest V3 extension can start with a manifest, a popup, and a focused JavaScript action. Build the smallest useful version, load it unpacked, inspect errors in the relevant DevTools context, and expand permissions only when the feature requires them. For related reading, see our [Chrome high-memory troubleshooting guide](/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide) and [essential Chrome extensions guide](/blog/pro-essential-chrome-extensions-the-ultimate-guide).
 
 ## Frequently Asked Questions
 
-### Q: What language do Chrome extensions use?
+### What do I need to build a Chrome extension?
 
-A: HTML, CSS, and JavaScript — the same stack as any website. There's no separate "Chrome programming language." If you already know basic JavaScript, you already know most of what you need.
+You need a `manifest.json` file and the HTML, CSS, and JavaScript files required by your extension. A popup, service worker, and content script are optional components chosen for the behavior you want.
 
-### Q: Do I need to know Python or another backend language?
+### What is Manifest V3 in Chrome extensions?
 
-A: Not for the extension itself. Extensions run entirely client-side in the browser. You'd only need a backend language if your extension talks to your own server for something like storing user data remotely.
+Manifest V3 is the current Chrome extensions platform model. It uses service workers for event-driven background work and restricts remotely hosted executable code.
 
-### Q: What's the minimum file an extension needs?
+### Can a Chrome extension use a service worker as a permanent background page?
 
-A: A `manifest.json` file declaring the name, version, and permissions — see the example earlier in this guide. Everything else (popup HTML, service worker, content scripts) is referenced from there.
+No. A Manifest V3 service worker is event-driven and can be stopped when idle, so persistent state should be stored with an extension storage API rather than only in a JavaScript variable.
 
-### Q: Why did my tutorial's manifest.json give a "cannot be used with manifest\_version 3" error?
+### What permissions should a beginner request?
 
-A: You're following a Manifest V2 tutorial. Replace `"background": { "scripts": [...] }` with `"background": { "service_worker": "..." }` — see the Manifest V3 section above for the full explanation.
+Request only the permissions needed for the feature. Use a narrow permission such as `activeTab` when it fits, and explain broader host access clearly to users.
 
-### Q: Can my extension download and run code from a server?
+### How do I test a Chrome extension before publishing it?
 
-A: No — Chrome Web Store policy requires all executable logic to ship inside the package itself. This is a deliberate security requirement, not a technical limitation, and it's one of the first things that trips up developers coming from other platforms.
-
-### Q: What's a realistic first project?
-
-A: Something small enough to finish in an afternoon — the background-color-changer walkthrough in this guide is a genuinely complete example, not a simplified toy. Load it via `chrome://extensions` → Developer Mode → "Load unpacked" and iterate from there.
-
-### Q: Is this beginner-friendly?
-
-A: Yes, more than most people expect. The manifest format is simple JSON, and a working extension is genuinely three small files — the learning curve is in what you build next, not in getting started.
-
-### Q: What's the difference between chrome.storage and localStorage?
-
-A: `chrome.storage` is the extension-specific storage API and the one you should default to — it works reliably inside a service worker, syncs across devices if you use `chrome.storage.sync`, and is accessible from every part of your extension. Plain `localStorage` is tied to a specific page context and isn't a safe choice for anything the service worker needs to read.
-
-### Get Quick Screenshot Lite Now
-
-Capture full page or visible area screenshots instantly.
-
-[Add to Chrome - It's Free](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
-[View Full Details](/extension/quick-screenshot-lite)
+Load the project as an unpacked extension from `chrome://extensions` with Developer mode enabled, test the user flow, inspect the service worker console when relevant, and review the requested permissions.

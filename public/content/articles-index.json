@@ -14713,12 +14713,12 @@
   },
   {
     "id": "how-to-fix-chrome-memory-2026",
-    "title": "10 Best Ways to Fix Chrome Memory Usage Instantly in 2026 (Free Guide)",
+    "title": "Chrome Memory Usage: 7 Quick Checks Before Installing an Extension",
     "slug": "how-to-fix-chrome-memory-2026",
-    "description": "Is Chrome slow? Learn how to fix Chrome high memory usage instantly in 2026. Reclaim 50%+ RAM and boost speed with our 10 pro tips. (100% Free)",
-    "meta_description": "Is Chrome slow? Learn how to fix Chrome high memory usage instantly in 2026. Reclaim 50%+ RAM and boost speed with our 10 pro tips. (100% Free)",
-    "excerpt": "Is Chrome slow? Learn how to fix Chrome high memory usage instantly in 2026. Reclaim 50%+ RAM and boost speed with our 10 pro tips. (100% Free)",
-    "published_at": "2026-02-23T10:00:00.000Z",
+    "description": "Chrome using too much memory? Use Task Manager, Performance settings, and a safe tab-by-tab checklist to identify the cause before installing an extension.",
+    "meta_description": "Chrome using too much memory? Use Task Manager, Performance settings, and a safe tab-by-tab checklist to identify the cause before installing an extension.",
+    "excerpt": "Find the tab, extension, or setting behind high Chrome memory usage with a practical diagnostic checklist for desktop Chrome.",
+    "published_at": "2026-02-23T10:00:00+00:00",
     "category": "Performance & Memory",
     "author": "James Mitchell",
     "image_url": "/content/images/how-to-fix-chrome-memory-2026/featured.webp",
@@ -14734,8 +14734,9 @@
       "2026"
     ],
     "keywords": [],
-    "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
-    "updated_at": "2026-02-23T10:00:00.000Z"
+    "canonicalPath": "/blog/how-to-fix-chrome-memory-2026",
+    "updated_at": "2026-08-25T00:00:00.000Z",
+    "seo_title": "Chrome Memory Usage: 7 Quick Checks That Help"
   },
   {
     "id": "777e9975-27d0-4c91-ae56-d3a51331bf41",
@@ -16726,11 +16727,11 @@
   },
   {
     "id": "7a72b006-2640-42f1-b3d7-721ad01b6966",
-    "title": "How to Get the Most Out of Your Browser with \"Extension Get Chrome\"",
+    "title": "How to Choose, Install, and Manage Chrome Extensions Safely",
     "slug": "extension-get-chrome-3",
-    "description": "A guide to picking useful Chrome extensions worth adding to your browser, covering setup basics and what separates good picks from clutter.",
-    "meta_description": "A guide to picking useful Chrome extensions worth adding to your browser, covering setup basics and what separates good picks from clutter.",
-    "excerpt": "When it comes to customizing and enhancing your browsing experience, extension get chrome is a phrase that can unlock a world of possibilities.",
+    "description": "Learn how to choose, install, and manage Chrome extensions safely, including permissions, site access, updates, and removal.",
+    "meta_description": "Learn how to choose, install, and manage Chrome extensions safely, including permissions, site access, updates, and removal.",
+    "excerpt": "A practical guide to finding useful Chrome extensions, checking permissions, installing them from the Chrome Web Store, and managing site access.",
     "published_at": "2026-02-05T20:11:01.288+00:00",
     "category": "Chrome Extensions",
     "author": "James Mitchell",
@@ -16739,12 +16740,19 @@
     "reading_time": 5,
     "read_time": 5,
     "views": 0,
-    "tags": [],
+    "tags": [
+      "chrome extensions",
+      "chrome web store",
+      "browser safety"
+    ],
     "keywords": [
-      "extension get chrome"
+      "install Chrome extensions",
+      "manage Chrome extensions",
+      "Chrome Web Store permissions"
     ],
     "canonicalPath": "/blog/extension-get-chrome-3",
-    "updated_at": "2026-02-11T21:40:12.122323+00:00"
+    "updated_at": "2026-08-25T00:00:00.000Z",
+    "seo_title": "How to Install and Manage Chrome Extensions Safely"
   },
   {
     "id": "cd590be2-aed4-4922-b85f-37dafc2e6e5f",
@@ -16968,25 +16976,31 @@
   },
   {
     "id": "ecc80886-f055-442b-8d2e-4135cf4deaf6",
-    "title": "Mastering Google Chrome Programmé en",
+    "title": "How to Build a Chrome Extension with Manifest V3: Beginner Guide",
     "slug": "google-chrome-programm-en-14",
-    "description": "Learn how Chrome extensions are actually built — a real manifest.json example, the JavaScript-only stack, and a realistic first project to try today.",
-    "meta_description": "Learn how Chrome extensions are actually built — a real manifest.json example, the JavaScript-only stack, and a realistic first project to try today.",
-    "excerpt": "Learn how Chrome extensions are actually built — a real manifest.json example, the JavaScript-only stack, and a realistic first project to try today.",
+    "description": "Build a small Chrome extension with Manifest V3. Learn manifest.json, permissions, service workers, popup code, and safe testing steps.",
+    "meta_description": "Build a small Chrome extension with Manifest V3. Learn manifest.json, permissions, service workers, popup code, and safe testing steps.",
+    "excerpt": "Learn the current building blocks of a Chrome extension: manifest.json, a popup, permissions, and a practical Manifest V3 starter project.",
     "published_at": "2026-02-03T02:11:00.834+00:00",
-    "category": "Performance & Memory",
+    "category": "Chrome Extensions",
     "author": "James Mitchell",
     "image_url": "/content/images/google-chrome-programmé-en-14/featured.webp",
     "featured_image": "/content/images/google-chrome-programmé-en-14/featured.webp",
     "reading_time": 4,
     "read_time": 4,
     "views": 0,
-    "tags": [],
+    "tags": [
+      "chrome extensions",
+      "manifest v3",
+      "javascript"
+    ],
     "keywords": [
-      "google chrome programmé en"
+      "build a Chrome extension",
+      "Chrome extension Manifest V3"
     ],
     "canonicalPath": "/blog/google-chrome-programm-en-14",
-    "updated_at": "2026-02-11T21:40:09.43224+00:00"
+    "updated_at": "2026-08-25T00:00:00.000Z",
+    "seo_title": "How to Build a Chrome Extension with Manifest V3"
   },
   {
     "id": "ffc66852-4368-4089-b1af-e1765b3c7bbb",
@@ -17428,11 +17442,11 @@
   },
   {
     "id": "979bd783-8ab4-42c9-8c2a-0071917645a2",
-    "title": "How to Hibernate Inactive Tabs Automatically",
+    "title": "How to Hibernate Inactive Tabs in Chrome Safely: Memory Saver and Tab Discarding",
     "slug": "how-to-hibernate-inactive-tabs-automatically-6",
-    "description": "We’ve all been there: you start your morning with one tab open, and by lunchtime, your browser looks like a crowded parking lot.",
-    "meta_description": "We’ve all been there: you start your morning with one tab open, and by lunchtime, your browser looks like a crowded parking lot.",
-    "excerpt": "We’ve all been there: you start your morning with one tab open, and by lunchtime, your browser looks like a crowded parking lot.",
+    "description": "Learn how to hibernate inactive tabs in Chrome, compare Memory Saver with tab-discarding tools, and avoid reloads on forms, media, and live dashboards.",
+    "meta_description": "Learn how to hibernate inactive tabs in Chrome, compare Memory Saver with tab-discarding tools, and avoid reloads on forms, media, and live dashboards.",
+    "excerpt": "Learn how Chrome Memory Saver and tab-discarding tools handle inactive tabs, what reloads, and which pages should stay active.",
     "published_at": "2026-01-26T16:29:01.742+00:00",
     "category": "Performance & Memory",
     "author": "James Mitchell",
@@ -17442,13 +17456,17 @@
     "read_time": 8,
     "views": 1,
     "tags": [
-      "How to Hibernate Inactive Tabs Automatically: The Ultimate Guide to a Faster Browser"
+      "chrome",
+      "memory",
+      "tabs",
+      "performance"
     ],
     "keywords": [
       "How to hibernate inactive tabs automatically"
     ],
     "canonicalPath": "/blog/how-to-hibernate-inactive-tabs-automatically-6",
-    "updated_at": "2026-01-29T15:24:13.315105+00:00"
+    "updated_at": "2026-08-25T00:00:00.000Z",
+    "seo_title": "How to Hibernate Inactive Tabs in Chrome Safely"
   },
   {
     "id": "f48a7a45-6e1a-4665-b9e4-25cb489f270f",
@@ -17612,13 +17630,13 @@
   },
   {
     "id": "d4823310-8881-44dc-a64c-134d9d57dfee",
-    "title": "Writing VLOOKUP Formulas for Beginners: A Comprehensive Guide to Data Mastery",
+    "title": "How to Write VLOOKUP Formulas: Beginner Examples and Common Errors",
     "slug": "writing-vlookup-formulas-for-beginners-2",
-    "description": "VLOOKUP is one of the most useful spreadsheet formulas for beginners. Here's a step-by-step guide to writing it correctly and avoiding common lookup errors.",
-    "meta_description": "VLOOKUP is one of the most useful spreadsheet formulas for beginners. Here's a step-by-step guide to writing it correctly and avoiding common lookup errors.",
-    "excerpt": "In the modern digital workspace, data literacy is no longer a luxury—it is a fundamental requirement.",
+    "description": "Learn VLOOKUP with beginner-friendly examples, exact-match guidance, error fixes, and current Excel and Google Sheets compatibility notes.",
+    "meta_description": "Learn VLOOKUP with beginner-friendly examples, exact-match guidance, error fixes, and current Excel and Google Sheets compatibility notes.",
+    "excerpt": "Learn VLOOKUP step by step with exact-match examples, troubleshooting tips, and a clear comparison with XLOOKUP and Google Sheets.",
     "published_at": "2026-01-23T08:00:00.463+00:00",
-    "category": "Chrome Extensions",
+    "category": "Productivity & Spreadsheets",
     "author": "James Mitchell",
     "image_url": "/content/images/writing-vlookup-formulas-for-beginners-2/featured.webp",
     "featured_image": "/content/images/writing-vlookup-formulas-for-beginners-2/featured.webp",
@@ -17626,13 +17644,18 @@
     "read_time": 9,
     "views": 1,
     "tags": [
-      "Writing VLOOKUP Formulas for Beginners: A Comprehensive Guide to Data Mastery"
+      "Excel",
+      "Google Sheets",
+      "formulas"
     ],
     "keywords": [
-      "Writing VLOOKUP formulas for beginners"
+      "writing VLOOKUP formulas for beginners",
+      "VLOOKUP exact match",
+      "VLOOKUP vs XLOOKUP"
     ],
     "canonicalPath": "/blog/writing-vlookup-formulas-for-beginners-2",
-    "updated_at": "2026-01-29T15:23:56.366999+00:00"
+    "updated_at": "2026-08-25T00:00:00.000Z",
+    "seo_title": "How to Write VLOOKUP Formulas: Beginner Examples"
   },
   {
     "id": "aa9089ee-ab82-4402-bbf7-879d0dea3e02",
