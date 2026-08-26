@@ -16,12 +16,16 @@ Deno.serve(async (req) => {
 
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
-    // Get all scheduled articles where scheduled_at <= now
+    // Publish due records that were explicitly scheduled. Some older records
+    // were created as draft with a scheduled_at value, so include both valid
+    // pre-publication states while still requiring a due schedule timestamp.
+    const now = new Date().toISOString();
     const { data: scheduledArticles, error: fetchError } = await supabase
       .from("articles")
       .select("id, title, scheduled_at")
-      .eq("status", "scheduled")
-      .lte("scheduled_at", new Date().toISOString());
+      .in("status", ["scheduled", "draft"])
+      .not("scheduled_at", "is", null)
+      .lte("scheduled_at", now);
 
     if (fetchError) {
       console.error("Error fetching scheduled articles:", fetchError);
@@ -50,7 +54,7 @@ Deno.serve(async (req) => {
           published_at: new Date().toISOString(),
         })
         .eq("id", article.id)
-        .eq("status", "scheduled")
+        .in("status", ["scheduled", "draft"])
         .select("id")
         .maybeSingle();
 
