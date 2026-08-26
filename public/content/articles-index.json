@@ -15580,7 +15580,7 @@
     "id": "bc87ba3f-0494-4944-9476-b4a4d0ff1e5c",
     "title": "Stop Trackers on Chrome without Slowing Down: A Practical Privacy Setup",
     "slug": "stop-trackers-on-chrome-without-slowing-down",
-    "description": "A practical guide to reducing common web tracking in Chrome without unnecessary extensions, with clear limits for cookies, Do Not Track, Incognito, and privacy tools.",
+    "description": "Stop trackers on Chrome without slowing down: use third-party cookie controls, understand Do Not Track and Incognito limits, review extensions, and verify changes safely.",
     "meta_description": "Stop trackers on Chrome without slowing down: use third-party cookie controls, understand Do Not Track and Incognito limits, review extensions, and verify changes safely.",
     "excerpt": "Learn how to reduce common web tracking in Chrome without piling on extensions, using cookie controls, realistic privacy limits, permission checks, and a simple verification routine.",
     "published_at": "2026-02-19T09:00:00.259+00:00",
@@ -17906,7 +17906,7 @@
     "id": "8f092d18-e38b-4098-9488-96a02f6f3627",
     "title": "Best AI Formula Generator for Google Sheets (2026): Native Options and Add-Ons",
     "slug": "best-ai-formula-generator-for-google-sheets-1",
-    "description": "Compare native Google AI features and third-party formula helpers for Google Sheets, with a practical workflow for checking generated formulas before use.",
+    "description": "Compare the best AI formula options for Google Sheets in 2026, including Gemini, AI(), add-ons, privacy checks, and a safe formula-verification workflow.",
     "meta_description": "Compare the best AI formula options for Google Sheets in 2026, including Gemini, AI(), add-ons, privacy checks, and a safe formula-verification workflow.",
     "excerpt": "Looking for the best AI formula generator for Google Sheets? Compare native Google AI features with third-party helpers, then verify every generated formula safely.",
     "published_at": "2026-01-22T08:00:02.76+00:00",
@@ -17918,7 +17918,10 @@
     "read_time": 8,
     "views": 3,
     "tags": [
-      "Best AI Formula Generator for Google Sheets: Enhancing Productivity with Intelligence"
+      "Google Sheets",
+      "AI formula generator",
+      "spreadsheet productivity",
+      "Gemini in Sheets"
     ],
     "keywords": [
       "Best AI formula generator for Google Sheets",
