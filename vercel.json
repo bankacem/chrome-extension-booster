@@ -4118,6 +4118,11 @@
       "source": "/blog/best-free-popup-blocker-for-chrome-2026-enhance-your-browsing-experience-installation-setup-guide",
       "destination": "/blog/best-free-popup-blocker-for-chrome-2026",
       "permanent": true
+    },
+    {
+      "source": "/blog/stop-trackers-on-chrome-without-slowing-down-professional-tool-overview",
+      "destination": "/blog/stop-trackers-on-chrome-without-slowing-down",
+      "permanent": true
     }
   ]
 }
