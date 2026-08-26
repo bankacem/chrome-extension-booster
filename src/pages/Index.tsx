@@ -12,14 +12,28 @@ import ContactSection from "@/components/ContactSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import { useLang } from "@/hooks/useLang";
+import { useTranslation } from "react-i18next";
+
+const HOME_TITLES = {
+  en: "ExtensionTo - Powerful Chrome Extensions for Productivity",
+  fr: "ExtensionTo - Extensions Chrome puissantes pour la productivité",
+  es: "ExtensionTo - Extensiones de Chrome potentes para la productividad",
+  pt: "ExtensionTo - Extensões poderosas do Chrome para produtividade",
+  ar: "ExtensionTo - إضافات كروم قوية لتعزيز الإنتاجية",
+} as const;
 
 const Index = () => {
+  const activeLang = useLang();
+  const { t } = useTranslation();
   return (
     <main className="min-h-screen bg-background">
       <SEO
-        title="ExtensionTo - Powerful Chrome Extensions for Productivity"
+        title={HOME_TITLES[activeLang]}
+        description={t("seo.default_description")}
         canonicalPath="/"
-        hreflangLanguages={["en", "fr", "es"]}
+        lang={activeLang}
+        hreflangLanguages={["en", "fr", "es", "pt", "ar"]}
       />
       <Navbar />
       <HeroSection />

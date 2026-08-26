@@ -28,8 +28,12 @@ async function generateSitemap() {
     { url: `${WEBSITE_URL}/editorial-policy`, date: today },
     { url: `${WEBSITE_URL}/fr`, date: today },
     { url: `${WEBSITE_URL}/es`, date: today },
+    { url: `${WEBSITE_URL}/pt`, date: today },
+    { url: `${WEBSITE_URL}/ar`, date: today },
     { url: `${WEBSITE_URL}/fr/blog`, date: today },
     { url: `${WEBSITE_URL}/es/blog`, date: today },
+    { url: `${WEBSITE_URL}/pt/blog`, date: today },
+    { url: `${WEBSITE_URL}/ar/blog`, date: today },
   ];
 
   // --- Extension product pages (/extension/:slug) ---
@@ -136,7 +140,7 @@ async function generateSitemap() {
   // Same frozen-date discipline as English articles, keyed as "{lang}:{slug}"
   // in sitemap-dates.json so a translation's lastmod never collides with or
   // overwrites its English original's entry.
-  const SUPPORTED_LOCALES = ["fr", "es"];
+  const SUPPORTED_LOCALES = ["fr", "es", "pt", "ar"];
   for (const lang of SUPPORTED_LOCALES) {
     const locIndexPath = path.join(process.cwd(), "public", "content", "i18n", lang, "articles-index.json");
     if (!fs.existsSync(locIndexPath)) continue;

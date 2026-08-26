@@ -13,10 +13,14 @@ const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 type FAQItem = { question: string; answer: string };
 
-const LOCALE_BY_LANG: Record<string, string> = {
+type SiteLang = "en" | "fr" | "es" | "pt" | "ar";
+
+const LOCALE_BY_LANG: Record<SiteLang, string> = {
   en: "en_US",
   fr: "fr_FR",
   es: "es_ES",
+  pt: "pt_BR",
+  ar: "ar_SA",
 };
 
 type ArticleIndexEntry = {
@@ -122,8 +126,8 @@ function buildHead(options: {
   image?: string;
   noindex?: boolean;
   schema?: Record<string, unknown>;
-  lang?: "en" | "fr" | "es";
-  alternateLanguages?: { lang: "en" | "fr" | "es"; url: string }[];
+    lang?: SiteLang;
+    alternateLanguages?: { lang: SiteLang; url: string }[];
 }): string {
   const lang = options.lang || "en";
   const canonical = `${SITE_URL}${options.canonicalPath}`;
@@ -233,7 +237,7 @@ function parseExtensions(): ExtensionEntry[] {
   }).filter((entry) => entry.slug && entry.name);
 }
 
-async function writeRoute(route: string, template: string, title: string, description: string, body: string, type: "website" | "article", schema?: Record<string, unknown>, alternateLanguages?: { lang: "en" | "fr" | "es"; url: string }[], lang: "en" | "fr" | "es" = "en", schemas?: Record<string, unknown>[]) {
+async function writeRoute(route: string, template: string, title: string, description: string, body: string, type: "website" | "article", schema?: Record<string, unknown>, alternateLanguages?: { lang: SiteLang; url: string }[], lang: SiteLang = "en", schemas?: Record<string, unknown>[]) {
   let html = replaceRoot(replaceHead(template, buildHead({ title, description, canonicalPath: route, type, schema, alternateLanguages, lang })), body);
   // Replace <html lang="en"> for non-English routes. Vite's index.html
   // template hardcodes lang="en"; without this replacement, every FR/ES
@@ -253,9 +257,11 @@ async function writeRoute(route: string, template: string, title: string, descri
   await fs.writeFile(path.join(outputDir, "index.html"), html, "utf8");
 }
 
-const LOCALE_COPY: Record<string, { homeTitle: string; blogTitle: string; blogDescription: string }> = {
+const LOCALE_COPY: Record<Exclude<SiteLang, "en">, { homeTitle: string; blogTitle: string; blogDescription: string }> = {
   fr: { homeTitle: "Extensions Chrome puissantes pour la productivité", blogTitle: "Guides et avis sur les extensions Chrome", blogDescription: "Guides pratiques, comparatifs et avis sur les extensions Chrome." },
   es: { homeTitle: "Extensiones de Chrome potentes para la productividad", blogTitle: "Guías y reseñas de extensiones de Chrome", blogDescription: "Guías prácticas, comparativas y reseñas de extensiones de Chrome." },
+  pt: { homeTitle: "Extensões poderosas do Chrome para produtividade", blogTitle: "Guias e avaliações de extensões do Chrome", blogDescription: "Guias práticos, comparações e avaliações de extensões do Chrome." },
+  ar: { homeTitle: "إضافات كروم قوية لتعزيز الإنتاجية", blogTitle: "أدلة ومراجعات إضافات كروم", blogDescription: "أدلة عملية ومقارنات ومراجعات تساعدك على اختيار إضافات كروم." },
 };
 
 async function prerenderLocalizedContent(template: string, lang: string) {
@@ -268,27 +274,30 @@ async function prerenderLocalizedContent(template: string, lang: string) {
   const localePrefix = `/${lang}`;
   const homeBody = `<main><section><h1>${escapeHtml(copy.homeTitle)}</h1><p>${escapeHtml(copy.blogDescription)}</p><p><a href="${localePrefix}/blog">${escapeHtml(copy.blogTitle)}</a></p></section></main>`;
   const homeSchema = { "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: `${SITE_URL}${localePrefix}`, inLanguage: lang };
-  const homeAlternates = [
-    { lang: "en" as const, url: `${SITE_URL}/` },
-    { lang: "fr" as const, url: `${SITE_URL}/fr` },
-    { lang: "es" as const, url: `${SITE_URL}/es` },
+  const homeAlternates: { lang: SiteLang; url: string }[] = [
+    { lang: "en", url: `${SITE_URL}/` },
+    { lang: "fr", url: `${SITE_URL}/fr` },
+    { lang: "es", url: `${SITE_URL}/es` },
+    { lang: "pt", url: `${SITE_URL}/pt` },
+    { lang: "ar", url: `${SITE_URL}/ar` },
   ];
-  // FR/ES home: pass `lang` so buildHead emits the correct og:locale + og:locale:alternate,
-  // and replaceHtmlLang so the <html lang="en"> from the Vite template becomes
-  // <html lang="fr"> / <html lang="es"> on the prerendered file.
-  let homeHtml = replaceRoot(replaceHead(template, buildHead({ title: copy.homeTitle, description: copy.blogDescription, canonicalPath: localePrefix, schema: homeSchema, alternateLanguages: homeAlternates, lang: lang as "fr" | "es" })), homeBody);
+  // Localized home pages pass `lang` so buildHead emits the correct
+  // og:locale + og:locale:alternate and replace the template language.
+  let homeHtml = replaceRoot(replaceHead(template, buildHead({ title: copy.homeTitle, description: copy.blogDescription, canonicalPath: localePrefix, schema: homeSchema, alternateLanguages: homeAlternates, lang: lang as Exclude<SiteLang, "en"> })), homeBody);
   homeHtml = replaceHtmlLang(homeHtml, lang);
   await fs.ensureDir(path.join(DIST_DIR, lang));
   await fs.writeFile(path.join(DIST_DIR, lang, "index.html"), homeHtml, "utf8");
 
   const blogLinks = articles.map((article) => `<li><a href="${localePrefix}/blog/${escapeHtml(normalizeSlug(article.slug))}">${escapeHtml(article.title)}</a><p>${escapeHtml(article.excerpt || article.meta_description || article.description || copy.blogDescription)}</p></li>`).join("\n");
   const blogBody = `<main><article><h1>${escapeHtml(copy.blogTitle)}</h1><p>${escapeHtml(copy.blogDescription)}</p><ul>${blogLinks}</ul></article></main>`;
-  const blogAlternates = [
-    { lang: "en" as const, url: `${SITE_URL}/blog` },
-    { lang: "fr" as const, url: `${SITE_URL}/fr/blog` },
-    { lang: "es" as const, url: `${SITE_URL}/es/blog` },
+  const blogAlternates: { lang: SiteLang; url: string }[] = [
+    { lang: "en", url: `${SITE_URL}/blog` },
+    { lang: "fr", url: `${SITE_URL}/fr/blog` },
+    { lang: "es", url: `${SITE_URL}/es/blog` },
+    { lang: "pt", url: `${SITE_URL}/pt/blog` },
+    { lang: "ar", url: `${SITE_URL}/ar/blog` },
   ];
-  await writeRoute(`${localePrefix}/blog`, template, copy.blogTitle, copy.blogDescription, blogBody, "website", undefined, blogAlternates, lang as "fr" | "es");
+  await writeRoute(`${localePrefix}/blog`, template, copy.blogTitle, copy.blogDescription, blogBody, "website", undefined, blogAlternates, lang as Exclude<SiteLang, "en">);
 
   let written = 0;
   for (const article of articles) {
@@ -356,8 +365,8 @@ async function prerenderLocalizedContent(template: string, lang: string) {
     const extraSchemas = [breadcrumbSchema, faqSchema].filter((s): s is Record<string, unknown> => s !== null);
     await writeRoute(`${localePrefix}/blog/${slug}`, template, title, description, body, "article", articleSchema, [
       { lang: "en", url: `${SITE_URL}/blog/${slug}` },
-      { lang: lang as "fr" | "es", url: `${SITE_URL}${localePrefix}/blog/${slug}` },
-    ], lang as "fr" | "es", extraSchemas);
+      { lang: lang as Exclude<SiteLang, "en">, url: `${SITE_URL}${localePrefix}/blog/${slug}` },
+    ], lang as Exclude<SiteLang, "en">, extraSchemas);
     written++;
   }
   console.log(`✅ Prerendered ${written} ${lang} article pages.`);
@@ -371,10 +380,12 @@ async function main() {
 
   const homeDescription = "Discover powerful Chrome extensions built to boost productivity, enhance security, and transform how you browse the web.";
   const homeSchema = { "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: SITE_URL };
-  const allLanguageHomeAlternates = [
-    { lang: "en" as const, url: `${SITE_URL}/` },
-    { lang: "fr" as const, url: `${SITE_URL}/fr` },
-    { lang: "es" as const, url: `${SITE_URL}/es` },
+  const allLanguageHomeAlternates: { lang: SiteLang; url: string }[] = [
+    { lang: "en", url: `${SITE_URL}/` },
+    { lang: "fr", url: `${SITE_URL}/fr` },
+    { lang: "es", url: `${SITE_URL}/es` },
+    { lang: "pt", url: `${SITE_URL}/pt` },
+    { lang: "ar", url: `${SITE_URL}/ar` },
   ];
   // EN home — explicitly pass lang="en" so buildHead emits og:locale=en_US plus
   // og:locale:alternate entries for fr/es. The previous buildHead did not emit
@@ -383,10 +394,12 @@ async function main() {
   await fs.writeFile(path.join(DIST_DIR, "index.html"), homeHtml, "utf8");
 
   const blogDescription = "Practical Chrome extension guides, comparisons, and reviews for productivity, privacy, performance, and accessibility.";
-  const allLanguageBlogAlternates = [
-    { lang: "en" as const, url: `${SITE_URL}/blog` },
-    { lang: "fr" as const, url: `${SITE_URL}/fr/blog` },
-    { lang: "es" as const, url: `${SITE_URL}/es/blog` },
+  const allLanguageBlogAlternates: { lang: SiteLang; url: string }[] = [
+    { lang: "en", url: `${SITE_URL}/blog` },
+    { lang: "fr", url: `${SITE_URL}/fr/blog` },
+    { lang: "es", url: `${SITE_URL}/es/blog` },
+    { lang: "pt", url: `${SITE_URL}/pt/blog` },
+    { lang: "ar", url: `${SITE_URL}/ar/blog` },
   ];
   await writeRoute("/blog", template, "Chrome Extension Guides and Reviews", blogDescription, buildBlogBody(articles), "website", undefined, allLanguageBlogAlternates, "en");
   await writeRoute("/privacy", template, "Privacy Policy", "Learn how ExtensionTo protects your privacy and handles information on its website and Chrome extensions.", buildLegalBody("Privacy Policy", "ExtensionTo is committed to protecting your privacy.", ["Our Chrome extensions are designed to keep settings local where possible and to avoid unnecessary collection of personal information.", "The website may process information you voluntarily submit through contact forms or subscriptions. Any information is used to provide and improve the service.", "For questions about this policy, contact ExtensionTo through the website contact page."]), "website", undefined, undefined, "en");
@@ -409,8 +422,9 @@ async function main() {
   }
 
   console.log(`✅ Prerendered home, blog index, and ${extensions.length} extension pages.`);
-  await prerenderLocalizedContent(template, "fr");
-  await prerenderLocalizedContent(template, "es");
+  for (const lang of ["fr", "es", "pt", "ar"] as const) {
+    await prerenderLocalizedContent(template, lang);
+  }
 }
 
 main().catch((error) => {

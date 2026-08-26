@@ -12,8 +12,10 @@ import DirectDownloadSection from "@/components/seo/DirectDownloadSection";
 import VideoPlayer from "@/components/blog/VideoPlayer";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { useLang } from "@/hooks/useLang";
+import { useTranslation } from "react-i18next";
 import yaml from "js-yaml";
-import { getPartitionedPath, getLocalizedPartitionedPath, getLocalizedIndexPath, isSupportedLocale, resolveImagePath, SupportedLocale } from "@/utils/articlePath";
+import { getPartitionedPath, getLocalizedPartitionedPath, getLocalizedIndexPath, resolveImagePath, SupportedLocale } from "@/utils/articlePath";
 import { detectExtensionFromContent } from "@/lib/autoExtensionLinker";
 import { getExtensionBySlug, Extension } from "@/lib/extensionsData";
 import { getEditorialProfile } from "@/lib/editorialProfiles";
@@ -104,8 +106,11 @@ const slugToTitle = (slug: string): string => {
 };
 
 const BlogPost = () => {
-  const { slug, lang: rawLang } = useParams<{ slug: string; lang?: string }>();
-  const lang = isSupportedLocale(rawLang) ? rawLang : undefined;
+  const { slug } = useParams<{ slug: string }>();
+  const activeLang = useLang();
+  const { t } = useTranslation();
+  const lang = activeLang === "en" ? undefined : activeLang;
+  const routePrefix = lang ? `/${lang}` : "";
   const [article, setArticle] = useState<Partial<Article> | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [matchedExtension, setMatchedExtension] = useState<Extension | null>(null);
@@ -137,21 +142,19 @@ const BlogPost = () => {
       }
 
       if (matched) {
-        const hreflangLanguages: ("en" | SupportedLocale)[] = lang ? ["en", lang] : ["en"];
-        if (!lang) {
-          const localizedAvailability = await Promise.all((['fr', 'es'] as const).map(async (locale) => {
-            try {
-              const response = await fetch(getLocalizedIndexPath(locale));
-              if (!response.ok) return null;
-              const localizedArticles = await response.json() as Partial<Article>[];
-              return localizedArticles.some((entry) => entry.slug === matched?.slug) ? locale : null;
-            } catch {
-              return null;
-            }
-          }));
-          for (const locale of localizedAvailability) {
-            if (locale) hreflangLanguages.push(locale);
+        const hreflangLanguages: ("en" | SupportedLocale)[] = ["en"];
+        const localizedAvailability = await Promise.all((['fr', 'es', 'pt', 'ar'] as const).map(async (locale) => {
+          try {
+            const response = await fetch(getLocalizedIndexPath(locale));
+            if (!response.ok) return null;
+            const localizedArticles = await response.json() as Partial<Article>[];
+            return localizedArticles.some((entry) => entry.slug === matched?.slug) ? locale : null;
+          } catch {
+            return null;
           }
+        }));
+        for (const locale of localizedAvailability) {
+          if (locale) hreflangLanguages.push(locale);
         }
         setAvailableHreflangLanguages([...new Set(hreflangLanguages)]);
         if (!lang) setArticle(matched);
@@ -270,7 +273,7 @@ const BlogPost = () => {
 
   if (notFound && !loading) {
     return (
-      <div className="min-h-screen bg-background"><Navbar /><div className="container mx-auto px-4 pt-32 text-center"><h2 className="text-2xl font-bold mb-4">Article Not Found</h2><Link to="/blog"><Button>Back to Blog</Button></Link></div><Footer /></div>
+      <div className="min-h-screen bg-background"><Navbar /><div className="container mx-auto px-4 pt-32 text-center"><h2 className="text-2xl font-bold mb-4">{t("blog.not_found")}</h2><Link to={`${routePrefix}/blog`}><Button>{t("blog.back_to_blog")}</Button></Link></div><Footer /></div>
     );
   }
 
@@ -286,11 +289,21 @@ const BlogPost = () => {
         body: "Este artículo todavía no tiene una versión en español. Mientras tanto, puedes leerlo en inglés.",
         cta: "Leer en inglés",
       },
+      pt: {
+        heading: "Tradução ainda não disponível",
+        body: "Este artigo ainda não tem uma versão em português. Enquanto isso, você pode lê-lo em inglês.",
+        cta: "Ler em inglês",
+      },
+      ar: {
+        heading: "الترجمة غير متاحة بعد",
+        body: "لا تتوفر نسخة عربية من هذا المقال بعد. يمكنك قراءته باللغة الإنجليزية مؤقتاً.",
+        cta: "القراءة باللغة الإنجليزية",
+      },
     };
     const msg = fallbackMsg[lang || "fr"];
     return (
       <div className="min-h-screen bg-background">
-        <SEO title={msg.heading} noindex canonicalPath={`/blog/${slug}`} lang={(lang as "en" | "fr" | "es") || "fr"} />
+        <SEO title={msg.heading} noindex canonicalPath={`/blog/${slug}`} lang={lang || "fr"} />
         <Navbar />
         <div className="container mx-auto px-4 pt-32 text-center">
           <h2 className="text-2xl font-bold mb-4">{msg.heading}</h2>
@@ -302,9 +315,7 @@ const BlogPost = () => {
     );
   }
 
-  if (loading) { return <div className="min-h-screen bg-background"><Navbar /><div className="text-center pt-32">Loading...</div><Footer /></div>; }
-
-  const routePrefix = lang ? `/${lang}` : "";
+  if (loading) { return <div className="min-h-screen bg-background"><Navbar /><div className="text-center pt-32">{t("blog.loading")}</div><Footer /></div>; }
 
   const editorialProfile = getEditorialProfile(article.author);
 
@@ -392,7 +403,7 @@ const BlogPost = () => {
         articlePublishedTime={article.published_at}
         articleModifiedTime={article.updated_at || article.published_at}
         articleAuthor={editorialProfile.name}
-        lang={(lang as "en" | "fr" | "es") || "en"}
+        lang={activeLang}
         hreflangLanguages={availableHreflangLanguages}
         ogImage={
           article.featured_image
@@ -406,7 +417,7 @@ const BlogPost = () => {
       <Navbar />
       <main className="pt-24 pb-16">
         <article className="container mx-auto max-w-4xl px-4">
-          <Link to={`${routePrefix}/blog`}><Button variant="ghost" className="mb-8"><ArrowLeft className="mr-2 h-4 w-4" />Back to Blog</Button></Link>
+          <Link to={`${routePrefix}/blog`}><Button variant="ghost" className="mb-8"><ArrowLeft className="mr-2 h-4 w-4" />{t("blog.back_to_blog")}</Button></Link>
           <header className="mb-8">
             <h1 className="mb-4 font-heading text-3xl font-bold md:text-5xl">{article.title}</h1>
             <div className="rounded-xl border border-border/60 bg-card/60 p-4 text-sm text-muted-foreground">

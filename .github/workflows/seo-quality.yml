@@ -51,11 +51,17 @@ jobs:
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
       - name: Lint
         run: npm run lint
 
       - name: Typecheck
         run: npm run typecheck
+
+      - name: Python unit tests
+        run: python3 -m unittest discover -s seo_agent_pro -p 'test*.py' -v
 
       - name: Build and prerender
         run: npm run build
@@ -68,3 +74,6 @@ jobs:
 
       - name: Internal link smoke tests
         run: npm run test:links
+
+      - name: Browser smoke tests
+        run: npm run test:e2e

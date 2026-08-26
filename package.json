@@ -13,6 +13,7 @@
     "test:seo": "node scripts/seo-smoke-test.mjs",
     "test:links": "node scripts/internal-link-smoke-test.mjs",
     "test:performance": "node scripts/performance-budget.mjs",
+    "test:e2e": "playwright test",
     "preview": "vite preview",
     "sitemap": "bun scripts/generate-sitemap.ts",
     "sync-articles": "bun scripts/sync-articles.ts",

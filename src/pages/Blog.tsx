@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { useCallback } from "react";
 import { motion } from "framer-motion";
-import { Link, useSearchParams, useParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Search, Tag, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,7 +10,9 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ResponsiveArticleImage from "@/components/ResponsiveArticleImage";
 import { supabase } from "@/integrations/supabase/client";
-import { resolveImagePath, getLocalizedIndexPath, isSupportedLocale } from "@/utils/articlePath";
+import { resolveImagePath, getLocalizedIndexPath } from "@/utils/articlePath";
+import { useLang } from "@/hooks/useLang";
+import { useTranslation } from "react-i18next";
 import {
   Pagination,
   PaginationContent,
@@ -38,8 +40,9 @@ interface Article {
 }
 
 const Blog = () => {
-  const { lang: rawLang } = useParams<{ lang?: string }>();
-  const lang = isSupportedLocale(rawLang) ? rawLang : undefined;
+  const activeLang = useLang();
+  const { t } = useTranslation();
+  const lang = activeLang === "en" ? undefined : activeLang;
   const routePrefix = lang ? `/${lang}` : "";
   const [articles, setArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
@@ -137,19 +140,11 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={
-          lang === "fr" ? "Blog - Derniers Articles et Astuces"
-          : lang === "es" ? "Blog - Últimos Artículos y Consejos"
-          : "Blog - Latest Articles & Tips"
-        }
-        description={
-          lang === "fr" ? "Découvrez des astuces, tutoriels et analyses sur les extensions de navigateur, la productivité et le développement web."
-          : lang === "es" ? "Descubre consejos, tutoriales e ideas sobre extensiones de navegador, productividad y desarrollo web."
-          : "Discover tips, tutorials, and insights about browser extensions, productivity, and web development. Stay updated with the latest Chrome extension news."
-        }
+        title={t("blog.title")}
+        description={t("blog.subtitle")}
         canonicalPath={safePage > 1 ? `/blog?page=${safePage}` : `/blog`}
-        lang={(lang as "en" | "fr" | "es") || "en"}
-        hreflangLanguages={["en", "fr", "es"]}
+        lang={activeLang}
+        hreflangLanguages={["en", "fr", "es", "pt", "ar"]}
       />
       <Navbar />
       
@@ -162,13 +157,13 @@ const Blog = () => {
             className="mb-12 text-center"
           >
             <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-              Our Blog
+              {t("blog.title")}
             </span>
             <h1 className="mb-4 font-heading text-4xl font-bold md:text-5xl">
-              Latest Articles & Tips
+              {t("blog.title")}
             </h1>
             <p className="mx-auto max-w-2xl text-muted-foreground">
-              Discover practical, reviewed guides about browser extensions, privacy, productivity, and performance.
+              {t("blog.subtitle")}
             </p>
             <Link to="/editorial-policy" className="mt-4 inline-block text-sm text-primary hover:underline">Learn how ExtensionTo reviews and updates its guides</Link>
           </motion.div>
@@ -178,7 +173,7 @@ const Blog = () => {
             <div className="relative max-w-md flex-1">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
-                placeholder="Search articles..."
+                placeholder={t("blog.search_placeholder")}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="pl-10"
@@ -190,7 +185,7 @@ const Blog = () => {
                 size="sm"
                 onClick={() => setSelectedCategory(null)}
               >
-                All
+                {t("blog.all_categories")}
               </Button>
               {categories.map((category) => (
                 <Button
@@ -212,7 +207,7 @@ const Blog = () => {
             </div>
           ) : filteredArticles.length === 0 ? (
             <div className="py-20 text-center">
-              <p className="text-muted-foreground">No articles found.</p>
+              <p className="text-muted-foreground">{t("blog.no_results")}</p>
             </div>
           ) : (
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -277,7 +272,7 @@ const Blog = () => {
                     )}
                     <Link to={`${routePrefix}/blog/${article.slug}`}>
                       <Button variant="ghost" size="sm" className="group p-0">
-                        Read More
+                        {t("blog.read_more")}
                         <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </Button>
                     </Link>
@@ -337,7 +332,7 @@ const Blog = () => {
                 </PaginationContent>
               </Pagination>
               <p className="mt-4 text-center text-sm text-muted-foreground">
-                صفحة {safePage} من {totalPages} — {filteredArticles.length} مقال
+                {t("blog.page")} {safePage} / {totalPages} — {filteredArticles.length}
               </p>
             </div>
           )}

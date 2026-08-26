@@ -9,7 +9,7 @@ import urllib.request
 import urllib.error
 
 API_KEY = os.environ.get("BLUESMINDS_KEY", "")
-if not API_KEY:
+if not API_KEY and __name__ == "__main__":
     print("Set the BLUESMINDS_KEY environment variable first.")
     raise SystemExit(1)
 BASE_URL = "https://api.bluesminds.com"
