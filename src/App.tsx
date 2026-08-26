@@ -53,6 +53,7 @@ const App = () => (
                   hydrated app reads the same localized index/body as prerender. */}
               <Route path="/:lang/blog" element={<Blog />} />
               <Route path="/:lang/blog/:slug" element={<BlogPost />} />
+              <Route path="/:lang/extension/:slug" element={<ExtensionPage />} />
 
               {/* ── Admin / internal ── */}
               <Route path="/admin" element={<AdminLogin />} />

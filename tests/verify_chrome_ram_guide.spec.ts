@@ -30,3 +30,28 @@ test('verify Arabic localized article rendering after hydration', async ({ page 
   await expect(page.locator('h1').first()).toContainText('الدليل الشامل لصلاحيات إضافات كروم');
   await expect(page.locator('body')).toContainText('كل إضافة كروم تثبّتها تحصل على مجموعة من الصلاحيات');
 });
+
+test('verify Portuguese localized article rendering after hydration', async ({ page }) => {
+  await page.goto('/pt/blog/chrome-extension-security-risks-permission-audit-guide');
+  await page.waitForSelector('h1', { timeout: 10000 });
+  await expect(page.locator('html')).toHaveAttribute('lang', 'pt');
+  await expect(page.locator('html')).toHaveAttribute('dir', 'ltr');
+  await expect(page.locator('h1').first()).toContainText('Riscos de Segurança de Extensões do Chrome');
+  await expect(page.locator('body')).toContainText('As extensões do Chrome são fáceis de subestimar');
+});
+
+test('verify Arabic and Portuguese UI localization after hydration', async ({ page }) => {
+  const locales = [
+    { path: '/ar', lang: 'ar', dir: 'rtl', cta: 'تصفح الإضافات', blog: '/ar/blog' },
+    { path: '/pt', lang: 'pt', dir: 'ltr', cta: 'Ver extensões', blog: '/pt/blog' },
+  ] as const;
+
+  for (const locale of locales) {
+    await page.goto(locale.path);
+    await expect(page.locator('html')).toHaveAttribute('lang', locale.lang);
+    await expect(page.locator('html')).toHaveAttribute('dir', locale.dir);
+    await expect(page.locator('body')).toContainText(locale.cta);
+    await expect(page.locator(`a[href="${locale.blog}"]`).first()).toBeVisible();
+    await expect(page.locator('body')).not.toContainText('Supercharge Your');
+  }
+});

@@ -1,40 +1,18 @@
 import { motion } from "framer-motion";
 import { Sparkles, Lock, Rocket, Users, Code2, HeartHandshake } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-const features = [
-  {
-    icon: Sparkles,
-    title: "Lightweight & Fast",
-    description: "All extensions are optimized for minimal memory usage and maximum performance.",
-  },
-  {
-    icon: Lock,
-    title: "Privacy First",
-    description: "Zero data tracking. Your browsing data stays on your device, always.",
-  },
-  {
-    icon: Rocket,
-    title: "Regular Updates",
-    description: "Frequent updates with new features based on community feedback.",
-  },
-  {
-    icon: Users,
-    title: "Community Driven",
-    description: "Built with input from thousands of users to solve real problems.",
-  },
-  {
-    icon: Code2,
-    title: "Open Source",
-    description: "Transparent development with code available for review and contribution.",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Free Forever",
-    description: "Core features are free. Premium features at affordable prices.",
-  },
-];
+const featureKeys = [
+  [Sparkles, "lightweight_fast"],
+  [Lock, "privacy_first"],
+  [Rocket, "regular_updates"],
+  [Users, "community_driven"],
+  [Code2, "open_source"],
+  [HeartHandshake, "free_forever"],
+] as const;
 
 const FeaturesSection = () => {
+  const { t } = useTranslation();
   return (
     <section id="features" className="relative py-24">
       {/* Background Effect */}
@@ -50,48 +28,46 @@ const FeaturesSection = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="mb-4 inline-block rounded-full bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent">
-              Why Choose Us
+              {t("features.eyebrow")}
             </span>
             <h2 className="mb-6 font-heading text-3xl font-bold md:text-5xl">
-              Built Different,{" "}
-              <span className="gradient-text">Built Better</span>
+              {t("features.title_start")} {" "}
+              <span className="gradient-text">{t("features.title_highlight")}</span>
             </h2>
             <p className="mb-8 text-lg text-muted-foreground">
-              Unlike generic extensions that slow down your browser and harvest your data, 
-              our tools are designed with performance and privacy at their core. 
-              Every line of code serves a purpose.
+              {t("features.description")}
             </p>
 
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-2 rounded-full bg-secondary/50 px-4 py-2">
                 <div className="h-2 w-2 rounded-full bg-emerald-500" />
-                <span className="text-sm">No trackers</span>
+                <span className="text-sm">{t("features.no_trackers")}</span>
               </div>
               <div className="flex items-center gap-2 rounded-full bg-secondary/50 px-4 py-2">
                 <div className="h-2 w-2 rounded-full bg-primary" />
-                <span className="text-sm">Under 1MB each</span>
+                <span className="text-sm">{t("features.under_1mb")}</span>
               </div>
               <div className="flex items-center gap-2 rounded-full bg-secondary/50 px-4 py-2">
                 <div className="h-2 w-2 rounded-full bg-accent" />
-                <span className="text-sm">24/7 support</span>
+                <span className="text-sm">{t("features.support")}</span>
               </div>
             </div>
           </motion.div>
 
           {/* Right Grid */}
           <div className="grid gap-4 sm:grid-cols-2">
-            {features.map((feature, index) => (
+            {featureKeys.map(([Icon, key], index) => (
               <motion.div
-                key={feature.title}
+                key={key}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="glass-card p-5 transition-all duration-300 hover:border-primary/30"
               >
-                <feature.icon className="mb-3 h-6 w-6 text-primary" />
-                <h3 className="mb-1 font-heading font-semibold">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground">{feature.description}</p>
+                <Icon className="mb-3 h-6 w-6 text-primary" />
+                <h3 className="mb-1 font-heading font-semibold">{t(`features.items.${key}.title`)}</h3>
+                <p className="text-sm text-muted-foreground">{t(`features.items.${key}.description`)}</p>
               </motion.div>
             ))}
           </div>

@@ -1,26 +1,33 @@
 import { Chrome, Github, Twitter, Linkedin, Mail, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLang } from "@/hooks/useLang";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+  const activeLang = useLang();
+  const routePrefix = activeLang === "en" ? "" : `/${activeLang}`;
+  const homePath = routePrefix || "/";
   const footerLinks = {
     product: [
-      { label: "All Extensions", href: "#extensions" },
-      { label: "Pricing", href: "#" },
-      { label: "Changelog", href: "#" },
-      { label: "Roadmap", href: "#" },
+      { label: t("footer.all_extensions"), href: `${homePath}#extensions` },
+      { label: t("footer.pricing"), href: "#" },
+      { label: t("footer.changelog"), href: "#" },
+      { label: t("footer.roadmap"), href: "#" },
     ],
     resources: [
-      { label: "Blog", href: "/blog" },
-      { label: "Documentation", href: "#" },
-      { label: "Help Center", href: "#" },
-      { label: "Community", href: "#" },
+      { label: t("footer.blog"), href: `${routePrefix}/blog` },
+      { label: t("footer.documentation"), href: "#" },
+      { label: t("footer.help_center"), href: "#" },
+      { label: t("footer.community"), href: "#" },
     ],
     company: [
-      { label: "About", href: "#" },
-      { label: "Contact", href: "#contact" },
-      { label: "Privacy Policy", href: "/privacy" },
-      { label: "Terms of Service", href: "/terms" },
-      { label: "Editorial Policy", href: "/editorial-policy" },
+      { label: t("footer.about"), href: "#" },
+      { label: t("footer.contact"), href: `${homePath}#contact` },
+      // Legal pages remain English-only until their localized content is added; keep these links valid.
+      { label: t("footer.privacy"), href: "/privacy" },
+      { label: t("footer.terms"), href: "/terms" },
+      { label: t("footer.editorial_policy"), href: "/editorial-policy" },
     ],
   };
 
@@ -44,8 +51,7 @@ const Footer = () => {
               <span className="font-heading text-xl font-bold">ExtensionTo</span>
             </a>
             <p className="mb-6 max-w-sm text-sm text-muted-foreground">
-              Building powerful Chrome extensions that enhance productivity, 
-              protect privacy, and transform your browsing experience.
+              {t("footer.description")}
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -63,7 +69,7 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="mb-4 font-heading font-semibold">Product</h4>
+            <h4 className="mb-4 font-heading font-semibold">{t("footer.product")}</h4>
             <ul className="space-y-2">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
@@ -79,7 +85,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="mb-4 font-heading font-semibold">Resources</h4>
+            <h4 className="mb-4 font-heading font-semibold">{t("footer.resources")}</h4>
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
@@ -95,7 +101,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="mb-4 font-heading font-semibold">Company</h4>
+            <h4 className="mb-4 font-heading font-semibold">{t("footer.company")}</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -114,16 +120,16 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © 2024 ExtensionTo. All rights reserved.
+            © 2024 ExtensionTo. {t("footer.rights")}
           </p>
           <div className="flex items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              Made with ❤️ for Chrome users worldwide
+              {t("footer.made_with")}
             </p>
             <Link 
               to="/settings" 
               className="flex items-center gap-1 text-xs text-muted-foreground/50 transition-colors hover:text-muted-foreground"
-              title="Settings"
+              title={t("footer.settings")}
             >
               <Settings className="h-3 w-3" />
             </Link>

@@ -262,9 +262,9 @@ const BlogPost = () => {
       <div className="min-h-screen bg-background">
         <Navbar />
         <div className="container mx-auto px-4 pt-32 text-center">
-          <h2 className="mb-4 text-2xl font-bold text-destructive">Content Unavailable</h2>
+          <h2 className="mb-4 text-2xl font-bold text-destructive">{t("blog.content_unavailable")}</h2>
           <p className="mb-6 text-muted-foreground">{error}</p>
-          <Link to="/blog"><Button><ArrowLeft className="mr-2 h-4 w-4" />Back to Blog</Button></Link>
+          <Link to={`${routePrefix}/blog`}><Button><ArrowLeft className="mr-2 h-4 w-4 rtl:rotate-180" />{t("blog.back_to_blog")}</Button></Link>
         </div>
         <Footer />
       </div>
@@ -361,13 +361,13 @@ const BlogPost = () => {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Home",
+        "name": t("nav.home"),
         "item": window.location.origin
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Blog",
+        "name": t("nav.blog"),
         "item": `${window.location.origin}${routePrefix}/blog`
       },
       {
@@ -417,7 +417,7 @@ const BlogPost = () => {
       <Navbar />
       <main className="pt-24 pb-16">
         <article className="container mx-auto max-w-4xl px-4">
-          <Link to={`${routePrefix}/blog`}><Button variant="ghost" className="mb-8"><ArrowLeft className="mr-2 h-4 w-4" />{t("blog.back_to_blog")}</Button></Link>
+          <Link to={`${routePrefix}/blog`}><Button variant="ghost" className="mb-8"><ArrowLeft className="mr-2 h-4 w-4 rtl:rotate-180" />{t("blog.back_to_blog")}</Button></Link>
           <header className="mb-8">
             <h1 className="mb-4 font-heading text-3xl font-bold md:text-5xl">{article.title}</h1>
             <div className="rounded-xl border border-border/60 bg-card/60 p-4 text-sm text-muted-foreground">
@@ -432,15 +432,15 @@ const BlogPost = () => {
                 />
                 <div>
                   <p>
-                    Written by <Link to={editorialProfile.url} className="font-medium text-foreground hover:text-primary">{editorialProfile.name}</Link>
+                    {t("blog.written_by")} <Link to={editorialProfile.url} className="font-medium text-foreground hover:text-primary">{editorialProfile.name}</Link>
                   </p>
                   <p className="mt-0.5">{editorialProfile.role}</p>
                 </div>
               </div>
               <p className="mt-1">
-                Published {article.published_at ? new Date(article.published_at).toLocaleDateString() : ""}
-                {article.updated_at && ` · Updated ${new Date(article.updated_at).toLocaleDateString()}`}
-                {" · "}<Link to="/editorial-policy" className="text-primary hover:underline">Our review methodology</Link>
+                {t("blog.published")} {article.published_at ? new Date(article.published_at).toLocaleDateString(activeLang) : ""}
+                {article.updated_at && ` · ${t("blog.updated")} ${new Date(article.updated_at).toLocaleDateString(activeLang)}`}
+                {" · "}<Link to="/editorial-policy" className="text-primary hover:underline">{t("blog.review_methodology")}</Link>
               </p>
             </div>
           </header>

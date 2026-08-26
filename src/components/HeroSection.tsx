@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative min-h-screen overflow-hidden pt-16">
       {/* Background Effects */}
@@ -21,7 +23,7 @@ const HeroSection = () => {
           >
             <Star className="h-4 w-4 fill-primary text-primary" />
             <span className="text-sm font-medium text-muted-foreground">
-              Trusted by 50,000+ users worldwide
+              {t("hero.badge")}
             </span>
           </motion.div>
 
@@ -32,9 +34,9 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-6 font-heading text-4xl font-bold leading-tight md:text-6xl lg:text-7xl"
           >
-            Supercharge Your{" "}
-            <span className="gradient-text">Chrome Browser</span>{" "}
-            Experience
+            {t("hero.title_start")} {" "}
+            <span className="gradient-text">{t("hero.title_highlight")}</span>{" "}
+            {t("hero.title_end")}
           </motion.h1>
 
           {/* Subtitle */}
@@ -44,8 +46,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground md:text-xl"
           >
-            Discover powerful Chrome extensions built to boost your productivity, 
-            enhance security, and transform how you browse the web.
+            {t("hero.description")}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -57,10 +58,10 @@ const HeroSection = () => {
           >
             <Button variant="hero" size="xl">
               <Download className="h-5 w-5" />
-              Browse Extensions
+              {t("hero.browse_extensions")}
             </Button>
             <Button variant="glass" size="xl">
-              Learn More
+              {t("hero.learn_more")}
               <ArrowRight className="h-5 w-5" />
             </Button>
           </motion.div>
@@ -73,10 +74,10 @@ const HeroSection = () => {
             className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4"
           >
             {[
-              { value: "50K+", label: "Active Users" },
-              { value: "12", label: "Extensions" },
-              { value: "4.9", label: "Avg Rating" },
-              { value: "99%", label: "Satisfaction" },
+              { value: "50K+", label: t("hero.active_users") },
+              { value: "12", label: t("hero.extensions") },
+              { value: "4.9", label: t("hero.average_rating") },
+              { value: "99%", label: t("hero.satisfaction") },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="font-heading text-3xl font-bold text-foreground md:text-4xl">

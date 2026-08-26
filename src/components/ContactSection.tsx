@@ -5,8 +5,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MessageSquare, Send, MapPin, Phone } from "lucide-react";
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -22,15 +24,15 @@ const ContactSection = () => {
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
     
-    toast.success("Message sent successfully! We'll get back to you soon.");
+    toast.success(t("contact.sent_success"));
     setFormData({ name: "", email: "", subject: "", message: "" });
     setIsSubmitting(false);
   };
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "support@extensionhub.com" },
-    { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-    { icon: MapPin, label: "Location", value: "San Francisco, CA" }
+    { icon: Mail, label: t("contact.email"), value: "support@extensionhub.com" },
+    { icon: Phone, label: t("contact.phone"), value: "+1 (555) 123-4567" },
+    { icon: MapPin, label: t("contact.location"), value: "San Francisco, CA" }
   ];
 
   return (
@@ -46,10 +48,10 @@ const ContactSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6">
-            Get in <span className="gradient-text">Touch</span>
+            {t("contact.title_start")} <span className="gradient-text">{t("contact.title_highlight")}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions or feedback? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            {t("contact.description")}
           </p>
         </motion.div>
 
@@ -64,9 +66,9 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="glass-card p-8 space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium mb-2">Name</label>
+                  <label className="block text-sm font-medium mb-2">{t("contact.name")}</label>
                   <Input
-                    placeholder="Your name"
+                    placeholder={t("contact.name_placeholder")}
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
@@ -74,7 +76,7 @@ const ContactSection = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Email</label>
+                  <label className="block text-sm font-medium mb-2">{t("contact.email")}</label>
                   <Input
                     type="email"
                     placeholder="your@email.com"
@@ -87,9 +89,9 @@ const ContactSection = () => {
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-2">Subject</label>
+                <label className="block text-sm font-medium mb-2">{t("contact.subject")}</label>
                 <Input
-                  placeholder="How can we help?"
+                  placeholder={t("contact.subject_placeholder")}
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   required
@@ -98,9 +100,9 @@ const ContactSection = () => {
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-2">Message</label>
+                <label className="block text-sm font-medium mb-2">{t("contact.message")}</label>
                 <Textarea
-                  placeholder="Tell us more about your inquiry..."
+                  placeholder={t("contact.message_placeholder")}
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -117,11 +119,11 @@ const ContactSection = () => {
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
-                  "Sending..."
+                  t("contact.sending")
                 ) : (
                   <>
                     <Send className="w-5 h-5 mr-2" />
-                    Send Message
+                    {t("contact.send_message")}
                   </>
                 )}
               </Button>
@@ -142,8 +144,8 @@ const ContactSection = () => {
                   <MessageSquare className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-heading font-semibold">Let's Talk</h3>
-                  <p className="text-muted-foreground">We're here to help</p>
+                  <h3 className="text-xl font-heading font-semibold">{t("contact.lets_talk")}</h3>
+                  <p className="text-muted-foreground">{t("contact.here_to_help")}</p>
                 </div>
               </div>
               
@@ -163,11 +165,8 @@ const ContactSection = () => {
             </div>
 
             <div className="glass-card p-8">
-              <h3 className="text-xl font-heading font-semibold mb-4">Quick Response</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                We typically respond within 24 hours during business days. For urgent matters, 
-                feel free to reach out via phone or check our FAQ section for immediate answers.
-              </p>
+              <h3 className="text-xl font-heading font-semibold mb-4">{t("contact.quick_response")}</h3>
+              <p className="text-muted-foreground leading-relaxed">{t("contact.quick_response_text")}</p>
             </div>
           </motion.div>
         </div>

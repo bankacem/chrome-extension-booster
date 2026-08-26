@@ -1,13 +1,14 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { Download, Users, Star, Clock } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-const stats = [
-  { icon: Download, value: 500000, suffix: "+", label: "Total Downloads" },
-  { icon: Users, value: 50000, suffix: "+", label: "Active Users" },
-  { icon: Star, value: 4.9, suffix: "", label: "Average Rating", decimals: 1 },
-  { icon: Clock, value: 24, suffix: "/7", label: "Support Available" }
-];
+const statKeys = [
+  { icon: Download, value: 500000, suffix: "+", key: "downloads", decimals: 0 },
+  { icon: Users, value: 50000, suffix: "+", key: "active_users", decimals: 0 },
+  { icon: Star, value: 4.9, suffix: "", key: "average_rating", decimals: 1 },
+  { icon: Clock, value: 24, suffix: "/7", key: "support", decimals: 0 }
+] as const;
 
 const AnimatedCounter = ({ 
   value, 
@@ -64,6 +65,7 @@ const AnimatedCounter = ({
 };
 
 const StatsBar = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-12 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5" />
@@ -77,7 +79,7 @@ const StatsBar = () => {
           className="glass-card p-8 md:p-12"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-            {stats.map((stat, index) => (
+            {statKeys.map((stat, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -97,7 +99,7 @@ const StatsBar = () => {
                   decimals={stat.decimals}
                 />
                 <p className="text-muted-foreground mt-2 text-sm md:text-base">
-                  {stat.label}
+                  {t(`stats.${stat.key}`)}
                 </p>
               </motion.div>
             ))}
