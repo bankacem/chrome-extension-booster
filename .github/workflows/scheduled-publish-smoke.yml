@@ -1,0 +1,41 @@
+name: Scheduled publish smoke test
+
+on:
+  # Run after the daily article release window (11:00 UTC / 12:00 +01).
+  # The extra delay gives the static deploy time to reach production.
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+    inputs:
+      lookback_hours:
+        description: "How many hours back to inspect for due scheduled articles"
+        required: false
+        default: "72"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scheduled-publish-smoke
+  cancel-in-progress: false
+
+jobs:
+  smoke-test:
+    name: Verify due scheduled articles on production
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run production smoke test
+        env:
+          EXTENSIONTO_BASE_URL: https://extensionto.com
+          SMOKE_LOOKBACK_HOURS: ${{ inputs.lookback_hours || '72' }}
+        run: node scripts/scheduled-publish-smoke-test.mjs
