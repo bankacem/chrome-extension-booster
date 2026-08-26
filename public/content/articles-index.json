@@ -3,16 +3,16 @@
     "id": "a1b2c3d4-remote-0003",
     "title": "Best Chrome Extensions for Remote Workers in 2026: Tools That Actually Help",
     "slug": "best-chrome-extensions-for-remote-workers-2026",
-    "excerpt": "Working remotely comes with unique challenges: time zones, video calls, async communication, and focus. These Chrome extensions solve real remote work problems, not generic productivity ones.",
-    "description": "Working remotely comes with unique challenges: time zones, video calls, async communication, and focus. These Chrome extensions solve real remote work problems, not generic productivity ones.",
+    "description": "Chrome extensions specifically for remote workers: time zone management, video call tools, async communication, and focus extensions tested for real work-from-home scenarios.",
     "meta_description": "Chrome extensions specifically for remote workers: time zone management, video call tools, async communication, and focus extensions tested for real work-from-home scenarios.",
+    "excerpt": "Working remotely comes with unique challenges: time zones, video calls, async communication, and focus. These Chrome extensions solve real remote work problems, not generic productivity ones.",
+    "published_at": "2026-08-26T12:00:00+01:00",
     "category": "Productivity & Tools",
     "author": "James Mitchell",
+    "image_url": "/content/images/best-chrome-extensions-for-remote-workers-2026/featured.webp",
     "featured_image": "/content/images/best-chrome-extensions-for-remote-workers-2026/featured.webp",
-    "published_at": "2026-08-26T12:00:00+01:00",
-    "updated_at": "2026-08-26T00:00:00+01:00",
-    "read_time": 8,
     "reading_time": 8,
+    "read_time": 8,
     "views": 0,
     "tags": [
       "remote work",
@@ -27,7 +27,40 @@
       "remote work tools chrome",
       "wfh chrome extensions"
     ],
-    "canonicalPath": "/blog/best-chrome-extensions-for-remote-workers-2026"
+    "canonicalPath": "/blog/best-chrome-extensions-for-remote-workers-2026",
+    "updated_at": "2026-08-26T00:00:00+01:00"
+  },
+  {
+    "id": "b001872a-chrome-exten",
+    "title": "Chrome Extensions for Reading PDFs Online: Annotate, Highlight, and Convert Without Downloading",
+    "slug": "chrome-extensions-for-reading-pdfs-online",
+    "description": "Best Chrome extensions for reading PDFs online: annotate, highlight, add notes, and convert PDFs directly in your browser without downloading separate software.",
+    "meta_description": "Best Chrome extensions for reading PDFs online: annotate, highlight, add notes, and convert PDFs directly in your browser without downloading separate software.",
+    "excerpt": "Reading PDFs in the browser should not require downloading files and opening a separate app. These Chrome extensions let you read, annotate, and manage PDFs directly in the browser tab.",
+    "published_at": "2026-08-25T12:00:00+01:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extensions-for-reading-pdfs-online/featured.webp",
+    "featured_image": "/content/images/chrome-extensions-for-reading-pdfs-online/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "pdf",
+      "reading",
+      "annotation",
+      "viewer",
+      "documents"
+    ],
+    "keywords": [
+      "chrome extensions for reading pdfs online",
+      "pdf reader chrome extension",
+      "annotate pdf chrome",
+      "pdf viewer chrome",
+      "read pdf in browser"
+    ],
+    "canonicalPath": "/blog/chrome-extensions-for-reading-pdfs-online",
+    "updated_at": "2026-08-26T00:00:00+01:00"
   },
   {
     "id": "a1b2c3d4-sec-0002",
@@ -59,37 +92,6 @@
     ],
     "canonicalPath": "/blog/chrome-extension-security-risks-permission-audit-guide",
     "updated_at": "2026-08-25"
-  },
-  {
-    "id": "b001872a-chrome-exten",
-    "title": "Chrome Extensions for Reading PDFs Online: Annotate, Highlight, and Convert Without Downloading",
-    "slug": "chrome-extensions-for-reading-pdfs-online",
-    "excerpt": "Reading PDFs in the browser should not require downloading files and opening a separate app. These Chrome extensions let you read, annotate, and manage PDFs directly in the browser tab.",
-    "description": "Reading PDFs in the browser should not require downloading files and opening a separate app. These Chrome extensions let you read, annotate, and manage PDFs directly in the browser tab.",
-    "meta_description": "Best Chrome extensions for reading PDFs online: annotate, highlight, add notes, and convert PDFs directly in your browser without downloading separate software.",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "featured_image": "/content/images/chrome-extensions-for-reading-pdfs-online/featured.webp",
-    "published_at": "2026-08-25T12:00:00+01:00",
-    "updated_at": "2026-08-26T00:00:00+01:00",
-    "read_time": 8,
-    "reading_time": 8,
-    "views": 0,
-    "tags": [
-      "pdf",
-      "reading",
-      "annotation",
-      "viewer",
-      "documents"
-    ],
-    "keywords": [
-      "chrome extensions for reading pdfs online",
-      "pdf reader chrome extension",
-      "annotate pdf chrome",
-      "pdf viewer chrome",
-      "read pdf in browser"
-    ],
-    "canonicalPath": "/blog/chrome-extensions-for-reading-pdfs-online"
   },
   {
     "id": "a1b2c3d4-perf-0001",
