@@ -14,14 +14,14 @@ keywords:
   - pdf viewer chrome
   - read pdf in browser
 meta_description: "Best Chrome extensions for reading PDFs online: annotate, highlight, add notes, and convert PDFs directly in your browser without downloading separate software."
-status: draft
+status: published
 published_at: "2026-08-25T12:00:00+01:00"
 scheduled_at: "2026-08-25T12:00:00+01:00"
 author: "James Mitchell"
 author_image: /content/images/authors/james-mitchell.png
 read_time: 8
 created_at: "2026-08-25T12:00:00+01:00"
-updated_at: "2026-08-25T12:00:00+01:00"
+updated_at: "2026-08-26T00:00:00+01:00"
 description: "Reading PDFs in the browser should not require downloading files and opening a separate app. These Chrome extensions let you read, annotate, and manage PDFs directly in the browser tab."
 ---
 
@@ -57,6 +57,8 @@ Lumin PDF provides a clean annotation interface with highlight, comment, and dra
 
 Smallpdf is a suite of PDF tools that works as a Chrome extension. Its most useful feature for reading is PDF-to-Word and PDF-to-Excel conversion, which lets you extract content from PDFs for editing. For researchers and professionals who need to quote or repurpose PDF content, this saves significant time compared to retyping or using desktop conversion software.
 
+![A PDF annotation workflow with browser tools arranged around a document](/content/images/chrome-extensions-for-reading-pdfs-online/pdf-annotation-workflow.webp "PDF annotation workflow")
+
 ### 6. DocHub
 
 DocHub focuses on PDF form filling and signing. When you encounter a PDF form in the browser, DocHub activates and lets you fill text fields, add checkmarks, and apply digital signatures. For anyone who handles contracts, applications, or any type of fillable PDF, DocHub removes the friction of downloading, opening in a separate app, and re-uploading.
@@ -87,6 +89,8 @@ Most browser-based PDF tools focus on annotation rather than text editing. If yo
 **Q: Do these work with password-protected PDFs?**
 
 Most require you to enter the password to unlock the document first. Once unlocked, the extension can interact with the PDF normally.
+
+![A browser-based PDF conversion workflow from document source to editable output](/content/images/chrome-extensions-for-reading-pdfs-online/pdf-conversion-workflow.webp "PDF conversion workflow")
 
 ![PDF Chrome Extensions Workflow](/content/images/chrome-extensions-for-reading-pdfs-online/chrome-extensions-for-reading-pdfs-online-details.webp "PDF Chrome Extensions Workflow")
 
