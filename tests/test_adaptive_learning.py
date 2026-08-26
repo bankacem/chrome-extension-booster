@@ -23,7 +23,7 @@ class AdaptiveLearningTests(unittest.TestCase):
             {"title": "Competitor B", "url": "https://b.example.com/guide", "snippet": ""},
             {"title": "Competitor C", "url": "https://c.example.com/guide", "snippet": ""},
         ]
-        selected = web_search._select_external_top_three(results)
+        selected = web_search._select_external_top_five(results)
         self.assertEqual([r["title"] for r in selected], ["Competitor A", "Competitor B", "Competitor C"])
 
     def test_structure_parser_ignores_script_and_extracts_headings(self) -> None:
@@ -38,6 +38,23 @@ class AdaptiveLearningTests(unittest.TestCase):
         self.assertEqual(parser.h2s, ["Useful section"])
         self.assertNotIn("Do not use", parser.h2s)
         self.assertEqual(parser.meta_description, "A real description")
+
+    def test_relevant_lessons_are_selected_deterministically(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            old_lessons_path = memory_store.LESSONS_PATH
+            try:
+                memory_store.LESSONS_PATH = Path(tmp) / "lessons.md"
+                memory_store.LESSONS_PATH.write_text(
+                    "# Accumulated lessons\n\n"
+                    "- Keep title tags short and complete.\n"
+                    "- Never use placeholder images.\n"
+                    "- Prefer natural internal links for API articles.\n",
+                    encoding="utf-8",
+                )
+                selected = memory_store.load_relevant_lessons("Chrome extension API links", limit=1)
+                self.assertIn("internal links", selected)
+            finally:
+                memory_store.LESSONS_PATH = old_lessons_path
 
     def test_learning_records_score_delta_and_positive_patterns(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -74,6 +91,9 @@ class AdaptiveLearningTests(unittest.TestCase):
                 records = json.loads(memory_store.CYCLE_LOG_PATH.read_text(encoding="utf-8"))
                 self.assertEqual(records[-1]["score_delta_from_previous_same_keyword"], 14)
                 self.assertEqual(records[-1]["competitor_count"], 3)
+                self.assertEqual(records[-1]["slug"], "test-keyword")
+                self.assertIn("real internal links", records[-1]["success_factors"][0])
+                self.assertEqual(records[-1]["failure_reasons"], [])
                 self.assertTrue(result["positive_patterns_applied"])
             finally:
                 memory_store.CYCLE_LOG_PATH = old_cycle_path

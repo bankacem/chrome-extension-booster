@@ -107,6 +107,39 @@ def load_lessons() -> str:
     return LESSONS_PATH.read_text(encoding="utf-8")
 
 
+def load_relevant_lessons(context: str, limit: int = 12) -> str:
+    """Return the most relevant lessons for the current run.
+
+    Keep ``load_lessons`` as the compatibility API, but avoid injecting an
+    ever-growing file verbatim into every prompt. This selector is lexical,
+    deterministic, and auditable; it never rewrites lesson text.
+    """
+    full = load_lessons()
+    lines = [line.strip() for line in full.splitlines() if line.strip().startswith("-")]
+    if not lines:
+        return full
+    import re
+    context_tokens = {
+        token for token in re.findall(r"[a-z0-9]+", context.lower())
+        if len(token) > 2
+    }
+    generic = {
+        "the", "and", "for", "with", "chrome", "extension", "extensions",
+        "article", "guide", "content", "seo", "page", "site",
+    }
+    scored: list[tuple[int, int, str]] = []
+    for index, line in enumerate(lines):
+        lesson_tokens = set(re.findall(r"[a-z0-9]+", line.lower()))
+        overlap = len((context_tokens - generic) & lesson_tokens)
+        hard_bonus = 2 if any(term in line.lower() for term in (
+            "must", "never", "placeholder", "title tag", "internal links"
+        )) else 0
+        scored.append((overlap + hard_bonus, -index, line))
+    scored.sort(reverse=True)
+    selected = [line for _, _, line in scored[:max(1, limit)]]
+    return "# Relevant accumulated lessons\n\n" + "\n".join(selected)
+
+
 def add_positive_pattern_if_new(pattern_text: str) -> bool:
     """
     Sibling to add_lesson_if_new(), but for POSITIVE patterns extracted from
@@ -229,7 +262,16 @@ def relevant_past_cycles(keyword: str, n: int = 3) -> list[dict]:
 
     docs, ids, metadatas = [], [], []
     for i, rec in enumerate(log):
-        text = f"{rec.get('keyword','')} — issues: {'; '.join(rec.get('deterministic_issues', []) + rec.get('llm_issues', []))}"
+        issues = rec.get("deterministic_issues", []) + rec.get("llm_issues", [])
+        success = rec.get("success_factors", [])
+        gaps = rec.get("competitor_gaps_selected", []) + rec.get("gaps_added_titles", [])
+        text = (
+            f"{rec.get('keyword', '')} — {rec.get('title', '')} — "
+            f"category: {rec.get('category', '')} — "
+            f"issues: {'; '.join(map(str, issues))} — "
+            f"success: {'; '.join(map(str, success))} — "
+            f"gaps: {'; '.join(map(str, gaps))}"
+        )
         docs.append(text)
         ids.append(str(i))
         raw_score = rec.get("score", 0)
@@ -246,8 +288,10 @@ def relevant_past_cycles(keyword: str, n: int = 3) -> list[dict]:
             raw_score = 0
         metadatas.append({
             "keyword": str(rec.get("keyword", "")),
+            "category": str(rec.get("category", "")),
             "score": raw_score,
             "final_status": str(rec.get("final_status", "")),
+            "main_issues": "; ".join(map(str, rec.get("failure_reasons", [])[:5])),
         })
 
     collection.add(documents=docs, ids=ids, metadatas=metadatas)

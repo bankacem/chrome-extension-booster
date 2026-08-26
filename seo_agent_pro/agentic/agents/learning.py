@@ -25,6 +25,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from llm_router import c
 from agentic import memory_store
+import daily_article as legacy
 
 
 def _step(label: str) -> None:
@@ -80,6 +81,22 @@ def run(state: dict) -> dict:
         print(c("dim", "  · no new lessons (nothing novel, or draft was clean)"))
 
     final_status = state.get("final_status", "failed")
+    title = state.get("title", "") or keyword
+    article_slug = legacy.slugify(title) if title else ""
+    failure_reasons = [str(issue) for issue in deterministic_issues + llm_issues if str(issue).strip()]
+    success_factors: list[str] = []
+    if evaluation.get("approved"):
+        if state.get("internal_links_used"):
+            success_factors.append("real internal links selected from the published index")
+        if state.get("competitor_source", "").startswith("searxng"):
+            success_factors.append("real external competitor snapshots used as structural evidence")
+        if state.get("strategy", {}).get("required_sections"):
+            success_factors.append("required strategy sections passed the evaluator checklist")
+    strategy = state.get("strategy", {}) or {}
+    lesson_candidates = [
+        str(issue) for issue in deterministic_issues
+        if str(issue).strip()
+    ]
     positive_patterns: list[str] = []
     if gsc_learning_eligible and evaluation.get("approved") and not deterministic_issues and isinstance(score, (int, float)) and score >= 80:
         if state.get("competitor_source", "").startswith("searxng") and state.get("competitor_count", 0) >= 3:
@@ -97,6 +114,8 @@ def run(state: dict) -> dict:
 
     memory_store.append_cycle({
         "keyword": keyword,
+        "title": title,
+        "slug": article_slug,
         "model": state.get("active_model"),
         "revision_count": state.get("revision_count", 0),
         "score": score,
@@ -110,6 +129,10 @@ def run(state: dict) -> dict:
         "competitor_count": state.get("competitor_count", 0),
         "competitor_urls": state.get("competitor_urls", []),
         "gaps_added_titles": state.get("gaps_added_titles", []),
+        "competitor_gaps_selected": strategy.get("competitor_gap_requirements", []),
+        "success_factors": success_factors,
+        "failure_reasons": failure_reasons,
+        "lesson_candidates": lesson_candidates,
         "word_count": state.get("word_count", 0),
         "new_lessons": new_lessons,
         "new_positive_patterns": new_patterns,

@@ -38,7 +38,7 @@ def run(state: dict) -> dict:
     elements = strategy.get("must_have_elements", [])
     competitor_gaps = strategy.get("competitor_gap_requirements", []) or []
 
-    lessons = memory_store.load_lessons()
+    lessons = memory_store.load_relevant_lessons(f"{keyword} {strategy.get('unique_angle', '')}")
 
     revision_note = ""
     if revision_count > 0 and prev_eval:

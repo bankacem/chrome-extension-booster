@@ -108,8 +108,12 @@ def run(limit: int = 25, slug: str | None = None) -> dict:
         site_baseline = fetch_site_performance()
         inspection = inspect_url(url)
         snapshot = {
+            "schema_version": 1,
             "slug": article["slug"],
             "title": article.get("title"),
+            "keyword": (article.get("keywords") or [None])[0],
+            "category": article.get("category"),
+            "published_at": article.get("published_at"),
             "url": url,
             "recorded_at": datetime.now(timezone.utc).isoformat(),
             "performance": performance,
