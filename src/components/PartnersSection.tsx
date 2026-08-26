@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const partners = [
   { name: "Google", logo: "G" },
@@ -10,6 +11,7 @@ const partners = [
 ];
 
 const PartnersSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-16 relative overflow-hidden border-y border-glass">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,7 +21,7 @@ const PartnersSection = () => {
           viewport={{ once: true }}
           className="text-center text-muted-foreground mb-8"
         >
-          Trusted by teams at leading companies
+          {t("partners.trusted")}
         </motion.p>
         
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">

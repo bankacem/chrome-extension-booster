@@ -1,6 +1,8 @@
 import json, os, glob, re
 
-BASE = "/home/z/my-project/chrome-extension-booster/public/content"
+from pathlib import Path
+
+BASE = str(Path(__file__).resolve().parents[1] / "public" / "content")
 
 SLUGS = [
     "chrome-extension-security-risks-permission-audit-guide",

@@ -1,23 +1,25 @@
 import { motion } from "framer-motion";
 import { Check, X, Zap, Shield, Palette, Clock } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-const features = [
-  { name: "Lightning Fast Performance", icon: Zap },
-  { name: "Privacy-First Design", icon: Shield },
-  { name: "Customizable Interface", icon: Palette },
-  { name: "24/7 Support", icon: Clock },
-  { name: "Regular Updates", icon: Check },
-  { name: "Open Source", icon: Check }
-];
+const featureKeys = [
+  ["performance", Zap],
+  ["privacy", Shield],
+  ["customizable", Palette],
+  ["support", Clock],
+  ["regular_updates", Check],
+  ["open_source", Check],
+] as const;
 
-const competitors = [
-  { name: "Our Extensions", values: [true, true, true, true, true, true], highlight: true },
-  { name: "Competitor A", values: [true, false, true, false, true, false], highlight: false },
-  { name: "Competitor B", values: [false, true, false, true, false, false], highlight: false },
-  { name: "Competitor C", values: [true, false, false, false, true, false], highlight: false }
-];
+const competitorKeys = [
+  ["our_extensions", [true, true, true, true, true, true], true],
+  ["competitor_a", [true, false, true, false, true, false], false],
+  ["competitor_b", [false, true, false, true, false, false], false],
+  ["competitor_c", [true, false, false, false, true, false], false],
+] as const;
 
 const ComparisonSection = () => {
+  const { t } = useTranslation();
   return (
     <section id="comparison" className="py-24 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,10 +31,10 @@ const ComparisonSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6">
-            Why Choose <span className="gradient-text">Us?</span>
+            {t("comparison.eyebrow")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See how our extensions stack up against the competition. Quality matters.
+            {t("comparison.description")}
           </p>
         </motion.div>
 
@@ -46,21 +48,21 @@ const ComparisonSection = () => {
           <table className="w-full glass-card">
             <thead>
               <tr className="border-b border-glass">
-                <th className="text-left p-4 md:p-6 font-heading text-lg">Feature</th>
-                {competitors.map((comp, i) => (
+                <th className="text-start p-4 md:p-6 font-heading text-lg">{t("comparison.feature")}</th>
+                {competitorKeys.map(([key, _values, highlight], i) => (
                   <th 
                     key={i} 
                     className={`p-4 md:p-6 text-center font-heading text-lg ${
-                      comp.highlight ? "text-primary" : "text-foreground"
+                      highlight ? "text-primary" : "text-foreground"
                     }`}
                   >
-                    {comp.name}
+                    {t(`comparison.${key}`)}
                   </th>
                 ))}
               </tr>
             </thead>
             <tbody>
-              {features.map((feature, i) => (
+              {featureKeys.map(([key, Icon], i) => (
                 <motion.tr
                   key={i}
                   initial={{ opacity: 0, x: -20 }}
@@ -71,18 +73,18 @@ const ComparisonSection = () => {
                 >
                   <td className="p-4 md:p-6">
                     <div className="flex items-center gap-3">
-                      <feature.icon className="w-5 h-5 text-primary" />
-                      <span className="font-medium">{feature.name}</span>
+                      <Icon className="w-5 h-5 text-primary" />
+                      <span className="font-medium">{t(`comparison.rows.${key}`)}</span>
                     </div>
                   </td>
-                  {competitors.map((comp, j) => (
+                  {competitorKeys.map(([_key, values, highlight], j) => (
                     <td key={j} className="p-4 md:p-6 text-center">
-                      {comp.values[i] ? (
+                      {values[i] ? (
                         <div className={`inline-flex p-1.5 rounded-full ${
-                          comp.highlight ? "bg-primary/20" : "bg-muted"
+                          highlight ? "bg-primary/20" : "bg-muted"
                         }`}>
                           <Check className={`w-5 h-5 ${
-                            comp.highlight ? "text-primary" : "text-muted-foreground"
+                            highlight ? "text-primary" : "text-muted-foreground"
                           }`} />
                         </div>
                       ) : (

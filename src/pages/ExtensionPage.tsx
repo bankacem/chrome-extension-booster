@@ -13,6 +13,9 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { getExtensionBySlug, extensions } from "@/lib/extensionsData";
 import { useCallback, useEffect, useState } from "react";
+import { useLang } from "@/hooks/useLang";
+import { useTranslation } from "react-i18next";
+import { getLocalizedIndexPath } from "@/utils/articlePath";
 import { supabase } from "@/integrations/supabase/client";
 
 interface RelatedArticle {
@@ -29,6 +32,9 @@ interface RelatedArticleIndex extends RelatedArticle {
 
 const ExtensionPage = () => {
   const { slug } = useParams<{ slug: string }>();
+  const activeLang = useLang();
+  const { t } = useTranslation();
+  const routePrefix = activeLang === "en" ? "" : `/${activeLang}`;
   const extension = getExtensionBySlug(slug || "");
   const [relatedArticles, setRelatedArticles] = useState<RelatedArticle[]>([]);
 
@@ -36,7 +42,7 @@ const ExtensionPage = () => {
     if (!extension) return;
     
     try {
-      const response = await fetch("/content/articles-index.json");
+      const response = await fetch(activeLang === "en" ? "/content/articles-index.json" : getLocalizedIndexPath(activeLang));
       if (response.ok) {
         const index = await response.json() as RelatedArticleIndex[];
 
@@ -54,7 +60,7 @@ const ExtensionPage = () => {
     } catch (error) {
       console.error("Error fetching related articles from index:", error);
     }
-  }, [extension]);
+  }, [activeLang, extension]);
 
   useEffect(() => {
     if (extension) {
@@ -67,10 +73,10 @@ const ExtensionPage = () => {
       <main className="min-h-screen bg-background">
         <Navbar />
         <div className="container mx-auto px-4 py-24 text-center">
-          <h2 className="text-4xl font-bold mb-4">Extension Not Found</h2>
-          <p className="text-muted-foreground mb-8">The extension you're looking for doesn't exist.</p>
+          <h2 className="text-4xl font-bold mb-4">{t("extension_page.not_found")}</h2>
+          <p className="text-muted-foreground mb-8">{t("extension_page.not_found_description")}</p>
           <Button asChild>
-            <Link to="/#extensions">View All Extensions</Link>
+            <Link to={`${routePrefix}/#extensions`}>{t("extension_page.back_to_extensions")}</Link>
           </Button>
         </div>
         <Footer />
@@ -88,6 +94,7 @@ const ExtensionPage = () => {
         description={extension.longDescription}
         keywords={extension.keywords.join(", ")}
         canonicalPath={`/extension/${extension.slug}`}
+        lang={activeLang}
       />
       <Navbar />
       
@@ -100,9 +107,9 @@ const ExtensionPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Link to="/#extensions" className="inline-flex items-center text-muted-foreground hover:text-primary mb-6 group">
-              <ArrowLeft className="h-4 w-4 mr-2 transition-transform group-hover:-translate-x-1" />
-              Back to Extensions
+            <Link to={`${routePrefix}/#extensions`} className="inline-flex items-center text-muted-foreground hover:text-primary mb-6 group">
+              <ArrowLeft className="h-4 w-4 mr-2 rtl:rotate-180 transition-transform group-hover:-translate-x-1" />
+              {t("extension_page.back_to_extensions")}
             </Link>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -124,12 +131,12 @@ const ExtensionPage = () => {
                   <div className="flex items-center gap-2">
                     <Users className="h-5 w-5 text-muted-foreground" />
                     <span className="font-semibold">{extension.users}</span>
-                    <span className="text-muted-foreground">users</span>
+                    <span className="text-muted-foreground">{t("extensions_section.users")}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                     <span className="font-semibold">{extension.rating}</span>
-                    <span className="text-muted-foreground">rating</span>
+                    <span className="text-muted-foreground">{t("extension_page.rating")}</span>
                   </div>
                 </div>
 
@@ -140,7 +147,7 @@ const ExtensionPage = () => {
                     onClick={() => window.open(extension.storeUrl, '_blank')}
                   >
                     <Download className="h-5 w-5" />
-                    Add to Chrome - Free
+                    {t("extension_page.add_free")}
                   </Button>
                   <Button 
                     size="lg" 
@@ -149,7 +156,7 @@ const ExtensionPage = () => {
                     onClick={() => window.open(extension.storeUrl, '_blank')}
                   >
                     <ExternalLink className="h-5 w-5" />
-                    View in Web Store
+                    {t("extension_page.web_store")}
                   </Button>
                 </div>
               </div>
@@ -159,7 +166,7 @@ const ExtensionPage = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Zap className="h-5 w-5 text-primary" />
-                    Key Features
+                    {t("extension_page.key_features")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -191,11 +198,11 @@ const ExtensionPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { icon: Shield, label: "Secure & Private", desc: "No data collection" },
-              { icon: Zap, label: "Lightweight", desc: "Minimal resources" },
-              { icon: Clock, label: "Regular Updates", desc: "Always improving" },
-              { icon: Users, label: "Active Support", desc: "Help when needed" },
-            ].map((item, index) => (
+              [Shield, "secure_private", "no_data_collection"],
+              [Zap, "lightweight", "minimal_resources"],
+              [Clock, "regular_updates", "always_improving"],
+              [Users, "active_support", "help_when_needed"],
+            ].map(([Icon, labelKey, descriptionKey], index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -205,10 +212,10 @@ const ExtensionPage = () => {
                 className="text-center"
               >
                 <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <item.icon className="h-6 w-6 text-primary" />
+                      <Icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold">{item.label}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
+                    <h3 className="font-semibold">{t(`extension_page.${labelKey}`)}</h3>
+                    <p className="text-sm text-muted-foreground">{t(`extension_page.${descriptionKey}`)}</p>
               </motion.div>
             ))}
           </div>
@@ -219,13 +226,13 @@ const ExtensionPage = () => {
       {relatedArticles.length > 0 && (
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8">Related Articles</h2>
+            <h2 className="text-3xl font-bold mb-8">{t("extension_page.related_articles")}</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedArticles.map((article) => (
                 <Card key={article.id} className="glass-card hover:border-primary/30 transition-all">
                   <CardContent className="p-6">
                     <h3 className="font-semibold mb-2 line-clamp-2">
-                      <Link to={`/blog/${article.slug}`} className="hover:text-primary">
+                      <Link to={`${routePrefix}/blog/${article.slug}`} className="hover:text-primary">
                         {article.title}
                       </Link>
                     </h3>
@@ -233,10 +240,10 @@ const ExtensionPage = () => {
                       {article.excerpt}
                     </p>
                     <Link 
-                      to={`/blog/${article.slug}`}
+                      to={`${routePrefix}/blog/${article.slug}`}
                       className="text-primary text-sm font-medium inline-flex items-center gap-1 hover:gap-2 transition-all"
                     >
-                      Read more <ArrowRight className="h-4 w-4" />
+                      {t("extension_page.read_more")} <ArrowRight className="h-4 w-4" />
                     </Link>
                   </CardContent>
                 </Card>
@@ -249,7 +256,7 @@ const ExtensionPage = () => {
       {/* Other Extensions */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8">Explore More Extensions</h2>
+          <h2 className="text-3xl font-bold mb-8">{t("extension_page.explore_more")}</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {otherExtensions.map((ext) => (
               <Card key={ext.id} className="glass-card hover:border-primary/30 transition-all group">
@@ -261,14 +268,14 @@ const ExtensionPage = () => {
                   <p className="text-sm text-muted-foreground mb-4">{ext.description}</p>
                   <div className="flex gap-2">
                     <Button asChild variant="outline" size="sm" className="flex-1">
-                      <Link to={`/extension/${ext.slug}`}>Learn More</Link>
+                      <Link to={`${routePrefix}/extension/${ext.slug}`}>{t("extension_page.learn_more")}</Link>
                     </Button>
                     <Button 
                       size="sm" 
                       className="flex-1"
                       onClick={() => window.open(ext.storeUrl, '_blank')}
                     >
-                      Add to Chrome
+                      {t("extensions_section.add_to_chrome")}
                     </Button>
                   </div>
                 </CardContent>
@@ -281,9 +288,9 @@ const ExtensionPage = () => {
       {/* CTA */}
       <section className="py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to enhance your browsing?</h2>
+          <h2 className="text-3xl font-bold mb-4">{t("extension_page.ready")}</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Add {extension.name} to Chrome for free and experience the difference.
+            {t("extension_page.add_description", { name: extension.name })}
           </p>
           <Button 
             size="lg" 
@@ -291,7 +298,7 @@ const ExtensionPage = () => {
             onClick={() => window.open(extension.storeUrl, '_blank')}
           >
             <Download className="h-5 w-5" />
-            Add {extension.name} to Chrome
+            {t("extension_page.add_named", { name: extension.name })}
           </Button>
         </div>
       </section>

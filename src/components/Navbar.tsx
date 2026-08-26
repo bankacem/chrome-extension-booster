@@ -5,17 +5,23 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Chrome } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useLang } from "@/hooks/useLang";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === "/";
+  const activeLang = useLang();
+  const { t } = useTranslation();
+  const routePrefix = activeLang === "en" ? "" : `/${activeLang}`;
+  const homePath = routePrefix || "/";
+  const isHome = location.pathname === homePath || (activeLang === "en" && location.pathname === "/");
 
   const navItems = [
-    { label: "Home", href: "/", isRoute: true },
-    { label: "Extensions", href: isHome ? "#extensions" : "/#extensions", isRoute: !isHome },
-    { label: "Blog", href: "/blog", isRoute: true },
-    { label: "Contact", href: isHome ? "#contact" : "/#contact", isRoute: !isHome },
+    { label: t("nav.home"), href: homePath, isRoute: true },
+    { label: t("nav.extensions"), href: isHome ? "#extensions" : `${homePath}#extensions`, isRoute: !isHome },
+    { label: t("nav.blog"), href: `${routePrefix}/blog`, isRoute: true },
+    { label: t("nav.contact"), href: isHome ? "#contact" : `${homePath}#contact`, isRoute: !isHome },
   ];
 
   return (
@@ -58,7 +64,7 @@ const Navbar = () => {
             <LanguageSwitcher />
             <ThemeToggle />
             <Button variant="hero" size="sm">
-              Get Started
+              {t("nav.get_started")}
             </Button>
           </div>
 
@@ -68,7 +74,7 @@ const Navbar = () => {
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
+              aria-label={t("nav.toggle_menu")}
             >
               {isOpen ? (
                 <X className="h-6 w-6" />
@@ -110,7 +116,7 @@ const Navbar = () => {
                 )
               ))}
               <Button variant="hero" size="sm" className="w-fit">
-                Get Started
+                {t("nav.get_started")}
               </Button>
             </div>
           </motion.div>

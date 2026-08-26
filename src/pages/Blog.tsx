@@ -165,7 +165,7 @@ const Blog = () => {
             <p className="mx-auto max-w-2xl text-muted-foreground">
               {t("blog.subtitle")}
             </p>
-            <Link to="/editorial-policy" className="mt-4 inline-block text-sm text-primary hover:underline">Learn how ExtensionTo reviews and updates its guides</Link>
+            <Link to="/editorial-policy" className="mt-4 inline-block text-sm text-primary hover:underline">{t("blog.review_methodology")}</Link>
           </motion.div>
 
           {/* Search and Filter */}
@@ -236,19 +236,19 @@ const Blog = () => {
                   <div className="p-6">
                     <div className="mb-3 flex items-center gap-3 text-xs text-muted-foreground">
                       <span className="rounded-full bg-primary/10 px-2 py-1 text-primary">
-                        {article.category || "Uncategorized"}
+                        {article.category || t("blog.uncategorized")}
                       </span>
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" />
-                        {new Date(article.published_at).toLocaleDateString()}
+                        {new Date(article.published_at).toLocaleDateString(activeLang)}
                       </span>
                       <span className="flex items-center gap-1">
                         <Clock className="h-3 w-3" />
-                        {article.read_time} min read
+                        {article.read_time} {t("blog.min_read")}
                       </span>
                       <span className="flex items-center gap-1">
                         <User className="h-3 w-3" />
-                        {article.author || "ExtensionTo Editorial Team"}
+                        {article.author || t("footer.company")}
                       </span>
                     </div>
                     <h2 className="mb-2 font-heading text-xl font-semibold line-clamp-2">

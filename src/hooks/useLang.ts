@@ -22,6 +22,7 @@ export function useLang(): SupportedLanguage {
   }, [lang, i18n]);
 
   useEffect(() => {
+    document.documentElement.setAttribute("lang", lang);
     document.documentElement.setAttribute("dir", RTL_LANGUAGES.has(lang) ? "rtl" : "ltr");
   }, [lang]);
 

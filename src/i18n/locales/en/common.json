@@ -2,11 +2,166 @@
   "nav": {
     "blog": "Blog",
     "extensions": "Extensions",
-    "home": "Home"
+    "home": "Home",
+    "contact": "Contact",
+    "get_started": "Get Started",
+    "toggle_menu": "Toggle menu"
+  },
+  "hero": {
+    "badge": "Trusted by 50,000+ users worldwide",
+    "title_start": "Supercharge Your",
+    "title_highlight": "Chrome Browser",
+    "title_end": "Experience",
+    "description": "Discover powerful Chrome extensions built to boost your productivity, enhance security, and transform how you browse the web.",
+    "browse_extensions": "Browse Extensions",
+    "learn_more": "Learn More",
+    "active_users": "Active Users",
+    "extensions": "Extensions",
+    "average_rating": "Avg Rating",
+    "satisfaction": "Satisfaction"
+  },
+  "partners": { "trusted": "Trusted by teams at leading companies" },
+  "stats": {
+    "downloads": "Total Downloads",
+    "active_users": "Active Users",
+    "average_rating": "Average Rating",
+    "support": "Support Available"
+  },
+  "extensions_section": {
+    "eyebrow": "Our Extensions",
+    "title": "Powerful Tools for Every Need",
+    "description": "Each extension is carefully crafted with performance and user experience in mind. Install multiple to create your perfect browsing setup.",
+    "users": "users",
+    "details": "Details",
+    "add_to_chrome": "Add to Chrome"
+  },
+  "extension_page": {
+    "not_found": "Extension Not Found",
+    "not_found_description": "The extension you're looking for doesn't exist.",
+    "back_to_extensions": "Back to Extensions",
+    "rating": "rating",
+    "add_free": "Add to Chrome - Free",
+    "web_store": "View in Web Store",
+    "key_features": "Key Features",
+    "secure_private": "Secure & Private",
+    "no_data_collection": "No data collection",
+    "lightweight": "Lightweight",
+    "minimal_resources": "Minimal resources",
+    "regular_updates": "Regular Updates",
+    "always_improving": "Always improving",
+    "active_support": "Active Support",
+    "help_when_needed": "Help when needed",
+    "related_articles": "Related Articles",
+    "read_more": "Read more",
+    "explore_more": "Explore More Extensions",
+    "learn_more": "Learn More",
+    "ready": "Ready to enhance your browsing?",
+    "add_description": "Add {{name}} to Chrome for free and experience the difference.",
+    "add_named": "Add {{name}} to Chrome"
+  },
+  "features": {
+    "eyebrow": "Why Choose Us",
+    "title_start": "Built Different,",
+    "title_highlight": "Built Better",
+    "description": "Unlike generic extensions that slow down your browser and harvest your data, our tools are designed with performance and privacy at their core. Every line of code serves a purpose.",
+    "no_trackers": "No trackers",
+    "under_1mb": "Under 1MB each",
+    "support": "24/7 support",
+    "items": {
+      "lightweight_fast": { "title": "Lightweight & Fast", "description": "All extensions are optimized for minimal memory usage and maximum performance." },
+      "privacy_first": { "title": "Privacy First", "description": "Zero data tracking. Your browsing data stays on your device, always." },
+      "regular_updates": { "title": "Regular Updates", "description": "Frequent updates with new features based on community feedback." },
+      "community_driven": { "title": "Community Driven", "description": "Built with input from thousands of users to solve real problems." },
+      "open_source": { "title": "Open Source", "description": "Transparent development with code available for review and contribution." },
+      "free_forever": { "title": "Free Forever", "description": "Core features are free. Premium features at affordable prices." }
+    }
+  },
+  "comparison": {
+    "eyebrow": "Why Choose Us?",
+    "title": "Better Tools, Better Browsing",
+    "description": "See how ExtensionTo compares with ordinary browser extensions.",
+    "feature": "Feature",
+    "our_extensions": "Our Extensions",
+    "competitor_a": "Competitor A",
+    "competitor_b": "Competitor B",
+    "competitor_c": "Competitor C",
+    "rows": {
+      "performance": "Performance optimized",
+      "privacy": "Privacy focused",
+      "customizable": "Customizable interface",
+      "regular_updates": "Regular updates",
+      "open_source": "Open source",
+      "support": "Dedicated support"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "Loved by Thousands",
+    "description": "See how people use ExtensionTo to make their everyday browsing better.",
+    "items": {
+      "one": { "quote": "Productivity Booster has completely transformed how I manage my tabs. I went from 50+ chaotic tabs to organized workspaces. Game changer!", "role": "Product Designer" },
+      "two": { "quote": "DevTools Enhancer is now essential to my workflow. The real-time linting and performance insights have saved me countless debugging hours.", "role": "Software Developer" },
+      "three": { "quote": "Focus Mode Pro helped me overcome my chronic procrastination. The timed sessions and distraction blocking keep me on track every day.", "role": "Freelance Writer" },
+      "four": { "quote": "Privacy Guard gives me peace of mind. No more creepy ads following me around the internet. It's lightweight and just works.", "role": "Marketing Manager" }
+    }
+  },
+  "faq": {
+    "eyebrow": "Frequently Asked",
+    "title_highlight": "Questions",
+    "description": "Got questions? We've got answers. Find quick solutions to common queries below.",
+    "items": {
+      "install": { "question": "How do I install Chrome extensions?", "answer": "Simply click the 'Add to Chrome' button on any extension page. Chrome will prompt you to confirm the installation. Once confirmed, the extension will be added to your browser automatically." },
+      "free": { "question": "Are these extensions free to use?", "answer": "Yes! All our extensions offer free versions with core features. Some extensions also have premium tiers with advanced functionality for power users." },
+      "manage": { "question": "How do I manage or remove extensions?", "answer": "Click the puzzle piece icon in Chrome's toolbar to see all installed extensions. You can pin, disable, or remove any extension from there. Alternatively, visit chrome://extensions in your browser." },
+      "safe": { "question": "Is my data safe with these extensions?", "answer": "Absolutely. Privacy is our top priority. Our extensions only request necessary permissions and never collect or sell your personal data. All data processing happens locally on your device." },
+      "speed": { "question": "Do extensions slow down my browser?", "answer": "Our extensions are optimized for minimal resource usage. They're designed to enhance your browsing experience without impacting performance. You can always disable extensions when not needed." },
+      "support": { "question": "How do I get support for an extension?", "answer": "You can reach our support team through the contact form on this website, or leave a review on the Chrome Web Store. We typically respond within 24 hours." }
+    }
+  },
+  "blog_section": {
+    "eyebrow": "Editorial guides",
+    "title": "Reviewed Chrome Extension Guides",
+    "description": "Start with practical guides covering browser fundamentals, privacy, and productivity.",
+    "view_all": "View all guides",
+    "read_guide": "Read the guide"
+  },
+  "contact": {
+    "title_start": "Get in",
+    "title_highlight": "Touch",
+    "description": "Have questions or feedback? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "name_placeholder": "Your name",
+    "subject_placeholder": "How can we help?",
+    "message_placeholder": "Tell us more about your inquiry...",
+    "sending": "Sending...",
+    "send_message": "Send Message",
+    "sent_success": "Message sent successfully! We'll get back to you soon.",
+    "lets_talk": "Let's Talk",
+    "here_to_help": "We're here to help",
+    "phone": "Phone",
+    "location": "Location",
+    "quick_response": "Quick Response",
+    "quick_response_text": "We typically respond within 24 hours during business days. For urgent matters, feel free to reach out via phone or check our FAQ section for immediate answers."
+  },
+  "cta": {
+    "badge": "Ready to transform your browsing?",
+    "title_start": "Get Started in",
+    "title_highlight": "Seconds",
+    "description": "Join 50,000+ users who have already upgraded their Chrome experience. Install any extension with one click.",
+    "browse_all": "Browse All Extensions",
+    "stay_updated": "Stay Updated",
+    "newsletter_description": "Subscribe to our newsletter for new extensions, updates, and productivity tips.",
+    "email_placeholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "no_spam": "No spam, ever. Unsubscribe anytime."
   },
   "blog": {
-    "title": "Chrome Extension Blog",
-    "subtitle": "Guides, reviews, and tips to help you get the most out of your browser",
+    "title": "Our Blog",
+    "latest": "Latest Articles & Tips",
+    "subtitle": "Discover practical, reviewed guides about browser extensions, privacy, productivity, and performance.",
     "search_placeholder": "Search articles...",
     "all_categories": "All Categories",
     "back_to_blog": "Back to Blog",
@@ -19,16 +174,38 @@
     "not_found": "Article Not Found",
     "loading": "Loading...",
     "no_results": "No articles found",
+    "review_methodology": "Learn how ExtensionTo reviews and updates its guides",
+    "content_unavailable": "Content Unavailable",
+    "uncategorized": "Uncategorized",
+    "written_by": "Written by",
+    "updated": "Updated",
     "page": "Page"
   },
   "seo": {
     "site_name": "ExtensionTo",
-    "default_description": "Discover powerful Chrome extensions built to boost your productivity, enhance security, and transform how you browse the web. Trusted by 50,000+ users."
+    "default_description": "Discover powerful Chrome extensions made to increase productivity, improve security, and transform your browsing. Trusted by more than 50,000 users."
   },
   "footer": {
+    "product": "Product",
+    "resources": "Resources",
+    "company": "Company",
+    "all_extensions": "All Extensions",
+    "pricing": "Pricing",
+    "changelog": "Changelog",
+    "roadmap": "Roadmap",
+    "blog": "Blog",
+    "documentation": "Documentation",
+    "help_center": "Help Center",
+    "community": "Community",
+    "about": "About",
+    "contact": "Contact",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "rights": "All rights reserved"
+    "editorial_policy": "Editorial Policy",
+    "description": "Building powerful Chrome extensions that enhance productivity, protect privacy, and transform your browsing experience.",
+    "rights": "All rights reserved",
+    "made_with": "Made with care for Chrome users worldwide",
+    "settings": "Settings"
   },
   "lang": {
     "select": "Language",

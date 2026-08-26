@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const testimonials = [
   {
@@ -32,7 +33,10 @@ const testimonials = [
   },
 ];
 
+const testimonialKeys = ["one", "two", "three", "four"] as const;
+
 const TestimonialsSection = () => {
+  const { t } = useTranslation();
   return (
     <section id="testimonials" className="relative py-24">
       <div className="absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-primary/10 blur-[120px]" />
@@ -47,13 +51,13 @@ const TestimonialsSection = () => {
           className="mb-16 text-center"
         >
           <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-            Testimonials
+            {t("testimonials.eyebrow")}
           </span>
           <h2 className="mb-4 font-heading text-3xl font-bold md:text-5xl">
-            Loved by Thousands
+            {t("testimonials.title")}
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
-            See what our users say about their experience with our Chrome extensions.
+            {t("testimonials.description")}
           </p>
         </motion.div>
 
@@ -78,7 +82,7 @@ const TestimonialsSection = () => {
               </div>
 
               {/* Content */}
-              <p className="mb-6 text-muted-foreground">"{testimonial.content}"</p>
+              <p className="mb-6 text-muted-foreground">"{t(`testimonials.items.${testimonialKeys[index]}.quote`)}"</p>
 
               {/* Author */}
               <div className="flex items-center gap-3">
@@ -87,7 +91,7 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <div className="font-semibold">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+                  <div className="text-sm text-muted-foreground">{t(`testimonials.items.${testimonialKeys[index]}.role`)}</div>
                 </div>
               </div>
             </motion.div>
