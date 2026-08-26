@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('verify chrome-ram-guide rendering', async ({ page }) => {
-  await page.goto('http://127.0.0.1:8080/blog/chrome-ram-guide');
+  await page.goto('/blog/chrome-ram-guide');
 
   // Wait for the content to load
   await page.waitForSelector('h1', { timeout: 10000 });
@@ -23,7 +23,7 @@ test('verify chrome-ram-guide rendering', async ({ page }) => {
 });
 
 test('verify Arabic localized article rendering after hydration', async ({ page }) => {
-  await page.goto('http://127.0.0.1:8080/ar/blog/chrome-extension-permissions-guide');
+  await page.goto('/ar/blog/chrome-extension-permissions-guide');
   await page.waitForSelector('h1', { timeout: 10000 });
   await expect(page.locator('html')).toHaveAttribute('lang', 'ar');
   await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
