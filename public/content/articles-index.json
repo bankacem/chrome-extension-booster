@@ -17274,32 +17274,33 @@
   },
   {
     "id": "f281a3d5-04e8-4fdb-b216-3c23c7fa9466",
-    "title": "How to Install Chrome Extensions: A Complete Step-by-Step Tutorial",
+    "title": "How to Install Chrome Extensions in 2026: A Step-by-Step Desktop Guide",
     "slug": "how-to-install-chrome-extensions-a-complete-step-by-step-tutorial",
-    "description": "A step-by-step guide to installing, pinning, managing, removing, and troubleshooting Chrome extensions on supported devices.",
-    "meta_description": "A step-by-step guide to installing, pinning, managing, removing, and troubleshooting Chrome extensions on supported devices.",
-    "excerpt": "Learn every method to install Chrome extensions in 2025 — from the Chrome Web Store and CRX sideloading in Developer Mode to enterprise policy deployment and mobile workarounds on Android and iOS. This technical guide covers Manifest V3 changes, safety best practices, and troubleshooting.",
+    "description": "Learn the official desktop method for installing Chrome extensions, reviewing permissions, pinning and managing them, and troubleshooting common problems.",
+    "meta_description": "Learn how to install Chrome extensions from the official Web Store, review permissions, manage site access, pin or remove extensions, and fix common errors.",
+    "excerpt": "Learn the official desktop method for installing Chrome extensions, reviewing permissions, pinning and managing them, and troubleshooting common problems.",
     "published_at": "2026-01-30T09:00:01.037+00:00",
     "category": "Chrome Extensions",
     "author": "James Mitchell",
     "image_url": "/content/images/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial/featured.webp",
     "featured_image": "/content/images/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial/featured.webp",
-    "reading_time": 14,
-    "read_time": 14,
+    "reading_time": 10,
+    "read_time": 10,
     "views": 2,
     "tags": [
       "installation",
       "Chrome Web Store",
-      "how-to"
+      "how-to",
+      "browser safety"
     ],
     "keywords": [
       "how to install Chrome extensions",
       "Chrome Web Store installation",
       "manage Chrome extensions",
-      "Chrome extension troubleshooting"
+      "Chrome extension permissions"
     ],
     "canonicalPath": "/blog/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial",
-    "updated_at": "2026-03-03T17:57:00.594941+00:00"
+    "updated_at": "2026-08-26T00:00:00.000Z"
   },
   {
     "id": "7ab5d7aa-9094-44df-9f35-1cb12d29966c",
