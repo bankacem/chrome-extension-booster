@@ -3459,27 +3459,29 @@
   },
   {
     "id": "e86d5c9f-b207-4468-bdac-550f3b3f5732",
-    "title": "Chrome Web Store Apps vs Extensions: What Is the Difference in 2026?",
+    "title": "Chrome Web Store Apps vs Extensions: Apps, Themes, and PWAs Explained",
     "slug": "chrome-web-store-apps-vs-extensions",
-    "description": "Chrome apps were deprecated in 2023. Complete guide to Chrome Web Store extensions, themes, and Progressive Web Apps (PWAs)....",
-    "meta_description": "Chrome apps were deprecated in 2023. Complete guide to Chrome Web Store extensions, themes, and Progressive Web Apps (PWAs)....",
-    "excerpt": "Chrome apps were deprecated in 2023. Here is what replaced them, the difference between extensions, themes, and Progressive Web Apps (PWAs), and how to choose the right tool.",
+    "description": "Confused by Chrome Web Store apps, extensions, and themes? Learn what each format does, what replaced Chrome Apps, and which option fits your task in current Chrome.",
+    "meta_description": "Confused by Chrome Web Store apps, extensions, and themes? Learn what each one does, what replaced Chrome Apps, and which option fits your task in 2026.",
+    "excerpt": "Confused by Chrome Web Store apps, extensions, and themes? Learn what each format does, what replaced Chrome Apps, and which option fits your task in current Chrome.",
     "published_at": "2026-05-21T10:15:00.588+00:00",
     "category": "Productivity & Tools",
     "author": "James Mitchell",
-    "image_url": "/content/images/chrome-web-store-apps-vs-extensions/featured.webp",
-    "featured_image": "/content/images/chrome-web-store-apps-vs-extensions/featured.webp",
-    "reading_time": 9,
-    "read_time": 9,
+    "image_url": "/content/images/chrome-web-store-apps-vs-extensions/featured.jpg",
+    "featured_image": "/content/images/chrome-web-store-apps-vs-extensions/featured.jpg",
+    "reading_time": 8,
+    "read_time": 8,
     "views": 0,
     "tags": [],
     "keywords": [
-      "chrome web store application",
-      "chrome apps vs extensions",
-      "pwa vs chrome extension"
+      "chrome web store apps vs extensions",
+      "chrome themes vs extensions",
+      "Chrome Apps replacement",
+      "pwa vs chrome extension",
+      "what is a Chrome Web Store app"
     ],
     "canonicalPath": "/blog/chrome-web-store-apps-vs-extensions",
-    "updated_at": "2026-05-21T10:15:00.789253+00:00"
+    "updated_at": "2026-08-27T02:10:00.000+00:00"
   },
   {
     "id": "install-chrome-web-store-extensions-android",
