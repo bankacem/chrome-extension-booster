@@ -21,6 +21,7 @@ score — hard rules don't get overruled by a "but it reads well" opinion.
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -133,6 +134,69 @@ def _deterministic_checks(state: dict) -> list[str]:
         except (TypeError, ValueError):
             pass
 
+    # Optional live-research gate for controlled pilots. Production remains
+    # fail-soft by default, but a test run can require real external evidence
+    # instead of silently accepting llm_estimate.
+    if os.environ.get("SEO_AGENT_REQUIRE_LIVE_RESEARCH") == "1":
+        source = str(state.get("competitor_source", ""))
+        try:
+            count = int(state.get("competitor_count") or 0)
+        except (TypeError, ValueError):
+            count = 0
+        if source not in {"searxng_top_five_external", "manual_real_search"} or count < 3:
+            issues.append(
+                "live competitor research is required for this run, but fewer than "
+                "three verified external snapshots are available"
+            )
+
+    # Markdown heading guard: list markers must not be emitted as part of a
+    # heading (e.g. '## - [Introduction](#introduction)'), because that
+    # breaks the visible hierarchy and table-of-contents rendering.
+    if re.search(r"^#{1,6}\s+[-*+]\s+", body, re.MULTILINE):
+        issues.append("body contains a list marker inside a Markdown heading")
+    if re.search(r"^#{1,6}\s+\|", body, re.MULTILINE):
+        issues.append("body contains a Markdown table row incorrectly prefixed as a heading")
+
+    # Known Chrome storage quota traps observed in the first Bluesminds pilot.
+    # These are narrow domain guards, not a substitute for source review: they
+    # reject common reversed/obsolete values so a cited-but-wrong table cannot
+    # pass merely because it includes an official URL somewhere else.
+    storage_quota_traps = (
+        (r"\b(?:100\s*KB|102[, ]?400\s*bytes?)\s+per\s+item\b", "sync quota is incorrectly presented as 100 KB per item"),
+        (r"\b512[, ]?000\s*bytes?\b", "sync quota uses an unsupported 512,000-byte total"),
+        (r"\b(?:180|10|20)\s+writ(?:es|e operations?)\s+per\s+minute\b", "sync write limit uses an unsupported per-minute value"),
+        (r"\b(?:5\s*MB|5MB)\s+by\s+default\b", "storage.local uses an obsolete default quota without a Chrome-version qualifier"),
+        (r"\blocal\b[^.\n]{0,100}\b(?:unlimited|no size limit)\b", "storage.local is presented as unlimited without the documented permission caveat"),
+        (r"\bsession\b[^.\n]{0,100}\b(?:unlimited|no size limit)\b", "storage.session is presented as unlimited"),
+    )
+    if re.search(r"\b(storage|quota|sync|local|session)\b", body, re.IGNORECASE):
+        for pattern, message in storage_quota_traps:
+            if re.search(pattern, body, re.IGNORECASE):
+                issues.append(f"likely inaccurate Chrome storage claim: {message}")
+
+    # If the strategy asked for a checklist, require actual task boxes rather
+    # than a paragraph that merely mentions the word checklist.
+    must_have_lower = [str(e).lower() for e in (state.get("strategy", {}).get("must_have_elements") or [])]
+    if any("checklist" in e for e in must_have_lower) and not re.search(r"^\s*- \[ \] ", body, re.MULTILINE):
+        issues.append("Strategy brief requires a checklist, but no Markdown task boxes were found")
+
+    # Exact technical quantities are unsafe without source evidence. This is
+    # intentionally narrow: it applies to quota/permission/API/storage claims
+    # and only when the brief supplied no real URL that the writer could cite.
+    source_requirements = state.get("strategy", {}).get("source_requirements") or []
+    supplied_urls = [str(s) for s in source_requirements if re.match(r"^https?://", str(s).strip())]
+    sensitive_topic = re.search(r"\b(storage|quota|permission|permissions|manifest|api|privacy|security)\b", body, re.IGNORECASE)
+    exact_quantity = re.search(r"\b\d+(?:\.\d+)?\s*(?:kb|mb|gb|bytes?|%|seconds?|minutes?|hours?)\b", body, re.IGNORECASE)
+    if sensitive_topic and exact_quantity:
+        if not supplied_urls:
+            issues.append(
+                "body contains an exact technical quantity in a sensitive topic without a source URL in the brief"
+            )
+        elif not any(url in body for url in supplied_urls):
+            issues.append(
+                "body contains an exact technical quantity but does not cite any supplied source URL"
+            )
+
     # Brief-compliance check: the Strategy Agent's required_sections is
     # supposed to be a concrete checklist, not a suggestion — verify each one
     # actually has a matching heading in the body instead of trusting the
@@ -206,7 +270,11 @@ def _llm_review(state: dict, model: str) -> dict:
         "invented numbers. "
         "Judge the article on what a well-written static article can "
         "actually provide: clarity, accuracy, organization, completeness, "
-        "and genuine (not invented) usefulness.\n\n"
+        "and genuine (not invented) usefulness. Exact technical claims about "
+        "quotas, limits, versions, prices, or security must be backed by a "
+        "source URL supplied in the brief; otherwise recommend cautious "
+        "qualitative wording. Do not reward a draft merely for sounding "
+        "confident.\n\n"
         "The strategy brief's required_sections and must_have_elements are "
         "the concrete checklist — grade completeness against those. "
         "unique_angle is directional color (one differentiating idea), "
