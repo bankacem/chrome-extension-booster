@@ -47,3 +47,11 @@ The repository also contains other historical Draft files that are not automatic
 ## Safety boundary
 
 No published article was changed to Draft. No index or Sitemap entry was added for the new article. No Google indexing request, schedule, workflow dispatch, or auto-publish operation was executed. Human review is required before any article PR is merged or any status is changed to `published`.
+
+## Post-refinement record
+
+The article was refined in place without changing its search intent. The revision added a minimal MV3 manifest, a canonical `(changes, areaName)` listener, write-error handling for Promise and callback forms, explicit DevTools reproduction steps, current-state initialization with `get()`, context-specific failure guidance, a local-versus-sync testing sequence, and a compact regression test.
+
+The title and metadata were made more natural without keyword stuffing. The URL slug was kept stable because the article is not published. FAQ remains visible for readers, but no FAQPage or HowTo markup was added solely to pursue a guaranteed Google rich result: Google Search no longer displays those promised rich-result formats as described in the previous analysis. One internal link points to the published Chrome Extension Development Guide; links to other draft articles were intentionally not added.
+
+The article remains `status: draft`, excluded from `articles-index.json` and Sitemap. The changes require human technical review before merge, especially the code examples and the exact Chrome DevTools labels visible in the user's current Chrome version.

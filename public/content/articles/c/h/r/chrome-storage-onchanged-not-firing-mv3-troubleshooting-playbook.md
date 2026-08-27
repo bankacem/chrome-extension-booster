@@ -1,313 +1,383 @@
 ---
-seo_title: "Chrome storage onChanged not firing: MV3"
+seo_title: "Chrome storage.onChanged Not Firing in MV3: Debugging Guide"
 id: 11d06eaf-5ea6-4cb9-93f0-761aed86be81
-title: "chrome storage onChanged not firing: MV3 troubleshooting playbook"
+title: "Chrome storage.onChanged Not Firing in MV3: A Debugging Playbook"
 slug: chrome-storage-onchanged-not-firing-mv3-troubleshooting-playbook
 status: draft
-excerpt: "MV3 troubleshooting playbook to fix chrome storage onChanged not firing with step-by-step debugging, manifest and listener checks, common causes, and fixes."
-meta_description: "MV3 troubleshooting playbook to fix chrome storage onChanged not firing with step-by-step debugging, manifest and listener checks, common causes, and fixes."
+excerpt: "A practical MV3 guide to diagnosing chrome.storage.onChanged when the listener does not appear to run, with a minimal extension, DevTools checks, storage-area tests, and reliable state patterns."
+meta_description: "Fix chrome.storage.onChanged not firing in Manifest V3. Follow a minimal reproduction, verify the listener and storage area, inspect the right DevTools console, and handle MV3 lifecycle and quota errors."
 featured_image: /og-image.png
 category: Chrome Extensions
-tags: []
+tags:
+  - "Chrome Extensions"
+  - "Manifest V3"
+  - "chrome.storage"
+  - "Debugging"
+  - "Service Worker"
 keywords:
-  - chrome storage onChanged not firing
+  - "chrome storage onChanged not firing"
+  - "chrome.storage.onChanged not working in MV3"
+  - "Manifest V3 storage listener"
 author: Miccart Phen
+author_image: /content/images/authors/miccart-phen.png
 published_at: 2026-08-27
-read_time: 12
+updated_at: 2026-08-27
+read_time: 13
 ---
-If you’ve searched for “chrome storage onChanged not firing,” you’re probably seeing a listener that sometimes never runs — especially in Manifest V3 (MV3) service-worker-based extensions. This guide is a pragmatic troubleshooting playbook: short diagnostic checklist up front, multiple minimal reproducible examples (both broken and fixed), DevTools commands you can run immediately, and MV3-aware lifecycle strategies so you stop guessing and start verifying.
 
-This article keeps each diagnosis step paired with a minimal code example you can paste into the relevant extension context and a concrete DevTools action to confirm the fix. Read start-to-finish for a full workflow, or jump to the numbered checklist and run through it. The official storage API docs are the authoritative reference for exact quotas and behavior (see Sources).
+If `chrome.storage.onChanged` appears not to fire in a Manifest V3 extension, start by proving three things separately: the write succeeded, the listener was registered in the context you are inspecting, and the listener is watching the same storage area that changed. A popup that has already closed, a service worker listener registered only after asynchronous startup, a failed write caused by a quota error, or a console opened for the wrong context can all look like the same bug.
 
-## Quick overview: what chrome.storage.onChanged does (and what it doesn't)
+This playbook uses a small MV3 extension that you can load locally. It shows the canonical `(changes, areaName)` callback, a repeatable DevTools workflow, common context-specific failures, and a safe pattern that reads current state on startup instead of expecting an event to replay the past. The [Chrome Extension Development Guide](/blog/chrome-extension-development-guide) is useful background if you first need to review how an extension is structured; this article stays focused on diagnosing `onChanged`.
 
-chrome.storage.onChanged is an event that your extension can listen to so it knows when stored values change. It is useful for syncing UI state across contexts (popup, background, content scripts) and reacting to configuration updates.
+## Quick diagnosis
 
-What it does:
-- Fires when items in chrome.storage change.
-- Delivers a changes object describing old/new values and the storage area (local/sync/session).
+Run these checks in order before changing architecture:
 
-What it doesn't guarantee:
-- It does not magically keep listeners alive — a listener must exist in a running context to observe the event.
-- It is subject to context lifecycles (popups close, content scripts unload, MV3 service workers start/stop).
-- It does not replace explicit cross-context messaging patterns when you need guaranteed delivery sequencing.
+| Check | What to prove | If it fails |
+|---|---|---|
+| Write result | `storage.set()` completed without a quota or permission error | Fix the write and inspect `runtime.lastError` or the rejected Promise |
+| Listener registration | A startup log appears in the expected popup, content-script, or service-worker console | Move registration to the correct context and register it synchronously |
+| Storage area | The writer and listener agree on `local`, `sync`, or `session` | Log `areaName` and stop assuming every event came from `sync` |
+| Changed key | The changed key exists in `changes` and contains `oldValue` or `newValue` as expected | Inspect the object instead of checking the wrong property |
+| Context lifetime | The listener's context was alive when the change happened | Keep the popup open for a test, reload the page, or centralize critical handling in the service worker |
+| Current state | A fresh `get()` returns the value even when no event was observed | Treat `get()` as initialization and `onChanged` as the update signal |
 
-For authoritative behavior and API details, see the Chrome Extensions storage docs (Sources).
+## What `chrome.storage.onChanged` actually reports
 
-## How contexts affect onChanged (popup, content script, background page, MV3 service worker)
+The Storage API provides an extension-specific store for JSON-serializable values. After a successful change to a storage area, `chrome.storage.onChanged` can notify registered extension contexts. The callback receives a map of changed keys and the name of the storage area that changed [1].
 
-Different extension contexts change the reliability of onChanged:
-
-- Popup
-  - Listener persistence: short (popup closes on blur)
-  - Recommended placement: UI-only reactions; do not rely on popup for background state sync
-  - Common failure mode: popup closed before change occurs -> missed event
-
-- Content script
-  - Listener persistence: tied to the page lifecycle (reloads, navigation kill script)
-  - Recommended placement: page-specific reactions; forward important changes to background
-  - Common failure mode: page navigation or single-page app routing re-initializes script and loses listener
-
-- Background page (MV2 persistent)
-  - Listener persistence: high (long-lived)
-  - Recommended placement: central listener for state changes
-  - Common failure mode: N/A for MV2 persistent background, but MV2 event pages unload when idle
-
-- MV2 event page (non-persistent)
-  - Listener persistence: medium (woken for events but can unload)
-  - Recommended placement: central but be mindful of activation timing
-  - Common failure mode: listener not registered early enough before event dispatch
-
-- MV3 service worker (SW)
-  - Listener persistence: low (short-lived; starts for dispatched events)
-  - Recommended placement: register at top-level of service worker script
-  - Common failure mode: listeners registered inside async callbacks or after an early return; misunderstanding of SW activation timing
-
-A fuller, at-a-glance comparison table appears below.
-
-| Context | Listener persistence | Recommended placement | Common failure modes (Low/Medium/High) |
-|---|---:|---|---|
-| Popup | Low | Only for popup UI; do not rely for background sync | High: popup often closed before change |
-| Content script | Medium-Low | Page reactions; send critical changes to background | Medium: page reload/navigation loses listener |
-| Background page (MV2 persistent) | High | Central storage listener | Low: persistent context handles events |
-| MV2 event page | Medium | Register listeners at top-level of event page | Medium: event page may unload before processing |
-| MV3 service worker | Low | Register listeners at top-level; use message forwarding | High: SW lifecycle and registration timing cause missed events |
-
-## Step-by-step diagnostic checklist for “onChanged not firing”
-
-Start here — each step includes a quick verification you can perform.
-
-- [ ] 1) Verify the listener is registered in the right context (and at top-level)
-  - Action: open the DevTools console for the context and look for a startup log you add (see examples below).
-  - Verification: console shows "listener registered" at load time.
-
-- [ ] 2) Reproduce the change from a different context
-  - Action: in a different inspected context, run chrome.storage.local.set({k: 'v'}) and check consoles across contexts.
-  - Verification: the context with the registered listener logs the onChanged event.
-
-- [ ] 3) Confirm the context is actually running when the change happens
-  - Action: if popup or content script, keep the UI/page open and try the change; if MV3 SW, inspect worker console at the moment of change.
-  - Verification: you see logs in the expected context at change time.
-
-- [ ] 4) Check for race conditions (listener registration after set)
-  - Action: sequence: set -> then open context that registers listener. If you miss event, listener was registered too late.
-  - Verification: listener does not see prior changes; modify code to ensure registration happens before set or use messaging.
-
-- [ ] 5) If MV3 SW, ensure listener is a top-level statement, not inside an async callback that might never run
-  - Action: open the service worker source and confirm onChanged.addListener is at the top-level scope.
-  - Verification: console shows registration log immediately when SW starts.
-
-- [ ] 6) If using chrome.storage.sync, try chrome.storage.local while debugging
-  - Action: replace .sync with .local for reproduction to avoid sync latency.
-  - Verification: local-based changes are immediate and easier to verify.
-
-- [ ] 7) Collect reproducible minimal example and test in Incognito with only the extension loaded
-  - Action: load unpacked extension in a fresh profile to avoid other extension interference.
-  - Verification: behavior persists (or not) in isolation.
-
-## Minimal reproducible examples: common failure modes and fixes (code samples)
-
-Below are small, copy-paste examples that demonstrate typical problems and corrected versions.
-
-1) Popup closed before change (broken)
 ```js
-// popup.js (broken)
-console.log('popup startup');
-chrome.storage.onChanged.addListener(changes => {
-  console.log('popup onChanged', changes);
-});
-// User closes popup; later some other context sets storage -> popup won't be there
-```
+chrome.storage.onChanged.addListener((changes, areaName) => {
+  console.log("Storage area:", areaName);
 
-Fixed: Move listener to background/service worker and message popup when open
-```js
-// background.js (MV2) or service_worker.js (MV3) — top-level
-console.log('background/service worker startup');
-chrome.storage.onChanged.addListener(changes => {
-  console.log('bg onChanged', changes);
-  // Broadcast to open popups or sendMessage to specific tabs
-  chrome.runtime.sendMessage({type: 'storage-changed', changes});
-});
-```
-Popup receives message:
-```js
-// popup.js
-chrome.runtime.onMessage.addListener((msg) => {
-  if (msg.type === 'storage-changed') console.log('popup got', msg.changes);
+  for (const [key, change] of Object.entries(changes)) {
+    console.log(key, {
+      oldValue: change.oldValue,
+      newValue: change.newValue,
+    });
+  }
 });
 ```
 
-2) Content script reloads/navigation kills listener (broken)
-```js
-// content.js (broken)
-chrome.storage.onChanged.addListener(changes => {
-  console.log('content onChanged', changes);
-});
-// When page navigates, content script is removed; missed events while page was absent
-```
+The event is not a historical queue. It does not replay changes that happened before a context registered its listener. A popup that opens after a setting was changed must call `get()` to read the current value. A content script that was removed during navigation must also read the current state when it is injected again.
 
-Fixed: Use background as arbiter or re-register on DOM load and persist important state
-```js
-// content.js (fixed)
-function register() {
-  chrome.storage.onChanged.addListener(changes => {
-    console.log('content onChanged', changes);
-  });
+The event also does not turn a short-lived context into a persistent one. A popup normally disappears when it loses focus, and a content script disappears when its page or frame is unloaded. An MV3 service worker is event-driven and can be stopped between events. Those lifecycle facts do not mean the API is broken; they mean that critical state should be recoverable from storage and not exist only in a UI listener.
+
+## Build a minimal MV3 reproduction
+
+A minimal reproduction is more useful than debugging a complete extension with a bundler, authentication, several storage areas, and unrelated message handlers. Create a new folder with the following files.
+
+### `manifest.json`
+
+```json
+{
+  "manifest_version": 3,
+  "name": "Storage Change Reproduction",
+  "version": "1.0.0",
+  "description": "Minimal chrome.storage.onChanged test",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
 }
-register();
-window.addEventListener('beforeunload', () => {
-  // optionally flush state to background
+```
+
+The `storage` permission is required for the extension Storage API [1]. The service worker is declared by the `background.service_worker` field; `onInstalled` is an event you may listen to after installation, not a replacement for that manifest declaration.
+
+### `service-worker.js`
+
+Register the listener at the top level, before any asynchronous initialization:
+
+```js
+console.log("service worker loaded");
+
+chrome.storage.onChanged.addListener((changes, areaName) => {
+  console.log("onChanged received", {
+    areaName,
+    changedKeys: Object.keys(changes),
+    changes,
+  });
 });
 ```
 
-3) MV3 service worker registered listener incorrectly (broken)
+The startup log tells you that the inspected worker loaded. The event log tells you that this particular worker context received a storage change. Do not hide registration inside an `async init()` function that waits for a network request or another Promise before calling `addListener()`.
+
+### `popup.html`
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Storage test</title>
+  </head>
+  <body>
+    <button id="write">Write local value</button>
+    <button id="read">Read local value</button>
+    <pre id="output"></pre>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
+```
+
+### `popup.js`
+
 ```js
-// service_worker.js (broken)
+const output = document.querySelector("#output");
+
+function show(value) {
+  output.textContent = JSON.stringify(value, null, 2);
+}
+
+document.querySelector("#write").addEventListener("click", async () => {
+  try {
+    await chrome.storage.local.set({ debugFlag: Date.now() });
+    show({ ok: true, message: "local write completed" });
+  } catch (error) {
+    show({ ok: false, error: String(error) });
+  }
+});
+
+document.querySelector("#read").addEventListener("click", async () => {
+  const current = await chrome.storage.local.get("debugFlag");
+  show(current);
+});
+```
+
+Load the folder from `chrome://extensions`, enable **Developer mode**, choose **Load unpacked**, and select the folder. Then open the extension's **Service worker** inspection link and the popup's own DevTools console. Click **Write local value** while the relevant consoles are visible. The service-worker console should show `areaName: "local"` and a `debugFlag` entry.
+
+## The seven-step debugging workflow
+
+### 1. Inspect the console for the right context
+
+Chrome gives different consoles to the service worker, popup, content script, and ordinary web page. A `console.log()` in `service-worker.js` will not appear in the page console, and a popup log will disappear with the popup.
+
+Open `chrome://extensions`, enable Developer mode, locate the extension, and choose the **Service worker** or **Inspect views** link shown for that extension. For a popup, open the popup first and inspect the popup itself. For a content script, use the DevTools attached to the page and verify that you are looking at the extension context rather than the page's main world.
+
+Add an unmistakable startup log:
+
+```js
+console.log("storage listener registration reached", new Date().toISOString());
+```
+
+If that message never appears, the problem is earlier than `onChanged`: the file may not be the file loaded by the manifest, the extension may not have reloaded, or the code path may be gated behind a condition.
+
+### 2. Confirm that the listener is registered synchronously
+
+This pattern is fragile because registration waits for asynchronous work:
+
+```js
+// Avoid this for critical event registration.
 async function init() {
-  // heavy async init
-  await fetch('/some/resource'); // may delay or fail
-  chrome.storage.onChanged.addListener(changes => {
-    console.log('SW onChanged', changes);
-  });
+  await loadRemoteConfiguration();
+  chrome.storage.onChanged.addListener(handleStorageChange);
 }
+
 init();
 ```
-Problem: If an onChanged fires while the init async code hasn't completed, listener may not be registered.
 
-Fixed: register at top-level and perform async init separately
+Use top-level registration instead, and perform initialization separately:
+
 ```js
-// service_worker.js (fixed)
-console.log('SW top-level startup');
-chrome.storage.onChanged.addListener(changes => {
-  console.log('SW onChanged', changes);
-});
-// Now do async init without blocking listener registration
-(async function asyncInit(){
-  try { await fetch('/some/resource'); } catch(e){ console.warn(e); }
+function handleStorageChange(changes, areaName) {
+  if (areaName !== "local" || !changes.debugFlag) return;
+  console.log("debugFlag changed", changes.debugFlag);
+}
+
+chrome.storage.onChanged.addListener(handleStorageChange);
+
+(async () => {
+  try {
+    const initial = await chrome.storage.local.get("debugFlag");
+    console.log("initial state", initial);
+  } catch (error) {
+    console.error("initial storage read failed", error);
+  }
 })();
 ```
 
-4) Race: setting storage before listener exists (repro)
-```js
-// Run in console of tab A:
-chrome.storage.local.set({flag: true}, () => console.log('set done'));
+Top-level registration does not make a popup permanent, but it removes an avoidable race from service-worker startup and bundled code.
 
-// Then open popup which registers listener -> popup won't see the earlier set.
-```
-Fix: When you need guaranteed ordering, either set then send an explicit message to open contexts, or have the listener query current state at registration:
+### 3. Prove that the write succeeded
+
+If `set()` fails, there is no successful change for `onChanged` to report. Common causes include exceeding a storage quota, attempting to write to `storage.managed`, or handling a callback error incorrectly.
+
+With Promises:
+
 ```js
-// listener pattern
-chrome.storage.local.get('flag', (res) => {
-  // handle current state on registration
-  console.log('current', res.flag);
-});
-chrome.storage.onChanged.addListener(changes => {
-  console.log('changed', changes);
-});
+try {
+  await chrome.storage.sync.set({ preference: "compact" });
+  console.log("sync write completed");
+} catch (error) {
+  console.error("sync write rejected", error);
+}
 ```
 
-## DevTools & commands: how to observe which context fired and verify listeners
+With callbacks, read `chrome.runtime.lastError` inside the callback:
 
-Immediate DevTools steps you can run:
+```js
+chrome.storage.sync.set({ preference: "compact" }, () => {
+  if (chrome.runtime.lastError) {
+    console.error("sync write failed", chrome.runtime.lastError.message);
+    return;
+  }
+  console.log("sync write completed");
+});
+```
 
-1. Open chrome://extensions, enable Developer mode.
-2. For MV3 service worker: find your extension, click "Service worker" -> Inspect (this opens DevTools for the SW).
-   - Look at Console to see startup logs like "SW top-level startup".
-3. For MV2 background page: click "background page" -> Inspect.
-4. For popup: click the extension icon to open popup, then right-click inside popup and choose "Inspect".
-5. For content scripts: open the inspected page, open DevTools -> Sources -> Content scripts; use console there.
+A write of the same effective value may not represent a meaningful change. During testing, use a changing value such as `Date.now()` so you can distinguish “the event did not fire” from “the stored value did not change.”
 
-Useful console commands to reproduce and verify:
-- Trigger a storage change:
-  chrome.storage.local.set({testKey: Date.now()}, () => console.log('set done'));
-- Inspect current value:
-  chrome.storage.local.get(['testKey'], res => console.log('current', res));
-- Quick listener check (paste into the context you expect to listen):
-  chrome.storage.onChanged.addListener(changes => console.log('onChanged seen in context', changes));
+### 4. Check the storage area and changed key
 
-If you add clear console logs at listener registration (e.g., console.log('listener registered in SW')), you can confirm whether the listener existed before a set command. When debugging MV3, keep the SW devtools open — that prevents the worker from being garbage collected while you're stepping through registration.
+The second callback argument is the storage area name. It is a string such as `local`, `sync`, or `session`. Do not filter for `sync` while the test writes to `local`.
 
-Tip: Use Incognito + "Allow in incognito" for a clean profile; enable "service worker inspection" to see lifecycle events.
+```js
+chrome.storage.onChanged.addListener((changes, areaName) => {
+  console.log("areaName", areaName);
+  console.log("changed keys", Object.keys(changes));
 
-## Timing, lifecycle and race-condition strategies (event page unloading, MV3 SW short-lived listeners)
+  if (areaName === "local" && changes.debugFlag) {
+    const nextValue = changes.debugFlag.newValue;
+    console.log("new debugFlag", nextValue);
+  }
+});
+```
 
-Common timing traps:
-- Popup and content script unload: keep in mind these contexts are ephemeral. Do not rely on them for cross-extension coordination.
-- MV2 event pages and MV3 SW can be started to handle events, but the listener must be registered at the time the runtime starts handling the event. For MV3, always register chrome.storage.onChanged.addListener at top-level of the service worker script — that ensures the worker is listening as soon as it starts.
+The `changes` object is keyed by storage key. It is not the stored value itself. The following check is wrong when `debugFlag` is the key:
 
-Proven strategies:
-- Register listeners at top-level. Avoid registering inside async init paths that might not have completed when the event is dispatched.
-- When you need guaranteed delivery ordering, combine onChanged with an explicit get() at registration time:
-  - On registration: chrome.storage.get(keys, handleCurrent)
-  - On change: handle change events
-- For notifications to UI that may be closed, use background/service worker to maintain latest state and message popups/contents when they open.
-- For MV3, keep DevTools open during debugging; consider using chrome.alarms to wake the SW for maintenance tasks if needed.
-- When debugging race conditions, insert short delays or use manual step-through (DevTools breakpoint) to reproduce ordering.
+```js
+// Wrong: changes is not the value of debugFlag.
+if (changes === true) {
+  // This will not identify the changed key.
+}
+```
 
-## Workarounds, when to file a Chromium bug, and preventive patterns
+### 5. Test from a second context
 
-Workarounds
-- If you see intermittent missing onChanged events even after the above fixes, use explicit messaging: the code that writes storage can also chrome.runtime.sendMessage(...) to awake and notify expected contexts — this is more explicit than relying only on onChanged.
-- For MV3, if you need strong guarantees and onChanged semantics aren’t sufficient, have the changing context call a background endpoint (message) that performs both storage.set and immediate broadcast to open contexts.
+A reliable reproduction writes from one context and observes from another. For example, click the popup button to write `storage.local`, then inspect the service-worker console. If you register the listener only in the popup, close the popup, and write later, there is no popup listener available to observe that later event.
 
-## When to file a Chromium bug
-- File a bug if you can produce a minimal reproducible example that demonstrates the API failing to deliver onChanged to a top-level-registered listener in a running context (with DevTools open and logs proving listener registration). Include reproduction steps, screenshots of DevTools console, and a minimal extension ZIP.
-- Do not file a bug for expected lifecycle behavior (e.g., popup closed => no listener); these are by design.
+For a content script, reload or navigate the page and register the listener again when the script is injected. For a service worker, keep its DevTools open during a short debugging session so startup and termination logs are visible, but do not mistake an open DevTools window for a production lifecycle guarantee.
 
-Preventive patterns
-- Centralize critical listeners in background/service-worker and treat popups/content scripts as ephemeral UIs.
-- On listener registration always fetch current state (get) to avoid relying on missed past events.
-- Use local storage while developing to avoid sync delays; switch to sync only when you’ve verified logic and are ready to handle its latencies and quotas.
+### 6. Read current state at startup
 
-Pros/cons: using local vs sync when debugging onChanged issues
+A listener handles future changes; it is not a substitute for initialization. Use a small helper that reads the current value and then responds to later updates:
 
-Pros of chrome.storage.local when debugging:
-- Immediate, local writes — no server sync delays
-- Easier to reproduce events across contexts in a single device
-- Fewer rate/propagation quirks
+```js
+const storageArea = chrome.storage.local;
 
-Cons of chrome.storage.local:
-- Not synchronized across devices (not relevant for debugging)
+async function loadCurrentSettings() {
+  const { debugFlag = false } = await storageArea.get("debugFlag");
+  applyDebugMode(debugFlag);
+}
 
-Pros of chrome.storage.sync:
-- Replicates across signed-in devices (useful for real user scenarios)
+function applyDebugMode(enabled) {
+  console.log("debug mode", enabled ? "enabled" : "disabled");
+}
 
-Cons of chrome.storage.sync when debugging:
-- Potential propagation latency and rate-limiting can make onChanged appear delayed or intermittent during tests
-- Quotas on sync may throttle rapid test writes — use local to avoid these while reproducing
+chrome.storage.onChanged.addListener((changes, areaName) => {
+  if (areaName !== "local" || !changes.debugFlag) return;
+  applyDebugMode(Boolean(changes.debugFlag.newValue));
+});
 
-## Frequently Asked Questions
-**Q: Does onChanged fire in the context that made the change?**
-A: In practice, contexts that are running and have registered listeners will receive onChanged events. To be safe, design so that the writing context also handles any immediate UI updates or explicitly queries storage after a set.
+loadCurrentSettings().catch((error) => {
+  console.error("could not load settings", error);
+});
+```
 
-**Q: My MV3 service worker had onChanged at top-level but still missed events. Why?**
-A: Common causes: the SW was not started at the time of change, or logs show registration happening too late due to bundling/transpilation. Verify top-level placement, keep DevTools open, and reproduce with simple top-level registration.
+This pattern also protects a newly opened popup or newly injected content script from assuming it saw every earlier event.
 
-**Q: Can I rely on chrome.storage.sync for immediate cross-context sync?**
-A: No — sync can have propagation delays and rate limits. Use chrome.storage.local for immediate debugging and local coordination.
+### 7. Isolate sync, bundling, and extension conflicts
 
-**Q: How do I test if a listener exists right now?**
-A: Add a small console.log at registration time (e.g., console.log('listener registered')). Open the context’s DevTools and confirm that message appears when the context starts.
+First reproduce with `chrome.storage.local` on one device. Once the listener works locally, test `sync` separately. `storage.sync` has its own quota and synchronization behavior; a sync test can introduce a second variable that is not present in a local test [1].
 
-**Q: Should I always centralize storage listeners in background/service worker?**
-A: Yes for critical state. UI contexts (popup, content script) should be subscribers and fetch current state when they open.
+If the minimal unpacked extension works but the real extension does not, compare the built service-worker file with the source. Confirm that the build includes the listener at top level and that no initialization wrapper, conditional import, or early return prevents it from executing. Then test in a clean Chrome profile or Incognito window with the extension allowed there. This separates extension code from profile state and conflicts with other extensions.
 
-**Q: Is there an API to list registered listeners?**
-A: No public API exposes listener lists. Use explicit console logs on registration or design your own ready/heartbeat messages.
+## Common failures by context
 
-**Q: What if other extensions interfere?**
-A: Reproduce in a clean profile or Incognito with only your extension enabled to rule out interference.
+| Context | What is usually happening | Reliable design |
+|---|---|---|
+| Popup | The popup closed before the later write, so its listener no longer exists | Read current state when the popup opens; use a longer-lived context for critical processing |
+| Content script | Navigation, frame replacement, or SPA changes removed and recreated the script | Register on every injection and fetch current state after registration |
+| MV3 service worker | Registration is delayed, the wrong worker file is loaded, or the wrong DevTools console is being inspected | Register at top level, inspect the worker directly, and persist important state in `chrome.storage` |
+| `storage.sync` | The write failed, the wrong area was filtered, or sync-specific quotas complicate the test | Prove the write result, log `areaName`, and reproduce with `local` first |
+| `storage.managed` | The area is read-only for the extension | Read it; do not attempt to write to it |
 
-**Q: Can alarms help keep MV3 SW alive to avoid missing events?**
-A: Alarms can wake the SW for scheduled tasks but are not a substitute for correct event registration patterns. Use alarms judiciously.
+The important distinction is between **missing a transient notification** and **losing the data**. Storage should be the source of truth. A UI can refresh from storage when it starts, while `onChanged` keeps an already-running context responsive.
+
+## When explicit messaging is better
+
+`onChanged` is appropriate for reacting to storage changes, but it does not promise that a closed UI will receive a live update. If a service worker must notify an open popup or tab immediately, use an explicit message in addition to storage and handle the possibility that no receiver is currently open.
+
+```js
+chrome.storage.onChanged.addListener((changes, areaName) => {
+  if (areaName !== "local" || !changes.debugFlag) return;
+
+  chrome.runtime.sendMessage({
+    type: "settings-changed",
+    debugFlag: changes.debugFlag.newValue,
+  }).catch(() => {
+    // No popup or other receiver may be open. Storage remains the source of truth.
+  });
+});
+```
+
+For callback-based `sendMessage`, inspect `chrome.runtime.lastError` rather than treating “no receiving end” as a storage failure. The receiver should still call `get()` when it opens; an explicit message is an optimization for a live UI, not a replacement for persisted state.
+
+## A compact regression test
+
+After fixing the original bug, repeat this test after every manifest, bundler, or storage-area change:
+
+1. Reload the unpacked extension from `chrome://extensions`.
+2. Open the service-worker DevTools console and confirm the top-level registration log.
+3. Open the popup and click the write button, or run `chrome.storage.local.set({debugFlag: Date.now()})` in the extension context.
+4. Confirm that the service-worker log contains `areaName: "local"` and the expected key.
+5. Close and reopen the popup, then use `get("debugFlag")` to confirm that current state is still available.
+6. Repeat with `storage.sync` only after the local case works.
+7. If the result changes after bundling, compare the generated worker and the loaded worker from the **Service worker** inspection link.
+
+If the minimal reproduction works but the production extension still fails, reduce the production code until one change explains the difference. Do not file a Chromium issue until a small extension demonstrates that a top-level listener in a running, correctly inspected context fails to receive a successful change.
+
+## Frequently asked questions
+
+### Does `onChanged` fire in the context that made the change?
+
+A running extension context with a registered listener can receive the event, including the context that writes the value. Do not use that expectation as a substitute for testing: a popup can close immediately, a content script can be removed, and a listener in the wrong console may appear not to run. The writer should also handle its own immediate UI update or read the stored value after writing.
+
+### Why does `onChanged` not replay a value when my popup opens?
+
+Because the event reports changes, not a history of changes. When the popup opens, call `chrome.storage.local.get()` or the appropriate storage area's `get()` method to initialize its state, then use `onChanged` for updates that occur while the popup is alive.
+
+### Why does my service worker listener work only after I open DevTools?
+
+Opening DevTools makes the worker easier to observe and can change how long it remains active during debugging, but it should not be the production fix. Check that the listener is in the worker file declared by the manifest, registered at top level, and that the write succeeded. Add startup logs and test the minimal reproduction after reloading the extension.
+
+### Does the listener require a separate permission?
+
+The extension must declare the `storage` permission to use the extension Storage API [1]. The permission does not keep a popup or service worker permanently alive, and it does not make a failed quota write succeed.
+
+### Should I use `local`, `sync`, or `session` while debugging?
+
+Use `local` first to reduce variables and test the listener on one device. Move to `sync` when the local case works and you need synchronized settings, then test quotas and propagation separately. Use `session` only when in-memory extension-session state is appropriate; it is not a replacement for persistent settings [1].
+
+### When should I use `chrome.runtime.sendMessage` too?
+
+Use explicit messaging when a live popup or tab needs an immediate notification. Keep the value in `chrome.storage` and make the receiver fetch current state when it starts, because the receiver may be closed when the message is sent.
 
 ## Conclusion
 
-If chrome storage onChanged not firing is blocking you, follow the checklist: confirm listener registration, reproduce changes from another context, watch the right DevTools console, and move persistent listeners out of short-lived contexts. For MV3, register onChanged at the service worker’s top level and prefer explicit messaging + get() patterns when you need ordering guarantees. Use chrome.storage.local while debugging to avoid sync latency, and file a Chromium bug only once you’ve produced a minimal reproducible example proving a top-level listener didn’t receive an event.
+When `chrome.storage.onChanged` is not firing in MV3, do not begin by adding delays or changing Manifest versions. Prove the write, inspect the correct extension console, register the listener synchronously at top level, log `areaName` and the changed keys, and run the same test from a second context. Then initialize each short-lived UI with `get()` and use `onChanged` for later updates.
 
-Sources
-- Chrome Extensions storage API documentation: https://developer.chrome.com/docs/extensions/reference/api/storage
+This approach distinguishes an API or quota error from a lifecycle misunderstanding and leaves the extension resilient even when a popup closes or a content script is recreated. The article remains a troubleshooting guide, not a claim that every missed notification is a Chrome bug.
 
-If you want, paste one failing minimal example (manifest + small JS) and I’ll point to the exact line that needs changing and a fixed variant you can drop into your extension.
+## References
 
-Explore more [Chrome extension guides](/blog) on ExtensionTo.
+[1] [Chrome for Developers — chrome.storage API](https://developer.chrome.com/docs/extensions/reference/api/storage)
+
+[2] [Chrome for Developers — Message passing](https://developer.chrome.com/docs/extensions/develop/concepts/messaging)
+
+[3] [Chrome for Developers — Debug extensions](https://developer.chrome.com/docs/extensions/get-started/tutorial/debug)
+
+[4] [Chrome for Developers — Extension service worker lifecycle](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle)
