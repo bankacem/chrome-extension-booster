@@ -168,10 +168,15 @@ def _deterministic_checks(state: dict) -> list[str]:
     supplied_urls = [str(s) for s in source_requirements if re.match(r"^https?://", str(s).strip())]
     sensitive_topic = re.search(r"\b(storage|quota|permission|permissions|manifest|api|privacy|security)\b", body, re.IGNORECASE)
     exact_quantity = re.search(r"\b\d+(?:\.\d+)?\s*(?:kb|mb|gb|bytes?|%|seconds?|minutes?|hours?)\b", body, re.IGNORECASE)
-    if sensitive_topic and exact_quantity and not supplied_urls:
-        issues.append(
-            "body contains an exact technical quantity in a sensitive topic without a source URL in the brief"
-        )
+    if sensitive_topic and exact_quantity:
+        if not supplied_urls:
+            issues.append(
+                "body contains an exact technical quantity in a sensitive topic without a source URL in the brief"
+            )
+        elif not any(url in body for url in supplied_urls):
+            issues.append(
+                "body contains an exact technical quantity but does not cite any supplied source URL"
+            )
 
     # Brief-compliance check: the Strategy Agent's required_sections is
     # supposed to be a concrete checklist, not a suggestion — verify each one

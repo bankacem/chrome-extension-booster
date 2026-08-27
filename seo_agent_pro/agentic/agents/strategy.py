@@ -126,10 +126,19 @@ Decide and return JSON:
     raw_sources = strategy.get("source_requirements", []) or []
     if not isinstance(raw_sources, list):
         raw_sources = []
-    model_sources = [str(s).strip() for s in raw_sources if str(s).strip()]
+    observed_urls = {
+        str(result.get("url", "")).strip()
+        for result in (competitor_data.get("competitor_snapshots", []) or [])
+        if isinstance(result, dict) and str(result.get("url", "")).strip()
+    }
+    model_sources = [
+        str(s).strip() for s in raw_sources
+        if str(s).strip() and str(s).strip() in observed_urls
+    ]
     inferred_sources = _official_source_hints(keyword)
-    # Put deterministic official hints first, then retain model-proposed
-    # sources. Deduplicate without trusting arbitrary prose as a URL.
+    # Put deterministic official hints first, then retain only model-proposed
+    # URLs that actually appeared in the observed search snapshot. This makes
+    # it impossible for a free-form model response to smuggle in a guessed URL.
     merged_sources: list[str] = []
     for source in inferred_sources + model_sources:
         if source not in merged_sources:
