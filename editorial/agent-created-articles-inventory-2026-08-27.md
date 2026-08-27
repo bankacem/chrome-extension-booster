@@ -55,3 +55,9 @@ The article was refined in place without changing its search intent. The revisio
 The title and metadata were made more natural without keyword stuffing. The URL slug was kept stable because the article is not published. FAQ remains visible for readers, but no FAQPage or HowTo markup was added solely to pursue a guaranteed Google rich result: Google Search no longer displays those promised rich-result formats as described in the previous analysis. One internal link points to the published Chrome Extension Development Guide; links to other draft articles were intentionally not added.
 
 The article remains `status: draft`, excluded from `articles-index.json` and Sitemap. The changes require human technical review before merge, especially the code examples and the exact Chrome DevTools labels visible in the user's current Chrome version.
+
+## Validation after refinement
+
+The refined branch passed `npm run typecheck`, `npm run build`, `npm run test:seo`, `npm run test:performance`, `npm run test:links`, and `git diff --check`. The SEO smoke test reported 810 Sitemap URLs, 763 English articles, 9 extensions, and 30 localized articles in the built baseline; the new article remained excluded because its frontmatter status is `draft`. The performance budget passed, and the link smoke test scanned 7,344 links with no redirect links beyond the six documented exceptions.
+
+After the build, generated image/index side effects were restored. The worktree contains only the intended article and this audit file. The branch has not been merged, and PR #404 remains open for human review.
