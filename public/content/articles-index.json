@@ -1007,7 +1007,7 @@
     "id": "4ae4896f-122c-445a-93a6-8257bf656c59",
     "title": "Best Chrome Extensions for Accessibility: Tools by Need",
     "slug": "best-chrome-extensions-for-accessibility-boost-your-browsing-experience",
-    "description": "Compare Chrome accessibility extensions and built-in features for reading, contrast, keyboard navigation, captions, and image descriptions, with practical limits and privacy checks.",
+    "description": "Find Chrome accessibility tools by need: reading, contrast, keyboard navigation, captions, and image descriptions, with setup and privacy checks.",
     "meta_description": "Find Chrome accessibility tools by need: reading, contrast, keyboard navigation, captions, and image descriptions, with setup and privacy checks.",
     "excerpt": "Compare Chrome accessibility extensions and built-in features for reading, contrast, keyboard navigation, captions, and image descriptions, with practical limits and privacy checks.",
     "published_at": "2026-08-04T00:00:00.000Z",
@@ -13632,7 +13632,7 @@
     "id": "f4725c1c-fa69-4656-94d4-c1bdd6d3903d",
     "title": "Ghostery for Chrome: What It Blocks, How to Use It, and Its Limits",
     "slug": "unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
-    "description": "Learn what Ghostery for Chrome can block, how to install it safely, how to read its tracker panel, and where an ad and tracker blocker stops short of being antivirus or a VPN.",
+    "description": "Learn what Ghostery for Chrome blocks, how to install and adjust protection for a site, what its tracker panel shows, and where its limits are.",
     "meta_description": "Learn what Ghostery for Chrome blocks, how to install and adjust protection for a site, what its tracker panel shows, and where its limits are.",
     "excerpt": "Learn what Ghostery for Chrome can block, how to install it safely, how to read its tracker panel, and where an ad and tracker blocker stops short of being antivirus or a VPN.",
     "published_at": "2026-03-05T09:00:00.344+00:00",
@@ -13643,7 +13643,11 @@
     "reading_time": 8,
     "read_time": 8,
     "views": 0,
-    "tags": [],
+    "tags": [
+      "privacy",
+      "ad blockers",
+      "Chrome extensions"
+    ],
     "keywords": [
       "chrome ghostery extension",
       "Ghostery for Chrome",
@@ -15838,7 +15842,7 @@
     "views": 2,
     "tags": [
       "ad blocker",
-      "Chrome extensions",
+      "chrome extensions",
       "ad blocking 2026"
     ],
     "keywords": [
