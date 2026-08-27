@@ -32,3 +32,16 @@ Source: https://developer.chrome.com/docs/extensions/reference/api/runtime
 ## Editing decisions
 
 The refinement should preserve the article's troubleshooting intent, correct `Background Worker`, avoid generic `skipWaiting()` advice, replace unsupported DevTools steps with verified extension-specific steps, add a compact diagnostic matrix and two small code examples, and keep the article as `draft` until human review.
+
+## Search-intent and competitor observations
+
+A current result set for the target query included Chrome's official debugging tutorial, a Plasmo guide, Stack Overflow discussions, Chromium documentation, and Chrome DevTools background-service documentation. The Plasmo page separates debugging extension pages, the extension background service worker, content scripts, and performance. Its practical gap is that it uses older/generic wording and does not provide a rigorous symptom-to-evidence workflow for MV3.
+
+The refined article will differentiate itself by narrowing the intent to **debugging an Extension Service Worker**, not general browser-extension development. Its information gain will be a diagnostic matrix mapping registration errors, missing events, lost state, and message failures to the correct extension surface and next verification step. It will cite Chrome's official tutorial for `Inspect views`, the Errors view, and status controls, while treating competitor/community pages as structural evidence only.
+
+The following official sources are approved for the article's References section:
+
+- https://developer.chrome.com/docs/extensions/get-started/tutorial/debug
+- https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle
+- https://developer.chrome.com/docs/extensions/reference/api/runtime
+- https://developer.chrome.com/docs/extensions/reference/api/storage

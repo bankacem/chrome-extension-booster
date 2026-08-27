@@ -22,3 +22,11 @@ A diagnostic workflow that maps each symptom to the correct Chrome extension sur
 ## Publication boundary
 
 No publication, indexing request, Sitemap update, or automatic learning lesson is allowed in this refinement. The article remains `status: draft` until human review and all repository gates pass.
+
+## After refinement: decisions and checks to run
+
+The draft now uses a symptom-to-evidence diagnostic matrix rather than a generic list of performance advice. It corrects `Background Worker` to the current `Inspect views` workflow, removes generic `skipWaiting()` guidance, separates `onMessage` from `onMessageExternal`, explains the extension-worker registration field, clarifies the loss of global variables and the absence of Web Storage in extension service workers, and adds small code examples for lifecycle logging, asynchronous responses, sender validation, and state persistence.
+
+The FAQ and checklist are unique to this article. The References section points only to official Chrome documentation. No competitor wording, personal testing claim, invented benchmark, fake screenshot, or unsupported quota number was added. The frontmatter remains `status: draft`, and no index, Sitemap, publication, or Google indexing action is allowed in this branch.
+
+The article has no new screenshot asset in this refinement. The featured image remains the site's existing `/og-image.png` placeholder; adding a visual would be a separate, explicitly reviewed asset task so that no fabricated DevTools screenshot is introduced.
