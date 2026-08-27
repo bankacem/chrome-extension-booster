@@ -18000,18 +18000,18 @@
   },
   {
     "id": "ef8c944b-c787-4a60-ab4b-fc98028d8c37",
-    "title": "How to Create Complex Excel Formulas Easily: A Practical Method",
+    "title": "How to Create Complex Excel Formulas Easily: A Step-by-Step Method",
     "slug": "how-to-create-complex-excel-formulas-easily",
-    "description": "Build complex Excel formulas with a clear step-by-step method using helper cells, XLOOKUP, LET, FILTER, and reliable debugging techniques.",
-    "meta_description": "Build complex Excel formulas with a clear step-by-step method using helper cells, XLOOKUP, LET, FILTER, and reliable debugging techniques.",
-    "excerpt": "Learn a repeatable method for building advanced Excel formulas: define the output, test each condition, choose the right function, and debug the result.",
+    "description": "Turn a complicated Excel requirement into a formula you can test, explain, and maintain with a four-stage method using XLOOKUP, LET, FILTER, and IFS.",
+    "meta_description": "Turn a complicated Excel requirement into a formula you can test, explain, and maintain with a four-stage method using XLOOKUP, LET, FILTER, and IFS.",
+    "excerpt": "Turn a complicated Excel requirement into a formula you can test, explain, and maintain with a four-stage method using XLOOKUP, LET, FILTER, and IFS.",
     "published_at": "2026-01-21T08:00:01.516+00:00",
     "category": "Spreadsheets & Productivity",
     "author": "James Mitchell",
-    "image_url": "/content/images/how-to-create-complex-excel-formulas-easily/featured.webp",
-    "featured_image": "/content/images/how-to-create-complex-excel-formulas-easily/featured.webp",
-    "reading_time": 9,
-    "read_time": 9,
+    "image_url": "/content/images/how-to-create-complex-excel-formulas-easily/featured.jpg",
+    "featured_image": "/content/images/how-to-create-complex-excel-formulas-easily/featured.jpg",
+    "reading_time": 10,
+    "read_time": 10,
     "views": 3,
     "tags": [
       "Excel formulas",
@@ -18021,10 +18021,12 @@
     "keywords": [
       "how to create complex Excel formulas easily",
       "advanced Excel formulas",
-      "Excel formula troubleshooting"
+      "Excel formula troubleshooting",
+      "Excel formula examples",
+      "Excel formula compatibility"
     ],
     "canonicalPath": "/blog/how-to-create-complex-excel-formulas-easily",
-    "updated_at": "2026-08-22T07:44:00+00:00"
+    "updated_at": "2026-08-27T03:55:00+00:00"
   },
   {
     "id": "3f068c0c-dda0-4b58-a2ba-b3e07608024b",
