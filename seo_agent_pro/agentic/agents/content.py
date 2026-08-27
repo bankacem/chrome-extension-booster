@@ -207,6 +207,11 @@ Rules:
                 body_lines[idx] = f"## {stripped}"
                 break
     body = "\n".join(body_lines).strip()
+    # Some compatible models prefix a TOC bullet or the first table row with
+    # an H2 marker ("## -" or "## |"). Normalize only these unambiguous
+    # malformed forms so a harmless formatting error does not consume a full
+    # revision attempt; the Evaluator still checks for any remaining cases.
+    body = re.sub(r"(?m)^#{1,6}\s+([-*+]\s+|\|)", r"\1", body)
 
     word_count = len(body.split())
     print(c("green", f"  ✓ draft complete — {word_count} words, title: \"{title}\""))
