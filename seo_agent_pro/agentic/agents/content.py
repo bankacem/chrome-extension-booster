@@ -132,6 +132,15 @@ Rules:
   or security claims require a real source URL from Source requirements. If
   no such URL is supplied, state the limitation qualitatively and direct the
   reader to current official documentation instead of guessing.
+- For Chrome storage, keep the documented distinction precise: local and
+  session are not the same as web localStorage; sync has both total and
+  per-item limits; write-rate limits must not be guessed. If the official
+  source is supplied, reproduce its values faithfully and do not reverse
+  total versus per-item quotas.
+- For Manifest V3 service workers, distinguish extension service workers from
+  page service workers. Do not present skipWaiting(), message queuing, or a
+  particular DevTools label as a universal fix unless the supplied official
+  source supports that exact guidance; explain lifecycle behavior cautiously.
 - If Source requirements contain real URLs, use only those URLs in a short
   Sources section; never manufacture citations or URLs from memory.
 - Markdown discipline: use '# ' for exactly one H1 and '## ' for sections.
