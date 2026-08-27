@@ -57,6 +57,11 @@ class QualityGateTests(unittest.TestCase):
         state["strategy"]["source_requirements"] = ["https://developer.chrome.com/docs/extensions/reference/api/storage"]
         self.assertTrue(any("likely inaccurate Chrome storage claim" in issue for issue in _deterministic_checks(state)))
 
+    def test_obsolete_local_default_and_write_limit_are_rejected(self) -> None:
+        state = self.base_state("## Storage quota\nlocal is 5MB by default and sync permits a maximum of 20 writes per minute.")
+        self.assertTrue(any("obsolete default quota" in issue for issue in _deterministic_checks(state)))
+        self.assertTrue(any("unsupported per-minute" in issue for issue in _deterministic_checks(state)))
+
     def test_table_row_prefixed_as_heading_is_rejected(self) -> None:
         state = self.base_state("## | Area | Limit |\n|---|---|\n| local | documented |\n")
         self.assertTrue(any("table row incorrectly" in issue for issue in _deterministic_checks(state)))

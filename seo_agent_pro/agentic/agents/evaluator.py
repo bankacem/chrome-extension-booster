@@ -164,7 +164,8 @@ def _deterministic_checks(state: dict) -> list[str]:
     storage_quota_traps = (
         (r"\b(?:100\s*KB|102[, ]?400\s*bytes?)\s+per\s+item\b", "sync quota is incorrectly presented as 100 KB per item"),
         (r"\b512[, ]?000\s*bytes?\b", "sync quota uses an unsupported 512,000-byte total"),
-        (r"\b(?:180|10)\s+writ(?:es|e operations?)\s+per\s+minute\b", "sync write limit uses an unsupported per-minute value"),
+        (r"\b(?:180|10|20)\s+writ(?:es|e operations?)\s+per\s+minute\b", "sync write limit uses an unsupported per-minute value"),
+        (r"\b(?:5\s*MB|5MB)\s+by\s+default\b", "storage.local uses an obsolete default quota without a Chrome-version qualifier"),
         (r"\blocal\b[^.\n]{0,100}\b(?:unlimited|no size limit)\b", "storage.local is presented as unlimited without the documented permission caveat"),
         (r"\bsession\b[^.\n]{0,100}\b(?:unlimited|no size limit)\b", "storage.session is presented as unlimited"),
     )
