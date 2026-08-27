@@ -49,7 +49,17 @@ def run(state: dict) -> dict:
 ⚠️ THIS IS A REVISION (attempt {revision_count + 1}). The previous draft was
 REJECTED by the Evaluator for these specific reasons — fix every one of
 them in this rewrite, don't just repeat the same draft:
-{chr(10).join(f'- {i}' for i in issues)}"""
+{chr(10).join(f'- {i}' for i in issues)}
+
+NON-NEGOTIABLE REVISION CHECKS:
+- If the Evaluator mentions a checklist, add a visible section with at least
+  four concrete lines written exactly as '- [ ] action to verify'.
+- If the Evaluator mentions source evidence, include only the supplied official
+  URLs in a Sources section and attach the relevant exact claim to its source.
+- If a source URL is not supplied for an exact quota, limit, version, price, or
+  measurement, remove the exact value and use cautious qualitative wording.
+- If the Evaluator mentions heading format, use plain Markdown headings only;
+  never write a list marker after '#', such as '## - [text](#anchor)'."""
 
     _step(f"Writing {'(revision ' + str(revision_count + 1) + ')' if revision_count else '(first draft)'} — {length} words")
 
@@ -132,6 +142,9 @@ Rules:
   organization and explanation, not invented data
 - If competitor-gap opportunities are provided, address them with useful sections or checklists. Treat competitor snippets and headings as hypotheses, do not copy competitor wording, and never claim a product fact without a verifiable source.
 - Do NOT include any markdown links or images unless you have a real, complete URL for them — the Optimizer agent adds real internal links afterward
+- Before finishing, perform a private compliance check: every required H2
+  exists, every requested checklist has at least four '- [ ]' task boxes, and
+  every exact sensitive claim is backed by one of the supplied source URLs.
 - End on a complete sentence — never stop mid-sentence or mid-word{revision_note}"""
 
     print(c("dim", "  " + "─" * 56))
