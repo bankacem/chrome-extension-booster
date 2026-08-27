@@ -8,6 +8,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from llm_router import call_json, c
+from agentic import memory_store
 
 
 def _step(label: str) -> None:
@@ -19,6 +20,7 @@ def run(state: dict) -> dict:
     model = state["active_model"]
     competitor_data = state.get("competitor_data", {})
     articles_written = state.get("articles_written", 0)
+    relevant_lessons = memory_store.load_relevant_lessons(keyword)
 
     _step("Briefing")
 
@@ -73,6 +75,9 @@ what our critic flagged on them last time — avoid repeating those issues):
 {json.dumps(competitor_data, indent=2)}
 
 Articles already published: {articles_written}
+
+Relevant accumulated lessons:
+{relevant_lessons}
 
 Decide and return JSON:
 {{

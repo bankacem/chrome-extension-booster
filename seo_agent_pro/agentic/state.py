@@ -23,6 +23,8 @@ class EvaluationResult(TypedDict, total=False):
 class GraphState(TypedDict, total=False):
     # ── inputs ──
     keyword: str
+    title: str
+    slug: str
     niche: str
     articles_written: int           # from long-term memory, at run start
 
