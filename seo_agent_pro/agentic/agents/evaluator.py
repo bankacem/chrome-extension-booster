@@ -154,6 +154,24 @@ def _deterministic_checks(state: dict) -> list[str]:
     # breaks the visible hierarchy and table-of-contents rendering.
     if re.search(r"^#{1,6}\s+[-*+]\s+", body, re.MULTILINE):
         issues.append("body contains a list marker inside a Markdown heading")
+    if re.search(r"^#{1,6}\s+\|", body, re.MULTILINE):
+        issues.append("body contains a Markdown table row incorrectly prefixed as a heading")
+
+    # Known Chrome storage quota traps observed in the first Bluesminds pilot.
+    # These are narrow domain guards, not a substitute for source review: they
+    # reject common reversed/obsolete values so a cited-but-wrong table cannot
+    # pass merely because it includes an official URL somewhere else.
+    storage_quota_traps = (
+        (r"\b(?:100\s*KB|102[, ]?400\s*bytes?)\s+per\s+item\b", "sync quota is incorrectly presented as 100 KB per item"),
+        (r"\b512[, ]?000\s*bytes?\b", "sync quota uses an unsupported 512,000-byte total"),
+        (r"\b(?:180|10)\s+writ(?:es|e operations?)\s+per\s+minute\b", "sync write limit uses an unsupported per-minute value"),
+        (r"\blocal\b[^.\n]{0,100}\b(?:unlimited|no size limit)\b", "storage.local is presented as unlimited without the documented permission caveat"),
+        (r"\bsession\b[^.\n]{0,100}\b(?:unlimited|no size limit)\b", "storage.session is presented as unlimited"),
+    )
+    if re.search(r"\b(storage|quota|sync|local|session)\b", body, re.IGNORECASE):
+        for pattern, message in storage_quota_traps:
+            if re.search(pattern, body, re.IGNORECASE):
+                issues.append(f"likely inaccurate Chrome storage claim: {message}")
 
     # If the strategy asked for a checklist, require actual task boxes rather
     # than a paragraph that merely mentions the word checklist.

@@ -52,8 +52,17 @@ class QualityGateTests(unittest.TestCase):
         hints = _official_source_hints("Chrome extension permissions guide")
         self.assertIn("https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions", hints)
 
+    def test_storage_quota_trap_is_rejected(self) -> None:
+        state = self.base_state("## Storage permissions\nSync allows 100 KB per item.")
+        state["strategy"]["source_requirements"] = ["https://developer.chrome.com/docs/extensions/reference/api/storage"]
+        self.assertTrue(any("likely inaccurate Chrome storage claim" in issue for issue in _deterministic_checks(state)))
+
+    def test_table_row_prefixed_as_heading_is_rejected(self) -> None:
+        state = self.base_state("## | Area | Limit |\n|---|---|\n| local | documented |\n")
+        self.assertTrue(any("table row incorrectly" in issue for issue in _deterministic_checks(state)))
+
     def test_sensitive_exact_quantity_can_use_supplied_source(self) -> None:
-        state = self.base_state("## Storage permissions\nThis API allows 100 KB of data.\nSources: https://developer.chrome.com/docs/extensions/reference/api/storage")
+        state = self.base_state("## Storage permissions\nThe documented storage quota is 10 MB.\nSources: https://developer.chrome.com/docs/extensions/reference/api/storage")
         state["strategy"]["source_requirements"] = ["https://developer.chrome.com/docs/extensions/reference/api/storage"]
         self.assertFalse(any("exact technical quantity" in issue for issue in _deterministic_checks(state)))
 
