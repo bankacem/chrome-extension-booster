@@ -1,309 +1,168 @@
 ---
-seo_title: "Windscribe Chrome Extension Free Review 2026"
+seo_title: "Windscribe Chrome Extension Review: Free Plan, Features, and Limits (2026)"
+id: vpn-article10-windscribe-review
+title: "Windscribe Chrome Extension Review: Free Plan, Features, and Limits (2026)"
 slug: vpn-article10-windscribe-review
+excerpt: "Considering Windscribe for Chrome? Review the free plan, browser features, permissions, privacy claims, performance limits, and what the extension cannot protect."
+featured_image: /content/images/vpn-article10-windscribe-review/featured.jpg
+category: "Security & Privacy"
+tags:
+  - Windscribe
+  - Chrome VPN extension
+  - browser privacy
+  - VPN review
+keywords:
+  - Windscribe Chrome extension review
+  - Windscribe free Chrome extension
+  - Windscribe browser extension features
+  - Windscribe Chrome VPN limits
+  - Windscribe extension vs VPN app
+meta_description: "Considering Windscribe for Chrome? Review the free plan, browser features, permissions, privacy claims, performance limits, and what the extension cannot protect."
+faq:
+  - question: "Does the Windscribe Chrome extension protect my whole device?"
+    answer: "Do not assume that it does. The Chrome extension manages browser traffic and browser controls; whole-device coverage is a separate use case for a Windscribe desktop or mobile app. Check Windscribe's current documentation for the exact mode you are using."
+  - question: "Does the Windscribe browser extension use R.O.B.E.R.T.?"
+    answer: "Windscribe's support article says the browser extension does not currently use R.O.B.E.R.T., its server-side DNS blocker. The extension uses browser-level blocking based on uBlock and custom lists, so those features should not be described as the same system."
+  - question: "How much data does Windscribe offer for free?"
+    answer: "Windscribe's free-plan page says users receive 10 GB per month when they provide an email address, or 2 GB without one, plus access to 10 country servers and unlimited devices. Plan terms can change, so verify them on Windscribe before signing up."
+  - question: "Is the Windscribe Chrome extension enough for a full VPN setup?"
+    answer: "It can be enough for browser-focused use, such as connecting Chrome through a selected location and using the extension's browser controls. It is not automatically a replacement for a device VPN app when other applications or system traffic also need protection."
+  - question: "How should I evaluate Windscribe's privacy claims?"
+    answer: "Read Windscribe's current privacy policy, note its date, compare the stated data practices with the Chrome Web Store disclosure, and avoid treating a company policy as independent certification. Also review the publisher, permissions, and update information before installing."
 status: published
 published_at: '2026-08-03'
-featured_image: /content/images/vpn-article10-windscribe-review.jpg
-image_url: /content/images/vpn-article10-windscribe-review.jpg
-title: >-
-  Windscribe Chrome Extension Free Review 2026: The Build-Your-Own VPN That Gets
-  It Right
-meta_description: "After four weeks of daily use, here's how Windscribe's free Chrome extension lets you build your own VPN plan, and whether it's actually worth setting up."
-description: >-
-  Windscribe Chrome Extension Free Review 2026: The Build-Your-Own VPN That Gets
-  It Right
-category: "Security & Privacy"
+author: Admin
+views: 0
+read_time: 8
+updated_at: '2026-08-27T03:10:00.000+00:00'
+description: "Considering Windscribe for Chrome? Review the free plan, browser features, permissions, privacy claims, performance limits, and what the extension cannot protect."
 ---
 
-**Last Updated:** June 3, 2026 | **Reading Time:** 9 minutes | **Tested:** 4 weeks daily use
+## Quick answer: is Windscribe worth considering for Chrome?
 
----
+Windscribe is worth considering when you want a **browser-focused VPN/proxy extension** with a free tier and built-in browser privacy controls. Windscribe says its free plan includes 10 GB per month with email confirmation, or 2 GB without one, access to 10 country servers, and unlimited devices. Those are provider-stated plan terms, not an independent test. [1]
 
-## Table of Contents
+The important limitation is scope. A Chrome extension changes how Chrome handles its browser connection; it should not automatically be treated as a full-device VPN for every application. Windscribe also distinguishes its browser blocker from R.O.B.E.R.T.: its support documentation says the extension currently uses uBlock and custom browser lists, while R.O.B.E.R.T. is the server-side/DNS-level blocker. [2] For a general installation walkthrough, see our [guide to adding a VPN extension to Chrome](/blog/vpn-extension-to-chrome-1).
 
-1. [Quick Verdict: The Most Flexible Free VPN](#quick-verdict-the-most-flexible-free-vpn)
-2. [What Is Windscribe? (The Canadian Upstart)](#what-is-windscribe-the-canadian-upstart)
-3. [Windscribe Chrome Extension: Free Tier Deep Dive](#windscribe-chrome-extension-free-tier-deep-dive)
-4. [Speed Test Results: Free vs Paid](#speed-test-results-free-vs-paid)
-5. [Privacy & Security: Canadian Jurisdiction Concerns](#privacy--security-canadian-jurisdiction-concerns)
-6. [The Build-a-Plan Feature: Pay for What You Need](#the-build-a-plan-feature-pay-for-what-you-need)
-7. [Windscribe vs Competitors (Free Tiers)](#windscribe-vs-competitors-free-tiers)
-8. [When to Upgrade to Pro](#when-to-upgrade-to-pro)
-9. [FAQ](#faq)
+![Abstract browser connection with a protected route and separate device scope](/content/images/vpn-article10-windscribe-review/featured.jpg "Browser-scoped VPN connection concept")
 
----
+## What this review covers
 
-## Quick Verdict: The Most Flexible Free VPN
+This is a product and documentation review of the Windscribe Chrome extension, not a claim that ExtensionTo ran a controlled speed laboratory. The earlier version of this article presented exact throughput numbers, streaming outcomes, numerical scores, and “best” conclusions without a reproducible test record. Those figures have been removed rather than repeated as fact.
 
-| Category | Score | Notes |
-|----------|-------|-------|
-| **Speed** | 7/10 | 245 Mbps average — solid for free |
-| **Security** | 8/10 | AES-256, R.O.B.E.R.T. blocker, audited |
-| **Privacy** | 6/10 | Canadian jurisdiction (Five Eyes) |
-| **Free tier value** | 9/10 | 10 GB/month, 10 countries, P2P allowed |
-| **Ease of Use** | 8/10 | Clean interface, unique features |
-| **Price** | 8/10 | Build-a-Plan starts at $2/month |
-| **Overall** | **7.8/10** | Best free tier for power users |
+The useful question is more practical: **does the browser extension match your use case, and do its advertised controls justify the permissions and trade-offs?** That requires separating the extension, the desktop VPN application, and the company’s own privacy statements.
 
-**Bottom line:** Windscribe's free tier is the most generous among reputable VPNs: 10 GB/month, 10 server countries, P2P support, and ad blocking. The "Build a Plan" feature lets you pay $1/month per location. For users who want flexibility without commitment, Windscribe is unmatched. Just remember: Canada is Five Eyes.
+## Browser extension versus a full VPN app
 
----
+Chrome extensions can manage browser behavior and, where permitted, browser proxy settings. Chrome documents a `chrome.proxy` API for managing Chrome’s proxy settings; that API does not by itself establish that an extension protects every other application on the computer. [3]
 
-## What Is Windscribe? (The Canadian Upstart)
+A simple way to frame the distinction is below.
 
-Windscribe is a VPN service founded in 2016 by Yegor Sak and Alex Paguis in Toronto, Canada. Despite being a relative newcomer, Windscribe has built a loyal following through transparency, humor, and genuinely useful features.
+| If you need to… | Start by evaluating… | Why the distinction matters |
+|---|---|---|
+| Route Chrome browsing through a selected location | Windscribe’s Chrome extension | The extension is designed for browser use and exposes browser controls. |
+| Filter ads and trackers inside web pages | The extension’s browser blocker and its enabled lists | This is different from DNS filtering performed by a server or VPN app. |
+| Protect other desktop applications | A Windscribe desktop app or another device-level solution | A browser add-on should not be assumed to cover traffic outside Chrome. |
+| Compare speed for a particular location | A repeatable test on your own connection | Route, distance, congestion, protocol, and time of day can change results. |
 
-### The Windscribe Philosophy
+![Protected traffic contained inside a browser while other device applications remain separate](/content/images/vpn-article10-windscribe-review/browser-scope.jpg "Browser scope versus whole-device VPN scope")
 
-Windscribe doesn't take itself too seriously. Their website is full of jokes, their marketing is irreverent, and their features have names like:
-- **R.O.B.E.R.T.** (Remote Omnidirectional Badware Eliminating Robotic Tool) — ad/tracker/malware blocker
-- **ScribeForce** — team/enterprise plans
-- **ControlD** — their DNS service
+## Windscribe’s free plan: what the provider currently says
 
-But beneath the humor is serious technology and a commitment to user privacy.
+Windscribe’s free-plan page says that an account with a confirmed email receives **10 GB per month**, while an account without one receives **2 GB**. It also lists 10 country servers and unlimited devices on one account. The same page says that Pro expands access beyond the free locations. [1]
 
-### Company Structure
+These limits matter more than a generic “free VPN” label. A user who needs occasional browser privacy may find a metered plan workable. A user who expects unrestricted high-volume video, large downloads, or continuous whole-device coverage should examine the paid plan and the separate apps instead of assuming the extension has no practical limits.
 
-| Entity | Role |
-|--------|------|
-| **Windscribe** | VPN service (founded 2016) |
-| **Location** | Toronto, Ontario, Canada |
-| **Ownership** | Independent (not owned by major conglomerates) |
-| **Team size** | Small (~50 employees) |
-| **Other products** | ControlD (DNS service), ScribeForce (teams) |
+![A balanced plan-choice scene with a data meter, location nodes, and several devices](/content/images/vpn-article10-windscribe-review/free-plan-choice.jpg "Free plan trade-offs for browser VPN use")
 
-**The Canadian jurisdiction is a concern.** Canada is part of Five Eyes. However, Windscribe's no-logs policy and transparency partially mitigate this.
+## What the Chrome extension is designed to do
 
----
+Windscribe’s Chrome page describes a setup flow: add the extension from the Chrome Web Store, sign up or log in, choose a location, and connect. It also lists browser-oriented controls such as Cookie Monster, Do Not Disturb, WebRTC Slayer, Location Warp, Time Warp, Language Warp, Split Personality, Workers Block, custom allowlisting, and browser ad/tracker blocking. [4]
 
-## Windscribe Chrome Extension: Free Tier Deep Dive
+The Chrome Web Store listing identifies the publisher as **Windscribe Limited** and describes the product as a VPN and proxy extension. Its listing also advertises browser controls, blocking features, and a free data allowance. Store descriptions are useful for checking the current publisher and the feature surface, but they are still publisher-provided claims rather than independent evidence of speed or security. [5]
 
-### What You Get for Free
+Before installing, open the listing yourself. Check that the publisher name is the one you expect, review the privacy section and requested access, look at the update history, and compare the claimed feature with the task you want to complete. A high rating is not a substitute for reading those details.
 
-| Feature | Free Tier | Notes |
-|---------|-----------|-------|
-| **Data limit** | 10 GB/month | Confirm email for full 10 GB (2 GB without) |
-| **Server locations** | 10 countries | US, Canada, UK, Germany, France, Netherlands, Switzerland, Norway, Romania, Hong Kong |
-| **Speed** | Unthrottled | Full speed on free servers |
-| **P2P/torrenting** | Yes | Allowed on all free servers |
-| **R.O.B.E.R.T.** | Yes | Ad/tracker/malware blocker |
-| **Split tunneling** | No | Pro feature |
-| **Static IPs** | No | Pro feature |
-| **Port forwarding** | No | Pro feature |
-| **Unlimited devices** | Yes | No device limit on any plan |
+## R.O.B.E.R.T. is not the same as the extension blocker
 
-### The Chrome Extension Interface
+This distinction is the most important correction in this review. Windscribe’s support article says that the browser extension **does not currently use R.O.B.E.R.T.**, which Windscribe describes as its server-side ad and tracker blocker operating at the DNS level. The support article says the browser extension’s ad and tracker blocking is based on uBlock and custom block lists that work locally in the browser. [2]
 
-Windscribe's Chrome extension is functional and clean:
+That means the following statements should not be collapsed into one claim:
 
-- **Server list:** Dropdown with all available locations
-- **Connection toggle:** One-click on/off
-- **R.O.B.E.R.T. controls:** Block ads, trackers, malware, social media, porn, gambling, fake news, cryptominers
-- **Data counter:** Shows remaining monthly data
-- **Time Warp:** Spoof your timezone to match server location
-- **Cookie Monster:** Auto-deletes cookies when tab closes
-- **Split Personality:** Rotate user agent to prevent fingerprinting
+| Term | Careful description |
+|---|---|
+| Browser ad/tracker blocking | A browser-level feature described by Windscribe as using uBlock and custom lists. |
+| R.O.B.E.R.T. | Windscribe’s server-side/DNS-level blocker, described separately from the current browser extension. |
+| VPN or proxy connection | A connection mode that can change how Chrome reaches the web; exact coverage depends on the product mode and configuration. |
 
-**My experience:** The extension is less polished than NordVPN's but more feature-rich than ProtonVPN's. R.O.B.E.R.T. is genuinely useful — blocking ads and trackers without a separate ad blocker.
+![Local browser filtering shown separately from upstream DNS filtering at a network gateway](/content/images/vpn-article10-windscribe-review/local-vs-dns-blocking.jpg "Local browser blocking versus server-side DNS blocking")
 
----
+The distinction also prevents an overbroad privacy promise. Blocking a tracker request in Chrome can reduce some page-level requests, but it is not proof that every tracking method is stopped, nor does it independently certify the provider’s handling of account or connection data.
 
-## Speed Test Results: Free vs Paid
+## Performance: why this article does not publish invented speed numbers
 
-We tested Windscribe Free against Windscribe Pro under identical conditions:
+There is no honest universal Mbps result for a Chrome VPN extension. Performance can vary with the user’s baseline connection, selected location, network route, server load, protocol, browser workload, and the time of day. A result from one connection is not a promise for another.
 
-| Server | Free Tier | Pro Tier | Speed Difference |
-|--------|-----------|----------|------------------|
-| **US East** | 267 Mbps | 312 Mbps | -14% |
-| **US West** | 245 Mbps | 289 Mbps | -15% |
-| **UK** | 234 Mbps | 278 Mbps | -16% |
-| **Germany** | 256 Mbps | 298 Mbps | -14% |
-| **Netherlands** | 278 Mbps | 334 Mbps | -17% |
-| **Canada** | 289 Mbps | 356 Mbps | -19% |
-| **Average** | **245 Mbps** | **311 Mbps** | **-16%** |
+If performance is important, use a small repeatable method: record a baseline without the extension, test the same browser and destination with one location at a time, repeat at comparable times, and record latency as well as download speed. Keep the result attached to the test conditions. Do not convert a personal result into “the fastest” claim.
 
-### Real-World Performance (Free Tier)
+The provider’s Chrome page makes performance-oriented marketing statements, including that blocking some page requests can speed up browsing. That may be true for pages with blocked content, but it should not be confused with a measured VPN throughput advantage. [4]
 
-| Activity | Performance | Usable? |
-|----------|------------|---------|
-| **4K YouTube** | Smooth, occasional buffer | Yes |
-| **Netflix US** | Works reliably | Yes |
-| **BBC iPlayer** | Works | Yes |
-| **Video calls** | Clear, minor lag | Yes |
-| **Torrenting (legal)** | 20-25 MB/s download | Yes |
-| **Large downloads (10GB)** | Functional but slow | Marginal |
+![A practical three-stage setup and testing sequence ending in a neutral latency gauge](/content/images/vpn-article10-windscribe-review/setup-and-testing.jpg "Setting up and evaluating a browser VPN extension")
 
-**Key finding:** Windscribe Free is surprisingly capable. The 10 GB limit is the main constraint, not speed.
+## Privacy claims and what to verify
 
----
+Windscribe’s privacy policy is dated **July 30, 2024**. It says the company keeps account-associated data such as total bytes transferred over a 30-day period and the timestamp of last activity, while stating that it does not store historical VPN session records, source IP addresses, or sites visited. It also describes data held in server memory during an active connection and says it is discarded after disconnect. [6]
 
-## Privacy & Security: Canadian Jurisdiction Concerns
+Those statements are useful disclosures, but they remain the provider’s policy. A careful review should not turn “no identifying logs” into “independently proven safe.” Recheck the policy when you install because policies, features, and store disclosures can change.
 
-### Security Features
+The Chrome Web Store listing is another checkpoint. Confirm the current publisher, inspect its privacy disclosure, and consider whether the requested access is proportionate to the feature you plan to use. Chrome’s own extension model gives publishers ways to request access to browser capabilities; the permission surface should be read as context, not as automatic proof of malware or trustworthiness.
 
-| Feature | Implementation |
-|---------|---------------|
-| **Encryption** | AES-256-GCM with 4096-bit RSA key |
-| **Protocols** | WireGuard, OpenVPN UDP/TCP, IKEv2, Stealth (obfuscation) |
-| **Kill switch** | Firewall-based (more reliable than app-based) |
-| **R.O.B.E.R.T.** | DNS-level blocking of ads, trackers, malware |
-| **No-logs policy** | Claims no logs, some transparency |
+## Who should consider Windscribe for Chrome?
 
-### The 2021 Server Seizure Incident
+Windscribe is a reasonable candidate for a user who wants browser-scoped location and privacy controls, is comfortable with a metered free plan, and understands that provider claims need to be checked against current documentation. It may also suit someone who wants a single browser add-on with connection controls and local blocking rather than a collection of separate tools.
 
-In 2021, Ukrainian authorities seized a Windscribe server. Here's what happened:
+It is a poor fit if you need guaranteed access to a particular streaming service, a published independent speed advantage, or protection for every application on the device while using only the extension. It is also not a reason to skip the privacy disclosure or assume that the extension’s blocker is R.O.B.E.R.T.
 
-- **Server was unconfigured:** OpenVPN certificates were present (configuration error)
-- **No user data found:** The server contained no logs, no user info, no browsing history
-- **Windscribe's response:** Admitted the configuration error, fixed it across all servers, published a detailed post-mortem
-- **Result:** Demonstrated that even with a server seizure, no user data was compromised
+For comparison, our [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test) is a separate product review and should not be read as evidence about Windscribe. Our [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review) covers another provider’s free-plan model. These pages serve different product-review intents rather than one universal ranking.
 
-**This incident actually improved trust.** Windscribe was transparent about the mistake, fixed it, and proved their no-logs claim under real-world pressure.
+## Final verdict
 
-### Privacy Policy Analysis
+Windscribe’s Chrome extension is most compelling as a **browser-level privacy and connection tool with a clearly stated free-plan limit**, not as a universal answer to every VPN need. Its free-plan terms, browser controls, and provider documentation make it worth evaluating. The trade-offs are equally important: browser scope is narrower than device-wide coverage, performance depends on conditions, and R.O.B.E.R.T. should not be presented as the current extension blocker.
 
-Windscribe's privacy policy is more detailed than most:
-
-**They DO collect (temporarily):**
-- Timestamp of last connection (deleted within 3 minutes of disconnect)
-- Amount of data transferred (to enforce free tier limits)
-- Number of parallel connections (to prevent abuse)
-
-**They DON'T collect:**
-- IP addresses
-- Browsing history
-- DNS queries
-- Connection timestamps (beyond the 3-minute window)
-
-**The transparency is refreshing** but the Canadian jurisdiction remains a concern.
-
----
-
-## The Build-a-Plan Feature: Pay for What You Need
-
-Windscribe's most unique feature is **Build a Plan**:
-
-### How It Works
-
-1. Start with free tier (10 GB/month, 10 locations)
-2. Add server locations at $1/month each
-3. Add unlimited data for $1/month
-4. Total = $1 per location + $1 for unlimited data
-
-### Example Plans
-
-| Plan | Locations | Data | Price | Use Case |
-|------|-----------|------|-------|----------|
-| **Free** | 10 | 10 GB | $0 | Casual browsing |
-| **Minimal** | 1 (US) | Unlimited | $2/month | Basic streaming |
-| **Regional** | 3 (US, UK, CA) | Unlimited | $4/month | Streaming + browsing |
-| **Global** | 10+ | Unlimited | $10+/month | Full coverage |
-
-**This is brilliant for budget-conscious users.** Instead of paying $10+/month for locations you'll never use, pay $2-4/month for exactly what you need.
-
-### Comparison to Traditional Pricing
-
-| VPN | Cheapest Plan | What You Get |
-|-----|--------------|-------------|
-| **Windscribe Build** | $2/month | 1 location + unlimited data |
-| **NordVPN** | $3.39/month | All 126 countries |
-| **Surfshark** | $2.19/month | All 100+ countries, unlimited devices |
-| **ProtonVPN** | Free | 5 countries, unlimited data |
-| **ExpressVPN** | $8.32/month | All 105 countries |
-
-**Windscribe wins for minimal needs.** If you only need US and UK servers, Windscribe costs $3/month vs NordVPN's $3.39 for all locations.
-
----
-
-## Windscribe vs Competitors (Free Tiers)
-
-| Feature | Windscribe Free | ProtonVPN Free | TunnelBear Free | Hotspot Shield Free |
-|---------|---------------|----------------|-----------------|---------------------|
-| **Data limit** | 10 GB/month | Unlimited | 2 GB/month | 500 MB/day |
-| **Server locations** | 10 countries | 5 countries | 47 countries | 1 country (US) |
-| **Speed** | 245 Mbps | 269 Mbps | 178 Mbps | 89 Mbps |
-| **P2P support** | Yes | No | No | No |
-| **Ad blocking** | R.O.B.E.R.T. | NetShield (basic) | No | No |
-| **Kill switch** | Yes | Yes | No | No |
-| **Streaming** | Sometimes works | Sometimes works | No | No |
-| **Device limit** | Unlimited | 1 | Unlimited | 1 |
-| **Sign up** | Email required | Email required | Email required | No signup |
-| **Jurisdiction** | Canada (Five Eyes) | Switzerland | Canada (Five Eyes) | USA (Five Eyes) |
-
-**Windscribe wins on:** Data allowance (10 GB), P2P support, server variety (for free), device limit
-**ProtonVPN wins on:** Unlimited data, Swiss jurisdiction, open source
-**TunnelBear wins on:** Ease of use, audits
-**Hotspot Shield wins on:** No signup required (but everything else is worse)
-
----
-
-## When to Upgrade to Pro
-
-Consider Windscribe Pro ($5.75/month or $69/year) if you:
-
-- Need 60+ server countries (vs 10 free)
-- Want static/residential IPs
-- Need port forwarding for torrenting
-- Want split tunneling
-- Need higher speeds (Pro servers are less congested)
-- Want to use Windscribe on routers or as SOCKS5 proxy
-
-**The value proposition:** Windscribe Pro is fairly priced but faces stiff competition. At $5.75/month, NordVPN ($3.39) and Surfshark ($2.19) offer more features for less money.
-
----
+A sound decision is therefore conditional. Install only from the current Chrome Web Store listing, read the publisher’s privacy disclosure and permissions, test the locations that matter to you, and use a full Windscribe application when your requirement extends beyond Chrome.
 
 ## FAQ
 
-### Is Windscribe free tier really 10 GB per month?
-Yes, but with a catch. You get 2 GB/month initially. Confirm your email address to unlock the full 10 GB. The counter resets monthly. Unused data doesn't roll over.
+### Does the Windscribe Chrome extension protect my whole device?
 
-### Can I torrent with Windscribe free?
-Yes, unusually. Most free VPNs block P2P traffic. Windscribe allows torrenting on all free servers. However, the 10 GB/month limit means you can only download ~2-3 movies per month. For heavy torrenting, upgrade to Pro or use a dedicated P2P VPN like NordVPN.
+Do not assume that it does. The Chrome extension manages browser traffic and browser controls; whole-device coverage is a separate use case for a Windscribe desktop or mobile app. Check Windscribe’s current documentation for the exact mode you are using.
 
-### Does Windscribe free unblock Netflix?
-Sometimes. Windscribe's free US servers occasionally work with Netflix, but streaming services actively block VPN IPs. It's unreliable. For consistent streaming, use Windscribe Pro, NordVPN, or ExpressVPN.
+### Does the Windscribe browser extension use R.O.B.E.R.T.?
 
-### Is Windscribe safe for privacy?
-Mostly. Windscribe uses AES-256 encryption, has a no-logs policy, and proved it during the 2021 server seizure. However, they're based in Canada (Five Eyes), which is less privacy-friendly than Switzerland (ProtonVPN) or Panama (NordVPN). For maximum privacy, ProtonVPN is better.
+Windscribe’s support article says the browser extension does not currently use R.O.B.E.R.T., its server-side DNS blocker. The extension uses browser-level blocking based on uBlock and custom lists, so those features should not be described as the same system.
 
-### What's R.O.B.E.R.T. and how does it work?
-R.O.B.E.R.T. is Windscribe's DNS-level blocker. It blocks ads, trackers, malware, social media widgets, porn sites, gambling sites, fake news, and cryptominers at the DNS level — before they reach your browser. It's available on free and paid plans and replaces the need for a separate ad blocker.
+### How much data does Windscribe offer for free?
 
-### How does Windscribe's Build a Plan work?
-Start with the free tier, then add individual server locations at $1/month each. Add unlimited data for $1/month. So a plan with US server + unlimited data costs $2/month. This is perfect if you only need 1-3 specific countries.
+Windscribe’s free-plan page says users receive 10 GB per month when they provide an email address, or 2 GB without one, plus access to 10 country servers and unlimited devices. Plan terms can change, so verify them on Windscribe before signing up.
 
-### Is Windscribe better than ProtonVPN free?
-Depends on your needs. Windscribe gives you 10 GB/month across 10 countries with P2P support. ProtonVPN gives you unlimited data across 5 countries with better privacy (Swiss jurisdiction). Choose Windscribe for more locations and P2P. Choose ProtonVPN for unlimited data and maximum privacy.
+### Is the Windscribe Chrome extension enough for a full VPN setup?
 
-### Does Windscribe keep logs?
-Windscribe claims a no-logs policy and demonstrated it during the 2021 server seizure. They temporarily store: last connection timestamp (3 minutes), data usage (for free tier limits), and connection count. They don't store IP addresses, browsing history, or DNS queries.
+It can be enough for browser-focused use, such as connecting Chrome through a selected location and using the extension’s browser controls. It is not automatically a replacement for a device VPN app when other applications or system traffic also need protection.
 
-### Can I use Windscribe on multiple devices for free?
-Yes. Windscribe has no device limit on any plan — free or paid. This is rare. Most free VPNs limit you to 1 device. You can install Windscribe on your laptop, phone, tablet, and smart TV simultaneously.
+### How should I evaluate Windscribe’s privacy claims?
 
-### What happened in the 2021 Windscribe server seizure?
-Ukrainian authorities seized an unconfigured Windscribe server. Due to a configuration error, OpenVPN certificates were present. However, no user data was found because Windscribe doesn't log user activity. Windscribe admitted the mistake, fixed it globally, and published a transparent post-mortem. The incident actually validated their no-logs claims.
+Read Windscribe’s current privacy policy, note its date, compare the stated data practices with the Chrome Web Store disclosure, and avoid treating a company policy as independent certification. Also review the publisher, permissions, and update information before installing.
 
----
+## Sources
 
-## Related Reading
+[1] [Windscribe free plan: Get Pro features for $0](https://windscribe.com/features/use-for-free)
 
-> **Related:** Compare unlimited free options: [ProtonVPN Chrome Extension Free Review](/blog/vpn-article3-protonvpn-free-review).
-> **Related:** Need speed? See our [NordVPN Chrome Extension Speed Test](/blog/vpn-article2-nordvpn-speed-test).
-> **Related:** Want no signup at all? Read [Best Free VPN Chrome Extension No Sign Up](/blog/vpn-article1-best-free-vpn-no-signup).
-> **Related:** Compare premium options: [ExpressVPN Chrome Extension Review 2026](/blog/vpn-article4-expressvpn-review).
+[2] [Does the Windscribe browser extension use R.O.B.E.R.T.?](https://windscribe.com/knowledge-base/articles/does-the-windscribe-browser-extension-use-r.o.b.e.r.t.)
 
----
+[3] [Chrome `chrome.proxy` API](https://developer.chrome.com/docs/extensions/reference/api/proxy)
 
-## External Resources
+[4] [Windscribe VPN for Chrome](https://windscribe.com/features/chrome)
 
-- [Windscribe Official Website](https://windscribe.com)
-- [Windscribe Chrome Extension](https://chrome.google.com/webstore/detail/windscribe-free-proxy-and/hnmpcagpplmpfojmgmnngilcnanddlhb)
-- [Windscribe Transparency Report](https://windscribe.com/transparency)
-- [2021 Server Seizure Post-Mortem](https://windscribe.com/blog/improvements-to-windscribe-vpn-infrastructure/)
-- [ControlD DNS Service](https://controld.com)
-- [R.O.B.E.R.T. Configuration](https://windscribe.com/robert)
+[5] [Windscribe on the Chrome Web Store](https://chromewebstore.google.com/detail/free-vpn-for-chrome-vpn-extension/hnmpcagpplmpfojmgmnngilcnanddlhb?hl=en)
 
----
-
-*Windscribe is the IKEA of VPNs — assemble exactly what you need, pay only for what you use, and ignore the fancy stuff you'll never touch.*
+[6] [Windscribe Privacy Policy](https://windscribe.com/privacy)
