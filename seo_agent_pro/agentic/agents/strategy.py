@@ -14,6 +14,22 @@ def _step(label: str) -> None:
     print(f"\n{c('cyan', '▸')} {c('bold', 'Strategy Agent — ' + label)}")
 
 
+# Stable official documentation hints for claims that routinely become stale.
+# These are URLs only; the writer must still phrase claims conservatively and
+# cite the URL in the article when using an exact value.
+OFFICIAL_SOURCE_HINTS = (
+    (("storage", "quota"), "https://developer.chrome.com/docs/extensions/reference/api/storage"),
+    (("permission", "permissions"), "https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions"),
+    (("service worker", "manifest v3", "mv3"), "https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers"),
+    (("devtools", "developer tools"), "https://developer.chrome.com/docs/devtools/"),
+)
+
+
+def _official_source_hints(keyword: str) -> list[str]:
+    lowered = keyword.lower()
+    return [url for terms, url in OFFICIAL_SOURCE_HINTS if any(term in lowered for term in terms)]
+
+
 def run(state: dict) -> dict:
     keyword = state["keyword"]
     model = state["active_model"]
@@ -64,7 +80,16 @@ def run(state: dict) -> dict:
         "ignore') — not a second checklist of extra sections, data "
         "points, or features layered on top of required_sections. It "
         "gets shown to the reviewer as directional color, not as a "
-        "literal list of additional deliverables to grade against."
+        "literal list of additional deliverables to grade against.\n\n"
+        "EVIDENCE DISCIPLINE: For permissions, privacy, security, storage "
+        "quotas, Chrome APIs, browser versions, pricing, or other "
+        "time-sensitive technical facts, plan a source-verification note. "
+        "The writer may include an exact number or version only when a real "
+        "source URL is available in the brief; otherwise it must use a "
+        "careful qualitative statement and tell readers to check the current "
+        "official documentation. Never invent a source URL. For procedural "
+        "guides, request a practical checklist when it materially helps the "
+        "reader complete or verify the task."
     )
     user = f"""Keyword: "{keyword}"
 
@@ -78,7 +103,8 @@ Decide and return JSON:
 {{
   "ideal_length":       0,
   "required_sections":  ["list of H2 headings to include"],
-  "must_have_elements": ["table|FAQ|statistics|comparison|checklist|..."],
+  "must_have_elements": ["table|FAQ|comparison|checklist|..."],
+  "source_requirements": ["source categories or real URLs needed for sensitive claims"],
   "competitor_gap_requirements": ["specific, verifiable gaps to cover; max 3"],
   "unique_angle":       "what makes this article stand out",
   "strategy":           "aggressive or strategic",
@@ -97,13 +123,27 @@ Decide and return JSON:
         raw_gaps = []
     strategy["competitor_gap_requirements"] = [str(g).strip() for g in raw_gaps[:3] if str(g).strip()]
 
+    raw_sources = strategy.get("source_requirements", []) or []
+    if not isinstance(raw_sources, list):
+        raw_sources = []
+    model_sources = [str(s).strip() for s in raw_sources if str(s).strip()]
+    inferred_sources = _official_source_hints(keyword)
+    # Put deterministic official hints first, then retain model-proposed
+    # sources. Deduplicate without trusting arbitrary prose as a URL.
+    merged_sources: list[str] = []
+    for source in inferred_sources + model_sources:
+        if source not in merged_sources:
+            merged_sources.append(source)
+    strategy["source_requirements"] = merged_sources[:5]
+
     # Defense in depth: don't just trust the prompt — deterministically
     # strip any element the model asked for anyway that a static Markdown
     # article can't deliver, instead of letting Content fabricate it.
     FORBIDDEN_ELEMENT_RE = __import__("re").compile(
         r"interactive|downloadable|download|screenshot|gif|video|widget|"
         r"live demo|embed|calculator|quiz|poll|"
-        r"benchmark|quantitative|cost-benefit|cost benefit|roi\b|"
+        r"benchmark|quantitative|statistics|data points|measurements|"
+        r"cost-benefit|cost benefit|roi\b|"
         r"case stud|real-world use case|real world use case",
         __import__("re").IGNORECASE,
     )
@@ -112,6 +152,15 @@ Decide and return JSON:
     dropped = [e for e in elements if e not in clean_elements]
     if dropped:
         print(c("yellow", f"  ⚠ Dropped undeliverable elements: {dropped}"))
+    # Procedural topics benefit from a reproducible completion check. Make
+    # that requirement deterministic for guides/debugging/audits instead of
+    # leaving it to a model's optional interpretation.
+    procedural_terms = ("guide", "how to", "debug", "troubleshoot", "fix", "audit", "setup", "install")
+    if any(term in keyword.lower() for term in procedural_terms) and not any(
+        "checklist" in str(element).lower() for element in clean_elements
+    ):
+        clean_elements.append("checklist")
+        print(c("dim", "  · added deterministic checklist requirement for procedural topic"))
     strategy["must_have_elements"] = clean_elements
 
     # Defense in depth again: cap ideal_length and required_sections

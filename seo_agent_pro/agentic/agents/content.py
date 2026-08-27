@@ -37,6 +37,7 @@ def run(state: dict) -> dict:
     angle = strategy.get("unique_angle", "")
     elements = strategy.get("must_have_elements", [])
     competitor_gaps = strategy.get("competitor_gap_requirements", []) or []
+    source_requirements = strategy.get("source_requirements", []) or []
 
     lessons = memory_store.load_lessons()
 
@@ -75,6 +76,7 @@ Specifications:
 - Unique angle:     {angle}
 - Competitor-gap opportunities: {', '.join(competitor_gaps) if competitor_gaps else 'none selected; do not pretend competitor research exists'}
 - Must include:     {', '.join(elements) if elements else 'decide based on topic'}
+- Source requirements: {', '.join(source_requirements) if source_requirements else 'no source URLs supplied; avoid exact quotas, dates, versions, prices, measurements, and unverifiable product claims'}
 
 ⚠️ REQUIRED SECTIONS — every one of these MUST appear as its own H2 heading.
 This is a hard checklist, not a suggestion — an article missing any of these
@@ -91,6 +93,10 @@ order — do not skip, merge, or rename any of them beyond light rephrasing]
 
 [Comparison table if a table is in "Must include" above — an ACTUAL
 markdown table with | pipes, not a sentence saying a table exists]
+
+[If "checklist" is in Must include, add an actual task checklist using
+Markdown '- [ ]' items, with concrete verification steps. Do not merely use
+the word checklist.]
 
 ## Frequently Asked Questions
 **Q: ...**
@@ -112,6 +118,15 @@ Rules:
 - Do NOT invent URLs, screenshot links, or claim to have verified/tested
   something you have no way to have tested (e.g. specific TLS versions,
   specific pricing you cannot confirm as current)
+- Exact quotas, limits, browser versions, prices, dates, benchmark results,
+  or security claims require a real source URL from Source requirements. If
+  no such URL is supplied, state the limitation qualitatively and direct the
+  reader to current official documentation instead of guessing.
+- If Source requirements contain real URLs, use only those URLs in a short
+  Sources section; never manufacture citations or URLs from memory.
+- Markdown discipline: use '# ' for exactly one H1 and '## ' for sections.
+  Table-of-contents entries may be bullets, but never prefix a heading with
+  '- ' (for example, never write '## - [link]').
 - Human, conversational tone
 - Add Information Gain: insights competitors missed — through better
   organization and explanation, not invented data
