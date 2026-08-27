@@ -145,7 +145,8 @@ Rules:
   Sources section; never manufacture citations or URLs from memory.
 - Markdown discipline: use '# ' for exactly one H1 and '## ' for sections.
   Table-of-contents entries may be bullets, but never prefix a heading with
-  '- ' (for example, never write '## - [link]').
+  '- ' (for example, never write '## - [link]'). A Markdown table must begin
+  with a pipe row such as '| Aspect | Value |', never with '## |'.
 - Human, conversational tone
 - Add Information Gain: insights competitors missed — through better
   organization and explanation, not invented data
