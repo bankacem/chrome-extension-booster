@@ -42,3 +42,9 @@ The article is `ready_for_human_review`, not `ready_for_publish`. No PR has been
 - Branch: `refine/chrome-extension-service-worker-guide`
 - Content commit before verification record: `c3b82e90`
 - Verification record is pending its own documentation commit.
+
+## Review handoff
+
+Pull Request: https://github.com/bankacem/chrome-extension-booster/pull/400
+
+The PR is open and not merged. Its current automated merge state is `UNSTABLE`, so the article must remain under human review. The content is intentionally not added to the shared index and does not have a publication URL.
