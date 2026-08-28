@@ -14,7 +14,7 @@ keywords:
   - chrome extension groups
   - chrome extension keyboard shortcuts
 meta_description: "Learn how to organize, group, disable, and manage Chrome extensions efficiently. Includes keyboard shortcuts, the toolbar pin system, and a cleanup workflow for removing unused extensions."
-status: draft
+status: published
 published_at: "2026-08-28T12:00:00+01:00"
 scheduled_at: "2026-08-28T12:00:00+01:00"
 author: "James Mitchell"
