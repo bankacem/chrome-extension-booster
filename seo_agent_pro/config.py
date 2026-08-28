@@ -18,6 +18,11 @@ API_KEYS = {
     # Agentrouter.org — the provider actually validated in test_agentrouter.py.
     # Set AGENTROUTER_KEY in your environment; never hardcode the key here.
     "agentrouter": os.getenv("AGENTROUTER_KEY", ""),
+    # Gorouter.app — OpenAI-compatible gateway (validated live Aug 2026:
+    # claude-opus-5 responds; Cloudflare in front requires a browser-like
+    # User-Agent, same lesson as the Groq header below). Set GOROUTER_KEY
+    # in your environment; never hardcode the key here.
+    "gorouter": os.getenv("GOROUTER_KEY", ""),
     # Google AI Studio (Gemini) — used only by image_agent.py for featured
     # images (Imagen 3 via the Gemini API). Set GEMINI_KEY in your
     # environment / as a GitHub Actions secret. Must be a real AI Studio
@@ -69,6 +74,9 @@ MODELS = {
     "agentrouter-gpt-4o-mini":  ("agentrouter", "gpt-4o-mini"),
     "agentrouter-claude-sonnet":("agentrouter", "claude-sonnet-4-5"),
     "agentrouter-deepseek-v3":  ("agentrouter", "deepseek-v3"),
+
+    # ── Gorouter.app — validated live (claude-opus-5, long-form SEO article) ──
+    "gorouter-claude-opus-5":   ("gorouter",     "claude-opus-5"),
 }
 
 # NOTE: run `python test_agentrouter.py` (with AGENTROUTER_KEY set) once to

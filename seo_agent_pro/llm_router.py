@@ -202,6 +202,114 @@ def _call_groq(model_id: str, system: str, user: str, stream: bool, max_tokens: 
 
 
 # ──────────────────────────────────────────────────────────────
+#  Gorouter.app — OpenAI-compatible gateway, validated live Aug 2026
+#  (claude-opus-5 wrote a full 2600-word SEO article through it).
+#  Cloudflare sits in front, so a browser-like User-Agent is REQUIRED
+#  — same lesson as the Groq header below.
+# ──────────────────────────────────────────────────────────────
+
+def _call_gorouter(model_id: str, system: str, user: str, stream: bool, max_tokens: int) -> str:
+    url     = "https://gorouter.app/v1/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {API_KEYS['gorouter']}",
+        "Content-Type":  "application/json",
+        "Accept":        "application/json",
+        "User-Agent":    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                         "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    }
+
+    # Long article generations through this gateway have been observed to
+    # take several minutes; the default urllib timeout would kill them.
+    #
+    # ALWAYS-STREAM (real failure, Aug 2026): Cloudflare in front of the
+    # gateway kills non-streaming calls with HTTP 524 once the origin is
+    # quiet for ~100s — which slow reasoning models blow through on any
+    # non-trivial prompt (the 2600-token research JSON died exactly this
+    # way while a 7000-token STREAMED article had no trouble). So every
+    # gorouter call uses the SSE wire format internally; when the caller
+    # asked for stream=False we simply accumulate silently instead of
+    # printing. Wire format is identical to the blocking response body.
+    #
+    # Empty-response hardening (real failure, Aug 2026): the gateway
+    # sometimes returns chunks with `"choices": []` (keep-alive/usage),
+    # which crashed the naive obj["choices"][0] parser with IndexError,
+    # and occasionally a whole empty body — both are skipped/retried.
+    #
+    # Intermittent 403 hardening (real failure, Aug 2026): Cloudflare
+    # intermittently 403s requests identical to ones that succeed minutes
+    # apart (verified: the same 5000-token request failed twice, then
+    # returned 200 with NO changes). It is WAF scoring, not auth —
+    # 20-token probes keep passing while bigger calls trip it. call()'s
+    # generic retry loop deliberately does NOT cover 403 (elsewhere it
+    # means a bad key), so this provider retries 403s internally with a
+    # real backoff. max_tokens is also capped: requests at the old 7000
+    # budget tripped the WAF repeatedly while <=6500 got through; ~4500
+    # output tokens comfortably fits a 1800-word article.
+    MAX_SAFE_TOKENS = 6500
+    if max_tokens > MAX_SAFE_TOKENS:
+        max_tokens = MAX_SAFE_TOKENS
+
+    wire_stream = True  # always SSE — see ALWAYS-STREAM note above
+    silent = not stream  # caller wanted a blocking call: accumulate quietly
+    payload = {
+        "model":      model_id,
+        "max_tokens": max_tokens,
+        "stream":     wire_stream,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user",   "content": user},
+        ],
+    }
+
+    body_bytes = json.dumps(payload).encode()
+    max_retries = 3
+    attempt = 0
+    while True:
+        attempt += 1
+        req  = urllib.request.Request(url, body_bytes, headers)
+        full = ""
+        try:
+            with urllib.request.urlopen(req, timeout=600) as resp:
+                for raw_line in resp:
+                    line = raw_line.decode("utf-8").strip()
+                    if not line.startswith("data:"):
+                        continue
+                    data = line[5:].strip()
+                    if data == "[DONE]":
+                        break
+                    try:
+                        obj = json.loads(data)
+                        choices = obj.get("choices") or []
+                        if not choices:
+                            continue  # keep-alive/usage chunk, no content
+                        delta = choices[0].get("delta", {}).get("content", "")
+                        if delta:
+                            if not silent:
+                                print(delta, end="", flush=True)
+                            full += delta
+                    except (json.JSONDecodeError, KeyError, IndexError, TypeError):
+                        continue
+            if not silent:
+                print()
+            if full.strip():
+                return full
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 524) and attempt <= max_retries:
+                delay = 5 * attempt
+                print(c("dim", f"  ⚠ gorouter HTTP {e.code} (attempt {attempt}) — retrying in {delay}s..."))
+                time.sleep(delay)
+                continue
+            raise
+        if attempt <= max_retries:
+            # empty/missing content: quiet retry (transient gateway state)
+            time.sleep(2)
+            continue
+        raise ValueError(
+            f"gorouter returned no usable content after {attempt} attempt(s)"
+        )
+
+
+# ──────────────────────────────────────────────────────────────
 #  Bluesminds (experimental) — uses the user's provided API
 #  NOTE: The exact endpoints and response format may differ. Adjust url
 #  and parsing according to Bluesminds API docs.
@@ -442,6 +550,8 @@ def call(
                 return _call_bluesminds(model_id, system, user, stream, effective_max_tokens)
             elif provider == "agentrouter":
                 return _call_agentrouter(model_id, system, user, stream, effective_max_tokens)
+            elif provider == "gorouter":
+                return _call_gorouter(model_id, system, user, stream, effective_max_tokens)
             elif provider == "openai_compat":
                 return _call_openai_compat(model_id, system, user, stream, effective_max_tokens)
             else:
@@ -518,11 +628,48 @@ def call_json(system: str, user: str, model_name: str, max_tokens: int = 1500) -
         # make in generated JSON. Cheap, safe repair before giving up.
         return re.sub(r",(\s*[\]}])", r"\1", text)
 
+    def _close_truncated_json(text: str) -> str:
+        # Real failure seen in production (Aug 2026): a long common_sections
+        # JSON ran past its token budget and arrived truncated, leaving open
+        # brackets/strings that made every parser fail. Repair by closing
+        # any string that is still open, dropping a dangling trailing
+        # fragment, and appending the missing closing brackets in order.
+        opens = {"{": "}", "[": "]"}
+        stack: list[str] = []
+        in_string = False
+        escape = False
+        last_safe = 0  # index after the last fully-closed value/element
+        for i, ch in enumerate(text):
+            if in_string:
+                if escape:
+                    escape = False
+                elif ch == "\\":
+                    escape = True
+                elif ch == '"':
+                    in_string = False
+                    last_safe = i + 1
+                continue
+            if ch == '"':
+                in_string = True
+            elif ch in opens:
+                stack.append(opens[ch])
+            elif ch in "}]" and stack and stack[-1] == ch:
+                stack.pop()
+                last_safe = i + 1
+            elif ch == "," and not stack:
+                last_safe = i  # dangling top-level comma — cut before it
+        repaired = text[:last_safe] if last_safe else text
+        if in_string:
+            repaired += '"'
+        repaired = _strip_trailing_commas(repaired)
+        return repaired + "".join(reversed(stack))
+
     attempts = [raw]
     match = re.search(r"[\[{][\s\S]*[\]}]", raw)
     if match:
         attempts.append(match.group())
     attempts += [_strip_trailing_commas(a) for a in list(attempts)]
+    attempts += [_close_truncated_json(a) for a in list(attempts)]
 
     last_error = None
     for attempt in attempts:

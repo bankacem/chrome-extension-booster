@@ -86,6 +86,12 @@ Structure:
 
 [Strong hook introduction — 3 paragraphs, establish the problem and promise]
 
+## Key Takeaways
+[4-6 bullet points, ONE line each — the direct answers a scanner needs.
+These bullets target Google featured snippets: lead each with the core
+answer, not with "In this article". Include the primary keyword in the
+first bullet naturally.]
+
 [One ## H2 section for EACH required section listed above, in a sensible
 order — do not skip, merge, or rename any of them beyond light rephrasing]
 
@@ -93,6 +99,12 @@ order — do not skip, merge, or rename any of them beyond light rephrasing]
 markdown table with | pipes, not a sentence saying a table exists]
 
 ## Frequently Asked Questions
+[5-7 questions phrased EXACTLY the way real users type them into Google
+("People Also Ask" style — natural question sentences ending with ?).
+Each answer: 2-4 sentences, opens with the direct answer in the first
+sentence, then one supporting detail. These target PAA boxes and FAQ
+rich results — vague questions like "What else should I know?" are
+forbidden; every question must contain a concrete noun/verb from the topic.]
 **Q: ...**
 A: ...
 

@@ -174,7 +174,11 @@ def run(state: dict) -> dict:
         f'Valid categories:\n{json.dumps(taxonomy, indent=2)}\n\n'
         f'Return JSON: {{"category": "<one of the valid categories, verbatim>"}}',
         model,
-        max_tokens=100,
+        # 100 was too small for reasoning models (claude-opus-5 via
+        # gorouter): reasoning tokens ate the whole budget and the gateway
+        # returned an empty choices array. 400 leaves room for thinking
+        # plus the one-line JSON answer.
+        max_tokens=400,
     )
     category = cat_result.get("category", "").strip()
     if category not in taxonomy:
@@ -189,7 +193,8 @@ def run(state: dict) -> dict:
         f'Write a meta description for an article targeting the keyword "{keyword}". '
         f"Article title: {title}",
         model,
-        max_tokens=200,
+        # Same reasoning-model budget lesson as the category call above.
+        max_tokens=500,
     ).strip().strip('"')
     print(c("green", f"  ✓ meta description: {len(meta_description)} chars"))
 

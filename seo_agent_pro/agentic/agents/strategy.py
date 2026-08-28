@@ -92,7 +92,12 @@ Decide and return JSON:
     raw_gaps = strategy.get("competitor_gap_requirements", []) or []
     if not isinstance(raw_gaps, list):
         raw_gaps = []
-    real_research = str(competitor_data.get("research_source", "")).startswith("searxng")
+    # "manual_real_search" (SEO_AGENT_RESEARCH_FILE snapshots) is REAL
+    # evidence too — it was audited by a human before the run — so it must
+    # enable competitor_gap_requirements exactly like SearXNG results do.
+    # The old startswith("searxng") check silently stripped every gap from
+    # file-fed runs, contradicting the README's documented file workflow.
+    real_research = str(competitor_data.get("research_source", "")).startswith(("searxng", "manual_real_search"))
     if not real_research:
         raw_gaps = []
     strategy["competitor_gap_requirements"] = [str(g).strip() for g in raw_gaps[:3] if str(g).strip()]
