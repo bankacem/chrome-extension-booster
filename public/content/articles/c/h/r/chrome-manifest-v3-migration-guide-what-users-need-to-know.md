@@ -13,7 +13,7 @@ keywords:
   - chrome extension not working 2026
   - what is manifest v3
 meta_description: "Understand Chrome Manifest V3 migration in 2026: check an extension's status, permissions, compatibility, and safer next steps if an older extension stops working."
-status: draft
+status: published
 published_at: "2026-08-27T12:00:00+01:00"
 scheduled_at: "2026-08-27T12:00:00+01:00"
 author: "James Mitchell"
