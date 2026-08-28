@@ -60,6 +60,14 @@ log and know exactly where things stand without re-reading the whole repo.
 
 ## Session Log
 
+### 2026-08-28 — External session (Super Z, via user request)
+- Added `gorouter-claude-opus-5` as a first-class provider (config.py + llm_router.py; key read from GOROUTER_KEY env only, never committed). Gateway lessons encoded in `_call_gorouter`: always-SSE wire (Cloudflare 524 kills quiet non-stream calls), internal 403 WAF retry, empty-choices chunk tolerance, max_tokens cap 6500.
+- Fixed strategy.py: `manual_real_search` (SEO_AGENT_RESEARCH_FILE snapshots) had its competitor gaps silently stripped by the startswith("searxng") check — file-fed runs now keep them, matching the README's documented workflow.
+- call_json gained a truncated-JSON bracket-completion repair (real failure: 1500-token research JSON cut mid-array).
+- content.py prompt now requires a Key Takeaways block (featured-snippet targeting) and PAA-style FAQ questions.
+- Ran the full 7-agent pipeline end-to-end with claude-opus-5: draft 1 was REJECTED by the evaluator (68/100, malformed ToC headings) and the approved revision (78/100) was published as `how-to-disable-chrome-extensions-on-specific-sites` (commit 81a544cb). First pipeline article written entirely through the new provider.
+- NOTE: pipeline runs need python3.13 on this machine (langgraph is installed for the system 3.13, not the 3.12 venv that owns `python3`).
+
 ### 2026-08-20 — Manus session
 - Re-pulled `main` and confirmed no existing branch claimed `ai-cover-letter-writer-chrome-extension`.
 - Analyzed the article and official competitor sources; found the local article truncated at 446 body words with unsupported product claims and no keywords/internal links.
