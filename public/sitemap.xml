@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://extensionto.com/</loc>
     <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog</loc>
     <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog"/>
   </url>
   <url>
     <loc>https://extensionto.com/privacy</loc>
@@ -23,34 +35,82 @@
   <url>
     <loc>https://extensionto.com/fr</loc>
     <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/"/>
   </url>
   <url>
     <loc>https://extensionto.com/es</loc>
     <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/"/>
   </url>
   <url>
     <loc>https://extensionto.com/pt</loc>
     <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/"/>
   </url>
   <url>
     <loc>https://extensionto.com/ar</loc>
     <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/"/>
   </url>
   <url>
     <loc>https://extensionto.com/fr/blog</loc>
     <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog</loc>
     <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog"/>
   </url>
   <url>
     <loc>https://extensionto.com/pt/blog</loc>
     <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog"/>
   </url>
   <url>
     <loc>https://extensionto.com/ar/blog</loc>
     <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog"/>
   </url>
   <url>
     <loc>https://extensionto.com/extension/quick-screenshot-lite</loc>
@@ -89,6 +149,45 @@
     <lastmod>2026-08-28</lastmod>
   </url>
   <url>
+    <loc>https://extensionto.com/ar/blog/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed</loc>
+    <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed"/>
+  </url>
+  <url>
+    <loc>https://extensionto.com/ar/blog/best-chrome-privacy-extensions-2026-complete-guide</loc>
+    <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+  </url>
+  <url>
+    <loc>https://extensionto.com/ar/blog/block-popups-on-chrome-mobile-guide</loc>
+    <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/block-popups-on-chrome-mobile-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/block-popups-on-chrome-mobile-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/block-popups-on-chrome-mobile-guide"/>
+  </url>
+  <url>
+    <loc>https://extensionto.com/ar/blog/best-chrome-screenshot-extensions-2026-complete-guide</loc>
+    <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+  </url>
+  <url>
+    <loc>https://extensionto.com/ar/blog/best-youtube-downloader-chrome-extension-2026</loc>
+    <lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/best-youtube-downloader-chrome-extension-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026"/>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/top-rated-privacy-extensions-for-google-chrome</loc>
     <lastmod>2026-08-26</lastmod>
   </url>
@@ -103,42 +202,82 @@
   <url>
     <loc>https://extensionto.com/pt/blog/chrome-extension-security-risks-permission-audit-guide</loc>
     <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-extension-security-risks-permission-audit-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-extension-security-risks-permission-audit-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-extension-security-risks-permission-audit-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-extension-security-risks-permission-audit-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/pt/blog/chrome-extensions-that-slow-down-your-browser-real-tests</loc>
     <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
   </url>
   <url>
     <loc>https://extensionto.com/pt/blog/zoom-chrome-extension-guide</loc>
     <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/zoom-chrome-extension-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/zoom-chrome-extension-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/zoom-chrome-extension-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/zoom-chrome-extension-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/pt/blog/chrome-logger-debugging-guide</loc>
     <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-logger-debugging-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-logger-debugging-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-logger-debugging-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-logger-debugging-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/pt/blog/chrome-extension-permissions-guide</loc>
     <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-extension-permissions-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-extension-permissions-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-extension-permissions-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-extension-permissions-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/ar/blog/chrome-extension-security-risks-permission-audit-guide</loc>
     <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-extension-security-risks-permission-audit-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-extension-security-risks-permission-audit-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-extension-security-risks-permission-audit-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-extension-security-risks-permission-audit-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/ar/blog/chrome-extensions-that-slow-down-your-browser-real-tests</loc>
     <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
   </url>
   <url>
     <loc>https://extensionto.com/ar/blog/zoom-chrome-extension-guide</loc>
     <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/zoom-chrome-extension-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/zoom-chrome-extension-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/zoom-chrome-extension-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/zoom-chrome-extension-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/ar/blog/chrome-logger-debugging-guide</loc>
     <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-logger-debugging-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-logger-debugging-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-logger-debugging-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-logger-debugging-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/ar/blog/chrome-extension-permissions-guide</loc>
     <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-extension-permissions-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-extension-permissions-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-extension-permissions-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-extension-permissions-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-youtube-to-mp3-chrome-extension</loc>
@@ -215,10 +354,18 @@
   <url>
     <loc>https://extensionto.com/blog/chrome-extension-security-risks-permission-audit-guide</loc>
     <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-extension-security-risks-permission-audit-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-extension-security-risks-permission-audit-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-extension-security-risks-permission-audit-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-extension-security-risks-permission-audit-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/chrome-extensions-that-slow-down-your-browser-real-tests</loc>
     <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-extensions-that-slow-down-your-browser-real-tests"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/protab-suspender-vs-google-memory-saver-2026-which-saves-more-ram</loc>
@@ -239,14 +386,26 @@
   <url>
     <loc>https://extensionto.com/blog/zoom-chrome-extension-guide</loc>
     <lastmod>2026-08-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/zoom-chrome-extension-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/zoom-chrome-extension-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/zoom-chrome-extension-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/zoom-chrome-extension-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/chrome-logger-debugging-guide</loc>
     <lastmod>2026-08-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-logger-debugging-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-logger-debugging-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-logger-debugging-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-logger-debugging-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/chrome-extension-permissions-guide</loc>
     <lastmod>2026-08-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chrome-extension-permissions-guide"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://extensionto.com/pt/blog/chrome-extension-permissions-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/chrome-extension-permissions-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chrome-extension-permissions-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/chrome-extensions-incognito-guide</loc>
@@ -303,14 +462,26 @@
   <url>
     <loc>https://extensionto.com/blog/vpn-article9-tunnelbear-review</loc>
     <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/vpn-article9-tunnelbear-review"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/vpn-article9-tunnelbear-review"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/vpn-article9-tunnelbear-review"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/vpn-article9-tunnelbear-review"/>
   </url>
   <url>
     <loc>https://extensionto.com/fr/blog/vpn-article9-tunnelbear-review</loc>
     <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/vpn-article9-tunnelbear-review"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/vpn-article9-tunnelbear-review"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/vpn-article9-tunnelbear-review"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/vpn-article9-tunnelbear-review"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog/vpn-article9-tunnelbear-review</loc>
     <lastmod>2026-08-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/vpn-article9-tunnelbear-review"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/vpn-article9-tunnelbear-review"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/vpn-article9-tunnelbear-review"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/vpn-article9-tunnelbear-review"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/vpn-article8-hotspot-shield-review</loc>
@@ -479,6 +650,10 @@
   <url>
     <loc>https://extensionto.com/blog/best-chrome-ad-blockers-without-slowing-your-browser</loc>
     <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/vpn-article11-betternet-review</loc>
@@ -491,10 +666,18 @@
   <url>
     <loc>https://extensionto.com/fr/blog/best-chrome-ad-blockers-without-slowing-your-browser</loc>
     <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog/best-chrome-ad-blockers-without-slowing-your-browser</loc>
     <lastmod>2026-08-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-ad-blockers-without-slowing-your-browser"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/vpn-article10-windscribe-review</loc>
@@ -875,6 +1058,10 @@
   <url>
     <loc>https://extensionto.com/blog/best-color-picker-chrome-extension</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-color-picker-chrome-extension"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-color-picker-chrome-extension"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-color-picker-chrome-extension"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-color-picker-chrome-extension"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/chrome-printing-guide</loc>
@@ -891,10 +1078,18 @@
   <url>
     <loc>https://extensionto.com/fr/blog/best-color-picker-chrome-extension</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-color-picker-chrome-extension"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-color-picker-chrome-extension"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-color-picker-chrome-extension"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-color-picker-chrome-extension"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog/best-color-picker-chrome-extension</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-color-picker-chrome-extension"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-color-picker-chrome-extension"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-color-picker-chrome-extension"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-color-picker-chrome-extension"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/session-manager-chrome</loc>
@@ -943,14 +1138,26 @@
   <url>
     <loc>https://extensionto.com/blog/chromecast-extension-google-chrome</loc>
     <lastmod>2026-05-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chromecast-extension-google-chrome"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/chromecast-extension-google-chrome"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/chromecast-extension-google-chrome"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chromecast-extension-google-chrome"/>
   </url>
   <url>
     <loc>https://extensionto.com/fr/blog/chromecast-extension-google-chrome</loc>
     <lastmod>2026-05-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chromecast-extension-google-chrome"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/chromecast-extension-google-chrome"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/chromecast-extension-google-chrome"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chromecast-extension-google-chrome"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog/chromecast-extension-google-chrome</loc>
     <lastmod>2026-05-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/chromecast-extension-google-chrome"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/chromecast-extension-google-chrome"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/chromecast-extension-google-chrome"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/chromecast-extension-google-chrome"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/chromecast-plugin-chrome</loc>
@@ -1479,6 +1686,10 @@
   <url>
     <loc>https://extensionto.com/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers</loc>
     <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa</loc>
@@ -1499,10 +1710,18 @@
   <url>
     <loc>https://extensionto.com/fr/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers</loc>
     <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers</loc>
     <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/how-to-install-chrome-extensions-manually</loc>
@@ -1811,6 +2030,9 @@
   <url>
     <loc>https://extensionto.com/blog/block-popups-on-chrome-mobile-guide</loc>
     <lastmod>2026-04-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/block-popups-on-chrome-mobile-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/block-popups-on-chrome-mobile-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/block-popups-on-chrome-mobile-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/the-no-ads-chrome-extension-worth-installing</loc>
@@ -1983,14 +2205,27 @@
   <url>
     <loc>https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide</loc>
     <lastmod>2026-03-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026</loc>
     <lastmod>2026-03-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/best-youtube-downloader-chrome-extension-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide</loc>
     <lastmod>2026-03-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/adblock-chrome-android-complete-guide-2026</loc>
@@ -2003,18 +2238,38 @@
   <url>
     <loc>https://extensionto.com/fr/blog/best-chrome-screenshot-extensions-2026-complete-guide</loc>
     <lastmod>2026-03-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/fr/blog/best-chrome-privacy-extensions-2026-complete-guide</loc>
     <lastmod>2026-03-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog/best-chrome-screenshot-extensions-2026-complete-guide</loc>
     <lastmod>2026-03-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog/best-chrome-privacy-extensions-2026-complete-guide</loc>
     <lastmod>2026-03-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/onetab-extension-review-2026-boosting-productivity</loc>
@@ -2135,14 +2390,26 @@
   <url>
     <loc>https://extensionto.com/blog/best-ram-saving-extensions-2026</loc>
     <lastmod>2026-03-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-ram-saving-extensions-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-ram-saving-extensions-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-ram-saving-extensions-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-ram-saving-extensions-2026"/>
   </url>
   <url>
     <loc>https://extensionto.com/fr/blog/best-ram-saving-extensions-2026</loc>
     <lastmod>2026-03-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-ram-saving-extensions-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-ram-saving-extensions-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-ram-saving-extensions-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-ram-saving-extensions-2026"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog/best-ram-saving-extensions-2026</loc>
     <lastmod>2026-03-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-ram-saving-extensions-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-ram-saving-extensions-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-ram-saving-extensions-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-ram-saving-extensions-2026"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/how-to-use-desktop-extensions-on-phone</loc>
@@ -2283,6 +2550,9 @@
   <url>
     <loc>https://extensionto.com/blog/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed</loc>
     <lastmod>2026-03-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://extensionto.com/ar/blog/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/ublock-origin-vs-ghostery-for-chrome-android</loc>
@@ -2571,6 +2841,10 @@
   <url>
     <loc>https://extensionto.com/blog/best-lightweight-popup-blocker-chrome</loc>
     <lastmod>2026-03-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-lightweight-popup-blocker-chrome"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-lightweight-popup-blocker-chrome"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-lightweight-popup-blocker-chrome"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-lightweight-popup-blocker-chrome"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/unlocking-online-privacy-ghostery-for-chrome-android</loc>
@@ -2591,10 +2865,18 @@
   <url>
     <loc>https://extensionto.com/fr/blog/best-lightweight-popup-blocker-chrome</loc>
     <lastmod>2026-03-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-lightweight-popup-blocker-chrome"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-lightweight-popup-blocker-chrome"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-lightweight-popup-blocker-chrome"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-lightweight-popup-blocker-chrome"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog/best-lightweight-popup-blocker-chrome</loc>
     <lastmod>2026-03-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/best-lightweight-popup-blocker-chrome"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/best-lightweight-popup-blocker-chrome"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/best-lightweight-popup-blocker-chrome"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/best-lightweight-popup-blocker-chrome"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/how-to-get-a-clean-browsing-experience-on-chrome-4</loc>
@@ -2639,6 +2921,10 @@
   <url>
     <loc>https://extensionto.com/blog/how-to-store-passwords-safely-in-your-browser</loc>
     <lastmod>2026-03-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/how-to-store-passwords-safely-in-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/how-to-store-passwords-safely-in-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/how-to-store-passwords-safely-in-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/how-to-store-passwords-safely-in-your-browser"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/best-local-password-manager-for-chrome-2026-1</loc>
@@ -2647,10 +2933,18 @@
   <url>
     <loc>https://extensionto.com/fr/blog/how-to-store-passwords-safely-in-your-browser</loc>
     <lastmod>2026-03-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/how-to-store-passwords-safely-in-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/how-to-store-passwords-safely-in-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/how-to-store-passwords-safely-in-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/how-to-store-passwords-safely-in-your-browser"/>
   </url>
   <url>
     <loc>https://extensionto.com/es/blog/how-to-store-passwords-safely-in-your-browser</loc>
     <lastmod>2026-03-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog/how-to-store-passwords-safely-in-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog/how-to-store-passwords-safely-in-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog/how-to-store-passwords-safely-in-your-browser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/how-to-store-passwords-safely-in-your-browser"/>
   </url>
   <url>
     <loc>https://extensionto.com/blog/why-you-should-avoid-cloud-based-password-managers-2</loc>
