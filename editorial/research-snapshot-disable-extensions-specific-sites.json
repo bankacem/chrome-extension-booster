@@ -1,0 +1,78 @@
+{
+  "keyword": "how to disable chrome extensions on specific sites",
+  "captured_at": "2026-08-29",
+  "source": "z-ai web_search API, real SERP, query: \"how to disable chrome extension on specific sites only\"",
+  "note": "Data-only competitor snapshot. Structure fields estimated from SERP snippets where the page itself could not be fetched (bot-protected). Audited by the coordinating session.",
+  "top_results": [
+    {
+      "rank": 1,
+      "title": "Enable/disable Chrome extensions per site (via white or blacklist)",
+      "url": "https://superuser.com/questions/enable-disable-chrome-extensions-per-site",
+      "snippet": "Q&A: user asks how to enable or disable Chrome extensions per site via whitelist or blacklist; accepted answer is developer-oriented (manifest matches, content_scripts).",
+      "page_title": "search result only",
+      "h2s": [],
+      "word_count_estimate": "400-800 (forum thread)",
+      "has_faq_signal": "no",
+      "has_table_signal": "no",
+      "type": "forum_qa"
+    },
+    {
+      "rank": 2,
+      "title": "How to automatically disable Extensions for ONLY specific websites",
+      "url": "https://www.reddit.com/r/chrome/comments/disable_extensions_only_specific_websites/",
+      "snippet": "Reddit thread: users suggest chrome://extensions site access dropdown, but thread devolves into extensions recommendations; no systematic walkthrough.",
+      "page_title": "search result only",
+      "h2s": [],
+      "word_count_estimate": "300-700 (thread)",
+      "has_faq_signal": "no",
+      "has_table_signal": "no",
+      "type": "forum_thread"
+    },
+    {
+      "rank": 3,
+      "title": "Allow or block access to websites - Chrome Enterprise and Education Help",
+      "url": "https://support.google.com/chrome/a/answer/9845881?hl=en",
+      "snippet": "Official Google admin documentation for URLBlocklist/URLAllowlist enterprise policies — aimed at IT administrators managing fleets, not consumers who want per-site extension control on their own browser.",
+      "page_title": "search result only",
+      "h2s": [],
+      "word_count_estimate": "900-1400",
+      "has_faq_signal": "no",
+      "has_table_signal": "yes (policy value table)",
+      "type": "enterprise_docs"
+    },
+    {
+      "rank": 4,
+      "title": "Disable extensions on specific websites | Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/disable-extensions-on-specific-websites",
+      "snippet": "Vivaldi browser forum discussion — different browser entirely; confirms demand for per-site extension control but offers no Chrome answer.",
+      "page_title": "search result only",
+      "h2s": [],
+      "word_count_estimate": "200-500 (thread)",
+      "has_faq_signal": "no",
+      "has_table_signal": "no",
+      "type": "other_browser_forum"
+    },
+    {
+      "rank": 5,
+      "title": "How to Disable a Chrome Extension on Specific Websites",
+      "url": "https://chromestory.com/how-to-disable-a-chrome-extension-on-specific-websites/",
+      "snippet": "Small blog guide covering chrome://extensions > Details > Site access (On click, On specific sites, On all sites). Page could not be fully fetched (bot-protected) but SERP snippet confirms it covers the Site access dropdown only.",
+      "page_title": "search result only",
+      "h2s": [],
+      "word_count_estimate": "600-1000",
+      "has_faq_signal": "unknown",
+      "has_table_signal": "no",
+      "type": "thin_blog_guide"
+    }
+  ],
+  "observed_gaps": [
+    "No major publication in the SERP — ranks 1, 2, 4 are forum threads and rank 4 is for a different browser (Vivaldi)",
+    "No guide explains the THREE site-access modes (On click / On specific sites / On all sites) and when each is the right choice",
+    "No guide covers changing site access AFTER an extension is already misbehaving on one site (debugging workflow)",
+    "No coverage of per-site permission prompts (camera/location/microphone) vs extension site access — users conflate the two",
+    "No decision framework: when to use site access vs when to use a separate profile vs container-style workflows",
+    "No coverage of what happens to extension functionality when you restrict site access (what breaks, what doesn't)",
+    "Nothing about performance/privacy payoff: restricting 'On all sites' extensions reduces background data access",
+    "FAQ/PAA coverage absent — real user questions like 'why does my extension still see all sites after changing settings' unanswered"
+  ]
+}

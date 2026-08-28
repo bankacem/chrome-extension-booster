@@ -816,5 +816,45 @@
     ],
     "human_review_required": true,
     "auto_publish": false
+  },
+  {
+    "keyword": "how to disable chrome extensions on specific sites",
+    "model": "gorouter-claude-opus-5",
+    "revision_count": 1,
+    "score": 78,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "Broken Markdown that will render wrong on publish: six of the ten \"On this page\" TOC entries are prefixed with `##` (e.g. `## - [Method 1: ...]`), turning list items into H2 headings. This pollutes the document outline with duplicate/garbled H2s and will corrupt any auto-generated TOC or heading-based SERP features.",
+      "Method 1's step 4 is written as `## 4. Choose one of the three options...`, injecting a heading into the middle of the ordered list. This breaks the list into two lists (step 5 will restart numbering in most Markdown renderers) and adds another bogus H2.",
+      "FAQ answer 1 gives actively bad advice: \"set it to On specific sites and list every site *except* that one\" is not a real option — it implies enumerating the entire web. The body section handles this correctly (On click, or the policy blocklist), so the FAQ contradicts the article's own, better answer. Cut the first clause.",
+      "Method 3's steps are not actually executable as written. Step 2 names four platforms but gives no location for any of them (no `/etc/opt/chrome/policies/managed/` path on Linux, no `Software\\Policies\\Google\\Chrome` registry location, no Admin console navigation), and step 3 says \"write the JSON\" without saying where. For an article whose stated angle is a single ladder written for the ordinary user first, this is the rung that breaks — a reader who reaches Method 3 still has to leave the page.",
+      "The JSON snippet shows only the inner value keyed by extension ID, without showing it nested under the `ExtensionSettings` key (and without noting that on Windows the whole thing is supplied as a single string value). A reader copying the block as-is has no way to know what wraps it.",
+      "No guidance on obtaining the extension ID needed for Method 3 — the placeholder `abcdefghijklmnopabcdefghijklmnop` appears with no note that IDs are visible on `chrome://extensions` (with Developer mode on, or from the item's URL). Small omission, but it blocks the step.",
+      "The brief asks for a pros/cons *list* for Site access UI vs policy; the section delivers four run-together bold-labelled sentences instead. The content is there but it is the least scannable block on the page, which matters for the one comparison a reader is most likely to skim.",
+      "The comparison table implies the puzzle-piece menu is less capable than the Site access page (\"Allowlist: Partial\" vs \"Yes\") when both write to the same host-permission setting; \"Partial\" is never explained. Either define what is partial about it or align the row with reality (same capability, faster path, current site only).",
+      "The pattern cap in Method 3 is mentioned only as \"Chrome's documentation also caps how many host patterns a policy can carry\" — the actual figure is documented and stating it would make the advice to prefer wildcards concrete rather than hand-wavy.",
+      "Heavy internal repetition: the hard-reload point appears in Key Takeaways, Method 1 step 6, the verification checklist, troubleshooting, and the FAQ; the `www`-is-a-subdomain point appears three times. Some FAQ overlap is expected, but this pushes the piece well past the 1600-word target (roughly 2,200+) without adding information.",
+      "Minor: \"FAQ: Frequently Asked Questions\" is redundant, and \"Since the arrival of the 'extension host permission' controls\" is a vague half-reference that would read better either named properly or dropped."
+    ],
+    "category": "Chrome Extensions",
+    "final_status": "published",
+    "competitor_source": "manual_real_search",
+    "competitor_count": 5,
+    "competitor_urls": [
+      "https://superuser.com/questions/enable-disable-chrome-extensions-per-site",
+      "https://www.reddit.com/r/chrome/comments/disable_extensions_only_specific_websites/",
+      "https://support.google.com/chrome/a/answer/9845881?hl=en",
+      "https://forum.vivaldi.net/topic/disable-extensions-on-specific-websites",
+      "https://chromestory.com/how-to-disable-a-chrome-extension-on-specific-websites/"
+    ],
+    "gaps_added_titles": [],
+    "word_count": 0,
+    "new_lessons": [],
+    "new_positive_patterns": [],
+    "gsc_learning_eligible": false,
+    "gsc_evidence": {},
+    "recorded_at": "2026-08-28T20:05:37.207877+00:00"
   }
 ]
