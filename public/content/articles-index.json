@@ -1,5 +1,37 @@
 [
   {
+    "id": "a1b2c3d4-mgmt-0005",
+    "title": "How to Manage Chrome Extensions: Organize, Disable, and Clean Up in 2026",
+    "slug": "how-to-manage-chrome-extensions-organize-disable-clean-up",
+    "description": "Learn how to organize, group, disable, and manage Chrome extensions efficiently. Includes keyboard shortcuts, the toolbar pin system, and a cleanup workflow for removing unused extensions.",
+    "meta_description": "Learn how to organize, group, disable, and manage Chrome extensions efficiently. Includes keyboard shortcuts, the toolbar pin system, and a cleanup workflow for removing unused extensions.",
+    "excerpt": "A practical guide to organizing your Chrome extensions, disabling unused ones, creating extension groups, and using keyboard shortcuts for faster access.",
+    "published_at": "2026-08-28T12:00:00+01:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/how-to-manage-chrome-extensions-organize-disable-clean-up/featured.webp",
+    "featured_image": "/content/images/how-to-manage-chrome-extensions-organize-disable-clean-up/featured.webp",
+    "reading_time": 7,
+    "read_time": 7,
+    "views": 0,
+    "tags": [
+      "organization",
+      "management",
+      "chrome extensions",
+      "productivity",
+      "keyboard shortcuts"
+    ],
+    "keywords": [
+      "how to manage chrome extensions",
+      "organize chrome extensions",
+      "disable chrome extensions",
+      "chrome extension groups",
+      "chrome extension keyboard shortcuts"
+    ],
+    "canonicalPath": "/blog/how-to-manage-chrome-extensions-organize-disable-clean-up",
+    "updated_at": "2026-08-24T12:00:00+01:00"
+  },
+  {
     "id": "a1b2c3d4-mv3-0004",
     "title": "Chrome Manifest V3 Migration Guide: What Users Need to Know in 2026",
     "slug": "chrome-manifest-v3-migration-guide-what-users-need-to-know",
