@@ -1,5 +1,35 @@
 [
   {
+    "id": "a1b2c3d4-mv3-0004",
+    "title": "Chrome Manifest V3 Migration Guide: What Users Need to Know in 2026",
+    "slug": "chrome-manifest-v3-migration-guide-what-users-need-to-know",
+    "description": "Understand Chrome Manifest V3 migration in 2026: check an extension's status, permissions, compatibility, and safer next steps if an older extension stops working.",
+    "meta_description": "Understand Chrome Manifest V3 migration in 2026: check an extension's status, permissions, compatibility, and safer next steps if an older extension stops working.",
+    "excerpt": "A practical user guide to Chrome's Manifest V2 phase-out: what changes, how to check an extension, and what to do when an older extension stops working.",
+    "published_at": "2026-08-27T12:00:00+01:00",
+    "category": "Chrome Extensions",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-manifest-v3-migration-guide-what-users-need-to-know/chrome-manifest-v3-migration-guide-what-users-need-to-know-1.webp",
+    "featured_image": "/content/images/chrome-manifest-v3-migration-guide-what-users-need-to-know/chrome-manifest-v3-migration-guide-what-users-need-to-know-1.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "manifest v3",
+      "chrome extensions",
+      "migration",
+      "chrome web store"
+    ],
+    "keywords": [
+      "chrome manifest v3 migration",
+      "manifest v2 deprecated",
+      "chrome extension not working 2026",
+      "what is manifest v3"
+    ],
+    "canonicalPath": "/blog/chrome-manifest-v3-migration-guide-what-users-need-to-know",
+    "updated_at": "2026-08-28T03:00:00+00:00"
+  },
+  {
     "id": "a1b2c3d4-remote-0003",
     "title": "Best Chrome Extensions for Remote Workers in 2026: Tools That Actually Help",
     "slug": "best-chrome-extensions-for-remote-workers-2026",
