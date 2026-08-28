@@ -52,15 +52,18 @@ jobs:
           from datetime import datetime, timezone
           from pathlib import Path
 
+          # Only the current production schedule sources participate in release selection.
+          # Retired test/overlap schedules remain in the repository for audit history but
+          # must not compete with the active one-article-per-day sequence.
           schedule_paths = [
-              Path('editorial/publishing-schedule-day-1-live-test.json'),
-              Path('editorial/publishing-schedule-50-active.json'),
               Path('editorial/publishing-schedule-competitive-seo.json'),
               Path('editorial/publishing-schedule-remaining-batch.json'),
           ]
-          schedules = [json.loads(p.read_text()) for p in schedule_paths if p.exists()]
           all_entries = []
-          for path, schedule in zip(schedule_paths, schedules):
+          for path in schedule_paths:
+              if not path.exists():
+                  continue
+              schedule = json.loads(path.read_text())
               for entry in schedule.get('entries', []):
                   item = dict(entry)
                   item['_schedule_file'] = str(path)
