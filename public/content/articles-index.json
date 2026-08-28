@@ -18293,5 +18293,38 @@
     ],
     "canonicalPath": "/blog/internet-download-manager-extension",
     "updated_at": "2026-08-21T00:00:00.000Z"
+  },
+  {
+    "id": "b7f3a2d1-9c46-4e58-8a1f-3d5e7c92b4a0",
+    "title": "How to Remove a Chrome Extension Installed by Enterprise Policy (2026)",
+    "slug": "remove-chrome-extension-installed-by-enterprise-policy",
+    "description": "A tested, step-by-step ladder for removing policy-forced Chrome extensions on Windows, macOS, and Linux — plus how to tell malware from real IT management.",
+    "meta_description": "Chrome extension won't uninstall? Learn to diagnose chrome://policy, clear registry and profile policies, and stop the extension from coming back.",
+    "excerpt": "Can't uninstall a Chrome extension because it's 'installed by your administrator'? Here's the full removal ladder for Windows, macOS, and Linux in Chrome 130+.",
+    "published_at": "2026-08-29T12:00:00.000+00:00",
+    "category": "Security & Privacy",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "extensions",
+      "enterprise policy",
+      "malware removal",
+      "windows",
+      "macos"
+    ],
+    "keywords": [
+      "remove chrome extension installed by enterprise policy",
+      "managed by your organization chrome extension",
+      "chrome extension won't uninstall",
+      "force remove chrome extension",
+      "installed by your administrator chrome extension"
+    ],
+    "canonicalPath": "/blog/remove-chrome-extension-installed-by-enterprise-policy",
+    "updated_at": "2026-08-29T12:00:00.000+00:00"
   }
 ]
