@@ -88,7 +88,7 @@ jobs:
               print(f'Already published or not a draft: {slug}; exiting idempotently.')
               raise SystemExit(0)
 
-          refs = re.findall(r'!\[[^\]]*\]\((/content/images/[^)]+\.webp)\)', text)
+          refs = re.findall(r'!\[[^\]]*\]\((/content/images/[^)]+\.webp)(?:\s+"[^"]*")?\)', text)
           if not refs:
               raise SystemExit(f'Visual gate failed: no inline WebP in {slug}')
           for ref in refs:
