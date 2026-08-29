@@ -33,6 +33,37 @@
     "updated_at": "2026-08-29T12:00:00.000+00:00"
   },
   {
+    "id": "a1b2c3d4-priv-0006",
+    "title": "Chrome Extensions That Actually Respect Your Privacy in 2026",
+    "slug": "chrome-extensions-that-actually-respect-your-privacy",
+    "description": "Analysis of which Chrome extensions actually protect your privacy versus which ones collect data. Covers open-source options, data practices, and configuration tips for maximum privacy.",
+    "meta_description": "Analysis of which Chrome extensions actually protect your privacy versus which ones collect data. Covers open-source options, data practices, and configuration tips for maximum privacy.",
+    "excerpt": "Not all privacy extensions are equally private. Some collect data while claiming to protect it. We analyzed the data practices of 15 popular privacy-focused Chrome extensions.",
+    "published_at": "2026-08-29T12:00:00+01:00",
+    "category": "Security & Privacy",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extensions-that-actually-respect-your-privacy/featured.webp",
+    "featured_image": "/content/images/chrome-extensions-that-actually-respect-your-privacy/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "privacy",
+      "data collection",
+      "open source",
+      "tracking",
+      "chrome extensions"
+    ],
+    "keywords": [
+      "chrome extensions that respect privacy",
+      "privacy chrome extensions no tracking",
+      "chrome extension data collection",
+      "private browsing extensions"
+    ],
+    "canonicalPath": "/blog/chrome-extensions-that-actually-respect-your-privacy",
+    "updated_at": "2026-08-24T12:00:00+01:00"
+  },
+  {
     "id": "a1b2c3d4-mgmt-0005",
     "title": "How to Manage Chrome Extensions: Organize, Disable, and Clean Up in 2026",
     "slug": "how-to-manage-chrome-extensions-organize-disable-clean-up",
