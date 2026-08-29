@@ -13,7 +13,7 @@ keywords:
   - chrome extension data collection
   - private browsing extensions
 meta_description: "Analysis of which Chrome extensions actually protect your privacy versus which ones collect data. Covers open-source options, data practices, and configuration tips for maximum privacy."
-status: draft
+status: published
 published_at: "2026-08-29T12:00:00+01:00"
 scheduled_at: "2026-08-29T12:00:00+01:00"
 author: "James Mitchell"
