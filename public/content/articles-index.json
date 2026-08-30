@@ -1,5 +1,38 @@
 [
   {
+    "id": "a1b2c3d4-perf-0007",
+    "title": "How to Speed Up a Slow Chrome Browser: 8 Proven Fixes That Make a Real Difference",
+    "slug": "how-to-speed-up-a-slow-chrome-browser",
+    "description": "Fix a slow Chrome browser with 8 proven methods: clear cache, remove heavy extensions, disable hardware acceleration, enable Memory Saver, and more.",
+    "meta_description": "Fix a slow Chrome browser with 8 proven methods: clear cache, remove heavy extensions, disable hardware acceleration, enable Memory Saver, and more.",
+    "excerpt": "Chrome slows down over time due to accumulated cache data, bloated extensions, hardware acceleration conflicts, and memory-heavy tabs. This guide covers eight measurable fixes that restore Chrome's speed, from quick cache clears to advanced flag tweaks and extension audits.",
+    "published_at": "2026-08-30T11:00:00Z",
+    "category": "Performance & Memory",
+    "author": "James Mitchell",
+    "image_url": "/content/images/how-to-speed-up-a-slow-chrome-browser/featured.webp",
+    "featured_image": "/content/images/how-to-speed-up-a-slow-chrome-browser/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "performance",
+      "speed",
+      "optimization",
+      "cache",
+      "memory",
+      "troubleshooting"
+    ],
+    "keywords": [
+      "how to speed up a slow chrome browser",
+      "chrome running slow fix",
+      "make google chrome faster",
+      "chrome lagging on windows",
+      "chrome browser optimization tips"
+    ],
+    "canonicalPath": "/blog/how-to-speed-up-a-slow-chrome-browser",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
     "id": "b7f3a2d1-9c46-4e58-8a1f-3d5e7c92b4a0",
     "title": "How to Remove a Chrome Extension Installed by Enterprise Policy (2026)",
     "slug": "remove-chrome-extension-installed-by-enterprise-policy",
