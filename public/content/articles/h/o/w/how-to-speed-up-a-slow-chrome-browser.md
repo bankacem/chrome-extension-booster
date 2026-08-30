@@ -14,7 +14,7 @@ keywords:
   - chrome lagging on windows
   - chrome browser optimization tips
 meta_description: "Fix a slow Chrome browser with 8 proven methods: clear cache, remove heavy extensions, disable hardware acceleration, enable Memory Saver, and more."
-status: draft
+status: published
 published_at: "2026-08-30T11:00:00Z"
 scheduled_at: "2026-08-30T11:00:00Z"
 author: "James Mitchell"
