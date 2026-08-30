@@ -140,3 +140,18 @@ log and know exactly where things stand without re-reading the whole repo.
 - **Open decision for the person**: confirm whether to close PR #243.
 - **Nothing left mid-flight**: no article refinement in progress, no
   uncommitted changes.
+
+## Session log — 2026-08-31: pilot-batch-002-republish (main Super Z session)
+
+- Environment reset twice mid-task; repo recloned from origin/main (469bcad). The earlier
+  local-only commits (a5ae15f/a867a9d) were lost and fully reproduced from the briefs-first
+  workflow; nothing was pushed before the reset, so no divergent history exists.
+- Published 5 EN guides (pilot-batch-002): betterttv-google-chrome-guide,
+  agenda-hero-chrome-extension-guide, blackbox-ai-chrome-extension-guide,
+  chrome-web-store-firefox-extensions-guide, chrome-samsung-smart-tv-casting-guide.
+- Pipeline: batch002_briefs.py -> batch002_generate.py (gorouter claude-opus-5, raw kept in
+  scripts/raw_articles/) -> batch002_images.py (PIL featured+steps+tips, WebP; AVIF via
+  optimize-images) -> batch002_index.py (index 769->774, sitemap 826->831) -> build gates.
+- Learning persisted to memory/cycle_log.json (1 consolidated record) and memory/lessons.md
+  ('pilot-batch-002-republish' section).
+- These 5 slugs are now PUBLISHED — do not re-select them as candidates.

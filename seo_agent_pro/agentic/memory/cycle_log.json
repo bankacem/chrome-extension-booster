@@ -856,5 +856,48 @@
     "gsc_learning_eligible": false,
     "gsc_evidence": {},
     "recorded_at": "2026-08-28T20:05:37.207877+00:00"
+  },
+  {
+    "keyword": "pilot-batch-002-republish (5 topics)",
+    "model": "gorouter-claude-opus-5",
+    "revision_count": 1,
+    "score": 95,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "Marginal gate misses on first pass (table line-count threshold) for 2/5 articles; fixed by counting header+data rows (>=5) instead of separator-inclusive lines.",
+      "gorouter 524/403 under concurrency; solved with sequential retry + backoff and REUSE_RAW replay."
+    ],
+    "notes": [
+      "BRIEFS-FIRST PATTERN: writing seo_title/meta_description/excerpt/FAQ-hints/internal-link-targets/image-content in a Python briefs module BEFORE calling the LLM eliminates 90% of metadata QA failures — the LLM never touches metadata.",
+      "LLM OUTPUT CONTRACT: forbid frontmatter/H1/images in the system prompt, then strip defensively (fences, YAML, H1, img tags) and inject featured/steps/tips images programmatically at fixed anchors (after Key Takeaways, before FAQ). Deterministic > trusting the model.",
+      "GATE THRESHOLDS that worked: body 2300-3600 words, >=3 '### Step N' ladder, >=2 H4, >=5 table pipe-lines, 2-3 internal links (exact /blog/ slugs from live index), >=3 external links, '## Sources' section, FAQ >=4 after regex extraction, zero cliché list.",
+      "IMAGE PIPELINE: PIL-generated 1200x630 featured with seo_title text overlay + 1200x750 steps card-grid + do/don't tips panels, WebP q86-88, AVIF via repo sharp optimize pass. Keep card body <=2 lines (wrap 52 chars @19px) or text overflows card bounds.",
+      "RETRY POLICY: gorouter intermittently returns 524/403 under 3-way concurrency; sequential retries after 45-90s backoff succeed. Raw outputs saved to raw_articles/ so post-processing can be replayed (REUSE_RAW=1) without burning API quota.",
+      "FAQ EXTRACTION: parse '### ' questions under '## Frequently Asked Questions' -> frontmatter faq list guarantees body/JSON-LD parity in one pass."
+    ],
+    "slugs": [
+      "betterttv-google-chrome-guide",
+      "agenda-hero-chrome-extension-guide",
+      "blackbox-ai-chrome-extension-guide",
+      "chrome-web-store-firefox-extensions-guide",
+      "chrome-samsung-smart-tv-casting-guide"
+    ],
+    "word_counts": [
+      3405,
+      3596,
+      3578,
+      3392,
+      3567
+    ],
+    "published_urls": [
+      "https://extensionto.com/blog/betterttv-google-chrome-guide",
+      "https://extensionto.com/blog/agenda-hero-chrome-extension-guide",
+      "https://extensionto.com/blog/blackbox-ai-chrome-extension-guide",
+      "https://extensionto.com/blog/chrome-web-store-firefox-extensions-guide",
+      "https://extensionto.com/blog/chrome-samsung-smart-tv-casting-guide"
+    ],
+    "timestamp": "2026-08-30T23:09:26.718716+00:00"
   }
 ]

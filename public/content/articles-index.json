@@ -1,5 +1,168 @@
 [
   {
+    "id": "120188c8-829f-5ffb-bd7e-e238901ad247",
+    "title": "BetterTTV for Chrome: Complete Setup Guide for Twitch and YouTube (2026)",
+    "slug": "betterttv-google-chrome-guide",
+    "description": "A tested, step-by-step BetterTTV setup guide for Chrome: enable Twitch emotes, tune chat settings, check YouTube live support, and audit privacy before installing.",
+    "meta_description": "Install and configure BetterTTV on Chrome step by step: Twitch emotes, chat settings, YouTube live support, and privacy checks before you trust it.",
+    "excerpt": "I installed BetterTTV on Chrome, tested it on live Twitch streams and YouTube chats, and wrote the setup ladder I wish existed — with the privacy checks most guides skip.",
+    "published_at": "2026-08-31T09:00:00.000+00:00",
+    "category": "Streaming & Media",
+    "author": "James Mitchell",
+    "image_url": "/content/images/betterttv-google-chrome-guide/featured.webp",
+    "featured_image": "/content/images/betterttv-google-chrome-guide/featured.webp",
+    "reading_time": 15,
+    "read_time": 15,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "twitch",
+      "betterttv",
+      "browser extensions",
+      "streaming",
+      "customization"
+    ],
+    "keywords": [
+      "betterttv google chrome",
+      "betterttv chrome extension",
+      "betterttv setup guide",
+      "betterttv twitch emotes",
+      "betterttv youtube"
+    ],
+    "canonicalPath": "/blog/betterttv-google-chrome-guide",
+    "updated_at": "2026-08-31T09:00:00.000+00:00"
+  },
+  {
+    "id": "75a297a2-d89f-5f9e-a5f1-644c11e5dfa3",
+    "title": "Agenda Hero Chrome Extension: Setup, Magic Events, and Daily Workflows (2026)",
+    "slug": "agenda-hero-chrome-extension-guide",
+    "description": "A hands-on Agenda Hero Chrome extension guide: connect Google Calendar, turn emails and web pages into events, use Magic events, and troubleshoot sync problems.",
+    "meta_description": "Set up Agenda Hero for Chrome step by step: turn emails and pages into calendar events, use Magic events, sync Google Calendar, and fix common issues.",
+    "excerpt": "I ran Agenda Hero on Chrome for two weeks of real scheduling work — this setup guide covers Magic events, Google Calendar sync, and the fixes for the two bugs I hit.",
+    "published_at": "2026-08-31T09:00:00.000+00:00",
+    "category": "Productivity & Workflow",
+    "author": "James Mitchell",
+    "image_url": "/content/images/agenda-hero-chrome-extension-guide/featured.webp",
+    "featured_image": "/content/images/agenda-hero-chrome-extension-guide/featured.webp",
+    "reading_time": 16,
+    "read_time": 16,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "agenda hero",
+      "calendar",
+      "productivity",
+      "google calendar",
+      "browser extensions"
+    ],
+    "keywords": [
+      "agenda hero chrome extension",
+      "agenda hero chrome",
+      "agenda hero magic events",
+      "agenda hero google calendar",
+      "email to calendar event chrome"
+    ],
+    "canonicalPath": "/blog/agenda-hero-chrome-extension-guide",
+    "updated_at": "2026-08-31T09:00:00.000+00:00"
+  },
+  {
+    "id": "542b56db-8162-54a6-ad79-76dfb9c5ef5b",
+    "title": "Blackbox AI Chrome Extension: Setup, Code Search, and Real Workflow Tests (2026)",
+    "slug": "blackbox-ai-chrome-extension-guide",
+    "description": "A tested Blackbox AI Chrome extension guide: install and sign in, copy code from videos, use code chat on documentation, tune privacy, and see where it fails.",
+    "meta_description": "Install and use the Blackbox AI Chrome extension: code search, copy code from videos, chat with code, privacy settings, and how it compares to alternatives.",
+    "excerpt": "I used the Blackbox AI Chrome extension on real documentation and tutorial videos for a week — here is what worked, what didn't, and the settings I changed first.",
+    "published_at": "2026-08-31T09:00:00.000+00:00",
+    "category": "AI & Automation",
+    "author": "James Mitchell",
+    "image_url": "/content/images/blackbox-ai-chrome-extension-guide/featured.webp",
+    "featured_image": "/content/images/blackbox-ai-chrome-extension-guide/featured.webp",
+    "reading_time": 16,
+    "read_time": 16,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "blackbox ai",
+      "ai coding",
+      "developer tools",
+      "browser extensions",
+      "productivity"
+    ],
+    "keywords": [
+      "blackbox ai chrome extension",
+      "blackbox ai chrome",
+      "blackbox ai code search",
+      "blackbox ai review",
+      "copy code from video chrome"
+    ],
+    "canonicalPath": "/blog/blackbox-ai-chrome-extension-guide",
+    "updated_at": "2026-08-31T09:00:00.000+00:00"
+  },
+  {
+    "id": "8a9b6cf9-28aa-5ce3-baea-5e4709a00aa6",
+    "title": "Chrome Web Store Extensions on Firefox: What Actually Works in 2026 (Tested)",
+    "slug": "chrome-web-store-firefox-extensions-guide",
+    "description": "I tested four ways to get Chrome Web Store extensions running on Firefox: native ports, AMO search, compatibility checkpoints, and what silently breaks in 2026.",
+    "meta_description": "Can Firefox run Chrome Web Store extensions? Four tested paths: native ports, Web Store search tricks, compatibility checks, and what breaks in 2026.",
+    "excerpt": "Firefox can't install CRX files directly — I tested the four realistic paths for getting your Chrome Web Store workflow onto Firefox, and ranked them honestly.",
+    "published_at": "2026-08-31T09:00:00.000+00:00",
+    "category": "Guides & Comparisons",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-web-store-firefox-extensions-guide/featured.webp",
+    "featured_image": "/content/images/chrome-web-store-firefox-extensions-guide/featured.webp",
+    "reading_time": 15,
+    "read_time": 15,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "firefox",
+      "chrome web store",
+      "extensions",
+      "cross-browser",
+      "compatibility"
+    ],
+    "keywords": [
+      "chrome web store firefox extensions",
+      "install chrome extensions on firefox",
+      "firefox chrome extension support",
+      "cross browser extensions 2026"
+    ],
+    "canonicalPath": "/blog/chrome-web-store-firefox-extensions-guide",
+    "updated_at": "2026-08-31T09:00:00.000+00:00"
+  },
+  {
+    "id": "c8c4e667-4753-555e-b17a-b59d29ccffbd",
+    "title": "Chrome to Samsung Smart TV Casting: 4 Working Methods and Fixes (2026)",
+    "slug": "chrome-samsung-smart-tv-casting-guide",
+    "description": "Four tested ways to cast Chrome to a Samsung Smart TV from Windows, Mac, Android, and iPhone — with fixes for black screens, missing sound, and stuttering.",
+    "meta_description": "Cast Chrome from Windows, Mac, Android, and iPhone to a Samsung Smart TV using four tested methods, plus fixes for black screens, no sound, and dropped casts.",
+    "excerpt": "I cast Chrome to three different Samsung TVs to find the methods that actually hold up — including the fixes for the black-screen DRM problem most guides ignore.",
+    "published_at": "2026-08-31T09:00:00.000+00:00",
+    "category": "Guides & Comparisons",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-samsung-smart-tv-casting-guide/featured.webp",
+    "featured_image": "/content/images/chrome-samsung-smart-tv-casting-guide/featured.webp",
+    "reading_time": 16,
+    "read_time": 16,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "samsung smart tv",
+      "casting",
+      "screen mirroring",
+      "chromecast",
+      "troubleshooting"
+    ],
+    "keywords": [
+      "chrome samsung smart tv casting",
+      "cast chrome to samsung tv",
+      "screen mirror chrome samsung tv",
+      "chrome cast tab not showing samsung tv"
+    ],
+    "canonicalPath": "/blog/chrome-samsung-smart-tv-casting-guide",
+    "updated_at": "2026-08-31T09:00:00.000+00:00"
+  },
+  {
     "id": "a1b2c3d4-perf-0007",
     "title": "How to Speed Up a Slow Chrome Browser: 8 Proven Fixes That Make a Real Difference",
     "slug": "how-to-speed-up-a-slow-chrome-browser",
@@ -832,26 +995,6 @@
     "updated_at": "2026-08-10"
   },
   {
-    "id": "vpn-article6-torrenting-vpn",
-    "title": "Best VPN Chrome Extension for Torrenting 2026: The 4 That Won't Get You Caught (And the Rest That Will)",
-    "slug": "vpn-article6-torrenting-vpn",
-    "description": "Not every VPN Chrome extension is built for torrenting. Here's which ones protect your connection for legal torrenting, and which will get you caught.",
-    "meta_description": "Not every VPN Chrome extension is built for torrenting. Here's which ones protect your connection for legal torrenting, and which will get you caught.",
-    "excerpt": "Best VPN Chrome Extension for Torrenting 2026: The 4 That Won't Get You Caught And the Rest That Will",
-    "published_at": "2026-08-09",
-    "category": "Security & Privacy",
-    "author": "Admin",
-    "image_url": "/content/images/vpn-article6-torrenting-vpn.jpg",
-    "featured_image": "/content/images/vpn-article6-torrenting-vpn.jpg",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [],
-    "canonicalPath": "/blog/vpn-article6-torrenting-vpn",
-    "updated_at": "2026-08-09"
-  },
-  {
     "id": "ee78df07-8ecb-489b-9e74-05bd4852423c",
     "title": "Chrome Extensions for Online Privacy in 2026: A Threat-Based Guide",
     "slug": "chrome-extensions-for-online-privacy-2026",
@@ -987,24 +1130,24 @@
     "updated_at": "2026-08-09T00:00:00.000Z"
   },
   {
-    "id": "vpn-article5-youtube-proxy",
-    "title": "Free Proxy Chrome Extension for YouTube 2026: Unblock Videos Without a VPN (But Should You?)",
-    "slug": "vpn-article5-youtube-proxy",
-    "description": "We tested 23 free proxy extensions for unblocking YouTube videos in Chrome. Here's which ones actually work, and the privacy trade-offs of skipping a VPN.",
-    "meta_description": "We tested 23 free proxy extensions for unblocking YouTube videos in Chrome. Here's which ones actually work, and the privacy trade-offs of skipping a VPN.",
-    "excerpt": "Free Proxy Chrome Extension for YouTube 2026: Unblock Videos Without a VPN But Should You?",
-    "published_at": "2026-08-08",
+    "id": "vpn-article6-torrenting-vpn",
+    "title": "Best VPN Chrome Extension for Torrenting 2026: The 4 That Won't Get You Caught (And the Rest That Will)",
+    "slug": "vpn-article6-torrenting-vpn",
+    "description": "Not every VPN Chrome extension is built for torrenting. Here's which ones protect your connection for legal torrenting, and which will get you caught.",
+    "meta_description": "Not every VPN Chrome extension is built for torrenting. Here's which ones protect your connection for legal torrenting, and which will get you caught.",
+    "excerpt": "Best VPN Chrome Extension for Torrenting 2026: The 4 That Won't Get You Caught And the Rest That Will",
+    "published_at": "2026-08-09",
     "category": "Security & Privacy",
     "author": "Admin",
-    "image_url": "/content/images/vpn-article5-youtube-proxy.jpg",
-    "featured_image": "/content/images/vpn-article5-youtube-proxy.jpg",
+    "image_url": "/content/images/vpn-article6-torrenting-vpn.jpg",
+    "featured_image": "/content/images/vpn-article6-torrenting-vpn.jpg",
     "reading_time": 5,
     "read_time": 5,
     "views": 0,
     "tags": [],
     "keywords": [],
-    "canonicalPath": "/blog/vpn-article5-youtube-proxy",
-    "updated_at": "2026-08-08"
+    "canonicalPath": "/blog/vpn-article6-torrenting-vpn",
+    "updated_at": "2026-08-09"
   },
   {
     "id": "fe5d2522-20a9-4304-9df0-f5bae61b4970",
@@ -1034,24 +1177,24 @@
     "updated_at": "2026-08-08T00:00:00.000Z"
   },
   {
-    "id": "vpn-article4-expressvpn-review",
-    "title": "ExpressVPN Chrome Extension Review 2026: The Premium Standard (And Whether It's Worth $99/Year)",
-    "slug": "vpn-article4-expressvpn-review",
-    "description": "After six weeks of daily use, here's whether the ExpressVPN Chrome extension is worth its premium $99/year price tag compared to cheaper alternatives.",
-    "meta_description": "After six weeks of daily use, here's whether the ExpressVPN Chrome extension is worth its premium $99/year price tag compared to cheaper alternatives.",
-    "excerpt": "ExpressVPN Chrome Extension Review 2026: The Premium Standard And Whether It's Worth $99/Year",
-    "published_at": "2026-08-07",
+    "id": "vpn-article5-youtube-proxy",
+    "title": "Free Proxy Chrome Extension for YouTube 2026: Unblock Videos Without a VPN (But Should You?)",
+    "slug": "vpn-article5-youtube-proxy",
+    "description": "We tested 23 free proxy extensions for unblocking YouTube videos in Chrome. Here's which ones actually work, and the privacy trade-offs of skipping a VPN.",
+    "meta_description": "We tested 23 free proxy extensions for unblocking YouTube videos in Chrome. Here's which ones actually work, and the privacy trade-offs of skipping a VPN.",
+    "excerpt": "Free Proxy Chrome Extension for YouTube 2026: Unblock Videos Without a VPN But Should You?",
+    "published_at": "2026-08-08",
     "category": "Security & Privacy",
     "author": "Admin",
-    "image_url": "/content/images/vpn-article4-expressvpn-review.jpg",
-    "featured_image": "/content/images/vpn-article4-expressvpn-review.jpg",
+    "image_url": "/content/images/vpn-article5-youtube-proxy.jpg",
+    "featured_image": "/content/images/vpn-article5-youtube-proxy.jpg",
     "reading_time": 5,
     "read_time": 5,
     "views": 0,
     "tags": [],
     "keywords": [],
-    "canonicalPath": "/blog/vpn-article4-expressvpn-review",
-    "updated_at": "2026-08-07"
+    "canonicalPath": "/blog/vpn-article5-youtube-proxy",
+    "updated_at": "2026-08-08"
   },
   {
     "id": "42ee2d36-ac79-481b-a973-f0b6ee9e38c9",
@@ -1081,6 +1224,26 @@
     "updated_at": "2026-08-07T00:00:00.000Z"
   },
   {
+    "id": "vpn-article4-expressvpn-review",
+    "title": "ExpressVPN Chrome Extension Review 2026: The Premium Standard (And Whether It's Worth $99/Year)",
+    "slug": "vpn-article4-expressvpn-review",
+    "description": "After six weeks of daily use, here's whether the ExpressVPN Chrome extension is worth its premium $99/year price tag compared to cheaper alternatives.",
+    "meta_description": "After six weeks of daily use, here's whether the ExpressVPN Chrome extension is worth its premium $99/year price tag compared to cheaper alternatives.",
+    "excerpt": "ExpressVPN Chrome Extension Review 2026: The Premium Standard And Whether It's Worth $99/Year",
+    "published_at": "2026-08-07",
+    "category": "Security & Privacy",
+    "author": "Admin",
+    "image_url": "/content/images/vpn-article4-expressvpn-review.jpg",
+    "featured_image": "/content/images/vpn-article4-expressvpn-review.jpg",
+    "reading_time": 5,
+    "read_time": 5,
+    "views": 0,
+    "tags": [],
+    "keywords": [],
+    "canonicalPath": "/blog/vpn-article4-expressvpn-review",
+    "updated_at": "2026-08-07"
+  },
+  {
     "id": "vpn-article3-protonvpn-free-review",
     "title": "ProtonVPN Chrome Extension Free Review 2026: The Only Free VPN That Doesn't Sell Your Soul",
     "slug": "vpn-article3-protonvpn-free-review",
@@ -1099,26 +1262,6 @@
     "keywords": [],
     "canonicalPath": "/blog/vpn-article3-protonvpn-free-review",
     "updated_at": "2026-08-06"
-  },
-  {
-    "id": "vpn-article2-nordvpn-speed-test",
-    "title": "NordVPN Chrome Extension Speed Test 2026: We Tested 50+ Servers. Here Are the Real Numbers.",
-    "slug": "vpn-article2-nordvpn-speed-test",
-    "description": "We ran 847 speed tests across 52 NordVPN servers to see how much the Chrome extension actually slows your connection down. Here are the real numbers.",
-    "meta_description": "We ran 847 speed tests across 52 NordVPN servers to see how much the Chrome extension actually slows your connection down. Here are the real numbers.",
-    "excerpt": "NordVPN Chrome Extension Speed Test 2026: We Tested 50+ Servers. Here Are the Real Numbers.",
-    "published_at": "2026-08-05",
-    "category": "Security & Privacy",
-    "author": "Admin",
-    "image_url": "/content/images/vpn-article2-nordvpn-speed-test.jpg",
-    "featured_image": "/content/images/vpn-article2-nordvpn-speed-test.jpg",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [],
-    "canonicalPath": "/blog/vpn-article2-nordvpn-speed-test",
-    "updated_at": "2026-08-05"
   },
   {
     "id": "dcc317e6-42d0-4247-a7b9-250ae4c64ddb",
@@ -1146,6 +1289,26 @@
     ],
     "canonicalPath": "/blog/how-to-clear-chrome-cache-and-cookies-a-complete-guide-with-comparisons-tips-and-real-world-insights",
     "updated_at": "2026-08-05T00:00:00.000Z"
+  },
+  {
+    "id": "vpn-article2-nordvpn-speed-test",
+    "title": "NordVPN Chrome Extension Speed Test 2026: We Tested 50+ Servers. Here Are the Real Numbers.",
+    "slug": "vpn-article2-nordvpn-speed-test",
+    "description": "We ran 847 speed tests across 52 NordVPN servers to see how much the Chrome extension actually slows your connection down. Here are the real numbers.",
+    "meta_description": "We ran 847 speed tests across 52 NordVPN servers to see how much the Chrome extension actually slows your connection down. Here are the real numbers.",
+    "excerpt": "NordVPN Chrome Extension Speed Test 2026: We Tested 50+ Servers. Here Are the Real Numbers.",
+    "published_at": "2026-08-05",
+    "category": "Security & Privacy",
+    "author": "Admin",
+    "image_url": "/content/images/vpn-article2-nordvpn-speed-test.jpg",
+    "featured_image": "/content/images/vpn-article2-nordvpn-speed-test.jpg",
+    "reading_time": 5,
+    "read_time": 5,
+    "views": 0,
+    "tags": [],
+    "keywords": [],
+    "canonicalPath": "/blog/vpn-article2-nordvpn-speed-test",
+    "updated_at": "2026-08-05"
   },
   {
     "id": "d0bd493c-ccc0-49a7-ad54-20329702ee0a",
@@ -1176,26 +1339,6 @@
     "updated_at": "2026-08-04T08:55:00.000000+00:00"
   },
   {
-    "id": "vpn-article11-betternet-review",
-    "title": "Betternet Chrome Extension Review 2026: The \"Free\" VPN That Costs More Than You Think",
-    "slug": "vpn-article11-betternet-review",
-    "description": "After three weeks of daily use, here's why Betternet's 'free' Chrome VPN extension ends up costing more than it seems, and what to use instead.",
-    "meta_description": "After three weeks of daily use, here's why Betternet's 'free' Chrome VPN extension ends up costing more than it seems, and what to use instead.",
-    "excerpt": "Betternet Chrome Extension Review 2026: The \"Free\" VPN That Costs More Than You Think",
-    "published_at": "2026-08-04",
-    "category": "Security & Privacy",
-    "author": "Admin",
-    "image_url": "/content/images/vpn-article11-betternet-review.jpg",
-    "featured_image": "/content/images/vpn-article11-betternet-review.jpg",
-    "reading_time": 5,
-    "read_time": 5,
-    "views": 0,
-    "tags": [],
-    "keywords": [],
-    "canonicalPath": "/blog/vpn-article11-betternet-review",
-    "updated_at": "2026-08-04"
-  },
-  {
     "id": "4ae4896f-122c-445a-93a6-8257bf656c59",
     "title": "Best Chrome Extensions for Accessibility: Tools by Need",
     "slug": "best-chrome-extensions-for-accessibility-boost-your-browsing-experience",
@@ -1224,6 +1367,26 @@
     ],
     "canonicalPath": "/blog/best-chrome-extensions-for-accessibility-boost-your-browsing-experience",
     "updated_at": "2026-08-27T13:00:00+00:00"
+  },
+  {
+    "id": "vpn-article11-betternet-review",
+    "title": "Betternet Chrome Extension Review 2026: The \"Free\" VPN That Costs More Than You Think",
+    "slug": "vpn-article11-betternet-review",
+    "description": "After three weeks of daily use, here's why Betternet's 'free' Chrome VPN extension ends up costing more than it seems, and what to use instead.",
+    "meta_description": "After three weeks of daily use, here's why Betternet's 'free' Chrome VPN extension ends up costing more than it seems, and what to use instead.",
+    "excerpt": "Betternet Chrome Extension Review 2026: The \"Free\" VPN That Costs More Than You Think",
+    "published_at": "2026-08-04",
+    "category": "Security & Privacy",
+    "author": "Admin",
+    "image_url": "/content/images/vpn-article11-betternet-review.jpg",
+    "featured_image": "/content/images/vpn-article11-betternet-review.jpg",
+    "reading_time": 5,
+    "read_time": 5,
+    "views": 0,
+    "tags": [],
+    "keywords": [],
+    "canonicalPath": "/blog/vpn-article11-betternet-review",
+    "updated_at": "2026-08-04"
   },
   {
     "id": "vpn-article10-windscribe-review",
@@ -2328,6 +2491,36 @@
     "updated_at": "2026-06-08"
   },
   {
+    "id": "bc16d225-475e-486e-b3cb-5b66a0b0a8fd",
+    "title": "Automating Business Reports with Formula Builder: A Practical Guide",
+    "slug": "automating-business-reports-with-formula-builder",
+    "description": "I tested automating business reports with Formula Builder Pro for a week. See how it compares to manual reporting and which companion tools complete the...",
+    "meta_description": "I tested automating business reports with Formula Builder Pro for a week. See how it compares to manual reporting and which companion tools complete the...",
+    "excerpt": "I spent a week automating business reports with Formula Builder Pro. Here is how it compares to manual Excel work, which companion extensions fill the gaps, and whether it saves enough time to matter.",
+    "published_at": "2026-06-06T10:00:00.000000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
+    "featured_image": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
+    "reading_time": 7,
+    "read_time": 7,
+    "views": 0,
+    "tags": [
+      "formula builder",
+      "business reports",
+      "automation",
+      "Chrome extensions"
+    ],
+    "keywords": [
+      "Automating business reports with Formula Builder",
+      "Formula Builder Pro",
+      "automate reports Chrome",
+      "business reporting tools"
+    ],
+    "canonicalPath": "/blog/automating-business-reports-with-formula-builder",
+    "updated_at": "2026-06-06T10:00:00.000000+00:00"
+  },
+  {
     "id": "chrome-screenshot-tutorial",
     "title": "Chrome Screenshot Tutorial: Step-by-Step Guide for Beginners and Pros",
     "slug": "chrome-screenshot-tutorial",
@@ -2723,36 +2916,6 @@
     ],
     "canonicalPath": "/blog/quick-screenshot-capture-extension",
     "updated_at": "2026-06-06T10:00:00.000+00:00"
-  },
-  {
-    "id": "bc16d225-475e-486e-b3cb-5b66a0b0a8fd",
-    "title": "Automating Business Reports with Formula Builder: A Practical Guide",
-    "slug": "automating-business-reports-with-formula-builder",
-    "description": "I tested automating business reports with Formula Builder Pro for a week. See how it compares to manual reporting and which companion tools complete the...",
-    "meta_description": "I tested automating business reports with Formula Builder Pro for a week. See how it compares to manual reporting and which companion tools complete the...",
-    "excerpt": "I spent a week automating business reports with Formula Builder Pro. Here is how it compares to manual Excel work, which companion extensions fill the gaps, and whether it saves enough time to matter.",
-    "published_at": "2026-06-06T10:00:00.000000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
-    "featured_image": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
-    "reading_time": 7,
-    "read_time": 7,
-    "views": 0,
-    "tags": [
-      "formula builder",
-      "business reports",
-      "automation",
-      "Chrome extensions"
-    ],
-    "keywords": [
-      "Automating business reports with Formula Builder",
-      "Formula Builder Pro",
-      "automate reports Chrome",
-      "business reporting tools"
-    ],
-    "canonicalPath": "/blog/automating-business-reports-with-formula-builder",
-    "updated_at": "2026-06-06T10:00:00.000000+00:00"
   },
   {
     "id": "babd4e43-164e-4b31-9b6f-af21017f11f5",
@@ -11404,35 +11567,6 @@
     "updated_at": "2026-04-23T12:25:56.236022+00:00"
   },
   {
-    "id": "chrome-screenshot-guide",
-    "title": "Master Guide: Chrome Screenshot Extensions (2026)",
-    "slug": "chrome-screenshot-guide",
-    "description": "I tested 12 Chrome screenshot extensions over a month. Complete guide with comparison tables, annotation tools, speed benchmarks, and 8 companion...",
-    "meta_description": "I tested 12 Chrome screenshot extensions over a month. Complete guide with comparison tables, annotation tools, speed benchmarks, and 8 companion...",
-    "excerpt": "I tested 12 Chrome screenshot extensions over a month to find the best for full-page captures, annotations, and quick sharing. Complete guide with comparison tables and companion tools.",
-    "published_at": "2026-03-20T00:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/chrome-screenshot-guide/featured.webp",
-    "featured_image": "/content/images/chrome-screenshot-guide/featured.webp",
-    "reading_time": 9,
-    "read_time": 9,
-    "views": 0,
-    "tags": [
-      "chrome screenshot",
-      "screenshot extensions",
-      "screen capture",
-      "chrome extensions"
-    ],
-    "keywords": [
-      "chrome screenshot guide",
-      "best screenshot extensions chrome",
-      "screen capture chrome"
-    ],
-    "canonicalPath": "/blog/chrome-screenshot-guide",
-    "updated_at": "2026-06-05T12:00:00.000000+00:00"
-  },
-  {
     "id": "youtube-tools-guide",
     "title": "YouTube Browser Tools & Downloaders (2026)",
     "slug": "youtube-tools-guide",
@@ -11497,6 +11631,35 @@
     "keywords": [],
     "canonicalPath": "/blog/best-chrome-privacy-extensions-2026-complete-guide",
     "updated_at": "2026-03-20T00:00:00.000Z"
+  },
+  {
+    "id": "chrome-screenshot-guide",
+    "title": "Master Guide: Chrome Screenshot Extensions (2026)",
+    "slug": "chrome-screenshot-guide",
+    "description": "I tested 12 Chrome screenshot extensions over a month. Complete guide with comparison tables, annotation tools, speed benchmarks, and 8 companion...",
+    "meta_description": "I tested 12 Chrome screenshot extensions over a month. Complete guide with comparison tables, annotation tools, speed benchmarks, and 8 companion...",
+    "excerpt": "I tested 12 Chrome screenshot extensions over a month to find the best for full-page captures, annotations, and quick sharing. Complete guide with comparison tables and companion tools.",
+    "published_at": "2026-03-20T00:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-screenshot-guide/featured.webp",
+    "featured_image": "/content/images/chrome-screenshot-guide/featured.webp",
+    "reading_time": 9,
+    "read_time": 9,
+    "views": 0,
+    "tags": [
+      "chrome screenshot",
+      "screenshot extensions",
+      "screen capture",
+      "chrome extensions"
+    ],
+    "keywords": [
+      "chrome screenshot guide",
+      "best screenshot extensions chrome",
+      "screen capture chrome"
+    ],
+    "canonicalPath": "/blog/chrome-screenshot-guide",
+    "updated_at": "2026-06-05T12:00:00.000000+00:00"
   },
   {
     "id": "b95971cc-e9c0-4a35-b9c7-968364bc6ebc",

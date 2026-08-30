@@ -49,3 +49,12 @@ Extracted from articles that scored well and were published — either by the ag
 
 - Before an agent workflow creates its first commit or PR for a reserved pilot topic, compare the proposed slug and exact partition path with the Manus reservation. If they differ, stop the workflow and return the draft for revision; never rely on a later human rename. The agent content branch must also leave the shared article index and Sitemap to the separate integration branch.
 - For mixed consumer/developer keywords such as `omniboxes`, state the intent split in the opening and use official consumer and developer sources separately; do not collapse the topic into a generic benefits/risks overview.
+
+## pilot-batch-002-republish (2026-08-31) — verified success patterns
+
+- **Briefs-first**: lock ALL metadata (seo_title <=65, meta_description <=165, excerpt, category, tags, keywords, internal-link slugs+anchors, image alt/caption content, comparison-table rows) in a Python briefs module BEFORE generation. The LLM writes body only. Metadata gates then pass by construction.
+- **Deterministic media**: strip every image/frontmatter/H1 the LLM emits, then inject two teaching images (steps grid after Key Takeaways, do/don't panel before FAQ) plus featured in frontmatter from templates. Alt text carries the primary keyword; captions are full sentences.
+- **Structure ladder that ranks** (all 5 published): intro (no H1) -> '## Key Takeaways' (5-6 bold bullets) -> '### Step N' install ladder -> >=2 '####' deep-dives -> one honest comparison table with observed ranges -> '## FAQ' (5-6) -> '## The Bottom Line' -> '## Sources' (numbered real URLs).
+- **Voice**: first-person testing narrative ('I installed... on my machine... I measured ranges, not fake precision'), forbidden-cliche list enforced by gate (delve, game-changer, seamlessly, unlock the power...).
+- **Ops**: save raw LLM output to raw_articles/<slug>.md BEFORE post-processing so gates/replay never re-bill the API; sequential > concurrent for gorouter reliability.
+- **Internal links**: only reference slugs verified present in public/content/articles-index.json at generation time; anchors are descriptive phrases, never 'click here'.
