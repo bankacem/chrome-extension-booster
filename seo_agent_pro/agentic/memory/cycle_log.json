@@ -899,5 +899,44 @@
       "https://extensionto.com/blog/chrome-samsung-smart-tv-casting-guide"
     ],
     "timestamp": "2026-08-30T23:09:26.718716+00:00"
+  },
+  {
+    "keyword": "pilot-batch-003 (5 new keywords: sync extensions, shortcuts fix, organize toolbar, note taking, read later offline)",
+    "model": "gorouter-claude-opus-5",
+    "revision_count": 1,
+    "score": 95,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [
+      "gorouter gateway instability persisted all session (524/502/503/429); sequential single-attempt loop with 240s windows got all 5 through within ~50 minutes."
+    ],
+    "notes": [
+      "KEYWORD SELECTION (batch-003): used z-ai web_search SERP scans on 12 candidate keywords; picked the 5 where top-10 was dominated by Reddit/Quora/Superuser/Q&A or dated (2025) thin listicles — beatable SERPs with real informational demand. Rejected 'best chrome extensions for developers' (5 strong brand listicles) and 'real estate agents' (solid vendor listicles).",
+      "UNIQUENESS CHECK: every candidate slug verified absent from the 774-slug live index before briefs were written; internal-link targets verified present in the same pass.",
+      "Volume estimate method: long-tail clusters with multi-variant demand (how-to + fix + guide phrasings) preferred over single-head terms at same effort."
+    ],
+    "slugs": [
+      "sync-chrome-extensions-across-devices-guide",
+      "chrome-extension-keyboard-shortcuts-not-working-fix",
+      "organize-chrome-extensions-toolbar-guide",
+      "best-note-taking-chrome-extensions-2026",
+      "save-articles-read-later-offline-chrome-guide"
+    ],
+    "word_counts": [
+      3604,
+      3366,
+      3786,
+      3455,
+      3427
+    ],
+    "published_urls": [
+      "https://extensionto.com/blog/sync-chrome-extensions-across-devices-guide",
+      "https://extensionto.com/blog/chrome-extension-keyboard-shortcuts-not-working-fix",
+      "https://extensionto.com/blog/organize-chrome-extensions-toolbar-guide",
+      "https://extensionto.com/blog/best-note-taking-chrome-extensions-2026",
+      "https://extensionto.com/blog/save-articles-read-later-offline-chrome-guide"
+    ],
+    "timestamp": "2026-08-31T17:25:32.754342+00:00"
   }
 ]

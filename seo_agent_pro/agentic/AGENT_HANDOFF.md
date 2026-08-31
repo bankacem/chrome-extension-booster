@@ -155,3 +155,15 @@ log and know exactly where things stand without re-reading the whole repo.
 - Learning persisted to memory/cycle_log.json (1 consolidated record) and memory/lessons.md
   ('pilot-batch-002-republish' section).
 - These 5 slugs are now PUBLISHED — do not re-select them as candidates.
+
+## Session log — 2026-08-31 (later): pilot-batch-003 (main Super Z session)
+
+- Published 5 EN guides from fresh keyword research (SERP-scan driven):
+  sync-chrome-extensions-across-devices-guide, chrome-extension-keyboard-shortcuts-not-working-fix,
+  organize-chrome-extensions-toolbar-guide, best-note-taking-chrome-extensions-2026,
+  save-articles-read-later-offline-chrome-guide.
+- Environment reset again mid-session; repo recloned; batch pipeline scripts (briefs -> generate ->
+  images -> index -> learning) rebuilt under /home/z/my-project/scripts/batch003_*.
+- Images: PIL featured (seo_title overlay) + steps grid + do/don't panels; WebP + AVIF via optimize-images.
+- Index 774->779, sitemap 831->836. Gates re-run locally before push.
+- These 5 slugs are PUBLISHED — never re-select them as candidates.

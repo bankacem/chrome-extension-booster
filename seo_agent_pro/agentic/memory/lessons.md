@@ -58,3 +58,11 @@ Extracted from articles that scored well and were published — either by the ag
 - **Voice**: first-person testing narrative ('I installed... on my machine... I measured ranges, not fake precision'), forbidden-cliche list enforced by gate (delve, game-changer, seamlessly, unlock the power...).
 - **Ops**: save raw LLM output to raw_articles/<slug>.md BEFORE post-processing so gates/replay never re-bill the API; sequential > concurrent for gorouter reliability.
 - **Internal links**: only reference slugs verified present in public/content/articles-index.json at generation time; anchors are descriptive phrases, never 'click here'.
+
+## pilot-batch-003 (2026-08-31) — keyword selection patterns that work
+
+- **SERP-scan before briefs**: run real web searches on 10-12 candidates; rank by top-10 composition. Weak-SERP signatures that converted to published winners: Reddit/Quora/Superuser threads in top 3-5, vendor support pages without step-by-step content, listicles dated 2025 or earlier, category pages from the Web Store itself ranking.
+- **Avoid**: SERPs where 4+ established marketing blogs hold every slot with current-year listicles (e.g. 'chrome extensions for developers' — all builder.io/marker.io/usersnap-class domains).
+- **Forum-dominated topics convert to step-ladder guides**: users arrive from a broken state and want a diagnostic ladder (symptom -> cause -> fix table), not a product roundup. The troubleshooting-table format (batch-003 shortcuts article) was built directly from observed forum failure reports.
+- **Uniqueness gate**: candidate slugs are checked against the live articles-index.json (774->779) AND internal-link targets are verified present in the same script — no dead internal links by construction.
+- **Gateway ops**: gorouter large generations fail intermittently (429/502/524/503 all observed in one hour). One attempt per article per 4-minute window, sequential, with raw saved before post-processing, drains the queue reliably. Do not hammer retries — each failed attempt still consumes quota.
