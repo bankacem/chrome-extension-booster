@@ -17090,11 +17090,11 @@
   },
   {
     "id": "edcf1372-8db4-4ce0-b6df-ba1b0823f59a",
-    "title": "NoScript for Chrome: Better Security and Speed",
+    "title": "NoScript for Chrome: How to Control JavaScript Safely",
     "slug": "unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance",
     "description": "When it comes to browsing the internet, security and performance are two of the top priorities for users.",
-    "meta_description": "When it comes to browsing the internet, security and performance are two of the top priorities for users.",
-    "excerpt": "When it comes to browsing the internet, security and performance are two of the top priorities for users.",
+    "meta_description": "Learn what NoScript means on Chrome, how to disable or restrict JavaScript, what NoScript does on Firefox, and how to troubleshoot sites that need scripts.",
+    "excerpt": "Understand what NoScript means on Chrome, how JavaScript controls work, what breaks when scripts are blocked, and how to use site permissions safely.",
     "published_at": "2026-02-11T02:11:01.357+00:00",
     "category": "Security & Privacy",
     "author": "James Mitchell",
@@ -17108,7 +17108,7 @@
       "noscript chrome"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance",
-    "updated_at": "2026-03-02T19:47:08.874648+00:00"
+    "updated_at": "2026-09-01T00:00:00.000Z"
   },
   {
     "id": "281fe238-066c-410d-94f5-2be7e49ba322",
