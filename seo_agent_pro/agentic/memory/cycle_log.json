@@ -938,5 +938,35 @@
       "https://extensionto.com/blog/save-articles-read-later-offline-chrome-guide"
     ],
     "timestamp": "2026-08-31T17:25:32.754342+00:00"
+  },
+  {
+    "keyword": "pilot-batch-004 (split screen chrome, clipboard history, text to speech)",
+    "model": "gorouter-claude-opus-5",
+    "revision_count": 1,
+    "score": 95,
+    "score_delta_from_previous_same_keyword": null,
+    "approved": true,
+    "deterministic_issues": [],
+    "llm_issues": [],
+    "notes": [
+      "Batch-004 keyword picks from SERP scans: 'split screen chrome extension' (Google Community threads rank = weak), 'chrome clipboard history extension' (pure vendor landing SERP, no independent guide), 'best text to speech chrome extensions' (Reddit + small vendor blogs). Rejected 'how to check if a chrome extension is safe' (Google security blog + Berkeley rank = too strong).",
+      "All 3 generated in a single sequential pass — gorouter gateway was healthy this window (vs batch-003 which needed the 240s-window loop)."
+    ],
+    "slugs": [
+      "split-screen-chrome-tabs-guide",
+      "clipboard-history-chrome-extension-guide",
+      "best-text-to-speech-chrome-extensions-2026"
+    ],
+    "word_counts": [
+      3745,
+      3547,
+      3426
+    ],
+    "published_urls": [
+      "https://extensionto.com/blog/split-screen-chrome-tabs-guide",
+      "https://extensionto.com/blog/clipboard-history-chrome-extension-guide",
+      "https://extensionto.com/blog/best-text-to-speech-chrome-extensions-2026"
+    ],
+    "timestamp": "2026-09-01T09:50:20.769908+00:00"
   }
 ]

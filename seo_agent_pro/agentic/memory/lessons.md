@@ -66,3 +66,9 @@ Extracted from articles that scored well and were published — either by the ag
 - **Forum-dominated topics convert to step-ladder guides**: users arrive from a broken state and want a diagnostic ladder (symptom -> cause -> fix table), not a product roundup. The troubleshooting-table format (batch-003 shortcuts article) was built directly from observed forum failure reports.
 - **Uniqueness gate**: candidate slugs are checked against the live articles-index.json (774->779) AND internal-link targets are verified present in the same script — no dead internal links by construction.
 - **Gateway ops**: gorouter large generations fail intermittently (429/502/524/503 all observed in one hour). One attempt per article per 4-minute window, sequential, with raw saved before post-processing, drains the queue reliably. Do not hammer retries — each failed attempt still consumes quota.
+
+## pilot-batch-004 (2026-08-31) — additions
+
+- **Vendor-SERP topics are winnable**: when a keyword's top-10 is mostly the products' own landing pages (clipboard managers), an independent tested comparison is structurally unique content no vendor can write. Prefer these over head listicle SERPs.
+- **Community-thread SERPs signal real instructional gaps**: Google Chrome Community / support threads ranking page 1 for 'split screen' meant users were not getting end-to-end answers; the article leads with the NEW native Split View then positions extensions as the layout-memory upgrade — accurate for 2026 Chrome.
+- **Rejected keyword lesson**: 'how to check if a chrome extension is safe' had security.googleblog.com and .berkeley.edu in the top 10 — institutional authority you do not outrank with a blog post. Log and skip.

@@ -167,3 +167,10 @@ log and know exactly where things stand without re-reading the whole repo.
 - Images: PIL featured (seo_title overlay) + steps grid + do/don't panels; WebP + AVIF via optimize-images.
 - Index 774->779, sitemap 831->836. Gates re-run locally before push.
 - These 5 slugs are PUBLISHED — never re-select them as candidates.
+
+## Session log — 2026-08-31 (final): pilot-batch-004
+
+- Published 3 EN guides: split-screen-chrome-tabs-guide, clipboard-history-chrome-extension-guide,
+  best-text-to-speech-chrome-extensions-2026. Index 779->782, sitemap 836->839.
+- Images force-added with `git add -f` (batch-002/003 lesson applied pre-emptively this time).
+- These 3 slugs are PUBLISHED — never re-select.
