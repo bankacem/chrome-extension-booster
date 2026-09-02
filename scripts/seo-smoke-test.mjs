@@ -59,7 +59,7 @@ for (const article of articleSample) {
   const url = `https://extensionto.com/blog/${slug}`;
   const html = htmlFor(url);
   assert(/<h1\b/i.test(html), `${url} has no prerendered H1`);
-  const expectedCanonical = article.canonicalPath ? `https://extensionto.com${article.canonicalPath}` : url;
+  const expectedCanonical = article.canonicalPath ? (article.canonicalPath.startsWith("http") ? article.canonicalPath : `https://extensionto.com${article.canonicalPath}`) : url;
   seoAssertions(html, url, expectedCanonical);
   assert(/<article\b/i.test(html), `${url} has no article element`);
   assert(/Written by/.test(html), `${url} has no visible author attribution`);
