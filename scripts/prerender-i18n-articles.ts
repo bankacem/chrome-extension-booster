@@ -400,7 +400,7 @@ async function main() {
       // RTL + lang attribute for Arabic (crawler snapshot + first paint).
       if (RTL_LANGUAGES.has(lang)) {
         html = html.replace(/<html([^>]*)>/i, (_m, attrs: string) => {
-          let next = attrs.replace(/\slang=["'][^"']*["']/gi, "").replace(/\sdir=["'][^"']*["']/gi, "");
+          const next = attrs.replace(/\slang=["'][^"']*["']/gi, "").replace(/\sdir=["'][^"']*["']/gi, "");
           return `<html${next} lang="ar" dir="rtl">`;
         });
       } else {
