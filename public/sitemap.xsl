@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
                 xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9"
+                xmlns:xhtml="http://www.w3.org/1999/xhtml"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
   <xsl:template match="/">
@@ -109,12 +110,17 @@
             <xsl:if test="sitemap:urlset">
               <table>
                 <thead>
-                  <tr><th>URL</th><th>Priority</th><th>Frequency</th><th>Last modified</th></tr>
+                  <tr><th>URL</th><th>Languages</th><th>Priority</th><th>Frequency</th><th>Last modified</th></tr>
                 </thead>
                 <tbody>
                   <xsl:for-each select="sitemap:urlset/sitemap:url">
                     <tr>
                       <td><a href="{sitemap:loc}"><xsl:value-of select="sitemap:loc"/></a></td>
+                      <td>
+                        <xsl:for-each select="xhtml:link">
+                          <a class="badge p-low" href="{@href}"><xsl:value-of select="@hreflang"/></a><xsl:if test="position() != last()"> </xsl:if>
+                        </xsl:for-each>
+                      </td>
                       <td>
                         <xsl:choose>
                           <xsl:when test="sitemap:priority &gt;= 0.8"><span class="badge p-high"><xsl:value-of select="sitemap:priority"/></span></xsl:when>
