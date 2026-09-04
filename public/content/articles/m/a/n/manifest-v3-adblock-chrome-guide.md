@@ -41,6 +41,7 @@ faq:
     answer: "Yes, in both directions. The same declarative limits that constrain ad blockers also constrain spyware, which is a genuine win, and host permissions are now opt-in rather than granted-at-install. On the other side, remote hosted code is banned, service workers replaced background pages, and tools that depended on flexible scripting lost capabilities. My take after auditing my own setup: Chrome got safer by default and slightly less powerful for power users, and knowing which side you are on makes the decision easier."
   - question: Will Google reverse Manifest V3?
     answer: "No realistic chance. The migration started in 2020, the deprecation of MV2 finished rolling out through 2025 into 2026, and enterprise exceptions are time-limited by design. Every quarter spent waiting for a reversal was a quarter my setups kept silently degrading. The productive question is which MV3-native option fits your browsing, and that is a decision you can complete in an evening with the steps in this guide."
+featured_image: /content/images/manifest-v3-adblock-chrome-guide/featured.webp
 ---
 
 My blocker died on a Tuesday. I woke the Windows 11 desktop, opened the news site I read every morning, and got a full-screen interstitial, a video ad that autoplayed with sound, and a cookie wall layered on top of both. The toolbar showed a puzzle-piece icon with a red badge. uBlock Origin sat greyed out at `chrome://extensions` under a one-line obituary: no longer supported.
@@ -142,6 +143,8 @@ Second check: run only one blocker. Two MV3 blockers on one profile compete for 
 
 Third: separate ad blocking from Chrome's own behavior. Chrome's ad privacy controls at chrome://settings/adPrivacy affect topics and measurement, not blocking, so changing them will not fix a blocker. When something breaks, our guide to fixing adblock not working on Chrome has the ordered checklist I follow.
 
+![Manifest V3 and Chrome Adblockers: What Changed & What Still Works (2026) — steps](/content/images/manifest-v3-adblock-chrome-guide/steps.webp "Manifest V3 and Chrome Adblockers: What Changed & What Still Works (2026) — Steps")
+
 ## What Still Blocks Ads in 2026
 
 Here is the comparison I keep coming back to when someone asks what to install. The YouTube column is the one that changes most people's mind.
@@ -198,5 +201,7 @@ I would not plan around it. Google delayed the MV2 shutdown repeatedly across se
 If you want to stay on Chrome, install uBlock Origin Lite, move it to Optimal mode, and add DNS filtering on your network. That combination took me under half an hour, cost nothing, and got within visible-noise distance of my old MV2 setup on everything except stubborn cosmetic leftovers and the occasional YouTube gap after a platform change.
 
 If filtering strength is your only priority, the answer has not changed since the shutdown: Firefox with full uBlock Origin, or a Chromium browser that blocks in the engine. MV3 did not kill ad blocking on Chrome, but it did move the strongest option off Chrome, and no rule-cap increase is going to move it back.
+
+![Manifest V3 and Chrome Adblockers: What Changed & What Still Works (2026) — tips](/content/images/manifest-v3-adblock-chrome-guide/tips.webp "Manifest V3 and Chrome Adblockers: What Changed & What Still Works (2026) — Tips")
 
 ## Sources

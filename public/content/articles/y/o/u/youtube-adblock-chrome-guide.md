@@ -41,6 +41,7 @@ faq:
     answer: "I stay away from them. The ones I inspected asked for permissions far beyond YouTube, some bundled sponsored filters, and when YouTube changes, these tools update on their own schedule with zero accountability. The safer path is a maintained blocker with big filter communities, updated lists, and permissions scoped to content blocking. If a tool promises to 'bypass everything' and requests read-and-change-all-site-data, that is my hard pass line."
   - question: Will YouTube ads break again after I fix it?
     answer: "Probably, in small windows. YouTube ships detection changes continuously and every blocker leaks for hours or a few days during the worst rollouts, then filter updates catch up. What changed for me after setting this up properly is the recovery time: leaks went from weeks of frustration to a hard refresh after a list update. Expect maintenance, not a one-time permanent fix."
+featured_image: /content/images/youtube-adblock-chrome-guide/featured.webp
 ---
 
 I spent last Thursday evening deliberately wrecking a setup that worked. My daily Chrome profile had been quiet on YouTube for months, so I unsubscribed from two filter lists, forced an older extension build, and pressed play on a 22-minute review video. Four seconds in, the player dimmed behind a gray card telling me ad blockers violate YouTube's Terms of Service. Three videos later, playback stopped entirely.
@@ -132,6 +133,8 @@ This will break again, so I built a recovery routine that takes under three minu
 
 When ads reappear now, I run the same short loop: force an extension update, hard refresh, confirm Complete mode, delete YouTube site data. Four of my last five regressions cleared at the first step.
 
+![YouTube Adblock Not Working in Chrome? The Fix That Survived 2026 — steps](/content/images/youtube-adblock-chrome-guide/steps.webp "YouTube Adblock Not Working in Chrome? The Fix That Survived 2026 — Steps")
+
 ## The Fix That Survived 2026: Options Compared
 
 | Approach | Ads blocked (my 14-video run) | Server-side injection | Detection modal | My verdict |
@@ -184,5 +187,7 @@ Almost certainly. I logged five regressions across roughly nine months on my mai
 If your blocker just stopped working on YouTube, do these three things in order before anything else: force an extension update from the extensions page with Developer mode on, enable the annoyance and quick-fix lists, and set youtube.com to Complete filtering mode. That sequence fixed every profile I broke on purpose, and it took eleven minutes on the worst one. Delete youtube.com site data only if the warning survives all three.
 
 If you would rather not maintain this, there are two honest endpoints. Run a maintained, open source blocker with elevated permissions on YouTube and accept a few hours of ads two or three times a year, or pay for Premium and stop thinking about it. What does not work is DNS-level filtering, which blocked zero YouTube ads in my run, or an unlocker extension demanding access to every site you visit.
+
+![YouTube Adblock Not Working in Chrome? The Fix That Survived 2026 — tips](/content/images/youtube-adblock-chrome-guide/tips.webp "YouTube Adblock Not Working in Chrome? The Fix That Survived 2026 — Tips")
 
 ## Sources

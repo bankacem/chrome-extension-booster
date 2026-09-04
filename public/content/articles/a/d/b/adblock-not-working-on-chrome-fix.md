@@ -41,6 +41,7 @@ faq:
     answer: "That is the signature of a site-level exception, either one you set months ago from a 'pause' button or one the blocker created silently after repeated failures. Open the blocker's menu on that exact site and look for 'paused on this site' or a whitelist entry. Anti-adblock detection scripts can also fake it: the page detects filtering and re-inserts ads, which different fixes handle than a globally dead blocker."
   - question: Can Chrome policies or malware disable ad blockers?
     answer: "Yes, and it is rarer but nastier. Managed-by-organization policies can force-install extensions and block yours, and adware does the same to disarm filtering. If chrome://extensions shows an extension you never installed, or your settings page shows a 'managed by your organization' banner on a personal machine, treat it as a cleanup job first, because no amount of blocker settings will survive that."
+featured_image: /content/images/adblock-not-working-on-chrome-fix/featured.webp
 ---
 
 My blocker died on a Tuesday, and I didn't notice until a 15-second unskippable pre-roll played on a cooking video. Chrome had updated to 151 overnight on my Windows 11 desktop. The extension icon was still pinned to the toolbar, still the right color, still sitting there — just showing a blank badge instead of the usual blocked count. Nothing looked broken. Everything was.
@@ -164,6 +165,8 @@ Related on this site: [chrome extension permissions guide](/blog/chrome-extensio
 
 Related on this site: [optimizing browser performance how to limit memory per tab in chrome](/blog/optimizing-browser-performance-how-to-limit-memory-per-tab-in-chrome).
 
+![Adblock Not Working on Chrome? 9 Fixes That Actually Worked (2026) — steps](/content/images/adblock-not-working-on-chrome-fix/steps.webp "Adblock Not Working on Chrome? 9 Fixes That Actually Worked (2026) — Steps")
+
 ## Frequently Asked Questions
 
 ### Why did my ad blocker suddenly stop working on Chrome?
@@ -195,5 +198,7 @@ Both, and they are quick to rule out. Open the policy page, reload policies, and
 If you do only three things, do these: read the extension card for a disabled MV2 leftover, cut down to exactly one blocker, and audit both allowlists — the blocker's and Chrome's site access setting. Those three checks accounted for all three of my machines and took under 15 minutes each. The reinstall everyone reaches for first fixed nothing that the earlier steps had not already found.
 
 Decide by category. If your blocker is MV2, stop repairing and migrate to an MV3-native blocker today. If it is MV3 and still leaking, it is a configuration problem — permissions, filtering mode, or stale lists — roughly nine times out of ten, with policy and malware covering the rest. Either way, close the loop with a scored test rather than a glance at a page, and rerun it monthly so the next silent Chrome update does not go unnoticed for a week.
+
+![Adblock Not Working on Chrome? 9 Fixes That Actually Worked (2026) — tips](/content/images/adblock-not-working-on-chrome-fix/tips.webp "Adblock Not Working on Chrome? 9 Fixes That Actually Worked (2026) — Tips")
 
 ## Sources

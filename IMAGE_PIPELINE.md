@@ -15,3 +15,5 @@ The generated modern variants are intentionally ignored by Git through `.gitigno
 Place the original image in `public/content/images/` or a generated subdirectory. Use a stable JPEG or PNG source, preferably close to a 16:9 editorial ratio. Set the article `featured_image` to the public path. The next production build creates the AVIF and WebP siblings automatically. Do not commit generated `.avif` or `.webp` files.
 
 For a new AI-generated editorial cover, keep the image text-free, avoid trademarks and recognizable product interfaces, and use descriptive alt text from the article title. Run `npm run build`, `npm run test:performance`, `npm run test:seo`, and `npm run test:links` before publishing.
+
+> **2026-09-04 update:** Vercel prebuild skips the optimizer (`scripts/prebuild.mjs`), so `.webp`/`.avif` derivatives referenced by articles ARE committed to the repo (force-added past `.gitignore`). If you add new JPEG/PNG sources, either run `node scripts/optimize-images.mjs` locally and commit the derivatives, or temporarily re-enable the optimizer on Vercel.
