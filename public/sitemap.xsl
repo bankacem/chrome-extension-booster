@@ -61,6 +61,10 @@
             header.glass{padding:22px}
             h1{font-size:22px}
             thead th,tbody td{padding:11px 12px;font-size:13px}
+            .opt{display:none}
+            .badge{padding:2px 8px;font-size:11px;margin:1px 0}
+            table{min-width:540px}
+            td:first-child a{word-break:break-word}
           }
         </style>
       </head>
@@ -92,7 +96,7 @@
             </label>
           </div>
 
-          <div class="glass" style="overflow:hidden">
+          <div class="glass" style="overflow-x:auto">
             <xsl:if test="sitemap:sitemapindex">
               <table>
                 <thead><tr><th>Sitemap</th><th>Last modified</th></tr></thead>
@@ -110,7 +114,7 @@
             <xsl:if test="sitemap:urlset">
               <table>
                 <thead>
-                  <tr><th>URL</th><th>Languages</th><th>Priority</th><th>Frequency</th><th>Last modified</th></tr>
+                  <tr><th>URL</th><th>Languages</th><th class="opt">Priority</th><th class="opt">Frequency</th><th>Last modified</th></tr>
                 </thead>
                 <tbody>
                   <xsl:for-each select="sitemap:urlset/sitemap:url">
@@ -121,14 +125,24 @@
                           <a class="badge p-low" href="{@href}"><xsl:value-of select="@hreflang"/></a><xsl:if test="position() != last()"> </xsl:if>
                         </xsl:for-each>
                       </td>
-                      <td>
+                      <td class="opt">
                         <xsl:choose>
-                          <xsl:when test="sitemap:priority &gt;= 0.8"><span class="badge p-high"><xsl:value-of select="sitemap:priority"/></span></xsl:when>
-                          <xsl:when test="sitemap:priority &gt;= 0.5"><span class="badge p-mid"><xsl:value-of select="sitemap:priority"/></span></xsl:when>
-                          <xsl:otherwise><span class="badge p-low"><xsl:value-of select="sitemap:priority"/></span></xsl:otherwise>
+                          <xsl:when test="sitemap:priority">
+                            <xsl:choose>
+                              <xsl:when test="sitemap:priority &gt;= 0.8"><span class="badge p-high"><xsl:value-of select="sitemap:priority"/></span></xsl:when>
+                              <xsl:when test="sitemap:priority &gt;= 0.5"><span class="badge p-mid"><xsl:value-of select="sitemap:priority"/></span></xsl:when>
+                              <xsl:otherwise><span class="badge p-low"><xsl:value-of select="sitemap:priority"/></span></xsl:otherwise>
+                            </xsl:choose>
+                          </xsl:when>
+                          <xsl:otherwise><span class="badge p-low">-</span></xsl:otherwise>
                         </xsl:choose>
                       </td>
-                      <td class="freq"><xsl:value-of select="sitemap:changefreq"/></td>
+                      <td class="freq opt">
+                        <xsl:choose>
+                          <xsl:when test="sitemap:changefreq"><xsl:value-of select="sitemap:changefreq"/></xsl:when>
+                          <xsl:otherwise>-</xsl:otherwise>
+                        </xsl:choose>
+                      </td>
                       <td class="date"><xsl:value-of select="sitemap:lastmod"/></td>
                     </tr>
                   </xsl:for-each>

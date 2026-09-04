@@ -833,5 +833,8 @@
   "organize-chrome-extensions-toolbar-guide": "2026-08-31",
   "clipboard-history-chrome-extension-guide": "2026-08-31",
   "split-screen-chrome-tabs-guide": "2026-08-31",
-  "best-text-to-speech-chrome-extensions-2026": "2026-08-31"
+  "best-text-to-speech-chrome-extensions-2026": "2026-08-31",
+  "youtube-adblock-chrome-guide": "2026-09-01",
+  "manifest-v3-adblock-chrome-guide": "2026-09-01",
+  "adblock-not-working-on-chrome-fix": "2026-09-01"
 }

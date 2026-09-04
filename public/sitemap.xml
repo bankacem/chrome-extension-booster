@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://extensionto.com/</loc>
@@ -147,6 +148,18 @@
   <url>
     <loc>https://extensionto.com/extension/cookie-banner-blocker</loc>
     <lastmod>2026-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/youtube-adblock-chrome-guide</loc>
+    <lastmod>2026-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/manifest-v3-adblock-chrome-guide</loc>
+    <lastmod>2026-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/adblock-not-working-on-chrome-fix</loc>
+    <lastmod>2026-09-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/clipboard-history-chrome-extension-guide</loc>

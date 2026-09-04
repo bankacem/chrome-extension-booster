@@ -67,6 +67,7 @@ function generateSitemapXml(entries: SitemapEntry[]): string {
 
   return (
     `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n` +
     `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
     urlBlocks.join("\n") +
     `\n</urlset>`
@@ -196,8 +197,19 @@ async function generateSitemap() {
     // These are thin/duplicate pages that intentionally defer their SEO
     // signal elsewhere — including them in the sitemap would contradict
     // their own canonical tag and send Google a mixed signal.
-    if (art.canonicalPath && art.canonicalPath !== `/blog/${slug}`) {
-      continue;
+    // NOTE: compare the PATH, not the raw string — canonicalPath may be
+    // written as an absolute URL ("https://extensionto.com/blog/x") or a
+    // relative path ("/blog/x"); both are self-canonical and must count.
+    if (art.canonicalPath) {
+      let canonPath: string = art.canonicalPath;
+      try {
+        canonPath = new URL(art.canonicalPath, WEBSITE_URL).pathname;
+      } catch {
+        /* unparseable — fall back to raw string comparison */
+      }
+      if (canonPath !== `/blog/${slug}`) {
+        continue;
+      }
     }
 
     if (frozenDates[slug]) {
