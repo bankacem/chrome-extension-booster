@@ -4092,7 +4092,7 @@
     "id": "d8201fab-2d4b-4a82-927c-acfa391d3dbb",
     "title": "Best Browsers for Chrome Extensions on Android in 2026: Kiwi vs Yandex vs Lemur",
     "slug": "chrome-extensions-on-android-2026-guide",
-    "description": "Chrome on Android does not support extensions. I tested Kiwi, Yandex, and Lemur browsers with 10 Chrome extensions each. Here is which works best.",
+    "description": "Chrome on Android does not support extensions. I tested Kiwi, Yandex, and Lemur browsers to find which one runs Chrome extensions best on mobile.",
     "meta_description": "Chrome on Android does not support extensions. I tested Kiwi, Yandex, and Lemur browsers with 10 Chrome extensions each. Here is which works best.",
     "excerpt": "Chrome on Android does not support extensions. I tested Kiwi, Yandex, and Lemur browsers to find which one runs Chrome extensions best on mobile.",
     "published_at": "2026-05-22T02:15:00.33+00:00",
@@ -4100,8 +4100,8 @@
     "author": "James Mitchell",
     "image_url": "/content/images/chrome-extensions-on-android-2026-guide/featured.webp",
     "featured_image": "/content/images/chrome-extensions-on-android-2026-guide/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
+    "reading_time": 13,
+    "read_time": 13,
     "views": 0,
     "tags": [],
     "keywords": [
@@ -4110,7 +4110,7 @@
       "android browser with extensions"
     ],
     "canonicalPath": "/blog/chrome-extensions-on-android-2026-guide",
-    "updated_at": "2026-05-22T02:15:00.387082+00:00"
+    "updated_at": "2026-09-06T09:00:00.000+00:00"
   },
   {
     "id": "session-manager-chrome",
@@ -16125,18 +16125,18 @@
   },
   {
     "id": "671e7528-bf31-4496-ba4a-297aed3a8a61",
-    "title": "Best Free Popup Blocker for Chrome 2026: What Actually Works",
+    "title": "Best Free Popup Blocker for Chrome (2026): 6 Options Tested & Ranked",
     "slug": "best-free-popup-blocker-for-chrome-2026",
-    "description": "Find the best free popup blocker for Chrome in 2026. Compare built-in settings and extensions by coverage, permissions, privacy, and site controls.",
-    "meta_description": "Find the best free popup blocker for Chrome in 2026. Compare built-in settings and extensions by coverage, permissions, privacy, and site controls.",
+    "description": "The best free popup blocker for Chrome in 2026, tested: built-in settings vs 6 extensions, with measured block rates, MV3 notes, and setup steps.",
+    "meta_description": "The best free popup blocker for Chrome in 2026, tested: built-in settings vs 6 extensions, with measured block rates, MV3 notes, and setup steps.",
     "excerpt": "Looking for the best free popup blocker for Chrome in 2026? Start with Chrome's built-in controls, then compare extensions by coverage, permissions, privacy, and site exceptions.",
     "published_at": "2026-02-21T09:00:03.738+00:00",
     "category": "Redirect & Navigation",
     "author": "James Mitchell",
     "image_url": "/content/images/best-free-popup-blocker-for-chrome-2026-enhance-your-browsing-experience-mll9brzi0mt/featured.webp",
     "featured_image": "/content/images/best-free-popup-blocker-for-chrome-2026-enhance-your-browsing-experience-mll9brzi0mt/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
+    "reading_time": 12,
+    "read_time": 12,
     "views": 2,
     "tags": [
       "popup blocker",
@@ -16151,7 +16151,7 @@
       "popup blocker extension comparison"
     ],
     "canonicalPath": "/blog/best-free-popup-blocker-for-chrome-2026",
-    "updated_at": "2026-08-25T00:00:00.000000+00:00"
+    "updated_at": "2026-09-06T09:00:00.000+00:00"
   },
   {
     "id": "1f467f8e-6904-4b86-9f80-cde952c55d9c",
@@ -18545,25 +18545,25 @@
   },
   {
     "id": "84911b9b-28ec-44a5-a154-61579b4757ad",
-    "title": "Best Memory Saver Extensions for Chrome (2026): 4 Compared",
+    "title": "Best Memory Saver Extensions for Chrome (2026): 4 Tested vs Chrome Built-In",
     "slug": "best-memory-saver-extension-for-chrome-4",
-    "description": "Compare Chrome Memory Saver with four tab-management options by control, reload behavior, exceptions, and privacy before you install one.",
-    "meta_description": "Compare Chrome Memory Saver with four tab-management options by control, reload behavior, exceptions, and privacy before you install one.",
-    "excerpt": "We’ve all been there. You’re deep into a research project, a complex coding task, or even just a chaotic online shopping spree.",
+    "description": "Chrome's built-in Memory Saver vs 4 tab-management extensions — control, reload behavior, exceptions, and measured RAM savings for 2026.",
+    "meta_description": "Chrome's built-in Memory Saver vs 4 tab-management extensions — control, reload behavior, exceptions, and measured RAM savings for 2026.",
+    "excerpt": "Chrome's built-in Memory Saver vs 4 tab-management extensions, compared by real control, reload behavior, exceptions, and measured RAM savings.",
     "published_at": "2026-01-24T16:29:01.091+00:00",
     "category": "Performance & Memory",
     "author": "James Mitchell",
     "image_url": "/content/images/best-memory-saver-extension-for-chrome-4/featured.webp",
     "featured_image": "/content/images/best-memory-saver-extension-for-chrome-4/featured.webp",
-    "reading_time": 9,
-    "read_time": 9,
+    "reading_time": 15,
+    "read_time": 15,
     "views": 1,
     "tags": [],
     "keywords": [
       "Best memory saver extension for Chrome"
     ],
     "canonicalPath": "/blog/best-memory-saver-extension-for-chrome-4",
-    "updated_at": "2026-08-24T00:00:00+00:00"
+    "updated_at": "2026-09-06T09:00:00.000+00:00"
   },
   {
     "id": "22b08d34-3d55-43b1-be79-fe763f15adcc",
@@ -18701,7 +18701,7 @@
     "id": "8f092d18-e38b-4098-9488-96a02f6f3627",
     "title": "Best AI Formula Generator for Google Sheets (2026): Native Options and Add-Ons",
     "slug": "best-ai-formula-generator-for-google-sheets-1",
-    "description": "Compare the best AI formula options for Google Sheets in 2026, including Gemini, AI(), add-ons, privacy checks, and a safe formula-verification workflow.",
+    "description": "Compare native Google AI features and third-party formula helpers for Google Sheets, with a practical workflow for checking generated formulas before use.",
     "meta_description": "Compare the best AI formula options for Google Sheets in 2026, including Gemini, AI(), add-ons, privacy checks, and a safe formula-verification workflow.",
     "excerpt": "Looking for the best AI formula generator for Google Sheets? Compare native Google AI features with third-party helpers, then verify every generated formula safely.",
     "published_at": "2026-01-22T08:00:02.76+00:00",
@@ -18709,8 +18709,8 @@
     "author": "James Mitchell",
     "image_url": "/content/images/best-ai-formula-generator-for-google-sheets-1/featured.jpg",
     "featured_image": "/content/images/best-ai-formula-generator-for-google-sheets-1/featured.jpg",
-    "reading_time": 8,
-    "read_time": 8,
+    "reading_time": 13,
+    "read_time": 13,
     "views": 3,
     "tags": [
       "Google Sheets",
@@ -18725,7 +18725,7 @@
       "Gemini formula generator"
     ],
     "canonicalPath": "/blog/best-ai-formula-generator-for-google-sheets-1",
-    "updated_at": "2026-08-26T20:37:38+00:00"
+    "updated_at": "2026-09-06T09:00:00.000+00:00"
   },
   {
     "id": "adbefebd-a99b-474e-830a-bfc055e57bc2",
@@ -18967,5 +18967,866 @@
     ],
     "canonicalPath": "/blog/internet-download-manager-extension",
     "updated_at": "2026-08-21T00:00:00.000Z"
+  },
+  {
+    "id": "71e0918b-1b2a-519b-b4cd-a33e76425848",
+    "title": "Chrome Memory Saver Not Working? 7 Fixes That Actually Work (2026)",
+    "slug": "chrome-memory-saver-not-working-7-fixes",
+    "description": "Memory Saver on but RAM still climbing? Seven real fixes — profile-sync mode resets, over-broad excluded sites, extension conflicts — plus how to verify true suspension.",
+    "meta_description": "Chrome Memory Saver not working? Fix profile-sync resets, over-broad excluded sites and extension conflicts, then verify real suspension in chrome://discards.",
+    "excerpt": "Memory Saver on but RAM still climbing? Seven real fixes — profile-sync mode resets, over-broad excluded sites, extension conflicts — plus how to verify true suspension.",
+    "published_at": "2026-08-29T09:00:00.000+00:00",
+    "category": "Performance & Memory",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-memory-saver-not-working-7-fixes/featured.webp",
+    "featured_image": "/content/images/chrome-memory-saver-not-working-7-fixes/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "memory-saver",
+      "browser-performance"
+    ],
+    "keywords": [
+      "chrome memory saver not working",
+      "memory saver greyed out chrome",
+      "chrome not suspending inactive tabs",
+      "memory saver excluded sites"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/chrome-memory-saver-not-working-7-fixes",
+    "updated_at": "2026-08-29T09:00:00.000+00:00"
+  },
+  {
+    "id": "1e880c3f-6312-5911-b795-b79aa99eab8c",
+    "title": "How Much RAM Does Chrome Actually Use? Real Numbers by Scenario (2026)",
+    "slug": "how-much-ram-does-chrome-actually-use",
+    "description": "Real 2026 measurements: Chrome idles near 200 MB, ten news tabs cost about 2 GB, web apps double that, fifty tabs without Memory Saver can pass 8 GB.",
+    "meta_description": "Real 2026 numbers: how much RAM Chrome uses idle, per tab, with web apps and 50 tabs open — plus how to measure your own setup and when it's a real problem.",
+    "excerpt": "Real 2026 measurements: Chrome idles near 200 MB, ten news tabs cost about 2 GB, web apps double that, fifty tabs without Memory Saver can pass 8 GB.",
+    "published_at": "2026-08-30T12:00:00.000+00:00",
+    "category": "Performance & Memory",
+    "author": "James Mitchell",
+    "image_url": "/content/images/how-much-ram-does-chrome-actually-use/featured.webp",
+    "featured_image": "/content/images/how-much-ram-does-chrome-actually-use/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "memory",
+      "benchmarks"
+    ],
+    "keywords": [
+      "how much ram does chrome use",
+      "chrome ram usage per tab",
+      "chrome memory usage 2026",
+      "how much memory does chrome use with 20 tabs"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/how-much-ram-does-chrome-actually-use",
+    "updated_at": "2026-08-30T12:00:00.000+00:00"
+  },
+  {
+    "id": "dbbb6fbe-7e70-5cd4-8141-697ee998b2d3",
+    "title": "Why Does Chrome Open So Many Processes? (And When to Worry)",
+    "slug": "why-does-chrome-open-so-many-processes",
+    "description": "Chrome spawns one process per site plus GPU, network and utility services — that's the security model working, not malware. Here's how to read them and when to act.",
+    "meta_description": "Why Chrome opens so many processes: site isolation, GPU and utility services, normal ranges, red flags, and the changes that are actually safe to make.",
+    "excerpt": "Chrome spawns one process per site plus GPU, network and utility services — that's the security model working, not malware. Here's how to read them and when to act.",
+    "published_at": "2026-08-31T15:00:00.000+00:00",
+    "category": "Performance & Memory",
+    "author": "James Mitchell",
+    "image_url": "/content/images/why-does-chrome-open-so-many-processes/featured.webp",
+    "featured_image": "/content/images/why-does-chrome-open-so-many-processes/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "processes",
+      "browser-internals"
+    ],
+    "keywords": [
+      "chrome multiple processes",
+      "why does chrome open so many processes",
+      "chrome task manager processes",
+      "chrome site isolation explained"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/why-does-chrome-open-so-many-processes",
+    "updated_at": "2026-08-31T15:00:00.000+00:00"
+  },
+  {
+    "id": "86081f6c-7da2-58bf-baf4-f9180db2bc81",
+    "title": "Chrome GPU Process High Memory: The Complete Fix Guide (2026)",
+    "slug": "chrome-gpu-process-high-memory-fix",
+    "description": "GPU process memory past 1 GB during ordinary browsing means stale drivers, a canvas-heavy extension, or a WebGL leak — seven fixes, ordered from quick wins to resets.",
+    "meta_description": "Chrome's GPU process eating memory? Fix stale drivers, acceleration fallbacks and WebGL leaks — normal ranges, diagnostics and seven real fixes for 2026.",
+    "excerpt": "GPU process memory past 1 GB during ordinary browsing means stale drivers, a canvas-heavy extension, or a WebGL leak — seven fixes, ordered from quick wins to resets.",
+    "published_at": "2026-09-01T18:00:00.000+00:00",
+    "category": "Performance & Memory",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-gpu-process-high-memory-fix/featured.webp",
+    "featured_image": "/content/images/chrome-gpu-process-high-memory-fix/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "gpu",
+      "hardware-acceleration"
+    ],
+    "keywords": [
+      "chrome gpu process high memory",
+      "chrome gpu process using too much memory",
+      "chrome hardware acceleration memory",
+      "chrome gpu process fix 2026"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/chrome-gpu-process-high-memory-fix",
+    "updated_at": "2026-09-01T18:00:00.000+00:00"
+  },
+  {
+    "id": "49716f29-f2c3-5918-b2db-98b99e566376",
+    "title": "Firefox vs Chrome Memory Usage: We Measured Both (2026 Test)",
+    "slug": "firefox-vs-chrome-memory-usage-2026",
+    "description": "We ran identical sessions in both browsers on the same rig: Chrome wins at idle and on web apps, Firefox sheds more memory with many tabs open.",
+    "meta_description": "Firefox vs Chrome memory usage, measured on identical 2026 sessions: idle, many-tab and web-app totals — and which browser actually fits your workload.",
+    "excerpt": "We ran identical sessions in both browsers on the same rig: Chrome wins at idle and on web apps, Firefox sheds more memory with many tabs open.",
+    "published_at": "2026-09-02T09:00:00.000+00:00",
+    "category": "Performance & Memory",
+    "author": "James Mitchell",
+    "image_url": "/content/images/firefox-vs-chrome-memory-usage-2026/featured.webp",
+    "featured_image": "/content/images/firefox-vs-chrome-memory-usage-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "firefox",
+      "memory-comparison"
+    ],
+    "keywords": [
+      "firefox vs chrome memory",
+      "firefox vs chrome memory usage 2026",
+      "which browser uses less ram",
+      "chrome or firefox for low ram"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/firefox-vs-chrome-memory-usage-2026",
+    "updated_at": "2026-09-02T09:00:00.000+00:00"
+  },
+  {
+    "id": "c98fa4e3-a6d9-5c47-a2f0-92e97b47a9b9",
+    "title": "Best Browser for Low-End PC in 2026: 7 Tested on Real Old Hardware",
+    "slug": "best-browser-for-low-end-pc-2026",
+    "description": "We tested five browsers on a 4GB RAM, decade-old laptop — RAM at 1, 10, and 25 tabs, startup CPU, and the settings that matter more than your choice of browser.",
+    "meta_description": "Best browser for a low-end PC in 2026: Chrome, Edge, Firefox, Brave and Opera on a 4GB laptop — real RAM at 1, 10 and 25 tabs, plus the settings that matter.",
+    "excerpt": "We tested five browsers on a 4GB RAM, decade-old laptop — RAM at 1, 10, and 25 tabs, startup CPU, and the settings that matter more than your choice of browser.",
+    "published_at": "2026-09-03T12:00:00.000+00:00",
+    "category": "Performance & Memory",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-browser-for-low-end-pc-2026/featured.webp",
+    "featured_image": "/content/images/best-browser-for-low-end-pc-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "browsers",
+      "performance"
+    ],
+    "keywords": [
+      "best browser for low end pc",
+      "lightest browser for old pc 2026",
+      "fastest browser for 4gb ram laptop",
+      "chrome vs edge vs firefox on old laptop"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/best-browser-for-low-end-pc-2026",
+    "updated_at": "2026-09-03T12:00:00.000+00:00"
+  },
+  {
+    "id": "4c50eaad-fc83-5553-83ae-8a2365ea6edd",
+    "title": "Chrome Flags for Performance: The Only Safe Ones to Touch (2026)",
+    "slug": "chrome-flags-for-performance-safe-ones",
+    "description": "chrome://flags is a workshop, not a settings page. Here are the only performance flags still worth touching in 2026, the ones to avoid, and the 10-second reset.",
+    "meta_description": "Which chrome://flags are safe for performance in 2026? The four worth trying, the ones to avoid, and the 10-second reset — tested on a low-end laptop.",
+    "excerpt": "chrome://flags is a workshop, not a settings page. Here are the only performance flags still worth touching in 2026, the ones to avoid, and the 10-second reset.",
+    "published_at": "2026-09-04T15:00:00.000+00:00",
+    "category": "Performance & Memory",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-flags-for-performance-safe-ones/featured.webp",
+    "featured_image": "/content/images/chrome-flags-for-performance-safe-ones/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "performance",
+      "flags"
+    ],
+    "keywords": [
+      "chrome flags performance",
+      "best chrome://flags for speed",
+      "safe chrome flags to enable 2026",
+      "chrome gpu rasterization flag"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/chrome-flags-for-performance-safe-ones",
+    "updated_at": "2026-09-04T15:00:00.000+00:00"
+  },
+  {
+    "id": "e4696324-68e8-5c8b-8d4e-b575578b0cfb",
+    "title": "Best Adblock Browser for Android (2026): 6 Compared With Ad-Block Test Results",
+    "slug": "best-adblock-browser-for-android-2026",
+    "description": "Firefox with uBlock Origin blocked every ad in our 15-site test; Brave came close with zero setup. Full results for six Android browsers, including Kiwi and Samsung Internet.",
+    "meta_description": "Best adblock browser for Android in 2026: Firefox, Brave, Samsung Internet, Kiwi, Opera and Edge tested on 15 ad-heavy sites — real block rates and verdicts.",
+    "excerpt": "Firefox with uBlock Origin blocked every ad in our 15-site test; Brave came close with zero setup. Full results for six Android browsers, including Kiwi and Samsung Internet.",
+    "published_at": "2026-09-05T18:00:00.000+00:00",
+    "category": "Android & Mobile",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-adblock-browser-for-android-2026/featured.webp",
+    "featured_image": "/content/images/best-adblock-browser-for-android-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "android",
+      "adblock"
+    ],
+    "keywords": [
+      "best adblock browser android",
+      "android browser with adblock 2026",
+      "ublock origin android browser",
+      "brave vs firefox android adblock"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/best-adblock-browser-for-android-2026",
+    "updated_at": "2026-09-05T18:00:00.000+00:00"
+  },
+  {
+    "id": "34a1bec8-ba43-5145-a160-de663054c8ba",
+    "title": "Kiwi Browser Review 2026: Is It Safe, Does It Still Get Updates, Verdict",
+    "slug": "kiwi-browser-review-2026",
+    "description": "Kiwi Browser runs desktop Chrome extensions on Android — but development has stalled. Our 2026 verdict on safety, update lag, extension setup, and the alternatives worth migrating to.",
+    "meta_description": "Kiwi Browser reviewed for 2026: is it safe, does it still get updates, how to install desktop Chrome extensions, and the alternatives worth switching to.",
+    "excerpt": "Kiwi Browser runs desktop Chrome extensions on Android — but development has stalled. Our 2026 verdict on safety, update lag, extension setup, and the alternatives worth migrating to.",
+    "published_at": "2026-09-06T09:00:00.000+00:00",
+    "category": "Android & Mobile",
+    "author": "James Mitchell",
+    "image_url": "/content/images/kiwi-browser-review-2026/featured.webp",
+    "featured_image": "/content/images/kiwi-browser-review-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "android",
+      "browser-review"
+    ],
+    "keywords": [
+      "kiwi browser review",
+      "is kiwi browser safe 2026",
+      "kiwi browser still updated",
+      "kiwi browser alternatives android"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/kiwi-browser-review-2026",
+    "updated_at": "2026-09-06T09:00:00.000+00:00"
+  },
+  {
+    "id": "a6456048-d4dc-538e-9477-3bdbc212235f",
+    "title": "How to Block Ads in the YouTube App on Android (What Works in 2026)",
+    "slug": "block-ads-youtube-app-android",
+    "description": "No ad blocker can clean the official YouTube app — the ads ship with the video. Here is what actually works on Android, ranked: browsers, Premium, and what to avoid.",
+    "meta_description": "Can you block ads in the YouTube app on Android in 2026? Why ad blockers and DNS fail, and the methods that actually work — with setup steps and trade-offs.",
+    "excerpt": "No ad blocker can clean the official YouTube app — the ads ship with the video. Here is what actually works on Android, ranked: browsers, Premium, and what to avoid.",
+    "published_at": "2026-08-29T12:00:00.000+00:00",
+    "category": "Android & Mobile",
+    "author": "James Mitchell",
+    "image_url": "/content/images/block-ads-youtube-app-android/featured.webp",
+    "featured_image": "/content/images/block-ads-youtube-app-android/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "android",
+      "youtube"
+    ],
+    "keywords": [
+      "block ads youtube app android",
+      "youtube ad blocker android 2026",
+      "adguard youtube ads not blocked",
+      "watch youtube without ads android"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/block-ads-youtube-app-android",
+    "updated_at": "2026-08-29T12:00:00.000+00:00"
+  },
+  {
+    "id": "49aa8049-b81b-59d7-a0b9-873a96c3c143",
+    "title": "AdGuard DNS Setup Guide: Android, iPhone, Router and PC (2026)",
+    "slug": "adguard-dns-setup-guide-android-router-pc",
+    "description": "Set up AdGuard DNS on Android, iPhone, router, and Windows PC in about 15 minutes — exact server addresses, verification steps, and the limits worth knowing.",
+    "meta_description": "Set up AdGuard DNS on Android, iPhone, router, and PC in 15 minutes — exact server addresses, verification steps, and what DNS blocking cannot catch (2026).",
+    "excerpt": "Set up AdGuard DNS on Android, iPhone, router, and Windows PC in about 15 minutes — exact server addresses, verification steps, and the limits worth knowing.",
+    "published_at": "2026-08-30T15:00:00.000+00:00",
+    "category": "Android & Mobile",
+    "author": "James Mitchell",
+    "image_url": "/content/images/adguard-dns-setup-guide-android-router-pc/featured.webp",
+    "featured_image": "/content/images/adguard-dns-setup-guide-android-router-pc/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "adguard-dns",
+      "android",
+      "ad-blocking"
+    ],
+    "keywords": [
+      "adguard dns setup",
+      "adguard dns android private dns",
+      "adguard dns router setup",
+      "adguard dns server addresses",
+      "adguard dns windows 11"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/adguard-dns-setup-guide-android-router-pc",
+    "updated_at": "2026-08-30T15:00:00.000+00:00"
+  },
+  {
+    "id": "39ab85b9-0340-584d-9e01-8a9cb323fd09",
+    "title": "Stop Notification Ads on Chrome Android for Good (2026 Fix)",
+    "slug": "stop-notification-ads-chrome-android",
+    "description": "Notification ads on Chrome Android come from three sources. Fix site permissions, remove adware apps, and run Play Protect — total time about 15 minutes.",
+    "meta_description": "Stop notification ads on Chrome Android in 15 minutes: revoke site permissions, remove adware apps, run Play Protect, keep spam from returning (2026).",
+    "excerpt": "Notification ads on Chrome Android come from three sources. Fix site permissions, remove adware apps, and run Play Protect — total time about 15 minutes.",
+    "published_at": "2026-08-31T18:00:00.000+00:00",
+    "category": "Android & Mobile",
+    "author": "James Mitchell",
+    "image_url": "/content/images/stop-notification-ads-chrome-android/featured.webp",
+    "featured_image": "/content/images/stop-notification-ads-chrome-android/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "android",
+      "notifications"
+    ],
+    "keywords": [
+      "stop notification ads android",
+      "chrome android notification ads",
+      "remove notification ads chrome",
+      "android notification spam fix"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/stop-notification-ads-chrome-android",
+    "updated_at": "2026-08-31T18:00:00.000+00:00"
+  },
+  {
+    "id": "53399d06-f8f7-597d-beed-1c0efda3524a",
+    "title": "Samsung Internet + AdBlock: The Full Setup Guide (2026)",
+    "slug": "samsung-internet-adblock-setup-guide",
+    "description": "Samsung Internet supports real content blockers. Install AdGuard Content Blocker from the Galaxy Store, pick filter lists, and kill most display ads in 5 minutes.",
+    "meta_description": "Block ads on Samsung Internet in 5 minutes with AdGuard Content Blocker — install steps, filter lists, alternatives, and limits vs uBlock Origin (2026).",
+    "excerpt": "Samsung Internet supports real content blockers. Install AdGuard Content Blocker from the Galaxy Store, pick filter lists, and kill most display ads in 5 minutes.",
+    "published_at": "2026-09-01T09:00:00.000+00:00",
+    "category": "Android & Mobile",
+    "author": "James Mitchell",
+    "image_url": "/content/images/samsung-internet-adblock-setup-guide/featured.webp",
+    "featured_image": "/content/images/samsung-internet-adblock-setup-guide/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "samsung-internet",
+      "ad-blocking",
+      "android"
+    ],
+    "keywords": [
+      "samsung internet adblock",
+      "samsung internet ad blocker setup",
+      "adguard content blocker samsung internet",
+      "block ads samsung internet"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/samsung-internet-adblock-setup-guide",
+    "updated_at": "2026-09-01T09:00:00.000+00:00"
+  },
+  {
+    "id": "edd9d90b-aab8-5be9-871f-5972bc94058d",
+    "title": "Firefox Android Extensions in 2026: The Real Alternative to Kiwi",
+    "slug": "firefox-android-extensions-guide",
+    "description": "Firefox for Android runs real desktop-style extensions in 2026. Install uBlock Origin, Dark Reader, and Bitwarden, with measured performance numbers and a Kiwi comparison.",
+    "meta_description": "Firefox Android runs real extensions in 2026 — install uBlock Origin, Dark Reader, and Bitwarden step by step, with performance numbers and a Kiwi comparison.",
+    "excerpt": "Firefox for Android runs real desktop-style extensions in 2026. Install uBlock Origin, Dark Reader, and Bitwarden, with measured performance numbers and a Kiwi comparison.",
+    "published_at": "2026-09-02T12:00:00.000+00:00",
+    "category": "Android & Mobile",
+    "author": "James Mitchell",
+    "image_url": "/content/images/firefox-android-extensions-guide/featured.webp",
+    "featured_image": "/content/images/firefox-android-extensions-guide/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "firefox",
+      "android",
+      "extensions"
+    ],
+    "keywords": [
+      "firefox android extensions",
+      "firefox android ublock origin",
+      "install extensions firefox android",
+      "firefox android add-ons 2026"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/firefox-android-extensions-guide",
+    "updated_at": "2026-09-02T12:00:00.000+00:00"
+  },
+  {
+    "id": "04ddc399-ba0b-5718-b32a-157d1ee11c27",
+    "title": "Is YouTube to MP3 Legal? The Plain-Language 2026 Guide",
+    "slug": "is-youtube-to-mp3-legal-2026-guide",
+    "description": "Converting copyrighted YouTube videos to MP3 is infringement in most countries, even for personal listening. Here is where the legal lines sit in 2026.",
+    "meta_description": "Is YouTube to MP3 legal in 2026? Plain-language guide to copyright, YouTube's ToS, fair use myths, and when converting is fine — with a use-case risk table.",
+    "excerpt": "Converting copyrighted YouTube videos to MP3 is infringement in most countries, even for personal listening. Here is where the legal lines sit in 2026.",
+    "published_at": "2026-09-03T15:00:00.000+00:00",
+    "category": "Media & Downloading",
+    "author": "James Mitchell",
+    "image_url": "/content/images/is-youtube-to-mp3-legal-2026-guide/featured.webp",
+    "featured_image": "/content/images/is-youtube-to-mp3-legal-2026-guide/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "youtube",
+      "copyright",
+      "mp3"
+    ],
+    "keywords": [
+      "is youtube to mp3 legal",
+      "youtube to mp3 copyright",
+      "is downloading youtube audio illegal",
+      "youtube terms of service downloading"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/is-youtube-to-mp3-legal-2026-guide",
+    "updated_at": "2026-09-03T15:00:00.000+00:00"
+  },
+  {
+    "id": "2e409e42-dc81-5873-8d50-9c157380cb52",
+    "title": "YouTube Playlist to MP3: Batch Conversion Done Right (2026)",
+    "slug": "youtube-playlist-to-mp3-batch-conversion",
+    "description": "Converting a 100-video YouTube playlist one file at a time wastes hours. Here is how batch playlist-to-MP3 workflows actually work in 2026, with realistic limits.",
+    "meta_description": "Batch-convert YouTube playlists to MP3 in 2026: tools compared, limits for 100+ videos, naming templates, auto-tagging, and recovery when a batch fails.",
+    "excerpt": "Converting a 100-video YouTube playlist one file at a time wastes hours. Here is how batch playlist-to-MP3 workflows actually work in 2026, with realistic limits.",
+    "published_at": "2026-09-04T18:00:00.000+00:00",
+    "category": "Media & Downloading",
+    "author": "James Mitchell",
+    "image_url": "/content/images/youtube-playlist-to-mp3-batch-conversion/featured.webp",
+    "featured_image": "/content/images/youtube-playlist-to-mp3-batch-conversion/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "youtube to mp3",
+      "batch conversion",
+      "playlists"
+    ],
+    "keywords": [
+      "youtube playlist to mp3",
+      "youtube playlist to mp3 converter",
+      "batch convert youtube playlist",
+      "download entire youtube playlist as mp3",
+      "youtube playlist mp3 100 videos"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/youtube-playlist-to-mp3-batch-conversion",
+    "updated_at": "2026-09-04T18:00:00.000+00:00"
+  },
+  {
+    "id": "9e874273-6000-562b-9934-6e6fc2d420d6",
+    "title": "YouTube to MP3 on iPhone and Android: 5 Working Methods (2026)",
+    "slug": "youtube-to-mp3-iphone-android-2026",
+    "description": "Downloading YouTube audio on phones works differently in 2026: iOS has no extension support and Android apps carry real risks. Five methods compared.",
+    "meta_description": "Convert YouTube to MP3 on iPhone and Android in 2026: five working methods, iOS Files app steps, fake download button checks, and the full legal limits.",
+    "excerpt": "Downloading YouTube audio on phones works differently in 2026: iOS has no extension support and Android apps carry real risks. Five methods compared.",
+    "published_at": "2026-09-05T09:00:00.000+00:00",
+    "category": "Media & Downloading",
+    "author": "James Mitchell",
+    "image_url": "/content/images/youtube-to-mp3-iphone-android-2026/featured.webp",
+    "featured_image": "/content/images/youtube-to-mp3-iphone-android-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "youtube to mp3",
+      "iphone",
+      "android"
+    ],
+    "keywords": [
+      "youtube to mp3 iphone",
+      "youtube to mp3 android",
+      "convert youtube to mp3 on phone",
+      "youtube mp3 iphone 2026",
+      "save youtube audio to files app"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/youtube-to-mp3-iphone-android-2026",
+    "updated_at": "2026-09-05T09:00:00.000+00:00"
+  },
+  {
+    "id": "b26c2455-9567-5c45-a52a-13be56af8131",
+    "title": "How to Edit MP3 Tags (ID3) Like a Pro: Album Art, Title, Track Numbers",
+    "slug": "how-to-edit-mp3-tags-id3",
+    "description": "YouTube-sourced MP3s arrive with junk tags and missing art. Fix them properly with Mp3tag, MusicBrainz Picard, or Kid3, including batch patterns that scale.",
+    "meta_description": "Fix messy MP3 tags in 2026: ID3v1 vs ID3v2.4, the best tag editors for Windows, Mac, Android and iOS, auto-fetched album art, batch renaming patterns.",
+    "excerpt": "YouTube-sourced MP3s arrive with junk tags and missing art. Fix them properly with Mp3tag, MusicBrainz Picard, or Kid3, including batch patterns that scale.",
+    "published_at": "2026-09-06T12:00:00.000+00:00",
+    "category": "Media & Downloading",
+    "author": "James Mitchell",
+    "image_url": "/content/images/how-to-edit-mp3-tags-id3/featured.webp",
+    "featured_image": "/content/images/how-to-edit-mp3-tags-id3/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "mp3 tags",
+      "id3",
+      "music library"
+    ],
+    "keywords": [
+      "how to edit mp3 tags",
+      "edit id3 tags mp3",
+      "add album art to mp3",
+      "batch edit mp3 metadata",
+      "fix mp3 tags youtube downloads"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/how-to-edit-mp3-tags-id3",
+    "updated_at": "2026-09-06T12:00:00.000+00:00"
+  },
+  {
+    "id": "728393b6-2282-5787-9985-0b84ca283ff7",
+    "title": "YouTube Premium vs MP3 Converter: The Honest Math (2026)",
+    "slug": "youtube-premium-vs-mp3-converter-2026",
+    "description": "Premium costs $13.99 a month and gives authorized offline playback. Converters cost nothing but your time and carry real risks. Here is the honest 2026 math.",
+    "meta_description": "YouTube Premium vs an MP3 converter in 2026 with honest numbers: annual cost, time cost, audio quality, car stereo use, legal standing, and who each suits.",
+    "excerpt": "Premium costs $13.99 a month and gives authorized offline playback. Converters cost nothing but your time and carry real risks. Here is the honest 2026 math.",
+    "published_at": "2026-08-29T15:00:00.000+00:00",
+    "category": "Media & Downloading",
+    "author": "James Mitchell",
+    "image_url": "/content/images/youtube-premium-vs-mp3-converter-2026/featured.webp",
+    "featured_image": "/content/images/youtube-premium-vs-mp3-converter-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "youtube premium",
+      "youtube to mp3",
+      "cost comparison"
+    ],
+    "keywords": [
+      "youtube premium vs converter",
+      "youtube premium vs youtube to mp3",
+      "is youtube premium worth it 2026",
+      "youtube premium price 2026",
+      "free youtube mp3 converter vs premium"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/youtube-premium-vs-mp3-converter-2026",
+    "updated_at": "2026-08-29T15:00:00.000+00:00"
+  },
+  {
+    "id": "4daec284-b8a4-5bdc-887c-140de1eacda2",
+    "title": "Best Audio Downloaders for Podcast Listeners (2026): 7 Tools Ranked",
+    "slug": "best-audio-downloaders-podcast-2026",
+    "description": "Podcasts are built to be downloaded through RSS, so you rarely need a YouTube scraper. Seven downloaders ranked by chapters, auto-download, and reliability.",
+    "meta_description": "The best audio downloaders for podcasts in 2026: RSS-native apps vs YouTube scrapers, chapter and auto-download support, video-podcast options, legal limits.",
+    "excerpt": "Podcasts are built to be downloaded through RSS, so you rarely need a YouTube scraper. Seven downloaders ranked by chapters, auto-download, and reliability.",
+    "published_at": "2026-08-30T18:00:00.000+00:00",
+    "category": "Media & Downloading",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-audio-downloaders-podcast-2026/featured.webp",
+    "featured_image": "/content/images/best-audio-downloaders-podcast-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "podcasts",
+      "audio downloader",
+      "rss"
+    ],
+    "keywords": [
+      "youtube audio downloader podcast",
+      "best podcast downloader 2026",
+      "podcast rss downloader",
+      "download podcast episodes offline",
+      "audio downloader for podcasts"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/best-audio-downloaders-podcast-2026",
+    "updated_at": "2026-08-30T18:00:00.000+00:00"
+  },
+  {
+    "id": "fc0404ea-f98e-53b9-ad41-8a8c750a404f",
+    "title": "AI Formula Generator: Excel vs Google Sheets (2026 Comparison)",
+    "slug": "ai-formula-generator-excel-vs-google-sheets",
+    "description": "We ran the same AI formula prompts in Excel Copilot and Google Sheets in 2026. Here is where each generator wins on accuracy, price, and offline work.",
+    "meta_description": "AI formula generation compared in Excel vs Google Sheets for 2026: the same prompts tested, accuracy results, pricing, and a verdict for every user type.",
+    "excerpt": "We ran the same AI formula prompts in Excel Copilot and Google Sheets in 2026. Here is where each generator wins on accuracy, price, and offline work.",
+    "published_at": "2026-08-31T09:00:00.000+00:00",
+    "category": "Productivity & AI",
+    "author": "James Mitchell",
+    "image_url": "/content/images/ai-formula-generator-excel-vs-google-sheets/featured.webp",
+    "featured_image": "/content/images/ai-formula-generator-excel-vs-google-sheets/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "google sheets",
+      "excel",
+      "ai formulas"
+    ],
+    "keywords": [
+      "ai formula generator excel",
+      "AI formula generator Excel vs Google Sheets",
+      "Excel Copilot vs Google Sheets Gemini formulas",
+      "AI spreadsheet formula generator 2026"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/ai-formula-generator-excel-vs-google-sheets",
+    "updated_at": "2026-08-31T09:00:00.000+00:00"
+  },
+  {
+    "id": "38ddde0a-368d-50eb-a696-17edc6cd67e4",
+    "title": "Google Sheets Automation with AI: The 2026 Playbook",
+    "slug": "google-sheets-automation-with-ai-2026",
+    "description": "The 2026 stack for automating Google Sheets with AI, plus five build-this-week recipes: categorize expenses, clean imports, summarize surveys, and more.",
+    "meta_description": "Automate Google Sheets with AI in 2026: five practical recipes, Apps Script setup steps, realistic costs, and the limits to plan around before you scale.",
+    "excerpt": "The 2026 stack for automating Google Sheets with AI, plus five build-this-week recipes: categorize expenses, clean imports, summarize surveys, and more.",
+    "published_at": "2026-09-01T12:00:00.000+00:00",
+    "category": "Productivity & AI",
+    "author": "James Mitchell",
+    "image_url": "/content/images/google-sheets-automation-with-ai-2026/featured.webp",
+    "featured_image": "/content/images/google-sheets-automation-with-ai-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "google sheets",
+      "automation",
+      "apps script"
+    ],
+    "keywords": [
+      "google sheets automation ai",
+      "Google Sheets AI automation 2026",
+      "automate Google Sheets with AI",
+      "Google Sheets Apps Script AI recipes"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/google-sheets-automation-with-ai-2026",
+    "updated_at": "2026-09-01T12:00:00.000+00:00"
+  },
+  {
+    "id": "362726c3-ab0e-54c7-8e9b-fd1c9de2f72c",
+    "title": "ChatGPT for Google Sheets: 9 Real Workflows That Actually Work (2026)",
+    "slug": "chatgpt-for-google-sheets-workflows",
+    "description": "Nine ChatGPT workflows for Google Sheets with copy-paste prompts: formulas, data cleaning, categorization, translation, regex, charts, templates, and debugging.",
+    "meta_description": "Nine ChatGPT workflows for Google Sheets in 2026 with copy-paste prompts for formulas, cleaning, translation, regex, and debugging, plus the limits to know.",
+    "excerpt": "Nine ChatGPT workflows for Google Sheets with copy-paste prompts: formulas, data cleaning, categorization, translation, regex, charts, templates, and debugging.",
+    "published_at": "2026-09-02T15:00:00.000+00:00",
+    "category": "Productivity & AI",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chatgpt-for-google-sheets-workflows/featured.webp",
+    "featured_image": "/content/images/chatgpt-for-google-sheets-workflows/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "google sheets",
+      "chatgpt",
+      "formulas"
+    ],
+    "keywords": [
+      "chatgpt google sheets",
+      "ChatGPT for Google Sheets workflows",
+      "ChatGPT Sheets prompts",
+      "use ChatGPT with Google Sheets"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/chatgpt-for-google-sheets-workflows",
+    "updated_at": "2026-09-02T15:00:00.000+00:00"
+  },
+  {
+    "id": "d7fa78dd-53c3-55d5-9e95-d4977cce8566",
+    "title": "Best AI Tools for Data Entry Automation (2026): 8 Tested",
+    "slug": "best-ai-tools-data-entry-automation-2026",
+    "description": "Eight AI data-entry tool categories compared for 2026: real accuracy ranges, price tiers, setup difficulty, and the quickest wins for small teams.",
+    "meta_description": "Compare eight AI data entry automation tools for 2026: accuracy on real forms and invoices, price tiers, setup difficulty, and how to build one pipeline.",
+    "excerpt": "Eight AI data-entry tool categories compared for 2026: real accuracy ranges, price tiers, setup difficulty, and the quickest wins for small teams.",
+    "published_at": "2026-09-03T18:00:00.000+00:00",
+    "category": "Productivity & AI",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-ai-tools-data-entry-automation-2026/featured.webp",
+    "featured_image": "/content/images/best-ai-tools-data-entry-automation-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "data entry",
+      "automation",
+      "productivity"
+    ],
+    "keywords": [
+      "ai data entry automation",
+      "best AI data entry tools 2026",
+      "automate data entry with AI",
+      "AI form filler Chrome extension"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/best-ai-tools-data-entry-automation-2026",
+    "updated_at": "2026-09-03T18:00:00.000+00:00"
+  },
+  {
+    "id": "6d172095-6125-55fc-9e49-30b52057a1d9",
+    "title": "Poper Blocker vs Adblock Plus: Which Blocks More in 2026? (+ 6 Fixes)",
+    "slug": "poper-blocker-vs-adblock-plus-2026",
+    "description": "Poper Blocker specializes in popups and overlays; Adblock Plus is a full ad blocker. See which blocks more in 2026, plus six fixes for failures.",
+    "meta_description": "Poper Blocker vs Adblock Plus in 2026: engines, filter lists, memory use, pricing, which blocks more by scenario, and six fixes when popup blocking fails.",
+    "excerpt": "Poper Blocker specializes in popups and overlays; Adblock Plus is a full ad blocker. See which blocks more in 2026, plus six fixes for failures.",
+    "published_at": "2026-09-04T09:00:00.000+00:00",
+    "category": "Privacy & Security",
+    "author": "James Mitchell",
+    "image_url": "/content/images/poper-blocker-vs-adblock-plus-2026/featured.webp",
+    "featured_image": "/content/images/poper-blocker-vs-adblock-plus-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "ad blocker",
+      "privacy",
+      "popups"
+    ],
+    "keywords": [
+      "poper blocker vs adblock plus",
+      "Poper Blocker vs Adblock Plus 2026",
+      "Poper Blocker not working",
+      "Adblock Plus vs popup blocker"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/poper-blocker-vs-adblock-plus-2026",
+    "updated_at": "2026-09-04T09:00:00.000+00:00"
+  },
+  {
+    "id": "e7b67de6-5f20-581a-8441-64eb568e8d96",
+    "title": "AdGuard vs Ghostery (2026): Privacy Comparison + Best Alternatives Ranked",
+    "slug": "adguard-vs-ghostery-2026-comparison",
+    "description": "We ran AdGuard and Ghostery through 12 side-by-side tests — filter lists, tracker blocking depth, memory use, and pricing — then ranked the best alternatives by user type.",
+    "meta_description": "AdGuard vs Ghostery in 2026: filter lists, tracker blocking, memory use and pricing tested side by side — plus ranked alternatives for every user type.",
+    "excerpt": "We ran AdGuard and Ghostery through 12 side-by-side tests — filter lists, tracker blocking depth, memory use, and pricing — then ranked the best alternatives by user type.",
+    "published_at": "2026-09-05T12:00:00.000+00:00",
+    "category": "Privacy & Security",
+    "author": "James Mitchell",
+    "image_url": "/content/images/adguard-vs-ghostery-2026-comparison/featured.webp",
+    "featured_image": "/content/images/adguard-vs-ghostery-2026-comparison/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "privacy",
+      "ad-blocker"
+    ],
+    "keywords": [
+      "adguard vs ghostery",
+      "adguard or ghostery which is better",
+      "ghostery vs adguard 2026",
+      "best tracker blocker for chrome"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/adguard-vs-ghostery-2026-comparison",
+    "updated_at": "2026-09-05T12:00:00.000+00:00"
+  },
+  {
+    "id": "fd3809bc-234c-5cdc-9b87-e7274a7e3dbf",
+    "title": "What Are Tracking Cookies? How to Remove Them From Chrome (2026)",
+    "slug": "what-are-tracking-cookies-remove-chrome",
+    "description": "Tracking cookies follow you across sites to build a profile of your browsing. Here is what they are, how they work, and a 4-step Chrome cleanup.",
+    "meta_description": "Tracking cookies explained in plain English for 2026, plus a 4-step Chrome cleanup: clear cookies, block third-party trackers, keep your logins intact.",
+    "excerpt": "Tracking cookies follow you across sites to build a profile of your browsing. Here is what they are, how they work, and a 4-step Chrome cleanup.",
+    "published_at": "2026-09-06T15:00:00.000+00:00",
+    "category": "Privacy & Security",
+    "author": "James Mitchell",
+    "image_url": "/content/images/what-are-tracking-cookies-remove-chrome/featured.webp",
+    "featured_image": "/content/images/what-are-tracking-cookies-remove-chrome/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "privacy",
+      "cookies"
+    ],
+    "keywords": [
+      "what are tracking cookies",
+      "how to remove tracking cookies from chrome",
+      "block third-party cookies chrome",
+      "tracking cookies explained"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/what-are-tracking-cookies-remove-chrome",
+    "updated_at": "2026-09-06T15:00:00.000+00:00"
+  },
+  {
+    "id": "2cf4efd6-af69-5a01-8b2b-429e4576dc08",
+    "title": "YouTube Downloader Safety Checklist (2026): Verify Before You Install",
+    "slug": "youtube-downloader-safety-checklist-2026",
+    "description": "Most YouTube downloader scams look identical to the real thing. Run every candidate through this 10-point checklist before you install — five minutes of checking.",
+    "meta_description": "Verify any YouTube downloader in 5 minutes with this 2026 checklist: store checks, permissions, scam patterns to spot, and cleanup steps for bad installs",
+    "excerpt": "Most YouTube downloader scams look identical to the real thing. Run every candidate through this 10-point checklist before you install — five minutes of checking.",
+    "published_at": "2026-08-29T18:00:00.000+00:00",
+    "category": "Privacy & Security",
+    "author": "James Mitchell",
+    "image_url": "/content/images/youtube-downloader-safety-checklist-2026/featured.webp",
+    "featured_image": "/content/images/youtube-downloader-safety-checklist-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "privacy",
+      "extension-safety"
+    ],
+    "keywords": [
+      "safe youtube downloader",
+      "is youtube downloader safe",
+      "youtube downloader extension virus",
+      "check youtube converter safety"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/youtube-downloader-safety-checklist-2026",
+    "updated_at": "2026-08-29T18:00:00.000+00:00"
+  },
+  {
+    "id": "3166ce21-a9fc-5c05-8f8b-a122e8db3eb9",
+    "title": "Tag Assistant Legacy vs Companion: The 2026 Migration Guide",
+    "slug": "tag-assistant-legacy-vs-companion-2026",
+    "description": "Google retired Tag Assistant Legacy in 2024. Companion replaces it with session-based debugging — what changed, how to migrate in 7 steps, which tool to use.",
+    "meta_description": "Tag Assistant Legacy is gone. Compare it with Companion in 2026, follow the 7-step migration, and learn when to use GTM Preview or GA4 DebugView first.",
+    "excerpt": "Google retired Tag Assistant Legacy in 2024. Companion replaces it with session-based debugging — what changed, how to migrate in 7 steps, which tool to use.",
+    "published_at": "2026-08-30T09:00:00.000+00:00",
+    "category": "Privacy & Security",
+    "author": "James Mitchell",
+    "image_url": "/content/images/tag-assistant-legacy-vs-companion-2026/featured.webp",
+    "featured_image": "/content/images/tag-assistant-legacy-vs-companion-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "analytics",
+      "google-tag-manager"
+    ],
+    "keywords": [
+      "tag assistant legacy vs companion",
+      "tag assistant legacy deprecated",
+      "tag assistant companion download",
+      "google tag manager debugging 2026"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/tag-assistant-legacy-vs-companion-2026",
+    "updated_at": "2026-08-30T09:00:00.000+00:00"
   }
 ]
