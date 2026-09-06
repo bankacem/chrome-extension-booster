@@ -1,5 +1,129 @@
 [
   {
+    "id": "ddf955e9-24ba-5447-a81f-3497026a5e53",
+    "title": "Safari Extensions in 2026: How They Work, Best Picks, and vs Chrome",
+    "slug": "safari-extensions-guide-2026",
+    "description": "Safari extensions explained for 2026: App Store install on Mac and iOS, per-site permissions, best picks, whether Chrome extensions run on Safari, and Safari vs Chrome ecosystems.",
+    "meta_description": "Safari extensions explained for 2026: App Store install on Mac and iOS, per-site permissions, best picks, whether Chrome extensions run on Safari, and Safari vs Chrome ecosystems.",
+    "excerpt": "Safari extensions install from the App Store and run on Mac, iPhone, and iPad under Apple's review and per-site permission model. How the system works, the extensions worth installing, and what Chrome users should know before switching.",
+    "published_at": "2026-09-07T12:00:00.000+00:00",
+    "category": "Guides & Comparisons",
+    "author": "James Mitchell",
+    "image_url": "/content/images/safari-extensions-guide-2026/featured.webp",
+    "featured_image": "/content/images/safari-extensions-guide-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "safari",
+      "safari-extensions",
+      "apple",
+      "browser-extensions"
+    ],
+    "keywords": [
+      "safari extensions",
+      "best safari extensions 2026",
+      "how to install safari extensions",
+      "safari extensions iphone",
+      "chrome extensions on safari"
+    ],
+    "canonicalPath": "/blog/safari-extensions-guide-2026",
+    "updated_at": "2026-09-07T12:00:00.000+00:00"
+  },
+  {
+    "id": "0cb04045-de7a-502f-80b9-d6eed0603e74",
+    "title": "Kiwi Browser Download & Install Guide (2026): Safe Sources, Setup, Extensions",
+    "slug": "kiwi-browser-download-install-guide-2026",
+    "description": "Where to safely download Kiwi Browser in 2026 (GitHub only), step-by-step install, importing Chrome data, installing extensions, safety after archival, and the best alternatives.",
+    "meta_description": "Where to safely download Kiwi Browser in 2026 (GitHub only), step-by-step install, importing Chrome data, installing extensions, safety after archival, and the best alternatives.",
+    "excerpt": "Kiwi Browser was archived in January 2025 and pulled from the Play Store, so the only safe download today is the official GitHub releases page. Step-by-step install, first-run setup, loading Chrome extensions, safety reality check, and the best 2026 alternatives.",
+    "published_at": "2026-09-07T11:00:00.000+00:00",
+    "category": "Android & Mobile",
+    "author": "James Mitchell",
+    "image_url": "/content/images/kiwi-browser-download-install-guide-2026/featured.webp",
+    "featured_image": "/content/images/kiwi-browser-download-install-guide-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "kiwi-browser",
+      "android",
+      "chrome-extensions",
+      "mobile-browsers"
+    ],
+    "keywords": [
+      "kiwi browser download",
+      "kiwi browser apk safe",
+      "install kiwi browser android",
+      "kiwi browser chrome extensions",
+      "kiwi browser alternatives 2026"
+    ],
+    "canonicalPath": "/blog/kiwi-browser-download-install-guide-2026",
+    "updated_at": "2026-09-07T11:00:00.000+00:00"
+  },
+  {
+    "id": "611c784c-3804-5724-b49d-a2d157b99e0c",
+    "title": "Chrome Remote Desktop Extension: Complete Setup & Security Guide (2026)",
+    "slug": "chrome-remote-desktop-extension-guide-2026",
+    "description": "Chrome Remote Desktop extension explained: full 2026 setup for remote access and support mode, Android/iOS clients, security best practices, troubleshooting, and vs TeamViewer/AnyDesk.",
+    "meta_description": "Chrome Remote Desktop extension explained: full 2026 setup for remote access and support mode, Android/iOS clients, security best practices, troubleshooting, and vs TeamViewer/AnyDesk.",
+    "excerpt": "Chrome Remote Desktop is Google's free remote-access tool: a web UI at remotedesktop.google.com plus a small companion extension and host service. Full setup, support mode, security hardening, troubleshooting, and how it compares to paid alternatives.",
+    "published_at": "2026-09-07T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-remote-desktop-extension-guide-2026/featured.webp",
+    "featured_image": "/content/images/chrome-remote-desktop-extension-guide-2026/featured.webp",
+    "reading_time": 13,
+    "read_time": 13,
+    "views": 0,
+    "tags": [
+      "chrome-remote-desktop",
+      "remote-access",
+      "productivity",
+      "google"
+    ],
+    "keywords": [
+      "chrome remote desktop extension",
+      "chrome remote desktop setup",
+      "chrome remote desktop support mode",
+      "remote access chrome",
+      "chrome remote desktop not connecting"
+    ],
+    "canonicalPath": "/blog/chrome-remote-desktop-extension-guide-2026",
+    "updated_at": "2026-09-07T10:00:00.000+00:00"
+  },
+  {
+    "id": "e36acc88-c973-5c71-9704-e27ffc5f030a",
+    "title": "What Is a Browser Extension? The Complete 2026 Guide",
+    "slug": "what-is-a-browser-extension-2026",
+    "description": "What is a browser extension? How extensions work, what permissions really mean, extension vs add-on vs plugin, and how to judge safety — the complete 2026 explainer.",
+    "meta_description": "What is a browser extension? How extensions work, what permissions really mean, extension vs add-on vs plugin, and how to judge safety — the complete 2026 explainer.",
+    "excerpt": "A plain-English definition of browser extensions, how they work under the hood (manifests, permissions, service workers), how they differ from plugins and add-ons, and how to judge their safety in 2026.",
+    "published_at": "2026-09-07T09:00:00.000+00:00",
+    "category": "Chrome Extensions",
+    "author": "James Mitchell",
+    "image_url": "/content/images/what-is-a-browser-extension-2026/featured.webp",
+    "featured_image": "/content/images/what-is-a-browser-extension-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "browser-extensions",
+      "chrome",
+      "beginners-guide",
+      "web-basics"
+    ],
+    "keywords": [
+      "what is a browser extension",
+      "browser extension definition",
+      "how do browser extensions work",
+      "extension vs add-on",
+      "are browser extensions safe"
+    ],
+    "canonicalPath": "/blog/what-is-a-browser-extension-2026",
+    "updated_at": "2026-09-07T09:00:00.000+00:00"
+  },
+  {
     "id": "fd3809bc-234c-5cdc-9b87-e7274a7e3dbf",
     "title": "What Are Tracking Cookies? How to Remove Them From Chrome (2026)",
     "slug": "what-are-tracking-cookies-remove-chrome",
@@ -19836,129 +19960,5 @@
     ],
     "canonicalPath": "/blog/internet-download-manager-extension",
     "updated_at": "2026-08-21T00:00:00.000Z"
-  },
-  {
-    "id": "e36acc88-c973-5c71-9704-e27ffc5f030a",
-    "title": "What Is a Browser Extension? The Complete 2026 Guide",
-    "slug": "what-is-a-browser-extension-2026",
-    "description": "What is a browser extension? How extensions work, what permissions really mean, extension vs add-on vs plugin, and how to judge safety — the complete 2026 explainer.",
-    "meta_description": "What is a browser extension? How extensions work, what permissions really mean, extension vs add-on vs plugin, and how to judge safety — the complete 2026 explainer.",
-    "excerpt": "A plain-English definition of browser extensions, how they work under the hood (manifests, permissions, service workers), how they differ from plugins and add-ons, and how to judge their safety in 2026.",
-    "published_at": "2026-09-07T09:00:00.000+00:00",
-    "category": "Chrome Extensions",
-    "author": "James Mitchell",
-    "image_url": "/content/images/what-is-a-browser-extension-2026/featured.webp",
-    "featured_image": "/content/images/what-is-a-browser-extension-2026/featured.webp",
-    "reading_time": 12,
-    "read_time": 12,
-    "views": 0,
-    "tags": [
-      "browser-extensions",
-      "chrome",
-      "beginners-guide",
-      "web-basics"
-    ],
-    "keywords": [
-      "what is a browser extension",
-      "browser extension definition",
-      "how do browser extensions work",
-      "extension vs add-on",
-      "are browser extensions safe"
-    ],
-    "canonicalPath": "https://extensionto.com/blog/what-is-a-browser-extension-2026",
-    "updated_at": "2026-09-07T09:00:00.000+00:00"
-  },
-  {
-    "id": "611c784c-3804-5724-b49d-a2d157b99e0c",
-    "title": "Chrome Remote Desktop Extension: Complete Setup & Security Guide (2026)",
-    "slug": "chrome-remote-desktop-extension-guide-2026",
-    "description": "Chrome Remote Desktop extension explained: full 2026 setup for remote access and support mode, Android/iOS clients, security best practices, troubleshooting, and vs TeamViewer/AnyDesk.",
-    "meta_description": "Chrome Remote Desktop extension explained: full 2026 setup for remote access and support mode, Android/iOS clients, security best practices, troubleshooting, and vs TeamViewer/AnyDesk.",
-    "excerpt": "Chrome Remote Desktop is Google's free remote-access tool: a web UI at remotedesktop.google.com plus a small companion extension and host service. Full setup, support mode, security hardening, troubleshooting, and how it compares to paid alternatives.",
-    "published_at": "2026-09-07T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/chrome-remote-desktop-extension-guide-2026/featured.webp",
-    "featured_image": "/content/images/chrome-remote-desktop-extension-guide-2026/featured.webp",
-    "reading_time": 13,
-    "read_time": 13,
-    "views": 0,
-    "tags": [
-      "chrome-remote-desktop",
-      "remote-access",
-      "productivity",
-      "google"
-    ],
-    "keywords": [
-      "chrome remote desktop extension",
-      "chrome remote desktop setup",
-      "chrome remote desktop support mode",
-      "remote access chrome",
-      "chrome remote desktop not connecting"
-    ],
-    "canonicalPath": "https://extensionto.com/blog/chrome-remote-desktop-extension-guide-2026",
-    "updated_at": "2026-09-07T10:00:00.000+00:00"
-  },
-  {
-    "id": "0cb04045-de7a-502f-80b9-d6eed0603e74",
-    "title": "Kiwi Browser Download & Install Guide (2026): Safe Sources, Setup, Extensions",
-    "slug": "kiwi-browser-download-install-guide-2026",
-    "description": "Where to safely download Kiwi Browser in 2026 (GitHub only), step-by-step install, importing Chrome data, installing extensions, safety after archival, and the best alternatives.",
-    "meta_description": "Where to safely download Kiwi Browser in 2026 (GitHub only), step-by-step install, importing Chrome data, installing extensions, safety after archival, and the best alternatives.",
-    "excerpt": "Kiwi Browser was archived in January 2025 and pulled from the Play Store, so the only safe download today is the official GitHub releases page. Step-by-step install, first-run setup, loading Chrome extensions, safety reality check, and the best 2026 alternatives.",
-    "published_at": "2026-09-07T11:00:00.000+00:00",
-    "category": "Android & Mobile",
-    "author": "James Mitchell",
-    "image_url": "/content/images/kiwi-browser-download-install-guide-2026/featured.webp",
-    "featured_image": "/content/images/kiwi-browser-download-install-guide-2026/featured.webp",
-    "reading_time": 12,
-    "read_time": 12,
-    "views": 0,
-    "tags": [
-      "kiwi-browser",
-      "android",
-      "chrome-extensions",
-      "mobile-browsers"
-    ],
-    "keywords": [
-      "kiwi browser download",
-      "kiwi browser apk safe",
-      "install kiwi browser android",
-      "kiwi browser chrome extensions",
-      "kiwi browser alternatives 2026"
-    ],
-    "canonicalPath": "https://extensionto.com/blog/kiwi-browser-download-install-guide-2026",
-    "updated_at": "2026-09-07T11:00:00.000+00:00"
-  },
-  {
-    "id": "ddf955e9-24ba-5447-a81f-3497026a5e53",
-    "title": "Safari Extensions in 2026: How They Work, Best Picks, and vs Chrome",
-    "slug": "safari-extensions-guide-2026",
-    "description": "Safari extensions explained for 2026: App Store install on Mac and iOS, per-site permissions, best picks, whether Chrome extensions run on Safari, and Safari vs Chrome ecosystems.",
-    "meta_description": "Safari extensions explained for 2026: App Store install on Mac and iOS, per-site permissions, best picks, whether Chrome extensions run on Safari, and Safari vs Chrome ecosystems.",
-    "excerpt": "Safari extensions install from the App Store and run on Mac, iPhone, and iPad under Apple's review and per-site permission model. How the system works, the extensions worth installing, and what Chrome users should know before switching.",
-    "published_at": "2026-09-07T12:00:00.000+00:00",
-    "category": "Guides & Comparisons",
-    "author": "James Mitchell",
-    "image_url": "/content/images/safari-extensions-guide-2026/featured.webp",
-    "featured_image": "/content/images/safari-extensions-guide-2026/featured.webp",
-    "reading_time": 12,
-    "read_time": 12,
-    "views": 0,
-    "tags": [
-      "safari",
-      "safari-extensions",
-      "apple",
-      "browser-extensions"
-    ],
-    "keywords": [
-      "safari extensions",
-      "best safari extensions 2026",
-      "how to install safari extensions",
-      "safari extensions iphone",
-      "chrome extensions on safari"
-    ],
-    "canonicalPath": "https://extensionto.com/blog/safari-extensions-guide-2026",
-    "updated_at": "2026-09-07T12:00:00.000+00:00"
   }
 ]
