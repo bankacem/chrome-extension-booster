@@ -378,6 +378,44 @@ async function main() {
   const articles = JSON.parse(fs.readFileSync(articlesPath, "utf8")) as ArticleIndexEntry[];
   const extensions = parseExtensions();
 
+  // Branded 404 page — served by Vercel with a real 404 status for any path
+  // that matches no prerendered file. Without this, unknown URLs used to fall
+  // through to the SPA shell and returned 200 + indexable homepage markup,
+  // which generated GSC Soft-404 / duplicate-content reports at scale.
+  const notFoundHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page Not Found (404) | ${SITE_NAME}</title>
+<meta name="robots" content="noindex, follow" />
+<meta name="description" content="The page you are looking for does not exist. Browse ExtensionTo's practical Chrome extension guides, comparisons, and reviews instead." />
+<link rel="canonical" href="${SITE_URL}/404" />
+<link rel="icon" type="image/png" href="/favicon.png" />
+<style>
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0b1220;color:#e6edf7}
+  .card{max-width:560px;padding:48px 32px;text-align:center}
+  h1{font-size:72px;margin:0 0 8px;color:#5ea0ff}
+  h2{font-size:24px;margin:0 0 16px}
+  p{line-height:1.6;color:#9fb0c9;margin:0 0 28px}
+  a.btn{display:inline-block;margin:0 8px 8px;padding:12px 22px;border-radius:10px;background:#2f6fed;color:#fff;text-decoration:none;font-weight:600}
+  a.btn.ghost{background:transparent;border:1px solid #3b4a63;color:#c8d6ea}
+</style>
+</head>
+<body>
+<main class="card">
+  <h1>404</h1>
+  <h2>This page could not be found</h2>
+  <p>The URL may have been moved, renamed, or never existed. All of our guides live in one place &mdash; start from the blog or the homepage.</p>
+  <a class="btn" href="/">Go to homepage</a>
+  <a class="btn ghost" href="/blog">Browse all guides</a>
+</main>
+</body>
+</html>
+`;
+  await fs.writeFile(path.join(DIST_DIR, "404.html"), notFoundHtml, "utf8");
+
+
   const homeDescription = "Discover powerful Chrome extensions built to boost productivity, enhance security, and transform how you browse the web.";
   const homeSchema = { "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: SITE_URL };
   const allLanguageHomeAlternates: { lang: SiteLang; url: string }[] = [

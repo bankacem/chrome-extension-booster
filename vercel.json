@@ -20,26 +20,48 @@
           "value": "text/xsl; charset=utf-8"
         }
       ]
+    },
+    {
+      "source": "/admin",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/settings",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/settings/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
     }
   ],
   "rewrites": [
-    { "source": "/fr", "destination": "/index.html" },
-    { "source": "/fr/:path*", "destination": "/index.html" },
-    { "source": "/es", "destination": "/index.html" },
-    { "source": "/es/:path*", "destination": "/index.html" },
-    { "source": "/pt", "destination": "/index.html" },
-    { "source": "/pt/:path*", "destination": "/index.html" },
-    { "source": "/ar", "destination": "/index.html" },
-    { "source": "/ar/:path*", "destination": "/index.html" },
-    { "source": "/blog", "destination": "/index.html" },
-    { "source": "/blog/:path*", "destination": "/index.html" },
-    { "source": "/extension/:path*", "destination": "/index.html" },
-    { "source": "/privacy", "destination": "/index.html" },
-    { "source": "/terms", "destination": "/index.html" },
-    { "source": "/editorial-policy", "destination": "/index.html" },
-    { "source": "/admin", "destination": "/index.html" },
-    { "source": "/settings", "destination": "/index.html" },
-    { "source": "/settings/:path*", "destination": "/index.html" }
+    {
+      "source": "/admin",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/settings",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/settings/:path*",
+      "destination": "/index.html"
+    }
   ],
   "redirects": [
     {
@@ -949,7 +971,7 @@
     },
     {
       "source": "/blog/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-in-chrome-android-mm3scos4n36",
-      "destination": "/blog/unlocking-ad-free-browsing-adblock-in-chrome-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
       "permanent": true
     },
     {
@@ -979,7 +1001,7 @@
     },
     {
       "source": "/blog/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-on-chrome-android-mm3scp3569k",
-      "destination": "/blog/unlocking-ad-free-browsing-adblock-on-chrome-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
       "permanent": true
     },
     {
@@ -1294,7 +1316,7 @@
     },
     {
       "source": "/blog/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-chrome-for-android-mm3umgynp7d",
-      "destination": "/blog/unlocking-ad-free-browsing-adblock-chrome-for-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
       "permanent": true
     },
     {
@@ -1384,7 +1406,7 @@
     },
     {
       "source": "/blog/kaspersky-extension-chrome-ml5ee8ahr3x",
-      "destination": "/blog/unlocking-enhanced-browser-security-kaspersky-extension-chrome",
+      "destination": "/blog/unlocking-enhanced-browser-security-kaspersky-chrome",
       "permanent": true
     },
     {
@@ -1564,7 +1586,7 @@
     },
     {
       "source": "/blog/unlocking-a-seamless-browsing-experience-the-power-of-chrome-ad-blocker-android",
-      "destination": "/blog/unlocking-ad-free-browsing-adblock-chrome-for-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
       "permanent": true
     },
     {
@@ -1664,7 +1686,7 @@
     },
     {
       "source": "/blog/unlock-ad-free-browsing-on-android-the-power-of-extension-google-chrome-adblock-android-professional-tool-overview",
-      "destination": "/blog/unlocking-ad-free-browsing-adblock-chrome-for-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
       "permanent": true
     },
     {
@@ -1689,7 +1711,7 @@
     },
     {
       "source": "/blog/unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-in-chrome-android",
-      "destination": "/blog/unlocking-ad-free-browsing-adblock-chrome-for-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
       "permanent": true
     },
     {
@@ -2455,7 +2477,7 @@
     },
     {
       "source": "/blog/unlocking-ad-free-browsing-adblock-chrome-for-android-unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-chrome-for-android-mm3umgynp7d",
-      "destination": "/blog/unlocking-ad-free-browsing-adblock-chrome-for-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
       "permanent": true
     },
     {
@@ -3180,7 +3202,7 @@
     },
     {
       "source": "/blog/unlocking-ad-free-browsing-adblock-on-chrome-android-unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-on-chrome-android-mm3scp3569k",
-      "destination": "/blog/unlocking-ad-free-browsing-adblock-on-chrome-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
       "permanent": true
     },
     {
@@ -3230,7 +3252,7 @@
     },
     {
       "source": "/blog/unlocking-ad-free-browsing-adblock-in-chrome-android-unlocking-ad-free-browsing-the-ultimate-guide-to-adblock-in-chrome-android-mm3scos4n36",
-      "destination": "/blog/unlocking-ad-free-browsing-adblock-in-chrome-android",
+      "destination": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
       "permanent": true
     },
     {
@@ -4138,5 +4160,6 @@
       "destination": "/blog/stop-trackers-on-chrome-without-slowing-down",
       "permanent": true
     }
-  ]
+  ],
+  "trailingSlash": false
 }
