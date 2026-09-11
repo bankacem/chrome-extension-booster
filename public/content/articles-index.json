@@ -1635,7 +1635,7 @@
     "description": "Learn how to disable Chrome extensions on specific sites using built-in site access settings, so you keep full control without uninstalling anything.",
     "meta_description": "Learn how to disable Chrome extensions on specific sites using built-in site access settings, so you keep full control without uninstalling anything.",
     "excerpt": "Learn how to disable Chrome extensions on specific sites using built-in site access settings, so you keep full control without uninstalling anything.",
-    "published_at": "2026-08-28",
+    "published_at": "2026-08-28T00:00:00.000Z",
     "category": "Chrome Extensions",
     "author": "Miccart Phen",
     "image_url": "/og-image.png",
@@ -1659,7 +1659,7 @@
       "runtime_blocked_hosts ExtensionSettings policy"
     ],
     "canonicalPath": "/blog/how-to-disable-chrome-extensions-on-specific-sites",
-    "updated_at": "2026-08-28"
+    "updated_at": "2026-08-28T00:00:00.000Z"
   },
   {
     "id": "a1b2c3d4-mv3-0004",
@@ -1823,7 +1823,7 @@
     "description": "Learn how to use IE Tab in Chrome for legacy applications, manage risks, configure Auto URL Filters, and explore enterprise constraints and alternatives.",
     "meta_description": "Learn how to use IE Tab in Chrome for legacy applications, manage risks, configure Auto URL Filters, and explore enterprise constraints and alternatives.",
     "excerpt": "A practical guide to using IE Tab in Chrome to access legacy applications. Understand configuration options, manage security challenges, and explore enterprise alternatives.",
-    "published_at": "2026-08-23",
+    "published_at": "2026-08-23T00:00:00.000Z",
     "category": "Chrome Extensions",
     "author": "Miccart Phen",
     "image_url": "/content/images/ie-tab-chrome-legacy-sites-guide/featured.webp",
@@ -1839,7 +1839,7 @@
       "ie tab chrome"
     ],
     "canonicalPath": "/blog/ie-tab-chrome-legacy-sites-guide",
-    "updated_at": "2026-08-23"
+    "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
     "id": "8258d0e7-5600-4bcd-a275-f8c29d8dbd83",
@@ -1848,7 +1848,7 @@
     "description": "Learn whether Java plugins are still supported in Chrome and discover safe alternatives for running Java-based applications. Comprehensive and up-to-date guidance.",
     "meta_description": "Learn whether Java plugins are still supported in Chrome and discover safe alternatives for running Java-based applications. Comprehensive and up-to-date guidance.",
     "excerpt": "Are Java applets still supported in Chrome? Get a clear answer, understand the current compatibility landscape, and explore safer, supported alternatives in this detailed guide.",
-    "published_at": "2026-08-23",
+    "published_at": "2026-08-23T00:00:00.000Z",
     "category": "Chrome Extensions",
     "author": "Miccart Phen",
     "image_url": "/content/images/java-plugins-chrome-compatibility-guide/featured.webp",
@@ -1864,7 +1864,7 @@
       "chrome plugins java"
     ],
     "canonicalPath": "/blog/java-plugins-chrome-compatibility-guide",
-    "updated_at": "2026-08-23"
+    "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
     "id": "35b0b10e-181f-450e-be1b-f5858c5715e8",
@@ -1873,7 +1873,7 @@
     "description": "Evaluate and configure the Momentum Chrome extension as your New Tab dashboard. Learn setup steps, Focus tools, to‑dos, optional Plus features, and key privacy checks.",
     "meta_description": "Evaluate and configure the Momentum Chrome extension as your New Tab dashboard. Learn setup steps, Focus tools, to‑dos, optional Plus features, and key privacy checks.",
     "excerpt": "A practical guide to evaluating and configuring the Momentum Chrome extension as your New Tab dashboard—covering setup, Focus tools, to‑dos, optional Plus features, and the privacy choices you should review before and after installation.",
-    "published_at": "2026-08-23",
+    "published_at": "2026-08-23T00:00:00.000Z",
     "category": "Chrome Extensions",
     "author": "Miccart Phen",
     "image_url": "/og-image.png",
@@ -1899,7 +1899,7 @@
       "setup guide"
     ],
     "canonicalPath": "/blog/momentum-chrome-extension-guide",
-    "updated_at": "2026-08-23"
+    "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
     "id": "e6c28b0f-a601-4443-ba01-12325ba8386d",
@@ -1908,7 +1908,7 @@
     "description": "Learn how to use the official Zoom Chrome Extension to schedule and manage meetings via Google Calendar, and find out how it differs from Zoom's web app.",
     "meta_description": "Learn how to use the official Zoom Chrome Extension to schedule and manage meetings via Google Calendar, and find out how it differs from Zoom's web app.",
     "excerpt": "A clear guide to the Zoom Chrome Extension. Learn how to set up and use it efficiently and how it differs from Zoom's web app.",
-    "published_at": "2026-08-23",
+    "published_at": "2026-08-23T00:00:00.000Z",
     "category": "Chrome Extensions",
     "author": "Miccart Phen",
     "image_url": "/content/images/zoom-chrome-extension-guide/featured.webp",
@@ -1924,7 +1924,7 @@
       "extension zoom chrome"
     ],
     "canonicalPath": "/blog/zoom-chrome-extension-guide",
-    "updated_at": "2026-08-23"
+    "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
     "id": "aa338d09-c7d2-45ca-b7b3-065e78551970",
@@ -1933,7 +1933,7 @@
     "description": "Learn how to set up Chrome Logger for server-side debugging, its header-based logging model, security considerations, and modern alternatives for development workflows.",
     "meta_description": "Learn how to set up Chrome Logger for server-side debugging, its header-based logging model, security considerations, and modern alternatives for development workflows.",
     "excerpt": "Understand Chrome Logger's server-side debugging capabilities, setup process, security concerns, and alternatives for safer development workflows.",
-    "published_at": "2026-08-23",
+    "published_at": "2026-08-23T00:00:00.000Z",
     "category": "Chrome Extensions",
     "author": "Miccart Phen",
     "image_url": "/content/images/chrome-logger-debugging-guide/featured.webp",
@@ -1949,7 +1949,7 @@
       "chrome logger"
     ],
     "canonicalPath": "/blog/chrome-logger-debugging-guide",
-    "updated_at": "2026-08-23"
+    "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
     "id": "77f85717-3324-4a51-ba1f-8a465bb80781",
@@ -1958,7 +1958,7 @@
     "description": "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode. Understand privacy, permissions, and managed device policies.",
     "meta_description": "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode. Understand privacy, permissions, and managed device policies.",
     "excerpt": "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode while understanding privacy considerations and restrictions.",
-    "published_at": "2026-08-23",
+    "published_at": "2026-08-23T00:00:00.000Z",
     "category": "Chrome Extensions",
     "author": "Miccart Phen",
     "image_url": "/content/images/chrome-extensions-incognito-guide/featured.webp",
@@ -1974,7 +1974,7 @@
       "extension chrome incognito"
     ],
     "canonicalPath": "/blog/chrome-extensions-incognito-guide",
-    "updated_at": "2026-08-23"
+    "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
     "id": "60451c45-45ed-4b27-a787-7a3d55bfdc0f",
@@ -1983,7 +1983,7 @@
     "description": "A practical guide to Chrome extension permissions: how to read warnings, prefer optional permissions and activeTab, and limit site access before and after install.",
     "meta_description": "A practical guide to Chrome extension permissions: how to read warnings, prefer optional permissions and activeTab, and limit site access before and after install.",
     "excerpt": "Before you click “Add to Chrome,” learn how to read permission warnings, recognize optional permissions and activeTab, and limit site access safely.",
-    "published_at": "2026-08-23",
+    "published_at": "2026-08-23T00:00:00.000Z",
     "category": "Chrome Extensions",
     "author": "Miccart Phen",
     "image_url": "/og-image.png",
@@ -2007,7 +2007,7 @@
       "site access controls"
     ],
     "canonicalPath": "/blog/chrome-extension-permissions-guide",
-    "updated_at": "2026-08-23"
+    "updated_at": "2026-08-23T00:00:00.000Z"
   },
   {
     "id": "9f3b2d7d-6f06-4a89-a3e0-1a2d9a6b1c54",
@@ -2016,7 +2016,7 @@
     "description": "Learn how to install Mailtrack for Gmail in Chrome, understand open signals, compare native Gmail read receipts, and review privacy limits.",
     "meta_description": "Learn how to install Mailtrack for Gmail in Chrome, understand open signals, compare native Gmail read receipts, and review privacy limits.",
     "excerpt": "Learn how to install Mailtrack for Gmail in Chrome, interpret open signals, compare it with Gmail read receipts, and review privacy and account-access limits.",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-22T00:00:00.000Z",
     "category": "Productivity & Tools",
     "author": "Miccart Phen",
     "image_url": "/og-image.png",
@@ -2038,7 +2038,7 @@
       "email tracking privacy"
     ],
     "canonicalPath": "/blog/mailtrack-gmail-chrome-guide",
-    "updated_at": "2026-08-22"
+    "updated_at": "2026-08-22T00:00:00.000Z"
   },
   {
     "id": "02930aac-a163-4200-b830-fbe78682bb4e",
@@ -2047,7 +2047,7 @@
     "description": "Learn how to use Picture-in-Picture in Chrome, when to use Google's extension, and how to fix missing controls, blank windows, and compatibility issues.",
     "meta_description": "Learn how to use Picture-in-Picture in Chrome, when to use Google's extension, and how to fix missing controls, blank windows, and compatibility issues.",
     "excerpt": "Use Picture-in-Picture in Chrome without guessing: learn the built-in video workflow, the official Google extension, current limits, and a practical troubleshooting path.",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-22T00:00:00.000Z",
     "category": "Media & Downloads",
     "author": "Miccart Phen",
     "image_url": "/og-image.png",
@@ -2067,7 +2067,7 @@
       "picture in picture extension"
     ],
     "canonicalPath": "/blog/picture-in-picture-chrome-guide",
-    "updated_at": "2026-08-22"
+    "updated_at": "2026-08-22T00:00:00.000Z"
   },
   {
     "id": "f0dba3b5-9d8f-4c3b-94ac-2c0e20260822",
@@ -2076,7 +2076,7 @@
     "description": "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point.",
     "meta_description": "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point.",
     "excerpt": "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point.",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-22T00:00:00.000Z",
     "category": "Browser Productivity",
     "author": "Miccart Phen",
     "image_url": "/og-image.png",
@@ -2097,7 +2097,7 @@
       "Chrome extension Omnibox API"
     ],
     "canonicalPath": "/blog/chrome-omnibox-guide",
-    "updated_at": "2026-08-22"
+    "updated_at": "2026-08-22T00:00:00.000Z"
   },
   {
     "id": "f275ef3c-c412-432a-a97a-ac56b7f8dfeb",
@@ -2106,7 +2106,7 @@
     "description": "Install Tampermonkey in Chrome, review userscripts, grant the right permission, and run a small script safely with a practical checklist.",
     "meta_description": "Install Tampermonkey in Chrome, review userscripts, grant the right permission, and run a small script safely with a practical checklist.",
     "excerpt": "Learn how to install Tampermonkey in Chrome, review userscripts, grant the right permission, and create a small script without exposing every website to unknown code.",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-22T00:00:00.000Z",
     "category": "Chrome Extensions",
     "author": "Miccart Phen",
     "image_url": "/og-image.png",
@@ -2126,7 +2126,7 @@
       "userscript permissions"
     ],
     "canonicalPath": "/blog/tampermonkey-chrome-userscripts-guide",
-    "updated_at": "2026-08-22"
+    "updated_at": "2026-08-22T00:00:00.000Z"
   },
   {
     "id": "3d68f5db-1ef0-4ad2-9f70-4c7bfbe7626d",
@@ -2135,7 +2135,7 @@
     "description": "Evaluate an AI Tab Manager Chrome Extension with MV3, network, storage, privacy, and performance checks before you install or deploy it.",
     "meta_description": "Evaluate an AI Tab Manager Chrome Extension with MV3, network, storage, privacy, and performance checks before you install or deploy it.",
     "excerpt": "A technical guide to evaluating AI tab managers with MV3 checks, network capture, storage inspection, performance tests, and privacy criteria.",
-    "published_at": "2026-08-21",
+    "published_at": "2026-08-21T00:00:00.000Z",
     "category": "Chrome Extensions",
     "author": "Miccart Phen",
     "image_url": "/og-image.png",
@@ -2155,7 +2155,7 @@
       "auto tab suspend AI"
     ],
     "canonicalPath": "/blog/ai-tab-manager-chrome-extension-a-verification-first-buyers-guide",
-    "updated_at": "2026-08-21"
+    "updated_at": "2026-08-21T00:00:00.000Z"
   },
   {
     "id": "c74188ec-7afd-4b17-8c98-99a37e859acd",
@@ -2540,7 +2540,7 @@
     "description": "Discover the best Chrome extensions for remote work, organized by the problem they solve: staying focused, secure, and connected with your team.",
     "meta_description": "Discover the best Chrome extensions for remote work, organized by the problem they solve: staying focused, secure, and connected with your team.",
     "excerpt": "Discover the best Chrome extensions for remote work, organized by the problem they solve: staying focused, secure, and connected with your team.",
-    "published_at": "2026-08-07",
+    "published_at": "2026-08-07T00:00:00.000Z",
     "category": "Productivity & Tools",
     "author": "Admin",
     "image_url": "/content/images/best-chrome-extensions-for-remote-work-2026/featured.webp",
@@ -2558,7 +2558,7 @@
       "best chrome extensions for remote work"
     ],
     "canonicalPath": "/blog/best-chrome-extensions-for-remote-work-2026",
-    "updated_at": "2026-08-07"
+    "updated_at": "2026-08-07T00:00:00.000Z"
   },
   {
     "id": "vpn-article4-expressvpn-review",
