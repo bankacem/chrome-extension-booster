@@ -597,7 +597,7 @@
       "youtube ads coming back chrome",
       "youtube adblock detection fix"
     ],
-    "canonicalPath": "/blog/youtube-adblock-chrome-guide",
+    "canonicalPath": "https://extensionto.com/blog/youtube-adblock-chrome-guide",
     "updated_at": "2026-09-01T21:45:00.000+00:00"
   },
   {
@@ -628,7 +628,7 @@
       "did chrome kill adblock",
       "chrome mv3 adblocker"
     ],
-    "canonicalPath": "/blog/manifest-v3-adblock-chrome-guide",
+    "canonicalPath": "https://extensionto.com/blog/manifest-v3-adblock-chrome-guide",
     "updated_at": "2026-09-01T21:45:00.000+00:00"
   },
   {
@@ -659,7 +659,7 @@
       "chrome ad blocker not blocking ads",
       "fix adblock chrome"
     ],
-    "canonicalPath": "/blog/adblock-not-working-on-chrome-fix",
+    "canonicalPath": "https://extensionto.com/blog/adblock-not-working-on-chrome-fix",
     "updated_at": "2026-09-01T21:45:00.000+00:00"
   },
   {
@@ -4839,7 +4839,7 @@
       "YouTube MP3 quality",
       "YouTube downloader safety"
     ],
-    "canonicalPath": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "canonicalPath": "/blog/best-youtube-to-mp3-chrome-extension",
     "updated_at": "2026-08-25T00:00:00.000000+00:00"
   },
   {
@@ -8298,7 +8298,7 @@
     "keywords": [
       "youtube audio downloader chrome"
     ],
-    "canonicalPath": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "canonicalPath": "/blog/unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome",
     "updated_at": "2026-04-26T02:15:00.452216+00:00"
   },
   {
@@ -9625,7 +9625,7 @@
     "keywords": [
       "chrome extension for youtube downloader"
     ],
-    "canonicalPath": "/blog/best-youtube-downloader-chrome-extension-2026",
+    "canonicalPath": "/blog/a-reliable-youtube-downloader-for-chrome",
     "updated_at": "2026-04-23T12:25:31.378712+00:00"
   },
   {
@@ -9647,7 +9647,7 @@
     "keywords": [
       "youtube audio downloader chrome extension"
     ],
-    "canonicalPath": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "canonicalPath": "/blog/unlock-the-power-of-music-youtube-audio-downloader-chrome-extension",
     "updated_at": "2026-04-23T12:25:30.697876+00:00"
   },
   {
@@ -9876,7 +9876,7 @@
     "id": "abfa9376-3222-4f90-81a7-d72baaf012c8",
     "title": "Chrome Security Extensions That Actually Protect You (2026)",
     "slug": "extensions-that-make-chrome-browsing-safer",
-    "description": "Chrome extensions that make everyday browsing safer, covering the essential protections against tracking, phishing, and malicious sites.",
+    "description": "Which Chrome security extensions actually protect you in 2026? We tested top picks against tracking, phishing, and malware — see what made the cut.",
     "meta_description": "Which Chrome security extensions actually protect you in 2026? We tested top picks against tracking, phishing, and malware — see what made the cut.",
     "excerpt": "When it comes to browsing the internet, security is a top priority for many users.",
     "published_at": "2026-04-14T02:15:00.279+00:00",
@@ -10031,7 +10031,7 @@
     "keywords": [
       "best popup blocker chrome extension"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/the-popup-blocker-worth-trying-on-chrome",
     "updated_at": "2026-04-18T18:40:09.177794+00:00"
   },
   {
@@ -10053,7 +10053,7 @@
     "keywords": [
       "free popup blocker for chrome"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/free-popup-blocker-for-chrome-a-distraction-free-browsing-experience",
     "updated_at": "2026-04-23T12:25:25.603802+00:00"
   },
   {
@@ -10075,7 +10075,7 @@
     "keywords": [
       "chrome extension to stop popups"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/finally-stop-popups-with-this-chrome-extension",
     "updated_at": "2026-04-23T12:25:24.986011+00:00"
   },
   {
@@ -10207,7 +10207,7 @@
     "keywords": [
       "best popup blocker for chrome 2026"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/the-best-popup-blocker-for-chrome-in-2026",
     "updated_at": "2026-04-23T12:24:20.546694+00:00"
   },
   {
@@ -10400,7 +10400,7 @@
     "keywords": [
       "popup blocker for streaming sites"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/popup-blocker-streaming-sites",
     "updated_at": "2026-04-27T16:59:43.095Z"
   },
   {
@@ -10618,7 +10618,7 @@
     "keywords": [
       "poper blocker alternatives"
     ],
-    "canonicalPath": "/blog/poper-blocker-vs-adblock-plus-2026",
+    "canonicalPath": "/blog/exploring-poper-blocker-alternatives",
     "updated_at": "2026-04-18T18:39:50.270686+00:00"
   },
   {
@@ -10640,7 +10640,7 @@
     "keywords": [
       "block popups on chrome mobile guide"
     ],
-    "canonicalPath": "/blog/discover-the-best-popup-blocker-for-android",
+    "canonicalPath": "/blog/block-popups-on-chrome-mobile-guide",
     "updated_at": "2026-04-18T18:39:49.95394+00:00"
   },
   {
@@ -11981,7 +11981,7 @@
     "keywords": [
       "ghostery vs stands adblocker"
     ],
-    "canonicalPath": "/blog/ghostery-vs-ublock-origin-2026",
+    "canonicalPath": "/blog/ghostery-vs-stands-adblocker",
     "updated_at": "2026-04-18T18:40:20.384403+00:00"
   },
   {
@@ -12157,7 +12157,7 @@
     "keywords": [
       "anti popup free"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/breaking-free-from-annoying-ads-the-power-of-anti-popup-free-solutions",
     "updated_at": "2026-04-23T12:26:02.921578+00:00"
   },
   {
@@ -12297,7 +12297,7 @@
     "keywords": [
       "chrome pop up blocker"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/chrome-pop-up-blocker",
     "updated_at": "2026-04-18T18:40:20.946298+00:00"
   },
   {
@@ -12655,7 +12655,7 @@
     "keywords": [
       "Top alternatives to Ghostery for Chrome browser"
     ],
-    "canonicalPath": "/blog/a-ghostery-alternative-worth-considering",
+    "canonicalPath": "/blog/ghostery-alternatives-worth-checking-out",
     "updated_at": "2026-04-23T12:25:55.718472+00:00"
   },
   {
@@ -13072,7 +13072,7 @@
     "keywords": [
       "Ghostery vs Privacy Badger: Full 2026 Comparison"
     ],
-    "canonicalPath": "/blog/privacy-badger-chrome",
+    "canonicalPath": "/blog/ghostery-vs-privacy-badger-full-2026-comparison",
     "updated_at": "2026-04-23T12:25:56.473977+00:00"
   },
   {
@@ -13602,6 +13602,38 @@
     "updated_at": "2026-03-16T17:22:56.262661+00:00"
   },
   {
+    "id": "best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "title": "5 Safest YouTube to MP3 Chrome Extensions (2026 Ranked)",
+    "slug": "best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "description": "The 5 safest YouTube to MP3 Chrome extensions in 2026, tested for permissions, audio quality, and ad-free conversions. Ranked with a safety checklist.",
+    "meta_description": "The 5 safest YouTube to MP3 Chrome extensions in 2026, tested for permissions, audio quality, and ad-free conversions. Ranked with a safety checklist.",
+    "excerpt": "We ranked the 5 safest YouTube to MP3 Chrome extensions of 2026 on permissions, bitrate honesty, and conversion safety — checklist included.",
+    "published_at": "2026-03-16T17:22:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters/featured.webp",
+    "featured_image": "/content/images/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "youtube to mp3",
+      "chrome extension",
+      "audio converter",
+      "media downloader"
+    ],
+    "keywords": [
+      "best youtube to mp3 chrome extension 2026",
+      "youtube mp3 downloader comparison",
+      "safer youtube audio download options",
+      "youtube audio converter chrome",
+      "youtube to mp3 extension safe",
+      "id3 tags youtube mp3"
+    ],
+    "canonicalPath": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "updated_at": "2026-09-06T09:00:00.000000+00:00"
+  },
+  {
     "id": "c3e4f574-663d-4b40-9a74-ca524aea1d2b",
     "title": "YouTube Dark Mode Desktop 2026: Turn It On in 30 Seconds",
     "slug": "youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds",
@@ -13675,7 +13707,7 @@
     "keywords": [
       "uBlock Origin vs Ghostery for Chrome Android"
     ],
-    "canonicalPath": "/blog/ghostery-vs-ublock-origin-2026",
+    "canonicalPath": "/blog/ublock-origin-vs-ghostery-for-chrome-android",
     "updated_at": "2026-04-23T12:25:58.935778+00:00"
   },
   {
@@ -14299,7 +14331,7 @@
     "id": "daf3e984-3228-4b8b-bba3-52ccb92c189a",
     "title": "Free Pop Up Blocker for Google Chrome: What Works in 2026",
     "slug": "pop-up-blocker-for-chrome-partial",
-    "description": "A hands-on look at free pop up blocker for google chrome to enhance your browsing experience, covering setup, real features, and what to expect before...",
+    "description": "A free pop up blocker for Google Chrome that actually works? We tested the top options against pop-unders, overlays, and notification spam — see the winner.",
     "meta_description": "A free pop up blocker for Google Chrome that actually works? We tested the top options against pop-unders, overlays, and notification spam — see the winner.",
     "excerpt": "Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a free pop up blocker for Google Chrome.",
     "published_at": "2026-03-12T09:00:03.771+00:00",
@@ -14460,7 +14492,7 @@
     "keywords": [
       "free pop up blocker chrome"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/a-free-pop-up-blocker-extension-for-chrome",
     "updated_at": "2026-03-26T12:00:53.57667+00:00"
   },
   {
@@ -14600,7 +14632,7 @@
     "keywords": [
       "Ad-Blockers"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/light-popup-blocker-a-lighter-ad-blocker",
     "updated_at": "2026-04-23T12:26:04.046997+00:00"
   },
   {
@@ -14694,7 +14726,7 @@
     "keywords": [
       "How to Block Pop-Under Ads and Redirects: A Comprehensive Guide"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/how-to-block-pop-under-ads-and-redirects-a-comprehensive-guide",
     "updated_at": "2026-03-16T14:43:35.184897+00:00"
   },
   {
@@ -15342,7 +15374,7 @@
       "Ghostery tracker panel",
       "Ghostery Chrome permissions"
     ],
-    "canonicalPath": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "canonicalPath": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
     "updated_at": "2026-08-27T12:00:00+00:00"
   },
   {
@@ -15436,7 +15468,7 @@
     "keywords": [
       "How to block intrusive popups on any website"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/how-to-block-intrusive-popups-on-any-website",
     "updated_at": "2026-04-23T12:27:51.234916+00:00"
   },
   {
@@ -15460,7 +15492,7 @@
       "best popup blocker chrome",
       "chrome pop-up blocker"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/best-lightweight-popup-blocker-chrome",
     "updated_at": "2026-03-16T14:43:28.371851+00:00"
   },
   {
@@ -15482,7 +15514,7 @@
     "keywords": [
       "ghostery for chrome android"
     ],
-    "canonicalPath": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "canonicalPath": "/blog/unlocking-online-privacy-ghostery-for-chrome-android",
     "updated_at": "2026-04-18T18:40:23.709774+00:00"
   },
   {
@@ -15552,7 +15584,7 @@
     "keywords": [
       "Stop video popups from playing automatically"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/stop-video-popups-from-playing-automatically-3",
     "updated_at": "2026-03-16T14:43:27.971344+00:00"
   },
   {
@@ -15598,7 +15630,7 @@
     "keywords": [
       "ghostery add on chrome"
     ],
-    "canonicalPath": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "canonicalPath": "/blog/unlocking-the-power-of-online-privacy-ghostery-add-on-chrome",
     "updated_at": "2026-04-23T12:26:05.403903+00:00"
   },
   {
@@ -15644,7 +15676,7 @@
     "keywords": [
       "Block newsletter popups and \"Allow Notifications\" prompts"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/block-newsletter-popups-and-allow-notifications-prompts-5",
     "updated_at": "2026-04-23T12:27:46.20564+00:00"
   },
   {
@@ -15666,7 +15698,7 @@
     "keywords": [
       "ghostery plugin chrome"
     ],
-    "canonicalPath": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "canonicalPath": "/blog/ghostery-chrome-extension-winner",
     "updated_at": "2026-03-03T17:57:21.907652+00:00"
   },
   {
@@ -15712,7 +15744,7 @@
     "keywords": [
       "Why Light Popup Blocker is better than heavy adblockers"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/why-light-popup-blocker-is-better-than-heavy-adblockers-6",
     "updated_at": "2026-04-23T12:27:45.476098+00:00"
   },
   {
@@ -15760,7 +15792,7 @@
     "keywords": [
       "Safe streaming: How to block popups on movie sites"
     ],
-    "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
+    "canonicalPath": "/blog/safe-streaming-how-to-block-popups-on-movie-sites-8",
     "updated_at": "2026-04-23T12:27:43.723073+00:00"
   },
   {
@@ -15903,7 +15935,7 @@
     "keywords": [
       "ghostery extension chrome"
     ],
-    "canonicalPath": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "canonicalPath": "/blog/enhance-your-browsing-experience",
     "updated_at": "2026-03-03T17:57:22.342271+00:00"
   },
   {
@@ -16035,7 +16067,7 @@
     "keywords": [
       "privacy badger vs ghostery"
     ],
-    "canonicalPath": "/blog/privacy-badger-chrome",
+    "canonicalPath": "/blog/privacy-badger-chrome-partial",
     "updated_at": "2026-04-23T12:26:05.814713+00:00"
   },
   {
@@ -16977,7 +17009,7 @@
     "keywords": [
       "Secure browsing extension like Ghostery"
     ],
-    "canonicalPath": "/blog/a-ghostery-alternative-worth-considering",
+    "canonicalPath": "/blog/browsing-extensions-like-ghostery-compared",
     "updated_at": "2026-04-23T12:26:09.112064+00:00"
   },
   {
@@ -17224,7 +17256,7 @@
     "keywords": [
       "Open source alternative to Ghostery extension"
     ],
-    "canonicalPath": "/blog/a-ghostery-alternative-worth-considering",
+    "canonicalPath": "/blog/an-open-source-alternative-to-ghostery",
     "updated_at": "2026-04-23T12:26:09.609407+00:00"
   },
   {
@@ -17915,7 +17947,7 @@
     "keywords": [
       "Fast YouTube downloader Chrome plugin"
     ],
-    "canonicalPath": "/blog/best-youtube-downloader-chrome-extension-2026",
+    "canonicalPath": "/blog/a-fast-safe-youtube-downloader-for-chrome",
     "updated_at": "2026-04-23T12:26:16.180966+00:00"
   },
   {
@@ -17937,7 +17969,7 @@
     "keywords": [
       "Lightweight ad blocker vs Ghostery"
     ],
-    "canonicalPath": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "canonicalPath": "/blog/lightweight-ad-blocker-vs-ghostery",
     "updated_at": "2026-04-23T12:26:10.846539+00:00"
   },
   {
@@ -18356,7 +18388,7 @@
       "Chrome pop-ups and redirects",
       "popup blocker permissions"
     ],
-    "canonicalPath": "/blog/poper-blocker-vs-adblock-plus-2026",
+    "canonicalPath": "/blog/unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker",
     "updated_at": "2026-08-26T16:05:00.000000+00:00"
   },
   {
@@ -19928,37 +19960,5 @@
     ],
     "canonicalPath": "/blog/internet-download-manager-extension",
     "updated_at": "2026-08-21T00:00:00.000Z"
-  },
-  {
-    "id": "best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
-    "title": "5 Safest YouTube to MP3 Chrome Extensions (2026 Ranked)",
-    "slug": "best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
-    "description": "We ranked the 5 safest YouTube to MP3 Chrome extensions of 2026 on permissions, bitrate honesty, and conversion safety — checklist included.",
-    "meta_description": "The 5 safest YouTube to MP3 Chrome extensions in 2026, tested for permissions, audio quality, and ad-free conversions. Ranked with a safety checklist.",
-    "excerpt": "Looking for the best YouTube to MP3 Chrome extension in 2026? Compare five practical workflows by permission scope, privacy, audio quality, convenience, and whether the download is authorized.",
-    "published_at": "2026-03-16T17:22:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters/featured.webp",
-    "featured_image": "/content/images/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters/featured.webp",
-    "reading_time": 12,
-    "read_time": 12,
-    "views": 0,
-    "tags": [
-      "youtube to mp3",
-      "chrome extension",
-      "audio converter",
-      "media downloader"
-    ],
-    "keywords": [
-      "best youtube to mp3 chrome extension 2026",
-      "youtube mp3 downloader comparison",
-      "safer youtube audio download options",
-      "youtube audio converter chrome",
-      "youtube to mp3 extension safe",
-      "id3 tags youtube mp3"
-    ],
-    "canonicalPath": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
-    "updated_at": "2026-09-06T09:00:00.000000+00:00"
   }
 ]
