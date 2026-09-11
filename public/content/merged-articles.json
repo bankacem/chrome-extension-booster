@@ -1,38 +1,310 @@
 {
   "unlocking-ad-free-browsing-adblock-on-chrome-android": {
     "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
-    "reason": "Duplicate Android adblock intent"
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
   },
   "unlocking-ad-free-browsing-adblock-in-chrome-android": {
     "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
-    "reason": "Duplicate Android adblock intent"
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
   },
   "unlocking-ad-free-browsing-adblock-chrome-for-android": {
     "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
-    "reason": "Duplicate Android adblock intent"
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
   },
   "unlocking-enhanced-browser-security-kaspersky-extension-chrome": {
     "redirect_to": "/blog/unlocking-enhanced-browser-security-kaspersky-chrome",
-    "reason": "Duplicate Kaspersky Chrome intent"
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
   },
   "unlocking-online-privacy-the-power-of-ghostery-chrome-extension": {
-    "redirect_to": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
-    "reason": "Duplicate Ghostery Chrome intent"
+    "redirect_to": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
   },
   "extension-chrome-ghostery-10": {
-    "redirect_to": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
-    "reason": "Duplicate Ghostery Chrome intent"
+    "redirect_to": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
   },
   "extension-ad-block-plus-1": {
     "redirect_to": "/blog/extension-ad-block-plus-faster-browsing",
-    "reason": "Existing redirect source retained in Vercel"
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
   },
   "extension-antivirus-google-chrome-1": {
     "redirect_to": "/blog/why-you-need-an-antivirus-extension-for-chrome",
-    "reason": "Existing redirect source retained in Vercel"
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
   },
   "is-ghostery-safe-a-closer-look-for-2026": {
     "redirect_to": "/blog/is-ghostery-safe-to-use-a-professional-2026-review",
-    "reason": "Existing redirect source retained in Vercel"
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "android-chrome-adblocker": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "extension-adblock-chrome-android-2": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "extension-google-chrome-adblock-android-5": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "how-to-block-ads-on-chrome-android-ad-free-browsing": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "the-best-adblock-for-android-chrome": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "the-best-free-adblocker-for-chrome-android": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "the-best-no-root-ad-blocker-for-chrome-android": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "the-power-of-chrome-ad-blocker-android": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "the-power-of-extension-adblock-chrome-android": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlock-the-power-of-ad-blocking-on-android": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-ad-free-browsing-ad-block-chrome-android": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-ad-free-browsing-adblock-chrome-android": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-ad-free-browsing-on-android-android-chrome-adblock": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-ad-free-browsing-on-the-go-chrome-mobile-adblock": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-the-power-of-adblock-chrome-on-android": {
+    "redirect_to": "/blog/adblock-chrome-android-complete-guide-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "dark-mode-switcher-for-all-websites-the-ultimate-guide-to-enhanced-browsing-experience-mo4p804c88h": {
+    "redirect_to": "/blog/extension-chrome-dark-mode",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "how-to-fix-chrome-high-memory-usage-2026-complete-guide": {
+    "redirect_to": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "download-mp3-youtube-extension-google-chrome-1": {
+    "redirect_to": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlock-the-power-of-music-youtube-mp3-download-extension": {
+    "redirect_to": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "maximizing-your-media-experience": {
+    "redirect_to": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "the-safest-youtube-to-mp3-extension-in-2026": {
+    "redirect_to": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-the-power-of-the-avast-passwords-extension": {
+    "redirect_to": "/blog/a-closer-look-at-avast-passwords-for-chrome",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-the-power-of-avast-passwords-extension-chrome": {
+    "redirect_to": "/blog/a-closer-look-at-avast-passwords-for-chrome",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "pro-student-chrome-extensions-the-ultimate-academic-stack": {
+    "redirect_to": "/blog/chrome-extensions-for-student-productivity",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "free-student-chrome-extensions": {
+    "redirect_to": "/blog/chrome-extensions-for-student-productivity",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "best-youtube-to-mp3-chrome-extension": {
+    "redirect_to": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlock-the-power-of-music-youtube-audio-downloader-chrome-extension": {
+    "redirect_to": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome": {
+    "redirect_to": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "a-fast-safe-youtube-downloader-for-chrome": {
+    "redirect_to": "/blog/best-youtube-downloader-chrome-extension-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "a-reliable-youtube-downloader-for-chrome": {
+    "redirect_to": "/blog/best-youtube-downloader-chrome-extension-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "a-free-pop-up-blocker-extension-for-chrome": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "best-lightweight-popup-blocker-chrome": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "block-newsletter-popups-and-allow-notifications-prompts-5": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "breaking-free-from-annoying-ads-the-power-of-anti-popup-free-solutions": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "chrome-pop-up-blocker": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "finally-stop-popups-with-this-chrome-extension": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "free-popup-blocker-for-chrome-a-distraction-free-browsing-experience": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "how-to-block-intrusive-popups-on-any-website": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "how-to-block-pop-under-ads-and-redirects-a-comprehensive-guide": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "popup-blocker-streaming-sites": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "safe-streaming-how-to-block-popups-on-movie-sites-8": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "stop-video-popups-from-playing-automatically-3": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "the-best-popup-blocker-for-chrome-in-2026": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "the-popup-blocker-worth-trying-on-chrome": {
+    "redirect_to": "/blog/pop-up-blocker-for-chrome-partial",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "why-light-popup-blocker-is-better-than-heavy-adblockers-6": {
+    "redirect_to": "/blog/light-popup-blocker-a-lighter-ad-blocker",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "exploring-poper-blocker-alternatives": {
+    "redirect_to": "/blog/poper-blocker-vs-adblock-plus-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker": {
+    "redirect_to": "/blog/poper-blocker-vs-adblock-plus-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "block-popups-on-chrome-mobile-guide": {
+    "redirect_to": "/blog/discover-the-best-popup-blocker-for-android",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "an-open-source-alternative-to-ghostery": {
+    "redirect_to": "/blog/a-ghostery-alternative-worth-considering",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "browsing-extensions-like-ghostery-compared": {
+    "redirect_to": "/blog/a-ghostery-alternative-worth-considering",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "ghostery-alternatives-worth-checking-out": {
+    "redirect_to": "/blog/a-ghostery-alternative-worth-considering",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "enhance-your-browsing-experience": {
+    "redirect_to": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "ghostery-chrome-extension-winner": {
+    "redirect_to": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-online-privacy-the-power-of-chrome-ghostery-extension": {
+    "redirect_to": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-online-privacy-ghostery-for-chrome-android": {
+    "redirect_to": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "lightweight-ad-blocker-vs-ghostery": {
+    "redirect_to": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "unlocking-the-power-of-online-privacy-ghostery-add-on-chrome": {
+    "redirect_to": "/blog/the-power-of-ghostery-extension-chrome-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "ghostery-vs-stands-adblocker": {
+    "redirect_to": "/blog/ghostery-vs-ublock-origin-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "ublock-origin-vs-ghostery-for-chrome-android": {
+    "redirect_to": "/blog/ghostery-vs-ublock-origin-2026",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "privacy-badger-chrome-partial": {
+    "redirect_to": "/blog/privacy-badger-chrome",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "ghostery-vs-privacy-badger-full-2026-comparison": {
+    "redirect_to": "/blog/privacy-badger-chrome",
+    "reason": "Consolidated in SEO cannibalization cleanup (Sprint A/B/C + Wave 2)"
+  },
+  "monitor-chrome-ram-usage-guide": {
+    "redirect_to": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+    "reason": "Legacy merge finalized: canonical-only -> 301 + index removal"
+  },
+  "fix-chrome-out-of-memory-errors": {
+    "redirect_to": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+    "reason": "Legacy merge finalized: canonical-only -> 301 + index removal"
+  },
+  "ultimate-chrome-ram-memory-management-guide": {
+    "redirect_to": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+    "reason": "Legacy merge finalized: canonical-only -> 301 + index removal"
+  },
+  "privacy-security-guide": {
+    "redirect_to": "/blog/best-chrome-privacy-extensions-2026-complete-guide",
+    "reason": "Legacy merge finalized: canonical-only -> 301 + index removal"
+  },
+  "youtube-tools-guide": {
+    "redirect_to": "/blog/best-youtube-downloader-chrome-extension-2026",
+    "reason": "Legacy merge finalized: canonical-only -> 301 + index removal"
   }
 }

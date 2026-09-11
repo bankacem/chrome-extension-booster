@@ -4651,11 +4651,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/light-popup-blocker-a-lighter-ad-blocker",
-      "destination": "/blog/pop-up-blocker-for-chrome-partial",
-      "permanent": true
-    },
-    {
       "source": "/blog/popup-blocker-streaming-sites",
       "destination": "/blog/pop-up-blocker-for-chrome-partial",
       "permanent": true
@@ -4768,6 +4763,31 @@
     {
       "source": "/blog/10-essential-chrome-extensions-to-actually-secure-your-browser",
       "destination": "/blog/extensions-that-make-chrome-browsing-safer",
+      "permanent": true
+    },
+    {
+      "source": "/blog/monitor-chrome-ram-usage-guide",
+      "destination": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fix-chrome-out-of-memory-errors",
+      "destination": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ultimate-chrome-ram-memory-management-guide",
+      "destination": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/privacy-security-guide",
+      "destination": "/blog/best-chrome-privacy-extensions-2026-complete-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/youtube-tools-guide",
+      "destination": "/blog/best-youtube-downloader-chrome-extension-2026",
       "permanent": true
     }
   ],
