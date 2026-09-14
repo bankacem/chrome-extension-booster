@@ -19,9 +19,11 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 5
 created_at: '2026-01-24T12:58:19.234546+00:00'
-updated_at: '2026-04-23T12:27:19.357389+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you looking to enhance your browsing experience with the gemini extension to chrome? Look no further!"
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
 [Introduction](#introduction)
 [What is Gemini Extension?](#what-is-gemini-extension)
 [Installing Gemini Extension to Chrome](#installing-gemini-extension-to-chrome)

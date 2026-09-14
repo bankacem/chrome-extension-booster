@@ -72,7 +72,7 @@ Chrome’s built-in control is the lowest-risk first step because it requires no
 
 A block-by-default rule does not mean that every pop-up is harmful. Some legitimate sites use a separate window for authentication, document previews, printing, or checkout. If a trusted site stops working, add a narrow exception only when you understand why the window is needed. Remove the exception when the task is complete instead of turning off blocking globally.
 
-If you are using Chrome on Android, do not assume that a desktop extension can be installed in the official Chrome Android app. For the separate mobile question, read our [Chrome Android ad-blocking guide](/blog/extension-google-chrome-adblock-android-5). This page is about the desktop Chrome control and the general meaning of popup-blocker coverage.
+If you are using Chrome on Android, do not assume that a desktop extension can be installed in the official Chrome Android app. For the separate mobile question, read our [Chrome Android ad-blocking guide](/blog/adblock-chrome-android-complete-guide-2026). This page is about the desktop Chrome control and the general meaning of popup-blocker coverage.
 
 ## Why a blocker may not remove the interruption
 
@@ -94,7 +94,7 @@ Chrome’s permission documentation explains that permissions help limit the imp
 
 ![A privacy review concept with a browser permission panel, a keyhole, and approved access indicators](/content/images/unlock-a-clutter-free-browsing-experience-the-power-of-a-poper-blocker-popup-blocker/popup-blocker-permission-review.jpg "Review popup-blocker permissions before granting website access")
 
-For a decision framework that compares coverage, permissions, privacy, maintenance, and exceptions across free options, use the [best free popup blocker for Chrome comparison](/blog/best-free-popup-blocker-for-chrome-2026) rather than relying on an old “number one” claim. If your priority is low overhead, the separate [lightweight popup blocker guide](/blog/best-lightweight-popup-blocker-chrome) owns that performance-focused question.
+For a decision framework that compares coverage, permissions, privacy, maintenance, and exceptions across free options, use the [best free popup blocker for Chrome comparison](/blog/best-free-popup-blocker-for-chrome-2026) rather than relying on an old “number one” claim. If your priority is low overhead, the separate [lightweight popup blocker guide](/blog/pop-up-blocker-for-chrome-partial) owns that performance-focused question.
 
 ## A safe troubleshooting order
 

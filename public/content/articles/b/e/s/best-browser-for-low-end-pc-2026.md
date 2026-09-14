@@ -25,9 +25,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 11
 created_at: '2026-09-03T12:00:00.000+00:00'
-updated_at: '2026-09-03T12:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "We tested five browsers on a 4GB RAM, decade-old laptop — RAM at 1, 10, and 25 tabs, startup CPU, and the settings that matter more than your choice of browser."
 ---
+> 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
 
 If your PC has 4GB of RAM and a CPU made before 2020, here is the honest 2026 answer: **Edge with Efficiency mode is the best default on Windows, Firefox is the lightest independent option, and Chrome — the browser most people actually want — is perfectly usable if you turn on Memory Saver and trim your extensions.** Brave lands between Chrome and Firefox; Opera trailed the pack on our bench. There is no single "fastest browser for old PC" — there is a fastest browser *for your workload*, and this guide will find yours.
 

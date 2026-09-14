@@ -95,7 +95,7 @@ If a browser-based workflow is relevant to a rights-cleared source, evaluate it 
 | File handling | Can you identify the file type and scan it before opening or moving it into a media library? |
 | Maintenance | Are updates, support contacts, and change notes available? |
 
-Chrome’s extension documentation explains that permissions and host access affect what an extension can access, which is why permissions should be part of the decision rather than an afterthought.[4] For a broader discussion of safer YouTube workflows, see ExtensionTo’s [YouTube MP3 comparison guide](/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters). For trust and risk signals, see [the safer YouTube extension guide](/blog/the-safest-youtube-to-mp3-extension-in-2026). Those pages own comparison and safety intent; this article owns the **320kbps quality and source** question.
+Chrome’s extension documentation explains that permissions and host access affect what an extension can access, which is why permissions should be part of the decision rather than an afterthought.[4] For a broader discussion of safer YouTube workflows, see ExtensionTo’s [YouTube MP3 comparison guide](/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters). For trust and risk signals, see [the safer YouTube extension guide](/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters). Those pages own comparison and safety intent; this article owns the **320kbps quality and source** question.
 
 ![A four-step rights-cleared workflow: confirm rights, choose the source, check the format, and scan the file](/content/images/best-youtube-to-mp3-chrome-extension/youtube-rights-cleared-workflow.jpg "A rights-cleared audio workflow")
 

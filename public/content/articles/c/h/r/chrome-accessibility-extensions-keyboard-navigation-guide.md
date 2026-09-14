@@ -101,7 +101,7 @@ If you’re looking for broader visual or reading aids beyond keyboard navigatio
 
 - Combine Find in page with Caret Browsing: Use Ctrl/⌘+F to jump to a keyword, then enable Caret Browsing to read the nearby paragraph line by line.
 - Switch between focus and caret as needed: Use Tab to hop to buttons or fields; turn on Caret Browsing for precise text selection; turn it off to resume quick focus navigation.
-- Open links in context: With Caret Browsing on, place the caret on a link and press Enter. For research sessions, pair these habits with the organizational ideas in our [student productivity stack](/blog/pro-student-chrome-extensions-the-ultimate-academic-stack) to keep sources tidy.
+- Open links in context: With Caret Browsing on, place the caret on a link and press Enter. For research sessions, pair these habits with the organizational ideas in our [student productivity stack](/blog/chrome-extensions-for-student-productivity) to keep sources tidy.
 - Adjust zoom per site: Increase page zoom on dense sites to reduce eye strain before turning to color or contrast filters.
 
 ## Troubleshooting

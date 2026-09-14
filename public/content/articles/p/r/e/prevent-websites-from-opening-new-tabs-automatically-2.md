@@ -20,10 +20,12 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 5
 created_at: '2026-01-20T19:01:19.932094+00:00'
-updated_at: '2026-04-23T12:28:42.545801+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you tired of websites opening new tabs automatically, cluttering your browser and disrupting your workflow? You're not alone."
 ---
-## Prevent Websites from Opening New Tabs [Automatically](/blog/stop-video-popups-from-playing-automatically-3 "Stop Video Popups from Playing Automatically: A Comprehensive Guide"): A [Comprehensive](/blog/ublock-origin-vs-ghostery-for-chrome-android "uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison") Guide
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
+## Prevent Websites from Opening New Tabs [Automatically](/blog/pop-up-blocker-for-chrome-partial "Stop Video Popups from Playing Automatically: A Comprehensive Guide"): A [Comprehensive](/blog/ghostery-vs-ublock-origin-2026 "uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison") Guide
 
 Are you tired of websites opening new tabs automatically, cluttering your browser and disrupting your workflow? You're not alone. Many users face this issue daily, and it can be frustrating, especially when you're in the middle of an important task. In this article, we'll explore how to **prevent websites from opening new tabs automatically** and provide you with practical solutions to take control of your browser.
 

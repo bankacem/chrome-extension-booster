@@ -89,7 +89,7 @@ These patterns can guide your decisions, but always weigh them against your need
 - Sharing with third parties: Check whether sharing is for core functionality (for example, syncing you explicitly enabled) or unrelated purposes. The Limited Use policy restricts unrelated use and certain transfers, but self-reported disclosures still matter for your choice.
 - Security practices marked: “Data encrypted in transit” is baseline good practice but doesn’t describe storage or retention. Treat it as one factor, not a full security statement.
 
-If you’re building a privacy-first setup, you might also appreciate our overview of options in the [guide to privacy-focused Chrome extensions for 2026](/blog/chrome-extensions-for-online-privacy-2026). And if you’re a student vetting study helpers, see the [academic Chrome extension stack for productivity and research](/blog/pro-student-chrome-extensions-the-ultimate-academic-stack).
+If you’re building a privacy-first setup, you might also appreciate our overview of options in the [guide to privacy-focused Chrome extensions for 2026](/blog/chrome-extensions-for-online-privacy-2026). And if you’re a student vetting study helpers, see the [academic Chrome extension stack for productivity and research](/blog/chrome-extensions-for-student-productivity).
 
 ## Limitations You Should Keep in Mind
 

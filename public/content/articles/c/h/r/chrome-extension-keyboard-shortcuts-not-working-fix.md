@@ -28,7 +28,7 @@ views: 0
 read_time: 15
 reading_time: 15
 created_at: 2026-08-31
-updated_at: "2026-08-31T18:00:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: Where is the Chrome extension keyboard shortcuts page?
     answer: "It lives at `chrome://extensions/shortcuts`, which you can paste directly into the address bar. The menu route is to open `chrome://extensions`, click the three-line hamburger menu in the top left corner, and select **Keyboard shortcuts** from the bottom of the side panel. The page lists every installed extension that declares keyboard commands, along with an input box and a scope dropdown for each command. Extensions that use their own in-page key listeners rather than Chrome's commands API will not appear here at all, which is a common source of confusion."
@@ -44,6 +44,7 @@ faq:
     answer: "Chrome has no one-click reset on the shortcuts page. You clear each assignment individually by clicking its input box and pressing the **X** or Backspace, which returns the command to **Not set**. If you want a genuinely clean slate, creating a new Chrome profile is faster and safer than a full settings reset, because a new profile starts with no assignments at all. A full reset from `chrome://settings/reset` will clear shortcut state along with much else, including disabling your extensions, so treat it as a last resort."
 featured_image: /content/images/chrome-extension-keyboard-shortcuts-not-working-fix/featured.webp
 ---
+> 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 
 Last month I lost about twenty minutes trying to figure out why my clipboard manager extension had stopped responding to Ctrl+Shift+V. The extension worked fine when I clicked its toolbar icon. The shortcut just did nothing. No error, no popup, no console message. I assumed the extension had broken in an update, uninstalled it, reinstalled it, and the shortcut still did nothing.
 

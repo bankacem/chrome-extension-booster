@@ -4,7 +4,7 @@ id: "pillar-idm-extension"
 title: "IDM Integration Module for Chrome: Safe Setup and Troubleshooting"
 slug: "internet-download-manager-extension"
 description: "Learn how the official IDM Integration Module connects Internet Download Manager to Chrome, how to verify it safely, and how to fix common integration problems."
-meta_description: "Set up the official IDM Integration Module in Chrome safely, verify the publisher, fix missing download capture, and understand when IDM or an alternative is the better fit."
+meta_description: "IDM Integration Module for Chrome: Safe Setup and Troubleshooting — Set up the official IDM Integration Module in Chrome safely, verify the publisher, fix mi..."
 excerpt: "Set up the official IDM Integration Module in Chrome safely, verify the publisher, fix missing download capture, and understand when IDM or an alternative is the better fit."
 published_at: "2025-05-20T11:00:00.000Z"
 category: "Productivity & Tools"
@@ -24,7 +24,7 @@ keywords:
   - IDM Chrome integration
   - IDM Integration Module
   - IDM not working in Chrome
-updated_at: "2026-08-21T00:00:00.000Z"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 featured_image: "/content/images/internet-download-manager-extension/featured.webp"
 faq:
   - question: "Is the IDM Integration Module a standalone Chrome downloader?"
@@ -38,6 +38,8 @@ faq:
   - question: "Do I need IDM if I only download files occasionally?"
     answer: "Not necessarily. Chrome's built-in downloader may be enough for occasional PDFs, images, or archives. IDM is more relevant when you regularly manage large or interrupted downloads, queues, scheduling, or desktop download rules."
 ---
+> 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
+
 Internet Download Manager (IDM) is a Windows desktop download manager. Its Chrome component is not a separate download accelerator that works on its own; it is a browser bridge that detects eligible downloads and sends them to the IDM application. That distinction explains many “IDM extension not working” reports and is the starting point for a safe setup.
 
 This guide focuses on the official IDM Integration Module, how to verify it, how to connect it to Chrome, and how to troubleshoot capture failures after a browser or IDM update. It also explains when Chrome’s built-in downloader or a free cross-platform alternative may be a better fit.

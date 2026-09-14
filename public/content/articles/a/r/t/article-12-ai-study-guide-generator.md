@@ -11,9 +11,9 @@ title: >-
 meta_description: "Discover the best AI study guide generator Chrome extensions for 2026. Learn how to transform lectures, textbooks, and notes into structured study."
 description: "Discover the best AI study guide generator Chrome extensions for 2026. Learn how to transform lectures, textbooks, and notes into structured study."
 category: "Chrome Extensions"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
-
-
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## Table of Contents
 
@@ -611,3 +611,5 @@ Or upgrade to Pro for unlimited study guides, advanced analytics, and team colla
 - [Dunlosky et al. - Effective Learning Techniques](https://journals.sagepub.com/doi/10.1177/1529100612453266)
 - [Spaced Repetition Research](https://www.gwern.net/Spaced-repetition)
 - [Active Recall Study Method](https://www.learningscientists.org/)
+
+Related reading: [AI Headline Generator Chrome Extension: The Ultimate Guide for 2026](/blog/article-7-ai-headline-generator) · [AI Lesson Plan Generator Chrome Extension: The Ultimate Guide for Teachers in 20](/blog/article-16-ai-lesson-plan-generator)

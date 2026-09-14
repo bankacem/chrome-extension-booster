@@ -22,7 +22,7 @@ canonicalPath: /blog/best-chrome-privacy-extensions-2026-complete-guide
 In 2026, privacy is no longer guaranteed. Between sophisticated trackers and the rise of data breaches, your browser needs a defense layer.
 
 ## Essential Security Checklist
-- [Ghostery vs. Privacy Badger: 2026 Comparison](/blog/ghostery-vs-privacy-badger-full-2026-comparison)
+- [Ghostery vs. Privacy Badger: 2026 Comparison](/blog/privacy-badger-chrome)
 - [How to Store Passwords Safely in Your Browser](/blog/how-to-store-passwords-safely-in-your-browser)
 - [Protecting from URL Hijacking](/blog/protecting-your-browser-from-url-hijacking-4)
 

@@ -47,7 +47,7 @@ Working long hours in front of a screen can be strenuous, especially when it com
 
 ## Redirect Protection for Web Developers
 
-Malicious redirects can be a significant threat to web developers, compromising your security and productivity. Our [Redirect Shield](/extension/redirect-shield) extension protects you from automatic redirects and malicious chains, ensuring that your browsing experience is safe and secure. For more information on redirect protection, check out our [How to Block Intrusive Popups on Any Website](/blog/how-to-block-intrusive-popups-on-any-website) guide.
+Malicious redirects can be a significant threat to web developers, compromising your security and productivity. Our [Redirect Shield](/extension/redirect-shield) extension protects you from automatic redirects and malicious chains, ensuring that your browsing experience is safe and secure. For more information on redirect protection, check out our [How to Block Intrusive Popups on Any Website](/blog/pop-up-blocker-for-chrome-partial) guide.
 
 ### Benefits of Redirect Protection
 

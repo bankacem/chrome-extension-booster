@@ -61,7 +61,7 @@ canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 When a page crashes, open Chrome's Task Manager (Shift + Esc).
 - **Check Memory Footprint: ** Find the tab that crashed or is using excessive RAM.
 - **End Process: ** Kill it manually and try reloading.
-- **Satellite Guide: ** For more on this, see our [Monitoring Chrome RAM Usage](/blog/monitor-chrome-ram-usage-guide) guide.
+- **Satellite Guide: ** For more on this, see our [Monitoring Chrome RAM Usage](/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide) guide.
 
 <h2 id="clear-cache">2. Clearing Cache and Data for Specific Sites</h2>
 
@@ -70,7 +70,7 @@ Sometimes a corrupt local cache causes a memory leak.
 2. Go to **Cookies and site data** > **Manage on-device site data**.
 3. Delete the data and refresh.
 
-This often resolves the issue without needing a full browser reset. For broader performance tips, see the [Ultimate RAM Management Guide](/blog/ultimate-chrome-ram-memory-management-guide).
+This often resolves the issue without needing a full browser reset. For broader performance tips, see the [Ultimate RAM Management Guide](/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide).
 
 <h2 id="extensions">3. Managing Memory-Heavy Extensions</h2>
 

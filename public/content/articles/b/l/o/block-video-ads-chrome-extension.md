@@ -29,8 +29,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 5
 created_at: '2026-03-16T19:43:39.28667+00:00'
-updated_at: '2026-04-27T16:59:43.065Z'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
+
 ## Block Video Ads: Best Chrome Extensions for Productivity
 
 Are you tired of annoying video ads disrupting your online experience? Do you want to enhance your productivity and focus on the content that matters? Look no further! In this article, we'll explore the best **block video ads Chrome extension** to help you achieve a seamless browsing experience. With the rise of online video content, video ads have become increasingly prevalent, and it's essential to find a reliable solution to block them. That's where the [Light Popup Blocker](/extension/light-popup-blocker) comes in – a powerful tool designed to block annoying popups, including video ads, and help you stay focused.
@@ -104,7 +106,7 @@ Here are some frequently asked questions about the **block video ads Chrome exte
   A: Yes, the Light Popup Blocker is compatible with most Chrome extensions, including the [Quick Screenshot Lite](/extension/quick-screenshot-lite) and the [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher).
 - Q: How do I update the Light Popup Blocker?
 
-  A: The Light Popup Blocker will [automatically](/blog/stop-video-popups-from-playing-automatically-3 "Stop Video Popups from Playing Automatically: A Comprehensive Guide") update itself to ensure you have the latest features and security patches.
+  A: The Light Popup Blocker will [automatically](/blog/pop-up-blocker-for-chrome-partial "Stop Video Popups from Playing Automatically: A Comprehensive Guide") update itself to ensure you have the latest features and security patches.
 - Q: Can I uninstall the Light Popup Blocker if I'm not satisfied?
 
   A: Yes, you can easily uninstall the Light Popup Blocker from the Chrome Web Store or by right-clicking the extension's icon and selecting "Remove from Chrome".

@@ -24,7 +24,10 @@ keywords:
 author: Miccart Phen
 published_at: 2026-08-28
 read_time: 12
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
 You installed an extension because it's useful — but it's also injecting itself into your bank's login page, breaking a work dashboard, or reading a page it has no business reading. The good news is you don't have to choose between keeping it and removing it. You can disable Chrome extensions on specific sites while leaving them fully active everywhere else, and the setting has been built into Chrome for years.
 
 The reason this question is so hard to answer with a quick search is that the results are fragmented. Some pages explain the everyday dropdown in Chrome's extensions manager. Others jump straight to enterprise policy and lose everyone who isn't an IT admin. And a surprising number confuse two completely different Chrome policies: one that blocks *websites* from loading at all, and one that blocks *extensions* from running on chosen sites. Those are not the same thing, and mixing them up is how people end up locking themselves out of a domain they still need.
@@ -32,6 +35,8 @@ The reason this question is so hard to answer with a quick search is that the re
 This page walks the whole ladder in one place, from the two-click consumer method to the policy-level blocklist, plus the part nobody covers: what to do when the dropdown is greyed out and Chrome won't let you change anything.
 
 ## Key Takeaways
+
+![Key Takeaways — how to disable chrome extensions on specific sites illustration for extensionto readers](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80)
 
 - To disable Chrome extensions on specific sites, open `chrome://extensions`, click **Details** on the extension, and set **Site access** to **On click** or **On specific sites**.
 - **On specific sites** is an allowlist — the extension runs only on hosts you name and nowhere else.
@@ -56,6 +61,8 @@ This page walks the whole ladder in one place, from the two-click consumer metho
 
 <a id="control"></a>
 ## Per-site extension control in Chrome: what you can and can't do
+
+![Per-site extension control in Chrome: what you can and can't do — how to disable chrome extensions on specific sites illustration for extensionto readers](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80)
 
 Chrome's per-site model is built around *host permissions*. When an extension wants to read or change page content, it declares which hosts it needs. Since the arrival of the "extension host permission" controls, you get the final say over how broadly that declaration actually applies.
 
@@ -209,3 +216,7 @@ Three tools, one decision. Start at `chrome://extensions` and set **Site access*
 Take two minutes now: open `chrome://extensions`, look at which extensions are still set to **On all sites**, and ask whether each one actually needs that reach. Most don't — and narrowing them is the single cheapest privacy improvement available in the browser.
 
 Explore more [Chrome extension guides](/blog) on ExtensionTo.
+
+For official guidance, review <a href="https://support.google.com/chrome_webstore/answer/2664769?hl=en" target="_blank" rel="noopener noreferrer">Google Web Store Help: install and manage extensions</a> before changing browser settings.
+
+Related reading: [IE Tab for Chrome: Run Legacy Sites, Configure URL Rules, and Manage the Risks](/blog/ie-tab-chrome-legacy-sites-guide) · [Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely](/blog/chrome-extensions-incognito-guide)

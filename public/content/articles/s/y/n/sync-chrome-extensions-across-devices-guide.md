@@ -28,7 +28,7 @@ views: 0
 read_time: 16
 reading_time: 16
 created_at: 2026-08-31
-updated_at: "2026-08-31T18:00:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: Do Chrome extensions sync automatically between my devices?
     answer: "Yes, provided you're signed in to the same Google Account on both devices, sync is turned on, and the Extensions category is enabled. When those conditions are met, installing an extension on one computer causes Chrome to download and install it on the others without any action from you. In my testing that happened within 30 seconds to 5 minutes, occasionally needing a Chrome restart to complete. What does not happen automatically is restoring each extension's internal settings or logging you back into extensions that have their own accounts."
@@ -44,6 +44,7 @@ faq:
     answer: "With default encryption, Google holds the encryption keys, so synced data including your extension list is technically accessible to Google and is covered by their privacy policy. With a custom sync passphrase set in Chrome's encryption options, the keys stay on your devices and Google stores only data it cannot decrypt. In both cases the extension payload is limited to identifiers, enabled states, and small amounts of developer-stored settings, not the browsing data extensions collect while running. Extensions that gather data send it to their own developers' servers independently of Chrome Sync, and that's a separate privacy question you should evaluate per extension."
 featured_image: /content/images/sync-chrome-extensions-across-devices-guide/featured.webp
 ---
+> 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 
 I have three machines on my desk right now: a Windows 11 desktop I use for most work, a MacBook Air I travel with, and an old Linux ThinkPad I keep around for testing. Over the past two weeks I rebuilt Chrome profiles on all three on purpose, timing how long it took to get my 23 extensions back in place each way. I wanted to know exactly what Chrome Sync carries over, what it silently drops, and where the whole thing falls apart.
 

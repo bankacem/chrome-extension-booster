@@ -27,7 +27,7 @@ views: 0
 read_time: 18
 reading_time: 18
 created_at: 2026-09-01
-updated_at: "2026-09-01T21:45:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: Why did my ad blocker suddenly stop working on Chrome?
     answer: "In my case it was almost always one of three things: Chrome auto-disabled a Manifest V2 extension during the 2025-2026 rollout, the filter lists stopped updating because the extension lost its update permission, or a second blocker I forgot about was intercepting requests first. Check chrome://extensions for a grayed-out or warning badge before anything else, because that single screen answers the question in about ten seconds."
@@ -43,6 +43,7 @@ faq:
     answer: "Yes, and it is rarer but nastier. Managed-by-organization policies can force-install extensions and block yours, and adware does the same to disarm filtering. If chrome://extensions shows an extension you never installed, or your settings page shows a 'managed by your organization' banner on a personal machine, treat it as a cleanup job first, because no amount of blocker settings will survive that."
 featured_image: /content/images/adblock-not-working-on-chrome-fix/featured.webp
 ---
+> 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 
 My blocker died on a Tuesday, and I didn't notice until a 15-second unskippable pre-roll played on a cooking video. Chrome had updated to 151 overnight on my Windows 11 desktop. The extension icon was still pinned to the toolbar, still the right color, still sitting there — just showing a blank badge instead of the usual blocked count. Nothing looked broken. Everything was.
 
@@ -202,3 +203,5 @@ Decide by category. If your blocker is MV2, stop repairing and migrate to an MV3
 ![Adblock Not Working on Chrome? 9 Fixes That Actually Worked (2026) — tips](/content/images/adblock-not-working-on-chrome-fix/tips.webp "Adblock Not Working on Chrome? 9 Fixes That Actually Worked (2026) — Tips")
 
 ## Sources
+
+For official guidance, review <a href="https://support.google.com/chrome/answer/114836?hl=en" target="_blank" rel="noopener noreferrer">Google's official guide to controlling sites and ads in Chrome</a> before changing browser settings.

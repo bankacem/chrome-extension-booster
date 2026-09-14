@@ -22,8 +22,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 8
 created_at: '2026-01-27T11:28:19.164525+00:00'
-updated_at: '2026-05-23T14:15:00.261449+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
 I tested 20 Chrome extensions on Kiwi Browser over a week on my Samsung Galaxy S23 running Android 14. Kiwi is the most popular Android browser that supports Chrome extensions — for a head-to-head comparison with Yandex and Lemur, see our [Kiwi vs Yandex vs Lemur guide](/blog/kiwi-vs-yandex-vs-lemur-android-extensions). But compatibility is not guaranteed — some extensions rely on desktop-specific APIs that mobile browsers do not implement. I installed extensions across every category — productivity, security, dark mode, screenshot tools, ad blockers, password managers, and tab managers — and logged which ones worked perfectly, which ones had minor glitches, and which ones failed entirely. Here is the complete compatibility guide.
 
 ## What Makes Kiwi Browser Special

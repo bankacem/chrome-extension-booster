@@ -25,9 +25,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 12
 created_at: '2026-08-29T09:00:00.000+00:00'
-updated_at: '2026-08-29T09:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Memory Saver on but RAM still climbing? Seven real fixes — profile-sync mode resets, over-broad excluded sites, extension conflicts — plus how to verify true suspension."
 ---
+> 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 
 If Chrome's Memory Saver is switched on but your RAM keeps climbing anyway, the feature is almost never broken at random — one of five specific causes is usually blocking it: a mode reset by profile sync, an excluded-sites list that grew too broad, an extension actively fighting suspension, too many tabs that qualify as essential, or an outdated build running last year's suspension engine. All five are diagnosable in about ten minutes with two built-in pages: `chrome://settings/performance` to inspect the mode and site rules, and `chrome://discards` to see exactly what Chrome has and has not suspended. Below are the seven fixes that resolve this in the order we apply them on our own test machines, most common cause first. And if the built-in tool keeps disappointing you after all seven, our tested roundup of the [best memory saver extensions for Chrome](/blog/best-memory-saver-extension-for-chrome-4) covers third-party suspenders built to cooperate with Memory Saver rather than fight it.
 

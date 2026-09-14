@@ -111,7 +111,7 @@ Note on autosave: Google’s help indicates that notes created in the extension 
 
 ## Complementary productivity tips
 - If you live in the address bar, power‑users can streamline navigation with the [Chrome Omnibox productivity guide](/blog/chrome-omnibox-guide).
-- Students and researchers looking to assemble a focused browser toolkit can review our curated [academic Chrome extensions stack](/blog/pro-student-chrome-extensions-the-ultimate-academic-stack) to pair with Keep.
+- Students and researchers looking to assemble a focused browser toolkit can review our curated [academic Chrome extensions stack](/blog/chrome-extensions-for-student-productivity) to pair with Keep.
 
 ## FAQ
 - Does the Keep Chrome extension still autosave notes?

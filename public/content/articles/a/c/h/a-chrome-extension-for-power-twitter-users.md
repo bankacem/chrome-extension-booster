@@ -17,7 +17,7 @@ read_time: 6
 
 ## Boost Your TwitterProductivitywith the Best Chrome Extension for Twitter Productivity
 
-Are you tired of feeling overwhelmed by the sheer amount of information on Twitter? Do you struggle to stay focused and productive while using the platform? If so, you're not alone. With the constant stream of tweets, [notifications](/blog/block-newsletter-popups-and-allow-notifications-prompts-5), and distractions, it can be challenging to make the most out of your Twitter experience. That's where a **Chrome extension for Twitter productivity** comes in – a game-changer for anyone looking to enhance their Twitter workflow and achieve more in less time.
+Are you tired of feeling overwhelmed by the sheer amount of information on Twitter? Do you struggle to stay focused and productive while using the platform? If so, you're not alone. With the constant stream of tweets, [notifications](/blog/pop-up-blocker-for-chrome-partial), and distractions, it can be challenging to make the most out of your Twitter experience. That's where a **Chrome extension for Twitter productivity** comes in – a game-changer for anyone looking to enhance their Twitter workflow and achieve more in less time.
 
 In this article, we'll explore the benefits of using a **Chrome extension for Twitter productivity** and highlight some of the best tools available to help you streamline your Twitter activities, save time, and increase your overall productivity. Whether you're a social media manager, a business owner, or simply a Twitter enthusiast, you'll discover how a **Chrome extension for Twitter productivity** can revolutionize the way you use Twitter.
 
@@ -84,7 +84,7 @@ A: Yes, you can use multiple Chrome extensions for Twitter productivity at the s
 | Extension | Features | Pricing |
 | --- | --- | --- |
 | Quick Screenshot Lite | Capture and share tweets or Twitter screenshots | Free |
-| Auto Dark Mode Switcher | [Automatically](/blog/stop-video-popups-from-playing-automatically-3) switch between dark and light modes | Free |
+| Auto Dark Mode Switcher | [Automatically](/blog/pop-up-blocker-for-chrome-partial) switch between dark and light modes | Free |
 | ProTab Suspender | Suspend inactive tabs to save memory and reduce distractions | Free |
 | Light Popup Blocker | Block annoying popups and intrusive ads | Free |
 

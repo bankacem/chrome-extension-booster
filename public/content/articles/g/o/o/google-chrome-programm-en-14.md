@@ -33,15 +33,19 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 7
 created_at: '2026-01-24T18:21:55.433546+00:00'
-updated_at: '2026-08-25T00:00:00.000Z'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 canonicalPath: /blog/google-chrome-programm-en-14
 description: "Build a small Chrome extension with Manifest V3. Learn manifest.json, permissions, service workers, popup code, and safe testing steps."
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
 Chrome extensions are small web applications that can add browser actions, page features, or background behavior. They are built with HTML, CSS, JavaScript, and a manifest that declares the extension's identity and capabilities. This guide uses the current Manifest V3 model and a small popup example; the [official Chrome for Developers documentation](https://developer.chrome.com/docs/extensions) remains the source of truth for API details and platform changes.
 
 > **Quick answer:** To build a Chrome extension, start with `manifest.json`, choose the narrowest permissions that fit the feature, and add only the components you need: a popup for user controls, a service worker for event-driven background work, or a content script for page interaction. Load the project unpacked from `chrome://extensions`, test it in Chrome, and consult the current Manifest V3 documentation before publishing.
 
 ## Table of Contents
+
+![Table of Contents — build a Chrome extension illustration for extensionto readers](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80)
 
 [Introduction to Building Chrome Extensions](#introduction-to-building-chrome-extensions)
 [Extension Architecture: Picking the Right Pattern](#extension-architecture-picking-the-right-pattern)
@@ -54,6 +58,8 @@ Chrome extensions are small web applications that can add browser actions, page 
 [Frequently Asked Questions](#frequently-asked-questions)
 
 ## Introduction to Building Chrome Extensions
+
+![Introduction to Building Chrome Extensions — build a Chrome extension illustration for extensionto readers](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80)
 
 Before writing code, decide what the extension should do, which page or browser event it needs to access, and whether the feature needs a popup, a service worker, or a content script. Starting with that narrow scope makes the manifest easier to review and reduces unnecessary permissions.
 

@@ -61,7 +61,7 @@ If your computer is lagging, the first place to look is Google Chrome. In 2026, 
 <h2 id="task-manager-vs-os">1. The Chrome Task Manager vs. OS Task Manager</h2>
 
 Your operating system's Task Manager (like Windows Task Manager or macOS Activity Monitor) only shows you that `chrome.exe` is using RAM. It doesn't tell you *which* tab or extension is the problem.
-- **The Solution: ** Press **Shift + Esc** to open Chrome's built-in Task Manager. This is the first step in our [Ultimate RAM Management Guide](/blog/ultimate-chrome-ram-memory-management-guide).
+- **The Solution: ** Press **Shift + Esc** to open Chrome's built-in Task Manager. This is the first step in our [Ultimate RAM Management Guide](/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide).
 
 <h2 id="decoding-metrics">2. Decoding the Memory Metrics</h2>
 
@@ -77,7 +77,7 @@ Right-click any header to add **GPU Memory** or **JavaScript Memory** for a deep
 A "Memory Leak" is when a tab's memory footprint keeps growing without you doing anything.
 - If you see a tab climb from 200MB to 2GB in an hour, it's a leak.
 - **Solution: ** Close the tab and restart Chrome.
-- For more fixes, see [How to Fix 'Out of Memory' Errors](/blog/fix-chrome-out-of-memory-errors).
+- For more fixes, see [How to Fix 'Out of Memory' Errors](/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide).
 
 <h2 id="performance-tab">4. Using the Performance Tab (Chrome Settings)</h2>
 

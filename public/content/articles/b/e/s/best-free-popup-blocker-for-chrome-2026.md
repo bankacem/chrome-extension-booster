@@ -37,9 +37,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 2
 read_time: 12
 created_at: '2026-02-13T19:04:55.73939+00:00'
-updated_at: '2026-09-06T09:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "The best free popup blocker for Chrome in 2026, tested: built-in settings vs 6 extensions, with measured block rates, MV3 notes, and setup steps."
 ---
+> 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
 
 <img src="/content/images/best-free-popup-blocker-for-chrome-2026-enhance-your-browsing-experience-mll9brzi0mt/featured.webp" alt="Best free popup blocker for Chrome in 2026" width="1200" height="630" loading="lazy" class="featured-image">
 
@@ -74,7 +75,7 @@ Google also notes that not every pop-up is advertising or spam. Some legitimate 
 
 ![A site-specific Chrome control panel showing blocked, allowed, and ask states for different domains](/content/images/best-free-popup-blocker-for-chrome-2026/popup-site-specific-controls.jpg "Use site-specific popup rules deliberately")
 
-If you use Chrome on Android, do not assume that a desktop extension can be installed in the official Chrome Android app. Extension support and filtering scope differ on mobile. See ExtensionTo’s [Chrome Android ad-blocking guide](/blog/extension-google-chrome-adblock-android-5) for that separate platform question.
+If you use Chrome on Android, do not assume that a desktop extension can be installed in the official Chrome Android app. Extension support and filtering scope differ on mobile. See ExtensionTo’s [Chrome Android ad-blocking guide](/blog/adblock-chrome-android-complete-guide-2026) for that separate platform question.
 
 ## When a free extension is worth considering
 
@@ -103,7 +104,7 @@ The table below compares decision criteria rather than inventing universal effec
 | Privacy surface | No additional extension | New publisher and permissions | Privacy policy and host access |
 | Maintenance | Updated with Chrome | Depends on developer | Recent release activity and support |
 
-For a lighter extension-focused perspective, see [why lightweight popup blockers differ from full content filters](/blog/best-lightweight-popup-blocker-chrome). This page owns the broad **best free popup blocker** comparison; the linked page should remain focused on the lightweight/performance trade-off.
+For a lighter extension-focused perspective, see [why lightweight popup blockers differ from full content filters](/blog/pop-up-blocker-for-chrome-partial). This page owns the broad **best free popup blocker** comparison; the linked page should remain focused on the lightweight/performance trade-off.
 
 ## How popup blockers are tested (and what our suite found)
 
@@ -120,7 +121,7 @@ Typical results from that suite, expressed as ranges because blocklists update w
 | Notification-bait prompts | Separate control | Often surfaces a prompt filter | Often surfaces a prompt filter |
 | Redirect chains | Partial | Partial | Best coverage |
 
-Two patterns matter. First, the built-in blocker is genuinely good at its one job — automatic pop-up windows — and genuinely absent for everything else, which is exactly why "I already enabled Chrome's blocker" rarely ends the story. Second, popup specialists and full ad blockers converge once both are well-maintained; the specialist wins on a light memory footprint, while the full blocker adds ad and tracker filtering on top. If you are choosing between those two philosophies, our [Poper Blocker vs Adblock Plus comparison](/blog/poper-blocker-vs-adblock-plus-2026) walks through the trade-off with the same testing logic, and the [lightweight popup blocker analysis](/blog/best-lightweight-popup-blocker-chrome) quantifies the performance side.
+Two patterns matter. First, the built-in blocker is genuinely good at its one job — automatic pop-up windows — and genuinely absent for everything else, which is exactly why "I already enabled Chrome's blocker" rarely ends the story. Second, popup specialists and full ad blockers converge once both are well-maintained; the specialist wins on a light memory footprint, while the full blocker adds ad and tracker filtering on top. If you are choosing between those two philosophies, our [Poper Blocker vs Adblock Plus comparison](/blog/poper-blocker-vs-adblock-plus-2026) walks through the trade-off with the same testing logic, and the [lightweight popup blocker analysis](/blog/pop-up-blocker-for-chrome-partial) quantifies the performance side.
 
 ## What Manifest V3 changed about popup blocking in 2026
 
@@ -141,7 +142,7 @@ A blocker is one layer. The durable setup combines four cheap habits:
 3. **Review extensions monthly.** Open `chrome://extensions`, sort by recently added, and remove anything you cannot explain. The tracking-cookie layer of the problem is separate — see [what tracking cookies are and how to remove them](/blog/what-are-tracking-cookies-remove-chrome) for that cleanup.
 4. **Teach the allowlist discipline.** Add a site exception only when a trusted flow is actually broken by blocking — a payment step, a sign-in window — and remove the exception when you are done. Exceptions are how leaks creep back in.
 
-For specific infestation patterns, we have dedicated guides: stopping [websites that open new tabs automatically](/blog/prevent-websites-from-opening-new-tabs-automatically-2), killing [video popups that autoplay](/blog/stop-video-popups-from-playing-automatically-3), and cleaning up [popup-heavy streaming sites](/blog/popup-blocker-streaming-sites) where the interruptions are engineered to defeat casual blockers.
+For specific infestation patterns, we have dedicated guides: stopping [websites that open new tabs automatically](/blog/prevent-websites-from-opening-new-tabs-automatically-2), killing [video popups that autoplay](/blog/pop-up-blocker-for-chrome-partial), and cleaning up [popup-heavy streaming sites](/blog/pop-up-blocker-for-chrome-partial) where the interruptions are engineered to defeat casual blockers.
 
 ## Why pop-ups can continue after blocking
 

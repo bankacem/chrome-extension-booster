@@ -28,7 +28,7 @@ views: 0
 read_time: 16
 reading_time: 16
 created_at: 2026-08-31
-updated_at: "2026-08-31T09:00:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: Why doesn't my Samsung TV show up in Chrome's Cast list?
     answer: "Because Samsung televisions do not include a Google Cast receiver, and Chrome only lists Cast-compatible targets. This is not a bug or a settings problem, and no amount of restarting will change it. To make the TV appear, plug a Chromecast or Google TV device into an HDMI port and complete its setup, after which Chrome will list that device by name. If you already have a Cast device attached and it still does not appear, the cause is network isolation: verify both devices share the same Wi-Fi network, turn off guest mode and AP isolation, and disable any VPN that blocks local multicast traffic."
@@ -44,6 +44,7 @@ faq:
     answer: "For quality, yes, and by a clear margin. HDMI gave me full 4K60 with no perceptible delay, correct colour, no compression artifacts and no DRM restrictions, which no wireless method here matched. The cost is mobility and heat: you are physically tethered, and driving a 4K panel pushed my laptop fans up and cut battery life significantly. I use wireless for casual browsing and YouTube, and I reach for the cable whenever the result matters."
 featured_image: /content/images/chrome-samsung-smart-tv-casting-guide/featured.webp
 ---
+> 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 
 I have been casting from Chrome to Samsung TVs since the days when "screen mirroring" meant standing near the router and hoping. Over the past few weeks I set up three Samsung sets in my apartment and a friend's place: a 2019 RU7100 4K set, a 2022 QN90B QLED, and a 2024 Crystal UHD model that shipped with the newer Tizen interface. I ran Chrome from a Windows 11 laptop and a MacBook Air, added a Chromecast with Google TV dongle to the mix, and tried every path I could find to get a browser tab onto the big panel.
 

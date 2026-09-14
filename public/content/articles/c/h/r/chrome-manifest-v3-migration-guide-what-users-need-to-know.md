@@ -12,7 +12,7 @@ keywords:
   - manifest v2 deprecated
   - chrome extension not working 2026
   - what is manifest v3
-meta_description: "Understand Chrome Manifest V3 migration in 2026: check an extension's status, permissions, compatibility, and safer next steps if an older extension stops working."
+meta_description: "Chrome Manifest V3 Migration Guide: What Users Need to Know in 2026 — A practical user guide to Chrome's Manifest V2 phase-out: what changes, how to check an..."
 status: published
 published_at: "2026-08-27T12:00:00+01:00"
 scheduled_at: "2026-08-27T12:00:00+01:00"
@@ -20,7 +20,7 @@ author: "James Mitchell"
 author_image: /content/images/authors/james-mitchell.png
 read_time: 8
 created_at: "2026-08-24T12:00:00+01:00"
-updated_at: "2026-08-28T03:00:00+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "A practical user guide to Chrome's Manifest V2 phase-out: what changes, how to check an extension, and what to do when an older extension stops working."
 faq:
   - question: "What is Manifest V3 in Chrome?"
@@ -34,6 +34,7 @@ faq:
   - question: "What should I do if an extension stops working after the transition?"
     answer: "Update Chrome and the extension, review site access and release notes, contact the publisher, and look for a maintained alternative if the required feature has no supported Manifest V3 path. Remove the old extension when you no longer need its access."
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ![Chrome extension cards moving through a clear migration checkpoint](/content/images/chrome-manifest-v3-migration-guide-what-users-need-to-know/chrome-manifest-v3-migration-guide-what-users-need-to-know-1.webp "Chrome Manifest V3 migration overview")
 
@@ -136,3 +137,5 @@ Update Chrome and the extension, review site access and release notes, contact t
 [2]: https://developer.chrome.com/docs/extensions/develop/migrate "Migrate to Manifest V3 — Chrome for Developers"
 [3]: https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3 "Manifest V3 — Chrome for Developers"
 [4]: https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions "Declare permissions — Chrome for Developers"
+
+Related reading: [How to Build a Chrome Extension with Manifest V3: Beginner Guide](/blog/google-chrome-programm-en-14) · [Step-by-Step Chrome Extensions Tutorial: Building for the Manifest V3 Era](/blog/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era)

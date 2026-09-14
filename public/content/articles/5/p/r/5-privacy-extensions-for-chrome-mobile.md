@@ -32,7 +32,7 @@ After careful evaluation and research, we've compiled a list of the **Top 5 priv
 1. **[SecuraKey Pro](/extension/securakey-pro)**: A secure password manager with encryption, designed to protect your online identity and sensitive information.
 2. **[Redirect Shield](/extension/redirect-shield)**: A powerful extension that stops automatic redirects and protects you from malicious chains, ensuring your online safety.
 3. **[Light Popup Blocker](/extension/light-popup-blocker)**: A [lightweight](/blog/a-lightweight-ad-blocker-for-chrome) extension that blocks annoying popups and intrusive ads, enhancing your browsing experience and reducing the risk of malware infections.
-4. **[Cookie Banner Blocker](/extension/cookie-banner-blocker)**: An extension that [automatically](/blog/stop-video-popups-from-playing-automatically-3) dismisses cookie consent banners, protecting your online privacy and reducing clutter on web pages.
+4. **[Cookie Banner Blocker](/extension/cookie-banner-blocker)**: An extension that [automatically](/blog/pop-up-blocker-for-chrome-partial) dismisses cookie consent banners, protecting your online privacy and reducing clutter on web pages.
 5. **[ProTab Suspender](/extension/protab-suspender)**: An extension that automatically suspends inactive tabs, freeing up system resources and reducing the risk of memory-based attacks.
 
 ### Why These Extensions?

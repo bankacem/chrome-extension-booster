@@ -26,8 +26,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 1
 read_time: 5
 created_at: '2026-03-16T18:01:00.296677+00:00'
-updated_at: '2026-04-23T12:25:15.87333+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
 ## How to Run Chrome Extensions on Brave Android: A Step-by-Step Guide
 
 Are you a fan of Brave browser on your Android device, but missing the functionality of your favorite Chrome extensions? Well, you're in luck! In this article, we'll show you how to **run Chrome extensions on Brave Android**, giving you the best of both worlds. With the rise of mobile browsing, it's essential to have the tools you need to enhance your online experience. So, let's dive in and explore the world of Chrome extensions on Brave Android.

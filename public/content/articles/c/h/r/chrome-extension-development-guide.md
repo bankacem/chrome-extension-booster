@@ -25,8 +25,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 8
 created_at: '2026-01-27T11:28:14.974845+00:00'
-updated_at: '2026-05-24T06:15:00.615145+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
 I set myself a challenge: build three Chrome extensions from scratch in one week, using nothing but Google's official Chrome extension documentation and community resources. The first was a simple tab manager that groups tabs by domain. The second was a screenshot tool that captures visible and full-page screenshots. The third was a dark mode toggler that injects custom CSS on any page. By the end of the week, I had three working extensions and a clear understanding of where the Chrome extension doc shines and where it falls short for real-world development. Here is everything I learned.
 
 ## What the Chrome Extension Doc Covers Well
@@ -157,3 +159,5 @@ Google's official Chrome extension documentation is good for getting started but
 Supplement the official doc with MDN's cross-browser documentation and active community forums like the Chrome Extension Developer group on Google Groups. My recommendation: build a simple extension first (like the dark mode toggler — 98 lines, 3 hours) to learn the basics of Manifest V3, service workers, and content scripts, then tackle something with persistent state (like a tab manager or clipboard tool) once you understand the service worker lifecycle and keepalive patterns.
 
 [Get Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) — Document your development process with full-page screenshots of your extension UI, error messages, and test results.
+
+Related reading: [CORS Chrome Guide: I Tested 4 CORS Solutions for Web Development — Here Is What ](/blog/cors-chrome-guide) · [YouTube to MP4 Converter Chrome Extensions](/blog/youtube-to-mp4-converter-chrome-extensions)

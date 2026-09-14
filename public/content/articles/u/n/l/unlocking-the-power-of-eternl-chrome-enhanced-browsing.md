@@ -9,7 +9,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - eternl chrome
-meta_description: "A practical breakdown of eternl for chrome: how it works, how to set it up, and where it falls short."
+meta_description: "Eternl for Chrome: A Cardano Wallet Extension — Are you looking to take your Chrome browsing experience to the next level?"
 status: published
 published_at: '2026-05-07T10:15:00.312+00:00'
 scheduled_at: '2026-05-07T10:15:00+00:00'
@@ -18,9 +18,11 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 5
 created_at: '2026-01-29T15:49:21.080729+00:00'
-updated_at: '2026-05-07T10:15:00.378077+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you looking to take your Chrome browsing experience to the next level?"
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
 Are you looking to take your Chrome browsing experience to the next level? Look no further than Eternl Chrome, a revolutionary approach to browsing that combines the best of Chrome with innovative features and extensions. In this article, we'll delve into the world of Eternl Chrome, exploring its benefits, features, and how it can transform your browsing experience. Whether you're a casual user or a power user, Eternl Chrome is sure to impress, and we'll show you how to get the most out of it with our [Quick Screenshot Lite](/extension/quick-screenshot-lite) and other essential Chrome extensions.
 
 ## What is Eternl Chrome?
@@ -110,3 +112,5 @@ Capture full page or visible area screenshots instantly.
 
 [Add to Chrome - It's Free](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
 [View Full Details](/extension/quick-screenshot-lite)
+
+Related reading: [Zoom Chrome Extension: What It Does, How to Set It Up, and What It Is Not](/blog/zoom-chrome-extension-guide) · [Why is Chrome using so much memory? (2026 Fixes)](/blog/why-is-chrome-using-so-much-memory-2026-fixes)

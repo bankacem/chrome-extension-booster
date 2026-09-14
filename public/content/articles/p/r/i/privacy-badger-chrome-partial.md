@@ -41,7 +41,7 @@ Both Privacy Badger and Ghostery are designed to **block trackers** and protect 
 
 ### Key Features of Ghostery
 
-**Ghostery**, on the other hand, offers a more [comprehensive](/blog/ublock-origin-vs-ghostery-for-chrome-android "uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison") set of features, including:
+**Ghostery**, on the other hand, offers a more [comprehensive](/blog/ghostery-vs-ublock-origin-2026 "uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison") set of features, including:
 
 - Tracker blocking: **Ghostery** blocks trackers, but also provides more detailed information about the trackers it detects.
 - Anti-tracking: The extension uses anti-tracking technology to prevent trackers from collecting your data.

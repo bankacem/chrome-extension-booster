@@ -29,7 +29,7 @@ So, what are the **best Chrome extensions for marketing**? Here are some of the 
 
 - [SecuraKey Pro](/extension/securakey-pro): A secure password manager that helps you generate and store unique, strong passwords for all your marketing tools and accounts.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite): A handy extension that allows you to capture full-page or visible area screenshots instantly, perfect for creating marketing materials or documenting website issues.
-- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher): An extension that [automatically](/blog/stop-video-popups-from-playing-automatically-3) switches between dark and light modes, helping you reduce eye strain and improve your overall browsing experience.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher): An extension that [automatically](/blog/pop-up-blocker-for-chrome-partial) switches between dark and light modes, helping you reduce eye strain and improve your overall browsing experience.
 
 ## How to Choose the Best Chrome Extension for Marketing
 

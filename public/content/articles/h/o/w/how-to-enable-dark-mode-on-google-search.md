@@ -18,14 +18,16 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 5
 created_at: '2026-01-21T12:39:41.253618+00:00'
-updated_at: '2026-04-23T12:27:41.328012+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you tired of the traditional bright white background of Google Search? Do you want to reduce eye strain and give your eyes a break?"
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
 ## How to Enable Dark Mode on Google Search: A Step-by-Step Guide
 
 Are you tired of the traditional bright white background of Google Search? Do you want to reduce eye strain and give your eyes a break? Enabling Dark Mode on Google Search is a great way to achieve this. In this article, we will walk you through the process of **how to enable Dark Mode on Google Search** and provide you with some valuable tips and tricks to enhance your browsing experience.
 
-Before we dive into the process, it's essential to note that Google Search's Dark Mode is not enabled by default. However, with a few simple steps, you can easily **enable Dark Mode on Google Search** and enjoy a more comfortable browsing experience. If you're looking for a more automated solution, you can also consider using our [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) Chrome extension, which can [automatically](/blog/stop-video-popups-from-playing-automatically-3 "Stop Video Popups from Playing Automatically: A Comprehensive Guide") switch between dark and light modes based on your system settings.
+Before we dive into the process, it's essential to note that Google Search's Dark Mode is not enabled by default. However, with a few simple steps, you can easily **enable Dark Mode on Google Search** and enjoy a more comfortable browsing experience. If you're looking for a more automated solution, you can also consider using our [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) Chrome extension, which can [automatically](/blog/pop-up-blocker-for-chrome-partial "Stop Video Popups from Playing Automatically: A Comprehensive Guide") switch between dark and light modes based on your system settings.
 
 ## What is Dark Mode?
 

@@ -25,9 +25,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 11
 created_at: '2026-09-06T09:00:00.000+00:00'
-updated_at: '2026-09-06T09:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Kiwi Browser runs desktop Chrome extensions on Android — but development has stalled. Our 2026 verdict on safety, update lag, extension setup, and the alternatives worth migrating to."
 ---
+> 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
 
 Kiwi Browser is the Chromium-based Android browser that does what stock Chrome refuses to: it installs most desktop Chrome extensions, including uBlock Origin. It is open source, it still works smoothly day to day, and the extension trick still functions in 2026. The honest verdict up front: **fine as a secondary browser, hard to recommend as your only one**, because development has stalled and its Chromium base is aging away from current security patches — and for a browser, the patch cadence *is* the safety story.
 

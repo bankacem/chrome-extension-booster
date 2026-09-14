@@ -30,7 +30,7 @@ author_image: /content/images/authors/james-mitchell.png
 views: 2
 read_time: 10
 created_at: '2026-01-19T13:57:24.243317+00:00'
-updated_at: '2026-08-26T00:00:00.000Z'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: >-
   Learn the official desktop method for installing Chrome extensions, reviewing
   permissions, pinning and managing them, and troubleshooting common problems.
@@ -64,6 +64,7 @@ howto:
     - name: "Approve the installation"
       text: "Read the permissions prompt and choose Add extension only if you trust the extension and its access request."
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 <img src="/content/images/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial/featured.webp" alt="How to install a Chrome extension from the official Web Store" width="1200" height="630" loading="lazy" class="featured-image">
 

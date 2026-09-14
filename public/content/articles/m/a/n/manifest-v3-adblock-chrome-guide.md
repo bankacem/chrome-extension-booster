@@ -27,7 +27,7 @@ views: 0
 read_time: 17
 reading_time: 17
 created_at: 2026-09-01
-updated_at: "2026-09-01T21:45:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: Did Chrome actually ban ad blockers with Manifest V3?
     answer: "No, and this is the misconception I correct most often. Manifest V3 replaced the webRequest blocking API that let extensions inspect and cancel any request with declarativeNetRequest, a rule-based system with caps. Ad blocking still works, but the blocker must express its filtering as rules within those limits, which reshaped which products are viable. Classic uBlock Origin is the real casualty because its entire model depends on the old API."
@@ -43,6 +43,7 @@ faq:
     answer: "No realistic chance. The migration started in 2020, the deprecation of MV2 finished rolling out through 2025 into 2026, and enterprise exceptions are time-limited by design. Every quarter spent waiting for a reversal was a quarter my setups kept silently degrading. The productive question is which MV3-native option fits your browsing, and that is a decision you can complete in an evening with the steps in this guide."
 featured_image: /content/images/manifest-v3-adblock-chrome-guide/featured.webp
 ---
+> 📌 **Article Type:** Product Review | **Updated:** 2026
 
 My blocker died on a Tuesday. I woke the Windows 11 desktop, opened the news site I read every morning, and got a full-screen interstitial, a video ad that autoplayed with sound, and a cookie wall layered on top of both. The toolbar showed a puzzle-piece icon with a red badge. uBlock Origin sat greyed out at `chrome://extensions` under a one-line obituary: no longer supported.
 
@@ -205,3 +206,5 @@ If filtering strength is your only priority, the answer has not changed since th
 ![Manifest V3 and Chrome Adblockers: What Changed & What Still Works (2026) — tips](/content/images/manifest-v3-adblock-chrome-guide/tips.webp "Manifest V3 and Chrome Adblockers: What Changed & What Still Works (2026) — Tips")
 
 ## Sources
+
+For official guidance, review <a href="https://support.google.com/chrome/answer/114836?hl=en" target="_blank" rel="noopener noreferrer">Google's official guide to controlling sites and ads in Chrome</a> before changing browser settings.

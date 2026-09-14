@@ -53,7 +53,7 @@ With so many **color picker Chrome extension free** options available, it can be
 
 ## Top Color Picker Chrome Extensions
 
-While we don't have a specific color picker extension, you can explore other extensions that can enhance your browsing experience, such as the [Quick Screenshot Lite](/extension/quick-screenshot-lite) extension, which allows you to capture full-page or visible area screenshots instantly. You can also check out the [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) extension, which [automatically](/blog/stop-video-popups-from-playing-automatically-3) switches between dark and light modes.
+While we don't have a specific color picker extension, you can explore other extensions that can enhance your browsing experience, such as the [Quick Screenshot Lite](/extension/quick-screenshot-lite) extension, which allows you to capture full-page or visible area screenshots instantly. You can also check out the [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) extension, which [automatically](/blog/pop-up-blocker-for-chrome-partial) switches between dark and light modes.
 
 ## Comparison Table
 

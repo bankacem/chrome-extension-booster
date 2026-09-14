@@ -66,7 +66,7 @@ Use this pre‑install routine for any New Tab dashboard:
 3. Confirm it’s actually a New Tab replacement. Some extensions provide widgets but don’t replace the New Tab page.
 4. Consider your needs versus the default. If you only need a few shortcuts, the built‑in New Tab likely suffices.
 
-Students setting up a productivity stack may want an integrated dashboard, a separate task manager, and study tools. We cover that trade‑off in the [pro student Chrome extensions academic stack guide](/blog/pro-student-chrome-extensions-the-ultimate-academic-stack).
+Students setting up a productivity stack may want an integrated dashboard, a separate task manager, and study tools. We cover that trade‑off in the [pro student Chrome extensions academic stack guide](/blog/chrome-extensions-for-student-productivity).
 
 ## Install and set a New Tab extension safely
 - Add from the Chrome Web Store: Open the listing and select Add to Chrome. Chrome will show a dialog describing requested permissions. Proceed only if you’re comfortable with them.

@@ -100,7 +100,7 @@ If you’ve ruled out compatibility, profile issues, and network restrictions, a
 Admins can review policy settings (block/allow/force‑install) as outlined in Google’s enterprise help.
 
 ## Related reading
-- For students building a focused, secure browsing setup, consider these [curated study‑friendly Chrome extensions and practices](/blog/pro-student-chrome-extensions-the-ultimate-academic-stack) once you can install reliably.
+- For students building a focused, secure browsing setup, consider these [curated study‑friendly Chrome extensions and practices](/blog/chrome-extensions-for-student-productivity) once you can install reliably.
 
 ## Limitations of this guide
 - It does not cover developer‑specific workflows (e.g., loading unpacked extensions you wrote yourself) beyond advising against using them to bypass Store errors.

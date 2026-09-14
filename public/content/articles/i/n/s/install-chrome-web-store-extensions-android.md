@@ -27,8 +27,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 9
 created_at: '2026-01-27T13:35:53.014077+00:00'
-updated_at: '2026-06-05T14:15:00.730602+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
 I wanted to use the Chrome Web Store on my phone — not just browse it, but actually install extensions like uBlock Origin and a screenshot tool. Chrome for Android does not support extensions, so I tested three Chromium-based browsers that do: Kiwi, Yandex, and Lemur. I installed 20 Chrome Web Store extensions on each, using my Galaxy S23 (Android 14, 8GB RAM) over two weeks.
 
 This guide covers how to access the Chrome Web Store on Android, which browser runs the most extensions, and the privacy trade-offs you need to know.
@@ -182,3 +184,5 @@ The Chrome Web Store itself has a poor mobile experience (small buttons, no perm
 Start with Quick Screenshot Lite — it is the only mobile screenshot tool that captures full scrolling pages on Android, which the native Android screenshot cannot do.
 
 [Get Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) — works on Kiwi, Yandex, and Lemur browsers. Install directly from the Chrome Web Store on your phone.
+
+Related reading: [Kiwi vs Yandex vs Lemur 2026: Best Browser for Chrome Extensions on Android](/blog/kiwi-vs-yandex-vs-lemur-android-extensions) · [Kiwi Browser Extensions Guide: How to Run Chrome Extensions on Android](/blog/kiwi-browser-extensions-guide)

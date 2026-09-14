@@ -29,7 +29,7 @@ views: 0
 read_time: 16
 reading_time: 16
 created_at: 2026-08-31
-updated_at: "2026-08-31T09:00:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: Is the Blackbox AI Chrome extension free?
     answer: "Yes, there is a free tier and I used it for a full week of daily work without paying. I hit what felt like soft rate limits during one heavy afternoon of back-to-back requests, where responses slowed noticeably before recovering. For normal research use, which for me meant somewhere between twenty and fifty questions a day, the free tier was sufficient. Paid plans exist and offer higher limits and additional model options, but I would run the free tier for a week before deciding whether the paid version fits your habits."
@@ -45,6 +45,7 @@ faq:
     answer: "Right-click the BLACKBOX AI icon in the Chrome toolbar and choose **Remove from Chrome**, then confirm in the dialog. If the icon is not pinned, go to `chrome://extensions`, find the card, and click **Remove**. To go further, sign out of the account in the panel before removing the extension, and check the extension's own settings for an account deletion option on the vendor's website, since removing a browser extension does not delete a server-side account. I also cleared site data for the vendor domain afterward through Chrome's **Settings > Privacy and security > Third-party cookies > See all site data and permissions**."
 featured_image: /content/images/blackbox-ai-chrome-extension-guide/featured.webp
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 I installed the Blackbox AI Chrome extension on a Tuesday morning with a fairly narrow question: can a browser sidebar actually speed up the messy part of coding, which for me is hunting down a snippet I half-remember from a tutorial and getting it into a working file? I kept it enabled for a full week across two machines, a Linux laptop running Chrome stable and an older desktop I use for testing extensions with limited RAM. Everything below comes from that week, not from the store listing copy.
 

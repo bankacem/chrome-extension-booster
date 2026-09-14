@@ -26,9 +26,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 11
 created_at: '2026-09-02T12:00:00.000+00:00'
-updated_at: '2026-09-02T12:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Firefox for Android runs real desktop-style extensions in 2026. Install uBlock Origin, Dark Reader, and Bitwarden, with measured performance numbers and a Kiwi comparison."
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 Yes — Firefox for Android runs real, desktop-style extensions: since Mozilla opened mobile add-on support (open beta in late 2023, stable through 2024), you can install uBlock Origin, Dark Reader, Bitwarden, and thousands of others directly in the browser, with no workarounds and no sideloading. In 2026 it is the only mainstream Android browser with first-class extension support — Kiwi's development has stalled, and Chrome on Android still offers no extensions at all. This guide covers how to install extensions, the five worth getting first, the performance cost you should honestly expect, and the situations where Firefox is genuinely the better daily driver. It slots into the bigger picture we track in our [guide to Chrome extensions on Android in 2026](/blog/chrome-extensions-on-android-2026-guide) — because on Android, the browser choice is the extension choice.
 
@@ -59,7 +60,7 @@ The catalog is thousands deep; these five cover what nearly everyone actually wa
 
 ### uBlock Origin — the reason most people switch
 
-The same filtering engine as desktop, running the same filter lists, with the same options page. On our test set of ten ad-heavy news sites it blocked 94% of ad and tracker requests — more than any DNS-level tool can manage, because it filters inside the page rather than at domain resolution. If you install one extension, this is it; our walkthrough of [ad blocking on Android](/blog/unlocking-ad-free-browsing-on-android-android-chrome-adblock) builds directly on it.
+The same filtering engine as desktop, running the same filter lists, with the same options page. On our test set of ten ad-heavy news sites it blocked 94% of ad and tracker requests — more than any DNS-level tool can manage, because it filters inside the page rather than at domain resolution. If you install one extension, this is it; our walkthrough of [ad blocking on Android](/blog/adblock-chrome-android-complete-guide-2026) builds directly on it.
 
 ### Dark Reader — night mode for every site
 
@@ -89,7 +90,7 @@ Hides the GDPR cookie-consent walls that make European news sites unreadable. Wo
 
 Honest accounting, measured on a Galaxy S24 and a Pixel 7 with all five extensions installed. Cold-start time added 0.4–0.8 seconds compared with extension-free Firefox. Steady-state browsing memory rose 150–250 MB across a typical 15-tab session — real, but smaller than what a single extra Chrome tab pair costs on desktop Chrome. Battery impact came out at roughly 3–5% extra over an afternoon of mixed browsing, almost all of it from Dark Reader's per-page rendering rather than from blocking. On the JS benchmarks, raw JavaScript speed still favors Chrome's V8 engine by 10–20% over Firefox's SpiderMonkey — if you live in web-based office suites, that difference is real.
 
-The trade most people miss: with uBlock Origin active, *page loads get faster*, not slower, because a dozen third-party ad and tracker requests per page simply never happen. On ad-dense news sites I measured 20–35% faster full-page completion with uBlock enabled versus Firefox without it. The extension tax is real; the filtering dividend is usually larger. If you want the lightest possible setup, uBlock Origin alone captures most of that benefit — the five-extension stack is a comfort configuration, not a requirement. For the browser-level comparison including Chrome's raw speed, our [ad-free browsing on Android overview](/blog/unlocking-ad-free-browsing-on-android-android-chrome-adblock) has the numbers side by side.
+The trade most people miss: with uBlock Origin active, *page loads get faster*, not slower, because a dozen third-party ad and tracker requests per page simply never happen. On ad-dense news sites I measured 20–35% faster full-page completion with uBlock enabled versus Firefox without it. The extension tax is real; the filtering dividend is usually larger. If you want the lightest possible setup, uBlock Origin alone captures most of that benefit — the five-extension stack is a comfort configuration, not a requirement. For the browser-level comparison including Chrome's raw speed, our [ad-free browsing on Android overview](/blog/adblock-chrome-android-complete-guide-2026) has the numbers side by side.
 
 ![Extension memory overhead measured across the five picks](/content/images/firefox-android-extensions-guide/firefox-android-extensions-guide-steps-1.webp)
 

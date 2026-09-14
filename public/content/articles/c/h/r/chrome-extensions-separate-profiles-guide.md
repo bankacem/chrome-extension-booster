@@ -85,7 +85,7 @@ Adopt a short set of rules so your extension lists don't sprawl.
 6) Test account separation:
    - Log into a site in the Work profile; open the same site in Personal to confirm it remains logged out or uses different credentials.
 
-If your academic life needs its own profile, you might adapt this approach with a curated, distraction-minimized set of tools. For ideas, see our guide to [building a focused academic extension stack](/blog/pro-student-chrome-extensions-the-ultimate-academic-stack).
+If your academic life needs its own profile, you might adapt this approach with a curated, distraction-minimized set of tools. For ideas, see our guide to [building a focused academic extension stack](/blog/chrome-extensions-for-student-productivity).
 
 ## Risk boundaries: what to keep out of each profile
 - Don’t install password managers or sensitive data tools in profiles that don’t need them.

@@ -26,9 +26,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 12
 created_at: '2026-09-02T15:00:00.000+00:00'
-updated_at: '2026-09-02T15:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Nine ChatGPT workflows for Google Sheets with copy-paste prompts: formulas, data cleaning, categorization, translation, regex, charts, templates, and debugging."
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## Quick answer: two reliable ways to run ChatGPT against Google Sheets
 

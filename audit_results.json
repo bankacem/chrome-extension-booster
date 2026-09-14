@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-09-14T12:47:55.116721+00:00",
+  "repository": "bankacem/chrome-extension-booster",
+  "site": "https://extensionto.com",
+  "criteria": {
+    "min_words": 800,
+    "min_images": 2,
+    "min_internal_links": 2,
+    "min_external_links": 1,
+    "outdated_cutoff": "2026-01-01"
+  },
+  "scanned_files": 951,
+  "flagged_count": 0,
+  "flagged_articles": []
+}

@@ -27,7 +27,7 @@ views: 0
 read_time: 15
 reading_time: 15
 created_at: 2026-09-01
-updated_at: "2026-09-01T21:45:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: Why did my ad blocker stop working on YouTube specifically?
     answer: "Because YouTube is the hardest filter target on the web: it injects ads server-side into the video stream response and rotates detection scripts weekly, so a filter list that is even two weeks stale starts leaking. General blockers that pass every other test site can still fail here. When mine broke, the generic tester pages were clean while YouTube showed pre-rolls, which told me immediately it was list freshness and YouTube-specific rules, not a dead extension."
@@ -43,6 +43,7 @@ faq:
     answer: "Probably, in small windows. YouTube ships detection changes continuously and every blocker leaks for hours or a few days during the worst rollouts, then filter updates catch up. What changed for me after setting this up properly is the recovery time: leaks went from weeks of frustration to a hard refresh after a list update. Expect maintenance, not a one-time permanent fix."
 featured_image: /content/images/youtube-adblock-chrome-guide/featured.webp
 ---
+> 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 
 I spent last Thursday evening deliberately wrecking a setup that worked. My daily Chrome profile had been quiet on YouTube for months, so I unsubscribed from two filter lists, forced an older extension build, and pressed play on a 22-minute review video. Four seconds in, the player dimmed behind a gray card telling me ad blockers violate YouTube's Terms of Service. Three videos later, playback stopped entirely.
 
@@ -191,3 +192,5 @@ If you would rather not maintain this, there are two honest endpoints. Run a mai
 ![YouTube Adblock Not Working in Chrome? The Fix That Survived 2026 — tips](/content/images/youtube-adblock-chrome-guide/tips.webp "YouTube Adblock Not Working in Chrome? The Fix That Survived 2026 — Tips")
 
 ## Sources
+
+For official guidance, review <a href="https://support.google.com/chrome/answer/114836?hl=en" target="_blank" rel="noopener noreferrer">Google's official guide to controlling sites and ads in Chrome</a> before changing browser settings.

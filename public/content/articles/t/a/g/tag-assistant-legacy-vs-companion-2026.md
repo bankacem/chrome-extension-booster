@@ -25,9 +25,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 12
 created_at: '2026-08-30T09:00:00.000+00:00'
-updated_at: '2026-08-30T09:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Google retired Tag Assistant Legacy in 2024. Companion replaces it with session-based debugging — what changed, how to migrate in 7 steps, which tool to use."
 ---
+> 📌 **Article Type:** Product Review | **Updated:** 2026
 
 Tag Assistant Companion is Google's replacement for the retired Tag Assistant Legacy Chrome extension: instead of a one-page tag check inside your browser, you get a web app plus a small desktop program that records full debugging sessions across pages, tabs, and even devices. Legacy — the extension that checked Google tags on whatever page you were viewing — was deprecated and shut down in 2024, so if your bookmarks still open it, it is gone for good. This guide explains exactly what changed and why, compares Legacy and Companion feature by feature, walks you through the seven-step migration, and maps out when to reach for GTM Preview, GA4 DebugView, or Tag Diagnostics instead. If your broader goal is auditing what analytics and marketing tools a site runs in the first place, our overview of [the best Chrome extension for analytics work](/blog/the-best-chrome-extension-for-analytics) is the natural companion read.
 

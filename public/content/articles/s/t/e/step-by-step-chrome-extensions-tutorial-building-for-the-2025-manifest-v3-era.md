@@ -29,7 +29,7 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 14
 created_at: '2026-01-19T13:56:52.373854+00:00'
-updated_at: '2026-04-23T12:29:22.061228+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: Is Manifest V2 still supported in Chrome?
     answer: >-
@@ -99,6 +99,7 @@ howto:
         Web Store Developer Dashboard, fill in the listing details, icon assets,
         privacy policy URL, and submit for review.
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 <img src="/content/images/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era/featured.webp" alt="Step-by-Step Chrome Extensions Tutorial: Building for the 2025 Manifest V3 Era" width="1200" height="630" loading="lazy" class="featured-image">
 
@@ -132,7 +133,7 @@ Before writing any code, ensure your environment matches these requirements:
 
 ### Scaffolding the Project
 
-For this tutorial, we build a vanilla Manifest V3 extension without a framework. This keeps the architecture transparent and makes each component easy to understand. If you prefer HMR and framework integration, run `npm create wxt@latest` or `npx plasmo init` instead. Frameworks handle Manifest V3 configuration [automatically](/blog/stop-video-popups-from-playing-automatically-3), including hot module replacement, content script bundling, and multi-entry-point builds.
+For this tutorial, we build a vanilla Manifest V3 extension without a framework. This keeps the architecture transparent and makes each component easy to understand. If you prefer HMR and framework integration, run `npm create wxt@latest` or `npx plasmo init` instead. Frameworks handle Manifest V3 configuration [automatically](/blog/pop-up-blocker-for-chrome-partial), including hot module replacement, content script bundling, and multi-entry-point builds.
 
 1. Create a project directory and open it in VS Code:
 

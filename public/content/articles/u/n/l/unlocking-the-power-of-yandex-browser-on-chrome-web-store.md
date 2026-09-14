@@ -10,7 +10,7 @@ category: Chrome Extensions
 tags: []
 keywords:
   - yandex browser chrome web store
-meta_description: "Are you looking for a reliable and feature-rich browser that can enhance your online experience?"
+meta_description: "Does Yandex Browser Support Chrome Extensions? — Are you looking for a reliable and feature-rich browser that can enhance your online experience?"
 status: published
 published_at: '2026-03-19T09:00:00.353+00:00'
 scheduled_at: '2026-03-19T09:00:00+00:00'
@@ -19,9 +19,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 5
 created_at: '2026-03-16T18:00:55.189777+00:00'
-updated_at: '2026-04-23T12:25:18.952335+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you looking for a reliable and feature-rich browser that can enhance your online experience?"
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 Are you looking for a reliable and feature-rich browser that can enhance your online experience? Look no further than the **Yandex Browser**, available on the **Chrome Web Store**. In this article, we will delve into the world of **Yandex Browser Chrome Web Store** and explore its features, benefits, and how it can be a valuable addition to your online toolkit. Whether you're a casual user or a power user, this guide will provide you with everything you need to know about **Yandex Browser on Chrome Web Store**.
 
@@ -35,6 +36,8 @@ As we navigate the vast expanse of the internet, it's essential to have a browse
 
 ## Getting Started with Yandex Browser on Chrome Web Store
 
+![Getting Started with Yandex Browser on Chrome Web Store — yandex browser chrome web store illustration for extensionto readers](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80)
+
  [
  Learn More
  ](/extension/quick-screenshot-lite)
@@ -46,7 +49,7 @@ As we navigate the vast expanse of the internet, it's essential to have a browse
 
 To get started with **Yandex Browser on Chrome Web Store**, simply visit the Chrome Web Store and search for "Yandex Browser". Click on the "Add to Chrome" button to install the browser, and follow the prompts to complete the installation process. Once installed, you can launch **Yandex Browser** from the Chrome Web Store or from your computer's start menu.
 
-One of the key benefits of using **Yandex Browser on Chrome Web Store** is its seamless integration with other Chrome extensions. For example, you can use our [Quick Screenshot Lite](/extension/quick-screenshot-lite) extension to capture screenshots of web pages, or our [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) extension to [automatically](/blog/stop-video-popups-from-playing-automatically-3) switch between dark and light modes.
+One of the key benefits of using **Yandex Browser on Chrome Web Store** is its seamless integration with other Chrome extensions. For example, you can use our [Quick Screenshot Lite](/extension/quick-screenshot-lite) extension to capture screenshots of web pages, or our [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) extension to [automatically](/blog/pop-up-blocker-for-chrome-partial) switch between dark and light modes.
 
 ### Key Features of Yandex Browser on Chrome Web Store
 

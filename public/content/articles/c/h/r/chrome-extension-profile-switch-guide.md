@@ -94,7 +94,7 @@ After switching, run the quick verification steps above—profile name/avatar, s
 - Keep color cues distinct: Use different themes or avatars per profile to make mis-clicks obvious at a glance.
 - Separate storage destinations: Set different default download subfolders per profile (for example, Downloads/Work vs Downloads/Personal) and enable “Ask where to save each file.”
 - Add only what you need: Limit each profile to the extensions required for that context. For help vetting listings, see our concise [guide to evaluating Chrome Web Store listings](/blog/chrome-web-store-guide).
-- Build a purpose-driven profile for study or research: If you’re a learner, consider a dedicated setup anchored by note-taking and citation tools. Our [curated academic Chrome extension stack](/blog/pro-student-chrome-extensions-the-ultimate-academic-stack) has practical ideas.
+- Build a purpose-driven profile for study or research: If you’re a learner, consider a dedicated setup anchored by note-taking and citation tools. Our [curated academic Chrome extension stack](/blog/chrome-extensions-for-student-productivity) has practical ideas.
 
 ## Limitations and edge cases to keep in mind
 

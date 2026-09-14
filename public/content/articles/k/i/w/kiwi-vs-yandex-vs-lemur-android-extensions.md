@@ -24,8 +24,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 1
 read_time: 8
 created_at: '2026-01-24T13:04:12.051631+00:00'
-updated_at: '2026-04-23T12:27:14.12643+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Product Review | **Updated:** 2026
+
 I spent a week testing three Android browsers that support Chrome extensions — Kiwi, Yandex, and Lemur — on my Galaxy S23 running Android 14. I installed the same 10 Chrome extensions on each browser, then measured extension compatibility, memory usage with 5 tabs and 5 extensions open, page load speed, privacy protection, and update frequency. Here is which Android browser handles Chrome extensions best and which one respects your privacy.
 
 ## Browser Comparison

@@ -29,7 +29,7 @@ views: 0
 read_time: 15
 reading_time: 15
 created_at: 2026-08-31
-updated_at: "2026-08-31T09:00:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: Are BetterTTV emotes safe to use, or can they contain malicious content?
     answer: "Emotes are images served from BetterTTV's own CDN, and the extension renders them as images rather than executing anything from them. In practical terms the risk is closer to 'someone posted a gross picture' than 'someone ran code on my machine.' BetterTTV does moderate its global set and has an approval process for channel emotes, but channel-level sets are configured by streamers and moderators, so content quality varies by community. If you want to avoid unexpected imagery entirely, disable channel emotes in the settings panel and keep only the global set. I never encountered anything that looked like an exploit attempt in two weeks of heavy use."
@@ -45,6 +45,7 @@ faq:
     answer: "Go to `chrome://extensions`, find BetterTTV, and click **Remove**, then confirm. Refresh any open Twitch or YouTube tab and the pages return to stock behavior immediately. Settings you configured were stored in the extension's local storage and go away with it, so if you plan to reinstall and want to keep your configuration, sign in to BetterTTV first so settings sync server-side. I checked for leftover artifacts after removal and found nothing that persisted past a refresh."
 featured_image: /content/images/betterttv-google-chrome-guide/featured.webp
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 I have been running BetterTTV on the same Chrome profile since 2019, and every time Chrome pushes a major update I end up re-checking whether the extension still behaves. This year I did something more deliberate: I set up a clean Chrome profile on my Linux desktop, installed BetterTTV alone, and used it as my only chat extension for two weeks across roughly 40 hours of Twitch viewing and a handful of YouTube live streams. I logged what broke, what I had to turn off, and where memory went.
 

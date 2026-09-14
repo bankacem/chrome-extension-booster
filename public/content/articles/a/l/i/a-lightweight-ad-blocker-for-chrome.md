@@ -43,7 +43,7 @@ A **lightweight ad blocker Chrome** extension works by filtering out unwanted ad
 
 Using a **lightweight ad blocker Chrome** extension offers numerous benefits, including:
 
-- Improved browsing experience: By blocking unwanted ads and popups, a lightweight ad blocker helps to create a more enjoyable and [distraction](/blog/block-popups-on-chrome-mobile-guide)-free browsing experience.
+- Improved browsing experience: By blocking unwanted ads and popups, a lightweight ad blocker helps to create a more enjoyable and [distraction](/blog/discover-the-best-popup-blocker-for-android)-free browsing experience.
 - Increased security: By blocking malicious ads and popups, a lightweight ad blocker helps to reduce the risk of malware and other online threats.
 - Enhanced performance: Unlike traditional ad blockers, lightweight ad blockers use minimal system resources, ensuring that your device's performance is not compromised.
 - [Customization](/blog/google-chrome-programm-en-14): Many **lightweight ad blocker Chrome** extensions offer customization options, allowing you to tailor the blocking experience to your specific needs.

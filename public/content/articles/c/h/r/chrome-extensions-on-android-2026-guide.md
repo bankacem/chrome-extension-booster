@@ -29,8 +29,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 13
 created_at: '2026-01-27T13:17:06.832069+00:00'
-updated_at: '2026-09-06T09:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Product Review | **Updated:** 2026
+
 Here is the problem: Google Chrome on Android does not support Chrome extensions. Zero. The Chrome Web Store on mobile only lists apps, not extensions, unlike the [full desktop experience](/blog/chrome-web-store-guide). If you want ad blockers, password managers that autofill, screenshot tools that capture full pages, or dark mode on your phone, you cannot use Chrome for Android. You need a different browser.
 
 I spent a week testing three Android browsers that claim to run Chrome extensions: Kiwi Browser, Yandex Browser, and Lemur Browser. I installed the same 10 Chrome extensions on each — Quick Screenshot Lite, Light Popup Blocker, Redirect Shield, ProTab Suspender, Offline Reader Pro, SecuraKey Pro, Glasp, DarkFlow, uBlock Origin, and a WebRTC control extension. I tested compatibility, performance, memory usage across 10 tabs, and stability over extended browsing sessions. Here is exactly what works and what does not.

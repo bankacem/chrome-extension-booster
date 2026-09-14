@@ -20,7 +20,7 @@ keywords:
   - Chrome extension Omnibox API
 author: Miccart Phen
 published_at: 2026-08-22
-updated_at: 2026-08-22
+updated_at: '2026-09-14T12:00:00.000+00:00'
 read_time: 8
 faq:
   - question: "What is the Chrome Omnibox?"
@@ -46,7 +46,7 @@ howto:
     - name: "Test and maintain the shortcut"
       text: "Confirm that the result opens on the intended site, then deactivate or delete the shortcut if you no longer trust or use it."
 ---
-
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 Chrome’s **Omnibox** is the name Chrome uses for its address bar. It is more than a URL field: it can search the web, open a known address, surface bookmarks and history, and route a query to a selected site. Chrome also lets extensions register their own keyword so a user can hand a query to that extension instead of sending it to the default search engine.[1] [2]
 

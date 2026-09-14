@@ -27,7 +27,7 @@ IDM, or Internet Download Manager, is a popular download management tool designe
 
 ## IDM Extension for Chrome Android
 
-Although there is no official IDM extension for Chrome Android, some third-party developers have created [alternative](/blog/an-open-source-alternative-to-ghostery) download management tools. These tools may not offer the same features as the desktop version of IDM, but they can still provide efficient download management on Android devices. When searching for an IDM extension for Chrome Android, users should be cautious of fake or malicious extensions that may compromise device security.
+Although there is no official IDM extension for Chrome Android, some third-party developers have created [alternative](/blog/a-ghostery-alternative-worth-considering) download management tools. These tools may not offer the same features as the desktop version of IDM, but they can still provide efficient download management on Android devices. When searching for an IDM extension for Chrome Android, users should be cautious of fake or malicious extensions that may compromise device security.
 
 ## Alternatives to IDM Extensions
 

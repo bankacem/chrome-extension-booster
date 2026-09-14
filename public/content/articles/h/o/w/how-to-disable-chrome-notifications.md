@@ -23,13 +23,15 @@ keywords:
 author: Admin
 published_at: 2026-08-17T00:00:00.000Z
 read_time: 6
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 There are actually two different problems hiding behind "disable Chrome notifications." One is stopping the popup that asks "Allow notifications?" when you visit a new site. The other is turning off notifications from sites you've already said yes to, sometimes without remembering which ones. This guide is about the second problem — managing and disabling notifications you've already granted, plus the settings layers most guides skip entirely: what happens at the operating-system level, and how this works differently on Chrome for Android.
 
 ## Blocking the Permission Prompt vs. Disabling Active Notifications
 
-If a site is currently asking you "Allow notifications?" and you just want that popup gone, [that's a permission-prompt problem covered separately](/blog/block-newsletter-popups-and-allow-notifications-prompts-5) — Chrome's site settings let you block prompts globally or per-site before you ever say yes.
+If a site is currently asking you "Allow notifications?" and you just want that popup gone, [that's a permission-prompt problem covered separately](/blog/pop-up-blocker-for-chrome-partial) — Chrome's site settings let you block prompts globally or per-site before you ever say yes.
 
 If sites are already sending you notifications and you want to turn them off, that's a different, more common scenario covered in this guide: reviewing what you've already approved and disabling it, rather than preventing future prompts.
 
@@ -108,3 +110,5 @@ A: The settings path is different (Chrome app → Settings → Notifications, wh
 ## Conclusion
 
 If notification prompts are the annoyance, the global toggle handles that in one step. If specific sites are already sending you notifications you don't want, the Allowed list under site settings is where to actually clean that up — and if you've done that and still see something, the operating system's own notification settings for Chrome are the next place to check before assuming Chrome's setting didn't work.
+
+Related reading: [A Chrome Extension for Google Chat Notifications](/blog/unlocking-the-power-of-google-chat-extension) · [How to Manage Chrome Extensions: Organize, Disable, and Clean Up in 2026](/blog/how-to-manage-chrome-extensions-organize-disable-clean-up)

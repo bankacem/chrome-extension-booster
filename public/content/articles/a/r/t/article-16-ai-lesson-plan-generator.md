@@ -11,9 +11,9 @@ title: >-
 meta_description: "Discover the best AI lesson plan generator Chrome extensions for 2026. Learn how to create engaging, standards-aligned lesson plans in minutes instead of."
 description: "Discover the best AI lesson plan generator Chrome extensions for 2026. Learn how to create engaging, standards-aligned lesson plans in minutes instead of."
 category: "Chrome Extensions"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
-
-
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## Table of Contents
 
@@ -501,3 +501,5 @@ Or upgrade to Pro for unlimited plans, advanced differentiation, and team collab
 - [Common Core State Standards](http://www.corestandards.org/)
 - [Next Generation Science Standards](https://www.nextgenscience.org/)
 - [National Education Association](https://www.nea.org/)
+
+Related reading: [AI Headline Generator Chrome Extension: The Ultimate Guide for 2026](/blog/article-7-ai-headline-generator) · [AI Code Explanation Chrome Extension: The Ultimate Guide for Developers in 2026](/blog/article-3-ai-code-explanation)

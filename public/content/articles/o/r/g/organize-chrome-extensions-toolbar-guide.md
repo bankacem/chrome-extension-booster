@@ -29,7 +29,7 @@ views: 0
 read_time: 16
 reading_time: 16
 created_at: 2026-08-31
-updated_at: "2026-08-31T18:00:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: How do I pin an extension in Chrome?
     answer: "Click the puzzle piece icon to the right of the address bar. Chrome shows a dropdown listing your installed extensions, each with a pin icon on the right side of its row. Click that pin icon and the extension's icon appears immediately on the toolbar. Clicking it again unpins it and sends it back to the overflow menu. If you don't see the puzzle icon at all, check that you actually have extensions installed at `chrome://extensions`, because Chrome hides the puzzle piece on profiles with none."
@@ -45,6 +45,7 @@ faq:
     answer: "There's no magic number, but I'd treat anything above ten as worth questioning. Going from 19 to 9 on my main profile noticeably reduced memory pressure during heavy tab sessions and made cold starts feel quicker, and that's before considering that each extension is code with access to your browsing. The practical test is whether you can name what each extension does and when you last used it. Extensions you installed to solve a one-time problem, plus duplicates from comparison shopping, are where most of the bloat hides. Disable rather than remove if you're unsure, then revisit in a week."
 featured_image: /content/images/organize-chrome-extensions-toolbar-guide/featured.webp
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 I run a browser that got out of hand. At one point last year I had 19 extensions installed on my main Chrome profile, and the toolbar looked like a slot machine: a row of tiny icons I couldn't identify, three of which I'm fairly sure I never clicked once. Every new install pinned itself, pushed the address bar shorter, and made the whole top of the window feel noisy. So I spent a weekend actually testing every organizing option Chrome offers in 2026, on that same messy profile, on both a Windows 11 laptop and a Mac mini.
 

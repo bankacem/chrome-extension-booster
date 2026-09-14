@@ -25,9 +25,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 11
 created_at: '2026-09-02T09:00:00.000+00:00'
-updated_at: '2026-09-02T09:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "We ran identical sessions in both browsers on the same rig: Chrome wins at idle and on web apps, Firefox sheds more memory with many tabs open."
 ---
+> 📌 **Article Type:** Product Review | **Updated:** 2026
 
 There is no universal winner in the Firefox vs Chrome memory contest — our 2026 measurements put Chrome ahead at idle and on web-app-heavy sessions, and Firefox ahead on many-tab reading sessions, with the deciding factor being how each browser handles memory you are not currently using. Chrome's Memory Saver proactively discards inactive tabs; Firefox's tab unloading holds everything until your system actually runs short, then sheds aggressively. Whether that difference matters to you depends almost entirely on your workload, so we ran identical sessions in both browsers on identical hardware, and the full numbers, methodology, and verdicts are below.
 

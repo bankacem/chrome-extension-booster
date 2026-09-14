@@ -25,9 +25,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 11
 created_at: '2026-08-31T18:00:00.000+00:00'
-updated_at: '2026-08-31T18:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Notification ads on Chrome Android come from three sources. Fix site permissions, remove adware apps, and run Play Protect — total time about 15 minutes."
 ---
+> 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 
 Notification ads on Chrome Android come from exactly three sources — a website you gave permission to send notifications, a low-quality Android app pushing ads through the system, or lock-screen adware — and each has a different fix. The fastest path: open `chrome://settings/content/notifications` in Chrome, revoke every site you do not recognize, then audit your installed apps and run a Google Play Protect scan. Total time is about 15 minutes, and no antivirus app is needed. This guide covers all three sources, the exact settings paths on Android, and the habits that keep the spam from coming back. One clarification up front: if your problem is pages that suddenly navigate you to a spam site, that is a different beast — we treat it separately in our guide to [stopping redirect ads on Chrome mobile](/blog/stop-redirect-ads-chrome-mobile).
 

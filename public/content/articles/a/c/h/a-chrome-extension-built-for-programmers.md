@@ -40,7 +40,7 @@ Now that we've explored the key features to consider, let's take a look at some 
 Here are some of the top Chrome extensions for programmers:
 
 1. [Quick Screenshot Lite](/extension/quick-screenshot-lite): Capture full-page or visible area screenshots instantly and enhance your debugging process.
-2. [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher): [Automatically](/blog/stop-video-popups-from-playing-automatically-3) switch between dark and light modes to reduce eye strain and improve your coding experience.
+2. [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher): [Automatically](/blog/pop-up-blocker-for-chrome-partial) switch between dark and light modes to reduce eye strain and improve your coding experience.
 3. [ProTab Suspender](/extension/protab-suspender): Automatically suspend inactive tabs to save memory and boost your system's performance.
 4. [Light Popup Blocker](/extension/light-popup-blocker): Block annoying popups and intrusive ads to minimize distractions and stay focused on your code.
 5. [Offline Reader Pro](/extension/offline-reader-pro): Save web pages for offline reading and access your favorite resources even without an internet connection.

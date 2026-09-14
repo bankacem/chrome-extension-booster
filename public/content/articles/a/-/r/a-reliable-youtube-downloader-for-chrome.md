@@ -69,7 +69,7 @@ Additionally, you can explore other extensions that can help you manage your You
 | Extension | Features | Compatibility | Ratings |
 | --- | --- | --- | --- |
 | Quick Screenshot Lite | Capture screenshots of YouTube videos | Chrome, Firefox | 4.5/5 |
-| Auto Dark Mode Switcher | [Automatically](/blog/stop-video-popups-from-playing-automatically-3 "Stop Video Popups from Playing Automatically: A Comprehensive Guide") switch between dark and light modes | Chrome, Firefox | 4.5/5 |
+| Auto Dark Mode Switcher | [Automatically](/blog/pop-up-blocker-for-chrome-partial "Stop Video Popups from Playing Automatically: A Comprehensive Guide") switch between dark and light modes | Chrome, Firefox | 4.5/5 |
 | Redirect Shield | Protect from malicious redirects | Chrome, Firefox | 4.5/5 |
 | ProTab Suspender | Manage tabs and reduce memory usage | Chrome, Firefox | 4.5/5 |
 

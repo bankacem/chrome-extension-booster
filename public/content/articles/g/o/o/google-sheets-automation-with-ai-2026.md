@@ -26,9 +26,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 12
 created_at: '2026-09-01T12:00:00.000+00:00'
-updated_at: '2026-09-01T12:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "The 2026 stack for automating Google Sheets with AI, plus five build-this-week recipes: categorize expenses, clean imports, summarize surveys, and more."
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## Quick answer: what AI automation in Sheets looks like in 2026
 

@@ -28,7 +28,7 @@ views: 0
 read_time: 15
 reading_time: 15
 created_at: 2026-08-31
-updated_at: "2026-08-31T18:00:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: What is the best free note-taking extension?
     answer: "The Google Keep extension is the one I would install first if cost matters, because everything meaningful about it is free with a normal Google account and there is no upsell wall in the middle of the capture flow. Free tiers on the clipper and highlighter tools were usable but capped, typically on number of documents, colors, or exports per month. Sticky-note extensions are also free and genuinely unlimited, but you are trading sync and durability for that. My honest ranking for free use is Keep first, Chrome's built-in Reading List second, and a highlighter third if your work is reading-heavy."
@@ -44,6 +44,7 @@ faq:
     answer: "Keep wins on speed, reliability, and zero setup, and it loses badly on structure. If your notes are short and you mostly need them findable later, Keep alone is enough and I would not push you off it. If you write anything with sections, quotes, and citations, Keep becomes a bottleneck within a week and a dedicated tool earns its place. What I actually ended up with is both: Keep as the fast inbox, a structured tool as the place where thinking happens."
 featured_image: /content/images/best-note-taking-chrome-extensions-2026/featured.webp
 ---
+> 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
 
 I have been running the same research workflow for years: twenty tabs open, a half-finished outline in one window, and a scattered trail of notes across whatever app happened to be nearest. Over the past two weeks I rebuilt that workflow from scratch and ran six different note-taking extensions through it on a mid-range Windows laptop and a 2021 MacBook Air, using real work: a market research write-up, two long technical docs, and a pile of academic PDFs.
 
@@ -160,7 +161,7 @@ On privacy, the honest summary is that any extension capable of clipping a page 
 
 #### The export test that eliminated two candidates
 
-For each extension I saved the same three notes, exported, and opened the result in a plain editor. Clean markdown means readable headings, real list syntax, and links in bracket-parenthesis form, matching standard syntax. Two tools produced that. Two produced HTML dumps with inline styling. One produced a proprietary JSON file. One had no export at all. If you expect to still be using these notes in three years, that test matters more than any interface polish, and it is the reason I keep at least one markdown-native tool in every stack I build, including [the full academic extension stack](/blog/pro-student-chrome-extensions-the-ultimate-academic-stack).
+For each extension I saved the same three notes, exported, and opened the result in a plain editor. Clean markdown means readable headings, real list syntax, and links in bracket-parenthesis form, matching standard syntax. Two tools produced that. Two produced HTML dumps with inline styling. One produced a proprietary JSON file. One had no export at all. If you expect to still be using these notes in three years, that test matters more than any interface polish, and it is the reason I keep at least one markdown-native tool in every stack I build, including [the full academic extension stack](/blog/chrome-extensions-for-student-productivity).
 
 ## Six note-taking extensions after two weeks of real research notes
 

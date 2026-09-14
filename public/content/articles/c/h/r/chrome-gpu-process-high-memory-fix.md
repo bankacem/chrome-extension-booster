@@ -25,9 +25,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 11
 created_at: '2026-09-01T18:00:00.000+00:00'
-updated_at: '2026-09-01T18:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "GPU process memory past 1 GB during ordinary browsing means stale drivers, a canvas-heavy extension, or a WebGL leak — seven fixes, ordered from quick wins to resets."
 ---
+> 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 
 Chrome's GPU process handles compositing, video decoding, and WebGL for the entire browser, and 150–400 MB is a healthy range during mixed browsing — up to 800 MB while playing 4K video or running a WebGL game. When it holds a gigabyte or more during ordinary reading and shopping, something specific is wrong, and it is almost always one of four things: stale or buggy GPU drivers, a hardware-acceleration fallback loop, an extension feeding bitmaps to the compositor, or a WebGL page leaking textures. All four are fixable, usually in under half an hour, and the seven fixes below are ordered from the two-minute checks to the last-resort resets so you can stop at the first one that works.
 
@@ -101,7 +102,7 @@ One experiment remains for stubborn cases, and exactly one. `chrome://flags/#ena
 
 ### When to reset Chrome
 
-If the GPU process grows across every profile, every site, and every state, with no video or WebGL anywhere in the session, the browser state itself is the suspect. Test a fresh profile for a day; if it stays lean, migrate your bookmarks and passwords, and retire the old one. Settings → "Reset settings to their original defaults" is the next step, and a clean reinstall the last one — in that order, because each wipes progressively more of the state you have customized. The full structural walkthrough lives in our [complete guide to Chrome high memory usage](/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide).
+If the GPU process grows across every profile, every site, and every state, with no video or WebGL anywhere in the session, the browser state itself is the suspect. Test a fresh profile for a day; if it stays lean, migrate your bookmarks and passwords, and retire the old one. Settings → "Reset settings to their original defaults" is the next step, and a clean reinstall the last one — in that order, because each wipes progressively more of the state you have customized. The full structural walkthrough lives in our [complete guide to Chrome high memory usage](/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide).
 
 ### When it's the hardware, not Chrome
 

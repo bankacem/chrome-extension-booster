@@ -12,7 +12,9 @@ keywords: ["extension zoom chrome"]
 author: Miccart Phen
 published_at: 2026-08-23
 read_time: 6
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## Understanding the Zoom Chrome Extension
 

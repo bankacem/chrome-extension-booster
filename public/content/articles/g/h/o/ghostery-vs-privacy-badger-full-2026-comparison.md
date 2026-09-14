@@ -69,7 +69,7 @@ The user interface and experience of both extensions differ significantly. Ghost
 
 ## Other Browser Extensions for Enhanced Privacy
 
-In addition to Ghostery and Privacy Badger, there are other browser extensions that can enhance your online privacy. Our [Quick Screenshot Lite](/extension/quick-screenshot-lite) extension, for example, allows you to capture screenshots of web pages without compromising your privacy. You can also use our [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) extension to [automatically](/blog/stop-video-popups-from-playing-automatically-3 "Stop Video Popups from Playing Automatically: A Comprehensive Guide") switch between dark and light modes, reducing eye strain and improving your overall browsing experience.
+In addition to Ghostery and Privacy Badger, there are other browser extensions that can enhance your online privacy. Our [Quick Screenshot Lite](/extension/quick-screenshot-lite) extension, for example, allows you to capture screenshots of web pages without compromising your privacy. You can also use our [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) extension to [automatically](/blog/pop-up-blocker-for-chrome-partial "Stop Video Popups from Playing Automatically: A Comprehensive Guide") switch between dark and light modes, reducing eye strain and improving your overall browsing experience.
 
 ## Conclusion
 

@@ -29,7 +29,7 @@ views: 0
 read_time: 16
 reading_time: 16
 created_at: 2026-08-31
-updated_at: "2026-08-31T09:00:00.000+00:00"
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: Is Agenda Hero free, or do I need to pay?
     answer: "There was a usable free tier during my testing, and the paid upgrade centered on higher usage limits and additional capabilities rather than unlocking basic event creation. I want to be careful here because pricing in this category changes often, and quoting a number that's stale by the time you read this helps nobody. Check the official site for current tiers before you plan around it. My practical advice: run the free tier for a week on real email, count how many captures you actually make, and only then decide whether the paid limits are relevant to you. Most people I've talked to about this capture fewer events per week than they assume."
@@ -45,6 +45,7 @@ faq:
     answer: "Often not without help. On the two managed profiles I tried, extension installation was governed by admin policy, and one blocked installation entirely while the other permitted install but restricted the Google account consent step. Neither is something you can work around from the user side, and you shouldn't try. The realistic path is asking your IT or workspace admin to allowlist the extension, and that request goes better if you bring the store listing, the permissions it requests, and a specific reason you need it. If the answer is no, use it on a personal profile for personal events and keep manual entry for work."
 featured_image: /content/images/agenda-hero-chrome-extension-guide/featured.webp
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 I keep a second Chrome profile that exists only for testing scheduling tools, and it currently holds a graveyard of extensions that promised to turn messy text into clean calendar events. Most of them ask you to highlight text, then hand you a form that's almost as slow to fill out as the Google Calendar form you were trying to avoid. Agenda Hero showed up in that profile about three weeks ago, and it's one of the few I left installed on my main profile afterward.
 

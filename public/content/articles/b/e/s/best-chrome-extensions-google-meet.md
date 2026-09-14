@@ -23,8 +23,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 8
 created_at: '2026-01-29T16:54:42.159889+00:00'
-updated_at: '2026-05-03T22:15:00.607371+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+> 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
+
 I tested 15 Chrome extensions designed for Google Meet across two weeks of real work meetings — 30 calls total, ranging from quick 15-minute 1-on-1 chats to 50-person company all-hands presentations. My testing criteria covered four areas: audio and video quality improvement (recording, noise suppression, grid view), meeting productivity features (transcription, scheduling, note-taking), reliability across consecutive calls, and memory impact on my 8GB RAM laptop. Here is exactly which extensions improved my meetings and which ones caused more issues than they solved.
 
 ## Why Google Meet Needs Extensions

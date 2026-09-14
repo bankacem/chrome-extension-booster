@@ -83,7 +83,7 @@ Google has significantly improved its native performance tools.
 Don't use your OS Task Manager to monitor Chrome; use Chrome's internal one (Shift + Esc).
 - **Identifying Memory Leaks: ** Look for processes where "Memory footprint" keeps growing indefinitely.
 - **GPU Process: ** Often the culprit for lag during video playback.
-- **Satellite Guide: ** For a step-by-step walkthrough, see our [Guide to Monitoring Chrome RAM Usage](/blog/monitor-chrome-ram-usage-guide).
+- **Satellite Guide: ** For a step-by-step walkthrough, see our [Guide to Monitoring Chrome RAM Usage](/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide).
 
 <h2 id="advanced-optimization">5. Advanced Optimization Techniques (No Extensions)</h2>
 
@@ -99,7 +99,7 @@ Sometimes native tools aren't enough. We've reviewed the [10 Best RAM Saving Ext
 
 <h2 id="troubleshooting">7. Troubleshooting 'Out of Memory' Errors</h2>
 
-"Aw Snap! Out of Memory" is a common frustration. We've compiled a [complete troubleshooting guide](/blog/fix-chrome-out-of-memory-errors) to help you: - Clear specific site caches.
+"Aw Snap! Out of Memory" is a common frustration. We've compiled a [complete troubleshooting guide](/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide) to help you: - Clear specific site caches.
 - Identify faulty extensions.
 - Adjust Windows/macOS page file settings.
 

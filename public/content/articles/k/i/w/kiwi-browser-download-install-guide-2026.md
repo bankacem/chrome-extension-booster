@@ -18,7 +18,7 @@ keywords:
   - "install kiwi browser android"
   - "kiwi browser chrome extensions"
   - "kiwi browser alternatives 2026"
-meta_description: "Where to safely download Kiwi Browser in 2026 (GitHub only), step-by-step install, importing Chrome data, installing extensions, safety after archival, and the best alternatives."
+meta_description: "Kiwi Browser Download & Install Guide (2026): Safe Sources, Setup, Extensions — Kiwi Browser was archived in January 2025 and pulled from the Play Store, so..."
 status: published
 published_at: '2026-09-07T11:00:00.000+00:00'
 scheduled_at: '2026-09-07T11:00:00.000+00:00'
@@ -27,9 +27,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 12
 created_at: '2026-09-07T11:00:00.000+00:00'
-updated_at: '2026-09-07T11:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Where to safely download Kiwi Browser in 2026 (GitHub only), step-by-step install, importing Chrome data, installing extensions, safety after archival, and the best alternatives."
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 Here is the situation in one paragraph before you download anything: Kiwi Browser — the Android browser that made desktop Chrome extensions work on phones — was officially archived by its developer in January 2025. It has been removed from the Google Play Store, it no longer receives updates, and the only legitimate place to download it today is the project's official GitHub repository, [kiwibrowser/src.next](https://github.com/kiwibrowser/src.next). The browser itself still installs and runs fine on Android 10+ devices, and its signature feature — loading real extensions from the Chrome Web Store — still works, which is exactly why people keep searching for the download. But "still works" and "still safe" are different questions in 2026, because an archived Chromium fork stops receiving the security patches that Chrome gets monthly. This guide gives you the safe download path, the step-by-step install, the first-run setup, the extension workflow, an honest safety assessment, and the best-maintained alternatives — so you can make the trade-off deliberately instead of accidentally. For the full verdict on the browser after the archive, our [Kiwi Browser 2026 review](/blog/kiwi-browser-review-2026) goes deeper than this install guide needs to.
 

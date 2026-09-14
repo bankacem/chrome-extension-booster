@@ -22,7 +22,7 @@ created_at: '2026-01-20T22:00:43.428913+00:00'
 updated_at: '2026-03-16T14:43:27.971344+00:00'
 description: "Are you tired of annoying video popups that play automatically on websites, disrupting your browsing experience? You're not alone."
 ---
-## Stop Video Popups from Playing [Automatically](/blog/prevent-websites-from-opening-new-tabs-automatically-2 "Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide"): A [Comprehensive](/blog/ublock-origin-vs-ghostery-for-chrome-android "uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison") Guide
+## Stop Video Popups from Playing [Automatically](/blog/prevent-websites-from-opening-new-tabs-automatically-2 "Prevent Websites from Opening New Tabs Automatically: A Comprehensive Guide"): A [Comprehensive](/blog/ghostery-vs-ublock-origin-2026 "uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison") Guide
 
 Are you tired of annoying video popups that play automatically on websites, disrupting your browsing experience? You're not alone. Many internet users face this issue, and it can be frustrating, especially when you're trying to focus on reading or working online. In this article, we'll show you how to **stop video popups from playing automatically** and provide you with some valuable tips and tools to enhance your browsing experience.
 
@@ -71,7 +71,7 @@ In addition to these extensions, you can also use other Chrome extensions, such 
 In addition to **stopping video popups from playing automatically**, there are several other tips that can help enhance your browsing experience, including:
 
 - **Using a browser with built-in ad blocking**: Some browsers, such as Brave, come with built-in ad blocking, which can help reduce the number of video popups you see.
-- **Disabling [notifications](/blog/block-newsletter-popups-and-allow-notifications-prompts-5 "Block Newsletter Popups and ")**: Many websites ask for permission to send notifications, which can be distracting. Disabling notifications can help reduce the number of distractions you face while browsing.
+- **Disabling [notifications](/blog/pop-up-blocker-for-chrome-partial "Block Newsletter Popups and ")**: Many websites ask for permission to send notifications, which can be distracting. Disabling notifications can help reduce the number of distractions you face while browsing.
 - **Using a website's reader mode**: Some websites have a reader mode that allows you to view the content without distractions, including video popups.
 
 ## Comparison Table

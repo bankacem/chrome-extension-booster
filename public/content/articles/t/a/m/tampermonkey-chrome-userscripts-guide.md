@@ -20,8 +20,9 @@ keywords:
 author: Miccart Phen
 published_at: 2026-08-22
 read_time: 8
+updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
-
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 Tampermonkey is a userscript manager for Chrome. It lets you run small JavaScript programs that change a page or add a narrowly defined feature, but it also places executable code between you and the websites you visit. The useful question is therefore not simply “How do I install Tampermonkey?” It is “Which script should run, on which pages, with which permissions, and how can I turn it off?”
 
@@ -158,3 +159,5 @@ Before you leave Tampermonkey running, confirm four things: the extension came f
 - [Tampermonkey official home and feature overview](https://www.tampermonkey.net/)
 - [Tampermonkey FAQ: permission to execute userscripts](https://www.tampermonkey.net/faq.php?locale=en&q=Q209)
 - [Tampermonkey listing in the Chrome Web Store](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
+
+Related reading: [Zoom Chrome Extension: What It Does, How to Set It Up, and What It Is Not](/blog/zoom-chrome-extension-guide) · [Why is Chrome using so much memory? (2026 Fixes)](/blog/why-is-chrome-using-so-much-memory-2026-fixes)

@@ -29,7 +29,7 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 11
 created_at: '2026-01-19T13:57:10.646388+00:00'
-updated_at: '2026-04-23T12:29:11.119822+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 faq:
   - question: How do I upgrade a free Chrome extension to pro?
     answer: >-
@@ -85,6 +85,7 @@ howto:
         On chrome://extensions, enable Developer mode and click the Update button
         to pull the latest code that recognizes your license.
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 <img src="/content/images/how-to-install-pro-chrome-extensions-the-definitive-guide/featured.webp" alt="How to Install Pro Chrome Extensions: The Definitive Guide" width="1200" height="630" loading="lazy" class="featured-image">
 

@@ -18,7 +18,7 @@ keywords:
   - "how do browser extensions work"
   - "extension vs add-on"
   - "are browser extensions safe"
-meta_description: "What is a browser extension? How extensions work, what permissions really mean, extension vs add-on vs plugin, and how to judge safety — the complete 2026 explainer."
+meta_description: "What Is a Browser Extension? The Complete 2026 Guide — A plain-English definition of browser extensions, how they work under the hood (manifests, permissions..."
 status: published
 published_at: '2026-09-07T09:00:00.000+00:00'
 scheduled_at: '2026-09-07T09:00:00.000+00:00'
@@ -27,9 +27,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 12
 created_at: '2026-09-07T09:00:00.000+00:00'
-updated_at: '2026-09-07T09:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "What is a browser extension? How extensions work, what permissions really mean, extension vs add-on vs plugin, and how to judge safety — the complete 2026 explainer."
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 A browser extension is a small software program that installs inside a web browser — Chrome, Firefox, Safari, Edge — and adds new features or changes how the browser behaves: blocking ads, managing passwords, taking screenshots, or reformatting pages you visit every day. Extensions are built with the same three technologies as ordinary websites (HTML, CSS, and JavaScript), packaged with a manifest file that tells the browser what they are allowed to touch, and distributed through official stores like the Chrome Web Store, Firefox Add-ons, and Apple's App Store. That last detail — a manifest declaring permissions, enforced by the browser — is what separates a legitimate extension from a random script, and it is the single most important concept to understand before you install anything. If you learn best by doing rather than reading, our [step-by-step tutorial on installing Chrome extensions](/blog/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial) will walk you through your first install in about two minutes. This guide explains what extensions actually are, what happens under the hood when one runs, how they differ from plugins and add-ons, and how to judge whether a given extension deserves a place in your browser.
 

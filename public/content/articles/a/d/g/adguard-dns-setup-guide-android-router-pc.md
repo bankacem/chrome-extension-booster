@@ -27,9 +27,10 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 12
 created_at: '2026-08-30T15:00:00.000+00:00'
-updated_at: '2026-08-30T15:00:00.000+00:00'
+updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Set up AdGuard DNS on Android, iPhone, router, and Windows PC in about 15 minutes — exact server addresses, verification steps, and the limits worth knowing."
 ---
+> 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 AdGuard DNS blocks ads and trackers for every device on your network by refusing to resolve known advertising domains — no app, no extension, and no per-device configuration required. Setup takes about 15 minutes in total: on Android you enter `dns.adguard-dns.com` into the Private DNS field, on iPhone you install a DNS profile or set two addresses per Wi-Fi network, on a router you swap two IP addresses in the admin panel, and on Windows you edit the DNS server assignment. This guide walks through each platform step by step, explains which of AdGuard's three servers to pick, and is honest about what DNS-level blocking cannot catch — including ads inside the YouTube app. If you are still deciding between DNS-level and browser-level blocking, our [guide to Chrome extensions on Android in 2026](/blog/chrome-extensions-on-android-2026-guide) covers the browser side in depth.
 
