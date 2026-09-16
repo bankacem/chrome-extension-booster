@@ -5,7 +5,7 @@ slug: chrome-extension-service-worker-guide
 status: draft
 excerpt: "MV3 service workers aren’t permanent. Learn why Chrome stops and restarts your background logic, how to design for cold starts, and how to debug user-visible failures."
 meta_description: "Diagnose why MV3 service workers stop and restart, and design background features that survive cold starts. Includes state, debugging, and troubleshooting tips."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-service-worker-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome Extensions"
@@ -28,6 +28,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 6
 ---
+
+<img src="/content/images/chrome-extension-service-worker-guide/featured.webp" alt="chrome-extension-service-worker-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Why MV3 background work “stops”
 
 In Manifest V3, the background context is a service worker that starts on demand and is terminated when idle. That’s intentional: Chrome wakes your worker to handle events, then lets it go. Assume it can restart at any time, and avoid depending on long-lived in-memory state. Register listeners up front and design handlers to finish quickly, persisting only what must survive.

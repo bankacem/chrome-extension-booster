@@ -5,7 +5,7 @@ slug: chrome-extension-content-scripts-guide
 status: draft
 excerpt: "Understand where Chrome extension content scripts execute, how isolated worlds work, what they can touch in the page, and when to inject them using match patterns or activeTab."
 meta_description: "Learn content-script scope in Chrome extensions: isolated worlds, DOM access, frames, run_at timing, match patterns, and activeTab. Includes troubleshooting and limitations."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-content-scripts-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome Extensions"
@@ -26,6 +26,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-extension-content-scripts-guide/featured.webp" alt="chrome-extension-content-scripts-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 If you’re building a Chrome extension that reads or modifies a webpage, content scripts are the code that touches the page. This guide explains their runtime behavior—where they execute, what they can access, how isolated worlds work, and when to inject. It also covers frames, match patterns, the activeTab permission, troubleshooting, and key limitations.
 
 ## Where content scripts run

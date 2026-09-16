@@ -5,7 +5,7 @@ slug: install-chrome-extension-linux-guide
 status: draft
 excerpt: "A Linux-focused guide to installing Chrome extensions the supported way from the Chrome Web Store, loading unpacked extensions for local testing, and understanding enterprise policy limits."
 meta_description: "Learn how to install Chrome extensions on Linux via the Chrome Web Store, safely load unpacked extensions for local testing, and understand enterprise policy limits."
-featured_image: /og-image.png
+featured_image: "/content/images/install-chrome-extension-linux-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Linux"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/install-chrome-extension-linux-guide/featured.webp" alt="install-chrome-extension-linux-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Installing Chrome extensions on Linux is straightforward when you stick to the official paths Google supports. This guide focuses on three legitimate scenarios: installing from the Chrome Web Store, loading an extension locally for testing, and using enterprise policies when your organization manages Chrome. Where relevant, claims are attributed to Google’s user support and developer documentation.
 
 ## What Google supports on Linux (and what it doesn’t)

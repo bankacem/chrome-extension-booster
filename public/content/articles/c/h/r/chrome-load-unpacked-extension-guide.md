@@ -5,7 +5,7 @@ slug: chrome-load-unpacked-extension-guide
 status: draft
 excerpt: "A focused, safety-first workflow to load, reload, and troubleshoot an unpacked Chrome extension with clear rules for when to refresh, inspect, or fully reload."
 meta_description: "Learn a safe, reproducible workflow for loading and testing an unpacked Chrome extension, including reload rules, error inspection, and key differences from store installs."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-load-unpacked-extension-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -25,6 +25,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-load-unpacked-extension-guide/featured.webp" alt="chrome-load-unpacked-extension-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 ## What “unpacked” means—and why it’s useful
 Loading an unpacked extension lets you run your extension directly from a local folder instead of a packaged .crx file. It’s the standard way to iterate quickly during development: make a change, reload, and test. Google’s official Hello World tutorial uses chrome://extensions, enables Developer mode, and relies on Load unpacked for this workflow, which is designed for local testing rather than distribution to others. See the tutorial for the baseline process and how to reload while you iterate.
 

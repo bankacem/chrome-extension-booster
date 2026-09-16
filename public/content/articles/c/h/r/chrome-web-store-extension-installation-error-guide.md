@@ -5,7 +5,7 @@ slug: chrome-web-store-extension-installation-error-guide
 status: draft
 excerpt: "A practical, safety-first flow to diagnose Chrome Web Store extension installation errors—without risky sideloading or untrusted downloads."
 meta_description: "Diagnose Chrome Web Store extension installation errors safely. Follow a step‑by‑step flow that separates browser, policy, compatibility, store, and network causes."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-web-store-extension-installation-error-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome Web Store"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/chrome-web-store-extension-installation-error-guide/featured.webp" alt="chrome-web-store-extension-installation-error-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 If clicking Add to Chrome leads to an error, a spinner that never completes, or a vague failure message, it can be hard to know what to fix first. This guide focuses on diagnosing the most common causes of installation failure—without downloading untrusted packages or bypassing safeguards. It separates browser state, extension compatibility, account or device management, Chrome Web Store availability, and network restrictions so you can rule them out in a safe order.
 
 ## Before you start: what “safe” means here

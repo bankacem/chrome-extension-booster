@@ -5,7 +5,7 @@ slug: chrome-extension-keyboard-shortcuts-guide
 status: draft
 excerpt: "A practical guide to configuring, testing, and troubleshooting Chrome extension keyboard shortcuts—plus how to avoid OS and browser conflicts across platforms."
 meta_description: "Learn how to set, test, and troubleshoot Chrome extension keyboard shortcuts, understand platform differences, and avoid conflicts using Chrome’s Shortcuts page."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-keyboard-shortcuts-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -24,6 +24,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 6
 ---
+
+<img src="/content/images/chrome-extension-keyboard-shortcuts-guide/featured.webp" alt="chrome-extension-keyboard-shortcuts-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Why keyboard shortcuts for extensions matter
 
 Extension shortcuts turn multi-step actions into a single press. Chrome exposes these through extension “commands”: developers define actions, and you can assign the keys. This guide shows how to set, test, and troubleshoot those shortcuts on desktop Chrome, and how to avoid common conflicts.

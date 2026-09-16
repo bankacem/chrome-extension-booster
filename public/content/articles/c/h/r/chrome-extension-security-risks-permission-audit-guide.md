@@ -4,7 +4,7 @@ id: "a1b2c3d4-sec-0002"
 title: "Chrome Extension Security Risks: A 10-Minute Permission Audit"
 slug: "chrome-extension-security-risks-permission-audit-guide"
 excerpt: "Learn how to spot Chrome extension security risks, interpret permissions, restrict site access, and remove extensions you cannot justify."
-featured_image: /content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp
+featured_image: "/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp"
 category: "Security & Privacy"
 tags: ["security", "privacy", "permissions", "audit", "chrome extensions"]
 keywords:
@@ -23,6 +23,8 @@ updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "A practical, source-backed guide to auditing Chrome extension permissions and reducing browser security risks."
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
+<img src="/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp" alt="chrome-extension-security-risks-permission-audit-guide" width="1200" height="630" loading="lazy" class="featured-image">
 
 # Chrome Extension Security Risks: A 10-Minute Permission Audit
 

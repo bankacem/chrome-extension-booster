@@ -5,7 +5,7 @@ slug: chrome-extension-options-page-guide
 status: draft
 excerpt: "Learn the two reliable ways to open an extension’s Options page, how it differs from the popup and Chrome’s site settings, and safe ways to reset extension-specific settings without guesswork."
 meta_description: "Find and use Chrome extension Options pages. Learn where to open them, how they differ from popups and Chrome site settings, plus safe ways to reset an extension’s preferences."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-options-page-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -22,6 +22,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/chrome-extension-options-page-guide/featured.webp" alt="chrome-extension-options-page-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 ## What an Options page is (and why it matters)
 An Options page is the settings interface an extension builds for itself. It’s authored and controlled by the extension, not by Chrome. Per Chrome’s developer documentation, extensions can register an Options page so users can view and change preferences in a dedicated page the developer maintains. Not every extension includes one, and designs vary because each developer decides what to expose.
 

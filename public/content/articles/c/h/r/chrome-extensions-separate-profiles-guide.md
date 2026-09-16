@@ -5,7 +5,7 @@ slug: chrome-extensions-separate-profiles-guide
 status: draft
 excerpt: "Design a Chrome profile architecture that cleanly separates work and personal extensions, accounts, and data—with step-by-step setup, risk boundaries, and a cleanup routine."
 meta_description: "Use Chrome profiles to separate extension sets, accounts, and data. A practical workflow with setup steps, risk boundaries, limitations, and troubleshooting."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extensions-separate-profiles-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome profiles"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 9
 ---
+
+<img src="/content/images/chrome-extensions-separate-profiles-guide/featured.webp" alt="chrome-extensions-separate-profiles-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 ## Why separate profiles are the backbone of extension hygiene
 If you bounce between work and personal tasks in the same Chrome window, your extensions, cookies, and accounts are likely mixed together. That blending can create friction (wrong account logins, noisy toolbars) and potential risk (extensions with broad permissions touching the wrong data). A more deliberate approach is to build a profile architecture: distinct Chrome profiles that each carry only the extensions and accounts they need.
 

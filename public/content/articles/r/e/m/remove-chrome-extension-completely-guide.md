@@ -5,7 +5,7 @@ slug: remove-chrome-extension-completely-guide
 status: draft
 excerpt: "A practical workflow to fully remove a Chrome extension, revoke remaining access, and verify it’s no longer active—without wiping unrelated browser data."
 meta_description: "A step-by-step workflow to completely remove a Chrome extension, revoke site and incognito access, and verify it’s no longer active—plus limitations and troubleshooting."
-featured_image: /og-image.png
+featured_image: "/content/images/remove-chrome-extension-completely-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/remove-chrome-extension-completely-guide/featured.webp" alt="remove-chrome-extension-completely-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Removing a Chrome extension is straightforward, but making sure it’s truly gone—and that it no longer has site or profile access—takes a few extra checks. This guide focuses on the complete removal workflow: preparing, uninstalling, revoking access, and verifying that the extension is no longer active in your browsing sessions.
 
 Note: This article builds on the official steps for uninstalling extensions and managing them in Chrome. It also adds verification practices and cautions so you don’t unintentionally remove unrelated data.

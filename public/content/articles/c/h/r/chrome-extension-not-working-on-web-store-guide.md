@@ -5,7 +5,7 @@ slug: chrome-extension-not-working-on-web-store-guide
 status: draft
 excerpt: "Seeing your extension “do nothing” on the Chrome Web Store is expected. Chrome disables extensions on store pages. Learn how to test correctly and avoid false troubleshooting."
 meta_description: "If a Chrome extension seems broken on the Chrome Web Store, it’s usually not. Chrome disables extensions on store pages. Learn how to test properly and troubleshoot safely."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-not-working-on-web-store-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome Web Store"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-extension-not-working-on-web-store-guide/featured.webp" alt="chrome-extension-not-working-on-web-store-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 ## The misconception: “My extension is broken on the Chrome Web Store”
 
 If you install a Chrome extension and immediately try it on its listing page, it may appear to do nothing—no popup, no context menu, no page interaction. That behavior often looks like a malfunction, but it’s typically expected. Chrome disables extensions on Chrome Web Store pages.

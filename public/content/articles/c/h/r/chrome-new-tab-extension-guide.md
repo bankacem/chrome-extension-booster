@@ -5,7 +5,7 @@ slug: chrome-new-tab-extension-guide
 status: draft
 excerpt: "Understand exactly what New Tab extensions change in Chrome, how they differ from your startup and homepage settings, and how to choose, control, or remove one safely—without losing your default page."
 meta_description: "A practical guide to Chrome New Tab extensions: what they change, how they differ from homepage/startup, how to choose one safely, and how to restore or remove it if needed."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-new-tab-extension-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -28,6 +28,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/chrome-new-tab-extension-guide/featured.webp" alt="chrome-new-tab-extension-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Why New Tab extensions feel so powerful is also why they deserve careful setup: they change the page you see countless times a day. This guide explains what a New Tab extension actually replaces, how it interacts with your homepage and startup settings, which permissions to look for before installing, and the precise steps to switch, remove, or reset—based on Chrome’s own guidance.
 
 ## New Tab vs. Homepage vs. Startup: What’s actually changing?

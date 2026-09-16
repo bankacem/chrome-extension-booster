@@ -5,7 +5,7 @@ slug: chrome-extension-notifications-not-working-guide
 status: draft
 excerpt: "If Chrome extension notifications aren’t showing, the real blocker is often a different layer: your operating system, Chrome’s notification setting, the site’s permission, the extension’s own permission, or a managed policy. Here’s how to isolate the right layer and fix it."
 meta_description: "Diagnose why Chrome extension notifications aren’t working by testing the correct layer: OS focus mode, Chrome settings, site permissions, extension permissions, or policies."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-notifications-not-working-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -24,6 +24,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/chrome-extension-notifications-not-working-guide/featured.webp" alt="chrome-extension-notifications-not-working-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 When Chrome extension notifications go silent, it’s tempting to toggle a site’s permission and hope for the best. But extensions, websites, Chrome, and your operating system each control a different piece of notification delivery. Misdiagnosing the layer can waste time and still leave you missing alerts.
 
 This guide focuses on one job: help you pinpoint which layer is blocking notifications, then apply the narrow fix. References to Chrome’s help content and extension APIs are included for clarity.

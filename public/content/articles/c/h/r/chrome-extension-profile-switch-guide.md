@@ -5,7 +5,7 @@ slug: chrome-extension-profile-switch-guide
 status: draft
 excerpt: "A practical profile-switch workflow to verify the right Google account, extensions, downloads, and tabs—so work and personal browsing don’t cross streams."
 meta_description: "Switch Chrome profiles safely with a pre-switch checklist that verifies account, extensions, downloads, and tabs—so work and personal stay separate."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-profile-switch-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome profiles"
@@ -26,6 +26,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/chrome-extension-profile-switch-guide/featured.webp" alt="chrome-extension-profile-switch-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Chrome makes it easy to keep work and personal browsing separate with profiles. But rapid context switching can still lead to accidental cross-over—opening the wrong account, saving files in the wrong folder, or running an extension you didn’t mean to. This guide focuses on a practical, repeatable checklist to verify your active profile, extensions, and account state before you continue work.
 
 ## What a Chrome profile switch actually changes

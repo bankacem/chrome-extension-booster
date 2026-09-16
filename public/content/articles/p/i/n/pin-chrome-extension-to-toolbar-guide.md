@@ -5,7 +5,7 @@ slug: pin-chrome-extension-to-toolbar-guide
 status: draft
 excerpt: "Installed an extension but don’t see its button? Learn the difference between installed, enabled, pinned, and site access states in Chrome, and follow clear steps to show or hide icons on your toolbar."
 meta_description: "Learn how to pin, unpin, and find hidden Chrome extension icons. Understand installed vs enabled vs pinned vs site-access states, with step-by-step guidance and troubleshooting."
-featured_image: /og-image.png
+featured_image: "/content/images/pin-chrome-extension-to-toolbar-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/pin-chrome-extension-to-toolbar-guide/featured.webp" alt="pin-chrome-extension-to-toolbar-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 If you’ve installed a Chrome extension and can’t see its button, you’re likely running into a visibility issue rather than an installation problem. Chrome separates a few concepts—installed, enabled, pinned, and allowed on site—that determine whether an icon appears next to the address bar and when it’s active. This guide focuses on how to show (pin), hide (unpin), and locate extension buttons in the toolbar, along with practical ways to manage site access so the button appears when you need it.
 
 ## What “pinned” really means (and how it differs from installed or enabled)

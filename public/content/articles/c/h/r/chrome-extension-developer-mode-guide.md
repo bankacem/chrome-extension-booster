@@ -5,7 +5,7 @@ slug: chrome-extension-developer-mode-guide
 status: draft
 excerpt: "Developer mode is a testing switch for Chrome extensions. Learn what it actually enables—local loading, reload, and packing—what it doesn’t do, and how to use it safely."
 meta_description: "Learn what Chrome’s Developer mode for extensions actually does—load unpacked, reload, pack—and its security and policy limits. Avoid common myths and risks."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-developer-mode-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -25,6 +25,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-extension-developer-mode-guide/featured.webp" alt="chrome-extension-developer-mode-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Understanding Developer mode for Chrome extensions helps you avoid risky misconceptions and use the feature for its intended purpose: local development and testing. This guide explains what the toggle exposes in chrome://extensions, how it relates to permission warnings and enterprise policies, and when you should or shouldn’t turn it on.
 
 ## What Developer mode actually is

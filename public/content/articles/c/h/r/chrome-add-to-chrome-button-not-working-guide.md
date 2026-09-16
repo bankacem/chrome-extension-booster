@@ -5,7 +5,7 @@ slug: chrome-add-to-chrome-button-not-working-guide
 status: draft
 excerpt: "Is the Chrome Web Store’s Add to Chrome button missing, greyed out, or unresponsive? Use this focused guide to check your browser context, device, and policies that commonly prevent the button from appearing or working."
 meta_description: "Troubleshoot a missing, disabled, or unresponsive Add to Chrome button in the Chrome Web Store with context-specific checks for desktop Chrome, profiles, and admin policies."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-add-to-chrome-button-not-working-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome Web Store"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/chrome-add-to-chrome-button-not-working-guide/featured.webp" alt="chrome-add-to-chrome-button-not-working-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 When the Chrome Web Store’s Add to Chrome button doesn’t appear, looks disabled, or doesn’t respond, installation stalls before it begins. This guide focuses specifically on that control and the browser context around it—rather than post-install errors—so you can quickly pinpoint what’s blocking the click.
 
 ## First, read the button state

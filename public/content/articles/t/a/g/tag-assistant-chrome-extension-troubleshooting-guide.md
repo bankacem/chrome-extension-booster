@@ -5,7 +5,7 @@ slug: tag-assistant-chrome-extension-troubleshooting-guide
 status: draft
 excerpt: "If Tag Assistant Companion won’t connect or shows no tags, follow this step-by-step guide to resolve missing tags, iframes, redirects, ad blockers, AMP, consent tools, and site access issues."
 meta_description: "Having trouble connecting Tag Assistant Companion? Fix Tag Assistant not working with steps for missing tags, iframes, redirects, ad blockers, AMP, consent tools, and site access."
-featured_image: /og-image.png
+featured_image: "/content/images/tag-assistant-chrome-extension-troubleshooting-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Google Tag Assistant"
@@ -24,6 +24,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/tag-assistant-chrome-extension-troubleshooting-guide/featured.webp" alt="tag-assistant-chrome-extension-troubleshooting-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 If Tag Assistant Companion opens but shows no tags or refuses to connect, you’re not alone. Connection failures often come down to how the page loads, whether the extension is allowed to access the site, or whether the tag actually fires. This guide walks you through reliable, source-backed checks to get a live debug session running.
 
 ## How Tag Assistant Companion connects

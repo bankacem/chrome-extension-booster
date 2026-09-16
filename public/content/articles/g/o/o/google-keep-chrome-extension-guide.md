@@ -5,7 +5,7 @@ slug: google-keep-chrome-extension-guide
 status: draft
 excerpt: "A practical, up-to-date guide to clipping web pages, selected text, and images to Google Keep with the Chrome extension—plus the important autosave change and workflow limits."
 meta_description: "Use the Google Keep Chrome extension to save pages, text, and images—plus key limits since Dec 2022, including no autosave in the pop‑up and web-only editing."
-featured_image: /og-image.png
+featured_image: "/content/images/google-keep-chrome-extension-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Google Keep"
@@ -25,6 +25,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 6
 ---
+
+<img src="/content/images/google-keep-chrome-extension-guide/featured.webp" alt="google-keep-chrome-extension-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 ## What this guide covers
 If you rely on Google Keep for quick capture, the Chrome extension is a fast way to save the current page, a highlighted quote, or an image into a note. This guide shows the most reliable capture methods and calls out an important change: notes created in the extension’s pop-up no longer save automatically, and editing now happens on the web at keep.google.com. These behaviors are reflected in Google’s current help content and product pages.
 

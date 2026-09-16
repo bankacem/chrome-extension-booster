@@ -5,7 +5,7 @@ slug: chrome-extension-data-privacy-check-guide
 status: draft
 excerpt: "Before you add a Chrome extension, compare what it can access (permissions) with what the developer says they collect and share (store privacy practices). This guide shows a practical, cautious way to review both—fast."
 meta_description: "A practical guide to check Chrome extension privacy before installing: read the store’s Privacy practices, review permissions, compare both, and understand limits."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-data-privacy-check-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome Web Store"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/chrome-extension-data-privacy-check-guide/featured.webp" alt="chrome-extension-data-privacy-check-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Extensions often request powerful capabilities, but capability is not the same as data handling. Chrome’s permission prompts describe what an extension can access; the Chrome Web Store’s Privacy practices section describes what the publisher says they collect, share, and how they secure data. Treat both as signals—not as guarantees—and compare them before clicking Add to Chrome.
 
 ## Permissions vs. Privacy Disclosures: What Each Tells You

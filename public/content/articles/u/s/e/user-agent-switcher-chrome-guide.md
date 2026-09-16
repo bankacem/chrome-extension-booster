@@ -5,7 +5,7 @@ slug: user-agent-switcher-chrome-guide
 status: draft
 excerpt: "A practical guide to using user-agent switching in Chrome for compatibility testing—what it changes, what it doesn’t, and how to avoid false positives."
 meta_description: "Learn how to use a User-Agent Switcher in Chrome for accurate compatibility testing. Understand request headers vs capabilities, cookies and caching effects, and how to verify results in DevTools."
-featured_image: /og-image.png
+featured_image: "/content/images/user-agent-switcher-chrome-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome"
@@ -24,6 +24,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/user-agent-switcher-chrome-guide/featured.webp" alt="user-agent-switcher-chrome-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 User-agent switching can be invaluable when you need to see how a site responds to different clients. But it’s also easy to misinterpret what you’re testing and why the page changed. This guide focuses on legitimate compatibility checks—server-side content negotiation, device-specific markup paths, and legacy fallbacks—and explains what a switcher actually changes, how to verify results in DevTools, and where the method falls short.
 
 According to the Chrome Web Store listing for Google’s User-Agent Switcher, the extension changes the User-Agent string sent to websites and lets you apply URL-based rules. The listing also cautions that switching does not improve privacy, can be detected by sites, may affect performance, and you may need to clear cookies when you revert. Those caveats shape how to test without drawing the wrong conclusions.

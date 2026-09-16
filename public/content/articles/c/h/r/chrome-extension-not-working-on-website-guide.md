@@ -5,7 +5,7 @@ slug: chrome-extension-not-working-on-website-guide
 status: draft
 excerpt: "If your Chrome extension works everywhere except one site, use this focused guide to verify site access, host permissions, match patterns, frames, and page restrictions—without risky workarounds."
 meta_description: "Extension fails on one site? Diagnose site access, match patterns, frames, and page restrictions with a careful, source-backed checklist for Chrome extensions."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-not-working-on-website-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -25,6 +25,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-extension-not-working-on-website-guide/featured.webp" alt="chrome-extension-not-working-on-website-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 When an extension works on most sites but fails on one, the cause is usually scope: where it’s allowed to run and how it injects code. This guide targets site-specific issues—site access settings, host permissions, match patterns, frames/iframes, and pages where Chrome blocks extensions—so you can fix the problem without unsafe workarounds.
 
 ## Quick decision guide: symptoms to first checks

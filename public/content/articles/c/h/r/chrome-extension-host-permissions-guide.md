@@ -5,7 +5,7 @@ slug: chrome-extension-host-permissions-guide
 status: draft
 excerpt: "Understand how Chrome extension host permissions really work: match patterns, the meaning of “read and change data,” content scripts vs. API permissions, and when to use activeTab or optional host access."
 meta_description: "Learn how Chrome extension host permissions, match patterns, and activeTab determine website access. Includes strategy choices, troubleshooting, and privacy notes."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-host-permissions-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -25,6 +25,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-extension-host-permissions-guide/featured.webp" alt="chrome-extension-host-permissions-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 If you’ve installed a Chrome extension and seen “read and change your data on …,” you’ve encountered host permissions. For developers, host permissions determine where an extension may run and what page content it can access. For privacy‑minded users and teams, the exact scope matters. This guide explains what host permissions cover, how match patterns set scope, how content scripts relate, and when the activeTab permission is a better fit.
 
 Note: This article focuses on host permissions and match patterns, not the entire permissions model or Incognito behavior. For broader build guidance, see our [Chrome extension development guide](/blog/chrome-extension-development-guide).

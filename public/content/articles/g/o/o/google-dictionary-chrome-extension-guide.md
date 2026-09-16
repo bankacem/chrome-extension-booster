@@ -5,7 +5,7 @@ slug: google-dictionary-chrome-extension-guide
 status: draft
 excerpt: "Install and use Google Dictionary (by Google) for instant in‑page definitions and optional lookup history. Learn setup, translations, limitations, and quick fixes when pop‑ups don’t appear."
 meta_description: "A practical guide to installing and using Google Dictionary (by Google) in Chrome—double‑click definitions, toolbar lookups, optional history, translations, and fixes for common issues."
-featured_image: /og-image.png
+featured_image: "/content/images/google-dictionary-chrome-extension-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Google Dictionary"
@@ -24,6 +24,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/google-dictionary-chrome-extension-guide/featured.webp" alt="google-dictionary-chrome-extension-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Google Dictionary (by Google) is a long-standing Chrome extension that brings quick, inline definitions to the pages you already read. This guide focuses on installing it correctly, using its double‑click and toolbar lookups, understanding its optional word history, and resolving common issues—especially the “nothing happens after install” problem that often confuses first‑time users.
 
 ## What the extension does, according to its listing

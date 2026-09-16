@@ -5,7 +5,7 @@ slug: chrome-extension-conflict-troubleshooting-guide
 status: draft
 excerpt: "A careful, reversible workflow to isolate which Chrome extension is breaking a page or feature—without nuking all your add-ons at once."
 meta_description: "Isolate a Chrome extension conflict with a reversible, half-split or recent-change workflow. Practical steps, limits, and fixes—without disabling everything at once."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-conflict-troubleshooting-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -22,6 +22,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-extension-conflict-troubleshooting-guide/featured.webp" alt="chrome-extension-conflict-troubleshooting-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 ## Why extension conflicts happen—and why evidence matters
 
 When two or more Chrome extensions try to change the same page, shortcut, or network request, they can step on each other’s toes. Symptoms vary: buttons disappear, pages won’t submit, PDFs won’t open, keyboard shortcuts trigger the wrong action, or a site loads inconsistently from one tab to the next.

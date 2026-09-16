@@ -42,9 +42,11 @@ faq:
     answer: "No. On an enrolled Chromebook, policy comes from the Google Admin console, and there is no local registry or profile you can edit. Powerwashing the device does not help because it re-enrolls and re-applies policy on setup. Your only real path is to ask your school or company IT team to remove the extension from your organizational unit. Attempting to bypass enrollment on a device you do not own typically violates acceptable-use policies."
   - question: Is it safe to delete registry policy keys?
     answer: "Deleting keys under SOFTWARE\\Policies\\Google\\Chrome is low risk because those keys only configure Chrome, not Windows itself. Export the key to a .reg backup first so you can restore it, and only delete entries inside the Chrome policy path rather than anything above it. On a personal machine this is a normal cleanup step. On a managed corporate machine, do not do it — Group Policy will overwrite your change and you may trip a compliance alert."
-featured_image: /content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp
+featured_image: "/content/images/remove-chrome-extension-installed-by-enterprise-policy/featured.webp"
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
+
+<img src="/content/images/remove-chrome-extension-installed-by-enterprise-policy/featured.webp" alt="remove-chrome-extension-installed-by-enterprise-policy" width="1200" height="630" loading="lazy" class="featured-image">
 
 You open **chrome://extensions**, find the extension you never installed, and reach for the Remove button — except it's greyed out. Instead there's a small grey badge: *Installed by enterprise policy*. Or worse, the toolbar now says **Managed by your organization** on a laptop no organization has ever touched.
 

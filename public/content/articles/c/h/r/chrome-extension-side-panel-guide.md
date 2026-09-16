@@ -5,7 +5,7 @@ slug: chrome-extension-side-panel-guide
 status: draft
 excerpt: "Understand how Chrome’s extension side panel behaves, what “tab-specific” vs “global” really means, when you can open it, and the practical limits that affect everyday use."
 meta_description: "Learn how Chrome’s extension side panel works (Chrome 114+, MV3), the difference between tab-specific and global panels, user-gesture limits, and practical usage tips."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-side-panel-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -25,6 +25,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-extension-side-panel-guide/featured.webp" alt="chrome-extension-side-panel-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 If you’ve installed recent productivity extensions, you may have noticed a panel that slides in from Chrome’s right edge. Chrome uses this space for built‑in tools (Bookmarks, Reading list, search). Extensions can also render UI there via the Side Panel API. This guide clarifies how the extension side panel works, the practical difference between “global” and “tab‑specific,” how and when it can open, and the limits that affect daily use.
 
 ## What the extension side panel is (and isn’t)

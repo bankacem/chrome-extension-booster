@@ -5,7 +5,7 @@ slug: session-buddy-chrome-extension-guide
 status: draft
 excerpt: "A practical guide to installing Session Buddy, saving and restoring sessions, testing crash recovery, and validating its local-first, no-login workflow."
 meta_description: "Install and evaluate Session Buddy for session saving, crash recovery, import/export, and local-first privacy. Step-by-step setup, limitations, troubleshooting, and FAQs."
-featured_image: /og-image.png
+featured_image: "/content/images/session-buddy-chrome-extension-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome"
@@ -24,6 +24,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/session-buddy-chrome-extension-guide/featured.webp" alt="session-buddy-chrome-extension-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 ## What Session Buddy does today
 
 According to the publisher’s website and Chrome Web Store listing, Session Buddy helps you save sets of open tabs (called “collections”), restore them later, search across saved items, recover after a browser crash, and import/export tab lists for backup or sharing. Publisher materials also state the extension stores data locally on your computer and does not require account sign‑in to function. See References for the official pages.

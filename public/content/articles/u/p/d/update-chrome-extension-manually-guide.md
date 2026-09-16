@@ -5,7 +5,7 @@ slug: update-chrome-extension-manually-guide
 status: draft
 excerpt: "A practical guide to trigger Chrome’s extension update check, confirm the installed version, understand why updates may appear delayed, and troubleshoot safely."
 meta_description: "Learn how to manually trigger Chrome extension updates, verify your installed version, understand delayed rollouts, and troubleshoot when the version doesn’t change."
-featured_image: /og-image.png
+featured_image: "/content/images/update-chrome-extension-manually-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -22,6 +22,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/update-chrome-extension-manually-guide/featured.webp" alt="update-chrome-extension-manually-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Keeping extensions current helps with security and reliability, but sometimes you want to nudge Chrome to check right now or confirm exactly which version is installed. This guide shows how to trigger a manual update check, verify the result, and understand why the version might not change immediately—even after you click Update.
 
 According to Chrome Help, extensions update automatically in the background. Developers package a new version, publish it to the Chrome Web Store, and Chrome periodically checks and applies available updates. The developer documentation also notes that Chrome uses an update URL to discover new versions and will install them when they are available and valid. A manual check simply asks Chrome to look again; it does not force an update if none is currently available for your device or profile.

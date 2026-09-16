@@ -5,7 +5,7 @@ slug: chrome-extension-blocked-by-administrator-guide
 status: draft
 excerpt: "Seeing “Blocked by administrator” when installing a Chrome extension? Here’s how to confirm whether your browser is managed, read the effective policy, and contact the right admin—without risky workarounds."
 meta_description: "Learn safe, practical steps to diagnose Chrome’s “Blocked by administrator” extension errors and reach the right admin path on managed devices."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-blocked-by-administrator-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome Enterprise"
@@ -27,6 +27,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-extension-blocked-by-administrator-guide/featured.webp" alt="chrome-extension-blocked-by-administrator-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 If Chrome shows “Blocked by administrator” or similar text when you try to install or run an extension, it usually means a policy from a work, school, or managed account is in effect. This guide explains what you can safely check yourself, how to confirm whether your browser is managed, and how to request the right change from the correct administrator—without attempting risky bypasses.
 
 ## First, confirm whether Chrome is managed

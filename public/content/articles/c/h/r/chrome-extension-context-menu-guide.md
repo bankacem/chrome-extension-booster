@@ -5,7 +5,7 @@ slug: chrome-extension-context-menu-guide
 status: draft
 excerpt: "Understand how Chrome extension context menus decide when to appear, how to target links, selections, and media with URL patterns, and how to troubleshoot missing right‑click items."
 meta_description: "Learn how Chrome extension context menus work, when items appear on right‑click, how to use documentUrlPatterns and targetUrlPatterns, and how to troubleshoot missing menu items."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-context-menu-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-extension-context-menu-guide/featured.webp" alt="chrome-extension-context-menu-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Why one extension shows only on right‑clicking a link, another only on images, and a third never appears comes down to how the contextMenus API scopes visibility. This guide clarifies the contexts that control when items appear, how URL patterns narrow where they show, and the fastest fixes when your item seems to be missing.
 
 ## What a Chrome extension context menu is

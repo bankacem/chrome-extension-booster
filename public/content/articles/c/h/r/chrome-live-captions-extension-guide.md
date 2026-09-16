@@ -5,7 +5,7 @@ slug: chrome-live-captions-extension-guide
 status: draft
 excerpt: "Decide when to use Chrome’s built‑in Live Caption and when an extension-based caption workflow is worth it. Includes setup steps, a decision table, troubleshooting, and privacy pointers."
 meta_description: "Learn how to set up Chrome Live Caption, when to choose a caption extension instead, privacy checks, limitations, and troubleshooting tips."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-live-captions-extension-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Accessibility"
@@ -24,6 +24,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-live-captions-extension-guide/featured.webp" alt="chrome-live-captions-extension-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 If you’re trying to caption audio or video in your browser, Chrome gives you two broad paths: its built‑in Live Caption feature or an extension‑based workflow. This guide starts with Chrome’s native option, then outlines when a third‑party extension may be the better fit, with practical steps, limits, and privacy checks backed by Chrome Help.
 
 ## What Chrome’s built‑in Live Caption does

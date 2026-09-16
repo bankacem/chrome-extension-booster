@@ -5,7 +5,7 @@ slug: allow-chrome-extension-file-urls-guide
 status: draft
 excerpt: "Learn how to enable “Allow access to file URLs” for a single Chrome extension, why file:// pages are different, what won’t work, the risks to consider, and when to turn access back off."
 meta_description: "Step-by-step guide to enable a Chrome extension on file URLs, with risks, limitations, troubleshooting, and safer settings for local files in the browser."
-featured_image: /og-image.png
+featured_image: "/content/images/allow-chrome-extension-file-urls-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome extensions"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/allow-chrome-extension-file-urls-guide/featured.webp" alt="allow-chrome-extension-file-urls-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Why this guide exists
 If you open local files in Chrome (for example, a saved HTML report) and want a specific extension to work on those pages, you may need to enable “Allow access to file URLs.” This opt‑in is separate from an extension’s normal website access. Below, you’ll enable it for one extension, learn why file:// pages are different, what won’t work, the risks to consider, and when to turn it back off.
 

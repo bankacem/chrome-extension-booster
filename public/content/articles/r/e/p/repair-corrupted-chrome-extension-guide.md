@@ -5,7 +5,7 @@ slug: repair-corrupted-chrome-extension-guide
 status: draft
 excerpt: "Learn how Chrome’s Repair action works, what it can and can’t fix, and the safest way to preserve or rebuild your extension settings when corruption appears."
 meta_description: "A practical guide to Chrome’s Repair action for corrupted extensions—what it fixes, what it doesn’t, and how to preserve or rebuild settings before reinstalling or removing."
-featured_image: /og-image.png
+featured_image: "/content/images/repair-corrupted-chrome-extension-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 8
 ---
+
+<img src="/content/images/repair-corrupted-chrome-extension-guide/featured.webp" alt="repair-corrupted-chrome-extension-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 When Chrome flags an extension as Corrupted, you’ll see a banner and a Repair button in chrome://extensions. That moment raises two urgent questions: Will a repair wipe my settings, and what should I do if the problem comes back? This guide focuses on Chrome’s Repair action, how to use it safely, and when it’s wiser to reinstall or remove the extension.
 
 ## What “Corrupted” means and what Repair actually does

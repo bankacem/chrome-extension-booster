@@ -5,7 +5,7 @@ slug: chrome-extension-camera-microphone-permissions-guide
 status: draft
 excerpt: "A practical guide to see who can use your camera and mic in Chrome, distinguish site vs. extension control, and safely revoke access when meetings fail."
 meta_description: "Learn how Chrome manages camera and microphone access for websites and extensions, how to review who has access, and how to revoke it when needed."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-extension-camera-microphone-permissions-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome"
@@ -25,6 +25,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/chrome-extension-camera-microphone-permissions-guide/featured.webp" alt="chrome-extension-camera-microphone-permissions-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 If your camera or microphone stops working—or you’re unsure what has access—use this guide to review and revoke permissions safely. Chrome’s control has two main layers you can change yourself (site settings and extensions), plus the operating system, with meeting-specific fixes at the end.
 
 ## Who actually controls your camera and mic in Chrome?

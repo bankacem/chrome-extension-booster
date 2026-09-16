@@ -5,7 +5,7 @@ slug: manifest-v3-chrome-extension-compatibility-guide
 status: draft
 excerpt: "A user-focused look at how Chrome’s Manifest V3 affects extension behavior, including background activity, network-request handling, and permission prompts—plus practical troubleshooting tips."
 meta_description: "Understand how Chrome’s Manifest V3 changes extension behavior for users—service workers, no remotely hosted code, and declarativeNetRequest—plus signs to watch for and fixes."
-featured_image: /og-image.png
+featured_image: "/content/images/manifest-v3-chrome-extension-compatibility-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Manifest V3"
@@ -23,6 +23,9 @@ author: "Miccart Phen"
 published_at: 2026-08-23
 read_time: 7
 ---
+
+<img src="/content/images/manifest-v3-chrome-extension-compatibility-guide/featured.webp" alt="manifest-v3-chrome-extension-compatibility-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 Chrome’s Manifest V3 (MV3) changes how extensions run. Although most coverage targets developers, the effects can be visible to anyone using extensions: how long an extension stays active, how it changes network requests, and how it asks for site access. This guide explains the main shifts so you can tell expected MV3 behavior from actual breakage and know what to try when something feels off.
 
 ## What MV3 changes at a glance
