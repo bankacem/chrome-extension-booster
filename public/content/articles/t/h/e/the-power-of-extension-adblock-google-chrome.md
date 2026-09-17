@@ -130,7 +130,7 @@ For users concerned about privacy, some ad blockers offer additional features li
 - Cookie blocking to prevent third-party tracking
 - Do Not Track signal enforcement
 
-If privacy is your primary concern, you might also want to explore our guide on [Chrome's memory saver mode](/blog/how-to-[turn-on-chromes](/blog/how-to-turn-on-chromes-memory-saver-mode)-memory-saver-mode), which can help limit background processes that might be collecting data about your browsing habits.
+If privacy is your primary concern, you might also want to explore our guide on [Chrome's memory saver mode](/blog/how-to-turn-on-chromes-memory-saver-mode), which can help limit background processes that might be collecting data about your browsing habits.
 
 ## Choosing the Right Adblock Extension {#choosing-right}
 

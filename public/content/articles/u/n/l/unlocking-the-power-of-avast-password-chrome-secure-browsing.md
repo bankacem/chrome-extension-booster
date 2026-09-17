@@ -40,7 +40,7 @@ Whether you'[re a security](/blog/enpass-extension-chrome-9)-conscious professio
 - [Pro Tips and Key Takeaways](#pro-tips-and-key-takeaways)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Final Verdict](#final-verdict)- [[User Experience and Interface](/blog/discover-the-safest-adblocker-for-chrome) Analysis](#user-experience-and-interface-analysis)
-- [[Avast Passwords vs](/blog/unlocking-the-power-of-avast-passwords-extension-chrome). Competitors: Detailed Comparison](#avast-passwords-vs-competitors-detailed-comparison)
+- [[Avast Passwords vs](/blog/a-closer-look-at-avast-passwords-for-chrome). Competitors: Detailed Comparison](#avast-passwords-vs-competitors-detailed-comparison)
 - [Advanced Features and Power User Options](#advanced-features-and-power-user-options)
 - [Common Issues and Troubleshooting Solutions](#common-issues-and-troubleshooting-solutions)
 - [Privacy Considerations and Data Handling](#privacy-considerations-and-data-handling)

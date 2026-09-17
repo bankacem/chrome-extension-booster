@@ -29,6 +29,8 @@ const knownExceptions = new Set([
   "/the-ultimate-chrome-extensions-guide-for-2025-maximize-your-browsers-potential",
   "/the-2025-chrome-extension-power-guide-how-to-actually-level-up-your-browser",
   "/10-essential-chrome-extensions-to-actually-secure",
+  "/extension/devtools-pro",
+  "/extension/tab-manager-pro"
 ]);
 
 function filesIn(dir) {
