@@ -18726,5 +18726,85 @@
   "read_time": 21,
   "status": "published",
   "canonicalPath": "/blog/ultimate-chrome-ram-memory-management-guide"
+ },
+ {
+  "id": "67736695-baa2-4811-9a73-e0c791f01dcd",
+  "title": "Blocking Ads on Android with a Chrome Add-on",
+  "slug": "unlock-the-power-of-ad-blocking-on-android",
+  "description": "A review of blocking ads on android with a chrome add-on, covering real-world use, setup steps, and honest limitations.",
+  "meta_description": "A review of blocking ads on android with a chrome add-on, covering real-world use, setup steps, and honest limitations.",
+  "excerpt": "Are you tired of annoying ads disrupting your browsing experience on your Android device?",
+  "published_at": "2026-03-13T09:00:02.434+00:00",
+  "updated_at": "2026-09-17T14:09:39.000+00:00",
+  "category": "Appearance & Themes",
+  "author": "James Carter",
+  "featured_image": "/content/images/unlock-the-power-of-ad-blocking-on-android/featured.webp",
+  "image_url": "/content/images/unlock-the-power-of-ad-blocking-on-android/featured.webp",
+  "read_time": 26,
+  "status": "published",
+  "canonicalPath": "/blog/unlock-the-power-of-ad-blocking-on-android",
+  "keywords": [
+   "adblock chrome addon android"
+  ]
+ },
+ {
+  "id": "ab2ede7d-a163-4439-947d-1ec516f131c8",
+  "title": "Unlocking Online Privacy: A Comprehensive Guide to Ghostery for Chrome Android",
+  "slug": "unlocking-online-privacy-ghostery-for-chrome-android",
+  "description": "As the world becomes increasingly digital, online privacy has become a pressing concern for many individuals.",
+  "meta_description": "As the world becomes increasingly digital, online privacy has become a pressing concern for many individuals.",
+  "excerpt": "As the world becomes increasingly digital, online privacy has become a pressing concern for many individuals.",
+  "published_at": "2026-03-04T09:00:13.412+00:00",
+  "updated_at": "2026-09-17T14:09:39.000+00:00",
+  "category": "Security & Privacy",
+  "author": "James Carter",
+  "featured_image": "/content/images/unlocking-online-privacy-ghostery-for-chrome-android/featured.webp",
+  "image_url": "/content/images/unlocking-online-privacy-ghostery-for-chrome-android/featured.webp",
+  "read_time": 18,
+  "status": "published",
+  "canonicalPath": "/blog/unlocking-online-privacy-ghostery-for-chrome-android",
+  "keywords": [
+   "ghostery for chrome android"
+  ]
+ },
+ {
+  "id": "d90711e5-57c2-4705-ba0e-0a221f3aaf2a",
+  "title": "Unlocking Ad-Free Browsing: The Best Adblock for Chrome on Android",
+  "slug": "unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+  "description": "A hands-on look at ad-free browsing, covering setup, real features, and what to expect before installing it.",
+  "meta_description": "A hands-on look at ad-free browsing, covering setup, real features, and what to expect before installing it.",
+  "excerpt": "Are you tired of annoying ads disrupting your browsing experience on your Android device? Look no further!",
+  "published_at": "2026-03-18T09:00:00.762+00:00",
+  "updated_at": "2026-09-17T14:09:39.000+00:00",
+  "category": "Redirect & Navigation",
+  "author": "James Carter",
+  "featured_image": "/content/images/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android/featured.webp",
+  "image_url": "/content/images/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android/featured.webp",
+  "read_time": 19,
+  "status": "published",
+  "canonicalPath": "/blog/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+  "keywords": [
+   "adblock for chrome on android"
+  ]
+ },
+ {
+  "id": "7ee3916e-a80b-414a-b8c7-d7dc8a115f1b",
+  "title": "Adblock in Chrome Mobile",
+  "slug": "unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
+  "description": "Everything worth knowing about adblock in chrome mobile, including installation steps and how it compares to alternatives.",
+  "meta_description": "Everything worth knowing about adblock in chrome mobile, including installation steps and how it compares to alternatives.",
+  "excerpt": "Are you tired of annoying ads disrupting your browsing experience on Chrome Mobile?",
+  "published_at": "2026-04-27T18:15:00.468+00:00",
+  "updated_at": "2026-09-17T14:09:39.000+00:00",
+  "category": "Redirect & Navigation",
+  "author": "James Carter",
+  "featured_image": "/content/images/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile/featured.webp",
+  "image_url": "/content/images/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile/featured.webp",
+  "read_time": 18,
+  "status": "published",
+  "canonicalPath": "/blog/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
+  "keywords": [
+   "adblock in chrome mobile"
+  ]
  }
 ]

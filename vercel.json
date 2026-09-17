@@ -3936,7 +3936,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/google-chrome-programm\u00e9-en-14",
+      "source": "/blog/google-chrome-programmé-en-14",
       "destination": "/blog/google-chrome-programm-en-14",
       "permanent": true
     },
@@ -4206,11 +4206,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/unlock-the-power-of-ad-blocking-on-android",
-      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
-      "permanent": true
-    },
-    {
       "source": "/blog/unlocking-ad-free-browsing-adblock-chrome-android",
       "destination": "/blog/adblock-chrome-android-complete-guide-2026",
       "permanent": true
@@ -4222,16 +4217,6 @@
     },
     {
       "source": "/blog/unlocking-ad-free-browsing-on-the-go-chrome-mobile-adblock",
-      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
-      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
       "destination": "/blog/adblock-chrome-android-complete-guide-2026",
       "permanent": true
     },
@@ -4692,11 +4677,6 @@
     },
     {
       "source": "/blog/unlocking-online-privacy-the-power-of-chrome-ghostery-extension",
-      "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlocking-online-privacy-ghostery-for-chrome-android",
       "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
       "permanent": true
     },
