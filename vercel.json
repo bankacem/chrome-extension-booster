@@ -3936,7 +3936,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/google-chrome-programmé-en-14",
+      "source": "/blog/google-chrome-programm\u00e9-en-14",
       "destination": "/blog/google-chrome-programm-en-14",
       "permanent": true
     },
@@ -4211,11 +4211,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/unlocking-ad-free-browsing-ad-block-chrome-android",
-      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
-      "permanent": true
-    },
-    {
       "source": "/blog/unlocking-ad-free-browsing-adblock-chrome-android",
       "destination": "/blog/adblock-chrome-android-complete-guide-2026",
       "permanent": true
@@ -4237,11 +4232,6 @@
     },
     {
       "source": "/blog/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
-      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
       "destination": "/blog/adblock-chrome-android-complete-guide-2026",
       "permanent": true
     },
@@ -4556,11 +4546,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/unlocking-the-power-of-the-avast-passwords-extension",
-      "destination": "/blog/a-closer-look-at-avast-passwords-for-chrome",
-      "permanent": true
-    },
-    {
       "source": "/blog/unlocking-the-power-of-avast-passwords-extension-chrome",
       "destination": "/blog/a-closer-look-at-avast-passwords-for-chrome",
       "permanent": true
@@ -4591,11 +4576,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome",
-      "destination": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
-      "permanent": true
-    },
-    {
       "source": "/blog/a-fast-safe-youtube-downloader-for-chrome",
       "destination": "/blog/best-youtube-downloader-chrome-extension-2026",
       "permanent": true
@@ -4603,11 +4583,6 @@
     {
       "source": "/blog/a-reliable-youtube-downloader-for-chrome",
       "destination": "/blog/best-youtube-downloader-chrome-extension-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/a-free-pop-up-blocker-extension-for-chrome",
-      "destination": "/blog/pop-up-blocker-for-chrome-partial",
       "permanent": true
     },
     {
@@ -4676,11 +4651,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/why-light-popup-blocker-is-better-than-heavy-adblockers-6",
-      "destination": "/blog/light-popup-blocker-a-lighter-ad-blocker",
-      "permanent": true
-    },
-    {
       "source": "/blog/exploring-poper-blocker-alternatives",
       "destination": "/blog/poper-blocker-vs-adblock-plus-2026",
       "permanent": true
@@ -4736,26 +4706,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/unlocking-the-power-of-online-privacy-ghostery-add-on-chrome",
-      "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/ghostery-vs-stands-adblocker",
-      "destination": "/blog/ghostery-vs-ublock-origin-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/ublock-origin-vs-ghostery-for-chrome-android",
-      "destination": "/blog/ghostery-vs-ublock-origin-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/privacy-badger-chrome-partial",
-      "destination": "/blog/privacy-badger-chrome",
-      "permanent": true
-    },
-    {
       "source": "/blog/ghostery-vs-privacy-badger-full-2026-comparison",
       "destination": "/blog/privacy-badger-chrome",
       "permanent": true
@@ -4763,21 +4713,6 @@
     {
       "source": "/blog/10-essential-chrome-extensions-to-actually-secure-your-browser",
       "destination": "/blog/extensions-that-make-chrome-browsing-safer",
-      "permanent": true
-    },
-    {
-      "source": "/blog/monitor-chrome-ram-usage-guide",
-      "destination": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
-      "permanent": true
-    },
-    {
-      "source": "/blog/fix-chrome-out-of-memory-errors",
-      "destination": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
-      "permanent": true
-    },
-    {
-      "source": "/blog/ultimate-chrome-ram-memory-management-guide",
-      "destination": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
       "permanent": true
     },
     {
