@@ -119,7 +119,7 @@ In my testing, Kiwi successfully ran approximately 85% of the extensions I tried
 
 ### Brave Browser
 
-Brave offers another compelling option for extension enthusiasts. While it focuses on privacy by default, it also supports Chrome extensions through its desktop mode. For a detailed comparison of extension capabilities, you might want to explore [Using Extensions on Brave Mobile](/blog/[[unlock](/blog/unlock-the-power-of-seo-the-best-seo-extensions-for-chrome-2026)ing](/blog/unlocking-the-power-of-extension-brave-mobile)-the-power-of-extension-brave-mobile), which provides insights into how Brave handles extensions differently than other browsers.
+Brave offers another compelling option for extension enthusiasts. While it focuses on privacy by default, it also supports Chrome extensions through its desktop mode. For a detailed comparison of extension capabilities, you might want to explore [Using Extensions on Brave Mobile](/blog/unlock-the-power-of-seo-the-best-seo-extensions-for-chrome-2026)-the-power-of-extension-brave-mobile), which provides insights into how Brave handles extensions differently than other browsers.
 
 During my testing, Brave's extension support was slightly more limited than Kiwi's, with about 75% of tested extensions working properly. However, its built-in privacy features and aggressive blocking of trackers make it an excellent choice for security-conscious users.
 

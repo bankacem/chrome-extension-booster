@@ -16,41 +16,85 @@ const DELAY_MS = 1000; // 1 second delay between requests
 
 // URLs requested by user for priority indexing
 const MANUAL_PRIORITY_URLS = [
-  `${BASE_URL}/blog/internet-download-manager-extension`,
-  `${BASE_URL}/blog/top-10-google-sheets-extensions-for-accounting-8`,
-  `${BASE_URL}/terms`,
-  `${BASE_URL}/blog/extension-chrome-rafraichissement-automatique-15`,
-  `${BASE_URL}/blog/screenshot-tool-chrome-guide-1`,
-  `${BASE_URL}/blog/fast-screenshot-extension-alternatives-1`,
-  `${BASE_URL}/blog/chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide`,
-  `${BASE_URL}/blog/pro-developer-chrome-extensions`,
-  `${BASE_URL}/blog/extension-idm-to-chrome-12`,
-  `${BASE_URL}/blog/best-annotated-screenshot-chrome-5`,
+  `${BASE_URL}/blog/unlocking-the-power-of-extension-chrome-joko`,
+  `${BASE_URL}/blog/chatgpt-export-chat-chrome-extension`,
+  `${BASE_URL}/blog/unlock-the-power-of-ad-blocking-on-android`,
+  `${BASE_URL}/blog/unlocking-the-power-of-chrome-extensions-on-android-a-comprehensive-guide`,
+  `${BASE_URL}/blog/unlocking-the-power-of-avast-password-chrome-secure-browsing`,
+  `${BASE_URL}/blog/tts-chrome-5`,
   `${BASE_URL}/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs`,
-  `${BASE_URL}/blog/the-best-security-chrome-extensions-free-to-install-in-2025`,
-  `${BASE_URL}/blog/extension-chrome-wapi-17`,
-  `${BASE_URL}/blog/best-chrome-extensions-for-privacy-2026-protect-your-online-identity-mll9br233zj`,
-  `${BASE_URL}/blog/essential-chrome-extensions-for-ad-free-browsing-user-experience-speed-productivity-clean-web-9`,
-  `${BASE_URL}/blog/google-chrome-programm-en-14`,
-  `${BASE_URL}/blog/unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android-mm3scnuyzcs`,
-  `${BASE_URL}/blog/professional-browser-tools-guide`,
-  `${BASE_URL}/blog/the-ultimate-chrome-extensions-for-browsing-guide`,
-  `${BASE_URL}/blog/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial`,
-  `${BASE_URL}/blog/add-extension-to-chrome-7`,
-  `${BASE_URL}/blog/extension-utile-chrome-12`,
-  `${BASE_URL}/blog/free-screenshot-extensions-for-chrome`,
-  `${BASE_URL}/blog/the-ultimate-guide-to-finding-a-safe-youtube-downloader-extension-no-ads-mliju6qrdal`,
-  `${BASE_URL}/blog/how-to-add-extensions-to-chrome-mobile-a-step-by-step-guide-mmthoys728s`,
-  `${BASE_URL}/blog/extension-norton-chrome-8`,
-  `${BASE_URL}/blog/vpn-extension-to-chrome-1`,
-  `${BASE_URL}/blog/best-screenshot-extensions-for-chrome-1`,
-  `${BASE_URL}/blog/unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools`,
-  `${BASE_URL}/blog/best-quick-screenshot-chrome-tools-3`,
-  `${BASE_URL}/blog/capture-screen-chrome-review-5`,
-  `${BASE_URL}/blog/chrome-web-store-2`,
-  `${BASE_URL}/blog/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools`,
-  `${BASE_URL}/blog/extension-grammaire-chrome-6`,
-  `${BASE_URL}/blog/extension-chrome-screen-page-16`
+  `${BASE_URL}/blog/using-a-chrome-extension-on-your-android-phone`,
+  `${BASE_URL}/blog/unlock-the-full-potential-of-kiwi-browser`,
+  `${BASE_URL}/blog/unlock-the-power-of-responsive-design`,
+  `${BASE_URL}/blog/unlocking-the-power-of-extension-microsoft-edge`,
+  `${BASE_URL}/blog/unlocking-online-security-the-power-of-avast-extension-google-chrome`,
+  `${BASE_URL}/blog/unlocking-the-full-potential-of-chrome-mobile`,
+  `${BASE_URL}/blog/unlocking-the-power-of-password-management`,
+  `${BASE_URL}/blog/unlocking-online-privacy-ghostery-for-chrome-android`,
+  `${BASE_URL}/blog/unlocking-the-power-of-avast-extension-chrome`,
+  `${BASE_URL}/blog/which-android-browser-handles-extensions-best`,
+  `${BASE_URL}/blog/how-to-fix-chrome-memory-2026`,
+  `${BASE_URL}/blog/extension-get-chrome-3`,
+  `${BASE_URL}/blog/unlocking-the-power-of-extension-bsr-amazon-boosting-sales`,
+  `${BASE_URL}/blog/why-you-need-an-antivirus-extension-for-chrome`,
+  `${BASE_URL}/blog/unlocking-data-visualization-the-power-of-tableau-chrome-extension`,
+  `${BASE_URL}/blog/unlocking-the-power-of-browser-extensions-extension-to`,
+  `${BASE_URL}/blog/unlock-lightning-fast-video-playback-extension-accelerer-video`,
+  `${BASE_URL}/blog/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android`,
+  `${BASE_URL}/blog/unlocking-the-power-of-meta-tags-chrome-extension-for-meta-tags`,
+  `${BASE_URL}/blog/unlocking-efficiency-the-best-spreadsheets-software-for-small-business`,
+  `${BASE_URL}/blog/stop-wasting-time-typing-the-same-prompts`,
+  `${BASE_URL}/blog/using-dark-mode-on-quora-for-better-focus-4`,
+  `${BASE_URL}/blog/download-chrome-extension-opera-10`,
+  `${BASE_URL}/blog/unlock-ad-free-youtube-browsing-youtube-ad-blocker-extension-chrome`,
+  `${BASE_URL}/blog/unlocking-the-full-potential-of-your-browser-extensiontocom`,
+  `${BASE_URL}/blog/a-game-changer-for-productivity`,
+  `${BASE_URL}/blog/chatgpt-conversation-search-extension-2026`,
+  `${BASE_URL}/blog/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile`,
+  `${BASE_URL}/blog/unlocking-the-power-of-extensionhub-enhancing-your-browser-experience`,
+  `${BASE_URL}/blog/unlock-the-power-of-youtube-subtitle-downloader-chrome`,
+  `${BASE_URL}/blog/unlocking-productivity-the-best-chrome-extensions-for-web-developers`,
+  `${BASE_URL}/blog/unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide`,
+  `${BASE_URL}/blog/monitor-chrome-ram-usage-guide`,
+  `${BASE_URL}/blog/fix-chrome-out-of-memory-errors`,
+  `${BASE_URL}/blog/ultimate-chrome-ram-memory-management-guide`,
+  `${BASE_URL}/blog/unlocking-the-power-of-adblock-chrome-on-android`,
+  `${BASE_URL}/blog/unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome`,
+  `${BASE_URL}/blog/unlocking-the-power-of-online-privacy-ghostery-add-on-chrome`,
+  `${BASE_URL}/blog/unlocking-ad-free-browsing-ad-block-chrome-android`,
+  `${BASE_URL}/blog/ghostery-vs-stands-adblocker`,
+  `${BASE_URL}/blog/understanding-the-extension-notion`,
+  `${BASE_URL}/blog/ublock-origin-vs-ghostery-for-chrome-android`,
+  `${BASE_URL}/blog/privacy-badger-chrome-partial`,
+  `${BASE_URL}/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance`,
+  `${BASE_URL}/blog/download-station-chrome-4`,
+  `${BASE_URL}/blog/download-instagram-stories-extension-chrome`,
+  `${BASE_URL}/blog/donottrackme-chrome-8`,
+  `${BASE_URL}/blog/unlocking-efficiency-the-power-of-extension-auto-refresh-chrome`,
+  `${BASE_URL}/blog/the-power-of-extension-adblock-google-chrome`,
+  `${BASE_URL}/blog/extension-chrome-presearch-14`,
+  `${BASE_URL}/blog/the-power-of-1password-chrome-extension`,
+  `${BASE_URL}/blog/unlocking-the-power-of-kiwi-browser-developer-mode`,
+  `${BASE_URL}/blog/a-free-pop-up-blocker-extension-for-chrome`,
+  `${BASE_URL}/blog/best-full-page-screenshot-chrome-extension-2026-free-no-login-required`,
+  `${BASE_URL}/blog/unlocking-the-power-of-the-avast-passwords-extension`,
+  `${BASE_URL}/blog/deezer-extension-4`,
+  `${BASE_URL}/blog/why-light-popup-blocker-is-better-than-heavy-adblockers-6`,
+  `${BASE_URL}/blog/unlocking-the-power-of-extension-android-google-chrome`,
+  `${BASE_URL}/blog/unlock-secure-browsing-the-avast-password-extension-chrome-review`,
+  `${BASE_URL}/blog/extension-adblock-telephone-4`,
+  `${BASE_URL}/blog/how-to-update-chrome-extensions-enhancing-your-browser-experience`,
+  `${BASE_URL}/blog/extension-auto-refresh-chrome-2`,
+  `${BASE_URL}/blog/alidropship-extension-full-guide`,
+  `${BASE_URL}/blog/a-chrome-screenshot-extension-worth-installing`,
+  `${BASE_URL}/blog/extension-alidropship-5`,
+  `${BASE_URL}/blog/how-to-download-video-from-facebook-chrome`,
+  `${BASE_URL}/blog/unlock-the-power-of-seo-the-best-seo-extensions-for-chrome-2026`,
+  `${BASE_URL}/blog/getting-extensions-to-work-on-lemur-browser`,
+  `${BASE_URL}/blog/deezer-extension-chrome-5`,
+  `${BASE_URL}/blog/download-from-instagram-extension-11`,
+  `${BASE_URL}/blog/extension-chrome-code-1`,
+  `${BASE_URL}/blog/block-video-ads-chrome-extension`
 ];
 
 interface ArticleMeta {
@@ -216,27 +260,42 @@ async function massIndexing() {
   });
 
   const articleUrls = articles.map(a => `${BASE_URL}/blog/${a.slug}`);
-  const allTargetUrls = [...staticPages, ...articleUrls];
 
-  const pendingUrls = allTargetUrls.filter(u => !indexedUrls.includes(u));
+  // Construct priority set from MANUAL_PRIORITY_URLS and their canonical redirect targets
+  const prioritySet = new Set<string>(MANUAL_PRIORITY_URLS);
+  for (const pUrl of MANUAL_PRIORITY_URLS) {
+    const slug = pUrl.replace(`${BASE_URL}/blog/`, '');
+    if (mergedArticles[slug]?.redirect_to) {
+      prioritySet.add(`${BASE_URL}${mergedArticles[slug].redirect_to}`);
+    }
+  }
+  const priorityUrls = Array.from(prioritySet);
 
-  console.log(`${pendingUrls.length} URLs pending indexing.`);
+  const otherUrls = [...staticPages, ...articleUrls].filter(u => !priorityUrls.includes(u));
+  const allTargetUrls = [...priorityUrls, ...otherUrls];
+
+  // Priority URLs are always processed for indexing updates
+  const pendingUrls = allTargetUrls.filter(u => priorityUrls.includes(u) || !indexedUrls.includes(u));
+
+  console.log(`${priorityUrls.length} Priority URLs configured.`);
+  console.log(`${pendingUrls.length} total URLs pending indexing.`);
 
   let successCount = 0;
   let failCount = 0;
 
   for (let i = 0; i < pendingUrls.length; i++) {
     const url = pendingUrls[i];
-    const article = articles.find(a => `${BASE_URL}/blog/${a.slug}` === url);
+    const isPriority = priorityUrls.includes(url);
 
     try {
-      const isPriority = article?.published_at ? String(article.published_at).startsWith('2026-04') : false;
       console.log(`[${i + 1}/${pendingUrls.length}] Notifying: ${url}${isPriority ? ' (PRIORITY)' : ''}`);
       await notifyIndexing(url, 'URL_UPDATED');
 
       successCount++;
-      indexedUrls.push(url);
-      fs.writeFileSync(STATE_FILE, JSON.stringify(indexedUrls, null, 2));
+      if (!indexedUrls.includes(url)) {
+        indexedUrls.push(url);
+        fs.writeFileSync(STATE_FILE, JSON.stringify(indexedUrls, null, 2));
+      }
 
       await new Promise(resolve => setTimeout(resolve, DELAY_MS));
     } catch (error) {
@@ -253,6 +312,7 @@ async function massIndexing() {
 
   console.log('\n--- Mass Indexing Summary ---');
   console.log(`Total scanned on disk: ${articles.length}`);
+  console.log(`Priority URLs configured: ${priorityUrls.length}`);
   console.log(`Successful notifications: ${successCount}`);
   console.log(`Failed notifications: ${failCount}`);
 }
