@@ -6,7 +6,7 @@ slug: tampermonkey-chrome-userscripts-guide
 status: published
 excerpt: "Learn how to install Tampermonkey in Chrome, review userscripts, grant the right permission, and create a small script without exposing every website to unknown code."
 meta_description: "Install Tampermonkey in Chrome, review userscripts, grant the right permission, and run a small script safely with a practical checklist."
-featured_image: /og-image.png
+featured_image: "/content/images/tampermonkey-chrome-userscripts-guide/featured.webp"
 category: Chrome Extensions
 tags:
   - tampermonkey
@@ -22,6 +22,9 @@ published_at: 2026-08-22
 read_time: 8
 updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+
+<img src="/content/images/tampermonkey-chrome-userscripts-guide/featured.webp" alt="tampermonkey-chrome-userscripts-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 Tampermonkey is a userscript manager for Chrome. It lets you run small JavaScript programs that change a page or add a narrowly defined feature, but it also places executable code between you and the websites you visit. The useful question is therefore not simply “How do I install Tampermonkey?” It is “Which script should run, on which pages, with which permissions, and how can I turn it off?”

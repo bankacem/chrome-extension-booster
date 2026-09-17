@@ -6,7 +6,7 @@ slug: picture-in-picture-chrome-guide
 status: published
 excerpt: "Use Picture-in-Picture in Chrome without guessing: learn the built-in video workflow, the official Google extension, current limits, and a practical troubleshooting path."
 meta_description: "Learn how to use Picture-in-Picture in Chrome, when to use Google's extension, and how to fix missing controls, blank windows, and compatibility issues."
-featured_image: /og-image.png
+featured_image: "/content/images/picture-in-picture-chrome-guide/featured.webp"
 category: Media & Downloads
 tags:
   - picture-in-picture
@@ -43,6 +43,9 @@ howto:
     - name: "Use the official extension"
       text: "If needed, install Picture-in-Picture Extension (by Google) and use its toolbar action or documented shortcut."
 ---
+
+<img src="/content/images/picture-in-picture-chrome-guide/featured.webp" alt="picture-in-picture-chrome-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 
 Picture-in-Picture (PiP) puts a supported video in a small floating window so you can keep watching while working in another tab or application. In Chrome, the feature is not a single switch that works identically on every website. The page may expose the browser’s video control, the site may provide its own PiP button, or the official Google extension may be the quickest fallback.

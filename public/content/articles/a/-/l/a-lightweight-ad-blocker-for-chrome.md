@@ -6,8 +6,7 @@ title: >-
   Experience
 slug: "a-lightweight-ad-blocker-for-chrome"
 excerpt: "Are you tired of annoying ads and popups disrupting your online experience? A lightweight ad blocker Chrome extension can be your solution."
-featured_image: >-
-  /content/images/discover-the-power-of-a-lightweight-ad-blocker-chrome-boost-your-browsing-experience-mme0ixxxqdz/featured.webp
+featured_image: "/content/images/a-lightweight-ad-blocker-for-chrome/featured.webp"
 category: "Ad Blockers"
 tags: []
 keywords:
@@ -24,6 +23,9 @@ created_at: '2026-03-05T22:03:52.611401+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you tired of annoying ads and popups disrupting your online experience? A lightweight ad blocker Chrome extension can be your solution."
 ---
+
+<img src="/content/images/a-lightweight-ad-blocker-for-chrome/featured.webp" alt="Discover the Power of a Lightweight Ad Blocker Chrome: Boost Your Browsing Experience" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## Discover the Power of a [Lightweight](/blog/the-power-of-ghostery-extension-chrome-2026 "Lightweight Ad Blocker vs Ghostery: The Ultimate Comparison for a Seamless Browsing Experience") Ad Blocker Chrome: Boost Your Browsing Experience

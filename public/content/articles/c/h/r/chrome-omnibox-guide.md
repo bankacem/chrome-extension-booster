@@ -6,7 +6,7 @@ slug: chrome-omnibox-guide
 status: published
 excerpt: "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point."
 meta_description: "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point."
-featured_image: /og-image.png
+featured_image: "/content/images/chrome-omnibox-guide/featured.webp"
 category: Browser Productivity
 tags:
   - Chrome
@@ -46,6 +46,9 @@ howto:
     - name: "Test and maintain the shortcut"
       text: "Confirm that the result opens on the intended site, then deactivate or delete the shortcut if you no longer trust or use it."
 ---
+
+<img src="/content/images/chrome-omnibox-guide/featured.webp" alt="chrome-omnibox-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 Chrome’s **Omnibox** is the name Chrome uses for its address bar. It is more than a URL field: it can search the web, open a known address, surface bookmarks and history, and route a query to a selected site. Chrome also lets extensions register their own keyword so a user can hand a query to that extension instead of sending it to the default search engine.[1] [2]

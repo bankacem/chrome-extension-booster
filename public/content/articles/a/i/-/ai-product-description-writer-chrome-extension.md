@@ -4,7 +4,7 @@ slug: ai-product-description-writer-chrome-extension
 canonicalPath: /blog/ai-product-description-writer-chrome-extension
 status: published
 published_at: '2026-07-17'
-featured_image: /content/images/deepseek-markdown-20260603-8e6355.jpg
+featured_image: "/content/images/ai-product-description-writer-chrome-extension/featured.webp"
 image_url: /content/images/deepseek-markdown-20260603-8e6355.jpg
 title: >-
   AI Product Description Writer Chrome Extension: The Complete 2026 Guide to
@@ -16,6 +16,9 @@ description: >-
 category: "Chrome Extensions"
 updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+
+<img src="/content/images/ai-product-description-writer-chrome-extension/featured.webp" alt="AI Product Description Writer Chrome Extension: The Complete 2026 Guide to Selling Faster on Amazon, Shopify &" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## 📚 Table of Contents

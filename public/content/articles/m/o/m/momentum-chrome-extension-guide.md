@@ -5,7 +5,7 @@ slug: momentum-chrome-extension-guide
 status: published
 excerpt: "A practical guide to evaluating and configuring the Momentum Chrome extension as your New Tab dashboard—covering setup, Focus tools, to‑dos, optional Plus features, and the privacy choices you should review before and after installation."
 meta_description: "Evaluate the Momentum Chrome extension as your New Tab dashboard: setup steps, Focus tools, to-dos, Plus upgrades, and the privacy checks worth running."
-featured_image: /og-image.png
+featured_image: "/content/images/momentum-chrome-extension-guide/featured.webp"
 category: "Chrome Extensions"
 tags:
   - "Chrome Extensions"
@@ -27,6 +27,9 @@ published_at: 2026-08-23
 read_time: 10
 updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+
+<img src="/content/images/momentum-chrome-extension-guide/featured.webp" alt="momentum-chrome-extension-guide" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## What Momentum Is—and What It Changes in Chrome

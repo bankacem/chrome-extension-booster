@@ -4,8 +4,7 @@ id: 1834a63d-46d7-490c-90e9-2434ae6b9aab
 title: 'An Image Downloader Extension for Chrome'
 slug: "an-image-downloader-extension-for-chrome"
 excerpt: "Are you tired of manually saving images from websites, one by one? Look no further!"
-featured_image: >-
-  /content/images/discover-the-best-image-downloader-chrome-extension-for-effortless-image-saving-mmtvrb6wws4/featured.webp
+featured_image: "/content/images/an-image-downloader-extension-for-chrome/featured.webp"
 category: "Media & Downloads"
 tags: []
 keywords:
@@ -22,6 +21,9 @@ created_at: '2026-03-17T00:34:43.034252+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you tired of manually saving images from websites, one by one? Look no further!"
 ---
+
+<img src="/content/images/an-image-downloader-extension-for-chrome/featured.webp" alt="an-image-downloader-extension-for-chrome" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 Are you tired of manually saving images from websites, one by one? Look no further! The best image downloader Chrome extension can simplify your life and make it easy to save multiple images at once. In this article, we'll explore the top options for the best image downloader Chrome extension, including our very own [Quick Screenshot Lite](/extension/quick-screenshot-lite), and provide you with a [comprehensive](/blog/media-saver-extension-chrome "Media Saver Extension Review: A Comprehensive Guide to Saving Media Files") guide on how to use them.

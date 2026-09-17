@@ -4,7 +4,7 @@ slug: ai-translator-chrome-extension-free
 canonicalPath: /blog/ai-translator-chrome-extension-free
 status: published
 published_at: '2026-07-05'
-featured_image: /content/images/deepseek-markdown-20260603-266737.jpg
+featured_image: "/content/images/ai-translator-chrome-extension-free/featured.webp"
 image_url: /content/images/deepseek-markdown-20260603-266737.jpg
 title: >-
   AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking
@@ -16,6 +16,9 @@ description: >-
 category: "Chrome Extensions"
 updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+
+<img src="/content/images/ai-translator-chrome-extension-free/featured.webp" alt="AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking Language Barriers" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## 📚 Table of Contents

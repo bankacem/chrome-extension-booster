@@ -4,7 +4,7 @@ slug: ai-social-media-captions-chrome-extension
 canonicalPath: /blog/ai-social-media-captions-chrome-extension
 status: published
 published_at: '2026-07-11'
-featured_image: /content/images/deepseek-markdown-20260603-58aa93.jpg
+featured_image: "/content/images/ai-social-media-captions-chrome-extension/featured.webp"
 image_url: /content/images/deepseek-markdown-20260603-58aa93.jpg
 title: >-
   AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going
@@ -16,6 +16,9 @@ description: >-
 category: "Chrome Extensions"
 updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+
+<img src="/content/images/ai-social-media-captions-chrome-extension/featured.webp" alt="AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## 📚 Table of Contents

@@ -6,7 +6,7 @@ slug: how-to-disable-chrome-extensions-on-specific-sites
 status: published
 excerpt: "Learn how to disable Chrome extensions on specific sites using built-in site access settings, so you keep full control without uninstalling anything."
 meta_description: "Learn how to disable Chrome extensions on specific sites using built-in site access settings, so you keep full control without uninstalling anything."
-featured_image: /og-image.png
+featured_image: "/content/images/how-to-disable-chrome-extensions-on-specific-sites/featured.webp"
 category: Chrome Extensions
 tags:
   - "chrome extensions"
@@ -26,6 +26,9 @@ published_at: 2026-08-28
 read_time: 12
 updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+
+<img src="/content/images/how-to-disable-chrome-extensions-on-specific-sites/featured.webp" alt="how-to-disable-chrome-extensions-on-specific-sites" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 You installed an extension because it's useful — but it's also injecting itself into your bank's login page, breaking a work dashboard, or reading a page it has no business reading. The good news is you don't have to choose between keeping it and removing it. You can disable Chrome extensions on specific sites while leaving them fully active everywhere else, and the setting has been built into Chrome for years.

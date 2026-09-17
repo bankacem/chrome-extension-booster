@@ -5,7 +5,7 @@ canonicalPath: /blog/ai-cover-letter-writer-chrome-extension
 status: published
 published_at: '2026-07-09'
 updated_at: '2026-09-14T12:00:00.000+00:00'
-featured_image: /content/images/deepseek-markdown-20260603-57250b.jpg
+featured_image: "/content/images/ai-cover-letter-writer-chrome-extension/featured.webp"
 image_url: /content/images/deepseek-markdown-20260603-57250b.jpg
 title: "AI Cover Letter Chrome Extensions: 2026 Guide"
 meta_description: "Compare AI cover letter tools for Chrome in 2026: job-page integration, resume inputs, templates, privacy, output formats, and practical setup tips."
@@ -26,6 +26,9 @@ author: "James Mitchell"
 author_image: /content/images/authors/james-mitchell.png
 read_time: 9
 ---
+
+<img src="/content/images/ai-cover-letter-writer-chrome-extension/featured.webp" alt="ai-cover-letter-writer-chrome-extension" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 Writing a different cover letter for every job can be slow, especially when the application form is already open in Chrome. An **AI cover letter Chrome extension** can shorten the first draft by using the job posting as context, but it should not replace your judgment. The best workflow is to generate a focused draft, verify every claim against your resume, and then edit it for the employer.
