@@ -4,8 +4,7 @@ id: 31f295cc-daa8-4db8-b8c2-96636676b77d
 title: 'How to Install IDM Extension in Chrome Manually 2026: A Step-by-Step Guide'
 slug: "how-to-install-idm-extension-in-chrome-manually-2026"
 excerpt: "As we delve into 2026, the world of browser extensions continues to evolve, offering users a plethora of tools to enhance their browsing experience."
-featured_image: >-
-  /content/images/how-to-install-idm-extension-in-chrome-manually-2026-a-step-by-step-guide-mmb6y42ngkw/featured.webp
+featured_image: "/content/images/how-to-install-idm-extension-in-chrome-manually-2026/featured.webp"
 category: Chrome Extensions
 tags: []
 keywords:
@@ -22,6 +21,9 @@ created_at: '2026-03-03T22:40:20.034064+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "As we delve into 2026, the world of browser extensions continues to evolve, offering users a plethora of tools to enhance their browsing experience."
 ---
+
+<img src="/content/images/how-to-install-idm-extension-in-chrome-manually-2026/featured.webp" alt="how-to-install-idm-extension-in-chrome-manually-2026" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## How to Install IDM Extension in Chrome Manually 2026: A Step-by-Step Guide

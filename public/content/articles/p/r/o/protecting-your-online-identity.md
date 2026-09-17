@@ -6,8 +6,7 @@ title: >-
   Trackers
 slug: "protecting-your-online-identity"
 excerpt: "As we navigate the vast expanse of the internet, it's becoming increasingly important to protect our online identities from prying eyes."
-featured_image: >-
-  /content/images/protecting-your-online-identity-the-best-chrome-extension-for-blocking-trackers-mme0iyo5n01/featured.webp
+featured_image: "/content/images/protecting-your-online-identity/featured.webp"
 category: Appearance & Themes
 tags: []
 keywords:
@@ -24,6 +23,9 @@ created_at: '2026-03-05T22:03:53.542881+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "As we navigate the vast expanse of the internet, it's becoming increasingly important to protect our online identities from prying eyes."
 ---
+
+<img src="/content/images/protecting-your-online-identity/featured.webp" alt="Protecting Your Online Identity: The Best Chrome Extension for Blocking Trackers" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
 
 ## Protecting Your Online Identity: The Best Chrome Extension for Blocking Trackers

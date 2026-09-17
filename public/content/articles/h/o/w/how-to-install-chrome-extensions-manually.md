@@ -4,8 +4,7 @@ id: 51e42bc3-4afe-4085-b567-9e9ca765697a
 title: 'How to Install Chrome Extensions Manually: A Step-by-Step Guide'
 slug: how-to-install-chrome-extensions-manually
 excerpt: "Are you tired of being limited by the Chrome Web Store's restrictions on installing extensions?"
-featured_image: >-
-  /content/images/how-to-install-chrome-extensions-manually-a-step-by-step-guide-mmdrxyk1fy1/featured.webp
+featured_image: "/content/images/how-to-install-chrome-extensions-manually/featured.webp"
 category: "Chrome Extensions"
 tags: []
 keywords:
@@ -22,6 +21,9 @@ created_at: '2026-03-05T18:03:36.711861+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you tired of being limited by the Chrome Web Store's restrictions on installing extensions?"
 ---
+
+<img src="/content/images/how-to-install-chrome-extensions-manually/featured.webp" alt="how-to-install-chrome-extensions-manually" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## How to Install Chrome [Extensions](/blog/effortless-image-downloading-bulk-image-downloader-chrome-extensions "Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader Chrome Extensions") Manually: A Step-by-Step Guide

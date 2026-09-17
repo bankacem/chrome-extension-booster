@@ -8,8 +8,7 @@ excerpt: >-
   Are you a fan of Brave browser on your Android device, but missing the
   functionality of your favorite Chrome extensions? Well, you're in luck! In
   this article,
-featured_image: >-
-  /content/images/how-to-run-chrome-extensions-on-brave-android-a-step-by-step-guide-mmthozkhpgn/featured.webp
+featured_image: "/content/images/how-to-run-chrome-extensions-on-brave-android/featured.webp"
 category: Chrome Extensions
 tags: []
 keywords:
@@ -28,6 +27,9 @@ read_time: 5
 created_at: '2026-03-16T18:01:00.296677+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+
+<img src="/content/images/how-to-run-chrome-extensions-on-brave-android/featured.webp" alt="how-to-run-chrome-extensions-on-brave-android" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## How to Run Chrome Extensions on Brave Android: A Step-by-Step Guide

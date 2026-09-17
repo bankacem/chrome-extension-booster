@@ -4,8 +4,7 @@ id: c9c081d7-745c-4ac6-aeb9-0834a3bbff86
 title: 'Chrome Extensions That Stay Under 1MB'
 slug: "discover-the-best-chrome-extensions-under-1mb"
 excerpt: "When it comes to customizing your Chrome browser, extensions are a great way to add new features and functionality."
-featured_image: >-
-  /content/images/discover-the-best-chrome-extensions-under-1mb-boost-your-browser-without-slowing-it-down-mmdrqp3o64x/featured.webp
+featured_image: "/content/images/discover-the-best-chrome-extensions-under-1mb/featured.webp"
 category: "Chrome Extensions"
 tags: []
 keywords:
@@ -24,6 +23,9 @@ created_at: '2026-03-05T17:57:57.852699+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "When it comes to customizing your Chrome browser, extensions are a great way to add new features and functionality."
 ---
+
+<img src="/content/images/discover-the-best-chrome-extensions-under-1mb/featured.webp" alt="discover-the-best-chrome-extensions-under-1mb" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 When it comes to customizing your Chrome browser, extensions are the easiest way to add features — but every one of them is a little program that ships code into your browser. That's why chrome extensions under 1MB deserve a spot on your shortlist: tiny packages usually mean a single focused job, fewer moving parts, and less code running in the background. In this guide we'll sort out what package size actually predicts (and what it doesn't), show you how to measure an extension's real footprint, and share lightweight picks that earn their slot.

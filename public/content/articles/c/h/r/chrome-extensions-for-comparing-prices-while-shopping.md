@@ -11,8 +11,7 @@ excerpt: >-
 meta_description: >-
   Chrome extensions for comparing prices while shopping — alerts vs comparison
   tools, reading price history charts, and how coupon codes really work.
-featured_image: >-
-  /content/images/generated/chrome-extensions-for-comparing-prices-while-shopping.jpg
+featured_image: "/content/images/chrome-extensions-for-comparing-prices-while-shopping/featured.webp"
 category: Productivity & Tools
 tags:
   - shopping
@@ -26,6 +25,9 @@ published_at: 2026-08-17T00:00:00.000Z
 read_time: 7
 updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+
+<img src="/content/images/chrome-extensions-for-comparing-prices-while-shopping/featured.webp" alt="chrome-extensions-for-comparing-prices-while-shopping" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 This guide focuses specifically on price comparison as one piece of the broader [shopping extension toolkit](/blog/the-ultimate-chrome-extensions-for-shopping-guide) — most guides to price-comparison extensions treat them as one category, but they actually solve two different shopping moments. Sometimes you're buying something right now and want to check if this price is competitive elsewhere. Other times you've found something you want but aren't ready to buy yet, and want to know if the price drops later. Different extensions are built for each — installing the wrong type for what you're actually trying to do is the most common reason people give up on these tools.

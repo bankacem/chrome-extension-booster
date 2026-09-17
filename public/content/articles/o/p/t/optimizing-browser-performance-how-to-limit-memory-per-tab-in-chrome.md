@@ -4,8 +4,7 @@ id: 50964105-56f0-4e3b-883f-796d2ef05864
 title: 'Optimizing Browser Performance: How to Limit Memory Per Tab in Chrome'
 slug: "optimizing-browser-performance-how-to-limit-memory-per-tab-in-chrome"
 excerpt: "Are you tired of Chrome consuming excessive memory, slowing down your browsing experience? One effective solution is to limit memory per tab Chrome allows."
-featured_image: >-
-  /content/images/optimizing-browser-performance-how-to-limit-memory-per-tab-in-chrome-mmtizz38q14/featured.webp
+featured_image: "/content/images/optimizing-browser-performance-how-to-limit-memory-per-tab-in-chrome/featured.webp"
 category: "Productivity & Tools"
 tags: []
 keywords:
@@ -22,6 +21,9 @@ created_at: '2026-03-16T18:37:32.232751+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you tired of Chrome consuming excessive memory, slowing down your browsing experience? One effective solution is to limit memory per tab Chrome allows."
 ---
+
+<img src="/content/images/optimizing-browser-performance-how-to-limit-memory-per-tab-in-chrome/featured.webp" alt="optimizing-browser-performance-how-to-limit-memory-per-tab-in-chrome" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## Optimizing Browser [Performance](/blog/unlocking-peak-performance-browser-optimization-extensions "Unlocking Peak Performance: The Ultimate Guide to Browser Optimization Extensions"): How to Limit Memory Per Tab in Chrome

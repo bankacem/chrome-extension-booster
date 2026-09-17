@@ -6,8 +6,7 @@ title: >-
   Browser
 slug: "how-to-disable-chrome-extensions-simplifying-your-browser"
 excerpt: "Are you tired of having too many Chrome extensions running in the background, slowing down your browser and consuming valuable resources?"
-featured_image: >-
-  /content/images/how-to-disable-chrome-extensions-a-step-by-step-guide-to-simplifying-your-browser-mmdrxyx6he9/featured.webp
+featured_image: "/content/images/how-to-disable-chrome-extensions-simplifying-your-browser/featured.webp"
 category: Appearance & Themes
 tags: []
 keywords:
@@ -24,6 +23,9 @@ created_at: '2026-03-05T18:03:37.183664+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you tired of having too many Chrome extensions running in the background, slowing down your browser and consuming valuable resources?"
 ---
+
+<img src="/content/images/how-to-disable-chrome-extensions-simplifying-your-browser/featured.webp" alt="How to Disable Chrome Extensions: A Step-by-Step Guide to Simplifying Your Browser" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## How to Disable Chrome [Extensions](/blog/effortless-image-downloading-bulk-image-downloader-chrome-extensions "Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader Chrome Extensions"): A Step-by-Step Guide to Simplifying Your Browser

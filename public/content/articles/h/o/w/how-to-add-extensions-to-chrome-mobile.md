@@ -4,8 +4,7 @@ id: 6d7ad6af-e985-4ddb-8955-a99381a5719b
 title: 'How to Add Extensions to Chrome Mobile: A Step-by-Step Guide'
 slug: how-to-add-extensions-to-chrome-mobile
 excerpt: "Are you looking to enhance your browsing experience on Chrome mobile? One of the best ways to do so is by adding extensions to Chrome mobile."
-featured_image: >-
-  /content/images/how-to-add-extensions-to-chrome-mobile-a-step-by-step-guide-mmthoys728s/featured.webp
+featured_image: "/content/images/how-to-add-extensions-to-chrome-mobile/featured.webp"
 category: Chrome Extensions
 tags: []
 keywords:
@@ -22,6 +21,9 @@ created_at: '2026-03-16T18:00:59.805089+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you looking to enhance your browsing experience on Chrome mobile? One of the best ways to do so is by adding extensions to Chrome mobile."
 ---
+
+<img src="/content/images/how-to-add-extensions-to-chrome-mobile/featured.webp" alt="how-to-add-extensions-to-chrome-mobile" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## How to Add [Extensions to Chrome](/blog/unlock-the-full-potential-of-your-browser-essential-extensions-to-chrome "Unlock the Full Potential of Your Browser: Essential Extensions to Chrome") Mobile: A Step-by-Step Guide

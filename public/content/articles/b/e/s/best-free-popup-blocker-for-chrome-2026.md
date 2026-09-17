@@ -4,8 +4,7 @@ id: 671e7528-bf31-4496-ba4a-297aed3a8a61
 title: "Best Free Popup Blocker for Chrome (2026): 6 Options Tested & Ranked"
 slug: "best-free-popup-blocker-for-chrome-2026"
 excerpt: "Looking for the best free popup blocker for Chrome in 2026? Start with Chrome's built-in controls, then compare extensions by coverage, permissions, privacy, and site exceptions."
-featured_image: >-
-  /content/images/best-free-popup-blocker-for-chrome-2026-enhance-your-browsing-experience-mll9brzi0mt/featured.webp
+featured_image: "/content/images/best-free-popup-blocker-for-chrome-2026/featured.webp"
 category: Redirect & Navigation
 tags:
   - popup blocker
@@ -40,9 +39,10 @@ created_at: '2026-02-13T19:04:55.73939+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "The best free popup blocker for Chrome in 2026, tested: built-in settings vs 6 extensions, with measured block rates, MV3 notes, and setup steps."
 ---
+
 > 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
 
-<img src="/content/images/best-free-popup-blocker-for-chrome-2026-enhance-your-browsing-experience-mll9brzi0mt/featured.webp" alt="Best free popup blocker for Chrome in 2026" width="1200" height="630" loading="lazy" class="featured-image">
+<img src="/content/images/best-free-popup-blocker-for-chrome-2026/featured.webp" alt="best-free-popup-blocker-for-chrome-2026" width="1200" height="630" loading="lazy" class="featured-image">
 
 ## Quick answer: start with Chrome's built-in blocker
 

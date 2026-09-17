@@ -6,8 +6,7 @@ title: >-
   List for a Faster Browser
 slug: "discover-the-power-of-minimalism"
 excerpt: "Are you tired of a slow and cluttered browser? Look no further! In this article, we'll explore the best lightweight Chrome extensions list to help you…"
-featured_image: >-
-  /content/images/discover-the-power-of-minimalism-the-ultimate-lightweight-chrome-extensions-list-for-a-faster-browse-mmdrqoou66e/featured.webp
+featured_image: "/content/images/discover-the-power-of-minimalism/featured.webp"
 category: "Chrome Extensions"
 tags: []
 keywords:
@@ -24,6 +23,9 @@ created_at: '2026-03-05T17:57:57.513461+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "Are you tired of a slow and cluttered browser? Look no further! In this article, we'll explore the best lightweight Chrome extensions list to help you…"
 ---
+
+<img src="/content/images/discover-the-power-of-minimalism/featured.webp" alt="Discover the Power of Minimalism: The Ultimate Lightweight Chrome Extensions List for a Faster Browser" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## Discover the Power of Minimalism: The Ultimate Lightweight Chrome Extensions List for a Faster Browser

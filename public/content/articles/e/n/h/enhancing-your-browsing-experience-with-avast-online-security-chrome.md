@@ -7,8 +7,7 @@ excerpt: >-
   As we navigate the vast expanse of the internet, our online security has
   become a pressing concern. With the rise of cyber threats and malicious
   activities, it'
-featured_image: >-
-  /content/images/enhancing-your-browsing-experience-with-avast-online-security-chrome-ml5gzevpc4e/featured.webp
+featured_image: "/content/images/enhancing-your-browsing-experience-with-avast-online-security-chrome/featured.webp"
 category: "Security & Privacy"
 tags: []
 keywords:
@@ -24,6 +23,9 @@ read_time: 5
 created_at: '2026-02-02T17:55:05.547045+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 ---
+
+<img src="/content/images/enhancing-your-browsing-experience-with-avast-online-security-chrome/featured.webp" alt="enhancing-your-browsing-experience-with-avast-online-security-chrome" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## Enhancing Your Browsing Experience with [Avast Online Security Chrome](/blog/avast-online-security-chrome)

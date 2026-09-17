@@ -4,8 +4,7 @@ id: 54d0374c-d9a1-49c2-a367-1577b96dcdcf
 title: 'Unlocking Academic Success: Top Chrome Extensions for Students'' Productivity'
 slug: "chrome-extensions-for-student-productivity"
 excerpt: "As a student, managing your time and staying focused is crucial to achieving academic success."
-featured_image: >-
-  /content/images/unlocking-academic-success-top-chrome-extensions-for-students-productivity-mmdrqpj4vcu/featured.webp
+featured_image: "/content/images/chrome-extensions-for-student-productivity/featured.webp"
 category: "Productivity & Tools"
 tags: []
 keywords:
@@ -22,6 +21,9 @@ created_at: '2026-03-05T17:57:58.411709+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
 description: "As a student, managing your time and staying focused is crucial to achieving academic success."
 ---
+
+<img src="/content/images/chrome-extensions-for-student-productivity/featured.webp" alt="chrome-extensions-for-student-productivity" width="1200" height="630" loading="lazy" class="featured-image">
+
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
 ## Unlocking Academic Success: Top Chrome Extensions for Students' Productivity

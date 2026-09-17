@@ -6,8 +6,7 @@ title: >-
   Browser Performance
 slug: "fix-chrome-freezing-with-many-tabs-optimizing-your-browser-performance"
 excerpt: "Are you tired of experiencing Chrome freezing with many tabs open? You're not alone."
-featured_image: >-
-  /content/images/fix-chrome-freezing-with-many-tabs-a-comprehensive-guide-to-optimizing-your-browser-performance-mmthx9outvp/featured.webp
+featured_image: "/content/images/fix-chrome-freezing-with-many-tabs-optimizing-your-browser-performance/featured.webp"
 category: "Performance & Memory"
 tags: []
 keywords:
@@ -30,7 +29,7 @@ description: "Are you tired of experiencing Chrome freezing with many tabs open?
 
 > 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 
-<img src="/content/images/fix-chrome-freezing-with-many-tabs-a-comprehensive-guide-to-optimizing-your-browser-performance-mmthx9outvp/featured.webp" alt="Fix chrome freezing with many tabs: a troubleshooting guide to optimizing browser performance" width="1200" height="630" loading="lazy" class="featured-image">
+<img src="/content/images/fix-chrome-freezing-with-many-tabs-optimizing-your-browser-performance/featured.webp" alt="Fix Chrome Freezing with Many Tabs: A Comprehensive Guide to Optimizing Your Browser Performance" width="1200" height="630" loading="lazy" class="featured-image">
 
 Are you tired of experiencing **Chrome freezing with many tabs** open? You are not alone — and the good news is that the freeze almost always has a findable cause: memory pressure from suspended-nothing tabs, a misbehaving extension, corrupted profile data, or a system that simply does not have enough RAM for the workload. This troubleshooting guide walks through the diagnosis first, then the fixes in the order that actually solves the problem, so you can keep 30+ tabs open without watching the whole browser lock up.
 
