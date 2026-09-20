@@ -4181,11 +4181,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/the-best-adblock-for-android-chrome",
-      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
-      "permanent": true
-    },
-    {
       "source": "/blog/the-best-free-adblocker-for-chrome-android",
       "destination": "/blog/adblock-chrome-android-complete-guide-2026",
       "permanent": true
@@ -4197,11 +4192,6 @@
     },
     {
       "source": "/blog/the-power-of-chrome-ad-blocker-android",
-      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/the-power-of-extension-adblock-chrome-android",
       "destination": "/blog/adblock-chrome-android-complete-guide-2026",
       "permanent": true
     },
@@ -4626,18 +4616,8 @@
       "permanent": true
     },
     {
-      "source": "/blog/the-best-popup-blocker-for-chrome-in-2026",
-      "destination": "/blog/pop-up-blocker-for-chrome-partial",
-      "permanent": true
-    },
-    {
       "source": "/blog/the-popup-blocker-worth-trying-on-chrome",
       "destination": "/blog/pop-up-blocker-for-chrome-partial",
-      "permanent": true
-    },
-    {
-      "source": "/blog/exploring-poper-blocker-alternatives",
-      "destination": "/blog/poper-blocker-vs-adblock-plus-2026",
       "permanent": true
     },
     {
@@ -4683,11 +4663,6 @@
     {
       "source": "/blog/lightweight-ad-blocker-vs-ghostery",
       "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/ghostery-vs-privacy-badger-full-2026-comparison",
-      "destination": "/blog/privacy-badger-chrome",
       "permanent": true
     },
     {
