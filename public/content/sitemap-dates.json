@@ -875,5 +875,15 @@
   "vertical-tabs-chrome-sidebar-guide": "2026-09-20",
   "rss-reader-chrome-extensions-2026": "2026-09-20",
   "chrome-passkeys-passwordless-guide-2026": "2026-09-20",
-  "qr-code-generator-scanner-chrome-extensions": "2026-09-20"
+  "qr-code-generator-scanner-chrome-extensions": "2026-09-20",
+  "screen-recorder-chrome-extensions": "2026-09-21",
+  "session-isolation-multiple-accounts": "2026-09-21",
+  "cookie-consent-blocker-chrome": "2026-09-21",
+  "new-tab-speed-dial-chrome": "2026-09-21",
+  "weather-clock-chrome-extensions": "2026-09-21",
+  "watch-party-chrome-extensions": "2026-09-21",
+  "ai-summary-chrome-extensions": "2026-09-21",
+  "batch-open-tabs-scheduled-chrome": "2026-09-21",
+  "bookmark-manager-chrome-guide": "2026-09-21",
+  "zoom-magnifier-chrome-extensions": "2026-09-21"
 }

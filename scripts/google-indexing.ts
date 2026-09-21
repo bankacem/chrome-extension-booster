@@ -50,7 +50,17 @@ const MANUAL_PRIORITY_URLS = [
   `${BASE_URL}/blog/chrome-web-store-2`,
   `${BASE_URL}/blog/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools`,
   `${BASE_URL}/blog/extension-grammaire-chrome-6`,
-  `${BASE_URL}/blog/extension-chrome-screen-page-16`
+  `${BASE_URL}/blog/extension-chrome-screen-page-16`,
+  `${BASE_URL}/blog/watch-party-chrome-extensions`,
+  `${BASE_URL}/blog/zoom-magnifier-chrome-extensions`,
+  `${BASE_URL}/blog/batch-open-tabs-scheduled-chrome`,
+  `${BASE_URL}/blog/screen-recorder-chrome-extensions`,
+  `${BASE_URL}/blog/cookie-consent-blocker-chrome`,
+  `${BASE_URL}/blog/new-tab-speed-dial-chrome`,
+  `${BASE_URL}/blog/weather-clock-chrome-extensions`,
+  `${BASE_URL}/blog/ai-summary-chrome-extensions`,
+  `${BASE_URL}/blog/bookmark-manager-chrome-guide`,
+  `${BASE_URL}/blog/session-isolation-multiple-accounts`
 ];
 
 interface ArticleMeta {
@@ -216,7 +226,8 @@ async function massIndexing() {
   });
 
   const articleUrls = articles.map(a => `${BASE_URL}/blog/${a.slug}`);
-  const allTargetUrls = [...staticPages, ...articleUrls];
+  const priorityUrls = MANUAL_PRIORITY_URLS.map(u => u.startsWith('http') ? u : `${BASE_URL}${u}`);
+  const allTargetUrls = Array.from(new Set([...priorityUrls, ...staticPages, ...articleUrls]));
 
   const pendingUrls = allTargetUrls.filter(u => !indexedUrls.includes(u));
 
