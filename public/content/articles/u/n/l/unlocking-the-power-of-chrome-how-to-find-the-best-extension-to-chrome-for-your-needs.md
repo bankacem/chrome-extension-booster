@@ -196,7 +196,7 @@ Some alternative browsers that are Chrome-compatible have their own extension ma
 - [Brave browser's extension catalog](https://brave.com/brave-browser/extension-gallery/) offers a curated selection of extensions focused on privacy and security
 - [Vivaldi's community section](https://vivaldi.com/blog/vivaldi-extensions-community/) provides extensions optimized for their unique [features
 
-For mobile users](/blog/unlocking-the-power-of-extension-brave-mobile), [extensions on Brave Mobile](/blog/[unlocking](/blog/unlocking-the-power-of-eternl-chrome-enhanced-browsing)-the-power-of-extension-brave-mobile) offer an interesting alternative, allowing you to bring some extension functionality to your mobile browsing experience.
+For mobile users](/blog/unlocking-the-power-of-extension-brave-mobile), [extensions on Brave Mobile](/blog/unlocking-the-power-of-eternl-chrome-enhanced-browsing) offer an interesting alternative, allowing you to bring some extension functionality to your mobile browsing experience.
 
 ### Enterprise and Developer Programs
 

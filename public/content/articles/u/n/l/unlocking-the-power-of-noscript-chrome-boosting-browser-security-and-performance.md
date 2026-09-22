@@ -391,7 +391,7 @@ After implementing and testing various **noscript chrome** solutions, I've devel
 
 4. **Use keyboard shortcuts**: Most NoScript extensions support keyboard shortcuts for quickly allowing or blocking scripts. Learn these shortcuts to streamline your workflow.
 
-5. **Combine with other security measures**: JavaScript blocking works best as part of a comprehensive security strategy. Combine it with other security extensions like [privacy-focused tools](/blog/unlock-online-privacy-the-power-[of-avast-antitrack](/blog/unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome)-extension-chrome) and safe browsing practices.
+5. **Combine with other security measures**: JavaScript blocking works best as part of a comprehensive security strategy. Combine it with other security extensions like [privacy-focused tools](/blog/unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome) and safe browsing practices.
 
 6. **Monitor performance impacts**: Pay attention to how JavaScript blocking affects your browser performance and adjust your approach if you notice significant degradation.
 
@@ -423,7 +423,7 @@ JavaScript blocking can actually improve battery life on mobile devices by reduc
 
 ### Can I use Chrome extensions in other browsers?
 
-Many Chrome extensions, including NoScript solutions, can be adapted for other browsers like Opera. For details on compatibility and implementation, check our guide on [using Chrome extensions in Opera](/blog/[unlocking](/blog/free-vpn-extensions-worth-trying-in-chrome)-the-power-of-chrome-extensions-for-opera). The process varies depending on the browser and extension, with some requiring additional configuration or alternative versions.
+Many Chrome extensions, including NoScript solutions, can be adapted for other browsers like Opera. For details on compatibility and implementation, check our guide on [using Chrome extensions in Opera](/blog/free-vpn-extensions-worth-trying-in-chrome). The process varies depending on the browser and extension, with some requiring additional configuration or alternative versions.
 
 ### How do NoScript extensions handle JSON files?
 

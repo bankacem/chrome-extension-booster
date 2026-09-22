@@ -4664,6 +4664,91 @@
       "source": "/blog/youtube-tools-guide",
       "destination": "/blog/best-youtube-downloader-chrome-extension-2026",
       "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-ad-blocking-on-android",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-online-privacy-ghostery-for-chrome-android",
+      "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/monitor-chrome-ram-usage-guide",
+      "destination": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fix-chrome-out-of-memory-errors",
+      "destination": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ultimate-chrome-ram-memory-management-guide",
+      "destination": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome",
+      "destination": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-online-privacy-ghostery-add-on-chrome",
+      "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-ad-block-chrome-android",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ghostery-vs-stands-adblocker",
+      "destination": "/blog/ghostery-vs-ublock-origin-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ublock-origin-vs-ghostery-for-chrome-android",
+      "destination": "/blog/ghostery-vs-ublock-origin-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/privacy-badger-chrome-partial",
+      "destination": "/blog/privacy-badger-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/a-free-pop-up-blocker-extension-for-chrome",
+      "destination": "/blog/pop-up-blocker-for-chrome-partial",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-the-avast-passwords-extension",
+      "destination": "/blog/a-closer-look-at-avast-passwords-for-chrome",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-light-popup-blocker-is-better-than-heavy-adblockers-6",
+      "destination": "/blog/light-popup-blocker-a-lighter-ad-blocker",
+      "permanent": true
     }
   ],
   "trailingSlash": false

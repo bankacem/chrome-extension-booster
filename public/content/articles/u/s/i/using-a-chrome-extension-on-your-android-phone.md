@@ -288,7 +288,7 @@ After extensively testing various methods and extensions on Android devices, I'v
 
 1. **Start with essential extensions only** - When first setting up extensions on Android, begin with just 2-3 essential extensions that address your most important needs. This approach allows you to identify any compatibility issues without becoming overwhelmed, and you can gradually add more extensions as needed.
 
-2. **Use a popup blocker specifically designed for mobile** - Mobile browsers are particularly susceptible to popups and overlays that disrupt the browsing experience. A specialized popup blocker can significantly improve mobile browsing by eliminating these interruptions. For recommendations on effective solutions, check out [A Popup Blocker Worth Using on Android](/blog/[discover](/blog/discover-the-best-popup-blocker-for-android)-the-best-popup-blocker-for-android).
+2. **Use a popup blocker specifically designed for mobile** - Mobile browsers are particularly susceptible to popups and overlays that disrupt the browsing experience. A specialized popup blocker can significantly improve mobile browsing by eliminating these interruptions. For recommendations on effective solutions, check out [A Popup Blocker Worth Using on Android](/blog/discover-the-best-popup-blocker-for-android).
 
 3. **Optimize your color scheme for mobile viewing** - Extended mobile browsing can cause eye strain, especially in low-light conditions. Experiment with different color schemes and dark modes to find what works best for your eyes. For guidance on effective color extensions, see [Best Color Extension for Chrome](/blog/extension-chrome-color-2).
 

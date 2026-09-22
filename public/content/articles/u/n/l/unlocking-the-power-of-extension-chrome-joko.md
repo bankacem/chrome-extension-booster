@@ -187,7 +187,7 @@ Beyond pure savings metrics, I evaluated how Joko impacted the overall shopping 
 - **Notification Frequency**: Joko delivered an average of 3.2 notifications per shopping session, which I found appropriate without being overwhelming.
 - **Page Loading Impact**: The extension added minimal overhead to page loading times, with an average increase of 0.3 seconds.
 - **Battery Impact**: On a laptop with limited battery life, Joko's impact was negligible, reducing battery life by less than 1% during a typical 8-hour browsing session.
-- **Compatibility**: I didn't experience any conflicts with other extensions I commonly use, including [[Avast](https://www.avast.com) Password Manager for Chrome, Reviewed](/blog/[unlocking](/blog/unlocking-the-power-of-avast-password-chrome-secure-browsing)-the-power-of-avast-password-chrome-secure-browsing), [A Bing Extension for Chrome, [Explained](/blog/unlocking-the-power-of-extension-bing)](/blog/unlocking-the-power-of-extension-bing), and [Unlock Lightning-Fast Video Playback](/blog/unlock-lightning-fast-video-[playback-extension-accelerer](/blog/unlock-lightning-fast-video-playback-extension-accelerer-video)-video).
+- **Compatibility**: I didn't experience any conflicts with other extensions I commonly use, including [[Avast](https://www.avast.com) Password Manager for Chrome, Reviewed](/blog/unlocking-the-power-of-avast-password-chrome-secure-browsing), [A Bing Extension for Chrome, [Explained](/blog/unlocking-the-power-of-extension-bing)](/blog/unlocking-the-power-of-extension-bing), and [Unlock Lightning-Fast Video Playback](/blog/unlock-lightning-fast-video-playback-extension-accelerer-video).
 
 ### Overall Savings Impact
 
