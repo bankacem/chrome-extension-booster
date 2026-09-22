@@ -4161,11 +4161,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/extension-adblock-chrome-android-2",
-      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
-      "permanent": true
-    },
-    {
       "source": "/blog/extension-google-chrome-adblock-android-5",
       "destination": "/blog/adblock-chrome-android-complete-guide-2026",
       "permanent": true
@@ -4566,11 +4561,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/chrome-pop-up-blocker",
-      "destination": "/blog/pop-up-blocker-for-chrome-partial",
-      "permanent": true
-    },
-    {
       "source": "/blog/finally-stop-popups-with-this-chrome-extension",
       "destination": "/blog/pop-up-blocker-for-chrome-partial",
       "permanent": true
@@ -4632,11 +4622,6 @@
     },
     {
       "source": "/blog/enhance-your-browsing-experience",
-      "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
-      "permanent": true
-    },
-    {
-      "source": "/blog/ghostery-chrome-extension-winner",
       "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
       "permanent": true
     },

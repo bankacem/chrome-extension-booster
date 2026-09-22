@@ -19663,5 +19663,68 @@
   ],
   "status": "published",
   "canonicalPath": "/blog/emoji-picker-chrome-extensions"
+ },
+ {
+  "id": "de73144c-bee0-4938-83dc-4bd3e2f70140",
+  "title": "Ghostery Plugin Chrome",
+  "slug": "ghostery-chrome-extension-winner",
+  "description": "Are you tired of being tracked online by advertisers and third-party companies? Do you want to take control of your online privacy and security?",
+  "meta_description": "Are you tired of being tracked online by advertisers and third-party companies? Do you want to take control of your online privacy and security?",
+  "excerpt": "Are you tired of being tracked online by advertisers and third-party companies? Do you want to take control of your online privacy and security?",
+  "featured_image": "/content/images/ghostery-chrome-extension-winner/featured.webp",
+  "category": "Redirect & Navigation",
+  "tags": [
+   "[]"
+  ],
+  "keywords": [
+   "- ghostery plugin chrome"
+  ],
+  "author": "James Mitchell",
+  "published_at": "2026-03-03T09:00:02.916+00:00",
+  "updated_at": "2026-09-22T21:52:43.000+00:00",
+  "read_time": "16",
+  "status": "published"
+ },
+ {
+  "id": "4f65b98d-92f1-43cb-9ca6-eef8c5b15996",
+  "title": "Mastering Ad Blocking on Chrome Android",
+  "slug": "extension-adblock-chrome-android-2",
+  "description": "Tired of annoying ads disrupting your browsing on Chrome Android? Here's how to master ad blocking on Android and browse without the constant interruptions.",
+  "meta_description": "Tired of annoying ads disrupting your browsing on Chrome Android? Here's how to master ad blocking on Android and browse without the constant interruptions.",
+  "excerpt": "Are you tired of annoying ads disrupting your browsing experience on Chrome Android? Look no further!",
+  "featured_image": "/content/images/extension-adblock-chrome-android-2/featured.webp",
+  "category": "Ad Blockers",
+  "tags": [
+   "[]"
+  ],
+  "keywords": [
+   "- extension adblock chrome android"
+  ],
+  "author": "James Mitchell",
+  "published_at": "2026-05-11T22:15:00.339+00:00",
+  "updated_at": "2026-09-22T21:52:43.000+00:00",
+  "read_time": "30",
+  "status": "published"
+ },
+ {
+  "id": "7f522510-5cab-4131-ac7a-2c8c96f8d921",
+  "title": "Chrome Pop Up Blocker",
+  "slug": "chrome-pop-up-blocker",
+  "description": "Tired of annoying pop-ups and intrusive ads disrupting your browsing? Here's what makes a reliable Chrome pop-up blocker, and how to set one up.",
+  "meta_description": "Tired of annoying pop-ups and intrusive ads disrupting your browsing? Here's what makes a reliable Chrome pop-up blocker, and how to set one up.",
+  "excerpt": "Are you tired of annoying pop-ups and intrusive ads disrupting your online experience? Look no further than a reliable Chrome pop up blocker.",
+  "featured_image": "/content/images/chrome-pop-up-blocker/featured.webp",
+  "category": "Ad Blockers",
+  "tags": [
+   "[]"
+  ],
+  "keywords": [
+   "- chrome pop up blocker"
+  ],
+  "author": "James Mitchell",
+  "published_at": "2026-03-24T08:00:00.56+00:00",
+  "updated_at": "2026-09-22T21:52:43.000+00:00",
+  "read_time": "14",
+  "status": "published"
  }
 ]
