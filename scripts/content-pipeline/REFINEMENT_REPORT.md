@@ -62,3 +62,40 @@ TypeSafe notes: model `jev-latest` via `POST https://api.typesafe.ai/v1/systemon
 question types: `noul` (yes/no), `choice`, `score` (criteria-index 0..n-1 with
 probability legend). Score values are indices into the `criteria` list — check
 `probabilities` for the confidence distribution.
+
+---
+
+# Phase 2 — Gap Closure & Leak Cleanup (2026-09-23)
+
+Follow-up run closing the items documented under "Known remaining opportunities",
+plus a template leak discovered and fixed repo-wide.
+
+## Actions
+
+| Action | Files | Detail |
+|--------|------:|--------|
+| Decision-factor tables | 50 | Top sitemap-priority articles with no table; category-aware rows (privacy/security/performance/screenshot/reader/download/productivity/generic); honest guidance cells, no fabricated metrics |
+| Companion Extensions sections | 50 | The remaining articles with zero /extension/ links (coverage now 839/839); reuses mass_repair.companion_block |
+| FAQ sections | 2 | privacy-security-guide, youtube-tools-guide; 4 Q&A each with verified internal links |
+| `{topic}` template leak | 163 | "A good {topic} setup ..." sentence leaked from INTRO_VARIANTS; replaced with clean wording repo-wide |
+| Broken table openers | 12 | Titles with "?"/listicle format broke the seeded opener sentence; replaced with title-free variants |
+| updated_at bumps | 263 | Every genuinely changed file |
+
+## Post-run audit (audit_all.py)
+
+| Metric | Before Phase 2 | After Phase 2 |
+|--------|--------------:|--------------:|
+| Structural issues | 0 | 0 |
+| Dead internal links | 0 | 0 |
+| Articles without /extension/ links | 50 | **0** |
+| Articles without FAQ | 2 | **0** |
+| Articles without tables | 405 | 355 |
+| Articles under 1,500 words | 336 | **314** |
+| bad_meta_len | 2 | 2 (audit regex false positives on `>-` folded blocks; real lengths 135/149 chars — valid) |
+
+New tooling: `build_queues.py` (sitemap-priority gap queues), `refine_gaps.py`
+(phase-2 content additions), `fix_leaks.py` (repo-wide template leak cleanup).
+
+Remaining (Phase 3 candidates): 355 articles without tables (long-tail, lower
+priority), 314 articles under 1,500 words (need an LLM writing pass, not safe
+to automate blindly), full-corpus TypeSafe scoring (in progress).
