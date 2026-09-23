@@ -28,7 +28,7 @@ views: 0
 read_time: 15
 reading_time: 15
 created_at: 2026-08-31
-updated_at: '2026-09-14T12:00:00.000+00:00'
+updated_at: '2026-09-23T13:54:38.000+00:00'
 faq:
   - question: Does Chrome Reading List work offline?
     answer: "Not in any dependable sense. Reading List stores the URL and title, so tapping an entry triggers a normal page load that needs a connection. In my airplane-mode tests, saved Reading List items opened successfully only when I had already visited the page recently enough that it was still in Chrome's HTTP cache, which happened roughly one time in ten. Google's own help documentation describes the Reading List as a way to keep track of pages to read later, and separately documents downloading a page for offline access as a different feature. If you need offline, download the page or use a read-later app that syncs content."
@@ -62,6 +62,19 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
 Install only what matches a real need in your day — that is exactly how we test and recommend them.
+## How to Compare Your Options {#how-to-compare}
+
+Comparison shopping works best when the criteria are fixed first. Use this matrix to grade every candidate tool before you install it:
+
+| Factor | What to look for | Red flag |
+|---|---|---|
+| **Blocking scope** | Covers ads, trackers and cookie banners from one rule set | Only blocks one nuisance type and ignores the rest |
+| **Allowlist control** | One-click per-site exception that remembers your choice | No way to whitelist, forcing all-or-nothing blocking |
+| **Performance cost** | Filter lists update automatically without slowing page loads | Blocks through heavy script injection that delays rendering |
+| **Filter maintenance** | Actively maintained lists with a visible last-update date | Stale rules that let new trackers through within weeks |
+| **Data policy** | States clearly that browsing history never leaves the device | Vague wording about collected usage data |
+
+Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
 ## Key Takeaways
 
 - **Chrome's Reading List is not an offline reader.** It saves the link and syncs it across signed-in devices, but in airplane mode on my laptop it failed to render nine out of ten saved pages unless the tab had been left open and cached.

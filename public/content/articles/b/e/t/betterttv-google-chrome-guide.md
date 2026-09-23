@@ -29,7 +29,7 @@ views: 0
 read_time: 15
 reading_time: 15
 created_at: 2026-08-31
-updated_at: '2026-09-14T12:00:00.000+00:00'
+updated_at: '2026-09-23T13:56:58.000+00:00'
 faq:
   - question: Are BetterTTV emotes safe to use, or can they contain malicious content?
     answer: "Emotes are images served from BetterTTV's own CDN, and the extension renders them as images rather than executing anything from them. In practical terms the risk is closer to 'someone posted a gross picture' than 'someone ran code on my machine.' BetterTTV does moderate its global set and has an approval process for channel emotes, but channel-level sets are configured by streamers and moderators, so content quality varies by community. If you want to avoid unexpected imagery entirely, disable channel emotes in the settings panel and keep only the global set. I never encountered anything that looked like an exploit attempt in two weeks of heavy use."
@@ -55,7 +55,7 @@ If you are here because someone in a chat told you to "get BTTV so you can see t
 
 ## Companion Extensions That Complete Your Setup
 
-A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+A good extension setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
 
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
@@ -63,6 +63,19 @@ A good {topic} setup is rarely one extension working alone. These are the four l
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 
 Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
+## How to Compare Your Options {#how-to-compare}
+
+Before picking anything, score the tools you are considering against the factors that actually decide day-to-day satisfaction:
+
+| Factor | What to look for | Red flag |
+|---|---|---|
+| **Source support** | Handles the specific sites and formats you actually use | Claims everything but fails on modern sites |
+| **Quality options** | Lets you pick resolution and bitrate before downloading | One fixed quality, often the lowest |
+| **Batch handling** | Queues multiple items with consistent file naming | One-file-at-a-time clicking with messy names |
+| **Legal boundaries** | Scoped to personal use and public-domain content | Encourages bypassing paywalls or DRM |
+| **Safety** | No bundled installers, redirects or ad injection | Extra toolbars or popups you never asked for |
+
+Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
 ## Key Takeaways
 
 - **Install is a two-click Chrome Web Store job, not a manual sideload.** The only legitimate Chrome path is the official listing; anything asking you to download a `.crx` or enable Developer mode is not BetterTTV.

@@ -21,7 +21,7 @@ keywords:
 meta_description: "2026 benchmarks for Chrome, Edge, and Brave. I tested RAM usage at 10, 20, and 50 tabs, measured startup time, ad blocking impact, and extension..."
 status: published
 published_at: '2026-03-25T00:00:00.000+00:00'
-updated_at: '2026-09-14T12:00:00.000+00:00'
+updated_at: '2026-09-23T13:54:38.000+00:00'
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
@@ -120,6 +120,16 @@ All 20 extensions worked in all three browsers. However, some extensions (like t
 | Glasp | ✅ | ✅ | ✅ | Annotate and save research across all browsers |
 | DarkFlow | ✅ | ✅ | ✅ | Consistent dark mode across any browser |
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## FAQ
 
 **Q: Which browser should I use for a low-RAM PC (4-8 GB)?**

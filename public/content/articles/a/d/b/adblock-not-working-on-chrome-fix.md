@@ -27,7 +27,7 @@ views: 0
 read_time: 18
 reading_time: 18
 created_at: 2026-09-01
-updated_at: '2026-09-14T12:00:00.000+00:00'
+updated_at: '2026-09-23T13:56:58.000+00:00'
 faq:
   - question: Why did my ad blocker suddenly stop working on Chrome?
     answer: "In my case it was almost always one of three things: Chrome auto-disabled a Manifest V2 extension during the 2025-2026 rollout, the filter lists stopped updating because the extension lost its update permission, or a second blocker I forgot about was intercepting requests first. Check chrome://extensions for a grayed-out or warning badge before anything else, because that single screen answers the question in about ten seconds."
@@ -51,6 +51,29 @@ Two days later the same thing happened on my Ubuntu ThinkPad, then on an M2 MacB
 
 Out of that mess I built a ladder I now run in a fixed order, and I have run it enough times to know where the fixes actually land. It takes about 20 minutes end to end. On all three machines the real cause surfaced before step 6, which is the step where most people start — the reinstall.
 
+## How to Compare Your Options {#how-to-compare}
+
+Before picking anything, score the tools you are considering against the factors that actually decide day-to-day satisfaction:
+
+| Factor | What to look for | Red flag |
+|---|---|---|
+| **Blocking scope** | Covers ads, trackers and cookie banners from one rule set | Only blocks one nuisance type and ignores the rest |
+| **Allowlist control** | One-click per-site exception that remembers your choice | No way to whitelist, forcing all-or-nothing blocking |
+| **Performance cost** | Filter lists update automatically without slowing page loads | Blocks through heavy script injection that delays rendering |
+| **Filter maintenance** | Actively maintained lists with a visible last-update date | Stale rules that let new trackers through within weeks |
+| **Data policy** | States clearly that browsing history never leaves the device | Vague wording about collected usage data |
+
+Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
+## Companion Extensions That Complete Your Setup
+
+A good extension setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Key Takeaways
 
 - **A blocker that "stopped working" is usually a blocker Chrome turned off.** Manifest V2 extensions began getting disabled in mid-2024, and the enterprise policy that kept them alive expired in June 2025. Anything still MV2 sitting in your profile in 2026 is inert, not fixable.

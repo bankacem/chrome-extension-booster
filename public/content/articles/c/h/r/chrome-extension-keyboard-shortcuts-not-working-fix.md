@@ -28,7 +28,7 @@ views: 0
 read_time: 15
 reading_time: 15
 created_at: 2026-08-31
-updated_at: '2026-09-14T12:00:00.000+00:00'
+updated_at: '2026-09-23T13:56:58.000+00:00'
 faq:
   - question: Where is the Chrome extension keyboard shortcuts page?
     answer: "It lives at `chrome://extensions/shortcuts`, which you can paste directly into the address bar. The menu route is to open `chrome://extensions`, click the three-line hamburger menu in the top left corner, and select **Keyboard shortcuts** from the bottom of the side panel. The page lists every installed extension that declares keyboard commands, along with an input box and a scope dropdown for each command. Extensions that use their own in-page key listeners rather than Chrome's commands API will not appear here at all, which is a common source of confusion."
@@ -54,7 +54,7 @@ This guide is the result. It covers the eight fixes that resolved every case I c
 
 ## Companion Extensions That Complete Your Setup
 
-A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+A good extension setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
@@ -62,6 +62,19 @@ A good {topic} setup is rarely one extension working alone. These are the four l
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
 Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
+## How to Compare Your Options {#how-to-compare}
+
+Before picking anything, score the tools you are considering against the factors that actually decide day-to-day satisfaction:
+
+| Factor | What to look for | Red flag |
+|---|---|---|
+| **Core capability fit** | Does the one job your search is about, predictably | Bundles ten half-features and masters none |
+| **Privacy & permissions** | Requests the minimum permissions and explains why | Asks for full site access with no justification |
+| **Free vs paid limits** | Honest free tier with clearly priced upgrades | Perpetual trial nags that block core use |
+| **Maintenance cadence** | Updates within the last few months, changelog visible | Abandoned with unresolved bug reports |
+| **Exit cost** | Exports your data in an open format | Traps your content with no export path |
+
+Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
 ## Key Takeaways
 
 - **Most "broken" shortcuts were never assigned.** Chrome only shows a suggested key in the extension's manifest; if something else already owns that combo, Chrome leaves the field blank and never tells you. Open `chrome://extensions/shortcuts` and look for empty boxes before doing anything else.

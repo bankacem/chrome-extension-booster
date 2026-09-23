@@ -31,7 +31,7 @@ keywords:
   - chrome out of memory error fix
 status: published
 published_at: '2026-03-31T08:51:05.000+00:00'
-updated_at: "2026-09-20T21:54:45.000+00:00"
+updated_at: '2026-09-23T13:54:38.000+00:00'
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
@@ -223,6 +223,19 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
 
 Install only what matches a real need in your day — that is exactly how we test and recommend them.
+## How to Compare Your Options {#how-to-compare}
+
+Comparison shopping works best when the criteria are fixed first. Use this matrix to grade every candidate tool before you install it:
+
+| Factor | What to look for | Red flag |
+|---|---|---|
+| **Memory approach** | Suspends idle tabs while keeping their title and scroll position | Discards tabs so aggressively you lose form input |
+| **Granularity** | Per-site rules: pin important tabs, suspend the rest after a set time | One global timer with no exceptions |
+| **Persistence** | Suspended state survives browser restarts and restores correctly | Loses session state after a crash or update |
+| **Conflict risk** | Plays nicely with sync, dev tools and audio playback | Suspends tabs mid-playback or mid-upload |
+| **Diagnostics** | Shows which tabs actually consume memory so you can act | No visibility into what changed |
+
+Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
 ## Pro Tips and Key Takeaways {#pro-tips}
 
 1. **Start with Chrome's Memory Saver**: This built-in feature provides the biggest memory savings with minimal configuration. Enable it first before trying any other solutions.

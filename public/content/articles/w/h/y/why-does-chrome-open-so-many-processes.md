@@ -25,7 +25,7 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 11
 created_at: '2026-08-31T15:00:00.000+00:00'
-updated_at: '2026-09-14T12:00:00.000+00:00'
+updated_at: '2026-09-23T13:56:58.000+00:00'
 description: "Chrome spawns one process per site plus GPU, network and utility services — that's the security model working, not malware. Here's how to read them and when to act."
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
@@ -104,7 +104,7 @@ One habit multiplies all three: a weekly restart. Long sessions accumulate rende
 
 ## Companion Extensions That Complete Your Setup
 
-A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+A good extension setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.

@@ -20,7 +20,7 @@ author: "James Mitchell"
 author_image: /content/images/authors/james-mitchell.png
 read_time: 8
 created_at: "2026-08-24T12:00:00+01:00"
-updated_at: '2026-09-14T12:00:00.000+00:00'
+updated_at: '2026-09-23T13:56:58.000+00:00'
 description: "We tested 20 popular Chrome extensions with Chrome Task Manager and measured actual RAM and CPU impact. Here are the results and what to do about it."
 ---
 > 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
@@ -99,6 +99,16 @@ Repeat this process for each extension you suspect. The difference is usually im
 - **Use tab suspenders.** Extensions like ProTab Suspender automatically unload inactive tabs, freeing the memory those extensions were using on those tabs.
 - **Keep extensions updated.** Developers regularly optimize memory usage. An outdated extension may have known performance bugs that have since been fixed.
 
+## Companion Extensions That Complete Your Setup
+
+A good extension setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 **Q: Can extensions slow down Chrome even when I am not actively using them?**

@@ -24,7 +24,7 @@ author_image: /content/images/authors/james-mitchell.png
 views: 3
 read_time: 11
 created_at: '2026-01-19T13:57:21.719987+00:00'
-updated_at: '2026-09-14T12:00:00.000+00:00'
+updated_at: '2026-09-23T13:56:58.000+00:00'
 faq:
   - question: What is the difference between Chrome addons, extensions, and plugins?
     answer: Addons and extensions are the same thing — small programs that run inside Chrome to add features. Plugins (like the old Flash player) were external binaries that rendered content inside a page. Chrome deprecated plugins in 2020, so today the terms addon and extension are interchangeable.
@@ -184,7 +184,7 @@ Aim to audit your extensions every few months. Remove anything you haven't used 
 
 ## Companion Extensions That Complete Your Setup
 
-A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+A good extension setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.

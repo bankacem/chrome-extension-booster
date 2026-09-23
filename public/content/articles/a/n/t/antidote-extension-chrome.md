@@ -28,7 +28,7 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 7
 created_at: '2026-01-29T15:46:52.027691+00:00'
-updated_at: '2026-09-14T12:00:00.000+00:00'
+updated_at: '2026-09-23T13:54:38.000+00:00'
 ---
 > 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
 
@@ -111,6 +111,16 @@ Antidote costs $60/year for all platforms (Windows, Mac, iOS, Chrome, Firefox, E
 
 The Chrome extension requires the desktop version of Antidote to be installed — it is not a standalone extension. This is different from Grammarly which works entirely in the browser.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Verdict {#verdict}
 
 **Who should buy it:** Anyone who writes in French, especially professionally. Students, translators, journalists, and bilingual professionals will get the most value. The dictionary alone is worth the price if you write in French daily.
