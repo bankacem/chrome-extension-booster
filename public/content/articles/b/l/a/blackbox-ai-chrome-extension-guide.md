@@ -29,7 +29,7 @@ views: 0
 read_time: 16
 reading_time: 16
 created_at: 2026-08-31
-updated_at: '2026-09-23T13:54:38.000+00:00'
+updated_at: '2026-09-23T14:07:53.000+00:00'
 faq:
   - question: Is the Blackbox AI Chrome extension free?
     answer: "Yes, there is a free tier and I used it for a full week of daily work without paying. I hit what felt like soft rate limits during one heavy afternoon of back-to-back requests, where responses slowed noticeably before recovering. For normal research use, which for me meant somewhere between twenty and fifty questions a day, the free tier was sufficient. Paid plans exist and offer higher limits and additional model options, but I would run the free tier for a week before deciding whether the paid version fits your habits."
@@ -76,6 +76,13 @@ Comparison shopping works best when the criteria are fixed first. Use this matri
 | **Sharing** | Team libraries with import and export | No way to back up or migrate your work |
 
 Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
+## Related Guides {#related-guides}
+
+If this raised follow-up questions, these related guides go deeper on the neighbouring topics:
+
+- [>-](/blog/article-3-ai-code-explanation)
+- [Chrome Extensions That Slow Down Your Browser in 2026: Real Performance Tests](/blog/chrome-extensions-that-slow-down-your-browser-real-tests)
+- [>-](/blog/ai-translator-chrome-extension-free)
 ## Key Takeaways
 
 - **The install is fast, but the default site access is broad.** I set it to "On click" at chrome://extensions immediately, which took about thirty seconds and meant the extension only reads a page when I ask it to.

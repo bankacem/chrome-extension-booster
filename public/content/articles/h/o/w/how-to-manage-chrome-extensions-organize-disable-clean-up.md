@@ -21,7 +21,7 @@ author: "James Mitchell"
 author_image: /content/images/authors/james-mitchell.png
 read_time: 7
 created_at: "2026-08-24T12:00:00+01:00"
-updated_at: '2026-09-23T13:54:38.000+00:00'
+updated_at: '2026-09-23T14:07:53.000+00:00'
 description: "A practical guide to organizing your Chrome extensions, disabling unused ones, creating extension groups, and using keyboard shortcuts for faster access."
 ---
 
@@ -41,6 +41,13 @@ Over months of testing, a pattern keeps repeating: the best results come from pa
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
 All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+## Related Guides {#related-guides}
+
+Keep going with these hand-picked guides from the same series of topics:
+
+- [How to Disable Chrome Notifications: A Complete Guide](/blog/how-to-disable-chrome-notifications)
+- [>-](/blog/speed-up-google-chrome-2026)
+- [How to Organize Chrome Extensions on the Toolbar: Pin, Order, Group, and Declutter (2026)](/blog/organize-chrome-extensions-toolbar-guide)
 ## Key Takeaways
 
 | Technique | Where to Find It | Best For |

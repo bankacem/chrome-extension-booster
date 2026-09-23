@@ -26,7 +26,7 @@ author_image: /content/images/authors/james-mitchell.png
 views: 0
 read_time: 12
 created_at: '2026-09-01T12:00:00.000+00:00'
-updated_at: '2026-09-23T13:54:38.000+00:00'
+updated_at: '2026-09-23T14:07:53.000+00:00'
 description: "The 2026 stack for automating Google Sheets with AI, plus five build-this-week recipes: categorize expenses, clean imports, summarize surveys, and more."
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
@@ -158,6 +158,13 @@ Comparison shopping works best when the criteria are fixed first. Use this matri
 | **Sharing** | Team libraries with import and export | No way to back up or migrate your work |
 
 Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
+## Related Guides {#related-guides}
+
+Keep going with these hand-picked guides from the same series of topics:
+
+- [>-](/blog/chatgpt-for-google-sheets-extensions-2026)
+- [Top 10 Google Sheets Extensions for Accounting: Streamlining Financial Workflows in 2025](/blog/top-10-google-sheets-extensions-for-accounting-8)
+- [>-](/blog/google-translate-extension-to-chrome-6)
 ## Frequently Asked Questions
 
 ### Can I automate Google Sheets with AI for free?

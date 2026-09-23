@@ -28,7 +28,7 @@ views: 0
 read_time: 15
 reading_time: 15
 created_at: 2026-08-31
-updated_at: '2026-09-23T13:56:58.000+00:00'
+updated_at: '2026-09-23T14:07:53.000+00:00'
 faq:
   - question: Where is the Chrome extension keyboard shortcuts page?
     answer: "It lives at `chrome://extensions/shortcuts`, which you can paste directly into the address bar. The menu route is to open `chrome://extensions`, click the three-line hamburger menu in the top left corner, and select **Keyboard shortcuts** from the bottom of the side panel. The page lists every installed extension that declares keyboard commands, along with an input box and a scope dropdown for each command. Extensions that use their own in-page key listeners rather than Chrome's commands API will not appear here at all, which is a common source of confusion."
@@ -75,6 +75,13 @@ Before picking anything, score the tools you are considering against the factors
 | **Exit cost** | Exports your data in an open format | Traps your content with no export path |
 
 Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
+## Related Guides {#related-guides}
+
+Readers who used this guide also found these walkthroughs useful:
+
+- [Chrome Memory Saver Not Working? 7 Fixes That Actually Work (2026)](/blog/chrome-memory-saver-not-working-7-fixes)
+- [Adblock Not Working on Chrome? 9 Fixes That Actually Worked (2026)](/blog/adblock-not-working-on-chrome-fix)
+- [YouTube Adblock Not Working in Chrome? The Fix That Survived 2026](/blog/youtube-adblock-chrome-guide)
 ## Key Takeaways
 
 - **Most "broken" shortcuts were never assigned.** Chrome only shows a suggested key in the extension's manifest; if something else already owns that combo, Chrome leaves the field blank and never tells you. Open `chrome://extensions/shortcuts` and look for empty boxes before doing anything else.

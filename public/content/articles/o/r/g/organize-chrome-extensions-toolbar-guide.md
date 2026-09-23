@@ -29,7 +29,7 @@ views: 0
 read_time: 16
 reading_time: 16
 created_at: 2026-08-31
-updated_at: '2026-09-23T13:56:58.000+00:00'
+updated_at: '2026-09-23T14:07:53.000+00:00'
 faq:
   - question: How do I pin an extension in Chrome?
     answer: "Click the puzzle piece icon to the right of the address bar. Chrome shows a dropdown listing your installed extensions, each with a pin icon on the right side of its row. Click that pin icon and the extension's icon appears immediately on the toolbar. Clicking it again unpins it and sends it back to the overflow menu. If you don't see the puzzle icon at all, check that you actually have extensions installed at `chrome://extensions`, because Chrome hides the puzzle piece on profiles with none."
@@ -76,6 +76,13 @@ Before picking anything, score the tools you are considering against the factors
 | **Sharing** | Team libraries with import and export | No way to back up or migrate your work |
 
 Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
+## Related Guides {#related-guides}
+
+Readers who used this guide also found these walkthroughs useful:
+
+- [Calendar Chrome Extensions: Your Schedule in the Toolbar](/blog/calendar-chrome-extensions)
+- [Weather & Clock Chrome Extensions: Glanceable Info in Your Toolbar](/blog/weather-clock-chrome-extensions)
+- [How to Manage Chrome Extensions: Organize, Disable, and Clean Up in 2026](/blog/how-to-manage-chrome-extensions-organize-disable-clean-up)
 ## Key Takeaways
 
 - **Pinning is the only real control you have, and it's per-profile.** Click the puzzle piece icon, then the pin toggle next to each extension name. Nothing you pin syncs to another machine in my testing, so expect to redo it per device.

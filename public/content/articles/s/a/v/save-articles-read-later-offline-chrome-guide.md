@@ -28,7 +28,7 @@ views: 0
 read_time: 15
 reading_time: 15
 created_at: 2026-08-31
-updated_at: '2026-09-23T13:54:38.000+00:00'
+updated_at: '2026-09-23T14:07:53.000+00:00'
 faq:
   - question: Does Chrome Reading List work offline?
     answer: "Not in any dependable sense. Reading List stores the URL and title, so tapping an entry triggers a normal page load that needs a connection. In my airplane-mode tests, saved Reading List items opened successfully only when I had already visited the page recently enough that it was still in Chrome's HTTP cache, which happened roughly one time in ten. Google's own help documentation describes the Reading List as a way to keep track of pages to read later, and separately documents downloading a page for offline access as a different feature. If you need offline, download the page or use a read-later app that syncs content."
@@ -75,6 +75,13 @@ Comparison shopping works best when the criteria are fixed first. Use this matri
 | **Data policy** | States clearly that browsing history never leaves the device | Vague wording about collected usage data |
 
 Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
+## Related Guides {#related-guides}
+
+Keep going with these hand-picked guides from the same series of topics:
+
+- [>-](/blog/save-youtube-audio-chrome-extension)
+- [A Chrome Extension for Reading and Editing Code](/blog/extension-chrome-code-1)
+- [>-](/blog/how-to-save-instagram-photos-and-videos)
 ## Key Takeaways
 
 - **Chrome's Reading List is not an offline reader.** It saves the link and syncs it across signed-in devices, but in airplane mode on my laptop it failed to render nine out of ten saved pages unless the tab had been left open and cached.

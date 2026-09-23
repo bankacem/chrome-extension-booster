@@ -20,7 +20,7 @@ keywords:
   - Chrome extension Omnibox API
 author: Miccart Phen
 published_at: 2026-08-22
-updated_at: '2026-09-23T13:54:38.000+00:00'
+updated_at: '2026-09-23T14:07:53.000+00:00'
 read_time: 8
 faq:
   - question: "What is the Chrome Omnibox?"
@@ -186,6 +186,12 @@ Comparison shopping works best when the criteria are fixed first. Use this matri
 | **Sharing** | Team libraries with import and export | No way to back up or migrate your work |
 
 Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
+## Related Guides {#related-guides}
+
+Readers who used this guide also found these walkthroughs useful:
+
+- [Fix IDM Download Bar Not Showing in Google Chrome: A Step-by-Step Guide](/blog/fix-idm-download-bar-not-showing-in-google-chrome)
+- [Chrome Extension Keyboard Shortcuts Not Working: 8 Fixes That Actually Work (2026)](/blog/chrome-extension-keyboard-shortcuts-not-working-fix)
 ## Frequently asked questions
 
 ### What is the Chrome Omnibox?

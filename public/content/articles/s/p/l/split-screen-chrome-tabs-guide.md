@@ -29,7 +29,7 @@ views: 0
 read_time: 18
 reading_time: 18
 created_at: 2026-08-31
-updated_at: '2026-09-23T13:54:38.000+00:00'
+updated_at: '2026-09-23T14:07:53.000+00:00'
 faq:
   - question: Does Chrome have built-in split screen?
     answer: "Yes, on desktop. Chrome includes a native split view that puts two tabs side by side inside one window with a draggable divider, and you activate it from the tab's right-click menu. It is limited to two panes and it does not remember your arrangement after you close the window. Google's support documentation covers the feature and the exact menu wording for current builds, which is worth checking because the label has shifted between releases. If the option does not appear for you, update Chrome from `chrome://settings/help` and make sure the window has at least two tabs open."
@@ -77,6 +77,13 @@ Instead of trusting star ratings alone, run each candidate through the checklist
 | **Diagnostics** | Shows which tabs actually consume memory so you can act | No visibility into what changed |
 
 Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
+## Related Guides {#related-guides}
+
+Readers who used this guide also found these walkthroughs useful:
+
+- [>-](/blog/screen-grab-chrome-2025-1)
+- [The Best Chrome Extension to View Source Code](/blog/the-best-chrome-extension-to-view-source-code)
+- [Vertical Tabs in Chrome: How to Manage Tabs in a Sidebar (2026)](/blog/vertical-tabs-chrome-sidebar-guide)
 ## Key Takeaways
 
 | Option | Two-week verdict | Use it when |

@@ -30,7 +30,7 @@ views: 0
 read_time: 12
 reading_time: 12
 created_at: 2026-08-29
-updated_at: '2026-09-23T13:54:38.000+00:00'
+updated_at: '2026-09-23T14:07:53.000+00:00'
 faq:
   - question: Is an extension installed by enterprise policy a virus?
     answer: "Not automatically. Enterprise policy is a legitimate Chrome feature that IT departments use to deploy password managers, security tools, and productivity extensions. It becomes a red flag when it appears on a personal computer that no organization manages, when the extension has a generic name, or when it arrived right after you installed free software. Check chrome://policy first — if you see an ExtensionInstallForcelist entry you did not authorize, treat it as adware until proven otherwise."
@@ -229,6 +229,13 @@ Instead of trusting star ratings alone, run each candidate through the checklist
 | **Data policy** | States clearly that browsing history never leaves the device | Vague wording about collected usage data |
 
 Grade every option on all five rows before committing — a tool that fails even one row tends to disappoint within weeks.
+## Related Guides {#related-guides}
+
+Keep going with these hand-picked guides from the same series of topics:
+
+- [Remove Overlays Chrome Extension: Boost Your Productivity](/blog/remove-overlays-chrome-extension)
+- [>-](/blog/how-to-remove-chrome-extensions-cleaning-up-your-browser)
+- [What Are Tracking Cookies? How to Remove Them From Chrome (2026)](/blog/what-are-tracking-cookies-remove-chrome)
 ## Frequently Asked Questions
 
 ### Is an extension installed by enterprise policy a virus?
