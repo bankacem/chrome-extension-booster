@@ -118,6 +118,16 @@ Corrupted state survives a disable-and-enable cycle. Remove the extension comple
 
 Click Details on the extension and set Site access to "On all sites." A narrower setting silently exempts most pages, which feels identical to a broken blocker. While you are there, enable "Allow in Incognito" if you expect protection in private windows, since extensions are off there by default. Then reload the problem page once more; permissions changes need the reload to take effect.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### Does Poper Blocker block regular ads like Adblock Plus does?

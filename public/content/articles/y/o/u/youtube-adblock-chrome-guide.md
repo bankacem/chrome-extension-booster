@@ -51,6 +51,16 @@ That was the goal. Almost everyone searching for this fix is staring at one of t
 
 Getting back to a clean player took about eleven minutes, and most of that was waiting on Chrome to pull a fresh extension build. Here is the order I worked in, plus the two categories of "solution" I refused to install.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Key Takeaways
 
 - **Detection and blocking are two different failures.** A warning popup means YouTube spotted your blocker; ads that simply play through mean your blocker never fired. Fixing the wrong one wastes an hour.

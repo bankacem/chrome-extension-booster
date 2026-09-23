@@ -86,6 +86,8 @@ In conclusion, the **Lightweight ad blocker vs Ghostery** debate ultimately come
 
 ## Table of Contents
 
+
+
 [Introduction to Ad Blockers](#introduction)
 
 [Benefits of Using Ad Blockers](#benefits)

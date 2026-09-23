@@ -135,6 +135,16 @@ These tools all address the general userscript use case, but compatibility is no
 
 If you are still learning how Chrome extensions work, first review this [practical guide to finding and managing Chrome extensions](/blog/how-to-get-the-most-out-of-your-browser-with-extension-chrome-get). Tampermonkey is more flexible than a normal point-and-click extension, so its review step deserves extra attention.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently asked questions
 
 ### Is Tampermonkey safe to install in Chrome?

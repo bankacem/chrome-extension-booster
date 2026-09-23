@@ -151,6 +151,16 @@ Your choice depends on your priorities:
 - **Built-in ad blocking without extra extensions:** Yandex Browser. The aggressive ad blocker works well, but you sacrifice extension compatibility (8/10) and privacy.
 - **You should not choose Lemur Browser in 2026.** The 7/10 compatibility, broken popup UI, and 4-month update gap make it unsuitable for daily use.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ![Chrome Extensions On Android 2026 Guide Guide](/content/images/chrome-extensions-on-android-2026-guide/chrome-extensions-on-android-2026-guide-guide.webp "Chrome Extensions On Android 2026 Guide Guide")

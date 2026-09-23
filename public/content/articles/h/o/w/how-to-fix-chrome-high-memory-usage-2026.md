@@ -105,6 +105,16 @@ To put the nine fixes in perspective, here are the measured results from our 16G
 
 Stacked, the first four fixes took our rig from 9.2GB to 3.9GB — a 58% reduction — without changing how we work. That is the realistic ceiling for most users, and it requires about 15 minutes of setup.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## FAQ: Chrome Memory Questions
 
 **Why does Chrome use so much RAM compared to other browsers?** Chrome isolates every site (and sometimes every iframe) in its own process for security and crash-resilience. That architecture duplicates per-process overhead across many sites. It is a deliberate trade: one crashed tab no longer kills the browser. Other browsers make similar trades with different accounting.

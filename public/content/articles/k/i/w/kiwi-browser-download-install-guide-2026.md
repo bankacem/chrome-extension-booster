@@ -116,6 +116,16 @@ The honest recommendation: try [Yandex or Lemur against Kiwi](/blog/kiwi-vs-yand
 
 **Battery drain or crashes after installing a specific extension.** Same failure modes as desktop, plus mobile overhead: check the extension for a known-bad update in its reviews, disable it, and verify the crash disappears. An extension that misbehaves on current Chrome will misbehave worse on a frozen engine.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### Is Kiwi Browser still available on the Play Store?

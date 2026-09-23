@@ -127,6 +127,16 @@ Fixing the problem once is great, but preventing it from coming back is even bet
 - **Limit Tab Groups:** While Tab Groups are great for organization, having 50 tabs grouped together still consumes RAM. Use a bookmark manager or a "read later" service instead.
 - **Restart Regularly:** Simply closing and reopening Chrome once a day can clear out "zombie" processes that haven't fully terminated.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently Asked Questions (FAQ)
 
 #### 1. Why is Chrome using 90% of my RAM on Windows 11?

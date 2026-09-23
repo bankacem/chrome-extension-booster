@@ -76,6 +76,8 @@ In conclusion, using a **secure browsing extension like Ghostery** is an effecti
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Benefits of Using a Secure Browsing Extension like Ghostery](#benefits)

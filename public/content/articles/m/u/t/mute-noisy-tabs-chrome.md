@@ -36,8 +36,7 @@ If you've ever been working quietly when suddenly a YouTube video in another tab
 
 As someone who regularly works with dozens of tabs simultaneously, I understand how frustrating unexpected sounds can be. This guide is designed for Chrome users who want practical, tested solutions to control browser audio without sacrificing functionality. I've spent weeks evaluating various approaches—from Chrome's native mute controls to third-party extensions like tab sound manager Chrome tools—to provide you with the most effective strategies for stopping noisy websites Chrome often serves. By the end of this article, you'll have a clear understanding of which solution works best for your specific needs.
 
-## Table of Contents
-- [Why Controlling Tab Sound Matters in 2026](#why-matters)
+## Table of Contents- [Why Controlling Tab Sound Matters in 2026](#why-matters)
 - [Chrome's Built-in Mute Controls: What's Available](#built-in-controls)
 - [Top Mute Tab Chrome Extensions](#extensions)
 - [How to Mute All Tabs at Once](#mute-all-tabs)
@@ -48,6 +47,7 @@ As someone who regularly works with dozens of tabs simultaneously, I understand 
 - [Companion Extensions That Complete Your Setup](#companion-extensions)
 - [Frequently Asked Questions](#faqs)
 - [Final Verdict](#final-verdict)
+
 
 ## Why Controlling Tab Sound Matters in 2026 {#why-matters}
 

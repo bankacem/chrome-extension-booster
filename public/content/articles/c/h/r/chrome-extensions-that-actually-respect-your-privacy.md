@@ -30,6 +30,16 @@ Installing a privacy extension to protect your privacy seems straightforward. Bu
 
 So which Chrome extensions that respect privacy can you actually trust in 2026? This analysis looks at 15 Chrome extensions commonly recommended for privacy and evaluates them on three criteria: whether the source code is publicly available for audit, what data the extension collects according to its privacy policy, and whether the extension phones home to external servers during normal use.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Key Takeaways
 
 | Extension | Open Source | Data Collected | Verdict |

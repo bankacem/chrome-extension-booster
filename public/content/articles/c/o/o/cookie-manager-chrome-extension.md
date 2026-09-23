@@ -67,6 +67,8 @@ In conclusion, managing cookies effectively is a critical aspect of maintaining 
 
 ## Table of Contents
 
+
+
 [Introduction](#intro) | [Understanding the Importance of Cookie Management](#importance) | [Key Features to Look for in an Extension Chrome Cookie Manager](#features) | [Choosing the Best Extension Chrome Cookie Manager for Your Needs](#choosing) | [Additional Tools for Enhanced Privacy and Security](#additional) | [FAQ](#faq)
 
 ## Frequently Asked Questions (FAQ)

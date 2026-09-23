@@ -51,6 +51,16 @@ Then add one focused extension only if you have a specific gap, such as unwanted
 
 ![A Chrome privacy shield filtering abstract tracking signals while a lightweight performance gauge remains steady](/content/images/stop-trackers-on-chrome-without-slowing-down/chrome-privacy-baseline.jpg "Chrome privacy controls and lightweight browsing")
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Key Takeaways
 
 ![Stop trackers on Chrome without slowing down — summary of the lean privacy setup on a laptop](https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80)

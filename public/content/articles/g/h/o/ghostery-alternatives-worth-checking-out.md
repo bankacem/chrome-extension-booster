@@ -87,6 +87,8 @@ For more information on how to enhance your online experience, check out our art
 
 ## Table of Contents
 
+
+
 [Introduction to Ghostery Alternatives](#introduction)
 
 [Why Look for Alternatives to Ghostery?](#why-look-for-alternatives)

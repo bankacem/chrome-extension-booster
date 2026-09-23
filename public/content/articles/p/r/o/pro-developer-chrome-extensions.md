@@ -193,6 +193,16 @@ Here is the paradox: installing too many performance-focused extensions will deg
 
 Use **Extensity** to execute this strategy. Its dropdown menu lists every installed extension with one-click toggles, so you can activate React DevTools only when working on a React project. This keeps memory low and prevents extensions from injecting content scripts into pages where they are not needed.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Frequently Asked Questions
 
 **Are developer Chrome extensions safe to install?**

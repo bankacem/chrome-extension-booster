@@ -34,8 +34,7 @@ description: >-
 
 Struggling to find [that webpage you visited](/blog/full-page-screenshot-chrome-tutorial-8) last week? You remember the topic but not the exact URL or title. If this sounds familiar, you're not alone. Chrome's built-in history search is notoriously limited, leaving many users frustrated when they need to quickly find a visited page. This comprehensive guide is for anyone who wants to master their browsing history with a history search chrome extension that actually works. After testing over a dozen options, I'll share the most effective solutions to transform how you revisit and manage your web history.
 
-## Table of Contents
-- [Why Chrome's Native History Search Falls Short](#why-chrome-history-fails)
+## Table of Contents- [Why Chrome's Native History Search Falls Short](#why-chrome-history-fails)
 - [What Makes a Great History Search Extension?](#what-makes-great-history-extension)
 - [Top History Search Chrome Extensions Reviewed](#top-history-extensions-reviewed)
 - [How to Choose the Right Extension for Your Needs](#how-to-choose-right-extension)
@@ -47,6 +46,7 @@ Struggling to find [that webpage you visited](/blog/full-page-screenshot-chrome-
 - [Companion Extensions That Complete Your Setup](#companion-extensions)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Final Verdict](#final-verdict)
+
 
 ## Why Chrome's Native History Search Falls Short {#why-chrome-history-fails}
 

@@ -34,6 +34,16 @@ That's like driving a delivery truck with the handbrake on. The right utility ch
 
 I test Chrome extensions for a living. Over the past month, I put 40+ productivity tools through real work scenarios: drafting emails, managing projects, researching competitors, recording feedback, and wrangling the tab chaos that builds up by Wednesday afternoon. These 10 extensions made the cut. They're not the flashiest or the most popular. They're the ones that actually saved me time. (If you want a second opinion before building your own stack, our [ultimate productivity Chrome extensions guide](/blog/supercharge-your-workflow-the-ultimate-productivity-chrome-extensions-guide) approaches the same problem from a different angle.)
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Key Takeaways: Utility Chrome Extensions for Professionals
 
 | Extension | Core Job | Free Tier Reality |

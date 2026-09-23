@@ -94,6 +94,16 @@ Two follow-ups round out the decision. If the comparison you actually care about
 
 One more consideration cuts across workloads: switching costs. Bookmarks, passwords, and history migrate cleanly between the two browsers through built-in import, and both support the same major extensions in practice, so the trial period costs an evening rather than a weekend. The reverse migration also stays open — nothing here locks you in — which makes testing both browsers on your own workload the cheapest diagnostic available, and the only one that measures your actual sites on your actual machine.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently Asked Questions
 
 ### Does Firefox really use less RAM than Chrome in 2026?

@@ -143,6 +143,16 @@ A standard PNG screenshot of a 4K monitor can be 5MB to 10MB. 100 screenshots la
 
 *Learn how to use FFmpeg to turn a 50MB screen recording into a 2MB high-quality GIF for GitHub and Slack.*
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently Asked Questions
 
 ### Q: Why do my screenshots look blurry when I paste them into Slack or Discord?

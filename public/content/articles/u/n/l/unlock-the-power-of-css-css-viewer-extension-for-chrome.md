@@ -32,12 +32,8 @@ For those who are new to web development, CSS is a styling language used to cont
 
 ![What is a CSS Viewer Extension for Chrome? — css viewer extension for chrome illustration for extensionto readers](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80)
 
- [
- Learn More
- ](/extension/quick-screenshot-lite)
- [
- Add to Chrome
- ](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
+ [Learn More](/extension/quick-screenshot-lite)
+ [Add to Chrome](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
  
  
 
@@ -92,6 +88,8 @@ To get the most out of your **CSS viewer extension for Chrome**, follow these ti
 In conclusion, a **CSS viewer extension for Chrome** is an essential tool for web developers and designers. By providing a simple and efficient way to inspect and analyze CSS code, these extensions can streamline your web development workflow, improve your productivity, and enhance your overall browsing experience. Whether you're a beginner or an experienced web developer, a **CSS viewer extension for Chrome** is a must-have tool in your web development arsenal.
 
 ## Table of Contents
+
+
 
 [What is a CSS Viewer Extension for Chrome?](#what-is-a-css-viewer-extension-for-chrome)
 

@@ -70,6 +70,8 @@ For more information on Chrome extensions and how they can enhance your browsing
 
 ## Table of Contents
 
+
+
 ![Extension Ad Block Chrome Features](/content/images/extension-ad-block-chrome/extension-ad-block-chrome-features.webp "Extension Ad Block Chrome Features")
 
 

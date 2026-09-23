@@ -239,6 +239,16 @@ Use one PiP window at a time while diagnosing a problem. Keep the source tab ope
 
 For privacy, install only the official extension or a third-party tool whose publisher, requested access, update path, and source you can evaluate. A PiP tool that asks to read every site deserves the same review as any other Chrome extension. Our [Chrome extension management guide](/blog/how-to-get-the-most-out-of-your-browser-with-extension-chrome-get) explains how to review publisher information and site access before adding a browser tool. For a wider extension-selection framework, see the [complete Chrome extensions guide](/blog/chrome-extensions-complete-guide).
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently asked questions
 
 ### Is Picture-in-Picture built into Chrome?

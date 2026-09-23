@@ -151,6 +151,16 @@ A short trial on your own sites is more useful than an unverified universal winn
 
 ![A decision path matching different browsing priorities to Privacy Badger or Ghostery](/content/images/privacy-badger-chrome/privacy-badger-ghostery-scenario-choice.jpg "Choose by browsing style")
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Final verdict
 
 **Privacy Badger is the better first experiment for a focused, behavior-based tracker-blocking workflow. Ghostery is the better first experiment for users who want broader ad blocking, tracker visibility, and configurable controls.** That is a fit-based recommendation, not a claim that one extension wins every test.

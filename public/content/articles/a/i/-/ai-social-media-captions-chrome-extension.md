@@ -136,6 +136,16 @@ Output: *"Dinner in 10 minutes. One pan. Zero cleanup. Save this for your lazy c
 
 ---
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Pro Tips for Mastering Viral Captions
 
 1. **Train your brand voice:** Most extensions learn from your past captions. Use the extension daily for 2 weeks → It adapts to your style.

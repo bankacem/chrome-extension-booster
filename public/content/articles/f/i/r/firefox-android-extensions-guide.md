@@ -114,6 +114,16 @@ Stay on Chrome or Samsung Internet if raw JS speed is critical to your workflow,
 
 A middle path exists for the undecided: keep Chrome installed, make Firefox the default browser for reading and research, and revisit the decision after a month. Extensions are the kind of feature that sells itself quietly — you stop noticing the cookie banners and ad slots you no longer see, which is precisely the point.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### Do all desktop extensions work on Firefox Android?

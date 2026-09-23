@@ -52,6 +52,16 @@ The reason I did this properly instead of skimming store listings is that most r
 
 What follows is what I installed, what I measured on my machine, where each tool broke, and which one I still have pinned to my toolbar now that the testing is over. I am naming limitations honestly, including two extensions I would not recommend to most people despite their popularity.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Key Takeaways
 
 - **Capture speed beats feature depth.** Anything over roughly eight seconds per note got skipped when I was busy, no matter how good the output looked.

@@ -70,6 +70,8 @@ By following the tips and recommendations outlined in this article, you can unlo
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Why Do You Need Chrome Mobile Adblock?](#why)

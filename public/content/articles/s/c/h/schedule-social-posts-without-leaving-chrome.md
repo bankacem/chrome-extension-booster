@@ -74,6 +74,8 @@ A **Chrome extension for scheduling posts** is a must-have tool for any social m
 
 ## Table of Contents
 
+
+
 ![Schedule Social Posts Without Leaving Chrome Features](/content/images/schedule-social-posts-without-leaving-chrome/schedule-social-posts-without-leaving-chrome-features.webp "Schedule Social Posts Without Leaving Chrome Features")
 
 

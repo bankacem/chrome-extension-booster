@@ -29,9 +29,7 @@ Are you struggling with a slow PC that makes even simple browsing a frustrating 
 
 Whether you're using an older laptop, a budget Chromebook, or simply have too many applications running simultaneously, the right lightweight extensions can transform your browsing experience. I'll walk you through exactly which extensions to choose, how to configure them for optimal performance, and how to maintain a fast, responsive browser even on modest hardware. Let's dive into the world of performance-boosting extensions that won't weigh down your system.
 
-## Table of Contents
-
-- [Understanding Resource-Hungry Browsers](#understanding-resource-hungry-browsers)
+## Table of Contents- [Understanding Resource-Hungry Browsers](#understanding-resource-hungry-browsers)
 - [What Makes Browser Extensions Resource-Intensive](#what-makes-browser-extensions-resource-intensive)
 - [The Benefits of Lightweight Extensions](#the-benefits-of-lightweight-extensions)
 - [Top Light Browser Extensions for Slow PC](#top-light-browser-extensions-for-slow-pc)
@@ -43,6 +41,8 @@ Whether you're using an older laptop, a budget Chromebook, or simply have too ma
 - [Pro Tips and Key Takeaways](#pro-tips-and-key-takeaways)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Final Verdict](#final-verdict)
+
+
 ## Understanding Resource-Hungry Browsers {#understanding-resource-hungry-browsers}
 
 Modern browsers have become increasingly sophisticated, but this sophistication comes at a cost. Chrome, [Firefox](https://www.mozilla.org/firefox/), and even Edge can consume significant system resources, especially when multiple tabs and extensions are running. On a slow PC with limited RAM and an older processor, this resource consumption becomes painfully apparent. I've tested this extensively on various machines—from a 2015 MacBook Air with 4GB RAM to a budget Windows laptop with an eMMC drive—and the pattern is consistent: resource management is the key to maintaining productivity.
@@ -74,7 +74,7 @@ If you're experiencing these issues, particularly on a slow PC, it's likely time
 
 Not all browser extensions are created equal when it comes to resource consumption. Understanding what makes certain extensions more demanding than others can help you make informed decisions about which ones to install. Through my extensive testing, I've identified several key factors that contribute to an extension's resource footprint.
 
-First, background processes are a major culprit. Many extensions run scripts continuously in the background, even when you're not actively using them. These background processes consume CPU cycles and memory, contributing to overall system sluggishness. For example, [some ad blocker](/blog/why-light-popup-blocker-is-better-than-heavy-adblockers-6)s maintain constant connections to filter lists and update rules, which can be resource-intensive. In contrast, well-designed lightweight extensions are more conservative about background activity, running scripts only when needed and properly cleaning up resources when idle.
+First, background processes are a major culprit. Many extensions run scripts continuously in the background, even when you're not actively using them. These background processes consume CPU cycles and memory, contributing to overall system sluggishness. For example, [some ad blockers](/blog/why-light-popup-blocker-is-better-than-heavy-adblockers-6) maintain constant connections to filter lists and update rules, which can be resource-intensive. In contrast, well-designed lightweight extensions are more conservative about background activity, running scripts only when needed and properly cleaning up resources when idle.
 
 The complexity of an extension's functionality also plays a significant role. Extensions that perform complex operations—like video processing, extensive DOM manipulation, or constant monitoring of web pages—naturally require more resources. I've tested extensions that claim to "enhance" YouTube viewing but actually slow down video loading and increase CPU usage by 20-30%. These "kitchen sink" extensions often do more harm than good on slow hardware, especially when multiple resource-intensive extensions are running simultaneously.
 
@@ -243,9 +243,9 @@ In my testing, these optimizations reduced memory usage by 30-40% while maintain
 
 Productivity extensions should enhance your workflow, not hinder it. After testing numerous productivity tools on slow PCs, I've identified several lightweight options that provide essential functionality without the resource overhead of their heavier counterparts.
 
-For quick access to frequently used tools, I recommend [Simple Copy URL](/extension/simple-copy-url) instead of comprehensive clipboard managers. This lightweight extension provides just the essential URL copying functionality without tracking or organizing all your copied content. In my testing, it loaded instantly and consumed minimal resources—typically less than 10MB of memory—making it perfect for slow PCs where every millisecond counts. While it lacks the advanced features of comprehensive clipboard managers, it performs its core function exceptionally well without system impact.
+For quick access to frequently used tools, I recommend Simple Copy URL instead of comprehensive clipboard managers. This lightweight extension provides just the essential URL copying functionality without tracking or organizing all your copied content. In my testing, it loaded instantly and consumed minimal resources—typically less than 10MB of memory—making it perfect for slow PCs where every millisecond counts. While it lacks the advanced features of comprehensive clipboard managers, it performs its core function exceptionally well without system impact.
 
-For note-taking while browsing, [Simple Notepad](/extension/simple-notepad) offers a lightweight alternative to more comprehensive note-taking extensions. It provides basic text editing capabilities with cloud sync, without the complex formatting and organization features that can slow down other tools. In my testing, it consumed negligible resources while providing all the note-taking functionality I needed for research and reference. The interface is clean and straightforward, with keyboard shortcuts for quick access.
+For note-taking while browsing, Simple Notepad offers a lightweight alternative to more comprehensive note-taking extensions. It provides basic text editing capabilities with cloud sync, without the complex formatting and organization features that can slow down other tools. In my testing, it consumed negligible resources while providing all the note-taking functionality I needed for research and reference. The interface is clean and straightforward, with keyboard shortcuts for quick access.
 
 ### Streamlining Your Extension Stack
 
@@ -295,7 +295,7 @@ When choosing security extensions for a slow PC, prioritize those with minimal r
 
 3. **Simple HTTPS Everywhere**: This lightweight extension ensures you connect to sites using HTTPS when available, without the extensive filtering and processing of more comprehensive security tools. It provides essential protection without significant resource consumption.
 
-For users who need more comprehensive security, consider using [[NoScript for Chrome](/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance)](/undefined) in a minimal configuration. While NoScript can be resource-intensive if configured extensively, using it with a whitelist of trusted sites and minimal script filtering can provide strong security with moderate resource usage.
+For users who need more comprehensive security, consider using [NoScript for Chrome](/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance) in a minimal configuration. While NoScript can be resource-intensive if configured extensively, using it with a whitelist of trusted sites and minimal script filtering can provide strong security with moderate resource usage.
 
 ### Balancing Security and Performance
 

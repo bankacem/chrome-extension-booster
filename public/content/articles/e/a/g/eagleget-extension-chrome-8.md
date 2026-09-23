@@ -82,6 +82,8 @@ Looking for more ways to enhance your browsing experience? Check out our [Quick 
 
 ## Table of Contents
 
+
+
 ![Eagleget Extension Chrome 8 Features](/content/images/eagleget-extension-chrome-8/eagleget-extension-chrome-8-features.webp "Eagleget Extension Chrome 8 Features")
 
 

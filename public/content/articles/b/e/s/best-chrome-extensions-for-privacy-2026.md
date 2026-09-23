@@ -122,6 +122,16 @@ Most privacy guides — including [EFF's own recommendations](https://www.eff.or
 
 The better approach: **one tracker blocker (uBlock Origin), one URL cleaner (ClearURLs), and one script blocker (NoScript, optional).** That is all you need. Everything else — dark mode, password manager, screenshot tool — does not need to be privacy-focused because it does not touch tracking data.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## FAQ
 
 **Q: Are privacy extensions enough to stay anonymous?**

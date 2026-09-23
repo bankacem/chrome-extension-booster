@@ -32,6 +32,8 @@ Before we begin, it's worth noting that our [Quick Screenshot Lite](/extension/q
 
 ## Table of Contents
 
+
+
 [What is a File Downloader Extension?](#what-is-a-file-downloader-extension)
 
 [Features to Consider](#features-to-consider)

@@ -304,6 +304,16 @@ For context, here's how Chrome's memory usage compares to competing browsers wit
 
 Chrome is no longer the worst offender by a significant margin—thanks largely to the improvements covered in this guide. The gap with Edge has narrowed considerably since Chrome 130's Memory Saver improvements, and with the methods above configured correctly, Chrome's effective memory usage drops to levels competitive with any browser on the market.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently Asked Questions
 
 ### Why does Chrome use so much RAM compared to other browsers?

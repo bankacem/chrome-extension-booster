@@ -185,6 +185,16 @@ Highlight and save password security best practices from articles and guides. [G
 ### 8. DarkFlow
 Late-night security audits are easier with proper dark mode. [DarkFlow](https://chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) applies per-domain dark mode to password manager dashboards.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### Is Chrome's built-in password manager safe enough?

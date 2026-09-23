@@ -52,6 +52,16 @@ The short version is that extension syncing works better than most people think 
 
 This guide is what I'd tell a friend setting up a second computer. I'll walk through turning sync on and verifying it actually did something, the exact troubleshooting order I use when extensions don't appear, a timing comparison of the three realistic ways to move extensions to a new machine, and honest answers about work accounts, phones, and what Google can see. Everything below is from my own installs on Chrome 2026 builds, not from a spec sheet.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Key Takeaways
 
 - **Extensions do sync, but only if you explicitly leave them checked.** Chrome Sync includes extensions by default when you sign in and pick "Sync everything," yet a single trip through Customize sync to disable one category can quietly turn extensions off too.

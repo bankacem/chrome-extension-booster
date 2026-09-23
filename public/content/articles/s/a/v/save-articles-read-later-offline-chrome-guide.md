@@ -52,6 +52,16 @@ The reason I ran it this way is that "save for later" and "save for offline" are
 
 Below is what I actually measured on my machine (a mid-range laptop, Chrome 1xx-era stable channel, tested through August 2026), what worked in a tunnel with zero bars, and where each option quietly fails. I include the exact menu paths and button labels so you can follow along, plus the troubleshooting steps that fixed the two problems I hit most often.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Key Takeaways
 
 - **Chrome's Reading List is not an offline reader.** It saves the link and syncs it across signed-in devices, but in airplane mode on my laptop it failed to render nine out of ten saved pages unless the tab had been left open and cached.

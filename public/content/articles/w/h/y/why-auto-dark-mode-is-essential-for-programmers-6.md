@@ -46,12 +46,8 @@ Before we dive in, let's take a look at the table of contents for this article:
 
 ![What is Auto Dark Mode? — why auto dark mode is essential for programmers illustration for extensionto readers](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80)
 
- [
- Learn More
- ](/extension/auto-dark-mode-switcher)
- [
- Add to Chrome
- ](https://chromewebstore.google.com/detail/auto-dark-mode-switcher-u/obbhliekbfgpcdippngphefofiicgjml)
+ [Learn More](/extension/auto-dark-mode-switcher)
+ [Add to Chrome](https://chromewebstore.google.com/detail/auto-dark-mode-switcher-u/obbhliekbfgpcdippngphefofiicgjml)
  
  
 

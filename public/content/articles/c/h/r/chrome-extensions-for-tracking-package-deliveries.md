@@ -136,6 +136,16 @@ This ordering matters more than any single extension's specific feature list —
 | UPS-specific tracker | Single carrier (UPS) | Consistent single-courier shoppers | Yes |
 | FedEx-specific tracker | Single carrier (FedEx) | Consistent single-courier shoppers | Yes |
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently Asked Questions
 
 **Q: Should I use a multi-carrier aggregator even if most of my packages come from one courier?**

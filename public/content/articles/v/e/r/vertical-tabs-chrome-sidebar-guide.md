@@ -36,15 +36,15 @@ In my experience testing dozens [of tab management solutions](/blog/the-tab-mana
 
 For anyone who's ever struggled to find a specific tab among a horizontal row of icons, or who wants to mimic the efficient sidebar design found in other browsers, this comprehensive resource will walk you through all the current methods to implement vertical tabs in Chrome. [I've tested each approach](/blog/split-screen-chrome-tabs-guide) extensively in my daily workflow, so you'll get practical insights beyond what you'll find in generic tutorials.
 
-## Table of Contents
-- [Understanding Chrome's Vertical Tabs in 2026](#understanding-chrome-vertical-tabs)
+## Table of Contents- [Understanding Chrome's Vertical Tabs in 2026](#understanding-chrome-vertical-tabs)
 - [How to Enable Native Vertical Tabs in Chrome](#native-vertical-tabs)
 - [Best Chrome Extensions for Vertical Tabs](#best-vertical-tabs-extensions)
 - [Customizing Your Vertical Tab Experience](#customizing-vertical-tabs)
 - [Advanced Tab Management Strategies](#advanced-tab-management)
-- [[Performance Considerations with](/blog/stop-chrome-from-freezing-with-many-tabs) Vertical Tabs](#performance-considerations)
+- [Performance Considerations with Vertical Tabs](/blog/stop-chrome-from-freezing-with-many-tabs)
 - [Vertical Tabs vs. Other Tab Management Approaches](#vertical-tabs-vs-other-approaches)
 - [Troubleshooting Common Issues](#troubleshooting-issues)
+
 
 ## Understanding Chrome's Vertical Tabs in 2026 {#understanding-chrome-vertical-tabs}
 
@@ -278,6 +278,16 @@ Vertical Tabs for Side Panel users might encounter issues with the search functi
 
 For any extension-specific issues, checking the developer's support page or review section can provide targeted solutions. Many extension developers are responsive to user feedback and frequently update their products to address reported issues.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Pro Tips and Key Takeaways
 
 1. **Start with Chrome's native vertical tabs** before exploring extensions to establish your baseline workflow and identify what additional features you actually need.

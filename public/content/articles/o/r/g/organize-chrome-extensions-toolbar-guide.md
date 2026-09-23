@@ -53,6 +53,16 @@ What I found is that Chrome gives you less than you'd hope and more than most pe
 
 This guide walks through exactly what I clicked, in order, with the menu names and button labels as they appear in current Chrome. I'll also be honest about the parts that annoyed me, including the icons that reappeared after an update and the "grouping" everyone asks about that doesn't really exist. If you want the short version, skip to the Key Takeaways and the step ladder.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Key Takeaways
 
 - **Pinning is the only real control you have, and it's per-profile.** Click the puzzle piece icon, then the pin toggle next to each extension name. Nothing you pin syncs to another machine in my testing, so expect to redo it per device.

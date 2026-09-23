@@ -72,6 +72,8 @@ In conclusion, the **HTTPS Sci-Hub SE Chrome extension** is a valuable tool for 
 
 ## Table of Contents
 
+
+
 ![Https Sci Hub Se Chrome Extension 16 Features](/content/images/https-sci-hub-se-chrome-extension-16/https-sci-hub-se-chrome-extension-16-features.webp "Https Sci Hub Se Chrome Extension 16 Features")
 
 

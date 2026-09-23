@@ -68,6 +68,8 @@ Ready to take your Twitter productivity to the next level? Explore our range of 
 
 ## Table of Contents
 
+
+
 ![A Chrome Extension For Power Twitter Users Features](/content/images/a-chrome-extension-for-power-twitter-users/a-chrome-extension-for-power-twitter-users-features.webp "A Chrome Extension For Power Twitter Users Features")
 
 

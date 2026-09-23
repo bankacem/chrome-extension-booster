@@ -31,6 +31,16 @@ Everliker chrome is a free extension with one focused job: it automates the liki
 
 The pitch is easy to explain. Feeds reward accounts that show up and interact, and doing that by hand takes hours every week. Everliker chrome hands the most mechanical part — the like button, over and over — to your browser, while leaving the judgment calls to you. This guide covers what it actually does, a five-minute setup walkthrough, the benefits that are realistic, and the platform rules you need to respect.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Key Takeaways
 
 | Question | Short Answer |

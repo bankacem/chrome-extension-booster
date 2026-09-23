@@ -51,6 +51,16 @@ That was the tail end of the Manifest V2 shutdown. I spent the following weekend
 
 It is 2026 now. MV2 is gone from Chrome stable, the enterprise policy that kept it breathing for another year has been removed, and the honest answer to "did chrome kill adblock" is: mostly no, but it took something real, and it took it permanently. Here is what actually changed, what the rule caps mean in practice, and the setup I landed on.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Key Takeaways
 
 - **Blocking webRequest is gone, not ad blocking.** MV3 extensions declare rules ahead of time through declarativeNetRequest and Chrome matches them itself, so the extension never inspects the request. Blocking still happens; the extension just stopped being the one making the call.

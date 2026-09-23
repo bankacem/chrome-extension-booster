@@ -163,6 +163,16 @@ An extension keyword adds another data path: after activation, the extension can
 On a work or school profile, administrators may control the default search engine, extension installation, or available settings. If a shortcut keeps returning after you remove it, check whether the Chrome profile is managed before treating the behavior as malware. If the default search engine changes without your approval, inspect installed extensions and run Chrome’s security and account-review steps rather than installing an unknown “fix.”
 
 <a id="frequently-asked-questions"></a>
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently asked questions
 
 ### What is the Chrome Omnibox?

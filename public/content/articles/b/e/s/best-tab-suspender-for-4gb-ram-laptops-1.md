@@ -100,6 +100,16 @@ Recently, Google introduced a native "Memory Saver" mode within Chrome settings.
 
 Chrome’s built-in Memory Saver may be enough when inactive tabs are the main source of pressure. A third-party suspender is worth testing only when you need custom timers or detailed exclusions that Chrome does not provide. Use one policy at a time and keep important pages active.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Pro Tips for Optimizing 4GB RAM Workflows
 
 Installing the **best tab suspender for 4GB RAM laptops** is step one. To truly master your limited hardware, follow these additional tips:

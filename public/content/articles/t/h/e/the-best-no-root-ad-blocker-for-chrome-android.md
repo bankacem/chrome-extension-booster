@@ -103,6 +103,8 @@ For more information on ad blockers and Chrome extensions, check out our guides 
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Why Do You Need an Ad Blocker for Chrome Android?](#why-do-you-need-an-ad-blocker-for-chrome-android)

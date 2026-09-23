@@ -88,6 +88,8 @@ In conclusion, **stopping trackers Chrome** is essential for protecting your onl
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Understanding Trackers and Their Impact on Online Privacy](#understanding-trackers)

@@ -128,6 +128,16 @@ YouTube's Terms of Service permit personal viewing and listening but restrict do
 
 The practical boundary: convert playlists you own, playlists from creators who explicitly permit downloads, audio you have licensed, or public-domain and Creative Commons material. If your goal is simply offline listening of mainstream music and podcasts, the authorized routes are compared in [YouTube Premium versus an MP3 converter](/blog/youtube-premium-vs-mp3-converter-2026) for music, and RSS-based podcast apps handle shows by design. For the full legal picture, including the fair-use questions people most often ask, see [whether YouTube to MP3 is legal in 2026](/blog/is-youtube-to-mp3-legal-2026-guide). This article is a workflow guide, not legal advice.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Frequently Asked Questions
 
 ### How long does it take to convert a 100-video YouTube playlist to MP3?

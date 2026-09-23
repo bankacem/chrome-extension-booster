@@ -89,6 +89,8 @@ In conclusion, a **best popup blocker Chrome extension** can be a valuable tool 
 
 ## Table of Contents
 
+
+
 [What is a Popup Blocker?](#what-is-a-popup-blocker)
 
 [How Do Popup Blockers Work?](#how-do-popup-blockers-work)

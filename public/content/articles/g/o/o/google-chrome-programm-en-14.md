@@ -45,6 +45,8 @@ Chrome extensions are small web applications that can add browser actions, page 
 
 ## Table of Contents
 
+
+
 ![Table of Contents — build a Chrome extension illustration for extensionto readers](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80)
 
 [Introduction to Building Chrome Extensions](#introduction-to-building-chrome-extensions)

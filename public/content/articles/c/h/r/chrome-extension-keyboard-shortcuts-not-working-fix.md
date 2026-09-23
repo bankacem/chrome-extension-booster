@@ -52,6 +52,16 @@ It turned out the shortcut had never been assigned in the first place. Chrome ha
 
 This guide is the result. It covers the eight fixes that resolved every case I could reproduce, in the order I'd try them, with the exact pages and button labels you'll be clicking. I've also been honest about the two situations where I never got a shortcut working and had to settle for a workaround instead. If you're here because your extension shortcut worked yesterday and doesn't today, start with Step 2.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Key Takeaways
 
 - **Most "broken" shortcuts were never assigned.** Chrome only shows a suggested key in the extension's manifest; if something else already owns that combo, Chrome leaves the field blank and never tells you. Open `chrome://extensions/shortcuts` and look for empty boxes before doing anything else.

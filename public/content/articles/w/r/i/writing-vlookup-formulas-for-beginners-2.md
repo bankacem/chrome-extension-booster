@@ -48,6 +48,8 @@ VLOOKUP is useful for matching an ID, product code, or name to a value in a tabl
 
 ## Table of Contents
 
+
+
 ![Table of Contents — writing VLOOKUP formulas for beginners illustration for extensionto readers](https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1200&q=80)
 - [What is VLOOKUP and Why Does It Matter?](#what-is-vlookup)
 

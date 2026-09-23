@@ -134,6 +134,16 @@ Avoid assuming that a slower page is proof that Ghostery failed or that a faster
 
 If your main question is whether Ghostery should be configured for maximum privacy, continue to the [Ghostery settings guide](/blog/best-ghostery-settings-for-maximum-online-privacy). If you want a direct product comparison, use [uBlock Origin vs Ghostery for Chrome Android](/blog/ghostery-vs-ublock-origin-2026). For alternative tools, see [A Ghostery Alternative Worth Considering](/blog/a-ghostery-alternative-worth-considering) or [An Open-Source Alternative to Ghostery](/blog/a-ghostery-alternative-worth-considering). Readers comparing broader protection options can also consult [Best Chrome Extensions for Online Safety](/blog/best-chrome-extensions-for-online-safety); that page owns the roundup intent rather than this Ghostery-specific explanation.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## FAQ
 
 ### What does Ghostery for Chrome block?

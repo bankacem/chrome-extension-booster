@@ -151,6 +151,16 @@ Then test in a limited context. Use a non-sensitive page, keep site access narro
 
 ![A five-step Android extension decision path from defining the task to testing and removing the extension](/content/images/extension-android-google-chrome/android-extension-safe-decision-path.jpg "A safer way to choose extensions on Android")
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## FAQ
 
 ### Can I install Chrome Web Store extensions directly in Chrome for Android?

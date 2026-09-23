@@ -28,9 +28,11 @@ description: "Are you tired of being limited by the Chrome Web Store's restricti
 
 ## How to Install Chrome [Extensions](/blog/effortless-image-downloading-bulk-image-downloader-chrome-extensions "Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader Chrome Extensions") Manually: A Step-by-Step Guide
 
-Are you tired of being limited by the [Chrome Web Store](/blog/chrome-web-store-guide "Unlocking the Power of the Chrome Web Store: A Comprehensive Guide")'s restrictions on installing extensions? Do you want to know **how to install Chrome extensions manually** to unlock the full potential of your browser? Look no further! In this article, we'll walk you through the process of manually installing Chrome extensions, and explore the benefits and risks associated with this approach.
+Are you tired of being limited by the [Chrome Web Store's](/blog/chrome-web-store-guide) restrictions on installing extensions? Do you want to know **how to install Chrome extensions manually** to unlock the full potential of your browser? Look no further! In this article, we'll walk you through the process of manually installing Chrome extensions, and explore the benefits and risks associated with this approach.
 
 ## Table of Contents
+
+
 
 [What are Chrome Extensions?](#what-are-chrome-extensions) | [Why Install Extensions Manually?](#why-install-extensions-manually) | [Step-by-Step Guide to Manual Installation](#step-by-step-guide) | [Tips and Precautions](#tips-and-precautions) | [FAQ](#faq)
 

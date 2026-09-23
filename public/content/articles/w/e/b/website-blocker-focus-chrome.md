@@ -36,8 +36,7 @@ In today's digital landscape, distractions are just a click away, making it incr
 
 The challenge of digital distraction has evolved significantly with the advent of AI-driven content and increasingly sophisticated social media algorithms designed to capture and hold your attention. What worked a few years ago may no longer be effective against today's more engaging (and addictive) online experiences. That's why this guide goes beyond simple blocking mechanisms to examine advanced features like scheduling, focus modes, and integration with productivity systems. By the end of this article, you'll understand not just which extensions to use, but how to implement them as part of a comprehensive focus strategy that works with your workflow rather than against it.
 
-## Table of Contents
-- [Why Distraction Blocking Matters More Than Ever in 2026](#why-distraction-blocking-matters-more-than-ever-in-2026)
+## Table of Contents- [Why Distraction Blocking Matters More Than Ever in 2026](#why-distraction-blocking-matters-more-than-ever-in-2026)
 - [How Website Blockers Actually Work](#how-website-blockers-actually-work)
 - [Key Features to Look For in a Website Blocker](#key-features-to-look-for-in-a-website-blocker)
 - [Top Website Blocker Chrome Extensions Compared](#top-website-blocker-chrome-extensions-compared)
@@ -50,6 +49,7 @@ The challenge of digital distraction has evolved significantly with the advent o
 - [Companion Extensions That Complete Your Setup](#companion-extensions)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Final Verdict](#final-verdict)
+
 
 ## Why Distraction Blocking Matters More Than Ever in 2026 {#why-distraction-blocking-matters-more-than-ever-in-2026}
 

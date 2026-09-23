@@ -26,6 +26,16 @@ read_time: 8
 
 In 2026, there's a better way. The best free AI grammar checker extensions no longer demand a monthly fee: open-source tools let you plug in your own API key (or run the model locally) so your text stays private, and Trinka AI offers completely free academic grammar checking with no subscription at all. This guide walks through what each option does well, what it costs you in setup time, and which one fits how you actually write.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Key Takeaways
 
 | Tool | Free Tier | Privacy | Best Feature | Language Support |

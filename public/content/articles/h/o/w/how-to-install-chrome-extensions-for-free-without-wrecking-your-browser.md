@@ -92,15 +92,15 @@ howto:
 
 You can install free Chrome extensions more safely by starting with the [Chrome Web Store](/blog/chrome-web-store-guide), checking the publisher, reading the permission prompt, and removing tools you no longer need. The walkthrough below covers installation, permission auditing, malware avoidance, and performance management.
 
-## Table of Contents
-
-- [How to Install Extensions from the Chrome Web Store](#how-to-install-extensions-from-the-chrome-web-store)
+## Table of Contents- [How to Install Extensions from the Chrome Web Store](#how-to-install-extensions-from-the-chrome-web-store)
 - [How to Audit Extension Permissions](#how-to-audit-extension-permissions)
 - [Common Extension Risks and How to Prevent Them](#common-extension-risks-and-how-to-prevent-them)
 - [How to Manage Extension Count for Performance](#how-to-manage-extension-count-for-performance)
 - [Red Flags That Indicate a Dangerous Extension](#red-flags-that-indicate-a-dangerous-extension)
 - [How to Recover If an Extension Wrecks Your Browser](#how-to-recover-if-an-extension-wrecks-your-browser)
 - [Frequently Asked Questions](#frequently-asked-questions)
+
+
 
 ## How to Install Extensions from the Chrome Web Store
 
@@ -211,6 +211,16 @@ If you enabled Developer Mode for sideloading, turn it back off. Leaving it on m
 
 If all else fails, Chrome's [Troubleshooting](/blog/how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting) page and Google's Chrome Help Community are good resources for edge cases. In rare situations, creating a new Chrome profile and migrating only your bookmarks and passwords may be the cleanest fix.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 **Can Chrome extensions steal my passwords?**

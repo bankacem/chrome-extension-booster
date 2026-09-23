@@ -22,6 +22,16 @@ Welcome to the **Article5 Dashlane features** deep dive — installment five of 
 
 The internet reacted predictably. "RIP Dashlane," tweeted the masses. "Switching to Bitwarden," declared Reddit threads. And many did. But here's what nobody expected: Dashlane didn't die. It thrived. By focusing exclusively on paying customers, they built something most free competitors can't match: a genuinely premium experience with features that justify the price tag. In 2026, Dashlane's Chrome extension is one of the most feature-rich password tools available. But is it worth $4.99/month when Bitwarden is free? Let's find out.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Key Takeaways
 
 ![Dashlane features deep dive on a security researcher's desk](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80)

@@ -70,6 +70,8 @@ For more information on Chrome extensions and how to use them, be sure to check 
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Why are Chrome Extensions Indispensable?](#why-are-chrome-extensions-indispensable)

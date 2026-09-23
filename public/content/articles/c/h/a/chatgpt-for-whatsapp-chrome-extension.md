@@ -142,6 +142,16 @@ Your friend asks: *"How does crypto work? Should I invest?"*
 
 ---
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Pro Tips for Mastering AI-Powered Messaging
 
 1. **Quick templates:** Save your 10 most common reply types (e.g., "Meeting confirmation," "Apology for delay," "Thank you," "Politely decline invitation")

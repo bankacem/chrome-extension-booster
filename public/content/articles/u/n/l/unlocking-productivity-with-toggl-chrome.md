@@ -33,14 +33,12 @@ Before we dive into the nitty-gritty of **Toggl Chrome**, let's take a brief loo
 
 ## Table of Contents
 
+
+
 ![Table of Contents — toggl chrome illustration for extensionto readers](https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&w=1200&q=80)
 
- [
- Learn More
- ](/extension/quick-screenshot-lite)
- [
- Add to Chrome
- ](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
+ [Learn More](/extension/quick-screenshot-lite)
+ [Add to Chrome](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
  
  
 

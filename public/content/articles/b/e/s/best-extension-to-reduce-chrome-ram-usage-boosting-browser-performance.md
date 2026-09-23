@@ -85,6 +85,8 @@ Remember to always choose extensions from reputable sources, read reviews, and c
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Why Reduce Chrome RAM Usage?](#why-reduce-chrome-ram-usage)

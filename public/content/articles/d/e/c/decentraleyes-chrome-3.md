@@ -57,6 +57,8 @@ As you can see, **Decentraleyes Chrome** is a powerful tool for protecting your 
 
 ## Table of Contents
 
+
+
 ![Decentraleyes Chrome 3 Overview](/content/images/decentraleyes-chrome-3/decentraleyes-chrome-3-overview.webp "Decentraleyes Chrome 3 Overview")
 
 

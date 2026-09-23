@@ -68,6 +68,8 @@ In addition to an **extension chrome rafraichissement automatique**, there are m
 
 ## Table of Contents
 
+
+
 ![Extension Chrome Rafraichissement Automatique 15 Features](/content/images/extension-chrome-rafraichissement-automatique-15/extension-chrome-rafraichissement-automatique-15-features.webp "Extension Chrome Rafraichissement Automatique 15 Features")
 
 

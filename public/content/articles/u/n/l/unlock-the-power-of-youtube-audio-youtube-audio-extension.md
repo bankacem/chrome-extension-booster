@@ -29,6 +29,16 @@ Are you tired of watching YouTube videos just to listen to the audio? A good **Y
 
 YouTube has quietly become the world's largest audio library. Music mixes, long-form interviews, white noise loops, university lectures — it's all there. But the platform is built for watching, not listening: turn off the display on a laptop and playback often stops, and there's no native "audio only" download. That gap is exactly what a YouTube audio extension fills.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Key Takeaways
 
 | Consideration | What to Look For | Why It Matters |

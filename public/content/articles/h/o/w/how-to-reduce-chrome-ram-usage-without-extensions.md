@@ -85,6 +85,8 @@ In conclusion, **reducing Chrome RAM usage without extensions** requires a combi
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Understanding Chrome's RAM Usage](#understanding-chrome-ram-usage)

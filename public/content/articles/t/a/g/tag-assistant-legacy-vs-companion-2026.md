@@ -124,6 +124,16 @@ Most migration pain comes from four sources, and each has a known fix. Teams mig
 
 **Ad blockers interfere with the session.** Content blockers treat the debug window like any other page, and aggressive filter lists can suppress the preview iframe or the debugger scripts the session depends on. If sessions load empty or the timeline never populates, pause the blocker for Tag Assistant and your own domain — the privacy trade-off is confined to debugging time, and protection returns to duty on every other page. The same applies to hardened browser settings that clear the storage a session needs in order to resume, which is why the cookie exception fix in the previous paragraph usually solves both problems at once.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### What happened to Tag Assistant Legacy?

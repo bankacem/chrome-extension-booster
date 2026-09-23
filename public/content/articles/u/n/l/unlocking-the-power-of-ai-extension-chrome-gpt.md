@@ -31,12 +31,8 @@ As we navigate the vast expanse of the internet, we're constantly seeking ways t
 
 ![What is GPT, and How Does it Work? — extension chrome gpt illustration for extensionto readers](https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80)
 
- [
- Learn More
- ](/extension/quick-screenshot-lite)
- [
- Add to Chrome
- ](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
+ [Learn More](/extension/quick-screenshot-lite)
+ [Add to Chrome](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
  
  
 
@@ -73,6 +69,8 @@ In conclusion, **extension chrome gpt** is a powerful tool that can revolutioniz
 As we move forward in the world of AI and Chrome extensions, it's essential to stay informed about the latest developments and advancements. Whether you're a developer, student, or simply an avid internet user, **extension chrome gpt** is an exciting technology that's worth exploring. So, be sure to check out our other resources and guides, such as our [Chrome Extensions vs. Web Apps](/blog/chrome-extensions-vs-web-apps-comparison) article, to learn more about the world of Chrome extensions and how they can enhance your browsing experience.
 
 ## Table of Contents
+
+
 
 [What is GPT, and How Does it Work?](#what-is-gpt)
 

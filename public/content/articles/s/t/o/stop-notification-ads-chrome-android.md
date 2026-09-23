@@ -108,6 +108,16 @@ Here is the quick reference for matching symptoms to sources, plus the habits th
 
 And the five rules I give every reader who asks how they got infected in the first place. First, never dismiss a notification prompt by tapping Allow — tap **Block**, so the site records a refusal. Second, do not sideload APKs from random sites; Play Store vetting is imperfect, but it is dramatically better than direct downloads. Third, review an app's notification behavior the week you install it — Android 13+ lets you mute any app's notifications individually, and a "free" app that bell-rings you daily is telling you its business model. Fourth, keep Play Protect on, understanding it is a floor rather than a ceiling. Fifth, for the ads this guide cannot fix — in-page clutter and same-domain video ads — you need a content-blocking browser such as the ones in our [best adblock browsers for Android roundup](/blog/best-adblock-browser-for-android-2026), or [Firefox for Android with real extensions](/blog/firefox-android-extensions-guide) once notification permissions are clean. DNS-level tools like those in our [AdGuard DNS setup guide](/blog/adguard-dns-setup-guide-android-router-pc) complement this but will not stop notification spam — wrong layer entirely. None of this is heavy lifting: the whole maintenance routine is a glance at each new app during install week and a notification-history check if anything suspicious ever reappears.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### Why am I getting notification ads if I never allowed any websites?

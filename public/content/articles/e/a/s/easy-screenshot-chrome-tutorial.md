@@ -36,6 +36,8 @@ In this [comprehensive](/blog/ghostery-vs-ublock-origin-2026 "uBlock Origin vs G
 
 ## Table of Contents
 
+
+
 [Introduction](#introduction) | [Built-in Screenshot Capabilities](#built-in-screenshot) | [Chrome Extensions for Easy Screenshotting](#chrome-extensions) | [Step-by-Step Screenshot Tutorial](#tutorial) | [Frequently Asked Questions](#faq) | [Comparison of Screenshot Tools](#comparison)
 
 ## Introduction to Easy Screenshotting in Chrome

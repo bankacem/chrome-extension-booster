@@ -63,6 +63,8 @@ In conclusion, Eternl Chrome is a powerful and flexible platform that offers a u
 
 ## Table of Contents
 
+
+
 [What is Eternl Chrome?](#what-is-eternl-chrome)
 
 [Key Features of Eternl Chrome](#key-features-of-eternl-chrome)

@@ -69,6 +69,8 @@ In conclusion, a **chrome extension to download images** can be a powerful tool 
 
 ## Table of Contents
 
+
+
 [Benefits of Using a Chrome Extension to Download Images](#benefits)
 
 [How to Choose the Best Chrome Extension to Download Images](#choose)

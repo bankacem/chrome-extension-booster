@@ -27,6 +27,8 @@ Are you tired of tedious and time-consuming web automation tasks? Look no furthe
 
 ## Table of Contents
 
+
+
 [Introduction to Cypress](#introduction)
 
 [What is Cypress Plugin Chrome?](#cypress-plugin-chrome)

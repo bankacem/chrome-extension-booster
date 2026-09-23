@@ -63,6 +63,8 @@ When choosing a **Chrome ad blocker Android**, there are several features to loo
 
 ## Table of Contents
 
+
+
 Here is a table of contents for this article, with anchor links to each section:
 
 1. [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")

@@ -26,6 +26,16 @@ read_time: 8
 
 Welcome to the 2026 reality of email writing. If you're still typing every word, you're wasting hours each week. But if you install the wrong extension, you might be handing your entire inbox to a data broker. After testing every major candidate, this guide covers the best AI writing assistants for Gmail — what's actually safe, what's actually fast, and which one will save you the most time.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Key Takeaways
 
 | Extension | Free Tier | Privacy | Best Feature | The Catch |

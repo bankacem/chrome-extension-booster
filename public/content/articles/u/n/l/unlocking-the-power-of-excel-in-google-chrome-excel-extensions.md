@@ -29,12 +29,8 @@ As we navigate the vast landscape of Chrome extensions, it's essential to unders
 
 ## Introduction to Excel Extensions for Google Chrome
 
- [
- Learn More
- ](/extension/auto-dark-mode-switcher)
- [
- Add to Chrome
- ](https://chromewebstore.google.com/detail/auto-dark-mode-switcher-u/obbhliekbfgpcdippngphefofiicgjml)
+ [Learn More](/extension/auto-dark-mode-switcher)
+ [Add to Chrome](https://chromewebstore.google.com/detail/auto-dark-mode-switcher-u/obbhliekbfgpcdippngphefofiicgjml)
  
  
 
@@ -87,6 +83,8 @@ In conclusion, the right **excel extension google chrome** can revolutionize you
 Remember to check out our featured Chrome extensions, including [Formula Builder Pro](/extension/formula-builder-pro), [Offline Reader Pro](/extension/offline-reader-pro), and [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher), to discover how they can enhance your **excel extension google chrome** experience.
 
 ## Table of Contents
+
+
 
 [Introduction to Excel Extensions for Google Chrome](#introduction)
 

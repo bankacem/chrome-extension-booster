@@ -103,6 +103,8 @@ Speeding up Google Chrome on an old laptop requires a combination of optimizing 
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Understanding the Problem](#understanding-the-problem)

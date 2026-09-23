@@ -37,15 +37,15 @@ updated_at: '2026-09-14T12:00:00.000+00:00'
 
 <img src="/content/images/alishark-chrome-extension/featured.webp" alt="Alishark Chrome Extension Review 2026: Is It Worth It for Dropshipping?" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents
-
-- [What Is Alishark?](#what)
+## Table of Contents- [What Is Alishark?](#what)
 - [Features I Tested](#features)
 - [Alishark vs Competitors](#vs)
 - [Companion Extensions for Product Research](#companions)
 - [Pricing](#pricing)
 - [Verdict](#verdict)
 - [FAQ](#faq)
+
+
 
 ## What Is Alishark? {#what}
 

@@ -77,6 +77,8 @@ In conclusion, the **best screen recorder for developers** is one that meets you
 
 ## Table of Contents
 
+
+
 [Introduction](#introduction)
 
 [Key Features of the Best Screen Recorder for Developers](#key-features)

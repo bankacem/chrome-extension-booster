@@ -26,9 +26,7 @@ description: "As a web developer, you're likely familiar with the importance of 
 
 As a web developer juggling multiple projects across different devices, I've found that [Kiwi Browser](https://kiwibrowser.com/)'s developer mode has become an indispensable tool in my workflow. This Chromium-based browser offers a unique set of debugging and testing capabilities that go beyond what you'd find in standard mobile browsers. [In this comprehensive guide](/blog/enhancing-browser-security-with-norton-safe-web-chrome-a-comprehensive-guide), I'll share my hands-on experience with Kiwi Browser developer mode, showing you exactly how to unlock its full potential for mobile web development, debugging, and testing. Whether you're building responsive websites, testing browser compatibility, [or just need more control](/blog/discover-the-best-spreadsheets-software-for-small-business) over your browsing environment, this guide will walk you through everything you need to know.
 
-## Table of Contents
-
-- [Introduction to Kiwi Browser Developer Mode](#introduction-to-kiwi-browser-developer-mode)
+## Table of Contents- [Introduction to Kiwi Browser Developer Mode](#introduction-to-kiwi-browser-developer-mode)
 - [Enabling Developer Mode: Step-by-Step](#enabling-developer-mode-step-by-step)
 - [Advanced Debugging Tools](#advanced-debugging-tools)
 - [Testing Responsive Design Across Devices](#testing-responsive-design-across-devices)
@@ -39,13 +37,10 @@ As a web developer juggling multiple projects across different devices, I've fou
 - [Troubleshooting Common Issues](#troubleshooting-common-issues)
 - [Pro Tips and Key Takeaways](#pro-tips-and-key-takeaways)
 - [Frequently Asked Questions](#frequently-asked-questions)
-- [Final Verdict](#final-verdict)- [[Performance Optimization Features](/blog/stop-chrome-from-crashing-with-a-tab-discarder)](#performance-optimization-features)
-- [Security Considerations](#security-considerations)
-- [Customization and Workflow Enhancements](#customization-and-workflow-enhancements)
-- [Troubleshooting Common Issues](#troubleshooting-common-issues)
-- [Pro Tips and Key Takeaways](#pro-tips-and-key-takeaways)
-- [Frequently Asked Questions](#frequently-asked-questions)
 - [Final Verdict](#final-verdict)
+- [Performance Optimization Features](/blog/stop-chrome-from-crashing-with-a-tab-discarder)
+
+
 
 ## Introduction to Kiwi Browser Developer Mode {#introduction-to-kiwi-browser-developer-mode}
 
@@ -316,6 +311,16 @@ Some experimental flags may cause instability or unexpected behavior. If you enc
 
 For persistent issues, Kiwi's community forums and GitHub repository are valuable resources. In my experience, the development team is responsive to bug reports and often provides quick fixes for common issues.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Pro Tips and Key Takeaways {#pro-tips-and-key-takeaways}
 
 After extensive testing and real-world use of Kiwi Browser's developer mode, I've discovered several strategies that can help you maximize its potential for your development workflow.

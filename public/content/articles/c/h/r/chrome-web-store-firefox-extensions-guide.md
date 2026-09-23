@@ -52,7 +52,7 @@ I](/blog/chrome-web-store-extensions-guide) spent three weeks running Firefox as
 
 ## Table of Contents
 
-- [The Complete Guide to Chrome Extensions on Firefox in 2026: [What Actually Works](#the-complete-guide-to-chrome-extensions-on-firefox-in-2026-what-actually-works)
+- [The Complete Guide to Chrome Extensions on Firefox in 2026: What Actually Works](#the-complete-guide-to-chrome-extensions-on-firefox-in-2026-what-actually-works)
 - [Why This Matters in 2026](#why-matters)
 - [The Technical Reality: Chrome vs Firefox Extension Architecture](#technical-reality)
 - [Migration Path #1: First-Party Firefox Versions (The Gold Standard)](#migration-path-1)
@@ -64,6 +64,8 @@ I](/blog/chrome-web-store-extensions-guide) spent three weeks running Firefox as
 - [Pro Tips and Key Takeaways](#pro-tips)
 - [Frequently Asked Questions](#faq)
 - [Final Verdict](#final-verdict)## Why This Matters in 2026 {#why-matters}
+
+
 
 The debate around Chrome extension Firefox compatibility has raged for nearly a decade, with outdated forum posts and marketing claims creating confusion that persists today. In 2026, the landscape has shifted significantly. Chrome dominates the browser market with approximately 65% share, while Firefox maintains a dedicated 3-5% user base that values privacy and customization. Many developers now prioritize cross-browser compatibility, but the implementation details remain challenging. The question isn't just "can I use Chrome extensions on Firefox?" but rather "what's the actual workflow, what will break, and how much effort will it take?" 
 
@@ -171,6 +173,16 @@ The most striking finding was how well-established categories like privacy, secu
 
 Settings and data transfer presented another challenge. Even when extensions had Firefox equivalents, configurations didn't automatically migrate. I spent approximately 30 minutes exporting and re-importing filter lists, password vaults, and other settings. This configuration overhead is often overlooked in discussions about extension compatibility but represents a significant part of the migration effort.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Pro Tips and Key Takeaways {#pro-tips}
 
 1. **Always check Mozilla Add-ons first** before attempting any conversion methods. The official Firefox versions are always the most reliable option.

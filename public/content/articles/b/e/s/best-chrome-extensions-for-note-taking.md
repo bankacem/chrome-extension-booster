@@ -31,9 +31,7 @@ Type "best chrome extensions for note taking" into Google and you'll get a dozen
 
 This guide fixes that by starting with the question that actually matters — what are you trying to capture, and where do you want it to live — and it covers two things almost every other roundup skips entirely: whether your notes can actually leave the extension if you switch tools later, and what you're granting when you click "Add to Chrome."
 
-## Table of Contents
-
-- [Which Type of Note-Taking Extension Do You Actually Need](#which-type-you-need)
+## Table of Contents- [Which Type of Note-Taking Extension Do You Actually Need](#which-type-you-need)
 - [Three Real Setups, So You Can See Yourself in One](#three-real-setups)
 - [Best for Lightweight Notes on Any Page](#lightweight-notes)
 - [Best for Clipping Full Pages into a Bigger Workspace](#clipping-pages)
@@ -43,6 +41,8 @@ This guide fixes that by starting with the question that actually matters — wh
 - [Pro Tips and Key Takeaways](#pro-tips)
 - [Frequently Asked Questions](#faq)
 - [Final Verdict](#final-verdict)## Which Type of Note-Taking Extension Do You Actually Need {#which-type-you-need}
+
+
 
 Before picking a tool, be honest about what you're actually doing:
 
@@ -56,7 +56,7 @@ Picking based on this instead of a star rating is the single biggest factor in w
 
 Every note extension asks for permissions. Some are reasonable (storage to save your notes), others are concerning (access to all your browsing history). I've tested dozens over the years, and the pattern is clear: extensions that need "read and modify all your data on visited websites" rarely do anything that a more limited permission couldn't handle. For example, a simple note-taker doesn't need to know every site you visit—just the page you're currently on.
 
-Before installing, check the permissions in Chrome's extensions management page (chrome://extensions). If an extension asks for more than "storage" and "activeTab," ask why. The best tools work with minimal permissions because they're designed [for specific task](/blog/monitor-chrome-ram-usage-guide)s, not data collection.
+Before installing, check the permissions in Chrome's extensions management page (chrome://extensions). If an extension asks for more than "storage" and "activeTab," ask why. The best tools work with minimal permissions because they're designed [for specific tasks](/blog/monitor-chrome-ram-usage-guide), not data collection.
 
 ### The Trap of "Good Enough" Note Extensions
 
@@ -217,6 +217,16 @@ Some extensions offer premium features that require more permissions. For exampl
 
 In my experience, extensions with minimal permissions tend to be more focused on their core function and less on data collection.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Pro Tips and Key Takeaways {#pro-tips}
 
 1. **Start with your workflow, not the tool**: Before looking at extensions, map out how you currently capture and organize information. The right tool should fit into this workflow, not force you to change how you work.
@@ -269,4 +279,4 @@ After testing dozens of note extensions over the years, the most important lesso
 
 The key is to match the tool to your workflow, not the other way around. Start with your current process for capturing information, then find the extension that enhances it rather than disrupting it. And remember: the best note extension is the one you'll actually use consistently—simplicity often beats features in the long run.
 
-If you're looking for more tested Chrome extensions and guides tailored to your specific needs, visit [our curated [library of professional browser tools](/blog/professional-browser-tools-guide)](/) where we help you choose extensions by task, risk, and workflow.
+If you're looking for more tested Chrome extensions and guides tailored to your specific needs, visit [our curated library of professional browser tools](/blog/professional-browser-tools-guide) where we help you choose extensions by task, risk, and workflow.

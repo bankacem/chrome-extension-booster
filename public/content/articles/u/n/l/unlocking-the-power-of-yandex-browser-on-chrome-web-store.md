@@ -27,9 +27,7 @@ As a seasoned browser tester who's spent countless hours evaluating different br
 
 Whether you're a privacy-conscious user, a productivity enthusiast, or someone who simply wants to customize their browsing environment, understanding the extension capabilities of Yandex Browser is crucial. In this comprehensive guide, I'll share my testing experiences, practical workarounds, and honest limitations so you can make an informed decision about whether Yandex Browser meets your extension needs in 2026.
 
-## Table of Contents
-
-- [Understanding Yandex Browser's Foundation](#understanding-yandex-browser)
+## Table of Contents- [Understanding Yandex Browser's Foundation](#understanding-yandex-browser)
 - [Chrome Extension Support: The Reality](#chrome-extension-support)
 - [Desktop Installation Process](#desktop-installation)
 - [Mobile Extension Capabilities](#mobile-extension-capabilities)
@@ -39,12 +37,10 @@ Whether you're a privacy-conscious user, a productivity enthusiast, or someone w
 - [Troubleshooting Common Issues](#troubleshooting)
 - [Pro Tips and Key Takeaways](#pro-tips)
 - [Frequently Asked Questions](#faq)
-- [Final Verdict](#final-verdict)- [[Performance Impact](/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance)](#performance-impact)
-- [Alternative Extension Sources](#alternative-extension-sources)
-- [Troubleshooting Common Issues](#troubleshooting)
-- [Pro Tips and Key Takeaways](#pro-tips)
-- [Frequently Asked Questions](#faq)
 - [Final Verdict](#final-verdict)
+- [Performance Impact](/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance)
+
+
 
 ## Understanding Yandex Browser's Foundation {#understanding-yandex-browser}
 
@@ -162,7 +158,7 @@ The mobile limitations stem primarily from platform restrictions rather than Yan
 
 4. **Background Processing**: Mobile operating systems restrict background processes, affecting extensions that need to run continuously.
 
-When I tested [What [Kiwi Browser](https://kiwibrowser.com/)'s Developer Mode Unlocks](/undefined) principles in Yandex Browser mobile, I found that while Kiwi offers more robust extension support on Android, Yandex's implementation is more limited but still usable for basic extensions.
+When I tested [What Kiwi Browser's Developer Mode Unlocks](https://kiwibrowser.com/) principles in Yandex Browser mobile, I found that while Kiwi offers more robust extension support on Android, Yandex's implementation is more limited but still usable for basic extensions.
 
 ## Security Considerations {#security-considerations}
 
@@ -222,7 +218,7 @@ For users concerned about performance, I recommend being selective about which e
 
 While the Chrome Web Store is the most well-known source for browser extensions, it's not the only option for extending Yandex Browser's functionality. In my testing, I explored several alternative sources that can provide additional extensions or different versions of popular extensions that may work better with Yandex Browser.
 
-One valuable resource I discovered is [[ExtensionHub](/blog/unlocking-the-power-of-extensionhub-enhancing-your-browser-experience): A Directory for Chrome Add-ons](/undefined), which curates extensions specifically for compatibility with various Chromium-based browsers. In my testing, I found that several extensions listed here worked better in Yandex Browser than their Chrome Web Store counterparts, likely because they've been tested for broader Chromium compatibility.
+One valuable resource I discovered is [ExtensionHub: A Directory for Chrome Add-ons](/blog/unlocking-the-power-of-extensionhub-enhancing-your-browser-experience), which curates extensions specifically for compatibility with various Chromium-based browsers. In my testing, I found that several extensions listed here worked better in Yandex Browser than their Chrome Web Store counterparts, likely because they've been tested for broader Chromium compatibility.
 
 Another alternative is [Opera](https://www.opera.com)'s extension catalog. Since Yandex Browser and Opera are both Chromium-based, many Opera extensions work well in Yandex Browser. To install Opera extensions:
 
@@ -252,7 +248,7 @@ Here's the process I followed:
 
 In my testing, this method worked for about 80% of the open-source extensions I tried, though some required minor adjustments to manifest files to work with Yandex Browser's implementation of Chromium.
 
-When I tested [What the .[to Extension Actually Does](/blog/unlocking-the-power-of-to-extension)](/undefined) through manual installation, I found it worked well in Yandex Browser after making a small modification to its manifest file to adjust for API differences. This experience highlighted how manual installation can sometimes overcome compatibility issues that prevent extensions from working through standard installation methods.
+When I tested [What the .to Extension Actually Does](/blog/unlocking-the-power-of-to-extension) through manual installation, I found it worked well in Yandex Browser after making a small modification to its manifest file to adjust for API differences. This experience highlighted how manual installation can sometimes overcome compatibility issues that prevent extensions from working through standard installation methods.
 
 ## Troubleshooting Common Issues {#troubleshooting}
 
@@ -276,8 +272,18 @@ For more complex issues, I recommend checking the browser's console for error me
 
 3. Search for these error messages online to find potential solutions.
 
-When I encountered issues with [[React DevTools on Chrome](/blog/unlocking-the-power-of-react-devtools-for-chrome-mobile) Mobile: Does It Work?](/undefined) in Yandex Browser desktop, I found that the console helped identify API compatibility issues that I was able to resolve by finding a modified version of the extension designed for broader Chromium support.
+When I encountered issues with [React DevTools on Chrome Mobile: Does It Work?](/blog/unlocking-the-power-of-react-devtools-for-chrome-mobile) in Yandex Browser desktop, I found that the console helped identify API compatibility issues that I was able to resolve by finding a modified version of the extension designed for broader Chromium support.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Pro Tips and Key Takeaways {#pro-tips}
 
 Based on my extensive testing of Chrome extensions in Yandex Browser, here are the pro tips that will help you get the most out of this combination:

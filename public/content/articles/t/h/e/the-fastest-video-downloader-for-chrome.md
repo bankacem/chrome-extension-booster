@@ -34,6 +34,8 @@ With the plethora of video downloader Chrome extensions available, it can be ove
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Features to Look for in a Fast Video Downloader Chrome Extension](#features-to-look-for)

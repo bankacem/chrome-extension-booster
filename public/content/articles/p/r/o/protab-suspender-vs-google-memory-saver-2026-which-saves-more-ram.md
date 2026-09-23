@@ -122,6 +122,16 @@ When using **Google Memory Saver**, the experience is invisible. You might see a
 
 **ProTab Suspender** provides a more interactive experience. You get a dashboard where you can see how much RAM you’ve saved in total. A visible savings indicator can be useful for orientation, but it should not replace a repeatable Task Manager check on your own device. It also allows for "Dark Mode" suspended pages, which is a nice touch for those working late at night.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## The Final Verdict: Which One Should You Use?
 
 After our **ProTab Suspender vs Google Memory Saver: Comparison**, the winner depends entirely on your browsing habits.

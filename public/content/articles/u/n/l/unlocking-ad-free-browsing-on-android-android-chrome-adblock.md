@@ -128,6 +128,16 @@ A few common failure patterns, and the fix for each:
 
 ![Pro Tips to Stop Sneaky Mobile Ads](/content/images/unlocking-ad-free-browsing-on-android-android-chrome-adblock/unlocking-ad-free-browsing-on-android-android-chrome-adblock-tips-1.webp "Pro Tips to Stop Sneaky Mobile Ads")
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Pro Tips: Level Up Your Ad-Free Android Setup
 
 Once the basics work, these small tweaks make the setup noticeably better. First, enable "Block cookie notices" and the annoyance lists inside uBlock Origin's settings — they remove the popup walls that EasyList leaves alone, and they are exactly what makes browsing feel premium rather than just ad-free. Second, turn on Kiwi's dark mode with a force-dark flag; ad networks A/B test aggressively bright creatives, and dark mode makes the few that slip through far less jarring at night.

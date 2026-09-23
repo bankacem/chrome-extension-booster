@@ -80,6 +80,8 @@ For more information on how to enhance your browsing experience, consider explor
 
 ## Table of Contents
 
+
+
 [Introduction](#introduction)
 
 [Understanding Overlay Ads](#understanding-overlay-ads)

@@ -34,6 +34,8 @@ But before we dive in, let's talk about why YouTube extensions are so important.
 
 ## Table of Contents
 
+
+
 [What are YouTube Extensions?](#what-are-youtube-extensions)
 
 [Best YouTube Extensions Chrome](#best-youtube-extensions-chrome)

@@ -75,6 +75,8 @@ In conclusion, a **download video Instagram Chrome extension** is a convenient a
 
 ## Table of Contents
 
+
+
 ![Download Video Instagram Chrome Extension Features](/content/images/download-video-instagram-chrome-extension/download-video-instagram-chrome-extension-features.webp "Download Video Instagram Chrome Extension Features")
 
 

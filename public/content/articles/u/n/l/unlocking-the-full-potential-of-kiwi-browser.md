@@ -81,6 +81,8 @@ In conclusion, Kiwi browser settings for extensions offer a wide range of possib
 
 ## Table of Contents
 
+
+
 The following table of contents provides a quick overview of the topics covered in this article:
 
 - [Configuring Kiwi Browser Settings for Extensions](#configuring-kiwi-browser-settings-for-extensions)

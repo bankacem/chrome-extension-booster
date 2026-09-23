@@ -69,6 +69,8 @@ While there are many VPN extensions available, some stand out from the rest. Con
 
 ## Table of Contents
 
+
+
 For easy navigation, here is a table of contents with anchor links to each section:
 
 1. [Benefits of Using a VPN Extension to Chrome](#benefits)

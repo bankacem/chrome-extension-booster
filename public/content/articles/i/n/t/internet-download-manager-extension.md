@@ -72,7 +72,7 @@ Keeping those layers separate prevents a common mistake: reinstalling a browser 
 
 ## Verify the official IDM Integration Module before installing
 
-IDM’s official support pages warn that generic Chrome Web Store searches can return fake IDM-looking extensions and provide a direct link to the genuine module. Security reporting has also documented a counterfeit extension that used the IDM name, redirected users, changed browser settings, and pushed additional executables. [[IDM official Chrome FAQ](https://www.internetdownloadmanager.com/register/new_faq/chrome_extension.html)] [[BleepingComputer security report](https://www.bleepingcomputer.com/news/security/fake-chrome-extension-internet-download-manager-has-200-000-installs/)]
+IDM’s official support pages warn that generic Chrome Web Store searches can return fake IDM-looking extensions and provide a direct link to the genuine module. Security reporting has also documented a counterfeit extension that used the IDM name, redirected users, changed browser settings, and pushed additional executables. [IDM official Chrome FAQ](https://www.internetdownloadmanager.com/register/new_faq/chrome_extension.html)
 
 Use these checks before you select **Add to Chrome**:
 
@@ -120,7 +120,7 @@ If IDM Integration Module does not appear in Chrome, follow the official recover
 4. Open the direct official Chrome Web Store listing and install the module if the automatic installation did not restore it.
 5. Open `chrome://extensions/` and remove any fake or duplicate IDM-looking extension before testing again.
 
-Chrome may also behave differently if it was launched in administrator mode or through another elevated program. The official IDM troubleshooting page identifies that setup as a possible integration problem. [[IDM official integration troubleshooting](https://www.internetdownloadmanager.com/register/new_faq/bi9.html)]
+Chrome may also behave differently if it was launched in administrator mode or through another elevated program. The official IDM troubleshooting page identifies that setup as a possible integration problem. [IDM official integration troubleshooting](https://www.internetdownloadmanager.com/register/new_faq/bi9.html)
 
 ## Fix downloads that Chrome still captures
 
@@ -147,7 +147,7 @@ For ordinary files, review IDM’s file-type and exclusion rules if a PDF, archi
 
 IDM is a reasonable fit for Windows users who regularly manage large or interrupted downloads and want a desktop queue, resume behavior, scheduling, and browser integration. It is unnecessary complexity for someone who downloads a PDF or ZIP file occasionally and is satisfied with Chrome’s built-in downloader.
 
-Free Download Manager is a separate example worth comparing when cross-platform support or a free desktop manager matters. Its first-party site describes support for Windows, macOS, Linux, Android, browser integration, segmented downloads, and resume behavior. These are product claims from its publisher, not a guarantee that it will outperform IDM on every connection. [[Free Download Manager official site](https://www.freedownloadmanager.org/)]
+Free Download Manager is a separate example worth comparing when cross-platform support or a free desktop manager matters. Its first-party site describes support for Windows, macOS, Linux, Android, browser integration, segmented downloads, and resume behavior. These are product claims from its publisher, not a guarantee that it will outperform IDM on every connection. [Free Download Manager official site](https://www.freedownloadmanager.org/)
 
 | Option | Best fit | Important trade-off |
 | --- | --- | --- |
@@ -167,6 +167,16 @@ Keep the following boundaries even when a tutorial promises a faster fix:
 - Do not grant Incognito access or broad site access unless the workflow actually requires it.
 - Do not use IDM to bypass DRM, protected streams, paywalls, or access controls.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently asked questions
 
 ### Is the IDM Integration Module a standalone Chrome downloader?

@@ -27,9 +27,7 @@ Tired of sifting through countless Chrome extensions, unsure which ones actually
 
 ExtensionHub stands out in a crowded market by focusing on quality over quantity, with each extension vetted for both functionality and security. In my testing across multiple browser setups, I've found that ExtensionHub's filtering system and detailed descriptions help users find exactly what they need without getting lost in the noise. This guide will walk you through everything you need to know about using ExtensionHub effectively, from navigating its interface to selecting the perfect extensions for your specific needs. By the end, you'll have a clear understanding of how to leverage this powerful directory to create a browser experience that's both efficient and enjoyable.
 
-## Table of Contents
-
-- [Introduction to ExtensionHub](#introduction-to-extensionhub)
+## Table of Contents- [Introduction to ExtensionHub](#introduction-to-extensionhub)
 - [How ExtensionHub Works](#how-extensionhub-works)
 - [The ExtensionHub User Experience](#the-extensionhub-user-experience)
 - [Security and Quality Control on ExtensionHub](#security-and-quality-control-on-extensionhub)
@@ -39,6 +37,8 @@ ExtensionHub stands out in a crowded market by focusing on quality over quantity
 - [Pro Tips and Key Takeaways](#pro-tips-and-key-takeaways)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Final Verdict](#final-verdict)
+
+
 ## Introduction to ExtensionHub {#introduction-to-extensionhub}
 
 ExtensionHub emerged as a response to the growing complexity of the Chrome Web Store, offering a more streamlined and curated approach to extension discovery. Founded by a team of browser enthusiasts and security experts, ExtensionHub positions itself as a human-curated directory that focuses on quality rather than quantity. In my experience testing various extension directories over the past year, ExtensionHub has consistently delivered on its promise of providing high-quality, useful extensions that actually solve real problems for users.
@@ -154,6 +154,16 @@ For developers and web designers, [ColorZilla](https://www.colorzilla.com) offer
 
 Another power user gem available through ExtensionHub is [OneTab](https://www.one-tab.com), which converts all your open tabs into a list, reducing memory usage and simplifying tab management. In my testing with 50+ tabs open, I found OneTab reduced Chrome's memory usage by approximately 60% while maintaining easy access to all open pages. The extension also allows for tab sharing and importing/exporting of tab lists, making it valuable for collaborative work sessions or saving browsing sessions for later
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Pro Tips and Key Takeaways {#pro-tips-and-key-takeaways}
 
 1. **Use the Advanced Search Filters**: ExtensionHub's search functionality goes beyond basic keyword matching. Utilize filters like "Recently Updated" to find actively maintained extensions, or "Highly Rated" to discover community-approved tools that deliver consistent quality.

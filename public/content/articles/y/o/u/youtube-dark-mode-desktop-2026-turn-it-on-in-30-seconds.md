@@ -33,6 +33,8 @@ Before we dive into the process, it's worth noting that YouTube's Dark Mode is n
 
 ## Table of Contents
 
+
+
 [Step-by-Step Guide to Enable Dark Mode on YouTube Desktop](#step-by-step-guide)
 
 [Benefits of Using Dark Mode on YouTube Desktop](#benefits-of-dark-mode)

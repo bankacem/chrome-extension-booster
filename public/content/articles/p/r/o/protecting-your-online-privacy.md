@@ -84,6 +84,8 @@ In conclusion, using a **Chrome extension to detect trackers** is an essential s
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Why You Need a Chrome Extension to Detect Trackers](#why-you-need-a-chrome-extension-to-detect-trackers)

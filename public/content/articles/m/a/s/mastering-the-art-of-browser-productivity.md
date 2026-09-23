@@ -36,6 +36,8 @@ With thousands of extensions available in the [Chrome Web Store](/blog/chrome-we
 
 ## Table of Contents
 
+
+
 [Installing Chrome Extensions](#installing-extensions)
 
 [Managing Chrome Extensions](#managing-extensions)

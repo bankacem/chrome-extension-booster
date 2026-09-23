@@ -36,15 +36,15 @@ updated_at: '2026-09-14T12:00:00.000+00:00'
 
 <img src="/content/images/ajouter-extension-chrome-8/featured.webp" alt="How to Ajouter Extension Chrome: A Step-by-Step Guide to Enhancing Your Browser" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents
-
-- [What Are Chrome Extensions?](#what)
+## Table of Contents- [What Are Chrome Extensions?](#what)
 - [How to Ajouter Extension Chrome](#how-to)
 - [The 5 Categories That Actually Matter](#categories)
 - [Performance Comparison Table](#table)
 - [How to Stay Safe](#safety)
 - [Which Extensions Should You Install First?](#verdict)
 - [FAQ](#faq)
+
+
 
 ## What Are Chrome Extensions? {#what}
 

@@ -26,6 +26,16 @@ read_time: 8
 
 This is real in 2026. The current wave of ChatGPT for Google Sheets extensions brings GPT, Claude, and Gemini directly into your spreadsheet, so classification, enrichment, summarization, and even web scraping happen inside cells instead of in another tab. Some are free. Some are expensive. Some will teach you how to code. And one new player does something none of the others can: **pull live data from any website into your sheet**. Here's everything you need to know to choose the right one.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Key Takeaways
 
 | Tool | Free Tier | Requires API Key? | Best Feature | Monthly Cost (Paid) |

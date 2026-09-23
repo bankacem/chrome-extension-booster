@@ -28,12 +28,10 @@ As a digital marketer or business owner, you're likely no stranger to the import
 
 ## Table of Contents
 
- [
- Learn More
- ](/extension/quick-screenshot-lite)
- [
- Add to Chrome
- ](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
+
+
+ [Learn More](/extension/quick-screenshot-lite)
+ [Add to Chrome](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
  
  
 

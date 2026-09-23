@@ -36,6 +36,8 @@ In this article, we'll explore the top YouTube productivity extensions available
 
 ## Table of Contents
 
+
+
 ![Table of Contents — best youtube productivity extensions illustration for extensionto readers](https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=80)
 
 - [What are YouTube Productivity Extensions?](#what-are-youtube-productivity-extensions)

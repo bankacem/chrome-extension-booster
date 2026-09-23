@@ -37,6 +37,16 @@ Out of the box, uBlock Origin already blocks more ads than most paid blockers. B
 
 One 2026 reality check first: because of Chrome's Manifest V3 transition — the extension-platform change documented in the <a href="https://developer.chrome.com/docs/extensions/" target="_blank" rel="noopener noreferrer">official Chrome for Developers extension documentation</a> — the full uBlock Origin is no longer available for Chrome — its MV3 counterpart, uBlock Origin Lite, is the option Chrome users install from the Web Store, while the full version still runs on Firefox. We flag where a setting applies to each version throughout this guide, so you can configure whichever one your browser allows.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Key Takeaways
 
 | Setup Stage | What to Change | Payoff |

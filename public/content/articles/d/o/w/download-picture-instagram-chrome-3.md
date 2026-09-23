@@ -77,6 +77,8 @@ For more tips and tricks on using Chrome extensions and web tools, be sure to ch
 
 ## Table of Contents
 
+
+
 [Method 1: Using the Instagram Website](#method1)
 
 [Method 2: Using a Chrome Extension](#method2)

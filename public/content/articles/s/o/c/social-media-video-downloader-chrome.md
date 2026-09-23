@@ -39,6 +39,8 @@ With the rise of social media, video content has become an essential part of our
 
 ## Table of Contents
 
+
+
 [What is a Social Media Video Downloader Extension?](#what-is-a-social-media-video-downloader-extension)
 
 [Benefits of Using a Social Media Video Downloader Extension](#benefits-of-using-a-social-media-video-downloader-extension)

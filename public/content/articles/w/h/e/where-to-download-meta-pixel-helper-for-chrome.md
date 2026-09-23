@@ -32,12 +32,8 @@ Before we dive into the details, it's essential to understand what the Meta Pixe
 
 ![What is the Meta Pixel Helper Chrome Extension? — where to download meta pixel helper for chrome illustration for extensionto readers](https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=80)
 
- [
- Learn More
- ](/extension/quick-screenshot-lite)
- [
- Add to Chrome
- ](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
+ [Learn More](/extension/quick-screenshot-lite)
+ [Add to Chrome](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
  
  
 
@@ -78,6 +74,8 @@ In conclusion, the Meta Pixel Helper Chrome extension is a powerful tool that ca
 For more information on how to use the Meta Pixel Helper Chrome extension, be sure to check out our other resources, including our guide to [why auto dark mode is essential for programmers](/blog/why-auto-dark-mode-is-essential-for-programmers-6) and our tutorial on [mastering the art of screenshots](/blog/screenshot-tool-chrome-tutorial). You can also explore our range of Chrome extensions, including the [Quick Screenshot Lite](/extension/quick-screenshot-lite) and the [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher).
 
 ## Table of Contents
+
+
 
 [Introduction](/blog/extension-chrome-presearch-14)
 

@@ -58,12 +58,8 @@ By the end of this article, you will have a clear [understanding](/blog) of **wh
 
 ![Introduction to Browser Redirection — why your browser keeps redirecting and how to fix it cybersecurity safe browsing privacy anti adware illustration for extensionto readers](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80)
 
- [
- Learn More
- ](/extension/quick-screenshot-lite)
- [
- Add to Chrome
- ](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
+ [Learn More](/extension/quick-screenshot-lite)
+ [Add to Chrome](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee)
  
  
 

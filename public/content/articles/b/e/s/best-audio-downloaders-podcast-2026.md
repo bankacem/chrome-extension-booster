@@ -122,6 +122,16 @@ What the hierarchy encodes is a principle: scraping YouTube is the last resort f
 
 RSS podcast downloads carry almost no legal friction: feeds are published for exactly this use, and the standard podcast delivery model assumes and authorizes personal downloads. Scraping YouTube is the case that needs the caution. The [YouTube Terms of Service](https://www.youtube.com/t/terms) restrict downloading content outside the service's authorized features or without rights-holder permission, and the [U.S. Copyright Office FAQ](https://www.copyright.gov/help/faq/) provides the baseline copyright context that applies on top. Practically: subscribing through a podcast app is always safe; converting YouTube audio is safe only when the material is yours, the creator permits it, or the content is public domain — the same boundary our 2026 legality guide applies to every YouTube download question. Platform note: Chrome Web Store policies are hostile to extensions that facilitate unauthorized downloads, which is one more reason the vetted-extension bar for one-off saves is high.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently Asked Questions
 
 ### Do I need a YouTube downloader for podcasts at all?

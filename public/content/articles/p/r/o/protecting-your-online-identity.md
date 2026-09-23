@@ -93,6 +93,8 @@ A **Chrome extension for blocking trackers** is an essential tool for protecting
 
 ## Table of Contents
 
+
+
 [What are Trackers and Why are They a Threat?](#what-are-trackers-and-why-are-they-a-threat)
 
 [Features to Look for in a Chrome Extension for Blocking Trackers](#features-to-look-for-in-a-chrome-extension-for-blocking-trackers)

@@ -17,6 +17,8 @@ updated_at: '2026-09-14T12:00:00.000+00:00'
 
 ## Table of Contents
 
+
+
 1. [The Sunday Night That Changed Everything](#the-sunday-night-that-changed-everything)
 2. [Why Lesson Planning Is the #1 Teacher Burnout Factor](#why-lesson-planning-is-the-1-teacher-burnout-factor)
 3. [What Is an AI Lesson Plan Generator Chrome Extension?](#what-is-an-ai-lesson-plan-generator-chrome-extension)
@@ -390,6 +392,16 @@ AI suggests engagement strategies:
 
 ---
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### Is using AI for lesson planning cheating?

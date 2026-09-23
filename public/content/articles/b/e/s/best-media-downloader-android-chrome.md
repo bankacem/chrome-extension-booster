@@ -66,6 +66,8 @@ While there are many media downloaders available for Android Chrome, you may als
 
 ## Table of Contents
 
+
+
 Here is a table of contents to help you navigate this article:
 
 1. [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")

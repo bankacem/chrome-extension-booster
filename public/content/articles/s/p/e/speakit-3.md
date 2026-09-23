@@ -66,6 +66,8 @@ If you're interested in learning more about **speakit** and how it can be used t
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Benefits of SpeakIt](#benefits)

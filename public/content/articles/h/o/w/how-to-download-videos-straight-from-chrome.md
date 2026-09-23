@@ -84,6 +84,8 @@ In conclusion, a good Chrome extension to download videos can be a valuable tool
 
 ## Table of Contents
 
+
+
 ![How To Download Videos Straight From Chrome Features](/content/images/how-to-download-videos-straight-from-chrome/how-to-download-videos-straight-from-chrome-features.webp "How To Download Videos Straight From Chrome Features")
 
 

@@ -81,6 +81,8 @@ While the Avast Antitrack extension Chrome is an effective tool for protecting y
 
 ## Table of Contents
 
+
+
 [What is the Avast Antitrack Extension Chrome?](#what-is-the-avast-antitrack-extension-chrome)
 
 [Key Features of the Avast Antitrack Extension Chrome](#key-features-of-the-avast-antitrack-extension-chrome)

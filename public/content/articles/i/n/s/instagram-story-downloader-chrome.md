@@ -39,6 +39,8 @@ Are you tired of scrolling through Instagram, only to have the stories you want 
 
 ## Table of Contents
 
+
+
 [What is an Instagram Story Downloader?](#what-is-an-instagram-story-downloader)
 
 [Benefits of Using an Instagram Story Downloader Chrome](#benefits-of-using-an-instagram-story-downloader-chrome)

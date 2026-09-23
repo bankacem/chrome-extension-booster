@@ -164,6 +164,16 @@ Not every tool in the [Chrome Web Store](/blog/chrome-web-store-guide) deserves 
 - **AdBlock Plus and its derivatives:** AdBlock Plus runs an "Acceptable Ads" program where large advertisers pay to have their ads whitelisted. This is a direct conflict of interest—a privacy tool that accepts money from the entities it is supposed to block. uBlock Origin blocks these same ads without the pay-to-play arrangement.
 - **WOT (Web of Trust):** This extension was caught selling detailed user browsing data to third-party marketers in 2016. Despite claims of reform, the privacy community considers it permanently compromised. Trust, once broken in the security space, does not recover.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 **Do free privacy extensions slow down Chrome?**

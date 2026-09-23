@@ -32,6 +32,8 @@ As we spend more time on social media platforms like LinkedIn, it's essential to
 
 ## Table of Contents
 
+
+
 [What is Night Mode?](#what-is-night-mode) | [How to Enable Night Mode on LinkedIn](#how-to-enable-night-mode-on-linkedin) | [Benefits of Night Mode](#benefits-of-night-mode) | [Tips for Reducing Blue Light Emission](#tips-for-reducing-blue-light-emission) | [FAQ](#faq)
 
 ## What is Night Mode?

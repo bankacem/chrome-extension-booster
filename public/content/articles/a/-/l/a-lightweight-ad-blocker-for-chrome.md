@@ -34,6 +34,8 @@ Are you tired of annoying ads and popups disrupting your online experience? A **
 
 ## Table of Contents
 
+
+
 [What is a Lightweight Ad Blocker?](#what-is-a-lightweight-ad-blocker)
 
 [Benefits of Using a Lightweight Ad Blocker](#benefits-of-using-a-lightweight-ad-blocker)

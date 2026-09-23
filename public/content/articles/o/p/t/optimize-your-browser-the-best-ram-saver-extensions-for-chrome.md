@@ -34,6 +34,8 @@ Before we dive into the list of the best RAM saver extensions for Chrome, it's e
 
 ## Table of Contents
 
+
+
 [What are RAM Saver Extensions?](#what-are-ram-saver-extensions)
 
 [Top RAM Saver Extensions for Chrome](#top-ram-saver-extensions-for-chrome)

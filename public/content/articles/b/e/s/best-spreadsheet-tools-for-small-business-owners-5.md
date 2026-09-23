@@ -201,6 +201,16 @@ Multiply each score by its weight, then compare the total with notes from the pi
 
 ![A five-step scorecard path from listing the job to testing the sample and reviewing total cost](/content/images/best-spreadsheet-tools-for-small-business-owners-5/spreadsheet-tools-decision-path.jpg "A practical spreadsheet-tool decision path")
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## FAQ
 
 ### What is the best spreadsheet tool for a small business?

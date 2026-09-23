@@ -95,6 +95,8 @@ For more information on how to enhance your browsing experience, be sure to chec
 
 ## Table of Contents
 
+
+
 [What Makes a Great Tab Manager?](#what-makes-a-great-tab-manager)
 
 [Benefits of Using a Tab Manager](#benefits-of-using-a-tab-manager)

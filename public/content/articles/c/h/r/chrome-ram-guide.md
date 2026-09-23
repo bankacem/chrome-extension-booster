@@ -64,13 +64,13 @@ In this guide
 
 Chrome uses multiple processes so that a problem in one part of the browser is less likely to take down every open page. That design can make the operating-system task manager show many Chrome entries, but the count is not itself a diagnosis. The more useful question is whether a particular process grows over time, whether the browser becomes unresponsive, or whether the device starts swapping to disk.
 
-Google’s memory guidance separates several symptoms: a page that gets progressively worse may indicate a leak; a page that is consistently heavy may have memory bloat; and frequent pauses may relate to garbage collection. Google also notes that there are no universal “too much” numbers because the same page can behave differently on different devices and browsers. [[Chrome Developers: Fix memory problems](https://developer.chrome.com/docs/devtools/memory-problems)]
+Google’s memory guidance separates several symptoms: a page that gets progressively worse may indicate a leak; a page that is consistently heavy may have memory bloat; and frequent pauses may relate to garbage collection. Google also notes that there are no universal “too much” numbers because the same page can behave differently on different devices and browsers. [Chrome Developers: Fix memory problems](https://developer.chrome.com/docs/devtools/memory-problems)
 
 That distinction matters because closing tabs can help an overloaded session, but it cannot repair a page that continually allocates memory, and clearing a cache does not automatically reduce the live JavaScript heap of a page that is still open.
 
 ## Step 1: measure the real offender with Chrome Task Manager
 
-Start with Chrome’s own Task Manager rather than the operating system’s broad process list. Google documents it as a real-time monitor for page memory use, and the Chrome keyboard-shortcut reference lists `Shift` + `Esc` for opening it on desktop Chrome. [[Chrome Developers memory guide](https://developer.chrome.com/docs/devtools/memory-problems)] [[Chrome keyboard shortcuts](https://support.google.com/chrome/answer/157179?hl=en&co=GENIE.Platform%3DDesktop)]
+Start with Chrome’s own Task Manager rather than the operating system’s broad process list. Google documents it as a real-time monitor for page memory use, and the Chrome keyboard-shortcut reference lists `Shift` + `Esc` for opening it on desktop Chrome. [Chrome Developers memory guide](https://developer.chrome.com/docs/devtools/memory-problems)
 
 1. Save unfinished work in your open web apps.
 2. Press `Shift` + `Esc`, or open the three-dot menu and choose **More tools** then **Task manager**.
@@ -112,11 +112,11 @@ Avoid installing several extensions that all suspend tabs, clean memory, or mana
 ![Chrome Ram Guide Features](/content/images/chrome-ram-guide/chrome-ram-guide-features.webp "Chrome Ram Guide Features")
 
 
-Open `chrome://settings/performance`, or go to Chrome’s Settings and select **Performance**. Google’s current help page groups Memory Saver, inactive-tab behavior, site exceptions, Energy Saver, and related performance controls in this area. [[Google Chrome Help: Personalize Chrome performance](https://support.google.com/chrome/answer/12929150?hl=en)]
+Open `chrome://settings/performance`, or go to Chrome’s Settings and select **Performance**. Google’s current help page groups Memory Saver, inactive-tab behavior, site exceptions, Energy Saver, and related performance controls in this area. [Google Chrome Help: Personalize Chrome performance](https://support.google.com/chrome/answer/12929150?hl=en)
 
 Memory Saver can deactivate inactive tabs so that resources are available for the work you are doing. When you return to a deactivated tab, Chrome may reload it. Add important web apps to the sites that should remain active when that control is available in your version, particularly if they contain unsaved state, live collaboration, audio, or real-time monitoring.
 
-Google has also described Performance Detection and multiple Memory Saver modes that give desktop users more control over how aggressively inactive tabs are handled. The exact labels and availability can change with Chrome releases, so follow the controls shown in your current browser rather than copying an old screenshot or assuming every device exposes the same options. [[Google: Chrome performance controls](https://blog.google/products-and-platforms/products/chrome/google-chrome-performance-controls-october-2024/)]
+Google has also described Performance Detection and multiple Memory Saver modes that give desktop users more control over how aggressively inactive tabs are handled. The exact labels and availability can change with Chrome releases, so follow the controls shown in your current browser rather than copying an old screenshot or assuming every device exposes the same options. [Google: Chrome performance controls](https://blog.google/products-and-platforms/products/chrome/google-chrome-performance-controls-october-2024/)
 
 Do not promise yourself a fixed percentage reduction. Memory Saver reacts to the tabs and system conditions you actually have, and a setting that helps an 8GB laptop may be unnecessary or inconvenient on a workstation with a different workload.
 

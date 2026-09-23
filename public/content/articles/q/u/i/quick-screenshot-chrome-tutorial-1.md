@@ -33,6 +33,8 @@ Before we dive into the nitty-gritty of our quick screenshot Chrome tutorial, le
 
 ## Table of Contents
 
+
+
 [What is a Quick Screenshot?](#what-is-a-quick-screenshot)
 
 [Why Do You Need a Quick Screenshot Chrome Tutorial?](#why-do-you-need-a-quick-screenshot-chrome-tutorial)

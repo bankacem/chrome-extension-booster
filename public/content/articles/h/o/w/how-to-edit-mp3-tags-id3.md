@@ -129,6 +129,16 @@ The robust answer is both, and it costs one minute: embed the image in the files
 
 Two failure modes account for most "album art won't show" complaints: mixed ID3 versions across a batch (the player reads some files' art and not others' — fix by rewriting the whole batch as v2.3), and artwork embedded only in some tracks of an album (select all, embed once, save). Both are batch operations, which is the theme of this entire guide: individual file fixes are how libraries stay broken.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently Asked Questions
 
 ### What is the difference between ID3v1 and ID3v2.4?

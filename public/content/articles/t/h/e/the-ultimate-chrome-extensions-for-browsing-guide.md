@@ -90,7 +90,7 @@ Security and password management deserve extra care. If you need those functions
 ![The Ultimate Chrome Extensions For Browsing Guide Overview](/content/images/the-ultimate-chrome-extensions-for-browsing-guide/the-ultimate-chrome-extensions-for-browsing-guide-overview.webp "The Ultimate Chrome Extensions For Browsing Guide Overview")
 
 
-Chrome permissions are not a decorative detail. Chrome for Developers explains that permissions and host permissions can allow an extension to interact with URLs, inject content scripts, monitor network requests, or access sensitive tab properties. Optional permissions can give users more informed control when the feature allows it. [[Chrome permission guidance](https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions)]
+Chrome permissions are not a decorative detail. Chrome for Developers explains that permissions and host permissions can allow an extension to interact with URLs, inject content scripts, monitor network requests, or access sensitive tab properties. Optional permissions can give users more informed control when the feature allows it. [Chrome permission guidance](https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions)
 
 Use this four-question check on the store listing and the extension’s Details page:
 
@@ -99,7 +99,7 @@ Use this four-question check on the store listing and the extension’s Details 
 3. **Can access be limited?** Prefer an extension that supports optional permissions or a narrower site-access setting when that is enough for your workflow.
 4. **What happens to your data?** Read whether text, page content, credentials, browsing activity, or saved files leave the device.
 
-Google also recommends that Chrome Web Store listings accurately communicate functionality, privacy handling, and security practices. A professional listing is not proof that an extension is perfect, but a vague listing combined with broad permissions is a reason to stop and investigate. [[Chrome Web Store best practices](https://developer.chrome.com/docs/webstore/best-practices)]
+Google also recommends that Chrome Web Store listings accurately communicate functionality, privacy handling, and security practices. A professional listing is not proof that an extension is perfect, but a vague listing combined with broad permissions is a reason to stop and investigate. [Chrome Web Store best practices](https://developer.chrome.com/docs/webstore/best-practices)
 
 ## Check the real browser impact
 
@@ -120,7 +120,7 @@ Remember that a browser can use more memory because of tabs, pages, service work
 
 Installed does not mean active or necessary. Open `chrome://extensions/` once every few months and review the full list. Disable a tool that you use rarely, remove one you no longer recognize, and open **Details** to check site access and Incognito access.
 
-Chrome’s Safety Check can warn about potentially harmful extensions and other security issues such as compromised passwords, unsafe browsing settings, outdated Chrome, and unwanted notifications. On desktop, open **Settings → Privacy and security → Safety Check** and follow the recommendations. [[Google Chrome Safety Check](https://support.google.com/chrome/answer/10468685?hl=en&co=GENIE.Platform%3DDesktop)]
+Chrome’s Safety Check can warn about potentially harmful extensions and other security issues such as compromised passwords, unsafe browsing settings, outdated Chrome, and unwanted notifications. On desktop, open **Settings → Privacy and security → Safety Check** and follow the recommendations. [Google Chrome Safety Check](https://support.google.com/chrome/answer/10468685?hl=en&co=GENIE.Platform%3DDesktop)
 
 If an extension changed your search engine, opened unwanted pages, or injected notifications, remove it first. Then review Chrome’s search, notification, and site settings. Do not keep a suspicious extension installed while you investigate its behavior.
 

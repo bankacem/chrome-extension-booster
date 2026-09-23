@@ -115,6 +115,16 @@ So the practical answer to "where are my Chrome extensions?" is: check the App S
 
 Read as a buyer's decision: Safari wins on control, mobile, and battery-on-Mac; Chrome wins on breadth, niche tooling, and cross-platform continuity outside Apple hardware. Neither is "better" — they optimize for different threats and different users, and the strongest practical position is knowing both models well enough to choose per device. Mac-and-iPhone households get the best of Safari with Chrome as an escape hatch; Windows-and-Android households get the reverse; and the engine-level details behind those trade-offs — sandboxing, manifest versions, what each permission grant actually means — live in our [plain-English extension explainer](/blog/what-is-a-browser-extension-2026).
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### How do I install extensions in Safari?

@@ -169,6 +169,16 @@ If you no longer want tracking, use an orderly offboarding sequence:
 
 Mailsuite’s Privacy and Security Center says users can remove account permissions, delete their Mailsuite account and personal data, and remove the extension. Use those current support links because labels and account screens can change.[5] Keep the browser component updated as well; ExtensionTo’s [Chrome extension update guide](https://extensionto.com/blog/how-to-update-chrome-extensions-enhancing-your-browser-experience) covers the general maintenance workflow.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently asked questions
 
 ### Does Mailtrack prove that someone read an email?

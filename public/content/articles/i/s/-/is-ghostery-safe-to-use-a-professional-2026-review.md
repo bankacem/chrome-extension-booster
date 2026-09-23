@@ -34,6 +34,8 @@ Before we dive into the review, it's essential to understand the importance of o
 
 ## Table of Contents
 
+
+
 [What is Ghostery?](#what-is-ghostery)
 
 [Features and Benefits](#features-and-benefits)

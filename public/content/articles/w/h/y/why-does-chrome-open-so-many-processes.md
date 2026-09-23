@@ -102,6 +102,16 @@ Equally important is what not to change. Flags that disable site isolation or fo
 
 One habit multiplies all three: a weekly restart. Long sessions accumulate renderer processes that suspension cannot fully retire — shared renderers linger while any neighbor remains alive — and a restart returns the process list to its clean floor. Pair the restart with a Task Manager reading from the section above and you have a two-minute maintenance routine that keeps the whole count honest without ever opening a settings page.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### How many processes should Chrome have running?

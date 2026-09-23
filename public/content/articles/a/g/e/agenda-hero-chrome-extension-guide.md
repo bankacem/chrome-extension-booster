@@ -53,6 +53,16 @@ I spent those weeks pushing it through the kind of text that actually lands in m
 
 This guide is that picture. You'll get the exact install and setup path with the menus and URLs I clicked, how the Magic Events parsing behaved on real messages, the two workflows I kept after testing ended, a timing comparison against doing it manually, and honest answers on pricing, privacy, mobile, and locked-down work accounts. If you're deciding whether the agenda hero chrome extension deserves a slot in your toolbar, this should get you there without installing it blind.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Key Takeaways
 
 - **The parsing is the product.** Agenda Hero's value is turning unstructured text into structured calendar events with title, time, duration, and location already populated. On my machine, a well-written email became a saved event in roughly 8 to 15 seconds, versus 45 to 90 seconds typing it into Google Calendar myself.

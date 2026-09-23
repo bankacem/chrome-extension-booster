@@ -74,6 +74,8 @@ Here's a comparison table of some popular ad blocking extensions for Chrome:
 
 ## Table of Contents
 
+
+
 ![An Ad Blocking Extension That Actually Works Features](/content/images/an-ad-blocking-extension-that-actually-works/an-ad-blocking-extension-that-actually-works-features.webp "An Ad Blocking Extension That Actually Works Features")
 
 

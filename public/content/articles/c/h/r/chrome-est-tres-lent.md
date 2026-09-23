@@ -129,6 +129,16 @@ Firefox uses a similar multi-process model (called Fission since version 95), bu
 
 According to [Chrome's official documentation on memory management](https://www.chromium.org/Home/chromium-features/memory-saver/), the Chromium team is aware of the memory issue and has been working on Memory Saver and Tab Discarding features. But based on my testing, these built-in solutions lag behind third-party extensions in effectiveness.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### Q: "Chrome est très lent" — what is the number one cause?

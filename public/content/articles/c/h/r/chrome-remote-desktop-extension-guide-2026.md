@@ -109,6 +109,16 @@ The decision rule that comes out of that table: if you are a person reaching you
 
 **PIN rejected on a machine you know.** The PIN is per-host and per-setup; if it was never set or was reset during a host reinstall, you fix it from the front: sit at the host machine (or use an existing session) and re-run the Remote Access setup to set a new PIN. There is no remote PIN reset by design — a locked-out attacker has no reset path either, which is the feature working.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 ### Is Chrome Remote Desktop really free?

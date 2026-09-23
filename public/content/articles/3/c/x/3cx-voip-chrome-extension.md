@@ -149,6 +149,16 @@ At 45 MB during calls, the 3CX extension is lighter than the RingCentral desktop
 
 Quick Screenshot Lite was especially useful during testing — I captured MOS score screenshots from the 3CX reporting dashboard and recorded call quality metrics for the comparison table above. At 35MB, it is lighter than the 3CX extension itself.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## FAQ
 
 **Q: Is the 3CX Chrome extension free?**

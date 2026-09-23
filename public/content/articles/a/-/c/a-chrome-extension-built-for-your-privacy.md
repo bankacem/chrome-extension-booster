@@ -74,6 +74,8 @@ In today's digital landscape, protecting your online privacy is more important t
 
 ## Table of Contents
 
+
+
 ![A Chrome Extension Built For Your Privacy Features](/content/images/a-chrome-extension-built-for-your-privacy/a-chrome-extension-built-for-your-privacy-features.webp "A Chrome Extension Built For Your Privacy Features")
 
 

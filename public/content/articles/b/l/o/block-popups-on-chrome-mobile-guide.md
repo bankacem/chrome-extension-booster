@@ -101,6 +101,8 @@ In conclusion, **blocking popups on Chrome mobile** is essential for a distracti
 
 ## Table of Contents
 
+
+
 [Introduction to Popup Blocking on Chrome Mobile](#introduction)
 
 [Why Block Popups on Chrome Mobile?](#why-block-popups)

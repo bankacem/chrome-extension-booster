@@ -67,6 +67,8 @@ In conclusion, a **Chrome extension to remove ads** can be a valuable tool for e
 
 ## Table of Contents
 
+
+
 ![The Chrome Extension That Removes Ads For Good Features](/content/images/the-chrome-extension-that-removes-ads-for-good/the-chrome-extension-that-removes-ads-for-good-features.webp "The Chrome Extension That Removes Ads For Good Features")
 
 

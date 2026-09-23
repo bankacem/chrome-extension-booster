@@ -75,6 +75,8 @@ For more information on how to use **Chrome extensions** to improve your website
 
 ## Table of Contents
 
+
+
 ![Analyze Any Website Right From Chrome Features](/content/images/analyze-any-website-right-from-chrome/analyze-any-website-right-from-chrome-features.webp "Analyze Any Website Right From Chrome Features")
 
 

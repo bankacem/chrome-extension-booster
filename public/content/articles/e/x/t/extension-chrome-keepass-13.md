@@ -67,6 +67,8 @@ The **extension Chrome KeePass** is just one of many password managers available
 
 ## Table of Contents
 
+
+
 ![Extension Chrome Keepass 13 Features](/content/images/extension-chrome-keepass-13/extension-chrome-keepass-13-features.webp "Extension Chrome Keepass 13 Features")
 
 

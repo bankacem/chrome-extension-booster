@@ -106,6 +106,16 @@ Once the extension is installed in your test profile, open Chrome's Task Manager
 
 For a deeper check, open DevTools (F12), switch to the Network tab, and reload a few pages while the extension is active. Watch for requests going to domains you do not recognize. Many extensions phone home with telemetry data, and while some of this is benign, unexpected third-party domains in the network log are worth investigating. You can also visit `chrome://extensions`, enable Developer Mode, and click "Inspect views: background page" to see the extension's console output, which sometimes reveals errors or suspicious activity that the developer never intended you to see.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Frequently Asked Questions
 
 **How can you tell if a Chrome extension review is fake?**

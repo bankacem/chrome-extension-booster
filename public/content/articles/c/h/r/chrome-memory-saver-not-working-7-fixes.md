@@ -94,6 +94,16 @@ Roughly half the "Memory Saver is broken" reports we see are actually a reading 
 
 Click **Discard** on any row to suspend that tab immediately — the reload happens the moment you next click into it. Pair this with the Task Manager (`Shift + Esc`) to watch total memory drop as you discard rows, and you have a complete, self-verifying loop: no more guessing whether Memory Saver is "doing anything." Note that a discarded tab can still share a renderer process with a lightweight neighbor, so its memory may not drop to exactly zero until the shared process closes — a normal artifact of Chrome's process model, not a failure.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently Asked Questions
 
 ### Does Memory Saver help if I only keep a few tabs open?

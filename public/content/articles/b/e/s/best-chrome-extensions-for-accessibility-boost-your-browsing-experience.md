@@ -112,6 +112,16 @@ Browser accessibility tools also do not make a website WCAG-compliant. WCAG conf
 
 ![A four-part accessibility testing workspace showing visual, keyboard, captions, and permissions checkpoints around a browser](/content/images/best-chrome-extensions-for-accessibility-boost-your-browsing-experience/privacy-and-testing.webp "Testing accessibility tools with privacy checks")
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## FAQ
 
 ### What are the best Chrome extensions for accessibility?

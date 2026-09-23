@@ -36,6 +36,8 @@ As a user of Kiwi Browser, you're likely looking for ways to enhance your browsi
 
 ## Table of Contents
 
+
+
 [What are Kiwi Browser Extensions?](#what-are-kiwi-browser-extensions)
 
 [How to Install Kiwi Browser Extensions](#how-to-install-kiwi-browser-extensions)

@@ -78,6 +78,8 @@ In conclusion, the extension Chrome Google Translate is a powerful tool that can
 
 ## Table of Contents
 
+
+
 ![The Power Of Extension Chrome Google Translate Features](/content/images/the-power-of-extension-chrome-google-translate/the-power-of-extension-chrome-google-translate-features.webp "The Power Of Extension Chrome Google Translate Features")
 
 

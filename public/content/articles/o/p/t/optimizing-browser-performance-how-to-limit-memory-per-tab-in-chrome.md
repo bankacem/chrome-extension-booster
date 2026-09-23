@@ -96,6 +96,8 @@ Disabling unnecessary extensions can help reduce memory consumption, improving y
 
 ## Table of Contents
 
+
+
 [Introduction](/blog/extension-chrome-presearch-14 "Unlock the Power of Private Search: Introduction to Extension Chrome Presearch")
 
 [Understanding Chrome's Memory Management](#understanding-chrome-memory-management)

@@ -30,6 +30,8 @@ When it comes to capturing screenshots, speed and efficiency are key. The best q
 
 ## Table of Contents
 
+
+
 [Introduction](#introduction) | [Best Quick Screenshot Chrome Extensions](#best-extensions) | [Features to Consider](#features-to-consider) | [Comparison Table](#comparison-table) | [Frequently Asked Questions](#faq)
 
 ## Introduction to Quick Screenshot Chrome Tools

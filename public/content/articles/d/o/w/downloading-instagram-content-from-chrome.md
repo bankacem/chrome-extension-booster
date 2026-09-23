@@ -72,6 +72,8 @@ In conclusion, a Chrome extension for Instagram download is a must-have for anyo
 
 ## Table of Contents
 
+
+
 [Benefits of Using a Chrome Extension for Instagram Download](#benefits)
 
 [Features to Look for in a Chrome Extension for Instagram Download](#features)

@@ -39,6 +39,16 @@ If you are like me, Wikipedia is open in your browser more often than you would 
 
 I spent a weekend testing every method I could find to enable dark mode on Wikipedia. I checked articles from [Techsive](https://techsive.com/how-to-enable-dark-mode-on-wikipedia/), [NightEye](https://nighteye.app/wikipedia-dark-mode/), and [TechCrunch](https://techcrunch.com/2024/08/08/how-to-enable-wikipedias-dark-mode/) for reference. Here is what I found: most of them cover one or two methods but never compare all options side by side. None of them tell you which companion extensions turn Wikipedia into a proper research tool rather than just a dark-themed page. This guide fills that gap.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Key Takeaways
 
 | Method | Setup Effort | Customization | Best For |

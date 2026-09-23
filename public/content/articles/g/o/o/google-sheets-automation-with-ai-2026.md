@@ -135,6 +135,16 @@ The second ceiling is correctness. Models mislabel rows, especially on ambiguous
 
 The third ceiling is change. Sheet restructures, renamed tabs, and model updates all break automations that ran fine for months. Defensive scripts read a header row and fail loudly when expected columns move, rather than writing results into the wrong column silently. Ten minutes of monthly maintenance, re-running the twenty-row test and skimming the log, keeps a five-recipe stack healthy for years.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently Asked Questions
 
 ### Can I automate Google Sheets with AI for free?

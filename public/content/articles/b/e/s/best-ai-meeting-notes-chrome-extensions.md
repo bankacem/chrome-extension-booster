@@ -20,6 +20,16 @@ You're in a meeting. Your boss asks a question. You have no idea what was just s
 
 But here's what the cheerful marketing doesn't tell you: meeting transcription extensions are among the highest-risk privacy tools you can install. Before comparing the four leaders — Fireflies.ai, Otter.ai, Tactiq, and Fathom — this guide walks through why the category demands caution, which tool fits which workflow, and the safe-setup routine that lets you keep the productivity without the exposure.
 
+## Companion Extensions That Complete Your Setup
+
+If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+
+Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Key Takeaways
 
 | Tool | Free Tier | Privacy Risk | Best Feature |

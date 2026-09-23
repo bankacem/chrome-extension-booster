@@ -34,6 +34,8 @@ As we navigate the vast expanse of the internet, our browsers are constantly at 
 
 ## Table of Contents
 
+
+
 [What is URL Hijacking?](#what-is-url-hijacking) | [Types of URL Hijacking](#types-of-url-hijacking) | [Consequences of URL Hijacking](#consequences-of-url-hijacking) | [Protecting your Browser from URL Hijacking](#protecting-your-browser) | [Redirect Shield: The Ultimate Protection](#redirect-shield) | [FAQ](#faq)
 
 ## What is URL Hijacking?

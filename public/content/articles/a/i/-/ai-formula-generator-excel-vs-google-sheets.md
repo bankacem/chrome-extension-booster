@@ -111,6 +111,16 @@ There is also a maintenance cost that never appears on a pricing page. Formulas 
 - Anyone whose bottleneck is typing rather than formulas: start instead with our comparison of [AI tools for data entry automation](/blog/best-ai-tools-data-entry-automation-2026), because a formula generator will not fix a capture problem.
 - Mixed Excel-and-Sheets shops: standardize the prompts and the test routine, not the platform. Once a recipe works, our [Google Sheets automation with AI playbook](/blog/google-sheets-automation-with-ai-2026) shows how to turn it into a repeatable script.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Frequently Asked Questions
 
 ### Is Excel Copilot more accurate than Google Sheets AI for formulas?

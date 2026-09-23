@@ -52,6 +52,16 @@ The short version, and the thing most articles bury: Samsung Smart TVs do not in
 
 This guide covers what actually worked on my machine, the exact clicks involved, the latency and quality I observed, the DRM black screen problem nobody can fully fix, and when a five dollar cable beats all of it. I have flagged limits honestly rather than pretending every method is equal.
 
+## Companion Extensions That Complete Your Setup
+
+A good {topic} setup is rarely one extension working alone. These are the four lightweight companions from our own catalog that pair naturally with the workflow described in this guide:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+Each one does a single job well, and together they remove the small frictions that add up across a browsing day.
 ## Key Takeaways
 
 - **Samsung TVs have no built-in Chromecast receiver.** Chrome's native Cast feature needs a Google Cast target on the network, which in practice means a Chromecast or Google TV device plugged into one of the TV's HDMI ports.

@@ -121,6 +121,16 @@ One more layer on Android: leave Safe Browsing enabled in Chrome, because it int
 
 Everything above is mechanics; permission is the other half of the decision. YouTube's [Terms of Service](https://www.youtube.com/t/terms) restrict downloading content except where the service authorizes it — which is precisely what Premium's offline playback is — or where the rights holder permits it. Converting a creator's freely offered file, your own uploads, or public-domain recordings sits on solid ground. Bulk-converting commercial music does not, and no amount of workflow elegance changes that analysis. The [full 2026 legality guide](/blog/is-youtube-to-mp3-legal-2026-guide) walks through the gray areas people actually ask about, and the [U.S. Copyright Office FAQ](https://www.copyright.gov/help/faq/) covers the underlying copyright rules. Platform-wise, note that Apple and Google both remove downloader apps that cross into facilitating infringement — one more reason an app's store history and update record is a safety signal, not just a quality signal.
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Frequently Asked Questions
 
 ### Can you convert YouTube to MP3 directly on an iPhone?

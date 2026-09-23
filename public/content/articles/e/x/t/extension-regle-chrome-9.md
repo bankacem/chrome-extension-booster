@@ -29,6 +29,8 @@ Welcome to the world of Chrome extensions, where you can enhance your browsing e
 
 ## Table of Contents
 
+
+
 [What is "extension regle chrome"?](#what-is-extension-regle-chrome)
 [The Core Rules Every Extension Must Follow](#core-rules)
 [Manifest V3 and the "No Remote Code" Rule](#remote-code)

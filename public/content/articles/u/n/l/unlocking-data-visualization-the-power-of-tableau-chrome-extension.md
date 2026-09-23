@@ -27,9 +27,7 @@ In today's data-driven landscape, making sense of complex information has become
 
 This guide is based on hands-on testing and real-world usage scenarios, designed specifically for data enthusiasts, business analysts, marketing professionals, and anyone who needs to make sense of numbers without being a full-time data scientist. By the end of this article, you'll have a clear understanding of how to install, configure, and maximize the tableau chrome extension for your specific data visualization needs.
 
-## Table of Contents
-
-- [Introduction to Tableau Chrome Extension](#introduction-to-tableau-chrome-extension)
+## Table of Contents- [Introduction to Tableau Chrome Extension](#introduction-to-tableau-chrome-extension)
 - [Key Features and Capabilities](#key-features-and-capabilities)
 - [Setting Up and Installation Guide](#setting-up-and-installation-guide)
 - [Connecting to Data Sources](#connecting-to-data-sources)
@@ -38,6 +36,8 @@ This guide is based on hands-on testing and real-world usage scenarios, designed
 - [Pro Tips and Key Takeaways](#pro-tips-and-key-takeaways)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Final Verdict](#final-verdict)
+
+
 ## Introduction to Tableau Chrome Extension {#introduction-to-tableau-chrome-extension}
 
 The tableau chrome extension represents a bridge between powerful data visualization capabilities and the convenience of browser-based access. Unlike the full Tableau Desktop application, which requires installation on your local machine, this extension brings core Tableau functionality directly into your Chrome browser, allowing you to connect to data sources, create visualizations, and share insights without leaving your workflow.
@@ -332,6 +332,16 @@ Parameters are another advanced feature that allows you to create dynamic visual
 
 While single visualizations are powerful, combining them into interactive dashboards can provide even more comprehensive insights. Based on my dashboard creation experience, these techniques yield the best results:
 
+## Companion Extensions That Complete Your Setup
+
+Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+
+- [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
+- [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
+- [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
+- [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
+
+All four are lightweight, free to try, and tested by our editorial team before recommending them here.
 ## Pro Tips and Key Takeaways
 1. **Start with Your Questions**: Before creating visualizations, clearly define the questions you want your data to answer. This focused approach prevents creating "dashboard junk" that looks impressive but lacks purpose.
 

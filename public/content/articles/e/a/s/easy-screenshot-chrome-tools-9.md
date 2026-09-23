@@ -34,6 +34,8 @@ For those who frequently need to capture and share screenshots, our [Quick Scree
 
 ## Table of Contents
 
+
+
 [What are Easy Screenshot Chrome Tools?](#what-are-easy-screenshot-chrome-tools)
 
 [Benefits of Using Easy Screenshot Chrome Tools](#benefits-of-using-easy-screenshot-chrome-tools)
