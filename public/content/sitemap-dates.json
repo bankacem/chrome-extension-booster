@@ -886,10 +886,13 @@
   "screen-recorder-chrome-extensions": "2026-09-21",
   "ai-summary-chrome-extensions": "2026-09-21",
   "new-tab-speed-dial-chrome": "2026-09-21",
-  "website-blocker-focus-chrome": "2026-09-22",
-  "emoji-picker-chrome-extensions": "2026-09-22",
-  "calendar-chrome-extensions": "2026-09-22",
-  "history-search-chrome-extensions": "2026-09-22",
   "text-expander-chrome-extensions": "2026-09-22",
-  "mute-noisy-tabs-chrome": "2026-09-22"
+  "mute-noisy-tabs-chrome": "2026-09-22",
+  "website-blocker-focus-chrome": "2026-09-22",
+  "history-search-chrome-extensions": "2026-09-22",
+  "calendar-chrome-extensions": "2026-09-22",
+  "emoji-picker-chrome-extensions": "2026-09-22",
+  "monitor-chrome-ram-usage-guide": "2026-03-24",
+  "fix-chrome-out-of-memory-errors": "2026-03-23",
+  "ultimate-chrome-ram-memory-management-guide": "2026-03-20"
 }

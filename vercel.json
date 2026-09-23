@@ -4649,6 +4649,91 @@
       "source": "/blog/youtube-tools-guide",
       "destination": "/blog/best-youtube-downloader-chrome-extension-2026",
       "permanent": true
+    },
+    {
+      "source": "/blog/a-free-pop-up-blocker-extension-for-chrome",
+      "destination": "/blog/pop-up-blocker-for-chrome-partial",
+      "permanent": true
+    },
+    {
+      "source": "/blog/android-chrome-adblocker",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chrome-pop-up-blocker",
+      "destination": "/blog/pop-up-blocker-for-chrome-partial",
+      "permanent": true
+    },
+    {
+      "source": "/blog/extension-adblock-chrome-android-2",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ghostery-chrome-extension-winner",
+      "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/popup-blocker-streaming-sites",
+      "destination": "/blog/pop-up-blocker-for-chrome-partial",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-best-adblock-for-android-chrome",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-best-popup-blocker-for-chrome-in-2026",
+      "destination": "/blog/pop-up-blocker-for-chrome-partial",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-power-of-extension-adblock-chrome-android",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-ad-blocking-on-android",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome",
+      "destination": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-ad-block-chrome-android",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-online-privacy-ghostery-for-chrome-android",
+      "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-adblock-chrome-on-android",
+      "destination": "/blog/adblock-chrome-android-complete-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unlocking-the-power-of-online-privacy-ghostery-add-on-chrome",
+      "destination": "/blog/the-power-of-ghostery-extension-chrome-2026",
+      "permanent": true
     }
   ],
   "trailingSlash": false
