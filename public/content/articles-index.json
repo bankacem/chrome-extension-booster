@@ -28,7 +28,7 @@
       "stayfocused alternative"
     ],
     "canonicalPath": "/blog/website-blocker-focus-chrome",
-    "updated_at": "2026-09-23T08:30:00.000Z"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "emoji-picker-chrome-extensions",
@@ -245,7 +245,7 @@
       "glanceable dashboard toolbar"
     ],
     "canonicalPath": "/blog/weather-clock-chrome-extensions",
-    "updated_at": "2026-09-21T10:41:45.000Z"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "watch-party-chrome-extensions",
@@ -276,7 +276,7 @@
       "sync video playback friends browser"
     ],
     "canonicalPath": "/blog/watch-party-chrome-extensions",
-    "updated_at": "2026-09-21T10:41:45.000Z"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "cookie-consent-blocker-chrome",
@@ -338,7 +338,7 @@
       "declutter bookmarks bar guide"
     ],
     "canonicalPath": "/blog/bookmark-manager-chrome-guide",
-    "updated_at": "2026-09-21T10:41:45.000Z"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "batch-open-tabs-scheduled-chrome",
@@ -369,7 +369,7 @@
       "daily startup tabs routine chrome"
     ],
     "canonicalPath": "/blog/batch-open-tabs-scheduled-chrome",
-    "updated_at": "2026-09-21T10:41:45.000Z"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "session-isolation-multiple-accounts",
@@ -493,7 +493,7 @@
       "visual bookmarks grid chrome"
     ],
     "canonicalPath": "/blog/new-tab-speed-dial-chrome",
-    "updated_at": "2026-09-21T10:41:45.000Z"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "web-highlighter-annotation-extensions-research",
@@ -618,7 +618,7 @@
       "rss renaissance 2026"
     ],
     "canonicalPath": "/blog/rss-reader-chrome-extensions-2026",
-    "updated_at": "2026-09-20T07:52:26.000Z"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "chrome-passkeys-passwordless-guide-2026",
@@ -712,7 +712,7 @@
       "chrome extensions on safari"
     ],
     "canonicalPath": "/blog/safari-extensions-guide-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "0cb04045-de7a-502f-80b9-d6eed0603e74",
@@ -743,7 +743,7 @@
       "kiwi browser alternatives 2026"
     ],
     "canonicalPath": "/blog/kiwi-browser-download-install-guide-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "611c784c-3804-5724-b49d-a2d157b99e0c",
@@ -774,7 +774,7 @@
       "chrome remote desktop not connecting"
     ],
     "canonicalPath": "/blog/chrome-remote-desktop-extension-guide-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "e36acc88-c973-5c71-9704-e27ffc5f030a",
@@ -834,7 +834,7 @@
       "tracking cookies explained"
     ],
     "canonicalPath": "/blog/what-are-tracking-cookies-remove-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "b26c2455-9567-5c45-a52a-13be56af8131",
@@ -865,7 +865,7 @@
       "fix mp3 tags youtube downloads"
     ],
     "canonicalPath": "/blog/how-to-edit-mp3-tags-id3",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "34a1bec8-ba43-5145-a160-de663054c8ba",
@@ -952,7 +952,7 @@
       "best tracker blocker for chrome"
     ],
     "canonicalPath": "/blog/adguard-vs-ghostery-2026-comparison",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "9e874273-6000-562b-9934-6e6fc2d420d6",
@@ -983,7 +983,7 @@
       "save youtube audio to files app"
     ],
     "canonicalPath": "/blog/youtube-to-mp3-iphone-android-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "2e409e42-dc81-5873-8d50-9c157380cb52",
@@ -1014,7 +1014,7 @@
       "youtube playlist mp3 100 videos"
     ],
     "canonicalPath": "/blog/youtube-playlist-to-mp3-batch-conversion",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "4c50eaad-fc83-5553-83ae-8a2365ea6edd",
@@ -1043,7 +1043,7 @@
       "chrome gpu rasterization flag"
     ],
     "canonicalPath": "/blog/chrome-flags-for-performance-safe-ones",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "6d172095-6125-55fc-9e49-30b52057a1d9",
@@ -1073,7 +1073,7 @@
       "Adblock Plus vs popup blocker"
     ],
     "canonicalPath": "/blog/poper-blocker-vs-adblock-plus-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "d7fa78dd-53c3-55d5-9e95-d4977cce8566",
@@ -1103,7 +1103,7 @@
       "AI form filler Chrome extension"
     ],
     "canonicalPath": "/blog/best-ai-tools-data-entry-automation-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "04ddc399-ba0b-5718-b32a-157d1ee11c27",
@@ -1192,7 +1192,7 @@
       "use ChatGPT with Google Sheets"
     ],
     "canonicalPath": "/blog/chatgpt-for-google-sheets-workflows",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "edd9d90b-aab8-5be9-871f-5972bc94058d",
@@ -1222,7 +1222,7 @@
       "firefox android add-ons 2026"
     ],
     "canonicalPath": "/blog/firefox-android-extensions-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "49716f29-f2c3-5918-b2db-98b99e566376",
@@ -1344,7 +1344,7 @@
       "fix adblock chrome"
     ],
     "canonicalPath": "https://extensionto.com/blog/adblock-not-working-on-chrome-fix",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "86081f6c-7da2-58bf-baf4-f9180db2bc81",
@@ -1403,7 +1403,7 @@
       "Google Sheets Apps Script AI recipes"
     ],
     "canonicalPath": "/blog/google-sheets-automation-with-ai-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "53399d06-f8f7-597d-beed-1c0efda3524a",
@@ -1466,7 +1466,7 @@
       "clipboard sync chrome"
     ],
     "canonicalPath": "/blog/clipboard-history-chrome-extension-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "26a1cb40-8309-5deb-8fea-6528be5c2279",
@@ -1498,7 +1498,7 @@
       "tts chrome extension free"
     ],
     "canonicalPath": "/blog/best-text-to-speech-chrome-extensions-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "3a54b308-ee0c-5b22-bba6-b46baa775083",
@@ -1531,7 +1531,7 @@
       "chrome tabs side by side"
     ],
     "canonicalPath": "/blog/split-screen-chrome-tabs-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "8b1e1db4-39fc-577a-afae-2258328f4914",
@@ -1563,7 +1563,7 @@
       "chrome commands shortcut conflict"
     ],
     "canonicalPath": "/blog/chrome-extension-keyboard-shortcuts-not-working-fix",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "e3c9e569-7d36-569a-bbc7-95ce1018255d",
@@ -1596,7 +1596,7 @@
       "declutter chrome extensions"
     ],
     "canonicalPath": "/blog/organize-chrome-extensions-toolbar-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "3feb36a5-e27b-563a-833f-9c2340fa7fd1",
@@ -1628,7 +1628,7 @@
       "note taking extension chrome 2026"
     ],
     "canonicalPath": "/blog/best-note-taking-chrome-extensions-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "69026c5a-5d29-559f-aa73-046a0a9de109",
@@ -1660,7 +1660,7 @@
       "chrome sync extensions between computers"
     ],
     "canonicalPath": "/blog/sync-chrome-extensions-across-devices-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "39ab85b9-0340-584d-9e01-8a9cb323fd09",
@@ -1689,7 +1689,7 @@
       "android notification spam fix"
     ],
     "canonicalPath": "/blog/stop-notification-ads-chrome-android",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "bef0da3a-9e84-5383-98f8-61a1b12c65f5",
@@ -1721,7 +1721,7 @@
       "read it later chrome extension"
     ],
     "canonicalPath": "/blog/save-articles-read-later-offline-chrome-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "dbbb6fbe-7e70-5cd4-8141-697ee998b2d3",
@@ -1750,7 +1750,7 @@
       "chrome site isolation explained"
     ],
     "canonicalPath": "/blog/why-does-chrome-open-so-many-processes",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "8a9b6cf9-28aa-5ce3-baea-5e4709a00aa6",
@@ -1782,7 +1782,7 @@
       "cross browser extensions 2026"
     ],
     "canonicalPath": "/blog/chrome-web-store-firefox-extensions-guide",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "c8c4e667-4753-555e-b17a-b59d29ccffbd",
@@ -1814,7 +1814,7 @@
       "chrome cast tab not showing samsung tv"
     ],
     "canonicalPath": "/blog/chrome-samsung-smart-tv-casting-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "542b56db-8162-54a6-ad79-76dfb9c5ef5b",
@@ -1847,7 +1847,7 @@
       "copy code from video chrome"
     ],
     "canonicalPath": "/blog/blackbox-ai-chrome-extension-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "120188c8-829f-5ffb-bd7e-e238901ad247",
@@ -1880,7 +1880,7 @@
       "betterttv youtube"
     ],
     "canonicalPath": "/blog/betterttv-google-chrome-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "75a297a2-d89f-5f9e-a5f1-644c11e5dfa3",
@@ -1913,7 +1913,7 @@
       "email to calendar event chrome"
     ],
     "canonicalPath": "/blog/agenda-hero-chrome-extension-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "fc0404ea-f98e-53b9-ad41-8a8c750a404f",
@@ -1943,7 +1943,7 @@
       "AI spreadsheet formula generator 2026"
     ],
     "canonicalPath": "/blog/ai-formula-generator-excel-vs-google-sheets",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "4daec284-b8a4-5bdc-887c-140de1eacda2",
@@ -1974,7 +1974,7 @@
       "audio downloader for podcasts"
     ],
     "canonicalPath": "/blog/best-audio-downloaders-podcast-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "49aa8049-b81b-59d7-a0b9-873a96c3c143",
@@ -2067,7 +2067,7 @@
       "chrome browser optimization tips"
     ],
     "canonicalPath": "/blog/how-to-speed-up-a-slow-chrome-browser",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "3166ce21-a9fc-5c05-8f8b-a122e8db3eb9",
@@ -2096,7 +2096,7 @@
       "google tag manager debugging 2026"
     ],
     "canonicalPath": "/blog/tag-assistant-legacy-vs-companion-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "2cf4efd6-af69-5a01-8b2b-429e4576dc08",
@@ -2125,7 +2125,7 @@
       "check youtube converter safety"
     ],
     "canonicalPath": "/blog/youtube-downloader-safety-checklist-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "728393b6-2282-5787-9985-0b84ca283ff7",
@@ -2156,7 +2156,7 @@
       "free youtube mp3 converter vs premium"
     ],
     "canonicalPath": "/blog/youtube-premium-vs-mp3-converter-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "b7f3a2d1-9c46-4e58-8a1f-3d5e7c92b4a0",
@@ -2189,7 +2189,7 @@
       "installed by your administrator chrome extension"
     ],
     "canonicalPath": "/blog/remove-chrome-extension-installed-by-enterprise-policy",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "a6456048-d4dc-538e-9477-3bdbc212235f",
@@ -2218,7 +2218,7 @@
       "watch youtube without ads android"
     ],
     "canonicalPath": "/blog/block-ads-youtube-app-android",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "a1b2c3d4-priv-0006",
@@ -2249,7 +2249,7 @@
       "private browsing extensions"
     ],
     "canonicalPath": "/blog/chrome-extensions-that-actually-respect-your-privacy",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "71e0918b-1b2a-519b-b4cd-a33e76425848",
@@ -2310,7 +2310,7 @@
       "chrome extension keyboard shortcuts"
     ],
     "canonicalPath": "/blog/how-to-manage-chrome-extensions-organize-disable-clean-up",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "d2174f2a-2af0-423c-b308-12e470495873",
@@ -2343,7 +2343,7 @@
       "runtime_blocked_hosts ExtensionSettings policy"
     ],
     "canonicalPath": "/blog/how-to-disable-chrome-extensions-on-specific-sites",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "a1b2c3d4-mv3-0004",
@@ -2373,7 +2373,7 @@
       "what is manifest v3"
     ],
     "canonicalPath": "/blog/chrome-manifest-v3-migration-guide-what-users-need-to-know",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "a1b2c3d4-remote-0003",
@@ -2404,7 +2404,7 @@
       "wfh chrome extensions"
     ],
     "canonicalPath": "/blog/best-chrome-extensions-for-remote-workers-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "b001872a-chrome-exten",
@@ -2498,7 +2498,7 @@
       "browser slow because of extensions"
     ],
     "canonicalPath": "/blog/chrome-extensions-that-slow-down-your-browser-real-tests",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "e6c28b0f-a601-4443-ba01-12325ba8386d",
@@ -2523,7 +2523,7 @@
       "extension zoom chrome"
     ],
     "canonicalPath": "/blog/zoom-chrome-extension-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "77f85717-3324-4a51-ba1f-8a465bb80781",
@@ -2548,7 +2548,7 @@
       "extension chrome incognito"
     ],
     "canonicalPath": "/blog/chrome-extensions-incognito-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "aa338d09-c7d2-45ca-b7b3-065e78551970",
@@ -2573,7 +2573,7 @@
       "chrome logger"
     ],
     "canonicalPath": "/blog/chrome-logger-debugging-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "60451c45-45ed-4b27-a787-7a3d55bfdc0f",
@@ -2606,7 +2606,7 @@
       "site access controls"
     ],
     "canonicalPath": "/blog/chrome-extension-permissions-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "35b0b10e-181f-450e-be1b-f5858c5715e8",
@@ -2641,7 +2641,7 @@
       "setup guide"
     ],
     "canonicalPath": "/blog/momentum-chrome-extension-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "8258d0e7-5600-4bcd-a275-f8c29d8dbd83",
@@ -2666,7 +2666,7 @@
       "chrome plugins java"
     ],
     "canonicalPath": "/blog/java-plugins-chrome-compatibility-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "63150bb5-4d8d-430a-8bf8-c3474e3f36f1",
@@ -2691,7 +2691,7 @@
       "ie tab chrome"
     ],
     "canonicalPath": "/blog/ie-tab-chrome-legacy-sites-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "02930aac-a163-4200-b830-fbe78682bb4e",
@@ -2750,7 +2750,7 @@
       "Chrome extension Omnibox API"
     ],
     "canonicalPath": "/blog/chrome-omnibox-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "f275ef3c-c412-432a-a97a-ac56b7f8dfeb",
@@ -2810,7 +2810,7 @@
       "email tracking privacy"
     ],
     "canonicalPath": "/blog/mailtrack-gmail-chrome-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "3d68f5db-1ef0-4ad2-9f70-4c7bfbe7626d",
@@ -2839,7 +2839,7 @@
       "auto tab suspend AI"
     ],
     "canonicalPath": "/blog/ai-tab-manager-chrome-extension-a-verification-first-buyers-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "27dbddde-1202-43ad-921d-0ec063149905",
@@ -2866,7 +2866,7 @@
       "chrome extensions for comparing prices while shopping"
     ],
     "canonicalPath": "/blog/chrome-extensions-for-comparing-prices-while-shopping",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "fe6dab6d-a4c9-4e9a-82ab-97caef3ca633",
@@ -2893,7 +2893,7 @@
       "chrome extensions for time zone conversion"
     ],
     "canonicalPath": "/blog/chrome-extensions-for-time-zone-conversion",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "c74188ec-7afd-4b17-8c98-99a37e859acd",
@@ -2920,7 +2920,7 @@
       "how to disable chrome notifications"
     ],
     "canonicalPath": "/blog/how-to-disable-chrome-notifications",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "8cea7e06-c7cb-4905-aa9f-e85ff42cb4f4",
@@ -2947,7 +2947,7 @@
       "best chrome extensions for web accessibility testing"
     ],
     "canonicalPath": "/blog/best-chrome-extensions-for-web-accessibility-testing",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "vpn-article9-tunnelbear-review",
@@ -3060,7 +3060,7 @@
       "chrome extensions for online privacy in 2026"
     ],
     "canonicalPath": "/blog/chrome-extensions-for-online-privacy-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "d0fad31c-d456-477d-aa7d-46d3a4ac8aa2",
@@ -3114,7 +3114,7 @@
       "how to manage chrome bookmarks efficiently"
     ],
     "canonicalPath": "/blog/how-to-manage-chrome-bookmarks-efficiently",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "06fb1066-9d5d-4593-aab2-0539fae539b5",
@@ -3141,7 +3141,7 @@
       "how to sync chrome bookmarks across devices"
     ],
     "canonicalPath": "/blog/how-to-sync-chrome-bookmarks-across-devices",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "75777b9d-b1fb-4c18-aeb7-f326781aabec",
@@ -3215,7 +3215,7 @@
       "best chrome extensions for language learning"
     ],
     "canonicalPath": "/blog/best-chrome-extensions-for-language-learning",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "vpn-article4-expressvpn-review",
@@ -3235,7 +3235,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/vpn-article4-expressvpn-review",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "42ee2d36-ac79-481b-a973-f0b6ee9e38c9",
@@ -3262,7 +3262,7 @@
       "best chrome extensions for remote work"
     ],
     "canonicalPath": "/blog/best-chrome-extensions-for-remote-work-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "vpn-article3-protonvpn-free-review",
@@ -3329,7 +3329,7 @@
       "how to clear chrome cache and cookies"
     ],
     "canonicalPath": "/blog/how-to-clear-chrome-cache-and-cookies-a-complete-guide-with-comparisons-tips-and-real-world-insights",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "d0bd493c-ccc0-49a7-ad54-20329702ee0a",
@@ -3377,7 +3377,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/vpn-article11-betternet-review",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "4ae4896f-122c-445a-93a6-8257bf656c59",
@@ -3407,7 +3407,7 @@
       "Chrome reading accessibility"
     ],
     "canonicalPath": "/blog/best-chrome-extensions-for-accessibility-boost-your-browsing-experience",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "vpn-article10-windscribe-review",
@@ -3478,7 +3478,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/the-ultimate-2026-productivity-combo",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "best-ai-writing-assistants-for-gmail-2026",
@@ -3498,7 +3498,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/best-ai-writing-assistants-for-gmail-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "best-ai-blog-writer-chrome-extensions-2026",
@@ -3518,7 +3518,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/best-ai-blog-writer-chrome-extensions-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "chatgpt-for-whatsapp-chrome-extension",
@@ -3558,7 +3558,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/chatgpt-voice-input-chrome-extension",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "chatgpt-export-chat-chrome-extension",
@@ -3698,7 +3698,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/chatgpt-conversation-search-extension-2026",
-    "updated_at": "2026-09-17T10:54:12.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "ai-product-description-writer-chrome-extension",
@@ -3778,7 +3778,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/chatgpt-side-panel-chrome-extensions-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "gemini-chat-chrome-extensions",
@@ -3798,7 +3798,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/gemini-chat-chrome-extensions",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "best-ai-meeting-notes-chrome-extensions",
@@ -3909,7 +3909,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/best-ai-email-assistant-chrome-extensions",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "best-chatgpt-folder-organizer-extensions",
@@ -3949,7 +3949,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/chatgpt-search-history-extension-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "ai-translator-chrome-extension-free",
@@ -3969,7 +3969,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/ai-translator-chrome-extension-free",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "article9-roboform-review",
@@ -4009,7 +4009,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/article8-protonpass-review",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "article7-nordpass-review",
@@ -4109,7 +4109,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/article3-bitwarden-vs-1password",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "article2-bitwarden-setup-guide",
@@ -4169,7 +4169,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/article-9-chatgpt-etsy-listings",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "article-8-ai-seo-content-writer",
@@ -4189,7 +4189,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/article-8-ai-seo-content-writer",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "article-7-ai-headline-generator",
@@ -4229,7 +4229,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/article-6-chatgpt-ebay-listings",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "article-5-ai-email-responder-free",
@@ -4289,7 +4289,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/article-3-ai-code-explanation",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "article-2-chatgpt-amazon-reviews",
@@ -4309,7 +4309,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/article-2-chatgpt-amazon-reviews",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "article-18-ai-competitor-analysis",
@@ -4329,7 +4329,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/article-18-ai-competitor-analysis",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "article-17-chatgpt-slack-integration",
@@ -4369,7 +4369,7 @@
     "tags": [],
     "keywords": [],
     "canonicalPath": "/blog/article-16-ai-lesson-plan-generator",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "article-15-chatgpt-reddit-posts",
@@ -4571,7 +4571,7 @@
       "secure password storage chrome"
     ],
     "canonicalPath": "/blog/creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "crystal-extension-chrome",
@@ -4602,7 +4602,7 @@
       "crystal vs workona vs toby"
     ],
     "canonicalPath": "/blog/crystal-extension-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "chrome-screenshot-tutorial",
@@ -4632,7 +4632,7 @@
       "screenshot chrome extension tutorial"
     ],
     "canonicalPath": "/blog/chrome-screenshot-tutorial",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "chrome-screen-capture-guide",
@@ -4662,7 +4662,7 @@
       "screen capture extension chrome"
     ],
     "canonicalPath": "/blog/chrome-screen-capture-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "cors-chrome-guide",
@@ -4755,7 +4755,7 @@
       "comodo vs brave vs chrome"
     ],
     "canonicalPath": "/blog/comodo-chrome-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "contentsquare-extension-chrome",
@@ -4816,7 +4816,7 @@
       "scrolling screenshot extension"
     ],
     "canonicalPath": "/blog/capture-scrolling-webpages-as-png-or-pdf",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "capture-screen-chrome-guide",
@@ -4846,7 +4846,7 @@
       "best way to screenshot chrome"
     ],
     "canonicalPath": "/blog/capture-screen-chrome-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "quick-screenshot-capture-extension",
@@ -4876,7 +4876,7 @@
       "screen capture extension"
     ],
     "canonicalPath": "/blog/quick-screenshot-capture-extension",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "screenshot-tools-chrome-comparison",
@@ -4906,7 +4906,7 @@
       "screen capture methods chrome"
     ],
     "canonicalPath": "/blog/screenshot-tools-chrome-comparison",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "bc16d225-475e-486e-b3cb-5b66a0b0a8fd",
@@ -4936,7 +4936,7 @@
       "business reporting tools"
     ],
     "canonicalPath": "/blog/automating-business-reports-with-formula-builder",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "babd4e43-164e-4b31-9b6f-af21017f11f5",
@@ -4966,7 +4966,7 @@
       "best tab suspender 2026"
     ],
     "canonicalPath": "/blog/auto-tab-discarder-vs-the-great-suspender",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "379bc17d-098c-4092-9afa-0b3cfc818268",
@@ -4996,7 +4996,7 @@
       "ProTab Suspender"
     ],
     "canonicalPath": "/blog/autotab-discard-vs-onetab",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "c31f1016-b24b-411f-9555-14f85d20ec50",
@@ -5026,7 +5026,7 @@
       "Chrome grammar checker"
     ],
     "canonicalPath": "/blog/antidote-extension-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "2eaa21bb-30ce-4a3b-8e56-c6784d228809",
@@ -5056,7 +5056,7 @@
       "reCAPTCHA bypass"
     ],
     "canonicalPath": "/blog/anti-captcha-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "f22722d7-1726-417c-bc98-994ec47cf8dd",
@@ -5086,7 +5086,7 @@
       "Chrome adblock circumvention"
     ],
     "canonicalPath": "/blog/anti-anti-adblock-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "dff9cd9c-5d22-4e34-b41a-61d5ae653b16",
@@ -5146,7 +5146,7 @@
       "Alibaba price comparison"
     ],
     "canonicalPath": "/blog/alitools-extension-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "07814b80-e3f9-4420-8b29-f06a13662fda",
@@ -5176,7 +5176,7 @@
       "AliExpress product finder"
     ],
     "canonicalPath": "/blog/alishark-chrome-extension",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "f6c173e1-213d-4856-af45-260c07493156",
@@ -5204,7 +5204,7 @@
       "Chrome Web Store guide"
     ],
     "canonicalPath": "/blog/ajouter-extension-chrome-8",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "chrome-popup-blocker-master-guide",
@@ -5234,7 +5234,7 @@
       "block popups chrome"
     ],
     "canonicalPath": "/blog/chrome-popup-blocker-master-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
@@ -5262,7 +5262,7 @@
       "productivity"
     ],
     "canonicalPath": "/blog/best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "8ff0d74e-f783-4951-a579-bf707245aa98",
@@ -5287,7 +5287,7 @@
       "chrome memory fix"
     ],
     "canonicalPath": "/blog/chrome-est-tres-lent",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "a52c5891-e1cc-41d6-840b-46b16cae5e87",
@@ -5311,7 +5311,7 @@
       "chrome extension guide"
     ],
     "canonicalPath": "/blog/chrome-extensions-complete-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "3cx-voip-chrome-extension",
@@ -5464,7 +5464,7 @@
       "best browser for gamers"
     ],
     "canonicalPath": "/blog/chrome-extensions-for-gamers-guide",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "690f42c5-48e7-49d7-8223-cf6d307d95ff",
@@ -5599,7 +5599,7 @@
       "browser protection"
     ],
     "canonicalPath": "/blog/kaspersky-protection-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "084ae035-0061-4a99-858f-d302fe02fb08",
@@ -5623,7 +5623,7 @@
       "make chrome default"
     ],
     "canonicalPath": "/blog/set-chrome-as-default-browser",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "e30bb111-bf22-4da6-85e3-ab9a20f66067",
@@ -5647,7 +5647,7 @@
       "eye dropper chrome"
     ],
     "canonicalPath": "/blog/best-color-picker-chrome-extension",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "10609f9c-3d27-44ed-8074-6e25aaaa50a3",
@@ -5671,7 +5671,7 @@
       "print from chrome"
     ],
     "canonicalPath": "/blog/chrome-printing-guide",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "84397935-0778-4622-bb17-4d825031314b",
@@ -5719,7 +5719,7 @@
       "android browser with extensions"
     ],
     "canonicalPath": "/blog/chrome-extensions-on-android-2026-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "session-manager-chrome",
@@ -5772,7 +5772,7 @@
       "kiwi browser extensions"
     ],
     "canonicalPath": "/blog/chrome-extensions-android-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "9764dfe7-8a25-4390-8bc8-7501a9a7201a",
@@ -5796,7 +5796,7 @@
       "use chrome extensions in opera"
     ],
     "canonicalPath": "/blog/chrome-extensions-opera-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "e86d5c9f-b207-4468-bdac-550f3b3f5732",
@@ -5884,7 +5884,7 @@
       "full page screenshot chrome"
     ],
     "canonicalPath": "/blog/fireshot-chrome-screenshot",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "fb3abbf0-1398-47d5-a7fa-d29c00f1d5d8",
@@ -5961,7 +5961,7 @@
       "chrome casting mac"
     ],
     "canonicalPath": "/blog/chromecast-mac-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "clickclean-chrome-browser-cleaner",
@@ -6045,7 +6045,7 @@
       "cast chrome to tv"
     ],
     "canonicalPath": "/blog/chromecast-extension-google-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "chromecast-plugin-chrome",
@@ -6074,7 +6074,7 @@
       "chrome cast to tv"
     ],
     "canonicalPath": "/blog/chromecast-plugin-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "claroread-chrome-extension",
@@ -6104,7 +6104,7 @@
       "reading support extension"
     ],
     "canonicalPath": "/blog/claroread-chrome-extension",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "clipconverter-extension-chrome",
@@ -6133,7 +6133,7 @@
       "youtube to mp4 chrome"
     ],
     "canonicalPath": "/blog/clipconverter-extension-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "parental-controls-google-chrome-guide",
@@ -6192,7 +6192,7 @@
       "eyedropper chrome"
     ],
     "canonicalPath": "/blog/colorzilla-chrome-color-picker",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "color-picker-chrome-extensions",
@@ -6250,7 +6250,7 @@
       "safe browsing for kids"
     ],
     "canonicalPath": "/blog/parental-controls-google-chrome-pc",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "99ddc353-967f-4f48-9cee-ae1fe419e6d9",
@@ -6276,7 +6276,7 @@
   },
   {
     "id": "960d49b5-3db9-4b5a-b9aa-cbe35180c682",
-    "title": "Using the Cypress Plugin for Chrome",
+    "title": "Cypress Chrome Plugin: Record Interactions and Debug Browser Tests Faster",
     "slug": "cypress-plugin-chrome-2",
     "description": "Are you tired of tedious and time-consuming web automation tasks? Look no further than the cypress plugin chrome, a game-changing tool that streamlines your…",
     "meta_description": "Are you tired of tedious and time-consuming web automation tasks? Look no further than the cypress plugin chrome, a game-changing tool that streamlines your…",
@@ -6294,7 +6294,7 @@
       "cypress plugin chrome"
     ],
     "canonicalPath": "/blog/cypress-plugin-chrome-2",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "12810735-9b75-4877-b174-55510ffbb3f3",
@@ -6360,7 +6360,7 @@
       "deezer extension chrome"
     ],
     "canonicalPath": "/blog/deezer-extension-chrome-5",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "44abd9e2-ecb4-4f67-b165-9cbf08d4c5d0",
@@ -6382,7 +6382,7 @@
       "deezify chrome"
     ],
     "canonicalPath": "/blog/deezify-chrome-6",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "a52ba30f-c0f5-4659-8622-0edd6125890b",
@@ -6428,7 +6428,7 @@
       "donottrackme chrome"
     ],
     "canonicalPath": "/blog/donottrackme-chrome-8",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "0899ff5f-2cda-4e86-9f5c-f07fa65192ac",
@@ -6450,7 +6450,7 @@
       "download instagram stories extension chrome"
     ],
     "canonicalPath": "/blog/download-instagram-stories-extension-chrome",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "3eddefd0-6052-4678-9780-ebf693f98afc",
@@ -6516,7 +6516,7 @@
       "download station chrome"
     ],
     "canonicalPath": "/blog/download-station-chrome-4",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "d8812c7e-44df-47c4-9c3e-d6d2d1f32c24",
@@ -6765,7 +6765,7 @@
       "extension chrome capture page web"
     ],
     "canonicalPath": "/blog/extension-chrome-capture-page-web",
-    "updated_at": "2026-09-20T10:56:50.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "9abdcd82-5005-44e7-a313-1f4b6fc0238f",
@@ -6853,7 +6853,7 @@
       "extension chrome code"
     ],
     "canonicalPath": "/blog/extension-chrome-code-1",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "cfb3f711-6f73-4cda-9499-65c9e79b9c84",
@@ -6925,7 +6925,7 @@
   },
   {
     "id": "8e58ec16-7dfe-452f-ade6-3d6e7ca07e63",
-    "title": "Best Cookie Manager Extension for Chrome",
+    "title": "Best Cookie Manager Extensions for Chrome: Edit, Import and Audit Cookies",
     "slug": "cookie-manager-chrome-extension",
     "description": "Cookies can quietly track your browsing and compromise your privacy. Here's how a Chrome cookie manager extension helps you view, control, and clear them.",
     "meta_description": "Cookies can quietly track your browsing and compromise your privacy. Here's how a Chrome cookie manager extension helps you view, control, and clear them.",
@@ -6943,7 +6943,7 @@
       "extension chrome cookie manager"
     ],
     "canonicalPath": "/blog/cookie-manager-chrome-extension",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "df9642d1-b9b0-49da-8cab-eadc0bc27429",
@@ -6967,7 +6967,7 @@
       "manifest v3 host permissions"
     ],
     "canonicalPath": "/blog/extension-chrome-cors",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "a8b25342-9ca3-4173-8126-e0d484d896f3",
@@ -7135,7 +7135,7 @@
       "Add to Desktop Chrome extension"
     ],
     "canonicalPath": "/blog/extension-android-google-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "dfce3769-caa3-46f2-9794-9d2ff7925c6f",
@@ -7157,7 +7157,7 @@
       "extension auto refresh chrome"
     ],
     "canonicalPath": "/blog/extension-auto-refresh-chrome-2",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "5b7ba05f-0845-43ee-910a-aab58da3ec94",
@@ -7223,7 +7223,7 @@
       "extension chatgpt chrome"
     ],
     "canonicalPath": "/blog/best-chatgpt-extension-tools-for-chrome",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "becf0451-6582-4323-a678-d051073ee99f",
@@ -7340,7 +7340,7 @@
       "best betting extensions 2026"
     ],
     "canonicalPath": "/blog/1xbet-chrome-extension-review-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "9614f2a5-f1b8-40c6-a1a0-e7903847a96e",
@@ -7409,7 +7409,7 @@
       "automate likes chrome extension"
     ],
     "canonicalPath": "/blog/everliker-chrome-extension",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "4f9b1b67-ea7d-4835-9745-ae59511f71e2",
@@ -7612,7 +7612,7 @@
       "extension alidropship"
     ],
     "canonicalPath": "/blog/alidropship-extension-full-guide",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "bce3b559-ec5c-479b-b5f8-e23f7a72b970",
@@ -7634,7 +7634,7 @@
       "extension android google chrome"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-extension-android-google-chrome",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "ac3c31aa-318b-4d75-ae4c-4c97ce80cdf1",
@@ -7658,7 +7658,7 @@
       "phishing protection chrome"
     ],
     "canonicalPath": "/blog/why-you-need-an-antivirus-extension-for-chrome",
-    "updated_at": "2026-09-17T10:54:12.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "0118ecd2-c0f6-4fb7-b3a8-df4490c6d701",
@@ -7864,7 +7864,7 @@
       "best meet extensions"
     ],
     "canonicalPath": "/blog/best-chrome-extensions-google-meet",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "d99aa18f-94b8-40bb-bc54-2709aa53b6c4",
@@ -7890,7 +7890,7 @@
   },
   {
     "id": "eb91b432-575c-4603-b638-e3a11d27504a",
-    "title": "Chrome GPT: Bringing AI Into Your Browser",
+    "title": "Chrome GPT Extensions: How to Run AI Assistants Inside Your Browser",
     "slug": "unlocking-the-power-of-ai-extension-chrome-gpt",
     "description": "Welcome to the world of artificial intelligence, where extension chrome gpt is revolutionizing the way we browse and interact with the internet.",
     "meta_description": "Welcome to the world of artificial intelligence, where extension chrome gpt is revolutionizing the way we browse and interact with the internet.",
@@ -7908,7 +7908,7 @@
       "extension chrome gpt"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-ai-extension-chrome-gpt",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "70d56e25-20fb-462d-8176-7659a0552239",
@@ -8022,7 +8022,7 @@
       "extension chrome json"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-chrome-extensions-extension-chrome-json",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "chrome-pdf-viewer-guide",
@@ -8342,7 +8342,7 @@
       "extension password manager"
     ],
     "canonicalPath": "/blog/boosting-online-security-and-convenience",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "8904f0f9-92e8-492d-8f3b-8789de2e3480",
@@ -8411,7 +8411,7 @@
       "avast extension chrome"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-avast-extension-chrome",
-    "updated_at": "2026-09-17T10:54:12.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "dc8dba5c-6f99-46a8-b92d-5ad5307c53e4",
@@ -8552,7 +8552,7 @@
       "avast passwords extension"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-the-avast-passwords-extension",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "bf7b6393-5af6-4cd4-b2b1-941b2b327d32",
@@ -8844,7 +8844,7 @@
       "extension .to"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-browser-extensions-extension-to",
-    "updated_at": "2026-09-17T10:54:12.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "72adc5f2-609e-4a15-b7e7-b79f8749a22f",
@@ -8962,7 +8962,7 @@
       "lightweight chrome extensions list"
     ],
     "canonicalPath": "/blog/discover-the-power-of-minimalism",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "c9c081d7-745c-4ac6-aeb9-0834a3bbff86",
@@ -9015,7 +9015,7 @@
       "speed up chrome"
     ],
     "canonicalPath": "/blog/boosting-browser-performance-minimal-extensions",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "6e85faec-6046-441c-b818-21012db6bad0",
@@ -9435,7 +9435,7 @@
       "chrome extension for linkedin automation"
     ],
     "canonicalPath": "/blog/streamlining-your-linkedin-experience",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "ddf7cfca-a1b3-4136-9cc0-0cc27615ba3e",
@@ -9482,28 +9482,6 @@
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
-    "id": "8778680c-8b00-490c-a00d-a95209670628",
-    "title": "Boost Your Twitter Productivity with the Best Chrome Extension for Twitter Productivity",
-    "slug": "a-chrome-extension-for-power-twitter-users",
-    "description": "Are you tired of feeling overwhelmed by the sheer amount of information on Twitter? Do you struggle to stay focused and productive while using the platform?",
-    "meta_description": "Are you tired of feeling overwhelmed by the sheer amount of information on Twitter? Do you struggle to stay focused and productive while using the platform?",
-    "excerpt": "Are you tired of feeling overwhelmed by the sheer amount of information on Twitter? Do you struggle to stay focused and productive while using the platform?",
-    "published_at": "2026-04-20T18:15:00.516+00:00",
-    "category": "Social Media Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/a-chrome-extension-for-power-twitter-users/featured.webp",
-    "featured_image": "/content/images/a-chrome-extension-for-power-twitter-users/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "chrome extension for twitter productivity"
-    ],
-    "canonicalPath": "/blog/a-chrome-extension-for-power-twitter-users",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
-  },
-  {
     "id": "f6e34bf5-8a9c-4e45-9048-c8a2906e6566",
     "title": "Downloading Instagram Content from Chrome",
     "slug": "downloading-instagram-content-from-chrome",
@@ -9545,7 +9523,7 @@
       "chrome extension for facebook pixel"
     ],
     "canonicalPath": "/blog/facebook-pixel-tracking-extensions",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "a6111e60-4168-4730-8038-bf7802be7a7e",
@@ -9589,7 +9567,7 @@
       "chrome extension for scheduling posts"
     ],
     "canonicalPath": "/blog/schedule-social-posts-without-leaving-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "c9745fd3-779f-4125-bc35-d0867bde2488",
@@ -9615,7 +9593,7 @@
   },
   {
     "id": "0a26a1a3-2479-4c96-9e28-695215183bc2",
-    "title": "The Best Chrome Extension for Keyword Research",
+    "title": "The Best Chrome Extensions for Keyword Research (Tested in 2026)",
     "slug": "the-best-chrome-extension-for-keyword-research",
     "description": "When it comes to search engine optimization (SEO), keyword research is a crucial step in understanding your target audience and creating content that…",
     "meta_description": "When it comes to search engine optimization (SEO), keyword research is a crucial step in understanding your target audience and creating content that…",
@@ -9633,7 +9611,7 @@
       "chrome extension for keyword research"
     ],
     "canonicalPath": "/blog/the-best-chrome-extension-for-keyword-research",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "35fac9ce-94e9-4999-aeb7-ac27b8e471cc",
@@ -9709,7 +9687,7 @@
   },
   {
     "id": "5daa6afc-23c4-46c9-a182-c1bc8f30d1b0",
-    "title": "Analyze Any Website Right from Chrome",
+    "title": "Analyze Any Website from Chrome: The Extensions Marketers and Devs Use",
     "slug": "analyze-any-website-right-from-chrome",
     "description": "As a website owner, marketer, or developer, understanding your website's performance, user behavior, and technical aspects is crucial for success.",
     "meta_description": "As a website owner, marketer, or developer, understanding your website's performance, user behavior, and technical aspects is crucial for success.",
@@ -9727,7 +9705,7 @@
       "chrome extension for website analysis"
     ],
     "canonicalPath": "/blog/analyze-any-website-right-from-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "9aa98173-160f-45e2-b126-6428f677e48d",
@@ -9881,7 +9859,7 @@
       "chrome extension for faster downloads"
     ],
     "canonicalPath": "/blog/speed-up-downloads-with-this-chrome-extension",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "4a4bfd5f-b618-4f98-ab05-71ba1119a6db",
@@ -9969,7 +9947,7 @@
       "chrome extension to download videos"
     ],
     "canonicalPath": "/blog/how-to-download-videos-straight-from-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "032b0a21-08ee-4d52-8665-16924a924c6b",
@@ -10057,7 +10035,7 @@
       "chrome extension for downloading files faster"
     ],
     "canonicalPath": "/blog/supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "c34a9fc0-5242-4a98-8f00-cc23e42b5b6a",
@@ -10167,7 +10145,7 @@
       "best youtube productivity extensions"
     ],
     "canonicalPath": "/blog/youtube-extensions-that-actually-save-you-time",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "052dcd31-6092-480c-9dbf-6f962ba54892",
@@ -10370,7 +10348,7 @@
       "chrome extension to block malicious websites"
     ],
     "canonicalPath": "/blog/protecting-your-online-security",
-    "updated_at": "2026-09-20T10:56:50.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "boosting-browser-security-extensions",
@@ -10448,7 +10426,7 @@
   },
   {
     "id": "c3404f92-626e-4894-addc-236d23a130bb",
-    "title": "Protecting Your Online Privacy: The Best Chrome Extension to Detect Trackers",
+    "title": "Detect Trackers on Any Website: Chrome Extensions That Show Who's Watching",
     "slug": "protecting-your-online-privacy",
     "description": "As we browse the internet, it's easy to overlook the trackers following our every move. Here's the best Chrome extension for detecting and blocking them.",
     "meta_description": "As we browse the internet, it's easy to overlook the trackers following our every move. Here's the best Chrome extension for detecting and blocking them.",
@@ -10466,7 +10444,7 @@
       "chrome extension to detect trackers"
     ],
     "canonicalPath": "/blog/protecting-your-online-privacy",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "eefbe79d-f7c2-4dc5-9e47-8fb2844886bb",
@@ -10805,7 +10783,7 @@
       "ublock origin vs adblock plus"
     ],
     "canonicalPath": "/blog/adblock-plus-vs-ublock-origin-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "a92f5622-3b4f-4b74-97ab-2b96bee6e08c",
@@ -10917,7 +10895,7 @@
       "poper blocker alternatives"
     ],
     "canonicalPath": "/blog/exploring-poper-blocker-alternatives",
-    "updated_at": "2026-09-20T10:56:50.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "16af549d-aa0c-42b2-85f4-78829e753033",
@@ -11036,7 +11014,7 @@
   },
   {
     "id": "7e272fbe-20e7-42fd-90af-523bbdf2a32b",
-    "title": "The Screen Recorder Developers Actually Use",
+    "title": "Screen Recorders for Developers: Capture Demos and Bug Reports That Ship",
     "slug": "discover-the-best-screen-recorder-for-developers",
     "description": "As a developer, you understand the importance of creating high-quality tutorials, demos, and presentations to showcase your work and share knowledge with…",
     "meta_description": "As a developer, you understand the importance of creating high-quality tutorials, demos, and presentations to showcase your work and share knowledge with…",
@@ -11054,11 +11032,11 @@
       "best screen recorder for developers"
     ],
     "canonicalPath": "/blog/discover-the-best-screen-recorder-for-developers",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "17a67b02-b714-47d9-8798-61e1060d0b0c",
-    "title": "A Free Color Picker Extension for Chrome",
+    "title": "Free Color Picker Extensions for Chrome: Grab Any Hex Code in One Click",
     "slug": "a-free-color-picker-extension-for-chrome",
     "description": "Are you a web designer, developer, or digital artist looking for a reliable and efficient way to pick colors for your projects?",
     "meta_description": "Are you a web designer, developer, or digital artist looking for a reliable and efficient way to pick colors for your projects?",
@@ -11076,7 +11054,7 @@
       "color picker chrome extension free"
     ],
     "canonicalPath": "/blog/a-free-color-picker-extension-for-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "00ed8c79-4450-483c-97e6-1c8551534fe9",
@@ -11149,7 +11127,7 @@
   },
   {
     "id": "58dea4c5-6772-465e-8e0c-8d2916954281",
-    "title": "A CSS Viewer Extension for Chrome",
+    "title": "CSS Viewer Extensions for Chrome: Inspect Any Site's Styles Instantly",
     "slug": "unlock-the-power-of-css-css-viewer-extension-for-chrome",
     "description": "As a web developer or designer, understanding the CSS (Cascading Style Sheets) of a website is crucial for making modifications, customizations, or even just…",
     "meta_description": "As a web developer or designer, understanding the CSS (Cascading Style Sheets) of a website is crucial for making modifications, customizations, or even just…",
@@ -11167,7 +11145,7 @@
       "css viewer extension for chrome"
     ],
     "canonicalPath": "/blog/unlock-the-power-of-css-css-viewer-extension-for-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "5882417a-3d40-46d3-9a98-d0925f4d0160",
@@ -11197,11 +11175,11 @@
       "verify Google tags"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-google-tag-assistant-extension",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "33d3f678-4e3d-41d2-9469-6943d240dc91",
-    "title": "Facebook Pixel Helper: What It Shows You",
+    "title": "Facebook Pixel Helper: How to Read Its Results and Fix Every Warning",
     "slug": "unlocking-the-power-of-facebook-pixel-helper-chrome-2026",
     "description": "Facebook Pixel Helper: What It Shows You — As a digital marketer or business owner, you're likely no stranger to the importance of tracking and optimizing yo...",
     "meta_description": "Facebook Pixel Helper: What It Shows You — As a digital marketer or business owner, you're likely no stranger to the importance of tracking and optimizing yo...",
@@ -11219,7 +11197,7 @@
       "facebook pixel helper chrome 2026"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-facebook-pixel-helper-chrome-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "ca70a007-c1d4-433e-b310-57d60d1058ab",
@@ -11289,7 +11267,7 @@
   },
   {
     "id": "f036eded-6d64-44cc-b327-18fae616f43b",
-    "title": "A Web Scraper Extension for Chrome",
+    "title": "Web Scraper Extensions for Chrome: Extract Tables and Lists Without Code",
     "slug": "unlock-the-power-of-web-scraping-web-scraper-extension-for-chrome",
     "description": "How a web scraper extension for Chrome automates pulling structured data from websites, replacing tedious manual copy-and-paste work.",
     "meta_description": "How a web scraper extension for Chrome automates pulling structured data from websites, replacing tedious manual copy-and-paste work.",
@@ -11307,7 +11285,7 @@
       "web scraper extension for chrome"
     ],
     "canonicalPath": "/blog/unlock-the-power-of-web-scraping-web-scraper-extension-for-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "3eec9d93-6529-44c5-b396-43b67957e634",
@@ -11397,7 +11375,7 @@
       "chrome devtools tips for mobile"
     ],
     "canonicalPath": "/blog/top-chrome-devtools-tips-for-mobile",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "922d5ef5-986c-425d-862e-76fab7615efe",
@@ -11519,11 +11497,11 @@
       "save images from protected sites chrome"
     ],
     "canonicalPath": "/blog/save-images-from-protected-sites-chrome",
-    "updated_at": "2026-09-20T10:56:50.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "e920bd8e-b79d-405f-980a-85fc1bd26e37",
-    "title": "Best Media Downloader for Android Chrome",
+    "title": "Best Media Downloader for Android Chrome: What Works in 2026",
     "slug": "best-media-downloader-android-chrome",
     "description": "best media downloader for android chrome — Are you tired of struggling to download media files on your Android device using Chrome? Look no further! In this ...",
     "meta_description": "best media downloader for android chrome — Are you tired of struggling to download media files on your Android device using Chrome? Look no further! In this ...",
@@ -11547,7 +11525,7 @@
       "best media downloader for android chrome"
     ],
     "canonicalPath": "/blog/best-media-downloader-android-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "886230a2-4e1a-482f-9949-c9b951a77939",
@@ -11597,7 +11575,7 @@
       "video speed controller chrome"
     ],
     "canonicalPath": "/blog/video-speed-controller-chrome-extensions",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "041dbb1c-397e-43df-be2d-b21d324e2297",
@@ -11793,7 +11771,7 @@
       "best downloader for chrome 2026"
     ],
     "canonicalPath": "/blog/best-downloader-for-chrome-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "23db0497-f289-41cf-b446-230efe3aa030",
@@ -11865,7 +11843,7 @@
       "download video from facebook chrome"
     ],
     "canonicalPath": "/blog/how-to-download-video-from-facebook-chrome",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "e36cb082-2f60-42af-bf8f-db562c4a9103",
@@ -11972,7 +11950,7 @@
       "chrome out of memory error fix"
     ],
     "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "954ea46d-09c0-41e5-81bc-f80d25ba70fc",
@@ -12006,7 +11984,7 @@
       "is ghostery safe"
     ],
     "canonicalPath": "/blog/best-chrome-privacy-extensions-2026-complete-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "9af94f0a-bd7d-458e-bdd0-d570f5212fe5",
@@ -12039,7 +12017,7 @@
       "how to screenshot in chrome"
     ],
     "canonicalPath": "/blog/best-chrome-screenshot-extensions-2026-complete-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "fee36c91-689d-4681-ac15-e28652aba2c6",
@@ -12397,7 +12375,7 @@
       "kiwi browser developer mode"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-kiwi-browser-developer-mode",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "07ba4341-2456-4a95-a374-c40f00eb6c5e",
@@ -12493,7 +12471,7 @@
       "best browser low ram"
     ],
     "canonicalPath": "/blog/chrome-vs-edge-vs-brave-ram-comparison",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "68ccc15f-1f6e-40b3-a04b-f0205f5d5225",
@@ -12694,7 +12672,7 @@
       "chrome extension for android tablet"
     ],
     "canonicalPath": "/blog/the-best-chrome-extension-for-android-tablet",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "fix-chrome-out-of-memory-errors",
@@ -12792,7 +12770,7 @@
   },
   {
     "id": "4894deb9-5d3d-406f-89cb-052b7878ebc8",
-    "title": "kiwi browser vs yandex browser: A Comprehensive Comparison for the Modern User",
+    "title": "Kiwi Browser vs Yandex Browser: Which Mobile Browser Handles Extensions Better?",
     "slug": "kiwi-browser-vs-yandex-browser",
     "description": "Choosing the right browser can shape your everyday experience. Here's how Kiwi Browser and Yandex Browser compare on extensions, speed, and privacy.",
     "meta_description": "Choosing the right browser can shape your everyday experience. Here's how Kiwi Browser and Yandex Browser compare on extensions, speed, and privacy.",
@@ -12810,7 +12788,7 @@
       "kiwi browser vs yandex browser"
     ],
     "canonicalPath": "/blog/kiwi-browser-vs-yandex-browser",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "best-ram-saving-extensions-2026",
@@ -12839,7 +12817,7 @@
       "best tab suspender 2026"
     ],
     "canonicalPath": "/blog/best-ram-saving-extensions-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "7e511e56-e552-469d-83ec-1024c9caefb6",
@@ -12885,7 +12863,7 @@
       "chrome memory saver mode enabled"
     ],
     "canonicalPath": "/blog/how-to-turn-on-chromes-memory-saver-mode",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "08f8bfd8-921e-4e7e-8a2c-14da8327d132",
@@ -12982,7 +12960,7 @@
       "install ublock origin on android chrome"
     ],
     "canonicalPath": "/blog/how-to-install-ublock-origin-on-android-chrome",
-    "updated_at": "2026-09-20T10:56:50.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "4ca0043d-6bde-472e-986d-e6262efd00d4",
@@ -13026,7 +13004,7 @@
       "best android browser for extensions"
     ],
     "canonicalPath": "/blog/which-android-browser-handles-extensions-best",
-    "updated_at": "2026-09-17T10:54:12.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "2329a7b1-bdf9-4d9f-aac8-928f1f17606d",
@@ -13172,7 +13150,7 @@
       "Ghostery vs Privacy Badger: Full 2026 Comparison"
     ],
     "canonicalPath": "/blog/ghostery-vs-privacy-badger-full-2026-comparison",
-    "updated_at": "2026-09-20T10:56:50.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "c18dec57-79d4-44fa-968e-01c6b9c4960e",
@@ -13447,7 +13425,7 @@
       "install chrome extensions on android 2026"
     ],
     "canonicalPath": "/blog/how-to-install-chrome-extensions-on-android-2026",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "66e42800-b72a-4757-94c1-0dfb2ac063bc",
@@ -13553,7 +13531,7 @@
       "chrome extension or web app"
     ],
     "canonicalPath": "/blog/chrome-extensions-vs-web-apps-comparison",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "f383f99e-6d40-4c1a-9328-b47152891095",
@@ -13577,7 +13555,7 @@
       "How to speed up a slow Chrome browser in 2026"
     ],
     "canonicalPath": "/blog/speed-up-slow-chrome-in-2026-10-fixes-that-actually-work",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "7e8cd08f-1c66-4355-9ea7-3cf53fca8435",
@@ -13625,7 +13603,7 @@
       "ProTab Suspender vs Google Memory Saver: Comparison"
     ],
     "canonicalPath": "/blog/protab-suspender-vs-google-memory-saver-2026-which-saves-more-ram",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "b8904ca4-2da3-4e7f-b741-9e9644a40f48",
@@ -13712,7 +13690,7 @@
       "id3 tags youtube mp3"
     ],
     "canonicalPath": "/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "c3e4f574-663d-4b40-9a74-ca524aea1d2b",
@@ -13817,7 +13795,7 @@
       "productivity"
     ],
     "canonicalPath": "/blog/the-only-privacy-chrome-extensions-free-of-charge-you-actually-need-2025-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "9403e1e2-566b-405a-b979-f0433238b971",
@@ -13846,7 +13824,7 @@
       "remove unsafe extension"
     ],
     "canonicalPath": "/blog/how-to-install-chrome-extensions-for-free-without-wrecking-your-browser",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "d03f7375-dc13-4a01-9e06-debd984e6a65",
@@ -13875,7 +13853,7 @@
       "professional workflow extensions"
     ],
     "canonicalPath": "/blog/10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "fcea42a1-2db2-4cc1-81b2-d8dcbb6fed30",
@@ -13963,7 +13941,7 @@
       "work browser security"
     ],
     "canonicalPath": "/blog/free-work-chrome-extensions-guide",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "f13f91a9-f690-4305-b0bb-57225335c67f",
@@ -14014,7 +13992,7 @@
       "manage browser add-ons"
     ],
     "canonicalPath": "/blog/pro-google-chrome-addons-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "7c775b80-f86a-494d-aeda-55000366e0ea",
@@ -14072,7 +14050,7 @@
       "Chrome extension licenses"
     ],
     "canonicalPath": "/blog/how-to-install-pro-chrome-extensions-the-definitive-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "cef47d03-6dc5-4b0b-b3d3-5ec9d4e6ce94",
@@ -14310,7 +14288,7 @@
       "free pop up blocker for google chrome"
     ],
     "canonicalPath": "/blog/pop-up-blocker-for-chrome-partial",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "f1f4db1c-415c-484f-ba4f-de4c84eaf9c8",
@@ -14528,7 +14506,7 @@
       "Prevent websites from opening new tabs automatically"
     ],
     "canonicalPath": "/blog/prevent-websites-from-opening-new-tabs-automatically-2",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "7a70711f-1343-40ca-b38b-788df17021c0",
@@ -14574,7 +14552,7 @@
       "Ad-Blockers"
     ],
     "canonicalPath": "/blog/light-popup-blocker-a-lighter-ad-blocker",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "2b7bafb4-4da5-44c6-b01c-075d79c16f2d",
@@ -14791,7 +14769,7 @@
       "keepass extension for chrome"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-password-management",
-    "updated_at": "2026-09-17T10:54:12.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "98bed27f-dde1-4a25-9ad6-049c9704aa7e",
@@ -14842,7 +14820,7 @@
       "best screenshot tool chrome"
     ],
     "canonicalPath": "/blog/screenshot-extensions-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "a4f61252-dd1a-4c7e-be46-809bacbdeea6",
@@ -14919,7 +14897,7 @@
       "chrome screenshot guide step by step"
     ],
     "canonicalPath": "/blog/chrome-screenshot-addon-tutorial",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "dac72116-fcb7-4b67-9151-2ee5d9ab2628",
@@ -14965,7 +14943,7 @@
       "chrome screenshot tips"
     ],
     "canonicalPath": "/blog/chrome-screenshot-addon-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "198f2db0-39ac-40f3-a8f3-34fbb0ccfc33",
@@ -15035,7 +15013,7 @@
       "best screenshot software"
     ],
     "canonicalPath": "/blog/chrome-screenshot-alternatives",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "0dd4ad6b-cde6-40a2-986a-89904ad0c22c",
@@ -15151,7 +15129,7 @@
       "Easy Screenshot Chrome Guide"
     ],
     "canonicalPath": "/blog/easy-screenshot-chrome-guide",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "4be83748-0962-4161-aeaa-f700460fc56e",
@@ -15362,28 +15340,6 @@
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
-    "id": "08f9db17-a6cc-423b-b6b0-a4fe1c700bf2",
-    "title": "How to Fix Facebook Pixel Helper Not Working 2026: A Comprehensive Guide to Troubleshooting",
-    "slug": "how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting",
-    "description": "Struggling with the Facebook Pixel Helper not working as expected in 2026? Here's how to troubleshoot the most common causes and get it tracking again.",
-    "meta_description": "Struggling with the Facebook Pixel Helper not working as expected in 2026? Here's how to troubleshoot the most common causes and get it tracking again.",
-    "excerpt": "Are you struggling with the Facebook Pixel Helper not working as expected in 2026? You're not alone.",
-    "published_at": "2026-03-04T05:00:01.002+00:00",
-    "category": "Social Media Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting/featured.webp",
-    "featured_image": "/content/images/how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "How to fix Facebook Pixel Helper not working 2026"
-    ],
-    "canonicalPath": "/blog/how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
-  },
-  {
     "id": "81d42656-b797-4d78-9147-9f821ce64c57",
     "title": "How to Get a Clean Browsing Experience on Chrome: A Comprehensive Guide",
     "slug": "how-to-get-a-clean-browsing-experience-on-chrome-4",
@@ -15499,7 +15455,7 @@
       "How to speed up page loading by blocking popups"
     ],
     "canonicalPath": "/blog/how-to-speed-up-chrome-partial",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "3670d34a-8bb1-4428-bf95-2a9d54c4b23c",
@@ -15554,7 +15510,7 @@
   },
   {
     "id": "fd1562ed-31d8-4973-9499-5c0be3d45d1d",
-    "title": "How to Store Passwords Safely in Your Browser: A Comprehensive Guide",
+    "title": "How to Store Passwords Safely in Your Browser (and When Not To)",
     "slug": "how-to-store-passwords-safely-in-your-browser",
     "description": "Storing passwords safely in your browser is a crucial aspect of online security, and it's essential to understand the best practices to protect your…",
     "meta_description": "Storing passwords safely in your browser is a crucial aspect of online security, and it's essential to understand the best practices to protect your…",
@@ -15574,7 +15530,7 @@
       "How to store passwords safely in your browser"
     ],
     "canonicalPath": "/blog/how-to-store-passwords-safely-in-your-browser",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "91c8ac76-b9e6-451d-b337-75f0d0d6f6d1",
@@ -15776,7 +15732,7 @@
       "best tab suspender chrome"
     ],
     "canonicalPath": "/blog/protab-suspender-memory-saver-review",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "b0463ed6-95d3-4cec-977c-85d9735ef5cb",
@@ -15941,7 +15897,7 @@
   },
   {
     "id": "316bb3e5-8f2b-4637-aefe-9f6471c933a4",
-    "title": "The Best AMOLED Black Theme for Reddit",
+    "title": "True Black for Reddit: AMOLED Dark Themes and Extensions That Force Them",
     "slug": "best-amoled-black-theme-for-reddit-users",
     "description": "Are you a Reddit user looking to elevate your browsing experience with a sleek and battery-friendly theme? Look no further!",
     "meta_description": "Are you a Reddit user looking to elevate your browsing experience with a sleek and battery-friendly theme? Look no further!",
@@ -15959,7 +15915,7 @@
       "Best AMOLED Black theme for Reddit users"
     ],
     "canonicalPath": "/blog/best-amoled-black-theme-for-reddit-users",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "10be89d1-c939-48cf-a8fc-e914836b4c96",
@@ -16273,7 +16229,7 @@
       "screenshot tool chrome tutorial"
     ],
     "canonicalPath": "/blog/screenshot-tool-chrome-tutorial",
-    "updated_at": "2026-09-20T10:56:50.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "how-to-fix-chrome-memory-2026",
@@ -16426,7 +16382,7 @@
       "reduce Chrome tab memory"
     ],
     "canonicalPath": "/blog/the-only-free-essential-chrome-extensions-you-need-to-survive-the-tab-apocalypse",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "e01669d1-8ec0-4512-917c-8de6fb20a971",
@@ -16498,28 +16454,6 @@
       "translate web pages chrome"
     ],
     "canonicalPath": "/blog/google-trad-plugin-15",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
-  },
-  {
-    "id": "2b174e0a-ee7f-4101-a028-f0d4e1753809",
-    "title": "Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide",
-    "slug": "https-sci-hub-se-chrome-extension-16",
-    "description": "A practical breakdown of scientific knowledge with the https sci-hub se chrome extension: how it works, how to set it up, and where it falls short.",
-    "meta_description": "A practical breakdown of scientific knowledge with the https sci-hub se chrome extension: how it works, how to set it up, and where it falls short.",
-    "excerpt": "The world of scientific research has become increasingly digital, with numerous online platforms and tools available to facilitate access to knowledge.",
-    "published_at": "2026-02-22T17:31:02.586+00:00",
-    "category": "Chrome Extensions",
-    "author": "James Mitchell",
-    "image_url": "/content/images/https-sci-hub-se-chrome-extension-16/featured.webp",
-    "featured_image": "/content/images/https-sci-hub-se-chrome-extension-16/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [],
-    "keywords": [
-      "https sci hub se chrome extension"
-    ],
-    "canonicalPath": "/blog/https-sci-hub-se-chrome-extension-16",
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
@@ -16783,7 +16717,7 @@
       "popup blocker extension comparison"
     ],
     "canonicalPath": "/blog/best-free-popup-blocker-for-chrome-2026",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "1f467f8e-6904-4b86-9f80-cde952c55d9c",
@@ -16836,7 +16770,7 @@
       "chrome screenshot markup"
     ],
     "canonicalPath": "/blog/best-annotated-screenshot-chrome-5",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "c67e3ae6-7180-4ca0-a991-f40212ad7a9d",
@@ -16960,7 +16894,7 @@
       "Chrome download tools"
     ],
     "canonicalPath": "/blog/the-best-chrome-plugins-for-downloading-media",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "bc87ba3f-0494-4944-9476-b4a4d0ff1e5c",
@@ -16991,7 +16925,7 @@
       "Chrome privacy settings"
     ],
     "canonicalPath": "/blog/stop-trackers-on-chrome-without-slowing-down",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "84d0ca13-516c-4c3b-b65a-901934013939",
@@ -17043,7 +16977,7 @@
       "how to check Chrome extension permissions"
     ],
     "canonicalPath": "/blog/top-rated-privacy-extensions-for-google-chrome",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "70b80012-4470-4af5-9d11-8ace8d3fd4c0",
@@ -17256,7 +17190,7 @@
       "Chrome tracker blocking comparison"
     ],
     "canonicalPath": "/blog/privacy-badger-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "03bd5c87-c237-473d-9554-5760276858bd",
@@ -17308,7 +17242,7 @@
       "veepn extension to chrome"
     ],
     "canonicalPath": "/blog/veepn-extension-to-chrome-4",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "09c0b551-aa69-4eac-98c3-4d0dafebc170",
@@ -17478,7 +17412,7 @@
       "windscribe extension to chrome"
     ],
     "canonicalPath": "/blog/windscribe-extension-to-chrome-9",
-    "updated_at": "2026-09-20T10:56:50.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "1c4be1a2-9eae-4a56-9d9a-1f1cad34082e",
@@ -17674,7 +17608,7 @@
       "safe chrome extensions"
     ],
     "canonicalPath": "/blog/chrome-web-store-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "bfe092dd-c184-4d16-8e62-f6c2e79cc1bc",
@@ -17810,7 +17744,7 @@
       "install chrome extensions android"
     ],
     "canonicalPath": "/blog/chrome-extensions-android-download",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "6345ad6c-5064-479f-a2a7-b869a303dfe3",
@@ -17876,7 +17810,7 @@
       "noscript chrome"
     ],
     "canonicalPath": "/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance",
-    "updated_at": "2026-09-17T13:06:01.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "281fe238-066c-410d-94f5-2be7e49ba322",
@@ -17902,7 +17836,7 @@
   },
   {
     "id": "ba6f7d75-1c28-4136-a8a3-28f914741f82",
-    "title": "SpeakIt: A Text-to-Speech Extension for Chrome",
+    "title": "SpeakIt for Chrome: Text-to-Speech That Reads Any Page Aloud",
     "slug": "speakit-3",
     "description": "A guide to SpeakIt, a text-to-speech Chrome extension that reads selected text aloud instead of requiring you to read everything yourself.",
     "meta_description": "A guide to SpeakIt, a text-to-speech Chrome extension that reads selected text aloud instead of requiring you to read everything yourself.",
@@ -17920,7 +17854,7 @@
       "speakit"
     ],
     "canonicalPath": "/blog/speakit-3",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "3a3ee33d-edf3-44a9-a8b8-83d92d63954f",
@@ -17944,7 +17878,7 @@
       "read aloud extension"
     ],
     "canonicalPath": "/blog/tts-chrome-5",
-    "updated_at": "2026-09-17T10:54:12.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "fe362fac-6c56-471f-a3d0-0affee26d527",
@@ -17968,7 +17902,7 @@
       "cortana search redirect"
     ],
     "canonicalPath": "/blog/chrometana-extension-review",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "6b018cb3-c87d-4395-9762-a9e88ba9b996",
@@ -18060,7 +17994,7 @@
   },
   {
     "id": "02c3a85c-e194-4990-9c7a-d4e5f1477844",
-    "title": "Unlocking Secure Browsing: The Power of Extension Chrome KeePass",
+    "title": "Using KeePass with Chrome: Connect Your Local Vault to the Browser",
     "slug": "extension-chrome-keepass-13",
     "description": "Want to use your KeePass password vault directly in Chrome? Here's how the KeePass extension autofills logins securely without leaving your browser.",
     "meta_description": "Want to use your KeePass password vault directly in Chrome? Here's how the KeePass extension autofills logins securely without leaving your browser.",
@@ -18078,7 +18012,7 @@
       "extension chrome keepass"
     ],
     "canonicalPath": "/blog/extension-chrome-keepass-13",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "60512e74-be52-411e-b16d-e1536997431a",
@@ -18152,7 +18086,7 @@
       "webpage screenshot workflow"
     ],
     "canonicalPath": "/blog/extension-chrome-screen-page-16",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "5921a78f-80ce-43da-99bf-c593e1cfb76e",
@@ -18196,7 +18130,7 @@
       "extension dashlane opera"
     ],
     "canonicalPath": "/blog/extension-dashlane-opera-1",
-    "updated_at": "2026-09-22T21:52:43.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "71661d37-bc4a-4825-ba2c-9a879fddb1e9",
@@ -18246,7 +18180,7 @@
       "Chrome Web Store permissions"
     ],
     "canonicalPath": "/blog/extension-get-chrome-3",
-    "updated_at": "2026-09-17T10:54:12.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "cd590be2-aed4-4922-b85f-37dafc2e6e5f",
@@ -18471,7 +18405,7 @@
       "Chrome extension Manifest V3"
     ],
     "canonicalPath": "/blog/google-chrome-programm-en-14",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "ffc66852-4368-4089-b1af-e1765b3c7bbb",
@@ -18500,7 +18434,7 @@
       "tab managers"
     ],
     "canonicalPath": "/blog/the-ultimate-browser-tools-guide-boost-productivity-efficiency",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "dd67cdea-2224-4525-97ea-7f688b371290",
@@ -18583,7 +18517,7 @@
       "manage Chrome extensions"
     ],
     "canonicalPath": "/blog/google-chrome-addons-guide-unlock-your-browser-s-full-potential",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "0b33dbe3-2d3a-4dca-add8-cbc21115ac5c",
@@ -18635,7 +18569,7 @@
       "Chrome Memory Saver"
     ],
     "canonicalPath": "/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "f281a3d5-04e8-4fdb-b216-3c23c7fa9466",
@@ -18665,7 +18599,7 @@
       "Chrome extension permissions"
     ],
     "canonicalPath": "/blog/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "7ab5d7aa-9094-44df-9f35-1cb12d29966c",
@@ -18694,7 +18628,7 @@
       "extension privacy review"
     ],
     "canonicalPath": "/blog/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "21d29cda-6d90-45fa-b70b-d588085acdea",
@@ -18858,7 +18792,7 @@
       "privacy-friendly productivity tools"
     ],
     "canonicalPath": "/blog/the-only-free-productivity-chrome-extensions-you-actually-need",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "963e983c-c8b5-47f5-99d7-0a16962a9efa",
@@ -18909,7 +18843,7 @@
       "How to hibernate inactive tabs automatically"
     ],
     "canonicalPath": "/blog/how-to-hibernate-inactive-tabs-automatically-6",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "f48a7a45-6e1a-4665-b9e4-25cb489f270f",
@@ -18971,7 +18905,7 @@
       "Airtable for small business"
     ],
     "canonicalPath": "/blog/best-spreadsheet-tools-for-small-business-owners-5",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "b1e1ee60-e91c-475e-9971-3b596484b610",
@@ -19031,7 +18965,7 @@
       "chrome memory saver not working"
     ],
     "canonicalPath": "/blog/best-memory-saver-extension-for-chrome-4",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "08a7006a-0567-4976-8a11-6aad47337785",
@@ -19083,7 +19017,7 @@
       "VLOOKUP vs XLOOKUP"
     ],
     "canonicalPath": "/blog/writing-vlookup-formulas-for-beginners-2",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "aa9089ee-ab82-4402-bbf7-879d0dea3e02",
@@ -19164,7 +19098,7 @@
       "Gemini formula generator"
     ],
     "canonicalPath": "/blog/best-ai-formula-generator-for-google-sheets-1",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "adbefebd-a99b-474e-830a-bfc055e57bc2",
@@ -19186,7 +19120,7 @@
       "Best Tab Suspender for 4GB RAM laptops"
     ],
     "canonicalPath": "/blog/best-tab-suspender-for-4gb-ram-laptops-1",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "13e06f66-d954-447e-9803-2c23a20c4831",
@@ -19345,7 +19279,7 @@
       "remote work browser tools"
     ],
     "canonicalPath": "/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "9c7c917a-7e28-4df4-92c0-8b14e13b2f71",
@@ -19405,6 +19339,6 @@
       "IDM not working in Chrome"
     ],
     "canonicalPath": "/blog/internet-download-manager-extension",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   }
 ]
