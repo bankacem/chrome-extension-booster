@@ -1,0 +1,102 @@
+{
+  "speakit-3": {
+    "title": "SpeakIt for Chrome: Text-to-Speech That Reads Any Page Aloud",
+    "seo_title": "SpeakIt for Chrome: Text-to-Speech Setup & Alternatives",
+    "intro": "SpeakIt turns any block of text on a web page into spoken audio: highlight a paragraph, click the toolbar icon, and Chrome reads it aloud while the words are highlighted in sequence. That covers three very different daily needs — proofreading your own writing by ear, getting through long articles while your hands are busy, and screen-free reading for users with dyslexia or visual fatigue. This guide walks through installing and configuring SpeakIt on desktop, picking and tuning voices for natural pacing, the keyboard shortcuts worth memorizing, and what to do when pronunciation or highlighting misbehaves. If SpeakIt's voice quality disappoints you, the final section compares it against newer neural-voice alternatives so you can pick by ear rather than by marketing claims."
+  },
+  "the-best-chrome-extension-for-keyword-research": {
+    "title": "The Best Chrome Extensions for Keyword Research (Tested in 2026)",
+    "seo_title": "Best Keyword Research Extensions for Chrome",
+    "intro": "Keyword research extensions collapse a task that used to mean opening three dashboards: search volume, ranking difficulty, and the actual SERP for a query now appear in a side panel while you look at the results page itself. This guide compares the tools that matter in 2026 — including Keywords Everywhere, Keyword Surfer, and Ubersuggest's Chrome module — on the numbers they actually return (monthly volume, cost-per-click, difficulty scores), how many free credits you get per day, and where each one's data source diverges from Google's own autocomplete. You also get a decision matrix: which extension suits a blogger checking ten topics a week, and which one suits an agency auditing hundreds of queries daily."
+  },
+  "unlocking-the-power-of-ai-extension-chrome-gpt": {
+    "title": "Chrome GPT Extensions: How to Run AI Assistants Inside Your Browser",
+    "seo_title": "Chrome GPT Extensions: AI Assistants in Your Browser",
+    "intro": "GPT-powered Chrome extensions put an AI assistant a right-click away: summarize a 4,000-word article into five bullets, draft a reply inside Gmail using the thread as context, or select a paragraph and ask for a plain-English explanation. This guide covers how these extensions actually work — most call a cloud model with the page text you grant them access to — which matters for privacy-sensitive pages like banking or HR portals. You'll find setup steps for the leading options, the real cost structure (free tiers are usually capped by tokens per day), a comparison of response quality on summarization versus drafting, and a permissions checklist to run through before trusting any AI extension with page content."
+  },
+  "best-media-downloader-android-chrome": {
+    "title": "Best Media Downloader for Android Chrome: What Works in 2026",
+    "seo_title": "Best Media Downloader for Android Chrome",
+    "intro": "Android's Chrome can't install extensions at all — Google reserves extension support for desktop — so downloading media on a phone means choosing a different browser that accepts Chrome extensions (Kiwi and Quetta are the usual picks) or using a site-based downloader in Chrome itself. This guide walks through both routes with real setup steps: which mobile browsers pass extension compatibility, which downloader extensions still work on them, and where each combination fails on modern streaming sites. There's also a safety section, because Android downloaders are a favorite disguise for adware — you'll learn which permissions are legitimate for this task and which ones should make you uninstall immediately."
+  },
+  "cookie-manager-chrome-extension": {
+    "title": "Best Cookie Manager Extensions for Chrome: Edit, Import and Audit Cookies",
+    "seo_title": "Best Cookie Manager Extensions for Chrome",
+    "intro": "A cookie manager gives you what Chrome's own settings hide: per-cookie inspection, one-click deletion for a single domain, and export or import of your cookie jar for testing. Developers use these tools to debug login sessions and A/B test variants; privacy-conscious users use them to audit exactly who set what. This guide compares the leading managers — including EditThisCookie's maintained successors and Cookie-Editor — on editing granular attributes (HttpOnly, SameSite, expiration), wildcard domain cleanup, and profile switching. You'll also get the cautions that matter: wiping cookies signs you out everywhere and can destroy session data, and importing a cookie file from an untrusted source is a credential-theft vector."
+  },
+  "unlock-the-power-of-css-css-viewer-extension-for-chrome": {
+    "title": "CSS Viewer Extensions for Chrome: Inspect Any Site's Styles Instantly",
+    "seo_title": "CSS Viewer Extensions for Chrome",
+    "intro": "A CSS viewer extension overlays computed styles as you hover — font stack, spacing scale, color palette — without opening DevTools and digging through the Elements panel. Front-end developers use them to reverse-engineer a spacing system in seconds; designers use them to verify a handoff matches spec. This guide covers the strongest options in 2026, what each one shows on hover (type scale, box model, CSS variables), how they behave inside iframes and shadow DOM where naive viewers fail, and keyboard-driven workflows for auditing a full page quickly. The comparison table at the end weighs each extension against DevTools itself, so you know when the extra install is genuinely faster than pressing F12."
+  },
+  "kiwi-browser-vs-yandex-browser": {
+    "title": "Kiwi Browser vs Yandex Browser: Which Mobile Browser Handles Extensions Better?",
+    "seo_title": "Kiwi Browser vs Yandex Browser Comparison",
+    "intro": "Both Kiwi and Yandex Browser are Chromium-based mobile browsers that promise what stock Android Chrome won't give you: extension support. But they diverge fast in practice — Kiwi runs most desktop Chrome extensions from the Web Store as-is, while Yandex ships its own extension catalog plus built-in conveniences like a built-in ad blocker and video download controls. This comparison tests both on the dimensions that decide daily use: which extensions actually install and survive a restart, page-load speed on mid-range hardware, privacy defaults and data-collection policies, update cadence, and how each handles passwords and sync. By the end you'll know which one fits an extension-heavy workflow and which suits a set-and-forget setup."
+  },
+  "analyze-any-website-right-from-chrome": {
+    "title": "Analyze Any Website from Chrome: The Extensions Marketers and Devs Use",
+    "seo_title": "Analyze Any Website Right from Chrome",
+    "intro": "Website analysis extensions stack a research desk onto your toolbar: traffic estimates for any domain, the ad networks and trackers a page calls, the tech stack behind its forms, and its on-page SEO health — all without leaving the tab you're inspecting. This guide maps the tools to their jobs: SimilarWeb-style traffic panels for competitive estimates, Wappalyzer-style stack detectors for developers scoping a prospect's platform, and SEO extensions that flag missing meta data, heading structure, and Core Web Vitals issues in one pass. You'll get setup steps for each, the accuracy limits to keep in mind when a client asks how reliable those traffic numbers really are, and a lean combination of three extensions that covers 90 percent of everyday analysis without slowing your browser."
+  },
+  "a-free-color-picker-extension-for-chrome": {
+    "title": "Free Color Picker Extensions for Chrome: Grab Any Hex Code in One Click",
+    "seo_title": "Free Color Picker Extension for Chrome",
+    "intro": "A color picker extension turns your cursor into an eyedropper for the entire web: hover any pixel — a gradient stop, a button shade in a screenshot, a background in a video frame — and the exact hex or RGB value lands on your clipboard. This guide covers the free options worth installing in 2026, starting with how each handles the two jobs that separate hobby tools from professional ones: zoomed pixel-accurate sampling on retina displays, and a saved palette history you can revisit mid-project. You'll find setup steps, the shortcut keys that make grabbing colors instant, output formats from hex to HSL and Tailwind-ready tokens, and a comparison against the eyedropper already built into Chrome's DevTools for when a page element — not a screenshot — is your color source."
+  },
+  "extension-chrome-keepass-13": {
+    "title": "Using KeePass with Chrome: Connect Your Local Vault to the Browser",
+    "seo_title": "KeePass Chrome Extension Setup Guide",
+    "intro": "KeePass stores your passwords in a local, encrypted vault file you control — no company server, no subscription — and a small bridge extension connects that vault to Chrome so autofill still works like a cloud manager. This guide walks through the full setup: which KeePass fork to install (KeePassXC with its built-in browser integration is the low-friction route), how to pair it with Chrome, and the settings that keep auto-type and autofill from fighting each other. You'll also get the honest trade-offs: vault syncing across devices is your responsibility, and a forgotten master password has no recovery email. If you'd rather have cloud convenience with local-vault security guarantees, the closing section compares this stack against SecuraKey Pro's approach."
+  },
+  "https-sci-hub-se-chrome-extension-16": {
+    "title": "Sci-Hub Chrome Extensions: What They Claim, What They Risk",
+    "seo_title": "Sci-Hub Chrome Extensions: Features and Legal Risks",
+    "intro": "Extensions built around Sci-Hub promise one-click access to paywalled research papers by routing requests through shadow-library mirrors. Before installing one, you should understand all three layers of the trade-off: the legal one (Sci-Hub hosts millions of copyrighted papers without publisher authorization, and courts in several countries have ruled against it — your liability varies by jurisdiction), the technical one (mirror domains rotate constantly, and extensions that hard-code them break or redirect unexpectedly), and the security one (these tools are distributed outside vetted store policies, which is where browser malware most often hides). This guide explains how such extensions work, the realistic risks in 2026, and the legitimate routes to the same papers — open-access versions on Unpaywall and Google Scholar, interlibrary loan, and emailing authors directly, which works more often than people expect."
+  },
+  "protecting-your-online-privacy": {
+    "title": "Detect Trackers on Any Website: Chrome Extensions That Show Who's Watching",
+    "seo_title": "Best Chrome Extensions to Detect Trackers",
+    "intro": "Tracker-detection extensions make the invisible visible: load a news site and the extension's panel lists the advertising networks, analytics scripts, and fingerprinting attempts running behind the scenes — often dozens of third parties on a single page. Seeing the list changes how you browse, and it's the honest first step before blocking anything, because a tracker inventory tells you what a site actually does rather than what its privacy policy claims. This guide covers the best detection tools for 2026, how to read their findings (the difference between first-party analytics, ad networks, and session-replay recorders that capture form input), and what to install next once you know who's watching — including where detection and blocking overlap, and when a blocker alone already does the job."
+  },
+  "how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting": {
+    "title": "Facebook Pixel Helper Not Working? 7 Fixes That Solve It",
+    "seo_title": "Facebook Pixel Helper Not Working — 7 Fixes",
+    "intro": "When the Meta Pixel Helper icon stays grey or reports 'no pixels found' on a page you know has the pixel installed, the cause is almost always something standing between the helper and the page — not a broken pixel. This troubleshooting guide works through the seven culprits in the order they actually occur: ad blockers and privacy extensions silently stripping the pixel script, consent-management platforms delaying it until user interaction, multiple pixels or duplicate base code confusing the detection, browser containers and profiles isolating the tab, and Chrome's own tracking-prevention settings. Each fix comes with a two-minute verification step, so you spend about twenty minutes total and know exactly which layer was blocking detection — and whether your pixel was ever the problem."
+  },
+  "unlocking-the-power-of-facebook-pixel-helper-chrome-2026": {
+    "title": "Facebook Pixel Helper: How to Read Its Results and Fix Every Warning",
+    "seo_title": "Facebook Pixel Helper: Reading Results & Fixes",
+    "intro": "The Meta Pixel Helper verifies more than a pixel's existence: it shows each event as it fires, flags duplicate page views, warns about microdata and referrer errors, and decodes the e-commerce parameters your product pages send. Reading those results correctly is the difference between trusting a dashboard that's silently wrong and fixing attribution at the source. This guide decodes every status the Helper displays — green versus red pixels, the warnings that matter versus the ones you can safely ignore, and the event parameters that feed Meta's optimization. You'll get concrete fixes for the three most common failures (duplicate base code from a tag manager plus hard-coded pixel, missing value and currency fields on purchase events, and deduplication misconfiguration), so your conversion data reflects reality."
+  },
+  "unlock-the-power-of-web-scraping-web-scraper-extension-for-chrome": {
+    "title": "Web Scraper Extensions for Chrome: Extract Tables and Lists Without Code",
+    "seo_title": "Web Scraper Extension for Chrome — No-Code Guide",
+    "intro": "A scraper extension like Web Scraper turns point-and-click selection into a repeatable extraction job: click a product name, a price, a rating, and the extension builds a sitemap that paginates through the whole catalog and exports clean CSV or Excel files — no Python, no XPath. This guide walks through building your first sitemap, handling the three structures that cover most sites (single lists, paginated tables, and detail pages linked from a listing), and scheduling repeated pulls without hammering the host. It also covers the limits that matter: sites that render content with JavaScript after the extension's selector pass, login walls and terms-of-service boundaries you should respect, and when a job has outgrown a browser extension and needs a real scraping framework."
+  },
+  "how-to-store-passwords-safely-in-your-browser": {
+    "title": "How to Store Passwords Safely in Your Browser (and When Not To)",
+    "seo_title": "How to Store Passwords Safely in Your Browser",
+    "intro": "Chrome's built-in password manager is better than its reputation: credentials are encrypted with a key tied to your Google profile, sync across devices, and can be checked against known breach databases — and using it beats the most dangerous alternative, reusing the same password everywhere. But browser storage has real limits: the vault unlocks with your OS session, it does nothing against typing passwords into phishing sites that pass autofill on lookalike domains, and it's locked to one browser ecosystem. This guide covers hardening Chrome's manager properly (device passwords, on-device encryption, export hygiene), the specific scenarios where a dedicated manager with per-domain autofill matching is the safer choice, and a decision checklist so you pick once and stop worrying."
+  },
+  "best-amoled-black-theme-for-reddit-users": {
+    "title": "True Black for Reddit: AMOLED Dark Themes and Extensions That Force Them",
+    "seo_title": "Best AMOLED Black Theme for Reddit",
+    "intro": "On an AMOLED display, true black isn't a style preference — every pure-black pixel is powered off, which measurably cuts battery drain and reduces glow in dark rooms. Reddit's official dark mode, however, stops at dark grey (#1A1A1B), leaving most of your screen still lit. This guide shows every route to a deeper black: Reddit's own settings on the apps and mobile web, old-reddit styles, and browser-side options for desktop users — including dark-mode extensions that force pure black on sites that don't offer it natively, and what breaks when they rewrite site colors (images, embedded previews, contrast issues). You'll also find the AMOLED-specific cautions: why pure black causes smearing on fast-scrolling content and which trade-off settings keep motion readable."
+  },
+  "a-chrome-extension-for-power-twitter-users": {
+    "title": "Chrome Extensions for X/Twitter Power Users: Threads, Scheduling, Analytics",
+    "seo_title": "Chrome Extensions for X/Twitter Power Users",
+    "intro": "The X/Twitter web interface covers the basics, but power users — people scheduling a week of posts, managing a brand account, or doing outreach daily — quickly hit its limits. Chrome extensions fill the gaps: thread composers that stitch long-form posts with proper numbering, schedulers with a real calendar view, analytics panels that estimate engagement beyond what X exposes, and bulk tools for cleaning up who you follow. This guide reviews the extensions that still work against the current API restrictions (a fast-moving target — each pick notes its status), the automation boundaries you should respect to keep your account out of X's spam filters, and a recommended setup for three personas: the solo creator, the community manager, and the researcher who mainly watches and archives."
+  },
+  "cypress-plugin-chrome-2": {
+    "title": "Cypress Chrome Plugin: Record Interactions and Debug Browser Tests Faster",
+    "seo_title": "Cypress Chrome Plugin Setup & Debugging Guide",
+    "intro": "Writing Cypress tests by hand means typing selectors you have to dig out of DevTools; the Chrome plugin ecosystem shortens that loop by recording your clicks and inputs in the browser and generating test stubs from the session. This guide covers the practical setup: installing the recorder extension, connecting it to your Cypress project, converting a recorded session into a maintainable spec, and where the generated code needs cleanup (brittle nth-child selectors and missing assertions being the two usual offenders). You'll also see how the plugin fits the daily debugging workflow — running a failing test headlessly, then replaying it in Chrome's headed mode with the plugin's time-travel snapshots — and the limits: recorded tests cover the happy path, and anything with dynamic data still needs manual fixtures."
+  },
+  "discover-the-best-screen-recorder-for-developers": {
+    "title": "Screen Recorders for Developers: Capture Demos and Bug Reports That Ship",
+    "seo_title": "Best Screen Recorder for Developers",
+    "intro": "A developer's screen recording has harder requirements than a tutorial video's: it needs to render code crisply at readable font sizes, capture at a steady 60fps while you scroll and debug, and export quickly to GIF or MP4 sized for an issue tracker or a pull-request description. This guide compares the recorders developers actually keep installed — from Chrome-extension-based capture for instant bug-repro clips to desktop tools with window-specific recording and webcam overlay for demos — scoring each on the criteria that matter for technical content: text sharpness after compression, capture scope control, edit-and-trim workflow, and one-click share links. The closing decision table matches three common scenarios (bug report, feature demo, course lesson) to the tool that fits, with the settings to change first."
+  }
+}
