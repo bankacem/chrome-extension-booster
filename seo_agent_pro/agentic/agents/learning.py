@@ -15,6 +15,11 @@ or fail). Two jobs:
    them first. Deterministic issues ARE promoted automatically because
    they're already phrased as reusable rules (that's what made them checkable
    by regex/lookup in the first place).
+
+A third signal is now treated as learning-worthy too: quality_score. A draft
+can look acceptable to the LLM yet still be structurally weak or incomplete,
+so when the structural score falls below threshold we also add a reusable
+lesson to prevent the next run from repeating the pattern.
 """
 
 from __future__ import annotations
@@ -39,6 +44,7 @@ def run(state: dict) -> dict:
     llm_issues = evaluation.get("llm_issues", [])
     keyword = state.get("keyword", "")
     score = evaluation.get("score", 0)
+    quality_score = evaluation.get("quality_score", score)
     gsc_evidence = state.get("gsc_evidence", {}) or {}
     # Article-generation runs normally have no finalized GSC window yet. In
     # that case the cycle is still logged, but neither negative lessons nor
@@ -66,11 +72,20 @@ def run(state: dict) -> dict:
             lesson = "meta_description must be a complete sentence — never let it end mid-sentence with '...'."
         elif "meta_description" in issue.lower():
             lesson = "meta_description must be 120-160 characters — not shorter, not longer."
+        elif "required section" in issue.lower() or "section(s)" in issue.lower():
+            lesson = "Every required briefing section must appear as a visible H2/H3 heading in the article body; do not rely on a good narrative alone."
         else:
             lesson = issue  # fallback: store as-is if we don't have a generalization rule for it
 
         if gsc_learning_eligible and memory_store.add_lesson_if_new(lesson):
             new_lessons.append(lesson)
+
+    # Structural quality failures are also learning-worthy when the model
+    # produced a superficially acceptable draft that still fell short.
+    if quality_score < 70 and not deterministic_issues:
+        quality_lesson = "Keep articles structurally complete: maintain a strong fraction of the target length, include every required H2 section as a visible heading, and finish with complete prose. A draft that 'reads okay' but is thin or incomplete is not acceptable."
+        if gsc_learning_eligible and memory_store.add_lesson_if_new(quality_lesson):
+            new_lessons.append(quality_lesson)
 
     if new_lessons:
         print(c("yellow", f"  + {len(new_lessons)} new lesson(s) added to lessons.md:"))
@@ -83,7 +98,7 @@ def run(state: dict) -> dict:
     positive_patterns: list[str] = []
     if gsc_learning_eligible and evaluation.get("approved") and not deterministic_issues and isinstance(score, (int, float)) and score >= 80:
         if state.get("competitor_source", "").startswith("searxng") and state.get("competitor_count", 0) >= 3:
-            positive_patterns.append("When real top-three competitor snapshots are available, use their structural gaps as hypotheses and cover one or two defensible gaps without copying wording or inventing product facts.")
+            positive_patterns.append("When real top-three competitor snapshots are available, use their structural gaps as hypotheses and cover one or two defensible gaps without copying wording or claims.")
         if state.get("internal_links_used"):
             positive_patterns.append("Prefer a small number of natural internal links selected from the published index over broad or invented linking.")
         if state.get("gaps_added_titles"):
@@ -100,6 +115,7 @@ def run(state: dict) -> dict:
         "model": state.get("active_model"),
         "revision_count": state.get("revision_count", 0),
         "score": score,
+        "quality_score": quality_score,
         "score_delta_from_previous_same_keyword": score_delta,
         "approved": evaluation.get("approved", False),
         "deterministic_issues": deterministic_issues,
@@ -118,6 +134,6 @@ def run(state: dict) -> dict:
     })
     if not gsc_learning_eligible:
         print(c("dim", "  · GSC learning gate closed: no lesson/pattern promotion without >=500 impressions and a baseline-controlled signal"))
-    print(c("green", f"  ✓ cycle recorded (status: {final_status}, score delta: {score_delta})"))
+    print(c("green", f"  ✓ cycle recorded (status: {final_status}, score: {score}, quality_score: {quality_score}, score delta: {score_delta})"))
 
     return {"lessons_applied": new_lessons, "positive_patterns_applied": new_patterns}
