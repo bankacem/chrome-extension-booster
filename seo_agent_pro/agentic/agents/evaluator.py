@@ -16,6 +16,17 @@ Two layers, deliberately kept separate:
 
 A deterministic failure alone is enough to reject, regardless of the LLM
 score — hard rules don't get overruled by a "but it reads well" opinion.
+
+NEW LAYER (2026-09-25): Quality scoring
+  - _quality_score() returns a 0-100 structural completeness score that
+    catches weak drafts even when the LLM gives them an optimistic score.
+    This catches real failures: short articles (450 words vs 1500-word brief),
+    missing required sections, unfinished structural issues.
+  - Article must pass ALL three gates to be approved:
+    1. No deterministic issues (hard rules)
+    2. LLM score >= 70
+    3. Quality score >= 70
+  This prevents "reads fine but is actually incomplete" artifacts.
 """
 
 from __future__ import annotations
@@ -32,10 +43,129 @@ ROOT = Path(__file__).resolve().parents[3]
 INDEX_FILE = ROOT / "public" / "content" / "articles-index.json"
 
 APPROVAL_SCORE_THRESHOLD = 70
+QUALITY_SCORE_THRESHOLD = 70
 
 
 def _step(label: str) -> None:
     print(f"\n{c('cyan', '▸')} {c('bold', 'Evaluator Agent — ' + label)}")
+
+
+def _normalize_heading(value: str) -> str:
+    """Normalize heading text for comparison (remove punctuation, lowercase)."""
+    return re.sub(r"[^a-z0-9 ]", "", value.lower()).strip()
+
+
+def _quality_score(state: dict, deterministic_issues: list[str], llm_issues: list[str]) -> int:
+    """Return a 0-100 structural completeness score.
+
+    This supplements the LLM review with a cheap deterministic sanity check
+    that catches weak drafts that "sound fine" but are actually short, incomplete,
+    or structurally thin. Real cases this catches:
+      - Article only 450 words against a 1500-word brief (marked "complete" by LLM)
+      - All required sections missing despite prompt claiming they exist
+      - No H1 or required H2 headings present
+      - Article ends mid-word despite passing punctuation check
+    """
+    score = 100
+    body = state.get("body", "")
+
+    # Empty body is 0.
+    if not body.strip():
+        return 0
+
+    # Count actual words.
+    word_count = len(body.split())
+
+    # ── LENGTH CHECKS ──
+    ideal_length = state.get("strategy", {}).get("ideal_length")
+    if ideal_length:
+        try:
+            ideal_length = int(ideal_length)
+            # Below 65% of target: major penalty (likely truncated).
+            if word_count < 0.65 * ideal_length:
+                score -= 30
+            # Below 80% of target: moderate penalty (incomplete coverage).
+            elif word_count < 0.8 * ideal_length:
+                score -= 12
+            # Above 140% of target: minor penalty (bloated, unfocused).
+            elif word_count > 1.4 * ideal_length:
+                score -= 5
+        except (TypeError, ValueError):
+            pass
+
+    # ── STRUCTURE CHECKS ──
+    # H1 should be present.
+    if not re.search(r"^#\s+", body, re.MULTILINE):
+        score -= 15
+
+    # Required sections (H2/H3) should have matching headings in body.
+    required_sections = state.get("strategy", {}).get("required_sections") or []
+    if required_sections:
+        present_headings = [
+            _normalize_heading(h)
+            for h in re.findall(r"^#{2,3}\s+(.+)$", body, re.MULTILINE)
+        ]
+        covered = 0
+        for section in required_sections:
+            norm = _normalize_heading(section)
+            if not norm:
+                continue
+            # Special handling for FAQ section (multiple aliases).
+            is_faq_required = "faq" in norm or "frequently asked questions" in norm
+            if is_faq_required:
+                if any("faq" in h or "frequently asked questions" in h for h in present_headings):
+                    covered += 1
+                continue
+            # General matching: 50% word overlap counts as a match.
+            section_words = set(norm.split())
+            if section_words and any(
+                len(section_words & set(h.split())) / len(section_words) >= 0.5
+                for h in present_headings
+            ):
+                covered += 1
+
+        coverage_ratio = covered / len(required_sections) if required_sections else 1.0
+        if coverage_ratio < 1.0:
+            score -= int((1.0 - coverage_ratio) * 30)
+
+    # Body should end with proper punctuation (not truncated mid-word).
+    stripped_body = body.rstrip()
+    if stripped_body and not re.search(r'[.!?"\')\]\u2019\u201d*_~]$|```$|</\w+>$', stripped_body):
+        score -= 15
+
+    # ── METADATA QUALITY ──
+    seo_title = state.get("seo_title") or state.get("title", "")
+    tag_len = len(f"{seo_title} | ExtensionTo")
+    if tag_len > 60:
+        score -= 12
+    elif tag_len < 30:
+        score -= 8
+
+    meta = state.get("meta_description", "")
+    if not meta:
+        score -= 15
+    elif not (120 <= len(meta) <= 160):
+        score -= 10
+    elif meta.rstrip().endswith("..."):
+        score -= 5
+
+    # ── PLACEHOLDER / FABRICATION CHECKS ──
+    # Dead links or placeholder images.
+    if re.search(r"\]\(#\)", body):
+        score -= 10
+    if re.search(r"!\[[^\]]*\]\((?:#|[^)]*placeholder[^)]*)\)", body, re.IGNORECASE):
+        score -= 10
+
+    # No real internal links to other articles.
+    if not re.search(r"\]\(/blog/", body):
+        score -= 8
+
+    # ── PENALTY FOR DETERMINISTIC ISSUES ──
+    # Each hard issue found in deterministic checks should drag down quality.
+    score -= 6 * len(deterministic_issues)
+    score -= 2 * min(len(llm_issues), 8)
+
+    return max(0, min(100, score))
 
 
 def _deterministic_checks(state: dict) -> list[str]:
@@ -243,16 +373,24 @@ def run(state: dict) -> dict:
     deterministic_issues = _deterministic_checks(state)
     llm_result = _llm_review(state, model)
     llm_issues = llm_result.get("issues", [])
-    score = llm_result.get("score", 0)
+    llm_score = llm_result.get("score", 0)
+    quality_score = _quality_score(state, deterministic_issues, llm_issues)
 
-    approved = (not deterministic_issues) and score >= APPROVAL_SCORE_THRESHOLD
+    # Article must pass ALL three gates.
+    approved = (
+        not deterministic_issues
+        and llm_score >= APPROVAL_SCORE_THRESHOLD
+        and quality_score >= QUALITY_SCORE_THRESHOLD
+    )
 
     if deterministic_issues:
         print(c("red", f"  ✗ {len(deterministic_issues)} deterministic issue(s):"))
         for i in deterministic_issues:
             print(c("red", f"    - {i}"))
-    print(c("green" if score >= APPROVAL_SCORE_THRESHOLD else "yellow",
-            f"  {'✓' if score >= APPROVAL_SCORE_THRESHOLD else '⚠'} LLM score: {score}/100"))
+    print(c("green" if llm_score >= APPROVAL_SCORE_THRESHOLD else "yellow",
+            f"  {'✓' if llm_score >= APPROVAL_SCORE_THRESHOLD else '⚠'} LLM score: {llm_score}/100"))
+    print(c("green" if quality_score >= QUALITY_SCORE_THRESHOLD else "yellow",
+            f"  {'✓' if quality_score >= QUALITY_SCORE_THRESHOLD else '⚠'} quality score: {quality_score}/100"))
     for i in llm_issues[:5]:
         print(c("dim", f"    · {i}"))
     print(c("green" if approved else "red", f"  {'✓ APPROVED' if approved else '✗ REJECTED'}"))
@@ -260,7 +398,8 @@ def run(state: dict) -> dict:
     return {
         "evaluation": {
             "approved": approved,
-            "score": score,
+            "score": llm_score,
+            "quality_score": quality_score,
             "deterministic_issues": deterministic_issues,
             "llm_issues": llm_issues,
             "notes": llm_result.get("notes", ""),
