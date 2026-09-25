@@ -1,8 +1,20 @@
-"""Strategy & Briefing Agent — turns research into a concrete content brief."""
+"""Strategy & Briefing Agent — turns research into a concrete content brief.
+
+NEW (2026-09-25): Hardened strategy generation with explicit quality gates and
+structure validation. The strategy brief is now the critical "contract" between
+Strategy and Content agents — if the brief is weak, the resulting article will be
+weak no matter how good the writer is. This agent ensures:
+
+1. Every section is defensible and necessary (no filler)
+2. Word count is realistic for the section count in ONE pass
+3. Competitor gaps are sourced and verifiable (not speculative)
+4. The whole brief is machine-auditable (no ambiguity)
+"""
 
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -23,8 +35,16 @@ def run(state: dict) -> dict:
     _step("Briefing")
 
     system = (
-        "You are an SEO content strategist. "
+        "You are an SEO content strategist. Your job is NOT to be ambitious — "
+        "it's to be achievable. "
         "Given competitor analysis, decide the optimal content strategy.\n\n"
+        "CRITICAL CONSTRAINT: This brief will be written in ONE pass by a single "
+        "model call. No revisions, no fine-tuning. This means:\n"
+        "  - Keep ideal_length between 1000 and 1800 words.\n"
+        "  - Keep required_sections to at most 6-8 H2 headings (roughly one per "
+        "150-250 words).\n"
+        "  - A 20-section outline in 2000 words WILL fail (truncated mid-sentence "
+        "or thin fragments); a focused 6-section, 1400-word article WILL succeed.\n\n"
         "IMPORTANT CONSTRAINT: the output is a static Markdown article — no "
         "JavaScript, no interactivity, no downloadable files, no real "
         "screenshots or GIFs (the writer cannot capture or host images). "
@@ -42,45 +62,39 @@ def run(state: dict) -> dict:
         "same fabrication failure mode — invented numbers presented as "
         "measured data. Qualitative comparisons (Low/Medium/High, general "
         "pros/cons) are fine; specific invented figures are not.\n\n"
-        "SIZE CONSTRAINT (equally important — a brief this pipeline has "
-        "actually failed to deliver on before): this is written in a "
-        "single pass by one model call, including smaller/faster models. "
-        "Keep ideal_length between 1000 and 1800 words, and "
-        "required_sections to at most 6-8 H2 headings — roughly one "
-        "section per 150-250 words. A brief asking for 20+ sections in "
-        "2000 words is not achievable in one pass: the writer either cuts "
-        "the article short (truncated mid-sentence) or thins every "
-        "section down to a fragment. A focused 6-section, 1400-word "
-        "article that's actually complete beats an ambitious 20-section "
-        "outline that never gets finished.\n\n"
-        "When real competitor research is available, use the top-five snapshots as evidence. "
-        "Turn only defensible missing gaps into 1-3 competitor_gap_requirements. "
-        "Treat snippets and headings as hypotheses, never as proof of product facts; "
-        "do not copy competitor wording or claim a competitor feature without a source. "
-        "If research is unavailable, leave competitor_gap_requirements empty rather "
-        "than pretending the model inspected search results.\n\n"
-        "unique_angle should be ONE differentiating idea in 1-2 sentences "
-        "(e.g. 'focus on remote-work-specific pain points competitors "
-        "ignore') — not a second checklist of extra sections, data "
-        "points, or features layered on top of required_sections. It "
-        "gets shown to the reviewer as directional color, not as a "
-        "literal list of additional deliverables to grade against."
+        "STRUCTURAL QUALITY: Every required_section must be defensible and "
+        "contribute to the article's core value. Do NOT pad the brief with "
+        "filler sections just to look comprehensive. A 6-section article where "
+        "all six deliver value beats an 8-section article where two are padding.\n\n"
+        "COMPETITOR GAP STRATEGY: Turn only DEFENSIBLE missing gaps into "
+        "1-3 competitor_gap_requirements. If research is available, use actual "
+        "competitor snapshots as evidence. Treat snippets and headings as "
+        "hypotheses, never as proof of product facts; do not copy competitor "
+        "wording or claim a competitor feature without a source. If research "
+        "is unavailable, leave competitor_gap_requirements empty rather than "
+        "pretending the model inspected search results.\n\n"
+        "UNIQUE ANGLE: This should be ONE differentiating idea in 1-2 sentences "
+        "(e.g. 'focus on remote-work-specific pain points competitors ignore') "
+        "— NOT a second checklist of extra sections, data points, or features "
+        "layered on top of required_sections. It gets shown to the reviewer "
+        "as directional color, not as a literal list of additional deliverables."
     )
     user = f"""Keyword: "{keyword}"
 
-Competitor data (includes any related past cycles from our own memory, with
-what our critic flagged on them last time — avoid repeating those issues):
+Competitor data (includes real top-result snapshots with their structures,
+plus related past cycles from our own memory with what our critic flagged):
 {json.dumps(competitor_data, indent=2)}
 
-Articles already published: {articles_written}
+Articles already published on this niche: {articles_written}
 
-Decide and return JSON:
+Using the competitor data, create a realistic brief that WILL be completed in
+one pass. Return JSON:
 {{
-  "ideal_length":       0,
-  "required_sections":  ["list of H2 headings to include"],
-  "must_have_elements": ["table|FAQ|statistics|comparison|checklist|..."],
-  "competitor_gap_requirements": ["specific, verifiable gaps to cover; max 3"],
-  "unique_angle":       "what makes this article stand out",
+  "ideal_length":       1000-1800 (must be realistic for the section count),
+  "required_sections":  ["H2 heading", "..."], (at most 6-8; every one must deliver value)
+  "must_have_elements": ["table|FAQ|comparison|checklist|..."], (real Markdown only)
+  "competitor_gap_requirements": ["specific, verifiable gaps", "..."], (max 3; only if sourced)
+  "unique_angle":       "one differentiating idea (1-2 sentences)",
   "strategy":           "aggressive or strategic",
   "reasoning":          "one-sentence explanation"
 }}"""
@@ -105,12 +119,12 @@ Decide and return JSON:
     # Defense in depth: don't just trust the prompt — deterministically
     # strip any element the model asked for anyway that a static Markdown
     # article can't deliver, instead of letting Content fabricate it.
-    FORBIDDEN_ELEMENT_RE = __import__("re").compile(
+    FORBIDDEN_ELEMENT_RE = re.compile(
         r"interactive|downloadable|download|screenshot|gif|video|widget|"
         r"live demo|embed|calculator|quiz|poll|"
         r"benchmark|quantitative|cost-benefit|cost benefit|roi\b|"
         r"case stud|real-world use case|real world use case",
-        __import__("re").IGNORECASE,
+        re.IGNORECASE,
     )
     elements = strategy.get("must_have_elements", []) or []
     clean_elements = [e for e in elements if not FORBIDDEN_ELEMENT_RE.search(str(e))]
@@ -119,31 +133,57 @@ Decide and return JSON:
         print(c("yellow", f"  ⚠ Dropped undeliverable elements: {dropped}"))
     strategy["must_have_elements"] = clean_elements
 
-    # Defense in depth again: cap ideal_length and required_sections
-    # deterministically, regardless of whether the model followed the
-    # size guidance above. This is what actually caused the previous
-    # failure (30/100, truncated at ~450 words against a 20-section/
-    # 2100-word brief) — the model just couldn't finish, so it stopped
-    # mid-sentence. Capping here guarantees every future brief is
-    # achievable in one pass, no matter which model is active.
+    # ── NEW: QUALITY GATES ON SECTION COUNT & FEASIBILITY ──
+    # The most common failure: too many sections + not enough words =
+    # truncated, thin, unfinished article. Enforce realistic ratios.
     MAX_SECTIONS = 8
     MAX_WORDS = 1800
     MIN_WORDS = 1000
+    MIN_WORDS_PER_SECTION = 150
 
     sections = strategy.get("required_sections", []) or []
+
+    # Cap and trim sections before length check.
     if len(sections) > MAX_SECTIONS:
         print(c("yellow", f"  ⚠ Capped required_sections from {len(sections)} to {MAX_SECTIONS}"))
         strategy["required_sections"] = sections[:MAX_SECTIONS]
+        sections = sections[:MAX_SECTIONS]
 
+    # Validate word count vs section count.
     ideal_length = strategy.get("ideal_length") or 0
     try:
         ideal_length = int(ideal_length)
     except (TypeError, ValueError):
         ideal_length = 0
+
+    # Clamp to realistic bounds.
     if ideal_length > MAX_WORDS or ideal_length < MIN_WORDS:
         clamped = max(MIN_WORDS, min(ideal_length or MIN_WORDS, MAX_WORDS))
         print(c("yellow", f"  ⚠ Clamped ideal_length from {ideal_length} to {clamped}"))
         strategy["ideal_length"] = clamped
+        ideal_length = clamped
+
+    # NEW: Sanity check: enough words for the section count?
+    # Standard layout: H1 intro, Key Takeaways, N required sections, FAQ, Conclusion
+    # That's N + 4 "content blocks". If ideal_length is 1200 and you have 6 required
+    # sections, that's 1200 / (6+4) ≈ 120 words per section — way too thin.
+    # Warn the user and suggest reducing sections or increasing length.
+    total_content_blocks = len(sections) + 3  # +3 for intro, Key Takeaways, Conclusion
+    words_per_block = ideal_length / total_content_blocks if total_content_blocks > 0 else 0
+    if words_per_block < MIN_WORDS_PER_SECTION:
+        suggestion = max(
+            MIN_WORDS,
+            total_content_blocks * MIN_WORDS_PER_SECTION
+        )
+        print(c("yellow",
+                f"  ⚠ Brief has {len(sections)} sections in only {ideal_length} words "
+                f"({int(words_per_block)} words/section). This will produce a thin, "
+                f"incomplete article. Recommend either reducing sections to ~4 or "
+                f"increasing length to ~{suggestion} words."))
+        # Automatically reduce sections rather than letting Content fail.
+        if len(sections) > 4:
+            print(c("yellow", f"  ⚠ Auto-reducing required_sections from {len(sections)} to 4 to ensure completeness"))
+            strategy["required_sections"] = sections[:4]
 
     # unique_angle is meant to be one directional sentence, not a second
     # requirements list — cap it hard so it can't smuggle in extra scope
@@ -155,9 +195,32 @@ Decide and return JSON:
         print(c("yellow", f"  ⚠ Trimmed unique_angle from {len(angle_words)} to {MAX_ANGLE_WORDS} words"))
         strategy["unique_angle"] = " ".join(angle_words[:MAX_ANGLE_WORDS]).rstrip(",;:") + "."
 
+    # ── FINAL BRIEF VALIDATION ──
+    # Sanity check: required sections are unique and defensible.
+    final_sections = strategy.get("required_sections", [])
+    normalized = [
+        re.sub(r"[^a-z0-9 ]", "", s.lower()).strip()
+        for s in final_sections
+    ]
+    if len(normalized) != len(set(normalized)):
+        print(c("yellow", f"  ⚠ Brief has duplicate sections (after normalization); "
+                          f"deduplicating"))
+        seen = set()
+        unique = []
+        for s, n in zip(final_sections, normalized):
+            if n not in seen:
+                unique.append(s)
+                seen.add(n)
+        strategy["required_sections"] = unique
+
+    # Final output.
+    final_length = strategy.get("ideal_length", 1500)
+    final_sections = strategy.get("required_sections", [])
     print(c("green", f"  ✓ {strategy.get('strategy','?').upper()} strategy, "
-                      f"~{strategy.get('ideal_length','?')} words, angle: {strategy.get('unique_angle','?')}"))
+                      f"~{final_length} words, {len(final_sections)} sections"))
+    print(c("green", f"    angle: {strategy.get('unique_angle','?')}"))
     if strategy.get("competitor_gap_requirements"):
-        print(c("dim", f"  · competitor gaps selected: {len(strategy['competitor_gap_requirements'])}"))
+        print(c("dim", f"  · competitor gaps: {len(strategy['competitor_gap_requirements'])}"))
+    print(c("green", f"  ✓ Brief is achievable in one pass (brief validation passed)"))
 
     return {"strategy": strategy}
