@@ -1,236 +1,288 @@
 [
-  {
-    "slug": "chrome-extension-security-risks-permission-audit-guide",
-    "title": "Riscos de Segurança de Extensões do Chrome: Uma Auditoria de Permissões em 10 Minutos",
-    "seo_title": "Riscos de Segurança de Extensões do Chrome: Auditoria de 10 Minutos",
-    "excerpt": "Aprenda a identificar riscos de segurança em extensões do Chrome, interpretar permissões, restringir acesso a sites e remover extensões injustificadas.",
-    "featured_image": "/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp",
-    "category": "Segurança e Privacidade",
-    "tags": [
-      "segurança",
-      "privacidade",
-      "permissões",
-      "auditoria",
-      "extensões do chrome"
-    ],
-    "keywords": [
-      "riscos de segurança extensão chrome",
-      "como verificar permissões extensão chrome",
-      "extensões chrome são seguras",
-      "auditoria de permissões extensão chrome"
-    ],
-    "meta_description": "Identifique riscos de segurança de extensões do Chrome em 10 minutos. Aprenda a ler permissões, restringir acesso a sites, auditar atualizações e remover extensões arriscadas.",
-    "published_at": "2026-08-26T12:00:00+01:00",
-    "author": "ExtensionTo",
-    "read_time": 8
-  },
-  {
-    "slug": "chrome-extensions-that-slow-down-your-browser-real-tests",
-    "title": "Extensões do Chrome Que Desaceleram Seu Navegador em 2026: Testes Reais de Desempenho",
-    "seo_title": "Extensões do Chrome Lentas? Testes Reais de Desempenho",
-    "excerpt": "Testamos 20 extensões populares do Chrome com o Gerenciador de Tarefas e medimos o impacto real de RAM e CPU. Confira os resultados.",
-    "featured_image": "/content/images/chrome-extensions-that-slow-down-your-browser-real-tests/featured.webp",
-    "category": "Desempenho e Memória",
-    "tags": [
-      "desempenho",
-      "memória",
-      "ram",
-      "cpu",
-      "velocidade do navegador"
-    ],
-    "keywords": [
-      "extensões chrome lentas",
-      "uso de memória extensão chrome",
-      "quais extensões chrome usam mais ram",
-      "navegador lento por causa de extensões"
-    ],
-    "meta_description": "Testes reais com o Gerenciador de Tarefas do Chrome mostrando quais extensões mais consomem RAM e CPU em 2026. Dados reais, não suposições.",
-    "published_at": "2026-08-26T12:00:00+01:00",
-    "author": "ExtensionTo",
-    "read_time": 8
-  },
-  {
-    "slug": "zoom-chrome-extension-guide",
-    "title": "Guia Completo da Extensão do Zoom para Chrome: Instalação e Dicas",
-    "seo_title": "Guia da Extensão do Zoom para Chrome em 2026",
-    "excerpt": "Guia passo a passo para instalar, configurar e usar a extensão do Zoom no Chrome para reuniões mais rápidas e produtivas.",
-    "featured_image": "/content/images/zoom-chrome-extension-guide/featured.webp",
-    "category": "Produtividade",
-    "tags": [
-      "zoom",
-      "videoconferência",
-      "reuniões",
-      "chrome",
-      "produtividade"
-    ],
-    "keywords": [
-      "extensão zoom chrome",
-      "instalar zoom chrome",
-      "zoom extensão navegador",
-      "usar zoom no chrome"
-    ],
-    "meta_description": "Guia completo da extensão do Zoom para Chrome em 2026. Aprenda a instalar, configurar e otimizar o Zoom diretamente no navegador.",
-    "published_at": "2026-08-26T12:00:00+01:00",
-    "author": "ExtensionTo",
-    "read_time": 8
-  },
-  {
-    "slug": "chrome-logger-debugging-guide",
-    "title": "Chrome Logger: Guia Completo de Depuração e Logging no Chrome",
-    "seo_title": "Chrome Logger: Guia de Depuração para Desenvolvedores",
-    "excerpt": "Domine as ferramentas de logging e depuração do Chrome DevTools para encontrar bugs mais rápido e melhorar seu código.",
-    "featured_image": "/content/images/chrome-logger-debugging-guide/featured.webp",
-    "category": "Desenvolvimento",
-    "tags": [
-      "debugging",
-      "logging",
-      "devtools",
-      "chrome",
-      "desenvolvimento"
-    ],
-    "keywords": [
-      "chrome logger debug",
-      "ferramentas depuração chrome",
-      "chrome devtools console",
-      "depuração javascript chrome"
-    ],
-    "meta_description": "Guia completo de depuração e logging no Chrome. Aprenda a usar o Console, breakpoints e logs avançados para encontrar bugs mais rápido.",
-    "published_at": "2026-08-26T12:00:00+01:00",
-    "author": "ExtensionTo",
-    "read_time": 8
-  },
-  {
-    "slug": "chrome-extension-permissions-guide",
-    "title": "Guia Completo de Permissões de Extensões do Chrome em 2026",
-    "seo_title": "Guia de Permissões de Extensões do Chrome",
-    "excerpt": "Entenda todas as permissões de extensões do Chrome, o que cada uma significa e como gerenciar o acesso das suas extensões.",
-    "featured_image": "/content/images/chrome-extension-permissions-guide/featured.webp",
-    "category": "Segurança e Privacidade",
-    "tags": [
-      "permissões",
-      "segurança",
-      "privacidade",
-      "extensões do chrome",
-      "manifest v3"
-    ],
-    "keywords": [
-      "permissões extensão chrome",
-      "o que significam permissões chrome",
-      "gerenciar permissões extensões",
-      "manifest v3 permissões"
-    ],
-    "meta_description": "Guia completo sobre permissões de extensões do Chrome em 2026. Entenda o que cada permissão faz e como proteger seus dados.",
-    "published_at": "2026-08-26T12:00:00+01:00",
-    "author": "ExtensionTo",
-    "read_time": 8
-  },
-  {
-    "slug": "best-chrome-privacy-extensions-2026-complete-guide",
-    "title": "Melhores Extensões de Privacidade do Chrome em 2026: Ghostery, uBlock e Mais",
-    "seo_title": "Melhores Extensões de Privacidade do Chrome em 2026",
-    "excerpt": "As melhores extensões de privacidade do Chrome em 2026: uBlock Origin, Ghostery e Privacy Badger comparadas em bloqueio de rastreadores, velocidade e coleta de dados.",
-    "featured_image": "/content/images/best-chrome-privacy-extensions-2026-complete-guide/featured.webp",
-    "category": "Segurança e Privacidade",
-    "tags": [
-      "privacidade",
-      "ghostery",
-      "rastreadores",
-      "ublock",
-      "chrome",
-      "segurança"
-    ],
-    "keywords": [
-      "melhores extensões de privacidade chrome 2026",
-      "uBlock Origin ou Ghostery",
-      "bloquear rastreadores chrome",
-      "Ghostery é seguro",
-      "extensão para bloquear anúncios e rastreadores"
-    ],
-    "meta_description": "As melhores extensões de privacidade do Chrome em 2026: comparação prática entre uBlock Origin, Ghostery e Privacy Badger em bloqueio de rastreadores e desempenho.",
-    "published_at": "2026-08-29T12:00:00+01:00",
-    "author": "ExtensionTo",
-    "read_time": 10
-  },
-  {
-    "slug": "best-chrome-screenshot-extensions-2026-complete-guide",
-    "title": "Melhores Extensões de Print do Chrome em 2026: Guia Completo",
-    "seo_title": "Melhores Extensões de Print do Chrome em 2026",
-    "excerpt": "As melhores extensões de print do Chrome em 2026: captura de página inteira, screenshot rolante, ferramentas de anotação e seleção de região — tudo grátis e sem marca d'água.",
-    "featured_image": "/content/images/best-chrome-screenshot-extensions-2026-complete-guide/featured.webp",
-    "category": "Capturas de Tela",
-    "tags": [
-      "print",
-      "screenshot",
-      "chrome",
-      "extensão",
-      "página inteira",
-      "anotação",
-      "grátis"
-    ],
-    "keywords": [
-      "melhor extensão print chrome",
-      "print de página inteira chrome",
-      "screenshot chrome 2026",
-      "extensão print chrome grátis",
-      "como tirar print no chrome"
-    ],
-    "meta_description": "As melhores extensões de print do Chrome em 2026: captura de página inteira, screenshot rolante e anotações — grátis, sem cadastro e sem marca d'água.",
-    "published_at": "2026-08-29T12:00:00+01:00",
-    "author": "ExtensionTo",
-    "read_time": 10
-  },
-  {
-    "slug": "best-youtube-downloader-chrome-extension-2026",
-    "title": "Melhor Extensão para Baixar Vídeos do YouTube no Chrome em 2026: Segura e Rápida",
-    "seo_title": "Melhor Extensão para Baixar do YouTube no Chrome 2026",
-    "excerpt": "Baixe vídeos e MP3 do YouTube com segurança pelo Chrome em 2026. Testamos 7 extensões gratuitas em qualidade de áudio, velocidade de download e segurança — veja os resultados.",
-    "featured_image": "/content/images/best-youtube-downloader-chrome-extension-2026/featured.webp",
-    "category": "Mídia e Downloads",
-    "tags": [
-      "youtube",
-      "downloader",
-      "mp3",
-      "chrome",
-      "extensão",
-      "grátis",
-      "mp4"
-    ],
-    "keywords": [
-      "extensão para baixar vídeo do youtube chrome",
-      "baixar youtube mp3 chrome",
-      "download de vídeo do youtube no chrome",
-      "extensão youtube mp3 chrome",
-      "baixador youtube seguro chrome"
-    ],
-    "meta_description": "Baixe vídeos e MP3 do YouTube com segurança pelo Chrome em 2026. Testamos 7 extensões gratuitas em qualidade de áudio, velocidade e segurança — veja os resultados.",
-    "published_at": "2026-08-29T12:00:00+01:00",
-    "author": "ExtensionTo",
-    "read_time": 11
-  },
-  {
-    "slug": "fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed",
-    "title": "Como Corrigir o Alto Consumo de Memória do Chrome em 2026: 7 Métodos Comprovados (Sem Extensões)",
-    "seo_title": "7 Maneiras de Reduzir o Alto Consumo de Memória do Chrome",
-    "excerpt": "Sete configurações e técnicas integradas do Chrome para cortar o uso de RAM em até 60% — sem precisar de extensões. Cobre o Economizador de Memória, diagnóstico nativo, grupos de abas e mais.",
-    "featured_image": "/content/images/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed/featured.webp",
-    "category": "Desempenho e Memória",
-    "tags": [
-      "memória",
-      "desempenho",
-      "configurações do chrome",
-      "ram",
-      "otimização"
-    ],
-    "keywords": [
-      "como reduzir memória do chrome",
-      "chrome consumindo muita memória",
-      "economizador de memória chrome",
-      "gerenciador de tarefas chrome",
-      "chrome lento como resolver"
-    ],
-    "meta_description": "Reduza a memória do Chrome sem instalar extensões: sete métodos práticos cobrindo Economizador de Memória, Gerenciador de Tarefas, abas e configurações de sites.",
-    "published_at": "2026-08-29T12:00:00+01:00",
-    "author": "ExtensionTo",
-    "read_time": 13
-  }
+ {
+  "slug": "best-ai-chrome-extensions-2026",
+  "title": "Melhores extensões de IA para Chrome 2026: 12 ferramentas que transformam seu navegador em um assistente de IA",
+  "seo_title": "Melhores extensões IA Chrome 2026: 12 escolhas testadas",
+  "excerpt": "Há dois anos, uma «extensão de IA» significava um wrapper tosco do ChatGPT com um fluxo de login caprichoso. Em 2026, a categoria se tornou um dos espaços mais competitivos da Chrome Web Store: assistentes polidos que le…",
+  "featured_image": "/content/images/best-ai-chrome-extensions-2026/featured.webp",
+  "category": "Ferramentas de IA",
+  "tags": [
+   "Extensões IA Chrome",
+   "Extensão ChatGPT",
+   "Assistente IA",
+   "Automação Navegador",
+   "Produtividade IA"
+  ],
+  "keywords": [
+   "melhores extensões ia chrome 2026",
+   "extensão chatgpt chrome",
+   "assistente escrita ia",
+   "resumidor ia extensão",
+   "assistente ia navegador"
+  ],
+  "meta_description": "Testamos as melhores extensões de IA para Chrome em 2026: painéis do ChatGPT e Gemini, resumos de páginas, assistentes de escrita, tradutores, leitores de voz e ferramentas de automação. Comparativo completo com prós, contras e escolha por caso de uso.",
+  "published_at": "2026-09-26T09:00:00+00:00",
+  "author": "ExtensionTo",
+  "read_time": 6
+ },
+ {
+  "slug": "gemini-in-chrome-2026-complete-guide",
+  "title": "Gemini no Chrome 2026: guia completo das funções de IA do Google",
+  "seo_title": "Gemini no Chrome 2026: o guia completo do navegador IA",
+  "excerpt": "O navegador deixou de ser apenas uma janela para a web: tornou-se um assistente. Em menos de um ano, o Google transformou o Chrome de um renderizador rápido em um espaço de trabalho com IA, e esse ritmo de transformação…",
+  "featured_image": "/content/images/gemini-in-chrome-2026-complete-guide/featured.webp",
+  "category": "IA e Automação",
+  "tags": [
+   "Gemini no Chrome",
+   "Navegador IA",
+   "Auto Browse",
+   "Google IA 2026",
+   "Recursos IA Chrome"
+  ],
+  "keywords": [
+   "gemini no chrome",
+   "navegador ia google 2026",
+   "auto browse chrome",
+   "gemini barra lateral chrome",
+   "nano banana chrome"
+  ],
+  "meta_description": "Gemini no Chrome explicado para 2026: Auto Browse, o painel lateral de IA, a geração de imagens Nano Banana, o contexto multi-abas e a comparação com ChatGPT Atlas e Perplexity Comet.",
+  "published_at": "2026-09-26T09:00:00+00:00",
+  "author": "ExtensionTo",
+  "read_time": 13
+ },
+ {
+  "slug": "chrome-extension-security-risks-permission-audit-guide",
+  "title": "Riscos de Segurança de Extensões do Chrome: Uma Auditoria de Permissões em 10 Minutos",
+  "seo_title": "Riscos de Segurança de Extensões do Chrome: Auditoria de 10 Minutos",
+  "excerpt": "Aprenda a identificar riscos de segurança em extensões do Chrome, interpretar permissões, restringir acesso a sites e remover extensões injustificadas.",
+  "featured_image": "/content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp",
+  "category": "Segurança e Privacidade",
+  "tags": [
+   "segurança",
+   "privacidade",
+   "permissões",
+   "auditoria",
+   "extensões do chrome"
+  ],
+  "keywords": [
+   "riscos de segurança extensão chrome",
+   "como verificar permissões extensão chrome",
+   "extensões chrome são seguras",
+   "auditoria de permissões extensão chrome"
+  ],
+  "meta_description": "Identifique riscos de segurança de extensões do Chrome em 10 minutos. Aprenda a ler permissões, restringir acesso a sites, auditar atualizações e remover extensões arriscadas.",
+  "published_at": "2026-08-26T12:00:00+01:00",
+  "author": "ExtensionTo",
+  "read_time": 8
+ },
+ {
+  "slug": "chrome-extensions-that-slow-down-your-browser-real-tests",
+  "title": "Extensões do Chrome Que Desaceleram Seu Navegador em 2026: Testes Reais de Desempenho",
+  "seo_title": "Extensões do Chrome Lentas? Testes Reais de Desempenho",
+  "excerpt": "Testamos 20 extensões populares do Chrome com o Gerenciador de Tarefas e medimos o impacto real de RAM e CPU. Confira os resultados.",
+  "featured_image": "/content/images/chrome-extensions-that-slow-down-your-browser-real-tests/featured.webp",
+  "category": "Desempenho e Memória",
+  "tags": [
+   "desempenho",
+   "memória",
+   "ram",
+   "cpu",
+   "velocidade do navegador"
+  ],
+  "keywords": [
+   "extensões chrome lentas",
+   "uso de memória extensão chrome",
+   "quais extensões chrome usam mais ram",
+   "navegador lento por causa de extensões"
+  ],
+  "meta_description": "Testes reais com o Gerenciador de Tarefas do Chrome mostrando quais extensões mais consomem RAM e CPU em 2026. Dados reais, não suposições.",
+  "published_at": "2026-08-26T12:00:00+01:00",
+  "author": "ExtensionTo",
+  "read_time": 8
+ },
+ {
+  "slug": "zoom-chrome-extension-guide",
+  "title": "Guia Completo da Extensão do Zoom para Chrome: Instalação e Dicas",
+  "seo_title": "Guia da Extensão do Zoom para Chrome em 2026",
+  "excerpt": "Guia passo a passo para instalar, configurar e usar a extensão do Zoom no Chrome para reuniões mais rápidas e produtivas.",
+  "featured_image": "/content/images/zoom-chrome-extension-guide/featured.webp",
+  "category": "Produtividade",
+  "tags": [
+   "zoom",
+   "videoconferência",
+   "reuniões",
+   "chrome",
+   "produtividade"
+  ],
+  "keywords": [
+   "extensão zoom chrome",
+   "instalar zoom chrome",
+   "zoom extensão navegador",
+   "usar zoom no chrome"
+  ],
+  "meta_description": "Guia completo da extensão do Zoom para Chrome em 2026. Aprenda a instalar, configurar e otimizar o Zoom diretamente no navegador.",
+  "published_at": "2026-08-26T12:00:00+01:00",
+  "author": "ExtensionTo",
+  "read_time": 8
+ },
+ {
+  "slug": "chrome-logger-debugging-guide",
+  "title": "Chrome Logger: Guia Completo de Depuração e Logging no Chrome",
+  "seo_title": "Chrome Logger: Guia de Depuração para Desenvolvedores",
+  "excerpt": "Domine as ferramentas de logging e depuração do Chrome DevTools para encontrar bugs mais rápido e melhorar seu código.",
+  "featured_image": "/content/images/chrome-logger-debugging-guide/featured.webp",
+  "category": "Desenvolvimento",
+  "tags": [
+   "debugging",
+   "logging",
+   "devtools",
+   "chrome",
+   "desenvolvimento"
+  ],
+  "keywords": [
+   "chrome logger debug",
+   "ferramentas depuração chrome",
+   "chrome devtools console",
+   "depuração javascript chrome"
+  ],
+  "meta_description": "Guia completo de depuração e logging no Chrome. Aprenda a usar o Console, breakpoints e logs avançados para encontrar bugs mais rápido.",
+  "published_at": "2026-08-26T12:00:00+01:00",
+  "author": "ExtensionTo",
+  "read_time": 8
+ },
+ {
+  "slug": "chrome-extension-permissions-guide",
+  "title": "Guia Completo de Permissões de Extensões do Chrome em 2026",
+  "seo_title": "Guia de Permissões de Extensões do Chrome",
+  "excerpt": "Entenda todas as permissões de extensões do Chrome, o que cada uma significa e como gerenciar o acesso das suas extensões.",
+  "featured_image": "/content/images/chrome-extension-permissions-guide/featured.webp",
+  "category": "Segurança e Privacidade",
+  "tags": [
+   "permissões",
+   "segurança",
+   "privacidade",
+   "extensões do chrome",
+   "manifest v3"
+  ],
+  "keywords": [
+   "permissões extensão chrome",
+   "o que significam permissões chrome",
+   "gerenciar permissões extensões",
+   "manifest v3 permissões"
+  ],
+  "meta_description": "Guia completo sobre permissões de extensões do Chrome em 2026. Entenda o que cada permissão faz e como proteger seus dados.",
+  "published_at": "2026-08-26T12:00:00+01:00",
+  "author": "ExtensionTo",
+  "read_time": 8
+ },
+ {
+  "slug": "best-chrome-privacy-extensions-2026-complete-guide",
+  "title": "Melhores Extensões de Privacidade do Chrome em 2026: Ghostery, uBlock e Mais",
+  "seo_title": "Melhores Extensões de Privacidade do Chrome em 2026",
+  "excerpt": "As melhores extensões de privacidade do Chrome em 2026: uBlock Origin, Ghostery e Privacy Badger comparadas em bloqueio de rastreadores, velocidade e coleta de dados.",
+  "featured_image": "/content/images/best-chrome-privacy-extensions-2026-complete-guide/featured.webp",
+  "category": "Segurança e Privacidade",
+  "tags": [
+   "privacidade",
+   "ghostery",
+   "rastreadores",
+   "ublock",
+   "chrome",
+   "segurança"
+  ],
+  "keywords": [
+   "melhores extensões de privacidade chrome 2026",
+   "uBlock Origin ou Ghostery",
+   "bloquear rastreadores chrome",
+   "Ghostery é seguro",
+   "extensão para bloquear anúncios e rastreadores"
+  ],
+  "meta_description": "As melhores extensões de privacidade do Chrome em 2026: comparação prática entre uBlock Origin, Ghostery e Privacy Badger em bloqueio de rastreadores e desempenho.",
+  "published_at": "2026-08-29T12:00:00+01:00",
+  "author": "ExtensionTo",
+  "read_time": 10
+ },
+ {
+  "slug": "best-chrome-screenshot-extensions-2026-complete-guide",
+  "title": "Melhores Extensões de Print do Chrome em 2026: Guia Completo",
+  "seo_title": "Melhores Extensões de Print do Chrome em 2026",
+  "excerpt": "As melhores extensões de print do Chrome em 2026: captura de página inteira, screenshot rolante, ferramentas de anotação e seleção de região — tudo grátis e sem marca d'água.",
+  "featured_image": "/content/images/best-chrome-screenshot-extensions-2026-complete-guide/featured.webp",
+  "category": "Capturas de Tela",
+  "tags": [
+   "print",
+   "screenshot",
+   "chrome",
+   "extensão",
+   "página inteira",
+   "anotação",
+   "grátis"
+  ],
+  "keywords": [
+   "melhor extensão print chrome",
+   "print de página inteira chrome",
+   "screenshot chrome 2026",
+   "extensão print chrome grátis",
+   "como tirar print no chrome"
+  ],
+  "meta_description": "As melhores extensões de print do Chrome em 2026: captura de página inteira, screenshot rolante e anotações — grátis, sem cadastro e sem marca d'água.",
+  "published_at": "2026-08-29T12:00:00+01:00",
+  "author": "ExtensionTo",
+  "read_time": 10
+ },
+ {
+  "slug": "best-youtube-downloader-chrome-extension-2026",
+  "title": "Melhor Extensão para Baixar Vídeos do YouTube no Chrome em 2026: Segura e Rápida",
+  "seo_title": "Melhor Extensão para Baixar do YouTube no Chrome 2026",
+  "excerpt": "Baixe vídeos e MP3 do YouTube com segurança pelo Chrome em 2026. Testamos 7 extensões gratuitas em qualidade de áudio, velocidade de download e segurança — veja os resultados.",
+  "featured_image": "/content/images/best-youtube-downloader-chrome-extension-2026/featured.webp",
+  "category": "Mídia e Downloads",
+  "tags": [
+   "youtube",
+   "downloader",
+   "mp3",
+   "chrome",
+   "extensão",
+   "grátis",
+   "mp4"
+  ],
+  "keywords": [
+   "extensão para baixar vídeo do youtube chrome",
+   "baixar youtube mp3 chrome",
+   "download de vídeo do youtube no chrome",
+   "extensão youtube mp3 chrome",
+   "baixador youtube seguro chrome"
+  ],
+  "meta_description": "Baixe vídeos e MP3 do YouTube com segurança pelo Chrome em 2026. Testamos 7 extensões gratuitas em qualidade de áudio, velocidade e segurança — veja os resultados.",
+  "published_at": "2026-08-29T12:00:00+01:00",
+  "author": "ExtensionTo",
+  "read_time": 11
+ },
+ {
+  "slug": "fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed",
+  "title": "Como Corrigir o Alto Consumo de Memória do Chrome em 2026: 7 Métodos Comprovados (Sem Extensões)",
+  "seo_title": "7 Maneiras de Reduzir o Alto Consumo de Memória do Chrome",
+  "excerpt": "Sete configurações e técnicas integradas do Chrome para cortar o uso de RAM em até 60% — sem precisar de extensões. Cobre o Economizador de Memória, diagnóstico nativo, grupos de abas e mais.",
+  "featured_image": "/content/images/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed/featured.webp",
+  "category": "Desempenho e Memória",
+  "tags": [
+   "memória",
+   "desempenho",
+   "configurações do chrome",
+   "ram",
+   "otimização"
+  ],
+  "keywords": [
+   "como reduzir memória do chrome",
+   "chrome consumindo muita memória",
+   "economizador de memória chrome",
+   "gerenciador de tarefas chrome",
+   "chrome lento como resolver"
+  ],
+  "meta_description": "Reduza a memória do Chrome sem instalar extensões: sete métodos práticos cobrindo Economizador de Memória, Gerenciador de Tarefas, abas e configurações de sites.",
+  "published_at": "2026-08-29T12:00:00+01:00",
+  "author": "ExtensionTo",
+  "read_time": 13
+ }
 ]
