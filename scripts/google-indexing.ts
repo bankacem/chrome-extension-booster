@@ -16,6 +16,16 @@ const DELAY_MS = 1000; // 1 second delay between requests
 
 // URLs requested by user for priority indexing
 const MANUAL_PRIORITY_URLS = [
+  `${BASE_URL}/blog/ai-agent-browser-extensions-2026`,
+  `${BASE_URL}/blog/reddit-power-user-chrome-extensions`,
+  `${BASE_URL}/blog/whatsapp-web-enhancer-extensions`,
+  `${BASE_URL}/blog/mouse-gestures-chrome-extensions`,
+  `${BASE_URL}/blog/screenshot-ocr-text-extractor-extensions`,
+  `${BASE_URL}/blog/pdf-tools-chrome-extensions`,
+  `${BASE_URL}/blog/tab-counter-stats-chrome-extensions`,
+  `${BASE_URL}/blog/audio-equalizer-chrome-extensions`,
+  `${BASE_URL}/blog/chrome-autoscroll-reading-aids`,
+  `${BASE_URL}/blog/ai-research-assistant-chrome-extensions`,
   `${BASE_URL}/blog/internet-download-manager-extension`,
   `${BASE_URL}/blog/top-10-google-sheets-extensions-for-accounting-8`,
   `${BASE_URL}/terms`,

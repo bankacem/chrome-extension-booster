@@ -1,9 +1,7 @@
 ---
 seo_title: "Sci-Hub Chrome Extensions: Features and Legal Risks"
 id: 2b174e0a-ee7f-4101-a028-f0d4e1753809
-title: "Sci-Hub Chrome Extensions: What They Claim, What They Risk"
-  Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A
-  Comprehensive Guide
+title: "Sci-Hub Chrome Extensions: What They Claim, What They Risk — Unlocking Scientific Knowledge with the HTTPS Sci-Hub SE Chrome Extension: A Comprehensive Guide"
 slug: https-sci-hub-se-chrome-extension-16
 excerpt: "The world of scientific research has become increasingly digital, with numerous online platforms and tools available to facilitate access to knowledge."
 featured_image: /content/images/https-sci-hub-se-chrome-extension-16/featured.webp
