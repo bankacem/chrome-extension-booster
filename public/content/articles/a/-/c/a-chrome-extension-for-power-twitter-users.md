@@ -1,9 +1,7 @@
 ---
 seo_title: "Chrome Extensions for X/Twitter Power Users"
 id: 8778680c-8b00-490c-a00d-a95209670628
-title: "Chrome Extensions for X/Twitter Power Users: Threads, Scheduling, Analytics"
-  Boost Your Twitter Productivity with the Best Chrome Extension for Twitter
-  Productivity
+title: "Chrome Extensions for X/Twitter Power Users: Threads, Scheduling, Analytics — Boost Your Twitter Productivity with the Best Chrome Extension for Twitter Productivity"
 slug: "a-chrome-extension-for-power-twitter-users"
 excerpt: "Are you tired of feeling overwhelmed by the sheer amount of information on Twitter? Do you struggle to stay focused and productive while using the platform?"
 featured_image: "/content/images/a-chrome-extension-for-power-twitter-users/featured.webp"
