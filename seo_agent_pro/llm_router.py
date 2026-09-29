@@ -534,32 +534,48 @@ def _call_cleanapis(model_id: str, system: str, user: str, stream: bool, max_tok
     req = urllib.request.Request(url, json.dumps(payload).encode(), headers)
     full = ""
 
-    with urllib.request.urlopen(req, timeout=600) as resp:
-        if stream:
-            for raw_line in resp:
-                line = raw_line.decode("utf-8", errors="replace").strip()
-                if not line.startswith("data:"):
-                    continue
-                data = line[5:].strip()
-                if data == "[DONE]":
-                    break
-                try:
-                    chunk = json.loads(data)
-                except json.JSONDecodeError:
-                    continue
-                delta = (chunk.get("choices") or [{}])[0].get("delta", {})
-                piece = delta.get("content", "")
-                if piece:
-                    print(piece, end="", flush=True)
-                    full += piece
-            print()
-        else:
-            body = json.loads(resp.read().decode("utf-8"))
-            full = (body.get("choices") or [{}])[0].get("message", {}).get("content", "")
+    # Small calls (analysis/meta, max_tokens 200-1500) can come back with
+    # EMPTY content on reasoning-style models (deepseek-v4-pro): the model
+    # spends its whole token budget on reasoning and content ends up empty
+    # with finish_reason="length". Seen for real in the first Actions run
+    # (2026-09-30): three 1500-token calls succeeded, the 4th came back
+    # empty and aborted the whole pipeline. One internal retry with a
+    # doubled budget fixes that class of failure cheaply.
+    attempt_tokens = max_tokens
+    for _ in range(2):
+        payload["max_tokens"] = attempt_tokens
+        req = urllib.request.Request(url, json.dumps(payload).encode(), headers)
+        full = ""
 
-    if not full.strip():
-        raise ValueError(f"cleanapis returned no usable content for {model_id}")
-    return full
+        with urllib.request.urlopen(req, timeout=600) as resp:
+            if stream:
+                for raw_line in resp:
+                    line = raw_line.decode("utf-8", errors="replace").strip()
+                    if not line.startswith("data:"):
+                        continue
+                    data = line[5:].strip()
+                    if data == "[DONE]":
+                        break
+                    try:
+                        chunk = json.loads(data)
+                    except json.JSONDecodeError:
+                        continue
+                    delta = (chunk.get("choices") or [{}])[0].get("delta", {})
+                    piece = delta.get("content", "")
+                    if piece:
+                        print(piece, end="", flush=True)
+                        full += piece
+                print()
+            else:
+                body = json.loads(resp.read().decode("utf-8"))
+                full = (body.get("choices") or [{}])[0].get("message", {}).get("content", "")
+
+        if full.strip():
+            return full
+        attempt_tokens = min(attempt_tokens * 2, 8000)
+        print(c("yellow", f"  ↳ cleanapis empty content — retrying with max_tokens={attempt_tokens}"))
+
+    raise ValueError(f"cleanapis returned no usable content for {model_id}")
 
 
 # ──────────────────────────────────────────────────────────────

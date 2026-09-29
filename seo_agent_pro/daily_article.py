@@ -398,14 +398,28 @@ def _generate_content(keyword: str, articles_written: int, model: str) -> tuple[
     body = "\n".join(lines[body_start:]).strip()
 
     # Short meta description via a focused, cheap follow-up call.
-    meta_description = call(
-        "You write concise SEO meta descriptions. Reply with ONLY the description text, "
-        "no preamble, no quotes, 140-160 characters.",
-        f'Write a meta description for an article targeting the keyword "{keyword}". '
-        f"Article title: {title}",
-        model,
-        max_tokens=200,
-    ).strip().strip('"')
+    # Empty responses DO happen (real case: first Actions run shipped an
+    # article with meta_description: "" because the model returned empty
+    # content) — so retry twice and always fall back to a deterministic
+    # description built from the title. Never ship an empty meta tag.
+    meta_description = ""
+    for _ in range(2):
+        meta_description = call(
+            "You write concise SEO meta descriptions. Reply with ONLY the description text, "
+            "no preamble, no quotes, 140-160 characters.",
+            f'Write a meta description for an article targeting the keyword "{keyword}". '
+            f"Article title: {title}",
+            model,
+            max_tokens=200,
+        ).strip().strip('"')
+        if meta_description:
+            break
+
+    if not meta_description:
+        meta_description = (
+            f"{title} — practical guide with the tools, settings and tips you need."
+        )[:158].rstrip()
+        print(c("yellow", f"  ↳ meta description empty from model — using fallback: {meta_description!r}"))
 
     return title, body, meta_description
 
