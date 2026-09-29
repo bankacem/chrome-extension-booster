@@ -299,5 +299,66 @@
   ],
   "canonicalPath": "/fr/blog/best-color-picker-chrome-extension",
   "updated_at": "2026-05-22T14:15:01.581282+00:00"
+ },
+ {
+  "id": "chrome-command-palette-extensions-fr",
+  "slug": "chrome-command-palette-extensions",
+  "title": "Palette de commandes Chrome",
+  "seo_title": "Palette de commandes Chrome : extensions comme Raycast",
+  "description": "Test des meilleures extensions de palette de commandes pour Chrome. Lancez vos actions par raccourcis comme Raycast, optimisez votre productivité avec ces outils pratiques.",
+  "meta_description": "Test des meilleures extensions de palette de commandes pour Chrome. Lancez vos actions par raccourcis comme Raycast, optimisez votre productivité avec ces outils pratiques.",
+  "excerpt": "Découvrez les meilleures extensions de palette de commandes pour Chrome, lancez vos actions par raccourcis clavier comme Raycast et accélérez votre navigation.",
+  "published_at": "2026-09-29T12:00:00+00:00",
+  "updated_at": "2026-09-29T12:26:37.000+00:00",
+  "category": "Extensions Chrome",
+  "author": "ExtensionTo",
+  "featured_image": "/content/images/chrome-command-palette-extensions/featured.webp",
+  "image_url": "/content/images/chrome-command-palette-extensions/featured.webp",
+  "read_time": 26,
+  "tags": [
+   "palette de commandes chrome",
+   "extensions quick commands chrome",
+   "raycast pour chrome",
+   "lanceur de commandes clavier chrome",
+   "barre de commandes navigateur"
+  ],
+  "keywords": [
+   "palette de commandes chrome",
+   "extensions quick commands chrome",
+   "raycast pour chrome",
+   "lanceur de commandes clavier chrome"
+  ],
+  "status": "published",
+  "locale": "fr_FR"
+ },
+ {
+  "id": "auto-currency-converter-chrome-extensions-fr",
+  "slug": "auto-currency-converter-chrome-extensions",
+  "title": "Meilleures extensions Chrome convertisseur de monnaie",
+  "seo_title": "Extensions Chrome Convertisseur de Monnaie Automatique 2026",
+  "description": "Les extensions Chrome convertissant automatiquement les prix en votre monnaie. Comparez les outils pour un shopping international sans tracas.",
+  "meta_description": "Les extensions Chrome convertissant automatiquement les prix en votre monnaie. Comparez les outils pour un shopping international sans tracas.",
+  "excerpt": "Découvrez les meilleures extensions Chrome pour convertir automatiquement les prix en votre monnaie pendant vos achats en ligne.",
+  "published_at": "2026-09-29T12:00:00+00:00",
+  "updated_at": "2026-09-29T12:26:37.000+00:00",
+  "category": "Extensions Chrome",
+  "author": "ExtensionTo",
+  "featured_image": "/content/images/auto-currency-converter-chrome-extensions/featured.webp",
+  "image_url": "/content/images/auto-currency-converter-chrome-extensions/featured.webp",
+  "read_time": 27,
+  "tags": [
+   "extension chrome convertisseur monnaie",
+   "convertir prix automatique chrome",
+   "extension taux de change chrome",
+   "outil multi-monnaie navigateur"
+  ],
+  "keywords": [
+   "extension chrome convertisseur monnaie",
+   "convertir prix automatique chrome",
+   "extension taux de change chrome",
+   "outil multi-monnaie navigateur"
+  ],
+  "status": "published",
+  "locale": "fr_FR"
  }
 ]

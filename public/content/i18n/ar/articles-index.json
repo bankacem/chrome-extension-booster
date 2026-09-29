@@ -281,5 +281,69 @@
   "published_at": "2026-08-28T12:00:00+01:00",
   "author": "ExtensionTo",
   "read_time": 10
+ },
+ {
+  "id": "chrome-command-palette-extensions-ar",
+  "slug": "chrome-command-palette-extensions",
+  "title": "إضافات قائمة أوامر كروم",
+  "seo_title": "إضافات قائمة أوامر كروم | تشغيل الإجراءات مثل Raycast",
+  "description": "اكتشف أفضل إضافات قائمة أوامر لجوجل كروم لتسهيل تصفحك عبر لوحة أوامر سريعة تشبه Raycast. حلول فعالة لتشغيل الإجراءات بسرعة.",
+  "meta_description": "اكتشف أفضل إضافات قائمة أوامر لجوجل كروم لتسهيل تصفحك عبر لوحة أوامر سريعة تشبه Raycast. حلول فعالة لتشغيل الإجراءات بسرعة.",
+  "excerpt": "استكشف أفضل إضافات قائمة أوامر لجوجل كروم لتسهيل تصفحك عبر لوحة أوامر سريعة تشبه Raycast.",
+  "published_at": "2026-09-29T12:00:00+00:00",
+  "updated_at": "2026-09-29T12:26:37.000+00:00",
+  "category": "إضافات جوجل كروم",
+  "author": "ExtensionTo",
+  "featured_image": "/content/images/chrome-command-palette-extensions/featured.webp",
+  "image_url": "/content/images/chrome-command-palette-extensions/featured.webp",
+  "read_time": 16,
+  "tags": [
+   "إضافات قائمة أوامر كروم",
+   "لوحة أوامر سريعة كروم",
+   "إضافة Raycast لكروم",
+   "موجه أوامر المتصفح",
+   "تشغيل الإجراءات بالوحة المفاتيح"
+  ],
+  "keywords": [
+   "إضافات قائمة أوامر كروم",
+   "لوحة أوامر سريعة كروم",
+   "إضافة Raycast لكروم",
+   "موجه أوامر المتصفح",
+   "تشغيل الإجراءات بالوحة المفاتيح"
+  ],
+  "status": "published",
+  "locale": "ar_SA"
+ },
+ {
+  "id": "auto-currency-converter-chrome-extensions-ar",
+  "slug": "auto-currency-converter-chrome-extensions",
+  "title": "محوّلات العملات التلقائية للكروم",
+  "seo_title": "أفضل 5 محوّلات العملات التلقائية للكروم",
+  "description": "أفضل إضافات تحويل العملات التلقائية لمتصفح كروم. عرض الأسعار بعملتك المحلية فورًا أثناء التسوق عبر الإنترنت وتوفير المال.",
+  "meta_description": "أفضل إضافات تحويل العملات التلقائية لمتصفح كروم. عرض الأسعار بعملتك المحلية فورًا أثناء التسوق عبر الإنترنت وتوفير المال.",
+  "excerpt": "اكتشف أفضل إضافات تحويل العملات التلقائية لمتصفح كروم. عرض الأسعار بعملتك المحلية أثناء التسوق عبر الإنترنت.",
+  "published_at": "2026-09-29T12:00:00+00:00",
+  "updated_at": "2026-09-29T12:26:37.000+00:00",
+  "category": "إضافات جوجل كروم",
+  "author": "ExtensionTo",
+  "featured_image": "/content/images/auto-currency-converter-chrome-extensions/featured.webp",
+  "image_url": "/content/images/auto-currency-converter-chrome-extensions/featured.webp",
+  "read_time": 17,
+  "tags": [
+   "محوّلات العملات للكروم",
+   "تحويل العملات التلقائية أثناء التسوق",
+   "إضافات كروم لعرض الأسعار بعملتك",
+   "أفضل إضافات تحويل العملات",
+   "محوّل العملات المتعدد للكروم"
+  ],
+  "keywords": [
+   "محوّلات العملات للكروم",
+   "تحويل العملات التلقائية أثناء التسوق",
+   "إضافات كروم لعرض الأسعار بعملتك",
+   "أفضل إضافات تحويل العملات",
+   "محوّل العملات المتعدد للكروم"
+  ],
+  "status": "published",
+  "locale": "ar_SA"
  }
 ]

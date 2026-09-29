@@ -284,5 +284,69 @@
   "published_at": "2026-08-29T12:00:00+01:00",
   "author": "ExtensionTo",
   "read_time": 13
+ },
+ {
+  "id": "chrome-command-palette-extensions-pt",
+  "slug": "chrome-command-palette-extensions",
+  "title": "Palette de Comandos Chrome",
+  "seo_title": "Palette de Comandos Chrome: Extensões Como Raycast",
+  "description": "Melhores extensões de palette de comandos para Chrome em 2026. Execute ações rapidamente com teclas de atalho, personalize comandos e aumente sua produtividade.",
+  "meta_description": "Melhores extensões de palette de comandos para Chrome em 2026. Execute ações rapidamente com teclas de atalho, personalize comandos e aumente sua produtividade.",
+  "excerpt": "Descubra as melhores extensões de palette de comandos para Chrome e acione ações do navegador com teclas de atalho, como o Raycast.",
+  "published_at": "2026-09-29T12:00:00+00:00",
+  "updated_at": "2026-09-29T12:26:37.000+00:00",
+  "category": "Extensões Chrome",
+  "author": "ExtensionTo",
+  "featured_image": "/content/images/chrome-command-palette-extensions/featured.webp",
+  "image_url": "/content/images/chrome-command-palette-extensions/featured.webp",
+  "read_time": 25,
+  "tags": [
+   "extensão palette de comandos chrome",
+   "comandos rápidos chrome",
+   "raycast para chrome",
+   "lançador de comandos chrome",
+   "barra de comandos navegador"
+  ],
+  "keywords": [
+   "extensão palette de comandos chrome",
+   "comandos rápidos chrome",
+   "raycast para chrome",
+   "lançador de comandos chrome",
+   "barra de comandos navegador"
+  ],
+  "status": "published",
+  "locale": "pt_BR"
+ },
+ {
+  "id": "auto-currency-converter-chrome-extensions-pt",
+  "slug": "auto-currency-converter-chrome-extensions",
+  "title": "Extensões Conversor de Moeda Chrome",
+  "seo_title": "Extensões Conversor de Moeda Chrome: Veja Preços em Sua Moeda",
+  "description": "Transforme preços em reais ou sua moeda local em tempo real com as melhores extensões conversoras de moeda para Chrome. Economize dinheiro nas compras internacionais.",
+  "meta_description": "Transforme preços em reais ou sua moeda local em tempo real com as melhores extensões conversoras de moeda para Chrome. Economize dinheiro nas compras internacionais.",
+  "excerpt": "Descubra as melhores extensões do Chrome para conversão automática de moedas enquanto você navega e compra online.",
+  "published_at": "2026-09-29T12:00:00+00:00",
+  "updated_at": "2026-09-29T12:26:37.000+00:00",
+  "category": "Extensões Chrome",
+  "author": "ExtensionTo",
+  "featured_image": "/content/images/auto-currency-converter-chrome-extensions/featured.webp",
+  "image_url": "/content/images/auto-currency-converter-chrome-extensions/featured.webp",
+  "read_time": 24,
+  "tags": [
+   "conversor de moeda chrome",
+   "extensão para converter preços",
+   "conversão automática de moedas chrome",
+   "ver preços em reais chrome",
+   "extensão taxa de câmbio chrome"
+  ],
+  "keywords": [
+   "conversor de moeda chrome",
+   "extensão para converter preços",
+   "conversão automática de moedas chrome",
+   "ver preços em reais chrome",
+   "extensão taxa de câmbio chrome"
+  ],
+  "status": "published",
+  "locale": "pt_BR"
  }
 ]
