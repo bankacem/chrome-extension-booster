@@ -1,16 +1,30 @@
 name: Daily Article Generation
 
-# Disabled during the coordinated Manus + seo_agent_pro pilot.
-# Manual dispatch remains available only for explicitly approved emergency runs.
+# Daily unattended article generation for extensionto.com (main project).
+#
+# Provider chain (seo_agent_pro/daily_article.py MODEL_FALLBACK_CHAIN) now
+# starts with "cleanapis-writer" (cleanapis.com deepseek-v4-pro-0813) — the
+# same proven writer that produced every tiksnaptok daily/batch article
+# unattended in GitHub Actions. Legacy providers remain as fallbacks.
+#
+# Pushes the finished article + regenerated index/sitemap DIRECTLY to main
+# (same unattended pattern proven on the tiksnaptok repo), and opens an
+# issue only when something fails so failures are visible without spamming.
+
 on:
+  schedule:
+    - cron: "0 7 * * *"   # 07:00 UTC daily — staggered after tiksnaptok (06:00)
   workflow_dispatch: {}
+
+concurrency:
+  group: daily-article-main
+  cancel-in-progress: false
 
 jobs:
   generate-article:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
       issues: write
 
     steps:
@@ -38,148 +52,59 @@ jobs:
       - name: Generate today's article
         id: gen
         env:
-          # Accept either naming convention actually present in repo
-          # secrets (BLUESMINDS_KEY vs BLUESMINDS, etc.) — whichever is set.
+          # cleanapis first (repo secret CLEANAPIS), legacy providers as fallback
+          CLEANAPIS_KEY:   ${{ secrets.CLEANAPIS || secrets.CLEANAPIS_KEY }}
           BLUESMINDS_KEY:  ${{ secrets.BLUESMINDS_KEY || secrets.BLUESMINDS }}
           AGENTROUTER_KEY: ${{ secrets.AGENTROUTER_KEY || secrets.AGENTROUTER }}
           GROQ_KEY:        ${{ secrets.GROQ_KEY || secrets.GROQ }}
           OPENROUTER_KEY:  ${{ secrets.OPENROUTER_KEY || secrets.OPENROUTER }}
-          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
         run: |
           set -o pipefail
           python3 seo_agent_pro/daily_article.py 2>&1 | tee /tmp/gen_output.log
 
-      - name: Debug - show gen step outputs
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          {
-            echo "article_title=[${{ steps.gen.outputs.article_title }}]"
-            echo ""
-            echo "article_slug=[${{ steps.gen.outputs.article_slug }}]"
-            echo ""
-            echo "article_keyword=[${{ steps.gen.outputs.article_keyword }}]"
-            echo ""
-            echo "article_path=[${{ steps.gen.outputs.article_path }}]"
-            echo ""
-            echo "--- raw GITHUB_OUTPUT file ---"
-            echo '```'
-            cat "$GITHUB_OUTPUT" || echo "(could not read)"
-            echo '```'
-          } > /tmp/debug_outputs.md
-          gh issue create \
-            --title "DEBUG: gen step outputs ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
-            --body-file /tmp/debug_outputs.md \
-            --repo ${{ github.repository }}
-
-      - name: Post debug output if generation failed
-        if: failure()
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          {
-            echo "## Generation step failed - output:"
-            echo '```'
-            tail -c 6000 /tmp/gen_output.log
-            echo '```'
-          } > /tmp/debug_body.md
-          gh issue create \
-            --title "Daily article generation FAILED ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
-            --body-file /tmp/debug_body.md \
-            --repo ${{ github.repository }}
-
       - name: Rebuild index and sitemap
+        if: success()
         run: |
           bun run sync-articles
           bun run sitemap
 
-      - name: Create branch and commit
-        id: commit
+      - name: Commit and push to main
+        if: success()
         run: |
-          set +e
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
 
-          BRANCH="daily-article/${{ steps.gen.outputs.article_slug }}"
-          git checkout -b "$BRANCH" 2>&1 | tee -a /tmp/commit_output.log
-
-          git add "${{ steps.gen.outputs.article_path }}" 2>&1 | tee -a /tmp/commit_output.log
-          git add public/content/articles-index.json public/sitemap.xml 2>&1 | tee -a /tmp/commit_output.log
-          git add seo_agent_pro/daily_article_state.json 2>&1 | tee -a /tmp/commit_output.log
+          git add -A public/content/articles
+          git add public/content/articles-index.json public/sitemap.xml public/content/sitemap-dates.json
+          git add seo_agent_pro/daily_article_state.json
           # Without this, seo_memory.json is written locally on the runner and
           # thrown away at the end of the job — the strategy engine sees
-          # "0 articles written" every single day forever, which is why so
-          # many articles opened with the same generic template.
-          git add seo_agent_pro/seo_memory.json 2>&1 | tee -a /tmp/commit_output.log
+          # "0 articles written" every single day forever.
+          git add seo_agent_pro/seo_memory.json
 
-          git commit -m "feat: daily article — ${{ steps.gen.outputs.article_title }}" 2>&1 | tee -a /tmp/commit_output.log
-          COMMIT_EXIT=$?
-
-          git push origin "$BRANCH" --force 2>&1 | tee -a /tmp/commit_output.log
-          PUSH_EXIT=$?
-
-          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
-
-          if [ $COMMIT_EXIT -ne 0 ] || [ $PUSH_EXIT -ne 0 ]; then
-            exit 1
+          if git diff --cached --quiet; then
+            echo "No changes to commit (article already present?)"
+            exit 0
           fi
 
-      - name: Post debug output if commit/push failed
+          git commit -m "feat: daily article — ${{ steps.gen.outputs.article_title }} (${{ steps.gen.outputs.article_slug }})"
+          git push origin main
+
+      - name: Open issue on failure
         if: failure()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           {
-            echo "## Commit/push step failed - output:"
-            echo '```'
-            cat /tmp/commit_output.log 2>/dev/null || echo "(no log captured)"
-            echo '```'
+            echo "## Daily article run failed"
             echo ""
-            echo "## git status at time of failure"
+            echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo ""
             echo '```'
-            git status 2>&1
+            tail -c 6000 /tmp/gen_output.log 2>/dev/null || echo "(no generation log captured)"
             echo '```'
-          } > /tmp/debug_commit.md
+          } > /tmp/fail_body.md
           gh issue create \
-            --title "Daily article commit/push FAILED ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
-            --body-file /tmp/debug_commit.md \
-            --repo ${{ github.repository }}
-
-      - name: Open Pull Request for review
-        run: |
-          set +e
-          cat > /tmp/pr_body.md << PRBODY
-          Auto-generated by the daily pipeline (agentrouter gpt-4o).
-
-          **Keyword:** ${{ steps.gen.outputs.article_keyword }}
-          **Slug:** ${{ steps.gen.outputs.article_slug }}
-          **File:** ${{ steps.gen.outputs.article_path }}
-
-          Please review the article content before merging - this is auto-generated and has not been human-reviewed yet. Check for:
-          - Factual accuracy
-          - Tone and quality
-          - A real featured image (currently defaults to the site's generic og-image.png)
-          PRBODY
-
-          GH_TOKEN=${{ github.token }} gh pr create \
-            --title "Daily article: ${{ steps.gen.outputs.article_title }}" \
-            --body-file /tmp/pr_body.md \
-            --base main \
-            --head "${{ steps.commit.outputs.branch }}" 2>&1 | tee /tmp/pr_output.log
-          exit ${PIPESTATUS[0]}
-
-      - name: Post debug output if PR creation failed
-        if: failure()
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          {
-            echo "## PR creation step failed - output:"
-            echo '```'
-            cat /tmp/pr_output.log 2>/dev/null || echo "(no log captured)"
-            echo '```'
-          } > /tmp/debug_pr.md
-          gh issue create \
-            --title "Daily article PR creation FAILED ($(date -u +%Y-%m-%dT%H:%M:%SZ))" \
-            --body-file /tmp/debug_pr.md \
+            --title "Daily article FAILED ($(date -u +%Y-%m-%d))" \
+            --body-file /tmp/fail_body.md \
             --repo ${{ github.repository }}

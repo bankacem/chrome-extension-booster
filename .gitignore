@@ -19,6 +19,9 @@ google-indexing-key.json
 # secrets that must never reach a public repo even though the publishable
 # anon key is also inlined into the client bundle via VITE_* variables.
 .env
+# seo_agent_pro holds REAL provider keys (cleanapis + GitHub PAT).
+# secrets.env.example is the committed template; the real file never is.
+seo_agent_pro/secrets.env
 .env.*
 !.env.example
 

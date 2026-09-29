@@ -497,6 +497,72 @@ def _call_openai_compat(model_id: str, system: str, user: str, stream: bool, max
 
 
 # ──────────────────────────────────────────────────────────────
+#  Clean APIs (cleanapis.com) — OpenAI-compatible gateway, 33 models
+#  Base URL from their live docs page: https://cleanapis.com/v1
+#  Auth: Bearer token (their /v1/models endpoint confirms: "Send it as a
+#  Bearer token or x-api-key header"). Fully OpenAI wire format, so the
+#  request/response handling mirrors _call_openai_compat — but with real
+#  streaming support and their documented error envelope:
+#    HTTP 402 → out of tokens (plan exhausted, top up needed) — NOT retryable
+#    HTTP 401 → bad/missing key — NOT retryable
+# ──────────────────────────────────────────────────────────────
+
+CLEANAPIS_BASE_URL = os.getenv("CLEANAPIS_BASE_URL", "https://cleanapis.com/v1").rstrip("/")
+
+
+def _call_cleanapis(model_id: str, system: str, user: str, stream: bool, max_tokens: int) -> str:
+    url = f"{CLEANAPIS_BASE_URL}/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {API_KEYS['cleanapis']}",
+        "Content-Type":  "application/json",
+        # Cloudflare sits in front of cleanapis.com and blocks the default
+        # urllib UA with Error 1010 ("blocked based on your browser's
+        # signature") — same lesson already learned with gorouter/groq.
+        "User-Agent":    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+        "Accept":        "application/json",
+    }
+    payload = {
+        "model":      model_id,
+        "max_tokens": max_tokens,
+        "stream":     bool(stream),
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user",   "content": user},
+        ],
+    }
+
+    req = urllib.request.Request(url, json.dumps(payload).encode(), headers)
+    full = ""
+
+    with urllib.request.urlopen(req, timeout=600) as resp:
+        if stream:
+            for raw_line in resp:
+                line = raw_line.decode("utf-8", errors="replace").strip()
+                if not line.startswith("data:"):
+                    continue
+                data = line[5:].strip()
+                if data == "[DONE]":
+                    break
+                try:
+                    chunk = json.loads(data)
+                except json.JSONDecodeError:
+                    continue
+                delta = (chunk.get("choices") or [{}])[0].get("delta", {})
+                piece = delta.get("content", "")
+                if piece:
+                    print(piece, end="", flush=True)
+                    full += piece
+            print()
+        else:
+            body = json.loads(resp.read().decode("utf-8"))
+            full = (body.get("choices") or [{}])[0].get("message", {}).get("content", "")
+
+    if not full.strip():
+        raise ValueError(f"cleanapis returned no usable content for {model_id}")
+    return full
+
+
+# ──────────────────────────────────────────────────────────────
 #  Public API
 # ──────────────────────────────────────────────────────────────
 
@@ -554,6 +620,8 @@ def call(
                 return _call_gorouter(model_id, system, user, stream, effective_max_tokens)
             elif provider == "openai_compat":
                 return _call_openai_compat(model_id, system, user, stream, effective_max_tokens)
+            elif provider == "cleanapis":
+                return _call_cleanapis(model_id, system, user, stream, effective_max_tokens)
             else:
                 print(c("red", f"  ✗ Unknown provider: {provider}"))
                 sys.exit(1)
@@ -573,7 +641,15 @@ def call(
                 e.code == 400
                 and re.search(r"no_db_connection|no connected db", body, re.IGNORECASE)
             )
-            if (e.code in RETRYABLE_HTTP_CODES or is_transient_db_error) and attempt < effective_max:
+            # Clean APIs: 401 (bad key) and 402 (plan out of tokens) are
+            # terminal states — retrying cannot fix either, and their docs
+            # promise 402 arrives BEFORE the request reaches a model, so no
+            # partial generation is ever lost by failing fast.
+            is_cleanapis_terminal = (
+                e.code in (401, 402)
+                and "cleanapis" in (provider or "")
+            )
+            if (e.code in RETRYABLE_HTTP_CODES or is_transient_db_error) and attempt < effective_max and not is_cleanapis_terminal:
                 delay = RETRY_BASE_DELAY_SECONDS * attempt
                 if e.code == 429:
                     # Real failure seen in production: Groq's free-tier TPM

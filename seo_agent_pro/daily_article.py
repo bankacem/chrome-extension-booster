@@ -34,13 +34,16 @@ ROOT = Path(__file__).resolve().parent.parent
 QUEUE_PATH = Path(__file__).parent / "keyword_queue.txt"
 STATE_PATH = Path(__file__).parent / "daily_article_state.json"
 ARTICLES_DIR = ROOT / "public" / "content" / "articles"
-# Tried in this order until one actually responds. agentrouter.org is kept
-# first in case its WAF stops blocking GitHub Actions IPs later, but during
-# diagnosis it returned an Alibaba Cloud WAF block page (HTML, not JSON) for
-# every candidate URL — so groq/openrouter are the ones actually expected to
-# work today. Override the whole chain with SEO_AGENT_MODEL=<name> to force
-# a single specific model instead of probing.
+# Tried in this order until one actually responds. cleanapis-writer comes
+# first: cleanapis.com deepseek-v4-pro-0813 is the proven daily writer
+# (wrote and QA-passed every tiksnaptok daily/batch article unattended in
+# GitHub Actions). agentrouter.org is kept for the record but returned an
+# Alibaba Cloud WAF block page (HTML, not JSON) for every candidate URL
+# during diagnosis — so cleanapis, then groq/openrouter, are the ones
+# actually expected to serve. Override the whole chain with
+# SEO_AGENT_MODEL=<name> to force a single specific model instead of probing.
 MODEL_FALLBACK_CHAIN = [
+    "cleanapis-writer",
     "agentrouter-gpt-4o",
     "bluesminds-gpt4o",
     "llama-3.1-70b-groq",
