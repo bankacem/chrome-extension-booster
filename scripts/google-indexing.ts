@@ -16,6 +16,16 @@ const DELAY_MS = 1000; // 1 second delay between requests
 
 // URLs requested by user for priority indexing
 const MANUAL_PRIORITY_URLS = [
+  `${BASE_URL}/blog/ai-agent-browser-extensions-2026`,
+  `${BASE_URL}/blog/reddit-power-user-chrome-extensions`,
+  `${BASE_URL}/blog/whatsapp-web-enhancer-extensions`,
+  `${BASE_URL}/blog/mouse-gestures-chrome-extensions`,
+  `${BASE_URL}/blog/screenshot-ocr-text-extractor-extensions`,
+  `${BASE_URL}/blog/pdf-tools-chrome-extensions`,
+  `${BASE_URL}/blog/tab-counter-stats-chrome-extensions`,
+  `${BASE_URL}/blog/audio-equalizer-chrome-extensions`,
+  `${BASE_URL}/blog/chrome-autoscroll-reading-aids`,
+  `${BASE_URL}/blog/ai-research-assistant-chrome-extensions`,
   `${BASE_URL}/blog/internet-download-manager-extension`,
   `${BASE_URL}/blog/top-10-google-sheets-extensions-for-accounting-8`,
   `${BASE_URL}/terms`,
@@ -218,9 +228,11 @@ async function massIndexing() {
   const articleUrls = articles.map(a => `${BASE_URL}/blog/${a.slug}`);
   const allTargetUrls = [...staticPages, ...articleUrls];
 
-  const pendingUrls = allTargetUrls.filter(u => !indexedUrls.includes(u));
+  const priorityUrls = MANUAL_PRIORITY_URLS.filter(u => !indexedUrls.includes(u));
+  const otherPendingUrls = allTargetUrls.filter(u => !indexedUrls.includes(u) && !MANUAL_PRIORITY_URLS.includes(u));
+  const pendingUrls = [...priorityUrls, ...otherPendingUrls];
 
-  console.log(`${pendingUrls.length} URLs pending indexing.`);
+  console.log(`${pendingUrls.length} URLs pending indexing (${priorityUrls.length} manual priority).`);
 
   let successCount = 0;
   let failCount = 0;
@@ -230,7 +242,7 @@ async function massIndexing() {
     const article = articles.find(a => `${BASE_URL}/blog/${a.slug}` === url);
 
     try {
-      const isPriority = article?.published_at ? String(article.published_at).startsWith('2026-04') : false;
+      const isPriority = MANUAL_PRIORITY_URLS.includes(url) || (article?.published_at ? String(article.published_at).startsWith('2026-04') : false);
       console.log(`[${i + 1}/${pendingUrls.length}] Notifying: ${url}${isPriority ? ' (PRIORITY)' : ''}`);
       await notifyIndexing(url, 'URL_UPDATED');
 
