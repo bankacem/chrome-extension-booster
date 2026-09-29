@@ -914,5 +914,15 @@
   "reddit-power-user-chrome-extensions": "2026-09-27",
   "whatsapp-web-enhancer-extensions": "2026-09-27",
   "mouse-gestures-chrome-extensions": "2026-09-27",
-  "chrome-autoscroll-reading-aids": "2026-09-27"
+  "chrome-autoscroll-reading-aids": "2026-09-27",
+  "auto-currency-converter-chrome-extensions": "2026-09-29",
+  "chrome-command-palette-extensions": "2026-09-29",
+  "fr:chrome-command-palette-extensions": "2026-09-29",
+  "fr:auto-currency-converter-chrome-extensions": "2026-09-29",
+  "es:chrome-command-palette-extensions": "2026-09-29",
+  "es:auto-currency-converter-chrome-extensions": "2026-09-29",
+  "pt:chrome-command-palette-extensions": "2026-09-29",
+  "pt:auto-currency-converter-chrome-extensions": "2026-09-29",
+  "ar:chrome-command-palette-extensions": "2026-09-29",
+  "ar:auto-currency-converter-chrome-extensions": "2026-09-29"
 }
