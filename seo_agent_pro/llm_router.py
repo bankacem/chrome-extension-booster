@@ -2,7 +2,10 @@
 LLM Router — Handles Anthropic, OpenRouter, Groq, and Bluesminds (experimental).
 """
 
-import anthropic
+try:
+    import anthropic
+except ImportError:
+    anthropic = None
 import os
 import urllib.request
 import urllib.error
@@ -61,6 +64,8 @@ def validate_config(model_name: str) -> tuple[str, str]:
 # ──────────────────────────────────────────────────────────────
 
 def _call_anthropic(model_id: str, system: str, user: str, stream: bool, max_tokens: int) -> str:
+    if anthropic is None:
+        raise ImportError("anthropic package is not installed.")
     client = anthropic.Anthropic(api_key=API_KEYS["anthropic"])
     full   = ""
 
