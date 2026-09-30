@@ -13,7 +13,7 @@ keywords:
   - chrome tab groups backup
   - tab group saver extension
 meta_description: "Want to save and restore Chrome tab groups reliably? Learn how tab group extensions work, what data they store, and which criteria matter for privacy and"
-status: draft
+status: published
 published_at: "2026-09-26T11:00:00Z"
 scheduled_at: "2026-09-26T11:00:00Z"
 author: "James Mitchell"

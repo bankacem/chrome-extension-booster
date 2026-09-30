@@ -13,7 +13,7 @@ keywords:
   - how to pin chrome extension to toolbar
   - chrome extension not showing in toolbar
 meta_description: "Find and restore missing Chrome extension icons in your toolbar using the puzzle piece menu and learn to prevent future icon disappearances."
-status: draft
+status: published
 published_at: "2026-09-10T11:00:00Z"
 scheduled_at: "2026-09-10T11:00:00Z"
 author: "James Mitchell"

@@ -20,7 +20,7 @@ keywords:
   - extension resource security
   - chrome extension content script injection
 meta_description: "Learn how Chrome extension web accessible resources work, their security risks, and best practices for safe configuration in Manifest V3."
-status: draft
+status: published
 published_at: "2026-09-20T11:00:00Z"
 scheduled_at: "2026-09-20T11:00:00Z"
 author: "James Mitchell"

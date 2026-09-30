@@ -13,7 +13,7 @@ keywords:
   - how to force chrome extension update
   - chrome extension update stuck
 meta_description: "Understand why Chrome extension updates are delayed and learn how to manually trigger updates when idle state and policies prevent automatic updates."
-status: draft
+status: published
 published_at: "2026-09-11T11:00:00Z"
 scheduled_at: "2026-09-11T11:00:00Z"
 author: "James Mitchell"

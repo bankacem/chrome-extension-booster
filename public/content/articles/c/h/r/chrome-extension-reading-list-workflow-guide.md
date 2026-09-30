@@ -13,7 +13,7 @@ keywords:
   - chrome reading list extension
   - best read later extension chrome
 meta_description: "Build a dependable read later workflow with Chrome extensions. Compare capture speed, organization, reading experience, export options, and privacy for the"
-status: draft
+status: published
 published_at: "2026-09-27T11:00:00Z"
 scheduled_at: "2026-09-27T11:00:00Z"
 author: "James Mitchell"

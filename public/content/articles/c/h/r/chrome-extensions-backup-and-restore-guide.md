@@ -13,7 +13,7 @@ keywords:
   - chrome extension backup tool
   - export extension settings chrome
 meta_description: "Safely back up and restore Chrome extension settings with built-in tools, developer console commands, and dedicated backup extensions to protect your"
-status: draft
+status: published
 published_at: "2026-09-13T11:00:00Z"
 scheduled_at: "2026-09-13T11:00:00Z"
 author: "James Mitchell"

@@ -13,7 +13,7 @@ keywords:
   - recover extension settings after reinstall
   - chrome extension local storage cleared
 meta_description: "Recover lost Chrome extension settings after reinstall by understanding what data can be restored and what configurations are permanently deleted."
-status: draft
+status: published
 published_at: "2026-09-12T11:00:00Z"
 scheduled_at: "2026-09-12T11:00:00Z"
 author: "James Mitchell"

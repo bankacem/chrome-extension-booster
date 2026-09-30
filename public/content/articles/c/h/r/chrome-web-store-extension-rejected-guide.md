@@ -13,7 +13,7 @@ keywords:
   - fix rejected chrome extension
   - chrome extension resubmission guide
 meta_description: "Chrome Web Store extension rejected? Learn how to read the rejection reason, map it to policy violations, and prepare a compliant correction for resubmission."
-status: draft
+status: published
 published_at: "2026-09-16T11:00:00Z"
 scheduled_at: "2026-09-16T11:00:00Z"
 author: "James Mitchell"

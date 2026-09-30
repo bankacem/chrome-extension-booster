@@ -14,7 +14,7 @@ keywords:
   - freelance invoicing tools chrome
   - chrome extensions for independent workers
 meta_description: "Essential Chrome extensions for freelancers: streamline time tracking, invoicing, client communication, and productivity in your browser workspace."
-status: draft
+status: published
 published_at: "2026-09-01T11:00:00Z"
 scheduled_at: "2026-09-01T11:00:00Z"
 author: "James Mitchell"

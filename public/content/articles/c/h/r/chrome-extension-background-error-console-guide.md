@@ -13,7 +13,7 @@ keywords:
   - extension background script errors
   - chrome service worker console
 meta_description: "Can't see Chrome extension background errors? Learn how to inspect the service worker console, find hidden errors, and debug Manifest V3 backgrounds."
-status: draft
+status: published
 published_at: "2026-09-24T11:00:00Z"
 scheduled_at: "2026-09-24T11:00:00Z"
 author: "James Mitchell"

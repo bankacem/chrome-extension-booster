@@ -15,7 +15,7 @@ keywords:
   - auto cite chrome extension
   - reference manager browser extension
 meta_description: "Save hours of research time with top Chrome extensions for automated citation and bibliography management across academic sources."
-status: draft
+status: published
 published_at: "2026-09-06T11:00:00Z"
 scheduled_at: "2026-09-06T11:00:00Z"
 author: "James Mitchell"

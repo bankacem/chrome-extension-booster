@@ -14,7 +14,7 @@ keywords:
   - reduce screen glare chrome
   - night mode browsing extension
 meta_description: "Protect your vision with the best Chrome extensions for reducing eye strain through blue light filters, dark mode, and brightness controls."
-status: draft
+status: published
 published_at: "2026-09-03T11:00:00Z"
 scheduled_at: "2026-09-03T11:00:00Z"
 author: "James Mitchell"
