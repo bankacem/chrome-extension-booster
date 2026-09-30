@@ -14,7 +14,7 @@ keywords:
   - automatic meeting transcription chrome
   - ai meeting summary extension
 meta_description: "Discover the best Chrome extensions for meeting notes in 2026. Compare AI transcription tools, auto-summary features, and integrations for Google Meet and Zoom."
-status: draft
+status: published
 published_at: "2026-09-02T11:00:00Z"
 scheduled_at: "2026-09-02T11:00:00Z"
 author: "James Mitchell"

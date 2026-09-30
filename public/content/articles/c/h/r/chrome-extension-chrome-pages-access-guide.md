@@ -20,7 +20,7 @@ keywords:
   - extension cannot access chrome settings
   - chrome devtools protocol extension
 meta_description: "Learn why Chrome extensions cannot access chrome:// pages, what alternatives exist, and how developers work around these security restrictions."
-status: draft
+status: published
 published_at: "2026-09-22T11:00:00Z"
 scheduled_at: "2026-09-22T11:00:00Z"
 author: "James Mitchell"

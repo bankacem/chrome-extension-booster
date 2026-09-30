@@ -20,7 +20,7 @@ keywords:
   - chrome extension copy paste
   - document.execCommand clipboard
 meta_description: "Master Chrome extension clipboard access: understand permissions, user gesture requirements, and secure implementation patterns for Manifest V3."
-status: draft
+status: published
 published_at: "2026-09-23T11:00:00Z"
 scheduled_at: "2026-09-23T11:00:00Z"
 author: "James Mitchell"

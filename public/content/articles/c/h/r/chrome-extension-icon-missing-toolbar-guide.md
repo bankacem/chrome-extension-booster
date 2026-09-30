@@ -12,8 +12,8 @@ keywords:
   - chrome extension icon disappeared
   - how to pin chrome extension to toolbar
   - chrome extension not showing in toolbar
-meta_description: "Chrome extension icon missing from toolbar? Learn how to find hidden extensions via the puzzle piece menu, pin them permanently, and troubleshoot deeper icon display issues."
-status: draft
+meta_description: "Find and restore missing Chrome extension icons in your toolbar using the puzzle piece menu and learn to prevent future icon disappearances."
+status: published
 published_at: "2026-09-10T11:00:00Z"
 scheduled_at: "2026-09-10T11:00:00Z"
 author: "James Mitchell"

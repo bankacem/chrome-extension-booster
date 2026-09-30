@@ -13,7 +13,7 @@ keywords:
   - extension stuck in review
   - chrome extension review process
 meta_description: "Stuck in Chrome Web Store pending review? Learn what triggers extended reviews, how to self-audit your extension, and steps to speed up approval."
-status: draft
+status: published
 published_at: "2026-09-15T11:00:00Z"
 scheduled_at: "2026-09-15T11:00:00Z"
 author: "James Mitchell"

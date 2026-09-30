@@ -13,7 +13,7 @@ keywords:
   - extension version chrome web store
   - chrome extension version number
 meta_description: "Learn how to check a Chrome extension version and update status using built-in methods, the Web Store, and developer APIs for complete version visibility."
-status: draft
+status: published
 published_at: "2026-09-25T11:00:00Z"
 scheduled_at: "2026-09-25T11:00:00Z"
 author: "James Mitchell"
