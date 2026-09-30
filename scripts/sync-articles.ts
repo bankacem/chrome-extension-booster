@@ -59,6 +59,7 @@ async function rebuildIndex() {
   console.log(`Found ${allFiles.length} files in articles directory.`);
 
   const idMap = new Map<string, ArticleIndexItem>();
+  const parseErrors: string[] = [];
   let publishedOnDiskCount = 0;
 
   for (const filePath of allFiles) {
@@ -143,8 +144,20 @@ async function rebuildIndex() {
         idMap.set(id, newItem);
       }
     } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e);
+      parseErrors.push(`${filePath}: ${msg.split('\n')[0]}`);
       console.error(`[Index] Error processing ${filePath}:`, e);
     }
+  }
+
+  // LOUD FAILURE: never write an index that silently omits unparseable articles.
+  if (parseErrors.length > 0) {
+    console.error(`\n[Index] FATAL: ${parseErrors.length} article file(s) failed to parse and would be silently dropped from the index/sitemap:`);
+    for (const err of parseErrors) {
+      console.error(`  - ${err}`);
+    }
+    console.error('[Index] Refusing to write an incomplete index. Fix the YAML frontmatter of the file(s) above, then re-run.');
+    process.exit(1);
   }
 
   // Deduplicate by slug — keep newest
