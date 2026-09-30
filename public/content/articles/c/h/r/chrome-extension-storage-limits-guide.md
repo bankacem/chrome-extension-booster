@@ -12,7 +12,7 @@ keywords:
   - chrome extension storage quota
   - chrome.storage.local limit
   - unlimitedStorage permission
-meta_description: "Understand Chrome extension storage limits for local, sync, and session storage. Learn exact quotas, the unlimitedStorage permission, and efficient data management strategies."
+meta_description: "Understand Chrome extension storage limits for local, sync, and session storage. Learn exact quotas, the unlimitedStorage permission, and efficient data"
 status: draft
 published_at: "2026-09-14T11:00:00Z"
 scheduled_at: "2026-09-14T11:00:00Z"

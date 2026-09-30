@@ -12,7 +12,7 @@ keywords:
   - extension popup blank
   - chrome extension click no response
   - fix extension popup not loading
-meta_description: "Chrome extension popup not opening when clicked? Diagnose JavaScript errors, Manifest V3 issues, corrupted profiles, and toolbar conflicts with this step-by-step guide."
+meta_description: "Diagnose and fix Chrome extension popup issues with step-by-step solutions for JavaScript errors, Manifest V3 problems, and profile conflicts."
 status: draft
 published_at: "2026-09-09T11:00:00Z"
 scheduled_at: "2026-09-09T11:00:00Z"

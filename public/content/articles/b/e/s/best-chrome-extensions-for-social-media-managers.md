@@ -13,7 +13,7 @@ keywords:
   - social media scheduler extension
   - social media analytics tools chrome
   - content creation extensions for marketing
-meta_description: "Discover the best Chrome extensions for social media managers: post scheduling, analytics dashboards, content creation, and workflow tools for managing multiple platforms efficiently."
+meta_description: "Boost your social media workflow with top Chrome extensions for scheduling, analytics, and content creation across multiple platforms."
 status: draft
 published_at: "2026-08-31T11:00:00Z"
 scheduled_at: "2026-08-31T11:00:00Z"

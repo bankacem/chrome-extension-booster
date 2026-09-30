@@ -12,7 +12,7 @@ keywords:
   - chrome.userScripts.register
   - dynamic user scripts mv3
   - user scripts vs content scripts
-meta_description: "Master the Chrome User Scripts API in Manifest V3. Learn how to register, manage, and safely use dynamic user scripts with proper permissions and security practices."
+meta_description: "Master the Chrome User Scripts API in Manifest V3. Learn how to register, manage, and safely use dynamic user scripts with proper permissions and security"
 status: draft
 published_at: "2026-09-18T11:00:00Z"
 scheduled_at: "2026-09-18T11:00:00Z"

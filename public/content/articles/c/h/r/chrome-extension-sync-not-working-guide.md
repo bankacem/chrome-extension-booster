@@ -12,7 +12,7 @@ keywords:
   - chrome extensions not syncing between devices
   - how to fix chrome extension sync
   - chrome sync extensions disabled
-meta_description: "Chrome extensions not syncing across devices? Learn the exact checks for account state, sync toggles, policies, and safe recovery methods to restore synchronization."
+meta_description: "Fix Chrome extension sync issues with these exact checks for account state, sync toggles, policies, and safe recovery methods to restore synchronization."
 status: draft
 published_at: "2026-09-08T11:00:00Z"
 scheduled_at: "2026-09-08T11:00:00Z"

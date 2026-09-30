@@ -12,7 +12,7 @@ keywords:
   - mv3 csp violations
   - content security policy extension error
   - unsafe eval chrome extension
-meta_description: "Fix Chrome extension Content Security Policy errors in Manifest V3. Learn about CSP directives, common violations, and step-by-step fixes for unsafe-eval, remote scripts, and more."
+meta_description: "Fix Chrome extension Content Security Policy errors in Manifest V3. Learn about CSP directives, common violations, and step-by-step fixes for unsafe-eval"
 status: draft
 published_at: "2026-09-19T11:00:00Z"
 scheduled_at: "2026-09-19T11:00:00Z"
