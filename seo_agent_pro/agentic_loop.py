@@ -596,6 +596,20 @@ CLAIM_PATTERNS: list[tuple[str, re.Pattern]] = [
 CLAIM_BUDGET = 14          # cap per article
 FACTSEARCH_BUDGET = 6      # max fresh searches for uncovered claims
 
+_QUERY_STOP = re.compile(
+    r"\b(?:you|must|need|have|the|and|for|with|that|this|are|your|can|will|from|"
+    r"typically|handled|among|available|professionally|clearly|patient|smooth)\b", re.I)
+
+
+def claim_query(claim: str, topic: str) -> str:
+    """Turn a claim string into a usable search query: keep the claim's
+    distinctive tokens and anchor them with the article topic so terse claims
+    like '5 business days' or 'you must' become answerable queries."""
+    tokens = [t for t in _QUERY_STOP.sub(" ", claim).split() if len(t) > 2]
+    topic_tokens = [t for t in topic.split() if len(t) > 2][:5]
+    q = " ".join(dict.fromkeys(topic_tokens + tokens))
+    return q[:160]
+
 
 def extract_claims(body: str) -> list[dict]:
     """Deterministic claim extraction — numbers, dates, policy names, process claims."""
@@ -619,15 +633,17 @@ def extract_claims(body: str) -> list[dict]:
     return out[:CLAIM_BUDGET]
 
 
-FACTCHECK_SYSTEM = """You are a strict claim verifier. You get CLAIMS from an article and
-SEARCH RESULT ROWS (title/host/url/snippet). For EACH claim return a verdict:
+FACTCHECK_SYSTEM = """You are a strict claim verifier. You get indexed CLAIMS from an
+article and SEARCH RESULT ROWS (title/host/url/snippet). For EACH claim index return
+a verdict:
 - "supported": a row's snippet/title explicitly backs the claim → set source_url to that
   exact row URL and quote the supporting words in source_quote (<= 25 words).
 - "refuted": a row explicitly contradicts it → source_url + what it says.
 - "uncertain": no row actually verifies it. Do NOT guess, do NOT invent URLs.
-Return STRICT JSON: {"verdicts": [{"claim": "<the claim text>", "verdict":
+Return STRICT JSON: {"verdicts": [{"i": <claim index>, "verdict":
 "supported|refuted|uncertain", "source_url": "exact url from rows or empty",
-"source_quote": "<=25 words or empty", "note": "<=15 words"}]}"""
+"source_quote": "<=25 words or empty", "note": "<=15 words"}]}
+One verdict object per claim index, same order, no extra keys."""
 
 
 def _rows_subset(rows: list[dict], limit: int = 10) -> str:
@@ -636,36 +652,54 @@ def _rows_subset(rows: list[dict], limit: int = 10) -> str:
                        for r in rows][:limit], ensure_ascii=False)
 
 
+def _norm_url(u: str) -> str:
+    """Lenient URL identity: strip trailing slash and tracking params so an
+    exact-citation check does not fail on cosmetic differences."""
+    u = (u or "").split("#", 1)[0]
+    u = u.split("?", 1)[0] if "utm_" in u else u
+    return u.rstrip("/")
+
+
 def _adjudicate(squad, claims: list[dict], rows: list[dict], label: str) -> dict:
-    """One verification call for a batch of claims against a set of rows."""
-    if not claims:
-        return {}
-    raw = squad.llm(
-        squad.system_prompt(squad.pick("fact-checker")) + "\n\n" + FACTCHECK_SYSTEM,
-        "CLAIMS:\n" + json.dumps([c["claim"] for c in claims], ensure_ascii=False)
-        + "\n\nSEARCH RESULT ROWS:\n" + _rows_subset(rows),
-        stage="heavy", max_tokens=1800)
-    parsed = parse_json(raw) or {}
-    out = {}
-    allowed = {r.get("url", "") for r in rows}
-    for v in parsed.get("verdicts", []):
-        c = str(v.get("claim", "")).lower()
-        url = str(v.get("source_url", "")).strip()
-        verdict = str(v.get("verdict", "uncertain"))
-        # CODE-ENFORCED: a "supported/refuted" verdict without a REAL source URL
-        # from the supplied rows is downgraded to uncertain. The verifier cannot
-        # upgrade a claim by inventing a citation.
-        if verdict in ("supported", "refuted") and url not in allowed:
-            verdict, url = "uncertain", ""
-        out[c] = {"claim": next((x["claim"] for x in claims if x["claim"].lower() == c), v.get("claim")),
-                  "verdict": verdict, "source_url": url,
-                  "source_quote": str(v.get("source_quote", ""))[:160],
-                  "note": str(v.get("note", ""))[:120], "stage": label}
+    """Verification call(s) for a batch of claims against a set of rows.
+    Claims are sent INDEXED and matched back by index — matching by echoed
+    claim text broke when the verifier truncated long claim strings."""
+    out: dict[str, dict] = {}
+    allowed = {_norm_url(r.get("url", "")) for r in rows if r.get("url")}
+    for chunk_start in range(0, len(claims), 8):
+        chunk = claims[chunk_start:chunk_start + 8]
+        raw = squad.llm(
+            squad.system_prompt(squad.pick("fact-checker")) + "\n\n" + FACTCHECK_SYSTEM,
+            "CLAIMS:\n" + json.dumps([{"i": i + 1, "claim": c["claim"]}
+                                      for i, c in enumerate(chunk)], ensure_ascii=False)
+            + "\n\nSEARCH RESULT ROWS:\n" + _rows_subset(rows),
+            stage="heavy", max_tokens=2400)
+        parsed = parse_json(raw) or {}
+        verdicts = parsed.get("verdicts", []) if isinstance(parsed, dict) else []
+        for pos, v in enumerate(verdicts):
+            # primary match by index; positional fallback for a verifier that
+            # echoes objects without "i"
+            idx = v.get("i") if isinstance(v.get("i"), int) and 1 <= v["i"] <= len(chunk) \
+                else pos + 1
+            if idx - 1 >= len(chunk):
+                continue
+            c = chunk[idx - 1]
+            url = str(v.get("source_url", "")).strip()
+            verdict = str(v.get("verdict", "uncertain"))
+            # CODE-ENFORCED: a "supported/refuted" verdict without a REAL source
+            # URL from the supplied rows is downgraded to uncertain. The
+            # verifier cannot upgrade a claim by inventing a citation.
+            if verdict in ("supported", "refuted") and _norm_url(url) not in allowed:
+                verdict, url = "uncertain", ""
+            out[c["claim"].lower()] = {
+                "claim": c["claim"], "verdict": verdict, "source_url": url,
+                "source_quote": str(v.get("source_quote", ""))[:160],
+                "note": str(v.get("note", ""))[:120], "stage": label}
     return out
 
 
 def run_fact_check(squad, trace: Trace, tools: Toolbelt, body: str,
-                   research_rows: list[dict] | None = None) -> dict:
+                   research_rows: list[dict] | None = None, topic: str = "") -> dict:
     """Extract factual/policy claims, verify each against search-result rows,
     downgrade anything without a real source to 'uncertain'. Saves
     fact_check_claims.json in the run dir."""
@@ -688,17 +722,22 @@ def run_fact_check(squad, trace: Trace, tools: Toolbelt, body: str,
         if searches >= FACTSEARCH_BUDGET:
             break
         searches += 1
-        got = tools.web_search(c["claim"][:180], num=6)
+        got = tools.web_search(claim_query(c["claim"], topic or c.get("context", "")), num=6)
         fresh_rows[c["claim"].lower()] = got
-        trace.add(agent["id"], "factcheck", action="web_search", query=c["claim"][:120],
-                  observation=f"{len(got)} rows")
-    batch: list[dict] = []
-    batch_rows: list[dict] = []
-    for c in unresolved[:FACTSEARCH_BUDGET * 2]:
-        if c["claim"].lower() in fresh_rows and fresh_rows[c["claim"].lower()]:
-            batch.append(c)
-            batch_rows.extend(fresh_rows[c["claim"].lower()])
-    if batch and batch_rows:
+        trace.add(agent["id"], "factcheck", action="web_search",
+                  query=claim_query(c["claim"], topic)[:120], observation=f"{len(got)} rows")
+    # adjudicate in groups of 3 claims; verification rows = the UNION of those
+    # claims' own fresh rows (10-row cap) so per-claim sources survive batching
+    unresolved_with_rows = [c for c in unresolved if fresh_rows.get(c["claim"].lower())]
+    for g in range(0, len(unresolved_with_rows), 3):
+        batch = unresolved_with_rows[g:g + 3]
+        batch_rows: list[dict] = []
+        seen: set[str] = set()
+        for c in batch:
+            for r in fresh_rows[c["claim"].lower()]:
+                if r.get("url") and r["url"] not in seen:
+                    seen.add(r["url"])
+                    batch_rows.append(r)
         results.update(_adjudicate(squad, batch, batch_rows, "fresh-search"))
 
     final = []

@@ -402,7 +402,7 @@ RULES: Output ONLY markdown body (no H1, no frontmatter); concrete steps; never 
     try:
         fc_rows = list(agentic_result.get("research", {}).get("rows", [])) if args.engine == "agentic" else list(intel)
         fc = agentic_loop.run_fact_check(squad, _TraceAdapter(run_dir, log),
-                                         _ToolAdapter(run_dir), body, fc_rows)
+                                         _ToolAdapter(run_dir), body, fc_rows, topic=title)
         fact_check_claims = fc["summary"]
         log("AG000", "orchestrator",
             f"claim fact-check: {fact_check_claims['supported']} supported / "
