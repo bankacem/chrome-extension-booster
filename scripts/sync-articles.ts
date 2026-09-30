@@ -60,6 +60,7 @@ async function rebuildIndex() {
 
   const idMap = new Map<string, ArticleIndexItem>();
   let publishedOnDiskCount = 0;
+  const parseErrors: string[] = [];
 
   for (const filePath of allFiles) {
     try {
@@ -144,7 +145,18 @@ async function rebuildIndex() {
       }
     } catch (e) {
       console.error(`[Index] Error processing ${filePath}:`, e);
+      parseErrors.push(`${filePath}: ${e instanceof Error ? e.message : String(e)}`);
     }
+  }
+
+  // Fail loudly: a broken frontmatter silently drops articles from the index
+  // and sitemap (ref: PR #436 — 2 published articles were invisible for months).
+  if (parseErrors.length > 0) {
+    console.error(`[Index] FATAL: ${parseErrors.length} file(s) failed to parse and would be silently dropped:`);
+    for (const err of parseErrors) {
+      console.error(`  - ${err}`);
+    }
+    process.exit(1);
   }
 
   // Deduplicate by slug — keep newest
