@@ -89,7 +89,10 @@ jobs:
                   raise SystemExit(f'release_slot is ambiguous or unknown ({manual_slot}); use release_slug')
               selected = matches[0]
           else:
-              candidates = []
+              # Entries that are enabled, due within their late window, and whose
+              # article file exists. Whether the article is still a draft is
+              # decided separately so anomalies can be reported loudly.
+              due_expected = []
               for e in all_entries:
                   if e.get('release_enabled') is False or e.get('publish_enabled') is False:
                       continue
@@ -99,16 +102,39 @@ jobs:
                   article_path = Path(e.get('article_path') or f"public/content/articles/{e['slug'][0]}/{e['slug'][1]}/{e['slug'][2]}/{e['slug']}.md")
                   if not article_path.exists():
                       continue
-                  article_text = article_path.read_text()
-                  if not re.search(r'^status:\\s*draft\\s*$', article_text, re.M):
-                      continue
                   delta = (now - due_at).total_seconds()
                   if 0 <= delta <= e['_late_window_seconds']:
-                      candidates.append((due_at, e))
+                      due_expected.append((due_at, e))
+              candidates = []
+              already_published = []
+              abnormal_status = []
+              for due_at, e in due_expected:
+                  article_path = Path(e.get('article_path') or f"public/content/articles/{e['slug'][0]}/{e['slug'][1]}/{e['slug'][2]}/{e['slug']}.md")
+                  article_text = article_path.read_text()
+                  # NOTE: single backslash \s — a double backslash here (\\s) would
+                  # silently match nothing and disable all automatic releases
+                  # (regression that killed releases between Aug 23 and its fix).
+                  if not re.search(r'^status:\s*draft\s*$', article_text, re.M):
+                      status_match = re.search(r'^status:\s*(\S+)\s*$', article_text, re.M)
+                      status_value = status_match.group(1).lower() if status_match else '(missing)'
+                      if status_value == 'published':
+                          already_published.append((due_at, e))
+                      else:
+                          abnormal_status.append((e.get('slug'), status_value))
+                      continue
+                  candidates.append((due_at, e))
               if candidates:
                   selected = sorted(candidates, key=lambda x: x[0])[0][1]
+              elif abnormal_status:
+                  # Due entries that are neither draft nor published: a data or
+                  # regex regression. Fail loudly instead of the silent
+                  # 'No due release' that masked the Aug 23 - Sep 30 outage.
+                  print(f'FAILING: {len(abnormal_status)} due scheduled entr(y/ies) have an unexpected frontmatter status:')
+                  for blocked_slug, status_value in abnormal_status:
+                      print(f'  - {blocked_slug}: status={status_value} (expected draft or published)')
+                  raise SystemExit(1)
               else:
-                  print(f'No due release at {now.isoformat()}; exiting idempotently.')
+                  print(f'No due release at {now.isoformat()}; exiting idempotently. (already released within window: {len(already_published)})')
                   raise SystemExit(0)
 
           slug = selected['slug']
