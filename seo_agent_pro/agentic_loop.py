@@ -151,7 +151,13 @@ def parse_json(text: str) -> dict | list | None:
 def strip_md(text: str) -> str:
     text = re.sub(r"^```(?:markdown)?\s*\n?", "", text)
     text = re.sub(r"\n?```\s*$", "", text)
-    return re.sub(r"^#\s+.+\n", "", text)
+    text = re.sub(r"^#\s+.+\n", "", text)
+    # prompt-echo guard: models occasionally echo the instruction label that
+    # preceded the body ("ARTICLE:", "CURRENT DRAFT:", "FULL ARTICLE:") —
+    # a real leak observed in link-injection output (2026-10-01).
+    text = re.sub(r"^\s*(?:ARTICLE|CURRENT DRAFT|FULL ARTICLE|REVISED ARTICLE)\s*:\s*\n?", "",
+                  text)
+    return text
 
 
 def deterministic_meta_fallback(topic: str, meta: str, wmin: int) -> str:
