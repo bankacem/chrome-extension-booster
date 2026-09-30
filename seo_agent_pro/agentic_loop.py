@@ -563,3 +563,157 @@ def run_agentic(squad, log, run_dir: Path, topic: str, keywords: list[str],
         run_reflector(squad, trace, run_dir, story)
     return {"body": body, "trace": trace, "research": research, "plan": plan,
             "rubric_history": rubric_history, "gates": final_gates, "qa_pass": ok}
+
+
+# ────────────────────────────────────────────────────────────────
+#  Phase 6 — Claim-level fact check: extract → verify against search
+#  results → "uncertain" whenever no source exists (code-enforced).
+# ────────────────────────────────────────────────────────────────
+
+_MONTHS = ("January|February|March|April|May|June|July|August|September|"
+           "October|November|December")
+
+# Deterministic claim extraction patterns (no LLM tokens spent here).
+CLAIM_PATTERNS: list[tuple[str, re.Pattern]] = [
+    ("percentage", re.compile(r"\b\d+(?:\.\d+)?\s?%(?:\s*(?:of|off)\b[^.!?\n]{0,80})?", re.I)),
+    ("date", re.compile(rf"\b(?:{_MONTHS})\s+20\d{{2}}\b")),
+    ("year_ref", re.compile(r"\b(?:in|since|by|as of|until)\s+20[12]\d\b", re.I)),
+    ("version", re.compile(r"\b(?:Chrome(?:ium)?|Manifest)\s+V?\d+(?:\.\d+)+\b", re.I)),
+    ("policy_name", re.compile(
+        r"\b(?:Chrome Web Store [A-Za-z ]{0,40}?(?:policies?|policy|program|terms|requirements)|"
+        r"Developer (?:Program )?Policies|Developer Terms of Service|Best Practices|"
+        r"Manifest V3|Manifest V2|privacy policy|misleading or unexpected behavior|"
+        r"minimal functionality)\b", re.I)),
+    ("numeric_claim", re.compile(
+        r"\b\d+(?:\.\d+)?\s?(?:days?|business days?|hours?|minutes?|weeks?|months?|"
+        r"reviews?|extensions?|users?|characters?|MB|GB|requests?|attempts?)\b"
+        r"(?:\s+(?:to|for|per|before|after|within|or)\b[^.!?\n]{0,60})?", re.I)),
+    ("process_claim", re.compile(
+        r"\b(?:you (?:must|need to|have to|are required to)|Google (?:requires|may|will)|"
+        r"the (?:review|appeal) (?:process|team) [^.!?\n]{5,90})\b", re.I)),
+]
+
+CLAIM_BUDGET = 14          # cap per article
+FACTSEARCH_BUDGET = 6      # max fresh searches for uncovered claims
+
+
+def extract_claims(body: str) -> list[dict]:
+    """Deterministic claim extraction — numbers, dates, policy names, process claims."""
+    claims: dict[str, dict] = {}
+    for ctype, rx in CLAIM_PATTERNS:
+        for m in rx.finditer(body):
+            text = " ".join(m.group(0).split())
+            if len(text) < 4:
+                continue
+            key = text.lower()
+            if key not in claims:
+                claims[key] = {"claim": text, "type": ctype}
+            # keep sentence context once per claim (helps the verifier)
+            if "context" not in claims[key]:
+                s = body.rfind(".", 0, m.start())
+                e = body.find(".", m.end())
+                claims[key]["context"] = " ".join(
+                    body[s + 1 if s >= 0 else 0:e + 1 if e > 0 else m.end()].split())[:220]
+    out = sorted(claims.values(), key=lambda c: (c["type"] != "policy_name",
+                                                 c["type"] != "numeric_claim", c["claim"]))
+    return out[:CLAIM_BUDGET]
+
+
+FACTCHECK_SYSTEM = """You are a strict claim verifier. You get CLAIMS from an article and
+SEARCH RESULT ROWS (title/host/url/snippet). For EACH claim return a verdict:
+- "supported": a row's snippet/title explicitly backs the claim → set source_url to that
+  exact row URL and quote the supporting words in source_quote (<= 25 words).
+- "refuted": a row explicitly contradicts it → source_url + what it says.
+- "uncertain": no row actually verifies it. Do NOT guess, do NOT invent URLs.
+Return STRICT JSON: {"verdicts": [{"claim": "<the claim text>", "verdict":
+"supported|refuted|uncertain", "source_url": "exact url from rows or empty",
+"source_quote": "<=25 words or empty", "note": "<=15 words"}]}"""
+
+
+def _rows_subset(rows: list[dict], limit: int = 10) -> str:
+    return json.dumps([{"title": r.get("title", ""), "host": r.get("host", ""),
+                        "url": r.get("url", ""), "snippet": r.get("snippet", "")}
+                       for r in rows][:limit], ensure_ascii=False)
+
+
+def _adjudicate(squad, claims: list[dict], rows: list[dict], label: str) -> dict:
+    """One verification call for a batch of claims against a set of rows."""
+    if not claims:
+        return {}
+    raw = squad.llm(
+        squad.system_prompt(squad.pick("fact-checker")) + "\n\n" + FACTCHECK_SYSTEM,
+        "CLAIMS:\n" + json.dumps([c["claim"] for c in claims], ensure_ascii=False)
+        + "\n\nSEARCH RESULT ROWS:\n" + _rows_subset(rows),
+        stage="heavy", max_tokens=1800)
+    parsed = parse_json(raw) or {}
+    out = {}
+    allowed = {r.get("url", "") for r in rows}
+    for v in parsed.get("verdicts", []):
+        c = str(v.get("claim", "")).lower()
+        url = str(v.get("source_url", "")).strip()
+        verdict = str(v.get("verdict", "uncertain"))
+        # CODE-ENFORCED: a "supported/refuted" verdict without a REAL source URL
+        # from the supplied rows is downgraded to uncertain. The verifier cannot
+        # upgrade a claim by inventing a citation.
+        if verdict in ("supported", "refuted") and url not in allowed:
+            verdict, url = "uncertain", ""
+        out[c] = {"claim": next((x["claim"] for x in claims if x["claim"].lower() == c), v.get("claim")),
+                  "verdict": verdict, "source_url": url,
+                  "source_quote": str(v.get("source_quote", ""))[:160],
+                  "note": str(v.get("note", ""))[:120], "stage": label}
+    return out
+
+
+def run_fact_check(squad, trace: Trace, tools: Toolbelt, body: str,
+                   research_rows: list[dict] | None = None) -> dict:
+    """Extract factual/policy claims, verify each against search-result rows,
+    downgrade anything without a real source to 'uncertain'. Saves
+    fact_check_claims.json in the run dir."""
+    agent = squad.pick("fact-checker")
+    claims = extract_claims(body)
+    rows = list(research_rows or [])
+    trace.add(agent["id"], "factcheck", extracted=len(claims), rows=len(rows))
+    results: dict[str, dict] = {}
+
+    # Pass 1 — verify against rows we already collected during research
+    if claims and rows:
+        results.update(_adjudicate(squad, claims, rows, "research-rows"))
+
+    # Pass 2 — targeted fresh searches ONLY for claims still unresolved
+    unresolved = [c for c in claims if c["claim"].lower() not in results
+                  or results[c["claim"].lower()]["verdict"] == "uncertain"]
+    searches = 0
+    fresh_rows: dict[str, list[dict]] = {}
+    for c in unresolved:
+        if searches >= FACTSEARCH_BUDGET:
+            break
+        searches += 1
+        got = tools.web_search(c["claim"][:180], num=6)
+        fresh_rows[c["claim"].lower()] = got
+        trace.add(agent["id"], "factcheck", action="web_search", query=c["claim"][:120],
+                  observation=f"{len(got)} rows")
+    batch: list[dict] = []
+    batch_rows: list[dict] = []
+    for c in unresolved[:FACTSEARCH_BUDGET * 2]:
+        if c["claim"].lower() in fresh_rows and fresh_rows[c["claim"].lower()]:
+            batch.append(c)
+            batch_rows.extend(fresh_rows[c["claim"].lower()])
+    if batch and batch_rows:
+        results.update(_adjudicate(squad, batch, batch_rows, "fresh-search"))
+
+    final = []
+    for c in claims:
+        r = results.get(c["claim"].lower(), {})
+        final.append({"claim": c["claim"], "type": c["type"], "context": c.get("context", ""),
+                      "verdict": r.get("verdict", "uncertain"), "source_url": r.get("source_url", ""),
+                      "source_quote": r.get("source_quote", ""), "note": r.get("note", "")})
+    summary = {"total": len(final),
+               "supported": sum(1 for f in final if f["verdict"] == "supported"),
+               "refuted": sum(1 for f in final if f["verdict"] == "refuted"),
+               "uncertain": sum(1 for f in final if f["verdict"] == "uncertain"),
+               "fresh_searches": searches}
+    (tools.run_dir / "fact_check_claims.json").write_text(
+        json.dumps({"summary": summary, "claims": final}, indent=1, ensure_ascii=False),
+        encoding="utf-8")
+    trace.add(agent["id"], "factcheck", result=summary)
+    return {"summary": summary, "claims": final}

@@ -70,6 +70,27 @@ class Log:
         (self.run_dir / "agent_log.txt").write_text("\n".join(self.lines), encoding="utf-8")
 
 
+class _TraceAdapter:
+    """adapts agentic_loop.Trace for pro_run call sites: appends to the same
+    trace.jsonl AND mirrors each event into pro_run's console Log."""
+
+    def __init__(self, run_dir: Path, log: "Log | None" = None):
+        self._t = agentic_loop.Trace(run_dir)
+        self._log = log
+
+    def add(self, agent: str, phase: str, **kw):
+        self._t.add(agent, phase, **kw)
+        if self._log:
+            self._log(agent, phase, json.dumps(kw, ensure_ascii=False)[:160])
+
+
+class _ToolAdapter(agentic_loop.Toolbelt):
+    """Toolbelt pre-bound to a run_dir with its own Trace (same trace.jsonl)."""
+
+    def __init__(self, run_dir: Path):
+        super().__init__(_TraceAdapter(run_dir), run_dir)
+
+
 # ────────────────────────────────────────────────────────────────
 #  Stage 1: serp-analyst — REAL web search for competitor intel
 # ────────────────────────────────────────────────────────────────
@@ -375,6 +396,22 @@ RULES: Output ONLY markdown body (no H1, no frontmatter); concrete steps; never 
     # Stage 6: fact-checker advisories
     notes = fact_check(squad, log, body)
 
+    # Stage 6c: claim-level fact check (agentic_loop) — extract every numeric/
+    # date/policy/process claim, verify each against search-result rows, mark
+    # anything without a real source as "uncertain" (code-enforced downgrade).
+    try:
+        fc_rows = list(agentic_result.get("research", {}).get("rows", [])) if args.engine == "agentic" else list(intel)
+        fc = agentic_loop.run_fact_check(squad, _TraceAdapter(run_dir, log),
+                                         _ToolAdapter(run_dir), body, fc_rows)
+        fact_check_claims = fc["summary"]
+        log("AG000", "orchestrator",
+            f"claim fact-check: {fact_check_claims['supported']} supported / "
+            f"{fact_check_claims['uncertain']} uncertain / {fact_check_claims['refuted']} refuted "
+            f"({fact_check_claims['fresh_searches']} fresh searches)")
+    except Exception as e:  # noqa: BLE001 — fact check must never kill a run
+        log("AG000", "orchestrator", f"claim fact-check skipped ({str(e)[:60]})")
+        fact_check_claims = {"error": str(e)[:120]}
+
     # Stage 6b: link-strategist injection — production-style: insert the
     # selected internal links naturally, then damage-guard the result
     # (nested links / links in headings / split words). Any damage → roll
@@ -442,7 +479,7 @@ RULES: Output ONLY markdown body (no H1, no frontmatter); concrete steps; never 
         "engine": args.engine,
         "words": wc(body), "gates": {"wmin": args.wmin, "wmax": args.wmax},
         "qa_pass": ok, "intel_rows": len(intel), "internal_links": len(links),
-        "fact_check_notes": notes, "meta": meta,
+        "fact_check_notes": notes, "fact_check_claims": fact_check_claims, "meta": meta,
     }
     if args.engine == "agentic":
         report["rubric_history"] = rubric_history
