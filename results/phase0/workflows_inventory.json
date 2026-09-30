@@ -1,0 +1,301 @@
+{
+  "generated_at": "2026-09-30T07:03:25Z",
+  "scheduled_workflows": {
+    "Daily Article Generation": {
+      "file": ".github/workflows/daily-article.yml",
+      "cron": "0 7 * * *",
+      "state": "active",
+      "last5": [
+        {
+          "run": 40,
+          "conclusion": "success",
+          "at": "2026-09-29T22:23",
+          "branch": "main"
+        },
+        {
+          "run": 39,
+          "conclusion": "failure",
+          "at": "2026-09-29T22:19",
+          "branch": "main"
+        },
+        {
+          "run": 38,
+          "conclusion": "success",
+          "at": "2026-08-22T08:19",
+          "branch": "main"
+        },
+        {
+          "run": 37,
+          "conclusion": "success",
+          "at": "2026-08-21T08:30",
+          "branch": "main"
+        },
+        {
+          "run": 36,
+          "conclusion": "success",
+          "at": "2026-08-20T08:28",
+          "branch": "main"
+        }
+      ]
+    },
+    "Daily Sitemap Indexing": {
+      "file": ".github/workflows/daily-indexing.yml",
+      "cron": "0 9 * * *",
+      "state": "active",
+      "last5": [
+        {
+          "run": 176,
+          "conclusion": "success",
+          "at": "2026-09-29T15:09",
+          "branch": "main"
+        },
+        {
+          "run": 175,
+          "conclusion": "success",
+          "at": "2026-09-28T17:04",
+          "branch": "main"
+        },
+        {
+          "run": 174,
+          "conclusion": "success",
+          "at": "2026-09-27T14:20",
+          "branch": "main"
+        },
+        {
+          "run": 173,
+          "conclusion": "success",
+          "at": "2026-09-26T13:24",
+          "branch": "main"
+        },
+        {
+          "run": 172,
+          "conclusion": "success",
+          "at": "2026-09-25T14:12",
+          "branch": "main"
+        }
+      ]
+    },
+    "SEO performance learning": {
+      "file": ".github/workflows/performance-learning.yml",
+      "cron": "17 3 * * 1",
+      "state": "active",
+      "last5": [
+        {
+          "run": 9,
+          "conclusion": "success",
+          "at": "2026-09-28T09:46",
+          "branch": "main"
+        },
+        {
+          "run": 8,
+          "conclusion": "success",
+          "at": "2026-09-21T08:56",
+          "branch": "main"
+        },
+        {
+          "run": 7,
+          "conclusion": "success",
+          "at": "2026-09-14T08:54",
+          "branch": "main"
+        },
+        {
+          "run": 6,
+          "conclusion": "success",
+          "at": "2026-09-07T08:17",
+          "branch": "main"
+        },
+        {
+          "run": 5,
+          "conclusion": "success",
+          "at": "2026-08-31T09:44",
+          "branch": "main"
+        }
+      ]
+    },
+    "Publish Articles Pipeline": {
+      "file": ".github/workflows/publish-pipeline.yml",
+      "cron": "0 * * * *",
+      "state": "active",
+      "last5": [
+        {
+          "run": 1743,
+          "conclusion": "success",
+          "at": "2026-09-30T03:28",
+          "branch": "main"
+        },
+        {
+          "run": 1742,
+          "conclusion": "success",
+          "at": "2026-09-29T23:20",
+          "branch": "main"
+        },
+        {
+          "run": 1741,
+          "conclusion": "success",
+          "at": "2026-09-29T22:31",
+          "branch": "main"
+        },
+        {
+          "run": 1740,
+          "conclusion": "success",
+          "at": "2026-09-29T19:03",
+          "branch": "main"
+        },
+        {
+          "run": 1739,
+          "conclusion": "success",
+          "at": "2026-09-29T13:39",
+          "branch": "main"
+        }
+      ]
+    },
+    "Release Batch 005 scheduled drafts": {
+      "file": ".github/workflows/release-batch-005-drafts.yml",
+      "cron": "*/15 * * * *",
+      "state": "disabled_manually",
+      "last5": [
+        {
+          "run": 112,
+          "conclusion": "success",
+          "at": "2026-08-28T01:12",
+          "branch": "main"
+        },
+        {
+          "run": 111,
+          "conclusion": "success",
+          "at": "2026-08-27T16:47",
+          "branch": "main"
+        },
+        {
+          "run": 110,
+          "conclusion": "success",
+          "at": "2026-08-27T05:33",
+          "branch": "main"
+        },
+        {
+          "run": 109,
+          "conclusion": "success",
+          "at": "2026-08-26T23:49",
+          "branch": "main"
+        },
+        {
+          "run": 108,
+          "conclusion": "success",
+          "at": "2026-08-26T20:19",
+          "branch": "main"
+        }
+      ]
+    },
+    "Release Batch 006 scheduled drafts": {
+      "file": ".github/workflows/release-batch-006-drafts.yml",
+      "cron": "*/15 * * * *",
+      "state": "disabled_manually",
+      "last5": [
+        {
+          "run": 78,
+          "conclusion": "success",
+          "at": "2026-08-28T04:19",
+          "branch": "main"
+        },
+        {
+          "run": 77,
+          "conclusion": "success",
+          "at": "2026-08-27T20:00",
+          "branch": "main"
+        },
+        {
+          "run": 76,
+          "conclusion": "success",
+          "at": "2026-08-27T09:44",
+          "branch": "main"
+        },
+        {
+          "run": 75,
+          "conclusion": "success",
+          "at": "2026-08-27T00:05",
+          "branch": "main"
+        },
+        {
+          "run": 74,
+          "conclusion": "success",
+          "at": "2026-08-26T20:34",
+          "branch": "main"
+        }
+      ]
+    },
+    "Release scheduled draft articles": {
+      "file": ".github/workflows/release-scheduled-drafts.yml",
+      "cron": "*/15 * * * *",
+      "state": "active",
+      "last5": [
+        {
+          "run": 327,
+          "conclusion": "success",
+          "at": "2026-09-30T02:14",
+          "branch": "main"
+        },
+        {
+          "run": 326,
+          "conclusion": "success",
+          "at": "2026-09-29T23:22",
+          "branch": "main"
+        },
+        {
+          "run": 325,
+          "conclusion": "success",
+          "at": "2026-09-29T19:53",
+          "branch": "main"
+        },
+        {
+          "run": 324,
+          "conclusion": "success",
+          "at": "2026-09-29T14:58",
+          "branch": "main"
+        },
+        {
+          "run": 323,
+          "conclusion": "success",
+          "at": "2026-09-29T08:27",
+          "branch": "main"
+        }
+      ]
+    },
+    "Scheduled publish smoke test": {
+      "file": ".github/workflows/scheduled-publish-smoke.yml",
+      "cron": "0 14 * * *",
+      "state": "active",
+      "last5": [
+        {
+          "run": 35,
+          "conclusion": "failure",
+          "at": "2026-09-29T18:58",
+          "branch": "main"
+        },
+        {
+          "run": 34,
+          "conclusion": "failure",
+          "at": "2026-09-28T20:18",
+          "branch": "main"
+        },
+        {
+          "run": 33,
+          "conclusion": "failure",
+          "at": "2026-09-27T17:58",
+          "branch": "main"
+        },
+        {
+          "run": 32,
+          "conclusion": "failure",
+          "at": "2026-09-26T17:27",
+          "branch": "main"
+        },
+        {
+          "run": 31,
+          "conclusion": "failure",
+          "at": "2026-09-25T18:07",
+          "branch": "main"
+        }
+      ]
+    }
+  }
+}
