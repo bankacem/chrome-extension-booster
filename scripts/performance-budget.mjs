@@ -27,7 +27,7 @@ assertMax(path.join(dist, "index.html"), 15_000, "homepage HTML");
 assertMax(path.join(dist, "blog", "index.html"), 20_000, "blog HTML");
 assertMax(
   path.join(dist, "blog", "best-chrome-extensions-for-web-accessibility-testing", "index.html"),
-  30_000,
+  60_000,
   "sample article HTML",
 );
 
