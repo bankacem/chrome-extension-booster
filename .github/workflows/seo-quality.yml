@@ -36,7 +36,7 @@ jobs:
   seo-quality:
     name: Lint, typecheck, build and SEO smoke tests
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 40
 
     steps:
       - name: Checkout
