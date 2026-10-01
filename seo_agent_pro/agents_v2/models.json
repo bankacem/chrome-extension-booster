@@ -4,7 +4,8 @@
     "SECURITY: no keys here, ever. The key lives ONLY in GitHub Secrets (CLEANAPIS) and enters via env CLEANAPIS_KEY inside Actions.",
     "PRICES: usd_per_1m_input prefilled from the owner-scraped CLEANAPIS_CATALOG (config.py, scraped Sep 2026). usd_per_1m_output is unknown -> null.",
     "price_confirmed_by_owner=false means: treat every USD number as UNCONFIRMED. Until the owner sets it true and fills output prices, cost is NOT estimated - the token counter is the only meter.",
-    "Candidate lists feed the model-fit-check workflow (PR ب2). The chosen 'model' per role is provisional until its results arrive."
+    "Candidate lists feed the model-fit-check workflow (PR ب2). The chosen 'model' per role is provisional until its results arrive.",
+    "Fit results from run 36932706713 (2026-10-01): all 12 candidates passed 10/10 on every item -> all eligible. Chosen per-role models are fit_verified=true. Prices remain UNCONFIRMED by owner: USD figures are input-price floors only."
   ],
   "provider": {
     "name": "cleanapis",
@@ -17,32 +18,58 @@
   "roles": {
     "ORCHESTRATOR": {
       "model": "claude-sonnet-5",
-      "candidates": ["claude-sonnet-5", "gpt-5.6-terra", "gemini-3.1-pro", "grok-4.6", "kimi-k3", "glm-5.3"],
+      "candidates": [
+        "claude-sonnet-5",
+        "gpt-5.6-terra",
+        "gemini-3.1-pro",
+        "grok-4.6",
+        "kimi-k3",
+        "glm-5.3"
+      ],
       "usd_per_1m_input": 3.3235,
       "usd_per_1m_output": null,
-      "price_confirmed_by_owner": false
+      "price_confirmed_by_owner": false,
+      "fit_verified": true
     },
     "WORKER": {
       "model": "deepseek-v4-pro-0813",
-      "candidates": ["deepseek-v4-pro-0813", "claude-sonnet-5", "glm-5.3", "deepseek-v4-pro-max", "qwen3.8-max"],
+      "candidates": [
+        "deepseek-v4-pro-0813",
+        "claude-sonnet-5",
+        "glm-5.3",
+        "deepseek-v4-pro-max",
+        "qwen3.8-max"
+      ],
       "usd_per_1m_input": 0.552,
       "usd_per_1m_output": null,
-      "price_confirmed_by_owner": false
+      "price_confirmed_by_owner": false,
+      "fit_verified": true
     },
     "CRITIC": {
       "model": "glm-5.3",
       "must_differ_from": "WORKER",
-      "candidates": ["glm-5.3", "gemini-3.1-pro", "gpt-5.6-terra", "kimi-k3"],
+      "candidates": [
+        "glm-5.3",
+        "gemini-3.1-pro",
+        "gpt-5.6-terra",
+        "kimi-k3"
+      ],
       "usd_per_1m_input": 1.357,
       "usd_per_1m_output": null,
-      "price_confirmed_by_owner": false
+      "price_confirmed_by_owner": false,
+      "fit_verified": true
     },
     "FAST": {
       "model": "gpt-5.6-luna",
-      "candidates": ["gpt-5.6-luna", "deepseek-v4-flash-0731", "gemma-2-2b"],
+      "candidates": [
+        "gpt-5.6-luna",
+        "deepseek-v4-flash-0731",
+        "gemma-2-2b"
+      ],
       "usd_per_1m_input": 0.3565,
       "usd_per_1m_output": null,
-      "price_confirmed_by_owner": false
+      "price_confirmed_by_owner": false,
+      "fit_verified": true
     }
   },
   "caps": {
@@ -64,5 +91,32 @@
     "claude-fable-5",
     "claude-fable-5.1",
     "claude-mythos-preview"
-  ]
+  ],
+  "fit_results": {
+    "workflow": "agents-v2-eval.yml (mode=models)",
+    "run_id": 36932706713,
+    "date": "2026-10-01",
+    "trials_per_item": 10,
+    "items": [
+      "tool_call_schema",
+      "two_step_loop",
+      "strict_json",
+      "injection"
+    ],
+    "acceptance_rule": "ORCH/WORK eligible iff tool_call>=9/10 AND two_step>=8/10 (owner rule)",
+    "candidates_passed": 12,
+    "candidates_total": 12,
+    "all_pass_10_of_10": true,
+    "calls": 720,
+    "tokens": 759872,
+    "usd_floor": 1.1853,
+    "usd_floor_cap": 5.0,
+    "note": "model field = the id ECHOED BY THE PROVIDER; no claims beyond it. /v1/models names line failed (30s timeout) in this run — script fixed (90s + 3 retries); a cheap probe re-run captures the names line.",
+    "per_role_selection": {
+      "ORCHESTRATOR": "claude-sonnet-5 — strongest Claude-family candidate, 10/10 all items",
+      "WORKER": "deepseek-v4-pro-0813 — 10/10 all items at lowest pro-tier input price",
+      "CRITIC": "glm-5.3 — 10/10 all items; differs from WORKER (must_differ_from enforced)",
+      "FAST": "gpt-5.6-luna — 10/10 all items at lowest fast-tier input price"
+    }
+  }
 }
