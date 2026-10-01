@@ -1,0 +1,5 @@
+{"arm": "A", "stage": "probe", "model": "glm-builtin (z-ai bridge)", "in_chars": 110, "out_chars": 2, "est_in_tok": 27, "est_out_tok": 1, "ms": 382, "est_cost_usd": 1.7e-05}
+{"arm": "A", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 757, "out_chars": 1683, "est_in_tok": 189, "est_out_tok": 420, "ms": 4104, "est_cost_usd": 0.0008}
+{"arm": "A", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 2284, "out_chars": 932, "est_in_tok": 571, "est_out_tok": 233, "ms": 2548, "est_cost_usd": 0.000701}
+{"arm": "A", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 1591, "out_chars": 35090, "est_in_tok": 397, "est_out_tok": 8772, "ms": 104078, "est_cost_usd": 0.014746}
+{"arm": "A", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 324, "out_chars": 150, "est_in_tok": 81, "est_out_tok": 37, "ms": 690, "est_cost_usd": 0.000106}

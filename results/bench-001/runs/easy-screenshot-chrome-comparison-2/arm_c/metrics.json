@@ -1,0 +1,28 @@
+{
+ "topic": "screenshot",
+ "slug": "easy-screenshot-chrome-comparison-2",
+ "arm": "C",
+ "title": "Easy Screenshot Chrome Comparison: Capturing the Perfect Shot",
+ "words": 2731,
+ "h2": 9,
+ "toc": true,
+ "faq_h3": 5,
+ "verdict_chars": 1412,
+ "comparison_table": true,
+ "internal_links": 6,
+ "markdown_damage": false,
+ "meta": "Compare Chrome's built-in screenshot features with top third-party extensions. Find the best tool for capturing, annotating, and managing your screenshots in",
+ "meta_len": 157,
+ "meta_in_window": true,
+ "search_calls": 10,
+ "llm_calls": 15,
+ "seconds": 170.2,
+ "est_in_tok": 35205,
+ "est_out_tok": 18979,
+ "est_cost_usd": 0.1127,
+ "stage_calls": {
+  "fast": 7,
+  "heavy": 6,
+  "writer": 2
+ }
+}

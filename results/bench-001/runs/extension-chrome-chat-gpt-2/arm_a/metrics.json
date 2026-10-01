@@ -1,0 +1,27 @@
+{
+ "topic": "chatgpt",
+ "slug": "extension-chrome-chat-gpt-2",
+ "arm": "A",
+ "title": "The Ultimate Guide to Chrome Extensions for ChatGPT in 2023: Boost Your Productivity and Workflow",
+ "words": 6533,
+ "h2": 8,
+ "toc": false,
+ "faq_h3": 0,
+ "verdict_chars": 0,
+ "comparison_table": true,
+ "internal_links": 0,
+ "markdown_damage": false,
+ "meta": "Discover the best Chrome extensions for ChatGPT in 2023. Boost productivity and streamline your workflow with our ultimate guide to top tools.",
+ "meta_len": 142,
+ "meta_in_window": true,
+ "search_calls": 0,
+ "llm_calls": 5,
+ "seconds": 142.2,
+ "est_in_tok": 1410,
+ "est_out_tok": 13261,
+ "est_cost_usd": 0.0227,
+ "stage_calls": {
+  "probe": 1,
+  "writer": 4
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "topic": "redirect",
+ "slug": "why-your-browser-keeps-redirecting",
+ "arm": "B",
+ "title": "Why Your Browser Keeps Redirecting and How to Fix It for Good",
+ "words": 2873,
+ "h2": 9,
+ "toc": false,
+ "faq_h3": 8,
+ "verdict_chars": 1178,
+ "comparison_table": true,
+ "internal_links": 0,
+ "markdown_damage": false,
+ "meta": "Browser redirects ruining your browsing? Discover common causes and step-by-step solutions to stop redirects and secure your browser for good.",
+ "meta_len": 142,
+ "meta_in_window": true,
+ "search_calls": 0,
+ "llm_calls": 6,
+ "seconds": 182.0,
+ "est_in_tok": 5967,
+ "est_out_tok": 17096,
+ "est_cost_usd": 0.0316,
+ "stage_calls": {
+  "probe": 1,
+  "writer": 5
+ }
+}

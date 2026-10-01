@@ -1,0 +1,126 @@
+[
+ {
+  "query": "chrome extension manifest v3 service worker lifecycle",
+  "searxng": {
+   "ms": 750,
+   "n": 20,
+   "top3": [
+    "developer.chrome.com",
+    "support.google.com",
+    "baike.baidu.com"
+   ],
+   "official_rank": 1,
+   "official_host": "developer.chrome.com"
+  },
+  "zai": {
+   "ms": 1983,
+   "n": 2,
+   "top3": [
+    "news.ycombinator.com",
+    "www.facebook.com"
+   ],
+   "official_rank": null,
+   "official_host": null
+  }
+ },
+ {
+  "query": "chrome web store developer program policies permissions",
+  "searxng": {
+   "ms": 1270,
+   "n": 20,
+   "top3": [
+    "developer.chrome.com",
+    "chromewebstore.google.com",
+    "www.legal500.com"
+   ],
+   "official_rank": 1,
+   "official_host": "developer.chrome.com"
+  },
+  "zai": {
+   "ms": 895,
+   "n": 4,
+   "top3": [
+    "developer.chrome.com",
+    "sunnyzhou-1024.github.io",
+    "support.google.com"
+   ],
+   "official_rank": 1,
+   "official_host": "developer.chrome.com"
+  }
+ },
+ {
+  "query": "chrome extension review time how long business days",
+  "searxng": {
+   "ms": 786,
+   "n": 20,
+   "top3": [
+    "developer.chrome.com",
+    "extensionbooster.net",
+    "stackoverflow.com"
+   ],
+   "official_rank": 1,
+   "official_host": "developer.chrome.com"
+  },
+  "zai": {
+   "ms": 959,
+   "n": 6,
+   "top3": [
+    "developer.chrome.com",
+    "getsnapfont.com",
+    "extensionbooster.net"
+   ],
+   "official_rank": 1,
+   "official_host": "developer.chrome.com"
+  }
+ },
+ {
+  "query": "chrome.storage.local quota limits documentation",
+  "searxng": {
+   "ms": 1058,
+   "n": 20,
+   "top3": [
+    "developer.chrome.com",
+    "developer.chrome.com",
+    "extensions.neplox.security"
+   ],
+   "official_rank": 1,
+   "official_host": "developer.chrome.com"
+  },
+  "zai": {
+   "ms": 1415,
+   "n": 4,
+   "top3": [
+    "android.googlesource.com",
+    "www.rfp.wiki",
+    "tilde.club"
+   ],
+   "official_rank": null,
+   "official_host": null
+  }
+ },
+ {
+  "query": "ublock origin chrome web store manifest v3 status",
+  "searxng": {
+   "ms": 2103,
+   "n": 20,
+   "top3": [
+    "ublockorigin.com",
+    "usehardal.com",
+    "www.reddit.com"
+   ],
+   "official_rank": 10,
+   "official_host": "support.google.com"
+  },
+  "zai": {
+   "ms": 1498,
+   "n": 4,
+   "top3": [
+    "android.googlesource.com",
+    "www.rfp.wiki",
+    "tilde.club"
+   ],
+   "official_rank": null,
+   "official_host": null
+  }
+ }
+]

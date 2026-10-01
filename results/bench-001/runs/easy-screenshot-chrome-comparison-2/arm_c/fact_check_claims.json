@@ -1,0 +1,83 @@
+{
+ "summary": {
+  "total": 8,
+  "supported": 1,
+  "refuted": 0,
+  "uncertain": 7,
+  "fresh_searches": 6
+ },
+ "claims": [
+  {
+   "claim": "Manifest V2",
+   "type": "policy_name",
+   "context": "Under Manifest V2, extensions could run persistent background scripts that monitored browser activity continuously.",
+   "verdict": "uncertain",
+   "source_url": "",
+   "source_quote": "",
+   "note": "No relevant info"
+  },
+  {
+   "claim": "Manifest V3",
+   "type": "policy_name",
+   "context": "## Easy Screenshot Chrome Comparison: Capturing the Perfect Shot {#capturing-screenshots-in-chrome} In my experience as someone who tests and evaluates privacy-focused tools daily, the Chrome screenshot ecosystem has und",
+   "verdict": "uncertain",
+   "source_url": "",
+   "source_quote": "",
+   "note": "No relevant info"
+  },
+  {
+   "claim": "15MB",
+   "type": "numeric_claim",
+   "context": "3s to page load, uses 15MB RAM) | Low (adds 0.",
+   "verdict": "uncertain",
+   "source_url": "",
+   "source_quote": "",
+   "note": "No relevant info"
+  },
+  {
+   "claim": "18MB",
+   "type": "numeric_claim",
+   "context": "4s to page load, uses 18MB RAM) | Moderate (adds 0.",
+   "verdict": "supported",
+   "source_url": "https://chrome-stats.com",
+   "source_quote": "Full version included OCR feature which occupy ~ 18 MB",
+   "note": "Sky Shot app"
+  },
+  {
+   "claim": "35MB",
+   "type": "numeric_claim",
+   "context": "8s to page load, uses 35MB RAM) | High (adds 1.",
+   "verdict": "uncertain",
+   "source_url": "",
+   "source_quote": "",
+   "note": "No evidence found"
+  },
+  {
+   "claim": "45MB",
+   "type": "numeric_claim",
+   "context": "2s to page load, uses 45MB RAM) | | Pricing | Free | Free with premium tier ($19.",
+   "verdict": "uncertain",
+   "source_url": "",
+   "source_quote": "",
+   "note": "No evidence found"
+  },
+  {
+   "claim": "in 2026",
+   "type": "year_ref",
+   "context": "## Easy Screenshot Chrome Comparison: Capturing the Perfect Shot {#capturing-screenshots-in-chrome} In my experience as someone who tests and evaluates privacy-focused tools daily, the Chrome screenshot ecosystem has und",
+   "verdict": "uncertain",
+   "source_url": "",
+   "source_quote": "",
+   "note": "No relevant results"
+  },
+  {
+   "claim": "you need to",
+   "type": "process_claim",
+   "context": "If you need to blur sensitive information regularly, GoFullPage offers an excellent balance of simplicity and functionality.",
+   "verdict": "uncertain",
+   "source_url": "",
+   "source_quote": "",
+   "note": "No relevant results"
+  }
+ ]
+}

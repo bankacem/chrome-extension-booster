@@ -1,0 +1,16 @@
+{"arm": "C", "stage": "fast", "model": "glm-builtin (z-ai bridge)", "in_chars": 4007, "out_chars": 490, "est_in_tok": 1001, "est_out_tok": 122, "ms": 2635, "est_cost_usd": 0.000487}
+{"arm": "C", "stage": "fast", "model": "glm-builtin (z-ai bridge)", "in_chars": 6291, "out_chars": 377, "est_in_tok": 1572, "est_out_tok": 94, "ms": 2058, "est_cost_usd": 0.000661}
+{"arm": "C", "stage": "fast", "model": "glm-builtin (z-ai bridge)", "in_chars": 7732, "out_chars": 394, "est_in_tok": 1933, "est_out_tok": 98, "ms": 2567, "est_cost_usd": 0.000794}
+{"arm": "C", "stage": "fast", "model": "glm-builtin (z-ai bridge)", "in_chars": 9963, "out_chars": 459, "est_in_tok": 2490, "est_out_tok": 114, "ms": 2317, "est_cost_usd": 0.00101}
+{"arm": "C", "stage": "fast", "model": "glm-builtin (z-ai bridge)", "in_chars": 6925, "out_chars": 1386, "est_in_tok": 1731, "est_out_tok": 346, "ms": 3914, "est_cost_usd": 0.000987}
+{"arm": "C", "stage": "heavy", "model": "glm-builtin (z-ai bridge)", "in_chars": 4124, "out_chars": 9362, "est_in_tok": 1031, "est_out_tok": 2340, "ms": 22923, "est_cost_usd": 0.026757}
+{"arm": "C", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 12914, "out_chars": 12894, "est_in_tok": 3228, "est_out_tok": 3223, "ms": 25207, "est_cost_usd": 0.007119}
+{"arm": "C", "stage": "heavy", "model": "glm-builtin (z-ai bridge)", "in_chars": 17010, "out_chars": 2008, "est_in_tok": 4252, "est_out_tok": 502, "ms": 5823, "est_cost_usd": 0.019137}
+{"arm": "C", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 16533, "out_chars": 23772, "est_in_tok": 4133, "est_out_tok": 5943, "ms": 51549, "est_cost_usd": 0.012123}
+{"arm": "C", "stage": "heavy", "model": "glm-builtin (z-ai bridge)", "in_chars": 19116, "out_chars": 1980, "est_in_tok": 4779, "est_out_tok": 495, "ms": 5818, "est_cost_usd": 0.020818}
+{"arm": "C", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 19583, "out_chars": 15536, "est_in_tok": 4895, "est_out_tok": 3884, "ms": 33522, "est_cost_usd": 0.009134}
+{"arm": "C", "stage": "heavy", "model": "glm-builtin (z-ai bridge)", "in_chars": 19116, "out_chars": 1996, "est_in_tok": 4779, "est_out_tok": 499, "ms": 6050, "est_cost_usd": 0.020858}
+{"arm": "C", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 19202, "out_chars": 16564, "est_in_tok": 4800, "est_out_tok": 4141, "ms": 35475, "est_cost_usd": 0.009507}
+{"arm": "C", "stage": "fast", "model": "glm-builtin (z-ai bridge)", "in_chars": 4145, "out_chars": 227, "est_in_tok": 1036, "est_out_tok": 56, "ms": 1059, "est_cost_usd": 0.000429}
+{"arm": "C", "stage": "fast", "model": "glm-builtin (z-ai bridge)", "in_chars": 20375, "out_chars": 18746, "est_in_tok": 5093, "est_out_tok": 4686, "ms": 53602, "est_cost_usd": 0.006827}
+{"arm": "C", "stage": "fast", "model": "glm-builtin (z-ai bridge)", "in_chars": 4091, "out_chars": 625, "est_in_tok": 1022, "est_out_tok": 156, "ms": 2852, "est_cost_usd": 0.000531}

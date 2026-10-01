@@ -1,0 +1,11 @@
+AG043 (link-strategist) selected 6 internal links from live index (815 articles)
+AG000 (orchestrator) engine=agentic — trace at trace.jsonl
+AG000 (orchestrator) research done: 12 SERP rows, 0 gaps, 0 entities
+AG000 (orchestrator) plan: 9 sections — A systematic, privacy-first approach to diagnosing and eliminating browser redir
+AG000 (orchestrator) draft v1: 1805 words
+AG000 (orchestrator) round 1: gates=FAIL:word_count critic_avg=0.0 (revise)
+AG000 (orchestrator) targeted revision applied → 3502 words
+AG000 (orchestrator) round 2: gates=FAIL:word_count critic_avg=7.6 (revise)
+AG000 (orchestrator) targeted revision applied → 2256 words
+AG000 (orchestrator) round 3: gates=FAIL:word_count,faq8 critic_avg=8.2 (approve)
+AG000 (orchestrator) targeted revision applied → 2394 words

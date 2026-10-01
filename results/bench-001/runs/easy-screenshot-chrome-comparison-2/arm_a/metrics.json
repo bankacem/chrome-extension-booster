@@ -1,0 +1,27 @@
+{
+ "topic": "screenshot",
+ "slug": "easy-screenshot-chrome-comparison-2",
+ "arm": "A",
+ "title": "Easy Screenshot Chrome Extensions: The Ultimate 2024 Comparison and Performance Analysis",
+ "words": 5061,
+ "h2": 16,
+ "toc": false,
+ "faq_h3": 0,
+ "verdict_chars": 0,
+ "comparison_table": true,
+ "internal_links": 0,
+ "markdown_damage": false,
+ "meta": "Compare the best easy screenshot Chrome extensions of 2024. Our performance analysis helps you choose the perfect tool for effortless screen captures.",
+ "meta_len": 150,
+ "meta_in_window": true,
+ "search_calls": 0,
+ "llm_calls": 5,
+ "seconds": 113.3,
+ "est_in_tok": 1265,
+ "est_out_tok": 9463,
+ "est_cost_usd": 0.0164,
+ "stage_calls": {
+  "probe": 1,
+  "writer": 4
+ }
+}

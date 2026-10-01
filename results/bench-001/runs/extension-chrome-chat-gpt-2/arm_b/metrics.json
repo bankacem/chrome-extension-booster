@@ -1,0 +1,27 @@
+{
+ "topic": "chatgpt",
+ "slug": "extension-chrome-chat-gpt-2",
+ "arm": "B",
+ "title": "The Ultimate Guide to Chrome Extensions for ChatGPT: From Basics to Power User Domination",
+ "words": 3068,
+ "h2": 9,
+ "toc": false,
+ "faq_h3": 0,
+ "verdict_chars": 1220,
+ "comparison_table": false,
+ "internal_links": 0,
+ "markdown_damage": false,
+ "meta": "Boost your ChatGPT workflow with top Chrome extensions. Discover tools that transform your experience from beginner to power user. Maximize efficiency today!",
+ "meta_len": 157,
+ "meta_in_window": true,
+ "search_calls": 0,
+ "llm_calls": 6,
+ "seconds": 171.9,
+ "est_in_tok": 5682,
+ "est_out_tok": 17483,
+ "est_cost_usd": 0.0321,
+ "stage_calls": {
+  "probe": 1,
+  "writer": 5
+ }
+}

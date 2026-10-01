@@ -1,0 +1,6 @@
+{"arm": "B", "stage": "probe", "model": "glm-builtin (z-ai bridge)", "in_chars": 110, "out_chars": 2, "est_in_tok": 27, "est_out_tok": 1, "ms": 478, "est_cost_usd": 1.7e-05}
+{"arm": "B", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 757, "out_chars": 1113, "est_in_tok": 189, "est_out_tok": 278, "ms": 2476, "est_cost_usd": 0.000565}
+{"arm": "B", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 1834, "out_chars": 1163, "est_in_tok": 458, "est_out_tok": 290, "ms": 2868, "est_cost_usd": 0.000733}
+{"arm": "B", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 1755, "out_chars": 35894, "est_in_tok": 438, "est_out_tok": 8973, "ms": 96236, "est_cost_usd": 0.015101}
+{"arm": "B", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 314, "out_chars": 147, "est_in_tok": 78, "est_out_tok": 36, "ms": 1642, "est_cost_usd": 0.000103}
+{"arm": "B", "stage": "writer", "model": "glm-builtin (z-ai bridge)", "in_chars": 18140, "out_chars": 13673, "est_in_tok": 4535, "est_out_tok": 3418, "ms": 27295, "est_cost_usd": 0.008164}

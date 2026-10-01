@@ -1,0 +1,11 @@
+AG043 (link-strategist) selected 6 internal links from live index (815 articles)
+AG000 (orchestrator) engine=agentic — trace at trace.jsonl
+AG000 (orchestrator) research done: 10 SERP rows, 5 gaps, 8 entities
+AG000 (orchestrator) plan: 11 sections — The only ChatGPT extension guide that prioritizes your privacy while cross-compa
+AG000 (orchestrator) draft v1: 3545 words
+AG000 (orchestrator) round 1: gates=FAIL:word_count critic_avg=6.8 (revise)
+AG000 (orchestrator) targeted revision applied → 3391 words
+AG000 (orchestrator) round 2: gates=FAIL:word_count,faq8 critic_avg=6.4 (revise)
+AG000 (orchestrator) targeted revision applied → 3473 words
+AG000 (orchestrator) round 3: gates=FAIL:word_count critic_avg=7.2 (revise)
+AG000 (orchestrator) targeted revision applied → 3060 words

@@ -1,0 +1,8 @@
+AG043 (link-strategist) selected 6 internal links from live index (815 articles)
+AG000 (orchestrator) engine=agentic — trace at trace.jsonl
+AG000 (orchestrator) research done: 5 SERP rows, 4 gaps, 8 entities
+AG000 (orchestrator) plan: 9 sections — The only 2026 screenshot guide that combines hands-on testing of Chrome's built-
+AG000 (orchestrator) draft v1: 2347 words
+AG000 (orchestrator) round 1: gates=FAIL:word_count critic_avg=7.4 (revise)
+AG000 (orchestrator) targeted revision applied → 3070 words
+AG000 (orchestrator) round 2: gates=PASS critic_avg=7.8 (approve)

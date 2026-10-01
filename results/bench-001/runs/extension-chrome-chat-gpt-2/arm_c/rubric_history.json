@@ -1,0 +1,33 @@
+[
+ {
+  "round": 1,
+  "words": 3545,
+  "gates_pass": false,
+  "gate_failed": [
+   "word_count"
+  ],
+  "critic_avg": 6.8,
+  "critic_verdict": "revise"
+ },
+ {
+  "round": 2,
+  "words": 3391,
+  "gates_pass": false,
+  "gate_failed": [
+   "word_count",
+   "faq8"
+  ],
+  "critic_avg": 6.4,
+  "critic_verdict": "revise"
+ },
+ {
+  "round": 3,
+  "words": 3473,
+  "gates_pass": false,
+  "gate_failed": [
+   "word_count"
+  ],
+  "critic_avg": 7.2,
+  "critic_verdict": "revise"
+ }
+]

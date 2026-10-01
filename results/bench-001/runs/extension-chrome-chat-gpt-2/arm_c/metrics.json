@@ -1,0 +1,28 @@
+{
+ "topic": "chatgpt",
+ "slug": "extension-chrome-chat-gpt-2",
+ "arm": "C",
+ "title": "Best ChatGPT Extension for Chrome Browsing",
+ "words": 3221,
+ "h2": 11,
+ "toc": true,
+ "faq_h3": 0,
+ "verdict_chars": 3087,
+ "comparison_table": true,
+ "internal_links": 6,
+ "markdown_damage": false,
+ "meta": "Discover the best ChatGPT extension for Chrome in our definitive guide. We've tested dozens of options to help you find the perfect AI assistant for browsing",
+ "meta_len": 157,
+ "meta_in_window": true,
+ "search_calls": 7,
+ "llm_calls": 18,
+ "seconds": 290.1,
+ "est_in_tok": 49618,
+ "est_out_tok": 36939,
+ "est_cost_usd": 0.169,
+ "stage_calls": {
+  "fast": 8,
+  "heavy": 6,
+  "writer": 4
+ }
+}

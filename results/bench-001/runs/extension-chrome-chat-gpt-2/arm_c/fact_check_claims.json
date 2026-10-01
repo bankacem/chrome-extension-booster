@@ -1,0 +1,38 @@
+{
+ "summary": {
+  "total": 3,
+  "supported": 0,
+  "refuted": 0,
+  "uncertain": 3,
+  "fresh_searches": 3
+ },
+ "claims": [
+  {
+   "claim": "Chrome Web Store listing for a privacy policy",
+   "type": "policy_name",
+   "context": "To evaluate an extension's privacy practices: 1) Check the Chrome Web Store listing for a privacy policy link, 2) Review permissions requested in the extension details page, 3) Look for open-source code on the developer'",
+   "verdict": "uncertain",
+   "source_url": "",
+   "source_quote": "",
+   "note": "No Chrome Web Store privacy policy found"
+  },
+  {
+   "claim": "best practices",
+   "type": "policy_name",
+   "context": "2/5 | ## Pro Tips and Key Takeaways for Using ChatGPT Extensions {#pro-tips-and-key-takeaways-for-using-chatgpt-extensions} After extensive testing, I've identified several best practices that can significantly enhance y",
+   "verdict": "uncertain",
+   "source_url": "",
+   "source_quote": "",
+   "note": "No best practices evidence found"
+  },
+  {
+   "claim": "privacy policy",
+   "type": "policy_name",
+   "context": "For example, ChatGPT for Google stores minimal data and doesn't require creating an account, while more feature-rich extensions like WebChatGPT explicitly state in their privacy policy that they don't sell user data.",
+   "verdict": "uncertain",
+   "source_url": "",
+   "source_quote": "",
+   "note": "No privacy policy evidence found"
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+[
+ {
+  "claim": "Best Practices",
+  "type": "policy_name",
+  "context": "- [Understanding Why Your Chrome Extension Was Rejected](#understanding-rejection): How to locate and interpret the rejection reason; The difference between policy violations and technical issues; Com",
+  "source": "https://support.google.com/chrome/a/answer/9639925?hl=en",
+  "host": "support.google.com",
+  "mode": "page-quote",
+  "quote": "Best practices for extension developers - Chrome Enterprise and Education Help html{-webkit-text-size-adjust:100%}html.hcfe{background-color:#ffffff;overflow-y:"
+ },
+ {
+  "claim": "Chrome Web Store Developer Program",
+  "type": "policy_name",
+  "context": "## Pro Tips and Key Takeaways for a Successful Submission {#pro-tips} - **Read the Policies:** Before you even start development, familiarize yourself with the [Chrome Web Store Developer Program Poli",
+  "source": "",
+  "host": "",
+  "mode": "-",
+  "quote": ""
+ },
+ {
+  "claim": "Developer Program Policies",
+  "type": "policy_name",
+  "context": "It means the reviewer identified issues conflicting with Google's Developer Program Policies that you must address.",
+  "source": "",
+  "host": "",
+  "mode": "-",
+  "quote": ""
+ },
+ {
+  "claim": "Manifest V3",
+  "type": "policy_name",
+  "context": "- [Understanding Why Your Chrome Extension Was Rejected](#understanding-rejection): How to locate and interpret the rejection reason; The difference between policy violations and technical issues; Com",
+  "source": "",
+  "host": "",
+  "mode": "-",
+  "quote": ""
+ },
+ {
+  "claim": "privacy policy",
+  "type": "policy_name",
+  "context": "If your privacy policy was flagged, the email will reference the exact missing disclosure, such as a data retention statement.",
+  "source": "",
+  "host": "",
+  "mode": "-",
+  "quote": ""
+ },
+ {
+  "claim": "5 business days",
+  "type": "numeric_claim",
+  "context": "### What is the average review time for an appeal? {#faq-review-time} The standard review time for an appeal is similar to an initial submission, typically 3-5 business days.",
+  "source": "https://support.google.com/chrome/thread/45502337/chrome-extension-rejected-providing-a-reason-that-is-inexistent?hl=en",
+  "host": "support.google.com",
+  "mode": "page-quote",
+  "quote": "position:relative;width:100%}div{outline:none}.gb_nf{min-height:3rem;min-width:3rem}#sc-burger-top a,#sc-burger-bottom a{color:#0b57d0}.hcfe{-webkit-font-smoothing:antialiased;background-color:#ffffff;color:#1f1f1f;font-family:'Google Sans Text', Roboto, 'Helvetica Neue', Helvetica, sans-s"
+ },
+ {
+  "claim": "Google requires",
+  "type": "process_claim",
+  "context": "Google requires a single, well-defined purpose.",
+  "source": "",
+  "host": "",
+  "mode": "-",
+  "quote": ""
+ },
+ {
+  "claim": "The review process is handled by a team, and submissions are typically distributed among available reviewers",
+  "type": "process_claim",
+  "context": "The review process is handled by a team, and submissions are typically distributed among available reviewers.",
+  "source": "",
+  "host": "",
+  "mode": "-",
+  "quote": ""
+ },
+ {
+  "claim": "the appeal process professionally, document your changes clearly, and be patient",
+  "type": "process_claim",
+  "context": "Remember to approach the appeal process professionally, document your changes clearly, and be patient.",
+  "source": "https://extensionbooster.net",
+  "host": "extensionbooster.net",
+  "mode": "unofficial-snippet",
+  "quote": "Apr 29, 2026 — The Appeals Process (If Things Go Wrong) · Go to Chrome Web Store One Stop Support · Select “My item was warned/removed/rejected” · Write a clear, ..."
+ },
+ {
+  "claim": "the review process or rejected from the Chrome Web Store",
+  "type": "process_claim",
+  "context": "### Can I publish my extension elsewhere while it's rejected from the Chrome Web Store? {#faq-publish-elsewhere} Yes, you can publish your extension on other platforms like Firefox Add-ons or Edge Add",
+  "source": "",
+  "host": "",
+  "mode": "-",
+  "quote": ""
+ },
+ {
+  "claim": "the review process smoother",
+  "type": "process_claim",
+  "context": "policy violations: how to distinguish and address them; Severity levels: why some rejections are immediate while others offer a chance to fix - [Pro Tips and Key Takeaways for a Successful Submission]",
+  "source": "",
+  "host": "",
+  "mode": "-",
+  "quote": ""
+ },
+ {
+  "claim": "you must",
+  "type": "process_claim",
+  "context": "It means the reviewer identified issues conflicting with Google's Developer Program Policies that you must address.",
+  "source": "",
+  "host": "",
+  "mode": "-",
+  "quote": ""
+ }
+]
