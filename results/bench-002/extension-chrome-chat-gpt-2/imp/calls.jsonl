@@ -1,0 +1,9 @@
+{"arm": "imp", "stage": "probe", "provider": "zai", "model": "glm-builtin", "in_chars": 110, "out_chars": 2, "est_in_tok": 27, "est_out_tok": 1, "ms": 552, "est_cost_usd": 1.7e-05}
+{"arm": "imp", "stage": "writer", "provider": "zai", "model": "glm-builtin", "in_chars": 3154, "out_chars": 1228, "est_in_tok": 788, "est_out_tok": 307, "ms": 3592, "est_cost_usd": 0.000943}
+{"arm": "imp", "stage": "writer", "provider": "zai", "model": "glm-builtin", "in_chars": 2115, "out_chars": 1778, "est_in_tok": 528, "est_out_tok": 444, "ms": 5581, "est_cost_usd": 0.001027}
+{"arm": "imp", "stage": "writer", "provider": "zai", "model": "glm-builtin", "in_chars": 2674, "out_chars": 24662, "est_in_tok": 668, "est_out_tok": 6165, "ms": 68371, "est_cost_usd": 0.010578}
+{"arm": "imp", "stage": "writer", "provider": "zai", "model": "glm-builtin", "in_chars": 287, "out_chars": 160, "est_in_tok": 71, "est_out_tok": 40, "ms": 1029, "est_cost_usd": 0.000105}
+{"arm": "imp", "stage": "writer", "provider": "zai", "model": "glm-builtin", "in_chars": 4304, "out_chars": 1503, "est_in_tok": 1076, "est_out_tok": 375, "ms": 5868, "est_cost_usd": 0.001215}
+{"arm": "imp", "stage": "writer", "provider": "zai", "model": "glm-builtin", "in_chars": 3177, "out_chars": 1496, "est_in_tok": 794, "est_out_tok": 374, "ms": 3992, "est_cost_usd": 0.001058}
+{"arm": "imp", "stage": "writer", "provider": "zai", "model": "glm-builtin", "in_chars": 2542, "out_chars": 931, "est_in_tok": 635, "est_out_tok": 232, "ms": 3275, "est_cost_usd": 0.000735}
+{"arm": "imp", "stage": "writer", "provider": "zai", "model": "glm-builtin", "in_chars": 1389, "out_chars": 677, "est_in_tok": 347, "est_out_tok": 169, "ms": 3852, "est_cost_usd": 0.000471}

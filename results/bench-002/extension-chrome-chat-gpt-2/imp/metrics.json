@@ -1,0 +1,45 @@
+{
+ "slug": "extension-chrome-chat-gpt-2",
+ "arm": "imp",
+ "topic_kw": "extension chrome chat gpt",
+ "aborted_after_repairs": false,
+ "abort_error": "",
+ "model_channel": [
+  "zai:glm-builtin"
+ ],
+ "model_note": "every call via agents/llm_bridge.mjs → z-ai builtin (glm-builtin, thinking disabled); production model deepseek-v4-pro-0813 NOT used (no key locally) — DISCLOSED",
+ "words": 2779,
+ "h2": 14,
+ "faq_h3": 8,
+ "verdict_chars": 1292,
+ "checks": {
+  "word_count": true,
+  "h2_sections": true,
+  "toc": true,
+  "faq8": true,
+  "final_verdict": true,
+  "comparison_table": true,
+  "meta_window": true,
+  "no_nested_links": true,
+  "no_heading_links": true,
+  "no_split_words": true,
+  "brackets_balanced": true
+ },
+ "gates_pass": true,
+ "gates_failed": [],
+ "meta_len": 160,
+ "search_calls": 0,
+ "serp_searxng_calls": 1,
+ "serp_searxng_rows": 8,
+ "serp_fallback": false,
+ "llm_calls": 9,
+ "est_in_tok": 4934,
+ "est_out_tok": 8107,
+ "est_cost_usd": 0.0161,
+ "cost_is_estimate": true,
+ "seconds": 95.9,
+ "stage_calls": {
+  "probe": 1,
+  "writer": 8
+ }
+}
