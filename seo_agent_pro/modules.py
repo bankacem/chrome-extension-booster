@@ -527,7 +527,7 @@ def repair_section(keyword: str, strategy: dict, body: str, meta: str,
             if name in _span_name(body, s, e):
                 target = (s, e)
                 break
-        budget = budgets.get(name, fallback_budget) or fallback_budget
+        budget = fallback_budget or budgets.get(name, 300)
         old = body[target[0]:target[1]] if target else "(section missing)"
         sys_p = ("You are a professional SEO content writer. You rewrite ONE "
                  "section of an article exactly to spec.")
@@ -537,7 +537,7 @@ its "## " heading), nothing else — no preamble, no code fences.
 
 Current section content:
 ---
-{old[:4000]}
+{old[:8000]}
 ---
 
 Requirements:
@@ -613,22 +613,38 @@ Requirements:
     if "word_count" in failed:
         words = G.wc(body)
         if words > G.WORD_MAX:
+            # Compress ENOUGH sections to shed the full surplus in one pass —
+            # compressing a single section per attempt could not close a
+            # 600+ word surplus in 2 attempts (found by bench-002 pilot).
+            surplus = words - G.WORD_MAX
             spans = _split_spans(body)
-            if spans:
-                s, e = max(spans, key=lambda se: G.wc(body[se[0]:se[1]]))
+            content = [se for se in spans
+                       if "faq" not in _span_name(body, *se)
+                       and "contents" not in _span_name(body, *se)
+                       and "verdict" not in _span_name(body, *se)]
+            content.sort(key=lambda se: G.wc(body[se[0]:se[1]]), reverse=True)
+            scheduled = 0
+            for s, e in content[:4]:
                 name = _span_name(body, s, e)
+                cur = G.wc(body[s:e])
+                if cur <= 150:
+                    continue
+                target = max(150, min(budgets.get(name, 300) or 300,
+                                      cur - max(0, surplus - scheduled)))
+                scheduled += max(0, cur - target)
                 body = _regen(
                     name,
-                    "- This section is far too long and pushed the whole "
-                    f"article over the {G.WORD_MAX}-word ceiling. Compress it "
-                    f"to ~{budgets.get(name, 300)} words, keep the heading "
-                    "unchanged, keep its key facts, cut padding.",
-                    fallback_budget=budgets.get(name, 300))
+                    f"- This section is too long and pushed the whole article "
+                    f"over the {G.WORD_MAX}-word ceiling. Rewrite it to AT MOST "
+                    f"{target} words — a hard cap: count the words before you "
+                    "answer. Keep the heading unchanged and the key facts, "
+                    "cut padding and repetition.",
+                    fallback_budget=target)
         elif words < G.WORD_MIN:
             spans = _split_spans(body)
             if spans:
                 ranked = sorted(spans, key=lambda se: G.wc(body[se[0]:se[1]]))
-                for s, e in ranked[:2]:
+                for s, e in ranked[:3]:
                     name = _span_name(body, s, e)
                     if "faq" in name or "contents" in name:
                         continue

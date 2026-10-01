@@ -29,7 +29,11 @@ sys.path.insert(0, os.path.dirname(__file__))
 import modules as agent  # noqa: E402
 import memory  # noqa: E402
 from gates import run_gates  # noqa: E402  (owner decision 3c/3d)
-from llm_router import call, find_working_model  # noqa: E402
+# `c` added: the guaranteed-meta_description fallback (and the gates loop)
+# print via c() but it was never imported — a latent NameError on the rare
+# empty-meta path that production never happened to hit until the gates loop
+# made failure printing routine. Found by the bench-002 IMP pilot run.
+from llm_router import call, find_working_model, c  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE_PATH = Path(__file__).parent / "keyword_queue.txt"
