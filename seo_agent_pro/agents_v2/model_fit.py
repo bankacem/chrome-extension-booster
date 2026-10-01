@@ -73,21 +73,30 @@ def cost_floor_usd(ledger: UsageLedger) -> float:
 
 
 def _models_list_line(base: str, key_present: bool) -> str:
-    """Fetch /v1/models and return the names — printed as the FIRST log line."""
+    """Fetch /v1/models and return the names — printed as the FIRST log line.
+
+    Run 36932706713 lesson: a 30s timeout can expire on this endpoint while
+    /chat/completions stays healthy. Owner spec requires the names line, so
+    this fetch now retries (3 attempts, exponential backoff, 90s timeout)."""
+    import time as _time
     import urllib.request
-    req = urllib.request.Request(
-        base.rstrip("/") + "/models",
-        headers={"Authorization": f"Bearer {__import__('os').environ.get('CLEANAPIS_KEY','')}",
-                 "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/126.0 Safari/537.36",
-                 "Accept": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            body = json.loads(resp.read().decode())
-        names = sorted(m.get("id", "?") for m in body.get("data", []))
-        return f"models({len(names)}): " + ", ".join(names)
-    except Exception as e:  # noqa: BLE001 — report code only, never headers
-        code = getattr(e, "code", "network")
-        return f"models: ERROR HTTP {code} (chat tests still proceed)"
+    last = "network"
+    for attempt in range(3):
+        req = urllib.request.Request(
+            base.rstrip("/") + "/models",
+            headers={"Authorization": f"Bearer {__import__('os').environ.get('CLEANAPIS_KEY','')}",
+                     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/126.0 Safari/537.36",
+                     "Accept": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=90) as resp:
+                body = json.loads(resp.read().decode())
+            names = sorted(m.get("id", "?") for m in body.get("data", []))
+            return f"models({len(names)}): " + ", ".join(names)
+        except Exception as e:  # noqa: BLE001 — report code only, never headers
+            last = str(getattr(e, "code", "network"))
+            if attempt < 2:
+                _time.sleep(5 * (attempt + 1))
+    return f"models: ERROR {last} after 3 attempts (chat tests still proceed)"
 
 
 WEATHER_TOOL = {
