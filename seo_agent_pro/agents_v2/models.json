@@ -51,7 +51,8 @@
     "max_usd_per_article": null,
     "max_model_calls_per_run": null,
     "max_usd_per_run": null,
-    "_note": "Owner fills numeric caps; null = unset. The code enforces whatever is set and raises BudgetExceeded when a cap is hit."
+    "RUN_COST_CAP_USD": 5.0,
+    "_note": "Owner fills numeric caps; null = unset. RUN_COST_CAP_USD (default 5.00) is the eval/fit-run USD ceiling used by the agents-v2-eval workflow; the USD number is an input-price FLOOR because output prices are unconfirmed. The code enforces whatever is set and raises BudgetExceeded when a cap is hit."
   },
   "claude_family_in_catalog": [
     "claude-sonnet-5",

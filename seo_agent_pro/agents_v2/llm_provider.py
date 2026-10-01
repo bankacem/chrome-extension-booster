@@ -186,7 +186,7 @@ def _post(url: str, payload: dict, timeout: int) -> dict:
     req = urllib.request.Request(url, json.dumps(payload).encode(), _headers(key))
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return json.loads(resp.read().decode("utf-8"))
+            raw = resp.read().decode("utf-8")
     except urllib.error.HTTPError as e:
         retry_after = None
         if e.code == 429:
@@ -209,6 +209,11 @@ def _post(url: str, payload: dict, timeout: int) -> dict:
     except urllib.error.URLError as e:
         # network-level (DNS/timeout) — treated as retryable
         raise _Retryable(599, None) from None
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        # truncated/broken body (gateway hiccups) — retryable, then fatal
+        raise _Retryable(598, None) from None
 
 
 _STOP_REASONS_OK = {"stop", "tool_calls", "function_call"}
@@ -308,9 +313,11 @@ def chat(role: str,
         text = message.get("content") or ""
         tool_calls = _parse_tool_calls(message)
         stop_reason = choice.get("finish_reason", stop_reason)
-        u = body.get("usage") or {}
-        if u.get("prompt_tokens") is not None:
-            usage_in, usage_out = int(u.get("prompt_tokens", 0)), int(u.get("completion_tokens", 0))
+        u2 = body.get("usage") or {}
+        if u2.get("prompt_tokens") is not None:
+            # honest accounting: BOTH attempts hit the provider
+            usage_in += int(u2.get("prompt_tokens", 0))
+            usage_out += int(u2.get("completion_tokens", 0))
             estimated = False
 
     if ledger is not None:

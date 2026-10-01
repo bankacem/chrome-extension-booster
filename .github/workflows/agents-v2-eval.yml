@@ -1,0 +1,141 @@
+name: agents-v2 eval (model fit + A/B comparison)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# THE single new workflow authorized by the owner (بند «الـ workflow الوحيد
+# المسموح»): ONE new file serving BOTH jobs:
+#   mode=models → model-fit check (owner spec ب2 / Step 2)
+#   mode=eval   → A/B comparison smoke|full (owner spec Step 5)
+#
+# Compliance contract (checked item-by-item before merge):
+#  1) on: workflow_dispatch ONLY — no schedule/push/pull_request/pull_request_target
+#  2) permissions: contents: read — on the file AND on every job
+#  3) secrets.* appear ONLY inside env: — never in run:, never echoed, no set -x
+#  4) NO git write commands (commit/push/tag/config) and no gh api writes
+#  5) URL allowlist (see PR comment for the machine-extracted list):
+#       - https://cleanapis.com/v1        (the LLM provider, via models.json)
+#       - http://localhost:8080           (LOCAL SearXNG service container, eval only)
+#  6) upload-artifact uploads ONLY the /tmp/agents_v2_eval results folder
+#     (never ".", never ".env", never the repository)
+#  7) timeout-minutes on the job + hard caps on model calls AND on USD cost
+#     (input-price floor; output prices unconfirmed → reported as a floor)
+#  8) nothing writes to any content folder — results go to /tmp only
+#
+# The key enters ONLY via env CLEANAPIS_KEY ← GitHub Secrets (CLEANAPIS).
+# It is never printed, never logged, never embedded in exceptions.
+# ─────────────────────────────────────────────────────────────────────────────
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "models = model-fit check | eval = A/B comparison"
+        required: false
+        default: "models"
+      eval_mode:
+        description: "mode=eval only: smoke (1 topic) | full (10 topics, once)"
+        required: false
+        default: "smoke"
+      models:
+        description: "mode=models only: CSV of candidate ids (default: all candidates in models.json)"
+        required: false
+        default: ""
+      trials:
+        description: "mode=models only: trials per item (owner spec 10, hard cap 10)"
+        required: false
+        default: "10"
+      max_calls:
+        description: "Hard cap on total model calls for the whole run"
+        required: false
+        default: "250"
+      max_cost_usd:
+        description: "Hard cap on USD cost floor (input-token prices; output unconfirmed)"
+        required: false
+        default: "5"
+
+concurrency:
+  group: agents-v2-eval
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  agents-v2-eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # ── LOCAL SearXNG service container (eval mode only) ────────────────
+      # JSON format enabled explicitly; limiter off; bound to localhost:8080.
+      - name: Start local SearXNG container (eval only)
+        if: ${{ inputs.mode == 'eval' }}
+        run: |
+          mkdir -p /tmp/searxng
+          printf '%s\n' \
+            'use_default_settings: true' \
+            'server:' \
+            '  secret_key: "agents-v2-eval-local"' \
+            '  limiter: false' \
+            '  image_proxy: false' \
+            'search:' \
+            '  formats: [html, json]' > /tmp/searxng/settings.yml
+          docker run -d --rm --name searxng -p 8080:8080 \
+            -v /tmp/searxng/settings.yml:/etc/searxng/settings.yml:ro \
+            searxng/searxng
+          for i in $(seq 1 30); do
+            curl -sf 'http://localhost:8080/search?q=probe&format=json' >/dev/null && break || sleep 2
+          done
+          curl -s 'http://localhost:8080/search?q=probe&format=json' | head -c 200 || true
+
+      # ── mode=models: model-fit check ────────────────────────────────────
+      - name: Run model-fit check (mode=models)
+        if: ${{ inputs.mode != 'eval' }}
+        env:
+          CLEANAPIS_KEY: ${{ secrets.CLEANAPIS || secrets.CLEANAPIS_KEY }}
+          IN_MODELS: ${{ inputs.models }}
+          IN_TRIALS: ${{ inputs.trials }}
+          IN_MAX_CALLS: ${{ inputs.max_calls }}
+          IN_MAX_COST_USD: ${{ inputs.max_cost_usd }}
+        run: |
+          set -e
+          python3 seo_agent_pro/agents_v2/model_fit.py \
+            --models "$IN_MODELS" \
+            --trials "$IN_TRIALS" \
+            --max-calls "$IN_MAX_CALLS" \
+            --max-cost-usd "$IN_MAX_COST_USD" \
+            --out /tmp/agents_v2_eval/model_fit
+
+      # ── mode=eval: A/B comparison (smoke | full) ────────────────────────
+      - name: Run A/B eval (mode=eval)
+        if: ${{ inputs.mode == 'eval' }}
+        env:
+          CLEANAPIS_KEY: ${{ secrets.CLEANAPIS || secrets.CLEANAPIS_KEY }}
+          SEARXNG_BASE_URL: http://localhost:8080
+          IN_EVAL_MODE: ${{ inputs.eval_mode }}
+          IN_MAX_CALLS: ${{ inputs.max_calls }}
+          IN_MAX_COST_USD: ${{ inputs.max_cost_usd }}
+        run: |
+          set -e
+          python3 seo_agent_pro/agents_v2/eval/run_eval.py \
+            --mode "$IN_EVAL_MODE" \
+            --max-calls "$IN_MAX_CALLS" \
+            --max-cost-usd "$IN_MAX_COST_USD" \
+            --out /tmp/agents_v2_eval/eval
+
+      - name: Upload results as artifacts (results folder only)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agents-v2-eval-results
+          path: /tmp/agents_v2_eval/
+          retention-days: 14

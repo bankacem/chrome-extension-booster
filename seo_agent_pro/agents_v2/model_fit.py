@@ -45,6 +45,32 @@ from agents_v2.llm_provider import (  # noqa: E402
 
 BASE_URL = None  # set from models.json at runtime
 
+# ── USD cost floor (owner rule: hard cap on calls AND on dollars) ──────────
+# Input prices come from the owner-scraped CLEANAPIS_CATALOG (config.py).
+# Output prices are NOT owner-confirmed (null in models.json) → every USD
+# number is a FLOOR (input tokens only) and is reported as such.
+try:  # config.py sits at seo_agent_pro/config.py — parent of agents_v2/
+    from config import CLEANAPIS_CATALOG as _CATALOG  # noqa: E402
+except Exception:  # noqa: BLE001 — catalog is optional for the harness
+    _CATALOG = {}
+
+_PRICE_MAP: dict[str, float] = dict(_CATALOG)   # model -> usd per 1M input tokens
+_COST_CAP_USD = float("inf")                    # set from --max-cost-usd in main()
+
+
+class CostCapReached(BudgetExceeded):
+    """USD cost floor reached the hard cap — stop the whole run cleanly."""
+
+
+def cost_floor_usd(ledger: UsageLedger) -> float:
+    """Input-token cost floor over all completed ledger entries (USD)."""
+    total = 0.0
+    for e in ledger.entries:
+        price = _PRICE_MAP.get(e.model)
+        if price and e.ok:
+            total += (e.input_tokens / 1_000_000.0) * price
+    return total
+
 
 def _models_list_line(base: str, key_present: bool) -> str:
     """Fetch /v1/models and return the names — printed as the FIRST log line."""
@@ -186,6 +212,9 @@ def t_injection(model: str, ledger: UsageLedger) -> tuple[bool, str]:
 def run_item(item: str, model: str, trials: int, ledger: UsageLedger) -> dict:
     oks, latencies, details = 0, [], []
     for i in range(trials):
+        if cost_floor_usd(ledger) >= _COST_CAP_USD:
+            raise CostCapReached(
+                f"USD cost floor reached hard cap ({_COST_CAP_USD}) — stopping cleanly")
         try:
             started = time.monotonic()
             if item == "tool_call_schema":
@@ -220,8 +249,13 @@ def main() -> int:
     ap.add_argument("--models", default="", help="CSV filter; default = candidates of all roles")
     ap.add_argument("--trials", type=int, default=10)
     ap.add_argument("--max-calls", type=int, default=250)
-    ap.add_argument("--out", default="/tmp/model_fit")
+    ap.add_argument("--max-cost-usd", type=float, default=5.0,
+                    help="hard cap on the USD cost floor (input-token prices)")
+    ap.add_argument("--out", default="/tmp/agents_v2_eval/model_fit")
     args = ap.parse_args()
+
+    global _COST_CAP_USD
+    _COST_CAP_USD = max(0.01, float(args.max_cost_usd))
 
     trials = max(1, min(args.trials, 10))  # owner spec: 10 per item, hard cap
     out_dir = Path(args.out)
@@ -243,11 +277,14 @@ def main() -> int:
                     seen.append(m)
         models = seen
     print(f"candidates({len(models)}): {', '.join(models)} | trials={trials} "
-          f"| hard call cap={args.max_calls} | cost: NOT estimated (prices unconfirmed)", flush=True)
+          f"| hard call cap={args.max_calls} | USD floor cap={_COST_CAP_USD} "
+          f"(input-token floor; output prices unconfirmed)", flush=True)
 
     items = ["tool_call_schema", "two_step_loop", "strict_json", "injection"]
     results: dict = {"generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                      "trials_per_item": trials, "hard_call_cap": args.max_calls,
+                     "usd_floor_cap": _COST_CAP_USD,
+                     "cost_basis": "input-token floor; output prices unconfirmed",
                      "models": {}}
 
     def bench_one(model: str) -> dict:
@@ -255,6 +292,8 @@ def main() -> int:
         for item in items:
             try:
                 per_model["items"][item] = run_item(item, model, trials, ledger)
+            except CostCapReached:
+                raise
             except BudgetExceeded:
                 per_model["items"][item] = {"item": item, "stopped": "hard call cap reached"}
                 return per_model
@@ -265,11 +304,16 @@ def main() -> int:
         return per_model
 
     stopped_by_cap = False
+    stopped_by_cost = False
     with ThreadPoolExecutor(max_workers=4) as pool:
         futures = {pool.submit(bench_one, m): m for m in models}
         for fut, model in futures.items():
             try:
                 results["models"][model] = fut.result()
+            except CostCapReached:
+                stopped_by_cost = True
+                print(f"USD COST FLOOR CAP REACHED ({_COST_CAP_USD}) — stopping early, "
+                      f"partial results preserved.", flush=True)
             except BudgetExceeded:
                 stopped_by_cap = True
                 print(f"HARD CALL CAP REACHED ({args.max_calls}) — stopping early, "
@@ -296,13 +340,35 @@ def main() -> int:
         print(f"| {model} | {rate('tool_call_schema')} | {rate('two_step_loop')} | "
               f"{rate('strict_json')} | {rate('injection')} | {'YES' if elig else 'NO'} |",
               flush=True)
-    print(f"\ntokens used (est. meter only): {ledger.total_tokens} | "
-          f"calls: {ledger.calls} | cost: NOT estimated until models.json prices "
-          f"are owner-confirmed", flush=True)
+    cost = cost_floor_usd(ledger)
+    print(f"\ntokens used: {ledger.total_tokens} | calls: {ledger.calls} | "
+          f"USD cost FLOOR (input-only): {cost:.4f} of cap {_COST_CAP_USD} "
+          f"(output prices unconfirmed by owner → floor only)", flush=True)
 
     (out_dir / "results.json").write_text(json.dumps(results, indent=2, ensure_ascii=False))
     (out_dir / "RUN_SUMMARY.txt").write_text(
-        f"calls={ledger.calls} tokens={ledger.total_tokens} stopped_by_cap={stopped_by_cap}\n")
+        f"calls={ledger.calls} tokens={ledger.total_tokens} "
+        f"usd_floor={cost:.4f} usd_floor_cap={_COST_CAP_USD} "
+        f"stopped_by_cap={stopped_by_cap} stopped_by_cost={stopped_by_cost}\n")
+
+    md = ["# Model Fit Results", "",
+          "model = the id ECHOED BY THE PROVIDER (no claims beyond it).", "",
+          "| model | tool_call | two_step | strict_json | injection | eligible ORCH/WORK |",
+          "|---|---|---|---|---|---|"]
+    for model, res in results["models"].items():
+        if "fatal" in res:
+            md.append(f"| {model} | FATAL: {res['fatal'][:60]} | - | - | - | NO |")
+            continue
+        it = res.get("items", {})
+        def mrate(k):
+            v = it.get(k, {})
+            return f"{v.get('passed','?')}/{v.get('trials','?')}" if v else "-"
+        elig = res.get("eligible_orchestrator_worker", False)
+        md.append(f"| {model} | {mrate('tool_call_schema')} | {mrate('two_step_loop')} | "
+                  f"{mrate('strict_json')} | {mrate('injection')} | {'YES' if elig else 'NO'} |")
+    md += ["", f"calls={ledger.calls} | tokens={ledger.total_tokens} | "
+                f"usd_floor={cost:.4f} | cap={_COST_CAP_USD}"]
+    (out_dir / "MODELS_TABLE.md").write_text("\n".join(md), encoding="utf-8")
     return 0
 
 

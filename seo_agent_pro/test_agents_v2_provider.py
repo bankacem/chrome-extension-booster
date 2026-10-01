@@ -164,5 +164,82 @@ class TestNoKeyLeak(Base):
             self.assertNotIn("super-secret-value-xyz", str(e))
 
 
+class _FakeHTTPResponse:
+    """Minimal context-manager stand-in for urlopen()."""
+    def __init__(self, payload: bytes):
+        import io
+        self._buf = io.BytesIO(payload)
+
+    def read(self, *a):
+        return self._buf.read(*a)
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *a):
+        return False
+
+
+class TestTransportEdgeCases(Base):
+    """Owner-spec test matrix additions: empty response, broken JSON, 429."""
+
+    def test_empty_content_with_stop_is_returned_unchanged(self):
+        body = {"model": "fake-model-x",
+                "choices": [{"finish_reason": "stop",
+                             "message": {"role": "assistant", "content": ""}}],
+                "usage": {"prompt_tokens": 5, "completion_tokens": 0}}
+        with mock.patch.object(lp, "_post", return_value=body):
+            r = lp.chat("FAST", "s", [{"role": "user", "content": "hi"}])
+        self.assertEqual(r.text, "")
+        self.assertEqual(r.stop_reason, "stop")
+
+    def test_broken_json_retries_then_succeeds(self):
+        calls = {"n": 0}
+
+        def fake_urlopen(req, timeout=0):
+            calls["n"] += 1
+            if calls["n"] == 1:
+                return _FakeHTTPResponse(b'{"choices": [BROKEN')
+            return _FakeHTTPResponse(json.dumps(BODY_OK).encode())
+
+        with mock.patch.object(lp.urllib.request, "urlopen", side_effect=fake_urlopen):
+            r = lp.chat("FAST", "s", [{"role": "user", "content": "hi"}])
+        self.assertEqual(r.text, "hello")
+        self.assertEqual(calls["n"], 2)
+
+    def test_broken_json_gives_up_after_3_attempts(self):
+        calls = {"n": 0}
+
+        def fake_urlopen(req, timeout=0):
+            calls["n"] += 1
+            return _FakeHTTPResponse(b"<html>gateway garbage</html>")
+
+        with mock.patch.object(lp.urllib.request, "urlopen", side_effect=fake_urlopen):
+            with self.assertRaises(lp.ProviderFatal):
+                lp.chat("FAST", "s", [{"role": "user", "content": "hi"}])
+        self.assertEqual(calls["n"], lp.MAX_ATTEMPTS)
+
+    def test_429_is_retryable_then_success(self):
+        calls = {"n": 0}
+
+        def fake_urlopen(req, timeout=0):
+            calls["n"] += 1
+            if calls["n"] == 1:
+                raise lp.urllib.error.HTTPError(req.full_url, 429, "slow down", {}, None)
+            return _FakeHTTPResponse(json.dumps(BODY_OK).encode())
+
+        with mock.patch.object(lp.urllib.request, "urlopen", side_effect=fake_urlopen):
+            r = lp.chat("FAST", "s", [{"role": "user", "content": "hi"}])
+        self.assertEqual(r.text, "hello")
+        self.assertEqual(calls["n"], 2)
+
+    def test_correct_tool_call_end_to_end(self):
+        with mock.patch.object(lp, "_post", return_value=BODY_TOOL):
+            r = lp.chat("WORKER", "use tools",
+                        [{"role": "user", "content": "weather in Paris?"}])
+        self.assertEqual(r.tool_calls[0].name, "get_weather")
+        self.assertEqual(r.tool_calls[0].arguments.get("city"), "Paris")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
