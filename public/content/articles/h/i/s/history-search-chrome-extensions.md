@@ -58,7 +58,7 @@ Another significant limitation is the inability to perform full-text browser his
 
 Chrome's history management also lacks convenient bulk operations. Want to delete all history from a specific site? Prepare to click through multiple pages or use keyboard shortcuts repeatedly. Exporting history is equally cumbersome, often requiring third-party tools or complex workarounds. These limitations are why a dedicated history manager extension can dramatically improve your browsing experience.
 
-What's more, as of 2026, Chrome's history page still doesn't adapt well to [Manifest V3](https://developer.chrome.com/docs/extensions/develop/concepts/manifest-v3) requirements that prioritize privacy and security. While this has led to some improvements in data handling, it hasn't [translated to better user experience](/blog/printfriendly-chrome-extension-guide) for history management. The native interface remains cluttered and inefficient, especially for users with extensive browsing histories.
+What's more, as of 2026, Chrome's history page still doesn't adapt well to [Manifest V3](https://developer.chrome.com/docs/extensions/develop/concepts/manifest-v3) requirements that prioritize privacy and security. While this has led to some improvements in data handling, it hasn't translated to better user experience for history management. The native interface remains cluttered and inefficient, especially for users with extensive browsing histories.
 
 ## What Makes a Great History Search Extension? {#what-makes-great-history-extension}
 
@@ -320,4 +320,4 @@ After extensive testing and comparison, Better History stands out as the most co
 
 The most important factor is choosing an extension that aligns with your specific needs, browsing habits, and privacy requirements. Whether you opt for a free option like History Search by Extensity or a premium solution, the right extension can transform how you interact with your browsing history, saving you time and frustration.
 
-If you're looking for more ways to enhance your Chrome experience, be sure to explore our curated library of tested Chrome extensions and guides at [https://extensionto.com](), where you'll find in-depth reviews of tools like webpage screenshot [extensions and dictionary plugins that](/blog/google-dictionary-chrome-extension-guide) can further boost your productivity.
+If you're looking for more ways to enhance your Chrome experience, be sure to explore our curated library of tested Chrome extensions and guides at [https://extensionto.com](), where you'll find in-depth reviews of tools like webpage screenshot extensions and dictionary plugins that can further boost your productivity.

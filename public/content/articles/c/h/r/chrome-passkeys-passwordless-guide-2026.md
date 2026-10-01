@@ -115,7 +115,7 @@ What I particularly appreciated during testing is how Chrome handles the authent
 
 ## Google Passkey Setup: Creating Your First Passkey {#google-passkey-setup}
 
-Setting up passkeys specifically for your Google Account is an excellent first step in your passwordless journey. Based on my testing with Google's authentication systems, I've found that Google has implemented one of [the most comprehensive passkey experiences](/blog/unlocking-online-privacy-ghostery-for-chrome-android) available. Here's how to create and manage passkeys for your Google Account.
+Setting up passkeys specifically for your Google Account is an excellent first step in your passwordless journey. Based on my testing with Google's authentication systems, I've found that Google has implemented one of [the most comprehensive passkey experiences](/blog/the-power-of-ghostery-extension-chrome-2026) available. Here's how to create and manage passkeys for your Google Account.
 
 First, navigate to your Google Account security settings at `myaccount.google.com/security`. In my testing, I found that Google has made the passkey setup process particularly intuitive, with clear prompts and helpful explanations throughout. The interface has evolved significantly since early implementations, with better visual indicators and more straightforward options.
 

@@ -38,7 +38,7 @@ The [Chrome browser](https://www.google.com/chrome/)'s default new tab page has 
 - [Understanding Speed Dial and New Tab Extensions](#understanding-speed-dial)
 - [Key Features to Look For in 2026](#key-features)
 - [Top Speed Dial Extensions Compared](#top-extensions)
-- [New Tab Dashboard Widgets](/blog/chrome-new-tab-extension-guide)
+- New Tab Dashboard Widgets
 - [Setting Up Your Perfect Start Page](#setting-up)
 - [Privacy Considerations and Manifest V3](#privacy-considerations)
 - [Troubleshooting Common Issues](#troubleshooting)
@@ -109,7 +109,7 @@ After extensive testing, I've identified several standout speed dial and new tab
 
 **OneTab** takes a unique approach by focusing on tab management rather than traditional bookmark organization. It converts your open tabs into a visual list that you can save and organize, which is particularly useful for power users who frequently have many tabs open. While not a traditional speed dial, it serves a similar purpose of visual organization in a different way.
 
-For a more detailed comparison of Chrome new tab extensions, including additional options not mentioned here, you can explore our comprehensive guide on [choosing a dashboard without losing control](/blog/chrome-new-tab-extension-guide).
+For a more detailed comparison of Chrome new tab extensions, including additional options not mentioned here, you can explore our comprehensive guide on choosing a dashboard without losing control.
 
 ## New Tab Dashboard Widgets {#dashboard-widgets}
 

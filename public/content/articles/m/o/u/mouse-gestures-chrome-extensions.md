@@ -77,7 +77,7 @@ When it comes to choosing a mouse gesture extension, the options vary significan
 | **Cesture** | Lightweight, minimal interface, basic gesture support | Low (limited to predefined gestures) | Very Low | Excellent |
 | **StrokesPlus** | Cross-platform, scripting support, complex gesture sequences | Very High (JavaScript-based automation) | High | Good |
 
-Crxmouse Chrome Guide remains one of the most popular options, offering a balance between ease of use and powerful features. What sets Crxmouse apart is its extensive library of predefined gestures and the ability to create [custom ones without diving into](/blog/chrome-new-tab-extension-guide) complex configurations. In my testing, I found its recognition accuracy to be among the best, with minimal false positives even at higher sensitivity settings. The visual feedback provided as you draw gestures is particularly helpful for learning and confirming your actions.
+Crxmouse Chrome Guide remains one of the most popular options, offering a balance between ease of use and powerful features. What sets Crxmouse apart is its extensive library of predefined gestures and the ability to create custom ones without diving into complex configurations. In my testing, I found its recognition accuracy to be among the best, with minimal false positives even at higher sensitivity settings. The visual feedback provided as you draw gestures is particularly helpful for learning and confirming your actions.
 
 Smooth Gestures lives up to its name by providing a streamlined, no-frills experience. If you're new to mouse gestures or prefer simplicity, this extension offers just enough functionality without overwhelming you with options. It includes basic gestures for navigation, tab management, and reloading pages, all of which work reliably. While customization is limited, the core functionality is solid and performs well even on lower-end systems.
 
@@ -112,7 +112,7 @@ Getting started with a mouse gesture extension is straightforward, but the setup
 
 8. **Set Up Gesture Timeout**: Some extensions allow you to set a timeout after which the gesture recognition is canceled if you don't complete the movement. This prevents accidental gestures if you accidentally click the mouse button.
 
-Remember that different extensions may have slightly different setup processes. For detailed instructions specific to your chosen extension, refer to its documentation or our guide on [Chrome Extension Side Panel: How It Works and Which Limits Matter](/blog/chrome-extension-side-panel-guide) for additional context about extension architecture.
+Remember that different extensions may have slightly different setup processes. For detailed instructions specific to your chosen extension, refer to its documentation or our guide on Chrome Extension Side Panel: How It Works and Which Limits Matter for additional context about extension architecture.
 
 ## Customizing Gestures for Your Workflow {#customizing-gestures}
 
@@ -158,7 +158,7 @@ Once you've mastered the basics and customized your gesture setup, you can explo
 
 When implementing advanced techniques, it's important to maintain a balance between power and usability. Overly complex gesture systems can become difficult to remember and may actually reduce efficiency. I recommend starting with one or two advanced techniques and gradually expanding your capabilities as you become more comfortable.
 
-For those interested in exploring automation further, our guide on [How to Update Chrome Extensions Manually and Verify the Result](/blog/update-chrome-extension-manually-guide) provides insights into maintaining complex extension setups, which is particularly relevant when using advanced gesture automation features.
+For those interested in exploring automation further, our guide on How to Update Chrome Extensions Manually and Verify the Result provides insights into maintaining complex extension setups, which is particularly relevant when using advanced gesture automation features.
 
 ## Accessibility Benefits of Gesture Navigation {#accessibility-benefits}
 

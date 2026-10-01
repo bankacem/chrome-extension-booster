@@ -95,7 +95,7 @@ One limitation I noticed during testing is that the native vertical tabs don't s
 
 While Chrome's native vertical tabs are relatively minimal in customization options, there are a few settings you can adjust to personalize the experience. In the Settings > Appearance section, you can control whether the tab strip shows favicons and text, icons only, or text only. This can help maximize the visible tab titles when working with many similar tabs.
 
-You can also adjust the width of the vertical tab sidebar by dragging its edge horizontally. In my testing, I found that a width of around 200 pixels provided the best balance between showing full tab titles and preserving screen space for content viewing. Chrome will remember your preferred [width across sessions](/blog/session-buddy-chrome-extension-guide).
+You can also adjust the width of the vertical tab sidebar by dragging its edge horizontally. In my testing, I found that a width of around 200 pixels provided the best balance between showing full tab titles and preserving screen space for content viewing. Chrome will remember your preferred width across sessions.
 
 For users who prefer keyboard navigation, Chrome supports several shortcuts for vertical tab management. You can use Ctrl+Tab (or Cmd+Tab on Mac) to cycle through tabs, though this works differently in vertical mode—it cycles through all tabs rather than just visible ones. The Ctrl+Shift+Tab shortcut works in reverse. For more direct tab switching, you can use Ctrl+1 through Ctrl+9 to jump to specific tabs by position.
 

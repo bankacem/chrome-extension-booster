@@ -49,7 +49,7 @@ Not all AI extensions are created equal. While many offer conversational AI assi
 
 ## The Evolution of Browser Automation: From Bookmarks to AI Agents {#evolution-browser-automation}
 
-Browser automation has come a long way since the early days of simple bookmarklets and basic scripts. In the 2010s, tools like Greasemonkey and [Tampermonkey](https://www.tampermonkey.net) allowed users to run custom JavaScript on websites, enabling rudimentary automation. By the mid-2020s, browser extensions like [User-Agent Switcher for Chrome](/blog/user-agent-switcher-chrome-guide) helped developers test websites across different environments, but these required manual configuration and technical knowledge.
+Browser automation has come a long way since the early days of simple bookmarklets and basic scripts. In the 2010s, tools like Greasemonkey and [Tampermonkey](https://www.tampermonkey.net) allowed users to run custom JavaScript on websites, enabling rudimentary automation. By the mid-2020s, browser extensions like User-Agent Switcher for Chrome helped developers test websites across different environments, but these required manual configuration and technical knowledge.
 
 The real paradigm shift began with the introduction of large language models (LLMs) that could understand natural language instructions. Suddenly, extensions could interpret commands like "find me flights to Tokyo next month under $500 and book the cheapest option" rather than requiring precise coding. By 2026, we're seeing the emergence of true agentic browsing assistants that don't just follow instructions but can break down complex goals into executable steps, make decisions based on available information, and learn from user feedback to improve their performance.
 
