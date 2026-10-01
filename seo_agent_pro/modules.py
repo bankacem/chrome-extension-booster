@@ -4,8 +4,14 @@ Each module is a pure function: takes inputs, calls the LLM, returns data.
 """
 
 import json
+import os
+import re
 
 from llm_router import call, call_json, c
+
+# Owner decisions 3b/3c (2026-10-01): word window + budgets shared with
+# gates.py so the strategy, the prompt ceiling and the gates cannot drift.
+from gates import WORD_MIN, WORD_MAX, wc as _wc
 
 
 # ──────────────────────────────────────────────────────────────
@@ -22,6 +28,39 @@ def _info(msg: str) -> None:
     print(c("dim", f"  · {msg}"))
 
 
+def _fetch_serp(keyword: str, n: int = 8) -> list:
+    """Real SERP rows from a SearXNG instance (owner decision 3a).
+
+    SEARXNG_URL env overrides the endpoint (default http://localhost:8888 —
+    the same local instance used in the bench-001 search-quality test and
+    the CI service-container plan). Returns [] when unreachable so callers
+    fall back to the legacy model-knowledge mode, DISCLOSED on stdout —
+    a silent fallback here is exactly the kind of quiet degradation the
+    owner banned in the bench-001 review.
+    """
+    import urllib.parse
+    import urllib.request
+
+    base = os.environ.get("SEARXNG_URL", "http://localhost:8888").rstrip("/")
+    url = f"{base}/search?" + urllib.parse.urlencode({"q": keyword, "format": "json"})
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=12) as r:
+            data = json.loads(r.read().decode("utf-8"))
+        rows = []
+        for res in data.get("results", [])[:n]:
+            rows.append({
+                "title": res.get("title", ""),
+                "url": res.get("url", ""),
+                "snippet": (res.get("content") or "")[:220],
+            })
+        return [r for r in rows if r["title"] or r["snippet"]]
+    except Exception as e:  # noqa: BLE001 — any failure means fallback
+        print(c("yellow", f"  ↳ SearXNG unreachable ({e}) — analyze_competitors "
+                          "falls back to MODEL-KNOWLEDGE mode (disclosed)"))
+        return []
+
+
 # ──────────────────────────────────────────────────────────────
 #  Module 1 — Competitor Analysis
 # ──────────────────────────────────────────────────────────────
@@ -29,12 +68,39 @@ def _info(msg: str) -> None:
 def analyze_competitors(keyword: str, model: str, lang: str = "en") -> dict:
     _step(f"Competitor Analysis  →  \"{keyword}\"")
 
-    system = (
-        f"You are a senior SEO analyst specializing in {lang} content. "
-        "Based on your knowledge of web content patterns, "
-        "analyze what the top-ranking pages for a given keyword typically look like."
-    )
-    user = f"""Analyze the competitive landscape for the keyword: "{keyword}"
+    serp_rows = _fetch_serp(keyword)
+    if serp_rows:
+        serp_block = "\n".join(
+            f"{i + 1}. {r['title']}\n   URL: {r['url']}\n   Snippet: {r['snippet']}"
+            for i, r in enumerate(serp_rows)
+        )
+        system = (
+            f"You are a senior SEO analyst specializing in {lang} content. "
+            "You are given REAL search-result rows (title, URL, snippet) fetched "
+            "live from a search engine. Analyze what these ACTUAL top-ranking "
+            "pages look like — do not invent competitors that are not in the rows."
+        )
+        user = f"""Live SERP rows for the keyword: "{keyword}"
+
+{serp_block}
+
+Analyze ONLY the pages listed above and return a JSON object:
+{{
+  "common_sections":    ["H2/H3 headings implied by these titles and snippets"],
+  "missing_gaps":       ["questions these results do not answer"],
+  "content_length_avg": "estimated average word count of these pages",
+  "seo_patterns":       ["structural or formatting patterns visible in the rows"],
+  "weaknesses":         ["what these specific pages do poorly"],
+  "why_they_rank":      "main reason these results rank (depth/authority/UX/etc)"
+}}"""
+        _ok(f"Real SERP rows from SearXNG: {len(serp_rows)}")
+    else:
+        system = (
+            f"You are a senior SEO analyst specializing in {lang} content. "
+            "Based on your knowledge of web content patterns, "
+            "analyze what the top-ranking pages for a given keyword typically look like."
+        )
+        user = f"""Analyze the competitive landscape for the keyword: "{keyword}"
 
 Return a JSON object:
 {{
@@ -79,13 +145,71 @@ Decide and return JSON:
 {{
   "ideal_length":       0,
   "required_sections":  ["list of H2 headings to include"],
+  "section_budgets":    [{{"heading": "section H2", "words": 0}}],
   "must_have_elements": ["table|FAQ|statistics|comparison|checklist|..."],
   "unique_angle":       "what makes this article stand out",
   "strategy":           "aggressive or strategic",
   "reasoning":          "one-sentence explanation"
-}}"""
+}}
+
+The article will be code-gated to {WORD_MIN}-{WORD_MAX} words total, so set
+ideal_length inside that window and make section_budgets sum to it."""
 
     result = call_json(system, user, model)
+
+    # ── Owner decision 3b: hard clamp. An unbounded model-chosen
+    # ideal_length is exactly what let bench-001 arm-A articles overflow to
+    # 5,000-6,500 words; nothing downstream can enforce a window when the
+    # target itself starts outside it.
+    try:
+        ideal = int(result.get("ideal_length", 0) or 0)
+    except (TypeError, ValueError):
+        ideal = 0
+    if not (WORD_MIN <= ideal <= WORD_MAX):
+        clamped = min(max(ideal, WORD_MIN), WORD_MAX) if ideal else WORD_MAX
+        _info(f"ideal_length {ideal} → clamped to {clamped} (window {WORD_MIN}-{WORD_MAX})")
+        ideal = clamped
+    result["ideal_length"] = ideal
+
+    # ── Owner decision 3b: deterministic per-section budgets. Model-provided
+    # budgets are accepted only when they roughly sum to the clamped target;
+    # otherwise code distributes: FAQ 12%, verdict/conclusion 10%, remainder
+    # split equally across content sections. This is what makes the section
+    # word budgets in write_article's prompt real numbers, not vibes.
+    budgets = result.get("section_budgets") or []
+    sections = [s for s in result.get("required_sections", []) if s]
+    try:
+        total = sum(int(b.get("words", 0) or 0) for b in budgets)
+    except (TypeError, ValueError, AttributeError):
+        total = 0
+    if not (budgets and sections and 0.8 * ideal <= total <= 1.2 * ideal):
+        per_section = max(150, int(ideal * 0.78 / max(1, len(sections))))
+        budgets = []
+        for s in sections:
+            name = str(s).strip()
+            low = name.lower()
+            if "faq" in low or "frequently asked" in low:
+                w = int(ideal * 0.12)
+            elif "verdict" in low or "conclusion" in low:
+                w = int(ideal * 0.10)
+            else:
+                w = per_section
+            budgets.append({"heading": name, "words": w})
+        allocated = sum(b["words"] for b in budgets)
+        leftover = ideal - allocated
+        free = [b for b in budgets
+                if "faq" not in b["heading"].lower()
+                and "frequently asked" not in b["heading"].lower()
+                and "verdict" not in b["heading"].lower()
+                and "conclusion" not in b["heading"].lower()]
+        if free and leftover:
+            add = leftover // len(free)
+            for b in free:
+                b["words"] = max(80, b["words"] + add)
+        result["section_budgets"] = budgets
+        _info(f"Section budgets computed in code: {len(budgets)} sections, target {ideal} words")
+    else:
+        _info("Using model-provided section budgets (sum within ±20% of target)")
 
     _ok(f"Strategy: {result.get('strategy', '?').upper()}")
     _ok(f"Target length: {result.get('ideal_length', '?')} words")
@@ -104,8 +228,9 @@ def write_article(keyword: str, strategy: dict, model: str, lang: str = "en") ->
     sections = strategy.get("required_sections", [])
     angle    = strategy.get("unique_angle", "")
     elements = strategy.get("must_have_elements", [])
+    budgets  = strategy.get("section_budgets", [])
 
-    _step(f"Writing Article  —  {length} words")
+    _step(f"Writing Article  —  {length} words (hard ceiling {WORD_MAX})")
 
     lang_instruction = f"Write in clear, engaging {lang}. Never sound robotic."
     if lang == "ar":
@@ -116,18 +241,28 @@ def write_article(keyword: str, strategy: dict, model: str, lang: str = "en") ->
         f"{lang_instruction} "
         "Prioritize Information Gain — include unique insights not found elsewhere."
     )
+    budget_lines = "\n".join(
+        f'- "{b.get("heading", "")}": ~{int(b.get("words", 0) or 0)} words'
+        for b in budgets
+    ) or "- Balance sections roughly equally"
+
     user = f"""Write a complete, high-ranking SEO article for: "{keyword}" in {lang}
 
 Specifications:
-- Target length:    {length} words
+- Target length:    {length} words — HARD CEILING {WORD_MAX} words total, never exceed it
 - Unique angle:     {angle}
 - Required H2s:     {', '.join(sections) if sections else 'choose the best structure'}
 - Must include:     {', '.join(elements) if elements else 'decide based on topic'}
+- Section budgets (keep every section close to its own budget):
+{budget_lines}
 
-Structure:
+Structure (every piece below is REQUIRED — the article is code-gated on them):
 # [H1 — includes primary keyword, compelling and clear]
 
 [Strong hook introduction — 3 paragraphs, establish the problem and promise]
+
+## Table of Contents
+- [Section name](#section-anchor) for every H2 below
 
 ## [H2]
 ### [H3 if needed]
@@ -135,24 +270,31 @@ Structure:
 
 [Repeat for all sections]
 
-[Comparison table if applicable]
+[Comparison table in its own section, with a |---| separator row]
 
 ## Frequently Asked Questions
-**Q: ...**
-A: ...
+### Q: [first question]?
+A: [2-4 sentence answer]
+[... exactly 8 questions, each an H3 heading under this section ...]
 
-## Conclusion
-[Summary + clear call to action]
+## Final Verdict
+[120+ words with a clear recommendation and one natural call-to-action]
 
 Rules:
 - Keyword in first 100 words naturally
 - Keyword density 1–2%, natural placement
 - Real or realistic statistics and data
 - Human, conversational tone
-- Add Information Gain: insights competitors missed"""
+- Add Information Gain: insights competitors missed
+- Respect every section budget; when a section runs long, compress it —
+  never exceed the {WORD_MAX}-word ceiling"""
 
     print(c("dim", "  " + "─" * 56))
-    article    = call(system, user, model, stream=True)
+    # Owner decision 3b: max_tokens sized from the window ceiling (~2 tokens
+    # per word plus headroom) so a runaway section physically cannot inflate
+    # the article to bench-001 arm-A lengths (5,000-6,500 words).
+    article    = call(system, user, model, stream=True,
+                      max_tokens=min(8192, int(WORD_MAX * 2)))
     word_count = len(article.split())
     print(c("dim", "  " + "─" * 56))
     _ok(f"Article complete — {word_count} words")
@@ -333,3 +475,170 @@ Assess topical authority and return JSON:
         _info(f"Write next → {a}")
 
     return result
+
+
+# ──────────────────────────────────────────────────────────────
+#  Module 8 — Targeted section repair  (owner decision 3d)
+# ──────────────────────────────────────────────────────────────
+
+def repair_section(keyword: str, strategy: dict, body: str, meta: str,
+                   failed: list, model: str) -> tuple[str, str]:
+    """Regenerate ONLY the failing part(s) instead of truncating the article.
+
+    Owner decision 3d: on gate failure, one targeted call per failing gate —
+    the failing SECTION is rewritten to its budget and spliced back, the rest
+    of the article is untouched. Deterministic (free) repairs run first; the
+    LLM is used only for what code cannot do. The CALLER caps this at
+    2 attempts (daily_article._generate_content).
+
+    Returns (body, meta).
+    """
+    import gates as G
+
+    # ── free deterministic fixes first ────────────────────────────────────
+    if any(f in failed for f in ("no_nested_links", "no_heading_links",
+                                 "no_split_words", "brackets_balanced")):
+        body = G.repair_damage(body)
+    if "toc" in failed:
+        body = G.rebuild_toc(body)
+    failed = G.run_gates(body, meta)["failed"]  # recompute what's left
+    if not failed:
+        return body, meta
+
+    budgets = {str(b.get("heading", "")).strip().lower():
+               int(b.get("words", 0) or 0)
+               for b in strategy.get("section_budgets", [])}
+    ideal = int(strategy.get("ideal_length", WORD_MAX) or WORD_MAX)
+
+    def _split_spans(text: str) -> list:
+        marks = [m.start() for m in re.finditer(r"^## ", text, flags=re.M)]
+        return [(s, marks[i + 1] if i + 1 < len(marks) else len(text))
+                for i, s in enumerate(marks)]
+
+    def _span_name(text: str, s: int, e: int) -> str:
+        return text[s:e].split("\n", 1)[0][3:].strip().lower()
+
+    def _regen(name: str, instruction: str, fallback_budget: int = 300) -> str:
+        """One targeted call: rewrite ONE section to spec, splice it back.
+        Missing sections are inserted before Final Verdict (or appended)."""
+        nonlocal body
+        target = None
+        for s, e in _split_spans(body):
+            if name in _span_name(body, s, e):
+                target = (s, e)
+                break
+        budget = budgets.get(name, fallback_budget) or fallback_budget
+        old = body[target[0]:target[1]] if target else "(section missing)"
+        sys_p = ("You are a professional SEO content writer. You rewrite ONE "
+                 "section of an article exactly to spec.")
+        usr = f"""Article topic: "{keyword}"
+Rewrite ONLY this one section. Return ONLY the section markdown (starting with
+its "## " heading), nothing else — no preamble, no code fences.
+
+Current section content:
+---
+{old[:4000]}
+---
+
+Requirements:
+{instruction}
+- Budget: ~{budget} words
+- Plain markdown; no nested links, no links inside headings, never split a
+  word or number with a link."""
+        new = call(sys_p, usr, model, stream=True,
+                   max_tokens=min(4096, int(budget * 3))).strip()
+        new = new.strip("`").strip()
+        if not new.startswith("## "):
+            new = f"## {name.title()}\n\n" + new
+        if target:
+            body = body[:target[0]] + new + "\n\n" + body[target[1]:].lstrip("\n")
+        else:
+            v_idx = body.rfind("## Final Verdict")
+            block = new + "\n\n"
+            if v_idx > 0:
+                body = body[:v_idx] + block + body[v_idx:]
+            else:
+                body = body + "\n\n" + new
+        return body
+
+    if "meta_window" in failed:
+        h1 = body.split("\n", 1)[0].lstrip("# ").strip() or keyword
+        new_meta = call(
+            "You write concise SEO meta descriptions. Reply with ONLY the "
+            "description text, no preamble, no quotes, 140-160 characters.",
+            f'Write a meta description for an article targeting the keyword '
+            f'"{keyword}". Article title: {h1}',
+            model, stream=False, max_tokens=200,
+        ).strip().strip('"')
+        if 120 <= len(new_meta) <= 160 and '"' not in new_meta and "\\" not in new_meta:
+            meta = new_meta
+
+    if "faq8" in failed:
+        body = _regen(
+            "frequently asked",
+            "- Heading exactly: ## Frequently Asked Questions\n"
+            f"- Exactly {G.FAQ_MIN_QUESTIONS} questions, each its own '### ' H3 "
+            "heading, each answered in 2-4 sentences.\n"
+            "- Questions must be real search queries about the topic.",
+            fallback_budget=int(ideal * 0.12))
+
+    if "comparison_table" in failed:
+        body = _regen(
+            "comparison",
+            "- Must contain a markdown comparison table: a header row, then a "
+            "|---| separator row, then 4-6 data rows comparing the main "
+            "options/features for this topic.\n"
+            "- Keep the table compact and factual.",
+            fallback_budget=350)
+
+    if "final_verdict" in failed:
+        body = _regen(
+            "final verdict",
+            "- Heading exactly: ## Final Verdict\n"
+            "- 130+ words, a clear recommendation, one natural call-to-action "
+            "sentence at the end.",
+            fallback_budget=220)
+
+    if "h2_sections" in failed:
+        have = {_span_name(body, s, e) for s, e in _split_spans(body)}
+        missing = [s for s in strategy.get("required_sections", [])
+                   if str(s).strip().lower() not in have][:2]
+        for s in missing:
+            body = _regen(str(s).strip().lower(),
+                          f"- Heading exactly: ## {s}\n"
+                          "- Substantive section content with concrete, "
+                          "topic-specific detail (no filler).",
+                          fallback_budget=budgets.get(str(s).strip().lower(), 350))
+
+    if "word_count" in failed:
+        words = G.wc(body)
+        if words > G.WORD_MAX:
+            spans = _split_spans(body)
+            if spans:
+                s, e = max(spans, key=lambda se: G.wc(body[se[0]:se[1]]))
+                name = _span_name(body, s, e)
+                body = _regen(
+                    name,
+                    "- This section is far too long and pushed the whole "
+                    f"article over the {G.WORD_MAX}-word ceiling. Compress it "
+                    f"to ~{budgets.get(name, 300)} words, keep the heading "
+                    "unchanged, keep its key facts, cut padding.",
+                    fallback_budget=budgets.get(name, 300))
+        elif words < G.WORD_MIN:
+            spans = _split_spans(body)
+            if spans:
+                ranked = sorted(spans, key=lambda se: G.wc(body[se[0]:se[1]]))
+                for s, e in ranked[:2]:
+                    name = _span_name(body, s, e)
+                    if "faq" in name or "contents" in name:
+                        continue
+                    body = _regen(
+                        name,
+                        f"- This section is too thin for the article's "
+                        f"{G.WORD_MIN}-word floor. Expand it to "
+                        f"~{budgets.get(name, 400)} words with concrete, "
+                        "topic-specific detail (steps, examples, numbers). "
+                        "Keep the heading unchanged.",
+                        fallback_budget=budgets.get(name, 400))
+
+    return body, meta
