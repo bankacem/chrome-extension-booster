@@ -33,7 +33,7 @@ description: >-
 <img src="/content/images/batch-open-tabs-scheduled-chrome/featured.webp" alt="Open Multiple URLs at Once: Batch Tab Opening & Scheduled Tab Sessions" width="1200" height="630" loading="lazy" class="featured-image">
 
 
-I've been there—staring at a list of 20 URLs I need to open for research, work, or just catching up on news. Manually clicking each one is tedious and time-consuming. If you're looking for ways to open multiple URLs at once in Chrome, you've come to the right place. This guide will walk you through the most effective methods for batch opening tabs and [scheduling tab sessions](/blog/session-buddy-chrome-extension-guide), tested thoroughly by me in various real-world scenarios.
+I've been there—staring at a list of 20 URLs I need to open for research, work, or just catching up on news. Manually clicking each one is tedious and time-consuming. If you're looking for ways to open multiple URLs at once in Chrome, you've come to the right place. This guide will walk you through the most effective methods for batch opening tabs and scheduling tab sessions, tested thoroughly by me in various real-world scenarios.
 
 Whether you're a power user managing multiple projects, a researcher handling dozens of sources, or someone who [wants to streamline their daily](/blog/chrome-extensions-for-managing-multiple-gmail-accounts) browsing routine, there's a solution here for you. I'll cover everything from simple copy-paste techniques to powerful Chrome extensions that can handle hundreds of URLs, plus scheduling options that work with Chrome's latest features including [Manifest V3](https://developer.chrome.com/docs/extensions/develop/concepts/manifest-v3) compatibility.
 

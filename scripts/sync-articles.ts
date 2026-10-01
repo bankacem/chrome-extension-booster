@@ -60,6 +60,7 @@ async function rebuildIndex() {
 
   const idMap = new Map<string, ArticleIndexItem>();
   let publishedOnDiskCount = 0;
+  const parseErrors: string[] = [];
 
   for (const filePath of allFiles) {
     try {
@@ -143,8 +144,21 @@ async function rebuildIndex() {
         idMap.set(id, newItem);
       }
     } catch (e) {
+      const errorMessage = e instanceof Error ? e.message : String(e);
       console.error(`[Index] Error processing ${filePath}:`, e);
+      parseErrors.push(`${filePath}: ${errorMessage.split('\n')[0]}`);
     }
+  }
+
+  // Fail loudly: a file that cannot be parsed means the published index would
+  // silently drift from the articles actually on disk. Abort the run (exit 1)
+  // so the workflow fails visibly instead of committing an incomplete index.
+  if (parseErrors.length > 0) {
+    console.error(`[Index] FAILING build: ${parseErrors.length} article file(s) could not be parsed:`);
+    for (const parseError of parseErrors) {
+      console.error(`[Index] parse error -> ${parseError}`);
+    }
+    process.exit(1);
   }
 
   // Deduplicate by slug — keep newest

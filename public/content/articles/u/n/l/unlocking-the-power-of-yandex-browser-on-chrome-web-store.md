@@ -80,7 +80,7 @@ Based on my hands-on testing, here's how different types of Chrome extensions ty
 | [Developer Tools](/blog/unlocking-the-power-of-kiwi-browser-developer-mode) | Low (30-40%) | Very Low (<10%) | Missing APIs, debugging limitations |
 | Media & Entertainment | High (80-90%) | Medium (40-50%) | Format compatibility issues |
 
-The most significant limitation I encountered was with extensions that require access to Chrome's internal APIs or modify browser behavior at a deep level. For example, when I tested [NoScript for Chrome: Better Security and Speed](/undefined) in Yandex Browser, I found that several of its advanced security features simply didn't work because they relied on Chrome-specific APIs that Yandex Browser doesn't fully implement.
+The most significant limitation I encountered was with extensions that require access to Chrome's internal APIs or modify browser behavior at a deep level. For example, when I tested NoScript for Chrome: Better Security and Speed in Yandex Browser, I found that several of its advanced security features simply didn't work because they relied on Chrome-specific APIs that Yandex Browser doesn't fully implement.
 
 ## Desktop Installation Process {#desktop-installation}
 
@@ -176,7 +176,7 @@ Here are the security best practices I recommend based on my testing:
 
 4. **Regularly audit installed extensions**: Periodically review your installed extensions and remove any you no longer use or that seem suspicious.
 
-When I tested [NoScript for Chrome: Better Security and Speed](/undefined) in Yandex Browser, I found that while it provided additional security layers, its functionality was limited compared to Chrome. This experience highlighted how security extensions may not perform at their full potential in browsers other than their native environment.
+When I tested NoScript for Chrome: Better Security and Speed in Yandex Browser, I found that while it provided additional security layers, its functionality was limited compared to Chrome. This experience highlighted how security extensions may not perform at their full potential in browsers other than their native environment.
 
 ### Privacy Implications
 

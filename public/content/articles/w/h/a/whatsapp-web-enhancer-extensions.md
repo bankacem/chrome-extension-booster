@@ -103,7 +103,7 @@ Implementing keyboard shortcuts requires a thoughtful approach rather than just 
 
 5. **Gradually expand your shortcut repertoire**: Don't try to learn 20 new shortcuts at once. Start with 3-5 essential ones, master them, then gradually add more as you become comfortable.
 
-One caveat to be aware of: some keyboard shortcuts may conflict with Chrome's default shortcuts or other extensions you're using. Before finalizing your setup, [test for conflicts by using](/blog/chrome-extension-keyboard-shortcuts-guide) the keyboard shortcuts in isolation and then with other extensions active. Our guide on [Chrome Extension Keyboard Shortcuts: Set, Test, and Avoid Conflicts](/blog/chrome-extension-keyboard-shortcuts-guide) offers more detailed troubleshooting for these situations.
+One caveat to be aware of: some keyboard shortcuts may conflict with Chrome's default shortcuts or other extensions you're using. Before finalizing your setup, test for conflicts by using the keyboard shortcuts in isolation and then with other extensions active. Our guide on Chrome Extension Keyboard Shortcuts: Set, Test, and Avoid Conflicts offers more detailed troubleshooting for these situations.
 
 ### Advanced Keyboard Automation
 

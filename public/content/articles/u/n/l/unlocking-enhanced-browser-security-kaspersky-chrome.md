@@ -277,7 +277,7 @@ Install only what matches a real need in your day — that is exactly how we tes
 
 After extensive testing and research, here are my top recommendations for getting the most out of Kaspersky Chrome:
 
-1. **Combine with Other Security Measures**: While Kaspersky Chrome provides excellent browser protection, it works best as part of a layered security approach. Consider pairing it with [NoScript for Chrome: Better Security and Speed](/undefined) for even more granular control over scripts and content.
+1. **Combine with Other Security Measures**: While Kaspersky Chrome provides excellent browser protection, it works best as part of a layered security approach. Consider pairing it with NoScript for Chrome: Better Security and Speed for even more granular control over scripts and content.
 
 2. **Regularly Review Your Exceptions**: It's easy to add sites to exceptions when you encounter issues, but over time this can reduce your protection. Periodically review your exceptions list and remove any that are no longer necessary.
 

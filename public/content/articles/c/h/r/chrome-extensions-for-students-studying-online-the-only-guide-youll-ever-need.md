@@ -373,9 +373,9 @@ You’ll see the difference in your focus, performance, and even your battery li
 ---  
 
 **Internal Links**  
-- [How to Use Google Docs for Remote Learning – A Step‑by‑Step Guide](/guides/google-docs-remote-learning)  
-- [Top 10 Free Tools for Virtual Group Projects](/guides/virtual-group-tools)  
-- [Chromebook Battery‑Saving Hacks for Students](/guides/chromebook-battery-hacks)  
+- How to Use Google Docs for Remote Learning – A Step‑by‑Step Guide  
+- Top 10 Free Tools for Virtual Group Projects  
+- Chromebook Battery‑Saving Hacks for Students  
 
 **External Links**  
 - Grammarly – <https://chrome.google.com/webstore/detail/grammarly>  

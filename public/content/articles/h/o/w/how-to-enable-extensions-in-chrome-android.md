@@ -108,7 +108,7 @@ The most direct way to enable Chrome extensions on Android mobile is through Chr
 
 In my testing with Chrome Beta on both a Samsung Galaxy A52 and a Google Pixel 7 Pro, I found that extension support works well for basic extensions but has some limitations. Performance was generally acceptable on my Pixel 7 Pro with 8GB of RAM, but on the Samsung A52 with 6GB RAM, I noticed some lag when multiple extensions were active.
 
-The biggest advantage of this method is that it allows you to install many desktop extensions without modification. I successfully tested uBlock Origin, Grammarly, and Honey—all worked as expected. However, more complex extensions [like React DevTools experienced compatibility](/blog/unlocking-the-power-of-react-devtools-for-chrome-mobile) issues, as noted in our guide on [React DevTools on Chrome Mobile: Does It Work?](/undefined).
+The biggest advantage of this method is that it allows you to install many desktop extensions without modification. I successfully tested uBlock Origin, Grammarly, and Honey—all worked as expected. However, more complex extensions [like React DevTools experienced compatibility](/blog/unlocking-the-power-of-react-devtools-for-chrome-mobile) issues, as noted in our guide on React DevTools on Chrome Mobile: Does It Work?.
 
 One significant limitation is that Chrome Beta doesn't support all Chrome Web Store extensions. Many developers haven't optimized their extensions for mobile, so you may encounter compatibility warnings or non-functional features. Additionally, some extensions that require extensive background processing may drain your battery more quickly.
 
@@ -377,7 +377,7 @@ Some websites actively block or interfere with certain extensions for various re
 
 ### Can I use developer tools like React DevTools on mobile Chrome?
 
-While some developer tools have limited mobile support, they often don't work as comprehensively as on desktop. For detailed development work on mobile, you may need to use alternative solutions like remote debugging or specialized mobile development tools. Our guide on [React DevTools on Chrome Mobile: Does It Work?](/undefined) provides more specific information about this particular extension.
+While some developer tools have limited mobile support, they often don't work as comprehensively as on desktop. For detailed development work on mobile, you may need to use alternative solutions like remote debugging or specialized mobile development tools. Our guide on React DevTools on Chrome Mobile: Does It Work? provides more specific information about this particular extension.
 
 ### What's the best browser for Chrome extensions on Android?
 

@@ -90,7 +90,7 @@ This creates an interesting tension between customization and privacy. The good 
 
 ### Productivity and Workflow Enhancement
 
-For power users and professionals, the ability to run Chrome extensions on Brave Android can transform how you work on the go. I've personally found extensions like [Pocket](//extension/pocket) for saving articles and [Grammarly](//extension/grammarly) for writing assistance to be invaluable during mobile work sessions.
+For power users and professionals, the ability to run Chrome extensions on Brave Android can transform how you work on the go. I've personally found extensions like Pocket for saving articles and Grammarly for writing assistance to be invaluable during mobile work sessions.
 
 In my experience, the most valuable extensions for mobile productivity fall into three categories: content management (saving, reading, organizing), writing enhancement (grammar, spelling, style), and workflow automation (form fillers, password managers). Each category brings unique benefits that can significantly improve your mobile browsing efficiency.
 
