@@ -1,0 +1,70 @@
+name: Model Fit Check (agents_v2 — cleanapis)
+
+# Owner spec ب2: which candidate models actually support the agent workload?
+#  - dispatch-only (workflow_dispatch) — no cron, no automatic runs
+#  - permissions: contents: read ONLY
+#  - NO commit / NO push — results are uploaded as artifacts only
+#  - the key enters ONLY via env from GitHub Secrets (CLEANAPIS), never printed,
+#    no `set -x` anywhere
+#  - hard cap on total model calls per run (input max_calls, default 250);
+#    reaching the cap stops the run cleanly and partial artifacts are kept
+#  - job-level timeout (GitHub has no workflow-level timeout knob; one job =
+#    the whole workflow, so this is the effective global ceiling)
+#  - FIRST LOG LINE: model names returned by /v1/models (names only)
+#
+# NOTE: per owner rule, this workflow only RUNS after it is merged into main.
+
+on:
+  workflow_dispatch:
+    inputs:
+      models:
+        description: "Optional CSV of model ids to test (default: all models.json candidates)"
+        required: false
+        default: ""
+      trials:
+        description: "Trials per item (owner spec: 10, hard-capped at 10)"
+        required: false
+        default: "10"
+      max_calls:
+        description: "Hard cap on total model calls for the whole run"
+        required: false
+        default: "250"
+
+concurrency:
+  group: model-fit-check
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  model-fit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run model fit check (key via env only — never printed, no set -x)
+        env:
+          CLEANAPIS_KEY: ${{ secrets.CLEANAPIS || secrets.CLEANAPIS_KEY }}
+        run: |
+          set -e
+          python3 seo_agent_pro/agents_v2/model_fit.py \
+            --models "${{ inputs.models }}" \
+            --trials "${{ inputs.trials }}" \
+            --max-calls "${{ inputs.max_calls }}" \
+            --out /tmp/model_fit
+
+      - name: Upload results as artifacts (no commit, no push)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: model-fit-results
+          path: /tmp/model_fit/
+          retention-days: 14
