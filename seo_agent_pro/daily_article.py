@@ -28,7 +28,12 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 import modules as agent  # noqa: E402
 import memory  # noqa: E402
-from llm_router import call, find_working_model  # noqa: E402
+from gates import run_gates  # noqa: E402  (owner decision 3c/3d)
+# `c` added: the guaranteed-meta_description fallback (and the gates loop)
+# print via c() but it was never imported — a latent NameError on the rare
+# empty-meta path that production never happened to hit until the gates loop
+# made failure printing routine. Found by the bench-002 IMP pilot run.
+from llm_router import call, find_working_model, c  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE_PATH = Path(__file__).parent / "keyword_queue.txt"
@@ -420,6 +425,30 @@ def _generate_content(keyword: str, articles_written: int, model: str) -> tuple[
             f"{title} — practical guide with the tools, settings and tips you need."
         )[:158].rstrip()
         print(c("yellow", f"  ↳ meta description empty from model — using fallback: {meta_description!r}"))
+
+    # ── Owner decisions 3c + 3d (2026-10-01): deterministic code gates, then
+    # AT MOST 2 targeted regenerations of the failing section only. The old
+    # behavior shipped whatever the model returned (bench-001 arm A: 5,000-
+    # 6,500-word overflows with zero structural requirements); silent
+    # truncation is also gone — a still-failing run FAILS LOUDLY so the PR
+    # gate catches it instead of publishing an out-of-window article.
+    g = run_gates(body, meta_description)
+    attempts = 0
+    while not g["pass"] and attempts < 2:
+        attempts += 1
+        print(c("yellow", f"  ✗ gates failed: {g['failed']} — "
+                          f"targeted repair {attempts}/2 (section-level, no truncation)"))
+        body, meta_description = agent.repair_section(
+            keyword, strategy, body, meta_description, list(g["failed"]), model)
+        g = run_gates(body, meta_description)
+    if not g["pass"]:
+        raise RuntimeError(
+            f"Gates still failing after 2 targeted repairs: {g['failed']} "
+            f"(words={g['words']}, h2={g['h2']}, faq_h3={g['faq_h3']}, "
+            f"meta_len={len(meta_description)})")
+    print(c("green", f"  ✓ gates PASS — words={g['words']} h2={g['h2']} "
+                     f"faq_h3={g['faq_h3']} verdict={g['verdict_chars']} "
+                     f"(repair attempts: {attempts})"))
 
     return title, body, meta_description
 
