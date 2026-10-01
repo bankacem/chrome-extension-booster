@@ -13,8 +13,8 @@ keywords:
   - chrome translation extension
   - translate website automatically chrome
   - automatic page translation setting
-meta_description: "Learn how to translate web pages automatically in Chrome. Enable built-in auto-translate, configure language preferences, and discover extensions for better translation quality."
-status: draft
+meta_description: "Enable automatic web page translation in Chrome with built-in settings and extensions for seamless multilingual browsing."
+status: published
 published_at: "2026-09-05T11:00:00Z"
 scheduled_at: "2026-09-05T11:00:00Z"
 author: "James Mitchell"

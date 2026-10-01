@@ -91,7 +91,7 @@ While many extensions work well on Brave mobile, some perform better than others
 
 ### Productivity Extensions
 
-1. **[uBlock Origin](https://github.com/gorhill/uBlock)**: This ad blocker performs exceptionally well on Brave mobile, complementing rather than conflicting with Brave's built-[in ad blocking](/blog/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile). In my testing, it provided additional blocking capabilities without noticeable performance impact.
+1. **[uBlock Origin](https://github.com/gorhill/uBlock)**: This ad blocker performs exceptionally well on Brave mobile, complementing rather than conflicting with Brave's built-[in ad blocking](/blog/adblock-chrome-android-complete-guide-2026). In my testing, it provided additional blocking capabilities without noticeable performance impact.
 
 2. **[LastPass](https://www.lastpass.com) Password Manager**: The mobile version of LastPass integrates seamlessly with Brave's autofill features, making password management on mobile as convenient as on desktop.
 
@@ -117,7 +117,7 @@ While many extensions work well on Brave mobile, some perform better than others
 
 1. **[React DevTools](/blog/unlocking-the-power-of-react-devtools-for-chrome-mobile)**: While primarily for developers, this extension works surprisingly well on Brave mobile for basic debugging and inspection tasks. For more information about mobile compatibility with developer tools, you can check our guide on [React DevTools on Chrome Mobile: Does It Work?](/blog/unlocking-the-power-of-to-extension).
 
-2. **[TubeBuddy](/blog/unlocking-the-power-of-youtube-with-google-chrome-tubebuddy)**: For YouTube creators, this extension provides valuable analytics and optimization tools that translate well to mobile usage. If you're interested in creator-focused extensions, our article on [TubeBuddy for Chrome: Features Creators Want](/undefined) offers more insights.
+2. **[TubeBuddy](/blog/unlocking-the-power-of-youtube-with-google-chrome-tubebuddy)**: For YouTube creators, this extension provides valuable analytics and optimization tools that translate well to mobile usage. If you're interested in creator-focused extensions, our article on TubeBuddy for Chrome: Features Creators Want offers more insights.
 
 3. **Grammarly**: As mentioned earlier, while the full desktop experience isn't available, the Grammarly keyboard extension works well with Brave for basic grammar and spelling checks.
 
@@ -174,7 +174,7 @@ When evaluating extensions for use on Brave mobile, I recommend the following se
 - Keep extensions updated to ensure you have the latest security patches.
 - Be particularly cautious with extensions that request extensive permissions or seem to perform unusual functions.
 
-For enhanced security, consider using extensions like HTTPS Everywhere to ensure secure connections and Privacy Badger to prevent tracking. You can learn more about effective ad blocking strategies in our guide on [Using AdBlock on Chrome for Android](/blog/unlocking-the-power-of-adblock-chrome-on-android) and [Adblock in Chrome Mobile](/undefined).
+For enhanced security, consider using extensions like HTTPS Everywhere to ensure secure connections and Privacy Badger to prevent tracking. You can learn more about effective ad blocking strategies in our guide on [Using AdBlock on Chrome for Android](/blog/adblock-chrome-android-complete-guide-2026) and Adblock in Chrome Mobile.
 
 ### Security Comparison: Brave vs. Other Browsers
 
@@ -204,7 +204,7 @@ Samsung Internet has offered extension support for some time and is one of Brave
 
 ### Brave vs. Yandex Browser
 
-Yandex Browser also supports Chrome extensions, but with some limitations. Our article on [Does Yandex Browser Support Chrome Extensions?](/undefined) provides more detailed information, but here are the key differences I observed:
+Yandex Browser also supports Chrome extensions, but with some limitations. Our article on Does Yandex Browser Support Chrome Extensions? provides more detailed information, but here are the key differences I observed:
 
 - **Extension Selection**: Yandex has its own extension store in addition to the Chrome Web Store, but the quality varies more than Brave's offerings.
 - **Privacy Features**: Brave's built-in privacy protections are more comprehensive than Yandex's.
@@ -345,7 +345,7 @@ To evaluate extension safety on mobile, check the number of users and ratings in
 
 ### Can I use developer extensions like React DevTools on Brave mobile?
 
-Some developer extensions work on Brave mobile, but with limitations. For example, basic debugging and inspection tools function reasonably well, but more complex developer tools may not have full mobile functionality. Our guide on [React DevTools on Chrome Mobile: Does It Work?](/undefined) provides more specific information about developer tool compatibility.
+Some developer extensions work on Brave mobile, but with limitations. For example, basic debugging and inspection tools function reasonably well, but more complex developer tools may not have full mobile functionality. Our guide on React DevTools on Chrome Mobile: Does It Work? provides more specific information about developer tool compatibility.
 
 ### What should I do if an extension is causing problems on Brave mobile?
 

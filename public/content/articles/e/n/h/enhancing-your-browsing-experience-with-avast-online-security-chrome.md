@@ -289,7 +289,7 @@ After extensive testing and real-world use of Avast Online Security Chrome, I've
 
 ### Pro Tips for Maximum Protection
 
-1. **Combine with Other Security Tools**: While Avast Online Security Chrome provides excellent browser protection, it works best when combined with other security measures. Use it alongside a reputable password manager like [Avast Password Manager](/undefined) for comprehensive credential security.
+1. **Combine with Other Security Tools**: While Avast Online Security Chrome provides excellent browser protection, it works best when combined with other security measures. Use it alongside a reputable password manager like Avast Password Manager for comprehensive credential security.
 
 2. **Customize Security Levels for Different Activities**: Adjust the extension's security level based on your browsing activities. Use maximum protection when banking or shopping, and standard protection for general browsing to optimize performance.
 

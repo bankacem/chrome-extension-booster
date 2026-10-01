@@ -240,13 +240,13 @@ Once you've mastered dark mode on Google Search, you might want to extend this c
 
 Many of the websites you visit regularly likely support dark mode:
 
-- **[Wikipedia](/blog/activate-dark-mode-on-wikipedia-for-night-reading-2)** offers a comprehensive dark mode that's easy on the eyes during research sessions. For a detailed guide on [how to enable dark mode on Wikipedia for night reading](/undefined), our team has prepared a step-by-step walkthrough.
+- **[Wikipedia](/blog/activate-dark-mode-on-wikipedia-for-night-reading-2)** offers a comprehensive dark mode that's easy on the eyes during research sessions. For a detailed guide on how to enable dark mode on Wikipedia for night reading, our team has prepared a step-by-step walkthrough.
 
 - **Social media platforms** like [Instagram](https://www.instagram.com), [Pinterest](https://www.pinterest.com), and Twitter all support dark mode. If you're interested in enabling dark mode across multiple platforms, our guide on [how to enable dark mode on Pinterest, Instagram, Netflix, GitHub, StackOverflow, and more](/blog/how-to-enable-dark-mode-on-pinterest-instagram-netflix-github-stackoverflow-etc-5) covers the most popular services.
 
-- **Video platforms** [like YouTube offer excellent](/blog/youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds) dark mode implementations. For the latest on [YouTube dark mode desktop 2026](/undefined), including new features and optimization tips, check out our dedicated guide.
+- **Video platforms** [like YouTube offer excellent](/blog/youtube-dark-mode-desktop-2026-turn-it-on-in-30-seconds) dark mode implementations. For the latest on YouTube dark mode desktop 2026, including new features and optimization tips, check out our dedicated guide.
 
-- **E-commerce sites** like Amazon also support dark mode, though implementation varies. Our team has tested [how to force dark mode on the Amazon website](/undefined) for those late-night shopping sessions.
+- **E-commerce sites** like Amazon also support dark mode, though implementation varies. Our team has tested how to force dark mode on the Amazon website for those late-night shopping sessions.
 
 ### Browser-Level Dark Mode Solutions
 

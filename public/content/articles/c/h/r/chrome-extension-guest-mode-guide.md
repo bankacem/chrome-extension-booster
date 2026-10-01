@@ -20,7 +20,7 @@ keywords:
   - guest mode browser extensions
   - chrome guest session extensions
 meta_description: "Discover which Chrome extensions work in Guest Mode, why most are disabled, and how to configure exceptions for trusted extensions."
-status: draft
+status: published
 published_at: "2026-09-21T11:00:00Z"
 scheduled_at: "2026-09-21T11:00:00Z"
 author: "James Mitchell"

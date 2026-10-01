@@ -28,7 +28,9 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 import modules as agent  # noqa: E402
 import memory  # noqa: E402
-from llm_router import call, find_working_model  # noqa: E402
+# `c` added: the empty-meta_description fallback prints via c("yellow", ...)
+# but was never imported — a latent NameError on the rare empty-meta path.
+from llm_router import call, find_working_model, c  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE_PATH = Path(__file__).parent / "keyword_queue.txt"

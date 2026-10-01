@@ -13,7 +13,7 @@ keywords:
   - chrome extension service worker dom
   - offscreen api tutorial
 meta_description: "Learn when and how to use Chrome extension offscreen documents in Manifest V3 to access the DOM from service workers for canvas, parsing, and rendering tasks."
-status: draft
+status: published
 published_at: "2026-09-17T11:00:00Z"
 scheduled_at: "2026-09-17T11:00:00Z"
 author: "James Mitchell"

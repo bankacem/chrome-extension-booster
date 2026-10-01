@@ -14,8 +14,8 @@ keywords:
   - academic research chrome extension
   - auto cite chrome extension
   - reference manager browser extension
-meta_description: "Discover the best Chrome extensions for citation and bibliography management. Compare Zotero, Mendeley, MyBib, and more for automated reference capture and formatting."
-status: draft
+meta_description: "Save hours of research time with top Chrome extensions for automated citation and bibliography management across academic sources."
+status: published
 published_at: "2026-09-06T11:00:00Z"
 scheduled_at: "2026-09-06T11:00:00Z"
 author: "James Mitchell"

@@ -227,7 +227,7 @@ In my testing, I've found that mobile JavaScript performance often suffers from:
 - Excessive DOM manipulation
 - Inefficient event handling (particularly scroll and resize events)
 - Memory leaks from improper cleanup
-- [Blocking main thread](/blog/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile) operations during user interaction
+- [Blocking main thread](/blog/adblock-chrome-android-complete-guide-2026) operations during user interaction
 
 For mobile-specific JavaScript optimization, these techniques have proven effective in my experience:
 

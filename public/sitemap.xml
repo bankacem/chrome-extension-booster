@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://extensionto.com/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es"/>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog"/>
@@ -23,19 +23,19 @@
   </url>
   <url>
     <loc>https://extensionto.com/privacy</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/terms</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/editorial-policy</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/fr</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es"/>
@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://extensionto.com/es</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es"/>
@@ -55,7 +55,7 @@
   </url>
   <url>
     <loc>https://extensionto.com/pt</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es"/>
@@ -65,7 +65,7 @@
   </url>
   <url>
     <loc>https://extensionto.com/ar</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es"/>
@@ -75,7 +75,7 @@
   </url>
   <url>
     <loc>https://extensionto.com/fr/blog</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog"/>
@@ -85,7 +85,7 @@
   </url>
   <url>
     <loc>https://extensionto.com/es/blog</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog"/>
@@ -95,7 +95,7 @@
   </url>
   <url>
     <loc>https://extensionto.com/pt/blog</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog"/>
@@ -105,7 +105,7 @@
   </url>
   <url>
     <loc>https://extensionto.com/ar/blog</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://extensionto.com/blog"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://extensionto.com/fr/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://extensionto.com/es/blog"/>
@@ -115,38 +115,42 @@
   </url>
   <url>
     <loc>https://extensionto.com/extension/quick-screenshot-lite</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/extension/auto-dark-mode-switcher</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/extension/redirect-shield</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/extension/protab-suspender</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/extension/light-popup-blocker</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/extension/formula-builder-pro</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/extension/securakey-pro</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/extension/offline-reader-pro</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/extension/cookie-banner-blocker</loc>
+    <lastmod>2026-10-01</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extensions-for-focus-and-deep-work-sessions-the-only-hands-on-tested-privacy-audited-performance-benchmarked-guide</loc>
     <lastmod>2026-09-30</lastmod>
   </url>
   <url>
@@ -254,6 +258,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/auto-currency-converter-chrome-extensions"/>
   </url>
   <url>
+    <loc>https://extensionto.com/blog/chrome-extension-reading-list-workflow-guide</loc>
+    <lastmod>2026-09-27</lastmod>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/tab-counter-stats-chrome-extensions</loc>
     <lastmod>2026-09-27</lastmod>
   </url>
@@ -292,6 +300,10 @@
   <url>
     <loc>https://extensionto.com/blog/chrome-autoscroll-reading-aids</loc>
     <lastmod>2026-09-27</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-tab-groups-save-restore-extension-guide</loc>
+    <lastmod>2026-09-26</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/gemini-in-chrome-2026-complete-guide</loc>
@@ -394,6 +406,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://extensionto.com/blog/gemini-in-chrome-2026-complete-guide"/>
   </url>
   <url>
+    <loc>https://extensionto.com/blog/chrome-extension-version-check-guide</loc>
+    <lastmod>2026-09-25</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-background-error-console-guide</loc>
+    <lastmod>2026-09-24</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-clipboard-permission-guide</loc>
+    <lastmod>2026-09-23</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-chrome-pages-access-guide</loc>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/text-expander-chrome-extensions</loc>
     <lastmod>2026-09-22</lastmod>
   </url>
@@ -416,6 +444,10 @@
   <url>
     <loc>https://extensionto.com/blog/calendar-chrome-extensions</loc>
     <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-guest-mode-guide</loc>
+    <lastmod>2026-09-21</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/session-isolation-multiple-accounts</loc>
@@ -458,6 +490,10 @@
     <lastmod>2026-09-21</lastmod>
   </url>
   <url>
+    <loc>https://extensionto.com/blog/chrome-extension-web-accessible-resources-guide</loc>
+    <lastmod>2026-09-20</lastmod>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/pomodoro-focus-timer-chrome-extensions</loc>
     <lastmod>2026-09-20</lastmod>
   </url>
@@ -480,6 +516,38 @@
   <url>
     <loc>https://extensionto.com/blog/chrome-passkeys-passwordless-guide-2026</loc>
     <lastmod>2026-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-content-security-policy-guide</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-user-scripts-api-guide</loc>
+    <lastmod>2026-09-18</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-offscreen-documents-guide</loc>
+    <lastmod>2026-09-17</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-web-store-extension-rejected-guide</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-web-store-pending-review-guide</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-storage-limits-guide</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extensions-backup-and-restore-guide</loc>
+    <lastmod>2026-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-settings-lost-after-reinstall-guide</loc>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/youtube-extensions-that-actually-save-you-time</loc>
@@ -506,6 +574,22 @@
     <lastmod>2026-09-12</lastmod>
   </url>
   <url>
+    <loc>https://extensionto.com/blog/chrome-extension-update-delayed-guide</loc>
+    <lastmod>2026-09-11</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-icon-missing-toolbar-guide</loc>
+    <lastmod>2026-09-10</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-popup-not-opening-guide</loc>
+    <lastmod>2026-09-09</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extension-sync-not-working-guide</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/safari-extensions-guide-2026</loc>
     <lastmod>2026-09-07T12:00:00.000+00:00</lastmod>
   </url>
@@ -520,6 +604,10 @@
   <url>
     <loc>https://extensionto.com/blog/what-is-a-browser-extension-2026</loc>
     <lastmod>2026-09-07T09:00:00.000+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/best-chrome-extensions-for-language-translation</loc>
+    <lastmod>2026-09-07</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/what-are-tracking-cookies-remove-chrome</loc>
@@ -666,6 +754,22 @@
     <lastmod>2026-09-06T09:00:00.000+00:00</lastmod>
   </url>
   <url>
+    <loc>https://extensionto.com/blog/how-to-translate-web-pages-automatically-in-chrome</loc>
+    <lastmod>2026-09-05</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extensions-for-managing-multiple-gmail-accounts</loc>
+    <lastmod>2026-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extensions-for-reducing-eye-strain</loc>
+    <lastmod>2026-09-03</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/best-chrome-extensions-for-meeting-notes</loc>
+    <lastmod>2026-09-02</lastmod>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/youtube-adblock-chrome-guide</loc>
     <lastmod>2026-09-01</lastmod>
   </url>
@@ -675,6 +779,10 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/manifest-v3-adblock-chrome-guide</loc>
+    <lastmod>2026-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/best-chrome-extensions-for-freelancers</loc>
     <lastmod>2026-09-01</lastmod>
   </url>
   <url>
@@ -707,6 +815,10 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/chrome-extension-keyboard-shortcuts-not-working-fix</loc>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/best-chrome-extensions-for-social-media-managers</loc>
     <lastmod>2026-08-31</lastmod>
   </url>
   <url>
@@ -1040,6 +1152,10 @@
   <url>
     <loc>https://extensionto.com/blog/chrome-omnibox-guide</loc>
     <lastmod>2026-08-22</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/chrome-extensions-for-citation-and-bibliography-management</loc>
+    <lastmod>2026-08-21</lastmod>
   </url>
   <url>
     <loc>https://extensionto.com/blog/ai-tab-manager-chrome-extension-a-verification-first-buyers-guide</loc>
@@ -3278,6 +3394,10 @@
     <lastmod>2026-03-04</lastmod>
   </url>
   <url>
+    <loc>https://extensionto.com/blog/how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting</loc>
+    <lastmod>2026-03-04</lastmod>
+  </url>
+  <url>
     <loc>https://extensionto.com/blog/how-to-get-a-clean-browsing-experience-on-chrome-4</loc>
     <lastmod>2026-03-03</lastmod>
   </url>
@@ -3475,6 +3595,10 @@
   </url>
   <url>
     <loc>https://extensionto.com/blog/google-trad-plugin-15</loc>
+    <lastmod>2026-02-22</lastmod>
+  </url>
+  <url>
+    <loc>https://extensionto.com/blog/https-sci-hub-se-chrome-extension-16</loc>
     <lastmod>2026-02-22</lastmod>
   </url>
   <url>

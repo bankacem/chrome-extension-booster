@@ -13,8 +13,8 @@ keywords:
   - real-time translation chrome extension
   - language learning translation chrome
   - professional translation chrome extension
-meta_description: "Compare the best Chrome extensions for language translation in 2026. Find the right tool for page translation, language learning, professional work, and quick word lookup."
-status: draft
+meta_description: "Discover the best Chrome extensions for language translation in 2026 tailored to your specific needs from casual browsing to professional work."
+status: published
 published_at: "2026-09-07T11:00:00Z"
 scheduled_at: "2026-09-07T11:00:00Z"
 author: "James Mitchell"

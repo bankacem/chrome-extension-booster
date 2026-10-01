@@ -230,7 +230,7 @@ The extension can serve as a trigger for more complex automation workflows when 
 For content creators, this approach allows for automated monitoring of competitor channels, algorithm changes, or trending topics, with the extension serving as the initial detection mechanism.
 
 ### Enhancing Ad-Blocking Efficiency
-When used alongside [Unlocking a Faster Browsing Experience: The Power of Extension Ad Block Plus](/undefined), the extension auto refresh plus creates a more streamlined browsing experience:
+When used alongside Unlocking a Faster Browsing Experience: The Power of Extension Ad Block Plus, the extension auto refresh plus creates a more streamlined browsing experience:
 
 1. Configure the ad blocker to remove distractions
 2. Use the extension to ensure content updates aren't blocked

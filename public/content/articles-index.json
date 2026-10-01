@@ -1,5 +1,27 @@
 [
   {
+    "id": "ebdfbce5-5fba-4d0f-aa6c-fd22dc476f80",
+    "title": "Chrome Extensions for Focus and Deep Work Sessions: The Only Hands-On Tested, Privacy-Audited & Performance-Benchmarked Guide",
+    "slug": "chrome-extensions-for-focus-and-deep-work-sessions-the-only-hands-on-tested-privacy-audited-performance-benchmarked-guide",
+    "description": "Discover the best chrome extensions for focus and deep work sessions, hands-on tested and privacy-audited. Boost productivity and block distractions today.",
+    "meta_description": "Discover the best chrome extensions for focus and deep work sessions, hands-on tested and privacy-audited. Boost productivity and block distractions today.",
+    "excerpt": "Discover the best chrome extensions for focus and deep work sessions, hands-on tested and privacy-audited. Boost productivity and block distractions today.",
+    "published_at": "2026-09-30T00:00:00.000Z",
+    "category": "Productivity & Tools",
+    "author": "Miccart Phen",
+    "image_url": "/og-image.png",
+    "featured_image": "/og-image.png",
+    "reading_time": 15,
+    "read_time": 15,
+    "views": 0,
+    "tags": [],
+    "keywords": [
+      "chrome extensions for focus and deep work sessions"
+    ],
+    "canonicalPath": "/blog/chrome-extensions-for-focus-and-deep-work-sessions-the-only-hands-on-tested-privacy-audited-performance-benchmarked-guide",
+    "updated_at": "2026-09-30T00:00:00.000Z"
+  },
+  {
     "id": "auto-currency-converter-chrome-extensions",
     "title": "Auto Currency Converter Chrome Extensions: See Prices in Your Currency (2026)",
     "slug": "auto-currency-converter-chrome-extensions",
@@ -82,6 +104,38 @@
     ],
     "canonicalPath": "/blog/chrome-extensions-for-students-studying-online-the-only-guide-youll-ever-need",
     "updated_at": "2026-09-29T00:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-prod-0008",
+    "title": "Chrome Extensions for a Reliable Read-Later Workflow: Capture, Review, and Export",
+    "slug": "chrome-extension-reading-list-workflow-guide",
+    "description": "Build a dependable read later workflow with Chrome extensions. Compare capture speed, organization, reading experience, export options, and privacy for the",
+    "meta_description": "Build a dependable read later workflow with Chrome extensions. Compare capture speed, organization, reading experience, export options, and privacy for the",
+    "excerpt": "A dependable read-later workflow requires fast capture, meaningful organization, a focused reading experience, and reliable export options. This guide evaluates Chrome extensions across all four phases to help you build or improve your read-later system.",
+    "published_at": "2026-09-27T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-reading-list-workflow-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-reading-list-workflow-guide/featured.webp",
+    "reading_time": 14,
+    "read_time": 14,
+    "views": 0,
+    "tags": [
+      "reading list",
+      "read later",
+      "bookmarks",
+      "productivity",
+      "chrome extensions",
+      "pocket alternative"
+    ],
+    "keywords": [
+      "chrome extension read later workflow",
+      "chrome read later extension",
+      "chrome reading list extension",
+      "best read later extension chrome"
+    ],
+    "canonicalPath": "/blog/chrome-extension-reading-list-workflow-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
     "id": "tab-counter-stats-chrome-extensions",
@@ -394,6 +448,38 @@
     "updated_at": "2026-09-27T23:57:56.000Z"
   },
   {
+    "id": "a1b2c3d4-prod-0007",
+    "title": "Save and Restore Chrome Tab Groups with an Extension: What to Check",
+    "slug": "chrome-tab-groups-save-restore-extension-guide",
+    "description": "Want to save and restore Chrome tab groups reliably? Learn how tab group extensions work, what data they store, and which criteria matter for privacy and",
+    "meta_description": "Want to save and restore Chrome tab groups reliably? Learn how tab group extensions work, what data they store, and which criteria matter for privacy and",
+    "excerpt": "Chrome tab groups organize browsing visually, but they are session-bound and can vanish unexpectedly. This guide examines how tab group extensions save and restore groups, what data they store, which privacy risks to evaluate, and the key limitations that affect reliability.",
+    "published_at": "2026-09-26T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-tab-groups-save-restore-extension-guide/featured.webp",
+    "featured_image": "/content/images/chrome-tab-groups-save-restore-extension-guide/featured.webp",
+    "reading_time": 13,
+    "read_time": 13,
+    "views": 0,
+    "tags": [
+      "tab groups",
+      "save",
+      "restore",
+      "session management",
+      "chrome",
+      "productivity"
+    ],
+    "keywords": [
+      "save chrome tab groups extension",
+      "restore tab groups chrome",
+      "chrome tab groups backup",
+      "tab group saver extension"
+    ],
+    "canonicalPath": "/blog/chrome-tab-groups-save-restore-extension-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
     "id": "gemini-in-chrome-2026-complete-guide",
     "title": "Gemini in Chrome 2026: The Complete Guide to Google's AI Browser Features",
     "slug": "gemini-in-chrome-2026-complete-guide",
@@ -456,6 +542,136 @@
     ],
     "canonicalPath": "/blog/best-ai-chrome-extensions-2026",
     "updated_at": "2026-09-26T09:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-trbl-0009",
+    "title": "How to Check a Chrome Extension Version and Update Status",
+    "slug": "chrome-extension-version-check-guide",
+    "description": "Learn how to check a Chrome extension version and update status using built-in methods, the Web Store, and developer APIs for complete version visibility.",
+    "meta_description": "Learn how to check a Chrome extension version and update status using built-in methods, the Web Store, and developer APIs for complete version visibility.",
+    "excerpt": "Verifying a Chrome extension's installed version, checking for available updates, and comparing it against the Chrome Web Store listing are essential skills for troubleshooting, support workflows, and security maintenance. This guide covers every method available, from quick visual checks to programmatic developer techniques.",
+    "published_at": "2026-09-25T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-version-check-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-version-check-guide/featured.webp",
+    "reading_time": 13,
+    "read_time": 13,
+    "views": 0,
+    "tags": [
+      "version",
+      "update",
+      "chrome web store",
+      "extension info",
+      "chrome",
+      "troubleshooting"
+    ],
+    "keywords": [
+      "check chrome extension version",
+      "chrome extension update status",
+      "extension version chrome web store",
+      "chrome extension version number"
+    ],
+    "canonicalPath": "/blog/chrome-extension-version-check-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-dev-0009",
+    "title": "Chrome Extension Background Errors: How to Inspect the Right Console",
+    "slug": "chrome-extension-background-error-console-guide",
+    "description": "Can't see Chrome extension background errors? Learn how to inspect the service worker console, find hidden errors, and debug Manifest V3 backgrounds.",
+    "meta_description": "Can't see Chrome extension background errors? Learn how to inspect the service worker console, find hidden errors, and debug Manifest V3 backgrounds.",
+    "excerpt": "Chrome extension background errors are invisible in the regular page DevTools console. This guide walks developers through opening the service worker console in Manifest V3, interpreting common error categories, and applying proven debugging techniques to resolve background context failures.",
+    "published_at": "2026-09-24T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-background-error-console-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-background-error-console-guide/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "debugging",
+      "console",
+      "background",
+      "service worker",
+      "developer",
+      "manifest v3"
+    ],
+    "keywords": [
+      "chrome extension background error console",
+      "debug extension service worker",
+      "extension background script errors",
+      "chrome service worker console"
+    ],
+    "canonicalPath": "/blog/chrome-extension-background-error-console-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-dev-0008",
+    "title": "Chrome Extension Clipboard Access: Permissions, User Gestures, and Safer Patterns",
+    "slug": "chrome-extension-clipboard-permission-guide",
+    "description": "Master Chrome extension clipboard access: understand permissions, user gesture requirements, and secure implementation patterns for Manifest V3.",
+    "meta_description": "Master Chrome extension clipboard access: understand permissions, user gesture requirements, and secure implementation patterns for Manifest V3.",
+    "excerpt": "Accessing the system clipboard from a Chrome extension requires understanding permissions, user gesture requirements, and security best practices that changed significantly in Manifest V3.",
+    "published_at": "2026-09-23T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-clipboard-permission-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-clipboard-permission-guide/featured.webp",
+    "reading_time": 13,
+    "read_time": 13,
+    "views": 0,
+    "tags": [
+      "chrome extensions",
+      "clipboard API",
+      "extension permissions",
+      "manifest v3",
+      "browser security",
+      "content scripts"
+    ],
+    "keywords": [
+      "chrome extension clipboard permission",
+      "clipboard API chrome extension",
+      "navigator.clipboard extension",
+      "chrome extension copy paste",
+      "document.execCommand clipboard"
+    ],
+    "canonicalPath": "/blog/chrome-extension-clipboard-permission-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-trbl-0008",
+    "title": "Can Chrome Extensions Access chrome:// Pages? Limits and Safer Alternatives",
+    "slug": "chrome-extension-chrome-pages-access-guide",
+    "description": "Learn why Chrome extensions cannot access chrome:// pages, what alternatives exist, and how developers work around these security restrictions.",
+    "meta_description": "Learn why Chrome extensions cannot access chrome:// pages, what alternatives exist, and how developers work around these security restrictions.",
+    "excerpt": "Chrome extensions cannot inject content scripts into chrome:// URLs due to browser security architecture. This guide explains the restrictions and practical workarounds.",
+    "published_at": "2026-09-22T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-chrome-pages-access-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-chrome-pages-access-guide/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome extensions",
+      "chrome pages",
+      "content scripts",
+      "extension limitations",
+      "browser security",
+      "chrome internal pages"
+    ],
+    "keywords": [
+      "chrome extension access chrome pages",
+      "chrome extension chrome:// URL access",
+      "content script chrome internal pages",
+      "extension cannot access chrome settings",
+      "chrome devtools protocol extension"
+    ],
+    "canonicalPath": "/blog/chrome-extension-chrome-pages-access-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
     "id": "text-expander-chrome-extensions",
@@ -642,6 +858,39 @@
     ],
     "canonicalPath": "/blog/calendar-chrome-extensions",
     "updated_at": "2026-09-23T08:30:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-trbl-0007",
+    "title": "Chrome Extensions in Guest Mode: What Works and What Does Not",
+    "slug": "chrome-extension-guest-mode-guide",
+    "description": "Discover which Chrome extensions work in Guest Mode, why most are disabled, and how to configure exceptions for trusted extensions.",
+    "meta_description": "Discover which Chrome extensions work in Guest Mode, why most are disabled, and how to configure exceptions for trusted extensions.",
+    "excerpt": "Chrome Guest Mode restricts most extensions by design to protect guest users. Understanding exactly which extensions run and why can help developers and power users work within these constraints.",
+    "published_at": "2026-09-21T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-guest-mode-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-guest-mode-guide/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome guest mode",
+      "chrome extensions",
+      "browser privacy",
+      "incognito mode",
+      "extension permissions",
+      "chrome profiles"
+    ],
+    "keywords": [
+      "chrome extensions guest mode",
+      "do chrome extensions work in guest mode",
+      "allow extensions in guest mode chrome",
+      "guest mode browser extensions",
+      "chrome guest session extensions"
+    ],
+    "canonicalPath": "/blog/chrome-extension-guest-mode-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
     "id": "session-isolation-multiple-accounts",
@@ -954,6 +1203,39 @@
     "updated_at": "2026-09-21T10:41:45.000Z"
   },
   {
+    "id": "a1b2c3d4-dev-0007",
+    "title": "Chrome Extension Web Accessible Resources: Scope, Risks, and Testing",
+    "slug": "chrome-extension-web-accessible-resources-guide",
+    "description": "Learn how Chrome extension web accessible resources work, their security risks, and best practices for safe configuration in Manifest V3.",
+    "meta_description": "Learn how Chrome extension web accessible resources work, their security risks, and best practices for safe configuration in Manifest V3.",
+    "excerpt": "Web accessible resources let Chrome extensions expose files to web pages, but they also create attack surfaces that developers must understand and manage carefully.",
+    "published_at": "2026-09-20T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-web-accessible-resources-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-web-accessible-resources-guide/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "chrome extensions",
+      "web accessible resources",
+      "extension security",
+      "manifest v3",
+      "content scripts",
+      "extension development"
+    ],
+    "keywords": [
+      "chrome extension web accessible resources",
+      "web_accessible_resources manifest v3",
+      "chrome extension expose files to web pages",
+      "extension resource security",
+      "chrome extension content script injection"
+    ],
+    "canonicalPath": "/blog/chrome-extension-web-accessible-resources-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
     "id": "pomodoro-focus-timer-chrome-extensions",
     "title": "Pomodoro Chrome Extensions: Focus Timers That Actually Work (2026)",
     "slug": "pomodoro-focus-timer-chrome-extensions",
@@ -1142,6 +1424,386 @@
     "updated_at": "2026-09-20T07:52:26.000Z"
   },
   {
+    "id": "a1b2c3d4-dev-0006",
+    "title": "Chrome Extension Content Security Policy: Common MV3 Errors and Fixes",
+    "slug": "chrome-extension-content-security-policy-guide",
+    "description": "Fix Chrome extension Content Security Policy errors in Manifest V3. Learn about CSP directives, common violations, and step-by-step fixes for unsafe-eval",
+    "meta_description": "Fix Chrome extension Content Security Policy errors in Manifest V3. Learn about CSP directives, common violations, and step-by-step fixes for unsafe-eval",
+    "excerpt": "Content Security Policy violations are among the most frequent causes of Chrome extension failures and rejections in Manifest V3. This guide identifies the most common CSP errors, explains why they occur, and provides specific fixes for each.",
+    "published_at": "2026-09-19T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-content-security-policy-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-content-security-policy-guide/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "content security policy",
+      "manifest v3",
+      "csp errors",
+      "chrome extension security",
+      "script-src",
+      "remote code"
+    ],
+    "keywords": [
+      "chrome extension content security policy",
+      "mv3 csp violations",
+      "content security policy extension error",
+      "unsafe eval chrome extension"
+    ],
+    "canonicalPath": "/blog/chrome-extension-content-security-policy-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-dev-0005",
+    "title": "Chrome User Scripts API: Capabilities, Permissions, and Safe Use",
+    "slug": "chrome-extension-user-scripts-api-guide",
+    "description": "Master the Chrome User Scripts API in Manifest V3. Learn how to register, manage, and safely use dynamic user scripts with proper permissions and security",
+    "meta_description": "Master the Chrome User Scripts API in Manifest V3. Learn how to register, manage, and safely use dynamic user scripts with proper permissions and security",
+    "excerpt": "The chrome.userScripts API lets Manifest V3 extensions programmatically register and manage user scripts on websites without hardcoding content script declarations. This guide covers capabilities, permission models, and security considerations.",
+    "published_at": "2026-09-18T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-user-scripts-api-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-user-scripts-api-guide/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "user scripts",
+      "chrome extension api",
+      "manifest v3",
+      "content scripts",
+      "dynamic injection",
+      "permissions"
+    ],
+    "keywords": [
+      "chrome user scripts api",
+      "chrome.userScripts.register",
+      "dynamic user scripts mv3",
+      "user scripts vs content scripts"
+    ],
+    "canonicalPath": "/blog/chrome-extension-user-scripts-api-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-dev-0004",
+    "title": "Chrome Extension Offscreen Documents: When MV3 Needs a Hidden DOM Page",
+    "slug": "chrome-extension-offscreen-documents-guide",
+    "description": "Learn when and how to use Chrome extension offscreen documents in Manifest V3 to access the DOM from service workers for canvas, parsing, and rendering tasks.",
+    "meta_description": "Learn when and how to use Chrome extension offscreen documents in Manifest V3 to access the DOM from service workers for canvas, parsing, and rendering tasks.",
+    "excerpt": "Manifest V3 removed background pages, but some extensions still need a DOM. Offscreen documents fill that gap with a lightweight, off-screen HTML page accessible from service workers for rendering, canvas operations, and complex string parsing.",
+    "published_at": "2026-09-17T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-offscreen-documents-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-offscreen-documents-guide/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "manifest v3",
+      "offscreen documents",
+      "service worker",
+      "chrome extension api",
+      "dom access",
+      "canvas"
+    ],
+    "keywords": [
+      "chrome extension offscreen document",
+      "offscreen document mv3",
+      "chrome extension service worker dom",
+      "offscreen api tutorial"
+    ],
+    "canonicalPath": "/blog/chrome-extension-offscreen-documents-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-dev-0003",
+    "title": "Chrome Web Store Extension Rejected: How to Read the Reason and Respond",
+    "slug": "chrome-web-store-extension-rejected-guide",
+    "description": "Chrome Web Store extension rejected? Learn how to read the rejection reason, map it to policy violations, and prepare a compliant correction for resubmission.",
+    "meta_description": "Chrome Web Store extension rejected? Learn how to read the rejection reason, map it to policy violations, and prepare a compliant correction for resubmission.",
+    "excerpt": "A Chrome Web Store rejection notice can be discouraging, but it is also a specific, actionable communication. This guide helps you decode rejection reasons, map them to code and policy violations, and prepare a compliant correction for resubmission.",
+    "published_at": "2026-09-16T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-web-store-extension-rejected-guide/featured.webp",
+    "featured_image": "/content/images/chrome-web-store-extension-rejected-guide/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "chrome web store",
+      "extension rejection",
+      "developer policy",
+      "resubmission",
+      "compliance",
+      "manifest v3"
+    ],
+    "keywords": [
+      "chrome extension rejected chrome web store",
+      "chrome web store rejection reason",
+      "fix rejected chrome extension",
+      "chrome extension resubmission guide"
+    ],
+    "canonicalPath": "/blog/chrome-web-store-extension-rejected-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-dev-0002",
+    "title": "Chrome Web Store Extension Pending Review: What Developers Can Check",
+    "slug": "chrome-web-store-pending-review-guide",
+    "description": "Stuck in Chrome Web Store pending review? Learn what triggers extended reviews, how to self-audit your extension, and steps to speed up approval.",
+    "meta_description": "Stuck in Chrome Web Store pending review? Learn what triggers extended reviews, how to self-audit your extension, and steps to speed up approval.",
+    "excerpt": "A pending review status on the Chrome Web Store can delay your extension launch by days or weeks. This guide covers the most common review triggers, the self-audit checklist every developer should run before submitting, and actionable steps to reduce your time in the review queue.",
+    "published_at": "2026-09-15T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-web-store-pending-review-guide/featured.webp",
+    "featured_image": "/content/images/chrome-web-store-pending-review-guide/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "chrome web store review",
+      "extension submission",
+      "manifest v3 review",
+      "extension rejection",
+      "developer dashboard",
+      "review timeline"
+    ],
+    "keywords": [
+      "chrome extension pending review",
+      "chrome web store review time",
+      "extension stuck in review",
+      "chrome extension review process"
+    ],
+    "canonicalPath": "/blog/chrome-web-store-pending-review-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-dev-0001",
+    "title": "Chrome Extension Storage Limits: Local, Sync, and Session Data Explained",
+    "slug": "chrome-extension-storage-limits-guide",
+    "description": "Understand Chrome extension storage limits for local, sync, and session storage. Learn exact quotas, the unlimitedStorage permission, and efficient data",
+    "meta_description": "Understand Chrome extension storage limits for local, sync, and session storage. Learn exact quotas, the unlimitedStorage permission, and efficient data",
+    "excerpt": "Chrome extensions have strict storage quotas that vary by storage type and context. This guide breaks down the exact limits for local storage, sync storage, and session storage, explains how the unlimitedStorage permission works, and shows developers how to manage storage efficiently within these constraints.",
+    "published_at": "2026-09-14T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-storage-limits-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-storage-limits-guide/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "chrome storage limits",
+      "extension storage quota",
+      "unlimitedStorage permission",
+      "chrome.storage API",
+      "IndexedDB limits",
+      "sync storage quota"
+    ],
+    "keywords": [
+      "chrome extension storage limits",
+      "chrome extension storage quota",
+      "chrome.storage.local limit",
+      "unlimitedStorage permission"
+    ],
+    "canonicalPath": "/blog/chrome-extension-storage-limits-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-trbl-0006",
+    "title": "How to Back Up Chrome Extension Settings and Restore Them Safely",
+    "slug": "chrome-extensions-backup-and-restore-guide",
+    "description": "Safely back up and restore Chrome extension settings with built-in tools, developer console commands, and dedicated backup extensions to protect your",
+    "meta_description": "Safely back up and restore Chrome extension settings with built-in tools, developer console commands, and dedicated backup extensions to protect your",
+    "excerpt": "A complete guide to backing up and restoring Chrome extension settings using built-in export tools, developer console commands, dedicated backup extensions, and manual file system methods to protect your configurations from unexpected data loss.",
+    "published_at": "2026-09-13T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extensions-backup-and-restore-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extensions-backup-and-restore-guide/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "extension backup",
+      "chrome settings backup",
+      "restore extension data",
+      "extension migration",
+      "chrome profile backup",
+      "storage export"
+    ],
+    "keywords": [
+      "backup chrome extension settings",
+      "restore chrome extension settings",
+      "chrome extension backup tool",
+      "export extension settings chrome"
+    ],
+    "canonicalPath": "/blog/chrome-extensions-backup-and-restore-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-trbl-0005",
+    "title": "Chrome Extension Settings Lost After Reinstall: What Can Be Recovered",
+    "slug": "chrome-extension-settings-lost-after-reinstall-guide",
+    "description": "Recover lost Chrome extension settings after reinstall by understanding what data can be restored and what configurations are permanently deleted.",
+    "meta_description": "Recover lost Chrome extension settings after reinstall by understanding what data can be restored and what configurations are permanently deleted.",
+    "excerpt": "Reinstalling a Chrome extension can wipe out hours of customization, from filter rules in ad blockers to API keys in developer tools. This guide breaks down exactly which types of extension data survive a reinstall and which are permanently deleted, along with practical recovery strategies for each scenario.",
+    "published_at": "2026-09-12T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-settings-lost-after-reinstall-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-settings-lost-after-reinstall-guide/featured.webp",
+    "reading_time": 9,
+    "read_time": 9,
+    "views": 0,
+    "tags": [
+      "extension settings",
+      "reinstall data loss",
+      "chrome storage recovery",
+      "extension backup",
+      "sync storage",
+      "local storage"
+    ],
+    "keywords": [
+      "chrome extension settings lost after reinstall",
+      "extension data lost after reinstall chrome",
+      "recover extension settings after reinstall",
+      "chrome extension local storage cleared"
+    ],
+    "canonicalPath": "/blog/chrome-extension-settings-lost-after-reinstall-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-trbl-0004",
+    "title": "Why a Chrome Extension Update Is Delayed: Idle State, Policies, and Checks",
+    "slug": "chrome-extension-update-delayed-guide",
+    "description": "Understand why Chrome extension updates are delayed and learn how to manually trigger updates when idle state and policies prevent automatic updates.",
+    "meta_description": "Understand why Chrome extension updates are delayed and learn how to manually trigger updates when idle state and policies prevent automatic updates.",
+    "excerpt": "Chrome extension updates do not always arrive immediately after a developer publishes a new version. This guide explains the mechanisms that control when and how Chrome checks for updates, including the idle state requirement, update interval throttling, enterprise policy overrides, and the Chrome Web Store review process, so you can understand exactly what is happening and take safe action to force an update when needed.",
+    "published_at": "2026-09-11T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-update-delayed-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-update-delayed-guide/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "extension update delayed",
+      "chrome auto-update",
+      "extension version check",
+      "chrome policies",
+      "web store review"
+    ],
+    "keywords": [
+      "chrome extension update delayed",
+      "chrome extension not updating automatically",
+      "how to force chrome extension update",
+      "chrome extension update stuck"
+    ],
+    "canonicalPath": "/blog/chrome-extension-update-delayed-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-trbl-0003",
+    "title": "Chrome Extension Icon Missing from the Toolbar: Find and Pin It Safely",
+    "slug": "chrome-extension-icon-missing-toolbar-guide",
+    "description": "Find and restore missing Chrome extension icons in your toolbar using the puzzle piece menu and learn to prevent future icon disappearances.",
+    "meta_description": "Find and restore missing Chrome extension icons in your toolbar using the puzzle piece menu and learn to prevent future icon disappearances.",
+    "excerpt": "When a Chrome extension icon disappears from the toolbar, it is usually not gone. Chrome automatically hides extension icons to reduce clutter, and the puzzle piece button provides access to all hidden extensions. This guide explains how to find, pin, and manage your extension icons, and covers the less common causes like corrupted installations and manifest configuration issues.",
+    "published_at": "2026-09-10T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-icon-missing-toolbar-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-icon-missing-toolbar-guide/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "extension icon missing",
+      "chrome toolbar",
+      "pin extension",
+      "extension hidden",
+      "chrome extensions management"
+    ],
+    "keywords": [
+      "chrome extension icon missing toolbar",
+      "chrome extension icon disappeared",
+      "how to pin chrome extension to toolbar",
+      "chrome extension not showing in toolbar"
+    ],
+    "canonicalPath": "/blog/chrome-extension-icon-missing-toolbar-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-trbl-0002",
+    "title": "Chrome Extension Popup Not Opening: A Practical Diagnostic Guide",
+    "slug": "chrome-extension-popup-not-opening-guide",
+    "description": "Diagnose and fix Chrome extension popup issues with step-by-step solutions for JavaScript errors, Manifest V3 problems, and profile conflicts.",
+    "meta_description": "Diagnose and fix Chrome extension popup issues with step-by-step solutions for JavaScript errors, Manifest V3 problems, and profile conflicts.",
+    "excerpt": "When you click a Chrome extension icon and nothing happens, the popup window fails to render. This guide covers the most common causes, including JavaScript errors, corrupted profiles, toolbar conflicts, and Manifest V3 service worker issues, along with step-by-step diagnostic and repair procedures.",
+    "published_at": "2026-09-09T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-popup-not-opening-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-popup-not-opening-guide/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "extension popup",
+      "popup not working",
+      "chrome extension troubleshooting",
+      "manifest v3",
+      "service worker errors"
+    ],
+    "keywords": [
+      "chrome extension popup not opening",
+      "extension popup blank",
+      "chrome extension click no response",
+      "fix extension popup not loading"
+    ],
+    "canonicalPath": "/blog/chrome-extension-popup-not-opening-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
+    "id": "a1b2c3d4-trbl-0001",
+    "title": "Chrome Extensions Not Syncing: Causes, Checks, and Safe Recovery",
+    "slug": "chrome-extension-sync-not-working-guide",
+    "description": "Fix Chrome extension sync issues with these exact checks for account state, sync toggles, policies, and safe recovery methods to restore synchronization.",
+    "meta_description": "Fix Chrome extension sync issues with these exact checks for account state, sync toggles, policies, and safe recovery methods to restore synchronization.",
+    "excerpt": "When Chrome extensions stop syncing across your devices, the root cause usually falls into one of several categories: account state, sync toggle misconfiguration, enterprise policy restrictions, or a misunderstanding about what sync actually transfers. This guide walks you through each possibility with specific checks and safe recovery steps.",
+    "published_at": "2026-09-08T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-sync-not-working-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-sync-not-working-guide/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "chrome sync",
+      "extensions not syncing",
+      "sync troubleshooting",
+      "google account sync",
+      "chrome settings"
+    ],
+    "keywords": [
+      "chrome extension sync not working",
+      "chrome extensions not syncing between devices",
+      "how to fix chrome extension sync",
+      "chrome sync extensions disabled"
+    ],
+    "canonicalPath": "/blog/chrome-extension-sync-not-working-guide",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
     "id": "ddf955e9-24ba-5447-a81f-3497026a5e53",
     "title": "Safari Extensions in 2026: How They Work, Best Picks, and vs Chrome",
     "slug": "safari-extensions-guide-2026",
@@ -1202,6 +1864,39 @@
     ],
     "canonicalPath": "/blog/kiwi-browser-download-install-guide-2026",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "a1b2c3d4-prod-0006",
+    "title": "Best Chrome Extensions for Language Translation in 2026: Tested and Compared for Every Use Case",
+    "slug": "best-chrome-extensions-for-language-translation",
+    "description": "Discover the best Chrome extensions for language translation in 2026 tailored to your specific needs from casual browsing to professional work.",
+    "meta_description": "Discover the best Chrome extensions for language translation in 2026 tailored to your specific needs from casual browsing to professional work.",
+    "excerpt": "Translation needs vary dramatically depending on whether you are learning a language, reading foreign news, or working with multilingual clients. This guide compares the best Chrome translation extensions across quality, speed, features, and privacy.",
+    "published_at": "2026-09-07T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-chrome-extensions-for-language-translation/featured.webp",
+    "featured_image": "/content/images/best-chrome-extensions-for-language-translation/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "translation",
+      "language",
+      "DeepL",
+      "Google Translate",
+      "language learning",
+      "multilingual"
+    ],
+    "keywords": [
+      "best chrome extensions for language translation",
+      "chrome translation extension comparison",
+      "real-time translation chrome extension",
+      "language learning translation chrome",
+      "professional translation chrome extension"
+    ],
+    "canonicalPath": "/blog/best-chrome-extensions-for-language-translation",
+    "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
     "id": "611c784c-3804-5724-b49d-a2d157b99e0c",
@@ -1326,6 +2021,40 @@
     "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
+    "id": "a1b2c3d4-prod-0005",
+    "title": "Chrome Extensions for Citation and Bibliography Management: A Researcher's Complete Toolkit",
+    "slug": "chrome-extensions-for-citation-and-bibliography-management",
+    "description": "Save hours of research time with top Chrome extensions for automated citation and bibliography management across academic sources.",
+    "meta_description": "Save hours of research time with top Chrome extensions for automated citation and bibliography management across academic sources.",
+    "excerpt": "Managing citations and building bibliographies is one of the most time-consuming parts of academic writing. These Chrome extensions automate reference capture, citation generation, and bibliography formatting so you can focus on your research rather than formatting.",
+    "published_at": "2026-09-06T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extensions-for-citation-and-bibliography-management/featured.webp",
+    "featured_image": "/content/images/chrome-extensions-for-citation-and-bibliography-management/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "citation",
+      "bibliography",
+      "academic research",
+      "Zotero",
+      "Mendeley",
+      "reference management"
+    ],
+    "keywords": [
+      "chrome extensions for citation and bibliography management",
+      "citation chrome extension",
+      "bibliography manager chrome",
+      "academic research chrome extension",
+      "auto cite chrome extension",
+      "reference manager browser extension"
+    ],
+    "canonicalPath": "/blog/chrome-extensions-for-citation-and-bibliography-management",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
     "id": "34a1bec8-ba43-5145-a160-de663054c8ba",
     "title": "Kiwi Browser Review 2026: Is It Safe, Does It Still Get Updates, Verdict",
     "slug": "kiwi-browser-review-2026",
@@ -1411,6 +2140,39 @@
     ],
     "canonicalPath": "/blog/adguard-vs-ghostery-2026-comparison",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "a1b2c3d4-prod-0004",
+    "title": "How to Translate Web Pages Automatically in Chrome: Built-in Settings, Extensions, and Advanced Workflows",
+    "slug": "how-to-translate-web-pages-automatically-in-chrome",
+    "description": "Enable automatic web page translation in Chrome with built-in settings and extensions for seamless multilingual browsing.",
+    "meta_description": "Enable automatic web page translation in Chrome with built-in settings and extensions for seamless multilingual browsing.",
+    "excerpt": "Chrome offers a built-in page translator, but automatic translation requires the right settings. This comprehensive guide covers enabling Chrome's native auto-translate, configuring per-language preferences, and upgrading with extensions for better quality and workflow.",
+    "published_at": "2026-09-05T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/how-to-translate-web-pages-automatically-in-chrome/featured.webp",
+    "featured_image": "/content/images/how-to-translate-web-pages-automatically-in-chrome/featured.webp",
+    "reading_time": 9,
+    "read_time": 9,
+    "views": 0,
+    "tags": [
+      "translation",
+      "google translate",
+      "auto translate",
+      "language",
+      "chrome settings",
+      "multilingual browsing"
+    ],
+    "keywords": [
+      "how to translate web pages automatically in chrome",
+      "chrome auto translate setting",
+      "chrome translation extension",
+      "translate website automatically chrome",
+      "automatic page translation setting"
+    ],
+    "canonicalPath": "/blog/how-to-translate-web-pages-automatically-in-chrome",
+    "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
     "id": "9e874273-6000-562b-9934-6e6fc2d420d6",
@@ -1502,6 +2264,39 @@
     ],
     "canonicalPath": "/blog/chrome-flags-for-performance-safe-ones",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "a1b2c3d4-prod-0003",
+    "title": "Chrome Extensions for Managing Multiple Gmail Accounts: Streamline Your Inbox Workflow",
+    "slug": "chrome-extensions-for-managing-multiple-gmail-accounts",
+    "description": "Streamline your inbox workflow with top Chrome extensions for managing multiple Gmail accounts and quick switching between addresses.",
+    "meta_description": "Streamline your inbox workflow with top Chrome extensions for managing multiple Gmail accounts and quick switching between addresses.",
+    "excerpt": "Juggling multiple Gmail accounts in Chrome often means constant signing in and out or running separate browser profiles. These extensions let you view, compose, and manage emails across all your accounts from a single interface without switching tabs or sessions.",
+    "published_at": "2026-09-04T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extensions-for-managing-multiple-gmail-accounts/featured.webp",
+    "featured_image": "/content/images/chrome-extensions-for-managing-multiple-gmail-accounts/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "gmail",
+      "multiple accounts",
+      "email management",
+      "inbox",
+      "productivity",
+      "google workspace"
+    ],
+    "keywords": [
+      "chrome extensions for managing multiple gmail accounts",
+      "multiple gmail accounts one browser",
+      "switch between gmail accounts chrome",
+      "gmail multi account manager",
+      "check multiple gmail inboxes at once"
+    ],
+    "canonicalPath": "/blog/chrome-extensions-for-managing-multiple-gmail-accounts",
+    "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
     "id": "6d172095-6125-55fc-9e49-30b52057a1d9",
@@ -1623,6 +2418,39 @@
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
+    "id": "a1b2c3d4-apps-0001",
+    "title": "Chrome Extensions for Reducing Eye Strain: Protect Your Eyes During Long Browsing Sessions",
+    "slug": "chrome-extensions-for-reducing-eye-strain",
+    "description": "Protect your vision with the best Chrome extensions for reducing eye strain through blue light filters, dark mode, and brightness controls.",
+    "meta_description": "Protect your vision with the best Chrome extensions for reducing eye strain through blue light filters, dark mode, and brightness controls.",
+    "excerpt": "Prolonged screen exposure causes digital eye strain affecting over 60 percent of computer users. These Chrome extensions reduce blue light, invert colors, and adjust brightness to make extended browsing sessions significantly more comfortable.",
+    "published_at": "2026-09-03T11:00:00Z",
+    "category": "Appearance & Themes",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extensions-for-reducing-eye-strain/featured.webp",
+    "featured_image": "/content/images/chrome-extensions-for-reducing-eye-strain/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "eye strain",
+      "dark mode",
+      "blue light filter",
+      "night mode",
+      "accessibility",
+      "screen brightness"
+    ],
+    "keywords": [
+      "chrome extensions for reducing eye strain",
+      "blue light filter chrome extension",
+      "dark mode chrome extension",
+      "reduce screen glare chrome",
+      "night mode browsing extension"
+    ],
+    "canonicalPath": "/blog/chrome-extensions-for-reducing-eye-strain",
+    "updated_at": "2026-08-25T12:00:00+01:00"
+  },
+  {
     "id": "362726c3-ab0e-54c7-8e9b-fd1c9de2f72c",
     "title": "ChatGPT for Google Sheets: 9 Real Workflows That Actually Work (2026)",
     "slug": "chatgpt-for-google-sheets-workflows",
@@ -1681,6 +2509,39 @@
     ],
     "canonicalPath": "/blog/firefox-android-extensions-guide",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "a1b2c3d4-prod-0002",
+    "title": "Best Chrome Extensions for Meeting Notes: Capture Every Discussion Without Typing",
+    "slug": "best-chrome-extensions-for-meeting-notes",
+    "description": "Discover the best Chrome extensions for meeting notes in 2026. Compare AI transcription tools, auto-summary features, and integrations for Google Meet and Zoom.",
+    "meta_description": "Discover the best Chrome extensions for meeting notes in 2026. Compare AI transcription tools, auto-summary features, and integrations for Google Meet and Zoom.",
+    "excerpt": "Taking meeting notes manually means splitting your attention between typing and participating. The best Chrome extensions for meeting notes automate transcription, generate AI summaries, and sync action items directly to your workflow tools so you never miss a detail again.",
+    "published_at": "2026-09-02T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-chrome-extensions-for-meeting-notes/featured.webp",
+    "featured_image": "/content/images/best-chrome-extensions-for-meeting-notes/featured.webp",
+    "reading_time": 10,
+    "read_time": 10,
+    "views": 0,
+    "tags": [
+      "meeting notes",
+      "transcription",
+      "google meet",
+      "zoom",
+      "ai notes",
+      "productivity"
+    ],
+    "keywords": [
+      "best chrome extensions for meeting notes",
+      "meeting notes chrome extension",
+      "google meet notes extension",
+      "automatic meeting transcription chrome",
+      "ai meeting summary extension"
+    ],
+    "canonicalPath": "/blog/best-chrome-extensions-for-meeting-notes",
+    "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
     "id": "49716f29-f2c3-5918-b2db-98b99e566376",
@@ -1862,6 +2723,39 @@
     ],
     "canonicalPath": "/blog/google-sheets-automation-with-ai-2026",
     "updated_at": "2026-09-23T14:07:53.000+00:00"
+  },
+  {
+    "id": "a1b2c3d4-prod-0001",
+    "title": "Best Chrome Extensions for Freelancers: Time Tracking, Invoicing, Client Communication, and Productivity",
+    "slug": "best-chrome-extensions-for-freelancers",
+    "description": "Essential Chrome extensions for freelancers: streamline time tracking, invoicing, client communication, and productivity in your browser workspace.",
+    "meta_description": "Essential Chrome extensions for freelancers: streamline time tracking, invoicing, client communication, and productivity in your browser workspace.",
+    "excerpt": "Freelancers manage every aspect of their business from the browser: tracking billable hours, sending invoices, communicating with clients, organizing projects, and creating deliverables. These Chrome extensions bring the most critical freelance workflows directly into the tabs where you already work.",
+    "published_at": "2026-09-01T11:00:00Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-chrome-extensions-for-freelancers/featured.webp",
+    "featured_image": "/content/images/best-chrome-extensions-for-freelancers/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "freelance",
+      "time tracking",
+      "invoicing",
+      "productivity",
+      "client management",
+      "writing"
+    ],
+    "keywords": [
+      "best chrome extensions for freelancers",
+      "freelancer productivity chrome extensions",
+      "time tracking chrome extension for freelancers",
+      "freelance invoicing tools chrome",
+      "chrome extensions for independent workers"
+    ],
+    "canonicalPath": "/blog/best-chrome-extensions-for-freelancers",
+    "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
     "id": "53399d06-f8f7-597d-beed-1c0efda3524a",
@@ -2209,6 +3103,39 @@
     ],
     "canonicalPath": "/blog/why-does-chrome-open-so-many-processes",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "a1b2c3d4-socl-0001",
+    "title": "Best Chrome Extensions for Social Media Managers: Scheduling, Analytics, and Content Creation Tools",
+    "slug": "best-chrome-extensions-for-social-media-managers",
+    "description": "Boost your social media workflow with top Chrome extensions for scheduling, analytics, and content creation across multiple platforms.",
+    "meta_description": "Boost your social media workflow with top Chrome extensions for scheduling, analytics, and content creation across multiple platforms.",
+    "excerpt": "Social media managers spend their entire workday inside a browser, juggling content creation, post scheduling, analytics review, and community engagement across multiple platforms. The right Chrome extensions eliminate tab switching and bring critical tools directly into the pages where you need them.",
+    "published_at": "2026-08-31T11:00:00Z",
+    "category": "Social Media Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-chrome-extensions-for-social-media-managers/featured.webp",
+    "featured_image": "/content/images/best-chrome-extensions-for-social-media-managers/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "social media",
+      "scheduling",
+      "analytics",
+      "content creation",
+      "productivity",
+      "management"
+    ],
+    "keywords": [
+      "best chrome extensions for social media managers",
+      "social media management chrome extensions",
+      "social media scheduler extension",
+      "social media analytics tools chrome",
+      "content creation extensions for marketing"
+    ],
+    "canonicalPath": "/blog/best-chrome-extensions-for-social-media-managers",
+    "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
     "id": "fc0404ea-f98e-53b9-ad41-8a8c750a404f",
@@ -15820,6 +16747,28 @@
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
+    "id": "08f9db17-a6cc-423b-b6b0-a4fe1c700bf2",
+    "title": "Facebook Pixel Helper Not Working? 7 Fixes That Solve It",
+    "slug": "how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting",
+    "description": "Struggling with the Facebook Pixel Helper not working as expected in 2026? Here's how to troubleshoot the most common causes and get it tracking again.",
+    "meta_description": "Struggling with the Facebook Pixel Helper not working as expected in 2026? Here's how to troubleshoot the most common causes and get it tracking again.",
+    "excerpt": "Are you struggling with the Facebook Pixel Helper not working as expected in 2026? You're not alone.",
+    "published_at": "2026-03-04T05:00:01.002+00:00",
+    "category": "Social Media Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting/featured.webp",
+    "featured_image": "/content/images/how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting/featured.webp",
+    "reading_time": 6,
+    "read_time": 6,
+    "views": 0,
+    "tags": [],
+    "keywords": [
+      "How to fix Facebook Pixel Helper not working 2026"
+    ],
+    "canonicalPath": "/blog/how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting",
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
+  },
+  {
     "id": "81d42656-b797-4d78-9147-9f821ce64c57",
     "title": "How to Get a Clean Browsing Experience on Chrome: A Comprehensive Guide",
     "slug": "how-to-get-a-clean-browsing-experience-on-chrome-4",
@@ -16935,6 +17884,28 @@
     ],
     "canonicalPath": "/blog/google-trad-plugin-15",
     "updated_at": "2026-09-14T12:00:00.000+00:00"
+  },
+  {
+    "id": "2b174e0a-ee7f-4101-a028-f0d4e1753809",
+    "title": "Sci-Hub Chrome Extensions: What They Claim, What They Risk",
+    "slug": "https-sci-hub-se-chrome-extension-16",
+    "description": "A practical breakdown of scientific knowledge with the https sci-hub se chrome extension: how it works, how to set it up, and where it falls short.",
+    "meta_description": "A practical breakdown of scientific knowledge with the https sci-hub se chrome extension: how it works, how to set it up, and where it falls short.",
+    "excerpt": "The world of scientific research has become increasingly digital, with numerous online platforms and tools available to facilitate access to knowledge.",
+    "published_at": "2026-02-22T17:31:02.586+00:00",
+    "category": "Chrome Extensions",
+    "author": "James Mitchell",
+    "image_url": "/content/images/https-sci-hub-se-chrome-extension-16/featured.webp",
+    "featured_image": "/content/images/https-sci-hub-se-chrome-extension-16/featured.webp",
+    "reading_time": 6,
+    "read_time": 6,
+    "views": 0,
+    "tags": [],
+    "keywords": [
+      "https sci hub se chrome extension"
+    ],
+    "canonicalPath": "/blog/https-sci-hub-se-chrome-extension-16",
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "e3bfbcc3-9951-4365-97f1-533ad0f0e32a",
