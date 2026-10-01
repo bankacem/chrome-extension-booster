@@ -60,8 +60,19 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: python3 -m pip install --quiet --disable-pip-version-check anthropic requests
+
       - name: Python unit tests
         run: python3 -m unittest discover -s seo_agent_pro -p 'test*.py' -v
+
+      - name: Python regression tests (empty-meta fallback, #452)
+        run: python3 seo_agent_pro/test_meta_fallback_path.py
 
       - name: Build and prerender
         run: npm run build
