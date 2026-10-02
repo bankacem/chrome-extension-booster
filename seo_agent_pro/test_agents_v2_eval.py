@@ -399,8 +399,79 @@ class TestDryRun(unittest.TestCase):
                 key = (blind / "key.txt").read_text()
                 self.assertGreater(len(key.strip()), 64)
                 self.assertNotIn("first=A", key)  # mapping NOT stored
+                # decision rule premises (guard added after smoke 36990401835)
+                dec = results["decision"]
+                self.assertEqual(dec["premise"],
+                                 "both arms produced >=1 article")
+                self.assertEqual(dec["articles_A"], 1)
+                self.assertEqual(dec["articles_B"], 1)
+                self.assertIsInstance(dec["adopt_B"], bool)
         finally:
             llm_router.call, llm_provider.chat = orig_router, orig_chat
+
+    def test_decision_guard_null_when_arm_produces_no_article(self):
+        """Smoke run 36990401835 emitted adopt_B=true on ZERO data (both
+        arms stopped at a provider 502). The premise guard must make the
+        rule NOT applicable when either arm produced no article — the
+        thresholds stay untouched. Here arm A's connectivity probe fails
+        for every candidate (the 502 pattern), arm B succeeds: the runner
+        must complete, record A's stop_reason, and yield adopt_B=null."""
+        self._set_env(SEARXNG_URL=self._sx.url,
+                      SEARXNG_BASE_URL=self._sx.url)
+        import llm_router
+        from agents_v2 import llm_provider
+        from llm_router import find_working_model as _orig_fwm
+
+        def _dead_probe(candidates, test_prompt="Reply with exactly: OK"):
+            raise RuntimeError(
+                f"No working model found among candidates: {candidates}\n"
+                "  - probe: HTTP Error 502: Bad Gateway (simulated outage)")
+
+        fake_router = FakeRouterCall()
+        fake_chat = FakeChat()
+        orig_router, orig_chat, orig_fwm = (llm_router.call, llm_provider.chat,
+                                            pipeline_a.find_working_model)
+
+        def _chat(role, system, messages, tools=None, max_tokens=1024,
+                  ledger=None, model=None):
+            return fake_chat(role, system, messages, max_tokens, ledger,
+                             model=model)
+
+        llm_router.call = fake_router
+        llm_provider.chat = _chat
+        pipeline_a.find_working_model = _dead_probe
+        try:
+            with tempfile.TemporaryDirectory() as td:
+                sys.argv = ["run_eval.py", "--mode", "smoke",
+                            "--max-calls", "60", "--max-cost-usd", "2",
+                            "--out", td]
+                buf = io.StringIO()
+                with contextlib.redirect_stdout(buf):
+                    rc = run_eval.main()
+                self.assertEqual(rc, 0, buf.getvalue()[-2000:])
+                out = Path(td)
+                results = json.loads((out / "results.json").read_text())
+                rec = results["per_topic"][0]
+                # arm A: no article, stop reason recorded (not a crash)
+                self.assertEqual(rec["A"]["words"], 0)
+                self.assertIn("No working model", rec["A"]["stop_reason"])
+                # arm B: real article
+                self.assertGreater(rec["B"]["words"], 0)
+                dec = results["decision"]
+                self.assertEqual(dec["articles_A"], 0)
+                self.assertEqual(dec["articles_B"], 1)
+                self.assertIn("NOT MET", dec["premise"])
+                self.assertIn("arm A: 0 articles", dec["premise"])
+                self.assertIsNone(dec["adopt_B"])
+                self.assertIsNone(dec["recommendation"])
+                # thresholds/rule string untouched
+                self.assertEqual(
+                    dec["rule"],
+                    "adopt B iff gates(B)>=gates(A) AND claims(B)<=0.60*"
+                    "claims(A) AND cost(B)<=8*cost(A)")
+        finally:
+            llm_router.call, llm_provider.chat = orig_router, orig_chat
+            pipeline_a.find_working_model = orig_fwm
 
 
 if __name__ == "__main__":

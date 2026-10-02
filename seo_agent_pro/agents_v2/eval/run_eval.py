@@ -286,20 +286,37 @@ def main() -> int:
     b_claims = sum(max(0, r["B"]["unsupported_claims"]) for r in results)
     a_cost = sum(r["A"]["usd_floor"] for r in results)
     b_cost = sum(r["B"]["usd_floor"] for r in results)
+    # PREMISE GUARD (added after smoke run 36990401835 emitted adopt_B=true
+    # on zero data — both arms stopped at a provider 502): the owner's rule
+    # compares REAL articles. If either arm produced no article at all, the
+    # rule's premises are unmet and evaluating it on zeros would fabricate a
+    # decision. The rule's thresholds below are UNTOUCHED (بلا تعديل).
+    a_articles = sum(1 for r in results if r["A"]["words"] > 0)
+    b_articles = sum(1 for r in results if r["B"]["words"] > 0)
+    premise_ok = a_articles > 0 and b_articles > 0
     claims_ratio = (b_claims / a_claims) if a_claims else (0.0 if b_claims == 0 else 9.9)
     cost_ratio = (b_cost / a_cost) if a_cost else (0.0 if b_cost == 0 else 9.9)
     adopt = (b_gates >= a_gates) and (claims_ratio <= 0.60) and (cost_ratio <= 8.0)
+    unmet = ", ".join(
+        f"arm {x}: 0 articles"
+        for x, n in (("A", a_articles), ("B", b_articles)) if n == 0)
     decision = {
         "rule": "adopt B iff gates(B)>=gates(A) AND claims(B)<=0.60*claims(A) AND cost(B)<=8*cost(A)",
+        "premise": ("both arms produced >=1 article" if premise_ok else
+                    f"NOT MET ({unmet}) — rule not applicable on empty/partial "
+                    "data; adopt_B=null"),
+        "articles_A": a_articles, "articles_B": b_articles,
         "gates_A": a_gates, "gates_B": b_gates,
         "claims_A": a_claims, "claims_B": b_claims,
         "claims_ratio": round(claims_ratio, 3),
         "usd_floor_A": round(a_cost, 4), "usd_floor_B": round(b_cost, 4),
         "cost_ratio": round(cost_ratio, 3),
-        "adopt_B": adopt,
-        "recommendation": ("ADOPT agents_v2 (B)" if adopt else
-                           "KEEP A (improved pipeline); research agent may remain "
-                           "an optional tool"),
+        "adopt_B": (adopt if premise_ok else None),
+        "recommendation": (
+            None if not premise_ok else
+            ("ADOPT agents_v2 (B)" if adopt else
+             "KEEP A (improved pipeline); research agent may remain "
+             "an optional tool")),
     }
     (out_dir / "results.json").write_text(
         # NOTE: no flush kwarg — Path.write_text takes none (fourth latent
