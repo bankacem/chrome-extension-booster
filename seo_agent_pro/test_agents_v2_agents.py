@@ -181,28 +181,39 @@ class TestAgents(unittest.TestCase):
         self.assertIn("cap", res["stop_reason"])
 
     def test_critic_model_must_differ_from_writer(self):
+        # 2026-10-02 contract change (owner decision 4): run_article now
+        # RECORDS any error and returns partial stats instead of letting
+        # the exception escape (so a failed attempt's provider consumption
+        # is never lost). "Fatal" = recorded stop with stop_reason.
         cfg = lp.load_config()
         cfg["roles"]["CRITIC"]["model"] = cfg["roles"]["WORKER"]["model"]
         orig = lp.load_config
         lp.load_config = lambda: cfg
         try:
-            with self.assertRaises(lp.ProviderFatal):
-                ag.run_article("topic q", caps=ag.ArticleCaps(max_steps=20),
-                               chat_fn=FakeChat(), search_fn=_fake_search,
-                               fetch_fn=_fake_fetch)
+            res = ag.run_article("topic q", caps=ag.ArticleCaps(max_steps=20),
+                                 chat_fn=FakeChat(), search_fn=_fake_search,
+                                 fetch_fn=_fake_fetch)
+            self.assertFalse(res["ok"])
+            self.assertIn("ProviderFatal", res["stop_reason"])
+            # partial usage of the already-completed plan call survives
+            self.assertGreaterEqual(res["stats"]["steps"], 1)
+            self.assertGreater(res["stats"]["input_tokens"], 0)
         finally:
             lp.load_config = orig
 
     def test_schema_invalid_reply_is_fatal_for_orchestrator(self):
+        # same contract change: schema-invalid plan twice = recorded stop
+        # (owner spec: "invalid schema twice" = stop), with partial usage.
         fc = FakeChat()
         fc.plan = {"angles": ["only one angle"]}  # violates schema
-        with self.assertRaises(Exception) as ctx:
-            ag.run_article("topic v", caps=ag.ArticleCaps(max_steps=20),
-                           chat_fn=fc, search_fn=_fake_search,
-                           fetch_fn=_fake_fetch)
-        self.assertIn("Schema", type(ctx.exception).__name__ + str(ctx.exception)
-                      if not isinstance(ctx.exception, ag.SchemaError)
-                      else type(ctx.exception).__name__)
+        res = ag.run_article("topic v", caps=ag.ArticleCaps(max_steps=20),
+                             chat_fn=fc, search_fn=_fake_search,
+                             fetch_fn=_fake_fetch)
+        self.assertFalse(res["ok"])
+        self.assertIn("SchemaError", res["stop_reason"])
+        # BOTH provider attempts (original + the one retry) are metered
+        self.assertGreaterEqual(res["stats"]["steps"], 2)
+        self.assertGreater(res["stats"]["input_tokens"], 0)
 
 
 class TestTools(unittest.TestCase):

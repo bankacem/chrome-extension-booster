@@ -372,29 +372,41 @@ class TestDryRun(unittest.TestCase):
                 out = Path(td)
                 results = json.loads((out / "results.json").read_text())
                 self.assertEqual(len(results["per_topic"]), 1)
+                self.assertEqual(results["attempts_per_arm_per_topic"], 3)
                 rec = results["per_topic"][0]
                 a, b = rec["A"], rec["B"]
-                self.assertTrue(a["gates_pass"], a["stop_reason"])
-                self.assertTrue(b["gates_pass"], b["stop_reason"])
+                # fair 3-attempt loop: first attempt passes → used = 1
+                self.assertTrue(a["success"], a["attempts"][0]["stop_reason"])
+                self.assertTrue(b["success"], b["attempts"][0]["stop_reason"])
+                self.assertEqual(a["attempts_used"], 1)
+                self.assertEqual(b["attempts_used"], 1)
+                self.assertTrue(a["first_attempt_success"])
+                self.assertTrue(a["article_attempt"] == 1)
                 # honest metering: probe + 2×call_json + article + meta = 5
-                self.assertEqual(a["llm_calls"], 5,
+                self.assertEqual(a["attempts"][0]["llm_calls"], 5,
                                  "every arm-A provider call counted exactly "
                                  "once (no double counting, no misses)")
+                self.assertEqual(a["total_llm_calls"], 5)
                 # owner decision 4 counters present for BOTH arms
                 for arm in (a, b):
-                    self.assertGreaterEqual(arm["claims_total"], 0)
-                    self.assertGreaterEqual(arm["claims_numeric"], 0)
-                    self.assertGreaterEqual(arm["claims_sourced"], 0)
-                    self.assertGreaterEqual(arm["unsupported_claims"], 0)
+                    att = arm["attempts"][0]
+                    self.assertGreaterEqual(att["claims_total"], 0)
+                    self.assertGreaterEqual(att["claims_numeric"], 0)
+                    self.assertGreaterEqual(att["claims_sourced"], 0)
+                    self.assertGreaterEqual(att["unsupported_claims"], 0)
                 self.assertGreaterEqual(rec["reference_results"], 3)
-                # publisher artifacts exist, non-empty, both arms
+                # publisher artifacts exist, non-empty, both arms (per attempt)
                 for arm_d in ("armA", "armB"):
                     for f in ("candidate.md", "metrics.json", "claims.json"):
-                        p = out / f"topic_00" / arm_d / f
+                        p = out / "topic_00" / arm_d / "attempt1" / f
                         self.assertGreater(p.stat().st_size, 0, str(p))
                 self.assertFalse(json.loads(
-                    (out / "topic_00" / "armB" / "report.json").read_text()
-                )["published"])
+                    (out / "topic_00" / "armB" / "attempt1" / "report.json")
+                    .read_text())["published"])
+                # arm B journal always dumped (partial-usage audit trail)
+                self.assertGreater(
+                    (out / "topic_00" / "armB" / "attempt1" / "journal.jsonl")
+                    .stat().st_size, 0)
                 # blind pair + fingerprint (owner decision 3)
                 blind = out / "blind"
                 self.assertGreater((blind / "pair_00.md").stat().st_size, 0)
@@ -402,13 +414,20 @@ class TestDryRun(unittest.TestCase):
                 key = (blind / "key.txt").read_text()
                 self.assertGreater(len(key.strip()), 64)
                 self.assertNotIn("first=A", key)  # mapping NOT stored
-                # decision rule premises (guard added after smoke 36990401835)
+                # decision rule (REVISED 2026-10-02; premise guard kept)
                 dec = results["decision"]
                 self.assertEqual(dec["premise"],
-                                 "both arms produced >=1 article")
-                self.assertEqual(dec["articles_A"], 1)
-                self.assertEqual(dec["articles_B"], 1)
+                                 "both arms produced >=1 successful article")
+                self.assertEqual(dec["successes_A"], 1)
+                self.assertEqual(dec["successes_B"], 1)
                 self.assertIsInstance(dec["adopt_B"], bool)
+                self.assertEqual(
+                    dec["rule"],
+                    "adopt B iff success_within_3_attempts(B)>="
+                    "success_within_3_attempts(A) AND unsupported_claims(B)"
+                    "<=0.60*unsupported_claims(A) AND "
+                    "cost_per_successful_article(B)<=8*"
+                    "cost_per_successful_article(A)")
         finally:
             llm_router.call = orig_router
             v2agents._default_chat = orig_default
@@ -455,23 +474,32 @@ class TestDryRun(unittest.TestCase):
                 out = Path(td)
                 results = json.loads((out / "results.json").read_text())
                 rec = results["per_topic"][0]
-                # arm A: no article, stop reason recorded (not a crash)
-                self.assertEqual(rec["A"]["words"], 0)
-                self.assertIn("No working model", rec["A"]["stop_reason"])
-                # arm B: real article
-                self.assertGreater(rec["B"]["words"], 0)
+                # arm A: all 3 fair attempts ran and failed; reason recorded
+                self.assertEqual(rec["A"]["attempts_used"], 3)
+                self.assertFalse(rec["A"]["success"])
+                self.assertIsNone(rec["A"]["article_attempt"])
+                for att in rec["A"]["attempts"]:
+                    self.assertEqual(att["words"], 0)
+                    self.assertIn("No working model", att["stop_reason"])
+                # arm B: real article on attempt 1
+                self.assertTrue(rec["B"]["success"])
+                self.assertEqual(rec["B"]["attempts_used"], 1)
+                self.assertGreater(rec["B"]["attempts"][0]["words"], 0)
                 dec = results["decision"]
-                self.assertEqual(dec["articles_A"], 0)
-                self.assertEqual(dec["articles_B"], 1)
+                self.assertEqual(dec["successes_A"], 0)
+                self.assertEqual(dec["successes_B"], 1)
                 self.assertIn("NOT MET", dec["premise"])
-                self.assertIn("arm A: 0 articles", dec["premise"])
+                self.assertIn("arm A: 0 successful articles", dec["premise"])
                 self.assertIsNone(dec["adopt_B"])
                 self.assertIsNone(dec["recommendation"])
-                # thresholds/rule string untouched
+                # thresholds/rule string = the REVISED owner rule (2026-10-02)
                 self.assertEqual(
                     dec["rule"],
-                    "adopt B iff gates(B)>=gates(A) AND claims(B)<=0.60*"
-                    "claims(A) AND cost(B)<=8*cost(A)")
+                    "adopt B iff success_within_3_attempts(B)>="
+                    "success_within_3_attempts(A) AND unsupported_claims(B)"
+                    "<=0.60*unsupported_claims(A) AND "
+                    "cost_per_successful_article(B)<=8*"
+                    "cost_per_successful_article(A)")
         finally:
             llm_router.call = orig_router
             v2agents._default_chat = orig_default
@@ -765,6 +793,195 @@ class TestSmokeRun18Regressions(unittest.TestCase):
             _ask(chat_fn2, "RESEARCHER", "", messages, 900, None,
                  Journal(), "research_notes")
         self.assertEqual(len(seen), 2)
+
+
+class TestFairAttemptsAndCostAccounting(unittest.TestCase):
+    """Owner decisions 2 + 4 (2026-10-02): fair 3-attempt loop for BOTH
+    arms (stop at first all-gates-pass article, no softening) and PARTIAL
+    usage accounting — a failed attempt's real provider consumption must
+    be counted, never zeroed (the $0.05-vs-$1.23 accounting contradiction)."""
+
+    def setUp(self):
+        os.environ["CLEANAPIS_KEY"] = "dummy-test-key-never-real"
+        import llm_router
+        self._orig_keys = dict(llm_router.API_KEYS)
+        llm_router.API_KEYS["cleanapis"] = "dummy-test-key-never-real"
+        self.addCleanup(llm_router.API_KEYS.update,
+                        {k: "" for k in llm_router.API_KEYS})
+        self.addCleanup(llm_router.API_KEYS.update, self._orig_keys)
+        self._sx = _FakeSearXNG()
+        self._sx.__enter__()
+        self.addCleanup(self._sx.__exit__, None, None, None)
+
+    def _set_env(self, **kv):
+        for k, v in kv.items():
+            os.environ[k] = v
+            self.addCleanup(os.environ.pop, k, None)
+
+    def test_attempt_loop_stops_at_first_success_and_costs_accumulate(self):
+        self._set_env(SEARXNG_URL=self._sx.url)
+        # attempt 1: article + both regens come back WITHOUT the FAQ section
+        # → gates fail after 2 targeted repairs (real provider calls spent);
+        # attempt 2: FakeRouterCall falls back to the good article → PASS.
+        # Attempt 3 must NEVER run.
+        fake = FakeRouterCall(write_returns=[
+            _article_without_faq(), _article_without_faq(),
+            _article_without_faq()])
+        import llm_router
+        orig = llm_router.call
+        llm_router.call = fake
+        pipeline_a.call = fake
+        self.addCleanup(setattr, llm_router, "call", orig)
+        self.addCleanup(setattr, pipeline_a, "call", orig)
+        from agents_v2.eval import run_eval
+        with tempfile.TemporaryDirectory() as td:
+            tdir = Path(td)
+            arm = run_eval._run_arm(
+                run_eval._eval_a, "best tab manager chrome extension", tdir,
+                run_eval.ATTEMPTS, max_calls=40, max_usd=1.0, reference="")
+            self.assertEqual(arm["attempts_used"], 2,
+                             "stop at first success — attempt 3 must not run")
+            self.assertFalse(arm["attempts"][0]["gates_pass"])
+            self.assertIn("gates still failing",
+                          arm["attempts"][0]["stop_reason"])
+            self.assertTrue(arm["attempts"][1]["gates_pass"])
+            self.assertTrue(arm["success"])
+            self.assertFalse(arm["first_attempt_success"])
+            self.assertEqual(arm["article_attempt"], 2)
+            # FAILED attempt cost counts (owner decision 4)
+            self.assertEqual(arm["total_llm_calls"],
+                             arm["attempts"][0]["llm_calls"]
+                             + arm["attempts"][1]["llm_calls"])
+            self.assertGreater(arm["attempts"][0]["llm_calls"], 0)
+            self.assertGreater(arm["total_usd_floor"], 0)
+            self.assertEqual(arm["total_usd_floor"], round(
+                arm["attempts"][0]["usd_floor"]
+                + arm["attempts"][1]["usd_floor"], 4))
+            # per-attempt artifacts: failed attempt keeps metrics, no body
+            self.assertGreater((tdir / "armA" / "attempt1" / "metrics.json")
+                               .stat().st_size, 0)
+            self.assertFalse((tdir / "armA" / "attempt1" / "candidate.md")
+                             .exists())
+            self.assertGreater((tdir / "armA" / "attempt2" / "candidate.md")
+                               .stat().st_size, 0)
+
+    def test_arm_b_partial_usage_counted_on_error(self):
+        """THE owner-ordered fix: arm B crashes mid-run AFTER real provider
+        calls (plan succeeded, researcher call dies) — its partial usage
+        must appear in metrics (previously 0 calls / $0 / tokens lost)."""
+        self._set_env(SEARXNG_URL=self._sx.url,
+                      SEARXNG_BASE_URL=self._sx.url)
+        from agents_v2 import agents as v2agents
+        from agents_v2.eval import run_eval
+
+        calls = {"n": 0}
+
+        def fake_default(profile, system, messages, max_tokens, ledger,
+                         model=None):
+            calls["n"] += 1
+            if calls["n"] == 1:  # orchestrator plan succeeds (real usage)
+                return FakeChat()(profile, system, messages, max_tokens,
+                                  ledger, model=model)
+            raise RuntimeError("boom: provider died mid-run (simulated)")
+
+        orig = v2agents._default_chat
+        v2agents._default_chat = fake_default
+        self.addCleanup(setattr, v2agents, "_default_chat", orig)
+        with tempfile.TemporaryDirectory() as td:
+            tdir = Path(td)
+            caps = v2agents.ArticleCaps(max_steps=16, max_tokens=400_000,
+                                        max_usd_floor=1.0)
+            m = run_eval._eval_b("best tab manager chrome extension", tdir,
+                                 caps, reference="", attempt=1)
+            self.assertFalse(m["gates_pass"])
+            self.assertTrue(m["stop_reason"].startswith(
+                "error: RuntimeError"), m["stop_reason"])
+            # THE fix: partial consumption counted, not zeroed
+            self.assertGreaterEqual(m["llm_calls"], 2,
+                                    "plan + reserved researcher call counted")
+            self.assertGreater(m["tokens_estimated"], 0,
+                               "plan call's tokens must survive the error")
+            # journal always dumped → per-call usage auditable after the fact
+            self.assertGreater((tdir / "armB" / "attempt1" / "journal.jsonl")
+                               .stat().st_size, 0)
+            self.assertGreater((tdir / "armB" / "attempt1" / "metrics.json")
+                               .stat().st_size, 0)
+
+    # ── revised decision rule (pure unit, no provider) ──────────────────
+    @staticmethod
+    def _arm(succ_attempt, unsup, usd_total):
+        # attempts_used mirrors the real loop: stops at first success,
+        # otherwise burns all 3 fair attempts
+        used = succ_attempt if succ_attempt else 3
+        attempts = []
+        for n in range(1, used + 1):
+            attempts.append({
+                "attempt": n, "gates_pass": n == succ_attempt,
+                "words": 2800 if n == succ_attempt else 0,
+                "unsupported_claims": unsup if n == succ_attempt else -1,
+                "llm_calls": 5,
+                "usd_floor": round(usd_total / used, 4)})
+        return {"attempts": attempts, "attempts_used": used,
+                "success": succ_attempt is not None,
+                "first_attempt_success": succ_attempt == 1,
+                "article_attempt": succ_attempt,
+                "total_usd_floor": usd_total}
+
+    def _results(self, a_specs, b_specs):
+        out = []
+        for (sa, ua, ca), (sb, ub, cb) in zip(a_specs, b_specs):
+            out.append({"topic": "t", "reference_results": 8,
+                        "A": self._arm(sa, ua, ca),
+                        "B": self._arm(sb, ub, cb)})
+        return out
+
+    def test_decision_rule_revised_conditions(self):
+        from agents_v2.eval import run_eval
+        R = run_eval.build_decision
+        # A wins topics 1 (att1) + 2 (att2), loses 3; B wins 1 + 2 on att1.
+        # unsup: A 3+3=6, B 1+1=2 → ratio 0.333 ≤ 0.60;
+        # cost/success: A $1.0/2=0.5, B $2.0/2=1.0 → ratio 2 ≤ 8 → ADOPT B.
+        res = self._results([(1, 3, 0.5), (2, 3, 0.5), (None, 0, 0.0)],
+                            [(1, 1, 1.0), (1, 1, 1.0), (None, 0, 0.0)])
+        d = R(res, 3)
+        self.assertTrue(d["adopt_B"])
+        self.assertEqual(d["successes_A"], 2)
+        self.assertEqual(d["successes_B"], 2)
+        self.assertEqual(d["success_rate_A"], 0.667)
+        self.assertEqual(d["first_attempt_rate_B"], 0.667)
+        self.assertEqual(d["avg_attempts_A"], 2.0)
+        self.assertEqual(d["avg_attempts_B"], 1.67)
+        self.assertEqual(d["unsupported_claims_A"], 6)
+        self.assertEqual(d["unsupported_claims_B"], 2)
+        self.assertEqual(d["cost_per_successful_article_A"], 0.5)
+        self.assertEqual(d["cost_per_successful_article_B"], 1.0)
+        self.assertEqual(d["recommendation"], "ADOPT agents_v2 (B)")
+        # same successes but B's unsupported claims NOT ≥40% lower → KEEP A
+        res = self._results([(1, 3, 0.5), (2, 3, 0.5), (None, 0, 0.0)],
+                            [(1, 4, 1.0), (1, 4, 1.0), (None, 0, 0.0)])
+        d = R(res, 3)
+        self.assertFalse(d["adopt_B"])
+        self.assertEqual(d["recommendation"],
+                         "KEEP A (improved pipeline); research agent may "
+                         "remain an optional tool")
+        # B wins FEWER topics than A → success condition fails alone
+        res = self._results([(1, 5, 0.5), (1, 5, 0.5), (None, 0, 0.0)],
+                            [(1, 0, 1.0), (None, 0, 0.0), (None, 0, 0.0)])
+        d = R(res, 3)
+        self.assertFalse(d["adopt_B"])
+        # cost per successful article > 8× → KEEP A even when all else passes
+        res = self._results([(1, 5, 0.5), (1, 5, 0.5), (None, 0, 0.0)],
+                            [(1, 0, 4.5), (1, 0, 4.5), (None, 0, 0.0)])
+        d = R(res, 3)
+        self.assertFalse(d["adopt_B"])
+        self.assertEqual(d["cost_ratio"], 9.0)
+        # premise guard: A produced 0 successful articles → null decision
+        res = self._results([(None, 0, 0.0), (None, 0, 0.0), (None, 0, 0.0)],
+                            [(1, 0, 1.0), (None, 0, 0.0), (None, 0, 0.0)])
+        d = R(res, 3)
+        self.assertIsNone(d["adopt_B"])
+        self.assertIsNone(d["recommendation"])
+        self.assertIn("arm A: 0 successful articles", d["premise"])
 
 
 if __name__ == "__main__":
