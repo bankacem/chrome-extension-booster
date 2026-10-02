@@ -60,6 +60,83 @@ log and know exactly where things stand without re-reading the whole repo.
 
 ## Session Log
 
+### 2026-10-02 — Super Z session (agents_v2 build per owner authorization)
+
+**What was built (all via branch → PR → squash merge, CI-proven):**
+- `seo_agent_pro/agents_v2/` — a new Anthropic-style agent LAYER, completely
+  disconnected from production paths:
+  - `llm_provider.py` — role-routed `chat()` over cleanapis.com/v1 (reuses the
+    transport lessons from `llm_router._call_cleanapis`): 429/5xx exponential
+    backoff <=3 attempts, 401/402 fatal, tool-calling wire format, honest token
+    accounting, the provider-ECHOED model id on every result. `UsageLedger`
+    enforces call/token caps before spend.
+  - `models.json` — roles ORCHESTRATOR/WORKER/CRITIC/FAST + candidate lists +
+    `fit_results`. Chosen models were AUTO-FILLED from the model-fit run
+    36932706713 (12/12 candidates passed 10/10 on every item; 720 calls;
+    USD floor $1.1853 of $5 cap): ORCH=`claude-sonnet-5`, WORKER=`deepseek-v4-pro-0813`,
+    CRITIC=`glm-5.3` (must differ from WRITER — enforced in code), FAST=`gpt-5.6-luna`.
+    Prices remain UNCONFIRMED by the owner -> all USD numbers are input-price FLOORS.
+  - `gates_local.py` — verbatim read-only copy of PR #450's `gates.py`
+    (NOT merged; branch `feat/old-line-hardening` still open). Deterministic
+    final judge: 2550-3100 words, meta 120-160, faq8, table, ToC, verdict,
+    markdown-damage checks.
+  - `agents.py` — orchestrator + 3 parallel researchers (read-only) + writer
+    (regenerates ONLY failing sections, <=2 attempts) + critic (different model,
+    advisory) + JSON-Schema-validated I/O + per-article caps + JSONL journal.
+  - `tools.py` — `web_search` (local SearXNG) + `fetch_page` (domain
+    allowlist: wikipedia/mdn/chrome-dev). Tool results are wrapped as DATA
+    (`{_meta,data}`); injection-resistance is unit-tested.
+  - `publisher.py` — writes `candidate.md` + `report.json` as ARTIFACTS ONLY
+    (no commit/PR/publish; refuses to write into content folders).
+  - `eval/` — A/B harness: `pipeline_a.py` (verbatim #450 improved-pipeline
+    copy = arm A), `claims.py` (independent unsupported-claims checker),
+    `topics.json` (10 fixed topics), `run_eval.py` (smoke/full, the owner's
+    FIXED decision rule, blind A/B pairs with sha256-fingerprint-only key).
+- `.github/workflows/agents-v2-eval.yml` — THE one authorized new workflow:
+  `workflow_dispatch` only, `permissions: contents: read` (file+job), secrets
+  only inside `env:`, artifacts from `/tmp` only, timeout 240, hard caps on
+  calls AND USD. Two modes: `models` (fit check) and `eval` (smoke|full).
+- `docs/agents_v2_design.md` (architecture/tools/schemas/budgets) and
+  `docs/review-phase-a.md` (audit of the previous phase's direct pushes:
+  per-commit revert commands, the 72 broken links, deletion evidence).
+
+**How to run it:**
+- Model fit: Actions -> "agents-v2 eval" -> Run workflow -> mode=`models`
+  (inputs: models CSV optional, trials=10, max_calls=1000, max_cost_usd=5).
+- A/B eval: same workflow, mode=`eval`, eval_mode=`smoke` (1 topic) then
+  `full` (10 topics, run ONCE). Results land as the `agents-v2-eval-results`
+  artifact; the workflow prints the fixed decision-rule verdict at the end.
+
+**What is NOT executed / BLOCKED (do not unblock without the owner's go-ahead):**
+- The A/B smoke eval has FAILED 4 times and the owner's 3-attempt fix budget
+  for this step is consumed. Failure chain (runs 36941731603, 36944783516,
+  36947538515, 36950585538 — logs are the evidence):
+  1. missing anthropic in the eval job -> fixed (#458),
+  2. `find_working_model()` needs a candidates list -> fixed (#459),
+  3. verbatim #450 functions assume `modules.py` module imports (`os`, ...) ->
+     fixed (#461; note: PR #460 was accidentally empty due to a local-branch
+     bookkeeping mistake — its fix was re-landed via #461),
+  4. a FOURTH latent symbol surfaced: the copied functions call
+     `call_json(system, user, model)` (defined in `llm_router.py:702`) and the
+     eval wrapper's import line lacks it -> the NEXT one-line fix (add
+     `call_json` to the `from llm_router import ...` line in `pipeline_a.py`).
+     ALSO: set `SEARXNG_URL: http://localhost:8080` in the workflow eval env —
+     arm A's `_fetch_serp` reads `SEARXNG_URL` (default :8888) and fell back to
+     model-knowledge (disclosed in its log).
+- Because the eval never produced numbers, the owner's fixed decision rule
+  could NOT be evaluated -> standing recommendation: KEEP the current
+  pipeline (arm A); agents_v2 stays optional tooling until a completed eval.
+- No article was published, no article content touched, no existing workflow
+  modified, daily-article remains `disabled_manually`, and no production
+  path calls anything in `agents_v2/`.
+
+**Owner actions still pending (from the authorization):** confirm the five
+"deleted articles" list in docs/review-phase-a.md section 4 if those five
+specifics matter; fill/confirm `usd_per_1m_output` prices in models.json to
+turn cost floors into real estimates; decide on the eval unblock above;
+delete the CLEANAPIS secret when done testing.
+
+
 ### 2026-08-28 — External session (Super Z, via user request)
 - Added `gorouter-claude-opus-5` as a first-class provider (config.py + llm_router.py; key read from GOROUTER_KEY env only, never committed). Gateway lessons encoded in `_call_gorouter`: always-SSE wire (Cloudflare 524 kills quiet non-stream calls), internal 403 WAF retry, empty-choices chunk tolerance, max_tokens cap 6500.
 - Fixed strategy.py: `manual_real_search` (SEO_AGENT_RESEARCH_FILE snapshots) had its competitor gaps silently stripped by the startswith("searxng") check — file-fed runs now keep them, matching the README's documented workflow.
