@@ -126,6 +126,9 @@ jobs:
           IN_MAX_COST_USD: ${{ inputs.max_cost_usd }}
         run: |
           set -e
+          # arm A reuses the production router (llm_router imports anthropic);
+          # public packages only, no secrets involved
+          python3 -m pip install --quiet --disable-pip-version-check anthropic requests
           python3 seo_agent_pro/agents_v2/eval/run_eval.py \
             --mode "$IN_EVAL_MODE" \
             --max-calls "$IN_MAX_CALLS" \
