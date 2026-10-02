@@ -325,13 +325,14 @@ Rules:
     # Owner decision 3b: max_tokens sized from the window ceiling (~2 tokens
     # per word plus headroom) so a runaway section physically cannot inflate
     # the article to bench-001 arm-A lengths (5,000-6,500 words).
-    # SMOKE RUN 36998949240: deepseek-v4-pro-0813 is a reasoning-style model —
-    # it can burn the whole completion budget on reasoning and return EMPTY
-    # content with finish_reason=length. 8192 made that the NORM for article
-    # writes (the internal empty-retry could not help: min(8192*2, 8000)
-    # shrank the budget). Article length is bounded by the 2550-3100-word
-    # gates, NOT by max_tokens — so the ceiling only needs reasoning headroom.
-    article    = call(system, user, model, stream=True,
+    # SMOKE RUN 37003663375: stream=True returned EMPTY content twice even
+    # at max_tokens=16384 — cleanapis buffers the reasoning phase of
+    # reasoning-style models (no SSE bytes flow until content starts), so a
+    # gateway idle cut kills the stream before any content arrives. Verified
+    # live: the same model returns 1389 words non-streamed in ~30s
+    # (finish_reason=stop). Non-stream also keeps the empty-content retry
+    # meaningful. Word length is still bounded by the 2550-3100 gates.
+    article    = call(system, user, model, stream=False,
                       max_tokens=16384)
     word_count = len(article.split())
     print(c("dim", "  " + "─" * 56))
@@ -413,8 +414,8 @@ Requirements:
 - Budget: ~{budget} words
 - Plain markdown; no nested links, no links inside headings, never split a
   word or number with a link."""
-        new = call(sys_p, usr, model, stream=True,
-                   max_tokens=min(4096, int(budget * 3))).strip()
+        new = call(sys_p, usr, model, stream=False,
+                   max_tokens=4096).strip()
         new = new.strip("`").strip()
         if not new.startswith("## "):
             new = f"## {name.title()}\n\n" + new
