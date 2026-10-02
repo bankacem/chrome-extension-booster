@@ -325,8 +325,14 @@ Rules:
     # Owner decision 3b: max_tokens sized from the window ceiling (~2 tokens
     # per word plus headroom) so a runaway section physically cannot inflate
     # the article to bench-001 arm-A lengths (5,000-6,500 words).
+    # SMOKE RUN 36998949240: deepseek-v4-pro-0813 is a reasoning-style model —
+    # it can burn the whole completion budget on reasoning and return EMPTY
+    # content with finish_reason=length. 8192 made that the NORM for article
+    # writes (the internal empty-retry could not help: min(8192*2, 8000)
+    # shrank the budget). Article length is bounded by the 2550-3100-word
+    # gates, NOT by max_tokens — so the ceiling only needs reasoning headroom.
     article    = call(system, user, model, stream=True,
-                      max_tokens=min(8192, int(WORD_MAX * 2)))
+                      max_tokens=16384)
     word_count = len(article.split())
     print(c("dim", "  " + "─" * 56))
     _ok(f"Article complete — {word_count} words")

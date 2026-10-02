@@ -345,18 +345,21 @@ class TestDryRun(unittest.TestCase):
         self._set_env(SEARXNG_URL=self._sx.url,
                       SEARXNG_BASE_URL=self._sx.url)
         import llm_router
-        from agents_v2 import llm_provider
+        from agents_v2 import agents as v2agents
         fake_router = FakeRouterCall()
         fake_chat = FakeChat()
-        orig_router, orig_chat = llm_router.call, llm_provider.chat
+        orig_router, orig_default = llm_router.call, v2agents._default_chat
 
-        def _chat(role, system, messages, tools=None, max_tokens=1024,
-                  ledger=None, model=None):
+        # patch ABOVE the profile→role mapping (arm B's single provider
+        # choke point is agents._default_chat → llm_provider.chat): the fake
+        # dispatches on agent PROFILE names, which _default_chat receives.
+        def _fake_default(role, system, messages, max_tokens, ledger,
+                          model=None):
             return fake_chat(role, system, messages, max_tokens, ledger,
                              model=model)
 
         llm_router.call = fake_router
-        llm_provider.chat = _chat
+        v2agents._default_chat = _fake_default
         try:
             with tempfile.TemporaryDirectory() as td:
                 sys.argv = ["run_eval.py", "--mode", "smoke",
@@ -407,7 +410,8 @@ class TestDryRun(unittest.TestCase):
                 self.assertEqual(dec["articles_B"], 1)
                 self.assertIsInstance(dec["adopt_B"], bool)
         finally:
-            llm_router.call, llm_provider.chat = orig_router, orig_chat
+            llm_router.call = orig_router
+            v2agents._default_chat = orig_default
 
     def test_decision_guard_null_when_arm_produces_no_article(self):
         """Smoke run 36990401835 emitted adopt_B=true on ZERO data (both
@@ -419,8 +423,7 @@ class TestDryRun(unittest.TestCase):
         self._set_env(SEARXNG_URL=self._sx.url,
                       SEARXNG_BASE_URL=self._sx.url)
         import llm_router
-        from agents_v2 import llm_provider
-        from llm_router import find_working_model as _orig_fwm
+        from agents_v2 import agents as v2agents
 
         def _dead_probe(candidates, test_prompt="Reply with exactly: OK"):
             raise RuntimeError(
@@ -429,16 +432,16 @@ class TestDryRun(unittest.TestCase):
 
         fake_router = FakeRouterCall()
         fake_chat = FakeChat()
-        orig_router, orig_chat, orig_fwm = (llm_router.call, llm_provider.chat,
-                                            pipeline_a.find_working_model)
+        orig_router, orig_default = llm_router.call, v2agents._default_chat
+        orig_fwm = pipeline_a.find_working_model
 
-        def _chat(role, system, messages, tools=None, max_tokens=1024,
-                  ledger=None, model=None):
+        def _fake_default(role, system, messages, max_tokens, ledger,
+                          model=None):
             return fake_chat(role, system, messages, max_tokens, ledger,
                              model=model)
 
         llm_router.call = fake_router
-        llm_provider.chat = _chat
+        v2agents._default_chat = _fake_default
         pipeline_a.find_working_model = _dead_probe
         try:
             with tempfile.TemporaryDirectory() as td:
@@ -470,8 +473,115 @@ class TestDryRun(unittest.TestCase):
                     "adopt B iff gates(B)>=gates(A) AND claims(B)<=0.60*"
                     "claims(A) AND cost(B)<=8*cost(A)")
         finally:
-            llm_router.call, llm_provider.chat = orig_router, orig_chat
+            llm_router.call = orig_router
+            v2agents._default_chat = orig_default
             pipeline_a.find_working_model = orig_fwm
+
+
+class TestSmokeRun15Regressions(unittest.TestCase):
+    """Smoke run 36998949240 (first run where cleanapis actually responded):
+    arm B died on `unknown role 'WRITER'` (profile names passed as provider
+    roles) and arm A died on `no usable content` (empty-retry cap 8000 is
+    BELOW the article call's own max_tokens 8192 — the 'doubled' retry
+    shrank the budget). Neither is reachable through the mock-provider
+    dry-run (FakeChat replaces _default_chat / llm_router.call), so these
+    tests pin the two seams directly."""
+
+    def test_profile_to_role_mapping_covers_all_profiles(self):
+        from agents_v2.agents import PROFILES, _PROFILE_TO_ROLE
+        from agents_v2 import llm_provider
+        roles = llm_provider.load_config()["roles"]
+        for name in PROFILES:
+            self.assertIn(name, _PROFILE_TO_ROLE,
+                          f"profile {name!r} missing from _PROFILE_TO_ROLE")
+            self.assertIn(_PROFILE_TO_ROLE[name], roles,
+                          f"profile {name!r} maps to unknown role")
+        self.assertNotEqual(
+            roles[_PROFILE_TO_ROLE["CRITIC"]]["model"],
+            roles[_PROFILE_TO_ROLE["WRITER"]]["model"],
+            "critic must run a different model than the writer")
+
+    def test_default_chat_routes_profiles_to_provider_roles(self):
+        from agents_v2 import agents, llm_provider
+        seen = []
+
+        def fake_chat(role, system, messages, tools=None, max_tokens=1,
+                      ledger=None, model=None):
+            seen.append(role)
+
+            class R:
+                pass
+            r = R()
+            r.usage = {"input_tokens": 1, "output_tokens": 1,
+                       "estimated": False}
+            r.stop_reason = "stop"
+            r.model = model or "fake-model"
+            r.latency_seconds = 0.001
+            r.text = "{}"
+            return r
+
+        orig = llm_provider.chat
+        llm_provider.chat = fake_chat
+        try:
+            for profile, expected in (("WRITER", "WORKER"),
+                                      ("RESEARCHER", "WORKER"),
+                                      ("ORCHESTRATOR", "ORCHESTRATOR"),
+                                      ("CRITIC", "CRITIC")):
+                agents._default_chat(profile, "s", [{"role": "user",
+                                                     "content": "x"}],
+                                     16, ledger=None)
+                self.assertEqual(seen[-1], expected)
+        finally:
+            llm_provider.chat = orig
+
+    def test_cleanapis_empty_retry_never_shrinks_budget(self):
+        import urllib.error as ue
+        import llm_router
+
+        payloads = []
+
+        class _Resp:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+            def read(self):
+                # attempt 1: empty content (reasoning drained the budget);
+                # attempt 2: usable content
+                return json.dumps({"choices": [{"message": {"content":
+                    "" if len(payloads) == 1 else "OK"}}]}).encode()
+
+        def fake_urlopen(req, timeout=0):
+            payloads.append(json.loads(req.data.decode()))
+            return _Resp()
+
+        orig_urlopen = llm_router.urllib.request.urlopen
+        llm_router.urllib.request.urlopen = fake_urlopen
+        try:
+            out = llm_router._call_cleanapis(
+                "deepseek-v4-pro-0813", "sys", "user",
+                stream=False, max_tokens=8192)
+            self.assertEqual(out, "OK")
+            self.assertEqual(payloads[0]["max_tokens"], 8192)
+            # THE regression: retry must RAISE the budget (16384), and never
+            # shrink below the original request (run 15 bug: 8000 < 8192)
+            self.assertEqual(payloads[1]["max_tokens"], 16384)
+            self.assertGreaterEqual(payloads[1]["max_tokens"],
+                                    payloads[0]["max_tokens"])
+        finally:
+            llm_router.urllib.request.urlopen = orig_urlopen
+
+    def test_article_write_requests_reasoning_headroom(self):
+        # arm A's article call must not repeat run 15's 8192 ceiling; the
+        # word ceiling is enforced by gates (2550-3100), not by max_tokens.
+        import inspect
+        from agents_v2.eval import pipeline_a
+        src = inspect.getsource(pipeline_a)
+        self.assertIn("max_tokens=16384", src,
+                      "article write must request 16384 reasoning headroom")
+        self.assertNotIn("max_tokens=min(8192", src)
 
 
 if __name__ == "__main__":

@@ -28,9 +28,29 @@ from agents_v2.gates_local import rebuild_toc, repair_damage, run_gates
 from agents_v2.schemas import SchemaError, extract_json, validate
 
 # ── defaults overridable for tests ──────────────────────────────────────────
+# Agent PROFILES (this module) are not provider ROLES (models.json `roles`).
+# SMOKE RUN 36998949240: _default_chat passed profile names straight through
+# → ProviderFatal "unknown role 'WRITER'" the moment the real provider path
+# ran (mock chat_fns in tests bypass this function, so the dry-run could not
+# catch it — test_agents_v2_eval.py now asserts the mapping against models.json).
+_PROFILE_TO_ROLE = {
+    "ORCHESTRATOR": "ORCHESTRATOR",
+    "RESEARCHER": "WORKER",
+    "WRITER": "WORKER",
+    "CRITIC": "CRITIC",   # models.json guarantees critic model != worker model
+}
+
+
 def _default_chat(role, system, messages, max_tokens, ledger, model=None):
     from agents_v2 import llm_provider
-    return llm_provider.chat(role, system, messages, tools=None,
+    routed = _PROFILE_TO_ROLE.get(role)
+    if routed is None:
+        from agents_v2.llm_provider import ProviderFatal
+        raise ProviderFatal(
+            f"agent profile {role!r} has no provider-role mapping — "
+            f"add it to agents._PROFILE_TO_ROLE (roles: "
+            f"{sorted(set(_PROFILE_TO_ROLE.values()))})")
+    return llm_provider.chat(routed, system, messages, tools=None,
                              max_tokens=max_tokens, ledger=ledger, model=model)
 
 

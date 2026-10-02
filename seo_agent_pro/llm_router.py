@@ -572,7 +572,11 @@ def _call_cleanapis(model_id: str, system: str, user: str, stream: bool, max_tok
 
         if full.strip():
             return full
-        attempt_tokens = min(attempt_tokens * 2, 8000)
+        # 16384 (not 8000): the "doubled" retry must never SHRINK a request
+        # that already asked for more than the cap (article writes ask for
+        # 8192; min(8192*2, 8000) = 8000 guaranteed a second empty reply for
+        # reasoning-style models that burn budget before content).
+        attempt_tokens = min(attempt_tokens * 2, 16384)
         print(c("yellow", f"  ↳ cleanapis empty content — retrying with max_tokens={attempt_tokens}"))
 
     raise ValueError(f"cleanapis returned no usable content for {model_id}")
