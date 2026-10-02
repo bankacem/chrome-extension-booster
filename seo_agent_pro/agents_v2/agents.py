@@ -207,22 +207,36 @@ def _ask(chat_fn, profile: str, system_extra: str, messages: list,
     """One validated LLM turn. Returns parsed JSON or raises ValueError.
 
     Caps are enforced HERE (reserve before, account after) so the step/token
-    ceilings hold for ANY chat_fn — the real provider or a test fake."""
+    ceilings hold for ANY chat_fn — the real provider or a test fake.
+    SMOKE RUN #18: real models intermittently reply in prose (no JSON at all)
+    or violate the schema — non-deterministically. Owner spec allows a
+    "schema-invalid reply twice" stop, i.e. ONE retry; each attempt is
+    metered and journaled like any other call."""
     prof = PROFILES[profile]
-    if ledger is not None:
-        ledger.reserve_call()          # raises BudgetExceeded at the cap
-    started = time.monotonic()
-    result = chat_fn(profile, prof["description"] + "\n" + system_extra,
-                     messages, max_tokens, ledger, model=model)
-    journal.log(agent=profile, action=action, model=getattr(result, "model", "?"),
-                input_tokens=result.usage["input_tokens"],
-                output_tokens=result.usage["output_tokens"],
-                stop_reason=result.stop_reason, ok=True)
-    if ledger is not None:
-        ledger.add(lp_entry(profile, result, time.monotonic() - started))
-    data = extract_json(result.text)
-    validate(data, prof["output_schema"])
-    return data
+    last_err: Exception | None = None
+    for attempt in (1, 2):
+        if ledger is not None:
+            ledger.reserve_call()          # raises BudgetExceeded at the cap
+        started = time.monotonic()
+        result = chat_fn(profile, prof["description"] + "\n" + system_extra,
+                         messages, max_tokens, ledger, model=model)
+        journal.log(agent=profile, action=action, model=getattr(result, "model", "?"),
+                    input_tokens=result.usage["input_tokens"],
+                    output_tokens=result.usage["output_tokens"],
+                    stop_reason=result.stop_reason, ok=True)
+        if ledger is not None:
+            ledger.add(lp_entry(profile, result, time.monotonic() - started))
+        try:
+            data = extract_json(result.text)
+            validate(data, prof["output_schema"])
+            return data
+        except (ValueError, SchemaError) as e:  # noqa: PERF203 — deliberate retry
+            last_err = e
+            journal.log(agent=profile, action=f"{action}_unparseable",
+                        attempt=attempt, error=str(e)[:160])
+            if attempt == 2:
+                raise
+    raise last_err  # pragma: no cover — loop always returns or raises
 
 
 def lp_entry(role: str, result, latency: float):

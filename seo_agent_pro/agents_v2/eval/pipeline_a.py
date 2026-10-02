@@ -541,6 +541,46 @@ Requirements:
 #  run_a — the A-arm entry point (mirror of daily_article._generate_content)
 # ──────────────────────────────────────────────────────────────
 
+def _trim_to_word_ceiling(body: str, ceiling: int,
+                          max_sentences: int = 15) -> tuple[str, int]:
+    """Deterministic last-resort length trim, always DISCLOSED by the caller.
+
+    Drops the LAST sentence of the longest content section per iteration
+    (never FAQ / ToC / Verdict / Conclusion — the gated structural pieces).
+    Returns (body, sentences_removed). Caps at max_sentences so a pathological
+    draft cannot be butchered silently; if still over, the caller raises as
+    before. Smoke run #18: the model ended 76 words over after 2 repairs —
+    models cannot count words; code can.
+    """
+    trimmed = 0
+    skip = ("faq", "frequently", "contents", "verdict", "conclusion")
+    for _ in range(max_sentences):
+        if len(body.split()) <= ceiling:
+            break
+        marks = ([m.start() for m in re.finditer(r"^## ", body, flags=re.M)]
+                 + [len(body)])
+        best = None  # (words, start, end)
+        for i in range(len(marks) - 1):
+            s, e = marks[i], marks[i + 1]
+            name = body[s:e].split("\n", 1)[0][3:].strip().lower()
+            if any(k in name for k in skip):
+                continue
+            wl = len(body[s:e].split())
+            if wl > (best[0] if best else 0):
+                best = (wl, s, e)
+        if best is None:
+            break
+        _, s, e = best
+        seg = body[s:e].strip()
+        parts = re.split(r"(?<=[.!?])\s+", seg)
+        if len(parts) < 2:
+            break
+        new_seg = " ".join(parts[:-1])
+        body = body[:s] + new_seg + "\n\n" + body[e:].lstrip("\n")
+        trimmed += 1
+    return body, trimmed
+
+
 def run_a(keyword: str, articles_written: int = 0, model: str | None = None,
           max_steps: int = 40, max_tokens_total: int = 400000,
           max_usd: float = 1.0) -> dict:
@@ -617,6 +657,21 @@ def run_a(keyword: str, articles_written: int = 0, model: str | None = None,
         body, meta_description = repair_section(
             keyword, strategy, body, meta_description, list(g["failed"]), model)
         g = run_gates(body, meta_description)
+    # SMOKE RUN 37013258655 (run #18): the article was WRITTEN and 2 targeted
+    # repairs ran, ending at 3176 words vs the 3100 ceiling (76 over) — the
+    # regen model cannot count words, so the last 76 survived both repairs.
+    # Deterministic last resort, DISCLOSED: drop the last sentence of the
+    # longest content section (never FAQ/ToC/Verdict) until under the
+    # ceiling. Only when word_count is the ONLY failing gate.
+    if (not g["pass"] and set(g["failed"]) == {"word_count"}
+            and g["words"] > WORD_MAX):
+        body, trimmed = _trim_to_word_ceiling(body, WORD_MAX)
+        g = run_gates(body, meta_description)
+        if trimmed:
+            stats["code_trim_sentences"] = trimmed
+            print(c("yellow",
+                    f"  [arm A] code-trimmed {trimmed} sentences to fit the "
+                    f"{WORD_MAX}-word ceiling (disclosed)"))
     if not g["pass"]:
         raise RuntimeError(
             f"[arm A] gates still failing after 2 targeted repairs: {g['failed']} "
