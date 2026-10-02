@@ -542,19 +542,26 @@ Requirements:
 # ──────────────────────────────────────────────────────────────
 
 def _trim_to_word_ceiling(body: str, ceiling: int,
-                          max_sentences: int = 15) -> tuple[str, int]:
+                          max_sentences: int | None = None) -> tuple[str, int]:
     """Deterministic last-resort length trim, always DISCLOSED by the caller.
 
     Drops the LAST sentence of the longest content section per iteration
     (never FAQ / ToC / Verdict / Conclusion — the gated structural pieces).
-    Returns (body, sentences_removed). Caps at max_sentences so a pathological
-    draft cannot be butchered silently; if still over, the caller raises as
-    before. Smoke run #18: the model ended 76 words over after 2 repairs —
-    models cannot count words; code can.
+    Returns (body, sentences_removed). Smoke run #18: the model ended 76
+    words over after 2 repairs — models cannot count words; code can.
+
+    SMOKE #22 (37049982594): the old hard cap of 15 sentences made the trim
+    ineffective exactly when it was needed — attempt 2 finished 53 words
+    over, but 15 short sentences (<45 words) were not enough, so a
+    gates-passing article was discarded; attempt 1 was 457 over. The cap is
+    removed (bounded instead by the loop's own stops: under ceiling, or no
+    eligible sentence left in any non-structural section). Still disclosed
+    via code_trim_sentences; still applies ONLY when word_count is the sole
+    failing gate.
     """
     trimmed = 0
     skip = ("faq", "frequently", "contents", "verdict", "conclusion")
-    for _ in range(max_sentences):
+    while max_sentences is None or trimmed < max_sentences:
         if len(body.split()) <= ceiling:
             break
         marks = ([m.start() for m in re.finditer(r"^## ", body, flags=re.M)]
