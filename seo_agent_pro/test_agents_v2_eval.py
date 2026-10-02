@@ -584,5 +584,33 @@ class TestSmokeRun15Regressions(unittest.TestCase):
         self.assertNotIn("max_tokens=min(8192", src)
 
 
+class TestSmokeRun16Regressions(unittest.TestCase):
+    """Smoke run 37003663375 (first run where BOTH arms got real replies):
+    arm A — stream=True returned EMPTY content twice even at 16384 tokens
+    (cleanapis buffers the reasoning phase; gateway idle-cuts the silent
+    stream). Verified live: same model returns 1389 words non-streamed in
+    ~30s. Arm B — orchestrator max_tokens=500 truncated claude-sonnet-5's
+    JSON mid-object (live probe: 439 completion tokens, non-deterministic)."""
+
+    def test_long_generation_calls_are_non_stream(self):
+        import inspect
+        from agents_v2.eval import pipeline_a
+        src = inspect.getsource(pipeline_a)
+        # article write + section regen must not use the silently-cut stream
+        self.assertIn("stream=False,\n                      max_tokens=16384", src)
+        self.assertNotIn("stream=True,", src,
+                         "no call may pass stream=True against cleanapis "
+                         "(silent reasoning phase → gateway cut)")
+
+    def test_json_call_sites_have_parse_headroom(self):
+        import inspect
+        from agents_v2 import agents
+        src = inspect.getsource(agents)
+        self.assertIn("1500, ledger, journal, \"plan\")", src,
+                      "orchestrator JSON needs >500 headroom")
+        self.assertIn("1500, ledger, journal, \"research_notes\"", src)
+        self.assertIn("2000, ledger, journal, \"critique\"", src)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
