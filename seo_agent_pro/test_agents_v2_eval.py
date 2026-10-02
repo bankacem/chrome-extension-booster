@@ -738,6 +738,24 @@ class TestSmokeRun18Regressions(unittest.TestCase):
         self.assertEqual(trimmed, 5)
         self.assertGreater(len(out.split()), 100)  # cap respected, still over
 
+    def test_trim_default_has_no_15_sentence_cap(self):
+        """Smoke #22: arm A attempt 2 finished 53 words over the ceiling and
+        was DISCARDED because the old 15-sentence cap (short sentences!) made
+        the deterministic trim ineffective. Default must trim until under the
+        ceiling (explicit caps still honored)."""
+        from agents_v2.eval.pipeline_a import _trim_to_word_ceiling
+        short = "Two word detail. "          # 3 tokens/sentence, old-killer
+        body = ("## Big Content Section\n\n" + short * 1200 + "\n\n"
+                "## Frequently Asked Questions\n\n### Q?\nA: x\n\n"
+                "## Final Verdict\n\nVerdict stays here untouched.")
+        self.assertGreater(len(body.split()), 3100)
+        out, trimmed = _trim_to_word_ceiling(body, 3100)
+        self.assertLessEqual(len(out.split()), 3100)
+        self.assertGreater(trimmed, 15,
+                           "must exceed the old cap — that is the fix")
+        self.assertIn("## Frequently Asked Questions", out)  # structural intact
+        self.assertIn("Verdict stays here untouched.", out)
+
     def test_ask_retries_once_on_unparseable_reply(self):
         import json as _json
         from agents_v2.agents import Journal, PROFILES, _ask
@@ -997,13 +1015,15 @@ class TestSmokeRun20Regressions(unittest.TestCase):
         import inspect
         from agents_v2 import agents
         src = inspect.getsource(agents)
-        for site in ("write_full", "critic_fix"):
-            self.assertIn(f'16384, ledger, journal, "{site}")', src,
-                          f"{site} must request 16384-token headroom")
-        self.assertIn('16384, ledger, journal, f"repair_{attempt}")', src,
-                      "repair regen must request 16384-token headroom")
+        # the ONLY full-article call left is write_full (16384 headroom);
+        # repairs are section-scoped (6000, WRITER_SECTIONS) per design §4
+        self.assertIn('16384, ledger, journal, "write_full")', src,
+                      "write_full must request 16384-token headroom")
+        self.assertIn('6000, ledger, journal, f"repair_{attempt}")', src,
+                      "section repairs are small, scoped replies")
+        self.assertIn('6000, ledger, journal, "critic_fix")', src)
         self.assertNotIn('8000, ledger, journal', src,
-                         "no full-article call site may stay at 8000")
+                         "no call site may stay at the 8000 killer")
 
     def test_decision_no_crash_when_arm_b_has_zero_successes(self):
         """The exact #20 crash: arm A succeeded, arm B failed 3/3 →
@@ -1046,6 +1066,89 @@ class TestSmokeRun20Regressions(unittest.TestCase):
         d = run_eval.build_decision(results, 3)
         self.assertIsNone(d["adopt_B"])
         self.assertIsNone(d["cost_ratio"])
+
+
+class TestSmokeRun21Regressions(unittest.TestCase):
+    """Smoke #21 (37041655684): arm B failed all 3 attempts in repair_1 —
+    the repair call used the FULL-article WRITER schema, so the model
+    re-emitted the whole article as 9-16k tokens of JSON (truncated at
+    16384 once, malformed-JSON 'Expecting value' otherwise). The owner's
+    design §4 (and arm A's repair_section) prescribes SECTION-scoped
+    repairs spliced back deterministically. This pins that shape."""
+
+    def test_splice_sections_replaces_and_appends(self):
+        from agents_v2.agents import _splice_sections
+        body = ("Intro.\n\n## Top Picks\n\nOLD PICKS.\n\n"
+                "## Frequently Asked Questions\n\n### Old?\nOld answer.\n\n"
+                "## Final Verdict\n\nThe verdict text.")
+        new_faq = ("## Frequently Asked Questions\n\n"
+                   "### Q1?\nAnswer one with tested detail here.\n\n"
+                   "### Q2?\nAnswer two with tested detail here.")
+        out, n = _splice_sections(body, [
+            {"heading": "Frequently Asked Questions", "markdown": new_faq}])
+        self.assertEqual(n, 1)
+        self.assertIn("### Q1?", out)
+        self.assertNotIn("### Old?", out)
+        self.assertIn("OLD PICKS.", out)          # untouched section
+        self.assertIn("## Final Verdict", out)    # preserved terminator
+        idx_faq = out.find("## Frequently Asked Questions")
+        idx_verdict = out.find("## Final Verdict")
+        self.assertLess(idx_faq, idx_verdict)
+        # unknown heading → appended at the end (counted)
+        out2, n2 = _splice_sections("## A\n\nAlpha.", [
+            {"heading": "New Section", "markdown": "## New Section\n\nBeta."}])
+        self.assertEqual(n2, 1)
+        self.assertTrue(out2.rstrip().endswith("Beta."))
+        # heading without '#' prefix is normalized
+        out3, n3 = _splice_sections("## A\n\nAlpha.\n\n## B\n\nBravo.", [
+            {"heading": "B", "markdown": "Fresh bravo content that is long "
+                                         "enough for the schema checks."}])
+        self.assertEqual(n3, 1)
+        self.assertIn("## B\n\nFresh bravo", out3)
+
+    def test_arm_b_repair_path_uses_section_scoped_reply(self):
+        """Full arm-B flow where the draft fails faq8 and a WRITER_SECTIONS
+        reply fixes it — the repair reply must NOT need the full-article
+        schema (the smoke-#21 killer), and the splice must pass gates."""
+        from agents_v2.agents import run_article, ArticleCaps
+        raw = _article_with_h1()
+        i = raw.find("## Frequently Asked Questions")
+        j = raw.find("## Final Verdict")
+        self.assertGreater(i, 0)
+        self.assertGreater(j, i)
+        bad_faq = ("## Frequently Asked Questions\n\n"
+                   + "\n\n".join(f"### Only {k}?\nShort."
+                                 for k in (1, 2, 3)))
+        draft_body = raw[:i] + bad_faq + "\n\n" + raw[j:]
+        fc = FakeChat(
+            draft={"title": "Best Tab Manager Chrome Extension — Tested",
+                   "meta_description": _META,
+                   "body_markdown": draft_body},
+            section_repairs=[{"sections": [
+                {"heading": "Frequently Asked Questions",
+                 "markdown": _faq_section()}]}])
+        res = run_article("topic x", caps=ArticleCaps(max_steps=20),
+                          chat_fn=fc, search_fn=_fake_search_proxy(),
+                          fetch_fn=_fake_fetch_proxy())
+        self.assertTrue(res["ok"], res["stop_reason"])
+        self.assertEqual(res["stats"]["repairs"], 1)
+        # the repair call profile is WRITER_SECTIONS, never full-article WRITER
+        self.assertIn(("WRITER_SECTIONS", None), fc.calls)
+        self.assertEqual(sum(1 for c in fc.calls if c[0] == "WRITER"), 1,
+                         "exactly one full-article write; repairs are sections")
+        # spliced FAQ present, verdict preserved
+        self.assertIn("### Question 1?", res["body"])
+        self.assertIn("## Final Verdict", res["body"])
+
+
+def _fake_search_proxy():
+    from test_agents_v2_agents import _fake_search
+    return _fake_search
+
+
+def _fake_fetch_proxy():
+    from test_agents_v2_agents import _fake_fetch
+    return _fake_fetch
 
 
 if __name__ == "__main__":

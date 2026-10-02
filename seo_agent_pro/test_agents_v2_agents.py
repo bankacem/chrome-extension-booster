@@ -45,7 +45,7 @@ class FakeChat:
     """Scripted chat_fn keyed by profile + action order."""
 
     def __init__(self, plan=None, research=None, draft=None, repairs=None,
-                 critique=None):
+                 critique=None, section_repairs=None):
         self.plan = plan or {"angles": ["angle one for research",
                                         "angle two for research",
                                         "angle three for research"],
@@ -56,6 +56,7 @@ class FakeChat:
                          "note": "official docs"}]}
         self.draft = draft or {}
         self.repairs = list(repairs or [])
+        self.section_repairs = list(section_repairs or [])
         self.critique = critique or {"unsupported_claims": [],
                                      "fix_suggestions": []}
         self.calls = []
@@ -80,6 +81,18 @@ class FakeChat:
             r.text = _json_wrap(self.research)
         elif role == "CRITIC":
             r.text = _json_wrap(self.critique)
+        elif role == "WRITER_SECTIONS":
+            # section-scoped repair replies (owner design §4)
+            if self.section_repairs:
+                r.text = _json_wrap(self.section_repairs.pop(0))
+            else:
+                r.text = _json_wrap({"sections": [
+                    {"heading": "Frequently Asked Questions",
+                     "markdown": "## Frequently Asked Questions\n\n"
+                                 + "\n\n".join(
+                                     f"### Question {i}?\nA: Honest tested "
+                                     "answer with a concrete example."
+                                     for i in range(1, 9))}]})
         elif role == "WRITER":
             if self.repairs:
                 r.text = _json_wrap(self.repairs.pop(0))

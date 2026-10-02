@@ -17,6 +17,7 @@ Rules enforced in code:
 from __future__ import annotations
 
 import json
+import re
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -37,6 +38,7 @@ _PROFILE_TO_ROLE = {
     "ORCHESTRATOR": "ORCHESTRATOR",
     "RESEARCHER": "WORKER",
     "WRITER": "WORKER",
+    "WRITER_SECTIONS": "WORKER",
     "CRITIC": "CRITIC",   # models.json guarantees critic model != worker model
 }
 
@@ -124,6 +126,40 @@ PROFILES: dict[str, dict] = {
         "stop_conditions": ["2 failed repair attempts", "schema-invalid reply twice",
                             "budget cap"],
         "forbidden": ["network tools", "publishing", "git"],
+    },
+    # SMOKE #21 (37041655684): repair calls used the FULL-article WRITER
+    # schema (title+meta+body_markdown) — the model re-emitted the whole
+    # article as 9-16k tokens of JSON, truncated at every ceiling tried and
+    # intermittently malformed → all 3 fair attempts died in repair_1. The
+    # owner's design §4 (and arm A's proven repair_section) says the writer
+    # regenerates ONLY the failing section and it is spliced back.
+    "WRITER_SECTIONS": {
+        "description": "Rewrites ONLY the failing sections of an existing "
+                       "draft (max 2 attempts); the rest of the draft stays "
+                       "identical.",
+        "tools": ["submit_section"],
+        "input_schema": {"type": "object",
+                         "properties": {"draft": {"type": "string"}},
+                         "required": ["draft"], "additionalProperties": False},
+        "output_schema": {"type": "object",
+                          "properties": {
+                              "sections": {"type": "array", "minItems": 1,
+                                           "maxItems": 6,
+                                           "items": {"type": "object",
+                                                     "properties": {
+                                                         "heading": {"type": "string",
+                                                                     "minLength": 3},
+                                                         "markdown": {"type": "string",
+                                                                      "minLength": 80}},
+                                                     "required": ["heading", "markdown"],
+                                                     "additionalProperties": False}},
+                              "meta_description": {"type": "string",
+                                                   "minLength": 40, "maxLength": 400}},
+                          "required": ["sections"], "additionalProperties": False},
+        "stop_conditions": ["2 failed repair attempts", "schema-invalid reply twice",
+                            "budget cap"],
+        "forbidden": ["rewriting the whole article", "network tools",
+                      "publishing", "git"],
     },
     "CRITIC": {
         "description": "Advisory reviewer on a DIFFERENT model than the writer. "
@@ -290,6 +326,31 @@ HOUSE_RULES = (
 )
 
 
+def _splice_sections(body: str, sections: list) -> tuple[str, int]:
+    """Replace each named H2 section's content in `body` with the freshly
+    regenerated markdown; the rest of the article stays byte-identical
+    (owner design §4 — arm A's repair_section works the same way).
+    A section missing from the draft is appended at the end (logged by the
+    caller). Returns (body, spliced_count)."""
+    spliced = 0
+    for sec in sections:
+        heading = str(sec.get("heading", "")).strip().lstrip("#").strip()
+        new_md = str(sec.get("markdown", "")).strip()
+        if not heading or not new_md:
+            continue
+        if not new_md.startswith("#"):
+            new_md = f"## {heading}\n\n{new_md}"
+        pat = re.compile(r"(?ms)^#{1,3}\s*" + re.escape(heading)
+                         + r"\s*$.*?(?=^##\s|\Z)")
+        m = pat.search(body)
+        if m:
+            body = body[:m.start()] + new_md + "\n\n" + body[m.end():]
+        else:
+            body = body.rstrip() + "\n\n" + new_md + "\n"
+        spliced += 1
+    return body, spliced
+
+
 def run_article(topic: str, caps: ArticleCaps | None = None,
                 chat_fn=None, search_fn=None, fetch_fn=None,
                 journal: Journal | None = None) -> dict:
@@ -371,25 +432,35 @@ def run_article(topic: str, caps: ArticleCaps | None = None,
         body = repair_damage(body)
         body = rebuild_toc(body)
 
-        # 4) gates + targeted repair (≤2, sections only — owner spec)
+        # 4) gates + targeted repair (≤2, SECTIONS only — owner design §4).
+        # SMOKE #21: full-article JSON repairs died 3/3 (9-16k-token replies,
+        # truncation + malformed JSON). Section-scoped repairs keep the reply
+        # small and splice back — the arm-A-proven shape.
         g = run_gates(body, meta)
         for attempt in (1, 2):
             if g["pass"]:
                 break
             stats.repairs = attempt
             failing = ", ".join(g["failed"])
-            fixed = _ask(chat_fn, "WRITER",
-                         f"Previous gates failed: {failing}. Regenerate ONLY the "
-                         "sections needed to fix them — keep all passing content "
-                         "identical. " + HOUSE_RULES,
+            fixed = _ask(chat_fn, "WRITER_SECTIONS",
+                         f"Previous gates failed: {failing}. Rewrite ONLY the "
+                         "sections needed to fix them — one entry per section "
+                         "with its exact H2 heading. Do NOT repeat passing "
+                         "sections.",
                          [{"role": "user",
-                           "content": "Current draft (fix ONLY the failing parts):\n"
+                           "content": "Current draft (rewrite ONLY the failing "
+                                      "sections; keep everything else identical):\n"
                                       + body[:16000]}],
-                         16384, ledger, journal, f"repair_{attempt}")
-            body = repair_damage(fixed["body_markdown"])
+                         6000, ledger, journal, f"repair_{attempt}")
+            body, spliced = _splice_sections(body, fixed["sections"])
+            body = repair_damage(body)
             body = rebuild_toc(body)
-            meta = fixed["meta_description"]
+            new_meta = fixed.get("meta_description")
+            if new_meta:
+                meta = _clamp_meta(new_meta, journal)
             g = run_gates(body, meta)
+            journal.log(agent="WRITER_SECTIONS",
+                        action=f"repair_{attempt}_spliced", sections=spliced)
         budget_tick()
 
         # 5) critic (advisory, different model) + optional one fix
@@ -401,19 +472,25 @@ def run_article(topic: str, caps: ArticleCaps | None = None,
                             2000, ledger, journal, "critique", model=critic_model)
             if critique["fix_suggestions"] and not g["pass"]:
                 stats.critic_applied = True
-                fixed = _ask(chat_fn, "WRITER",
+                fixed = _ask(chat_fn, "WRITER_SECTIONS",
                              "Apply ONLY the critic's fixes that address the "
-                             "failing gates. Keep everything else identical. "
-                             + HOUSE_RULES,
+                             "failing gates — one section entry per changed "
+                             "section with its exact H2 heading.",
                              [{"role": "user",
                                "content": "Critic suggestions:\n"
                                           + json.dumps(critique["fix_suggestions"])
-                                          + "\n\nDraft:\n" + body[:16000]}],
-                             16384, ledger, journal, "critic_fix")
-                body = repair_damage(fixed["body_markdown"])
+                                          + "\n\nDraft (rewrite ONLY the failing "
+                                            "sections):\n" + body[:16000]}],
+                             6000, ledger, journal, "critic_fix")
+                body, spliced = _splice_sections(body, fixed["sections"])
+                body = repair_damage(body)
                 body = rebuild_toc(body)
-                meta = fixed["meta_description"]
+                new_meta = fixed.get("meta_description")
+                if new_meta:
+                    meta = _clamp_meta(new_meta, journal)
                 g = run_gates(body, meta)
+                journal.log(agent="WRITER_SECTIONS",
+                            action="critic_fix_spliced", sections=spliced)
         except (SchemaError, ValueError):
             journal.log(agent="CRITIC", action="skipped_invalid_reply")
 
