@@ -520,9 +520,19 @@ def run_a(keyword: str, articles_written: int = 0, model: str | None = None,
     t0 = _time.monotonic()
     stats = {"calls": 0, "repairs": 0, "stop_reason": "", "model": model or ""}
     if not model:
-        model = find_working_model()
+        # daily_article.MODEL_FALLBACK_CHAIN[0] — the production primary
+        # (find_working_model requires a candidates list; smoke run 36944783516)
+        model = find_working_model(["cleanapis-writer"])
     stats["model"] = model
-    print(c("dim", f"[arm A] model: {model}"))
+    # honest announcement: resolve the alias to provider/model_id like the
+    # router prints it, so the eval reports the ACTUAL model used
+    try:
+        from llm_router import validate_config as _vc
+        _prov, _mid = _vc(model)
+        stats["model_resolved"] = f"{_prov}/{_mid}"
+    except Exception as _e:  # noqa: BLE001 — disclosure only, never fatal
+        stats["model_resolved"] = f"unresolved ({type(_e).__name__})"
+    print(c("dim", f"[arm A] model: {stats['model']} -> {stats['model_resolved']}"))
 
     competitor_data = analyze_competitors(keyword, model)
     strategy = decide_strategy(keyword, competitor_data, articles_written, model)
