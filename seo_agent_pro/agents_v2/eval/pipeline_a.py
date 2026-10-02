@@ -23,7 +23,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from llm_router import call, c, find_working_model  # noqa: E402
+# call_json was used by the verbatim #450 functions (modules.py imports it as
+# `from llm_router import call, call_json, c`) but the adapted import here
+# dropped it — NameError at runtime (smoke run 36953360333). CI import-smoke
+# now guards this class of bug (test_agents_v2_eval.TestImportSmoke).
+from llm_router import call, call_json, c, find_working_model  # noqa: E402
 from agents_v2.gates_local import (  # noqa: E402  (read-only #450 copy)
     WORD_MAX,
     WORD_MIN,
@@ -50,17 +54,23 @@ def _info(msg: str) -> None:
 def _fetch_serp(keyword: str, n: int = 8) -> list:
     """Real SERP rows from a SearXNG instance (owner decision 3a).
 
-    SEARXNG_URL env overrides the endpoint (default http://localhost:8888 —
-    the same local instance used in the bench-001 search-quality test and
-    the CI service-container plan). Returns [] when unreachable so callers
-    fall back to the legacy model-knowledge mode, DISCLOSED on stdout —
-    a silent fallback here is exactly the kind of quiet degradation the
-    owner banned in the bench-001 review.
+    Endpoint resolution order: SEARXNG_URL, then SEARXNG_BASE_URL (the var
+    the agents-v2-eval workflow sets for its local service container on
+    :8080), then the historical default http://localhost:8888. Reads BOTH
+    vars because arm B's tools.py reads SEARXNG_BASE_URL — one container,
+    both arms (smoke run 36953360333 failed: arm A read only SEARXNG_URL
+    while the workflow exports SEARXNG_BASE_URL → connection refused on
+    the wrong port). Returns [] when unreachable so callers fall back to
+    the legacy model-knowledge mode, DISCLOSED on stdout — a silent
+    fallback here is exactly the kind of quiet degradation the owner
+    banned in the bench-001 review.
     """
     import urllib.parse
     import urllib.request
 
-    base = os.environ.get("SEARXNG_URL", "http://localhost:8888").rstrip("/")
+    base = (os.environ.get("SEARXNG_URL")
+            or os.environ.get("SEARXNG_BASE_URL")
+            or "http://localhost:8888").rstrip("/")
     url = f"{base}/search?" + urllib.parse.urlencode({"q": keyword, "format": "json"})
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -341,7 +351,11 @@ def repair_section(keyword: str, strategy: dict, body: str, meta: str,
 
     Returns (body, meta).
     """
-    import gates as G
+    # The verbatim #450 code did `import gates as G`; production gates.py no
+    # longer exists on main — the read-only #450 copy inside agents_v2 is the
+    # intended target (ModuleNotFoundError otherwise: repair path was never
+    # reached in smoke run 36953360333, which crashed earlier on call_json).
+    import agents_v2.gates_local as G
 
     # ── free deterministic fixes first ────────────────────────────────────
     if any(f in failed for f in ("no_nested_links", "no_heading_links",
