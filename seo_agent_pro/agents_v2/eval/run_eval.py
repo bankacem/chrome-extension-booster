@@ -8,11 +8,22 @@ on the SAME topics, judged by the SAME deterministic gates (gates_local).
 Runs INSIDE GitHub Actions only (workflow agents-v2-eval.yml, mode=eval,
 eval_mode=smoke|full). Artifacts only — nothing is published.
 
-Fixed decision rule (written by the owner BEFORE seeing results):
-  adopt B only if  gates_pass(B) >= gates_pass(A)
+Fixed decision rule — REVISED by the owner 2026-10-02 (fair 3-attempt
+redesign; the original single-shot rule is superseded — see
+docs/agents_v2_design.md §11 for the modification and its reason):
+  adopt B only if  success_within_3_attempts(B) >= success_within_3_attempts(A)
               AND  unsupported_claims(B) <= 0.60 × unsupported_claims(A)
-              AND  cost(B) <= 8 × cost(A)
+              AND  cost_per_successful_article(B) <= 8 × cost_per_successful_article(A)
   otherwise: keep A; the research agent may stay as an optional tool.
+
+Fair-attempt design (owner decision 2, 2026-10-02):
+  * EVERY arm gets the SAME 3 independent attempts per topic; each attempt
+    starts FROM SCRATCH; the loop STOPS at the first ALL-GATES-PASS article
+    (no gate softened, no "near-miss" accepted, no best-of-N cherry-picking).
+  * Per attempt and per arm we record: success/failure, which attempt,
+    calls / tokens / USD (including FAILED attempts' real consumption).
+  * Decision metrics: first-attempt success rate, success-within-3 rate,
+    average attempts, total cost per successful article.
 
 Owner decisions 2026-10-02 (after smoke run 36953360333 failed):
   * NO dispatch before a full local dry-run of BOTH arms with a mock
@@ -50,6 +61,11 @@ from agents_v2.publisher import write_artifacts  # noqa: E402
 
 TOPICS = json.loads(
     (Path(__file__).resolve().parent / "topics.json").read_text())["topics"]
+
+# Owner decision 2 (2026-10-02): BOTH arms get the SAME maximum number of
+# independent attempts per topic; each attempt starts from scratch; the
+# loop stops at the first ALL-gates-pass article (no softening anywhere).
+ATTEMPTS = 3
 
 
 def _load_prices() -> dict:
@@ -112,7 +128,10 @@ def _a_usd_floor(state: dict) -> float:
 
 
 def _eval_a(topic: str, out_dir: Path, max_calls: int, max_usd: float,
-            reference: str = "") -> dict:
+            reference: str = "", attempt: int = 1) -> dict:
+    """ONE independent arm-A attempt (starts from scratch; fresh metering
+    state). Writes artifacts to <out>/armA/attempt<n>/. Failed attempts
+    keep their REAL consumption (owner decision: partial usage counts)."""
     import llm_router
     counted, state, orig = _wrap_a_call_with_metering(max_calls, max_usd)
     llm_router.call = counted
@@ -125,26 +144,29 @@ def _eval_a(topic: str, out_dir: Path, max_calls: int, max_usd: float,
     except (_CapHit, RuntimeError) as e:
         ok, gates, meta, body, title, stop = False, None, "", "", "", f"stopped: {e}"
     except Exception as e:  # noqa: BLE001 — record the failure, keep the
-        # one-shot full run alive; the error travels verbatim in stop_reason
-        # and results.json (loud, per-topic — NOT silent degradation).
+        # run alive; the error travels verbatim in stop_reason
+        # and results.json (loud, per-attempt — NOT silent degradation).
         ok, gates, meta, body, title, stop = (
             False, None, "", "", "", f"error: {type(e).__name__}: {e}")
     finally:
         llm_router.call = orig
         pipeline_a.call = orig
     wall = round(time.monotonic() - t0, 1)
-    (out_dir / "armA").mkdir(parents=True, exist_ok=True)
+    adir = out_dir / "armA" / f"attempt{attempt}"
+    adir.mkdir(parents=True, exist_ok=True)
     if body:
-        (out_dir / "armA" / "candidate.md").write_text(
+        (adir / "candidate.md").write_text(
             f"---\ntitle: {json.dumps(title, ensure_ascii=False)}\n"
             f"meta_description: {json.dumps(meta, ensure_ascii=False)}\n"
-            f"agent_system: pipeline_a_450_copy\nstatus: CANDIDATE_ARTIFACT_NOT_PUBLISHED\n"
+            f"agent_system: pipeline_a_450_copy\nattempt: {attempt}\n"
+            f"status: CANDIDATE_ARTIFACT_NOT_PUBLISHED\n"
             f"---\n\n{body}\n", encoding="utf-8")
     audit = claim_audit(body, reference) if body else None
     if audit:
-        (out_dir / "armA" / "claims.json").write_text(
+        (adir / "claims.json").write_text(
             json.dumps(audit, indent=2, ensure_ascii=False))
     metrics = {
+        "attempt": attempt,
         "gates_pass": bool(gates and gates.get("pass")),
         "gates_failed": list(gates["failed"]) if gates else ["no_article"],
         "words": gates["words"] if gates else 0,
@@ -163,32 +185,40 @@ def _eval_a(topic: str, out_dir: Path, max_calls: int, max_usd: float,
         "model_resolved": state.get("resolved", ""),
         "stop_reason": stop,
     }
-    (out_dir / "armA" / "metrics.json").write_text(
+    (adir / "metrics.json").write_text(
         json.dumps(metrics, indent=2, ensure_ascii=False))
     return metrics
 
 
 def _eval_b(topic: str, out_dir: Path, caps: ArticleCaps,
-            reference: str = "") -> dict:
+            reference: str = "", attempt: int = 1) -> dict:
+    """ONE independent arm-B attempt (fresh Journal + ledger = from
+    scratch). Writes to <out>/armB/attempt<n>/. The journal is ALWAYS
+    dumped (even on failure) so partial token usage is auditable.
+    run_article now returns partial stats on error (agents.py fix) —
+    failed attempts' consumption is counted, never zeroed."""
     journal = Journal()
     t0 = time.monotonic()
+    err = ""
     try:
         res = run_article(topic, caps=caps, journal=journal)
-    except Exception as e:  # noqa: BLE001 — same per-topic recording as arm A
+    except Exception as e:  # noqa: BLE001 — belt & braces: run_article now
+        # records-and-returns internally; this keeps the runner alive if a
+        # truly unexpected error escapes (e.g. KeyboardInterrupt-ish frames).
         res, err = {}, f"error: {type(e).__name__}: {e}"
-    else:
-        err = ""
     body = res.get("body", "")
     gates = res.get("gates")
     stats = res.get("stats", {})
+    bdir = out_dir / "armB" / f"attempt{attempt}"
+    bdir.mkdir(parents=True, exist_ok=True)
     if body:
-        write_artifacts(out_dir / "armB", res, journal=journal)
+        write_artifacts(bdir, res, journal=journal)
     audit = claim_audit(body, reference) if body else None
     if audit:
-        (out_dir / "armB").mkdir(parents=True, exist_ok=True)
-        (out_dir / "armB" / "claims.json").write_text(
+        (bdir / "claims.json").write_text(
             json.dumps(audit, indent=2, ensure_ascii=False))
     metrics = {
+        "attempt": attempt,
         "gates_pass": bool(gates and gates.get("pass")),
         "gates_failed": list(gates["failed"]) if gates else ["no_article"],
         "words": gates["words"] if gates else 0,
@@ -208,10 +238,124 @@ def _eval_b(topic: str, out_dir: Path, caps: ArticleCaps,
         "stop_reason": res.get("stop_reason", "") or err,
         "repairs": stats.get("repairs", 0),
     }
-    (out_dir / "armB").mkdir(parents=True, exist_ok=True)
-    (out_dir / "armB" / "metrics.json").write_text(
+    (bdir / "metrics.json").write_text(
         json.dumps(metrics, indent=2, ensure_ascii=False))
+    # ALWAYS dump the journal (failure included): per-call token rows make
+    # partial consumption auditable after the fact (owner decision 4).
+    (bdir / "journal.jsonl").write_text(
+        "\n".join(journal.lines) + ("\n" if journal.lines else ""),
+        encoding="utf-8")
     return metrics
+
+
+def _run_arm(fn, topic: str, tdir: Path, attempts: int, **kw) -> dict:
+    """Owner decision 2 (2026-10-02): fair attempt loop — the SAME number of
+    independent attempts for BOTH arms, each from scratch, STOP at the first
+    article that passes ALL gates (no gate softened, no near-miss accepted,
+    no best-of-N picking). Cost of FAILED attempts is part of the arm's
+    cost (it is real provider consumption)."""
+    tries = []
+    for n in range(1, attempts + 1):
+        m = fn(topic, tdir, attempt=n, **kw)
+        tries.append(m)
+        print(f"    attempt {n}/{attempts}: "
+              f"gates={'PASS' if m['gates_pass'] else 'FAIL'} "
+              f"words={m['words']} calls={m['llm_calls']} "
+              f"usd={m['usd_floor']} stop={m['stop_reason'][:80]}", flush=True)
+        if m["gates_pass"]:
+            break
+    success = tries[-1]["gates_pass"]
+    return {
+        "attempts": tries,
+        "attempts_used": len(tries),
+        "success": success,
+        "first_attempt_success": tries[0]["gates_pass"],
+        "article_attempt": (len(tries) if success else None),
+        "total_llm_calls": sum(t["llm_calls"] for t in tries),
+        "total_tokens_estimated": sum(t["tokens_estimated"] for t in tries),
+        "total_usd_floor": round(sum(t["usd_floor"] for t in tries), 4),
+    }
+
+
+def _winning_attempt_metrics(arm: dict) -> dict | None:
+    """Per-attempt metrics of the article that passed all gates (the one
+    counted for claims), or None when the arm failed the topic."""
+    n = arm.get("article_attempt")
+    return arm["attempts"][n - 1] if n else None
+
+
+def build_decision(results: list, attempts: int) -> dict:
+    """REVISED decision rule (owner, 2026-10-02) — pure function so tests
+    pin it. Modifications vs the original single-shot rule are documented
+    in docs/agents_v2_design.md §11:
+      - gates_pass(B) >= gates_pass(A)  →  success-within-3 rate(B) >= A
+      - claims(B) <= 0.60*claims(A)     →  unchanged threshold, now applied
+        to UNSUPPORTED claims of the SUCCESSFUL articles only (a failed
+        topic produces no article and contributes 0 claims; failure is
+        already penalized by the success-rate condition)
+      - cost(B) <= 8*cost(A)            →  cost per SUCCESSFUL article
+        (total arm cost incl. failed attempts / #successful articles)
+    Premise guard kept and strengthened: the rule is evaluated ONLY when
+    BOTH arms produced >=1 successful article (undefined ratios otherwise).
+    Thresholds 0.60 / 8.0 are byte-identical to the owner's original rule."""
+    n_topics = len(results)
+    a_succ = sum(1 for r in results if r["A"]["success"])
+    b_succ = sum(1 for r in results if r["B"]["success"])
+    a_first = sum(1 for r in results if r["A"]["first_attempt_success"])
+    b_first = sum(1 for r in results if r["B"]["first_attempt_success"])
+    a_att = sum(r["A"]["attempts_used"] for r in results) / (n_topics or 1)
+    b_att = sum(r["B"]["attempts_used"] for r in results) / (n_topics or 1)
+    a_cost = sum(r["A"]["total_usd_floor"] for r in results)
+    b_cost = sum(r["B"]["total_usd_floor"] for r in results)
+    # claims are counted on the SUCCESSFUL article of each topic only
+    a_unsup = sum((_winning_attempt_metrics(r["A"]) or {}).get(
+        "unsupported_claims", 0) or 0 for r in results)
+    b_unsup = sum((_winning_attempt_metrics(r["B"]) or {}).get(
+        "unsupported_claims", 0) or 0 for r in results)
+    a_cps = (a_cost / a_succ) if a_succ else None
+    b_cps = (b_cost / b_succ) if b_succ else None
+    premise_ok = a_succ > 0 and b_succ > 0
+    claims_ratio = (b_unsup / a_unsup) if a_unsup else (
+        0.0 if b_unsup == 0 else 9.9)
+    cost_ratio = ((b_cps / a_cps) if a_cps
+                  else (0.0 if (b_cps or 0) == 0 else 9.9))
+    adopt = ((b_succ >= a_succ) and (claims_ratio <= 0.60)
+             and (cost_ratio <= 8.0))
+    unmet = ", ".join(
+        f"arm {x}: 0 successful articles"
+        for x, n in (("A", a_succ), ("B", b_succ)) if n == 0)
+    return {
+        "rule": "adopt B iff success_within_3_attempts(B)>=success_within_3_attempts(A) "
+                "AND unsupported_claims(B)<=0.60*unsupported_claims(A) "
+                "AND cost_per_successful_article(B)<=8*cost_per_successful_article(A)",
+        "attempts_per_arm_per_topic": attempts,
+        "premise": ("both arms produced >=1 successful article" if premise_ok else
+                    f"NOT MET ({unmet}) — rule not applicable on empty/partial "
+                    "data; adopt_B=null"),
+        "topics": n_topics,
+        "successes_A": a_succ, "successes_B": b_succ,
+        "success_rate_A": round(a_succ / n_topics, 3) if n_topics else 0.0,
+        "success_rate_B": round(b_succ / n_topics, 3) if n_topics else 0.0,
+        "first_attempt_success_A": a_first,
+        "first_attempt_success_B": b_first,
+        "first_attempt_rate_A": round(a_first / n_topics, 3) if n_topics else 0.0,
+        "first_attempt_rate_B": round(b_first / n_topics, 3) if n_topics else 0.0,
+        "avg_attempts_A": round(a_att, 2),
+        "avg_attempts_B": round(b_att, 2),
+        "unsupported_claims_A": a_unsup, "unsupported_claims_B": b_unsup,
+        "claims_ratio": round(claims_ratio, 3),
+        "total_usd_floor_A": round(a_cost, 4),
+        "total_usd_floor_B": round(b_cost, 4),
+        "cost_per_successful_article_A": (round(a_cps, 4) if a_cps is not None else None),
+        "cost_per_successful_article_B": (round(b_cps, 4) if b_cps is not None else None),
+        "cost_ratio": round(cost_ratio, 3),
+        "adopt_B": (adopt if premise_ok else None),
+        "recommendation": (
+            None if not premise_ok else
+            ("ADOPT agents_v2 (B)" if adopt else
+             "KEEP A (improved pipeline); research agent may remain "
+             "an optional tool")),
+    }
 
 
 def _blind_pair(topic: str, body_a: str, body_b: str, idx: int,
@@ -246,11 +390,21 @@ def main() -> int:
     blind_dir = out_dir / "blind"
     blind_dir.mkdir(parents=True, exist_ok=True)
 
-    caps = ArticleCaps(max_steps=max(12, args.max_calls // (len(topics) * 2)),
-                       max_tokens=400_000, max_usd_floor=args.max_cost_usd / len(topics))
-    print(f"eval mode={args.mode} topics={len(topics)} | caps per article: "
+    attempts = ATTEMPTS  # owner decision 2: 3 fair independent attempts
+    caps = ArticleCaps(
+        max_steps=max(16, args.max_calls // (len(topics) * 2 * attempts)),
+        max_tokens=400_000,
+        max_usd_floor=args.max_cost_usd / len(topics))
+    # arm A per-ATTEMPT caps: its half of the run cap divided across the
+    # 3 attempts (the loop stops early on success, so the total stays ≤ cap)
+    a_calls = max(24, (args.max_calls // 2) // attempts)
+    a_usd = (args.max_cost_usd / 2) / attempts
+    print(f"eval mode={args.mode} topics={len(topics)} "
+          f"attempts_per_arm={attempts} | caps per attempt (arm A): "
+          f"calls={a_calls} usd={a_usd:.4f} | caps per topic (arm B): "
           f"steps={caps.max_steps} usd_floor={caps.max_usd_floor} "
-          f"| run caps: calls={args.max_calls} usd={args.max_cost_usd}", flush=True)
+          f"| run caps: calls={args.max_calls} usd={args.max_cost_usd}",
+          flush=True)
 
     results, key_lines = [], []
     for i, topic in enumerate(topics):
@@ -265,63 +419,45 @@ def main() -> int:
         print(f"  claim-audit reference rows: {len(ref_rows)}"
               + ("" if ref_rows else " (SearXNG unreachable — audits rely "
                                      "on link/hedge only, DISCLOSED)"), flush=True)
-        m_a = _eval_a(topic, tdir, args.max_calls // 2, args.max_cost_usd / 2,
-                      reference=reference)
-        print(f"[A] gates={m_a['gates_pass']} claims={m_a['unsupported_claims']} "
-              f"calls={m_a['llm_calls']} model={m_a['model']}", flush=True)
-        m_b = _eval_b(topic, tdir, caps, reference=reference)
-        print(f"[B] gates={m_b['gates_pass']} claims={m_b['unsupported_claims']} "
-              f"calls={m_b['llm_calls']}", flush=True)
+        arm_a = _run_arm(_eval_a, topic, tdir, attempts,
+                         max_calls=a_calls, max_usd=a_usd,
+                         reference=reference)
+        wa = _winning_attempt_metrics(arm_a)
+        print(f"[A] success={arm_a['success']} attempts={arm_a['attempts_used']} "
+              f"claims={wa['unsupported_claims'] if wa else '-'} "
+              f"calls={arm_a['total_llm_calls']} "
+              f"usd={arm_a['total_usd_floor']}", flush=True)
+        arm_b = _run_arm(_eval_b, topic, tdir, attempts, caps=caps,
+                         reference=reference)
+        wb = _winning_attempt_metrics(arm_b)
+        print(f"[B] success={arm_b['success']} attempts={arm_b['attempts_used']} "
+              f"claims={wb['unsupported_claims'] if wb else '-'} "
+              f"calls={arm_b['total_llm_calls']} "
+              f"usd={arm_b['total_usd_floor']}", flush=True)
         results.append({"topic": topic, "reference_results": len(ref_rows),
-                        "A": m_a, "B": m_b})
-        ca = (tdir / "armA" / "candidate.md")
-        cb = (tdir / "armB" / "candidate.md")
-        if ca.exists() and cb.exists():
-            _blind_pair(topic, ca.read_text(), cb.read_text(), i, blind_dir, key_lines)
+                        "A": arm_a, "B": arm_b})
+        if wa and wb:
+            ca = tdir / "armA" / f"attempt{arm_a['article_attempt']}" / "candidate.md"
+            cb = tdir / "armB" / f"attempt{arm_b['article_attempt']}" / "candidate.md"
+            _blind_pair(topic, ca.read_text(), cb.read_text(), i, blind_dir,
+                        key_lines)
 
-    # fixed decision rule (owner, written before results)
-    a_gates = sum(1 for r in results if r["A"]["gates_pass"])
-    b_gates = sum(1 for r in results if r["B"]["gates_pass"])
-    a_claims = sum(max(0, r["A"]["unsupported_claims"]) for r in results)
-    b_claims = sum(max(0, r["B"]["unsupported_claims"]) for r in results)
-    a_cost = sum(r["A"]["usd_floor"] for r in results)
-    b_cost = sum(r["B"]["usd_floor"] for r in results)
-    # PREMISE GUARD (added after smoke run 36990401835 emitted adopt_B=true
-    # on zero data — both arms stopped at a provider 502): the owner's rule
-    # compares REAL articles. If either arm produced no article at all, the
-    # rule's premises are unmet and evaluating it on zeros would fabricate a
-    # decision. The rule's thresholds below are UNTOUCHED (بلا تعديل).
-    a_articles = sum(1 for r in results if r["A"]["words"] > 0)
-    b_articles = sum(1 for r in results if r["B"]["words"] > 0)
-    premise_ok = a_articles > 0 and b_articles > 0
-    claims_ratio = (b_claims / a_claims) if a_claims else (0.0 if b_claims == 0 else 9.9)
-    cost_ratio = (b_cost / a_cost) if a_cost else (0.0 if b_cost == 0 else 9.9)
-    adopt = (b_gates >= a_gates) and (claims_ratio <= 0.60) and (cost_ratio <= 8.0)
-    unmet = ", ".join(
-        f"arm {x}: 0 articles"
-        for x, n in (("A", a_articles), ("B", b_articles)) if n == 0)
-    decision = {
-        "rule": "adopt B iff gates(B)>=gates(A) AND claims(B)<=0.60*claims(A) AND cost(B)<=8*cost(A)",
-        "premise": ("both arms produced >=1 article" if premise_ok else
-                    f"NOT MET ({unmet}) — rule not applicable on empty/partial "
-                    "data; adopt_B=null"),
-        "articles_A": a_articles, "articles_B": b_articles,
-        "gates_A": a_gates, "gates_B": b_gates,
-        "claims_A": a_claims, "claims_B": b_claims,
-        "claims_ratio": round(claims_ratio, 3),
-        "usd_floor_A": round(a_cost, 4), "usd_floor_B": round(b_cost, 4),
-        "cost_ratio": round(cost_ratio, 3),
-        "adopt_B": (adopt if premise_ok else None),
-        "recommendation": (
-            None if not premise_ok else
-            ("ADOPT agents_v2 (B)" if adopt else
-             "KEEP A (improved pipeline); research agent may remain "
-             "an optional tool")),
-    }
+    # REVISED decision rule (owner 2026-10-02) — see build_decision +
+    # docs/agents_v2_design.md §11; premise guard KEPT (smoke 36990401835).
+    decision = build_decision(results, attempts)
     (out_dir / "results.json").write_text(
         # NOTE: no flush kwarg — Path.write_text takes none (fourth latent
         # bug caught by the mandated local dry-run; run 7 never got here).
-        json.dumps({"mode": args.mode, "per_topic": results, "decision": decision,
+        json.dumps({"mode": args.mode,
+                    "attempts_per_arm_per_topic": attempts,
+                    "metrics_definitions": {
+                        "success": "ALL gates pass (no softening, no near-miss)",
+                        "success_rate": "topics with >=1 success / topics",
+                        "first_attempt_rate": "topics won on attempt 1 / topics",
+                        "avg_attempts": "mean attempts_used over topics (3 = all failed)",
+                        "cost_per_successful_article": "total arm USD (incl. failed attempts) / successes",
+                        "unsupported_claims": "counted on each topic's successful article only"},
+                    "per_topic": results, "decision": decision,
                     "claim_audit": {
                         "basis": ("sourced = link OR first-hand hedge OR "
                                   "factual token in harness SERP reference; "
@@ -330,7 +466,7 @@ def main() -> int:
                                   "definition, unchanged"),
                         "reference_fetch": "pipeline_a._fetch_serp(topic), 1 per topic, both arms"},
                     "models_disclosure": {
-                        "A": results[0]["A"]["model"] if results else "",
+                        "A": results[0]["A"]["attempts"][0]["model"] if results else "",
                         "B": "role-routed per models.json; echoed ids in journal"}},
                    indent=2, ensure_ascii=False))
     mapping_text = "\n".join(key_lines)

@@ -424,6 +424,25 @@ def run_article(topic: str, caps: ArticleCaps | None = None,
         stats.stop_reason = f"cap: {e}"
         stats.cap_hit = str(e)[:120]
         stats.steps = ledger.calls
+        # PARTIAL-USAGE accounting (owner decision 4, 2026-10-02): a capped
+        # attempt still consumed provider tokens — they MUST be counted.
+        stats.input_tokens = sum(e.input_tokens for e in ledger.entries if e.ok)
+        stats.output_tokens = sum(e.output_tokens for e in ledger.entries if e.ok)
+        stats.usd_floor = round(usd_floor(), 4)
+        stats.wall_seconds = round(time.monotonic() - t0, 1)
+        return {"ok": False, "title": "", "meta": "", "body": "", "gates": None,
+                "stats": vars(stats), "stop_reason": stats.stop_reason}
+    except Exception as e:  # noqa: BLE001 — record-and-stop, NEVER lose usage
+        # PARTIAL-USAGE accounting (owner decision 4): previously ANY
+        # non-BudgetExceeded error (unparseable reply twice, ProviderFatal,
+        # KeyError, ...) propagated and the whole attempt's token spend was
+        # lost — reported as 0 calls / $0 even after real provider calls.
+        # Mirror the success path: fill stats from the live ledger, return
+        # the failure (eval records it per attempt; nothing is silent).
+        stats.stop_reason = f"error: {type(e).__name__}: {str(e)[:300]}"
+        stats.steps = ledger.calls
+        stats.input_tokens = sum(e.input_tokens for e in ledger.entries if e.ok)
+        stats.output_tokens = sum(e.output_tokens for e in ledger.entries if e.ok)
         stats.usd_floor = round(usd_floor(), 4)
         stats.wall_seconds = round(time.monotonic() - t0, 1)
         return {"ok": False, "title": "", "meta": "", "body": "", "gates": None,
