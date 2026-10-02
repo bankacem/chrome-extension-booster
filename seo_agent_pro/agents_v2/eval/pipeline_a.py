@@ -414,8 +414,13 @@ Requirements:
 - Budget: ~{budget} words
 - Plain markdown; no nested links, no links inside headings, never split a
   word or number with a link."""
-        new = call(sys_p, usr, model, stream=False,
-                   max_tokens=4096).strip()
+        # Empty-content ValueError on a regen must SKIP the splice (best
+        # effort, gates re-check after) — never lose the whole article.
+        try:
+            new = call(sys_p, usr, model, stream=False,
+                       max_tokens=4096).strip()
+        except ValueError:
+            return body
         new = new.strip("`").strip()
         if not new.startswith("## "):
             new = f"## {name.title()}\n\n" + new
@@ -432,13 +437,16 @@ Requirements:
 
     if "meta_window" in failed:
         h1 = body.split("\n", 1)[0].lstrip("# ").strip() or keyword
-        new_meta = call(
-            "You write concise SEO meta descriptions. Reply with ONLY the "
-            "description text, no preamble, no quotes, 140-160 characters.",
-            f'Write a meta description for an article targeting the keyword '
-            f'"{keyword}". Article title: {h1}',
-            model, stream=False, max_tokens=200,
-        ).strip().strip('"')
+        try:
+            new_meta = call(
+                "You write concise SEO meta descriptions. Reply with ONLY the "
+                "description text, no preamble, no quotes, 140-160 characters.",
+                f'Write a meta description for an article targeting the keyword '
+                f'"{keyword}". Article title: {h1}',
+                model, stream=False, max_tokens=200,
+            ).strip().strip('"')
+        except ValueError:  # keep current meta, gates re-check below
+            new_meta = ""
         if 120 <= len(new_meta) <= 160 and '"' not in new_meta and "\\" not in new_meta:
             meta = new_meta
 
@@ -575,15 +583,23 @@ def run_a(keyword: str, articles_written: int = 0, model: str | None = None,
     body = "\n".join(lines[body_start:]).strip()
 
     meta_description = ""
+    # SMOKE RUN 37007468686: the ARTICLE call succeeded (metering ~11k tokens)
+    # and a later SMALL call (meta, 200 tokens) returned empty content twice →
+    # ValueError from the router — which this loop did NOT catch, so the whole
+    # finished article was lost. An exception must be handled like an empty
+    # string: retry, then fall back to the deterministic meta below.
     for _ in range(2):
-        meta_description = call(
-            "You write concise SEO meta descriptions. Reply with ONLY the "
-            "description text, no preamble, no quotes, 140-160 characters.",
-            f'Write a meta description for an article targeting the keyword '
-            f'"{keyword}". Article title: {title}',
-            model,
-            max_tokens=200,
-        ).strip().strip('"')
+        try:
+            meta_description = call(
+                "You write concise SEO meta descriptions. Reply with ONLY the "
+                "description text, no preamble, no quotes, 140-160 characters.",
+                f'Write a meta description for an article targeting the keyword '
+                f'"{keyword}". Article title: {title}',
+                model,
+                max_tokens=200,
+            ).strip().strip('"')
+        except ValueError:  # empty/blank provider content after retries
+            meta_description = ""
         if meta_description:
             break
     if not meta_description:

@@ -542,7 +542,11 @@ def _call_cleanapis(model_id: str, system: str, user: str, stream: bool, max_tok
     # empty and aborted the whole pipeline. One internal retry with a
     # doubled budget fixes that class of failure cheaply.
     attempt_tokens = max_tokens
-    for _ in range(2):
+    # 3 attempts (initial + 2 empty-retries): smoke run 37007468686 lost a
+    # FINISHED article to a small 200-token meta call that came back empty
+    # twice; a third attempt is still trivially cheap and only ever runs on
+    # the empty-content path.
+    for _ in range(3):
         payload["max_tokens"] = attempt_tokens
         req = urllib.request.Request(url, json.dumps(payload).encode(), headers)
         full = ""
