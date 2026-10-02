@@ -317,10 +317,21 @@ def build_decision(results: list, attempts: int) -> dict:
     premise_ok = a_succ > 0 and b_succ > 0
     claims_ratio = (b_unsup / a_unsup) if a_unsup else (
         0.0 if b_unsup == 0 else 9.9)
-    cost_ratio = ((b_cps / a_cps) if a_cps
-                  else (0.0 if (b_cps or 0) == 0 else 9.9))
+    # SMOKE #20 (37034661159): b_cps is None when arm B produced 0
+    # successful articles — None/float crashed the runner before
+    # results.json was written. Ratio is undefined (None) unless BOTH
+    # arms have successes; when a_cps == 0 keep the original sentinel
+    # semantics (0.0 pass / 9.9 fail). adopt_B is null via the premise
+    # guard whenever an arm has no successes, so this only affects the
+    # REPORTED number, never a decision.
+    if a_cps is None or b_cps is None:
+        cost_ratio = None
+    elif a_cps == 0:
+        cost_ratio = 0.0 if b_cps == 0 else 9.9
+    else:
+        cost_ratio = b_cps / a_cps
     adopt = ((b_succ >= a_succ) and (claims_ratio <= 0.60)
-             and (cost_ratio <= 8.0))
+             and (cost_ratio is not None and cost_ratio <= 8.0))
     unmet = ", ".join(
         f"arm {x}: 0 successful articles"
         for x, n in (("A", a_succ), ("B", b_succ)) if n == 0)
@@ -348,7 +359,7 @@ def build_decision(results: list, attempts: int) -> dict:
         "total_usd_floor_B": round(b_cost, 4),
         "cost_per_successful_article_A": (round(a_cps, 4) if a_cps is not None else None),
         "cost_per_successful_article_B": (round(b_cps, 4) if b_cps is not None else None),
-        "cost_ratio": round(cost_ratio, 3),
+        "cost_ratio": (round(cost_ratio, 3) if cost_ratio is not None else None),
         "adopt_B": (adopt if premise_ok else None),
         "recommendation": (
             None if not premise_ok else

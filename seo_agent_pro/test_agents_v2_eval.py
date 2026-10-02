@@ -984,5 +984,69 @@ class TestFairAttemptsAndCostAccounting(unittest.TestCase):
         self.assertIn("arm A: 0 successful articles", d["premise"])
 
 
+class TestSmokeRun20Regressions(unittest.TestCase):
+    """Smoke #20 (37034661195): arm B failed all 3 attempts on truncated
+    full-article JSON (repair/write cut at exactly 8000 output tokens,
+    stop_reason="length") AND the runner crashed in build_decision with
+    TypeError (None/float) when arm B had 0 successes — results.json was
+    never written. Two fixes: 16384 headroom on the 3 WRITER call sites
+    (same class as #465/#466; arm A already uses 16384 successfully) and
+    None-safe cost_ratio reporting."""
+
+    def test_full_article_call_sites_have_16384_headroom(self):
+        import inspect
+        from agents_v2 import agents
+        src = inspect.getsource(agents)
+        for site in ("write_full", "critic_fix"):
+            self.assertIn(f'16384, ledger, journal, "{site}")', src,
+                          f"{site} must request 16384-token headroom")
+        self.assertIn('16384, ledger, journal, f"repair_{attempt}")', src,
+                      "repair regen must request 16384-token headroom")
+        self.assertNotIn('8000, ledger, journal', src,
+                         "no full-article call site may stay at 8000")
+
+    def test_decision_no_crash_when_arm_b_has_zero_successes(self):
+        """The exact #20 crash: arm A succeeded, arm B failed 3/3 →
+        cost_per_successful_article_B is None. build_decision must REPORT
+        cost_ratio=None (undefined), keep adopt_B null via the premise
+        guard, and never raise."""
+        from agents_v2.eval import run_eval
+
+        def arm(succ_attempt, unsup, usd_total):
+            used = succ_attempt if succ_attempt else 3
+            attempts = [{"attempt": n, "gates_pass": n == succ_attempt,
+                         "words": 2800 if n == succ_attempt else 0,
+                         "unsupported_claims":
+                             unsup if n == succ_attempt else -1,
+                         "llm_calls": 10,
+                         "usd_floor": round(usd_total / used, 4)}
+                        for n in range(1, used + 1)]
+            return {"attempts": attempts, "attempts_used": used,
+                    "success": succ_attempt is not None,
+                    "first_attempt_success": succ_attempt == 1,
+                    "article_attempt": succ_attempt,
+                    "total_usd_floor": usd_total}
+
+        results = [
+            {"topic": "t", "reference_results": 8,
+             "A": arm(1, 4, 0.0043), "B": arm(None, 0, 0.0436)}]
+        d = run_eval.build_decision(results, 3)  # must NOT raise
+        self.assertIsNone(d["adopt_B"])
+        self.assertIsNone(d["recommendation"])
+        self.assertIsNone(d["cost_ratio"])
+        self.assertIsNone(d["cost_per_successful_article_B"])
+        self.assertEqual(d["cost_per_successful_article_A"], 0.0043)
+        self.assertEqual(d["total_usd_floor_B"], 0.0436,
+                         "arm B's real partial spend must be reported")
+        self.assertIn("arm B: 0 successful articles", d["premise"])
+        # symmetric case: A has zero successes (previously covered by the
+        # a_cps=None path, kept pinned)
+        results = [{"topic": "t", "reference_results": 8,
+                    "A": arm(None, 0, 0.0043), "B": arm(1, 4, 0.0436)}]
+        d = run_eval.build_decision(results, 3)
+        self.assertIsNone(d["adopt_B"])
+        self.assertIsNone(d["cost_ratio"])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

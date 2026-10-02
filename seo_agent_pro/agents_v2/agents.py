@@ -350,6 +350,13 @@ def run_article(topic: str, caps: ArticleCaps | None = None,
         budget_tick()
 
         # 3) writer full draft
+        # SMOKE #20 (37034661195): 8000 output tokens truncate the
+        # full-article JSON (stop_reason="length" at exactly 8000 on
+        # repair regens; write_full reached 7673 in attempt 1) →
+        # "no parseable JSON" and the whole attempt dies. Same headroom
+        # class as the #465/#466 fixes; arm A's article call already
+        # requests 16384 and succeeds. Cost impact: tokens are metered
+        # per the reply actually produced, max_tokens is only a ceiling.
         draft = _ask(chat_fn, "WRITER",
                      "Write the complete article now. " + HOUSE_RULES,
                      [{"role": "user",
@@ -358,7 +365,7 @@ def run_article(topic: str, caps: ArticleCaps | None = None,
                                   + json.dumps(notes, ensure_ascii=False)[:12000]
                                   + "\nProduce JSON: title, meta_description, "
                                     "body_markdown."}],
-                     8000, ledger, journal, "write_full")
+                     16384, ledger, journal, "write_full")
         body, meta = draft["body_markdown"], _clamp_meta(
             draft["meta_description"], journal)
         body = repair_damage(body)
@@ -378,7 +385,7 @@ def run_article(topic: str, caps: ArticleCaps | None = None,
                          [{"role": "user",
                            "content": "Current draft (fix ONLY the failing parts):\n"
                                       + body[:16000]}],
-                         8000, ledger, journal, f"repair_{attempt}")
+                         16384, ledger, journal, f"repair_{attempt}")
             body = repair_damage(fixed["body_markdown"])
             body = rebuild_toc(body)
             meta = fixed["meta_description"]
@@ -402,7 +409,7 @@ def run_article(topic: str, caps: ArticleCaps | None = None,
                                "content": "Critic suggestions:\n"
                                           + json.dumps(critique["fix_suggestions"])
                                           + "\n\nDraft:\n" + body[:16000]}],
-                             8000, ledger, journal, "critic_fix")
+                             16384, ledger, journal, "critic_fix")
                 body = repair_damage(fixed["body_markdown"])
                 body = rebuild_toc(body)
                 meta = fixed["meta_description"]
