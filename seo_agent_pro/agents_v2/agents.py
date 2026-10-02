@@ -110,8 +110,14 @@ PROFILES: dict[str, dict] = {
         "output_schema": {"type": "object",
                           "properties": {
                               "title": {"type": "string", "minLength": 10},
-                              "meta_description": {"type": "string", "minLength": 120,
-                                                   "maxLength": 160},
+                              # SMOKE RUN 37007468686: a full draft (all previous
+                              # calls OK) was THROWN AWAY because meta_description
+                              # came back 161+ chars and schema maxLength=160
+                              # rejected it inside _ask. Lenient capture here;
+                              # run_article clamps to ≤160 in code, and the
+                              # deterministic gates still enforce the real window.
+                              "meta_description": {"type": "string", "minLength": 40,
+                                                   "maxLength": 400},
                               "body_markdown": {"type": "string", "minLength": 2000}},
                           "required": ["title", "meta_description", "body_markdown"],
                           "additionalProperties": False},
@@ -177,6 +183,22 @@ class Journal:
 
     def dump(self, path: Path):
         path.write_text("\n".join(self.lines) + "\n", encoding="utf-8")
+
+
+def _clamp_meta(meta: str, journal: "Journal | None" = None) -> str:
+    """Deterministic (free) meta clamp — SMOKE RUN 37007468686: the writer
+    model returned a 161+ char meta and the strict schema discarded the whole
+    draft. Code fixes what code can fix: cut at the last word boundary ≤160,
+    keep every other property of the draft. Gates still enforce the real
+    80-165 window downstream."""
+    meta = (meta or "").strip().strip('"')
+    if len(meta) > 160:
+        cut = meta[:160].rsplit(" ", 1)[0].rstrip(",;:-")
+        if journal is not None:
+            journal.log(agent="WRITER", action="meta_clamped",
+                        original_chars=len(meta), clamped_chars=len(cut))
+        meta = cut
+    return meta
 
 
 def _ask(chat_fn, profile: str, system_extra: str, messages: list,
@@ -323,7 +345,8 @@ def run_article(topic: str, caps: ArticleCaps | None = None,
                                   + "\nProduce JSON: title, meta_description, "
                                     "body_markdown."}],
                      8000, ledger, journal, "write_full")
-        body, meta = draft["body_markdown"], draft["meta_description"]
+        body, meta = draft["body_markdown"], _clamp_meta(
+            draft["meta_description"], journal)
         body = repair_damage(body)
         body = rebuild_toc(body)
 

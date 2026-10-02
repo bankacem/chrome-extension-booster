@@ -612,5 +612,71 @@ class TestSmokeRun16Regressions(unittest.TestCase):
         self.assertIn("2000, ledger, journal, \"critique\"", src)
 
 
+class TestSmokeRun17Regressions(unittest.TestCase):
+    """Smoke run 37007468686: arm B lost a FULL draft (every prior call OK)
+    because the writer's meta_description came back 161+ chars against the
+    strict schema maxLength=160. Arm A lost a FINISHED article (metering
+    ~11k tokens incl. the article) to a small 200-token meta call whose
+    empty-content ValueError was not caught by run_a's meta loop."""
+
+    def test_writer_meta_schema_lenient_and_code_clamp(self):
+        from agents_v2.agents import PROFILES, _clamp_meta
+        meta_schema = (PROFILES["WRITER"]["output_schema"]["properties"]
+                       ["meta_description"])
+        self.assertGreaterEqual(meta_schema["maxLength"], 400,
+                                "capture schema must not reject 161+ chars")
+        long_meta = ("Best tab manager chrome extension guide with tested RAM "
+                     "control, suspend rules, instant search and sync — hands "
+                     "on verdict with clear recommendations for every user.")
+        self.assertGreater(len(long_meta), 160)
+        clamped = _clamp_meta(long_meta)
+        self.assertLessEqual(len(clamped), 160)
+        self.assertFalse(clamped.endswith((" ", ",", ";", ":", "-")))
+        self.assertEqual(_clamp_meta("short but fine meta description here"),
+                         "short but fine meta description here")
+
+    def test_cleanapis_empty_retry_has_third_attempt(self):
+        import llm_router
+        payloads = []
+
+        class _Resp:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+            def read(self):
+                n = len(payloads)
+                content = "" if n < 3 else "OK"
+                return json.dumps({"choices": [{"message": {
+                    "content": content}}]}).encode()
+
+        def fake_urlopen(req, timeout=0):
+            payloads.append(json.loads(req.data.decode()))
+            return _Resp()
+
+        orig = llm_router.urllib.request.urlopen
+        llm_router.urllib.request.urlopen = fake_urlopen
+        try:
+            out = llm_router._call_cleanapis(
+                "deepseek-v4-pro-0813", "sys", "user",
+                stream=False, max_tokens=200)
+            self.assertEqual(out, "OK")
+            self.assertEqual(len(payloads), 3, "third attempt must exist")
+            self.assertEqual([p["max_tokens"] for p in payloads],
+                             [200, 400, 800])
+        finally:
+            llm_router.urllib.request.urlopen = orig
+
+    def test_run_a_meta_and_regen_tolerate_empty_content(self):
+        import inspect
+        from agents_v2.eval import pipeline_a
+        src = inspect.getsource(pipeline_a)
+        self.assertGreaterEqual(src.count("except ValueError"), 3,
+                                "meta loop, _regen and repair-meta call sites "
+                                "must handle empty-content ValueError")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
