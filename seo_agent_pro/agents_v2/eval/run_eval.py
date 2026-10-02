@@ -13,6 +13,21 @@ Fixed decision rule (written by the owner BEFORE seeing results):
               AND  unsupported_claims(B) <= 0.60 × unsupported_claims(A)
               AND  cost(B) <= 8 × cost(A)
   otherwise: keep A; the research agent may stay as an optional tool.
+
+Owner decisions 2026-10-02 (after smoke run 36953360333 failed):
+  * NO dispatch before a full local dry-run of BOTH arms with a mock
+    provider and a simulated SearXNG — enshrined as CI tests in
+    test_agents_v2_eval.py (TestImportSmoke / TestDryRun) so CI catches
+    NameError/ImportError classes BEFORE any dispatch.
+  * metering wraps the provider boundary so EVERY arm-A call is counted
+    exactly once (direct call, call_json internals, find_working_model
+    probe), with restore-in-finally so wrappers never stack across topics.
+  * per-topic unexpected exceptions are RECORDED (stop_reason) instead of
+    killing the one-shot full run; results.json is always written.
+  * claim-audit counters per arm (owner decision 4): numeric / ranking-
+    superlative claims, sourced against the harness's own SERP reference
+    rows (identical corpus for both arms), unsupported; per-article
+    claims.json artifacts carry the full unsupported-claims lists.
 """
 from __future__ import annotations
 
@@ -28,7 +43,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from agents_v2.agents import ArticleCaps, Journal, run_article  # noqa: E402
 from agents_v2.eval import pipeline_a  # noqa: E402
-from agents_v2.eval.claims import unsupported_claims  # noqa: E402
+from agents_v2.eval.claims import claim_audit, unsupported_claims  # noqa: E402
 from agents_v2.eval.pipeline_a import run_a  # noqa: E402
 from agents_v2.gates_local import run_gates  # noqa: E402
 from agents_v2.publisher import write_artifacts  # noqa: E402
@@ -53,36 +68,54 @@ class _CapHit(Exception):
 
 
 def _wrap_a_call_with_metering(max_calls: int, max_usd: float):
-    """Module-level metering wrapper around pipeline_a.call (llm_router).
+    """Metering wrapper at the provider boundary for arm A.
 
-    Honest accounting for arm A: every call is counted; tokens are ESTIMATED
-    at ~4 chars/token (disclosed everywhere); USD floor uses input-side price
-    only (output prices unconfirmed by the owner)."""
-    state = {"calls": 0, "in_chars": 0, "out_chars": 0, "model": ""}
-    orig = pipeline_a.call
+    ONE choke point counts EVERY provider call exactly once:
+      * pipeline_a direct `call(...)`            (article / meta / repairs),
+      * `call_json(...)` internals              (competitor + strategy JSON),
+      * `find_working_model`'s connectivity probe.
+    call_json resolves `call` in llm_router's module globals at call time,
+    so patching llm_router.call + pipeline_a.call covers all three paths
+    without double counting (call_json is NOT rewrapped). Tokens are
+    ESTIMATED at ~4 chars/token (disclosed); USD floor uses the input-side
+    price keyed by the RESOLVED model id (alias -> catalog id) — the alias
+    itself has no catalog price.
+    """
+    import llm_router
+    state = {"calls": 0, "in_chars": 0, "out_chars": 0,
+             "model": "", "resolved": ""}
+    orig = llm_router.call
 
-    def counted(system, user, model=None, stream=False, max_tokens=4096, **kw):
+    def counted(system, user, model_name=None, *args, **kw):
         if state["calls"] >= max_calls:
             raise _CapHit(f"arm A call cap {max_calls} reached")
         state["calls"] += 1
-        state["in_chars"] += len(system) + len(user)
-        state["model"] = model or state["model"]
-        out = orig(system, user, model, stream=stream, max_tokens=max_tokens, **kw)
+        state["in_chars"] += len(system or "") + len(user or "")
+        if model_name:
+            state["model"] = model_name
+            if not state["resolved"]:
+                _prov, mid = llm_router.MODELS.get(model_name,
+                                                   ("", "")) or ("", "")
+                state["resolved"] = mid or model_name
+        out = orig(system, user, model_name, *args, **kw)
         state["out_chars"] += len(out) if isinstance(out, str) else 800
-        if state["in_chars"] / 4 and _a_usd_floor(state) >= max_usd:
+        if _a_usd_floor(state) >= max_usd:
             raise _CapHit(f"arm A USD floor cap {max_usd} reached")
         return out
 
-    return counted, state
+    return counted, state, orig
 
 
 def _a_usd_floor(state: dict) -> float:
-    price = PRICES.get(state.get("model") or "", 0)
+    price = PRICES.get(state.get("resolved") or state.get("model") or "", 0)
     return (state["in_chars"] / 4) / 1e6 * price
 
 
-def _eval_a(topic: str, out_dir: Path, max_calls: int, max_usd: float) -> dict:
-    counted, state = _wrap_a_call_with_metering(max_calls, max_usd)
+def _eval_a(topic: str, out_dir: Path, max_calls: int, max_usd: float,
+            reference: str = "") -> dict:
+    import llm_router
+    counted, state, orig = _wrap_a_call_with_metering(max_calls, max_usd)
+    llm_router.call = counted
     pipeline_a.call = counted
     t0 = time.monotonic()
     try:
@@ -91,6 +124,14 @@ def _eval_a(topic: str, out_dir: Path, max_calls: int, max_usd: float) -> dict:
         title, stop = res["title"], res["stats"]["stop_reason"]
     except (_CapHit, RuntimeError) as e:
         ok, gates, meta, body, title, stop = False, None, "", "", "", f"stopped: {e}"
+    except Exception as e:  # noqa: BLE001 — record the failure, keep the
+        # one-shot full run alive; the error travels verbatim in stop_reason
+        # and results.json (loud, per-topic — NOT silent degradation).
+        ok, gates, meta, body, title, stop = (
+            False, None, "", "", "", f"error: {type(e).__name__}: {e}")
+    finally:
+        llm_router.call = orig
+        pipeline_a.call = orig
     wall = round(time.monotonic() - t0, 1)
     (out_dir / "armA").mkdir(parents=True, exist_ok=True)
     if body:
@@ -99,17 +140,27 @@ def _eval_a(topic: str, out_dir: Path, max_calls: int, max_usd: float) -> dict:
             f"meta_description: {json.dumps(meta, ensure_ascii=False)}\n"
             f"agent_system: pipeline_a_450_copy\nstatus: CANDIDATE_ARTIFACT_NOT_PUBLISHED\n"
             f"---\n\n{body}\n", encoding="utf-8")
+    audit = claim_audit(body, reference) if body else None
+    if audit:
+        (out_dir / "armA" / "claims.json").write_text(
+            json.dumps(audit, indent=2, ensure_ascii=False))
     metrics = {
         "gates_pass": bool(gates and gates.get("pass")),
         "gates_failed": list(gates["failed"]) if gates else ["no_article"],
         "words": gates["words"] if gates else 0,
         "unsupported_claims": len(unsupported_claims(body)) if body else -1,
+        "claims_total": audit["total_claims"] if audit else -1,
+        "claims_numeric": audit["numeric_claims"] if audit else -1,
+        "claims_ranking_or_superlative": (
+            audit["ranking_or_superlative_claims"] if audit else -1),
+        "claims_sourced": audit["sourced"] if audit else -1,
         "llm_calls": state["calls"],
         "tokens_estimated": (state["in_chars"] + state["out_chars"]) // 4,
         "tokens_basis": "estimated ~4 chars/token (disclosed)",
         "usd_floor": round(_a_usd_floor(state), 4),
         "wall_seconds": wall,
         "model": state.get("model", ""),
+        "model_resolved": state.get("resolved", ""),
         "stop_reason": stop,
     }
     (out_dir / "armA" / "metrics.json").write_text(
@@ -117,19 +168,36 @@ def _eval_a(topic: str, out_dir: Path, max_calls: int, max_usd: float) -> dict:
     return metrics
 
 
-def _eval_b(topic: str, out_dir: Path, caps: ArticleCaps) -> dict:
+def _eval_b(topic: str, out_dir: Path, caps: ArticleCaps,
+            reference: str = "") -> dict:
     journal = Journal()
     t0 = time.monotonic()
-    res = run_article(topic, caps=caps, journal=journal)
-    write_artifacts(out_dir / "armB", res, journal=journal)
+    try:
+        res = run_article(topic, caps=caps, journal=journal)
+    except Exception as e:  # noqa: BLE001 — same per-topic recording as arm A
+        res, err = {}, f"error: {type(e).__name__}: {e}"
+    else:
+        err = ""
     body = res.get("body", "")
     gates = res.get("gates")
     stats = res.get("stats", {})
+    if body:
+        write_artifacts(out_dir / "armB", res, journal=journal)
+    audit = claim_audit(body, reference) if body else None
+    if audit:
+        (out_dir / "armB").mkdir(parents=True, exist_ok=True)
+        (out_dir / "armB" / "claims.json").write_text(
+            json.dumps(audit, indent=2, ensure_ascii=False))
     metrics = {
         "gates_pass": bool(gates and gates.get("pass")),
         "gates_failed": list(gates["failed"]) if gates else ["no_article"],
         "words": gates["words"] if gates else 0,
         "unsupported_claims": len(unsupported_claims(body)) if body else -1,
+        "claims_total": audit["total_claims"] if audit else -1,
+        "claims_numeric": audit["numeric_claims"] if audit else -1,
+        "claims_ranking_or_superlative": (
+            audit["ranking_or_superlative_claims"] if audit else -1),
+        "claims_sourced": audit["sourced"] if audit else -1,
         "llm_calls": stats.get("steps", 0),
         "tokens_estimated": (stats.get("input_tokens", 0)
                              + stats.get("output_tokens", 0)),
@@ -137,9 +205,10 @@ def _eval_b(topic: str, out_dir: Path, caps: ArticleCaps) -> dict:
         "usd_floor": stats.get("usd_floor", 0.0),
         "wall_seconds": round(time.monotonic() - t0, 1),
         "model": "per-role models.json (WRITER/CRITIC announced in journal)",
-        "stop_reason": res.get("stop_reason", ""),
+        "stop_reason": res.get("stop_reason", "") or err,
         "repairs": stats.get("repairs", 0),
     }
+    (out_dir / "armB").mkdir(parents=True, exist_ok=True)
     (out_dir / "armB" / "metrics.json").write_text(
         json.dumps(metrics, indent=2, ensure_ascii=False))
     return metrics
@@ -188,13 +257,23 @@ def main() -> int:
         print(f"\n=== topic {i + 1}/{len(topics)}: {topic} ===", flush=True)
         tdir = out_dir / f"topic_{i:02d}"
         tdir.mkdir(parents=True, exist_ok=True)
-        m_a = _eval_a(topic, tdir, args.max_calls // 2, args.max_cost_usd / 2)
+        # Owner decision 4: ONE harness-level SERP reference fetch per topic,
+        # identical corpus for BOTH arms' claim audits (no model calls).
+        ref_rows = pipeline_a._fetch_serp(topic)
+        reference = "\n".join(
+            f"{r['title']} {r['url']} {r['snippet']}" for r in ref_rows)
+        print(f"  claim-audit reference rows: {len(ref_rows)}"
+              + ("" if ref_rows else " (SearXNG unreachable — audits rely "
+                                     "on link/hedge only, DISCLOSED)"), flush=True)
+        m_a = _eval_a(topic, tdir, args.max_calls // 2, args.max_cost_usd / 2,
+                      reference=reference)
         print(f"[A] gates={m_a['gates_pass']} claims={m_a['unsupported_claims']} "
               f"calls={m_a['llm_calls']} model={m_a['model']}", flush=True)
-        m_b = _eval_b(topic, tdir, caps)
+        m_b = _eval_b(topic, tdir, caps, reference=reference)
         print(f"[B] gates={m_b['gates_pass']} claims={m_b['unsupported_claims']} "
               f"calls={m_b['llm_calls']}", flush=True)
-        results.append({"topic": topic, "A": m_a, "B": m_b})
+        results.append({"topic": topic, "reference_results": len(ref_rows),
+                        "A": m_a, "B": m_b})
         ca = (tdir / "armA" / "candidate.md")
         cb = (tdir / "armB" / "candidate.md")
         if ca.exists() and cb.exists():
@@ -223,11 +302,20 @@ def main() -> int:
                            "an optional tool"),
     }
     (out_dir / "results.json").write_text(
+        # NOTE: no flush kwarg — Path.write_text takes none (fourth latent
+        # bug caught by the mandated local dry-run; run 7 never got here).
         json.dumps({"mode": args.mode, "per_topic": results, "decision": decision,
+                    "claim_audit": {
+                        "basis": ("sourced = link OR first-hand hedge OR "
+                                  "factual token in harness SERP reference; "
+                                  "unsupported_claims (decision-rule feed) "
+                                  "uses the pre-registered link/hedge "
+                                  "definition, unchanged"),
+                        "reference_fetch": "pipeline_a._fetch_serp(topic), 1 per topic, both arms"},
                     "models_disclosure": {
                         "A": results[0]["A"]["model"] if results else "",
                         "B": "role-routed per models.json; echoed ids in journal"}},
-                   indent=2, ensure_ascii=False), flush=True)
+                   indent=2, ensure_ascii=False))
     mapping_text = "\n".join(key_lines)
     (blind_dir / "key.txt").write_text(
         "sha256 fingerprint of the blind mapping (the mapping itself is NOT "

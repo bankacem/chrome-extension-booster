@@ -34,20 +34,81 @@ HEDGE_RE = re.compile(
 SENT_SPLIT_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9])")
 
 
-def unsupported_claims(body: str) -> list[str]:
-    """Return the sentences counted as unsupported factual claims."""
+def _claim_sentences(body: str):
     plain = re.sub(r"```[\s\S]*?```", " ", body)      # code blocks are not prose
-    out = []
     for raw in SENT_SPLIT_RE.split(plain):
         s = raw.strip()
         if len(s) < 25 or len(s) > 600:
             continue
-        factual = bool(FACT_RE.search(s)) or bool(SUPERLATIVE_RE.search(s))
-        if not factual:
+        numeric = FACT_RE.findall(s)
+        superlative = SUPERLATIVE_RE.findall(s)
+        if not numeric and not superlative:
             continue
-        if LINK_RE.search(s):
-            continue
-        if HEDGE_RE.search(s):
+        yield s, numeric, superlative
+
+
+def claim_audit(body: str, reference: str = "") -> dict:
+    """Owner decision 4 (2026-10-02): per-arm counters for the full run.
+
+    For EVERY factual-pattern sentence (numeric or ranking/superlative):
+      sourced      — the sentence carries a markdown link, or a first-hand
+                     testing hedge, or one of its factual tokens (the exact
+                     number/figure/superlative matched by the regexes) also
+                     appears in `reference` (the harness's own SERP rows for
+                     the same topic — identical corpus for BOTH arms);
+      unsupported  — none of the above.
+    Deterministic and model-free; applied identically to both arms.
+
+    NOTE: "political" claims cannot occur in this domain; the year+ranking
+    pattern inside FACT_RE (e.g. "ranked #1 in 2026") is the closest proxy
+    and is reported separately as ranking_or_superlative_claims. Disclosed
+    in the eval report.
+    """
+    ref = reference or ""
+    claims = []
+    for s, numeric, superlative in _claim_sentences(body):
+        linked = bool(LINK_RE.search(s))
+        hedged = bool(HEDGE_RE.search(s))
+        tokens = {t.strip().lower() for t in numeric + superlative if t.strip()}
+        in_ref = any(t in ref.lower() for t in tokens)
+        sourced = linked or hedged or in_ref
+        claims.append({
+            "text": s[:220],
+            "numeric": bool(numeric),
+            "ranking_or_superlative": bool(superlative),
+            "factual_tokens": sorted(tokens)[:6],
+            "has_link": linked,
+            "hedged_first_hand": hedged,
+            "token_in_reference": in_ref,
+            "unsupported": not sourced,
+        })
+    unsupported_list = [c["text"] for c in claims if c["unsupported"]]
+    return {
+        "total_claims": len(claims),
+        "numeric_claims": sum(1 for c in claims if c["numeric"]),
+        "ranking_or_superlative_claims": sum(
+            1 for c in claims if c["ranking_or_superlative"]),
+        "sourced": sum(1 for c in claims if not c["unsupported"]),
+        "unsupported": len(unsupported_list),
+        "unsupported_list": unsupported_list,
+        "claims": claims,
+        "reference_chars": len(ref),
+        "basis": ("sourced = link in sentence OR first-hand hedge OR factual "
+                  "token present in the harness's SERP reference rows"),
+    }
+
+
+def unsupported_claims(body: str) -> list[str]:
+    """Return the sentences counted as unsupported factual claims.
+
+    Same definition as before claim_audit existed (link/hedge only, no
+    SERP reference) — this is the number that feeds the FIXED decision
+    rule, kept byte-compatible so the rule is applied without modification
+    (owner instruction: طبّق قاعدة القرار المكتوبة سابقاً بلا تعديل).
+    """
+    out = []
+    for s, _n, _s2 in _claim_sentences(body):
+        if LINK_RE.search(s) or HEDGE_RE.search(s):
             continue
         out.append(s[:220])
     return out
