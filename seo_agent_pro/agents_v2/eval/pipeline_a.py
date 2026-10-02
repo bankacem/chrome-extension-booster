@@ -12,8 +12,13 @@ The model used is announced in the returned stats (no claims beyond it).
 """
 from __future__ import annotations
 
+import json  # noqa: F401  (used by the verbatim #450 functions)
+import os    # noqa: F401  (used by the verbatim _fetch_serp — smoke run 36947538515)
 import re
 import sys
+import time  # noqa: F401  (used by the verbatim #450 functions)
+import urllib.parse  # noqa: F401  (used by the verbatim _fetch_serp)
+import urllib.request  # noqa: F401  (used by the verbatim _fetch_serp)
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
