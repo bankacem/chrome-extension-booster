@@ -411,6 +411,12 @@ class TestDryRun(unittest.TestCase):
                 blind = out / "blind"
                 self.assertGreater((blind / "pair_00.md").stat().st_size, 0)
                 self.assertIn("Candidate 1", (blind / "pair_00.md").read_text())
+                # THE BLIND MUST HOLD: no agent_system/publisher metadata
+                # (full-run #25 leaked the arm via candidate.md frontmatter)
+                pair_txt = (blind / "pair_00.md").read_text()
+                self.assertNotIn("agent_system", pair_txt)
+                self.assertNotIn("pipeline_a_450_copy", pair_txt)
+                self.assertNotIn("---\ntitle:", pair_txt)
                 key = (blind / "key.txt").read_text()
                 self.assertGreater(len(key.strip()), 64)
                 self.assertNotIn("first=A", key)  # mapping NOT stored

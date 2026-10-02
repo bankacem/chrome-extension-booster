@@ -46,6 +46,7 @@ import argparse
 import hashlib
 import json
 import random
+import re
 import sys
 import time
 from pathlib import Path
@@ -369,16 +370,29 @@ def build_decision(results: list, attempts: int) -> dict:
     }
 
 
+def _strip_frontmatter(text: str) -> str:
+    """Remove YAML frontmatter — it carries agent_system/publisher fields
+    that would break the blind (full-run #25 pair files leaked the arm via
+    `agent_system: pipeline_a_450_copy`)."""
+    if text.lstrip().startswith("---"):
+        m = re.match(r"^\s*---\n.*?\n---\n", text, re.S)
+        if m:
+            return text[m.end():].lstrip()
+    return text
+
+
 def _blind_pair(topic: str, body_a: str, body_b: str, idx: int,
                 blind_dir: Path, key_lines: list[str]):
     """Write an UNLABELED pair; the key is a sha256 fingerprint only.
 
     Order is derived deterministically from sha256(topic + salt) so the
     mapping can be recovered later by re-deriving it — the artifact itself
-    never reveals which text came from which arm."""
+    never reveals which text came from which arm. Frontmatter is STRIPPED
+    (it names the agent system → would identify the arm)."""
     salt = "agents-v2-blind-pair-v1"
     first_is_a = int(hashlib.sha256(f"{topic}{salt}".encode()).hexdigest(), 16) % 2 == 0
-    texts = [body_a, body_b] if first_is_a else [body_b, body_a]
+    texts = [_strip_frontmatter(body_a), _strip_frontmatter(body_b)]
+    texts = texts if first_is_a else texts[::-1]
     mapping = f"pair{idx}: first={('A' if first_is_a else 'B')}, second={('B' if first_is_a else 'A')}"
     key_lines.append(mapping)
     (blind_dir / f"pair_{idx:02d}.md").write_text(
