@@ -1151,5 +1151,25 @@ def _fake_fetch_proxy():
     return _fake_fetch
 
 
+class TestSmokeRun23Regressions(unittest.TestCase):
+    """Smoke #23 (37056764493): WRITER_SECTIONS replies were SMALL and clean
+    (3-4k tokens, stop_reason=stop) yet EVERY one failed with
+    'Expecting value: line 1 column 2 (char 1)' — the model answered with
+    RAW MARKDOWN (no JSON at all): extract_json's bracket scan hits the
+    first markdown link '[text](url)' → candidate '[text]' → exactly this
+    error. write_full replies ALWAYS parse because their user prompt ends
+    with an explicit 'Produce JSON:' instruction. Fix: the same explicit
+    instruction on repair/critic_fix prompts (arm-B fix 3/3 — final)."""
+
+    def test_repair_prompts_demand_json_output(self):
+        import inspect
+        from agents_v2 import agents
+        src = inspect.getsource(agents)
+        self.assertEqual(src.count("Produce JSON: sections"), 2,
+                         "repair AND critic_fix prompts must both demand "
+                         "JSON output (write_full already does)")
+        self.assertEqual(src.count("never raw markdown"), 2)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
