@@ -450,7 +450,11 @@ def run_article(topic: str, caps: ArticleCaps | None = None,
                          [{"role": "user",
                            "content": "Current draft (rewrite ONLY the failing "
                                       "sections; keep everything else identical):\n"
-                                      + body[:16000]}],
+                                      + body[:16000]
+                                      + "\n\nProduce JSON: sections (array of "
+                                        "{heading, markdown}), meta_description "
+                                        "(only if a meta gate failed). Reply with "
+                                        "JSON only — never raw markdown."}],
                          6000, ledger, journal, f"repair_{attempt}")
             body, spliced = _splice_sections(body, fixed["sections"])
             body = repair_damage(body)
@@ -480,7 +484,10 @@ def run_article(topic: str, caps: ArticleCaps | None = None,
                                "content": "Critic suggestions:\n"
                                           + json.dumps(critique["fix_suggestions"])
                                           + "\n\nDraft (rewrite ONLY the failing "
-                                            "sections):\n" + body[:16000]}],
+                                            "sections):\n" + body[:16000]
+                                          + "\n\nProduce JSON: sections (array of "
+                                            "{heading, markdown}). Reply with JSON "
+                                            "only — never raw markdown."}],
                              6000, ledger, journal, "critic_fix")
                 body, spliced = _splice_sections(body, fixed["sections"])
                 body = repair_damage(body)
