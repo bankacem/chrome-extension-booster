@@ -678,5 +678,94 @@ class TestSmokeRun17Regressions(unittest.TestCase):
                                 "must handle empty-content ValueError")
 
 
+class TestSmokeRun18Regressions(unittest.TestCase):
+    """Smoke run #18 (37013258655): arm A WROTE the article (14 calls, 18.3k
+    tokens) and lost it at 3176 words vs the 3100 ceiling after 2 repairs —
+    the regen model cannot count words. Arm B lost calls to non-
+    deterministic prose replies (no JSON at all)."""
+
+    def test_trim_to_word_ceiling_drops_content_sentences_only(self):
+        from agents_v2.eval.pipeline_a import _trim_to_word_ceiling
+        filler = ("This tested paragraph explains the memory impact numbers "
+                  "with concrete figures and practical steps for users. ")
+        body = ("# Guide\n\nIntro text.\n\n"
+                "## Long Content Section\n\n" + filler * 195 + "\n\n"
+                "## Frequently Asked Questions\n\n### Q1?\nA: Answer one.\n\n"
+                "## Final Verdict\n\n" + filler * 5)
+        over = len(body.split())
+        self.assertGreater(over, 3100)
+        out, trimmed = _trim_to_word_ceiling(body, 3100)
+        self.assertLessEqual(len(out.split()), 3100)
+        self.assertGreater(trimmed, 0)
+        # gated structural pieces untouched
+        self.assertIn("## Frequently Asked Questions", out)
+        self.assertIn("## Final Verdict", out)
+        self.assertIn("### Q1?", out)
+
+    def test_trim_caps_at_max_sentences(self):
+        from agents_v2.eval.pipeline_a import _trim_to_word_ceiling
+        filler = ("Sentence with enough words to matter for counting here. ")
+        body = "## Content\n\n" + filler * 400 + "\n"  # far over any ceiling
+        out, trimmed = _trim_to_word_ceiling(body, 100, max_sentences=5)
+        self.assertEqual(trimmed, 5)
+        self.assertGreater(len(out.split()), 100)  # cap respected, still over
+
+    def test_ask_retries_once_on_unparseable_reply(self):
+        import json as _json
+        from agents_v2.agents import Journal, PROFILES, _ask
+        from agents_v2.schemas import SchemaError
+        replies = ["I cannot produce JSON for this request, sorry.",
+                   _json.dumps({"key_points": ["a", "b", "c"],
+                                "sources": [{"url": "https://x.dev/docs/a",
+                                             "note": "official"}]})]
+        seen = []
+
+        def chat_fn(profile, system, messages, max_tokens, ledger, model=None):
+            seen.append(profile)
+            text = replies.pop(0)
+
+            class R:
+                pass
+            r = R()
+            r.usage = {"input_tokens": 10, "output_tokens": 10,
+                       "estimated": False}
+            r.stop_reason = "stop"
+            r.model = model or "fake"
+            r.latency_seconds = 0.001
+            r.text = text
+            return r
+
+        prof = PROFILES["RESEARCHER"]
+        system = prof["description"]
+        messages = [{"role": "user", "content": "x"}]
+        data = _ask(chat_fn, "RESEARCHER", "", messages, 900, None,
+                    Journal(), "research_notes")
+        self.assertEqual(data["key_points"], ["a", "b", "c"])
+        self.assertEqual(len(seen), 2, "exactly one retry after prose reply")
+        # and two prose replies must still raise (owner: schema-invalid twice)
+        replies2 = ["nope", "still no json"]
+        seen.clear()
+
+        def chat_fn2(profile, system, messages, max_tokens, ledger,
+                     model=None):
+            seen.append(profile)
+
+            class R:
+                pass
+            r = R()
+            r.usage = {"input_tokens": 10, "output_tokens": 10,
+                       "estimated": False}
+            r.stop_reason = "stop"
+            r.model = "fake"
+            r.latency_seconds = 0.001
+            r.text = replies2.pop(0)
+            return r
+
+        with self.assertRaises((ValueError, SchemaError)):
+            _ask(chat_fn2, "RESEARCHER", "", messages, 900, None,
+                 Journal(), "research_notes")
+        self.assertEqual(len(seen), 2)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
