@@ -77,7 +77,7 @@ S2_POSITIVE = {
     "hook_label":        "**Hook:** Every semester, thousands of students scramble.",
     "use_in_article":    "**Privacy Badge Icons** (use in article where each rating appears):",
     "alt_text_example":  "Alt text example for GIF: a timer extension counting down.",
-    "fence_html":        "```html\n<div class=\"card\">raw leaked block</div>\n```",
+    "fence_html":        "```html\n<script type=\"application/ld+json\">\n{\"@context\":\"https://schema.org\"}\n</script>\n```",
     "fence_json":        "```json\n{\"@context\":\"https://schema.org\"}\n```",
     "ldjson_script":     '<script type="application/ld+json">{"@type":"FAQPage"}</script>',
     "ldjson_context":    '{"@context": "https://schema.org", "@type": "Product"}',
@@ -211,6 +211,95 @@ class TestDocumentedExceptions(unittest.TestCase):
         body = "We tested 10 extensions (see [our methodology](https://example.org/method))."
         r = fabrication_gate(body)
         self.assertIn("we_tested", [h["pattern"] for h in r["S1"]])
+
+
+class TestS2RefinedRules(unittest.TestCase):
+    """Evidence-calibrated S2 rules (owner brief 2026-10-04; triage §ه):
+    blocks/brackets/example.com only flag on REAL leakage, not on legit
+    teaching examples or markdown links. S1 untouched."""
+
+    # -- placeholder brackets: flagged only when NOT a markdown link --
+    def test_screenshot_placeholder_flagged(self):
+        r = fabrication_gate("[Screenshot Placeholder: popup blocker blocking an ad]")
+        self.assertIn("screenshot_brk", [h["pattern"] for h in r["S2"]])
+
+    def test_gif_placeholder_flagged(self):
+        r = fabrication_gate("[GIF Placeholder: 30-second recording of lockdown mode]")
+        self.assertIn("gif_brk", [h["pattern"] for h in r["S2"]])
+
+    def test_screenshot_markdown_link_clean(self):
+        body = ("For more tools see our [Screenshot Tool Chrome 2025](/blog/"
+                "screenshot-tool-chrome-2025-8) guide — it covers capture flows.")
+        self.assertFalse([h for h in fabrication_gate(body)["S2"]
+                          if h["pattern"] == "screenshot_brk"])
+
+    def test_gif_markdown_link_clean(self):
+        body = "Watch the [GIF walkthrough of session restore](/blog/session-buddy-guide) first."
+        self.assertFalse([h for h in fabrication_gate(body)["S2"]
+                          if h["pattern"] == "gif_brk"])
+
+    # -- example.com: URL-anchored only --
+    def test_bare_example_com_url_flagged(self):
+        r = fabrication_gate('<img src="https://example.com/badges/privacy-gold.svg">')
+        self.assertIn("example_com", [h["pattern"] for h in r["S2"]])
+
+    def test_www_example_com_url_flagged(self):
+        r = fabrication_gate("Point the manifest at //www.example.com/service-worker.js.")
+        self.assertIn("example_com", [h["pattern"] for h in r["S2"]])
+
+    def test_subdomain_prose_example_com_clean(self):
+        body = ("Chrome enterprise policies ship samples such as "
+                "adserver-example.com and intranet.example.com for allowlists; "
+                "the RFC reserves example.org too.")
+        self.assertFalse([h for h in fabrication_gate(body)["S2"]
+                          if h["pattern"] == "example_com"])
+
+    # -- fenced blocks: flagged only when carrying pipeline leakage markers --
+    def test_legit_manifest_json_block_clean(self):
+        body = ('```json\n{\n  "manifest_version": 3,\n  "name": "Demo",\n'
+                '  "permissions": ["storage"],\n  "host_permissions": ["https://*/*"]\n}\n```')
+        self.assertFalse([h for h in fabrication_gate(body)["S2"]
+                          if h["pattern"].startswith("fence_")])
+
+    def test_legit_offscreen_html_block_clean(self):
+        body = ('```html\n<!DOCTYPE html>\n<button id="poll">poll</button>\n'
+                '<script src="offscreen.js"></script>\n```')
+        self.assertFalse([h for h in fabrication_gate(body)["S2"]
+                          if h["pattern"].startswith("fence_")])
+
+    def test_fenced_json_with_meta_keys_flagged(self):
+        body = '```json\n{"meta_description": "best adblock 2026", "seo_title": "x"}\n```'
+        self.assertIn("fence_json", [h["pattern"] for h in fabrication_gate(body)["S2"]])
+
+    def test_fenced_html_with_ldjson_flagged(self):
+        body = ('```html\n<script type="application/ld+json">'
+                '{"@context":"https://schema.org"}</script>\n```')
+        self.assertIn("fence_html", [h["pattern"] for h in fabrication_gate(body)["S2"]])
+
+    def test_fenced_block_with_leak_instruction_flagged(self):
+        body = '```html\n<!-- Hook: open with a stat about RAM -->\n<p>intro</p>\n```'
+        self.assertIn("fence_html", [h["pattern"] for h in fabrication_gate(body)["S2"]])
+
+    def test_unclosed_fenced_json_with_context_flagged(self):
+        # conservative: an unclosed fence leaks to EOF; if it carries a marker
+        # anywhere after it, flag it.
+        body = '```json\n{"@context": "https://schema.org", "@type": "Article"}\n'
+        self.assertIn("fence_json", [h["pattern"] for h in fabrication_gate(body)["S2"]])
+
+    def test_blockquote_with_link_excuses_example_com(self):
+        body = ("> The vendor's docs illustrate it with https://example.com/quote "
+                "(see [policy](https://example.org/policy)).")
+        self.assertFalse([h for h in fabrication_gate(body)["S2"]
+                          if h["pattern"] == "example_com"])
+
+    # -- real-leak evidence: run #40 pulled article's fenced JSON-LD block --
+    def test_run40_fenced_ldjson_leak_still_flagged(self):
+        leak = ('```json\n{\n  "@context": "https://schema.org",\n'
+                '  "@type": "Article",\n  "headline": "Chrome Extensions for Students '
+                'Studying Online",\n  "description": "The best Chrome extensions for '
+                'students studying online",\n  "author": {"@type": "Person"}\n}\n```')
+        r = fabrication_gate(leak)
+        self.assertFalse(r["pass"], "run #40 fenced JSON-LD leak must fail the gate")
 
 
 class TestGateVerdictSemantics(unittest.TestCase):
