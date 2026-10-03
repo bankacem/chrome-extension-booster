@@ -22,27 +22,6 @@ updated_at: '2026-09-14T12:00:00.000+00:00'
 
 <img src="/content/images/vpn-article9-tunnelbear-review.jpg" alt="TunnelBear Chrome Extension Review 2026" width="1200" height="630" loading="lazy" class="featured-image">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "TunnelBear Chrome Extension Review 2026: Best Free VPN for Beginners?",
-  "description": "Looking for a simple VPN? Read our 2026 TunnelBear Chrome Extension review. We test its speed, security, and whether the 2GB free data is enough for your needs.",
-  "datePublished": "2026-08-12T00:00:00.000Z",
-  "author": {
-    "@type": "Person",
-    "name": "Admin"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "ExtensionPulse"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://extensionto.com/blog/vpn-article9-tunnelbear-review"
-  }
-}
-</script>
 
 **Last Updated:** June 3, 2026 | **Reading Time:** 8 minutes | **Tested:** 3 weeks daily use
 
