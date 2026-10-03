@@ -3,7 +3,7 @@ seo_title: "Chrome Extensions for Focus and Deep Work"
 id: ebdfbce5-5fba-4d0f-aa6c-fd22dc476f80
 title: "Chrome Extensions for Focus and Deep Work Sessions: The Only Hands-On Tested, Privacy-Audited & Performance-Benchmarked Guide"
 slug: chrome-extensions-for-focus-and-deep-work-sessions-the-only-hands-on-tested-privacy-audited-performance-benchmarked-guide
-status: published
+status: draft
 excerpt: "Discover the best chrome extensions for focus and deep work sessions, hands-on tested and privacy-audited. Boost productivity and block distractions today."
 meta_description: "Discover the best chrome extensions for focus and deep work sessions, hands-on tested and privacy-audited. Boost productivity and block distractions today."
 featured_image: /og-image.png
