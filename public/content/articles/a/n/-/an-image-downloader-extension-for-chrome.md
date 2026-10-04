@@ -170,7 +170,7 @@ This extension has gained popularity for its robust filtering capabilities and b
 
 ### Batch Image Downloader
 
-True to its name, this extension focuses on handling large-scale image downloads efficiently. I tested it extensively with stock photo sites and social media platforms.
+True to its name, this extension focuses on handling large-scale image downloads efficiently. You can test it extensively with stock photo sites and social media platforms.
 
 **Pros:**
 - Exceptional performance with large batches (1000+ images)
