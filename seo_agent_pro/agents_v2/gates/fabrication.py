@@ -31,9 +31,19 @@ PR #476) pattern-for-pattern so the audit and the gate can never drift:
        fake authors & credentials, fake testimonials/surveys.
   S2 — leak & damage: prompt/UI leakage (Hook:, placeholders, example.com),
        raw HTML/JSON-LD rendered as text, duplicated sections, ragged tables.
-  S3 — unsourced sensitive claims: an accusation attributed to a NAMED
-       product (data selling/sharing, breach, lawsuit, court ruling) with no
+  S3 — unsourced sensitive claims: a STRONG accusation attributed to a NAMED
+       product (data selling, spyware, data breach, hacked, lawsuit) with no
        source link in the same or an adjacent sentence.
+
+S3 refinements (owner briefs 2026-10-04):
+  * Narrowed to strong accusations only (item 4): generic verbs removed —
+    see S3_TRIGGER comment for the removed list.
+  * 'caught' removed (S3 item 2): surveillance-flavored but unjudgable
+    without the surrounding context.
+  * Negated sentences are NOT accusations: a negation cue (don't/do not/
+    does not/not/never/…) in the same clause as the trigger excludes the
+    sentence — "X's policy states they do not track or sell user data"
+    passes (see S3_NEGATION + TestS3Negation).
 
 Gate rule: the article FAILS if ANY S1 or S2 pattern matches, or if ANY S3
 accusation lacks an adjacent source link.
@@ -153,14 +163,24 @@ S3_TRIGGER = re.compile(
     # Owner brief 2026-10-04 item 4 — S3 narrowed to STRONG accusations only.
     # A named product is flagged ONLY when the sentence accuses it of one of:
     #   sells/sold/selling  + (data | users | bandwidth)   [≤2 words between]
-    #   spyware | data breach(es/d) | hacked | lawsuit(s) | caught
+    #   spyware | data breach(es/d) | hacked | lawsuit(s)
     # Generic triggers removed (evidence: docs/audit-triage.md — shares/
     # harvest/leak/data-min/malware/settled/fined/court-ruled/class-action/
     # scam/injected/tracked-users produced unjudgable matches on published
     # prose). Precision is now measured on the FLAGGED set.
+    # Owner brief 2026-10-04 S3 item 2 — 'caught' removed (unjudgable without
+    # context); negated sentences excluded via S3_NEGATION below.
     r"\b((?:sells?|sold|selling)\s+(?:\w+\s+){0,2}(?:data|users|bandwidth)|"
-    r"spyware|data\s+breach(?:e[sd]|s)?|hacked|lawsuits?|"
-    r"caught)\b", re.I)
+    r"spyware|data\s+breach(?:e[sd]|s)?|hacked|lawsuits?)\b", re.I)
+
+# Negation guard — a negation cue in the SAME CLAUSE as the trigger means the
+# sentence is a disclaimer, not an accusation. The cue must sit ≤30 chars
+# before the trigger with no clause punctuation between them, so
+# "although it does not harvest clicks, X sells your data" still flags.
+S3_NEGATION = re.compile(
+    r"\b(?:do(?:es)?\s+not|don['’]t|doesn['’]t|did\s+not|didn['’]t|"
+    r"won['’]t|will\s+not|can(?:not|['’]t)|never|not)\b"
+    r"[^,;:!.?\"'’()]{0,30}$", re.I)
 S3_PRODUCT = re.compile(r"\b(" + "|".join(re.escape(p) for p in PRODUCTS) + r")\b")
 LINK_RE = re.compile(r"\]\((?:https?:)?/[^)]*\)|https?://[^\s)>\"']+")
 SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9\"'*\[])")
@@ -195,6 +215,8 @@ def _scan_s3(body: str) -> List[Dict[str, str]]:
             pm, tm = S3_PRODUCT.search(s), S3_TRIGGER.search(s)
             if not pm or not tm:
                 continue
+            if S3_NEGATION.search(s[:tm.start()]):
+                continue  # negated sentence — a disclaimer, not an accusation
             neighbours = [sents[j] for j in (i - 1, i, i + 1) if 0 <= j < len(sents)]
             if any(_has_link(x) for x in neighbours):
                 continue

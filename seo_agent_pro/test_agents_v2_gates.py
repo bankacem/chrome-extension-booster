@@ -223,9 +223,10 @@ class TestS3Narrowed(unittest.TestCase):
         body = "The Great Suspender faced a lawsuit over malicious updates."
         self.assertIn("S3", fabrication_gate(body)["failed_severities"])
 
-    def test_caught_flags(self):
+    def test_caught_no_longer_flags(self):
+        # Owner brief 2026-10-04 S3 item 2: 'caught' removed from triggers.
         body = "Honey was caught rewriting affiliate cookies at checkout."
-        self.assertIn("S3", fabrication_gate(body)["failed_severities"])
+        self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
 
     # -- generic triggers no longer flag --
     def test_shared_no_longer_flags(self):
@@ -290,6 +291,44 @@ class TestS1ProposedNotWired(unittest.TestCase):
             # active patterns may legitimately fire on the same sentence
             self.assertFalse(any(h["pattern"] in proposed for h in r["S1"]),
                              msg=text)
+
+
+class TestS3Negation(unittest.TestCase):
+    """Owner brief 2026-10-04 S3 item 2: negated sentences are disclaimers,
+    NOT accusations — they must not flag. The Ghostery sentence is the
+    owner's own acceptance test."""
+
+    def test_ghostery_privacy_policy_not_flagged(self):
+        body = ("Ghostery's privacy policy states they do not track or sell "
+                "user data.")
+        r = fabrication_gate(body)
+        self.assertNotIn("S3", r["failed_severities"])
+        self.assertEqual(r["S3"], [])
+
+    def test_does_not_sell_not_flagged(self):
+        body = "Hola VPN says it does not sell data to third parties."
+        self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_not_spyware_not_flagged(self):
+        body = "Avast is not spyware, according to the vendor's own policy."
+        self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_never_been_hacked_not_flagged(self):
+        body = "LastPass has never been hacked, the company claims."
+        self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
+
+    # -- control: dropping the negation restores the flag --
+    def test_same_claim_without_negation_still_flags(self):
+        body = "Ghostery sells user data to advertising partners."
+        self.assertIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_negation_in_other_clause_still_flags(self):
+        # negation sits behind a clause boundary (comma) — accusation stands
+        body = ("Although the company says it does not harvest clicks, "
+                "Honey sells your data to partners.")
+        r = fabrication_gate(body)
+        self.assertIn("S3", r["failed_severities"])
+        self.assertEqual(r["S3"][0]["product"], "Honey")
 
 
 class TestDocumentedExceptions(unittest.TestCase):
