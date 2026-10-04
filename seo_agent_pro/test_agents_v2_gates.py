@@ -9,7 +9,7 @@ import re
 import unittest
 
 from seo_agent_pro.agents_v2.gates import (
-    S1_PATTERNS, S2_PATTERNS, fabrication_gate,
+    S1_PATTERNS, S2_PATTERNS, S1_PROPOSED_PATTERNS, fabrication_gate,
 )
 
 # Per-pattern positive probes: each MUST be flagged.
@@ -253,6 +253,43 @@ class TestS3Narrowed(unittest.TestCase):
         body = ("Honey injected codes into checkout pages and tracked users "
                 "across sites.")
         self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
+
+
+class TestS1ProposedNotWired(unittest.TestCase):
+    """Owner brief 2026-10-04 item 3 (DRAFT PR): the proposed S1 extension
+    patterns must (a) match their intended phrasings and (b) NOT change
+    fabrication_gate behavior — they are unwired pending the owner's FP
+    sample review."""
+
+    PROBES = {
+        "in_my_our_testing":   "In my testing, the pop-up blocker never slipped.",
+        "during_after_testing": "During our testing the fan never spun up.",
+        "my_our_tests":        "My tests covered 50 sites over two weeks.",
+        "i_verbs":             "I measured a 22% drop in RAM usage.",
+        "i_found_that":        "I found that dark mode uses less battery.",
+        "in_testing_comma":    "In testing, three candidates failed outright.",
+    }
+
+    def test_each_proposed_pattern_matches(self):
+        import re as _re
+        by_name = dict(S1_PROPOSED_PATTERNS)
+        self.assertEqual(set(by_name), set(self.PROBES))
+        for name, text in self.PROBES.items():
+            self.assertTrue(_re.search(by_name[name], text, _re.I), msg=name)
+
+    def test_proposed_patterns_are_not_in_active_gate(self):
+        active = {name for name, _ in S1_PATTERNS}
+        for name, _ in S1_PROPOSED_PATTERNS:
+            self.assertNotIn(name, active)
+
+    def test_gate_ignores_proposed_phrasings(self):
+        proposed = {name for name, _ in S1_PROPOSED_PATTERNS}
+        for text in self.PROBES.values():
+            r = fabrication_gate(text)
+            # no hit may ever be attributed to a proposed (unwired) pattern;
+            # active patterns may legitimately fire on the same sentence
+            self.assertFalse(any(h["pattern"] in proposed for h in r["S1"]),
+                             msg=text)
 
 
 class TestDocumentedExceptions(unittest.TestCase):

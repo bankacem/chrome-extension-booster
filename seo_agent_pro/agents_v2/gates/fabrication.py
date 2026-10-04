@@ -84,6 +84,23 @@ S1_PATTERNS: List[Tuple[str, str]] = [
 ]
 
 # ─────────────────────────────────────────────────────────────
+# S1 PROPOSED EXTENSION — DRAFT, NOT WIRED (owner brief 2026-10-04 item 3)
+# ─────────────────────────────────────────────────────────────
+# Candidate patterns to widen S1 coverage beyond the 209 pure-pattern
+# articles (we_tested/i_tested union, docs/audit-worklist.json). They are
+# deliberately NOT part of fabrication_gate(): the owner first reviews a
+# seeded 25-sentence sample of what they would catch above the 209. If
+# approved, these tuples move into S1_PATTERNS unchanged and are wired in.
+S1_PROPOSED_PATTERNS: List[Tuple[str, str]] = [
+    ("in_my_our_testing",  r"\bin (?:my|our) testing\b"),
+    ("during_after_testing", r"\b(?:during|after) (?:my|our) testing\b"),
+    ("my_our_tests",       r"\b(?:my|our) tests?\b"),
+    ("i_verbs",            r"\bI (?:measured|ran|threw|installed)\b"),
+    ("i_found_that",       r"\bI found that\b"),
+    ("in_testing_comma",   r"\bin testing,"),
+]
+
+# ─────────────────────────────────────────────────────────────
 # S2 — prompt/UI leakage and structural damage
 # ─────────────────────────────────────────────────────────────
 # Simple S2 line patterns. The five evidence-calibrated checks below
