@@ -1,0 +1,3696 @@
+{
+ "generated_at": "2026-10-04",
+ "purpose": "Remediation worklist for pure-pattern S1 fabricated-experience articles (owner brief 2026-10-04 items 2-3). Read-only inventory; nothing here changes article files or frontmatter.",
+ "counts": {
+  "a": 120,
+  "b": 80,
+  "c": 9
+ },
+ "rules": {
+  "a": "pure test-claim paragraph ALSO containing device OR version OR measurement token in same paragraph",
+  "c": "heading matching how (we|i) tested / our methodology / testing methodology",
+  "b": "pure hands-on claim without a-qualifying paragraph and without c heading"
+ },
+ "precedence": "a (detailed) > c (methodology heading) > b (generic)",
+ "batch_distribution_by_category": {
+  "a": {
+   "8d37ff9d": 58,
+   "65cfb7f5": 13,
+   "0e1658ee": 21,
+   "2762cda5": 1,
+   "b68257f8": 4,
+   "c1f3f885": 1,
+   "24b9ef39": 5,
+   "afc53bc8": 3,
+   "3e63a2a8": 1,
+   "83da096d": 1,
+   "d2541c99": 5,
+   "d1cfb793": 1,
+   "1c3f1de2": 1,
+   "493acf89": 4,
+   "211c4ccd": 1
+  },
+  "b": {
+   "3e63a2a8": 9,
+   "65cfb7f5": 21,
+   "1c3f1de2": 4,
+   "afc53bc8": 9,
+   "0e1658ee": 5,
+   "d2541c99": 10,
+   "83da096d": 2,
+   "493acf89": 3,
+   "24b9ef39": 1,
+   "8d37ff9d": 5,
+   "b68257f8": 1,
+   "77fa5c10": 4,
+   "d1cfb793": 3,
+   "e0ecc0f4": 2,
+   "2762cda5": 1
+  },
+  "c": {
+   "ac3b7605": 1,
+   "24b9ef39": 1,
+   "65cfb7f5": 2,
+   "d1cfb793": 1,
+   "211c4ccd": 2,
+   "d2541c99": 1,
+   "afc53bc8": 1
+  }
+ },
+ "s3_narrowed_gate_measurement": {
+  "seed": 20261004,
+  "published_scanned": 881,
+  "flagged_articles_after_narrowing": 16,
+  "flagged_hits_after_narrowing": 22,
+  "note": "Owner brief item 4: precision judged on this flagged set; full sample in the PR-comment / reply. Old trigger: 69 articles / 115 hits."
+ },
+ "category_b_dry_run": {
+  "branch": "dryrun/s1-generic-rewrites @ 623f1970 (no PR, never merge)",
+  "seed": 20261004,
+  "rules": {
+   "R1": "I (have|'ve) tested -> You can test",
+   "R2": "We (have|'ve) tested -> You can test",
+   "R3": "we (have|'ve) tested -> you can test",
+   "R4": "in our lab -> in documented tests (0 hits in corpus)"
+  },
+  "exclusions": "table rows, blockquotes, markdown link text, quoted strings, headings — left untouched",
+  "sampled": [
+   "chrome-samsung-smart-tv-casting-guide",
+   "an-image-downloader-extension-for-chrome",
+   "facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide",
+   "qr-code-generator-scanner-chrome-extensions",
+   "extension-chrome-capture-page-web",
+   "unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a",
+   "chrome-screenshot-tutorial",
+   "blackbox-ai-chrome-extension-guide"
+  ],
+  "applied": {
+   "chrome-samsung-smart-tv-casting-guide": 1,
+   "an-image-downloader-extension-for-chrome": 1,
+   "facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide": 2,
+   "extension-chrome-capture-page-web": 4,
+   "unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a": 1,
+   "blackbox-ai-chrome-extension-guide": 3
+  },
+  "zero_eligible_hits": [
+   "qr-code-generator-scanner-chrome-extensions",
+   "chrome-screenshot-tutorial"
+  ]
+ },
+ "articles": [
+  {
+   "slug": "3cx-voip-chrome-extension",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-24",
+   "live_url": "https://extensionto.com/blog/3cx-voip-chrome-extension",
+   "test_numbers": 27,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "a-download-manager-extension-worth-installing",
+   "category": "b",
+   "batch_commit": "3e63a2a8",
+   "batch_date": "2026-08-01",
+   "date": "2026-04-18",
+   "live_url": "https://extensionto.com/blog/a-download-manager-extension-worth-installing",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "a-free-pop-up-blocker-extension-for-chrome",
+   "category": "b",
+   "batch_commit": "3e63a2a8",
+   "batch_date": "2026-08-01",
+   "date": "2026-03-11",
+   "live_url": "https://extensionto.com/blog/a-free-pop-up-blocker-extension-for-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "a-tab-suspender-extension-that-frees-up-ram",
+   "category": "b",
+   "batch_commit": "3e63a2a8",
+   "batch_date": "2026-08-01",
+   "date": "2026-03-24",
+   "live_url": "https://extensionto.com/blog/a-tab-suspender-extension-that-frees-up-ram",
+   "test_numbers": 0,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "activate-dark-mode-on-wikipedia-for-night-reading-2",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-27",
+   "live_url": "https://extensionto.com/blog/activate-dark-mode-on-wikipedia-for-night-reading-2",
+   "test_numbers": 3,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "adblock-chrome-android-complete-guide-2026",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-31",
+   "live_url": "https://extensionto.com/blog/adblock-chrome-android-complete-guide-2026",
+   "test_numbers": 27,
+   "inbound_internal_links": 45,
+   "a_paragraph_count": 2,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "adblock-not-working-on-chrome-fix",
+   "category": "a",
+   "batch_commit": "2762cda5",
+   "batch_date": "2026-09-01",
+   "date": "2026-09-01",
+   "live_url": "https://extensionto.com/blog/adblock-not-working-on-chrome-fix",
+   "test_numbers": 0,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "adblock-plus-vs-ublock-origin-2026",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-09",
+   "live_url": "https://extensionto.com/blog/adblock-plus-vs-ublock-origin-2026",
+   "test_numbers": 3,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "add-extension-to-chrome-7",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-15",
+   "live_url": "https://extensionto.com/blog/add-extension-to-chrome-7",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "adguard-vs-ghostery-2026-comparison",
+   "category": "a",
+   "batch_commit": "b68257f8",
+   "batch_date": "2026-09-06",
+   "date": "2026-09-05",
+   "live_url": "https://extensionto.com/blog/adguard-vs-ghostery-2026-comparison",
+   "test_numbers": 36,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "ai-agent-browser-extensions-2026",
+   "category": "a",
+   "batch_commit": "c1f3f885",
+   "batch_date": "2026-09-28",
+   "date": "2026-09-27",
+   "live_url": "https://extensionto.com/blog/ai-agent-browser-extensions-2026",
+   "test_numbers": 20,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "ai-summary-chrome-extensions",
+   "category": "b",
+   "batch_commit": "1c3f1de2",
+   "batch_date": "2026-09-21",
+   "date": "2026-09-21",
+   "live_url": "https://extensionto.com/blog/ai-summary-chrome-extensions",
+   "test_numbers": 0,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "ajouter-extension-chrome-8",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-06-05",
+   "live_url": "https://extensionto.com/blog/ajouter-extension-chrome-8",
+   "test_numbers": 0,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "alidropship-extension-full-guide",
+   "category": "a",
+   "batch_commit": "24b9ef39",
+   "batch_date": "2026-08-05",
+   "date": "2026-05-05",
+   "live_url": "https://extensionto.com/blog/alidropship-extension-full-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "alishark-chrome-extension",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-05",
+   "live_url": "https://extensionto.com/blog/alishark-chrome-extension",
+   "test_numbers": 24,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "alitools-extension-chrome",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-05",
+   "live_url": "https://extensionto.com/blog/alitools-extension-chrome",
+   "test_numbers": 20,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "an-image-downloader-extension-for-chrome",
+   "category": "b",
+   "batch_commit": "3e63a2a8",
+   "batch_date": "2026-08-01",
+   "date": "2026-04-04",
+   "live_url": "https://extensionto.com/blog/an-image-downloader-extension-for-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "android-chrome-adblocker",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-05",
+   "live_url": "https://extensionto.com/blog/android-chrome-adblocker",
+   "test_numbers": 24,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "ant-video-downloader-chrome",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-05",
+   "live_url": "https://extensionto.com/blog/ant-video-downloader-chrome",
+   "test_numbers": 23,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "anti-anti-adblock-chrome",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-05",
+   "live_url": "https://extensionto.com/blog/anti-anti-adblock-chrome",
+   "test_numbers": 21,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "anti-captcha-chrome",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/anti-captcha-chrome",
+   "test_numbers": 20,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "antidote-extension-chrome",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/antidote-extension-chrome",
+   "test_numbers": 23,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "article-2-chatgpt-amazon-reviews",
+   "category": "b",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-18",
+   "live_url": "https://extensionto.com/blog/article-2-chatgpt-amazon-reviews",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "article-4-chatgpt-twitter-replies",
+   "category": "b",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-20",
+   "live_url": "https://extensionto.com/blog/article-4-chatgpt-twitter-replies",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "article-7-ai-headline-generator",
+   "category": "b",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-23",
+   "live_url": "https://extensionto.com/blog/article-7-ai-headline-generator",
+   "test_numbers": 0,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "article5-dashlane-features",
+   "category": "a",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-30",
+   "live_url": "https://extensionto.com/blog/article5-dashlane-features",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "article8-protonpass-review",
+   "category": "b",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-07-03",
+   "live_url": "https://extensionto.com/blog/article8-protonpass-review",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "article9-roboform-review",
+   "category": "b",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-07-04",
+   "live_url": "https://extensionto.com/blog/article9-roboform-review",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "auto-tab-discarder-vs-the-great-suspender",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/auto-tab-discarder-vs-the-great-suspender",
+   "test_numbers": 23,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "automating-business-reports-with-formula-builder",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/automating-business-reports-with-formula-builder",
+   "test_numbers": 19,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "autotab-discard-vs-onetab",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/autotab-discard-vs-onetab",
+   "test_numbers": 22,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "avast-online-security-chrome",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-29",
+   "live_url": "https://extensionto.com/blog/avast-online-security-chrome",
+   "test_numbers": 15,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-adblock-browser-for-android-2026",
+   "category": "a",
+   "batch_commit": "b68257f8",
+   "batch_date": "2026-09-06",
+   "date": "2026-09-05",
+   "live_url": "https://extensionto.com/blog/best-adblock-browser-for-android-2026",
+   "test_numbers": 35,
+   "inbound_internal_links": 8,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-ai-blog-writer-chrome-extensions-2026",
+   "category": "a",
+   "batch_commit": "24b9ef39",
+   "batch_date": "2026-08-05",
+   "date": "2026-07-27",
+   "live_url": "https://extensionto.com/blog/best-ai-blog-writer-chrome-extensions-2026",
+   "test_numbers": 17,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 2,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-ai-chrome-extensions-2026",
+   "category": "c",
+   "batch_commit": "ac3b7605",
+   "batch_date": "2026-09-26",
+   "date": "2026-09-26",
+   "live_url": "https://extensionto.com/blog/best-ai-chrome-extensions-2026",
+   "test_numbers": 0,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 0,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-ai-tools-data-entry-automation-2026",
+   "category": "a",
+   "batch_commit": "b68257f8",
+   "batch_date": "2026-09-06",
+   "date": "2026-09-03",
+   "live_url": "https://extensionto.com/blog/best-ai-tools-data-entry-automation-2026",
+   "test_numbers": 34,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-ai-writing-assistants-for-gmail-2026",
+   "category": "c",
+   "batch_commit": "24b9ef39",
+   "batch_date": "2026-08-05",
+   "date": "2026-07-28",
+   "live_url": "https://extensionto.com/blog/best-ai-writing-assistants-for-gmail-2026",
+   "test_numbers": 0,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 0,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-annotated-screenshot-chrome-5",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-20",
+   "live_url": "https://extensionto.com/blog/best-annotated-screenshot-chrome-5",
+   "test_numbers": 13,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-anti-captcha-chrome-extension",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-24",
+   "live_url": "https://extensionto.com/blog/best-anti-captcha-chrome-extension",
+   "test_numbers": 32,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-browser-for-low-end-pc-2026",
+   "category": "a",
+   "batch_commit": "b68257f8",
+   "batch_date": "2026-09-06",
+   "date": "2026-09-03",
+   "live_url": "https://extensionto.com/blog/best-browser-for-low-end-pc-2026",
+   "test_numbers": 42,
+   "inbound_internal_links": 6,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-chatgpt-folder-organizer-extensions",
+   "category": "a",
+   "batch_commit": "24b9ef39",
+   "batch_date": "2026-08-05",
+   "date": "2026-07-07",
+   "live_url": "https://extensionto.com/blog/best-chatgpt-folder-organizer-extensions",
+   "test_numbers": 14,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-chrome-extension-download-files",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-02",
+   "live_url": "https://extensionto.com/blog/best-chrome-extension-download-files",
+   "test_numbers": 28,
+   "inbound_internal_links": 11,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-chrome-extensions-for-privacy-2026",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-02-15",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-for-privacy-2026",
+   "test_numbers": 21,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-chrome-extensions-google-meet",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-03",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-google-meet",
+   "test_numbers": 30,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-chrome-privacy-extensions-2026-complete-guide",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-31",
+   "live_url": "https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide",
+   "test_numbers": 23,
+   "inbound_internal_links": 6,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-chrome-screenshot-extensions-2026-complete-guide",
+   "category": "b",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-31",
+   "live_url": "https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-color-picker-chrome-extension",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-22",
+   "live_url": "https://extensionto.com/blog/best-color-picker-chrome-extension",
+   "test_numbers": 3,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-dark-mode-chrome-extension",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-24",
+   "live_url": "https://extensionto.com/blog/best-dark-mode-chrome-extension",
+   "test_numbers": 2,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-free-adblocker-youtube-chrome",
+   "category": "b",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-10",
+   "live_url": "https://extensionto.com/blog/best-free-adblocker-youtube-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-05",
+   "live_url": "https://extensionto.com/blog/best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
+   "test_numbers": 18,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-full-page-screenshot-chrome-extension-2026-free-no-login-required",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-03-16",
+   "live_url": "https://extensionto.com/blog/best-full-page-screenshot-chrome-extension-2026-free-no-login-required",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-idm-alternative-for-chrome",
+   "category": "a",
+   "batch_commit": "3e63a2a8",
+   "batch_date": "2026-08-01",
+   "date": "2026-04-17",
+   "live_url": "https://extensionto.com/blog/best-idm-alternative-for-chrome",
+   "test_numbers": 12,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-lightweight-popup-blocker-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-04",
+   "live_url": "https://extensionto.com/blog/best-lightweight-popup-blocker-chrome",
+   "test_numbers": 33,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-memory-saver-extension-for-chrome-4",
+   "category": "c",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-01-24",
+   "live_url": "https://extensionto.com/blog/best-memory-saver-extension-for-chrome-4",
+   "test_numbers": 0,
+   "inbound_internal_links": 16,
+   "a_paragraph_count": 0,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-note-taking-chrome-extensions-2026",
+   "category": "c",
+   "batch_commit": "d1cfb793",
+   "batch_date": "2026-08-31",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/best-note-taking-chrome-extensions-2026",
+   "test_numbers": 0,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 0,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-ram-saving-extensions-2026",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-22",
+   "live_url": "https://extensionto.com/blog/best-ram-saving-extensions-2026",
+   "test_numbers": 21,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-text-to-speech-chrome-extensions-2026",
+   "category": "c",
+   "batch_commit": "211c4ccd",
+   "batch_date": "2026-09-01",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/best-text-to-speech-chrome-extensions-2026",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-website-screenshot-extension-vs-standalone-app-comparison",
+   "category": "b",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-04-27",
+   "live_url": "https://extensionto.com/blog/best-website-screenshot-extension-vs-standalone-app-comparison",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "betterttv-google-chrome-guide",
+   "category": "a",
+   "batch_commit": "83da096d",
+   "batch_date": "2026-08-23",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/betterttv-google-chrome-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "blackbox-ai-chrome-extension-guide",
+   "category": "b",
+   "batch_commit": "83da096d",
+   "batch_date": "2026-08-23",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/blackbox-ai-chrome-extension-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "block-video-ads-chrome-extension",
+   "category": "b",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-11",
+   "live_url": "https://extensionto.com/blog/block-video-ads-chrome-extension",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "boost-your-online-presence",
+   "category": "b",
+   "batch_commit": "493acf89",
+   "batch_date": "2026-07-31",
+   "date": "2026-04-20",
+   "live_url": "https://extensionto.com/blog/boost-your-online-presence",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "boosting-browser-performance-minimal-extensions",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-24",
+   "live_url": "https://extensionto.com/blog/boosting-browser-performance-minimal-extensions",
+   "test_numbers": 13,
+   "inbound_internal_links": 8,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "boosting-productivity-with-light-browser-extensions-for-slow-pc",
+   "category": "a",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-03-23",
+   "live_url": "https://extensionto.com/blog/boosting-productivity-with-light-browser-extensions-for-slow-pc",
+   "test_numbers": 4,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "capture-screen-chrome-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/capture-screen-chrome-guide",
+   "test_numbers": 25,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "capture-scrolling-webpages-as-png-or-pdf",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/capture-scrolling-webpages-as-png-or-pdf",
+   "test_numbers": 25,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chatgpt-export-chat-chrome-extension",
+   "category": "b",
+   "batch_commit": "24b9ef39",
+   "batch_date": "2026-08-05",
+   "date": "2026-07-24",
+   "live_url": "https://extensionto.com/blog/chatgpt-export-chat-chrome-extension",
+   "test_numbers": 0,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chatgpt-extension-chrome-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-02-16",
+   "live_url": "https://extensionto.com/blog/chatgpt-extension-chrome-guide",
+   "test_numbers": 30,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chatgpt-search-history-extension-2026",
+   "category": "a",
+   "batch_commit": "24b9ef39",
+   "batch_date": "2026-08-05",
+   "date": "2026-07-06",
+   "live_url": "https://extensionto.com/blog/chatgpt-search-history-extension-2026",
+   "test_numbers": 19,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "chrome-cast-samsung-tv",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-22",
+   "live_url": "https://extensionto.com/blog/chrome-cast-samsung-tv",
+   "test_numbers": 29,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-download-manager-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-23",
+   "live_url": "https://extensionto.com/blog/chrome-download-manager-guide",
+   "test_numbers": 27,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-est-tres-lent",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-25",
+   "live_url": "https://extensionto.com/blog/chrome-est-tres-lent",
+   "test_numbers": 27,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extension-development-guide",
+   "category": "b",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-24",
+   "live_url": "https://extensionto.com/blog/chrome-extension-development-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extension-keyboard-shortcuts-not-working-fix",
+   "category": "a",
+   "batch_commit": "d1cfb793",
+   "batch_date": "2026-08-31",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/chrome-extension-keyboard-shortcuts-not-working-fix",
+   "test_numbers": 0,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-android-download",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-02-12",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-android-download",
+   "test_numbers": 27,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-android-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-21",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-android-guide",
+   "test_numbers": 26,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-complete-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-24",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-complete-guide",
+   "test_numbers": 30,
+   "inbound_internal_links": 9,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-for-gamers-guide",
+   "category": "b",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-23",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-for-gamers-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-on-android-2026-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-22",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-on-android-2026-guide",
+   "test_numbers": 30,
+   "inbound_internal_links": 14,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-opera-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-21",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-opera-guide",
+   "test_numbers": 27,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-vs-web-apps-comparison",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-16",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-vs-web-apps-comparison",
+   "test_numbers": 26,
+   "inbound_internal_links": 60,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-memory-saver-how-it-works",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-21",
+   "live_url": "https://extensionto.com/blog/chrome-memory-saver-how-it-works",
+   "test_numbers": 16,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-pdf-viewer-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-02",
+   "live_url": "https://extensionto.com/blog/chrome-pdf-viewer-guide",
+   "test_numbers": 25,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-popup-blocker-master-guide",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-05",
+   "live_url": "https://extensionto.com/blog/chrome-popup-blocker-master-guide",
+   "test_numbers": 16,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-printing-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-22",
+   "live_url": "https://extensionto.com/blog/chrome-printing-guide",
+   "test_numbers": 8,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-samsung-smart-tv-casting-guide",
+   "category": "b",
+   "batch_commit": "83da096d",
+   "batch_date": "2026-08-23",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/chrome-samsung-smart-tv-casting-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-addon-comparison",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-07",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-addon-comparison",
+   "test_numbers": 28,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-addon-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-07",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-addon-guide",
+   "test_numbers": 26,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-addon-tutorial",
+   "category": "b",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-07",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-addon-tutorial",
+   "test_numbers": 0,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-alternatives",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-06",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-alternatives",
+   "test_numbers": 27,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-guide",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-20",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-guide",
+   "test_numbers": 16,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-tools",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-02-22",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-tools",
+   "test_numbers": 21,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-tutorial",
+   "category": "b",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-tutorial",
+   "test_numbers": 0,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-vs-edge-vs-brave-ram-comparison",
+   "category": "b",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-25",
+   "live_url": "https://extensionto.com/blog/chrome-vs-edge-vs-brave-ram-comparison",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-web-store-extensions-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-02-13",
+   "live_url": "https://extensionto.com/blog/chrome-web-store-extensions-guide",
+   "test_numbers": 31,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-web-store-pc-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-20",
+   "live_url": "https://extensionto.com/blog/chrome-web-store-pc-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chromecast-extension-google-chrome",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-05-20",
+   "live_url": "https://extensionto.com/blog/chromecast-extension-google-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chromecast-mac-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-20",
+   "live_url": "https://extensionto.com/blog/chromecast-mac-guide",
+   "test_numbers": 26,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chromecast-plugin-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-19",
+   "live_url": "https://extensionto.com/blog/chromecast-plugin-chrome",
+   "test_numbers": 26,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrometana-extension-review",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-02-09",
+   "live_url": "https://extensionto.com/blog/chrometana-extension-review",
+   "test_numbers": 26,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "claroread-chrome-extension",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-19",
+   "live_url": "https://extensionto.com/blog/claroread-chrome-extension",
+   "test_numbers": 26,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "cleanweb-vs-total-adblock",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-10",
+   "live_url": "https://extensionto.com/blog/cleanweb-vs-total-adblock",
+   "test_numbers": 28,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "clickclean-chrome-browser-cleaner",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-20",
+   "live_url": "https://extensionto.com/blog/clickclean-chrome-browser-cleaner",
+   "test_numbers": 27,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "clickclean-google-chrome-review",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-20",
+   "live_url": "https://extensionto.com/blog/clickclean-google-chrome-review",
+   "test_numbers": 28,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "clipboard-history-chrome-extension-guide",
+   "category": "c",
+   "batch_commit": "211c4ccd",
+   "batch_date": "2026-09-01",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/clipboard-history-chrome-extension-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "clipconverter-extension-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-19",
+   "live_url": "https://extensionto.com/blog/clipconverter-extension-chrome",
+   "test_numbers": 29,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "color-picker-chrome-extensions",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-19",
+   "live_url": "https://extensionto.com/blog/color-picker-chrome-extensions",
+   "test_numbers": 26,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "colorzilla-chrome-color-picker",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-19",
+   "live_url": "https://extensionto.com/blog/colorzilla-chrome-color-picker",
+   "test_numbers": 26,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "comodo-chrome-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/comodo-chrome-guide",
+   "test_numbers": 28,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "contentsquare-extension-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/contentsquare-extension-chrome",
+   "test_numbers": 28,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "cookie-consent-blocker-chrome",
+   "category": "b",
+   "batch_commit": "1c3f1de2",
+   "batch_date": "2026-09-21",
+   "date": "2026-09-21",
+   "live_url": "https://extensionto.com/blog/cookie-consent-blocker-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "cookies-quick-manager-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/cookies-quick-manager-chrome",
+   "test_numbers": 30,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "cors-chrome-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/cors-chrome-guide",
+   "test_numbers": 28,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "creating-financial-models-formula-builder-pro",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/creating-financial-models-formula-builder-pro",
+   "test_numbers": 28,
+   "inbound_internal_links": 13,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide",
+   "test_numbers": 31,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "crystal-extension-chrome",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/crystal-extension-chrome",
+   "test_numbers": 30,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "discover-the-best-file-downloader-extension-chrome",
+   "category": "c",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-04-17",
+   "live_url": "https://extensionto.com/blog/discover-the-best-file-downloader-extension-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "discover-the-best-privacy-extension-chrome",
+   "category": "b",
+   "batch_commit": "493acf89",
+   "batch_date": "2026-07-31",
+   "date": "2026-03-05",
+   "live_url": "https://extensionto.com/blog/discover-the-best-privacy-extension-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "download-instagram-reels-chrome-saving-your-favorite-videos",
+   "category": "b",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-04-04",
+   "live_url": "https://extensionto.com/blog/download-instagram-reels-chrome-saving-your-favorite-videos",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "download-instagram-stories-extension-chrome",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-05-16",
+   "live_url": "https://extensionto.com/blog/download-instagram-stories-extension-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "download-station-chrome-4",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-05-16",
+   "live_url": "https://extensionto.com/blog/download-station-chrome-4",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "download-stories-instagram-extension-5",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-05-15",
+   "live_url": "https://extensionto.com/blog/download-stories-instagram-extension-5",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "eagleget-extension-chrome-8",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-05-15",
+   "live_url": "https://extensionto.com/blog/eagleget-extension-chrome-8",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "effortlessly-manage-your-browser-export-extension-chrome",
+   "category": "b",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-05-06",
+   "live_url": "https://extensionto.com/blog/effortlessly-manage-your-browser-export-extension-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "extension-adblock-chrome-android-2",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-05-11",
+   "live_url": "https://extensionto.com/blog/extension-adblock-chrome-android-2",
+   "test_numbers": 6,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "extension-chrome-capture-page-web",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-05-14",
+   "live_url": "https://extensionto.com/blog/extension-chrome-capture-page-web",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "extension-chrome-code-1",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-05-13",
+   "live_url": "https://extensionto.com/blog/extension-chrome-code-1",
+   "test_numbers": 27,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "extension-chrome-cookie-editor-4",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-05-13",
+   "live_url": "https://extensionto.com/blog/extension-chrome-cookie-editor-4",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "extension-chrome-deezer-8",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-09",
+   "live_url": "https://extensionto.com/blog/extension-chrome-deezer-8",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-03-06",
+   "live_url": "https://extensionto.com/blog/facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "fast-screenshot-extension-tutorial-5",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-22",
+   "live_url": "https://extensionto.com/blog/fast-screenshot-extension-tutorial-5",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "firefox-vs-chrome-memory-usage-2026",
+   "category": "b",
+   "batch_commit": "b68257f8",
+   "batch_date": "2026-09-06",
+   "date": "2026-09-02",
+   "live_url": "https://extensionto.com/blog/firefox-vs-chrome-memory-usage-2026",
+   "test_numbers": 0,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "fireshot-chrome-screenshot",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-21",
+   "live_url": "https://extensionto.com/blog/fireshot-chrome-screenshot",
+   "test_numbers": 26,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "free-ai-content-summarizer-extension-2026",
+   "category": "a",
+   "batch_commit": "24b9ef39",
+   "batch_date": "2026-08-05",
+   "date": "2026-07-10",
+   "live_url": "https://extensionto.com/blog/free-ai-content-summarizer-extension-2026",
+   "test_numbers": 20,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "ghostery-vs-stands-adblocker",
+   "category": "b",
+   "batch_commit": "493acf89",
+   "batch_date": "2026-07-31",
+   "date": "2026-03-27",
+   "live_url": "https://extensionto.com/blog/ghostery-vs-stands-adblocker",
+   "test_numbers": 0,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "history-search-chrome-extensions",
+   "category": "b",
+   "batch_commit": "77fa5c10",
+   "batch_date": "2026-09-22",
+   "date": "2026-09-22",
+   "live_url": "https://extensionto.com/blog/history-search-chrome-extensions",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "how-to-enable-extensions-in-chrome-android",
+   "category": "b",
+   "batch_commit": "3e63a2a8",
+   "batch_date": "2026-08-01",
+   "date": "2026-03-15",
+   "live_url": "https://extensionto.com/blog/how-to-enable-extensions-in-chrome-android",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "how-to-turn-on-chromes-memory-saver-mode",
+   "category": "b",
+   "batch_commit": "3e63a2a8",
+   "batch_date": "2026-08-01",
+   "date": "2026-03-21",
+   "live_url": "https://extensionto.com/blog/how-to-turn-on-chromes-memory-saver-mode",
+   "test_numbers": 0,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "instagram-downloader-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-24",
+   "live_url": "https://extensionto.com/blog/instagram-downloader-chrome",
+   "test_numbers": 27,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "install-chrome-web-store-extensions-android",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-21",
+   "live_url": "https://extensionto.com/blog/install-chrome-web-store-extensions-android",
+   "test_numbers": 28,
+   "inbound_internal_links": 14,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "kaspersky-protection-chrome-review",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-20",
+   "live_url": "https://extensionto.com/blog/kaspersky-protection-chrome-review",
+   "test_numbers": 32,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "kaspersky-protection-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-22",
+   "live_url": "https://extensionto.com/blog/kaspersky-protection-chrome",
+   "test_numbers": 32,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "kiwi-browser-extensions-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-23",
+   "live_url": "https://extensionto.com/blog/kiwi-browser-extensions-guide",
+   "test_numbers": 28,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "kiwi-vs-yandex-vs-lemur-android-extensions",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-16",
+   "live_url": "https://extensionto.com/blog/kiwi-vs-yandex-vs-lemur-android-extensions",
+   "test_numbers": 21,
+   "inbound_internal_links": 6,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "loop-youtube-videos-with-this-chrome-extension",
+   "category": "b",
+   "batch_commit": "3e63a2a8",
+   "batch_date": "2026-08-01",
+   "date": "2026-04-15",
+   "live_url": "https://extensionto.com/blog/loop-youtube-videos-with-this-chrome-extension",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "mute-noisy-tabs-chrome",
+   "category": "b",
+   "batch_commit": "77fa5c10",
+   "batch_date": "2026-09-22",
+   "date": "2026-09-22",
+   "live_url": "https://extensionto.com/blog/mute-noisy-tabs-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "new-tab-speed-dial-chrome",
+   "category": "a",
+   "batch_commit": "1c3f1de2",
+   "batch_date": "2026-09-21",
+   "date": "2026-09-21",
+   "live_url": "https://extensionto.com/blog/new-tab-speed-dial-chrome",
+   "test_numbers": 15,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "organize-chrome-extensions-toolbar-guide",
+   "category": "b",
+   "batch_commit": "d1cfb793",
+   "batch_date": "2026-08-31",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/organize-chrome-extensions-toolbar-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "parental-controls-google-chrome-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-19",
+   "live_url": "https://extensionto.com/blog/parental-controls-google-chrome-guide",
+   "test_numbers": 28,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "parental-controls-google-chrome-pc",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-18",
+   "live_url": "https://extensionto.com/blog/parental-controls-google-chrome-pc",
+   "test_numbers": 26,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "pop-up-blocker-for-chrome-partial",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-03-12",
+   "live_url": "https://extensionto.com/blog/pop-up-blocker-for-chrome-partial",
+   "test_numbers": 0,
+   "inbound_internal_links": 88,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "privacy-badger-chrome-partial",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-28",
+   "live_url": "https://extensionto.com/blog/privacy-badger-chrome-partial",
+   "test_numbers": 0,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "protab-suspender-memory-saver-review",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-02-28",
+   "live_url": "https://extensionto.com/blog/protab-suspender-memory-saver-review",
+   "test_numbers": 27,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "protecting-your-online-security",
+   "category": "a",
+   "batch_commit": "493acf89",
+   "batch_date": "2026-07-31",
+   "date": "2026-04-13",
+   "live_url": "https://extensionto.com/blog/protecting-your-online-security",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "qr-code-generator-scanner-chrome-extensions",
+   "category": "b",
+   "batch_commit": "e0ecc0f4",
+   "batch_date": "2026-09-20",
+   "date": "2026-09-20",
+   "live_url": "https://extensionto.com/blog/qr-code-generator-scanner-chrome-extensions",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "quick-screenshot-capture-extension",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/quick-screenshot-capture-extension",
+   "test_numbers": 28,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "quick-screenshot-lite-review",
+   "category": "b",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-07",
+   "live_url": "https://extensionto.com/blog/quick-screenshot-lite-review",
+   "test_numbers": 0,
+   "inbound_internal_links": 8,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "rss-reader-chrome-extensions-2026",
+   "category": "b",
+   "batch_commit": "e0ecc0f4",
+   "batch_date": "2026-09-20",
+   "date": "2026-09-20",
+   "live_url": "https://extensionto.com/blog/rss-reader-chrome-extensions-2026",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "save-articles-read-later-offline-chrome-guide",
+   "category": "b",
+   "batch_commit": "d1cfb793",
+   "batch_date": "2026-08-31",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/save-articles-read-later-offline-chrome-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "save-images-from-protected-sites-chrome",
+   "category": "b",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-04",
+   "live_url": "https://extensionto.com/blog/save-images-from-protected-sites-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "screenshot-extensions-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-08",
+   "live_url": "https://extensionto.com/blog/screenshot-extensions-chrome",
+   "test_numbers": 28,
+   "inbound_internal_links": 10,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "screenshot-tool-chrome-guide-1",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-23",
+   "live_url": "https://extensionto.com/blog/screenshot-tool-chrome-guide-1",
+   "test_numbers": 0,
+   "inbound_internal_links": 11,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "screenshot-tool-chrome-vs-5",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-23",
+   "live_url": "https://extensionto.com/blog/screenshot-tool-chrome-vs-5",
+   "test_numbers": 0,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "screenshot-tools-chrome-comparison",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/screenshot-tools-chrome-comparison",
+   "test_numbers": 26,
+   "inbound_internal_links": 18,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "session-isolation-multiple-accounts",
+   "category": "b",
+   "batch_commit": "1c3f1de2",
+   "batch_date": "2026-09-21",
+   "date": "2026-09-21",
+   "live_url": "https://extensionto.com/blog/session-isolation-multiple-accounts",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "session-manager-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-21",
+   "live_url": "https://extensionto.com/blog/session-manager-chrome",
+   "test_numbers": 27,
+   "inbound_internal_links": 8,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "set-chrome-as-default-browser",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-22",
+   "live_url": "https://extensionto.com/blog/set-chrome-as-default-browser",
+   "test_numbers": 11,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "social-media-video-downloader-chrome",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-03",
+   "live_url": "https://extensionto.com/blog/social-media-video-downloader-chrome",
+   "test_numbers": 28,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "split-screen-chrome-tabs-guide",
+   "category": "a",
+   "batch_commit": "211c4ccd",
+   "batch_date": "2026-09-01",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/split-screen-chrome-tabs-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-04-16",
+   "live_url": "https://extensionto.com/blog/supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
+   "test_numbers": 2,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "sync-chrome-extensions-across-devices-guide",
+   "category": "b",
+   "batch_commit": "d1cfb793",
+   "batch_date": "2026-08-31",
+   "date": "2026-08-31",
+   "live_url": "https://extensionto.com/blog/sync-chrome-extensions-across-devices-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "text-expander-chrome-extensions",
+   "category": "b",
+   "batch_commit": "77fa5c10",
+   "batch_date": "2026-09-22",
+   "date": "2026-09-22",
+   "live_url": "https://extensionto.com/blog/text-expander-chrome-extensions",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "the-power-of-1password-chrome-extension",
+   "category": "a",
+   "batch_commit": "493acf89",
+   "batch_date": "2026-07-31",
+   "date": "2026-05-07",
+   "live_url": "https://extensionto.com/blog/the-power-of-1password-chrome-extension",
+   "test_numbers": 2,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "the-power-of-extension-adblock-google-chrome",
+   "category": "a",
+   "batch_commit": "493acf89",
+   "batch_date": "2026-07-31",
+   "date": "2026-05-06",
+   "live_url": "https://extensionto.com/blog/the-power-of-extension-adblock-google-chrome",
+   "test_numbers": 4,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "the-power-of-extension-chrome-google-translate",
+   "category": "a",
+   "batch_commit": "493acf89",
+   "batch_date": "2026-07-31",
+   "date": "2026-05-03",
+   "live_url": "https://extensionto.com/blog/the-power-of-extension-chrome-google-translate",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "tts-chrome-5",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-09",
+   "live_url": "https://extensionto.com/blog/tts-chrome-5",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "ultimate-chrome-ram-memory-management-guide",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-20",
+   "live_url": "https://extensionto.com/blog/ultimate-chrome-ram-memory-management-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlock-lightning-fast-video-playback-extension-accelerer-video",
+   "category": "a",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-05-06",
+   "live_url": "https://extensionto.com/blog/unlock-lightning-fast-video-playback-extension-accelerer-video",
+   "test_numbers": 2,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-04-29",
+   "live_url": "https://extensionto.com/blog/unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlock-secure-browsing-the-avast-password-extension-chrome-review",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-04-28",
+   "live_url": "https://extensionto.com/blog/unlock-secure-browsing-the-avast-password-extension-chrome-review",
+   "test_numbers": 0,
+   "inbound_internal_links": 6,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-ad-free-browsing-ad-block-chrome-android",
+   "category": "a",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-03-16",
+   "live_url": "https://extensionto.com/blog/unlocking-ad-free-browsing-ad-block-chrome-android",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-ad-free-browsing-on-android-android-chrome-adblock",
+   "category": "b",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-03-15",
+   "live_url": "https://extensionto.com/blog/unlocking-ad-free-browsing-on-android-android-chrome-adblock",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-03-18",
+   "live_url": "https://extensionto.com/blog/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-efficiency-the-best-spreadsheets-software-for-small-business",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-04-27",
+   "live_url": "https://extensionto.com/blog/unlocking-efficiency-the-best-spreadsheets-software-for-small-business",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-04-28",
+   "live_url": "https://extensionto.com/blog/unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-online-privacy-ghostery-for-chrome-android",
+   "category": "b",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-03-04",
+   "live_url": "https://extensionto.com/blog/unlocking-online-privacy-ghostery-for-chrome-android",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-online-security-the-power-of-avast-extension-google-chrome",
+   "category": "c",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-04-29",
+   "live_url": "https://extensionto.com/blog/unlocking-online-security-the-power-of-avast-extension-google-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 14,
+   "a_paragraph_count": 0,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-avast-password-chrome-secure-browsing",
+   "category": "b",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-04-29",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-avast-password-chrome-secure-browsing",
+   "test_numbers": 0,
+   "inbound_internal_links": 9,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-browser-extensions-extension-to",
+   "category": "b",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-04-25",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-browser-extensions-extension-to",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-22",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a",
+   "test_numbers": 0,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-extension-android-google-chrome",
+   "category": "a",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-05-05",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extension-android-google-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-extensionhub-enhancing-your-browser-experience",
+   "category": "b",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-04-25",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extensionhub-enhancing-your-browser-experience",
+   "test_numbers": 0,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-google-chat-extension",
+   "category": "b",
+   "batch_commit": "3e63a2a8",
+   "batch_date": "2026-08-01",
+   "date": "2026-04-26",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-google-chat-extension",
+   "test_numbers": 0,
+   "inbound_internal_links": 31,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-online-privacy-ghostery-add-on-chrome",
+   "category": "b",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-03-03",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-online-privacy-ghostery-add-on-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-the-avast-passwords-extension",
+   "category": "b",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-04-28",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-the-avast-passwords-extension",
+   "test_numbers": 0,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-yandex-browser-on-chrome-web-store",
+   "category": "a",
+   "batch_commit": "d2541c99",
+   "batch_date": "2026-07-31",
+   "date": "2026-03-19",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-yandex-browser-on-chrome-web-store",
+   "test_numbers": 0,
+   "inbound_internal_links": 12,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "veepn-extension-to-chrome-4",
+   "category": "b",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-02-16",
+   "live_url": "https://extensionto.com/blog/veepn-extension-to-chrome-4",
+   "test_numbers": 0,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "vpn-article1-best-free-vpn-no-signup",
+   "category": "a",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-08-02",
+   "live_url": "https://extensionto.com/blog/vpn-article1-best-free-vpn-no-signup",
+   "test_numbers": 16,
+   "inbound_internal_links": 10,
+   "a_paragraph_count": 2,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "vpn-article11-betternet-review",
+   "category": "b",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-08-04",
+   "live_url": "https://extensionto.com/blog/vpn-article11-betternet-review",
+   "test_numbers": 0,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "vpn-article2-nordvpn-speed-test",
+   "category": "c",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-08-05",
+   "live_url": "https://extensionto.com/blog/vpn-article2-nordvpn-speed-test",
+   "test_numbers": 0,
+   "inbound_internal_links": 10,
+   "a_paragraph_count": 0,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "vpn-article3-protonvpn-free-review",
+   "category": "b",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-08-06",
+   "live_url": "https://extensionto.com/blog/vpn-article3-protonvpn-free-review",
+   "test_numbers": 0,
+   "inbound_internal_links": 12,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "vpn-article4-expressvpn-review",
+   "category": "b",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-08-07",
+   "live_url": "https://extensionto.com/blog/vpn-article4-expressvpn-review",
+   "test_numbers": 0,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "vpn-article7-opera-vs-chrome",
+   "category": "a",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-08-10",
+   "live_url": "https://extensionto.com/blog/vpn-article7-opera-vs-chrome",
+   "test_numbers": 2,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "vpn-article9-tunnelbear-review",
+   "category": "b",
+   "batch_commit": "afc53bc8",
+   "batch_date": "2026-06-07",
+   "date": "2026-08-12",
+   "live_url": "https://extensionto.com/blog/vpn-article9-tunnelbear-review",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "watch-party-chrome-extensions",
+   "category": "b",
+   "batch_commit": "1c3f1de2",
+   "batch_date": "2026-09-21",
+   "date": "2026-09-21",
+   "live_url": "https://extensionto.com/blog/watch-party-chrome-extensions",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "website-blocker-focus-chrome",
+   "category": "b",
+   "batch_commit": "77fa5c10",
+   "batch_date": "2026-09-22",
+   "date": "2026-09-22",
+   "live_url": "https://extensionto.com/blog/website-blocker-focus-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "why-light-popup-blocker-is-better-than-heavy-adblockers-6",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-03-03",
+   "live_url": "https://extensionto.com/blog/why-light-popup-blocker-is-better-than-heavy-adblockers-6",
+   "test_numbers": 0,
+   "inbound_internal_links": 8,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "why-you-need-an-antivirus-extension-for-chrome",
+   "category": "b",
+   "batch_commit": "3e63a2a8",
+   "batch_date": "2026-08-01",
+   "date": "2026-05-05",
+   "live_url": "https://extensionto.com/blog/why-you-need-an-antivirus-extension-for-chrome",
+   "test_numbers": 0,
+   "inbound_internal_links": 14,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "youtube-adblock-chrome-guide",
+   "category": "b",
+   "batch_commit": "2762cda5",
+   "batch_date": "2026-09-01",
+   "date": "2026-09-01",
+   "live_url": "https://extensionto.com/blog/youtube-adblock-chrome-guide",
+   "test_numbers": 0,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 0,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  }
+ ],
+ "worst30_category_a": [
+  {
+   "slug": "best-browser-for-low-end-pc-2026",
+   "category": "a",
+   "batch_commit": "b68257f8",
+   "batch_date": "2026-09-06",
+   "date": "2026-09-03",
+   "live_url": "https://extensionto.com/blog/best-browser-for-low-end-pc-2026",
+   "test_numbers": 42,
+   "inbound_internal_links": 6,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "adguard-vs-ghostery-2026-comparison",
+   "category": "a",
+   "batch_commit": "b68257f8",
+   "batch_date": "2026-09-06",
+   "date": "2026-09-05",
+   "live_url": "https://extensionto.com/blog/adguard-vs-ghostery-2026-comparison",
+   "test_numbers": 36,
+   "inbound_internal_links": 7,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-adblock-browser-for-android-2026",
+   "category": "a",
+   "batch_commit": "b68257f8",
+   "batch_date": "2026-09-06",
+   "date": "2026-09-05",
+   "live_url": "https://extensionto.com/blog/best-adblock-browser-for-android-2026",
+   "test_numbers": 35,
+   "inbound_internal_links": 8,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-ai-tools-data-entry-automation-2026",
+   "category": "a",
+   "batch_commit": "b68257f8",
+   "batch_date": "2026-09-06",
+   "date": "2026-09-03",
+   "live_url": "https://extensionto.com/blog/best-ai-tools-data-entry-automation-2026",
+   "test_numbers": 34,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-lightweight-popup-blocker-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-04",
+   "live_url": "https://extensionto.com/blog/best-lightweight-popup-blocker-chrome",
+   "test_numbers": 33,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-anti-captcha-chrome-extension",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-24",
+   "live_url": "https://extensionto.com/blog/best-anti-captcha-chrome-extension",
+   "test_numbers": 32,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "kaspersky-protection-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-22",
+   "live_url": "https://extensionto.com/blog/kaspersky-protection-chrome",
+   "test_numbers": 32,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "kaspersky-protection-chrome-review",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-20",
+   "live_url": "https://extensionto.com/blog/kaspersky-protection-chrome-review",
+   "test_numbers": 32,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-web-store-extensions-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-02-13",
+   "live_url": "https://extensionto.com/blog/chrome-web-store-extensions-guide",
+   "test_numbers": 31,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide",
+   "test_numbers": 31,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-chrome-extensions-google-meet",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-03",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-google-meet",
+   "test_numbers": 30,
+   "inbound_internal_links": 0,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chatgpt-extension-chrome-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-02-16",
+   "live_url": "https://extensionto.com/blog/chatgpt-extension-chrome-guide",
+   "test_numbers": 30,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-complete-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-24",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-complete-guide",
+   "test_numbers": 30,
+   "inbound_internal_links": 9,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-on-android-2026-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-22",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-on-android-2026-guide",
+   "test_numbers": 30,
+   "inbound_internal_links": 14,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "cookies-quick-manager-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/cookies-quick-manager-chrome",
+   "test_numbers": 30,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "crystal-extension-chrome",
+   "category": "a",
+   "batch_commit": "65cfb7f5",
+   "batch_date": "2026-06-06",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/crystal-extension-chrome",
+   "test_numbers": 30,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-cast-samsung-tv",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-22",
+   "live_url": "https://extensionto.com/blog/chrome-cast-samsung-tv",
+   "test_numbers": 29,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "clipconverter-extension-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-19",
+   "live_url": "https://extensionto.com/blog/clipconverter-extension-chrome",
+   "test_numbers": 29,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "best-chrome-extension-download-files",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-02",
+   "live_url": "https://extensionto.com/blog/best-chrome-extension-download-files",
+   "test_numbers": 28,
+   "inbound_internal_links": 11,
+   "a_paragraph_count": 1,
+   "c_heading_count": 1,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-addon-comparison",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-03-07",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-addon-comparison",
+   "test_numbers": 28,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "cleanweb-vs-total-adblock",
+   "category": "a",
+   "batch_commit": "0e1658ee",
+   "batch_date": "2026-06-07",
+   "date": "2026-04-10",
+   "live_url": "https://extensionto.com/blog/cleanweb-vs-total-adblock",
+   "test_numbers": 28,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "clickclean-google-chrome-review",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-20",
+   "live_url": "https://extensionto.com/blog/clickclean-google-chrome-review",
+   "test_numbers": 28,
+   "inbound_internal_links": 1,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "comodo-chrome-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/comodo-chrome-guide",
+   "test_numbers": 28,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "contentsquare-extension-chrome",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/contentsquare-extension-chrome",
+   "test_numbers": 28,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "cors-chrome-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/cors-chrome-guide",
+   "test_numbers": 28,
+   "inbound_internal_links": 3,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "creating-financial-models-formula-builder-pro",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/creating-financial-models-formula-builder-pro",
+   "test_numbers": 28,
+   "inbound_internal_links": 13,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "install-chrome-web-store-extensions-android",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-21",
+   "live_url": "https://extensionto.com/blog/install-chrome-web-store-extensions-android",
+   "test_numbers": 28,
+   "inbound_internal_links": 14,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "kiwi-browser-extensions-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-23",
+   "live_url": "https://extensionto.com/blog/kiwi-browser-extensions-guide",
+   "test_numbers": 28,
+   "inbound_internal_links": 5,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "parental-controls-google-chrome-guide",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-05-19",
+   "live_url": "https://extensionto.com/blog/parental-controls-google-chrome-guide",
+   "test_numbers": 28,
+   "inbound_internal_links": 2,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "quick-screenshot-capture-extension",
+   "category": "a",
+   "batch_commit": "8d37ff9d",
+   "batch_date": "2026-06-07",
+   "date": "2026-06-06",
+   "live_url": "https://extensionto.com/blog/quick-screenshot-capture-extension",
+   "test_numbers": 28,
+   "inbound_internal_links": 4,
+   "a_paragraph_count": 1,
+   "c_heading_count": 0,
+   "pure_keys": [
+    "i_tested"
+   ]
+  }
+ ]
+}
