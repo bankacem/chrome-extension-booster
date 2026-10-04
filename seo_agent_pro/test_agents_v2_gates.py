@@ -188,6 +188,73 @@ class TestS3(unittest.TestCase):
         self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
 
 
+class TestS3Narrowed(unittest.TestCase):
+    """Owner brief 2026-10-04 item 4: S3 flags ONLY strong accusations against
+    a named product. Generic triggers (shares/harvest/leak/data-min/malware/
+    settled/fined/court-ruled/class-action/scam/injected/tracked-users and the
+    bare verb 'sued') no longer flag — precision is judged on the flagged set."""
+
+    # -- strong triggers still flag (no link nearby) --
+    def test_sells_data_flags(self):
+        body = "Honey sells your data to partners without asking."
+        self.assertIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_selling_users_flags(self):
+        body = "Hola VPN has been selling users' bandwidth to strangers."
+        self.assertIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_spyware_flags(self):
+        body = "That toolbar is basically spyware for your browser."
+        r = fabrication_gate(body)
+        # 'toolbar' is not in PRODUCTS; use a named product to trigger S3
+        self.assertNotIn("S3", r["failed_severities"])
+        body2 = "Avast was called spyware by several reviewers."
+        self.assertIn("S3", fabrication_gate(body2)["failed_severities"])
+
+    def test_data_breach_flags(self):
+        body = "LastPass suffered a data breach that exposed customer vaults."
+        self.assertIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_hacked_flags(self):
+        body = "The Grammarly account was hacked in the incident."
+        self.assertIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_lawsuit_flags(self):
+        body = "The Great Suspender faced a lawsuit over malicious updates."
+        self.assertIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_caught_flags(self):
+        body = "Honey was caught rewriting affiliate cookies at checkout."
+        self.assertIn("S3", fabrication_gate(body)["failed_severities"])
+
+    # -- generic triggers no longer flag --
+    def test_shared_no_longer_flags(self):
+        body = "Ghostery shares anonymized telemetry with partners by default."
+        self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_harvests_no_longer_flags(self):
+        body = "AdBlock harvests page content to match ads, critics say."
+        self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_leaked_no_longer_flags(self):
+        body = "LastPass leaked metadata in the past, according to reports."
+        self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
+
+    def test_malware_scam_sued_fined_court_no_longer_flag(self):
+        for sentence in ("Norton bundled malware-like popups last year.",
+                         "Some call this extension a scam.",
+                         "McAfee was sued over its refund policy.",
+                         "Avast was fined by the regulator.",
+                         "Kaspersky: a court ruled on the ban."):
+            self.assertNotIn("S3", fabrication_gate(sentence)["failed_severities"],
+                             msg=sentence)
+
+    def test_injected_and_tracked_users_no_longer_flag(self):
+        body = ("Honey injected codes into checkout pages and tracked users "
+                "across sites.")
+        self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
+
+
 class TestDocumentedExceptions(unittest.TestCase):
     """The single legitimate exception: a blockquote sentence carrying its
     own source link (a documented, cited quotation)."""

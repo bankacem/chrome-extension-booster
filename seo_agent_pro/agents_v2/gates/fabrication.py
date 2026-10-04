@@ -133,9 +133,17 @@ PRODUCTS: List[str] = [
     "TubeBuddy", "TBuddy", "vidIQ", "Social Blade", "Grammarly", "Momentum",
 ]
 S3_TRIGGER = re.compile(
-    r"\b(sells?|sold|selling|shares?|shared|sharing|harvest\w*|leak\w*|data[- ]min\w*|"
-    r"breach\w*|hack\w*|malware|spyware|lawsuit|sued|settle[dms]?|fine[d]?|"
-    r"court (?:ruled|ordered|found)|class[- ]action|scam|injected|tracked users)\b", re.I)
+    # Owner brief 2026-10-04 item 4 — S3 narrowed to STRONG accusations only.
+    # A named product is flagged ONLY when the sentence accuses it of one of:
+    #   sells/sold/selling  + (data | users | bandwidth)   [≤2 words between]
+    #   spyware | data breach(es/d) | hacked | lawsuit(s) | caught
+    # Generic triggers removed (evidence: docs/audit-triage.md — shares/
+    # harvest/leak/data-min/malware/settled/fined/court-ruled/class-action/
+    # scam/injected/tracked-users produced unjudgable matches on published
+    # prose). Precision is now measured on the FLAGGED set.
+    r"\b((?:sells?|sold|selling)\s+(?:\w+\s+){0,2}(?:data|users|bandwidth)|"
+    r"spyware|data\s+breach(?:e[sd]|s)?|hacked|lawsuits?|"
+    r"caught)\b", re.I)
 S3_PRODUCT = re.compile(r"\b(" + "|".join(re.escape(p) for p in PRODUCTS) + r")\b")
 LINK_RE = re.compile(r"\]\((?:https?:)?/[^)]*\)|https?://[^\s)>\"']+")
 SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9\"'*\[])")
