@@ -4,7 +4,7 @@ title: "Chrome Extension Disabled After an Update: Causes and Safe Next Steps"
 slug: chrome-extension-disabled-after-update-guide
 status: draft
 excerpt: "If Chrome disabled an extension right after a browser update, here’s why it can happen, how to respond safely, when to remove it, and what to avoid—grounded in Google’s policies and guidance."
-meta_description: "Learn why Chrome may disable an extension after an update and what to do safely—find alternatives, review policies, or remove it, with guidance sourced from Google."
+meta_description: Learn why Chrome may disable an extension after an update and what to do safely—find alternatives, review policies, or remove it.
 featured_image: "/content/images/chrome-extension-disabled-after-update-guide/featured.webp"
 category: "Chrome Extensions"
 tags:

@@ -14,7 +14,7 @@ keywords:
   - Chrome high memory usage
   - reduce Chrome RAM usage
   - Chrome Memory Saver
-meta_description: "Chrome eating your RAM? Nine fixes to try in 2026 — Memory Saver, extension audits, and startup controls — based on Chrome's settings and public guides."
+meta_description: Chrome eating your RAM? Nine fixes to try in 2026 — Memory Saver, extension audits, and startup controls.
 faq:
   - question: "Why does Chrome use so much RAM even with only a few tabs?"
     answer: "A few tabs can still contain complex web apps, media, extensions, service workers, or GPU activity. Use Chrome Task Manager to identify the process instead of judging the total number alone."

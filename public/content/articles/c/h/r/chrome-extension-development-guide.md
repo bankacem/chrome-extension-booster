@@ -3,9 +3,7 @@ seo_title: "Chrome Extension Development Guide"
 id: 5570c49e-16f9-43a3-adf0-eacc8d778ad5
 title: 'Chrome Extension Development Guide: How to Build Your First Extension in 2026'
 slug: chrome-extension-development-guide
-excerpt: >-
-  I built three Chrome extensions from scratch following Google's official docs.
-  Here is what the Chrome extension doc teaches you and what it leaves out.
+excerpt: I built three Chrome extensions from scratch. Here is what the Chrome extension doc teaches you and what it leaves out.
 featured_image: /content/images/chrome-extension-development-guide/featured.webp
 category: Productivity & Tools
 tags: []
@@ -13,10 +11,7 @@ keywords:
   - chrome extension development
   - chrome extension doc
   - build chrome extension
-meta_description: >-
-  I built three Chrome extensions from scratch in one week using Google's
-  official docs. Here is what the Chrome extension doc gets right and what it
-  leaves out.
+meta_description: I built three Chrome extensions from scratch in one week. Here is what the Chrome extension doc gets right and what it leaves out.
 status: published
 published_at: '2026-05-24T06:15:00.501+00:00'
 scheduled_at: '2026-05-24T06:15:00+00:00'
