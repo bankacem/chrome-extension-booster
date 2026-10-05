@@ -10,7 +10,7 @@ category: Chrome Extensions
 tags: []
 keywords:
   - react devtools for chrome mobile
-meta_description: "A hands-on look at react devtools on chrome mobile, covering setup, real features, and what to expect before installing it."
+meta_description: "A practical guide to react devtools on chrome mobile — setup, what it can and cannot do, and what to expect before installing it."
 status: published
 published_at: '2026-04-07T06:15:00.282+00:00'
 scheduled_at: '2026-04-07T06:15:00+00:00'

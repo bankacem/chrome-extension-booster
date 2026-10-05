@@ -3,9 +3,8 @@ seo_title: "Minimal Extensions That Won't Slow Chrome Down"
 title: 'Boosting Browser Performance: The Power of Minimal Chrome Extensions for Speed'
 slug: boosting-browser-performance-minimal-extensions
 excerpt: >-
-  Too many extensions slow Chrome down. I tested how each extension category
-  impacts performance — here is which to keep, which to cut, and the minimal
-  5-extension stack for peak speed.
+  Too many extensions slow Chrome down. How each extension category impacts
+  performance — which to keep, which to cut, and how to build a lean stack.
 featured_image: /content/images/boosting-browser-performance-minimal-extensions/featured.webp
 category: Productivity & Tools
 tags:
@@ -17,7 +16,7 @@ keywords:
   - minimal chrome extensions for speed
   - chrome performance optimization
   - speed up chrome
-meta_description: "I tested how each Chrome extension impacts browser speed. Find out which extensions to keep, which to remove, and the minimal 5-extension stack for peak..."
+meta_description: "How Chrome extensions can impact browser speed: which types to keep, which to remove, and how to build a lean extension stack that stays fast."
 status: published
 published_at: '2026-04-24T10:15:00.000+00:00'
 updated_at: '2026-09-23T13:54:38.000+00:00'
