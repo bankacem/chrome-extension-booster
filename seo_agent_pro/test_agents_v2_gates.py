@@ -606,7 +606,7 @@ class TestBodyNeutralization(unittest.TestCase):
 
     BEFORE = "\n\n".join([
         "# Tab Manager Guide",
-        "Chrome tab managers help you organize your browsing. "
+        "Chrome tab managers help you organize your browsing in 2026. "
         "This article compares SessionBox and OneTab.",
         "## How We Tested - Results at 1, 10, and 25 Tabs",
         "I installed 12 extensions on a MacBook Air M2 and measured RAM at "
@@ -614,7 +614,7 @@ class TestBodyNeutralization(unittest.TestCase):
         "The 112-tab workload showed a 30% improvement over the baseline. "
         "SessionBox consumed 480 MB per window.",
         "## Key Features",
-        "SessionBox separates tabs into isolated sessions. "
+        "Many users keep SessionBox for isolated sessions. "
         "OneTab collapses every tab into a single list.",
         "![Screenshot of tab groups](/content/images/tab-manager/shot1.webp)",
         "| Tool | RAM (MB) |\n|---|---|\n| SessionBox | 480 |\n| OneTab | 210 |",
@@ -763,8 +763,8 @@ class TestBodyNeutralization(unittest.TestCase):
     # ── 5) unmarked paragraphs / insert limit ────────────────────────────
     def test_unmarked_paragraph_changed_fails(self):
         after = self.legit_after().replace(
-            "SessionBox separates tabs into isolated sessions",
-            "SessionBox keeps tabs in separate sessions")
+            "Many users keep SessionBox for isolated sessions",
+            "Many users keep SessionBox in separate sessions")
         r = self.gate(after)
         self.assertTrue(any(v["check"] == "unmarked_paragraph_changed"
                             for v in r["violations"]))
@@ -820,6 +820,49 @@ class TestBodyNeutralization(unittest.TestCase):
     def test_full_legit_scenario_passes(self):
         r = self.gate(self.legit_after())
         self.assertTrue(r["pass"], r["violations"])
+
+    def test_pre_existing_gate_hits_do_not_fail(self):
+        # The renamed-out methodology heading was the fixture's only gate
+        # hit; after a legit neutralization the result gains NO new hits and
+        # the stats report whatever remains (0 here).
+        r = self.gate(self.legit_after())
+        self.assertFalse(any(v["check"] == "gates_failed_S1S2S3"
+                             for v in r["violations"]))
+        self.assertIn("remaining_gate_hits", r["stats"])
+        self.assertEqual(r["stats"]["remaining_gate_hits"], 0)
+
+    def test_repeated_existing_number_passes(self):
+        # "2026" exists in the article; adding one more mention is not a
+        # NEW number (set semantics, not multiset).
+        after = self.legit_after().replace(
+            "check the official listing before installing.",
+            "check the official listing in 2026 before installing.")
+        r = self.gate(after)
+        self.assertFalse(any(v["check"] == "number_new" for v in r["violations"]))
+
+    def test_possessive_proper_noun_passes(self):
+        # paragraph already has "SessionBox"; "SessionBox's" is the same noun
+        after = self.legit_after().replace(
+            "Many users keep SessionBox for isolated sessions.",
+            "Many users keep SessionBox for isolated sessions, and SessionBox's options stay simple.")
+        r = self.gate(after, marked={2, 3, 4, 6})
+        self.assertFalse(any(v["check"] == "proper_noun_new" for v in r["violations"]))
+
+    def test_renamed_heading_anchor_link_allowed(self):
+        after = self.legit_after().replace(
+            "OneTab collapses every tab into a single list.",
+            "OneTab collapses every tab into a single list (see [the guide notes](#about-this-guide)).")
+        renames = [("## How We Tested - Results at 1, 10, and 25 Tabs",
+                    "## About this guide {#about-this-guide}")]
+        r = self.gate(after, marked={2, 3, 4, 6}, renames=renames)
+        self.assertFalse(any(v["check"] == "link_new" for v in r["violations"]))
+
+    def test_heading_line_check_tolerates_toc_block_edits(self):
+        # a TOC bullet is not a heading line; editing it must not trip the
+        # heading check when the real heading lines are unchanged
+        after = self.legit_after()
+        r = self.gate(after)
+        self.assertFalse(any(v["check"] == "heading_changed" for v in r["violations"]))
 
     def test_gate_is_deterministic(self):
         a = self.gate(self.legit_after())

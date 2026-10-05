@@ -13,7 +13,10 @@ FAILS if any of the following happens:
      owner-approved "How We Tested" -> "About this guide" conversion);
   5. any paragraph that is NOT marked as editable changed;
   6. the body lost more than `word_drop_limit_pct` percent of its words;
-  7. the fabrication gates (S1/S2/S3) fail on the result.
+  7. the fabrication gates (S1/S2/S3) gain NEW hits on the result
+     (hits(after) must stay within hits(before) — pre-existing hits on
+     lines the editor cannot touch, like FAQ question headings, are
+     reported in stats but do not fail the gate).
 
 Pure code — no model calls. The gate only sees BODY text (frontmatter is
 stripped by the caller).
@@ -92,6 +95,10 @@ def _proper_nouns(block: str) -> Counter:
             core = raw.strip(_TOKEN_TRIM)
             if sentence_initial or not core or core == "I":
                 continue
+            # possessives: "uBlock Origin's" counts as "uBlock Origin"
+            core = re.sub(r"['\u2019]s$", "", core, flags=re.I)
+            if not core:
+                continue
             if _CAMEL_RE.fullmatch(core) or _TITLE_RE.fullmatch(core):
                 found.append(core)
     return Counter(found)
@@ -102,8 +109,8 @@ def _links(text: str) -> Counter:
                    for m in _LINK_RE.finditer(text))
 
 
-def _heading_blocks(blocks: Sequence[str]) -> List[str]:
-    return [b for b in blocks if _HEADING_RE.match(b.splitlines()[0])]
+def _heading_lines(body: str) -> List[str]:
+    return [l for l in body.splitlines() if _HEADING_RE.match(l)]
 
 
 def _faq_questions(body: str) -> List[str]:
@@ -188,23 +195,25 @@ def body_neutralization_gate(
             "detail": f"{inserted} new/rewritten after-paragraphs, allowed {allowed_new_paragraphs}",
         })
 
-    # 1) numbers / percentages / versions — new ones anywhere in the result
+    # 1) numbers / percentages / versions — new TOKENS anywhere in the
+    #    result (set semantics: a repeated mention of an existing number is
+    #    not a new number).
     nb, na = _numbers(before_body), _numbers(after_body)
-    new_nums = na - nb
+    new_nums = set(na) - set(nb)
     if new_nums:
         violations.append({
             "check": "number_new",
             "detail": f"new number token(s): {sorted(set(new_nums))[:8]}",
         })
     npb, npa = _percents(before_body), _percents(after_body)
-    new_pcts = npa - npb
+    new_pcts = set(npa) - set(npb)
     if new_pcts:
         violations.append({
             "check": "percent_new",
             "detail": f"new percentage(s): {sorted(set(new_pcts))[:8]}",
         })
     vb, va = _versions(before_body), _versions(after_body)
-    new_vs = va - vb
+    new_vs = set(va) - set(vb)
     if new_vs:
         violations.append({
             "check": "version_new",
@@ -220,9 +229,8 @@ def body_neutralization_gate(
             continue
         if tag == "replace" and len(b_chunk) == len(a_chunk):
             for bp, ap in zip(b_chunk, a_chunk):
-                extra = _proper_nouns(ap) - _proper_nouns(bp)
-                extra = Counter({k: v for k, v in extra.items()
-                                 if k not in allow_pn})
+                extra = (set(_proper_nouns(ap)) - set(_proper_nouns(bp))
+                         - set(allow_pn))
                 if extra:
                     violations.append({
                         "check": "proper_noun_new",
@@ -232,13 +240,11 @@ def body_neutralization_gate(
                     })
         else:
             # insert / unequal replace — op-level comparison
-            before_pn = Counter()
+            before_pn = set()
             for b in b_chunk:
-                before_pn.update(_proper_nouns(b))
+                before_pn |= set(_proper_nouns(b))
             for a in a_chunk:
-                extra = _proper_nouns(a) - before_pn
-                extra = Counter({k: v for k, v in extra.items()
-                                 if k not in allow_pn})
+                extra = set(_proper_nouns(a)) - before_pn - set(allow_pn)
                 if extra:
                     violations.append({
                         "check": "proper_noun_new",
@@ -246,17 +252,25 @@ def body_neutralization_gate(
                                   f"in inserted/new block {a.splitlines()[0][:80]!r}",
                     })
 
-    # 3) new links
+    # 3) new links (a renamed heading's internal anchor is allowed — the
+    #    TOC entry has to follow the owner-mandated rename)
     lb, la = _links(before_body), _links(after_body)
-    new_links = la - lb
+    allowed_targets = set()
+    for _old_h, new_h in allow_renames:
+        m = re.search(r"\{#([^}]+)\}", new_h)
+        if m:
+            allowed_targets.add("#" + m.group(1))
+    new_links = {t for t in set(la) - set(lb) if t not in allowed_targets}
     if new_links:
         violations.append({
             "check": "link_new",
             "detail": f"new link target(s): {sorted(set(new_links))[:6]}",
         })
 
-    # 4) structure: headings (with explicit renames), images, table rows, FAQ
-    hb, ha = _heading_blocks(ab), _heading_blocks(abx)
+    # 4) structure: heading LINES (with explicit renames), images, table
+    #    rows, FAQ. Lines (not blocks): TOC blocks often merge a bullet list
+    #    with the next heading, so block-level comparison would misreport.
+    hb, ha = _heading_lines(before_body), _heading_lines(after_body)
     cb, ca = Counter(hb), Counter(ha)
     for old, new in allow_renames:
         if cb.get(old, 0) > 0 and ca.get(new, 0) > 0:
@@ -303,13 +317,27 @@ def body_neutralization_gate(
             "detail": f"body lost {drop_pct:.1f}% of its words (limit {word_drop_limit_pct}%)",
         })
 
-    # 7) fabrication gates on the result (S1/S2/S3)
+    # 7) fabrication gates on the result (S1/S2/S3). The neutralization must
+    # not INTRODUCE gate hits: hits(after) must be a subset of hits(before).
+    # Pre-existing hits on lines the editor is forbidden to touch (e.g. FAQ
+    # question headings like "Can I use ...?" matching the first-person
+    # patterns) stay visible in stats but do not fail the gate.
     from .fabrication import fabrication_gate
-    g = fabrication_gate(after_body)
-    if not g.get("pass", False):
+    gb, ga = fabrication_gate(before_body), fabrication_gate(after_body)
+
+    def _hitset(g):
+        out = set()
+        for sev in ("S1", "S2", "S3"):
+            for h in g.get(sev, []):
+                out.add((sev, str(h.get("pattern") or h.get("trigger")),
+                         (h.get("match") or h.get("sample") or h.get("sentence") or "")[:80]))
+        return out
+
+    new_hits = _hitset(ga) - _hitset(gb)
+    if new_hits:
         violations.append({
             "check": "gates_failed_S1S2S3",
-            "detail": f"failed severities: {g.get('failed_severities')}",
+            "detail": f"new gate hit(s) on the result: {sorted(new_hits)[:4]}",
         })
 
     return {
@@ -325,5 +353,6 @@ def body_neutralization_gate(
             "rewritten": rewritten,
             "deleted": deleted,
             "inserted": inserted,
+            "remaining_gate_hits": len(_hitset(ga)),
         },
     }
