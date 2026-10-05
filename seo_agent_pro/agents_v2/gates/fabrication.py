@@ -48,6 +48,18 @@ S3 refinements (owner briefs 2026-10-04):
 Gate rule: the article FAILS if ANY S1 or S2 pattern matches, or if ANY S3
 accusation lacks an adjacent source link.
 
+S1 extension WIRED (owner approval 2026-10-05, item 1): the 6 candidate
+patterns proposed in DRAFT PR #483 are now active — fabrication_gate()
+iterates S1_PATTERNS + S1_PROPOSED_PATTERNS. They stay a separate tuple so
+per-pattern provenance remains visible in reports and tests.
+
+Frontmatter honesty gate (owner brief 2026-10-05, item 1): task G proved
+the body-only gate is blind to marketing copy — the memory-saver article
+has S1=0 body while title/meta/excerpt carry "9 Tested Fixes", "We
+tested", "Real numbers inside". frontmatter_honesty_gate() scans ONLY the
+four fields (title, seo_title, meta_description, excerpt) with its own
+pattern set. Body scanning stays fabrication_gate()'s job — call both.
+
 Documented exception (the only one): a sentence inside a blockquote
 ("> ...") that itself carries a source link is treated as a cited quotation,
 not as first-hand fabrication. This is deliberately conservative — the link
@@ -56,7 +68,10 @@ exception: an excused blockquote line is never flagged.
 
 Public API:
     fabrication_gate(body: str) -> dict
-    SEVERITIES / S1_PATTERNS / S2_PATTERNS / S3 config (introspectable)
+    frontmatter_honesty_gate(fields: dict) -> dict   # title/seo_title/
+        meta_description/excerpt only
+    SEVERITIES / S1_PATTERNS / S1_PROPOSED_PATTERNS / S2_PATTERNS / S3
+        config / FM_HONESTY_PATTERNS / FM_FIELDS (introspectable)
 """
 import re
 from typing import Dict, List, Tuple
@@ -92,6 +107,74 @@ S1_PATTERNS: List[Tuple[str, str]] = [
     ("survey_n",         r"survey\s*\(\s*n\s*="),
     ("survey_of_n",      r"\bsurvey of\s+\d+"),
 ]
+
+# ─────────────────────────────────────────────────────────────
+# S1 PROPOSED EXTENSION — WIRED (owner approval 2026-10-05, item 1)
+# ─────────────────────────────────────────────────────────────
+# The 6 patterns proposed on 2026-10-04 (DRAFT PR #483, seeded FP sample
+# reviewed) are now ACTIVE: fabrication_gate() scans S1_PATTERNS plus this
+# tuple. Kept separate from S1_PATTERNS so reports/tests can attribute a
+# hit to the extension. Patterns themselves are unchanged from the
+# approved draft — same names, same regexes, same order.
+S1_PROPOSED_PATTERNS: List[Tuple[str, str]] = [
+    ("in_my_our_testing",  r"\bin (?:my|our) testing\b"),
+    ("during_after_testing", r"\b(?:during|after) (?:my|our) testing\b"),
+    ("my_our_tests",       r"\b(?:my|our) tests?\b"),
+    ("i_verbs",            r"\bI (?:measured|ran|threw|installed)\b"),
+    ("i_found_that",       r"\bI found that\b"),
+    ("in_testing_comma",   r"\bin testing,"),
+]
+
+# ─────────────────────────────────────────────────────────────
+# FRONTMATTER HONESTY — the 4 marketing fields (owner brief 2026-10-05)
+# ─────────────────────────────────────────────────────────────
+# Owner's exact list: tested / we tested / I tested / hands-on /
+# real numbers / benchmark(ed) / our tests / lab-tested.
+# Notes:
+#   * fm_tested uses \b so "untested"/"contested" do NOT match;
+#   * fm_benchmarked matches benchmark|benchmarked per the brief — the
+#     PLURAL noun "benchmarks" (third-party data) deliberately does not
+#     match, same as the brief's "benchmark(ed)";
+#   * fm_i_tested is case-INSENSITIVE like the rest: titles use Title
+#     Case ("I Tested …"), so a case-sensitive "I tested" would miss
+#     them; the \b guards already exclude "it tested"/"is tested";
+#   * fm_our_tests is plural-only per the brief ("our test suite" prose
+#     stays clean; "Our Tests Show ..." flags).
+FM_FIELDS: Tuple[str, ...] = ("title", "seo_title", "meta_description", "excerpt")
+
+FM_HONESTY_PATTERNS: List[Tuple[str, str]] = [
+    ("fm_tested",       r"\btested\b"),
+    ("fm_we_tested",    r"\bwe tested\b"),
+    ("fm_i_tested",     r"\bI tested\b"),
+    ("fm_hands_on",     r"\bhands[- ]on\b"),
+    ("fm_real_numbers", r"\breal numbers\b"),
+    ("fm_benchmarked",  r"\bbenchmark(?:ed)?\b"),
+    ("fm_our_tests",    r"\bour tests\b"),
+    ("fm_lab_tested",   r"\blab[- ]tested\b"),
+]
+
+
+def frontmatter_honesty_gate(fields: Dict[str, str]) -> Dict:
+    """Scan ONLY the four marketing fields for first-hand testing claims.
+
+    Pure regex — no model calls. Fields outside FM_FIELDS (slug, author,
+    body, …) are ignored: body claims belong to fabrication_gate(). A field
+    matches when ANY FM_HONESTY_PATTERNS regex hits its value.
+
+    Returns {"pass": bool, "hits": [{field, pattern, match, sample}]}.
+    """
+    hits: List[Dict[str, str]] = []
+    for field in FM_FIELDS:
+        value = (fields.get(field) or "").strip()
+        if not value:
+            continue
+        for name, rx in FM_HONESTY_PATTERNS:
+            m = re.search(rx, value, re.IGNORECASE)
+            if m:
+                hits.append({"field": field, "pattern": name,
+                             "match": m.group(0)[:60],
+                             "sample": re.sub(r"\s+", " ", value).strip()[:160]})
+    return {"pass": not hits, "hits": hits}
 
 # ─────────────────────────────────────────────────────────────
 # S2 — prompt/UI leakage and structural damage
@@ -245,7 +328,9 @@ def fabrication_gate(body: str) -> Dict:
     Returns {pass, failed_severities, S1, S2, S3} where each Sx is a list of
     {pattern, samples(≤3)} / {product, trigger, sentence} entries."""
     s1_hits, s2_hits = [], []
-    for name, rx in S1_PATTERNS:
+    # WIRED per owner approval 2026-10-05: active S1 = base patterns + the
+    # approved proposed extension. Same scanning semantics for both tuples.
+    for name, rx in S1_PATTERNS + S1_PROPOSED_PATTERNS:
         # Fabrication phrasing is flagged regardless of sentence position
         # (mid-sentence "we tested" vs leading "We tested"), so S1 compiles
         # case-insensitively — EXCEPT "certified": the fake-bio signal is the

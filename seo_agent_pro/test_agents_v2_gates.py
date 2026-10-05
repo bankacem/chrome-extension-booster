@@ -9,7 +9,8 @@ import re
 import unittest
 
 from seo_agent_pro.agents_v2.gates import (
-    S1_PATTERNS, S2_PATTERNS, fabrication_gate,
+    S1_PATTERNS, S2_PATTERNS, S1_PROPOSED_PATTERNS, fabrication_gate,
+    FM_FIELDS, FM_HONESTY_PATTERNS, frontmatter_honesty_gate,
 )
 
 # Per-pattern positive probes: each MUST be flagged.
@@ -254,6 +255,156 @@ class TestS3Narrowed(unittest.TestCase):
         body = ("Honey injected codes into checkout pages and tracked users "
                 "across sites.")
         self.assertNotIn("S3", fabrication_gate(body)["failed_severities"])
+
+
+class TestS1ProposedWired(unittest.TestCase):
+    """Owner approval 2026-10-05 (item 1): the proposed S1 extension is now
+    WIRED — fabrication_gate() flags these phrasings and attributes the hit
+    to the proposed pattern name. The tuple stays separate from S1_PATTERNS
+    for provenance."""
+
+    PROBES = {
+        "in_my_our_testing":   "In my testing, the pop-up blocker never slipped.",
+        "during_after_testing": "During our testing the fan never spun up.",
+        "my_our_tests":        "My tests covered 50 sites over two weeks.",
+        "i_verbs":             "I measured a 22% drop in RAM usage.",
+        "i_found_that":        "I found that dark mode uses less battery.",
+        "in_testing_comma":    "In testing, three candidates failed outright.",
+    }
+
+    def test_each_proposed_pattern_matches(self):
+        import re as _re
+        by_name = dict(S1_PROPOSED_PATTERNS)
+        self.assertEqual(set(by_name), set(self.PROBES))
+        for name, text in self.PROBES.items():
+            self.assertTrue(_re.search(by_name[name], text, _re.I), msg=name)
+
+    def test_proposed_names_are_distinct_from_active_names(self):
+        active = {name for name, _ in S1_PATTERNS}
+        proposed = {name for name, _ in S1_PROPOSED_PATTERNS}
+        self.assertEqual(active & proposed, set())
+
+    def test_gate_flags_proposed_phrasings(self):
+        proposed = {name for name, _ in S1_PROPOSED_PATTERNS}
+        for name, text in self.PROBES.items():
+            r = fabrication_gate(text)
+            self.assertIn("S1", r["failed_severities"], msg=text)
+            hit_names = {h["pattern"] for h in r["S1"]}
+            self.assertIn(name, hit_names,
+                          f"gate must attribute {name} to the wired proposal")
+            # every hit on these single-sentence probes belongs to an
+            # approved pattern (active or proposed), never to an unknown one
+            self.assertTrue(hit_names <= proposed |
+                            {n for n, _ in S1_PATTERNS}, msg=text)
+
+    def test_wired_union_is_scanned(self):
+        # the gate iterates the CONCATENATION, in order, base first
+        self.assertEqual(len(S1_PATTERNS), 26)
+        self.assertEqual(len(S1_PROPOSED_PATTERNS), 6)
+
+
+class TestFrontmatterHonesty(unittest.TestCase):
+    """Owner brief 2026-10-05 item 1: the four marketing fields
+    (title, seo_title, meta_description, excerpt) get their own honesty
+    gate with the owner's exact pattern list. One positive + one legitimate
+    negative probe per pattern, plus field-attribution tests."""
+
+    POS = {
+        "fm_tested":       "9 Tested Fixes for Chrome High Memory Usage",
+        "fm_we_tested":    "We Tested the Top 5 YouTube to MP3 Extensions",
+        "fm_i_tested":     "I Tested Chrome Extensions on Android for a Week",
+        "fm_hands_on":     "Hands-On With the New Tab Manager Extensions",
+        "fm_real_numbers": "Real Numbers Inside: Chrome Memory Usage in 2026",
+        "fm_benchmarked":  "Benchmarked: The Fastest Adblock Extensions of 2026",
+        "fm_our_tests":    "Our Tests Show Which Extensions Slow Chrome Down",
+        "fm_lab_tested":   "Lab-Tested Memory Savers for Low-End PCs",
+    }
+    NEG = {
+        "fm_tested":       "Chrome Memory Saver: What It Does and How to Turn It On",
+        "fm_we_tested":    "What We Know About Chrome's Memory Saver Mode",
+        "fm_i_tested":     "This store extension is tested by millions of users",
+        "fm_hands_on":     "Hands-Off Settings: Chrome's Automatic Memory Saver",
+        "fm_real_numbers": "Real Examples of Chrome Shortcut Customization",
+        # plural noun "benchmarks" = third-party data, NOT the claim form
+        "fm_benchmarked":  "CPU benchmarks published by the vendor show modest gains",
+        # singular "our test" stays clean per the brief's "our tests"
+        "fm_our_tests":    "Read our test methodology for the full criteria",
+        # "Lab results" is cited third-party data, not "lab-tested"
+        "fm_lab_tested":   "Lab results from AV-Comparatives are cited in this guide",
+    }
+
+    def test_pattern_set_matches_owner_brief(self):
+        self.assertEqual(
+            [n for n, _ in FM_HONESTY_PATTERNS],
+            ["fm_tested", "fm_we_tested", "fm_i_tested", "fm_hands_on",
+             "fm_real_numbers", "fm_benchmarked", "fm_our_tests",
+             "fm_lab_tested"])
+        self.assertEqual(FM_FIELDS,
+                         ("title", "seo_title", "meta_description", "excerpt"))
+
+    def _hits(self, fields):
+        return frontmatter_honesty_gate(fields)["hits"]
+
+    def test_positive_and_legitimate_negative_per_pattern(self):
+        for name in self.POS:
+            pos_hits = [h["pattern"] for h in self._hits({"title": self.POS[name]})]
+            self.assertIn(name, pos_hits, f"FM/{name} not flagged on positive probe")
+            neg_hits = [h["pattern"] for h in self._hits({"title": self.NEG[name]})]
+            self.assertNotIn(name, neg_hits,
+                             f"FM/{name} false-positived on legitimate negative")
+
+    def test_word_boundary_excludes_untested(self):
+        hits = [h["pattern"] for h in self._hits({"title": "Untested Chrome Features You Can Still Enable"})]
+        self.assertNotIn("fm_tested", hits)
+
+    def test_each_of_the_four_fields_is_scanned(self):
+        for field in FM_FIELDS:
+            hits = self._hits({field: "We Tested 9 Memory Fixes"})
+            pairs = {(h["field"], h["pattern"]) for h in hits}
+            # the claim is attributed to the scanned field, and the same
+            # value fires both the specific ("we tested") and the generic
+            # ("tested") patterns — both must carry the field name
+            self.assertEqual({f for f, _ in pairs}, {field}, msg=field)
+            self.assertIn((field, "fm_we_tested"), pairs, msg=field)
+            self.assertIn((field, "fm_tested"), pairs, msg=field)
+
+    def test_non_frontmatter_fields_are_ignored(self):
+        r = frontmatter_honesty_gate({
+            "slug": "9-tested-fixes-we-tested-chrome",
+            "author": "I tested this",
+            "body": "Hands-on tested content lives in the body gate",
+            "tags": "our tests, benchmarks",
+        })
+        self.assertEqual(r, {"pass": True, "hits": []})
+
+    def test_clean_honest_frontmatter_passes(self):
+        r = frontmatter_honesty_gate({
+            "title": "Best Memory Saver Extensions for Chrome (2026 Guide)",
+            "seo_title": "Best Memory Saver Extensions for Chrome 2026",
+            "meta_description": "Compared the top Chrome memory saver extensions "
+                                "based on public information and vendor documentation.",
+            "excerpt": "What to know before picking a Chrome memory saver in 2026.",
+        })
+        self.assertTrue(r["pass"])
+        self.assertEqual(r["hits"], [])
+
+    def test_real_world_blind_spot_now_caught(self):
+        # the exact class task G found: body clean, marketing fields carry
+        # the claims — the FM gate must catch all three shapes
+        r = frontmatter_honesty_gate({
+            "title": "How to Fix Chrome High Memory Usage: 9 Tested Fixes (2026)",
+            "meta_description": "We tested every fix and share real numbers inside.",
+            "excerpt": "Our tests covered 9 fixes with lab-tested results.",
+        })
+        self.assertFalse(r["pass"])
+        pats = {h["pattern"] for h in r["hits"]}
+        self.assertTrue({"fm_tested", "fm_we_tested", "fm_real_numbers",
+                         "fm_our_tests", "fm_lab_tested"} <= pats)
+
+    def test_empty_and_missing_fields_pass(self):
+        self.assertEqual(frontmatter_honesty_gate({}), {"pass": True, "hits": []})
+        self.assertEqual(frontmatter_honesty_gate({"title": ""}),
+                         {"pass": True, "hits": []})
 
 
 class TestS3Negation(unittest.TestCase):
