@@ -2,12 +2,10 @@
 seo_title: "Best Browsers for Chrome Extensions on Android"
 id: d8201fab-2d4b-4a82-927c-acfa391d3dbb
 title: >-
-  Best Browsers for Chrome Extensions on Android in 2026: Kiwi vs Yandex vs
-  Lemur
+  Best Browsers for Chrome Extensions on Android (2026)
 slug: chrome-extensions-on-android-2026-guide
 excerpt: >-
-  Chrome on Android does not support extensions. I tested Kiwi, Yandex, and
-  Lemur browsers to find which one runs Chrome extensions best on mobile.
+  Chrome on Android does not support extensions — compare Kiwi, Yandex, and Lemur browsers to see which runs Chrome extensions best on mobile.
 description: >-
   Chrome on Android does not support extensions. I tested Kiwi, Yandex, and
   Lemur browsers to find which one runs Chrome extensions best on mobile.
@@ -19,8 +17,7 @@ keywords:
   - kiwi browser extensions
   - android browser with extensions
 meta_description: >-
-  Chrome on Android does not support extensions. I tested Kiwi, Yandex, and
-  Lemur browsers with 10 Chrome extensions each. Here is which works best.
+  Chrome on Android does not support extensions. A 2026 comparison of Kiwi, Yandex, and Lemur browsers for running Chrome extensions on mobile.
 status: published
 published_at: '2026-05-22T02:15:00.33+00:00'
 scheduled_at: '2026-05-22T02:15:00+00:00'

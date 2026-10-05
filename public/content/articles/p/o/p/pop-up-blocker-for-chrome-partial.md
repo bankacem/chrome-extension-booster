@@ -9,7 +9,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - free pop up blocker for google chrome
-meta_description: "A free pop up blocker for Google Chrome that actually works? We tested the top options against pop-unders, overlays, and notification spam — see the winner."
+meta_description: "Looking for a free pop up blocker for Google Chrome? A 2026 guide to options that handle pop-unders, overlays, and notification spam."
 status: published
 published_at: '2026-03-12T09:00:03.771+00:00'
 scheduled_at: '2026-03-12T09:00:00+00:00'
