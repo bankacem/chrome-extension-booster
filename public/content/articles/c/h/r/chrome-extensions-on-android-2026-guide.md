@@ -9,8 +9,8 @@ excerpt: >-
   Chrome on Android does not support extensions. I tested Kiwi, Yandex, and
   Lemur browsers to find which one runs Chrome extensions best on mobile.
 description: >-
-  Chrome on Android does not support extensions. I tested Kiwi, Yandex, and
-  Lemur browsers to find which one runs Chrome extensions best on mobile.
+  Chrome on Android does not support extensions — compare Kiwi, Yandex, and
+  Lemur browsers to see which runs Chrome extensions best on mobile.
 featured_image: /content/images/chrome-extensions-on-android-2026-guide/featured.webp
 category: Productivity & Tools
 tags: []
