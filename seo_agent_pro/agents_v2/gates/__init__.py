@@ -8,5 +8,8 @@ from .fabrication import (  # noqa: F401
     S1_PROPOSED_PATTERNS,
     S2_PATTERNS,
     PRODUCTS,
+    FM_FIELDS,
+    FM_HONESTY_PATTERNS,
     fabrication_gate,
+    frontmatter_honesty_gate,
 )
