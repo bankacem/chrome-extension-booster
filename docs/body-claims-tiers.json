@@ -2,12 +2,22 @@
  "generated_at": "2026-10-05",
  "purpose": "Tier classification of the 398 published articles whose BODY carries a testing claim (S1 old+new union, merged-gate parity #483). Read-only analysis — no body text is modified.",
  "tier_rule": {
-  "tier_1": "gsc_impressions >= 500 OR inbound_internal_links >= 14 OR affected_words_pct >= 30",
-  "tier_2": "all remaining body-claim articles",
+  "version": "v2 (owner directive 2026-10-05 item 4)",
+  "tier_1": "gsc_impressions >= 500 OR inbound_internal_links >= 14 — one declared criterion, capped implicitly at 21 articles (<= 30)",
+  "tier_2": "all remaining body-claim articles (the new Tier 1 excludes every Tier-2 article by construction)",
   "thresholds": {
    "impressions": 500,
-   "inbound_links": 14,
-   "affected_pct": 30.0
+   "inbound_links": 14
+  },
+  "note": "the v1 affected_words_pct >= 30 clause is DROPPED per the owner's single-criterion instruction",
+  "superseded_v1_rule": {
+   "tier_1": "gsc_impressions >= 500 OR inbound_internal_links >= 14 OR affected_words_pct >= 30",
+   "tier_2": "all remaining body-claim articles",
+   "thresholds": {
+    "impressions": 500,
+    "inbound_links": 14,
+    "affected_pct": 30.0
+   }
   }
  },
  "methodology": {
@@ -19,15 +29,15 @@
  },
  "counts": {
   "body_claim_articles": 398,
-  "tier_1": 152,
-  "tier_2": 246,
+  "tier_1": 21,
+  "tier_2": 377,
   "total_marked_paragraph_lines": 8561,
   "total_affected_words": 468563,
   "tier_1_rule_breakdown": {
    "by_impressions": 4,
-   "by_inbound": 19,
-   "by_pct": 137
-  }
+   "by_inbound": 19
+  },
+  "note": "total_marked_paragraph_lines / total_affected_words are corpus-wide (all 398) and unchanged from v1; tier_1_rule_breakdown now reflects the v2 criterion"
  },
  "tier_1_priority_order": [
   "adblock-chrome-android-complete-guide-2026",
@@ -35,155 +45,24 @@
   "best-free-popup-blocker-for-chrome-2026",
   "unlocking-the-power-of-google-tag-assistant-extension",
   "best-memory-saver-extension-for-chrome-4",
-  "download-instagram-reels-chrome-saving-your-favorite-videos",
-  "protecting-your-online-security",
-  "understanding-the-extension-notion",
-  "unlocking-the-power-of-google-chat-extension",
-  "discover-the-best-spreadsheets-software-for-small-business",
-  "extension-chrome-presearch-14",
-  "rss-reader-chrome-extensions-2026",
-  "best-chrome-extensions-for-online-safety",
-  "unlock-secure-browsing-the-avast-password-extension-chrome-review",
-  "a-chrome-screenshot-extension-worth-installing",
-  "extension-adblock-telephone-4",
-  "the-power-of-1password-chrome-extension",
-  "download-instagram-stories-extension-chrome",
-  "ai-summary-chrome-extensions",
-  "alternatives-to-the-chrome-web-store",
-  "safe-video-downloader-for-chrome",
-  "extension-adblock-chrome-android-2",
-  "watch-party-chrome-extensions",
-  "extension-dashlane-opera-1",
-  "pdf-tools-chrome-extensions",
-  "unlock-lightning-fast-video-playback-extension-accelerer-video",
-  "unlocking-the-power-of-excel-in-google-chrome-excel-extensions",
-  "maximizing-laptop-battery-life-chrome-battery-saver-extension",
-  "extension-chrome-code-1",
-  "extension-to-chrome-browser-10",
-  "the-power-of-extension-chrome-google-translate",
-  "unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome",
-  "a-free-pop-up-blocker-extension-for-chrome",
-  "screenshot-tool-chrome-vs-5",
-  "unlocking-online-privacy-ghostery-for-chrome-android",
-  "unlocking-the-power-of-yandex-browser-on-chrome-web-store",
-  "the-best-adblock-for-android-chrome",
-  "unlocking-the-full-potential-of-your-browser-extensiontocom",
-  "boosting-online-security-and-convenience",
-  "alidropship-extension-full-guide",
-  "download-chrome-extension-opera-10",
-  "zoom-magnifier-chrome-extensions",
-  "monitor-chrome-ram-usage-guide",
-  "screen-recorder-chrome-extensions",
-  "5-privacy-extensions-for-chrome-mobile",
-  "unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome",
-  "deezer-extension-chrome-5",
-  "a-download-manager-extension-worth-installing",
-  "ultimate-chrome-ram-memory-management-guide",
-  "extensions-to-chrome-mobile-13",
-  "full-page-screenshot-chrome-comparison-7",
-  "ai-agent-browser-extensions-2026",
-  "a-game-changer-for-efficient-browsing",
-  "ghostery-vs-stands-adblocker",
-  "extension-bypass-chrome-enhancing-your-browsing-experience",
-  "unlocking-the-power-of-avast-password-chrome-secure-browsing",
-  "eagleget-extension-chrome-8",
-  "unlocking-enhanced-browser-security-kaspersky-chrome",
-  "windscribe-extension-to-chrome-9",
-  "chrome-passkeys-passwordless-guide-2026",
-  "session-isolation-multiple-accounts",
-  "weather-clock-chrome-extensions",
-  "unlock-ad-free-youtube-browsing-youtube-ad-blocker-extension-chrome",
-  "unlocking-the-power-of-extensionhub-enhancing-your-browser-experience",
-  "the-best-popup-blocker-for-chrome-in-2026",
-  "block-video-ads-chrome-extension",
-  "ublock-origin-vs-ghostery-for-chrome-android",
-  "easy-screenshot-chrome-guide",
-  "streamlining-your-linkedin-experience",
-  "supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
-  "mute-noisy-tabs-chrome",
-  "unlocking-efficiency-the-best-spreadsheets-software-for-small-business",
-  "best-free-adblocker-youtube-chrome",
-  "best-full-page-screenshot-chrome-extension-2026-free-no-login-required",
-  "best-anti-captcha-chrome-extension",
-  "unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide",
-  "unlocking-the-power-of-extension-microsoft-edge",
-  "best-browser-for-low-end-pc-2026",
-  "a-tab-suspender-extension-that-frees-up-ram",
-  "unlocking-the-full-potential-of-chrome-mobile",
-  "best-website-screenshot-extension-vs-standalone-app-comparison",
-  "enhancing-browser-security-with-norton-safe-web-chrome-a-comprehensive-guide",
-  "facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide",
-  "calendar-chrome-extensions",
-  "download-station-chrome-4",
-  "chrome-est-tres-lent",
-  "unlocking-the-power-of-the-avast-passwords-extension",
-  "unlocking-the-power-of-avast-extension-chrome",
-  "extension-chrome-deezer-8",
-  "best-adblock-browser-for-android-2026",
-  "effortlessly-manage-your-browser-export-extension-chrome",
-  "unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a",
-  "the-best-chrome-extension-for-android-tablet",
-  "pomodoro-focus-timer-chrome-extensions",
-  "unlocking-the-power-of-chrome-extensions-on-android-a-comprehensive-guide",
-  "extension-adblock-google-chrome-3",
-  "why-you-should-avoid-cloud-based-password-managers-2",
-  "how-to-block-youtube-ads-with-ghostery-extension",
-  "unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
-  "unlocking-ad-free-browsing-ad-block-chrome-android",
-  "chrome-extensions-complete-guide",
-  "unlocking-the-power-of-adblock-chrome-on-android",
-  "extension-chrome-capture-page-web",
-  "text-expander-chrome-extensions",
-  "unlocking-the-full-potential-of-youtube-with-tubebuddy-opera",
-  "history-search-chrome-extensions",
-  "enhancing-your-browsing-experience-with-avast-online-security-chrome",
-  "best-text-to-speech-chrome-extensions-2026",
-  "unlocking-online-security-the-power-of-avast-extension-google-chrome",
-  "extension-alidropship-5",
-  "unlocking-the-power-of-browser-extensions-extension-to",
-  "chrome-memory-saver-how-it-works",
-  "how-to-install-idm-extension-in-chrome-manually-2026",
-  "fast-screenshot-extension-tutorial-5",
-  "discover-the-best-privacy-extension-chrome",
-  "deezer-extension-4",
-  "boosting-browser-security-extensions",
-  "unlocking-the-power-of-extension-chrome-joko",
-  "cookie-consent-blocker-chrome",
-  "a-game-changer-for-productivity",
-  "how-to-install-ublock-origin-on-android-chrome",
-  "boosting-productivity-with-light-browser-extensions-for-slow-pc",
-  "extension-chrome-color-2",
-  "tts-chrome-5",
-  "best-note-taking-chrome-extensions-2026",
-  "optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
-  "screen-grab-chrome-2025-1",
-  "tab-counter-stats-chrome-extensions",
-  "using-dark-mode-on-quora-for-better-focus-4",
-  "identify-any-font-on-a-page-instantly",
-  "save-images-from-protected-sites-chrome",
-  "best-lightweight-popup-blocker-chrome",
-  "unlocking-the-power-of-extension-bsr-amazon-boosting-sales",
-  "best-chrome-extensions-google-meet",
-  "how-to-install-chrome-extensions-on-android-2026",
-  "unlocking-productivity-the-best-chrome-extensions-for-web-developers",
-  "how-to-fix-chrome-memory-2026",
-  "stop-wasting-time-typing-the-same-prompts",
-  "why-light-popup-blocker-is-better-than-heavy-adblockers-6",
-  "unlocking-the-power-of-meta-tags-chrome-extension-for-meta-tags",
-  "reddit-power-user-chrome-extensions",
-  "unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance",
+  "chrome-extensions-vs-web-apps-comparison",
   "unlocking-efficiency-the-best-productivity-tools-for-chrome-browser",
-  "save-pc-resources-with-chrome-tab-suspension",
-  "unlocking-peak-performance-browser-optimization-extensions",
+  "extension-chrome-presearch-14",
   "the-power-of-ghostery-extension-chrome-2026",
-  "why-you-need-an-antivirus-extension-for-chrome",
+  "unlocking-the-power-of-google-chat-extension",
+  "unlocking-peak-performance-browser-optimization-extensions",
+  "unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance",
+  "save-pc-resources-with-chrome-tab-suspension",
+  "screenshot-tools-chrome-comparison",
+  "unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs",
+  "stop-wasting-time-typing-the-same-prompts",
+  "best-chrome-extensions-for-online-safety",
   "chrome-extensions-on-android-2026-guide",
   "install-chrome-web-store-extensions-android",
-  "chrome-extensions-vs-web-apps-comparison",
-  "unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs",
-  "screenshot-tools-chrome-comparison"
+  "unlocking-online-security-the-power-of-avast-extension-google-chrome",
+  "why-you-need-an-antivirus-extension-for-chrome"
  ],
- "tier_1_priority_order_note": "priority = gsc_impressions DESC (null last) -> affected_words_pct DESC -> inbound_internal_links DESC -> slug ASC",
+ "tier_1_priority_order_note": "priority = gsc_impressions DESC (null last) -> inbound_internal_links DESC -> slug ASC; the v1 affected_pct tiebreak is dropped with the pct criterion",
  "rows": [
   {
    "slug": "1xbet-chrome-extension-review-2026",
@@ -202,7 +81,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "3cx-voip-chrome-extension",
@@ -225,12 +105,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "5-privacy-extensions-for-chrome-mobile",
    "live_url": "https://extensionto.com/blog/5-privacy-extensions-for-chrome-mobile",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5033,
    "claim_sentence_count": 63,
    "marked_paragraph_lines": 59,
@@ -249,12 +130,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "a-chrome-screenshot-extension-worth-installing",
    "live_url": "https://extensionto.com/blog/a-chrome-screenshot-extension-worth-installing",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4977,
    "claim_sentence_count": 53,
    "marked_paragraph_lines": 50,
@@ -272,12 +154,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "a-download-manager-extension-worth-installing",
    "live_url": "https://extensionto.com/blog/a-download-manager-extension-worth-installing",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5477,
    "claim_sentence_count": 37,
    "marked_paragraph_lines": 37,
@@ -297,12 +180,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "a-free-pop-up-blocker-extension-for-chrome",
    "live_url": "https://extensionto.com/blog/a-free-pop-up-blocker-extension-for-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4982,
    "claim_sentence_count": 49,
    "marked_paragraph_lines": 49,
@@ -322,12 +206,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "a-game-changer-for-efficient-browsing",
    "live_url": "https://extensionto.com/blog/a-game-changer-for-efficient-browsing",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5012,
    "claim_sentence_count": 32,
    "marked_paragraph_lines": 31,
@@ -345,12 +230,13 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "a-game-changer-for-productivity",
    "live_url": "https://extensionto.com/blog/a-game-changer-for-productivity",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3968,
    "claim_sentence_count": 21,
    "marked_paragraph_lines": 21,
@@ -368,12 +254,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "a-tab-suspender-extension-that-frees-up-ram",
    "live_url": "https://extensionto.com/blog/a-tab-suspender-extension-that-frees-up-ram",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6779,
    "claim_sentence_count": 41,
    "marked_paragraph_lines": 36,
@@ -393,7 +280,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "activate-dark-mode-on-wikipedia-for-night-reading-2",
@@ -414,7 +302,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "adblock-chrome-android-complete-guide-2026",
@@ -436,7 +325,8 @@
    ],
    "inbound_internal_links": 45,
    "worklist_v2_inbound": 45,
-   "gsc_impressions": 2488
+   "gsc_impressions": 2488,
+   "tier_v1": 1
   },
   {
    "slug": "adblock-not-working-on-chrome-fix",
@@ -456,7 +346,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "adblock-plus-vs-ublock-origin-2026",
@@ -477,7 +368,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "add-extension-to-chrome-7",
@@ -497,7 +389,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "adguard-dns-setup-guide-android-router-pc",
@@ -515,7 +408,8 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "adguard-vs-ghostery-2026-comparison",
@@ -533,7 +427,8 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "agenda-hero-chrome-extension-guide",
@@ -557,12 +452,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "ai-agent-browser-extensions-2026",
    "live_url": "https://extensionto.com/blog/ai-agent-browser-extensions-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4603,
    "claim_sentence_count": 36,
    "marked_paragraph_lines": 35,
@@ -582,7 +478,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "ai-formula-generator-excel-vs-google-sheets",
@@ -601,7 +498,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "ai-research-assistant-chrome-extensions",
@@ -622,12 +520,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "ai-summary-chrome-extensions",
    "live_url": "https://extensionto.com/blog/ai-summary-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5348,
    "claim_sentence_count": 49,
    "marked_paragraph_lines": 49,
@@ -645,7 +544,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "ajouter-extension-chrome-8",
@@ -667,12 +567,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "alidropship-extension-full-guide",
    "live_url": "https://extensionto.com/blog/alidropship-extension-full-guide",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5191,
    "claim_sentence_count": 50,
    "marked_paragraph_lines": 49,
@@ -693,7 +594,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "alishark-chrome-extension",
@@ -713,7 +615,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "alitools-extension-chrome",
@@ -734,12 +637,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "alternatives-to-the-chrome-web-store",
    "live_url": "https://extensionto.com/blog/alternatives-to-the-chrome-web-store",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5346,
    "claim_sentence_count": 54,
    "marked_paragraph_lines": 41,
@@ -756,7 +660,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "an-image-downloader-extension-for-chrome",
@@ -778,7 +683,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "android-chrome-adblocker",
@@ -802,7 +708,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "ant-video-downloader-chrome",
@@ -821,7 +728,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "anti-anti-adblock-chrome",
@@ -840,7 +748,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "anti-captcha-chrome",
@@ -859,7 +768,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "antidote-extension-chrome",
@@ -881,7 +791,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "article-1-ai-youtube-comment-generator",
@@ -900,7 +811,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "article-2-chatgpt-amazon-reviews",
@@ -919,7 +831,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "article-4-chatgpt-twitter-replies",
@@ -939,7 +852,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "article-7-ai-headline-generator",
@@ -959,7 +873,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "article1-best-free-password-manager",
@@ -975,7 +890,8 @@
    "patterns": [],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "article4-1password-review",
@@ -994,7 +910,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "article5-dashlane-features",
@@ -1013,7 +930,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "article8-protonpass-review",
@@ -1033,7 +951,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "article9-roboform-review",
@@ -1052,7 +971,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "audio-equalizer-chrome-extensions",
@@ -1075,7 +995,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "auto-currency-converter-chrome-extensions",
@@ -1097,7 +1018,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "auto-tab-discarder-vs-the-great-suspender",
@@ -1119,7 +1041,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "automating-business-reports-with-formula-builder",
@@ -1140,7 +1063,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "autotab-discard-vs-onetab",
@@ -1161,7 +1085,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "avast-online-security-chrome",
@@ -1183,7 +1108,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "batch-open-tabs-scheduled-chrome",
@@ -1205,12 +1131,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-adblock-browser-for-android-2026",
    "live_url": "https://extensionto.com/blog/best-adblock-browser-for-android-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 2578,
    "claim_sentence_count": 10,
    "marked_paragraph_lines": 10,
@@ -1227,7 +1154,8 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": 8,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "best-ai-blog-writer-chrome-extensions-2026",
@@ -1247,7 +1175,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-ai-chrome-extensions-2026",
@@ -1267,7 +1196,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-ai-tools-data-entry-automation-2026",
@@ -1286,7 +1216,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-ai-writing-assistants-for-gmail-2026",
@@ -1305,7 +1236,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-annotated-screenshot-chrome-5",
@@ -1326,12 +1258,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-anti-captcha-chrome-extension",
    "live_url": "https://extensionto.com/blog/best-anti-captcha-chrome-extension",
-   "tier": 1,
+   "tier": 2,
    "total_words": 2987,
    "claim_sentence_count": 24,
    "marked_paragraph_lines": 20,
@@ -1351,12 +1284,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "best-browser-for-low-end-pc-2026",
    "live_url": "https://extensionto.com/blog/best-browser-for-low-end-pc-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 2619,
    "claim_sentence_count": 10,
    "marked_paragraph_lines": 10,
@@ -1371,7 +1305,8 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": 6,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "best-chatgpt-extension-tools-for-chrome",
@@ -1395,7 +1330,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-chatgpt-folder-organizer-extensions",
@@ -1416,7 +1352,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-chrome-extension-download-files",
@@ -1440,7 +1377,8 @@
    ],
    "inbound_internal_links": 11,
    "worklist_v2_inbound": 11,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-chrome-extensions-for-note-taking",
@@ -1460,7 +1398,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-chrome-extensions-for-online-safety",
@@ -1480,7 +1419,8 @@
    ],
    "inbound_internal_links": 14,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "best-chrome-extensions-for-privacy-2026",
@@ -1500,7 +1440,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-chrome-extensions-for-social-media-managers",
@@ -1518,12 +1459,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-chrome-extensions-google-meet",
    "live_url": "https://extensionto.com/blog/best-chrome-extensions-google-meet",
-   "tier": 1,
+   "tier": 2,
    "total_words": 2413,
    "claim_sentence_count": 17,
    "marked_paragraph_lines": 13,
@@ -1542,7 +1484,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "best-chrome-privacy-extensions-2026-complete-guide",
@@ -1562,7 +1505,8 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": 6,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-chrome-screenshot-extensions-2026-complete-guide",
@@ -1580,7 +1524,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-color-picker-chrome-extension",
@@ -1603,7 +1548,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-dark-mode-chrome-extension",
@@ -1626,12 +1572,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-free-adblocker-youtube-chrome",
    "live_url": "https://extensionto.com/blog/best-free-adblocker-youtube-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4056,
    "claim_sentence_count": 30,
    "marked_paragraph_lines": 28,
@@ -1651,7 +1598,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
@@ -1673,7 +1621,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-free-popup-blocker-for-chrome-2026",
@@ -1691,12 +1640,13 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": null,
-   "gsc_impressions": 691
+   "gsc_impressions": 691,
+   "tier_v1": 1
   },
   {
    "slug": "best-full-page-screenshot-chrome-extension-2026-free-no-login-required",
    "live_url": "https://extensionto.com/blog/best-full-page-screenshot-chrome-extension-2026-free-no-login-required",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6322,
    "claim_sentence_count": 51,
    "marked_paragraph_lines": 48,
@@ -1715,7 +1665,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "best-idm-alternative-for-chrome",
@@ -1738,12 +1689,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-lightweight-popup-blocker-chrome",
    "live_url": "https://extensionto.com/blog/best-lightweight-popup-blocker-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 2257,
    "claim_sentence_count": 9,
    "marked_paragraph_lines": 8,
@@ -1760,7 +1712,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "best-memory-saver-extension-for-chrome-4",
@@ -1786,12 +1739,13 @@
    ],
    "inbound_internal_links": 16,
    "worklist_v2_inbound": 16,
-   "gsc_impressions": 491
+   "gsc_impressions": 491,
+   "tier_v1": 1
   },
   {
    "slug": "best-note-taking-chrome-extensions-2026",
    "live_url": "https://extensionto.com/blog/best-note-taking-chrome-extensions-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3885,
    "claim_sentence_count": 18,
    "marked_paragraph_lines": 17,
@@ -1808,7 +1762,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "best-ram-saving-extensions-2026",
@@ -1831,7 +1786,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-screenshot-extensions-for-chrome-1",
@@ -1851,12 +1807,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "best-text-to-speech-chrome-extensions-2026",
    "live_url": "https://extensionto.com/blog/best-text-to-speech-chrome-extensions-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3918,
    "claim_sentence_count": 16,
    "marked_paragraph_lines": 14,
@@ -1874,12 +1831,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "best-website-screenshot-extension-vs-standalone-app-comparison",
    "live_url": "https://extensionto.com/blog/best-website-screenshot-extension-vs-standalone-app-comparison",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5869,
    "claim_sentence_count": 41,
    "marked_paragraph_lines": 40,
@@ -1898,7 +1856,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "betterttv-google-chrome-guide",
@@ -1921,7 +1880,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "blackbox-ai-chrome-extension-guide",
@@ -1944,7 +1904,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "block-ads-youtube-app-android",
@@ -1960,12 +1921,13 @@
    "patterns": [],
    "inbound_internal_links": 9,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "block-video-ads-chrome-extension",
    "live_url": "https://extensionto.com/blog/block-video-ads-chrome-extension",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5797,
    "claim_sentence_count": 33,
    "marked_paragraph_lines": 32,
@@ -1983,7 +1945,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "bookmark-manager-chrome-guide",
@@ -2005,7 +1968,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "boost-your-online-presence",
@@ -2025,7 +1989,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "boosting-browser-performance-minimal-extensions",
@@ -2045,12 +2010,13 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": 8,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "boosting-browser-security-extensions",
    "live_url": "https://extensionto.com/blog/boosting-browser-security-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3693,
    "claim_sentence_count": 24,
    "marked_paragraph_lines": 23,
@@ -2066,12 +2032,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "boosting-online-security-and-convenience",
    "live_url": "https://extensionto.com/blog/boosting-online-security-and-convenience",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6073,
    "claim_sentence_count": 34,
    "marked_paragraph_lines": 34,
@@ -2085,12 +2052,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "boosting-productivity-with-light-browser-extensions-for-slow-pc",
    "live_url": "https://extensionto.com/blog/boosting-productivity-with-light-browser-extensions-for-slow-pc",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6604,
    "claim_sentence_count": 40,
    "marked_paragraph_lines": 38,
@@ -2107,12 +2075,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "calendar-chrome-extensions",
    "live_url": "https://extensionto.com/blog/calendar-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 7113,
    "claim_sentence_count": 29,
    "marked_paragraph_lines": 29,
@@ -2129,7 +2098,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "capture-screen-chrome-guide",
@@ -2148,7 +2118,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "capture-scrolling-webpages-as-png-or-pdf",
@@ -2169,7 +2140,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chatgpt-conversation-search-extension-2026",
@@ -2189,7 +2161,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chatgpt-export-chat-chrome-extension",
@@ -2212,7 +2185,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chatgpt-extension-chrome-guide",
@@ -2233,7 +2207,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chatgpt-for-google-sheets-extensions-2026",
@@ -2251,7 +2226,8 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chatgpt-search-history-extension-2026",
@@ -2269,7 +2245,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-autoscroll-reading-aids",
@@ -2291,7 +2268,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-cast-samsung-tv",
@@ -2310,7 +2288,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-command-palette-extensions",
@@ -2330,7 +2309,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-download-manager-guide",
@@ -2352,12 +2332,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-est-tres-lent",
    "live_url": "https://extensionto.com/blog/chrome-est-tres-lent",
-   "tier": 1,
+   "tier": 2,
    "total_words": 2877,
    "claim_sentence_count": 20,
    "marked_paragraph_lines": 16,
@@ -2376,7 +2357,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "chrome-extension-development-guide",
@@ -2396,7 +2378,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-extension-keyboard-shortcuts-not-working-fix",
@@ -2418,7 +2401,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-extensions-android-download",
@@ -2439,7 +2423,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-extensions-android-guide",
@@ -2459,12 +2444,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-extensions-complete-guide",
    "live_url": "https://extensionto.com/blog/chrome-extensions-complete-guide",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3289,
    "claim_sentence_count": 24,
    "marked_paragraph_lines": 20,
@@ -2482,7 +2468,8 @@
    ],
    "inbound_internal_links": 9,
    "worklist_v2_inbound": 9,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "chrome-extensions-for-gamers-guide",
@@ -2507,7 +2494,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-extensions-on-android-2026-guide",
@@ -2529,7 +2517,8 @@
    ],
    "inbound_internal_links": 14,
    "worklist_v2_inbound": 14,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "chrome-extensions-opera-guide",
@@ -2551,7 +2540,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-extensions-vs-web-apps-comparison",
@@ -2572,7 +2562,8 @@
    ],
    "inbound_internal_links": 60,
    "worklist_v2_inbound": 60,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "chrome-flags-for-performance-safe-ones",
@@ -2591,7 +2582,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-high-memory-usage-fix",
@@ -2613,12 +2605,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-memory-saver-how-it-works",
    "live_url": "https://extensionto.com/blog/chrome-memory-saver-how-it-works",
-   "tier": 1,
+   "tier": 2,
    "total_words": 2450,
    "claim_sentence_count": 18,
    "marked_paragraph_lines": 18,
@@ -2637,12 +2630,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "chrome-passkeys-passwordless-guide-2026",
    "live_url": "https://extensionto.com/blog/chrome-passkeys-passwordless-guide-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4476,
    "claim_sentence_count": 41,
    "marked_paragraph_lines": 41,
@@ -2660,7 +2654,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "chrome-pdf-viewer-guide",
@@ -2683,7 +2678,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-pop-up-blocker",
@@ -2706,7 +2702,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-popup-blocker-master-guide",
@@ -2729,7 +2726,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-printing-guide",
@@ -2752,7 +2750,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-privacy-extensions-worth-adding-today",
@@ -2771,7 +2770,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-samsung-smart-tv-casting-guide",
@@ -2794,7 +2794,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-screenshot-addon-comparison",
@@ -2816,7 +2817,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-screenshot-addon-guide",
@@ -2839,7 +2841,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-screenshot-addon-tutorial",
@@ -2860,7 +2863,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-screenshot-alternatives",
@@ -2880,7 +2884,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-screenshot-guide",
@@ -2903,7 +2908,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-screenshot-tools",
@@ -2923,7 +2929,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-screenshot-tutorial",
@@ -2942,7 +2949,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-vs-edge-vs-brave-ram-comparison",
@@ -2962,7 +2970,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-web-store-extensions-guide",
@@ -2983,7 +2992,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-web-store-firefox-extensions-guide",
@@ -3005,7 +3015,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrome-web-store-pc-guide",
@@ -3025,7 +3036,8 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chromecast-extension-google-chrome",
@@ -3046,7 +3058,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chromecast-mac-guide",
@@ -3066,7 +3079,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chromecast-plugin-chrome",
@@ -3086,7 +3100,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "chrometana-extension-review",
@@ -3107,7 +3122,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "claroread-chrome-extension",
@@ -3127,7 +3143,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "cleanweb-vs-total-adblock",
@@ -3149,7 +3166,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "clickclean-chrome-browser-cleaner",
@@ -3170,7 +3188,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "clickclean-google-chrome-review",
@@ -3193,7 +3212,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "clipboard-history-chrome-extension-guide",
@@ -3215,7 +3235,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "clipconverter-extension-chrome",
@@ -3236,7 +3257,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "color-picker-chrome-extensions",
@@ -3257,7 +3279,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "colorzilla-chrome-color-picker",
@@ -3278,7 +3301,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "comodo-chrome-guide",
@@ -3301,7 +3325,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "contentsquare-extension-chrome",
@@ -3324,7 +3349,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "control-youtube-playback-speed-in-chrome",
@@ -3345,12 +3371,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "cookie-consent-blocker-chrome",
    "live_url": "https://extensionto.com/blog/cookie-consent-blocker-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5386,
    "claim_sentence_count": 22,
    "marked_paragraph_lines": 22,
@@ -3367,7 +3394,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "cookies-quick-manager-chrome",
@@ -3389,7 +3417,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "cors-chrome-guide",
@@ -3410,7 +3439,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "creating-financial-models-formula-builder-pro",
@@ -3431,7 +3461,8 @@
    ],
    "inbound_internal_links": 13,
    "worklist_v2_inbound": 13,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide",
@@ -3453,7 +3484,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "crystal-extension-chrome",
@@ -3475,7 +3507,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "cypress-extension-chrome-1",
@@ -3495,7 +3528,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "decentraleyes-chrome-3",
@@ -3519,12 +3553,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "deezer-extension-4",
    "live_url": "https://extensionto.com/blog/deezer-extension-4",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5369,
    "claim_sentence_count": 33,
    "marked_paragraph_lines": 33,
@@ -3540,12 +3575,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "deezer-extension-chrome-5",
    "live_url": "https://extensionto.com/blog/deezer-extension-chrome-5",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4997,
    "claim_sentence_count": 33,
    "marked_paragraph_lines": 32,
@@ -3561,7 +3597,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "discover-the-best-file-downloader-extension-chrome",
@@ -3588,12 +3625,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "discover-the-best-privacy-extension-chrome",
    "live_url": "https://extensionto.com/blog/discover-the-best-privacy-extension-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4788,
    "claim_sentence_count": 36,
    "marked_paragraph_lines": 36,
@@ -3613,12 +3651,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "discover-the-best-spreadsheets-software-for-small-business",
    "live_url": "https://extensionto.com/blog/discover-the-best-spreadsheets-software-for-small-business",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6038,
    "claim_sentence_count": 81,
    "marked_paragraph_lines": 71,
@@ -3635,7 +3674,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "discover-the-power-of-minimalism",
@@ -3657,7 +3697,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "donottrackme-chrome-8",
@@ -3679,12 +3720,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "download-chrome-extension-opera-10",
    "live_url": "https://extensionto.com/blog/download-chrome-extension-opera-10",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4261,
    "claim_sentence_count": 46,
    "marked_paragraph_lines": 39,
@@ -3702,7 +3744,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "download-from-instagram-extension-11",
@@ -3725,7 +3768,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "download-high-quality-mp3-chrome",
@@ -3744,12 +3788,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "download-instagram-reels-chrome-saving-your-favorite-videos",
    "live_url": "https://extensionto.com/blog/download-instagram-reels-chrome-saving-your-favorite-videos",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6894,
    "claim_sentence_count": 84,
    "marked_paragraph_lines": 68,
@@ -3768,12 +3813,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "download-instagram-stories-extension-chrome",
    "live_url": "https://extensionto.com/blog/download-instagram-stories-extension-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5664,
    "claim_sentence_count": 96,
    "marked_paragraph_lines": 91,
@@ -3793,12 +3839,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "download-station-chrome-4",
    "live_url": "https://extensionto.com/blog/download-station-chrome-4",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4655,
    "claim_sentence_count": 38,
    "marked_paragraph_lines": 35,
@@ -3818,7 +3865,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "download-stories-instagram-extension-5",
@@ -3840,7 +3888,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "download-video-instagram-extension-chrome-6",
@@ -3861,12 +3910,13 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "eagleget-extension-chrome-8",
    "live_url": "https://extensionto.com/blog/eagleget-extension-chrome-8",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5026,
    "claim_sentence_count": 50,
    "marked_paragraph_lines": 47,
@@ -3886,12 +3936,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "easy-screenshot-chrome-guide",
    "live_url": "https://extensionto.com/blog/easy-screenshot-chrome-guide",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6300,
    "claim_sentence_count": 37,
    "marked_paragraph_lines": 36,
@@ -3905,12 +3956,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "effortlessly-manage-your-browser-export-extension-chrome",
    "live_url": "https://extensionto.com/blog/effortlessly-manage-your-browser-export-extension-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5927,
    "claim_sentence_count": 44,
    "marked_paragraph_lines": 42,
@@ -3927,7 +3979,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "emoji-picker-chrome-extensions",
@@ -3951,7 +4004,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "enhance-your-browsing-experience",
@@ -3971,12 +4025,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "enhancing-browser-security-with-norton-safe-web-chrome-a-comprehensive-guide",
    "live_url": "https://extensionto.com/blog/enhancing-browser-security-with-norton-safe-web-chrome-a-comprehensive-guide",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5405,
    "claim_sentence_count": 41,
    "marked_paragraph_lines": 39,
@@ -3994,12 +4049,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "enhancing-your-browsing-experience-with-avast-online-security-chrome",
    "live_url": "https://extensionto.com/blog/enhancing-your-browsing-experience-with-avast-online-security-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4705,
    "claim_sentence_count": 30,
    "marked_paragraph_lines": 30,
@@ -4017,7 +4073,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "enpass-extension-chrome-9",
@@ -4038,7 +4095,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "essential-free-security-chrome-extensions",
@@ -4056,7 +4114,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "exploring-poper-blocker-alternatives",
@@ -4078,7 +4137,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "extension-ad-block-chrome",
@@ -4100,7 +4160,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "extension-ad-block-plus-faster-browsing",
@@ -4121,12 +4182,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "extension-adblock-chrome-android-2",
    "live_url": "https://extensionto.com/blog/extension-adblock-chrome-android-2",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6884,
    "claim_sentence_count": 69,
    "marked_paragraph_lines": 62,
@@ -4145,12 +4207,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-adblock-google-chrome-3",
    "live_url": "https://extensionto.com/blog/extension-adblock-google-chrome-3",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4860,
    "claim_sentence_count": 36,
    "marked_paragraph_lines": 36,
@@ -4166,12 +4229,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-adblock-telephone-4",
    "live_url": "https://extensionto.com/blog/extension-adblock-telephone-4",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6678,
    "claim_sentence_count": 70,
    "marked_paragraph_lines": 67,
@@ -4187,12 +4251,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-alidropship-5",
    "live_url": "https://extensionto.com/blog/extension-alidropship-5",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6546,
    "claim_sentence_count": 62,
    "marked_paragraph_lines": 59,
@@ -4211,7 +4276,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-auto-refresh-chrome-2",
@@ -4232,7 +4298,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "extension-auto-refresh-plus-3",
@@ -4256,12 +4323,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "extension-bypass-chrome-enhancing-your-browsing-experience",
    "live_url": "https://extensionto.com/blog/extension-bypass-chrome-enhancing-your-browsing-experience",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5686,
    "claim_sentence_count": 79,
    "marked_paragraph_lines": 79,
@@ -4276,12 +4344,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-chrome-capture-page-web",
    "live_url": "https://extensionto.com/blog/extension-chrome-capture-page-web",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6958,
    "claim_sentence_count": 58,
    "marked_paragraph_lines": 57,
@@ -4302,7 +4371,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-chrome-chatgpt",
@@ -4323,12 +4393,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "extension-chrome-code-1",
    "live_url": "https://extensionto.com/blog/extension-chrome-code-1",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3317,
    "claim_sentence_count": 37,
    "marked_paragraph_lines": 30,
@@ -4349,12 +4420,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-chrome-color-2",
    "live_url": "https://extensionto.com/blog/extension-chrome-color-2",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4477,
    "claim_sentence_count": 35,
    "marked_paragraph_lines": 34,
@@ -4373,7 +4445,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-chrome-cookie-editor-4",
@@ -4395,12 +4468,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "extension-chrome-deezer-8",
    "live_url": "https://extensionto.com/blog/extension-chrome-deezer-8",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5625,
    "claim_sentence_count": 43,
    "marked_paragraph_lines": 41,
@@ -4422,7 +4496,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-chrome-mobile-6",
@@ -4442,7 +4517,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "extension-chrome-presearch-14",
@@ -4464,12 +4540,13 @@
    ],
    "inbound_internal_links": 44,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-dashlane-opera-1",
    "live_url": "https://extensionto.com/blog/extension-dashlane-opera-1",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4339,
    "claim_sentence_count": 50,
    "marked_paragraph_lines": 47,
@@ -4487,7 +4564,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extension-get-chrome-3",
@@ -4507,7 +4585,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "extension-idm-to-chrome-12",
@@ -4528,12 +4607,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "extension-to-chrome-browser-10",
    "live_url": "https://extensionto.com/blog/extension-to-chrome-browser-10",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4712,
    "claim_sentence_count": 44,
    "marked_paragraph_lines": 42,
@@ -4548,12 +4628,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "extensions-to-chrome-mobile-13",
    "live_url": "https://extensionto.com/blog/extensions-to-chrome-mobile-13",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5962,
    "claim_sentence_count": 48,
    "marked_paragraph_lines": 47,
@@ -4571,12 +4652,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide",
    "live_url": "https://extensionto.com/blog/facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6745,
    "claim_sentence_count": 48,
    "marked_paragraph_lines": 48,
@@ -4594,7 +4676,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "fast-screenshot-extension-2025-9",
@@ -4615,12 +4698,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "fast-screenshot-extension-tutorial-5",
    "live_url": "https://extensionto.com/blog/fast-screenshot-extension-tutorial-5",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6892,
    "claim_sentence_count": 35,
    "marked_paragraph_lines": 32,
@@ -4638,7 +4722,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "finding-apps-in-the-chrome-web-store",
@@ -4658,7 +4743,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "firefox-android-extensions-guide",
@@ -4677,7 +4763,8 @@
    ],
    "inbound_internal_links": 9,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "firefox-vs-chrome-memory-usage-2026",
@@ -4696,7 +4783,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "fireshot-chrome-screenshot",
@@ -4715,7 +4803,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "fix-chrome-out-of-memory-errors",
@@ -4734,7 +4823,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "free-ai-content-summarizer-extension-2026",
@@ -4752,7 +4842,8 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "free-work-chrome-extensions-guide",
@@ -4773,12 +4864,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "full-page-screenshot-chrome-comparison-7",
    "live_url": "https://extensionto.com/blog/full-page-screenshot-chrome-comparison-7",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4217,
    "claim_sentence_count": 25,
    "marked_paragraph_lines": 25,
@@ -4793,7 +4885,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "getting-extensions-to-work-on-lemur-browser",
@@ -4816,7 +4909,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "ghostery-chrome-extension-winner",
@@ -4839,7 +4933,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "ghostery-vs-privacy-badger-full-2026-comparison",
@@ -4862,12 +4957,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "ghostery-vs-stands-adblocker",
    "live_url": "https://extensionto.com/blog/ghostery-vs-stands-adblocker",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6499,
    "claim_sentence_count": 67,
    "marked_paragraph_lines": 66,
@@ -4887,7 +4983,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "grammarly-extension-to-chrome-3",
@@ -4907,12 +5004,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "history-search-chrome-extensions",
    "live_url": "https://extensionto.com/blog/history-search-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5755,
    "claim_sentence_count": 33,
    "marked_paragraph_lines": 33,
@@ -4928,7 +5026,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "how-much-ram-does-chrome-actually-use",
@@ -4948,12 +5047,13 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-block-youtube-ads-with-ghostery-extension",
    "live_url": "https://extensionto.com/blog/how-to-block-youtube-ads-with-ghostery-extension",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4729,
    "claim_sentence_count": 35,
    "marked_paragraph_lines": 35,
@@ -4970,7 +5070,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "how-to-document-software-bugs-with-screenshots-4",
@@ -4989,7 +5090,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-download-video-from-facebook-chrome",
@@ -5008,7 +5110,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-enable-dark-mode-on-google-search",
@@ -5028,7 +5131,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-enable-extensions-in-chrome-android",
@@ -5051,7 +5155,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-fix-chrome-high-memory-usage-2026",
@@ -5070,7 +5175,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-fix-chrome-high-memory-usage-2026-complete-guide",
@@ -5089,12 +5195,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-fix-chrome-memory-2026",
    "live_url": "https://extensionto.com/blog/how-to-fix-chrome-memory-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4238,
    "claim_sentence_count": 19,
    "marked_paragraph_lines": 19,
@@ -5108,12 +5215,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "how-to-install-chrome-extensions-on-android-2026",
    "live_url": "https://extensionto.com/blog/how-to-install-chrome-extensions-on-android-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4588,
    "claim_sentence_count": 32,
    "marked_paragraph_lines": 32,
@@ -5131,12 +5239,13 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "how-to-install-idm-extension-in-chrome-manually-2026",
    "live_url": "https://extensionto.com/blog/how-to-install-idm-extension-in-chrome-manually-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4620,
    "claim_sentence_count": 28,
    "marked_paragraph_lines": 28,
@@ -5151,12 +5260,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "how-to-install-ublock-origin-on-android-chrome",
    "live_url": "https://extensionto.com/blog/how-to-install-ublock-origin-on-android-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4464,
    "claim_sentence_count": 30,
    "marked_paragraph_lines": 29,
@@ -5174,7 +5284,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "how-to-reduce-chrome-cpu-usage-a-faster-browser",
@@ -5194,7 +5305,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-run-chrome-extensions-on-brave-android",
@@ -5216,7 +5328,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-speed-up-a-slow-chrome-browser",
@@ -5234,7 +5347,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": 327
+   "gsc_impressions": 327,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-speed-up-chrome-partial",
@@ -5255,7 +5369,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-stop-automatic-url-redirects-in-chrome",
@@ -5274,7 +5389,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-turn-on-chromes-memory-saver-mode",
@@ -5293,7 +5409,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "how-to-update-chrome-extensions-enhancing-your-browser-experience",
@@ -5312,12 +5429,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "identify-any-font-on-a-page-instantly",
    "live_url": "https://extensionto.com/blog/identify-any-font-on-a-page-instantly",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6661,
    "claim_sentence_count": 44,
    "marked_paragraph_lines": 44,
@@ -5333,7 +5451,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "instagram-downloader-chrome",
@@ -5355,7 +5474,8 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "install-chrome-web-store-extensions-android",
@@ -5375,7 +5495,8 @@
    ],
    "inbound_internal_links": 14,
    "worklist_v2_inbound": 14,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "kaspersky-protection-chrome",
@@ -5398,7 +5519,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "kaspersky-protection-chrome-review",
@@ -5420,7 +5542,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "kiwi-browser-extensions-guide",
@@ -5442,7 +5565,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "kiwi-vs-yandex-vs-lemur-android-extensions",
@@ -5465,7 +5589,8 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": 6,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "lemur-browser-vs-kiwi-browser",
@@ -5484,7 +5609,8 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "light-popup-blocker-a-lighter-ad-blocker",
@@ -5503,7 +5629,8 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "loop-youtube-videos-with-this-chrome-extension",
@@ -5526,7 +5653,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "manifest-v3-adblock-chrome-guide",
@@ -5548,12 +5676,13 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "maximizing-laptop-battery-life-chrome-battery-saver-extension",
    "live_url": "https://extensionto.com/blog/maximizing-laptop-battery-life-chrome-battery-saver-extension",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5542,
    "claim_sentence_count": 52,
    "marked_paragraph_lines": 52,
@@ -5567,12 +5696,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "monitor-chrome-ram-usage-guide",
    "live_url": "https://extensionto.com/blog/monitor-chrome-ram-usage-guide",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4522,
    "claim_sentence_count": 59,
    "marked_paragraph_lines": 57,
@@ -5586,7 +5716,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "mouse-gestures-chrome-extensions",
@@ -5607,12 +5738,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "mute-noisy-tabs-chrome",
    "live_url": "https://extensionto.com/blog/mute-noisy-tabs-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5755,
    "claim_sentence_count": 29,
    "marked_paragraph_lines": 27,
@@ -5630,7 +5762,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "new-tab-speed-dial-chrome",
@@ -5655,7 +5788,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "onetab-chrome-extension-2026-save-ram-restore-tabs-instantly",
@@ -5673,12 +5807,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
    "live_url": "https://extensionto.com/blog/optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6803,
    "claim_sentence_count": 30,
    "marked_paragraph_lines": 27,
@@ -5694,7 +5829,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "organize-chrome-extensions-toolbar-guide",
@@ -5717,7 +5853,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "parental-controls-google-chrome-guide",
@@ -5738,7 +5875,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "parental-controls-google-chrome-pc",
@@ -5759,12 +5897,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "pdf-tools-chrome-extensions",
    "live_url": "https://extensionto.com/blog/pdf-tools-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6060,
    "claim_sentence_count": 61,
    "marked_paragraph_lines": 58,
@@ -5781,12 +5920,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "pomodoro-focus-timer-chrome-extensions",
    "live_url": "https://extensionto.com/blog/pomodoro-focus-timer-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5745,
    "claim_sentence_count": 38,
    "marked_paragraph_lines": 35,
@@ -5804,7 +5944,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "pop-up-blocker-for-chrome-partial",
@@ -5828,7 +5969,8 @@
    ],
    "inbound_internal_links": 88,
    "worklist_v2_inbound": 88,
-   "gsc_impressions": 2212
+   "gsc_impressions": 2212,
+   "tier_v1": 1
   },
   {
    "slug": "poper-blocker-vs-adblock-plus-2026",
@@ -5847,7 +5989,8 @@
    ],
    "inbound_internal_links": 10,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "popup-blocker-streaming-sites",
@@ -5869,7 +6012,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "prevent-websites-from-opening-new-tabs-automatically-2",
@@ -5889,7 +6033,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "privacy-badger-chrome-partial",
@@ -5911,7 +6056,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "protab-suspender-memory-saver-review",
@@ -5934,7 +6080,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "protect-your-online-identity",
@@ -5954,12 +6101,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "protecting-your-online-security",
    "live_url": "https://extensionto.com/blog/protecting-your-online-security",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6387,
    "claim_sentence_count": 90,
    "marked_paragraph_lines": 85,
@@ -5979,7 +6127,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "qr-code-generator-scanner-chrome-extensions",
@@ -6003,7 +6152,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "quick-screenshot-capture-extension",
@@ -6025,7 +6175,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "quick-screenshot-lite-review",
@@ -6046,12 +6197,13 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": 8,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "reddit-power-user-chrome-extensions",
    "live_url": "https://extensionto.com/blog/reddit-power-user-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3555,
    "claim_sentence_count": 21,
    "marked_paragraph_lines": 20,
@@ -6066,12 +6218,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "rss-reader-chrome-extensions-2026",
    "live_url": "https://extensionto.com/blog/rss-reader-chrome-extensions-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6844,
    "claim_sentence_count": 62,
    "marked_paragraph_lines": 62,
@@ -6090,12 +6243,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "safe-video-downloader-for-chrome",
    "live_url": "https://extensionto.com/blog/safe-video-downloader-for-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6353,
    "claim_sentence_count": 106,
    "marked_paragraph_lines": 105,
@@ -6111,7 +6265,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "samsung-internet-adblock-setup-guide",
@@ -6130,7 +6285,8 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "save-articles-read-later-offline-chrome-guide",
@@ -6153,12 +6309,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "save-images-from-protected-sites-chrome",
    "live_url": "https://extensionto.com/blog/save-images-from-protected-sites-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4575,
    "claim_sentence_count": 38,
    "marked_paragraph_lines": 38,
@@ -6173,7 +6330,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "save-pc-resources-with-chrome-tab-suspension",
@@ -6192,12 +6350,13 @@
    ],
    "inbound_internal_links": 19,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "screen-grab-chrome-2025-1",
    "live_url": "https://extensionto.com/blog/screen-grab-chrome-2025-1",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5785,
    "claim_sentence_count": 54,
    "marked_paragraph_lines": 54,
@@ -6212,12 +6371,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "screen-recorder-chrome-extensions",
    "live_url": "https://extensionto.com/blog/screen-recorder-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5567,
    "claim_sentence_count": 47,
    "marked_paragraph_lines": 46,
@@ -6234,7 +6394,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "screenshot-extensions-chrome",
@@ -6256,7 +6417,8 @@
    ],
    "inbound_internal_links": 10,
    "worklist_v2_inbound": 10,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "screenshot-ocr-text-extractor-extensions",
@@ -6275,7 +6437,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "screenshot-tool-chrome-guide-1",
@@ -6296,7 +6459,8 @@
    ],
    "inbound_internal_links": 11,
    "worklist_v2_inbound": 11,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "screenshot-tool-chrome-tutorial",
@@ -6317,12 +6481,13 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "screenshot-tool-chrome-vs-5",
    "live_url": "https://extensionto.com/blog/screenshot-tool-chrome-vs-5",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5038,
    "claim_sentence_count": 43,
    "marked_paragraph_lines": 42,
@@ -6338,7 +6503,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "screenshot-tools-chrome-comparison",
@@ -6359,12 +6525,13 @@
    ],
    "inbound_internal_links": 18,
    "worklist_v2_inbound": 18,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "session-isolation-multiple-accounts",
    "live_url": "https://extensionto.com/blog/session-isolation-multiple-accounts",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6533,
    "claim_sentence_count": 50,
    "marked_paragraph_lines": 50,
@@ -6383,7 +6550,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "session-manager-chrome",
@@ -6401,7 +6569,8 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": 8,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "set-chrome-as-default-browser",
@@ -6423,7 +6592,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "social-media-video-downloader-chrome",
@@ -6443,7 +6613,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "split-screen-chrome-tabs-guide",
@@ -6464,7 +6635,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "stop-chrome-from-crashing-with-a-tab-discarder",
@@ -6484,7 +6656,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "stop-notification-ads-chrome-android",
@@ -6502,7 +6675,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "stop-wasting-time-typing-the-same-prompts",
@@ -6521,12 +6695,13 @@
    ],
    "inbound_internal_links": 17,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "streamlining-your-linkedin-experience",
    "live_url": "https://extensionto.com/blog/streamlining-your-linkedin-experience",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3857,
    "claim_sentence_count": 27,
    "marked_paragraph_lines": 27,
@@ -6543,12 +6718,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
    "live_url": "https://extensionto.com/blog/supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5794,
    "claim_sentence_count": 38,
    "marked_paragraph_lines": 37,
@@ -6568,7 +6744,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "sync-chrome-extensions-across-devices-guide",
@@ -6592,12 +6769,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "tab-counter-stats-chrome-extensions",
    "live_url": "https://extensionto.com/blog/tab-counter-stats-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6063,
    "claim_sentence_count": 36,
    "marked_paragraph_lines": 36,
@@ -6613,12 +6791,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "text-expander-chrome-extensions",
    "live_url": "https://extensionto.com/blog/text-expander-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6189,
    "claim_sentence_count": 57,
    "marked_paragraph_lines": 55,
@@ -6638,12 +6817,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "the-best-adblock-for-android-chrome",
    "live_url": "https://extensionto.com/blog/the-best-adblock-for-android-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3817,
    "claim_sentence_count": 33,
    "marked_paragraph_lines": 33,
@@ -6662,7 +6842,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "the-best-chrome-extension-for-analytics",
@@ -6683,12 +6864,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "the-best-chrome-extension-for-android-tablet",
    "live_url": "https://extensionto.com/blog/the-best-chrome-extension-for-android-tablet",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4946,
    "claim_sentence_count": 31,
    "marked_paragraph_lines": 31,
@@ -6705,7 +6887,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "the-best-chrome-extension-for-bulk-downloads",
@@ -6726,7 +6909,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "the-best-chrome-extensions-for-developers-free-tools-to-supercharge-your-workflow",
@@ -6746,7 +6930,8 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "the-best-free-download-manager-for-chrome",
@@ -6766,12 +6951,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "the-best-popup-blocker-for-chrome-in-2026",
    "live_url": "https://extensionto.com/blog/the-best-popup-blocker-for-chrome-in-2026",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5852,
    "claim_sentence_count": 42,
    "marked_paragraph_lines": 42,
@@ -6788,7 +6974,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "the-latest-idm-extension-for-chrome-free",
@@ -6810,7 +6997,8 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "the-no-ads-chrome-extension-worth-installing",
@@ -6832,12 +7020,13 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "the-power-of-1password-chrome-extension",
    "live_url": "https://extensionto.com/blog/the-power-of-1password-chrome-extension",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5533,
    "claim_sentence_count": 62,
    "marked_paragraph_lines": 55,
@@ -6857,7 +7046,8 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "the-power-of-extension-adblock-chrome-android",
@@ -6879,7 +7069,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "the-power-of-extension-adblock-google-chrome",
@@ -6899,12 +7090,13 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "the-power-of-extension-chrome-google-translate",
    "live_url": "https://extensionto.com/blog/the-power-of-extension-chrome-google-translate",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6391,
    "claim_sentence_count": 55,
    "marked_paragraph_lines": 53,
@@ -6925,7 +7117,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "the-power-of-ghostery-extension-chrome-2026",
@@ -6945,7 +7138,8 @@
    ],
    "inbound_internal_links": 33,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "top-chrome-devtools-tips-for-mobile",
@@ -6966,7 +7160,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "top-rated-privacy-extensions-for-google-chrome",
@@ -6987,12 +7182,13 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "tts-chrome-5",
    "live_url": "https://extensionto.com/blog/tts-chrome-5",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6378,
    "claim_sentence_count": 33,
    "marked_paragraph_lines": 31,
@@ -7011,12 +7207,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "ublock-origin-vs-ghostery-for-chrome-android",
    "live_url": "https://extensionto.com/blog/ublock-origin-vs-ghostery-for-chrome-android",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5540,
    "claim_sentence_count": 39,
    "marked_paragraph_lines": 39,
@@ -7037,12 +7234,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "ultimate-chrome-ram-memory-management-guide",
    "live_url": "https://extensionto.com/blog/ultimate-chrome-ram-memory-management-guide",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4747,
    "claim_sentence_count": 24,
    "marked_paragraph_lines": 22,
@@ -7059,12 +7257,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "understanding-the-extension-notion",
    "live_url": "https://extensionto.com/blog/understanding-the-extension-notion",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6322,
    "claim_sentence_count": 85,
    "marked_paragraph_lines": 81,
@@ -7081,12 +7280,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlock-ad-free-youtube-browsing-youtube-ad-blocker-extension-chrome",
    "live_url": "https://extensionto.com/blog/unlock-ad-free-youtube-browsing-youtube-ad-blocker-extension-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4202,
    "claim_sentence_count": 30,
    "marked_paragraph_lines": 30,
@@ -7102,12 +7302,13 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlock-lightning-fast-video-playback-extension-accelerer-video",
    "live_url": "https://extensionto.com/blog/unlock-lightning-fast-video-playback-extension-accelerer-video",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4271,
    "claim_sentence_count": 44,
    "marked_paragraph_lines": 43,
@@ -7125,12 +7326,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome",
    "live_url": "https://extensionto.com/blog/unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4373,
    "claim_sentence_count": 43,
    "marked_paragraph_lines": 41,
@@ -7151,12 +7353,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlock-secure-browsing-the-avast-password-extension-chrome-review",
    "live_url": "https://extensionto.com/blog/unlock-secure-browsing-the-avast-password-extension-chrome-review",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6258,
    "claim_sentence_count": 68,
    "marked_paragraph_lines": 67,
@@ -7175,7 +7378,8 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": 6,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlock-the-full-potential-of-kiwi-browser",
@@ -7195,7 +7399,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlock-the-power-of-ad-blocking-on-android",
@@ -7216,7 +7421,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlock-the-power-of-facebook-pixel-with-the-extension-chrome-facebook-pixel-helper",
@@ -7237,7 +7443,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools",
@@ -7258,7 +7465,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlock-the-power-of-responsive-design",
@@ -7277,7 +7485,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlock-the-power-of-seo-the-best-seo-extensions-for-chrome-2026",
@@ -7296,12 +7505,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome",
    "live_url": "https://extensionto.com/blog/unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5494,
    "claim_sentence_count": 63,
    "marked_paragraph_lines": 62,
@@ -7318,7 +7528,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlock-the-power-of-youtube-subtitle-downloader-chrome",
@@ -7339,12 +7550,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-ad-free-browsing-ad-block-chrome-android",
    "live_url": "https://extensionto.com/blog/unlocking-ad-free-browsing-ad-block-chrome-android",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4500,
    "claim_sentence_count": 40,
    "marked_paragraph_lines": 39,
@@ -7364,7 +7576,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-ad-free-browsing-on-android-android-chrome-adblock",
@@ -7384,7 +7597,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
@@ -7409,7 +7623,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-data-visualization-the-power-of-tableau-chrome-extension",
@@ -7433,7 +7648,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-efficiency-the-best-productivity-tools-for-chrome-browser",
@@ -7456,12 +7672,13 @@
    ],
    "inbound_internal_links": 53,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-efficiency-the-best-spreadsheets-software-for-small-business",
    "live_url": "https://extensionto.com/blog/unlocking-efficiency-the-best-spreadsheets-software-for-small-business",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4208,
    "claim_sentence_count": 45,
    "marked_paragraph_lines": 45,
@@ -7478,7 +7695,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-efficiency-the-power-of-extension-auto-refresh-chrome",
@@ -7499,12 +7717,13 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-enhanced-browser-security-kaspersky-chrome",
    "live_url": "https://extensionto.com/blog/unlocking-enhanced-browser-security-kaspersky-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4274,
    "claim_sentence_count": 42,
    "marked_paragraph_lines": 41,
@@ -7523,12 +7742,13 @@
    ],
    "inbound_internal_links": 11,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide",
    "live_url": "https://extensionto.com/blog/unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4072,
    "claim_sentence_count": 27,
    "marked_paragraph_lines": 24,
@@ -7547,12 +7767,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": 3,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-online-privacy-ghostery-for-chrome-android",
    "live_url": "https://extensionto.com/blog/unlocking-online-privacy-ghostery-for-chrome-android",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4128,
    "claim_sentence_count": 32,
    "marked_paragraph_lines": 30,
@@ -7572,7 +7793,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-online-security-the-power-of-avast-extension-google-chrome",
@@ -7596,7 +7818,8 @@
    ],
    "inbound_internal_links": 14,
    "worklist_v2_inbound": 14,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-peak-performance-browser-optimization-extensions",
@@ -7619,12 +7842,13 @@
    ],
    "inbound_internal_links": 24,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-productivity-the-best-chrome-extensions-for-web-developers",
    "live_url": "https://extensionto.com/blog/unlocking-productivity-the-best-chrome-extensions-for-web-developers",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3677,
    "claim_sentence_count": 16,
    "marked_paragraph_lines": 16,
@@ -7638,12 +7862,13 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-full-potential-of-chrome-mobile",
    "live_url": "https://extensionto.com/blog/unlocking-the-full-potential-of-chrome-mobile",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5256,
    "claim_sentence_count": 50,
    "marked_paragraph_lines": 47,
@@ -7661,12 +7886,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-full-potential-of-your-browser-extensiontocom",
    "live_url": "https://extensionto.com/blog/unlocking-the-full-potential-of-your-browser-extensiontocom",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4188,
    "claim_sentence_count": 35,
    "marked_paragraph_lines": 34,
@@ -7681,12 +7907,13 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-full-potential-of-youtube-with-tubebuddy-opera",
    "live_url": "https://extensionto.com/blog/unlocking-the-full-potential-of-youtube-with-tubebuddy-opera",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5641,
    "claim_sentence_count": 37,
    "marked_paragraph_lines": 37,
@@ -7701,12 +7928,13 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4215,
    "claim_sentence_count": 42,
    "marked_paragraph_lines": 42,
@@ -7723,12 +7951,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-adblock-chrome-on-android",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-adblock-chrome-on-android",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5709,
    "claim_sentence_count": 32,
    "marked_paragraph_lines": 31,
@@ -7747,12 +7976,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-avast-extension-chrome",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-avast-extension-chrome",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4306,
    "claim_sentence_count": 23,
    "marked_paragraph_lines": 23,
@@ -7769,12 +7999,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-avast-password-chrome-secure-browsing",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-avast-password-chrome-secure-browsing",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5410,
    "claim_sentence_count": 51,
    "marked_paragraph_lines": 50,
@@ -7791,12 +8022,13 @@
    ],
    "inbound_internal_links": 9,
    "worklist_v2_inbound": 9,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-browser-extensions-extension-to",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-browser-extensions-extension-to",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4355,
    "claim_sentence_count": 25,
    "marked_paragraph_lines": 22,
@@ -7815,12 +8047,13 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5111,
    "claim_sentence_count": 35,
    "marked_paragraph_lines": 35,
@@ -7838,7 +8071,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-chrome-extensions-extension-chrome-json",
@@ -7859,12 +8093,13 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-the-power-of-chrome-extensions-on-android-a-comprehensive-guide",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-chrome-extensions-on-android-a-comprehensive-guide",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5438,
    "claim_sentence_count": 37,
    "marked_paragraph_lines": 37,
@@ -7881,7 +8116,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs",
@@ -7901,12 +8137,13 @@
    ],
    "inbound_internal_links": 18,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-excel-in-google-chrome-excel-extensions",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-excel-in-google-chrome-excel-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5492,
    "claim_sentence_count": 51,
    "marked_paragraph_lines": 48,
@@ -7923,7 +8160,8 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-extension-android-google-chrome",
@@ -7948,7 +8186,8 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-the-power-of-extension-brave-mobile",
@@ -7975,12 +8214,13 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-the-power-of-extension-bsr-amazon-boosting-sales",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extension-bsr-amazon-boosting-sales",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4188,
    "claim_sentence_count": 21,
    "marked_paragraph_lines": 21,
@@ -7995,12 +8235,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-extension-chrome-joko",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extension-chrome-joko",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6129,
    "claim_sentence_count": 45,
    "marked_paragraph_lines": 43,
@@ -8019,12 +8260,13 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-extension-microsoft-edge",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extension-microsoft-edge",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5419,
    "claim_sentence_count": 41,
    "marked_paragraph_lines": 39,
@@ -8040,12 +8282,13 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-extensionhub-enhancing-your-browser-experience",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extensionhub-enhancing-your-browser-experience",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4473,
    "claim_sentence_count": 26,
    "marked_paragraph_lines": 25,
@@ -8063,7 +8306,8 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-google-chat-extension",
@@ -8086,7 +8330,8 @@
    ],
    "inbound_internal_links": 31,
    "worklist_v2_inbound": 31,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-google-tag-assistant-extension",
@@ -8106,7 +8351,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": 570
+   "gsc_impressions": 570,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-kiwi-browser-developer-mode",
@@ -8126,12 +8372,13 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-the-power-of-meta-tags-chrome-extension-for-meta-tags",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-meta-tags-chrome-extension-for-meta-tags",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4398,
    "claim_sentence_count": 25,
    "marked_paragraph_lines": 25,
@@ -8147,7 +8394,8 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance",
@@ -8167,7 +8415,8 @@
    ],
    "inbound_internal_links": 23,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-online-privacy-ghostery-add-on-chrome",
@@ -8191,7 +8440,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-the-power-of-password-management",
@@ -8211,12 +8461,13 @@
    ],
    "inbound_internal_links": 9,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "unlocking-the-power-of-the-avast-passwords-extension",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-the-avast-passwords-extension",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5093,
    "claim_sentence_count": 34,
    "marked_paragraph_lines": 34,
@@ -8236,12 +8487,13 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": 4,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "unlocking-the-power-of-yandex-browser-on-chrome-web-store",
    "live_url": "https://extensionto.com/blog/unlocking-the-power-of-yandex-browser-on-chrome-web-store",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4597,
    "claim_sentence_count": 60,
    "marked_paragraph_lines": 54,
@@ -8261,7 +8513,8 @@
    ],
    "inbound_internal_links": 12,
    "worklist_v2_inbound": 12,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "using-a-chrome-extension-on-your-android-phone",
@@ -8282,12 +8535,13 @@
    ],
    "inbound_internal_links": 3,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "using-dark-mode-on-quora-for-better-focus-4",
    "live_url": "https://extensionto.com/blog/using-dark-mode-on-quora-for-better-focus-4",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4304,
    "claim_sentence_count": 17,
    "marked_paragraph_lines": 17,
@@ -8303,7 +8557,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "veepn-extension-to-chrome-4",
@@ -8328,7 +8583,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": 5,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "vertical-tabs-chrome-sidebar-guide",
@@ -8349,7 +8605,8 @@
    ],
    "inbound_internal_links": 5,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "vpn-article1-best-free-vpn-no-signup",
@@ -8372,7 +8629,8 @@
    ],
    "inbound_internal_links": 10,
    "worklist_v2_inbound": 10,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "vpn-article11-betternet-review",
@@ -8392,7 +8650,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": 1,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "vpn-article2-nordvpn-speed-test",
@@ -8414,7 +8673,8 @@
    ],
    "inbound_internal_links": 10,
    "worklist_v2_inbound": 10,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "vpn-article3-protonvpn-free-review",
@@ -8434,7 +8694,8 @@
    ],
    "inbound_internal_links": 12,
    "worklist_v2_inbound": 12,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "vpn-article4-expressvpn-review",
@@ -8453,7 +8714,8 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "vpn-article7-opera-vs-chrome",
@@ -8472,7 +8734,8 @@
    ],
    "inbound_internal_links": 2,
    "worklist_v2_inbound": 2,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "vpn-article8-hotspot-shield-review",
@@ -8492,7 +8755,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "vpn-article9-tunnelbear-review",
@@ -8512,12 +8776,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "watch-party-chrome-extensions",
    "live_url": "https://extensionto.com/blog/watch-party-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 5594,
    "claim_sentence_count": 59,
    "marked_paragraph_lines": 58,
@@ -8537,12 +8802,13 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "weather-clock-chrome-extensions",
    "live_url": "https://extensionto.com/blog/weather-clock-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6320,
    "claim_sentence_count": 40,
    "marked_paragraph_lines": 39,
@@ -8559,7 +8825,8 @@
    ],
    "inbound_internal_links": 1,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "web-highlighter-annotation-extensions-research",
@@ -8581,7 +8848,8 @@
    ],
    "inbound_internal_links": 4,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "website-blocker-focus-chrome",
@@ -8605,7 +8873,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": 0,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "whatsapp-web-enhancer-extensions",
@@ -8625,7 +8894,8 @@
    ],
    "inbound_internal_links": 0,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "which-android-browser-handles-extensions-best",
@@ -8646,12 +8916,13 @@
    ],
    "inbound_internal_links": 13,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "why-light-popup-blocker-is-better-than-heavy-adblockers-6",
    "live_url": "https://extensionto.com/blog/why-light-popup-blocker-is-better-than-heavy-adblockers-6",
-   "tier": 1,
+   "tier": 2,
    "total_words": 3566,
    "claim_sentence_count": 16,
    "marked_paragraph_lines": 16,
@@ -8671,7 +8942,8 @@
    ],
    "inbound_internal_links": 8,
    "worklist_v2_inbound": 8,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "why-you-need-an-antivirus-extension-for-chrome",
@@ -8692,12 +8964,13 @@
    ],
    "inbound_internal_links": 14,
    "worklist_v2_inbound": 14,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "why-you-should-avoid-cloud-based-password-managers-2",
    "live_url": "https://extensionto.com/blog/why-you-should-avoid-cloud-based-password-managers-2",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4528,
    "claim_sentence_count": 37,
    "marked_paragraph_lines": 35,
@@ -8715,12 +8988,13 @@
    ],
    "inbound_internal_links": 10,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "windscribe-extension-to-chrome-9",
    "live_url": "https://extensionto.com/blog/windscribe-extension-to-chrome-9",
-   "tier": 1,
+   "tier": 2,
    "total_words": 6193,
    "claim_sentence_count": 49,
    "marked_paragraph_lines": 48,
@@ -8739,7 +9013,8 @@
    ],
    "inbound_internal_links": 12,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   },
   {
    "slug": "youtube-adblock-chrome-guide",
@@ -8761,12 +9036,13 @@
    ],
    "inbound_internal_links": 7,
    "worklist_v2_inbound": 7,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 2
   },
   {
    "slug": "zoom-magnifier-chrome-extensions",
    "live_url": "https://extensionto.com/blog/zoom-magnifier-chrome-extensions",
-   "tier": 1,
+   "tier": 2,
    "total_words": 4005,
    "claim_sentence_count": 26,
    "marked_paragraph_lines": 26,
@@ -8784,7 +9060,8 @@
    ],
    "inbound_internal_links": 6,
    "worklist_v2_inbound": null,
-   "gsc_impressions": null
+   "gsc_impressions": null,
+   "tier_v1": 1
   }
  ]
 }
