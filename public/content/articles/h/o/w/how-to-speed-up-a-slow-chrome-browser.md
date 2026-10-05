@@ -3,7 +3,7 @@ seo_title: "How to Speed Up a Slow Chrome Browser in 2026: 7 Real Fixes"
 id: "a1b2c3d4-perf-0007"
 title: "How to Speed Up a Slow Chrome Browser in 2026: 7 Real Fixes"
 slug: "how-to-speed-up-a-slow-chrome-browser"
-excerpt: "A practical 2026 playbook to speed up a slow Chrome browser: 7 fixes ordered by impact, each tested on a real extension-heavy setup."
+excerpt: "A practical 2026 playbook to speed up a slow Chrome browser: 7 fixes ordered by impact, from startup cleanup to extension triage."
 featured_image: /content/images/how-to-speed-up-a-slow-chrome-browser/featured.webp
 category: "Performance & Memory"
 tags: ["performance", "speed", "optimization", "cache", "memory", "troubleshooting"]
@@ -13,7 +13,7 @@ keywords:
   - make google chrome faster
   - chrome lagging on windows
   - chrome browser optimization tips
-meta_description: "Slow Chrome? Apply these 7 tested fixes in minutes — startup cleanup, memory settings, and extension triage that restore browsing speed."
+meta_description: "Slow Chrome? Seven fixes to try in minutes — startup cleanup, memory settings, and extension triage to help restore browsing speed (2026)."
 status: published
 published_at: "2026-08-30T11:00:00Z"
 scheduled_at: "2026-08-30T11:00:00Z"
