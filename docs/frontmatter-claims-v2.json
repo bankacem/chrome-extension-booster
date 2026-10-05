@@ -1,0 +1,4351 @@
+{
+ "generated_at": "2026-10-05",
+ "supersedes": null,
+ "purpose": "All published articles carrying a testing claim in ANY reader/SEO frontmatter text field (expanded scope per owner 2026-10-05 item 2), ranked for remediation batching.",
+ "scan_fields": [
+  "title",
+  "seo_title",
+  "meta_description",
+  "excerpt",
+  "description",
+  "og_title",
+  "og_description",
+  "twitter_title",
+  "twitter_description"
+ ],
+ "patterns": [
+  "fm_tested",
+  "fm_we_tested",
+  "fm_i_tested",
+  "fm_hands_on",
+  "fm_real_numbers",
+  "fm_benchmarked",
+  "fm_our_tests",
+  "fm_lab_tested"
+ ],
+ "pattern_source": "seo_agent_pro/agents_v2/gates/fabrication.py FM_HONESTY_PATTERNS (#483, merged d358bc3e)",
+ "sort_rule": "gsc_impressions DESC (null last) -> inbound_internal_links DESC -> affected_field_count DESC -> slug ASC",
+ "column_definitions": {
+  "gsc_impressions": "aggregated from docs/audit-worklist-v2.json gsc_top_pages (resolves_to + impressions); null = that file carries no GSC row resolving to this article",
+  "inbound_internal_links": "number of DISTINCT published articles linking to this article (task-G convention); validated against worklist values except the 2 noted mismatches",
+  "affected_field_count": "number of scanned reader/SEO text fields carrying at least one of the 8 patterns",
+  "fields": "field -> list of pattern names matched in that field",
+  "faq_qa_with_claims": "FYI only — FAQ question/answer blocks are reader-facing content but OUTSIDE the granted editing scope",
+  "in_draft_pr_484": "slug is one of the 9 articles of draft PR #484"
+ },
+ "counts": {
+  "published_scanned": 881,
+  "articles_with_field_claims": 199,
+  "by_field": {
+   "title": 41,
+   "seo_title": 15,
+   "meta_description": 166,
+   "excerpt": 130,
+   "description": 58,
+   "og_title": 0,
+   "og_description": 0,
+   "twitter_title": 0,
+   "twitter_description": 0
+  },
+  "with_gsc_impressions": 8,
+  "faq_articles_with_claims": 4
+ },
+ "rows": [
+  {
+   "slug": "how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+   "live_url": "https://extensionto.com/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+   "gsc_impressions": 3410,
+   "gsc_source_urls": [
+    "how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide",
+    "how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide-reducing-browser-memory-leaks"
+   ],
+   "inbound_internal_links": 25,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_real_numbers",
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": true
+  },
+  {
+   "slug": "adblock-chrome-android-complete-guide-2026",
+   "live_url": "https://extensionto.com/blog/adblock-chrome-android-complete-guide-2026",
+   "gsc_impressions": 2488,
+   "gsc_source_urls": [
+    "unlock-ad-free-browsing-on-android-the-power-of-extension-google-chrome-adblock-android-professional-tool-overview",
+    "unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android-mm3scomswm6"
+   ],
+   "inbound_internal_links": 45,
+   "worklist_v2_inbound": 45,
+   "affected_field_count": 4,
+   "fields": {
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "description": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": true
+  },
+  {
+   "slug": "pop-up-blocker-for-chrome-partial",
+   "live_url": "https://extensionto.com/blog/pop-up-blocker-for-chrome-partial",
+   "gsc_impressions": 2212,
+   "gsc_source_urls": [
+    "pop-up-blocker-for-chrome-partial"
+   ],
+   "inbound_internal_links": 88,
+   "worklist_v2_inbound": 88,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": true
+  },
+  {
+   "slug": "best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+   "live_url": "https://extensionto.com/blog/best-youtube-to-mp3-chrome-extension-2026-top-5-free-safe-converters",
+   "gsc_impressions": 2108,
+   "gsc_source_urls": [
+    "music-how-to-use-an-extension-chrome-youtube-mp3-downloader-comparison-of-top-downloaders",
+    "best-youtube-to-mp3-chrome-extension-2026-to-audio-extraction-secure-audio-conversion-steps",
+    "chrome-extension-for-youtube-mp3-320kbps-enhancing-your-high-fidelity-audio-experience-best-chrome-plugins-for-media"
+   ],
+   "inbound_internal_links": 15,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": true
+  },
+  {
+   "slug": "best-free-popup-blocker-for-chrome-2026",
+   "live_url": "https://extensionto.com/blog/best-free-popup-blocker-for-chrome-2026",
+   "gsc_impressions": 691,
+   "gsc_source_urls": [
+    "best-free-popup-blocker-for-chrome-2026-enhance-your-browsing-experience-installation-setup-guide"
+   ],
+   "inbound_internal_links": 8,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "extensions-that-make-chrome-browsing-safer",
+   "live_url": "https://extensionto.com/blog/extensions-that-make-chrome-browsing-safer",
+   "gsc_impressions": 621,
+   "gsc_source_urls": [
+    "10-essential-chrome-extensions-to-actually-secure-your-browser-a-2025-guide-comprehensive-feature-review"
+   ],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": true
+  },
+  {
+   "slug": "best-memory-saver-extension-for-chrome-4",
+   "live_url": "https://extensionto.com/blog/best-memory-saver-extension-for-chrome-4",
+   "gsc_impressions": 491,
+   "gsc_source_urls": [
+    "best-memory-saver-extension-for-chrome-boost-performance-and-reclaim-your-ram-automatic-tab-hibernation-steps"
+   ],
+   "inbound_internal_links": 16,
+   "worklist_v2_inbound": 16,
+   "affected_field_count": 2,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": true
+  },
+  {
+   "slug": "how-to-speed-up-a-slow-chrome-browser",
+   "live_url": "https://extensionto.com/blog/how-to-speed-up-a-slow-chrome-browser",
+   "gsc_impressions": 327,
+   "gsc_source_urls": [
+    "how-to-speed-up-a-slow-chrome-browser-in-2026-to-lightning-fast-browsing-extending-laptop-battery-life"
+   ],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": true
+  },
+  {
+   "slug": "chrome-extensions-vs-web-apps-comparison",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-vs-web-apps-comparison",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 60,
+   "worklist_v2_inbound": 60,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "screenshot-tools-chrome-comparison",
+   "live_url": "https://extensionto.com/blog/screenshot-tools-chrome-comparison",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 18,
+   "worklist_v2_inbound": 18,
+   "affected_field_count": 2,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-extensions-on-android-2026-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-on-android-2026-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 14,
+   "worklist_v2_inbound": 14,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "description": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": true
+  },
+  {
+   "slug": "creating-financial-models-formula-builder-pro",
+   "live_url": "https://extensionto.com/blog/creating-financial-models-formula-builder-pro",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 13,
+   "worklist_v2_inbound": 13,
+   "affected_field_count": 1,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-chrome-extension-download-files",
+   "live_url": "https://extensionto.com/blog/best-chrome-extension-download-files",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 11,
+   "worklist_v2_inbound": 11,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "vpn-article2-nordvpn-speed-test",
+   "live_url": "https://extensionto.com/blog/vpn-article2-nordvpn-speed-test",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 10,
+   "worklist_v2_inbound": 10,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_real_numbers",
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "meta_description": [
+     "fm_real_numbers"
+    ],
+    "description": [
+     "fm_real_numbers",
+     "fm_tested",
+     "fm_we_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "screenshot-extensions-chrome",
+   "live_url": "https://extensionto.com/blog/screenshot-extensions-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 10,
+   "worklist_v2_inbound": 10,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "unlocking-the-power-of-react-devtools-for-chrome-mobile",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-react-devtools-for-chrome-mobile",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 10,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "vpn-article1-best-free-vpn-no-signup",
+   "live_url": "https://extensionto.com/blog/vpn-article1-best-free-vpn-no-signup",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 10,
+   "worklist_v2_inbound": 10,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "why-you-should-avoid-cloud-based-password-managers-2",
+   "live_url": "https://extensionto.com/blog/why-you-should-avoid-cloud-based-password-managers-2",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 10,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-extensions-complete-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-complete-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 9,
+   "worklist_v2_inbound": 9,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "session-manager-chrome",
+   "live_url": "https://extensionto.com/blog/session-manager-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 8,
+   "worklist_v2_inbound": 8,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-adblock-browser-for-android-2026",
+   "live_url": "https://extensionto.com/blog/best-adblock-browser-for-android-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 8,
+   "worklist_v2_inbound": 8,
+   "affected_field_count": 2,
+   "fields": {
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "boosting-browser-performance-minimal-extensions",
+   "live_url": "https://extensionto.com/blog/boosting-browser-performance-minimal-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 8,
+   "worklist_v2_inbound": 8,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "instagram-downloader-chrome",
+   "live_url": "https://extensionto.com/blog/instagram-downloader-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 7,
+   "worklist_v2_inbound": 7,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_hands_on",
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "adguard-vs-ghostery-2026-comparison",
+   "live_url": "https://extensionto.com/blog/adguard-vs-ghostery-2026-comparison",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 7,
+   "worklist_v2_inbound": 7,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "free-ai-content-summarizer-extension-2026",
+   "live_url": "https://extensionto.com/blog/free-ai-content-summarizer-extension-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 7,
+   "worklist_v2_inbound": 7,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "how-much-ram-does-chrome-actually-use",
+   "live_url": "https://extensionto.com/blog/how-much-ram-does-chrome-actually-use",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 7,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "title": [
+     "fm_real_numbers"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-browser-for-low-end-pc-2026",
+   "live_url": "https://extensionto.com/blog/best-browser-for-low-end-pc-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 6,
+   "worklist_v2_inbound": 6,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "description": [
+     "fm_tested",
+     "fm_we_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "zoom-magnifier-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/zoom-magnifier-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 6,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "kiwi-vs-yandex-vs-lemur-android-extensions",
+   "live_url": "https://extensionto.com/blog/kiwi-vs-yandex-vs-lemur-android-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 6,
+   "worklist_v2_inbound": 6,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "download-video-instagram-extension-chrome-6",
+   "live_url": "https://extensionto.com/blog/download-video-instagram-extension-chrome-6",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 6,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "extension-norton-chrome-8",
+   "live_url": "https://extensionto.com/blog/extension-norton-chrome-8",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 6,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "protab-suspender-memory-saver-review",
+   "live_url": "https://extensionto.com/blog/protab-suspender-memory-saver-review",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": 5,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "ai-summary-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/ai-summary-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": 5,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-chatgpt-folder-organizer-extensions",
+   "live_url": "https://extensionto.com/blog/best-chatgpt-folder-organizer-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": 5,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "description": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-youtube-downloader-chrome-extension-2026",
+   "live_url": "https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "description": [
+     "fm_tested",
+     "fm_we_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "manifest-v3-adblock-chrome-guide",
+   "live_url": "https://extensionto.com/blog/manifest-v3-adblock-chrome-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "vertical-tabs-chrome-sidebar-guide",
+   "live_url": "https://extensionto.com/blog/vertical-tabs-chrome-sidebar-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "adblock-plus-vs-ublock-origin-2026",
+   "live_url": "https://extensionto.com/blog/adblock-plus-vs-ublock-origin-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": 5,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-web-store-extensions-guide",
+   "live_url": "https://extensionto.com/blog/chrome-web-store-extensions-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": 5,
+   "affected_field_count": 2,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "adblock-not-working-on-chrome-fix",
+   "live_url": "https://extensionto.com/blog/adblock-not-working-on-chrome-fix",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": 5,
+   "affected_field_count": 1,
+   "fields": {
+    "seo_title": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "ai-formula-generator-excel-vs-google-sheets",
+   "live_url": "https://extensionto.com/blog/ai-formula-generator-excel-vs-google-sheets",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-chrome-screenshot-extensions-2026-complete-guide",
+   "live_url": "https://extensionto.com/blog/best-chrome-screenshot-extensions-2026-complete-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": 5,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "boosting-your-browsing-experience",
+   "live_url": "https://extensionto.com/blog/boosting-your-browsing-experience",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "kiwi-browser-extensions-guide",
+   "live_url": "https://extensionto.com/blog/kiwi-browser-extensions-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": 5,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era",
+   "live_url": "https://extensionto.com/blog/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "the-no-ads-chrome-extension-worth-installing",
+   "live_url": "https://extensionto.com/blog/the-no-ads-chrome-extension-worth-installing",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 5,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-note-taking-chrome-extensions-2026",
+   "live_url": "https://extensionto.com/blog/best-note-taking-chrome-extensions-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": 4,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 1,
+   "faq_patterns": [
+    "fm_i_tested",
+    "fm_tested"
+   ],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "quick-screenshot-capture-extension",
+   "live_url": "https://extensionto.com/blog/quick-screenshot-capture-extension",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": 4,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide",
+   "live_url": "https://extensionto.com/blog/creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": 4,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "crystal-extension-chrome",
+   "live_url": "https://extensionto.com/blog/crystal-extension-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": 4,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "web-highlighter-annotation-extensions-research",
+   "live_url": "https://extensionto.com/blog/web-highlighter-annotation-extensions-research",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow",
+   "live_url": "https://extensionto.com/blog/10-essential-utility-chrome-extensions-to-supercharge-your-professional-workflow",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "ajouter-extension-chrome-8",
+   "live_url": "https://extensionto.com/blog/ajouter-extension-chrome-8",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": 4,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-free-adblocker-youtube-chrome",
+   "live_url": "https://extensionto.com/blog/best-free-adblocker-youtube-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": 4,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-screenshot-addon-guide",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-addon-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": 4,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-ai-tools-data-entry-automation-2026",
+   "live_url": "https://extensionto.com/blog/best-ai-tools-data-entry-automation-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": 4,
+   "affected_field_count": 1,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-ghostery-settings-for-maximum-online-privacy",
+   "live_url": "https://extensionto.com/blog/best-ghostery-settings-for-maximum-online-privacy",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "choosing-a-youtube-video-downloader-for-pc-chrome",
+   "live_url": "https://extensionto.com/blog/choosing-a-youtube-video-downloader-for-pc-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-extension-keyboard-shortcuts-not-working-fix",
+   "live_url": "https://extensionto.com/blog/chrome-extension-keyboard-shortcuts-not-working-fix",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": 4,
+   "affected_field_count": 1,
+   "fields": {
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chromecast-plugin-chrome",
+   "live_url": "https://extensionto.com/blog/chromecast-plugin-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": 4,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "fast-screenshot-extension-review",
+   "live_url": "https://extensionto.com/blog/fast-screenshot-extension-review",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "quick-screenshot-chrome-review-3",
+   "live_url": "https://extensionto.com/blog/quick-screenshot-chrome-review-3",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 4,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "cors-chrome-guide",
+   "live_url": "https://extensionto.com/blog/cors-chrome-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "split-screen-chrome-tabs-guide",
+   "live_url": "https://extensionto.com/blog/split-screen-chrome-tabs-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-ai-chrome-extensions-2026",
+   "live_url": "https://extensionto.com/blog/best-ai-chrome-extensions-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 3,
+   "fields": {
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "description": [
+     "fm_tested",
+     "fm_we_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "claroread-chrome-extension",
+   "live_url": "https://extensionto.com/blog/claroread-chrome-extension",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "kaspersky-protection-chrome-review",
+   "live_url": "https://extensionto.com/blog/kaspersky-protection-chrome-review",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-extensions-android-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-android-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-extensions-that-slow-down-your-browser-real-tests",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-that-slow-down-your-browser-real-tests",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 2,
+   "fields": {
+    "excerpt": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "description": [
+     "fm_tested",
+     "fm_we_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-memory-saver-how-it-works",
+   "live_url": "https://extensionto.com/blog/chrome-memory-saver-how-it-works",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-popup-blocker-master-guide",
+   "live_url": "https://extensionto.com/blog/chrome-popup-blocker-master-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-screenshot-tools",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-tools",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chromecast-mac-guide",
+   "live_url": "https://extensionto.com/blog/chromecast-mac-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "cleanweb-vs-total-adblock",
+   "live_url": "https://extensionto.com/blog/cleanweb-vs-total-adblock",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "contentsquare-extension-chrome",
+   "live_url": "https://extensionto.com/blog/contentsquare-extension-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 2,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "parental-controls-google-chrome-pc",
+   "live_url": "https://extensionto.com/blog/parental-controls-google-chrome-pc",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "save-articles-read-later-offline-chrome-guide",
+   "live_url": "https://extensionto.com/blog/save-articles-read-later-offline-chrome-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 2,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "a-tab-suspender-extension-that-frees-up-ram",
+   "live_url": "https://extensionto.com/blog/a-tab-suspender-extension-that-frees-up-ram",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "antidote-extension-chrome",
+   "live_url": "https://extensionto.com/blog/antidote-extension-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "avast-online-security-chrome",
+   "live_url": "https://extensionto.com/blog/avast-online-security-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 7,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance",
+   "live_url": "https://extensionto.com/blog/best-extension-to-reduce-chrome-ram-usage-boosting-browser-performance",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-extensions-for-better-browsing",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-for-better-browsing",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-flags-for-performance-safe-ones",
+   "live_url": "https://extensionto.com/blog/chrome-flags-for-performance-safe-ones",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "clipconverter-extension-chrome",
+   "live_url": "https://extensionto.com/blog/clipconverter-extension-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "how-to-make-google-chrome-faster-on-windows-1110",
+   "live_url": "https://extensionto.com/blog/how-to-make-google-chrome-faster-on-windows-1110",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "where-to-download-meta-pixel-helper-for-chrome",
+   "live_url": "https://extensionto.com/blog/where-to-download-meta-pixel-helper-for-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 3,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "batch-open-tabs-scheduled-chrome",
+   "live_url": "https://extensionto.com/blog/batch-open-tabs-scheduled-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "calendar-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/calendar-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "cookies-quick-manager-chrome",
+   "live_url": "https://extensionto.com/blog/cookies-quick-manager-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "parental-controls-google-chrome-guide",
+   "live_url": "https://extensionto.com/blog/parental-controls-google-chrome-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "text-expander-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/text-expander-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "activate-dark-mode-on-wikipedia-for-night-reading-2",
+   "live_url": "https://extensionto.com/blog/activate-dark-mode-on-wikipedia-for-night-reading-2",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-chrome-extensions-for-privacy-2026",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-for-privacy-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "boosting-browser-security-extensions",
+   "live_url": "https://extensionto.com/blog/boosting-browser-security-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-cast-samsung-tv",
+   "live_url": "https://extensionto.com/blog/chrome-cast-samsung-tv",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-download-manager-guide",
+   "live_url": "https://extensionto.com/blog/chrome-download-manager-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-pdf-viewer-guide",
+   "live_url": "https://extensionto.com/blog/chrome-pdf-viewer-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-screenshot-alternatives",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-alternatives",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-vs-edge-vs-brave-ram-comparison",
+   "live_url": "https://extensionto.com/blog/chrome-vs-edge-vs-brave-ram-comparison",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_benchmarked",
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "clipboard-history-chrome-extension-guide",
+   "live_url": "https://extensionto.com/blog/clipboard-history-chrome-extension-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "comodo-chrome-guide",
+   "live_url": "https://extensionto.com/blog/comodo-chrome-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 2,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_benchmarked"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "fireshot-chrome-screenshot",
+   "live_url": "https://extensionto.com/blog/fireshot-chrome-screenshot",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "kaspersky-protection-chrome",
+   "live_url": "https://extensionto.com/blog/kaspersky-protection-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 3,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "automating-business-reports-with-formula-builder",
+   "live_url": "https://extensionto.com/blog/automating-business-reports-with-formula-builder",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-privacy-extensions-worth-adding-today",
+   "live_url": "https://extensionto.com/blog/chrome-privacy-extensions-worth-adding-today",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "clickclean-chrome-browser-cleaner",
+   "live_url": "https://extensionto.com/blog/clickclean-chrome-browser-cleaner",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": 2,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "how-to-block-youtube-ads-with-ghostery-extension",
+   "live_url": "https://extensionto.com/blog/how-to-block-youtube-ads-with-ghostery-extension",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "speed-up-downloads-with-this-chrome-extension",
+   "live_url": "https://extensionto.com/blog/speed-up-downloads-with-this-chrome-extension",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "the-best-chrome-extension-for-keyword-research",
+   "live_url": "https://extensionto.com/blog/the-best-chrome-extension-for-keyword-research",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "the-only-free-productivity-chrome-extensions-you-actually-need",
+   "live_url": "https://extensionto.com/blog/the-only-free-productivity-chrome-extensions-you-actually-need",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "vpn-article5-youtube-proxy",
+   "live_url": "https://extensionto.com/blog/vpn-article5-youtube-proxy",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 2,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-anti-captcha-chrome-extension",
+   "live_url": "https://extensionto.com/blog/best-anti-captcha-chrome-extension",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-color-picker-chrome-extension",
+   "live_url": "https://extensionto.com/blog/best-color-picker-chrome-extension",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "capture-scrolling-webpages-as-png-or-pdf",
+   "live_url": "https://extensionto.com/blog/capture-scrolling-webpages-as-png-or-pdf",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-passkeys-passwordless-guide-2026",
+   "live_url": "https://extensionto.com/blog/chrome-passkeys-passwordless-guide-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-screenshot-addon-comparison",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-addon-comparison",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "colorzilla-chrome-color-picker",
+   "live_url": "https://extensionto.com/blog/colorzilla-chrome-color-picker",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "cookie-consent-blocker-chrome",
+   "live_url": "https://extensionto.com/blog/cookie-consent-blocker-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "emoji-picker-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/emoji-picker-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "new-tab-speed-dial-chrome",
+   "live_url": "https://extensionto.com/blog/new-tab-speed-dial-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "pomodoro-focus-timer-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/pomodoro-focus-timer-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "qr-code-generator-scanner-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/qr-code-generator-scanner-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "rss-reader-chrome-extensions-2026",
+   "live_url": "https://extensionto.com/blog/rss-reader-chrome-extensions-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "session-isolation-multiple-accounts",
+   "live_url": "https://extensionto.com/blog/session-isolation-multiple-accounts",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "weather-clock-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/weather-clock-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "10-best-chrome-security-extensions-2026-protect-your-browser-today",
+   "live_url": "https://extensionto.com/blog/10-best-chrome-security-extensions-2026-protect-your-browser-today",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "15-essential-chrome-extensions-to-supercharge-your-workflow-right-now",
+   "live_url": "https://extensionto.com/blog/15-essential-chrome-extensions-to-supercharge-your-workflow-right-now",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "anti-anti-adblock-chrome",
+   "live_url": "https://extensionto.com/blog/anti-anti-adblock-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "anti-captcha-chrome",
+   "live_url": "https://extensionto.com/blog/anti-captcha-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "auto-tab-discarder-vs-the-great-suspender",
+   "live_url": "https://extensionto.com/blog/auto-tab-discarder-vs-the-great-suspender",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "autotab-discard-vs-onetab",
+   "live_url": "https://extensionto.com/blog/autotab-discard-vs-onetab",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-dark-mode-chrome-extension",
+   "live_url": "https://extensionto.com/blog/best-dark-mode-chrome-extension",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-ram-saving-extensions-2026",
+   "live_url": "https://extensionto.com/blog/best-ram-saving-extensions-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-extensions-for-gamers-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-for-gamers-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-extensions-opera-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-opera-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-high-memory-usage-fix",
+   "live_url": "https://extensionto.com/blog/chrome-high-memory-usage-fix",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-samsung-smart-tv-casting-guide",
+   "live_url": "https://extensionto.com/blog/chrome-samsung-smart-tv-casting-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-screenshot-guide",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "set-chrome-as-default-browser",
+   "live_url": "https://extensionto.com/blog/set-chrome-as-default-browser",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "1xbet-chrome-extension-review-2026",
+   "live_url": "https://extensionto.com/blog/1xbet-chrome-extension-review-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "agenda-hero-chrome-extension-guide",
+   "live_url": "https://extensionto.com/blog/agenda-hero-chrome-extension-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "alishark-chrome-extension",
+   "live_url": "https://extensionto.com/blog/alishark-chrome-extension",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "alitools-extension-chrome",
+   "live_url": "https://extensionto.com/blog/alitools-extension-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "ant-video-downloader-chrome",
+   "live_url": "https://extensionto.com/blog/ant-video-downloader-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-screenshot-extensions-for-chrome-1",
+   "live_url": "https://extensionto.com/blog/best-screenshot-extensions-for-chrome-1",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "blackbox-ai-chrome-extension-guide",
+   "live_url": "https://extensionto.com/blog/blackbox-ai-chrome-extension-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 1,
+   "fields": {
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 1,
+   "faq_patterns": [
+    "fm_i_tested",
+    "fm_tested"
+   ],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "bringing-gemini-into-your-chrome-browser",
+   "live_url": "https://extensionto.com/blog/bringing-gemini-into-your-chrome-browser",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "clickclean-google-chrome-review",
+   "live_url": "https://extensionto.com/blog/clickclean-google-chrome-review",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "how-to-add-extensions-to-chrome-mobile",
+   "live_url": "https://extensionto.com/blog/how-to-add-extensions-to-chrome-mobile",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "protect-your-online-identity",
+   "live_url": "https://extensionto.com/blog/protect-your-online-identity",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "sync-chrome-extensions-across-devices-guide",
+   "live_url": "https://extensionto.com/blog/sync-chrome-extensions-across-devices-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 1,
+   "worklist_v2_inbound": 1,
+   "affected_field_count": 1,
+   "fields": {
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-text-to-speech-chrome-extensions-2026",
+   "live_url": "https://extensionto.com/blog/best-text-to-speech-chrome-extensions-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "seo_title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-web-store-firefox-extensions-guide",
+   "live_url": "https://extensionto.com/blog/chrome-web-store-firefox-extensions-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 4,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "description": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 1,
+   "faq_patterns": [
+    "fm_i_tested",
+    "fm_tested"
+   ],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "ai-agent-browser-extensions-2026",
+   "live_url": "https://extensionto.com/blog/ai-agent-browser-extensions-2026",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "ai-research-assistant-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/ai-research-assistant-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "android-chrome-adblocker",
+   "live_url": "https://extensionto.com/blog/android-chrome-adblocker",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "audio-equalizer-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/audio-equalizer-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "auto-currency-converter-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/auto-currency-converter-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-lightweight-popup-blocker-chrome",
+   "live_url": "https://extensionto.com/blog/best-lightweight-popup-blocker-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "bookmark-manager-chrome-guide",
+   "live_url": "https://extensionto.com/blog/bookmark-manager-chrome-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-autoscroll-reading-aids",
+   "live_url": "https://extensionto.com/blog/chrome-autoscroll-reading-aids",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-command-palette-extensions",
+   "live_url": "https://extensionto.com/blog/chrome-command-palette-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "color-picker-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/color-picker-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 3,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "history-search-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/history-search-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "mouse-gestures-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/mouse-gestures-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "mute-noisy-tabs-chrome",
+   "live_url": "https://extensionto.com/blog/mute-noisy-tabs-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "pdf-tools-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/pdf-tools-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "reddit-power-user-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/reddit-power-user-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "screen-recorder-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/screen-recorder-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "screenshot-ocr-text-extractor-extensions",
+   "live_url": "https://extensionto.com/blog/screenshot-ocr-text-extractor-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "tab-counter-stats-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/tab-counter-stats-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "unlocking-ad-free-browsing-on-android-android-chrome-adblock",
+   "live_url": "https://extensionto.com/blog/unlocking-ad-free-browsing-on-android-android-chrome-adblock",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "watch-party-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/watch-party-chrome-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "website-blocker-focus-chrome",
+   "live_url": "https://extensionto.com/blog/website-blocker-focus-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "whatsapp-web-enhancer-extensions",
+   "live_url": "https://extensionto.com/blog/whatsapp-web-enhancer-extensions",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 3,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_hands_on",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "3cx-voip-chrome-extension",
+   "live_url": "https://extensionto.com/blog/3cx-voip-chrome-extension",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 2,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-annotated-screenshot-chrome-5",
+   "live_url": "https://extensionto.com/blog/best-annotated-screenshot-chrome-5",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-chrome-extensions-google-meet",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-google-meet",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "betterttv-google-chrome-guide",
+   "live_url": "https://extensionto.com/blog/betterttv-google-chrome-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 2,
+   "fields": {
+    "excerpt": [
+     "fm_tested"
+    ],
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 1,
+   "faq_patterns": [
+    "fm_i_tested",
+    "fm_tested"
+   ],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "capture-screen-chrome-guide",
+   "live_url": "https://extensionto.com/blog/capture-screen-chrome-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-est-tres-lent",
+   "live_url": "https://extensionto.com/blog/chrome-est-tres-lent",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrome-printing-guide",
+   "live_url": "https://extensionto.com/blog/chrome-printing-guide",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested",
+     "fm_we_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chromecast-extension-google-chrome",
+   "live_url": "https://extensionto.com/blog/chromecast-extension-google-chrome",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_i_tested",
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "chrometana-extension-review",
+   "live_url": "https://extensionto.com/blog/chrometana-extension-review",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_i_tested",
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "free-popup-blocker-for-chrome-a-distraction-free-browsing-experience",
+   "live_url": "https://extensionto.com/blog/free-popup-blocker-for-chrome-a-distraction-free-browsing-experience",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_tested"
+    ],
+    "excerpt": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "pro-chrome-extension-reviews",
+   "live_url": "https://extensionto.com/blog/pro-chrome-extension-reviews",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 2,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ],
+    "excerpt": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-chrome-extensions-for-language-translation",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-for-language-translation",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "title": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
+   "live_url": "https://extensionto.com/blog/best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 1,
+   "fields": {
+    "excerpt": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "best-quick-screenshot-chrome-tools-3",
+   "live_url": "https://extensionto.com/blog/best-quick-screenshot-chrome-tools-3",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "boost-your-online-presence",
+   "live_url": "https://extensionto.com/blog/boost-your-online-presence",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "extension-chrome-mobile-6",
+   "live_url": "https://extensionto.com/blog/extension-chrome-mobile-6",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "extension-idm-to-chrome-12",
+   "live_url": "https://extensionto.com/blog/extension-idm-to-chrome-12",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "extension-to-chrome-browser-10",
+   "live_url": "https://extensionto.com/blog/extension-to-chrome-browser-10",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "fast-screenshot-extension-2025-9",
+   "live_url": "https://extensionto.com/blog/fast-screenshot-extension-2025-9",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "remove-chrome-extension-installed-by-enterprise-policy",
+   "live_url": "https://extensionto.com/blog/remove-chrome-extension-installed-by-enterprise-policy",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "description": [
+     "fm_tested"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "the-best-free-adblocker-for-chrome-android",
+   "live_url": "https://extensionto.com/blog/the-best-free-adblocker-for-chrome-android",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "the-best-no-root-ad-blocker-for-chrome-android",
+   "live_url": "https://extensionto.com/blog/the-best-no-root-ad-blocker-for-chrome-android",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "the-power-of-extension-adblock-chrome-android",
+   "live_url": "https://extensionto.com/blog/the-power-of-extension-adblock-chrome-android",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": null,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  },
+  {
+   "slug": "unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+   "live_url": "https://extensionto.com/blog/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+   "gsc_impressions": null,
+   "gsc_source_urls": [],
+   "inbound_internal_links": 0,
+   "worklist_v2_inbound": 0,
+   "affected_field_count": 1,
+   "fields": {
+    "meta_description": [
+     "fm_hands_on"
+    ]
+   },
+   "faq_qa_with_claims": 0,
+   "faq_patterns": [],
+   "in_draft_pr_484": false
+  }
+ ]
+}
