@@ -600,5 +600,284 @@ class TestRealArticles(unittest.TestCase):
         self.assertIn("we_tested", [h["pattern"] for h in r["S1"]])
 
 
+class TestBodyNeutralization(unittest.TestCase):
+    """Owner brief 2026-10-05 item 2 — deterministic before/after guard.
+    One test per forbidden change plus legitimate negatives."""
+
+    BEFORE = "\n\n".join([
+        "# Tab Manager Guide",
+        "Chrome tab managers help you organize your browsing in 2026. "
+        "This article compares SessionBox and OneTab.",
+        "## How We Tested - Results at 1, 10, and 25 Tabs",
+        "I installed 12 extensions on a MacBook Air M2 and measured RAM at "
+        "1, 10, and 25 tabs. Chrome 126 was used with a clean profile.",
+        "The 112-tab workload showed a 30% improvement over the baseline. "
+        "SessionBox consumed 480 MB per window.",
+        "## Key Features",
+        "Many users keep SessionBox for isolated sessions. "
+        "OneTab collapses every tab into a single list.",
+        "![Screenshot of tab groups](/content/images/tab-manager/shot1.webp)",
+        "| Tool | RAM (MB) |\n|---|---|\n| SessionBox | 480 |\n| OneTab | 210 |",
+        "## Frequently Asked Questions",
+        "**Is OneTab free?**\nYes, OneTab is free to use.",
+    ])
+    METHOD_H = "## How We Tested - Results at 1, 10, and 25 Tabs"
+    DISCLOSURE = ("This guide is a research-based comparison compiled from "
+                  "publicly available information and general product "
+                  "knowledge. ExtensionTo has not run independent lab tests "
+                  "for this article. Features, permissions, and pricing "
+                  "change, so check the official listing before installing.")
+    RENAME = [("## How We Tested - Results at 1, 10, and 25 Tabs",
+               "## About this guide")]
+    MARKED = {2, 3, 4}  # heading + the two methodology paragraphs
+
+    def blocks(self, body):
+        from seo_agent_pro.agents_v2.gates.body_neutralization import _blocks
+        return _blocks(body)
+
+    def legit_after(self):
+        b = self.blocks(self.BEFORE)
+        return "\n\n".join(
+            b[0:2] + ["## About this guide", self.DISCLOSURE] + b[5:])
+
+    def gate(self, after, marked=MARKED, renames=RENAME, allow=("ExtensionTo",),
+             new_limit=None):
+        from seo_agent_pro.agents_v2.gates import body_neutralization_gate
+        return body_neutralization_gate(
+            self.BEFORE, after, marked, allowed_heading_renames=renames,
+            allow_proper_nouns=allow, allowed_new_paragraphs=new_limit)
+
+    # ── 1) numbers / percentages / versions ──────────────────────────────
+    def test_number_new_fails(self):
+        after = self.legit_after().replace("single list", "single list of 40 tabs")
+        r = self.gate(after)
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "number_new" and "40" in v["detail"]
+                            for v in r["violations"]))
+
+    def test_number_removal_passes(self):
+        r = self.gate(self.legit_after())
+        self.assertFalse(any(v["check"] == "number_new" for v in r["violations"]))
+
+    def test_percent_new_fails(self):
+        after = self.legit_after().replace("single list", "single list by 40%")
+        r = self.gate(after)
+        self.assertTrue(any(v["check"] == "percent_new" for v in r["violations"]))
+
+    def test_version_new_fails(self):
+        after = self.legit_after().replace(
+            self.DISCLOSURE,
+            "The guide was checked against Chrome 127.0.6613.119 in this "
+            "article. Features change, so check the official listing before installing.")
+        r = self.gate(after)
+        self.assertTrue(any(v["check"] == "version_new"
+                            and "127.0.6613.119" in v["detail"]
+                            for v in r["violations"]))
+
+    # ── 2) proper nouns, paragraph-level ─────────────────────────────────
+    def test_proper_noun_new_fails(self):
+        after = self.legit_after().replace(
+            self.DISCLOSURE,
+            "Sarah Chen compiled this comparison from public sources.")
+        r = self.gate(after)
+        self.assertTrue(any(v["check"] == "proper_noun_new" and "Chen" in v["detail"]
+                            for v in r["violations"]))
+
+    def test_proper_noun_is_paragraph_scoped(self):
+        # "Sarah Chen" exists in ANOTHER paragraph of the article but not in
+        # the paragraph being rewritten (equal-count 1:1 replace) -> fail
+        before = self.BEFORE.replace(
+            "Chrome tab managers help you organize",
+            "Sarah Chen writes that tab managers help you organize")
+        b = self.blocks(before)
+        after = "\n\n".join(b[:3] +
+                             ["Sarah Chen compiled this comparison from public sources."] +
+                             b[4:])
+        from seo_agent_pro.agents_v2.gates import body_neutralization_gate
+        r = body_neutralization_gate(before, after, {3},
+                                     allowed_heading_renames=())
+        self.assertTrue(any(v["check"] == "proper_noun_new" and "Chen" in v["detail"]
+                            for v in r["violations"]))
+
+    EXT_MID = ("Public sources only; ExtensionTo has not run independent "
+               "lab tests for this article. Features change, so check the "
+               "official listing before installing.")
+
+    def test_proper_noun_allowlist_passes(self):
+        after = self.legit_after().replace(self.DISCLOSURE, self.EXT_MID)
+        r = self.gate(after)
+        self.assertFalse(any(v["check"] == "proper_noun_new"
+                             for v in r["violations"]))
+
+    def test_proper_noun_without_allowlist_fails(self):
+        after = self.legit_after().replace(self.DISCLOSURE, self.EXT_MID)
+        r = self.gate(after, allow=())
+        self.assertTrue(any(v["check"] == "proper_noun_new"
+                            and "ExtensionTo" in v["detail"]
+                            for v in r["violations"]))
+
+    # ── 3) links ─────────────────────────────────────────────────────────
+    def test_link_new_fails(self):
+        after = self.legit_after().replace(
+            "OneTab collapses every tab into a single list",
+            "OneTab collapses every tab into a single list ([docs](https://example.com/one))")
+        r = self.gate(after)
+        self.assertTrue(any(v["check"] == "link_new" for v in r["violations"]))
+
+    def test_link_removal_passes(self):
+        r = self.gate(self.legit_after())
+        self.assertFalse(any(v["check"] == "link_new" for v in r["violations"]))
+
+    # ── 4) structure: headings / images / table rows / FAQ ───────────────
+    def test_heading_changed_without_permission_fails(self):
+        after = self.legit_after().replace("## Key Features", "## Highlights")
+        r = self.gate(after)
+        self.assertTrue(any(v["check"] == "heading_changed" for v in r["violations"]))
+
+    def test_heading_allowed_rename_passes(self):
+        r = self.gate(self.legit_after())
+        self.assertFalse(any(v["check"] == "heading_changed" for v in r["violations"]))
+
+    def test_allowed_rename_source_missing_fails(self):
+        r = self.gate(self.legit_after().replace("## About this guide",
+                                                 "## About this guide (2026)"))
+        self.assertTrue(any(v["check"] == "heading_changed" for v in r["violations"]))
+
+    def test_image_changed_fails(self):
+        after = self.legit_after().replace("shot1.webp", "shot2.webp")
+        r = self.gate(after)
+        self.assertTrue(any(v["check"] == "image_changed" for v in r["violations"]))
+
+    def test_table_row_changed_fails(self):
+        after = self.legit_after().replace("| OneTab | 210 |", "| OneTab | 220 |")
+        r = self.gate(after)
+        self.assertTrue(any(v["check"] == "table_row_changed" for v in r["violations"]))
+
+    def test_faq_question_changed_fails(self):
+        after = self.legit_after().replace("**Is OneTab free?**",
+                                           "**Is OneTab paid?**")
+        r = self.gate(after)
+        self.assertTrue(any(v["check"] == "faq_question_changed"
+                            for v in r["violations"]))
+
+    # ── 5) unmarked paragraphs / insert limit ────────────────────────────
+    def test_unmarked_paragraph_changed_fails(self):
+        after = self.legit_after().replace(
+            "Many users keep SessionBox for isolated sessions",
+            "Many users keep SessionBox in separate sessions")
+        r = self.gate(after)
+        self.assertTrue(any(v["check"] == "unmarked_paragraph_changed"
+                            for v in r["violations"]))
+
+    def test_marked_paragraph_rewritten_passes(self):
+        r = self.gate(self.legit_after())
+        self.assertFalse(any(v["check"] == "unmarked_paragraph_changed"
+                             for v in r["violations"]))
+
+    def test_insert_limit_exceeded_fails(self):
+        b = self.blocks(self.legit_after())
+        after = "\n\n".join(b[:2] + ["Extra paragraph one.", "Extra paragraph two."] + b[2:])
+        r = self.gate(after, new_limit=3)
+        self.assertTrue(any(v["check"] == "insert_limit_exceeded"
+                            for v in r["violations"]))
+
+    def test_insert_within_limit_passes(self):
+        after = self.legit_after()
+        r = self.gate(after, new_limit=2)
+        self.assertFalse(any(v["check"] == "insert_limit_exceeded"
+                             for v in r["violations"]))
+
+    # ── 6) word-drop limit ───────────────────────────────────────────────
+    def test_word_drop_exceeded_fails(self):
+        b = self.blocks(self.BEFORE)
+        # keep only: H, renamed heading, disclosure -> >45% word drop
+        after = "\n\n".join([b[0], "## About this guide", self.DISCLOSURE])
+        from seo_agent_pro.agents_v2.gates import body_neutralization_gate
+        r = body_neutralization_gate(
+            self.BEFORE, after, set(range(len(b))),
+            allowed_heading_renames=self.RENAME,
+            allow_proper_nouns=("ExtensionTo",))
+        self.assertTrue(any(v["check"] == "word_drop_exceeded"
+                            for v in r["violations"]))
+
+    def test_word_drop_within_limit_passes(self):
+        r = self.gate(self.legit_after())
+        self.assertFalse(any(v["check"] == "word_drop_exceeded" for v in r["violations"]))
+
+    # ── 7) fabrication gates on the result ───────────────────────────────
+    def test_gates_failed_on_result(self):
+        after = self.legit_after().replace(
+            self.DISCLOSURE,
+            "We tested every candidate on a fresh profile. Results were great.")
+        r = self.gate(after)
+        self.assertTrue(any(v["check"] == "gates_failed_S1S2S3" for v in r["violations"]))
+
+    def test_gates_pass_on_clean_result(self):
+        r = self.gate(self.legit_after())
+        self.assertFalse(any(v["check"] == "gates_failed_S1S2S3" for v in r["violations"]))
+
+    # ── full legitimate scenario ─────────────────────────────────────────
+    def test_full_legit_scenario_passes(self):
+        r = self.gate(self.legit_after())
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_pre_existing_gate_hits_do_not_fail(self):
+        # The renamed-out methodology heading was the fixture's only gate
+        # hit; after a legit neutralization the result gains NO new hits and
+        # the stats report whatever remains (0 here).
+        r = self.gate(self.legit_after())
+        self.assertFalse(any(v["check"] == "gates_failed_S1S2S3"
+                             for v in r["violations"]))
+        self.assertIn("remaining_gate_hits", r["stats"])
+        self.assertEqual(r["stats"]["remaining_gate_hits"], 0)
+
+    def test_repeated_existing_number_passes(self):
+        # "2026" exists in the article; adding one more mention is not a
+        # NEW number (set semantics, not multiset).
+        after = self.legit_after().replace(
+            "check the official listing before installing.",
+            "check the official listing in 2026 before installing.")
+        r = self.gate(after)
+        self.assertFalse(any(v["check"] == "number_new" for v in r["violations"]))
+
+    def test_possessive_proper_noun_passes(self):
+        # paragraph already has "SessionBox"; "SessionBox's" is the same noun
+        after = self.legit_after().replace(
+            "Many users keep SessionBox for isolated sessions.",
+            "Many users keep SessionBox for isolated sessions, and SessionBox's options stay simple.")
+        r = self.gate(after, marked={2, 3, 4, 6})
+        self.assertFalse(any(v["check"] == "proper_noun_new" for v in r["violations"]))
+
+    def test_renamed_heading_anchor_link_allowed(self):
+        after = self.legit_after().replace(
+            "OneTab collapses every tab into a single list.",
+            "OneTab collapses every tab into a single list (see [the guide notes](#about-this-guide)).")
+        renames = [("## How We Tested - Results at 1, 10, and 25 Tabs",
+                    "## About this guide {#about-this-guide}")]
+        r = self.gate(after, marked={2, 3, 4, 6}, renames=renames)
+        self.assertFalse(any(v["check"] == "link_new" for v in r["violations"]))
+
+    def test_heading_line_check_tolerates_toc_block_edits(self):
+        # a TOC bullet is not a heading line; editing it must not trip the
+        # heading check when the real heading lines are unchanged
+        after = self.legit_after()
+        r = self.gate(after)
+        self.assertFalse(any(v["check"] == "heading_changed" for v in r["violations"]))
+
+    def test_bold_sentence_start_token_skipped(self):
+        # "...price.** Running uBlock..." — the token after a bold close is a
+        # sentence start, not a new proper noun
+        after = self.legit_after().replace(
+            "Many users keep SessionBox for isolated sessions.",
+            "Many users keep SessionBox for isolated sessions. **Bottom line: running it is light.**")
+        r = self.gate(after, marked={2, 3, 4, 6})
+        self.assertFalse(any(v["check"] == "proper_noun_new" for v in r["violations"]))
+
+    def test_gate_is_deterministic(self):
+        a = self.gate(self.legit_after())
+        b = self.gate(self.legit_after())
+        self.assertEqual(a, b)
+
+
 if __name__ == "__main__":
     unittest.main()
