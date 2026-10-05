@@ -90,8 +90,12 @@ def _proper_nouns(block: str) -> Counter:
             if not raw or raw.isspace():
                 continue
             prefix = line[: pos - len(raw)]
-            sentence_initial = (li == 0 and pos == len(raw)) or bool(
-                _SENTENCE_BOUNDARY.search(prefix))
+            # strip markdown emphasis/quote chars before testing the boundary
+            # so "...price.** Running" still reads as a sentence start
+            prefix_clean = prefix.rstrip("*_~`#> ")
+            line_initial = prefix.strip() == ""
+            sentence_initial = line_initial or bool(
+                _SENTENCE_BOUNDARY.search(prefix_clean))
             core = raw.strip(_TOKEN_TRIM)
             if sentence_initial or not core or core == "I":
                 continue

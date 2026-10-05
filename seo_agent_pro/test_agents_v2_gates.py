@@ -864,6 +864,15 @@ class TestBodyNeutralization(unittest.TestCase):
         r = self.gate(after)
         self.assertFalse(any(v["check"] == "heading_changed" for v in r["violations"]))
 
+    def test_bold_sentence_start_token_skipped(self):
+        # "...price.** Running uBlock..." — the token after a bold close is a
+        # sentence start, not a new proper noun
+        after = self.legit_after().replace(
+            "Many users keep SessionBox for isolated sessions.",
+            "Many users keep SessionBox for isolated sessions. **Bottom line: running it is light.**")
+        r = self.gate(after, marked={2, 3, 4, 6})
+        self.assertFalse(any(v["check"] == "proper_noun_new" for v in r["violations"]))
+
     def test_gate_is_deterministic(self):
         a = self.gate(self.legit_after())
         b = self.gate(self.legit_after())
