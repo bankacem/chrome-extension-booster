@@ -5,10 +5,7 @@ title: >-
   Chrome Extensions on Opera: Complete Guide to Installation and Compatibility
   (2026)
 slug: chrome-extensions-opera-guide
-excerpt: >-
-  I tested Chrome extensions on Opera, Vivaldi, and Edge. Here is which Chromium
-  browser supports the most extensions, which features are broken, and how to
-  install any Chrome extension in Opera.
+excerpt: 'Chrome extensions on Opera, Vivaldi, and Edge compared: which Chromium browser supports the most extensions, which features are broken, and how to install any Chrome extension in Opera.'
 featured_image: /content/images/chrome-extensions-opera-guide/featured.webp
 category: Productivity & Tools
 tags: []
@@ -16,7 +13,7 @@ keywords:
   - chrome store opera
   - opera chrome extensions
   - use chrome extensions in opera
-meta_description: "Complete guide to using Chrome extensions in Opera browser. Tested compatibility, installation steps, known issues, and comparison with Vivaldi and Edge..."
+meta_description: 'Complete guide to using Chrome extensions in Opera: compatibility, installation steps, known issues, and comparison with Vivaldi and Edge.'
 status: published
 published_at: '2026-05-21T14:15:03.762+00:00'
 scheduled_at: '2026-05-21T14:15:00+00:00'

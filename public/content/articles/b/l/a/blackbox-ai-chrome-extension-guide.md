@@ -1,10 +1,10 @@
 ---
 seo_title: "Blackbox AI Chrome Extension: Setup and Review (2026)"
 id: "542b56db-8162-54a6-ad79-76dfb9c5ef5b"
-title: "Blackbox AI Chrome Extension: Setup, Code Search, and Real Workflow Tests (2026)"
+title: 'Blackbox AI Chrome Extension: Setup and Code Search (2026)'
 slug: blackbox-ai-chrome-extension-guide
-description: "A tested Blackbox AI Chrome extension guide: install and sign in, copy code from videos, use code chat on documentation, tune privacy, and see where it fails."
-excerpt: "I used the Blackbox AI Chrome extension on real documentation and tutorial videos for a week — here is what worked, what didn't, and the settings I changed first."
+description: 'A Blackbox AI Chrome extension guide: install and sign in, copy code from videos, use code chat on documentation, tune privacy, and see where it fails.'
+excerpt: 'The Blackbox AI Chrome extension on documentation and tutorial videos: what works, what does not, and the settings to change first.'
 meta_description: "Install and use the Blackbox AI Chrome extension: code search, copy code from videos, chat with code, privacy settings, and how it compares to alternatives."
 canonicalPath: /blog/blackbox-ai-chrome-extension-guide
 category: AI & Automation

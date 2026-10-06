@@ -3,10 +3,7 @@ seo_title: "Ant Video Downloader Chrome Review 2026"
 id: dff9cd9c-5d22-4e34-b41a-61d5ae653b16
 title: 'Ant Video Downloader Chrome Review 2026: Does It Still Work?'
 slug: ant-video-downloader-chrome
-excerpt: >-
-  I tested Ant Video Downloader Chrome for a week across 15 sites. Here is which
-  sites it downloads from, which companion extensions fill its gaps, and whether
-  it beats the free alternatives.
+excerpt: 'Ant Video Downloader for Chrome reviewed: which sites it downloads from, which companion extensions fill its gaps, and whether it beats the free alternatives.'
 featured_image: /content/images/ant-video-downloader-chrome/featured.webp
 category: Productivity & Tools
 tags:
@@ -19,7 +16,7 @@ keywords:
   - Chrome video downloader
   - download videos from Chrome
   - Ant.com extension
-meta_description: "Ant Video Downloader Chrome reviewed after 7 days of testing. See which sites it works on, which companion tools you need, and whether it is worth..."
+meta_description: 'Ant Video Downloader Chrome reviewed: which sites it works on, which companion tools you need, and whether it is worth installing.'
 status: published
 published_at: '2026-06-05T22:00:00.000000+00:00'
 scheduled_at: null
