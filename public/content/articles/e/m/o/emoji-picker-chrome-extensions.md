@@ -2,8 +2,7 @@
 seo_title: "Emoji Picker Chrome Extensions: Express More in Every Message"
 title: "Emoji Picker Chrome Extensions: Express More in Every Message"
 slug: emoji-picker-chrome-extensions
-excerpt: >-
-  Tested guidance for emoji picker chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for emoji picker chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/emoji-picker-chrome-extensions/featured.webp"
 category: "Lifestyle"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - insert emojis anywhere chrome
   - emoji copy paste extension
   - smiley toolbar chrome tool
-meta_description: >-
-  Emoji picker chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Emoji picker chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-22T00:00:00.000Z
 updated_at: 2026-09-22T21:52:46.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "25"
 canonicalPath: /blog/emoji-picker-chrome-extensions
-description: >-
-  Emoji picker chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Emoji picker chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/emoji-picker-chrome-extensions/featured.webp" alt="Emoji Picker Chrome Extensions: Express More in Every Message" width="1200" height="630" loading="lazy" class="featured-image">

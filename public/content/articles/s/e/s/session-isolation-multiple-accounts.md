@@ -2,8 +2,7 @@
 seo_title: "One Browser, Many Identities: Session-Isolation Extensions for Multiple Accounts"
 title: "One Browser, Many Identities: Session-Isolation Extensions for Multiple Accounts"
 slug: session-isolation-multiple-accounts
-excerpt: >-
-  Tested guidance for use multiple accounts same website chrome: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for use multiple accounts same website chrome: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/session-isolation-multiple-accounts/featured.webp"
 category: "Browser Tools"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - separate cookie jars browser
   - chrome multi login tool
   - parallel account sessions chrome
-meta_description: >-
-  Use multiple accounts same website chrome — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo...
+meta_description: 'Use multiple accounts same website chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-21T00:00:00.000Z
 updated_at: 2026-09-21T10:41:45.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "29"
 canonicalPath: /blog/session-isolation-multiple-accounts
-description: >-
-  Use multiple accounts same website chrome — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo...
+description: 'Use multiple accounts same website chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/session-isolation-multiple-accounts/featured.webp" alt="One Browser, Many Identities: Session-Isolation Extensions for Multiple Accounts" width="1200" height="630" loading="lazy" class="featured-image">

@@ -2,8 +2,7 @@
 seo_title: "Cookie Consent Blockers for Chrome: Stop Banner Pop-Ups for Good"
 title: "Cookie Consent Blockers for Chrome: Stop Banner Pop-Ups for Good (2026)"
 slug: cookie-consent-blocker-chrome
-excerpt: >-
-  Tested guidance for cookie consent blocker chrome: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for cookie consent blocker chrome: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/cookie-consent-blocker-chrome/featured.webp"
 category: "Privacy & Security"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - gdpr banner remover chrome
   - auto reject non essential cookies
   - stop cookie popups browser
-meta_description: >-
-  Cookie consent blocker chrome — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Cookie consent blocker chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-21T00:00:00.000Z
 updated_at: 2026-09-21T10:41:45.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "24"
 canonicalPath: /blog/cookie-consent-blocker-chrome
-description: >-
-  Cookie consent blocker chrome — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Cookie consent blocker chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/cookie-consent-blocker-chrome/featured.webp" alt="Cookie Consent Blockers for Chrome: Stop Banner Pop-Ups for Good (2026)" width="1200" height="630" loading="lazy" class="featured-image">
