@@ -2,8 +2,7 @@
 seo_title: "Website Blocker Chrome Extensions: Build Your Own Distraction Firewall"
 title: "Website Blocker Chrome Extensions: Build Your Own Distraction Firewall"
 slug: website-blocker-focus-chrome
-excerpt: >-
-  Tested guidance for website blocker chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for website blocker chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/website-blocker-focus-chrome/featured.webp"
 category: "Productivity"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - focus firewall browser
   - schedule site blocking chrome
   - stayfocused alternative
-meta_description: >-
-  Website blocker chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Website blocker chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-22T00:00:00.000Z
 updated_at: '2026-09-23T14:07:53.000+00:00'
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "27"
 canonicalPath: /blog/website-blocker-focus-chrome
-description: >-
-  Website blocker chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Website blocker chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/website-blocker-focus-chrome/featured.webp" alt="Website Blocker Chrome Extensions: Build Your Own Distraction Firewall" width="1200" height="630" loading="lazy" class="featured-image">

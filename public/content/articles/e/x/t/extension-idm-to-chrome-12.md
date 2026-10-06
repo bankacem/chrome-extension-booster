@@ -9,7 +9,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - extension idm to chrome
-meta_description: "A hands-on look at integrate extension idm to chrome for enhanced browsing experience, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at integrate extension idm to chrome for enhanced browsing experience, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-02-14T08:11:01.224+00:00'
 scheduled_at: '2026-02-14T08:11:00+00:00'
