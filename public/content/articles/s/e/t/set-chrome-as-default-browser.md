@@ -3,9 +3,7 @@ seo_title: "How to Set Chrome as Default Browser"
 id: 084ae035-0061-4a99-858f-d302fe02fb08
 title: How to Set Chrome as Default Browser on Windows and Mac (Chrome Par Defaut)
 slug: set-chrome-as-default-browser
-excerpt: >-
-  I tested 4 methods to set Chrome as your default browser across Windows 11 and
-  macOS. Here is the fastest way to make Chrome par defaut on any device.
+excerpt: '4 methods to set Chrome as your default browser across Windows 11 and macOS: the fastest way to make Chrome par defaut on any device.'
 featured_image: /content/images/set-chrome-as-default-browser/featured.webp
 category: Productivity & Tools
 tags: []
@@ -13,9 +11,7 @@ keywords:
   - set chrome as default browser
   - chrome par defaut
   - make chrome default
-meta_description: >-
-  I tested 4 methods to set Chrome as your default browser on Windows 11 and
-  macOS Sonoma. Here is the fastest way with step-by-step screenshots.
+meta_description: '4 methods to set Chrome as your default browser on Windows 11 and macOS: the fastest route, with step-by-step screenshots.'
 status: published
 published_at: '2026-05-22T18:15:00.401+00:00'
 scheduled_at: '2026-05-22T18:15:00+00:00'

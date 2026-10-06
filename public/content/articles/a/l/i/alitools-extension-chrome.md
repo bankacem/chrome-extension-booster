@@ -3,10 +3,7 @@ seo_title: "AliTools Extension Chrome"
 id: efcbf65f-81a0-4a90-bc3d-daf55a4ff712
 title: 'AliTools Extension Chrome: The Ultimate Alibaba Shopping Companion'
 slug: alitools-extension-chrome
-excerpt: >-
-  I tested AliTools for two weeks of Alibaba sourcing. Here is how it compares
-  to manual searching, which extensions to pair it with, and whether it actually
-  saves you money.
+excerpt: 'AliTools for Alibaba sourcing compared with manual searching: which extensions to pair it with, and whether it actually saves you money.'
 featured_image: /content/images/alitools-extension-chrome/featured.webp
 category: Productivity & Tools
 tags:
@@ -19,9 +16,7 @@ keywords:
   - Alibaba Chrome extension
   - supplier finder
   - Alibaba price comparison
-meta_description: >-
-  AliTools Extension Chrome reviewed after 14 days. See how it compares to
-  manual Alibaba sourcing and which browser tools fill its gaps.
+meta_description: 'AliTools Extension Chrome reviewed: how it compares to manual Alibaba sourcing and which browser tools fill its gaps for 2026.'
 status: published
 published_at: '2026-06-05T18:00:00.000000+00:00'
 scheduled_at: null

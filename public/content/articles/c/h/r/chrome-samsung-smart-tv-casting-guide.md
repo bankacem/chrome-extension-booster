@@ -3,9 +3,9 @@ seo_title: "Cast Chrome to Samsung Smart TV: 4 Methods and Fixes"
 id: "c8c4e667-4753-555e-b17a-b59d29ccffbd"
 title: "Chrome to Samsung Smart TV Casting: 4 Working Methods and Fixes (2026)"
 slug: chrome-samsung-smart-tv-casting-guide
-description: "Four tested ways to cast Chrome to a Samsung Smart TV from Windows, Mac, Android, and iPhone — with fixes for black screens, missing sound, and stuttering."
-excerpt: "I cast Chrome to three different Samsung TVs to find the methods that actually hold up — including the fixes for the black-screen DRM problem most guides ignore."
-meta_description: "Cast Chrome from Windows, Mac, Android, and iPhone to a Samsung Smart TV using four tested methods, plus fixes for black screens, no sound, and dropped casts."
+description: 'Four working ways to cast Chrome to a Samsung Smart TV from Windows, Mac, Android, and iPhone — with fixes for black screens, missing sound, and stuttering.'
+excerpt: The casting methods that hold up on Samsung TVs — including fixes for the black-screen DRM problem most guides ignore.
+meta_description: 'Cast Chrome from Windows, Mac, Android, and iPhone to a Samsung Smart TV with four working methods, plus fixes for black screens, no sound, and dropped casts.'
 canonicalPath: /blog/chrome-samsung-smart-tv-casting-guide
 category: Guides & Comparisons
 tags:
