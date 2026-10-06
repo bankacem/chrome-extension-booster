@@ -3,10 +3,7 @@ seo_title: "Antidote Extension Chrome Review 2026"
 id: c31f1016-b24b-411f-9555-14f85d20ec50
 title: 'Antidote Extension Chrome Review 2026: Best French Writing Assistant?'
 slug: antidote-extension-chrome
-excerpt: >-
-  I tested Antidote Chrome extension for two weeks of French and English
-  writing. Here is how it compares to Grammarly and ProWritingAid, and which
-  companion extensions every writer needs.
+excerpt: 'Antidote Chrome extension for French and English writing: how it compares to Grammarly and ProWritingAid, and which companion extensions every writer needs.'
 featured_image: /content/images/antidote-extension-chrome/featured.webp
 category: Productivity & Tools
 tags:
@@ -19,7 +16,7 @@ keywords:
   - Antidote vs Grammarly
   - French writing tool
   - Chrome grammar checker
-meta_description: "Antidote Chrome extension reviewed after 14 days. See how it compares to Grammarly and ProWritingAid for French and English writing, and which companions..."
+meta_description: 'Antidote Chrome extension reviewed against Grammarly and ProWritingAid for French and English writing, and the companion extensions every writer needs.'
 status: published
 published_at: '2026-06-06T04:00:00.000000+00:00'
 scheduled_at: null

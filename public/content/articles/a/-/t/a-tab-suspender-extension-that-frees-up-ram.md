@@ -9,7 +9,7 @@ category: "Productivity & Tools"
 tags: []
 keywords:
   - best extension to suspend tabs
-meta_description: "A hands-on look at a tab suspender extension that frees up ram, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at a tab suspender extension that frees up ram, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-03-24T08:00:00.495+00:00'
 scheduled_at: '2026-03-24T08:00:00+00:00'
