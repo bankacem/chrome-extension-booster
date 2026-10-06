@@ -9,7 +9,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - extension chrome mobile
-meta_description: "A hands-on look at extensions to work on chrome mobile, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at extensions to work on chrome mobile, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-02-12T08:11:01.173+00:00'
 scheduled_at: '2026-02-12T08:11:00+00:00'

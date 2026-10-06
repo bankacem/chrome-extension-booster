@@ -2,8 +2,7 @@
 seo_title: "Watch Party Chrome Extensions: Stream Together From Anywhere"
 title: "Watch Party Chrome Extensions: Stream Together From Anywhere (2026)"
 slug: watch-party-chrome-extensions
-excerpt: >-
-  Tested guidance for watch party chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for watch party chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/watch-party-chrome-extensions/featured.webp"
 category: "Entertainment"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - watch streaming together online
   - amazon prime video watch party
   - sync video playback friends browser
-meta_description: >-
-  Watch party chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Watch party chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-21T00:00:00.000Z
 updated_at: '2026-09-23T14:07:53.000+00:00'
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "24"
 canonicalPath: /blog/watch-party-chrome-extensions
-description: >-
-  Watch party chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Watch party chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/watch-party-chrome-extensions/featured.webp" alt="Watch Party Chrome Extensions: Stream Together From Anywhere (2026)" width="1200" height="630" loading="lazy" class="featured-image">

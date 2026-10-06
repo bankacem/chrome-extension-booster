@@ -2,8 +2,7 @@
 seo_title: "Screenshot-to-Text OCR Extensions: Copy Any Text From Any Image"
 title: "Screenshot-to-Text OCR Extensions: Copy Any Text From Any Image"
 slug: screenshot-ocr-text-extractor-extensions
-excerpt: >-
-  Tested guidance for ocr chrome extension screenshot: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for ocr chrome extension screenshot: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/screenshot-ocr-text-extractor-extensions/featured.webp"
 category: "Browser Tools"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - text extractor extension
   - image to text chrome tool
   - ocr screenshot translator
-meta_description: >-
-  Ocr chrome extension screenshot — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Ocr chrome extension screenshot — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-27T00:00:00.000Z
 updated_at: 2026-09-27T23:57:56.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "22"
 canonicalPath: /blog/screenshot-ocr-text-extractor-extensions
-description: >-
-  Ocr chrome extension screenshot — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Ocr chrome extension screenshot — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/screenshot-ocr-text-extractor-extensions/featured.webp" alt="Screenshot-to-Text OCR Extensions: Copy Any Text From Any Image" width="1200" height="630" loading="lazy" class="featured-image">

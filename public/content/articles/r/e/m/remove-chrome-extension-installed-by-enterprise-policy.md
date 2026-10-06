@@ -3,7 +3,7 @@ seo_title: Remove Chrome Extension Installed by Enterprise Policy
 id: b7f3a2d1-9c46-4e58-8a1f-3d5e7c92b4a0
 title: How to Remove a Chrome Extension Installed by Enterprise Policy (2026)
 slug: remove-chrome-extension-installed-by-enterprise-policy
-description: A tested, step-by-step ladder for removing policy-forced Chrome extensions on Windows, macOS, and Linux — plus how to tell malware from real IT management.
+description: 'A step-by-step ladder for removing policy-forced Chrome extensions on Windows, macOS, and Linux — plus how to tell malware from real IT management.'
 excerpt: "Can't uninstall a Chrome extension because it's 'installed by your administrator'? Here's the full removal ladder for Windows, macOS, and Linux in Chrome 130+."
 meta_description: "Chrome extension won't uninstall? Learn to diagnose chrome://policy, clear registry and profile policies, and stop the extension from coming back."
 canonicalPath: /blog/remove-chrome-extension-installed-by-enterprise-policy

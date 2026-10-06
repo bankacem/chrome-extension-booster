@@ -11,7 +11,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - extension adblock chrome android
-meta_description: "A hands-on look at ad-free browsing on chrome android, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at ad-free browsing on chrome android, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-05-06T06:15:00.317+00:00'
 scheduled_at: '2026-05-06T06:15:00+00:00'

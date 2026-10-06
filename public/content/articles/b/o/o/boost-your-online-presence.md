@@ -9,7 +9,7 @@ category: "Social Media Tools"
 tags: []
 keywords:
   - chrome extension for social media marketing
-meta_description: "A hands-on guide to every chrome extension for social media marketing worth installing in 2026, from scheduling and analytics to AI captions."
+meta_description: 'A guide to every chrome extension for social media marketing worth installing in 2026, from scheduling and analytics to AI captions.'
 status: published
 published_at: '2026-04-20T06:15:00.801+00:00'
 scheduled_at: '2026-04-20T06:15:00+00:00'

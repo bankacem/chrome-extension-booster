@@ -3,9 +3,7 @@ seo_title: "Why Chrome est Très Lent"
 id: 8ff0d74e-f783-4951-a579-bf707245aa98
 title: 'Why Chrome est Très Lent: Solutions to Speed Up Your Browser'
 slug: chrome-est-tres-lent
-excerpt: >-
-  I tested Chrome against Edge, Opera GX, and Brave to find out why Chrome is so
-  slow. Here are the real reasons and the fixes that actually work.
+excerpt: 'Chrome compared with Edge, Opera GX, and Brave to find out why Chrome is so slow: the real reasons and the fixes that actually work.'
 featured_image: /content/images/chrome-est-tres-lent/featured.webp
 category: Productivity & Tools
 tags: []
@@ -14,9 +12,7 @@ keywords:
   - chrome slow
   - speed up chrome
   - chrome memory fix
-meta_description: >-
-  I tested Chrome against 3 competitors measuring RAM, startup time, and page
-  load speeds. Here is why Chrome is slow and exactly how to fix it.
+meta_description: 'Chrome compared with 3 competitors on RAM, startup time, and page load speeds: why Chrome is slow and exactly how to fix it.'
 status: published
 published_at: '2026-05-25T02:15:00.524+00:00'
 scheduled_at: '2026-05-25T02:15:00+00:00'
