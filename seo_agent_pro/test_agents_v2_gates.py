@@ -9,8 +9,11 @@ import re
 import unittest
 
 from seo_agent_pro.agents_v2.gates import (
-    S1_PATTERNS, S2_PATTERNS, S1_PROPOSED_PATTERNS, fabrication_gate,
+    S1_PATTERNS, S2_PATTERNS, S1_PROPOSED_PATTERNS, S1_V3_PATTERNS,
+    fabrication_gate,
     FM_FIELDS, FM_HONESTY_PATTERNS, frontmatter_honesty_gate,
+    body_neutralization_gate,
+    scan_attribution_numbers, scan_unattributed_table_cells, unattributed_gate,
 )
 
 # Per-pattern positive probes: each MUST be flagged.
@@ -286,6 +289,7 @@ class TestS1ProposedWired(unittest.TestCase):
 
     def test_gate_flags_proposed_phrasings(self):
         proposed = {name for name, _ in S1_PROPOSED_PATTERNS}
+        v3 = {name for name, _ in S1_V3_PATTERNS}
         for name, text in self.PROBES.items():
             r = fabrication_gate(text)
             self.assertIn("S1", r["failed_severities"], msg=text)
@@ -293,9 +297,9 @@ class TestS1ProposedWired(unittest.TestCase):
             self.assertIn(name, hit_names,
                           f"gate must attribute {name} to the wired proposal")
             # every hit on these single-sentence probes belongs to an
-            # approved pattern (active or proposed), never to an unknown one
+            # approved pattern (active/proposed/V3), never to an unknown one
             self.assertTrue(hit_names <= proposed |
-                            {n for n, _ in S1_PATTERNS}, msg=text)
+                            {n for n, _ in S1_PATTERNS} | v3, msg=text)
 
     def test_wired_union_is_scanned(self):
         # the gate iterates the CONCATENATION, in order, base first
@@ -877,6 +881,285 @@ class TestBodyNeutralization(unittest.TestCase):
         a = self.gate(self.legit_after())
         b = self.gate(self.legit_after())
         self.assertEqual(a, b)
+
+
+class TestS1V3PerPattern(unittest.TestCase):
+    """Owner brief 2026-10-06 item 1: the seven V3 first-person/testing
+    families — one positive (MUST flag) and one legitimate negative (must
+    NOT flag) probe per pattern, plus provenance wiring."""
+
+    POSITIVE = {
+        "v3_prep_testing":      "After extensive testing across five machines, the winner was clear.",
+        "v3_extensive_testing": "The guide is the product of extensive testing.",
+        "v3_testing_dozens":    "After testing dozens of ad blockers, two stood out.",
+        "v3_based_on_my":       "Based on my experience, lighter extensions age better.",
+        "v3_i_have_seen":       "I've seen a single YouTube tab eat 900 MB of RAM.",
+        "v3_my_noun":           "My setup pairs uBlock Origin with a DNS filter.",
+        "v3_i_recommend":       "I recommend starting with a single blocker.",
+    }
+    NEGATIVE = {
+        "v3_prep_testing":      "Results can shift after the testing window closes.",
+        "v3_extensive_testing": "The vendor's changelog documents extensive test coverage improvements.",
+        "v3_testing_dozens":    "Hundreds of settings live behind chrome://flags; testing them all is impractical.",
+        "v3_based_on_my":       "The checklist is based on my colleague's published notes.",
+        "v3_i_have_seen":       "Readers have seen this error when the store cache is stale.",
+        "v3_my_noun":           "The guide keeps my recommendations limited to documented features.",
+        "v3_i_recommend":       "Experts recommend enabling one filter list at a time.",
+    }
+
+    def test_each_v3_pattern_matches_positive(self):
+        by_name = dict(S1_V3_PATTERNS)
+        self.assertEqual(set(by_name), set(self.POSITIVE))
+        for name, text in self.POSITIVE.items():
+            self.assertTrue(re.search(by_name[name], text, re.I), msg=name)
+
+    def test_each_v3_legitimate_negative_is_clean(self):
+        by_name = dict(S1_V3_PATTERNS)
+        for name, text in self.NEGATIVE.items():
+            self.assertFalse(re.search(by_name[name], text, re.I),
+                             msg=f"{name} must not match: {text}")
+
+    def test_gate_flags_v3_with_provenance(self):
+        active = {n for n, _ in S1_PATTERNS}
+        proposed = {n for n, _ in S1_PROPOSED_PATTERNS}
+        v3 = {n for n, _ in S1_V3_PATTERNS}
+        self.assertTrue(active & v3 == set() and proposed & v3 == set())
+        for name, text in self.POSITIVE.items():
+            r = fabrication_gate(text)
+            self.assertIn("S1", r["failed_severities"], msg=text)
+            hit_names = {h["pattern"] for h in r["S1"]}
+            self.assertIn(name, hit_names, msg=text)
+            self.assertTrue(hit_names <= active | proposed | v3, msg=text)
+
+    def test_full_form_and_curly_apostrophe_match(self):
+        by_name = dict(S1_V3_PATTERNS)
+        self.assertTrue(re.search(by_name["v3_i_have_seen"],
+                                  "I have seen this bug reported.", re.I))
+        self.assertTrue(re.search(by_name["v3_i_have_seen"],
+                                  "I\u2019ve been there too.", re.I))
+        self.assertTrue(re.search(by_name["v3_i_have_seen"],
+                                  "I've tried three DNS filters.", re.I))
+
+
+class TestUnattributedAttribution(unittest.TestCase):
+    """unattributed.scan_attribution_numbers — entity-attributed quantity
+    with no same-sentence source link."""
+
+    def test_positive_percent_no_link(self):
+        hits = scan_attribution_numbers(
+            "According to Google, Chrome can use 30% more memory without a blocker.")
+        self.assertEqual(len(hits), 1)
+        self.assertEqual(hits[0]["entity"], "Google")
+
+    def test_positive_unit_quantity(self):
+        hits = scan_attribution_numbers(
+            "According to Mozilla, the browser recovered 2 GB of RAM in their study.")
+        self.assertEqual(len(hits), 1)
+        self.assertEqual(hits[0]["quantity"], "2 GB")
+
+    def test_negative_link_in_same_sentence(self):
+        body = ("According to [Google's documentation]"
+                "(https://developers.google.com/web), Chrome can use 30% more memory.")
+        self.assertEqual(scan_attribution_numbers(body), [])
+
+    def test_negative_no_quantity(self):
+        self.assertEqual(scan_attribution_numbers(
+            "According to Google, extensions improve the browsing experience."), [])
+
+    def test_negative_version_only(self):
+        # declared exclusion: version tokens are not quantities
+        self.assertEqual(scan_attribution_numbers(
+            "According to Mozilla, Firefox 130.0 ships the change."), [])
+
+    def test_negative_unlisted_entity(self):
+        self.assertEqual(scan_attribution_numbers(
+            "According to RandomBlog, Chrome uses 40% more RAM."), [])
+
+    def test_negative_quote_exception(self):
+        body = "> According to Google, Chrome uses 30% more memory [source](https://example.com/source)."
+        self.assertEqual(scan_attribution_numbers(body), [])
+
+    def test_gate_wrapper_reports_family(self):
+        r = unattributed_gate("According to Google, Chrome saves 40% battery.")
+        self.assertFalse(r["pass"])
+        self.assertEqual(len(r["attribution_numbers"]), 1)
+
+
+class TestUnattributedTables(unittest.TestCase):
+    """unattributed.scan_unattributed_table_cells — measurement values under
+    measurement-indicating column headers."""
+
+    TABLE = ("| Extension | Memory Usage | Effectiveness |\n"
+             "|---|---|---|\n"
+             "| Light Popup Blocker | 8-12MB | 92% |\n"
+             "| uBlock Origin | 15-25MB | 95% |\n")
+
+    def test_positive_range_and_percent(self):
+        hits = scan_unattributed_table_cells(self.TABLE)
+        self.assertEqual(len(hits), 4)  # 2 rows x 2 measure columns
+        self.assertEqual({h["header"] for h in hits},
+                         {"Memory Usage", "Effectiveness"})
+
+    def test_positive_battery_header(self):
+        table = ("| Configuration | Battery used |\n|---|---|\n"
+                 "| Chrome | 6.1% |\n")
+        hits = scan_unattributed_table_cells(table)
+        self.assertEqual(len(hits), 1)
+        self.assertEqual(hits[0]["cell"], "6.1%")
+
+    def test_negative_qualitative_cells(self):
+        table = ("| Extension | Memory Usage | Effectiveness |\n"
+                 "|---|---|---|\n"
+                 "| Light Popup Blocker | Not independently tested | Not independently tested |\n"
+                 "| uBlock Origin | Low | High |\n")
+        self.assertEqual(scan_unattributed_table_cells(table), [])
+
+    def test_negative_non_measure_header(self):
+        table = ("| Extension | Price |\n|---|---|\n"
+                 "| Pro Blocker | $19.99/year |\n")
+        self.assertEqual(scan_unattributed_table_cells(table), [])
+
+    def test_negative_no_table(self):
+        self.assertEqual(scan_unattributed_table_cells(
+            "It uses 8-12MB of memory in testing."), [])
+
+
+class TestBodyNeutralizationMarkedTables(unittest.TestCase):
+    """Owner brief 2026-10-06 item 2: the narrow marked-table license —
+    accepted-strings cell swaps only, structure fully preserved."""
+
+    BEFORE = (
+        "Intro paragraph stays put.\n"
+        "\n"
+        "| Feature | Chrome Memory Saver | Tab Snooze |\n"
+        "|---|---|---|\n"
+        "| Memory Savings (Typical) | 30-40% | 25-40% |\n"
+        "| Automatic Suspension | Yes (time-based) | Yes (time-based) |\n"
+        "\n"
+        "Closing paragraph stays put.\n"
+    )
+    MARKED_TABLE_BLOCK = 1
+
+    def _gate(self, after, marked=(0, 1, 2), **kw):
+        return body_neutralization_gate(self.BEFORE, after, marked=list(marked), **kw)
+
+    def test_accepts_cell_swap_to_accepted_string(self):
+        after = self.BEFORE.replace("| 30-40% | 25-40% |",
+                                    "| Not independently tested | Not independently tested |")
+        r = self._gate(after, allow_marked_table_edits=True)
+        self.assertEqual(r["violations"], [])
+
+    def test_accepts_extra_accepted_string_allowlist(self):
+        after = self.BEFORE.replace("| 30-40% | 25-40% |", "| Low | High |")
+        r = self._gate(after, allow_marked_table_edits=True,
+                       allowed_table_cell_values=["Not independently tested", "Low", "High"])
+        self.assertEqual(r["violations"], [])
+
+    def test_fails_without_license_flag(self):
+        after = self.BEFORE.replace("| 30-40% | 25-40% |",
+                                    "| Not independently tested | Not independently tested |")
+        r = self._gate(after)
+        self.assertTrue(any(v["check"] == "table_row_changed"
+                            for v in r["violations"]))
+
+    def test_fails_when_table_block_unmarked(self):
+        after = self.BEFORE.replace("| 30-40% | 25-40% |",
+                                    "| Not independently tested | Not independently tested |")
+        r = self._gate(after, marked=(0, 2), allow_marked_table_edits=True)
+        self.assertTrue(any(v["check"] == "table_row_changed"
+                            for v in r["violations"]))
+
+    def test_fails_on_header_change(self):
+        after = self.BEFORE.replace(
+            "| Feature | Chrome Memory Saver | Tab Snooze |",
+            "| Feature | Memory Saver | Tab Snooze |")
+        r = self._gate(after, allow_marked_table_edits=True)
+        self.assertTrue(any("header/separator" in v["detail"]
+                            for v in r["violations"]))
+
+    def test_fails_on_row_count_change(self):
+        after = self.BEFORE.replace(
+            "| Automatic Suspension | Yes (time-based) | Yes (time-based) |\n", "")
+        r = self._gate(after, allow_marked_table_edits=True)
+        self.assertTrue(any(v["check"] == "table_row_changed"
+                            for v in r["violations"]))
+
+    def test_fails_on_first_column_change(self):
+        after = self.BEFORE.replace("| Memory Savings (Typical) |",
+                                    "| Memory Savings |")
+        r = self._gate(after, allow_marked_table_edits=True)
+        self.assertTrue(any("first column changed" in v["detail"]
+                            for v in r["violations"]))
+
+    def test_fails_on_cell_text_outside_accepteds(self):
+        after = self.BEFORE.replace("| 30-40% | 25-40% |", "| Around a third | 25-40% |")
+        r = self._gate(after, allow_marked_table_edits=True)
+        self.assertTrue(any("not in accepted strings" in v["detail"]
+                            for v in r["violations"]))
+
+    def test_fails_on_new_number_inside_cell_even_from_allowlist_bypass(self):
+        # a cell value with a NEW number can never be licensed: exact
+        # allowlist matching means fabricated values must be added to the
+        # allowlist explicitly (owner's call), and number_new fires regardless
+        after = self.BEFORE.replace("| 30-40% | 25-40% |", "| 35% | 25-40% |")
+        r = self._gate(after, allow_marked_table_edits=True,
+                       allowed_table_cell_values=["35%"])
+        self.assertTrue(any(v["check"] == "number_new" for v in r["violations"]))
+
+    def test_disclaimer_insert_whitelist(self):
+        after = self.BEFORE.replace(
+            "| Automatic Suspension | Yes (time-based) | Yes (time-based) |\n",
+            "| Automatic Suspension | Yes (time-based) | Yes (time-based) |\n"
+            "\n"
+            "Figures are not independently verified; check each product's official listing.\n"
+        ).replace("| 30-40% | 25-40% |", "| Not independently tested | Not independently tested |")
+        r = self._gate(after, allow_marked_table_edits=True,
+                       allowed_new_paragraph_texts=[
+                           "Figures are not independently verified; "
+                           "check each product's official listing."])
+        self.assertEqual(r["violations"], [])
+
+    def test_unwhitelisted_insert_still_flagged(self):
+        after = self.BEFORE.replace(
+            "| Automatic Suspension | Yes (time-based) | Yes (time-based) |\n",
+            "| Automatic Suspension | Yes (time-based) | Yes (time-based) |\n"
+            "\n"
+            "Sponsored trials by FreshBlock show 55% faster browsing.\n")
+        r = self._gate(after, allow_marked_table_edits=True,
+                       allowed_new_paragraph_texts=["unrelated"])
+        checks = {v["check"] for v in r["violations"]}
+        self.assertTrue("number_new" in checks and "proper_noun_new" in checks,
+                        msg=checks)
+
+
+class TestUnattributedInOutput(unittest.TestCase):
+    """body_neutralization_gate check 8: the result must not introduce new
+    unattributed hits (subset semantics, same as S1/S2/S3)."""
+
+    BEFORE = "Plain paragraph one.\n\nMarked paragraph with a claim.\n\nPlain paragraph three.\n"
+
+    def test_new_attribution_in_marked_paragraph_fails(self):
+        after = self.BEFORE.replace(
+            "Marked paragraph with a claim.",
+            "Marked paragraph. According to Google, Chrome uses 30% less memory.")
+        r = body_neutralization_gate(self.BEFORE, after, marked=[1])
+        self.assertTrue(any(v["check"] == "unattributed_new"
+                            for v in r["violations"]))
+
+    def test_preexisting_attribution_not_flagged(self):
+        before = self.BEFORE.replace(
+            "Marked paragraph with a claim.",
+            "Marked paragraph. According to Google, Chrome uses 30% less memory.")
+        r = body_neutralization_gate(before, before, marked=[1])
+        self.assertFalse(any(v["check"] == "unattributed_new"
+                            for v in r["violations"]))
+
+    def test_stats_report_remaining_unattributed(self):
+        r = body_neutralization_gate(
+            self.BEFORE, self.BEFORE.replace(
+                "Marked paragraph with a claim.",
+                "Marked. According to Mozilla, tests show 2 GB savings."), marked=[1])
+        self.assertEqual(r["stats"]["remaining_unattributed_hits"], 1)
 
 
 if __name__ == "__main__":

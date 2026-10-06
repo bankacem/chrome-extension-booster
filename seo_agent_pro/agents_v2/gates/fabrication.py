@@ -53,6 +53,10 @@ patterns proposed in DRAFT PR #483 are now active — fabrication_gate()
 iterates S1_PATTERNS + S1_PROPOSED_PATTERNS. They stay a separate tuple so
 per-pattern provenance remains visible in reports and tests.
 
+S1 V3 extension WIRED (owner brief 2026-10-06, item 1): seven more
+first-person/testing families (S1_V3_PATTERNS) join the scan — same
+detection semantics, same provenance discipline.
+
 Frontmatter honesty gate (owner brief 2026-10-05, item 1): task G proved
 the body-only gate is blind to marketing copy — the memory-saver article
 has S1=0 body while title/meta/excerpt carry "9 Tested Fixes", "We
@@ -123,6 +127,37 @@ S1_PROPOSED_PATTERNS: List[Tuple[str, str]] = [
     ("i_verbs",            r"\bI (?:measured|ran|threw|installed)\b"),
     ("i_found_that",       r"\bI found that\b"),
     ("in_testing_comma",   r"\bin testing,"),
+]
+
+# ─────────────────────────────────────────────────────────────
+# S1 V3 EXTENSION — WIRED (owner brief 2026-10-06, item 1)
+# ─────────────────────────────────────────────────────────────
+# Seven first-person/testing families dictated verbatim by the owner:
+#   1. (after|following|through|with) [intensifier]? testing
+#   2. extensive testing
+#   3. testing (dozens|hundreds)
+#   4. based on my (experience|testing|research)
+#   5. I('ve| have) (seen|found|encountered|noticed|observed|used|tried|
+#      been there)
+#   6. my (experience|testing|recommendation|setup)
+#   7. I (recommend|suggest|particularly|personally)
+# Notes:
+#   * Patterns 1/3 require DIRECT adjacency ("after the testing" does NOT
+#     match pattern 1 — the optional intensifier does not absorb articles).
+#   * Pattern 5 matches the contracted ('ve, including the curly-apostrophe
+#     form) and full ("I have") variants; "been there" covers the personal
+#     anecdote opener ("I've been there too").
+#   * Case-insensitive like the rest of S1 (title-case "I Recommend" in
+#     headings must flag); \b guards exclude "testing" inside other words.
+#   * Kept a separate tuple so provenance stays visible in reports/tests.
+S1_V3_PATTERNS: List[Tuple[str, str]] = [
+    ("v3_prep_testing",     r"\b(?:after|following|through|with)\s+(?:(?:extensive|thorough|rigorous|hands[- ]on|months\s+of)\s+)?testing\b"),
+    ("v3_extensive_testing", r"\bextensive testing\b"),
+    ("v3_testing_dozens",   r"\btesting\s+(?:dozens|hundreds)\b"),
+    ("v3_based_on_my",      r"\bbased\s+on\s+my\s+(?:experience|testing|research)\b"),
+    ("v3_i_have_seen",      r"\bI(?:['\u2019]ve|\s+have)\s+(?:seen|found|encountered|noticed|observed|used|tried|been\s+there)\b"),
+    ("v3_my_noun",          r"\bmy\s+(?:experience|testing|recommendation|setup)\b"),
+    ("v3_i_recommend",      r"\bI\s+(?:recommend|suggest|particularly|personally)\b"),
 ]
 
 # ─────────────────────────────────────────────────────────────
@@ -328,9 +363,10 @@ def fabrication_gate(body: str) -> Dict:
     Returns {pass, failed_severities, S1, S2, S3} where each Sx is a list of
     {pattern, samples(≤3)} / {product, trigger, sentence} entries."""
     s1_hits, s2_hits = [], []
-    # WIRED per owner approval 2026-10-05: active S1 = base patterns + the
-    # approved proposed extension. Same scanning semantics for both tuples.
-    for name, rx in S1_PATTERNS + S1_PROPOSED_PATTERNS:
+    # WIRED per owner approval 2026-10-05 + owner brief 2026-10-06: active
+    # S1 = base patterns + approved proposed extension + V3 families. Same
+    # scanning semantics for all three tuples.
+    for name, rx in S1_PATTERNS + S1_PROPOSED_PATTERNS + S1_V3_PATTERNS:
         # Fabrication phrasing is flagged regardless of sentence position
         # (mid-sentence "we tested" vs leading "We tested"), so S1 compiles
         # case-insensitively — EXCEPT "certified": the fake-bio signal is the

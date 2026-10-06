@@ -133,6 +133,158 @@ def _faq_questions(body: str) -> List[str]:
     return lines_out
 
 
+# ── marked-table comparison (owner brief 2026-10-06 item 2) ──────────────
+
+def _line_block_indices(body: str) -> List[int]:
+    """Block index for every line (empty lines -> -1), mirroring _blocks."""
+    out: List[int] = []
+    idx = -1
+    seen_any = False
+    for line in body.splitlines():
+        if line.strip():
+            if not seen_any:
+                idx += 1
+                seen_any = True
+            out.append(idx)
+        else:
+            seen_any = False
+            out.append(-1)
+    return out
+
+
+def _tables(body: str) -> List[Tuple[int, List[str]]]:
+    """(block_index, [header, separator, *data rows]) per contiguous table."""
+    out: List[Tuple[int, List[str]]] = []
+    lines = body.splitlines()
+    lb = _line_block_indices(body)
+    i = 0
+    while i < len(lines):
+        if lines[i].lstrip().startswith("|") and i + 1 < len(lines) \
+                and re.match(r"^\s*\|[-| :]+\|\s*$", lines[i + 1]):
+            blk = lb[i]
+            j = i + 2
+            while j < len(lines) and lines[j].lstrip().startswith("|") \
+                    and lb[j] == blk:
+                j += 1
+            out.append((blk, lines[i:j]))
+            i = j
+        else:
+            i += 1
+    return out
+
+
+def _split_row(line: str) -> List[str]:
+    s = line.strip()
+    if s.startswith("|"):
+        s = s[1:]
+    if s.endswith("|"):
+        s = s[:-1]
+    return [c.strip() for c in s.split("|")]
+
+
+def _standalone_pipe_lines(body: str) -> List[str]:
+    """Pipe-starting lines NOT part of a detected (headered) table — e.g.
+    a lone pipe line or a header without a separator row. These must never
+    change, with or without the marked-table license."""
+    detected: set = set()
+    for _, rows in _tables(body):
+        detected.update(rows)
+    return [l for l in body.splitlines()
+            if l.lstrip().startswith("|") and l not in detected]
+
+
+def _compare_tables(
+    before_body: str,
+    after_body: str,
+    marked_set: set,
+    allow_marked_table_edits: bool,
+    allow_cells: set,
+) -> List[Dict[str, str]]:
+    """Structural table check with an optional narrow license.
+
+    Default semantics unchanged: the before/after table-line sequences must
+    be equal. With allow_marked_table_edits=True, a table whose block is
+    marked may swap DATA-cell text for accepted strings — header/separator
+    byte-identical, row/column count and order fixed, first column
+    byte-identical, every other changed cell's new text in allow_cells.
+    """
+    tb, ta = _tables(before_body), _tables(after_body)
+    # standalone pipe lines (not part of a detected table) must never change
+    tb_set = set(id(rows) for _, rows in tb)
+    standalone_b = _standalone_pipe_lines(before_body)
+    standalone_a = _standalone_pipe_lines(after_body)
+    if standalone_b != standalone_a:
+        diff = next(((x, y) for x, y in zip(standalone_b, standalone_a)
+                     if x != y), (standalone_b[0] if standalone_b else "",
+                                  "<missing>"))
+        return [{
+            "check": "table_row_changed",
+            "detail": f"pipe line outside a recognized table changed: {diff[0][:60]!r}",
+        }]
+    if [rows for _, rows in tb] == [rows for _, rows in ta]:
+        return []
+    violations: List[Dict[str, str]] = []
+    if len(tb) != len(ta):
+        violations.append({
+            "check": "table_row_changed",
+            "detail": f"table count differs ({len(tb)} -> {len(ta)})",
+        })
+        return violations
+    for k, ((b_blk, b_rows), (a_blk, a_rows)) in enumerate(zip(tb, ta)):
+        if b_rows == a_rows:
+            continue
+        if not allow_marked_table_edits or b_blk not in marked_set:
+            diff = next(((x, y) for x, y in zip(b_rows, a_rows) if x != y),
+                        (b_rows[0] if b_rows else "", "<missing>"))
+            violations.append({
+                "check": "table_row_changed",
+                "detail": f"table #{k} (block {b_blk}, marked={b_blk in marked_set}) "
+                          f"rows differ; first change: {diff[0][:60]!r}",
+            })
+            continue
+        # narrow license: verify every condition on this marked table
+        if len(b_rows) != len(a_rows):
+            violations.append({
+                "check": "table_row_changed",
+                "detail": f"marked table #{k} row count changed "
+                          f"({len(b_rows)} -> {len(a_rows)})",
+            })
+            continue
+        if b_rows[0] != a_rows[0] or b_rows[1] != a_rows[1]:
+            violations.append({
+                "check": "table_row_changed",
+                "detail": f"marked table #{k} header/separator row changed",
+            })
+            continue
+        for bi, (brow, arow) in enumerate(zip(b_rows[2:], a_rows[2:])):
+            bc, ac = _split_row(brow), _split_row(arow)
+            if len(bc) != len(ac) or brow.count("|") != arow.count("|"):
+                violations.append({
+                    "check": "table_row_changed",
+                    "detail": f"marked table #{k} data row {bi + 1}: "
+                              f"column count changed",
+                })
+                break
+            if bc[0] != ac[0]:
+                violations.append({
+                    "check": "table_row_changed",
+                    "detail": f"marked table #{k} data row {bi + 1}: "
+                              f"first column changed: {bc[0][:40]!r}",
+                })
+                break
+            bad = [c for b_cell, c in zip(bc[1:], ac[1:])
+                   if b_cell != c and c.replace("**", "").strip()
+                   not in allow_cells]
+            if bad:
+                violations.append({
+                    "check": "table_row_changed",
+                    "detail": f"marked table #{k} data row {bi + 1}: cell(s) "
+                              f"{[b[:30] for b in bad[:3]]} not in accepted strings",
+                })
+                break
+    return violations
+
+
 # ── the gate ──────────────────────────────────────────────────────────────
 
 def body_neutralization_gate(
@@ -143,6 +295,9 @@ def body_neutralization_gate(
     allowed_heading_renames: Collection[Tuple[str, str]] = (),
     allow_proper_nouns: Collection[str] = (),
     allowed_new_paragraphs: int = None,
+    allowed_new_paragraph_texts: Collection[str] = (),
+    allow_marked_table_edits: bool = False,
+    allowed_table_cell_values: Collection[str] = ("Not independently tested",),
     word_drop_limit_pct: float = 45.0,
 ) -> Dict:
     """Compare a neutralized body against its original.
@@ -156,18 +311,38 @@ def body_neutralization_gate(
     byte-equal to any before paragraph (None = disabled — the owner's seven
     conditions do not include a paragraph-count limit; the cap exists for
     callers that want to bound additions, e.g. only the disclosure block).
+
+    allowed_new_paragraph_texts = exact-match whitelist (whole block, after
+    strip) for inserted paragraphs — e.g. the table-figure disclaimer line.
+    Whitelisted inserts are skipped by the proper-noun scan and excluded
+    from the allowed_new_paragraphs count.
+
+    allow_marked_table_edits + allowed_table_cell_values (owner brief
+    2026-10-06 item 2, implementing the design in docs/tables-plan.md):
+    when True, a table whose containing block is marked may have its DATA
+    CELLS rewritten, but ONLY under ALL of these conditions:
+      * header row (line 1) and separator row (line 2) byte-identical;
+      * row count, column count and row ORDER unchanged;
+      * first-column cells (feature/product labels) byte-identical;
+      * every changed cell's new text (stripped, emphasis removed) is in
+        allowed_table_cell_values (default: {"Not independently tested"})
+        — the owner's “accepted strings only” rule;
+    Tables whose block is NOT marked stay forbidden entirely, flag or not.
     """
     violations: List[Dict[str, str]] = []
     ab, abx = _blocks(before_body), _blocks(after_body)
     marked_set = set(int(i) for i in marked)
     allow_pn = set(allow_proper_nouns)
     allow_renames = list(allowed_heading_renames)
+    allow_para_texts = set(t.strip() for t in allowed_new_paragraph_texts)
+    allow_cells = set(v.strip() for v in allowed_table_cell_values)
     sm = SequenceMatcher(a=ab, b=abx, autojunk=False)
     ops = sm.get_opcodes()
 
     inserted = 0
     rewritten = 0
     deleted = 0
+    allowed_inserts = 0
 
     # per-op bookkeeping for paragraph-level proper nouns and structure
     equal_after = 0
@@ -189,10 +364,13 @@ def body_neutralization_gate(
             rewritten += max(i2 - i1, j2 - j1)
         elif tag == "insert":
             inserted += j2 - j1
+            allowed_inserts += sum(
+                1 for a in abx[j1:j2] if a.strip() in allow_para_texts)
 
     # after-paragraphs with no byte-equal before counterpart are NEW blocks
-    # (rewrites + inserts). Only enforced when the caller passes a cap.
-    inserted = len(abx) - equal_after
+    # (rewrites + inserts). Whitelisted inserts (e.g. the table disclaimer
+    # line) are excluded; only the remainder counts against the cap.
+    inserted = len(abx) - equal_after - allowed_inserts
     if allowed_new_paragraphs is not None and inserted > allowed_new_paragraphs:
         violations.append({
             "check": "insert_limit_exceeded",
@@ -224,12 +402,17 @@ def body_neutralization_gate(
             "detail": f"new version token(s): {sorted(set(new_vs))[:8]}",
         })
 
-    # 2) proper nouns — paragraph-level on paired/rewritten blocks
+    # 2) proper nouns — paragraph-level on paired/rewritten blocks.
+    #    Whole blocks matching allowed_new_paragraph_texts are skipped
+    #    (e.g. the fixed disclaimer line under an edited table).
     for tag, i1, i2, j1, j2 in ops:
         if tag == "equal":
             continue
         b_chunk, a_chunk = ab[i1:i2], abx[j1:j2]
         if tag == "delete":
+            continue
+        if tag == "insert" and a_chunk and \
+                all(a.strip() in allow_para_texts for a in a_chunk):
             continue
         if tag == "replace" and len(b_chunk) == len(a_chunk):
             for bp, ap in zip(b_chunk, a_chunk):
@@ -298,13 +481,11 @@ def body_neutralization_gate(
         })
     rb = [l for l in before_body.splitlines() if l.lstrip().startswith("|")]
     ra = [l for l in after_body.splitlines() if l.lstrip().startswith("|")]
-    if rb != ra:
-        diff = [(x, y) for x, y in zip(rb, ra) if x != y]
-        violations.append({
-            "check": "table_row_changed",
-            "detail": f"table rows differ ({len(rb)} -> {len(ra)} rows"
-                      + (f"; first change: {diff[0][0][:60]!r}" if diff else "; order/content") + ")",
-        })
+    table_violations = _compare_tables(
+        before_body, after_body, marked_set, allow_marked_table_edits,
+        allow_cells)
+    violations.extend(table_violations)
+
     if _faq_questions(before_body) != _faq_questions(after_body):
         violations.append({
             "check": "faq_question_changed",
@@ -344,6 +525,18 @@ def body_neutralization_gate(
             "detail": f"new gate hit(s) on the result: {sorted(new_hits)[:4]}",
         })
 
+    # 8) unattributed claims (owner brief 2026-10-06 item 1, layer-1 of
+    #    docs/unattributed-gate-plan.md): the result must not INTRODUCE an
+    #    entity-attributed quantity without a source link, nor a measurement
+    #    cell under a measurement column, that was not there before.
+    from .unattributed import new_unattributed_hits
+    ua_new = new_unattributed_hits(before_body, after_body)
+    if ua_new:
+        violations.append({
+            "check": "unattributed_new",
+            "detail": f"new unattributed hit(s) on the result: {sorted(ua_new)[:4]}",
+        })
+
     return {
         "pass": not violations,
         "violations": violations,
@@ -358,5 +551,7 @@ def body_neutralization_gate(
             "deleted": deleted,
             "inserted": inserted,
             "remaining_gate_hits": len(_hitset(ga)),
+            "remaining_unattributed_hits": len(
+                new_unattributed_hits("", after_body)),
         },
     }
