@@ -2,8 +2,7 @@
 seo_title: "AI Agent Browser Extensions: Let Chrome Do the Busywork for You"
 title: "AI Agent Browser Extensions: Let Chrome Do the Busywork for You (2026)"
 slug: ai-agent-browser-extensions-2026
-excerpt: >-
-  Tested guidance for ai agent mode chrome: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for ai agent mode chrome: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/ai-agent-browser-extensions-2026/featured.webp"
 category: "AI & Automation"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - operator browser agent
   - gemini agent browsing
   - agentic browsing assistant
-meta_description: >-
-  Ai agent mode chrome — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Ai agent mode chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-27T00:00:00.000Z
 updated_at: 2026-09-27T23:57:56.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "21"
 canonicalPath: /blog/ai-agent-browser-extensions-2026
-description: >-
-  Ai agent mode chrome — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Ai agent mode chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/ai-agent-browser-extensions-2026/featured.webp" alt="AI Agent Browser Extensions: Let Chrome Do the Busywork for You (2026)" width="1200" height="630" loading="lazy" class="featured-image">

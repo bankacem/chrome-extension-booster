@@ -3,8 +3,8 @@ seo_title: "How to Sync Chrome Extensions Across Devices (2026)"
 id: "69026c5a-5d29-559f-aa73-046a0a9de109"
 title: "How to Sync Chrome Extensions Across Devices (2026): Chrome Sync, Profiles, and Fixes"
 slug: sync-chrome-extensions-across-devices-guide
-description: "A tested ladder for syncing Chrome extensions across computers: enable Chrome Sync correctly, confirm extensions are included, fix paused sync and passphrase prompts."
-excerpt: "The top answers for syncing Chrome extensions are forum threads that end mid-solution. I synced my stack across three machines and wrote the steps that actually finish."
+description: 'A step-by-step ladder for syncing Chrome extensions across computers: enable Chrome Sync correctly, confirm extensions are included, fix paused sync and passphrase prompts.'
+excerpt: The top answers for syncing Chrome extensions are forum threads that end mid-solution. These are the steps that actually finish the job.
 meta_description: "Sync Chrome extensions to every computer you sign in to: turn on Chrome Sync, fix paused sync, handle the encryption passphrase, and what will not sync."
 canonicalPath: /blog/sync-chrome-extensions-across-devices-guide
 category: Guides & Comparisons

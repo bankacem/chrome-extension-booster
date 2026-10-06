@@ -2,8 +2,7 @@
 seo_title: "Mute Noisy Tabs in Chrome: Silence Sites That Auto-Play Sound"
 title: "Mute Noisy Tabs in Chrome: Silence Sites That Auto-Play Sound"
 slug: mute-noisy-tabs-chrome
-excerpt: >-
-  Tested guidance for mute tab chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for mute tab chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/mute-noisy-tabs-chrome/featured.webp"
 category: "Browser Tools"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - mute all tabs at once
   - tab sound manager chrome
   - stop noisy websites chrome
-meta_description: >-
-  Mute tab chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Mute tab chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-22T00:00:00.000Z
 updated_at: 2026-09-23T08:30:00.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "25"
 canonicalPath: /blog/mute-noisy-tabs-chrome
-description: >-
-  Mute tab chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Mute tab chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/mute-noisy-tabs-chrome/featured.webp" alt="Mute Noisy Tabs in Chrome: Silence Sites That Auto-Play Sound" width="1200" height="630" loading="lazy" class="featured-image">

@@ -2,8 +2,7 @@
 seo_title: "Command Palette Chrome Extensions: Run Browser Actions Like Raycast"
 title: "Command Palette Chrome Extensions: Run Browser Actions Like Raycast (2026)"
 slug: chrome-command-palette-extensions
-excerpt: >-
-  Command palette chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+excerpt: 'Command palette chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 featured_image: "/content/images/chrome-command-palette-extensions/featured.webp"
 category: "Productivity"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - raycast for chrome
   - browser command bar extension
   - keyboard command launcher chrome
-meta_description: >-
-  Command palette chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Command palette chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-29T00:00:00.000Z
 updated_at: 2026-09-29T12:26:37.000+00:00
@@ -26,8 +24,7 @@ author: "James Carter"
 author_image: "/content/images/authors/james-carter.png"
 read_time: "22"
 canonicalPath: /blog/chrome-command-palette-extensions
-description: >-
-  Command palette chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Command palette chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/chrome-command-palette-extensions/featured.webp" alt="Command Palette Chrome Extensions: Run Browser Actions Like Raycast (2026)" width="1200" height="630" loading="lazy" class="featured-image">

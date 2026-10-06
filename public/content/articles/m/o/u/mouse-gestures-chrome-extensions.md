@@ -2,8 +2,7 @@
 seo_title: "Mouse Gesture Extensions for Chrome: Navigate Without the Keyboard"
 title: "Mouse Gesture Extensions for Chrome: Navigate Without the Keyboard"
 slug: mouse-gestures-chrome-extensions
-excerpt: >-
-  Tested guidance for mouse gestures chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for mouse gestures chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/mouse-gestures-chrome-extensions/featured.webp"
 category: "Browser Tools"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - swipe navigation chrome
   - mouse shortcut extension
   - gesture control browser
-meta_description: >-
-  Mouse gestures chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Mouse gestures chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-27T00:00:00.000Z
 updated_at: 2026-09-27T23:57:56.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "23"
 canonicalPath: /blog/mouse-gestures-chrome-extensions
-description: >-
-  Mouse gestures chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Mouse gestures chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/mouse-gestures-chrome-extensions/featured.webp" alt="Mouse Gesture Extensions for Chrome: Navigate Without the Keyboard" width="1200" height="630" loading="lazy" class="featured-image">
