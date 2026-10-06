@@ -3,9 +3,7 @@ seo_title: "Kiwi Browser Extensions Guide"
 id: 690f42c5-48e7-49d7-8223-cf6d307d95ff
 title: 'Kiwi Browser Extensions Guide: How to Run Chrome Extensions on Android'
 slug: kiwi-browser-extensions-guide
-excerpt: >-
-  Kiwi Browser lets you run Chrome extensions on Android. I tested 20 extensions
-  on Kiwi over a week. Here is what works, what does not, and how to set it up.
+excerpt: 'Kiwi Browser lets you run Chrome extensions on Android. Here is what works, what does not, and how to set everything up step by step.'
 featured_image: /content/images/kiwi-browser-extensions-guide/featured.webp
 category: Productivity & Tools
 tags: []
@@ -13,7 +11,7 @@ keywords:
   - kiwi browser extensions
   - chrome extensions kiwi
   - kiwi browser android
-meta_description: "Kiwi Browser lets you run Chrome extensions on Android. After testing 20 extensions on Kiwi over a week, here's what works, what doesn't, and how to set it up."
+meta_description: 'Kiwi Browser lets you run Chrome extensions on Android: what works, what does not, and how to set up your favorite Chrome extensions step by step.'
 status: published
 published_at: '2026-05-23T14:15:00.217+00:00'
 scheduled_at: '2026-05-23T14:15:00+00:00'

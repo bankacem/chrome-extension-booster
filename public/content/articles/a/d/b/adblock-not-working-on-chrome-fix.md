@@ -1,11 +1,11 @@
 ---
-seo_title: "Adblock Not Working on Chrome? 9 Tested Fixes (2026)"
+seo_title: 'Adblock Not Working on Chrome? 9 Working Fixes (2026)'
 id: "0ab9e40d-72bd-53af-9e2a-d4cbc3512d8f"
 title: "Adblock Not Working on Chrome? 9 Fixes That Actually Worked (2026)"
 slug: adblock-not-working-on-chrome-fix
-description: "I fixed Chrome adblockers that silently stopped blocking: MV3 leftovers, duplicate blockers, allowlist traps, corrupt filters, and the resets that worked."
-excerpt: "Every guide says reinstall your ad blocker. I actually debugged a dead adblocker on three machines and found the nine fixes that survive Manifest V3 Chrome."
-meta_description: "I fixed Chrome adblockers that silently stopped blocking: MV3 leftovers, duplicate blockers, allowlist traps, corrupt filters, and the resets that worked."
+description: 'Chrome adblockers silently stop blocking for many reasons: MV3 leftovers, duplicate blockers, allowlist traps, corrupt filters, and the resets that work.'
+excerpt: 'Every guide says reinstall your ad blocker. These nine fixes survive Manifest V3 Chrome: MV3 leftovers, allowlist traps, corrupt filters, and resets.'
+meta_description: 'Chrome adblockers silently stop blocking for many reasons: MV3 leftovers, duplicate blockers, allowlist traps, corrupt filters, and the resets that work.'
 canonicalPath: https://extensionto.com/blog/adblock-not-working-on-chrome-fix
 category: Troubleshooting
 tags:

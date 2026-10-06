@@ -3,9 +3,7 @@ seo_title: "Kiwi vs Yandex vs Lemur: Android Extensions"
 id: 064163e6-ef34-4bcb-a81e-d4b9aec4b23f
 title: 'Kiwi vs Yandex vs Lemur 2026: Best Browser for Chrome Extensions on Android'
 slug: kiwi-vs-yandex-vs-lemur-android-extensions
-excerpt: >-
-  I tested Chrome extensions on Kiwi, Yandex, and Lemur browsers for Android.
-  Here is which one runs extensions best without compromising privacy.
+excerpt: 'Kiwi, Yandex, and Lemur browsers compared for Chrome extensions on Android. Here is which one runs extensions best without compromising privacy.'
 featured_image: /content/images/kiwi-vs-yandex-vs-lemur-android-extensions/featured.webp
 category: Productivity & Tools
 tags: []
@@ -13,9 +11,7 @@ keywords:
   - kiwi vs yandex vs lemur
   - chrome extensions on android
   - android browser with extensions
-meta_description: >-
-  I tested Kiwi, Yandex, and Lemur browsers on a Galaxy S23 with 10 Chrome
-  extensions each. Here is which runs extensions best and protects your privacy.
+meta_description: 'Kiwi, Yandex, and Lemur compared for running Chrome extensions on Android: extension support, speed, and privacy differences, with setup steps for each.'
 status: published
 published_at: '2026-03-16T17:27:37.129+00:00'
 scheduled_at: null

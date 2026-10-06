@@ -11,7 +11,7 @@ excerpt: >-
   The best Chrome screenshot extensions in 2026: full-page capture, scrolling
   screenshots, annotation tools, and region selection — all free, no sign-up, no
   watermark.
-meta_description: "We tested the best Chrome screenshot extension tools of 2026 for full-page capture, scrolling shots, annotation, and speed — free, no watermark."
+meta_description: 'The best Chrome screenshot extension tools of 2026 compared for full-page capture, scrolling shots, annotation, and speed — free, no watermark.'
 canonicalPath: /blog/best-chrome-screenshot-extensions-2026-complete-guide
 category: "Screenshots & Screen Capture"
 tags:

@@ -2,8 +2,7 @@
 seo_title: "AI Page-Summary Chrome Extensions: Get the Gist of Any Article in Seconds"
 title: "AI Page-Summary Chrome Extensions: Get the Gist of Any Article in Seconds"
 slug: ai-summary-chrome-extensions
-excerpt: >-
-  Tested guidance for ai summary chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for ai summary chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/ai-summary-chrome-extensions/featured.webp"
 category: "AI & Automation"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - ai article gist tool chrome
   - chatgpt summarizer extension page
   - tl;dr summary extension chrome
-meta_description: >-
-  Ai summary chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Ai summary chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-21T00:00:00.000Z
 updated_at: 2026-09-21T10:41:45.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "24"
 canonicalPath: /blog/ai-summary-chrome-extensions
-description: >-
-  Ai summary chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Ai summary chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/ai-summary-chrome-extensions/featured.webp" alt="AI Page-Summary Chrome Extensions: Get the Gist of Any Article in Seconds" width="1200" height="630" loading="lazy" class="featured-image">

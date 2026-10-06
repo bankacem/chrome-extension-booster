@@ -1,11 +1,8 @@
 ---
-seo_title: "Quick Screenshot Lite: Tested Against 4 Rivals"
-title: 'Quick Screenshot Lite Review: I Tested 4 Screenshot Extensions for Chrome for 2 Weeks'
+seo_title: 'Quick Screenshot Lite: Compared With 4 Rivals'
+title: 'Quick Screenshot Lite Review: 4 Screenshot Rivals Compared'
 slug: quick-screenshot-capture-extension
-excerpt: >-
-  I tested 4 Chrome screenshot extensions including Quick Screenshot Lite,
-  FireShot, Nimbus, and GoFullPage for 2 weeks. Speed, features, and image
-  quality compared with real data.
+excerpt: 'Quick Screenshot Lite, FireShot, Nimbus, and GoFullPage compared: capture speed, features, and image quality for Chrome users.'
 featured_image: /content/images/quick-screenshot-capture-extension/featured.webp
 category: Productivity & Tools
 tags:
@@ -18,7 +15,7 @@ keywords:
   - best screenshot extension chrome
   - chrome screenshot tool comparison
   - screen capture extension
-meta_description: "Quick Screenshot Lite tested against 3 competitors for 2 weeks. Full-page capture speed, annotation quality, export formats, and memory usage compared..."
+meta_description: 'Quick Screenshot Lite compared with 3 competitors: full-page capture speed, annotation quality, export formats, and memory usage.'
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'
