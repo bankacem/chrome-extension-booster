@@ -1,12 +1,9 @@
 ---
 seo_title: "Chrome Screenshot Addon Comparison"
 id: 934bc716-9725-4992-87a6-7d699a180f4e
-title: 'Chrome Screenshot Addon Comparison: 4 Extensions Tested Head-to-Head (2026)'
+title: 'Chrome Screenshot Addon Comparison: 4 Extensions Compared'
 slug: chrome-screenshot-addon-comparison
-excerpt: >-
-  I tested Nimbus, Fireshot, Lightshot, and Quick Screenshot Lite across 7
-  scenarios — capture speed, scrolling accuracy, file size, and annotation
-  quality.
+excerpt: 'Nimbus, Fireshot, Lightshot, and Quick Screenshot Lite compared across 7 scenarios — capture speed, scrolling accuracy, file size, and annotation quality.'
 featured_image: /content/images/chrome-screenshot-addon-comparison/featured.webp
 category: Productivity & Tools
 tags: []
@@ -14,7 +11,7 @@ keywords:
   - chrome screenshot addon comparison
   - best screenshot extension chrome
   - fireshot vs nimbus vs lightshot
-meta_description: "We tested Nimbus, Fireshot, Lightshot, and Quick Screenshot Lite across 7 scenarios — capture speed, scrolling accuracy, file size, and annotation quality."
+meta_description: 'Nimbus, Fireshot, Lightshot, and Quick Screenshot Lite compared across 7 scenarios: capture speed, scrolling accuracy, file size, and annotation quality.'
 status: published
 published_at: '2026-03-07T20:11:01.893+00:00'
 scheduled_at: '2026-03-07T20:11:00+00:00'

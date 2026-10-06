@@ -2,8 +2,7 @@
 seo_title: "QR Code Chrome Extensions: Generate and Scan Any Page Instantly"
 title: "QR Code Chrome Extensions: Generate and Scan Any Page Instantly (2026)"
 slug: qr-code-generator-scanner-chrome-extensions
-excerpt: >-
-  Tested guidance for qr code generator chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for qr code generator chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/qr-code-generator-scanner-chrome-extensions/featured.webp"
 category: "Chrome Extensions"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - qr code extension chrome 2026
   - share links via qr code browser
   - qr scanner web page
-meta_description: >-
-  Qr code generator chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Qr code generator chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-20T00:00:00.000Z
 updated_at: 2026-09-20T07:52:26.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "30"
 canonicalPath: /blog/qr-code-generator-scanner-chrome-extensions
-description: >-
-  Qr code generator chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Qr code generator chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 <img src="/content/images/qr-code-generator-scanner-chrome-extensions/featured.webp" alt="QR Code Chrome Extensions: Generate and Scan Any Page Instantly (2026)" width="1200" height="630" loading="lazy" class="featured-image">
 

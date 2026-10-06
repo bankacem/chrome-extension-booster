@@ -1,11 +1,8 @@
 ---
 seo_title: "Capture Scrolling Webpages as PNG or PDF"
-title: 'How to Capture Scrolling Webpages as PNG or PDF: I Tested 4 Methods'
+title: 'How to Capture Scrolling Webpages as PNG or PDF: 4 Methods'
 slug: capture-scrolling-webpages-as-png-or-pdf
-excerpt: >-
-  I tested 4 methods to capture scrolling webpages as PNG or PDF: browser
-  extensions, print to PDF, DevTools, and online tools. Speed, quality, and
-  file sizes compared with real data.
+excerpt: '4 methods to capture scrolling webpages as PNG or PDF: browser extensions, print to PDF, DevTools, and online tools — speed, quality, and file sizes compared.'
 featured_image: /content/images/capture-scrolling-webpages-as-png-or-pdf/featured.webp
 category: Productivity & Tools
 tags:
@@ -18,7 +15,7 @@ keywords:
   - capture full page screenshot chrome
   - webpage to pdf chrome
   - scrolling screenshot extension
-meta_description: "How to capture scrolling webpages as PNG or PDF tested with 4 methods. Quick Screenshot Lite, Chrome Print to PDF, DevTools, and online tools compared for..."
+meta_description: 'How to capture scrolling webpages as PNG or PDF: 4 methods — Quick Screenshot Lite, Chrome Print to PDF, DevTools, and online tools compared.'
 status: published
 published_at: '2026-06-06T10:00:00.000+00:00'
 scheduled_at: '2026-06-06T10:00:00+00:00'

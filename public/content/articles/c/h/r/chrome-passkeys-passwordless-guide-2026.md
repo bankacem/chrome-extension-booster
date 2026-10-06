@@ -2,8 +2,7 @@
 seo_title: "Chrome Passkeys: The Complete Passwordless Sign-In Guide for 2026"
 title: "Chrome Passkeys: The Complete Passwordless Sign-In Guide for 2026"
 slug: chrome-passkeys-passwordless-guide-2026
-excerpt: >-
-  Tested guidance for chrome passkeys: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for chrome passkeys: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/chrome-passkeys-passwordless-guide-2026/featured.webp"
 category: "Security & Privacy"
 tags:
@@ -18,8 +17,7 @@ keywords:
   - passkeys vs passwords
   - sync passkeys across devices
   - google password manager passkey
-meta_description: >-
-  Chrome passkeys — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Chrome passkeys — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-20T00:00:00.000Z
 updated_at: 2026-09-20T07:52:26.000+00:00
@@ -27,8 +25,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "20"
 canonicalPath: /blog/chrome-passkeys-passwordless-guide-2026
-description: >-
-  Chrome passkeys — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Chrome passkeys — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 <img src="/content/images/chrome-passkeys-passwordless-guide-2026/featured.webp" alt="Chrome Passkeys: The Complete Passwordless Sign-In Guide for 2026" width="1200" height="630" loading="lazy" class="featured-image">
 
