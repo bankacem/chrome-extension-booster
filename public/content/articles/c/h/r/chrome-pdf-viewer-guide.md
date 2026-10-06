@@ -2,10 +2,7 @@
 seo_title: "Chrome Built-in PDF Viewer"
 title: 'Chrome Built-in PDF Viewer: Complete Guide to Viewing, Editing & Printing PDFs'
 slug: chrome-pdf-viewer-guide
-excerpt: >-
-  Every Chrome user has the extension ID mhjfbmdgcfjbbpaeojofohoefgiehjai
-  installed — Chrome's built-in PDF viewer. I tested its features against Adobe
-  Acrobat and Foxit to see how far the free option goes.
+excerpt: 'Every Chrome user has Chrome''s built-in PDF viewer installed. Here is how its features compare with Adobe Acrobat and Foxit, and how far the free option goes.'
 featured_image: /content/images/chrome-pdf-viewer-guide/featured.webp
 category: Productivity & Tools
 tags:
@@ -16,7 +13,7 @@ keywords:
   - chrome pdf viewer
   - pdf editor chrome
   - view pdf in chrome
-meta_description: "Complete guide to Chrome's built-in PDF viewer. I tested it against Adobe Acrobat and Foxit for rendering speed, annotation tools, search, form filling..."
+meta_description: 'Complete guide to Chrome''s built-in PDF viewer: rendering, annotation, search, and form filling compared with Adobe Acrobat and Foxit.'
 status: published
 published_at: '2026-05-02T14:15:02.091+00:00'
 scheduled_at: '2026-05-02T14:15:00+00:00'
