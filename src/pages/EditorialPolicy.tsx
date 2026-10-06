@@ -7,18 +7,18 @@ import SEO from "@/components/SEO";
 const principles = [
   {
     icon: FlaskConical,
-    title: "Practical evaluation",
-    body: "We assess extensions against the use case described by the article, including setup friction, core workflow, performance impact, and limitations.",
+    title: "Research-based comparisons",
+    body: "We compare extensions against the use case described by the article using public information and product documentation, including setup steps, stated features, pricing, and limitations — not lab measurements.",
   },
   {
     icon: ShieldCheck,
     title: "Privacy and permissions",
-    body: "When privacy is relevant, we examine the permissions requested, the stated data practices, and the difference between a useful feature and an unnecessary permission.",
+    body: "When privacy is relevant, we look at the permissions an extension requests and the data practices its developer states, and the difference between a useful feature and an unnecessary permission.",
   },
   {
     icon: BookOpen,
     title: "Evidence before claims",
-    body: "We distinguish documented facts, observed behavior, and editorial opinion. Product claims should be checked against official documentation or the Chrome Web Store where possible.",
+    body: "We distinguish documented facts, product-documentation statements, and editorial opinion. Product claims should be checked against official documentation or the Chrome Web Store where possible.",
   },
   {
     icon: RefreshCw,
@@ -30,8 +30,8 @@ const principles = [
 const EditorialPolicy = () => (
   <div className="min-h-screen bg-background">
     <SEO
-      title="Editorial Policy and Review Methodology"
-      description="Learn how ExtensionTo researches, reviews, and maintains Chrome extension guides and product pages."
+      title="Editorial Policy and Standards"
+      description="How ExtensionTo compiles and maintains its Chrome extension guides from public information and product documentation."
       canonicalPath="/editorial-policy"
     />
     <Navbar />
@@ -39,9 +39,12 @@ const EditorialPolicy = () => (
       <div className="container mx-auto max-w-4xl px-4">
         <header className="mb-12">
           <p className="mb-4 text-sm font-medium uppercase tracking-wider text-primary">ExtensionTo standards</p>
-          <h1 className="mb-5 font-heading text-4xl font-bold md:text-5xl">Editorial Policy and Review Methodology</h1>
+          <h1 className="mb-5 font-heading text-4xl font-bold md:text-5xl">Editorial Policy and Standards</h1>
           <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">
             Our goal is to publish practical, transparent guides that help readers choose and use Chrome extensions with a clear understanding of their benefits, trade-offs, and limitations.
+          </p>
+          <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            Our guides are research-based comparisons compiled from public information and product documentation. Unless a page says otherwise, ExtensionTo has not run independent lab tests.
           </p>
         </header>
 

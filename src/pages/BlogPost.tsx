@@ -333,11 +333,6 @@ const BlogPost = () => {
       "url": `${window.location.origin}${editorialProfile.url}`,
       "image": `${window.location.origin}${resolveImagePath(editorialProfile.image)}`
     },
-    "reviewedBy": {
-      "@type": "Organization",
-      "name": "ExtensionTo Editorial Team",
-      "url": `${window.location.origin}/editorial-policy`
-    },
     "datePublished": article.published_at,
     "dateModified": article.updated_at || article.published_at,
     "publisher": {
@@ -420,6 +415,11 @@ const BlogPost = () => {
           <Link to={`${routePrefix}/blog`}><Button variant="ghost" className="mb-8"><ArrowLeft className="mr-2 h-4 w-4 rtl:rotate-180" />{t("blog.back_to_blog")}</Button></Link>
           <header className="mb-8">
             <h1 className="mb-4 font-heading text-3xl font-bold md:text-5xl">{article.title}</h1>
+            {article.content && article.content.includes("/extension/") && (
+              <p className="mb-4 rounded-lg border border-primary/30 bg-primary/5 px-4 py-2 text-sm text-muted-foreground">
+                ExtensionTo publishes some of the extensions mentioned in this article.
+              </p>
+            )}
             <div className="rounded-xl border border-border/60 bg-card/60 p-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-3">
                 <img

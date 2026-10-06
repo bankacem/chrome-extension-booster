@@ -186,7 +186,7 @@ function buildHomeBody(articles: ArticleIndexEntry[]): string {
     .map((slug) => articles.find((article) => normalizeSlug(article.slug) === slug))
     .filter((article): article is ArticleIndexEntry => Boolean(article));
   const links = featured.map((article) => `<li><a href="/blog/${escapeHtml(normalizeSlug(article.slug))}">${escapeHtml(article.title)}</a><p>${escapeHtml(article.excerpt || article.meta_description || article.description || "Practical Chrome extension guide.")}</p></li>`).join("\n");
-  return `<main><section><h1>Powerful Chrome Extensions for Productivity</h1><p>Discover Chrome extensions that help you work faster, browse more safely, and improve your everyday workflow.</p><p><a href="/extension/quick-screenshot-lite">Explore featured extensions</a> or <a href="/blog">read Chrome extension guides and reviews</a>.</p></section><section><h2>Start with our reviewed guides</h2><ul>${links}</ul><p><a href="/editorial-policy">Learn how our editorial team reviews extensions</a>.</p></section></main>`;
+  return `<main><section><h1>Powerful Chrome Extensions for Productivity</h1><p>Discover Chrome extensions that help you work faster, browse more safely, and improve your everyday workflow.</p><p><a href="/extension/quick-screenshot-lite">Explore featured extensions</a> or <a href="/blog">read Chrome extension guides and reviews</a>.</p></section><section><h2>Start with our guides</h2><ul>${links}</ul><p><a href="/editorial-policy">Learn how our guides are researched and compiled</a>.</p></section></main>`;
 }
 
 function buildBlogBody(articles: ArticleIndexEntry[]): string {
@@ -214,7 +214,7 @@ function buildLegalBody(title: string, summary: string, sections: string[]): str
 }
 
 function buildEditorialPolicyBody(): string {
-  return `<main><article><h1>Editorial Policy and Review Methodology</h1><p>ExtensionTo publishes practical, transparent guides that explain the benefits, trade-offs, limitations, and privacy considerations of Chrome extensions.</p><h2>How we review</h2><ul><li>We assess the stated use case, setup friction, core workflow, performance, and limitations.</li><li>We consider requested permissions and published privacy information when privacy is relevant.</li><li>We distinguish documented facts, observed behavior, and editorial opinion.</li><li>We review important pages when products, browser policies, or material claims change.</li></ul><h2>Who writes and reviews</h2><p>Articles are credited to James Mitchell or the ExtensionTo Editorial Team. Author labels describe editorial responsibility; readers should use the methodology and documentation to evaluate individual claims.</p><h2>Corrections</h2><p>Readers can contact ExtensionTo about inaccurate claims, outdated details, or broken links so that material corrections can be reviewed and reflected in the article when appropriate.</p><p><a href="/blog">Read the latest guides</a> · <a href="/">Back to ExtensionTo</a></p></article></main>`;
+  return `<main><article><h1>Editorial Policy and Standards</h1><p>Our guides are research-based comparisons compiled from public information and product documentation. Unless a page says otherwise, ExtensionTo has not run independent lab tests.</p><p>ExtensionTo publishes practical, transparent guides that explain the benefits, trade-offs, limitations, and privacy considerations of Chrome extensions.</p><h2>How we write our guides</h2><ul><li>We compare extensions against the stated use case using public information and product documentation, including setup steps, features, pricing, and limitations.</li><li>We consider requested permissions and published privacy information when privacy is relevant.</li><li>We distinguish documented facts, product-documentation statements, and editorial opinion.</li><li>We review important pages when products, browser policies, or material claims change.</li></ul><h2>Who writes and reviews</h2><p>Articles are credited to James Mitchell or the ExtensionTo Editorial Team. Author labels describe editorial responsibility; readers should use the methodology and documentation to evaluate individual claims.</p><h2>Corrections</h2><p>Readers can contact ExtensionTo about inaccurate claims, outdated details, or broken links so that material corrections can be reviewed and reflected in the article when appropriate.</p><p><a href="/blog">Read the latest guides</a> · <a href="/">Back to ExtensionTo</a></p></article></main>`;
 }
 
 function parseExtensions(): ExtensionEntry[] {
@@ -316,13 +316,13 @@ async function prerenderLocalizedContent(template: string, lang: string) {
     const editorialProfile = getEditorialProfile(String(article.author || frontmatterString(parsed.frontmatter, "author") || ""));
     const dateLabel = article.published_at ? String(article.published_at).slice(0, 10) : "";
     const updatedLabel = article.updated_at && article.updated_at !== article.published_at ? String(article.updated_at).slice(0, 10) : "";
-    const body = `<article><header><h1>${escapeHtml(title)}</h1><p>Written by <a href="${escapeHtml(editorialProfile.url)}">${escapeHtml(editorialProfile.name)}</a> · ${escapeHtml(editorialProfile.role)}${dateLabel ? ` · Published ${escapeHtml(dateLabel)}` : ""}${updatedLabel ? ` · Updated ${escapeHtml(updatedLabel)}` : ""}</p><p>Reviewed using the <a href="/editorial-policy">ExtensionTo editorial methodology</a>.</p></header>${bodyHtml}</article>`;
-    // Build the Article schema with reviewedBy + publisher (matching the EN prerender),
+    const body = `<article><header><h1>${escapeHtml(title)}</h1>${String(parsed.content || "").includes("/extension/") ? `<p>ExtensionTo publishes some of the extensions mentioned in this article.</p>` : ""}<p>Written by <a href="${escapeHtml(editorialProfile.url)}">${escapeHtml(editorialProfile.name)}</a> · ${escapeHtml(editorialProfile.role)}${dateLabel ? ` · Published ${escapeHtml(dateLabel)}` : ""}${updatedLabel ? ` · Updated ${escapeHtml(updatedLabel)}` : ""}</p><p>Compiled from public information and product documentation — see our <a href="/editorial-policy">editorial standards</a>.</p></header>${bodyHtml}</article>`;
+    // Build the Article schema with publisher (matching the EN prerender),
     // plus a BreadcrumbList schema and (if frontmatter.faq exists) a FAQPage schema.
     // The EN prerender (prerender-articles.ts) emits all three; the previous FR/ES
     // code emitted only a stripped-down Article schema, which meant translated pages
-    // were invisible to rich-result eligibility (FAQ + Breadcrumb) and lost the
-    // reviewedBy signal that helps Google's EEAT scoring.
+    // were invisible to rich-result eligibility (FAQ + Breadcrumb).
+
     const articleSchema = {
       "@context": "https://schema.org",
       "@type": "Article",
@@ -332,7 +332,6 @@ async function prerenderLocalizedContent(template: string, lang: string) {
       articleSection: article.category || frontmatterString(parsed.frontmatter, "category") || undefined,
       inLanguage: lang,
       author: { "@type": editorialProfile.type, name: editorialProfile.name, url: `${SITE_URL}${editorialProfile.url}` },
-      reviewedBy: { "@type": "Organization", name: "ExtensionTo Editorial Team", url: `${SITE_URL}/editorial-policy` },
       datePublished: article.published_at,
       dateModified: article.updated_at || article.published_at,
       publisher: { "@type": "Organization", name: SITE_NAME, logo: { "@type": "ImageObject", url: `${SITE_URL}/og-image.png` } },
@@ -442,7 +441,7 @@ async function main() {
   await writeRoute("/blog", template, "Chrome Extension Guides and Reviews", blogDescription, buildBlogBody(articles), "website", undefined, allLanguageBlogAlternates, "en");
   await writeRoute("/privacy", template, "Privacy Policy", "Learn how ExtensionTo protects your privacy and handles information on its website and Chrome extensions.", buildLegalBody("Privacy Policy", "ExtensionTo is committed to protecting your privacy.", ["Our Chrome extensions are designed to keep settings local where possible and to avoid unnecessary collection of personal information.", "The website may process information you voluntarily submit through contact forms or subscriptions. Any information is used to provide and improve the service.", "For questions about this policy, contact ExtensionTo through the website contact page."]), "website", undefined, undefined, "en");
   await writeRoute("/terms", template, "Terms of Service", "Read the Terms of Service for ExtensionTo Chrome extensions and website.", buildLegalBody("Terms of Service", "By using the ExtensionTo website or extensions, you agree to these terms.", ["The extensions are provided for their stated browsing and productivity purposes and must be used lawfully.", "The software and website are provided as is. ExtensionTo may update, suspend, or discontinue features and may update these terms.", "For questions about these terms, contact ExtensionTo through the website contact page."]), "website", undefined, undefined, "en");
-  await writeRoute("/editorial-policy", template, "Editorial Policy and Review Methodology", "Learn how ExtensionTo researches, reviews, and maintains Chrome extension guides and product pages.", buildEditorialPolicyBody(), "website", undefined, undefined, "en");
+  await writeRoute("/editorial-policy", template, "Editorial Policy and Standards", "How ExtensionTo compiles and maintains its Chrome extension guides from public information and product documentation.", buildEditorialPolicyBody(), "website", undefined, undefined, "en");
 
   for (const extension of extensions) {
     const description = extension.longDescription || extension.description;
