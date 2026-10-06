@@ -1,11 +1,11 @@
 ---
 seo_title: "Split Screen in Chrome: Native Split View vs Extensions"
 id: "3a54b308-ee0c-5b22-bba6-b46baa775083"
-title: "Split Screen in Chrome: Native Split View vs 4 Extensions Tested (2026)"
+title: 'Split Screen in Chrome: Native Split View vs Extensions'
 slug: split-screen-chrome-tabs-guide
-description: "Every way to split Chrome tabs side by side, tested: Chrome's native Split View, four extensions, the layouts that stuck, and the sites that break splits."
-excerpt: "Chrome Community threads about side-by-side tabs still end in 'install an extension'. I tested the native Split View against four extensions for two weeks of real work."
-meta_description: "Split screen chrome extension vs native Split View: four tools tested against Chrome's built-in splitter — layouts kept, fixes, honest verdicts."
+description: 'Every way to split Chrome tabs side by side: Chrome''s native Split View, four extensions, the layouts that work, and the sites that break splits.'
+excerpt: 'Chrome Community threads about side-by-side tabs still end in ''install an extension'': the native Split View compared against four extensions for real work.'
+meta_description: 'Split screen chrome extension vs native Split View: four tools compared against Chrome''s built-in splitter — layouts kept, fixes, honest verdicts.'
 canonicalPath: /blog/split-screen-chrome-tabs-guide
 category: Productivity & Workflow
 tags:
