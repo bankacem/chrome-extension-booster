@@ -3,10 +3,7 @@ seo_title: "Chrome Extensions on Android: Complete Guide"
 id: 4ca3866a-34f0-4e0d-9c40-0f68ed348baa
 title: 'Chrome Extensions on Android: Complete Guide for 2026'
 slug: chrome-extensions-android-guide
-excerpt: >-
-  I tested Chrome extensions on Android using Kiwi Browser, Yandex Browser, and
-  Lemur Browser. Here is which browser supports the most extensions, performance
-  benchmarks, and privacy comparison.
+excerpt: 'Chrome extensions on Android using Kiwi Browser, Yandex Browser, and Lemur Browser: which browser supports the most extensions, performance differences, and privacy compared.'
 featured_image: /content/images/chrome-extensions-android-guide/featured.webp
 category: Productivity & Tools
 tags: []
@@ -14,7 +11,7 @@ keywords:
   - chrome extensions android
   - chrome store extension android
   - kiwi browser extensions
-meta_description: "Tested Chrome extensions on Android using Kiwi, Yandex, and Lemur browsers. Performance benchmarks, extension compatibility, privacy comparison, and 8..."
+meta_description: 'Chrome extensions on Android using Kiwi, Yandex, and Lemur browsers: extension compatibility, performance differences, and a privacy comparison.'
 status: published
 published_at: '2026-05-21T18:15:01.667+00:00'
 scheduled_at: '2026-05-21T18:15:00+00:00'

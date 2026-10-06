@@ -9,7 +9,7 @@ category: "Security & Privacy"
 tags: []
 keywords:
   - Best Ghostery settings for maximum online privacy
-meta_description: "A hands-on look at ghostery settings for maximum online privacy, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at ghostery settings for maximum online privacy, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-03-21T05:00:01.038+00:00'
 scheduled_at: '2026-03-21T05:00:00+00:00'

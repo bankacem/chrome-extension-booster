@@ -2,10 +2,7 @@
 seo_title: "Chromecast Plugin for Chrome"
 title: 'Chromecast Plugin for Chrome: Complete Setup & Streaming Guide (2026)'
 slug: chromecast-plugin-chrome
-excerpt: >-
-  I tested Chromecast streaming from Chrome to 3 different TV models. Complete
-  setup guide, troubleshooting, latency comparison, and head-to-head with
-  AirParrot, Reflector, and Deskreen.
+excerpt: 'Chromecast streaming from Chrome: complete setup guide, troubleshooting, latency notes, and a head-to-head with AirParrot, Reflector, and Deskreen.'
 featured_image: /content/images/chromecast-plugin-chrome/featured.webp
 category: Productivity & Tools
 tags:
@@ -17,7 +14,7 @@ keywords:
   - chromecast chrome plugin
   - cast from chrome
   - chrome cast to tv
-meta_description: "Complete guide to using Chromecast with Google Chrome. Setup instructions, troubleshooting, latency comparison across 3 TV models, and 8 companion..."
+meta_description: 'Complete guide to using Chromecast with Google Chrome: setup instructions, troubleshooting steps, and 8 companion extensions for streaming.'
 status: published
 published_at: '2026-05-19T22:15:00.224+00:00'
 scheduled_at: '2026-05-19T22:15:00+00:00'

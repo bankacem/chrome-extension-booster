@@ -3,9 +3,9 @@ seo_title: "Chrome Extension Keyboard Shortcuts Not Working: 8 Fixes"
 id: "8b1e1db4-39fc-577a-afae-2258328f4914"
 title: "Chrome Extension Keyboard Shortcuts Not Working: 8 Fixes That Actually Work (2026)"
 slug: chrome-extension-keyboard-shortcuts-not-working-fix
-description: "Eight tested fixes for Chrome extension keyboard shortcuts that stopped working: the shortcuts page, conflict resolution, background wake-ups, profile tests, and resets."
-excerpt: "Stack Overflow and Reddit threads on dead extension shortcuts stop at 'check chrome://extensions/shortcuts'. I ran every fix on my machine and ranked them by hit rate."
-meta_description: "Fix Chrome extension shortcuts in minutes: assign keys on the shortcuts page, resolve conflicts, wake sleeping extensions, and stop apps from stealing keys."
+description: 'Eight fixes for Chrome extension keyboard shortcuts that stopped working: the shortcuts page, conflict resolution, background wake-ups, profile checks, and resets.'
+excerpt: 'Stack Overflow and Reddit threads on dead extension shortcuts stop at ''check chrome://extensions/shortcuts''. Every fix worth trying, ranked by hit rate.'
+meta_description: 'Fix Chrome extension shortcuts in minutes: assign keys on the shortcuts page, resolve conflicts, wake sleeping extensions, and stop apps from stealing keys.'
 canonicalPath: /blog/chrome-extension-keyboard-shortcuts-not-working-fix
 category: Troubleshooting
 tags:
