@@ -1132,6 +1132,170 @@ class TestBodyNeutralizationMarkedTables(unittest.TestCase):
                         msg=checks)
 
 
+class TestBodyNeutralizationTableReplacement(unittest.TestCase):
+    """Owner brief 2026-10-07: a marked table whose data cells are >50%
+    'Not independently tested' may be replaced by a short bold-name +
+    body-sentence list. License is an exact declaration; the gate
+    re-verifies names, sentences, coverage and the result block."""
+
+    BEFORE = (
+        "Intro paragraph stays put.\n"
+        "\n"
+        "| Extension | Memory Usage | Effectiveness |\n"
+        "|----------|--------------|---------------|\n"
+        "| Light Popup Blocker | Not independently tested | Not independently tested |\n"
+        "| AdBlock Plus | Not independently tested | Not independently tested |\n"
+        "\n"
+        "Light Popup Blocker remains a strong all-around option for most users. "
+        "AdBlock Plus has been a popular choice for years.\n"
+        "\n"
+        "Closing paragraph stays put.\n"
+    )
+    TABLE_BLOCK = 1
+    BULLETS = [
+        "- **Light Popup Blocker** remains a strong all-around option for most users.",
+        "- **AdBlock Plus** — AdBlock Plus has been a popular choice for years.",
+    ]
+
+    def _gate(self, after, marked=(0, 1, 2, 3, 4), **kw):
+        return body_neutralization_gate(
+            self.BEFORE, after, marked=list(marked), **kw)
+
+    def _after(self, bullets=None):
+        bl = "\n".join(bullets if bullets is not None else self.BULLETS)
+        return self.BEFORE.replace(
+            "| Extension | Memory Usage | Effectiveness |\n"
+            "|----------|--------------|---------------|\n"
+            "| Light Popup Blocker | Not independently tested | Not independently tested |\n"
+            "| AdBlock Plus | Not independently tested | Not independently tested |",
+            bl)
+
+    def _spec(self, bullets=None):
+        return {"block": self.TABLE_BLOCK,
+                "bullets": bullets if bullets is not None else self.BULLETS}
+
+    def test_accepts_valid_replacement(self):
+        r = self._gate(self._after(),
+                       allowed_table_replacements=[self._spec()])
+        self.assertEqual(r["violations"], [])
+        self.assertEqual(r["stats"]["tables_replaced"], 1)
+
+    def test_fails_without_declaration(self):
+        r = self._gate(self._after())
+        self.assertTrue(any(v["check"] == "table_row_changed"
+                            for v in r["violations"]))
+
+    def test_fails_when_block_unmarked(self):
+        r = self._gate(self._after(), marked=(0, 2, 3, 4),
+                       allowed_table_replacements=[self._spec()])
+        self.assertTrue(any(v["check"] == "table_replacement_invalid"
+                            for v in r["violations"]))
+
+    def test_fails_on_new_fact_in_sentence(self):
+        bad = ["- **Light Popup Blocker** remains a strong all-around option.",
+               "- **AdBlock Plus** — Our lab measured AdBlock Plus at 42% faster."]
+        r = self._gate(self._after(bad),
+                       allowed_table_replacements=[self._spec(bad)])
+        checks = [v for v in r["violations"]
+                  if v["check"] == "table_replacement_invalid"]
+        self.assertTrue(any("verbatim" in v["detail"] for v in checks))
+
+    def test_fails_on_name_not_in_table(self):
+        bad = ["- **Total Adblock** remains a strong all-around option for most users.",
+               "- **AdBlock Plus** — AdBlock Plus has been a popular choice for years."]
+        r = self._gate(self._after(bad),
+                       allowed_table_replacements=[self._spec(bad)])
+        checks = [v for v in r["violations"]
+                  if v["check"] == "table_replacement_invalid"]
+        self.assertTrue(any("product label" in v["detail"] for v in checks))
+
+    def test_fails_on_incomplete_coverage(self):
+        bad = [self.BULLETS[0]]
+        r = self._gate(self._after(bad),
+                       allowed_table_replacements=[self._spec(bad)])
+        checks = [v for v in r["violations"]
+                  if v["check"] == "table_replacement_invalid"]
+        self.assertTrue(any("covers 1 of 2" in v["detail"] for v in checks))
+
+    def test_fails_when_result_block_altered(self):
+        altered = self._after().replace(
+            "- **AdBlock Plus** — AdBlock Plus has been a popular choice for years.",
+            "- **AdBlock Plus** — AdBlock Plus has been a popular choice for years! Extra line.")
+        r = self._gate(altered,
+                       allowed_table_replacements=[self._spec()])
+        self.assertTrue(any("byte-identically" in v["detail"]
+                            for v in r["violations"]))
+
+    def test_fails_on_declared_block_without_table(self):
+        r = self._gate(self._after(),
+                       allowed_table_replacements=[
+                           {"block": 4, "bullets": self.BULLETS}])
+        self.assertTrue(any("contains no table" in v["detail"]
+                            for v in r["violations"]))
+
+    def test_column_mode_products_from_header(self):
+        before = (
+            "Para one.\n"
+            "\n"
+            "| Feature | Popup Blocker Pro | Minimal Popup Blocker |\n"
+            "|---------|--------------------|----------------------|\n"
+            "| Effectiveness | Not independently tested | Not independently tested |\n"
+            "| Memory Usage (MB) | Not independently tested | Not independently tested |\n"
+            "\n"
+            "Popup Blocker Pro provides maximum customization for users who want "
+            "fine-tuned control. Minimal Popup Blocker is ideal for those "
+            "prioritizing performance above all else.\n"
+            "\n"
+            "Closing paragraph stays put.\n"
+        )
+        bullets = [
+            "- **Popup Blocker Pro** provides maximum customization for users who want fine-tuned control.",
+            "- **Minimal Popup Blocker** is ideal for those prioritizing performance above all else.",
+        ]
+        after = before.replace(
+            "| Feature | Popup Blocker Pro | Minimal Popup Blocker |\n"
+            "|---------|--------------------|----------------------|\n"
+            "| Effectiveness | Not independently tested | Not independently tested |\n"
+            "| Memory Usage (MB) | Not independently tested | Not independently tested |",
+            "\n".join(bullets))
+        r = body_neutralization_gate(
+            before, after, marked=[1, 2, 3],
+            allowed_table_replacements=[{"block": 1, "bullets": bullets}])
+        self.assertEqual(r["violations"], [])
+
+    def test_cell_edit_license_still_works_alongside(self):
+        # unchanged tables + cell edits + one replacement coexist
+        before = (
+            "Para one.\n"
+            "\n"
+            "| Feature | Kiwi | Firefox |\n"
+            "|---|---|---|\n"
+            "| Blocks ads | Yes | Yes |\n"
+            "\n"
+            "Middle paragraph.\n"
+            "\n"
+            "| Config | Battery |\n"
+            "|---|---|\n"
+            "| DNS only | Not independently tested |\n"
+            "\n"
+            "DNS blocking costs essentially zero battery because the connection is never opened.\n"
+            "\n"
+            "Closing paragraph stays put.\n"
+        )
+        bullets = ["- **DNS only** — DNS blocking costs essentially zero battery because the connection is never opened."]
+        after = (before
+                 .replace("| Blocks ads | Yes | Yes |", "| Blocks ads | Yes (filter lists) | Yes |")
+                 .replace(
+                     "| Config | Battery |\n|---|---|\n| DNS only | Not independently tested |",
+                     bullets[0]))
+        r = body_neutralization_gate(
+            before, after, marked=[1, 3],
+            allow_marked_table_edits=True,
+            allowed_table_cell_values=["Not independently tested", "Yes (filter lists)"],
+            allowed_table_replacements=[{"block": 3, "bullets": bullets}])
+        self.assertEqual(r["violations"], [])
+
+
 class TestUnattributedInOutput(unittest.TestCase):
     """body_neutralization_gate check 8: the result must not introduce new
     unattributed hits (subset semantics, same as S1/S2/S3)."""

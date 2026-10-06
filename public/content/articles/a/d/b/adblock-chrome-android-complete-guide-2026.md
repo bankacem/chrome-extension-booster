@@ -187,16 +187,13 @@ Figures are not independently verified; check each product's official listing.
 
 This guide is a research-based comparison compiled from publicly available information and general product knowledge. ExtensionTo has not run independent lab tests for this article. Features, permissions, and pricing change, so check the official listing before installing.
 
-| Configuration | Battery used (45 min) | Avg RAM held | Data transferred | Pages fully loaded |
-|---|---|---|---|---|
-| No blocking (Chrome) | Not independently tested | Not independently tested | Not independently tested | Not independently tested |
-| DNS only (Private DNS) | Not independently tested | Not independently tested | Not independently tested | Not independently tested |
-| Kiwi + uBlock Origin | Not independently tested | Not independently tested | Not independently tested | Not independently tested |
-| Kiwi + uBlock + companions (full stack) | Not independently tested | Not independently tested | Not independently tested | Not independently tested |
-| DNS + Kiwi + uBlock (combined) | Not independently tested | Not independently tested | Not independently tested | Not independently tested |
-| Firefox + uBlock Origin | Not independently tested | Not independently tested | Not independently tested | Not independently tested |
+- **No blocking (Chrome)** — Loading ads is not free: each ad is a network round-trip, a render, often a video decode.
+- **DNS only (Private DNS)** — This is why DNS blocking is so efficient — blocked traffic costs essentially zero battery because the connection is never opened — and also why it is so blunt.
+- **Kiwi + uBlock Origin** — It uses the same rendering engine as Chrome, so your browsing experience is identical — but you can install uBlock Origin, Dark Reader, and hundreds of other extensions exactly as on desktop.
+- **Kiwi + uBlock + companions (full stack)** — Running uBlock plus a full companion stack adds a real memory footprint on top of the browser's own — roughly the memory of a couple of extra tabs.
+- **DNS + Kiwi + uBlock (combined)** — The two do not conflict; uBlock simply never sees the requests DNS already killed.
+- **Firefox + uBlock Origin** — Firefox on Android also continues to support the original uBlock Origin, because Mozilla has committed to keeping MV2 support for its recommended blockers.
 
-Figures are not independently verified; check each product's official listing.
 
 **First, blocking can save more battery than it costs.** Loading ads is not free: each ad is a network round-trip, a render, often a video decode. On many devices and networks the battery cost of a blocking extension is more than repaid by the ads it never loads — but the exact balance varies with device, network, and browsing mix.
 

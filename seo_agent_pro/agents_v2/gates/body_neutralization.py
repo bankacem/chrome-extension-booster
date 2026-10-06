@@ -47,6 +47,10 @@ _TITLE_RE = re.compile(r"\b[A-Z][a-z][a-z0-9''&.\-]*")
 _SENTENCE_BOUNDARY = re.compile(r"[.!?]\s*$")
 _TOKEN_SPLIT = re.compile(r"(\s+)")
 _TOKEN_TRIM = ".,;:!?()[]{}\"'`*"
+# Replacement-list bullet: "- **Name** sentence" (owner brief 2026-10-07:
+# NIT-heavy tables may become a short bold-name + body-sentence list).
+_BULLET_RE = re.compile(r"^\s*[-*]\s+\*\*(.+?)\*\*\s*(.*)$", re.S)
+_LINKMD_RE = re.compile(r"\[([^\]]+)\]\([^)]*\)")
 
 
 def _blocks(body: str) -> List[str]:
@@ -193,24 +197,159 @@ def _standalone_pipe_lines(body: str) -> List[str]:
             if l.lstrip().startswith("|") and l not in detected]
 
 
+def _cell_edit_violations(
+    k: int,
+    b_blk: int,
+    b_rows: List[str],
+    a_rows: List[str],
+    allow_cells: set,
+) -> List[Dict[str, str]]:
+    """Old narrow-license per-row checks for ONE marked table pair."""
+    out: List[Dict[str, str]] = []
+    if len(b_rows) != len(a_rows):
+        out.append({
+            "check": "table_row_changed",
+            "detail": f"marked table #{k} row count changed "
+                      f"({len(b_rows)} -> {len(a_rows)})",
+        })
+        return out
+    if b_rows[0] != a_rows[0] or b_rows[1] != a_rows[1]:
+        out.append({
+            "check": "table_row_changed",
+            "detail": f"marked table #{k} header/separator row changed",
+        })
+        return out
+    for bi, (brow, arow) in enumerate(zip(b_rows[2:], a_rows[2:])):
+        bc, ac = _split_row(brow), _split_row(arow)
+        if len(bc) != len(ac) or brow.count("|") != arow.count("|"):
+            out.append({
+                "check": "table_row_changed",
+                "detail": f"marked table #{k} data row {bi + 1}: "
+                          f"column count changed",
+            })
+            break
+        if bc[0] != ac[0]:
+            out.append({
+                "check": "table_row_changed",
+                "detail": f"marked table #{k} data row {bi + 1}: "
+                          f"first column changed: {bc[0][:40]!r}",
+            })
+            break
+        bad = [c for b_cell, c in zip(bc[1:], ac[1:])
+               if b_cell != c and c.replace("**", "").strip()
+               not in allow_cells]
+        if bad:
+            out.append({
+                "check": "table_row_changed",
+                "detail": f"marked table #{k} data row {bi + 1}: cell(s) "
+                          f"{[b[:30] for b in bad[:3]]} not in accepted strings",
+            })
+            break
+    return out
+
+
+def _norm_label(s: str) -> str:
+    """Normalize a product label: strip markdown links to their text."""
+    return _LINKMD_RE.sub(r"\1", s).strip()
+
+
+def _verify_table_replacement(
+    before_body: str,
+    b_rows: List[str],
+    bullets: List[str],
+    violations: List[Dict[str, str]],
+    label: str,
+) -> None:
+    """Verify a declared table -> short-list replacement (owner brief
+    2026-10-07). Every bullet must be '**Name** sentence' where Name is a
+    byte-identical product label OF THE REPLACED TABLE (a first-column data
+    cell, or a header product column for column-mode tables) and the sentence
+    is a verbatim substring of the ORIGINAL body — no new facts. The list
+    must cover every product of the table exactly once (row mode: first
+    column; column mode: header product cells)."""
+    header = _split_row(b_rows[0])
+    data = [_split_row(r) for r in b_rows[2:]]
+    first_col = [r[0] for r in data if r and r[0]]
+    col_names = [c for c in header[1:] if c]
+    allowed_first = set(_norm_label(c) for c in first_col)
+    allowed_header = set(_norm_label(c) for c in col_names)
+    names: List[str] = []
+    for bl in bullets:
+        m = _BULLET_RE.match(bl)
+        if not m:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: bullet is not '**Name** sentence' format: "
+                          f"{bl[:60]!r}",
+            })
+            continue
+        name_raw, rest = m.group(1).strip(), m.group(2).strip()
+        name_norm = _norm_label(name_raw)
+        if name_norm not in allowed_first and name_norm not in allowed_header:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: bold name {name_norm[:40]!r} is not a "
+                          f"product label of the replaced table",
+            })
+        if rest[:1] in ("—", "-"):
+            rest = rest.lstrip("—- ").strip()
+        if not rest:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: bullet has no sentence after the bold name",
+            })
+        elif (name_norm + " " + rest) not in before_body \
+                and rest not in before_body:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: sentence {rest[:70]!r} is not a verbatim "
+                          f"part of the original body (no new facts allowed)",
+            })
+        names.append(name_norm)
+    if not names:
+        return
+    if set(names) <= allowed_first and first_col:
+        if len(names) != len(first_col) or len(set(names)) != len(first_col):
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: row-mode list covers "
+                          f"{len(set(names))} of {len(first_col)} products",
+            })
+    elif set(names) <= allowed_header and col_names:
+        if len(names) != len(col_names) or len(set(names)) != len(col_names):
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: column-mode list covers "
+                          f"{len(set(names))} of {len(col_names)} products",
+            })
+    else:
+        violations.append({
+            "check": "table_replacement_invalid",
+            "detail": f"{label}: bullet names mix row/column labels or match "
+                      f"neither the first column nor the header products",
+        })
+
+
 def _compare_tables(
     before_body: str,
     after_body: str,
     marked_set: set,
     allow_marked_table_edits: bool,
     allow_cells: set,
+    replacement_blocks: frozenset = frozenset(),
 ) -> List[Dict[str, str]]:
-    """Structural table check with an optional narrow license.
+    """Structural table check with optional narrow licenses.
 
     Default semantics unchanged: the before/after table-line sequences must
     be equal. With allow_marked_table_edits=True, a table whose block is
     marked may swap DATA-cell text for accepted strings — header/separator
     byte-identical, row/column count and order fixed, first column
     byte-identical, every other changed cell's new text in allow_cells.
+    A table whose block is in replacement_blocks (owner-brief 2026-10-07
+    list replacement, verified separately) may be absent from the result.
     """
     tb, ta = _tables(before_body), _tables(after_body)
     # standalone pipe lines (not part of a detected table) must never change
-    tb_set = set(id(rows) for _, rows in tb)
     standalone_b = _standalone_pipe_lines(before_body)
     standalone_a = _standalone_pipe_lines(after_body)
     if standalone_b != standalone_a:
@@ -224,64 +363,58 @@ def _compare_tables(
     if [rows for _, rows in tb] == [rows for _, rows in ta]:
         return []
     violations: List[Dict[str, str]] = []
-    if len(tb) != len(ta):
+    # pool accounting: unchanged tables match by full row sequence; marked
+    # cell-edits match by (header, separator); declared replacements vanish.
+    ta_by_rows: Dict[tuple, List[int]] = {}
+    ta_by_head: Dict[tuple, List[int]] = {}
+    for j, (_, a_rows) in enumerate(ta):
+        ta_by_rows.setdefault(tuple(a_rows), []).append(j)
+        if len(a_rows) >= 2:
+            ta_by_head.setdefault((a_rows[0], a_rows[1]), []).append(j)
+    for k, (b_blk, b_rows) in enumerate(tb):
+        key = tuple(b_rows)
+        if ta_by_rows.get(key):
+            j = ta_by_rows[key].pop(0)
+            if len(a_rows_list := ta[j][1]) >= 2:
+                head_key = (a_rows_list[0], a_rows_list[1])
+                if j in ta_by_head.get(head_key, []):
+                    ta_by_head[head_key].remove(j)
+            continue
+        if b_blk in replacement_blocks:
+            continue
+        head_key = (b_rows[0], b_rows[1]) if len(b_rows) >= 2 else None
+        cand = ta_by_head.get(head_key, []) if head_key else []
+        if allow_marked_table_edits and b_blk in marked_set and not cand:
+            # header may itself have changed: fall back to the remaining
+            # after-table with the same row count (nearest to the old
+            # index-zip pairing) so the per-row checks report precisely
+            remaining = sorted(j for idxs in ta_by_rows.values() for j in idxs)
+            same_len = [j for j in remaining
+                        if len(ta[j][1]) == len(b_rows)]
+            if same_len:
+                cand = [same_len[0]]
+        if allow_marked_table_edits and b_blk in marked_set and cand:
+            j = cand.pop(0)
+            ta_by_rows[tuple(ta[j][1])].remove(j)
+            violations.extend(_cell_edit_violations(
+                k, b_blk, b_rows, ta[j][1], allow_cells))
+            continue
+        diff = next(((x, y) for x, y in zip(b_rows, (ta[cand[0]][1] if cand
+                                                     else b_rows)) if x != y),
+                    (b_rows[0] if b_rows else "", "<missing>"))
         violations.append({
             "check": "table_row_changed",
-            "detail": f"table count differs ({len(tb)} -> {len(ta)})",
+            "detail": f"table #{k} (block {b_blk}, marked={b_blk in marked_set}) "
+                      f"rows differ or were removed without a declared "
+                      f"replacement; first change: {diff[0][:60]!r}",
         })
-        return violations
-    for k, ((b_blk, b_rows), (a_blk, a_rows)) in enumerate(zip(tb, ta)):
-        if b_rows == a_rows:
-            continue
-        if not allow_marked_table_edits or b_blk not in marked_set:
-            diff = next(((x, y) for x, y in zip(b_rows, a_rows) if x != y),
-                        (b_rows[0] if b_rows else "", "<missing>"))
-            violations.append({
-                "check": "table_row_changed",
-                "detail": f"table #{k} (block {b_blk}, marked={b_blk in marked_set}) "
-                          f"rows differ; first change: {diff[0][:60]!r}",
-            })
-            continue
-        # narrow license: verify every condition on this marked table
-        if len(b_rows) != len(a_rows):
-            violations.append({
-                "check": "table_row_changed",
-                "detail": f"marked table #{k} row count changed "
-                          f"({len(b_rows)} -> {len(a_rows)})",
-            })
-            continue
-        if b_rows[0] != a_rows[0] or b_rows[1] != a_rows[1]:
-            violations.append({
-                "check": "table_row_changed",
-                "detail": f"marked table #{k} header/separator row changed",
-            })
-            continue
-        for bi, (brow, arow) in enumerate(zip(b_rows[2:], a_rows[2:])):
-            bc, ac = _split_row(brow), _split_row(arow)
-            if len(bc) != len(ac) or brow.count("|") != arow.count("|"):
-                violations.append({
-                    "check": "table_row_changed",
-                    "detail": f"marked table #{k} data row {bi + 1}: "
-                              f"column count changed",
-                })
-                break
-            if bc[0] != ac[0]:
-                violations.append({
-                    "check": "table_row_changed",
-                    "detail": f"marked table #{k} data row {bi + 1}: "
-                              f"first column changed: {bc[0][:40]!r}",
-                })
-                break
-            bad = [c for b_cell, c in zip(bc[1:], ac[1:])
-                   if b_cell != c and c.replace("**", "").strip()
-                   not in allow_cells]
-            if bad:
-                violations.append({
-                    "check": "table_row_changed",
-                    "detail": f"marked table #{k} data row {bi + 1}: cell(s) "
-                              f"{[b[:30] for b in bad[:3]]} not in accepted strings",
-                })
-                break
+    leftover = [j for pool in ta_by_rows.values() for j in pool]
+    if leftover:
+        violations.append({
+            "check": "table_row_changed",
+            "detail": f"{len(leftover)} table(s) in the result do not exist in "
+                      f"the original (new/edited tables are forbidden)",
+        })
     return violations
 
 
@@ -298,6 +431,7 @@ def body_neutralization_gate(
     allowed_new_paragraph_texts: Collection[str] = (),
     allow_marked_table_edits: bool = False,
     allowed_table_cell_values: Collection[str] = ("Not independently tested",),
+    allowed_table_replacements: Collection[Dict] = (),
     word_drop_limit_pct: float = 45.0,
 ) -> Dict:
     """Compare a neutralized body against its original.
@@ -328,6 +462,17 @@ def body_neutralization_gate(
         allowed_table_cell_values (default: {"Not independently tested"})
         — the owner's “accepted strings only” rule;
     Tables whose block is NOT marked stay forbidden entirely, flag or not.
+
+    allowed_table_replacements (owner brief 2026-10-07): a MARKED table
+    whose data cells are >50% "Not independently tested" may be replaced by
+    a SHORT LIST — each bullet "**Product** sentence", the bold name taken
+    byte-identically from the replaced table (first column, or header
+    product columns for column-mode tables) and the sentence a verbatim
+    substring of the original body (no new facts). The license is an exact
+    declaration: [{"block": <before block index>, "bullets": [lines]}].
+    The gate re-verifies every declaration (name ∈ table labels, sentence
+    ∈ original body, full product coverage) and that the result contains
+    the declared list block byte-identically and nothing else in its place.
     """
     violations: List[Dict[str, str]] = []
     ab, abx = _blocks(before_body), _blocks(after_body)
@@ -336,6 +481,55 @@ def body_neutralization_gate(
     allow_renames = list(allowed_heading_renames)
     allow_para_texts = set(t.strip() for t in allowed_new_paragraph_texts)
     allow_cells = set(v.strip() for v in allowed_table_cell_values)
+    # declared table -> short-list replacements (owner brief 2026-10-07)
+    tb_all = _tables(before_body)
+    tb_by_block = {}
+    for blk, rows in tb_all:
+        tb_by_block.setdefault(blk, rows)
+    repl_specs: List[Tuple[int, List[str]]] = []
+    repl_blocks: set = set()
+    for spec in (allowed_table_replacements or ()):
+        b = int(spec["block"])
+        bullets = [l for l in spec["bullets"]]
+        if b not in marked_set:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"declared replacement block {b} is not marked",
+            })
+        if b in repl_blocks:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"duplicate replacement declaration for block {b}",
+            })
+            continue
+        repl_blocks.add(b)
+        repl_specs.append((b, bullets))
+        rows = tb_by_block.get(b)
+        if rows is None:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"declared replacement block {b} contains no table "
+                          f"in the original",
+            })
+        else:
+            # the marked block must be EXACTLY the table lines (a replacement
+            # silently drops everything else in the block)
+            if b < len(ab) and "\n".join(rows) != ab[b]:
+                violations.append({
+                    "check": "table_replacement_invalid",
+                    "detail": f"declared replacement block {b} contains "
+                              f"non-table lines besides the table",
+                })
+            _verify_table_replacement(
+                before_body, rows, bullets, violations, f"table (block {b})")
+        want = "\n".join(bullets)
+        if want not in abx:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"declared replacement list for block {b} is not "
+                          f"present byte-identically in the result",
+            })
+    declared_after_blocks = set("\n".join(bullets) for _, bullets in repl_specs)
     sm = SequenceMatcher(a=ab, b=abx, autojunk=False)
     ops = sm.get_opcodes()
 
@@ -416,6 +610,8 @@ def body_neutralization_gate(
             continue
         if tag == "replace" and len(b_chunk) == len(a_chunk):
             for bp, ap in zip(b_chunk, a_chunk):
+                if ap.strip() in declared_after_blocks:
+                    continue  # declared list: every word verified verbatim
                 extra = (set(_proper_nouns(ap)) - set(_proper_nouns(bp))
                          - set(allow_pn))
                 if extra:
@@ -431,6 +627,8 @@ def body_neutralization_gate(
             for b in b_chunk:
                 before_pn |= set(_proper_nouns(b))
             for a in a_chunk:
+                if a.strip() in declared_after_blocks:
+                    continue  # declared list: every word verified verbatim
                 extra = set(_proper_nouns(a)) - before_pn - set(allow_pn)
                 if extra:
                     violations.append({
@@ -483,7 +681,7 @@ def body_neutralization_gate(
     ra = [l for l in after_body.splitlines() if l.lstrip().startswith("|")]
     table_violations = _compare_tables(
         before_body, after_body, marked_set, allow_marked_table_edits,
-        allow_cells)
+        allow_cells, frozenset(repl_blocks))
     violations.extend(table_violations)
 
     if _faq_questions(before_body) != _faq_questions(after_body):
@@ -544,6 +742,7 @@ def body_neutralization_gate(
             "before_words": wb,
             "after_words": wa,
             "word_drop_pct": round(drop_pct, 1),
+            "tables_replaced": len(repl_specs),
             "before_paragraphs": len(ab),
             "after_paragraphs": len(abx),
             "marked": sorted(marked_set),

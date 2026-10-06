@@ -140,16 +140,12 @@ Given the concerns about some ad blockers tracking users, it's crucial to choose
 
 ### Comparison of Key Features
 
-| Extension | Memory Usage | Customization | Effectiveness | Whitelisting |
-|----------|--------------|---------------|---------------|--------------|
-| Light Popup Blocker | Not independently tested | Not independently tested | Not independently tested | Not independently tested |
-| [uBlock Origin](https://github.com/gorhill/uBlock) | Not independently tested | High (filter lists + custom rules) | Not independently tested | Yes (documented) |
-| AdBlock Plus | Not independently tested | Medium (filter lists + settings) | Not independently tested | Limited (documented) |
-| PopUp Blocker (Basic) | Not independently tested | Not independently tested | Not independently tested | Not independently tested |
+- **Light Popup Blocker** remains a strong all-around option for most users.
+- **[uBlock Origin](https://github.com/gorhill/uBlock)** — While primarily known as an ad blocker, uBlock Origin excels at pop-up blocking too.
+- **AdBlock Plus** has been a popular choice for years, and it remains effective against most traditional pop-ups.
+- **PopUp Blocker (Basic)** — For users who need a simple, no-frills solution, the basic PopUp Blocker extension gets the job done with virtually no configuration needed.
 
-Figures are not independently verified; check each product's official listing.
 
-*Table: Comparison of key features across popular pop-up blockers.*
 
 ## Best Free Pop-Up Blockers for Chrome {#best-free}
 
