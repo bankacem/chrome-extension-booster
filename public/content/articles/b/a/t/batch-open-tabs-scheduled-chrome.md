@@ -2,8 +2,7 @@
 seo_title: "Open Multiple URLs at Once: Batch Tab Opening & Scheduled Tab Sessions"
 title: "Open Multiple URLs at Once: Batch Tab Opening & Scheduled Tab Sessions"
 slug: batch-open-tabs-scheduled-chrome
-excerpt: >-
-  Tested guidance for open multiple urls at once chrome: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for open multiple urls at once chrome: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/batch-open-tabs-scheduled-chrome/featured.webp"
 category: "Productivity"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - open url list in tabs
   - scheduled tab sessions chrome
   - daily startup tabs routine chrome
-meta_description: >-
-  Open multiple urls at once chrome — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Open multiple urls at once chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-21T00:00:00.000Z
 updated_at: '2026-09-23T13:56:58.000+00:00'
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "25"
 canonicalPath: /blog/batch-open-tabs-scheduled-chrome
-description: >-
-  Open multiple urls at once chrome — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Open multiple urls at once chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/batch-open-tabs-scheduled-chrome/featured.webp" alt="Open Multiple URLs at Once: Batch Tab Opening & Scheduled Tab Sessions" width="1200" height="630" loading="lazy" class="featured-image">

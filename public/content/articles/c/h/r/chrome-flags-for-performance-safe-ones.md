@@ -16,7 +16,7 @@ keywords:
   - "best chrome://flags for speed"
   - "safe chrome flags to enable 2026"
   - "chrome gpu rasterization flag"
-meta_description: "Which chrome://flags are safe for performance in 2026? The four worth trying, the ones to avoid, and the 10-second reset — tested on a low-end laptop."
+meta_description: 'Which chrome://flags are safe for performance in 2026? The four worth trying, the ones to avoid, and the 10-second reset.'
 status: published
 published_at: '2026-09-04T15:00:00.000+00:00'
 scheduled_at: '2026-09-04T15:00:00.000+00:00'

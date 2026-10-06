@@ -1,11 +1,8 @@
 ---
 seo_title: "Avast Online Security & Privacy Chrome"
-title: 'Avast Online Security & Privacy Chrome: My Honest Testing Results (2026)'
+title: 'Avast Online Security & Privacy Chrome: Review (2026)'
 slug: avast-online-security-chrome
-excerpt: >-
-  I ran Avast Online Security & Privacy on Chrome for two weeks across banking
-  sites, news pages, and sketchy downloads. Here is how it performed against
-  malware, phishing, and trackers — and why I still needed companion extensions.
+excerpt: 'Avast Online Security & Privacy on Chrome reviewed: how it performs against malware, phishing, and trackers — and why companion extensions still help.'
 featured_image: /content/images/avast-online-security-chrome/featured.webp
 category: Productivity & Tools
 tags:
@@ -19,7 +16,7 @@ keywords:
   - avast privacy extension
   - avast chrome extension review
   - best security extensions chrome 2026
-meta_description: "I tested Avast Online Security & Privacy Chrome for two weeks. Real results on phishing blocks, tracker prevention, performance impact, and which..."
+meta_description: 'Avast Online Security & Privacy for Chrome reviewed: phishing blocks, tracker prevention, performance impact, and companion extensions.'
 status: published
 published_at: '2026-04-29T10:15:00.000+00:00'
 updated_at: '2026-09-14T12:00:00.000+00:00'
