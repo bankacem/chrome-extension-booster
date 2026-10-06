@@ -3,9 +3,9 @@ seo_title: "Chrome Clipboard History: Limits, Extensions, Privacy"
 id: "433dab18-7a81-5101-94f8-1eac49eb1ce6"
 title: "Chrome Clipboard History: What Chrome Keeps, Extensions That Extend It, and Privacy (2026)"
 slug: clipboard-history-chrome-extension-guide
-description: "A tested guide to clipboard history in Chrome: the one-item limit, four extensions that fix it, paste history recovery, sync behavior, and privacy trade-offs."
-excerpt: "Chrome's clipboard remembers exactly one thing. I ran four clipboard history extensions for two weeks of copy-paste work — this is what actually helped."
-meta_description: "Chrome keeps one clipboard entry. I tested four clipboard history extensions for two weeks: what they store, sync, recover, and the privacy trade-offs."
+description: 'A guide to clipboard history in Chrome: the one-item limit, four extensions that fix it, paste history recovery, sync behavior, and privacy trade-offs.'
+excerpt: 'Chrome''s clipboard remembers exactly one thing. Four clipboard history extensions compared: which features actually helped in daily copy-paste work.'
+meta_description: 'Chrome keeps one clipboard entry. Four clipboard history extensions compared: what they store, sync, and recover, plus the privacy trade-offs.'
 canonicalPath: /blog/clipboard-history-chrome-extension-guide
 category: Productivity & Workflow
 tags:

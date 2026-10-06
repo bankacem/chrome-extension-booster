@@ -3,10 +3,7 @@ seo_title: "How to Enable Dark Mode on Wikipedia"
 id: 317610a9-f767-47f8-9cfd-f72a2ae80ec8
 title: How to Enable Dark Mode on Wikipedia for Night Reading (2026 Guide)
 slug: activate-dark-mode-on-wikipedia-for-night-reading-2
-excerpt: >-
-  I tested 6 ways to enable dark mode on Wikipedia in 2026 — from the built-in
-  option to Chrome extensions. Here is which method actually works best and the
-  companion tools that make Wikipedia reading better.
+excerpt: '6 ways to enable dark mode on Wikipedia in 2026 — from the built-in option to Chrome extensions — which method works best, plus companion tools that make Wikipedia reading better.'
 featured_image: >-
   /content/images/activate-dark-mode-on-wikipedia-for-night-reading-2/featured.webp
 category: Productivity & Tools
@@ -19,7 +16,7 @@ keywords:
   - Wikipedia night mode
   - Wikipedia dark mode 2026
   - dark mode Chrome extension Wikipedia
-meta_description: "How to enable dark mode on Wikipedia in 2026: the built-in setting, the best Chrome extensions, and the Chrome flag — tested side by side for night reading."
+meta_description: 'How to enable dark mode on Wikipedia in 2026: the built-in setting, Chrome extensions, and the Chrome flag compared for night reading.'
 status: published
 published_at: '2026-02-27T08:11:00.457+00:00'
 scheduled_at: '2026-02-27T08:11:00+00:00'
