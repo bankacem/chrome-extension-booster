@@ -3,9 +3,9 @@ seo_title: "Manifest V3 & Chrome Adblockers: What Still Works (2026)"
 id: "33976eb9-1f91-5291-bc60-dfe8b938ae62"
 title: "Manifest V3 and Chrome Adblockers: What Changed & What Still Works (2026)"
 slug: manifest-v3-adblock-chrome-guide
-description: "Manifest V3 did not kill ad blocking in Chrome, it changed the rules. I tested what survived: declarativeNetRequest limits, uBO Lite, and MV3-native options."
-excerpt: "Chrome did not kill adblockers, it rewired them. I explain what Manifest V3 actually restricted, then tested which blockers and setups still filter cleanly."
-meta_description: "Manifest V3 did not kill ad blocking in Chrome, it changed the rules. I tested what survived: declarativeNetRequest limits, uBO Lite, and MV3-native options."
+description: 'Manifest V3 did not kill ad blocking in Chrome, it changed the rules: declarativeNetRequest limits, uBO Lite, and the MV3-native options that still work.'
+excerpt: 'Chrome did not kill adblockers, it rewired them: what Manifest V3 actually restricted, and which blockers and setups still filter cleanly.'
+meta_description: 'Manifest V3 did not kill ad blocking in Chrome, it changed the rules: declarativeNetRequest limits, uBO Lite, and the MV3-native options that still work.'
 canonicalPath: https://extensionto.com/blog/manifest-v3-adblock-chrome-guide
 category: Guides & Comparisons
 tags:
