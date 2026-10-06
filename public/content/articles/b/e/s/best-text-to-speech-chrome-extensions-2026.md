@@ -1,11 +1,11 @@
 ---
-seo_title: "6 Best Text-to-Speech Chrome Extensions (2026 Tested)"
+seo_title: 6 Best Text-to-Speech Chrome Extensions (2026)
 id: "26a1cb40-8309-5deb-8fea-6528be5c2279"
-title: "The 6 Best Text-to-Speech Chrome Extensions in 2026 (Tested on Long Articles)"
+title: The 6 Best Text-to-Speech Chrome Extensions in 2026
 slug: best-text-to-speech-chrome-extensions-2026
-description: "Six text-to-speech Chrome extensions tested on real long reads: voice quality, speed range, PDF and DRM behavior, word highlighting, and where free tiers cut off."
-excerpt: "Reddit threads ask for one good read-aloud extension and get ten names and no comparisons. I listened to six of them for two weeks of commute reading — ranked."
-meta_description: "I tested six text-to-speech Chrome extensions on long-form reading: natural voices, PDF support, speed control, highlighting, and the free limits that matter."
+description: 'Six text-to-speech Chrome extensions compared on real long reads: voice quality, speed range, PDF and DRM behavior, word highlighting, and where free tiers cut off.'
+excerpt: Reddit threads ask for one good read-aloud extension and get ten names and no comparisons. Six text-to-speech extensions compared for commute reading — ranked.
+meta_description: 'Six text-to-speech Chrome extensions compared for long-form reading: natural voices, PDF support, speed control, highlighting, and the free limits that matter.'
 canonicalPath: /blog/best-text-to-speech-chrome-extensions-2026
 category: Accessibility & Reading
 tags:

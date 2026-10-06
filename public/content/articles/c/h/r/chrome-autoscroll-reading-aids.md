@@ -2,8 +2,7 @@
 seo_title: "Autoscroll & Reading Aid Extensions: Hands-Free Long Reads"
 title: "Autoscroll & Reading Aid Extensions: Hands-Free Long Reads"
 slug: chrome-autoscroll-reading-aids
-excerpt: >-
-  Tested guidance for autoscroll chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for autoscroll chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/chrome-autoscroll-reading-aids/featured.webp"
 category: "Accessibility"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - hands free scrolling extension
   - teleprompter scroll chrome
   - scroll speed control extension
-meta_description: >-
-  Autoscroll chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Autoscroll chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-27T00:00:00.000Z
 updated_at: 2026-09-27T23:57:56.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "17"
 canonicalPath: /blog/chrome-autoscroll-reading-aids
-description: >-
-  Autoscroll chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Autoscroll chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/chrome-autoscroll-reading-aids/featured.webp" alt="Autoscroll & Reading Aid Extensions: Hands-Free Long Reads" width="1200" height="630" loading="lazy" class="featured-image">
