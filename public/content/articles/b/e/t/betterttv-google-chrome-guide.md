@@ -3,8 +3,8 @@ seo_title: "BetterTTV for Chrome: Full Setup Guide for Twitch (2026)"
 id: "120188c8-829f-5ffb-bd7e-e238901ad247"
 title: "BetterTTV for Chrome: Complete Setup Guide for Twitch and YouTube (2026)"
 slug: betterttv-google-chrome-guide
-description: "A tested, step-by-step BetterTTV setup guide for Chrome: enable Twitch emotes, tune chat settings, check YouTube live support, and audit privacy before installing."
-excerpt: "I installed BetterTTV on Chrome, tested it on live Twitch streams and YouTube chats, and wrote the setup ladder I wish existed — with the privacy checks most guides skip."
+description: 'A step-by-step BetterTTV setup guide for Chrome: enable Twitch emotes, tune chat settings, check YouTube live support, and audit privacy before installing.'
+excerpt: 'BetterTTV on Chrome for live Twitch streams and YouTube chats: the setup ladder you need — with the privacy checks most guides skip.'
 meta_description: "Install and configure BetterTTV on Chrome step by step: Twitch emotes, chat settings, YouTube live support, and privacy checks before you trust it."
 canonicalPath: /blog/betterttv-google-chrome-guide
 category: Streaming & Media

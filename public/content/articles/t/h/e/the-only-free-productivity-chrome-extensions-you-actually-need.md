@@ -3,10 +3,7 @@ seo_title: "Free Productivity Chrome Extensions: Minimal Stack"
 id: b790e228-a318-4f5d-863a-874e9732a1b2
 title: The Only Free Productivity Chrome Extensions You Actually Need
 slug: the-only-free-productivity-chrome-extensions-you-actually-need
-excerpt: >-
-  Seven genuinely free Chrome extensions that solve real productivity problems — from
-  tab chaos and distraction to writing clarity and clipboard management — tested for
-  RAM impact and privacy.
+excerpt: Seven genuinely free Chrome extensions that solve real productivity problems — from tab chaos and distraction to writing clarity and clipboard management — with RAM impact and privacy in mind.
 featured_image: >-
   /content/images/the-only-free-productivity-chrome-extensions-you-actually-need/featured.webp
 category: "Productivity & Tools"

@@ -9,7 +9,7 @@ category: Chrome Extensions
 tags: []
 keywords:
   - how to add extensions to chrome mobile
-meta_description: "A hands-on look at add extensions to chrome mobile, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at add extensions to chrome mobile, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-03-24T08:00:00.319+00:00'
 scheduled_at: '2026-03-24T08:00:00+00:00'

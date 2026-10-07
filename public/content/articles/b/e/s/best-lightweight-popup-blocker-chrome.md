@@ -1,11 +1,9 @@
 ---
 seo_title: "Best Lightweight Popup Blocker for Chrome 2026"
 id: 6d5368c9-e6fa-4ef8-9a3b-2d68f188f3c4
-title: 'Best Lightweight Popup Blocker for Chrome 2026: Tested and Compared'
+title: Best Lightweight Popup Blocker for Chrome 2026 Compared
 slug: best-lightweight-popup-blocker-chrome
-excerpt: >-
-  I tested 6 popup blockers for Chrome to find the lightest option that still
-  blocks 95%+ of pop-ups. Here is the winner.
+excerpt: 6 popup blockers for Chrome compared for the lightest option that still blocks reliably. Here is the winner.
 featured_image: /content/images/best-lightweight-popup-blocker-chrome/featured.webp
 category: Productivity & Tools
 tags: []
@@ -13,9 +11,7 @@ keywords:
   - lightweight popup blocker chrome
   - best popup blocker chrome
   - chrome pop-up blocker
-meta_description: >-
-  I tested 6 popup blockers for Chrome over a week on 50 sites. Here is which
-  one blocks 97% of pop-ups using only 18MB of RAM.
+meta_description: '6 popup blockers for Chrome compared for lightweight blocking: which one stops the most pop-ups with the smallest footprint.'
 status: published
 published_at: '2026-03-04T14:11:00.98+00:00'
 scheduled_at: '2026-03-04T14:11:00+00:00'

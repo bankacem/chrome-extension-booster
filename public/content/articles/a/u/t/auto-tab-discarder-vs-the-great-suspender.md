@@ -3,10 +3,7 @@ seo_title: "Auto Tab Discarder vs The Great Suspender 2026"
 id: babd4e43-164e-4b31-9b6f-af21017f11f5
 title: 'Auto Tab Discarder vs The Great Suspender 2026: Why You Should Switch'
 slug: auto-tab-discarder-vs-the-great-suspender
-excerpt: >-
-  The Great Suspender was flagged for malware in 2023 and removed from the
-  Chrome Web Store. I tested 4 alternatives including Auto Tab Discarder and
-  ProTab Suspender — here is which to switch to.
+excerpt: The Great Suspender was flagged for malware in 2023 and removed from the Chrome Web Store. 4 alternatives including Auto Tab Discarder and ProTab Suspender compared — which to switch to.
 featured_image: /content/images/auto-tab-discarder-vs-the-great-suspender/featured.webp
 category: Productivity & Tools
 tags:
@@ -19,7 +16,7 @@ keywords:
   - The Great Suspender alternative
   - Chrome tab suspender safe
   - best tab suspender 2026
-meta_description: "The Great Suspender was removed from the Chrome Web Store for malware. I tested 4 alternatives — here is which is safe, which saves the most RAM, and..."
+meta_description: 'The Great Suspender was removed from the Chrome Web Store for malware. 4 alternatives compared — which is safe, which saves the most RAM, and when to use each.'
 status: published
 published_at: '2026-06-06T08:00:00.000000+00:00'
 scheduled_at: null

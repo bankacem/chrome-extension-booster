@@ -57,6 +57,16 @@ S1 V3 extension WIRED (owner brief 2026-10-06, item 1): seven more
 first-person/testing families (S1_V3_PATTERNS) join the scan — same
 detection semantics, same provenance discipline.
 
+S1 V3.1 extension WIRED (owner brief 2026-10-08, item 1): nine more
+families (S1_V3_1_PATTERNS + two special scanners) target the remnants
+the V3 net let through — spoken experience ("I've tested dozens",
+"I've spent months"), persona claims ("power user"), first-person
+framing ("my findings", "as a ... who", "I'll share/explore/show/
+walk"), first-person observation verbs ("we/I tracked/checked/
+compared/measured/ran"), CTA lines that still sell testing
+("library of tested ..."), and unsourced statistics ("Studies (have)
+shown 40%" with no link).
+
 Frontmatter honesty gate (owner brief 2026-10-05, item 1): task G proved
 the body-only gate is blind to marketing copy — the memory-saver article
 has S1=0 body while title/meta/excerpt carry "9 Tested Fixes", "We
@@ -74,7 +84,8 @@ Public API:
     fabrication_gate(body: str) -> dict
     frontmatter_honesty_gate(fields: dict) -> dict   # title/seo_title/
         meta_description/excerpt only
-    SEVERITIES / S1_PATTERNS / S1_PROPOSED_PATTERNS / S2_PATTERNS / S3
+    SEVERITIES / S1_PATTERNS / S1_PROPOSED_PATTERNS / S1_V3_PATTERNS /
+    S1_V3_1_PATTERNS / S2_PATTERNS / S3
         config / FM_HONESTY_PATTERNS / FM_FIELDS (introspectable)
 """
 import re
@@ -159,6 +170,59 @@ S1_V3_PATTERNS: List[Tuple[str, str]] = [
     ("v3_my_noun",          r"\bmy\s+(?:experience|testing|recommendation|setup)\b"),
     ("v3_i_recommend",      r"\bI\s+(?:recommend|suggest|particularly|personally)\b"),
 ]
+
+# ─────────────────────────────────────────────────────────────
+# S1 V3.1 EXTENSION — WIRED (owner brief 2026-10-08, item 1)
+# ─────────────────────────────────────────────────────────────
+# Nine families dictated by the owner (verbatim intent, same detection
+# semantics as the rest of S1 — case-insensitive, \b guarded):
+#   1. (has|have|had|I've|I have) (tested|reviewed|used|tried)
+#      (dozens|hundreds|numerous|many|several)
+#   2. I('ve| have| had)? spent (\w+ )?(months|weeks|years|hours)
+#      — the owner's regex allows the bare "I spent" form too
+#   3. my findings
+#   4. (as|being) an? [a-z ]+ who        — implemented with an explicit
+#      [A-Za-z ] span and a {1,40} cap so IGNORECASE cannot run the span
+#      through capitals indefinitely; punctuation still blocks the span
+#   5. power user(s)                     — plural added so "power users"
+#      is caught as well; documented deviation from the literal singular
+#   6. I'll (share|explore|show|walk)    — "I will ..." included
+#   7. (we|I) (tracked|checked|compared|measured|ran)
+#   8. tested (extensions|chrome|guides) in CTA lines — see V3_1_CTA_CUE_RE
+#   9. Studies (have )?shown + a percentage, no link — see
+#      _scan_v3_1_studies (sentence-level, same-sentence link required,
+#      blockquote+link exception honored)
+# Patterns 1–7 live in the tuple below and join the generic line loop;
+# 8 and 9 need extra context (a CTA cue / a sentence window) and run as
+# dedicated scanners inside fabrication_gate(). All emit hits attributed
+# to their v3_1_* names so provenance stays visible.
+S1_V3_1_PATTERNS: List[Tuple[str, str]] = [
+    ("v3_1_tested_dozens", r"\b(?:has|have|had|I(?:['\u2019]ve|\s+have)?)\s+"
+                           r"(?:tested|reviewed|used|tried)\s+"
+                           r"(?:dozens|hundreds|numerous|many|several)\b"),
+    ("v3_1_spent_time",    r"\bI(?:['\u2019]ve|\s+have|\s+had)?\s+spent\s+"
+                           r"(?:\w+\s+)?(?:months|weeks|years|hours)\b"),
+    ("v3_1_my_findings",   r"\bmy\s+findings\b"),
+    ("v3_1_as_a_who",      r"\b(?:as|being)\s+an?\s+[A-Za-z ]{1,40}?\s+who\b"),
+    ("v3_1_power_user",    r"\bpower\s+users?\b"),
+    ("v3_1_ill_share",     r"\bI(?:['\u2019]ll|\s+will)\s+"
+                           r"(?:share|explore|show|walk)\b"),
+    ("v3_1_we_i_verbs",    r"\b(?:we|I)\s+"
+                           r"(?:tracked|checked|compared|measured|ran)\b"),
+]
+
+# CTA cue for v3_1_cta_tested: the testing phrase only matters when the
+# line is a call-to-action. The owner's example is "library of tested";
+# the cue list covers the CTA shapes observed in this corpus.
+V3_1_CTA_CUE_RE = re.compile(
+    r"\b(?:library\s+of|browse\s+our|check\s+out|explore\s+our|"
+    r"visit\s+our|collection\s+of)\b", re.I)
+V3_1_CTA_TESTED_RE = re.compile(
+    r"\btested\s+(?:extensions|chrome|guides)\b", re.I)
+
+# "Studies (have) shown" + a ratio, unsourced (v3_1_studies_shown)
+STUDIES_SHOWN_RE = re.compile(r"\bstudies\s+(?:have\s+)?shown\b", re.I)
+STUDIES_STAT_RE = re.compile(r"\d[\d,]*(?:\.\d+)?\s?%|\b\d[\d,]*(?:\.\d+)?\s+percent\b", re.I)
 
 # ─────────────────────────────────────────────────────────────
 # FRONTMATTER HONESTY — the 4 marketing fields (owner brief 2026-10-05)
@@ -357,16 +421,52 @@ def _dup_sections(body: str) -> List[str]:
     return dups
 
 
+def _scan_v3_1_special(body: str) -> List[Dict[str, str]]:
+    """V3.1 patterns that need context beyond a bare line regex.
+
+    v3_1_cta_tested — a CTA line (V3_1_CTA_CUE_RE) that still sells
+    testing ("tested extensions|chrome|guides").
+    v3_1_studies_shown — a sentence claiming "Studies (have) shown" plus
+    a ratio, with NO source link in the same sentence; a link in the
+    sentence means the stat is attributed and passes. Blockquote lines
+    with a link are excused like everywhere else. Mirrors the generic
+    loop's reporting convention: at most ONE sample per pattern.
+    """
+    hits: List[Dict[str, str]] = []
+    cta_done = studies_done = False
+    for line in body.splitlines():
+        if not cta_done and V3_1_CTA_TESTED_RE.search(line) \
+                and V3_1_CTA_CUE_RE.search(line) and not _excused(line):
+            hits.append({"pattern": "v3_1_cta_tested",
+                         "sample": re.sub(r"\s+", " ", line).strip()[:200]})
+            cta_done = True
+        if studies_done or line.lstrip().startswith(("#", "|", "```")) \
+                or len(line) > 600 or _excused(line):
+            continue
+        for s in _sentences(line):
+            if not (STUDIES_SHOWN_RE.search(s) and STUDIES_STAT_RE.search(s)):
+                continue
+            if _has_link(s):
+                continue  # cited statistic — attributed, passes
+            hits.append({"pattern": "v3_1_studies_shown",
+                         "sample": re.sub(r"\s+", " ", s).strip()[:200]})
+            studies_done = True
+            break
+    return hits
+
+
 def fabrication_gate(body: str) -> Dict:
     """Evaluate all honesty/cleanliness gates. Pure code — no model calls.
 
     Returns {pass, failed_severities, S1, S2, S3} where each Sx is a list of
     {pattern, samples(≤3)} / {product, trigger, sentence} entries."""
     s1_hits, s2_hits = [], []
-    # WIRED per owner approval 2026-10-05 + owner brief 2026-10-06: active
-    # S1 = base patterns + approved proposed extension + V3 families. Same
-    # scanning semantics for all three tuples.
-    for name, rx in S1_PATTERNS + S1_PROPOSED_PATTERNS + S1_V3_PATTERNS:
+    # WIRED per owner approval 2026-10-05 + owner briefs 2026-10-06 and
+    # 2026-10-08: active S1 = base patterns + approved proposed extension
+    # + V3 families + V3.1 families. Same scanning semantics for all
+    # tuples; the two context-aware V3.1 scanners run below.
+    for name, rx in (S1_PATTERNS + S1_PROPOSED_PATTERNS + S1_V3_PATTERNS
+                     + S1_V3_1_PATTERNS):
         # Fabrication phrasing is flagged regardless of sentence position
         # (mid-sentence "we tested" vs leading "We tested"), so S1 compiles
         # case-insensitively — EXCEPT "certified": the fake-bio signal is the
@@ -380,6 +480,7 @@ def fabrication_gate(body: str) -> Dict:
                                 "line": re.sub(r"\s+", " ", line).strip()[:200]})
                 break  # one sample line per pattern is enough for the report
     s1_hits = [{"pattern": h["pattern"], "sample": h["line"]} for h in s1_hits]
+    s1_hits.extend(_scan_v3_1_special(body))
 
     for name, rx in S2_PATTERNS:
         for line in body.splitlines():

@@ -4,10 +4,7 @@ title: >-
   Boosting Browser Security: The Best Chrome Security Extensions for a Safer
   Online Experience
 slug: boosting-browser-security-extensions
-excerpt: >-
-  I tested 10 Chrome security extensions over two weeks — phishing protection,
-  malicious site blocking, download scanning, and more. Here is the layered
-  security stack that actually protects you.
+excerpt: '10 Chrome security extensions compared — phishing protection, malicious site blocking, download scanning, and more — plus the layered security stack worth building.'
 featured_image: /content/images/boosting-browser-security-extensions/featured.webp
 category: Productivity & Tools
 tags:
@@ -20,7 +17,7 @@ keywords:
   - chrome security
   - browser safety
   - malware protection chrome
-meta_description: "I tested 10 Chrome security extensions over two weeks. Find out which protect against phishing, malware, and trackers — and which companion extensions..."
+meta_description: '10 Chrome security extensions compared: phishing, malware-site, and download-scanning protection — plus the companion extensions that complete the stack.'
 status: published
 published_at: '2026-04-13T18:15:00.000+00:00'
 updated_at: "2026-09-20T21:54:45.000+00:00"

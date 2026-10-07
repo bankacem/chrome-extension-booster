@@ -1,7 +1,7 @@
 ---
 seo_title: "Best Keyword Research Extensions for Chrome"
 id: 0a26a1a3-2479-4c96-9e28-695215183bc2
-title: "The Best Chrome Extensions for Keyword Research (Tested in 2026)"
+title: The Best Chrome Extensions for Keyword Research (2026)
 slug: "the-best-chrome-extension-for-keyword-research"
 excerpt: "When it comes to search engine optimization (SEO), keyword research is a crucial step in understanding your target audience and creating content that…"
 featured_image: >-

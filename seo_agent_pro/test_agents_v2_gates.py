@@ -10,7 +10,7 @@ import unittest
 
 from seo_agent_pro.agents_v2.gates import (
     S1_PATTERNS, S2_PATTERNS, S1_PROPOSED_PATTERNS, S1_V3_PATTERNS,
-    fabrication_gate,
+    S1_V3_1_PATTERNS, fabrication_gate,
     FM_FIELDS, FM_HONESTY_PATTERNS, frontmatter_honesty_gate,
     body_neutralization_gate,
     scan_attribution_numbers, scan_unattributed_table_cells, unattributed_gate,
@@ -290,6 +290,8 @@ class TestS1ProposedWired(unittest.TestCase):
     def test_gate_flags_proposed_phrasings(self):
         proposed = {name for name, _ in S1_PROPOSED_PATTERNS}
         v3 = {name for name, _ in S1_V3_PATTERNS}
+        v31 = {name for name, _ in S1_V3_1_PATTERNS} | {
+            "v3_1_cta_tested", "v3_1_studies_shown"}
         for name, text in self.PROBES.items():
             r = fabrication_gate(text)
             self.assertIn("S1", r["failed_severities"], msg=text)
@@ -297,9 +299,11 @@ class TestS1ProposedWired(unittest.TestCase):
             self.assertIn(name, hit_names,
                           f"gate must attribute {name} to the wired proposal")
             # every hit on these single-sentence probes belongs to an
-            # approved pattern (active/proposed/V3), never to an unknown one
+            # approved pattern (active/proposed/V3/V3.1), never to an
+            # unknown one. "I measured ..." legitimately hits BOTH the
+            # proposed i_verbs and the V3.1 we_i_verbs family.
             self.assertTrue(hit_names <= proposed |
-                            {n for n, _ in S1_PATTERNS} | v3, msg=text)
+                            {n for n, _ in S1_PATTERNS} | v3 | v31, msg=text)
 
     def test_wired_union_is_scanned(self):
         # the gate iterates the CONCATENATION, in order, base first
@@ -939,6 +943,131 @@ class TestS1V3PerPattern(unittest.TestCase):
                                   "I\u2019ve been there too.", re.I))
         self.assertTrue(re.search(by_name["v3_i_have_seen"],
                                   "I've tried three DNS filters.", re.I))
+
+
+class TestS1V31PerPattern(unittest.TestCase):
+    """Owner brief 2026-10-08 item 1: the V3.1 remnant families — one
+    positive (MUST flag) and one legitimate negative (must NOT flag) probe
+    per pattern, provenance wiring, and the two context-aware scanners
+    (CTA-tested lines, unsourced "Studies have shown <pct>")."""
+
+    POSITIVE = {
+        "v3_1_tested_dozens": "I've tested dozens of popup blockers over the years.",
+        "v3_1_spent_time":    "I've spent months comparing popup blockers.",
+        "v3_1_my_findings":   "The comparison below reflects my findings on the top performers.",
+        "v3_1_as_a_who":      "As a longtime reviewer who covers browser tools, I keep seeing the same mistakes.",
+        "v3_1_power_user":    "Every power user needs granular control over notifications.",
+        "v3_1_ill_share":     "In this section, I'll explore the advanced methods that separate the top tools.",
+        "v3_1_we_i_verbs":    "We tracked patch releases for each browser over four weeks.",
+        "v3_1_cta_tested":    "For a comprehensive library of tested Chrome extensions and guides, visit our homepage.",
+        "v3_1_studies_shown": "Studies have shown that pages with excessive popups experience bounce rates up to 40% higher than cleaner pages.",
+    }
+    NEGATIVE = {
+        "v3_1_tested_dozens": "The extension has been reviewed by several independent labs.",
+        "v3_1_spent_time":    "The maintainers spent years refining the blocking engine.",
+        "v3_1_my_findings":   "The audit published its findings in March.",
+        "v3_1_as_a_who":      "As a result, users who enable this mode see fewer interruptions.",
+        "v3_1_power_user":    "The new power module lets users tune voltage per device.",
+        "v3_1_ill_share":     "The next section will share configuration tips for each tool.",
+        "v3_1_we_i_verbs":    "The monitoring script tracked every redirect automatically.",
+        "v3_1_cta_tested":    "For a curated library of Chrome extensions and guides, visit our homepage.",
+        "v3_1_studies_shown": "Studies have shown that popup overload increases bounce rates.",
+    }
+
+    def test_each_v31_pattern_matches_positive(self):
+        by_name = dict(S1_V3_1_PATTERNS)
+        for name in ("v3_1_tested_dozens", "v3_1_spent_time",
+                     "v3_1_my_findings", "v3_1_as_a_who",
+                     "v3_1_power_user", "v3_1_ill_share", "v3_1_we_i_verbs"):
+            self.assertTrue(re.search(by_name[name], self.POSITIVE[name], re.I),
+                            msg=name)
+
+    def test_each_v31_legitimate_negative_is_clean(self):
+        by_name = dict(S1_V3_1_PATTERNS)
+        for name in ("v3_1_tested_dozens", "v3_1_spent_time",
+                     "v3_1_my_findings", "v3_1_as_a_who",
+                     "v3_1_power_user", "v3_1_ill_share", "v3_1_we_i_verbs"):
+            self.assertFalse(re.search(by_name[name], self.NEGATIVE[name], re.I),
+                             msg=f"{name} must not match: {self.NEGATIVE[name]}")
+
+    def test_tuple_names_are_distinct_from_other_s1_tuples(self):
+        names = {n for n, _ in S1_V3_1_PATTERNS}
+        self.assertEqual(len(names), 7)
+        self.assertEqual(names & {n for n, _ in S1_PATTERNS}, set())
+        self.assertEqual(names & {n for n, _ in S1_PROPOSED_PATTERNS}, set())
+        self.assertEqual(names & {n for n, _ in S1_V3_PATTERNS}, set())
+
+    def test_gate_flags_v31_with_provenance(self):
+        allowed = ({n for n, _ in S1_PATTERNS}
+                   | {n for n, _ in S1_PROPOSED_PATTERNS}
+                   | {n for n, _ in S1_V3_PATTERNS}
+                   | {n for n, _ in S1_V3_1_PATTERNS}
+                   | {"v3_1_cta_tested", "v3_1_studies_shown"})
+        for name, text in self.POSITIVE.items():
+            r = fabrication_gate(text)
+            self.assertIn("S1", r["failed_severities"], msg=text)
+            hit_names = {h["pattern"] for h in r["S1"]}
+            self.assertIn(name, hit_names, msg=f"{name} not attributed: {text}")
+            self.assertTrue(hit_names <= allowed, msg=text)
+
+    def test_gate_negatives_stay_clean(self):
+        for name, text in self.NEGATIVE.items():
+            r = fabrication_gate(text)
+            hit_names = {h["pattern"] for h in r["S1"]}
+            self.assertNotIn(name, hit_names,
+                             msg=f"S1/{name} false-positived on: {text}")
+
+    # ── v3_1_cta_tested: CTA cue is REQUIRED ─────────────────────────────
+    def test_cta_tested_requires_cue(self):
+        # same testing phrase without a CTA cue must NOT flag
+        r = fabrication_gate("Store pages list tested extensions in the productivity category.")
+        hit_names = {h["pattern"] for h in r["S1"]}
+        self.assertNotIn("v3_1_cta_tested", hit_names)
+
+    def test_cta_tested_all_owner_shapes(self):
+        for line in ("Browse our library of tested extensions today.",
+                     "Check out our tested chrome guides for beginners.",
+                     "Visit our collection of tested guides and picks."):
+            r = fabrication_gate(line)
+            hit_names = {h["pattern"] for h in r["S1"]}
+            self.assertIn("v3_1_cta_tested", hit_names, msg=line)
+
+    # ── v3_1_studies_shown: ratio + no-link required, context rules ──────
+    def test_studies_shown_with_link_passes(self):
+        text = ("Studies have shown bounce rates rise up to 40% higher on "
+                "cluttered pages, per [Google's guidance](https://developer.chrome.com/docs).")
+        r = fabrication_gate(text)
+        hit_names = {h["pattern"] for h in r["S1"]}
+        self.assertNotIn("v3_1_studies_shown", hit_names)
+
+    def test_studies_shown_without_ratio_passes(self):
+        r = fabrication_gate("Studies have shown that users close dozens of tabs daily.")
+        hit_names = {h["pattern"] for h in r["S1"]}
+        self.assertNotIn("v3_1_studies_shown", hit_names)
+
+    def test_studies_shown_percent_word_form_flags(self):
+        r = fabrication_gate("Studies have shown engagement drops 25 percent when popups stack.")
+        hit_names = {h["pattern"] for h in r["S1"]}
+        self.assertIn("v3_1_studies_shown", hit_names)
+
+    def test_studies_shown_skips_tables_and_headings(self):
+        # table/heading lines are out of scope for the sentence scanner
+        for body in ("| Studies have shown 40% higher bounce | x |\n| --- | --- |\n| a | b |",
+                     "### Studies have shown 40% higher bounce rates"):
+            r = fabrication_gate(body)
+            hit_names = {h["pattern"] for h in r["S1"]}
+            self.assertNotIn("v3_1_studies_shown", hit_names, msg=body)
+
+    def test_studies_shown_blockquote_with_link_excused(self):
+        text = ("> Studies have shown bounce rates up to 40% higher, "
+                "per [Google](https://developers.google.com).")
+        r = fabrication_gate(text)
+        hit_names = {h["pattern"] for h in r["S1"]}
+        self.assertNotIn("v3_1_studies_shown", hit_names)
+
+    def test_wired_union_scans_v31(self):
+        # the gate iterates the CONCATENATION: base + proposed + v3 + v3_1
+        self.assertEqual(len(S1_V3_1_PATTERNS), 7)
 
 
 class TestUnattributedAttribution(unittest.TestCase):

@@ -1,11 +1,11 @@
 ---
 seo_title: "Chrome Web Store Extensions on Firefox: What Works 2026"
 id: "8a9b6cf9-28aa-5ce3-baea-5e4709a00aa6"
-title: "Chrome Web Store Extensions on Firefox: What Actually Works in 2026 (Tested)"
+title: 'Chrome Web Store Extensions on Firefox: What Works in 2026'
 slug: chrome-web-store-firefox-extensions-guide
-description: "I tested four ways to get Chrome Web Store extensions running on Firefox: native ports, AMO search, compatibility checkpoints, and what silently breaks in 2026."
-excerpt: "Firefox can't install CRX files directly — I tested the four realistic paths for getting your Chrome Web Store workflow onto Firefox, and ranked them honestly."
-meta_description: "Can Firefox run Chrome Web Store extensions? Four tested paths: native ports, Web Store search tricks, compatibility checks, and what breaks in 2026."
+description: 'Four ways to get Chrome Web Store extensions running on Firefox: native ports, AMO search, compatibility checkpoints, and what silently breaks in 2026.'
+excerpt: 'Firefox can''t install CRX files directly — the four realistic paths for getting your Chrome Web Store workflow onto Firefox, ranked honestly.'
+meta_description: 'Can Firefox run Chrome Web Store extensions? Four paths compared: native ports, Web Store search tricks, compatibility checks, and what breaks in 2026.'
 canonicalPath: /blog/chrome-web-store-firefox-extensions-guide
 category: Guides & Comparisons
 tags:

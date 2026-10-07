@@ -56,7 +56,7 @@ const UI: Record<Locale, { by: string; published: string; updated: string; home:
   fr: { by: "Écrit par", published: "Publié le", updated: "Mis à jour le", home: "Accueil", blog: "Blog", reviewed: "Révisé selon la", editorial: "méthodologie éditoriale d'ExtensionTo", authorAlt: "portrait de l'auteur" },
   es: { by: "Escrito por", published: "Publicado", updated: "Actualizado", home: "Inicio", blog: "Blog", reviewed: "Revisado según la", editorial: "metodología editorial de ExtensionTo", authorAlt: "retrato del autor" },
   pt: { by: "Escrito por", published: "Publicado em", updated: "Atualizado em", home: "Início", blog: "Blog", reviewed: "Revisado segundo a", editorial: "metodologia editorial da ExtensionTo", authorAlt: "retrato do autor" },
-  ar: { by: "كتبه", published: "نُشر في", updated: "حُدِّث في", home: "الرئيسية", blog: "المدونة", reviewed: "مراجَع وفق", editorial: "منهجية ExtensionTo التحريرية", authorAlt: "صورة الكاتب" },
+  ar: { by: "كتبه", published: "نُشر في", updated: "حُدِّث في", home: "الرئيسية", blog: "المدونة", reviewed: "مُعَدّ من معلومات عامة ووثائق المنتج — انظر", editorial: "معاييرنا التحريرية", authorAlt: "صورة الكاتب" },
 };
 
 interface IndexArticle {
@@ -213,7 +213,6 @@ function buildSchema(opts: {
     author: opts.author
       ? { "@type": "Person", name: opts.author }
       : { "@type": "Organization", name: `${SITE_NAME} Editorial Team`, url: `${SITE_URL}/editorial-policy` },
-    reviewedBy: { "@type": "Organization", name: `${SITE_NAME} Editorial Team`, url: `${SITE_URL}/editorial-policy` },
     datePublished: opts.publishedTime,
     dateModified: opts.modifiedTime || opts.publishedTime,
     publisher: {
@@ -390,7 +389,7 @@ async function main() {
 
       const dateLabel = publishedTime ? publishedTime.slice(0, 10) : "";
       const updatedLabel = modifiedTime && modifiedTime !== publishedTime ? modifiedTime.slice(0, 10) : "";
-      const articleHtml = `<article><header><h1>${escapeHtml(fullTitle)}</h1><p>${escapeHtml(ui.by)} <a href="/editorial-policy">${escapeHtml(author)}</a>${dateLabel ? ` · ${escapeHtml(ui.published)} ${escapeHtml(dateLabel)}` : ""}${updatedLabel ? ` · ${escapeHtml(ui.updated)} ${escapeHtml(updatedLabel)}` : ""}</p><p>${escapeHtml(ui.reviewed)} <a href="/editorial-policy">${escapeHtml(ui.editorial)}</a>.</p></header>${bodyHtml}</article>`;
+      const articleHtml = `<article><header><h1>${escapeHtml(fullTitle)}</h1>${content.includes("/extension/") ? `<p>ExtensionTo publishes some of the extensions mentioned in this article.</p>` : ""}<p>${escapeHtml(ui.by)} <a href="/editorial-policy">${escapeHtml(author)}</a>${dateLabel ? ` · ${escapeHtml(ui.published)} ${escapeHtml(dateLabel)}` : ""}${updatedLabel ? ` · ${escapeHtml(ui.updated)} ${escapeHtml(updatedLabel)}` : ""}</p><p>${escapeHtml(ui.reviewed)} <a href="/editorial-policy">${escapeHtml(ui.editorial)}</a>.</p></header>${bodyHtml}</article>`;
 
       let html = template;
       for (const re of STRIP_HEAD) html = html.replace(re, "");

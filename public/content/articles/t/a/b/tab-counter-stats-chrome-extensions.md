@@ -2,8 +2,7 @@
 seo_title: "Tab Counter & Browser Stats Extensions: Know Your Tab Habit"
 title: "Tab Counter & Browser Stats Extensions: Know Your Tab Habit"
 slug: tab-counter-stats-chrome-extensions
-excerpt: >-
-  Tested guidance for tab counter chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for tab counter chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/tab-counter-stats-chrome-extensions/featured.webp"
 category: "Productivity"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - tab usage tracker chrome
   - browser habit analytics
   - tab count badge extension
-meta_description: >-
-  Tab counter chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Tab counter chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-27T00:00:00.000Z
 updated_at: 2026-09-27T23:57:56.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "28"
 canonicalPath: /blog/tab-counter-stats-chrome-extensions
-description: >-
-  Tab counter chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Tab counter chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/tab-counter-stats-chrome-extensions/featured.webp" alt="Tab Counter & Browser Stats Extensions: Know Your Tab Habit" width="1200" height="630" loading="lazy" class="featured-image">

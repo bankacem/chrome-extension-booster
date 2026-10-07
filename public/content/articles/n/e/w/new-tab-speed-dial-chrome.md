@@ -2,8 +2,7 @@
 seo_title: "New Tab & Speed Dial Extensions: Build the Perfect Start Page"
 title: "New Tab & Speed Dial Extensions: Build the Perfect Start Page (2026)"
 slug: new-tab-speed-dial-chrome
-excerpt: >-
-  Tested guidance for speed dial chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for speed dial chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/new-tab-speed-dial-chrome/featured.webp"
 category: "Productivity"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - start page organizer extension
   - new tab dashboard widgets chrome
   - visual bookmarks grid chrome
-meta_description: >-
-  Speed dial chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Speed dial chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-21T00:00:00.000Z
 updated_at: '2026-09-23T13:56:58.000+00:00'
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "21"
 canonicalPath: /blog/new-tab-speed-dial-chrome
-description: >-
-  Speed dial chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Speed dial chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/new-tab-speed-dial-chrome/featured.webp" alt="New Tab & Speed Dial Extensions: Build the Perfect Start Page (2026)" width="1200" height="630" loading="lazy" class="featured-image">

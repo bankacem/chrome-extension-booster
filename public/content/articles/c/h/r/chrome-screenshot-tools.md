@@ -5,10 +5,7 @@ title: >-
   Chrome Screenshot Tools Compared: Snipping Tool, DevTools, and Extensions
   (2026)
 slug: chrome-screenshot-tools
-excerpt: >-
-  I compared Windows Snipping Tool, Chrome DevTools, and Quick Screenshot Lite
-  for browser screenshots. Visible area, full-page, annotations, and speed
-  tested.
+excerpt: 'Windows Snipping Tool, Chrome DevTools, and Quick Screenshot Lite compared for browser screenshots: visible area, full-page, annotations, and speed.'
 featured_image: /content/images/chrome-screenshot-tools/featured.webp
 category: Productivity & Tools
 tags: []
@@ -16,10 +13,7 @@ keywords:
   - chrome snipping tool
   - windows snipping tool chrome
   - chrome screenshot
-meta_description: >-
-  Windows Snipping Tool vs Chrome DevTools vs Quick Screenshot Lite. Tested for
-  visible area capture, full-page scrolling, annotations, and speed on Windows
-  11.
+meta_description: 'Windows Snipping Tool vs Chrome DevTools vs Quick Screenshot Lite: visible area capture, full-page scrolling, annotations, and speed on Windows 11.'
 status: published
 published_at: '2026-02-22T18:15:10.274+00:00'
 scheduled_at: null

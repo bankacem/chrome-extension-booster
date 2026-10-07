@@ -1,11 +1,11 @@
 ---
-seo_title: "6 Best Note-Taking Chrome Extensions in 2026 (Tested)"
+seo_title: 6 Best Note-Taking Chrome Extensions in 2026
 id: "3feb36a5-e27b-563a-833f-9c2340fa7fd1"
-title: "The 6 Best Note-Taking Chrome Extensions in 2026 (Tested on Real Research Work)"
+title: The 6 Best Note-Taking Chrome Extensions in 2026
 slug: best-note-taking-chrome-extensions-2026
-description: "Six note-taking Chrome extensions tested on real research: capture speed, markdown support, offline behavior, privacy, and the setup for the one that won."
-excerpt: "Most 'best note-taking extension' lists rehash store descriptions. I spent two weeks taking real research notes with six of them — this is the comparison I wanted."
-meta_description: "I tested six note-taking Chrome extensions on real research work: quick capture, full-page notes, markdown, offline access, and which one finally stuck."
+description: 'Six note-taking Chrome extensions compared for research: capture speed, markdown support, offline behavior, privacy, and setup differences.'
+excerpt: 'A comparison of six note-taking Chrome extensions for real research work: quick capture, full-page notes, markdown support, and offline access.'
+meta_description: 'Six note-taking Chrome extensions compared for research work: quick capture, full-page notes, markdown, offline access, and which one stands out.'
 canonicalPath: /blog/best-note-taking-chrome-extensions-2026
 category: Productivity & Workflow
 tags:

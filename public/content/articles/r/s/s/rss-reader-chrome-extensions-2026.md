@@ -2,8 +2,7 @@
 seo_title: "RSS Reader Chrome Extensions in 2026: Follow Feeds Without Leaving Your Browser"
 title: "RSS Reader Chrome Extensions in 2026: Follow Feeds Without Leaving Your Browser"
 slug: rss-reader-chrome-extensions-2026
-excerpt: >-
-  Tested guidance for rss reader chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for rss reader chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/rss-reader-chrome-extensions-2026/featured.webp"
 category: "Productivity & Tools"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - follow blogs rss chrome
   - feed reader extension chrome
   - rss renaissance 2026
-meta_description: >-
-  Rss reader chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Rss reader chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-20T00:00:00.000Z
 updated_at: '2026-09-23T13:56:58.000+00:00'
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "30"
 canonicalPath: /blog/rss-reader-chrome-extensions-2026
-description: >-
-  Rss reader chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Rss reader chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 <img src="/content/images/rss-reader-chrome-extensions-2026/featured.webp" alt="RSS Reader Chrome Extensions in 2026: Follow Feeds Without Leaving Your Browser" width="1200" height="630" loading="lazy" class="featured-image">
 

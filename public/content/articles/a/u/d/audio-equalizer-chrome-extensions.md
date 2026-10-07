@@ -2,8 +2,7 @@
 seo_title: "Audio Equalizer Chrome Extensions: Per-Tab Volume and Sound Boost"
 title: "Audio Equalizer Chrome Extensions: Per-Tab Volume and Sound Boost"
 slug: audio-equalizer-chrome-extensions
-excerpt: >-
-  Tested guidance for audio equalizer chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for audio equalizer chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/audio-equalizer-chrome-extensions/featured.webp"
 category: "Entertainment"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - bass boost browser extension
   - audio enhancer chrome
   - normalize volume chrome
-meta_description: >-
-  Audio equalizer chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Audio equalizer chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-27T00:00:00.000Z
 updated_at: 2026-09-27T23:57:56.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "17"
 canonicalPath: /blog/audio-equalizer-chrome-extensions
-description: >-
-  Audio equalizer chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Audio equalizer chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/audio-equalizer-chrome-extensions/featured.webp" alt="Audio Equalizer Chrome Extensions: Per-Tab Volume and Sound Boost" width="1200" height="630" loading="lazy" class="featured-image">

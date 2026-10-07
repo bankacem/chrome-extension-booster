@@ -1,7 +1,7 @@
 ---
 seo_title: "Best Chrome Translation Extensions 2026"
 id: "a1b2c3d4-prod-0006"
-title: "Best Chrome Extensions for Language Translation in 2026: Tested and Compared for Every Use Case"
+title: Best Chrome Extensions for Language Translation in 2026
 slug: "best-chrome-extensions-for-language-translation"
 excerpt: "Translation needs vary dramatically depending on whether you are learning a language, reading foreign news, or working with multilingual clients. This guide compares the best Chrome translation extensions across quality, speed, features, and privacy."
 featured_image: /content/images/best-chrome-extensions-for-language-translation/featured.webp

@@ -3,13 +3,13 @@ seo_title: "Free Popup Blocker for Chrome"
 id: fc3aec7d-e6da-43de-a79c-d9080a917080
 title: 'Free Popup Blocker for Chrome'
 slug: "free-popup-blocker-for-chrome-a-distraction-free-browsing-experience"
-excerpt: "Free popup blockers for Chrome tested in 2026: why Chrome's built-in blocker fails, the two-extension setup that works, and how to whitelist without losing protection."
+excerpt: 'Free popup blockers for Chrome in 2026: why Chrome''s built-in blocker fails, the two-extension setup that works, and how to whitelist without losing protection.'
 featured_image: "/content/images/free-popup-blocker-for-chrome-a-distraction-free-browsing-experience/featured.webp"
 category: Redirect & Navigation
 tags: []
 keywords:
   - free popup blocker for chrome
-meta_description: "Free popup blockers for Chrome tested: why the built-in blocker fails, a 5-minute two-extension setup, and safe whitelisting for sites you trust."
+meta_description: 'Free popup blockers for Chrome reviewed: why the built-in blocker fails, a 5-minute two-extension setup, and safe whitelisting for sites you trust.'
 status: published
 published_at: '2026-04-12T22:15:00.426+00:00'
 scheduled_at: '2026-04-12T22:15:00+00:00'

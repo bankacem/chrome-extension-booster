@@ -2,8 +2,7 @@
 seo_title: "Calendar Chrome Extensions: Your Schedule in the Toolbar"
 title: "Calendar Chrome Extensions: Your Schedule in the Toolbar"
 slug: calendar-chrome-extensions
-excerpt: >-
-  Tested guidance for calendar chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for calendar chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/calendar-chrome-extensions/featured.webp"
 category: "Productivity"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - schedule view browser extension
   - meeting scheduler chrome tool
   - calendar popup toolbar
-meta_description: >-
-  Calendar chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Calendar chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-22T00:00:00.000Z
 updated_at: 2026-09-23T08:30:00.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "31"
 canonicalPath: /blog/calendar-chrome-extensions
-description: >-
-  Calendar chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Calendar chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/calendar-chrome-extensions/featured.webp" alt="Calendar Chrome Extensions: Your Schedule in the Toolbar" width="1200" height="630" loading="lazy" class="featured-image">

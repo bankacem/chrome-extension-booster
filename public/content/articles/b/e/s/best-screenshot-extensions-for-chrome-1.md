@@ -13,7 +13,7 @@ tags:
   - 'Best Screenshot Extensions for Chrome: Capture Web Pages Like a Pro'
 keywords:
   - Best Screenshot Extensions for Chrome
-meta_description: "A hands-on look at screenshot extensions for chrome, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at screenshot extensions for chrome, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-02-21T20:11:01.223+00:00'
 scheduled_at: '2026-02-21T20:11:00+00:00'

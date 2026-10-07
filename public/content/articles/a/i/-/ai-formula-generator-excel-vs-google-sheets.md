@@ -17,7 +17,7 @@ keywords:
   - "AI formula generator Excel vs Google Sheets"
   - "Excel Copilot vs Google Sheets Gemini formulas"
   - "AI spreadsheet formula generator 2026"
-meta_description: "AI formula generation compared in Excel vs Google Sheets for 2026: the same prompts tested, accuracy results, pricing, and a verdict for every user type."
+meta_description: 'AI formula generation compared in Excel vs Google Sheets for 2026: prompt behavior, accuracy, pricing, and a verdict for every user type.'
 status: published
 published_at: '2026-08-31T09:00:00.000+00:00'
 scheduled_at: '2026-08-31T09:00:00.000+00:00'

@@ -10,7 +10,7 @@ category: "Chrome Extensions"
 tags: []
 keywords:
   - gemini extension to chrome
-meta_description: "A hands-on look at gemini into your chrome browser, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at gemini into your chrome browser, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-02-15T08:11:01.915+00:00'
 scheduled_at: '2026-02-15T08:11:00+00:00'

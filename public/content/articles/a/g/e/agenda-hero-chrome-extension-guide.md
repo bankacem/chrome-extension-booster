@@ -3,8 +3,8 @@ seo_title: "Agenda Hero Chrome Extension: Setup Guide (2026)"
 id: "75a297a2-d89f-5f9e-a5f1-644c11e5dfa3"
 title: "Agenda Hero Chrome Extension: Setup, Magic Events, and Daily Workflows (2026)"
 slug: agenda-hero-chrome-extension-guide
-description: "A hands-on Agenda Hero Chrome extension guide: connect Google Calendar, turn emails and web pages into events, use Magic events, and troubleshoot sync problems."
-excerpt: "I ran Agenda Hero on Chrome for two weeks of real scheduling work — this setup guide covers Magic events, Google Calendar sync, and the fixes for the two bugs I hit."
+description: 'An Agenda Hero Chrome extension guide: connect Google Calendar, turn emails and web pages into events, use Magic events, and troubleshoot sync problems.'
+excerpt: 'Set up Agenda Hero on Chrome for real scheduling work: Magic events, Google Calendar sync, and the fixes for common setup snags.'
 meta_description: "Set up Agenda Hero for Chrome step by step: turn emails and pages into calendar events, use Magic events, sync Google Calendar, and fix common issues."
 canonicalPath: /blog/agenda-hero-chrome-extension-guide
 category: Productivity & Workflow

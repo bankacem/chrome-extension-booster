@@ -2,8 +2,7 @@
 seo_title: "Reddit Power-User Chrome Extensions: Filter, Search and Tame the Feed"
 title: "Reddit Power-User Chrome Extensions: Filter, Search and Tame the Feed (2026)"
 slug: reddit-power-user-chrome-extensions
-excerpt: >-
-  Tested guidance for reddit enhancement suite guide: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for reddit enhancement suite guide: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/reddit-power-user-chrome-extensions/featured.webp"
 category: "Social Media"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - reddit keyword alert extension
   - reddit post search tool
   - improve reddit browsing extension
-meta_description: >-
-  Reddit enhancement suite guide — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Reddit enhancement suite guide — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-27T00:00:00.000Z
 updated_at: 2026-09-27T23:57:56.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "16"
 canonicalPath: /blog/reddit-power-user-chrome-extensions
-description: >-
-  Reddit enhancement suite guide — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Reddit enhancement suite guide — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 
 <img src="/content/images/reddit-power-user-chrome-extensions/featured.webp" alt="Reddit Power-User Chrome Extensions: Filter, Search and Tame the Feed (2026)" width="1200" height="630" loading="lazy" class="featured-image">

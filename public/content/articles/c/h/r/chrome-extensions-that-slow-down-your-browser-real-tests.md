@@ -1,9 +1,9 @@
 ---
-seo_title: "Chrome Extensions Slow Down Browser? Real Tests"
+seo_title: Chrome Extensions That Slow Down Your Browser
 id: "a1b2c3d4-perf-0001"
-title: "Chrome Extensions That Slow Down Your Browser in 2026: Real Performance Tests"
+title: Chrome Extensions That Slow Down Your Browser in 2026
 slug: "chrome-extensions-that-slow-down-your-browser-real-tests"
-excerpt: "We tested 20 popular Chrome extensions with Chrome Task Manager and measured actual RAM and CPU impact. Here are the results and what to do about it."
+excerpt: 'How to use Chrome Task Manager to see which extensions use the most RAM and CPU in 2026, and the fixes that keep a slow browser in shape.'
 featured_image: /content/images/chrome-extensions-that-slow-down-your-browser-real-tests/featured.webp
 category: "Performance & Memory"
 tags: ["performance", "memory", "ram", "cpu", "browser speed"]
@@ -12,7 +12,7 @@ keywords:
   - chrome extension memory usage
   - which chrome extensions use most ram
   - browser slow because of extensions
-meta_description: "Real Chrome Task Manager tests showing which extensions use the most RAM and CPU in 2026. Measured data, not guesses. Includes fixes for a slow browser."
+meta_description: 'How to use Chrome Task Manager to see which extensions use the most RAM and CPU in 2026, and the fixes that keep a slow browser in shape.'
 status: published
 published_at: "2026-08-24T12:00:00+01:00"
 scheduled_at: "2026-08-24T12:00:00+01:00"
@@ -21,7 +21,7 @@ author_image: /content/images/authors/james-mitchell.png
 read_time: 8
 created_at: "2026-08-24T12:00:00+01:00"
 updated_at: '2026-09-23T13:56:58.000+00:00'
-description: "We tested 20 popular Chrome extensions with Chrome Task Manager and measured actual RAM and CPU impact. Here are the results and what to do about it."
+description: 'How to use Chrome Task Manager to see which extensions use the most RAM and CPU in 2026, and the fixes that keep a slow browser in shape.'
 ---
 > 📌 **Article Type:** Troubleshooting Guide | **Updated:** 2026
 

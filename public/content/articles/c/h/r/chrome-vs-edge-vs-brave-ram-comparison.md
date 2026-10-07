@@ -2,10 +2,7 @@
 seo_title: "Chrome vs. Edge vs. Brave"
 title: 'Chrome vs. Edge vs. Brave: Which Uses Least RAM in 2026?'
 slug: chrome-vs-edge-vs-brave-ram-comparison
-excerpt: >-
-  I benchmarked Chrome 125, Edge 125, and Brave 1.68 on the same hardware — Dell
-  XPS 13, Intel i7, 16 GB RAM. I tested with 10, 20, and 50 tabs open and
-  measured RAM usage plus startup time.
+excerpt: 'Chrome 125, Edge 125, and Brave 1.68 compared on the same hardware: RAM usage and startup time with 10, 20, and 50 tabs open.'
 featured_image: /content/images/chrome-vs-edge-vs-brave-ram-comparison/featured.webp
 category: Productivity & Tools
 tags:
@@ -18,7 +15,7 @@ keywords:
   - chrome vs edge vs brave ram
   - browser ram comparison
   - best browser low ram
-meta_description: "2026 benchmarks for Chrome, Edge, and Brave. I tested RAM usage at 10, 20, and 50 tabs, measured startup time, ad blocking impact, and extension..."
+meta_description: 'Chrome, Edge, and Brave compared on RAM usage at 10, 20, and 50 tabs: startup time, ad blocking impact, and extension overhead in 2026.'
 status: published
 published_at: '2026-03-25T00:00:00.000+00:00'
 updated_at: '2026-09-23T13:54:38.000+00:00'

@@ -9,7 +9,7 @@ category: "Security & Privacy"
 tags: []
 keywords:
   - How to block YouTube ads with Ghostery extension
-meta_description: "A hands-on look at block youtube ads with ghostery extension, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at block youtube ads with ghostery extension, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-03-20T05:00:00.759+00:00'
 scheduled_at: '2026-03-20T05:00:00+00:00'

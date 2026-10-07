@@ -2,11 +2,7 @@
 seo_title: "Chrome Popup Blocker Master Guide"
 title: 'Chrome Popup Blocker Master Guide: Kill Intrusive Ads in 2026'
 slug: chrome-popup-blocker-master-guide
-excerpt: >-
-  I tested 8 popup blockers for Chrome over two weeks on 30 high-traffic news
-  sites. Here is which blocks the most pop-ups, which lets the wrong ones
-  through, and the companion extensions you need for a completely ad-free
-  experience.
+excerpt: '8 popup blockers for Chrome compared: which blocks the most pop-ups, which lets the wrong ones through, and the companion extensions you need for a completely ad-free experience.'
 featured_image: /content/images/chrome-popup-blocker-master-guide/featured.webp
 category: Productivity & Tools
 tags:
@@ -19,7 +15,7 @@ keywords:
   - chrome popup blocker
   - pop up blocker for chrome
   - block popups chrome
-meta_description: "I tested 8 Chrome popup blockers for two weeks on 30 news sites. Find out which blocks newsletter pop-ups, fake download buttons, autoplay video overlays..."
+meta_description: '8 Chrome popup blockers compared on newsletter pop-ups, fake download buttons, and autoplay video overlays — which blocks the most intrusive ads.'
 status: published
 published_at: '2026-06-05T12:00:00.000+00:00'
 updated_at: '2026-09-23T13:56:58.000+00:00'

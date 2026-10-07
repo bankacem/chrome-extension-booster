@@ -9,7 +9,7 @@ category: Redirect & Navigation
 tags: []
 keywords:
   - best anti tracking chrome extension
-meta_description: "A hands-on look at protect your online identity, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at protect your online identity, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-04-14T06:15:00.267+00:00'
 scheduled_at: '2026-04-14T06:15:00+00:00'

@@ -2,8 +2,7 @@
 seo_title: "Pomodoro Chrome Extensions: Focus Timers That Actually Work"
 title: "Pomodoro Chrome Extensions: Focus Timers That Actually Work (2026)"
 slug: pomodoro-focus-timer-chrome-extensions
-excerpt: >-
-  Tested guidance for pomodoro chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.
+excerpt: 'Guidance for pomodoro chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.'
 featured_image: "/content/images/pomodoro-focus-timer-chrome-extensions/featured.webp"
 category: "Productivity & Tools"
 tags:
@@ -17,8 +16,7 @@ keywords:
   - time blocking extension chrome
   - productivity timer extension
   - 25 minute focus sessions browser
-meta_description: >-
-  Pomodoro chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+meta_description: 'Pomodoro chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 status: published
 published_at: 2026-09-20T00:00:00.000Z
 updated_at: 2026-09-20T07:52:26.000+00:00
@@ -26,8 +24,7 @@ author: "James Mitchell"
 author_image: "/content/images/authors/james-mitchell.png"
 read_time: "25"
 canonicalPath: /blog/pomodoro-focus-timer-chrome-extensions
-description: >-
-  Pomodoro chrome extension — a hands-on 2026 guide with tested picks, step-by-step setup, and honest trade-offs from the ExtensionTo editorial team.
+description: 'Pomodoro chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.'
 ---
 <img src="/content/images/pomodoro-focus-timer-chrome-extensions/featured.webp" alt="Pomodoro Chrome Extensions: Focus Timers That Actually Work (2026)" width="1200" height="630" loading="lazy" class="featured-image">
 

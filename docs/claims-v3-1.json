@@ -1,0 +1,7971 @@
+{
+ "generated_at": "2026-10-08",
+ "brief": "owner brief 2026-10-08 item 1 — v3.1 gate patterns (fabrication.py) + corpus recompute",
+ "method": "deterministic regex scan of PUBLISHED article BODIES (frontmatter excluded); fabrication_gate scan semantics (case-insensitive except certified); v3_1_cta_tested requires a CTA cue line, v3_1_studies_shown requires a ratio and no same-sentence link; no model calls",
+ "corpus": {
+  "published_scanned": 881,
+  "source": "public/content/articles/**/*.md"
+ },
+ "pattern_catalog": {
+  "s1_v3_1 (new, owner brief 2026-10-08)": {
+   "v3_1_tested_dozens": "\\b(?:has|have|had|I(?:['\\u2019]ve|\\s+have)?)\\s+(?:tested|reviewed|used|tried)\\s+(?:dozens|hundreds|numerous|many|several)\\b",
+   "v3_1_spent_time": "\\bI(?:['\\u2019]ve|\\s+have|\\s+had)?\\s+spent\\s+(?:\\w+\\s+)?(?:months|weeks|years|hours)\\b",
+   "v3_1_my_findings": "\\bmy\\s+findings\\b",
+   "v3_1_as_a_who": "\\b(?:as|being)\\s+an?\\s+[A-Za-z ]{1,40}?\\s+who\\b",
+   "v3_1_power_user": "\\bpower\\s+users?\\b",
+   "v3_1_ill_share": "\\bI(?:['\\u2019]ll|\\s+will)\\s+(?:share|explore|show|walk)\\b",
+   "v3_1_we_i_verbs": "\\b(?:we|I)\\s+(?:tracked|checked|compared|measured|ran)\\b"
+  },
+  "s1_v3_1 special scanners": {
+   "v3_1_cta_tested": "line matches /tested (extensions|chrome|guides)/ AND a CTA cue (library of | browse our | check out | explore our | visit our | collection of)",
+   "v3_1_studies_shown": "sentence matches 'Studies (have) shown' + a percentage, with no source link in the same sentence; blockquote+link excused; table/heading lines skipped"
+  },
+  "s1_v3 (2026-10-06, for the old-vs-new comparison)": {
+   "v3_prep_testing": "\\b(?:after|following|through|with)\\s+(?:(?:extensive|thorough|rigorous|hands[- ]on|months\\s+of)\\s+)?testing\\b",
+   "v3_extensive_testing": "\\bextensive testing\\b",
+   "v3_testing_dozens": "\\btesting\\s+(?:dozens|hundreds)\\b",
+   "v3_based_on_my": "\\bbased\\s+on\\s+my\\s+(?:experience|testing|research)\\b",
+   "v3_i_have_seen": "\\bI(?:['\\u2019]ve|\\s+have)\\s+(?:seen|found|encountered|noticed|observed|used|tried|been\\s+there)\\b",
+   "v3_my_noun": "\\bmy\\s+(?:experience|testing|recommendation|setup)\\b",
+   "v3_i_recommend": "\\bI\\s+(?:recommend|suggest|particularly|personally)\\b"
+  }
+ },
+ "counts": {
+  "v3_1_per_pattern_articles": {
+   "v3_1_tested_dozens": 47,
+   "v3_1_spent_time": 39,
+   "v3_1_my_findings": 13,
+   "v3_1_as_a_who": 30,
+   "v3_1_power_user": 290,
+   "v3_1_ill_share": 133,
+   "v3_1_we_i_verbs": 141,
+   "v3_1_cta_tested": 193,
+   "v3_1_studies_shown": 1
+  },
+  "v3_per_pattern_articles_recomputed": {
+   "v3_prep_testing": 248,
+   "v3_extensive_testing": 221,
+   "v3_testing_dozens": 34,
+   "v3_based_on_my": 148,
+   "v3_i_have_seen": 215,
+   "v3_my_noun": 321,
+   "v3_i_recommend": 249
+  },
+  "articles_with_any_v3": 355,
+  "articles_with_any_v3_1": 429,
+  "articles_with_v3_only": 33,
+  "articles_with_v3_1_new_only": 107,
+  "articles_with_both_v3_and_v3_1": 322,
+  "s1_articles_gate_before_v3_1": 412,
+  "s1_articles_gate_after_v3_1": 491,
+  "s1_articles_added_by_v3_1": 79
+ },
+ "rows": [
+  {
+   "slug": "the-best-popup-blocker-for-chrome-in-2026",
+   "live_url": "https://extensionto.com/blog/the-best-popup-blocker-for-chrome-in-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_my_findings",
+    "v3_1_power_user",
+    "v3_1_spent_time",
+    "v3_1_studies_shown",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "protecting-your-online-security",
+   "live_url": "https://extensionto.com/blog/protecting-your-online-security",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_my_findings",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "a-game-changer-for-efficient-browsing",
+   "live_url": "https://extensionto.com/blog/a-game-changer-for-efficient-browsing",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "an-image-downloader-extension-for-chrome",
+   "live_url": "https://extensionto.com/blog/an-image-downloader-extension-for-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "decentraleyes-chrome-3",
+   "live_url": "https://extensionto.com/blog/decentraleyes-chrome-3",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-chrome-deezer-8",
+   "live_url": "https://extensionto.com/blog/extension-chrome-deezer-8",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "device_test_rev",
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-enable-dark-mode-on-google-search",
+   "live_url": "https://extensionto.com/blog/how-to-enable-dark-mode-on-google-search",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_spent_time",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "the-best-chrome-extension-for-bulk-downloads",
+   "live_url": "https://extensionto.com/blog/the-best-chrome-extension-for-bulk-downloads",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_my_findings",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome",
+   "live_url": "https://extensionto.com/blog/unlock-online-privacy-the-power-of-avast-antitrack-extension-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_my_findings",
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide",
+   "live_url": "https://extensionto.com/blog/unlocking-enhanced-browser-security-the-avast-plugin-chrome-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_my_findings",
+    "v3_1_power_user",
+    "v3_1_tested_dozens",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "5-privacy-extensions-for-chrome-mobile",
+   "live_url": "https://extensionto.com/blog/5-privacy-extensions-for-chrome-mobile",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_spent_time",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "ai-summary-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/ai-summary-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "android-chrome-adblocker",
+   "live_url": "https://extensionto.com/blog/android-chrome-adblocker",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_tested_dozens",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "best-idm-alternative-for-chrome",
+   "live_url": "https://extensionto.com/blog/best-idm-alternative-for-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "block-video-ads-chrome-extension",
+   "live_url": "https://extensionto.com/blog/block-video-ads-chrome-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_my_findings",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "device_test",
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "bookmark-manager-chrome-guide",
+   "live_url": "https://extensionto.com/blog/bookmark-manager-chrome-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-for-gamers-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-for-gamers-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-pop-up-blocker",
+   "live_url": "https://extensionto.com/blog/chrome-pop-up-blocker",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "cookie-consent-blocker-chrome",
+   "live_url": "https://extensionto.com/blog/cookie-consent-blocker-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "deezer-extension-4",
+   "live_url": "https://extensionto.com/blog/deezer-extension-4",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "discover-the-best-file-downloader-extension-chrome",
+   "live_url": "https://extensionto.com/blog/discover-the-best-file-downloader-extension-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "download-chrome-extension-opera-10",
+   "live_url": "https://extensionto.com/blog/download-chrome-extension-opera-10",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "eagleget-extension-chrome-8",
+   "live_url": "https://extensionto.com/blog/eagleget-extension-chrome-8",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "enhancing-browser-security-with-norton-safe-web-chrome-a-comprehensive-guide",
+   "live_url": "https://extensionto.com/blog/enhancing-browser-security-with-norton-safe-web-chrome-a-comprehensive-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_tested_dozens",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "extension-ad-block-plus-faster-browsing",
+   "live_url": "https://extensionto.com/blog/extension-ad-block-plus-faster-browsing",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "extension-adblock-google-chrome-3",
+   "live_url": "https://extensionto.com/blog/extension-adblock-google-chrome-3",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-adblock-telephone-4",
+   "live_url": "https://extensionto.com/blog/extension-adblock-telephone-4",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-chrome-capture-page-web",
+   "live_url": "https://extensionto.com/blog/extension-chrome-capture-page-web",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-chrome-chatgpt",
+   "live_url": "https://extensionto.com/blog/extension-chrome-chatgpt",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-dashlane-opera-1",
+   "live_url": "https://extensionto.com/blog/extension-dashlane-opera-1",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing",
+    "in_testing_comma"
+   ]
+  },
+  {
+   "slug": "extension-to-chrome-browser-10",
+   "live_url": "https://extensionto.com/blog/extension-to-chrome-browser-10",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-install-chrome-extensions-on-android-2026",
+   "live_url": "https://extensionto.com/blog/how-to-install-chrome-extensions-on-android-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-reduce-chrome-cpu-usage-a-faster-browser",
+   "live_url": "https://extensionto.com/blog/how-to-reduce-chrome-cpu-usage-a-faster-browser",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-run-chrome-extensions-on-brave-android",
+   "live_url": "https://extensionto.com/blog/how-to-run-chrome-extensions-on-brave-android",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-stop-automatic-url-redirects-in-chrome",
+   "live_url": "https://extensionto.com/blog/how-to-stop-automatic-url-redirects-in-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_my_findings",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "new-tab-speed-dial-chrome",
+   "live_url": "https://extensionto.com/blog/new-tab-speed-dial-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
+   "live_url": "https://extensionto.com/blog/optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_spent_time",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "pdf-tools-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/pdf-tools-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "prevent-websites-from-opening-new-tabs-automatically-2",
+   "live_url": "https://extensionto.com/blog/prevent-websites-from-opening-new-tabs-automatically-2",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "qr-code-generator-scanner-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/qr-code-generator-scanner-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "screen-grab-chrome-2025-1",
+   "live_url": "https://extensionto.com/blog/screen-grab-chrome-2025-1",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
+   "live_url": "https://extensionto.com/blog/supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_my_findings",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "the-best-adblock-for-android-chrome",
+   "live_url": "https://extensionto.com/blog/the-best-adblock-for-android-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "ublock-origin-vs-ghostery-for-chrome-android",
+   "live_url": "https://extensionto.com/blog/ublock-origin-vs-ghostery-for-chrome-android",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlock-ad-free-youtube-browsing-youtube-ad-blocker-extension-chrome",
+   "live_url": "https://extensionto.com/blog/unlock-ad-free-youtube-browsing-youtube-ad-blocker-extension-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-ad-free-browsing-ad-block-chrome-android",
+   "live_url": "https://extensionto.com/blog/unlocking-ad-free-browsing-ad-block-chrome-android",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlocking-online-security-the-power-of-avast-extension-google-chrome",
+   "live_url": "https://extensionto.com/blog/unlocking-online-security-the-power-of-avast-extension-google-chrome",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-peak-performance-browser-optimization-extensions",
+   "live_url": "https://extensionto.com/blog/unlocking-peak-performance-browser-optimization-extensions",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlocking-the-full-potential-of-your-browser-extensiontocom",
+   "live_url": "https://extensionto.com/blog/unlocking-the-full-potential-of-your-browser-extensiontocom",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-ad-blocking-adblock-in-chrome-mobile",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-browser-extensions-extension-to",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-browser-extensions-extension-to",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-extension-android-google-chrome",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extension-android-google-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-extension-bsr-amazon-boosting-sales",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extension-bsr-amazon-boosting-sales",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-google-chat-extension",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-google-chat-extension",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_my_findings",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-the-avast-passwords-extension",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-the-avast-passwords-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-yandex-browser-on-chrome-web-store",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-yandex-browser-on-chrome-web-store",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "why-light-popup-blocker-is-better-than-heavy-adblockers-6",
+   "live_url": "https://extensionto.com/blog/why-light-popup-blocker-is-better-than-heavy-adblockers-6",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "10-best-chrome-security-extensions-2026-protect-your-browser-today",
+   "live_url": "https://extensionto.com/blog/10-best-chrome-security-extensions-2026-protect-your-browser-today",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "a-chrome-screenshot-extension-worth-installing",
+   "live_url": "https://extensionto.com/blog/a-chrome-screenshot-extension-worth-installing",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "a-game-changer-for-productivity",
+   "live_url": "https://extensionto.com/blog/a-game-changer-for-productivity",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "a-tab-suspender-extension-that-frees-up-ram",
+   "live_url": "https://extensionto.com/blog/a-tab-suspender-extension-that-frees-up-ram",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "ai-agent-browser-extensions-2026",
+   "live_url": "https://extensionto.com/blog/ai-agent-browser-extensions-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "alidropship-extension-full-guide",
+   "live_url": "https://extensionto.com/blog/alidropship-extension-full-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "audio-equalizer-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/audio-equalizer-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "auto-currency-converter-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/auto-currency-converter-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "best-chrome-extensions-for-online-safety",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-for-online-safety",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "best-full-page-screenshot-chrome-extension-2026-free-no-login-required",
+   "live_url": "https://extensionto.com/blog/best-full-page-screenshot-chrome-extension-2026-free-no-login-required",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "best-memory-saver-extension-for-chrome-4",
+   "live_url": "https://extensionto.com/blog/best-memory-saver-extension-for-chrome-4",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests",
+    "we_benchmarked"
+   ]
+  },
+  {
+   "slug": "best-website-screenshot-extension-vs-standalone-app-comparison",
+   "live_url": "https://extensionto.com/blog/best-website-screenshot-extension-vs-standalone-app-comparison",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "boosting-productivity-with-light-browser-extensions-for-slow-pc",
+   "live_url": "https://extensionto.com/blog/boosting-productivity-with-light-browser-extensions-for-slow-pc",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chrome-passkeys-passwordless-guide-2026",
+   "live_url": "https://extensionto.com/blog/chrome-passkeys-passwordless-guide-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chrome-web-store-extensions-guide",
+   "live_url": "https://extensionto.com/blog/chrome-web-store-extensions-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "control-youtube-playback-speed-in-chrome",
+   "live_url": "https://extensionto.com/blog/control-youtube-playback-speed-in-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide",
+   "live_url": "https://extensionto.com/blog/creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "deezer-extension-chrome-5",
+   "live_url": "https://extensionto.com/blog/deezer-extension-chrome-5",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "discover-the-power-of-minimalism",
+   "live_url": "https://extensionto.com/blog/discover-the-power-of-minimalism",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "download-from-instagram-extension-11",
+   "live_url": "https://extensionto.com/blog/download-from-instagram-extension-11",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "download-instagram-reels-chrome-saving-your-favorite-videos",
+   "live_url": "https://extensionto.com/blog/download-instagram-reels-chrome-saving-your-favorite-videos",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "download-instagram-stories-extension-chrome",
+   "live_url": "https://extensionto.com/blog/download-instagram-stories-extension-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "download-station-chrome-4",
+   "live_url": "https://extensionto.com/blog/download-station-chrome-4",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "download-stories-instagram-extension-5",
+   "live_url": "https://extensionto.com/blog/download-stories-instagram-extension-5",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "easy-screenshot-chrome-guide",
+   "live_url": "https://extensionto.com/blog/easy-screenshot-chrome-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "effortlessly-manage-your-browser-export-extension-chrome",
+   "live_url": "https://extensionto.com/blog/effortlessly-manage-your-browser-export-extension-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "enhance-your-browsing-experience",
+   "live_url": "https://extensionto.com/blog/enhance-your-browsing-experience",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "enhancing-your-browsing-experience-with-avast-online-security-chrome",
+   "live_url": "https://extensionto.com/blog/enhancing-your-browsing-experience-with-avast-online-security-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "exploring-poper-blocker-alternatives",
+   "live_url": "https://extensionto.com/blog/exploring-poper-blocker-alternatives",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_my_findings",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-ad-block-chrome",
+   "live_url": "https://extensionto.com/blog/extension-ad-block-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "extension-adblock-chrome-android-2",
+   "live_url": "https://extensionto.com/blog/extension-adblock-chrome-android-2",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-bypass-chrome-enhancing-your-browsing-experience",
+   "live_url": "https://extensionto.com/blog/extension-bypass-chrome-enhancing-your-browsing-experience",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-chrome-color-2",
+   "live_url": "https://extensionto.com/blog/extension-chrome-color-2",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "extension-chrome-mobile-6",
+   "live_url": "https://extensionto.com/blog/extension-chrome-mobile-6",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-chrome-presearch-14",
+   "live_url": "https://extensionto.com/blog/extension-chrome-presearch-14",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_tested_dozens",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extensions-to-chrome-mobile-13",
+   "live_url": "https://extensionto.com/blog/extensions-to-chrome-mobile-13",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "ghostery-vs-privacy-badger-full-2026-comparison",
+   "live_url": "https://extensionto.com/blog/ghostery-vs-privacy-badger-full-2026-comparison",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_my_findings",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "history-search-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/history-search-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-install-ublock-origin-on-android-chrome",
+   "live_url": "https://extensionto.com/blog/how-to-install-ublock-origin-on-android-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "loop-youtube-videos-with-this-chrome-extension",
+   "live_url": "https://extensionto.com/blog/loop-youtube-videos-with-this-chrome-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "monitor-chrome-ram-usage-guide",
+   "live_url": "https://extensionto.com/blog/monitor-chrome-ram-usage-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "mouse-gestures-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/mouse-gestures-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "mute-noisy-tabs-chrome",
+   "live_url": "https://extensionto.com/blog/mute-noisy-tabs-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "pop-up-blocker-for-chrome-partial",
+   "live_url": "https://extensionto.com/blog/pop-up-blocker-for-chrome-partial",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "in_my_our_testing",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "popup-blocker-streaming-sites",
+   "live_url": "https://extensionto.com/blog/popup-blocker-streaming-sites",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "rss-reader-chrome-extensions-2026",
+   "live_url": "https://extensionto.com/blog/rss-reader-chrome-extensions-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "safe-video-downloader-for-chrome",
+   "live_url": "https://extensionto.com/blog/safe-video-downloader-for-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "save-pc-resources-with-chrome-tab-suspension",
+   "live_url": "https://extensionto.com/blog/save-pc-resources-with-chrome-tab-suspension",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "screenshot-tool-chrome-guide-1",
+   "live_url": "https://extensionto.com/blog/screenshot-tool-chrome-guide-1",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "screenshot-tool-chrome-tutorial",
+   "live_url": "https://extensionto.com/blog/screenshot-tool-chrome-tutorial",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "stop-chrome-from-crashing-with-a-tab-discarder",
+   "live_url": "https://extensionto.com/blog/stop-chrome-from-crashing-with-a-tab-discarder",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "tab-counter-stats-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/tab-counter-stats-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "text-expander-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/text-expander-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "the-best-chrome-extensions-for-developers-free-tools-to-supercharge-your-workflow",
+   "live_url": "https://extensionto.com/blog/the-best-chrome-extensions-for-developers-free-tools-to-supercharge-your-workflow",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "the-no-ads-chrome-extension-worth-installing",
+   "live_url": "https://extensionto.com/blog/the-no-ads-chrome-extension-worth-installing",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "the-power-of-1password-chrome-extension",
+   "live_url": "https://extensionto.com/blog/the-power-of-1password-chrome-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "the-power-of-ghostery-extension-chrome-2026",
+   "live_url": "https://extensionto.com/blog/the-power-of-ghostery-extension-chrome-2026",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "tts-chrome-5",
+   "live_url": "https://extensionto.com/blog/tts-chrome-5",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "ultimate-chrome-ram-memory-management-guide",
+   "live_url": "https://extensionto.com/blog/ultimate-chrome-ram-memory-management-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "understanding-the-extension-notion",
+   "live_url": "https://extensionto.com/blog/understanding-the-extension-notion",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlock-lightning-fast-video-playback-extension-accelerer-video",
+   "live_url": "https://extensionto.com/blog/unlock-lightning-fast-video-playback-extension-accelerer-video",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlock-the-full-potential-of-kiwi-browser",
+   "live_url": "https://extensionto.com/blog/unlock-the-full-potential-of-kiwi-browser",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlock-the-power-of-ad-blocking-on-android",
+   "live_url": "https://extensionto.com/blog/unlock-the-power-of-ad-blocking-on-android",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_tested_dozens",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlock-the-power-of-facebook-pixel-with-the-extension-chrome-facebook-pixel-helper",
+   "live_url": "https://extensionto.com/blog/unlock-the-power-of-facebook-pixel-with-the-extension-chrome-facebook-pixel-helper",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlock-the-power-of-responsive-design",
+   "live_url": "https://extensionto.com/blog/unlock-the-power-of-responsive-design",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-efficiency-the-best-spreadsheets-software-for-small-business",
+   "live_url": "https://extensionto.com/blog/unlocking-efficiency-the-best-spreadsheets-software-for-small-business",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_spent_time",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-full-potential-of-chrome-mobile",
+   "live_url": "https://extensionto.com/blog/unlocking-the-full-potential-of-chrome-mobile",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_my_findings",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-full-potential-of-youtube-with-tubebuddy-opera",
+   "live_url": "https://extensionto.com/blog/unlocking-the-full-potential-of-youtube-with-tubebuddy-opera",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-adblock-chrome-on-android",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-adblock-chrome-on-android",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_tested_dozens",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-chrome-captureunlocking-the-power-of-chrome-capture-tools-2025-a-comprehensive-guide-tools-2025-a",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-chrome-extensions-extension-chrome-json",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-chrome-extensions-extension-chrome-json",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-chrome-extensions-on-android-a-comprehensive-guide",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-chrome-extensions-on-android-a-comprehensive-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-excel-in-google-chrome-excel-extensions",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-excel-in-google-chrome-excel-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-extension-brave-mobile",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extension-brave-mobile",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-extension-chrome-joko",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extension-chrome-joko",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_tested_dozens",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-extension-microsoft-edge",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extension-microsoft-edge",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-meta-tags-chrome-extension-for-meta-tags",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-meta-tags-chrome-extension-for-meta-tags",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "veepn-extension-to-chrome-4",
+   "live_url": "https://extensionto.com/blog/veepn-extension-to-chrome-4",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "vertical-tabs-chrome-sidebar-guide",
+   "live_url": "https://extensionto.com/blog/vertical-tabs-chrome-sidebar-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "weather-clock-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/weather-clock-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "web-highlighter-annotation-extensions-research",
+   "live_url": "https://extensionto.com/blog/web-highlighter-annotation-extensions-research",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "website-blocker-focus-chrome",
+   "live_url": "https://extensionto.com/blog/website-blocker-focus-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "which-android-browser-handles-extensions-best",
+   "live_url": "https://extensionto.com/blog/which-android-browser-handles-extensions-best",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "windscribe-extension-to-chrome-9",
+   "live_url": "https://extensionto.com/blog/windscribe-extension-to-chrome-9",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "3cx-voip-chrome-extension",
+   "live_url": "https://extensionto.com/blog/3cx-voip-chrome-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "a-download-manager-extension-worth-installing",
+   "live_url": "https://extensionto.com/blog/a-download-manager-extension-worth-installing",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "a-free-pop-up-blocker-extension-for-chrome",
+   "live_url": "https://extensionto.com/blog/a-free-pop-up-blocker-extension-for-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "activate-dark-mode-on-wikipedia-for-night-reading-2",
+   "live_url": "https://extensionto.com/blog/activate-dark-mode-on-wikipedia-for-night-reading-2",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "ajouter-extension-chrome-8",
+   "live_url": "https://extensionto.com/blog/ajouter-extension-chrome-8",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "alternatives-to-the-chrome-web-store",
+   "live_url": "https://extensionto.com/blog/alternatives-to-the-chrome-web-store",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_my_findings",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "article-2-chatgpt-amazon-reviews",
+   "live_url": "https://extensionto.com/blog/article-2-chatgpt-amazon-reviews",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "autotab-discard-vs-onetab",
+   "live_url": "https://extensionto.com/blog/autotab-discard-vs-onetab",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "batch-open-tabs-scheduled-chrome",
+   "live_url": "https://extensionto.com/blog/batch-open-tabs-scheduled-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "best-annotated-screenshot-chrome-5",
+   "live_url": "https://extensionto.com/blog/best-annotated-screenshot-chrome-5",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "device_test",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "best-chatgpt-extension-tools-for-chrome",
+   "live_url": "https://extensionto.com/blog/best-chatgpt-extension-tools-for-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing",
+    "our_benchmarks"
+   ]
+  },
+  {
+   "slug": "best-chatgpt-folder-organizer-extensions",
+   "live_url": "https://extensionto.com/blog/best-chatgpt-folder-organizer-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-chrome-extensions-for-note-taking",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-for-note-taking",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "best-chrome-extensions-google-meet",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-google-meet",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "best-dark-mode-chrome-extension",
+   "live_url": "https://extensionto.com/blog/best-dark-mode-chrome-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "best-free-adblocker-youtube-chrome",
+   "live_url": "https://extensionto.com/blog/best-free-adblocker-youtube-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "best-ram-saving-extensions-2026",
+   "live_url": "https://extensionto.com/blog/best-ram-saving-extensions-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "chrome_ver_test",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "best-screenshot-extensions-for-chrome-1",
+   "live_url": "https://extensionto.com/blog/best-screenshot-extensions-for-chrome-1",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "calendar-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/calendar-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chatgpt-export-chat-chrome-extension",
+   "live_url": "https://extensionto.com/blog/chatgpt-export-chat-chrome-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chrome-autoscroll-reading-aids",
+   "live_url": "https://extensionto.com/blog/chrome-autoscroll-reading-aids",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-command-palette-extensions",
+   "live_url": "https://extensionto.com/blog/chrome-command-palette-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-android-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-android-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-complete-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-complete-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-on-android-2026-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-on-android-2026-guide",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-vs-web-apps-comparison",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-vs-web-apps-comparison",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-alternatives",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-alternatives",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "chrome-web-store-firefox-extensions-guide",
+   "live_url": "https://extensionto.com/blog/chrome-web-store-firefox-extensions-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "clickclean-google-chrome-review",
+   "live_url": "https://extensionto.com/blog/clickclean-google-chrome-review",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "clipboard-history-chrome-extension-guide",
+   "live_url": "https://extensionto.com/blog/clipboard-history-chrome-extension-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "clipconverter-extension-chrome",
+   "live_url": "https://extensionto.com/blog/clipconverter-extension-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "comodo-chrome-guide",
+   "live_url": "https://extensionto.com/blog/comodo-chrome-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "contentsquare-extension-chrome",
+   "live_url": "https://extensionto.com/blog/contentsquare-extension-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "creating-financial-models-formula-builder-pro",
+   "live_url": "https://extensionto.com/blog/creating-financial-models-formula-builder-pro",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "crystal-extension-chrome",
+   "live_url": "https://extensionto.com/blog/crystal-extension-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "cypress-extension-chrome-1",
+   "live_url": "https://extensionto.com/blog/cypress-extension-chrome-1",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "discover-the-best-privacy-extension-chrome",
+   "live_url": "https://extensionto.com/blog/discover-the-best-privacy-extension-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "download-high-quality-mp3-chrome",
+   "live_url": "https://extensionto.com/blog/download-high-quality-mp3-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "emoji-picker-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/emoji-picker-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-alidropship-5",
+   "live_url": "https://extensionto.com/blog/extension-alidropship-5",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "extension-auto-refresh-chrome-2",
+   "live_url": "https://extensionto.com/blog/extension-auto-refresh-chrome-2",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-auto-refresh-plus-3",
+   "live_url": "https://extensionto.com/blog/extension-auto-refresh-plus-3",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-chrome-code-1",
+   "live_url": "https://extensionto.com/blog/extension-chrome-code-1",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "extension-chrome-cookie-editor-4",
+   "live_url": "https://extensionto.com/blog/extension-chrome-cookie-editor-4",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-idm-to-chrome-12",
+   "live_url": "https://extensionto.com/blog/extension-idm-to-chrome-12",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide",
+   "live_url": "https://extensionto.com/blog/facebook-pixel-helper-vs-meta-pixel-helper-the-2026-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "fast-screenshot-extension-2025-9",
+   "live_url": "https://extensionto.com/blog/fast-screenshot-extension-2025-9",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "fast-screenshot-extension-tutorial-5",
+   "live_url": "https://extensionto.com/blog/fast-screenshot-extension-tutorial-5",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "finding-apps-in-the-chrome-web-store",
+   "live_url": "https://extensionto.com/blog/finding-apps-in-the-chrome-web-store",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "free-work-chrome-extensions-guide",
+   "live_url": "https://extensionto.com/blog/free-work-chrome-extensions-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "full-page-screenshot-chrome-comparison-7",
+   "live_url": "https://extensionto.com/blog/full-page-screenshot-chrome-comparison-7",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "getting-extensions-to-work-on-lemur-browser",
+   "live_url": "https://extensionto.com/blog/getting-extensions-to-work-on-lemur-browser",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "ghostery-chrome-extension-winner",
+   "live_url": "https://extensionto.com/blog/ghostery-chrome-extension-winner",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "ghostery-vs-stands-adblocker",
+   "live_url": "https://extensionto.com/blog/ghostery-vs-stands-adblocker",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "grammarly-extension-to-chrome-3",
+   "live_url": "https://extensionto.com/blog/grammarly-extension-to-chrome-3",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-enable-extensions-in-chrome-android",
+   "live_url": "https://extensionto.com/blog/how-to-enable-extensions-in-chrome-android",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "how-to-fix-chrome-high-memory-usage-2026-complete-guide",
+   "live_url": "https://extensionto.com/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-fix-chrome-memory-2026",
+   "live_url": "https://extensionto.com/blog/how-to-fix-chrome-memory-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-install-idm-extension-in-chrome-manually-2026",
+   "live_url": "https://extensionto.com/blog/how-to-install-idm-extension-in-chrome-manually-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-speed-up-chrome-partial",
+   "live_url": "https://extensionto.com/blog/how-to-speed-up-chrome-partial",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-update-chrome-extensions-enhancing-your-browser-experience",
+   "live_url": "https://extensionto.com/blog/how-to-update-chrome-extensions-enhancing-your-browser-experience",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "identify-any-font-on-a-page-instantly",
+   "live_url": "https://extensionto.com/blog/identify-any-font-on-a-page-instantly",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "kaspersky-protection-chrome",
+   "live_url": "https://extensionto.com/blog/kaspersky-protection-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "kiwi-browser-extensions-guide",
+   "live_url": "https://extensionto.com/blog/kiwi-browser-extensions-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "maximizing-laptop-battery-life-chrome-battery-saver-extension",
+   "live_url": "https://extensionto.com/blog/maximizing-laptop-battery-life-chrome-battery-saver-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "organize-chrome-extensions-toolbar-guide",
+   "live_url": "https://extensionto.com/blog/organize-chrome-extensions-toolbar-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "parental-controls-google-chrome-guide",
+   "live_url": "https://extensionto.com/blog/parental-controls-google-chrome-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "pomodoro-focus-timer-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/pomodoro-focus-timer-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "protab-suspender-memory-saver-review",
+   "live_url": "https://extensionto.com/blog/protab-suspender-memory-saver-review",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "quick-screenshot-capture-extension",
+   "live_url": "https://extensionto.com/blog/quick-screenshot-capture-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "save-articles-read-later-offline-chrome-guide",
+   "live_url": "https://extensionto.com/blog/save-articles-read-later-offline-chrome-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "save-images-from-protected-sites-chrome",
+   "live_url": "https://extensionto.com/blog/save-images-from-protected-sites-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "screenshot-ocr-text-extractor-extensions",
+   "live_url": "https://extensionto.com/blog/screenshot-ocr-text-extractor-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "screenshot-tool-chrome-vs-5",
+   "live_url": "https://extensionto.com/blog/screenshot-tool-chrome-vs-5",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "screenshot-tools-chrome-comparison",
+   "live_url": "https://extensionto.com/blog/screenshot-tools-chrome-comparison",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "session-isolation-multiple-accounts",
+   "live_url": "https://extensionto.com/blog/session-isolation-multiple-accounts",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "split-screen-chrome-tabs-guide",
+   "live_url": "https://extensionto.com/blog/split-screen-chrome-tabs-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "device_test_rev",
+    "i_tested",
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "stop-wasting-time-typing-the-same-prompts",
+   "live_url": "https://extensionto.com/blog/stop-wasting-time-typing-the-same-prompts",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "sync-chrome-extensions-across-devices-guide",
+   "live_url": "https://extensionto.com/blog/sync-chrome-extensions-across-devices-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "the-best-chrome-extension-for-android-tablet",
+   "live_url": "https://extensionto.com/blog/the-best-chrome-extension-for-android-tablet",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "the-best-free-download-manager-for-chrome",
+   "live_url": "https://extensionto.com/blog/the-best-free-download-manager-for-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "the-power-of-extension-adblock-chrome-android",
+   "live_url": "https://extensionto.com/blog/the-power-of-extension-adblock-chrome-android",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "the-power-of-extension-adblock-google-chrome",
+   "live_url": "https://extensionto.com/blog/the-power-of-extension-adblock-google-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "the-power-of-extension-chrome-google-translate",
+   "live_url": "https://extensionto.com/blog/the-power-of-extension-chrome-google-translate",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "top-chrome-devtools-tips-for-mobile",
+   "live_url": "https://extensionto.com/blog/top-chrome-devtools-tips-for-mobile",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlock-secure-browsing-the-avast-password-extension-chrome-review",
+   "live_url": "https://extensionto.com/blog/unlock-secure-browsing-the-avast-password-extension-chrome-review",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlock-the-power-of-seo-the-best-seo-extensions-for-chrome-2026",
+   "live_url": "https://extensionto.com/blog/unlock-the-power-of-seo-the-best-seo-extensions-for-chrome-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlock-the-power-of-youtube-subtitle-downloader-chrome",
+   "live_url": "https://extensionto.com/blog/unlock-the-power-of-youtube-subtitle-downloader-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user",
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-efficiency-the-best-productivity-tools-for-chrome-browser",
+   "live_url": "https://extensionto.com/blog/unlocking-efficiency-the-best-productivity-tools-for-chrome-browser",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-efficiency-the-power-of-extension-auto-refresh-chrome",
+   "live_url": "https://extensionto.com/blog/unlocking-efficiency-the-power-of-extension-auto-refresh-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-enhanced-browser-security-kaspersky-chrome",
+   "live_url": "https://extensionto.com/blog/unlocking-enhanced-browser-security-kaspersky-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-productivity-the-best-chrome-extensions-for-web-developers",
+   "live_url": "https://extensionto.com/blog/unlocking-productivity-the-best-chrome-extensions-for-web-developers",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-avast-password-chrome-secure-browsing",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-avast-password-chrome-secure-browsing",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-extensionhub-enhancing-your-browser-experience",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-extensionhub-enhancing-your-browser-experience",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-google-tag-assistant-extension",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-google-tag-assistant-extension",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_as_a_who",
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-kiwi-browser-developer-mode",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-kiwi-browser-developer-mode",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "using-a-chrome-extension-on-your-android-phone",
+   "live_url": "https://extensionto.com/blog/using-a-chrome-extension-on-your-android-phone",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "using-dark-mode-on-quora-for-better-focus-4",
+   "live_url": "https://extensionto.com/blog/using-dark-mode-on-quora-for-better-focus-4",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "watch-party-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/watch-party-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested",
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "whatsapp-web-enhancer-extensions",
+   "live_url": "https://extensionto.com/blog/whatsapp-web-enhancer-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "why-you-need-an-antivirus-extension-for-chrome",
+   "live_url": "https://extensionto.com/blog/why-you-need-an-antivirus-extension-for-chrome",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_ill_share",
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "15-essential-chrome-extensions-to-supercharge-your-workflow-right-now",
+   "live_url": "https://extensionto.com/blog/15-essential-chrome-extensions-to-supercharge-your-workflow-right-now",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "1xbet-chrome-extension-review-2026",
+   "live_url": "https://extensionto.com/blog/1xbet-chrome-extension-review-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "a-chrome-extension-for-power-twitter-users",
+   "live_url": "https://extensionto.com/blog/a-chrome-extension-for-power-twitter-users",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "a-fast-safe-youtube-downloader-for-chrome",
+   "live_url": "https://extensionto.com/blog/a-fast-safe-youtube-downloader-for-chrome",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "adblock-chrome-android-complete-guide-2026",
+   "live_url": "https://extensionto.com/blog/adblock-chrome-android-complete-guide-2026",
+   "tier": 1,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "adblock-plus-vs-ublock-origin-2026",
+   "live_url": "https://extensionto.com/blog/adblock-plus-vs-ublock-origin-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "adguard-vs-ghostery-2026-comparison",
+   "live_url": "https://extensionto.com/blog/adguard-vs-ghostery-2026-comparison",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "agenda-hero-chrome-extension-guide",
+   "live_url": "https://extensionto.com/blog/agenda-hero-chrome-extension-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "ai-formula-generator-excel-vs-google-sheets",
+   "live_url": "https://extensionto.com/blog/ai-formula-generator-excel-vs-google-sheets",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "ai-research-assistant-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/ai-research-assistant-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "ai-tab-manager-chrome-extension-a-verification-first-buyers-guide",
+   "live_url": "https://extensionto.com/blog/ai-tab-manager-chrome-extension-a-verification-first-buyers-guide",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "ant-video-downloader-chrome",
+   "live_url": "https://extensionto.com/blog/ant-video-downloader-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "anti-anti-adblock-chrome",
+   "live_url": "https://extensionto.com/blog/anti-anti-adblock-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "in_testing_comma"
+   ]
+  },
+  {
+   "slug": "anti-captcha-chrome",
+   "live_url": "https://extensionto.com/blog/anti-captcha-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "antidote-extension-chrome",
+   "live_url": "https://extensionto.com/blog/antidote-extension-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "article-1-ai-youtube-comment-generator",
+   "live_url": "https://extensionto.com/blog/article-1-ai-youtube-comment-generator",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "subscribers"
+   ]
+  },
+  {
+   "slug": "article-10-ai-form-filler",
+   "live_url": "https://extensionto.com/blog/article-10-ai-form-filler",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "article-11-chatgpt-prompt-templates",
+   "live_url": "https://extensionto.com/blog/article-11-chatgpt-prompt-templates",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "article-17-chatgpt-slack-integration",
+   "live_url": "https://extensionto.com/blog/article-17-chatgpt-slack-integration",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "article-4-chatgpt-twitter-replies",
+   "live_url": "https://extensionto.com/blog/article-4-chatgpt-twitter-replies",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "article-5-ai-email-responder-free",
+   "live_url": "https://extensionto.com/blog/article-5-ai-email-responder-free",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "article4-1password-review",
+   "live_url": "https://extensionto.com/blog/article4-1password-review",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "we_benchmarked"
+   ]
+  },
+  {
+   "slug": "article5-dashlane-features",
+   "live_url": "https://extensionto.com/blog/article5-dashlane-features",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "in_my_our_testing",
+    "our_benchmarks",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "article9-roboform-review",
+   "live_url": "https://extensionto.com/blog/article9-roboform-review",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "auto-tab-discarder-vs-the-great-suspender",
+   "live_url": "https://extensionto.com/blog/auto-tab-discarder-vs-the-great-suspender",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "automating-business-reports-with-formula-builder",
+   "live_url": "https://extensionto.com/blog/automating-business-reports-with-formula-builder",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "avast-online-security-chrome",
+   "live_url": "https://extensionto.com/blog/avast-online-security-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "best-ai-chrome-extensions-2026",
+   "live_url": "https://extensionto.com/blog/best-ai-chrome-extensions-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "my_our_tests",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-ai-email-assistant-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/best-ai-email-assistant-chrome-extensions",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "best-anti-captcha-chrome-extension",
+   "live_url": "https://extensionto.com/blog/best-anti-captcha-chrome-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "best-chrome-extension-download-files",
+   "live_url": "https://extensionto.com/blog/best-chrome-extension-download-files",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "best-chrome-extensions-for-language-learning",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-for-language-learning",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "best-chrome-extensions-for-remote-workers-2026",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-for-remote-workers-2026",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "best-chrome-extensions-for-web-accessibility-testing",
+   "live_url": "https://extensionto.com/blog/best-chrome-extensions-for-web-accessibility-testing",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "best-chrome-privacy-extensions-2026-complete-guide",
+   "live_url": "https://extensionto.com/blog/best-chrome-privacy-extensions-2026-complete-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "we_benchmarked",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "best-color-picker-chrome-extension",
+   "live_url": "https://extensionto.com/blog/best-color-picker-chrome-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
+   "live_url": "https://extensionto.com/blog/best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "best-ghostery-settings-for-maximum-online-privacy",
+   "live_url": "https://extensionto.com/blog/best-ghostery-settings-for-maximum-online-privacy",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "best-lightweight-popup-blocker-chrome",
+   "live_url": "https://extensionto.com/blog/best-lightweight-popup-blocker-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "best-local-password-manager-for-chrome-2026-1",
+   "live_url": "https://extensionto.com/blog/best-local-password-manager-for-chrome-2026-1",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "best-note-taking-chrome-extensions-2026",
+   "live_url": "https://extensionto.com/blog/best-note-taking-chrome-extensions-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "best-tab-suspender-for-4gb-ram-laptops-1",
+   "live_url": "https://extensionto.com/blog/best-tab-suspender-for-4gb-ram-laptops-1",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "best-text-to-speech-chrome-extensions-2026",
+   "live_url": "https://extensionto.com/blog/best-text-to-speech-chrome-extensions-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "best-youtube-downloader-chrome-extension-2026",
+   "live_url": "https://extensionto.com/blog/best-youtube-downloader-chrome-extension-2026",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "betterttv-google-chrome-guide",
+   "live_url": "https://extensionto.com/blog/betterttv-google-chrome-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "blackbox-ai-chrome-extension-guide",
+   "live_url": "https://extensionto.com/blog/blackbox-ai-chrome-extension-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "block-newsletter-popups-and-allow-notifications-prompts-5",
+   "live_url": "https://extensionto.com/blog/block-newsletter-popups-and-allow-notifications-prompts-5",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "boosting-browser-security-extensions",
+   "live_url": "https://extensionto.com/blog/boosting-browser-security-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "boosting-online-security-and-convenience",
+   "live_url": "https://extensionto.com/blog/boosting-online-security-and-convenience",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "bringing-gemini-into-your-chrome-browser",
+   "live_url": "https://extensionto.com/blog/bringing-gemini-into-your-chrome-browser",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "capture-scrolling-webpages-as-png-or-pdf",
+   "live_url": "https://extensionto.com/blog/capture-scrolling-webpages-as-png-or-pdf",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chatgpt-bookmark-manager-chrome-extension",
+   "live_url": "https://extensionto.com/blog/chatgpt-bookmark-manager-chrome-extension",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "chatgpt-conversation-search-extension-2026",
+   "live_url": "https://extensionto.com/blog/chatgpt-conversation-search-extension-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chatgpt-custom-instructions-extension-2026",
+   "live_url": "https://extensionto.com/blog/chatgpt-custom-instructions-extension-2026",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "chatgpt-extension-chrome-guide",
+   "live_url": "https://extensionto.com/blog/chatgpt-extension-chrome-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "chatgpt-for-google-sheets-extensions-2026",
+   "live_url": "https://extensionto.com/blog/chatgpt-for-google-sheets-extensions-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "chatgpt-side-panel-chrome-extensions-2026",
+   "live_url": "https://extensionto.com/blog/chatgpt-side-panel-chrome-extensions-2026",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "choosing-a-youtube-video-downloader-for-pc-chrome",
+   "live_url": "https://extensionto.com/blog/choosing-a-youtube-video-downloader-for-pc-chrome",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "chrome-cast-samsung-tv",
+   "live_url": "https://extensionto.com/blog/chrome-cast-samsung-tv",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "chrome-download-manager-guide",
+   "live_url": "https://extensionto.com/blog/chrome-download-manager-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "device_test",
+    "during_after_testing",
+    "i_tested",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-est-tres-lent",
+   "live_url": "https://extensionto.com/blog/chrome-est-tres-lent",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-extension-chrome-pages-access-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extension-chrome-pages-access-guide",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "chrome-extension-icon-missing-toolbar-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extension-icon-missing-toolbar-guide",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "chrome-extension-keyboard-shortcuts-not-working-fix",
+   "live_url": "https://extensionto.com/blog/chrome-extension-keyboard-shortcuts-not-working-fix",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-extension-settings-lost-after-reinstall-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extension-settings-lost-after-reinstall-guide",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "chrome-extensions-android-download",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-android-download",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-backup-and-restore-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-backup-and-restore-guide",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "chrome-extensions-opera-guide",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-opera-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-extensions-that-slow-down-your-browser-real-tests",
+   "live_url": "https://extensionto.com/blog/chrome-extensions-that-slow-down-your-browser-real-tests",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "chrome-high-memory-usage-fix",
+   "live_url": "https://extensionto.com/blog/chrome-high-memory-usage-fix",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-memory-saver-how-it-works",
+   "live_url": "https://extensionto.com/blog/chrome-memory-saver-how-it-works",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-pdf-viewer-guide",
+   "live_url": "https://extensionto.com/blog/chrome-pdf-viewer-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-popup-blocker-master-guide",
+   "live_url": "https://extensionto.com/blog/chrome-popup-blocker-master-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-printing-guide",
+   "live_url": "https://extensionto.com/blog/chrome-printing-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-privacy-extensions-worth-adding-today",
+   "live_url": "https://extensionto.com/blog/chrome-privacy-extensions-worth-adding-today",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chrome-samsung-smart-tv-casting-guide",
+   "live_url": "https://extensionto.com/blog/chrome-samsung-smart-tv-casting-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-addon-comparison",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-addon-comparison",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-addon-guide",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-addon-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chrome-screenshot-addon-tutorial",
+   "live_url": "https://extensionto.com/blog/chrome-screenshot-addon-tutorial",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chromecast-extension-google-chrome",
+   "live_url": "https://extensionto.com/blog/chromecast-extension-google-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "chromecast-mac-guide",
+   "live_url": "https://extensionto.com/blog/chromecast-mac-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "chromecast-plugin-chrome",
+   "live_url": "https://extensionto.com/blog/chromecast-plugin-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs"
+   ]
+  },
+  {
+   "slug": "chrometana-extension-review",
+   "live_url": "https://extensionto.com/blog/chrometana-extension-review",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "cleanweb-vs-total-adblock",
+   "live_url": "https://extensionto.com/blog/cleanweb-vs-total-adblock",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "clickclean-chrome-browser-cleaner",
+   "live_url": "https://extensionto.com/blog/clickclean-chrome-browser-cleaner",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "color-picker-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/color-picker-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "colorzilla-chrome-color-picker",
+   "live_url": "https://extensionto.com/blog/colorzilla-chrome-color-picker",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "cookie-manager-chrome-extension",
+   "live_url": "https://extensionto.com/blog/cookie-manager-chrome-extension",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "cookies-quick-manager-chrome",
+   "live_url": "https://extensionto.com/blog/cookies-quick-manager-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_spent_time"
+   ],
+   "v3_hits": [
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "cors-chrome-guide",
+   "live_url": "https://extensionto.com/blog/cors-chrome-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "discover-the-best-spreadsheets-software-for-small-business",
+   "live_url": "https://extensionto.com/blog/discover-the-best-spreadsheets-software-for-small-business",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "donottrackme-chrome-8",
+   "live_url": "https://extensionto.com/blog/donottrackme-chrome-8",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "download-picture-instagram-chrome-3",
+   "live_url": "https://extensionto.com/blog/download-picture-instagram-chrome-3",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "download-video-instagram-extension-chrome-6",
+   "live_url": "https://extensionto.com/blog/download-video-instagram-extension-chrome-6",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "easy-screenshot-chrome-comparison-2",
+   "live_url": "https://extensionto.com/blog/easy-screenshot-chrome-comparison-2",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "easy-screenshot-chrome-review",
+   "live_url": "https://extensionto.com/blog/easy-screenshot-chrome-review",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "easy-screenshot-chrome-tutorial",
+   "live_url": "https://extensionto.com/blog/easy-screenshot-chrome-tutorial",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "encrypting-your-login-data-a-simple-guide-6",
+   "live_url": "https://extensionto.com/blog/encrypting-your-login-data-a-simple-guide-6",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "enpass-extension-chrome-9",
+   "live_url": "https://extensionto.com/blog/enpass-extension-chrome-9",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "essential-chrome-extensions-for-ad-free-browsing-user-experience-speed-productivity-clean-web-9",
+   "live_url": "https://extensionto.com/blog/essential-chrome-extensions-for-ad-free-browsing-user-experience-speed-productivity-clean-web-9",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "essential-free-security-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/essential-free-security-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "in_testing_comma"
+   ]
+  },
+  {
+   "slug": "extend-laptop-battery-life-by-suspending-tabs-8",
+   "live_url": "https://extensionto.com/blog/extend-laptop-battery-life-by-suspending-tabs-8",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "extension-chrome-chat-gpt-2",
+   "live_url": "https://extensionto.com/blog/extension-chrome-chat-gpt-2",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "extension-chrome-wapi-17",
+   "live_url": "https://extensionto.com/blog/extension-chrome-wapi-17",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "extension-get-chrome-3",
+   "live_url": "https://extensionto.com/blog/extension-get-chrome-3",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "extension-regle-chrome-9",
+   "live_url": "https://extensionto.com/blog/extension-regle-chrome-9",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "extension-trello-chrome-11",
+   "live_url": "https://extensionto.com/blog/extension-trello-chrome-11",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "fast-screenshot-extension-vs-4",
+   "live_url": "https://extensionto.com/blog/fast-screenshot-extension-vs-4",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "firefox-android-extensions-guide",
+   "live_url": "https://extensionto.com/blog/firefox-android-extensions-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "firefox-vs-chrome-memory-usage-2026",
+   "live_url": "https://extensionto.com/blog/firefox-vs-chrome-memory-usage-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "we_benchmarked",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "fix-chrome-out-of-memory-errors",
+   "live_url": "https://extensionto.com/blog/fix-chrome-out-of-memory-errors",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "free-ai-content-summarizer-extension-2026",
+   "live_url": "https://extensionto.com/blog/free-ai-content-summarizer-extension-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "i_tested"
+   ]
+  },
+  {
+   "slug": "full-page-screenshot-chrome-guide-9",
+   "live_url": "https://extensionto.com/blog/full-page-screenshot-chrome-guide-9",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "gemini-chat-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/gemini-chat-chrome-extensions",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "google-chrome-addons-guide-unlock-your-browser-s-full-potential",
+   "live_url": "https://extensionto.com/blog/google-chrome-addons-guide-unlock-your-browser-s-full-potential",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "how-to-block-intrusive-popups-on-any-website",
+   "live_url": "https://extensionto.com/blog/how-to-block-intrusive-popups-on-any-website",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "how-to-block-youtube-ads-with-ghostery-extension",
+   "live_url": "https://extensionto.com/blog/how-to-block-youtube-ads-with-ghostery-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_tested_dozens"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-disable-chrome-extensions-on-specific-sites",
+   "live_url": "https://extensionto.com/blog/how-to-disable-chrome-extensions-on-specific-sites",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "how-to-document-software-bugs-with-screenshots-4",
+   "live_url": "https://extensionto.com/blog/how-to-document-software-bugs-with-screenshots-4",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-download-video-from-facebook-chrome",
+   "live_url": "https://extensionto.com/blog/how-to-download-video-from-facebook-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "how-to-fix-chrome-high-memory-usage-on-windows-11",
+   "live_url": "https://extensionto.com/blog/how-to-fix-chrome-high-memory-usage-on-windows-11",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "how-to-fix-formula-errors-in-excel-2026-6",
+   "live_url": "https://extensionto.com/blog/how-to-fix-formula-errors-in-excel-2026-6",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "how-to-hibernate-inactive-tabs-automatically-6",
+   "live_url": "https://extensionto.com/blog/how-to-hibernate-inactive-tabs-automatically-6",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "how-to-manage-chrome-bookmarks-efficiently",
+   "live_url": "https://extensionto.com/blog/how-to-manage-chrome-bookmarks-efficiently",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "how-to-manage-multiple-logins-securely-4",
+   "live_url": "https://extensionto.com/blog/how-to-manage-multiple-logins-securely-4",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "how-to-protect-your-accounts-from-identity-theft-7",
+   "live_url": "https://extensionto.com/blog/how-to-protect-your-accounts-from-identity-theft-7",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "how-to-stay-on-the-same-page-while-clicking-links-3",
+   "live_url": "https://extensionto.com/blog/how-to-stay-on-the-same-page-while-clicking-links-3",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "how-to-turn-on-chromes-memory-saver-mode",
+   "live_url": "https://extensionto.com/blog/how-to-turn-on-chromes-memory-saver-mode",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "how-to-use-index-match-in-excel-like-a-pro-3",
+   "live_url": "https://extensionto.com/blog/how-to-use-index-match-in-excel-like-a-pro-3",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "instagram-downloader-chrome",
+   "live_url": "https://extensionto.com/blog/instagram-downloader-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "kaspersky-protection-chrome-review",
+   "live_url": "https://extensionto.com/blog/kaspersky-protection-chrome-review",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "kiwi-browser-download-install-guide-2026",
+   "live_url": "https://extensionto.com/blog/kiwi-browser-download-install-guide-2026",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "kiwi-browser-review-2026",
+   "live_url": "https://extensionto.com/blog/kiwi-browser-review-2026",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen"
+   ],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "manifest-v3-adblock-chrome-guide",
+   "live_url": "https://extensionto.com/blog/manifest-v3-adblock-chrome-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "overview-of-free-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/overview-of-free-chrome-extensions",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "poper-blocker-vs-adblock-plus-2026",
+   "live_url": "https://extensionto.com/blog/poper-blocker-vs-adblock-plus-2026",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "my_our_tests",
+    "we_benchmarked"
+   ]
+  },
+  {
+   "slug": "privacy-badger-chrome-partial",
+   "live_url": "https://extensionto.com/blog/privacy-badger-chrome-partial",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users",
+   "live_url": "https://extensionto.com/blog/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "pro-productivity-chrome-extensions-the-2025-toolkit",
+   "live_url": "https://extensionto.com/blog/pro-productivity-chrome-extensions-the-2025-toolkit",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "pro-security-chrome-extensions-guide",
+   "live_url": "https://extensionto.com/blog/pro-security-chrome-extensions-guide",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "protab-suspender-vs-google-memory-saver-2026-which-saves-more-ram",
+   "live_url": "https://extensionto.com/blog/protab-suspender-vs-google-memory-saver-2026-which-saves-more-ram",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "protecting-your-browser-from-url-hijacking-4",
+   "live_url": "https://extensionto.com/blog/protecting-your-browser-from-url-hijacking-4",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "quick-screenshot-lite-review",
+   "live_url": "https://extensionto.com/blog/quick-screenshot-lite-review",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_i_have_seen",
+    "v3_i_recommend"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "quickest-way-to-screenshot-a-specific-area-on-chrome-2",
+   "live_url": "https://extensionto.com/blog/quickest-way-to-screenshot-a-specific-area-on-chrome-2",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "reddit-power-user-chrome-extensions",
+   "live_url": "https://extensionto.com/blog/reddit-power-user-chrome-extensions",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "reduce-chrome-ram-usage-for-gaming-2",
+   "live_url": "https://extensionto.com/blog/reduce-chrome-ram-usage-for-gaming-2",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "remove-overlay-ads-from-blogs-and-news-sites-2",
+   "live_url": "https://extensionto.com/blog/remove-overlay-ads-from-blogs-and-news-sites-2",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "safe-browsing-how-to-identify-shady-redirects-and-protect-your-online-security",
+   "live_url": "https://extensionto.com/blog/safe-browsing-how-to-identify-shady-redirects-and-protect-your-online-security",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "samsung-internet-adblock-setup-guide",
+   "live_url": "https://extensionto.com/blog/samsung-internet-adblock-setup-guide",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": [
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "saving-web-designs-as-images-in-one-click-5",
+   "live_url": "https://extensionto.com/blog/saving-web-designs-as-images-in-one-click-5",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "screenshot-extensions-chrome",
+   "live_url": "https://extensionto.com/blog/screenshot-extensions-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "securakey-pro-the-safest-way-to-store-banking-passwords-5",
+   "live_url": "https://extensionto.com/blog/securakey-pro-the-safest-way-to-store-banking-passwords-5",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "set-chrome-as-default-browser",
+   "live_url": "https://extensionto.com/blog/set-chrome-as-default-browser",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "social-media-video-downloader-chrome",
+   "live_url": "https://extensionto.com/blog/social-media-video-downloader-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "speed-up-slow-chrome-in-2026-10-fixes-that-actually-work",
+   "live_url": "https://extensionto.com/blog/speed-up-slow-chrome-in-2026-10-fixes-that-actually-work",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "stop-annoying-redirects-on-movie-streaming-sites-a-comprehensive-guide",
+   "live_url": "https://extensionto.com/blog/stop-annoying-redirects-on-movie-streaming-sites-a-comprehensive-guide",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "stop-video-popups-from-playing-automatically-3",
+   "live_url": "https://extensionto.com/blog/stop-video-popups-from-playing-automatically-3",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "streamlining-your-linkedin-experience",
+   "live_url": "https://extensionto.com/blog/streamlining-your-linkedin-experience",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "taking-screenshots-on-chrome-without-using-printscreen-6",
+   "live_url": "https://extensionto.com/blog/taking-screenshots-on-chrome-without-using-printscreen-6",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "the-2025-chrome-extension-power-guide-how-to-actually-level-up-your-browser",
+   "live_url": "https://extensionto.com/blog/the-2025-chrome-extension-power-guide-how-to-actually-level-up-your-browser",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "the-best-chrome-extension-for-analytics",
+   "live_url": "https://extensionto.com/blog/the-best-chrome-extension-for-analytics",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "the-latest-idm-extension-for-chrome-free",
+   "live_url": "https://extensionto.com/blog/the-latest-idm-extension-for-chrome-free",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "the-tab-management-extensions-worth-using",
+   "live_url": "https://extensionto.com/blog/the-tab-management-extensions-worth-using",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "the-ultimate-browser-tools-guide-boost-productivity-efficiency",
+   "live_url": "https://extensionto.com/blog/the-ultimate-browser-tools-guide-boost-productivity-efficiency",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "the-ultimate-chrome-extensions-guide-for-2025-maximize-your-browser-s-potential",
+   "live_url": "https://extensionto.com/blog/the-ultimate-chrome-extensions-guide-for-2025-maximize-your-browser-s-potential",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "top-10-google-sheets-extensions-for-accounting-8",
+   "live_url": "https://extensionto.com/blog/top-10-google-sheets-extensions-for-accounting-8",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "top-free-password-vault-extensions-for-chrome-8",
+   "live_url": "https://extensionto.com/blog/top-free-password-vault-extensions-for-chrome-8",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "top-rated-privacy-extensions-for-google-chrome",
+   "live_url": "https://extensionto.com/blog/top-rated-privacy-extensions-for-google-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_my_noun",
+    "v3_prep_testing",
+    "v3_testing_dozens"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools",
+   "live_url": "https://extensionto.com/blog/unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome",
+   "live_url": "https://extensionto.com/blog/unlock-the-power-of-youtube-audio-youtube-audio-downloader-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-ad-free-browsing-on-android-android-chrome-adblock",
+   "live_url": "https://extensionto.com/blog/unlocking-ad-free-browsing-on-android-android-chrome-adblock",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing",
+    "our_benchmarks",
+    "we_benchmarked",
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+   "live_url": "https://extensionto.com/blog/unlocking-ad-free-browsing-the-best-adblock-for-chrome-on-android",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "hands_on",
+    "i_found_that",
+    "i_tested",
+    "in_my_our_testing",
+    "my_our_tests"
+   ]
+  },
+  {
+   "slug": "unlocking-data-visualization-the-power-of-tableau-chrome-extension",
+   "live_url": "https://extensionto.com/blog/unlocking-data-visualization-the-power-of-tableau-chrome-extension",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-online-privacy-ghostery-for-chrome-android",
+   "live_url": "https://extensionto.com/blog/unlocking-online-privacy-ghostery-for-chrome-android",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_we_i_verbs"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing",
+    "my_our_tests",
+    "our_benchmarks"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-avast-passwords-extension-chrome",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-avast-passwords-extension-chrome",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "unlocking-the-power-of-browsers",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-browsers",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "unlocking-the-power-of-chrome-extensions-for-android-apk",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-chrome-extensions-for-android-apk",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "unlocking-the-power-of-eternl-chrome-enhanced-browsing",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-eternl-chrome-enhanced-browsing",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "unlocking-the-power-of-online-privacy-ghostery-add-on-chrome",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-online-privacy-ghostery-add-on-chrome",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "i_tested",
+    "i_verbs",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "unlocking-the-power-of-password-management",
+   "live_url": "https://extensionto.com/blog/unlocking-the-power-of-password-management",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_ill_share"
+   ],
+   "v3_hits": [
+    "v3_based_on_my",
+    "v3_extensive_testing",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "hands_on",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  },
+  {
+   "slug": "vpn-article5-youtube-proxy",
+   "live_url": "https://extensionto.com/blog/vpn-article5-youtube-proxy",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "vpn-article8-hotspot-shield-review",
+   "live_url": "https://extensionto.com/blog/vpn-article8-hotspot-shield-review",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "in_my_our_testing",
+    "my_our_tests",
+    "our_benchmarks"
+   ]
+  },
+  {
+   "slug": "vpn-article9-tunnelbear-review",
+   "live_url": "https://extensionto.com/blog/vpn-article9-tunnelbear-review",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [
+    "v3_i_recommend",
+    "v3_my_noun"
+   ],
+   "other_s1_hits": [
+    "we_tested"
+   ]
+  },
+  {
+   "slug": "vpn-extension-to-chrome-1",
+   "live_url": "https://extensionto.com/blog/vpn-extension-to-chrome-1",
+   "tier": null,
+   "v3_1_hits": [
+    "v3_1_power_user"
+   ],
+   "v3_hits": [],
+   "other_s1_hits": []
+  },
+  {
+   "slug": "why-you-should-avoid-cloud-based-password-managers-2",
+   "live_url": "https://extensionto.com/blog/why-you-should-avoid-cloud-based-password-managers-2",
+   "tier": 2,
+   "v3_1_hits": [
+    "v3_1_cta_tested"
+   ],
+   "v3_hits": [
+    "v3_extensive_testing",
+    "v3_i_have_seen",
+    "v3_i_recommend",
+    "v3_my_noun",
+    "v3_prep_testing"
+   ],
+   "other_s1_hits": [
+    "during_after_testing",
+    "i_found_that",
+    "in_my_our_testing"
+   ]
+  }
+ ]
+}

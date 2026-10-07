@@ -5,10 +5,7 @@ title: >-
   Chrome Screenshot Addon Guide: How to Capture, Annotate, and Share Like a Pro
   (2026)
 slug: chrome-screenshot-addon-guide
-excerpt: >-
-  A complete guide to Chrome screenshot addons — how to install, capture
-  full-page screenshots, annotate, edit, and share. Tested techniques for
-  beginners and power users.
+excerpt: 'A complete guide to Chrome screenshot addons — how to install, capture full-page screenshots, annotate, edit, and share. Techniques for beginners and power users.'
 featured_image: /content/images/chrome-screenshot-addon-guide/featured.webp
 category: Productivity & Tools
 tags: []
@@ -16,7 +13,7 @@ keywords:
   - chrome screenshot addon guide
   - how to screenshot in chrome
   - chrome screenshot tips
-meta_description: "Step-by-step guide to using Chrome screenshot addons. Full-page capture, annotations, keyboard shortcuts, editing techniques, and sharing workflows tested..."
+meta_description: 'Step-by-step guide to using Chrome screenshot addons: full-page capture, annotations, keyboard shortcuts, editing techniques, and sharing workflows.'
 status: published
 published_at: '2026-03-07T08:11:01.719+00:00'
 scheduled_at: '2026-03-07T08:11:00+00:00'

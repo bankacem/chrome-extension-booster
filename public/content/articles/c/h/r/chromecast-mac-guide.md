@@ -2,10 +2,7 @@
 seo_title: "Chromecast on Mac"
 title: 'Chromecast on Mac: Setup, Troubleshooting & Best Streaming Extensions (2026)'
 slug: chromecast-mac-guide
-excerpt: >-
-  I tested Chromecast streaming from a MacBook Pro M3 to three TVs. Complete
-  setup guide, Mac-specific audio fixes, and comparison with AirParrot,
-  Deskreen, and TV Cast.
+excerpt: 'Chromecast streaming from a MacBook: complete setup guide, Mac-specific audio fixes, and a comparison with AirParrot, Deskreen, and TV Cast.'
 featured_image: /content/images/chromecast-mac-guide/featured.webp
 category: Productivity & Tools
 tags:
@@ -17,7 +14,7 @@ keywords:
   - chromecast extension mac
   - cast from mac to tv
   - chrome casting mac
-meta_description: "Complete guide to using Chromecast on Mac. Setup instructions, Mac-specific troubleshooting, audio codec fixes, and 8 companion Chrome extensions tested..."
+meta_description: 'Complete guide to using Chromecast on Mac: setup instructions, Mac-specific troubleshooting, audio codec fixes, and 8 companion Chrome extensions.'
 status: published
 published_at: '2026-05-20T14:15:00.361+00:00'
 scheduled_at: '2026-05-20T14:15:00+00:00'

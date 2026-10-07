@@ -10,7 +10,7 @@ tags:
   - 'Best Extension to Reduce Chrome RAM Usage: Boosting Browser Performance'
 keywords:
   - Best extension to reduce Chrome RAM usage
-meta_description: "A hands-on look at extension to reduce chrome ram usage, covering setup, real features, and what to expect before installing it."
+meta_description: 'A practical look at extensions to reduce chrome ram usage, covering setup, real features, and what to expect before installing it.'
 status: published
 published_at: '2026-03-03T15:19:04.574+00:00'
 scheduled_at: null

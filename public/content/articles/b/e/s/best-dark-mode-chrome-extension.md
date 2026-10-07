@@ -1,11 +1,9 @@
 ---
 seo_title: "Best Dark Mode Chrome Extensions in 2026"
 id: f52f5aee-64ed-4319-b6c9-694b98575566
-title: 'Best Dark Mode Chrome Extensions in 2026: Tested for Eye Comfort'
+title: 'Best Dark Mode Chrome Extensions in 2026: Eye Comfort'
 slug: best-dark-mode-chrome-extension
-excerpt: >-
-  I tested DarkFlow, Dark Reader, and Midnight Lizard for a week. Here is which
-  dark mode Chrome extension is easiest on your eyes and your battery.
+excerpt: 'DarkFlow, Dark Reader, and Midnight Lizard compared: which dark mode Chrome extension is easiest on your eyes and your battery.'
 featured_image: /content/images/best-dark-mode-chrome-extension/featured.webp
 category: Productivity & Tools
 tags: []
@@ -13,7 +11,7 @@ keywords:
   - dark mode chrome extension
   - black mode chrome
   - chrome dark theme extension
-meta_description: "After testing DarkFlow, Dark Reader, and Midnight Lizard for a week on an OLED laptop, here's which dark mode extension is easiest on your eyes and battery."
+meta_description: 'DarkFlow, Dark Reader, and Midnight Lizard compared for eye comfort and battery impact: which dark mode extension is easiest on your eyes.'
 status: published
 published_at: '2026-05-24T10:15:00.376+00:00'
 scheduled_at: '2026-05-24T10:15:00+00:00'
