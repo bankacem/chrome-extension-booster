@@ -184,6 +184,7 @@ function buildSchema(article: IndexArticle, title: string, description: string, 
       const profile = getEditorialProfile(article.author);
       return { "@type": profile.type, name: profile.name, url: `${SITE_URL}${profile.url}` };
     })(),
+    reviewedBy: { "@type": "Organization", name: "ExtensionTo Editorial Team", url: `${SITE_URL}/editorial-policy` },
     datePublished: article.published_at,
     dateModified: article.updated_at || article.published_at,
     publisher: {
@@ -327,7 +328,7 @@ async function main() {
     const dateLabel = publishedTime ? new Date(publishedTime).toISOString().slice(0, 10) : "";
     const updatedLabel = modifiedTime && modifiedTime !== publishedTime ? new Date(modifiedTime).toISOString().slice(0, 10) : "";
     const authorImage = absoluteImage(editorialProfile.image);
-    const articleHtml = `<article><header><h1>${escapeHtml(fullTitle)}</h1>${content.includes("/extension/") ? `<p>ExtensionTo publishes some of the extensions mentioned in this article.</p>` : ""}<p><img src="${escapeHtml(authorImage)}" alt="${escapeHtml(editorialProfile.name)} author portrait" width="48" height="48" /> Written by <a href="${escapeHtml(editorialProfile.url)}">${escapeHtml(editorialProfile.name)}</a> · ${escapeHtml(editorialProfile.role)}${dateLabel ? ` · Published ${escapeHtml(dateLabel)}` : ""}${updatedLabel ? ` · Updated ${escapeHtml(updatedLabel)}` : ""}</p><p>Compiled from public information and product documentation — see our <a href="/editorial-policy">editorial standards</a>.</p></header>${bodyHtml}</article>`;
+    const articleHtml = `<article><header><h1>${escapeHtml(fullTitle)}</h1><p><img src="${escapeHtml(authorImage)}" alt="${escapeHtml(editorialProfile.name)} author portrait" width="48" height="48" /> Written by <a href="${escapeHtml(editorialProfile.url)}">${escapeHtml(editorialProfile.name)}</a> · ${escapeHtml(editorialProfile.role)}${dateLabel ? ` · Published ${escapeHtml(dateLabel)}` : ""}${updatedLabel ? ` · Updated ${escapeHtml(updatedLabel)}` : ""}</p><p>Reviewed using the <a href="/editorial-policy">ExtensionTo editorial methodology</a>.</p></header>${bodyHtml}</article>`;
 
     let html = template
       .replace(/<title[\s\S]*?<\/title>/i, "")

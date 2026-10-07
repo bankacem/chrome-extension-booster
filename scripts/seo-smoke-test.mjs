@@ -63,8 +63,8 @@ for (const article of articleSample) {
   seoAssertions(html, url, expectedCanonical);
   assert(/<article\b/i.test(html), `${url} has no article element`);
   assert(/Written by/.test(html), `${url} has no visible author attribution`);
-  assert(/editorial-policy/.test(html), `${url} has no editorial standards link`);
-  assert(/"author"/.test(html), `${url} has no author schema signal`);
+  assert(/editorial-policy/.test(html), `${url} has no editorial methodology link`);
+  assert(/reviewedBy/.test(html), `${url} has no reviewedBy schema signal`);
 }
 
 const extensionSource = read("src/lib/extensionsData.ts");

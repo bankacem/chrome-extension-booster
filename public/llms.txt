@@ -2,7 +2,7 @@
 
 > Discover powerful Chrome extensions for productivity, security, and performance.
 
-ExtensionTo is a curated directory and blog dedicated to enhancing the browser experience. We provide research-based guides and comparisons compiled from public information and product documentation, and direct access to the extensions we publish. Unless a page says otherwise, ExtensionTo has not run independent lab tests.
+ExtensionTo is a curated directory and blog dedicated to enhancing the browser experience. We provide expert guides, performance benchmarks, and direct access to verified productivity tools.
 
 ## Key Information
 - **Domain**: https://extensionto.com
