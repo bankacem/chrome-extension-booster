@@ -1425,6 +1425,115 @@ class TestBodyNeutralizationTableReplacement(unittest.TestCase):
         self.assertEqual(r["violations"], [])
 
 
+class TestBodyNeutralizationNewTables(unittest.TestCase):
+    """Owner brief 2026-10-08 item 2: declared BRAND-NEW disclosure tables.
+    Exact-declaration license: well-formed, byte-identical in the result,
+    no links, every first-column product name already present in the
+    original body; undeclared new tables stay forbidden. Also covers the
+    two scanner corrections the license required: a bare URL used as
+    markdown ANCHOR text must not swallow the "](target)" that follows it,
+    and a whitelisted insert inside a MIXED insert chunk skips the
+    proper-noun scan."""
+
+    BEFORE = (
+        "Intro paragraph stays put.\n"
+        "\n"
+        "| Product | Memory | Speed |\n"
+        "|---|---|---|\n"
+        "| AlphaTool | 1 GB | fast |\n"
+        "\n"
+        "Closing paragraph stays put.\n"
+        "\n"
+        "## Final Verdict\n"
+        "\n"
+        "The end.")
+    NEW_TABLE = [
+        "| Product / entity | Official link | ExtensionTo product |",
+        "|---|---|---|",
+        "| AlphaTool | No | No |",
+    ]
+
+    def _after(self, table_rows, intro=None):
+        rows = "\n".join([self.NEW_TABLE[0], self.NEW_TABLE[1]] + table_rows)
+        mid = "Closing paragraph stays put."
+        if intro:
+            mid += "\n\n" + intro
+        return (self.BEFORE
+                .replace("Closing paragraph stays put.", mid)
+                .replace("## Final Verdict", rows + "\n\n## Final Verdict"))
+
+    def test_declared_new_table_passes(self):
+        after = self._after(["| AlphaTool | No | No |"],
+                            intro="The table below lists the compared products.")
+        r = body_neutralization_gate(
+            self.BEFORE, after, marked=[2],
+            allowed_new_paragraph_texts=["The table below lists the compared products."],
+            allowed_new_tables=[{"lines": self.NEW_TABLE}])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_undeclared_new_table_fails(self):
+        after = self._after(["| AlphaTool | No | No |"],
+                            intro="The table below lists the compared products.")
+        r = body_neutralization_gate(
+            self.BEFORE, after, marked=[2],
+            allowed_new_paragraph_texts=["The table below lists the compared products."])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "table_row_changed"
+                            for v in r["violations"]))
+
+    def test_new_name_in_declared_table_fails(self):
+        after = self._after(["| BetaTool | No | No |"])
+        r = body_neutralization_gate(
+            self.BEFORE, after, marked=[],
+            allowed_new_tables=[{"lines": [
+                self.NEW_TABLE[0], self.NEW_TABLE[1], "| BetaTool | No | No |"]}])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "new_table_name_not_in_before"
+                            for v in r["violations"]))
+
+    def test_link_in_declared_table_fails(self):
+        after = self._after(["| [AlphaTool](https://chromewebstore.google.com) | No | No |"])
+        r = body_neutralization_gate(
+            self.BEFORE, after, marked=[],
+            allowed_new_tables=[{"lines": [
+                self.NEW_TABLE[0], self.NEW_TABLE[1],
+                "| [AlphaTool](https://chromewebstore.google.com) | No | No |"]}])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "new_table_invalid"
+                            for v in r["violations"]))
+
+    def test_missing_declared_table_fails(self):
+        r = body_neutralization_gate(
+            self.BEFORE, self.BEFORE, marked=[],
+            allowed_new_tables=[{"lines": self.NEW_TABLE}])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "new_table_missing"
+                            for v in r["violations"]))
+
+    def test_url_anchor_swap_is_not_a_new_link(self):
+        # "[https://x.com](/)" -> "[x.com](/)": the URL was ANCHOR TEXT; the
+        # target "/" already existed. The bare-URL alternative of the link
+        # regex must not swallow the following "](/)".
+        before = "See [https://x.com](/) for details.\n\nEnd."
+        after = "See [x.com](/) for details.\n\nEnd."
+        r = body_neutralization_gate(before, after, marked=[0])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_whitelisted_block_in_mixed_insert_skips_proper_nouns(self):
+        # intro (whitelisted, contains a brand name) + declared table are
+        # inserted adjacently — one MIXED insert chunk; the intro must be
+        # skipped by the proper-noun scan, the table by its declaration
+        after = self._after(
+            ["| AlphaTool | No | No |"],
+            intro="The disclosure: ExtensionTo's own catalog lists these products.")
+        r = body_neutralization_gate(
+            self.BEFORE, after, marked=[],
+            allowed_new_paragraph_texts=[
+                "The disclosure: ExtensionTo's own catalog lists these products."],
+            allowed_new_tables=[{"lines": self.NEW_TABLE}])
+        self.assertTrue(r["pass"], r["violations"])
+
+
 class TestUnattributedInOutput(unittest.TestCase):
     """body_neutralization_gate check 8: the result must not introduce new
     unattributed hits (subset semantics, same as S1/S2/S3)."""

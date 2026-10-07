@@ -82,7 +82,7 @@ For more information on Chrome's Memory Saver, Google's official support page pr
 
 ## Third-Party Memory Savers: How They Work {#third-party-memory-savers}
 
-While Chrome's built-in Memory Saver is impressive, third-[party tab suspender extensions offer](/blog/protab-suspender-vs-google-memory-saver-2026-which-saves-more-ram) additional functionality that power users might find valuable. These extensions work by essentially "freezing" inactive tabs rather than just discarding them, which allows them to be restored more quickly when you switch back to them. This approach can save significant RAM while maintaining better performance than Chrome's native solution in certain scenarios.
+While Chrome's built-in Memory Saver is impressive, third-[party tab suspender extensions offer](/blog/protab-suspender-vs-google-memory-saver-2026-which-saves-more-ram) additional functionality that advanced users might find valuable. These extensions work by essentially "freezing" inactive tabs rather than just discarding them, which allows them to be restored more quickly when you switch back to them. This approach can save significant RAM while maintaining better performance than Chrome's native solution in certain scenarios.
 
 Most tab suspender extensions operate on a similar principle: they monitor which tabs are active and which have been inactive for a specified period. When a tab becomes inactive, the extension unloads its content but keeps the tab's basic framework intact. When you click on the suspended tab, the extension reloads the content, ideally bringing you back to where you left off.
 
@@ -264,6 +264,17 @@ Most websites work fine with memory savers, but some complex web applications ma
 ### Are there any downsides to using memory saver extensions?
 
 The main downsides are potential delays when switching to suspended tabs and occasional compatibility issues with certain websites. Some extensions may also have a slight performance impact when managing many tabs. Additionally, third-party extensions require additional permissions beyond Chrome's built-in solution, which may be a privacy concern for some users.
+
+
+Products compared in this guide: an "official link" is a link to the product's official website or store listing; an "ExtensionTo product" appears in ExtensionTo's own extension catalog on this site.
+
+| Product / entity | Official link in this article | ExtensionTo product |
+|---|---|---|
+| Chrome's built-in Memory Saver | Yes | No |
+| ProTab Suspender | No | Yes |
+| The Great Suspender (TGS Reloaded) | No | No |
+| Auto Tab Discard | No | No |
+| Tab Snooze | No | No |
 
 ## Final Verdict: Which Memory Saver Is Right for You? {#final-verdict}
 

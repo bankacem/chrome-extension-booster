@@ -129,7 +129,7 @@ Quetta Browser is the newest entrant in the Android extension space, and it has 
 
 **Where Quetta differs from Kiwi is in maintenance rhythm and defaults.** Quetta has been shipping Chromium security updates quickly after the equivalent desktop releases, while Kiwi's patches have tended to arrive later. If Quetta sustains that pace, it solves the main objection to Kiwi. Quetta also ships with a few sensible privacy defaults out of the box — third-party cookies are blocked by default, and the browser prompts before sites request notification permission, which cuts off an entire category of notification-spam advertising before an extension even loads.
 
-**Two caveats keep Quetta out of the top spot.** First, it is young: its user base is orders of magnitude smaller than Kiwi's 10M+ installs, which means fewer people testing edge cases and surfacing bugs. A smaller user base also means that if the project is abandoned, fewer forks will appear to replace it. Second, Quetta's extension panel is less complete — during testing, a handful of Web Store extensions that installed fine on Kiwi either failed to install or crashed on startup under Quetta. uBlock Origin itself worked flawlessly, so this does not affect the core ad-blocking use case, but it matters if you plan to install the full companion stack we recommend later in this guide.
+**Two caveats keep Quetta out of the top spot.** First, it is young: its user base is orders of magnitude smaller than Kiwi's 10M+ installs, which means fewer people testing edge cases and surfacing bugs. A smaller user base also means that if the project is abandoned, fewer forks will appear to replace it. Second, Quetta's extension panel is less complete — a handful of Web Store extensions that install fine on Kiwi may fail to install or crash on startup under Quetta. uBlock Origin itself worked flawlessly, so this does not affect the core ad-blocking use case, but it matters if you plan to install the full companion stack we recommend later in this guide.
 
 **When to choose Quetta over Kiwi:** if patch speed is your priority and your needs end at uBlock Origin plus one or two utilities, Quetta is arguably the better daily driver. For a deeper side-by-side of every Android browser that can run blockers — including options we do not recommend and why — see our [which Android browser handles extensions best](/blog/which-android-browser-handles-extensions-best) breakdown.
 ## Samsung Internet: The Middle-Ground Route {#samsung}
@@ -285,15 +285,15 @@ The same eight problems keep coming up. Here is the fix for each.
 
 ## Security Patches: Which Method Updates Fastest? {#security}
 
-Ad blocking changes *what* a browser loads, but the browser itself is still your attack surface — and on Android, the browsers in this guide update on very different schedules. Over the four weeks I tracked patch releases for each method, the pattern was consistent enough to report as more than anecdote.
+Ad blocking changes *what* a browser loads, but the browser itself is still your attack surface — and on Android, the browsers in this guide update on very different schedules, and those differences are worth weighing before you pick a daily driver.
 
-**Firefox for Android** tracked Mozilla's desktop security releases fastest, typically shipping the mobile build within 3–5 days of a critical desktop patch. **Quetta** was close behind at roughly 4–7 days. **Kiwi** took the longest at one to two weeks, a consequence of maintaining a heavily modified Chromium fork with a small team. **Samsung Internet** follows the Galaxy security cadence — quarterly for the browser binary, though its content-blocker API layer is patched with the monthly Android security bulletin. **Standard Chrome's DNS approach** needs no patching at all: you are still running Google's Chrome, patched on Google's schedule, with one setting changed.
+**Firefox for Android** has historically tracked Mozilla's desktop security releases fastest, typically shipping the mobile build within days of a critical desktop patch. **Quetta** has usually been close behind. **Kiwi** tends to take longer — often a week or two — a consequence of maintaining a heavily modified Chromium fork with a small team. **Samsung Internet** follows the Galaxy security cadence — quarterly for the browser binary, though its content-blocker API layer is patched with the monthly Android security bulletin. **Standard Chrome's DNS approach** needs no patching at all: you are still running Google's Chrome, patched on Google's schedule, with one setting changed.
 
 What does this mean in practice? If you handle sensitive accounts on your phone — banking, work email — Firefox's patch speed is a genuine argument for it as the daily driver, and its ad-blocking capability is unchanged. If you use Kiwi, the mitigation is simple: keep the phone itself updated (the OS security bulletin covers most WebView-adjacent CVEs), avoid entering credentials on unfamiliar sites while using Kiwi, and let DNS blocking cover the rest of your apps. The browser that blocks the most ads is not automatically the browser that protects you the most — balance the two against how you actually use the phone.
 
 ## What Competitors Miss {#gap}
 
-The guides I checked — <a href="https://www.makeuseof.com/found-android-browser-that-runs-chrome-extensions-why-its-not-popular/" target="_blank" rel="noopener noreferrer">MakeUseOf on Kiwi Browser</a>, <a href="https://getjar.com/article/how-to-block-ads-on-android-2026-guide" target="_blank" rel="noopener noreferrer">GetJar's Android ad blocking guide</a>, and <a href="https://chrunos.com/chrome-extensions-android/" target="_blank" rel="noopener noreferrer">Chrunos on Chrome extensions for Android</a> — all share the same gaps:
+The three guides referenced earlier — <a href="https://www.makeuseof.com/found-android-browser-that-runs-chrome-extensions-why-its-not-popular/" target="_blank" rel="noopener noreferrer">MakeUseOf on Kiwi Browser</a>, <a href="https://getjar.com/article/how-to-block-ads-on-android-2026-guide" target="_blank" rel="noopener noreferrer">GetJar's Android ad blocking guide</a>, and <a href="https://chrunos.com/chrome-extensions-android/" target="_blank" rel="noopener noreferrer">Chrunos on Chrome extensions for Android</a> — all share the same gaps:
 
 **They recommend only one method.** MakeUseOf focuses entirely on Kiwi. GetJar pushes Wave Browser. Chrunos covers Kiwi but does not compare it to Firefox or DNS. None give you a side-by-side comparison to choose based on your actual needs.
 
@@ -325,7 +325,7 @@ Yes — DNS filtering works below the app layer and blocks known ad and tracker 
 Across the configurations compared in this guide, blocking does not increase battery drain on its own, because blocked ads never download, render, or play video. The RAM cost of running several extensions at once is the more real constraint.
 
 **4. Which is better on Android: uBlock Origin or AdGuard?**
-They solve slightly different problems. uBlock Origin inside Kiwi/Firefox is stronger *in-browser* — cosmetic filtering, per-site rules, first-party ad blocking. AdGuard's strength is as a system-wide local DNS filter covering every app, or as the content blocker inside Samsung Internet. The combined setup — uBlock in your browser, AdGuard DNS system-wide — is what we recommend and what the measurements in this guide reflect.
+They solve slightly different problems. uBlock Origin inside Kiwi/Firefox is stronger *in-browser* — cosmetic filtering, per-site rules, first-party ad blocking. AdGuard's strength is as a system-wide local DNS filter covering every app, or as the content blocker inside Samsung Internet. The combined setup — uBlock in your browser, AdGuard DNS system-wide — covers both layers at once.
 
 **5. Will an ad blocker break websites on my phone?**
 Rarely, and reversibly. In two weeks of testing, three of the 25 test pages needed a per-site uBlock toggle (forms and video players are the usual victims of aggressive cosmetic filters). The fix takes two clicks and persists per-domain, so a site fixed once stays fixed.
@@ -334,7 +334,7 @@ Rarely, and reversibly. In two weeks of testing, three of the 25 test pages need
 Not with browser extensions — they do not run inside other apps. Options for the app are Premium, third-party modified clients with their own risks, or front-ends; the trade-offs are laid out in our YouTube app ad-blocking guide linked in the section above. Inside the *browser*, uBlock catches 60–80% of YouTube ads.
 
 **7. Is Quetta Browser safe? Is it better than Kiwi?**
-Quetta is a young open-source Chromium fork with no known red flags and faster patch turnaround than Kiwi in my tracking window. "Better" depends on what you need: Quetta for patch speed and clean defaults, Kiwi for the larger user base and the more complete extension shim. Both run uBlock Origin well.
+Quetta is a young open-source Chromium fork with no known red flags and faster patch turnaround than Kiwi. "Better" depends on what you need: Quetta for patch speed and clean defaults, Kiwi for the larger user base and the more complete extension shim. Both run uBlock Origin well.
 
 **8. Why does DNS blocking not stop Google search ads?**
 Because Google serves search ads from Google's own domains — the same domains that deliver the search results. DNS can only refuse whole domains, so blocking it would break search itself. Page-level tools like uBlock identify the ad *elements* within the page and remove them; that is why the two methods complement rather than replace each other.
@@ -344,6 +344,32 @@ No. Every method in this guide — Kiwi, Quetta, Firefox, Private DNS, Samsung I
 
 **10. What happens if Kiwi or Quetta is abandoned?**
 Plan for it. Both are volunteer-scale projects maintaining enormous codebases. The risk mitigation is architectural: keep DNS blocking configured system-wide (it survives any browser switch), and know that Firefox + uBlock is your permanent fallback — Mozilla is a foundation, not a fork, and its extension support is a product commitment. If a fork dies, you lose the extensions, not the ad blocking.
+
+
+Products compared in this guide: an "official link" is a link to the product's official website or store listing; an "ExtensionTo product" appears in ExtensionTo's own extension catalog on this site.
+
+| Product / entity | Official link in this article | ExtensionTo product |
+|---|---|---|
+| Kiwi Browser | Yes | No |
+| Firefox for Android | Yes | No |
+| Yandex Browser | No | No |
+| Samsung Internet | No | No |
+| Quetta | No | No |
+| DNS-level blocking | No | No |
+| uBlock Origin | Yes | No |
+| Light Popup Blocker | Yes | Yes |
+| NightShield Pro | Yes | No |
+| DarkFlow | Yes | No |
+| Quick Screenshot Lite | Yes | Yes |
+| Offline Reader Pro | Yes | Yes |
+| Redirect Blocker | Yes | Yes |
+| ProTab Suspender | Yes | Yes |
+| SecuraKey Pro | Yes | Yes |
+| MakeUseOf | Yes | No |
+| GetJar | Yes | No |
+| Chrunos | Yes | No |
+
+Note: names appear exactly as written in this article. Two linked Chrome Web Store listings — DarkFlow and Redirect Blocker — correspond to products ExtensionTo lists under different names in its catalog (Auto Dark Mode Switcher and Redirect Shield, respectively).
 
 ## Which Method Should You Use? {#verdict}
 

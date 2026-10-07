@@ -31,7 +31,7 @@ from typing import Collection, Dict, List, Sequence, Tuple
 _NUM_RE = re.compile(r"\d[\d,]*(?:\.\d+)*")
 _PCT_RE = re.compile(r"\d[\d,]*(?:\.\d+)*\s?%")
 _WORD_RE = re.compile(r"[A-Za-z0-9']+")
-_LINK_RE = re.compile(r"\]\(([^)\s]+)\)|https?://[^\s)>\"']+|<img[^>]+src=[\"']([^\"']+)")
+_LINK_RE = re.compile(r"\]\(([^)\s]+)\)|https?://[^\s)>\"'\]]+|<img[^>]+src=[\"']([^\"']+)")
 _IMG_RE = re.compile(r"!\[[^\]]*\]\([^)]*\)|<img[^>]*>", re.I)
 _HEADING_RE = re.compile(r"^#{1,6}\s")
 _FAQ_SECTION_RE = re.compile(r"faq|frequently\s+asked", re.I)
@@ -330,6 +330,75 @@ def _verify_table_replacement(
         })
 
 
+def _verify_new_table_declarations(
+    before_body: str,
+    after_blocks: Collection[str],
+    specs: Collection[Dict],
+    violations: List[Dict[str, str]],
+) -> List[List[str]]:
+    """Verify declared NEW tables (owner brief 2026-10-08, item 2).
+
+    Each spec = {"lines": [exact table lines]}. The declaration must hold
+    under ALL of:
+      * lines >= 3, every line starts with "|", line 2 is a separator row;
+      * the whole block appears byte-identically in the result;
+      * NO links inside the table (the article's existing links stay where
+        they are — a disclosure table adds none);
+      * every first-column product name (emphasis-stripped) already appears
+        in the original body — names are inventoried, never invented.
+    Returns the verified line-lists (for the table-structure accounting).
+    """
+    verified: List[List[str]] = []
+    seen: set = set()
+    after_block_set = {b.strip() for b in after_blocks}
+    low_before = re.sub(r"[*_`\[\]]", "", before_body).lower()
+    for k, spec in enumerate(specs):
+        lines = [l for l in spec.get("lines", [])]
+        where = f"new_table[{k}]"
+        if len(lines) < 3 or any(not l.lstrip().startswith("|") for l in lines) \
+                or not re.match(r"^\s*\|[-| :]+\|\s*$", lines[1]):
+            violations.append({
+                "check": "new_table_invalid",
+                "detail": f"{where}: not a well-formed markdown table",
+            })
+            continue
+        key = "\n".join(lines)
+        if key in seen:
+            violations.append({
+                "check": "new_table_invalid",
+                "detail": f"{where}: duplicate declaration",
+            })
+            continue
+        seen.add(key)
+        if key not in after_block_set:
+            violations.append({
+                "check": "new_table_missing",
+                "detail": f"{where}: declared table is not present "
+                          f"byte-identically in the result",
+            })
+            continue
+        if any(re.search(r"\]\([^)]*\)|https?://", l) for l in lines):
+            violations.append({
+                "check": "new_table_invalid",
+                "detail": f"{where}: declared table contains a link",
+            })
+            continue
+        bad_names = []
+        for row in lines[2:]:
+            name = re.sub(r"[*_`\[\]]", "", _split_row(row)[0]).strip().lower()
+            if name and name not in low_before:
+                bad_names.append(name)
+        if bad_names:
+            violations.append({
+                "check": "new_table_name_not_in_before",
+                "detail": f"{where}: name(s) not present in the original "
+                          f"body: {bad_names[:4]}",
+            })
+            continue
+        verified.append(lines)
+    return verified
+
+
 def _compare_tables(
     before_body: str,
     after_body: str,
@@ -337,6 +406,7 @@ def _compare_tables(
     allow_marked_table_edits: bool,
     allow_cells: set,
     replacement_blocks: frozenset = frozenset(),
+    new_table_keys: frozenset = frozenset(),
 ) -> List[Dict[str, str]]:
     """Structural table check with optional narrow licenses.
 
@@ -409,10 +479,16 @@ def _compare_tables(
                       f"replacement; first change: {diff[0][:60]!r}",
         })
     leftover = [j for pool in ta_by_rows.values() for j in pool]
-    if leftover:
+    # declared NEW tables (verified separately) may exist in the result
+    remaining_leftover = []
+    for j in leftover:
+        if tuple(ta[j][1]) in new_table_keys:
+            continue
+        remaining_leftover.append(j)
+    if remaining_leftover:
         violations.append({
             "check": "table_row_changed",
-            "detail": f"{len(leftover)} table(s) in the result do not exist in "
+            "detail": f"{len(remaining_leftover)} table(s) in the result do not exist in "
                       f"the original (new/edited tables are forbidden)",
         })
     return violations
@@ -432,6 +508,7 @@ def body_neutralization_gate(
     allow_marked_table_edits: bool = False,
     allowed_table_cell_values: Collection[str] = ("Not independently tested",),
     allowed_table_replacements: Collection[Dict] = (),
+    allowed_new_tables: Collection[Dict] = (),
     word_drop_limit_pct: float = 45.0,
 ) -> Dict:
     """Compare a neutralized body against its original.
@@ -473,6 +550,15 @@ def body_neutralization_gate(
     The gate re-verifies every declaration (name ∈ table labels, sentence
     ∈ original body, full product coverage) and that the result contains
     the declared list block byte-identically and nothing else in its place.
+
+    allowed_new_tables (owner brief 2026-10-08 item 2): exact declarations
+    for BRAND-NEW tables — [{"lines": [table lines]}]. Every declaration
+    is re-verified (well-formed, byte-identical in the result, no links,
+    every first-column product name already present in the original body
+    — names are inventoried, never invented). Undeclared new tables stay
+    forbidden. Verified tables are also exempt from the paragraph-level
+    proper-noun scan (their names are checked against the WHOLE original,
+    which is stricter).
     """
     violations: List[Dict[str, str]] = []
     ab, abx = _blocks(before_body), _blocks(after_body)
@@ -530,6 +616,13 @@ def body_neutralization_gate(
                           f"present byte-identically in the result",
             })
     declared_after_blocks = set("\n".join(bullets) for _, bullets in repl_specs)
+    # declared BRAND-NEW tables (owner brief 2026-10-08 item 2) — verified
+    # up front; verified tables join the declared-block set (proper-noun
+    # skip) and their row-keys are licensed in the structural table check.
+    verified_new_tables = _verify_new_table_declarations(
+        before_body, abx, (allowed_new_tables or ()), violations)
+    new_table_keys = frozenset(tuple(rows) for rows in verified_new_tables)
+    declared_after_blocks |= {"\n".join(rows) for rows in verified_new_tables}
     sm = SequenceMatcher(a=ab, b=abx, autojunk=False)
     ops = sm.get_opcodes()
 
@@ -629,6 +722,8 @@ def body_neutralization_gate(
             for a in a_chunk:
                 if a.strip() in declared_after_blocks:
                     continue  # declared list: every word verified verbatim
+                if a.strip() in allow_para_texts:
+                    continue  # whitelisted insert (e.g. fixed disclaimer line)
                 extra = set(_proper_nouns(a)) - before_pn - set(allow_pn)
                 if extra:
                     violations.append({
@@ -681,7 +776,7 @@ def body_neutralization_gate(
     ra = [l for l in after_body.splitlines() if l.lstrip().startswith("|")]
     table_violations = _compare_tables(
         before_body, after_body, marked_set, allow_marked_table_edits,
-        allow_cells, frozenset(repl_blocks))
+        allow_cells, frozenset(repl_blocks), new_table_keys)
     violations.extend(table_violations)
 
     if _faq_questions(before_body) != _faq_questions(after_body):
