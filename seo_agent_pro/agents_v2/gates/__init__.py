@@ -10,6 +10,7 @@ from .fabrication import (  # noqa: F401
     S1_PATTERNS,
     S1_PROPOSED_PATTERNS,
     S1_V3_PATTERNS,
+    S1_V3_1_PATTERNS,
     S2_PATTERNS,
     PRODUCTS,
     FM_FIELDS,
