@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
-  ArrowLeft, ExternalLink, Star, Users, Check, 
+  ArrowLeft, ExternalLink, Users, Check,
   Download, Shield, Zap, Clock, ArrowRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -127,18 +127,6 @@ const ExtensionPage = () => {
                   {extension.longDescription}
                 </p>
 
-                <div className="flex items-center gap-6 mb-8">
-                  <div className="flex items-center gap-2">
-                    <Users className="h-5 w-5 text-muted-foreground" />
-                    <span className="font-semibold">{extension.users}</span>
-                    <span className="text-muted-foreground">{t("extensions_section.users")}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                    <span className="font-semibold">{extension.rating}</span>
-                    <span className="text-muted-foreground">{t("extension_page.rating")}</span>
-                  </div>
-                </div>
 
                 <div className="flex flex-wrap gap-4">
                   <Button 

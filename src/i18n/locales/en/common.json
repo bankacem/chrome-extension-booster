@@ -8,30 +8,26 @@
     "toggle_menu": "Toggle menu"
   },
   "hero": {
-    "badge": "Trusted by 50,000+ users worldwide",
+    "badge": "9 free Chrome extensions · 880+ published guides",
     "title_start": "Supercharge Your",
     "title_highlight": "Chrome Browser",
     "title_end": "Experience",
     "description": "Discover powerful Chrome extensions built to boost your productivity, enhance security, and transform how you browse the web.",
     "browse_extensions": "Browse Extensions",
     "learn_more": "Learn More",
-    "active_users": "Active Users",
     "extensions": "Extensions",
-    "average_rating": "Avg Rating",
-    "satisfaction": "Satisfaction"
+    "guides": "Published Guides",
+    "free_core": "Free Core Features"
   },
-  "partners": { "trusted": "Trusted by teams at leading companies" },
   "stats": {
-    "downloads": "Total Downloads",
-    "active_users": "Active Users",
-    "average_rating": "Average Rating",
-    "support": "Support Available"
+    "extensions": "Chrome Extensions",
+    "guides": "Published Guides",
+    "free": "Free Core Features"
   },
   "extensions_section": {
     "eyebrow": "Our Extensions",
     "title": "Powerful Tools for Every Need",
     "description": "Each extension is carefully crafted with performance and user experience in mind. Install multiple to create your perfect browsing setup.",
-    "users": "users",
     "details": "Details",
     "add_to_chrome": "Add to Chrome"
   },
@@ -39,7 +35,6 @@
     "not_found": "Extension Not Found",
     "not_found_description": "The extension you're looking for doesn't exist.",
     "back_to_extensions": "Back to Extensions",
-    "rating": "rating",
     "add_free": "Add to Chrome - Free",
     "web_store": "View in Web Store",
     "key_features": "Key Features",
@@ -68,12 +63,30 @@
     "under_1mb": "Under 1MB each",
     "support": "24/7 support",
     "items": {
-      "lightweight_fast": { "title": "Lightweight & Fast", "description": "All extensions are optimized for minimal memory usage and maximum performance." },
-      "privacy_first": { "title": "Privacy First", "description": "Zero data tracking. Your browsing data stays on your device, always." },
-      "regular_updates": { "title": "Regular Updates", "description": "Frequent updates with new features based on community feedback." },
-      "community_driven": { "title": "Community Driven", "description": "Built with input from thousands of users to solve real problems." },
-      "open_source": { "title": "Open Source", "description": "Transparent development with code available for review and contribution." },
-      "free_forever": { "title": "Free Forever", "description": "Core features are free. Premium features at affordable prices." }
+      "lightweight_fast": {
+        "title": "Lightweight & Fast",
+        "description": "All extensions are optimized for minimal memory usage and maximum performance."
+      },
+      "privacy_first": {
+        "title": "Privacy First",
+        "description": "Zero data tracking. Your browsing data stays on your device, always."
+      },
+      "regular_updates": {
+        "title": "Regular Updates",
+        "description": "Frequent updates with new features based on community feedback."
+      },
+      "community_driven": {
+        "title": "Community Driven",
+        "description": "Built to solve real problems Chrome users run into every day."
+      },
+      "open_source": {
+        "title": "Open Source",
+        "description": "Transparent development with code available for review and contribution."
+      },
+      "free_forever": {
+        "title": "Free Forever",
+        "description": "Core features are free. Premium features at affordable prices."
+      }
     }
   },
   "comparison": {
@@ -94,28 +107,35 @@
       "support": "Dedicated support"
     }
   },
-  "testimonials": {
-    "eyebrow": "Testimonials",
-    "title": "Loved by Thousands",
-    "description": "See how people use ExtensionTo to make their everyday browsing better.",
-    "items": {
-      "one": { "quote": "Productivity Booster has completely transformed how I manage my tabs. I went from 50+ chaotic tabs to organized workspaces. Game changer!", "role": "Product Designer" },
-      "two": { "quote": "DevTools Enhancer is now essential to my workflow. The real-time linting and performance insights have saved me countless debugging hours.", "role": "Software Developer" },
-      "three": { "quote": "Focus Mode Pro helped me overcome my chronic procrastination. The timed sessions and distraction blocking keep me on track every day.", "role": "Freelance Writer" },
-      "four": { "quote": "Privacy Guard gives me peace of mind. No more creepy ads following me around the internet. It's lightweight and just works.", "role": "Marketing Manager" }
-    }
-  },
   "faq": {
     "eyebrow": "Frequently Asked",
     "title_highlight": "Questions",
     "description": "Got questions? We've got answers. Find quick solutions to common queries below.",
     "items": {
-      "install": { "question": "How do I install Chrome extensions?", "answer": "Simply click the 'Add to Chrome' button on any extension page. Chrome will prompt you to confirm the installation. Once confirmed, the extension will be added to your browser automatically." },
-      "free": { "question": "Are these extensions free to use?", "answer": "Yes! All our extensions offer free versions with core features. Some extensions also have premium tiers with advanced functionality for power users." },
-      "manage": { "question": "How do I manage or remove extensions?", "answer": "Click the puzzle piece icon in Chrome's toolbar to see all installed extensions. You can pin, disable, or remove any extension from there. Alternatively, visit chrome://extensions in your browser." },
-      "safe": { "question": "Is my data safe with these extensions?", "answer": "Absolutely. Privacy is our top priority. Our extensions only request necessary permissions and never collect or sell your personal data. All data processing happens locally on your device." },
-      "speed": { "question": "Do extensions slow down my browser?", "answer": "Our extensions are optimized for minimal resource usage. They're designed to enhance your browsing experience without impacting performance. You can always disable extensions when not needed." },
-      "support": { "question": "How do I get support for an extension?", "answer": "You can reach our support team through the contact form on this website, or leave a review on the Chrome Web Store. We typically respond within 24 hours." }
+      "install": {
+        "question": "How do I install Chrome extensions?",
+        "answer": "Simply click the 'Add to Chrome' button on any extension page. Chrome will prompt you to confirm the installation. Once confirmed, the extension will be added to your browser automatically."
+      },
+      "free": {
+        "question": "Are these extensions free to use?",
+        "answer": "Yes! All our extensions offer free versions with core features. Some extensions also have premium tiers with advanced functionality for power users."
+      },
+      "manage": {
+        "question": "How do I manage or remove extensions?",
+        "answer": "Click the puzzle piece icon in Chrome's toolbar to see all installed extensions. You can pin, disable, or remove any extension from there. Alternatively, visit chrome://extensions in your browser."
+      },
+      "safe": {
+        "question": "Is my data safe with these extensions?",
+        "answer": "Absolutely. Privacy is our top priority. Our extensions only request necessary permissions and never collect or sell your personal data. All data processing happens locally on your device."
+      },
+      "speed": {
+        "question": "Do extensions slow down my browser?",
+        "answer": "Our extensions are optimized for minimal resource usage. They're designed to enhance your browsing experience without impacting performance. You can always disable extensions when not needed."
+      },
+      "support": {
+        "question": "How do I get support for an extension?",
+        "answer": "You can reach our support team through the contact form on this website, or leave a review on the Chrome Web Store. We typically respond within 24 hours."
+      }
     }
   },
   "blog_section": {
@@ -150,7 +170,7 @@
     "badge": "Ready to transform your browsing?",
     "title_start": "Get Started in",
     "title_highlight": "Seconds",
-    "description": "Join 50,000+ users who have already upgraded their Chrome experience. Install any extension with one click.",
+    "description": "Browse 9 free Chrome extensions and hundreds of practical Chrome guides. Install any extension with one click.",
     "browse_all": "Browse All Extensions",
     "stay_updated": "Stay Updated",
     "newsletter_description": "Subscribe to our newsletter for new extensions, updates, and productivity tips.",
@@ -183,7 +203,7 @@
   },
   "seo": {
     "site_name": "ExtensionTo",
-    "default_description": "Discover powerful Chrome extensions made to increase productivity, improve security, and transform your browsing. Trusted by more than 50,000 users."
+    "default_description": "Discover 9 free Chrome extensions and hundreds of practical guides for productivity, security, and a faster way to browse."
   },
   "footer": {
     "product": "Product",

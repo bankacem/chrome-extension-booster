@@ -58,16 +58,6 @@ const ExtensionsSection = () => {
                 {extension.description}
               </p>
 
-              {/* Stats */}
-              <div className="mb-4 flex items-center gap-4 text-sm">
-                <span className="text-muted-foreground">
-                  <strong className="text-foreground">{extension.users}</strong> {t("extensions_section.users")}
-                </span>
-                <span className="text-muted-foreground">
-                  <strong className="text-foreground">★ {extension.rating}</strong>
-                </span>
-              </div>
-
               {/* CTAs */}
               <div className="flex gap-2">
                 <Button 
