@@ -115,24 +115,7 @@ function replaceHtmlLang(html: string, lang: string): string {
 }
 
 function replaceRoot(template: string, body: string): string {
-  // Robust against a root that already carries content (owner brief
-  // 2026-10-08 item 4): locate the root's closing tag explicitly instead of
-  // trusting an exact empty-root string. All bodies prerendered into the
-  // root (home, blog, extension, legal, article) contain no nested divs —
-  // a nested <div> trips the guard and fails the build loudly.
-  const open = template.indexOf('<div id="root">');
-  if (open === -1) {
-    throw new Error('replaceRoot: <div id="root"> not found in template — refusing to write a page without a root');
-  }
-  const close = template.indexOf('</div>', open);
-  if (close === -1) {
-    throw new Error('replaceRoot: no </div> after <div id="root"> — unexpected template shape');
-  }
-  const inner = template.slice(open + 15, close);
-  if (inner.includes('<div')) {
-    throw new Error('replaceRoot: nested <div> inside root content — cannot locate the root end deterministically');
-  }
-  return template.slice(0, open) + `<div id="root">${body}</div>` + template.slice(close + 6);
+  return template.replace(/<div id="root">[\s\S]*?<\/div>/i, `<div id="root">${body}</div>`);
 }
 
 function buildHead(options: {
@@ -281,16 +264,6 @@ const LOCALE_COPY: Record<Exclude<SiteLang, "en">, { homeTitle: string; blogTitl
   ar: { homeTitle: "إضافات كروم قوية لتعزيز الإنتاجية", blogTitle: "أدلة ومراجعات إضافات كروم", blogDescription: "أدلة عملية ومقارنات ومراجعات تساعدك على اختيار إضافات كروم." },
 };
 
-const LOCALIZED_DISCLOSURE: Record<Exclude<SiteLang, "en">, string> = {
-  // Same honest wording approved for the EN prerender and the AR pages
-  // (owner brief 2026-10-08 item 4) — previously the FR/ES/PT/AR article
-  // bodies carried the ENGLISH line verbatim.
-  fr: "Compilé à partir d'informations publiques et de la documentation produit — voir nos <a href=\"/editorial-policy\">normes éditoriales</a>.",
-  es: "Compilado a partir de información pública y de la documentación del producto — véase nuestros <a href=\"/editorial-policy\">estándares editoriales</a>.",
-  pt: "Compilado a partir de informações públicas e da documentação do produto — veja nossos <a href=\"/editorial-policy\">padrões editoriais</a>.",
-  ar: "مُعَدّ من معلومات عامة ووثائق المنتج — انظر <a href=\"/editorial-policy\">معاييرنا التحريرية</a>.",
-};
-
 async function prerenderLocalizedContent(template: string, lang: string) {
   const copy = LOCALE_COPY[lang];
   if (!copy) return;
@@ -343,7 +316,7 @@ async function prerenderLocalizedContent(template: string, lang: string) {
     const editorialProfile = getEditorialProfile(String(article.author || frontmatterString(parsed.frontmatter, "author") || ""));
     const dateLabel = article.published_at ? String(article.published_at).slice(0, 10) : "";
     const updatedLabel = article.updated_at && article.updated_at !== article.published_at ? String(article.updated_at).slice(0, 10) : "";
-    const body = `<article><header><h1>${escapeHtml(title)}</h1>${String(parsed.content || "").includes("/extension/") ? `<p>ExtensionTo publishes some of the extensions mentioned in this article.</p>` : ""}<p>Written by <a href="${escapeHtml(editorialProfile.url)}">${escapeHtml(editorialProfile.name)}</a> · ${escapeHtml(editorialProfile.role)}${dateLabel ? ` · Published ${escapeHtml(dateLabel)}` : ""}${updatedLabel ? ` · Updated ${escapeHtml(updatedLabel)}` : ""}</p><p>${LOCALIZED_DISCLOSURE[lang as Exclude<SiteLang, "en">] || "Compiled from public information and product documentation — see our <a href=\"/editorial-policy\">editorial standards</a>."}</p></header>${bodyHtml}</article>`;
+    const body = `<article><header><h1>${escapeHtml(title)}</h1>${String(parsed.content || "").includes("/extension/") ? `<p>ExtensionTo publishes some of the extensions mentioned in this article.</p>` : ""}<p>Written by <a href="${escapeHtml(editorialProfile.url)}">${escapeHtml(editorialProfile.name)}</a> · ${escapeHtml(editorialProfile.role)}${dateLabel ? ` · Published ${escapeHtml(dateLabel)}` : ""}${updatedLabel ? ` · Updated ${escapeHtml(updatedLabel)}` : ""}</p><p>Compiled from public information and product documentation — see our <a href="/editorial-policy">editorial standards</a>.</p></header>${bodyHtml}</article>`;
     // Build the Article schema with publisher (matching the EN prerender),
     // plus a BreadcrumbList schema and (if frontmatter.faq exists) a FAQPage schema.
     // The EN prerender (prerender-articles.ts) emits all three; the previous FR/ES
