@@ -49,24 +49,20 @@ INPUT_PRICE = {"deepseek-v4-flash-0731": 0.115, "deepseek-v4-pro-0813": 0.552,
                "glm-5.3": 1.357, "gpt-5.6-luna": 0.3565}  # $/1M in
 CAP_PER_ARTICLE = 0.02
 CAP_PER_RUN = 2.00
-MAX_CALLS_PER_ARTICLE = 6
+MAX_CALLS_PER_ARTICLE = 8
 CALL_TIMEOUT = 120
 
-RULES = """Edit the numbered paragraphs of a Chrome-extension article via
-find/replace operations (so untouched text stays byte-identical).
-Rules (an automated gate fails violations):
+RULES = """Rewrite the numbered paragraphs of a Chrome-extension article.
+Rules (violations fail an automated gate):
 1. Remove first-person testing/anecdotes ("I tested", "we ran benchmarks",
-   "in my lab") — either delete the sentence or restate it neutrally.
+   "in my lab") — state facts qualitatively or attribute generally.
 2. NO new numbers, percentages, prices, versions, product names, or links.
 3. Keep every existing fact that is not a first-person claim.
 4. Editorial, neutral voice. No experience or expertise claims.
-Output STRICT JSON — no preamble, no markdown fences:
-{"edits": [{"index": <paragraph int>,
-            "find": "<EXACT substring copied from that paragraph>",
-            "replace": "<replacement text, or empty string to delete>"}]}
-Each "find" MUST be copied byte-exactly from the source paragraph (it is
-matched and replaced once). Omit paragraphs that need no change. Keep each
-"replace" about as long as the text it replaces."""
+5. Each new_text MUST be about the same length as its source paragraph —
+   never longer. Output ONLY the JSON object, nothing else:
+{"paragraphs": [{"index": <int>, "new_text": <str>}]}
+covering EVERY input paragraph index."""
 
 SYSTEM = "You are a careful copy editor. Output JSON only."
 
@@ -123,10 +119,10 @@ def call_model(model, user_msg, cost_state, article_id):
                      "latency_s": round(time.time() - t0, 1)}
 
 
-def parse_edits(content, idx_to_text):
-    """Parse the find/replace schema; verify every 'find' occurs in its
-    source paragraph. Salvages complete edit objects from truncated output.
-    Returns {index: [(find, replace), ...]}."""
+def parse_paragraphs(content, expected_indices):
+    """Strict JSON parse with a disclosed salvage path: if the output was
+    truncated (unclosed object), recover complete {index,new_text} pairs
+    and accept ONLY if every expected index is present."""
     cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", content.strip(),
                      flags=re.M)
     obj = None
@@ -136,40 +132,27 @@ def parse_edits(content, idx_to_text):
             obj = json.loads(m.group(0))
         except json.JSONDecodeError:
             obj = None
-    raw_edits = []
-    if obj is not None and isinstance(obj.get("edits"), list):
-        raw_edits = obj["edits"]
-    else:
-        # truncated-JSON salvage: recover complete edit objects only
-        raw_edits = []
-        for mm in re.finditer(
-                r'\{\s*"index"\s*:\s*(\d+)\s*,\s*"find"\s*:\s*'
-                r'"((?:[^"\\]|\\.)*)"\s*,\s*"replace"\s*:\s*'
-                r'"((?:[^"\\]|\\.)*)"\s*\}', cleaned):
+    if obj is None:
+        pairs = re.findall(
+            r'\{\s*"index"\s*:\s*(\d+)\s*,\s*"new_text"\s*:\s*'
+            r'"((?:[^"\\]|\\.)*)"\s*\}', cleaned)
+        salvaged = {}
+        for idx, txt in pairs:
             try:
-                raw_edits.append({"index": int(mm.group(1)),
-                                  "find": json.loads(f'"{mm.group(2)}"'),
-                                  "replace": json.loads(f'"{mm.group(3)}"')})
+                salvaged[int(idx)] = json.loads(f'"{txt}"')
             except json.JSONDecodeError:
                 continue
-    edits = {}
-    errors = []
-    for e in raw_edits:
-        try:
-            i = int(e["index"])
-        except (KeyError, TypeError, ValueError):
-            continue
-        if i not in idx_to_text:
-            continue
-        find = str(e.get("find", ""))
-        rep = str(e.get("replace", ""))
-        if not find or find not in idx_to_text[i]:
-            errors.append(f"find-not-in-source idx={i}: {find[:40]!r}")
-            continue
-        edits.setdefault(i, []).append((find, rep))
-    if not edits:
-        raise ValueError("no valid edits; " + "; ".join(errors[:3]))
-    return edits
+        missing = set(expected_indices) - set(salvaged)
+        if missing:
+            raise ValueError("no/partial JSON; missing "
+                             f"{sorted(missing)[:5]}")
+        return salvaged
+    paras = {int(p["index"]): str(p["new_text"])
+             for p in obj.get("paragraphs", [])}
+    missing = set(expected_indices) - set(paras)
+    if missing:
+        raise ValueError(f"model omitted indices {sorted(missing)[:5]}")
+    return paras
 
 
 def block_line_ranges(lines):
@@ -314,6 +297,13 @@ def process_article(rel_path, dry_run, cost_state):
     ranges = block_line_ranges(body_lines)
     idx_to_text = {i: blocks1[i] for i in prose_idx}
     chunks = chunk_marked(prose_idx, blocks1, budget=1000)
+    # cap chunks at 2 paragraphs (2048-output budget ≈ 900 tok/para
+    # empirically) — rechunk if greedy grouping oversized
+    rechunk = []
+    for c in chunks:
+        for j in range(0, len(c), 2):
+            rechunk.append(c[j:j + 2])
+    chunks = rechunk
     if len(chunks) > 4:
         rec["status"] = "excluded_too_many_paragraphs"
         rec["after_body"] = body1
@@ -328,14 +318,15 @@ def process_article(rel_path, dry_run, cost_state):
             user_msg = f"{RULES}\n\nPARAGRAPHS:\n" + "\n\n".join(
                 f"[{i}] {blocks1[i]}" for i in chunk)
         else:
-            # one CRITIC retry over the same payload after a gate failure
+            # one CRITIC retry over the FIRST chunk payload after failures
             model = CRITIC
             vj = json.dumps((gate or {}).get("violations", [])[:8],
                             ensure_ascii=False)
-            user_msg = (f"{RULES}\n\nYour previous edit set FAILED this "
-                        f"gate: {vj}\nFix ONLY these violations.\n\n"
+            first = chunks[0]
+            user_msg = (f"{RULES}\n\nYour previous draft FAILED this gate: "
+                        f"{vj}\nFix ONLY these violations.\n\n"
                         f"PARAGRAPHS:\n" + "\n\n".join(
-                            f"[{i}] {blocks1[i]}" for i in prose_idx))
+                            f"[{i}] {blocks1[i]}" for i in first))
         if dry_run:
             rec["status"] = "dry_run"
             rec["after_body"] = body1
@@ -345,12 +336,8 @@ def process_article(rel_path, dry_run, cost_state):
                                         rec["article"])
             usage["raw_head"] = content[:400]
             rec["model_calls"].append(usage)
-            part = parse_edits(content, idx_to_text)
-            for i, ops in part.items():
-                cur = new_texts.get(i, blocks1[i])
-                for find, rep in ops:
-                    cur = cur.replace(find, rep, 1)
-                new_texts[i] = cur
+            part = parse_paragraphs(content, chunk)
+            new_texts.update(part)
         except Exception as e:  # noqa: BLE001 — never leak the key
             rec["model_calls"].append({"model": model, "error": str(e)[:160]})
             if attempt < len(chunks):
