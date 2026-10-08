@@ -27,7 +27,8 @@ As a seasoned browser tester who's spent countless hours evaluating different br
 
 Whether you're a privacy-conscious user, a productivity enthusiast, or someone who simply wants to customize their browsing environment, understanding the extension capabilities of Yandex Browser is crucial. In this comprehensive guide, I'll share my testing experiences, practical workarounds, and honest limitations so you can make an informed decision about whether Yandex Browser meets your extension needs in 2026.
 
-## Table of Contents- [Understanding Yandex Browser's Foundation](#understanding-yandex-browser)
+## Table of Contents
+- [Understanding Yandex Browser's Foundation](#understanding-yandex-browser)
 - [Chrome Extension Support: The Reality](#chrome-extension-support)
 - [Desktop Installation Process](#desktop-installation)
 - [Mobile Extension Capabilities](#mobile-extension-capabilities)

@@ -30,7 +30,8 @@ As a web developer juggling multiple projects and deadlines, I've spent countles
 
 In the ever-evolving landscape of web development, staying current with the right tools isn't just about convenience—it's about maintaining a competitive edge. This guide focuses on extensions that solve real problems, from inspecting network requests to managing your workflow across multiple projects. I've prioritized extensions with active development, solid reviews, and genuine utility, ensuring you invest your time in solutions that deliver consistent value.
 
-## Table of Contents- [Why Chrome Extensions Matter for Web Developers](#why-chrome-extensions-matter)
+## Table of Contents
+- [Why Chrome Extensions Matter for Web Developers](#why-chrome-extensions-matter)
 - [Essential Developer Tools for Debugging and Testing](#essential-developer-tools)
 - [Code Quality and Optimization Extensions](#code-quality-optimization)
 - [Productivity Boosters for Developers](#productivity-boosters)

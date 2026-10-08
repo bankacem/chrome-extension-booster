@@ -31,7 +31,8 @@ As [a Chrome power user who's](/blog/unlocking-the-power-of-social-media) spent 
 
 Whether you're a productivity enthusiast looking to extend your workflow to mobile, a privacy-conscious user wanting to maintain consistent protection across devices, or simply someone who wants to enhance their browsing experience, [this comprehensive guide will](/blog/chrome-extension-manager-tools) provide you with the tested answers you need. I've personally installed, configured, and used each method discussed here, sharing both the benefits and limitations based on real-world experience.
 
-## Table of Contents- [What Are Chrome Mobile Extensions Workarounds?](#what-are-chrome-mobile-extensions-workarounds)
+## Table of Contents
+- [What Are Chrome Mobile Extensions Workarounds?](#what-are-chrome-mobile-extensions-workarounds)
 - [Why Use Chrome Extensions on Mobile?](#why-use-chrome-extensions-on-mobile)
 - [Method 1: Using Kiwi Browser with Extension Support](#method-1-using-kiwi-browser-with-extension-support)
 - [Method 2: Samsung Browser with Extension Support](#method-2-samsung-browser-with-extension-support)

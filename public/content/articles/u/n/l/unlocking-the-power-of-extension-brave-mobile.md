@@ -25,7 +25,8 @@ description: "Are you tired of feeling limited by your mobile browser's capabili
 
 Using extensions [on mobile browsers](/blog/unlocking-the-power-of-yandex-browser-on-chrome-web-store) has been a long-awaited feature for power users who want desktop-level functionality on their smartphones. If you're tired of feeling limited by your mobile browser's capabilities, extension brave mobile is the game-changing solution you've been waiting for. As someone who has extensively tested various mobile browsers with extension support, I can confidently say that Brave's implementation offers one of the most seamless experiences for bringing desktop extensions to mobile devices. This guide will walk you through everything you need to know about extension brave mobile, from installation to optimization, based on my hands-on testing with multiple devices and extensions.
 
-## Table of Contents- [Why Extension Support on Mobile Matters](#why-matters)
+## Table of Contents
+- [Why Extension Support on Mobile Matters](#why-matters)
 - [Brave Mobile's Extension Capabilities Explained](#brave-capabilities)
 - [Setting Up Extensions on Brave Mobile](#setup-guide)
 - [Popular Extensions That Work Well on Brave Mobile](#popular-extensions)

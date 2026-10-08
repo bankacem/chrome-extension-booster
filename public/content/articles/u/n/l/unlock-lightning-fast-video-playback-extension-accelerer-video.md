@@ -27,7 +27,8 @@ Are you tired of the endless buffering wheel spinning while trying to watch your
 
 Whether you're a content creator who needs to review footage, a student watching educational materials, or simply someone who enjoys streaming content, this guide is designed for anyone looking to optimize their video playback experience. I've tested various extensions, analyzed their features, and documented real-world performance improvements to provide you with the most accurate, actionable information available. By the end of this article, you'll understand exactly how video acceleration works, which extensions deliver the best performance, and how to configure them for optimal results in [your specific browsing environment](/blog/discover-the-safest-adblocker-for-chrome).
 
-## Table of Contents- [What is Video Acceleration and How Does It Work?](#what-is-video-acceleration)
+## Table of Contents
+- [What is Video Acceleration and How Does It Work?](#what-is-video-acceleration)
 - [Why Video Acceleration Matters in 2026](#why-video-acceleration-matters)
 - [Key Benefits of Using an Extension Accelerer Video](#key-benefits)
 - [Essential Features to Look For](#essential-features)

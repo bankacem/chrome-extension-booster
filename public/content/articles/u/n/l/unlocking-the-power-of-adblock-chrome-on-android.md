@@ -28,7 +28,8 @@ Are you tired of intrusive ads disrupting your browsing experience on your Andro
 
 Whether you're a casual browser looking to eliminate annoying pop-ups or a privacy-conscious user wanting to block tracking scripts, this guide will walk you through everything you need to know about ad blocking on Chrome for Android. I've tested numerous solutions, from browser extensions to dedicated apps, to provide you with practical, unbiased recommendations based on real-world performance. By the end of this article, you'll have a clear understanding of how to implement **adblock Chrome on Android** effectively and choose the solution that best fits your needs.
 
-## Table of Contents- [Why Ad Blocking Matters More Than Ever on Android](#why-ad-blocking-matters)
+## Table of Contents
+- [Why Ad Blocking Matters More Than Ever on Android](#why-ad-blocking-matters)
 - [How Ad Blocking Actually Works on Chrome for Android](#how-ad-blocking-works)
 - [Built-in Chrome Solutions vs. Third-Party Options](#built-in-vs-third-party)
 - [Best Ad Blocker Extensions for Chrome on Android](#best-ad-blocker-extensions)

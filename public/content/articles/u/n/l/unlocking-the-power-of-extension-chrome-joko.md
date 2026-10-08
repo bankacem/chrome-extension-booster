@@ -26,7 +26,8 @@ description: "Are you tired of feeling like your browser is holding you back? Do
 <img src="/content/images/unlocking-the-power-of-extension-chrome-joko/featured.webp" alt="unlocking-the-power-of-extension-chrome-joko" width="1200" height="630" loading="lazy" class="featured-image">
 
 
-## Table of Contents- [What is Joko for Chrome?](#what-is-joko)
+## Table of Contents
+- [What is Joko for Chrome?](#what-is-joko)
 - [How Joko Works: The Cashback Engine](#how-joko-works)
 - [Setting Up Joko: Step-by-Step Installation](#setting-up-joko)
 - [Key Features and Capabilities](#key-features)

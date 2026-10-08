@@ -27,7 +27,8 @@ The extension notion has fundamentally transformed how we interact with our web 
 
 This definitive guide is for anyone [who uses Google Chrome and](/blog/unlocking-the-power-of-google-chat-extension) wants to move [beyond basic browsing](/blog/extension-chrome-chat-gpt-2). I'll share my hands-on experience with hundreds of extensions, providing practical insights that go beyond what you'll find in generic tutorials. By the end of this article, you'll [have a comprehensive understanding of](/blog/quick-screenshot-chrome-in-2025-7) how extensions work, how to choose the right ones for your needs, and how to maintain a secure, efficient browser ecosystem that truly works for you.
 
-## Table of Contents- [What is Extension Notion?](https://www.notion.so)
+## Table of Contents
+- [What is Extension Notion?](https://www.notion.so)
 - [The Evolution of Browser Extensions](#evolution-of-browser-extensions)
 - [Types of Chrome Extensions](#types-of-chrome-extensions)
 - [Benefits and Limitations of Extensions](#benefits-and-limitations)

@@ -25,7 +25,8 @@ description: "When it comes to customizing and enhancing your browsing experienc
 
 When it comes to building and customizing Chrome extensions, understanding the extension chrome json file is non-negotiable. As someone who's developed over a dozen extensions and tested countless others, I can tell you that this manifest file is the backbone of every Chrome extension. Whether you're a developer creating your first extension or a power user trying to understand how extensions work under the hood, mastering the extension chrome json will unlock new levels of customization and control over your browsing experience. In this comprehensive guide, I'll walk you through everything you need to know about working with JSON files in Chrome, based on my hands-on experience and testing.
 
-## Table of Contents- [Introduction to Extension Chrome JSON](#introduction-to-extension-chrome-json)
+## Table of Contents
+- [Introduction to Extension Chrome JSON](#introduction-to-extension-chrome-json)
 - [Why This Matters in 2026](#why-this-matters)
 - [The Anatomy of a Manifest File](#anatomy-of-manifest-file)
 - [Creating Your First Extension Chrome JSON](#creating-first-extension-chrome-json)

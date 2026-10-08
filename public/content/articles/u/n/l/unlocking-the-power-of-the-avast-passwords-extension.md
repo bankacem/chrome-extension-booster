@@ -28,7 +28,8 @@ In today's digital landscape, managing dozens of unique, complex passwords has b
 
 This comprehensive guide will walk you through everything you need to know about the Avast Passwords extension, from installation and setup to advanced features and security considerations. Whether you're considering switching from your current password manager or looking for your first solution, I'll share my hands-on experience with this tool, including its strengths, limitations, and practical tips for getting the most out of it. By the end of this article, you'll have a clear understanding of whether the Avast Passwords extension is the right choice for your password management needs.
 
-## Table of Contents- [What is Avast Passwords Extension?](#what-is-avast-passwords-extension)
+## Table of Contents
+- [What is Avast Passwords Extension?](#what-is-avast-passwords-extension)
 - [Why Password Management Matters in 2026](#why-password-management-matters)
 - [Installation and Initial Setup Process](#installation-and-initial-setup)
 - [Core Features and Functionality](#core-features-and-functionality)

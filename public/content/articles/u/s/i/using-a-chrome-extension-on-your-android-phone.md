@@ -27,7 +27,8 @@ description: "Are you an Android user looking to enhance your browsing experienc
 
 Using a Chrome extension for Android phone has long been a challenge for mobile users who wanted to bring their favorite desktop browser enhancements to their smartphones. For years, Android Chrome users were left out of the extension ecosystem that made desktop Chrome so powerful, but that's finally changed. As someone who has tested virtually every method for bringing extensions to Android over the past few years, I can tell you that while it's not as seamless as [the desktop experience](/blog/extension-ad-block-plus-faster-browsing), it's now entirely possible and increasingly practical to use many of your favorite Chrome extensions on Android devices. This guide will walk you through the current methods, limitations, and best practices based on hands-on testing with various Android devices and browsers.
 
-## Table of Contents- [The Evolution of Chrome Extensions on Android](#the-evolution-of-chrome-extensions-on-android)
+## Table of Contents
+- [The Evolution of Chrome Extensions on Android](#the-evolution-of-chrome-extensions-on-android)
 - [Why This Matters in 2026](#why-this-matters-in-2026)
 - [Method 1: Chrome's Desktop Site Mode](#method-1-chromes-desktop-site-mode)
 - [Method 2: Third-Party Browsers with Extension Support](#method-2-third-party-browsers-with-extension-support)

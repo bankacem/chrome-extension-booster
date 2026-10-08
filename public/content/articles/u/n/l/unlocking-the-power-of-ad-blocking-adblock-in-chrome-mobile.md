@@ -27,7 +27,8 @@ Are you tired of intrusive ads disrupting [your browsing experience on](/blog/ex
 
 Whether you're concerned about privacy, frustrated by slow loading times, or simply want to focus on content without distractions, I've put in the testing hours to bring you practical [solutions that actually work on](/blog/an-ad-blocker-that-actually-works-on-youtube) Chrome Mobile. From built-in features to third-party extensions, I'll show you exactly how to implement ad blocking effectively while maintaining browser functionality and respecting content creators where appropriate.
 
-## Table of Contents- [Understanding Ad Blocking on Mobile](#understanding-ad-blocking-on-mobile)
+## Table of Contents
+- [Understanding Ad Blocking on Mobile](#understanding-ad-blocking-on-mobile)
 - [Why Adblock in Chrome Mobile Matters](#why-adblock-in-chrome-mobile-matters)
 - [Built-in Solutions: Chrome's Native Features](#built-in-solutions-chromes-native-features)
 - [Third-Party Extensions for Chrome Mobile](#third-party-extensions-for-chrome-mobile)
