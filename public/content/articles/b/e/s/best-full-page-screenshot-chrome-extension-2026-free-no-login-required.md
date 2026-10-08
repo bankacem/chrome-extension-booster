@@ -26,7 +26,8 @@ description: "Capturing full-page screenshots in Chrome can be a challenge, espe
 
 [Capturing](/blog/quick-screenshot-chrome-vs) [full-page screenshots](/blog/easy-screenshot-chrome-comparison-2) in Chrome can be a challenge, especially when dealing with [long web pages or complex](/blog/extension-chrome-capture-page-web) layouts. After testing over a dozen extensions extensively, I've found that the right tool can transform this frustrating task into a seamless workflow. This definitive guide is for anyone—from web developers and designers to content creators and researchers—who [needs to capture web pages](/blog/mastering-the-art-of-web-page-capture-extension-capture-page-web) accurately and efficiently. I'll share my hands-on experience with the best full-page screenshot Chrome extensions, including their unique features, limitations, and practical use cases.
 
-## Table of Contents- [Why Full-Page Screenshots Matter in 2026](#why-matters)
+## Table of Contents
+- [Why Full-Page Screenshots Matter in 2026](#why-matters)
 - [How Full-Page Screenshot Extensions Work](#how-they-work)
 - [Top Full-Page Screenshot Chrome Extensions: In-Depth Analysis](#top-extensions)
 - [Comparison of Leading Full-Page Screenshot Tools](#comparison-table)

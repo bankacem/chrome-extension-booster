@@ -34,7 +34,8 @@ featured_image: /content/images/adblock-chrome-android-complete-guide-2026/featu
 
 <img src="/content/images/adblock-chrome-android-complete-guide-2026/featured.webp" alt="Ad Blocker for Android Chrome: Complete Guide 2026" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents- [Why Android Chrome Cannot Block Ads Natively](#why)
+## Table of Contents
+- [Why Android Chrome Cannot Block Ads Natively](#why)
 - [The 2026 Extension Reality on Android: Manifest V3 Explained](#mv3)
 - [Method 1: Kiwi Browser + uBlock Origin (Best)](#kiwi)
 - [Method 2: Firefox for Android + uBlock Origin](#firefox)

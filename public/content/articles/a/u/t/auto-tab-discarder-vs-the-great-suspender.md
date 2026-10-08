@@ -31,7 +31,8 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 <img src="/content/images/auto-tab-discarder-vs-the-great-suspender/featured.webp" alt="Auto Tab Discarder vs The Great Suspender 2026: Why You Should Switch" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents- [What Happened to The Great Suspender](#what)
+## Table of Contents
+- [What Happened to The Great Suspender](#what)
 - [4 Safe Alternatives I Tested](#alternatives)
 - [Comparison Table](#table)
 - [Companion Extensions for Tab Management](#companions)

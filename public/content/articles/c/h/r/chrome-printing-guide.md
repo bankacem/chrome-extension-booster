@@ -28,7 +28,8 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 
 I print documents from Chrome almost daily — invoices, contracts, shipping labels, and the occasional recipe. And like many users, I've fought [with print settings](/blog/ublock-origin-best-settings-2026): margins that cut off content, headers that shouldn't be there, background colors that disappear, and print previews that look nothing like the final output. If you're struggling with Chrome's default print paper size or any other printing issue, you're in the right place. After a [week of testing Chrome's](/blog/unlocking-the-power-of-api-testing-api-tester-chrome-extension) built-in printing against alternative approaches on five different printers, I've put [together this comprehensive guide to](/blog/why-you-should-avoid-cloud-based-password-managers-2) help you print faster, more reliably, and with better results from Chrome.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [Chrome's Printing System Explained](#chrome-printing-system)
 - [Understanding Chrome's Default Print Paper Size](#default-paper-size)
 - [Print Dialog Deep Dive: All Settings Explained](#print-dialog)

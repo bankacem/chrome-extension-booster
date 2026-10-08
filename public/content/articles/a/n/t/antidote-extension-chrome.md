@@ -31,7 +31,8 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 <img src="/content/images/antidote-extension-chrome/featured.webp" alt="Antidote Extension Chrome Review 2026: Best French Writing Assistant?" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents- [What Is Antidote?](#what)
+## Table of Contents
+- [What Is Antidote?](#what)
 - [Features I Tested](#features)
 - [Antidote vs Grammarly vs ProWritingAid](#vs)
 - [Companion Extensions for Writers](#companions)

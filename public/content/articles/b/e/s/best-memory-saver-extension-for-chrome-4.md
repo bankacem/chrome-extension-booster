@@ -45,7 +45,8 @@ If you're reading this, chances are your Chrome browser is currently consuming m
 
 This guide is for anyone who regularly works with more than 10-15 Chrome tabs, developers running multiple local environments, students researching across dozens of sources, or anyone whose browser performance degrades after just a few hours of use. I've tested Chrome's built-in Memory Saver against four popular third-party extensions, measured their real-world impact, and identified the specific scenarios where each solution shines. By the end of this article, you'll know exactly which approach will reduce Chrome RAM usage in your particular situation without sacrificing functionality.
 
-## Table of Contents- [Why Chrome Devours RAM: The Technical Truth](#why-chrome-uses-ram)
+## Table of Contents
+- [Why Chrome Devours RAM: The Technical Truth](#why-chrome-uses-ram)
 - [Chrome's Built-in Memory Saver: What's New in 2026](#chrome-memory-saver)
 - [Third-Party Memory Savers: How They Work](#third-party-memory-savers)
 - [Testing Methodology: How We Measured Performance](#testing-methodology)

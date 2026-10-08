@@ -26,7 +26,8 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 
 As a dedicated gamer who's [tested countless browsers](/blog/kiwi-vs-yandex-vs-lemur-android-extensions) and extensions over the years, I've faced the same dilemma many of you do: should I use Opera GX for its built-in gaming features, or stick with Chrome and leverage its massive extension library? After a week of rigorous testing on my gaming rig—Ryzen 5 5600X, 16GB RAM, RTX 3060, Windows 11—I've compared Opera GX against Chrome with carefully selected extensions to answer this exact question. This guide focuses on opera gx chrome extensions and how they stack up against Chrome's gaming capabilities, helping you make an informed decision based on real-world performance, not marketing claims. Whether you're into competitive titles like Fortnite and League of Legends or immersive RPGs like Baldur's Gate 3, I've tested these browsers under identical conditions to give you the definitive answer.
 
-## Table of Contents- [The Opera GX vs Chrome Gaming Dilemma](#the-opera-gx-vs-chrome-gaming-dilemma)
+## Table of Contents
+- [The Opera GX vs Chrome Gaming Dilemma](#the-opera-gx-vs-chrome-gaming-dilemma)
 - [Why This Matters in 2026](#why-this-matters)
 - [My Testing Methodology: How I Compared These Browsers](#my-testing-methodology)
 - [Opera GX's Built-in Gaming Features: The Good and The Limitations](#opera-gx-built-in-features)

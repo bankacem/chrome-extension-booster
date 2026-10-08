@@ -29,7 +29,8 @@ Are you struggling with a slow PC that makes even simple browsing a frustrating 
 
 Whether you're using an older laptop, a budget Chromebook, or simply have too many applications running simultaneously, the right lightweight extensions can transform your browsing experience. I'll walk you through exactly which extensions to choose, how to configure them for optimal performance, and how to maintain a fast, responsive browser even on modest hardware. Let's dive into the world of performance-boosting extensions that won't weigh down your system.
 
-## Table of Contents- [Understanding Resource-Hungry Browsers](#understanding-resource-hungry-browsers)
+## Table of Contents
+- [Understanding Resource-Hungry Browsers](#understanding-resource-hungry-browsers)
 - [What Makes Browser Extensions Resource-Intensive](#what-makes-browser-extensions-resource-intensive)
 - [The Benefits of Lightweight Extensions](#the-benefits-of-lightweight-extensions)
 - [Top Light Browser Extensions for Slow PC](#top-light-browser-extensions-for-slow-pc)

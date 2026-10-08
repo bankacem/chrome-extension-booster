@@ -31,7 +31,8 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 <img src="/content/images/automating-business-reports-with-formula-builder/featured.webp" alt="Automating Business Reports with Formula Builder: A Practical Guide" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents- [The Problem with Manual Reporting](#problem)
+## Table of Contents
+- [The Problem with Manual Reporting](#problem)
 - [What Formula Builder Pro Does](#what)
 - [Manual vs Automated Comparison](#vs)
 - [Companion Extensions for Report Automation](#companions)
