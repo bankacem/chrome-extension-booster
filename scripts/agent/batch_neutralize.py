@@ -44,12 +44,14 @@ BASE = os.environ.get("CLEANAPIS_BASE_URL", "https://cleanapis.com/v1")
 # 2048 completion tokens — reasoning burned the whole output budget before
 # any JSON appeared; flash emits content directly and costs $0.115/1M-in)
 WORKER = os.environ.get("CLEANAPIS_MODEL_WRITER", "deepseek-v4-flash-0731")
-CRITIC = os.environ.get("CLEANAPIS_MODEL_CRITIC", "glm-5.3")
+# CRITIC switched glm-5.3 -> gpt-5.6-luna: glm-5.3 returned
+# "HTTP 402 Payment Required" (run 37766813286) — model-pool balance
+CRITIC = os.environ.get("CLEANAPIS_MODEL_CRITIC", "gpt-5.6-luna")
 INPUT_PRICE = {"deepseek-v4-flash-0731": 0.115, "deepseek-v4-pro-0813": 0.552,
-               "glm-5.3": 1.357, "gpt-5.6-luna": 0.3565}  # $/1M in
+               "glm-5.3": 1.357, "gpt-5.6-luna": 0.3565}  # $/1M in  # noqa
 CAP_PER_ARTICLE = 0.02
 CAP_PER_RUN = 2.00
-MAX_CALLS_PER_ARTICLE = 8
+MAX_CALLS_PER_ARTICLE = 13
 CALL_TIMEOUT = 120
 
 RULES = """Rewrite the numbered paragraphs of a Chrome-extension article.
@@ -297,14 +299,11 @@ def process_article(rel_path, dry_run, cost_state):
     ranges = block_line_ranges(body_lines)
     idx_to_text = {i: blocks1[i] for i in prose_idx}
     chunks = chunk_marked(prose_idx, blocks1, budget=1000)
-    # cap chunks at 2 paragraphs (2048-output budget ≈ 900 tok/para
-    # empirically) — rechunk if greedy grouping oversized
-    rechunk = []
-    for c in chunks:
-        for j in range(0, len(c), 2):
-            rechunk.append(c[j:j + 2])
-    chunks = rechunk
-    if len(chunks) > 4:
+    # ONE paragraph per call: run-6 evidence (37766813286) — 2-paragraph
+    # chunks still truncate at the provider's hard 2048 output cap; single
+    # paragraphs complete (finish_reason: stop)
+    chunks = [[i] for i in prose_idx]
+    if len(chunks) > 12:
         rec["status"] = "excluded_too_many_paragraphs"
         rec["after_body"] = body1
         return rec
@@ -338,6 +337,13 @@ def process_article(rel_path, dry_run, cost_state):
             rec["model_calls"].append(usage)
             part = parse_paragraphs(content, chunk)
             new_texts.update(part)
+            # local expansion guard: rewrites must not balloon
+            for i, t in part.items():
+                src_w = len(re.findall(r"[A-Za-z0-9']+", blocks1[i]))
+                new_w = len(re.findall(r"[A-Za-z0-9']+", t))
+                if src_w and new_w > 1.6 * src_w:
+                    raise ValueError(
+                        f"expansion_limit idx={i}: {src_w} -> {new_w} words")
         except Exception as e:  # noqa: BLE001 — never leak the key
             rec["model_calls"].append({"model": model, "error": str(e)[:160]})
             if attempt < len(chunks):
