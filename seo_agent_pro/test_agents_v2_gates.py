@@ -12,7 +12,8 @@ from seo_agent_pro.agents_v2.gates import (
     S1_PATTERNS, S2_PATTERNS, S1_PROPOSED_PATTERNS, S1_V3_PATTERNS,
     S1_V3_1_PATTERNS, fabrication_gate,
     FM_FIELDS, FM_HONESTY_PATTERNS, frontmatter_honesty_gate,
-    body_neutralization_gate,
+    body_neutralization_gate, unverified_product_removal_gate,
+    UNVERIFIED_PRODUCTS,
     scan_attribution_numbers, scan_unattributed_table_cells, unattributed_gate,
 )
 
@@ -1562,6 +1563,176 @@ class TestUnattributedInOutput(unittest.TestCase):
                 "Marked paragraph with a claim.",
                 "Marked. According to Mozilla, tests show 2 GB savings."), marked=[1])
         self.assertEqual(r["stats"]["remaining_unattributed_hits"], 1)
+
+
+class TestUnverifiedProductRemoval(unittest.TestCase):
+    """Owner brief 2026-10-08: license to delete full H3 sections of products
+    on the unverified_products list + their bullets/rows/sentences, with
+    everything else frozen."""
+
+    P1, P2 = "Popup Blocker Pro", "Minimal Popup Blocker"
+
+    BEFORE = (
+        "## Intro {#intro}\n\nLead paragraph.\n\n"
+        "## The Top 5 Tools for 2026 {#top-5}\n\n"
+        "Five solutions stand out.\n\n"
+        "### Real Extension\n\nReal paragraph one.\n\n"
+        f"### {P1}\n\n{P1} offers customization options.\n\n"
+        f"Its learning mode adapts over time.\n\n"
+        f"### {P2}\n\n{P2} focuses on one thing.\n\n"
+        "## Comparison {#cmp}\n\n"
+        f"- **Real Extension** is solid.\n- **{P1}** offers options.\n"
+        f"- **{P2}** is minimal.\n\n"
+        f"This shows all five: {P1} and {P2} and Real Extension.\n\n"
+        "## FAQ {#faq}\n\n"
+        "### H3: Is it worth it?\n\n"
+        f"It depends. If you need X, {P1} is the option that handles it.\n\n"
+        "### Sources\n\n- [Chrome Docs](https://developer.chrome.com)\n\n"
+        "## Final Verdict {#verdict}\n\n"
+        f"Real Extension is the pick. For power users, {P1} offers control.\n"
+    )
+
+    def _after(self):
+        return (
+            "## Intro {#intro}\n\nLead paragraph.\n\n"
+            "## The Top 5 Tools for 2026 {#top-5}\n\n"
+            "Five solutions stand out.\n\n"
+            "### Real Extension\n\nReal paragraph one.\n\n"
+            "## Comparison {#cmp}\n\n"
+            "- **Real Extension** is solid.\n\n"
+            f"This shows all five: Real Extension.\n\n"
+            "## FAQ {#faq}\n\n"
+            "### H3: Is it worth it?\n\n"
+            "It depends.\n\n"
+            "### Sources\n\n- [Chrome Docs](https://developer.chrome.com)\n\n"
+            "## Final Verdict {#verdict}\n\n"
+            "Real Extension is the pick.\n"
+        )
+
+    def test_01_owner_list_shape(self):
+        self.assertEqual(
+            UNVERIFIED_PRODUCTS,
+            ("Popup Blocker Pro", "Minimal Popup Blocker",
+             "Smart Popup Blocker", "Privacy-Focused Popup Blocker",
+             "Image Downloader Pro"))
+
+    def test_02_section_deletion_passes_with_licenses(self):
+        # count-fix sentences declared; FAQ sentence trimmed; conclusion
+        # sentence declared; comparison bullet removed; sections removed.
+        declared = [
+            "Five solutions stand out. Real Extension stands out.",
+            "This shows all five: Real Extension.",
+        ]
+        after = self._after()
+        after = after.replace(
+            "## The Top 5 Tools for 2026 {#top-5}",
+            "## The Top Tool for 2026 {#top-5}")
+        after = after.replace(
+            "Five solutions stand out.",
+            "Five solutions stand out. Real Extension stands out.", 1)
+        r = unverified_product_removal_gate(
+            self.BEFORE, after,
+            allowed_new_lines=declared,
+            allowed_heading_renames=[
+                ("## The Top 5 Tools for 2026 {#top-5}",
+                 "## The Top Tool for 2026 {#top-5}")])
+        self.assertTrue(r["pass"], r["violations"])
+        self.assertEqual(r["stats"]["products_removed"],
+                         ["Minimal Popup Blocker", "Popup Blocker Pro"])
+
+    def test_03_deleting_other_product_section_fails(self):
+        after = self.BEFORE.replace("Real paragraph one.", "")
+        r = unverified_product_removal_gate(self.BEFORE, after)
+        self.assertFalse(r["pass"])
+        self.assertTrue(
+            any(v["check"] == "unowned_line_deleted" for v in r["violations"]))
+
+    def test_04_undeclared_new_line_fails(self):
+        after = self.BEFORE.replace(
+            "Lead paragraph.", "Lead paragraph. Buy Popup Blocker Pro now.")
+        r = unverified_product_removal_gate(self.BEFORE, after)
+        self.assertFalse(r["pass"])
+        self.assertTrue(
+            any(v["check"] == "unjustified_line" for v in r["violations"]))
+
+    def test_05_declared_line_with_new_name_fails(self):
+        after = self.BEFORE.replace(
+            "Five solutions stand out.",
+            "Five solutions stand out. ShinyBlocker 3000 stands out.", 1)
+        r = unverified_product_removal_gate(
+            self.BEFORE, after,
+            allowed_new_lines=[
+                "Five solutions stand out. ShinyBlocker 3000 stands out."],
+            allowed_heading_renames=[])
+        self.assertFalse(r["pass"])
+        self.assertTrue(
+            any(v["check"] == "proper_noun_new" for v in r["violations"]))
+
+    def test_06_other_headings_must_stay(self):
+        after = self._after().replace(
+            "## Comparison {#cmp}", "## Head-to-Head {#cmp}")
+        r = unverified_product_removal_gate(self.BEFORE, after)
+        self.assertFalse(r["pass"])
+        self.assertTrue(
+            any(v["check"] == "heading_changed" for v in r["violations"]))
+
+    def test_07_h3_prefix_strip_is_autolicensed(self):
+        after = self.BEFORE.replace(
+            "### H3: Is it worth it?", "### Is it worth it?")
+        r = unverified_product_removal_gate(self.BEFORE, after)
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_08_glued_toc_split_is_autolicensed(self):
+        before = "## Table of Contents- [Intro](#intro)\n- [FAQ](#faq)\n\nBody.\n"
+        after = "## Table of Contents\n- [Intro](#intro)\n- [FAQ](#faq)\n\nBody.\n"
+        r = unverified_product_removal_gate(before, after)
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_09_renamed_heading_toc_bullet_autolicensed(self):
+        before = ("## Table of Contents- [The Top 5 Tools](#top-5)\n\n"
+                  "## The Top 5 Tools for 2026 {#top-5}\n\nBody.\n")
+        after = ("## Table of Contents\n- [The Top Tool for 2026](#top-5)\n\n"
+                 "## The Top Tool for 2026 {#top-5}\n\nBody.\n")
+        r = unverified_product_removal_gate(
+            before, after,
+            allowed_heading_renames=[
+                ("## The Top 5 Tools for 2026 {#top-5}",
+                 "## The Top Tool for 2026 {#top-5}")])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_10_new_link_fails(self):
+        after = self.BEFORE.replace(
+            "Lead paragraph.", "Lead [text](/blog/x).")
+        r = unverified_product_removal_gate(self.BEFORE, after)
+        self.assertFalse(r["pass"])
+        self.assertTrue(
+            any(v["check"] == "link_new" for v in r["violations"]))
+
+    def test_11_new_number_fails(self):
+        after = self.BEFORE.replace(
+            "Lead paragraph.", "Lead paragraph with 3000 tools.")
+        r = unverified_product_removal_gate(self.BEFORE, after)
+        self.assertFalse(r["pass"])
+        self.assertTrue(
+            any(v["check"] == "number_new" for v in r["violations"]))
+
+    def test_12_product_sentence_trim_from_kept_line(self):
+        # FAQ paragraph keeps its first sentence, loses the product sentence
+        after = self.BEFORE.replace(
+            "It depends. If you need X, Popup Blocker Pro is the option that handles it.",
+            "It depends.")
+        r = unverified_product_removal_gate(self.BEFORE, after)
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_13_stats_report_word_drop(self):
+        r = unverified_product_removal_gate(self.BEFORE, self._after())
+        self.assertGreater(r["stats"]["word_drop_pct"], 0)
+        self.assertLess(r["stats"]["after_words"],
+                        r["stats"]["before_words"])
+
+    def test_14_identical_bodies_pass(self):
+        r = unverified_product_removal_gate(self.BEFORE, self.BEFORE)
+        self.assertTrue(r["pass"], r["violations"])
 
 
 if __name__ == "__main__":

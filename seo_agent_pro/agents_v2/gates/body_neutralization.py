@@ -849,3 +849,340 @@ def body_neutralization_gate(
                 new_unattributed_hits("", after_body)),
         },
     }
+
+
+# ── unverified-product section-removal license ───────────────────────────
+# Owner brief 2026-10-08: products advertised under these names are NOT real
+# Chrome Web Store listings (owner-verified). Articles may delete a full H3
+# section for any product on this list, plus its list items, comparison
+# bullets, conclusion sentences and disclosure-table rows — nothing else.
+
+UNVERIFIED_PRODUCTS: Tuple[str, ...] = (
+    "Popup Blocker Pro",
+    "Minimal Popup Blocker",
+    "Smart Popup Blocker",
+    "Privacy-Focused Popup Blocker",
+    "Image Downloader Pro",
+)
+
+_HEADING_LINE_RE = re.compile(r"^(#{1,6})\s+(.*)$")
+_TOC_GLUED_RE = re.compile(r"^(#{1,6}\s+Table of Contents)-\s*(\[[^\]]*\]\([^)]*\))\s*$")
+_H3_PREFIX_RE = re.compile(r"^(#{1,6})\s+H3:\s+(.*)$")
+
+
+def _mentions_unverified(line: str, products: Collection[str]) -> bool:
+    low = line.lower()
+    return any(p.lower() in low for p in products)
+
+
+def _owned_section_lines(lines: List[str], products: Collection[str]) -> set:
+    """Line indices owned by a section whose heading names an unverified
+    product (heading included, until the next heading of the same or higher
+    level), plus any single line that itself mentions such a product."""
+    owned: set = set()
+    open_level = None
+    for i, l in enumerate(lines):
+        m = _HEADING_LINE_RE.match(l)
+        if m:
+            lvl = len(m.group(1))
+            if open_level is not None and lvl <= open_level:
+                open_level = None
+            if open_level is None and _mentions_unverified(m.group(2), products):
+                open_level = lvl
+        if open_level is not None or _mentions_unverified(l, products):
+            owned.add(i)
+    return owned
+
+
+def _norm_heading_for_compare(h: str) -> str:
+    """Owner-mandated '### H3: X' -> '### X' cleanup and the glued-TOC
+    reduction ('## Table of Contents- [X](#y)' reads as '## Table of
+    Contents' + its first bullet) are applied to BOTH sides before the
+    heading multiset comparison, so those two mandated fixes are
+    auto-licensed while any other heading edit still fails."""
+    m = _TOC_GLUED_RE.match(h)
+    if m:
+        h = m.group(1)
+    m = _H3_PREFIX_RE.match(h)
+    return f"{m.group(1)} {m.group(2)}" if m else h
+
+
+_CAMEL_ANY_RE = re.compile(r"\b[A-Z][a-z0-9''&.\-]*[A-Z][a-z0-9]*\b")
+_TITLE_SEQ_RE = re.compile(
+    r"\b(?:[A-Z][a-z][a-z0-9''&.\-]*[ ]+)+[A-Z][a-z][a-z0-9''&.\-]*")
+
+
+def _names_anywhere(text: str) -> set:
+    """Entity-name candidates at ANY position (sentence starts included):
+    CamelCase tokens + multi-word Title-Case sequences. Single Title tokens
+    at sentence starts are excluded (indistinguishable from ordinary words
+    like 'The')."""
+    names = set(_CAMEL_ANY_RE.findall(text))
+    names.update(m.group(0).strip() for m in _TITLE_SEQ_RE.finditer(text))
+    return names
+
+
+def unverified_product_removal_gate(
+    before_body: str,
+    after_body: str,
+    unverified_products: Collection[str] = UNVERIFIED_PRODUCTS,
+    *,
+    allowed_new_lines: Collection[str] = (),
+    allowed_heading_renames: Collection[Tuple[str, str]] = (),
+    word_drop_limit_pct: float = None,
+) -> Dict:
+    """License for deleting unverified-product content (owner brief
+    2026-10-08). Every changed line must be justified by ONE of:
+
+      1. it belongs to a section whose heading names a product from
+         `unverified_products` (H3 section: heading, paragraphs, lists);
+      2. the line itself mentions such a product (list item, comparison
+         bullet, conclusion sentence, disclosure-table row) and is deleted;
+      3. it is a sentence-trim: the kept line is a substring of the old
+         line and every removed fragment mentions such a product;
+      4. it is the owner-mandated glued-TOC split
+         ("## Table of Contents- [X](#y)" -> heading line + bullet line);
+      5. it is the TOC bullet of an allowed heading rename (same anchor,
+         text = the new heading's text);
+      6. it is a blank line;
+      7. it is a heading rename listed in `allowed_heading_renames`
+         (e.g. the "Top 5" -> "Top" count fix);
+      8. it appears VERBATIM in `allowed_new_lines` — the announced
+         linking/count-fix sentences (re-verified: no new proper nouns vs
+         the whole before-body, no new numbers, no new links).
+
+    Additional global checks: headings multiset (after the mandated
+    '### H3: ' prefix strip on both sides) may only differ through renames
+    and owned-section deletions; link-target set may not grow; no new
+    number/percent/version tokens; fabrication S1/S2/S3 and unattributed
+    hits on the result must stay within the original's. Word-drop is
+    reported (and capped only when `word_drop_limit_pct` is given —
+    deletion licenses report, they do not silently fail).
+    """
+    violations: List[Dict[str, str]] = []
+    prods = list(unverified_products)
+    allow_new = set(l.rstrip("\n") for l in allowed_new_lines)
+    allow_renames = list(allowed_heading_renames)
+    lb, la = before_body.splitlines(), after_body.splitlines()
+    owned_b = _owned_section_lines(lb, prods)
+    owned_a = _owned_section_lines(la, prods)
+
+    rename_old = {o for o, _n in allow_renames}
+    rename_toc = {}  # anchor -> new heading text (for renamed-heading TOC bullets)
+    for _o, n in allow_renames:
+        m = _HEADING_LINE_RE.match(n)
+        if m:
+            anchor = re.search(r"\{#([^}]+)\}", n)
+            if anchor:
+                rename_toc[anchor.group(1)] = m.group(2).split("{#")[0].strip()
+    _TOC_BULLET_RE = re.compile(r"^-\s*\[([^\]]+)\]\(#([^)]+)\)\s*$")
+
+    def _is_renamed_toc_bullet(line: str) -> bool:
+        m = _TOC_BULLET_RE.match(line.strip())
+        return bool(m and m.group(2) in rename_toc
+                    and m.group(1).strip() == rename_toc[m.group(2)])
+
+    rename_new = {_n for _o, _n in allow_renames}
+
+    # glued-TOC splits licensed globally: every glued heading in BEFORE whose
+    # two halves both exist in AFTER is auto-justified on the deleted side
+    glued_ok: set = set()
+    for i, l in enumerate(lb):
+        m = _TOC_GLUED_RE.match(l)
+        if m and m.group(1) in set(la) and m.group(2) in set(la):
+            glued_ok.add(i)
+
+    def _h3_stripped_counterpart(a, dels):
+        return any(_norm_heading_for_compare(a) == _norm_heading_for_compare(d)
+                   for d in dels if d.strip() and d != a)
+
+    # line diff: justify every added line, then every deleted line
+    sm = SequenceMatcher(a=lb, b=la, autojunk=False)
+    deleted_lines = 0
+    added_lines = 0
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        dels, adds = lb[i1:i2], la[j1:j2]
+        if tag == "equal":
+            continue
+        deleted_lines += i2 - i1
+        added_lines += j2 - j1
+        for a in adds:
+            if not a.strip() or a in allow_new or _is_renamed_toc_bullet(a):
+                continue  # blank / declared verbatim / renamed-heading TOC bullet
+            if a in rename_new or _h3_stripped_counterpart(a, dels):
+                continue  # allowed heading rename / mandated H3-prefix strip
+            if any(d.strip() and a in d for d in dels):
+                continue  # substring trim (removed part re-checked below)
+            violations.append({
+                "check": "unjustified_line",
+                "detail": f"line not justified by any license: {a[:80]!r}",
+            })
+        for k, d in enumerate(dels):
+            if not d.strip() or (i1 + k) in owned_b or (i1 + k) in glued_ok:
+                continue
+            if d in rename_old or d in set(adds):
+                continue
+            if _HEADING_LINE_RE.match(d) and _h3_stripped_counterpart(d, adds):
+                continue  # mandated '### H3: ' prefix strip
+            # count-fix replacement: old line absorbed into a declared new line
+            if any(d.strip() and d in a and (a in allow_new or a in rename_new)
+                   for a in adds):
+                continue
+            # owner-mandated glued-TOC split: "## Table of Contents- [X](#y)"
+            m = _TOC_GLUED_RE.match(d)
+            if m and m.group(1) in set(adds) and m.group(2) in set(adds):
+                continue
+            if any(
+                    _TOC_BULLET_RE.match(d.strip()) and
+                    _TOC_BULLET_RE.match(a.strip()) and
+                    _TOC_BULLET_RE.match(a.strip()).group(2) ==
+                    _TOC_BULLET_RE.match(d.strip()).group(2)
+                    for a in adds if a.strip()):
+                # TOC bullet whose anchor survives a heading rename
+                continue
+            # substring-trim of a kept line whose removed part is product text
+            justified_trim = False
+            for a in adds:
+                if a.strip() and a in d:
+                    parts = [p for p in d.replace(a, "\x00", 1).split("\x00")
+                             if p.strip()]
+                    if all(_mentions_unverified(p, prods) for p in parts):
+                        justified_trim = True
+                        break
+            if justified_trim:
+                continue
+            violations.append({
+                "check": "unowned_line_deleted",
+                "detail": f"deleted line is not unverified-product content "
+                          f"and not declared: {d[:80]!r}",
+            })
+
+    # headings multiset — H3-prefix normalized on both sides; owned-section
+    # headings and allowed renames excluded
+    def _headings_owned_filtered(lines):
+        owned = _owned_section_lines(lines, prods)
+        return [_norm_heading_for_compare(l) for i, l in enumerate(lines)
+                if _HEADING_LINE_RE.match(l) and i not in owned]
+
+    hb = _headings_owned_filtered(lb)
+    ha = _headings_owned_filtered(la)
+    cb, ca = Counter(hb), Counter(ha)
+    for old, new in allow_renames:
+        o, n = _norm_heading_for_compare(old), _norm_heading_for_compare(new)
+        if cb.get(o, 0) > 0 and ca.get(n, 0) > 0:
+            cb[o] -= 1
+            ca[n] -= 1
+        else:
+            violations.append({
+                "check": "heading_rename_invalid",
+                "detail": f"allowed rename source/target not found: {old!r} -> {new!r}",
+            })
+    leftover = sum((cb - ca).values()) + sum((ca - cb).values())
+    if leftover:
+        violations.append({
+            "check": "heading_changed",
+            "detail": f"{leftover} heading line(s) changed outside allowed "
+                      f"renames / product-section deletions / H3-prefix rule",
+        })
+
+    # no new links, numbers, percents, versions (set semantics)
+    lk_b, lk_a = _links(before_body), _links(after_body)
+    new_links = set(lk_a) - set(lk_b)
+    if new_links:
+        violations.append({
+            "check": "link_new",
+            "detail": f"new link target(s): {sorted(new_links)[:6]}",
+        })
+    nb, na = _numbers(before_body), _numbers(after_body)
+    new_nums = set(na) - set(nb)
+    if new_nums:
+        violations.append({
+            "check": "number_new",
+            "detail": f"new number token(s): {sorted(new_nums)[:8]}",
+        })
+    npb_, npa_ = _percents(before_body), _percents(after_body)
+    new_pcts = set(npa_) - set(npb_)
+    if new_pcts:
+        violations.append({
+            "check": "percent_new",
+            "detail": f"new percentage(s): {sorted(new_pcts)[:8]}",
+        })
+    vb, va = _versions(before_body), _versions(after_body)
+    new_vs = set(va) - set(vb)
+    if new_vs:
+        violations.append({
+            "check": "version_new",
+            "detail": f"new version token(s): {sorted(new_vs)[:8]}",
+        })
+
+    # no new NAMES anywhere: entity candidates of the result (CamelCase or
+    # multi-word Title sequences, sentence starts included) must stay within
+    # the original's plus the rename targets' wording (owner-declared heading
+    # text). Declared linking sentences are NOT exempt — "no new names" is
+    # absolute, so they are name-checked like every other added line.
+    names_b = _names_anywhere(before_body) | _names_anywhere("\n".join(rename_new))
+    for a in la:
+        if a.strip() and a not in lb and not _mentions_unverified(a, prods):
+            extra = _names_anywhere(a) - names_b
+            if extra:
+                violations.append({
+                    "check": "proper_noun_new",
+                    "detail": f"new name(s) {sorted(extra)[:6]} in line {a[:70]!r}",
+                })
+
+    # fabrication subset + unattributed (same as the main gate)
+    from .fabrication import fabrication_gate
+    gb, ga = fabrication_gate(before_body), fabrication_gate(after_body)
+
+    def _hitset(g):
+        out = set()
+        for sev in ("S1", "S2", "S3"):
+            for h in g.get(sev, []):
+                out.add((sev, str(h.get("pattern") or h.get("trigger")),
+                         (h.get("match") or h.get("sample") or h.get("sentence") or "")[:80]))
+        return out
+
+    new_hits = _hitset(ga) - _hitset(gb)
+    if new_hits:
+        violations.append({
+            "check": "gates_failed_S1S2S3",
+            "detail": f"new gate hit(s) on the result: {sorted(new_hits)[:4]}",
+        })
+    from .unattributed import new_unattributed_hits
+    ua_new = new_unattributed_hits(before_body, after_body)
+    if ua_new:
+        violations.append({
+            "check": "unattributed_new",
+            "detail": f"new unattributed hit(s) on the result: {sorted(ua_new)[:4]}",
+        })
+
+    wb, wa = len(_WORD_RE.findall(before_body)), len(_WORD_RE.findall(after_body))
+    drop_pct = 100.0 * (wb - wa) / wb if wb else 0.0
+    if word_drop_limit_pct is not None and drop_pct > word_drop_limit_pct:
+        violations.append({
+            "check": "word_drop_exceeded",
+            "detail": f"body lost {drop_pct:.1f}% of its words (limit {word_drop_limit_pct}%)",
+        })
+
+    removed_products = sorted(
+        {p for p in prods if _mentions_unverified(before_body, [p]) and
+         not _mentions_unverified(after_body, [p])})
+    kept_products = sorted(
+        {p for p in prods if _mentions_unverified(after_body, [p])})
+
+    return {
+        "pass": not violations,
+        "violations": violations,
+        "stats": {
+            "before_words": wb,
+            "after_words": wa,
+            "word_drop_pct": round(drop_pct, 1),
+            "deleted_lines": deleted_lines,
+            "added_lines": added_lines,
+            "products_removed": removed_products,
+            "products_still_mentioned": kept_products,
+            "remaining_gate_hits": len(_hitset(ga)),
+            "remaining_unattributed_hits": len(
+                new_unattributed_hits("", after_body)),
+        },
+    }
