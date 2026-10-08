@@ -39,12 +39,19 @@ from seo_agent_pro.agents_v2.gates.unattributed import (  # noqa: E402
 )
 
 BASE = os.environ.get("CLEANAPIS_BASE_URL", "https://cleanapis.com/v1")
-WORKER = os.environ.get("CLEANAPIS_MODEL_WRITER", "deepseek-v4-pro-0813")
-CRITIC = os.environ.get("CLEANAPIS_MODEL_CRITIC", "glm-5.3")
-INPUT_PRICE = {"deepseek-v4-pro-0813": 0.552, "glm-5.3": 1.357}  # $/1M in
+# WORKER switched from deepseek-v4-pro-0813 to deepseek-v4-flash-0731
+# (run 37764989375 evidence: the pro model returned message.content="" with
+# 2048 completion tokens — reasoning burned the whole output budget before
+# any JSON appeared; flash emits content directly and costs $0.115/1M-in)
+WORKER = os.environ.get("CLEANAPIS_MODEL_WRITER", "deepseek-v4-flash-0731")
+# CRITIC switched glm-5.3 -> gpt-5.6-luna: glm-5.3 returned
+# "HTTP 402 Payment Required" (run 37766813286) — model-pool balance
+CRITIC = os.environ.get("CLEANAPIS_MODEL_CRITIC", "gpt-5.6-luna")
+INPUT_PRICE = {"deepseek-v4-flash-0731": 0.115, "deepseek-v4-pro-0813": 0.552,
+               "glm-5.3": 1.357, "gpt-5.6-luna": 0.3565}  # $/1M in  # noqa
 CAP_PER_ARTICLE = 0.02
 CAP_PER_RUN = 2.00
-MAX_CALLS_PER_ARTICLE = 2
+MAX_CALLS_PER_ARTICLE = 13
 CALL_TIMEOUT = 120
 
 RULES = """Rewrite the numbered paragraphs of a Chrome-extension article.
@@ -54,10 +61,10 @@ Rules (violations fail an automated gate):
 2. NO new numbers, percentages, prices, versions, product names, or links.
 3. Keep every existing fact that is not a first-person claim.
 4. Editorial, neutral voice. No experience or expertise claims.
-5. Keep roughly the same length and keep Markdown formatting if present.
-6. If a sentence's only content is an untestable claim, drop the sentence.
-Return STRICT JSON: {"paragraphs": [{"index": <int>, "new_text": <str>}]}
-covering EVERY input paragraph index. No commentary outside the JSON."""
+5. Each new_text MUST be about the same length as its source paragraph —
+   never longer. Output ONLY the JSON object, nothing else:
+{"paragraphs": [{"index": <int>, "new_text": <str>}]}
+covering EVERY input paragraph index."""
 
 SYSTEM = "You are a careful copy editor. Output JSON only."
 
@@ -93,6 +100,11 @@ def call_model(model, user_msg, cost_state, article_id):
     with urllib.request.urlopen(req, timeout=CALL_TIMEOUT) as r:
         data = json.load(r)
     usage = data.get("usage", {})
+    finish = data["choices"][0].get("finish_reason", "")
+    msg = data["choices"][0].get("message", {}) or {}
+    if not str(msg.get("content") or "").strip() and msg.get("reasoning_content"):
+        # reasoning models can burn the whole output budget invisibly
+        usage["reasoning_burn"] = len(str(msg.get("reasoning_content")))
     pin = usage.get("prompt_tokens", 0)
     pout = usage.get("completion_tokens", 0)
     cost_state["usd_est_run"] += pin / 1e6 * INPUT_PRICE.get(model, 1.0)
@@ -105,20 +117,83 @@ def call_model(model, user_msg, cost_state, article_id):
     content = data["choices"][0]["message"]["content"]
     return content, {"model": model, "prompt_tokens": pin,
                      "completion_tokens": pout,
+                     "finish_reason": finish,
                      "latency_s": round(time.time() - t0, 1)}
 
 
-def parse_json_paragraphs(content, expected_indices):
-    m = re.search(r"\{[\s\S]*\}", content)
-    if not m:
-        raise ValueError("no JSON object in model output")
-    obj = json.loads(m.group(0))
+def parse_paragraphs(content, expected_indices):
+    """Strict JSON parse with a disclosed salvage path: if the output was
+    truncated (unclosed object), recover complete {index,new_text} pairs
+    and accept ONLY if every expected index is present."""
+    cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", content.strip(),
+                     flags=re.M)
+    obj = None
+    m = re.search(r"\{[\s\S]*\}", cleaned)
+    if m:
+        try:
+            obj = json.loads(m.group(0))
+        except json.JSONDecodeError:
+            obj = None
+    if obj is None:
+        pairs = re.findall(
+            r'\{\s*"index"\s*:\s*(\d+)\s*,\s*"new_text"\s*:\s*'
+            r'"((?:[^"\\]|\\.)*)"\s*\}', cleaned)
+        salvaged = {}
+        for idx, txt in pairs:
+            try:
+                salvaged[int(idx)] = json.loads(f'"{txt}"')
+            except json.JSONDecodeError:
+                continue
+        missing = set(expected_indices) - set(salvaged)
+        if missing:
+            raise ValueError("no/partial JSON; missing "
+                             f"{sorted(missing)[:5]}")
+        return salvaged
     paras = {int(p["index"]): str(p["new_text"])
              for p in obj.get("paragraphs", [])}
     missing = set(expected_indices) - set(paras)
     if missing:
         raise ValueError(f"model omitted indices {sorted(missing)[:5]}")
     return paras
+
+
+def block_line_ranges(lines):
+    """Line-index ranges of blocks — mirrors gates._blocks grouping exactly
+    (consecutive non-blank lines)."""
+    ranges, cur = [], []
+    for i, l in enumerate(lines):
+        if l.strip():
+            cur.append(i)
+        elif cur:
+            ranges.append((cur[0], cur[-1] + 1))
+            cur = []
+    if cur:
+        ranges.append((cur[0], cur[-1] + 1))
+    return ranges
+
+
+def surgical_replace(body_lines, ranges, new_texts):
+    """Replace ONLY the marked blocks' lines; every other byte stays."""
+    out = list(body_lines)
+    for k, txt in new_texts.items():
+        s_, e_ = ranges[k]
+        out[s_:e_] = txt.split("\n")
+    return "\n".join(out)
+
+
+def chunk_marked(indices, blocks, budget=1500):
+    """Greedy chunks of paragraph indices by output-token estimate."""
+    chunks, cur, est = [], [], 0
+    for i in indices:
+        t = int(len(re.findall(r"[A-Za-z0-9']+", blocks[i])) * 1.75) + 30
+        if cur and est + t > budget:
+            chunks.append(cur)
+            cur, est = [], 0
+        cur.append(i)
+        est += t
+    if cur:
+        chunks.append(cur)
+    return chunks
 
 
 def marked_paragraphs(body):
@@ -218,18 +293,39 @@ def process_article(rel_path, dry_run, cost_state):
         rec["after_body"] = body1
         return rec
 
-    # step 3: model rewrite (dry_run: zero calls)
-    payload = "\n\n".join(f"[{i}] {blocks1[i]}" for i in prose_idx)
-    user_msg = f"{RULES}\n\nPARAGRAPHS:\n{payload}"
+    # step 3: model rewrite in chunks that fit the provider's 2048-token
+    # output cap (empirically enforced even when more is requested)
+    body_lines = body1.split("\n")
+    ranges = block_line_ranges(body_lines)
+    idx_to_text = {i: blocks1[i] for i in prose_idx}
+    chunks = chunk_marked(prose_idx, blocks1, budget=1000)
+    # ONE paragraph per call: run-6 evidence (37766813286) — 2-paragraph
+    # chunks still truncate at the provider's hard 2048 output cap; single
+    # paragraphs complete (finish_reason: stop)
+    chunks = [[i] for i in prose_idx]
+    if len(chunks) > 12:
+        rec["status"] = "excluded_too_many_paragraphs"
+        rec["after_body"] = body1
+        return rec
 
-    def apply_rewrite(new_texts):
-        new_blocks = list(blocks1)
-        for i, t in new_texts.items():
-            new_blocks[i] = t
-        return fm + "\n\n".join(new_blocks) + \
-            ("\n" if body1.endswith("\n") else "")
-
-    for attempt, model in enumerate((WORKER, CRITIC)):
+    new_texts = {}
+    gate = None
+    for attempt in range(len(chunks) + 1):
+        if attempt < len(chunks):
+            chunk = chunks[attempt]
+            model = WORKER
+            user_msg = f"{RULES}\n\nPARAGRAPHS:\n" + "\n\n".join(
+                f"[{i}] {blocks1[i]}" for i in chunk)
+        else:
+            # one CRITIC retry over the FIRST chunk payload after failures
+            model = CRITIC
+            vj = json.dumps((gate or {}).get("violations", [])[:8],
+                            ensure_ascii=False)
+            first = chunks[0]
+            user_msg = (f"{RULES}\n\nYour previous draft FAILED this gate: "
+                        f"{vj}\nFix ONLY these violations.\n\n"
+                        f"PARAGRAPHS:\n" + "\n\n".join(
+                            f"[{i}] {blocks1[i]}" for i in first))
         if dry_run:
             rec["status"] = "dry_run"
             rec["after_body"] = body1
@@ -237,16 +333,28 @@ def process_article(rel_path, dry_run, cost_state):
         try:
             content, usage = call_model(model, user_msg, cost_state,
                                         rec["article"])
+            usage["raw_head"] = content[:400]
             rec["model_calls"].append(usage)
-            new_texts = parse_json_paragraphs(content, prose_idx)
+            part = parse_paragraphs(content, chunk)
+            new_texts.update(part)
+            # local expansion guard: rewrites must not balloon
+            for i, t in part.items():
+                src_w = len(re.findall(r"[A-Za-z0-9']+", blocks1[i]))
+                new_w = len(re.findall(r"[A-Za-z0-9']+", t))
+                if src_w and new_w > 1.6 * src_w:
+                    raise ValueError(
+                        f"expansion_limit idx={i}: {src_w} -> {new_w} words")
         except Exception as e:  # noqa: BLE001 — never leak the key
             rec["model_calls"].append({"model": model, "error": str(e)[:160]})
-            if attempt == 0:
-                continue
+            if attempt < len(chunks):
+                continue  # try remaining chunks; final verdict after loop
             rec["status"] = "excluded_model_error"
             rec["after_body"] = body1
             return rec
-        cand = apply_rewrite(new_texts)
+        if attempt < len(chunks) - 1:
+            continue  # more chunks to fetch before gating
+        # all chunks applied — gate
+        cand = surgical_replace(body_lines, ranges, new_texts)
         gate = body_neutralization_gate(
             body1, cand, marked=sorted(set(prose_idx) | set(new_texts)),
             word_drop_limit_pct=45.0)
@@ -259,11 +367,6 @@ def process_article(rel_path, dry_run, cost_state):
         rec.setdefault("gate_attempts", []).append(
             {"model": model, "pass": False,
              "violations": gate["violations"][:8]})
-        if attempt == 0:
-            vj = json.dumps(gate["violations"][:8], ensure_ascii=False)
-            user_msg = (f"{RULES}\n\nYour previous draft FAILED this gate: "
-                        f"{vj}\nFix ONLY these violations.\n\nPARAGRAPHS:\n"
-                        f"{payload}")
     rec["status"] = "excluded_gate"
     rec["after_body"] = body1
     return rec
@@ -274,15 +377,18 @@ def main():
     ap.add_argument("--batch", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="process only the first N articles (validation)")
     args = ap.parse_args()
 
     os.makedirs(args.out, exist_ok=True)  # temp dir for artifacts only
     batch = json.load(open(args.batch))
+    arts = batch["articles"][: args.limit] if args.limit else batch["articles"]
     cost_state = {"tokens_in": 0, "tokens_out": 0, "calls_total": 0,
                   "usd_est_run": 0.0, "usd_input_only_run": 0.0,
                   "calls_per_article": {}}
     records = []
-    for a in batch["articles"]:
+    for a in arts:
         rec = process_article(a["path"], args.dry_run, cost_state)
         records.append(rec)
         print(f"[{rec.get('status', '?')}] {a['slug']} "

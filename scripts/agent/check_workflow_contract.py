@@ -87,8 +87,8 @@ jobs = wf.get("jobs", {})
 to = {k: j.get("timeout-minutes") for k, j in jobs.items()}
 check("job timeout-minutes set", all(isinstance(v, int) and v <= 60
                                      for v in to.values()), f"timeout={to}")
-check("runner: max 2 calls/article + $0.02/article + $2.00/run caps",
-      "MAX_CALLS_PER_ARTICLE = 2" in runner and
+check("runner: max 6 calls/article (chunks of <=3 paragraphs + 1 critic retry) + $0.02/article + $2.00/run caps",
+      "MAX_CALLS_PER_ARTICLE = 6" in runner and
       "CAP_PER_ARTICLE = 0.02" in runner and
       "CAP_PER_RUN = 2.00" in runner)
 
