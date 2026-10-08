@@ -44,7 +44,7 @@ CRITIC = os.environ.get("CLEANAPIS_MODEL_CRITIC", "glm-5.3")
 INPUT_PRICE = {"deepseek-v4-pro-0813": 0.552, "glm-5.3": 1.357}  # $/1M in
 CAP_PER_ARTICLE = 0.02
 CAP_PER_RUN = 2.00
-MAX_CALLS_PER_ARTICLE = 2
+MAX_CALLS_PER_ARTICLE = 3
 CALL_TIMEOUT = 120
 
 RULES = """Rewrite the numbered paragraphs of a Chrome-extension article.
@@ -146,6 +146,45 @@ def parse_json_paragraphs(content, expected_indices):
     return paras
 
 
+def block_line_ranges(lines):
+    """Line-index ranges of blocks — mirrors gates._blocks grouping exactly
+    (consecutive non-blank lines)."""
+    ranges, cur = [], []
+    for i, l in enumerate(lines):
+        if l.strip():
+            cur.append(i)
+        elif cur:
+            ranges.append((cur[0], cur[-1] + 1))
+            cur = []
+    if cur:
+        ranges.append((cur[0], cur[-1] + 1))
+    return ranges
+
+
+def surgical_replace(body_lines, ranges, new_texts):
+    """Replace ONLY the marked blocks' lines; every other byte stays."""
+    out = list(body_lines)
+    for k, txt in new_texts.items():
+        s_, e_ = ranges[k]
+        out[s_:e_] = txt.split("\n")
+    return "\n".join(out)
+
+
+def chunk_marked(indices, blocks, budget=1500):
+    """Greedy chunks of paragraph indices by output-token estimate."""
+    chunks, cur, est = [], [], 0
+    for i in indices:
+        t = int(len(re.findall(r"[A-Za-z0-9']+", blocks[i])) * 1.75) + 30
+        if cur and est + t > budget:
+            chunks.append(cur)
+            cur, est = [], 0
+        cur.append(i)
+        est += t
+    if cur:
+        chunks.append(cur)
+    return chunks
+
+
 def marked_paragraphs(body):
     """(marked_prose_indices, table_hits, blocks) — gate-driven."""
     blocks = _blocks(body)
@@ -243,35 +282,66 @@ def process_article(rel_path, dry_run, cost_state):
         rec["after_body"] = body1
         return rec
 
-    # step 3: model rewrite (dry_run: zero calls)
-    payload = "\n\n".join(f"[{i}] {blocks1[i]}" for i in prose_idx)
-    user_msg = f"{RULES}\n\nPARAGRAPHS:\n{payload}"
+    # step 3: model rewrite in chunks that fit the provider's 2048-token
+    # output cap (empirically enforced even when more is requested)
+    body_lines = body1.split("\n")
+    ranges = block_line_ranges(body_lines)
+    chunks = chunk_marked(prose_idx, blocks1)
+    if len(chunks) > 2:
+        rec["status"] = "excluded_too_many_paragraphs"
+        rec["after_body"] = body1
+        return rec
 
-    def apply_rewrite(new_texts):
-        new_blocks = list(blocks1)
-        for i, t in new_texts.items():
-            new_blocks[i] = t
-        return fm + "\n\n".join(new_blocks) + \
-            ("\n" if body1.endswith("\n") else "")
+    def payload_for(idx_list):
+        return "\n\n".join(f"[{i}] {blocks1[i]}" for i in idx_list)
 
-    for attempt, model in enumerate((WORKER, CRITIC)):
+    new_texts = {}
+    for chunk in chunks:
         if dry_run:
             rec["status"] = "dry_run"
             rec["after_body"] = body1
             return rec
+        user_msg = f"{RULES}\n\nPARAGRAPHS:\n{payload_for(chunk)}"
         try:
-            content, usage = call_model(model, user_msg, cost_state,
+            content, usage = call_model(WORKER, user_msg, cost_state,
                                         rec["article"])
             rec["model_calls"].append(usage)
-            new_texts = parse_json_paragraphs(content, prose_idx)
+            part = parse_json_paragraphs(content, chunk)
+            new_texts.update(part)
         except Exception as e:  # noqa: BLE001 — never leak the key
-            rec["model_calls"].append({"model": model, "error": str(e)[:160]})
-            if attempt == 0:
-                continue
+            rec["model_calls"].append({"model": WORKER, "error": str(e)[:160]})
             rec["status"] = "excluded_model_error"
             rec["after_body"] = body1
             return rec
-        cand = apply_rewrite(new_texts)
+    cand = surgical_replace(body_lines, ranges, new_texts)
+    gate = body_neutralization_gate(
+        body1, cand, marked=sorted(set(prose_idx) | set(new_texts)),
+        word_drop_limit_pct=45.0)
+    if gate["pass"]:
+        rec["status"] = "ok"
+        rec["gate"] = {"pass": True, "violations": [],
+                       "stats": gate["stats"]}
+        rec["after_body"] = cand
+        return rec
+    rec["gate_attempts"] = [{"model": WORKER, "pass": False,
+                             "violations": gate["violations"][:8]}]
+    # one CRITIC retry only when the whole payload fits a single call
+    if len(chunks) == 1 and len(prose_idx) > 0:
+        vj = json.dumps(gate["violations"][:8], ensure_ascii=False)
+        user_msg = (f"{RULES}\n\nYour previous draft FAILED this gate: "
+                    f"{vj}\nFix ONLY these violations.\n\nPARAGRAPHS:\n"
+                    f"{payload_for(prose_idx)}")
+        try:
+            content, usage = call_model(CRITIC, user_msg, cost_state,
+                                        rec["article"])
+            rec["model_calls"].append(usage)
+            new_texts = parse_json_paragraphs(content, prose_idx)
+        except Exception as e:  # noqa: BLE001
+            rec["model_calls"].append({"model": CRITIC, "error": str(e)[:160]})
+            rec["status"] = "excluded_model_error"
+            rec["after_body"] = body1
+            return rec
+        cand = surgical_replace(body_lines, ranges, new_texts)
         gate = body_neutralization_gate(
             body1, cand, marked=sorted(set(prose_idx) | set(new_texts)),
             word_drop_limit_pct=45.0)
@@ -281,14 +351,8 @@ def process_article(rel_path, dry_run, cost_state):
                            "stats": gate["stats"]}
             rec["after_body"] = cand
             return rec
-        rec.setdefault("gate_attempts", []).append(
-            {"model": model, "pass": False,
-             "violations": gate["violations"][:8]})
-        if attempt == 0:
-            vj = json.dumps(gate["violations"][:8], ensure_ascii=False)
-            user_msg = (f"{RULES}\n\nYour previous draft FAILED this gate: "
-                        f"{vj}\nFix ONLY these violations.\n\nPARAGRAPHS:\n"
-                        f"{payload}")
+        rec["gate_attempts"].append({"model": CRITIC, "pass": False,
+                                     "violations": gate["violations"][:8]})
     rec["status"] = "excluded_gate"
     rec["after_body"] = body1
     return rec
