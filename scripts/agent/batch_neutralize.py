@@ -39,9 +39,14 @@ from seo_agent_pro.agents_v2.gates.unattributed import (  # noqa: E402
 )
 
 BASE = os.environ.get("CLEANAPIS_BASE_URL", "https://cleanapis.com/v1")
-WORKER = os.environ.get("CLEANAPIS_MODEL_WRITER", "deepseek-v4-pro-0813")
+# WORKER switched from deepseek-v4-pro-0813 to deepseek-v4-flash-0731
+# (run 37764989375 evidence: the pro model returned message.content="" with
+# 2048 completion tokens — reasoning burned the whole output budget before
+# any JSON appeared; flash emits content directly and costs $0.115/1M-in)
+WORKER = os.environ.get("CLEANAPIS_MODEL_WRITER", "deepseek-v4-flash-0731")
 CRITIC = os.environ.get("CLEANAPIS_MODEL_CRITIC", "glm-5.3")
-INPUT_PRICE = {"deepseek-v4-pro-0813": 0.552, "glm-5.3": 1.357}  # $/1M in
+INPUT_PRICE = {"deepseek-v4-flash-0731": 0.115, "deepseek-v4-pro-0813": 0.552,
+               "glm-5.3": 1.357, "gpt-5.6-luna": 0.3565}  # $/1M in
 CAP_PER_ARTICLE = 0.02
 CAP_PER_RUN = 2.00
 MAX_CALLS_PER_ARTICLE = 6
@@ -98,6 +103,10 @@ def call_model(model, user_msg, cost_state, article_id):
         data = json.load(r)
     usage = data.get("usage", {})
     finish = data["choices"][0].get("finish_reason", "")
+    msg = data["choices"][0].get("message", {}) or {}
+    if not str(msg.get("content") or "").strip() and msg.get("reasoning_content"):
+        # reasoning models can burn the whole output budget invisibly
+        usage["reasoning_burn"] = len(str(msg.get("reasoning_content")))
     pin = usage.get("prompt_tokens", 0)
     pout = usage.get("completion_tokens", 0)
     cost_state["usd_est_run"] += pin / 1e6 * INPUT_PRICE.get(model, 1.0)
@@ -375,15 +384,18 @@ def main():
     ap.add_argument("--batch", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="process only the first N articles (validation)")
     args = ap.parse_args()
 
     os.makedirs(args.out, exist_ok=True)  # temp dir for artifacts only
     batch = json.load(open(args.batch))
+    arts = batch["articles"][: args.limit] if args.limit else batch["articles"]
     cost_state = {"tokens_in": 0, "tokens_out": 0, "calls_total": 0,
                   "usd_est_run": 0.0, "usd_input_only_run": 0.0,
                   "calls_per_article": {}}
     records = []
-    for a in batch["articles"]:
+    for a in arts:
         rec = process_article(a["path"], args.dry_run, cost_state)
         records.append(rec)
         print(f"[{rec.get('status', '?')}] {a['slug']} "
