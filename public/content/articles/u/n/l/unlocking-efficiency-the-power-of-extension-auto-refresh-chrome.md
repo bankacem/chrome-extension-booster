@@ -27,7 +27,8 @@ Are you constantly hitting that F5 button to keep your browser tabs updated? If 
 
 This guide is designed for professionals, students, and anyone who monitors multiple web applications simultaneously. Whether you're tracking inventory levels, monitoring auction bids, or waiting for specific content to update, I'll provide the tested answers you need to implement auto-refresh functionality effectively. By the end of this article, you'll have a clear understanding of how to select and configure the perfect auto-refresh extension for your specific needs.
 
-## Table of Contents- [Understanding Auto Refresh Extensions](#understanding-auto-refresh-extensions)
+## Table of Contents
+- [Understanding Auto Refresh Extensions](#understanding-auto-refresh-extensions)
 - [Why This Matters in 2026](#why-matters)
 - [Top Auto Refresh Extensions for Chrome](#top-extensions)
 - [How to Install and Configure Auto Refresh](#installation-guide)

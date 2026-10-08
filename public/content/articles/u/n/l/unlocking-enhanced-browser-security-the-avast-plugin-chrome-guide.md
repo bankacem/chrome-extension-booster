@@ -27,7 +27,8 @@ When it comes to protecting your digital life while browsing, the right tools ca
 
 The internet landscape has evolved significantly in recent years, with threats becoming more sophisticated and harder to detect. What worked five years ago may not be sufficient today, which is why staying informed about the latest security tools is crucial. Whether you're a casual user concerned about privacy or someone handling sensitive data regularly, understanding how the Avast plugin Chrome can fit into your security toolkit is essential. Throughout this guide, I'll share practical insights, performance metrics from my testing, and honest assessments to help you make an informed decision about whether this extension is right for your browsing habits.
 
-## Table of Contents- [Understanding the Avast Plugin Chrome](#understanding-the-avast-plugin-chrome)
+## Table of Contents
+- [Understanding the Avast Plugin Chrome](#understanding-the-avast-plugin-chrome)
 - [Core Security Features in Depth](#core-security-features-in-depth)
 - [Privacy Protection Mechanisms](#privacy-protection-mechanisms)
 - [Performance Impact and Resource Usage](#performance-impact-and-resource-usage)

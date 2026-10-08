@@ -27,7 +27,8 @@ In today's data-driven landscape, making sense of complex information has become
 
 This guide is based on hands-on testing and real-world usage scenarios, designed specifically for data enthusiasts, business analysts, marketing professionals, and anyone who needs to make sense of numbers without being a full-time data scientist. By the end of this article, you'll have a clear understanding of how to install, configure, and maximize the tableau chrome extension for your specific data visualization needs.
 
-## Table of Contents- [Introduction to Tableau Chrome Extension](#introduction-to-tableau-chrome-extension)
+## Table of Contents
+- [Introduction to Tableau Chrome Extension](#introduction-to-tableau-chrome-extension)
 - [Key Features and Capabilities](#key-features-and-capabilities)
 - [Setting Up and Installation Guide](#setting-up-and-installation-guide)
 - [Connecting to Data Sources](#connecting-to-data-sources)

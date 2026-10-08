@@ -26,7 +26,8 @@ description: "Are you tired of remembering multiple passwords for your online ac
 
 Whether you'[re a security](/blog/enpass-extension-chrome-9)-conscious professional, a frequent online shopper, or someone who simply wants to reduce password fatigue, this guide will walk you through everything you need to know about [Avast](https://www.avast.com) Password Manager for Chrome. We'll cover setup, features, security protocols, and how it stacks up against alternatives, giving you the information you need to make an informed decision about your password management strategy.
 
-## Table of Contents- [Introduction to Avast Password Manager for Chrome](#introduction-to-avast-password-manager-for-chrome)
+## Table of Contents
+- [Introduction to Avast Password Manager for Chrome](#introduction-to-avast-password-manager-for-chrome)
 - [Setting Up Avast Password Manager in Chrome](#setting-up-avast-password-manager-in-chrome)
 - [Core Features and Functionality](#core-features-and-functionality)
 - [Security Architecture and Encryption Standards](#security-architecture-and-encryption-standard)

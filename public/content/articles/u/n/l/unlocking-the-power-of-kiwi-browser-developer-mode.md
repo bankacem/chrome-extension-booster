@@ -26,7 +26,8 @@ description: "As a web developer, you're likely familiar with the importance of 
 
 As a web developer juggling multiple projects across different devices, I've found that [Kiwi Browser](https://kiwibrowser.com/)'s developer mode has become an indispensable tool in my workflow. This Chromium-based browser offers a unique set of debugging and testing capabilities that go beyond what you'd find in standard mobile browsers. [In this comprehensive guide](/blog/enhancing-browser-security-with-norton-safe-web-chrome-a-comprehensive-guide), I'll share my hands-on experience with Kiwi Browser developer mode, showing you exactly how to unlock its full potential for mobile web development, debugging, and testing. Whether you're building responsive websites, testing browser compatibility, [or just need more control](/blog/discover-the-best-spreadsheets-software-for-small-business) over your browsing environment, this guide will walk you through everything you need to know.
 
-## Table of Contents- [Introduction to Kiwi Browser Developer Mode](#introduction-to-kiwi-browser-developer-mode)
+## Table of Contents
+- [Introduction to Kiwi Browser Developer Mode](#introduction-to-kiwi-browser-developer-mode)
 - [Enabling Developer Mode: Step-by-Step](#enabling-developer-mode-step-by-step)
 - [Advanced Debugging Tools](#advanced-debugging-tools)
 - [Testing Responsive Design Across Devices](#testing-responsive-design-across-devices)

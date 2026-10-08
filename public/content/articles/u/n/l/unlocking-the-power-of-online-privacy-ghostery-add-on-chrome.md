@@ -26,7 +26,8 @@ description: "Are you concerned about your online privacy and security while bro
 
 In today's digital landscape, your online privacy is constantly under threat from invisible trackers, data harvesters, and intrusive advertising networks. If you're concerned about who's watching your every move online, the Ghostery add on Chrome offers a powerful solution to reclaim control of your browsing experience. This comprehensive guide draws from my extensive testing of Ghostery and other privacy extensions to provide you with everything you need to know about protecting your digital footprint while maintaining a functional, fast browsing experience.
 
-## Table of Contents- [Understanding the Privacy Landscape in 2026](#understanding-privacy-landscape)
+## Table of Contents
+- [Understanding the Privacy Landscape in 2026](#understanding-privacy-landscape)
 - [What is Ghostery Add On Chrome?](#what-is-ghostery)
 - [How Ghostery Actually Works: The Technology Behind the Scenes](#how-ghostery-works)
 - [Key Features of Ghostery Add On Chrome](#key-features)

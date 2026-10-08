@@ -27,7 +27,8 @@ Tired of sifting through countless Chrome extensions, unsure which ones actually
 
 ExtensionHub stands out in a crowded market by focusing on quality over quantity, with each extension vetted for both functionality and security. In my testing across multiple browser setups, I've found that ExtensionHub's filtering system and detailed descriptions help users find exactly what they need without getting lost in the noise. This guide will walk you through everything you need to know about using ExtensionHub effectively, from navigating its interface to selecting the perfect extensions for your specific needs. By the end, you'll have a clear understanding of how to leverage this powerful directory to create a browser experience that's both efficient and enjoyable.
 
-## Table of Contents- [Introduction to ExtensionHub](#introduction-to-extensionhub)
+## Table of Contents
+- [Introduction to ExtensionHub](#introduction-to-extensionhub)
 - [How ExtensionHub Works](#how-extensionhub-works)
 - [The ExtensionHub User Experience](#the-extensionhub-user-experience)
 - [Security and Quality Control on ExtensionHub](#security-and-quality-control-on-extensionhub)
