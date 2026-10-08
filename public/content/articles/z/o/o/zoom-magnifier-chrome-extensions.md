@@ -39,7 +39,8 @@ Struggling to read small text or see details on websites? If you've ever found y
 
 In today's digital world where websites are becoming increasingly complex with dense text, tiny icons, and intricate layouts, having reliable zoom and magnification tools isn't just convenient—it's essential. I'[ve personally tested each recommended](/blog/quick-screenshot-capture-extension) extension across different monitor sizes, websites, and use cases to give you practical, unbiased advice that goes beyond what the marketing claims. By the end of this guide, you'll know exactly which tools will help you see every pixel clearly without compromising your browsing experience.
 
-## Table of Contents- [Understanding Chrome's Native Zoom Limitations](#understanding-chrome-zoom)
+## Table of Contents
+- [Understanding Chrome's Native Zoom Limitations](#understanding-chrome-zoom)
 - [Why You Need a Dedicated Zoom Extension](#why-dedicated-zoom)
 - [Top Zoom and Magnifier Extensions Compared](#top-extensions-compared)
 - [Per-Site Zoom Control Explained](#per-site-zoom-control)

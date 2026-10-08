@@ -25,7 +25,8 @@ description: "Only three Android browsers handle real extensions in 2026 — Kiw
 
 Finding the best android browser for extensions can dramatically transform your mobile browsing experience, turning your smartphone into a productivity powerhouse. After testing over a dozen browsers with dozens of extensions over the past six months, I've discovered that the landscape has evolved significantly, with several strong contenders now offering robust extension support that goes far beyond what was possible just a year ago. Whether you're a power user who needs specific tools for work, a privacy-conscious individual wanting enhanced protection, or simply someone who wants to customize their browsing experience, [this guide will help you](/blog/vpn-article6-torrenting-vpn) navigate the options and find the perfect browser-extension combination for your Android device.
 
-## Table of Contents- [The Evolution of Android Extension Support](#evolution-of-android-extensions)
+## Table of Contents
+- [The Evolution of Android Extension Support](#evolution-of-android-extensions)
 - [Top Android Browsers with Extension Support](#top-browsers)
 - [How to Install and Manage Extensions on Android](#installing-extensions)
 - [Performance Impact: How Extensions Affect Speed and Battery](#performance-impact)

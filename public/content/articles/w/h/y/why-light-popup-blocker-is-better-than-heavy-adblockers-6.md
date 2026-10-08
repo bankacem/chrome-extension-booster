@@ -29,7 +29,8 @@ description: "Are you tired of using heavy adblockers that slow down your browsi
 
 Are you tired of heavy adblockers that slow down your browser while trying to block ads? If you're experiencing performance issues or just want a more efficient browsing experience, you're not alone. After testing dozens of ad-blocking solutions over the years, I've discovered that **why Light Popup Blocker is better than heavy adblockers** comes down to three key factors: performance, simplicity, and focused functionality. This guide is for anyone who values a fast, responsive browser experience without sacrificing essential ad-blocking capabilities. I'll share my hands-on testing results and specific performance metrics to help you understand why a lightweight approach often beats feature-heavy alternatives.
 
-## Table of Contents- [Understanding the Modern Ad-Blocking Landscape](#understanding-modern-ad-blocking)
+## Table of Contents
+- [Understanding the Modern Ad-Blocking Landscape](#understanding-modern-ad-blocking)
 - [What Makes an Adblocker "Heavy"?](#what-makes-an-adblocker-heavy)
 - [Light Popup Blocker: A Different Philosophy](#light-popup-blocker-philosophy)
 - [Performance Showdown: Light vs Heavy Solutions](#performance-showdown)

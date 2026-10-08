@@ -33,7 +33,8 @@ The digital landscape of entertainment has evolved dramatically, [and in 2026](/
 
 [In this comprehensive guide](/blog/windscribe-extension-to-chrome-9), I'll share my hands-on experience with the latest watch party extensions, including the popular Teleparty for Netflix and Amazon Prime Video watch parties, as well as alternatives that offer broader streaming service support. Whether you're planning a virtual movie night with friends across the country or family members in different time zones, you'll find practical insights, step-by-step setup instructions, and honest assessments of each tool's strengths and limitations. Let's dive into how you can transform your solo streaming sessions into shared experiences.
 
-## Table of Contents- [Why Watch Party Extensions Matter in 2026](#why-watch-party-extensions-matter-in-2026)
+## Table of Contents
+- [Why Watch Party Extensions Matter in 2026](#why-watch-party-extensions-matter-in-2026)
 - [How Watch Party Extensions Work](#how-watch-party-extensions-work)
 - [Top Watch Party Chrome Extensions Compared](#top-watch-party-chrome-extensions-compared)
 - [Setting Up Your First Watch Party](#setting-up-your-first-watch-party)

@@ -31,7 +31,8 @@ As I've spent countless [hours testing browser security solutions](/blog/comodo-
 
 [In this comprehensive guide](/blog/finding-the-right-browser-extension-for-you), I'll share my [hands-on experience with the](/blog/extension-adblock-google-chrome-3) most effective antivirus extensions, explain how they actually work (and what they can't do), and provide specific recommendations based on real-world testing. I've installed, tested, and compared leading solutions to give you the actionable insights you need to make an informed [decision about protecting your digital](/blog/protecting-your-browser-from-url-hijacking-4) life.
 
-## Table of Contents- [What is a Chrome Antivirus Extension?](#what-is-a-chrome-antivirus-extension)
+## Table of Contents
+- [What is a Chrome Antivirus Extension?](#what-is-a-chrome-antivirus-extension)
 - [How Modern Browser Threats Work](#how-modern-browser-threats-work)
 - [What Antivirus Extensions Actually Protect Against](#what-antivirus-extensions-actually-protect-against)
 - [Limitations: What Antivirus Extensions Can't Do](#limitations-what-antivirus-extensions-cant-do)
