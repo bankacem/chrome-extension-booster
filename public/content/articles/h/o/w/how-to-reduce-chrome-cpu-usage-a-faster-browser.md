@@ -27,7 +27,8 @@ Are you tired of Chrome consuming excessive CPU resources, slowing down your com
 
 Whether you're a power user with dozens of tabs open or someone who just wants their browser to run smoothly, these techniques will help you achieve a faster, more responsive Chrome experience. I've personally tested each method [on both Windows and macOS](/blog/how-to-fix-chrome-high-memory-usage-on-windows-11) systems with varying hardware specifications, and I'll provide specific details about what worked best in different scenarios. Let's dive into the practical solutions that can make a real difference in how Chrome performs on your system.
 
-## Table of Contents- [Why Chrome CPU Usage Matters in 2026](#why-chrome-cpu-usage-matters)
+## Table of Contents
+- [Why Chrome CPU Usage Matters in 2026](#why-chrome-cpu-usage-matters)
 - [Understanding Chrome's Multi-Process Architecture](#understanding-chromes-architecture)
 - [Built-in Chrome Settings to Reduce CPU Usage](#built-in-settings)
 - [Managing Tabs and Extensions Effectively](#managing-tabs-extensions)

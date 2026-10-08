@@ -27,7 +27,8 @@ Are you tired [of slow downloads](/blog/the-latest-idm-extension-for-chrome-free
 
 Whether you're downloading large files, managing multiple simultaneous downloads, or simply want more control over your download process, this guide will help you find the perfect Chrome extension like IDM for your needs. I've personally tested each recommended extension, evaluated their performance across different network conditions, and compared their features against the full-featured desktop version of IDM. Let's dive into the world of enhanced download management for Chrome.
 
-## Table of Contents- [What is IDM and Why Look for Chrome Alternatives?](#what-is-idm)
+## Table of Contents
+- [What is IDM and Why Look for Chrome Alternatives?](#what-is-idm)
 - [Key Features to Look for in a Chrome Extension Like IDM](#key-features)
 - [Top Chrome Extensions Like IDM: Detailed Comparison](#top-alternatives)
 - [Free Download Manager: The Most Comprehensive Alternative](#fdm-extension)

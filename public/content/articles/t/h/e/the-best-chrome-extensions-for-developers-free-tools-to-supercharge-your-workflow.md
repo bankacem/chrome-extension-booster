@@ -48,7 +48,8 @@ faq:
 
 As a developer who spends countless hours in the browser, I've tested countless extensions for Chromium that promise [to streamline workflows](/blog/professional-browser-tools-guide). The right extensions for Chromium can transform your browser from a simple viewing tool into a powerful development environment. In this guide, I'll share the tested extensions that have genuinely [improved my productivity](/blog/supercharge-your-workflow-the-ultimate-productivity-chrome-extensions-guide), categorized by their primary function so you can quickly find what you need. After years of trial and error, these are the tools I've kept installed across all my development machines.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [DevTools Enhancers: Framework-Specific Debugging](#devtools-enhancers)
 - [CSS & Design Tools: Visual Development in Browser](#css-design)
 - [API Testing Extensions: Direct from Chrome](#api-testing)

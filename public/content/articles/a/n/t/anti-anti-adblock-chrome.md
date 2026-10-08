@@ -31,7 +31,8 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 <img src="/content/images/anti-anti-adblock-chrome/featured.webp" alt="Anti Anti Adblock Chrome: How to Beat Adblock Detection in 2026" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents- [The Problem: Adblock Detection Is Everywhere](#problem)
+## Table of Contents
+- [The Problem: Adblock Detection Is Everywhere](#problem)
 - [5 Methods I Tested](#methods)
 - [Anti Anti Adblock Comparison Table](#table)
 - [The Companion Extensions You Need](#companions)

@@ -27,7 +27,8 @@ Are you tired [of intrusive ad](/blog/adblock-chrome-android-complete-guide-2026
 
 Before diving into solutions, it's worth noting [that ad blocking on mobile](/blog/adblock-chrome-android-complete-guide-2026) Chrome differs significantly from desktop. Unlike desktop Chrome, which supports a wide range of extensions, Chrome Android has limitations that affect how ad blockers function. Understanding these constraints is crucial for setting realistic expectations and choosing the right solution for your needs. I've tested these solutions extensively on various Android devices, from budget phones to flagship models, to provide you with accurate, actionable guidance.
 
-## Table of Contents- [Why Ad Blocking Matters in 2026](#why-matters)
+## Table of Contents
+- [Why Ad Blocking Matters in 2026](#why-matters)
 - [Understanding Chrome Android's Extension Limitations](#chrome-limitations)
 - [Types of Ad Blockers for Chrome Android](#types-adblockers)
 - [Best Extension AdBlock Chrome Android Solutions](#best-solutions)

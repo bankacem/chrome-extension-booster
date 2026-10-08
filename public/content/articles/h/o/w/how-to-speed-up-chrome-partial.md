@@ -28,7 +28,8 @@ Are you tired of waiting for web pages to load while popups slow you down? You'r
 
 [This comprehensive guide is](/blog/speed-up-google-chrome-on-old-laptop-boosting-performance) designed for anyone who values their time and wants to optimize [their Chrome browser experience](/blog/how-to-speed-up-idm-downloads-on-chrome-browser). I'll share insights gained from hands-on testing with [various popup blockers](/blog/pop-up-blocker-for-chrome-partial), explain exactly why popups impact performance, and provide step-by-step solutions to help [you achieve faster page loading](/blog/speed-up-downloads-with-this-chrome-extension) times. By the end of this guide, you'll have a clear understanding of the relationship between popups and browser performance, along with actionable strategies to implement immediately.
 
-## Table of Contents- [The Hidden Cost of Popups: Performance Impact Explained](#hidden-cost)
+## Table of Contents
+- [The Hidden Cost of Popups: Performance Impact Explained](#hidden-cost)
 - [Why Block Popups in 2026? Beyond Just Speed](#why-block)
 - [Chrome's Built-in Popup Blocker: What It Does and Doesn't Do](#built-in)
 - [Third-Party Popup Blockers: A Detailed Comparison](#third-party)

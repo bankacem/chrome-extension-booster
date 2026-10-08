@@ -28,7 +28,8 @@ If you're searching for ways to enhance [your browsing experience with lemur](/b
 
 Lemur Browser is an increasingly popular alternative to Chrome, Firefox, and other mainstream browsers, but it doesn't support Chrome's Web Store directly. This limitation has left many users wondering how to access their favorite extensions. In this guide, I'll share multiple methods I've personally tested to get extensions working in Lemur, including workarounds, alternative sources, and security considerations. By the end, you'll have a clear understanding of how to extend Lemur's functionality safely and effectively.
 
-## Table of Contents- [Understanding Lemur Browser's Extension Limitations](#understanding-lemur)
+## Table of Contents
+- [Understanding Lemur Browser's Extension Limitations](#understanding-lemur)
 - [Why This Matters in 2026](#why-matters)
 - [Method 1: Manual Installation of CRX Files](#method-1)
 - [Method 2: Using the Chrome Extension Manager](#method-2)

@@ -51,7 +51,8 @@ updated_at: "2026-09-17T13:06:01.000+00:00"
 
 If your Chrome browser feels slower than molasses in January, you're not alone. In my experience as a power user who's tested dozens of configurations, Chrome's memory usage is often the silent culprit behind system lag and unresponsive tabs. This comprehensive monitor Chrome RAM usage guide will walk you through exactly how to identify, analyze, and tame Chrome's memory consumption using both built-in tools and third-party solutions. Whether you're a casual user noticing occasional slowdowns or a developer optimizing resource-heavy workflows, these are the techniques I've found most effective in my testing across Windows, macOS, and Linux systems over the past year.
 
-## Table of Contents- [Why Chrome Uses So Much Memory in 2026](#why-chrome-uses-so-much-memory)
+## Table of Contents
+- [Why Chrome Uses So Much Memory in 2026](#why-chrome-uses-so-much-memory)
 - [The Chrome Task Manager vs. OS Task Manager](#task-manager-vs-os)
 - [Decoding Chrome's Memory Metrics](#decoding-metrics)
 - [Spotting Memory Leaks and Spikes](#spotting-leaks)

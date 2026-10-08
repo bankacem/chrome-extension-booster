@@ -31,7 +31,8 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 <img src="/content/images/autotab-discard-vs-onetab/featured.webp" alt="AutoTab Discard vs OneTab vs ProTab Suspender: Best Tab Manager 2026" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents- [Why Tab Management Matters](#why)
+## Table of Contents
+- [Why Tab Management Matters](#why)
 - [The 3 I Tested](#tested)
 - [Comparison Table](#table)
 - [The Real Problem with Tab Managers](#gaps)

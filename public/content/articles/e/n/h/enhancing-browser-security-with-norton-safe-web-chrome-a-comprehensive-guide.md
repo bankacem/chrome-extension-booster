@@ -31,7 +31,8 @@ description: "As the internet continues to evolve, so do the threats that lurk i
 
 [Enhancing browser security with](/blog/unlocking-the-power-of-yandex-browser-on-chrome-web-store) Norton Safe Web Chrome has become increasingly important in today's digital landscape where threats are evolving at an alarming rate. As someone who spends hours researching and testing various security tools, I've found that Norton Safe Web Chrome offers a practical layer of protection against the most common online threats. [This comprehensive guide is](/blog/unlocking-enhanced-browser-security-kaspersky-chrome) designed for everyday Chrome users who want to understand how this extension works, what it can (and can't) do, and how to maximize its effectiveness in your daily browsing routine.
 
-## Table of Contents- [Understanding Norton Safe Web Chrome](#understanding-norton-safe-web-chrome)
+## Table of Contents
+- [Understanding Norton Safe Web Chrome](#understanding-norton-safe-web-chrome)
 - [How Norton Safe Web Chrome Protects You](#how-norton-safe-web-chrome-protects-you)
 - [Key Features and Functionality](#key-features-and-functionality)
 - [Setting Up and Configuring Norton Safe Web Chrome](#setting-up-and-configuring-norton-safe-web-chrome)

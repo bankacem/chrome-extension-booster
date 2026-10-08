@@ -29,7 +29,8 @@ Are you tired of intrusive ads disrupting [your browsing experience](/blog/the-p
 
 As someone who has evaluated dozens of ad-blocking extensions over the years, I understand how overwhelming it can be to navigate the options while balancing effectiveness with browser performance. This guide cuts through the noise to provide you with tested recommendations based on real-world usage, not just marketing claims. I'll share the specific features that actually matter in 2026, along with the trade-offs you should consider before making your choice.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [How Ad Blockers Actually Work](#how-ad-blockers-work)
 - [Key Features That Make a Real Difference](#key-features)
 - [Top Extension Adblock Google Chrome Solutions Compared](#top-solutions)

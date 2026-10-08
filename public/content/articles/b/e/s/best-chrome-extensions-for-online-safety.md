@@ -27,7 +27,8 @@ With the ever-increasing sophistication of online threats, [protecting your digi
 
 This guide is designed for everyone from casual internet users to professionals handling sensitive information. I'll share my hands-on experience with each tool, explaining exactly how they work, their strengths and limitations, and how to implement them effectively. By the end of this article, you'll have a clear understanding of which extensions will best protect your online activities without compromising your browsing experience.
 
-## Table of Contents- [Understanding Today's Online Threat Landscape](#understanding-todays-online-threat-landscape)
+## Table of Contents
+- [Understanding Today's Online Threat Landscape](#understanding-todays-online-threat-landscape)
 - [Core Categories of Online Safety Extensions](#core-categories-of-online-safety-extensions)
 - [Essential Privacy Protection Tools](#essential-privacy-protection-tools)
 - [Password Management and Security](#password-management-and-security)

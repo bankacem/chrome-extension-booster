@@ -29,7 +29,8 @@ When it comes to [capturing website screenshots](/blog/screenshot-tools-chrome-c
 
 This guide is for anyone who regularly needs to capture web content—whether you're a casual user who occasionally saves articles or a professional who relies on screenshots daily. After testing both extensions and standalone apps extensively, I'll share my [hands-on experiences](/blog/lemur-browser-vs-kiwi-browser), practical examples, and honest assessments to help you determine which approach works best for your workflow. Let's explore the landscape of screenshot tools in detail, examining everything from basic functionality to advanced features, performance considerations, and real-world use cases.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [The Evolution of Screenshot Technology](#evolution)
 - [Understanding Website Screenshot Extensions](#understanding-extensions)
 - [Deep Dive into Standalone Screenshot Applications](#deep-dive-standalone)

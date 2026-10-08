@@ -31,7 +31,8 @@ Type "best chrome extensions for note taking" into Google and you'll get a dozen
 
 This guide fixes that by starting with the question that actually matters — what are you trying to capture, and where do you want it to live — and it covers two things almost every other roundup skips entirely: whether your notes can actually leave the extension if you switch tools later, and what you're granting when you click "Add to Chrome."
 
-## Table of Contents- [Which Type of Note-Taking Extension Do You Actually Need](#which-type-you-need)
+## Table of Contents
+- [Which Type of Note-Taking Extension Do You Actually Need](#which-type-you-need)
 - [Three Real Setups, So You Can See Yourself in One](#three-real-setups)
 - [Best for Lightweight Notes on Any Page](#lightweight-notes)
 - [Best for Clipping Full Pages into a Bigger Workspace](#clipping-pages)

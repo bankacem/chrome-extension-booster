@@ -92,7 +92,8 @@ howto:
 
 You can install free Chrome extensions more safely by starting with the [Chrome Web Store](/blog/chrome-web-store-guide), checking the publisher, reading the permission prompt, and removing tools you no longer need. The walkthrough below covers installation, permission auditing, malware avoidance, and performance management.
 
-## Table of Contents- [How to Install Extensions from the Chrome Web Store](#how-to-install-extensions-from-the-chrome-web-store)
+## Table of Contents
+- [How to Install Extensions from the Chrome Web Store](#how-to-install-extensions-from-the-chrome-web-store)
 - [How to Audit Extension Permissions](#how-to-audit-extension-permissions)
 - [Common Extension Risks and How to Prevent Them](#common-extension-risks-and-how-to-prevent-them)
 - [How to Manage Extension Count for Performance](#how-to-manage-extension-count-for-performance)

@@ -27,7 +27,8 @@ description: "Are you tired of a slow and cluttered browser? Look no further! In
 
 Are you tired of Chrome feeling sluggish, with tabs taking forever to load and your laptop fan kicking into overdrive just from browsing? You're not alone. After years of testing and optimizing my [own browsing workflow](/blog/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users), I've discovered that the secret to a faster browser isn't about installing more extensions—it's about choosing the right ones. This definitive [guide to lightweight Chrome extensions](/blog/a-lightweight-ad-blocker-for-chrome) will show you how to transform [your browsing experience with minimalism](/blog/unlocking-the-power-of-extensionhub-enhancing-your-browser-experience), focusing on efficiency over feature bloat. Whether you're a power user juggling dozens of tabs or someone who just wants a snappier web experience, this comprehensive lightweight Chrome extensions list will help you build a browser that's fast, responsive, and purposeful.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [Understanding Lightweight Extensions: What Makes Them Different](#understanding-lightweight)
 - [Performance Impact: How Extensions Affect Browser Speed](#performance-impact)
 - [The Ultimate Lightweight Chrome Extensions List](#ultimate-list)

@@ -27,7 +27,8 @@ When it comes [to automating](/blog/unlocking-the-power-of-the-avast-passwords-e
 
 For those who are new to Cypress, it's an open-source, JavaScript-based end-to-end testing framework that makes it incredibly easy to write, run, and debug web application tests. The Cypress Dashboard extension, available for Chrome, further amplifies its capabilities, offering a centralized platform for managing and analyzing test results. Whether you're a solo developer or part of a large testing team, this guide will provide you with the practical knowledge needed to leverage Cypress effectively in your Chrome environment.
 
-## Table of Contents- [Introduction to Cypress](#introduction-to-cypress)
+## Table of Contents
+- [Introduction to Cypress](#introduction-to-cypress)
 - [Why Cypress Stands Out in 2026](#why-cypress-stands-out)
 - [Cypress Extension Chrome: Core Features](#cypress-extension-chrome-features)
 - [Setting Up Your Environment](#setting-up-environment)
