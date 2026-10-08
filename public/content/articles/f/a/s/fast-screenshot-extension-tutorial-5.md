@@ -32,7 +32,8 @@ In today's digital landscape, the ability [to capture screenshot](/blog/quick-sc
 
 Whether you're a web developer needing to document bugs, a content creator gathering reference materials, or a professional sharing insights with colleagues, mastering fast screenshot techniques will transform how you capture and share information. [In this comprehensive guide](/blog/webpage-screenshot-chrome-2025-2), I'll share my hands-on experience with the best extensions, practical workflows, and pro tips that have genuinely improved my productivity. Let's dive into the world of efficient screenshotting and discover how you can capture exactly what you need, exactly when you need it.
 
-## Table of Contents- [Why Fast Screenshot Extensions Matter in 2026](#why-matters)
+## Table of Contents
+- [Why Fast Screenshot Extensions Matter in 2026](#why-matters)
 - [The Evolution of Screenshot Technology](#evolution)
 - [Key Features to Look For in a Screenshot Extension](#key-features)
 - [Top Fast Screenshot Extensions Compared](#top-extensions)

@@ -25,7 +25,8 @@ description: "When it comes to capturing web pages, users often find themselves 
 
 [Capturing web pages](/blog/screen-grab-chrome-2025-1) has become an essential part of our digital workflow, whether you're a developer documenting a bug, a researcher saving reference material, or a professional creating presentations. The right **extension chrome capture page web** can transform this task from a frustrating experience into a seamless part of your browsing routine. [In this comprehensive guide](/blog/webpage-screenshot-chrome-2025-2), I'll share my hands-on experience with the best Chrome extensions for capturing web pages, helping you find [the perfect tool for your](/blog/quick-screenshot-chrome-review-3) needs based on extensive [testing and comparison](/blog/quick-screenshot-chrome-vs).
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [Understanding Web Page Capture Tools](#understanding-tools)
 - [Key Features to Look For](#key-features)
 - [Top Extension Chrome Capture Page Web Solutions](#top-solutions)

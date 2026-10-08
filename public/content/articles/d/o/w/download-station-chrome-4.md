@@ -27,7 +27,8 @@ description: "Are you tired of tedious download management in your Chrome browse
 
 [In this comprehensive guide](/blog/effortlessly-manage-your-browser-export-extension-chrome), I'll walk you through everything you need to know about Download Station Chrome. We'll cover its features, how it compares to other tools, practical use cases, and whether it's worth adding to your browser. I've tested it with various file types, large downloads, and different network conditions to give you a complete picture of what to expect. Let's dive deep into how this extension can revolutionize your download experience.
 
-## Table of Contents- [What is Download Station Chrome?](#what-is-download-station-chrome)
+## Table of Contents
+- [What is Download Station Chrome?](#what-is-download-station-chrome)
 - [Key Features and Functionality](#key-features-and-functionality)
 - [Setting Up Download Station Chrome](#setting-up-download-station-chrome)
 - [Advanced Configuration Options](#advanced-configuration-options)
