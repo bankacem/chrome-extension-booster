@@ -1734,6 +1734,24 @@ class TestUnverifiedProductRemoval(unittest.TestCase):
         r = unverified_product_removal_gate(self.BEFORE, self.BEFORE)
         self.assertTrue(r["pass"], r["violations"])
 
+    def test_15_declared_line_replacement_pair(self):
+        old_line = "Five solutions stand out."
+        new_line = "Real Extension stands out."
+        after = self.BEFORE.replace(old_line, new_line, 1)
+        r = unverified_product_removal_gate(
+            self.BEFORE, after, allowed_line_replacements=[(old_line, new_line)])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_16_declared_replacement_pair_not_found_fails(self):
+        after = self.BEFORE.replace(
+            "Five solutions stand out.", "Real Extension stands out.", 1)
+        r = unverified_product_removal_gate(
+            self.BEFORE, after,
+            allowed_line_replacements=[("no such line", "no such new line")])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "replacement_pair_invalid"
+                            for v in r["violations"]))
+
 
 if __name__ == "__main__":
     unittest.main()

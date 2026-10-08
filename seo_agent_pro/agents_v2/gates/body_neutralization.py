@@ -112,6 +112,22 @@ def _proper_nouns(block: str) -> Counter:
     return Counter(found)
 
 
+def _pn_of_block(block: str) -> Counter:
+    """Proper nouns of one block, with the owner-mandated glued-TOC split
+    ('## Table of Contents- [X](#y)' -> heading + bullet line) applied first,
+    so the mandated split does not surface the heading's TOC-bullet words as
+    'new' names in the after block."""
+    if "Table of Contents-" not in block:
+        return _proper_nouns(block)
+    lines = []
+    for l in block.split("\n"):
+        m = _TOC_GLUED_RE.match(l)
+        # reconstruct the bullet WITH its '- ' prefix so token positions
+        # match the post-split reality
+        lines.append(f"{m.group(1)}\n- {m.group(2)}" if m else l)
+    return _proper_nouns("\n".join(lines))
+
+
 def _links(text: str) -> Counter:
     return Counter(m.group(1) or m.group(2) or m.group(0)
                    for m in _LINK_RE.finditer(text))
@@ -705,7 +721,7 @@ def body_neutralization_gate(
             for bp, ap in zip(b_chunk, a_chunk):
                 if ap.strip() in declared_after_blocks:
                     continue  # declared list: every word verified verbatim
-                extra = (set(_proper_nouns(ap)) - set(_proper_nouns(bp))
+                extra = (set(_pn_of_block(ap)) - set(_pn_of_block(bp))
                          - set(allow_pn))
                 if extra:
                     violations.append({
@@ -718,13 +734,13 @@ def body_neutralization_gate(
             # insert / unequal replace — op-level comparison
             before_pn = set()
             for b in b_chunk:
-                before_pn |= set(_proper_nouns(b))
+                before_pn |= set(_pn_of_block(b))
             for a in a_chunk:
                 if a.strip() in declared_after_blocks:
                     continue  # declared list: every word verified verbatim
                 if a.strip() in allow_para_texts:
                     continue  # whitelisted insert (e.g. fixed disclaimer line)
-                extra = set(_proper_nouns(a)) - before_pn - set(allow_pn)
+                extra = set(_pn_of_block(a)) - before_pn - set(allow_pn)
                 if extra:
                     violations.append({
                         "check": "proper_noun_new",
@@ -871,8 +887,12 @@ _H3_PREFIX_RE = re.compile(r"^(#{1,6})\s+H3:\s+(.*)$")
 
 
 def _mentions_unverified(line: str, products: Collection[str]) -> bool:
-    low = line.lower()
-    return any(p.lower() in low for p in products)
+    # strip markdown emphasis so '**Privacy-Focused** Popup Blocker' still
+    # matches the product name across the emphasis boundary; word boundaries
+    # so 'popup blocker pro' does NOT match inside 'popup blocker provides'
+    low = re.sub(r"[*_`~]", "", line).lower()
+    return any(re.search(r"\b" + re.escape(p.lower()) + r"\b", low)
+               for p in products)
 
 
 def _owned_section_lines(lines: List[str], products: Collection[str]) -> set:
@@ -928,6 +948,7 @@ def unverified_product_removal_gate(
     unverified_products: Collection[str] = UNVERIFIED_PRODUCTS,
     *,
     allowed_new_lines: Collection[str] = (),
+    allowed_line_replacements: Collection[Tuple[str, str]] = (),
     allowed_heading_renames: Collection[Tuple[str, str]] = (),
     word_drop_limit_pct: float = None,
 ) -> Dict:
@@ -966,6 +987,22 @@ def unverified_product_removal_gate(
     lb, la = before_body.splitlines(), after_body.splitlines()
     owned_b = _owned_section_lines(lb, prods)
     owned_a = _owned_section_lines(la, prods)
+
+    # declared (old_line, new_line) replacement pairs — both sides verified
+    # byte-exact against the diff (used for count-fix / feature-fix lines)
+    lb_set, la_set = set(lb), set(la)
+    valid_pair_old, valid_pair_new = set(), set()
+    for o, n in (allowed_line_replacements or ()):  
+        o, n = o.rstrip("\n"), n.rstrip("\n")
+        if o in lb_set and n in la_set:
+            valid_pair_old.add(o)
+            valid_pair_new.add(n)
+        else:
+            violations.append({
+                "check": "replacement_pair_invalid",
+                "detail": f"declared pair not found verbatim: "
+                          f"{o[:60]!r} -> {n[:60]!r}",
+            })
 
     rename_old = {o for o, _n in allow_renames}
     rename_toc = {}  # anchor -> new heading text (for renamed-heading TOC bullets)
@@ -1009,6 +1046,8 @@ def unverified_product_removal_gate(
         for a in adds:
             if not a.strip() or a in allow_new or _is_renamed_toc_bullet(a):
                 continue  # blank / declared verbatim / renamed-heading TOC bullet
+            if a in valid_pair_new:
+                continue  # declared old->new replacement pair
             if a in rename_new or _h3_stripped_counterpart(a, dels):
                 continue  # allowed heading rename / mandated H3-prefix strip
             if any(d.strip() and a in d for d in dels):
@@ -1020,7 +1059,7 @@ def unverified_product_removal_gate(
         for k, d in enumerate(dels):
             if not d.strip() or (i1 + k) in owned_b or (i1 + k) in glued_ok:
                 continue
-            if d in rename_old or d in set(adds):
+            if d in rename_old or d in set(adds) or d in valid_pair_old:
                 continue
             if _HEADING_LINE_RE.match(d) and _h3_stripped_counterpart(d, adds):
                 continue  # mandated '### H3: ' prefix strip
