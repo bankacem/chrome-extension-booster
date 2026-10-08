@@ -24,7 +24,8 @@ description: "Google Chrome is one of the most widely used web browsers, offerin
 <img src="/content/images/chrome-privacy-extensions-worth-adding-today/featured.webp" alt="chrome-privacy-extensions-worth-adding-today" width="1200" height="630" loading="lazy" class="featured-image">
 
 
-## Table of Contents- [Why Online Privacy Matters More Than Ever](/blog/unlocking-online-security-the-power-of-avast-extension-google-chrome)
+## Table of Contents
+- [Why Online Privacy Matters More Than Ever](/blog/unlocking-online-security-the-power-of-avast-extension-google-chrome)
 - [How Chrome Extensions Actually Protect You](/blog/a-chrome-extension-built-for-your-privacy)
 - [The Core Types of Privacy Extensions](#core-types-privacy-extensions)
 - [Essential Google Chrome Privacy Extensions for 2026](#essential-chrome-privacy-extensions)

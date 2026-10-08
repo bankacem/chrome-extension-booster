@@ -20,7 +20,8 @@ read_time: "16"
 <img src="/content/images/chatgpt-conversation-search-extension-2026/featured.webp" alt="🔎 ChatGPT Conversation Search Chrome Extensions (2026) — Never Lose a Chat Again" width="1200" height="630" loading="lazy" class="featured-image">
 
 
-## Table of Contents- [The Search Nightmare: Why AI Conversation Search Fails](/blog/chatgpt-search-history-extension-2026)
+## Table of Contents
+- [The Search Nightmare: Why AI Conversation Search Fails](/blog/chatgpt-search-history-extension-2026)
 - [Why This Matters in 2026](#why-matters)
 - [How ChatGPT Search Extensions Work](#how-they-work)
 - [The 2026 Conversation Search Extension Showdown](#extension-showdown)

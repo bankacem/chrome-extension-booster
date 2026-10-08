@@ -25,7 +25,8 @@ description: "Are you tired of annoying pop-ups and intrusive ads disrupting you
 
 Are you tired of intrusive pop-ups disrupting your browsing experience? A reliable chrome [pop up blocker can transform](/blog/pop-up-blocker-for-chrome-partial) your time online by eliminating distractions and enhancing security. [In this comprehensive guide](/blog/why-light-popup-blocker-is-better-than-heavy-adblockers-6), I'll share my hands-on testing experience [with various blockers to help](/blog/cookie-consent-blocker-chrome) you find the perfect solution for your needs. Whether you're concerned about privacy, performance, or simply want a cleaner browsing experience, I'll provide actionable insights based on real-world testing.
 
-## Table of Contents- [What is a Chrome Pop Up Blocker and How It Works](#what-is-chrome-popup-blocker)
+## Table of Contents
+- [What is a Chrome Pop Up Blocker and How It Works](#what-is-chrome-popup-blocker)
 - [Why Pop-Up Blockers Matter in 2026](#why-popup-blockers-matter)
 - [Key Features to Look for in a Pop-Up Blocker](#key-features)
 - [Comparing Top Chrome Pop-Up Blockers](#comparing-blockers)

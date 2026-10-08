@@ -31,7 +31,8 @@ read_time: 7
 
 <img src="/content/images/add-extension-to-chrome-7/featured.webp" alt="How to Add an Extension to Chrome: A Step-by-Step Guide (2026)" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents- [How to Install a Chrome Extension](#install)
+## Table of Contents
+- [How to Install a Chrome Extension](#install)
 - [Alternative Installation Methods](#alternatives)
 - [How to Check If an Extension Is Safe](#safe)
 - [Understanding Permissions](#permissions)

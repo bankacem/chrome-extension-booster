@@ -39,7 +39,8 @@ In my](/blog/essential-chrome-extensions-for-ad-free-browsing-user-experience-sp
 
 As someone who spends hours daily researching and testing Chrome extensions, I understand that not all ad blockers are created equal. Some are too aggressive, blocking content you actually want to see. Others are too passive, letting through the very ads you're trying to avoid. That's why I've put together this comprehensive guide to help you find the perfect block video ads Chrome extension for your specific needs, whether you're a productivity enthusiast, privacy-conscious user, or just someone who wants a cleaner browsing experience.
 
-## Table of Contents- [Why Video Ads Are More Than Just Annoying in 2026](/blog/stop-annoying-ads-chrome-mobile)
+## Table of Contents
+- [Why Video Ads Are More Than Just Annoying in 2026](/blog/stop-annoying-ads-chrome-mobile)
 - [How Video Ads Impact Your Productivity and Focus](#how-video-ads-impact-your-productivity-and-focus)
 - [Types of Video Ads You'll Encounter](#types-of-video-ads-youll-encounter)
 - [Key Features to Look for in a Block Video Ads Chrome Extension](#key-features-to-look-for-in-a-block-video-ads-chrome-extension)

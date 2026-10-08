@@ -27,7 +27,8 @@ description: "Are you tired of clicking through multiple pages to find the infor
 <img src="/content/images/a-game-changer-for-productivity/featured.webp" alt="a-game-changer-for-productivity" width="1200" height="630" loading="lazy" class="featured-image">
 
 
-## Table of Contents- [What is Autopager Chrome and How Does It Work?](#what-is-autopager)
+## Table of Contents
+- [What is Autopager Chrome and How Does It Work?](#what-is-autopager)
 - [The Evolution of Pagination: From Manual to Automated](#evolution-pagination)
 - [Key Features and Capabilities](#key-features)
 - [Setting Up Autopager Chrome: A Step-by-Step Guide](#setup-guide)
