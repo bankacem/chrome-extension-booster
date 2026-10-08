@@ -93,6 +93,7 @@ def call_model(model, user_msg, cost_state, article_id):
     with urllib.request.urlopen(req, timeout=CALL_TIMEOUT) as r:
         data = json.load(r)
     usage = data.get("usage", {})
+    finish = data["choices"][0].get("finish_reason", "")
     pin = usage.get("prompt_tokens", 0)
     pout = usage.get("completion_tokens", 0)
     cost_state["usd_est_run"] += pin / 1e6 * INPUT_PRICE.get(model, 1.0)
@@ -105,14 +106,38 @@ def call_model(model, user_msg, cost_state, article_id):
     content = data["choices"][0]["message"]["content"]
     return content, {"model": model, "prompt_tokens": pin,
                      "completion_tokens": pout,
+                     "finish_reason": finish,
                      "latency_s": round(time.time() - t0, 1)}
 
 
 def parse_json_paragraphs(content, expected_indices):
-    m = re.search(r"\{[\s\S]*\}", content)
-    if not m:
-        raise ValueError("no JSON object in model output")
-    obj = json.loads(m.group(0))
+    """Strict JSON parse with a disclosed salvage path: if the model output
+    was truncated (unclosed object), recover complete {index,new_text} pairs
+    and accept ONLY if every expected index is present and intact."""
+    cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", content.strip(), flags=re.M)
+    obj = None
+    m = re.search(r"\{[\s\S]*\}", cleaned)
+    if m:
+        try:
+            obj = json.loads(m.group(0))
+        except json.JSONDecodeError:
+            obj = None
+    if obj is None:
+        # truncated-JSON salvage: pull complete pairs only
+        pairs = re.findall(
+            r'\{\s*"index"\s*:\s*(\d+)\s*,\s*"new_text"\s*:\s*'
+            r'"((?:[^"\\]|\\.)*)"\s*\}', cleaned)
+        salvaged = {}
+        for idx, txt in pairs:
+            try:
+                salvaged[int(idx)] = json.loads(f'"{txt}"')
+            except json.JSONDecodeError:
+                continue
+        missing = set(expected_indices) - set(salvaged)
+        if missing:
+            raise ValueError(
+                f"no/partial JSON in model output; missing {sorted(missing)[:5]}")
+        return salvaged
     paras = {int(p["index"]): str(p["new_text"])
              for p in obj.get("paragraphs", [])}
     missing = set(expected_indices) - set(paras)
