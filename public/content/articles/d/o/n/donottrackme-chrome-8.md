@@ -25,7 +25,8 @@ description: "As we navigate the vast expanse of the internet, it's becoming inc
 
 In today's digital landscape, where every click, view, and search is potentially being monitored, [protecting your online](/blog/protecting-your-online-privacy) privacy has never been more critical. The donottrackme Chrome extension stands as one of [the most comprehensive solutions for](/blog/quick-screenshot-chrome-in-2025-7) safeguarding your browsing activities from prying eyes. This guide is for anyone who values their digital privacy and wants to understand how this powerful extension works, what it can do, and how to make the most of its features. Having tested donottrackme Chrome extensively across various browsing scenarios, I'll provide you with a thorough examination of its capabilities, limitations, and practical implementation strategies.
 
-## Table of Contents- [Understanding DonotTrackMe: The Privacy Shield for Chrome](#understanding-donottrackme)
+## Table of Contents
+- [Understanding DonotTrackMe: The Privacy Shield for Chrome](#understanding-donottrackme)
 - [How DonotTrackMe Actually Works: Technical Deep Dive](#how-donottrackme-works)
 - [Key Features That Set DonotTrackMe Apart](#key-features)
 - [Setting Up DonotTrackMe: Step-by-Step Installation Guide](#setting-up)

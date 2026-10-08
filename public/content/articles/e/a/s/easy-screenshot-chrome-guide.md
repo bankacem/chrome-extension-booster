@@ -28,7 +28,8 @@ In today's digital landscape, [capturing screenshots](/blog/easy-screenshot-chro
 
 As someone who spends countless hours researching and testing Chrome extensions, I understand that not all screenshot tools are created equal. Some excel at simplicity, others offer advanced annotation features, and some specialize in capturing entire web pages without missing a single detail. In this guide, I'll share my hands-on experience with various screenshot methods, highlighting their strengths and limitations so you can [choose the perfect tool for](/blog/screenshot-tool-chrome-review-2) your needs. Whether you're a casual user looking for a quick way to capture something important or a power user needing professional-grade screenshot capabilities, this guide will provide you with the knowledge to screenshot with ease in Chrome.
 
-## Table of Contents- [Why Screenshots Matter in the Digital Age](#why-screenshots-matter)
+## Table of Contents
+- [Why Screenshots Matter in the Digital Age](#why-screenshots-matter)
 - [Built-in Screenshot Methods in Chrome](#built-in-methods)
 - [Top Chrome Extensions for Screenshotting](#top-extensions)
 - [Full-Page Screenshot Solutions](#full-page-solutions)

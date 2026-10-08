@@ -28,7 +28,8 @@ As someone who's tested numerous dropshipping solutions over the years, I can co
 
 The AliDropship extension stands out in a crowded market by addressing the core challenges dropshippers face: product sourcing, order management, and pricing optimization. [Having used](/blog/unlocking-the-power-of-chrome-extensions-for-opera) it across multiple stores in my testing, I've seen firsthand how it can reduce manual work while [improving operational efficiency](/blog/a-chrome-extension-built-for-web-developers). This guide will walk you through everything you need to know about implementing this solution effectively, from installation to advanced features that can give your business a competitive edge.
 
-## Table of Contents- [Understanding AliDropship: Core Concepts](#understanding-alidropship)
+## Table of Contents
+- [Understanding AliDropship: Core Concepts](#understanding-alidropship)
 - [Installation and Setup Process](#installation-setup)
 - [Key Features and Functionality](#key-features)
 - [Product Import and Management](#product-import)

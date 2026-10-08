@@ -27,7 +27,8 @@ Are you looking for a reliable way [to download Instagram stories using](/blog/d
 
 Whether you're a social media [manager saving content for your](/blog/downloading-instagram-content-from-chrome) team, a casual user wanting to keep memories of friends' stories, or a content creator building inspiration archives, I'll share my hands-on experience with the most effective solutions. After testing numerous extensions over the past year, I've identified which ones work reliably without compromising your browser's performance or security.
 
-## Table of Contents- [Why Instagram Stories Extensions Matter in 2026](#why-matters)
+## Table of Contents
+- [Why Instagram Stories Extensions Matter in 2026](#why-matters)
 - [Understanding How Instagram Stories Extensions Work](#how-they-work)
 - [Key Features to Look For in a Stories Extension](#key-features)
 - [Top 5 Instagram Stories Extensions for Chrome](#top-extensions)

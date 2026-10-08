@@ -33,7 +33,8 @@ Emojis have become the universal language of digital expression, adding color, e
 
 In this guide, I've personally tested and evaluated over a dozen emoji picker Chrome extensions to bring you the most honest, detailed comparison available. We'll explore the features that matter most, performance considerations, privacy implications, and how to choose the best option for your specific needs. By the end of this article, you'll have a clear understanding of which emoji picker Chrome extension will help you express more in every message while maintaining your productivity and privacy.
 
-## Table of Contents- [Why Emoji Pickers Matter in 2026](#why-matters)
+## Table of Contents
+- [Why Emoji Pickers Matter in 2026](#why-matters)
 - [Types of Emoji Picker Chrome Extensions](#types-extensions)
 - [Key Features to Consider](#key-features)
 - [Top Emoji Picker Extensions Compared](#top-extensions)

@@ -27,7 +27,8 @@ In my years of testing browser extensions, I've discovered that the right color 
 
 This definitive guide covers everything you need to know about color extensions for Chrome in 2026. I've personally tested over 25 extensions, analyzed their features, performance impacts, and customization capabilities. [In this comprehensive resource](/blog/why-you-should-avoid-cloud-based-password-managers-2), you'll find our top recommendations, detailed installation guides, troubleshooting tips, and expert advice on [selecting the perfect extension chrome](/blog/screenshot-tool-chrome-review-2) color for your specific needs.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [Types of Color Extensions](#types-extensions)
 - [Top Extension Chrome Color Recommendations](#top-recommendations)
 - [How to Install and Set Up](#installation-guide)
@@ -436,7 +437,7 @@ After years of testing and using color extensions, I've discovered numerous stra
 
 ## Frequently Asked Questions {#faq}
 
-### H3: Are color extensions safe to use?
+### Are color extensions safe to use?
 
 H3: How do color extensions affect battery life on laptops?
 
