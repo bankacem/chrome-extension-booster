@@ -8,7 +8,7 @@
     "toggle_menu": "Toggle menu"
   },
   "hero": {
-    "badge": "9 free Chrome extensions · 880+ published guides",
+    "badge": "9 free Chrome extensions · 800+ published guides",
     "title_start": "Supercharge Your",
     "title_highlight": "Chrome Browser",
     "title_end": "Experience",
@@ -17,12 +17,12 @@
     "learn_more": "Learn More",
     "extensions": "Extensions",
     "guides": "Published Guides",
-    "free_core": "Free Core Features"
+    "free_core": "Free"
   },
   "stats": {
     "extensions": "Chrome Extensions",
     "guides": "Published Guides",
-    "free": "Free Core Features"
+    "free": "Free"
   },
   "extensions_section": {
     "eyebrow": "Our Extensions",
@@ -58,34 +58,34 @@
     "eyebrow": "Why Choose Us",
     "title_start": "Built Different,",
     "title_highlight": "Built Better",
-    "description": "Unlike generic extensions that slow down your browser and harvest your data, our tools are designed with performance and privacy at their core. Every line of code serves a purpose.",
-    "no_trackers": "No trackers",
-    "under_1mb": "Under 1MB each",
-    "support": "24/7 support",
+    "description": "Nine single-purpose tools — screenshots, tab suspension, redirect blocking, dark mode, passwords, and more — each linked to its official Chrome Web Store listing.",
+    "no_trackers": "All 9 extensions free",
+    "under_1mb": "Official Web Store listings",
+    "support": "800+ published guides",
     "items": {
       "lightweight_fast": {
-        "title": "Lightweight & Fast",
-        "description": "All extensions are optimized for minimal memory usage and maximum performance."
+        "title": "Single-purpose tools",
+        "description": "Each extension does one job — full-page screenshots, tab suspension, redirect blocking, dark mode, and more — as listed in the catalog."
       },
       "privacy_first": {
-        "title": "Privacy First",
-        "description": "Zero data tracking. Your browsing data stays on your device, always."
+        "title": "Store-listed permissions",
+        "description": "Every extension links to its official Chrome Web Store listing, where you can review the requested permissions before installing."
       },
       "regular_updates": {
-        "title": "Regular Updates",
-        "description": "Frequent updates with new features based on community feedback."
+        "title": "Setup Guides",
+        "description": "Published guides walk through installation, configuration, and troubleshooting for the tools covered here."
       },
       "community_driven": {
         "title": "Community Driven",
         "description": "Built to solve real problems Chrome users run into every day."
       },
       "open_source": {
-        "title": "Open Source",
-        "description": "Transparent development with code available for review and contribution."
+        "title": "Multilingual Site",
+        "description": "The site ships in English, Arabic, French, Spanish, and Portuguese."
       },
       "free_forever": {
-        "title": "Free Forever",
-        "description": "Core features are free. Premium features at affordable prices."
+        "title": "Free",
+        "description": "All ExtensionTo extensions are free. There are no premium tiers."
       }
     }
   },
@@ -118,7 +118,7 @@
       },
       "free": {
         "question": "Are these extensions free to use?",
-        "answer": "Yes! All our extensions offer free versions with core features. Some extensions also have premium tiers with advanced functionality for power users."
+        "answer": "Yes. All ExtensionTo extensions are free — every 'Add to Chrome' button installs the complete extension at no cost."
       },
       "manage": {
         "question": "How do I manage or remove extensions?",
@@ -126,15 +126,15 @@
       },
       "safe": {
         "question": "Is my data safe with these extensions?",
-        "answer": "Absolutely. Privacy is our top priority. Our extensions only request necessary permissions and never collect or sell your personal data. All data processing happens locally on your device."
+        "answer": "Every extension links to its official Chrome Web Store listing, where you can review the permissions it requests before you install."
       },
       "speed": {
         "question": "Do extensions slow down my browser?",
-        "answer": "Our extensions are optimized for minimal resource usage. They're designed to enhance your browsing experience without impacting performance. You can always disable extensions when not needed."
+        "answer": "If an extension isn't needed, you can disable or remove it at any time from chrome://extensions in your browser."
       },
       "support": {
         "question": "How do I get support for an extension?",
-        "answer": "You can reach our support team through the contact form on this website, or leave a review on the Chrome Web Store. We typically respond within 24 hours."
+        "answer": "You can reach the team through the contact form on this website, or leave a review on the Chrome Web Store."
       }
     }
   },
@@ -176,7 +176,7 @@
     "newsletter_description": "Subscribe to our newsletter for new extensions, updates, and productivity tips.",
     "email_placeholder": "Enter your email",
     "subscribe": "Subscribe",
-    "no_spam": "No spam, ever. Unsubscribe anytime."
+    "no_spam": "Unsubscribe at any time."
   },
   "blog": {
     "title": "Our Blog",

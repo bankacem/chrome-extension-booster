@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const statKeys = [
   { icon: Puzzle, value: 9, suffix: "", key: "extensions", decimals: 0 },
-  { icon: BookOpen, value: 880, suffix: "+", key: "guides", decimals: 0 },
+  { icon: BookOpen, value: 800, suffix: "+", key: "guides", decimals: 0 },
   { icon: Gift, value: 100, suffix: "%", key: "free", decimals: 0 }
 ] as const;
 

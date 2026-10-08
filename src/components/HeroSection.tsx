@@ -75,7 +75,7 @@ const HeroSection = () => {
           >
             {[
               { value: "9", label: t("hero.extensions") },
-              { value: "880+", label: t("hero.guides") },
+              { value: "800+", label: t("hero.guides") },
               { value: "100%", label: t("hero.free_core") },
             ].map((stat, index) => (
               <div key={index} className="text-center">

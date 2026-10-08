@@ -8,7 +8,7 @@
     "toggle_menu": "Abrir menu"
   },
   "hero": {
-    "badge": "9 extensões Chrome gratuitas · mais de 880 guias publicados",
+    "badge": "9 extensões Chrome gratuitas · mais de 800 guias publicados",
     "title_start": "Potencialize sua experiência no",
     "title_highlight": "navegador Chrome",
     "title_end": "",
@@ -17,12 +17,12 @@
     "learn_more": "Saiba mais",
     "extensions": "Extensões Chrome gratuitas",
     "guides": "Guias publicados",
-    "free_core": "Recursos essenciais gratuitos"
+    "free_core": "Grátis"
   },
   "stats": {
     "extensions": "Extensões Chrome gratuitas",
     "guides": "Guias publicados",
-    "free": "Recursos essenciais gratuitos"
+    "free": "Grátis"
   },
   "extensions_section": {
     "eyebrow": "Nossas extensões",
@@ -58,34 +58,34 @@
     "eyebrow": "Por que escolher a ExtensionTo?",
     "title_start": "Feita de um jeito diferente,",
     "title_highlight": "melhor em todos os sentidos",
-    "description": "Ao contrário de extensões genéricas que deixam o navegador lento e coletam seus dados, nossas ferramentas têm desempenho e privacidade como prioridades. Cada linha de código tem um propósito.",
-    "no_trackers": "Sem rastreadores",
-    "under_1mb": "Menos de 1 MB cada",
-    "support": "Suporte 24 horas",
+    "description": "Nove ferramentas de propósito único — capturas de tela, suspensão de abas, bloqueio de redirecionamentos, modo escuro, senhas e mais — cada uma ligada à sua página oficial na Chrome Web Store.",
+    "no_trackers": "Todas as 9 extensões gratuitas",
+    "under_1mb": "Páginas oficiais na loja",
+    "support": "Mais de 800 guias publicados",
     "items": {
       "lightweight_fast": {
-        "title": "Leve e rápida",
-        "description": "Todas as extensões são otimizadas para usar pouca memória e oferecer o máximo de desempenho."
+        "title": "Ferramentas de propósito único",
+        "description": "Cada extensão faz uma única tarefa — capturas de página inteira, suspensão de abas, bloqueio de redirecionamentos, modo escuro e mais — como listado no catálogo."
       },
       "privacy_first": {
-        "title": "Privacidade em primeiro lugar",
-        "description": "Nenhum rastreamento de dados. Seus dados de navegação permanecem sempre no seu dispositivo."
+        "title": "Permissões listadas na loja",
+        "description": "Cada extensão aponta para a sua página oficial na Chrome Web Store, onde você pode revisar as permissões pedidas antes de instalar."
       },
       "regular_updates": {
-        "title": "Atualizações regulares",
-        "description": "Atualizações frequentes com novos recursos baseados no feedback da comunidade."
+        "title": "Guias de configuração",
+        "description": "Guias publicados explicam instalação, configuração e solução de problemas das ferramentas abordadas aqui."
       },
       "community_driven": {
         "title": "Feita com a comunidade",
         "description": "Criada para resolver problemas reais que os usuários do Chrome enfrentam todos os dias."
       },
       "open_source": {
-        "title": "Código aberto",
-        "description": "Desenvolvimento transparente, com código disponível para análise e contribuição."
+        "title": "Site multilíngue",
+        "description": "O site está disponível em inglês, árabe, francês, espanhol e português."
       },
       "free_forever": {
-        "title": "Grátis para sempre",
-        "description": "Os recursos essenciais são gratuitos. Recursos premium por preços acessíveis."
+        "title": "Grátis",
+        "description": "Todas as extensões da ExtensionTo são gratuitas. Não há planos pagos."
       }
     }
   },
@@ -118,7 +118,7 @@
       },
       "free": {
         "question": "Essas extensões são gratuitas?",
-        "answer": "Sim. Todas as nossas extensões oferecem versões gratuitas com recursos essenciais. Algumas também têm planos premium com funções avançadas para usuários experientes."
+        "answer": "Sim. Todas as extensões da ExtensionTo são gratuitas — cada botão \"Adicionar ao Chrome\" instala a extensão completa sem custo."
       },
       "manage": {
         "question": "Como gerencio ou removo extensões?",
@@ -126,15 +126,15 @@
       },
       "safe": {
         "question": "Meus dados estão seguros com essas extensões?",
-        "answer": "Sim. A privacidade é nossa prioridade. Nossas extensões solicitam apenas as permissões necessárias e nunca coletam ou vendem seus dados pessoais. Todo o processamento ocorre localmente no seu dispositivo."
+        "answer": "Cada extensão aponta para a sua página oficial na Chrome Web Store, onde você pode revisar as permissões solicitadas antes de instalar."
       },
       "speed": {
         "question": "As extensões deixam meu navegador mais lento?",
-        "answer": "Nossas extensões são otimizadas para usar poucos recursos. Elas foram criadas para melhorar sua navegação sem prejudicar o desempenho, e você pode desativá-las quando não precisar delas."
+        "answer": "Se uma extensão não for necessária, você pode desativá-la ou removê-la a qualquer momento em chrome://extensions no seu navegador."
       },
       "support": {
         "question": "Como obtenho suporte para uma extensão?",
-        "answer": "Entre em contato com nossa equipe pelo formulário deste site ou deixe uma avaliação na Chrome Web Store. Normalmente respondemos em até 24 horas."
+        "answer": "Entre em contato pelo formulário deste site ou deixe uma avaliação na Chrome Web Store."
       }
     }
   },
@@ -176,7 +176,7 @@
     "newsletter_description": "Assine nossa newsletter para receber novas extensões, atualizações e dicas de produtividade.",
     "email_placeholder": "Digite seu e-mail",
     "subscribe": "Assinar",
-    "no_spam": "Sem spam. Cancele quando quiser."
+    "no_spam": "Cancele quando quiser."
   },
   "blog": {
     "title": "Nosso blog",
