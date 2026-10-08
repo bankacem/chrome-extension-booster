@@ -29,7 +29,8 @@ When it comes to protecting your online privacy, choosing between [Privacy Badge
 
 Whether you're a privacy-conscious individual, a professional handling sensitive data, or simply someone tired of being tracked across the web, this article will give you the clarity you need. I've put both extensions through their paces, analyzing everything from their core tracking protection capabilities to their impact on browser performance and website functionality. By the end of this guide, you'll know exactly which tool aligns with your specific needs and privacy priorities.
 
-## Table of Contents- [Understanding Privacy Badger and Ghostery](#understanding-privacy-badger-and-ghostery)
+## Table of Contents
+- [Understanding Privacy Badger and Ghostery](#understanding-privacy-badger-and-ghostery)
 - [Core Privacy Protection Mechanisms](#core-privacy-protection-mechanisms)
 - [User Experience and Interface Comparison](#user-experience-and-interface-comparison)
 - [Performance and Resource Usage](#performance-and-resource-performance)

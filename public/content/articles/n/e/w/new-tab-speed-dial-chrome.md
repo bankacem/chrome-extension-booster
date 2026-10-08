@@ -31,7 +31,8 @@ description: 'Speed dial chrome extension — a 2026 guide with step-by-step set
 
 The [Chrome browser](https://www.google.com/chrome/)'s default new tab page has remained largely unchanged for years—just a search bar and some frequently visited sites. If you're tired of this minimal experience and want to transform your blank tab into a personalized command center, a speed dial chrome extension might be exactly what you need. [In this comprehensive guide](/blog/how-to-speed-up-chrome-partial), I'll share my hands-on testing of the best custom new tab page chrome extensions available in 2026, helping you build the perfect start page that combines visual bookmarks with productivity widgets. Whether you're a power user looking to optimize your workflow or someone who simply wants a more visually appealing way to access your favorite sites, I've tested and compared the options to give you the tested answer.
 
-## Table of Contents- [Why Your New Tab Page Matters More Than Ever](#why-tab-matters)
+## Table of Contents
+- [Why Your New Tab Page Matters More Than Ever](#why-tab-matters)
 - [Understanding Speed Dial and New Tab Extensions](#understanding-speed-dial)
 - [Key Features to Look For in 2026](#key-features)
 - [Top Speed Dial Extensions Compared](#top-extensions)

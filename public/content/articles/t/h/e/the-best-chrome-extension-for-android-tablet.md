@@ -27,7 +27,8 @@ description: "As an Android tablet user, you're likely no stranger to the versat
 
 As an Android tablet user, you've likely experienced the frustration [of limited browser functionality compared](/blog/kiwi-browser-extensions-a-full-guide) to your desktop. While Chrome on Android offers a solid browsing experience, it's missing one key feature that transforms how we interact with the web: extensions. That's right—finding the right tablet extension can completely change how you use your Android tablet for work, productivity, or entertainment. [In this comprehensive guide](/blog/unlocking-the-full-potential-of-youtube-youtube-extensions), I'll share my hands-on testing experience with Chrome extensions on Android tablets, [reveal the workarounds](/blog/unlocking-the-full-potential-of-chrome-mobile) that actually work, and show you exactly how to unlock the full potential of your device.
 
-## Table of Contents- [The Current State of Chrome Extensions on Android](#current-state)
+## Table of Contents
+- [The Current State of Chrome Extensions on Android](#current-state)
 - [Why This Matters in 2026](#why-matters)
 - [Top Android Browsers Supporting Extensions](#top-browsers)
 - [The Best Tablet Extensions for Productivity](#best-productivity)

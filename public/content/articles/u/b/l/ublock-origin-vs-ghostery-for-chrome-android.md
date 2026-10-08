@@ -29,7 +29,8 @@ When it comes to protecting your privacy and browsing experience on Chrome Andro
 
 The choice between uBlock Origin and Ghostery isn't just about which blocks more ads—it's about understanding your priorities: Are you looking for maximum performance with minimal resource usage? Do you value detailed insights into who's tracking you? Or perhaps you want a balance between both worlds? In this article, I'll break down everything you need to know about these two popular Chrome extensions for Android, from their core features and performance impact to their privacy implications and customization options.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [Understanding the Core Differences](#core-differences)
 - [Performance and Resource Usage on Android](#performance)
 - [Privacy and Tracking Protection](#privacy)

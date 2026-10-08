@@ -35,7 +35,8 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 
 Are you frustrated when trying to save images from protected sites in Chrome? You're not alone. In my [years of testing browser tools](/blog/unlocking-the-power-of-api-testing-api-tester-chrome-extension) and extensions, I've encountered countless sites that implement various barriers to prevent image saving. This definitive guide will walk you through multiple tested methods to save images from protected sites Chrome, whether you're a designer collecting inspiration, a researcher gathering materials, or someone who simply wants to preserve a personal photo. I'll cover everything from built-in browser features to specialized extensions and [developer tools](https://developer.chrome.com/docs/devtools), all while respecting website terms of service and copyright considerations.
 
-## Table of Contents- [Understanding Image Protection on Websites](#understanding-image-protection)
+## Table of Contents
+- [Understanding Image Protection on Websites](#understanding-image-protection)
 - [Why This Matters in 2026](#why-matters)
 - [Built-in Chrome Methods for Saving Images](#built-in-chrome-methods)
 - [Chrome Extensions for Saving Protected Images](#chrome-extensions)

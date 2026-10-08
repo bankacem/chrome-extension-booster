@@ -32,7 +32,8 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 
 In this comprehensive guide, I'll share my findings from testing the most popular download acceleration extensions for Chrome. We'll examine their features, performance, limitations, and how they stack up against each other based on real-world testing. By the end, you'll have a clear understanding of which extension best suits your needs and how to configure it for optimal performance. Let's dive into the world of download acceleration and transform how you handle files in Chrome.
 
-## Table of Contents- [Understanding Download Acceleration Technology](#understanding-download-acceleration-technology)
+## Table of Contents
+- [Understanding Download Acceleration Technology](#understanding-download-acceleration-technology)
 - [Why This Matters in 2026](#why-this-matters)
 - [Top Chrome Extensions for Downloading Files Faster](#top-chrome-extensions)
 - [Comparing Download Acceleration Features](#comparing-features)

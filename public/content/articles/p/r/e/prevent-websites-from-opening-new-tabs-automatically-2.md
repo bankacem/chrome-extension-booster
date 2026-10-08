@@ -29,7 +29,8 @@ Are you tired of websites opening new tabs automatically, [cluttering your brows
 
 Over the years, I've tested numerous approaches to combat this annoying behavior, from built-in browser settings to specialized extensions. Some solutions work better than others depending on the specific type of automatic tab opening you're experiencing. [In this comprehensive guide](/blog/why-you-should-avoid-cloud-based-password-managers-2), I'll walk you through all the effective methods I've personally tested, explaining their pros and cons so you can choose the best approach for your needs.
 
-## Table of Contents- [Understanding Automatic Tab Opening](#understanding-automatic-tab-opening)
+## Table of Contents
+- [Understanding Automatic Tab Opening](#understanding-automatic-tab-opening)
 - [Why This Matters in 2026](#why-matters)
 - [Built-in Chrome Solutions](#built-in-solutions)
 - [Chrome Extensions for Blocking Automatic Tabs](#chrome-extensions)

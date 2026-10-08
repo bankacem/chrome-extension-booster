@@ -27,7 +27,8 @@ As a web developer juggling multiple projects, I've spent countless hours [wrest
 
 In my experience as a front-end developer specializing in responsive design, I've found that Chrome DevTools' mobile debugging capabilities have evolved into an indispensable toolkit. From simulating various device conditions to remotely debugging actual hardware, these features bridge the crucial gap between desktop development and real-world mobile testing. This guide will walk you through setup, advanced debugging techniques, performance optimization, and even workarounds for Chrome's mobile limitations based on my hands-on testing across dozens of [projects in 2026](/blog/stop-annoying-ads-chrome-mobile).
 
-## Table of Contents- [Why Mobile Debugging Matters in 2026](#why-matters)
+## Table of Contents
+- [Why Mobile Debugging Matters in 2026](#why-matters)
 - [Setting Up Chrome DevTools for Mobile Debugging](#setup-guide)
 - [Remote Debugging: Connecting Your Device](#remote-debugging)
 - [Device Mode Simulation vs. Real Device Testing](#device-mode-vs-real)

@@ -40,7 +40,8 @@ description: >-
 
 Understanding Chrome's memory behavior is crucial because the browser's architecture intentionally uses RAM to enhance performance and security. Unlike other browsers that might consolidate processes, Chrome creates separate processes for tabs, extensions, and the browser itself—a design choice that prevents a single problematic site [or extension from crashing the](/blog/stop-chrome-from-freezing-on-low-end-pcs-7) entire browser. While this isolation improves stability, it means that memory usage can accumulate quickly, especially with multiple tabs, media streaming, and resource-intensive extensions. This guide will walk you through a systematic approach to identifying memory hogs, implementing targeted fixes, and maintaining optimal performance without sacrificing functionality.
 
-## Table of Contents- [Why Chrome Uses So Much Memory in 2026](#why-chrome-memory)
+## Table of Contents
+- [Why Chrome Uses So Much Memory in 2026](#why-chrome-memory)
 - [Understanding Chrome's Memory Architecture](#memory-architecture)
 - [Initial Diagnostic Steps: Chrome Task Manager](#task-manager)
 - [Optimizing Chrome Performance Settings](#performance-settings)

@@ -29,7 +29,8 @@ description: "When browsing the internet, it's easy to stumble upon malicious we
 
 [In this comprehensive guide](/blog/windscribe-extension-to-chrome-9), I'll share my findings on the top Chrome extensions designed to protect you from malicious websites, phishing attempts, and other online threats. I've installed, tested, and compared numerous options to provide you with actionable insights that go beyond marketing claims. By the end of this article, you'll have a clear understanding of which tools best [suit your browsing habits and](/blog/safe-browsing-how-to-identify-shady-redirects-and-protect-your-online-security) security needs.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [Understanding Malicious Websites and Their Threats](#understanding-malicious-websites)
 - [How Chrome Extensions Protect You](#how-chrome-extensions-protect)
 - [Top Chrome Extensions to Block Malicious Websites](#top-extensions)

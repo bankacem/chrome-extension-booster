@@ -27,7 +27,8 @@ Looking to install Chrome extensions on Android 2026? You've come to the right p
 
 In this guide, I'll share the official methods Google now supports for using extensions on Android, along with alternative approaches for different Android browsers. I'll cover compatibility considerations, performance impacts, and provide specific recommendations based on my hands-on testing with various Android devices and Chrome versions. By the end, you'll have a clear understanding of how to install Chrome extensions on Android 2026 and which approach works best for your specific needs.
 
-## Table of Contents- [Understanding Chrome Extension Support on Android in 2026](#understanding-chrome-extension-support)
+## Table of Contents
+- [Understanding Chrome Extension Support on Android in 2026](#understanding-chrome-extension-support)
 - [Official Method: Using Chrome's Desktop Mode on Android](#official-method-desktop-mode)
 - [Alternative Method: Third-Party Browsers with Extension Support](#alternative-method-third-party)
 - [Popular Chrome Extensions That Work Well on Android](#popular-extensions)

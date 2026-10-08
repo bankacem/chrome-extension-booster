@@ -32,7 +32,8 @@ In the digital age of 2026, information overload is more real than ever. Social 
 
 Whether you're a researcher tracking industry updates, a blogger monitoring competitors, or just someone who wants to reclaim control over your content consumption, the right RSS extension can transform how you interact with the web. In this guide, I'll share my hands-on experiences with the best feed reader extension chrome options available right now, including their unique strengths, limitations, and how they perform under Chrome's latest Manifest V3 restrictions. By the end, you'll know exactly which tool fits your workflow and how to set it up for maximum efficiency.
 
-## Table of Contents- [Why RSS is Making a Comeback in 2026](#why-rss-is-making-a-comeback-in-2026)
+## Table of Contents
+- [Why RSS is Making a Comeback in 2026](#why-rss-is-making-a-comeback-in-2026)
 - [How RSS Readers Work in Modern Chrome](#how-rss-readers-work-in-modern-chrome)
 - [Key Features to Look for in an RSS Extension](#key-features-to-look-for-in-an-rss-extension)
 - [Top RSS Reader Chrome Extensions Compared](#top-rss-reader-chrome-extensions-compared)

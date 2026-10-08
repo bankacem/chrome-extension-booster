@@ -27,7 +27,8 @@ description: "Are you tired of slow download speeds and interrupted files? Look 
 
 Are you tired [of slow download speeds and](/blog/unlock-the-power-of-batch-image-downloader-extension) frustrating interruptions when trying to grab files from the web? [In my experience as someone](/blog/the-power-of-extension-ad-block-chrome) who regularly handles large files, [waiting for downloads to complete](/blog/the-best-free-download-manager-for-chrome) can be one of the biggest productivity killers. That's why I've put together this comprehensive guide on the IDM extension for Chrome free download latest version – the solution I've relied on for years to accelerate my download speeds and maintain reliable connections. Whether you're downloading software updates, media files, or large documents, this guide will walk you through everything you need to know about setting up and maximizing the Internet Download Manager extension for Chrome, based on my hands-on testing and real-world usage.
 
-## Table of Contents- [What is the IDM Extension for Chrome?](#what-is-idm)
+## Table of Contents
+- [What is the IDM Extension for Chrome?](#what-is-idm)
 - [How the IDM Extension Actually Works](#how-idm-works)
 - [Key Features That Make IDM Stand Out](#key-features)
 - [Step-by-Step Installation Guide](#installation-guide)

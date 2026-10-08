@@ -27,7 +27,8 @@ description: "Are you wondering how to update Chrome extensions to ensure you ha
 
 [Keeping your browser extensions updated](/blog/ajouter-extension-chrome-8) is one of the most important yet overlooked aspects of maintaining a secure and [efficient browsing experience](/blog/finding-the-right-browser-extension-for-you). If you've ever wondered how to update Chrome extensions properly, you've come to the right place. As someone who spends countless hours testing and reviewing browser extensions, I've seen firsthand how outdated extensions can create security vulnerabilities, slow down performance, and miss out on critical new features. This guide will walk you through everything you need to know about keeping your Chrome extensions current, whether you're a casual user or someone who relies on dozens of extensions for work and productivity.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [Security Implications of Outdated Extensions](#security-implications)
 - [Performance Benefits of Regular Updates](#performance-benefits)
 - [How to Check for Extension Updates](#check-updates)
