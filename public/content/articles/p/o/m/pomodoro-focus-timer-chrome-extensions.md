@@ -32,7 +32,8 @@ In the digital age of endless distractions, maintaining focus has become one of 
 
 The [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique), developed by Francesco Cirillo in the late 1980s, remains surprisingly effective in our modern digital landscape. The core principle is simple: work in focused 25-minute intervals followed by short breaks. What's changed in 2026 is how we implement this technique through browser extensions that integrate seamlessly with our workflow. In this guide, I'll share which extensions delivered consistent results for me, which features actually made a difference, and how to avoid the common pitfalls that turn focus timers into just another distraction.
 
-## Table of Contents- [Why Pomodoro Timers Work in 2026](#why-pomodoro-timers-work)
+## Table of Contents
+- [Why Pomodoro Timers Work in 2026](#why-pomodoro-timers-work)
 - [Key Features to Look For in a Pomodoro Extension](#key-features)
 - [Top 7 Pomodoro Chrome Extensions Tested](#top-7-extensions)
 - [Focus Timer Extensions vs Time Blocking Extensions](#focus-vs-time-blocking)

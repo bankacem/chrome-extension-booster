@@ -29,7 +29,8 @@ The world of text-to-speech (TTS) has evolved dramatically in recent years, and 
 
 In this comprehensive guide, we'll explore everything you need to know about TTS Chrome extensions—from understanding how they work to detailed reviews of [the best options available today](/blog/free-vpn-extensions-worth-trying-in-chrome). I'll share my [hands-on experience with each](/blog/adblock-chrome-android-complete-guide-2026) extension, highlighting their strengths, limitations, and ideal use cases. By the end, you'll have a clear understanding of which TTS Chrome extension will best serve your specific needs, whether that's natural-sounding voices, customization options, or seamless integration with your workflow.
 
-## Table of Contents- [The Evolution of TTS Technology](#evolution-of-tts)
+## Table of Contents
+- [The Evolution of TTS Technology](#evolution-of-tts)
 - [Why TTS Chrome Extensions Matter in 2026](#why-tts-matters)
 - [Key Features to Look for in TTS Chrome Extensions](#key-features)
 - [Top TTS Chrome Extensions: Detailed Reviews](#top-tts-extensions)

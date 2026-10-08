@@ -25,7 +25,8 @@ description: "As a designer, developer, or simply a web enthusiast, you understa
 
 Whether you're a designer dissecting a competitor's typography, a developer debugging font rendering issues, or simply a typography enthusiast admiring a website's aesthetic, the ability to identify fonts on [any webpage is an](/blog/ai-summary-chrome-extensions) invaluable skill. In my years working with web design and development, I've found that a good **font finder extension Chrome** [can save hours of](/blog/onetab-chrome-extension-2026-save-ram-restore-tabs-instantly) guesswork and detective work. These tools allow [you to instantly detect the](/blog/qr-code-generator-scanner-chrome-extensions) fonts used on any website, complete with CSS properties like font size, weight, and color, making them essential for anyone working with web design or typography. This guide will walk you through everything you need to know about font finder extensions, from how they work to detailed comparisons of the best options available in 2026.
 
-## Table of Contents- [Why Font Identification Matters in 2026](#why-matters)
+## Table of Contents
+- [Why Font Identification Matters in 2026](#why-matters)
 - [How Font Finder Extensions Work](#how-they-work)
 - [Essential Features to Look For](#essential-features)
 - [Top Font Finder Extensions for Chrome Compared](#top-comparison)

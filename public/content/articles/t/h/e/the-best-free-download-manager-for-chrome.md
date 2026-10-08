@@ -26,7 +26,8 @@ description: "Are you tired of struggling with slow downloads, lost files, and d
 <img src="/content/images/the-best-free-download-manager-for-chrome/featured.webp" alt="Unlock Efficient Downloads with the Best Free Download Manager Chrome Extension" width="1200" height="630" loading="lazy" class="featured-image">
 
 
-## Table of Contents- [What is a Download Manager and Why You Need One](/blog/unlock-the-power-of-batch-image-downloader-extension)
+## Table of Contents
+- [What is a Download Manager and Why You Need One](/blog/unlock-the-power-of-batch-image-downloader-extension)
 - [Key Features to Look for in a Free Download Manager](/blog/adblock-chrome-android-complete-guide-2026)
 - [Top Free Download Manager Chrome Extensions: In-Depth Comparison](#top-free-download-manager)
 - [How to Install and Set Up Your Download Manager](#how-to-install)

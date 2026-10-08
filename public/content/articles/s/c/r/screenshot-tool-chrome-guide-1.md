@@ -34,7 +34,8 @@ Welcome to [the most comprehensive](/blog/webpage-screenshot-chrome-2025-2) **[s
 
 As someone who has tested over 20 Chrome screenshot extensions in various work scenarios—from technical documentation to content creation—I understand that not all screenshot tools are created equal. Some excel at full-page captures, others at annotation capabilities, and some prioritize privacy above all. This guide will cut through the noise and provide you with practical insights based on real-world testing, helping you select the perfect screenshot tool for your specific needs.
 
-## Table of Contents- [Why Screenshot Tools Matter in 2026](#why-screenshot-tools-matter)
+## Table of Contents
+- [Why Screenshot Tools Matter in 2026](#why-screenshot-tools-matter)
 - [Built-in Chrome Screenshot Methods](#built-in-chrome-screenshot)
 - [Essential Features to Look For](#essential-features)
 - [Top Chrome Screenshot Extensions Compared](#top-extensions-compared)

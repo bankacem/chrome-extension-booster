@@ -32,7 +32,8 @@ QR codes have become an indispensable part of our digital landscape, from restau
 
 As someone who regularly shares links via QR code browser functionality between devices and integrates QR codes into my workflow, I understand what makes these tools truly valuable. The best extensions go beyond simple generation and scanning—they offer customization, tracking, and integration [with other productivity tools](/blog/pro-productivity-chrome-extensions-the-2025-toolkit). I'll share my hands-on experience with each option, including their strengths and limitations, so you can make an informed decision based on your specific needs. Let's dive into the world of QR code Chrome extensions and find the perfect solution for your browsing needs.
 
-## Table of Contents- [Why QR Code Chrome Extensions Matter in 2026](#why-matters)
+## Table of Contents
+- [Why QR Code Chrome Extensions Matter in 2026](#why-matters)
 - [How to Choose the Right QR Code Extension](#how-choose)
 - [Top QR Code Generator Chrome Extensions](https://www.qr-code-generator.com)
 - [Best QR Scanner Web Page Solutions](#top-scanners)

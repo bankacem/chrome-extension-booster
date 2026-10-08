@@ -25,7 +25,8 @@ description: "Are you tired of annoying pop-ups and intrusive ads disrupting you
 
 Finding a reliable **[pop-up blocker for Chrome](/blog/pop-up-blocker-for-chrome-partial)** has become essential in 2026 as websites increasingly employ aggressive tactics to capture your attention. In my testing across hundreds of sites, I've found that even trusted websites now use pop-ups for newsletter signups, cookie consent overlays, and promotional offers that can disrupt your workflow. This guide cuts through the noise to provide you with the most effective solutions based on hands-on testing. Whether you're a casual browser or a power user concerned about privacy and productivity, I'll show you exactly which Chrome extensions deliver on their promises without compromising [your browsing experience](/blog/boosting-your-browsing-experience).
 
-## Table of Contents- [The Pop-Up Problem in 2026](#the-pop-up-problem)
+## Table of Contents
+- [The Pop-Up Problem in 2026](#the-pop-up-problem)
 - [Why You Need a Dedicated Pop-Up Blocker](#why-you-need)
 - [Key Features to Look For](#key-features)
 - [Best Free Pop-Up Blockers for Chrome](#best-free)

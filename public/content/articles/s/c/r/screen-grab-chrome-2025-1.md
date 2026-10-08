@@ -31,7 +31,8 @@ In my experience as a power user who's tested dozens of screenshot tools over th
 
 The landscape of web capture has changed dramatically in recent years, with Chrome's built-in tools improving while specialized extensions offer more advanced features. In this comprehensive guide, I'll walk you through everything you need to know about Screen Grab Chrome 2025, from basic techniques to advanced workflows. I've tested these methods extensively in my daily work, comparing their performance, image quality, and ease of use to give you practical insights you can apply immediately.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [Understanding Screen Grab Chrome 2025](#understanding-screen-grab)
 - [Built-in Chrome Screenshot Methods](#built-in-methods)
 - [Top Chrome Extensions for Screen Grabbing](#top-extensions)

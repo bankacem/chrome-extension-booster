@@ -25,7 +25,8 @@ description: "Are you tired of annoying ads and trackers disrupting your browsin
 
 Are you frustrated with intrusive ads, [tracking scripts](/blog/how-to-use-meta-pixel-helper-for-conversion-tracking), and battery-draining content that ruins your browsing experience on Android Chrome? You're not alone. In my extensive testing across multiple Android devices, I've found that properly installing [uBlock Origin](https://github.com/gorhill/uBlock) on Android Chrome can dramatically improve your mobile browsing experience by blocking ads, trackers, and malicious scripts while saving data and battery life. [This comprehensive guide will](/blog/ublock-origin-vs-ghostery-for-chrome-android) walk you through every step of installing uBlock Origin on Android Chrome, with tested solutions for different Android versions and Chrome configurations, ensuring you can take control of your browsing privacy and performance.
 
-## Table of Contents- [Why Install uBlock Origin on Android Chrome?](#why-install-ublock-origin)
+## Table of Contents
+- [Why Install uBlock Origin on Android Chrome?](#why-install-ublock-origin)
 - [Understanding uBlock Origin for Android](#understanding-ublock-origin)
 - [Prerequisites Before Installation](#prerequisites)
 - [Method 1: Installing uBlock Origin from the Play Store](#method-play-store)

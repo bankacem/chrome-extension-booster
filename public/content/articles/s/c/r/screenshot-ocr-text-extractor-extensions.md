@@ -244,7 +244,7 @@ After extensively testing various screenshot-to-text OCR extensions, I've develo
 
 ## Frequently Asked Questions {#faq}
 
-### H3: Are OCR extensions accurate enough for professional use?
+### Are OCR extensions accurate enough for professional use?
 
 H3: How do I handle sensitive documents with OCR extensions?
 
