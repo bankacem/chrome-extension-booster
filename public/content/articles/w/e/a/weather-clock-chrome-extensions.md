@@ -33,7 +33,8 @@ In my daily work routine, I constantly find myself checking the weather before h
 
 This comprehensive guide is for anyone who values efficiency and wants to eliminate the friction of checking weather and time information separately. After testing over 30 different weather and clock extensions over the past year, I've identified the true gems that deliver accurate information with minimal performance impact. I'll share my hands-on experiences, practical comparisons, and honest trade-offs to help you find the perfect extension for your needs. By the end of this article, you'll have all the information needed to transform your browser into a powerful productivity hub that keeps you informed without distraction.
 
-## Table of Contents- [Why Weather & Clock Extensions Matter in 2026](#why-matters)
+## Table of Contents
+- [Why Weather & Clock Extensions Matter in 2026](#why-matters)
 - [Key Features to Look For](#key-features)
 - [Top Weather Forecast Chrome Extensions](#top-weather-extensions)
 - [World Clock Toolbar Chrome Options](#world-clock-toolbar)

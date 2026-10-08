@@ -33,7 +33,8 @@ In my experience testing dozens [of tab management solutions](/blog/the-tab-mana
 
 For anyone who's ever struggled to find a specific tab among a horizontal row of icons, or who wants to mimic the efficient sidebar design found in other browsers, this comprehensive resource will walk you through all the current methods to implement vertical tabs in Chrome. [I've tested each approach](/blog/split-screen-chrome-tabs-guide) extensively in my daily workflow, so you'll get practical insights beyond what you'll find in generic tutorials.
 
-## Table of Contents- [Understanding Chrome's Vertical Tabs in 2026](#understanding-chrome-vertical-tabs)
+## Table of Contents
+- [Understanding Chrome's Vertical Tabs in 2026](#understanding-chrome-vertical-tabs)
 - [How to Enable Native Vertical Tabs in Chrome](#native-vertical-tabs)
 - [Best Chrome Extensions for Vertical Tabs](#best-vertical-tabs-extensions)
 - [Customizing Your Vertical Tab Experience](#customizing-vertical-tabs)
@@ -306,28 +307,28 @@ All four are lightweight, free to try, and tested by our editorial team before r
 
 ## Frequently Asked Questions
 
-### H3: Do vertical tabs slow down Chrome?
+### Do vertical tabs slow down Chrome?
 Vertical tabs typically have minimal performance impact when using Chrome's native implementation. Third-party extensions may use more resources, but modern vertical tab extensions are generally optimized for performance. In my testing, I noticed only a slight increase in memory usage with native vertical tabs (under 5%), while more feature-rich extensions might use 10-15% more resources.
 
-### H3: Can I have vertical tabs on both sides of the screen?
+### Can I have vertical tabs on both sides of the screen?
 Chrome's native vertical tabs are limited to the left side of the browser window. Some third-party extensions like Side Panel Tabs offer the ability to position the vertical tab sidebar on the right side instead of the left, providing more flexibility for users who prefer this layout.
 
-### H3: Will my extensions work with vertical tabs?
+### Will my extensions work with vertical tabs?
 Most Chrome extensions are compatible with vertical tabs, as they don't typically interfere with how other extensions function. However, some extensions that modify the tab strip or browser chrome might have compatibility issues. If you encounter problems, try testing extensions individually to identify any conflicts.
 
-### H3: How do I save vertical tab arrangements?
+### How do I save vertical tab arrangements?
 Chrome's native vertical tabs don't include built-in session saving features, but you can use extensions like Session Buddy to save and restore specific tab configurations. Tree Style Tab also offers session management capabilities for hierarchical tab arrangements, allowing you to save complex organizational structures.
 
-### H3: Can I use vertical tabs on Chromebooks?
+### Can I use vertical tabs on Chromebooks?
 Chromebooks support Chrome's native vertical tabs feature, though the implementation may vary slightly depending on the ChromeOS version and device form factor. Touchscreen Chromebooks might offer different interaction methods for vertical tabs compared to traditional laptop or desktop setups.
 
-### H3: Do vertical tabs work with tab groups?
+### Do vertical tabs work with tab groups?
 Yes, vertical tabs work seamlessly with Chrome's tab grouping feature. You can create and manage tab groups within the vertical sidebar, though the visual indicators might be less prominent than in the horizontal tab strip. Some vertical tab extensions enhance the grouping experience with additional visual cues and management options.
 
-### H3: Are vertical tabs available on mobile Chrome?
+### Are vertical tabs available on mobile Chrome?
 As of 2026, Chrome's mobile versions (Android and iOS) don't support vertical tabs in the same way as desktop versions. The mobile interface is optimized for touch interaction and screen space constraints, making vertical tab implementations impractical on smaller devices. Some third-party extensions may offer alternative solutions for tab management on mobile.
 
-### H3: How do I reset vertical tabs to default settings?
+### How do I reset vertical tabs to default settings?
 To reset Chrome's vertical tabs to default, navigate to Settings > Appearance and change "Tab strip position" from "Side" back to "Top." For third-party extensions, you can typically reset settings through the extension's options page or by removing and reinstalling the extension. Chrome will remember your preferred tab orientation across sessions.
 
 ## Final Verdict

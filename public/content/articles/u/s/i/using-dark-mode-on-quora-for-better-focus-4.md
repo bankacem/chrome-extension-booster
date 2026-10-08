@@ -29,7 +29,8 @@ description: "Are you tired of straining your eyes while browsing Quora? Do you 
 
 For those who spend extended periods on Quora—whether for learning, networking, or content creation—the bright default interface can become fatiguing. In this comprehensive guide, I'll share not just how to enable dark mode but also how to maximize its benefits, troubleshoot issues, and create an optimal viewing environment. I've tested various methods across different devices and browsers to bring you practical, actionable advice that goes beyond the basics.
 
-## Table of Contents- [What is Dark Mode and How It Works on Quora](#what-is-dark-mode)
+## Table of Contents
+- [What is Dark Mode and How It Works on Quora](#what-is-dark-mode)
 - [The Science Behind Dark Mode and Focus](#science-behind-dark-mode)
 - [Benefits of Using Dark Mode on Quora for Better Focus](#benefits-of-dark-mode)
 - [How to Enable Dark Mode on Quora: Step-by-Step Guide](#enable-dark-mode)
