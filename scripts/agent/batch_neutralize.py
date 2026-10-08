@@ -44,20 +44,24 @@ CRITIC = os.environ.get("CLEANAPIS_MODEL_CRITIC", "glm-5.3")
 INPUT_PRICE = {"deepseek-v4-pro-0813": 0.552, "glm-5.3": 1.357}  # $/1M in
 CAP_PER_ARTICLE = 0.02
 CAP_PER_RUN = 2.00
-MAX_CALLS_PER_ARTICLE = 3
+MAX_CALLS_PER_ARTICLE = 6
 CALL_TIMEOUT = 120
 
-RULES = """Rewrite the numbered paragraphs of a Chrome-extension article.
-Rules (violations fail an automated gate):
+RULES = """Edit the numbered paragraphs of a Chrome-extension article via
+find/replace operations (so untouched text stays byte-identical).
+Rules (an automated gate fails violations):
 1. Remove first-person testing/anecdotes ("I tested", "we ran benchmarks",
-   "in my lab") — state facts qualitatively or attribute generally.
+   "in my lab") — either delete the sentence or restate it neutrally.
 2. NO new numbers, percentages, prices, versions, product names, or links.
 3. Keep every existing fact that is not a first-person claim.
 4. Editorial, neutral voice. No experience or expertise claims.
-5. Keep roughly the same length and keep Markdown formatting if present.
-6. If a sentence's only content is an untestable claim, drop the sentence.
-Return STRICT JSON: {"paragraphs": [{"index": <int>, "new_text": <str>}]}
-covering EVERY input paragraph index. No commentary outside the JSON."""
+Output STRICT JSON — no preamble, no markdown fences:
+{"edits": [{"index": <paragraph int>,
+            "find": "<EXACT substring copied from that paragraph>",
+            "replace": "<replacement text, or empty string to delete>"}]}
+Each "find" MUST be copied byte-exactly from the source paragraph (it is
+matched and replaced once). Omit paragraphs that need no change. Keep each
+"replace" about as long as the text it replaces."""
 
 SYSTEM = "You are a careful copy editor. Output JSON only."
 
@@ -110,11 +114,12 @@ def call_model(model, user_msg, cost_state, article_id):
                      "latency_s": round(time.time() - t0, 1)}
 
 
-def parse_json_paragraphs(content, expected_indices):
-    """Strict JSON parse with a disclosed salvage path: if the model output
-    was truncated (unclosed object), recover complete {index,new_text} pairs
-    and accept ONLY if every expected index is present and intact."""
-    cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", content.strip(), flags=re.M)
+def parse_edits(content, idx_to_text):
+    """Parse the find/replace schema; verify every 'find' occurs in its
+    source paragraph. Salvages complete edit objects from truncated output.
+    Returns {index: [(find, replace), ...]}."""
+    cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", content.strip(),
+                     flags=re.M)
     obj = None
     m = re.search(r"\{[\s\S]*\}", cleaned)
     if m:
@@ -122,28 +127,40 @@ def parse_json_paragraphs(content, expected_indices):
             obj = json.loads(m.group(0))
         except json.JSONDecodeError:
             obj = None
-    if obj is None:
-        # truncated-JSON salvage: pull complete pairs only
-        pairs = re.findall(
-            r'\{\s*"index"\s*:\s*(\d+)\s*,\s*"new_text"\s*:\s*'
-            r'"((?:[^"\\]|\\.)*)"\s*\}', cleaned)
-        salvaged = {}
-        for idx, txt in pairs:
+    raw_edits = []
+    if obj is not None and isinstance(obj.get("edits"), list):
+        raw_edits = obj["edits"]
+    else:
+        # truncated-JSON salvage: recover complete edit objects only
+        raw_edits = []
+        for mm in re.finditer(
+                r'\{\s*"index"\s*:\s*(\d+)\s*,\s*"find"\s*:\s*'
+                r'"((?:[^"\\]|\\.)*)"\s*,\s*"replace"\s*:\s*'
+                r'"((?:[^"\\]|\\.)*)"\s*\}', cleaned):
             try:
-                salvaged[int(idx)] = json.loads(f'"{txt}"')
+                raw_edits.append({"index": int(mm.group(1)),
+                                  "find": json.loads(f'"{mm.group(2)}"'),
+                                  "replace": json.loads(f'"{mm.group(3)}"')})
             except json.JSONDecodeError:
                 continue
-        missing = set(expected_indices) - set(salvaged)
-        if missing:
-            raise ValueError(
-                f"no/partial JSON in model output; missing {sorted(missing)[:5]}")
-        return salvaged
-    paras = {int(p["index"]): str(p["new_text"])
-             for p in obj.get("paragraphs", [])}
-    missing = set(expected_indices) - set(paras)
-    if missing:
-        raise ValueError(f"model omitted indices {sorted(missing)[:5]}")
-    return paras
+    edits = {}
+    errors = []
+    for e in raw_edits:
+        try:
+            i = int(e["index"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        if i not in idx_to_text:
+            continue
+        find = str(e.get("find", ""))
+        rep = str(e.get("replace", ""))
+        if not find or find not in idx_to_text[i]:
+            errors.append(f"find-not-in-source idx={i}: {find[:40]!r}")
+            continue
+        edits.setdefault(i, []).append((find, rep))
+    if not edits:
+        raise ValueError("no valid edits; " + "; ".join(errors[:3]))
+    return edits
 
 
 def block_line_ranges(lines):
@@ -286,61 +303,55 @@ def process_article(rel_path, dry_run, cost_state):
     # output cap (empirically enforced even when more is requested)
     body_lines = body1.split("\n")
     ranges = block_line_ranges(body_lines)
-    chunks = chunk_marked(prose_idx, blocks1)
-    if len(chunks) > 2:
+    idx_to_text = {i: blocks1[i] for i in prose_idx}
+    chunks = chunk_marked(prose_idx, blocks1, budget=1000)
+    if len(chunks) > 4:
         rec["status"] = "excluded_too_many_paragraphs"
         rec["after_body"] = body1
         return rec
 
-    def payload_for(idx_list):
-        return "\n\n".join(f"[{i}] {blocks1[i]}" for i in idx_list)
-
     new_texts = {}
-    for chunk in chunks:
+    gate = None
+    for attempt in range(len(chunks) + 1):
+        if attempt < len(chunks):
+            chunk = chunks[attempt]
+            model = WORKER
+            user_msg = f"{RULES}\n\nPARAGRAPHS:\n" + "\n\n".join(
+                f"[{i}] {blocks1[i]}" for i in chunk)
+        else:
+            # one CRITIC retry over the same payload after a gate failure
+            model = CRITIC
+            vj = json.dumps((gate or {}).get("violations", [])[:8],
+                            ensure_ascii=False)
+            user_msg = (f"{RULES}\n\nYour previous edit set FAILED this "
+                        f"gate: {vj}\nFix ONLY these violations.\n\n"
+                        f"PARAGRAPHS:\n" + "\n\n".join(
+                            f"[{i}] {blocks1[i]}" for i in prose_idx))
         if dry_run:
             rec["status"] = "dry_run"
             rec["after_body"] = body1
             return rec
-        user_msg = f"{RULES}\n\nPARAGRAPHS:\n{payload_for(chunk)}"
         try:
-            content, usage = call_model(WORKER, user_msg, cost_state,
+            content, usage = call_model(model, user_msg, cost_state,
                                         rec["article"])
+            usage["raw_head"] = content[:400]
             rec["model_calls"].append(usage)
-            part = parse_json_paragraphs(content, chunk)
-            new_texts.update(part)
+            part = parse_edits(content, idx_to_text)
+            for i, ops in part.items():
+                cur = new_texts.get(i, blocks1[i])
+                for find, rep in ops:
+                    cur = cur.replace(find, rep, 1)
+                new_texts[i] = cur
         except Exception as e:  # noqa: BLE001 — never leak the key
-            rec["model_calls"].append({"model": WORKER, "error": str(e)[:160]})
+            rec["model_calls"].append({"model": model, "error": str(e)[:160]})
+            if attempt < len(chunks):
+                continue  # try remaining chunks; final verdict after loop
             rec["status"] = "excluded_model_error"
             rec["after_body"] = body1
             return rec
-    cand = surgical_replace(body_lines, ranges, new_texts)
-    gate = body_neutralization_gate(
-        body1, cand, marked=sorted(set(prose_idx) | set(new_texts)),
-        word_drop_limit_pct=45.0)
-    if gate["pass"]:
-        rec["status"] = "ok"
-        rec["gate"] = {"pass": True, "violations": [],
-                       "stats": gate["stats"]}
-        rec["after_body"] = cand
-        return rec
-    rec["gate_attempts"] = [{"model": WORKER, "pass": False,
-                             "violations": gate["violations"][:8]}]
-    # one CRITIC retry only when the whole payload fits a single call
-    if len(chunks) == 1 and len(prose_idx) > 0:
-        vj = json.dumps(gate["violations"][:8], ensure_ascii=False)
-        user_msg = (f"{RULES}\n\nYour previous draft FAILED this gate: "
-                    f"{vj}\nFix ONLY these violations.\n\nPARAGRAPHS:\n"
-                    f"{payload_for(prose_idx)}")
-        try:
-            content, usage = call_model(CRITIC, user_msg, cost_state,
-                                        rec["article"])
-            rec["model_calls"].append(usage)
-            new_texts = parse_json_paragraphs(content, prose_idx)
-        except Exception as e:  # noqa: BLE001
-            rec["model_calls"].append({"model": CRITIC, "error": str(e)[:160]})
-            rec["status"] = "excluded_model_error"
-            rec["after_body"] = body1
-            return rec
+        if attempt < len(chunks) - 1:
+            continue  # more chunks to fetch before gating
+        # all chunks applied — gate
         cand = surgical_replace(body_lines, ranges, new_texts)
         gate = body_neutralization_gate(
             body1, cand, marked=sorted(set(prose_idx) | set(new_texts)),
@@ -351,8 +362,9 @@ def process_article(rel_path, dry_run, cost_state):
                            "stats": gate["stats"]}
             rec["after_body"] = cand
             return rec
-        rec["gate_attempts"].append({"model": CRITIC, "pass": False,
-                                     "violations": gate["violations"][:8]})
+        rec.setdefault("gate_attempts", []).append(
+            {"model": model, "pass": False,
+             "violations": gate["violations"][:8]})
     rec["status"] = "excluded_gate"
     rec["after_body"] = body1
     return rec
