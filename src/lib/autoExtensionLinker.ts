@@ -65,14 +65,6 @@ export const generateExtensionBacklink = (extension: Extension): string => {
     <div class="flex-1 text-center md:text-left">
       <h4 class="text-lg font-bold mb-1">${extension.name}</h4>
       <p class="text-sm text-muted-foreground mb-2">${extension.description}</p>
-      <div class="flex items-center justify-center md:justify-start gap-4 text-sm">
-        <span class="flex items-center gap-1">
-          <strong>${extension.users}</strong> users
-        </span>
-        <span class="flex items-center gap-1">
-          ★ <strong>${extension.rating}</strong>
-        </span>
-      </div>
     </div>
     <div class="flex flex-col sm:flex-row gap-2">
       <a href="/extension/${extension.slug}" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary hover:bg-secondary/80 text-secondary-foreground font-medium transition-colors">

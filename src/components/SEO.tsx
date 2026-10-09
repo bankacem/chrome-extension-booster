@@ -29,7 +29,7 @@ function buildHreflangPath(canonicalPath: string, lang: LangCode): string {
 
 const SEO = ({
   title,
-  description = "Discover powerful Chrome extensions built to boost your productivity, enhance security, and transform how you browse the web. Trusted by 50,000+ users.",
+  description = "Discover 9 free Chrome extensions and hundreds of practical guides for productivity, security, and a faster way to browse.",
   keywords,
   canonicalPath = "",
   ogImage = DEFAULT_IMAGE,

@@ -1,13 +1,12 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { Download, Users, Star, Clock } from "lucide-react";
+import { Puzzle, BookOpen, Gift } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const statKeys = [
-  { icon: Download, value: 500000, suffix: "+", key: "downloads", decimals: 0 },
-  { icon: Users, value: 50000, suffix: "+", key: "active_users", decimals: 0 },
-  { icon: Star, value: 4.9, suffix: "", key: "average_rating", decimals: 1 },
-  { icon: Clock, value: 24, suffix: "/7", key: "support", decimals: 0 }
+  { icon: Puzzle, value: 9, suffix: "", key: "extensions", decimals: 0 },
+  { icon: BookOpen, value: 800, suffix: "+", key: "guides", decimals: 0 },
+  { icon: Gift, value: 100, suffix: "%", key: "free", decimals: 0 }
 ] as const;
 
 const AnimatedCounter = ({ 
@@ -78,7 +77,7 @@ const StatsBar = () => {
           transition={{ duration: 0.6 }}
           className="glass-card p-8 md:p-12"
         >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             {statKeys.map((stat, index) => (
               <motion.div
                 key={index}

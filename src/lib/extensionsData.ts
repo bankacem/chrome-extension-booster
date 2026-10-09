@@ -6,8 +6,6 @@ export interface Extension {
   name: string;
   description: string;
   longDescription: string;
-  users: string;
-  rating: string;
   color: string;
   storeUrl: string;
   slug: string;
@@ -23,8 +21,6 @@ export const extensions: Extension[] = [
     name: "Quick Screenshot Lite",
     description: "Capture full page or visible area screenshots instantly. Save, copy, or download with one click.",
     longDescription: "Quick Screenshot Lite is the ultimate screen capture tool for Chrome. Capture full pages, visible areas, or selected regions with just one click. Perfect for designers, developers, and anyone who needs to quickly grab and share screen content.",
-    users: "2K+",
-    rating: "4.9",
     color: "from-primary to-cyan-400",
     storeUrl: "https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee",
     slug: "quick-screenshot-lite",
@@ -45,8 +41,6 @@ export const extensions: Extension[] = [
     name: "Auto Dark Mode Switcher",
     description: "Automatically switch between dark and light modes based on time or system preferences.",
     longDescription: "Auto Dark Mode Switcher intelligently manages your browser's appearance. It automatically switches between dark and light modes based on your system preferences or a custom schedule, reducing eye strain and saving battery on OLED screens.",
-    users: "3K+",
-    rating: "4.8",
     color: "from-violet-500 to-purple-400",
     storeUrl: "https://chromewebstore.google.com/detail/auto-dark-mode-switcher-u/obbhliekbfgpcdippngphefofiicgjml",
     slug: "auto-dark-mode-switcher",
@@ -67,8 +61,6 @@ export const extensions: Extension[] = [
     name: "Redirect Shield",
     description: "Stop automatic redirects and protect yourself from malicious redirect chains.",
     longDescription: "Redirect Shield is your first line of defense against malicious redirects. It blocks automatic redirects, prevents redirect chains, and keeps you safe from phishing attempts that try to trick you with multiple redirects.",
-    users: "5K+",
-    rating: "4.9",
     color: "from-emerald-500 to-green-400",
     storeUrl: "https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp",
     slug: "redirect-shield",
@@ -89,8 +81,6 @@ export const extensions: Extension[] = [
     name: "ProTab Suspender",
     description: "Automatically suspend inactive tabs to save memory and boost browser performance.",
     longDescription: "ProTab Suspender intelligently manages your browser's memory by suspending inactive tabs. It dramatically reduces Chrome's memory usage while keeping your tabs organized and ready to restore when needed.",
-    users: "4K+",
-    rating: "4.7",
     color: "from-orange-500 to-amber-400",
     storeUrl: "https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj",
     slug: "protab-suspender",
@@ -111,8 +101,6 @@ export const extensions: Extension[] = [
     name: "Light Popup Blocker",
     description: "Block annoying popups and intrusive ads for a cleaner, faster browsing experience.",
     longDescription: "Light Popup Blocker provides a clean, distraction-free browsing experience. It blocks annoying popups, overlay ads, and intrusive notifications while maintaining website functionality.",
-    users: "6K+",
-    rating: "4.8",
     color: "from-red-500 to-rose-400",
     storeUrl: "https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii",
     slug: "light-popup-blocker",
@@ -133,8 +121,6 @@ export const extensions: Extension[] = [
     name: "Formula Builder Pro",
     description: "Build and calculate complex formulas right in your browser. Perfect for students and professionals.",
     longDescription: "Formula Builder Pro is the ultimate calculator tool for Chrome. Build complex mathematical formulas, perform scientific calculations, and save your work for later. Perfect for students, engineers, and professionals.",
-    users: "1.5K+",
-    rating: "4.9",
     color: "from-blue-500 to-indigo-400",
     storeUrl: "https://chromewebstore.google.com/detail/formula-builder-pro/ecmfloopolmkamoklcepdonahkigjlnn",
     slug: "formula-builder-pro",
@@ -155,8 +141,6 @@ export const extensions: Extension[] = [
     name: "SecuraKey Pro",
     description: "Secure password manager with encryption. Generate and store strong passwords safely.",
     longDescription: "SecuraKey Pro is a secure password manager that helps you generate, store, and manage strong passwords. With military-grade encryption, your passwords are always safe and accessible only to you.",
-    users: "3.5K+",
-    rating: "4.9",
     color: "from-pink-500 to-fuchsia-400",
     storeUrl: "https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi",
     slug: "securakey-pro",
@@ -177,8 +161,6 @@ export const extensions: Extension[] = [
     name: "Offline Reader Pro",
     description: "Save web pages for offline reading. Access your favorite content anywhere, anytime.",
     longDescription: "Offline Reader Pro lets you save any web page for offline reading. Perfect for commutes, flights, or areas with poor connectivity. Keep your favorite articles accessible anytime, anywhere.",
-    users: "2.5K+",
-    rating: "4.8",
     color: "from-teal-500 to-cyan-400",
     storeUrl: "https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf",
     slug: "offline-reader-pro",
@@ -199,8 +181,6 @@ export const extensions: Extension[] = [
     name: "Cookie Banner Blocker",
     description: "Automatically dismiss annoying cookie consent banners for seamless browsing.",
     longDescription: "Cookie Banner Blocker automatically handles those annoying cookie consent popups. It dismisses or accepts cookie banners based on your preferences, giving you a cleaner browsing experience.",
-    users: "7K+",
-    rating: "4.9",
     color: "from-amber-500 to-yellow-400",
     storeUrl: "https://chromewebstore.google.com/detail/cookie-banner-blocker-pri/mlmiefaloipcahfcgfbccadnnjgpipge",
     slug: "cookie-banner-blocker",
