@@ -320,7 +320,20 @@ async function prerenderLocalizedContent(template: string, lang: string) {
   const articles = JSON.parse(fs.readFileSync(indexPath, "utf8")) as ArticleIndexEntry[];
   const localePrefix = `/${lang}`;
   const homeBody = `<main><section><h1>${escapeHtml(copy.homeTitle)}</h1><p>${escapeHtml(copy.blogDescription)}</p><p><a href="${localePrefix}/blog">${escapeHtml(copy.blogTitle)}</a></p></section></main>`;
-  const homeSchema = { "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: `${SITE_URL}${localePrefix}`, inLanguage: lang };
+  const homeSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "WebSite", name: SITE_NAME, url: `${SITE_URL}${localePrefix}`, inLanguage: lang },
+      {
+        "@type": "Organization",
+        name: SITE_NAME,
+        url: SITE_URL,
+        logo: `${SITE_URL}/og-image.png`,
+        description:
+          "ExtensionTo is a Chrome extensions review and recommendation hub with practical guides for productivity, security, and faster browsing.",
+      },
+    ],
+  };
   const homeAlternates: { lang: SiteLang; url: string }[] = [
     { lang: "en", url: `${SITE_URL}/` },
     { lang: "fr", url: `${SITE_URL}/fr` },
@@ -463,7 +476,20 @@ async function main() {
 
 
   const homeDescription = "Discover powerful Chrome extensions built to boost productivity, enhance security, and transform how you browse the web.";
-  const homeSchema = { "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: SITE_URL };
+  const homeSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+      {
+        "@type": "Organization",
+        name: SITE_NAME,
+        url: SITE_URL,
+        logo: `${SITE_URL}/og-image.png`,
+        description:
+          "ExtensionTo is a Chrome extensions review and recommendation hub with practical guides for productivity, security, and faster browsing.",
+      },
+    ],
+  };
   const allLanguageHomeAlternates: { lang: SiteLang; url: string }[] = [
     { lang: "en", url: `${SITE_URL}/` },
     { lang: "fr", url: `${SITE_URL}/fr` },

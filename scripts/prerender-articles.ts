@@ -100,6 +100,75 @@ function parseMarkdown(raw: string): { frontmatter: FrontmatterRecord; content: 
   }
 }
 
+/**
+ * Extracts FAQ pairs from the article markdown body.
+ * Looks for a "Frequently Asked Questions" H2 section (EN / FR / ES / PT / AR)
+ * and collects `### Question?` headings together with their answer paragraphs.
+ * Fallback used when the frontmatter `faq` field is empty, so Google still
+ * receives FAQPage structured data for eligible articles.
+ */
+function extractFaqsFromMarkdown(content: string): FAQItem[] {
+  if (!content) return [];
+  const lines = content.split("\n");
+
+  const faqSectionRe = /^##\s+(.*)$/;
+  const isFaqSectionHeading = (text: string) =>
+    /frequently asked questions|\bfaq\b|questions fr[ée]quentes|preguntas frecuentes|perguntas frequentes|أسئلة شائعة|常见问题/i.test(
+      text
+    );
+
+  // Locate the FAQ H2 section (ends at the next H2)
+  let faqStart = -1;
+  let faqEnd = lines.length;
+  for (let i = 0; i < lines.length; i++) {
+    const m = lines[i].match(faqSectionRe);
+    if (m) {
+      if (faqStart === -1 && isFaqSectionHeading(m[1])) {
+        faqStart = i;
+      } else if (faqStart !== -1) {
+        faqEnd = i;
+        break;
+      }
+    }
+  }
+  if (faqStart === -1) return [];
+
+  const stripMarkdown = (s: string) =>
+    s
+      .replace(/\{#[\w-]+\}/g, "") // {#anchor} suffixes
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // [text](url) -> text
+      .replace(/[*_~`]+/g, "") // bold / italic / code marks
+      .replace(/\s+/g, " ")
+      .trim();
+
+  const faqs: FAQItem[] = [];
+  let current: FAQItem | null = null;
+
+  for (let i = faqStart + 1; i < faqEnd && faqs.length < 10; i++) {
+    const line = lines[i];
+    const h3 = line.match(/^###\s+(.*)$/);
+    if (h3) {
+      if (current && current.answer) faqs.push(current);
+      const q = stripMarkdown(h3[1]);
+      // Only question-like headings count as FAQs (skips "Related Guides", "Sources", ...)
+      current = /[?؟]\s*$/.test(q) ? { question: q, answer: "" } : null;
+      continue;
+    }
+    if (
+      current &&
+      line.trim() &&
+      !line.startsWith("#") &&
+      !line.startsWith("|") &&
+      !line.startsWith("![")
+    ) {
+      current.answer += (current.answer ? " " : "") + stripMarkdown(line);
+    }
+  }
+  if (current && current.answer && faqs.length < 10) faqs.push(current);
+
+  return faqs.filter((f) => f.question.length > 10 && f.answer.length > 20);
+}
+
 const LOCALE_BY_LANG: Record<SiteLang, string> = {
   en: "en_US",
   fr: "fr_FR",
@@ -302,9 +371,12 @@ async function main() {
     });
     // Schema.org headline/breadcrumb reflect the real editorial title (matches the
     // on-page H1), while the <title>/OG tags above use the shortened seoTitle.
-    const faq = Array.isArray(frontmatter.faq)
+    // Prefer frontmatter `faq`; fall back to FAQs auto-extracted from the markdown
+    // body so articles with an FAQ section still emit FAQPage structured data.
+    const frontmatterFaq = Array.isArray(frontmatter.faq)
       ? (frontmatter.faq as FAQItem[]).filter((item) => item && typeof item.question === "string" && typeof item.answer === "string")
-      : undefined;
+      : [];
+    const faq = frontmatterFaq.length ? frontmatterFaq : extractFaqsFromMarkdown(content);
     const rawHowTo = frontmatter.howto as Partial<HowToData> | undefined;
     const howTo = rawHowTo && Array.isArray(rawHowTo.steps)
       ? {
