@@ -34,7 +34,7 @@ Both AdGuard and Ghostery block ads and trackers well in 2026 — the real diffe
 
 ## Quick Verdict: Who Each Tool Fits
 
-Both extensions are free, both run on Chrome, Firefox, and Edge, and both have been maintained continuously for well over a decade. The snapshot below is the short version of everything we tested; the rest of this article shows the evidence behind each row.
+Both extensions are free, both run on Chrome, Firefox, and Edge, and both have been maintained continuously for well over a decade. The snapshot below is the short version of the comparison; the rest of this article shows the evidence behind each row.
 
 | | AdGuard | Ghostery |
 |---|---|---|
@@ -63,20 +63,20 @@ This is the section where the two philosophies diverge most clearly. Ghostery's 
 
 AdGuard takes the opposite route: rather than teaching you about trackers, it quietly strips them. Its Stealth Mode bundles the classic privacy hardening options — hide your referrer, remove tracking parameters like `utm_` and `fbclid` from URLs, block third-party cookies, and disable geolocation prompts — and its filter lists carry rules against known fingerprinting and CNAME-cloaking tricks. If you want to understand what those leftover cookie-based trackers are actually doing before you block them, our explainer on [what tracking cookies are and how to remove them](/blog/what-are-tracking-cookies-remove-chrome) covers the mechanics in plain language.
 
-Which approach protects you better? Against measurable ad networks, roughly equally — both block the usual suspects (Google Ads, Meta Pixel, Taboola, Criteo) on every site we tested. Against the long tail of small analytics scripts, Ghostery's database caught a few trackers early that only reached AdGuard's lists weeks later, while AdGuard's parameter stripping and cosmetic filtering handled elements Ghostery left visible. Depth of *blocking* is close; depth of *insight* is Ghostery by a wide margin.
+Which approach protects you better? Against measurable ad networks, roughly equally — both block the usual suspects (Google Ads, Meta Pixel, Taboola, Criteo) consistently. Against the long tail of small analytics scripts, Ghostery's database caught a few trackers early that only reached AdGuard's lists weeks later, while AdGuard's parameter stripping and cosmetic filtering handled elements Ghostery left visible. Depth of *blocking* is close; depth of *insight* is Ghostery by a wide margin.
 
 ## Performance Test: Memory, CPU, and Page Load
 
-We tested on a clean Windows 11 machine (Chrome stable, 16GB RAM, no other extensions) using a ten-tab session across news, shopping, and video sites, averaging three runs. Memory figures are Chrome Task Manager deltas above a no-extension baseline; load overhead is the median difference on navigation timing across 50 page loads.
+Memory and CPU figures for ad blockers vary widely with setup, and the figures below are **not independently verified** — treat them as indicative only. They follow the kind of setup reviewers typically hold constant: a current Chrome stable install on a 16GB RAM Windows 11 machine with no other extensions, a ten-tab session across news, shopping, and video sites, with memory read as Chrome Task Manager deltas above a no-extension baseline.
 
 | Metric (10-tab news session) | No blocker | Ghostery | AdGuard extension | AdGuard desktop app |
 |---|---|---|---|---|
-| Memory above baseline | 0 MB | +210 MB | +340 MB | +185 MB |
-| CPU during scroll test | 3% | 4% | 6% | 4% |
-| Median page-load overhead | — | ~35 ms | ~60 ms | ~30 ms |
-| Blocked requests, test set | 0 | 612 | 845 | 841 |
+| Memory above baseline | 0 MB (definitional) | Lightest of the three blockers | Heaviest of the three — more rules enforced | Light for Chrome — filtering happens outside the browser |
+| CPU during scroll test | Baseline | Minimal | Low | Low |
+| Median page-load overhead | — | Small | Moderate | Small |
+| Blocked requests, test set | 0 | Broad | Broadest | Broad |
 
-Three observations worth your attention. First, Ghostery is genuinely lighter in the browser: it filters fewer request types and does less cosmetic surgery on pages, and the numbers reflect that. Second, AdGuard's extension costs more memory because it enforces more rules — the extra ~130MB buys the additional 230 blocked requests per session, which is a fair trade for most privacy-conscious users. Third, the surprise winner is AdGuard's *desktop app*: because filtering happens at the system layer outside Chrome's process model, Chrome itself stays lean while blocking counts match the extension. If you are already invested in the AdGuard ecosystem, that is the configuration to prefer.
+Three observations worth your attention. First, Ghostery is lighter in the browser: it filters fewer request types and does less cosmetic modification of pages. Second, AdGuard's extension costs more memory because it enforces more rules — more filtering breadth in exchange for a heavier footprint, which is a fair trade for many privacy-conscious users. Third, the standout for Chrome-specific memory is AdGuard's *desktop app*: because filtering happens at the system layer outside Chrome's process model, Chrome itself stays lean while blocking breadth matches the extension. If you are already invested in the AdGuard ecosystem, that is the configuration to prefer.
 
 ![Memory and CPU comparison between AdGuard and Ghostery during testing](/content/images/adguard-vs-ghostery-2026-comparison/adguard-vs-ghostery-2026-comparison-steps-1.webp)
 
@@ -98,7 +98,7 @@ Neither AdGuard nor Ghostery is the only game in town, and for some readers a ri
 
 | Rank | Tool | Type | Best for | Watch out for |
 |---|---|---|---|---|
-| 1 | uBlock Origin | Extension (Firefox); uBO Lite on Chrome | Power users who want the most control at the lowest overhead | Full uBO is gone from Chrome; the MV3 Lite version has reduced capabilities |
+| 1 | uBlock Origin | Extension (Firefox); uBO Lite on Chrome | Users who want the most control at the lowest overhead | Full uBO is gone from Chrome; the MV3 Lite version has reduced capabilities |
 | 2 | Brave | Full browser | Set-and-forget blocking with no extensions at all | Switching browsers is a bigger commitment than installing an extension |
 | 3 | Privacy Badger | Extension | Heuristic tracker detection that learns as you browse | It is not an ad blocker — pages stay visually cluttered |
 
