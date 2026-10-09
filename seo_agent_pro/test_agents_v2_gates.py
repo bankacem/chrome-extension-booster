@@ -13,6 +13,7 @@ from seo_agent_pro.agents_v2.gates import (
     S1_V3_1_PATTERNS, fabrication_gate,
     FM_FIELDS, FM_HONESTY_PATTERNS, frontmatter_honesty_gate,
     body_neutralization_gate, unverified_product_removal_gate,
+    link_tag_removal_gate,
     UNVERIFIED_PRODUCTS,
     scan_attribution_numbers, scan_unattributed_table_cells, unattributed_gate,
 )
@@ -1262,6 +1263,279 @@ class TestBodyNeutralizationMarkedTables(unittest.TestCase):
                         msg=checks)
 
 
+class TestBodyNeutralizationTableReplacement(unittest.TestCase):
+    """Owner brief 2026-10-07: a marked table whose data cells are >50%
+    'Not independently tested' may be replaced by a short bold-name +
+    body-sentence list. License is an exact declaration; the gate
+    re-verifies names, sentences, coverage and the result block."""
+
+    BEFORE = (
+        "Intro paragraph stays put.\n"
+        "\n"
+        "| Extension | Memory Usage | Effectiveness |\n"
+        "|----------|--------------|---------------|\n"
+        "| Light Popup Blocker | Not independently tested | Not independently tested |\n"
+        "| AdBlock Plus | Not independently tested | Not independently tested |\n"
+        "\n"
+        "Light Popup Blocker remains a strong all-around option for most users. "
+        "AdBlock Plus has been a popular choice for years.\n"
+        "\n"
+        "Closing paragraph stays put.\n"
+    )
+    TABLE_BLOCK = 1
+    BULLETS = [
+        "- **Light Popup Blocker** remains a strong all-around option for most users.",
+        "- **AdBlock Plus** — AdBlock Plus has been a popular choice for years.",
+    ]
+
+    def _gate(self, after, marked=(0, 1, 2, 3, 4), **kw):
+        return body_neutralization_gate(
+            self.BEFORE, after, marked=list(marked), **kw)
+
+    def _after(self, bullets=None):
+        bl = "\n".join(bullets if bullets is not None else self.BULLETS)
+        return self.BEFORE.replace(
+            "| Extension | Memory Usage | Effectiveness |\n"
+            "|----------|--------------|---------------|\n"
+            "| Light Popup Blocker | Not independently tested | Not independently tested |\n"
+            "| AdBlock Plus | Not independently tested | Not independently tested |",
+            bl)
+
+    def _spec(self, bullets=None):
+        return {"block": self.TABLE_BLOCK,
+                "bullets": bullets if bullets is not None else self.BULLETS}
+
+    def test_accepts_valid_replacement(self):
+        r = self._gate(self._after(),
+                       allowed_table_replacements=[self._spec()])
+        self.assertEqual(r["violations"], [])
+        self.assertEqual(r["stats"]["tables_replaced"], 1)
+
+    def test_fails_without_declaration(self):
+        r = self._gate(self._after())
+        self.assertTrue(any(v["check"] == "table_row_changed"
+                            for v in r["violations"]))
+
+    def test_fails_when_block_unmarked(self):
+        r = self._gate(self._after(), marked=(0, 2, 3, 4),
+                       allowed_table_replacements=[self._spec()])
+        self.assertTrue(any(v["check"] == "table_replacement_invalid"
+                            for v in r["violations"]))
+
+    def test_fails_on_new_fact_in_sentence(self):
+        bad = ["- **Light Popup Blocker** remains a strong all-around option.",
+               "- **AdBlock Plus** — Our lab measured AdBlock Plus at 42% faster."]
+        r = self._gate(self._after(bad),
+                       allowed_table_replacements=[self._spec(bad)])
+        checks = [v for v in r["violations"]
+                  if v["check"] == "table_replacement_invalid"]
+        self.assertTrue(any("verbatim" in v["detail"] for v in checks))
+
+    def test_fails_on_name_not_in_table(self):
+        bad = ["- **Total Adblock** remains a strong all-around option for most users.",
+               "- **AdBlock Plus** — AdBlock Plus has been a popular choice for years."]
+        r = self._gate(self._after(bad),
+                       allowed_table_replacements=[self._spec(bad)])
+        checks = [v for v in r["violations"]
+                  if v["check"] == "table_replacement_invalid"]
+        self.assertTrue(any("product label" in v["detail"] for v in checks))
+
+    def test_fails_on_incomplete_coverage(self):
+        bad = [self.BULLETS[0]]
+        r = self._gate(self._after(bad),
+                       allowed_table_replacements=[self._spec(bad)])
+        checks = [v for v in r["violations"]
+                  if v["check"] == "table_replacement_invalid"]
+        self.assertTrue(any("covers 1 of 2" in v["detail"] for v in checks))
+
+    def test_fails_when_result_block_altered(self):
+        altered = self._after().replace(
+            "- **AdBlock Plus** — AdBlock Plus has been a popular choice for years.",
+            "- **AdBlock Plus** — AdBlock Plus has been a popular choice for years! Extra line.")
+        r = self._gate(altered,
+                       allowed_table_replacements=[self._spec()])
+        self.assertTrue(any("byte-identically" in v["detail"]
+                            for v in r["violations"]))
+
+    def test_fails_on_declared_block_without_table(self):
+        r = self._gate(self._after(),
+                       allowed_table_replacements=[
+                           {"block": 4, "bullets": self.BULLETS}])
+        self.assertTrue(any("contains no table" in v["detail"]
+                            for v in r["violations"]))
+
+    def test_column_mode_products_from_header(self):
+        before = (
+            "Para one.\n"
+            "\n"
+            "| Feature | Popup Blocker Pro | Minimal Popup Blocker |\n"
+            "|---------|--------------------|----------------------|\n"
+            "| Effectiveness | Not independently tested | Not independently tested |\n"
+            "| Memory Usage (MB) | Not independently tested | Not independently tested |\n"
+            "\n"
+            "Popup Blocker Pro provides maximum customization for users who want "
+            "fine-tuned control. Minimal Popup Blocker is ideal for those "
+            "prioritizing performance above all else.\n"
+            "\n"
+            "Closing paragraph stays put.\n"
+        )
+        bullets = [
+            "- **Popup Blocker Pro** provides maximum customization for users who want fine-tuned control.",
+            "- **Minimal Popup Blocker** is ideal for those prioritizing performance above all else.",
+        ]
+        after = before.replace(
+            "| Feature | Popup Blocker Pro | Minimal Popup Blocker |\n"
+            "|---------|--------------------|----------------------|\n"
+            "| Effectiveness | Not independently tested | Not independently tested |\n"
+            "| Memory Usage (MB) | Not independently tested | Not independently tested |",
+            "\n".join(bullets))
+        r = body_neutralization_gate(
+            before, after, marked=[1, 2, 3],
+            allowed_table_replacements=[{"block": 1, "bullets": bullets}])
+        self.assertEqual(r["violations"], [])
+
+    def test_cell_edit_license_still_works_alongside(self):
+        # unchanged tables + cell edits + one replacement coexist
+        before = (
+            "Para one.\n"
+            "\n"
+            "| Feature | Kiwi | Firefox |\n"
+            "|---|---|---|\n"
+            "| Blocks ads | Yes | Yes |\n"
+            "\n"
+            "Middle paragraph.\n"
+            "\n"
+            "| Config | Battery |\n"
+            "|---|---|\n"
+            "| DNS only | Not independently tested |\n"
+            "\n"
+            "DNS blocking costs essentially zero battery because the connection is never opened.\n"
+            "\n"
+            "Closing paragraph stays put.\n"
+        )
+        bullets = ["- **DNS only** — DNS blocking costs essentially zero battery because the connection is never opened."]
+        after = (before
+                 .replace("| Blocks ads | Yes | Yes |", "| Blocks ads | Yes (filter lists) | Yes |")
+                 .replace(
+                     "| Config | Battery |\n|---|---|\n| DNS only | Not independently tested |",
+                     bullets[0]))
+        r = body_neutralization_gate(
+            before, after, marked=[1, 3],
+            allow_marked_table_edits=True,
+            allowed_table_cell_values=["Not independently tested", "Yes (filter lists)"],
+            allowed_table_replacements=[{"block": 3, "bullets": bullets}])
+        self.assertEqual(r["violations"], [])
+
+
+class TestBodyNeutralizationNewTables(unittest.TestCase):
+    """Owner brief 2026-10-08 item 2: declared BRAND-NEW disclosure tables.
+    Exact-declaration license: well-formed, byte-identical in the result,
+    no links, every first-column product name already present in the
+    original body; undeclared new tables stay forbidden. Also covers the
+    two scanner corrections the license required: a bare URL used as
+    markdown ANCHOR text must not swallow the "](target)" that follows it,
+    and a whitelisted insert inside a MIXED insert chunk skips the
+    proper-noun scan."""
+
+    BEFORE = (
+        "Intro paragraph stays put.\n"
+        "\n"
+        "| Product | Memory | Speed |\n"
+        "|---|---|---|\n"
+        "| AlphaTool | 1 GB | fast |\n"
+        "\n"
+        "Closing paragraph stays put.\n"
+        "\n"
+        "## Final Verdict\n"
+        "\n"
+        "The end.")
+    NEW_TABLE = [
+        "| Product / entity | Official link | ExtensionTo product |",
+        "|---|---|---|",
+        "| AlphaTool | No | No |",
+    ]
+
+    def _after(self, table_rows, intro=None):
+        rows = "\n".join([self.NEW_TABLE[0], self.NEW_TABLE[1]] + table_rows)
+        mid = "Closing paragraph stays put."
+        if intro:
+            mid += "\n\n" + intro
+        return (self.BEFORE
+                .replace("Closing paragraph stays put.", mid)
+                .replace("## Final Verdict", rows + "\n\n## Final Verdict"))
+
+    def test_declared_new_table_passes(self):
+        after = self._after(["| AlphaTool | No | No |"],
+                            intro="The table below lists the compared products.")
+        r = body_neutralization_gate(
+            self.BEFORE, after, marked=[2],
+            allowed_new_paragraph_texts=["The table below lists the compared products."],
+            allowed_new_tables=[{"lines": self.NEW_TABLE}])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_undeclared_new_table_fails(self):
+        after = self._after(["| AlphaTool | No | No |"],
+                            intro="The table below lists the compared products.")
+        r = body_neutralization_gate(
+            self.BEFORE, after, marked=[2],
+            allowed_new_paragraph_texts=["The table below lists the compared products."])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "table_row_changed"
+                            for v in r["violations"]))
+
+    def test_new_name_in_declared_table_fails(self):
+        after = self._after(["| BetaTool | No | No |"])
+        r = body_neutralization_gate(
+            self.BEFORE, after, marked=[],
+            allowed_new_tables=[{"lines": [
+                self.NEW_TABLE[0], self.NEW_TABLE[1], "| BetaTool | No | No |"]}])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "new_table_name_not_in_before"
+                            for v in r["violations"]))
+
+    def test_link_in_declared_table_fails(self):
+        after = self._after(["| [AlphaTool](https://chromewebstore.google.com) | No | No |"])
+        r = body_neutralization_gate(
+            self.BEFORE, after, marked=[],
+            allowed_new_tables=[{"lines": [
+                self.NEW_TABLE[0], self.NEW_TABLE[1],
+                "| [AlphaTool](https://chromewebstore.google.com) | No | No |"]}])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "new_table_invalid"
+                            for v in r["violations"]))
+
+    def test_missing_declared_table_fails(self):
+        r = body_neutralization_gate(
+            self.BEFORE, self.BEFORE, marked=[],
+            allowed_new_tables=[{"lines": self.NEW_TABLE}])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "new_table_missing"
+                            for v in r["violations"]))
+
+    def test_url_anchor_swap_is_not_a_new_link(self):
+        # "[https://x.com](/)" -> "[x.com](/)": the URL was ANCHOR TEXT; the
+        # target "/" already existed. The bare-URL alternative of the link
+        # regex must not swallow the following "](/)".
+        before = "See [https://x.com](/) for details.\n\nEnd."
+        after = "See [x.com](/) for details.\n\nEnd."
+        r = body_neutralization_gate(before, after, marked=[0])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_whitelisted_block_in_mixed_insert_skips_proper_nouns(self):
+        # intro (whitelisted, contains a brand name) + declared table are
+        # inserted adjacently — one MIXED insert chunk; the intro must be
+        # skipped by the proper-noun scan, the table by its declaration
+        after = self._after(
+            ["| AlphaTool | No | No |"],
+            intro="The disclosure: ExtensionTo's own catalog lists these products.")
+        r = body_neutralization_gate(
+            self.BEFORE, after, marked=[],
+            allowed_new_paragraph_texts=[
+                "The disclosure: ExtensionTo's own catalog lists these products."],
+            allowed_new_tables=[{"lines": self.NEW_TABLE}])
+        self.assertTrue(r["pass"], r["violations"])
+
+
 class TestUnattributedInOutput(unittest.TestCase):
     """body_neutralization_gate check 8: the result must not introduce new
     unattributed hits (subset semantics, same as S1/S2/S3)."""
@@ -1341,7 +1615,10 @@ class TestUnverifiedProductRemoval(unittest.TestCase):
             UNVERIFIED_PRODUCTS,
             ("Popup Blocker Pro", "Minimal Popup Blocker",
              "Smart Popup Blocker", "Privacy-Focused Popup Blocker",
-             "Image Downloader Pro"))
+             "Image Downloader Pro",
+             # owner delegation 2026-10-09 additions
+             "Batch Image Downloader", "Visual Saver",
+             "PopUp Blocker (Basic)"))
 
     def test_02_section_deletion_passes_with_licenses(self):
         # count-fix sentences declared; FAQ sentence trimmed; conclusion
@@ -1460,6 +1737,161 @@ class TestUnverifiedProductRemoval(unittest.TestCase):
     def test_14_identical_bodies_pass(self):
         r = unverified_product_removal_gate(self.BEFORE, self.BEFORE)
         self.assertTrue(r["pass"], r["violations"])
+
+    def test_15_declared_line_replacement_pair(self):
+        old_line = "Five solutions stand out."
+        new_line = "Real Extension stands out."
+        after = self.BEFORE.replace(old_line, new_line, 1)
+        r = unverified_product_removal_gate(
+            self.BEFORE, after, allowed_line_replacements=[(old_line, new_line)])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_16_declared_replacement_pair_not_found_fails(self):
+        after = self.BEFORE.replace(
+            "Five solutions stand out.", "Real Extension stands out.", 1)
+        r = unverified_product_removal_gate(
+            self.BEFORE, after,
+            allowed_line_replacements=[("no such line", "no such new line")])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "replacement_pair_invalid"
+                            for v in r["violations"]))
+
+    def test_16b_allowed_removed_lines_license(self):
+        # owner delegation 2026-10-09 item أ-1هـ: a heading whose only
+        # content was irrelevant links may be deleted via the verbatim
+        # allowed_removed_lines license; undeleted unowned lines still fail.
+        before = ("## FAQ {#faq}\n\nAnswer text.\n\n"
+                  "### Related Guides on ExtensionTo\n\n"
+                  "- [Irrelevant guide](/blog/irrelevant-x)\n\n"
+                  "## Verdict {#v}\n\nDone.\n")
+        after = ("## FAQ {#faq}\n\nAnswer text.\n\n"
+                 "## Verdict {#v}\n\nDone.\n")
+        r = unverified_product_removal_gate(
+            before, after,
+            allowed_removed_lines=["### Related Guides on ExtensionTo",
+                                   "- [Irrelevant guide](/blog/irrelevant-x)"])
+        self.assertTrue(r["pass"], r["violations"])
+        # undeclared unowned deletion still fails
+        r2 = unverified_product_removal_gate(before, after)
+        self.assertFalse(r2["pass"])
+
+    def test_17_new_products_section_deletion_licensed(self):
+        # owner delegation 2026-10-09: the 3 added names get the same
+        # section-removal license as the original five. The verdict line is
+        # a declared sentence-trim pair (product fragment removed).
+        v_old = "Keep Quick Screenshot Lite. Batch Image Downloader is fast."
+        v_new = "Keep Quick Screenshot Lite."
+        before = (
+            "## Top Tools {#top}\n\n"
+            "### Batch Image Downloader\n\nBatch claims.\n\n"
+            "### Visual Saver\n\nVisual claims.\n\n"
+            "### PopUp Blocker (Basic)\n\nBasic claims.\n\n"
+            "## Verdict {#v}\n\n"
+            f"{v_old}\n"
+        )
+        after = (
+            "## Top Tools {#top}\n\n"
+            "## Verdict {#v}\n\n"
+            f"{v_new}\n"
+        )
+        r = unverified_product_removal_gate(
+            before, after, allowed_line_replacements=[(v_old, v_new)])
+        self.assertTrue(r["pass"], r["violations"])
+        self.assertIn("Batch Image Downloader", r["stats"]["products_removed"])
+        self.assertIn("Visual Saver", r["stats"]["products_removed"])
+        self.assertIn("PopUp Blocker (Basic)", r["stats"]["products_removed"])
+
+
+class TestLinkTagRemoval(unittest.TestCase):
+    """Owner delegation 2026-10-09 item أ-1د: broken mid-word auto-links and
+    irrelevant-topic internal links are fixed by removing the link tag while
+    keeping the anchor text byte-identical. Removal is licensed per exact
+    markdown link token; external links can never be declared."""
+
+    def test_01_internal_tag_removal_pass(self):
+        before = "See the [master guide](/blog/chrome-popup-blocker-master-guide) for details."
+        after = "See the master guide for details."
+        r = link_tag_removal_gate(
+            before, after,
+            allowed_removed_links=["[master guide](/blog/chrome-popup-blocker-master-guide)"])
+        self.assertTrue(r["pass"], r["violations"])
+        self.assertEqual(r["stats"]["removed_link_targets"],
+                         ["/blog/chrome-popup-blocker-master-guide"])
+
+    def test_02_midword_fragment_pass(self):
+        before = "The most [valuable extensions no](/blog/tiktok-x)t only download."
+        after = "The most valuable extensions not only download."
+        r = link_tag_removal_gate(
+            before, after,
+            allowed_removed_links=["[valuable extensions no](/blog/tiktok-x)"])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_03_adjacent_split_pass(self):
+        before = ("Are you [tired of popup](/blog/a)[s and intrusive ads"
+                  " constantly](/blog/b) disrupting your day?")
+        after = "Are you tired of popups and intrusive ads constantly disrupting your day?"
+        r = link_tag_removal_gate(
+            before, after,
+            allowed_removed_links=["[tired of popup](/blog/a)",
+                                   "[s and intrusive ads constantly](/blog/b)"])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_04_self_link_removal_pass(self):
+        before = "Finding a reliable **[pop-up blocker for Chrome](/blog/self-page)** is hard."
+        after = "Finding a reliable **pop-up blocker for Chrome** is hard."
+        r = link_tag_removal_gate(
+            before, after,
+            allowed_removed_links=["[pop-up blocker for Chrome](/blog/self-page)"])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_05_text_altered_fails(self):
+        r = link_tag_removal_gate("Keep [this](/blog/x) intact.", "Keep this CHANGED.",
+                                  allowed_removed_links=["[this](/blog/x)"])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "token_identity" for v in r["violations"]))
+
+    def test_06_external_link_removed_fails(self):
+        r = link_tag_removal_gate("See [docs](https://example.com) here.",
+                                  "See docs here.",
+                                  allowed_removed_links=["[docs](https://example.com)"])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "declared_link_external"
+                            for v in r["violations"]))
+
+    def test_07_undeclared_link_removed_fails(self):
+        r = link_tag_removal_gate("Both [a](/blog/x) and [b](/blog/y) links.",
+                                  "Both a and b links.",
+                                  allowed_removed_links=["[a](/blog/x)"])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "undeclared_link_removed"
+                            for v in r["violations"]))
+
+    def test_08_word_count_change_fails(self):
+        r = link_tag_removal_gate("Keep [the link text](/blog/x) here.",
+                                  "Keep the link text.",
+                                  allowed_removed_links=["[the link text](/blog/x)"])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "word_count_changed"
+                            for v in r["violations"]))
+
+    def test_09_anchor_addition_fails(self):
+        r = link_tag_removal_gate("Plain text here.",
+                                  "Plain [text](/blog/x) here.")
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "token_identity" for v in r["violations"]))
+
+    def test_10_image_markdown_not_matched(self):
+        before = "Alt: ![a screenshot](/content/images/x/featured.webp) inline."
+        r = link_tag_removal_gate(before, before)
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_11_partial_removal_keeps_other_links(self):
+        before = "Keep [a](/blog/x) and [b](/blog/y) both."
+        after = "Keep a and [b](/blog/y) both."
+        r = link_tag_removal_gate(
+            before, after, allowed_removed_links=["[a](/blog/x)"])
+        self.assertTrue(r["pass"], r["violations"])
+        self.assertEqual(r["stats"]["removed_link_targets"], ["/blog/x"])
 
 
 if __name__ == "__main__":

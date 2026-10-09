@@ -31,7 +31,7 @@ from typing import Collection, Dict, List, Sequence, Tuple
 _NUM_RE = re.compile(r"\d[\d,]*(?:\.\d+)*")
 _PCT_RE = re.compile(r"\d[\d,]*(?:\.\d+)*\s?%")
 _WORD_RE = re.compile(r"[A-Za-z0-9']+")
-_LINK_RE = re.compile(r"\]\(([^)\s]+)\)|https?://[^\s)>\"']+|<img[^>]+src=[\"']([^\"']+)")
+_LINK_RE = re.compile(r"\]\(([^)\s]+)\)|https?://[^\s)>\"'\]]+|<img[^>]+src=[\"']([^\"']+)")
 _IMG_RE = re.compile(r"!\[[^\]]*\]\([^)]*\)|<img[^>]*>", re.I)
 _HEADING_RE = re.compile(r"^#{1,6}\s")
 _FAQ_SECTION_RE = re.compile(r"faq|frequently\s+asked", re.I)
@@ -47,6 +47,10 @@ _TITLE_RE = re.compile(r"\b[A-Z][a-z][a-z0-9''&.\-]*")
 _SENTENCE_BOUNDARY = re.compile(r"[.!?]\s*$")
 _TOKEN_SPLIT = re.compile(r"(\s+)")
 _TOKEN_TRIM = ".,;:!?()[]{}\"'`*"
+# Replacement-list bullet: "- **Name** sentence" (owner brief 2026-10-07:
+# NIT-heavy tables may become a short bold-name + body-sentence list).
+_BULLET_RE = re.compile(r"^\s*[-*]\s+\*\*(.+?)\*\*\s*(.*)$", re.S)
+_LINKMD_RE = re.compile(r"\[([^\]]+)\]\([^)]*\)")
 
 
 def _blocks(body: str) -> List[str]:
@@ -106,6 +110,22 @@ def _proper_nouns(block: str) -> Counter:
             if _CAMEL_RE.fullmatch(core) or _TITLE_RE.fullmatch(core):
                 found.append(core)
     return Counter(found)
+
+
+def _pn_of_block(block: str) -> Counter:
+    """Proper nouns of one block, with the owner-mandated glued-TOC split
+    ('## Table of Contents- [X](#y)' -> heading + bullet line) applied first,
+    so the mandated split does not surface the heading's TOC-bullet words as
+    'new' names in the after block."""
+    if "Table of Contents-" not in block:
+        return _proper_nouns(block)
+    lines = []
+    for l in block.split("\n"):
+        m = _TOC_GLUED_RE.match(l)
+        # reconstruct the bullet WITH its '- ' prefix so token positions
+        # match the post-split reality
+        lines.append(f"{m.group(1)}\n- {m.group(2)}" if m else l)
+    return _proper_nouns("\n".join(lines))
 
 
 def _links(text: str) -> Counter:
@@ -193,24 +213,229 @@ def _standalone_pipe_lines(body: str) -> List[str]:
             if l.lstrip().startswith("|") and l not in detected]
 
 
+def _cell_edit_violations(
+    k: int,
+    b_blk: int,
+    b_rows: List[str],
+    a_rows: List[str],
+    allow_cells: set,
+) -> List[Dict[str, str]]:
+    """Old narrow-license per-row checks for ONE marked table pair."""
+    out: List[Dict[str, str]] = []
+    if len(b_rows) != len(a_rows):
+        out.append({
+            "check": "table_row_changed",
+            "detail": f"marked table #{k} row count changed "
+                      f"({len(b_rows)} -> {len(a_rows)})",
+        })
+        return out
+    if b_rows[0] != a_rows[0] or b_rows[1] != a_rows[1]:
+        out.append({
+            "check": "table_row_changed",
+            "detail": f"marked table #{k} header/separator row changed",
+        })
+        return out
+    for bi, (brow, arow) in enumerate(zip(b_rows[2:], a_rows[2:])):
+        bc, ac = _split_row(brow), _split_row(arow)
+        if len(bc) != len(ac) or brow.count("|") != arow.count("|"):
+            out.append({
+                "check": "table_row_changed",
+                "detail": f"marked table #{k} data row {bi + 1}: "
+                          f"column count changed",
+            })
+            break
+        if bc[0] != ac[0]:
+            out.append({
+                "check": "table_row_changed",
+                "detail": f"marked table #{k} data row {bi + 1}: "
+                          f"first column changed: {bc[0][:40]!r}",
+            })
+            break
+        bad = [c for b_cell, c in zip(bc[1:], ac[1:])
+               if b_cell != c and c.replace("**", "").strip()
+               not in allow_cells]
+        if bad:
+            out.append({
+                "check": "table_row_changed",
+                "detail": f"marked table #{k} data row {bi + 1}: cell(s) "
+                          f"{[b[:30] for b in bad[:3]]} not in accepted strings",
+            })
+            break
+    return out
+
+
+def _norm_label(s: str) -> str:
+    """Normalize a product label: strip markdown links to their text."""
+    return _LINKMD_RE.sub(r"\1", s).strip()
+
+
+def _verify_table_replacement(
+    before_body: str,
+    b_rows: List[str],
+    bullets: List[str],
+    violations: List[Dict[str, str]],
+    label: str,
+) -> None:
+    """Verify a declared table -> short-list replacement (owner brief
+    2026-10-07). Every bullet must be '**Name** sentence' where Name is a
+    byte-identical product label OF THE REPLACED TABLE (a first-column data
+    cell, or a header product column for column-mode tables) and the sentence
+    is a verbatim substring of the ORIGINAL body — no new facts. The list
+    must cover every product of the table exactly once (row mode: first
+    column; column mode: header product cells)."""
+    header = _split_row(b_rows[0])
+    data = [_split_row(r) for r in b_rows[2:]]
+    first_col = [r[0] for r in data if r and r[0]]
+    col_names = [c for c in header[1:] if c]
+    allowed_first = set(_norm_label(c) for c in first_col)
+    allowed_header = set(_norm_label(c) for c in col_names)
+    names: List[str] = []
+    for bl in bullets:
+        m = _BULLET_RE.match(bl)
+        if not m:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: bullet is not '**Name** sentence' format: "
+                          f"{bl[:60]!r}",
+            })
+            continue
+        name_raw, rest = m.group(1).strip(), m.group(2).strip()
+        name_norm = _norm_label(name_raw)
+        if name_norm not in allowed_first and name_norm not in allowed_header:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: bold name {name_norm[:40]!r} is not a "
+                          f"product label of the replaced table",
+            })
+        if rest[:1] in ("—", "-"):
+            rest = rest.lstrip("—- ").strip()
+        if not rest:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: bullet has no sentence after the bold name",
+            })
+        elif (name_norm + " " + rest) not in before_body \
+                and rest not in before_body:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: sentence {rest[:70]!r} is not a verbatim "
+                          f"part of the original body (no new facts allowed)",
+            })
+        names.append(name_norm)
+    if not names:
+        return
+    if set(names) <= allowed_first and first_col:
+        if len(names) != len(first_col) or len(set(names)) != len(first_col):
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: row-mode list covers "
+                          f"{len(set(names))} of {len(first_col)} products",
+            })
+    elif set(names) <= allowed_header and col_names:
+        if len(names) != len(col_names) or len(set(names)) != len(col_names):
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"{label}: column-mode list covers "
+                          f"{len(set(names))} of {len(col_names)} products",
+            })
+    else:
+        violations.append({
+            "check": "table_replacement_invalid",
+            "detail": f"{label}: bullet names mix row/column labels or match "
+                      f"neither the first column nor the header products",
+        })
+
+
+def _verify_new_table_declarations(
+    before_body: str,
+    after_blocks: Collection[str],
+    specs: Collection[Dict],
+    violations: List[Dict[str, str]],
+) -> List[List[str]]:
+    """Verify declared NEW tables (owner brief 2026-10-08, item 2).
+
+    Each spec = {"lines": [exact table lines]}. The declaration must hold
+    under ALL of:
+      * lines >= 3, every line starts with "|", line 2 is a separator row;
+      * the whole block appears byte-identically in the result;
+      * NO links inside the table (the article's existing links stay where
+        they are — a disclosure table adds none);
+      * every first-column product name (emphasis-stripped) already appears
+        in the original body — names are inventoried, never invented.
+    Returns the verified line-lists (for the table-structure accounting).
+    """
+    verified: List[List[str]] = []
+    seen: set = set()
+    after_block_set = {b.strip() for b in after_blocks}
+    low_before = re.sub(r"[*_`\[\]]", "", before_body).lower()
+    for k, spec in enumerate(specs):
+        lines = [l for l in spec.get("lines", [])]
+        where = f"new_table[{k}]"
+        if len(lines) < 3 or any(not l.lstrip().startswith("|") for l in lines) \
+                or not re.match(r"^\s*\|[-| :]+\|\s*$", lines[1]):
+            violations.append({
+                "check": "new_table_invalid",
+                "detail": f"{where}: not a well-formed markdown table",
+            })
+            continue
+        key = "\n".join(lines)
+        if key in seen:
+            violations.append({
+                "check": "new_table_invalid",
+                "detail": f"{where}: duplicate declaration",
+            })
+            continue
+        seen.add(key)
+        if key not in after_block_set:
+            violations.append({
+                "check": "new_table_missing",
+                "detail": f"{where}: declared table is not present "
+                          f"byte-identically in the result",
+            })
+            continue
+        if any(re.search(r"\]\([^)]*\)|https?://", l) for l in lines):
+            violations.append({
+                "check": "new_table_invalid",
+                "detail": f"{where}: declared table contains a link",
+            })
+            continue
+        bad_names = []
+        for row in lines[2:]:
+            name = re.sub(r"[*_`\[\]]", "", _split_row(row)[0]).strip().lower()
+            if name and name not in low_before:
+                bad_names.append(name)
+        if bad_names:
+            violations.append({
+                "check": "new_table_name_not_in_before",
+                "detail": f"{where}: name(s) not present in the original "
+                          f"body: {bad_names[:4]}",
+            })
+            continue
+        verified.append(lines)
+    return verified
+
+
 def _compare_tables(
     before_body: str,
     after_body: str,
     marked_set: set,
     allow_marked_table_edits: bool,
     allow_cells: set,
+    replacement_blocks: frozenset = frozenset(),
+    new_table_keys: frozenset = frozenset(),
 ) -> List[Dict[str, str]]:
-    """Structural table check with an optional narrow license.
+    """Structural table check with optional narrow licenses.
 
     Default semantics unchanged: the before/after table-line sequences must
     be equal. With allow_marked_table_edits=True, a table whose block is
     marked may swap DATA-cell text for accepted strings — header/separator
     byte-identical, row/column count and order fixed, first column
     byte-identical, every other changed cell's new text in allow_cells.
+    A table whose block is in replacement_blocks (owner-brief 2026-10-07
+    list replacement, verified separately) may be absent from the result.
     """
     tb, ta = _tables(before_body), _tables(after_body)
     # standalone pipe lines (not part of a detected table) must never change
-    tb_set = set(id(rows) for _, rows in tb)
     standalone_b = _standalone_pipe_lines(before_body)
     standalone_a = _standalone_pipe_lines(after_body)
     if standalone_b != standalone_a:
@@ -224,64 +449,64 @@ def _compare_tables(
     if [rows for _, rows in tb] == [rows for _, rows in ta]:
         return []
     violations: List[Dict[str, str]] = []
-    if len(tb) != len(ta):
+    # pool accounting: unchanged tables match by full row sequence; marked
+    # cell-edits match by (header, separator); declared replacements vanish.
+    ta_by_rows: Dict[tuple, List[int]] = {}
+    ta_by_head: Dict[tuple, List[int]] = {}
+    for j, (_, a_rows) in enumerate(ta):
+        ta_by_rows.setdefault(tuple(a_rows), []).append(j)
+        if len(a_rows) >= 2:
+            ta_by_head.setdefault((a_rows[0], a_rows[1]), []).append(j)
+    for k, (b_blk, b_rows) in enumerate(tb):
+        key = tuple(b_rows)
+        if ta_by_rows.get(key):
+            j = ta_by_rows[key].pop(0)
+            if len(a_rows_list := ta[j][1]) >= 2:
+                head_key = (a_rows_list[0], a_rows_list[1])
+                if j in ta_by_head.get(head_key, []):
+                    ta_by_head[head_key].remove(j)
+            continue
+        if b_blk in replacement_blocks:
+            continue
+        head_key = (b_rows[0], b_rows[1]) if len(b_rows) >= 2 else None
+        cand = ta_by_head.get(head_key, []) if head_key else []
+        if allow_marked_table_edits and b_blk in marked_set and not cand:
+            # header may itself have changed: fall back to the remaining
+            # after-table with the same row count (nearest to the old
+            # index-zip pairing) so the per-row checks report precisely
+            remaining = sorted(j for idxs in ta_by_rows.values() for j in idxs)
+            same_len = [j for j in remaining
+                        if len(ta[j][1]) == len(b_rows)]
+            if same_len:
+                cand = [same_len[0]]
+        if allow_marked_table_edits and b_blk in marked_set and cand:
+            j = cand.pop(0)
+            ta_by_rows[tuple(ta[j][1])].remove(j)
+            violations.extend(_cell_edit_violations(
+                k, b_blk, b_rows, ta[j][1], allow_cells))
+            continue
+        diff = next(((x, y) for x, y in zip(b_rows, (ta[cand[0]][1] if cand
+                                                     else b_rows)) if x != y),
+                    (b_rows[0] if b_rows else "", "<missing>"))
         violations.append({
             "check": "table_row_changed",
-            "detail": f"table count differs ({len(tb)} -> {len(ta)})",
+            "detail": f"table #{k} (block {b_blk}, marked={b_blk in marked_set}) "
+                      f"rows differ or were removed without a declared "
+                      f"replacement; first change: {diff[0][:60]!r}",
         })
-        return violations
-    for k, ((b_blk, b_rows), (a_blk, a_rows)) in enumerate(zip(tb, ta)):
-        if b_rows == a_rows:
+    leftover = [j for pool in ta_by_rows.values() for j in pool]
+    # declared NEW tables (verified separately) may exist in the result
+    remaining_leftover = []
+    for j in leftover:
+        if tuple(ta[j][1]) in new_table_keys:
             continue
-        if not allow_marked_table_edits or b_blk not in marked_set:
-            diff = next(((x, y) for x, y in zip(b_rows, a_rows) if x != y),
-                        (b_rows[0] if b_rows else "", "<missing>"))
-            violations.append({
-                "check": "table_row_changed",
-                "detail": f"table #{k} (block {b_blk}, marked={b_blk in marked_set}) "
-                          f"rows differ; first change: {diff[0][:60]!r}",
-            })
-            continue
-        # narrow license: verify every condition on this marked table
-        if len(b_rows) != len(a_rows):
-            violations.append({
-                "check": "table_row_changed",
-                "detail": f"marked table #{k} row count changed "
-                          f"({len(b_rows)} -> {len(a_rows)})",
-            })
-            continue
-        if b_rows[0] != a_rows[0] or b_rows[1] != a_rows[1]:
-            violations.append({
-                "check": "table_row_changed",
-                "detail": f"marked table #{k} header/separator row changed",
-            })
-            continue
-        for bi, (brow, arow) in enumerate(zip(b_rows[2:], a_rows[2:])):
-            bc, ac = _split_row(brow), _split_row(arow)
-            if len(bc) != len(ac) or brow.count("|") != arow.count("|"):
-                violations.append({
-                    "check": "table_row_changed",
-                    "detail": f"marked table #{k} data row {bi + 1}: "
-                              f"column count changed",
-                })
-                break
-            if bc[0] != ac[0]:
-                violations.append({
-                    "check": "table_row_changed",
-                    "detail": f"marked table #{k} data row {bi + 1}: "
-                              f"first column changed: {bc[0][:40]!r}",
-                })
-                break
-            bad = [c for b_cell, c in zip(bc[1:], ac[1:])
-                   if b_cell != c and c.replace("**", "").strip()
-                   not in allow_cells]
-            if bad:
-                violations.append({
-                    "check": "table_row_changed",
-                    "detail": f"marked table #{k} data row {bi + 1}: cell(s) "
-                              f"{[b[:30] for b in bad[:3]]} not in accepted strings",
-                })
-                break
+        remaining_leftover.append(j)
+    if remaining_leftover:
+        violations.append({
+            "check": "table_row_changed",
+            "detail": f"{len(remaining_leftover)} table(s) in the result do not exist in "
+                      f"the original (new/edited tables are forbidden)",
+        })
     return violations
 
 
@@ -298,6 +523,8 @@ def body_neutralization_gate(
     allowed_new_paragraph_texts: Collection[str] = (),
     allow_marked_table_edits: bool = False,
     allowed_table_cell_values: Collection[str] = ("Not independently tested",),
+    allowed_table_replacements: Collection[Dict] = (),
+    allowed_new_tables: Collection[Dict] = (),
     word_drop_limit_pct: float = 45.0,
 ) -> Dict:
     """Compare a neutralized body against its original.
@@ -328,6 +555,26 @@ def body_neutralization_gate(
         allowed_table_cell_values (default: {"Not independently tested"})
         — the owner's “accepted strings only” rule;
     Tables whose block is NOT marked stay forbidden entirely, flag or not.
+
+    allowed_table_replacements (owner brief 2026-10-07): a MARKED table
+    whose data cells are >50% "Not independently tested" may be replaced by
+    a SHORT LIST — each bullet "**Product** sentence", the bold name taken
+    byte-identically from the replaced table (first column, or header
+    product columns for column-mode tables) and the sentence a verbatim
+    substring of the original body (no new facts). The license is an exact
+    declaration: [{"block": <before block index>, "bullets": [lines]}].
+    The gate re-verifies every declaration (name ∈ table labels, sentence
+    ∈ original body, full product coverage) and that the result contains
+    the declared list block byte-identically and nothing else in its place.
+
+    allowed_new_tables (owner brief 2026-10-08 item 2): exact declarations
+    for BRAND-NEW tables — [{"lines": [table lines]}]. Every declaration
+    is re-verified (well-formed, byte-identical in the result, no links,
+    every first-column product name already present in the original body
+    — names are inventoried, never invented). Undeclared new tables stay
+    forbidden. Verified tables are also exempt from the paragraph-level
+    proper-noun scan (their names are checked against the WHOLE original,
+    which is stricter).
     """
     violations: List[Dict[str, str]] = []
     ab, abx = _blocks(before_body), _blocks(after_body)
@@ -336,6 +583,62 @@ def body_neutralization_gate(
     allow_renames = list(allowed_heading_renames)
     allow_para_texts = set(t.strip() for t in allowed_new_paragraph_texts)
     allow_cells = set(v.strip() for v in allowed_table_cell_values)
+    # declared table -> short-list replacements (owner brief 2026-10-07)
+    tb_all = _tables(before_body)
+    tb_by_block = {}
+    for blk, rows in tb_all:
+        tb_by_block.setdefault(blk, rows)
+    repl_specs: List[Tuple[int, List[str]]] = []
+    repl_blocks: set = set()
+    for spec in (allowed_table_replacements or ()):
+        b = int(spec["block"])
+        bullets = [l for l in spec["bullets"]]
+        if b not in marked_set:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"declared replacement block {b} is not marked",
+            })
+        if b in repl_blocks:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"duplicate replacement declaration for block {b}",
+            })
+            continue
+        repl_blocks.add(b)
+        repl_specs.append((b, bullets))
+        rows = tb_by_block.get(b)
+        if rows is None:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"declared replacement block {b} contains no table "
+                          f"in the original",
+            })
+        else:
+            # the marked block must be EXACTLY the table lines (a replacement
+            # silently drops everything else in the block)
+            if b < len(ab) and "\n".join(rows) != ab[b]:
+                violations.append({
+                    "check": "table_replacement_invalid",
+                    "detail": f"declared replacement block {b} contains "
+                              f"non-table lines besides the table",
+                })
+            _verify_table_replacement(
+                before_body, rows, bullets, violations, f"table (block {b})")
+        want = "\n".join(bullets)
+        if want not in abx:
+            violations.append({
+                "check": "table_replacement_invalid",
+                "detail": f"declared replacement list for block {b} is not "
+                          f"present byte-identically in the result",
+            })
+    declared_after_blocks = set("\n".join(bullets) for _, bullets in repl_specs)
+    # declared BRAND-NEW tables (owner brief 2026-10-08 item 2) — verified
+    # up front; verified tables join the declared-block set (proper-noun
+    # skip) and their row-keys are licensed in the structural table check.
+    verified_new_tables = _verify_new_table_declarations(
+        before_body, abx, (allowed_new_tables or ()), violations)
+    new_table_keys = frozenset(tuple(rows) for rows in verified_new_tables)
+    declared_after_blocks |= {"\n".join(rows) for rows in verified_new_tables}
     sm = SequenceMatcher(a=ab, b=abx, autojunk=False)
     ops = sm.get_opcodes()
 
@@ -416,7 +719,9 @@ def body_neutralization_gate(
             continue
         if tag == "replace" and len(b_chunk) == len(a_chunk):
             for bp, ap in zip(b_chunk, a_chunk):
-                extra = (set(_proper_nouns(ap)) - set(_proper_nouns(bp))
+                if ap.strip() in declared_after_blocks:
+                    continue  # declared list: every word verified verbatim
+                extra = (set(_pn_of_block(ap)) - set(_pn_of_block(bp))
                          - set(allow_pn))
                 if extra:
                     violations.append({
@@ -429,9 +734,13 @@ def body_neutralization_gate(
             # insert / unequal replace — op-level comparison
             before_pn = set()
             for b in b_chunk:
-                before_pn |= set(_proper_nouns(b))
+                before_pn |= set(_pn_of_block(b))
             for a in a_chunk:
-                extra = set(_proper_nouns(a)) - before_pn - set(allow_pn)
+                if a.strip() in declared_after_blocks:
+                    continue  # declared list: every word verified verbatim
+                if a.strip() in allow_para_texts:
+                    continue  # whitelisted insert (e.g. fixed disclaimer line)
+                extra = set(_pn_of_block(a)) - before_pn - set(allow_pn)
                 if extra:
                     violations.append({
                         "check": "proper_noun_new",
@@ -483,7 +792,7 @@ def body_neutralization_gate(
     ra = [l for l in after_body.splitlines() if l.lstrip().startswith("|")]
     table_violations = _compare_tables(
         before_body, after_body, marked_set, allow_marked_table_edits,
-        allow_cells)
+        allow_cells, frozenset(repl_blocks), new_table_keys)
     violations.extend(table_violations)
 
     if _faq_questions(before_body) != _faq_questions(after_body):
@@ -544,6 +853,7 @@ def body_neutralization_gate(
             "before_words": wb,
             "after_words": wa,
             "word_drop_pct": round(drop_pct, 1),
+            "tables_replaced": len(repl_specs),
             "before_paragraphs": len(ab),
             "after_paragraphs": len(abx),
             "marked": sorted(marked_set),
@@ -569,6 +879,11 @@ UNVERIFIED_PRODUCTS: Tuple[str, ...] = (
     "Smart Popup Blocker",
     "Privacy-Focused Popup Blocker",
     "Image Downloader Pro",
+    # Owner brief 2026-10-09 (delegation item أ-1أ): also fabricated /
+    # undocumented store names — sections licensed for removal.
+    "Batch Image Downloader",
+    "Visual Saver",
+    "PopUp Blocker (Basic)",
 )
 
 _HEADING_LINE_RE = re.compile(r"^(#{1,6})\s+(.*)$")
@@ -577,8 +892,15 @@ _H3_PREFIX_RE = re.compile(r"^(#{1,6})\s+H3:\s+(.*)$")
 
 
 def _mentions_unverified(line: str, products: Collection[str]) -> bool:
-    low = line.lower()
-    return any(p.lower() in low for p in products)
+    # strip markdown emphasis so '**Privacy-Focused** Popup Blocker' still
+    # matches the product name across the emphasis boundary; custom word
+    # boundaries so 'popup blocker pro' does NOT match inside 'popup blocker
+    # provides' AND names with trailing parentheses like 'PopUp Blocker
+    # (Basic)' still match at end of line (plain \b fails after ')').
+    low = re.sub(r"[*_`~]", "", line).lower()
+    return any(re.search(r"(?<![a-z0-9])" + re.escape(p.lower()) + r"(?![a-z0-9])",
+               low)
+               for p in products)
 
 
 def _owned_section_lines(lines: List[str], products: Collection[str]) -> set:
@@ -634,7 +956,9 @@ def unverified_product_removal_gate(
     unverified_products: Collection[str] = UNVERIFIED_PRODUCTS,
     *,
     allowed_new_lines: Collection[str] = (),
+    allowed_line_replacements: Collection[Tuple[str, str]] = (),
     allowed_heading_renames: Collection[Tuple[str, str]] = (),
+    allowed_removed_lines: Collection[str] = (),
     word_drop_limit_pct: float = None,
 ) -> Dict:
     """License for deleting unverified-product content (owner brief
@@ -655,7 +979,11 @@ def unverified_product_removal_gate(
          (e.g. the "Top 5" -> "Top" count fix);
       8. it appears VERBATIM in `allowed_new_lines` — the announced
          linking/count-fix sentences (re-verified: no new proper nouns vs
-         the whole before-body, no new numbers, no new links).
+         the whole before-body, no new numbers, no new links);
+      9. it appears VERBATIM in `allowed_removed_lines` — owner-authorized
+         deletions of lines that mention no unverified product (e.g. the
+         Related Guides heading whose only content was irrelevant links,
+         owner delegation 2026-10-09 item أ-1هـ). Byte-exact match only.
 
     Additional global checks: headings multiset (after the mandated
     '### H3: ' prefix strip on both sides) may only differ through renames
@@ -668,10 +996,27 @@ def unverified_product_removal_gate(
     violations: List[Dict[str, str]] = []
     prods = list(unverified_products)
     allow_new = set(l.rstrip("\n") for l in allowed_new_lines)
+    allow_removed = set(l.rstrip("\n") for l in allowed_removed_lines)
     allow_renames = list(allowed_heading_renames)
     lb, la = before_body.splitlines(), after_body.splitlines()
     owned_b = _owned_section_lines(lb, prods)
     owned_a = _owned_section_lines(la, prods)
+
+    # declared (old_line, new_line) replacement pairs — both sides verified
+    # byte-exact against the diff (used for count-fix / feature-fix lines)
+    lb_set, la_set = set(lb), set(la)
+    valid_pair_old, valid_pair_new = set(), set()
+    for o, n in (allowed_line_replacements or ()):  
+        o, n = o.rstrip("\n"), n.rstrip("\n")
+        if o in lb_set and n in la_set:
+            valid_pair_old.add(o)
+            valid_pair_new.add(n)
+        else:
+            violations.append({
+                "check": "replacement_pair_invalid",
+                "detail": f"declared pair not found verbatim: "
+                          f"{o[:60]!r} -> {n[:60]!r}",
+            })
 
     rename_old = {o for o, _n in allow_renames}
     rename_toc = {}  # anchor -> new heading text (for renamed-heading TOC bullets)
@@ -715,6 +1060,8 @@ def unverified_product_removal_gate(
         for a in adds:
             if not a.strip() or a in allow_new or _is_renamed_toc_bullet(a):
                 continue  # blank / declared verbatim / renamed-heading TOC bullet
+            if a in valid_pair_new:
+                continue  # declared old->new replacement pair
             if a in rename_new or _h3_stripped_counterpart(a, dels):
                 continue  # allowed heading rename / mandated H3-prefix strip
             if any(d.strip() and a in d for d in dels):
@@ -726,7 +1073,7 @@ def unverified_product_removal_gate(
         for k, d in enumerate(dels):
             if not d.strip() or (i1 + k) in owned_b or (i1 + k) in glued_ok:
                 continue
-            if d in rename_old or d in set(adds):
+            if d in rename_old or d in set(adds) or d in valid_pair_old:
                 continue
             if _HEADING_LINE_RE.match(d) and _h3_stripped_counterpart(d, adds):
                 continue  # mandated '### H3: ' prefix strip
@@ -757,6 +1104,8 @@ def unverified_product_removal_gate(
                         break
             if justified_trim:
                 continue
+            if d.rstrip("\n") in allow_removed:
+                continue
             violations.append({
                 "check": "unowned_line_deleted",
                 "detail": f"deleted line is not unverified-product content "
@@ -768,7 +1117,8 @@ def unverified_product_removal_gate(
     def _headings_owned_filtered(lines):
         owned = _owned_section_lines(lines, prods)
         return [_norm_heading_for_compare(l) for i, l in enumerate(lines)
-                if _HEADING_LINE_RE.match(l) and i not in owned]
+                if _HEADING_LINE_RE.match(l) and i not in owned
+                and l.rstrip("\n") not in allow_removed]
 
     hb = _headings_owned_filtered(lb)
     ha = _headings_owned_filtered(la)
@@ -826,14 +1176,24 @@ def unverified_product_removal_gate(
     # the original's plus the rename targets' wording (owner-declared heading
     # text). Declared linking sentences are NOT exempt — "no new names" is
     # absolute, so they are name-checked like every other added line.
+    # Sentence-trim artifacts: removing a product fragment reshuffles where a
+    # Title sequence ENDS, producing spans like 'Keep Quick Screenshot Lite.'
+    # that never existed verbatim although every word did. A flagged sequence
+    # is therefore accepted ONLY when every one of its words already occurs
+    # in the original's name vocabulary — a genuinely new entity (any word
+    # absent from the original) still fails.
     names_b = _names_anywhere(before_body) | _names_anywhere("\n".join(rename_new))
+    vocab_b = {w for name in names_b for w in name.replace(".", " ").split()}
     for a in la:
         if a.strip() and a not in lb and not _mentions_unverified(a, prods):
             extra = _names_anywhere(a) - names_b
-            if extra:
+            real_extra = {n for n in extra
+                          if any(w not in vocab_b
+                                 for w in n.replace(".", " ").split())}
+            if real_extra:
                 violations.append({
                     "check": "proper_noun_new",
-                    "detail": f"new name(s) {sorted(extra)[:6]} in line {a[:70]!r}",
+                    "detail": f"new name(s) {sorted(real_extra)[:6]} in line {a[:70]!r}",
                 })
 
     # fabrication subset + unattributed (same as the main gate)
@@ -890,5 +1250,117 @@ def unverified_product_removal_gate(
             "remaining_gate_hits": len(_hitset(ga)),
             "remaining_unattributed_hits": len(
                 new_unattributed_hits("", after_body)),
+        },
+    }
+
+
+# ---------------------------------------------------------------------------
+# Link-tag removal license (owner delegation 2026-10-09, item أ-1د):
+# broken mid-word auto-links and irrelevant-topic internal links are fixed
+# by REMOVING THE LINK TAG while keeping the anchor text byte-identical.
+# ---------------------------------------------------------------------------
+
+_MD_LINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s]+)\)")
+
+
+def _is_internal_link_target(target: str) -> bool:
+    return target.startswith("/") or target.startswith("#")
+
+
+def _detag_internal_links(text: str) -> str:
+    """Strip markup from internal markdown links, keeping the anchor text.
+    External links (http/https/mailto) are left untouched."""
+    def _sub(m: "re.Match[str]") -> str:
+        return m.group(1) if _is_internal_link_target(m.group(2)) else m.group(0)
+    return _MD_LINK_RE.sub(_sub, text)
+
+
+def link_tag_removal_gate(
+    before_body: str,
+    after_body: str,
+    *,
+    allowed_removed_links: Collection[str] = (),
+    allow_external_removal: bool = False,
+) -> Dict:
+    """License for tag-only link fixes (owner delegation 2026-10-09, أ-1د):
+    the ONLY permitted difference vs the before-body is that specific,
+    owner-declared markdown link tokens are replaced by their anchor text
+    (byte-identical, including mid-word fragment splits like
+    '[no](/x)t' -> 'not'). Every other byte must match.
+
+    Args:
+        allowed_removed_links: exact markdown link tokens, e.g.
+            '[anchor text](/blog/slug)', that this diff may un-tag.
+    Checks:
+      1. token identity: after == before with exactly the declared link
+         tokens un-tagged (nothing else added/changed/removed);
+      2. no undeclared link disappeared; external (http/https/mailto)
+         tokens can never be declared for removal;
+      3. word count unchanged (un-tagging keeps words).
+
+    Pure code — no model calls. Returns {pass, violations, stats}.
+    """
+    violations: List[Dict[str, str]] = []
+    declared = list(allowed_removed_links)
+    declared_internal: List[str] = []
+    for tok in declared:
+        m = _MD_LINK_RE.fullmatch(tok.strip())
+        if not m:
+            violations.append({
+                "check": "declared_link_invalid",
+                "detail": f"not a markdown link token: {tok[:80]!r}",
+            })
+        elif not _is_internal_link_target(m.group(2)):
+            violations.append({
+                "check": "declared_link_external",
+                "detail": f"external links may not be un-tagged: {tok[:80]!r}",
+            })
+        else:
+            declared_internal.append(tok.strip())
+    declared_set = set(declared_internal)
+
+    def _sub(m: "re.Match[str]") -> str:
+        tok = m.group(0)
+        return m.group(1) if tok in declared_set else tok
+
+    expected = _MD_LINK_RE.sub(_sub, before_body)
+    if expected != after_body:
+        el, al = expected.splitlines(), after_body.splitlines()
+        first = next((i for i, (x, y) in enumerate(zip(el, al)) if x != y),
+                     min(len(el), len(al)))
+        violations.append({
+            "check": "token_identity",
+            "detail": f"line {first + 1} differs from before-body with "
+                      f"declared links un-tagged: {el[first][:90]!r}"
+                      if first < min(len(el), len(al)) else
+                      f"line count {len(el)} -> {len(al)}",
+        })
+
+    removed_targets: List[str] = []
+    for m in _MD_LINK_RE.finditer(before_body):
+        tok = m.group(0)
+        if tok in declared_set:
+            removed_targets.append(m.group(2))
+        elif tok not in after_body:
+            violations.append({
+                "check": "undeclared_link_removed",
+                "detail": tok[:100],
+            })
+
+    wb = len(expected.split())
+    wa = len(after_body.split())
+    if wb != wa:
+        violations.append({
+            "check": "word_count_changed",
+            "detail": f"{wb} -> {wa}",
+        })
+
+    return {
+        "pass": not violations,
+        "violations": violations,
+        "stats": {
+            "removed_link_targets": removed_targets,
+            "words_before": wb,
+            "words_after": wa,
         },
     }
