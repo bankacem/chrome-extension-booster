@@ -9,6 +9,7 @@ import ContactSection from "@/components/ContactSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import SchemaMarkup from "@/components/SchemaMarkup";
 import { useLang } from "@/hooks/useLang";
 import { useTranslation } from "react-i18next";
 
@@ -23,6 +24,17 @@ const HOME_TITLES = {
 const Index = () => {
   const activeLang = useLang();
   const { t } = useTranslation();
+
+  const organizationData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "ExtensionTo",
+    url: "https://extensionto.com",
+    logo: "https://extensionto.com/og-image.png",
+    description:
+      "ExtensionTo is a Chrome extensions review and recommendation hub with practical guides for productivity, security, and faster browsing.",
+  };
+
   return (
     <main className="min-h-screen bg-background">
       <SEO
@@ -32,6 +44,7 @@ const Index = () => {
         lang={activeLang}
         hreflangLanguages={["en", "fr", "es", "pt", "ar"]}
       />
+      <SchemaMarkup data={organizationData} />
       <Navbar />
       <HeroSection />
       <StatsBar />

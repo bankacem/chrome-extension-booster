@@ -105,6 +105,75 @@ const slugToTitle = (slug: string): string => {
   return slug.split("-").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
 };
 
+/**
+ * Extracts FAQ pairs from the article markdown body.
+ * Looks for a "Frequently Asked Questions" H2 section (EN / FR / ES / PT / AR)
+ * and collects `### Question?` headings together with their answer paragraphs.
+ * Used as a fallback when the frontmatter `faq` field is empty, so Google
+ * still receives FAQPage structured data for eligible articles.
+ */
+const extractFaqsFromMarkdown = (content: string): Array<{ question: string; answer: string }> => {
+  if (!content) return [];
+  const lines = content.split("\n");
+
+  const faqSectionRe = /^##\s+(.*)$/;
+  const isFaqSectionHeading = (text: string) =>
+    /frequently asked questions|\bfaq\b|questions fr[ée]quentes|preguntas frecuentes|perguntas frequentes|أسئلة شائعة|常见问题/i.test(
+      text
+    );
+
+  // Locate the FAQ H2 section (ends at the next H2)
+  let faqStart = -1;
+  let faqEnd = lines.length;
+  for (let i = 0; i < lines.length; i++) {
+    const m = lines[i].match(faqSectionRe);
+    if (m) {
+      if (faqStart === -1 && isFaqSectionHeading(m[1])) {
+        faqStart = i;
+      } else if (faqStart !== -1) {
+        faqEnd = i;
+        break;
+      }
+    }
+  }
+  if (faqStart === -1) return [];
+
+  const stripMarkdown = (s: string) =>
+    s
+      .replace(/\{#[\w-]+\}/g, "") // {#anchor} suffixes
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // [text](url) -> text
+      .replace(/[*_~`]+/g, "") // bold / italic / code marks
+      .replace(/\s+/g, " ")
+      .trim();
+
+  const faqs: Array<{ question: string; answer: string }> = [];
+  let current: { question: string; answer: string } | null = null;
+
+  for (let i = faqStart + 1; i < faqEnd && faqs.length < 10; i++) {
+    const line = lines[i];
+    const h3 = line.match(/^###\s+(.*)$/);
+    if (h3) {
+      if (current && current.answer) faqs.push(current);
+      const q = stripMarkdown(h3[1]);
+      // Only question-like headings count as FAQs (skips "Related Guides", "Sources", ...)
+      current = /[?؟]\s*$/.test(q) ? { question: q, answer: "" } : null;
+      continue;
+    }
+    if (
+      current &&
+      line.trim() &&
+      !line.startsWith("#") &&
+      !line.startsWith("|") &&
+      !line.startsWith("![")
+    ) {
+      current.answer += (current.answer ? " " : "") + stripMarkdown(line);
+    }
+  }
+  if (current && current.answer && faqs.length < 10) faqs.push(current);
+
+  return faqs.filter((f) => f.question.length > 10 && f.answer.length > 20);
+};
+
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const activeLang = useLang();
@@ -374,18 +443,25 @@ const BlogPost = () => {
     ]
   } : null;
 
-  const faqData = article.faq?.length ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": article.faq.map(({ question, answer }) => ({
-      "@type": "Question",
-      "name": question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": answer,
-      },
-    })),
-  } : null;
+  // Prefer frontmatter `faq`; fall back to FAQs auto-extracted from the markdown body
+  // so articles with an FAQ section still emit FAQPage structured data.
+  const extractedFaqs =
+    article.faq?.length ? article.faq : extractFaqsFromMarkdown(article.content || "");
+
+  const faqData = extractedFaqs.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: extractedFaqs.map(({ question, answer }) => ({
+          "@type": "Question",
+          name: question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: answer,
+          },
+        })),
+      }
+    : null;
 
   return (
     <div className="min-h-screen bg-background">
