@@ -879,6 +879,11 @@ UNVERIFIED_PRODUCTS: Tuple[str, ...] = (
     "Smart Popup Blocker",
     "Privacy-Focused Popup Blocker",
     "Image Downloader Pro",
+    # Owner brief 2026-10-09 (delegation item أ-1أ): also fabricated /
+    # undocumented store names — sections licensed for removal.
+    "Batch Image Downloader",
+    "Visual Saver",
+    "PopUp Blocker (Basic)",
 )
 
 _HEADING_LINE_RE = re.compile(r"^(#{1,6})\s+(.*)$")
@@ -888,10 +893,13 @@ _H3_PREFIX_RE = re.compile(r"^(#{1,6})\s+H3:\s+(.*)$")
 
 def _mentions_unverified(line: str, products: Collection[str]) -> bool:
     # strip markdown emphasis so '**Privacy-Focused** Popup Blocker' still
-    # matches the product name across the emphasis boundary; word boundaries
-    # so 'popup blocker pro' does NOT match inside 'popup blocker provides'
+    # matches the product name across the emphasis boundary; custom word
+    # boundaries so 'popup blocker pro' does NOT match inside 'popup blocker
+    # provides' AND names with trailing parentheses like 'PopUp Blocker
+    # (Basic)' still match at end of line (plain \b fails after ')').
     low = re.sub(r"[*_`~]", "", line).lower()
-    return any(re.search(r"\b" + re.escape(p.lower()) + r"\b", low)
+    return any(re.search(r"(?<![a-z0-9])" + re.escape(p.lower()) + r"(?![a-z0-9])",
+               low)
                for p in products)
 
 
@@ -950,6 +958,7 @@ def unverified_product_removal_gate(
     allowed_new_lines: Collection[str] = (),
     allowed_line_replacements: Collection[Tuple[str, str]] = (),
     allowed_heading_renames: Collection[Tuple[str, str]] = (),
+    allowed_removed_lines: Collection[str] = (),
     word_drop_limit_pct: float = None,
 ) -> Dict:
     """License for deleting unverified-product content (owner brief
@@ -970,7 +979,11 @@ def unverified_product_removal_gate(
          (e.g. the "Top 5" -> "Top" count fix);
       8. it appears VERBATIM in `allowed_new_lines` — the announced
          linking/count-fix sentences (re-verified: no new proper nouns vs
-         the whole before-body, no new numbers, no new links).
+         the whole before-body, no new numbers, no new links);
+      9. it appears VERBATIM in `allowed_removed_lines` — owner-authorized
+         deletions of lines that mention no unverified product (e.g. the
+         Related Guides heading whose only content was irrelevant links,
+         owner delegation 2026-10-09 item أ-1هـ). Byte-exact match only.
 
     Additional global checks: headings multiset (after the mandated
     '### H3: ' prefix strip on both sides) may only differ through renames
@@ -983,6 +996,7 @@ def unverified_product_removal_gate(
     violations: List[Dict[str, str]] = []
     prods = list(unverified_products)
     allow_new = set(l.rstrip("\n") for l in allowed_new_lines)
+    allow_removed = set(l.rstrip("\n") for l in allowed_removed_lines)
     allow_renames = list(allowed_heading_renames)
     lb, la = before_body.splitlines(), after_body.splitlines()
     owned_b = _owned_section_lines(lb, prods)
@@ -1090,6 +1104,8 @@ def unverified_product_removal_gate(
                         break
             if justified_trim:
                 continue
+            if d.rstrip("\n") in allow_removed:
+                continue
             violations.append({
                 "check": "unowned_line_deleted",
                 "detail": f"deleted line is not unverified-product content "
@@ -1101,7 +1117,8 @@ def unverified_product_removal_gate(
     def _headings_owned_filtered(lines):
         owned = _owned_section_lines(lines, prods)
         return [_norm_heading_for_compare(l) for i, l in enumerate(lines)
-                if _HEADING_LINE_RE.match(l) and i not in owned]
+                if _HEADING_LINE_RE.match(l) and i not in owned
+                and l.rstrip("\n") not in allow_removed]
 
     hb = _headings_owned_filtered(lb)
     ha = _headings_owned_filtered(la)
@@ -1159,14 +1176,24 @@ def unverified_product_removal_gate(
     # the original's plus the rename targets' wording (owner-declared heading
     # text). Declared linking sentences are NOT exempt — "no new names" is
     # absolute, so they are name-checked like every other added line.
+    # Sentence-trim artifacts: removing a product fragment reshuffles where a
+    # Title sequence ENDS, producing spans like 'Keep Quick Screenshot Lite.'
+    # that never existed verbatim although every word did. A flagged sequence
+    # is therefore accepted ONLY when every one of its words already occurs
+    # in the original's name vocabulary — a genuinely new entity (any word
+    # absent from the original) still fails.
     names_b = _names_anywhere(before_body) | _names_anywhere("\n".join(rename_new))
+    vocab_b = {w for name in names_b for w in name.replace(".", " ").split()}
     for a in la:
         if a.strip() and a not in lb and not _mentions_unverified(a, prods):
             extra = _names_anywhere(a) - names_b
-            if extra:
+            real_extra = {n for n in extra
+                          if any(w not in vocab_b
+                                 for w in n.replace(".", " ").split())}
+            if real_extra:
                 violations.append({
                     "check": "proper_noun_new",
-                    "detail": f"new name(s) {sorted(extra)[:6]} in line {a[:70]!r}",
+                    "detail": f"new name(s) {sorted(real_extra)[:6]} in line {a[:70]!r}",
                 })
 
     # fabrication subset + unattributed (same as the main gate)
@@ -1223,5 +1250,117 @@ def unverified_product_removal_gate(
             "remaining_gate_hits": len(_hitset(ga)),
             "remaining_unattributed_hits": len(
                 new_unattributed_hits("", after_body)),
+        },
+    }
+
+
+# ---------------------------------------------------------------------------
+# Link-tag removal license (owner delegation 2026-10-09, item أ-1د):
+# broken mid-word auto-links and irrelevant-topic internal links are fixed
+# by REMOVING THE LINK TAG while keeping the anchor text byte-identical.
+# ---------------------------------------------------------------------------
+
+_MD_LINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s]+)\)")
+
+
+def _is_internal_link_target(target: str) -> bool:
+    return target.startswith("/") or target.startswith("#")
+
+
+def _detag_internal_links(text: str) -> str:
+    """Strip markup from internal markdown links, keeping the anchor text.
+    External links (http/https/mailto) are left untouched."""
+    def _sub(m: "re.Match[str]") -> str:
+        return m.group(1) if _is_internal_link_target(m.group(2)) else m.group(0)
+    return _MD_LINK_RE.sub(_sub, text)
+
+
+def link_tag_removal_gate(
+    before_body: str,
+    after_body: str,
+    *,
+    allowed_removed_links: Collection[str] = (),
+    allow_external_removal: bool = False,
+) -> Dict:
+    """License for tag-only link fixes (owner delegation 2026-10-09, أ-1د):
+    the ONLY permitted difference vs the before-body is that specific,
+    owner-declared markdown link tokens are replaced by their anchor text
+    (byte-identical, including mid-word fragment splits like
+    '[no](/x)t' -> 'not'). Every other byte must match.
+
+    Args:
+        allowed_removed_links: exact markdown link tokens, e.g.
+            '[anchor text](/blog/slug)', that this diff may un-tag.
+    Checks:
+      1. token identity: after == before with exactly the declared link
+         tokens un-tagged (nothing else added/changed/removed);
+      2. no undeclared link disappeared; external (http/https/mailto)
+         tokens can never be declared for removal;
+      3. word count unchanged (un-tagging keeps words).
+
+    Pure code — no model calls. Returns {pass, violations, stats}.
+    """
+    violations: List[Dict[str, str]] = []
+    declared = list(allowed_removed_links)
+    declared_internal: List[str] = []
+    for tok in declared:
+        m = _MD_LINK_RE.fullmatch(tok.strip())
+        if not m:
+            violations.append({
+                "check": "declared_link_invalid",
+                "detail": f"not a markdown link token: {tok[:80]!r}",
+            })
+        elif not _is_internal_link_target(m.group(2)):
+            violations.append({
+                "check": "declared_link_external",
+                "detail": f"external links may not be un-tagged: {tok[:80]!r}",
+            })
+        else:
+            declared_internal.append(tok.strip())
+    declared_set = set(declared_internal)
+
+    def _sub(m: "re.Match[str]") -> str:
+        tok = m.group(0)
+        return m.group(1) if tok in declared_set else tok
+
+    expected = _MD_LINK_RE.sub(_sub, before_body)
+    if expected != after_body:
+        el, al = expected.splitlines(), after_body.splitlines()
+        first = next((i for i, (x, y) in enumerate(zip(el, al)) if x != y),
+                     min(len(el), len(al)))
+        violations.append({
+            "check": "token_identity",
+            "detail": f"line {first + 1} differs from before-body with "
+                      f"declared links un-tagged: {el[first][:90]!r}"
+                      if first < min(len(el), len(al)) else
+                      f"line count {len(el)} -> {len(al)}",
+        })
+
+    removed_targets: List[str] = []
+    for m in _MD_LINK_RE.finditer(before_body):
+        tok = m.group(0)
+        if tok in declared_set:
+            removed_targets.append(m.group(2))
+        elif tok not in after_body:
+            violations.append({
+                "check": "undeclared_link_removed",
+                "detail": tok[:100],
+            })
+
+    wb = len(expected.split())
+    wa = len(after_body.split())
+    if wb != wa:
+        violations.append({
+            "check": "word_count_changed",
+            "detail": f"{wb} -> {wa}",
+        })
+
+    return {
+        "pass": not violations,
+        "violations": violations,
+        "stats": {
+            "removed_link_targets": removed_targets,
+            "words_before": wb,
+            "words_after": wa,
         },
     }

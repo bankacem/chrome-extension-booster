@@ -13,6 +13,7 @@ from seo_agent_pro.agents_v2.gates import (
     S1_V3_1_PATTERNS, fabrication_gate,
     FM_FIELDS, FM_HONESTY_PATTERNS, frontmatter_honesty_gate,
     body_neutralization_gate, unverified_product_removal_gate,
+    link_tag_removal_gate,
     UNVERIFIED_PRODUCTS,
     scan_attribution_numbers, scan_unattributed_table_cells, unattributed_gate,
 )
@@ -1614,7 +1615,10 @@ class TestUnverifiedProductRemoval(unittest.TestCase):
             UNVERIFIED_PRODUCTS,
             ("Popup Blocker Pro", "Minimal Popup Blocker",
              "Smart Popup Blocker", "Privacy-Focused Popup Blocker",
-             "Image Downloader Pro"))
+             "Image Downloader Pro",
+             # owner delegation 2026-10-09 additions
+             "Batch Image Downloader", "Visual Saver",
+             "PopUp Blocker (Basic)"))
 
     def test_02_section_deletion_passes_with_licenses(self):
         # count-fix sentences declared; FAQ sentence trimmed; conclusion
@@ -1751,6 +1755,143 @@ class TestUnverifiedProductRemoval(unittest.TestCase):
         self.assertFalse(r["pass"])
         self.assertTrue(any(v["check"] == "replacement_pair_invalid"
                             for v in r["violations"]))
+
+    def test_16b_allowed_removed_lines_license(self):
+        # owner delegation 2026-10-09 item أ-1هـ: a heading whose only
+        # content was irrelevant links may be deleted via the verbatim
+        # allowed_removed_lines license; undeleted unowned lines still fail.
+        before = ("## FAQ {#faq}\n\nAnswer text.\n\n"
+                  "### Related Guides on ExtensionTo\n\n"
+                  "- [Irrelevant guide](/blog/irrelevant-x)\n\n"
+                  "## Verdict {#v}\n\nDone.\n")
+        after = ("## FAQ {#faq}\n\nAnswer text.\n\n"
+                 "## Verdict {#v}\n\nDone.\n")
+        r = unverified_product_removal_gate(
+            before, after,
+            allowed_removed_lines=["### Related Guides on ExtensionTo",
+                                   "- [Irrelevant guide](/blog/irrelevant-x)"])
+        self.assertTrue(r["pass"], r["violations"])
+        # undeclared unowned deletion still fails
+        r2 = unverified_product_removal_gate(before, after)
+        self.assertFalse(r2["pass"])
+
+    def test_17_new_products_section_deletion_licensed(self):
+        # owner delegation 2026-10-09: the 3 added names get the same
+        # section-removal license as the original five. The verdict line is
+        # a declared sentence-trim pair (product fragment removed).
+        v_old = "Keep Quick Screenshot Lite. Batch Image Downloader is fast."
+        v_new = "Keep Quick Screenshot Lite."
+        before = (
+            "## Top Tools {#top}\n\n"
+            "### Batch Image Downloader\n\nBatch claims.\n\n"
+            "### Visual Saver\n\nVisual claims.\n\n"
+            "### PopUp Blocker (Basic)\n\nBasic claims.\n\n"
+            "## Verdict {#v}\n\n"
+            f"{v_old}\n"
+        )
+        after = (
+            "## Top Tools {#top}\n\n"
+            "## Verdict {#v}\n\n"
+            f"{v_new}\n"
+        )
+        r = unverified_product_removal_gate(
+            before, after, allowed_line_replacements=[(v_old, v_new)])
+        self.assertTrue(r["pass"], r["violations"])
+        self.assertIn("Batch Image Downloader", r["stats"]["products_removed"])
+        self.assertIn("Visual Saver", r["stats"]["products_removed"])
+        self.assertIn("PopUp Blocker (Basic)", r["stats"]["products_removed"])
+
+
+class TestLinkTagRemoval(unittest.TestCase):
+    """Owner delegation 2026-10-09 item أ-1د: broken mid-word auto-links and
+    irrelevant-topic internal links are fixed by removing the link tag while
+    keeping the anchor text byte-identical. Removal is licensed per exact
+    markdown link token; external links can never be declared."""
+
+    def test_01_internal_tag_removal_pass(self):
+        before = "See the [master guide](/blog/chrome-popup-blocker-master-guide) for details."
+        after = "See the master guide for details."
+        r = link_tag_removal_gate(
+            before, after,
+            allowed_removed_links=["[master guide](/blog/chrome-popup-blocker-master-guide)"])
+        self.assertTrue(r["pass"], r["violations"])
+        self.assertEqual(r["stats"]["removed_link_targets"],
+                         ["/blog/chrome-popup-blocker-master-guide"])
+
+    def test_02_midword_fragment_pass(self):
+        before = "The most [valuable extensions no](/blog/tiktok-x)t only download."
+        after = "The most valuable extensions not only download."
+        r = link_tag_removal_gate(
+            before, after,
+            allowed_removed_links=["[valuable extensions no](/blog/tiktok-x)"])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_03_adjacent_split_pass(self):
+        before = ("Are you [tired of popup](/blog/a)[s and intrusive ads"
+                  " constantly](/blog/b) disrupting your day?")
+        after = "Are you tired of popups and intrusive ads constantly disrupting your day?"
+        r = link_tag_removal_gate(
+            before, after,
+            allowed_removed_links=["[tired of popup](/blog/a)",
+                                   "[s and intrusive ads constantly](/blog/b)"])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_04_self_link_removal_pass(self):
+        before = "Finding a reliable **[pop-up blocker for Chrome](/blog/self-page)** is hard."
+        after = "Finding a reliable **pop-up blocker for Chrome** is hard."
+        r = link_tag_removal_gate(
+            before, after,
+            allowed_removed_links=["[pop-up blocker for Chrome](/blog/self-page)"])
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_05_text_altered_fails(self):
+        r = link_tag_removal_gate("Keep [this](/blog/x) intact.", "Keep this CHANGED.",
+                                  allowed_removed_links=["[this](/blog/x)"])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "token_identity" for v in r["violations"]))
+
+    def test_06_external_link_removed_fails(self):
+        r = link_tag_removal_gate("See [docs](https://example.com) here.",
+                                  "See docs here.",
+                                  allowed_removed_links=["[docs](https://example.com)"])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "declared_link_external"
+                            for v in r["violations"]))
+
+    def test_07_undeclared_link_removed_fails(self):
+        r = link_tag_removal_gate("Both [a](/blog/x) and [b](/blog/y) links.",
+                                  "Both a and b links.",
+                                  allowed_removed_links=["[a](/blog/x)"])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "undeclared_link_removed"
+                            for v in r["violations"]))
+
+    def test_08_word_count_change_fails(self):
+        r = link_tag_removal_gate("Keep [the link text](/blog/x) here.",
+                                  "Keep the link text.",
+                                  allowed_removed_links=["[the link text](/blog/x)"])
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "word_count_changed"
+                            for v in r["violations"]))
+
+    def test_09_anchor_addition_fails(self):
+        r = link_tag_removal_gate("Plain text here.",
+                                  "Plain [text](/blog/x) here.")
+        self.assertFalse(r["pass"])
+        self.assertTrue(any(v["check"] == "token_identity" for v in r["violations"]))
+
+    def test_10_image_markdown_not_matched(self):
+        before = "Alt: ![a screenshot](/content/images/x/featured.webp) inline."
+        r = link_tag_removal_gate(before, before)
+        self.assertTrue(r["pass"], r["violations"])
+
+    def test_11_partial_removal_keeps_other_links(self):
+        before = "Keep [a](/blog/x) and [b](/blog/y) both."
+        after = "Keep a and [b](/blog/y) both."
+        r = link_tag_removal_gate(
+            before, after, allowed_removed_links=["[a](/blog/x)"])
+        self.assertTrue(r["pass"], r["violations"])
+        self.assertEqual(r["stats"]["removed_link_targets"], ["/blog/x"])
 
 
 if __name__ == "__main__":

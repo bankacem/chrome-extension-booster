@@ -155,7 +155,7 @@ If you already own a Galaxy device and your ad-blocking needs are straightforwar
 | Requires browser switch | Yes | Yes | No | Yes | Yes |
 | Extension ecosystem | Full CWS | Firefox Add-ons | None | Full CWS (mostly) | Content blockers only |
 | Setup time | Short (install + lists) | Short (install + lists) | Minimal (one setting) | Short (install + lists) | Short (built-in) |
-| Security patch speed | Moderate | Fast | N/A | Fast | Fast (Galaxy schedule) |
+| Security patch speed | Moderate | Fast | N/A | Not independently tested | Not independently tested |
 | Free | Yes | Yes | Yes | Yes | Yes |
 
 Figures are not independently verified; check each product's official listing.

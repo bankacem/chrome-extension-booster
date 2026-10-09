@@ -23,7 +23,7 @@ description: "Are you tired of annoying pop-ups and intrusive ads disrupting you
 ---
 <img src="/content/images/pop-up-blocker-for-chrome-partial/featured.webp" alt="pop-up-blocker-for-chrome-partial" width="1200" height="630" loading="lazy" class="featured-image">
 
-Finding a reliable **[pop-up blocker for Chrome](/blog/pop-up-blocker-for-chrome-partial)** has become essential in 2026 as websites increasingly employ aggressive tactics to capture your attention. Even trusted websites now use pop-ups for newsletter signups, cookie consent overlays, and promotional offers that can disrupt your workflow. This guide cuts through the noise to provide the most effective solutions for different needs. Whether you're a casual browser or a demanding user concerned about privacy and productivity, you'll see which Chrome extensions are worth considering without compromising [your browsing experience](/blog/boosting-your-browsing-experience).
+Finding a reliable **pop-up blocker for Chrome** has become essential in 2026 as websites increasingly employ aggressive tactics to capture your attention. Even trusted websites now use pop-ups for newsletter signups, cookie consent overlays, and promotional offers that can disrupt your workflow. This guide cuts through the noise to provide the most effective solutions for different needs. Whether you're a casual browser or a demanding user concerned about privacy and productivity, you'll see which Chrome extensions are worth considering without compromising [your browsing experience](/blog/boosting-your-browsing-experience).
 
 ## Table of Contents
 - [The Pop-Up Problem in 2026](#the-pop-up-problem)
@@ -144,7 +144,6 @@ Given the concerns about some ad blockers tracking users, it's crucial to choose
 - **Light Popup Blocker** remains a strong all-around option for most users.
 - **[uBlock Origin](https://github.com/gorhill/uBlock)** — While primarily known as an ad blocker, uBlock Origin excels at pop-up blocking too.
 - **AdBlock Plus** has been a popular choice for years, and it remains effective against most traditional pop-ups.
-- **PopUp Blocker (Basic)** — For users who need a simple, no-frills solution, the basic PopUp Blocker extension gets the job done with virtually no configuration needed.
 
 
 
@@ -193,21 +192,6 @@ Cons:
 - Allows some ads by default (Acceptable Ads)
 - More resource-intensive than lighter options
 - Less effective against newer pop-up techniques
-
-### PopUp Blocker (Basic)
-
-For users who need a simple, no-frills solution, the basic PopUp Blocker extension gets the job done with virtually no configuration needed.
-
-Pros:
-- Extremely simple to use
-- Very lightweight (under 5MB memory usage)
-- No complex settings to navigate
-- Good for users who want set-and-forget functionality
-
-Cons:
-- Less effective against sophisticated pop-ups
-- Limited customization options
-- May not block all types of overlays and redirects
 
 For a more detailed comparison of these options, you can check our guide on [A Free Popup Blocker for Chrome: Does It Actually Work?](/blog/boosting-your-browsing-experience) covering these extensions against specific use cases.
 
@@ -451,7 +435,6 @@ Products compared in this guide: an "official link" is a link to the product's o
 | Light Popup Blocker | No | Yes |
 | uBlock Origin | Yes | No |
 | AdBlock Plus | No | No |
-| PopUp Blocker (Basic) | No | No |
 | Total Adblock | No | No |
 | Malwarebytes Browser Guard | No | No |
 
