@@ -76,8 +76,8 @@
         "description": "Published guides walk through installation, configuration, and troubleshooting for the tools covered here."
       },
       "community_driven": {
-        "title": "Community Driven",
-        "description": "Built to solve real problems Chrome users run into every day."
+        "title": "Task-focused tools",
+        "description": "Every tool in the catalog targets a specific browsing task."
       },
       "open_source": {
         "title": "Multilingual Site",
@@ -140,7 +140,7 @@
   },
   "blog_section": {
     "eyebrow": "Editorial guides",
-    "title": "Reviewed Chrome Extension Guides",
+    "title": "Chrome Extension Guides",
     "description": "Start with practical guides covering browser fundamentals, privacy, and productivity.",
     "view_all": "View all guides",
     "read_guide": "Read the guide"
@@ -164,7 +164,7 @@
     "phone": "Phone",
     "location": "Location",
     "quick_response": "Quick Response",
-    "quick_response_text": "We typically respond within 24 hours during business days. For urgent matters, feel free to reach out via phone or check our FAQ section for immediate answers."
+    "quick_response_text": "Use the form below to send us a message, or check our FAQ section for quick answers to common questions."
   },
   "cta": {
     "badge": "Ready to transform your browsing?",
@@ -181,7 +181,7 @@
   "blog": {
     "title": "Our Blog",
     "latest": "Latest Articles & Tips",
-    "subtitle": "Discover practical, reviewed guides about browser extensions, privacy, productivity, and performance.",
+    "subtitle": "Discover practical guides about browser extensions, privacy, productivity, and performance.",
     "search_placeholder": "Search articles...",
     "all_categories": "All Categories",
     "back_to_blog": "Back to Blog",

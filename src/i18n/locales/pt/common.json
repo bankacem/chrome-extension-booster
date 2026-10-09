@@ -76,8 +76,8 @@
         "description": "Guias publicados explicam instalação, configuração e solução de problemas das ferramentas abordadas aqui."
       },
       "community_driven": {
-        "title": "Feita com a comunidade",
-        "description": "Criada para resolver problemas reais que os usuários do Chrome enfrentam todos os dias."
+        "title": "Ferramentas focadas em tarefas",
+        "description": "Cada ferramenta do catálogo tem uma tarefa de navegação específica."
       },
       "open_source": {
         "title": "Site multilíngue",
@@ -140,7 +140,7 @@
   },
   "blog_section": {
     "eyebrow": "Guias editoriais",
-    "title": "Guias de extensões do Chrome revisados",
+    "title": "Guias de extensões do Chrome",
     "description": "Comece com guias práticos sobre fundamentos do navegador, privacidade e produtividade.",
     "view_all": "Ver todos os guias",
     "read_guide": "Ler o guia"
@@ -164,7 +164,7 @@
     "phone": "Telefone",
     "location": "Localização",
     "quick_response": "Resposta rápida",
-    "quick_response_text": "Normalmente respondemos em até 24 horas durante os dias úteis. Para assuntos urgentes, fale conosco por telefone ou consulte nossa seção de perguntas frequentes."
+    "quick_response_text": "Use o formulário abaixo para nos enviar uma mensagem, ou consulte a seção de perguntas frequentes para respostas rápidas."
   },
   "cta": {
     "badge": "Pronto para transformar sua navegação?",
@@ -181,7 +181,7 @@
   "blog": {
     "title": "Nosso blog",
     "latest": "Artigos e dicas mais recentes",
-    "subtitle": "Descubra guias práticos e revisados sobre extensões de navegador, privacidade, produtividade e desempenho.",
+    "subtitle": "Descubra guias práticos sobre extensões de navegador, privacidade, produtividade e desempenho.",
     "search_placeholder": "Pesquisar artigos...",
     "all_categories": "Todas as categorias",
     "back_to_blog": "Voltar ao blog",
