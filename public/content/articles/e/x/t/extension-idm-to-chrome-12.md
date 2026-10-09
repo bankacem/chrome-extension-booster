@@ -24,7 +24,8 @@ description: "Are you looking to take your Chrome browsing experience to the nex
 <img src="/content/images/extension-idm-to-chrome-12/featured.webp" alt="extension-idm-to-chrome-12" width="1200" height="630" loading="lazy" class="featured-image">
 
 
-## Table of Contents- [Understanding IDM and Chrome Integration](#understanding-idm-and-chrome-integration)
+## Table of Contents
+- [Understanding IDM and Chrome Integration](#understanding-idm-and-chrome-integration)
 - [Why This Matters in 2026](#why-this-matters)
 - [Prerequisites: What You'll Need Before Starting](#prerequisites)
 - [Step-by-Step Guide to Integrating IDM with Chrome](#step-by-step-guide)

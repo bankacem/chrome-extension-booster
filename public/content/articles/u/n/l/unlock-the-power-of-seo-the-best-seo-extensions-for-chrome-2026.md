@@ -28,7 +28,8 @@ As we [dive into 2026](/blog/how-to-install-idm-extension-in-chrome-manually-202
 
 Whether you're a seasoned SEO expert managing multiple client campaigns or just starting your journey in search optimization, the right Chrome extensions can save you countless hours while providing insights that might otherwise require expensive software subscriptions. I've installed, tested, and compared dozens of extensions to bring you this definitive guide focused on practical value, real-world applicability, and tools that genuinely move the needle for your SEO efforts.
 
-## Table of Contents- [What Are SEO Extensions and How They've Evolved in 2026](#what-are-seo-extensions)
+## Table of Contents
+- [What Are SEO Extensions and How They've Evolved in 2026](#what-are-seo-extensions)
 - [Why This Matters in 2026](#why-matters)
 - [Key Categories of SEO Extensions](#key-categories)
 - [The Best SEO Extensions for Chrome 2026: Detailed Reviews](#best-seo-extensions)

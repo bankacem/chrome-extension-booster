@@ -29,7 +29,8 @@ read_time: "18"
 
 Are [there any adblockers that still](/blog/manifest-v3-adblock-chrome-guide) work on YouTube? This is the question I've been asked more than any other this year, and after extensive testing across multiple browsers and extensions, I have a definitive answer. In my experience testing over a dozen ad blockers on YouTube throughout 2026, I've found that while YouTube has [made blocking ads significantly more](/blog/adblock-telephone-block-unwanted-calls-ads) challenging than in previous years, several effective solutions still exist. This guide is for anyone tired of being interrupted by unskippable ads, mid-roll breaks, and the constant cat-and-mouse game with YouTube's anti-adblock measures. Based on my hands-on testing with real YouTube videos—including music videos, long-form tech reviews, and live streams—here's [what actually works in 2026](/blog/block-ads-youtube-app-android).
 
-## Table of Contents- [YouTube's Ad Problem Has Reached a Breaking Point in 2026](/blog/youtube-adblock-chrome-guide)
+## Table of Contents
+- [YouTube's Ad Problem Has Reached a Breaking Point in 2026](/blog/youtube-adblock-chrome-guide)
 - [Why YouTube Ads Are Worse Than Ever in 2026](#why-youtube-ads-worse)
 - [How YouTube Ads Work in 2026](#how-youtube-ads-work)
 - [The Challenge: Why Some Adblockers Fail on YouTube](#the-challenge)

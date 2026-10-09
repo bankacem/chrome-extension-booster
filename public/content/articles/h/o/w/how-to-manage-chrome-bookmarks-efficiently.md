@@ -34,7 +34,8 @@ Most guides to this topic either walk you through bookmarking a single page (use
 This guide covers Chrome's built-in Bookmark Manager in real depth, a folder structure that scales past the point where a flat list stops working, the keyboard shortcuts worth actually memorizing, how sync behaves across devices (including the part most articles get vague about), how to clean up years of accumulated clutter, and when a third-party extension genuinely earns its place over the built-in tool.
 
 <a id="table-of-contents"></a>
-## Table of Contents- [Chrome's Built-In Bookmark Manager, Properly Explained](#bookmark-manager-explained)
+## Table of Contents
+- [Chrome's Built-In Bookmark Manager, Properly Explained](#bookmark-manager-explained)
 - [A Folder Structure That Actually Scales](#folder-structure)
 - [Keyboard Shortcuts for a Faster Workflow](#keyboard-shortcuts)
 - [How Bookmark Sync Really Works Across Devices](#sync-across-devices)

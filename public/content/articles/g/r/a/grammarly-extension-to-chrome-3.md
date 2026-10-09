@@ -29,7 +29,8 @@ As someone who spends hours crafting emails, articles, and social media posts, I
 
 In my testing across various Chrome setups—from basic laptops to high-performance workstations—I've discovered both the tremendous benefits and potential drawbacks of running Grammarly continuously. This guide combines my hands-on experience with verified technical details to help you implement Grammarly effectively while maintaining optimal browser performance.
 
-## Table of Contents- [What is Grammarly and How Does It Work?](#what-is-grammarly)
+## Table of Contents
+- [What is Grammarly and How Does It Work?](#what-is-grammarly)
 - [Installation and Setup: Getting Started with Grammarly](#installation-and-setup)
 - [Core Features: Beyond Basic Grammar Checking](#core-features)
 - [Grammarly vs. Native Chrome Spell Check: A Detailed Comparison](#grammarly-vs-native-spell-check)

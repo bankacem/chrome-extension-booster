@@ -27,7 +27,8 @@ When it comes to enhancing your [Google Chrome browser](/blog/unlocking-the-powe
 
 For those looking to optimize their browser's performance, our ProTab Suspender extension is a great tool to have, as it automatically suspends inactive tabs to save memory. Additionally, our Light Popup Blocker can help block annoying popups and intrusive ads, creating a more enjoyable browsing experience. But sometimes, the best tools aren't found in the official store, which is why understanding alternative marketplaces is crucial for power users and developers alike.
 
-## Table of Contents- [Why Look Beyond the Chrome Web Store?](#why-look-beyond)
+## Table of Contents
+- [Why Look Beyond the Chrome Web Store?](#why-look-beyond)
 - [Types of Chrome Extensions Marketplaces](#types-of-marketplaces)
 - [Top Chrome Extensions Marketplace Alternatives](#top-alternatives)
 - [How to Safely Install Extensions from Third-Party Sources](#safely-install)

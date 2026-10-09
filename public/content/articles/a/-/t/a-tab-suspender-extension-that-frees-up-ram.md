@@ -27,7 +27,8 @@ Are you constantly battling with a sluggish browser that's consuming all your sy
 
 In this comprehensive guide, I'll share everything I've learned about tab suspension extensions based on months of hands-on testing across different hardware configurations—from a 4GB RAM laptop to a 16GB development machine. We'll examine how these tools work, what features truly matter, and which extensions deliver on their promises without introducing new problems. Whether you're a power user juggling complex workflows or someone who simply wants their browser to run faster, this guide will help you make an informed decision about implementing tab suspension in your browsing routine.
 
-## Table of Contents- [Why Chrome Devours So Much RAM in 2026](#why-chrome-uses-ram)
+## Table of Contents
+- [Why Chrome Devours So Much RAM in 2026](#why-chrome-uses-ram)
 - [How Tab Suspension Actually Works](#how-tab-suspension-works)
 - [The Science Behind Memory Savings](#science-behind-memory-savings)
 - [Key Features That Separate Good from Great Tab Suspenders](#essential-features)

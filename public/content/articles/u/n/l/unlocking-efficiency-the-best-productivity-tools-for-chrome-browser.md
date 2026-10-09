@@ -27,7 +27,8 @@ In today's digital landscape, where attention is the new [currency and efficienc
 
 Chrome's extension ecosystem offers remarkable potential, but with over 200,000 options available, finding the gems that actually enhance productivity rather than add another layer of complexity can be overwhelming. I've spent the past six months rigorously testing and categorizing extensions that genuinely improve how I work, from managing tabs and blocking distractions to automating repetitive tasks. What follows is a curated selection based on hands-on testing, with honest assessments of what works, what doesn't, and who benefits most from each tool.
 
-## Table of Contents- [Why Chrome Productivity Tools Matter in 2026](#why-chrome-productivity-tools-matter-in-2026)
+## Table of Contents
+- [Why Chrome Productivity Tools Matter in 2026](#why-chrome-productivity-tools-matter-in-2026)
 - [Key Categories of Productivity Extensions](#key-categories-of-productivity-extensions)
 - [Essential Tab Management Tools](#essential-tab-management-tools)
 - [Focus and Distraction Blockers](#focus-and-distraction-blockers)

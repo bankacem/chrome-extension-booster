@@ -26,7 +26,8 @@ description: "As a small business owner, managing finances, tracking inventory, 
 
 Whether you're a solopreneur managing a side hustle or leading a small team with multiple projects, the right spreadsheet tool can automate tedious tasks, streamline workflows, and provide the data visualization you need to make informed decisions. I've spent countless hours comparing features, testing integrations, and analyzing real-world performance to bring you this definitive resource. Let's dive into the world of spreadsheet software and unlock new levels of efficiency for your business.
 
-## Table of Contents- [Why Spreadsheets Are Essential for Small Businesses](#why-spreadsheets-are-essential-for-small-businesses)
+## Table of Contents
+- [Why Spreadsheets Are Essential for Small Businesses](#why-spreadsheets-are-essential-for-small-businesses)
 - [Key Benefits of Modern Spreadsheet Software](#key-benefits-of-modern-spreadsheet-software)
 - [Critical Features to Look For](#critical-features-to-look-for)
 - [Top Spreadsheet Solutions Compared](#top-spreadsheet-solutions-compared)

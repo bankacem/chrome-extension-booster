@@ -27,7 +27,8 @@ As our digital lives become increasingly intertwined with our daily activities, 
 
 In this guide, I'll share my hands-on experience with this security extension, breaking down its features, performance, and practical applications based on real-world testing. Whether you're a casual browser concerned about phishing sites or a power user managing sensitive data, this article will provide the tested insights you need to determine if [Avast](https://www.avast.com)'s Chrome extension is the right security solution for your digital life.
 
-## Table of Contents- [Understanding the Avast Chrome Extension](#understanding-the-avast-chrome-extension)
+## Table of Contents
+- [Understanding the Avast Chrome Extension](#understanding-the-avast-chrome-extension)
 - [Core Security Features in Depth](#core-security-features-in-depth)
 - [Privacy Protection Capabilities](#privacy-protection-capabilities)
 - [Performance Impact and Resource Usage](#performance-impact-and-resource-usage)

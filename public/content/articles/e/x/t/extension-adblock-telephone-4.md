@@ -27,7 +27,8 @@ Are you tired of intrusive ads disrupting [your mobile browsing experience on](/
 
 In my experience as someone who has tested numerous ad-blocking solutions across different devices and browsers, effective ad-blocking extensions can make a significant difference in your daily mobile browsing. These tools not only eliminate annoying distractions but also enhance your privacy and security while potentially reducing data consumption. Throughout this guide, I'll share specific details about how these extensions work, their performance in real-world scenarios, and which ones have delivered consistent results in my testing.
 
-## Table of Contents- [The Mobile Ad Problem: Why Extension Adblock Telephone Solutions Matter](#mobile-ad-problem)
+## Table of Contents
+- [The Mobile Ad Problem: Why Extension Adblock Telephone Solutions Matter](#mobile-ad-problem)
 - [How Extension Adblock Telephone Solutions Work](#how-extension-adblock-works)
 - [Key Benefits of Using Extension Adblock Telephone](#key-benefits)
 - [Essential Features to Look for in Extension Adblock Telephone Solutions](#essential-features)

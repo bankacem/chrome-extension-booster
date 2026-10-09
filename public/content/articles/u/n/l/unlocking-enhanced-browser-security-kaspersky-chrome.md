@@ -25,7 +25,8 @@ description: "As the internet landscape continues to evolve, browser security ha
 
 As cyber threats continue to evolve at an alarming rate, browser security has become more critical than ever. In my years of testing security extensions, I've found that the right protection can make all the difference between safe browsing [and a potential security disaster](/blog/unlocking-the-full-potential-of-kiwi-browser). [This comprehensive guide focuses](/blog/windscribe-extension-to-chrome-9) on kaspersky chrome, the security extension from the renowned cybersecurity company Kaspersky Lab, designed to provide an additional layer of protection specifically for Chrome users. Whether you're concerned about phishing attacks, malware, or tracking, I'll walk you through everything you need to know about this security solution, based on hands-on testing and research.
 
-## Table of Contents- [What is Kaspersky Chrome?](#what-is-kaspersky-chrome)
+## Table of Contents
+- [What is Kaspersky Chrome?](#what-is-kaspersky-chrome)
 - [Why Browser Security Matters in 2026](#why-browser-security-matters)
 - [Key Features of Kaspersky Chrome](#key-features)
 - [Installation and Setup Process](#installation-setup)

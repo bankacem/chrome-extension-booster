@@ -26,7 +26,8 @@ description: "Are you tired of the traditional bright white background of Google
 
 I've spent countless hours researching and testing different methods [to enable dark mode on](/blog/why-auto-dark-mode-is-essential-for-programmers-6) Google Search, and I'm excited to share the most reliable approaches with you. Whether you're a night owl, someone sensitive to bright light, or simply prefer the aesthetic of dark interfaces, this comprehensive guide will walk you through every method to enable dark mode on Google Search. As a power user who values both eye comfort and productivity, I've personally tested these techniques across multiple devices and browsers to bring you the most current and effective solutions available in 2026.
 
-## Table of Contents- [Why Dark Mode Matters for Google Search](#why-dark-matters)
+## Table of Contents
+- [Why Dark Mode Matters for Google Search](#why-dark-matters)
 - [Understanding Google Search's Built-in Dark Mode](#understanding-built-in)
 - [How to Enable Dark Mode on Google Search](#enable-dark-mode)
 - [Browser-Specific Methods for Dark Mode](#browser-specific)

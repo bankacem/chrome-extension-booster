@@ -30,7 +30,8 @@ description: 'Web highlighter chrome extension — a 2026 guide with step-by-ste
 
 Web highlighter Chrome extensions have completely transformed how I approach online research. Gone are the days of printing pages, scribbling notes in margins, or juggling multiple tabs with scattered thoughts. These tools allow me to directly annotate websites Chrome with color-coded highlights, sticky notes, and organizational tags, creating a personal research library directly within my browser. Whether you're a student compiling sources, a professional gathering market intelligence, or a casual learner exploring topics, the right web highlighter can turn the chaotic expanse of the internet into a structured knowledge base. In this comprehensive guide, I'll share my hands-on testing experience with the latest research annotation tools online, helping you find the perfect digital highlighter for study or professional work.
 
-## Table of Contents- [Why Web Highlighters Matter in 2026](#why-matters)
+## Table of Contents
+- [Why Web Highlighters Matter in 2026](#why-matters)
 - [How Web Highlighters Work Under the Hood](#how-they-work)
 - [Key Features to Look For in a Web Highlighter](#key-features)
 - [Top Web Highlighter Extensions Compared](#top-comparison)

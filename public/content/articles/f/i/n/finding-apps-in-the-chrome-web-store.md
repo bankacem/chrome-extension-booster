@@ -28,7 +28,8 @@ The [Chrome Web Store can feel](/blog/pro-extensions-on-chrome-web-store) like a
 
 This guide cuts through the noise to provide you with a systematic approach to finding, evaluating, and implementing the best web Chrome store apps for your specific needs. Whether you're a power user looking to maximize productivity, a privacy-conscious individual seeking better protection, or simply someone who wants to customize their browsing experience, [this comprehensive walkthrough will](/blog/finding-the-right-browser-extension-for-you) equip you with the knowledge to navigate the Chrome Web Store like a pro. We'll cover everything from understanding the different types of available tools to advanced management techniques that keep your browser running smoothly.
 
-## Table of Contents- [Understanding the Chrome Web Store Ecosystem](#understanding-chrome-store)
+## Table of Contents
+- [Understanding the Chrome Web Store Ecosystem](#understanding-chrome-store)
 - [Types of Web Chrome Store Apps](#types-of-apps)
 - [How to Effectively Search for Apps](#effective-searching)
 - [Evaluating App Quality and Safety](#evaluating-apps)

@@ -27,7 +27,8 @@ As a developer who's spent countless hours navigating through complex codebases,
 
 Over the past six months, I've installed, configured, and thoroughly evaluated more than a dozen Chrome extensions designed specifically for code reading and editing. My testing involved working with everything from simple JavaScript files to complex Python applications, all within the Chrome environment. What I discovered is that while many extensions promise similar functionality, the differences in execution, features, and overall user experience are substantial. By the end of this guide, you'll know exactly which extension chrome code solution fits your specific needs and how to implement it effectively in your daily workflow.
 
-## Table of Contents- [What a Code-Reading Extension Does](#what-a-code-reading-extension-does)
+## Table of Contents
+- [What a Code-Reading Extension Does](#what-a-code-reading-extension-does)
 - [Why Developers Need One in 2026](#why-developers-need-one-in-2026)
 - [Top Picks Compared](#top-picks-compared)
 - [Feature Deep Dive](#feature-deep-dive)

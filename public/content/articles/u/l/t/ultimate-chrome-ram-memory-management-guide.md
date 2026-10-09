@@ -48,7 +48,8 @@ updated_at: "2026-09-17T13:06:01.000+00:00"
 <img src="/content/images/ultimate-chrome-ram-memory-management-guide/featured.webp" alt="ultimate-chrome-ram-memory-management-guide" width="1200" height="630" loading="lazy" class="featured-image">
 
 
-## Table of Contents- [Introduction to Chrome's Memory Architecture](#introduction)
+## Table of Contents
+- [Introduction to Chrome's Memory Architecture](#introduction)
 - [Why Chrome Uses So Much RAM in 2026](#why-chrome-uses-ram)
 - [Native Tools: Memory Saver & Performance Tab](#native-tools)
 - [The Chrome Task Manager: Identifying Resource Hogs](#task-manager)

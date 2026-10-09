@@ -25,7 +25,8 @@ description: "Are you tired of using a limited browser on your mobile device? Lo
 
 For years, [mobile browsers](/blog/unlock-the-full-potential-of-kiwi-browser) felt like watered-down versions of their desktop counterparts, leaving power users frustrated by limited functionality. If you've ever wished you could bring your favorite desktop extensions to Chrome on your phone, you're not alone. The good news is that while Chrome for Android doesn't natively support extensions like its desktop version, there are powerful workarounds and alternative browsers that can deliver the experience you're looking for. In this comprehensive guide, I'll share everything I've learned about extending Chrome's capabilities on mobile, including which browsers support extensions, how to install them, and the most powerful extensions to transform [your mobile browsing experience](/blog/chrome-extensions-for-better-browsing).
 
-## Table of Contents- [The Current State of Chrome Mobile Extensions](#current-state)
+## Table of Contents
+- [The Current State of Chrome Mobile Extensions](#current-state)
 - [Why This Matters in 2026](#why-matters)
 - [Top Browsers That Support Extensions on Mobile](#top-browsers)
 - [How to Install and Manage Extensions on Mobile](#install-guide)

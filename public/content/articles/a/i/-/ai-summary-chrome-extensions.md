@@ -33,7 +33,8 @@ In the digital age, we're drowning in content but starving for time. As someone 
 
 After installing and testing over 15 different AI summarization tools, I've identified the ones that actually deliver on their promises—saving you time while preserving accuracy. This guide is for anyone who wants to work smarter, not harder, by leveraging AI to [distill long articles into digestible](/blog/save-articles-read-later-offline-chrome-guide) summaries. I'll show you exactly how these extensions work, which ones perform best across different content types, and how to integrate them into your workflow without compromising privacy or quality. Let's dive into the world of AI-powered content summarization and transform how you interact with the web.
 
-## Table of Contents- [Why AI Summarization Matters in 2026](#why-matters)
+## Table of Contents
+- [Why AI Summarization Matters in 2026](#why-matters)
 - [How AI Summary Extensions Work](#how-they-work)
 - [Top AI Summary Chrome Extensions Compared](#top-extensions)
 - [Key Features to Look For](#key-features)

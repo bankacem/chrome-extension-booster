@@ -31,7 +31,8 @@ updated_at: '2026-09-14T12:00:00.000+00:00'
 
 <img src="/content/images/ant-video-downloader-chrome/featured.webp" alt="Ant Video Downloader Chrome Review 2026: Does It Still Work?" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents- [What Is Ant Video Downloader?](#what)
+## Table of Contents
+- [What Is Ant Video Downloader?](#what)
 - [Sites I Tested](#tested)
 - [Ant Video Downloader vs Alternatives](#vs)
 - [The Catch: Native App Required](#catch)

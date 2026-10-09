@@ -1,0 +1,68 @@
+# Body-neutralization batch (owner brief 2026-10-08, item 4a) — design in
+# docs/scale-plan.md. Artifacts only: this workflow NEVER writes to the
+# repository (no commits, no PRs, no branches). Runs ONLY on manual dispatch.
+name: Body Neutralization Batch
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "Path to the batch list JSON (docs/wave2-batches/*.json)"
+        required: true
+        default: "docs/wave2-batches/p1-10.json"
+      dry_run:
+        description: "Dry run: mark paragraphs and build packages, ZERO model calls"
+        type: boolean
+        required: false
+        default: true
+
+# No write access to the repository at all.
+permissions:
+  contents: read
+
+concurrency:
+  group: body-neutralization-${{ github.event.inputs.batch }}
+  cancel-in-progress: false
+
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout (read-only, no persisted credentials)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run batch (dry_run=${{ github.event.inputs.dry_run }})
+        env:
+          # Secret passed as env to THIS step only; never echoed. The runner
+          # reads it via os.environ and only uses it in the Authorization
+          # header of HTTPS calls to cleanapis.com.
+          CLEANAPIS_KEY: ${{ secrets.CLEANAPIS }}
+          CLEANAPIS_BASE_URL: "https://cleanapis.com/v1"
+        run: |
+          OUT="$(mktemp -d)/batch-out"
+          mkdir -p "$OUT"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            DRY="--dry-run"
+          else
+            DRY=""
+          fi
+          python3 scripts/agent/batch_neutralize.py \
+            --batch "${{ github.event.inputs.batch }}" \
+            --out "$OUT" $DRY
+          echo "BATCH_OUT=$OUT" >> "$GITHUB_ENV"
+
+      - name: Upload artifacts (temp dir only)
+        uses: actions/upload-artifact@v4
+        with:
+          name: body-neutralization-${{ github.run_id }}
+          path: ${{ env.BATCH_OUT }}
+          retention-days: 30
+          if-no-files-found: error

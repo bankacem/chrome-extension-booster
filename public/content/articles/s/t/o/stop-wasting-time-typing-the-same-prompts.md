@@ -21,7 +21,8 @@ read_time: "19"
 
 The seconds add up faster than you think. How many times this week have you typed "Rewrite this in a professional tone" or "Summarize this article in three bullet points" [into ChatGPT](/blog/chatgpt-voice-input-chrome-extension)? If you're like most power users, you've done it dozens of times already. Every repetition is a tiny tax on your productivity—a tax that compounds daily, weekly, and yearly into hours of wasted time that could be spent creating, not copying and pasting. This guide is for anyone who uses ChatGPT regularly and has ever thought, "There must be a better way than retyping the same prompts over and over." As someone who has personally tested every major prompt manager on the Chrome [Web Store](https://chromewebstore.google.com) (updated for 2026), I'll give you the definitive answer on which extensions actually save you time, which ones respect your privacy, and which will fundamentally change how you interact with AI.
 
-## Table of Contents- [Why This Matters in 2026](#why-matters)
+## Table of Contents
+- [Why This Matters in 2026](#why-matters)
 - [Understanding Prompt Management: More Than Just Convenience](#understanding-prompt-management)
 - [The Hidden Cost of Repetitive Prompting](#hidden-cost)
 - [How Prompt Managers Actually Work](#how-they-work)

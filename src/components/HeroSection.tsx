@@ -71,13 +71,12 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4"
+            className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-3"
           >
             {[
-              { value: "50K+", label: t("hero.active_users") },
-              { value: "12", label: t("hero.extensions") },
-              { value: "4.9", label: t("hero.average_rating") },
-              { value: "99%", label: t("hero.satisfaction") },
+              { value: "9", label: t("hero.extensions") },
+              { value: "800+", label: t("hero.guides") },
+              { value: "100%", label: t("hero.free_core") },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="font-heading text-3xl font-bold text-foreground md:text-4xl">

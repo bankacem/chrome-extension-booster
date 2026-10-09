@@ -1,0 +1,47 @@
+{
+ "batch_id": "p1-10",
+ "description": "Wave-2 P1 (unattributed measurement tables), first 10 slugs alphabetically, pilot five excluded, per owner brief 2026-10-08 item 4b",
+ "selected_from": 98,
+ "articles": [
+  {
+   "slug": "a-tab-suspender-extension-that-frees-up-ram",
+   "path": "articles/a/-/t/a-tab-suspender-extension-that-frees-up-ram.md"
+  },
+  {
+   "slug": "adblock-plus-vs-ublock-origin-2026",
+   "path": "articles/a/d/b/adblock-plus-vs-ublock-origin-2026.md"
+  },
+  {
+   "slug": "adguard-vs-ghostery-2026-comparison",
+   "path": "articles/a/d/g/adguard-vs-ghostery-2026-comparison.md"
+  },
+  {
+   "slug": "android-chrome-adblocker",
+   "path": "articles/a/n/d/android-chrome-adblocker.md"
+  },
+  {
+   "slug": "article-15-chatgpt-reddit-posts",
+   "path": "articles/a/r/t/article-15-chatgpt-reddit-posts.md"
+  },
+  {
+   "slug": "auto-tab-discarder-vs-the-great-suspender",
+   "path": "articles/a/u/t/auto-tab-discarder-vs-the-great-suspender.md"
+  },
+  {
+   "slug": "avast-online-security-chrome",
+   "path": "articles/a/v/a/avast-online-security-chrome.md"
+  },
+  {
+   "slug": "best-annotated-screenshot-chrome-5",
+   "path": "articles/b/e/s/best-annotated-screenshot-chrome-5.md"
+  },
+  {
+   "slug": "best-browser-for-low-end-pc-2026",
+   "path": "articles/b/e/s/best-browser-for-low-end-pc-2026.md"
+  },
+  {
+   "slug": "best-chrome-extensions-for-privacy-2026",
+   "path": "articles/b/e/s/best-chrome-extensions-for-privacy-2026.md"
+  }
+ ]
+}

@@ -31,7 +31,8 @@ description: 'Chrome passkeys — a 2026 guide with step-by-step setup, honest t
 
 Chrome passkeys are transforming how we secure our digital lives, and by 2026, they've become the gold [standard for passwordless](/blog/unlock-secure-browsing-the-avast-password-extension-chrome-review) authentication. As someone who's tested virtually every authentication method over the past decade, I can confidently say that passkeys represent the most significant leap forward in online security since the invention of two-factor authentication. This guide is for anyone looking to ditch passwords for good—whether you're a casual user tired of remembering complex strings or a security-conscious professional protecting sensitive accounts. I'll walk you through everything you need to know about implementing and using passkeys in Chrome, based on hands-on testing with the latest builds and real-world scenarios.
 
-## Table of Contents- [Understanding Passkeys: The Passwordless Revolution](#understanding-passkeys)
+## Table of Contents
+- [Understanding Passkeys: The Passwordless Revolution](#understanding-passkeys)
 - [How Chrome Passkeys Work: The Technology Behind the Security](#how-chrome-passkeys-work)
 - [Setting Up Passkeys in Chrome: A Step-by-Step Guide](#setting-up-passkeys)
 - [Google Passkey Setup: Creating Your First Passkey](#google-passkey-setup)

@@ -31,7 +31,8 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 <img src="/content/images/alitools-extension-chrome/featured.webp" alt="AliTools Extension Chrome: The Ultimate Alibaba Shopping Companion" width="1200" height="630" loading="lazy" class="featured-image">
 
-## Table of Contents- [What Is AliTools?](#what)
+## Table of Contents
+- [What Is AliTools?](#what)
 - [Features I Tested](#features)
 - [AliTools vs Manual Sourcing](#vs)
 - [Companion Extensions for Sourcing](#companions)

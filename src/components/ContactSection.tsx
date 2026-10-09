@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MessageSquare, Send, MapPin, Phone } from "lucide-react";
+import { Mail, MessageSquare, Send } from "lucide-react";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
 
@@ -30,9 +30,7 @@ const ContactSection = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: t("contact.email"), value: "support@extensionhub.com" },
-    { icon: Phone, label: t("contact.phone"), value: "+1 (555) 123-4567" },
-    { icon: MapPin, label: t("contact.location"), value: "San Francisco, CA" }
+    { icon: Mail, label: t("contact.email"), value: "dhaichione@gmail.com" }
   ];
 
   return (

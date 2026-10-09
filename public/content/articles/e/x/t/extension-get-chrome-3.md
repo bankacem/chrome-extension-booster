@@ -40,7 +40,8 @@ description: "Learn how to choose, install, and manage Chrome extensions safely,
 
 Chrome extensions [transform your browser into a](/blog/how-to-install-chrome-extensions-for-free-without-wrecking-your-browser) personalized productivity powerhouse, but installing them without proper knowledge can turn your browser into a security liability. In my years of testing and reviewing extensions, I've seen how the right tools can streamline workflows, while poorly chosen ones can compromise privacy or slow your system to a crawl. This guide provides the tested answer for how to install Chrome extensions safely, [evaluate permissions](/blog/chrome-extension-security-risks-permission-audit-guide), and manage them effectively—whether you're a power user or just someone who wants to enhance browsing without the headaches.
 
-## Table of Contents- [What Chrome Extensions Are (And Aren't)](#what-chrome-extensions-are)
+## Table of Contents
+- [What Chrome Extensions Are (And Aren't)](#what-chrome-extensions-are)
 - [How to Install Chrome Extensions Safely](#how-to-install-chrome-extensions-safely)
 - [Understanding Chrome Web Store Permissions](#understanding-chrome-web-store-permissions)
 - [Essential Chrome Extensions for Different Needs](#essential-chrome-extensions-for-different-needs)

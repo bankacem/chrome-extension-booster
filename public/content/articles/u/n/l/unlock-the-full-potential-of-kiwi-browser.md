@@ -28,7 +28,8 @@ Are you [a Kiwi Browser user looking](/blog/extensions-to-chrome-mobile-13) to [
 
 Kiwi Browser stands out in a crowded browser market by offering Chrome compatibility with unique privacy-focused features and performance optimizations. What truly sets it apart, however, is its seamless extension support—allowing you to leverage the vast Chrome Web Store ecosystem while enjoying Kiwi's distinctive advantages. Whether you're a power user juggling multiple projects, a privacy-conscious individual, or someone simply seeking a more efficient browsing experience, this guide will walk you through the essential extensions that will supercharge your Kiwi Browser in 2026.
 
-## Table of Contents- [Understanding Kiwi Browser's Unique Advantages](#understanding-kiwi)
+## Table of Contents
+- [Understanding Kiwi Browser's Unique Advantages](#understanding-kiwi)
 - [The Best Extensions for Kiwi Browser: An Overview](#best-extensions-overview)
 - [Productivity Power-Ups](#productivity-power-ups)
 - [Privacy and Security Essentials](#privacy-security-essentials)
