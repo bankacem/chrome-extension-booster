@@ -21,7 +21,8 @@ const Navbar = () => {
     { label: t("nav.home"), href: homePath, isRoute: true },
     { label: t("nav.extensions"), href: isHome ? "#extensions" : `${homePath}#extensions`, isRoute: !isHome },
     { label: t("nav.blog"), href: `${routePrefix}/blog`, isRoute: true },
-    { label: t("nav.contact"), href: isHome ? "#contact" : `${homePath}#contact`, isRoute: !isHome },
+    { label: t("nav.about"), href: "/about", isRoute: true },
+    { label: t("nav.contact"), href: "/contact", isRoute: true },
   ];
 
   return (

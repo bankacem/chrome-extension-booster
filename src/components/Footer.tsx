@@ -1,4 +1,4 @@
-import { Chrome, Github, Twitter, Linkedin, Mail, Settings } from "lucide-react";
+import { Chrome, Mail, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLang } from "@/hooks/useLang";
 import { useTranslation } from "react-i18next";
@@ -11,20 +11,13 @@ const Footer = () => {
   const footerLinks = {
     product: [
       { label: t("footer.all_extensions"), href: `${homePath}#extensions` },
-      { label: t("footer.pricing"), href: "#" },
-      { label: t("footer.changelog"), href: "#" },
-      { label: t("footer.roadmap"), href: "#" },
     ],
     resources: [
       { label: t("footer.blog"), href: `${routePrefix}/blog` },
-      { label: t("footer.documentation"), href: "#" },
-      { label: t("footer.help_center"), href: "#" },
-      { label: t("footer.community"), href: "#" },
     ],
     company: [
-      { label: t("footer.about"), href: "#" },
-      { label: t("footer.contact"), href: `${homePath}#contact` },
-      // Legal pages remain English-only until their localized content is added; keep these links valid.
+      { label: t("footer.about"), href: "/about" },
+      { label: t("footer.contact"), href: "/contact" },
       { label: t("footer.privacy"), href: "/privacy" },
       { label: t("footer.terms"), href: "/terms" },
       { label: t("footer.editorial_policy"), href: "/editorial-policy" },
@@ -32,10 +25,7 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "#", label: "Email" },
+    { icon: Mail, href: `mailto:dhaichione@gmail.com`, label: "Email" },
   ];
 
   return (
