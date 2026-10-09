@@ -18,6 +18,8 @@ const SEODashboard = lazy(() => import("./pages/SEODashboard"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
 const EditorialPolicy = lazy(() => import("./pages/EditorialPolicy"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // i18n — must be imported before any component that uses useTranslation
@@ -65,6 +67,8 @@ const App = () => (
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="/editorial-policy" element={<EditorialPolicy />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

@@ -109,6 +109,8 @@ async function generateSitemap() {
     { url: `${WEBSITE_URL}/privacy`, date: today },
     { url: `${WEBSITE_URL}/terms`, date: today },
     { url: `${WEBSITE_URL}/editorial-policy`, date: today },
+    { url: `${WEBSITE_URL}/about`, date: today },
+    { url: `${WEBSITE_URL}/contact`, date: today },
     { url: `${WEBSITE_URL}/fr`, date: today, alternates: localeHomeAlternates },
     { url: `${WEBSITE_URL}/es`, date: today, alternates: localeHomeAlternates },
     { url: `${WEBSITE_URL}/pt`, date: today, alternates: localeHomeAlternates },

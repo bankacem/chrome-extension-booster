@@ -230,6 +230,26 @@ function buildLegalBody(title: string, summary: string, sections: string[]): str
   return `<main><article><h1>${escapeHtml(title)}</h1><p>${escapeHtml(summary)}</p>${content}<p><a href="/">Back to ExtensionTo</a></p></article></main>`;
 }
 
+// Shared legal content — the SAME source the React pages render
+// (src/lib/legalContent.ts), so static HTML and hydrated pages match.
+import {
+  PRIVACY_SECTIONS, TERMS_SECTIONS, ABOUT_SECTIONS,
+  LAST_UPDATED, CONTACT_EMAIL,
+} from "../src/lib/legalContent";
+
+function sectionsToHtml(sections: { heading: string; paragraphs?: string[]; bullets?: string[] }[]): string {
+  return sections.map((s) => {
+    const ps = (s.paragraphs || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("\n");
+    const ul = s.bullets ? `<ul>${s.bullets.map((b) => `<li>${escapeHtml(b)}</li>`).join("\n")}</ul>` : "";
+    return `<h2>${escapeHtml(s.heading)}</h2>\n${ps}\n${ul}`;
+  }).join("\n");
+}
+
+function buildSectionedBody(title: string, sections: { heading: string; paragraphs?: string[]; bullets?: string[] }[], lastUpdated?: string): string {
+  const updated = lastUpdated ? `<p>Last updated: ${escapeHtml(lastUpdated)}</p>` : "";
+  return `<main><article><h1>${escapeHtml(title)}</h1>${updated}${sectionsToHtml(sections)}<p>Contact: <a href="mailto:${escapeHtml(CONTACT_EMAIL)}">${escapeHtml(CONTACT_EMAIL)}</a></p><p><a href="/">Back to ExtensionTo</a> · <a href="/blog">Read the latest guides</a></p></article></main>`;
+}
+
 function buildEditorialPolicyBody(): string {
   return `<main><article><h1>Editorial Policy and Standards</h1><p>Our guides are research-based comparisons compiled from public information and product documentation. Unless a page says otherwise, ExtensionTo has not run independent lab tests.</p><p>ExtensionTo publishes practical, transparent guides that explain the benefits, trade-offs, limitations, and privacy considerations of Chrome extensions.</p><h2>How we write our guides</h2><ul><li>We compare extensions against the stated use case using public information and product documentation, including setup steps, features, pricing, and limitations.</li><li>We consider requested permissions and published privacy information when privacy is relevant.</li><li>We distinguish documented facts, product-documentation statements, and editorial opinion.</li><li>We review important pages when products, browser policies, or material claims change.</li></ul><h2>Who writes and reviews</h2><p>Articles are credited to James Mitchell or the ExtensionTo Editorial Team. Author labels describe editorial responsibility; readers should use the methodology and documentation to evaluate individual claims.</p><h2>Corrections</h2><p>Readers can contact ExtensionTo about inaccurate claims, outdated details, or broken links so that material corrections can be reviewed and reflected in the article when appropriate.</p><p><a href="/blog">Read the latest guides</a> · <a href="/">Back to ExtensionTo</a></p></article></main>`;
 }
@@ -466,9 +486,11 @@ async function main() {
     { lang: "ar", url: `${SITE_URL}/ar/blog` },
   ];
   await writeRoute("/blog", template, "Chrome Extension Guides and Reviews", blogDescription, buildBlogBody(articles), "website", undefined, allLanguageBlogAlternates, "en");
-  await writeRoute("/privacy", template, "Privacy Policy", "Learn how ExtensionTo protects your privacy and handles information on its website and Chrome extensions.", buildLegalBody("Privacy Policy", "ExtensionTo is committed to protecting your privacy.", ["Our Chrome extensions are designed to keep settings local where possible and to avoid unnecessary collection of personal information.", "The website may process information you voluntarily submit through contact forms or subscriptions. Any information is used to provide and improve the service.", "For questions about this policy, contact ExtensionTo through the website contact page."]), "website", undefined, undefined, "en");
-  await writeRoute("/terms", template, "Terms of Service", "Read the Terms of Service for ExtensionTo Chrome extensions and website.", buildLegalBody("Terms of Service", "By using the ExtensionTo website or extensions, you agree to these terms.", ["The extensions are provided for their stated browsing and productivity purposes and must be used lawfully.", "The software and website are provided as is. ExtensionTo may update, suspend, or discontinue features and may update these terms.", "For questions about these terms, contact ExtensionTo through the website contact page."]), "website", undefined, undefined, "en");
+  await writeRoute("/privacy", template, "Privacy Policy", "How extensionto.com handles information: analytics, advertising cookies, localStorage, the contact email, and your rights.", buildSectionedBody("Privacy Policy", PRIVACY_SECTIONS, LAST_UPDATED), "website", undefined, undefined, "en");
+  await writeRoute("/terms", template, "Terms of Service", "Terms for using extensionto.com: the guides are informational, extensions are provided as-is through the Chrome Web Store, and third-party links are outside our control.", buildSectionedBody("Terms of Service", TERMS_SECTIONS, LAST_UPDATED), "website", undefined, undefined, "en");
   await writeRoute("/editorial-policy", template, "Editorial Policy and Standards", "How ExtensionTo compiles and maintains its Chrome extension guides from public information and product documentation.", buildEditorialPolicyBody(), "website", undefined, undefined, "en");
+  await writeRoute("/about", template, "About ExtensionTo", "ExtensionTo publishes nine free Chrome extensions and a large library of practical guides — compiled from public documentation, with an explicit editorial method.", buildSectionedBody("About ExtensionTo", ABOUT_SECTIONS), "website", undefined, undefined, "en");
+  await writeRoute("/contact", template, "Contact ExtensionTo", `Reach the ExtensionTo team by email at ${CONTACT_EMAIL} or through the site contact form.`, `<main><article><h1>Contact Us</h1><p>Questions about a guide, an extension, a correction, or your data? The most reliable way to reach the ExtensionTo team is email: <a href="mailto:${escapeHtml(CONTACT_EMAIL)}">${escapeHtml(CONTACT_EMAIL)}</a>.</p><p>You can also use the contact form on this page.</p><p><a href="/blog">Read the latest guides</a> · <a href="/">Back to ExtensionTo</a></p></article></main>`, "website", undefined, undefined, "en");
 
   for (const extension of extensions) {
     const description = extension.longDescription || extension.description;
