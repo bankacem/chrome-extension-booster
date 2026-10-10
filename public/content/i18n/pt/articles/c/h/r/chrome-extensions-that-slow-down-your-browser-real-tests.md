@@ -1,26 +1,34 @@
 ---
-seo_title: "Extensões do Chrome Lentas? Testes Reais de Desempenho"
-id: "chrome-extensions-that-slow-down-your-browser-real-tests-pt"
-title: "Extensões do Chrome Que Desaceleram Seu Navegador em 2026: Testes Reais de Desempenho"
-slug: "chrome-extensions-that-slow-down-your-browser-real-tests"
-excerpt: "Testamos 20 extensões populares do Chrome com o Gerenciador de Tarefas e medimos o impacto real de RAM e CPU. Confira os resultados."
+seo_title: Extensões do Chrome Lentas? Testes Reais de Desempenho
+id: chrome-extensions-that-slow-down-your-browser-real-tests-pt
+title: 'Extensões do Chrome Que Desaceleram Seu Navegador em 2026: Testes Reais de
+  Desempenho'
+slug: chrome-extensions-that-slow-down-your-browser-real-tests
+excerpt: Testamos 20 extensões populares do Chrome com o Gerenciador de Tarefas e
+  medimos o impacto real de RAM e CPU. Confira os resultados.
 featured_image: /content/images/chrome-extensions-that-slow-down-your-browser-real-tests/featured.webp
-category: "Desempenho e Memória"
-tags: ["desempenho", "memória", "ram", "cpu", "velocidade do navegador"]
+category: Desempenho e Memória
+tags:
+- desempenho
+- memória
+- ram
+- cpu
+- velocidade do navegador
 keywords:
-  - extensões chrome lentas
-  - uso de memória extensão chrome
-  - quais extensões chrome usam mais ram
-  - navegador lento por causa de extensões
-meta_description: "Testes reais com o Gerenciador de Tarefas do Chrome mostrando quais extensões mais consomem RAM e CPU em 2026. Dados reais, não suposições."
+- extensões chrome lentas
+- uso de memória extensão chrome
+- quais extensões chrome usam mais ram
+- navegador lento por causa de extensões
+meta_description: Testes reais com o Gerenciador de Tarefas do Chrome mostrando quais
+  extensões mais consomem RAM e CPU em 2026. Dados reais, não suposições.
 status: published
-published_at: "2026-08-26T12:00:00+01:00"
-scheduled_at: "2026-08-26T12:00:00+01:00"
-author: "ExtensionTo"
+published_at: '2026-08-26T12:00:00+01:00'
+scheduled_at: '2026-08-26T12:00:00+01:00'
+author: ExtensionTo
 read_time: 8
-created_at: "2026-08-26"
-updated_at: "2026-08-26"
-locale: "pt_BR"
+created_at: '2026-08-26'
+updated_at: '2026-10-10'
+locale: pt_BR
 ---
 
 # Extensões do Chrome Que Desaceleram Seu Navegador em 2026: Testes Reais de Desempenho
@@ -89,7 +97,9 @@ Em uma máquina com 8GB de RAM executando o Chrome com 15 abas e 8 extensões in
 - **Use permissões específicas por site.** O Chrome agora permite restringir extensões a sites específicos em vez de permitir em todos os sites.
 - **Substitua ferramentas pesadas por alternativas leves.** Troque o LastPass pelo Bitwarden, o AdBlock Plus pelo uBlock Origin.
 - **Use suspensores de abas.** Extensões como o ProTab Suspender descarregam automaticamente abas inativas.
-- **Mantenha as extensões atualizadas.** Desenvolvedores otimizam regularmente o uso de memória.
+- **Mantenha as extensões atualizadas.** Desenvolvedores otimizam regularmente o uso de memória. Se o problema for o Chrome em si consumindo RAM demais (e não as extensões), siga nosso [guia de 7 métodos comprovados para corrigir o alto uso de memória em 2026](/pt/blog/fix-chrome-high-memory-usage-in-2026-7-proven-methods-no-extensions-needed).
+
+Ao enxugar sua lista de extensões, aproveite para revisar a segurança do que restou: nosso [guia de auditoria de permissões](/pt/blog/chrome-extension-security-risks-permission-audit-guide) mostra como detectar acessos abusivos em 10 minutos. E se você usa o celular, veja como [bloquear pop-ups no Chrome mobile](/pt/blog/block-popups-on-chrome-mobile-guide) para uma navegação mais leve.
 
 ## Perguntas Frequentes
 

@@ -1,34 +1,41 @@
 ---
-seo_title: "Palette de Comandos Chrome: Extensões Como Raycast"
-id: "chrome-command-palette-extensions-pt"
-title: "Palette de Comandos Chrome"
-slug: "chrome-command-palette-extensions"
-excerpt: "Descubra as melhores extensões de palette de comandos para Chrome e acione ações do navegador com teclas de atalho, como o Raycast."
+seo_title: 'Palette de Comandos Chrome: Extensões Como Raycast'
+id: chrome-command-palette-extensions-pt
+title: Palette de Comandos Chrome
+slug: chrome-command-palette-extensions
+excerpt: Descubra as melhores extensões de palette de comandos para Chrome e acione
+  ações do navegador com teclas de atalho, como o Raycast.
 featured_image: /content/images/chrome-command-palette-extensions/featured.webp
-category: "Extensões Chrome"
-tags: ["extensão palette de comandos chrome", "comandos rápidos chrome", "raycast para chrome", "lançador de comandos chrome", "barra de comandos navegador"]
+category: Extensões Chrome
+tags:
+- extensão palette de comandos chrome
+- comandos rápidos chrome
+- raycast para chrome
+- lançador de comandos chrome
+- barra de comandos navegador
 keywords:
-  - extensão palette de comandos chrome
-  - comandos rápidos chrome
-  - raycast para chrome
-  - lançador de comandos chrome
-  - barra de comandos navegador
-meta_description: "Melhores extensões de palette de comandos para Chrome em 2026. Execute ações rapidamente com teclas de atalho, personalize comandos e aumente sua produtividade."
+- extensão palette de comandos chrome
+- comandos rápidos chrome
+- raycast para chrome
+- lançador de comandos chrome
+- barra de comandos navegador
+meta_description: Melhores extensões de palette de comandos para Chrome em 2026. Execute
+  ações rapidamente com teclas de atalho, personalize comandos e aumente sua produtividade.
 status: published
-published_at: "2026-09-29T12:00:00+00:00"
-scheduled_at: "2026-09-29T12:00:00+00:00"
-author: "ExtensionTo"
+published_at: '2026-09-29T12:00:00+00:00'
+scheduled_at: '2026-09-29T12:00:00+00:00'
+author: ExtensionTo
 read_time: 25
-created_at: "2026-09-29"
-updated_at: "2026-09-29"
-locale: "pt_BR"
+created_at: '2026-09-29'
+updated_at: '2026-10-10'
+locale: pt_BR
 ---
 
 # Paleta de Comandos para Extensões do Chrome: Execute Ações do Navegador como o Raycast (2026)
 
-Se você é um usuário avançado que busca aprimorar sua produtividade no Chrome, uma extensão de paleta de comandos pode transformar a forma como você interage com seu navegador. Essas ferramentas trazem a funcionalidade rápida de digitar para executar, semelhante aos lançadores de sistemas operacionais como Raycast e Alfred, diretamente para o Chrome, permitindo pesquisar abas, favoritos, extensões e comandos personalizados com apenas alguns pressionamentos de tecla. Em 2026, com a implementação total do Manifest V3 e os recursos de IA se tornando mais prevalentes, essas extensões evoluíram para se tornarem ainda mais poderosas e eficientes. Testei as extensões mais recentes de paleta de comandos para encontrar aquelas que realmente melhoram a produtividade sem adicionar sobrecarga desnecessária.
+Se você é um usuário avançado que busca aprimorar sua produtividade no Chrome, uma extensão de paleta de comandos pode transformar a forma como você interage com seu navegador. Essas ferramentas trazem a funcionalidade rápida de digitar para executar, semelhante aos lançadores de sistemas operacionais como Raycast e Alfred, diretamente para o Chrome, permitindo pesquisar abas, favoritos, extensões e comandos personalizados com apenas alguns pressionamentos de tecla. Em 2026, com a implementação total do Manifest V3 e os recursos de IA se tornando mais prevalentes, essas extensões evoluíram para se tornarem ainda mais poderosas e eficientes. Se a IA é seu foco, veja também nossa seleção das [melhores extensões de IA para Chrome em 2026](/pt/blog/best-ai-chrome-extensions-2026) e o [guia completo do Gemini no Chrome](/pt/blog/gemini-in-chrome-2026-complete-guide) — ambos combinam muito bem com um fluxo de trabalho centrado em paleta de comandos. Testei as extensões mais recentes de paleta de comandos para encontrar aquelas que realmente melhoram a produtividade sem adicionar sobrecarga desnecessária.
 
-Uma boa extensão de barra de comandos do navegador deve parecer uma extensão do seu próprio fluxo de trabalho — intuitiva, rápida e personalizável. As melhores opções de lançador de comandos por teclado oferecem mais do que apenas alternância de abas; elas fornecem uma interface unificada para controlar quase todos os aspectos da sua experiência de navegação. Seja você um desenvolvedor precisando de acesso rápido às ferramentas de desenvolvimento ou um gerenciando dezenas de abas, essas extensões podem reduzir drasticamente o tempo gasto clicando em menus e procurando por barras de abas lotadas.
+Uma boa extensão de barra de comandos do navegador deve parecer uma extensão do seu próprio fluxo de trabalho — intuitiva, rápida e personalizável. As melhores opções de lançador de comandos por teclado oferecem mais do que apenas alternância de abas; elas fornecem uma interface unificada para controlar quase todos os aspectos da sua experiência de navegação. Seja você um desenvolvedor precisando de acesso rápido às ferramentas de desenvolvimento ou um gerenciando dezenas de abas, essas extensões podem reduzir drasticamente o tempo gasto clicando em menus e procurando por barras de abas lotadas. Desenvolvedores que depuram extensões também vão gostar do nosso [guia do Chrome Logger para depuração](/pt/blog/chrome-logger-debugging-guide).
 
 ## Sumário
 - [O Que São Extensões de Paleta de Comandos para Chrome?](#o-que-sao-extensoes-de-palette-de-comandos-para-chrome)

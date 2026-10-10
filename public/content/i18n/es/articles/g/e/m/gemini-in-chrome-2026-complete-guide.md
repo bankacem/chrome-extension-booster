@@ -14,7 +14,7 @@ published_at: "2026-09-26T09:00:00+00:00"
 author: "ExtensionTo"
 read_time: 12
 created_at: "2026-09-26"
-updated_at: "2026-09-26"
+updated_at: "2026-10-10"
 locale: "es_ES"
 faq:
   - question: "¿Gemini en Chrome es gratuito?"
@@ -57,7 +57,7 @@ Entender el ritmo de lanzamientos te ayuda a saber qué esperar en tu dispositiv
 
 Haz clic en la chispa de Gemini en la barra de herramientas y se abre un panel lateral junto a lo que estés leyendo. Al ser nativo, entiende el contexto de la página sin configuración. Pídele que «aclare esta página de precios», que «resuma este tutorial en cinco puntos» o que «compare estas especificaciones con la pestaña que tengo abierta». El panel es la puerta de entrada a todo lo demás: los comandos de Auto Browse, las peticiones de imágenes y las sugerencias personales viven aquí.
 
-Para la navegación diaria, esto por sí solo sustituye a toda una categoría de utilidades. Nuestra prueba de [extensiones de resumen con IA](/blog/ai-summary-chrome-extensions) encontró que el resumen consciente de la página era la función más usada de todas las herramientas de la categoría — justo lo que Chrome ahora incluye gratis.
+Para la navegación diaria, esto por sí solo sustituye a toda una categoría de utilidades. Nuestra prueba de extensiones de resumen con IA encontró que el resumen consciente de la página era la función más usada de todas las herramientas de la categoría — justo lo que Chrome ahora incluye gratis.
 
 ### 2. Auto Browse: el agente que completa tareas por ti
 
@@ -98,13 +98,13 @@ Nuestra respuesta corta tras meses de pruebas: para el chat general y los resúm
 
 La protección es el ejemplo más claro. Gemini te explicará una redirección sospechosa si se lo preguntas, pero [Redirect Shield](/extension/redirect-shield) bloquea las redirecciones maliciosas en el momento en que ocurren. Igualmente, [Cookie Banner Blocker](/extension/cookie-banner-blocker) descarta los avisos de consentimiento automáticamente — una tarea que ningún chat de IA necesita «entender», porque la respuesta correcta siempre es «rechazar y ocultar»—. La misma lógica aplica al enfoque y al rendimiento: [ProTab Suspender](/extension/protab-suspender) congela las pestañas inactivas para liberar RAM, mientras que [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) cuida tu vista en los sitios que ignoran el modo oscuro.
 
-Los especialistas en productividad también mantienen su terreno. [Quick Screenshot Lite](/extension/quick-screenshot-lite) captura y anota más rápido que cualquier flujo de prompts, y [Formula Builder Pro](/extension/formula-builder-pro) genera fórmulas de hojas de cálculo — un nicho que los asistentes generales abordan torpemente. En resumen: la configuración más inteligente de 2026 es **Gemini para razonar, extensiones para hacer**.
+Los especialistas en productividad también mantienen su terreno. [Quick Screenshot Lite](/extension/quick-screenshot-lite) captura y anota más rápido que cualquier flujo de prompts, y [Formula Builder Pro](/extension/formula-builder-pro) genera fórmulas de hojas de cálculo — un nicho que los asistentes generales abordan torpemente. En resumen: la configuración más inteligente de 2026 es **Gemini para razonar, extensiones para hacer**. Si trabajas con el teclado, las [extensiones de paleta de comandos](/es/blog/chrome-command-palette-extensions) son el complemento natural; y para el día a día profesional, consulta las [extensiones de productividad para autónomos](/es/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers).
 
 ## Privacidad y seguridad: lo que debes saber antes de delegar
 
 La navegación agéntica cambia el modelo de amenazas. Cuando una IA puede hacer clic, rellenar y comprar en tu nombre, las consecuencias de una automatización mal dirigida son mayores que una mala respuesta de chat. Las salvaguardas de Google son razonables: Auto Browse pide confirmación en compras y acciones sensibles, y los controles de actividad permiten gestionar lo que el asistente recuerda. Aun así, los usuarios prudentes revisarán su configuración de privacidad tras activar estas funciones, evitarán delegar tareas con credenciales bancarias y mantendrán una capa de seguridad independiente.
 
-Ahí es donde nuestro gestor de contraseñas [SecuraKey Pro](/extension/securakey-pro) complementa la pila de IA: mantiene la autenticación aislada de la automatización a nivel de página, de modo que el agente puede completar una compra sin ver nunca tus credenciales maestras. Combínalo con auditorías periódicas de permisos —nuestra guía de [riesgos de seguridad de extensiones](/ar/blog/chrome-extension-security-risks-permission-audit-guide) repasa la lista de verificación— y tendrás la comodidad de la web agéntica sin entregar las llaves de tu vida digital.
+Ahí es donde nuestro gestor de contraseñas [SecuraKey Pro](/extension/securakey-pro) complementa la pila de IA: mantiene la autenticación aislada de la automatización a nivel de página, de modo que el agente puede completar una compra sin ver nunca tus credenciales maestras. Combínalo con auditorías periódicas de permisos —nuestra guía de riesgos de seguridad de extensiones repasa la lista de verificación— y tendrás la comodidad de la web agéntica sin entregar las llaves de tu vida digital.
 
 ## Cómo se compara la IA de Chrome con los navegadores nativos de IA
 
