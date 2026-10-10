@@ -6,10 +6,12 @@ published_at: '2026-06-23'
 featured_image: /content/images/article-7-ai-headline-generator.jpg
 image_url: /content/images/article-7-ai-headline-generator.jpg
 title: 'AI Headline Generator Chrome Extension: The Ultimate Guide for 2026'
+author: "James Mitchell"
 meta_description: "Discover the best AI headline generator Chrome extensions for 2026. Learn how to craft click-worthy, SEO-optimized headlines that boost traffic and."
 description: "Discover the best AI headline generator Chrome extensions for 2026. Learn how to craft click-worthy, SEO-optimized headlines that boost traffic and."
 category: "Chrome Extensions"
 updated_at: '2026-09-14T12:00:00.000+00:00'
+keywords: ['ai headline generator', 'headline generator chrome extension', 'seo headline writer ai', 'click worthy headlines 2026', 'blog title generator']
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

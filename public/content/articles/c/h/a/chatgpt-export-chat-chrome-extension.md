@@ -9,6 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-e1f4a6.jpg
 title: >-
   ChatGPT Export Chat Chrome Extension: The Complete 2026 Guide to Saving,
   Sharing, and Backing Up Your Conversations
+author: "James Mitchell"
 meta_description: "ChatGPT Export Chat Chrome Extension: The Complete 2026 Guide to Saving, Sharing, and Backing Up Your Conversations"
 description: >-
   ChatGPT Export Chat Chrome Extension: The Complete 2026 Guide to Saving,
@@ -16,6 +17,8 @@ description: >-
 category: "AI Tools"
 updated_at: "2026-09-17T10:54:12.000+00:00"
 read_time: "17"
+keywords: [chatgpt export chat extension, save chatgpt conversations chrome, export chatgpt
+    to pdf markdown, backup chatgpt chats 2026, download chatgpt conversation]
 ---
 <img src="/content/images/chatgpt-export-chat-chrome-extension/featured.webp" alt="ChatGPT Export Chat Chrome Extension: The Complete 2026 Guide to Saving, Sharing, and Backing Up Your Conversa" width="1200" height="630" loading="lazy" class="featured-image">
 

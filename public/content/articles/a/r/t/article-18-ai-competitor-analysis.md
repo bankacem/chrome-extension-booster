@@ -6,10 +6,12 @@ published_at: '2026-06-17'
 featured_image: /content/images/article-18-ai-competitor-analysis.jpg
 image_url: /content/images/article-18-ai-competitor-analysis.jpg
 title: 'AI Competitor Analysis Chrome Extension: The Ultimate Guide for 2026'
+author: "James Mitchell"
 meta_description: "Discover the best AI competitor analysis Chrome extensions for 2026. Learn how to spy on competitors, identify market gaps, and make data-driven decisions."
 description: "Discover the best AI competitor analysis Chrome extensions for 2026. Learn how to spy on competitors, identify market gaps, and make data-driven decisions."
 category: "Chrome Extensions"
 updated_at: '2026-09-23T13:56:58.000+00:00'
+keywords: ['ai competitor analysis tool', 'competitor analysis chrome extension', 'ai market research tool 2026', 'track competitors ai', 'business intelligence extensions']
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

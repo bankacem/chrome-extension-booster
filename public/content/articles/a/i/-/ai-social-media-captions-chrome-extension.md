@@ -9,12 +9,14 @@ image_url: /content/images/deepseek-markdown-20260603-58aa93.jpg
 title: >-
   AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going
   Viral in Seconds
+author: "James Mitchell"
 meta_description: "AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds — AI Social Media Captions Chrome Extension: The Complete 2026 G..."
 description: >-
   AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going
   Viral in Seconds
 category: "Chrome Extensions"
 updated_at: '2026-09-14T12:00:00.000+00:00'
+keywords: ['ai social media caption generator', 'ai caption writer chrome extension', 'instagram caption generator ai', 'viral caption generator', 'social media content tools 2026']
 ---
 
 <img src="/content/images/ai-social-media-captions-chrome-extension/featured.webp" alt="AI Social Media Captions Chrome Extension: The Complete 2026 Guide to Going Viral in Seconds" width="1200" height="630" loading="lazy" class="featured-image">

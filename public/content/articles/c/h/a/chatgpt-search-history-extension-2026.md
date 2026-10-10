@@ -9,6 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-376255.jpg
 title: >-
   🔍 ChatGPT Search History Chrome Extensions (2026) — Find That Lost
   Conversation in Seconds
+author: "James Mitchell"
 meta_description: "ChatGPT search history extension guide 2026: compare LLMnesia, 1Proompt, and StylerGPT to find any lost AI conversation in seconds — locally and free."
 description: >-
   🔍 ChatGPT Search History Chrome Extensions 2026 — Find That Lost Conversation
@@ -16,6 +17,8 @@ description: >-
 category: "AI Tools"
 updated_at: '2026-09-23T13:54:38.000+00:00'
 read_time: 6
+keywords: [chatgpt search history extension, find chatgpt conversation history, search past
+    chatgpt chats 2026, chatgpt history manager chrome, recover lost chatgpt conversation]
 ---
 
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026

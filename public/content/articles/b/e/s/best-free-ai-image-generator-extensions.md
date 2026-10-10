@@ -9,6 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-b5d389.jpg
 title: >-
   🎨 Best Free AI Image Generator Chrome Extensions (2026) — Create Art Without
   Leaving Your Tab
+author: "James Mitchell"
 meta_description: "Best free AI image generator extensions for 2026: compare Free Nano Cloud, Whisk Automator, and ChatGPT Infinity — free tiers, privacy notes, FAQs."
 description: >-
   🎨 Best Free AI Image Generator Chrome Extensions 2026 — Create Art Without
@@ -16,6 +17,9 @@ description: >-
 category: "AI Tools"
 updated_at: '2026-09-14T12:00:00.000+00:00'
 read_time: 7
+keywords: [free ai image generator extensions, ai image generator chrome extension 2026, generate
+    images in chrome sidebar, free text to image chrome extension, best ai art extensions
+    chrome]
 ---
 
 > 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026

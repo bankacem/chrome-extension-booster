@@ -6,10 +6,12 @@ published_at: '2026-06-25'
 featured_image: /content/images/article-9-chatgpt-etsy-listings.jpg
 image_url: /content/images/article-9-chatgpt-etsy-listings.jpg
 title: 'ChatGPT for Etsy Listings Chrome: The Ultimate Guide for Sellers in 2026'
+author: "James Mitchell"
 meta_description: "Discover the best ChatGPT-powered Chrome extensions for creating Etsy listings in 2026. Learn how to write SEO-optimized titles, compelling descriptions."
 description: "Discover the best ChatGPT-powered Chrome extensions for creating Etsy listings in 2026. Learn how to write SEO-optimized titles, compelling descriptions."
 category: "AI Tools"
 updated_at: '2026-09-23T13:56:58.000+00:00'
+keywords: ['chatgpt for etsy listings', 'ai etsy listing writer', 'etsy seo titles generator', 'etsy seller tools 2026', 'handmade shop ai assistant']
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

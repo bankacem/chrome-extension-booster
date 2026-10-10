@@ -6,11 +6,13 @@ published_at: '2026-07-03'
 featured_image: /content/images/article8-protonpass-review.jpg
 image_url: /content/images/article8-protonpass-review.jpg
 title: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
+author: "James Mitchell"
 meta_description: "Article8 ProtonPass review: three weeks testing the Chrome extension — Swiss privacy, aliases, passkeys, autofill accuracy, pricing, and who should pass."
 description: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
 category: "Security & Privacy"
 updated_at: '2026-09-23T13:56:58.000+00:00'
 read_time: 8
+keywords: ['proton pass review 2026', 'proton pass chrome extension', 'swiss privacy password manager', 'proton pass vs bitwarden', 'encrypted password manager']
 ---
 
 > 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026

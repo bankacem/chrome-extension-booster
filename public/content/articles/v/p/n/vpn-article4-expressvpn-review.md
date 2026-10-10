@@ -8,12 +8,15 @@ image_url: /content/images/vpn-article4-expressvpn-review.jpg
 title: >-
   ExpressVPN Chrome Extension Review 2026: The Premium Standard (And Whether
   It's Worth $99/Year)
+author: "James Mitchell"
 meta_description: "After six weeks of daily use, here's whether the ExpressVPN Chrome extension is worth its premium $99/year price tag compared to cheaper alternatives."
 description: >-
   ExpressVPN Chrome Extension Review 2026: The Premium Standard And Whether It's
   Worth $99/Year
 category: "Security & Privacy"
 updated_at: '2026-09-23T13:56:58.000+00:00'
+keywords: [expressvpn chrome extension review, expressvpn review 2026, is expressvpn worth it,
+  expressvpn 99 dollar year value, best premium vpn chrome]
 ---
 > 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
 

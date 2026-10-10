@@ -6,10 +6,12 @@ published_at: '2026-06-10'
 featured_image: /content/images/article-11-chatgpt-prompt-templates.jpg
 image_url: /content/images/article-11-chatgpt-prompt-templates.jpg
 title: 'ChatGPT Prompt Templates Chrome: The Ultimate Guide for 2026'
+author: "James Mitchell"
 meta_description: "Discover the best ChatGPT prompt template Chrome extensions for 2026. Learn how to save hours daily, get better AI responses, and build a personal prompt."
 description: "Discover the best ChatGPT prompt template Chrome extensions for 2026. Learn how to save hours daily, get better AI responses, and build a personal prompt."
 category: "AI Tools"
 updated_at: '2026-09-14T12:00:00.000+00:00'
+keywords: ['chatgpt prompt templates', 'chatgpt prompt library chrome extension', 'prompt engineering templates 2026', 'best chatgpt prompts', 'ai prompt organizer']
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

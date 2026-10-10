@@ -7,11 +7,14 @@ published_at: '2026-07-14'
 featured_image: /content/images/deepseek-markdown-20260603-80b899.jpg
 image_url: /content/images/deepseek-markdown-20260603-80b899.jpg
 title: 📌 ChatGPT Side Panel Chrome Extensions (2026) — AI on Every Tab
+author: "James Mitchell"
 meta_description: "ChatGPT side panel chrome extensions compared for 2026: AI Sidebar vs Sider vs Atlas — keep AI in a sidebar on every tab, with setup tips and FAQs."
 description: 📌 ChatGPT Side Panel Chrome Extensions 2026 — AI on Every Tab
 category: "AI Tools"
 updated_at: '2026-09-23T13:56:58.000+00:00'
 read_time: 7
+keywords: [chatgpt side panel chrome extension, ai sidebar chrome 2026, chatgpt on every tab,
+  chrome side panel ai assistant, best chatgpt sidebar extensions]
 ---
 
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026

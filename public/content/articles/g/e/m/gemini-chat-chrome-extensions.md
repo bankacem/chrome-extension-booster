@@ -7,11 +7,14 @@ published_at: '2026-07-13'
 featured_image: /content/images/deepseek-markdown-20260603-7479f6.jpg
 image_url: /content/images/deepseek-markdown-20260603-7479f6.jpg
 title: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
+author: "James Mitchell"
 meta_description: "Gemini chat Chrome extensions compared for 2026: built-in Gemini, Toolbox, Sider, and PI Prompts — which one fixes your sidebar's missing features."
 description: '🤖 Gemini Chat Chrome Extensions: The 2026 Power User''s Guide'
 category: "Chrome Extensions"
 updated_at: '2026-09-23T13:56:58.000+00:00'
 read_time: 7
+keywords: [gemini chat chrome extension, google gemini sidebar chrome 2026, gemini ai assistant
+    chrome, gemini browser extension, chat with gemini in chrome]
 ---
 
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026

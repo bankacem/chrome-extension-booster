@@ -9,12 +9,14 @@ image_url: /content/images/deepseek-markdown-20260603-8e6355.jpg
 title: >-
   AI Product Description Writer Chrome Extension: The Complete 2026 Guide to
   Selling Faster on Amazon, Shopify & Etsy
+author: "James Mitchell"
 meta_description: "AI Product Description Writer Chrome Extension: The Complete 2026 Guide to Selling Faster on Amazon, Shopify & Etsy — AI Product Description Writer Chrome Ex..."
 description: >-
   AI Product Description Writer Chrome Extension: The Complete 2026 Guide to
   Selling Faster on Amazon, Shopify & Etsy
 category: "Chrome Extensions"
 updated_at: '2026-09-14T12:00:00.000+00:00'
+keywords: ['ai product description writer', 'ai product description generator chrome extension', 'amazon product description generator', 'shopify description writer ai', 'ecommerce copywriting tools 2026']
 ---
 
 <img src="/content/images/ai-product-description-writer-chrome-extension/featured.webp" alt="AI Product Description Writer Chrome Extension: The Complete 2026 Guide to Selling Faster on Amazon, Shopify &" width="1200" height="630" loading="lazy" class="featured-image">

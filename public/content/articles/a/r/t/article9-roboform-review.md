@@ -8,6 +8,7 @@ image_url: /content/images/article9-roboform-review.jpg
 title: >-
   RoboForm Chrome Extension Review 2026: The Form-Filling Veteran That Refuses
   to Retire
+author: "James Mitchell"
 meta_description: "Article9 RoboForm review: testing the veteran form-filler's Chrome extension in 2026 — autofill power, pricing, downsides, and who should still install it."
 description: >-
   RoboForm Chrome Extension Review 2026: The Form-Filling Veteran That Refuses
@@ -15,6 +16,7 @@ description: >-
 category: "Chrome Extensions"
 updated_at: '2026-09-14T12:00:00.000+00:00'
 read_time: 8
+keywords: ['roboform review 2026', 'roboform password manager', 'roboform chrome extension', 'roboform form filler', 'oldest password manager review']
 ---
 
 > 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026

@@ -9,6 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-daefb7.jpg
 title: >-
   ✅ Best Free AI Grammar Checker Chrome Extensions (2026) — Write Better
   Everywhere
+author: "James Mitchell"
 meta_description: "The best free AI grammar checker extensions for 2026 — privacy-first open-source tools and academic checkers that fix your writing without subscriptions."
 description: >-
   ✅ Best Free AI Grammar Checker Chrome Extensions 2026 — Write Better
@@ -16,6 +17,8 @@ description: >-
 category: "Performance & Memory"
 updated_at: '2026-09-14T12:00:00.000+00:00'
 read_time: 8
+keywords: [free ai grammar checker extensions, best grammar checker chrome extension 2026, privacy-first
+    grammar checker, free writing assistant chrome, open source grammar checker extension]
 ---
 
 > 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026

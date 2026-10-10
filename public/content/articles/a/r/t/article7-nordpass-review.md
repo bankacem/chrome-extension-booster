@@ -8,6 +8,7 @@ image_url: /content/images/article7-nordpass-review.jpg
 title: >-
   NordPass Chrome Extension Review 2026: The Beautiful Underdog With One
   Frustrating Flaw
+author: "James Mitchell"
 meta_description: "Article7 NordPass review: three weeks with NordPass in Chrome — design, autofill, email masking, the one-device flaw, and our 2026 pricing verdict."
 description: >-
   NordPass Chrome Extension Review 2026: The Beautiful Underdog With One
@@ -15,6 +16,7 @@ description: >-
 category: "Chrome Extensions"
 updated_at: '2026-09-14T12:00:00.000+00:00'
 read_time: 7
+keywords: ['nordpass review 2026', 'nordpass chrome extension review', 'nordpass password manager', 'nordpass features pricing', 'nord security password manager']
 ---
 > 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026
 

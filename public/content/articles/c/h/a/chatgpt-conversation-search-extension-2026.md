@@ -9,6 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-8ede21.jpg
 title: >-
   🔎 ChatGPT Conversation Search Chrome Extensions (2026) — Never Lose a Chat
   Again
+author: "James Mitchell"
 meta_description: "🔎 ChatGPT Conversation Search Chrome Extensions 2026 — Never Lose a Chat Again"
 description: >-
   🔎 ChatGPT Conversation Search Chrome Extensions 2026 — Never Lose a Chat
@@ -16,6 +17,8 @@ description: >-
 category: "AI Tools"
 updated_at: '2026-09-23T13:56:58.000+00:00'
 read_time: "16"
+keywords: [chatgpt conversation search extension, search chatgpt history chrome, find lost chatgpt
+    conversations, chatgpt chat search tool 2026, ai conversation search extension]
 ---
 <img src="/content/images/chatgpt-conversation-search-extension-2026/featured.webp" alt="🔎 ChatGPT Conversation Search Chrome Extensions (2026) — Never Lose a Chat Again" width="1200" height="630" loading="lazy" class="featured-image">
 
