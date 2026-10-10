@@ -1,26 +1,33 @@
 ---
-seo_title: "Guia da Extensão do Zoom para Chrome em 2026"
-id: "zoom-chrome-extension-guide-pt"
-title: "Guia Completo da Extensão do Zoom para Chrome: Instalação e Dicas"
-slug: "zoom-chrome-extension-guide"
-excerpt: "Guia passo a passo para instalar, configurar e usar a extensão do Zoom no Chrome para reuniões mais rápidas e produtivas."
+seo_title: Guia da Extensão do Zoom para Chrome em 2026
+id: zoom-chrome-extension-guide-pt
+title: 'Guia Completo da Extensão do Zoom para Chrome: Instalação e Dicas'
+slug: zoom-chrome-extension-guide
+excerpt: Guia passo a passo para instalar, configurar e usar a extensão do Zoom no
+  Chrome para reuniões mais rápidas e produtivas.
 featured_image: /content/images/zoom-chrome-extension-guide/featured.webp
-category: "Produtividade"
-tags: ["zoom", "videoconferência", "reuniões", "chrome", "produtividade"]
+category: Produtividade
+tags:
+- zoom
+- videoconferência
+- reuniões
+- chrome
+- produtividade
 keywords:
-  - extensão zoom chrome
-  - instalar zoom chrome
-  - zoom extensão navegador
-  - usar zoom no chrome
-meta_description: "Guia completo da extensão do Zoom para Chrome em 2026. Aprenda a instalar, configurar e otimizar o Zoom diretamente no navegador."
+- extensão zoom chrome
+- instalar zoom chrome
+- zoom extensão navegador
+- usar zoom no chrome
+meta_description: Guia completo da extensão do Zoom para Chrome em 2026. Aprenda a
+  instalar, configurar e otimizar o Zoom diretamente no navegador.
 status: published
-published_at: "2026-08-26T12:00:00+01:00"
-scheduled_at: "2026-08-26T12:00:00+01:00"
-author: "ExtensionTo"
+published_at: '2026-08-26T12:00:00+01:00'
+scheduled_at: '2026-08-26T12:00:00+01:00'
+author: ExtensionTo
 read_time: 8
-created_at: "2026-08-26"
-updated_at: "2026-08-26"
-locale: "pt_BR"
+created_at: '2026-08-26'
+updated_at: '2026-10-10'
+locale: pt_BR
 ---
 
 # Guia Completo da Extensão do Zoom para Chrome: Instalação e Dicas
@@ -77,5 +84,15 @@ Após instalar a extensão, você precisa conectá-la à sua conta do Zoom. Cliq
 | Fundos virtuais | Sim | Sim |
 
 Para a maioria dos usuários que participam de reuniões, a extensão é suficiente. Se você organiza reuniões complexas com webinars ou precisa de gravação local, o aplicativo desktop ainda é necessário.
+
+## Privacidade e Segurança em Videoconferências
+
+A extensão do Zoom pede acesso ao calendário, notificações e captura de tela — permissões razoáveis para o que ela faz, mas que merecem atenção:
+
+- **Revise o acesso ao calendário.** A integração com o Google Calendar é útil, mas verifique periodicamente quais extensões mantêm esse acesso e remova as que você não usa mais.
+- **Desative a câmera e o microfone por padrão.** Nas configurações do Zoom, ative a opção de entrar em reuniões com áudio e vídeo desligados — você liga apenas quando precisar.
+- **Cuidado com extensões de videoconferência de terceiros.** Imitações do Zoom Scheduler já foram usadas para phishing. Instale apenas a extensão oficial e, na dúvida, [audite as permissões das suas extensões](/pt/blog/chrome-extension-security-risks-permission-audit-guide).
+
+Para proteger sua navegação além das reuniões, complemente com [extensões de privacidade para Chrome](/pt/blog/best-chrome-privacy-extensions-2026-complete-guide).
 
 O Zoom no Chrome continua evoluindo com novos recursos sendo adicionados regularmente. A extensão é a maneira mais rápida de se conectar a reuniões sem deixar o navegador, tornando seu fluxo de trabalho mais fluido e eficiente.

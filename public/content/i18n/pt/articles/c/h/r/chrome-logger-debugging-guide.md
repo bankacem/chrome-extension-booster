@@ -1,26 +1,33 @@
 ---
-seo_title: "Chrome Logger: Guia de Depuração para Desenvolvedores"
-id: "chrome-logger-debugging-guide-pt"
-title: "Chrome Logger: Guia Completo de Depuração e Logging no Chrome"
-slug: "chrome-logger-debugging-guide"
-excerpt: "Domine as ferramentas de logging e depuração do Chrome DevTools para encontrar bugs mais rápido e melhorar seu código."
+seo_title: 'Chrome Logger: Guia de Depuração para Desenvolvedores'
+id: chrome-logger-debugging-guide-pt
+title: 'Chrome Logger: Guia Completo de Depuração e Logging no Chrome'
+slug: chrome-logger-debugging-guide
+excerpt: Domine as ferramentas de logging e depuração do Chrome DevTools para encontrar
+  bugs mais rápido e melhorar seu código.
 featured_image: /content/images/chrome-logger-debugging-guide/featured.webp
-category: "Desenvolvimento"
-tags: ["debugging", "logging", "devtools", "chrome", "desenvolvimento"]
+category: Desenvolvimento
+tags:
+- debugging
+- logging
+- devtools
+- chrome
+- desenvolvimento
 keywords:
-  - chrome logger debug
-  - ferramentas depuração chrome
-  - chrome devtools console
-  - depuração javascript chrome
-meta_description: "Guia completo de depuração e logging no Chrome. Aprenda a usar o Console, breakpoints e logs avançados para encontrar bugs mais rápido."
+- chrome logger debug
+- ferramentas depuração chrome
+- chrome devtools console
+- depuração javascript chrome
+meta_description: Guia completo de depuração e logging no Chrome. Aprenda a usar o
+  Console, breakpoints e logs avançados para encontrar bugs mais rápido.
 status: published
-published_at: "2026-08-26T12:00:00+01:00"
-scheduled_at: "2026-08-26T12:00:00+01:00"
-author: "ExtensionTo"
+published_at: '2026-08-26T12:00:00+01:00'
+scheduled_at: '2026-08-26T12:00:00+01:00'
+author: ExtensionTo
 read_time: 8
-created_at: "2026-08-26"
-updated_at: "2026-08-26"
-locale: "pt_BR"
+created_at: '2026-08-26'
+updated_at: '2026-10-10'
+locale: pt_BR
 ---
 
 # Chrome Logger: Guia Completo de Depuração e Logging no Chrome
@@ -87,6 +94,16 @@ Para depurar content scripts de uma extensão, abra o DevTools na página onde o
 | F10 | Próxima linha |
 | F11 | Entrar na função |
 | Shift+F11 | Sair da função |
+
+## Depurando Problemas de Desempenho Causados por Extensões
+
+Uma das aplicações mais práticas do logging é descobrir qual extensão está deixando seu Chrome lento. Use este fluxo:
+
+1. Abra o Gerenciador de Tarefas do Chrome (Shift+Esc) e anote quais extensões consomem mais memória e CPU.
+2. No Console, filtre por erros repetidos — extensões mal escritas costumam gerar centenas de warnings idênticos, um sinal claro de código problemático.
+3. Use o painel Performance para gravar 10 segundos de navegação e identificar scripts longos vindos de extensões específicas.
+
+Se confirmar que extensões pesadas são o problema, confira nosso [teste real de extensões que deixam o Chrome lento](/pt/blog/chrome-extensions-that-slow-down-your-browser-real-tests) para comparar o impacto de cada categoria. E para acelerar seu fluxo de desenvolvimento no dia a dia, as [extensões de paleta de comandos](/pt/blog/chrome-command-palette-extensions) colocam DevTools, abas e ações do navegador a um atalho de distância.
 
 ## Perguntas Frequentes
 

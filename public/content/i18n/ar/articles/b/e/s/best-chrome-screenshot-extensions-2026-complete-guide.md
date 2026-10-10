@@ -19,7 +19,7 @@ scheduled_at: "2026-08-28T12:00:00+01:00"
 author: "ExtensionTo"
 read_time: 9
 created_at: "2026-08-28"
-updated_at: "2026-08-28"
+updated_at: "2026-10-10"
 locale: "ar_SA"
 faq:
   - question: هل يمكنني التقاط لقطة شاشة في كروم دون إضافة على ويندوز؟
@@ -193,6 +193,8 @@ GoFullPage هي المعيار الذهبي للقطات الشاشة الكام
 | مشاركة جماعية وتعاون | Awesome Screenshot | مشاركة الروابط وتكاملات الفرق |
 | التقاط منطقة + رابط سريع | Lightshot | الأخف وزناً ورابط فوري |
 | بلا إضافة نهائياً | Chrome DevTools | F12 ثم Ctrl+Shift+P ثم screenshot |
+
+وإذا كنت تلتقط لقطات أثناء اجتماعات الفيديو، راجع [دليل إضافة زوم لكروم](/ar/blog/zoom-chrome-extension-guide) لإعداد اجتماعاتك مباشرة من المتصفح.
 
 ## الأسئلة الشائعة
 

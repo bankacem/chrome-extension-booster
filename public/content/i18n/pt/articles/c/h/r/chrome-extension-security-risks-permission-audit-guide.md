@@ -1,26 +1,35 @@
 ---
-seo_title: "Riscos de Segurança de Extensões do Chrome: Auditoria de 10 Minutos"
-id: "chrome-extension-security-risks-permission-audit-guide-pt"
-title: "Riscos de Segurança de Extensões do Chrome: Uma Auditoria de Permissões em 10 Minutos"
-slug: "chrome-extension-security-risks-permission-audit-guide"
-excerpt: "Aprenda a identificar riscos de segurança em extensões do Chrome, interpretar permissões, restringir acesso a sites e remover extensões injustificadas."
+seo_title: 'Riscos de Segurança de Extensões do Chrome: Auditoria de 10 Minutos'
+id: chrome-extension-security-risks-permission-audit-guide-pt
+title: 'Riscos de Segurança de Extensões do Chrome: Uma Auditoria de Permissões em
+  10 Minutos'
+slug: chrome-extension-security-risks-permission-audit-guide
+excerpt: Aprenda a identificar riscos de segurança em extensões do Chrome, interpretar
+  permissões, restringir acesso a sites e remover extensões injustificadas.
 featured_image: /content/images/chrome-extension-security-risks-permission-audit-guide/featured.webp
-category: "Segurança e Privacidade"
-tags: ["segurança", "privacidade", "permissões", "auditoria", "extensões do chrome"]
+category: Segurança e Privacidade
+tags:
+- segurança
+- privacidade
+- permissões
+- auditoria
+- extensões do chrome
 keywords:
-  - riscos de segurança extensão chrome
-  - como verificar permissões extensão chrome
-  - extensões chrome são seguras
-  - auditoria de permissões extensão chrome
-meta_description: "Identifique riscos de segurança de extensões do Chrome em 10 minutos. Aprenda a ler permissões, restringir acesso a sites, auditar atualizações e remover extensões arriscadas."
+- riscos de segurança extensão chrome
+- como verificar permissões extensão chrome
+- extensões chrome são seguras
+- auditoria de permissões extensão chrome
+meta_description: Identifique riscos de segurança de extensões do Chrome em 10 minutos.
+  Aprenda a ler permissões, restringir acesso a sites, auditar atualizações e remover
+  extensões arriscadas.
 status: published
-published_at: "2026-08-26T12:00:00+01:00"
-scheduled_at: "2026-08-26T12:00:00+01:00"
-author: "ExtensionTo"
+published_at: '2026-08-26T12:00:00+01:00'
+scheduled_at: '2026-08-26T12:00:00+01:00'
+author: ExtensionTo
 read_time: 8
-created_at: "2026-08-26"
-updated_at: "2026-08-26"
-locale: "pt_BR"
+created_at: '2026-08-26'
+updated_at: '2026-10-10'
+locale: pt_BR
 ---
 
 # Riscos de Segurança de Extensões do Chrome: Uma Auditoria de Permissões em 10 Minutos
@@ -31,7 +40,7 @@ Este guia transforma os **riscos de segurança de extensões do Chrome** em um p
 
 ## Por Que as Permissões Importam Mais Que as Avaliações
 
-Uma extensão com 4,8 estrelas e milhões de downloads ainda pode representar um risco se solicitar permissões que excedem suas necessidades reais. As avaliações refletem funcionalidade e experiência do usuário, não segurança. Um bloqueador de anúncios que solicita acesso a todos os seus dados de navegação, ou um tema escuro que solicita acesso à sua lista de contatos, estão pedindo mais do que precisam.
+Uma extensão com 4,8 estrelas e milhões de downloads ainda pode representar um risco se solicitar permissões que excedem suas necessidades reais. As avaliações refletem funcionalidade e experiência do usuário, não segurança. Se você quer entender o significado de cada permissão antes de auditar, comece pelo nosso [guia completo de permissões de extensões do Chrome](/pt/blog/chrome-extension-permissions-guide). Um bloqueador de anúncios que solicita acesso a todos os seus dados de navegação, ou um tema escuro que solicita acesso à sua lista de contatos, estão pedindo mais do que precisam.
 
 O sistema de permissões do Chrome (Manifest V3) é a sua principal linha de defesa. Cada extensão declara suas permissões em um arquivo de manifesto, e o Chrome aplica essas restrições no nível do navegador. Quando uma extensão solicita `"host_permissions"` para `"*://*/*"`, isso significa acesso total a todos os sites que você visita. Muito poucas extensões precisam disso.
 
@@ -84,4 +93,4 @@ O Chrome atualiza extensões automaticamente, mas uma atualização pode adicion
 
 **P: Quantas extensões são muitas?** Se você tem mais de 10, provavelmente tem algumas que não usa. Cada extensão adicional aumenta sua superfície de ataque. Revise e remova regularmente.
 
-A auditoria de permissões não é uma tarefa única. Faça isso a cada três meses ou sempre que instalar algo novo. Dez minutos de verificação podem evitar horas de dor de cabeça com contas comprometidas ou roubo de dados.
+A auditoria de permissões não é uma tarefa única. Faça isso a cada três meses ou sempre que instalar algo novo. Dez minutos de verificação podem evitar horas de dor de cabeça com contas comprometidas ou roubo de dados. Para fechar o ciclo de proteção, instale [extensões de privacidade bem avaliadas](/pt/blog/best-chrome-privacy-extensions-2026-complete-guide) e mantenha o navegador leve com nosso [teste real de extensões que deixam o Chrome lento](/pt/blog/chrome-extensions-that-slow-down-your-browser-real-tests).

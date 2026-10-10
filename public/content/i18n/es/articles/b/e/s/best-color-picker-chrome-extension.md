@@ -22,7 +22,7 @@ meta_description: >-
   de trabajo.
 status: published
 published_at: '2026-05-22T14:15:01.369+00:00'
-updated_at: '2026-05-22T14:15:01.581282+00:00'
+updated_at: "2026-10-10"
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
@@ -151,4 +151,4 @@ read_time: 8
 
 <p>ColorZilla es la mejor extensión de cuentagotas de color para Chrome en 2026. Ofreció un 99,8 % de precisión, guardado de paletas con 20 espacios, zoom ajustable hasta 20x, exportación de formatos en Hex/RGB/HSL/HSV, e historial de muestras automático. Eye Dropper está bien para usuarios ocasionales que solo necesitan códigos hex y no les importa el retraso de 0,5 segundos. Quick Color Picker es un término medio, pero su precisión del 98,2 % es demasiado baja para trabajo profesional. Chrome DevTools es perfectamente preciso pero demasiado lento para flujos de trabajo de diseño dedicados.</p>
 
-<p>Para la caja de herramientas de diseño completa, instala ColorZilla junto a Quick Screenshot Lite para capturar referencias de diseño, DarkFlow para trabajar cómodamente por la noche, y Glasp para guardar tu investigación sobre teoría del color.</p>
+<p>Para la caja de herramientas de diseño completa, instala ColorZilla junto a Quick Screenshot Lite para capturar referencias de diseño, DarkFlow para trabajar cómodamente por la noche, y Glasp para guardar tu investigación sobre teoría del color. Si quieres profundizar en capturas, consulta nuestra guía de <a href="/es/blog/best-chrome-screenshot-extensions-2026-complete-guide">extensiones de captura de pantalla para Chrome</a>; y si eres diseñador autónomo, no te pierdas las <a href="/es/blog/unlocking-productivity-the-best-chrome-extensions-for-freelancers">extensiones de productividad para autónomos</a>.</p>

@@ -1,26 +1,33 @@
 ---
-seo_title: "Guia de Permissões de Extensões do Chrome"
-id: "chrome-extension-permissions-guide-pt"
-title: "Guia Completo de Permissões de Extensões do Chrome em 2026"
-slug: "chrome-extension-permissions-guide"
-excerpt: "Entenda todas as permissões de extensões do Chrome, o que cada uma significa e como gerenciar o acesso das suas extensões."
+seo_title: Guia de Permissões de Extensões do Chrome
+id: chrome-extension-permissions-guide-pt
+title: Guia Completo de Permissões de Extensões do Chrome em 2026
+slug: chrome-extension-permissions-guide
+excerpt: Entenda todas as permissões de extensões do Chrome, o que cada uma significa
+  e como gerenciar o acesso das suas extensões.
 featured_image: /content/images/chrome-extension-permissions-guide/featured.webp
-category: "Segurança e Privacidade"
-tags: ["permissões", "segurança", "privacidade", "extensões do chrome", "manifest v3"]
+category: Segurança e Privacidade
+tags:
+- permissões
+- segurança
+- privacidade
+- extensões do chrome
+- manifest v3
 keywords:
-  - permissões extensão chrome
-  - o que significam permissões chrome
-  - gerenciar permissões extensões
-  - manifest v3 permissões
-meta_description: "Guia completo sobre permissões de extensões do Chrome em 2026. Entenda o que cada permissão faz e como proteger seus dados."
+- permissões extensão chrome
+- o que significam permissões chrome
+- gerenciar permissões extensões
+- manifest v3 permissões
+meta_description: Guia completo sobre permissões de extensões do Chrome em 2026. Entenda
+  o que cada permissão faz e como proteger seus dados.
 status: published
-published_at: "2026-08-26T12:00:00+01:00"
-scheduled_at: "2026-08-26T12:00:00+01:00"
-author: "ExtensionTo"
+published_at: '2026-08-26T12:00:00+01:00'
+scheduled_at: '2026-08-26T12:00:00+01:00'
+author: ExtensionTo
 read_time: 8
-created_at: "2026-08-26"
-updated_at: "2026-08-26"
-locale: "pt_BR"
+created_at: '2026-08-26'
+updated_at: '2026-10-10'
+locale: pt_BR
 ---
 
 # Guia Completo de Permissões de Extensões do Chrome em 2026
@@ -84,6 +91,17 @@ O Chrome permite remover permissões individuais sem desinstalar a extensão. V�
 - **Audite regularmente.** Verifique suas extensões a cada três meses.
 - **Prefira extensões de código aberto.** Código aberto pode ser auditado por qualquer pessoa.
 - **Desative extensões não utilizadas.** Em vez de desinstalar, desative para manter o acesso se precisar no futuro.
+
+## Sinais de Alerta: Permissões Suspeitas na Prática
+
+Saber a teoria é útil, mas reconhecer padrões suspeitos é o que protege você no dia a dia. Fique atento a estas combinações:
+
+- **Uma calculadora que pede acesso a todos os sites.** Utilitários simples nunca precisam de `\"*://*/*\"` — esse é o sinal clássico de coleta de dados disfarçada.
+- **Permissão de leitura do histórico em extensões de cupons.** Extensões de desconto legítimas precisam ver a página da loja, não seu histórico inteiro.
+- **Solicitações novas após atualizações.** Uma extensão pode pedir permissões extras numa atualização silenciosa. Quando isso acontecer, pause e reavalie se o recurso novo justifica o acesso — ou faça uma [auditoria completa de permissões em 10 minutos](/pt/blog/chrome-extension-security-risks-permission-audit-guide).
+- **Duas extensões pedindo exatamente o mesmo acesso amplo.** Mantenha apenas a que você realmente usa e remova a outra; menos extensões com acesso total significa menos risco.
+
+Combinar esse olhar crítico com [extensões de privacidade bem escolhidas](/pt/blog/best-chrome-privacy-extensions-2026-complete-guide) cria uma defesa em camadas: menos dados expostos desde o início e menos ferramentas com poder sobre eles.
 
 ## Perguntas Frequentes
 

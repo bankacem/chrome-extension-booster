@@ -24,7 +24,7 @@ meta_description: >-
   para PCs con memoria limitada.
 status: published
 published_at: '2026-03-22T00:00:00.000+00:00'
-updated_at: '2026-06-05T12:00:00.000000+00:00'
+updated_at: "2026-10-10"
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
@@ -94,7 +94,7 @@ Tras las pruebas, la combinación perfecta de 3 extensiones es:
 
 **1. ProTab Suspender** (suspensor de pestañas principal) — Suspende las pestañas inactivas tras un tiempo configurable. Usa la lista blanca para mantener Gmail, Calendar y Spotify siempre activos. Configura un tiempo de espera de 15 minutos para la navegación general.
 
-**2. uBlock Origin** (bloqueador de anuncios/rastreadores) — Evita que se carguen los scripts publicitarios, ahorrando RAM incluso antes de que las pestañas se activen. Complementa al suspensor de pestañas reduciendo la memoria base por pestaña.
+**2. uBlock Origin** (bloqueador de anuncios/rastreadores) — Evita que se carguen los scripts publicitarios, ahorrando RAM incluso antes de que las pestañas se activen. Complementa al suspensor de pestañas reduciendo la memoria base por pestaña. Si quieres profundizar, consulta nuestra guía de [bloqueadores de anuncios que no ralentizan el navegador](/es/blog/best-chrome-ad-blockers-without-slowing-your-browser).
 
 **3. Light Popup Blocker** (bloqueador de superposiciones) — Los vídeos con reproducción automática, las ventanas emergentes de newsletter y los widgets de chat flotantes consumen sorprendentemente mucha CPU y memoria. [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) evita que se muestren, con solo 20 MB de uso de RAM.
 
@@ -114,6 +114,8 @@ Tras las pruebas, la combinación perfecta de 3 extensiones es:
 La mayoría de las guías de ahorro de RAM recomiendan instalar 5 o más extensiones a la vez. Eso va en contra del propósito — cada extensión consume por sí misma entre 20 y 80 MB de RAM. La [página de ayuda oficial de Google](https://support.google.com/chrome/answer/95472) te dice que cierres pestañas, algo inútil para los usuarios avanzados que necesitan muchas pestañas abiertas.
 
 La conclusión clave de mis pruebas: **un solo suspensor de pestañas + un solo bloqueador de anuncios es todo lo que necesitas.** Todo lo demás (modo oscuro, capturas de pantalla, gestor de contraseñas) debería ser un extra opcional, no parte de la estrategia principal de ahorro de RAM.
+
+Y si pasas el día con el teclado, las [extensiones de paleta de comandos](/es/blog/chrome-command-palette-extensions) te permiten gestionar pestañas y acciones sin tocar el ratón, lo que también reduce el desorden.
 
 ## Preguntas frecuentes
 
