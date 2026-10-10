@@ -1,6 +1,8 @@
 ---
 id: 06fb1066-9d5d-4593-aab2-0539fae539b5
 title: 'How to Sync Chrome Bookmarks Across Devices: Troubleshooting Guide'
+description: >-
+  Sync usually works silently — until it doesn't. Turning it on correctly, work-versus-personal profiles, and fixing edits that won't propagate.
 seo_title: How to Sync Chrome Bookmarks Across Devices
 slug: how-to-sync-chrome-bookmarks-across-devices
 canonicalPath: /blog/how-to-sync-chrome-bookmarks-across-devices

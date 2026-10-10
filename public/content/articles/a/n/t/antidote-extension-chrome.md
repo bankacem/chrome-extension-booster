@@ -4,6 +4,8 @@ id: c31f1016-b24b-411f-9555-14f85d20ec50
 title: 'Antidote Extension Chrome Review 2026: Best French Writing Assistant?'
 slug: antidote-extension-chrome
 excerpt: 'Antidote Chrome extension for French and English writing: how it compares to Grammarly and ProWritingAid, and which companion extensions every writer needs.'
+description: >-
+  The writing assistant French speakers swear by, tested against Grammarly: where Antidote wins, where it lags, and the ideal writer’s setup.
 featured_image: /content/images/antidote-extension-chrome/featured.webp
 category: Productivity & Tools
 tags:

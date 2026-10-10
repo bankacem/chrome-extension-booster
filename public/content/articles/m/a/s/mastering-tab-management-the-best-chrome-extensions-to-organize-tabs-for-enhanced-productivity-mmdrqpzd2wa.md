@@ -9,6 +9,9 @@ excerpt: >-
   Are you tired of feeling overwhelmed by the sheer number of tabs you have open
   in your Chrome browser? Do you struggle to find the information you need
   amidst a
+description: >-
+  Drowning in open tabs? A practical shortlist of tab-organizer extensions for Chrome, picked for heavy
+  multitaskers who live in the browser.
 featured_image: >-
   /content/images/mastering-tab-management-the-best-chrome-extensions-to-organize-tabs-for-enhanced-productivity-mmdrqpzd2wa/featured.webp
 category: Screenshots & Screen Capture

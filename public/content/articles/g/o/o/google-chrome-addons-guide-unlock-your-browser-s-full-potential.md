@@ -2,6 +2,8 @@
 seo_title: "Google Chrome Add-ons: How to Choose and Manage Extensions"
 id: cadae7c8-f284-4e38-85d5-dac83ce09eb0
 title: 'Google Chrome Addons Guide: Unlock Your Browser''s Full Potential'
+description: >-
+  Add-ons, extensions — the same thing in Chrome. Categories, examples, safe installation, and management, all in one complete guide.
 slug: google-chrome-addons-guide-unlock-your-browser-s-full-potential
 excerpt: A practical guide to the best Chrome addons across search, privacy, downloads, social media, developer tools, and page customization — with a comparison table and safety tips.
 featured_image: /content/images/google-chrome-addons-guide-unlock-your-browser-s-full-potential/featured.webp

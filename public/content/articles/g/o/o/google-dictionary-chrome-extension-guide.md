@@ -1,6 +1,8 @@
 ---
 id: "b8abbf2e-82cb-47b8-8da4-14ed8a0a75a7"
 title: "Google Dictionary Chrome Extension: Definitions, History, and Fixes"
+description: >-
+  Double-click any word for an instant definition: installing Google Dictionary, using lookups and word history, and fixing the 'nothing happens' problem.
 slug: google-dictionary-chrome-extension-guide
 status: draft
 excerpt: "Install and use Google Dictionary (by Google) for instant in‑page definitions and optional lookup history. Learn setup, translations, limitations, and quick fixes when pop‑ups don’t appear."

@@ -1,6 +1,8 @@
 ---
 seo_title: "ClipConverter Extension for Chrome"
 title: 'ClipConverter Extension for Chrome: Full 2026 Review'
+description: >-
+  47 videos downloaded across four sites: where ClipConverter still works in 2026, where 4K breaks it, and what to use instead.
 slug: clipconverter-extension-chrome
 excerpt: 'ClipConverter for Chrome reviewed against other video downloaders: where it shines, where it falls short, and the extensions you need alongside it.'
 featured_image: /content/images/clipconverter-extension-chrome/featured.webp

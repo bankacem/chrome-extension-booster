@@ -9,6 +9,9 @@ excerpt: >-
   Are you tired of your browser consuming excessive RAM, slowing down your
   computer, and hindering your productivity? You're not alone. Many users face
   this issue
+description: >-
+  Practical ways to cut Chrome's memory footprint — from tab suspension to extension audits — without buying
+  more RAM.
 featured_image: >-
   /content/images/optimize-your-browser-the-best-ways-to-reduce-ram-usage-with-chrome-extensions-mmtizxw3nao/featured.webp
 category: Productivity

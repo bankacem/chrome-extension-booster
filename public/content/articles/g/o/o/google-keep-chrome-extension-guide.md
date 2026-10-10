@@ -1,6 +1,8 @@
 ---
 id: "68ace3fa-6da0-4795-a9d7-58ecc48e9869"
 title: "Google Keep Chrome Extension: Save Web Pages, Text, and Images Correctly"
+description: >-
+  Save pages, quotes, and images to Keep without leaving Chrome — including the important change to how popup notes save.
 slug: google-keep-chrome-extension-guide
 status: draft
 excerpt: "A practical, up-to-date guide to clipping web pages, selected text, and images to Google Keep with the Chrome extension—plus the important autosave change and workflow limits."

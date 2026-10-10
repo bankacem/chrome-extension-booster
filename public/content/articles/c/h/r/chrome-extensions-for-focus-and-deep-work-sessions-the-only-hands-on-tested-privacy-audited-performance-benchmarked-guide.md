@@ -5,6 +5,8 @@ title: "Chrome Extensions for Focus and Deep Work Sessions: The Only Hands-On Te
 slug: chrome-extensions-for-focus-and-deep-work-sessions-the-only-hands-on-tested-privacy-audited-performance-benchmarked-guide
 status: draft
 excerpt: "Discover the best chrome extensions for focus and deep work sessions, hands-on tested and privacy-audited. Boost productivity and block distractions today."
+description: >-
+  Twenty-seven focus tools tested over 14 days and privacy-audited: the three that earned a place in a deep-work setup.
 meta_description: "Discover the best chrome extensions for focus and deep work sessions, hands-on tested and privacy-audited. Boost productivity and block distractions today."
 featured_image: /og-image.png
 category: Productivity & Tools

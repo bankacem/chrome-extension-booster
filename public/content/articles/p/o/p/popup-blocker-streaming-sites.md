@@ -7,6 +7,9 @@ excerpt: >-
   Are you tired of annoying popups ruining your streaming experience? Look no
   further! In this article, we'll explore the best solutions for a popup blocker
   for s
+description: >-
+  Pop-ups ruining movie night? The best popup blockers for streaming sites, tested against aggressive ad walls
+  and redirects.
 featured_image: /content/images/popup-blocker-streaming-sites/featured.webp
 category: "Productivity & Tools"
 tags:

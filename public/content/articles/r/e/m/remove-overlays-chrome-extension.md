@@ -7,6 +7,9 @@ excerpt: >-
   Are you tired of annoying overlays and popups that hinder your browsing
   experience? Do you find yourself constantly closing unnecessary windows and
   alerts that
+description: >-
+  One click to kill stubborn overlays: the best extensions for clearing pop-ups, modals, and sticky banners —
+  plus automated cleanup.
 featured_image: /content/images/remove-overlays-chrome-extension/featured.webp
 category: "Productivity & Tools"
 tags:

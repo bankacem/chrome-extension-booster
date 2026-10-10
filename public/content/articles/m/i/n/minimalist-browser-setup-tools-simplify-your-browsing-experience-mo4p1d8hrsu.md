@@ -7,6 +7,9 @@ excerpt: >-
   When it comes to browsing the internet, a cluttered and disorganized browser
   can be a significant hindrance to productivity. This is where Minimalist
   Browser Se
+description: >-
+  Declutter your browser: a lean set of extensions and settings that strip Chrome down to a fast, focused,
+  distraction-free workspace.
 featured_image: >-
   /content/images/minimalist-browser-setup-tools-simplify-your-browsing-experience-mo4p1d8hrsu/featured.webp
 category: Screenshots & Screen Capture

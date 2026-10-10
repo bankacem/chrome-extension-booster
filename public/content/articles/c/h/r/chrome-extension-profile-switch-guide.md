@@ -4,6 +4,8 @@ title: "Switch Chrome Profiles Without Mixing Extension Data or Accounts"
 slug: chrome-extension-profile-switch-guide
 status: draft
 excerpt: "A practical profile-switch workflow to verify the right Google account, extensions, downloads, and tabs—so work and personal browsing don’t cross streams."
+description: >-
+  Work and personal profiles, zero cross-contamination: the pre-switch checklist covering accounts, extensions, and downloads.
 meta_description: "Switch Chrome profiles safely with a pre-switch checklist that verifies account, extensions, downloads, and tabs—so work and personal stay separate."
 featured_image: "/content/images/chrome-extension-profile-switch-guide/featured.webp"
 category: "Chrome Extensions"

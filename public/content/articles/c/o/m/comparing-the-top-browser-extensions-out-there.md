@@ -2,6 +2,8 @@
 seo_title: "Comparing the Top Browser Extensions Out There"
 id: c5b77b60-ae6c-46c0-8826-baad74d6480c
 title: 'Comparing the Top Browser Extensions Out There'
+description: >-
+  Tens of thousands of extensions, one repeatable method: how to compare tools category by category and pick winners without the clutter.
 slug: "comparing-the-top-browser-extensions-out-there"
 excerpt: >-
   When it comes to enhancing your browsing experience, few things are as

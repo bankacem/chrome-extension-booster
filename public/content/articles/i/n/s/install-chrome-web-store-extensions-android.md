@@ -3,6 +3,8 @@ seo_title: "Install Chrome Extensions on Android 2026"
 title: >-
   How to Install Chrome Web Store Extensions on Android: Step-by-Step Guide
   (2026)
+description: >-
+  Chrome for Android blocks extensions, but Kiwi, Yandex, and Lemur don't. Twenty extensions tested on each to find what actually works on mobile.
 slug: install-chrome-web-store-extensions-android
 excerpt: >-
   Step-by-step guide to installing Chrome Web Store extensions on Android using

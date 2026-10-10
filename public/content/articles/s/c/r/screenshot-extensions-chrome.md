@@ -8,6 +8,9 @@ excerpt: >-
   Ten Chrome screenshot extensions — including Quick Screenshot Lite, FireShot,
   Nimbus, GoFullPage, and Awesome Screenshot — compared on speed, annotation
   quality, full-page capture, and privacy.
+description: >-
+  10 Chrome screenshot extensions tested over three weeks — capture speed, annotation tools, and privacy
+  compared.
 featured_image: /content/images/screenshot-extensions-chrome/featured.webp
 category: Productivity & Tools
 tags:

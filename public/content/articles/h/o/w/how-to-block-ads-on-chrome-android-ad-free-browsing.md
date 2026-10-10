@@ -2,6 +2,8 @@
 seo_title: "How to Block Ads on Chrome Android"
 id: 69be5f9a-1b46-4920-ac22-6991728922a0
 title: 'How to Block Ads on Chrome Android: A Step-by-Step Guide to Ad-Free Browsing'
+description: >-
+  Chrome Android has no extension support, so ad blocking takes workarounds. Step-by-step methods for faster, more private mobile browsing.
 slug: "how-to-block-ads-on-chrome-android-ad-free-browsing"
 excerpt: >-
   Are you tired of annoying ads disrupting your browsing experience on Chrome

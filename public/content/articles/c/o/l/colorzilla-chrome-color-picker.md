@@ -1,6 +1,8 @@
 ---
 seo_title: "ColorZilla for Chrome"
 title: 'ColorZilla for Chrome: Color Picker Extension Review (2026)'
+description: >-
+  The veteran color picker against five rivals on a calibrated monitor: does ColorZilla still deserve the top spot in 2026?
 slug: colorzilla-chrome-color-picker
 excerpt: 'ColorZilla compared with 5 other color picker extensions for Chrome: which one grabs accurate hex codes from any page, supports eyedropper across iframes, and has the best history features.'
 featured_image: /content/images/colorzilla-chrome-color-picker/featured.webp

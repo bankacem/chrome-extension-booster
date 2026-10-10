@@ -4,6 +4,9 @@ id: fb3abbf0-1398-47d5-a7fa-d29c00f1d5d8
 title: 'Kaspersky Protection for Chrome: Pros, Cons, Verdict'
 slug: kaspersky-protection-chrome-review
 excerpt: 'Kaspersky Protection''s Chrome extension compared with 5 competing security tools: phishing protection, download screening, and tracker blocking — and whether you actually need it.'
+description: >-
+  Hands-on security test: Kaspersky's Chrome extension faces 15 phishing URLs and 10 malware samples to see if
+  it earns a place in your browser.
 featured_image: /content/images/kaspersky-protection-chrome-review/featured.webp
 category: Productivity & Tools
 tags: []

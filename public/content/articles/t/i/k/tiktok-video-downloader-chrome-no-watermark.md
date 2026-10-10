@@ -7,6 +7,8 @@ excerpt: >-
   As a TikTok enthusiast, you've likely stumbled upon a plethora of amazing
   videos that you'd love to save for later or share with friends and family.
   However, do
+description: >-
+  Save TikTok videos without the watermark — which Chrome downloader extensions work and which to skip.
 featured_image: /content/images/tiktok-video-downloader-chrome-no-watermark/featured.webp
 category: "Media & Downloads"
 tags:

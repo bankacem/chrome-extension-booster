@@ -3,6 +3,8 @@ seo_title: "3CX Chrome Extension: VoIP for Business"
 title: '3CX Chrome Extension: VoIP Phone System for Business (2026)'
 slug: 3cx-voip-chrome-extension
 excerpt: 'The 3CX Chrome extension reviewed for VoIP calling, call management, and Google Contacts integration: how it compares to RingCentral, Zoom Phone, and Dialpad.'
+description: >-
+  200+ test calls through the 3CX browser extension: call quality measured, rivals compared, and whether it fits your business phone setup.
 featured_image: /content/images/3cx-voip-chrome-extension/featured.webp
 category: Productivity & Tools
 tags:

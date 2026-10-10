@@ -3,6 +3,8 @@ seo_title: "10 Best RAM-Saving Extensions for Chrome"
 title: 10 Best RAM Saving Extensions for Chrome (2026 Edition)
 slug: best-ram-saving-extensions-2026
 excerpt: 'Chrome eating all your memory? 10 RAM-saving extensions compared — which ones actually free up memory, which slow you down, and the 3-extension stack.'
+description: >-
+  Fifteen tabs pushing an 8GB laptop to 85% memory: ten RAM savers measured, with the three-extension stack that actually helps.
 featured_image: /content/images/best-ram-saving-extensions-2026/featured.webp
 category: Productivity & Tools
 tags:

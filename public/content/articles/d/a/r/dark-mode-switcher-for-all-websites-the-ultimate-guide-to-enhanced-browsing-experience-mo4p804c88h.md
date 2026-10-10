@@ -1,6 +1,8 @@
 ---
 id: 5e74d13f-47d5-4423-b14c-b66d446b9d5f
 title: 'A Dark Mode Switcher That Works on Any Website'
+description: >-
+  Stop toggling dark mode per site: how automatic switchers work and which one keeps every website easy on the eyes.
 seo_title: 'A Dark Mode Switcher for Any Website'
 slug: >-
   dark-mode-switcher-for-all-websites-the-ultimate-guide-to-enhanced-browsing-experience-mo4p804c88h

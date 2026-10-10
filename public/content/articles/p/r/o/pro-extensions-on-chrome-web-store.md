@@ -7,6 +7,9 @@ excerpt: >-
   professional Chrome extensions — from productivity powerhouses to developer
   workbench tools — with comparison tables, fake-review detection tips, and
   a clear evaluation framework.
+description: >-
+  How to spot quality extensions on the Chrome Web Store: reading ratings, checking permissions, and avoiding
+  scams.
 featured_image: /content/images/pro-extensions-on-chrome-web-store/featured.webp
 category: "Chrome Extensions"
 tags:

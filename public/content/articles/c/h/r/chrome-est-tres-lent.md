@@ -4,6 +4,8 @@ id: 8ff0d74e-f783-4951-a579-bf707245aa98
 title: 'Why Chrome est Très Lent: Solutions to Speed Up Your Browser'
 slug: chrome-est-tres-lent
 excerpt: 'Chrome compared with Edge, Opera GX, and Brave to find out why Chrome is so slow: the real reasons and the fixes that actually work.'
+description: >-
+  Chrome versus three rivals on RAM, startup, and page loads: where the slowdown comes from and the fixes that actually work.
 featured_image: /content/images/chrome-est-tres-lent/featured.webp
 category: Productivity & Tools
 tags: []

@@ -3,6 +3,9 @@ seo_title: "Parental Controls for Google Chrome"
 title: 'Parental Controls for Google Chrome: 4 Solutions Compared'
 slug: parental-controls-google-chrome-guide
 excerpt: 'Google Family Link, Chrome supervised accounts, and 2 third-party parental control extensions compared — blocking coverage, setup time, and how easily each one can be bypassed.'
+description: >-
+  Four parental-control approaches for Chrome tested on real family devices — which one keeps kids safe without
+  breaking schoolwork.
 featured_image: /content/images/parental-controls-google-chrome-guide/featured.webp
 category: Productivity & Tools
 tags:

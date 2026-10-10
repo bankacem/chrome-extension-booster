@@ -2,6 +2,8 @@
 seo_title: "Chrometana: Redirecting Bing to Google"
 id: fe362fac-6c56-471f-a3d0-0affee26d527
 title: 'Chrometana Review: Redirect Bing Searches to Google & Alternatives (2026)'
+description: >-
+  Cortana keeps forcing Bing on you? Chrometana redirects taskbar searches to Google. Tested against three alternatives for speed, accuracy, and privacy.
 slug: chrometana-extension-review
 excerpt: 'Chrometana and 3 alternatives for redirecting Bing/Cortana searches to Google compared: speed, privacy, and features, plus 8 companion extensions.'
 featured_image: /content/images/chrometana-extension-review/featured.webp

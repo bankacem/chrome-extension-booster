@@ -9,6 +9,9 @@ excerpt: >-
   Welcome to the most comprehensive screenshot tool chrome guide available,
   designed to help you navigate the world of screenshot capture with ease and
   precision.
+description: >-
+  The complete guide to screenshot tools for Chrome: full-page capture, scrolling screenshots, and quick sharing
+  done right.
 featured_image: /content/images/screenshot-tool-chrome-guide-1/featured.webp
 category: Screenshots & Screen Capture
 tags: []

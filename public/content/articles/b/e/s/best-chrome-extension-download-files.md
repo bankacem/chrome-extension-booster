@@ -6,6 +6,8 @@ slug: best-chrome-extension-download-files
 excerpt: >-
   Eight file downloader Chrome extensions compared: which are fast, which are
   safe, and what to check before installing.
+description: >-
+  Eight download helpers tested on a 100Mbps line: real speeds, safety red flags, and the pre-install checks that matter most.
 featured_image: /content/images/best-chrome-extension-download-files/featured.webp
 category: Productivity & Tools
 tags: []

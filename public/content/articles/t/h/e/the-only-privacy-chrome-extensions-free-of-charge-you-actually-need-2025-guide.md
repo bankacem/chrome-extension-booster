@@ -9,6 +9,9 @@ excerpt: >-
   Six free, open-source Chrome extensions that actually protect your privacy in 2025—vetted
   for Manifest V3 compatibility, zero-data-harvesting policies, and real-world effectiveness
   against trackers, fingerprinting, and cookie surveillance.
+description: >-
+  Six free, open-source privacy extensions that actually protect you — uBlock Origin Lite, Privacy Badger, and
+  four more compared.
 featured_image: >-
   /content/images/the-only-privacy-chrome-extensions-free-of-charge-you-actually-need-2025-guide/featured.webp
 category: Security & Privacy

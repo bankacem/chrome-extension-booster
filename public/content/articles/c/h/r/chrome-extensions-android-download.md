@@ -7,6 +7,8 @@ excerpt: >-
   Step-by-step guide to downloading and installing Chrome extensions on Android.
   Kiwi Browser setup, Chrome Web Store access, and comparison with third-party
   extension stores.
+description: >-
+  Chrome on Android blocks extensions — deliberately. The Kiwi Browser workaround, store access, and which sources to trust.
 featured_image: /content/images/chrome-extensions-android-download/featured.webp
 category: Productivity & Tools
 tags: []

@@ -7,6 +7,9 @@ excerpt: >-
   As we delve into 2026, the importance of a seamless and secure browsing
   experience cannot be overstated. With the rise of online threats and intrusive
   advertise
+description: >-
+  uBlock Origin's default install is good — a tuned setup is better. The 2026 settings guide for maximum
+  blocking.
 featured_image: /content/images/ublock-origin-best-settings-2026/featured.webp
 category: "Productivity & Tools"
 tags:

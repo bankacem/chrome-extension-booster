@@ -4,6 +4,8 @@ id: 07814b80-e3f9-4420-8b29-f06a13662fda
 title: 'Alishark Chrome Extension Review 2026: Is It Worth It for Dropshipping?'
 slug: alishark-chrome-extension
 excerpt: 'Alishark reviewed for finding winning dropshipping products: how it compares to competitors, which companion extensions fill its gaps, and whether the $1 trial is worth your time.'
+description: >-
+  Can a browser extension really surface winning dropshipping products? Alishark tested against the competition, with an honest verdict.
 featured_image: /content/images/alishark-chrome-extension/featured.webp
 category: Productivity & Tools
 tags:

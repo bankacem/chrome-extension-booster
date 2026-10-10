@@ -5,6 +5,9 @@ title: "Picture-in-Picture Chrome: How to Use It and Fix Common Problems"
 slug: picture-in-picture-chrome-guide
 status: published
 excerpt: "Use Picture-in-Picture in Chrome without guessing: learn the built-in video workflow, the official Google extension, current limits, and a practical troubleshooting path."
+description: >-
+  Watch videos in a floating window while you work — PiP setup in Chrome, when to use Google's extension, and
+  fixes for common glitches.
 meta_description: "Learn how to use Picture-in-Picture in Chrome, when to use Google's extension, and how to fix missing controls, blank windows, and compatibility issues."
 featured_image: "/content/images/picture-in-picture-chrome-guide/featured.webp"
 category: Media & Downloads

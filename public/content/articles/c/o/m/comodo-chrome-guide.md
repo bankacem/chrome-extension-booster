@@ -1,6 +1,8 @@
 ---
 seo_title: "Comodo Chrome Review"
 title: 'Comodo Chrome Review: vs Chrome, Brave, and Firefox (2026)'
+description: >-
+  Three weeks with Comodo's Chromium browser against Chrome, Brave, and Firefox: page speed, memory, and whether the security trade-offs pay off.
 slug: comodo-chrome-guide
 excerpt: 'Comodo Chrome compared with Google Chrome, Brave, and Firefox for security, speed, and memory usage: the full review, and where each browser wins.'
 featured_image: /content/images/comodo-chrome-guide/featured.webp

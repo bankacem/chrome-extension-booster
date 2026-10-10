@@ -1,6 +1,8 @@
 ---
 seo_title: "ClickClean for Google Chrome"
 title: 'ClickClean for Google Chrome: Full 2026 Review'
+description: >-
+  Two weeks testing ClickClean across three machines: does it make Chrome faster, or is it just a privacy tool wearing a performance costume?
 slug: clickclean-google-chrome-review
 excerpt: 'ClickClean for Google Chrome alongside CCleaner, BleachBit, and manual cleanup: where it helps, where it does not, and what you actually need for a fast browser.'
 featured_image: /content/images/clickclean-google-chrome-review/featured.webp

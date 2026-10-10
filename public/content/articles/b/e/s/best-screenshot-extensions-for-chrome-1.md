@@ -7,6 +7,8 @@ excerpt: >-
   When it comes to capturing web pages, having the right tools can make all the
   difference. The best screenshot extensions for Chrome can help you capture,
   edit,
+description: >-
+  From capture types to annotation workflows: what screenshot extensions really offer, and how to pick the right one before installing.
 featured_image: /content/images/best-screenshot-extensions-for-chrome-1/featured.webp
 category: Screenshots & Screen Capture
 tags:

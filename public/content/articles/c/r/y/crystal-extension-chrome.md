@@ -1,6 +1,8 @@
 ---
 seo_title: "Crystal Extension for Chrome Review"
 title: 'Crystal Extension for Chrome Review: 4 Tab Managers'
+description: >-
+  25 tabs minimum, four tab managers, two weeks: memory savings, session management, and real daily-workflow impact compared.
 slug: crystal-extension-chrome
 excerpt: 'Crystal, Workona, Toby, and OneTab compared for Chrome: memory savings, organization features, and which one actually keeps your tabs under control.'
 featured_image: /content/images/crystal-extension-chrome/featured.webp

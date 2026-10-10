@@ -8,6 +8,9 @@ excerpt: >-
   As a browser user, you're likely no stranger to the vast array of extensions
   available to enhance your online experience. From productivity tools to
   security so
+description: >-
+  Audit your extensions for performance drag: the Extension Performance Auditor approach to a faster, safer
+  browser.
 featured_image: >-
   /content/images/unlock-the-full-potential-of-your-browser-the-ultimate-guide-to-extension-performance-auditor-mo4p6mu2g9p/featured.webp
 category: Screenshots & Screen Capture

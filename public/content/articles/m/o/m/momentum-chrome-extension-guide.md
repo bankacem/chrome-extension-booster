@@ -4,6 +4,9 @@ title: "Momentum Chrome Extension: Setup, Focus Tools, and Privacy Checks"
 slug: momentum-chrome-extension-guide
 status: published
 excerpt: "A practical guide to evaluating and configuring the Momentum Chrome extension as your New Tab dashboard—covering setup, Focus tools, to‑dos, optional Plus features, and the privacy choices you should review before and after installation."
+description: >-
+  Momentum turns your New Tab into a calm focus dashboard — setup steps, Focus tools, to-dos, and whether the
+  Plus upgrade is worth paying for.
 meta_description: "Evaluate the Momentum Chrome extension as your New Tab dashboard: setup steps, Focus tools, to-dos, Plus upgrades, and the privacy checks worth running."
 featured_image: "/content/images/momentum-chrome-extension-guide/featured.webp"
 category: "Chrome Extensions"

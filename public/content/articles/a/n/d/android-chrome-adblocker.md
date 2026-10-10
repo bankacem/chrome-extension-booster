@@ -4,6 +4,8 @@ id: 04fafa50-d253-4b51-bc37-b2caeeb89894
 title: 'Best Android Chrome Adblocker 2026: 5 Options Compared'
 slug: android-chrome-adblocker
 excerpt: '5 adblockers on Android Chrome compared — uBlock Origin, AdBlock Plus, Light Popup Blocker, AdGuard, and Ghostery: which blocks the most without breaking sites.'
+description: >-
+  Five mobile ad-blocking options tested on real phones: blocking power measured against site breakage, plus the companions that round them out.
 featured_image: /content/images/android-chrome-adblocker/featured.webp
 category: Productivity & Tools
 tags:

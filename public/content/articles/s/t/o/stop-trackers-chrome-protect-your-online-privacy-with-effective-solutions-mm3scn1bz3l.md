@@ -7,6 +7,8 @@ excerpt: >-
   In today's digital age, online privacy has become a major concern for internet
   users. With the rise of tracking technologies, it's easier than ever for
   companie
+description: >-
+  Trackers follow you across the web. Effective ways to stop them in Chrome and take back your online privacy.
 featured_image: >-
   /content/images/stop-trackers-chrome-protect-your-online-privacy-with-effective-solutions-mm3scn1bz3l/featured.webp
 category: Redirect & Navigation

@@ -1,6 +1,8 @@
 ---
 seo_title: "Chromecast on Mac"
 title: 'Chromecast on Mac: Setup, Troubleshooting & Best Streaming Extensions (2026)'
+description: >-
+  Casting from a MacBook to three different TVs: setup steps, measured latency and quality, plus the Mac-only quirks you won't hit on Windows.
 slug: chromecast-mac-guide
 excerpt: 'Chromecast streaming from a MacBook: complete setup guide, Mac-specific audio fixes, and a comparison with AirParrot, Deskreen, and TV Cast.'
 featured_image: /content/images/chromecast-mac-guide/featured.webp

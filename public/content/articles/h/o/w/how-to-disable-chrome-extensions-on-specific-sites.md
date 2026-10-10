@@ -2,6 +2,8 @@
 seo_title: "Disable Chrome Extensions on Specific Sites"
 id: d2174f2a-2af0-423c-b308-12e470495873
 title: "How to Disable Chrome Extensions on Specific Sites"
+description: >-
+  Keep the extension, tame where it runs: how to disable Chrome extensions on specific sites while leaving them active everywhere else.
 slug: how-to-disable-chrome-extensions-on-specific-sites
 status: published
 excerpt: "Learn how to disable Chrome extensions on specific sites using built-in site access settings, so you keep full control without uninstalling anything."

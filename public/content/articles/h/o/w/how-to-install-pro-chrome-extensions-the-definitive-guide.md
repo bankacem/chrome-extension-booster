@@ -2,6 +2,8 @@
 seo_title: "How to Install Pro Chrome Extensions"
 id: 4adeba2e-8d2d-40f0-9440-6457673b1a58
 title: 'How to Install Pro Chrome Extensions: The Definitive Guide'
+description: >-
+  Paid extensions mean licenses, sideloading, or enterprise policy. How pro installs differ by platform — and what to verify first.
 slug: how-to-install-pro-chrome-extensions-the-definitive-guide
 excerpt: >-
   A complete walkthrough for installing paid Chrome extensions on any device.

@@ -4,6 +4,8 @@ title: "Chrome Extension Data Privacy Check: Read Store Disclosures Before Insta
 slug: chrome-extension-data-privacy-check-guide
 status: draft
 excerpt: "Before you add a Chrome extension, compare what it can access (permissions) with what the developer says they collect and share (store privacy practices). This guide shows a practical, cautious way to review both—fast."
+description: >-
+  Permission prompts say what an extension can access — not what it collects. How to read store privacy disclosures before installing.
 meta_description: "A practical guide to check Chrome extension privacy before installing: read the store’s Privacy practices, review permissions, compare both, and understand limits."
 featured_image: "/content/images/chrome-extension-data-privacy-check-guide/featured.webp"
 category: "Chrome Extensions"

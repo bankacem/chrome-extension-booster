@@ -1,6 +1,8 @@
 ---
 id: fe6dab6d-a4c9-4e9a-82ab-97caef3ca633
 title: Chrome Extensions for Time Zone Conversion
+description: >-
+  Stop guessing meeting times across time zones: how Chrome scheduling extensions handle DST shifts, calendar sync, and multi-city conversions.
 slug: chrome-extensions-for-time-zone-conversion
 canonicalPath: /blog/chrome-extensions-for-time-zone-conversion
 status: published

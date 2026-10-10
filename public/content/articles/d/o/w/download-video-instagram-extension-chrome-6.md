@@ -4,6 +4,8 @@ id: 8e7dc6e8-56be-4539-b2fc-8512bf8d9d49
 title: >-
   Download Video Instagram Extension Chrome: A Comprehensive Guide to Saving
   Your Favorite Videos
+description: >-
+  Instagram won't let you download videos natively. Which Chrome extensions do it reliably — and which ones you should avoid.
 slug: download-video-instagram-extension-chrome-6
 excerpt: >-
   Are you tired of wanting to save your favorite Instagram videos, only to find

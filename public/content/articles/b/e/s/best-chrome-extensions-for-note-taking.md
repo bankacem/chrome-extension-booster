@@ -8,6 +8,8 @@ status: published
 excerpt: >-
   A task-based guide to Chrome note-taking extensions — which type you actually
   need, real data-portability answers, and the permissions other guides skip.
+description: >-
+  ‘Note-taking extension’ means three very different things. Match the tool to your actual workflow — plus who lets you export your notes.
 meta_description: >-
   A task-based guide to Chrome note-taking extensions — which type you actually
   need, real data-portability answers, and the permissions other guides skip.

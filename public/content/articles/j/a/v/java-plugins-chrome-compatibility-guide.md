@@ -1,6 +1,8 @@
 ---
 id: 8258d0e7-5600-4bcd-a275-f8c29d8dbd83
 title: "Java Plugins in Chrome: What Still Works, What Does Not, and Safer Alternatives"
+description: >-
+  Chrome dropped NPAPI in 2015, killing Java applets. What still works, what doesn't, and the safer alternatives.
 slug: java-plugins-chrome-compatibility-guide
 status: published
 excerpt: "Are Java applets still supported in Chrome? Get a clear answer, understand the current compatibility landscape, and explore safer, supported alternatives in this detailed guide."

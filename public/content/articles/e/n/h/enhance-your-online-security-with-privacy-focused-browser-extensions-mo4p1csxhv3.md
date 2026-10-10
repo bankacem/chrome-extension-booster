@@ -2,6 +2,8 @@
 seo_title: "Privacy-Focused Browser Extensions"
 id: 3041b01c-ccc5-4206-b32e-c8c2e13b9bf4
 title: Enhance Your Online Security with Privacy Focused Browser Extensions
+description: >-
+  Trackers, collectors, and malicious actors: which privacy-focused extensions actually defend your browsing, and how to choose between them.
 slug: >-
   enhance-your-online-security-with-privacy-focused-browser-extensions-mo4p1csxhv3
 excerpt: >-

@@ -6,6 +6,9 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 excerpt: >-
   Stay safe online. Discover the best browser extensions for blocking trackers,
   managing passwords, and preventing URL hijacking.
+description: >-
+  A 2026 browser-hardening checklist: blocking trackers, managing passwords securely, and stopping URL hijacking
+  in Chrome.
 featured_image: /content/images/privacy-security-guide/featured.webp
 category: Security & Privacy
 author: James Mitchell

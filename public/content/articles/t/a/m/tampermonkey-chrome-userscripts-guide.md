@@ -5,6 +5,9 @@ title: "Tampermonkey Chrome: Install and Run Userscripts Safely"
 slug: tampermonkey-chrome-userscripts-guide
 status: published
 excerpt: "Learn how to install Tampermonkey in Chrome, review userscripts, grant the right permission, and create a small script without exposing every website to unknown code."
+description: >-
+  Run userscripts in Chrome with Tampermonkey — safe installation, permission hygiene, and your first script
+  walkthrough.
 meta_description: "Install Tampermonkey in Chrome, review userscripts, grant the right permission, and run a small script safely with a practical checklist."
 featured_image: "/content/images/tampermonkey-chrome-userscripts-guide/featured.webp"
 category: Chrome Extensions

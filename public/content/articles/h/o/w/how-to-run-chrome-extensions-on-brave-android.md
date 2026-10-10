@@ -2,6 +2,8 @@
 seo_title: "How to Run Chrome Extensions on Brave Android"
 id: 68ccc15f-1f6e-40b3-a04b-f0205f5d5225
 title: 'How to Run Chrome Extensions on Brave Android: A Step-by-Step Guide'
+description: >-
+  Brave on Android can run Chrome extensions with the right setup. A step-by-step path to the ad blockers and tools the mobile browser lacks.
 slug: how-to-run-chrome-extensions-on-brave-android
 canonicalPath: /blog/how-to-run-chrome-extensions-on-brave-android
 excerpt: >-

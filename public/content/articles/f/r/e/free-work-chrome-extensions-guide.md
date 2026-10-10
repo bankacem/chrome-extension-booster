@@ -1,6 +1,8 @@
 ---
 id: 5e2b39c9-1f40-4f44-b4a8-b367a5d5c8b9
 title: "Free Work Chrome Extensions Guide"
+description: >-
+  Years of testing distilled: the best free work extensions for remote teams, writing, and browser security — a toolkit that costs nothing.
 slug: free-work-chrome-extensions-guide
 excerpt: >-
   The best free Chrome extensions for work boost communication, project management,

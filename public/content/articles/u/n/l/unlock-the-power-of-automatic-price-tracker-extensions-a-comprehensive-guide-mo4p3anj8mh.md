@@ -8,6 +8,8 @@ excerpt: >-
   With the rise of online shopping, it's becoming increasingly important to stay
   on top of prices and find the best deals. One way to do this is by using
   Automati
+description: >-
+  Never overpay again — automatic price tracker extensions that watch prices and alert you to real deals.
 featured_image: >-
   /content/images/unlock-the-power-of-automatic-price-tracker-extensions-a-comprehensive-guide-mo4p3anj8mh/featured.webp
 category: Screenshots & Screen Capture

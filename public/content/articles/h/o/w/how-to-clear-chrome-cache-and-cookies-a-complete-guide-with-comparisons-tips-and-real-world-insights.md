@@ -4,6 +4,8 @@ id: dcc317e6-42d0-4247-a7b9-250ae4c64ddb
 title: >-
   How to Clear Chrome Cache and Cookies: A Complete Guide with Comparisons,
   Tips, and Real-World Insights
+description: >-
+  Slow sites, login loops, stale pages: when clearing cache and cookies helps, how to do it on desktop and mobile, and the risks of neglect.
 slug: >-
   how-to-clear-chrome-cache-and-cookies-a-complete-guide-with-comparisons-tips-and-real-world-insights
 status: published

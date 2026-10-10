@@ -4,6 +4,8 @@ title: "Declarative Net Request in Chrome Extensions: What Users Should Know"
 slug: chrome-extension-declarative-net-request-guide
 status: draft
 excerpt: "A practical, source-backed explainer of Chrome’s Declarative Net Request (DNR) in Manifest V3: what it can do, what it can’t, and how that affects extensions you install."
+description: >-
+  ‘MV3 breaks blockers’ is only half true. How declarativeNetRequest actually works — capabilities, limits, and what to look for.
 meta_description: "Understand Chrome’s Declarative Net Request in Manifest V3: how rules work, capabilities vs limits, permissions to look for, conflicts, and troubleshooting tips."
 featured_image: "/content/images/chrome-extension-declarative-net-request-guide/featured.webp"
 category: "Chrome Extensions"

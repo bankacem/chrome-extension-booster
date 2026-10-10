@@ -7,6 +7,9 @@ excerpt: >-
   Are you tired of manually downloading media files from websites, only to have
   them clutter your computer's storage? Look no further than a media saver
   extension
+description: >-
+  Save images, videos, and files from any page in one click — Media Saver's Chrome extension put through a real
+  downloading test.
 featured_image: /content/images/media-saver-extension-chrome/featured.webp
 category: "Media & Downloads"
 tags:

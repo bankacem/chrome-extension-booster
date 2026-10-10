@@ -4,6 +4,8 @@ id: 14b4c7ee-a3f8-495e-856d-812b26b5d817
 title: 'Best Chrome Extensions for Google Meet in 2026: Enhance Your Video Calls'
 slug: best-chrome-extensions-google-meet
 excerpt: '15 Chrome extensions for Google Meet compared: which improve audio, video, and meeting productivity without slowing Chrome down.'
+description: >-
+  Fifteen Meet add-ons across 30 real work calls: recording, transcription, and grid fixes ranked — several weren’t worth installing.
 featured_image: /content/images/best-chrome-extensions-google-meet/featured.webp
 category: Productivity & Tools
 tags: []

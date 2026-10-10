@@ -4,6 +4,9 @@ title: "User-Agent Switcher for Chrome: Test Sites Without Misreading the Result
 slug: user-agent-switcher-chrome-guide
 status: draft
 excerpt: "A practical guide to using user-agent switching in Chrome for compatibility testing—what it changes, what it doesn’t, and how to avoid false positives."
+description: >-
+  Test how sites see different devices with a user-agent switcher — without fooling yourself about what you're
+  measuring.
 meta_description: "Learn how to use a User-Agent Switcher in Chrome for accurate compatibility testing. Understand request headers vs capabilities, cookies and caching effects, and how to verify results in DevTools."
 featured_image: "/content/images/user-agent-switcher-chrome-guide/featured.webp"
 category: "Chrome Extensions"

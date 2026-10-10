@@ -4,6 +4,8 @@ title: "Chrome Extension Conflicts: Find Which Add-On Is Causing the Problem"
 slug: chrome-extension-conflict-troubleshooting-guide
 status: draft
 excerpt: "A careful, reversible workflow to isolate which Chrome extension is breaking a page or feature—without nuking all your add-ons at once."
+description: >-
+  Buttons vanishing? Pages not submitting? The half-split method to find the conflicting extension without disabling everything.
 meta_description: "Isolate a Chrome extension conflict with a reversible, half-split or recent-change workflow. Practical steps, limits, and fixes—without disabling everything at once."
 featured_image: "/content/images/chrome-extension-conflict-troubleshooting-guide/featured.webp"
 category: "Chrome Extensions"

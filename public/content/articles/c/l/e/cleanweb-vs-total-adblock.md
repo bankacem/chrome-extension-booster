@@ -1,6 +1,8 @@
 ---
 seo_title: "Cleanweb vs Total Adblock"
 title: 'Cleanweb vs Total Adblock: Which Is Better for 2026?'
+description: >-
+  Two ad-blocking philosophies, four setups, 20 websites: page-load times, memory use, blocked ads, and site breakage measured over two weeks.
 slug: cleanweb-vs-total-adblock
 excerpt: '4 ad blocking approaches compared for speed, privacy, and browsing experience: why a balanced cleanweb approach beats blocking everything.'
 featured_image: /content/images/cleanweb-vs-total-adblock/featured.webp

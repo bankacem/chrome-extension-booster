@@ -7,6 +7,8 @@ status: published
 excerpt: >-
   A researched, up-to-date comparison of the best Chrome extensions for language
   learning in 2026, from AI subtitle tools to reading and flashcard apps.
+description: >-
+  Turn your daily browsing into language practice: subtitle helpers, reading aids, and flashcard tools compared for real learners.
 meta_description: >-
   A researched comparison of the best Chrome extensions for language learning in
   2026 — subtitle tools, reading extensions, flashcards, pricing, and picks.

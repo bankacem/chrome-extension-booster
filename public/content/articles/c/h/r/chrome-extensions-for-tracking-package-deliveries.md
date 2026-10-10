@@ -1,6 +1,8 @@
 ---
 id: d0fad31c-d456-477d-aa7d-46d3a4ac8aa2
 title: 'Chrome Extensions for Tracking Package Deliveries: A Complete Guide'
+description: >-
+  One carrier or five? A practical guide to picking a package-tracking extension, guarding your delivery data, and fixing tracking numbers that won't auto-detect.
 seo_title: Chrome Extensions for Package Tracking
 slug: chrome-extensions-for-tracking-package-deliveries
 canonicalPath: /blog/chrome-extensions-for-tracking-package-deliveries

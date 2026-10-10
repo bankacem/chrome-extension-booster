@@ -6,6 +6,9 @@ slug: session-manager-chrome
 excerpt: >-
   SessionBox, OneTab, Tab Manager Plus, and Better OneTab compared for session
   management in Chrome: features, tab restoration, and workspace organization.
+description: >-
+  SessionBox vs OneTab vs Tab Manager Plus: which session manager fits a 80-tab workflow without slowing Chrome
+  down.
 featured_image: /content/images/session-manager-chrome/featured.webp
 category: Productivity & Tools
 tags:

@@ -7,6 +7,9 @@ excerpt: >-
   As a freelancer, you're likely no stranger to the importance of staying
   organized, managing your time effectively, and maintaining a high level of
   productivity.
+description: >-
+  The freelancer's Chrome toolkit: stay organized, manage time, and keep clients happy with the right
+  extensions.
 featured_image: >-
   /content/images/unlocking-productivity-the-best-chrome-extensions-for-freelancers-mmdrqptor7r/featured.webp
 category: "Productivity & Tools"

@@ -4,6 +4,8 @@ title: "Chrome Extension Host Permissions: What Website Access Really Means"
 slug: chrome-extension-host-permissions-guide
 status: draft
 excerpt: "Understand how Chrome extension host permissions really work: match patterns, the meaning of “read and change data,” content scripts vs. API permissions, and when to use activeTab or optional host access."
+description: >-
+  ‘Read and change your data on…’ — decoded. What host permissions really grant, and how to choose the safest access strategy.
 meta_description: "Learn how Chrome extension host permissions, match patterns, and activeTab determine website access. Includes strategy choices, troubleshooting, and privacy notes."
 featured_image: "/content/images/chrome-extension-host-permissions-guide/featured.webp"
 category: "Chrome Extensions"

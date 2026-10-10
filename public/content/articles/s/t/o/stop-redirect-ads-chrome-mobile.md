@@ -7,6 +7,8 @@ excerpt: >-
   Are you tired of being redirected to unwanted websites and ads while browsing
   on your Chrome mobile browser? These redirect ads can be frustrating and
   disrupt y
+description: >-
+  Stop redirect ads hijacking your mobile browsing — popup blockers and settings that end the redirect loops.
 featured_image: /content/images/stop-redirect-ads-chrome-mobile/featured.webp
 category: "Productivity & Tools"
 tags:

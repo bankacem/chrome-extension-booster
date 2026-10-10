@@ -1,6 +1,8 @@
 ---
 seo_title: "Chrome Built-in PDF Viewer"
 title: 'Chrome Built-in PDF Viewer: Complete Guide to Viewing, Editing & Printing PDFs'
+description: >-
+  Chrome's built-in PDF viewer against Acrobat and Foxit: a week of testing to learn exactly when the native viewer is enough and when you need a dedicated tool.
 slug: chrome-pdf-viewer-guide
 excerpt: 'Every Chrome user has Chrome''s built-in PDF viewer installed. Here is how its features compare with Adobe Acrobat and Foxit, and how far the free option goes.'
 featured_image: /content/images/chrome-pdf-viewer-guide/featured.webp

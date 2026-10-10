@@ -3,6 +3,9 @@ id: 64902474-f79f-415d-868f-471dc5cfbd5c
 title: Pro Developer Chrome Extensions
 slug: pro-developer-chrome-extensions
 excerpt: A curated guide to the most impactful Chrome extensions for professional developers—covering framework debugging, CSS inspection, API testing, accessibility auditing, and Manifest V3 readiness.
+description: >-
+  The Chrome extensions professional developers actually install — framework debugging, CSS inspection, API
+  testing, and more.
 featured_image: /content/images/pro-developer-chrome-extensions/featured.webp
 category: "Developer Tools"
 tags:

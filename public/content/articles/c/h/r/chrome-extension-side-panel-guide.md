@@ -4,6 +4,8 @@ title: "Chrome Extension Side Panel: How It Works and Which Limits Matter"
 slug: chrome-extension-side-panel-guide
 status: draft
 excerpt: "Understand how Chrome’s extension side panel behaves, what “tab-specific” vs “global” really means, when you can open it, and the practical limits that affect everyday use."
+description: >-
+  That panel sliding in from Chrome’s right edge: how the Side Panel API works, its limits, and tab-specific vs global panels.
 meta_description: "Learn how Chrome’s extension side panel works (Chrome 114+, MV3), the difference between tab-specific and global panels, user-gesture limits, and practical usage tips."
 featured_image: "/content/images/chrome-extension-side-panel-guide/featured.webp"
 category: "Chrome Extensions"

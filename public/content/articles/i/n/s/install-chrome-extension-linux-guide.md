@@ -1,6 +1,8 @@
 ---
 id: "78688c20-9c00-43b9-9a12-4467dc5102e0"
 title: "Install Chrome Extensions on Linux: Store, Local Testing, and Policy Limits"
+description: >-
+  Web Store, local testing, or enterprise policy: the three legitimate ways to install Chrome extensions on Linux, guided by Google's own documentation.
 slug: install-chrome-extension-linux-guide
 status: draft
 excerpt: "A Linux-focused guide to installing Chrome extensions the supported way from the Chrome Web Store, loading unpacked extensions for local testing, and understanding enterprise policy limits."

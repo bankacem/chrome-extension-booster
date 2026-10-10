@@ -1,6 +1,8 @@
 ---
 seo_title: "Chrome Screenshot Extensions: A Master Guide"
 title: 'Master Guide: Chrome Screenshot Extensions (2026)'
+description: >-
+  Twelve screenshot extensions tested over a month. Where OS tools fall short — scrolling capture, annotation, workflows — and which extension comes out on top.
 slug: chrome-screenshot-guide
 excerpt: '12 Chrome screenshot extensions compared for full-page captures, annotations, and quick sharing: a complete guide with comparison tables and companion tools.'
 featured_image: /content/images/chrome-screenshot-guide/featured.webp

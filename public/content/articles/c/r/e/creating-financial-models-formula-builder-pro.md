@@ -1,6 +1,8 @@
 ---
 seo_title: "Best Financial Modeling Tool: Formula Builder"
 title: 'Formula Builder Pro vs Excel, Sheets, and Desktop Tools'
+description: >-
+  The same DCF model built four ways: Formula Builder Pro versus Excel, Sheets, and desktop tools on speed, accuracy, and iteration.
 slug: creating-financial-models-formula-builder-pro
 excerpt: >-
   Excel, Google Sheets, dedicated desktop software, and Formula Builder Pro

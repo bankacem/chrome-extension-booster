@@ -4,6 +4,9 @@ id: c18dec57-79d4-44fa-968e-01c6b9c4960e
 title: "Step-by-Step Chrome Extensions Tutorial: Building for the Manifest V3 Era"
 slug: step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era
 excerpt: 'A complete tutorial for building Chrome extensions with Manifest V3 in 2025. Covers project setup, manifest.json structure, service workers, content scripts, permissions, and publishing to the Chrome Web Store — including a V2-to-V3 migration checklist.'
+description: >-
+  Build your first Chrome extension the modern way — Manifest V3 tutorial covering setup, service workers, and
+  Web Store publishing.
 featured_image: >-
   /content/images/step-by-step-chrome-extensions-tutorial-building-for-the-2025-manifest-v3-era/featured.webp
 category: "Developer Tools"

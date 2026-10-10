@@ -7,6 +7,8 @@ excerpt: >-
   Are you tired of annoying video ads disrupting your online experience? Do you
   want to enhance your productivity and focus on the content that matters? Look
   no f
+description: >-
+  Autoplay video ads are focus killers. The blockers that silence them effectively — and keep your workflow uninterrupted.
 featured_image: "/content/images/block-video-ads-chrome-extension/featured.webp"
 category: "Productivity & Tools"
 tags:

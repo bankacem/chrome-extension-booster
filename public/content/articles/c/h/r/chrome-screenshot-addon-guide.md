@@ -4,6 +4,8 @@ id: c263fced-6ece-48ac-88e0-afc0a0940b59
 title: >-
   Chrome Screenshot Addon Guide: How to Capture, Annotate, and Share Like a Pro
   (2026)
+description: >-
+  A decade of screenshot experience distilled: which addon to install, how to configure it for speed, and the best setup for each use case.
 slug: chrome-screenshot-addon-guide
 excerpt: 'A complete guide to Chrome screenshot addons — how to install, capture full-page screenshots, annotate, edit, and share. Techniques for beginners and power users.'
 featured_image: /content/images/chrome-screenshot-addon-guide/featured.webp

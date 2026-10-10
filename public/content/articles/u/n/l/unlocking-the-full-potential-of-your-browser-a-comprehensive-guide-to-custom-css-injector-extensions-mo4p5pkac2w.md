@@ -10,6 +10,9 @@ excerpt: >-
   Custom CSS Injector Extensions have become an essential tool for many internet
   users, allowing them to personalize and enhance their browsing experience.
   These 
+description: >-
+  Restyle any website with custom CSS injector extensions — personalize layouts, kill clutter, and fix broken
+  designs.
 featured_image: >-
   /content/images/unlocking-the-full-potential-of-your-browser-a-comprehensive-guide-to-custom-css-injector-extensions-mo4p5pkac2w/featured.webp
 category: Screenshots & Screen Capture

@@ -4,6 +4,8 @@ id: 5570c49e-16f9-43a3-adf0-eacc8d778ad5
 title: 'Chrome Extension Development Guide: How to Build Your First Extension in 2026'
 slug: chrome-extension-development-guide
 excerpt: I built three Chrome extensions from scratch. Here is what the Chrome extension doc teaches you and what it leaves out.
+description: >-
+  Three extensions built in seven days using only official docs: what the documentation nails, and the gaps you must fill yourself.
 featured_image: /content/images/chrome-extension-development-guide/featured.webp
 category: Productivity & Tools
 tags: []

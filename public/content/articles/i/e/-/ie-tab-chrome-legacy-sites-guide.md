@@ -1,6 +1,8 @@
 ---
 id: 63150bb5-4d8d-430a-8bf8-c3474e3f36f1
 title: "IE Tab for Chrome: Run Legacy Sites, Configure URL Rules, and Manage the Risks"
+description: >-
+  Legacy sites that demand Internet Explorer, without leaving Chrome: how IE Tab works, URL rules, and the security risks to manage.
 slug: ie-tab-chrome-legacy-sites-guide
 status: published
 excerpt: "A practical guide to using IE Tab in Chrome to access legacy applications. Understand configuration options, manage security challenges, and explore enterprise alternatives."

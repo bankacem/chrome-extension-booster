@@ -7,6 +7,9 @@ excerpt: >-
   Are you tired of being bombarded with annoying ads every time you browse the
   internet on your mobile device using Chrome? Look no further! In this article,
   we w
+description: >-
+  Block intrusive ads on Chrome for Android: the methods that actually work on mobile without rooting your
+  phone.
 featured_image: /content/images/stop-annoying-ads-chrome-mobile/featured.webp
 category: "Productivity & Tools"
 tags:

@@ -1,6 +1,8 @@
 ---
 id: 77f85717-3324-4a51-ba1f-8a465bb80781
 title: "Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely"
+description: >-
+  Chrome blocks every extension in Incognito by default. What the 'Allow in incognito' toggle really does, which permissions deserve a second look, and how to fix common failures.
 slug: chrome-extensions-incognito-guide
 status: published
 excerpt: "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode while understanding privacy considerations and restrictions."

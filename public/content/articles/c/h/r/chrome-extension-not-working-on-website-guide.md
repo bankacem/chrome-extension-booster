@@ -4,6 +4,8 @@ title: "Chrome Extension Not Working on One Website: A Diagnostic Guide"
 slug: chrome-extension-not-working-on-website-guide
 status: draft
 excerpt: "If your Chrome extension works everywhere except one site, use this focused guide to verify site access, host permissions, match patterns, frames, and page restrictions—without risky workarounds."
+description: >-
+  Works everywhere except one site? The scope checklist — site access, match patterns, frames — that pinpoints why.
 meta_description: "Extension fails on one site? Diagnose site access, match patterns, frames, and page restrictions with a careful, source-backed checklist for Chrome extensions."
 featured_image: "/content/images/chrome-extension-not-working-on-website-guide/featured.webp"
 category: "Chrome Extensions"

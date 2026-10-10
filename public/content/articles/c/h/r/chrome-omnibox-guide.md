@@ -2,6 +2,8 @@
 seo_title: "Chrome Omnibox Guide: Shortcuts and Extensions"
 id: "f0dba3b5-9d8f-4c3b-94ac-2c0e20260822"
 title: "Chrome Omnibox Guide: Address-Bar Shortcuts and Extension Keywords"
+description: >-
+  The Omnibox is more than an address bar: site-search shortcuts, extension keywords, and routing queries without touching the mouse.
 slug: chrome-omnibox-guide
 status: published
 excerpt: "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point."

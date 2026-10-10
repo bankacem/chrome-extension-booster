@@ -4,6 +4,8 @@ id: ecf46a88-ccbc-4433-a6bc-bcd3af053dd4
 title: >-
   Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader
   Chrome Extensions
+description: >-
+  Downloading images one by one is a time sink. How bulk image downloaders work and which ones suit designers, bloggers, and casual users.
 slug: "effortless-image-downloading-bulk-image-downloader-chrome-extensions"
 excerpt: >-
   Are you tired of manually downloading images one by one from your favorite

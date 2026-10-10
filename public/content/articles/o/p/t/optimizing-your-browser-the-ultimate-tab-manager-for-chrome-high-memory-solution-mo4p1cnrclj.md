@@ -10,6 +10,8 @@ excerpt: >-
   Are you tired of experiencing sluggish browser performance due to high memory
   usage? Do you find yourself constantly closing and reopening tabs to free up
   memor
+description: >-
+  The best tab-manager extensions for Chrome's memory bloat, tested for how much RAM they actually free up.
 featured_image: >-
   /content/images/optimizing-your-browser-the-ultimate-tab-manager-for-chrome-high-memory-solution-mo4p1cnrclj/featured.webp
 category: Screenshots & Screen Capture

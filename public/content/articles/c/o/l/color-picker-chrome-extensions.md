@@ -1,6 +1,8 @@
 ---
 seo_title: "Best Color Picker Extensions for Chrome"
 title: Best Color Picker Extensions for Chrome in 2026
+description: >-
+  Eight color pickers tested against one checklist: sampling accuracy, palette management, iframe behavior, copy speed, and privacy.
 slug: color-picker-chrome-extensions
 excerpt: '8 color picker Chrome extensions compared, including ColorZilla, Eye Dropper, and ColorPick Eyedropper: the most accurate eyedropper, best palette management, and iframe support.'
 featured_image: /content/images/color-picker-chrome-extensions/featured.webp

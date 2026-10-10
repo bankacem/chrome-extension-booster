@@ -8,6 +8,9 @@ excerpt: >-
   against phishing, malware, credential theft, and unauthorized data collection.
   Covers password managers, script blockers, threat intelligence tools, and
   extension permission auditing.
+description: >-
+  Pro-grade browser security beyond ad blocking: phishing, malware, credential theft, and malicious extensions —
+  layered defenses.
 featured_image: /content/images/pro-security-chrome-extensions-guide/featured.webp
 category: "Security & Privacy"
 tags:

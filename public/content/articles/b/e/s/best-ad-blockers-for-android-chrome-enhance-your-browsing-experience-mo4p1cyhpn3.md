@@ -8,6 +8,8 @@ excerpt: >-
   Are you tired of annoying ads disrupting your browsing experience on Android
   Chrome? Look no further. In this article, we will explore the best ad blockers
   for 
+description: >-
+  Mobile ads, ranked and routed: which Android blockers are fastest, which filter lists matter, and how to set them up right.
 featured_image: >-
   /content/images/best-ad-blockers-for-android-chrome-enhance-your-browsing-experience-mo4p1cyhpn3/featured.webp
 category: Screenshots & Screen Capture

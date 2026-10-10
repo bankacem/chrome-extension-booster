@@ -3,6 +3,9 @@ id: cef47d03-6dc5-4b0b-b3d3-5ec9d4e6ce94
 title: Pro Chrome Extension Reviews
 slug: pro-chrome-extension-reviews
 excerpt: 'A comparison of the best paid Chrome extensions across productivity, security, ad blocking, and developer tools — with honest verdicts on whether the Pro tier justifies the cost.'
+description: >-
+  Paid Chrome extensions worth your money: honest verdicts on pro tools for productivity, security, and ad
+  blocking.
 featured_image: /content/images/pro-chrome-extension-reviews/featured.webp
 category: "Productivity & Tools"
 tags:

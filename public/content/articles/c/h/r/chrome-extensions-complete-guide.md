@@ -6,6 +6,8 @@ slug: chrome-extensions-complete-guide
 excerpt: >-
   A complete guide to Chrome extensions across productivity, security, and
   entertainment categories — how to evaluate and pick the right ones.
+description: >-
+  Forty extensions installed and uninstalled over two weeks: which ones genuinely improve browsing, and the memory hogs to skip.
 featured_image: /content/images/chrome-extensions-complete-guide/featured.webp
 category: Productivity & Tools
 tags: []

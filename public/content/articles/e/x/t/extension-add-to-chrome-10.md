@@ -2,6 +2,8 @@
 seo_title: "How to Add Extensions to Chrome: Safe Installation Guide"
 id: 1c4be1a2-9eae-4a56-9d9a-1f1cad34082e
 title: "How to Add Extensions to Chrome: Safe Installation, Permissions, and Troubleshooting"
+description: >-
+  Installing extensions safely: Web Store checks, permission review, post-install management, and what to do when an install fails.
 slug: extension-add-to-chrome-10
 excerpt: "Learn how to add Chrome extensions from the Web Store, review permissions, manage access, install unpacked extensions, and fix common problems safely."
 featured_image: /content/images/extension-add-to-chrome-10/featured.webp

@@ -7,6 +7,9 @@ excerpt: >-
   Watching videos online has become an integral part of our daily lives, and
   having control over the playback speed can significantly enhance our viewing
   experien
+description: >-
+  Control video playback speed on any site — the best Chrome extensions for faster lectures and slower
+  tutorials.
 featured_image: /content/images/video-speed-controller-chrome-extensions/featured.webp
 category: Chrome Extensions
 tags:

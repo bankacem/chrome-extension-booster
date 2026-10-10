@@ -9,6 +9,9 @@ excerpt: >-
   Chrome's tab hoarding problem eats RAM and kills your focus. Here are the
   best free extensions—tab suspenders, managers, session savers, and bookmark
   organizers—that actually solve the tab apocalypse and keep your browser fast.
+description: >-
+  Survive the tab apocalypse with only free extensions — suspend, save, and organize hundreds of tabs while
+  reclaiming your RAM.
 featured_image: >-
   /content/images/the-only-free-essential-chrome-extensions-you-need-to-survive-the-tab-apocalypse/featured.webp
 category: "Performance & Memory"

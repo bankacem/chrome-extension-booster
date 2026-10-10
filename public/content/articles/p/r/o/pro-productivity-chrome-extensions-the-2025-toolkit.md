@@ -6,6 +6,9 @@ slug: pro-productivity-chrome-extensions-the-2025-toolkit
 excerpt: >-
   The best pro productivity Chrome extensions in 2025, covering tab management, task tracking,
   note-taking, time tracking, and email — with a comparison table and practical workflow guide.
+description: >-
+  The pro productivity toolkit for Chrome: tab managers, task capture, time tracking, and email tools with free-
+  vs-paid trade-offs.
 featured_image: >-
   /content/images/pro-productivity-chrome-extensions-the-2025-toolkit/featured.webp
 category: "Productivity & Tools"

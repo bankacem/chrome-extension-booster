@@ -8,6 +8,8 @@ status: published
 excerpt: >-
   A threat-based guide to Chrome privacy extensions in 2026 — trackers,
   fingerprinting, passwords, and what Manifest V3 actually changed.
+description: >-
+  Stop installing random ‘privacy’ tools. A threat-based approach: match the extension to the actual tracking technique used against you.
 meta_description: >-
   A threat-based guide to Chrome privacy extensions in 2026 — trackers,
   fingerprinting, passwords, and what Manifest V3 actually changed.

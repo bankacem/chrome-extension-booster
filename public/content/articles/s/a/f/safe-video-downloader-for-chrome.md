@@ -7,6 +7,8 @@ excerpt: >-
   With the vast amount of video content available online, it's no wonder that
   many of us want to download our favorite videos to watch offline. However,
   downloadi
+description: >-
+  Download online videos without the malware risk — which Chrome video downloaders are safe and which to avoid.
 featured_image: /content/images/safe-video-downloader-for-chrome/featured.webp
 category: "Media & Downloads"
 tags:
