@@ -4,6 +4,8 @@ id: 855fbc33-dc6b-4946-80a0-7504b3bdb84b
 title: >-
   Chrome Screenshot Addon Tutorial: Step-by-Step Guide from Installation to
   Sharing (2026)
+description: >-
+  Never used a screenshot extension? Exact clicks, keyboard shortcuts, and settings from install to share — a beginner-friendly walkthrough with real timings.
 slug: chrome-screenshot-addon-tutorial
 excerpt: >-
   Complete step-by-step tutorial for Chrome screenshot addons. Install,

@@ -1,6 +1,8 @@
 ---
 seo_title: "Chrome Memory Saver Mode"
 title: 'Chrome Memory Saver Mode: How It Works & How to Optimize It (2026)'
+description: >-
+  Chrome's Memory Saver against ProTab Suspender, Auto Tab Discard, and The Great Suspender: a 50-tab test to find which saves the most RAM without breaking sites.
 slug: chrome-memory-saver-how-it-works
 excerpt: Chrome's built-in Memory Saver frees RAM by discarding inactive tabs. Here is how it compares with three dedicated extensions across memory savings and site behavior.
 featured_image: /content/images/chrome-memory-saver-how-it-works/featured.webp

@@ -7,6 +7,9 @@ excerpt: >-
   The best Chrome extensions for shopping save real money by tracking price history,
   auto-applying coupon codes, flagging fake reviews, and earning cashback on
   purchases you're already making — often $300–$700 per year for a typical household.
+description: >-
+  Shopping extensions for coupons, price tracking, and cashback compared — what works, what's region-locked, and
+  the privacy cost.
 featured_image: >-
   /content/images/the-ultimate-chrome-extensions-for-shopping-guide/featured.webp
 category: "Shopping Tools"

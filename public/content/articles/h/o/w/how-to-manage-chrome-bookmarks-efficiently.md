@@ -1,6 +1,8 @@
 ---
 id: 50a3232c-6373-4dd7-8666-99593023e235
 title: 'How to Manage Chrome Bookmarks Efficiently: A Complete System'
+description: >-
+  40 bookmarks or 4,000: a complete system with a folder structure that scales, built on Chrome's own Bookmark Manager.
 seo_title: How to Manage Chrome Bookmarks Efficiently
 slug: how-to-manage-chrome-bookmarks-efficiently
 canonicalPath: /blog/how-to-manage-chrome-bookmarks-efficiently

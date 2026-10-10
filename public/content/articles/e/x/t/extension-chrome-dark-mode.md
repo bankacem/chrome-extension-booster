@@ -1,6 +1,8 @@
 ---
 id: b26e52ce-b3c6-4fb1-a099-f4068b09c596
 title: Extension Chrome Dark Mode
+description: >-
+  Chrome's own dark controls are only partial. How dark-mode extensions force dark backgrounds on any site, with schedules and per-domain contrast tuning.
 slug: extension-chrome-dark-mode
 excerpt: >-
   Are you tired of straining your eyes while browsing the web at night? Do you

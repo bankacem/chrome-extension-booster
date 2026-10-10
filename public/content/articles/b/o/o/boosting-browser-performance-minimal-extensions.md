@@ -5,6 +5,8 @@ slug: boosting-browser-performance-minimal-extensions
 excerpt: >-
   Too many extensions slow Chrome down. How each extension category impacts
   performance — which to keep, which to cut, and how to build a lean stack.
+description: >-
+  Chrome tested with 0 to 20 extensions: exactly how each one taxes startup and memory, and the lean stack that stays fast.
 featured_image: /content/images/boosting-browser-performance-minimal-extensions/featured.webp
 category: Productivity & Tools
 tags:

@@ -7,6 +7,9 @@ excerpt: >-
   Are you tired of using a mobile browser that lacks the functionality and
   flexibility you need? Look no further than a mobile browser with Chrome Store
   support.
+description: >-
+  Which mobile browsers actually run Chrome extensions? The full rundown for Android users who want desktop-
+  grade browsing on the go.
 featured_image: "/content/images/mobile-browsers-that-support-chrome-extensions/featured.webp"
 category: Chrome Extensions
 tags: []

@@ -2,6 +2,8 @@
 seo_title: "How to Install Chrome Extensions Safely for Free"
 id: 9403e1e2-566b-405a-b979-f0433238b971
 title: How to Install Chrome Extensions for Free (Without Wrecking Your Browser)
+description: >-
+  Free doesn't mean careless: installing from the Web Store, auditing permissions, avoiding malware, and managing extension count for performance.
 slug: how-to-install-chrome-extensions-for-free-without-wrecking-your-browser
 excerpt: >-
   Learn how to install free Chrome extensions safely, audit permissions to block

@@ -7,6 +7,8 @@ excerpt: >-
   Are you tired of encountering protected sites that prevent you from saving
   images in Chrome? Look no further! In this comprehensive guide, we will walk
   you thro
+description: >-
+  Right-click blocked? Legitimate ways to save images from protected sites in Chrome without shady workarounds.
 featured_image: /content/images/save-images-from-protected-sites-chrome/featured.webp
 category: "Media & Downloads"
 tags:

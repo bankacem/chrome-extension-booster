@@ -2,6 +2,8 @@
 seo_title: "Easy Screenshot Tools Built for Chrome"
 id: 29ebbd61-6c61-4d9f-873c-3121b722b081
 title: 'Easy Screenshot Tools Built for Chrome'
+description: >-
+  Beyond the generic advice: what screenshot tools actually do for students, professionals, and casual users — and when Quick Screenshot Lite is enough.
 slug: easy-screenshot-chrome-tools-9
 excerpt: >-
   In today's digital age, capturing screenshots has become an essential part of

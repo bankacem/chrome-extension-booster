@@ -7,6 +7,8 @@ excerpt: >-
   With the rise of social media, video content has become an essential part of
   our online experience. From Facebook to Instagram, Twitter to LinkedIn, videos
   are
+description: >-
+  Download videos from social platforms safely: which Chrome extensions work in 2026 and which ones to avoid.
 featured_image: /content/images/social-media-video-downloader-chrome/featured.webp
 category: "Performance & Memory"
 tags:

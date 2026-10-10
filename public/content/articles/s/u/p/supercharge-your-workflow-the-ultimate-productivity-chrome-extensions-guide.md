@@ -7,6 +7,9 @@ excerpt: >-
   A [comprehensive](/blog/media-saver-extension-chrome) guide to the best productivity
   Chrome extensions across email management, task automation, focus, note-taking, and
   communication — with comparison tables and daily workflow strategies.
+description: >-
+  Productivity extensions that solve real workflow problems: email overload, context switching, and distraction
+  — compared by job.
 featured_image: >-
   /content/images/supercharge-your-workflow-the-ultimate-productivity-chrome-extensions-guide/featured.webp
 category: "Productivity & Tools"

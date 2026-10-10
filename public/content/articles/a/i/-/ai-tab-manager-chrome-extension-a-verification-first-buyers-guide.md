@@ -5,6 +5,8 @@ title: "AI Tab Manager Chrome Extension: An Evidence-Based Audit Guide"
 slug: ai-tab-manager-chrome-extension-a-verification-first-buyers-guide
 status: published
 excerpt: "A technical guide to evaluating AI tab managers with MV3 checks, network capture, storage inspection, performance tests, and privacy criteria."
+description: >-
+  Before trusting an AI with your tabs, run this audit: network inspection, storage checks, and privacy tests that reveal what it really does.
 meta_description: "Evaluate an AI Tab Manager Chrome Extension with MV3, network, storage, privacy, and performance checks before you install or deploy it."
 featured_image: "/content/images/ai-tab-manager-chrome-extension-a-verification-first-buyers-guide/featured.webp"
 category: Chrome Extensions

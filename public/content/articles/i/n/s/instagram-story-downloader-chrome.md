@@ -2,6 +2,8 @@
 seo_title: "Instagram Story Downloader for Chrome"
 id: 0327b2a2-6f34-4043-a006-ec0e8142bf75
 title: 'Instagram Story Downloader for Chrome: Top Extensions'
+description: >-
+  Stories vanish in 24 hours. Which Chrome extensions save them reliably — and how to pick the right one for your needs.
 slug: instagram-story-downloader-chrome
 excerpt: >-
   Are you tired of scrolling through Instagram, only to have the stories you

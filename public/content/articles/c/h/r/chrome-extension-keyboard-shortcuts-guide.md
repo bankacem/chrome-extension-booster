@@ -4,6 +4,8 @@ title: "Chrome Extension Keyboard Shortcuts: Set, Test, and Avoid Conflicts"
 slug: chrome-extension-keyboard-shortcuts-guide
 status: draft
 excerpt: "A practical guide to configuring, testing, and troubleshooting Chrome extension keyboard shortcuts—plus how to avoid OS and browser conflicts across platforms."
+description: >-
+  One keypress instead of five clicks: setting up extension shortcuts, testing them, and dodging conflicts across platforms.
 meta_description: "Learn how to set, test, and troubleshoot Chrome extension keyboard shortcuts, understand platform differences, and avoid conflicts using Chrome’s Shortcuts page."
 featured_image: "/content/images/chrome-extension-keyboard-shortcuts-guide/featured.webp"
 category: "Chrome Extensions"

@@ -1,6 +1,8 @@
 ---
 id: 22b08d34-3d55-43b1-be79-fe763f15adcc
 title: "Free Student Chrome Extensions"
+description: >-
+  Research, citations, writing, focus, notes, math: free Chrome extensions grouped by study workflow so students build a lean, manageable stack.
 slug: free-student-chrome-extensions
 seo_title: "Best Free Chrome Extensions for Students"
 excerpt: A practical guide to the best free Chrome extensions for students in 2025 — covering research tools, citation generators, grammar checkers, focus timers, note-taking apps, and math utilities that genuinely help you study smarter.

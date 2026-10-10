@@ -6,6 +6,9 @@ excerpt: >-
   Five ways to take screenshots in Chrome: built-in DevTools, Print Screen,
   Quick Screenshot Lite, Snagit, and Lightshot — speed, quality, and workflow
   efficiency.
+description: >-
+  Five ways to screenshot in Chrome compared — DevTools, Print Screen, and three extensions — on speed and
+  workflow fit.
 featured_image: /content/images/screenshot-tools-chrome-comparison/featured.webp
 category: Productivity & Tools
 tags:

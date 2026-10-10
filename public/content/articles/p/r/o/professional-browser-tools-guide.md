@@ -4,6 +4,9 @@ id: "f48a7a45-6e1a-4665-b9e4-25cb489f270f"
 title: "Professional Browser Tools Guide: Choose Extensions by Task, Risk, and Workflow"
 slug: "professional-browser-tools-guide"
 excerpt: "A practical framework for choosing browser tools at work: start with native capabilities, match each extension to one task, review permissions and data handling, and keep only tools that earn their place."
+description: >-
+  A practical framework for choosing browser tools at work: match each extension to one task, then audit
+  permissions and privacy.
 featured_image: "/content/images/professional-browser-tools-guide/featured.webp"
 category: "Productivity & Tools"
 tags:

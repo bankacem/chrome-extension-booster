@@ -7,6 +7,9 @@ excerpt: >-
   A curated breakdown of the best free Chrome extensions across ad blocking, passwords,
   productivity, privacy, developer tools, and shopping — with safety criteria and
   Manifest V3 compatibility.
+description: >-
+  The best genuinely free Chrome extensions across six categories — ad blocking, passwords, privacy, and more —
+  each safety-checked.
 featured_image: /content/images/overview-of-free-chrome-extensions/featured.webp
 category: "Chrome Extensions"
 tags:

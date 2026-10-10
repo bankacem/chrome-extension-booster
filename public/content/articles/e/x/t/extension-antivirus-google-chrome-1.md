@@ -4,6 +4,8 @@ id: e15ea966-e110-4340-9919-9d44e031a459
 title: >-
   Protecting Your Browsing Experience: The Importance of Extension Antivirus
   Google Chrome
+description: >-
+  Antivirus-style protection inside Chrome: which extensions guard against malicious downloads and drive-by threats — and where their limits lie.
 slug: extension-antivirus-google-chrome-1
 excerpt: >-
   As the internet continues to evolve, the threat of malware and viruses has

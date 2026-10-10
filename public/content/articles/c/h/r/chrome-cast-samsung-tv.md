@@ -4,6 +4,8 @@ id: 84397935-0778-4622-bb17-4d825031314b
 title: 'How to Cast Chrome to Samsung Smart TV: Complete Guide for 2026'
 slug: chrome-cast-samsung-tv
 excerpt: '4 ways to cast Chrome content to a Samsung Smart TV — Chromecast, AirPlay, screen mirroring, and HDMI — and which delivers the best quality with the least lag.'
+description: >-
+  Samsung TVs don’t run Chrome extensions, so casting takes workarounds. Four methods compared on latency and video quality.
 featured_image: /content/images/chrome-cast-samsung-tv/featured.webp
 category: Productivity & Tools
 tags: []

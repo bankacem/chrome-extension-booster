@@ -7,6 +7,9 @@ excerpt: >-
   A practical guide to the best free Chrome security extensions in 2025, covering anti-phishing,
   malware protection, network security, credential management, and browser hardening with a
   side-by-side comparison table.
+description: >-
+  Free Chrome security extensions compared layer by layer — anti-phishing, malware filtering, and tracking
+  defense without paying a cent.
 featured_image: >-
   /content/images/the-best-security-chrome-extensions-free-to-install-in-2025/featured.webp
 category: "Security & Privacy"

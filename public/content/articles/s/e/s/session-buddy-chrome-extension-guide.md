@@ -4,6 +4,9 @@ title: "Session Buddy Chrome Extension: Save, Restore, and Audit Browser Session
 slug: session-buddy-chrome-extension-guide
 status: draft
 excerpt: "A practical guide to installing Session Buddy, saving and restoring sessions, testing crash recovery, and validating its local-first, no-login workflow."
+description: >-
+  Session Buddy saves and restores your tab sessions, survives crashes, and keeps everything local — setup and
+  privacy audit.
 meta_description: "Install and evaluate Session Buddy for session saving, crash recovery, import/export, and local-first privacy. Step-by-step setup, limitations, troubleshooting, and FAQs."
 featured_image: "/content/images/session-buddy-chrome-extension-guide/featured.webp"
 category: "Chrome Extensions"

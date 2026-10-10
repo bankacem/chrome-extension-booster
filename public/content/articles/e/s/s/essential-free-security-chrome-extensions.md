@@ -1,6 +1,8 @@
 ---
 id: 01eb6fe4-5ad8-49a3-ae2b-69f12bcd6233
 title: "Essential Free Security Chrome Extensions"
+description: >-
+  A free security stack that works: uBlock Origin, Bitwarden, Malwarebytes Browser Guard, and Privacy Badger compared on real trade-offs.
 slug: essential-free-security-chrome-extensions
 excerpt: >-
   The most effective browser security does not require a paid subscription. This guide

@@ -4,6 +4,8 @@ id: 1052a091-9aea-407b-a45a-a8da49a63be4
 title: >-
   Chrome Web Store on PC: Complete Guide to Extensions, Shortcuts & Performance
   Tuning
+description: >-
+  Eighteen extensions eating 3.2 GB of RAM, then a clean rebuild: 35 extensions tested on a fresh PC to find the eight worth keeping.
 slug: chrome-web-store-pc-guide
 excerpt: >-
   I spent a week testing 35 Chrome extensions on a Windows 11 PC, measuring

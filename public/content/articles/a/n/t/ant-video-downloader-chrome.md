@@ -4,6 +4,8 @@ id: dff9cd9c-5d22-4e34-b41a-61d5ae653b16
 title: 'Ant Video Downloader Chrome Review 2026: Does It Still Work?'
 slug: ant-video-downloader-chrome
 excerpt: 'Ant Video Downloader for Chrome reviewed: which sites it downloads from, which companion extensions fill its gaps, and whether it beats the free alternatives.'
+description: >-
+  It downloads video — but demands a separate desktop app to do it. Which sites still work, and whether the hassle is justified.
 featured_image: /content/images/ant-video-downloader-chrome/featured.webp
 category: Productivity & Tools
 tags:

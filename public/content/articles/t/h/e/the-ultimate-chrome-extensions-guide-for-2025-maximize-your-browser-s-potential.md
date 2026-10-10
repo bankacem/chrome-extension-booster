@@ -7,6 +7,9 @@ excerpt: >-
   A curated guide to the best Chrome extensions in 2025, covering productivity,
   security, privacy, developer tools, and entertainment — with Manifest V3
   compliance, a quick-comparison table, and a full audit checklist.
+description: >-
+  A lean Chrome setup without the overlap: the most useful extensions for productivity, security, privacy, and
+  dev work.
 featured_image: >-
   /content/images/the-ultimate-chrome-extensions-guide-for-2025-maximize-your-browser-s-potential/featured.webp
 category: "Chrome Extensions"

@@ -6,6 +6,8 @@ slug: best-ad-block-chrome-extension
 excerpt: >-
   Compare Chrome ad blockers by permissions, privacy disclosures, filtering scope,
   allowlisting, and maintenance—not by unverifiable test scores.
+description: >-
+  Forget star ratings: the five-point safety checklist for judging any ad blocker before you hand it your browsing data.
 featured_image: /content/images/best-ad-block-chrome-extension/featured.webp
 category: Productivity & Tools
 tags:

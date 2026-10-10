@@ -3,6 +3,8 @@ seo_title: "Screenshot Extensions with Built-In Annotation"
 title: Best Annotated Screenshot Chrome Extensions for Enhanced Productivity
 slug: best-annotated-screenshot-chrome-5
 excerpt: '8 screenshot extensions with annotation tools compared: which captures the fastest, which has the best markup tools, and the companion extensions that complete your workflow.'
+description: >-
+  Eight screenshot tools, 50 captures each on a Dell XPS 13: markup quality and capture speed measured for documentation work.
 featured_image: /content/images/best-annotated-screenshot-chrome-5/featured.webp
 category: Productivity & Tools
 tags:

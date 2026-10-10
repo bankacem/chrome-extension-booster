@@ -1,6 +1,8 @@
 ---
 seo_title: 'CORS Chrome Guide: The Working Solutions'
 title: 'CORS Chrome Guide: 4 CORS Solutions for Web Development'
+description: >-
+  CORS errors across 10 API integrations: four approaches compared on setup time, reliability, security impact, and when each one fits best.
 slug: cors-chrome-guide
 excerpt: '4 approaches to handling CORS in Chrome compared across 10 API integration scenarios: setup time, reliability, security tradeoffs, and which to use in 2026.'
 featured_image: /content/images/cors-chrome-guide/featured.webp

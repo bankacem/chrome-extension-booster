@@ -10,6 +10,9 @@ excerpt: >-
   In today's digital landscape, password security is more crucial than ever.
   With the rise of online transactions, social media, and cloud storage, the
   average us
+description: >-
+  Password managers for Chrome that actually protect your identity — encryption, autofill safety, and breach
+  alerts compared.
 featured_image: >-
   /content/images/secure-password-manager-extensions-protecting-your-online-identity-in-the-digital-age-mo4p1yusuqo/featured.webp
 category: Redirect & Navigation

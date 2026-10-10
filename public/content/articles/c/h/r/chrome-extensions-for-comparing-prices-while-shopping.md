@@ -8,6 +8,8 @@ status: published
 excerpt: >-
   Chrome extensions for comparing prices while shopping — alerts vs comparison
   tools, reading price history charts, and how coupon codes really work.
+description: >-
+  Price alerts vs comparison engines vs history charts: the shopping extension types that actually save money — and how coupons really work.
 meta_description: >-
   Chrome extensions for comparing prices while shopping — alerts vs comparison
   tools, reading price history charts, and how coupon codes really work.

@@ -7,6 +7,8 @@ excerpt: >-
   As a web developer, you understand the importance of efficient coding and
   debugging. The right tools can make all the difference in streamlining your
   workflow, 
+description: >-
+  Web developer debugging tools for Chrome that speed up real coding work — inspect, test, and fix faster.
 featured_image: >-
   /content/images/unlock-efficient-coding-web-developer-debugging-tools-chrome-mo4p3a5tyl3/featured.webp
 category: Screenshots & Screen Capture

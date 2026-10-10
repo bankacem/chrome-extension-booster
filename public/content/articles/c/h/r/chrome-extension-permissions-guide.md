@@ -4,6 +4,8 @@ title: "Chrome Extension Permissions: How to Review Access Before You Install"
 slug: chrome-extension-permissions-guide
 status: published
 excerpt: "Before you click “Add to Chrome,” learn how to read permission warnings, recognize optional permissions and activeTab, and limit site access safely."
+description: >-
+  That install dialog is a contract — learn to read it. Decoding permission warnings before you click ‘Add to Chrome.’
 meta_description: "Chrome Extension Permissions: How to Review Access Before You Install — Before you click “Add to Chrome,” learn how to read permission warnings, recognize op..."
 featured_image: "/content/images/chrome-extension-permissions-guide/featured.webp"
 category: "Chrome Extensions"

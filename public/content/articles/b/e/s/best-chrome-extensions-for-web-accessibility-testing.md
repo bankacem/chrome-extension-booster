@@ -8,6 +8,8 @@ status: published
 excerpt: >-
   The best Chrome extensions for web accessibility testing — automated scanners,
   contrast checking, keyboard navigation, and screen reader testing.
+description: >-
+  An automated scanner passing your site proves less than you think. The testing tools that matter — and what they can’t tell you.
 meta_description: "Compare the best Chrome extensions for web accessibility testing: automated scanners, contrast checks, keyboard navigation, and screen reader testing."
 featured_image: "/content/images/best-chrome-extensions-for-web-accessibility-testing/featured.webp"
 category: Productivity & Tools

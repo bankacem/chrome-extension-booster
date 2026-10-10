@@ -1,6 +1,8 @@
 ---
 seo_title: "Chrome Screenshot Tutorial"
 title: 'Chrome Screenshot Tutorial: Step-by-Step Guide for Beginners and Pros'
+description: >-
+  From Print Screen-and-Paste to pro workflows: every screenshot method in Chrome explained step by step, from basic shortcuts to advanced annotation.
 slug: chrome-screenshot-tutorial
 excerpt: >-
   Step-by-step Chrome screenshot tutorial covering every method. From basic

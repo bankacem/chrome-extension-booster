@@ -6,6 +6,8 @@ excerpt: >-
   I tested 30+ productivity Chrome extensions over a month. Here is the curated
   10-extension stack that actually saves time — tab management, focus tools,
   dark mode, and more.
+description: >-
+  Thirty-plus tools tried for a month; ten survived daily use. The no-fluff stack that actually reclaims hours every week.
 featured_image: /content/images/best-chrome-extensions-for-productivity/featured.webp
 category: Productivity & Tools
 tags:

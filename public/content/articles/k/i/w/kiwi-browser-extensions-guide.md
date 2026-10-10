@@ -4,6 +4,9 @@ id: 690f42c5-48e7-49d7-8223-cf6d307d95ff
 title: 'Kiwi Browser Extensions Guide: How to Run Chrome Extensions on Android'
 slug: kiwi-browser-extensions-guide
 excerpt: 'Kiwi Browser lets you run Chrome extensions on Android. Here is what works, what does not, and how to set everything up step by step.'
+description: >-
+  20 Chrome extensions tested on Kiwi Browser for Android: a step-by-step setup walkthrough plus which popular
+  extensions break on mobile.
 featured_image: /content/images/kiwi-browser-extensions-guide/featured.webp
 category: Productivity & Tools
 tags: []

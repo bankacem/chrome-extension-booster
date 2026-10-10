@@ -1,6 +1,8 @@
 ---
 seo_title: "How to Fix Chrome's Out of Memory Errors"
 title: How to Fix 'Out of Memory' Errors in Google Chrome (2026 Guide)
+description: >-
+  From Chrome's Task Manager to virtual memory tweaks: a complete guide to diagnosing and fixing 'Out of Memory' crashes.
 slug: fix-chrome-out-of-memory-errors
 excerpt: >-
   Encountering 'Aw Snap! Out of Memory' errors? Follow our step-by-step

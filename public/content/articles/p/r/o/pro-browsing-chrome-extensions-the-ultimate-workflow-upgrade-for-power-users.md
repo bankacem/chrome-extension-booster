@@ -4,6 +4,9 @@ id: 48a980bb-78f9-44f5-b89c-bd65144a4f50
 title: "Chrome Extensions for Power Users: Build a Faster, Safer Browsing Workflow"
 slug: pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users
 excerpt: "A workflow-first guide to choosing and combining Chrome extensions for keyboard navigation, project context, research capture, privacy and careful automation."
+description: >-
+  Build a faster, safer Chrome workflow like a power user — keyboard navigation, research capture, and privacy
+  combined deliberately.
 featured_image: /content/images/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users/featured.webp
 category: Productivity & Tools
 tags:

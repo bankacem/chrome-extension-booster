@@ -1,6 +1,8 @@
 ---
 id: "4325443c-ba9c-4831-b8cd-3f175dec7cb0"
 title: "Chrome Web Store Extension Installation Errors: A Safe Diagnostic Flow"
+description: >-
+  Add to Chrome failing with a spinner or a vague error? A safe, ordered diagnostic that rules out browser state, policy, compatibility, and network causes.
 slug: chrome-web-store-extension-installation-error-guide
 status: draft
 excerpt: "A practical, safety-first flow to diagnose Chrome Web Store extension installation errors—without risky sideloading or untrusted downloads."

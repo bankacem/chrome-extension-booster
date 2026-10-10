@@ -7,6 +7,9 @@ excerpt: >-
   A curated guide to the most effective Chrome extensions for social media
   management in 2025, covering Twitter/X, LinkedIn, Instagram, Facebook,
   TikTok, and YouTube with honest assessments of what each tool actually delivers.
+description: >-
+  The Chrome extensions social media managers actually need — publishing, scheduling, and analytics tools with
+  permission risks reviewed.
 featured_image: >-
   /content/images/social-media-chrome-extensions-guide-the-2025-toolkit-you-actually-need/featured.webp
 category: "Social Media Tools"

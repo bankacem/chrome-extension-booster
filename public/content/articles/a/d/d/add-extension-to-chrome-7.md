@@ -6,6 +6,8 @@ excerpt: >-
   Adding extensions to Chrome takes 30 seconds — if you know where to look. Here
   is the exact process, how to spot malicious extensions, and which tools to
   install first.
+description: >-
+  Installing an extension takes 30 seconds; installing the wrong one takes months to undo. The safe process, plus 8 worth installing first.
 featured_image: /content/images/add-extension-to-chrome-7/featured.webp
 category: Productivity & Tools
 tags:

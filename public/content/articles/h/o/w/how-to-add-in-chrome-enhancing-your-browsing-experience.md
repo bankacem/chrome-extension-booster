@@ -4,6 +4,8 @@ id: dedc9b93-049c-4b9c-bb96-e7aacda459bf
 title: >-
   How to Add in Chrome: A Comprehensive Guide to Enhancing Your Browsing
   Experience
+description: >-
+  Two minutes to a more capable browser: finding trustworthy extensions, installing them right, and keeping your collection organized.
 slug: "how-to-add-in-chrome-enhancing-your-browsing-experience"
 excerpt: >-
   Are you looking to add in Chrome new features, functionality, or tools to

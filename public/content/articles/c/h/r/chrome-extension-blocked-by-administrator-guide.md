@@ -4,6 +4,8 @@ title: "Chrome Extension Blocked by Administrator: What You Can Check Safely"
 slug: chrome-extension-blocked-by-administrator-guide
 status: draft
 excerpt: "Seeing “Blocked by administrator” when installing a Chrome extension? Here’s how to confirm whether your browser is managed, read the effective policy, and contact the right admin—without risky workarounds."
+description: >-
+  Locked out by an admin policy? What you can safely check yourself on managed devices — and how to reach the right admin.
 meta_description: "Learn safe, practical steps to diagnose Chrome’s “Blocked by administrator” extension errors and reach the right admin path on managed devices."
 featured_image: "/content/images/chrome-extension-blocked-by-administrator-guide/featured.webp"
 category: "Chrome Extensions"

@@ -4,6 +4,8 @@ id: efcbf65f-81a0-4a90-bc3d-daf55a4ff712
 title: 'AliTools Extension Chrome: The Ultimate Alibaba Shopping Companion'
 slug: alitools-extension-chrome
 excerpt: 'AliTools for Alibaba sourcing compared with manual searching: which extensions to pair it with, and whether it actually saves you money.'
+description: >-
+  Sourcing from Alibaba without leaving your browser: what AliTools automates, where manual work still wins, and the tools that fill the gaps.
 featured_image: /content/images/alitools-extension-chrome/featured.webp
 category: Productivity & Tools
 tags:

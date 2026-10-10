@@ -1,6 +1,8 @@
 ---
 id: "a156c26d-cdbd-408e-855c-33a94c6c91a2"
 title: "Chrome New Tab Extensions: Choose a Dashboard Without Losing Control"
+description: >-
+  New Tab extensions replace the page you see dozens of times a day. What they actually change, which permissions matter, and how to switch or reset safely.
 slug: chrome-new-tab-extension-guide
 status: draft
 excerpt: "Understand exactly what New Tab extensions change in Chrome, how they differ from your startup and homepage settings, and how to choose, control, or remove one safely—without losing your default page."

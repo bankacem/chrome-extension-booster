@@ -4,6 +4,9 @@ title: "Repair a Corrupted Chrome Extension Without Losing Track of Its Settings
 slug: repair-corrupted-chrome-extension-guide
 status: draft
 excerpt: "Learn how Chrome’s Repair action works, what it can and can’t fix, and the safest way to preserve or rebuild your extension settings when corruption appears."
+description: >-
+  Chrome flagged your extension as corrupted? What the Repair button actually does, and how to keep your
+  settings safe.
 meta_description: "A practical guide to Chrome’s Repair action for corrupted extensions—what it fixes, what it doesn’t, and how to preserve or rebuild settings before reinstalling or removing."
 featured_image: "/content/images/repair-corrupted-chrome-extension-guide/featured.webp"
 category: "Chrome Extensions"

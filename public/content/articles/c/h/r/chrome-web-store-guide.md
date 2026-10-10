@@ -2,6 +2,8 @@
 seo_title: "Chrome Web Store Guide"
 id: 5cac7910-54df-4a62-aaf1-2c7da98960af
 title: 'Chrome Web Store Guide: How to Find Safe Extensions & Alternatives (2026)'
+description: >-
+  The Web Store is huge but uneven — Google removed 100+ malicious extensions in 2024 alone. How to find safe ones and judge competing marketplaces.
 slug: chrome-web-store-guide
 excerpt: >-
   Complete guide to the Chrome Web Store. How to find safe extensions, check

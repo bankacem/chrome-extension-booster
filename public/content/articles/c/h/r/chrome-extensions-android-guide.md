@@ -4,6 +4,8 @@ id: 4ca3866a-34f0-4e0d-9c40-0f68ed348baa
 title: 'Chrome Extensions on Android: Complete Guide for 2026'
 slug: chrome-extensions-android-guide
 excerpt: 'Chrome extensions on Android using Kiwi Browser, Yandex Browser, and Lemur Browser: which browser supports the most extensions, performance differences, and privacy compared.'
+description: >-
+  Three alternative browsers bring extensions to Android: compatibility, performance, and privacy compared so you can choose wisely.
 featured_image: /content/images/chrome-extensions-android-guide/featured.webp
 category: Productivity & Tools
 tags: []

@@ -4,6 +4,8 @@ id: 10609f9c-3d27-44ed-8074-6e25aaaa50a3
 title: >-
   Chrome Printing Guide: Best Print Settings, Extensions & Cloud Solutions
   (2026)
+description: >-
+  Margins cut off, backgrounds missing, previews lying: a week of testing Chrome printing across five printers so the output finally matches the screen.
 slug: chrome-printing-guide
 excerpt: 'Chrome''s built-in printing compared with cloud print services and PDF-first workflows: how to set up the fastest, most reliable printing experience from your browser.'
 featured_image: /content/images/chrome-printing-guide/featured.webp

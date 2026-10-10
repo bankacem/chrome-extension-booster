@@ -7,6 +7,8 @@ excerpt: >-
   As the world of technology continues to evolve, the lines between desktop and
   mobile browsing experiences are becoming increasingly blurred. One of the key
   fact
+description: >-
+  Chrome extensions on Android: what's actually possible on mobile and which browsers make it work.
 featured_image: /content/images/extension-android-google-chrome-mkzmte0ni0z/featured.webp
 category: Screenshots & Screen Capture
 tags: []

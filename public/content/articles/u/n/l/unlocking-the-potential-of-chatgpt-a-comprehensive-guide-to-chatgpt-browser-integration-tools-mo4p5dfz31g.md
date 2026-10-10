@@ -10,6 +10,9 @@ excerpt: >-
   The rise of ChatGPT has revolutionized the way we interact with the internet,
   and one of the most exciting developments in this field is the emergence of
   ChatGP
+description: >-
+  ChatGPT inside your browser: the best integration tools for summarizing, writing, and researching without tab-
+  switching.
 featured_image: >-
   /content/images/unlocking-the-potential-of-chatgpt-a-comprehensive-guide-to-chatgpt-browser-integration-tools-mo4p5dfz31g/featured.webp
 category: Screenshots & Screen Capture

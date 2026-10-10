@@ -4,6 +4,8 @@ title: "Chrome Extension Context Menu: Add-Ons That Work from Right-Click"
 slug: chrome-extension-context-menu-guide
 status: draft
 excerpt: "Understand how Chrome extension context menus decide when to appear, how to target links, selections, and media with URL patterns, and how to troubleshoot missing right‑click items."
+description: >-
+  Why one extension appears on link right-clicks and another never shows: how the contextMenus API controls menu visibility.
 meta_description: "Learn how Chrome extension context menus work, when items appear on right‑click, how to use documentUrlPatterns and targetUrlPatterns, and how to troubleshoot missing menu items."
 featured_image: "/content/images/chrome-extension-context-menu-guide/featured.webp"
 category: "Chrome Extensions"

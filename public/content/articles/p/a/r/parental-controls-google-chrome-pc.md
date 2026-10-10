@@ -3,6 +3,9 @@ seo_title: "Parental Controls for Google Chrome on PC"
 title: 'Parental Controls for Google Chrome on PC: Complete Setup Guide (2026)'
 slug: parental-controls-google-chrome-pc
 excerpt: 'Four parental control methods for Chrome on Windows compared: Family Link, third-party extensions, DNS filtering, and Chrome''s built-in supervised accounts — what blocks adult content without breaking everyday sites.'
+description: >-
+  Setting up parental controls on Chrome for Windows: Family Link, extensions, and DNS filtering compared step
+  by step.
 featured_image: /content/images/parental-controls-google-chrome-pc/featured.webp
 category: Productivity & Tools
 tags:

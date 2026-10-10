@@ -4,6 +4,8 @@ title: "Chrome Extension Camera and Microphone Access: Review It Before Use"
 slug: chrome-extension-camera-microphone-permissions-guide
 status: draft
 excerpt: "A practical guide to see who can use your camera and mic in Chrome, distinguish site vs. extension control, and safely revoke access when meetings fail."
+description: >-
+  Who’s watching? Audit camera and mic access across sites and extensions — then revoke what shouldn’t be there.
 meta_description: "Learn how Chrome manages camera and microphone access for websites and extensions, how to review who has access, and how to revoke it when needed."
 featured_image: "/content/images/chrome-extension-camera-microphone-permissions-guide/featured.webp"
 category: "Chrome Extensions"

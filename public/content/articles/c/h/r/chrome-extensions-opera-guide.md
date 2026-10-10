@@ -4,6 +4,8 @@ id: 9764dfe7-8a25-4390-8bc8-7501a9a7201a
 title: >-
   Chrome Extensions on Opera: Complete Guide to Installation and Compatibility
   (2026)
+description: >-
+  Opera runs on Chromium, but not every Chrome extension behaves the same there. Results from testing 20 extensions across Opera, Vivaldi, and Edge.
 slug: chrome-extensions-opera-guide
 excerpt: 'Chrome extensions on Opera, Vivaldi, and Edge compared: which Chromium browser supports the most extensions, which features are broken, and how to install any Chrome extension in Opera.'
 featured_image: /content/images/chrome-extensions-opera-guide/featured.webp

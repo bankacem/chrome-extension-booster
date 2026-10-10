@@ -8,6 +8,8 @@ excerpt: >-
   Working with PDF files is an essential part of many professionals' and
   students' daily routines. From editing and annotating documents to managing
   and sharing t
+description: >-
+  Edit and annotate PDFs without leaving Chrome — the extensions that handle forms, signatures, and markup.
 featured_image: >-
   /content/images/unlocking-the-power-of-pdf-editor-chrome-extensions-a-comprehensive-guide-mo4si115nvz/featured.webp
 category: Screenshots & Screen Capture

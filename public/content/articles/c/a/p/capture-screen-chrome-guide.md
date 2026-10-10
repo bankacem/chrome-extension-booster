@@ -3,6 +3,8 @@ seo_title: "How to Capture Screen in Chrome"
 title: 'How to Capture Screen in Chrome: 4 Methods Compared'
 slug: capture-screen-chrome-guide
 excerpt: '4 ways to capture screen in Chrome: keyboard shortcuts, DevTools, Quick Screenshot Lite, and desktop apps — speed, quality, and features compared so you can choose the best method.'
+description: >-
+  Four ways to screenshot in Chrome, tested side by side: shortcuts, DevTools, extension, and desktop app — the winner for each use case.
 featured_image: /content/images/capture-screen-chrome-guide/featured.webp
 category: Productivity & Tools
 tags:

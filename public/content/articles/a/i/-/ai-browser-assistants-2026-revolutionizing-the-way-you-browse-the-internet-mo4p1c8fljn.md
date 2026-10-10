@@ -8,6 +8,8 @@ excerpt: >-
   The world of web browsing has undergone a significant transformation in recent
   years, thanks to the advent of Artificial Intelligence (AI) and Machine
   Learning 
+description: >-
+  AI assistants now live inside your browser. What they can actually do in 2026 — and which ones are worth your toolbar space.
 featured_image: >-
   /content/images/ai-browser-assistants-2026-revolutionizing-the-way-you-browse-the-internet-mo4p1c8fljn/featured.webp
 category: Screenshots & Screen Capture

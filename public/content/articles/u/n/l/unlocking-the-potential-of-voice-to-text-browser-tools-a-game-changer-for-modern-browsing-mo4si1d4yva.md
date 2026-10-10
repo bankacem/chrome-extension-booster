@@ -10,6 +10,8 @@ excerpt: >-
   In today's fast-paced digital landscape, staying ahead of the curve is crucial
   for maximizing productivity and efficiency. One innovative solution that has
   gain
+description: >-
+  Type with your voice in Chrome — voice-to-text browser tools that turn speech into clean, editable text.
 featured_image: >-
   /content/images/unlocking-the-potential-of-voice-to-text-browser-tools-a-game-changer-for-modern-browsing-mo4si1d4yva/featured.webp
 category: Screenshots & Screen Capture

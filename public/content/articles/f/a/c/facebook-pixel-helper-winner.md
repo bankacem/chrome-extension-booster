@@ -2,6 +2,8 @@
 seo_title: 'Facebook Pixel for Chrome'
 id: 7dccbefb-8cb2-4d43-a057-dd10aa420192
 title: 'Facebook Pixel for Chrome: Tracking Made Easier'
+description: >-
+  Facebook Pixel for Chrome, explained for marketers: what the helper reveals, how to set it up, and getting accurate tracking from your campaigns.
 slug: facebook-pixel-helper-winner
 excerpt: >-
   As a digital marketer, you're likely no stranger to the importance of precise

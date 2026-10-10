@@ -8,6 +8,8 @@ excerpt: >-
   As we navigate the complexities of modern work, it's becoming increasingly
   essential to optimize our workflows and minimize manual labor. One effective
   way to a
+description: >-
+  Automate the boring parts of your workday — browser extensions that handle repetitive tasks while you focus.
 featured_image: >-
   /content/images/unlocking-efficiency-the-ultimate-guide-to-workflow-automation-browser-extensions-mo4sku5p23c/featured.webp
 category: Screenshots & Screen Capture

@@ -4,6 +4,8 @@ title: "Chrome Extension Options Pages: Find Settings and Reset Them Safely"
 slug: chrome-extension-options-page-guide
 status: draft
 excerpt: "Learn the two reliable ways to open an extension’s Options page, how it differs from the popup and Chrome’s site settings, and safe ways to reset extension-specific settings without guesswork."
+description: >-
+  The settings page hiding behind every extension: where to find Options pages, how they differ from popups, and safe reset methods.
 meta_description: "Find and use Chrome extension Options pages. Learn where to open them, how they differ from popups and Chrome site settings, plus safe ways to reset an extension’s preferences."
 featured_image: "/content/images/chrome-extension-options-page-guide/featured.webp"
 category: "Chrome Extensions"

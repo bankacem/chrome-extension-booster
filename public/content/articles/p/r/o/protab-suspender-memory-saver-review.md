@@ -4,6 +4,9 @@ id: f0bd342f-32ca-4ff9-bf7c-e9e8fdc8064a
 title: 'ProTab Suspender Review: Chrome Memory Saver Alternatives'
 slug: protab-suspender-memory-saver-review
 excerpt: 'ProTab Suspender compared with Chrome''s built-in memory saver and two competitors: suspension behavior, RAM use, and which one fits your workflow.'
+description: >-
+  ProTab Suspender vs Chrome's built-in Memory Saver and two rivals — two weeks of testing on which saves the
+  most RAM.
 featured_image: /content/images/protab-suspender-memory-saver-review/featured.webp
 category: Productivity & Tools
 tags: []

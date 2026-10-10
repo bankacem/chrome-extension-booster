@@ -4,6 +4,8 @@ title: "Allow a Chrome Extension on File URLs: Access, Risks, and Safer Settings
 slug: allow-chrome-extension-file-urls-guide
 status: draft
 excerpt: "Learn how to enable “Allow access to file URLs” for a single Chrome extension, why file:// pages are different, what won’t work, the risks to consider, and when to turn access back off."
+description: >-
+  Want an extension to work on local files? How to enable file-URL access safely — and why you should think twice first.
 meta_description: "Step-by-step guide to enable a Chrome extension on file URLs, with risks, limitations, troubleshooting, and safer settings for local files in the browser."
 featured_image: "/content/images/allow-chrome-extension-file-urls-guide/featured.webp"
 category: "Chrome Extensions"

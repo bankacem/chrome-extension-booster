@@ -8,6 +8,8 @@ excerpt: >-
   As the world shifts towards remote work, it's essential to have the right
   tools to stay productive and efficient. One of the most effective ways to
   enhance your
+description: >-
+  The remote-work essentials that pull their weight: screenshot, dark mode, and focus tools that genuinely lift daily output.
 featured_image: >-
   /content/images/best-extensions-for-remote-work-unlocking-productivity-and-efficiency-mo4sk98t212/featured.webp
 category: Screenshots & Screen Capture

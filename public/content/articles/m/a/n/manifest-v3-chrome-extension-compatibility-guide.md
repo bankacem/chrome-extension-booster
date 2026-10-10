@@ -4,6 +4,9 @@ title: "Manifest V3 Chrome Extensions: Compatibility Changes Users Should Unders
 slug: manifest-v3-chrome-extension-compatibility-guide
 status: draft
 excerpt: "A user-focused look at how Chrome’s Manifest V3 affects extension behavior, including background activity, network-request handling, and permission prompts—plus practical troubleshooting tips."
+description: >-
+  What Manifest V3 actually changes for you as a Chrome user: background activity, ad-blocker limits, and
+  permission prompts explained in plain language.
 meta_description: "Understand how Chrome’s Manifest V3 changes extension behavior for users—service workers, no remotely hosted code, and declarativeNetRequest—plus signs to watch for and fixes."
 featured_image: "/content/images/manifest-v3-chrome-extension-compatibility-guide/featured.webp"
 category: "Chrome Extensions"

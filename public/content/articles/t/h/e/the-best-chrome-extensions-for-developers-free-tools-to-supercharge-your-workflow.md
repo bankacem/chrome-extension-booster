@@ -10,6 +10,9 @@ excerpt: >-
   framework debuggers, API testers, accessibility auditors, CSS inspection tools,
   and workflow automators. Every tool listed is free, actively maintained, and
   compatible with modern browser standards.
+description: >-
+  Free developer extensions for Chrome that earn their toolbar spot — debugging, API testing, and CSS inspection
+  compared.
 featured_image: >-
   /content/images/the-best-chrome-extensions-for-developers-free-tools-to-supercharge-your-workflow/featured.webp
 category: "Developer Tools"

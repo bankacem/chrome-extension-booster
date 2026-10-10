@@ -4,6 +4,9 @@ id: 48a20a60-29d3-4465-8122-78e7ad16fd2e
 title: "Essential Chrome Extensions for Professionals: Choose by Task and Trade-off"
 slug: pro-essential-chrome-extensions-the-ultimate-guide
 excerpt: "A focused shortlist of Chrome extensions for professional workflows, with a practical test for permissions, privacy, maintenance, performance, and when Chrome or a web app is enough."
+description: >-
+  Stop collecting random extensions. A task-first method for picking the essential Chrome tools for professional
+  work.
 featured_image: /content/images/pro-essential-chrome-extensions-the-ultimate-guide/featured.webp
 category: "Productivity & Tools"
 tags:

@@ -2,6 +2,8 @@
 seo_title: "How to Review Chrome Extensions and Avoid Junk"
 id: 66e42800-b72a-4757-94c1-0dfb2ac063bc
 title: 'Free Chrome Extension Reviews: How to Spot the Gems and Dodge the Junk'
+description: >-
+  Star ratings aren't a safety verdict. Four signals — permissions, review quality, developer history, update activity — that separate gems from junk.
 slug: free-chrome-extension-reviews-how-to-spot-the-gems-and-dodge-the-junk
 excerpt: >-
   Learn how to evaluate free Chrome extensions by auditing permissions,

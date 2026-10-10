@@ -2,6 +2,8 @@
 seo_title: "Instagram Downloader Chrome Extensions"
 title: >-
   Instagram Downloader Chrome Extensions: 5 Tools (2026)
+description: >-
+  Five Instagram downloaders tested over two weeks: which ones reliably save photos, Reels, and Stories without breaking the site.
 slug: instagram-downloader-chrome
 excerpt: >-
   Five Chrome extensions for downloading Instagram photos, videos, Reels, and

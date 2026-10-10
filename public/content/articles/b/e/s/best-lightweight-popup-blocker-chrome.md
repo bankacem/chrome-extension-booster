@@ -4,6 +4,8 @@ id: 6d5368c9-e6fa-4ef8-9a3b-2d68f188f3c4
 title: Best Lightweight Popup Blocker for Chrome 2026 Compared
 slug: best-lightweight-popup-blocker-chrome
 excerpt: 6 popup blockers for Chrome compared for the lightest option that still blocks reliably. Here is the winner.
+description: >-
+  Six popup blockers unleashed on 50 aggressive sites: block rates measured against RAM footprint — the lightest winner revealed.
 featured_image: /content/images/best-lightweight-popup-blocker-chrome/featured.webp
 category: Productivity & Tools
 tags: []

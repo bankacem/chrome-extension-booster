@@ -1,6 +1,8 @@
 ---
 seo_title: "Chromecast Plugin for Chrome"
 title: 'Chromecast Plugin for Chrome: Complete Setup & Streaming Guide (2026)'
+description: >-
+  How Chrome's built-in Cast actually works — DIAL discovery and VP9/H.264 encoding — plus latency and reliability tests against three alternatives.
 slug: chromecast-plugin-chrome
 excerpt: 'Chromecast streaming from Chrome: complete setup guide, troubleshooting, latency notes, and a head-to-head with AirParrot, Reflector, and Deskreen.'
 featured_image: /content/images/chromecast-plugin-chrome/featured.webp

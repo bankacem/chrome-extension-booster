@@ -5,6 +5,8 @@ slug: ad-blocker-extension-to-chrome-2
 excerpt: >-
   Choose a Chrome ad blocker by filtering method, privacy controls, site
   compatibility, and maintenance needs—not by unverifiable speed scores.
+description: >-
+  No single ad blocker suits everyone. This guide matches you to the right one based on how you browse, not marketing claims.
 featured_image: /content/images/ad-blocker-extension-to-chrome-2/featured.webp
 category: Productivity & Tools
 tags:

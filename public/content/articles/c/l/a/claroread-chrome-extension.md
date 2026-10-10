@@ -1,6 +1,8 @@
 ---
 seo_title: "ClaroRead Chrome Extension"
 title: 'ClaroRead Chrome Extension: Assistive Tech Compared (2026)'
+description: >-
+  ClaroRead against five text-to-speech rivals, tested on news, academic, government, PDF, and Docs content to find the best assistive reading tool.
 slug: claroread-chrome-extension
 excerpt: 'ClaroRead for Chrome compared with 5 other text-to-speech and literacy support extensions: which provides the best reading support for dyslexia, ESL learners, and accessibility needs.'
 featured_image: /content/images/claroread-chrome-extension/featured.webp

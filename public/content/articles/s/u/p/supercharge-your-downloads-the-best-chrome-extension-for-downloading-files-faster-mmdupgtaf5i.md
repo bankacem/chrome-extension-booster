@@ -9,6 +9,9 @@ excerpt: >-
   Are you tired of waiting for what feels like an eternity for your files to
   download? Do you wish there was a way to speed up the process and get your
   files fast
+description: >-
+  Slow downloads? The Chrome extensions and settings that genuinely speed up file downloads — large files
+  included.
 featured_image: >-
   /content/images/supercharge-your-downloads-the-best-chrome-extension-for-downloading-files-faster-mmdupgtaf5i/featured.webp
 category: Redirect & Navigation

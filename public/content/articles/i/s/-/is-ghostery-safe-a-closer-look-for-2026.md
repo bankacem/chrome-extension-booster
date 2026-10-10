@@ -2,6 +2,8 @@
 seo_title: "Is Ghostery Safe? A Closer Look for 2026"
 id: 38254f7c-88ed-4181-ab4c-7f5af7fc12ee
 title: Is Ghostery Safe to Use? A Professional 2026 Review
+description: >-
+  A professional 2026 review: what Ghostery blocks, what data it sees, and whether it deserves your trust.
 slug: is-ghostery-safe-a-closer-look-for-2026
 excerpt: >-
   As we delve into the world of browser extensions, one question that often

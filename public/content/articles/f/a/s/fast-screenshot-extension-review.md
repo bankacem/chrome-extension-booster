@@ -2,6 +2,8 @@
 seo_title: Fast Screenshot Extension Review
 id: 0b33dbe3-2d3a-4dca-add8-cbc21115ac5c
 title: 'Fast Screenshot Extension Review: Capturing the Perfect Shot with Quick Screenshot Lite'
+description: >-
+  Speed is everything in screenshots. A close look at Quick Screenshot Lite's features and capture pace — and whether it fits your workflow.
 slug: fast-screenshot-extension-review
 excerpt: When it comes to capturing screenshots, speed and efficiency are key. A good screenshot extension can make all the difference in your productivity and workflow.
 featured_image: /content/images/fast-screenshot-extension-review/featured.webp

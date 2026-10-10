@@ -2,6 +2,8 @@
 seo_title: "Chrome High Memory Usage Fix 2026"
 id: 77a34b85-30da-46b9-8089-78c3e3c4b02c
 title: 'Chrome High Memory Usage Fix 2026: 7 Solutions That Actually Work'
+description: >-
+  Chrome eating 3.8 GB with 20 tabs open? Seven fixes tested on real hardware with before-and-after measurements — which ones actually cut RAM and which waste your time.
 slug: chrome-high-memory-usage-fix
 excerpt: '7 fixes for Chrome high memory usage on a low-RAM laptop: which solutions help most, and how much memory each one can realistically recover.'
 featured_image: /content/images/chrome-high-memory-usage-fix/featured.webp

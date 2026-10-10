@@ -5,6 +5,9 @@ slug: monitor-chrome-ram-usage-guide
 excerpt: >-
   Learn how to find out which tab or extension is slowing you down. A complete
   guide to using Chrome's built-in monitoring tools for performance.
+description: >-
+  Chrome eating all your RAM? How to use Chrome's built-in Task Manager to find the tabs and extensions hogging
+  your memory.
 featured_image: "/content/images/monitor-chrome-ram-usage-guide/featured.webp"
 category: Performance & Memory
 tags:

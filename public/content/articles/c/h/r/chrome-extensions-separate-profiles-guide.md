@@ -1,6 +1,8 @@
 ---
 id: "09e89835-3e72-43c7-b07b-acfaa72ba01f"
 title: "Chrome Extensions and Separate Profiles: Keep Work and Personal Access Apart"
+description: >-
+  Mixing work and personal browsing in one Chrome window blends accounts, cookies, and extension permissions. How separate profiles keep each side clean and safe.
 slug: chrome-extensions-separate-profiles-guide
 status: draft
 excerpt: "Design a Chrome profile architecture that cleanly separates work and personal extensions, accounts, and data—with step-by-step setup, risk boundaries, and a cleanup routine."

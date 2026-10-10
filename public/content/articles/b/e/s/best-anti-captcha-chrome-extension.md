@@ -4,6 +4,8 @@ id: e9709f70-61d4-4839-ae6a-a6bae5f8a1a9
 title: Best Anti Captcha Chrome Extensions in 2026 Compared
 slug: best-anti-captcha-chrome-extension
 excerpt: 'Buster, Rumola, and Captcha Solver Auto compared against each other: which anti captcha Chrome extension actually saves you time.'
+description: >-
+  A week solving captchas across 50 sites: which solver cracked the most puzzles fastest, and which ones wasted the tester’s time.
 featured_image: /content/images/best-anti-captcha-chrome-extension/featured.webp
 category: Productivity & Tools
 tags: []

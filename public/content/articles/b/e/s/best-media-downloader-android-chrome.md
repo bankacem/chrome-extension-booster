@@ -7,6 +7,8 @@ excerpt: >-
   Are you tired of struggling to download media files on your Android device
   using Chrome? Look no further! In this article, we'll explore the best media
   download
+description: >-
+  Android Chrome can’t install extensions at all — so how do you download media? The workarounds that actually function in 2026.
 featured_image: /content/images/best-media-downloader-android-chrome/featured.webp
 category: "Media & Downloads"
 tags:

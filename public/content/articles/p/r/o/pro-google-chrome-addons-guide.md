@@ -6,6 +6,9 @@ excerpt: >-
   A curated guide to the best Chrome addons across productivity, security, developer
   tools, social media, shopping, and entertainment — with comparisons, management
   tips, and answers to common questions.
+description: >-
+  Chrome add-ons organized by real workflows — productivity, security, development, shopping — instead of
+  another generic list.
 featured_image: /content/images/pro-google-chrome-addons-guide/featured.webp
 category: "Chrome Extensions"
 tags:

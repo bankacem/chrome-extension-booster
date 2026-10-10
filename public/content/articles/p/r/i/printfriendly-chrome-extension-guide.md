@@ -4,6 +4,9 @@ title: "PrintFriendly Chrome Extension: Clean Web Pages and Save Better PDFs"
 slug: printfriendly-chrome-extension-guide
 status: draft
 excerpt: "A practical, source-backed workflow for using the PrintFriendly Chrome extension to remove clutter, edit pages, and export cleaner PDFs for printing or sharing."
+description: >-
+  Turn cluttered web pages into clean printouts and PDFs — the PrintFriendly workflow for better printing
+  straight from Chrome.
 meta_description: "Learn a reliable workflow for using the PrintFriendly Chrome extension to remove clutter, edit content, and create cleaner PDFs. Includes steps, limits, and fixes."
 featured_image: "/content/images/printfriendly-chrome-extension-guide/featured.webp"
 category: "Chrome Extensions"

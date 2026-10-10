@@ -4,6 +4,9 @@ title: "How to Update Chrome Extensions Manually and Verify the Result"
 slug: update-chrome-extension-manually-guide
 status: draft
 excerpt: "A practical guide to trigger Chrome’s extension update check, confirm the installed version, understand why updates may appear delayed, and troubleshoot safely."
+description: >-
+  Force Chrome to check for extension updates now — manual update steps, version verification, and rollout
+  delays explained.
 meta_description: "Learn how to manually trigger Chrome extension updates, verify your installed version, understand delayed rollouts, and troubleshoot when the version doesn’t change."
 featured_image: "/content/images/update-chrome-extension-manually-guide/featured.webp"
 category: "Chrome Extensions"

@@ -1,6 +1,8 @@
 ---
 seo_title: "Best Cookie Manager for Chrome"
 title: 'Best Cookie Manager for Chrome: 4 Cookie Extensions Compared'
+description: >-
+  1,847 cookies and counting: four cookie managers tested on a 30-site rotation to see which one actually tames the clutter.
 slug: cookies-quick-manager-chrome
 excerpt: '4 cookie manager extensions for Chrome compared on memory usage, features, and privacy protection — and which one best keeps your browsing clean.'
 featured_image: /content/images/cookies-quick-manager-chrome/featured.webp

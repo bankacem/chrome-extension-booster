@@ -2,6 +2,8 @@
 seo_title: "Chrome Extensions vs Web Apps 2026"
 id: b64bc2b5-6323-4646-9946-da36e286f763
 title: 'Chrome Extensions vs Web Apps 2026: Which Is Better for Productivity?'
+description: >-
+  Extension or web app? Two weeks of head-to-head testing across 10 productivity tasks, measuring speed, memory, offline use, and integration friction.
 slug: chrome-extensions-vs-web-apps-comparison
 excerpt: >-
   Chrome extensions vs web apps for common productivity tasks: how the two

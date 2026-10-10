@@ -4,6 +4,9 @@ title: "Remove a Chrome Extension Completely: Uninstall, Revoke Access, and Veri
 slug: remove-chrome-extension-completely-guide
 status: draft
 excerpt: "A practical workflow to fully remove a Chrome extension, revoke remaining access, and verify it’s no longer active—without wiping unrelated browser data."
+description: >-
+  Uninstalling isn't enough — how to fully remove a Chrome extension, revoke its site access, and verify it's
+  truly gone.
 meta_description: "A step-by-step workflow to completely remove a Chrome extension, revoke site and incognito access, and verify it’s no longer active—plus limitations and troubleshooting."
 featured_image: "/content/images/remove-chrome-extension-completely-guide/featured.webp"
 category: "Chrome Extensions"

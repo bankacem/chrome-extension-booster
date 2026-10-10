@@ -4,6 +4,8 @@ id: 2eaa21bb-30ce-4a3b-8e56-c6784d228809
 title: 'Anti Captcha Chrome: Does Automated Captcha Solving Actually Work in 2026?'
 slug: anti-captcha-chrome
 excerpt: '4 captcha-solving services compared — Anti-Captcha, 2Captcha, Capsolver, and NopeCHA: which is fastest, which is cheapest, and which companion extensions complete the setup.'
+description: >-
+  Four captcha-solving services raced against real puzzles: speed, price, and accuracy measured so you can automate the boring parts.
 featured_image: /content/images/anti-captcha-chrome/featured.webp
 category: Productivity & Tools
 tags:

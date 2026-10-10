@@ -5,6 +5,8 @@ title: "Chrome Extensions for Students Studying Online – The Only Guide You’
 slug: chrome-extensions-for-students-studying-online-the-only-guide-youll-ever-need
 status: draft
 excerpt: "The best Chrome extensions for students studying online — focus timers, note tools, citation helpers and more, tested for LMS compatibility."
+description: >-
+  From tab jungle to study sanctuary: focus timers, note tools, and citation helpers tested to work with your school’s LMS.
 meta_description: "The best Chrome extensions for students studying online — focus timers, note tools, citation helpers and more, tested for LMS compatibility."
 featured_image: /og-image.png
 category: Productivity & Tools

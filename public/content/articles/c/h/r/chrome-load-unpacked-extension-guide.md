@@ -1,6 +1,8 @@
 ---
 id: "6e924083-8d3f-4640-925b-3bf7adad7b0b"
 title: "Load an Unpacked Chrome Extension: A Safe Local Testing Workflow"
+description: >-
+  Loading an unpacked extension is the standard local-testing workflow for developers. A safe step-by-step path from Developer mode to reload-and-test.
 slug: chrome-load-unpacked-extension-guide
 status: draft
 excerpt: "A focused, safety-first workflow to load, reload, and troubleshoot an unpacked Chrome extension with clear rules for when to refresh, inspect, or fully reload."

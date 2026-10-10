@@ -4,6 +4,8 @@ id: bc16d225-475e-486e-b3cb-5b66a0b0a8fd
 title: 'Automating Business Reports with Formula Builder: A Practical Guide'
 slug: automating-business-reports-with-formula-builder
 excerpt: 'Automating business reports with Formula Builder Pro: how it compares with manual Excel work, which companion extensions fill the gaps, and whether it saves enough time to matter.'
+description: >-
+  From spreadsheet drudgery to one-click reports: how Formula Builder Pro stacks up against manual Excel work, and the workflow that makes it sing.
 featured_image: /content/images/automating-business-reports-with-formula-builder/featured.webp
 category: Productivity & Tools
 tags:

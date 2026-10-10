@@ -1,6 +1,8 @@
 ---
 id: c74188ec-7afd-4b17-8c98-99a37e859acd
 title: 'How to Disable Chrome Notifications: A Complete Guide'
+description: >-
+  Two different problems, one guide: silencing 'Allow notifications?' prompts and revoking permissions already granted — including OS-level settings.
 seo_title: How to Disable Chrome Notifications
 slug: how-to-disable-chrome-notifications
 canonicalPath: /blog/how-to-disable-chrome-notifications

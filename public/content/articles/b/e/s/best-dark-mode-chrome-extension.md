@@ -4,6 +4,8 @@ id: f52f5aee-64ed-4319-b6c9-694b98575566
 title: 'Best Dark Mode Chrome Extensions in 2026: Eye Comfort'
 slug: best-dark-mode-chrome-extension
 excerpt: 'DarkFlow, Dark Reader, and Midnight Lizard compared: which dark mode Chrome extension is easiest on your eyes and your battery.'
+description: >-
+  A week of night browsing on an OLED laptop: eye-strain comfort and real battery savings measured across three dark-mode tools.
 featured_image: /content/images/best-dark-mode-chrome-extension/featured.webp
 category: Productivity & Tools
 tags: []

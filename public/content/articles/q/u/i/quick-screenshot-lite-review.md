@@ -7,6 +7,9 @@ excerpt: >-
   An in-depth review of Quick Screenshot Lite after 6 months of daily use.
   Capture speed, image quality, permissions, RAM usage, and comparison with 4
   competitors.
+description: >-
+  Six months of daily use distilled: is Quick Screenshot Lite really the best screenshot extension for Chrome in
+  2026?
 featured_image: /content/images/quick-screenshot-lite-review/featured.webp
 category: Productivity & Tools
 tags: []

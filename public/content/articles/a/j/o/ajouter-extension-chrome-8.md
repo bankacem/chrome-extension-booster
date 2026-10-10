@@ -6,6 +6,8 @@ title: >-
   Browser
 slug: ajouter-extension-chrome-8
 excerpt: 'How to ajouter extension Chrome explained step by step: extensions worth your time across 5 categories, and which to skip.'
+description: >-
+  New to Chrome extensions? The safe installation walkthrough plus the ten genuinely useful picks across five categories.
 featured_image: /content/images/ajouter-extension-chrome-8/featured.webp
 category: Productivity & Tools
 tags:

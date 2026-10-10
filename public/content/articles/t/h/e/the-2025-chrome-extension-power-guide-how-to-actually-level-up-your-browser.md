@@ -7,6 +7,8 @@ excerpt: >-
   The 2025 Chrome extension power guide covering keyboard shortcuts with Vimium,
   tab management with Tab Wrangler, automation with Tampermonkey, developer tools
   with React DevTools, and privacy with uBlock Origin — all curated for Manifest V3.
+description: >-
+  Level up your browser: a power-user Chrome setup built on shortcuts, tab mastery, automation, and privacy.
 featured_image: >-
   /content/images/the-2025-chrome-extension-power-guide-how-to-actually-level-up-your-browser/featured.webp
 category: "Browser Productivity"

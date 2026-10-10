@@ -1,6 +1,8 @@
 ---
 id: "cb4996c1-a84a-497b-adbd-bd4907a9d1ea"
 title: "Chrome Live Captions and Extensions: Setup, Limits, and Privacy Checks"
+description: >-
+  Chrome's built-in Live Caption versus extension-based captioning: setup steps, hard limits, and the privacy checks to run before you choose.
 slug: chrome-live-captions-extension-guide
 status: draft
 excerpt: "Decide when to use Chrome’s built‑in Live Caption and when an extension-based caption workflow is worth it. Includes setup steps, a decision table, troubleshooting, and privacy pointers."

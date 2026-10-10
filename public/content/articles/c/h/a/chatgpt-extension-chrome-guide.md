@@ -5,6 +5,8 @@ title: 'ChatGPT Extension for Chrome: Full 2026 Guide – Setup, Features & Best
 slug: chatgpt-extension-chrome-guide
 excerpt: >-
   I spent 30 days testing the top ChatGPT Chrome extensions side by side. Here is my complete guide on setup, features, companion tools, and the best alternatives for AI-powered browsing in 2026.
+description: >-
+  Three years of testing ChatGPT extensions distilled: setup walkthrough, five proven use cases, and the alternatives worth knowing.
 featured_image: /content/images/chatgpt-extension-to-chrome-5/featured.webp
 category: Productivity & Tools
 tags: []

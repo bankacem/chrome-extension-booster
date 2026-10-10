@@ -5,6 +5,9 @@ title: "Mailtrack for Gmail in Chrome: Setup, Read Receipts, and Privacy Limits"
 slug: mailtrack-gmail-chrome-guide
 status: published
 excerpt: "Learn how to install Mailtrack for Gmail in Chrome, interpret open signals, compare it with Gmail read receipts, and review privacy and account-access limits."
+description: >-
+  Mailtrack vs Gmail's native read receipts: how open tracking really works, what the recipient sees, and the
+  privacy trade-offs involved.
 meta_description: "Learn how to install Mailtrack for Gmail in Chrome, understand open signals, compare native Gmail read receipts, and review privacy limits."
 featured_image: "/content/images/mailtrack-gmail-chrome-guide/featured.webp"
 category: Productivity & Tools

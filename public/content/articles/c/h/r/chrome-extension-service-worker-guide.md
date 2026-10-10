@@ -4,6 +4,8 @@ title: "Chrome Extension Service Workers: Why Background Features Stop and Resta
 slug: chrome-extension-service-worker-guide
 status: draft
 excerpt: "MV3 service workers aren’t permanent. Learn why Chrome stops and restarts your background logic, how to design for cold starts, and how to debug user-visible failures."
+description: >-
+  MV3 background workers stop and restart by design. How to debug the lifecycle and build features that survive cold starts.
 meta_description: "Diagnose why MV3 service workers stop and restart, and design background features that survive cold starts. Includes state, debugging, and troubleshooting tips."
 featured_image: "/content/images/chrome-extension-service-worker-guide/featured.webp"
 category: "Chrome Extensions"

@@ -1,6 +1,8 @@
 ---
 seo_title: "Chrome Screen Capture Guide"
 title: 'Chrome Screen Capture Guide: How to Take, Edit, and Manage Screenshots in 2026'
+description: >-
+  Built-in tools, shortcuts, extensions, annotation: a complete screenshot workflow distilled from 10,000+ captures, designed to save you hours every week.
 slug: chrome-screen-capture-guide
 excerpt: >-
   Complete guide to screen capture in Chrome. From keyboard shortcuts to

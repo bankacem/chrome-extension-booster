@@ -2,6 +2,8 @@
 seo_title: "Chrome Web Store Extensions Guide"
 id: bfe092dd-c184-4d16-8e62-f6c2e79cc1bc
 title: 'Chrome Web Store Extensions Guide: The 10 You Actually Need'
+description: >-
+  200,000 extensions with a 3.8-star average: three weeks testing 42 extensions across seven categories to find the ten actually worth installing.
 slug: chrome-web-store-extensions-guide
 excerpt: 'Which Chrome Web Store extensions solve real problems? A detailed comparison table, a security audit checklist, and a list of 10 extensions worth your time.'
 featured_image: /content/images/chrome-web-store-extensions-guide/featured.webp

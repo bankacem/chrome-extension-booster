@@ -4,6 +4,8 @@ title: "Chrome Accessibility Extensions for Keyboard Navigation: A Practical Gui
 slug: chrome-accessibility-extensions-keyboard-navigation-guide
 status: draft
 excerpt: "Learn how to navigate and read the web in Chrome primarily by keyboard, starting with built‑in shortcuts and Caret Browsing, then adding Google‑listed extensions like High Contrast, Color Enhancer, and Long Descriptions when needed."
+description: >-
+  Ditch the mouse: Chrome’s built-in keyboard tools including Caret Browsing, plus the extensions that genuinely improve navigation.
 meta_description: "Improve keyboard navigation and reading in Chrome using built‑in shortcuts and Caret Browsing, plus when to add High Contrast, Color Enhancer, and Long Descriptions."
 featured_image: "/content/images/chrome-accessibility-extensions-keyboard-navigation-guide/featured.webp"
 category: "Chrome Extensions"

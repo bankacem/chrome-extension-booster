@@ -7,6 +7,8 @@ excerpt: >-
   Most ad blockers promise a faster browser and quietly become the heaviest
   extension in your tab list. Here are 7 that were actually built to stay
   light, ranked by real memory and CPU footprint.
+description: >-
+  Ad blockers promise speed but some eat 4GB of RAM. Seven tested for real memory and CPU cost — the leanest blockers ranked.
 featured_image: >-
   /content/images/best-chrome-ad-blockers-without-slowing-your-browser/featured.webp
 category: Ad Blockers

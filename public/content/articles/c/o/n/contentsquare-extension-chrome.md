@@ -1,6 +1,8 @@
 ---
 seo_title: "Contentsquare Extension for Chrome Review"
 title: 'Contentsquare Extension for Chrome: UX Analytics Review'
+description: >-
+  Four UX analytics platforms tested on three real websites: data accuracy, recording quality, setup ease, and pricing compared side by side.
 slug: contentsquare-extension-chrome
 excerpt: 'Contentsquare, Hotjar, Crazy Egg, and Microsoft Clarity compared: heatmaps, session replays, pricing, and which UX analytics tool fits your team.'
 featured_image: /content/images/contentsquare-extension-chrome/featured.webp

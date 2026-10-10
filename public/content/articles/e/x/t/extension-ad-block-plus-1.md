@@ -2,6 +2,8 @@
 seo_title: "The Power of Extension Ad Block Plus"
 id: 4a151e8c-bd68-4b10-88b5-eec4c1c95674
 title: 'Unlocking a Faster Browsing Experience: The Power of Extension Ad Block Plus'
+description: >-
+  Ad Block Plus promises speed through blocking. What it actually removes, what it lets through, and how it affects your browsing pace.
 slug: extension-ad-block-plus-1
 excerpt: >-
   The internet can be a distracting place, with ads popping up left and right,

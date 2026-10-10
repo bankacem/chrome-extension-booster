@@ -3,6 +3,8 @@ seo_title: "Capture Scrolling Webpages as PNG or PDF"
 title: 'How to Capture Scrolling Webpages as PNG or PDF: 4 Methods'
 slug: capture-scrolling-webpages-as-png-or-pdf
 excerpt: '4 methods to capture scrolling webpages as PNG or PDF: browser extensions, print to PDF, DevTools, and online tools — speed, quality, and file sizes compared.'
+description: >-
+  Full-page captures for docs and research: four scrolling-screenshot methods compared for quality, speed, and convenience.
 featured_image: /content/images/capture-scrolling-webpages-as-png-or-pdf/featured.webp
 category: Productivity & Tools
 tags:

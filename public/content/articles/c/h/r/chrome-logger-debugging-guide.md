@@ -1,6 +1,8 @@
 ---
 id: aa338d09-c7d2-45ca-b7b3-065e78551970
 title: "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits"
+description: >-
+  Chrome Logger pipes server-side logs into DevTools via HTTP headers. How to set it up, fit it into a debugging workflow, and why to keep it off production.
 slug: chrome-logger-debugging-guide
 status: published
 excerpt: "Understand Chrome Logger's server-side debugging capabilities, setup process, security concerns, and alternatives for safer development workflows."

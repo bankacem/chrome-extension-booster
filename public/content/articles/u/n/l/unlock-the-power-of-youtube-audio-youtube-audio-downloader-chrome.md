@@ -7,6 +7,8 @@ excerpt: >-
   Are you tired of searching for a reliable YouTube audio downloader Chrome
   extension to extract your favorite audio tracks from YouTube videos? Look no
   further! 
+description: >-
+  A dozen YouTube audio downloaders tested: which Chrome extensions reliably extract audio tracks worth keeping.
 featured_image: >-
   /content/images/unlock-the-power-of-youtube-audio-the-ultimate-guide-to-youtube-audio-downloader-chrome-mm3umisimqw/featured.webp
 category: Redirect & Navigation

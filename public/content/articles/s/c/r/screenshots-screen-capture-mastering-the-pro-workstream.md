@@ -5,6 +5,8 @@ title: 'Screenshots & Screen Capture: Mastering the Pro Workstream'
 slug: screenshots-screen-capture-mastering-the-pro-workstream
 excerpt: >-
   Modern Screenshots & Screen Capture: Mastering the Pro Workstream Approach
+description: >-
+  Level up your screenshot game at work: a pro workflow for captures, annotations, and sharing across teams.
 
 
   In the modern digital workplace, mastering screenshots & screen capture has

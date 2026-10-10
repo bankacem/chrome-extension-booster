@@ -7,6 +7,9 @@ excerpt: >-
   As we navigate the vast expanse of the internet, our personal data and online
   security are constantly at risk. With the rise of cyber threats and data
   breaches,
+description: >-
+  A layered safer-browsing setup for Chrome: blocking malware, phishing, redirects, and trackers so the defenses
+  hold up.
 featured_image: >-
   /content/images/unlocking-the-power-of-secure-browsing-top-extensions-for-a-safe-online-experience-mm3scnaxehm/featured.webp
 category: Redirect & Navigation
