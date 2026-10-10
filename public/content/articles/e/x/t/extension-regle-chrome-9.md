@@ -119,7 +119,7 @@ Managing your extensions is crucial to ensuring they work efficiently and effect
 2. Remove any unnecessary or unused extensions to free up space and reduce clutter.
 3. Use the Chrome extensions manager to organize and categorize your extensions.
 
-### Optimizing Extension [Performance](/blog/unlocking-the-power-of-noscript-chrome-boosting-browser-security-and-performance "Unlocking the Power of Noscript Chrome: Boosting Browser Security and Performance")
+### Optimizing Extension Performance
 
 Optimizing your extension performance can help improve your browsing experience and reduce lag. Here are some tips to help you do so:
 

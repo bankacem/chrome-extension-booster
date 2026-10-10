@@ -319,7 +319,7 @@ After extensively testing various methods for enabling dark mode on Google Searc
 
 ## Frequently Asked Questions {#frequently-asked}
 
-### How do I enable dark mode on Google Search if it'[s not showing up in](/blog/fix-idm-download-bar-not-showing-in-google-chrome) my settings?
+### How do I enable dark mode on Google Search if it's not showing up in my settings?
 
 If dark mode isn't appearing in your Google Search settings, try clearing your browser cache and cookies, then accessing the settings again. In some cases, particularly with older browser versions or certain regional Google domains, the dark mode option might be hidden. You can also try accessing Google Search in an incognito window, which sometimes forces the latest interface versions to load.
 

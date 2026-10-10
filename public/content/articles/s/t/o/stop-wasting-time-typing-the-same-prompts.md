@@ -170,7 +170,7 @@ PI Prompts distinguishes itself by supporting not just ChatGPT but also other AI
 - Limited organizational features
 - Some platform adaptations aren't perfect
 
-### [Comparison Table](/blog/ai-formula-generator-excel-vs-google-sheets): Prompt Managers at a Glance
+### Comparison Table: Prompt Managers at a Glance
 
 | Extension | Storage Method | Cross-Platform Support | Best For | Key Differentiator |
 |-----------|----------------|------------------------|----------|-------------------|

@@ -333,7 +333,7 @@ In my experience, approximately 80% of functionality issues can be resolved by w
 
 In my testing, switching from a resource-heavy NoScript extension to a more lightweight option like uBlock Origin typically resolved performance degradation issues while maintaining good JavaScript blocking capabilities.
 
-### [Whitelist Not Working as Expected](/blog/unlocking-the-power-of-chrome-extensions-extension-chrome-json)
+### Whitelist Not Working as Expected
 
 **Issue**: Sites added to the whitelist still have scripts blocked.
 

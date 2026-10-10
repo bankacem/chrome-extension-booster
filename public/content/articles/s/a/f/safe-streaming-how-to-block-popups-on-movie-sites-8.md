@@ -67,7 +67,7 @@ When it comes to blocking popups on movie sites, there are several extensions av
 
 Our [Light Popup Blocker](/extension/light-popup-blocker) extension is a great option for those looking to block popups on movie sites. With its powerful blocking capabilities and easy-to-use interface, it's the perfect solution for a **safe streaming** experience.
 
-## [Comparison](/blog/privacy-badger-chrome "Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security") Table
+## Comparison Table
 
 | Extension | Blocking Capabilities | Ease of Use |
 | --- | --- | --- |
