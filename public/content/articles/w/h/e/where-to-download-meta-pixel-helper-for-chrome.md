@@ -57,7 +57,7 @@ The Meta Pixel Helper Chrome extension offers several key features that make it 
 
 Installing the Meta Pixel Helper Chrome extension is a straightforward process that requires just a few clicks. To get started, follow these steps:
 
-### [Troubleshooting](/blog/how-to-fix-facebook-pixel-helper-not-working-2026-troubleshooting) Common Issues with the Meta Pixel Helper Chrome Extension
+### Troubleshooting Common Issues with the Meta Pixel Helper Chrome Extension
 
 Like any software, the Meta Pixel Helper Chrome extension can sometimes encounter issues. Some common problems include:
 

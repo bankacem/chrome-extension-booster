@@ -169,7 +169,7 @@ The Todoist extension lets you capture tasks without leaving your current tab. H
 
 Self-discipline is a finite resource. StayFocusd lets you set a time budget for time-sink sites. Once that budget expires, the sites are inaccessible. No overriding, no cheating — brutal, effective, and essential.
 
-#### 3. Loom: Asynchronous [Communication](/blog/google-trad-plugin-15)
+#### 3. Loom: Asynchronous Communication
 
 Loom records your screen and camera simultaneously. Record, copy link, paste, done. It is the fastest way to explain a bug or give design feedback without scheduling another meeting.
 

@@ -167,19 +167,19 @@ If this guide solved one problem for you, the right companion extensions can sol
 Install only what matches a real need in your day — that is exactly how we test and recommend them.
 ## Frequently asked questions
 
-<h3>How many Chrome extensions should a power user install?</h3>
+<h3>How many Chrome extensions should a power user install?
 <p>Start with one extension for each job you can describe clearly, then keep the smallest set that solves the problem. A practical first pass is keyboard navigation, one context or session tool, one capture tool, and a password manager; add blocking or automation only when you have a defined need.</p>
 
-<h3>Should I use both a workspace manager and a tab-saver extension?</h3>
+<h3>Should I use both a workspace manager and a tab-saver extension?
 <p>Usually not at the beginning. A workspace manager is for switching between recurring projects, while a tab saver is for parking a temporary research session. Choose the job you have, test one tool, and add the other only if the workflows remain distinct.</p>
 
-<h3>How can I check whether a Chrome extension is safe?</h3>
+<h3>How can I check whether a Chrome extension is safe?
 <p>Install it from the official Chrome Web Store, confirm the publisher and privacy disclosure, read the requested permissions, check recent reviews and updates, and remove it if its access no longer matches the job it performs.</p>
 
-<h3>Does the full uBlock Origin still work in Chrome?</h3>
+<h3>Does the full uBlock Origin still work in Chrome?
 <p>The full uBlock Origin is no longer available for Chrome after the Manifest V3 transition. Chrome users can consider the separate uBlock Origin Lite extension, but it has meaningful filtering and permission limitations compared with the full project.</p>
 
-<h3>When should I use a web app instead of an extension?</h3>
+<h3>When should I use a web app instead of an extension?
 <p>Choose a web app when the task needs a full workspace, collaboration, long-term storage, or broad account administration. Choose an extension when a small action must happen in the page you are already viewing and the requested permissions are proportionate.</p>
 
 ## References

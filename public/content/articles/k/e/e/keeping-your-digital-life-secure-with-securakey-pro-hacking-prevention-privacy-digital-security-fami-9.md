@@ -112,7 +112,7 @@ SecuraKey Pro's parental controls feature allows parents to monitor and control 
 
 SecuraKey Pro's monitoring features allow parents to track their child's online activity, including the websites they visit and the apps they use.
 
-## [Comparison](/blog/privacy-badger-chrome "Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security") Table
+## Comparison Table
 
 | Feature | SecuraKey Pro | Other Password Managers |
 | --- | --- | --- |

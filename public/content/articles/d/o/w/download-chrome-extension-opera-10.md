@@ -198,9 +198,7 @@ However, I recommend occasionally checking for updates manually, particularly af
 
 During my testing, I discovered that enabling Chrome's "Developer mode" provides additional control over extension updates. This mode allows you to temporarily disable automatic updates for specific extensions, which can be useful when testing beta versions or troubleshooting compatibility issues. However, I recommend keeping automatic updates enabled for production use to ensure security.
 
-###
-
-## Companion Extensions That Complete Your Setup
+### ## Companion Extensions That Complete Your Setup
 
 If this guide solved one problem for you, the right companion extensions can solve the rest. Four picks from our catalog that fit this workflow:
 

@@ -83,7 +83,7 @@ Once you've enabled **Auto Dark Mode**, you can customize the settings to fit yo
 
 Here are a few tips for getting the most out of **Auto Dark Mode**:
 
-## [Comparison](/blog/privacy-badger-chrome) Table
+## Comparison Table
 
 | Feature | Auto Dark Mode Switcher | Other Extensions |
 | --- | --- | --- |

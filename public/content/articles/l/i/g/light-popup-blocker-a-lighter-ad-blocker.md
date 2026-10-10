@@ -71,7 +71,7 @@ Our [Light Popup Blocker](/extension/light-popup-blocker) extension is a powerfu
 - Customizable filters: Allows you to customize your ad-blocking experience by adding or removing filters.
 - Easy installation: Can be easily installed directly in your web browser.
 
-## [Comparison](/blog/ghostery-vs-ublock-origin-2026 "uBlock Origin vs Ghostery for Chrome Android: A Comprehensive Comparison") Table
+## Comparison Table
 
 | Feature | Light Popup Blocker | Other Ad-Blockers |
 | --- | --- | --- |

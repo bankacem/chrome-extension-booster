@@ -79,7 +79,7 @@ Some advanced interface extensions offer features like mini players that float o
 
 After extensive testing of dozens of Deezer extensions, I've identified several standout performers that deliver genuine value without compromising performance or security. These recommendations are based on hands-on experience with each extension, considering factors like feature richness, ease of use, impact on browser performance, and regularity of updates.
 
-### [Deezify for Chrome](/blog/deezify-chrome-6)
+### Deezify for Chrome
 
 [Deezify for Chrome: Deezer Extension Guide](/blog/deezify-chrome-6) represents one of the most comprehensive solutions I've tested. This extension transforms the Deezer interface with a modern, clean design while adding several powerful features. In my experience, the standout functionality is its advanced playlist management system, which allows for bulk operations, smart filtering, and playlist organization that goes far beyond what's possible in the native interface.
 

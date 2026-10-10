@@ -262,7 +262,7 @@ Download Station Chrome operates on a freemium model. The core download manageme
 
 Chrome's native download system is basic and limited, offering minimal control over downloads. Download Station Chrome provides a comprehensive alternative with features like acceleration, batch downloading, automatic organization, and virus scanning. In my testing, the extension improved download speeds by 20-70% depending on file size and server capabilities, while also providing organizational features that Chrome simply can't match.
 
-### Can I use Download Station Chrome [on mobile browsers](/blog/mobile-browsers-that-support-chrome-extensions)?
+### Can I use Download Station Chrome on mobile browsers?
 
 Download Station Chrome is specifically designed for desktop Chrome browsers and isn't available for mobile platforms. However, if you're looking for download management solutions on mobile, you might want to check out our guide on [mobile browsers that support Chrome extensions](/blog/mobile-browsers-that-support-chrome-extensions) for alternative options that might offer similar functionality on mobile devices.
 

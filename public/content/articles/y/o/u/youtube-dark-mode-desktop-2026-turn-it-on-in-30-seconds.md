@@ -58,7 +58,7 @@ To enable Dark Mode on YouTube desktop, follow these simple steps:
 
 That's it! You've successfully enabled Dark Mode on YouTube desktop. If you want to switch back to the default theme, simply follow the same steps and toggle the switch off.
 
-### Using [Browser Extensions](/blog/the-elite-stack-essential-chrome-extensions-for-work-pro-environments "The Elite Stack: Essential Chrome Extensions for Work Pro Environments") to Enhance Your YouTube Experience
+### Using Browser Extensions to Enhance Your YouTube Experience
 
 While YouTube's built-in Dark Mode is a great feature, you can take your viewing experience to the next level with the help of browser extensions. For example, our [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) extension can automatically switch between dark and light modes based on your system settings or time of day. This can be especially useful if you're using a laptop or desktop with multiple monitors.
 

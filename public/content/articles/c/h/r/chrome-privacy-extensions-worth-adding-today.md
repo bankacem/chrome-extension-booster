@@ -181,7 +181,7 @@ The threat landscape evolves constantly, with new tracking methods and security 
 
 Be cautious about extensions that request excessive permissions. A privacy extension should only ask for access to the data it needs to perform its function. For example, an ad blocker needs access to browse the web but shouldn't need access to your browsing history or passwords.
 
-### [Comparison of Key](/blog/privacy-badger-chrome-partial) Privacy Extensions
+### Comparison of Key Privacy Extensions
 
 | Extension | Primary Function | Performance Impact | Key Differentiator |
 |-----------|------------------|-------------------|-------------------|

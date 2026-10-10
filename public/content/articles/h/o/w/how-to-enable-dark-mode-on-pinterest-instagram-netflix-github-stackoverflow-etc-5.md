@@ -97,7 +97,7 @@ Many other websites, including YouTube, Twitter, and Reddit, also offer Dark Mod
 
 If you're having trouble finding the Dark Mode option on a particular website, you can also try using our [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) Chrome extension, which can automatically switch between dark and light modes for you. Additionally, you can use our [Redirect Shield](/extension/redirect-shield) extension to protect yourself from malicious redirects and popups, and our [Light Popup Blocker](/extension/light-popup-blocker) extension to block annoying popups and intrusive ads.
 
-## [Comparison](/blog/privacy-badger-chrome "Privacy Badger vs Ghostery: The Ultimate Comparison for Enhanced Online Security") Table
+## Comparison Table
 
 | Website | Dark Mode Option | Location |
 | --- | --- | --- |

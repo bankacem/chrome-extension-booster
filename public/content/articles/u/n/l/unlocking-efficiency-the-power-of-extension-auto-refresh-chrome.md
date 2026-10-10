@@ -477,7 +477,7 @@ Currently, auto refresh functionality is primarily limited to desktop browsers. 
 
 This development will be particularly valuable for professionals who need to monitor information across multiple devices throughout their day.
 
-### [Enhanced Privacy and](/blog/extension-auto-refresh-chrome-2) Security Features
+### Enhanced Privacy and Security Features
 
 As privacy concerns continue to grow, future auto refresh extensions will likely incorporate more robust security features:
 

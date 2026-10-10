@@ -76,7 +76,7 @@ So, why should you use a YouTube dark mode extension Chrome? Here are some benef
 
 With these benefits, it's no wonder why YouTube dark mode extension Chrome is becoming increasingly popular among YouTube users.
 
-## Other [Extensions](/blog/effortless-image-downloading-bulk-image-downloader-chrome-extensions "Effortless Image Downloading: A Comprehensive Guide to Bulk Image Downloader Chrome Extensions") to Enhance Your YouTube Experience
+## Other Extensions to Enhance Your YouTube Experience
 
 In addition to our [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) extension, there are other extensions that can enhance your YouTube experience. Some of these extensions include:
 
