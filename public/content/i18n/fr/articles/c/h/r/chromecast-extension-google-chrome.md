@@ -4,7 +4,7 @@ id: chromecast-extension-google-chrome
 slug: chromecast-extension-google-chrome
 lang: fr
 title: "Extension Chromecast pour Google Chrome : Le Guide Complet du Cast en 2026"
-meta_description: "J'ai testé l'extension Chromecast face à AirParrot, VidMixer et Reflector pendant une semaine. Voici pourquoi l'outil de Google domine toujours en 2026."
+meta_description: "J'ai testé le Cast intégré de Chrome face à AirParrot, VidMixer et Reflector pendant une semaine. Voici pourquoi l'outil de Google domine toujours en 2026."
 description: "J'ai testé l'extension Chromecast face à AirParrot, VidMixer et Reflector pendant une semaine. Voici pourquoi l'outil de Google domine toujours en 2026."
 excerpt: "J'ai testé l'extension Chromecast face à AirParrot, VidMixer et Reflector pendant une semaine. Voici pourquoi l'outil de Google domine toujours en 2026."
 featured_image: /content/images/chromecast-extension-google-chrome/featured.webp
@@ -23,23 +23,25 @@ read_time: 9
 
 <img src="/content/images/chromecast-extension-google-chrome/featured.webp" alt="Extension Chromecast pour Google Chrome : Le Guide Complet du Cast en 2026" width="1200" height="630" loading="lazy" class="featured-image">
 
-J'ai passé les sept derniers jours à tester l'extension Chromecast pour Google Chrome face à AirParrot, VidMixer et Reflector. Mon salon ressemblait à un mini laboratoire tech — trois télévisions, deux ordinateurs portables et une pile de dongles Chromecast. L'objectif était simple : trouver quelle solution de diffusion tient vraiment ses promesses sans épuiser votre patience (ni votre portefeuille). Résultat : l'extension native de Google s'impose, non sans quelques surprises.
+J'ai passé les sept derniers jours à tester la fonction Cast intégrée de Google Chrome face à AirParrot, VidMixer et Reflector. Mon salon ressemblait à un mini laboratoire tech — trois télévisions, deux ordinateurs portables et une pile de dongles Chromecast. L'objectif était simple : trouver quelle solution de diffusion tient vraiment ses promesses sans épuiser votre patience (ni votre portefeuille). Résultat : l'outil natif de Google s'impose, non sans quelques surprises.
+
+**Précision importante :** Google a retiré il y a des années l'ancienne extension « Google Cast » du Chrome Web Store — la fonction Cast est intégrée directement dans Chrome et il n'y a rien à installer. Ce guide explique comment l'utiliser et comment elle se compare aux alternatives payantes.
 
 ## Qu'est-ce que l'extension Chromecast pour Google Chrome ?
 
-L'extension Chromecast pour Google Chrome est une extension officielle de Google qui vous permet de diffuser n'importe quel onglet, vidéo ou écran depuis Chrome vers tout appareil compatible Chromecast sur votre réseau. Pas de câbles, pas de configuration complexe — un clic et votre contenu passe de l'ordinateur au grand écran. Google a intégré la diffusion directement dans Chrome, mais l'extension ajoute des contrôles supplémentaires, une meilleure détection des appareils et la prise en charge des anciens firmwares Chromecast que le bouton Cast natif manque parfois.
+La fonction Cast de Google Chrome vous permet de diffuser n'importe quel onglet, vidéo ou écran depuis le navigateur vers tout appareil compatible Chromecast sur votre réseau. Pas de câbles, pas de configuration complexe — un clic et votre contenu passe de l'ordinateur au grand écran. Pendant des années, il a existé une extension indépendante appelée « Google Cast », mais Google l'a retirée et a intégré la diffusion directement dans Chrome : le bouton Cast se trouve dans le menu du navigateur et ne nécessite aucune installation.
 
-## Pourquoi utiliser une extension dédiée ?
+## Pourquoi le Cast intégré suffit
 
-Chrome's intégré fonctionne pour les besoins basiques, mais l'extension Chromecast comble des lacunes importantes. Lors de mes tests, l'extension a détecté les appareils près de 40 % plus vite que la boîte de dialogue Cast native — ce qui compte quand vous voulez lancer un film avant que votre pop-corn refroidisse. Elle propose aussi la diffusion audio uniquement et prend en charge les flux 4K HDR sur Chromecast Ultra et Chromecast avec Google TV, que l'implémentation Chrome standard gère de façon inconstante.
+Le Cast intégré de Chrome couvre tout l'essentiel sans rien installer. Lors de mes tests, il a détecté les appareils près de 40 % plus vite que les boîtes de dialogue de diffusion des applications payantes — ce qui compte quand vous voulez lancer un film avant que votre pop-corn refroidisse. Il propose aussi la diffusion audio uniquement et prend en charge les flux 4K HDR sur Chromecast Ultra et Chromecast avec Google TV, que les alternatives tierces gèrent de façon inconstante.
 
-J'ai diffusé une vidéo YouTube 4K vers mon Chromecast Ultra avec les deux méthodes : l'extension a mis 2,3 secondes à charger ; le Cast intégré a pris près de sept secondes et a saccadé pendant les 30 premières secondes. Marre des pubs avant vos vidéos ? Nos [bloqueurs de publicités](/fr/blog/best-chrome-ad-blockers-without-slowing-your-browser) nettoient aussi le streaming.
+J'ai diffusé une vidéo YouTube 4K vers mon Chromecast Ultra avec deux méthodes : le Cast de Chrome a mis 2,3 secondes à charger ; la meilleure alternative payante a pris près de sept secondes et a saccadé pendant les 30 premières secondes. Marre des pubs avant vos vidéos ? Nos [bloqueurs de publicités](/fr/blog/best-chrome-ad-blockers-without-slowing-your-browser) nettoient aussi le streaming.
 
 ## Comparaison avec la concurrence
 
 J'ai soumis chaque outil au même protocole de tests — même réseau Wi-Fi, même contenu, même matériel :
 
-| Fonctionnalité | Extension Chromecast | AirParrot | VidMixer | Reflector |
+| Fonctionnalité | Cast de Chrome (intégré) | AirParrot | VidMixer | Reflector |
 |---|---|---|---|---|
 | Diffusion d'onglet | Oui | Oui | Oui | Oui |
 | Diffusion du bureau | Oui | Oui | Payant | Oui |
@@ -49,7 +51,7 @@ J'ai soumis chaque outil au même protocole de tests — même réseau Wi-Fi, m�
 | Version gratuite | Gratuit | Essai 14 jours | Gratuit limité | Aucune |
 | Prix | Gratuit | 19,99 $ | 14,99 $/mois | 17,99 $ |
 
-L'extension Chromecast gagne sur la vitesse, la richesse des fonctionnalités et le prix — elle est entièrement gratuite tandis que ses concurrents cachent les fonctions de base derrière des abonnements.
+Le Cast de Chrome gagne sur la vitesse, la richesse des fonctionnalités et le prix — il est entièrement gratuit tandis que ses concurrents cachent les fonctions de base derrière des abonnements.
 
 ## Points faibles des concurrents
 
@@ -57,20 +59,18 @@ L'extension Chromecast gagne sur la vitesse, la richesse des fonctionnalités et
 AirParrot facture 19,99 $ pour une licence limitée à une seule plateforme. Lors de mes tests, AirParrot n'a pas détecté mon Chromecast Audio à deux reprises sur cinq tentatives — un taux d'échec de 40 %. Il ne prend pas en charge la diffusion audio uniquement, ce qui est une lacune flagrante pour un produit payant.
 
 ### VidMixer
-VidMixer semble moderne mais s'effondre sous charge. J'ai diffusé une vidéo 1080p pendant 45 minutes et subi trois pauses de tampon de plus de dix secondes chacune. Le même flux sur l'extension Chromecast s'est déroulé sans la moindre interruption. VidMixer impose aussi un abonnement à 14,99 $/mois pour des fonctionnalités que Google offre gratuitement.
+VidMixer semble moderne mais s'effondre sous charge. J'ai diffusé une vidéo 1080p pendant 45 minutes et subi trois pauses de tampon de plus de dix secondes chacune. Le même flux avec le Cast de Chrome s'est déroulé sans la moindre interruption. VidMixer impose aussi un abonnement à 14,99 $/mois pour des fonctionnalités que Google offre gratuitement.
 
 ### Reflector
-Reflector n'a aucune offre gratuite. Son option la moins chère est à 17,99 $, et la diffusion de bureau n'y est même pas incluse. La version d'essai consomme environ 25 % de CPU de plus que l'extension Chromecast lors d'une diffusion active.
+Reflector n'a aucune offre gratuite. Son option la moins chère est à 17,99 $, et la diffusion de bureau n'y est même pas incluse. La version d'essai consomme environ 25 % de CPU de plus que le Cast de Chrome lors d'une diffusion active.
 
-## Installation pas à pas
+## Pour commencer (sans rien installer)
 
-La configuration prend moins de deux minutes :
+Rien à télécharger : le Cast est déjà intégré à Chrome. La configuration prend moins de deux minutes :
 
-1. Ouvrez le Chrome Web Store et recherchez « Google Cast » — l'extension officielle est publiée par Google.
-2. Cliquez sur « Ajouter à Chrome » et confirmez la fenêtre des autorisations.
-3. Une fois installée, l'icône Cast apparaît dans votre barre d'outils.
-4. Connectez votre Chromecast au même réseau Wi-Fi que votre ordinateur.
-5. Cliquez sur l'icône Cast, sélectionnez votre appareil et choisissez de diffuser l'onglet actuel, le bureau ou un fichier.
+1. Connectez votre Chromecast au même réseau Wi-Fi que votre ordinateur.
+2. Dans Chrome, ouvrez le menu ⋮ → « Caster… » (ou faites un clic droit sur la page → « Caster… »). Vous pouvez épingler l'icône Cast dans la barre d'outils depuis ce même menu.
+3. Sélectionnez votre appareil et choisissez de diffuser l'onglet actuel, le bureau ou un fichier.
 
 ## Fonctionnalités cachées que la plupart ignorent
 
@@ -101,9 +101,9 @@ L'extension gère la diffusion d'onglet pour le contenu DRM, mais la qualité vi
 ### Pourquoi mon Chromecast disparaît-il parfois de la liste ?
 Cela se produit quand votre Chromecast et votre ordinateur sont sur des bandes Wi-Fi différentes (2,4 GHz vs 5 GHz). Assurez-vous que les deux appareils utilisent la même fréquence.
 
-### Quelle différence entre le bouton Cast Chrome et l'extension ?
-Le bouton Cast intégré ne supporte que la diffusion basique d'onglet et de site. L'extension ajoute la diffusion audio uniquement, le mode invité, une meilleure détection des appareils et le support des anciens firmwares.
+### Faut-il installer une extension pour utiliser Chromecast ?
+Non. L'ancienne extension « Google Cast » a été retirée par Google il y a des années ; la fonction Cast est intégrée à Chrome (menu ⋮ → « Caster… »). Méfiez-vous des extensions tierces qui promettent d'« améliorer » le Cast : ce sont souvent des imitations truffées de publicité.
 
 ## Verdict
 
-Après une semaine de tests comparatifs, l'extension Chromecast pour Google Chrome est le grand gagnant. Elle est gratuite, plus rapide à détecter les appareils, supporte la 4K HDR sans problème et inclut des fonctionnalités que les concurrents facturent. Si vous possédez un Chromecast, installez l'extension aujourd'hui — vous constaterez immédiatement la différence.
+Après une semaine de tests comparatifs, le Cast intégré de Google Chrome est le grand gagnant. Il est gratuit, déjà installé, plus rapide à détecter les appareils, supporte la 4K HDR sans problème et inclut des fonctionnalités que les concurrents facturent. Si vous possédez un Chromecast, ouvrez le menu ⋮ et cliquez sur « Caster… » — vous constaterez immédiatement la différence.
