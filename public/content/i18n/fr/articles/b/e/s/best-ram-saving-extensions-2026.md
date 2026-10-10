@@ -24,7 +24,7 @@ meta_description: >-
   combinaison idéale pour les PC à mémoire limitée.
 status: published
 published_at: '2026-03-22T00:00:00.000+00:00'
-updated_at: '2026-06-05T12:00:00.000000+00:00'
+updated_at: "2026-10-10"
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
@@ -35,7 +35,7 @@ read_time: 9
 
 ## Chrome dévore la mémoire — voici la solution
 
-Chrome est tristement célèbre pour sa consommation de RAM. Sur mon ordinateur portable de 8 Go, ouvrir 15 onglets fait grimper l'utilisation de la mémoire à 85 %. Le système commence à utiliser le fichier d'échange, les applications ralentissent, et Chrome finit par afficher l'erreur « Aïe ! ». J'ai testé 10 extensions pendant deux semaines pour trouver lesquelles libèrent réellement de la mémoire sans casser les sites.
+Chrome est tristement célèbre pour sa consommation de RAM. Sur mon ordinateur portable de 8 Go, ouvrir 15 onglets fait grimper l'utilisation de la mémoire à 85 %. Le système commence à utiliser le fichier d'échange, les applications ralentissent, et Chrome finit par afficher l'erreur « Aïe ! ». J'ai testé 10 extensions pendant deux semaines pour trouver lesquelles libèrent réellement de la mémoire sans casser les sites. Moins d'onglets ouverts, c'est aussi une question d'organisation : une [palette de commandes](/fr/blog/chrome-command-palette-extensions) vous fait gagner en fluidité.
 
 ## Le problème avec l'économiseur de mémoire natif de Chrome
 
@@ -94,7 +94,7 @@ Après les tests, la combinaison parfaite de 3 extensions est :
 
 **1. ProTab Suspender** (suspendeur d'onglets principal) — Suspend les onglets inactifs après un délai configurable. Utilisez la liste blanche pour garder Gmail, Agenda et Spotify toujours actifs. Réglez un délai de 15 minutes pour la navigation générale.
 
-**2. uBlock Origin** (bloqueur de publicités/traqueurs) — Empêche le chargement des scripts publicitaires, économisant de la RAM avant même que les onglets ne deviennent actifs. Complète le suspendeur d'onglets en réduisant la mémoire de base par onglet.
+**2. uBlock Origin** (bloqueur de publicités/traqueurs) — Empêche le chargement des scripts publicitaires, économisant de la RAM avant même que les onglets ne deviennent actifs. Complète le suspendeur d'onglets en réduisant la mémoire de base par onglet. Les bloqueurs mal choisis alourdissent Chrome : préférez nos [bloqueurs de publicités légers](/fr/blog/best-chrome-ad-blockers-without-slowing-your-browser).
 
 **3. Light Popup Blocker** (bloqueur de superpositions) — Les fenêtres vidéo en lecture automatique, les pop-ups de newsletter et les widgets de chat flottants consomment étonnamment beaucoup de CPU et de mémoire. [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) les empêche de s'afficher, pour seulement 20 Mo de RAM.
 

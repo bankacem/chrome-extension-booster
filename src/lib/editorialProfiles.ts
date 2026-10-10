@@ -40,6 +40,14 @@ const profiles: Record<string, EditorialProfile> = {
     url: "/editorial-policy",
     image: "/content/images/authors/manus-ai.webp",
   },
+  "ExtensionTo": {
+    name: "ExtensionTo",
+    role: "Editorial team",
+    bio: "The ExtensionTo editorial team researches browser tools, verifies core claims against available documentation, and maintains the site's publishing standards.",
+    type: "Organization",
+    url: "/editorial-policy",
+    image: "/content/images/authors/extensionto.png",
+  },
   Admin: {
     name: "ExtensionTo Editorial Team",
     role: "Editorial team",
