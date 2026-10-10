@@ -15,12 +15,14 @@
     "published": "Publicado el",
     "updated": "Actualizado",
     "author": "Autor",
+    "written_by": "Escrito por",
     "tags": "Etiquetas",
     "related": "Artículos relacionados",
     "not_found": "Artículo no encontrado",
     "loading": "Cargando...",
     "no_results": "No se encontraron artículos",
-    "page": "Página"
+    "page": "Página",
+    "review_methodology": "Descubre cómo ExtensionTo investiga y actualiza sus guías"
   },
   "seo": {
     "site_name": "ExtensionTo",
