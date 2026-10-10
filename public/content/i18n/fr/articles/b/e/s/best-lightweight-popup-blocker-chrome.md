@@ -6,6 +6,9 @@ lang: fr
 excerpt: >-
   J'ai testé 6 bloqueurs de pop-up pour Chrome pour trouver l'option la plus
   légère qui bloque quand même plus de 95 % des pop-ups. Voici le gagnant.
+description: >-
+  J'ai testé 6 bloqueurs de pop-up pour Chrome pour trouver l'option la plus
+  légère qui bloque quand même plus de 95 % des pop-ups. Voici le gagnant.
 featured_image: /content/images/best-lightweight-popup-blocker-chrome/featured.webp
 category: Productivity & Tools
 tags:
@@ -16,13 +19,15 @@ keywords:
   - bloqueur pop-up leger chrome
   - meilleur bloqueur pop-up chrome
   - chrome pop-up blocker
+  - bloqueur de fenêtres surgissantes chrome
+  - extension anti pop-up
 meta_description: >-
   J'ai testé 6 bloqueurs de pop-up sur Chrome pendant une semaine sur 50
   sites. Découvrez lequel bloque 97 % des pop-ups en n'utilisant que 18 Mo
   de RAM.
 status: published
 published_at: '2026-03-04T14:11:00.98+00:00'
-updated_at: '2026-03-16T14:43:28.371851+00:00'
+updated_at: "2026-10-10"
 author: James Mitchell
 author_image: /content/images/authors/james-mitchell.png
 views: 0
@@ -76,7 +81,7 @@ read_time: 8
 
 <h3>uBlock Origin — excellent bloqueur de pub, spécialiste des pop-ups moyen</h3>
 
-<p>J'utilise uBlock Origin depuis des années et je le recommande toujours comme bloqueur de publicités principal. Mais voici ce que j'ai constaté lors de tests dédiés aux pop-ups : uBlock Origin bloque les publicités remarquablement bien, mais il traite les pop-ups comme une préoccupation secondaire. Son blocage de pop-ups repose sur des listes de filtres mises à jour mensuellement, ce qui signifie que de nouvelles variantes de pop-ups peuvent passer pendant des semaines avant qu'une mise à jour ne les rattrape.</p>
+<p>J'utilise uBlock Origin depuis des années et je le recommande toujours comme <a href="/fr/blog/best-chrome-ad-blockers-without-slowing-your-browser">bloqueur de publicités principal</a>. Mais voici ce que j'ai constaté lors de tests dédiés aux pop-ups : uBlock Origin bloque les publicités remarquablement bien, mais il traite les pop-ups comme une préoccupation secondaire. Son blocage de pop-ups repose sur des listes de filtres mises à jour mensuellement, ce qui signifie que de nouvelles variantes de pop-ups peuvent passer pendant des semaines avant qu'une mise à jour ne les rattrape.</p>
 
 <p>Durant mon test sur 50 sites, uBlock Origin a laissé passer 3 pop-ups sur 50 que Light Popup Blocker a intercepté. Il s'agissait principalement de superpositions de newsletter utilisant un rendu dynamique pour contourner les listes de filtres statiques. L'extension manque aussi d'une liste blanche dédiée aux pop-ups — vous autorisez tous les pop-ups d'un site ou aucun. Cela devenait agaçant sur les sites bancaires où un pop-up légitime pour l'authentification à deux facteurs était bloqué au milieu du spam.</p>
 
@@ -111,12 +116,12 @@ read_time: 8
 <tr><th>Extension</th><th>Ce qu'elle fait</th></tr>
 </thead>
 <tbody>
-<tr><td><a href="https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee">Quick Screenshot Lite</a></td><td>Capture des preuves de pop-ups et des captures d'écran propres pour la documentation</td></tr>
+<tr><td><a href="https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee">Quick Screenshot Lite</a></td><td>Capture des preuves de pop-ups et des <a href="/fr/blog/best-chrome-screenshot-extensions-2026-complete-guide">captures d’écran</a> propres pour la documentation</td></tr>
 <tr><td><a href="https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii">Light Popup Blocker</a></td><td>Le champion léger — 97 % de taux de blocage pour 18 Mo</td></tr>
 <tr><td><a href="https://chromewebstore.google.com/detail/redirect-shield-stop-auto/pofolffdhjffglfphiagpbnlegjbnbhp">Redirect Shield</a></td><td>Bloque les chaînes de redirection déclenchées par les pop-ups quand vous cliquez n'importe où sur une page</td></tr>
 <tr><td><a href="https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj">ProTab Suspender</a></td><td>Libère de la RAM pour que Chrome ne ralentisse pas sous une attaque de pop-ups</td></tr>
 <tr><td><a href="https://chromewebstore.google.com/detail/offline-reader-pro/bgbojccanmjdniomhccefkakjaedajhf">Offline Reader Pro</a></td><td>Sauvegarde le contenu d'articles hors ligne après avoir fermé des pages saturées de pop-ups</td></tr>
-<tr><td><a href="https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi">SecuraKey Pro</a></td><td>Protège vos identifiants des pop-ups de phishing qui imitent des formulaires de connexion</td></tr>
+<tr><td><a href="https://chromewebstore.google.com/detail/securakey-pro-password-ma/omeencccnkninlofbggfcfiohapajhgi">SecuraKey Pro</a></td><td>Protège <a href="/fr/blog/how-to-store-passwords-safely-in-your-browser">vos identifiants</a> des pop-ups de phishing qui imitent des formulaires de connexion</td></tr>
 <tr><td>Glasp</td><td>Surligne et sauvegarde du texte avant que les pop-ups ne vous forcent à fermer la page</td></tr>
 <tr><td>DarkFlow</td><td>Réduit la fatigue oculaire lors de la navigation nocturne sur des sites saturés de pop-ups</td></tr>
 </tbody>
