@@ -48,7 +48,8 @@ schema:
         Network.
 canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 updated_at: "2026-09-17T13:06:01.000+00:00"
-
+keywords: [monitor chrome ram usage, chrome task manager ram 2026, find memory hogging tabs
+    chrome, check chrome memory usage, chrome ram monitor extension]
 ---
 <img src="/content/images/monitor-chrome-ram-usage-guide/featured.webp" alt="monitor-chrome-ram-usage-guide" width="1200" height="630" loading="lazy" class="featured-image">
 

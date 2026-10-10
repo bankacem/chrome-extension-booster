@@ -33,6 +33,8 @@ updated_at: "2026-09-17T10:54:12.000+00:00"
 description: >-
   Chrome using too much memory? Use Task Manager, Performance settings, and a
   safe tab-by-tab checklist to identify the cause before installing an extension.
+keywords: [chrome memory usage fix 2026, reduce chrome memory usage, chrome using too much memory,
+  chrome performance settings memory, check chrome memory usage]
 ---
 <img src="/content/images/how-to-fix-chrome-memory-2026/featured.webp" alt="how-to-fix-chrome-memory-2026" width="1200" height="630" loading="lazy" class="featured-image">
 

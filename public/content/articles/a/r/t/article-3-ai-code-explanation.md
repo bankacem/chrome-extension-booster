@@ -8,10 +8,12 @@ image_url: /content/images/article-3-ai-code-explanation.jpg
 title: >-
   AI Code Explanation Chrome Extension: The Ultimate Guide for Developers in
   2026
+author: "James Mitchell"
 meta_description: "Discover the best AI code explanation Chrome extensions for 2026. Learn how to understand complex code instantly, debug faster, and level up your."
 description: "Discover the best AI code explanation Chrome extensions for 2026. Learn how to understand complex code instantly, debug faster, and level up your."
 category: "Chrome Extensions"
 updated_at: '2026-09-23T13:56:58.000+00:00'
+keywords: ['ai code explanation tool', 'ai code explainer chrome extension', 'understand code faster ai', 'code debugging ai 2026', 'developer productivity tools']
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

@@ -9,6 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-823246.jpg
 title: >-
   ⚙️ ChatGPT Custom Instructions Chrome Extensions (2026) — Make ChatGPT Sound
   Exactly Like You
+author: "James Mitchell"
 meta_description: "A ChatGPT custom instructions extension fixes the two-field limit — unlimited prompt libraries, variables, and tone presets compared for 2026."
 description: >-
   ⚙️ ChatGPT Custom Instructions Chrome Extensions 2026 — Make ChatGPT Sound
@@ -16,6 +17,9 @@ description: >-
 category: "AI Tools"
 updated_at: '2026-09-14T12:00:00.000+00:00'
 read_time: 7
+keywords: [chatgpt custom instructions extension, chatgpt prompt library chrome extension, custom
+    instructions manager 2026, chatgpt persona presets extension, unlimited chatgpt
+    instructions]
 ---
 
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026

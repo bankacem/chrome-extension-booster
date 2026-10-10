@@ -8,6 +8,7 @@ image_url: /content/images/article2-bitwarden-setup-guide.jpg
 title: >-
   How to Set Up the Bitwarden Chrome Extension in 2026: A Complete Step-by-Step
   Guide
+author: "James Mitchell"
 meta_description: "This article2 Bitwarden setup guide walks through installing the Chrome extension, importing passwords, autofill settings, 2FA, and fixes."
 description: >-
   How to Set Up the Bitwarden Chrome Extension in 2026: A Complete Step-by-Step
@@ -15,6 +16,7 @@ description: >-
 category: "Chrome Extensions"
 updated_at: '2026-09-14T12:00:00.000+00:00'
 read_time: 7
+keywords: ['bitwarden setup guide', 'how to set up bitwarden', 'bitwarden chrome extension tutorial', 'bitwarden vault setup 2026', 'free password manager setup']
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

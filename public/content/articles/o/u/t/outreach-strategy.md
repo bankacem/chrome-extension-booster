@@ -5,9 +5,12 @@ published_at: '2026-07-30'
 featured_image: /content/images/outreach-strategy.jpg
 image_url: /content/images/outreach-strategy.jpg
 title: Guest Post Outreach Strategy & List
+author: "James Mitchell"
 meta_description: 'Subject: Data-Driven Guide: Chrome Memory Optimization in 2026'
 description: 'Subject: Data-Driven Guide: Chrome Memory Optimization in 2026'
 category: "Chrome Extensions"
+keywords: [guest post outreach strategy, link building outreach email, chrome extension seo
+    outreach, guest blogging strategy 2026, backlink outreach template]
 ---
 
 **Site:** extensionto.com

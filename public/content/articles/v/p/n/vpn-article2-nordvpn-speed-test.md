@@ -7,12 +7,15 @@ featured_image: /content/images/vpn-article2-nordvpn-speed-test.jpg
 image_url: /content/images/vpn-article2-nordvpn-speed-test.jpg
 title: >-
   NordVPN Chrome Extension: What to Know About Speed (2026)
+author: "James Mitchell"
 meta_description: "How much the NordVPN Chrome extension can affect connection speed, what influences it, and what to check before relying on a VPN extension."
 description: >-
   NordVPN Chrome Extension: What to Know About Speed in 2026 — how the
   extension can affect your connection.
 category: "Security & Privacy"
 updated_at: '2026-09-14T12:00:00.000+00:00'
+keywords: [nordvpn chrome extension speed, nordvpn speed test 2026, does nordvpn slow internet,
+  nordvpn browser extension review, fastest vpn chrome extension]
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

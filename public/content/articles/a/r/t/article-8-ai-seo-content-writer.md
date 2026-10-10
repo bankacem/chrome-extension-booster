@@ -6,10 +6,12 @@ published_at: '2026-06-24'
 featured_image: /content/images/article-8-ai-seo-content-writer.jpg
 image_url: /content/images/article-8-ai-seo-content-writer.jpg
 title: 'AI SEO Content Writer Chrome Extension: The Ultimate Guide for 2026'
+author: "James Mitchell"
 meta_description: "Discover the best AI SEO content writer Chrome extensions for 2026. Learn how to write search-engine-optimized content that ranks #1, drives organic."
 description: "Discover the best AI SEO content writer Chrome extensions for 2026. Learn how to write search-engine-optimized content that ranks #1, drives organic."
 category: "Chrome Extensions"
 updated_at: '2026-09-23T13:56:58.000+00:00'
+keywords: ['ai seo content writer', 'seo content writer chrome extension', 'ai article writer seo 2026', 'rank higher with ai content', 'organic traffic ai tools']
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

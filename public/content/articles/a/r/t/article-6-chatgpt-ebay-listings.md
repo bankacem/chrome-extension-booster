@@ -6,10 +6,12 @@ published_at: '2026-06-22'
 featured_image: /content/images/article-6-chatgpt-ebay-listings.jpg
 image_url: /content/images/article-6-chatgpt-ebay-listings.jpg
 title: 'ChatGPT for eBay Listings Chrome: The Ultimate Guide for Sellers in 2026'
+author: "James Mitchell"
 meta_description: "Discover the best ChatGPT-powered Chrome extensions for creating eBay listings in 2026. Learn how to write SEO-optimized titles, compelling descriptions."
 description: "Discover the best ChatGPT-powered Chrome extensions for creating eBay listings in 2026. Learn how to write SEO-optimized titles, compelling descriptions."
 category: "AI Tools"
 updated_at: '2026-09-23T13:56:58.000+00:00'
+keywords: ['chatgpt for ebay listings', 'ai ebay listing writer', 'ebay seo titles generator', 'sell on ebay ai tools 2026', 'ebay seller chrome extension']
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

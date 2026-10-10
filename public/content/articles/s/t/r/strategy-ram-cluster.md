@@ -6,9 +6,12 @@ published_at: '2026-08-01'
 featured_image: /content/images/strategy-ram-cluster.jpg
 image_url: /content/images/strategy-ram-cluster.jpg
 title: '12-Week Topic Cluster Strategy: Chrome RAM & Memory Management'
+author: "James Mitchell"
 meta_description: '12-Week Topic Cluster Strategy: Chrome RAM & Memory Management'
 description: '12-Week Topic Cluster Strategy: Chrome RAM & Memory Management'
 category: "Performance & Memory"
+keywords: [chrome ram memory management, chrome memory management guide 2026, reduce chrome
+    ram usage, chrome memory saver tips, browser memory optimization]
 ---
 
 **Target Keyword:** Chrome RAM/Memory Management

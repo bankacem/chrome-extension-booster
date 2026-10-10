@@ -6,10 +6,12 @@ published_at: '2026-06-12'
 featured_image: /content/images/article-13-chatgpt-google-docs.jpg
 image_url: /content/images/article-13-chatgpt-google-docs.jpg
 title: 'ChatGPT for Google Docs Chrome: The Ultimate Guide for 2026'
+author: "James Mitchell"
 meta_description: "Discover the best ChatGPT-powered Chrome extensions for Google Docs in 2026. Learn how to write, edit, and optimize documents with AI assistance directly."
 description: "Discover the best ChatGPT-powered Chrome extensions for Google Docs in 2026. Learn how to write, edit, and optimize documents with AI assistance directly."
 category: "AI Tools"
 updated_at: '2026-09-14T12:00:00.000+00:00'
+keywords: ['chatgpt for google docs', 'ai writing assistant google docs', 'chatgpt google docs chrome extension', 'ai document editor 2026', 'write faster with ai']
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

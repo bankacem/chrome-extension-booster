@@ -9,6 +9,7 @@ image_url: /content/images/deepseek-markdown-20260603-aa2cb9.jpg
 title: >-
   📊 ChatGPT for Google Sheets Chrome Extensions (2026) — Turn Your Spreadsheet
   Into an AI Robot
+author: "James Mitchell"
 meta_description: "The best ChatGPT for Google Sheets extensions compared for 2026 — AI formulas, web scraping, real cost per 10,000 calls, and which tool fits your workflow."
 description: >-
   📊 ChatGPT for Google Sheets Chrome Extensions 2026 — Turn Your Spreadsheet
@@ -16,6 +17,8 @@ description: >-
 category: "AI Tools"
 updated_at: '2026-09-14T12:00:00.000+00:00'
 read_time: 8
+keywords: [chatgpt for google sheets extension, ai formulas google sheets chrome, gpt in spreadsheets
+    extension 2026, ai spreadsheet assistant chrome, chatgpt sheets integration]
 ---
 
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026

@@ -9,12 +9,14 @@ image_url: /content/images/deepseek-markdown-20260603-266737.jpg
 title: >-
   AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking
   Language Barriers
+author: "James Mitchell"
 meta_description: "AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking Language Barriers — AI Translator Chrome Extension Free: The Complete 2026 Guide to..."
 description: >-
   AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking
   Language Barriers
 category: "Chrome Extensions"
 updated_at: '2026-09-23T13:56:58.000+00:00'
+keywords: ['free ai translator chrome extension', 'ai translation extension chrome', 'translate web pages ai', 'best translator extension 2026', 'real time translation tool']
 ---
 
 <img src="/content/images/ai-translator-chrome-extension-free/featured.webp" alt="AI Translator Chrome Extension Free: The Complete 2026 Guide to Breaking Language Barriers" width="1200" height="630" loading="lazy" class="featured-image">

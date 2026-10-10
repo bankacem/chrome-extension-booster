@@ -7,10 +7,13 @@ published_at: '2026-07-25'
 featured_image: /content/images/deepseek-markdown-20260603-e7d32b.jpg
 image_url: /content/images/deepseek-markdown-20260603-e7d32b.jpg
 title: 'ChatGPT Voice Input Chrome Extension: The Complete 2026 Guide to Talking to AI'
+author: "James Mitchell"
 meta_description: "A 2026 guide to ChatGPT voice input extensions for Chrome, comparing the top free options for talking to AI instead of typing."
 description: 'ChatGPT Voice Input Chrome Extension: The Complete 2026 Guide to Talking to AI'
 category: "AI Tools"
 updated_at: '2026-09-23T13:56:58.000+00:00'
+keywords: [chatgpt voice input extension, talk to chatgpt chrome extension, voice dictation
+    chatgpt 2026, speech to text ai chrome, chatgpt microphone extension]
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

@@ -9,11 +9,13 @@ image_url: /content/images/deepseek-markdown-20260603-fb8eb4.jpg
 title: >-
   ✍️ Best AI Blog Writer Chrome Extensions (2026) — From Keyword to Published
   Post
+author: "James Mitchell"
 meta_description: "The best AI blog writer Chrome extensions for 2026 compared — pricing, brand voice, GEO tracking, and which tool turns keywords into posts that rank."
 description: ✍️ Best AI Blog Writer Chrome Extensions 2026 — From Keyword to Published Post
 category: "AI Tools"
 updated_at: '2026-09-23T13:56:58.000+00:00'
 read_time: 8
+keywords: ['best ai blog writer 2026', 'ai blog writer chrome extensions', 'ai content generator for blogs', 'write blog posts with ai', 'ai writing tools that rank']
 ---
 
 > 📌 **Article Type:** Buyer's Checklist | **Updated:** 2026

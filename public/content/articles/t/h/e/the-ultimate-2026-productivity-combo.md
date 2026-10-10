@@ -9,10 +9,14 @@ image_url: /content/images/gemini-code-1780487124644.jpg
 title: >-
   🚀 The Ultimate 2026 Productivity Combo: AI Text Summarizers & Gemini Chat
   Chrome Extensions
+author: "James Mitchell"
 meta_description: "A 2026 guide to two of the most useful browser workflows: AI text summarizer extensions for cutting through long pages, and Gemini chat extensions for Chrome."
 description: "A 2026 guide to two of the most useful browser workflows: AI text summarizer extensions for cutting through long pages, and Gemini chat extensions for Chrome."
 category: "Productivity & Tools"
 updated_at: '2026-09-23T13:56:58.000+00:00'
+keywords: [ai productivity chrome extensions 2026, ai text summarizer gemini chrome, best ai
+    browser extensions productivity, summarizer and ai chat combo, chrome ai workflow
+    extensions]
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 

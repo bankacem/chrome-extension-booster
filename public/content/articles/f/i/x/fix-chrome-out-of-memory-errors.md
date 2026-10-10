@@ -45,7 +45,8 @@ schema:
         leaks.
 canonicalPath: /blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide
 updated_at: "2026-09-17T13:06:01.000+00:00"
-
+keywords: [fix chrome out of memory error, chrome out of memory 2026, chrome memory crash fix,
+  google chrome ran out of memory, chrome task manager memory]
 ---
 <img src="/content/images/fix-chrome-out-of-memory-errors/featured.webp" alt="fix-chrome-out-of-memory-errors" width="1200" height="630" loading="lazy" class="featured-image">
 
