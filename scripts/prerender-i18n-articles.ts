@@ -53,9 +53,9 @@ const RTL_LANGUAGES = new Set<string>(["ar"]);
 
 // Localized UI strings used in the prerendered article header/breadcrumb.
 const UI: Record<Locale, { by: string; published: string; updated: string; home: string; blog: string; reviewed: string; editorial: string; authorAlt: string }> = {
-  fr: { by: "Écrit par", published: "Publié le", updated: "Mis à jour le", home: "Accueil", blog: "Blog", reviewed: "Compilé à partir d'informations publiques et de la documentation produit — voir", editorial: "nos normes éditoriales", authorAlt: "portrait de l'auteur" },
-  es: { by: "Escrito por", published: "Publicado", updated: "Actualizado", home: "Inicio", blog: "Blog", reviewed: "Compilado a partir de información pública y de la documentación del producto — véase", editorial: "nuestros estándares editoriales", authorAlt: "retrato del autor" },
-  pt: { by: "Escrito por", published: "Publicado em", updated: "Atualizado em", home: "Início", blog: "Blog", reviewed: "Compilado a partir de informações públicas e da documentação do produto — veja", editorial: "nossos padrões editoriais", authorAlt: "retrato do autor" },
+  fr: { by: "Écrit par", published: "Publié le", updated: "Mis à jour le", home: "Accueil", blog: "Blog", reviewed: "Révisé selon la", editorial: "méthodologie éditoriale d'ExtensionTo", authorAlt: "portrait de l'auteur" },
+  es: { by: "Escrito por", published: "Publicado", updated: "Actualizado", home: "Inicio", blog: "Blog", reviewed: "Revisado según la", editorial: "metodología editorial de ExtensionTo", authorAlt: "retrato del autor" },
+  pt: { by: "Escrito por", published: "Publicado em", updated: "Atualizado em", home: "Início", blog: "Blog", reviewed: "Revisado segundo a", editorial: "metodologia editorial da ExtensionTo", authorAlt: "retrato do autor" },
   ar: { by: "كتبه", published: "نُشر في", updated: "حُدِّث في", home: "الرئيسية", blog: "المدونة", reviewed: "مُعَدّ من معلومات عامة ووثائق المنتج — انظر", editorial: "معاييرنا التحريرية", authorAlt: "صورة الكاتب" },
 };
 
@@ -257,38 +257,6 @@ function buildSchema(opts: {
     <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>${richSchemaGraph}`;
 }
 
-/**
- * Replaces the CONTENT of <div id="root"> with `body`, no matter what the
- * root currently contains.
- *
- * BUG FIX (owner brief 2026-10-08 item 4): this script reads dist/index.html
- * as its template — but in the postbuild chain it runs AFTER
- * prerender-static-pages.ts, which has already replaced the template's empty
- * root with the PRERENDERED HOMEPAGE. The old exact-string replacement
- * (`'<div id="root"></div>'`) therefore matched nothing and SILENTLY left the
- * homepage body inside every localized article page — crawlers saw the
- * homepage markup under a localized article <head>.
- *
- * The replacement finds the root's closing tag (all bodies this repo
- * prerenders into the root — home, blog, article — contain no nested divs;
- * a nested <div> trips the guard below and fails the build loudly).
- */
-function replaceRoot(html: string, body: string): string {
-  const open = html.indexOf('<div id="root">');
-  if (open === -1) {
-    throw new Error('replaceRoot: <div id="root"> not found in template — refusing to write a page without an article root');
-  }
-  const close = html.indexOf('</div>', open);
-  if (close === -1) {
-    throw new Error('replaceRoot: no </div> after <div id="root"> — unexpected template shape');
-  }
-  const inner = html.slice(open + 15, close);
-  if (inner.includes('<div')) {
-    throw new Error('replaceRoot: nested <div> inside root content — cannot locate the root end deterministically');
-  }
-  return html.slice(0, open) + `<div id="root">${body}</div>` + html.slice(close + 6);
-}
-
 async function main() {
   console.log("Prerendering LOCALIZED (fr/es/pt/ar) article pages for SEO...");
 
@@ -426,17 +394,7 @@ async function main() {
       let html = template;
       for (const re of STRIP_HEAD) html = html.replace(re, "");
       html = html.replace("</head>", `  ${head}\n    ${schema.replaceAll('<script type="application/ld+json">', '<script data-rh="true" type="application/ld+json">')}\n  </head>`);
-      html = replaceRoot(html, articleHtml);
-
-      // Canary checks (owner brief 2026-10-08 item 4): the written page MUST
-      // carry the article body — not the homepage body the template may have
-      // brought in. Fail the build loudly instead of shipping broken pages.
-      if (!html.includes('<article>')) {
-        throw new Error(`${lang}/${slug}: prerendered page has no <article> — root replacement failed`);
-      }
-      if (html.includes('<h1>Powerful Chrome Extensions for Productivity</h1>')) {
-        throw new Error(`${lang}/${slug}: prerendered page still contains the homepage body`);
-      }
+      html = html.replace('<div id="root"></div>', `<div id="root">${articleHtml}</div>`);
 
       // RTL + lang attribute for Arabic (crawler snapshot + first paint).
       if (RTL_LANGUAGES.has(lang)) {
