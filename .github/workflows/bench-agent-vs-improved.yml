@@ -1,0 +1,828 @@
+name: Bench — Agentic Engine vs Improved Old Line (2 arms, artifacts only)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WHAT THIS DOES (owner decision: option ب — 2026-10-01)
+#
+#   A/B benchmark, dispatch-only, of the two writing arms on a fixed topic set:
+#     • arm "improved" — seo_agent_pro/daily_article.py (_generate_content) from
+#       the ref you dispatch on. On bare main it is the current production
+#       pipeline; the #450 improvements (real SERP into analyze_competitors,
+#       section budgets, deterministic gates, targeted repair) auto-activate
+#       once #450 is merged — the log prints which features were detected.
+#     • arm "agent"    — agentic_loop.run_agentic() from ref agent/agentic-engine
+#       (PR #447), materialized into $RUNNER_TEMP via git archive.
+#
+#   GUARANTEES (enforced in the workflow and the embedded runner):
+#     • workflow_dispatch ONLY. Never runs on push/schedule.
+#     • permissions: contents: read ONLY. No commit, no push, no PR, no
+#       article file touched — all output goes to $RUNNER_TEMP/bench-001 and
+#       is uploaded as artifacts.
+#     • The secret reaches the runner ONLY via env CLEANAPIS_KEY from secrets
+#       (CLEANAPIS, falling back to CLEANAPIS_KEY like the production
+#       workflows). It is never printed, echoed or logged; no `set -x`.
+#     • timeout-minutes on the single job (one job = the whole workflow, so
+#       this bounds the entire run; GitHub Actions has no workflow-level
+#       timeout key).
+#     • HARD cap on LLM calls per run (LLM_CALL_CAP). The counting wrapper
+#       sits directly on llm_router.call in each arm's process; once the cap
+#       is hit no further call is attempted, the run stops, and partial
+#       results are still uploaded (if: always()).
+#     • SearXNG runs as a service container; a health check of 5 standard
+#       queries must pass BEFORE any LLM call is made.
+#     • First line of the runner log prints the RESOLVED model per arm, the
+#       search source and the SERP row count (the header step prints the
+#       declared configuration before that).
+#     • Both arms run the SAME single model (BENCH_MODEL = cleanapis-writer =
+#       deepseek-v4-pro-0813, production MODEL_FALLBACK_CHAIN[0]) and the SAME
+#       deterministic gates on the final body + meta.
+#
+#   DISCLOSED DEVIATIONS (also printed in the log header):
+#     • The engine's Toolbelt.web_search calls the local `z-ai` CLI, which
+#       does not exist on CI — it is patched to the SAME SearXNG container so
+#       both arms share one search source.
+#     • agents/registry.json + memory are not in the repo yet (the planned
+#       CI-migration step), so the engine arm uses an inline-minimal squad
+#       adapter with the REAL registry entries for the 11 roles it needs.
+#     • Stage routing is overridden to the single bench model (owner rule:
+#       same model on both arms).
+#     • The engine arm needs one extra counted call to produce the meta
+#       description (its loop returns body only).
+#
+#   COST ESTIMATE per mode (cleanapis catalog prices, chars/4 token estimate —
+#   NOT invoices; likely $0 within the 5M free tokens/month if quota remains):
+#     • smoke (1 topic × 2 arms): improved ≈ 8–12 calls ≈ 40–70K tok ≈ $0.02–0.05;
+#       agent ≈ 15–25 calls ≈ 90–150K tok ≈ $0.06–0.14. Total ≈ $0.08–0.20.
+#     • full (10 topics × 2 arms): ≈ 10× smoke ≈ $0.8–2.0, wall time up to ~3 h
+#       (job timeout 210 min, call cap 600).
+# ─────────────────────────────────────────────────────────────────────────────
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "smoke = 1 topic x 2 arms | full = 10 topics x 2 arms"
+        type: choice
+        options:
+          - smoke
+          - full
+        default: smoke
+        required: true
+
+run-name: "bench(agent vs improved) — ${{ inputs.mode }} — artifacts only"
+
+concurrency:
+  group: bench-agent-vs-improved
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    # single job = the whole workflow → this timeout bounds the entire run
+    timeout-minutes: ${{ inputs.mode == 'smoke' && 45 || 210 }}
+    env:
+      BENCH_MODEL: cleanapis-writer          # deepseek-v4-pro-0813 (both arms)
+      AGENTIC_REF: agent/agentic-engine      # PR #447 head (branch ref)
+      SEARXNG_URL: http://localhost:8080
+      SERP_ROWS: "10"
+      BENCH_OUT: ${{ runner.temp }}/bench-001
+    services:
+      searxng:
+        image: searxng/searxng:latest
+        ports:
+          - 8080:8080
+        env:
+          SEARXNG_BASE_URL: http://localhost:8080/
+        options: >-
+          --health-cmd "wget -q --spider http://localhost:8080/ || exit 1"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 12
+    steps:
+      - name: "0 · Declared configuration (header step)"
+        run: |
+          echo '{"bench":"agent-vs-improved","mode":"${{ inputs.mode }}","declared_model":"cleanapis-writer = deepseek-v4-pro-0813 (cleanapis) — SAME model forced on BOTH arms","search_source":"SearXNG service container @ localhost:8080 — the ONLY search source for both arms","serp_rows":10,"results":"artifacts only — no commit, no push, no article touched","secret":"CLEANAPIS via secrets env — never printed","cap":"hard LLM-call cap enforced inside the runner"}'
+
+      - name: Checkout dispatch ref (read-only, credentials not persisted)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pipeline dependencies
+        run: pip install -r seo_agent_pro/requirements.txt
+
+      - name: Materialize engine code (PR #447 ref) into $BENCH_OUT — repo untouched
+        run: |
+          git fetch --depth 1 origin "$AGENTIC_REF"
+          mkdir -p "$BENCH_OUT/engine"
+          git archive "$AGENTIC_REF" seo_agent_pro | tar -x -C "$BENCH_OUT/engine"
+          test -f "$BENCH_OUT/engine/seo_agent_pro/agentic_loop.py" \
+            || { echo "engine code missing on $AGENTIC_REF"; exit 1; }
+          echo "engine materialized from $AGENTIC_REF — nothing written inside the checkout"
+
+      - name: SearXNG — enable JSON output + disable limiter (in-container, tolerant)
+        run: |
+          set -e
+          CID="$(docker ps --filter ancestor=searxng/searxng:latest --format '{{.ID}}' | head -1)"
+          test -n "$CID" || { echo "searxng service container not found"; exit 1; }
+          docker exec "$CID" sh -c '
+            grep -q "  - json" /etc/searxng/settings.yml || \
+              sed -i "s/^\(\s*\)- html$/\1- html\n\1- json/" /etc/searxng/settings.yml
+            sed -i "s/^\(\s*\)limiter: true$/\1limiter: false/" /etc/searxng/settings.yml || true
+          '
+          docker restart "$CID" >/dev/null
+          echo "searxng configured (json output + limiter off) and restarted"
+
+      - name: "SearXNG health check — 5 standard queries BEFORE any LLM call"
+        run: |
+          python3 - <<'PY'
+          import json, time, urllib.parse, urllib.request
+          url = "http://localhost:8080/search"
+          queries = [
+              "chrome extension manifest v3",
+              "browser extension seo",
+              "chrome web store listing optimization",
+              "progressive web app vs browser extension",
+              "chrome extension keyword research",
+          ]
+          deadline = time.time() + 120
+          pending = list(queries)
+          while pending and time.time() < deadline:
+              for q in list(pending):
+                  try:
+                      u = f"{url}?{urllib.parse.urlencode({'q': q, 'format': 'json'})}"
+                      with urllib.request.urlopen(u, timeout=20) as r:
+                          data = json.loads(r.read())
+                      n = len(data.get("results", []))
+                      if r.status == 200 and n >= 1:
+                          print(f"HEALTH OK  [{n:2d} rows] {q}")
+                          pending.remove(q)
+                  except Exception as e:
+                      print(f"HEALTH wait {q!r}: {type(e).__name__}")
+              if pending:
+                  time.sleep(6)
+          if pending:
+              raise SystemExit(f"SearXNG health check FAILED for: {pending} — aborting BEFORE any LLM call")
+          print("SearXNG health check: 5/5 PASS — search source ready")
+          PY
+
+      - name: Guard — CLEANAPIS secret present (value never printed, no set -x)
+        env:
+          CLEANAPIS_KEY: ${{ secrets.CLEANAPIS || secrets.CLEANAPIS_KEY }}
+        run: |
+          if [ -z "$CLEANAPIS_KEY" ]; then
+            echo "FAIL: secret CLEANAPIS (or CLEANAPIS_KEY) is not set on this repo"
+            exit 1
+          fi
+          echo "CLEANAPIS secret present (len=${#CLEANAPIS_KEY}, value hidden)"
+
+      - name: Run bench — hard LLM-call cap; output ONLY under $BENCH_OUT
+        env:
+          CLEANAPIS_KEY: ${{ secrets.CLEANAPIS || secrets.CLEANAPIS_KEY }}
+          BENCH_MODE: ${{ inputs.mode }}
+          LLM_CALL_CAP: ${{ inputs.mode == 'smoke' && '60' || '600' }}
+        run: |
+          mkdir -p "$BENCH_OUT/serp" "$BENCH_OUT/runs"
+          cat > "$BENCH_OUT/bench_runner.py" <<'PYRUNNER'
+          #!/usr/bin/env python3
+          """bench_runner.py — Agentic engine vs improved old line, 2 arms x N topics.
+
+          Guarantees enforced here:
+          - ONE declared model (BENCH_MODEL) forced on BOTH arms, resolved and printed.
+          - ONE search source: the SearXNG service container (both arms, incl. the
+            engine's research loop — the z-ai CLI is not available on CI).
+          - Identical deterministic gates applied to both arms' final body + meta.
+          - Hard LLM-call cap per run: once the total (both arms, all topics) reaches
+            LLM_CALL_CAP no further model call is attempted and the run stops.
+          - Everything is written ONLY under $BENCH_OUT (runner temp). The repository
+            working tree is never modified: no commits, no pushes, no articles touched.
+          - Every cost figure produced is an ESTIMATE (chars/4 tokens x assumed prices),
+            never an invoice.
+          """
+          import json
+          import os
+          import re
+          import subprocess
+          import sys
+          import time
+          from pathlib import Path
+          from urllib.parse import urlparse
+
+          import requests
+
+          BENCH_OUT = Path(os.environ["BENCH_OUT"]).resolve()
+          MODE = os.environ.get("BENCH_MODE", "smoke")
+          CAP = int(os.environ.get("LLM_CALL_CAP", "60"))
+          MODEL = os.environ.get("BENCH_MODEL", "cleanapis-writer")
+          AGENTIC_REF = os.environ.get("AGENTIC_REF", "agent/agentic-engine")
+          SEARXNG = os.environ.get("SEARXNG_URL", "http://localhost:8080")
+          ROWS = int(os.environ.get("SERP_ROWS", "10"))
+          REPO = Path(os.getcwd()).resolve()
+          OLD_LINE = REPO / "seo_agent_pro"
+          ENGINE = BENCH_OUT / "engine" / "seo_agent_pro"
+          WMIN, WMAX = 2550, 3100
+
+          # ── the exact 10 topics of bench-001/002 (3 originals + 7 thinnest live) ──
+          TOPICS = {
+              "extension-chrome-chat-gpt-2": {
+                  "kw": "extension chrome chat gpt",
+                  "title": "Best ChatGPT Extension for Chrome Browsing"},
+              "easy-screenshot-chrome-comparison-2": {
+                  "kw": "Easy Screenshot Chrome Comparison",
+                  "title": "Easy Screenshot Chrome Comparison: Capturing the Perfect Shot"},
+              "why-your-browser-keeps-redirecting": {
+                  "kw": "Why your browser keeps redirecting and how to fix it",
+                  "title": "Why your browser keeps redirecting and how to fix it"},
+              "best-amoled-black-theme-for-reddit-users": {
+                  "kw": "True Black for Reddit: AMOLED Dark Themes and Extensions That Force Them",
+                  "title": "True Black for Reddit: AMOLED Dark Themes and Extensions That Force Them",
+                  "live_words": 1043},
+              "unlocking-the-power-of-merci-app-extension-chrome": {
+                  "kw": "Merci App Extension for Chrome: Full Guide",
+                  "title": "Merci App Extension for Chrome: Full Guide",
+                  "live_words": 1044},
+              "best-quick-screenshot-chrome-tools-3": {
+                  "kw": "The Quickest Screenshot Tools for Chrome",
+                  "title": "The Quickest Screenshot Tools for Chrome",
+                  "live_words": 1044},
+              "stop-annoying-ads-chrome-mobile": {
+                  "kw": "How to Stop Annoying Ads on Chrome Mobile: 2026 Guide",
+                  "title": "How to Stop Annoying Ads on Chrome Mobile: 2026 Guide",
+                  "live_words": 1046},
+              "extension-chrome-rafraichissement-automatique-15": {
+                  "kw": "Boost Your Browsing Experience with the Best Extension Chrome Rafraichissement Automatique",
+                  "title": "Boost Your Browsing Experience with the Best Extension Chrome Rafraichissement Automatique",
+                  "live_words": 1046},
+              "how-to-save-instagram-photos-and-videos": {
+                  "kw": "How to Download Instagram Photos and Videos with the Best Extension Chrome Instagram Download Tools",
+                  "title": "How to Download Instagram Photos and Videos with the Best Extension Chrome Instagram Download Tools",
+                  "live_words": 1047},
+              "enable-night-mode-on-linkedin-for-eye-protection-1": {
+                  "kw": "Enable Night Mode on LinkedIn for Eye Protection: A Guide to Reduced Blue Light Emission",
+                  "title": "Enable Night Mode on LinkedIn for Eye Protection: A Guide to Reduced Blue Light Emission",
+                  "live_words": 1050},
+          }
+
+          # Estimated catalog prices (USD per 1M tokens) — for ESTIMATE labels only.
+          P_IN, P_OUT = 0.27, 1.10
+
+
+          def wc(t: str) -> int:
+              return len(re.findall(r"\S+", t))
+
+
+          def resolve_model(alias: str) -> dict:
+              """Resolve the alias to the REAL provider/model id — no network call.
+              Catches SystemExit too: validate_config exits loudly when the key env is
+              missing, and the header must still print instead of killing the run."""
+              sys.path.insert(0, str(OLD_LINE))
+              try:
+                  import llm_router
+                  provider, model_id = llm_router.validate_config(alias)
+                  return {"alias": alias, "provider": provider, "model_id": model_id}
+              except (Exception, SystemExit) as e:  # noqa: BLE001
+                  return {"alias": alias, "provider": "?", "model_id": f"resolve-failed: {e}"}
+              finally:
+                  sys.path.pop(0)
+
+
+          # ── 1. FIRST line of the log: declared + resolved facts ──────────────────
+          resolved = {"improved": resolve_model(MODEL), "agent": resolve_model(MODEL)}
+          HEADER = {
+              "actual_model_per_arm": resolved,
+              "search_source": f"SearXNG service container @ {SEARXNG} (only search source, both arms)",
+              "serp_rows_per_query": ROWS,
+              "mode": MODE,
+              "topics": 1 if MODE == "smoke" else len(TOPICS),
+              "llm_call_cap": CAP,
+              "arms": {
+                  "improved": "daily_article._generate_content() from the dispatch ref "
+                              "(baseline on bare main; the #450 improvements auto-activate once merged)",
+                  "agent": f"agentic_loop.run_agentic() from ref {AGENTIC_REF} "
+                           "(SearXNG patched in place of the z-ai CLI; single-model override; "
+                           "inline-minimal squad because agents/registry.json is not in the repo yet)",
+              },
+              "cost_note": "all costs are ESTIMATES (chars/4 tokens, catalog price assumption), never invoices",
+          }
+          print("BENCH-HEADER " + json.dumps(HEADER, ensure_ascii=False), flush=True)
+
+
+          # ── 2. real SERP per topic from SearXNG ──────────────────────────────────
+          def fetch_serp(slug: str, kw: str) -> tuple[Path, int]:
+              try:
+                  r = requests.get(
+                      f"{SEARXNG}/search",
+                      params={"q": kw, "format": "json"}, timeout=30)
+                  r.raise_for_status()
+                  rows = []
+                  for x in r.json().get("results", [])[:ROWS]:
+                      if x.get("url"):
+                          rows.append({"title": x.get("title", ""), "host": urlparse(x["url"]).netloc,
+                                       "url": x["url"], "snippet": (x.get("content") or "")[:240]})
+              except Exception as e:  # noqa: BLE001
+                  rows, err = [], str(e)
+              else:
+                  err = ""
+              path = BENCH_OUT / "serp" / f"{slug}.json"
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_text(json.dumps({"kw": kw, "rows": rows, "error": err}, ensure_ascii=False, indent=1),
+                              encoding="utf-8")
+              return path, len(rows)
+
+
+          # ── 3. child runner (one process per topic x arm; isolates sys.path) ─────
+          CHILD_SRC = r'''
+          import json, os, re, sys, time, inspect
+          from pathlib import Path
+          from urllib.parse import urlparse
+          import requests
+
+          ARM     = os.environ["ARM"]
+          CODE    = Path(os.environ["CODE_DIR"])
+          OUT     = Path(os.environ["RESULT_PATH"])
+          BUDGET  = int(os.environ["BUDGET_REMAINING"])
+          MODEL   = os.environ["BENCH_MODEL"]
+          SEARXNG = os.environ["SEARXNG_URL"]
+          REF     = os.environ.get("AGENTIC_REF", "")
+          KW      = os.environ["TOPIC_KW"]
+          TITLE   = os.environ["TOPIC_TITLE"]
+          SLUG    = os.environ["TOPIC_SLUG"]
+          SERP    = json.loads(Path(os.environ["SERP_PATH"]).read_text(encoding="utf-8"))
+          WMIN, WMAX = 2550, 3100
+
+          def wc(t): return len(re.findall(r"\S+", t))
+
+          def gates(body, meta):
+              words = wc(body)
+              h2 = len(re.findall(r"^##\s+", body, re.M))
+              faq_i = body.find("## Frequently Asked Questions")
+              faq_h3 = len(re.findall(r"^###\s+", body[faq_i:], re.M)) if faq_i >= 0 else 0
+              has_table = bool(re.search(r"^\|[^\n]+\|\s*\n\|[-\s|:]+\|\s*\n", body, re.M))
+              vi = None
+              for m in re.finditer(r"^##\s+(.*)$", body, re.M):
+                  if "verdict" in m.group(1).lower():
+                      vi = m
+                      break
+              vwords = 0
+              if vi:
+                  nxt = re.search(r"^##\s+", body[vi.end():], re.M)
+                  seg = body[vi.end(): vi.end() + nxt.start()] if nxt else body[vi.end():]
+                  vwords = wc(seg)
+              toc = bool(re.search(r"^##\s*Table of Contents", body, re.M | re.I))
+              meta_len = len((meta or "").strip())
+              nested = bool(re.search(r"\[[^\]\n]*\[[^\]\n]*\]\([^)]*\)[^\]\n]*\]\(", body))
+              mangled = bool(re.search(r"\]\(https?://[^)\s]*\[", body))
+              checks = {
+                  "words_2550_3100": WMIN <= words <= WMAX,
+                  "meta_120_160": 120 <= meta_len <= 160,
+                  "faq8_h3_in_faq": faq_h3 >= 8,
+                  "comparison_table": has_table,
+                  "verdict_ge_150w": vwords >= 150,
+                  "toc_present": toc,
+                  "h2_ge_6": h2 >= 6,
+                  "no_nested_links": not nested,
+                  "no_mangled_urls": not mangled,
+              }
+              return {"checks": checks, "pass": all(checks.values()), "words": words,
+                      "h2": h2, "faq_h3": faq_h3, "meta_len": meta_len, "verdict_words": vwords}
+
+          sys.path.insert(0, str(CODE))
+          import llm_router  # noqa: E402
+
+          STATS = {"calls": 0, "in_tok_est": 0, "out_tok_est": 0, "secs": 0.0, "models": {}}
+          def flush():
+              OUT.with_suffix(".stats.json").write_text(json.dumps(STATS), encoding="utf-8")
+
+          _orig = llm_router.call
+          def counted(system, user, model_name, stream=True, max_tokens=None):
+              if STATS["calls"] >= BUDGET:
+                  raise SystemExit(f"LLM_CALL_CAP reached (remaining budget {BUDGET}) — stopping")
+              STATS["calls"] += 1
+              STATS["in_tok_est"] += (len(system) + len(user)) // 4
+              t0 = time.time()
+              out = _orig(system, user, model_name, stream=False, max_tokens=max_tokens)
+              STATS["secs"] += time.time() - t0
+              STATS["out_tok_est"] += len(out or "") // 4
+              try:
+                  p, m = llm_router.validate_config(model_name)
+                  key = f"{p}/{m}"
+                  STATS["models"][key] = STATS["models"].get(key, 0) + 1
+              except Exception:
+                  pass
+              flush()
+              return out
+          llm_router.call = counted
+          for _m in list(sys.modules.values()):
+              if getattr(_m, "__dict__", {}).get("call") is _orig:
+                  _m.call = counted
+
+          t0 = time.time()
+          error, body, meta, meta_via, feats = None, "", "", "", {}
+          try:
+              if ARM == "improved":
+                  import daily_article, modules  # noqa: E402  (AFTER the patch -> counted)
+                  src_ds = inspect.getsource(modules.decide_strategy).lower()
+                  feats = {
+                      "real_serp_into_analyze_competitors":
+                          any(p in inspect.signature(modules.analyze_competitors).parameters
+                              for p in ("serp", "serp_rows", "serp_results")),
+                      "section_budgets_in_decide_strategy":
+                          ("budget" in src_ds) or ("section_budget" in src_ds),
+                      "deterministic_gates_module": (CODE / "gates.py").exists(),
+                      "targeted_repair": hasattr(modules, "repair_section"),
+                  }
+                  variant = "improved" if any(feats.values()) else "baseline-main"
+                  model = daily_article.MODEL_FALLBACK_CHAIN[0]
+                  title, body, meta = daily_article._generate_content(KW, 5, model)
+                  meta_via = "pipeline (empty-meta fallback in daily_article)"
+              elif ARM == "agent":
+                  import squad_bridge, agentic_loop  # noqa: E402
+
+                  AGENTS = json.loads(os.environ["BENCH_AGENTS"])
+                  STYLE = json.loads(os.environ["BENCH_STYLE"])
+
+                  class BenchSquad:
+                      """Minimal Squad-compatible adapter (registry.json not in repo yet)."""
+                      def __init__(self):
+                          self.agents = list(AGENTS.values())
+                          self.learnings = {"lessons": []}
+                          self.style = STYLE
+                      def pick(self, role, squad=None):
+                          for a in self.agents:
+                              if a["role"] == role:
+                                  return a
+                          raise KeyError(role)
+                      def memory_block(self):
+                          return "SHARED TEAM MEMORY (bench mode): - (no lessons recorded yet)"
+                      def system_prompt(self, agent, project_block=""):
+                          head = (f"You are {agent['id']}, the {agent['role']} "
+                                  f"({agent.get('squad', 'core')} squad). {agent.get('charter', '')}")
+                          skills = agent.get("skills") or []
+                          if skills:
+                              head += "\nSkills: " + "; ".join(skills[:6])
+                          return f"{head}\n{self.memory_block()}".strip()
+                      def llm(self, system, user, stage="writer", max_tokens=8192, timeout=660):
+                          return llm_router.call(system, user, MODEL, stream=False, max_tokens=max_tokens)
+
+                  cache_p = OUT.parent / "serp_cache.json"
+                  def searxng_search(self, query, num=8):
+                      cache = json.loads(cache_p.read_text(encoding="utf-8")) if cache_p.exists() else {}
+                      if query in cache:
+                          return cache[query]
+                      rows = []
+                      try:
+                          r = requests.get(f"{SEARXNG}/search",
+                                           params={"q": query, "format": "json"}, timeout=30)
+                          for x in r.json().get("results", [])[:num]:
+                              if x.get("url"):
+                                  rows.append({"title": x.get("title", ""),
+                                               "host": urlparse(x["url"]).netloc,
+                                               "url": x["url"],
+                                               "snippet": (x.get("content") or "")[:240]})
+                      except Exception:
+                          rows = []
+                      cache[query] = rows
+                      cache_p.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+                      return rows
+                  agentic_loop.Toolbelt.web_search = searxng_search
+
+                  run_dir = OUT.parent / "agent_run"
+                  run_dir.mkdir(parents=True, exist_ok=True)
+                  def log(agent, phase, note=""):
+                      line = json.dumps({"ts": time.strftime("%H:%M:%S"), "agent": agent,
+                                         "phase": phase, "note": str(note)[:300]}, ensure_ascii=False)
+                      with open(run_dir / "agent_log.txt", "a", encoding="utf-8") as fh:
+                          fh.write(line + "\n")
+
+                  feats = {"engine_ref": REF, "search": "searxng (z-ai CLI patched out)",
+                           "squad": "inline-minimal (registry.json not in repo yet)",
+                           "stages": "single-model override (same model on both arms, owner rule)"}
+                  links_block = "- (none supplied — skip internal links, do not invent URLs)"
+                  res = agentic_loop.run_agentic(BenchSquad(), log, run_dir, TITLE, [KW],
+                                                 [], links_block, WMIN, WMAX,
+                                                 refine_body="", max_rounds=3)
+                  body = res["body"]
+                  meta = llm_router.call(
+                      "You are the seo-optimizer. Output ONLY the meta description text.",
+                      f"Write a 140-155 character meta description (one or two sentences, "
+                      f"no quotes, no word count) for this article:\n\n{body[:3000]}",
+                      MODEL, stream=False, max_tokens=300).strip()
+                  meta_via = "one counted seo-optimizer call (engine returns no meta)"
+              else:
+                  raise SystemExit(f"unknown ARM {ARM!r}")
+          except SystemExit as e:
+              error = f"CAP: {e}"
+          except Exception as e:  # noqa: BLE001
+              error = f"{type(e).__name__}: {e}"
+
+          result = {"arm": ARM, "slug": SLUG, "kw": KW, "error": error,
+                    "gates": gates(body, meta) if body else None,
+                    "meta_via": meta_via, "features": feats,
+                    "model_alias": MODEL, "stats": STATS,
+                    "secs_total": round(time.time() - t0, 1),
+                    "serp_rows_available": len(SERP.get("rows", []))}
+          OUT.write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")
+          if body:
+              (OUT.parent / f"{ARM}_body.md").write_text(body, encoding="utf-8")
+          if meta:
+              (OUT.parent / f"{ARM}_meta.txt").write_text(meta, encoding="utf-8")
+          print(f"CHILD-DONE {ARM} {SLUG} error={error} calls={STATS['calls']}", flush=True)
+          '''
+
+
+          # ── 4. orchestrate children with the hard cap ────────────────────────────
+          def run_child(arm: str, slug: str, tinfo: dict, serp_path: Path) -> dict:
+              out_dir = BENCH_OUT / "runs" / slug
+              out_dir.mkdir(parents=True, exist_ok=True)
+              result_path = out_dir / f"{arm}.json"
+              code_dir = OLD_LINE if arm == "improved" else ENGINE
+              env = dict(os.environ,
+                         ARM=arm, CODE_DIR=str(code_dir), RESULT_PATH=str(result_path),
+                         BUDGET_REMAINING=str(CAP - SPENT[0]),
+                         BENCH_MODEL=MODEL, SEARXNG_URL=SEARXNG, AGENTIC_REF=AGENTIC_REF,
+                         TOPIC_KW=tinfo["kw"], TOPIC_TITLE=tinfo["title"], TOPIC_SLUG=slug,
+                         SERP_PATH=str(serp_path),
+                         BENCH_AGENTS=json.dumps(MIN_AGENTS, ensure_ascii=False),
+                         BENCH_STYLE=json.dumps(MIN_STYLE, ensure_ascii=False))
+              log_path = out_dir / f"{arm}.stdout.log"
+              try:
+                  with open(log_path, "w", encoding="utf-8") as fh:
+                      p = subprocess.run([sys.executable, "-c", CHILD_SRC], env=env,
+                                         stdout=fh, stderr=subprocess.STDOUT, timeout=1500)
+                  rec = json.loads(result_path.read_text(encoding="utf-8")) if result_path.exists() else {
+                      "arm": arm, "slug": slug, "error": f"no result file (exit {p.returncode})",
+                      "gates": None, "stats": json.loads(
+                          result_path.with_suffix(".stats.json").read_text(encoding="utf-8"))
+                      if result_path.with_suffix(".stats.json").exists() else {"calls": 0}}
+              except subprocess.TimeoutExpired:
+                  rec = {"arm": arm, "slug": slug, "error": "child timeout (25 min)", "gates": None,
+                         "stats": {"calls": 0, "in_tok_est": 0, "out_tok_est": 0, "secs": 0, "models": {}}}
+              except Exception as e:  # noqa: BLE001
+                  rec = {"arm": arm, "slug": slug, "error": f"orchestrator: {type(e).__name__}: {e}",
+                         "gates": None,
+                         "stats": {"calls": 0, "in_tok_est": 0, "out_tok_est": 0, "secs": 0, "models": {}}}
+              SPENT[0] += int(rec.get("stats", {}).get("calls", 0))
+              return rec
+
+
+          SPENT = [0]
+
+          # inline-minimal squad: REAL registry entries (first agent per role) so the
+          # engine's prompts keep their id/role/charter/skills shape on CI. agents/
+          # (registry.json + memory) is not in the repo yet — moving it there is a
+          # separately planned step; until then this adapter is disclosed in the header.
+          MIN_AGENTS = {
+           "project-binder": {
+            "id": "AG205",
+            "role": "project-binder",
+            "squad": "leadership",
+            "charter": "Binds the agent system to external writing projects: loads project profiles, maps their frontmatter/index/deploy contracts.",
+            "skills": [
+             "project-binder",
+             "governance"
+            ]
+           },
+           "serp-analyst": {
+            "id": "AG013",
+            "role": "serp-analyst",
+            "squad": "privacy",
+            "charter": "Fetches and dissects live SERP competitors; extracts coverage gaps, content formats, angle opportunities; writes OUTDO-tactics for the writer. Domain expertise: Privacy, security, ad-blocking, permissions, safe browsing.",
+            "skills": [
+             "serp-analyst",
+             "privacy",
+             "chrome-ecosystem"
+            ]
+           },
+           "brief-architect": {
+            "id": "AG019",
+            "role": "brief-architect",
+            "squad": "privacy",
+            "charter": "Turns intel into an executable brief: angle guard vs neighbors, required sections, comparison table requirements, related links, target words. Domain expertise: Privacy, security, ad-blocking, permissions, safe browsing.",
+            "skills": [
+             "brief-architect",
+             "privacy",
+             "chrome-ecosystem"
+            ]
+           },
+           "writer": {
+            "id": "AG025",
+            "role": "writer",
+            "squad": "privacy",
+            "charter": "Drafts the full article body in markdown per brief; E-E-A-T first-person voice; dense, practical, no fluff; hits word targets. Domain expertise: Privacy, security, ad-blocking, permissions, safe browsing. Deep familiarit",
+            "skills": [
+             "writer",
+             "privacy",
+             "chrome-ecosystem"
+            ]
+           },
+           "editor": {
+            "id": "AG031",
+            "role": "editor",
+            "squad": "privacy",
+            "charter": "Line-edits for clarity, flow, compactness; performs compact-rewrite when drafts truncate; protects FAQ + Final Verdict completeness. Domain expertise: Privacy, security, ad-blocking, permissions, safe browsing. Deep fami",
+            "skills": [
+             "editor",
+             "privacy",
+             "chrome-ecosystem"
+            ]
+           },
+           "qa-gatekeeper": {
+            "id": "AG061",
+            "role": "qa-gatekeeper",
+            "squad": "privacy",
+            "charter": "Hard gates: >=2550 words (EN body), FAQ 8x H3, Final Verdict tail >120 chars, ToC anchors valid, no heading-links/nested-links/mid-word links, frontmatter YAML parses. Domain expertise: Privacy, security, ad-blocking, pe",
+            "skills": [
+             "qa-gatekeeper",
+             "privacy",
+             "chrome-ecosystem"
+            ]
+           },
+           "link-strategist": {
+            "id": "AG043",
+            "role": "link-strategist",
+            "squad": "privacy",
+            "charter": "Weaves ~6 internal + 3-5 authoritative external links with descriptive anchors; verifies every target slug exists; forbids heading/mid-word links. Domain expertise: Privacy, security, ad-blocking, permissions, safe brows",
+            "skills": [
+             "link-strategist",
+             "privacy",
+             "chrome-ecosystem"
+            ]
+           },
+           "fact-checker": {
+            "id": "AG055",
+            "role": "fact-checker",
+            "squad": "privacy",
+            "charter": "Verifies factual claims, product names, version references; hedges untestable numbers; flags invented stats; approves or bounces to editor. Domain expertise: Privacy, security, ad-blocking, permissions, safe browsing. De",
+            "skills": [
+             "fact-checker",
+             "privacy",
+             "chrome-ecosystem"
+            ]
+           },
+           "seo-optimizer": {
+            "id": "AG037",
+            "role": "seo-optimizer",
+            "squad": "privacy",
+            "charter": "Title/meta/excerpt/tags; keyword placement audit (first 100 words, 2-3 H2s); schema-friendly structure; reads natural, never stuffed. Domain expertise: Privacy, security, ad-blocking, permissions, safe browsing. Deep fam",
+            "skills": [
+             "seo-optimizer",
+             "privacy",
+             "chrome-ecosystem"
+            ]
+           },
+           "publisher": {
+            "id": "AG067",
+            "role": "publisher",
+            "squad": "privacy",
+            "charter": "Writes partitioned .md files, updates main + i18n indexes with dedupe asserts, stages force-add webps, runs final_validate, prepares commit. Domain expertise: Privacy, security, ad-blocking, permissions, safe browsing. D",
+            "skills": [
+             "publisher",
+             "privacy",
+             "chrome-ecosystem"
+            ]
+           },
+           "learning-scribe": {
+            "id": "AG203",
+            "role": "learning-scribe",
+            "squad": "leadership",
+            "charter": "After every run, writes concrete lessons (what failed, what fixed it) into learnings.json so every future agent run starts smarter.",
+            "skills": [
+             "learning-scribe",
+             "governance"
+            ]
+           }
+          }
+
+          MIN_STYLE = {
+           "voice": "Professional but conversational. First-person hands-on testing voice where credible ('I tested', 'in my setup') without fabricating lab results. Honest trade-offs and caveats. Zero fluff, zero keyword stuffing, zero marketing hype.",
+           "eeat_requirements": [
+            "Specific verifiable details: real product names, real settings paths, real browser behaviors",
+            "Balanced pros AND cons for every recommended tool",
+            "Hedge untestable numbers ('typically', 'in my testing') — never invent precise statistics, studies, or release notes",
+            "2026 context where relevant: Manifest V3, AI features, latest Chrome behavior"
+           ],
+           "banned": [
+            "In-conclusion openers (max once, prefer never)",
+            "Word counts mentioned in text",
+            "Generic anchors like 'click here' or bare URLs",
+            "Bold-everything emphasis",
+            "Fake first-person anecdotes about lab testing equipment"
+           ]
+          }
+
+          # ── 5. run: smoke = topic[0] only; full = all 10 ─────────────────────────
+          selected = list(TOPICS)[:1] if MODE == "smoke" else list(TOPICS)
+          results, skipped = [], []
+          for slug in selected:
+              tinfo = TOPICS[slug]
+              serp_path, n = fetch_serp(slug, tinfo["kw"])
+              print(f"SERP {slug}: {n} rows from SearXNG", flush=True)
+              if SPENT[0] >= CAP:
+                  skipped.append(slug)
+                  continue
+              for arm in ("improved", "agent"):
+                  if SPENT[0] >= CAP:
+                      skipped.append(f"{slug}/{arm}")
+                      continue
+                  print(f"RUN arm={arm} topic={slug} (spent {SPENT[0]}/{CAP} calls)", flush=True)
+                  rec = run_child(arm, slug, tinfo, serp_path)
+                  results.append(rec)
+                  print(f"DONE arm={arm} topic={slug} calls=+{rec.get('stats', {}).get('calls', 0)} "
+                        f"err={rec.get('error')}", flush=True)
+
+          # ── 6. summary (every cost figure labeled ESTIMATE) ──────────────────────
+          CHECKS = list(next((r["gates"]["checks"] for r in results if r.get("gates")), {}).keys())
+
+          def cost_est(rec):
+              s = rec.get("stats", {})
+              tin, tout = s.get("in_tok_est", 0), s.get("out_tok_est", 0)
+              return tin * P_IN / 1e6 + tout * P_OUT / 1e6, tin, tout
+
+          arm_tot = {}
+          for arm in ("improved", "agent"):
+              rs = [r for r in results if r["arm"] == arm]
+              ok = [r for r in rs if not r.get("error") and r.get("gates")]
+              per_check = {c: (sum(1 for r in ok if r["gates"]["checks"].get(c)) , len(ok))
+                           for c in CHECKS}
+              c_est = sum(cost_est(r)[0] for r in rs)
+              tok = (sum(cost_est(r)[1] for r in rs), sum(cost_est(r)[2] for r in rs))
+              arm_tot[arm] = {
+                  "runs": len(rs), "ok": len(ok), "errors": len(rs) - len(ok),
+                  "gates_all_pass": sum(1 for r in ok if r["gates"]["pass"]),
+                  "per_gate_pass": {c: f"{p}/{n}" for c, (p, n) in per_check.items()},
+                  "llm_calls": sum(r.get("stats", {}).get("calls", 0) for r in rs),
+                  "tok_est": tok, "cost_est_usd": round(c_est, 4),
+                  "secs": round(sum(r.get("stats", {}).get("secs", 0) for r in rs), 1),
+                  "words": [r["gates"]["words"] for r in ok],
+              }
+
+          summary = {
+              "header": HEADER,
+              "spent_llm_calls": SPENT[0], "cap": CAP, "cap_hit": SPENT[0] >= CAP,
+              "skipped": skipped,
+              "per_topic": [{"slug": r["slug"], "arm": r["arm"], "error": r.get("error"),
+                             "words": r.get("gates", {}) and r["gates"].get("words"),
+                             "gates_pass": r.get("gates", {}) and r["gates"].get("pass"),
+                             "calls": r.get("stats", {}).get("calls", 0),
+                             "cost_est_usd": round(cost_est(r)[0], 4),
+                             "secs": r.get("secs_total")} for r in results],
+              "arm_totals": arm_tot,
+          }
+          (BENCH_OUT / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1),
+                                                  encoding="utf-8")
+
+          md = ["# Bench — agent vs improved (results as artifacts, nothing committed)", "",
+                f"- Actual model (both arms): `{resolved['improved']['provider']}/{resolved['improved']['model_id']}` "
+                f"(alias `{MODEL}`) — single-model override per owner rule",
+                f"- Search source: SearXNG service container ({SEARXNG}); SERP rows/query: {ROWS}",
+                f"- Mode: {MODE} | topics: {1 if MODE == 'smoke' else len(TOPICS)} | "
+                f"LLM calls spent: {SPENT[0]}/{CAP} | cap hit: {SPENT[0] >= CAP}",
+                "- Costs below are ESTIMATES (chars/4 tokens; assumed $0.27/M in, $1.10/M out) — not invoices.",
+                "", "| topic | arm | words | gates | calls | tok est | cost est $ | secs | err |",
+                "|---|---|---|---|---|---|---|---|---|"]
+          for r in results:
+              g = r.get("gates") or {}
+              s = r.get("stats", {})
+              ce = cost_est(r)
+              md.append(f"| {r['slug'][:38]} | {r['arm']} | {g.get('words','-')} "
+                        f"| {'PASS' if g.get('pass') else 'FAIL'} | {s.get('calls',0)} "
+                        f"| {ce[1]+ce[2]:,} | {ce[0]:.4f} | {r.get('secs_total','-')} "
+                        f"| {(r.get('error') or '')[:60]} |")
+          if skipped:
+              md += ["", f"SKIPPED (call cap): {', '.join(skipped)}"]
+          md += ["", "## Per-gate pass rate", "", "| gate | improved | agent |", "|---|---|---|"]
+          for c in CHECKS:
+              md.append(f"| {c} | {arm_tot['improved']['per_gate_pass'].get(c,'-')} "
+                        f"| {arm_tot['agent']['per_gate_pass'].get(c,'-')} |")
+          md += ["", "## Arm totals (ESTIMATE figures)", "",
+                "```json", json.dumps(arm_tot, indent=1), "```",
+                "", "Honest notes: engine squad is inline-minimal (registry.json not in repo yet); "
+                    "the engine's web_search was patched to SearXNG (z-ai CLI unavailable on CI); "
+                    "the engine arm's meta costs ONE extra counted call; improved-arm features "
+                    "auto-upgrade once PR #450 merges — see each run's features dict in summary.json."]
+          (BENCH_OUT / "summary.md").write_text("\n".join(md), encoding="utf-8")
+          print("\n".join(md), flush=True)
+
+          if SPENT[0] >= CAP:
+              print(f"LLM_CALL_CAP reached ({SPENT[0]}/{CAP}) — stopping before further calls; "
+                    f"partial results uploaded as artifacts.", flush=True)
+              sys.exit(2)
+          print("BENCH COMPLETE — results in artifacts only.", flush=True)
+          PYRUNNER
+          python3 "$BENCH_OUT/bench_runner.py"
+
+      - name: Upload results as artifacts (always — even on cap-stop or failure)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bench-agent-vs-improved-${{ inputs.mode }}-${{ github.run_number }}
+          path: ${{ runner.temp }}/bench-001
+          retention-days: 30
