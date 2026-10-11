@@ -150,7 +150,7 @@ AI makes browsing more powerful — and the web around it more cluttered and mor
 
 ## How we tested
 
-Every candidate went through the same three-week protocol. First, installation and permission audit — we flag anything requesting broad access without justification, as detailed in our [extension security guide](/ar/blog/chrome-extension-security-risks-permission-audit-guide). Second, daily real usage across four scenarios: research digestion, email and writing, foreign-language reading, and video learning. Third, performance measurement: memory footprint with the sidebar open and closed, startup impact, and interference with other extensions. Tools that degraded browsing or burned RAM without clear value were cut regardless of features.
+Every candidate went through the same three-week protocol. First, installation and permission audit — we flag anything requesting broad access without justification, as detailed in our [extension security guide](/blog/chrome-extension-security-risks-permission-audit-guide). Second, daily real usage across four scenarios: research digestion, email and writing, foreign-language reading, and video learning. Third, performance measurement: memory footprint with the sidebar open and closed, startup impact, and interference with other extensions. Tools that degraded browsing or burned RAM without clear value were cut regardless of features.
 
 > RAM reality check: Chrome AI-era browsing is memory-hungry. If your machine struggles after installing assistants, enable Memory Saver and pair it with a tab suspender — the combination recovers most of the overhead.
 
