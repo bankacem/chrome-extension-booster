@@ -16,41 +16,34 @@ const DELAY_MS = 1000; // 1 second delay between requests
 
 // URLs requested by user for priority indexing
 const MANUAL_PRIORITY_URLS = [
-  `${BASE_URL}/blog/internet-download-manager-extension`,
-  `${BASE_URL}/blog/top-10-google-sheets-extensions-for-accounting-8`,
-  `${BASE_URL}/terms`,
-  `${BASE_URL}/blog/extension-chrome-rafraichissement-automatique-15`,
-  `${BASE_URL}/blog/screenshot-tool-chrome-guide-1`,
-  `${BASE_URL}/blog/fast-screenshot-extension-alternatives-1`,
-  `${BASE_URL}/blog/chrome-extensions-on-android-2026-kiwi-vs-yandex-vs-lemur-full-guide`,
-  `${BASE_URL}/blog/pro-developer-chrome-extensions`,
-  `${BASE_URL}/blog/extension-idm-to-chrome-12`,
-  `${BASE_URL}/blog/best-annotated-screenshot-chrome-5`,
-  `${BASE_URL}/blog/unlocking-the-power-of-chrome-how-to-find-the-best-extension-to-chrome-for-your-needs`,
-  `${BASE_URL}/blog/the-best-security-chrome-extensions-free-to-install-in-2025`,
-  `${BASE_URL}/blog/extension-chrome-wapi-17`,
-  `${BASE_URL}/blog/best-chrome-extensions-for-privacy-2026-protect-your-online-identity-mll9br233zj`,
-  `${BASE_URL}/blog/essential-chrome-extensions-for-ad-free-browsing-user-experience-speed-productivity-clean-web-9`,
-  `${BASE_URL}/blog/google-chrome-programm-en-14`,
-  `${BASE_URL}/blog/unlock-the-power-of-ad-blocking-on-android-a-comprehensive-guide-to-adblock-chrome-addon-android-mm3scnuyzcs`,
-  `${BASE_URL}/blog/professional-browser-tools-guide`,
-  `${BASE_URL}/blog/the-ultimate-chrome-extensions-for-browsing-guide`,
-  `${BASE_URL}/blog/how-to-install-chrome-extensions-a-complete-step-by-step-tutorial`,
-  `${BASE_URL}/blog/add-extension-to-chrome-7`,
-  `${BASE_URL}/blog/extension-utile-chrome-12`,
-  `${BASE_URL}/blog/free-screenshot-extensions-for-chrome`,
-  `${BASE_URL}/blog/the-ultimate-guide-to-finding-a-safe-youtube-downloader-extension-no-ads-mliju6qrdal`,
-  `${BASE_URL}/blog/how-to-add-extensions-to-chrome-mobile-a-step-by-step-guide-mmthoys728s`,
-  `${BASE_URL}/blog/extension-norton-chrome-8`,
-  `${BASE_URL}/blog/vpn-extension-to-chrome-1`,
-  `${BASE_URL}/blog/best-screenshot-extensions-for-chrome-1`,
-  `${BASE_URL}/blog/unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools`,
-  `${BASE_URL}/blog/best-quick-screenshot-chrome-tools-3`,
-  `${BASE_URL}/blog/capture-screen-chrome-review-5`,
-  `${BASE_URL}/blog/chrome-web-store-2`,
-  `${BASE_URL}/blog/the-ultimate-chrome-extension-reviews-guide-how-to-find-the-best-browser-tools`,
-  `${BASE_URL}/blog/extension-grammaire-chrome-6`,
-  `${BASE_URL}/blog/extension-chrome-screen-page-16`
+  `${BASE_URL}/blog/best-chrome-extensions-for-social-media-managers`,
+  `${BASE_URL}/blog/best-chrome-extensions-for-freelancers`,
+  `${BASE_URL}/blog/best-chrome-extensions-for-meeting-notes`,
+  `${BASE_URL}/blog/chrome-extensions-for-reducing-eye-strain`,
+  `${BASE_URL}/blog/chrome-extensions-for-managing-multiple-gmail-accounts`,
+  `${BASE_URL}/blog/how-to-translate-web-pages-automatically-in-chrome`,
+  `${BASE_URL}/blog/chrome-extensions-for-citation-and-bibliography-management`,
+  `${BASE_URL}/blog/best-chrome-extensions-for-language-translation`,
+  `${BASE_URL}/blog/chrome-extension-sync-not-working-guide`,
+  `${BASE_URL}/blog/chrome-extension-popup-not-opening-guide`,
+  `${BASE_URL}/blog/chrome-extension-icon-missing-toolbar-guide`,
+  `${BASE_URL}/blog/chrome-extension-update-delayed-guide`,
+  `${BASE_URL}/blog/chrome-extension-settings-lost-after-reinstall-guide`,
+  `${BASE_URL}/blog/chrome-extensions-backup-and-restore-guide`,
+  `${BASE_URL}/blog/chrome-extension-storage-limits-guide`,
+  `${BASE_URL}/blog/chrome-web-store-pending-review-guide`,
+  `${BASE_URL}/blog/chrome-web-store-extension-rejected-guide`,
+  `${BASE_URL}/blog/chrome-extension-offscreen-documents-guide`,
+  `${BASE_URL}/blog/chrome-extension-user-scripts-api-guide`,
+  `${BASE_URL}/blog/chrome-extension-content-security-policy-guide`,
+  `${BASE_URL}/blog/chrome-extension-web-accessible-resources-guide`,
+  `${BASE_URL}/blog/chrome-extension-guest-mode-guide`,
+  `${BASE_URL}/blog/chrome-extension-chrome-pages-access-guide`,
+  `${BASE_URL}/blog/chrome-extension-clipboard-permission-guide`,
+  `${BASE_URL}/blog/chrome-extension-background-error-console-guide`,
+  `${BASE_URL}/blog/chrome-extension-version-check-guide`,
+  `${BASE_URL}/blog/chrome-tab-groups-save-restore-extension-guide`,
+  `${BASE_URL}/blog/chrome-extension-reading-list-workflow-guide`
 ];
 
 interface ArticleMeta {
@@ -216,7 +209,10 @@ async function massIndexing() {
   });
 
   const articleUrls = articles.map(a => `${BASE_URL}/blog/${a.slug}`);
-  const allTargetUrls = [...staticPages, ...articleUrls];
+  const combinedUrls = [...staticPages, ...articleUrls];
+
+  // Prepend MANUAL_PRIORITY_URLS to ensure user requested priority URLs are processed first
+  const allTargetUrls = Array.from(new Set([...MANUAL_PRIORITY_URLS, ...combinedUrls]));
 
   const pendingUrls = allTargetUrls.filter(u => !indexedUrls.includes(u));
 
