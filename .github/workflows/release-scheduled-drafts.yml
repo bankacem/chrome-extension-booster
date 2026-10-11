@@ -90,24 +90,47 @@ jobs:
               selected = matches[0]
           else:
               candidates = []
+              overdue_blocked = []   # due_utc <= now but cannot be auto-released (reason kept)
+              stale_rows = []        # due_utc <= now but the article is no longer a draft
               for e in all_entries:
                   if e.get('release_enabled') is False or e.get('publish_enabled') is False:
                       continue
                   if not e.get('due_utc'):
                       continue
                   due_at = datetime.fromisoformat(e['due_utc'].replace('Z', '+00:00'))
+                  delta = (now - due_at).total_seconds()
+                  if delta < 0:
+                      continue  # not due yet
                   article_path = Path(e.get('article_path') or f"public/content/articles/{e['slug'][0]}/{e['slug'][1]}/{e['slug'][2]}/{e['slug']}.md")
                   if not article_path.exists():
+                      overdue_blocked.append((due_at, e, 'article file missing from main'))
                       continue
                   article_text = article_path.read_text()
-                  if not re.search(r'^status:\\s*draft\\s*$', article_text, re.M):
+                  if not re.search(r'^status:\s*draft\s*$', article_text, re.M):
+                      stale_rows.append((due_at, e))
                       continue
-                  delta = (now - due_at).total_seconds()
-                  if 0 <= delta <= e['_late_window_seconds']:
+                  if delta <= e['_late_window_seconds']:
                       candidates.append((due_at, e))
+                  else:
+                      overdue_blocked.append((due_at, e, f"overdue {delta/86400:.1f}d > late_window {e['_late_window_seconds']/86400:.0f}d"))
               if candidates:
                   selected = sorted(candidates, key=lambda x: x[0])[0][1]
               else:
+                  # LOUD FAILURE: never print a green 'No due release' while overdue
+                  # drafts exist. Historical bug: the double-escaped regex below made
+                  # every draft unselectable, and this branch masked it as idempotent
+                  # success since Aug 2026.
+                  if stale_rows:
+                      print(f"[Release] INFO: {len(stale_rows)} overdue schedule row(s) skipped - article is no longer a draft:")
+                      for due_at, e in sorted(stale_rows):
+                          print(f"  - {e.get('slug')} due {due_at.isoformat()}")
+                  if overdue_blocked:
+                      print(f"[Release] FATAL: {len(overdue_blocked)} overdue draft(s) exist but NONE can be auto-released:")
+                      for due_at, e, why in sorted(overdue_blocked):
+                          print(f"  - {e.get('slug')} due {due_at.isoformat()} ({why})")
+                      print("[Release] Auto-release requires 0 <= now - due_utc <= late_window_seconds.")
+                      print("[Release] Release these via workflow_dispatch (release_slug), or fix/archive their schedule rows. Failing loudly instead of a misleading 'No due release'.")
+                      raise SystemExit(1)
                   print(f'No due release at {now.isoformat()}; exiting idempotently.')
                   raise SystemExit(0)
 
