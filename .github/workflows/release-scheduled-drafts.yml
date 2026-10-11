@@ -90,6 +90,8 @@ jobs:
               selected = matches[0]
           else:
               candidates = []
+              due_drafts_in_window = []
+              due_drafts_out_of_window = 0
               for e in all_entries:
                   if e.get('release_enabled') is False or e.get('publish_enabled') is False:
                       continue
@@ -98,16 +100,25 @@ jobs:
                   due_at = datetime.fromisoformat(e['due_utc'].replace('Z', '+00:00'))
                   article_path = Path(e.get('article_path') or f"public/content/articles/{e['slug'][0]}/{e['slug'][1]}/{e['slug'][2]}/{e['slug']}.md")
                   if not article_path.exists():
+                      print(f'[Release] WARNING: schedule entry has no article file: {e.get("slug")}')
                       continue
                   article_text = article_path.read_text()
-                  if not re.search(r'^status:\\s*draft\\s*$', article_text, re.M):
+                  if not re.search(r'^status:\s*draft\s*$', article_text, re.M):
                       continue
                   delta = (now - due_at).total_seconds()
                   if 0 <= delta <= e['_late_window_seconds']:
                       candidates.append((due_at, e))
+                      due_drafts_in_window.append(e['slug'])
+                  elif delta > e['_late_window_seconds']:
+                      due_drafts_out_of_window += 1
               if candidates:
                   selected = sorted(candidates, key=lambda x: x[0])[0][1]
               else:
+                  if due_drafts_out_of_window:
+                      print(f'[Release] Info: {due_drafts_out_of_window} due draft(s) outside the late window; expired by policy.')
+                  if due_drafts_in_window:
+                      print(f'[Release] FATAL: {len(due_drafts_in_window)} due draft(s) inside the late window but none was selected — status regex or gating is broken. Slugs: {", ".join(due_drafts_in_window)}')
+                      raise SystemExit(1)
                   print(f'No due release at {now.isoformat()}; exiting idempotently.')
                   raise SystemExit(0)
 
