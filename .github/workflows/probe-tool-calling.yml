@@ -1,0 +1,48 @@
+name: Phase 0 Feasibility Probe (dry-run — no publishing, no cron)
+
+# Manual dispatch ONLY. Read-only feasibility test: measures whether cleanapis
+# models support OpenAI tool calling reliably. Publishes NOTHING, touches NO
+# article, NO index, NO sitemap. Safe to run on a branch.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run tool-calling probe
+        env:
+          CLEANAPIS_KEY: ${{ secrets.CLEANAPIS || secrets.CLEANAPIS_KEY }}
+        run: |
+          python3 seo_agent_pro/agents_lab/probe_tool_calling.py 2>&1 | tee /tmp/probe.txt
+
+      - name: Write step summary
+        if: always()
+        run: |
+          {
+            echo "## Phase 0 probe results"
+            echo '```'
+            cat /tmp/probe.txt 2>/dev/null || echo "(no output captured)"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload raw results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: probe-results
+          path: seo_agent_pro/agents_lab/probe_results.json
+          if-no-files-found: warn
