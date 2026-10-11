@@ -40,9 +40,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from squad_bridge import Squad  # noqa: E402
+import agentic_loop  # noqa: E402
 
 RUNS_ROOT = Path("/home/z/my-project/agents/runs")
-INDEX_PATH = Path("/home/z/my-project/site/public/content/articles-index.json")
+_INDEX_CANDIDATES = [
+    Path("/home/z/my-project/site-t20/public/content/articles-index.json"),
+    Path("/home/z/my-project/site/public/content/articles-index.json"),
+]
+INDEX_PATH = next((p for p in _INDEX_CANDIDATES if p.exists()), _INDEX_CANDIDATES[-1])
 INTEL_PATH = Path("/home/z/my-project/scripts/competitor_intel.json")
 WORD_RE = re.compile(r"[\p{L}\p{N}'’-]+", re.UNICODE) if False else re.compile(r"[A-Za-z0-9'’-]+")
 
@@ -63,6 +68,27 @@ class Log:
 
     def save(self):
         (self.run_dir / "agent_log.txt").write_text("\n".join(self.lines), encoding="utf-8")
+
+
+class _TraceAdapter:
+    """adapts agentic_loop.Trace for pro_run call sites: appends to the same
+    trace.jsonl AND mirrors each event into pro_run's console Log."""
+
+    def __init__(self, run_dir: Path, log: "Log | None" = None):
+        self._t = agentic_loop.Trace(run_dir)
+        self._log = log
+
+    def add(self, agent: str, phase: str, **kw):
+        self._t.add(agent, phase, **kw)
+        if self._log:
+            self._log(agent, phase, json.dumps(kw, ensure_ascii=False)[:160])
+
+
+class _ToolAdapter(agentic_loop.Toolbelt):
+    """Toolbelt pre-bound to a run_dir with its own Trace (same trace.jsonl)."""
+
+    def __init__(self, run_dir: Path):
+        super().__init__(_TraceAdapter(run_dir), run_dir)
 
 
 # ────────────────────────────────────────────────────────────────
@@ -211,6 +237,9 @@ def main() -> None:
     ap.add_argument("--wmin", type=int, default=2550)
     ap.add_argument("--wmax", type=int, default=3100)
     ap.add_argument("--max-attempts", type=int, default=4)
+    ap.add_argument("--engine", choices=["agentic", "pipeline"], default="agentic",
+                    help="agentic = Anthropic-style loop (research tools + plan + critic + "
+                         "targeted revision); pipeline = legacy linear pipeline")
     ap.add_argument("--resume", action="store_true", help="reuse intel.json + saved drafts in the run dir")
     args = ap.parse_args()
 
@@ -281,17 +310,41 @@ def main() -> None:
     if not links_block:
         links_block = "- (none supplied — skip internal links, do not invent URLs)"
 
-    # Stage 3: writer
-    writer = squad.pick("writer", squad=args.squad)
-    intel_block = "\n".join(f"- {r.get('title', '')} ({r.get('host', '')}): {r.get('snippet', '')}" for r in intel) or "- (no intel rows)"
-    if args.mode == "refine" and source_body:
-        task = (f"REFINE this existing article into a definitive {args.wmin}-{args.wmax} word guide: \"{title}\".\n"
-                f"Keep its proven structure and every factual point, but: expand thin sections with practical "
-                f"step-by-step detail, add a comparison table, refresh to current-year context, and keep only "
-                f"still-valid links.\n\nEXISTING ARTICLE:\n{source_body[:14000]}")
+    # Stage 3: writer — two engines
+    body = ""
+    ok, detail = False, "no attempt made"
+    rubric_history: list[dict] = []
+    agentic_result: dict = {}
+    if args.engine == "agentic":
+        agentic_result = agentic_loop.run_agentic(
+            squad, log, run_dir, title, keywords or [primary], links, links_block,
+            args.wmin, args.wmax, refine_body=source_body, max_rounds=args.max_attempts)
+        body = agentic_result["body"]
+        ok = agentic_result["qa_pass"]
+        detail = ("agentic gates PASS" if ok
+                  else "agentic gates FAIL: " + ",".join(agentic_result["gates"]["failed"]))
+        rubric_history = agentic_result["rubric_history"]
+        draft_path = run_dir / "draft_v1.md"
+        if not draft_path.exists():
+            draft_path.write_text(body, encoding="utf-8")
+        for ev in agentic_result["trace"].events:
+            log(ev["agent"], ev["phase"], json.dumps(
+                {k: v for k, v in ev.items() if k not in ("ts", "agent", "phase")},
+                ensure_ascii=False)[:220])
+        if not ok:
+            log("AG000", "orchestrator", detail + " — saving with status=draft")
+            (run_dir / "qa_failed.txt").write_text(detail, encoding="utf-8")
     else:
-        task = (f"Write a brand-new definitive {args.wmin}-{args.wmax} word guide: \"{title}\".")
-    prompt = f"""{task}
+        writer = squad.pick("writer", squad=args.squad)
+        intel_block = "\n".join(f"- {r.get('title', '')} ({r.get('host', '')}): {r.get('snippet', '')}" for r in intel) or "- (no intel rows)"
+        if args.mode == "refine" and source_body:
+            task = (f"REFINE this existing article into a definitive {args.wmin}-{args.wmax} word guide: \"{title}\".\n"
+                    f"Keep its proven structure and every factual point, but: expand thin sections with practical "
+                    f"step-by-step detail, add a comparison table, refresh to current-year context, and keep only "
+                    f"still-valid links.\n\nEXISTING ARTICLE:\n{source_body[:14000]}")
+        else:
+            task = (f"Write a brand-new definitive {args.wmin}-{args.wmax} word guide: \"{title}\".")
+        prompt = f"""{task}
 TARGET KEYWORDS (first in opening 100 words + 2-3 H2 headings): {', '.join(keywords[:6]) or title}
 
 SERP COMPETITOR INTEL (outrank them — broader coverage, more practical detail, honest trade-offs):
@@ -310,40 +363,54 @@ INTERNAL LINKING (use ALL, descriptive anchors, spread naturally):
 
 EXTERNAL LINKING: 3-5 links to developer.chrome.com / support.google.com / chromium.org / en.wikipedia.org only.
 RULES: Output ONLY markdown body (no H1, no frontmatter); concrete steps; never nest markdown links; never put links in headings; never split words with links; aim {args.wmin + 200} words, hard max {args.wmax}."""
-    system = squad.system_prompt(writer)
-    qa = squad.pick("qa-gatekeeper", squad=args.squad)
+        system = squad.system_prompt(writer)
+        qa = squad.pick("qa-gatekeeper", squad=args.squad)
 
-    body = ""
-    ok, detail = False, "no attempt made"
-    for attempt in range(1, args.max_attempts + 1):
-        draft_path = run_dir / f"draft_attempt{attempt}.md"
-        log(writer["id"], writer["role"], f"draft attempt {attempt}")
-        extra = ""
-        if attempt > 1 and body:
-            words = wc(body)
-            if words < args.wmin:
-                extra = f"\n\nCRITICAL: previous draft was only {words} words. Expand to {args.wmin}-{args.wmax}: deeper steps, more real examples, fuller FAQ answers. MUST end with FAQ (8 H3) then Final Verdict."
+        for attempt in range(1, args.max_attempts + 1):
+            draft_path = run_dir / f"draft_attempt{attempt}.md"
+            log(writer["id"], writer["role"], f"draft attempt {attempt}")
+            extra = ""
+            if attempt > 1 and body:
+                words = wc(body)
+                if words < args.wmin:
+                    extra = f"\n\nCRITICAL: previous draft was only {words} words. Expand to {args.wmin}-{args.wmax}: deeper steps, more real examples, fuller FAQ answers. MUST end with FAQ (8 H3) then Final Verdict."
+                else:
+                    extra = f"\n\nCRITICAL: previous draft was {words} words (over {args.wmax}). Compress to {args.wmin}-{args.wmax}, keep ALL required sections."
+            if args.resume and draft_path.exists():
+                body = draft_path.read_text(encoding="utf-8")
+                log(writer["id"], writer["role"], f"resume: {draft_path.name} reused")
             else:
-                extra = f"\n\nCRITICAL: previous draft was {words} words (over {args.wmax}). Compress to {args.wmin}-{args.wmax}, keep ALL required sections."
-        if args.resume and draft_path.exists():
-            body = draft_path.read_text(encoding="utf-8")
-            log(writer["id"], writer["role"], f"resume: {draft_path.name} reused")
+                body = squad.llm(system, prompt + extra, stage="writer", max_tokens=9000)
+                body = re.sub(r"^```(?:markdown)?\s*\n?", "", body)
+                body = re.sub(r"\n?```\s*$", "", body)
+                body = re.sub(r"^#\s+.+\n", "", body)
+                draft_path.write_text(body, encoding="utf-8")
+            ok, detail = qa_gate(log, squad, body, args.wmin, args.wmax)
+            if ok:
+                break
+            log(qa["id"], qa["role"], "editor retry with corrective feedback")
         else:
-            body = squad.llm(system, prompt + extra, stage="writer", max_tokens=9000)
-            body = re.sub(r"^```(?:markdown)?\s*\n?", "", body)
-            body = re.sub(r"\n?```\s*$", "", body)
-            body = re.sub(r"^#\s+.+\n", "", body)
-            draft_path.write_text(body, encoding="utf-8")
-        ok, detail = qa_gate(log, squad, body, args.wmin, args.wmax)
-        if ok:
-            break
-        log(qa["id"], qa["role"], "editor retry with corrective feedback")
-    else:
-        log("AG000", "orchestrator", "QA gate failed after all attempts — saving draft with status=draft")
-        (run_dir / "qa_failed.txt").write_text(detail, encoding="utf-8")
+            log("AG000", "orchestrator", "QA gate failed after all attempts — saving draft with status=draft")
+            (run_dir / "qa_failed.txt").write_text(detail, encoding="utf-8")
 
     # Stage 6: fact-checker advisories
     notes = fact_check(squad, log, body)
+
+    # Stage 6c: claim-level fact check (agentic_loop) — extract every numeric/
+    # date/policy/process claim, verify each against search-result rows, mark
+    # anything without a real source as "uncertain" (code-enforced downgrade).
+    try:
+        fc_rows = list(agentic_result.get("research", {}).get("rows", [])) if args.engine == "agentic" else list(intel)
+        fc = agentic_loop.run_fact_check(squad, _TraceAdapter(run_dir, log),
+                                         _ToolAdapter(run_dir), body, fc_rows, topic=title)
+        fact_check_claims = fc["summary"]
+        log("AG000", "orchestrator",
+            f"claim fact-check: {fact_check_claims['supported']} supported / "
+            f"{fact_check_claims['uncertain']} uncertain / {fact_check_claims['refuted']} refuted "
+            f"({fact_check_claims['fresh_searches']} fresh searches)")
+    except Exception as e:  # noqa: BLE001 — fact check must never kill a run
+        log("AG000", "orchestrator", f"claim fact-check skipped ({str(e)[:60]})")
+        fact_check_claims = {"error": str(e)[:120]}
 
     # Stage 6b: link-strategist injection — production-style: insert the
     # selected internal links naturally, then damage-guard the result
@@ -409,10 +476,19 @@ RULES: Output ONLY markdown body (no H1, no frontmatter); concrete steps; never 
     out_md.write_text(fm + body + "\n", encoding="utf-8")
     report = {
         "run": str(run_dir), "mode": args.mode, "slug": slug, "title": title,
+        "engine": args.engine,
         "words": wc(body), "gates": {"wmin": args.wmin, "wmax": args.wmax},
         "qa_pass": ok, "intel_rows": len(intel), "internal_links": len(links),
-        "fact_check_notes": notes, "meta": meta,
+        "fact_check_notes": notes, "fact_check_claims": fact_check_claims, "meta": meta,
     }
+    if args.engine == "agentic":
+        report["rubric_history"] = rubric_history
+        report["plan_angle"] = agentic_result.get("plan", {}).get("angle", "")
+        report["research"] = {
+            "serp_rows": len(agentic_result.get("research", {}).get("rows", [])),
+            "gaps": len(agentic_result.get("research", {}).get("gaps", [])),
+            "entities": len(agentic_result.get("research", {}).get("entities", [])),
+        }
     (run_dir / "report.json").write_text(json.dumps(report, indent=1), encoding="utf-8")
     log(pub["id"], pub["role"], f"article + report published to {run_dir} (status={'published' if ok else 'draft'})")
     log("AG000", "orchestrator", f"RUN COMPLETE — {report['words']} words, qa={'PASS' if ok else 'DRAFT'}")
