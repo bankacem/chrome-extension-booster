@@ -1,0 +1,877 @@
+[
+  {
+    "slug": "tab-counter-stats-chrome-extensions",
+    "title": "Tab Counter & Browser Stats Extensions: Know Your Tab Habit",
+    "url": "https://extensionto.com/blog/tab-counter-stats-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:47.839471+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/tab-counter-stats-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/tab-counter-stats-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "screenshot-ocr-text-extractor-extensions",
+    "title": "Screenshot-to-Text OCR Extensions: Copy Any Text From Any Image",
+    "url": "https://extensionto.com/blog/screenshot-ocr-text-extractor-extensions",
+    "recorded_at": "2026-09-28T09:46:48.438505+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/screenshot-ocr-text-extractor-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/screenshot-ocr-text-extractor-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "ai-research-assistant-chrome-extensions",
+    "title": "AI Research Assistant Chrome Extensions: Deep Research Without Leaving the Tab",
+    "url": "https://extensionto.com/blog/ai-research-assistant-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:48.983045+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/ai-research-assistant-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/ai-research-assistant-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "ai-agent-browser-extensions-2026",
+    "title": "AI Agent Browser Extensions: Let Chrome Do the Busywork for You (2026)",
+    "url": "https://extensionto.com/blog/ai-agent-browser-extensions-2026",
+    "recorded_at": "2026-09-28T09:46:49.533198+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/ai-agent-browser-extensions-2026",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/ai-agent-browser-extensions-2026",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "audio-equalizer-chrome-extensions",
+    "title": "Audio Equalizer Chrome Extensions: Per-Tab Volume and Sound Boost",
+    "url": "https://extensionto.com/blog/audio-equalizer-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:50.084856+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/audio-equalizer-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/audio-equalizer-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "pdf-tools-chrome-extensions",
+    "title": "PDF Chrome Extensions: Edit, Merge, Sign and Annotate in the Browser",
+    "url": "https://extensionto.com/blog/pdf-tools-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:50.619466+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/pdf-tools-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/pdf-tools-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "reddit-power-user-chrome-extensions",
+    "title": "Reddit Power-User Chrome Extensions: Filter, Search and Tame the Feed (2026)",
+    "url": "https://extensionto.com/blog/reddit-power-user-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:51.162868+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/reddit-power-user-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/reddit-power-user-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "whatsapp-web-enhancer-extensions",
+    "title": "WhatsApp Web Enhancer Extensions: Keyboard, Privacy and Bulk Tools",
+    "url": "https://extensionto.com/blog/whatsapp-web-enhancer-extensions",
+    "recorded_at": "2026-09-28T09:46:51.715102+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/whatsapp-web-enhancer-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/whatsapp-web-enhancer-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "mouse-gestures-chrome-extensions",
+    "title": "Mouse Gesture Extensions for Chrome: Navigate Without the Keyboard",
+    "url": "https://extensionto.com/blog/mouse-gestures-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:52.250100+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/mouse-gestures-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/mouse-gestures-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "chrome-autoscroll-reading-aids",
+    "title": "Autoscroll & Reading Aid Extensions: Hands-Free Long Reads",
+    "url": "https://extensionto.com/blog/chrome-autoscroll-reading-aids",
+    "recorded_at": "2026-09-28T09:46:52.791143+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/chrome-autoscroll-reading-aids",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/chrome-autoscroll-reading-aids",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "gemini-in-chrome-2026-complete-guide",
+    "title": "Gemini in Chrome 2026: The Complete Guide to Google's AI Browser Features",
+    "url": "https://extensionto.com/blog/gemini-in-chrome-2026-complete-guide",
+    "recorded_at": "2026-09-28T09:46:53.321127+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/gemini-in-chrome-2026-complete-guide",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/gemini-in-chrome-2026-complete-guide",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "best-ai-chrome-extensions-2026",
+    "title": "Best AI Chrome Extensions 2026: 12 Tools That Turn Your Browser Into an AI Assistant",
+    "url": "https://extensionto.com/blog/best-ai-chrome-extensions-2026",
+    "recorded_at": "2026-09-28T09:46:53.864638+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/best-ai-chrome-extensions-2026",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/best-ai-chrome-extensions-2026",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "text-expander-chrome-extensions",
+    "title": "Text Expander Chrome Extensions: Type Less, Answer Faster",
+    "url": "https://extensionto.com/blog/text-expander-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:54.466434+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/text-expander-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/text-expander-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "history-search-chrome-extensions",
+    "title": "History Search Chrome Extensions: Find Any Page You Visited in Seconds",
+    "url": "https://extensionto.com/blog/history-search-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:54.994538+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/history-search-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/history-search-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "emoji-picker-chrome-extensions",
+    "title": "Emoji Picker Chrome Extensions: Express More in Every Message",
+    "url": "https://extensionto.com/blog/emoji-picker-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:55.542387+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/emoji-picker-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/emoji-picker-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "website-blocker-focus-chrome",
+    "title": "Website Blocker Chrome Extensions: Build Your Own Distraction Firewall",
+    "url": "https://extensionto.com/blog/website-blocker-focus-chrome",
+    "recorded_at": "2026-09-28T09:46:56.086243+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/website-blocker-focus-chrome",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/website-blocker-focus-chrome",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "mute-noisy-tabs-chrome",
+    "title": "Mute Noisy Tabs in Chrome: Silence Sites That Auto-Play Sound",
+    "url": "https://extensionto.com/blog/mute-noisy-tabs-chrome",
+    "recorded_at": "2026-09-28T09:46:56.625553+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/mute-noisy-tabs-chrome",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/mute-noisy-tabs-chrome",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "calendar-chrome-extensions",
+    "title": "Calendar Chrome Extensions: Your Schedule in the Toolbar",
+    "url": "https://extensionto.com/blog/calendar-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:57.169891+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/calendar-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/calendar-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "session-isolation-multiple-accounts",
+    "title": "One Browser, Many Identities: Session-Isolation Extensions for Multiple Accounts",
+    "url": "https://extensionto.com/blog/session-isolation-multiple-accounts",
+    "recorded_at": "2026-09-28T09:46:57.772089+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/session-isolation-multiple-accounts",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/session-isolation-multiple-accounts",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "screen-recorder-chrome-extensions",
+    "title": "Chrome Screen Recorder Extensions: Record Your Screen in One Click (2026)",
+    "url": "https://extensionto.com/blog/screen-recorder-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:58.374987+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/screen-recorder-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/screen-recorder-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "ai-summary-chrome-extensions",
+    "title": "AI Page-Summary Chrome Extensions: Get the Gist of Any Article in Seconds",
+    "url": "https://extensionto.com/blog/ai-summary-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:58.893042+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/ai-summary-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/ai-summary-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "zoom-magnifier-chrome-extensions",
+    "title": "Zoom & Magnifier Chrome Extensions: See Every Pixel Clearly",
+    "url": "https://extensionto.com/blog/zoom-magnifier-chrome-extensions",
+    "recorded_at": "2026-09-28T09:46:59.506586+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/zoom-magnifier-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/zoom-magnifier-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "new-tab-speed-dial-chrome",
+    "title": "New Tab & Speed Dial Extensions: Build the Perfect Start Page (2026)",
+    "url": "https://extensionto.com/blog/new-tab-speed-dial-chrome",
+    "recorded_at": "2026-09-28T09:47:00.045719+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/new-tab-speed-dial-chrome",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/new-tab-speed-dial-chrome",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "weather-clock-chrome-extensions",
+    "title": "Weather & Clock Chrome Extensions: Glanceable Info in Your Toolbar",
+    "url": "https://extensionto.com/blog/weather-clock-chrome-extensions",
+    "recorded_at": "2026-09-28T09:47:00.580713+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/weather-clock-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/weather-clock-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  },
+  {
+    "slug": "watch-party-chrome-extensions",
+    "title": "Watch Party Chrome Extensions: Stream Together From Anywhere (2026)",
+    "url": "https://extensionto.com/blog/watch-party-chrome-extensions",
+    "recorded_at": "2026-09-28T09:47:01.380304+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/watch-party-chrome-extensions",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-25",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/watch-party-chrome-extensions",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  }
+]
