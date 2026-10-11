@@ -16,6 +16,26 @@ const DELAY_MS = 1000; // 1 second delay between requests
 
 // URLs requested by user for priority indexing
 const MANUAL_PRIORITY_URLS = [
+  `${BASE_URL}/blog/pop-up-blocker-for-chrome-partial`,
+  `${BASE_URL}/blog/the-best-chrome-extension-for-android-tablet`,
+  `${BASE_URL}/blog/unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools`,
+  `${BASE_URL}/blog/discover-the-power-of-minimalism`,
+  `${BASE_URL}/blog/popup-blocker-streaming-sites`,
+  `${BASE_URL}/blog/android-chrome-adblocker`,
+  `${BASE_URL}/blog/how-to-reduce-chrome-cpu-usage-a-faster-browser`,
+  `${BASE_URL}/blog/streamlining-your-linkedin-experience`,
+  `${BASE_URL}/blog/boosting-browser-security-extensions`,
+  `${BASE_URL}/blog/best-free-adblocker-youtube-chrome`,
+  `${BASE_URL}/blog/unlocking-the-power-of-google-tag-assistant-extension`,
+  `${BASE_URL}/blog/top-rated-privacy-extensions-for-google-chrome`,
+  `${BASE_URL}/blog/best-chrome-extensions-for-note-taking`,
+  `${BASE_URL}/blog/chrome-extensions-for-gamers-guide`,
+  `${BASE_URL}/blog/chrome-printing-guide`,
+  `${BASE_URL}/blog/free-work-chrome-extensions-guide`,
+  `${BASE_URL}/blog/the-best-chrome-extensions-for-developers-free-tools-to-supercharge-your-workflow`,
+  `${BASE_URL}/blog/how-to-fix-chrome-high-memory-usage-2026-complete-guide`,
+  `${BASE_URL}/blog/best-memory-saver-extension-for-chrome-4`,
+  `${BASE_URL}/blog/chrome-web-store-firefox-extensions-guide`,
   `${BASE_URL}/blog/internet-download-manager-extension`,
   `${BASE_URL}/blog/top-10-google-sheets-extensions-for-accounting-8`,
   `${BASE_URL}/terms`,
@@ -44,7 +64,6 @@ const MANUAL_PRIORITY_URLS = [
   `${BASE_URL}/blog/extension-norton-chrome-8`,
   `${BASE_URL}/blog/vpn-extension-to-chrome-1`,
   `${BASE_URL}/blog/best-screenshot-extensions-for-chrome-1`,
-  `${BASE_URL}/blog/unlock-the-power-of-linkedin-with-the-best-extension-linkedin-chrome-tools`,
   `${BASE_URL}/blog/best-quick-screenshot-chrome-tools-3`,
   `${BASE_URL}/blog/capture-screen-chrome-review-5`,
   `${BASE_URL}/blog/chrome-web-store-2`,
@@ -216,9 +235,9 @@ async function massIndexing() {
   });
 
   const articleUrls = articles.map(a => `${BASE_URL}/blog/${a.slug}`);
-  const allTargetUrls = [...staticPages, ...articleUrls];
+  const allTargetUrls = Array.from(new Set([...MANUAL_PRIORITY_URLS, ...staticPages, ...articleUrls]));
 
-  const pendingUrls = allTargetUrls.filter(u => !indexedUrls.includes(u));
+  const pendingUrls = allTargetUrls.filter(u => MANUAL_PRIORITY_URLS.includes(u) || !indexedUrls.includes(u));
 
   console.log(`${pendingUrls.length} URLs pending indexing.`);
 
