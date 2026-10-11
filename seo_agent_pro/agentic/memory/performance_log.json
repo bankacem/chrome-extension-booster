@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "chrome-extensions-that-actually-respect-your-privacy",
+    "title": "Chrome Extensions That Actually Respect Your Privacy in 2026",
+    "url": "https://extensionto.com/blog/chrome-extensions-that-actually-respect-your-privacy",
+    "recorded_at": "2026-08-29T22:24:44.672745+00:00",
+    "performance": {
+      "page": "https://extensionto.com/blog/chrome-extensions-that-actually-respect-your-privacy",
+      "start_date": "2026-07-30",
+      "end_date": "2026-08-26",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_search_analytics"
+    },
+    "site_baseline": {
+      "start_date": "2026-07-30",
+      "end_date": "2026-08-26",
+      "days": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0.0,
+      "average_position": null,
+      "daily_rows": [],
+      "source": "google_search_console_site_baseline"
+    },
+    "inspection": {
+      "url": "https://extensionto.com/blog/chrome-extensions-that-actually-respect-your-privacy",
+      "status": "unavailable",
+      "http_status": 403,
+      "reason": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"You do not own this site, or the inspected URL is not part of this property.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+    }
+  }
+]
