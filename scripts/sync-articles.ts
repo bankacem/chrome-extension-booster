@@ -107,6 +107,10 @@ async function rebuildIndex() {
         .replace(/\s+/g, ' ')
         .trim();
 
+      const cleanDescription = String(metadata.description || metadata.meta_description || metadata.excerpt || '')
+        .replace(/\s+/g, ' ')
+        .trim();
+
       const cleanMetaDescription = String(metadata.meta_description || metadata.description || metadata.excerpt || '')
         .replace(/\s+/g, ' ')
         .trim();
@@ -115,7 +119,7 @@ async function rebuildIndex() {
         id: id,
         title: cleanTitle,
         slug: normalizedSlug,
-        description: cleanMetaDescription,
+        description: cleanDescription,
         meta_description: cleanMetaDescription,
         excerpt: (metadata.excerpt || metadata.description || '') as string,
         published_at: metadata.published_at as string,
