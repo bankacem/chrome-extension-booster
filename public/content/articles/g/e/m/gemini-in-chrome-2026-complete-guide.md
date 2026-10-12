@@ -104,7 +104,7 @@ Productivity specialists hold their ground too. [Quick Screenshot Lite](/extensi
 
 Agentic browsing changes the threat model. When an AI can click, fill and purchase on your behalf, the stakes of misdirected automation are higher than a bad chat answer. Google's safeguards are sensible: Auto Browse asks for confirmation on purchases and sensitive actions, and activity controls let you manage what the assistant remembers. Still, prudent users should review their privacy settings after enabling these features, avoid delegating tasks involving banking credentials, and keep a standalone security layer.
 
-That is where our [SecuraKey Pro](/extension/securakey-pro) password manager extension complements the AI stack: it keeps authentication isolated from page-level automation, so the agent can complete a checkout without ever seeing your master credentials. Combine that with regular permission audits — our guide to [extension security risks](/ar/blog/chrome-extension-security-risks-permission-audit-guide) walks through the checklist — and you get the convenience of agentic browsing without handing over the keys to your digital life.
+That is where our [SecuraKey Pro](/extension/securakey-pro) password manager extension complements the AI stack: it keeps authentication isolated from page-level automation, so the agent can complete a checkout without ever seeing your master credentials. Combine that with regular permission audits — our guide to [extension security risks](/blog/chrome-extension-security-risks-permission-audit-guide) walks through the checklist — and you get the convenience of agentic browsing without handing over the keys to your digital life.
 
 ## How Chrome's AI compares with the AI-native browsers
 
