@@ -50,7 +50,7 @@ The browser debate among gamers isn't new, but it's more relevant than ever in 2
 
 Opera GX's appeal is immediately obvious: it comes with RAM and CPU limiters, a built-in VPN, ad blocker, and integrations with gaming platforms like Twitch and Discord—all without requiring any additional installations. However, my testing revealed that these built-in features come with trade-offs in extension compatibility and performance optimization that many gamers might not expect. Meanwhile, Chrome's "blank slate" approach requires more configuration but ultimately offers greater flexibility and potentially better performance when paired with the right extensions.
 
-The question isn't just about which browser is "better" in isolation—it's about which approach delivers the optimal gaming experience for your specific hardware and usage patterns. After testing both browsers with identical workloads—including gaming sessions while running multiple tabs, Discord, and Twitch streaming—I can now provide a definitive answer based on empirical data rather than marketing claims.
+The question isn't just about which browser is "better" in isolation—it's about which approach delivers the optimal gaming experience for your specific hardware and usage patterns. Comparing both browsers under identical workloads — gaming sessions with multiple tabs, Discord, and Twitch streaming open — gives a clearer answer than marketing claims alone.
 
 ## Why This Matters in 2026 {#why-this-matters}
 
@@ -72,7 +72,7 @@ I conducted all tests on my primary gaming desktop with the following specificat
 - OS: Windows 11 Pro
 - Display: 1440p 165Hz monitor
 
-I tested both browsers with identical workloads:
+Both browsers were run with identical workloads:
 - 10 background tabs ([YouTube](/blog/youtube-premium-vs-mp3-converter-2026), Twitch, Gmail, Reddit, 2 gaming wiki pages, 2 forum threads, a game store page, Discord web)
 - Full-screen gaming sessions (Fortnite, League of Legends, Baldur's Gate 3)
 - Twitch streaming in the background

@@ -84,7 +84,7 @@ Four checks keep the wrong tools off your machine:
 3. **Check compatibility** — confirm the tool works with the platforms and scheduling stack you already use.
 4. **Vet the developer** — a real website, a privacy policy, and a plausible permission list. Review what permissions actually grant in the <a href="https://developer.chrome.com/docs/extensions/" target="_blank" rel="noopener noreferrer">official Chrome for Developers extension documentation</a> before adding anything.
 
-For a curated starting point, our roundup of the [best social media extensions for Chrome](/blog/best-social-media-extensions-for-chrome) compares the tools that survived hands-on testing.
+For a curated starting point, our roundup of the [best social media extensions for Chrome](/blog/best-social-media-extensions-for-chrome) compares the shortlist of tools worth your attention.
 
 ## Build a Stack That Actually Saves Time
 

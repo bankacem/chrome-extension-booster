@@ -103,7 +103,7 @@ There is a rough priority order to who wins a key combination. The operating sys
 
 #### The four-command ceiling and what developers do about it
 
-Chrome's commands API allows an extension to declare multiple commands, but only four of them can have suggested keys that Chrome will actually bind. Developers who need more than four actions typically ship a single "open the panel" shortcut and then handle the rest with in-page keys once the panel is focused. This matters for troubleshooting because it means a missing shortcut is sometimes not a bug at all. I tested a tab manager that documents six shortcuts; four appeared on the shortcuts page, and the other two only worked inside the extension's own popup while it had focus.
+Chrome's commands API allows an extension to declare multiple commands, but only four of them can have suggested keys that Chrome will actually bind. Developers who need more than four actions typically ship a single "open the panel" shortcut and then handle the rest with in-page keys once the panel is focused. This matters for troubleshooting because it means a missing shortcut is sometimes not a bug at all. Take a tab manager that documents six shortcuts: four will appear on the shortcuts page, while the other two only work inside the extension's own popup while it has focus.
 
 #### Global versus in-Chrome scope, and why it changes the result
 

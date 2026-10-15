@@ -103,7 +103,7 @@ In my testing, I've found that extensions with minimal permissions tend to be mo
 
 Switching to lightweight browser extensions offers numerous advantages beyond just improved performance. After testing various combinations on multiple slow PCs, I've found that the right extensions can transform your browsing experience from frustrating to functional, without sacrificing the tools you need to be productive.
 
-The most immediate benefit is improved browser responsiveness. With light extensions, pages load faster, scrolling is smoother, and switching between tabs becomes nearly instantaneous. In my testing on a 2015 laptop with 4GB RAM, I saw a 40-50% improvement in page loading times when replacing resource-heavy extensions with their lightweight counterparts. This responsiveness translates directly to productivity gains—less time waiting means more time working.
+The most immediate benefit is improved browser responsiveness. With light extensions, pages load faster, scrolling is smoother, and switching between tabs becomes nearly instantaneous. On an older laptop with 4GB of RAM, swapping resource-heavy extensions for lighter equivalents made pages load noticeably faster — the kind of difference you feel right away, not one you need a stopwatch to notice. This responsiveness translates directly to productivity gains—less time waiting means more time working.
 
 Another significant advantage is better battery life, particularly for laptop users. Resource-intensive extensions can increase CPU usage, which in turn drains battery faster. During my testing, I measured a 15-20% improvement in battery life when using lightweight extensions instead of heavier alternatives. For mobile professionals who work away from power outlets, this extension alone can provide an extra hour or two of productive time.
 
@@ -127,7 +127,7 @@ These numbers represent averages from my testing across multiple machines and us
 
 Many popular extensions offer extensive feature sets but come with hidden performance costs. The "kitchen sink" approach to extension development often results in software that tries to do everything but does nothing particularly well. In my testing, I've found that specialized, lightweight extensions often outperform their feature-rich counterparts in both efficiency and functionality.
 
-For example, I tested a comprehensive "productivity suite" extension that claimed to manage tabs, bookmarks, notes, and time tracking. While it did all these things, it consumed 150MB of RAM at idle and frequently caused browser lag. When I replaced it with four specialized lightweight extensions (one for each function), the total memory usage dropped to 40MB, and performance improved significantly. This "less is more" approach is particularly effective for slow PCs.
+For example, a comprehensive "productivity suite" extension that manages tabs, bookmarks, notes, and time tracking can easily consume over 100MB of RAM at idle and cause browser lag. Replacing it with four specialized lightweight extensions — one for each function — cuts total memory usage dramatically and improves performance. This "less is more" approach is particularly effective for slow PCs.
 
 ## Top Light Browser Extensions for Slow PC {#top-light-browser-extensions-for-slow-pc}
 

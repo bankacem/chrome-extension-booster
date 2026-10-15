@@ -31,7 +31,7 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 Chrome on Android does not support extensions. This is a deliberate decision by Google — the mobile version of Chrome is designed for simplicity and performance on limited hardware. If you want extensions on your phone, you need a browser that supports the Chrome Web Store.
 
-I tested four ways to download and use [Chrome extensions on Android](/blog/chrome-extensions-on-android-2026-guide) using my Xiaomi Redmi Note 12 (8GB RAM, Android 14). I compared convenience, safety, and extension compatibility.
+This guide covers four ways to download and use [Chrome extensions on Android](/blog/chrome-extensions-on-android-2026-guide), compared on convenience, safety, and extension compatibility.
 
 ## Method 1: Kiwi Browser + Chrome Web Store (Recommended)
 

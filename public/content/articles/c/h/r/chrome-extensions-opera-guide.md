@@ -28,7 +28,7 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
-Opera is built on Chromium, the same engine as Chrome. This means most Chrome extensions work on Opera — with some caveats. I tested 20 Chrome extensions on Opera, Vivaldi, and Microsoft Edge to find out which Chromium browser has the best extension compatibility. My test machine was a Lenovo IdeaPad 3 (Intel Core i5-1135G7, 8GB DDR4, Windows 11 Pro).
+Opera is built on Chromium, the same engine as Chrome. This means most Chrome extensions work on Opera — with some caveats. This guide compares 20 Chrome extensions across Opera, Vivaldi, and Microsoft Edge to find which Chromium browser offers the best extension compatibility.
 
 ## How Opera's Chrome Extension Support Works
 

@@ -2,7 +2,7 @@
 seo_title: "Chrome Memory Saver Mode"
 title: 'Chrome Memory Saver Mode: How It Works & How to Optimize It (2026)'
 description: >-
-  Chrome's Memory Saver against ProTab Suspender, Auto Tab Discard, and The Great Suspender: a 50-tab test to find which saves the most RAM without breaking sites.
+  Chrome's Memory Saver against ProTab Suspender, Auto Tab Discard, and The Great Suspender: which saves the most RAM without breaking sites.
 slug: chrome-memory-saver-how-it-works
 excerpt: Chrome's built-in Memory Saver frees RAM by discarding inactive tabs. Here is how it compares with three dedicated extensions across memory savings and site behavior.
 featured_image: /content/images/chrome-memory-saver-how-it-works/featured.webp
@@ -37,13 +37,13 @@ You can enable Memory Saver in Chrome Settings > Performance > Memory Saver. The
 
 Memory Saver is built into Chrome at the system level. It uses zero additional RAM to run because it is part of the browser process. Dedicated extensions consume 30-40MB to operate, but they save significantly more RAM overall.
 
-According to [Google's Chromium blog on Memory Saver](https://blog.chromium.org/2024/12/memory-saver-and-energy-saver-in-chrome.html), the feature was designed to reduce Chrome's memory footprint by up to 40% on systems with limited RAM. My testing confirmed this is achievable in ideal conditions, but real-world results depend heavily on your browsing patterns.
+According to [Google's Chromium blog on Memory Saver](https://blog.chromium.org/2024/12/memory-saver-and-energy-saver-in-chrome.html), the feature was designed to reduce Chrome's memory footprint by up to 40% on systems with limited RAM. That figure is plausible in ideal conditions, though real-world results depend heavily on browsing patterns.
 
-## My Test Methodology
+## How the Comparison Was Set Up
 
-I opened 50 tabs across five categories on a clean Chrome profile: 10 social media (Gmail, Twitter/X, Reddit, LinkedIn, Facebook, Instagram, WhatsApp Web, Discord Web, Telegram Web, Pinterest), 10 video (YouTube × 3, Vimeo, Twitch, Dailymotion, Netflix, Hulu, Disney+, Crunchyroll), 10 news (CNN, NYT, Guardian, BBC, Reuters, Al Jazeera, Ars Technica, TechCrunch, Wired, The Verge), 10 productivity (Google Docs, Notion, Trello, Asana, Google Drive, Slack, Outlook Web, Canva, Medium, GitHub), and 10 random (Amazon, eBay, Wikipedia, Stack Overflow, Imgur, Booking.com, Redfin, Spotify Web, Xbox Cloud, Google Maps).
+The comparison below uses 50 tabs across five categories: 10 social media (Gmail, Twitter/X, Reddit, LinkedIn, Facebook, Instagram, WhatsApp Web, Discord Web, Telegram Web, Pinterest), 10 video (YouTube × 3, Vimeo, Twitch, Dailymotion, Netflix, Hulu, Disney+, Crunchyroll), 10 news (CNN, NYT, Guardian, BBC, Reuters, Al Jazeera, Ars Technica, TechCrunch, Wired, The Verge), 10 productivity (Google Docs, Notion, Trello, Asana, Google Drive, Slack, Outlook Web, Canva, Medium, GitHub), and 10 random (Amazon, eBay, Wikipedia, Stack Overflow, Imgur, Booking.com, Redfin, Spotify Web, Xbox Cloud, Google Maps).
 
-I measured RAM using Chrome's Task Manager (Shift+Esc) before loading tabs (baseline), after loading all 50 tabs (peak), and after 30 minutes of inactivity with each configuration. I also tracked which tabs were successfully discarded, how long they took to reload, and whether scroll position and form data were preserved.
+Memory is compared via Chrome's Task Manager (Shift+Esc) at three points — a clean baseline, after loading all 50 tabs (peak), and after 30 minutes of inactivity — along with which tabs get discarded, how quickly they reload, and whether scroll position and form data survive.
 
 ## Memory Saver vs Dedicated Extensions
 
@@ -52,21 +52,21 @@ I measured RAM using Chrome's Task Manager (Shift+Esc) before loading tabs (base
 
 | Feature | Chrome Memory Saver | ProTab Suspender | Auto Tab Discard | The Great Suspender |
 |---|---|---|---|---|
-| RAM saved (50 tabs) | ~850 MB | ~1.1 GB | ~950 MB | ~900 MB |
-| Average reload time | 1.5s | 1.2s | 0.8s | 1.1s |
+| RAM saved (50 tabs) | Good | Best of the four | Very good | Very good |
+| Average reload time | Slower | Fast | Fastest | Fast |
 | Custom timeout | No (heuristic only) | Yes (1-120 min) | Yes (1-60 min) | Yes (1-60 min) |
 | Whitelist | Manual only | Manual + automatic | Manual only | Manual only |
-| Scroll position saved | ~60% | 100% | ~70% | ~65% |
-| Sites broken (out of 50) | 3 | 0 | 1 | 2 |
-| RAM cost to run | 0 MB (built-in) | ~40 MB | ~35 MB | ~30 MB |
+| Scroll position saved | Sometimes lost | Kept | Mostly kept | Mostly kept |
+| Sites broken by discarding | A few | None reported | Rare | Rare |
+| RAM cost to run | None (built-in) | Small | Small | Small |
 
 ## The Problem With Chrome Memory Saver
 
-I found three specific issues during my 50-tab test:
+Three specific issues stand out with Chrome's Memory Saver:
 
-**No whitelist intelligence.** Memory Saver treats all tabs equally. It discarded my Gmail tab even though I switch back to it every 10 minutes. The "always keep" list requires manually adding every URL. On a machine with 8GB RAM, Chrome discarded tabs after about 5 minutes. On my 16GB machine, it waited closer to 30 minutes — but it still discarded tabs I was actively using just less frequently.
+**No whitelist intelligence.** Memory Saver treats all tabs equally. It can discard a Gmail tab you switch back to every 10 minutes. The "always keep" list requires manually adding every URL. On machines with less RAM, Chrome discards tabs after just a few minutes of inactivity; with more RAM it waits longer — but it still discards tabs you use less frequently.
 
-**Lost scroll position and form data.** On single-page apps (Gmail, Twitter, Trello) and sites that use sessionStorage, switching back to a discarded tab lost my scroll position 40% of the time. I was halfway through composing a Google Doc when I clicked away and back — the tab reloaded and my unsaved draft was gone (it auto-saves, but only if you have not disabled that setting). This is documented in [Chrome's known issues with tab discarding](https://chromium.googlesource.com/chromium/src/+/main/docs/tab_discarding.md), which notes that sessionStorage and scroll restoration are not guaranteed after discard.
+**Lost scroll position and form data.** On single-page apps (Gmail, Twitter, Trello) and sites that use sessionStorage, switching back to a discarded tab can lose your scroll position. Clicking away from a half-written Google Doc and back can reload the tab and drop the unsaved draft (auto-save usually covers you, unless you have disabled it). This is documented in [Chrome's known issues with tab discarding](https://chromium.googlesource.com/chromium/src/+/main/docs/tab_discarding.md), which notes that sessionStorage and scroll restoration are not guaranteed after discard.
 
 **No custom timeout.** You cannot tell Memory Saver "suspend after 15 minutes." Chrome uses its own heuristic based on available system RAM. On a 32GB machine, tabs may stay active for hours. On an 8GB machine, tabs get discarded aggressively. There is no per-site or per-session control.
 
@@ -89,7 +89,7 @@ The Great Suspender was the original tab suspension extension with millions of u
 
 The Great Suspender broke 2 of 50 sites in my test: Slack (WebSocket connection lost and not re-established) and a live sports ticker that used Server-Sent Events. Both required manual page refresh to resume working. The extension also has an older interface design that has not been updated since 2022, and its settings page is cluttered with options that are poorly documented.
 
-The larger concern: The Great Suspender was temporarily removed from the Chrome Web Store in 2021 after being sold to a third party that added adware. While the current open-source fork is clean, the extension's history raises trust questions. A [review by BleepingComputer](https://www.bleepingcomputer.com/news/software/the-great-suspender-chrome-extension-was-sold-and-now-contains-adware/) documented the adware incident in detail. If you choose to use it, ensure you are using the official open-source fork from the developer's GitHub, not a copycat.
+The larger concern: The Great Suspender was removed from the Chrome Web Store in 2021 after a sale to a new owner who added malicious code — [reported at the time](https://thehackernews.com/2021/02/warning-hugely-popular-great-suspender.html). While the current open-source fork is clean, the extension's history raises trust questions. A [review by BleepingComputer](https://www.bleepingcomputer.com/news/software/the-great-suspender-chrome-extension-was-sold-and-now-contains-adware/) documented the adware incident in detail. If you choose to use it, ensure you are using the official open-source fork from the developer's GitHub, not a copycat.
 
 ### Manual Tab Management — Free but Impractical
 
@@ -163,7 +163,7 @@ A: Yes, you can enable it in Chrome settings. ProTab Suspender does not work in 
 A: Sometimes. Chrome attempts to preserve form data before discarding, but on complex single-page apps, discarded tabs often lose unsaved input. ProTab Suspender preserved form data 100% of the time in my tests.
 
 **Q: How much RAM does Memory Saver actually save?**
-A: In my testing with 50 tabs on a 16GB machine, Memory Saver saved about 850 MB. ProTab Suspender saved 1.1 GB with a 15-minute timeout.
+A: With 50 tabs open, Memory Saver frees a good chunk of RAM, and ProTab Suspender with a 15-minute timeout frees more.
 
 **Q: Does Memory Saver work on Chromebooks?**
 A: Yes. Memory Saver is available on ChromeOS and has a larger impact on 4-8GB Chromebooks than on 16GB+ Windows laptops.
@@ -178,7 +178,7 @@ A: Yes. The open-source fork is maintained. However, I found ProTab Suspender mo
 
 Chrome Memory Saver is better than nothing — it saved 850 MB of RAM in my 50-tab test with zero overhead. But a dedicated extension like ProTab Suspender is significantly better: 1.1 GB RAM saved, faster 1.2s reloads, full whitelist control, custom timeouts, and 100% scroll position preservation. The 40 MB RAM cost to run ProTab Suspender pays for itself 27 times over in RAM savings.
 
-Disable Chrome Memory Saver and install ProTab Suspender. Pair it with Quick Screenshot Lite for capturing pages before they are discarded and Light Popup Blocker for preventing memory-heavy pop-ups. This three-extension combination gave me the best performance results across all my testing.
+Disable Chrome Memory Saver and install ProTab Suspender. Pair it with Quick Screenshot Lite for capturing pages before they are discarded and Light Popup Blocker for preventing memory-heavy pop-ups. This three-extension combination gives the best balance of memory savings and reliability.
 
 **The one extension I recommend for every Chrome setup:** [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee). I used it to document test results, capture page states before discarding, and build the comparison tables for this article. At 35MB with zero background processing, it is the definition of a lightweight, well-built Chrome extension.
 

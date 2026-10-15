@@ -125,7 +125,7 @@ While the primary function is blocking video ads, many extensions offer addition
 
 After testing numerous options, I've identified five standout block video ads Chrome extensions that offer varying approaches to ad blocking. Each has unique strengths depending on your specific needs, whether you prioritize aggressive blocking, customization options, or minimal performance impact. My testing involved installing each extension on identical test systems, browsing the same set of 50 websites known for heavy video advertising, and measuring effectiveness, performance impact, and ease of use.
 
-Light Popup Blocker has emerged as a top contender in my testing, particularly for users who want a straightforward, no-fuss solution. Despite its name, this extension effectively blocks video ads in addition to popups, using a combination of filter lists and behavioral analysis. What impressed me most was its ability to block auto-playing video ads with sound, which many other extensions struggle with. The interface is clean and intuitive, making it accessible even for users who aren't tech-savvy. During my testing, it blocked 94% of video ads across the test sites with minimal impact on page load times.
+Light Popup Blocker has emerged as a top contender in my testing, particularly for users who want a straightforward, no-fuss solution. Despite its name, this extension effectively blocks video ads in addition to popups, using a combination of filter lists and behavioral analysis. What impressed me most was its ability to block auto-playing video ads with sound, which many other extensions struggle with. The interface is clean and intuitive, making it accessible even for users who aren't tech-savvy. It handled nearly every video ad on the sites I looked at, with no noticeable slowdown in page loading.
 
 [uBlock Origin](https://github.com/gorhill/uBlock) is widely regarded as the gold standard for ad blocking, and my testing confirmed its effectiveness against video ads. Unlike many other extensions, uBlock Origin is open-source and completely free, with no premium features or upsells. It uses a highly efficient blocking engine that requires minimal system resources while providing comprehensive protection. What sets uBlock Origin apart is its advanced customization options, allowing power users to create their own filter rules or adjust existing ones. For users who want maximum control over their ad-blocking experience, uBlock Origin is an exceptional choice.
 
@@ -153,7 +153,7 @@ The following comparison table summarizes my findings across key performance met
 | AdBlock Plus | Moderate (8-10% increase) | Moderate | Moderate | Good (blocks most ad types) | Moderate |
 | Privacy Badger | Minimal (4-7% increase) | Low | Low | Good (blocks tracking ads) | Advanced |
 
-Chrome compatibility is another important consideration, as some extensions may not work properly with certain Chrome features or other extensions. I tested each extension with Chrome's latest version (as of 2026) and found that all five top contenders worked well with standard Chrome functionality. However, I did encounter some compatibility issues with Chrome's developer tools and certain enterprise policies, particularly with uBlock Origin and Privacy Badger, which use more advanced blocking techniques.
+Chrome compatibility is another important consideration, as some extensions may not work properly with certain Chrome features or other extensions. As of the current 2026 Chrome release, all five contenders work well alongside standard browser functionality, and none of them break normal browsing behavior. However, I did encounter some compatibility issues with Chrome's developer tools and certain enterprise policies, particularly with uBlock Origin and Privacy Badger, which use more advanced blocking techniques.
 
 ### Platform-Specific Performance
 
@@ -161,7 +161,7 @@ Performance can vary significantly depending on the websites you visit regularly
 
 ### Resource Usage on Low-End Devices
 
-For users with less powerful devices or limited data plans, resource usage becomes even more critical. I tested each extension on a Chromebook with limited RAM and an older Android phone running Chrome. In these scenarios, uBlock Origin and Light Popup Blocker stood out for their minimal resource usage, maintaining excellent performance without draining battery or causing lag. AdGuard and AdBlock Plus, while effective, showed more noticeable performance impacts on these lower-end devices, particularly when multiple tabs were open.
+For users with less powerful devices or limited data plans, resource usage becomes even more critical. On lower-spec hardware — think a Chromebook with limited RAM or an older Android phone — resource usage is what separates the contenders. In these conditions, uBlock Origin and Light Popup Blocker stand out for their minimal footprint, keeping browsing smooth without draining the battery or causing lag. AdGuard and AdBlock Plus block just as effectively, but they show more noticeable slowdowns on weaker devices, particularly with several tabs open.
 
 ## Potential Drawbacks and Considerations {#potential-drawbacks-and-considerations}
 

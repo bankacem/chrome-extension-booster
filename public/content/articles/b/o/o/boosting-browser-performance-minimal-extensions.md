@@ -6,7 +6,7 @@ excerpt: >-
   Too many extensions slow Chrome down. How each extension category impacts
   performance — which to keep, which to cut, and how to build a lean stack.
 description: >-
-  Chrome tested with 0 to 20 extensions: exactly how each one taxes startup and memory, and the lean stack that stays fast.
+  How a crowded extension toolbar taxes Chrome's startup and memory — and the lean stack that stays fast.
 featured_image: /content/images/boosting-browser-performance-minimal-extensions/featured.webp
 category: Productivity & Tools
 tags:
@@ -33,7 +33,7 @@ read_time: 9
 
 ## Every Extension Costs Speed
 
-Most users have 10-15 extensions installed. Each one adds startup time, memory usage, and page load overhead. I tested Chrome with 0, 5, 10, 15, and 20 extensions to measure the real performance impact. The results were worse than I expected.
+Most users have 10-15 extensions installed. Each one adds startup time, memory usage, and page load overhead, and the slowdown gets worse faster than most people expect.
 
 ## My Testing Setup
 
@@ -135,7 +135,7 @@ Install only what matches a real need in your day — that is exactly how we tes
 ## FAQ
 
 **Q: How many Chrome extensions is too many?**
-A: In my testing, performance degrades noticeably after 10 extensions. Keep it to 5-8 for best performance. Each extension beyond 8 adds measurable startup and page load time.
+A: Performance degrades noticeably past about 10 extensions. Keep it to 5–8 for best results — each additional extension adds startup and page load time.
 
 **Q: Do extensions affect speed even when idle?**
 A: Yes. Extensions run background scripts even when you are not actively using them. Grammar checkers scan every page you visit. Shopping assistants check every page for coupons. These background tasks consume CPU and RAM.

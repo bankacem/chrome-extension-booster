@@ -40,7 +40,7 @@ faq:
   - question: Does BetterTTV slow Chrome down noticeably?
     answer: "On my machine, a Twitch tab with BetterTTV active ran roughly 30 to 50 MB above the same tab without it, landing near 180 MB after four hours. CPU impact was more variable and tied almost entirely to animated emotes in fast-moving chat. Turning animated emotes off removed most of the measurable cost while keeping emote names readable as static images. If you are on older hardware or running on battery, that one toggle is the highest-leverage change available."
   - question: Is there a BetterTTV option on mobile Chrome?
-    answer: "Chrome for Android and iOS does not support extensions, so there is no way to install BetterTTV in mobile Chrome. The workarounds people use are third-party browsers that do support extensions on Android, or third-party Twitch clients that bundle BTTV emote support directly. I tested neither for this guide and would not recommend a third-party Twitch client without evaluating what it does with your credentials. On mobile, the realistic answer in 2026 is that you go without."
+    answer: "Chrome for Android and iOS does not support extensions, so there is no way to install BetterTTV in mobile Chrome. The workarounds people use are third-party browsers that do support extensions on Android, or third-party Twitch clients that bundle BTTV emote support directly. Neither option is covered in this guide, and a third-party Twitch client deserves a close look at what it does with your credentials before you trust it with your account. On mobile, the realistic answer in 2026 is that you go without."
   - question: How do I remove BetterTTV completely?
     answer: "Go to `chrome://extensions`, find BetterTTV, and click **Remove**, then confirm. Refresh any open Twitch or YouTube tab and the pages return to stock behavior immediately. Settings you configured were stored in the extension's local storage and go away with it, so if you plan to reinstall and want to keep your configuration, sign in to BetterTTV first so settings sync server-side. I checked for leftover artifacts after removal and found nothing that persisted past a refresh."
 featured_image: /content/images/betterttv-google-chrome-guide/featured.webp
@@ -154,7 +154,7 @@ This confused me for a full day. BetterTTV's emote picker only shows channel emo
 
 ## BetterTTV on YouTube: What Works and What Doesn't
 
-This is the part of the "betterttv google chrome" question that gets answered badly elsewhere, so I tested it specifically. I watched four YouTube live streams with active chat, two gaming and two talk-format, over the two-week window.
+This is the part of the "betterttv google chrome" question that gets answered badly elsewhere, so it is worth a closer look before you lean on the YouTube side of the extension.
 
 What works: BetterTTV injects into YouTube live chat and renders BetterTTV global emotes there. The chat input gets a BTTV emote menu. Some of the chat-side quality-of-life features carry over, including timestamps and keyword highlighting. If you are used to typing `:tf:` or a BTTV global emote name reflexively, it resolves on YouTube live chat the way you would expect.
 
@@ -214,7 +214,7 @@ On my machine, a Twitch tab with BetterTTV active ran roughly 30 to 50 MB above 
 
 ### Is there a BetterTTV option on mobile Chrome?
 
-Chrome for Android and iOS does not support extensions, so there is no way to install BetterTTV in mobile Chrome. The workarounds people use are third-party browsers that do support extensions on Android, or third-party Twitch clients that bundle BTTV emote support directly. I tested neither for this guide and would not recommend a third-party Twitch client without evaluating what it does with your credentials. On mobile, the realistic answer in 2026 is that you go without.
+Chrome for Android and iOS does not support extensions, so there is no way to install BetterTTV in mobile Chrome. The workarounds people use are third-party browsers that do support extensions on Android, or third-party Twitch clients that bundle BTTV emote support directly. Neither option is covered in this guide, and a third-party Twitch client deserves a close look at what it does with your credentials before you trust it with your account. On mobile, the realistic answer in 2026 is that you go without.
 
 ### How do I remove BetterTTV completely?
 
