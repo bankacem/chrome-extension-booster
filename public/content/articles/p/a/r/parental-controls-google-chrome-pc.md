@@ -227,4 +227,4 @@ Skip Chrome's built-in supervised accounts unless you need a no-account setup �
 
 [Set up Family Link](https://families.google.com/familylink/) | [Configure CleanBrowsing](https://cleanbrowsing.org/)
 
-Related reading: [Parental Controls for Google Chrome: I Tested 4 Solutions for 2 Weeks — Here Is ](/blog/parental-controls-google-chrome-guide) · [A Chrome Extension for Google Chat Notifications](/blog/unlocking-the-power-of-google-chat-extension)
+Related reading: [Parental Controls for Google Chrome: 4 Solutions Compared](/blog/parental-controls-google-chrome-guide) · [A Chrome Extension for Google Chat Notifications](/blog/unlocking-the-power-of-google-chat-extension)
