@@ -93,7 +93,7 @@ Quick Screenshot Lite worked flawlessly on Kiwi — I used it to capture full-pa
 
 ### Chrome for Android — Zero Extension Support
 
-Chrome for Android does not support Chrome extensions at all. Our [Chrome extensions on Android guide](/blog/chrome-extensions-on-android-2026-guide) covers why this matters and which browsers fill the gap. Google's official position is that extensions would compromise mobile performance and security, but Kiwi Browser proves otherwise — I measured only 10% faster battery drain with 5 extensions active. The real reason is likely business: Google wants Android users to rely on Chrome's built-in features rather than third-party tools.
+Chrome for Android does not support Chrome extensions at all. Our [Chrome extensions on Android guide](/blog/chrome-extensions-on-android-2026-guide) covers why this matters and which browsers fill the gap. Google's official position is that extensions would compromise mobile performance and security, but Kiwi Browser proves otherwise — battery drain with extensions active is only modestly higher. The real reason is likely business: Google wants Android users to rely on Chrome's built-in features rather than third-party tools.
 
 Without extensions, Chrome for Android users cannot install ad blockers (beyond Chrome's limited built-in content blocking), password managers beyond Google Password Manager, screenshot tools that capture full pages, or any productivity extension available on desktop. For power users who rely on Chrome extensions at work, Chrome for Android is a non-starter.
 
@@ -113,7 +113,7 @@ Samsung Internet's ad-blocker add-on works decently (it integrates with Samsung'
 
 ### Yandex Browser — Privacy Concerns and Curation Limits
 
-Yandex Browser supports Chrome extensions through its own curated catalog, which covers roughly 80% of popular extensions. The curation protects against malicious extensions but also blocks legitimate tools. DarkFlow and a WebRTC control extension both failed in my testing.
+Yandex Browser supports Chrome extensions through its own curated catalog, which covers roughly 80% of popular extensions. The curation protects against malicious extensions but also blocks legitimate tools. DarkFlow and a WebRTC control extension both failed.
 
 The larger concern is privacy. Yandex Browser routes some traffic through Yandex's servers for page compression and anti-phishing checks, meaning Yandex sees your browsing activity. For users who care about privacy, this is a dealbreaker regardless of extension compatibility.
 
@@ -141,7 +141,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## Frequently Asked Questions
 
 ![Kiwi Browser Extensions Guide Guide](/content/images/kiwi-browser-extensions-guide/kiwi-browser-extensions-guide-guide.webp "Kiwi Browser Extensions Guide Guide")
@@ -153,7 +153,7 @@ Yes. Kiwi Browser is fully open source with its code available on [GitHub](https
 
 ### Q: Do Kiwi extensions drain battery faster than Chrome for Android?
 
-I measured approximately 10% faster battery drain with 5 extensions active compared to Chrome for Android on the same hardware. Screenshot tools and ad blockers had the smallest impact (2-3% additional drain). Dark mode extensions actually saved battery on my Galaxy S23's OLED screen because black pixels on OLED consume zero power. ProTab Suspender further reduces battery drain by suspending inactive tabs, which offsets the overhead of other extensions.
+Battery drain with 5 extensions active is only modestly higher than Chrome for Android on the same hardware. Screenshot tools and ad blockers had the smallest impact. Dark mode extensions actually save battery on OLED screens because black pixels consume far less power. ProTab Suspender further reduces battery drain by suspending inactive tabs, which offsets the overhead of other extensions.
 
 ### Q: Can I sync Kiwi bookmarks and settings with desktop Chrome?
 
@@ -173,7 +173,7 @@ A Chromebook runs Chrome OS which supports all Chrome extensions natively — no
 
 ## Verdict
 
-Kiwi Browser is the only viable option for running Chrome extensions on Android. My tests showed 85% full compatibility across 20 popular extensions, with only 1 complete failure. No other Android browser comes close. Follow our [installation guide](/blog/install-chrome-web-store-extensions-android) to get started with the Chrome Web Store on your phone. Chrome for Android has zero extension support. Firefox for Android supports only 20 curated extensions. Samsung Internet has fewer than 100 low-quality add-ons. Yandex Browser has privacy concerns and compatibility gaps.
+Kiwi Browser is the only viable option for running Chrome extensions on Android. Most popular extensions run fine on it, with only occasional failures. No other Android browser comes close. Follow our [installation guide](/blog/install-chrome-web-store-extensions-android) to get started with the Chrome Web Store on your phone. Chrome for Android has zero extension support. Firefox for Android supports only 20 curated extensions. Samsung Internet has fewer than 100 low-quality add-ons. Yandex Browser has privacy concerns and compatibility gaps.
 
 If you use Chrome extensions on desktop and want the same tools on your phone, Kiwi Browser is the answer. Install Quick Screenshot Lite first for capturing full-page mobile screenshots, then add Light Popup Blocker, Redirect Shield, ProTab Suspender, Offline Reader Pro, SecuraKey Pro, Glasp, and DarkFlow to recreate your full desktop workflow on Android.
 
