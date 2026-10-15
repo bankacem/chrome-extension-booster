@@ -100,7 +100,7 @@ For daily use, the difference between 0.34s and 0.64s is barely noticeable. But 
 ![Creating Strong Unhackable Passwords For Beginners A Comprehensive Guide Features](/content/images/creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide/creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide-features.webp "Creating Strong Unhackable Passwords For Beginners A Comprehensive Guide Features")
 
 
-I tested each tool's password generator by creating 50 passwords and analyzing their strength.
+The table below compares the generators on what matters: maximum length, character-set options, and strength feedback.
 
 | Metric | Chrome Built-in | SecuraKey Pro | LastPass | Bitwarden |
 |--------|---------------|--------------|----------|-----------|
@@ -224,7 +224,7 @@ After two weeks of testing, here is my recommendation:
 
 **For casual users:** Chrome's built-in password manager is adequate. Enable Password Checkup in Chrome settings to get alerts about compromised passwords. Just do not use it for your most sensitive accounts.
 
-**Avoid LastPass.** Despite its popularity, it has suffered multiple security breaches and its premium price ($36/year) offers less value than Bitwarden at $10/year.
+**Avoid LastPass.** Despite its popularity, LastPass has disclosed multiple security incidents in recent years — including the 2022 incident in which attackers copied encrypted vault backups ([LastPass's notice](https://blog.lastpass.com/posts/notice-of-recent-security-incident)) — and its premium price ($36/year) offers less value than Bitwarden at $10/year.
 
 Install [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) alongside your password manager to block phishing popups before they trick you into entering credentials on fake login pages.
 

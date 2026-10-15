@@ -39,17 +39,11 @@ The key thing to understand: this extension is not a standalone phone service. I
 
 I installed the extension on Chrome, entered my server URL, logged in with SIP credentials, and was ready to call in under 3 minutes. The extension auto-configured audio codecs (G.711 and G.722) and STUN/TURN settings based on the server configuration. No manual port forwarding or firewall changes were needed on my end.
 
-## Call Quality Test Results
+## Call Quality: What to Expect
 
-I tested call quality over three connection types over 5 business days, making 10 calls per connection type per day. I measured MOS (Mean Opinion Score), jitter, packet loss, and setup time using 3CX's server-side reporting.
+Call quality with the 3CX extension comes down to your network, not the extension itself. It auto-negotiates the G.711 and G.722 codecs and picks up STUN/TURN settings from the server, so the setup side is handled — a stable connection is what actually determines how calls sound.
 
-| Connection Type | MOS Score | Jitter (ms) | Packet Loss | Call Setup Time |
-|---|---|---|---|---|
-| Wired Ethernet (1 Gbps) | 4.5/5 | 2ms | 0.1% | 1.2s |
-| 5 GHz Wi-Fi (300 Mbps) | 4.3/5 | 4ms | 0.3% | 1.4s |
-| 4G Mobile Hotspot | 3.8/5 | 12ms | 1.2% | 2.1s |
-
-Call quality over Ethernet and Wi-Fi was excellent — indistinguishable from a traditional desk phone. The MOS score of 4.5 on Ethernet puts it in the "toll quality" range (above 4.0 is considered good for VoIP, according to [ITU-T standards for voice quality measurement](https://www.itu.int/rec/T-REC-P.800/en)). On 4G hotspot, the quality dropped to "fair" — calls were usable but I had occasional audio artifacts (popping sounds, 200ms delays) during peak network hours between 2-4 PM. If your team works from coffee shops or mobile hotspots consistently, I recommend requiring a wired or strong Wi-Fi connection for calls.
+As a benchmark, VoIP generally sounds good with a MOS score above 4.0, jitter under 30 ms, and packet loss below 1% (the MOS scale comes from [ITU-T's voice quality standard](https://www.itu.int/rec/T-REC-P.800/en)). On wired Ethernet or strong Wi-Fi you'll usually land in that "toll quality" range, close to a desk phone. On a 4G hotspot, expect the odd artifact — brief popping or short delays — when the network is congested. If your team calls from coffee shops regularly, make wired or strong Wi-Fi the default.
 
 ## Feature Comparison
 
@@ -185,7 +179,7 @@ A: Yes. 3CX uses TLS encryption for signaling and SRTP encryption for media. The
 A: One active call at a time. For multiple concurrent calls or call queue management, use the 3CX desktop app or a physical desk phone.
 
 **Q: Does 3CX work with Bluetooth headsets?**
-A: Yes. I tested it with AirPods Pro and Jabra Evolve2 85 — both worked flawlessly. The extension uses Chrome's audio device APIs and respects system default devices.
+A: Yes. The extension uses Chrome's audio device APIs and follows your system default devices, so Bluetooth headsets behave the same as everywhere else in Chrome.
 
 **Q: Can I use the 3CX extension on Chrome in Incognito mode?**
 A: Yes, but you need to manually enable "Allow in incognito" in Chrome's extension settings. Call history will not persist while in Incognito mode.
