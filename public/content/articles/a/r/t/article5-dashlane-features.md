@@ -169,7 +169,7 @@ The bundled VPN runs on Hotspot Shield infrastructure with unlimited bandwidth a
 
 ### Can Dashlane change my passwords automatically?
 
-Yes, on supported websites. In our testing, Dashlane automatically updated 9 of 12 weak passwords across major sites, with the remainder requiring manual handling due to unusual reset flows.
+Yes, on supported websites. Dashlane's automatic password changer handles most major sites, though unusual reset flows may still need a manual touch.
 
 ### Does Dashlane support passkeys?
 

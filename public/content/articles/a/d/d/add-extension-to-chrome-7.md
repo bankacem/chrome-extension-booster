@@ -59,7 +59,7 @@ Adding an extension to Chrome is straightforward. Here is the exact process:
 
 That is it. The extension icon appears in your toolbar, usually to the right of the address bar. You can right-click the icon and select "Pin" to keep it visible.
 
-I tested this process on Chrome 125 on Windows 11 and macOS Sonoma. It took 28 seconds on average across 10 installs — quicker than I expected.
+The steps below apply to current Chrome versions on both Windows 11 and macOS Sonoma, and the whole process typically takes under a minute.
 
 ## Alternative Installation Methods {#alternatives}
 

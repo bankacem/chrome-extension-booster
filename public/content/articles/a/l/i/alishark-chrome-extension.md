@@ -35,7 +35,7 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 
 ## Table of Contents
 - [What Is Alishark?](#what)
-- [Features I Tested](#features)
+- [Features Covered](#features)
 - [Alishark vs Competitors](#vs)
 - [Companion Extensions for Product Research](#companions)
 - [Pricing](#pricing)
@@ -48,9 +48,9 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 
 Alishark is a product research tool for dropshippers. It scans AliExpress and Banggood to surface trending products, supplier data, and sales metrics. You search by niche, price range, order volume, or shipping method, and it returns products that are actually selling — not just the ones AliExpress wants to promote.
 
-I tested Alishark for 14 days, running 30+ product searches across 8 niches (home decor, pet accessories, fitness gadgets, kitchen tools, jewelry, phone accessories, baby products, and beauty). Here is what worked, what did not, and where the tool falls short. For reference, I also read [AliDrop's Alishark review](https://www.alidrop.co/blogs/alishark-review) and [Brandafy's breakdown](https://brandafy.com/blog/alishark-review-product-research/). Both cover features well but skip the practical workflow — how to capture, save, and organize product data efficiently.
+This guide walks through Alishark's core features for product research, with examples spanning 8 niches (home decor, pet accessories, fitness gadgets, kitchen tools, jewelry, phone accessories, baby products, and beauty): what works, what does not, and where the tool falls short. For reference, I also read [AliDrop's Alishark review](https://www.alidrop.co/blogs/alishark-review) and [Brandafy's breakdown](https://brandafy.com/blog/alishark-review-product-research/). Both cover features well but skip the practical workflow — how to capture, save, and organize product data efficiently.
 
-## Features I Tested {#features}
+## Features Covered {#features}
 
 ![Alishark Chrome Extension Overview](/content/images/alishark-chrome-extension/alishark-chrome-extension-overview.webp "Alishark Chrome Extension Overview")
 

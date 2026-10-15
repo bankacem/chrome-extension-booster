@@ -103,7 +103,7 @@ My desktop had two of these — an AdBlock build from 2023 and a "popup blocker"
 
 #### Telling MV2 from MV3 in 15 seconds
 
-With Developer mode on, each card lists "Inspect views." An MV3 extension shows a service worker there. An MV2 extension shows a background page. That one line is faster than digging through a manifest file, and it is reliable across every blocker I have tested.
+With Developer mode on, each card lists "Inspect views." An MV3 extension shows a service worker there. An MV2 extension shows a background page. That one line is faster than digging through a manifest file, and it works the same way across all major blockers.
 
 The other quick check is the store listing: if the extension is gone from the Web Store but present in your profile, it was not migrated and it is not coming back. Our guide to Manifest V3 and ad blocking in Chrome covers which blockers made the transition intact and which were abandoned mid-flight.
 

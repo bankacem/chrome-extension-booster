@@ -50,7 +50,7 @@ The extension is available for Google Chrome and is compatible with both Windows
 
 ## Key Features and Capabilities {#key-features}
 
-The extension alidropship offers a comprehensive suite of features designed to streamline your dropshipping operations. Based on my hands-on testing, these features work together to create an efficient workflow from product discovery to order fulfillment. Let's explore the most valuable capabilities that stood out during my evaluation.
+The extension alidropship offers a comprehensive suite of features designed to streamline your dropshipping operations. Together, these features create an efficient workflow from product discovery to order fulfillment. Let's explore the most valuable capabilities in detail.
 
 ### Automated Product Import and Customization
 
@@ -286,7 +286,7 @@ After extensive testing of the extension alidropship, I've developed several str
 
 7. **Build Relationships with Top Suppliers**: The extension makes it easy to communicate with suppliers, but building direct relationships can lead to better terms and faster processing times.
 
-8. **Test Product Variations**: Don't assume all variations of a product will perform equally. I tested different variations of similar products and found that certain colors or sizes consistently outsold others.
+8. **Test Product Variations**: Don't assume all variations of a product will perform equally. Sellers commonly find that certain colors or sizes outsell others — worth keeping in mind when you list variations.
 
 ### Key Takeaways
 

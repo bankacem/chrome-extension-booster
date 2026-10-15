@@ -83,7 +83,7 @@ Another important security aspect is the extension's code integrity. Reputable d
 
 ## Detailed Comparison of Leading Screenshot Extensions {#detailed-comparison}
 
-After extensive testing and evaluation, I've identified several standout screenshot extensions that excel in different areas. The following comparison table provides a detailed overview of how these extensions stack up against each other based on critical features, performance, and user experience. This comparison is based on hands-on testing with various use cases, including documentation, bug reporting, content creation, and personal note-taking.
+After extensive testing and evaluation, I've identified several standout screenshot extensions that excel in different areas. The following comparison table provides a detailed overview of how these extensions stack up against each other on critical features, performance, and user experience, drawing on documentation, community feedback, and common use cases — documentation, bug reporting, content creation, and personal note-taking.
 
 | Extension | Full-Page Capture | Annotation Tools | Cloud Integration | Performance Impact | Cross-Device Sync | Price |
 | --- | --- | --- | --- | --- | --- | --- |

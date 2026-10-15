@@ -67,11 +67,11 @@ That is the mechanical part. The harder part is knowing *which* extensions to ad
 
 ## The 5 Categories That Actually Matter {#categories}
 
-I grouped the 30+ extensions I tested into 5 categories. Here is what I found:
+The 30+ extensions covered here fall into 5 categories. Here is what stands out in each:
 
 **Screenshot & Capture.** Every knowledge worker needs to capture what is on their screen. [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) is the best I found — full-page or visible area capture, no account, no upload, no ads. Alternatives like Lightshot or Nimbus add bloat and request unnecessary permissions. Quick Screenshot Lite asks for only what it needs: active tab access.
 
-**Tab Management.** Chrome is a memory hog. Open 20 tabs and your system slows to a crawl. [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) suspends inactive tabs automatically while keeping them visible in your tab bar. [OneTab](https://www.one-tab.com/) collapses all tabs into a list. I tested both side by side — ProTab Suspender saves more memory (roughly 40% reduction on a 30-tab session) without losing your tab layout.
+**Tab Management.** Chrome is a memory hog. Open 20 tabs and your system slows to a crawl. [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) suspends inactive tabs automatically while keeping them visible in your tab bar. [OneTab](https://www.one-tab.com/) collapses all tabs into a list. Compared feature by feature, ProTab Suspender tends to free more memory without losing your tab layout.
 
 **Dark Mode.** Prolonged screen time causes eye strain and disrupts sleep. [NightShield Pro](https://chromewebstore.google.com/detail/nightshield-pro/pgjidjlmpacojfolcmeekgnnekmggenm) applies a warm tint and darkens every page automatically. For sites where the dark rendering looks wrong, [DarkFlow](https://chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) gives you per-domain contrast sliders so you can fine-tune each site individually.
 

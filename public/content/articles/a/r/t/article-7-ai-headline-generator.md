@@ -19,7 +19,7 @@ keywords: ['ai headline generator', 'headline generator chrome extension', 'seo 
 
 
 
-1. [Hook: The Headline That Generated $2.3 Million in 48 Hours](#hook-the-headline-that-generated-23-million-in-48-hours)
+1. [The Headline That Generated $2.3 Million in 48 Hours](#the-headline-that-generated-23-million-in-48-hours)
 2. [Why Headlines Are the Most Critical 15 Words You'll Ever Write](#why-headlines-are-the-most-critical-15-words-youll-ever-write)
 3. [What Is an AI Headline Generator Chrome Extension?](#what-is-an-ai-headline-generator-chrome-extension)
 4. [The 5 Best AI Headline Generator Chrome Extensions (2026)](#the-5-best-ai-headline-generator-chrome-extensions-2026)
@@ -35,7 +35,7 @@ keywords: ['ai headline generator', 'headline generator chrome extension', 'seo 
 
 ---
 
-## Hook: The Headline That Generated $2.3 Million in 48 Hours
+## The Headline That Generated $2.3 Million in 48 Hours
 
 In March 2024, a relatively unknown SaaS company published a blog post. The content was solid—comprehensive, well-researched, genuinely useful. But the original headline? "Our New Product Features."
 
@@ -437,7 +437,7 @@ Example: *"Google's March 2026 Update: Why Your Site Will Lose 40% of Traffic (A
 - Time on page: +25% (better headline = better audience fit)
 
 ### Case Study 2: The YouTube Breakthrough
-**Channel:** Tech review, 50K subscribers
+**Channel:** A mid-size tech review channel
 **Challenge:** Videos getting buried in search
 **Solution:** AI-optimized YouTube titles
 **Results:**

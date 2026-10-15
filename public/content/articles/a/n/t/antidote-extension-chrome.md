@@ -35,7 +35,7 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 ## Table of Contents
 - [What Is Antidote?](#what)
-- [Features I Tested](#features)
+- [Features Covered](#features)
 - [Antidote vs Grammarly vs ProWritingAid](#vs)
 - [Companion Extensions for Writers](#companions)
 - [Pricing](#pricing)
@@ -48,9 +48,9 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 Antidote is a writing assistant developed by Druide Informatique, a Canadian company founded in 1993. Unlike Grammarly which focuses primarily on English, Antidote's strength is French — it includes 11 French dictionaries covering synonyms, antonyms, conjugations, word families, compound words, proper names, and regionalisms from France, Canada, Belgium, and Switzerland. It has 410 French grammar rules and 30 interactive guidebooks covering everything from typography to gender-neutral writing. It also supports English with full dictionaries, a grammar checker, and a thesaurus.
 
-I tested Antidote's Chrome extension for 14 days across Google Docs, Gmail, WordPress, LinkedIn, Twitter, and several French-language news sites (Le Monde, Le Figaro, Radio-Canada). I ran 20+ texts through it — some in English, some in French, some mixed (franglais) — and compared results against Grammarly and ProWritingAid on the same texts. I calculated error detection rates by intentionally inserting 50 common grammar mistakes into a French test document and counting how many each tool caught. For reference, I also read [Antidote's official site](https://www.antidote.info/en) and [comparison reviews on writing tool forums](https://www.reddit.com/r/French/comments/antidote_vs_grammarly/).
+This guide walks through Antidote's Chrome extension in the places French and English writers actually use it — Google Docs, Gmail, WordPress, LinkedIn, Twitter, and French-language news sites such as Le Monde and Le Figaro — and compares its corrections against Grammarly and ProWritingAid on mixed English/French texts. For reference, I also read [Antidote's official site](https://www.antidote.info/en) and [comparison reviews on writing tool forums](https://www.reddit.com/r/French/comments/antidote_vs_grammarly/).
 
-## Features I Tested {#features}
+## Features Covered {#features}
 
 ![Antidote Extension Chrome Overview](/content/images/antidote-extension-chrome/antidote-extension-chrome-overview.webp "Antidote Extension Chrome Overview")
 
@@ -65,7 +65,7 @@ I tested Antidote's Chrome extension for 14 days across Google Docs, Gmail, Word
 
 **Guides.** 30 interactive guidebooks on writing rules: typography, punctuation, inclusive writing, quotes, numbers. Accessible directly from the Chrome extension. I found the inclusive writing guide particularly useful — it explains gender-neutral alternatives in French, a topic most English-focused tools ignore entirely.
 
-**Offline mode.** The Chrome extension works offline once the desktop app is installed. This is a significant advantage over Grammarly, which requires an internet connection for all features. I tested Antidote's offline mode on a 2-hour flight and it caught the same errors it would have caught online. All dictionaries, grammar rules, and guidebooks were available without connectivity.
+**Offline mode.** The Chrome extension works offline once the desktop app is installed. This is a significant advantage over Grammarly, which requires an internet connection for all features. Antidote's offline mode catches the same errors the online version does, so a dead connection doesn't cost you corrections. All dictionaries, grammar rules, and guidebooks are available without connectivity.
 
 ## Antidote vs Grammarly vs ProWritingAid {#vs}
 

@@ -35,7 +35,7 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 ## Table of Contents
 - [What Is AliTools?](#what)
-- [Features I Tested](#features)
+- [Features Covered](#features)
 - [AliTools vs Manual Sourcing](#vs)
 - [Companion Extensions for Sourcing](#companions)
 - [Verdict](#verdict)
@@ -47,9 +47,9 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 AliTools is a Chrome extension for Alibaba shoppers. It adds supplier verification, price comparison, and order tracking on top of the regular Alibaba interface. Instead of manually cross-referencing supplier profiles, AliTools surfaces the data inline — shipping costs, minimum order quantities, supplier response rates, and transaction history.
 
-I tested AliTools for two weeks while sourcing products across 5 categories (electronics, home goods, apparel, packaging, and pet supplies). I placed test orders with 3 suppliers to verify the data accuracy. Here is what I found. For comparison, I also used [AliTools' own site](https://alitools.com/) and read [AliExpress dropshipping guides](https://www.salehoo.com/blog/aliexpress-dropshipping) for sourcing best practices.
+This guide walks through AliTools' strengths and blind spots while sourcing products across 5 categories (electronics, home goods, apparel, packaging, and pet supplies), including how its supplier data holds up in practice. For comparison, I also used [AliTools' own site](https://alitools.com/) and read [AliExpress dropshipping guides](https://www.salehoo.com/blog/aliexpress-dropshipping) for sourcing best practices.
 
-## Features I Tested {#features}
+## Features Covered {#features}
 
 ![Alitools Extension Chrome Overview](/content/images/alitools-extension-chrome/alitools-extension-chrome-overview.webp "Alitools Extension Chrome Overview")
 
@@ -80,7 +80,7 @@ The time savings are real. I cut product research time by about 50%. The extensi
 ![Alitools Extension Chrome Features](/content/images/alitools-extension-chrome/alitools-extension-chrome-features.webp "Alitools Extension Chrome Features")
 
 
-AliTools has three weaknesses I noticed during testing. First, the supplier verification score is based on Alibaba's own data, which means fake reviews can still slip through — one "verified" supplier I tested had 40+ five-star reviews posted within the same week, a clear red flag. Second, the price comparison feature only works when multiple suppliers list the same product with identical specifications, which happens less often than you would expect. Third, the Chrome extension itself is minimal — it shows data but does not let you export, annotate, or screenshot anything.
+AliTools has three weaknesses worth knowing about. First, the supplier verification score is based on Alibaba's own data, which means fake reviews can still slip through — a "verified" supplier with 40+ five-star reviews all posted within the same week is a clear red flag. Second, the price comparison feature only works when multiple suppliers list the same product with identical specifications, which happens less often than you would expect. Third, the Chrome extension itself is minimal — it shows data but does not let you export, annotate, or screenshot anything.
 
 ## Companion Extensions for Sourcing {#companions}
 

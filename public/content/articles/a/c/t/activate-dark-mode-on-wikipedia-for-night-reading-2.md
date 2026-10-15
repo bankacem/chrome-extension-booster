@@ -99,7 +99,7 @@ Chrome has a hidden experimental setting that forces dark mode on every website.
 
 **Pros:** No extension needed, works everywhere, zero performance cost.
 
-**Cons:** Zero customization. You cannot whitelist sites, adjust contrast, or schedule it. It is an all-or-nothing toggle. I tested it for a day and found that some Wikipedia pages — especially math-heavy articles with SVGs — render with inverted colors that make them unreadable. Use this as a fallback, not a primary solution.
+**Cons:** Zero customization. You cannot whitelist sites, adjust contrast, or schedule it. It is an all-or-nothing toggle. One quirk worth knowing: some Wikipedia pages — especially math-heavy articles with SVG formulas — can render with inverted colors that hurt readability. Use this as a fallback, not a primary solution.
 
 ![Chrome flags screen showing the force dark mode experiment enabled](https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80)
 
@@ -148,7 +148,7 @@ The articles I checked before writing this — specifically [Techsive's guide](h
 
 **They do not test multiple extensions.** Every article recommends Dark Reader by default without testing alternatives like NightShield Pro or DarkFlow. I installed all three and compared them side by side. The differences in rendering quality, customization, and eye comfort are significant.
 
-**No human testing claims.** These articles read like rewritten documentation. None of them say "I tested this for a week and here is what happened." This article is based on actual weekend testing across 6 methods and 8 companion extensions.
+**No human testing claims.** Most of these guides read like rewritten documentation. This one goes further: six methods plus eight companion extensions, compared in enough detail to help you actually pick one.
 
 ![Researcher comparing dark mode guides against real test results](https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80)
 
