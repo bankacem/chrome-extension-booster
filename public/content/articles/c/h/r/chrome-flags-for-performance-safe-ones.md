@@ -60,7 +60,7 @@ A necessary disclaimer: flag names rotate. Google retires experiments and gradua
 
 ### #enable-gpu-rasterization — the one flag I always set on weak CPUs
 
-By default, Chrome rasterizes (paints) page tiles on the CPU and hands the result to the GPU. This flag moves rasterization onto the GPU itself. On a machine with a weak CPU and a functional GPU — the classic old-laptop profile — scrolling gets visibly smoother and the CPU has more headroom for your tabs. On our test bench, smooth-scroll jank on long pages dropped noticeably and CPU load during scrolling fell by roughly 10–15%; memory stayed about flat. Caveat: on machines with broken or ancient GPU drivers, it can do the opposite. Test for ten minutes; revert if scrolling stutters.
+By default, Chrome rasterizes (paints) page tiles on the CPU and hands the result to the GPU. This flag moves rasterization onto the GPU itself. On a machine with a weak CPU and a functional GPU — the classic old-laptop profile — scrolling gets visibly smoother and the CPU has more headroom for your tabs. On an old-laptop profile like that, smooth-scroll jank on long pages drops noticeably and CPU load during scrolling eases off; memory stays about flat. Caveat: on machines with broken or ancient GPU drivers, it can do the opposite. Test for ten minutes; revert if scrolling stutters.
 
 ### #enable-zero-copy — small but free
 
@@ -119,7 +119,7 @@ To keep the flags in perspective, here is what each layer of tuning actually del
 | Tab suspender extension | Web Store | 10–20% further RAM cut at high tab counts | Low |
 | Smooth scrolling off | chrome://flags | Perceptual snappiness only | None |
 
-If the Settings-level rows are unfamiliar territory, start with our [guide to fixing Chrome high memory usage](/blog/how-to-fix-chrome-high-memory-usage-2026), which walks the full sequence with measured results for every step. The rendering flags are the right *last* layer: set them after the settings, not instead of them.
+If the Settings-level rows are unfamiliar territory, start with our [guide to fixing Chrome high memory usage](/blog/how-to-fix-chrome-high-memory-usage-2026), which walks the full sequence step by step. The rendering flags are the right *last* layer: set them after the settings, not instead of them.
 
 A few diagnostics pair well with flag work. If the GPU process looks bloated in Task Manager, our [Chrome GPU process high memory fix](/blog/chrome-gpu-process-high-memory-fix) explains what belongs there and what does not. And if Chrome's process count itself is what bothers you, [why Chrome opens so many processes](/blog/why-does-chrome-open-so-many-processes) explains which of them are mandatory architecture and which are negotiable. For a deeper memory audit, Chrome's own [DevTools memory documentation](https://developer.chrome.com/docs/devtools/memory-problems) is the authoritative source, and [web.dev's rendering performance guide](https://web.dev/articles/rendering-performance) explains exactly the pipeline the rasterization flags modify.
 

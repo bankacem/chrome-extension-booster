@@ -151,7 +151,7 @@ Hotspot Shield's proprietary **Catapult Hydra** protocol is its main selling poi
 | **OpenVPN UDP** | 312 Mbps | 267 Mbps | +28ms |
 | **IKEv2** | 356 Mbps | 298 Mbps | +22ms |
 
-**Catapult Hydra is genuinely fast** — 40-50% faster than OpenVPN in our tests. But it's closed-source, so we can't verify its security claims.
+**Catapult Hydra is genuinely fast** — typically well ahead of OpenVPN on speed in everyday use. But it's closed-source, so we can't verify its security claims.
 
 ---
 
@@ -281,7 +281,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## FAQ
 
 ![Vpn Article8 Hotspot Shield Review Guide](/content/images/vpn-article8-hotspot-shield-review/vpn-article8-hotspot-shield-review-guide.webp "Vpn Article8 Hotspot Shield Review Guide")
@@ -297,7 +297,7 @@ Hotspot Shield claims no-logs, but there's no independent audit verifying this. 
 Only for very light use. The 500 MB/day limit is restrictive — roughly 30 minutes of standard YouTube. Speeds are throttled. No streaming support. For anything beyond casual browsing, upgrade to Premium or switch to ProtonVPN's unlimited free tier.
 
 ### Why is Hotspot Shield so fast?
-The proprietary Catapult Hydra protocol is optimized for speed. It's 40-50% faster than OpenVPN in our tests. However, it's closed-source, so we can't verify its security claims or confirm it doesn't have backdoors.
+The proprietary Catapult Hydra protocol is optimized for speed, and it generally leaves OpenVPN behind on raw throughput. However, it's closed-source, so we can't verify its security claims or confirm it doesn't have backdoors.
 
 ### Did Hotspot Shield sell user data?
 In 2016, the Center for Democracy & Technology filed an FTC complaint alleging Hotspot Shield injected ads, redirected affiliate traffic, and collected user data for advertising. Hotspot Shield denied the allegations but changed practices. No legal action resulted.
