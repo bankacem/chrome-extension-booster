@@ -82,7 +82,7 @@ The extension shows the full redirect chain — each domain the link passes thro
 
 Your eyes deserve a break. [NightShield Pro](https://chromewebstore.google.com/detail/nightshield-pro/pgjidjlmpacojfolcmeekgnnekmggenm) applies a warm-tint dark mode to every website, even the ones that do not support it natively. It intelligently adjusts contrast so text stays readable — unlike simple CSS inversion that makes images look like photo negatives.
 
-I tested it against Dark Reader (the most popular alternative). NightShield Pro used 30% less RAM (50 MB vs 70 MB) and had fewer rendering glitches on complex sites like Google Maps. The warmth slider lets you tune the color temperature from cool blue to warm amber.
+Next to Dark Reader (the most popular alternative), NightShield Pro runs lighter and glitches less on complex sites like Google Maps. The warmth slider lets you tune the color temperature from cool blue to warm amber.
 
 ### DarkFlow
 

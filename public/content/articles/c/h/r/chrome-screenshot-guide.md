@@ -41,7 +41,7 @@ Windows has Snipping Tool (Win+Shift+S). Mac has Cmd+Shift+4. These work for bas
 
 ## My Test Setup
 
-I tested all 12 extensions on the same hardware: Dell XPS 13, Intel i7-1360P, 16 GB RAM, Windows 11, Chrome 125. I captured five test pages: a 12,000-pixel-long documentation page, a YouTube video page, a Google Maps view, a Twitter thread, and a static article.
+All 12 extensions faced the same five pages: a 12,000-pixel documentation page, a YouTube video page, a Google Maps view, a Twitter thread, and a static article.
 
 Timing was done with Chrome's performance recording tool. Annotation quality was evaluated by creating the same output (arrow pointing to a button, highlighted paragraph, blurred email address) in each extension.
 
@@ -104,7 +104,7 @@ The default upload behavior is also concerning. Lightshot uploads every screensh
 
 ## Annotation Tool Comparison
 
-I tested annotation quality by creating the same output in each extension: an arrow pointing to a broken button, a highlight over an error message, and a blur over a test email address.
+Annotation quality came down to reproducing the same output in each extension: an arrow on a button, a highlight over an error message, a blur over an email address.
 
 | Feature | Quick Screenshot Lite | Nimbus | Awesome Screenshot |
 |---|---|---|---|

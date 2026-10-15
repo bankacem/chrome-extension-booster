@@ -177,7 +177,7 @@ Here are the security best practices I recommend based on my testing:
 
 4. **Regularly audit installed extensions**: Periodically review your installed extensions and remove any you no longer use or that seem suspicious.
 
-When I tested NoScript for Chrome: Better Security and Speed in Yandex Browser, I found that while it provided additional security layers, its functionality was limited compared to Chrome. This experience highlighted how security extensions may not perform at their full potential in browsers other than their native environment.
+NoScript for Chrome: Better Security and Speed adds useful layers in Yandex Browser, but with limits compared to Chrome — a reminder that security extensions rarely perform at their full potential outside their native browser.
 
 ### Privacy Implications
 

@@ -231,7 +231,7 @@ PrintNode offers a free tier for personal use with limited prints per month, whi
 
 If you own an HP printer, HP Smart Print provides a cloud printing solution tailored to their hardware. The HP Smart app allows you to print to HP printers from anywhere, as long as both your device and printer have internet access.
 
-I tested HP Smart Print with an HP LaserJet Pro and found it worked well for basic printing tasks. Setup was straightforward, requiring just the HP Smart app and an HP account. Print quality was excellent, matching direct printing results. The main limitation is that it only works with HP printers, so if you have a multi-brand environment, you'll need a different solution.
+HP Smart Print covers basic printing tasks well. Setup takes just the HP Smart app and an HP account, and print quality matches direct printing. The limitation is brand lock-in: HP printers only, so multi-brand offices need another solution.
 
 HP Smart Print also includes additional features like scanning, copying, and ink level monitoring, making it a comprehensive printer management solution rather than just a printing utility.
 

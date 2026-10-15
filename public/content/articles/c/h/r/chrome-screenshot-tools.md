@@ -42,7 +42,7 @@ This guide compares three approaches to taking screenshots of browser content: W
 
 ## Speed and Quality Comparison
 
-I tested all three on the same tasks: a visible-area capture of a Wikipedia article, a full-page capture of a 30-scroll MDN documentation page, and an annotated screenshot with arrows and text.
+All three handled the same tasks: a visible-area capture of a Wikipedia article, a full-page capture of a long MDN documentation page, and an annotated screenshot with arrows and text.
 
 | Task | Windows Snipping Tool | Chrome DevTools | Quick Screenshot Lite |
 |---|---|---|---|

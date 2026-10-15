@@ -46,7 +46,7 @@ The short version: **ClickClean works, but the improvement is smaller than most 
 
 Before each test, I used Chrome normally for 3 days straight — 20+ tabs open, streaming video, browsing news, using Google Docs. I measured baseline performance, ran the cleaner, then measured again immediately after and 24 hours later.
 
-I tested ClickClean against three alternatives: doing nothing (baseline), manual Chrome cleanup (Settings > Clear browsing data), and CCleaner's Chrome integration.
+ClickClean compared against three alternatives: doing nothing (baseline), manual Chrome cleanup (Settings > Clear browsing data), and CCleaner's Chrome integration.
 
 | Cleaner | Time to Run | Disk Freed | RAM Recovered | Speed Improvement |
 |---------|-------------|-----------|---------------|-------------------|

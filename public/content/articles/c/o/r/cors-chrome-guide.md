@@ -55,7 +55,7 @@ The browser sends a preflight OPTIONS request, checks the server's CORS headers,
 
 ## My Test Setup
 
-I tested four CORS solutions against 10 different API integrations. The APIs included a REST API, a GraphQL endpoint, an image CDN, a WebSocket server, an OAuth provider, and five public APIs (GitHub, Weather API, News API, Spotify, and Stripe test mode).
+Four CORS solutions, measured against a spread of API integrations: a REST API, a GraphQL endpoint, an image CDN, a WebSocket server, an OAuth provider, and public APIs (GitHub, weather, news, Spotify, and Stripe test mode).
 
 | Approach | Type | Cost | Setup Time |
 |----------|------|------|------------|
@@ -69,7 +69,7 @@ I tested four CORS solutions against 10 different API integrations. The APIs inc
 ![Cors Chrome Guide Overview](/content/images/cors-chrome-guide/cors-chrome-guide-overview.webp "Cors Chrome Guide Overview")
 
 
-I tested the most popular CORS Chrome extension ("Allow CORS: Access-Control-Allow-Origin") which adds a toggle button to disable CORS checks in Chrome.
+The most popular CORS Chrome extension ("Allow CORS: Access-Control-Allow-Origin") adds a toggle button that disables CORS checks in Chrome.
 
 | Metric | Result |
 |--------|--------|

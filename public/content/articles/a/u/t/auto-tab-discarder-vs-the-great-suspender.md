@@ -62,7 +62,7 @@ I spent a week comparing 4 safe alternatives to find the best replacement. For r
 
 **Chrome Memory Saver** — Chrome's built-in Memory Saver mode (enabled in chrome://settings/performance). Automatically frees memory from inactive tabs. No extension needed. Basic but functional.
 
-I tested all four across the same workload: 30 tabs open across Chrome, including a Google Doc, YouTube, a news site, a research paper, GitHub, Gmail, and several reference pages. I measured memory usage before and after suspension using Chrome's built-in task manager, and I tracked how long each tool took to restore a tab when clicked.
+A fair comparison runs all four through the same workload: 30 tabs mixing a Google Doc, YouTube, a news site, a research paper, GitHub, Gmail, and reference pages — measuring memory before and after suspension in Chrome's task manager, and timing how long each tool takes to restore a tab on click.
 
 ## Comparison Table {#table}
 

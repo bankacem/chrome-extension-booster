@@ -142,9 +142,9 @@ Quick Screenshot Lite was the MVP of my testing process. I used it to document e
 
 Some extensions genuinely changed how I use Chrome. These three had the biggest impact:
 
-- **Quick Screenshot Lite** — The fastest full-page screenshot tool I have tested. I now use it 20-30 times per day for work documentation, bug reports, and saving online receipts. Its zero-artifact scrolling capture is unmatched.
-- **ProTab Suspender** — The single biggest performance improvement on this list. Before installing it, Chrome regularly consumed 3.5-4GB of RAM with 25 tabs open. After, it stays under 2GB. My laptop fan stopped spinning up during browsing sessions.
-- **DarkFlow** — I have light sensitivity and DarkFlow's consistent 15MB dark theme application across all sites eliminated the blinding white flashes that Dark Reader caused on page loads. It literally made browsing more comfortable for my eyes.
+- **Quick Screenshot Lite** — The fastest full-page screenshot tool here. Scrolling captures come out clean with no stitching artifacts, which matters for documentation, bug reports, and saving receipts.
+- **ProTab Suspender** — The biggest performance win on this list. Suspending idle tabs cuts Chrome's memory footprint dramatically — most noticeable past 20+ tabs, where the fan finally stays quiet.
+- **DarkFlow** — Applies its dark theme consistently across sites with no white flash on page loads, unlike plain CSS-inversion approaches. Easier on the eyes for night browsing.
 
 ## How to Install and Manage Chrome Extensions
 
