@@ -38,7 +38,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## Key Takeaways
 
 | Tool | Free Tier | Requires API Key? | Best Feature | Monthly Cost (Paid) |
@@ -59,7 +59,7 @@ The short version before the deep dive:
 
 ## How We Compared the ChatGPT for Google Sheets Extensions
 
-Same test bed for all four tools: a 2,000-row product catalog, a 500-row list of company domains, and a 300-row export of customer feedback. I measured setup time, cost for 10,000 AI calls, formula reliability under auto-fill, and how each tool handles failure (a wrong answer is annoying; a silently blank cell is worse).
+The comparison covers the same ground for all four tools: a product catalog, a list of company domains, and an export of customer feedback — looking at setup time, cost per 10,000 AI calls, formula reliability under auto-fill, and how each tool handles failure (a wrong answer is annoying; a silently blank cell is worse).
 
 Setup matters more than most reviews admit. Every extension here installs from the Chrome Web Store in under a minute — the <a href="https://support.google.com/chrome_webstore/answer/2664769?hl=en" target="_blank" rel="noopener noreferrer">official guide to installing and managing extensions</a> covers the permission screens you'll see along the way. The real differences show up on first use, so pay attention to the catches under each tool below.
 

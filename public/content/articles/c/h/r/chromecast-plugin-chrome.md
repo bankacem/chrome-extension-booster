@@ -52,14 +52,14 @@ No separate extension is needed in modern Chrome. If you do not see the Cast ico
 
 ## Latency Comparison
 
-I measured delay between mouse movement on my computer and the corresponding movement on the TV screen using a high-speed camera.
+What matters here is the delay between mouse movement on your computer and the corresponding movement on the TV screen:
 
-| Cast Mode | Average Latency | Use Case |
+| Cast Mode | Latency | Use Case |
 |---|---|---|
-| Cast tab (video) | 200ms | YouTube, Netflix |
-| Cast tab (static page) | 350ms | Presentations, documents |
-| Cast desktop | 450ms | Full screen mirroring |
-| Cast file (native) | 50ms | Local video playback |
+| Cast tab (video) | Low | YouTube, Netflix |
+| Cast tab (static page) | Medium | Presentations, documents |
+| Cast desktop | High | Full screen mirroring |
+| Cast file (native) | Lowest | Local video playback |
 
 Cast tab in video mode has the lowest latency because Chrome sends the video stream directly to the Chromecast rather than encoding the entire tab. Cast desktop has the highest latency because it encodes the entire screen in real time.
 
