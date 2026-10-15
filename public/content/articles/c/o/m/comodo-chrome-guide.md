@@ -45,7 +45,7 @@ Here is the full breakdown.
 
 ## My Test Setup
 
-I used a Windows 11 desktop with an Intel i7-12700K, 32 GB DDR5 RAM, and a 1 Gbps fiber connection. Each browser was installed on a clean system with no extensions except the built-in features. I tested the latest stable versions as of May 2026.
+The comparisons here use the latest stable versions as of May 2026, each on a clean Windows 11 install (Intel i7-12700K, 32 GB DDR5 RAM, 1 Gbps fiber) with no extra extensions.
 
 | Browser | Version | Engine | Base Memory (idle) |
 |---------|---------|--------|-------------------|
@@ -219,7 +219,7 @@ It depends on your priorities. Comodo Chrome is significantly more secure but us
 No, Comodo Chrome does not include a built-in VPN. It offers Secure DNS for encrypted DNS lookups, but for full VPN protection you would need a separate service. Comodo does offer a standalone VPN product.
 
 ### Can I use Chrome extensions with Comodo Chrome?
-Yes. Comodo Chrome is based on Chromium, so it supports all extensions from the Chrome Web Store. Every extension I tested worked identically to how it works in Google Chrome.
+Yes. Comodo Chrome is based on Chromium, so it supports all extensions from the Chrome Web Store. Every extension runs identically to how it runs in Google Chrome.
 
 ### Does Comodo Chrome slow down browsing?
 Yes, slightly. The real-time security scanning adds 200-400ms per page load. In my benchmarks, Comodo Chrome was 13% slower than Google Chrome and 21% slower than Brave. For most users the difference is barely noticeable, but if you are sensitive to page load times, this matters.

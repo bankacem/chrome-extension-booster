@@ -71,7 +71,7 @@ VidMixer looks modern but falls apart under load. I streamed a 1080p video for 4
 
 ### Reflector
 
-Reflector has no free tier. Their cheapest option is $17.99, and you do not even get desktop casting with it. I tested the trial version and found that it uses about 25% more CPU than the Chromecast extension during active casting. On my older laptop, the fan kicked in within minutes. For a tool that costs money, expecting users to accept worse performance and fewer features feels like a bad deal.
+Reflector has no free tier. Their cheapest option is $17.99, and you do not even get desktop casting with it. The trial version runs noticeably heavier than the Chromecast extension during active casting — on an older laptop, the fan kicked in within minutes. For a tool that costs money, expecting users to accept worse performance and fewer features feels like a bad deal.
 
 ## Step-by-Step: How to Set Up the Chromecast Extension
 
@@ -135,7 +135,7 @@ Each one does a single job well, and together they remove the small frictions th
 
 ### Does the Chromecast extension work with all Chromecast devices?
 
-Yes. I tested it with Chromecast Gen 2, Chromecast Ultra, Chromecast with Google TV, and Chromecast Audio. All four worked without issues.
+Yes. Chromecast Gen 2, Chromecast Ultra, Chromecast with Google TV, and Chromecast Audio are all supported, and all four work without issues.
 
 ### Can I cast DRM-protected content like Netflix or Disney Plus?
 

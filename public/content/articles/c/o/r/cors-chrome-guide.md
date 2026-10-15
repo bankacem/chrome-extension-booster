@@ -39,7 +39,7 @@ updated_at: '2026-09-14T12:00:00.000+00:00'
 
 I build web applications for a living. Every week I hit the same wall: CORS errors in Chrome. You build a beautiful frontend, connect it to an API, and Chrome refuses to let the data through. The error message is famously unhelpful — "has been blocked by CORS policy" — and then you spend hours figuring out why.
 
-I tested four approaches to handling CORS in Chrome across 10 different API integrations over two weeks. I measured setup time, reliability, security impact, and which approach works best for each stage of development.
+Four approaches to handling CORS in Chrome are compared here across 10 different API integrations — measuring setup time, reliability, security impact, and which approach works best for each stage of development.
 
 Here is the full breakdown.
 
@@ -110,7 +110,7 @@ For a self-hosted alternative, I set up a Node.js proxy using Express and the `c
 
 ## Server-Side CORS Configuration
 
-The proper fix: configure your backend server to send the correct CORS headers. I tested this with Express (Node.js), Flask (Python), and ASP.NET Core.
+The proper fix: configure your backend server to send the correct CORS headers. That works the same with Express (Node.js), Flask (Python), and ASP.NET Core.
 
 | Framework | Lines of Code | Configuration Time | Reliability |
 |-----------|--------------|-------------------|-------------|

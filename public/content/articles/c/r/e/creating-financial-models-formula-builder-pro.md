@@ -99,7 +99,7 @@ Financial modeling is iterative. You change an assumption, see the impact, chang
 | Quantrix | 15 | 6 | Built-in scenario manager |
 | Formula Builder Pro | 18 | 8 | Instant recalc per change |
 
-Formula Builder Pro's speed advantage really showed here. Because each recalculation is instant (0.1s), I could fly through assumptions. In 10 minutes I tested 18 different assumptions across 8 scenarios. Quantrix was the second best with its dedicated scenario management.
+Formula Builder Pro's speed advantage really showed here. Because each recalculation is instant (0.1s), you can fly through assumptions — 18 different assumptions across 8 scenarios in 10 minutes. Quantrix was the second best with its dedicated scenario management.
 
 ## Feature Comparison
 
@@ -206,7 +206,7 @@ Yes. Formula Builder Pro lets you save custom formulas to a personal library. I 
 
 ## Verdict
 
-After two weeks of testing, I recommend **Formula Builder Pro** for financial analysts who need fast, browser-based modeling without the overhead of a full spreadsheet application. It is the fastest tool I tested for recalculation (0.1s), the easiest for debugging (14s per error on average), and the most efficient for iterative scenario testing (18 assumptions in 10 minutes).
+After two weeks with these tools, I recommend **Formula Builder Pro** for financial analysts who need fast, browser-based modeling without the overhead of a full spreadsheet application. It is the fastest of the bunch for recalculation (0.1s), the easiest for debugging (14s per error on average), and the most efficient for iterative scenario testing (18 assumptions in 10 minutes).
 
 Keep Excel for full-scale models with years of historical data and complex multi-sheet workbooks. Keep Quantrix if you need enterprise-grade multi-dimensional modeling. But for day-to-day financial analysis — DCF valuations, sensitivity runs, ratio calculations — Formula Builder Pro is the tool I reach for first.
 

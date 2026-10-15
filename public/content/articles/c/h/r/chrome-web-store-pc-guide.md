@@ -73,7 +73,7 @@ Chrome's multi-process architecture means each extension runs as a separate proc
 
 When you browse the Chrome Web Store on PC, you see ratings, reviews, and screenshots — but no performance metrics. You cannot see how much RAM an extension uses, how it affects boot time, or whether it makes network requests in the background.
 
-This lack of transparency means users install extensions blindly and only discover the performance cost after the damage is done. I tested 35 extensions, and 12 of them (34%) made unnecessary background network requests — pinging analytics servers, checking for updates more frequently than Chrome's own update mechanism, or loading remote fonts.
+This lack of transparency means users install extensions blindly and only discover the performance cost after the damage is done. A significant share of extensions make unnecessary background network requests — pinging analytics servers, checking for updates more frequently than Chrome's own update mechanism, or loading remote fonts.
 
 **The fix**: Before installing any extension, search for independent benchmarks. Review sites like [Chrome Stats](https://chrome-stats.com/) and GitHub repositories often include performance data that the Chrome Web Store does not show.
 
@@ -95,7 +95,7 @@ On a PC, where users expect power-user features, this is frustrating. Other Chro
 
 Chrome allows keyboard shortcuts for extensions, but the feature is buried. Go to `chrome://extensions/shortcuts` to find it. Most PC users never discover this page.
 
-I tested 20 popular extensions for keyboard shortcut support. Only 8 of them (40%) had configurable shortcuts, and none of them had shortcuts enabled by default. You must manually assign a combination (e.g., `Ctrl+Shift+S` for Quick Screenshot Lite).
+Among popular extensions, only a minority have configurable keyboard shortcuts, and none of them have shortcuts enabled by default. You must manually assign a combination (e.g., `Ctrl+Shift+S` for Quick Screenshot Lite).
 
 | Extension | Default Shortcut | Customizable |
 |---|---|---|

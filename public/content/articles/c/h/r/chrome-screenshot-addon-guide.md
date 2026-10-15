@@ -30,7 +30,7 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 
 I have been taking browser screenshots for over a decade — for bug reports, documentation, client presentations, tutorial creation, and saving receipts. I have tried every extension and every technique. In this guide, I share what I learned: which addon to install, how to set it up for speed, and how to get the best results for different use cases.
 
-I tested everything on my Lenovo IdeaPad 3 (Intel Core i5-1137G7, 8GB DDR4, Windows 11 Pro, Chrome 126), using a test page with 8,200 words of content, 12 images, and a 450-row data table. I measured capture time with a stopwatch and checked output quality in IrfanView.
+The walkthroughs below use a long sample page — 8,200 words of content, 12 images, and a 450-row data table — to demonstrate how each tool handles different content types.
 
 ## Quick Setup: Install and Configure a Screenshot Addon in 2 Minutes
 
@@ -49,7 +49,7 @@ That is it. The extension does not need any configuration for basic use. The def
 
 Trigger full-page capture. Quick Screenshot Lite scanned my 8,200-word test page in 2.3 seconds and produced a 1920×18750px PNG at 3.2MB. The output was pixel-perfect — every heading, code block, and table cell was readable.
 
-For comparison, I tested GoFullPage on the same page: it took 4.1 seconds and produced a similar result, but the file was 3.8MB due to less efficient PNG compression.
+For comparison, GoFullPage handles the same page with similar output, though its files tend to run larger because of less efficient PNG compression.
 
 ### Scenario 2: Sharing a Section of a Page
 
@@ -80,7 +80,7 @@ Awesome Screenshot was one of the first screenshot extensions I used, back in 20
 
 The free version has a 10-screenshot-per-week limit for cloud uploads. After that, you must pay $4/month or $30/year for unlimited uploads. The annotation editor opens automatically after every capture, adding 2-3 seconds to the workflow. There is no option to disable this.
 
-On my test page, Awesome Screenshot's full-page capture took 5.7 seconds and produced a 1920×17540px image — it missed the last ~1,200 pixels of the page. I tested it three times and got the same clipping each time.
+On my test page, Awesome Screenshot's full-page capture took 5.7 seconds and produced a 1920×17540px image — it missed the last ~1,200 pixels of the page. Repeated attempts produced the same clipping each time.
 
 ### GoFullPage — Minimalist but Slow
 

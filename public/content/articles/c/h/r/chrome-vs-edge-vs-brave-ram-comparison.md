@@ -91,7 +91,7 @@ Brave's lower CPU usage translates to about 1 hour more battery life on a standa
 ![Chrome Vs Edge Vs Brave Ram Comparison Features](/content/images/chrome-vs-edge-vs-brave-ram-comparison/chrome-vs-edge-vs-brave-ram-comparison-features.webp "Chrome Vs Edge Vs Brave Ram Comparison Features")
 
 
-All Chromium-based browsers (Chrome, Edge, Brave, Opera, Vivaldi) support Chrome Web Store extensions. I tested 20 popular extensions across all three browsers.
+All Chromium-based browsers (Chrome, Edge, Brave, Opera, Vivaldi) support Chrome Web Store extensions, so the same extension installs work on all three — Brave users just rarely need a separate ad blocker.
 
 | Extension | Chrome | Edge | Brave |
 |-----------|--------|------|-------|

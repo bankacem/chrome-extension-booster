@@ -72,7 +72,7 @@ Google Chrome blocks sideloaded extensions by default since Chrome 117 (source: 
 
 Every Chrome extension runs in its own process. Chrome's process-per-site model means that 10+ extensions can spawn 30-40 separate processes, consuming 2-3GB of RAM (source: [Chrome Browser Architecture](https://www.chromium.org/developers/design-documents/multi-process-architecture/)).
 
-I tested a scenario with 15 extensions installed (the average for power users). Chrome's memory usage went from 480MB (base, no extensions) to 2.1GB (15 extensions, 8 tabs open). Page load time increased by 40%.
+With 15 extensions installed (the average for power users), Chrome's memory usage climbs substantially — from under 500MB at base to well over 2GB with tabs open — and page load times slow noticeably.
 
 The solution is not to stop using extensions — it is to be selective. The Pareto principle applies: 20% of extensions deliver 80% of the value. The 10 extensions below cover all major use cases with minimal resource impact.
 

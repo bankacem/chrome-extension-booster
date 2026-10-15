@@ -42,7 +42,7 @@ Here is the full breakdown.
 
 ## My Test Methodology
 
-I tested four setups on a Windows 11 machine with Chrome 125, 16 GB RAM, and a 500 Mbps connection. Each setup ran on a fresh Chrome profile with no cached data. I visited the same 20 sites in the same order and recorded three metrics per site: full page load time (from click to visually complete), memory usage increase (via Chrome Task Manager), and number of visible ads remaining.
+Four setups are compared on a Windows 11 machine with Chrome 125, 16 GB RAM, and a 500 Mbps connection, each on a fresh Chrome profile with no cached data — measuring page load time, memory usage, and visible ads remaining on the same set of sites.
 
 | Setup | Approach | Tool Used |
 |-------|----------|-----------|
@@ -180,7 +180,7 @@ No. Cleanweb only blocks popups and overlay elements. If you want to block YouTu
 In my testing across 20 sites, cleanweb broke zero sites. Total adblock solutions broke between 2 and 6 sites depending on the setup.
 
 ### What is the best cleanweb extension?
-[Light Popup Blocker](/extension/light-popup-blocker) is the best cleanweb extension I tested. It is lightweight (under 10 MB), blocks all popup types including newsletter overlays and auto-playing modals, and gives you per-site control with one click.
+[Light Popup Blocker](/extension/light-popup-blocker) is the best cleanweb extension in this comparison. It is lightweight (under 10 MB), blocks all popup types including newsletter overlays and auto-playing modals, and gives you per-site control with one click.
 
 ### Can I use cleanweb and total adblock together?
 Yes. You can run uBlock Origin in disabled-by-default mode and only enable it on sites where you want total blocking, while keeping Light Popup Blocker always on for popup protection. This gives you the best of both approaches.

@@ -169,7 +169,7 @@ Here's how different print settings affect output quality and speed based on my 
 
 ## Chrome Printing Methods Compared {#printing-methods}
 
-Chrome supports several printing methods, each with its own advantages and limitations. Understanding these options will help you choose the best approach for your needs. I've tested all of these methods extensively across multiple printers and can provide practical insights based on real-world usage.
+Chrome supports several printing methods, each with its own advantages and limitations. Understanding these options will help you choose the best approach for your needs — here's how each method stacks up in practice.
 
 ### Direct Printing (USB)
 
@@ -191,7 +191,7 @@ Network printing setup complexity is medium—you need to ensure your printer an
 
 Cloud printing allows you to send print jobs to printers that aren't directly connected to your computer. This is particularly useful for remote printing or when using multiple devices. While Google Cloud Print was deprecated in 2020, several alternatives have emerged.
 
-I tested PrintNode with an Epson TM-T88V receipt printer located in my home office while controlling it from my work computer. The total time was 85 seconds—significantly slower than local printing methods. Print quality was good but not excellent, as images were compressed during upload to reduce transmission time.
+PrintNode is one of the main Google Cloud Print replacements: you install its client on the machine the printer is attached to, then send jobs from anywhere. Expect longer round trips than local printing — the job goes up to the cloud and back down — and image-heavy documents can lose some fidelity, since cloud printing services compress uploads to keep transmission times reasonable.
 
 Setup complexity for cloud printing is high, requiring account creation, printer configuration, and sometimes additional software. However, the flexibility it provides can be worth the effort for certain use cases, such as printing to a printer in a different location or from multiple devices without driver installation.
 

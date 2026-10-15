@@ -174,7 +174,7 @@ This is where I found the widest variation. Chrome's built-in behavior stores no
 
 The safest model is `chrome.storage.local`, which writes to a file inside your Chrome profile directory on your own disk. It is not encrypted at rest by the browser, which means anyone with access to your user account can read it, but it never leaves the machine. The middle model is `chrome.storage.sync`, which pushes data through your Google account to your other signed-in Chrome installs and comes with tight size limits, so history is usually shallow. The riskiest model is a vendor account with server-side storage, where your copied text sits on someone else's infrastructure under their retention policy.
 
-I tested one extension in the third category and copied a fake API key to see what happened. It appeared in the web dashboard within seconds, which is exactly the advertised feature and exactly the reason I uninstalled it. If your work involves credentials, health data, client records, or anything under a compliance regime, a cloud-synced clipboard is a data-transfer event you probably have not disclosed to anyone.
+One extension in the third category copied a fake API key straight into its web dashboard within seconds — exactly the advertised feature, and exactly the reason to uninstall it. If your work involves credentials, health data, client records, or anything under a compliance regime, a cloud-synced clipboard is a data-transfer event you probably have not disclosed to anyone.
 
 One practical note for people who use clipboard tools as an assistive aid, moving text between a reader and a translation tool for example: local-only managers are the right pick, and they pair well with the tools I covered in [Chrome extensions that boost accessibility](/blog/best-chrome-extensions-for-accessibility-boost-your-browsing-experience).
 
@@ -228,4 +228,4 @@ The alternative, and the right pick if you are on macOS or Linux where no native
 1. [Chrome for Developers — clipboard API](https://developer.chrome.com/docs/web-platform/clipboard-apis) — I verified how the async clipboard API separates read from write access and why read is treated as the more sensitive operation.
 2. [Google Chrome Help — copy and paste](https://support.google.com/chrome/answer/2630687) — I confirmed Chrome's documented copy and paste behavior contains no history feature on desktop platforms.
 3. [MDN — Clipboard interface and security](https://developer.mozilla.org/docs/Web/API/Clipboard) — I checked the permission and document-focus requirements that constrain any script trying to read the clipboard.
-4. [Chrome Web Store](https://chromewebstore.google.com/) — I used the Privacy practices and permissions details on individual listings to screen the clipboard managers I tested.
+4. [Chrome Web Store](https://chromewebstore.google.com/) — the Privacy practices and permissions details on individual listings are the fastest way to screen clipboard managers.

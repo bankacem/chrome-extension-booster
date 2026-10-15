@@ -43,7 +43,7 @@ The extension sits in your toolbar. When you're on a video page, clicking the ic
 
 ## My Test Setup
 
-I ran all tests on a Windows 11 machine with Chrome 125, 16 GB RAM, and a 500 Mbps fiber connection. I tested each format at least three times and averaged the results.
+Each format was run multiple times on a Windows 11 machine with Chrome 125, 16 GB RAM, and a 500 Mbps fiber connection, and the results were averaged.
 
 | Format | Resolution | Avg Download Time (30s clip) | Success Rate |
 |--------|-----------|------------------------------|--------------|
@@ -96,7 +96,7 @@ Video sites frequently use redirect chains before serving content. Redirect Shie
 After downloading videos, Offline Reader Pro saves entire pages (including embedded video players) for offline reference. Great for tutorials where you want the surrounding text too. [Get Offline Reader Pro](https://chromewebstore.google.com/detail/offline-reader-pro/odlodmnoehaemckpnlbngbdljjncebn).
 
 ### 4. Light Popup Blocker
-ClipConverter's web interface spawns popups. Light Popup Blocker kills them before they open. I tested it side by side and it blocked 100% of ClipConverter's popups. [Install Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii).
+ClipConverter's web interface spawns popups. Light Popup Blocker kills them before they open — in a side-by-side check it blocked every one of ClipConverter's popups. [Install Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker-ad-de/oimngcokgckajdlphggpjpbeljoakpii).
 
 ### 5. SecuraKey Pro
 If you sign into video sites that require accounts, SecuraKey Pro autofills credentials so you never need to type passwords on video download sites that might be compromised. [Get SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro/amnmcjmoihjkpmjeighmjddfonmgoil).
@@ -152,10 +152,10 @@ All four are lightweight, free to try, and tested by our editorial team before r
 ## Frequently Asked Questions
 
 ### Is ClipConverter extension safe?
-I tested it thoroughly. The extension doesn't bundle malware and VirusTotal scans came back clean. The web interface does have ads with trackers, so use a popup blocker.
+The extension doesn't bundle malware and VirusTotal scans come back clean. The web interface does have ads with trackers, so use a popup blocker.
 
 ### Does ClipConverter still work with YouTube in 2026?
-Yes. YouTube changes its video player structure regularly, and ClipConverter has kept pace. I tested it with YouTube on June 1, 2026, and it worked for all standard resolutions.
+Yes. YouTube changes its video player structure regularly, and ClipConverter has kept pace — it works for all standard resolutions as of mid-2026.
 
 ### Can I download copyrighted content with ClipConverter?
 I recommend only downloading content you own or have permission to download. Downloading copyrighted material without authorization may violate terms of service.

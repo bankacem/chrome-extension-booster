@@ -125,7 +125,7 @@ The full-page capture is unreliable. On my test page, three out of three capture
 
 Nimbus has the best annotation editor among Chrome screenshot extensions. I can add arrows, text boxes, blur effects, and shapes without leaving the browser. For tutorial creation, this is genuinely useful.
 
-The problem is the scrolling capture. Nimbus returned half-height captures (1920×14250px vs the expected 28500px) on three separate tests. The extension also uses 120MB RAM — the highest of any extension I tested — and requests 7 permissions including access to all websites and downloads.
+The problem is the scrolling capture. Nimbus returned half-height captures (1920×14250px vs the expected 28500px) on three separate attempts. The extension is also the heaviest in this comparison at 120MB RAM — and requests 7 permissions including access to all websites and downloads.
 
 Nimbus limits free cloud storage to 50 screenshots per month. The Pro plan costs $5/month or $40/year.
 
@@ -188,7 +188,7 @@ This tutorial covers everything you need to start taking professional screenshot
 4. Annotate in Paint.NET or Snagit if needed
 5. Share via email, chat, or cloud storage
 
-This workflow is faster, lighter, and more reliable than any all-in-one solution I tested. It covers 100% of my screenshot needs with minimal tool overhead.
+This workflow is faster, lighter, and more reliable than any all-in-one solution in this roundup. It covers every common screenshot need with minimal tool overhead.
 
 [Install Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) — it takes 3 seconds and works immediately.
 

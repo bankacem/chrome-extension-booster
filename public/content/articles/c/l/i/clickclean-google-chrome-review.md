@@ -168,7 +168,7 @@ After optimizing Chrome, make it more comfortable. DarkFlow applies per-domain d
 ## Frequently Asked Questions
 
 ### Does ClickClean make Chrome faster?
-In my tests, ClickClean did not produce a noticeable speed improvement on any of the three machines I tested. Clearing cache frees disk space but does not reduce RAM usage or CPU load. For real speed gains, use a tab suspender and remove unused extensions.
+ClickClean produced no noticeable speed improvement on any of the three machines in this comparison. Clearing cache frees disk space but does not reduce RAM usage or CPU load. For real speed gains, use a tab suspender and remove unused extensions.
 
 ### Is ClickClean safe for my passwords?
 ClickClean has a separate checkbox for clearing passwords. If you leave that box unchecked, your saved passwords are not affected. I recommend keeping it unchecked and using a dedicated password manager like SecuraKey Pro.
