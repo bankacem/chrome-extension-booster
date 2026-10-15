@@ -159,14 +159,14 @@ Yandex Browser sends usage data to Yandex servers, including search queries and 
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## FAQ
 
 **Q: Can I install Chrome Web Store extensions on Chrome for Android?**
@@ -176,13 +176,13 @@ A: No. Chrome for Android does not support extensions. You need a Chromium-based
 A: Yes. Kiwi is open source, based on Chromium, and receives bi-weekly security updates.
 
 **Q: Do extensions drain battery on mobile?**
-A: Yes, each extension uses CPU. In my tests, 3-4 extensions added about 5% battery drain per day.
+A: Yes, each extension uses CPU. A small handful of extensions adds a modest extra battery drain over a day of use.
 
 **Q: Can I sync Kiwi extensions with desktop Chrome?**
 A: No. Kiwi has its own sync system. You must install extensions separately on each device.
 
 **Q: Which browser supports the most Chrome Web Store extensions on Android?**
-A: Kiwi Browser supports the most. In my tests, 20/20 extensions worked on Kiwi, 14/20 on Yandex, and 9/20 on Lemur.
+A: Kiwi Browser supports the most. Kiwi runs the widest range of Chrome Web Store extensions on Android, followed by Yandex, with Lemur trailing behind.
 
 **Q: Are there any Chrome Web Store extensions that do NOT work on mobile?**
 A: Yes. Extensions that require native messaging (desktop apps), hardware APIs (USB, Bluetooth), or desktop-only Chrome APIs will not work.

@@ -115,17 +115,17 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## FAQ
 
 **Q: Is Kaspersky Protection for Chrome free?**
 A: Yes, the Chrome extension is free. Advanced features like malware download scanning, Safe Money, and virtual keyboard require Kaspersky's desktop security suite (paid).
 
 **Q: Does Kaspersky Protection slow down Chrome?**
-A: Yes. I measured a 12% increase in page load time (from 1.9s to 2.2s) and 55 MB of additional RAM usage. It is heavier than most security extensions.
+A: Yes. It adds noticeable page-load overhead and extra RAM usage compared with lighter options — it is heavier than most security extensions.
 
 **Q: Is Kaspersky Protection better than Chrome's built-in Safe Browsing?**
-A: For phishing, yes. Kaspersky blocked 93% of phishing URLs versus Chrome's 67% in my tests. For general browsing, Chrome's Safe Browsing uses zero RAM and adds no latency, which makes it a better default.
+A: For phishing, yes. Kaspersky catches noticeably more phishing URLs than Chrome's Safe Browsing. For general browsing, Chrome's Safe Browsing uses zero RAM and adds no latency, which makes it a better default.
 
 **Q: Can I use Kaspersky Protection without installing the desktop app?**
 A: Yes, but the extension will only provide URL checking and link highlighting. Malware scanning, virtual keyboard, and Safe Money require the desktop app.
