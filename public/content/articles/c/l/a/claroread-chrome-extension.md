@@ -92,7 +92,7 @@ I timed how long each extension took to start reading the 2,000-word article, an
 | Read Aloud | 0.2s | 8 | 100-500 wpm |
 | Announcify | 0.1s | 15 | 150-300 wpm |
 
-Speechify read every word correctly in my tests, thanks to its neural TTS engine. ClaroRead and Read&Write were close with 1-2 misread words per 1,000 (usually proper names or unusual compound words).
+Speechify reads every word correctly, thanks to its neural TTS engine. ClaroRead and Read&Write come close, with only occasional misreads on proper names or unusual compound words.
 
 ## Comparison Table
 
@@ -140,7 +140,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## FAQ
 
 **Q: Is ClaroRead free?**

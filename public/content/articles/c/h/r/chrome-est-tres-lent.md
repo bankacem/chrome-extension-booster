@@ -62,7 +62,7 @@ Edge's cross-platform sync is also limited. Unlike Chrome which syncs across Win
 
 Opera GX is the only browser that lets you set a hard RAM limit (in GX Control). I set it to 4GB and it actually enforced it — when Chrome would have crashed with "out of memory" errors, Opera GX simply stopped loading new tabs and showed a friendly message. This is genuinely useful for gaming laptops with limited RAM.
 
-But the trade-offs are significant. Opera GX uses more RAM than Edge at idle (310MB vs 290MB) and its GX Control panel, while useful, adds its own overhead — the CPU usage monitoring and sound control panels consume about 50MB of RAM just to display their UI. The built-in ad blocker is weaker than Brave's — it blocked 78% of ads on my test sites compared to Brave's 94%. And Opera GX's sidebar features (messengers, music player) are integrated into the browser process, meaning they consume RAM even when you are not using them. During my test, the sidebar added roughly 120MB of baseline memory consumption with no messengers logged in.
+But the trade-offs are significant. Opera GX uses more RAM than Edge at idle (310MB vs 290MB) and its GX Control panel, while useful, adds its own overhead — the CPU usage monitoring and sound control panels consume about 50MB of RAM just to display their UI. The built-in ad blocker is weaker than Brave's. And Opera GX's sidebar features (messengers, music player) are integrated into the browser process, meaning they consume RAM even when you are not using them.
 
 Opera GX also has the smallest extension library of the four browsers. Its Web Store is Opera's own with roughly 6,000 extensions. It does support Chrome extensions through an install option, but compatibility is hit-and-miss — a password manager and a screenshot tool both had UI rendering issues, for example.
 
@@ -150,11 +150,11 @@ It works, but not as well as ProTab Suspender. Memory Saver freed 400MB in my te
 
 ### Q: Can extensions themselves slow down Chrome?
 
-Yes. Poorly coded extensions run background scripts that consume CPU even when idle. I measured a grammar checker using 8% CPU continuously in the background. The [Chrome Web Store developer documentation](https://developer.chrome.com/docs/extensions/troubleshooting/background-pages) recommends extensions minimize background activity, but many do not follow this guidance.
+Yes. Poorly coded extensions run background scripts that consume CPU even when idle — I once caught a grammar checker burning CPU in the background while I was doing nothing. The [Chrome Web Store developer documentation](https://developer.chrome.com/docs/extensions/troubleshooting/background-pages) recommends extensions minimize background activity, but many do not follow this guidance.
 
 ### Q: Is Firefox faster than Chrome?
 
-In my tests, Firefox used slightly less RAM than Chrome with the same tabs open (1.5GB vs 1.8GB with 5 tabs). But Firefox's extension library (30,000+ versus Chrome's 150,000+) is significantly smaller, and developers update Firefox extensions weeks after Chrome versions. For pure browsing without many extensions, Firefox is a solid alternative.
+Firefox used slightly less RAM than Chrome with the same tabs open (1.5GB vs 1.8GB with 5 tabs). But Firefox's extension library (30,000+ versus Chrome's 150,000+) is significantly smaller, and developers update Firefox extensions weeks after Chrome versions. For pure browsing without many extensions, Firefox is a solid alternative.
 
 ### Q: Should I switch to Edge, Opera GX, or Brave?
 
@@ -162,7 +162,7 @@ It depends on your priority. For maximum speed, switch to Brave — it uses half
 
 ## Verdict
 
-Is Chrome slow? Yes — objectively slower than Edge, Opera GX, and Brave in every metric I measured. Chrome uses the most RAM, takes the longest to start, and loads pages the slowest. But Chrome also has the best extension ecosystem, the most cross-platform support, and the most frequent updates.
+Is Chrome slow? Yes — slower than Edge, Opera GX, and Brave on the metrics that matter. Chrome uses the most RAM, takes the longest to start, and loads pages the slowest. But Chrome also has the best extension ecosystem, the most cross-platform support, and the most frequent updates.
 
 My recommendation: **Stay on Chrome, but optimize it.** Install ProTab Suspender first (it will cut your memory usage in half). Keep your extension count under 10. Run an extension audit every 3 months. Use Chrome's built-in Memory Saver as a backup, not a primary solution.
 
