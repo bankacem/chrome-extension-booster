@@ -37,7 +37,7 @@ faq:
   - question: "What is the best free Chrome extension for tab management?"
     answer: "OneTab is the most efficient free option, collapsing all open tabs into a single page and freeing up to 95% of tab-related memory. Workona is better if you need persistent workspaces across projects, but it uses more resources."
   - question: "Is LanguageTool better than Grammarly's free plan?"
-    answer: "For most users, yes. LanguageTool's free tier catches more error types than Grammarly Free, works in multiple languages, and — critically — does not sell your writing data to advertisers. It also respects your privacy by processing text locally in the browser."
+    answer: "For most users, yes. LanguageTool's free tier catches more error types than Grammarly Free, works in multiple languages, and — critically for the privacy-minded — respects your privacy by processing text locally in the browser."
   - question: "How many Chrome extensions should I install for productivity?"
     answer: "Keep it under ten total, with no more than three running in the background at all times. Prioritize on-demand tools that only activate on click, and audit your list monthly to remove anything you haven't used in the past week."
 ---
@@ -209,7 +209,7 @@ OneTab is the most efficient free option, collapsing all open tabs into a single
 
 **Is LanguageTool better than Grammarly's free plan?**
 
-For most users, yes. LanguageTool's free tier catches more error types than Grammarly Free, works in multiple languages, and — critically — does not sell your writing data to advertisers. It also respects your privacy by processing text locally in the browser.
+For most users, yes. LanguageTool's free tier catches more error types than Grammarly Free, works in multiple languages, and — critically for the privacy-minded — respects your privacy by processing text locally in the browser.
 
 **How many Chrome extensions should I install for productivity?**
 

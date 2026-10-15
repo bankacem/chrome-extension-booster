@@ -124,7 +124,7 @@ Editing capabilities represent another area where tools diverge significantly. C
 
 ### Performance Benchmarking in Real-World Scenarios
 
-To provide a practical comparison, I tested each screenshot tool across several common scenarios, measuring both performance and output quality. In my testing setup, I used a mid-range laptop with 8GB RAM and Chrome version 120.0.6099.110, capturing a variety of web pages including long documentation articles, image-heavy sites, and web applications with complex interfaces.
+To provide a practical comparison, each tool is weighed below on the criteria that matter most day to day: capture reliability, editing depth, export options, and price.
 
 For capturing a standard blog article (approximately 2000 words with images), Chrome's built-in tool took about 3 seconds to process the full page, while GoFullPage required approximately 5 seconds. The quality was comparable between both tools, with no noticeable difference in image clarity. However, when capturing a web application with infinite scrolling and dynamic content, Chrome's tool sometimes failed to capture the entire page, missing content below the fold, while GoFullPage successfully captured all content, albeit taking about 8 seconds to process.
 

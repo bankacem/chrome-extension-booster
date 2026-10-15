@@ -177,7 +177,7 @@ Nimbus offers the most comprehensive solution with both screenshot and screen re
 
 ## Detailed Comparison of Popular Tools {#detailed-comparison}
 
-To help you make an informed decision, I've compared the top screenshot extensions across several key criteria. This comparison is based on my hands-on testing with each tool in various scenarios.
+To help you make an informed decision, I've compared the top screenshot extensions across several key criteria — features, store ratings, and documented strengths and limitations.
 
 | Feature | GoFullPage | Quick Screenshot Lite | FireShot | PicPick | Nimbus |
 |---------|------------|----------------------|----------|---------|--------|

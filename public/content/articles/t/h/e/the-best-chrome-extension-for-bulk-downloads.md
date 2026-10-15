@@ -133,11 +133,11 @@ While the comparison table provides a quick overview, let's dive deeper into the
 
 ## Detailed Extension Reviews {#detailed-reviews}
 
-Let's take a closer look at each of these top Chrome extensions for bulk downloads, examining their strengths, weaknesses, and ideal use cases based on my hands-on testing experience.
+Let's take a closer look at each of these top Chrome extensions for bulk downloads, examining their strengths, weaknesses, and ideal use cases.
 
 ### Image Assistant
 
-Image Assistant has become my go-to tool for downloading image collections, and for good reason. The extension's detection capabilities are exceptional, identifying images even in complex layouts with lazy loading or dynamic content loading. In my testing, it successfully detected 98% of images across various gallery types, including [Pinterest](https://www.pinterest.com)-style boards, image search results, and portfolio websites.
+Image Assistant has become my go-to tool for downloading image collections, and for good reason. The extension's detection capabilities are exceptional, identifying images even in complex layouts with lazy loading or dynamic content loading, including [Pinterest](https://www.pinterest.com)-style boards, image search results, and portfolio websites.
 
 The filtering options are particularly impressive. You can specify minimum and maximum dimensions, file types, aspect ratios, and even exclude certain domains or URLs. This level of control ensures you download exactly what you need, without unnecessary files cluttering your download folder. The custom naming patterns are another standout feature, allowing for complex naming rules that save considerable time in file organization.
 

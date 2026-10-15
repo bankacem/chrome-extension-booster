@@ -94,7 +94,7 @@ Chrome Sync is a per-category system tied to your Google Account. When you sign 
 
 What lands on the second device is the extension identity, essentially its Web Store ID, plus its enabled or disabled state. Chrome on the receiving machine then downloads that extension fresh from the Web Store and installs it. This matters more than it sounds: Chrome isn't copying files between your computers. It's copying a shopping list and re-buying each item locally. That design explains most of the odd behavior I observed.
 
-I tested this by installing uBlock Origin Lite, Bitwarden, Grammarly, JSON Viewer, and a small niche extension with about 400 users on the Windows desktop, then watching the MacBook. All five appeared. The niche one took longest, around four minutes, and I suspect that was just sync batching rather than anything to do with popularity. Disabling an extension on one machine also propagated, which is genuinely useful when you're trying to isolate a slow extension across devices.
+In practice, installing an extension on one signed-in machine makes it appear on the other — sometimes within seconds, sometimes after a few minutes of sync batching. Disabling an extension on one machine also propagates, which is genuinely useful when you're trying to isolate a slow extension across devices.
 
 #### Why extension settings behave so inconsistently
 
@@ -148,21 +148,15 @@ If an extension is still missing after 15 minutes, check these in order. First, 
 
 Before you wipe or sell a computer, go to `chrome://settings/people`, click **Turn off** next to sync, and check **Clear data from this device**. This removes the local profile without deleting your synced list from the account. I skipped this once on a machine I reset, and the leftover profile caused duplicate device entries in my account for weeks.
 
-## Three ways to get extensions onto a new computer (my log across three machines)
+## Three ways to get extensions onto a new computer
 
-I timed all three methods, twice each, on the same set of 23 extensions. Times below are what I actually observed, wall clock, including the extension logins. Your numbers will move with your connection speed and how many extensions carry their own accounts.
+Chrome Sync (same account) is the path of least resistance: it runs automatically and carries settings for the extensions that support it. Manual reinstall from the Web Store is the fallback for work machines with account restrictions — tedious, and settings are often lost, so note down your extension IDs from `chrome://extensions` (with Developer mode on) before you start. An export/backup tool sits in the middle and is the right answer when moving between two different Google Accounts, where sync structurally cannot help.
 
-| Method | Time on my machines | Settings fidelity | Best for |
-| --- | --- | --- | --- |
-| Chrome Sync (same account) | 5-10 minutes, automatic | Everything, including settings | Any second computer you own |
-| Manual reinstall from Web Store | 35-50 minutes observed | Settings often lost | Work machines with account limits |
-| Export/backup tool | 15-20 minutes | Good, settings vary by extension | Moving between different accounts |
+The "everything, including settings" note for Chrome Sync deserves a caveat I'd rather state plainly: that's the ceiling, not the guarantee. Chrome carries everything it's capable of carrying, which means full configuration for some extensions and bare installs for others. It's still the best of the three by a wide margin because it needs no attention from you.
 
-The "everything, including settings" note for Chrome Sync deserves a caveat I'd rather state plainly: that's the ceiling, not the guarantee. Chrome carries everything it's capable of carrying, which was full configuration for about half my extensions and bare installs for the rest. It's still the best of the three by a wide margin because it needs no attention from you.
+Manual reinstalling is miserable and I'd only do it when forced. Most of the time goes to searching the Web Store for the correct listings, which is harder than it should be when several clones share a name.
 
-Manual reinstalling was miserable and I'd only do it when forced. The 35 to 50 minutes was dominated by searching the Web Store for correct listings, which is harder than it should be when several clones share a name. If you're going this route, write down your extension IDs from `chrome://extensions` with Developer mode on before you start.
-
-The export route sits in the middle and it's the right answer for one specific situation: moving between two different Google Accounts, where sync structurally cannot help. I've documented the tooling and the caveats around [how to export Chrome extensions before a switch](/blog/effortlessly-manage-your-browser-export-extension-chrome), including which extensions refuse to have their data pulled out.
+The export route is the right answer for one specific situation: moving between two different Google Accounts, where sync structurally cannot help. I've documented the tooling and the caveats around [how to export Chrome extensions before a switch](/blog/effortlessly-manage-your-browser-export-extension-chrome), including which extensions refuse to have their data pulled out.
 
 ## Profiles, multiple accounts, and where the walls are
 
@@ -170,7 +164,7 @@ Chrome profiles are separate universes. Each profile has its own extension set, 
 
 This is also why "my extensions disappeared" is so often a profile problem. Chrome will open in whichever profile was last active, and if that's a guest window or a second profile, your extension bar looks empty. Check the avatar in the top-right before you troubleshoot anything else.
 
-Managed accounts are the harder wall. If your Google Account is administered by an employer or school through Google Workspace, an admin can set `SyncDisabled` to block sync entirely, restrict which categories sync, force-install a required extension set, and allowlist the only extensions permitted. I tested this against a Workspace account I administer myself, and the policy took effect within minutes of the device re-checking in. No local toggle overrode it, and the sync settings page simply showed the category as controlled by your administrator. If you see that message, the answer is a conversation with IT, not a settings change.
+Managed accounts are the harder wall. If your Google Account is administered by an employer or school through Google Workspace, an admin can set `SyncDisabled` to block sync entirely, restrict which categories sync, force-install a required extension set, and allowlist the only extensions permitted. The policy takes effect once the device re-checks in: no local toggle overrides it, and the sync settings page simply shows the category as controlled by your administrator. If you see that message, the answer is a conversation with IT, not a settings change.
 
 The workaround people reach for is running two profiles: the managed one for work, a personal one for extensions. That works if your organization permits sign-in to other accounts, and many block it. It's worth asking before you build a workflow around it.
 

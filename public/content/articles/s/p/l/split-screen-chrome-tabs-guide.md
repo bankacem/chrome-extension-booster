@@ -99,7 +99,7 @@ Readers who used this guide also found these walkthroughs useful:
 - **On a single laptop screen, a 50/50 split is usually too narrow for real work.** I ended up at roughly 60/40 or 65/35 most of the time, with the reading pane wider, and I zoomed the narrow side to 80 or 90 percent to keep layouts from collapsing to mobile view.
 - **Sites that refuse to split are almost always doing responsive breakpoint behavior, not blocking you.** The exception is embedded content inside extension-created iframes, where `X-Frame-Options` and `Content-Security-Policy` headers genuinely stop the page from loading at all.
 - **Splitting costs memory, but less than people assume.** Two tabs visible side by side use roughly the same total memory as two tabs where one is hidden, because Chrome keeps both processes alive either way. The real cost I measured was CPU on animated dashboards that never get to idle.
-- **Chromebooks have the most mature split experience of any platform I tested,** thanks to OS-level window snapping that predates Chrome's in-browser split view by years.
+- **Chromebooks have the most mature split experience of any platform here,** thanks to OS-level window snapping that predates Chrome's in-browser split view by years.
 
 
 ![Split screen in Chrome: right-click a tab, choose Split view, drag the divider, save layout with an extension, test on both monitors](/content/images/split-screen-chrome-tabs-guide/split-screen-chrome-tabs-guide-steps.webp)
@@ -187,7 +187,7 @@ I installed each of these, used it as my primary split method for at least two f
 
 **A dual-pane "split screen" viewer** was the second type I tried, the kind that renders two URLs inside a single extension page. It was the fastest way to pair two specific URLs I typed in, and it kept those URLs when I reopened it. It also failed on roughly a third of the sites I tried, because those sites refuse to be framed. For internal tools and documentation it was fine. For anything with a login wall, it was unreliable.
 
-**A window-manager style extension** with keyboard-driven snapping gave me the closest thing to a tiling window manager inside Chrome. Once I learned the shortcuts, re-tiling was genuinely quick. It also had the largest permission footprint of anything I tested and the most visible CPU activity, which is why it came off my machine after the trial.
+**A window-manager style extension** with keyboard-driven snapping gave me the closest thing to a tiling window manager inside Chrome. Once I learned the shortcuts, re-tiling was genuinely quick. It also asked for the broadest permissions of the bunch and showed the most visible CPU activity, which is why it came off my machine after the trial.
 
 **A workspace-oriented tab manager** with split layouts was the heaviest and the most capable. It saved named workspaces, each with its own pane arrangement, and restored them on demand. That is real value for long research projects. It also required learning a new mental model for where my tabs lived, which is a bigger commitment than "I want two pages side by side." If you are drawn to that category, [my guide to the pro screenshot and screen-capture workstream](/blog/screenshots-screen-capture-mastering-the-pro-workstream) covers the kind of capture-heavy research these tools are built for.
 
@@ -219,7 +219,7 @@ If you searched for a split screen chrome extension, start by not installing one
 
 Install an extension only for the specific gaps: saved layout presets, three or more panes, or keyboard-driven re-tiling. My recommendation there is Tab Resize, because it tiles real Chrome windows instead of iframes, which means no site ever refuses to load and every page renders at full fidelity. It is light, it does one job, and a shortcut assigned at `chrome://extensions/shortcuts` makes it feel native.
 
-The alternative I would pick if presets are not your problem is no extension at all: detach two Chrome windows and use your operating system's snap keys. On a multi-monitor desk or a Chromebook, that beat every extension I tested, because the OS remembers the arrangement across restarts and lets you pair Chrome with something that is not Chrome. Skip the iframe-based dual-pane viewers unless every site you use is one you control.
+The alternative I would pick if presets are not your problem is no extension at all: detach two Chrome windows and use your operating system's snap keys. On a multi-monitor desk or a Chromebook, that beats every extension in the roundup, because the OS remembers the arrangement across restarts and lets you pair Chrome with something that is not Chrome. Skip the iframe-based dual-pane viewers unless every site you use is one you control.
 
 ## Frequently Asked Questions
 
