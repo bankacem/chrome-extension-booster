@@ -149,7 +149,7 @@ No, and that is by design. Poper Blocker focuses on popups, overlays, and simila
 
 ### Which one uses less memory in Chrome?
 
-Poper Blocker generally runs lighter because it maintains a much smaller, focused rule set, in our tests roughly a third to half of Adblock Plus's idle footprint. On machines with plenty of RAM the difference is hard to notice; on low-memory laptops it is a legitimate tiebreaker.
+Poper Blocker generally runs lighter because it maintains a much smaller, focused rule set — a fraction of Adblock Plus's idle footprint. On machines with plenty of RAM the difference is hard to notice; on low-memory laptops it is a legitimate tiebreaker.
 
 ### Can I run Poper Blocker and Adblock Plus together?
 

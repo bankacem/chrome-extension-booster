@@ -114,7 +114,7 @@ The classic route still works too: run `ncpa.cpl`, right-click your adapter → 
 
 ## What DNS-Level Blocking Can and Cannot Catch
 
-Set expectations correctly and AdGuard DNS will feel like a win instead of a failure. Here is the honest split from our test devices:
+Set expectations correctly and AdGuard DNS will feel like a win instead of a failure. Here is the honest split:
 
 **What it catches well:** display and tracking domains across most websites, ad SDKs inside mobile games and free utilities, many analytics and telemetry endpoints, phishing domains on the Default server, and adult sites with enforced SafeSearch on the Family server. Page loads often get *faster*, because you are no longer waiting on five ad networks to respond before the layout settles.
 
@@ -134,14 +134,14 @@ Do not skip this part — I have "set up" DNS on enough devices to know that a s
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## Frequently Asked Questions
 
 ### Is AdGuard DNS free to use?

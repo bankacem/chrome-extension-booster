@@ -63,7 +63,7 @@ Let’s dive into the extensions that will change the way you study online.
 
 \* Prices are as of September 2026; “Free” indicates a fully functional version without hidden fees.  
 
-> **Student Testimonial:** “Switching to **OneTab + StayFocusd** cut my Chrome RAM use from 2 GB to 800 MB during 8‑hour study days. I actually felt less tired!” – *Jenna M., sophomore, online nursing program*  
+> **Study tip:** Pair **OneTab + StayFocusd** during long study days — collapsing idle tabs cuts Chrome's RAM use dramatically, which keeps the browser responsive through 8-hour sessions.
 
 ---  
 
