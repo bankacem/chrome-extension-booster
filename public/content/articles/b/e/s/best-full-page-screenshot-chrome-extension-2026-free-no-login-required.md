@@ -52,13 +52,13 @@ As web technologies continue to evolve with more dynamic content, the importance
 
 ## How Full-Page Screenshot Extensions Work {#how-they-work}
 
-Understanding the technical approach behind full-page screenshot Chrome extensions helps you appreciate their capabilities and limitations. In my testing, I discovered that these tools employ several different methods to capture complete web pages, each with distinct advantages and trade-offs.
+Understanding the technical approach behind full-page screenshot Chrome extensions helps you appreciate their capabilities and limitations. These tools employ several different methods to capture complete web pages, each with distinct advantages and trade-offs.
 
 The most common technique involves programmatically scrolling through the page while capturing multiple viewport-sized screenshots, then stitching them together into a single seamless image. This approach allows extensions to handle pages significantly longer than what can be displayed on a single screen. The quality of the final result depends on several factors: the scrolling algorithm's precision, the image compression settings, and how the extension handles fixed elements like headers and footers that remain visible during scrolling.
 
 Some advanced extensions use browser automation to control scrolling and capture screenshots, while others leverage Chrome's built-in capabilities through the Chrome Extensions API. During my evaluation, I found that extensions using the latter method tend to have better performance and compatibility with modern web applications. For example, many tools now utilize the `chrome.debugger` API to capture the complete page rendering, which produces more accurate results than simple scrolling-based approaches.
 
-Handling dynamic content presents another challenge. Websites with lazy-loading images, infinite scrolling, or JavaScript-rendered content require special handling. The best extensions I tested implement intelligent waiting mechanisms that pause scrolling until elements have fully loaded or animations have completed. Some even offer options to manually set capture delays for particularly complex pages.
+Handling dynamic content presents another challenge. Websites with lazy-loading images, infinite scrolling, or JavaScript-rendered content require special handling. The best extensions in this category implement intelligent waiting mechanisms that pause scrolling until elements have fully loaded or animations have completed. Some even offer options to manually set capture delays for particularly complex pages.
 
 The image processing pipeline is equally important. After capturing the individual segments, the extension must stitch them together seamlessly, ensuring alignment and consistent coloring. This is where some extensions falter—producing visible seams or color shifts between segments. Premium tools often include advanced stitching algorithms that minimize these artifacts, while free alternatives sometimes leave noticeable imperfections.
 

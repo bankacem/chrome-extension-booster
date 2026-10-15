@@ -57,7 +57,7 @@ I spent a week testing Formula Builder Pro to automate this process across 3 rea
 
 Formula Builder Pro is a Chrome extension that lets you build and run formulas directly on web page data. You select numbers on a page, assign them as variables, then build formulas using a visual builder — no coding required. The formulas update automatically when the source data changes.
 
-Key features I tested:
+Key features to look for:
 - **Dynamic variable mapping** — Select any number on a web page and assign it as a variable
 - **Formula repository** — Save formulas and reuse them across reports
 - **Auto-refresh** — Formulas recalculate when source data updates

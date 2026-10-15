@@ -48,7 +48,7 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 Chrome is a memory hog. Open 30 tabs and your system starts swapping. Open 50 and Chrome becomes unusable. Tab managers solve this by either suspending inactive tabs (freeing RAM while keeping the tab visible) or consolidating tabs into a list.
 
-I tested three approaches for a week across my daily workflow — research (20+ tabs), writing (5 tabs), and development (15+ tabs). I measured RAM savings, tab recovery speed, and workflow disruption. For reference, I read [Chrome's own documentation on tab discarding](https://support.google.com/chrome/answer/95467) and [How-To Geek's guide on saving RAM in Chrome](https://www.howtogeek.com/437113/how-to-save-ram-in-google-chrome/).
+I compared three approaches across a week of daily use — research (20+ tabs), writing (5 tabs), and development (15+ tabs) — weighing RAM savings, tab recovery speed, and workflow disruption. For reference, I read [Chrome's own documentation on tab discarding](https://support.google.com/chrome/answer/95467) and [How-To Geek's guide on saving RAM in Chrome](https://www.howtogeek.com/437113/how-to-save-ram-in-google-chrome/).
 
 ## The 3 I Tested {#tested}
 

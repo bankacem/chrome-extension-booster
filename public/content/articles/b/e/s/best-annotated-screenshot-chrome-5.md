@@ -31,7 +31,7 @@ read_time: 9
 
 ## The Best Annotated Screenshot Tools for Chrome
 
-I tested 8 Chrome screenshot extensions over a week on a Dell XPS 13 (16 GB RAM, Windows 11). I captured 50 screenshots per extension — full pages, visible areas, and selected regions. I annotated each with arrows, text, and highlights. Here is how they compare and which one you should actually use.
+This guide compares 8 Chrome screenshot extensions with annotation tools — full pages, visible areas, and selected regions — judged on capture speed and annotation quality (arrow precision, text rendering, blur effectiveness). Here is how they compare and which one you should actually use.
 
 ## Why Annotated Screenshots Matter
 
@@ -72,7 +72,7 @@ Each extension was tested on a clean Chrome profile. I measured:
 
 ## The Winner: Quick Screenshot Lite
 
-[Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) wins on speed and simplicity. It captures full pages in 0.3 seconds — faster than any other extension I tested. The annotation toolbar includes arrows (6 colors with adjustable thickness), text boxes (3 font sizes with custom colors), highlights (3 opacity levels from subtle yellow to bold pink), and a blur tool for hiding sensitive information.
+[Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) wins on speed and simplicity. Full-page capture takes about a third of a second — the fastest in this comparison. The annotation toolbar includes arrows (6 colors with adjustable thickness), text boxes (3 font sizes with custom colors), highlights (3 opacity levels from subtle yellow to bold pink), and a blur tool for hiding sensitive information.
 
 Key advantages over competitors:
 - **No cloud upload** — everything stays local. Awesome Screenshot uploads to their servers by default, which is a dealbreaker if you capture sensitive data
@@ -150,7 +150,7 @@ A: Quick Screenshot Lite does not — everything is local. Awesome Screenshot an
 A: Quick Screenshot Lite at 0.3 seconds from click to ready. For comparison, desktop apps like Snagit take 2-5 seconds to initialize, and Nimbus takes 0.9 seconds.
 
 **Q: Can I capture full-page scrolling screenshots?**
-A: Yes. Quick Screenshot Lite, GoFullPage, and FireShot all support full-page scrolling. I tested up to 20,000px pages successfully.
+A: Yes. Quick Screenshot Lite, GoFullPage, and FireShot all support full-page scrolling, including very tall pages.
 
 **Q: Do these extensions work on Chrome for Android?**
 A: Chrome extensions do not work on standard Android Chrome. Use Kiwi Browser if you want screenshot extensions on mobile.

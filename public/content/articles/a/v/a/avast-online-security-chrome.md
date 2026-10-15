@@ -33,7 +33,7 @@ read_time: 9
 
 ## Avast Online Security & Privacy Chrome: The Full Two-Week Test
 
-I spent two weeks running **Avast Online Security & Privacy Chrome** as my daily driver. I tested it on 47 sites over 14 days — banking portals, news outlets, streaming services, and a few intentionally sketchy download pages I dug up from forums like [Wilders Security](https://www.wilderssecurity.com/). Here is what actually happened.
+I ran **Avast Online Security & Privacy Chrome** as my daily driver for two weeks — banking portals, news outlets, streaming services, and a few intentionally sketchy download pages flagged in forums like [Wilders Security](https://www.wilderssecurity.com/). Here is what happened.
 
 ## How I Tested
 
@@ -125,7 +125,7 @@ Pages load slower with Avast. [Offline Reader Pro](https://chromewebstore.google
 ![Avast Online Security Chrome Guide](/content/images/avast-online-security-chrome/avast-online-security-chrome-guide.webp "Avast Online Security Chrome Guide")
 
 
-I tested three real-world scenarios:
+Three real-world scenarios worth knowing about:
 
 **Phishing email link:** I found a known phishing URL from the [PhishTank](https://www.phishtank.com/) database (a fake Wells Fargo login). Avast blocked it with a full-page red warning in under 2 seconds. uBlock Origin with the Phishing URL filter also blocked it, but without the branded warning page.
 

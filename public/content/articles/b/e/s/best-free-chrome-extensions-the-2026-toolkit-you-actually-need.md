@@ -51,7 +51,7 @@ I use it to declare "tab bankruptcy" at the end of the day without actually losi
 
 Overlay pop-ups are the worst part of the modern web. Newsletter sign-ups, cookie consent walls, fake download buttons, autoplay video modals — they interrupt everything. [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) uses pattern recognition to catch these overlays before they render. It uses only 20 MB of RAM and works silently in the background.
 
-I tested it on 30 high-traffic news sites. It blocked 94% of overlay pop-ups. The 6% it missed were mostly first-party login dialogs that Chrome itself triggered. It is the only popup blocker I have found that works reliably without breaking site functionality.
+On high-traffic news sites it blocks the large majority of overlay pop-ups; what it misses tends to be first-party login dialogs that Chrome itself triggers. It is one of the few popup blockers that works reliably without breaking site functionality.
 
 ## The Privacy Guardians
 
@@ -140,7 +140,7 @@ A: I recommend starting with 3-4 and adding more as needed. The full stack of 8 
 A: Yes, every extension listed here is fully free with no premium paywall. Some have optional donations but no locked features.
 
 **Q: Do these extensions work together?**
-A: Yes. I tested all 8 simultaneously on the same Chrome profile with no conflicts. Each has a distinct function with no overlap.
+A: Yes. All 8 run simultaneously on the same Chrome profile with no conflicts. Each has a distinct function with no overlap.
 
 **Q: Will these extensions slow down Chrome?**
 A: Total RAM impact is about 300 MB for all 8. Compare that to 20 tabs using 2-3 GB. The performance impact is negligible.

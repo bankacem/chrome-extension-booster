@@ -218,7 +218,7 @@ RoboForm is a specialist tool in a generalist market. And sometimes, specialists
 
 ### Is RoboForm still good in 2026?
 
-Yes, with caveats. Its form-filling remains the best we tested, security is solid, and pricing is competitive. The dated interface and occasional struggles with JavaScript-heavy sites are the main trade-offs.
+Yes, with caveats. Its form-filling remains the best of the managers compared here, security is solid, and pricing is competitive. The dated interface and occasional struggles with JavaScript-heavy sites are the main trade-offs.
 
 ### Is RoboForm free?
 

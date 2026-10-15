@@ -106,7 +106,7 @@ While FDM is feature-rich, it does have a slightly steeper learning curve than s
 
 ## EagleGet: Lightweight Yet Powerful {#eagleget}
 
-EagleGet distinguishes itself from other Chrome extensions like IDM with its remarkably lightweight design while still delivering solid performance. When I tested EagleGet, it consumed only 40-60MB of RAM during active downloads—significantly less than most competitors. This makes it an excellent choice for users with less powerful computers or those who want to minimize resource usage.
+EagleGet distinguishes itself from other Chrome extensions like IDM with its remarkably lightweight design while still delivering solid performance. EagleGet is the light one in this comparison — its RAM use during active downloads stays well under most competitors. This makes it an excellent choice for users with less powerful computers or those who want to minimize resource usage.
 
 Despite its lightweight nature, EagleGet doesn't compromise on essential features. It provides reliable download acceleration by splitting files into multiple segments and downloading them simultaneously. In my tests, it typically delivered 3-5x faster download speeds than Chrome's native manager, which is respectable though not quite as fast as some competitors like FDM.
 

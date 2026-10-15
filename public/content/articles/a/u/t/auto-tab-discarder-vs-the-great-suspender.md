@@ -47,7 +47,7 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 The Great Suspender was one of the most popular Chrome extensions, with over 2 million users. It suspended inactive tabs to save memory. In 2023, Google removed it from the Chrome Web Store after reports that it contained malware. The extension had been sold to a new owner who injected adware and data-collection code. If you still have it installed, remove it immediately.
 
-I tested 4 safe alternatives for a week to find the best replacement. For reference, I read [Google's security advisory on The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender-orig/ahmkjjgdligadogjedmnoghhpedkmdnn) and [BleepingComputer's report on the malware](https://www.bleepingcomputer.com/news/security/the-great-suspender-chrome-extension-found-serving-malware/).
+I spent a week comparing 4 safe alternatives to find the best replacement. For reference, I read [Google's security advisory on The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender-orig/ahmkjjgdligadogjedmnoghhpedkmdnn) and [BleepingComputer's report on the malware](https://www.bleepingcomputer.com/news/security/the-great-suspender-chrome-extension-found-serving-malware/).
 
 ## 4 Safe Alternatives I Tested {#alternatives}
 

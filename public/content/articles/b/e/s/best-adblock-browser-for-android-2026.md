@@ -119,7 +119,7 @@ All four are lightweight, free to try, and tested by our editorial team before r
 
 ### What is the best free ad blocker for Android?
 
-A browser with the blocker built in or added: Firefox with uBlock Origin is the most capable free option, and Brave is the best free option with no setup. Both are free, both cleared at least 14 of 15 ad-heavy sites in our testing, and neither requires a subscription or a separate filtering app.
+A browser with the blocker built in or added: Firefox with uBlock Origin is the most capable free option, and Brave is the best free option with no setup. Both are free, both handle ad-heavy sites well in published comparisons, and neither requires a subscription or a separate filtering app.
 
 ### Is Brave better than Firefox with uBlock Origin?
 
@@ -135,6 +135,6 @@ No. Chrome on Android does not support extensions, which is why this comparison 
 
 ### Do ad blockers slow down Android phones?
 
-The opposite, in our testing. Blocking removes network requests, scripts, and rendering work, so blocked pages loaded roughly twice as fast and scrolled smoother on our midrange test phone. Filter engines like uBlock Origin are engineered for low overhead; the memory and battery cost is trivial compared with what the ads themselves cost.
+The opposite, in practice. Blocking removes network requests, scripts, and rendering work, so blocked pages generally load faster and scroll smoother on midrange phones. Filter engines like uBlock Origin are engineered for low overhead; the memory and battery cost is trivial compared with what the ads themselves cost.
 
 The best adblock browser is the one whose setup you will actually finish: five minutes for Firefox plus uBlock Origin, zero minutes for Brave. Either beats every "blocker lite" built into the alternatives — and your midrange phone will feel faster the first hour you use it.

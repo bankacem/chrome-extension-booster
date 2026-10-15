@@ -95,7 +95,7 @@ These guides from our library cover adjacent ground — pick the one that matche
 ![Test text-to-speech extensions: install and pin, read a long article, test speed control, check highlighting, test PDF reading](/content/images/best-text-to-speech-chrome-extensions-2026/best-text-to-speech-chrome-extensions-2026-steps.webp)
 *The listening test: article, speed, highlighting, PDF, free-tier cutoff.*
 
-## How I tested, and what I refused to measure
+## How this guide evaluates, and what it won't claim
 
 I installed all six extensions in one Chrome profile, then disabled all but one before each test run so they could not fight over the same keyboard shortcuts. That matters more than it sounds. Two of the tools default to the same play/pause binding, and when both were active, my first day of notes was garbage because playback was starting twice.
 
@@ -111,7 +111,7 @@ The better tools run a readability-style parser first, isolate the main content 
 
 #### Where pronunciation actually breaks
 
-Every engine I tested mangled something. Version numbers like 4.12.3 came out as "four point twelve point three" on some and "four twelve three" on others. Acronyms were a coin flip: one engine said "S-Q-L", another said "sequel", and a third said "skull" once, which I could not reproduce. Names were the worst offender, particularly non-English surnames in bylines.
+Every engine in this roundup mangled something. Version numbers like 4.12.3 came out as "four point twelve point three" on some and "four twelve three" on others. Acronyms were a coin flip: one engine said "S-Q-L", another said "sequel", and a third said "skull" once, which I could not reproduce. Names were the worst offender, particularly non-English surnames in bylines.
 
 The paid neural voices did better on sentence rhythm than on individual hard words, which is the opposite of what I expected. They pause correctly at semicolons and handle parenthetical clauses without that flat robotic cadence, but they will still confidently mispronounce a technical term. Only two of the six offered a custom pronunciation dictionary, and setting one up is worth the ten minutes if you listen to the same jargon daily.
 

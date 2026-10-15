@@ -31,7 +31,7 @@ read_time: 9
 
 ## Chrome Is a Memory Hog — Here Is the Fix
 
-Chrome is notorious for RAM usage. On my 8 GB laptop, opening 15 tabs pushes memory to 85%. The system starts swapping to disk, apps lag, and eventually Chrome's "Aw, snap!" error appears. I tested 10 extensions over two weeks to find which actually free memory without breaking sites.
+Chrome is notorious for RAM usage. On my 8 GB laptop, opening 15 tabs pushes memory to 85%. The system starts swapping to disk, apps lag, and eventually Chrome's "Aw, snap!" error appears. This guide compares 10 extensions to find which actually free memory without breaking sites.
 
 ## The Problem with Chrome's Native Memory Saver
 
@@ -46,7 +46,7 @@ Extensions solve all three problems.
 ## My Testing Methodology
 
 - **Hardware:** Dell XPS 13, Intel i7-1255U, 8 GB RAM, Windows 11
-- **Browser:** Chrome 125, clean profile for each extension
+- **Browser:** a recent Chrome, clean profile for each extension
 - **Test load:** 20 identical tabs (mix of Gmail, YouTube, Reddit, news sites, docs)
 - **Metrics:** Baseline RAM without extension, RAM with extension active, reload time, sites broken, customizability
 

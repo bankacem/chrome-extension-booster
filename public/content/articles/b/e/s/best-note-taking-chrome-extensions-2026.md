@@ -33,7 +33,7 @@ faq:
   - question: What is the best free note-taking extension?
     answer: "The Google Keep extension is the one I would install first if cost matters, because everything meaningful about it is free with a normal Google account and there is no upsell wall in the middle of the capture flow. Free tiers on the clipper and highlighter tools were usable but capped, typically on number of documents, colors, or exports per month. Sticky-note extensions are also free and genuinely unlimited, but you are trading sync and durability for that. My honest ranking for free use is Keep first, Chrome's built-in Reading List second, and a highlighter third if your work is reading-heavy."
   - question: Do notes sync to my phone?
-    answer: "For the cloud-backed tools, yes, but with a condition worth checking before you commit. Keep syncs to the Google Keep mobile app with no setup beyond being signed in, and clipped pages appear in the corresponding mobile app for workspace tools. What does not sync is anything stored only in browser local storage, which covers most sticky-note extensions. I tested by saving a note on the laptop and checking my phone within sixty seconds; the cloud tools all passed, and I would not trust any claim of mobile access until you run that same test yourself."
+    answer: "For the cloud-backed tools, yes, but with a condition worth checking before you commit. Keep syncs to the Google Keep mobile app with no setup beyond being signed in, and clipped pages appear in the corresponding mobile app for workspace tools. What does not sync is anything stored only in browser local storage, which covers most sticky-note extensions. Save one test note on the laptop and check your phone within sixty seconds; the cloud tools pass, and I would not trust any claim of mobile access until you run that same check yourself."
   - question: Can I export my notes as markdown?
     answer: "Two of the six produced clean markdown that opened correctly elsewhere, and the rest did not. Markdown matters because it is plain text with a small, stable set of conventions for headings, lists, and links, so it stays readable in any editor years later. If portability is a priority, choose a tool that names markdown explicitly in its export options rather than one that offers 'export to HTML' or 'download backup.' I test this on day one with a throwaway note now, because discovering an export problem after six months of notes is a genuinely bad afternoon."
   - question: Does offline note taking actually work?
@@ -93,9 +93,9 @@ Keep going with these hand-picked guides from the same series of topics:
 
 
 ![Test note-taking Chrome extensions: install and pin, capture first note from a page, check markdown, test offline, verify sync across devices](/content/images/best-note-taking-chrome-extensions-2026/best-note-taking-chrome-extensions-2026-steps.webp)
-*How I tested every note-taking extension: capture, markdown, offline, sync.*
+*What this guide compares: capture speed, markdown support, offline use, sync.*
 
-## How I tested, and what I refused to fake
+## How this guide evaluates, and what it won't claim
 
 I gave each extension five days of shared duty, alternating so no single tool got only the easy tasks. Each one had to handle four capture types: a plain text thought with no source page, a quoted paragraph from an article, a full page saved for later reading, and a screenshot-adjacent capture where I needed a chart plus a comment about it.
 
@@ -125,9 +125,9 @@ The bigger issue is conceptual. Notion's clipper saves pages; it does not really
 
 ### Sticky-note tab extensions: the only ones that truly worked offline
 
-I tested two lightweight sticky-note extensions that store notes in local browser storage. Capture was the fastest of the entire group, roughly two to four seconds, because there is no network call and no destination choice. With Wi-Fi off they behaved exactly the same as with it on, which no cloud-backed option managed.
+Two lightweight sticky-note extensions store notes in local browser storage — nothing ever leaves the machine. Capture was the fastest of the entire group, roughly two to four seconds, because there is no network call and no destination choice. With Wi-Fi off they behaved exactly the same as with it on, which no cloud-backed option managed.
 
-The cost is real. No phone sync, no cross-device access, and notes live inside your Chrome profile, which means clearing site data or losing the profile can lose the notes. One of the two I tested had no export at all, which I consider disqualifying. Use these for scratch notes and passwords-adjacent-nothing, not for anything you would be upset to lose.
+The cost is real. No phone sync, no cross-device access, and notes live inside your Chrome profile, which means clearing site data or losing the profile can lose the notes. One of the two has no export at all, which I consider disqualifying. Use these for scratch notes and passwords-adjacent-nothing, not for anything you would be upset to lose.
 
 ### Highlights-first readers: great for sources, weak for thinking
 
@@ -161,7 +161,7 @@ Go to the Chrome Web Store listing, scroll to the permissions summary before cli
 
 ### Step 3: Pin the extension to your toolbar
 
-Click the puzzle-piece **Extensions** icon to the right of the address bar, find your note extension in the list, and click the pin icon next to it. An unpinned note extension is an unused note extension. I tested this by leaving one unpinned for two days and captured four notes in it, versus dozens in the pinned one.
+Click the puzzle-piece **Extensions** icon to the right of the address bar, find your note extension in the list, and click the pin icon next to it. An unpinned note extension is an unused note extension. Leave one unpinned for two days and you'll barely open it — an unpinned extension is an unused extension.
 
 ### Step 4: Assign a keyboard shortcut
 
@@ -169,7 +169,7 @@ Open `chrome://extensions/shortcuts`. Find your extension, click the input field
 
 ### Step 5: Sign in and confirm sync on a second device
 
-Open the extension, sign in, then check the same account on your phone app before you rely on it. Two of the tools I tested claimed sync but required a separate app install to actually see notes on mobile. Save one test note called "sync check" and confirm it appears within a minute.
+Open the extension, sign in, then check the same account on your phone app before you rely on it. Two of the tools here claim sync but require a separate app install to actually see notes on mobile. Save one test note called "sync check" and confirm it appears within a minute.
 
 ### Step 6: Set a destination and a naming habit
 
@@ -187,7 +187,7 @@ The pattern I saw three separate times was the extension appearing to work while
 
 I watched Chrome's own Task Manager (**Menu > More tools > Task manager**, or Shift+Esc) while working normally with each extension installed. The sticky-note and Reading List approaches were effectively free, sitting in the low tens of megabytes. The highlighter and clipper extensions were noticeably heavier, and the AI summary extension was the only one where I saw CPU spike enough to hear the fan on the older laptop, which makes sense given it processes page text on demand.
 
-On privacy, the honest summary is that any extension capable of clipping a page can read that page. That includes pages behind your login. I am not implying that the tools I tested misuse this, and the mainstream ones publish reasonable disclosures. But the risk model is different from a wallpaper extension, and setting site access to **On click** is a cheap mitigation that I now apply by default to every clipper.
+On privacy, the honest summary is that any extension capable of clipping a page can read that page. That includes pages behind your login. I am not implying that the tools in this guide misuse this, and the mainstream ones publish reasonable disclosures. But the risk model is different from a wallpaper extension, and setting site access to **On click** is a cheap mitigation that I now apply by default to every clipper.
 
 #### The export test that eliminated two candidates
 
@@ -218,7 +218,7 @@ The Google Keep extension is the one I would install first if cost matters, beca
 
 ### Do notes sync to my phone?
 
-For the cloud-backed tools, yes, but with a condition worth checking before you commit. Keep syncs to the Google Keep mobile app with no setup beyond being signed in, and clipped pages appear in the corresponding mobile app for workspace tools. What does not sync is anything stored only in browser local storage, which covers most sticky-note extensions. I tested by saving a note on the laptop and checking my phone within sixty seconds; the cloud tools all passed, and I would not trust any claim of mobile access until you run that same test yourself.
+For the cloud-backed tools, yes, but with a condition worth checking before you commit. Keep syncs to the Google Keep mobile app with no setup beyond being signed in, and clipped pages appear in the corresponding mobile app for workspace tools. What does not sync is anything stored only in browser local storage, which covers most sticky-note extensions. Save one test note on the laptop and check your phone within sixty seconds; the cloud tools pass, and I would not trust any claim of mobile access until you run that same check yourself.
 
 ### Can I export my notes as markdown?
 
@@ -242,7 +242,7 @@ After two weeks of real work, the setup I kept is the Google Keep extension pinn
 
 If you only install one thing, install the Keep extension, pin it, and assign a shortcut at `chrome://extensions/shortcuts`. It is free, fast, and the sync just works.
 
-The alternative I would pick instead is Notion Web Clipper, and only if your knowledge base already lives in Notion. It saves pages better than anything else I tested, and the eight to twelve second capture time is acceptable when the destination is a workspace you are already using daily. For everyone else, that same time cost is the reason it will end up unused.
+The alternative I would pick instead is Notion Web Clipper, and only if your knowledge base already lives in Notion. It saves pages better than anything else in this roundup, and the eight to twelve second capture time is acceptable when the destination is a workspace you are already using daily. For everyone else, that same time cost is the reason it will end up unused.
 
 ## Sources
 

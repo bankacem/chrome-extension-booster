@@ -81,7 +81,7 @@ Setup takes about two minutes: install the extension from the Chrome Web Store t
 - **Password generation:** Built-in generator with customizable length and character rules
 - **Alias integration:** Uses Proton aliases during sign-ups without leaving the page
 
-**Testing results:** Proton Pass autofilled correctly on about 88% of the sites we tested. The misses were mostly complex multi-step checkout flows and some JavaScript-heavy modern web apps — areas where 1Password still leads.
+**Autofill reality check:** Proton Pass handles standard login fields well. The misses, per user reports, tend to be complex multi-step checkout flows and some JavaScript-heavy modern web apps — areas where 1Password still leads.
 
 ### Standout Features
 

@@ -31,7 +31,7 @@ read_time: 10
 
 ## Why Privacy Extensions Matter in 2026
 
-Online tracking has evolved significantly. Third-party cookies are being phased out by Chrome, but trackers have moved to new methods: browser fingerprinting, first-party cookies, and server-side tracking that happens beyond the reach of [browser extensions](/blog/the-only-privacy-chrome-extensions-free-of-charge-you-actually-need-2025-guide). I tested 15 Chrome extensions over a month to build the privacy stack that actually works in 2026.
+Online tracking has evolved significantly. Third-party cookies are being phased out by Chrome, but trackers have moved to new methods: browser fingerprinting, first-party cookies, and server-side tracking that happens beyond the reach of [browser extensions](/blog/the-only-privacy-chrome-extensions-free-of-charge-you-actually-need-2025-guide). This guide compares 15 Chrome extensions to build the privacy stack that actually works in 2026.
 
 I used [EFF's Cover Your Tracks](https://coveryourtracks.eff.org/) and [BrowserLeaks](https://browserleaks.com/) to measure tracking protection before and after installing each extension. My baseline score was "Your browser has a distinct fingerprint" — meaning I was trackable even without cookies.
 
@@ -75,7 +75,7 @@ The main limitation: uBlock Origin Lite (the Chrome MV3 version) cannot use dyna
 Ghostery is user-friendly and blocks most trackers out of the box. It also shows which trackers are on each page — useful for understanding tracking. However, it uses 80 MB of RAM (60% more than uBlock Origin) and broke 1 site in my testing. The "Ghostery Insights" feature is useful for developers but unnecessary for typical users.
 
 ### ClearURLs
-ClearURLs specializes in one thing: stripping tracking parameters from URLs before your browser sends the request. It removes `?utm_source=newsletter`, `?fbclid=...`, `?gclid=...`, and hundreds of other tracking parameters. It does not block trackers or ads, but it prevents the tracking that happens through link decoration. At 20 MB of RAM, it is the lightest privacy extension I tested.
+ClearURLs specializes in one thing: stripping tracking parameters from URLs before your browser sends the request. It removes `?utm_source=newsletter`, `?fbclid=...`, `?gclid=...`, and hundreds of other tracking parameters. It does not block trackers or ads, but it prevents the tracking that happens through link decoration. At around 20 MB of RAM, it is the lightest privacy extension in this comparison.
 
 ### NoScript
 NoScript blocks all scripts by default. You whitelist sites one by one. It offers the strongest fingerprint protection because no JavaScript can run without your permission. The downside: it broke 4 out of 20 sites in my testing. You need patience to whitelist scripts manually. It is best for advanced users who are willing to trade convenience for maximum privacy.

@@ -82,7 +82,7 @@ Firefox is the only browser on this list that is not built on Chromium, and on l
 
 The second lever is **Strict Enhanced Tracking Protection** (Settings → Privacy & Security), which cut another 60–150MB in our ad-heavy tab mix by stopping trackers and their scripts before they load. Fewer requests means less RAM, less CPU, and faster pages — on a weak machine, blocking junk is performance tuning. Our head-to-head on [Firefox vs Chrome memory usage](/blog/firefox-vs-chrome-memory-usage-2026) goes deeper on where each engine wins.
 
-Firefox's trade-offs are honest ones: it runs the Android-side extension story and desktop extensions well, but some Chromium-only web apps behave differently, and startup CPU on Windows was a touch above Edge. For a 4GB machine that lives in the browser all day, though, Firefox tuned this way was the most *stable* configuration we tested — it degraded gracefully as tabs piled up instead of hitting the swap cliff Chrome does.
+Firefox's trade-offs are honest ones: it runs the Android-side extension story and desktop extensions well, but some Chromium-only web apps behave differently, and startup CPU on Windows was a touch above Edge. For a 4GB machine that lives in the browser all day, though, Firefox tuned this way was the most *stable* configuration in this comparison — it degraded gracefully as tabs piled up instead of hitting the swap cliff Chrome does.
 
 ![Tuning browser settings on a 4GB test laptop](/content/images/best-browser-for-low-end-pc-2026/best-browser-for-low-end-pc-2026-steps-1.webp)
 

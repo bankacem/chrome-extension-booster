@@ -171,7 +171,7 @@ Performance considerations play a significant role in choosing between website s
 
 **Browser extensions work within specific browser ecosystems**, which can both help and hinder performance. Modern browsers like Chrome have optimized extension APIs that allow for efficient operation. However, extensions may encounter performance issues with complex web pages that use heavy JavaScript or have numerous dynamic elements. In my experience, pages with infinite scrolling or frequent DOM updates can sometimes cause extensions to capture incomplete or distorted images.
 
-**Standalone applications have broader compatibility** across different types of content but may face browser-specific challenges. When capturing web content, standalone apps must contend with browser updates that can change rendering behavior or security restrictions. Some standalone tools I tested required periodic updates to maintain compatibility with newer browser versions, which could temporarily impact functionality until updates were released.
+**Standalone applications have broader compatibility** across different types of content but may face browser-specific challenges. When capturing web content, standalone apps must contend with browser updates that can change rendering behavior or security restrictions. Some standalone tools require periodic updates to maintain compatibility with newer browser versions, which can temporarily impact functionality until updates are released.
 
 For users prioritizing performance and efficiency, extensions generally offer the advantage of lighter resource usage and faster web page captures. For those who need comprehensive functionality and don't mind the additional resource overhead, standalone applications provide more powerful tools at the cost of slightly higher system demands.
 
@@ -187,7 +187,7 @@ How screenshot tools integrate into your existing workflow can be the deciding f
 
 ### Workflow Automation
 
-**Extensions offer limited automation capabilities** primarily focused on browser-based tasks. Some extensions I tested allowed for basic automation like saving screenshots to specific folders with predefined naming conventions. While these features were helpful for routine tasks, they couldn't match the comprehensive automation options available in standalone applications.
+**Extensions offer limited automation capabilities** primarily focused on browser-based tasks. Some extensions allow basic automation, like saving screenshots to specific folders with predefined naming conventions. While these features were helpful for routine tasks, they couldn't match the comprehensive automation options available in standalone applications.
 
 **Standalone applications typically provide more robust workflow automation**. Tools like Snagit offer advanced features such as profiles that automate capture settings based on the content type, scheduled captures, and integration with other applications through scripting capabilities. During a recent documentation project, I created profiles that automatically captured specific application windows, applied consistent annotations, and uploaded them to our project management system, significantly streamlining my workflow.
 

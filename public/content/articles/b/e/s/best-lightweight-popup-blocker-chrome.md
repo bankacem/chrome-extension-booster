@@ -148,7 +148,7 @@ Light Popup Blocker and uBlock Origin both support site whitelisting. Click the 
 
 ### Q: Are free pop-up blockers safe?
 
-The free pop-up blockers I tested (Light Popup Blocker and uBlock Origin) are both safe. However, not all free extensions are trustworthy. According to [Google's security blog on malicious extensions](https://security.googleblog.com/2024/07/protecting-users-from-malicious-chrome.html), scammers occasionally upload pop-up blockers that inject their own ads. Always verify an extension's developer, check the number of users (100,000+ is a good sign), and read recent reviews. Avoid extensions that request permissions to "read and change all your data on all websites" without a clear justification.
+The free pop-up blockers compared here (Light Popup Blocker and uBlock Origin) are both safe. However, not all free extensions are trustworthy. According to [Google's security blog on malicious extensions](https://security.googleblog.com/2024/07/protecting-users-from-malicious-chrome.html), scammers occasionally upload pop-up blockers that inject their own ads. Always verify an extension's developer, check the number of users (100,000+ is a good sign), and read recent reviews. Avoid extensions that request permissions to "read and change all your data on all websites" without a clear justification.
 
 ## Verdict
 
