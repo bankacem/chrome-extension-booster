@@ -258,7 +258,7 @@ For casual browsing on trusted networks, marginally. For privacy, security, or p
 
 ### Is Betternet Premium worth it?
 
-No. At $7.99/month, Betternet Premium costs more than NordVPN ($3.39), Surfshark ($2.19), and ProtonVPN Plus ($4.99) — all of which offer better speeds, more features, stronger privacy, and independent audits in our testing.
+No. At $7.99/month, Betternet Premium costs more than NordVPN ($3.39), Surfshark ($2.19), and ProtonVPN Plus ($4.99) — all of which offer better speeds, more features, stronger privacy, and independent audits.
 
 ### Does Betternet have a kill switch?
 

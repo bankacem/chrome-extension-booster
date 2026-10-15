@@ -141,7 +141,7 @@ The extension also includes a context menu option that appears when you right-cl
 
 ### Mobile App Experience
 
-While this guide focuses on the Chrome extension, it's worth noting that the Avast Password Manager mobile app provides a complementary experience. I tested the app on both iOS and Android devices and found it to be well-designed and functional. The app syncs seamlessly with the Chrome extension, allowing you to access your passwords on the go.
+While this guide focuses on the Chrome extension, the Avast Password Manager mobile app provides a complementary experience. It's available on both iOS and Android and syncs with the Chrome extension, allowing you to access your passwords on the go.
 
 The mobile app includes biometric authentication, which I found to be both secure and convenient. It also offers additional features like a digital wallet for payment cards and secure notes, which sync with the extension. This cross-platform consistency is something I appreciated during testing, as it eliminated the frustration of having different experiences on different devices.
 

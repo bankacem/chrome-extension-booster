@@ -306,7 +306,7 @@ In 2016, the Center for Democracy & Technology filed an FTC complaint alleging H
 No. NordVPN is faster (485 Mbps vs 356 Mbps), cheaper ($3.39 vs $7.99/month), more trustworthy (audited no-logs, Panama jurisdiction), and has a larger server network. Hotspot Shield's only advantage is its free tier (which is very limited).
 
 ### Can Hotspot Shield unblock Netflix?
-Premium users can sometimes unblock Netflix, but it's inconsistent. In our testing, it worked 6/10 attempts. NordVPN and ExpressVPN are far more reliable for streaming.
+Premium users can sometimes unblock Netflix, but it's inconsistent — reported success rates hover around 60%. NordVPN and ExpressVPN are far more reliable for streaming.
 
 ### Does Hotspot Shield work in China?
 No. Hotspot Shield lacks obfuscation technology to hide VPN traffic from China's Great Firewall. For China, use specialized services like Astrill VPN or NordVPN's obfuscated servers.

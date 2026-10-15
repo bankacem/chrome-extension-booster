@@ -285,7 +285,7 @@ Yes, in our tests NordVPN averaged 485 Mbps vs ExpressVPN's 423 Mbps (15% faster
 Yes. Use NordLynx protocol, connect to low-load servers, avoid peak hours, and use the full app for maximum speed. See our optimization section above for detailed steps.
 
 ### Does NordVPN extension work on Chromebook?
-Yes, but performance varies by Chromebook model. ARM-based Chromebooks (MediaTek) showed 20-30% lower speeds than Intel-based models in our testing. The extension works identically, but hardware limitations affect results.
+Yes, but performance varies by Chromebook model. ARM-based Chromebooks (MediaTek) tend to run 20-30% slower than Intel-based models. The extension works identically, but hardware limitations affect results.
 
 ### Will NordVPN extension speed improve in 2026?
 NordVPN continuously upgrades server infrastructure. They recently added 10 Gbps bandwidth channels to many servers. Speed improvements are gradual but ongoing. Check for extension updates monthly.

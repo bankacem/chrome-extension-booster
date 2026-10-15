@@ -176,7 +176,7 @@ In my research, I identified several significant password manager breaches that 
 
 ### LastPass Security Incident (2022)
 
-One of the most significant password manager breaches involved LastPass in 2022, where attackers compromised a developer's account and gained access to customer data. The breach exposed encrypted password vaults, though LastPass maintained that the vaults themselves remained secure.
+One of the most significant password manager breaches involved LastPass in 2022, where attackers compromised a developer's account and gained access to customer data. The breach exposed encrypted password vaults, though LastPass maintained that the vaults themselves remained secure. ([Wikipedia: 2022 LastPass data breach](https://en.wikipedia.org/wiki/LastPass_2022_data_breach))
 
 During my analysis of this incident, I discovered that the attackers were able to access a development environment that contained backup copies of vault data. While the passwords were encrypted, the breach demonstrated how even companies with strong security practices can be vulnerable through targeted attacks on employees or infrastructure.
 

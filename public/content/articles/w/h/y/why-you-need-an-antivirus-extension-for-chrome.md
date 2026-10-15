@@ -101,7 +101,7 @@ Finally, antivirus extensions cannot protect against attacks that target browser
 
 ## Top Antivirus Extensions for Chrome: A Comparative Analysis {#top-antivirus-extensions-for-chrome}
 
-After installing and testing the leading antivirus extensions for Chrome over several months, I've developed a comprehensive comparison of their features, effectiveness, and usability. While all the extensions I tested provide valuable protection, they differ significantly in their approach, additional features, and impact on browser performance.
+The leading antivirus extensions for Chrome all provide valuable protection, but they differ significantly in their approach, additional features, and impact on browser performance. Here's how the main options compare.
 
 Here's how the top contenders stack up against each other:
 

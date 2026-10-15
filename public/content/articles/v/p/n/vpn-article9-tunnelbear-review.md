@@ -181,7 +181,7 @@ TunnelBear does privacy right in several ways:
 - TunnelBear could be compelled to log data under Canadian law
 - Even if they don't log now, legal pressure could change that
 
-**TunnelBear's response:** They claim their no-logs policy means they have no data to hand over. But unlike ProtonVPN (court-tested) or NordVPN (Panama-based), this claim hasn't been tested in a Canadian court.
+**TunnelBear's response:** They claim their no-logs policy means they have no data to hand over. As far as publicly available records go, that claim hasn't been tested in a Canadian court — ProtonVPN's no-logs policy, by contrast, was upheld in Swiss court proceedings, and NordVPN operates out of Panama, which has no mandatory data-retention laws.
 
 ---
 

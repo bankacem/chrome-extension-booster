@@ -224,7 +224,7 @@ Data loss can occur if an extension updates or if you accidentally reset your se
 
 ## Beyond Blocking: Building a Comprehensive Focus System {#beyond-blocking-building-a-comprehensive-focus-system}
 
-Website blockers work best as one layer of a layered system. Research from UC Irvine found that after a single interruption it takes an average of 23 minutes to fully regain deep focus — which is why I pair blockers with time-boxing techniques such as the [Pomodoro focus timer extensions](/blog/pomodoro-focus-timer-chrome-extensions) I tested separately, and with the broader set of [Chrome extensions for staying focused at work](/blog/chrome-extensions-for-staying-focused-at-work) that cover everything from notification control to reading modes.
+Website blockers work best as one layer of a layered system. Research from UC Irvine found that after a single interruption it takes an average of 23 minutes to fully regain deep focus — which is why I pair blockers with time-boxing techniques such as the [Pomodoro focus timer extensions](/blog/pomodoro-focus-timer-chrome-extensions), and with the broader set of [Chrome extensions for staying focused at work](/blog/chrome-extensions-for-staying-focused-at-work) that cover everything from notification control to reading modes.
 
 While website blockers are powerful tools for managing digital distractions, they're most effective when part of a broader focus system that addresses attention management at multiple levels. After researching and testing various approaches over the past year, I've identified several complementary strategies that can enhance the effectiveness of your website blocker and create a more sustainable approach to focus.
 

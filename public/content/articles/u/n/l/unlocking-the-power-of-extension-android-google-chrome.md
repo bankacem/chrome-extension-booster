@@ -233,7 +233,7 @@ The official Chrome installation process includes several security features that
 - **Permission warnings**: Users are informed about what data an extension can access
 - **Automatic updates**: Extensions are updated through the official store
 
-When I tested third-party browsers like Kiwi, I noticed that while they offer more extension compatibility, they bypass some of these security measures. This means you need to be more vigilant about which extensions you install and from where.
+Third-party browsers like Kiwi do offer broader extension compatibility, but they skip some of these security checks. This means you need to be more vigilant about which extensions you install and from where.
 
 ### Critical Security Precautions
 

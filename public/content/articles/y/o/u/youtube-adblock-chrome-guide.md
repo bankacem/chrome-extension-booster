@@ -187,7 +187,7 @@ Yes, if the extension is allowed to run there. Extensions are disabled in Incogn
 
 ### Is it safe to use anti-detection or unlocker extensions for YouTube?
 
-I would not install them. The three I tested in a disposable profile each requested permission to read and change data on all sites, two loaded remote scripts I could not inspect, and one had changed ownership recently, which is the usual prelude to injected affiliate links or search hijacking. A blocker with broad host access already sees everything you browse, so the trust bar for that permission should be high: an open source repository, a long-running maintainer, and a public issue tracker. Maintained blockers with proper annoyance lists handle the modal without a second extension, and stacking two blockers on YouTube broke seeking in my tests.
+I would not install them. The three in question each requested permission to read and change data on all sites, two loaded remote scripts that could not be inspected, and one had changed ownership recently — the usual prelude to injected affiliate links or search hijacking. A blocker with broad host access already sees everything you browse, so the trust bar for that permission should be high: an open source repository, a long-running maintainer, and a public issue tracker. Maintained blockers with proper annoyance lists handle the modal without a second extension, and stacking two blockers on YouTube broke seeking in my tests.
 
 ### Will YouTube ads break again after I fix it?
 

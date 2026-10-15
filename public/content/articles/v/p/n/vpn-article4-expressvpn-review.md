@@ -100,7 +100,7 @@ We tested ExpressVPN's Chrome extension against its full app and competitors:
 | **Singapore** | 367 Mbps | 423 Mbps | 87% |
 | **Average** | **423 Mbps** | **489 Mbps** | **86%** |
 
-**Key finding:** ExpressVPN's extension retains 86% of full app speed — the highest retention rate we tested. NordVPN retains 65%, Surfshark 72%.
+**Key finding:** The extension is generally reported to retain most of the full app's speed — roughly 86%, versus about 65% for NordVPN and 72% for Surfshark.
 
 ### Protocol Performance (London Server)
 

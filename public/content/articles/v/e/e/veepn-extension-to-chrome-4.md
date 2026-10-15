@@ -67,7 +67,7 @@ The VeePN Chrome extension offers a surprisingly robust feature set for a browse
 
 VeePN employs AES-256 encryption—the industry standard for securing sensitive data—across all its connections. This military-grade encryption ensures that even if your data were intercepted, it would be computationally infeasible to decrypt without the proper key. The extension supports multiple protocols including WireGuard, IKEv2, and OpenVPN, allowing users to choose between different balances of speed and security based on their needs. In my testing, I found that WireGuard typically offered the best performance while maintaining robust security, though the availability of specific protocols may vary depending on your subscription tier.
 
-One particularly valuable security feature is the automatic kill switch. This function immediately terminates your internet connection if the VPN unexpectedly disconnects, preventing your real IP address from being exposed. I tested this by manually disconnecting the VPN while performing sensitive activities, and in all cases, the kill switch activated within seconds, blocking all internet traffic until the connection was restored. This is a critical safeguard that many free VPN extensions lack, potentially exposing users to privacy risks during unexpected disconnections.
+One particularly valuable security feature is the automatic kill switch. This function immediately terminates your internet connection if the VPN unexpectedly disconnects, preventing your real IP address from being exposed. When the connection drops, the kill switch blocks all traffic until it is restored. This is a critical safeguard that many free VPN extensions lack, potentially exposing users to privacy risks during unexpected disconnections.
 
 ### Server Network and Location Options
 
@@ -115,7 +115,7 @@ WireGuard consistently delivered the best performance across all test scenarios,
 
 Performance varied considerably based on server location, as expected. Servers in geographically close locations (within the same continent) typically delivered speeds within 30% of baseline performance, while distant servers (across multiple continents) often showed 50% or greater speed reductions. In my testing, North American and European servers generally offered the best performance, while Asian and South American servers showed higher latency and more variable speeds.
 
-For streaming purposes, I tested VeePN's ability to maintain consistent video quality on platforms like YouTube and Netflix. With WireGuard connected to US servers, I was able to stream 4K content without buffering or quality degradation. However, some servers showed inconsistent performance during peak hours, with occasional buffering on lower-quality streams. This variability highlights the importance of testing different servers for your specific use case.
+For streaming purposes, WireGuard connected to US servers held up 4K content on platforms like YouTube and Netflix without buffering or quality degradation. Some servers were inconsistent during peak hours, though, with occasional buffering on lower-quality streams — so trying different servers for your specific use case pays off.
 
 ### Battery Impact on Mobile Devices
 
@@ -190,7 +190,7 @@ By default, VeePN uses its own DNS servers when connected, which helps prevent D
 2. Select "Custom DNS" and enter your preferred DNS server addresses.
 3. Click "Apply" to save your changes.
 
-I tested this feature with several popular DNS services including Cloudflare (1.1.1.1) and Quad9 (9.9.9.9), both of which performed well with VeePN. In some cases, using these public DNS services resulted in slightly faster domain resolution compared to VeePN's default servers, though the difference was minimal for most browsing activities.
+The extension also plays nicely with popular public DNS services such as Cloudflare (1.1.1.1) and Quad9 (9.9.9.9). In some cases these resolve domains slightly faster than VeePN's default servers, though the difference is minimal for most browsing activities.
 
 ### Auto-Connect Settings
 

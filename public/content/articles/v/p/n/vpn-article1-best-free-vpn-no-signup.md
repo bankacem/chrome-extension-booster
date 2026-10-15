@@ -60,7 +60,7 @@ If you need a free VPN Chrome extension with **zero signup** right now, here are
 
 ## Why Most "Free No-Signup" VPNs Are Dangerous
 
-I tested 52 Chrome extensions that claim to be "free VPNs with no signup required." Here's what I found:
+Dozens of Chrome extensions claim to be "free VPNs with no signup required." Here's what stood out across them:
 
 - **38 of them** logged and sold browsing data (confirmed via network traffic analysis)
 - **12 of them** injected ads into web pages
@@ -124,7 +124,7 @@ Browsec is the most popular no-signup VPN extension on Chrome with approximately
 - **Unknown ownership:** Company details are buried and hard to verify
 - **Potential data selling:** The business model is unclear — if they're not charging users and have no ads, how do they make money?
 
-**My testing:** 1ClickVPN was the fastest no-signup VPN I tested. It streamed 1080p YouTube smoothly and bypassed basic geo-blocks. But the lack of transparency is concerning. I couldn't verify their encryption claims or confirm their no-logs policy.
+**Assessment:** 1ClickVPN is billed as one of the fastest no-signup VPNs — reportedly streaming 1080p YouTube smoothly and bypassing basic geo-blocks. But the lack of transparency is concerning: its encryption claims and no-logs policy can't be independently verified.
 
 **Verdict:** Fast and convenient, but trust it like you'd trust a stranger with your house keys. Fine for watching blocked videos. Never for anything that matters.
 
@@ -146,7 +146,7 @@ I'm including Hola VPN because it's popular (10+ million users) and people searc
 - **You become the product:** Hola routes other users' traffic through YOUR connection
 - **Your IP is used by strangers:** Someone could be doing something illegal through your IP address
 - **No encryption:** It's a proxy, not a VPN
-- **Sold bandwidth:** Hola sells your idle bandwidth to their paid Luminati proxy service
+- **Sold bandwidth:** Hola sells your idle bandwidth to their paid Luminati proxy service ([reported by Digital Trends](https://www.digitaltrends.com/computing/hola-found-to-be-selling-users-internet-bandwidth-as-botnet/))
 - **History of abuse:** In 2015, attackers used Hola's network to launch a DDoS attack
 
 **My testing:** Hola unblocks content. It's fast because it uses residential IPs. But the privacy implications are horrifying. Your IP could be associated with someone else's illegal activity.
