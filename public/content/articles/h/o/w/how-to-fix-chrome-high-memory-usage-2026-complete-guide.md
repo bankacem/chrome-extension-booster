@@ -98,7 +98,7 @@ Chrome's built-in Memory Saver feature, available since Chrome 108 and significa
 4. Toggle **Memory Saver** to ON.
 5. Click **Add** next to "Always keep these sites active" to whitelist sites like Gmail or your project management tool that shouldn't be suspended.
 
-Memory Saver works by unloading the JavaScript state of inactive tabs while preserving their visual appearance. When you switch back to a suspended tab, Chrome reloads the JavaScript but keeps the page's cached assets (images, CSS, etc.) in memory, making the reload faster than a full page refresh. In my testing with 20 tabs open, Memory Saver typically reduces Chrome's total memory usage by 30-40%, with the most significant gains coming from sites that run JavaScript in the background, like chat applications or live dashboards.
+Memory Saver works by unloading the JavaScript state of inactive tabs while preserving their visual appearance. When you switch back to a suspended tab, Chrome reloads the JavaScript but keeps the page's cached assets (images, CSS, etc.) in memory, making the reload faster than a full page refresh. With many tabs open, Memory Saver typically reduces Chrome's total memory usage, with the most significant gains coming from sites that run JavaScript in the background, like chat applications or live dashboards.
 
 The feature has several smart behaviors that make it more effective than simple tab suspension. It prioritizes tabs that have been inactive longer, tabs that consume more memory, and tabs that are less likely to break when reloaded (excluding sites with complex forms or unsaved work). You can adjust the aggressiveness of Memory Saver by clicking "Manage" under the Memory Saver toggle and setting the timer for when tabs should be suspended (default is 5 minutes of inactivity).
 
@@ -116,7 +116,7 @@ Hardware acceleration is a double-edged sword. It uses your computer's GPU to re
 4. Toggle **Use hardware acceleration when available** to OFF.
 5. Restart Chrome for the changes to take effect.
 
-In my testing, disabling hardware acceleration reduces Chrome's baseline memory usage by 10-15%, with the most significant reductions coming from the GPU process itself. However, this comes at a cost: websites with animations, video, or WebGL content may become noticeably slower or less smooth. The trade-off is worth it for users who primarily work with text-based sites or whose computers have underpowered GPUs.
+Disabling hardware acceleration reduces Chrome's baseline memory usage, with the most significant reductions coming from the GPU process itself. However, this comes at a cost: websites with animations, video, or WebGL content may become noticeably slower or less smooth. The trade-off is worth it for users who primarily work with text-based sites or whose computers have underpowered GPUs.
 
 For users with dedicated GPUs (NVIDIA, AMD, or Intel Arc), there's a middle ground: keep hardware acceleration enabled but update your graphics drivers. Outdated drivers can cause the GPU process to consume excessive memory or behave erratically. Visit your GPU manufacturer's website to download the latest drivers, as these often include optimizations specifically for Chrome's rendering engine.
 
@@ -132,7 +132,7 @@ The GPU process is a significant contributor to Chrome's memory usage, especiall
 2. Click the "Memory" column to sort processes by memory usage.
 3. Look for processes labeled "GPU" or "GPU Process."
 
-In my testing, the GPU process typically consumes 100-400 MB of RAM, but I've seen it spike to over 1 GB when working with graphics-intensive applications like Figma or WebGL demos. The process remains active even when all tabs are closed, which is normal behavior — Chrome keeps it running to maintain fast rendering times when you reopen the browser.
+The GPU process typically uses a few hundred megabytes of RAM, but graphics-heavy apps can push it past a gigabyte when working with graphics-intensive applications like Figma or WebGL demos. The process remains active even when all tabs are closed, which is normal behavior — Chrome keeps it running to maintain fast rendering times when you reopen the browser.
 
 For users experiencing persistent high GPU memory usage, there are several potential solutions:
 
@@ -148,7 +148,7 @@ While Chrome's built-in Memory Saver is effective, third-party tab suspender ext
 
 **Popular tab suspender extensions in 2026:**
 
-- **ProTab Suspender**: The most comprehensive option with advanced suspension rules and whitelist/blacklist functionality. In my testing, it reduced memory usage by 50-70% compared to having the same tabs open without suspension.
+- **ProTab Suspender**: The most comprehensive option with advanced suspension rules and whitelist/blacklist functionality. It reduced memory usage compared to having the same tabs open without suspension.
 - **The Great Suspender**: A popular open-source option with automatic suspension after a specified time period. It also offers a "freeze" mode that preserves the tab's state but uses minimal resources.
 - **Auto Tab Discard**: A lightweight extension that automatically unloads inactive tabs. It's less feature-rich but extremely stable and resource-efficient.
 
@@ -176,7 +176,7 @@ Every active extension in Chrome consumes memory, typically between 30-120 MB pe
 3. Review your installed extensions and disable any you don't use regularly.
 4. Consider removing extensions that serve similar functions.
 
-In my testing, I found that just five unused extensions were consuming over 400 MB of RAM combined. After disabling them, Chrome's memory usage dropped by approximately 25% with no noticeable impact on my browsing experience. The most memory-intensive extensions are typically those with background processes, like ad blockers, password managers, and productivity tools.
+A handful of unused extensions were using several hundred megabytes of RAM combined. After disabling them, Chrome's memory usage dropped by approximately 25% with no noticeable impact on my browsing experience. The most memory-intensive extensions are typically those with background processes, like ad blockers, password managers, and productivity tools.
 
 For extensions you need but don't use constantly, consider using "extension managers" like [OneTab](https://www.one-tab.com) or The Great Suspender (which can also suspend extensions). These tools can temporarily disable extensions when they're not needed and reactivate them when you return to the sites they're designed for.
 
@@ -223,7 +223,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 - [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## How to Compare Your Options {#how-to-compare}
 
 Comparison shopping works best when the criteria are fixed first. Use this matrix to grade every candidate tool before you install it:

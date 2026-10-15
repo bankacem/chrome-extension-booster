@@ -53,14 +53,14 @@ It is 2026 now. MV2 is gone from Chrome stable, the enterprise policy that kept 
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## Key Takeaways
 
 - **Blocking webRequest is gone, not ad blocking.** MV3 extensions declare rules ahead of time through declarativeNetRequest and Chrome matches them itself, so the extension never inspects the request. Blocking still happens; the extension just stopped being the one making the call.
@@ -106,7 +106,7 @@ Adding a large custom list to an MV3 blocker does not always produce an error. R
 
 uBlock Origin Lite survived because Raymond Hill built it as a native MV3 extension rather than a port. It ships pre-compiled DNR rulesets, requests no permissions at install, and exposes filtering as per-site modes. Full uBlock Origin did not survive on Chrome and was never going to; its architecture assumes blocking webRequest, and its maintainer has said plainly that uBOL is not a drop-in replacement. Full uBO continues on Firefox, which still supports blocking webRequest.
 
-AdGuard shipped an MV3 extension too, and it works, with the same category of concessions: reduced custom-list flexibility and a trimmed stealth feature set compared to their MV2 build. AdGuard also has an angle nobody else does — a desktop application that filters outside the browser entirely, which is the only way I found to get MV2-era coverage in Chrome itself. Ghostery, AdBlock, and Adblock Plus all have MV3 builds in the store and all block the mainstream ad networks fine in my testing.
+AdGuard shipped an MV3 extension too, and it works, with the same category of concessions: reduced custom-list flexibility and a trimmed stealth feature set compared to their MV2 build. AdGuard also has an angle nobody else does — a desktop application that filters outside the browser entirely, which is the only way I found to get MV2-era coverage in Chrome itself. Ghostery, AdBlock, and Adblock Plus all have MV3 builds in the store and all block the mainstream ad networks fine.
 
 On my 40-site set, uBOL in Optimal mode and AdGuard MV3 landed within a few percent of each other on visible ad breakthrough. Both left more cosmetic residue — collapsed empty containers, leftover sponsored-post frames — than my old MV2 setup did.
 
@@ -140,7 +140,7 @@ You can flip uBOL to Optimal globally, or per-site as you encounter breakage. I 
 
 #### The YouTube exception
 
-YouTube was the clearest split in my testing. Basic mode let pre-rolls through on most runs. Optimal mode, with permission granted on the YouTube domain, handled them in the large majority of loads, with occasional breakage after platform-side changes that resolved on the next ruleset update. Our guide to YouTube adblock on Chrome goes deeper on the cat-and-mouse cycle and what to do during the gap.
+YouTube was the clearest split. Basic mode let pre-rolls through on most runs. Optimal mode, with permission granted on the YouTube domain, handled them in the large majority of loads, with occasional breakage after platform-side changes that resolved on the next ruleset update. Our guide to YouTube adblock on Chrome goes deeper on the cat-and-mouse cycle and what to do during the gap.
 
 #### Adding the network layer
 
@@ -185,7 +185,7 @@ Related on this site: [chrome extensions that actually respect your privacy](/bl
 
 ### Did Chrome actually ban ad blockers with Manifest V3?
 
-No. Chrome removed the blocking form of the webRequest API and replaced it with declarativeNetRequest, which changes how blockers work rather than whether they can exist. Every major blocker has a working MV3 build in the Web Store today, and on my test set they stop the mainstream ad networks reliably. What Chrome did kill is a specific architecture — one where the extension inspects each request in JavaScript and decides in real time. That architecture powered full uBlock Origin, so that particular extension is genuinely unavailable on Chrome now. The capability loss is real and narrower than the headlines suggested.
+No. Chrome removed the blocking form of the webRequest API and replaced it with declarativeNetRequest, which changes how blockers work rather than whether they can exist. Every major blocker has a working MV3 build in the Web Store today, and they stop the mainstream ad networks reliably. What Chrome did kill is a specific architecture — one where the extension inspects each request in JavaScript and decides in real time. That architecture powered full uBlock Origin, so that particular extension is genuinely unavailable on Chrome now. The capability loss is real and narrower than the headlines suggested.
 
 ### Why does Manifest V3 limit filter lists to fewer rules?
 
