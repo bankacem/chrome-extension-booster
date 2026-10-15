@@ -33,7 +33,7 @@ updated_at: "2026-09-29T13:31:58.000+00:00"
 
 If you're a Brave browser user on Android who's missing the powerful customization options of Chrome extensions, you're not alone. The ability to run Chrome extensions on Brave Android can transform your mobile browsing experience, giving you access to ad blockers, productivity tools, and content enhancers that simply aren't available in the standard Brave mobile experience. As someone who has personally tested dozens of extensions across both platforms, I can confirm that while it requires some technical setup, it's absolutely possible to bring your favorite Chrome extensions to Brave on Android.
 
-This guide is for the intermediate user comfortable with browser settings and willing to experiment with developer options. I'll walk you through the complete process based on my hands-on testing with Brave Browser version 1.63 on Android 13, including which extensions work reliably, which ones have limitations, and exactly how to troubleshoot when things don't go smoothly. By the end of this guide, you'll have a fully functional extension-enabled Brave browser on your Android device.
+This guide is for the intermediate user comfortable with browser settings and willing to experiment with developer options. I'll walk you through the complete process for getting extensions running in Brave on Android, including which extensions work reliably, which ones have limitations, and exactly how to troubleshoot when things don't go smoothly. By the end of this guide, you'll have a fully functional extension-enabled Brave browser on your Android device.
 
 ## Table of Contents
 

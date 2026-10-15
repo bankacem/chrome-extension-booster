@@ -227,7 +227,7 @@ In my testing, the most common issue is simply forgetting to enable Rewards afte
 
 ## Ghostery vs. Other Ad Blockers: A Practical Comparison {#ghostery-vs-others}
 
-When selecting an ad blocker for YouTube, it's helpful to understand how Ghostery compares to other popular options. Based on my hands-on testing across multiple devices and browsing scenarios, here's how Ghostery stacks up against some of the most well-known alternatives:
+When selecting an ad blocker for YouTube, it's helpful to understand how Ghostery compares to other popular options. Here's how it stacks up against some of the most well-known alternatives:
 
 | Feature | Ghostery | [uBlock Origin](https://github.com/gorhill/uBlock) | [AdGuard](https://adguard.com) | [Adblock Plus](https://adblockplus.org) |
 |---------|----------|---------------|---------|--------------|

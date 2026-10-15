@@ -70,7 +70,7 @@ This is one of those fixes that seems too simple to matter, but it resolves Chro
 
 ## Enable Memory Saver and Tab Discarding
 
-Chrome has built-in memory management features that many users never enable or configure. Memory Saver, accessible from chrome://settings/performance, automatically puts inactive tabs to sleep after a configurable period of inactivity. A sleeping tab releases most of its RAM back to the system while preserving the tab's visual state so you can pick up where you left off. In our testing, enabling Memory Saver on a machine with 8 GB of RAM reduced Chrome's total memory consumption by 25 to 40 percent, depending on how many tabs were open.
+Chrome has built-in memory management features that many users never enable or configure. Memory Saver, accessible from chrome://settings/performance, automatically puts inactive tabs to sleep after a configurable period of inactivity. A sleeping tab releases most of its RAM back to the system while preserving the tab's visual state so you can pick up where you left off. Enabling Memory Saver can noticeably reduce Chrome's total memory consumption — the more tabs you keep open, the bigger the saving.
 
 Tab Discarding is a related but more aggressive feature. While Memory Saver puts tabs into a low-power state, Tab Discarding completely unloads the tab's page from memory. When you click back on a discarded tab, Chrome reloads the page from the network. This uses less memory than Memory Saver but introduces a reload delay when returning to the tab. Most users prefer Memory Saver for its balance of memory savings and instant tab restoration, but Tab Discarding is the better choice if you are severely constrained on RAM and have many tabs open that you rarely revisit.
 

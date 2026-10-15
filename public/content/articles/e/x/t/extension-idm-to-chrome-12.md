@@ -341,7 +341,7 @@ To tailor IDM's interface to your preferences:
 
 ## Comparing IDM with Chrome's Native Download Manager {#idm-vs-chrome-downloads}
 
-To help you understand the value of integrating IDM with Chrome, let's compare it side-by-side with Chrome's native download manager. This comparison is based on my hands-on testing across various file sizes, connection types, and system configurations.
+To help you understand the value of integrating IDM with Chrome, let's compare it side-by-side with Chrome's native download manager. This comparison covers various file sizes, connection types, and system configurations.
 
 | Feature | IDM Integration | Chrome Native Download Manager |
 |---------|-----------------|--------------------------------|

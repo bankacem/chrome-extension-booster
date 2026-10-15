@@ -47,7 +47,7 @@ Three patterns cover most cases. If a handful of specific tabs dominate (Google 
 
 Memory Saver is Chrome's built-in answer to tab sprawl: when a tab has been inactive long enough, Chrome suspends it and frees its memory, reloading it fresh when you click back. Since it became stable in Chrome 108 it has been the single highest-impact setting for most people. Enable it via **Settings → Performance → Memory Saver**, and switch the mode to **"Moderate"** as your baseline — "Maximum" is aggressive enough to suspend tabs you are half-actively using, which causes reload churn.
 
-Measured on our test rig with 30 open tabs: total Chrome memory dropped from 9.2GB to 5.6GB after Memory Saver had cycled through the inactive tabs — a 39% cut with zero functionality lost. The tabs you actively use are never suspended, so the workflow cost is essentially zero. Pair it with the deeper options covered in our guide to [turning on Chrome's Memory Saver mode](/blog/how-to-turn-on-chromes-memory-saver-mode), including per-site "always keep active" exceptions for the tabs you never want reloaded.
+With 30 open tabs, Memory Saver can cut Chrome's total memory use substantially once it has cycled through the inactive tabs — with zero functionality lost. The tabs you actively use are never suspended, so the workflow cost is essentially zero. Pair it with the deeper options covered in our guide to [turning on Chrome's Memory Saver mode](/blog/how-to-turn-on-chromes-memory-saver-mode), including per-site "always keep active" exceptions for the tabs you never want reloaded.
 
 ## Fix 2: Audit Your Extensions (The Silent RAM Hogs)
 
