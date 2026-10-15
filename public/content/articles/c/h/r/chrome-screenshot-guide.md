@@ -35,15 +35,9 @@ Windows has Snipping Tool (Win+Shift+S). Mac has Cmd+Shift+4. These work for bas
 
 **Scrolling capture.** OS tools only capture the visible area. Extensions like Quick Screenshot Lite scroll the page automatically and stitch together a full-page image up to 20,000 pixels tall. On a 150-row HTML table, Quick Screenshot Lite captures every row in a single image.
 
-**Annotation in-browser.** After capturing, you add arrows, text, highlights, and blur directly in the browser without opening Photoshop or Paint. In my testing, Quick Screenshot Lite's annotation workflow took 8 seconds end-to-end. The OS workflow (save file, open in editor, annotate, re-save) took 45 seconds on average.
+**Annotation in-browser.** After capturing, you add arrows, text, highlights, and blur directly in the browser without opening Photoshop or Paint. Quick Screenshot Lite's annotation workflow takes seconds end-to-end; the OS workflow (save file, open in editor, annotate, re-save) takes far longer.
 
 **One-click workflows.** Capture, annotate, and save to clipboard in under 5 seconds. OS tools require multiple steps and separate applications.
-
-## My Test Setup
-
-All 12 extensions faced the same five pages: a 12,000-pixel documentation page, a YouTube video page, a Google Maps view, a Twitter thread, and a static article.
-
-Timing was done with Chrome's performance recording tool. Annotation quality was evaluated by creating the same output (arrow pointing to a button, highlighted paragraph, blurred email address) in each extension.
 
 ## Comparison Table: Top Screenshot Extensions
 
@@ -139,14 +133,14 @@ Quick Screenshot Lite has the best balance of essential tools and speed. Nimbus 
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## FAQ
 
 **Q: Which Chrome screenshot extension is completely free?**
@@ -168,7 +162,7 @@ A: Yes. Quick Screenshot Lite, Nimbus, and Awesome Screenshot all support elemen
 A: You need to enable "Allow in incognito" in Chrome's extension settings. Quick Screenshot Lite and FireShot support incognito capture.
 
 **Q: Can I capture screenshots of YouTube videos?**
-A: Yes, but YouTube's video player uses an overlay that some extensions struggle with. Quick Screenshot Lite and FireShot handled YouTube captures correctly in my tests.
+A: Yes, but YouTube's video player uses an overlay that some extensions struggle with. Quick Screenshot Lite and FireShot handle YouTube captures correctly.
 
 ## Verdict
 
@@ -176,4 +170,4 @@ For most users, Quick Screenshot Lite is the best Chrome screenshot extension �
 
 [Install Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) — 0.3s capture, 25MB RAM, no cloud upload.
 
-Related reading: [Best Chrome Screenshot Tools: I Tested 5 Methods — Built-in vs Extensions vs Des](/blog/screenshot-tools-chrome-comparison) · [Best Screenshot Extensions for Chrome: Full Capture, Annotation & Comparison (20](/blog/screenshot-extensions-chrome)
+Related reading: [Best Chrome Screenshot Tools: 5 Ways Compared](/blog/screenshot-tools-chrome-comparison) · [Best Screenshot Extensions for Chrome: Full Capture, Annotation & Comparison (20](/blog/screenshot-extensions-chrome)

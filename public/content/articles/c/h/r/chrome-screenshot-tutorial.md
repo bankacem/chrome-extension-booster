@@ -231,4 +231,4 @@ The extension workflow — capture, annotate, blur, save — takes under 10 seco
 
 [Install Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) and start capturing screenshots the fast way.
 
-Related reading: [Chrome Screenshot Addon Tutorial: Step-by-Step Guide from Installation to Sharin](/blog/chrome-screenshot-addon-tutorial) · [Best Chrome Screenshot Tools: I Tested 5 Methods — Built-in vs Extensions vs Des](/blog/screenshot-tools-chrome-comparison)
+Related reading: [Chrome Screenshot Addon Tutorial: Step-by-Step Guide from Installation to Sharin](/blog/chrome-screenshot-addon-tutorial) · [Best Chrome Screenshot Tools: 5 Ways Compared](/blog/screenshot-tools-chrome-comparison)

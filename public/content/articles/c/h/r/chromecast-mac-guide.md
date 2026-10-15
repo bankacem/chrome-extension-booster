@@ -46,7 +46,7 @@ This guide covers Chromecast streaming from a MacBook Pro M3 (macOS 14.5, Chrome
 
 ## Mac-Specific Issues and Fixes
 
-During testing, I encountered several Mac-specific issues that do not occur on Windows.
+Several Mac-specific issues come up that do not occur on Windows.
 
 **Issue 1: No audio when casting from Mac.** This is the most common Chromecast-on-Mac issue. Chrome does not always capture system audio on macOS due to Core Audio limitations. **Fix:** Use Cast Tab mode instead of Cast Desktop. Tab casting captures audio from the tab. If you need desktop audio, install a virtual audio driver like Loopback or BlackHole.
 
@@ -77,7 +77,7 @@ During testing, I encountered several Mac-specific issues that do not occur on W
 
 AirParrot 2 costs $19.99 and primarily solves one problem: desktop audio capture on Mac. If you need to cast your entire desktop with audio, AirParrot is the only reliable option on macOS.
 
-The issues extend beyond price. AirParrot failed to detect my Chromecast Ultra twice in five attempts during testing. It uses 18% CPU on the M3 MacBook — 50% more than Chrome's native Cast at 12%. The interface feels dated with macOS 10-style UI elements that have not been updated. AirParrot also only supports two simultaneous connections on the standard license, while Chromecast supports up to 6 devices on the same network.
+The issues extend beyond price. AirParrot sometimes fails to detect a Chromecast entirely, and it uses noticeably more CPU than Chrome's native Cast for the same task. The interface also feels dated, with macOS 10-style UI elements that have not been updated. AirParrot also only supports two simultaneous connections on the standard license, while Chromecast supports up to 6 devices on the same network.
 
 For the vast majority of users who only need tab casting with audio, AirParrot adds no value. Chrome's built-in Cast handles that for free with lower CPU usage.
 

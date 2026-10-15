@@ -35,7 +35,7 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 ## Table of Contents
 - [Why Tab Management Matters](#why)
-- [The 3 I Tested](#tested)
+- [The 3 Alternatives Compared](#tested)
 - [Comparison Table](#table)
 - [The Real Problem with Tab Managers](#gaps)
 - [Companion Extensions](#companions)
@@ -48,9 +48,9 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 Chrome is a memory hog. Open 30 tabs and your system starts swapping. Open 50 and Chrome becomes unusable. Tab managers solve this by either suspending inactive tabs (freeing RAM while keeping the tab visible) or consolidating tabs into a list.
 
-I compared three approaches across a week of daily use — research (20+ tabs), writing (5 tabs), and development (15+ tabs) — weighing RAM savings, tab recovery speed, and workflow disruption. For reference, I read [Chrome's own documentation on tab discarding](https://support.google.com/chrome/answer/95467) and [How-To Geek's guide on saving RAM in Chrome](https://www.howtogeek.com/437113/how-to-save-ram-in-google-chrome/).
+A side-by-side comparison of three approaches in typical daily use — heavy research sessions, writing, and development — weighing RAM savings, tab recovery speed, and workflow disruption. For reference, I read [Chrome's own documentation on tab discarding](https://support.google.com/chrome/answer/95467) and [How-To Geek's guide on saving RAM in Chrome](https://www.howtogeek.com/437113/how-to-save-ram-in-google-chrome/).
 
-## The 3 I Tested {#tested}
+## The 3 Alternatives Compared {#tested}
 
 ![Autotab Discard Vs Onetab Overview](/content/images/autotab-discard-vs-onetab/autotab-discard-vs-onetab-overview.webp "Autotab Discard Vs Onetab Overview")
 
@@ -105,14 +105,14 @@ Here is the tab management setup I use:
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## Which Should You Use? {#verdict}
 
 **For most users:** ProTab Suspender. The best balance between memory savings and keeping your workflow intact. Tabs stay visible and recover quickly.
