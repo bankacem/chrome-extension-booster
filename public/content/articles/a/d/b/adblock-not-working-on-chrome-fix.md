@@ -145,7 +145,7 @@ Two other things stall updates: a system clock more than a few minutes off, whic
 
 Order matters more than the reinstall itself. Export your blocker settings first, then remove the extension, then quit Chrome fully — on Windows check the tray, because "continue running background apps" keeps a process alive, and on macOS use a real quit rather than closing the window. Relaunch, install from the Web Store, grant site access, set your filtering mode, force a list update, and only then retest.
 
-In my testing, a same-session remove-and-reinstall twice restored the old cached ruleset state and reproduced the original failure, while a reinstall after a full quit did not. That is also the fix Google's support documentation points to for the "extension has been corrupted" error, and if that error returns immediately after a clean reinstall, treat it as a profile problem and go to step 8.
+A same-session remove-and-reinstall restores the old cached ruleset state and reproduces the original failure, while a reinstall after a full quit does not. That is also the fix Google's support documentation points to for the "extension has been corrupted" error, and if that error returns immediately after a clean reinstall, treat it as a profile problem and go to step 8.
 
 ### Step 7: Check Policies And Managed Profiles
 
