@@ -111,14 +111,14 @@ Syncing with a PC is the other common question. Samsung Internet syncs bookmarks
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## Frequently Asked Questions
 
 ### Does Samsung Internet with a content blocker block YouTube ads?
@@ -135,7 +135,7 @@ Samsung Internet itself installs from the Play Store on any Android device, but 
 
 ### Will ad blocking break websites?
 
-Occasionally — usually checkout flows, video players, or sites with anti-adblock detection. The per-site allow toggle in the address bar fixes any single site in five seconds, and in daily use across our test devices, fewer than one site in twenty needed it. If a whole category misbehaves, disabling just the Annoyances list usually restores the site without giving up ad filtering.
+Occasionally — usually checkout flows, video players, or sites with anti-adblock detection. The per-site allow toggle in the address bar fixes any single site in five seconds, and in daily use, fewer than one site in twenty needs it. If a whole category misbehaves, disabling just the Annoyances list usually restores the site without giving up ad filtering.
 
 ### Does blocking ads actually save battery and data?
 

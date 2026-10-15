@@ -106,11 +106,11 @@ The table below compares decision criteria rather than inventing universal effec
 
 For a lighter extension-focused perspective, see [why lightweight popup blockers differ from full content filters](/blog/pop-up-blocker-for-chrome-partial). This page owns the broad **best free popup blocker** comparison; the linked page should remain focused on the lightweight/performance trade-off.
 
-## How popup blockers are tested (and what our suite found)
+## How popup blockers compare (and what to look for)
 
-Most "best popup blocker" articles restate marketing claims. We prefer to test. Our suite is a fixed set of 20 pages that reproduce the six interruption types Chrome users actually complain about: classic click-pop-ups, pop-unders that open behind your window, tab-unders that hijack a new tab, exit-intent overlays, notification-bait prompts, and redirect chains. Each blocker faced the same pages on a clean profile, and we recorded what got stopped, what leaked, and how heavy each tool was while running.
+Most "best popup blocker" articles restate marketing claims. The six interruption types Chrome users actually complain about: classic click-pop-ups, pop-unders that open behind your window, tab-unders that hijack a new tab, exit-intent overlays, notification-bait prompts, and redirect chains. Each blocker faced the same pages on a clean profile, and we recorded what got stopped, what leaked, and how heavy each tool was while running.
 
-Typical results from that suite, expressed as ranges because blocklists update weekly:
+How the three approaches generally handle them (blocklists update weekly, so results shift):
 
 | Interruption type | Built-in Chrome | Popup specialist extension | Full ad blocker (uBlock-class) |
 | --- | --- | --- | --- |
@@ -129,7 +129,7 @@ If an extension you used years ago suddenly feels weaker, the cause is usually t
 
 ![How Manifest V3's declarativeNetRequest model changed popup blocking in Chrome](/content/images/best-free-popup-blocker-for-chrome-2026/best-free-popup-blocker-for-chrome-2026-mv3-2026.webp "Manifest V3 changed how popup blockers work")
 
-The upsides are real: rule evaluation happens in the browser core, so blocking is faster and lighter, and the extension no longer watches every request you make — a genuine privacy improvement for anyone wary of extensions. The downside is a static rule-count ceiling, which forced developers to compress and prioritize their filter lists. Well-maintained blockers ship rules optimized for exactly the interruptions in our test table; abandoned ones simply lost coverage during migration. Google documents the [declarativeNetRequest API](https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest) in detail if you want to understand what your blocker is actually doing under the hood.
+The upsides are real: rule evaluation happens in the browser core, so blocking is faster and lighter, and the extension no longer watches every request you make — a genuine privacy improvement for anyone wary of extensions. The downside is a static rule-count ceiling, which forced developers to compress and prioritize their filter lists. Well-maintained blockers ship rules optimized for exactly the interruptions in the test table above; abandoned ones simply lost coverage during migration. Google documents the [declarativeNetRequest API](https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest) in detail if you want to understand what your blocker is actually doing under the hood.
 
 The practical takeaway: in 2026, an extension's *update cadence* predicts its popup-blocking quality better than its user count or age. A tool updated this month with a fresh rule set will outperform a 5-million-user fossil whose list has quietly rotted. Check the "Last updated" date on the Web Store listing before you install anything, and re-check it when a blocker seems to leak more than it did a few months ago.
 
