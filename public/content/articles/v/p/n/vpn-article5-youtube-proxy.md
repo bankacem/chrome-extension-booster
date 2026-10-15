@@ -111,7 +111,7 @@ YouTube Unblocked is a free web proxy specifically designed for YouTube. No exte
 - Unstable — domains change frequently as they're blocked
 - No privacy protection whatsoever
 
-**My testing:** Successfully unblocked YouTube on a school network. 720p playback worked smoothly. 1080p buffered occasionally. The interface is bare-bones but functional.
+**The practical picture:** unblocks YouTube on school-style networks. 720p playback runs smoothly; 1080p buffers occasionally. The interface is bare-bones but functional.
 
 ---
 
@@ -158,7 +158,7 @@ Browsec is technically a VPN extension, but its free tier is so basic it functio
 - Unknown jurisdiction
 - Potential data selling (unverified)
 
-**My testing:** Browsec unblocked YouTube on all tested networks. 1080p streaming was smooth on US and European servers. Asian servers struggled with HD.
+**The practical picture:** Browsec unblocks YouTube on most networks. 1080p streaming runs smooth on US and European servers; Asian servers struggle with HD.
 
 > **Related:** See our full [Best Free VPN Chrome Extension No Sign Up](/blog/vpn-article1-best-free-vpn-no-signup) guide for more details on Browsec.
 
@@ -188,7 +188,7 @@ FoxyProxy isn't a proxy service — it's a proxy manager. You provide your own p
 - No built-in proxy service
 - Chrome extension APIs limit functionality
 
-**My testing:** With a private SOCKS5 proxy, FoxyProxy handled YouTube flawlessly. But this requires owning or renting a proxy server — not truly "free."
+**The practical picture:** with a private SOCKS5 proxy, FoxyProxy handles YouTube flawlessly. But this requires owning or renting a proxy server — not truly "free."
 
 ---
 
@@ -293,14 +293,14 @@ Upgrade from proxies to a VPN when you:
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+The best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## FAQ
 
 ### What's the difference between a proxy and VPN for YouTube?
