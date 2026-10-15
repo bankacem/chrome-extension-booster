@@ -215,7 +215,7 @@ Most auto refresh extensions allow you to control which websites are affected:
 To configure these options:
 1. Access the extension's settings (usually by right-clicking the extension icon)
 2. Navigate to the whitelist/blacklist section
-3. Add websites using wildcards if needed (e.g., *.example.com)
+3. Add websites using wildcards if needed (e.g., `*.example.com`)
 4. Save your settings
 
 This step is crucial to prevent unnecessary refreshing on websites that either don't need it or where auto refresh might interfere with functionality.

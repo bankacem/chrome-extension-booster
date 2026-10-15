@@ -72,7 +72,7 @@ The most sophisticated ad blockers, like uBlock Origin, allow you to create cust
 
 One of the most immediate benefits of installing an extension adblock Google Chrome is the noticeable improvement in browsing speed. In my comprehensive testing across various hardware configurations—from a high-end desktop to a budget laptop and mid-range smartphone—I consistently observed faster page loads and smoother scrolling.
 
-When I tested with an ad blocker enabled against the same pages with it disabled, the results were striking. Pages loaded 30-50% faster on average, with some content-heavy sites showing even more dramatic improvements. This isn't just a subjective feeling; it's measurable. According to [Google's Web Vitals documentation](https://web.dev/vitals/), page load speed directly impacts user experience and search rankings. By blocking ads, you're essentially removing the digital equivalent of roadblocks on information superhighways.
+Comparing the same pages with an ad blocker enabled and disabled shows a clear difference. Pages typically load noticeably faster, with content-heavy sites showing the biggest improvements. This isn't just a subjective feeling; it's measurable. According to [Google's Web Vitals documentation](https://web.dev/vitals/), page load speed directly impacts user experience and search rankings. By blocking ads, you're essentially removing the digital equivalent of roadblocks on information superhighways.
 
 The performance benefits extend beyond just initial page loads. Once a page is loaded, ad blockers prevent background scripts from running, which means:
 

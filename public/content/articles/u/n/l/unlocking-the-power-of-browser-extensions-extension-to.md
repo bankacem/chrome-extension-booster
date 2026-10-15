@@ -97,7 +97,7 @@ The manifest file is particularly important as it serves as the extension's blue
 
 While the core concepts remain consistent, there are important differences in how extensions are implemented across browsers. Chrome and Chromium-based browsers use the Manifest V2 standard (though transitioning to Manifest V3), while Firefox has its own implementation with some unique features. In my cross-browser testing, I found that extensions designed specifically for each platform tend to perform better than those that attempt to be universal without proper adaptation.
 
-For example, Chrome extensions have more robust access to browser APIs, while Firefox extensions often have better integration with the browser's privacy features. When I tested the same extension across multiple browsers, I frequently encountered differences in performance, functionality, and user experience. This is why I recommend checking browser-specific reviews and ratings before installing an extension, as performance can vary significantly between platforms.
+For example, Chrome extensions have more robust access to browser APIs, while Firefox extensions often have better integration with the browser's privacy features. The same extension often behaves differently across browsers, with noticeable differences in performance, functionality, and user experience. This is why I recommend checking browser-specific reviews and ratings before installing an extension, as performance can vary significantly between platforms.
 
 ### Performance Considerations
 

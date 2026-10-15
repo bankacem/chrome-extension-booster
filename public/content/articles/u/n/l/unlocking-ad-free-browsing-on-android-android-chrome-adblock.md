@@ -44,7 +44,7 @@ That leaves three proven routes, and each one blocks a different slice of the ad
 2. **A DNS-level blocker** (AdGuard DNS via Android Private DNS) — works system-wide in every app and browser, including Chrome itself, but blocks fewer ad types than a full filter engine.
 3. **A browser with a built-in blocker** (Brave, Samsung Internet + AdGuard content blocker) — zero setup complexity, blocks the majority of ads, but you are not using Chrome anymore.
 
-Each method is covered in full below with step-by-step instructions. If you only read one section, read the Kiwi + uBlock Origin section — in our testing it blocked the highest percentage of ads while keeping the Chrome look and feel you are used to.
+Each method is covered in full below with step-by-step instructions. If you only read one section, read the Kiwi + uBlock Origin section — this combo blocks the most ads while keeping the Chrome look and feel you are used to.
 
 ## Why Chrome Android Has No AdBlock (and Why That Is Not Changing Soon)
 
@@ -106,7 +106,7 @@ The trade-off is the same for both: you are leaving Chrome. If you live inside C
 
 ## Does Blocking Ads on Android Save Battery and Data? (Real Test)
 
-Every ad-blocker pitch claims battery savings, so we measured it instead of repeating the marketing. On a Pixel 7 with a full ad-blocking setup (Kiwi + uBlock Origin with default lists) versus stock Chrome, over a matched hour of browsing the same 20 sites: data consumption dropped **38%** (ad payloads, tracking pixels, and autoplay video are heavy), and battery drain per hour of browsing dropped by roughly **15–20%**. The savings were biggest on news and sports sites, where a single page can fire requests to five or more ad networks.
+Every ad-blocker pitch claims battery savings, so here's the honest picture: blocking ads cuts data use because ad payloads, tracking pixels, and autoplay video are heavy, and many users report better battery life with a blocker running. The difference is biggest on ad-heavy news and sports sites, where a single page can fire requests to five or more ad networks. Your mileage will vary by device and browsing habits.
 
 The data savings are the underrated win. If you are on a limited mobile plan, an ad blocker is the single cheapest "extra data" you can give yourself — and unlike streaming quality settings, it costs nothing in experience. There is also a security dividend: blocking ad networks blocks *malvertising*, the practice of delivering malware through ad networks, which remains one of the most common mobile attack vectors according to security firms. Fewer third-party requests means fewer chances for a malicious ad to reach your phone at all.
 
@@ -162,4 +162,4 @@ Third, pair your blocker with tracker protection. Ads are only half the privacy 
 
 If you want the strongest blocking and do not mind leaving Chrome: **Kiwi Browser + uBlock Origin**, three minutes, done. If you must stay in Chrome: **AdGuard Private DNS**, two minutes, blocks most ads everywhere on the phone. If you want the best all-around package with zero configuration: **Brave**. Any of the three beats stock Chrome for speed, data use, and safety — and you can stack the DNS method with either browser for even deeper coverage.
 
-For the background and full comparison of every Android ad-blocking option we tested this year, the [best adblock for Chrome on Android guide](/blog/adblock-chrome-android-complete-guide-2026) goes deeper on each contender, and [our guide to using extensions on Android Chrome](/blog/chrome-extensions-on-android-2026-guide) explains the whole ecosystem — not just ad blockers — including the browsers that make any desktop extension work on your phone.
+For the background and full comparison of every Android ad-blocking option covered this year, the [best adblock for Chrome on Android guide](/blog/adblock-chrome-android-complete-guide-2026) goes deeper on each contender, and [our guide to using extensions on Android Chrome](/blog/chrome-extensions-on-android-2026-guide) explains the whole ecosystem — not just ad blockers — including the browsers that make any desktop extension work on your phone.

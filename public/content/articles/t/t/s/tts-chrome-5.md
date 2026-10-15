@@ -53,7 +53,7 @@ The foundation of modern TTS Chrome extensions lies in concatenative synthesis a
 
 When I first started testing TTS Chrome extensions around 2018, the voices were noticeably artificial and often difficult to listen to for extended periods. Today's best TTS Chrome extensions offer voices that can pass the "uncanny valley" test—sounding human enough to be engaging but not so perfect that they trigger our sense of unease. This improvement is particularly important for users who rely on TTS Chrome extensions for consuming lengthy content like articles, e-books, or educational materials.
 
-The quality improvement in TTS Chrome extensions isn't just about sounding more human. Modern TTS Chrome extensions also handle complex text elements much better than their predecessors. They can correctly interpret abbreviations, numbers, and special characters that would have tripped up earlier versions. For example, when I tested how different TTS Chrome extensions handled dates, measurements, and technical terminology, the latest neural network-based options performed remarkably well, often requiring no manual correction.
+The quality improvement in TTS Chrome extensions isn't just about sounding more human. Modern TTS Chrome extensions also handle complex text elements much better than their predecessors. They can correctly interpret abbreviations, numbers, and special characters that would have tripped up earlier versions. For example, when handling dates, measurements, and technical terminology, the latest neural network-based options perform remarkably well, often requiring no manual correction.
 
 ### The Technical Advancements Behind Modern TTS
 

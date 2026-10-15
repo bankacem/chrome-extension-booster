@@ -135,7 +135,7 @@ Battery impact is another crucial factor for mobile users. In my testing, I used
 
 Memory usage is another important consideration for mobile performance. In my monitoring, Ghostery typically maintained a memory footprint of 15-25MB while active, which is reasonable for a privacy extension of this complexity. I didn't observe any memory leaks or gradual increases in RAM usage during extended testing sessions, indicating that the extension is well-optimized for mobile environments. Some privacy extensions I've tested in the past have shown concerning memory behavior over time, but Ghostery remained stable throughout my testing.
 
-It's worth noting that performance can vary based on your specific Android device, browser choice, and browsing habits. In my experience, devices with more powerful processors and ample RAM handle Ghostery with minimal noticeable impact, while budget devices may experience slightly more pronounced effects. The browser you choose to run Ghostery on also makes a difference—Kiwi Browser, which I tested extensively, showed excellent compatibility with Ghostery while maintaining good performance. Chrome's "Desktop Site" mode, while functional for basic Ghostery features, sometimes showed slightly reduced performance compared to dedicated mobile browsers with extension support.
+It's worth noting that performance can vary based on your specific Android device, browser choice, and browsing habits. In my experience, devices with more powerful processors and ample RAM handle Ghostery with minimal noticeable impact, while budget devices may experience slightly more pronounced effects. The browser you choose to run Ghostery on also makes a difference—Kiwi Browser, which supports Chrome extensions on Android well, showed excellent compatibility with Ghostery while maintaining good performance. Chrome's "Desktop Site" mode, while functional for basic Ghostery features, sometimes showed slightly reduced performance compared to dedicated mobile browsers with extension support.
 
 For users who experience performance issues with Ghostery, the extension includes several optimization settings that can help. In my testing, enabling the "Block third-party cookies" and "Block fingerprinting" options provided the best balance of privacy and performance. Additionally, the "Performance Mode" setting, which prioritizes browsing speed by reducing some advanced tracking protections, can be useful for users on lower-end devices who notice significant performance impacts. In my experience, most users won't need to enable Performance Mode, but it's good to know this option exists if you encounter issues.
 
@@ -148,8 +148,8 @@ The privacy extension landscape offers numerous options, each with its own stren
 | Installation Method | Requires compatible browser | Requires compatible browser | Requires compatible browser | Built-in browser extension |
 | Tracker Blocking | Comprehensive with 2000+ trackers | Comprehensive with custom filters | Focuses on heuristic-based blocking | Blocks known trackers |
 | Customization | High (preset levels + custom rules) | Very high (advanced filter editing) | Medium (automatic learning + manual adjustments) | Low (preset options only) |
-| Performance Impact | Minimal (0.8s avg. page load increase) | Very minimal (often improves page speed) | Minimal to moderate | Minimal |
-| Battery Impact | Low (5% better in testing) | Very low
+| Performance Impact | Minimal | Very minimal (often improves page speed) | Minimal to moderate | Minimal |
+
 
 ### Related Guides on ExtensionTo
 
@@ -181,7 +181,7 @@ Key takeaways:
 
 ### Frequently Asked Questions
 ### Does Ghostery slow down my browsing on Android?
-Ghostery has minimal performance impact on Chrome Android, adding only about 0.8 seconds to average page load times in our testing. Most users won't notice any significant difference in browsing speed, especially on modern devices.
+Ghostery has minimal performance impact on Chrome Android, with barely noticeable changes to average page load times. Most users won't notice any significant difference in browsing speed, especially on modern devices.
 
 ### Can I use Ghostery with other privacy extensions?
 Yes, Ghostery can be used alongside other privacy tools like uBlock Origin. However, you may want to adjust settings to avoid redundant blocking and potential conflicts between extensions.

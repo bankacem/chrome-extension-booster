@@ -128,13 +128,13 @@ One of the most common concerns with security extensions is their potential impa
 
 Memory usage is often the most significant performance impact of browser extensions, as many security tools maintain active processes in the background. During my testing, I measured Chrome's memory consumption with and without the Avast plugin Chrome across three different devices: a high-end desktop (32GB RAM), a mid-range laptop (16GB RAM), and a budget Chromebook (4GB RAM). The results showed that the extension added approximately 80-120MB of memory usage across all devices, with slightly higher usage on sites with heavy content.
 
-What I found particularly interesting was how the extension's memory usage scaled with browsing activity. During intensive sessions with multiple tabs open—including video streaming, document editing, and resource-heavy web applications—the extension's memory footprint remained relatively stable. This suggests efficient resource management, even under heavy load. For comparison, this memory impact was approximately 30% lower than some competing security extensions I tested, making it one of the more memory-efficient options in its category.
+What I found particularly interesting was how the extension's memory usage scaled with browsing activity. During intensive sessions with multiple tabs open—including video streaming, document editing, and resource-heavy web applications—the extension's memory footprint remained relatively stable. This suggests efficient resource management, even under heavy load. For comparison, this puts it among the more memory-efficient options in its category.
 
 ### Page Load Speed Impact
 
 Page load speed is another critical metric for browser extensions, particularly for users who frequently visit content-heavy websites. To assess this, I timed page loads for 50 popular websites across various categories (news, e-commerce, social media, technical resources) with and without the Avast plugin Chrome. The results showed an average increase of 0.8-1.2 seconds in page load times when the extension was active.
 
-While this might seem significant, it's important to note that this impact was most noticeable on the initial page load. Subsequent navigation within the same site showed minimal additional delay, as the extension had already cached security information. For users who primarily browse within a few frequently visited sites, this impact would be barely noticeable. For comparison, this was slightly better than the Norton Safe Web extension I tested recently, which added approximately 1.5-2 seconds to average page load times in similar conditions.
+While this might seem significant, it's important to note that this impact was most noticeable on the initial page load. Subsequent navigation within the same site showed minimal additional delay, as the extension had already cached security information. For users who primarily browse within a few frequently visited sites, this impact would be barely noticeable. For comparison, similar tools like Norton Safe Web tend to slow page loads a bit more.
 
 ### CPU Usage During Active Browsing
 

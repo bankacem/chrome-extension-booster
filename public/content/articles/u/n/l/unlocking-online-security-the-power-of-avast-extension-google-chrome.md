@@ -68,7 +68,7 @@ The Avast Chrome extension delivers a robust set of security features that addre
 
 The web shield function is the cornerstone of the extension's security capabilities. It operates by checking every website you visit against Avast's extensive database of known malicious sites. In my testing, this process was remarkably fast—typically adding only a fraction of a second to page load times while providing critical protection. When you attempt to access a flagged site, the extension displays a prominent warning page explaining the potential risks and offering options to proceed with caution or return to safety.
 
-What impressed me during testing was the extension's accuracy in distinguishing between legitimate sites and actual threats. Out of hundreds of potentially dangerous sites I tested, only a handful of false positives occurred, and those were quickly resolved after reporting them through the extension's interface. This balance between security and usability is crucial for maintaining a smooth browsing experience.
+What impressed me during testing was the extension's accuracy in distinguishing between legitimate sites and actual threats. False positives can occasionally occur, but they're typically resolved quickly after being reported through the extension's interface. This balance between security and usability is crucial for maintaining a smooth browsing experience.
 
 ### Malware Detection and Prevention
 

@@ -80,7 +80,7 @@ The extension includes a strong password generator that creates complex, unique 
 For storage, Avast uses AES-256 encryption to protect your passwords, which is the industry standard. In my experience, the extension reliably saved and retrieved credentials across different websites, though I did encounter occasional hiccups with certain login forms that used non-standard implementations.
 
 ### Autofill Functionality
-One of the most valuable aspects of Avast Password Manager is its autofill capability. When you visit a website where you have saved credentials, the extension automatically detects the login form and offers to fill in your username and password. This feature worked seamlessly for approximately 95% of the sites I tested during my evaluation.
+One of the most valuable aspects of Avast Password Manager is its autofill capability. When you visit a website where you have saved credentials, the extension automatically detects the login form and offers to fill in your username and password. This feature worked on the vast majority of sites I tried.
 
 The extension also offers form fill capabilities for personal information like addresses and payment details, which can significantly speed up online shopping and form completion. In my testing, this feature was particularly useful for frequently used forms like my work login portal and online banking site.
 

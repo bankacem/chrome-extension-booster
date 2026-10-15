@@ -181,7 +181,7 @@ Wishboney lacks Amazon Assistant's deep integration, but its cross-store approac
 
 ## How Shopping Extensions Access Your Data
 
-Every free shopping extension monetizes through data collection. Shopping extensions request access to your browsing history on retail sites, the ability to read and modify checkout pages (to apply coupon codes), and access to pages you visit to detect product information. Extensions like Honey and Capital One Shopping use this data to maintain coupon databases, track affiliate referrals, and build anonymized shopping trend reports sold to market research firms.
+Every free shopping extension monetizes through data collection. Shopping extensions request access to your browsing history on retail sites, the ability to read and modify checkout pages (to apply coupon codes), and access to pages you visit to detect product information. Extensions like Honey and Capital One Shopping use this data to maintain coupon databases and track affiliate referrals. The exact details vary by company and change over time, so it's worth reading their privacy policies before installing.
 
 The critical distinction is between **first-party data** (your personal purchase history and email) and **aggregate data** (anonymized trends). Reputable extensions collect aggregate data — they know someone visited the headphones category, not that *you* are shopping for a birthday gift. However, the line isn't always clear, and privacy policies are notoriously vague.
 
