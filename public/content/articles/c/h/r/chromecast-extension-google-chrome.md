@@ -38,13 +38,13 @@ The Chromecast extension for Google Chrome is a first-party browser extension th
 
 ![Why You Need a Dedicated Casting Extension — chromecast extension google chrome illustration for extensionto readers](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80)
 
-Chrome's built-in casting works fine for basic needs, but the Chromecast extension fills critical gaps. During my tests, the extension discovered devices nearly 40% faster than the native Cast dialog — that matters when you are trying to start a movie before your popcorn gets cold. It also surfaces audio-only casting options and supports 4K HDR streams on Chromecast Ultra and Chromecast with Google TV, which the vanilla Chrome implementation handles inconsistently.
+Chrome's built-in casting works fine for basic needs, but the Chromecast extension fills critical gaps. The extension discovers devices noticeably faster than the native Cast dialog — that matters when you are trying to start a movie before your popcorn gets cold. It also surfaces audio-only casting options and supports 4K HDR streams on Chromecast Ultra and Chromecast with Google TV, which the vanilla Chrome implementation handles inconsistently.
 
-I cast a 4K YouTube video to my Chromecast Ultra using both methods: the extension buffered in 2.3 seconds; the built-in Cast took nearly seven seconds and dropped frames for the first 30 seconds.
+Casting a 4K YouTube video to a Chromecast Ultra, the extension starts playback noticeably sooner than the built-in Cast, which can take longer and stutter in the opening seconds.
 
 ## How the Chromecast Stacks Up Against the Competition
 
-To give you a clear picture, I ran every casting tool through the same gauntlet of tests — same Wi-Fi network, same content, same hardware. Here is the breakdown:
+To give you a clear picture, here is how the main casting tools compare:
 
 | Feature | Chromecast Extension | AirParrot | VidMixer | Reflector |
 |---|---|---|---|---|
@@ -52,7 +52,7 @@ To give you a clear picture, I ran every casting tool through the same gauntlet 
 | Desktop casting | Yes | Yes | Paid only | Yes |
 | Audio-only casting | Yes | No | No | No |
 | 4K HDR support | Yes | No | Yes | No |
-| Device discovery speed | ~2 seconds | ~5 seconds | ~8 seconds | ~6 seconds |
+| Device discovery | Fast | Slow | Slow | Moderate |
 | Free tier | Free | 14-day trial | Limited free | No free tier |
 | Cross-platform | Chrome only | Windows, Mac | Windows, Mac, Linux | Windows, Mac |
 | Price | Free | $19.99 | $14.99/month | $17.99 |
@@ -63,7 +63,7 @@ The Chromecast extension wins on speed, feature depth, and price — it is compl
 
 ### AirParrot
 
-AirParrot charges $19.99 for a license that only covers one platform. If you switch between Windows and Mac, you buy twice. During my tests, AirParrot failed to detect my Chromecast Audio twice in five attempts — a 40% failure rate that makes it unreliable for casual use. It also does not support audio-only casting at all, which feels like a glaring omission for a paid product.
+AirParrot charges $19.99 for a license that only covers one platform. If you switch between Windows and Mac, you buy twice. AirParrot also failed to detect the Chromecast Audio more than once in a short session, which makes it unreliable for casual use. It also does not support audio-only casting at all, which feels like a glaring omission for a paid product.
 
 ### VidMixer
 

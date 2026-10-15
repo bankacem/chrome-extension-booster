@@ -108,24 +108,13 @@ ProtonVPN's Chrome extension is clean, minimal, and functional:
 - **NetShield toggle:** Enable/disable ad blocking
 - **Connection info:** Shows protocol, IP, and server load
 
-**My experience:** The extension is less flashy than NordVPN's but more trustworthy. It connects reliably, maintains stable speeds, and never crashes. The interface is utilitarian — designed by engineers, not marketers.
+The extension is less flashy than NordVPN's but more trustworthy. It connects reliably, maintains stable speeds, and rarely crashes. The interface is utilitarian — designed by engineers, not marketers.
 
 ---
 
 ## Speed Test Results: Free vs Paid
 
-We tested ProtonVPN Free against ProtonVPN Plus under identical conditions:
-
-| Metric | ProtonVPN Free | ProtonVPN Plus | Speed Loss (Free) |
-|--------|---------------|----------------|-------------------|
-| **US Server** | 312 Mbps | 445 Mbps | -30% |
-| **Netherlands** | 289 Mbps | 412 Mbps | -30% |
-| **Japan** | 234 Mbps | 356 Mbps | -34% |
-| **Romania** | 267 Mbps | 389 Mbps | -31% |
-| **Poland** | 245 Mbps | 367 Mbps | -33% |
-| **Average** | **269 Mbps** | **394 Mbps** | **-32%** |
-
-**What this means:** Free users share servers with other free users, creating congestion. Paid users get dedicated faster servers. However, 269 Mbps is still excellent — more than enough for 4K streaming (25 Mbps required) and video calls.
+Comparing ProtonVPN Free against ProtonVPN Plus side by side shows the expected gap: free servers run slower, since free users share a smaller server pool. The free tier still handles 4K streaming (which needs around 25 Mbps) and video calls without trouble.
 
 ### Real-World Performance
 
@@ -134,7 +123,7 @@ We tested ProtonVPN Free against ProtonVPN Plus under identical conditions:
 | 4K YouTube streaming | Smooth, occasional buffer | Yes |
 | Netflix US (unblocked) | Works reliably | Yes |
 | Video calls (Zoom/Teams) | Clear, no lag | Yes |
-| Online gaming | 60-80ms latency | Marginal |
+| Online gaming | Higher latency | Marginal |
 | Large file downloads (10GB) | Slower but functional | Yes |
 | Torrenting | Not allowed | No |
 
@@ -255,7 +244,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## FAQ
 
 ### Is ProtonVPN Chrome extension really free?

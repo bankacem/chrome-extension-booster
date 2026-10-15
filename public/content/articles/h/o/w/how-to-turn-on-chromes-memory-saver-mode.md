@@ -67,11 +67,11 @@ Chrome's per-site exemption list exists because some pages simply behave worse w
 
 Everything else — the article you opened yesterday to maybe read later, the documentation tab, the shopping cart research — is exactly what the feature is built for. The [Chrome extensions that slow down your browser under real tests](/blog/chrome-extensions-that-slow-down-your-browser-real-tests) tend to accumulate in exactly these "saved for later" tabs, which is why suspending them recovers so much memory.
 
-## How Much RAM Does Memory Saver Actually Save (Measured)
+## How Much RAM Does Memory Saver Actually Save
 
-We tested Memory Saver on a 2026 extension stack — the kind power users actually run — with 25 tabs open across two Chrome windows, measuring Chrome's aggregate memory in Windows Task Manager after five minutes of stabilization. The baseline with Memory Saver off and all tabs freshly loaded held roughly 3.1 GB across Chrome's processes. With Memory Saver on Moderate and 18 of the 25 tabs idle for over an hour, the same session held about 1.9 GB — a savings of roughly 1.2 GB, or about 39%. Switching to Maximum dropped it further to around 1.5 GB.
+On a 2026 extension stack — the kind power users actually run — with 25 tabs open across two Chrome windows, Memory Saver makes a visible difference. With it off, Chrome's aggregate memory sat well over 3 GB; switching it on Moderate brought the same session down substantially, and Maximum cut it further.
 
-The per-tab math matters more than the total, though. Heavily scripted pages (news front pages, social feeds, webmail) release 150–300 MB each when suspended, while simple article pages release 40–80 MB. This is why the feature feels dramatic for some users and invisible for others: if your open tabs are mostly simple articles, Moderate mode may only save a few hundred megabytes. Our full [guide to fixing Chrome's high memory usage](/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide) covers the rest of the toolbox — extension audits, GPU process fixes, and the memory-saver-not-working scenarios — for cases where a toggle alone is not enough.
+The per-tab math matters more than the total, though. Heavily scripted pages (news front pages, social feeds, webmail) release the most when suspended, while simple article pages release far less. This is why the feature feels dramatic for some users and invisible for others: if your open tabs are mostly simple articles, Moderate mode may only save a few hundred megabytes. Our full [guide to fixing Chrome's high memory usage](/blog/how-to-fix-chrome-high-memory-usage-the-ultimate-2026-speed-up-guide) covers the rest of the toolbox — extension audits, GPU process fixes, and the memory-saver-not-working scenarios — for cases where a toggle alone is not enough.
 
 ## Benefits of Chrome Memory Saver Mode Enabled
 

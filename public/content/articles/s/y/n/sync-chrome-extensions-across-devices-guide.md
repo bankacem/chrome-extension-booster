@@ -31,7 +31,7 @@ created_at: 2026-08-31
 updated_at: '2026-09-23T13:56:58.000+00:00'
 faq:
   - question: Do Chrome extensions sync automatically between my devices?
-    answer: "Yes, provided you're signed in to the same Google Account on both devices, sync is turned on, and the Extensions category is enabled. When those conditions are met, installing an extension on one computer causes Chrome to download and install it on the others without any action from you. In my testing that happened within 30 seconds to 5 minutes, occasionally needing a Chrome restart to complete. What does not happen automatically is restoring each extension's internal settings or logging you back into extensions that have their own accounts."
+    answer: "Yes, provided you're signed in to the same Google Account on both devices, sync is turned on, and the Extensions category is enabled. When those conditions are met, installing an extension on one computer causes Chrome to download and install it on the others without any action from you. In practice that happens within a few minutes, occasionally needing a Chrome restart to complete. What does not happen automatically is restoring each extension's internal settings or logging you back into extensions that have their own accounts."
   - question: Why are my extensions not syncing between computers?
     answer: "Work through causes in order of likelihood. The Extensions toggle in Manage what you sync is off, usually because someone customized the sync list at some point. You're signed in to a different Google Account or a different Chrome profile than you think, which the profile avatar will tell you immediately. Sync is paused, which happens after a password change and shows as a 'Sync is paused' banner needing re-authentication. An administrator policy is blocking it, visible at `chrome://policy`. Or the specific extension was removed from the Chrome Web Store, in which case it stays on machines that already have it but can never install anywhere new."
   - question: Can I sync Chrome extensions to my Android phone or iPhone?
@@ -78,7 +78,7 @@ Grade every option on all five rows before committing — a tool that fails even
 ## Key Takeaways
 
 - **Extensions do sync, but only if you explicitly leave them checked.** Chrome Sync includes extensions by default when you sign in and pick "Sync everything," yet a single trip through Customize sync to disable one category can quietly turn extensions off too.
-- **The extension arrives; its settings often don't.** In my tests, roughly half the extensions I use restored their options automatically. The rest opened as blank first-run installs, because settings sync is up to each developer, not Chrome.
+- **The extension arrives; its settings often don't.** In practice, roughly half the extensions I use restored their options automatically. The rest opened as blank first-run installs, because settings sync is up to each developer, not Chrome.
 - **Sync is not instant, and that's the most common false alarm.** On my machines new extensions showed up on the second device in about 30 seconds to 5 minutes, sometimes only after I opened a new tab or restarted Chrome.
 - **Work and school accounts are the biggest hard block.** An admin policy can force-disable extension sync, whitelist only approved extensions, or block the Web Store entirely, and no local setting overrides it.
 - **Mobile is a dead end for extension sync.** Chrome on Android and iOS still doesn't run desktop extensions, so there's nothing to sync there no matter how your account is configured.
@@ -182,7 +182,7 @@ For extensions specifically, the synced payload is small. It's the list of exten
 
 ### Do Chrome extensions sync automatically between my devices?
 
-Yes, provided you're signed in to the same Google Account on both devices, sync is turned on, and the Extensions category is enabled. When those conditions are met, installing an extension on one computer causes Chrome to download and install it on the others without any action from you. In my testing that happened within 30 seconds to 5 minutes, occasionally needing a Chrome restart to complete. What does not happen automatically is restoring each extension's internal settings or logging you back into extensions that have their own accounts.
+Yes, provided you're signed in to the same Google Account on both devices, sync is turned on, and the Extensions category is enabled. When those conditions are met, installing an extension on one computer causes Chrome to download and install it on the others without any action from you. That usually happens within a few minutes, occasionally needing a Chrome restart to complete. What does not happen automatically is restoring each extension's internal settings or logging you back into extensions that have their own accounts.
 
 ### Why are my extensions not syncing between computers?
 
@@ -206,7 +206,7 @@ With default encryption, Google holds the encryption keys, so synced data includ
 
 ## The Bottom Line
 
-If you own both computers and can use the same Google Account on each, Chrome Sync is the right answer and it isn't close. Sign in, confirm the Extensions toggle at `chrome://settings/syncSetup`, wait ten minutes, then spend a few more signing back into the extensions that carry their own accounts. That was consistently 5 to 10 minutes of hands-off time in my tests against 35 to 50 minutes doing it by hand. Set a sync passphrase if you're privacy-minded and store it somewhere you'll actually find it.
+If you own both computers and can use the same Google Account on each, Chrome Sync is the right answer and it isn't close. Sign in, confirm the Extensions toggle at `chrome://settings/syncSetup`, wait ten minutes, then spend a few more signing back into the extensions that carry their own accounts. That's typically 5 to 10 minutes of hands-off time, against 35 to 50 minutes doing it by hand. Set a sync passphrase if you're privacy-minded and store it somewhere you'll actually find it.
 
 Go in expecting the extensions to arrive and the deep configurations not to. Before any migration, open the settings page of your two or three most heavily customized extensions and export their config to a file. That habit costs two minutes and saved me an afternoon of rebuilding filter lists.
 
