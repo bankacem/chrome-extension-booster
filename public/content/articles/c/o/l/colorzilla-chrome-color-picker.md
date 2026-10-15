@@ -78,16 +78,16 @@ ColorZilla has the most features by a wide margin. The palette manager alone set
 
 ## Speed Test
 
-I measured time from clicking the extension icon to having a hex code copied to clipboard.
+The timing that matters is how long it takes to go from clicking the extension icon to having a hex code on the clipboard. ColorZilla's extra features cost it a beat here; the leaner pickers are quicker.
 
-| Extension | Time to Copy Hex |
-|-----------|-----------------|
-| ColorZilla | 1.8s |
-| Eye Dropper | 0.9s |
-| ColorPick Eyedropper | 1.2s |
-| Page Color Picker | 1.0s |
-| Instant Eyedropper | 0.7s |
-| Colorfish | 1.5s |
+| Extension | Copy Speed |
+|-----------|------------|
+| ColorZilla | Moderate — feature overhead |
+| Eye Dropper | Quick |
+| ColorPick Eyedropper | Moderate |
+| Page Color Picker | Quick |
+| Instant Eyedropper | Quickest |
+| Colorfish | Moderate |
 
 Eye Dropper and Instant Eyedropper are faster because they have simpler interfaces. ColorZilla's 1.8s is still fast enough for practical use, and the extra features justify the additional click.
 
