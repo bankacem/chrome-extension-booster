@@ -2,7 +2,7 @@
 seo_title: "Chrome Popup Blocker Master Guide"
 title: 'Chrome Popup Blocker Master Guide: Kill Intrusive Ads in 2026'
 description: >-
-  Eight popup blockers tested on 30 aggressive sites over two weeks. Which ones actually stop the nonsense — and which ones break the sites you use.
+  Eight popup blockers against aggressive sites. Which ones actually stop the nonsense — and which ones break the sites you use.
 slug: chrome-popup-blocker-master-guide
 excerpt: '8 popup blockers for Chrome compared: which blocks the most pop-ups, which lets the wrong ones through, and the companion extensions you need for a completely ad-free experience.'
 featured_image: /content/images/chrome-popup-blocker-master-guide/featured.webp
@@ -71,7 +71,7 @@ For dedicated popup blocking, Light Popup Blocker is the pick. It targets overla
 
 AdBlock Plus is the most well-known ad blocker with 10+ million users. It blocks traditional pop-ups and banner ads effectively. The downside is weight — it is noticeably heavier on memory than lightweight rivals, which matters on machines with many tabs open.
 
-AdBlock Plus also has an "acceptable ads" program that allows certain ads through by default. According to [AdBlock Plus's acceptable ads policy](https://help.eyeo.com/en/adblockplus/acceptable-ads), this feature whitelists ads that meet their "non-intrusive" criteria. The problem: the default setting allows these ads through, meaning users who install AdBlock Plus still see some ads unless they manually disable this feature. In my testing, AdBlock Plus allowed newsletter pop-ups through on sites participating in the acceptable ads program.
+AdBlock Plus also has an "acceptable ads" program that allows certain ads through by default. According to [AdBlock Plus's acceptable ads policy](https://help.eyeo.com/en/adblockplus/acceptable-ads), this feature whitelists ads that meet their "non-intrusive" criteria. The problem: the default setting allows these ads through, meaning users who install AdBlock Plus still see some ads unless they manually disable this feature. AdBlock Plus lets newsletter pop-ups through on sites participating in the acceptable ads program.
 
 Aggressive blocking can also break legitimate page elements — CNN's video player, Amazon's product carousel, and comment sections on some WordPress blogs are common casualties.
 

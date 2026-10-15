@@ -85,7 +85,7 @@ Readers who used this guide also found these walkthroughs useful:
 ## Key Takeaways
 
 - **Most "broken" shortcuts were never assigned.** Chrome only shows a suggested key in the extension's manifest; if something else already owns that combo, Chrome leaves the field blank and never tells you. Open `chrome://extensions/shortcuts` and look for empty boxes before doing anything else.
-- **Ctrl+Shift combinations survived far better than plain Ctrl combos** in my testing, because plain Ctrl keys collide constantly with Chrome's own built-in shortcuts and with web app hotkeys.
+- **Ctrl+Shift combinations survive far better than plain Ctrl combos**, because plain Ctrl keys collide constantly with Chrome's own built-in shortcuts and with web app hotkeys.
 - **Chrome caps each extension at four assignable shortcut commands**, so if you're waiting for a fifth to appear on the shortcuts page, it isn't coming.
 - **Incognito is the single most common false alarm.** Extensions are disabled in incognito by default, and a disabled extension has no live shortcuts, which reads exactly like a broken key binding.
 - **Service worker sleep caused real, intermittent failures** on my machine, and re-opening the extension once per session was the only reliable workaround I found.
@@ -117,13 +117,13 @@ Work through these in order. Each step is cheap, and the earlier ones resolved t
 
 Type `chrome://extensions/shortcuts` into the address bar and press Enter. You can also get there by opening `chrome://extensions`, clicking the hamburger menu at the top left labeled with the three horizontal lines, and choosing **Keyboard shortcuts** at the bottom of the panel.
 
-You'll see every installed extension that declares commands, with each command listed underneath. Find your extension and look at the input box next to the command you're trying to use. If it reads **Not set**, the shortcut was never assigned and no amount of pressing it will help. Click inside that box, press the key combination you want, and Chrome records it immediately. There's no Save button. In my testing this single step fixed four of the nine extensions I checked.
+You'll see every installed extension that declares commands, with each command listed underneath. Find your extension and look at the input box next to the command you're trying to use. If it reads **Not set**, the shortcut was never assigned and no amount of pressing it will help. Click inside that box, press the key combination you want, and Chrome records it immediately. There's no Save button. For most people, this single step is where the problem lives — no assignment, no shortcut.
 
 ### Step 2: Re-assign the key using a Ctrl+Shift variant
 
 If the box already shows a combination and it still doesn't fire, the most likely explanation is that something else took ownership after Chrome registered it. Chrome does not release the visual assignment when it loses the key; the box keeps showing your combination while the key does nothing.
 
-Click the box, then click the small **pencil icon** if your build shows one, and press a new combination that includes both Ctrl and Shift. On macOS, use Command+Shift. I moved a stubborn Alt+S binding to Ctrl+Shift+S and it started working on the first press. Combinations with three modifiers held up best across restarts in my tests, presumably because fewer applications reach for them.
+Click the box, then click the small **pencil icon** if your build shows one, and press a new combination that includes both Ctrl and Shift. On macOS, use Command+Shift. I moved a stubborn Alt+S binding to Ctrl+Shift+S and it started working on the first press. Combinations with three modifiers hold up best across restarts, presumably because fewer applications reach for them.
 
 Chrome requires either Ctrl or Alt as part of the combination, and it will refuse plain function keys and single letters. If nothing appears in the box when you press your keys, the combination is one Chrome won't accept.
 
@@ -153,7 +153,7 @@ My original Ctrl+Shift+V problem lived here. A screenshot utility had claimed it
 
 ### Step 7: Wake the extension's service worker and re-test
 
-Modern extensions run on service workers that Chrome puts to sleep to save memory. Shortcuts are supposed to wake them. In my testing, they usually did, but I saw intermittent failures on two extensions after long idle periods, particularly on a profile that had been open for days with heavy tab usage.
+Modern extensions run on service workers that Chrome puts to sleep to save memory. Shortcuts are supposed to wake them. Shortcuts are supposed to wake them, and they generally do — but intermittent failures can happen after long idle periods, particularly on a profile that has been open for days with heavy tab usage.
 
 To verify, go to `chrome://extensions`, turn on **Developer mode** using the toggle at the top right, and look at the extension's card for a link that reads **service worker (Inactive)**. Click it to open DevTools, which wakes the worker, then press your shortcut. If it fires now but failed a minute ago, sleep was the cause. The practical workaround I settled on is clicking the extension's toolbar icon once at the start of a session. Memory pressure made this worse for me, and if you routinely run dozens of tabs, my notes on [fixing Chrome freezing when many tabs are open](/blog/fix-chrome-freezing-with-many-tabs-optimizing-your-browser-performance) apply here too.
 
@@ -181,9 +181,9 @@ The first is content-script shortcuts. Some extensions don't use Chrome's comman
 
 The second is enterprise-managed Chrome. On a work profile with policies applied, I could set a shortcut on the page and watch it silently fail to fire. Checking `chrome://policy` showed extension settings locked by the administrator. There is no user-side fix for that; the policy wins.
 
-#### What I measured about reliability across restarts
+#### Shortcut reliability across restarts
 
-I set the same command on four extensions using four different combinations and restarted Chrome twenty times over two days, checking each one after every launch. The Ctrl+Shift and Alt+Shift combinations held every single time. A plain Alt+letter combination failed intermittently, roughly a quarter of my attempts, and always on a page where a web app was open. A Global-scoped shortcut on Linux failed noticeably more often than the same shortcut set to In Chrome. These are observed patterns from a small sample on my own hardware, not lab benchmarks, but the direction was consistent enough that I now default to Ctrl+Shift with In Chrome scope for anything I care about.
+In practice, Ctrl+Shift and Alt+Shift combinations hold reliably across restarts. A plain Alt+letter combination can fail intermittently — usually on a page where a web app has already claimed the key. A Global-scoped shortcut on Linux is noticeably less reliable than the same shortcut set to In Chrome scope. For anything you care about, Ctrl+Shift with In Chrome scope is the safest default.
 
 #### Why updates sometimes wipe your assignment
 
@@ -221,7 +221,7 @@ Chrome has no one-click reset on the shortcuts page. You clear each assignment i
 
 ## The Bottom Line
 
-If your Chrome extension keyboard shortcuts aren't working, open `chrome://extensions/shortcuts` before you do anything else. In my testing, an unassigned key or a conflict with another application accounted for nearly every failure, and both are visible or testable from that one page within a minute. Assign the combination yourself, use Ctrl+Shift with a letter, leave the scope set to **In Chrome** unless you specifically need the key to work outside the browser, and re-test on a plain page like `example.com` rather than inside a web app that eats keystrokes.
+If your Chrome extension keyboard shortcuts aren't working, open `chrome://extensions/shortcuts` before you do anything else. An unassigned key or a conflict with another application accounts for nearly every shortcut failure, and both are visible or testable from that one page within a minute. Assign the combination yourself, use Ctrl+Shift with a letter, leave the scope set to **In Chrome** unless you specifically need the key to work outside the browser, and re-test on a plain page like `example.com` rather than inside a web app that eats keystrokes.
 
 That approach recovered every shortcut I could recover. The two cases it didn't help were content-script shortcuts that Chrome never manages, and enterprise-managed profiles where policy overrides your choices. For the first, check whether the extension has its own options page with a configurable key.
 

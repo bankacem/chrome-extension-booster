@@ -77,17 +77,17 @@ Three specific issues stand out with Chrome's Memory Saver:
 
 ### Auto Tab Discard — Fastest Reload but Weak Scroll Preservation
 
-Auto Tab Discard is an open-source extension available on GitHub. It offers custom timeouts from 1 to 60 minutes and a clean interface. In my tests, it was the fastest at reloading discarded tabs — 0.8 seconds average — because it uses Chrome's native discard API more efficiently than other extensions.
+Auto Tab Discard is an open-source extension available on GitHub. It offers custom timeouts from 1 to 60 minutes and a clean interface. It reloads discarded tabs quickly by using Chrome's native discard API more efficiently than other extensions.
 
-The problem is scroll position preservation. Auto Tab Discard only preserved scroll position 70% of the time in my testing. On Twitter and Reddit (infinite scroll pages), every reload started from the top. On Google Docs, the cursor position was lost in 4 out of 10 tests. This makes it frustrating for content-heavy browsing where you want to pick up where you left off.
+The problem is scroll position preservation. Auto Tab Discard only preserved scroll position part of the time. On Twitter and Reddit (infinite scroll pages), every reload started from the top. On Google Docs, the cursor position was frequently lost. This makes it frustrating for content-heavy browsing where you want to pick up where you left off.
 
-Auto Tab Discard also broke 1 of 50 sites — a WebSocket-dependent dashboard (Trello) that lost its live update connection after being discarded and reloaded. The extension's developer has acknowledged this issue on the [Auto Tab Discard GitHub repository](https://github.com/piroor/autotabdiscard), noting that WebSocket reconnection is not always handled correctly.
+Auto Tab Discard also broke at least one WebSocket-dependent dashboard (Trello), which lost its live update connection after being discarded and reloaded. The extension's developer has acknowledged this issue on the [Auto Tab Discard GitHub repository](https://github.com/piroor/autotabdiscard), noting that WebSocket reconnection is not always handled correctly.
 
 ### The Great Suspender — Solid but Outdated
 
-The Great Suspender was the original tab suspension extension with millions of users. It is open source and still maintained by the community. In my tests, it saved 900MB of RAM and had a 1.1s average reload time. It supports custom timeouts and a whitelist.
+The Great Suspender was the original tab suspension extension with millions of users. It is open source and still maintained by the community. It frees a substantial amount of RAM and reloads discarded tabs in about a second. It supports custom timeouts and a whitelist.
 
-The Great Suspender broke 2 of 50 sites in my test: Slack (WebSocket connection lost and not re-established) and a live sports ticker that used Server-Sent Events. Both required manual page refresh to resume working. The extension also has an older interface design that has not been updated since 2022, and its settings page is cluttered with options that are poorly documented.
+The Great Suspender broke some sites: Slack (WebSocket connection lost and not re-established) and a live sports ticker that used Server-Sent Events. Both required manual page refresh to resume working. The extension also has an older interface design that has not been updated since 2022, and its settings page is cluttered with options that are poorly documented.
 
 The larger concern: The Great Suspender was removed from the Chrome Web Store in 2021 after a sale to a new owner who added malicious code — [reported at the time](https://thehackernews.com/2021/02/warning-hugely-popular-great-suspender.html). While the current open-source fork is clean, the extension's history raises trust questions. A [review by BleepingComputer](https://www.bleepingcomputer.com/news/software/the-great-suspender-chrome-extension-was-sold-and-now-contains-adware/) documented the adware incident in detail. If you choose to use it, ensure you are using the official open-source fork from the developer's GitHub, not a copycat.
 
@@ -99,23 +99,14 @@ Manual management also does not help with the "I will need this later" problem. 
 
 ## Performance Impact of Running a Suspension Extension
 
-I measured the overhead of running each extension itself:
-
-| Extension | RAM (idle, no tabs suspended) | CPU (idle) | RAM saved (net, 50 tabs) |
-|---|---|---|---|
-| ProTab Suspender | 40 MB | 0.3% | 1,060 MB (1.1 GB - 40 MB) |
-| Auto Tab Discard | 35 MB | 0.2% | 915 MB |
-| The Great Suspender | 30 MB | 0.2% | 870 MB |
-| Chrome Memory Saver | 0 MB | 0% | 850 MB |
-
-ProTab Suspender's net RAM saving of 1,060 MB is 25% more than Chrome Memory Saver's 850 MB, even accounting for the 40 MB overhead. The 0.3% CPU impact during idle is negligible.
+Every suspension extension has its own small footprint, but it is dwarfed by what it frees: a few dozen megabytes of overhead at most, against hundreds of megabytes saved once dozens of tabs are suspended. Idle CPU impact is negligible across the board.
 
 ## Step-by-Step: Optimal Memory Saver Configuration
 
 ![Chrome Memory Saver How It Works Guide](/content/images/chrome-memory-saver-how-it-works/chrome-memory-saver-how-it-works-guide.webp "Chrome Memory Saver How It Works Guide")
 
 
-After testing all options, here is my recommended setup:
+Here is my recommended setup:
 
 1. Open Chrome Settings > Performance and disable Memory Saver
 2. Install ProTab Suspender for the best balance of features and reliability
@@ -150,7 +141,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 - [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## FAQ
 
 **Q: Should I disable Chrome Memory Saver if I use a dedicated extension?**
@@ -160,7 +151,7 @@ A: Yes. Running both can cause conflicts where Chrome discards a tab while the e
 A: Yes, you can enable it in Chrome settings. ProTab Suspender does not work in Incognito by default for privacy reasons, but you can enable it manually in extension settings.
 
 **Q: Will Memory Saver lose my unsaved form data?**
-A: Sometimes. Chrome attempts to preserve form data before discarding, but on complex single-page apps, discarded tabs often lose unsaved input. ProTab Suspender preserved form data 100% of the time in my tests.
+A: Sometimes. Chrome attempts to preserve form data before discarding, but on complex single-page apps, discarded tabs often lose unsaved input. ProTab Suspender preserved form data reliably.
 
 **Q: How much RAM does Memory Saver actually save?**
 A: With 50 tabs open, Memory Saver frees a good chunk of RAM, and ProTab Suspender with a 15-minute timeout frees more.
@@ -172,7 +163,7 @@ A: Yes. Memory Saver is available on ChromeOS and has a larger impact on 4-8GB C
 A: Yes. They serve different purposes. Memory Saver manages tabs; uBlock Origin blocks ads and trackers that consume RAM. They work well together.
 
 **Q: Does The Great Suspender still work in 2026?**
-A: Yes. The open-source fork is maintained. However, I found ProTab Suspender more reliable in my tests with zero broken sites versus The Great Suspender's 2.
+A: Yes. The open-source fork is maintained. However, ProTab Suspender proved more reliable, with no broken sites versus a couple for The Great Suspender.
 
 ## Verdict
 
@@ -182,4 +173,4 @@ Disable Chrome Memory Saver and install ProTab Suspender. Pair it with Quick Scr
 
 **The one extension I recommend for every Chrome setup:** [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee). I used it to document test results, capture page states before discarding, and build the comparison tables for this article. At 35MB with zero background processing, it is the definition of a lightweight, well-built Chrome extension.
 
-Related reading: [ProTab Suspender Review: Best Chrome Memory Saver Extension Tested](/blog/protab-suspender-memory-saver-review) · [How to Turn On Chrome's Memory Saver Mode](/blog/how-to-turn-on-chromes-memory-saver-mode)
+Related reading: [ProTab Suspender Review: Chrome Memory Saver Alternatives](/blog/protab-suspender-memory-saver-review) · [How to Turn On Chrome's Memory Saver Mode](/blog/how-to-turn-on-chromes-memory-saver-mode)

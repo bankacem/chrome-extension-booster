@@ -91,7 +91,7 @@ Lemur Browser provides full Chrome Web Store access but implements it poorly. Se
 
 The extension popup experience is also worse on Lemur than Kiwi. When you tap an extension icon, it opens in a full-screen tab rather than a popup overlay. A Quick Screenshot Lite capture takes over the entire screen, forcing you to navigate away from the page you wanted to capture. The popup should overlay the page — this is an implementation bug.
 
-Lemur's last update was 4 months before my testing. The developer has no public presence or changelog. For a browser that requires regular updates to maintain Chromium compatibility and security, the long update gap is concerning.
+Lemur's last update predated this guide by four months. The developer has no public presence or changelog. For a browser that requires regular updates to maintain Chromium compatibility and security, the long update gap is concerning.
 
 ## Competitor Weaknesses
 
@@ -165,7 +165,7 @@ Each one does a single job well, and together they remove the small frictions th
 
 ### Q: Why does Chrome for Android not support extensions?
 
-Google has never officially explained this decision. The most likely reason is performance optimization — mobile processors and RAM are more limited than desktop, and extensions could drain battery or slow down page loads. However, Kiwi Browser proves this concern is overstated: 5 extensions added only 80MB of RAM and minimal CPU overhead in my testing. The deeper reason may be Google's business strategy: keeping Chrome for Android simple and controlled, with features like ad blocking, password management, and content filtering handled through Google's own services rather than third-party extensions.
+Google has never officially explained this decision. The most likely reason is performance optimization — mobile processors and RAM are more limited than desktop, and extensions could drain battery or slow down page loads. However, Kiwi Browser proves this concern is overstated: 5 extensions added only 80MB of RAM and minimal CPU overhead. The deeper reason may be Google's business strategy: keeping Chrome for Android simple and controlled, with features like ad blocking, password management, and content filtering handled through Google's own services rather than third-party extensions.
 
 ### Q: Can I use the same extensions on Kiwi and desktop Chrome?
 
@@ -173,7 +173,7 @@ Yes. Extensions installed on Kiwi are the same Chrome Web Store extensions you u
 
 ### Q: Do extension-supporting browsers drain more battery?
 
-I measured approximately 10% additional battery drain with 5 extensions active on Kiwi Browser compared to Chrome for Android. The impact varies by extension — screenshot tools and password managers use near-zero background power, while ad blockers and tab suspenders use marginal CPU for filtering. Dark mode extensions can actually save battery on OLED screens by reducing the number of illuminated pixels.
+Running a handful of extensions in Kiwi Browser adds some extra battery drain compared to Chrome for Android. The impact varies by extension — screenshot tools and password managers use near-zero background power, while ad blockers and tab suspenders use marginal CPU for filtering. Dark mode extensions can actually save battery on OLED screens by reducing the number of illuminated pixels.
 
 ### Q: Is it safe to install extensions from the Chrome Web Store on mobile?
 

@@ -62,7 +62,7 @@ Chrometana redirected all 10 test searches successfully — 10 Cortana searches 
 
 Bing2Google is a minimalist extension that redirects Bing searches to Google (or any search engine you choose). At 15MB RAM, it is the lightest of the four. The redirect is near-instant — the fastest of all four.
 
-The weakness is Cortana support. Bing2Google only intercepts searches made directly on the Bing website. When Cortana opens Edge from the Windows taskbar, Bing2Google does not always catch the redirect. In my testing, 3 out of 10 Cortana searches bypassed the extension and showed Bing results. Chrometana caught all 10.
+The weakness is Cortana support. Bing2Google only intercepts searches made directly on the Bing website. When Cortana opens Edge from the Windows taskbar, Bing2Google does not always catch the redirect. In practice, some Cortana-launched searches bypass the extension and show Bing results — that path is the weak spot.
 
 Bing2Google has not been updated since 2022. The Chrome Web Store page shows the last update was over three years ago, which raises concerns about long-term compatibility with Chrome's Manifest V3 changes.
 
@@ -113,14 +113,14 @@ Chrometana is the only open-source option. The source code is available on GitHu
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## FAQ
 
 **Q: What is Chrometana?**

@@ -73,7 +73,7 @@ That is it. Opera handles the installation seamlessly. Extensions installed from
 ![Chrome Extensions Opera Guide Overview](/content/images/chrome-extensions-opera-guide/chrome-extensions-opera-guide-overview.webp "Chrome Extensions Opera Guide Overview")
 
 
-During my testing, I found several extensions that do not work correctly on Opera:
+Several extensions do not work correctly on Opera:
 
 **Extensions requiring OAuth login** — Honey partially works. The coupon finder runs but the "Honey Gold" rewards program fails to authenticate because Opera does not support `chrome.identity.launchWebAuthFlow`. Similarly, some Google-integrated extensions fail to log in.
 
@@ -95,7 +95,7 @@ Vivaldi's built-in features overlap with many extensions. If you want tab stacki
 
 ### Edge — Best Compatibility, Privacy Concerns
 
-Microsoft Edge has the best Chrome extension compatibility of any non-Chrome browser. Microsoft made a strategic decision to maintain full API parity with Chrome, and it shows. 18 of 20 extensions worked perfectly in my tests.
+Microsoft Edge has the best Chrome extension compatibility of any non-Chrome browser. Microsoft made a strategic decision to maintain full API parity with Chrome, and it shows. Nearly every extension worked perfectly.
 
 The concern is privacy. Edge sends significant telemetry to Microsoft — browsing history, extension usage, crash reports, and device information. These settings can be dialed down in Edge's privacy settings, but Microsoft is more transparent about collecting data than Opera or Vivaldi.
 

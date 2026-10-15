@@ -140,14 +140,14 @@ Removing 7 unused extensions saved 26% of memory — significant but not enough 
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 - [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## Frequently Asked Questions
 
 ### Q: How much RAM should Chrome use normally?
@@ -164,7 +164,7 @@ Chrome uses a multi-process architecture where each tab, extension, and plugin r
 
 ### Q: Does incognito mode use less memory?
 
-Incognito mode uses slightly less memory because extensions are disabled by default and no browsing history is stored. In my testing, an incognito window with 5 tabs used 1.2GB versus 1.5GB for a normal window with the same 5 tabs — a 20% reduction. However, incognito mode disables useful extensions like ad blockers and password managers, which may increase memory from other sources (more ads loaded, manual password entry).
+Incognito mode uses slightly less memory because extensions are disabled by default and no browsing history is stored. An incognito window with the same tabs open typically uses noticeably less memory than a normal window — extensions are off by default and no browsing history is stored. However, incognito mode disables useful extensions like ad blockers and password managers, which may increase memory from other sources (more ads loaded, manual password entry).
 
 ### Q: Can too many bookmarks slow down Chrome?
 

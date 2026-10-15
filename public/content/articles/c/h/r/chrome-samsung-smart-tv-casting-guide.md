@@ -39,7 +39,7 @@ faq:
   - question: Does any of this work from an iPhone?
     answer: "Yes, and on a 2018-or-newer Samsung set it is the easiest method here. Enable AirPlay under Settings, General, External Device Manager, Apple AirPlay Settings, then open Control Centre on the iPhone, tap Screen Mirroring, and pick the TV. You will type a four-digit code once. Chrome for iOS can be mirrored this way, though individual video apps often offer a direct AirPlay icon inside their player, which gives better quality than mirroring the whole screen."
   - question: Can I cast in 4K from a Chrome tab?
-    answer: "Not realistically. Every tab cast I measured across three TVs topped out at 1080p, and Chrome frequently negotiated down to 720p when bandwidth dipped. Mirroring involves live encoding on your laptop and decoding on the receiver, so the pipeline is tuned for reliability rather than resolution. If you need genuine 4K at 60 Hz, use an HDMI cable or play the content in the TV's own app, both of which handled it without complaint on my hardware."
+    answer: "Not realistically. Tab casting tops out at 1080p, and Chrome frequently negotiates down to 720p when bandwidth dips. Mirroring involves live encoding on your laptop and decoding on the receiver, so the pipeline is tuned for reliability rather than resolution. If you need genuine 4K at 60 Hz, use an HDMI cable or play the content in the TV's own app, both of which handled it without complaint on my hardware."
   - question: Is a cable really better than wireless in 2026?
     answer: "For quality, yes, and by a clear margin. HDMI gave me full 4K60 with no perceptible delay, correct colour, no compression artifacts and no DRM restrictions, which no wireless method here matched. The cost is mobility and heat: you are physically tethered, and driving a 4K panel pushed my laptop fans up and cut battery life significantly. I use wireless for casual browsing and YouTube, and I reach for the cable whenever the result matters."
 featured_image: /content/images/chrome-samsung-smart-tv-casting-guide/featured.webp
@@ -159,7 +159,7 @@ On a Galaxy S-series phone I pulled down the Quick Settings shade twice, tapped 
 
 ### AirPlay 2 from iPhone or Mac
 
-On the 2022 and 2024 sets I enabled Settings, then General, then External Device Manager, then Apple AirPlay Settings, then set AirPlay to On. From the Mac I clicked the Control Center icon in the menu bar, chose Screen Mirroring, and picked the TV. A four-digit code appeared on the panel, which I typed once and never saw again. Safari and Chrome tabs both mirrored well. This was the most stable wireless picture I measured on hardware I did not add, sitting around 0.3 to 0.6 seconds behind my laptop on my machine.
+On the 2022 and 2024 sets I enabled Settings, then General, then External Device Manager, then Apple AirPlay Settings, then set AirPlay to On. From the Mac I clicked the Control Center icon in the menu bar, chose Screen Mirroring, and picked the TV. A four-digit code appeared on the panel, which I typed once and never saw again. Safari and Chrome tabs both mirrored well. This was the most stable wireless picture of the options here, running a fraction of a second behind the laptop.
 
 #### What AirPlay does better than tab mirroring
 
@@ -198,7 +198,7 @@ Casting a Netflix tab produced audio with a black rectangle on every TV I tried.
 
 ### Audio dropping out or arriving late
 
-Twice I had a session where video mirrored but sound stayed on the laptop. Both times the fix was stopping the cast, closing the tab, and starting fresh with Cast tab selected rather than Cast screen, since desktop mirroring on Windows treats system audio separately and can silently drop it. If audio lags video by a noticeable margin, check whether a Bluetooth soundbar is also connected to the TV, because chaining two wireless hops stacked the delay well past anything watchable in my testing.
+Twice I had a session where video mirrored but sound stayed on the laptop. Both times the fix was stopping the cast, closing the tab, and starting fresh with Cast tab selected rather than Cast screen, since desktop mirroring on Windows treats system audio separately and can silently drop it. If audio lags video by a noticeable margin, check whether a Bluetooth soundbar is also connected to the TV — chaining two wireless hops stacks the delay well past anything watchable.
 
 ### Stutter that is really a performance problem
 
@@ -232,7 +232,7 @@ Yes, and on a 2018-or-newer Samsung set it is the easiest method here. Enable Ai
 
 ### Can I cast in 4K from a Chrome tab?
 
-Not realistically. Every tab cast I measured across three TVs topped out at 1080p, and Chrome frequently negotiated down to 720p when bandwidth dipped. Mirroring involves live encoding on your laptop and decoding on the receiver, so the pipeline is tuned for reliability rather than resolution. If you need genuine 4K at 60 Hz, use an HDMI cable or play the content in the TV's own app, both of which handled it without complaint on my hardware.
+Not realistically. Tab casting tops out at 1080p, and Chrome frequently negotiates down to 720p when bandwidth dips. Mirroring involves live encoding on your laptop and decoding on the receiver, so the pipeline is tuned for reliability rather than resolution. If you need genuine 4K at 60 Hz, use an HDMI cable or play the content in the TV's own app, both of which handled it without complaint on my hardware.
 
 ### Is a cable really better than wireless in 2026?
 
