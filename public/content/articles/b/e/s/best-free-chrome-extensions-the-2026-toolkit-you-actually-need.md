@@ -62,7 +62,7 @@ On high-traffic news sites it blocks the large majority of overlay pop-ups; what
 
 Let's be clear: this is not "AdBlock." It is better. uBlock Origin is the gold standard for blocking ads, trackers, and coin miners. It is lightweight on your CPU (unlike others) and open-source. It is the first thing I install on any new computer. Period.
 
-The key difference from AdBlock Plus: uBlock Origin has no "Acceptable Ads" program. It blocks everything by default. You can whitelist specific sites, but nothing gets through unless you allow it. In my testing, uBlock Origin blocked 95% of banner ads and 100% of YouTube pre-roll ads.
+The key difference from AdBlock Plus: uBlock Origin has no "Acceptable Ads" program. It blocks everything by default. You can whitelist specific sites, but nothing gets through unless you allow it. It blocks the vast majority of banner ads and YouTube pre-roll ads.
 
 ### SecuraKey Pro
 
@@ -123,14 +123,14 @@ It preserves images, formatting, and even some interactive elements. I saved 40 
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## FAQ
 
 **Q: How many extensions should I install at once?**

@@ -37,7 +37,7 @@ faq:
   - question: Can I export my notes as markdown?
     answer: "Two of the six produced clean markdown that opened correctly elsewhere, and the rest did not. Markdown matters because it is plain text with a small, stable set of conventions for headings, lists, and links, so it stays readable in any editor years later. If portability is a priority, choose a tool that names markdown explicitly in its export options rather than one that offers 'export to HTML' or 'download backup.' I test this on day one with a throwaway note now, because discovering an export problem after six months of notes is a genuinely bad afternoon."
   - question: Does offline note taking actually work?
-    answer: "Only reliably with local-storage extensions in my testing. The sticky-note tools behaved identically with the network disconnected, since they never call out. Cloud tools mostly let me type while offline, but two of them lost the note when I closed the tab before reconnecting, and one showed a saved state that had not actually persisted. If you work on flights or spotty connections, keep a local-only scratchpad for capture and move things into your main system later."
+    answer: "Only reliably with local-storage extensions. The sticky-note tools behaved identically with the network disconnected, since they never call out. Cloud tools mostly let me type while offline, but two of them lost the note when I closed the tab before reconnecting, and one showed a saved state that had not actually persisted. If you work on flights or spotty connections, keep a local-only scratchpad for capture and move things into your main system later."
   - question: Are note-taking extensions private?
     answer: "They are as private as the permissions you grant and the developer you trust, which is a real answer rather than a reassuring one. An extension that can clip a page can read that page's content, including content visible only to you while logged in. I reduce that exposure by setting **Site access** to **On click** at `chrome://extensions`, by preferring extensions from developers with a real product and a published policy, and by never clipping from banking or health portals. Read the privacy practices section on the store listing before installing; it is short and it does tell you something."
   - question: Google Keep or a dedicated note extension?
@@ -50,18 +50,18 @@ I have been running the same research workflow for years: twenty tabs open, a ha
 
 The reason I did this properly instead of skimming store listings is that most roundups of chrome extensions for note taking never mention the thing that actually decides whether you keep an extension installed. It is not the feature list. It is how many seconds pass between "I want to save this" and "it is saved," and whether that note is still findable a week later. A clipper with beautiful formatting that takes twelve seconds per capture loses to an ugly sidebar that takes four.
 
-What follows is what I installed, what I measured on my machine, where each tool broke, and which one I still have pinned to my toolbar now that the testing is over. I am naming limitations honestly, including two extensions I would not recommend to most people despite their popularity.
+What follows is what each tool does well, where each one broke, and which one is still pinned to the toolbar. I am naming limitations honestly, including two extensions I would not recommend to most people despite their popularity.
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## How to Compare Your Options {#how-to-compare}
 
 Instead of trusting star ratings alone, run each candidate through the checklist below — the tool that survives it is the right one:
@@ -86,7 +86,7 @@ Keep going with these hand-picked guides from the same series of topics:
 
 - **Capture speed beats feature depth.** Anything over roughly eight seconds per note got skipped when I was busy, no matter how good the output looked.
 - **Google Keep's extension is the best free starting point** for most people, mainly because sync to phone and search already work with zero configuration.
-- **Notion Web Clipper is the strongest option if you already live in Notion**, but it is a page-saving tool more than a note-taking tool, and it was consistently the slowest capture in my testing.
+- **Notion Web Clipper is the strongest option if you already live in Notion**, but it is a page-saving tool more than a note-taking tool, and its capture was consistently the slowest of the six.
 - **Markdown export is the single biggest dividing line.** Only two of the six gave me clean portable markdown; the rest lock notes into their own format or export messy HTML.
 - **Offline behavior is worse than advertised across the board.** Sticky-note style extensions that store locally were the only ones that worked reliably with the network off.
 - **Chrome's built-in Reading List plus Keep covers a surprising amount of ground** and costs nothing in memory or permissions, which matters more than I expected once I checked resource usage.
@@ -226,7 +226,7 @@ Two of the six produced clean markdown that opened correctly elsewhere, and the 
 
 ### Does offline note taking actually work?
 
-Only reliably with local-storage extensions in my testing. The sticky-note tools behaved identically with the network disconnected, since they never call out. Cloud tools mostly let me type while offline, but two of them lost the note when I closed the tab before reconnecting, and one showed a saved state that had not actually persisted. If you work on flights or spotty connections, keep a local-only scratchpad for capture and move things into your main system later.
+Only reliably with local-storage extensions. The sticky-note tools behaved identically with the network disconnected, since they never call out. Cloud tools mostly let me type while offline, but two of them lost the note when I closed the tab before reconnecting, and one showed a saved state that had not actually persisted. If you work on flights or spotty connections, keep a local-only scratchpad for capture and move things into your main system later.
 
 ### Are note-taking extensions private?
 

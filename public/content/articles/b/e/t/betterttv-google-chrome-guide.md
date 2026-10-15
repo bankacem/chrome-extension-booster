@@ -36,7 +36,7 @@ faq:
   - question: Can using BetterTTV get my Twitch account banned?
     answer: "No. BetterTTV has been in wide use for over a decade, it does not automate chat behavior, and it does not circumvent Twitch's rules or rate limits. It is a client-side display layer, and Twitch has never treated it as a violation. Where people do get into trouble is with the automation features they configure themselves, such as auto-claiming channel points on channels they are not actually watching, which sits in a grey area that has not been enforced against as far as I can tell but is worth understanding. The extension itself does not put your account at risk."
   - question: How much of BetterTTV actually works on YouTube?
-    answer: "Live chat gets emote rendering, the BTTV emote picker in the chat input, timestamps, and keyword highlighting. Channel-specific emote sets, player tweaks, and directory cleanups do not apply, and regular video comments are completely untouched. In my testing the popped-out live chat window was the least reliable surface, occasionally needing its own refresh before emotes appeared. Think of the YouTube integration as a partial port that covers the most-requested feature and stops there."
+    answer: "Live chat gets emote rendering, the BTTV emote picker in the chat input, timestamps, and keyword highlighting. Channel-specific emote sets, player tweaks, and directory cleanups do not apply, and regular video comments are completely untouched. The popped-out live chat window is the least reliable surface, occasionally needing its own refresh before emotes appear. Think of the YouTube integration as a partial port that covers the most-requested feature and stops there."
   - question: Does BetterTTV slow Chrome down noticeably?
     answer: "On my machine, a Twitch tab with BetterTTV active ran roughly 30 to 50 MB above the same tab without it, landing near 180 MB after four hours. CPU impact was more variable and tied almost entirely to animated emotes in fast-moving chat. Turning animated emotes off removed most of the measurable cost while keeping emote names readable as static images. If you are on older hardware or running on battery, that one toggle is the highest-leverage change available."
   - question: Is there a BetterTTV option on mobile Chrome?
@@ -124,7 +124,7 @@ Click the puzzle-piece **Extensions** icon to the right of the address bar, find
 
 ### Step 4: Confirm it loaded on a live channel
 
-Open any live Twitch channel. Look at the chat input row: you should see a small BetterTTV emote-menu icon (a smiley) next to Twitch's own emote picker. If chat loads but the icon never appears, hard-refresh with `Ctrl+Shift+R` (`Cmd+Shift+R` on macOS). In my testing the icon showed up within two seconds of chat connecting about 90 percent of the time.
+Open any live Twitch channel. Look at the chat input row: you should see a small BetterTTV emote-menu icon (a smiley) next to Twitch's own emote picker. If chat loads but the icon never appears, hard-refresh with `Ctrl+Shift+R` (`Cmd+Shift+R` on macOS). The icon usually shows up within a couple of seconds of chat connecting.
 
 ### Step 5: Open the BetterTTV settings panel
 
@@ -158,17 +158,17 @@ This is the part of the "betterttv google chrome" question that gets answered ba
 
 What works: BetterTTV injects into YouTube live chat and renders BetterTTV global emotes there. The chat input gets a BTTV emote menu. Some of the chat-side quality-of-life features carry over, including timestamps and keyword highlighting. If you are used to typing `:tf:` or a BTTV global emote name reflexively, it resolves on YouTube live chat the way you would expect.
 
-What does not work: channel-specific emote sets, which are inherently tied to Twitch channels, have no YouTube equivalent in my testing. The player and directory tweaks do not apply. Regular YouTube video comments are untouched. Super Chat and membership-specific chat elements are left alone, which is probably for the best. Popped-out chat windows behaved inconsistently for me; emotes rendered in the embedded chat but not always in the standalone popout until I refreshed it.
+What does not work: channel-specific emote sets, which are inherently tied to Twitch channels, have no YouTube equivalent. The player and directory tweaks do not apply. Regular YouTube video comments are untouched. Super Chat and membership-specific chat elements are left alone, which is probably for the best. Popped-out chat windows behaved inconsistently for me; emotes rendered in the embedded chat but not always in the standalone popout until I refreshed it.
 
 The honest summary is that YouTube support is a courtesy feature, not parity. If YouTube is your primary platform and you want a genuinely deep toolset there, BetterTTV is not the extension to build around. For creator-side analytics and workflow tooling on that platform I would point you toward something purpose-built instead, along the lines of [getting more out of YouTube with TubeBuddy](/blog/unlocking-the-full-potential-of-youtube-with-tubebuddy-opera), which addresses an entirely different problem than chat emotes.
 
 ## Performance, Privacy, and the Cost of Running It
 
-I measured with Chrome's built-in Task Manager, which you open with `Shift+Esc` on Windows and Linux or from the **Window** menu on macOS. My method was simple and repeatable rather than rigorous: same channel, same 1080p60 quality, four-hour session, reading the extension's own row and the tab's row separately.
+You can check this yourself in Chrome's built-in Task Manager — open it with `Shift+Esc` on Windows and Linux or from the **Window** menu on macOS — by comparing the extension's own row against the tab's row.
 
-BetterTTV's extension process sat between 40 and 70 MB across sessions. The Twitch tab itself, which is where injected work actually happens, was the bigger variable. With BetterTTV active and animated emotes on, the combined figure I logged after four hours was around 180 MB. Turning animated emotes off pulled that down by roughly 20 to 30 MB in the sessions I compared. A bare Twitch tab with no chat extensions in the same conditions sat closer to 130 to 140 MB.
+BetterTTV's own process uses modest memory; the Twitch tab itself, which is where injected work actually happens, is the bigger variable. With BetterTTV active and animated emotes on, the tab uses noticeably more memory than a bare tab with no chat extensions — turning animated emotes off brings it back down by a clear margin.
 
-CPU was the more interesting metric. In fast chat with animated emotes enabled, I saw sustained single-digit CPU percentages attributable to the tab that dropped to near-idle when I disabled animation. On a laptop running on battery that difference is worth caring about. If you routinely run six or seven extensions, the compounding effect is real, and I have written more about that tradeoff in [how to boost browser performance with minimal extensions](/blog/boosting-browser-performance-minimal-extensions).
+CPU follows the same pattern. In fast chat with animated emotes enabled, the tab works noticeably harder than with animation off — close to idle when animation is disabled. On a laptop running on battery that difference is worth caring about. If you routinely run six or seven extensions, the compounding effect is real, and I have written more about that tradeoff in [how to boost browser performance with minimal extensions](/blog/boosting-browser-performance-minimal-extensions).
 
 On permissions: BetterTTV requests host access to twitch.tv and youtube.com only. That is a narrow, appropriate scope for what it does, and it is the main reason I am comfortable running it on a profile I use for other things. It does need to read page content, because rewriting chat is the entire product. Anyone uncomfortable with that should not install any chat extension, since none of them can work without it. If you are auditing your whole extension list with a privacy lens, my broader notes on [Chrome extensions that actually respect your privacy](/blog/chrome-extensions-that-actually-respect-your-privacy) cover how I evaluate permission requests before installing.
 
@@ -206,7 +206,7 @@ No. BetterTTV has been in wide use for over a decade, it does not automate chat 
 
 ### How much of BetterTTV actually works on YouTube?
 
-Live chat gets emote rendering, the BTTV emote picker in the chat input, timestamps, and keyword highlighting. Channel-specific emote sets, player tweaks, and directory cleanups do not apply, and regular video comments are completely untouched. In my testing the popped-out live chat window was the least reliable surface, occasionally needing its own refresh before emotes appeared. Think of the YouTube integration as a partial port that covers the most-requested feature and stops there.
+Live chat gets emote rendering, the BTTV emote picker in the chat input, timestamps, and keyword highlighting. Channel-specific emote sets, player tweaks, and directory cleanups do not apply, and regular video comments are completely untouched. The popped-out live chat window is the least reliable surface, occasionally needing its own refresh before emotes appear. Think of the YouTube integration as a partial port that covers the most-requested feature and stops there.
 
 ### Does BetterTTV slow Chrome down noticeably?
 
@@ -224,7 +224,7 @@ Go to `chrome://extensions`, find BetterTTV, and click **Remove**, then confirm.
 
 BetterTTV is still the right default for Chrome users who want Twitch chat to work the way the community actually uses it. The install is a genuine two-click operation from the official Chrome Web Store listing, the permission scope is limited to the two sites it modifies, the settings panel is legible to someone who has never configured an extension before, and the memory cost on my machine was noticeable but not disruptive. My recommendation for most people: install it, enable chat message history, turn animated emotes off if you keep streams in background tabs, and ignore everything else in the settings panel until you have a specific complaint to solve.
 
-The alternative I would actually reach for is FrankerFaceZ. It was consistently the lightest of the three in my testing, around 150 MB where BetterTTV sat near 180 MB, and its settings panel gives you finer control over chat rendering than BetterTTV exposes. The tradeoff is that it has no YouTube live chat support at all and its configuration surface takes real time to learn. If you are on constrained hardware, watch exclusively on Twitch, and do not mind reading through a dense settings tree once, FrankerFaceZ is the better technical choice. For everyone else, BetterTTV remains the one I keep installed.
+The alternative I would actually reach for is FrankerFaceZ. It is consistently the lightest of the three, using noticeably less memory than BetterTTV, and its settings panel gives you finer control over chat rendering than BetterTTV exposes. The tradeoff is that it has no YouTube live chat support at all and its configuration surface takes real time to learn. If you are on constrained hardware, watch exclusively on Twitch, and do not mind reading through a dense settings tree once, FrankerFaceZ is the better technical choice. For everyone else, BetterTTV remains the one I keep installed.
 
 ## Sources
 
