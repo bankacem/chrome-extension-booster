@@ -230,7 +230,7 @@ Technically they are close cousins: both store a URL and a title, and both sync 
 
 If you want one recommendation: use Chrome's Reading List as your queue and a **single-file archiver extension** for anything you actually need offline. That pairing gave me the best results across two weeks of testing, cost me under fifteen seconds per article, and produced files that opened in airplane mode every time with images and layout intact. Set the extension's site access to "On click" so it is idle until you use it, and drop the saved files into a synced cloud folder if you want them on your phone.
 
-The alternative worth considering is **Instapaper** if your reading is mostly essays and news and you mainly read on a phone. Its extraction was the most consistent of the services I tested, the offline sync in its app is reliable once you build the habit of opening it on Wi-Fi, and it removes all the file management. Accept that you are trading fidelity and long-term ownership for that convenience, and that structured content like tables and code will not survive the trip.
+The alternative worth considering is **Instapaper** if your reading is mostly essays and news and you mainly read on a phone. Its extraction is the most consistent of the services here, the offline sync in its app is reliable once you build the habit of opening it on Wi-Fi, and it removes all the file management. Accept that you are trading fidelity and long-term ownership for that convenience, and that structured content like tables and code will not survive the trip.
 
 What I would not do is rely on Reading List alone and assume it covers offline. It does not, it never claimed to, and the only reason people believe it does is that browser caching occasionally makes it look that way.
 
@@ -239,4 +239,4 @@ What I would not do is rely on Reading List alone and assume it covers offline. 
 1. [Google Chrome Help — read pages later and offline](https://support.google.com/chrome/answer/7346148) — confirmed how Reading List is described and where the side panel entry point lives in current Chrome.
 2. [Google Chrome Help — download a page to read offline](https://support.google.com/chrome/answer/1060103) — verified the official steps for downloading a page on desktop and the download-arrow flow on Android.
 3. [Pocket — save to Pocket](https://getpocket.com/add) — checked the save flow and what the browser button does at the moment of saving.
-4. [Instapaper](https://www.instapaper.com/) — verified the reader view options and the app-side offline sync behavior I tested on my phone.
+4. [Instapaper](https://www.instapaper.com/) — verified the reader view options and the app-side offline sync behavior.

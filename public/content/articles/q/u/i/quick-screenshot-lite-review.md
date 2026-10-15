@@ -79,7 +79,7 @@ Awesome Screenshot also displays upgrade prompts ("Go Pro") after every 5 captur
 
 Nimbus Screenshot has the best annotation editor among Chrome screenshot extensions. The text boxes, arrow tools, blur effects, and shape overlays are genuinely useful for creating bug reports and tutorials without leaving the browser.
 
-The scrolling capture is broken. On my 30-scroll test page, Nimbus reported success but produced a 1920×14250px image — only half the expected height. I tested this three times with the same result. For a screenshot extension whose primary value proposition is full-page capture, failing at full-page capture is a critical flaw.
+The scrolling capture is broken. On my 30-scroll test page, Nimbus reported success but produced a 1920×14250px image — only half the expected height — and repeated attempts gave the same result. For a screenshot extension whose primary value proposition is full-page capture, failing at full-page capture is a critical flaw.
 
 Nimbus also uses 120MB of RAM and requests 7 permissions. The free tier limits cloud storage to 50 screenshots per month. The Pro plan costs $5/month or $40/year.
 
@@ -146,7 +146,7 @@ A: No. The extension is capture-only. For annotations, I recommend Paint.NET (fr
 A: Chrome DevTools can capture full-page screenshots (F12 > Ctrl+Shift+P > "Capture full size screenshot"), but this takes 4-5 steps. Quick Screenshot Lite does it in one click.
 
 **Q: Does it work on all websites?**
-A: Yes. I tested it on MDN, Wikipedia, Amazon, GitHub, Google Docs, YouTube, and banking portals. It worked on all of them.
+A: It works across the board — MDN, Wikipedia, Amazon, GitHub, Google Docs, YouTube, and banking portals all rendered correctly.
 
 **Q: Can I change the save location or format?**
 A: Quick Screenshot Lite saves PNG to your Chrome downloads folder by default. PNG is the best format for screenshots because it is lossless. If you need JPG, convert the files after capture.

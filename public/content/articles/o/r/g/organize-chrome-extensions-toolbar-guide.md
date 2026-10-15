@@ -142,7 +142,7 @@ Go down the list and unpin every single one. Your toolbar should end up with not
 
 Now add back deliberately. In the same puzzle menu, click the pin icon for each extension you genuinely click daily. I ended up with four: password manager, ad blocker, screenshot tool, and tab manager. If you're not sure, pin nothing today and add each extension the first time you find yourself hunting for it in the overflow menu. That's a slower method but the result is more honest.
 
-Hard limit I'd suggest: six. I tested seven and eight pinned icons on a 1440x900 laptop screen and the address bar shrank enough that I lost the tail end of most URLs. On a wide external monitor, ten was still comfortable, but a toolbar you only tolerate on the big screen is not organized.
+Hard limit I'd suggest: six. With seven or eight pinned icons on a 1440x900 laptop screen, the address bar shrinks enough that the tail end of most URLs gets cut off. On a wide external monitor, ten was still comfortable, but a toolbar you only tolerate on the big screen is not organized.
 
 ### Step 4: Drag the pinned icons into a deliberate order
 
@@ -205,7 +205,7 @@ What you can do instead falls into three approaches, in order of how much I'd re
 
 **Profiles as groups** is the cleanest. Each profile is effectively a group with its own toolbar. Zero clicks to switch between tools inside a context, one window switch to change context. See Step 6.
 
-**Manager extensions as groups** is the flexible option. These add one icon to your toolbar and let you define sets of extensions that you enable and disable together. I tested a few and the concept works: click the manager icon, flip on your "video editing" set, and four extensions activate. The cost is an extra icon, an extra dependency, and the fact that you're now trusting one extension with control over all the others. If you go this route, read up on which ones deserve that trust; I dug into the tradeoffs across [dedicated Chrome extension manager tools](/blog/chrome-extension-manager-tools) and the short version is that the well-maintained ones are fine and the abandoned ones are a liability.
+**Manager extensions as groups** is the flexible option. These add one icon to your toolbar and let you define sets of extensions that you enable and disable together. The concept works: click the manager icon, flip on your "video editing" set, and the extensions in that set activate together. The cost is an extra icon, an extra dependency, and the fact that you're now trusting one extension with control over all the others. If you go this route, read up on which ones deserve that trust; I dug into the tradeoffs across [dedicated Chrome extension manager tools](/blog/chrome-extension-manager-tools) and the short version is that the well-maintained ones are fine and the abandoned ones are a liability.
 
 **Ordering as pseudo-grouping** is the free option. Put related extensions next to each other and leave your most-clicked one isolated at the far edge. This isn't grouping, it's just arrangement, but on a five-icon toolbar it's enough. I keep my two writing tools adjacent and my password manager alone on the left, and I can hit either cluster without reading the icons.
 

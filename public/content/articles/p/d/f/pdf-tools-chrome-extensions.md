@@ -76,7 +76,7 @@ Merge and split tools address another common workflow need: combining multiple P
 
 It's worth noting that some extensions attempt to combine multiple functionalities into a single package. While these can be convenient, I've found that they often compromise on the depth of features in each area. In my testing, specialized tools typically outperform all-in-one solutions in their specific domain, though they require more extensions to cover all bases.
 
-The following table compares the main categories of PDF Chrome extensions based on my hands-on testing:
+The following table compares the main categories of PDF Chrome extensions:
 
 | Category | Primary Function | Best For | Limitations | Popular Examples |
 |----------|------------------|----------|-------------|------------------|

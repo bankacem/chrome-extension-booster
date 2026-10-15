@@ -39,7 +39,7 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 ## Best Screenshot Extensions for Chrome in 2026
 
-I tested 10 Chrome screenshot extensions over three weeks to find the best tool for full-page captures, annotations, and quick sharing. I measured capture speed, annotation quality, export formats, privacy practices, and RAM usage.
+I compared 10 Chrome screenshot extensions to find the best tool for full-page captures, annotations, and quick sharing — weighing capture speed, annotation quality, export formats, privacy practices, and RAM usage.
 
 ## My Test Setup
 

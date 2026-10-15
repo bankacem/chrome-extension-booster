@@ -124,9 +124,8 @@ A: You should regularly update your **Chrome extension to detect trackers** to e
 
 | Extension | Tracker Detection | Tracker Blocking | Customization Options |
 | --- | --- | --- | --- |
-| [Redirect Shield](/extension/redirect-shield) |
-
-| [Light Popup Blocker](/extension/light-popup-blocker) |
+| [Redirect Shield](/extension/redirect-shield) | No — stops redirect chains, not trackers | Partial (cuts redirect-based tracking chains) | Minimal |
+| [Light Popup Blocker](/extension/light-popup-blocker) | No — blocks pop-ups, not trackers | Partial (blocks overlay scripts) | Custom filters |
 
 By using a **Chrome extension to detect trackers** and following the tips outlined in this article, you can take back control of your digital footprint and enjoy a safer, more private browsing experience. Remember to always prioritize your online security and privacy, and stay informed about the latest threats and protection methods.
 

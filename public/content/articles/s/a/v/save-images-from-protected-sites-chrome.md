@@ -233,7 +233,7 @@ When browser methods aren't sufficient, third-party applications provide more po
 ### Dedicated Image Downloaders
 Applications like **Internet Download Manager (IDM)** and **JDownloader** offer advanced downloading capabilities that can bypass many protection mechanisms. In my experience, these tools work by intercepting network requests and downloading files directly, often bypassing JavaScript restrictions.
 
-IDM, for example, integrates with Chrome to provide a download button for multimedia content. When I tested it across 50 protected sites, it successfully retrieved images from 88% of them. The main limitation is that it's a paid application with a trial period.
+IDM, for example, integrates with Chrome to provide a download button for multimedia content, and it handles most protected sites well. The main limitation is that it's a paid application with a trial period.
 
 JDownloader is a free alternative that offers similar functionality. I've found it particularly effective for sites that use referer checking or other server-side protection measures. The interface is more complex than IDM, but it's powerful and customizable.
 

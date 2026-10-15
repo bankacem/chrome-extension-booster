@@ -113,7 +113,7 @@ This extension stands out for its advanced customization options, making it idea
 
 ### 4. Simple Video Looper
 
-As the name suggests, this extension prioritizes simplicity while offering essential looping features. It's perfect for users who find other extensions too complex or bloated. I tested this alongside more feature-rich options and found it performed exceptionally well for basic looping needs.
+As the name suggests, this extension prioritizes simplicity while offering essential looping features. It's perfect for users who find other extensions too complex or bloated. It holds up well against more feature-rich options for basic looping needs.
 
 **Key Features:**
 - Clean, intuitive interface
@@ -125,7 +125,7 @@ As the name suggests, this extension prioritizes simplicity while offering essen
 
 ## Detailed Extension Comparison {#comparison}
 
-To help you choose the best Chrome extension to repeat YouTube videos for your specific needs, I've compared the top options across several key factors. Based on my hands-on testing with various video types, lengths, and use cases, here's how they stack up:
+To help you choose the best Chrome extension to repeat YouTube videos for your specific needs, I've compared the top options across several key factors. Here is how they stack up on the factors that matter most:
 
 | Feature | AutoRepeat for YouTube | Enhanced YouTube | Loop & Repeat | Simple Video Looper |
 |---------|------------------------|------------------|---------------|---------------------|

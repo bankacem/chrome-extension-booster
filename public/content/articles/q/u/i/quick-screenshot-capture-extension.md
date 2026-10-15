@@ -208,7 +208,7 @@ Quick Screenshot Lite supports PNG, JPEG, and WebP. WebP offers the best compres
 Yes, completely free with no premium tiers, no ads, and no watermarks.
 
 ### How much memory does it use?
-About 8 MB when idle and up to 25 MB during a full-page capture. This is the lowest among the 4 extensions I tested.
+About 8 MB when idle and up to 25 MB during a full-page capture — the lowest of the four options here.
 
 ## Verdict
 

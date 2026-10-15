@@ -162,7 +162,7 @@ Key strengths:
 The main limitation is its minimal annotation features, making it better suited for simple capture needs rather than documentation or tutorials that require detailed markup.
 
 ### FireShot
-FireShot offers the most comprehensive set of features for users who need advanced editing capabilities. I tested it extensively for technical documentation projects where precise annotation was crucial.
+FireShot offers the most comprehensive set of features for users who need advanced editing capabilities — a strong pick for technical documentation projects where precise annotation is crucial.
 
 Key strengths:
 - Powerful annotation suite

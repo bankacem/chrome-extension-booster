@@ -111,7 +111,7 @@ For a browser that claims privacy as its primary differentiator, this lack of tr
 
 ### Yandex Browser — Limited Catalog and Privacy Baggage
 
-Yandex Browser's curated extension catalog means you cannot install every Chrome extension — only those Yandex has approved. This protects against malicious extensions but also blocks legitimate ones like DarkFlow and the WebRTC control extension I tested. If an extension is not in Yandex's catalog, installing it requires enabling developer mode and manually adding it from the Chrome Web Store — a multi-step process most mobile users will not attempt.
+Yandex Browser's curated extension catalog means you cannot install every Chrome extension — only those Yandex has approved. This protects against malicious extensions but also blocks legitimate ones like DarkFlow and the WebRTC control extension I tried installing. If an extension is not in Yandex's catalog, installing it requires enabling developer mode and manually adding it from the Chrome Web Store — a multi-step process most mobile users will not attempt.
 
 The privacy concerns are the bigger issue. Yandex Browser compresses web traffic through Yandex servers, meaning Yandex sees every site you visit. Even with the compression feature disabled, the browser communicates with Yandex servers for Safe Browsing checks, spell checking, and translation features. For any user who values privacy, these compromises are difficult to accept.
 

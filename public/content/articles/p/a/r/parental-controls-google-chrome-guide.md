@@ -43,7 +43,7 @@ The short version: **No single solution is perfect. Google Family Link is the ea
 
 ## My Test Setup
 
-I tested on five device types to cover the most common family scenarios.
+The setup below covers five device types, matching the most common family scenarios.
 
 | Device | OS | Browser | User |
 |--------|----|---------|------|

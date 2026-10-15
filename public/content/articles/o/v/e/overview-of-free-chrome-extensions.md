@@ -190,7 +190,7 @@ Keepa's free tier provides full price history charts, wish list tracking for up 
 
 Beyond coupon hunting, Honey includes a price tracking feature (Droplist) that monitors items and notifies you when they drop below a set threshold, and a rewards program (Honey Gold) that accrues points redeemable for gift cards. The extension also offers a universal search bar for finding products across multiple retailers from a single interface. These secondary features make it more of a shopping companion than a single-purpose tool.
 
-It is worth noting that Honey was acquired by PayPal, which introduced some data-sharing changes to the privacy policy. The extension does collect browsing data on supported shopping sites to improve its coupon database. If this concerns you, Keepa is the more privacy-respecting option for price tracking, while Honey remains the better choice for automatic coupon application. Both are free and compatible with Manifest V3.
+Honey was acquired by PayPal in 2020, and its [privacy policy allows data sharing](https://9to5google.com/2025/12/22/honey-user-data-practices-reports/) with service providers and partners including its parent company PayPal. The extension does collect browsing data on supported shopping sites to improve its coupon database. If this concerns you, Keepa is the more privacy-respecting option for price tracking, while Honey remains the better choice for automatic coupon application. Both are free and compatible with Manifest V3.
 
 ## How to Choose Safe Free Extensions
 

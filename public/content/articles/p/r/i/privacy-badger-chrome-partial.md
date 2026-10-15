@@ -105,11 +105,11 @@ In my experience, Privacy Badger's minimalistic interface makes it easy to use w
 
 ## Performance and Resource Usage {#performance-and-resource-performance}
 
-The performance impact of a privacy extension can significantly affect your browsing experience, especially on lower-end devices or when visiting complex websites. I tested both Privacy Badger and Ghostery across various scenarios to evaluate their resource usage and impact on page load times.
+The performance impact of a privacy extension can significantly affect your browsing experience, especially on lower-end devices or when visiting complex websites. Both are light enough that most users will not notice them, but they take different approaches — and ask different amounts of your browser.
 
-Privacy Badger generally has a lighter performance footprint than Ghostery. In my testing on a mid-range laptop, I found that Privacy Badger added approximately 100-200ms to page load times on average, with minimal impact on browser memory usage. This is because Privacy Badger uses a relatively simple heuristic algorithm to detect trackers without maintaining extensive databases or processing complex rulesets. The extension's efficiency makes it particularly suitable for users with older hardware or those who prioritize performance alongside privacy.
+Privacy Badger generally has a lighter performance footprint than Ghostery. It uses a relatively simple heuristic algorithm to detect trackers without maintaining extensive databases or processing complex rulesets, so its impact on page loads and memory stays minimal. That efficiency makes it particularly suitable for users with older hardware or those who prioritize performance alongside privacy.
 
-Ghostery, with its more comprehensive feature set, understandably has a slightly higher performance impact. In my tests, Ghostery added approximately 200-400ms to page load times on average, with slightly higher memory usage than Privacy Badger. This difference becomes more noticeable on websites with numerous trackers—Ghostery needs to process each tracker individually and check its database for additional information. However, the impact is still relatively minor for most modern computers and shouldn't be noticeable for casual browsing.
+Ghostery, with its more comprehensive feature set, understandably has a slightly higher performance impact — it checks each tracker against its database, so the difference shows most on tracker-heavy sites. For most modern computers, though, the impact stays minor and should not be noticeable during casual browsing.
 
 ### Memory and CPU Usage
 
