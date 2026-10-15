@@ -128,7 +128,7 @@ In my testing, I found that IG Story Downloader has a slightly more complex inte
 
 ### InstaSave Pro
 
-InstaSave Pro sits at the premium end of the spectrum, offering the most comprehensive feature set of the extensions I tested. While it has a steeper learning curve, the additional functionality makes it worthwhile for professional users who need advanced capabilities.
+InstaSave Pro sits at the premium end of the spectrum, offering the most comprehensive feature set of the extensions covered here. While it has a steeper learning curve, the additional functionality makes it worthwhile for professional users who need advanced capabilities.
 
 The standout features include cloud integration (direct uploads to Google Drive, [Dropbox](https://www.dropbox.com), etc.), watermark removal options, and more sophisticated batch downloading with custom naming conventions. During my testing, I found these features particularly valuable for social media managers who need to organize and archive large amounts of content efficiently.
 

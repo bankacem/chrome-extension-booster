@@ -197,7 +197,7 @@ To ensure optimal performance while using Avast Online Security Chrome, consider
 
 ## Comparison with Alternatives {#comparison-with-alternatives}
 
-To provide you with a complete picture of Avast Online Security Chrome's position in the browser security landscape, I've compared it with several popular alternatives based on my hands-on testing experience. This comparison will help you understand its strengths and weaknesses relative to other options.
+To give you a complete picture of Avast Online Security Chrome's position among browser security tools, this comparison looks at several popular alternatives to highlight its strengths and weaknesses relative to other options.
 
 ### Feature Comparison Table
 
@@ -330,7 +330,7 @@ Avast updates its threat database multiple times daily to ensure protection agai
 
 ### Does Avast Online Security Chrome track my browsing activity?
 
-No, Avast Online Security Chrome is designed to protect your privacy and does not track your browsing activity. The extension focuses on identifying and blocking threats rather than monitoring your online behavior. Your browsing data remains private and is not shared with Avast or third parties.
+No, Avast Online Security Chrome is designed to protect your privacy and does not track your browsing activity. The extension focuses on identifying and blocking threats rather than monitoring your online behavior. For specifics on what data Avast collects and how it handles it, see [Avast's privacy policy](https://www.avast.com/privacy-policy).
 
 ### Can I disable the extension on specific websites?
 

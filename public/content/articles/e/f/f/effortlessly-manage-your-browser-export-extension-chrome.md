@@ -114,7 +114,7 @@ While Chrome's built-in methods offer basic functionality, third-party tools pro
 
 Extension Backup and Restore is a dedicated Chrome extension designed specifically for backing up and restoring extension collections. In my testing, this tool consistently delivered reliable performance across multiple Chrome versions. After installing the extension, you can access its interface through the Chrome toolbar or extensions page.
 
-The primary advantage of Extension Backup and Restore is its ability to create comprehensive backups that include not just extension files but also associated settings and data. When I tested this tool on my work profile with approximately 45 extensions, it created a complete backup file that restored all extensions with their settings intact on a different device. This is particularly valuable for extensions that store user preferences or authentication credentials.
+The primary advantage of Extension Backup and Restore is its ability to create comprehensive backups that include not just extension files but also associated settings and data. It creates a complete backup file that restores all extensions with their settings intact on a different device. This is particularly valuable for extensions that store user preferences or authentication credentials.
 
 The tool offers several backup options, including full profile backups, individual extension backups, and scheduled automatic backups. In my experience, the scheduled backup feature is particularly useful for maintaining current backups without manual intervention. However, I did encounter occasional compatibility issues with some beta Chrome versions, requiring temporary updates to the extension.
 
@@ -337,7 +337,7 @@ I recommend exporting your Chrome extensions at least weekly, or more frequently
 
 ### Will exported extensions work on different Chrome versions?
 
-In my experience, most extensions will work across different Chrome versions, though compatibility issues can arise after major Chrome updates. When I tested exporting extensions from Chrome version 120 to version 125, approximately 90% worked without issues. To ensure compatibility, I recommend checking extension update notes before applying Chrome updates and maintaining version-controlled backup libraries to restore previous working configurations if needed.
+In my experience, most extensions will work across different Chrome versions, though compatibility issues can arise after major Chrome updates. Exporting extensions from Chrome version 120 to version 125, most worked without issues. To ensure compatibility, I recommend checking extension update notes before applying Chrome updates and maintaining version-controlled backup libraries to restore previous working configurations if needed.
 
 ### Can I export extensions from Chrome to other browsers?
 
@@ -349,7 +349,7 @@ This depends on the export method you use. Chrome's built-in methods typically p
 
 ### Is it safe to export Chrome extensions to share with others?
 
-Exporting Chrome extensions for personal use is generally safe, but sharing extensions with others raises security considerations. When I tested exporting extensions for team use, I found that some extensions contained sensitive information or permissions that shouldn't be widely shared. For collaborative environments, I recommend using dedicated extension management tools that allow controlled sharing while maintaining security and compliance requirements.
+Exporting Chrome extensions for personal use is generally safe, but sharing extensions with others raises security considerations. Exporting extensions for team use can be risky: some extensions contain sensitive information or permissions that shouldn't be widely shared. For collaborative environments, I recommend using dedicated extension management tools that allow controlled sharing while maintaining security and compliance requirements.
 
 ### What should I do if an extension won't import properly?
 

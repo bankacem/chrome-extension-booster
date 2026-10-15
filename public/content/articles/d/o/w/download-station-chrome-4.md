@@ -63,7 +63,7 @@ What impressed me most was how intelligently the interface handles different fil
 
 Download Station Chrome provides granular control over your downloads that Chrome's native system simply can't match. The extension allows you to pause, resume, and reorder downloads with just a couple of clicks. This functionality is particularly useful when working with limited bandwidth or when prioritizing important files.
 
-During testing, I found the pause/resume feature to be remarkably reliable. I tested it with various file sizes ranging from small documents to multi-gigabyte video files, and the extension consistently maintained connection integrity. This is a significant improvement over Chrome's native functionality, which sometimes fails to properly resume interrupted downloads.
+The pause/resume feature handles file sizes ranging from small documents to multi-gigabyte video files while maintaining connection integrity. This is a significant improvement over Chrome's native functionality, which sometimes fails to properly resume interrupted downloads.
 
 ### Priority Queue System
 
@@ -109,9 +109,9 @@ During testing, I found these features particularly valuable when working with l
 
 ### Download Acceleration
 
-The extension includes a download acceleration feature that splits files into multiple segments and downloads them simultaneously. This can significantly speed up downloads, especially for large files or when dealing with slower servers. In my testing, I observed speed improvements ranging from 20% to 70% depending on the file size and server capabilities.
+The extension includes a download acceleration feature that splits files into multiple segments and downloads them simultaneously. This can speed up downloads, especially for large files or slower servers—though the exact gains depend on file size and server.
 
-What makes this feature particularly effective is its intelligent segment management. Unlike some download accelerators that simply split files into arbitrary chunks, Download Station Chrome analyzes the server's capabilities and optimizes the number of segments accordingly. This prevents overloading the server while maximizing download speed. I tested this with various file types and consistently observed faster completion times compared to Chrome's native download functionality.
+What makes this feature particularly effective is its intelligent segment management. Unlike some download accelerators that simply split files into arbitrary chunks, Download Station Chrome analyzes the server's capabilities and optimizes the number of segments accordingly. This prevents overloading the server while maximizing download speed. Across various file types, completion times are consistently faster than Chrome's native download functionality.
 
 ### Batch Download Management
 
@@ -127,7 +127,7 @@ In my testing, I set up automatic uploads to Google Drive for all work-related d
 
 ## Download Station Chrome vs. Alternatives {#download-station-chrome-vs-alternatives}
 
-To give you a complete picture of where Download Station Chrome stands in the market, I've compared it with other popular download management solutions available for Chrome. This comparison is based on my hands-on testing of each tool in various scenarios.
+To give you a complete picture of where Download Station Chrome stands in the market, this section compares it with other popular download management solutions for Chrome across common use scenarios.
 
 | Feature | Download Station Chrome | IDM Extension | EagleGet | Chrono Download Manager |
 | --- | --- | --- | --- | --- |

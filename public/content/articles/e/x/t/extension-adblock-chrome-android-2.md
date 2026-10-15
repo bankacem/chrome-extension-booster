@@ -88,11 +88,7 @@ System-wide ad blocking solutions operate outside of Chrome, filtering ads for a
 
 ### Comparison of Ad Blocker Types for Chrome Android
 
-| Ad Blocker Type | Effectiveness | Setup Complexity | Battery Impact | App Compatibility |
-|-----------------|--------------|-----------------|----------------|-------------------|
-| Dedicated Ad Blocking Browser | 95-98% ad blocking | Low (install and browse) | Minimal | Browser-only |
-| Chrome Extensions (Special Implementation) | 80-90% ad blocking | Medium (requires Chrome extension setup) | Low | Chrome-only |
-| System-wide (DNS/VPN) | 85-95% ad blocking | High (system configuration required) | Moderate | All apps on device |
+**Dedicated ad blocking browsers** offer the most comprehensive blocking, with a simple install-and-browse setup and minimal battery impact—but they only cover browsing inside that app. **Chrome extensions with special implementations** integrate better with Chrome's existing features and sync, need a bit more setup, and are limited to Chrome itself. **System-wide (DNS/VPN) solutions** filter ads across every app on your device, but require more technical setup, can interfere with apps that expect unfiltered network access, and consume more battery since they filter all device traffic.
 
 ### The Rise of Privacy-Focused Ad Blockers
 
@@ -108,9 +104,9 @@ AdGuard's Chrome extension represents another strong option, particularly for us
 
 For users willing to invest in a premium solution, Total Adblock offers impressive performance specifically tailored for Chrome Android. During my testing, Total Adblock blocked 95-98% of ads, including complex interstitial ads and video ads that often slip through free solutions. What sets Total Adblock apart is its dedicated Android optimization team that continuously refines filters for mobile browsing. The premium version also includes additional features like anti-malware protection and customizable filter lists, though these features come at a subscription cost of approximately $24.99 per year.
 
-### My Testing Methodology
+### How the Comparison Works
 
-To provide accurate comparisons, I tested each ad blocker under identical conditions across 50 popular websites, including news sites, social media platforms, e-commerce stores, and streaming services. I measured ad blocking effectiveness by counting the number of ads that loaded and were successfully blocked, as well as noting any "ad flashes" where ads briefly appeared before being removed. Battery impact was assessed by monitoring battery drain during two-hour browsing sessions with each ad blocker enabled, compared to browsing with no ad blocker. Performance impact was measured using Chrome's built-in performance tools to track page load times and memory usage.
+To keep comparisons fair, this guide evaluates each option across the same types of sites—news sites, social media platforms, e-commerce stores, and streaming services—looking at how many ads slip through (including "ad flashes" where ads briefly appear before being removed), how battery drain changes with each blocker enabled, and how page load times and memory usage are affected.
 
 ### Lightweight Alternatives for Low-End Devices
 

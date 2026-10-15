@@ -86,7 +86,7 @@ Chrono Download Manager positions itself as "the first and only full-featured do
 
 My favorite feature of Chrono is its comprehensive download history. Unlike Chrome's native downloader that essentially forgets about downloads after they're complete, Chrono maintains a detailed history with search and filtering capabilities. This has been invaluable when I needed to find a file downloaded weeks or months prior.
 
-Chrono also excels in its batch downloading capabilities. Its "bulk download" feature allows you to select multiple links from a page and download them all simultaneously with a single click. I tested this extensively on image gallery pages and found it worked flawlessly, downloading hundreds of images with proper naming.
+Chrono also excels in its batch downloading capabilities. Its "bulk download" feature allows you to select multiple links from a page and download them all simultaneously with a single click. Its bulk download feature handles image gallery pages well, pulling down hundreds of images with proper naming.
 
 The extension offers excellent customization options, from download locations to notification preferences. It also includes a built-in audio and video downloader that works surprisingly well for many sites, though not as comprehensively as specialized media downloaders.
 

@@ -108,7 +108,7 @@ The extension also includes a feature called "Safe Search," which helps filter o
 
 ### Integration with Norton Security Products
 
-For users who already use Norton antivirus or other Norton security products, the extension integrates seamlessly with these tools. This integration creates a more comprehensive security ecosystem where different components work together to provide layered protection. In my testing, I found this integration particularly valuable, as the extension could share threat information with other Norton products, enhancing overall system security.
+For users who already use Norton antivirus or other Norton security products, the extension integrates with these tools. This integration creates a more comprehensive security ecosystem where different components work together to provide layered protection.
 
 ## Setting Up and Configuring Norton Safe Web Chrome {#setting-up-and-configuring-norton-safe-web-chrome}
 
@@ -217,7 +217,7 @@ In general, third-party security extensions like Norton Safe Web tend to offer m
 
 While Norton Safe Web Chrome offers valuable protection, it's important to understand its limitations and potential drawbacks. As with any security tool, having realistic expectations about what it can and cannot do is essential for effective use.
 
-One significant limitation is that Norton Safe Web primarily protects against known threats. This means that zero-day attacks or brand-new malware variants may slip through until they're identified and added to Norton's database. In my testing, this gap typically lasts 24-72 hours after a new threat emerges, which is when most extensions are vulnerable.
+One significant limitation is that Norton Safe Web primarily protects against known threats. This means that zero-day attacks or brand-new malware variants may slip through until they're identified and added to Norton's database.
 
 Another consideration is the extension's dependency on Norton's database. If a site is incorrectly categorized in the database, you may experience false positives or miss actual threats. While Norton has processes to correct these errors, they can occasionally cause frustration for users. In my experience, reporting false positives through the extension helps improve the system over time.
 
