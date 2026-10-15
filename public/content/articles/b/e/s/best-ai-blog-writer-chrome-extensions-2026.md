@@ -50,9 +50,9 @@ The one-paragraph version: if you want drafting plus publishing automation, eese
 
 ![Writer drafting an AI-assisted blog post on a laptop with research open](https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80)
 
-## How We Tested the Best AI Blog Writer Chrome Extensions
+## How We Evaluated the Best AI Blog Writer Chrome Extensions
 
-Every tool here ran through the same gauntlet: three briefs a real editor would write — a comparison post, a how-to guide, and a data-driven listicle — each targeting a keyword where we knew the current top ten pages. I scored drafts on four axes:
+Here's what separates a good AI writing extension from a gimmick — four things that matter:
 
 1. **Research quality** — did the draft cite sources that exist, or hallucinate plausible-sounding ones?
 2. **Brand voice match** — how much rewriting before the piece sounded like the client's blog?

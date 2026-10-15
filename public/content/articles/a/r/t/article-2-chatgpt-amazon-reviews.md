@@ -316,7 +316,7 @@ Amazon's search algorithm considers reviews as a ranking factor. Here's how to o
 - Closing: 1 secondary keyword naturally
 
 **Example Optimized Opening:**
-> *"After testing these noise-canceling wireless earbuds for 40 hours across commutes, gym sessions, and work calls, I can confirm the battery life claims are conservative. Most competitors in the $50-100 range deliver 6-8 hours; these lasted 11 hours 23 minutes in my real-world test."*
+> *"These noise-canceling wireless earbuds back up their battery claims. Where competitors in the $50-100 range cut corners on battery life, these keep going through commutes, gym sessions, and work calls without needing a midday charge."*
 
 **Keywords naturally included:**
 - noise-canceling wireless earbuds (primary)

@@ -119,7 +119,7 @@ Each one does a single job well, and together they remove the small frictions th
 
 **Who should skip it:** Casual shoppers or beginners who want an all-in-one Chrome dashboard. Alishark's extension is too basic. Start with AliDrop's free tier instead.
 
-**My setup after testing:** Alishark (product research) + Quick Screenshot Lite (capture) + ProTab Suspender (memory) + NightShield Pro (eye comfort). That combination covered discovery, capture, performance, and health.
+**My setup:** Alishark (product research) + Quick Screenshot Lite (capture) + ProTab Suspender (memory) + NightShield Pro (eye comfort). That combination covered discovery, capture, performance, and health.
 
 If you only install one companion extension for Alishark, make it [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee). Alishark finds the products. Quick Screenshot Lite captures the evidence. You will thank yourself when you are comparing suppliers later.
 
