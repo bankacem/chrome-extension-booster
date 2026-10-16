@@ -141,7 +141,7 @@ Another approach is to use extensions with time-limited free trials of their pre
 
 For those using extensions that do add watermarks in free versions, there are still ways to produce clean content. Some extensions allow you to remove watermarks through simple editing after recording. With Screencastify, cropping the edges of the recording could effectively eliminate the watermark without significantly affecting the content, especially when recording specific application windows rather than full screens.
 
-Another technique is to record slightly larger than necessary and then crop during editing. When I created tutorial videos for a design project, I recorded my entire screen but then cropped to just the application window during editing, effectively removing any watermarks added by the extension. This approach requires a bit more post-processing but can yield professional results with free tools.
+Another technique is to record slightly larger than necessary and then crop during editing. Recording the full screen and cropping to just the application window in the editor can remove a corner watermark without touching the content itself. This approach requires a bit more post-processing but can yield professional results with free tools.
 
 ### When Watermarks Might Be Acceptable
 
@@ -265,7 +265,7 @@ A few practical tips for better recording quality and efficiency — and for avo
 
 1. **Prepare your content in advance**: Before starting to record, outline your key points and practice your delivery. In my experience, this preparation reduces recording time by as much as 50% compared to ad-hoc recording. When I created tutorial videos for my team, spending just 10 minutes scripting each video eliminated unnecessary pauses and repetitions during recording.
 
-2. **Optimize your recording environment**: Ensure good lighting for webcam recordings and minimize background noise for audio. When I recorded tutorials with webcam overlays, positioning myself facing a natural light source significantly improved video quality without requiring additional equipment. For audio recordings, using a quiet room or noise-canceling headphones can prevent the need for extensive audio cleanup later.
+2. **Optimize your recording environment**: Ensure good lighting for webcam recordings and minimize background noise for audio. Facing a natural light source is the cheapest quality upgrade there is — no extra equipment needed. For audio recordings, using a quiet room or noise-canceling headphones can prevent the need for extensive audio cleanup later.
 
 3. **Use keyboard shortcuts for efficiency**: Most screen recorder Chrome extensions offer keyboard shortcuts for common actions like starting, pausing, and stopping recordings. Learning these shortcuts can streamline your workflow and reduce the need to navigate menus during recording. When I was creating multiple tutorial videos in a single session, using these shortcuts saved considerable time and maintained my train of thought.
 

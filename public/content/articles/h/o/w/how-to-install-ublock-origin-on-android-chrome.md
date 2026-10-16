@@ -58,7 +58,7 @@ uBlock Origin is not just another ad blocker—it's a comprehensive content filt
 
 The Android version of uBlock Origin is particularly interesting because it exists as both a standalone browser and as an extension for Chrome. When you install uBlock Origin on Android Chrome, you're typically using the extension version, which works differently from the desktop version due to Android's architecture and Chrome's limitations on mobile. The Chrome extension version blocks ads and trackers effectively but lacks some of the advanced features available in the standalone app, such as system-wide ad blocking in other browsers and applications.
 
-One of the most powerful aspects of uBlock Origin is its resource efficiency. During my performance tests, I compared it against several popular ad blockers for Android and found that uBlock Origin consistently used less RAM and CPU resources than competitors while maintaining similar or better blocking capabilities. This efficiency is particularly important on mobile devices where resources are more limited than on desktop computers.
+One of the most powerful aspects of uBlock Origin is its resource efficiency. It's widely regarded as one of the lightest ad blockers on Android for RAM and CPU use, blocking as much as heavier alternatives. This efficiency is particularly important on mobile devices where resources are more limited than on desktop computers.
 
 ## Prerequisites Before Installation {#prerequisites}
 

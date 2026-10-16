@@ -53,7 +53,7 @@ The setup below covers five device types, matching the most common family scenar
 | iPhone 15 | iOS 18 | Chrome | Age 13 |
 | Chromebook | ChromeOS | Chrome | Both |
 
-Each device had its own Google account set up as a child under Family Link. I tried to access 50 sites across 5 categories: social media, adult content, gambling, violence, and anonymous chat. I recorded whether the site was blocked, partially blocked, or fully accessible.
+Each approach is judged the way a parent would check it: a child Google account under Family Link, measured against the categories that matter — social media, adult content, gambling, violence, and anonymous chat. For each category, the question is simple: blocked, partially blocked, or fully accessible.
 
 ## Test Results: Blocking Accuracy
 

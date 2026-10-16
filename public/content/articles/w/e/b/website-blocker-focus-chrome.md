@@ -43,7 +43,7 @@ The challenge of digital distraction has evolved significantly with the advent o
 - [Troubleshooting Common Issues with Website Blockers](#troubleshooting-common-issues-with-website-blockers)
 - [Beyond Blocking: Building a Comprehensive Focus System](#beyond-blocking-building-a-comprehensive-focus-system)
 - [Pro Tips and Key Takeaways](#pro-tips-and-key-takeaways)
-- [Head-to-Head Metrics (Measured During Testing)](#comparison-metrics)
+- [Head-to-Head Comparison](#comparison-metrics)
 - [Companion Extensions That Complete Your Setup](#companion-extensions)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Final Verdict](#final-verdict)
@@ -108,11 +108,11 @@ With dozens of website blockers available in the Chrome [Web Store](https://chro
 | [Forest](https://www.forestapp.cc) | Gamified approach, visual focus trees, integrates with [Pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) | Less effective for serious procrastinators, limited blocking options | Users who respond well to gamification and visual feedback |
 
 
-### Head-to-Head Metrics (Measured During Testing) {#comparison-metrics}
+### Head-to-Head Comparison {#comparison-metrics}
 
-The table above summarizes strengths and weaknesses qualitatively. Since numbers make decisions easier, here are the concrete measurements I recorded during a two-week testing window on the same laptop (Chrome 2026, 16 GB RAM):
+The table above summarizes strengths and weaknesses qualitatively. Here are the practical details that usually settle it — free tiers, pricing, blocking scope, scheduling, and lock modes:
 
-| Tool | Free Tier | Paid Plan (at testing) | Blocking Scope | Scheduling | Lock/Strict Mode |
+| Tool | Free Tier | Paid Plan | Blocking Scope | Scheduling | Lock/Strict Mode |
 |------|-----------|------------------------|----------------|------------|------------------|
 | StayFocusd | Yes (full) | Free | Per-site daily time budget | No | Nuclear option (blocks all sites) |
 | LeechBlock NG | Yes (open source) | Free | Unlimited site lists, 6 rule sets | Yes (time windows) | Delayed access (countdown) |
