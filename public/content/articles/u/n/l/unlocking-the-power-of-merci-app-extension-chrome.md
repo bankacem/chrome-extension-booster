@@ -23,9 +23,9 @@ description: "Are you looking for a way to enhance your browsing experience with
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
-Are you looking for a way to enhance your browsing experience with the **merci app extension chrome**? Look no further! In this article, we will delve into the world of Chrome extensions and explore the benefits of using the **merci app extension chrome**. We will also discuss how it can be used in conjunction with other productivity tools, such as our [Quick Screenshot Lite](/extension/quick-screenshot-lite) extension, to streamline your workflow.
+**MerciApp** is the spell-checker French writers actually keep installed — it catches grammar, conjugation, and typography mistakes as you type in Gmail, Docs, and everywhere else you write online. Think Grammarly, but built for French. This guide covers installation, the free vs. paid differences, and how it behaves alongside everyday tools like our [Quick Screenshot Lite](/extension/quick-screenshot-lite).
 
-With the rise of Chrome extensions, it's easier than ever to customize your browsing experience and increase productivity. The **merci app extension chrome** is a valuable tool that can help you achieve your goals. Whether you're a student, professional, or simply a casual browser, this extension has something to offer. In this article, we will explore the features and benefits of the **merci app extension chrome** and provide you with a comprehensive guide on how to get the most out of it.
+Setup takes about two minutes: install it, create an account, and it starts underlining mistakes as you type. Below, we walk through the correction interface, the dictionary options, and the settings worth changing if it flags more than you'd like.
 
 ## What is Merci App Extension Chrome?
 
