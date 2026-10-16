@@ -77,7 +77,7 @@ const EditorialPolicy = () => (
 
           <h2 id="reviewers">Who writes and reviews our content?</h2>
           <p>
-            Articles are credited to members of the ExtensionTo editorial team. James Mitchell writes the practical Chrome extension reviews, Miccart Phen covers browser tools and workflows, and Frah Nssim focuses on productivity software and reproducible checks. A separate author page introduces each of them in more detail.
+            Articles are credited to members of the ExtensionTo editorial team. James Mitchell writes the practical Chrome extension reviews, Miccart Phen covers browser tools and workflows, and Frah Nssim focuses on productivity software and reproducible checks. A <Link to="/authors/james-mitchell" className="text-primary hover:underline">separate author page</Link> introduces each of them in more detail.
           </p>
           <p>
             Manus AI is part of the editorial workflow, not an author. It supports research and drafting — gathering documentation, structuring comparisons, drafting passages — and every AI-assisted draft is verified against its sources by a human before anything is published. No article goes live on AI output alone.

@@ -19,6 +19,7 @@ const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
 const EditorialPolicy = lazy(() => import("./pages/EditorialPolicy"));
 const About = lazy(() => import("./pages/About"));
+const AuthorPage = lazy(() => import("./pages/AuthorPage"));
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -68,6 +69,7 @@ const App = () => (
               <Route path="/terms" element={<Terms />} />
               <Route path="/editorial-policy" element={<EditorialPolicy />} />
               <Route path="/about" element={<About />} />
+              <Route path="/authors/:slug" element={<AuthorPage />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
               </Routes>
