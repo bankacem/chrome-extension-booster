@@ -19,7 +19,7 @@ keywords:
   - online betting chrome extension
   - best betting extensions 2026
 meta_description: "Honest 1xbet chrome extension review for 2026: features, annoyances, security risks, and the companion tools that make betting in Chrome safer."
-status: published
+status: draft
 published_at: '2026-05-09T14:15:00.785+00:00'
 scheduled_at: '2026-05-09T14:15:00+00:00'
 author: James Mitchell

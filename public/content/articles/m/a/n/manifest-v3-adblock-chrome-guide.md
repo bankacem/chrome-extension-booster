@@ -67,7 +67,7 @@ All four are lightweight and free to try.
 - **The 30,000 static rule floor is the real constraint.** Each extension is guaranteed 30,000 static rules across enabled rulesets, drawn from a global pool shared by every installed extension. Community filter sets run several times larger than that before conversion.
 - **uBlock Origin Lite is a different product, not a downgrade of the same one.** Its Basic mode ships zero permissions and pure declarative rules; Optimal and Complete modes add cosmetic filtering and scriptlets once you grant host access per site.
 - **The enterprise escape hatch is closed.** The ExtensionManifestV2Availability policy stopped working after its June 2025 removal. I set it on a managed Windows profile to confirm, and the MV2 extension stayed dead.
-- **Optimal mode is the setting that decides whether YouTube behaves.** In Basic mode, sites that fight back with anti-adblock logic won on my test runs. Granting broad access on a handful of domains fixed most of it.
+- **Optimal mode is the setting that decides whether YouTube behaves.** In Basic mode, sites that fight back with anti-adblock logic usually win. Granting broad access on a handful of domains fixed most of it.
 - **Layering beats maximizing one extension.** A DNR blocker in the browser plus DNS filtering on the network caught more than either alone, and cost me about 20 minutes of setup.
 
 ### Step 1: What MV3 Actually Changed

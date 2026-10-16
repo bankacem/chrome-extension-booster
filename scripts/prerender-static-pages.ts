@@ -2,7 +2,7 @@ import fs from "fs-extra";
 import path from "path";
 import yaml from "js-yaml";
 import { marked } from "marked";
-import { getEditorialProfile } from "../src/lib/editorialProfiles";
+import { getEditorialProfile, getEditorialProfileBySlug } from "../src/lib/editorialProfiles";
 
 const ROOT = process.cwd();
 const DIST_DIR = path.join(ROOT, "dist");
@@ -252,6 +252,13 @@ function buildSectionedBody(title: string, sections: { heading: string; paragrap
 
 function buildEditorialPolicyBody(): string {
   return `<main><article><h1>Editorial Policy and Standards</h1><p>Our guides are research-based comparisons compiled from public information and product documentation. Unless a page says otherwise, ExtensionTo has not run independent lab tests.</p><p>ExtensionTo publishes practical, transparent guides that explain the benefits, trade-offs, limitations, and privacy considerations of Chrome extensions.</p><h2>How we write our guides</h2><ul><li>We compare extensions against the stated use case using public information and product documentation, including setup steps, features, pricing, and limitations.</li><li>We consider requested permissions and published privacy information when privacy is relevant.</li><li>We distinguish documented facts, product-documentation statements, and editorial opinion.</li><li>We review important pages when products, browser policies, or material claims change.</li></ul><h2>Who writes and reviews</h2><p>Articles are credited to James Mitchell or the ExtensionTo Editorial Team. Author labels describe editorial responsibility; readers should use the methodology and documentation to evaluate individual claims.</p><h2>Corrections</h2><p>Readers can contact ExtensionTo about inaccurate claims, outdated details, or broken links so that material corrections can be reviewed and reflected in the article when appropriate.</p><p><a href="/blog">Read the latest guides</a> · <a href="/">Back to ExtensionTo</a></p></article></main>`;
+}
+
+function buildAuthorBody(): string {
+  const profile = getEditorialProfileBySlug("james-mitchell");
+  if (!profile) return `<main><article><h1>Author</h1><p>Author not found.</p></article></main>`;
+  const bioParagraphs = profile.bio.split("\n\n").map((p) => `<p>${escapeHtml(p)}</p>`).join("");
+  return `<main><article><h1>${escapeHtml(profile.name)}</h1><p><img src="${escapeHtml(profile.image)}" alt="${escapeHtml(profile.name)}" width="160" height="160" /></p><p><strong>${escapeHtml(profile.role)}</strong></p>${bioParagraphs}<p><a href="/editorial-policy">Editorial Policy</a> · <a href="/blog">Read the latest guides</a> · <a href="/">Back to ExtensionTo</a></p></article></main>`;
 }
 
 function parseExtensions(): ExtensionEntry[] {
@@ -517,6 +524,20 @@ async function main() {
   await writeRoute("/editorial-policy", template, "Editorial Policy and Standards", "How ExtensionTo compiles and maintains its Chrome extension guides from public information and product documentation.", buildEditorialPolicyBody(), "website", undefined, undefined, "en");
   await writeRoute("/about", template, "About ExtensionTo", "ExtensionTo publishes nine free Chrome extensions and a large library of practical guides — compiled from public documentation, with an explicit editorial method.", buildSectionedBody("About ExtensionTo", ABOUT_SECTIONS), "website", undefined, undefined, "en");
   await writeRoute("/contact", template, "Contact ExtensionTo", `Reach the ExtensionTo team by email at ${CONTACT_EMAIL} or through the site contact form.`, `<main><article><h1>Contact Us</h1><p>Questions about a guide, an extension, a correction, or your data? The most reliable way to reach the ExtensionTo team is email: <a href="mailto:${escapeHtml(CONTACT_EMAIL)}">${escapeHtml(CONTACT_EMAIL)}</a>.</p><p>You can also use the contact form on this page.</p><p><a href="/blog">Read the latest guides</a> · <a href="/">Back to ExtensionTo</a></p></article></main>`, "website", undefined, undefined, "en");
+  const authorProfile = getEditorialProfileBySlug("james-mitchell");
+  if (authorProfile) {
+    const authorSchema = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: authorProfile.name,
+      url: `${SITE_URL}/authors/james-mitchell`,
+      image: `${SITE_URL}${authorProfile.image}`,
+      jobTitle: authorProfile.role,
+      description: authorProfile.bio,
+      worksFor: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    };
+    await writeRoute("/authors/james-mitchell", template, `${authorProfile.name} — ${authorProfile.role} | ${SITE_NAME}`, authorProfile.bio.slice(0, 160), buildAuthorBody(), "website", authorSchema, undefined, "en");
+  }
 
   for (const extension of extensions) {
     const description = extension.longDescription || extension.description;

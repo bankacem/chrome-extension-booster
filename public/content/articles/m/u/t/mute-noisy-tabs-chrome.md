@@ -149,7 +149,7 @@ Finally, some users report issues with muting persisting across browser sessions
 
 Silencing noisy tabs solves the audio problem, but a calm browsing session also depends on what else loads, blinks, and interrupts you. These are the four companion extensions I run alongside my tab-muting setup:
 
-- [ProTab Suspender](/extension/protab-suspender) — automatically sleeps background tabs after a chosen idle period; muted or not, sleeping tabs cannot suddenly start playing sound, and my test machine freed roughly 40% of browser memory doing this.
+- [ProTab Suspender](/extension/protab-suspender) — automatically sleeps background tabs after a chosen idle period; muted or not, sleeping tabs cannot suddenly start playing sound, and suspending idle tabs is one of the fastest ways to reclaim browser memory.
 - [Light Popup Blocker](/extension/light-popup-blocker) — kills the pop-up windows that are one of the most common sources of surprise autoplay audio in the first place — prevention beats muting.
 - [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — dims every site on a schedule, completing the quiet-evening setup: muted tabs and a dark screen during late-night reading sessions.
 - [Offline Reader Pro](/extension/offline-reader-pro) — strips articles down to clean text you can read without any embedded video or audio ever loading — my preferred way to consume long reads during commutes.

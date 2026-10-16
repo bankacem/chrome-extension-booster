@@ -36,7 +36,7 @@ updated_at: '2026-09-23T13:54:38.000+00:00'
 
 ClaroRead is a Chrome extension that provides text-to-speech, highlighting, and literacy support tools. It is compared here against 5 competitors — Read&Write for Google Chrome, NaturalReader, Speechify, Read Aloud, and Announcify — to find the best assistive reading tool for Chrome in 2026.
 
-## My Test Methodology
+## How the Extensions Were Compared
 
 Each extension is assessed on five types of content: a 2,000-word news article, a 500-word academic abstract, a complex government web page with nested tables, a PDF rendered in Chrome, and a Google Docs document. The criteria: voice quality (naturalness), reading speed control, highlighting accuracy, and ease of activation.
 

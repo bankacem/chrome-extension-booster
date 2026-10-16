@@ -211,7 +211,7 @@ To better understand the performance implications, I monitored resource usage wh
 
 4. **Page Loading Times**: Extensions that modify page content could add 0.5-2 seconds to page loading times, with more complex extensions taking longer.
 
-When I compared Yandex Browser's performance with Chrome while running the same extensions, I found that Yandex generally performed similarly or slightly better in most cases. This is likely due to Yandex's optimizations, though the differences were usually minor and not noticeable in everyday browsing.
+Yandex Browser runs on the same Chromium engine as Chrome, so with the same extensions installed the two perform much alike — any differences are minor and vanish in everyday browsing.
 
 For users concerned about performance, I recommend being selective about which extensions you install and regularly auditing your installed extensions to remove any that are no longer needed or causing performance issues.
 

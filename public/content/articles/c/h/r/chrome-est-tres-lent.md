@@ -146,7 +146,7 @@ With 8GB of RAM total, Chrome runs adequately with 5-8 tabs and 5-8 extensions. 
 
 ### Q: Does Chrome's Memory Saver mode actually work?
 
-It works, but not as well as ProTab Suspender. Memory Saver freed 400MB in my test while ProTab Suspender freed 1.4GB. Memory Saver is also less configurable — you cannot set custom timeout periods or whitelist specific tabs.
+It works, but not as well as ProTab Suspender. In practice, Chrome's built-in saver reclaims noticeably less memory — the dedicated suspender unloads inactive tabs far more aggressively — and Memory Saver is also less configurable: you cannot set custom timeout periods or whitelist specific tabs.
 
 ### Q: Can extensions themselves slow down Chrome?
 

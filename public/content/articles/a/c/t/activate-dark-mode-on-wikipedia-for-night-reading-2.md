@@ -36,7 +36,7 @@ updated_at: '2026-09-14T12:00:00.000+00:00'
 
 If you are like me, Wikipedia is open in your browser more often than you would like to admit. Research, curiosity, late-night reading spirals — it is the site we all use and the one that somehow always blinds us with its white background at 11 PM.
 
-I spent a weekend testing every method I could find to enable dark mode on Wikipedia. I checked articles from [Techsive](https://techsive.com/how-to-enable-dark-mode-on-wikipedia/), [NightEye](https://nighteye.app/wikipedia-dark-mode/), and [TechCrunch](https://techcrunch.com/2024/08/08/how-to-enable-wikipedias-dark-mode/) for reference. Here is what I found: most of them cover one or two methods but never compare all options side by side. None of them tell you which companion extensions turn Wikipedia into a proper research tool rather than just a dark-themed page. This guide fills that gap.
+There are several ways to enable dark mode on Wikipedia. I checked guides from [Techsive](https://techsive.com/how-to-enable-dark-mode-on-wikipedia/), [NightEye](https://nighteye.app/wikipedia-dark-mode/), and [TechCrunch](https://techcrunch.com/2024/08/08/how-to-enable-wikipedias-dark-mode/) for reference. Here is what I found: most of them cover one or two methods but never compare all options side by side. None of them tell you which companion extensions turn Wikipedia into a proper research tool rather than just a dark-themed page. This guide fills that gap.
 
 ## Companion Extensions That Complete Your Setup
 

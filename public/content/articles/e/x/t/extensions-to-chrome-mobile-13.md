@@ -176,7 +176,7 @@ Productivity extensions can transform your mobile browsing experience by automat
 
 Mobile screens make traditional tab management challenging, but specialized extensions can help. One standout is [TabMan](https://chromewebstore.google.com/detail/tabman-tab-manager-and-sa/), which provides a visual tab management interface optimized for touch. TabMan reduces the time spent searching for specific tabs, particularly when working with more than five or six tabs simultaneously.
 
-Another excellent option is [OneTab](https://chromewebstore.google.com/detail/onetab/chphlpgkkbfmbbfmgkggljemmlfbhgji), which converts all open tabs into a list for easy management. This proved especially useful on mobile when I needed to preserve battery life or reduce memory usage. When activated, OneTab suspended 15 open tabs in my test, reducing memory usage by over 70% while keeping all tabs accessible for later retrieval.
+Another excellent option is [OneTab](https://chromewebstore.google.com/detail/onetab/chphlpgkkbfmbbfmgkggljemmlfbhgji), which converts all open tabs into a list for easy management. On mobile that's a real memory-saver: a long row of open tabs collapses into one lightweight list you can restore later, individually or all at once.
 
 ### Note-Taking and Research Tools
 

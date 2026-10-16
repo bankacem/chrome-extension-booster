@@ -31,7 +31,7 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
-A reader asked me: "I have never used a screenshot extension before. How do I actually do it?" This tutorial is for you. I will walk through every step from installation to sharing, with exact clicks, keyboard shortcuts, and settings. I recorded all times and file sizes on my Lenovo IdeaPad 3 (Intel Core i5-1135G7, 8GB DDR4, Windows 11 Pro).
+A reader asked me: "I have never used a screenshot extension before. How do I actually do it?" This tutorial is for you. I will walk through every step from installation to sharing, with exact clicks, keyboard shortcuts, and settings. Timing and file-size figures are representative, not lab benchmarks — your own numbers will vary with page length and machine.
 
 ## Step 1: Install a Screenshot Addon
 
@@ -119,7 +119,7 @@ Quick Screenshot Lite saves files locally. To share:
 
 Awesome Screenshot used to be my go-to extension until I hit the 10-screenshots-per-week cloud upload limit. The extension pushes its Pro subscription ($4/month) aggressively — a popup after every 5 captures. The annotation editor opens automatically, adding unwanted delay to quick captures. At 110MB RAM, it is the second-heaviest screenshot extension.
 
-The full-page capture is unreliable. On my test page, three out of three captures were clipped. For a tool marketed as "the best screenshot extension," missing the bottom 5% of a page is a dealbreaker.
+The full-page capture is unreliable — repeated captures clipped the bottom of long pages. For a tool marketed as "the best screenshot extension," losing the bottom of the page is a dealbreaker.
 
 ### Nimbus Screenshot — Good Annotation, Broken Capture
 

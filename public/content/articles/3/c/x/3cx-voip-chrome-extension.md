@@ -87,7 +87,7 @@ Zoom Phone also requires a Zoom subscription ($15/user/month) on top of the phon
 
 ### Dialpad — AI Features Are Great, But Call Quality Suffers
 
-Dialpad's AI features are genuinely impressive. The live transcription during calls is accurate (95% in my test), and the AI call summaries that appear after each call save real time — I saved roughly 2 minutes per call by not taking manual notes. Dialpad also suggests action items from conversations, which is a genuine productivity boost.
+Dialpad's AI features are genuinely impressive. The live transcription during calls is generally accurate, and the AI call summaries that appear after each call save real time — skipping manual note-taking can easily shave a couple of minutes off each call. Dialpad also suggests action items from conversations, which is a genuine productivity boost.
 
 But Dialpad's call quality was the weakest of the three competitors. Over Ethernet it sounded clear but not quite as clean as 3CX or Zoom Phone. On mobile networks, Dialpad dropped off further, with noticeably more jitter and packet loss. According to [Dialpad's own status page](https://status.dialpad.com/), they have experienced multiple outages in 2026, including a 4-hour downtime event in March that affected call routing for North American users.
 

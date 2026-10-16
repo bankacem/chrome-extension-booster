@@ -38,7 +38,7 @@ faq:
   - question: How does it compare to GitHub Copilot?
     answer: "They solve different problems and I ended up keeping both. Copilot lives in the editor, sees my open files, and is better at completing code that fits my project's existing patterns. Blackbox lives in the browser, sees the page I am reading, and is better at explaining unfamiliar documentation or pulling a snippet out of a video. If you can only have one and you write code every day, the in-editor assistant is the higher-value tool. If your bottleneck is research and understanding rather than typing, the browser extension may serve you better."
   - question: How accurate is it on tutorial code?
-    answer: "Accurate enough to use as a starting point, not accurate enough to trust without checking. On high-quality video with clear text, extraction matched what I could read on screen, with occasional single-character errors that a linter catches instantly. On low-quality or partially obscured video, it filled gaps with invented code that looked correct, which is the failure I would warn people about most strongly. My rule after the test week was simple: run it, read it, and never paste extracted code into a file without at least a quick scan against the original frame."
+    answer: "Accurate enough to use as a starting point, not accurate enough to trust without checking. On high-quality video with clear text, extraction matched what was readable on screen, with occasional single-character errors that a linter catches instantly. On low-quality or partially obscured video, it filled gaps with invented code that looked correct, which is the failure to watch out for most. A sensible rule: run it, read it, and never paste extracted code into a file without at least a quick scan against the original frame."
   - question: Does it integrate with IDEs like VS Code?
     answer: "Blackbox offers separate editor integrations outside of the Chrome extension, so the browser tool and the editor tool are distinct products that share an account. Installing the Chrome extension does not put anything in your IDE — the two are separate installs, and judging one by the other tells you little about how the other behaves. In my workflow the browser handled reading and gathering while my editor assistant handled writing, and I never felt a need to connect the two directly. If your main goal is inline completion inside VS Code, install the editor integration and evaluate that on its own terms rather than judging it by the extension."
   - question: How do I uninstall it cleanly?
@@ -102,7 +102,7 @@ The extension puts three things in your browser. First, a chat panel you can ope
 
 The framing matters. This is not an editor plugin pretending to live in a browser. It is a browsing companion that assumes you spend a lot of your day on YouTube tutorials, docs sites, Stack Overflow threads, and GitHub file views. That describes my research time accurately, which is why I gave it a fair trial instead of dismissing it.
 
-During my week I found the pattern that worked: use the browser extension for gathering and understanding, and use my editor assistant for writing. When I tried to make Blackbox write whole functions from a one-line prompt in the sidebar, the results needed so much editing that I would have been faster typing it myself. When I used it to answer "what is this parameter for" while staring at unfamiliar documentation, it earned its keep.
+The pattern that works: use the browser extension for gathering and understanding, and your editor assistant for writing. Asking the sidebar to write whole functions from a one-line prompt produces output that needs heavy editing — faster to type it yourself. Asking it "what is this parameter for" while reading unfamiliar documentation is where it earns its keep.
 
 #### The permission model, and what I checked before trusting it
 
@@ -210,7 +210,7 @@ They solve different problems and I ended up keeping both. Copilot lives in the 
 
 ### How accurate is it on tutorial code?
 
-Accurate enough to use as a starting point, not accurate enough to trust without checking. On high-quality video with clear text, extraction matched what I could read on screen, with occasional single-character errors that a linter catches instantly. On low-quality or partially obscured video, it filled gaps with invented code that looked correct, which is the failure I would warn people about most strongly. My rule after the test week was simple: run it, read it, and never paste extracted code into a file without at least a quick scan against the original frame.
+Accurate enough to use as a starting point, not accurate enough to trust without checking. On high-quality video with clear text, extraction matched what I could read on screen, with occasional single-character errors that a linter catches instantly. On low-quality or partially obscured video, it filled gaps with invented code that looked correct, which is the failure I would warn people about most strongly. The safe rule is simple: run it, read it, and never paste extracted code into a file without at least a quick scan against the original frame.
 
 ### Does it integrate with IDEs like VS Code?
 
@@ -224,7 +224,7 @@ Right-click the BLACKBOX AI icon in the Chrome toolbar and choose **Remove from 
 
 I would recommend the Blackbox AI Chrome extension to one specific group: people who spend a meaningful part of their week learning from videos, documentation, and forum threads inside a browser. The video code extraction is the feature I could not replicate any other way, and the sidebar chat on a docs page is a real improvement over switching to a separate tab. Set site access to "On click" during setup, treat every answer about library versions as unverified, and it becomes a solid research assistant.
 
-I would not recommend it as a code-writing tool. It cannot see your project, and prompt-to-function output arrived needing enough rework that the manual route was faster. If writing speed inside your editor is the problem you are trying to solve, GitHub Copilot or a comparable in-editor assistant is the better purchase, and it is the alternative I would point you to first. The two coexist well, and after my test week I kept both rather than choosing.
+I would not recommend it as a code-writing tool. It cannot see your project, so prompt-to-function output generally needs enough rework that writing it yourself is faster. If writing speed inside your editor is the problem you are trying to solve, GitHub Copilot or a comparable in-editor assistant is the better purchase, and it is the alternative I would point you to first. The two coexist well — the extension covers research and explanation, the in-editor assistant covers writing.
 
 ## Sources
 

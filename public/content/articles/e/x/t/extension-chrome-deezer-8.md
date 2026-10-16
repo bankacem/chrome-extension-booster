@@ -192,7 +192,7 @@ The extension also supports Deezer's "offline mode" for premium users, allowing 
 
 ## Browser Performance Considerations {#performance}
 
-When evaluating any browser extension, performance impact is a critical consideration. During my comprehensive testing of the extension chrome deezer across multiple Chrome configurations and hardware setups, I paid close attention to resource usage, responsiveness, and potential conflicts with other extensions. Here's what I found based on real-world usage rather than theoretical benchmarks.
+When evaluating any browser extension, performance impact is a critical consideration. For the Deezer extension, the things to watch are resource usage, responsiveness, and potential conflicts with other extensions — covered below in practical terms rather than theoretical benchmarks.
 
 ### Resource Usage
 
@@ -217,7 +217,7 @@ I encountered only one minor conflict: with certain ad blockers that aggressivel
 
 ### Memory Management Over Time
 
-One potential concern with any extension that maintains persistent playback is memory management over extended periods. To evaluate this, I ran continuous playback tests for up to 24 hours, monitoring memory usage throughout. In my experience, the extension demonstrated excellent memory management, with no significant memory leaks detected even after extended use.
+One potential concern with any extension that maintains persistent playback is memory management over extended periods. Long sessions are where memory leaks would show up first, and nothing in the extension's reviews or support threads suggests one here — but if you keep your browser open for days at a time, Chrome's Task Manager (Shift+Esc) is the quickest way to confirm it's behaving.
 
 What I particularly appreciated was how the extension handled memory when switching between different tabs and contexts. Unlike some extensions that gradually increase memory usage over time, the Deezer extension maintained a consistent memory footprint regardless of how frequently I switched between tabs or applications. This stability is crucial for users who keep their browser running for extended periods without restarting.
 

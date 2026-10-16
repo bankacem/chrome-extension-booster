@@ -68,7 +68,7 @@ If your connection drops regularly, or you download large files from flaky serve
 
 EagleGet is IDM's closest free competitor. It supports 6-thread downloads, video detection, and has a clean interface. During my speed tests, EagleGet scored second place on all three servers — 62 MB/s on CDN (versus IDM's 83 MB/s) and 8.1 MB/s on the slow server (versus IDM's 11 MB/s).
 
-However, EagleGet has two problems. First, the installer bundles adware. During installation on my test machine, the default settings included offers for a browser toolbar and a system optimizer. I had to manually uncheck both options. According to [EagleGet's download page on major software portals](https://www.majorgeeks.com/files/details/eagleget.html), users frequently report the bundled adware as their top complaint. Second, EagleGet consumed 120MB of RAM during downloads — more than any other manager tested. On my 8GB machine with Chrome and other apps running, this caused noticeable system slowdown.
+However, EagleGet has two problems. First, the installer bundles adware — the default settings include offers for a browser toolbar and a system optimizer, so uncheck both during setup. According to [EagleGet's download page on major software portals](https://www.majorgeeks.com/files/details/eagleget.html), users frequently report the bundled adware as their top complaint. Second, EagleGet is the heaviest of the managers here on memory: it runs noticeably heavier than IDM or JDownloader during downloads, which you will feel on a machine already loaded with Chrome and other apps.
 
 EagleGet also has an outdated interface. Its design has not changed since 2020, and the video detection feature failed on 2 of 5 test sites (Disney+ and Hulu) where IDM and JDownloader succeeded.
 

@@ -578,7 +578,7 @@ To maximize the performance of the AliDropship extension, I recommend the follow
 
 5. **Stay updated**: Keep the extension and WooCommerce updated to benefit from improvements and compatibility fixes.
 
-After implementing these optimization strategies in my test stores, I observed approximately 20% improvement in overall performance and reliability. The key is to view the extension as a tool that requires ongoing attention rather than a set-it-and-forget-it solution.
+These optimization strategies help keep store performance and reliability consistent as a catalog grows. The key is to view the extension as a tool that requires ongoing attention rather than a set-it-and-forget-it solution.
 
 ## Companion Extensions That Complete Your Setup
 

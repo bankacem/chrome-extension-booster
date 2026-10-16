@@ -13,7 +13,7 @@ const principles = [
   {
     icon: ShieldCheck,
     title: "Privacy and permissions",
-    body: "When privacy is relevant, we look at the permissions an extension requests and the data practices its developer states, and the difference between a useful feature and an unnecessary permission.",
+    body: "When privacy is relevant, we look at the permissions an extension requests and the data practices its developer states, and we spell out the difference between a useful feature and an unnecessary permission.",
   },
   {
     icon: BookOpen,
@@ -58,18 +58,45 @@ const EditorialPolicy = () => (
           ))}
         </section>
 
-        <section id="reviewers" className="prose prose-lg dark:prose-invert max-w-none">
-          <h2>Who writes and reviews our content?</h2>
+        <section className="prose prose-lg dark:prose-invert max-w-none">
+          <h2>How a review is actually put together</h2>
           <p>
-            Articles credited to James Mitchell are written as practical Chrome extension reviews and guides. Articles credited to the ExtensionTo Editorial Team are researched and maintained by the site team. Author labels describe editorial responsibility; they are not a substitute for evidence, and readers should use the methodology and cited documentation to evaluate each claim.
+            A review starts with the Chrome Web Store listing and the developer's own documentation: what the extension claims to do, which permissions it requests, what the privacy policy says about data handling, and what it costs. The reviewer then reads the store's user reviews and compares the extension against alternatives that solve the same problem.
           </p>
+          <p>
+            The comparison is always framed around a concrete use case — a tab manager for people with too many tabs open, for example — and the criteria are stated in the article: stated features, pricing, permissions, and known limitations. That way a reader can see why one option ranked above another instead of taking a verdict on faith. Numbers in a review — ratings, user counts, permission lists — come from cited sources, never from invented benchmarks. This site has no test lab and runs no performance tests, and it does not present its comparisons as measurements.
+          </p>
+
+          <h2>Editorial independence</h2>
+          <p>
+            The reviews and comparisons on this site are not for sale. Advertising is the site's funding, but advertisers do not write, review, or approve articles, and paid placement in rankings or comparison tables is not offered. Where a guide recommends an ExtensionTo extension from the site's own catalog, it says so; readers should weigh that recommendation accordingly.
+          </p>
+          <p>
+            Opinions are labeled as opinions. A sentence that says an extension “feels fast” is a reviewer's judgment after using it; a sentence that says it “requests three permissions” is a fact from the store listing. Keeping the two apart is a standing rule, not a style preference.
+          </p>
+
+          <h2 id="reviewers">Who writes and reviews our content?</h2>
+          <p>
+            Articles are credited to members of the ExtensionTo editorial team. James Mitchell writes the practical Chrome extension reviews, Miccart Phen covers browser tools and workflows, and Frah Nssim focuses on productivity software and reproducible checks. A <Link to="/authors/james-mitchell" className="text-primary hover:underline">separate author page</Link> introduces each of them in more detail.
+          </p>
+          <p>
+            Manus AI is part of the editorial workflow, not an author. It supports research and drafting — gathering documentation, structuring comparisons, drafting passages — and every AI-assisted draft is verified against its sources by a human before anything is published. No article goes live on AI output alone.
+          </p>
+          <p>
+            Author labels describe editorial responsibility; they are not a substitute for evidence. Readers should use the methodology and the cited documentation to evaluate each claim.
+          </p>
+
           <h2>What we do not promise</h2>
           <p>
-            We do not claim that every extension is suitable for every user, that a product will remain unchanged, or that a recommendation is an endorsement by Google. Readers should review current permissions, publisher information, pricing, and privacy terms before installing software.
+            We do not claim that every extension is suitable for every user, that a product will remain unchanged, or that a recommendation is an endorsement by Google. Extensions update, developers change policies, and a review is a snapshot of what was documented at the time. Readers should review current permissions, publisher information, pricing, and privacy terms before installing anything.
           </p>
-          <h2>Corrections and feedback</h2>
+
+          <h2>Corrections policy</h2>
           <p>
-            If you find an inaccurate claim, an outdated product detail, or a broken link, please contact the ExtensionTo team through the website. Material corrections should be reflected in the article and its update date when appropriate.
+            Errors get fixed, and the fix is dated. When a product updates, a browser policy changes, or a reader reports a mistake, the affected article is corrected and its update date is changed to reflect the correction. Material corrections — a wrong price, a wrong permission, a feature that no longer exists — are treated as seriously as the original review; typos and small wording fixes are handled without a new date.
+          </p>
+          <p>
+            If you find an inaccurate claim, an outdated product detail, or a broken link, please contact the ExtensionTo team through the contact page with the article URL and what is wrong. Reports that check out lead to a correction.
           </p>
         </section>
 

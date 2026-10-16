@@ -172,21 +172,44 @@ export const ABOUT_SECTIONS: LegalSection[] = [
   {
     heading: "What ExtensionTo is",
     paragraphs: [
-      "ExtensionTo is a website that publishes a catalog of nine free Chrome extensions — including a screenshot tool, a tab suspender, a popup blocker, a dark mode switcher, and more — together with a large library of practical guides about Chrome, browser privacy, and productivity.",
-      "Every extension in the catalog is free. There are no premium tiers, and the site is funded by advertising rather than by charging for software.",
+      "ExtensionTo is a website about Chrome browser extensions. It publishes a catalog of nine free extensions — including a screenshot tool, a tab suspender, a popup blocker, a dark mode switcher, and more — alongside a large library of practical guides about Chrome, browser privacy, and productivity.",
+      "Everything in the catalog is free to install and use. There are no premium tiers and no feature paywalls. The site is funded by advertising, which is what keeps the catalog and the guides free.",
+    ],
+  },
+  {
+    heading: "Who the site is for",
+    paragraphs: [
+      "The site is written for ordinary Chrome users: people who install a handful of extensions and want them to work without reading developer documentation. Most readers are not engineers, so guides explain settings in plain language and focus on what actually changes in your browser when you install something.",
+      "It is also written for readers who care about privacy and permissions. Many guides spend as much time on what an extension asks for — and whether those requests make sense — as on what the extension does.",
     ],
   },
   {
     heading: "How the guides are made",
     paragraphs: [
-      "The guides are compiled from public information: official documentation, Chrome Web Store listings, product documentation, and hands-on configuration steps that readers can reproduce. The editorial method — what sources are used, how facts are distinguished from opinion, and when pages are reviewed — is described on the Editorial Policy page.",
-      "The site does not present editorial comparisons as independent laboratory measurements, and where a claim in a guide cannot be verified from documentation, the guide says so explicitly.",
+      "The guides are research-based. A reviewer starts with the extension's Chrome Web Store listing and the developer's own documentation: what it claims to do, what permissions it requests, how it says it handles data, and what it costs. Then they compare that against what other sources say — the developer's privacy policy, the store's user reviews, and how similar extensions solve the same problem.",
+      "When a guide includes hands-on steps, they are written so a reader can repeat them in their own browser. The goal is a checklist you can follow, not a black-box score you have to take on faith.",
+      "ExtensionTo has no test lab and runs no performance benchmarks. If a guide quotes a number — a rating, a user count, a permission list — it comes from a cited source. Where a claim cannot be verified, the guide says so instead of inventing one.",
+    ],
+  },
+  {
+    heading: "Comparisons and opinions",
+    paragraphs: [
+      "Comparisons are framed around a concrete use case — “best ad blockers for slow computers,” not “best ad blockers” in the abstract. Each comparison guide states its criteria up front: stated features, pricing, permissions, and known limitations, so readers can see why one option ranked above another.",
+      "Opinions are labeled as opinions. A sentence that says an extension “feels fast” is a reviewer's judgment from using it; a sentence that says it “requests three permissions” is a fact from the store listing. The site keeps the two apart.",
+    ],
+  },
+  {
+    heading: "Corrections",
+    paragraphs: [
+      "Extensions change and guides go stale. When a product updates, a browser policy changes, or a reader points out an error, the affected page is corrected and its update date is changed to reflect the fix. Minor typos are fixed silently; anything that changes what a reader would decide — a wrong price, a wrong permission, a feature that no longer exists — counts as a material correction.",
+      `Readers are the best early-warning system this site has. If you spot a mistake, write to ${CONTACT_EMAIL}. Include the page URL and what is wrong, and it will be checked.`,
     ],
   },
   {
     heading: "Ownership and contact",
     paragraphs: [
-      `ExtensionTo is owned and operated by the site owner, who is also the operator of the extensions in the catalog. Articles are credited to the ExtensionTo editorial team. Corrections, questions, and feedback are welcome at ${CONTACT_EMAIL} or through the contact page.`,
+      "ExtensionTo is owned and operated by the site owner, who also operates the extensions in the catalog. Articles are credited to the ExtensionTo editorial team, whose people and review standards are described on the Editorial Policy page.",
+      "Advertising is the site's only funding mechanism. Advertisers do not write, review, or approve guides, and paid placement in reviews or comparisons is not offered.",
     ],
   },
 ];

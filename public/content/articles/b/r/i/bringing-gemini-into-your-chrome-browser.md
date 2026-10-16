@@ -31,7 +31,7 @@ description: "Are you looking to enhance your browsing experience with the gemin
 [Comparison with Other Extensions](#comparison-with-other-extensions)
 [FAQ](#faq)
 
-Are you looking to enhance your browsing experience with the **gemini extension to chrome**? Look no further! In this article, we will delve into the world of Gemini Extension, exploring its features, benefits, and installation process. Whether you're a casual surfer or a power user, this guide will help you unlock the full potential of the **gemini extension to chrome**.
+Google's Gemini can live inside Chrome as an extension — answering questions about the page you're reading, summarizing long articles, drafting replies without leaving the tab. This guide walks through what the **Gemini extension for Chrome** actually does, how to install it, and the features worth turning on first.
 
 ## Introduction to Gemini Extension
 

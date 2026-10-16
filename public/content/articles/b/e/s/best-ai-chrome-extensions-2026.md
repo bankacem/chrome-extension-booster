@@ -72,7 +72,7 @@ Sider remains the most complete third-party assistant: one sidebar that opens Ch
 
 BEST WRITING ASSISTANT · FREE TIER
 
-Grammarly's 2026 generation goes far beyond comma policing: tone rewriting, full-sentence generations from short prompts, and context-aware suggestions that respect the field you are typing in — Gmail, LinkedIn, a CMS editor or a support desk. No native browser assistant matches its inline, keystroke-level integration, which is why it stays installed on every test machine we own.
+Grammarly's 2026 generation goes far beyond comma policing: tone rewriting, full-sentence generations from short prompts, and context-aware suggestions that respect the field you are typing in — Gmail, LinkedIn, a CMS editor or a support desk. That inline, keystroke-level integration is still unmatched by any native browser assistant.
 
 **Pros:** works in virtually every text field, excellent free tier. **Cons:** premium suggestions can be aggressive; adds input lag on weak hardware.
 

@@ -100,7 +100,7 @@ Several Chrome Web Store extensions claim to add PDF annotation, signing, or edi
 
 Kami is the best of the bunch — it adds highlight, comment, and drawing tools to PDFs opened in Chrome. But it requires a cloud account (Google or Microsoft login) and uploads your PDF to Kami's servers for processing. According to [Kami's privacy policy](https://www.kamiapp.com/privacy/), uploaded documents are stored on AWS servers and may be accessed for service improvement. For sensitive documents (contracts, legal forms), this is a security concern. Kami also adds 80MB of memory overhead compared to Chrome's native viewer.
 
-PDF Escape has not been updated since 2023 and uses Flash-based rendering — which Chrome no longer supports. It failed to load any of my test files. Lumin PDF required a paid subscription ($10/month) after a 7-day trial and did not support offline PDFs — only cloud-stored files from Google Drive or Dropbox.
+PDF Escape has not been updated since 2023 and uses Flash-based rendering — which Chrome no longer supports. With Flash gone from Chrome entirely, it cannot render documents at all. Lumin PDF required a paid subscription ($10/month) after a 7-day trial and did not support offline PDFs — only cloud-stored files from Google Drive or Dropbox.
 
 The core issue: no third-party extension matches the speed, security, or resource efficiency of Chrome's native viewer for basic PDF reading. For advanced features, dedicated desktop applications remain the better choice.
 

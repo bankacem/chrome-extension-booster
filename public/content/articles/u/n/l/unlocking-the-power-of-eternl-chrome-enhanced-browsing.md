@@ -23,7 +23,7 @@ description: "Are you looking to take your Chrome browsing experience to the nex
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
-Are you looking to take your Chrome browsing experience to the next level? Look no further than Eternl Chrome, a revolutionary approach to browsing that combines the best of Chrome with innovative features and extensions. In this article, we'll delve into the world of Eternl Chrome, exploring its benefits, features, and how it can transform your browsing experience. Whether you're a casual user or a power user, Eternl Chrome is sure to impress, and we'll show you how to get the most out of it with our [Quick Screenshot Lite](/extension/quick-screenshot-lite) and other essential Chrome extensions.
+Eternl is a Cardano wallet that runs as a Chrome extension — your keys stay in the browser, and dApps connect to it instead of asking you to paste seed phrases around the web. This guide covers what Eternl actually does, how it differs from keeping coins on an exchange, and the setup steps that matter. (And yes, [Quick Screenshot Lite](/extension/quick-screenshot-lite) is still the fastest way to document a transaction if you ever need to.)
 
 ## What is Eternl Chrome?
 

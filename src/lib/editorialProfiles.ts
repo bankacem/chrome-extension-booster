@@ -11,9 +11,9 @@ const profiles: Record<string, EditorialProfile> = {
   "James Mitchell": {
     name: "James Mitchell",
     role: "Chrome extension reviewer",
-    bio: "James evaluates Chrome extensions through practical workflow, privacy, performance, and usability criteria.",
+    bio: "James Mitchell reviews Chrome extensions for ExtensionTo. He spends most of his working day installing new tools, reading their permission requests line by line, and checking whether what a developer promises on the store page matches what the extension actually does in the browser.\n\nHis reviews start with the basics: what the extension claims to do, which permissions it asks for, and whether those two things line up. From there he reads the privacy policy the way most people never do — looking for vague data-collection language, third-party sharing clauses, and retention terms that raise more questions than they answer. He also keeps an eye on user reviews in the Chrome Web Store, not for the star ratings but for the patterns in the one-star complaints: broken updates, features that quietly stopped working, support that went silent.\n\nJames doesn't do hype. If an extension is average, he says so. If a feature works well in testing but the privacy policy is thin, both facts end up in the same review. His goal is practical: give readers enough of the checkable details — documented features, permission models, privacy policies, and real user feedback — that they can decide for themselves whether a tool is worth installing.\n\nHe covers productivity, security, and browsing tools, and every verdict on this site carries his name because he stands behind it.",
     type: "Person",
-    url: "/editorial-policy#reviewers",
+    url: "/authors/james-mitchell",
     image: "/content/images/authors/james-mitchell.png",
   },
   "Miccart Phen": {
@@ -66,4 +66,18 @@ export function getEditorialProfile(author?: string): EditorialProfile {
     name: author || defaultEditorialProfile.name,
     type: author ? "Person" : defaultEditorialProfile.type,
   };
+}
+
+function slugifyName(name: string): string {
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/** Look up a profile by its URL slug, e.g. "james-mitchell" for James Mitchell. */
+export function getEditorialProfileBySlug(slug: string): EditorialProfile | undefined {
+  const needle = slug.toLowerCase();
+  return Object.values(profiles).find((p) => slugifyName(p.name) === needle);
 }

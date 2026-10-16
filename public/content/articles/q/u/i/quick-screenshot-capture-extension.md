@@ -61,18 +61,18 @@ Full-page captures of long articles separate these tools fast. Quick Screenshot 
 
 ## Image Quality and Output
 
-I compared the output image dimensions, file size, and visual fidelity.
+Output quality comes down to three things: capture dimensions, file size, and visual fidelity. Here is how the four stack up:
 
-| Extension | Max Dimensions | File Size (avg) | Format Options | Visual Quality |
+| Extension | Max Dimensions | File Size | Format Options | Visual Quality |
 |-----------|---------------|-----------------|----------------|----------------|
-| Quick Screenshot Lite | Full page height | 280 KB | PNG, JPEG, WebP | Excellent |
-| FireShot | Full page height | 340 KB | PNG, JPEG, PDF, GIF | Excellent |
-| Nimbus | Full page height | 420 KB | PNG, JPEG | Very Good |
-| GoFullPage | Full page height | 310 KB | PNG | Excellent |
+| Quick Screenshot Lite | Full page height | smaller — WebP keeps files compact | PNG, JPEG, WebP | Excellent |
+| FireShot | Full page height | moderate | PNG, JPEG, PDF, GIF | Excellent |
+| Nimbus | Full page height | larger — always captures at full resolution | PNG, JPEG | Very Good |
+| GoFullPage | Full page height | moderate | PNG | Excellent |
 
-FireShot offers the most output formats including PDF and GIF. Quick Screenshot Lite produces the smallest file sizes (280 KB avg) while maintaining excellent visual quality, thanks to WebP support.
+FireShot offers the most output formats including PDF and GIF. Quick Screenshot Lite produces the smallest file sizes while maintaining excellent visual quality, thanks to WebP support.
 
-Nimbus produces larger files (420 KB avg) because it adds extra metadata and always captures at maximum resolution.
+Nimbus produces larger files because it adds extra metadata and always captures at maximum resolution.
 
 ## Annotation and Editing Tools
 

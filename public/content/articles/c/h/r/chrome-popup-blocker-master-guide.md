@@ -30,9 +30,9 @@ read_time: 8
 
 I am a news junkie. I visit 20+ news sites daily, and every single one tries to assault me with pop-ups — newsletter sign-ups that trigger when I move my mouse toward the close button, fake download buttons that look like the real "Play" icon, autoplay video overlays that follow me as I scroll, cookie consent walls that cover the entire page, and the occasional "Your computer is infected" scam overlay. So I put 8 of the most popular popup blockers through a careful comparison — their published features, Chrome Web Store specs, and independent reviews — to find which ones actually stop this nonsense. Here is what I found.
 
-## How I Compared Them
+## How the Blockers Were Compared
 
-This is not a lab benchmark. No single reviewer ran all eight blockers through an identical battery of sites, and I am not going to pretend otherwise. Instead, I compared each blocker's published feature set, its Chrome Web Store listing (permissions, user counts, ratings), its approach to overlay detection, and independent coverage where it exists. I weighted overlay and modal blocking most heavily — overlay modals are the dominant pop-up format in 2026 (a 2025 Statista study on digital ad formats puts them at 68% of ad-related pop-ups) — along with memory footprint and the likelihood of breaking legitimate page content.
+This is not a lab benchmark. No single reviewer ran all eight blockers through an identical battery of sites, and this guide does not pretend otherwise. Instead, each blocker's published feature set is weighed here — its Chrome Web Store listing (permissions, user counts, ratings), its approach to overlay detection, and independent coverage where it exists. Overlay and modal blocking carry the most weight — overlay modals are the dominant pop-up format in 2026 (a 2025 Statista study on digital ad formats puts them at 68% of ad-related pop-ups) — along with memory footprint and the likelihood of breaking legitimate page content.
 
 ## The Problem With Chrome's Built-in Popup Blocker
 

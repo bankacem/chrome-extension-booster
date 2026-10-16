@@ -111,7 +111,7 @@ Every shortcut on the shortcuts page has a scope dropdown with two options: "In 
 
 ## The 8 Fixes: The Exact Ladder I Ran on My Own Machine
 
-Work through these in order. Each step is cheap, and the earlier ones resolved the majority of my test cases.
+Work through these in order. Each step is cheap, and the earlier ones fix the most common causes.
 
 ### Step 1: Open the shortcuts page and check whether the key exists at all
 

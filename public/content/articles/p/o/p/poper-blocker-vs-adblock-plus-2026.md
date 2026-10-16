@@ -53,11 +53,11 @@ Filter lists are the real difference in coverage. Adblock Plus leans on EasyList
 
 ## Performance and memory footprint
 
-Blocking rules live in memory while the browser runs, so a blocker's footprint shows up in Chrome's task manager. We measured both on a test machine running current Chrome on Windows 11 with eight tabs open, checking the built-in task manager after five minutes idle and again on a heavy news site. Your numbers will differ with version and usage, but the pattern is stable: the specialist is lighter because it carries fewer rules and no Acceptable Ads machinery.
+Blocking rules live in memory while the browser runs, so a blocker's footprint shows up in Chrome's task manager. You can check the difference yourself in Chrome's Task Manager (Shift+Esc) with your usual tabs open. The pattern holds across setups: the specialist runs lighter because it carries fewer rules and no Acceptable Ads machinery.
 
 | Measurement | Poper Blocker | Adblock Plus |
 | --- | --- | --- |
-| Extension memory at idle, service worker plus UI | roughly 40-70 MB | roughly 100-160 MB |
+| Extension memory at idle, service worker plus UI | lighter — popup rules only | heavier — full EasyList engine |
 | Active filter rules | a few thousand, popup-focused | tens of thousands, EasyList-based |
 | Page-load overhead on an ad-heavy news site | small, usually unnoticeable | modest, the price of full ad filtering |
 | CPU on pages with aggressive overlays | low to moderate, its specialty | moderate |

@@ -168,7 +168,7 @@ Top reviewers follow a proven framework. Here's the structure that gets "Helpful
 
 **1. Hook (First 2 Lines)**
 - Start with a specific benefit or surprising fact
-- Example: *"I compared this against 3 competitors, and the battery life shocked me."*
+- Example: *"The battery life on this thing is unreal — I stopped carrying my charger."*
 
 **2. Context (Who You Are)**
 - Establish credibility
