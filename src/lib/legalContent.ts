@@ -13,7 +13,7 @@
  */
 
 export const LAST_UPDATED = "October 9, 2026";
-export const CONTACT_EMAIL = "dhaichione@gmail.com";
+export const CONTACT_EMAIL = "contact@extensionto.com";
 
 export interface LegalSection {
   heading: string;

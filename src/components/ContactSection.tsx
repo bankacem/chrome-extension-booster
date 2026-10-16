@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MessageSquare, Send } from "lucide-react";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
+import { CONTACT_EMAIL } from "@/lib/legalContent";
 
 const ContactSection = () => {
   const { t } = useTranslation();
@@ -30,7 +31,7 @@ const ContactSection = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: t("contact.email"), value: "dhaichione@gmail.com" }
+    { icon: Mail, label: t("contact.email"), value: CONTACT_EMAIL }
   ];
 
   return (
