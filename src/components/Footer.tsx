@@ -2,6 +2,7 @@ import { Chrome, Mail, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLang } from "@/hooks/useLang";
 import { useTranslation } from "react-i18next";
+import { CONTACT_EMAIL } from "@/lib/legalContent";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -25,7 +26,7 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Mail, href: `mailto:dhaichione@gmail.com`, label: "Email" },
+    { icon: Mail, href: `mailto:${CONTACT_EMAIL}`, label: "Email" },
   ];
 
   return (
