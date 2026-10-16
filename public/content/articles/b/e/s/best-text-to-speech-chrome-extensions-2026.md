@@ -182,7 +182,7 @@ Read Aloud is my answer for most people, and I say that after trying to find a r
 
 ### Do text-to-speech extensions actually work on PDFs?
 
-Sometimes, and the details matter. A digital-born PDF opened in Chrome's built-in viewer works with only some extensions, and only if you have enabled **Allow access to file URLs** at `chrome://extensions` for local files. NaturalReader and the study-focused tools handled my test PDF because they open it in their own reader rather than fighting Chrome's viewer. Scanned PDFs are a different problem entirely, since there is no text layer to read, and only tools with built-in OCR could do anything with my scanned research paper. If PDFs are your main use case, choose based on that alone and expect to upload files rather than read them in place.
+Sometimes, and the details matter. A digital-born PDF opened in Chrome's built-in viewer works with only some extensions, and only if you have enabled **Allow access to file URLs** at `chrome://extensions` for local files. NaturalReader and the study-focused tools handle this case because they open the PDF in their own reader rather than fighting Chrome's viewer. Scanned PDFs are a different problem entirely, since there is no text layer to read — only tools with built-in OCR can do anything with a scanned document. If PDFs are your main use case, choose based on that alone and expect to upload files rather than read them in place.
 
 ### Can I get natural-sounding voices without paying?
 

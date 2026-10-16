@@ -87,7 +87,7 @@ Chrome on Android does have a few built-in features that overlap with extensions
 4. Confirm the permissions dialog
 5. The extension icon appears in Kiwi's toolbar
 
-Kiwi supports the complete Chrome Web Store. I installed Quick Screenshot Lite, uBlock Origin, and Dark Reader in under 2 minutes.
+Kiwi supports the complete Chrome Web Store — Quick Screenshot Lite, uBlock Origin, and Dark Reader all install straight from it in a minute or two.
 
 ## 8 Companion Extensions for Android
 
@@ -112,7 +112,7 @@ Running extensions on a phone requires more care than on desktop. Here is what I
 - **Limit to 5-7 extensions.** Each extension adds 20-60MB of RAM. With 12 extensions, my 8GB phone used 680MB of browser RAM alone.
 - **Use lightweight alternatives.** Some desktop extensions are resource-heavy on mobile. Quick Screenshot Lite at 35MB is efficient. Avoid extensions with background processes on mobile.
 - **Disable unused extensions.** Kiwi Browser lets you enable/disable extensions from the toolbar menu. Keep only active extensions enabled.
-- **Prefer Kiwi Browser.** It supports the most extensions (12/12 in my test), uses less RAM than Lemur, and is better maintained.
+- **Prefer Kiwi Browser.** It supports the widest range of extensions, uses less RAM than Lemur, and is better maintained.
 
 ## Companion Extensions That Complete Your Setup
 
@@ -130,7 +130,7 @@ Install only what matches a real need in your day.
 A: No. Chrome on Android does not support extensions. You need Kiwi Browser, Yandex Browser, or Lemur Browser to use [Chrome extensions on Android](/blog/chrome-extensions-on-android-2026-guide).
 
 **Q: Which Android browser supports the most Chrome extensions?**
-A: Kiwi Browser supports the complete Chrome Web Store — all 12 extensions in the comparison installed and worked correctly there. Lemur installed 10/12. Yandex supports only its own limited catalog (~500 extensions).
+A: Kiwi Browser supports the complete Chrome Web Store — every extension in the comparison installed and worked correctly there. Lemur handled most but not all of them. Yandex supports only its own limited catalog (~500 extensions).
 
 **Q: Is it safe to use extensions on Android?**
 A: Yes, as long as you install from the official Chrome Web Store. Avoid sideloading extension files (.crx) from unknown sources.
@@ -146,7 +146,7 @@ A: Kiwi Browser is open source and generally considered safe. It does not includ
 
 ## Verdict
 
-Kiwi Browser is the best option for using Chrome extensions on Android in 2026. It supports the complete Chrome Web Store (12/12 extensions in my test), uses moderate RAM (420MB with 5 extensions), and is regularly maintained. Avoid Yandex Browser unless privacy is not a concern — its telemetry and limited extension catalog are significant drawbacks. Lemur Browser supports more extensions than Yandex but its poor performance and lack of updates make it hard to recommend.
+Kiwi Browser is the best option for using Chrome extensions on Android in 2026. It supports the complete Chrome Web Store, runs lighter than Lemur on RAM, and is regularly maintained. Avoid Yandex Browser unless privacy is not a concern — its telemetry and limited extension catalog are significant drawbacks. Lemur Browser supports more extensions than Yandex but its poor performance and lack of updates make it hard to recommend.
 
 Install Kiwi Browser, then add Quick Screenshot Lite, uBlock Origin, and Dark Reader for a desktop-quality browsing experience on your phone.
 

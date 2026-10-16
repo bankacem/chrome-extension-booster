@@ -51,7 +51,7 @@ Monica AI is the extension I recommend to everyone. It supports GPT‑4o, Claude
 
 ### 2. ChatGPT Sidebar — Best for Quick Tasks
 
-Developed by OpenAI directly, this extension provides a slide‑out panel with GPT‑4o mini by default and GPT‑4o on the paid plan. It excels at speed — I recorded a 0.8‑second average response — and the UI is minimal and clean. However, the free version is severely limited: only 20 queries per day, no image analysis, and no custom instructions. The Pro version costs $20/month (the same as ChatGPT Plus). Its one‑sentence summary feature is fantastic: I can highlight any paragraph and get a summary in under two seconds.
+Developed by OpenAI directly, this extension provides a slide‑out panel with GPT‑4o mini by default and GPT‑4o on the paid plan. It excels at speed — answers appear almost instantly — and the UI is minimal and clean. However, the free version is severely limited: only 20 queries per day, no image analysis, and no custom instructions. The Pro version costs $20/month (the same as ChatGPT Plus). Its one‑sentence summary feature is fantastic: highlight any paragraph and the summary is ready in a beat.
 
 ### 3. Sider AI — Most Feature‑Rich
 
@@ -105,7 +105,7 @@ I review pull requests regularly. When I see a code pattern I do not fully under
 
 ### 4. Rewriting Content for Different Audiences
 
-I write technical documentation that needs to work for both engineers and non‑technical stakeholders. I highlight a paragraph and ask the extension to "Rewrite this for a non‑technical audience at a 8th‑grade reading level." The result is clean, clear, and ready to paste. I compared the output against [Hemingway Editor](https://hemingwayapp.com) and it scored a 7.8 grade level — spot on.
+For technical documentation that needs to work for both engineers and non‑technical stakeholders, highlight a paragraph and ask the extension to "Rewrite this for a non‑technical audience at a 8th‑grade reading level." The result is clean, clear, and ready to paste — run it through [Hemingway Editor](https://hemingwayapp.com) yourself if you want to verify the grade level.
 
 ### 5. Learning New Topics via YouTube
 
