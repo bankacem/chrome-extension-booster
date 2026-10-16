@@ -70,7 +70,7 @@ The smaller library size (30,000 vs Chrome's 150,000) means niche extensions —
 
 Edge allows Chrome extensions to run natively through its "Allow extensions from other stores" setting. In theory, this gives Edge access to Chrome's entire 150,000+ library. In practice, compatibility is not guaranteed.
 
-Of ten Chrome extensions tried on Edge, three had visual glitches. One screenshot extension's popup rendered off-screen with its buttons cut off. A password manager's autofill dropdown appeared behind the page content. A dark mode extension applied its theme incorrectly — text on dark backgrounds was unreadable on 3 of 10 test sites. None of these issues existed on Chrome.
+Edge runs Chrome extensions, but not always cleanly. The known trouble spots: screenshot extensions whose popups render off-screen with buttons cut off, password managers whose autofill dropdowns appear behind page content, and dark-mode extensions that misapply themes on some sites. These are Edge-specific rendering quirks — the same extensions behave on Chrome.
 
 Edge's own extension store offers only 8,000 add-ons, so users must rely on Chrome extensions for most functionality. That dependency means you get second-hand support at best — developers test on Chrome first, fix Chrome bugs first, and optimize for Chrome's UI first.
 

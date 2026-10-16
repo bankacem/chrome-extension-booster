@@ -97,7 +97,7 @@ In today's interconnected digital ecosystem, a website blocker that works in iso
 
 ## Top Website Blocker Chrome Extensions Compared {#top-website-blocker-chrome-extensions-compared}
 
-With dozens of website blockers available in the Chrome [Web Store](https://chromewebstore.google.com), it can be challenging to determine which one will best meet your needs. After personally testing the most popular options over a six-month period, I've identified several standout performers that offer different approaches to distraction management. The following comparison highlights the key strengths and limitations of each, helping you make an informed decision based on your specific requirements.
+With dozens of website blockers available in the Chrome [Web Store](https://chromewebstore.google.com), it can be challenging to determine which one will best meet your needs. The options below take different approaches to distraction management — strict blocking, scheduled focus sessions, gamified deterrents. The following comparison highlights the key strengths and limitations of each, helping you make an informed decision based on your specific requirements.
 
 | Extension | Key Strengths | Limitations | Best For |
 |----------|--------------|-------------|----------|
