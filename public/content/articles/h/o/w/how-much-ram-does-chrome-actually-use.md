@@ -48,13 +48,13 @@ Every session starts in a hole, and knowing the size of the hole changes how you
 
 Extensions raise the floor before you open anything. Light ones add 20–50 MB each; heavy ones — VPN clients, password managers with vault features, anything injecting UI into every page — add 100–300 MB each, some of it persistent background memory. Ten casually installed extensions can double your "empty" baseline, which is why extension audits outperform most tab tricks on lightly-tuned machines. Chrome has grown this baseline slowly across releases, and the 2026 builds are heavier out of the box than 2020 ones, mostly from added security layers rather than bloat for its own sake. Our long-term reference page on [Chrome RAM behavior](/blog/chrome-ram-guide) tracks how the baseline has shifted version by version.
 
-## Real Numbers: Six Scenarios From Our Test Rig
+## Real Numbers: Six Typical Scenarios
 
-Here are the measurements, taken on our 16 GB Windows 11 test laptop with 2026 Chrome builds, a fresh profile, and a fixed list of popular sites. We open each set, wait ten minutes for caches to settle, and average three runs. Treat these as typical results with roughly ±25% variance across machines, not laboratory-certified figures — your mix of sites, screen resolution, and extension load will move every line.
+The table below gives ballpark figures for a common setup — a fresh 2026 Chrome profile on a 16 GB Windows 11 machine, measured after caches settle. Treat these as typical results with roughly ±25% variance across machines, not laboratory-certified figures — your mix of sites, screen resolution, and extension load will move every line.
 
 ![chrome://system memory readings for a multi-tab session](/content/images/how-much-ram-does-chrome-actually-use/how-much-ram-does-chrome-actually-use-steps-1.webp)
 
-| Scenario (16 GB test rig, 2026 Chrome) | Typical total RAM | Rough per-tab share | Notes |
+| Scenario (16 GB machine, 2026 Chrome) | Typical total RAM | Rough per-tab share | Notes |
 |---|---|---|---|
 | One idle tab (new tab page) | 150–300 MB | — | Baseline overhead dominates |
 | 10 news/content tabs, text-only | 1.4–2.4 GB | 120–180 MB | Cheapest common workload |
@@ -63,7 +63,7 @@ Here are the measurements, taken on our 16 GB Windows 11 test laptop with 2026 C
 | 50 mixed tabs, Memory Saver off | 8–12 GB | 150–200 MB avg | The long tail of forgotten tabs |
 | 50 mixed tabs, Memory Saver on, after 2 h idle | 3.5–5.5 GB | 60–100 MB retained | Discarded tabs reload on click |
 
-Two conclusions fall straight out of the table. First, tab count alone predicts almost nothing: ten web-app tabs routinely cost more than thirty article tabs. Second, Memory Saver is the single biggest lever in the entire list — on the fifty-tab scenario it cut measured memory by more than half once it had cycled through the inactive tabs. If you pair it with a well-chosen third-party suspender, the same scenario dropped under 4 GB in our tests; our roundup of the [best memory saver extensions for Chrome](/blog/best-memory-saver-extension-for-chrome-4) ranks the tools that cooperate with the built-in feature rather than duplicating it.
+Two conclusions fall straight out of the table. First, tab count alone predicts almost nothing: ten web-app tabs routinely cost more than thirty article tabs. Second, Memory Saver is the single biggest lever in the entire list — on the fifty-tab scenario it roughly halves memory use once it has cycled through the inactive tabs. Pair it with a well-chosen third-party suspender and the same scenario can drop under 4 GB; our roundup of the [best memory saver extensions for Chrome](/blog/best-memory-saver-extension-for-chrome-4) ranks the tools that cooperate with the built-in feature rather than duplicating it.
 
 ## Why Tab Type Matters More Than Tab Count
 
@@ -101,14 +101,14 @@ If your machine is small — 4 to 8 GB — the browser choice itself becomes par
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 - [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## Frequently Asked Questions
 
 ### How much RAM does a single Chrome tab use?

@@ -33,7 +33,7 @@ faq:
   - question: Why can't Firefox just run a `.crx` file from the Chrome Web Store?
     answer: "Because `.crx` is Chrome's packaging and signing format, not a neutral extension container. Firefox installs `.xpi` packages that carry a Mozilla signature and a registered add-on ID, and it validates both at install time. Renaming a `.crx` to `.xpi` produces a file Firefox reports as corrupt, which I confirmed on both of my machines. The underlying JavaScript may be almost identical, but the delivery mechanism, update channel, and trust chain are entirely separate systems."
   - question: Are Chrome-to-Firefox extension converters safe to use?
-    answer: "I would not use them, and I tested several before reaching that conclusion. The add-ons that advertise Chrome Web Store access from within Firefox generally either fetch and repackage code outside Mozilla's review process, or they simply don't work and rely on the install count for ad revenue. Both outcomes are bad, and the first is genuinely dangerous, because you're granting broad browsing permissions to an intermediary that then loads arbitrary third-party code. If a developer wants their extension on Firefox, the supported route is an AMO listing, and its absence is information rather than an obstacle to route around."
+    answer: "I would not use them. The add-ons that advertise Chrome Web Store access from within Firefox generally either fetch and repackage code outside Mozilla's review process, or they simply don't work and rely on the install count for ad revenue. Both outcomes are bad, and the first is genuinely dangerous, because you're granting broad browsing permissions to an intermediary that then loads arbitrary third-party code. If a developer wants their extension on Firefox, the supported route is an AMO listing, and its absence is information rather than an obstacle to route around."
   - question: If Chrome and Firefox share the WebExtensions standard, why isn't everything compatible?
     answer: "A shared standard means the vocabulary matches, not that every implementation is complete. Both browsers support the core APIs like `tabs`, `storage`, `runtime`, and content scripts, and that covers the majority of what most extensions do. The divergence is in the newer and more powerful APIs, in background script lifecycle, and in browser-specific features like Chrome's identity integrations or Firefox's container tabs. Add the packaging and signing differences on top, and you get a situation where porting is usually easy but never automatic, which is exactly why it depends on whether the developer chose to do it."
   - question: Do my extension settings transfer when I switch browsers?
@@ -69,7 +69,7 @@ I](/blog/chrome-web-store-extensions-guide) spent three weeks running Firefox as
 
 The debate around Chrome extension Firefox compatibility has raged for nearly a decade, with outdated forum posts and marketing claims creating confusion that persists today. In 2026, the landscape has shifted significantly. Chrome dominates the browser market with approximately 65% share, while Firefox maintains a dedicated 3-5% user base that values privacy and customization. Many developers now prioritize cross-browser compatibility, but the implementation details remain challenging. The question isn't just "can I use Chrome extensions on Firefox?" but rather "what's the actual workflow, what will break, and how much effort will it take?" 
 
-This guide answers those questions through hands-on testing, not theoretical possibilities. I've documented every step, every failure mode, and every workaround discovered during my migration. Whether you're considering switching browsers entirely or just want to occasionally use a Chrome-only extension in Firefox, this guide provides the practical information you need to make informed decisions. The reality is that most popular extensions do have Firefox equivalents, but the [process of finding and configuring](/blog/unlocking-the-power-of-chrome-store-extension-chrome) them often requires more effort than browser marketing suggests.
+This guide answers those questions from practical walkthroughs, not theoretical possibilities. I've documented every step, every failure mode, and every workaround discovered during my migration. Whether you're considering switching browsers entirely or just want to occasionally use a Chrome-only extension in Firefox, this guide provides the practical information you need to make informed decisions. The reality is that most popular extensions do have Firefox equivalents, but the [process of finding and configuring](/blog/unlocking-the-power-of-chrome-store-extension-chrome) them often requires more effort than browser marketing suggests.
 
 ## The Technical Reality: Chrome vs Firefox Extension Architecture {#technical-reality}
 
@@ -90,7 +90,7 @@ The core compatibility issue isn't the JavaScript code but the surrounding infra
 
 ## Migration Path #1: First-Party Firefox Versions (The Gold Standard) {#migration-path-1}
 
-The ideal scenario when moving Chrome extensions to Firefox is finding the first-party version published by the original developer on Mozilla Add-ons. In my testing, 16 of my 23 Chrome extensions had official Firefox builds available. These versions typically work identically to their Chrome counterparts, with only minor UI differences to match Firefox's design language.
+The ideal scenario when moving Chrome extensions to Firefox is finding the first-party version published by the original developer on Mozilla Add-ons. In practice, many popular Chrome extensions have official Firefox builds available — roughly two-thirds in a typical extension set. These versions typically work identically to their Chrome counterparts, with only minor UI differences to match Firefox's design language.
 
 To find these versions, always start your search at addons.mozilla.org rather than trying to convert Chrome files. The process is straightforward: visit the Firefox Add-ons site, search for the extension name, and verify that the publisher matches the Chrome Web Store listing. Many developers maintain single codebases that compile to both platforms, so the functionality should be nearly identical.
 
@@ -100,7 +100,7 @@ The main limitation with this approach is availability. While major extensions l
 
 ## Migration Path #2: Cross-Browser Alternatives with Feature Parity {#migration-path-2}
 
-When an official Firefox version doesn't exist, the next best option is finding a cross-browser alternative with similar functionality. In my testing, four of my remaining Chrome extensions had Firefox equivalents that covered 70-90% of the original feature set. These alternatives often come from different developers but solve the same problems.
+When an official Firefox version doesn't exist, the next best option is finding a cross-browser alternative with similar functionality. Many extensions without an official Firefox version have cross-browser equivalents covering most of the original feature set. These alternatives often come from different developers but solve the same problems.
 
 For example, my Chrome setup included a specific SEO tool that had no Firefox equivalent. After some research, I found a different Firefox extension that provided similar keyword research and SERP tracking features, though with a slightly different interface. The workflow was familiar enough that I adapted quickly, and the core functionality I needed was preserved.
 
@@ -109,7 +109,7 @@ The key to finding these alternatives is to look beyond the exact name and focus
 - For Chrome ad blockers, uBlock Origin works identically in both browsers
 - If you need a screenshot tool, Firefox has excellent built-in screenshot capabilities that many Chrome users don't realize exist
 
-One challenge with this approach is that feature parity isn't always perfect. Some Chrome extensions have unique functionality that simply doesn't exist in Firefox alternatives. In these cases, you'll need to determine whether the missing features are dealbreakers or whether you can adapt your workflow. In my testing, I found that most productivity tools had adequate Firefox alternatives, while specialized [analytics and development tools were](/blog/cors-chrome-guide) more likely to have gaps.
+One challenge with this approach is that feature parity isn't always perfect. Some Chrome extensions have unique functionality that simply doesn't exist in Firefox alternatives. In these cases, you'll need to determine whether the missing features are dealbreakers or whether you can adapt your workflow. Most productivity tools have adequate Firefox alternatives, while specialized [analytics and development tools are](/blog/cors-chrome-guide) more likely to have gaps.
 
 ## Migration Path #3: Manual Conversion for Simple Extensions {#migration-path-3}
 
@@ -121,7 +121,7 @@ The basic process involves:
 3. Modifying the `manifest.json` file to match Firefox's requirements
 4. Testing the modified extension in Firefox's developer mode
 
-In my testing, I successfully converted two simple extensions using this method. Both were utility scripts with minimal dependencies on Chrome-specific APIs. The key changes required were:
+Simple utility scripts with minimal dependencies on Chrome-specific APIs convert the most cleanly with this method. The key changes required were:
 - Updating the manifest version to 2 or 3 (Firefox supports both, with V3 being the future)
 - Removing Chrome-specific permissions that don't exist in Firefox
 - Adjusting any background script syntax to work with Firefox's service worker implementation
@@ -132,14 +132,14 @@ For most users, this method should be considered a last resort when no other opt
 
 ## Migration Path #4: Wrapper Extensions (Generally Avoid) {#migration-path-4}
 
-The least reliable migration path involves using "wrapper" extensions that claim to enable Chrome extension support in Firefox. In my testing, every wrapper extension I tried either failed to provide meaningful functionality, requested alarming permissions, or both. This category includes extensions like "Chrome Store for Firefox" or similar products that promise seamless Chrome extension compatibility.
+The least reliable migration path involves using "wrapper" extensions that claim to enable Chrome extension support in Firefox. Every wrapper extension tried here either failed to provide meaningful functionality, requested alarming permissions, or both. This category includes extensions like "Chrome Store for Firefox" or similar products that promise seamless Chrome extension compatibility.
 
-These wrappers typically work by downloading Chrome extensions and attempting to load them in Firefox, but they face the fundamental architectural challenges I outlined earlier. The results in my testing were consistently poor:
+These wrappers typically work by downloading Chrome extensions and attempting to load them in Firefox, but they face the fundamental architectural challenges I outlined earlier. The results were consistently poor:
 - One wrapper downloaded extensions but failed to load any content scripts
 - Another requested blanket permissions to access all websites and data
 - A third installed but provided no visible functionality despite claiming to work
 
-Beyond the technical limitations, wrapper extensions raise significant security concerns. Because they're attempting to bridge incompatible architectures, they often require broad permissions that could potentially expose your browsing data. In my testing, I found that the permissions requested by these wrappers were frequently excessive compared to what the original Chrome extensions needed.
+Beyond the technical limitations, wrapper extensions raise significant security concerns. Because they're attempting to bridge incompatible architectures, they often require broad permissions that could potentially expose your browsing data. The permissions requested by these wrappers were frequently excessive compared to what the original Chrome extensions needed.
 
 I cannot recommend using wrapper extensions based on my experience. They represent the worst of both worlds—limited functionality with potentially increased security risks. The time and effort spent troubleshooting these wrappers would be better spent finding official Firefox alternatives or manually converting extensions if absolutely necessary.
 
@@ -152,7 +152,7 @@ Chrome's implementation of Manifest V3 restricts background scripts to service w
 - Firefox's service workers have different lifecycle management than Chrome's
 - The two browsers handle extension storage differently, particularly with regard to sync
 
-In my testing, I found that most Manifest V3 extensions worked similarly in both browsers, but those relying on Chrome-specific implementations of V3 features often had issues. For example, one extension that used Chrome's declarativeNetRequest API failed to function in Firefox because Firefox hadn't implemented that specific API subset.
+Most Manifest V3 extensions work similarly in both browsers, but those relying on Chrome-specific implementations of V3 features often have issues. For example, one extension that used Chrome's declarativeNetRequest API failed to function in Firefox because Firefox hadn't implemented that specific API subset.
 
 The takeaway is that Manifest V3 hasn't magically solved cross-browser compatibility. While it has standardized many aspects of extension development, browser-specific implementations still create challenges. When evaluating extensions for Firefox compatibility, always check whether the extension is specifically listed as supporting Firefox, not just whether it uses Manifest V3.
 
@@ -201,7 +201,7 @@ Each one does a single job well, and together they remove the small frictions th
 
 8. **Consider Firefox's built-in features** before adding extensions. Many Chrome extensions duplicate functionality that Firefox already provides natively.
 
-The key takeaways from my testing are:
+The key takeaways are:
 - Most popular extensions do have Firefox equivalents, but finding them requires deliberate searching
 - Settings and configurations don't transfer automatically, adding significant overhead to the migration process
 - Wrapper extensions should be avoided due to poor functionality and security concerns
@@ -236,7 +236,7 @@ You can't directly export Chrome extensions to Firefox, but you can manually tra
 
 ### Are wrapper extensions safe to use for Chrome extension compatibility?
 
-Based on my testing, wrapper extensions generally provide poor functionality and often request excessive permissions. I cannot recommend using them due to both technical limitations and potential security concerns.
+Wrapper extensions generally provide poor functionality and often request excessive permissions — they're not worth the risk, given both the technical limitations and the potential security concerns.
 
 ### Will Manifest V3 make Chrome extensions more compatible with Firefox?
 

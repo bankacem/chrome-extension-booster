@@ -73,7 +73,7 @@ Using the chrome.userScripts API requires two specific permissions in your manif
 }
 ```
 
-The host_permissions declaration is critical. The User Scripts API will not inject scripts into URLs that the extension does not have permission to access. If you try to register a user script with a match pattern for https://github.com/* but your manifest only grants host permissions for https://*.example.com/*, the registration will succeed silently but the script will never execute. This silent failure is a common source of confusion for developers new to the API.
+The host_permissions declaration is critical. The User Scripts API will not inject scripts into URLs that the extension does not have permission to access. If you try to register a user script with a match pattern for `https://github.com/*` but your manifest only grants host permissions for `https://*.example.com/*`, the registration will succeed silently but the script will never execute. This silent failure is a common source of confusion for developers new to the API.
 
 There is an important nuance regarding how host permissions interact with the User Scripts API compared to static content scripts. Static content scripts can use optional_host_permissions, which allow the extension to request access to additional sites at runtime. The User Scripts API also works with optional permissions, but you must call chrome.permissions.request before registering scripts that target those optional hosts. This means your extension's flow should be: request the host permission, wait for the user to grant it, and then register the user scripts targeting that host.
 

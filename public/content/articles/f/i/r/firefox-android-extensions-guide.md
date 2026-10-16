@@ -60,7 +60,7 @@ The catalog is thousands deep; these five cover what nearly everyone actually wa
 
 ### uBlock Origin — the reason most people switch
 
-The same filtering engine as desktop, running the same filter lists, with the same options page. On our test set of ten ad-heavy news sites it blocked 94% of ad and tracker requests — more than any DNS-level tool can manage, because it filters inside the page rather than at domain resolution. If you install one extension, this is it; our walkthrough of [ad blocking on Android](/blog/adblock-chrome-android-complete-guide-2026) builds directly on it.
+The same filtering engine as desktop, running the same filter lists, with the same options page. On ad-heavy news sites it clears out ads and trackers by filtering inside the page itself — more thorough than any DNS-level tool, which can only block at domain resolution. If you install one extension, this is it; our walkthrough of [ad blocking on Android](/blog/adblock-chrome-android-complete-guide-2026) builds directly on it.
 
 ### Dark Reader — night mode for every site
 
@@ -86,11 +86,11 @@ Hides the GDPR cookie-consent walls that make European news sites unreadable. Wo
 | Violentmonkey | Userscript manager | <1 MB + scripts | Depends on scripts | Situational |
 | I don't care about cookies | Hides cookie consent banners | <1 MB | Negligible | Nice-to-have |
 
-## What Extensions Cost You on Android (Real Numbers)
+## What Extensions Cost You on Android
 
-Honest accounting, measured on a Galaxy S24 and a Pixel 7 with all five extensions installed. Cold-start time added 0.4–0.8 seconds compared with extension-free Firefox. Steady-state browsing memory rose 150–250 MB across a typical 15-tab session — real, but smaller than what a single extra Chrome tab pair costs on desktop Chrome. Battery impact came out at roughly 3–5% extra over an afternoon of mixed browsing, almost all of it from Dark Reader's per-page rendering rather than from blocking. On the JS benchmarks, raw JavaScript speed still favors Chrome's V8 engine by 10–20% over Firefox's SpiderMonkey — if you live in web-based office suites, that difference is real.
+Honest accounting: extensions add a small cost — a fraction of a second to cold start, a couple hundred megabytes across a heavy session. The extension tax is real, but the filtering dividend is usually bigger. On the JS benchmarks, raw JavaScript speed still favors Chrome's V8 engine over Firefox's SpiderMonkey — if you live in web-based office suites, that difference is real.
 
-The trade most people miss: with uBlock Origin active, *page loads get faster*, not slower, because a dozen third-party ad and tracker requests per page simply never happen. On ad-dense news sites I measured 20–35% faster full-page completion with uBlock enabled versus Firefox without it. The extension tax is real; the filtering dividend is usually larger. If you want the lightest possible setup, uBlock Origin alone captures most of that benefit — the five-extension stack is a comfort configuration, not a requirement. For the browser-level comparison including Chrome's raw speed, our [ad-free browsing on Android overview](/blog/adblock-chrome-android-complete-guide-2026) has the numbers side by side.
+The trade most people miss: with uBlock Origin active, *page loads get faster*, not slower, because a dozen third-party ad and tracker requests per page simply never happen. On ad-dense news sites, pages routinely finish noticeably sooner with uBlock enabled than without it. The extension tax is real; the filtering dividend is usually larger. If you want the lightest possible setup, uBlock Origin alone captures most of that benefit — the five-extension stack is a comfort configuration, not a requirement. For the browser-level comparison including Chrome's raw speed, our [ad-free browsing on Android overview](/blog/adblock-chrome-android-complete-guide-2026) has the numbers side by side.
 
 ![Extension memory overhead measured across the five picks](/content/images/firefox-android-extensions-guide/firefox-android-extensions-guide-steps-1.webp)
 

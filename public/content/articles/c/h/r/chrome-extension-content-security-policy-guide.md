@@ -50,7 +50,7 @@ In Manifest V3, you can customize the Content Security Policy for your extension
 | Inline event handlers | Configurable | Always blocked | Use addEventListener instead |
 | Custom CSP in manifest | Full control via content_security_policy | Limited to extension_pages sandbox | Fewer escape hatches for legacy code |
 
-The inability to relax CSP for remote scripts or eval in Manifest V3 is the single biggest source of migration pain for developers. In Manifest V2, a developer could set "script-src 'self' 'unsafe-eval' https://cdn.example.com" to allow eval and scripts from a CDN. In Manifest V3, that same policy is rejected. The intent is clear: Google wants all executable code to be reviewable as part of the extension package, and allowing remote code execution undermines the review process.
+The inability to relax CSP for remote scripts or eval in Manifest V3 is the single biggest source of migration pain for developers. In Manifest V2, a developer could set `script-src 'self' 'unsafe-eval' https://cdn.example.com` to allow eval and scripts from a CDN. In Manifest V3, that same policy is rejected. The intent is clear: Google wants all executable code to be reviewable as part of the extension package, and allowing remote code execution undermines the review process.
 
 ## Common CSP Error 1: Refused to Execute Inline Script
 
@@ -92,7 +92,7 @@ timeoutId = setTimeout(checkStatus, 1000);
 
 ## Common CSP Error 3: Remote Script Loading Blocked
 
-The error "Refused to load the script 'https://cdn.example.com/library.js' because it violates the following Content Security Policy directive" means your extension is trying to load JavaScript from an external server. In Manifest V3, loading scripts from any URL outside the extension package is permanently blocked for extension pages. You cannot add the CDN domain to your CSP to allow it.
+The error `Refused to load the script 'https://cdn.example.com/library.js' because it violates the following Content Security Policy directive` means your extension is trying to load JavaScript from an external server. In Manifest V3, loading scripts from any URL outside the extension package is permanently blocked for extension pages. You cannot add the CDN domain to your CSP to allow it.
 
 This restriction is by design. Google's security model for Manifest V3 requires that all code executed in extension contexts be bundled with the extension and reviewed as part of the Chrome Web Store submission process. Allowing remote script loading would allow an extension developer to push arbitrary code to users after review, bypassing the entire review system. This is classified as remote code execution and is a violation of the Developer Program Policies.
 
@@ -111,7 +111,7 @@ One nuance worth noting is that the remote script restriction applies to extensi
 
 While the script-src directive gets the most attention, CSP also controls network requests through the connect-src directive. In Manifest V3, the default CSP allows extension pages to make fetch and XMLHttpRequest calls to any origin, because the extension's host_permissions govern network access rather than CSP. However, if you define a custom content_security_policy.extension_pages in your manifest, you must include appropriate connect-src directives or your network requests will be blocked.
 
-A common mistake is copying a web application's CSP into an extension's manifest without understanding the differences. Web applications use CSP connect-src to restrict where the page can send data, which is a defense against data exfiltration. Extensions handle this through the permissions system instead. If you define a custom CSP that includes a restrictive connect-src without including the domains your extension needs to communicate with, you will see "Refused to connect to 'https://api.example.com/data' because it violates the following Content Security Policy directive: 'connect-src ...'" errors.
+A common mistake is copying a web application's CSP into an extension's manifest without understanding the differences. Web applications use CSP connect-src to restrict where the page can send data, which is a defense against data exfiltration. Extensions handle this through the permissions system instead. If you define a custom CSP that includes a restrictive connect-src without including the domains your extension needs to communicate with, you will see `Refused to connect to 'https://api.example.com/data' because it violates the following Content Security Policy directive: 'connect-src ...'` errors.
 
 The practical advice is simple: avoid defining a custom content_security_policy in your manifest unless you have a specific, well-understood reason. The default Manifest V3 CSP is already appropriately restrictive, and adding custom directives often introduces unnecessary breakage. If you must customize it, be thorough in testing every network request your extension makes.
 

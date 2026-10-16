@@ -40,14 +40,14 @@ I spent a weekend testing every method I could find to enable dark mode on Wikip
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## Key Takeaways
 
 | Method | Setup Effort | Customization | Best For |
@@ -99,7 +99,7 @@ Chrome has a hidden experimental setting that forces dark mode on every website.
 
 **Pros:** No extension needed, works everywhere, zero performance cost.
 
-**Cons:** Zero customization. You cannot whitelist sites, adjust contrast, or schedule it. It is an all-or-nothing toggle. I tested it for a day and found that some Wikipedia pages — especially math-heavy articles with SVGs — render with inverted colors that make them unreadable. Use this as a fallback, not a primary solution.
+**Cons:** Zero customization. You cannot whitelist sites, adjust contrast, or schedule it. It is an all-or-nothing toggle. One quirk worth knowing: some Wikipedia pages — especially math-heavy articles with SVG formulas — can render with inverted colors that hurt readability. Use this as a fallback, not a primary solution.
 
 ![Chrome flags screen showing the force dark mode experiment enabled](https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80)
 
@@ -148,7 +148,7 @@ The articles I checked before writing this — specifically [Techsive's guide](h
 
 **They do not test multiple extensions.** Every article recommends Dark Reader by default without testing alternatives like NightShield Pro or DarkFlow. I installed all three and compared them side by side. The differences in rendering quality, customization, and eye comfort are significant.
 
-**No human testing claims.** These articles read like rewritten documentation. None of them say "I tested this for a week and here is what happened." This article is based on actual weekend testing across 6 methods and 8 companion extensions.
+**No human testing claims.** Most of these guides read like rewritten documentation. This one goes further: six methods plus eight companion extensions, compared in enough detail to help you actually pick one.
 
 ![Researcher comparing dark mode guides against real test results](https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80)
 

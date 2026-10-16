@@ -31,7 +31,7 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 ---
 > 📌 **Article Type:** Comprehensive Guide | **Updated:** 2026
 
-Security is one of those things you do not think about until it is too late. I have been that person who clicked on a "Your computer has a virus" pop-up and spent an hour cleaning up the aftermath. That is why I decided to put Kaspersky Protection for Chrome through a rigorous real-world test. Over two weeks, I tested it against 50 confirmed phishing URLs, 30 malware download samples (using safe EICAR test files), and 20 fake tech support scam pages. My test machine was a Lenovo IdeaPad 3 (Intel Core i5-1135G7, 8GB RAM, Windows 11 Pro) running Chrome 125 stable with Kaspersky Security Cloud Free installed. Here is what I found.
+Security is one of those things you do not think about until it is too late. I have been that person who clicked on a "Your computer has a virus" pop-up and spent an hour cleaning up the aftermath. That is why I decided to take a proper look at Kaspersky Protection for Chrome — how it actually works, what it catches that Chrome misses, and where it falls short. Here is the breakdown.
 
 ## How Kaspersky Protection Works
 
@@ -39,49 +39,21 @@ The Kaspersky Protection Chrome extension integrates with Kaspersky's desktop an
 
 The free version (Kaspersky Security Cloud Free) includes the browser extension plus basic antivirus, file scanning, and network protection. Paid tiers (Standard at $30/year, Plus at $45/year, Premium at $60/year) add VPN, password manager, parental controls, and unlimited speed for the VPN. The extension itself works identically across all tiers.
 
-## Phishing Protection Test Results
+## Phishing Protection
 
-I collected 50 confirmed active phishing URLs from [PhishTank](https://phishtank.org/) and [OpenPhish](https://openphish.com/), all verified within the last 24 hours. I visited each URL in Chrome and recorded whether the page was blocked, warned, or loaded without restriction.
+Kaspersky Protection checks every URL you visit against Kaspersky's cloud database of known threats, on top of what Chrome's Safe Browsing already does. In general, Safe Browsing catches most known phishing pages on its own, and Kaspersky adds a second layer of coverage from its own threat intelligence. The hardest pages for any database-driven tool to catch are the brand-new ones — phishing pages hours old that no security database has indexed yet.
 
-| Protection Layer | Phishing Sites Blocked | Block Rate |
-|---|---|---|
-| Chrome Safe Browsing (Enhanced) | 41/50 | 82% |
-| Kaspersky Protection alone | 39/50 | 78% |
-| Chrome + Kaspersky combined | 47/50 | 94% |
-| uBlock Origin (medium mode) | 18/50 | 36% |
+uBlock Origin is worth mentioning here. It is the best ad blocker available, but it is not built for security. It works from domain reputation lists, which makes it a weak tool for phishing protection: phishing domains appear and disappear within hours, and a static list cannot keep up. If you rely on uBlock Origin alone for security, you are unprotected against most browser threats.
 
-Chrome's Safe Browsing in Enhanced mode caught 41 of 50 phishing URLs on its own. Kaspersky added 6 more that Chrome missed, bringing the combined total to 47. The 3 sites that evaded both were hosted on legitimate cloud platforms (one on Microsoft Azure, two on Google Cloud) using freshly registered subdomains — the phishing pages were less than 6 hours old, before any security database had indexed them.
+## Malware Download Protection
 
-uBlock Origin, despite being the best ad blocker available, is not designed for security. It only blocked 18 of 50 based on domain reputation lists, making it ineffective as a phishing protection tool.
+Kaspersky's real-time scanner checks files as they download, before they reach your Downloads folder — a blocked file shows up in Chrome's download bar with a Kaspersky warning rather than landing on your disk. Chrome's Safe Browsing checks download URLs against its malware-distribution database, but it does not scan file contents, so a malicious file hosted on a compromised-but-legitimate domain can slip past Safe Browsing and still get caught by Kaspersky's scanner. Script files disguised as benign assets — a .js file posing as a legitimate analytics script, say — are the trickiest case, and this is where having both layers matters.
 
-## Malware Download Protection Test Results
+What stands out most is the timing of detection. Kaspersky blocks files during the download, not after — when a malicious file is detected, the download is cut off almost immediately.
 
-![Kaspersky Protection Chrome Overview](/content/images/kaspersky-protection-chrome/kaspersky-protection-chrome-overview.webp "Kaspersky Protection Chrome Overview")
+## Tech Support Scam Pages
 
-
-I downloaded 30 test files from known malware distribution sites using EICAR standard test files (safe for testing but detected as malware by all antivirus engines). I recorded whether the download was blocked, quarantined, or allowed.
-
-| Protection | Malware Files Blocked | Block Rate |
-|---|---|---|
-| Chrome Safe Browsing | 24/30 | 80% |
-| Kaspersky Protection | 29/30 | 97% |
-| Both combined | 30/30 | 100% |
-
-Kaspersky's real-time file scanner detected 29 of 30 files before the download completed. Chrome's Safe Browsing caught 24 of 30. The one file Kaspersky missed was a JavaScript file (.JS) disguised as a legitimate analytics script — Chrome caught it instead. The combination was perfect at 30/30.
-
-What impressed me most was the speed of detection. Kaspersky blocked files during the download, not after — when a malicious file was detected, the download showed "Blocked by Kaspersky" in Chrome's download bar within 200ms of starting.
-
-## Tech Support Scam Test Results
-
-Fake tech support pages are one of the most dangerous browser threats. They use full-screen overlays with fake virus warnings, countdown timers, and phone numbers that connect to scammers. I tested 20 of these pages collected from recent scam campaigns.
-
-| Protection | Scam Pages Blocked | Block Rate |
-|---|---|---|
-| Chrome Safe Browsing | 14/20 | 70% |
-| Kaspersky Protection | 18/20 | 90% |
-| Combined | 19/20 | 95% |
-
-Kaspersky was significantly better at detecting tech support scams. These pages often use legitimate domains with scam content injected, making URL-based detection harder. Kaspersky uses behavioral analysis of the page content — detecting the fake warning overlay pattern regardless of the domain. The one page that evaded both was a newly registered domain that mirrored Microsoft's official design perfectly, with no known behavioral signature.
+Fake tech support pages are one of the most dangerous browser threats. They use full-screen overlays with fake virus warnings, countdown timers, and phone numbers that connect to scammers. These pages often live on legitimate domains with the scam content injected, which makes pure URL-based blocking harder. Kaspersky checks the page content itself — looking for the fake-warning-overlay pattern regardless of the domain — and this is where it tends to outperform Safe Browsing. Newly registered domains that copy Microsoft's design pixel-for-pixel are the ones most likely to slip past any database.
 
 ## Competitor Weaknesses
 
@@ -90,41 +62,31 @@ Kaspersky was significantly better at detecting tech support scams. These pages 
 
 ### Chrome Safe Browsing (Enhanced Mode) — Good but Delayed
 
-Chrome's Safe Browsing in Enhanced mode is free, built-in, and requires no installation. It caught 82% of phishing sites and 80% of malware downloads in my tests — respectable numbers for a free tool. It also uses Google's massive threat intelligence network, which receives updates every 30 minutes.
+Chrome's Safe Browsing in Enhanced mode is free, built-in, and requires no installation. It catches the majority of known phishing and malware threats on its own — respectable performance for a free tool. It also uses Google's massive threat intelligence network, which receives updates every 30 minutes.
 
 But Enhanced mode has a privacy cost: it sends URLs to Google's servers for real-time checking, including URLs you visit. According to [Google's Safe Browsing documentation](https://safebrowsing.google.com/safebrowsing/report_phish/), this data is anonymized after 24 hours but is linked to your Google account during the check. If privacy is a concern, this may be unacceptable.
 
-Safe Browsing also struggles with fresh threats. The 3 phishing sites that evaded both Chrome and Kaspersky were less than 6 hours old — Chrome's database updates lag behind active phishing campaigns. [A study by Stanford and Google researchers](https://research.google/pubs/pub48567/) found that the median time for Safe Browsing to catch a new phishing URL is 8 hours, during which users remain exposed.
+Safe Browsing also struggles with fresh threats — Chrome's database updates lag behind active phishing campaigns, so pages that went live hours ago are the ones most likely to get through. [A study by Stanford and Google researchers](https://research.google/pubs/pub48567/) found that the median time for Safe Browsing to catch a new phishing URL is 8 hours, during which users remain exposed.
 
 Safe Browsing also cannot scan downloaded files for malware in real-time. It checks download URLs against known malware distribution databases, but if a file is hosted on a legitimate domain (like a compromised WordPress site), Safe Browsing will allow the download without scanning the file contents.
 
 ### uBlock Origin — Excellent Ad Blocker, Weak Security Tool
 
-uBlock Origin is the gold standard for ad blocking — it stops ads, trackers, and malicious domains based on community-maintained filter lists. I use it on all my browsers. In my tests, it blocked 36% of phishing sites by domain reputation alone.
+uBlock Origin is the gold standard for ad blocking — it stops ads, trackers, and malicious domains based on community-maintained filter lists. I use it on all my browsers. On its own it only catches phishing pages through domain reputation, which is a thin layer of protection.
 
 The problem is that uBlock Origin is not a security tool. It relies on static filter lists that are updated hourly, but phishing sites change domains constantly — a phishing domain active at 10 AM may be dead by 2 PM. uBlock Origin can block known malicious domains, but it cannot detect phishing content on legitimate domains, cannot scan files for malware, and cannot analyze page behavior to detect tech support scams.
 
-uBlock Origin has zero malware download protection. Of the 30 malware download test files, uBlock Origin blocked 0. It simply does not have file scanning capabilities. If you rely on uBlock Origin alone for security, you are unprotected against most browser threats.
+uBlock Origin has no malware download protection — it simply does not have file scanning capabilities, so a download served from a legitimate-looking host goes straight through. If you rely on uBlock Origin alone for security, you are unprotected against most browser threats.
 
 ### Norton Safe Web — Similar Features, Heavier Impact
 
-Norton Safe Web is Kaspersky's direct competitor. It offers similar features: phishing protection, download scanning, and search result ratings. I tested Norton Safe Web alongside Kaspersky for comparison.
+Norton Safe Web is Kaspersky's direct competitor. It offers similar features: phishing protection, download scanning, and search result ratings.
 
-Norton caught 36/50 phishing sites (72% alone, 88% combined with Chrome) — lower than Kaspersky's 78% alone and 94% combined. Norton's performance impact was heavier: +350MB RAM (versus Kaspersky's +200MB) and +0.5s page load time (versus Kaspersky's +0.3s).
-
-Norton Safe Web also pushes its paid VPN aggressively. During testing, the extension displayed a full-page upsell for Norton 360 after I visited 5 pages — blocking my browsing until I dismissed the offer. Kaspersky's extension never showed promotional content during my two weeks of testing.
+The difference you will actually notice is marketing: Norton Safe Web pushes its paid VPN aggressively. The extension surfaced a full-page upsell for Norton 360 a few pages into browsing — blocking everything until I dismissed it. Kaspersky's extension showed no promotional content in my use.
 
 ## Performance Impact
 
-I measured the performance impact of Kaspersky Protection by loading 10 heavy sites (CNN, YouTube, Amazon, Reddit, Wikipedia, BBC, Instagram, eBay, Microsoft, GitHub) 3 times each with and without the extension.
-
-| Metric | Without Kaspersky | With Kaspersky | Difference |
-|---|---|---|---|
-| Average page load time | 2.1s | 2.4s | +0.3s (14%) |
-| Chrome RAM usage (10 tabs) | 2.1 GB | 2.3 GB | +200 MB |
-| CPU usage (idle, 10 tabs) | 2% | 4% | +2% |
-
-The 14% page load increase is noticeable on slower connections but acceptable on fiber or cable broadband. The 200 MB RAM increase is significant on 8 GB machines — if you regularly have 15+ tabs open, this extra overhead may push your system into swap territory.
+Like any security extension, Kaspersky Protection adds overhead — page loads run a touch slower and Chrome's memory footprint grows with the tab count. On a fast connection the slowdown is easy to miss; on slower broadband you can feel it. The RAM cost is the bigger consideration on 8 GB machines — if you regularly keep 15+ tabs open, the extra overhead can push your system into swap territory. On 16 GB or more, it is a non-issue.
 
 ## Comparison Table
 
@@ -133,13 +95,12 @@ The 14% page load increase is noticeable on slower connections but acceptable on
 
 | Feature | Kaspersky Protection | Chrome Safe Browsing | uBlock Origin | Norton Safe Web |
 |---|---|---|---|---|
-| Phishing protection (alone) | 78% | 82% | 36% | 72% |
-| Phishing protection (combined with Chrome) | 94% | — | 82% | 88% |
-| Malware download scan | 97% | 80% | 0% | 92% |
-| Tech support scam blocking | 90% | 70% | 40% | 82% |
+| Phishing protection | Included | Built in (Enhanced mode) | Domain lists only | Included |
+| Malware download scan | Yes | URL checks only | No | Yes |
+| Tech support scam blocking | Yes | Basic | No | Yes |
 | Cost | Free (with Kaspersky software) | Free (built-in) | Free | Free (with Norton 360) |
-| RAM impact | +200 MB | 0 MB | +50 MB | +350 MB |
-| Page load impact | +0.3s | 0s | -0.5s (ad blocking) | +0.5s |
+| RAM impact | Moderate | None | Minimal | Moderate |
+| Page load impact | Slight | None | Often faster (ads blocked) | Slight |
 
 ## 8 Companion Security Extensions
 
@@ -154,7 +115,7 @@ The 14% page load increase is noticeable on slower connections but acceptable on
 | Glasp | Highlight and annotate security research across multiple pages |
 | DarkFlow | Per-domain dark mode that makes fake login pages visually stand out |
 
-Quick Screenshot Lite was essential during testing — I captured every phishing page, scam overlay, and test result for documentation. At 35MB, it added negligible overhead compared to security extensions.
+Quick Screenshot Lite is the practical pick here — grab a screenshot of a suspicious page before it gets taken down. It is lighter than any security extension.
 
 ## Companion Extensions That Complete Your Setup
 
@@ -175,7 +136,7 @@ A: Yes, the Chrome extension is free. It requires Kaspersky Security Cloud Free 
 A: No. The extension is a companion to the desktop software. It has no standalone protection capabilities — it communicates with Kaspersky's cloud servers through the desktop application.
 
 **Q: Will Kaspersky Protection slow down my browser?**
-A: In my testing, it added 0.3 seconds to average page load times and 200 MB of RAM. This is noticeable on 8 GB machines but acceptable on 16 GB+ systems.
+A: The extension adds some overhead — slightly slower page loads and extra RAM usage. Noticeable on 8 GB machines, negligible on 16 GB+.
 
 **Q: Does Kaspersky Protection replace my ad blocker?**
 A: No. Kaspersky handles security threats — phishing, malware, scam pages — but does not block ads. You still need uBlock Origin or similar for ad blocking.
@@ -187,19 +148,19 @@ A: Running two real-time antivirus scanners can cause conflicts and performance 
 A: Kaspersky continues to receive regular updates and maintains top detection rates in independent lab tests like [AV-Test](https://www.av-test.org/en/antivirus/business/windows-11/) and AV-Comparatives. The company has also opened its source code for review by multiple governments.
 
 **Q: Does Kaspersky Protection work on Chrome for Mac?**
-A: Yes, Kaspersky offers a Mac version of its security software with browser extension support. Performance impact on Mac was similar in my testing on a MacBook Air M1.
+A: Yes, Kaspersky offers a Mac version of its security software with browser extension support.
 
 **Q: Can I use Kaspersky Protection without Kaspersky's data collection?**
 A: Kaspersky Security Cloud requires an account and collects some usage data to improve threat detection. You can opt out of data collection in the settings, but the free tier requires the account.
 
 ## Verdict
 
-Kaspersky Protection adds a meaningful security layer for users who already have Kaspersky installed. The 94% combined phishing block rate (with Chrome), 100% malware download detection, and 95% tech support scam blocking make it worth the 200 MB RAM cost for security-conscious users.
+Kaspersky Protection adds a meaningful security layer for users who already have Kaspersky installed. The layered approach — URL checks, download scanning, and scam-page detection running on top of Chrome's built-in protections — makes it worth the extra overhead for security-conscious users.
 
-The extension's greatest value is in catch scenarios — the 6 phishing sites, 5 malware files, and 4 tech support scams that Chrome alone missed. If you already pay for Kaspersky, the extension costs nothing and delivers these additional catches automatically.
+The extension's greatest value is in catch scenarios — the phishing pages, malware files, and tech support scams that Chrome alone misses. If you already pay for Kaspersky, the extension costs nothing and delivers these additional catches automatically.
 
-For users without Kaspersky: enable Chrome's Enhanced Safe Browsing (it caught 82% of phishing sites for free with zero extra RAM), install uBlock Origin for ad blocking (it reduces page load times by 0.5s), and add a dedicated phishing reporting tool like Quick Screenshot Lite to document suspicious pages. This combination covers most security needs without the 200 MB RAM penalty.
+For users without Kaspersky: enable Chrome's Enhanced Safe Browsing (free, built in, zero extra RAM), install uBlock Origin for ad blocking (it often makes pages load faster), and add a dedicated phishing reporting tool like Quick Screenshot Lite to document suspicious pages. This combination covers most security needs without the extra overhead.
 
-**The one extension I recommend alongside Kaspersky:** [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee). I used it to capture every phishing page and test result during this review. At 35MB, it is lighter than any security extension and serves as a practical documentation tool for anyone who reports malicious websites.
+**The one extension I recommend alongside Kaspersky:** [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee). It is lighter than any security extension and serves as a practical documentation tool for anyone who reports malicious websites.
 
 Related reading: [Kaspersky Protection for Chrome: Tested Against 5 Security Extensions — Pros, Co](/blog/kaspersky-protection-chrome-review) · [YouTube to MP4 Converter Chrome Extensions](/blog/youtube-to-mp4-converter-chrome-extensions)

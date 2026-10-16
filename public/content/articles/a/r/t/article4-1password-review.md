@@ -39,14 +39,14 @@ Then my Google account got compromised through a phishing email. In 12 minutes, 
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## Key Takeaways
 
 ![Article4 1Password review takeaways — security key and laptop on a desk](https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80)
@@ -91,7 +91,7 @@ Most password managers claim "seamless autofill." 1Password is one of the few th
 - **Contextual awareness:** Knows the difference between a username field and a search box (surprisingly rare)
 - **Automatic capture:** Saves new credentials without interrupting your workflow
 
-**My testing:** Over 30 days, 1Password's autofill worked correctly on 147 out of 150 websites — a 98% success rate. The three misses were obscure government sites with non-standard form structures.
+**Reliability:** 1Password's autofill handles the vast majority of sites well — the rare misses tend to be obscure sites with non-standard form structures.
 
 ### Visual Polish That Matters
 
@@ -226,7 +226,7 @@ But here's the nuanced truth: **the gap between 1Password and Bitwarden is small
 
 ### Is 1Password worth the price in 2026?
 
-For most serious users, yes. You're paying for the best autofill accuracy we measured, the Secret Key security model, Travel Mode, and mature developer tooling. If you only need basic storage, a free manager covers that.
+For most serious users, yes. You're paying for top-tier autofill accuracy, the Secret Key security model, Travel Mode, and mature developer tooling. If you only need basic storage, a free manager covers that.
 
 ### Does 1Password have a free plan?
 

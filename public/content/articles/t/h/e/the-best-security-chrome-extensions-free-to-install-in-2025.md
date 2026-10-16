@@ -133,7 +133,7 @@ Password reuse is the most common security mistake online. When one service is b
 
 ### Bitwarden
 
-Bitwarden is the best free password manager available for Chrome in 2025, and it is not close. Unlike LastPass, which has progressively stripped features from its free tier following multiple security breaches, Bitwarden provides unlimited password storage, unlimited devices, cross-platform sync, and a fully featured browser extension — all at zero cost. Your vault is encrypted end-to-end with AES-256, and Bitwarden never has access to your master password.
+Bitwarden is the best free password manager available for Chrome in 2025, and it is not close. Unlike LastPass — which limited its free tier to one device type in 2021 ([LastPass's own announcement](http://blog.lastpass.com/posts/changes-to-lastpass-free)) and later disclosed a 2022 breach in which attackers stole copies of customers' encrypted password vaults ([TechCrunch](https://techcrunch.com/2022/12/22/lastpass-customer-password-vaults-stolen/)) — Bitwarden provides unlimited password storage, unlimited devices, cross-platform sync, and a fully featured browser extension, all at zero cost. Your vault is encrypted end-to-end with AES-256, and Bitwarden never has access to your master password.
 
 The Chrome extension integrates seamlessly into your browsing workflow. When you arrive at a login page, Bitwarden auto-fills your credentials with a single click. When you create a new account, its built-in generator creates cryptographically strong passwords — 20-character strings of mixed case, numbers, and symbols — and saves them automatically. You never need to see, remember, or type a password again.
 
@@ -184,7 +184,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## Frequently Asked Questions
 
 **Are free Chrome security extensions actually safe to use?**

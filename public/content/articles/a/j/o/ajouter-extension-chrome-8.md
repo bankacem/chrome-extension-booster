@@ -67,17 +67,17 @@ That is the mechanical part. The harder part is knowing *which* extensions to ad
 
 ## The 5 Categories That Actually Matter {#categories}
 
-I grouped the 30+ extensions I tested into 5 categories. Here is what I found:
+The 30+ extensions covered here fall into 5 categories. Here is what stands out in each:
 
 **Screenshot & Capture.** Every knowledge worker needs to capture what is on their screen. [Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) is the best I found — full-page or visible area capture, no account, no upload, no ads. Alternatives like Lightshot or Nimbus add bloat and request unnecessary permissions. Quick Screenshot Lite asks for only what it needs: active tab access.
 
-**Tab Management.** Chrome is a memory hog. Open 20 tabs and your system slows to a crawl. [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) suspends inactive tabs automatically while keeping them visible in your tab bar. [OneTab](https://www.one-tab.com/) collapses all tabs into a list. I tested both side by side — ProTab Suspender saves more memory (roughly 40% reduction on a 30-tab session) without losing your tab layout.
+**Tab Management.** Chrome is a memory hog. Open 20 tabs and your system slows to a crawl. [ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender/gghjdfjjffegohpjhmcmgeonmcomilgj) suspends inactive tabs automatically while keeping them visible in your tab bar. [OneTab](https://www.one-tab.com/) collapses all tabs into a list. Compared feature by feature, ProTab Suspender tends to free more memory without losing your tab layout.
 
 **Dark Mode.** Prolonged screen time causes eye strain and disrupts sleep. [NightShield Pro](https://chromewebstore.google.com/detail/nightshield-pro/pgjidjlmpacojfolcmeekgnnekmggenm) applies a warm tint and darkens every page automatically. For sites where the dark rendering looks wrong, [DarkFlow](https://chromewebstore.google.com/detail/darkflow/obbhliekbfgpcdippngphefofiicgjml) gives you per-domain contrast sliders so you can fine-tune each site individually.
 
 **Security & Privacy.** This is where most users make mistakes. Popular password managers like LastPass or Dashlane are powerful but expensive and request broad permissions. [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-%E2%80%93-secure-pa/omeencccnkninlofbggfcfiohapajhgi) stores credentials encrypted with AES-256 and autofills them only on the correct domain. It does not phone home, it does not track your browsing, and it costs nothing. Pair it with [Redirect Blocker](https://chromewebstore.google.com/detail/redirect-blocker/pofolffdhjffglfphiagpbnlegjbnbhp) to intercept redirect chains that malicious sites use to steal your session.
 
-**Popup & Distraction Control.** Pop-up blockers are among the oldest Chrome extensions, but most are either too aggressive (break site functionality) or not aggressive enough (let intrusive ads through). [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) hit the sweet spot in my testing — it blocked 98% of pop-ups on news and streaming sites without breaking login forms or payment flows.
+**Popup & Distraction Control.** Pop-up blockers are among the oldest Chrome extensions, but most are either too aggressive (break site functionality) or not aggressive enough (let intrusive ads through). [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) hit the sweet spot — it blocks pop-ups on news and streaming sites without breaking login forms or payment flows.
 
 ## Performance Comparison Table {#table}
 
@@ -100,7 +100,7 @@ The biggest risk when you ajouter extension Chrome is installing a malicious or 
 
 **Check update frequency.** Abandoned extensions are security risks. Extensions like [NightShield Pro](https://chromewebstore.google.com/detail/nightshield-pro/pgjidjlmpacojfolcmeekgnnekmggenm) and [SecuraKey Pro](https://chromewebstore.google.com/detail/securakey-pro-%E2%80%93-secure-pa/omeencccnkninlofbggfcfiohapajhgi) are updated regularly — check the "Updated" date on the Web Store listing.
 
-**Remove what you do not use.** Every extension adds memory overhead, attack surface, and tracking potential. I keep my active extensions under 8. The rest stay uninstalled until I need them. During testing, I found that having 15+ extensions active simultaneously added roughly 400 MB to Chrome's baseline memory usage — even before opening any tabs.
+**Remove what you do not use.** Every extension adds memory overhead, attack surface, and tracking potential. I keep my active extensions under 8. The rest stay uninstalled until I need them. Having 15+ extensions active at once adds a noticeable chunk to Chrome's baseline memory usage — even before opening any tabs.
 
 **Check the "Updated" date.** An extension that has not been updated in over a year is a security risk. It likely has unpatched vulnerabilities and may break as Chrome updates. The extensions I recommend — Quick Screenshot Lite, ProTab Suspender, SecuraKey Pro — are all updated within the last 3 months.
 
@@ -115,7 +115,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## Which Extensions Should You Install First? {#verdict}
 
 **For most users:** Quick Screenshot Lite + ProTab Suspender + NightShield Pro. That covers capture, performance, and comfort — the three things every browser user needs.

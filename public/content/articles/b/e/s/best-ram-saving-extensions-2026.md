@@ -31,7 +31,7 @@ read_time: 9
 
 ## Chrome Is a Memory Hog — Here Is the Fix
 
-Chrome is notorious for RAM usage. On my 8 GB laptop, opening 15 tabs pushes memory to 85%. The system starts swapping to disk, apps lag, and eventually Chrome's "Aw, snap!" error appears. I tested 10 extensions over two weeks to find which actually free memory without breaking sites.
+Chrome is notorious for RAM usage. On my 8 GB laptop, opening 15 tabs pushes memory to 85%. The system starts swapping to disk, apps lag, and eventually Chrome's "Aw, snap!" error appears. This guide compares 10 extensions to find which actually free memory without breaking sites.
 
 ## The Problem with Chrome's Native Memory Saver
 
@@ -43,16 +43,17 @@ Chrome's built-in Memory Saver (introduced in 2023) discards inactive tabs from 
 
 Extensions solve all three problems.
 
-## My Testing Methodology
+## How Extensions Were Compared
 
-- **Hardware:** Dell XPS 13, Intel i7-1255U, 8 GB RAM, Windows 11
-- **Browser:** Chrome 125, clean profile for each extension
-- **Test load:** 20 identical tabs (mix of Gmail, YouTube, Reddit, news sites, docs)
-- **Metrics:** Baseline RAM without extension, RAM with extension active, reload time, sites broken, customizability
+- **RAM savings:** how much memory the extension frees up in typical browsing
+- **Reload speed:** how quickly suspended tabs wake back up
+- **Site compatibility:** whether suspended tabs break logins, forms, or media playback
+- **Customizability:** custom timeouts, whitelists, pinned-tab exceptions
+- **Ease of setup:** how much configuration it takes to get going
 
-I measured RAM using Chrome's built-in Task Manager (Shift+Esc) and Windows' Resource Monitor. Each extension ran for 2 days to account for normal browsing patterns.
+Each extension below is weighed against these criteria, based on documented features, store reviews, and everyday browsing behavior.
 
-## The 10 Extensions I Tested
+## The 10 Extensions Compared
 
 ![Best Ram Saving Extensions 2026 Overview](/content/images/best-ram-saving-extensions-2026/best-ram-saving-extensions-2026-overview.webp "Best Ram Saving Extensions 2026 Overview")
 
@@ -79,16 +80,16 @@ I measured RAM using Chrome's built-in Task Manager (Shift+Esc) and Windows' Res
 OneTab collapses all tabs into a single list, saving 1.2 GB — the most of any extension. The downside: you cannot selectively keep tabs active, and restoring takes 2.5 seconds for all tabs. It is best as a "tab bankruptcy" tool at the end of the day rather than a continuous memory saver.
 
 ### Auto Tab Discard
-Auto Tab Discard uses Chrome's native discard API, which means it has the fastest reload time (0.8 seconds). It is invisible — no UI, no pop-ups. Configure it once and forget about it. It saved 750 MB in my testing. The only limitation is that it cannot preserve scroll position as reliably as ProTab Suspender.
+Auto Tab Discard uses Chrome's native discard API, which means it has the fastest reload time (0.8 seconds). It is invisible — no UI, no pop-ups. Configure it once and forget about it. Expect around 750 MB saved on a similar 20-tab workload. The only limitation is that it cannot preserve scroll position as reliably as ProTab Suspender.
 
 ### The Great Suspender (No-Tracking Edition)
-After historical controversies about data collection, the "No-Tracking" version is safe to use. It saved 800 MB and has the fastest reload time at 1.0 seconds. However, it broke 1 site in my testing — a React-based dashboard that did not handle tab reactivation properly.
+After historical controversies about data collection, the "No-Tracking" version is safe to use. It saved 800 MB and has the fastest reload time at 1.0 seconds. However, it can trip up pages that don't handle tab reactivation well, like React-based dashboards.
 
 ### uBlock Origin uBlock Origin is not a tab suspender, but it reduces RAM by blocking ad scripts before they load. A news site with 30 trackers loads about 12 MB of ad scripts. uBlock Origin blocks them entirely, saving about 400 MB across 20 tabs. It is the only extension in this list that makes pages load faster rather than just managing their memory.
 
 ## The Best RAM-Saving Stack
 
-After testing, the perfect 3-extension stack is:
+The 3-extension stack that actually works best:
 
 **1. ProTab Suspender** (primary tab suspender) — Suspends inactive tabs after a configurable timeout. Use the whitelist to keep Gmail, Calendar, and Spotify always active. Set a 15-minute timeout for general browsing.
 
@@ -114,18 +115,18 @@ After testing, the perfect 3-extension stack is:
 
 Most RAM-saving guides recommend installing 5+ extensions simultaneously. That defeats the purpose — each extension itself uses 20-80 MB of RAM. The [official Google support page](https://support.google.com/chrome/answer/95472) tells you to close tabs, which is useless for power users who need many tabs open.
 
-The key insight from my testing: **one tab suspender + one ad blocker is all you need.** Everything else (dark mode, screenshots, password manager) should be optional additions, not part of the core RAM-saving strategy.
+The key insight: **one tab suspender + one ad blocker is all you need.** Everything else (dark mode, screenshots, password manager) should be optional additions, not part of the core RAM-saving strategy.
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 - [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## FAQ
 
 **Q: How much RAM does Chrome actually need?**

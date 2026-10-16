@@ -35,7 +35,7 @@ updated_at: '2026-09-14T12:00:00.000+00:00'
 
 I am the kind of user who opens 20-30 tabs per project and never closes them. At one point my Chrome had 80 tabs across 4 windows. My laptop fan sounded like a jet engine. That is when I started testing session managers.
 
-Over two weeks I tested SessionBox, OneTab, Tab Manager Plus, and Better OneTab on my Lenovo IdeaPad 3 (Intel Core i5-1135G7, 8GB DDR4, Windows 11 Pro). I created four workspaces — Work (25 tabs), Research (30 tabs), Personal (15 tabs), and Shopping (10 tabs) — and measured memory usage before and after, restore time, and preservation of scroll positions and form data.
+For this comparison I looked at SessionBox, OneTab, Tab Manager Plus, and Better OneTab — how each one stores your tabs, what survives a restore, and which trade-offs matter once you're juggling 80-plus tabs.
 
 ## How Session Managers Work
 
@@ -47,15 +47,7 @@ Session managers save open tabs into named groups so you can close them to free 
 
 ## Memory Savings
 
-| Extension | RAM Before (80 tabs) | RAM After | Memory Saved | Restore Time (80 tabs) |
-|---|---|---|---|---|
-| Chrome without manager | 4.2 GB | — | — | — |
-| SessionBox | 4.2 GB | 1.8 GB | 2.4 GB (57%) | 8.3s |
-| OneTab | 4.2 GB | 1.2 GB | 3.0 GB (71%) | 12.5s |
-| Tab Manager Plus | 4.2 GB | 2.4 GB | 1.8 GB (43%) | 6.7s |
-| Better OneTab | 4.2 GB | 1.3 GB | 2.9 GB (69%) | 11.8s |
-
-OneTab and Better OneTab save the most memory because they close tabs entirely. SessionBox keeps tabs in a suspended state for faster restore but uses more RAM. Tab Manager Plus has the smallest memory savings but fastest restore since tabs never fully close.
+The memory story comes down to architecture, not magic numbers. OneTab and Better OneTab save the most RAM because they close tabs entirely and keep only a list of URLs — nothing is held in memory. SessionBox suspends tabs instead of closing them, so it restores faster but holds onto more memory. Tab Manager Plus barely saves anything on its own: it keeps tabs open and just organizes them, so any savings come from tabs you close manually through its interface.
 
 ## Restore Quality
 
@@ -69,39 +61,39 @@ OneTab and Better OneTab save the most memory because they close tabs entirely. 
 | Tab Manager Plus | ✅ Preserved | Partial | ❌ Lost |
 | Better OneTab | ❌ Lost | ❌ Lost | ❌ Lost |
 
-SessionBox was the only extension that preserved everything. When I restored my Research workspace (30 tabs), every page was at the exact scroll position I left it. Forms with partially entered data were intact. Login sessions on Gmail, GitHub, and Notion were still active.
+SessionBox is the only extension of the four designed to preserve everything — scroll position, form data, and login sessions — because it suspends tabs instead of closing them. (Sites with expiring sessions can still log you out on their own schedule, of course.)
 
-OneTab and Better OneTab restored every tab as a fresh page load. I lost all scroll positions and form data. For research-heavy workflows where you have 10 articles scrolled to different positions, this is a dealbreaker.
+OneTab and Better OneTab restore every tab as a fresh page load, so scroll positions and form data are gone by design. For research-heavy workflows with articles scrolled to different positions, that is a dealbreaker.
 
 ## Competitor Weaknesses
 
 ### OneTab — Memory Champion, State Disaster
 
-OneTab is the most popular session manager on the Chrome Web Store with over 2 million users. I can see why — it is dead simple to use (one click saves all tabs), and at 71% memory savings, it is the most effective at freeing RAM.
+OneTab is the most popular session manager on the Chrome Web Store with over 2 million users. The appeal is obvious — it is dead simple to use (one click saves all tabs), and since it closes everything, it frees the most RAM of the four.
 
-The problem is what you lose. OneTab saves only URLs. When you restore, every tab reloads from scratch. On my 80-tab test, restore took 12.5 seconds — the slowest of all four extensions. Some tabs failed to load entirely (3 out of 80 returned timeout errors on the first restore attempt).
+The problem is what you lose. OneTab saves only URLs, so when you restore, every tab reloads from scratch — and restoring a very large session can be slow, with the occasional tab failing to load on the first pass.
 
-OneTab also has no cloud sync, no search, and no export functionality. Your sessions are stored in Chrome's local storage. If you clear your browser data or switch computers, your sessions are gone. I tested this by clearing Chrome's cache — all OneTab sessions disappeared.
+OneTab also has no cloud sync, no search, and no export functionality. Sessions live in Chrome's local storage, so clearing your browser data wipes them out — the OneTab documentation warns about this, and it is the most common way people lose sessions.
 
-OneTab's interface is a single page with a list of URLs. With 80 tabs, the page was 4,800 lines long and took 3 seconds just to scroll to the bottom. There is no way to group, search, or organize sessions within the app.
+OneTab's interface is a single page with a list of URLs. With 80 tabs it becomes an enormous list with no way to group, search, or organize sessions within the app.
 
 ### Better OneTab — Same Model, Slightly Better UI
 
-Better OneTab is a community fork of OneTab with a cleaner interface and an option to export sessions as JSON. The memory savings (69%) and restore quality (no preserved state) are nearly identical to OneTab.
+Better OneTab is a community fork of OneTab with a cleaner interface and an option to export sessions as JSON. The memory savings and restore quality (no preserved state) are nearly identical to OneTab.
 
 The differences are minor: Better OneTab supports dark mode, has a session search bar, and lets you selectively restore individual tabs instead of the entire session. These are genuine improvements.
 
-The core limitations remain. No cloud sync, no scroll position preservation, no form data retention. At 11.8 seconds for an 80-tab restore, it is marginally faster than OneTab but still the second-slowest option.
+The core limitations remain. No cloud sync, no scroll position preservation, no form data retention. Restoring a large session is marginally quicker than OneTab, but still slow compared to suspend-based tools.
 
-Better OneTab also has a smaller user base and less frequent updates. The GitHub repository shows the last commit was 8 months ago at the time of testing, which raises concerns about long-term maintenance.
+It also has a smaller user base and less frequent updates, so check that it's still actively maintained before committing to it.
 
 ### Tab Manager Plus — Organizer, Not a Session Manager
 
 Tab Manager Plus is not really a session manager — it is a tab organizer with a popup that shows all open tabs in a searchable grid. It does not save sessions or close tabs. The "memory savings" came from manually closing tabs through its interface, not from any session management feature.
 
-The search function is genuinely useful. With 80 tabs open, typing "research" instantly filtered to the 30 Research workspace tabs. I wish Chrome's native tab search worked this well.
+The search function is genuinely useful — type a keyword and it filters your open tabs instantly. I wish Chrome's native tab search worked this well.
 
-But Tab Manager Plus does not solve the core problem. It does not save sessions, does not restore tabs, and does not significantly reduce memory usage (43% savings came entirely from my manual tab closures, not from the extension).
+But Tab Manager Plus does not solve the core problem. It does not save sessions, does not restore tabs, and does not significantly reduce memory usage — whatever savings you see come from tabs you close manually, not from the extension.
 
 ## Workspace Features
 
@@ -135,14 +127,14 @@ SessionBox is the only extension with cloud sync and collaboration features. You
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## FAQ
 
 ![Session Manager Chrome Guide](/content/images/session-manager-chrome/session-manager-chrome-guide.webp "Session Manager Chrome Guide")
@@ -155,7 +147,7 @@ A: SessionBox has a free tier with three containers and unlimited sessions. Pro 
 A: OneTab saves URLs but closes all tabs. Restoring re-opens pages as fresh loads — scroll position, form data, and login sessions are lost.
 
 **Q: Which session manager saves the most memory?**
-A: OneTab at 71% memory savings (4.2GB to 1.2GB). SessionBox at 57% preserves more tab state but uses more RAM.
+A: OneTab, since it closes tabs completely. SessionBox preserves more tab state but holds onto more RAM.
 
 **Q: Can I share sessions with colleagues?**
 A: Only SessionBox Pro supports session sharing and collaboration. OneTab and Tab Manager Plus do not.
@@ -173,7 +165,7 @@ A: OneTab handles 100+ tabs best because it serializes all tabs into a single li
 
 **SessionBox** is the best session manager for most users. It is the only extension that preserves scroll positions, form data, and login sessions. The cloud sync and collaboration features make it the only choice for teams. The free tier (3 containers) is sufficient for personal use.
 
-**OneTab** is the best for maximum memory savings — it cuts RAM usage by 71% — but the loss of all tab state and the absence of cloud sync are major limitations. Use it only if your primary goal is freeing RAM and you do not care about preserving page state.
+**OneTab** is the best for maximum memory savings — it frees the most RAM of the four — but the loss of all tab state and the absence of cloud sync are major limitations. Use it only if your primary goal is freeing RAM and you do not care about preserving page state.
 
 **Tab Manager Plus** is not a session manager. It is a tab organizer with a useful search feature. Do not use it for session management.
 
@@ -181,4 +173,4 @@ A: OneTab handles 100+ tabs best because it serializes all tabs into a single li
 
 [Install ProTab Suspender](https://chromewebstore.google.com/detail/protab-suspender-memory-s/gghjdfjjffegohpjhmcmgeonmcomilgj) alongside your session manager for granular tab suspension control.
 
-Related reading: [Crystal Extension for Chrome Review: I Tested 4 Tab Manager Extensions for 2 Wee](/blog/crystal-extension-chrome) · [Best Password Manager for Chrome: I Tested 4 Password Tools for 2 Weeks — Here I](/blog/creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide)
+Related reading: [Crystal Extension for Chrome Review](/blog/crystal-extension-chrome) · [Best Password Manager for Chrome](/blog/creating-strong-unhackable-passwords-for-beginners-a-comprehensive-guide)

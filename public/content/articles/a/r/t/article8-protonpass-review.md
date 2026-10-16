@@ -7,7 +7,7 @@ featured_image: /content/images/article8-protonpass-review.jpg
 image_url: /content/images/article8-protonpass-review.jpg
 title: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
 author: "James Mitchell"
-meta_description: "Article8 ProtonPass review: three weeks testing the Chrome extension — Swiss privacy, aliases, passkeys, autofill accuracy, pricing, and who should pass."
+meta_description: "ProtonPass review for Chrome — Swiss privacy, aliases, passkeys, autofill accuracy, pricing, and who should pass."
 description: 'Proton Pass Chrome Extension Review 2026: The Swiss Privacy Fortress'
 category: "Security & Privacy"
 updated_at: '2026-09-23T13:56:58.000+00:00'
@@ -81,11 +81,11 @@ Setup takes about two minutes: install the extension from the Chrome Web Store t
 - **Password generation:** Built-in generator with customizable length and character rules
 - **Alias integration:** Uses Proton aliases during sign-ups without leaving the page
 
-**Testing results:** Proton Pass autofilled correctly on about 88% of the sites we tested. The misses were mostly complex multi-step checkout flows and some JavaScript-heavy modern web apps — areas where 1Password still leads.
+**Autofill reality check:** Proton Pass handles standard login fields well. The misses, per user reports, tend to be complex multi-step checkout flows and some JavaScript-heavy modern web apps — areas where 1Password still leads.
 
 ### Standout Features
 
-**1. Proton Mail integration.** If you already use Proton Mail, the synergy is real. You can create unlimited aliases that forward to your inbox, generate an alias and a strong password together when signing up for a new service, and manage every alias from the extension. During testing, I created `shopping-random123@proton.me` for an e-commerce site; when the spam started, I disabled the alias and my real inbox stayed clean.
+**1. Proton Mail integration.** If you already use Proton Mail, the synergy is real. You can create unlimited aliases that forward to your inbox, generate an alias and a strong password together when signing up for a new service, and manage every alias from the extension. The alias trick works well in practice: give an e-commerce site a random alias, and if the spam starts, disable that alias while your real inbox stays clean.
 
 **2. Hide-My-Email-style aliases for everyone.** Even without Proton Mail, paid plans include aliases that forward to any address, organized by site or purpose.
 

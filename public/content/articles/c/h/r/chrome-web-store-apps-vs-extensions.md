@@ -155,7 +155,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## Frequently asked questions
 
 ### Are Chrome Web Store apps the same as extensions?

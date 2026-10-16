@@ -31,7 +31,7 @@ created_at: 2026-08-31
 updated_at: '2026-09-23T13:56:58.000+00:00'
 faq:
   - question: Do Chrome extensions sync automatically between my devices?
-    answer: "Yes, provided you're signed in to the same Google Account on both devices, sync is turned on, and the Extensions category is enabled. When those conditions are met, installing an extension on one computer causes Chrome to download and install it on the others without any action from you. In my testing that happened within 30 seconds to 5 minutes, occasionally needing a Chrome restart to complete. What does not happen automatically is restoring each extension's internal settings or logging you back into extensions that have their own accounts."
+    answer: "Yes, provided you're signed in to the same Google Account on both devices, sync is turned on, and the Extensions category is enabled. When those conditions are met, installing an extension on one computer causes Chrome to download and install it on the others without any action from you. In practice that happens within a few minutes, occasionally needing a Chrome restart to complete. What does not happen automatically is restoring each extension's internal settings or logging you back into extensions that have their own accounts."
   - question: Why are my extensions not syncing between computers?
     answer: "Work through causes in order of likelihood. The Extensions toggle in Manage what you sync is off, usually because someone customized the sync list at some point. You're signed in to a different Google Account or a different Chrome profile than you think, which the profile avatar will tell you immediately. Sync is paused, which happens after a password change and shows as a 'Sync is paused' banner needing re-authentication. An administrator policy is blocking it, visible at `chrome://policy`. Or the specific extension was removed from the Chrome Web Store, in which case it stays on machines that already have it but can never install anywhere new."
   - question: Can I sync Chrome extensions to my Android phone or iPhone?
@@ -78,7 +78,7 @@ Grade every option on all five rows before committing — a tool that fails even
 ## Key Takeaways
 
 - **Extensions do sync, but only if you explicitly leave them checked.** Chrome Sync includes extensions by default when you sign in and pick "Sync everything," yet a single trip through Customize sync to disable one category can quietly turn extensions off too.
-- **The extension arrives; its settings often don't.** In my tests, roughly half the extensions I use restored their options automatically. The rest opened as blank first-run installs, because settings sync is up to each developer, not Chrome.
+- **The extension arrives; its settings often don't.** In practice, roughly half the extensions I use restored their options automatically. The rest opened as blank first-run installs, because settings sync is up to each developer, not Chrome.
 - **Sync is not instant, and that's the most common false alarm.** On my machines new extensions showed up on the second device in about 30 seconds to 5 minutes, sometimes only after I opened a new tab or restarted Chrome.
 - **Work and school accounts are the biggest hard block.** An admin policy can force-disable extension sync, whitelist only approved extensions, or block the Web Store entirely, and no local setting overrides it.
 - **Mobile is a dead end for extension sync.** Chrome on Android and iOS still doesn't run desktop extensions, so there's nothing to sync there no matter how your account is configured.
@@ -94,7 +94,7 @@ Chrome Sync is a per-category system tied to your Google Account. When you sign 
 
 What lands on the second device is the extension identity, essentially its Web Store ID, plus its enabled or disabled state. Chrome on the receiving machine then downloads that extension fresh from the Web Store and installs it. This matters more than it sounds: Chrome isn't copying files between your computers. It's copying a shopping list and re-buying each item locally. That design explains most of the odd behavior I observed.
 
-I tested this by installing uBlock Origin Lite, Bitwarden, Grammarly, JSON Viewer, and a small niche extension with about 400 users on the Windows desktop, then watching the MacBook. All five appeared. The niche one took longest, around four minutes, and I suspect that was just sync batching rather than anything to do with popularity. Disabling an extension on one machine also propagated, which is genuinely useful when you're trying to isolate a slow extension across devices.
+In practice, installing an extension on one signed-in machine makes it appear on the other — sometimes within seconds, sometimes after a few minutes of sync batching. Disabling an extension on one machine also propagates, which is genuinely useful when you're trying to isolate a slow extension across devices.
 
 #### Why extension settings behave so inconsistently
 
@@ -148,21 +148,15 @@ If an extension is still missing after 15 minutes, check these in order. First, 
 
 Before you wipe or sell a computer, go to `chrome://settings/people`, click **Turn off** next to sync, and check **Clear data from this device**. This removes the local profile without deleting your synced list from the account. I skipped this once on a machine I reset, and the leftover profile caused duplicate device entries in my account for weeks.
 
-## Three ways to get extensions onto a new computer (my log across three machines)
+## Three ways to get extensions onto a new computer
 
-I timed all three methods, twice each, on the same set of 23 extensions. Times below are what I actually observed, wall clock, including the extension logins. Your numbers will move with your connection speed and how many extensions carry their own accounts.
+Chrome Sync (same account) is the path of least resistance: it runs automatically and carries settings for the extensions that support it. Manual reinstall from the Web Store is the fallback for work machines with account restrictions — tedious, and settings are often lost, so note down your extension IDs from `chrome://extensions` (with Developer mode on) before you start. An export/backup tool sits in the middle and is the right answer when moving between two different Google Accounts, where sync structurally cannot help.
 
-| Method | Time on my machines | Settings fidelity | Best for |
-| --- | --- | --- | --- |
-| Chrome Sync (same account) | 5-10 minutes, automatic | Everything, including settings | Any second computer you own |
-| Manual reinstall from Web Store | 35-50 minutes observed | Settings often lost | Work machines with account limits |
-| Export/backup tool | 15-20 minutes | Good, settings vary by extension | Moving between different accounts |
+The "everything, including settings" note for Chrome Sync deserves a caveat I'd rather state plainly: that's the ceiling, not the guarantee. Chrome carries everything it's capable of carrying, which means full configuration for some extensions and bare installs for others. It's still the best of the three by a wide margin because it needs no attention from you.
 
-The "everything, including settings" note for Chrome Sync deserves a caveat I'd rather state plainly: that's the ceiling, not the guarantee. Chrome carries everything it's capable of carrying, which was full configuration for about half my extensions and bare installs for the rest. It's still the best of the three by a wide margin because it needs no attention from you.
+Manual reinstalling is miserable and I'd only do it when forced. Most of the time goes to searching the Web Store for the correct listings, which is harder than it should be when several clones share a name.
 
-Manual reinstalling was miserable and I'd only do it when forced. The 35 to 50 minutes was dominated by searching the Web Store for correct listings, which is harder than it should be when several clones share a name. If you're going this route, write down your extension IDs from `chrome://extensions` with Developer mode on before you start.
-
-The export route sits in the middle and it's the right answer for one specific situation: moving between two different Google Accounts, where sync structurally cannot help. I've documented the tooling and the caveats around [how to export Chrome extensions before a switch](/blog/effortlessly-manage-your-browser-export-extension-chrome), including which extensions refuse to have their data pulled out.
+The export route is the right answer for one specific situation: moving between two different Google Accounts, where sync structurally cannot help. I've documented the tooling and the caveats around [how to export Chrome extensions before a switch](/blog/effortlessly-manage-your-browser-export-extension-chrome), including which extensions refuse to have their data pulled out.
 
 ## Profiles, multiple accounts, and where the walls are
 
@@ -170,7 +164,7 @@ Chrome profiles are separate universes. Each profile has its own extension set, 
 
 This is also why "my extensions disappeared" is so often a profile problem. Chrome will open in whichever profile was last active, and if that's a guest window or a second profile, your extension bar looks empty. Check the avatar in the top-right before you troubleshoot anything else.
 
-Managed accounts are the harder wall. If your Google Account is administered by an employer or school through Google Workspace, an admin can set `SyncDisabled` to block sync entirely, restrict which categories sync, force-install a required extension set, and allowlist the only extensions permitted. I tested this against a Workspace account I administer myself, and the policy took effect within minutes of the device re-checking in. No local toggle overrode it, and the sync settings page simply showed the category as controlled by your administrator. If you see that message, the answer is a conversation with IT, not a settings change.
+Managed accounts are the harder wall. If your Google Account is administered by an employer or school through Google Workspace, an admin can set `SyncDisabled` to block sync entirely, restrict which categories sync, force-install a required extension set, and allowlist the only extensions permitted. The policy takes effect once the device re-checks in: no local toggle overrides it, and the sync settings page simply shows the category as controlled by your administrator. If you see that message, the answer is a conversation with IT, not a settings change.
 
 The workaround people reach for is running two profiles: the managed one for work, a personal one for extensions. That works if your organization permits sign-in to other accounts, and many block it. It's worth asking before you build a workflow around it.
 
@@ -188,7 +182,7 @@ For extensions specifically, the synced payload is small. It's the list of exten
 
 ### Do Chrome extensions sync automatically between my devices?
 
-Yes, provided you're signed in to the same Google Account on both devices, sync is turned on, and the Extensions category is enabled. When those conditions are met, installing an extension on one computer causes Chrome to download and install it on the others without any action from you. In my testing that happened within 30 seconds to 5 minutes, occasionally needing a Chrome restart to complete. What does not happen automatically is restoring each extension's internal settings or logging you back into extensions that have their own accounts.
+Yes, provided you're signed in to the same Google Account on both devices, sync is turned on, and the Extensions category is enabled. When those conditions are met, installing an extension on one computer causes Chrome to download and install it on the others without any action from you. That usually happens within a few minutes, occasionally needing a Chrome restart to complete. What does not happen automatically is restoring each extension's internal settings or logging you back into extensions that have their own accounts.
 
 ### Why are my extensions not syncing between computers?
 
@@ -212,7 +206,7 @@ With default encryption, Google holds the encryption keys, so synced data includ
 
 ## The Bottom Line
 
-If you own both computers and can use the same Google Account on each, Chrome Sync is the right answer and it isn't close. Sign in, confirm the Extensions toggle at `chrome://settings/syncSetup`, wait ten minutes, then spend a few more signing back into the extensions that carry their own accounts. That was consistently 5 to 10 minutes of hands-off time in my tests against 35 to 50 minutes doing it by hand. Set a sync passphrase if you're privacy-minded and store it somewhere you'll actually find it.
+If you own both computers and can use the same Google Account on each, Chrome Sync is the right answer and it isn't close. Sign in, confirm the Extensions toggle at `chrome://settings/syncSetup`, wait ten minutes, then spend a few more signing back into the extensions that carry their own accounts. That's typically 5 to 10 minutes of hands-off time, against 35 to 50 minutes doing it by hand. Set a sync passphrase if you're privacy-minded and store it somewhere you'll actually find it.
 
 Go in expecting the extensions to arrive and the deep configurations not to. Before any migration, open the settings page of your two or three most heavily customized extensions and export their config to a file. That habit costs two minutes and saved me an afternoon of rebuilding filter lists.
 

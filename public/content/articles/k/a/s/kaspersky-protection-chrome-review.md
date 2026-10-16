@@ -44,19 +44,11 @@ Kaspersky Protection is a Chrome extension that connects to Kaspersky's cloud-ba
 | Virtual keyboard | ✅ On-screen typing | ❌ Not available | Niche |
 | Safe Money (banking mode) | ✅ Isolated browser window | ❌ Not available | Niche |
 
-## My Test Results: Protection Accuracy
+## Protection Compared
 
-I tested all five security tools against the same set of threats. The test set included 15 phishing URLs from [PhishTank](https://phishtank.org/), 10 EICAR test files (standard anti-malware test files that simulate real malware without being dangerous), and 20 known tracking domains from [Disconnect's tracking list](https://disconnect.me/trackerprotection).
+Anyone can sanity-check these tools against public reference sets: PhishTank's phishing URLs, EICAR test files (the industry's harmless malware simulators), and Disconnect's tracker-protection list.
 
-| Extension | Phishing Blocked (of 15) | Malware Blocked (of 10) | Trackers Blocked (of 20) | RAM (idle) |
-|---|---|---|---|---|
-| Kaspersky Protection | 14 (93%) | 10 (100%) | 18 (90%) | 55 MB |
-| uBlock Origin | 12 (80%) | 0 (0%) | 20 (100%) | 45 MB |
-| Bitdefender TrafficLight | 13 (87%) | 8 (80%) | 15 (75%) | 40 MB |
-| Avast Online Security | 11 (73%) | 9 (90%) | 14 (70%) | 50 MB |
-| Chrome Built-in Safe Browsing | 10 (67%) | 3 (30%) | 2 (10%) | 0 MB |
-
-Kaspersky Protection had the best phishing and malware detection rates. uBlock Origin was better for tracker blocking. Chrome's built-in Safe Browsing, while free and using zero RAM, missed 33% of phishing sites.
+No single extension wins on every axis. Kaspersky's strength is phishing and malware detection — that's what its cloud-backed scanning is built for — while uBlock Origin leads on tracker blocking and uses the least memory of the dedicated blockers. Chrome's built-in Safe Browsing costs nothing and adds no weight, but on its own it catches less, especially outside Google's own properties.
 
 ## 3 Competitor Weaknesses
 
@@ -67,25 +59,15 @@ Kaspersky Protection had the best phishing and malware detection rates. uBlock O
 
 The Chrome extension alone cannot scan downloaded files, check system-level threats, or use the virtual keyboard. These features require Kaspersky's desktop security suite (Kaspersky Standard, Plus, or Premium).
 
-I tested the extension on a machine without Kaspersky desktop software installed. The extension functioned as a link checker and URL blocker, but the malware download scanner showed "Kaspersky software not found" when I tried to download an EICAR test file. The file downloaded without any warning.
+Without Kaspersky's desktop software installed, the extension works as a link checker and URL blocker only. Its download scanner looks for the desktop suite — without it, there's no file scanning, which the Web Store listing doesn't make obvious.
 
 **If you install only the Chrome extension without the desktop suite, you get URL filtering and link checking — nothing more.** The malware scanning and virtual keyboard features are advertised in the Chrome Web Store listing but are non-functional without the desktop counterpart.
 
 This is a significant limitation because most users install browser extensions expecting them to work independently. Kaspersky should clearly state that the extension requires the desktop application for full functionality.
 
-### 2. Kaspersky Protection Increases Page Load Time by 12%
+### 2. Kaspersky Protection Slows Page Loads the Most
 
-I measured page load times on a clean Chrome profile vs. a profile with Kaspersky Protection active. Each test was run 5 times and averaged.
-
-| Scenario | Page Load Time (average, 5 runs) |
-|---|---|
-| No extensions | 1.9s |
-| Kaspersky Protection | 2.2s (+12%) |
-| uBlock Origin | 2.0s (+5%) |
-| Bitdefender TrafficLight | 2.1s (+8%) |
-| Chrome Safe Browsing | 1.9s (0%) |
-
-Kaspersky Protection added 300ms to page load times because every URL is checked against Kaspersky's cloud database before the page loads. This is noticeable on slower connections. On my 100Mbps test connection, the delay was not terrible, but on a mobile or throttled connection, the 12% overhead becomes significant.
+Kaspersky checks every URL against its cloud database before the page loads, so expect the most overhead of the group — it keeps a background service running for this. uBlock Origin and TrafficLight are lighter; Chrome's built-in protection adds nothing. The slowdown is most noticeable on already-slow connections.
 
 Chrome's built-in Safe Browsing showed zero added latency because it checks URLs against a locally cached blocklist that updates every 30 minutes (source: [Google Security Blog](https://security.googleblog.com/2019/08/protecting-you-from-dangerous-websites.html)).
 
@@ -93,20 +75,20 @@ Chrome's built-in Safe Browsing showed zero added latency because it checks URLs
 
 The Chrome extension is free, but many features display upgrade prompts. Safe Money mode, download scan, and virtual keyboard all redirect to a Kaspersky subscription page. The extension itself shows occasional ads for Kaspersky's paid products in the popup interface.
 
-During my testing, the extension displayed a full-page offer for "Kaspersky Plus — 30 days free" after I attempted to scan a downloaded file. This occurred three times during the week, which created a frustrating experience.
+Trying to scan a downloaded file can surface a full-page "Kaspersky Plus — 30 days free" offer instead of a scan result. Hit that a few times and it gets old fast.
 
-uBlock Origin and Chrome's built-in Safe Browsing are completely free with no upsells. Bitdefender TrafficLight is free with minimal advertising. Kaspersky's upsell frequency is higher than any other security extension I tested.
+uBlock Origin and Chrome's built-in Safe Browsing are completely free with no upsells. Bitdefender TrafficLight is free with minimal advertising. Of the extensions covered here, Kaspersky pushes its paid upgrades the hardest.
 
 ## Performance Impact
 
 | Metric | Kaspersky Protection | uBlock Origin | Chrome Safe Browsing |
 |---|---|---|---|
-| RAM usage (idle) | 55 MB | 45 MB | 0 MB |
-| CPU (idle) | 0.3% | 0.1% | 0% |
-| Page load overhead | +300ms | +100ms | 0ms |
-| Boot delay (Chrome start) | +1.2s | +0.4s | 0s |
+| RAM usage (idle) | highest | moderate | none |
+| CPU (idle) | low | minimal | none |
+| Page load overhead | highest | low | none |
+| Boot delay (Chrome start) | noticeable | slight | none |
 
-Kaspersky Protection is the heaviest security extension I tested. It uses 10 MB more RAM than uBlock Origin and adds over a second to Chrome's startup time because it initializes a background service that maintains a connection to Kaspersky's cloud servers.
+Kaspersky Protection is the heaviest of the group, adding the most to startup time — the cost of the background service it keeps connected to Kaspersky's cloud servers.
 
 ## 8 Companion Extensions
 
@@ -133,17 +115,17 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## FAQ
 
 **Q: Is Kaspersky Protection for Chrome free?**
 A: Yes, the Chrome extension is free. Advanced features like malware download scanning, Safe Money, and virtual keyboard require Kaspersky's desktop security suite (paid).
 
 **Q: Does Kaspersky Protection slow down Chrome?**
-A: Yes. I measured a 12% increase in page load time (from 1.9s to 2.2s) and 55 MB of additional RAM usage. It is heavier than most security extensions.
+A: Yes. It adds noticeable page-load overhead and extra RAM usage compared with lighter options — it is heavier than most security extensions.
 
 **Q: Is Kaspersky Protection better than Chrome's built-in Safe Browsing?**
-A: For phishing, yes. Kaspersky blocked 93% of phishing URLs versus Chrome's 67% in my tests. For general browsing, Chrome's Safe Browsing uses zero RAM and adds no latency, which makes it a better default.
+A: For phishing, yes. Kaspersky catches noticeably more phishing URLs than Chrome's Safe Browsing. For general browsing, Chrome's Safe Browsing uses zero RAM and adds no latency, which makes it a better default.
 
 **Q: Can I use Kaspersky Protection without installing the desktop app?**
 A: Yes, but the extension will only provide URL checking and link highlighting. Malware scanning, virtual keyboard, and Safe Money require the desktop app.
@@ -156,9 +138,9 @@ A: For most users, uBlock Origin with Chrome's built-in Safe Browsing provides e
 
 ## Verdict
 
-Kaspersky Protection detects phishing and malware better than any other Chrome security extension I tested — 93% phishing and 100% malware detection rates. However, it comes with trade-offs: 55 MB of RAM, 300ms added to every page load, and constant upsells to the paid desktop suite.
+Kaspersky Protection's phishing and malware detection is the best of this group. The trade-offs are real, though: the highest memory use, the most page-load overhead, and constant upsells to the paid desktop suite.
 
-If you already use Kaspersky's desktop security software, install the extension for the link checker and URL filtering. If you do not use Kaspersky on desktop, skip the extension. uBlock Origin paired with Chrome's built-in Safe Browsing provides 80% phishing protection, 0% malware scanning, and zero page load overhead — which is the right trade-off for most users.
+If you already use Kaspersky's desktop security software, install the extension for the link checker and URL filtering. If you do not use Kaspersky on desktop, skip the extension. uBlock Origin paired with Chrome's built-in Safe Browsing gives solid phishing protection with no page-load overhead — which is the right trade-off for most users.
 
 For screenshots of security warnings or suspicious pages, Quick Screenshot Lite is the fastest and lightest capture tool at 25 MB RAM and 0.3s capture time.
 

@@ -132,7 +132,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## Frequently Asked Questions
 
 ### Q: Is Manifest V3 mandatory for new extensions now?
@@ -167,4 +167,4 @@ Supplement the official doc with MDN's cross-browser documentation and active co
 
 [Get Quick Screenshot Lite](https://chromewebstore.google.com/detail/quick-screenshot-lite/hddickadgkbfpcelmckpjhcfnoeognee) — Document your development process with full-page screenshots of your extension UI, error messages, and test results.
 
-Related reading: [CORS Chrome Guide: I Tested 4 CORS Solutions for Web Development — Here Is What ](/blog/cors-chrome-guide) · [YouTube to MP4 Converter Chrome Extensions](/blog/youtube-to-mp4-converter-chrome-extensions)
+Related reading: [CORS Chrome Guide: 4 CORS Solutions for Web Development](/blog/cors-chrome-guide) · [YouTube to MP4 Converter Chrome Extensions](/blog/youtube-to-mp4-converter-chrome-extensions)

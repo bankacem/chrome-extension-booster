@@ -25,7 +25,7 @@ keywords: [chatgpt search history extension, find chatgpt conversation history, 
 
 You know you had that perfect conversation — the one where ChatGPT gave you the exact code snippet, the marketing hook, or the business insight you need right now. And you can't find it. You scroll, and scroll, and scroll some more, then give up and start from scratch. A dedicated **chatgpt search history extension** fixes this permanently: it indexes every conversation you've had, makes them all instantly searchable, and — with the best tools — works across ChatGPT, Claude, Gemini, Perplexity, and DeepSeek at the same time.
 
-We tested the major search history extensions on the Chrome Web Store to find which ones actually deliver. The good news: several free, locally-running tools now solve the lost-conversation problem completely. Before we get to individual picks, one note on setup — installing any of these works exactly as described in the <a href="https://support.google.com/chrome_webstore/answer/2664769?hl=en" target="_blank" rel="noopener noreferrer">Google Web Store Help guide to installing and managing extensions</a>, and takes under a minute.
+The major search history extensions on the Chrome Web Store were compared to find which ones actually deliver. The good news: several free, locally-running tools now solve the lost-conversation problem completely. Before we get to individual picks, one note on setup — installing any of these works exactly as described in the <a href="https://support.google.com/chrome_webstore/answer/2664769?hl=en" target="_blank" rel="noopener noreferrer">Google Web Store Help guide to installing and managing extensions</a>, and takes under a minute.
 
 ## Companion Extensions That Complete Your Setup
 
@@ -36,7 +36,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## Key Takeaways
 
 | Extension | Free Tier | Platforms Supported | Search Type | Privacy |

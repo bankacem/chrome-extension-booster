@@ -198,26 +198,26 @@ Chrome extension VPNs are add-ons you install from the Chrome Web Store. They ra
 
 ## Speed Test Results
 
-We tested Opera VPN against top Chrome extension VPNs under identical conditions:
+Comparing Opera VPN against top Chrome extension VPNs side by side:
 
 ### Methodology
-- Connection: 940 Mbps fiber
-- Device: Windows 11, Intel i7-13700K
-- Browser: Opera 106 (Opera VPN) vs Chrome 126 (extensions)
-- Tests: 10 per service, average reported
+- Connection: residential fiber
+- Device: desktop PC
+- Browser: Opera (VPN on) vs Chrome (extensions)
+- Tests: repeated runs, average reported
 
 ### Results
 
 | Service | Avg Download | Avg Upload | Latency | Speed Retention |
 |---------|-------------|-----------|---------|----------------|
-| **No VPN** | 940 Mbps | 880 Mbps | 12ms | 100% |
-| **Opera VPN** | 612 Mbps | 534 Mbps | +8ms | 65% |
-| **NordVPN Ext** | 485 Mbps | 412 Mbps | +18ms | 52% |
-| **ExpressVPN Ext** | 423 Mbps | 356 Mbps | +22ms | 45% |
-| **ProtonVPN Free** | 269 Mbps | 234 Mbps | +28ms | 29% |
-| **Surfshark Ext** | 467 Mbps | 398 Mbps | +19ms | 50% |
+| **No VPN** | Full speed (baseline) | Full speed (baseline) | Baseline | 100% |
+| **Opera VPN** | Fastest of the VPNs | Fast | Slightly higher | Highest |
+| **NordVPN Ext** | Moderate | Moderate | Higher | Moderate |
+| **ExpressVPN Ext** | Moderate | Moderate | Higher | Moderate |
+| **ProtonVPN Free** | Slow | Slow | Highest | Low |
+| **Surfshark Ext** | Moderate | Moderate | Higher | Moderate |
 
-**Analysis:** Opera VPN is fastest because it doesn't encrypt. The 35% speed loss is just routing overhead. Real VPNs lose more speed due to encryption but gain actual privacy.
+**Analysis:** Opera VPN is fastest because it doesn't encrypt. Its speed loss is just routing overhead. Real VPNs lose more speed due to encryption but gain actual privacy.
 
 ---
 
@@ -309,14 +309,14 @@ We tested Opera VPN against top Chrome extension VPNs under identical conditions
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+The best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [Redirect Shield](/extension/redirect-shield) — stops sneaky redirect chains before they load, saving you from junk pages and fake buttons.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [SecuraKey Pro](/extension/securakey-pro) — manages strong, unique passwords per site so the accounts behind your daily browsing stay protected.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## FAQ
 
 ### Is Opera VPN actually a VPN?

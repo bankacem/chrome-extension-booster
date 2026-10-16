@@ -71,7 +71,7 @@ For content review, client sign-off, and saving proof of results, a capture tool
 
 ### AI Captions and Content Repurposing
 
-AI helpers draft caption variations, suggest hashtags, and repurpose one long post into platform-specific snippets. We tested the category in depth in our [AI social media captions extension guide](/blog/ai-social-media-captions-chrome-extension), including where the drafts still need a human pass.
+AI helpers draft caption variations, suggest hashtags, and repurpose one long post into platform-specific snippets. We covered the category in depth in our [AI social media captions extension guide](/blog/ai-social-media-captions-chrome-extension), including where the drafts still need a human pass.
 
 ## How to Choose a Chrome Extension for Social Media Marketing
 
@@ -84,7 +84,7 @@ Four checks keep the wrong tools off your machine:
 3. **Check compatibility** — confirm the tool works with the platforms and scheduling stack you already use.
 4. **Vet the developer** — a real website, a privacy policy, and a plausible permission list. Review what permissions actually grant in the <a href="https://developer.chrome.com/docs/extensions/" target="_blank" rel="noopener noreferrer">official Chrome for Developers extension documentation</a> before adding anything.
 
-For a curated starting point, our roundup of the [best social media extensions for Chrome](/blog/best-social-media-extensions-for-chrome) compares the tools that survived hands-on testing.
+For a curated starting point, our roundup of the [best social media extensions for Chrome](/blog/best-social-media-extensions-for-chrome) compares the shortlist of tools worth your attention.
 
 ## Build a Stack That Actually Saves Time
 

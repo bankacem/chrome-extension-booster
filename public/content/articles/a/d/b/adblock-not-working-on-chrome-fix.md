@@ -103,7 +103,7 @@ My desktop had two of these — an AdBlock build from 2023 and a "popup blocker"
 
 #### Telling MV2 from MV3 in 15 seconds
 
-With Developer mode on, each card lists "Inspect views." An MV3 extension shows a service worker there. An MV2 extension shows a background page. That one line is faster than digging through a manifest file, and it is reliable across every blocker I have tested.
+With Developer mode on, each card lists "Inspect views." An MV3 extension shows a service worker there. An MV2 extension shows a background page. That one line is faster than digging through a manifest file, and it works the same way across all major blockers.
 
 The other quick check is the store listing: if the extension is gone from the Web Store but present in your profile, it was not migrated and it is not coming back. Our guide to Manifest V3 and ad blocking in Chrome covers which blockers made the transition intact and which were abandoned mid-flight.
 
@@ -145,7 +145,7 @@ Two other things stall updates: a system clock more than a few minutes off, whic
 
 Order matters more than the reinstall itself. Export your blocker settings first, then remove the extension, then quit Chrome fully — on Windows check the tray, because "continue running background apps" keeps a process alive, and on macOS use a real quit rather than closing the window. Relaunch, install from the Web Store, grant site access, set your filtering mode, force a list update, and only then retest.
 
-In my testing, a same-session remove-and-reinstall twice restored the old cached ruleset state and reproduced the original failure, while a reinstall after a full quit did not. That is also the fix Google's support documentation points to for the "extension has been corrupted" error, and if that error returns immediately after a clean reinstall, treat it as a profile problem and go to step 8.
+A same-session remove-and-reinstall restores the old cached ruleset state and reproduces the original failure, while a reinstall after a full quit does not. That is also the fix Google's support documentation points to for the "extension has been corrupted" error, and if that error returns immediately after a clean reinstall, treat it as a profile problem and go to step 8.
 
 ### Step 7: Check Policies And Managed Profiles
 

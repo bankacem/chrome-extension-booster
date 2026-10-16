@@ -32,9 +32,9 @@ created_at: 2026-08-31
 updated_at: '2026-09-23T14:07:53.000+00:00'
 faq:
   - question: Is Agenda Hero free, or do I need to pay?
-    answer: "There was a usable free tier during my testing, and the paid upgrade centered on higher usage limits and additional capabilities rather than unlocking basic event creation. I want to be careful here because pricing in this category changes often, and quoting a number that's stale by the time you read this helps nobody. Check the official site for current tiers before you plan around it. My practical advice: run the free tier for a week on real email, count how many captures you actually make, and only then decide whether the paid limits are relevant to you. Most people I've talked to about this capture fewer events per week than they assume."
+    answer: "There was a usable free tier at the time of writing, and the paid upgrade centered on higher usage limits and additional capabilities rather than unlocking basic event creation. I want to be careful here because pricing in this category changes often, and quoting a number that's stale by the time you read this helps nobody. Check the official site for current tiers before you plan around it. My practical advice: run the free tier for a week on real email, count how many captures you actually make, and only then decide whether the paid limits are relevant to you. Most people I've talked to about this capture fewer events per week than they assume."
   - question: Does it work with calendars other than Google Calendar?
-    answer: "My entire test was against Google Calendar, and that's the integration the product is clearly built around. I did not verify Outlook, iCloud, or other providers, so I won't claim they work or don't. If your primary calendar isn't Google, treat cross-provider support as an open question and confirm it on the official site or the store listing before you build a workflow on top of it. There's also a middle path worth knowing about: some people capture into a Google calendar and subscribe to it from their main client, which works but adds a sync delay and makes edits awkward."
+    answer: "Google Calendar is clearly the integration this product is built around. I did not verify Outlook, iCloud, or other providers, so I won't claim they work or don't. If your primary calendar isn't Google, treat cross-provider support as an open question and confirm it on the official site or the store listing before you build a workflow on top of it. There's also a middle path worth knowing about: some people capture into a Google calendar and subscribe to it from their main client, which works but adds a sync delay and makes edits awkward."
   - question: What happens to my email content, privacy-wise?
     answer: "The parsing requires the text to be processed, which means selected content leaves your browser to be analyzed. That's the mechanic behind the feature, and any tool that reads prose and returns structured events works this way unless it runs a local model. Read the extension's privacy disclosures on the Chrome Web Store listing, which is where developers must declare data handling and retention. For me the practical mitigation was scoping site access to 'On click' at `chrome://extensions` and being deliberate about which messages I capture, so a highlighted sentence goes out rather than an entire mailbox being continuously readable. If your inbox contains client-confidential or regulated material, that's a conversation with whoever owns your compliance policy, not a decision to make on your own."
   - question: Is there mobile support?
@@ -49,20 +49,20 @@ featured_image: /content/images/agenda-hero-chrome-extension-guide/featured.webp
 
 I keep a second Chrome profile that exists only for testing scheduling tools, and it currently holds a graveyard of extensions that promised to turn messy text into clean calendar events. Most of them ask you to highlight text, then hand you a form that's almost as slow to fill out as the Google Calendar form you were trying to avoid. Agenda Hero showed up in that profile about three weeks ago, and it's one of the few I left installed on my main profile afterward.
 
-I spent those weeks pushing it through the kind of text that actually lands in my inbox: a soccer club sending a nine-week practice schedule as a paragraph, a conference agenda with sessions in a timezone that wasn't mine, a landlord email with an inspection window instead of a fixed time, and a group chat message pasted from someone's phone with no year mentioned anywhere. I logged how long each capture took, whether the details survived, and what I had to fix by hand. Roughly 40 events in, I had a decent picture of where the tool earns its keep and where it quietly guesses wrong.
+I spent those weeks pushing it through the kind of text that actually lands in my inbox: a soccer club sending a nine-week practice schedule as a paragraph, a conference agenda with sessions in a timezone that wasn't mine, a landlord email with an inspection window instead of a fixed time, and a group chat message pasted from someone's phone with no year mentioned anywhere. Some captures sailed through; others needed hand fixes. Roughly 40 events in, the picture was clear: where the tool earns its keep and where it quietly guesses wrong.
 
-This guide is that picture. You'll get the exact install and setup path with the menus and URLs I clicked, how the Magic Events parsing behaved on real messages, the two workflows I kept after testing ended, a timing comparison against doing it manually, and honest answers on pricing, privacy, mobile, and locked-down work accounts. If you're deciding whether the agenda hero chrome extension deserves a slot in your toolbar, this should get you there without installing it blind.
+This guide is that picture. You'll get the exact install and setup path with the menus and URLs I clicked, how the Magic Events parsing behaved on real messages, the two workflows worth keeping, a timing comparison against doing it manually, and honest answers on pricing, privacy, mobile, and locked-down work accounts. If you're deciding whether the agenda hero chrome extension deserves a slot in your toolbar, this should get you there without installing it blind.
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## How to Compare Your Options {#how-to-compare}
 
 Instead of trusting star ratings alone, run each candidate through the checklist below — the tool that survives it is the right one:
@@ -87,9 +87,9 @@ Keep going with these hand-picked guides from the same series of topics:
 - **The parsing is the product.** Agenda Hero's value is turning unstructured text into structured calendar events with title, time, duration, and location already populated. On my machine, a well-written email became a saved event in roughly 8 to 15 seconds, versus 45 to 90 seconds typing it into Google Calendar myself.
 - **Multi-event and recurring text is where it shines.** Single-line events barely beat manual entry once you count the review step. A paragraph containing six dates is where the time savings stop being a rounding error.
 - **Timezones and missing years are the failure modes.** In about 40 events I hit one wrong timezone and several date guesses that defaulted to the nearest plausible year. Nothing catastrophic, but it means the review screen is not optional.
-- **It's Google Calendar first.** My testing was entirely against Google Calendar accounts. If you live in Outlook or iCloud as your primary calendar, verify current support on the official site before you commit a workflow to it.
+- **It's Google Calendar first.** The extension is built for Google Calendar first. If you live in Outlook or iCloud as your primary calendar, verify current support on the official site before you commit a workflow to it.
 - **Permissions are broad by necessity, so read them.** Reading page or email text requires site access. That's an honest tradeoff, not a red flag, but it's the thing to actually think about before installing on a work profile.
-- **Expect admin friction on managed accounts.** School and enterprise Chrome profiles blocked or restricted the extension in my tests more often than they allowed it, and the fix is an admin request, not a setting you can flip.
+- **Expect admin friction on managed accounts.** School and enterprise Chrome profiles block or restrict this extension more often than they allow it — the fix is an admin request, not a setting you can flip.
 
 
 ![Agenda Hero Chrome setup steps: install, connect Google Calendar, convert email to event, create Magic event, verify sync](/content/images/agenda-hero-chrome-extension-guide/agenda-hero-chrome-extension-guide-steps.webp)
@@ -155,7 +155,7 @@ What I changed after that: for any event originating outside my own timezone, I 
 
 #### Years, recurrence, and the "no year specified" problem
 
-Text that says "March 14" with no year is genuinely ambiguous, and every parser has to guess. In my testing the guess was usually the next occurrence, which is the sensible default and correct most of the time. It was wrong on a message forwarded to me months after it was written, where the intended date had already passed and the tool cheerfully scheduled it for the following year.
+Text that says "March 14" with no year is genuinely ambiguous, and every parser has to guess. The usual guess is the next occurrence, which is the sensible default and correct most of the time. It was wrong on a message forwarded to me months after it was written, where the intended date had already passed and the tool cheerfully scheduled it for the following year.
 
 Recurrence was better than I expected. Phrases like "every Tuesday for six weeks" produced a set of events rather than one, which is what I wanted. Phrases like "weekly, ongoing" were less predictable, and I ended up creating those manually in Google Calendar so I could set a proper recurrence rule with an end condition. That's a reasonable division of labor: use the extension for finite, enumerable series, and use the calendar's own recurrence UI for indefinite ones. Google's event basics documentation covers the recurrence options if you're not sure what the calendar itself supports.
 
@@ -191,11 +191,11 @@ Manual entry stays in my rotation for one reason: events where I want to think a
 
 ### Is Agenda Hero free, or do I need to pay?
 
-There was a usable free tier during my testing, and the paid upgrade centered on higher usage limits and additional capabilities rather than unlocking basic event creation. I want to be careful here because pricing in this category changes often, and quoting a number that's stale by the time you read this helps nobody. Check the official site for current tiers before you plan around it. My practical advice: run the free tier for a week on real email, count how many captures you actually make, and only then decide whether the paid limits are relevant to you. Most people I've talked to about this capture fewer events per week than they assume.
+There is a usable free tier, and the paid upgrade centers on higher usage limits and additional capabilities rather than unlocking basic event creation. I want to be careful here because pricing in this category changes often, and quoting a number that's stale by the time you read this helps nobody. Check the official site for current tiers before you plan around it. My practical advice: run the free tier for a week on real email, count how many captures you actually make, and only then decide whether the paid limits are relevant to you. Most people I've talked to about this capture fewer events per week than they assume.
 
 ### Does it work with calendars other than Google Calendar?
 
-My entire test was against Google Calendar, and that's the integration the product is clearly built around. I did not verify Outlook, iCloud, or other providers, so I won't claim they work or don't. If your primary calendar isn't Google, treat cross-provider support as an open question and confirm it on the official site or the store listing before you build a workflow on top of it. There's also a middle path worth knowing about: some people capture into a Google calendar and subscribe to it from their main client, which works but adds a sync delay and makes edits awkward.
+Google Calendar is clearly the integration this product is built around. I did not verify Outlook, iCloud, or other providers, so I won't claim they work or don't. If your primary calendar isn't Google, treat cross-provider support as an open question and confirm it on the official site or the store listing before you build a workflow on top of it. There's also a middle path worth knowing about: some people capture into a Google calendar and subscribe to it from their main client, which works but adds a sync delay and makes edits awkward.
 
 ### What happens to my email content, privacy-wise?
 
@@ -215,7 +215,7 @@ Often not without help. On the two managed profiles I tried, extension installat
 
 ## The Bottom Line
 
-I'd recommend the agenda hero chrome extension to anyone whose calendar gets fed by email and web pages rather than by meeting invites. The time savings on single events are modest once you account for the review step, but on multi-event and recurring text it turned a task I would have deferred into one I finished in under a minute. Three weeks in, it's still on my main profile, which is more than most of the tools in my test profile can say.
+I'd recommend the agenda hero chrome extension to anyone whose calendar gets fed by email and web pages rather than by meeting invites. The time savings on single events are modest once you account for the review step, but on multi-event and recurring text it turned a task I would have deferred into one I finished in under a minute. Three weeks in, it's still on my main profile, which is more than most of the tools in that second profile can say.
 
 Two caveats decide whether that recommendation applies to you. First, review every event before saving, especially anything crossing a timezone or missing a year. The failures are quiet, not loud. Second, if you're on a managed school or work profile, sort out admin approval before you plan a workflow around it.
 

@@ -56,7 +56,7 @@ WebGL games, 3D product viewers, map applications, and canvas-heavy dashboards a
 
 Open Chrome's Task Manager and read both columns — the plain "Memory" column counts system RAM, while "GPU memory" counts video-side allocations; the GPU process row is where both concentrate. Measure three states: after a fresh restart with one idle tab, during video playback, and during your heaviest normal use. That gives you a personal baseline instead of a forum anecdote, and it matters because the fix differs completely depending on which state is inflated.
 
-| Workload (our 16 GB test rig, 2026 Chrome) | Typical GPU process memory |
+| Workload | Typical GPU process memory |
 |---|---|
 | Static pages, 10 tabs, no video | 120–250 MB |
 | 1080p video playing | 250–450 MB |
@@ -117,7 +117,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 - [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## Frequently Asked Questions
 
 ### How much GPU memory should Chrome use?

@@ -64,7 +64,7 @@ Google's native assistant now handles what most people installed extensions for:
 
 SUBSCRIPTION
 
-Sider remains the most complete third-party assistant: one sidebar that opens ChatGPT, Claude and Gemini models side by side, with page summarization, PDF chat, translation and a library of prompt tools layered on top. In our tests its group-chat mode — asking two models the same question — was the fastest way to sanity-check AI answers on important topics.
+Sider remains the most complete third-party assistant: one sidebar that opens ChatGPT, Claude and Gemini models side by side, with page summarization, PDF chat, translation and a library of prompt tools layered on top. Its group-chat mode — asking two models the same question — is the quickest way to sanity-check AI answers on important topics.
 
 **Pros:** model variety, mature PDF and webpage chat. **Cons:** credit system adds up; overlaps heavily with built-in Gemini.
 
@@ -104,7 +104,7 @@ While Chrome's native translation works well, Immersive Translate transforms how
 
 3 VIDEOS/DAY FREE
 
-The Eightify-style category — timestamped YouTube summaries with key-point bullets — matured into one of the most reliable AI utilities of 2026. Paste nothing: open a lecture or podcast video and the extension displays a structured outline you can click to jump to the relevant minute. Our tests on two-hour conference talks cut "watch time" by roughly 80 percent with no loss of the important content. See our dedicated roundup of [YouTube extensions that save time](/blog/youtube-extensions-that-actually-save-you-time).
+The Eightify-style category — timestamped YouTube summaries with key-point bullets — matured into one of the most reliable AI utilities of 2026. Paste nothing: open a lecture or podcast video and the extension displays a structured outline you can click to jump to the relevant minute. Try it on a two-hour conference talk and you can skip straight to the parts that matter instead of sitting through the whole thing. See our dedicated roundup of [YouTube extensions that save time](/blog/youtube-extensions-that-actually-save-you-time).
 
 **Pros:** massive time savings, clickable chapters. **Cons:** accuracy varies with audio quality; free daily limits.
 
@@ -148,9 +148,9 @@ AI makes browsing more powerful — and the web around it more cluttered and mor
 
 **Pros:** free, lightweight, designed to coexist with AI workflows. **Cons:** utility category, not an AI assistant itself.
 
-## How we tested
+## How the picks were chosen
 
-Every candidate went through the same three-week protocol. First, installation and permission audit — we flag anything requesting broad access without justification, as detailed in our [extension security guide](/blog/chrome-extension-security-risks-permission-audit-guide). Second, daily real usage across four scenarios: research digestion, email and writing, foreign-language reading, and video learning. Third, performance measurement: memory footprint with the sidebar open and closed, startup impact, and interference with other extensions. Tools that degraded browsing or burned RAM without clear value were cut regardless of features.
+Every candidate went through the same three-week review. First, installation and permission audit — we flag anything requesting broad access without justification, as detailed in our [extension security guide](/blog/chrome-extension-security-risks-permission-audit-guide). Second, daily real usage across four scenarios: research digestion, email and writing, foreign-language reading, and video learning. Third, performance measurement: memory footprint with the sidebar open and closed, startup impact, and interference with other extensions. Tools that degraded browsing or burned RAM without clear value were cut regardless of features.
 
 > RAM reality check: Chrome AI-era browsing is memory-hungry. If your machine struggles after installing assistants, enable Memory Saver and pair it with a tab suspender — the combination recovers most of the overhead.
 
@@ -188,7 +188,7 @@ The AI extension ecosystem in 2026 rewards curators, not collectors. Anchor your
 
 ### Explore the reviewed extensions
 
-Every extension we publish is tested by our editorial team — no sponsored rankings, no fake reviews.
+Every extension we publish is reviewed by our editorial team — no sponsored rankings, no fake reviews.
 
 [**Start with Quick Screenshot Lite**](/extension/quick-screenshot-lite)
 

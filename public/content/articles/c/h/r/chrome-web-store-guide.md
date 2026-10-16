@@ -31,7 +31,7 @@ updated_at: '2026-09-23T13:56:58.000+00:00'
 
 The Chrome Web Store is the largest browser extension marketplace with over 200,000 extensions and 2 billion total installs. But size does not mean quality. In 2024, Google removed over 100 malicious extensions that had been downloaded 300 million times. In 2026, the store is safer but still requires caution. For a detailed comparison of security extensions that can protect your browsing, see our [Kaspersky Protection review](/blog/kaspersky-protection-chrome-review).
 
-I spent a week evaluating the Chrome Web Store alongside three competing marketplaces — Edge Add-ons, Firefox Add-ons, and Opera Add-ons — to compare safety, selection, and curation quality. For a hands-on list of the best extensions after testing 42 options, read our [Chrome Web Store extensions guide](/blog/chrome-web-store-extensions-guide).
+The Chrome Web Store stands alongside three competing marketplaces — Edge Add-ons, Firefox Add-ons, and Opera Add-ons — each differing in safety, selection, and curation quality. For a hands-on list of the best extensions, read our [Chrome Web Store extensions guide](/blog/chrome-web-store-extensions-guide).
 
 ## How the Chrome Web Store Works
 
@@ -56,7 +56,7 @@ The Chrome Web Store has the most extensions but the highest rate of malicious s
 ![Chrome Web Store Guide Overview](/content/images/chrome-web-store-guide/chrome-web-store-guide-overview.webp "Chrome Web Store Guide Overview")
 
 
-After testing and reviewing hundreds of extensions, here is my checklist for determining if an extension is safe:
+Here is a checklist for determining if an extension is safe:
 
 **1. Check permissions.** A screenshot extension should only need `activeTab` and `storage`. An ad blocker needs `webRequest` and `webNavigation` on all sites. If a simple extension like a timer or color picker requests access to all websites, skip it.
 

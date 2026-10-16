@@ -48,7 +48,7 @@ Before we dive into the review, it's essential to understand the importance of o
 
 ## What is Ghostery?
 
-Ghostery is a browser extension that blocks trackers, scripts, and ads, aiming to protect user privacy and improve browsing speed. It's available for various browsers, including Chrome, Firefox, and Safari. With Ghostery, you can **block trackers**, **stop ads**, and **protect your data** from being collected and sold. But **is Ghostery safe to use?** To answer this question, let's examine its features and benefits.
+Ghostery is a browser extension that blocks trackers, scripts, and ads, aiming to protect user privacy and improve browsing speed. It's available for various browsers, including Chrome, Firefox, and Safari. With Ghostery, you can **block trackers**, **stop ads**, and **limit what third-party trackers can collect about you**. But **is Ghostery safe to use?** To answer this question, let's examine its features and benefits.
 
 ### Features and Benefits
 

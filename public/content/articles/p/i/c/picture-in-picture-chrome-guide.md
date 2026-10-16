@@ -86,7 +86,6 @@ Do not confuse normal video PiP with **Document Picture-in-Picture**. Chrome’s
 
 ![Picture In Picture Chrome Guide Overview](/content/images/picture-in-picture-chrome-guide/picture-in-picture-chrome-guide-overview.webp "Picture In Picture Chrome Guide Overview")
 
-
 Try the built-in route before installing anything:
 
 1. Open the video in Chrome and start playback. Keep the video in the active tab while you test the control.
@@ -94,8 +93,6 @@ Try the built-in route before installing anything:
 3. Choose **Picture in Picture** or the equivalent PiP command if it is available. The wording can vary by Chrome version and site.
 4. Drag the floating window to a useful position and resize it from a corner when the operating system allows it. Return to the original tab or close the floating window using its controls.
 5. If the context menu does not expose PiP, open Chrome’s media controls near the toolbar when they are available and look for the active media action. A site may also provide its own PiP button inside the player.
-
-> **Screenshot placeholder — built-in control:** Capture Chrome’s video context menu with **Picture in Picture** highlighted, using a neutral test video. Suggested alt text: “Chrome video context menu showing the Picture in Picture command.”
 
 The absence of a menu item is meaningful: the current player may not expose a compatible video, the site may block the action, or another menu may be intercepting the click. It does not automatically mean Chrome is broken.
 
@@ -123,14 +120,11 @@ The official Google extension documents a shortcut, while Chrome’s built-in Pi
 | Linux | No universal built-in PiP shortcut documented; use the video menu or Chrome media controls | **Alt + P** | A desktop environment or another extension may claim the same combination. |
 | ChromeOS | Use the video menu or Chrome media controls | **Alt + P**, where the extension exposes it; verify in `chrome://extensions/shortcuts` | ChromeOS can reserve keyboard combinations, so treat this as an extension shortcut rather than a built-in Chrome shortcut. |
 
-> **Screenshot placeholder — shortcut settings:** Capture `chrome://extensions/shortcuts` with the PiP extension row visible and the shortcut field highlighted. Suggested alt text: “Chrome extension keyboard shortcuts page showing the Picture-in-Picture shortcut.”
-
 The safest rule is simple: use the built-in menu first, use **Alt + P** or **Option + P** only for the official extension, and check the current shortcut-management page when a key combination stops responding. For broader browser workflows, see our [power-user Chrome extensions workflow guide](/blog/pro-browsing-chrome-extensions-the-ultimate-workflow-upgrade-for-power-users).
 
 ## When Document Picture-in-Picture matters
 
 ![Picture In Picture Chrome Guide Features](/content/images/picture-in-picture-chrome-guide/picture-in-picture-chrome-guide-features.webp "Picture In Picture Chrome Guide Features")
-
 
 Most viewers only need video PiP. Document PiP matters when you are building or using a web app that needs more than a video rectangle: a meeting window with controls, a custom player with a playlist, a floating task list, or a small companion interface.
 
@@ -172,7 +166,6 @@ Use this sequence instead of installing several unofficial PiP extensions at onc
 
 ![Picture In Picture Chrome Guide Guide](/content/images/picture-in-picture-chrome-guide/picture-in-picture-chrome-guide-guide.webp "Picture In Picture Chrome Guide Guide")
 
-
 ### PiP is missing from the right-click menu
 
 Right-click the video twice if the site supplies a custom menu. If the option is still absent, try another video and check for a player-specific PiP button. You can also test the official Google extension. Do not use a broad collection of extensions as a first response; multiple player modifiers can make diagnosis harder.
@@ -200,8 +193,6 @@ Different platforms may use custom players, protected playback, or their own mee
 ### YouTube
 
 Pause the video and right-click twice if YouTube’s menu hides Chrome’s command. Try the player’s PiP control, then Chrome’s command, then the official Google extension; if only one video fails, compare its player state and avoid several “force PiP” extensions.
-
-> **Screenshot placeholder — YouTube:** Capture a paused video after the second right-click with **Picture in Picture** visible. Suggested alt text: “YouTube video menu opened twice to reveal Chrome Picture in Picture.”
 
 ### Netflix and other DRM streams
 
@@ -231,12 +222,9 @@ For desktop Chrome 142 and later, open `chrome://flags/#browser-initiated-automa
 
 Chrome documents conferencing Auto-PiP from Chrome 120 on desktop for eligible web apps that register `enterpictureinpicture`, capture camera or microphone, and receive user permission; a flag cannot make every meeting site eligible.[5]
 
-> **Screenshot placeholder — Chrome Flags:** Capture `chrome://flags` with an Auto-PiP result and its **Default/Enabled** selector. Suggested alt text: “Chrome Flags page showing an Auto Picture-in-Picture experimental setting.”
-
 ## Keep PiP stable while multitasking
 
 ![Picture In Picture Chrome Guide Results](/content/images/picture-in-picture-chrome-guide/picture-in-picture-chrome-guide-results.webp "Picture In Picture Chrome Guide Results")
-
 
 Use one PiP window at a time while diagnosing a problem. Keep the source tab open until playback is stable, and avoid changing several browser settings simultaneously. If you use PiP for meetings, treat the floating window as a view of the call rather than a replacement for the meeting tab; controls such as mute, presenting, or chat may remain in the original application.
 
@@ -251,7 +239,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## Frequently asked questions
 
 ### Is Picture-in-Picture built into Chrome?
@@ -273,8 +261,6 @@ No. Video PiP detaches an HTML video, while Document Picture-in-Picture lets a p
 ### What is the safest first fix when Chrome PiP stops working?
 
 Test another video, check the site’s own control, disable one conflicting extension, and try the official Google extension. Then update Chrome and retest. Avoid installing several unofficial extensions or changing hardware acceleration before isolating the affected player.
-
-
 
 ## Final checklist
 

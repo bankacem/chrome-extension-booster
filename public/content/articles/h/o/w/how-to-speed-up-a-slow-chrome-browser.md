@@ -70,7 +70,7 @@ This is one of those fixes that seems too simple to matter, but it resolves Chro
 
 ## Enable Memory Saver and Tab Discarding
 
-Chrome has built-in memory management features that many users never enable or configure. Memory Saver, accessible from chrome://settings/performance, automatically puts inactive tabs to sleep after a configurable period of inactivity. A sleeping tab releases most of its RAM back to the system while preserving the tab's visual state so you can pick up where you left off. In our testing, enabling Memory Saver on a machine with 8 GB of RAM reduced Chrome's total memory consumption by 25 to 40 percent, depending on how many tabs were open.
+Chrome has built-in memory management features that many users never enable or configure. Memory Saver, accessible from chrome://settings/performance, automatically puts inactive tabs to sleep after a configurable period of inactivity. A sleeping tab releases most of its RAM back to the system while preserving the tab's visual state so you can pick up where you left off. Enabling Memory Saver can noticeably reduce Chrome's total memory consumption — the more tabs you keep open, the bigger the saving.
 
 Tab Discarding is a related but more aggressive feature. While Memory Saver puts tabs into a low-power state, Tab Discarding completely unloads the tab's page from memory. When you click back on a discarded tab, Chrome reloads the page from the network. This uses less memory than Memory Saver but introduces a reload delay when returning to the tab. Most users prefer Memory Saver for its balance of memory savings and instant tab restoration, but Tab Discarding is the better choice if you are severely constrained on RAM and have many tabs open that you rarely revisit.
 
@@ -116,14 +116,14 @@ To reset, go to chrome://settings, search for "reset," and click "Restore settin
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 - [Offline Reader Pro](/extension/offline-reader-pro) — saves articles as clean readable copies you can open later without ads, videos, or a connection.
 - [Auto Dark Mode Switcher](/extension/auto-dark-mode-switcher) — switches every site to dark mode on a schedule, easier on the eyes during evening sessions.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## Related Guides {#related-guides}
 
 Readers who used this guide also found these walkthroughs useful:

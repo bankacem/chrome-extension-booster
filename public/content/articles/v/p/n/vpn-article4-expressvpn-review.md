@@ -86,32 +86,13 @@ Most VPN Chrome extensions are glorified proxies. They change your IP address bu
 
 ---
 
-## Speed Test Results: Real Numbers
+## Speed: Extension vs Full App
 
-We tested ExpressVPN's Chrome extension against its full app and competitors:
+The Chrome extension runs a touch slower than ExpressVPN's full desktop app — expected, since the extension is a browser-based proxy rather than a full VPN client. In practice the gap is small: browsing and streaming feel just as fast, and independent speed tests consistently rank ExpressVPN near the top of the market. For everyday use, you won't notice the extension holding you back.
 
-| Server Location | Extension Speed | Full App Speed | Speed Retention |
-|-----------------|-----------------|----------------|-----------------|
-| **New York** | 445 Mbps | 512 Mbps | 87% |
-| **London** | 412 Mbps | 478 Mbps | 86% |
-| **Tokyo** | 356 Mbps | 423 Mbps | 84% |
-| **Sydney** | 289 Mbps | 334 Mbps | 87% |
-| **Frankfurt** | 398 Mbps | 467 Mbps | 85% |
-| **Singapore** | 367 Mbps | 423 Mbps | 87% |
-| **Average** | **423 Mbps** | **489 Mbps** | **86%** |
+### Protocol Performance
 
-**Key finding:** ExpressVPN's extension retains 86% of full app speed — the highest retention rate we tested. NordVPN retains 65%, Surfshark 72%.
-
-### Protocol Performance (London Server)
-
-| Protocol | Download | Upload | Latency |
-|----------|----------|--------|---------|
-| **Lightway (UDP)** | 478 Mbps | 412 Mbps | +18ms |
-| **Lightway (TCP)** | 356 Mbps | 298 Mbps | +24ms |
-| **OpenVPN UDP** | 312 Mbps | 267 Mbps | +28ms |
-| **OpenVPN TCP** | 234 Mbps | 198 Mbps | +35ms |
-
-**Lightway is ExpressVPN's proprietary protocol** — faster than WireGuard in our tests, but closed-source (unlike NordLynx).
+**Lightway is ExpressVPN's proprietary protocol** — quick and modern, but closed-source (unlike NordLynx). Lightway on UDP is the best pick for speed; switch to TCP on restrictive networks.
 
 ---
 
@@ -141,7 +122,7 @@ ExpressVPN is based in the **British Virgin Islands** — a privacy-friendly jur
 
 ## Streaming & Unblocking: Netflix, BBC, Disney+
 
-This is where ExpressVPN justifies its price. We tested every major streaming platform:
+This is where ExpressVPN justifies its price. Across the major streaming platforms:
 
 | Platform | Unblocked? | Quality | Notes |
 |----------|-----------|---------|-------|
@@ -240,7 +221,7 @@ If you primarily need reliable streaming unblocking (Netflix, BBC iPlayer), yes 
 No. The extension requires the ExpressVPN desktop application to be installed and running. It acts as a remote control for the app, not a standalone VPN. This is different from NordVPN and Surfshark extensions that work independently.
 
 ### Is ExpressVPN faster than NordVPN?
-In our tests, NordVPN was 15% faster on average (485 Mbps vs 423 Mbps). However, ExpressVPN was more consistent across all tested servers. NordVPN had higher peaks but also lower valleys.
+NordVPN edges ExpressVPN on raw speed in most independent tests, but ExpressVPN is more consistent across servers — fewer peaks, fewer valleys.
 
 ### Can ExpressVPN unblock Netflix in 2026?
 Yes, reliably. ExpressVPN unblocks Netflix US, UK, Japan, Canada, and 10+ other regions. In 6 weeks of testing, it failed zero times. This is ExpressVPN's primary competitive advantage.

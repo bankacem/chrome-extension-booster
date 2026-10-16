@@ -86,7 +86,7 @@ A sensible rhythm is to collapse at the end of each work block, restore only wha
 
 OneTab is available for both browsers, but its click-to-collapse model suits Firefox users who like full control. On Chrome, our [ProTab Suspender](/extension/protab-suspender) extension does the collapsing for you, suspending inactive tabs before memory pressure builds. If you shop around yourself, Google's <a href="https://support.google.com/chrome_webstore/answer/2664769?hl=en" target="_blank" rel="noopener noreferrer">Web Store Help</a> documents how to install and manage extensions safely.
 
-Hardware matters here too. If your machine is older, the real ceiling is the browser you choose — our test of the [best browser for low-end PCs](/blog/best-browser-for-low-end-pc-2026) measured seven candidates on genuinely old hardware.
+Hardware matters here too. If your machine is older, the real ceiling is the browser you choose — our comparison of the [best browser for low-end PCs](/blog/best-browser-for-low-end-pc-2026) covers seven candidates on genuinely old hardware.
 
 ## Tips to Get More Out of OneTab Firefox
 

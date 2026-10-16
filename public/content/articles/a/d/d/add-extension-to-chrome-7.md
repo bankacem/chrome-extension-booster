@@ -59,7 +59,7 @@ Adding an extension to Chrome is straightforward. Here is the exact process:
 
 That is it. The extension icon appears in your toolbar, usually to the right of the address bar. You can right-click the icon and select "Pin" to keep it visible.
 
-I tested this process on Chrome 125 on Windows 11 and macOS Sonoma. It took 28 seconds on average across 10 installs — quicker than I expected.
+The steps below apply to current Chrome versions on both Windows 11 and macOS Sonoma, and the whole process typically takes under a minute.
 
 ## Alternative Installation Methods {#alternatives}
 
@@ -104,7 +104,7 @@ I recommend auditing permissions once a month. Open `chrome://extensions`, click
 
 ## The 8 Extensions I Recommend Installing First {#recommendations}
 
-After testing dozens of extensions, these eight cover every major category:
+These eight cover every major category:
 
 | Extension | Category | Why Install It |
 |-----------|----------|---------------|
@@ -149,7 +149,7 @@ If this guide solved one problem for you, the right companion extensions can sol
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-Install only what matches a real need in your day — that is exactly how we test and recommend them.
+Install only what matches a real need in your day.
 ## FAQ {#faq}
 
 **Q: Is it safe to install Chrome extensions?**

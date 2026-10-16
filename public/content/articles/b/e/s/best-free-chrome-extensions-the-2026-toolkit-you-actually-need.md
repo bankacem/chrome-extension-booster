@@ -51,7 +51,7 @@ I use it to declare "tab bankruptcy" at the end of the day without actually losi
 
 Overlay pop-ups are the worst part of the modern web. Newsletter sign-ups, cookie consent walls, fake download buttons, autoplay video modals — they interrupt everything. [Light Popup Blocker](https://chromewebstore.google.com/detail/light-popup-blocker/oimngcokgckajdlphggpjpbeljoakpii) uses pattern recognition to catch these overlays before they render. It uses only 20 MB of RAM and works silently in the background.
 
-I tested it on 30 high-traffic news sites. It blocked 94% of overlay pop-ups. The 6% it missed were mostly first-party login dialogs that Chrome itself triggered. It is the only popup blocker I have found that works reliably without breaking site functionality.
+On high-traffic news sites it blocks the large majority of overlay pop-ups; what it misses tends to be first-party login dialogs that Chrome itself triggers. It is one of the few popup blockers that works reliably without breaking site functionality.
 
 ## The Privacy Guardians
 
@@ -62,7 +62,7 @@ I tested it on 30 high-traffic news sites. It blocked 94% of overlay pop-ups. Th
 
 Let's be clear: this is not "AdBlock." It is better. uBlock Origin is the gold standard for blocking ads, trackers, and coin miners. It is lightweight on your CPU (unlike others) and open-source. It is the first thing I install on any new computer. Period.
 
-The key difference from AdBlock Plus: uBlock Origin has no "Acceptable Ads" program. It blocks everything by default. You can whitelist specific sites, but nothing gets through unless you allow it. In my testing, uBlock Origin blocked 95% of banner ads and 100% of YouTube pre-roll ads.
+The key difference from AdBlock Plus: uBlock Origin has no "Acceptable Ads" program. It blocks everything by default. You can whitelist specific sites, but nothing gets through unless you allow it. It blocks the vast majority of banner ads and YouTube pre-roll ads.
 
 ### SecuraKey Pro
 
@@ -82,7 +82,7 @@ The extension shows the full redirect chain — each domain the link passes thro
 
 Your eyes deserve a break. [NightShield Pro](https://chromewebstore.google.com/detail/nightshield-pro/pgjidjlmpacojfolcmeekgnnekmggenm) applies a warm-tint dark mode to every website, even the ones that do not support it natively. It intelligently adjusts contrast so text stays readable — unlike simple CSS inversion that makes images look like photo negatives.
 
-I tested it against Dark Reader (the most popular alternative). NightShield Pro used 30% less RAM (50 MB vs 70 MB) and had fewer rendering glitches on complex sites like Google Maps. The warmth slider lets you tune the color temperature from cool blue to warm amber.
+Next to Dark Reader (the most popular alternative), NightShield Pro runs lighter and glitches less on complex sites like Google Maps. The warmth slider lets you tune the color temperature from cool blue to warm amber.
 
 ### DarkFlow
 
@@ -123,14 +123,14 @@ It preserves images, formatting, and even some interactive elements. I saved 40 
 
 ## Companion Extensions That Complete Your Setup
 
-Over months of testing, a pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
+A pattern keeps repeating: the best results come from pairing one focused tool with a few quiet helpers. These four from our catalog complete the setup described above:
 
 - [ProTab Suspender](/extension/protab-suspender) — puts idle tabs to sleep to free memory, keeping long browsing sessions smooth on any machine.
 - [Quick Screenshot Lite](/extension/quick-screenshot-lite) — captures clean screenshots in two clicks so you can save or share exactly what you are looking at without juggling menus.
 - [Cookie Banner Blocker](/extension/cookie-banner-blocker) — auto-dismisses consent walls so unfamiliar sites open straight to their content.
 - [Light Popup Blocker](/extension/light-popup-blocker) — keeps pop-ups and interstitials out of the way, which protects both your focus and your click accuracy.
 
-All four are lightweight, free to try, and tested by our editorial team before recommending them here.
+All four are lightweight and free to try.
 ## FAQ
 
 **Q: How many extensions should I install at once?**
@@ -140,7 +140,7 @@ A: I recommend starting with 3-4 and adding more as needed. The full stack of 8 
 A: Yes, every extension listed here is fully free with no premium paywall. Some have optional donations but no locked features.
 
 **Q: Do these extensions work together?**
-A: Yes. I tested all 8 simultaneously on the same Chrome profile with no conflicts. Each has a distinct function with no overlap.
+A: Yes. All 8 run simultaneously on the same Chrome profile with no conflicts. Each has a distinct function with no overlap.
 
 **Q: Will these extensions slow down Chrome?**
 A: Total RAM impact is about 300 MB for all 8. Compare that to 20 tabs using 2-3 GB. The performance impact is negligible.

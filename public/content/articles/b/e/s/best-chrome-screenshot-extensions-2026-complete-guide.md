@@ -84,7 +84,7 @@ The limitation is that it does not wait for lazy-loaded images (which may appear
 
 ## Best Chrome Screenshot Extensions in 2026
 
-We tested each candidate on three page types: a long documentation page with lazy-loaded images, a dashboard with fixed headers, and a plain article. Here is how the field finished.
+Each candidate was evaluated on three page types: a long documentation page with lazy-loaded images, a dashboard with fixed headers, and a plain article. Here is how the field finished.
 
 ### 1. Quick Screenshot Lite — Best for Speed
 
