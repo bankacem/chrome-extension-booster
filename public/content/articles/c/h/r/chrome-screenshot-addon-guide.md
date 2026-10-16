@@ -80,7 +80,7 @@ Awesome Screenshot was one of the first screenshot extensions I used, back in 20
 
 The free version has a 10-screenshot-per-week limit for cloud uploads. After that, you must pay $4/month or $30/year for unlimited uploads. The annotation editor opens automatically after every capture, adding 2-3 seconds to the workflow. There is no option to disable this.
 
-On my test page, Awesome Screenshot's full-page capture took 5.7 seconds and produced a 1920×17540px image — it missed the last ~1,200 pixels of the page. Repeated attempts produced the same clipping each time.
+On a long page, Awesome Screenshot's full-page capture took several seconds and the resulting image was clipped — the bottom of the page was missing, and repeated captures clipped the same way each time.
 
 ### GoFullPage — Minimalist but Slow
 
@@ -94,7 +94,7 @@ GoFullPage also lacks any visible-area capture mode. If you want a quick screens
 
 Fireshot has been around since 2012 and offers full-page capture, region capture, and a built-in editor. The free version adds a Fireshot watermark to every screenshot. I find this unacceptable for any professional use. The Pro version costs $39.95 — more than Snagit's single-license price of $63, but without Snagit's desktop-quality editing tools.
 
-Fireshot is also slow. Full-page capture on my test page took 4.8 seconds, and the extension uses 95MB of RAM. The interface looks dated — Windows 7-era buttons and fonts that clash with Chrome's Material Design.
+Fireshot is also slow. Its full-page capture lagged well behind Quick Screenshot Lite on the same long page, and the extension uses 95MB of RAM. The interface looks dated — Windows 7-era buttons and fonts that clash with Chrome's Material Design.
 
 ## Keyboard Shortcuts for Fast Screenshots
 

@@ -80,7 +80,7 @@ Capture is fast (0.6s for the test) and the annotation tools (arrows, text, high
 
 The problems: Lightshot cannot capture full-page screenshots at all. If you need to save an entire article or a long webpage, Lightshot is not the right tool. The prnt.sc upload is concerning — by default, your screenshots are uploaded to a public URL that anyone can access if they guess the short code. Lightshot does support local saving, but the default upload behavior has been criticized in privacy reviews.
 
-Lightshot also saves in JPG format only, which introduces compression artifacts. Text in screenshots appears slightly blurry compared to PNG. On my test, a 1920×1080 capture was 210KB in Lightshot's JPG vs 1.4MB for the same capture in PNG.
+Lightshot also saves in JPG format only, which introduces compression artifacts. Text in screenshots appears slightly blurry compared to PNG. A JPG capture is substantially smaller than the equivalent PNG, but that size saving comes at the cost of text sharpness.
 
 ## Privacy and Permission Comparison
 

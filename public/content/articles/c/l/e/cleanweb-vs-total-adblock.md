@@ -40,7 +40,7 @@ The results changed how I think about ad blocking. The short version: **total ad
 
 Here is the full breakdown.
 
-## My Test Methodology
+## How the Four Setups Were Compared
 
 Four setups are compared on a Windows 11 machine with Chrome 125, 16 GB RAM, and a 500 Mbps connection, each on a fresh Chrome profile with no cached data — measuring page load time, memory usage, and visible ads remaining on the same set of sites.
 
@@ -99,7 +99,7 @@ If your goal is to remove all ads everywhere, total adblock wins. But if your go
 
 ## Comparison: Cleanweb vs 3 Total Adblock Solutions
 
-I compared the cleanweb approach (using [Light Popup Blocker](/extension/light-popup-blocker)) against three popular total adblock solutions.
+The cleanweb approach (using [Light Popup Blocker](/extension/light-popup-blocker)) is weighed here against three popular total adblock solutions.
 
 | Feature | Light Popup Blocker (Cleanweb) | uBlock Origin | AdBlock Plus | Ghostery |
 |---------|-------------------------------|---------------|--------------|----------|

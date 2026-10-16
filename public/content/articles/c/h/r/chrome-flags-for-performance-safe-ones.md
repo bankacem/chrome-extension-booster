@@ -109,7 +109,7 @@ One more expectation-setter: Chrome sometimes resets flags on its own after an u
 
 ## Flags vs Settings vs Extensions: Where the Real Gains Are
 
-To keep the flags in perspective, here is what each layer of tuning actually delivered on the same 4GB test machine, measured the same way as our browser comparison. The pattern is consistent: flags polish rendering; settings and extensions move gigabytes.
+To keep the flags in perspective, here is how each layer of tuning typically performs under a standard 4GB-machine workload — the pattern is consistent: flags polish rendering; settings and extensions move gigabytes.
 
 | Change | Where it lives | Typical effect (4GB bench, 25 tabs) | Risk |
 |---|---|---|---|

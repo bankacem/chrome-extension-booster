@@ -82,7 +82,7 @@ The installation process is Safari's biggest frustration. Every single Safari ex
 
 Safari also has the lowest free extension ratio at 60%. Many basic utilities that are free on Chrome — screenshot tools, ad blockers, form fillers — cost $2-5 on Safari. The smaller user base means developers cannot sustain free offerings and must charge to cover development costs.
 
-## Testing Methodology: The 50 Sites I Used
+## Testing Methodology: The 50 Sites in This Comparison
 
 To keep the comparison consistent, every extension was checked against the same set of sites, grouped by category:
 
@@ -94,7 +94,7 @@ To keep the comparison consistent, every extension was checked against the same 
 | Social Media | Facebook, Twitter/X, Reddit, Instagram, LinkedIn, TikTok (web), Pinterest, Tumblr, Discord (web), WhatsApp Web |
 | Productivity | Google Docs, Google Drive, Notion, Trello, Asana, Slack (web), Outlook (web), Canva, Medium, GitHub |
 
-I visited each site three times per extension — once with the extension active, once without, and once with Chrome's built-in equivalent (if any). I recorded the lowest memory reading after the page fully loaded and the DOM stopped changing. This gave me 150 data points per extension.
+For a consistent comparison, check each extension against the same set of sites — once with the extension active, once without, and once with Chrome's built-in equivalent (if any). Recording the lowest memory reading after the page fully loads and the DOM stops changing gives a stable baseline for comparing extensions.
 
 ## Performance Impact by Extension Category
 

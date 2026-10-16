@@ -75,7 +75,7 @@ Microsoft Clarity is the easiest of all since it is fully free and you can start
 ![Contentsquare Extension Chrome Overview](/content/images/contentsquare-extension-chrome/contentsquare-extension-chrome-overview.webp "Contentsquare Extension Chrome Overview")
 
 
-I compared heatmaps from all four tools on the same pages to see if they agreed on where users clicked and scrolled.
+The heatmaps from all four tools were compared on the same pages, to see whether they agreed on where users clicked and scrolled.
 
 | Metric | Contentsquare | Hotjar | Crazy Egg | Microsoft Clarity |
 |--------|--------------|--------|-----------|-------------------|
@@ -91,7 +91,7 @@ Crazy Egg's snap-on heatmaps were the quickest to generate and the easiest to re
 
 ## Session Replay Comparison
 
-Session replays are the most resource-intensive feature. I compared recording quality and completeness.
+Session replays are the most resource-intensive feature. This section looks at recording quality and completeness.
 
 | Metric | Contentsquare | Hotjar | Crazy Cream | Microsoft Clarity |
 |--------|--------------|--------|-------------|-------------------|

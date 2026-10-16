@@ -127,7 +127,7 @@ All four are lightweight and free to try.
 A: Chrometana is a Chrome extension that redirects Bing and Cortana search queries to Google. It intercepts Bing search URLs and forwards the same query to Google Search.
 
 **Q: Does Chrometana work with Cortana in Windows 11?**
-A: Yes. Chrometana intercepts Cortana searches that open Edge with Bing results and redirects them to Google. It was the only extension in my test that caught 10/10 Cortana searches.
+A: Yes. Chrometana intercepts Cortana searches that open Edge with Bing results and redirects them to Google. It was the only extension in this comparison designed to catch Cortana-initiated searches.
 
 **Q: Is Chrometana safe?**
 A: Yes. Chrometana is open source and performs all redirects locally. No search data is sent to any server other than Google (your final destination).
@@ -143,7 +143,7 @@ A: No. Chrometana uses 18MB of RAM and adds 0.4 seconds of redirect time. The re
 
 ## Verdict
 
-Chrometana is the best extension for redirecting Cortana and Bing searches to Google. It is the only extension in my test that caught every Cortana-initiated search (10/10), it is open source, uses only 18MB RAM, and requests minimal permissions (access to Bing URLs only).
+Chrometana is the best extension for redirecting Cortana and Bing searches to Google. It is the only one of the four that reliably handles Cortana-initiated searches; it is open source, uses only 18MB RAM, and requests minimal permissions (access to Bing URLs only).
 
 Bing2Google is faster (0.3s) and lighter (15MB) but misses Cortana searches 30% of the time. Zero-Click Redirect supports multiple search engines but is heavier (22MB) and requests access to all websites. Search Redirect is the lightest (12MB) but does not support Cortana at all.
 

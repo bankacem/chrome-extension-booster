@@ -89,7 +89,7 @@ Several extensions do not work correctly on Opera:
 
 Vivaldi is built by former Opera employees and offers the most customization of any Chromium browser. Tab stacking, tab tiling, web panels, and a customizable UI are all built-in without extensions. For power users, Vivaldi is the most capable browser.
 
-The weakness is extension compatibility. Although Vivaldi supports 18/20 extensions in my test (tied with Edge for best), the development pace is slower than Chrome or Edge. Vivaldi's extension API has known gaps in `chrome.tabs.update` and `chrome.windows.create` that affect some tab management and window management extensions. Vivaldi also has a smaller market share, so developers are less likely to test against it.
+The weakness is extension compatibility. Although Vivaldi matched Edge at 18/20 in this comparison, the development pace is slower than Chrome or Edge. Vivaldi's extension API has known gaps in `chrome.tabs.update` and `chrome.windows.create` that affect some tab management and window management extensions. Vivaldi also has a smaller market share, so developers are less likely to test against it.
 
 Vivaldi's built-in features overlap with many extensions. If you want tab stacking, web panels, and mouse gestures, Vivaldi has them natively. But if you switch to another browser, you lose those features and must find extensions to replace them.
 
@@ -105,7 +105,7 @@ Edge also has a dual-extension-store model. It has its own Edge Add-ons store (w
 
 Opera was the first non-Chrome browser to support Chrome extensions via the "Install Chrome Extensions" feature. The integration is smooth — Opera handles the redirect to the Chrome Web Store and the installation process is identical to Chrome.
 
-The problem is that Opera's extension support has not kept pace. In my test, only 15 of 20 extensions worked fully — the worst compatibility of the three. Opera also has a smaller user base, so extension developers do not prioritize Opera testing. Issues that were reported years ago (like the `chrome.identity` gap affecting Honey and other OAuth extensions) remain unfixed.
+The problem is that Opera's extension support has not kept pace. In this comparison, only 15 of 20 extensions worked fully — the worst compatibility of the three. Opera also has a smaller user base, so extension developers do not prioritize Opera testing. Issues that were reported years ago (like the `chrome.identity` gap affecting Honey and other OAuth extensions) remain unfixed.
 
 Opera also bundles a VPN, ad blocker, and messenger sidebar that some users may not want. These built-in features cannot be fully removed from the UI, only disabled.
 
@@ -149,7 +149,7 @@ Each one does a single job well, and together they remove the small frictions th
 ## FAQ
 
 **Q: Do all Chrome extensions work in Opera?**
-A: No. About 75% work fully. Extensions that use `chrome.identity` (OAuth login), `chrome.gcm` (Google Cloud Messaging), and native messaging hosts have known issues. In my test of 20 extensions, 15 worked fully on Opera.
+A: No. About 75% work fully. Extensions that use `chrome.identity` (OAuth login), `chrome.gcm` (Google Cloud Messaging), and native messaging hosts have known issues. The comparison above found 15 of 20 extensions working fully on Opera.
 
 **Q: How do I install Chrome extensions in Opera?**
 A: Open Opera's add-ons page (`addons.opera.com`), scroll to the bottom, click "Install Chrome Extensions," browse the Chrome Web Store, and click "Add to Chrome."
@@ -158,7 +158,7 @@ A: Open Opera's add-ons page (`addons.opera.com`), scroll to the bottom, click "
 A: Yes. Extensions are still sandboxed in Opera the same way they are in Chrome. Opera also includes a built-in ad blocker and VPN for additional privacy.
 
 **Q: Which Chromium browser has the best extension compatibility?**
-A: Microsoft Edge, with 18/20 extensions fully working in my test. Edge maintains full API parity with Chrome for most extensions.
+A: Microsoft Edge, with 18/20 extensions working fully in this comparison. Edge maintains full API parity with Chrome for most extensions.
 
 **Q: Can I use Opera's VPN with Chrome extensions?**
 A: Yes. Opera's built-in VPN works alongside Chrome extensions. However, some extensions that detect proxy settings may conflict.

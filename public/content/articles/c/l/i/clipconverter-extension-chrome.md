@@ -60,7 +60,7 @@ MP4 at 1080p was the most reliable combination. 4K downloads failed in about 1 o
 ![Clipconverter Extension Chrome Overview](/content/images/clipconverter-extension-chrome/clipconverter-extension-chrome-overview.webp "Clipconverter Extension Chrome Overview")
 
 
-I compared ClipConverter against five other popular video downloaders using the same test videos.
+ClipConverter is compared here against five other popular video downloaders on the same set of videos.
 
 | Feature | ClipConverter | Video DownloadHelper | SaveFrom.net | 4K Video Downloader | YTD Video Downloader |
 |---------|--------------|---------------------|-------------|-------------------|-------------------|
