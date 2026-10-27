@@ -1,34 +1,5 @@
 [
   {
-    "id": "ffcb8d09-1cea-47bc-bf42-e65eed603a6f",
-    "title": "Perplexity AI Chrome Extension 2026: What It Does, What It Costs, and Whether You Need It",
-    "slug": "perplexity-ai-chrome-extension-2026-guide",
-    "description": "An honest guide to the Perplexity AI Chrome extension in 2026: page summaries, cited answers, free vs Pro limits, privacy trade-offs, and who actually benefits from installing it.",
-    "meta_description": "The Perplexity AI Chrome extension explained: cited answers on any page, free vs Pro ($20/mo), privacy notes, and who should install it.",
-    "excerpt": "Perplexity's Chrome extension puts an AI answer engine with real citations one click from any page you read. Here's how it works, what the free tier covers, and where it falls short.",
-    "published_at": "2026-10-16T22:00:00.000+00:00",
-    "category": "AI Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/perplexity-ai-chrome-extension-2026-guide/featured.webp",
-    "featured_image": "/content/images/perplexity-ai-chrome-extension-2026-guide/featured.webp",
-    "reading_time": 9,
-    "read_time": 9,
-    "views": 0,
-    "tags": [
-      "Perplexity AI",
-      "AI Chrome extensions",
-      "AI search"
-    ],
-    "keywords": [
-      "perplexity ai chrome extension",
-      "perplexity chrome extension 2026",
-      "ai answer engine browser",
-      "perplexity vs chatgpt browsing"
-    ],
-    "canonicalPath": "/blog/perplexity-ai-chrome-extension-2026-guide",
-    "updated_at": "2026-10-16T22:00:00.000+00:00"
-  },
-  {
     "id": "045dba85-fda4-4529-af0b-a776680da3fb",
     "title": "Sider vs Monica vs Merlin in 2026: Which AI Sidebar Deserves a Place in Your Browser?",
     "slug": "sider-vs-monica-vs-merlin-best-ai-sidebar-chrome-2026",
@@ -88,35 +59,33 @@
     "updated_at": "2026-10-16T22:00:00.000+00:00"
   },
   {
-    "id": "chrome-command-palette-extensions",
-    "title": "Command Palette Chrome Extensions: Run Browser Actions Like Raycast (2026)",
-    "slug": "chrome-command-palette-extensions",
-    "description": "Command palette chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Command palette chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Command palette chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "published_at": "2026-09-29T00:00:00.000Z",
-    "category": "Productivity",
-    "author": "James Carter",
-    "image_url": "/content/images/chrome-command-palette-extensions/featured.webp",
-    "featured_image": "/content/images/chrome-command-palette-extensions/featured.webp",
-    "reading_time": "22",
-    "read_time": "22",
+    "id": "ffcb8d09-1cea-47bc-bf42-e65eed603a6f",
+    "title": "Perplexity AI Chrome Extension 2026: What It Does, What It Costs, and Whether You Need It",
+    "slug": "perplexity-ai-chrome-extension-2026-guide",
+    "description": "An honest guide to the Perplexity AI Chrome extension in 2026: page summaries, cited answers, free vs Pro limits, privacy trade-offs, and who actually benefits from installing it.",
+    "meta_description": "The Perplexity AI Chrome extension explained: cited answers on any page, free vs Pro ($20/mo), privacy notes, and who should install it.",
+    "excerpt": "Perplexity's Chrome extension puts an AI answer engine with real citations one click from any page you read. Here's how it works, what the free tier covers, and where it falls short.",
+    "published_at": "2026-10-16T22:00:00.000+00:00",
+    "category": "AI Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/perplexity-ai-chrome-extension-2026-guide/featured.webp",
+    "featured_image": "/content/images/perplexity-ai-chrome-extension-2026-guide/featured.webp",
+    "reading_time": 9,
+    "read_time": 9,
     "views": 0,
     "tags": [
-      "Command Palette Chrome Extension",
-      "Chrome Quick Commands",
-      "Raycast For Chrome",
-      "Browser Command Bar Extension"
+      "Perplexity AI",
+      "AI Chrome extensions",
+      "AI search"
     ],
     "keywords": [
-      "command palette chrome extension",
-      "chrome quick commands",
-      "raycast for chrome",
-      "browser command bar extension",
-      "keyboard command launcher chrome"
+      "perplexity ai chrome extension",
+      "perplexity chrome extension 2026",
+      "ai answer engine browser",
+      "perplexity vs chatgpt browsing"
     ],
-    "canonicalPath": "/blog/chrome-command-palette-extensions",
-    "updated_at": "2026-09-29T12:26:37.000Z"
+    "canonicalPath": "/blog/perplexity-ai-chrome-extension-2026-guide",
+    "updated_at": "2026-10-16T22:00:00.000+00:00"
   },
   {
     "id": "auto-currency-converter-chrome-extensions",
@@ -147,6 +116,37 @@
       "multi currency browser tool"
     ],
     "canonicalPath": "/blog/auto-currency-converter-chrome-extensions",
+    "updated_at": "2026-09-29T12:26:37.000Z"
+  },
+  {
+    "id": "chrome-command-palette-extensions",
+    "title": "Command Palette Chrome Extensions: Run Browser Actions Like Raycast (2026)",
+    "slug": "chrome-command-palette-extensions",
+    "description": "Command palette chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Command palette chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Command palette chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "published_at": "2026-09-29T00:00:00.000Z",
+    "category": "Productivity",
+    "author": "James Carter",
+    "image_url": "/content/images/chrome-command-palette-extensions/featured.webp",
+    "featured_image": "/content/images/chrome-command-palette-extensions/featured.webp",
+    "reading_time": "22",
+    "read_time": "22",
+    "views": 0,
+    "tags": [
+      "Command Palette Chrome Extension",
+      "Chrome Quick Commands",
+      "Raycast For Chrome",
+      "Browser Command Bar Extension"
+    ],
+    "keywords": [
+      "command palette chrome extension",
+      "chrome quick commands",
+      "raycast for chrome",
+      "browser command bar extension",
+      "keyboard command launcher chrome"
+    ],
+    "canonicalPath": "/blog/chrome-command-palette-extensions",
     "updated_at": "2026-09-29T12:26:37.000Z"
   },
   {
@@ -213,68 +213,6 @@
     "updated_at": "2026-09-27T23:57:56.000Z"
   },
   {
-    "id": "pdf-tools-chrome-extensions",
-    "title": "PDF Chrome Extensions: Edit, Merge, Sign and Annotate in the Browser",
-    "slug": "pdf-tools-chrome-extensions",
-    "description": "Pdf editor chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Pdf editor chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for pdf editor chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
-    "published_at": "2026-09-27T00:00:00.000Z",
-    "category": "Browser Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/pdf-tools-chrome-extensions/featured.webp",
-    "featured_image": "/content/images/pdf-tools-chrome-extensions/featured.webp",
-    "reading_time": "27",
-    "read_time": "27",
-    "views": 0,
-    "tags": [
-      "Pdf Editor Chrome Extension",
-      "Merge Pdf Chrome Tool",
-      "Esign Pdf Chrome Extension",
-      "Annotate Pdf Browser"
-    ],
-    "keywords": [
-      "pdf editor chrome extension",
-      "merge pdf chrome tool",
-      "esign pdf chrome extension",
-      "annotate pdf browser",
-      "fill pdf forms chrome"
-    ],
-    "canonicalPath": "/blog/pdf-tools-chrome-extensions",
-    "updated_at": "2026-09-27T23:57:56.000Z"
-  },
-  {
-    "id": "reddit-power-user-chrome-extensions",
-    "title": "Reddit Power-User Chrome Extensions: Filter, Search and Tame the Feed (2026)",
-    "slug": "reddit-power-user-chrome-extensions",
-    "description": "Reddit enhancement suite guide — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Reddit enhancement suite guide — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for reddit enhancement suite guide: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
-    "published_at": "2026-09-27T00:00:00.000Z",
-    "category": "Social Media",
-    "author": "James Mitchell",
-    "image_url": "/content/images/reddit-power-user-chrome-extensions/featured.webp",
-    "featured_image": "/content/images/reddit-power-user-chrome-extensions/featured.webp",
-    "reading_time": "16",
-    "read_time": "16",
-    "views": 0,
-    "tags": [
-      "Reddit Enhancement Suite Guide",
-      "Reddit Filter Chrome Extension",
-      "Reddit Keyword Alert Extension",
-      "Reddit Post Search Tool"
-    ],
-    "keywords": [
-      "reddit enhancement suite guide",
-      "reddit filter chrome extension",
-      "reddit keyword alert extension",
-      "reddit post search tool",
-      "improve reddit browsing extension"
-    ],
-    "canonicalPath": "/blog/reddit-power-user-chrome-extensions",
-    "updated_at": "2026-09-27T23:57:56.000Z"
-  },
-  {
     "id": "screenshot-ocr-text-extractor-extensions",
     "title": "Screenshot-to-Text OCR Extensions: Copy Any Text From Any Image",
     "slug": "screenshot-ocr-text-extractor-extensions",
@@ -303,68 +241,6 @@
       "ocr screenshot translator"
     ],
     "canonicalPath": "/blog/screenshot-ocr-text-extractor-extensions",
-    "updated_at": "2026-09-27T23:57:56.000Z"
-  },
-  {
-    "id": "chrome-autoscroll-reading-aids",
-    "title": "Autoscroll & Reading Aid Extensions: Hands-Free Long Reads",
-    "slug": "chrome-autoscroll-reading-aids",
-    "description": "Autoscroll chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Autoscroll chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for autoscroll chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
-    "published_at": "2026-09-27T00:00:00.000Z",
-    "category": "Accessibility",
-    "author": "James Mitchell",
-    "image_url": "/content/images/chrome-autoscroll-reading-aids/featured.webp",
-    "featured_image": "/content/images/chrome-autoscroll-reading-aids/featured.webp",
-    "reading_time": "17",
-    "read_time": "17",
-    "views": 0,
-    "tags": [
-      "Autoscroll Chrome Extension",
-      "Auto Scroll Down Page Chrome",
-      "Hands Free Scrolling Extension",
-      "Teleprompter Scroll Chrome"
-    ],
-    "keywords": [
-      "autoscroll chrome extension",
-      "auto scroll down page chrome",
-      "hands free scrolling extension",
-      "teleprompter scroll chrome",
-      "scroll speed control extension"
-    ],
-    "canonicalPath": "/blog/chrome-autoscroll-reading-aids",
-    "updated_at": "2026-09-27T23:57:56.000Z"
-  },
-  {
-    "id": "whatsapp-web-enhancer-extensions",
-    "title": "WhatsApp Web Enhancer Extensions: Keyboard, Privacy and Bulk Tools",
-    "slug": "whatsapp-web-enhancer-extensions",
-    "description": "Whatsapp web chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Whatsapp web chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for whatsapp web chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
-    "published_at": "2026-09-27T00:00:00.000Z",
-    "category": "Social Media",
-    "author": "James Mitchell",
-    "image_url": "/content/images/whatsapp-web-enhancer-extensions/featured.webp",
-    "featured_image": "/content/images/whatsapp-web-enhancer-extensions/featured.webp",
-    "reading_time": "31",
-    "read_time": "31",
-    "views": 0,
-    "tags": [
-      "Whatsapp Web Chrome Extension",
-      "Whatsapp Web Dark Mode Tool",
-      "Whatsapp Keyboard Shortcuts Extension",
-      "Whatsapp Privacy Blur Extension"
-    ],
-    "keywords": [
-      "whatsapp web chrome extension",
-      "whatsapp web dark mode tool",
-      "whatsapp keyboard shortcuts extension",
-      "whatsapp privacy blur extension",
-      "whatsapp web productivity"
-    ],
-    "canonicalPath": "/blog/whatsapp-web-enhancer-extensions",
     "updated_at": "2026-09-27T23:57:56.000Z"
   },
   {
@@ -461,6 +337,99 @@
     "updated_at": "2026-09-27T23:57:56.000Z"
   },
   {
+    "id": "pdf-tools-chrome-extensions",
+    "title": "PDF Chrome Extensions: Edit, Merge, Sign and Annotate in the Browser",
+    "slug": "pdf-tools-chrome-extensions",
+    "description": "Pdf editor chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Pdf editor chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for pdf editor chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "published_at": "2026-09-27T00:00:00.000Z",
+    "category": "Browser Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/pdf-tools-chrome-extensions/featured.webp",
+    "featured_image": "/content/images/pdf-tools-chrome-extensions/featured.webp",
+    "reading_time": "27",
+    "read_time": "27",
+    "views": 0,
+    "tags": [
+      "Pdf Editor Chrome Extension",
+      "Merge Pdf Chrome Tool",
+      "Esign Pdf Chrome Extension",
+      "Annotate Pdf Browser"
+    ],
+    "keywords": [
+      "pdf editor chrome extension",
+      "merge pdf chrome tool",
+      "esign pdf chrome extension",
+      "annotate pdf browser",
+      "fill pdf forms chrome"
+    ],
+    "canonicalPath": "/blog/pdf-tools-chrome-extensions",
+    "updated_at": "2026-09-27T23:57:56.000Z"
+  },
+  {
+    "id": "reddit-power-user-chrome-extensions",
+    "title": "Reddit Power-User Chrome Extensions: Filter, Search and Tame the Feed (2026)",
+    "slug": "reddit-power-user-chrome-extensions",
+    "description": "Reddit enhancement suite guide — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Reddit enhancement suite guide — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for reddit enhancement suite guide: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "published_at": "2026-09-27T00:00:00.000Z",
+    "category": "Social Media",
+    "author": "James Mitchell",
+    "image_url": "/content/images/reddit-power-user-chrome-extensions/featured.webp",
+    "featured_image": "/content/images/reddit-power-user-chrome-extensions/featured.webp",
+    "reading_time": "16",
+    "read_time": "16",
+    "views": 0,
+    "tags": [
+      "Reddit Enhancement Suite Guide",
+      "Reddit Filter Chrome Extension",
+      "Reddit Keyword Alert Extension",
+      "Reddit Post Search Tool"
+    ],
+    "keywords": [
+      "reddit enhancement suite guide",
+      "reddit filter chrome extension",
+      "reddit keyword alert extension",
+      "reddit post search tool",
+      "improve reddit browsing extension"
+    ],
+    "canonicalPath": "/blog/reddit-power-user-chrome-extensions",
+    "updated_at": "2026-09-27T23:57:56.000Z"
+  },
+  {
+    "id": "whatsapp-web-enhancer-extensions",
+    "title": "WhatsApp Web Enhancer Extensions: Keyboard, Privacy and Bulk Tools",
+    "slug": "whatsapp-web-enhancer-extensions",
+    "description": "Whatsapp web chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Whatsapp web chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for whatsapp web chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "published_at": "2026-09-27T00:00:00.000Z",
+    "category": "Social Media",
+    "author": "James Mitchell",
+    "image_url": "/content/images/whatsapp-web-enhancer-extensions/featured.webp",
+    "featured_image": "/content/images/whatsapp-web-enhancer-extensions/featured.webp",
+    "reading_time": "31",
+    "read_time": "31",
+    "views": 0,
+    "tags": [
+      "Whatsapp Web Chrome Extension",
+      "Whatsapp Web Dark Mode Tool",
+      "Whatsapp Keyboard Shortcuts Extension",
+      "Whatsapp Privacy Blur Extension"
+    ],
+    "keywords": [
+      "whatsapp web chrome extension",
+      "whatsapp web dark mode tool",
+      "whatsapp keyboard shortcuts extension",
+      "whatsapp privacy blur extension",
+      "whatsapp web productivity"
+    ],
+    "canonicalPath": "/blog/whatsapp-web-enhancer-extensions",
+    "updated_at": "2026-09-27T23:57:56.000Z"
+  },
+  {
     "id": "mouse-gestures-chrome-extensions",
     "title": "Mouse Gesture Extensions for Chrome: Navigate Without the Keyboard",
     "slug": "mouse-gestures-chrome-extensions",
@@ -489,6 +458,37 @@
       "gesture control browser"
     ],
     "canonicalPath": "/blog/mouse-gestures-chrome-extensions",
+    "updated_at": "2026-09-27T23:57:56.000Z"
+  },
+  {
+    "id": "chrome-autoscroll-reading-aids",
+    "title": "Autoscroll & Reading Aid Extensions: Hands-Free Long Reads",
+    "slug": "chrome-autoscroll-reading-aids",
+    "description": "Autoscroll chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Autoscroll chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for autoscroll chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "published_at": "2026-09-27T00:00:00.000Z",
+    "category": "Accessibility",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-autoscroll-reading-aids/featured.webp",
+    "featured_image": "/content/images/chrome-autoscroll-reading-aids/featured.webp",
+    "reading_time": "17",
+    "read_time": "17",
+    "views": 0,
+    "tags": [
+      "Autoscroll Chrome Extension",
+      "Auto Scroll Down Page Chrome",
+      "Hands Free Scrolling Extension",
+      "Teleprompter Scroll Chrome"
+    ],
+    "keywords": [
+      "autoscroll chrome extension",
+      "auto scroll down page chrome",
+      "hands free scrolling extension",
+      "teleprompter scroll chrome",
+      "scroll speed control extension"
+    ],
+    "canonicalPath": "/blog/chrome-autoscroll-reading-aids",
     "updated_at": "2026-09-27T23:57:56.000Z"
   },
   {
@@ -524,38 +524,6 @@
     "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
-    "id": "best-ai-chrome-extensions-2026",
-    "title": "Best AI Chrome Extensions 2026: 12 Tools That Turn Your Browser Into an AI Assistant",
-    "slug": "best-ai-chrome-extensions-2026",
-    "description": "Best AI Chrome extensions 2026: ChatGPT and Gemini sidebars, page summarizers, writing assistants, translators, and automation tools, with picks per use case.",
-    "meta_description": "Best AI Chrome extensions 2026: ChatGPT and Gemini sidebars, page summarizers, writing assistants, translators, and automation tools, with picks per use case.",
-    "excerpt": "Two years ago, an \"AI extension\" meant a clunky ChatGPT wrapper with a broken login flow. In 2026 the category has matured into one of the most competitive spaces on the Chrome Web Store: polished assistants that read yo…",
-    "published_at": "2026-09-26T09:00:00.000Z",
-    "category": "AI Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/best-ai-chrome-extensions-2026/featured.webp",
-    "featured_image": "/content/images/best-ai-chrome-extensions-2026/featured.webp",
-    "reading_time": "11",
-    "read_time": "11",
-    "views": 0,
-    "tags": [
-      "AI Chrome Extensions",
-      "ChatGPT Extension",
-      "AI Assistant",
-      "Browser Automation",
-      "AI Productivity"
-    ],
-    "keywords": [
-      "best ai chrome extensions 2026",
-      "chatgpt chrome extension",
-      "ai writing assistant",
-      "ai summarizer extension",
-      "browser ai assistant"
-    ],
-    "canonicalPath": "/blog/best-ai-chrome-extensions-2026",
-    "updated_at": "2026-09-26T09:00:00.000Z"
-  },
-  {
     "id": "gemini-in-chrome-2026-complete-guide",
     "title": "Gemini in Chrome 2026: The Complete Guide to Google's AI Browser Features",
     "slug": "gemini-in-chrome-2026-complete-guide",
@@ -585,6 +553,38 @@
       "nano banana chrome"
     ],
     "canonicalPath": "/blog/gemini-in-chrome-2026-complete-guide",
+    "updated_at": "2026-09-26T09:00:00.000Z"
+  },
+  {
+    "id": "best-ai-chrome-extensions-2026",
+    "title": "Best AI Chrome Extensions 2026: 12 Tools That Turn Your Browser Into an AI Assistant",
+    "slug": "best-ai-chrome-extensions-2026",
+    "description": "Best AI Chrome extensions 2026: ChatGPT and Gemini sidebars, page summarizers, writing assistants, translators, and automation tools, with picks per use case.",
+    "meta_description": "Best AI Chrome extensions 2026: ChatGPT and Gemini sidebars, page summarizers, writing assistants, translators, and automation tools, with picks per use case.",
+    "excerpt": "Two years ago, an \"AI extension\" meant a clunky ChatGPT wrapper with a broken login flow. In 2026 the category has matured into one of the most competitive spaces on the Chrome Web Store: polished assistants that read yo…",
+    "published_at": "2026-09-26T09:00:00.000Z",
+    "category": "AI Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-ai-chrome-extensions-2026/featured.webp",
+    "featured_image": "/content/images/best-ai-chrome-extensions-2026/featured.webp",
+    "reading_time": "11",
+    "read_time": "11",
+    "views": 0,
+    "tags": [
+      "AI Chrome Extensions",
+      "ChatGPT Extension",
+      "AI Assistant",
+      "Browser Automation",
+      "AI Productivity"
+    ],
+    "keywords": [
+      "best ai chrome extensions 2026",
+      "chatgpt chrome extension",
+      "ai writing assistant",
+      "ai summarizer extension",
+      "browser ai assistant"
+    ],
+    "canonicalPath": "/blog/best-ai-chrome-extensions-2026",
     "updated_at": "2026-09-26T09:00:00.000Z"
   },
   {
@@ -749,37 +749,6 @@
     "updated_at": "2026-09-23T08:30:00.000Z"
   },
   {
-    "id": "emoji-picker-chrome-extensions",
-    "title": "Emoji Picker Chrome Extensions: Express More in Every Message",
-    "slug": "emoji-picker-chrome-extensions",
-    "description": "Emoji picker chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Emoji picker chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for emoji picker chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
-    "published_at": "2026-09-22T00:00:00.000Z",
-    "category": "Lifestyle",
-    "author": "James Mitchell",
-    "image_url": "/content/images/emoji-picker-chrome-extensions/featured.webp",
-    "featured_image": "/content/images/emoji-picker-chrome-extensions/featured.webp",
-    "reading_time": "25",
-    "read_time": "25",
-    "views": 0,
-    "tags": [
-      "Emoji Picker Chrome Extension",
-      "Emoji Keyboard Browser",
-      "Insert Emojis Anywhere Chrome",
-      "Emoji Copy Paste Extension"
-    ],
-    "keywords": [
-      "emoji picker chrome extension",
-      "emoji keyboard browser",
-      "insert emojis anywhere chrome",
-      "emoji copy paste extension",
-      "smiley toolbar chrome tool"
-    ],
-    "canonicalPath": "/blog/emoji-picker-chrome-extensions",
-    "updated_at": "2026-09-22T21:52:46.000Z"
-  },
-  {
     "id": "history-search-chrome-extensions",
     "title": "History Search Chrome Extensions: Find Any Page You Visited in Seconds",
     "slug": "history-search-chrome-extensions",
@@ -811,35 +780,35 @@
     "updated_at": "2026-09-23T08:30:00.000Z"
   },
   {
-    "id": "calendar-chrome-extensions",
-    "title": "Calendar Chrome Extensions: Your Schedule in the Toolbar",
-    "slug": "calendar-chrome-extensions",
-    "description": "Calendar chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Calendar chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for calendar chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "id": "emoji-picker-chrome-extensions",
+    "title": "Emoji Picker Chrome Extensions: Express More in Every Message",
+    "slug": "emoji-picker-chrome-extensions",
+    "description": "Emoji picker chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Emoji picker chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for emoji picker chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
     "published_at": "2026-09-22T00:00:00.000Z",
-    "category": "Productivity",
+    "category": "Lifestyle",
     "author": "James Mitchell",
-    "image_url": "/content/images/calendar-chrome-extensions/featured.webp",
-    "featured_image": "/content/images/calendar-chrome-extensions/featured.webp",
-    "reading_time": "31",
-    "read_time": "31",
+    "image_url": "/content/images/emoji-picker-chrome-extensions/featured.webp",
+    "featured_image": "/content/images/emoji-picker-chrome-extensions/featured.webp",
+    "reading_time": "25",
+    "read_time": "25",
     "views": 0,
     "tags": [
-      "Calendar Chrome Extension",
-      "Google Calendar Toolbar Chrome",
-      "Schedule View Browser Extension",
-      "Meeting Scheduler Chrome Tool"
+      "Emoji Picker Chrome Extension",
+      "Emoji Keyboard Browser",
+      "Insert Emojis Anywhere Chrome",
+      "Emoji Copy Paste Extension"
     ],
     "keywords": [
-      "calendar chrome extension",
-      "google calendar toolbar chrome",
-      "schedule view browser extension",
-      "meeting scheduler chrome tool",
-      "calendar popup toolbar"
+      "emoji picker chrome extension",
+      "emoji keyboard browser",
+      "insert emojis anywhere chrome",
+      "emoji copy paste extension",
+      "smiley toolbar chrome tool"
     ],
-    "canonicalPath": "/blog/calendar-chrome-extensions",
-    "updated_at": "2026-09-23T08:30:00.000Z"
+    "canonicalPath": "/blog/emoji-picker-chrome-extensions",
+    "updated_at": "2026-09-22T21:52:46.000Z"
   },
   {
     "id": "website-blocker-focus-chrome",
@@ -904,6 +873,37 @@
     "updated_at": "2026-09-23T08:30:00.000Z"
   },
   {
+    "id": "calendar-chrome-extensions",
+    "title": "Calendar Chrome Extensions: Your Schedule in the Toolbar",
+    "slug": "calendar-chrome-extensions",
+    "description": "Calendar chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Calendar chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for calendar chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "published_at": "2026-09-22T00:00:00.000Z",
+    "category": "Productivity",
+    "author": "James Mitchell",
+    "image_url": "/content/images/calendar-chrome-extensions/featured.webp",
+    "featured_image": "/content/images/calendar-chrome-extensions/featured.webp",
+    "reading_time": "31",
+    "read_time": "31",
+    "views": 0,
+    "tags": [
+      "Calendar Chrome Extension",
+      "Google Calendar Toolbar Chrome",
+      "Schedule View Browser Extension",
+      "Meeting Scheduler Chrome Tool"
+    ],
+    "keywords": [
+      "calendar chrome extension",
+      "google calendar toolbar chrome",
+      "schedule view browser extension",
+      "meeting scheduler chrome tool",
+      "calendar popup toolbar"
+    ],
+    "canonicalPath": "/blog/calendar-chrome-extensions",
+    "updated_at": "2026-09-23T08:30:00.000Z"
+  },
+  {
     "id": "a1b2c3d4-trbl-0007",
     "title": "Chrome Extensions in Guest Mode: What Works and What Does Not",
     "slug": "chrome-extension-guest-mode-guide",
@@ -935,37 +935,6 @@
     ],
     "canonicalPath": "/blog/chrome-extension-guest-mode-guide",
     "updated_at": "2026-08-25T12:00:00+01:00"
-  },
-  {
-    "id": "zoom-magnifier-chrome-extensions",
-    "title": "Zoom & Magnifier Chrome Extensions: See Every Pixel Clearly",
-    "slug": "zoom-magnifier-chrome-extensions",
-    "description": "Zoom chrome extension per site — a 2026 guide to the options, step-by-step setup, and the trade-offs to know before installing.",
-    "meta_description": "Zoom chrome extension per site — a 2026 guide to the options, step-by-step setup, and the trade-offs to know before installing.",
-    "excerpt": "A guide to zoom chrome extension per site: the options in 2026, which tools to consider, and how to set everything up in minutes.",
-    "published_at": "2026-09-21T00:00:00.000Z",
-    "category": "Accessibility",
-    "author": "James Mitchell",
-    "image_url": "/content/images/zoom-magnifier-chrome-extensions/featured.webp",
-    "featured_image": "/content/images/zoom-magnifier-chrome-extensions/featured.webp",
-    "reading_time": "18",
-    "read_time": "18",
-    "views": 0,
-    "tags": [
-      "Zoom Chrome Extension Per Site",
-      "Page Magnifier Chrome Extension",
-      "Per Website Zoom Level Control",
-      "Font Size Changer Chrome Accessibility"
-    ],
-    "keywords": [
-      "zoom chrome extension per site",
-      "page magnifier chrome extension",
-      "per website zoom level control",
-      "font size changer chrome accessibility",
-      "screen magnifier browser tool"
-    ],
-    "canonicalPath": "/blog/zoom-magnifier-chrome-extensions",
-    "updated_at": "2026-09-21T10:41:45.000Z"
   },
   {
     "id": "session-isolation-multiple-accounts",
@@ -1030,35 +999,97 @@
     "updated_at": "2026-09-21T10:41:45.000Z"
   },
   {
-    "id": "cookie-consent-blocker-chrome",
-    "title": "Cookie Consent Blockers for Chrome: Stop Banner Pop-Ups for Good (2026)",
-    "slug": "cookie-consent-blocker-chrome",
-    "description": "Cookie consent blocker chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Cookie consent blocker chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for cookie consent blocker chrome: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "id": "ai-summary-chrome-extensions",
+    "title": "AI Page-Summary Chrome Extensions: Get the Gist of Any Article in Seconds",
+    "slug": "ai-summary-chrome-extensions",
+    "description": "Ai summary chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Ai summary chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for ai summary chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
     "published_at": "2026-09-21T00:00:00.000Z",
-    "category": "Privacy & Security",
+    "category": "AI & Automation",
     "author": "James Mitchell",
-    "image_url": "/content/images/cookie-consent-blocker-chrome/featured.webp",
-    "featured_image": "/content/images/cookie-consent-blocker-chrome/featured.webp",
+    "image_url": "/content/images/ai-summary-chrome-extensions/featured.webp",
+    "featured_image": "/content/images/ai-summary-chrome-extensions/featured.webp",
     "reading_time": "24",
     "read_time": "24",
     "views": 0,
     "tags": [
-      "Cookie Consent Blocker Chrome",
-      "Hide Cookie Banners Extension",
-      "Gdpr Banner Remover Chrome",
-      "Auto Reject Non Essential Cookies"
+      "Ai Summary Chrome Extension",
+      "Summarize Long Articles Browser",
+      "Ai Article Gist Tool Chrome",
+      "Chatgpt Summarizer Extension Page"
     ],
     "keywords": [
-      "cookie consent blocker chrome",
-      "hide cookie banners extension",
-      "gdpr banner remover chrome",
-      "auto reject non essential cookies",
-      "stop cookie popups browser"
+      "ai summary chrome extension",
+      "summarize long articles browser",
+      "ai article gist tool chrome",
+      "chatgpt summarizer extension page",
+      "tl;dr summary extension chrome"
     ],
-    "canonicalPath": "/blog/cookie-consent-blocker-chrome",
+    "canonicalPath": "/blog/ai-summary-chrome-extensions",
     "updated_at": "2026-09-21T10:41:45.000Z"
+  },
+  {
+    "id": "zoom-magnifier-chrome-extensions",
+    "title": "Zoom & Magnifier Chrome Extensions: See Every Pixel Clearly",
+    "slug": "zoom-magnifier-chrome-extensions",
+    "description": "Zoom chrome extension per site — a 2026 guide to the options, step-by-step setup, and the trade-offs to know before installing.",
+    "meta_description": "Zoom chrome extension per site — a 2026 guide to the options, step-by-step setup, and the trade-offs to know before installing.",
+    "excerpt": "A guide to zoom chrome extension per site: the options in 2026, which tools to consider, and how to set everything up in minutes.",
+    "published_at": "2026-09-21T00:00:00.000Z",
+    "category": "Accessibility",
+    "author": "James Mitchell",
+    "image_url": "/content/images/zoom-magnifier-chrome-extensions/featured.webp",
+    "featured_image": "/content/images/zoom-magnifier-chrome-extensions/featured.webp",
+    "reading_time": "18",
+    "read_time": "18",
+    "views": 0,
+    "tags": [
+      "Zoom Chrome Extension Per Site",
+      "Page Magnifier Chrome Extension",
+      "Per Website Zoom Level Control",
+      "Font Size Changer Chrome Accessibility"
+    ],
+    "keywords": [
+      "zoom chrome extension per site",
+      "page magnifier chrome extension",
+      "per website zoom level control",
+      "font size changer chrome accessibility",
+      "screen magnifier browser tool"
+    ],
+    "canonicalPath": "/blog/zoom-magnifier-chrome-extensions",
+    "updated_at": "2026-09-21T10:41:45.000Z"
+  },
+  {
+    "id": "new-tab-speed-dial-chrome",
+    "title": "New Tab & Speed Dial Extensions: Build the Perfect Start Page (2026)",
+    "slug": "new-tab-speed-dial-chrome",
+    "description": "Speed dial chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Speed dial chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for speed dial chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "published_at": "2026-09-21T00:00:00.000Z",
+    "category": "Productivity",
+    "author": "James Mitchell",
+    "image_url": "/content/images/new-tab-speed-dial-chrome/featured.webp",
+    "featured_image": "/content/images/new-tab-speed-dial-chrome/featured.webp",
+    "reading_time": "21",
+    "read_time": "21",
+    "views": 0,
+    "tags": [
+      "Speed Dial Chrome Extension",
+      "Custom New Tab Page Chrome",
+      "Start Page Organizer Extension",
+      "New Tab Dashboard Widgets Chrome"
+    ],
+    "keywords": [
+      "speed dial chrome extension",
+      "custom new tab page chrome",
+      "start page organizer extension",
+      "new tab dashboard widgets chrome",
+      "visual bookmarks grid chrome"
+    ],
+    "canonicalPath": "/blog/new-tab-speed-dial-chrome",
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "weather-clock-chrome-extensions",
@@ -1185,66 +1216,35 @@
     "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
-    "id": "ai-summary-chrome-extensions",
-    "title": "AI Page-Summary Chrome Extensions: Get the Gist of Any Article in Seconds",
-    "slug": "ai-summary-chrome-extensions",
-    "description": "Ai summary chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Ai summary chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for ai summary chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "id": "cookie-consent-blocker-chrome",
+    "title": "Cookie Consent Blockers for Chrome: Stop Banner Pop-Ups for Good (2026)",
+    "slug": "cookie-consent-blocker-chrome",
+    "description": "Cookie consent blocker chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Cookie consent blocker chrome — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for cookie consent blocker chrome: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
     "published_at": "2026-09-21T00:00:00.000Z",
-    "category": "AI & Automation",
+    "category": "Privacy & Security",
     "author": "James Mitchell",
-    "image_url": "/content/images/ai-summary-chrome-extensions/featured.webp",
-    "featured_image": "/content/images/ai-summary-chrome-extensions/featured.webp",
+    "image_url": "/content/images/cookie-consent-blocker-chrome/featured.webp",
+    "featured_image": "/content/images/cookie-consent-blocker-chrome/featured.webp",
     "reading_time": "24",
     "read_time": "24",
     "views": 0,
     "tags": [
-      "Ai Summary Chrome Extension",
-      "Summarize Long Articles Browser",
-      "Ai Article Gist Tool Chrome",
-      "Chatgpt Summarizer Extension Page"
+      "Cookie Consent Blocker Chrome",
+      "Hide Cookie Banners Extension",
+      "Gdpr Banner Remover Chrome",
+      "Auto Reject Non Essential Cookies"
     ],
     "keywords": [
-      "ai summary chrome extension",
-      "summarize long articles browser",
-      "ai article gist tool chrome",
-      "chatgpt summarizer extension page",
-      "tl;dr summary extension chrome"
+      "cookie consent blocker chrome",
+      "hide cookie banners extension",
+      "gdpr banner remover chrome",
+      "auto reject non essential cookies",
+      "stop cookie popups browser"
     ],
-    "canonicalPath": "/blog/ai-summary-chrome-extensions",
+    "canonicalPath": "/blog/cookie-consent-blocker-chrome",
     "updated_at": "2026-09-21T10:41:45.000Z"
-  },
-  {
-    "id": "new-tab-speed-dial-chrome",
-    "title": "New Tab & Speed Dial Extensions: Build the Perfect Start Page (2026)",
-    "slug": "new-tab-speed-dial-chrome",
-    "description": "Speed dial chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Speed dial chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for speed dial chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
-    "published_at": "2026-09-21T00:00:00.000Z",
-    "category": "Productivity",
-    "author": "James Mitchell",
-    "image_url": "/content/images/new-tab-speed-dial-chrome/featured.webp",
-    "featured_image": "/content/images/new-tab-speed-dial-chrome/featured.webp",
-    "reading_time": "21",
-    "read_time": "21",
-    "views": 0,
-    "tags": [
-      "Speed Dial Chrome Extension",
-      "Custom New Tab Page Chrome",
-      "Start Page Organizer Extension",
-      "New Tab Dashboard Widgets Chrome"
-    ],
-    "keywords": [
-      "speed dial chrome extension",
-      "custom new tab page chrome",
-      "start page organizer extension",
-      "new tab dashboard widgets chrome",
-      "visual bookmarks grid chrome"
-    ],
-    "canonicalPath": "/blog/new-tab-speed-dial-chrome",
-    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "a1b2c3d4-dev-0007",
@@ -1280,37 +1280,6 @@
     "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
-    "id": "qr-code-generator-scanner-chrome-extensions",
-    "title": "QR Code Chrome Extensions: Generate and Scan Any Page Instantly (2026)",
-    "slug": "qr-code-generator-scanner-chrome-extensions",
-    "description": "Qr code generator chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Qr code generator chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for qr code generator chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
-    "published_at": "2026-09-20T00:00:00.000Z",
-    "category": "Chrome Extensions",
-    "author": "James Mitchell",
-    "image_url": "/content/images/qr-code-generator-scanner-chrome-extensions/featured.webp",
-    "featured_image": "/content/images/qr-code-generator-scanner-chrome-extensions/featured.webp",
-    "reading_time": "30",
-    "read_time": "30",
-    "views": 0,
-    "tags": [
-      "Qr Code Generator Chrome Extension",
-      "Scan Qr Code Chrome",
-      "Qr Code Extension Chrome 2026",
-      "Share Links Via Qr Code Browser"
-    ],
-    "keywords": [
-      "qr code generator chrome extension",
-      "scan qr code chrome",
-      "qr code extension chrome 2026",
-      "share links via qr code browser",
-      "qr scanner web page"
-    ],
-    "canonicalPath": "/blog/qr-code-generator-scanner-chrome-extensions",
-    "updated_at": "2026-09-20T07:52:26.000Z"
-  },
-  {
     "id": "pomodoro-focus-timer-chrome-extensions",
     "title": "Pomodoro Chrome Extensions: Focus Timers That Actually Work (2026)",
     "slug": "pomodoro-focus-timer-chrome-extensions",
@@ -1339,6 +1308,37 @@
       "25 minute focus sessions browser"
     ],
     "canonicalPath": "/blog/pomodoro-focus-timer-chrome-extensions",
+    "updated_at": "2026-09-20T07:52:26.000Z"
+  },
+  {
+    "id": "qr-code-generator-scanner-chrome-extensions",
+    "title": "QR Code Chrome Extensions: Generate and Scan Any Page Instantly (2026)",
+    "slug": "qr-code-generator-scanner-chrome-extensions",
+    "description": "Qr code generator chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Qr code generator chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for qr code generator chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "published_at": "2026-09-20T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "James Mitchell",
+    "image_url": "/content/images/qr-code-generator-scanner-chrome-extensions/featured.webp",
+    "featured_image": "/content/images/qr-code-generator-scanner-chrome-extensions/featured.webp",
+    "reading_time": "30",
+    "read_time": "30",
+    "views": 0,
+    "tags": [
+      "Qr Code Generator Chrome Extension",
+      "Scan Qr Code Chrome",
+      "Qr Code Extension Chrome 2026",
+      "Share Links Via Qr Code Browser"
+    ],
+    "keywords": [
+      "qr code generator chrome extension",
+      "scan qr code chrome",
+      "qr code extension chrome 2026",
+      "share links via qr code browser",
+      "qr scanner web page"
+    ],
+    "canonicalPath": "/blog/qr-code-generator-scanner-chrome-extensions",
     "updated_at": "2026-09-20T07:52:26.000Z"
   },
   {
@@ -1371,6 +1371,37 @@
     ],
     "canonicalPath": "/blog/rss-reader-chrome-extensions-2026",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "web-highlighter-annotation-extensions-research",
+    "title": "Web Highlighter Extensions: Annotate Any Web Page for Research (2026)",
+    "slug": "web-highlighter-annotation-extensions-research",
+    "description": "Web highlighter chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "meta_description": "Web highlighter chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
+    "excerpt": "Guidance for web highlighter chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
+    "published_at": "2026-09-20T00:00:00.000Z",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/web-highlighter-annotation-extensions-research/featured.webp",
+    "featured_image": "/content/images/web-highlighter-annotation-extensions-research/featured.webp",
+    "reading_time": "22",
+    "read_time": "22",
+    "views": 0,
+    "tags": [
+      "Web Highlighter Chrome Extension",
+      "Annotate Websites Chrome",
+      "Highlight And Save Notes Extension",
+      "Research Annotation Tools Online"
+    ],
+    "keywords": [
+      "web highlighter chrome extension",
+      "annotate websites chrome",
+      "highlight and save notes extension",
+      "research annotation tools online",
+      "digital highlighter for study"
+    ],
+    "canonicalPath": "/blog/web-highlighter-annotation-extensions-research",
+    "updated_at": "2026-09-20T07:52:26.000Z"
   },
   {
     "id": "vertical-tabs-chrome-sidebar-guide",
@@ -1434,37 +1465,6 @@
       "google password manager passkey"
     ],
     "canonicalPath": "/blog/chrome-passkeys-passwordless-guide-2026",
-    "updated_at": "2026-09-20T07:52:26.000Z"
-  },
-  {
-    "id": "web-highlighter-annotation-extensions-research",
-    "title": "Web Highlighter Extensions: Annotate Any Web Page for Research (2026)",
-    "slug": "web-highlighter-annotation-extensions-research",
-    "description": "Web highlighter chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "meta_description": "Web highlighter chrome extension — a 2026 guide with step-by-step setup, honest trade-offs, and picks from the ExtensionTo editorial team.",
-    "excerpt": "Guidance for web highlighter chrome extension: what works in 2026, which tools are worth installing, and how to set everything up in minutes.",
-    "published_at": "2026-09-20T00:00:00.000Z",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/web-highlighter-annotation-extensions-research/featured.webp",
-    "featured_image": "/content/images/web-highlighter-annotation-extensions-research/featured.webp",
-    "reading_time": "22",
-    "read_time": "22",
-    "views": 0,
-    "tags": [
-      "Web Highlighter Chrome Extension",
-      "Annotate Websites Chrome",
-      "Highlight And Save Notes Extension",
-      "Research Annotation Tools Online"
-    ],
-    "keywords": [
-      "web highlighter chrome extension",
-      "annotate websites chrome",
-      "highlight and save notes extension",
-      "research annotation tools online",
-      "digital highlighter for study"
-    ],
-    "canonicalPath": "/blog/web-highlighter-annotation-extensions-research",
     "updated_at": "2026-09-20T07:52:26.000Z"
   },
   {
@@ -2617,6 +2617,37 @@
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
+    "id": "d201f610-90b7-5b42-a8c1-047a60642f06",
+    "title": "YouTube Adblock Not Working in Chrome? The Fix That Survived 2026",
+    "slug": "youtube-adblock-chrome-guide",
+    "description": "YouTube ads came back on Chrome for me too. Here is the debug order that fixed it: filter updates, annoyance lists, detection scripts, and when to switch.",
+    "meta_description": "YouTube ads came back on Chrome for me too. Here is the debug order that fixed it: filter updates, annoyance lists, detection scripts, and when to switch.",
+    "excerpt": "YouTube re-inserts ads faster than forums update their advice. I reproduced the detection on purpose, fixed it, and wrote down the exact order that worked.",
+    "published_at": "2026-09-01T21:45:00.000+00:00",
+    "category": "Troubleshooting",
+    "author": "James Mitchell",
+    "image_url": "/content/images/youtube-adblock-chrome-guide/featured.webp",
+    "featured_image": "/content/images/youtube-adblock-chrome-guide/featured.webp",
+    "reading_time": 15,
+    "read_time": 15,
+    "views": 0,
+    "tags": [
+      "youtube",
+      "adblock",
+      "chrome",
+      "troubleshooting",
+      "extensions"
+    ],
+    "keywords": [
+      "youtube adblock not working chrome",
+      "adblock youtube not working",
+      "youtube ads coming back chrome",
+      "youtube adblock detection fix"
+    ],
+    "canonicalPath": "https://extensionto.com/blog/youtube-adblock-chrome-guide",
+    "updated_at": "2026-09-14T12:00:00.000+00:00"
+  },
+  {
     "id": "0ab9e40d-72bd-53af-9e2a-d4cbc3512d8f",
     "title": "Adblock Not Working on Chrome? 9 Fixes That Actually Worked (2026)",
     "slug": "adblock-not-working-on-chrome-fix",
@@ -2676,37 +2707,6 @@
       "chrome mv3 adblocker"
     ],
     "canonicalPath": "https://extensionto.com/blog/manifest-v3-adblock-chrome-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
-  },
-  {
-    "id": "d201f610-90b7-5b42-a8c1-047a60642f06",
-    "title": "YouTube Adblock Not Working in Chrome? The Fix That Survived 2026",
-    "slug": "youtube-adblock-chrome-guide",
-    "description": "YouTube ads came back on Chrome for me too. Here is the debug order that fixed it: filter updates, annoyance lists, detection scripts, and when to switch.",
-    "meta_description": "YouTube ads came back on Chrome for me too. Here is the debug order that fixed it: filter updates, annoyance lists, detection scripts, and when to switch.",
-    "excerpt": "YouTube re-inserts ads faster than forums update their advice. I reproduced the detection on purpose, fixed it, and wrote down the exact order that worked.",
-    "published_at": "2026-09-01T21:45:00.000+00:00",
-    "category": "Troubleshooting",
-    "author": "James Mitchell",
-    "image_url": "/content/images/youtube-adblock-chrome-guide/featured.webp",
-    "featured_image": "/content/images/youtube-adblock-chrome-guide/featured.webp",
-    "reading_time": 15,
-    "read_time": 15,
-    "views": 0,
-    "tags": [
-      "youtube",
-      "adblock",
-      "chrome",
-      "troubleshooting",
-      "extensions"
-    ],
-    "keywords": [
-      "youtube adblock not working chrome",
-      "adblock youtube not working",
-      "youtube ads coming back chrome",
-      "youtube adblock detection fix"
-    ],
-    "canonicalPath": "https://extensionto.com/blog/youtube-adblock-chrome-guide",
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
@@ -2865,6 +2865,38 @@
     "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
+    "id": "26a1cb40-8309-5deb-8fea-6528be5c2279",
+    "title": "The 6 Best Text-to-Speech Chrome Extensions in 2026",
+    "slug": "best-text-to-speech-chrome-extensions-2026",
+    "description": "Six text-to-speech Chrome extensions compared on real long reads: voice quality, speed range, PDF and DRM behavior, word highlighting, and where free tiers cut off.",
+    "meta_description": "Six text-to-speech Chrome extensions compared for long-form reading: natural voices, PDF support, speed control, highlighting, and the free limits that matter.",
+    "excerpt": "Reddit threads ask for one good read-aloud extension and get ten names and no comparisons. Six text-to-speech extensions compared for commute reading — ranked.",
+    "published_at": "2026-08-31T21:30:00.000+00:00",
+    "category": "Accessibility & Reading",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-text-to-speech-chrome-extensions-2026/featured.webp",
+    "featured_image": "/content/images/best-text-to-speech-chrome-extensions-2026/featured.webp",
+    "reading_time": 15,
+    "read_time": 15,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "text to speech",
+      "accessibility",
+      "extensions",
+      "reading",
+      "productivity"
+    ],
+    "keywords": [
+      "best text to speech chrome extensions",
+      "text to speech chrome extension",
+      "read aloud chrome extension",
+      "tts chrome extension free"
+    ],
+    "canonicalPath": "/blog/best-text-to-speech-chrome-extensions-2026",
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
+  },
+  {
     "id": "433dab18-7a81-5101-94f8-1eac49eb1ce6",
     "title": "Chrome Clipboard History: What Chrome Keeps, Extensions That Extend It, and Privacy (2026)",
     "slug": "clipboard-history-chrome-extension-guide",
@@ -2895,38 +2927,6 @@
       "clipboard sync chrome"
     ],
     "canonicalPath": "/blog/clipboard-history-chrome-extension-guide",
-    "updated_at": "2026-09-23T14:07:53.000+00:00"
-  },
-  {
-    "id": "26a1cb40-8309-5deb-8fea-6528be5c2279",
-    "title": "The 6 Best Text-to-Speech Chrome Extensions in 2026",
-    "slug": "best-text-to-speech-chrome-extensions-2026",
-    "description": "Six text-to-speech Chrome extensions compared on real long reads: voice quality, speed range, PDF and DRM behavior, word highlighting, and where free tiers cut off.",
-    "meta_description": "Six text-to-speech Chrome extensions compared for long-form reading: natural voices, PDF support, speed control, highlighting, and the free limits that matter.",
-    "excerpt": "Reddit threads ask for one good read-aloud extension and get ten names and no comparisons. Six text-to-speech extensions compared for commute reading — ranked.",
-    "published_at": "2026-08-31T21:30:00.000+00:00",
-    "category": "Accessibility & Reading",
-    "author": "James Mitchell",
-    "image_url": "/content/images/best-text-to-speech-chrome-extensions-2026/featured.webp",
-    "featured_image": "/content/images/best-text-to-speech-chrome-extensions-2026/featured.webp",
-    "reading_time": 15,
-    "read_time": 15,
-    "views": 0,
-    "tags": [
-      "chrome",
-      "text to speech",
-      "accessibility",
-      "extensions",
-      "reading",
-      "productivity"
-    ],
-    "keywords": [
-      "best text to speech chrome extensions",
-      "text to speech chrome extension",
-      "read aloud chrome extension",
-      "tts chrome extension free"
-    ],
-    "canonicalPath": "/blog/best-text-to-speech-chrome-extensions-2026",
     "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
@@ -2992,38 +2992,6 @@
     "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
-    "id": "bef0da3a-9e84-5383-98f8-61a1b12c65f5",
-    "title": "Save Articles to Read Later and Offline in Chrome: Reading List vs Extensions (2026)",
-    "slug": "save-articles-read-later-offline-chrome-guide",
-    "description": "Every way to save articles for offline reading in Chrome: the built-in Reading List, save-as-PDF, single-file archivers, and read-later extensions.",
-    "meta_description": "Save articles for later in Chrome and read them offline: the built-in Reading List, full-page saving, and three extensions compared.",
-    "excerpt": "Google's own help pages dominate this topic but stop at the basics: the Reading List compared against three saving methods for commute reading.",
-    "published_at": "2026-08-31T18:00:00.000+00:00",
-    "category": "Guides & Comparisons",
-    "author": "James Mitchell",
-    "image_url": "/content/images/save-articles-read-later-offline-chrome-guide/featured.webp",
-    "featured_image": "/content/images/save-articles-read-later-offline-chrome-guide/featured.webp",
-    "reading_time": 15,
-    "read_time": 15,
-    "views": 0,
-    "tags": [
-      "chrome",
-      "reading list",
-      "offline",
-      "save articles",
-      "extensions",
-      "productivity"
-    ],
-    "keywords": [
-      "save articles to read later offline chrome",
-      "chrome reading list offline",
-      "save article offline chrome",
-      "read it later chrome extension"
-    ],
-    "canonicalPath": "/blog/save-articles-read-later-offline-chrome-guide",
-    "updated_at": "2026-09-23T14:07:53.000+00:00"
-  },
-  {
     "id": "69026c5a-5d29-559f-aa73-046a0a9de109",
     "title": "How to Sync Chrome Extensions Across Devices (2026): Chrome Sync, Profiles, and Fixes",
     "slug": "sync-chrome-extensions-across-devices-guide",
@@ -3056,35 +3024,35 @@
     "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
-    "id": "8b1e1db4-39fc-577a-afae-2258328f4914",
-    "title": "Chrome Extension Keyboard Shortcuts Not Working: 8 Fixes That Actually Work (2026)",
-    "slug": "chrome-extension-keyboard-shortcuts-not-working-fix",
-    "description": "Eight fixes for Chrome extension keyboard shortcuts that stopped working: the shortcuts page, conflict resolution, background wake-ups, profile checks, and resets.",
-    "meta_description": "Fix Chrome extension shortcuts in minutes: assign keys on the shortcuts page, resolve conflicts, wake sleeping extensions, and stop apps from stealing keys.",
-    "excerpt": "Stack Overflow and Reddit threads on dead extension shortcuts stop at 'check chrome://extensions/shortcuts'. Every fix worth trying, ranked by hit rate.",
+    "id": "bef0da3a-9e84-5383-98f8-61a1b12c65f5",
+    "title": "Save Articles to Read Later and Offline in Chrome: Reading List vs Extensions (2026)",
+    "slug": "save-articles-read-later-offline-chrome-guide",
+    "description": "Every way to save articles for offline reading in Chrome: the built-in Reading List, save-as-PDF, single-file archivers, and read-later extensions.",
+    "meta_description": "Save articles for later in Chrome and read them offline: the built-in Reading List, full-page saving, and three extensions compared.",
+    "excerpt": "Google's own help pages dominate this topic but stop at the basics: the Reading List compared against three saving methods for commute reading.",
     "published_at": "2026-08-31T18:00:00.000+00:00",
-    "category": "Troubleshooting",
+    "category": "Guides & Comparisons",
     "author": "James Mitchell",
-    "image_url": "/content/images/chrome-extension-keyboard-shortcuts-not-working-fix/featured.webp",
-    "featured_image": "/content/images/chrome-extension-keyboard-shortcuts-not-working-fix/featured.webp",
+    "image_url": "/content/images/save-articles-read-later-offline-chrome-guide/featured.webp",
+    "featured_image": "/content/images/save-articles-read-later-offline-chrome-guide/featured.webp",
     "reading_time": 15,
     "read_time": 15,
     "views": 0,
     "tags": [
       "chrome",
-      "keyboard shortcuts",
+      "reading list",
+      "offline",
+      "save articles",
       "extensions",
-      "troubleshooting",
-      "productivity",
-      "fix"
+      "productivity"
     ],
     "keywords": [
-      "chrome extension keyboard shortcuts not working",
-      "chrome extension shortcuts not working",
-      "chrome extensions shortcuts page",
-      "chrome commands shortcut conflict"
+      "save articles to read later offline chrome",
+      "chrome reading list offline",
+      "save article offline chrome",
+      "read it later chrome extension"
     ],
-    "canonicalPath": "/blog/chrome-extension-keyboard-shortcuts-not-working-fix",
+    "canonicalPath": "/blog/save-articles-read-later-offline-chrome-guide",
     "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
@@ -3117,6 +3085,38 @@
       "note taking extension chrome 2026"
     ],
     "canonicalPath": "/blog/best-note-taking-chrome-extensions-2026",
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
+  },
+  {
+    "id": "8b1e1db4-39fc-577a-afae-2258328f4914",
+    "title": "Chrome Extension Keyboard Shortcuts Not Working: 8 Fixes That Actually Work (2026)",
+    "slug": "chrome-extension-keyboard-shortcuts-not-working-fix",
+    "description": "Eight fixes for Chrome extension keyboard shortcuts that stopped working: the shortcuts page, conflict resolution, background wake-ups, profile checks, and resets.",
+    "meta_description": "Fix Chrome extension shortcuts in minutes: assign keys on the shortcuts page, resolve conflicts, wake sleeping extensions, and stop apps from stealing keys.",
+    "excerpt": "Stack Overflow and Reddit threads on dead extension shortcuts stop at 'check chrome://extensions/shortcuts'. Every fix worth trying, ranked by hit rate.",
+    "published_at": "2026-08-31T18:00:00.000+00:00",
+    "category": "Troubleshooting",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-extension-keyboard-shortcuts-not-working-fix/featured.webp",
+    "featured_image": "/content/images/chrome-extension-keyboard-shortcuts-not-working-fix/featured.webp",
+    "reading_time": 15,
+    "read_time": 15,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "keyboard shortcuts",
+      "extensions",
+      "troubleshooting",
+      "productivity",
+      "fix"
+    ],
+    "keywords": [
+      "chrome extension keyboard shortcuts not working",
+      "chrome extension shortcuts not working",
+      "chrome extensions shortcuts page",
+      "chrome commands shortcut conflict"
+    ],
+    "canonicalPath": "/blog/chrome-extension-keyboard-shortcuts-not-working-fix",
     "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
@@ -3182,68 +3182,67 @@
     "updated_at": "2026-08-25T12:00:00+01:00"
   },
   {
-    "id": "c8c4e667-4753-555e-b17a-b59d29ccffbd",
-    "title": "Chrome to Samsung Smart TV Casting: 4 Working Methods and Fixes (2026)",
-    "slug": "chrome-samsung-smart-tv-casting-guide",
-    "description": "Four working ways to cast Chrome to a Samsung Smart TV from Windows, Mac, Android, and iPhone — with fixes for black screens, missing sound, and stuttering.",
-    "meta_description": "Cast Chrome from Windows, Mac, Android, and iPhone to a Samsung Smart TV with four working methods, plus fixes for black screens, no sound, and dropped casts.",
-    "excerpt": "The casting methods that hold up on Samsung TVs — including fixes for the black-screen DRM problem most guides ignore.",
+    "id": "fc0404ea-f98e-53b9-ad41-8a8c750a404f",
+    "title": "AI Formula Generator: Excel vs Google Sheets (2026 Comparison)",
+    "slug": "ai-formula-generator-excel-vs-google-sheets",
+    "description": "We ran the same AI formula prompts in Excel Copilot and Google Sheets in 2026. Here is where each generator wins on accuracy, price, and offline work.",
+    "meta_description": "AI formula generation compared in Excel vs Google Sheets for 2026: prompt behavior, accuracy, pricing, and a verdict for every user type.",
+    "excerpt": "We ran the same AI formula prompts in Excel Copilot and Google Sheets in 2026. Here is where each generator wins on accuracy, price, and offline work.",
     "published_at": "2026-08-31T09:00:00.000+00:00",
-    "category": "Guides & Comparisons",
+    "category": "Productivity & AI",
     "author": "James Mitchell",
-    "image_url": "/content/images/chrome-samsung-smart-tv-casting-guide/featured.webp",
-    "featured_image": "/content/images/chrome-samsung-smart-tv-casting-guide/featured.webp",
+    "image_url": "/content/images/ai-formula-generator-excel-vs-google-sheets/featured.webp",
+    "featured_image": "/content/images/ai-formula-generator-excel-vs-google-sheets/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "chrome",
+      "google sheets",
+      "excel",
+      "ai formulas"
+    ],
+    "keywords": [
+      "ai formula generator excel",
+      "AI formula generator Excel vs Google Sheets",
+      "Excel Copilot vs Google Sheets Gemini formulas",
+      "AI spreadsheet formula generator 2026"
+    ],
+    "canonicalPath": "/blog/ai-formula-generator-excel-vs-google-sheets",
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
+  },
+  {
+    "id": "75a297a2-d89f-5f9e-a5f1-644c11e5dfa3",
+    "title": "Agenda Hero Chrome Extension: Setup, Magic Events, and Daily Workflows (2026)",
+    "slug": "agenda-hero-chrome-extension-guide",
+    "description": "An Agenda Hero Chrome extension guide: connect Google Calendar, turn emails and web pages into events, use Magic events, and troubleshoot sync problems.",
+    "meta_description": "Set up Agenda Hero for Chrome step by step: turn emails and pages into calendar events, use Magic events, sync Google Calendar, and fix common issues.",
+    "excerpt": "Set up Agenda Hero on Chrome for real scheduling work: Magic events, Google Calendar sync, and the fixes for common setup snags.",
+    "published_at": "2026-08-31T09:00:00.000+00:00",
+    "category": "Productivity & Workflow",
+    "author": "James Mitchell",
+    "image_url": "/content/images/agenda-hero-chrome-extension-guide/featured.webp",
+    "featured_image": "/content/images/agenda-hero-chrome-extension-guide/featured.webp",
     "reading_time": 16,
     "read_time": 16,
     "views": 0,
     "tags": [
       "chrome",
-      "samsung smart tv",
-      "casting",
-      "screen mirroring",
-      "chromecast",
-      "troubleshooting"
+      "agenda hero",
+      "calendar",
+      "productivity",
+      "google calendar",
+      "browser extensions"
     ],
     "keywords": [
-      "chrome samsung smart tv casting",
-      "cast chrome to samsung tv",
-      "screen mirror chrome samsung tv",
-      "chrome cast tab not showing samsung tv"
+      "agenda hero chrome extension",
+      "agenda hero chrome",
+      "agenda hero magic events",
+      "agenda hero google calendar",
+      "email to calendar event chrome"
     ],
-    "canonicalPath": "/blog/chrome-samsung-smart-tv-casting-guide",
+    "canonicalPath": "/blog/agenda-hero-chrome-extension-guide",
     "updated_at": "2026-09-23T14:07:53.000+00:00"
-  },
-  {
-    "id": "8a9b6cf9-28aa-5ce3-baea-5e4709a00aa6",
-    "title": "Chrome Web Store Extensions on Firefox: What Works in 2026",
-    "slug": "chrome-web-store-firefox-extensions-guide",
-    "description": "Four ways to get Chrome Web Store extensions running on Firefox: native ports, AMO search, compatibility checkpoints, and what silently breaks in 2026.",
-    "meta_description": "Can Firefox run Chrome Web Store extensions? Four paths compared: native ports, Web Store search tricks, compatibility checks, and what breaks in 2026.",
-    "excerpt": "Firefox can't install CRX files directly — the four realistic paths for getting your Chrome Web Store workflow onto Firefox, ranked honestly.",
-    "published_at": "2026-08-31T09:00:00.000+00:00",
-    "category": "Guides & Comparisons",
-    "author": "James Mitchell",
-    "image_url": "/content/images/chrome-web-store-firefox-extensions-guide/featured.webp",
-    "featured_image": "/content/images/chrome-web-store-firefox-extensions-guide/featured.webp",
-    "reading_time": 15,
-    "read_time": "14",
-    "views": 0,
-    "tags": [
-      "chrome",
-      "firefox",
-      "chrome web store",
-      "extensions",
-      "cross-browser",
-      "compatibility"
-    ],
-    "keywords": [
-      "chrome web store firefox extensions",
-      "install chrome extensions on firefox",
-      "firefox chrome extension support",
-      "cross browser extensions 2026"
-    ],
-    "canonicalPath": "/blog/chrome-web-store-firefox-extensions-guide",
-    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "120188c8-829f-5ffb-bd7e-e238901ad247",
@@ -3312,67 +3311,68 @@
     "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
-    "id": "fc0404ea-f98e-53b9-ad41-8a8c750a404f",
-    "title": "AI Formula Generator: Excel vs Google Sheets (2026 Comparison)",
-    "slug": "ai-formula-generator-excel-vs-google-sheets",
-    "description": "We ran the same AI formula prompts in Excel Copilot and Google Sheets in 2026. Here is where each generator wins on accuracy, price, and offline work.",
-    "meta_description": "AI formula generation compared in Excel vs Google Sheets for 2026: prompt behavior, accuracy, pricing, and a verdict for every user type.",
-    "excerpt": "We ran the same AI formula prompts in Excel Copilot and Google Sheets in 2026. Here is where each generator wins on accuracy, price, and offline work.",
+    "id": "c8c4e667-4753-555e-b17a-b59d29ccffbd",
+    "title": "Chrome to Samsung Smart TV Casting: 4 Working Methods and Fixes (2026)",
+    "slug": "chrome-samsung-smart-tv-casting-guide",
+    "description": "Four working ways to cast Chrome to a Samsung Smart TV from Windows, Mac, Android, and iPhone — with fixes for black screens, missing sound, and stuttering.",
+    "meta_description": "Cast Chrome from Windows, Mac, Android, and iPhone to a Samsung Smart TV with four working methods, plus fixes for black screens, no sound, and dropped casts.",
+    "excerpt": "The casting methods that hold up on Samsung TVs — including fixes for the black-screen DRM problem most guides ignore.",
     "published_at": "2026-08-31T09:00:00.000+00:00",
-    "category": "Productivity & AI",
+    "category": "Guides & Comparisons",
     "author": "James Mitchell",
-    "image_url": "/content/images/ai-formula-generator-excel-vs-google-sheets/featured.webp",
-    "featured_image": "/content/images/ai-formula-generator-excel-vs-google-sheets/featured.webp",
-    "reading_time": 11,
-    "read_time": 11,
-    "views": 0,
-    "tags": [
-      "chrome",
-      "google sheets",
-      "excel",
-      "ai formulas"
-    ],
-    "keywords": [
-      "ai formula generator excel",
-      "AI formula generator Excel vs Google Sheets",
-      "Excel Copilot vs Google Sheets Gemini formulas",
-      "AI spreadsheet formula generator 2026"
-    ],
-    "canonicalPath": "/blog/ai-formula-generator-excel-vs-google-sheets",
-    "updated_at": "2026-09-23T13:54:38.000+00:00"
-  },
-  {
-    "id": "75a297a2-d89f-5f9e-a5f1-644c11e5dfa3",
-    "title": "Agenda Hero Chrome Extension: Setup, Magic Events, and Daily Workflows (2026)",
-    "slug": "agenda-hero-chrome-extension-guide",
-    "description": "An Agenda Hero Chrome extension guide: connect Google Calendar, turn emails and web pages into events, use Magic events, and troubleshoot sync problems.",
-    "meta_description": "Set up Agenda Hero for Chrome step by step: turn emails and pages into calendar events, use Magic events, sync Google Calendar, and fix common issues.",
-    "excerpt": "Set up Agenda Hero on Chrome for real scheduling work: Magic events, Google Calendar sync, and the fixes for common setup snags.",
-    "published_at": "2026-08-31T09:00:00.000+00:00",
-    "category": "Productivity & Workflow",
-    "author": "James Mitchell",
-    "image_url": "/content/images/agenda-hero-chrome-extension-guide/featured.webp",
-    "featured_image": "/content/images/agenda-hero-chrome-extension-guide/featured.webp",
+    "image_url": "/content/images/chrome-samsung-smart-tv-casting-guide/featured.webp",
+    "featured_image": "/content/images/chrome-samsung-smart-tv-casting-guide/featured.webp",
     "reading_time": 16,
     "read_time": 16,
     "views": 0,
     "tags": [
       "chrome",
-      "agenda hero",
-      "calendar",
-      "productivity",
-      "google calendar",
-      "browser extensions"
+      "samsung smart tv",
+      "casting",
+      "screen mirroring",
+      "chromecast",
+      "troubleshooting"
     ],
     "keywords": [
-      "agenda hero chrome extension",
-      "agenda hero chrome",
-      "agenda hero magic events",
-      "agenda hero google calendar",
-      "email to calendar event chrome"
+      "chrome samsung smart tv casting",
+      "cast chrome to samsung tv",
+      "screen mirror chrome samsung tv",
+      "chrome cast tab not showing samsung tv"
     ],
-    "canonicalPath": "/blog/agenda-hero-chrome-extension-guide",
+    "canonicalPath": "/blog/chrome-samsung-smart-tv-casting-guide",
     "updated_at": "2026-09-23T14:07:53.000+00:00"
+  },
+  {
+    "id": "8a9b6cf9-28aa-5ce3-baea-5e4709a00aa6",
+    "title": "Chrome Web Store Extensions on Firefox: What Works in 2026",
+    "slug": "chrome-web-store-firefox-extensions-guide",
+    "description": "Four ways to get Chrome Web Store extensions running on Firefox: native ports, AMO search, compatibility checkpoints, and what silently breaks in 2026.",
+    "meta_description": "Can Firefox run Chrome Web Store extensions? Four paths compared: native ports, Web Store search tricks, compatibility checks, and what breaks in 2026.",
+    "excerpt": "Firefox can't install CRX files directly — the four realistic paths for getting your Chrome Web Store workflow onto Firefox, ranked honestly.",
+    "published_at": "2026-08-31T09:00:00.000+00:00",
+    "category": "Guides & Comparisons",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-web-store-firefox-extensions-guide/featured.webp",
+    "featured_image": "/content/images/chrome-web-store-firefox-extensions-guide/featured.webp",
+    "reading_time": 15,
+    "read_time": "14",
+    "views": 0,
+    "tags": [
+      "chrome",
+      "firefox",
+      "chrome web store",
+      "extensions",
+      "cross-browser",
+      "compatibility"
+    ],
+    "keywords": [
+      "chrome web store firefox extensions",
+      "install chrome extensions on firefox",
+      "firefox chrome extension support",
+      "cross browser extensions 2026"
+    ],
+    "canonicalPath": "/blog/chrome-web-store-firefox-extensions-guide",
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
     "id": "4daec284-b8a4-5bdc-887c-140de1eacda2",
@@ -3980,89 +3980,6 @@
     "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
-    "id": "77f85717-3324-4a51-ba1f-8a465bb80781",
-    "title": "Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely",
-    "slug": "chrome-extensions-incognito-guide",
-    "description": "Chrome blocks every extension in Incognito by default. What the 'Allow in incognito' toggle really does, which permissions deserve a second look, and how to fix common failures.",
-    "meta_description": "Extension chrome incognito guide: enable, review, and disable extensions in private windows safely, with permission checks, policy limits, and fixes.",
-    "excerpt": "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode while understanding privacy considerations and restrictions.",
-    "published_at": "2026-08-23T00:00:00.000Z",
-    "category": "Chrome Extensions",
-    "author": "Miccart Phen",
-    "image_url": "/content/images/chrome-extensions-incognito-guide/featured.webp",
-    "featured_image": "/content/images/chrome-extensions-incognito-guide/featured.webp",
-    "reading_time": 7,
-    "read_time": 7,
-    "views": 0,
-    "tags": [
-      "Chrome",
-      "browser extensions"
-    ],
-    "keywords": [
-      "extension chrome incognito"
-    ],
-    "canonicalPath": "/blog/chrome-extensions-incognito-guide",
-    "updated_at": "2026-09-23T14:07:53.000+00:00"
-  },
-  {
-    "id": "aa338d09-c7d2-45ca-b7b3-065e78551970",
-    "title": "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits",
-    "slug": "chrome-logger-debugging-guide",
-    "description": "Chrome Logger pipes server-side logs into DevTools via HTTP headers. How to set it up, fit it into a debugging workflow, and why to keep it off production.",
-    "meta_description": "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits — Understand Chrome Logger's server-side debugging capabilities, setup process, securi...",
-    "excerpt": "Understand Chrome Logger's server-side debugging capabilities, setup process, security concerns, and alternatives for safer development workflows.",
-    "published_at": "2026-08-23T00:00:00.000Z",
-    "category": "Chrome Extensions",
-    "author": "Miccart Phen",
-    "image_url": "/content/images/chrome-logger-debugging-guide/featured.webp",
-    "featured_image": "/content/images/chrome-logger-debugging-guide/featured.webp",
-    "reading_time": 6,
-    "read_time": 6,
-    "views": 0,
-    "tags": [
-      "Chrome",
-      "browser extensions"
-    ],
-    "keywords": [
-      "chrome logger"
-    ],
-    "canonicalPath": "/blog/chrome-logger-debugging-guide",
-    "updated_at": "2026-09-23T13:54:38.000+00:00"
-  },
-  {
-    "id": "60451c45-45ed-4b27-a787-7a3d55bfdc0f",
-    "title": "Chrome Extension Permissions: How to Review Access Before You Install",
-    "slug": "chrome-extension-permissions-guide",
-    "description": "That install dialog is a contract — learn to read it. Decoding permission warnings before you click ‘Add to Chrome.’",
-    "meta_description": "Chrome Extension Permissions: How to Review Access Before You Install — Before you click “Add to Chrome,” learn how to read permission warnings, recognize op...",
-    "excerpt": "Before you click “Add to Chrome,” learn how to read permission warnings, recognize optional permissions and activeTab, and limit site access safely.",
-    "published_at": "2026-08-23T00:00:00.000Z",
-    "category": "Chrome Extensions",
-    "author": "Miccart Phen",
-    "image_url": "/content/images/chrome-extension-permissions-guide/featured.webp",
-    "featured_image": "/content/images/chrome-extension-permissions-guide/featured.webp",
-    "reading_time": 7,
-    "read_time": 7,
-    "views": 0,
-    "tags": [
-      "Chrome",
-      "Extensions",
-      "Permissions",
-      "Privacy",
-      "Security"
-    ],
-    "keywords": [
-      "chrome extension permissions guide",
-      "permission warnings",
-      "optional permissions",
-      "activeTab",
-      "host permissions",
-      "site access controls"
-    ],
-    "canonicalPath": "/blog/chrome-extension-permissions-guide",
-    "updated_at": "2026-09-23T13:56:58.000+00:00"
-  },
-  {
     "id": "8258d0e7-5600-4bcd-a275-f8c29d8dbd83",
     "title": "Java Plugins in Chrome: What Still Works, What Does Not, and Safer Alternatives",
     "slug": "java-plugins-chrome-compatibility-guide",
@@ -4120,6 +4037,89 @@
       "setup guide"
     ],
     "canonicalPath": "/blog/momentum-chrome-extension-guide",
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
+  },
+  {
+    "id": "77f85717-3324-4a51-ba1f-8a465bb80781",
+    "title": "Chrome Extensions in Incognito: How to Allow, Review, and Disable Access Safely",
+    "slug": "chrome-extensions-incognito-guide",
+    "description": "Chrome blocks every extension in Incognito by default. What the 'Allow in incognito' toggle really does, which permissions deserve a second look, and how to fix common failures.",
+    "meta_description": "Extension chrome incognito guide: enable, review, and disable extensions in private windows safely, with permission checks, policy limits, and fixes.",
+    "excerpt": "Learn how to safely enable, review, and disable Chrome extensions in Incognito mode while understanding privacy considerations and restrictions.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/content/images/chrome-extensions-incognito-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extensions-incognito-guide/featured.webp",
+    "reading_time": 7,
+    "read_time": 7,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "browser extensions"
+    ],
+    "keywords": [
+      "extension chrome incognito"
+    ],
+    "canonicalPath": "/blog/chrome-extensions-incognito-guide",
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
+  },
+  {
+    "id": "60451c45-45ed-4b27-a787-7a3d55bfdc0f",
+    "title": "Chrome Extension Permissions: How to Review Access Before You Install",
+    "slug": "chrome-extension-permissions-guide",
+    "description": "That install dialog is a contract — learn to read it. Decoding permission warnings before you click ‘Add to Chrome.’",
+    "meta_description": "Chrome Extension Permissions: How to Review Access Before You Install — Before you click “Add to Chrome,” learn how to read permission warnings, recognize op...",
+    "excerpt": "Before you click “Add to Chrome,” learn how to read permission warnings, recognize optional permissions and activeTab, and limit site access safely.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/content/images/chrome-extension-permissions-guide/featured.webp",
+    "featured_image": "/content/images/chrome-extension-permissions-guide/featured.webp",
+    "reading_time": 7,
+    "read_time": 7,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "Extensions",
+      "Permissions",
+      "Privacy",
+      "Security"
+    ],
+    "keywords": [
+      "chrome extension permissions guide",
+      "permission warnings",
+      "optional permissions",
+      "activeTab",
+      "host permissions",
+      "site access controls"
+    ],
+    "canonicalPath": "/blog/chrome-extension-permissions-guide",
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "aa338d09-c7d2-45ca-b7b3-065e78551970",
+    "title": "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits",
+    "slug": "chrome-logger-debugging-guide",
+    "description": "Chrome Logger pipes server-side logs into DevTools via HTTP headers. How to set it up, fit it into a debugging workflow, and why to keep it off production.",
+    "meta_description": "Chrome Logger Guide: Server-Side Debugging, Setup, and Security Limits — Understand Chrome Logger's server-side debugging capabilities, setup process, securi...",
+    "excerpt": "Understand Chrome Logger's server-side debugging capabilities, setup process, security concerns, and alternatives for safer development workflows.",
+    "published_at": "2026-08-23T00:00:00.000Z",
+    "category": "Chrome Extensions",
+    "author": "Miccart Phen",
+    "image_url": "/content/images/chrome-logger-debugging-guide/featured.webp",
+    "featured_image": "/content/images/chrome-logger-debugging-guide/featured.webp",
+    "reading_time": 6,
+    "read_time": 6,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "browser extensions"
+    ],
+    "keywords": [
+      "chrome logger"
+    ],
+    "canonicalPath": "/blog/chrome-logger-debugging-guide",
     "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
@@ -4181,36 +4181,6 @@
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
-    "id": "f0dba3b5-9d8f-4c3b-94ac-2c0e20260822",
-    "title": "Chrome Omnibox Guide: Address-Bar Shortcuts and Extension Keywords",
-    "slug": "chrome-omnibox-guide",
-    "description": "The Omnibox is more than an address bar: site-search shortcuts, extension keywords, and routing queries without touching the mouse.",
-    "meta_description": "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point.",
-    "excerpt": "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point.",
-    "published_at": "2026-08-22T00:00:00.000Z",
-    "category": "Browser Productivity",
-    "author": "Miccart Phen",
-    "image_url": "/content/images/chrome-omnibox-guide/featured.webp",
-    "featured_image": "/content/images/chrome-omnibox-guide/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "Chrome",
-      "Omnibox",
-      "Browser shortcuts",
-      "Chrome extensions"
-    ],
-    "keywords": [
-      "omniboxes",
-      "Chrome Omnibox",
-      "Chrome address bar shortcuts",
-      "Chrome extension Omnibox API"
-    ],
-    "canonicalPath": "/blog/chrome-omnibox-guide",
-    "updated_at": "2026-09-23T14:07:53.000+00:00"
-  },
-  {
     "id": "9f3b2d7d-6f06-4a89-a3e0-1a2d9a6b1c54",
     "title": "Mailtrack for Gmail in Chrome: Setup, Read Receipts, and Privacy Limits",
     "slug": "mailtrack-gmail-chrome-guide",
@@ -4239,6 +4209,36 @@
       "email tracking privacy"
     ],
     "canonicalPath": "/blog/mailtrack-gmail-chrome-guide",
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
+  },
+  {
+    "id": "f0dba3b5-9d8f-4c3b-94ac-2c0e20260822",
+    "title": "Chrome Omnibox Guide: Address-Bar Shortcuts and Extension Keywords",
+    "slug": "chrome-omnibox-guide",
+    "description": "The Omnibox is more than an address bar: site-search shortcuts, extension keywords, and routing queries without touching the mouse.",
+    "meta_description": "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point.",
+    "excerpt": "Learn how Chrome's Omnibox works, when to use site-search shortcuts, and how extension keywords turn the address bar into a focused command entry point.",
+    "published_at": "2026-08-22T00:00:00.000Z",
+    "category": "Browser Productivity",
+    "author": "Miccart Phen",
+    "image_url": "/content/images/chrome-omnibox-guide/featured.webp",
+    "featured_image": "/content/images/chrome-omnibox-guide/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "Chrome",
+      "Omnibox",
+      "Browser shortcuts",
+      "Chrome extensions"
+    ],
+    "keywords": [
+      "omniboxes",
+      "Chrome Omnibox",
+      "Chrome address bar shortcuts",
+      "Chrome extension Omnibox API"
+    ],
+    "canonicalPath": "/blog/chrome-omnibox-guide",
     "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
@@ -4298,6 +4298,33 @@
     "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
+    "id": "8cea7e06-c7cb-4905-aa9f-e85ff42cb4f4",
+    "title": "Best Chrome Extensions for Web Accessibility Testing",
+    "slug": "best-chrome-extensions-for-web-accessibility-testing",
+    "description": "An automated scanner passing your site proves less than you think. The testing tools that matter — and what they can’t tell you.",
+    "meta_description": "Compare the best Chrome extensions for web accessibility testing: automated scanners, contrast checks, keyboard navigation, and screen reader testing.",
+    "excerpt": "The best Chrome extensions for web accessibility testing — automated scanners, contrast checking, keyboard navigation, and screen reader testing.",
+    "published_at": "2026-08-17T00:00:00.000Z",
+    "category": "Productivity & Tools",
+    "author": "Admin",
+    "image_url": "/content/images/best-chrome-extensions-for-web-accessibility-testing/featured.webp",
+    "featured_image": "/content/images/best-chrome-extensions-for-web-accessibility-testing/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "accessibility",
+      "web development",
+      "testing",
+      "chrome extensions"
+    ],
+    "keywords": [
+      "best chrome extensions for web accessibility testing"
+    ],
+    "canonicalPath": "/blog/best-chrome-extensions-for-web-accessibility-testing",
+    "updated_at": "2026-09-23T14:07:53.000+00:00"
+  },
+  {
     "id": "27dbddde-1202-43ad-921d-0ec063149905",
     "title": "Chrome Extensions for Comparing Prices While Shopping",
     "slug": "chrome-extensions-for-comparing-prices-while-shopping",
@@ -4350,33 +4377,6 @@
     ],
     "canonicalPath": "/blog/chrome-extensions-for-time-zone-conversion",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
-  },
-  {
-    "id": "8cea7e06-c7cb-4905-aa9f-e85ff42cb4f4",
-    "title": "Best Chrome Extensions for Web Accessibility Testing",
-    "slug": "best-chrome-extensions-for-web-accessibility-testing",
-    "description": "An automated scanner passing your site proves less than you think. The testing tools that matter — and what they can’t tell you.",
-    "meta_description": "Compare the best Chrome extensions for web accessibility testing: automated scanners, contrast checks, keyboard navigation, and screen reader testing.",
-    "excerpt": "The best Chrome extensions for web accessibility testing — automated scanners, contrast checking, keyboard navigation, and screen reader testing.",
-    "published_at": "2026-08-17T00:00:00.000Z",
-    "category": "Productivity & Tools",
-    "author": "Admin",
-    "image_url": "/content/images/best-chrome-extensions-for-web-accessibility-testing/featured.webp",
-    "featured_image": "/content/images/best-chrome-extensions-for-web-accessibility-testing/featured.webp",
-    "reading_time": 12,
-    "read_time": 12,
-    "views": 0,
-    "tags": [
-      "accessibility",
-      "web development",
-      "testing",
-      "chrome extensions"
-    ],
-    "keywords": [
-      "best chrome extensions for web accessibility testing"
-    ],
-    "canonicalPath": "/blog/best-chrome-extensions-for-web-accessibility-testing",
-    "updated_at": "2026-09-23T14:07:53.000+00:00"
   },
   {
     "id": "vpn-article9-tunnelbear-review",
@@ -4463,33 +4463,6 @@
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
-    "id": "50a3232c-6373-4dd7-8666-99593023e235",
-    "title": "How to Manage Chrome Bookmarks Efficiently: A Complete System",
-    "slug": "how-to-manage-chrome-bookmarks-efficiently",
-    "description": "40 bookmarks or 4,000: a complete system with a folder structure that scales, built on Chrome's own Bookmark Manager.",
-    "meta_description": "A complete system for managing Chrome bookmarks efficiently — folder structure, keyboard shortcuts, sync explained, and cleaning up years of clutter.",
-    "excerpt": "A complete system for managing Chrome bookmarks efficiently — folder structure, keyboard shortcuts, sync explained, and cleaning up years of clutter.",
-    "published_at": "2026-08-09T00:00:00.000Z",
-    "category": "Productivity & Tools",
-    "author": "Admin",
-    "image_url": "/content/images/generated/how-to-manage-chrome-bookmarks-efficiently.jpg",
-    "featured_image": "/content/images/generated/how-to-manage-chrome-bookmarks-efficiently.jpg",
-    "reading_time": 12,
-    "read_time": 12,
-    "views": 0,
-    "tags": [
-      "bookmarks",
-      "productivity",
-      "chrome tips",
-      "organization"
-    ],
-    "keywords": [
-      "how to manage chrome bookmarks efficiently"
-    ],
-    "canonicalPath": "/blog/how-to-manage-chrome-bookmarks-efficiently",
-    "updated_at": "2026-09-23T13:56:58.000+00:00"
-  },
-  {
     "id": "06fb1066-9d5d-4593-aab2-0539fae539b5",
     "title": "How to Sync Chrome Bookmarks Across Devices: Troubleshooting Guide",
     "slug": "how-to-sync-chrome-bookmarks-across-devices",
@@ -4514,6 +4487,33 @@
       "how to sync chrome bookmarks across devices"
     ],
     "canonicalPath": "/blog/how-to-sync-chrome-bookmarks-across-devices",
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "50a3232c-6373-4dd7-8666-99593023e235",
+    "title": "How to Manage Chrome Bookmarks Efficiently: A Complete System",
+    "slug": "how-to-manage-chrome-bookmarks-efficiently",
+    "description": "40 bookmarks or 4,000: a complete system with a folder structure that scales, built on Chrome's own Bookmark Manager.",
+    "meta_description": "A complete system for managing Chrome bookmarks efficiently — folder structure, keyboard shortcuts, sync explained, and cleaning up years of clutter.",
+    "excerpt": "A complete system for managing Chrome bookmarks efficiently — folder structure, keyboard shortcuts, sync explained, and cleaning up years of clutter.",
+    "published_at": "2026-08-09T00:00:00.000Z",
+    "category": "Productivity & Tools",
+    "author": "Admin",
+    "image_url": "/content/images/generated/how-to-manage-chrome-bookmarks-efficiently.jpg",
+    "featured_image": "/content/images/generated/how-to-manage-chrome-bookmarks-efficiently.jpg",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "bookmarks",
+      "productivity",
+      "chrome tips",
+      "organization"
+    ],
+    "keywords": [
+      "how to manage chrome bookmarks efficiently"
+    ],
+    "canonicalPath": "/blog/how-to-manage-chrome-bookmarks-efficiently",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
@@ -4543,31 +4543,31 @@
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
-    "id": "d0fad31c-d456-477d-aa7d-46d3a4ac8aa2",
-    "title": "Chrome Extensions for Tracking Package Deliveries: A Complete Guide",
-    "slug": "chrome-extensions-for-tracking-package-deliveries",
-    "description": "One carrier or five? A practical guide to picking a package-tracking extension, guarding your delivery data, and fixing tracking numbers that won't auto-detect.",
-    "meta_description": "A complete guide to Chrome package-tracking extensions — single-carrier vs multi-carrier, data privacy, permissions, and fixing auto-detect failures.",
-    "excerpt": "A complete guide to Chrome package-tracking extensions — single-carrier vs multi-carrier, data privacy, permissions, and fixing auto-detect failures.",
+    "id": "75777b9d-b1fb-4c18-aeb7-f326781aabec",
+    "title": "Best Chrome Extensions for Note Taking: A Task-Based Guide",
+    "slug": "best-chrome-extensions-for-note-taking",
+    "description": "‘Note-taking extension’ means three very different things. Match the tool to your actual workflow — plus who lets you export your notes.",
+    "meta_description": "A task-based guide to Chrome note-taking extensions — which type you actually need, real data-portability answers, and the permissions other guides skip.",
+    "excerpt": "A task-based guide to Chrome note-taking extensions — which type you actually need, real data-portability answers, and the permissions other guides skip.",
     "published_at": "2026-08-09T00:00:00.000Z",
     "category": "Productivity & Tools",
     "author": "Admin",
-    "image_url": "/content/images/chrome-extensions-for-tracking-package-deliveries/featured.webp",
-    "featured_image": "/content/images/chrome-extensions-for-tracking-package-deliveries/featured.webp",
-    "reading_time": 9,
-    "read_time": 9,
+    "image_url": "/content/images/best-chrome-extensions-for-note-taking/featured.webp",
+    "featured_image": "/content/images/best-chrome-extensions-for-note-taking/featured.webp",
+    "reading_time": "18",
+    "read_time": "18",
     "views": 0,
     "tags": [
-      "package tracking",
+      "note taking",
       "productivity",
       "chrome extensions",
-      "shopping"
+      "organization"
     ],
     "keywords": [
-      "chrome extensions for tracking package deliveries"
+      "best chrome extensions for note taking"
     ],
-    "canonicalPath": "/blog/chrome-extensions-for-tracking-package-deliveries",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
+    "canonicalPath": "/blog/best-chrome-extensions-for-note-taking",
+    "updated_at": "2026-09-20T21:54:45.000+00:00"
   },
   {
     "id": "ee78df07-8ecb-489b-9e74-05bd4852423c",
@@ -4597,31 +4597,31 @@
     "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
-    "id": "75777b9d-b1fb-4c18-aeb7-f326781aabec",
-    "title": "Best Chrome Extensions for Note Taking: A Task-Based Guide",
-    "slug": "best-chrome-extensions-for-note-taking",
-    "description": "‘Note-taking extension’ means three very different things. Match the tool to your actual workflow — plus who lets you export your notes.",
-    "meta_description": "A task-based guide to Chrome note-taking extensions — which type you actually need, real data-portability answers, and the permissions other guides skip.",
-    "excerpt": "A task-based guide to Chrome note-taking extensions — which type you actually need, real data-portability answers, and the permissions other guides skip.",
+    "id": "d0fad31c-d456-477d-aa7d-46d3a4ac8aa2",
+    "title": "Chrome Extensions for Tracking Package Deliveries: A Complete Guide",
+    "slug": "chrome-extensions-for-tracking-package-deliveries",
+    "description": "One carrier or five? A practical guide to picking a package-tracking extension, guarding your delivery data, and fixing tracking numbers that won't auto-detect.",
+    "meta_description": "A complete guide to Chrome package-tracking extensions — single-carrier vs multi-carrier, data privacy, permissions, and fixing auto-detect failures.",
+    "excerpt": "A complete guide to Chrome package-tracking extensions — single-carrier vs multi-carrier, data privacy, permissions, and fixing auto-detect failures.",
     "published_at": "2026-08-09T00:00:00.000Z",
     "category": "Productivity & Tools",
     "author": "Admin",
-    "image_url": "/content/images/best-chrome-extensions-for-note-taking/featured.webp",
-    "featured_image": "/content/images/best-chrome-extensions-for-note-taking/featured.webp",
-    "reading_time": "18",
-    "read_time": "18",
+    "image_url": "/content/images/chrome-extensions-for-tracking-package-deliveries/featured.webp",
+    "featured_image": "/content/images/chrome-extensions-for-tracking-package-deliveries/featured.webp",
+    "reading_time": 9,
+    "read_time": 9,
     "views": 0,
     "tags": [
-      "note taking",
+      "package tracking",
       "productivity",
       "chrome extensions",
-      "organization"
+      "shopping"
     ],
     "keywords": [
-      "best chrome extensions for note taking"
+      "chrome extensions for tracking package deliveries"
     ],
-    "canonicalPath": "/blog/best-chrome-extensions-for-note-taking",
-    "updated_at": "2026-09-20T21:54:45.000+00:00"
+    "canonicalPath": "/blog/chrome-extensions-for-tracking-package-deliveries",
+    "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
     "id": "vpn-article5-youtube-proxy",
@@ -6307,6 +6307,66 @@
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
+    "id": "screenshot-tools-chrome-comparison",
+    "title": "Best Chrome Screenshot Tools: 5 Ways Compared",
+    "slug": "screenshot-tools-chrome-comparison",
+    "description": "Five ways to screenshot in Chrome compared — DevTools, Print Screen, and three extensions — on speed and workflow fit.",
+    "meta_description": "Chrome screenshot tools compared: built-in DevTools, Print Screen, Quick Screenshot Lite, Snagit, and Lightshot — speed, quality, and workflow fit.",
+    "excerpt": "Five ways to take screenshots in Chrome: built-in DevTools, Print Screen, Quick Screenshot Lite, Snagit, and Lightshot — speed, quality, and workflow efficiency.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/screenshot-tools-chrome-comparison/featured.webp",
+    "featured_image": "/content/images/screenshot-tools-chrome-comparison/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "screenshot comparison",
+      "chrome screenshot",
+      "screen capture tools",
+      "screenshot extension"
+    ],
+    "keywords": [
+      "best chrome screenshot tools",
+      "screenshot tool comparison",
+      "chrome screenshot extension vs built-in",
+      "screen capture methods chrome"
+    ],
+    "canonicalPath": "/blog/screenshot-tools-chrome-comparison",
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "bc16d225-475e-486e-b3cb-5b66a0b0a8fd",
+    "title": "Automating Business Reports with Formula Builder: A Practical Guide",
+    "slug": "automating-business-reports-with-formula-builder",
+    "description": "From spreadsheet drudgery to one-click reports: how Formula Builder Pro stacks up against manual Excel work, and the workflow that makes it sing.",
+    "meta_description": "Automating business reports with Formula Builder Pro compared with manual Excel work: workflow, output quality, and the companion tools that fill the gaps.",
+    "excerpt": "Automating business reports with Formula Builder Pro: how it compares with manual Excel work, which companion extensions fill the gaps, and whether it saves enough time to matter.",
+    "published_at": "2026-06-06T10:00:00.000000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
+    "featured_image": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
+    "reading_time": 7,
+    "read_time": 7,
+    "views": 0,
+    "tags": [
+      "formula builder",
+      "business reports",
+      "automation",
+      "Chrome extensions"
+    ],
+    "keywords": [
+      "Automating business reports with Formula Builder",
+      "Formula Builder Pro",
+      "automate reports Chrome",
+      "business reporting tools"
+    ],
+    "canonicalPath": "/blog/automating-business-reports-with-formula-builder",
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
+  },
+  {
     "id": "quick-screenshot-capture-extension",
     "title": "Quick Screenshot Lite Review: 4 Screenshot Rivals Compared",
     "slug": "quick-screenshot-capture-extension",
@@ -6337,33 +6397,157 @@
     "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
-    "id": "screenshot-tools-chrome-comparison",
-    "title": "Best Chrome Screenshot Tools: 5 Ways Compared",
-    "slug": "screenshot-tools-chrome-comparison",
-    "description": "Five ways to screenshot in Chrome compared — DevTools, Print Screen, and three extensions — on speed and workflow fit.",
-    "meta_description": "Chrome screenshot tools compared: built-in DevTools, Print Screen, Quick Screenshot Lite, Snagit, and Lightshot — speed, quality, and workflow fit.",
-    "excerpt": "Five ways to take screenshots in Chrome: built-in DevTools, Print Screen, Quick Screenshot Lite, Snagit, and Lightshot — speed, quality, and workflow efficiency.",
+    "id": "cookies-quick-manager-chrome",
+    "title": "Best Cookie Manager for Chrome: 4 Cookie Extensions Compared",
+    "slug": "cookies-quick-manager-chrome",
+    "description": "1,847 cookies and counting: four cookie managers tested on a 30-site rotation to see which one actually tames the clutter.",
+    "meta_description": "4 cookie manager extensions for Chrome compared: memory usage, features, and privacy protection, with setup steps for keeping your browsing clean.",
+    "excerpt": "4 cookie manager extensions for Chrome compared on memory usage, features, and privacy protection — and which one best keeps your browsing clean.",
     "published_at": "2026-06-06T10:00:00.000+00:00",
     "category": "Productivity & Tools",
     "author": "James Mitchell",
-    "image_url": "/content/images/screenshot-tools-chrome-comparison/featured.webp",
-    "featured_image": "/content/images/screenshot-tools-chrome-comparison/featured.webp",
+    "image_url": "/content/images/cookies-quick-manager-chrome/featured.webp",
+    "featured_image": "/content/images/cookies-quick-manager-chrome/featured.webp",
     "reading_time": 8,
     "read_time": 8,
     "views": 0,
     "tags": [
-      "screenshot comparison",
-      "chrome screenshot",
-      "screen capture tools",
-      "screenshot extension"
+      "cookie manager",
+      "chrome extension",
+      "privacy",
+      "cookie management",
+      "browser cleanup"
     ],
     "keywords": [
-      "best chrome screenshot tools",
-      "screenshot tool comparison",
-      "chrome screenshot extension vs built-in",
-      "screen capture methods chrome"
+      "best cookie manager chrome",
+      "cookie quick manager chrome review",
+      "cookie auto delete extension",
+      "chrome cookie cleaner"
     ],
-    "canonicalPath": "/blog/screenshot-tools-chrome-comparison",
+    "canonicalPath": "/blog/cookies-quick-manager-chrome",
+    "updated_at": "2026-09-14T12:00:00.000+00:00"
+  },
+  {
+    "id": "contentsquare-extension-chrome",
+    "title": "Contentsquare Extension for Chrome: UX Analytics Review",
+    "slug": "contentsquare-extension-chrome",
+    "description": "Four UX analytics platforms tested on three real websites: data accuracy, recording quality, setup ease, and pricing compared side by side.",
+    "meta_description": "Contentsquare extension for Chrome reviewed against Hotjar, Crazy Egg, and Microsoft Clarity: heatmaps, session replays, and analytics depth.",
+    "excerpt": "Contentsquare, Hotjar, Crazy Egg, and Microsoft Clarity compared: heatmaps, session replays, pricing, and which UX analytics tool fits your team.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/contentsquare-extension-chrome/featured.webp",
+    "featured_image": "/content/images/contentsquare-extension-chrome/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "contentsquare",
+      "ux analytics",
+      "heatmap tool",
+      "session replay",
+      "chrome extension"
+    ],
+    "keywords": [
+      "contentsquare extension chrome review",
+      "best ux analytics tool",
+      "heatmap chrome extension",
+      "contentsquare vs hotjar vs crazy egg"
+    ],
+    "canonicalPath": "/blog/contentsquare-extension-chrome",
+    "updated_at": "2026-09-14T12:00:00.000+00:00"
+  },
+  {
+    "id": "cors-chrome-guide",
+    "title": "CORS Chrome Guide: 4 CORS Solutions for Web Development",
+    "slug": "cors-chrome-guide",
+    "description": "CORS errors across 10 API integrations: four approaches compared on setup time, reliability, security impact, and when each one fits best.",
+    "meta_description": "CORS in Chrome explained: 4 solutions (extensions, proxy, server config, dev tools) compared across 10 real API integration scenarios.",
+    "excerpt": "4 approaches to handling CORS in Chrome compared across 10 API integration scenarios: setup time, reliability, security tradeoffs, and which to use in 2026.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/cors-chrome-guide/featured.webp",
+    "featured_image": "/content/images/cors-chrome-guide/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "cors",
+      "chrome",
+      "web development",
+      "api",
+      "cross-origin"
+    ],
+    "keywords": [
+      "cors chrome",
+      "cors chrome extension",
+      "fix cors chrome",
+      "cross origin resource sharing chrome"
+    ],
+    "canonicalPath": "/blog/cors-chrome-guide",
+    "updated_at": "2026-09-14T12:00:00.000+00:00"
+  },
+  {
+    "id": "comodo-chrome-guide",
+    "title": "Comodo Chrome Review: vs Chrome, Brave, and Firefox (2026)",
+    "slug": "comodo-chrome-guide",
+    "description": "Comodo's Chromium browser against Chrome, Brave, and Firefox: page speed, memory, and whether the security trade-offs pay off.",
+    "meta_description": "Comodo Chrome compared with Google Chrome, Brave, and Firefox on security, speed, and memory usage: the full 2026 review, and where each browser wins.",
+    "excerpt": "Comodo Chrome compared with Google Chrome, Brave, and Firefox for security, speed, and memory usage: the full review, and where each browser wins.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/comodo-chrome-guide/featured.webp",
+    "featured_image": "/content/images/comodo-chrome-guide/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "comodo chrome",
+      "secure browser",
+      "browser comparison",
+      "online security",
+      "privacy browser"
+    ],
+    "keywords": [
+      "comodo chrome review",
+      "secure browser comparison",
+      "best security browser 2026",
+      "comodo vs brave vs chrome"
+    ],
+    "canonicalPath": "/blog/comodo-chrome-guide",
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "chrome-screen-capture-guide",
+    "title": "Chrome Screen Capture Guide: How to Take, Edit, and Manage Screenshots in 2026",
+    "slug": "chrome-screen-capture-guide",
+    "description": "Built-in tools, shortcuts, extensions, annotation: a complete screenshot workflow distilled from 10,000+ captures, designed to save you hours every week.",
+    "meta_description": "Complete Chrome screen capture guide covering built-in tools, keyboard shortcuts, extensions like Quick Screenshot Lite, annotation tips, and workflow...",
+    "excerpt": "Complete guide to screen capture in Chrome. From keyboard shortcuts to extensions, learn how to take, annotate, and manage screenshots efficiently with tips from real daily use.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/chrome-screen-capture-guide/featured.webp",
+    "featured_image": "/content/images/chrome-screen-capture-guide/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "screen capture",
+      "chrome screenshot",
+      "screenshot guide",
+      "screen capture tips"
+    ],
+    "keywords": [
+      "chrome screen capture guide",
+      "how to screenshot chrome",
+      "chrome screenshot tips",
+      "screen capture extension chrome"
+    ],
+    "canonicalPath": "/blog/chrome-screen-capture-guide",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
@@ -6397,33 +6581,94 @@
     "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
-    "id": "chrome-screen-capture-guide",
-    "title": "Chrome Screen Capture Guide: How to Take, Edit, and Manage Screenshots in 2026",
-    "slug": "chrome-screen-capture-guide",
-    "description": "Built-in tools, shortcuts, extensions, annotation: a complete screenshot workflow distilled from 10,000+ captures, designed to save you hours every week.",
-    "meta_description": "Complete Chrome screen capture guide covering built-in tools, keyboard shortcuts, extensions like Quick Screenshot Lite, annotation tips, and workflow...",
-    "excerpt": "Complete guide to screen capture in Chrome. From keyboard shortcuts to extensions, learn how to take, annotate, and manage screenshots efficiently with tips from real daily use.",
+    "id": "capture-screen-chrome-guide",
+    "title": "How to Capture Screen in Chrome: 4 Methods Compared",
+    "slug": "capture-screen-chrome-guide",
+    "description": "Four ways to screenshot in Chrome — shortcuts, DevTools, extension, and desktop app — compared for speed and quality, with a pick for each use case.",
+    "meta_description": "How to capture screen in Chrome with 4 methods: keyboard shortcuts, DevTools, Quick Screenshot Lite extension, and desktop apps compared for speed and quality.",
+    "excerpt": "4 ways to capture screen in Chrome: keyboard shortcuts, DevTools, Quick Screenshot Lite, and desktop apps — speed, quality, and features compared so you can choose the best method.",
     "published_at": "2026-06-06T10:00:00.000+00:00",
     "category": "Productivity & Tools",
     "author": "James Mitchell",
-    "image_url": "/content/images/chrome-screen-capture-guide/featured.webp",
-    "featured_image": "/content/images/chrome-screen-capture-guide/featured.webp",
+    "image_url": "/content/images/capture-screen-chrome-guide/featured.webp",
+    "featured_image": "/content/images/capture-screen-chrome-guide/featured.webp",
     "reading_time": 8,
     "read_time": 8,
     "views": 0,
     "tags": [
-      "screen capture",
+      "capture screen chrome",
       "chrome screenshot",
-      "screenshot guide",
-      "screen capture tips"
+      "how to screenshot chrome",
+      "screen capture methods"
     ],
     "keywords": [
-      "chrome screen capture guide",
-      "how to screenshot chrome",
-      "chrome screenshot tips",
-      "screen capture extension chrome"
+      "capture screen in chrome",
+      "how to screenshot in chrome",
+      "chrome screen capture",
+      "best way to screenshot chrome"
     ],
-    "canonicalPath": "/blog/chrome-screen-capture-guide",
+    "canonicalPath": "/blog/capture-screen-chrome-guide",
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
+  },
+  {
+    "id": "capture-scrolling-webpages-as-png-or-pdf",
+    "title": "How to Capture Scrolling Webpages as PNG or PDF: 4 Methods",
+    "slug": "capture-scrolling-webpages-as-png-or-pdf",
+    "description": "Full-page captures for docs and research: four scrolling-screenshot methods compared for quality, speed, and convenience.",
+    "meta_description": "How to capture scrolling webpages as PNG or PDF: 4 methods — Quick Screenshot Lite, Chrome Print to PDF, DevTools, and online tools compared.",
+    "excerpt": "4 methods to capture scrolling webpages as PNG or PDF: browser extensions, print to PDF, DevTools, and online tools — speed, quality, and file sizes compared.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/capture-scrolling-webpages-as-png-or-pdf/featured.webp",
+    "featured_image": "/content/images/capture-scrolling-webpages-as-png-or-pdf/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "full page screenshot",
+      "scrolling webpage capture",
+      "webpage to pdf",
+      "chrome screenshot"
+    ],
+    "keywords": [
+      "capture scrolling webpage png",
+      "capture full page screenshot chrome",
+      "webpage to pdf chrome",
+      "scrolling screenshot extension"
+    ],
+    "canonicalPath": "/blog/capture-scrolling-webpages-as-png-or-pdf",
+    "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "crystal-extension-chrome",
+    "title": "Crystal Extension for Chrome Review: 4 Tab Managers",
+    "slug": "crystal-extension-chrome",
+    "description": "Four tab managers compared: memory savings, session management, and real daily-workflow impact.",
+    "meta_description": "4 tab manager extensions compared, including Crystal, Workona, Toby, and OneTab: which one keeps your tabs under control.",
+    "excerpt": "Crystal, Workona, Toby, and OneTab compared for Chrome: memory savings, organization features, and which one actually keeps your tabs under control.",
+    "published_at": "2026-06-06T10:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/crystal-extension-chrome/featured.webp",
+    "featured_image": "/content/images/crystal-extension-chrome/featured.webp",
+    "reading_time": 8,
+    "read_time": 8,
+    "views": 0,
+    "tags": [
+      "crystal extension",
+      "tab manager",
+      "chrome productivity",
+      "tab organizer",
+      "browser organization"
+    ],
+    "keywords": [
+      "crystal extension chrome review",
+      "best tab manager chrome",
+      "chrome tab organizer extension",
+      "crystal vs workona vs toby"
+    ],
+    "canonicalPath": "/blog/crystal-extension-chrome",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
@@ -6487,251 +6732,6 @@
     ],
     "canonicalPath": "/blog/creating-financial-models-formula-builder-pro",
     "updated_at": "2026-09-14T12:00:00.000+00:00"
-  },
-  {
-    "id": "crystal-extension-chrome",
-    "title": "Crystal Extension for Chrome Review: 4 Tab Managers",
-    "slug": "crystal-extension-chrome",
-    "description": "Four tab managers compared: memory savings, session management, and real daily-workflow impact.",
-    "meta_description": "4 tab manager extensions compared, including Crystal, Workona, Toby, and OneTab: which one keeps your tabs under control.",
-    "excerpt": "Crystal, Workona, Toby, and OneTab compared for Chrome: memory savings, organization features, and which one actually keeps your tabs under control.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/crystal-extension-chrome/featured.webp",
-    "featured_image": "/content/images/crystal-extension-chrome/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "crystal extension",
-      "tab manager",
-      "chrome productivity",
-      "tab organizer",
-      "browser organization"
-    ],
-    "keywords": [
-      "crystal extension chrome review",
-      "best tab manager chrome",
-      "chrome tab organizer extension",
-      "crystal vs workona vs toby"
-    ],
-    "canonicalPath": "/blog/crystal-extension-chrome",
-    "updated_at": "2026-09-23T13:56:58.000+00:00"
-  },
-  {
-    "id": "cors-chrome-guide",
-    "title": "CORS Chrome Guide: 4 CORS Solutions for Web Development",
-    "slug": "cors-chrome-guide",
-    "description": "CORS errors across 10 API integrations: four approaches compared on setup time, reliability, security impact, and when each one fits best.",
-    "meta_description": "CORS in Chrome explained: 4 solutions (extensions, proxy, server config, dev tools) compared across 10 real API integration scenarios.",
-    "excerpt": "4 approaches to handling CORS in Chrome compared across 10 API integration scenarios: setup time, reliability, security tradeoffs, and which to use in 2026.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/cors-chrome-guide/featured.webp",
-    "featured_image": "/content/images/cors-chrome-guide/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "cors",
-      "chrome",
-      "web development",
-      "api",
-      "cross-origin"
-    ],
-    "keywords": [
-      "cors chrome",
-      "cors chrome extension",
-      "fix cors chrome",
-      "cross origin resource sharing chrome"
-    ],
-    "canonicalPath": "/blog/cors-chrome-guide",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
-  },
-  {
-    "id": "cookies-quick-manager-chrome",
-    "title": "Best Cookie Manager for Chrome: 4 Cookie Extensions Compared",
-    "slug": "cookies-quick-manager-chrome",
-    "description": "1,847 cookies and counting: four cookie managers tested on a 30-site rotation to see which one actually tames the clutter.",
-    "meta_description": "4 cookie manager extensions for Chrome compared: memory usage, features, and privacy protection, with setup steps for keeping your browsing clean.",
-    "excerpt": "4 cookie manager extensions for Chrome compared on memory usage, features, and privacy protection — and which one best keeps your browsing clean.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/cookies-quick-manager-chrome/featured.webp",
-    "featured_image": "/content/images/cookies-quick-manager-chrome/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "cookie manager",
-      "chrome extension",
-      "privacy",
-      "cookie management",
-      "browser cleanup"
-    ],
-    "keywords": [
-      "best cookie manager chrome",
-      "cookie quick manager chrome review",
-      "cookie auto delete extension",
-      "chrome cookie cleaner"
-    ],
-    "canonicalPath": "/blog/cookies-quick-manager-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
-  },
-  {
-    "id": "comodo-chrome-guide",
-    "title": "Comodo Chrome Review: vs Chrome, Brave, and Firefox (2026)",
-    "slug": "comodo-chrome-guide",
-    "description": "Comodo's Chromium browser against Chrome, Brave, and Firefox: page speed, memory, and whether the security trade-offs pay off.",
-    "meta_description": "Comodo Chrome compared with Google Chrome, Brave, and Firefox on security, speed, and memory usage: the full 2026 review, and where each browser wins.",
-    "excerpt": "Comodo Chrome compared with Google Chrome, Brave, and Firefox for security, speed, and memory usage: the full review, and where each browser wins.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/comodo-chrome-guide/featured.webp",
-    "featured_image": "/content/images/comodo-chrome-guide/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "comodo chrome",
-      "secure browser",
-      "browser comparison",
-      "online security",
-      "privacy browser"
-    ],
-    "keywords": [
-      "comodo chrome review",
-      "secure browser comparison",
-      "best security browser 2026",
-      "comodo vs brave vs chrome"
-    ],
-    "canonicalPath": "/blog/comodo-chrome-guide",
-    "updated_at": "2026-09-23T13:56:58.000+00:00"
-  },
-  {
-    "id": "contentsquare-extension-chrome",
-    "title": "Contentsquare Extension for Chrome: UX Analytics Review",
-    "slug": "contentsquare-extension-chrome",
-    "description": "Four UX analytics platforms tested on three real websites: data accuracy, recording quality, setup ease, and pricing compared side by side.",
-    "meta_description": "Contentsquare extension for Chrome reviewed against Hotjar, Crazy Egg, and Microsoft Clarity: heatmaps, session replays, and analytics depth.",
-    "excerpt": "Contentsquare, Hotjar, Crazy Egg, and Microsoft Clarity compared: heatmaps, session replays, pricing, and which UX analytics tool fits your team.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/contentsquare-extension-chrome/featured.webp",
-    "featured_image": "/content/images/contentsquare-extension-chrome/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "contentsquare",
-      "ux analytics",
-      "heatmap tool",
-      "session replay",
-      "chrome extension"
-    ],
-    "keywords": [
-      "contentsquare extension chrome review",
-      "best ux analytics tool",
-      "heatmap chrome extension",
-      "contentsquare vs hotjar vs crazy egg"
-    ],
-    "canonicalPath": "/blog/contentsquare-extension-chrome",
-    "updated_at": "2026-09-14T12:00:00.000+00:00"
-  },
-  {
-    "id": "capture-screen-chrome-guide",
-    "title": "How to Capture Screen in Chrome: 4 Methods Compared",
-    "slug": "capture-screen-chrome-guide",
-    "description": "Four ways to screenshot in Chrome — shortcuts, DevTools, extension, and desktop app — compared for speed and quality, with a pick for each use case.",
-    "meta_description": "How to capture screen in Chrome with 4 methods: keyboard shortcuts, DevTools, Quick Screenshot Lite extension, and desktop apps compared for speed and quality.",
-    "excerpt": "4 ways to capture screen in Chrome: keyboard shortcuts, DevTools, Quick Screenshot Lite, and desktop apps — speed, quality, and features compared so you can choose the best method.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/capture-screen-chrome-guide/featured.webp",
-    "featured_image": "/content/images/capture-screen-chrome-guide/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "capture screen chrome",
-      "chrome screenshot",
-      "how to screenshot chrome",
-      "screen capture methods"
-    ],
-    "keywords": [
-      "capture screen in chrome",
-      "how to screenshot in chrome",
-      "chrome screen capture",
-      "best way to screenshot chrome"
-    ],
-    "canonicalPath": "/blog/capture-screen-chrome-guide",
-    "updated_at": "2026-09-23T13:54:38.000+00:00"
-  },
-  {
-    "id": "capture-scrolling-webpages-as-png-or-pdf",
-    "title": "How to Capture Scrolling Webpages as PNG or PDF: 4 Methods",
-    "slug": "capture-scrolling-webpages-as-png-or-pdf",
-    "description": "Full-page captures for docs and research: four scrolling-screenshot methods compared for quality, speed, and convenience.",
-    "meta_description": "How to capture scrolling webpages as PNG or PDF: 4 methods — Quick Screenshot Lite, Chrome Print to PDF, DevTools, and online tools compared.",
-    "excerpt": "4 methods to capture scrolling webpages as PNG or PDF: browser extensions, print to PDF, DevTools, and online tools — speed, quality, and file sizes compared.",
-    "published_at": "2026-06-06T10:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/capture-scrolling-webpages-as-png-or-pdf/featured.webp",
-    "featured_image": "/content/images/capture-scrolling-webpages-as-png-or-pdf/featured.webp",
-    "reading_time": 8,
-    "read_time": 8,
-    "views": 0,
-    "tags": [
-      "full page screenshot",
-      "scrolling webpage capture",
-      "webpage to pdf",
-      "chrome screenshot"
-    ],
-    "keywords": [
-      "capture scrolling webpage png",
-      "capture full page screenshot chrome",
-      "webpage to pdf chrome",
-      "scrolling screenshot extension"
-    ],
-    "canonicalPath": "/blog/capture-scrolling-webpages-as-png-or-pdf",
-    "updated_at": "2026-09-23T13:56:58.000+00:00"
-  },
-  {
-    "id": "bc16d225-475e-486e-b3cb-5b66a0b0a8fd",
-    "title": "Automating Business Reports with Formula Builder: A Practical Guide",
-    "slug": "automating-business-reports-with-formula-builder",
-    "description": "From spreadsheet drudgery to one-click reports: how Formula Builder Pro stacks up against manual Excel work, and the workflow that makes it sing.",
-    "meta_description": "Automating business reports with Formula Builder Pro compared with manual Excel work: workflow, output quality, and the companion tools that fill the gaps.",
-    "excerpt": "Automating business reports with Formula Builder Pro: how it compares with manual Excel work, which companion extensions fill the gaps, and whether it saves enough time to matter.",
-    "published_at": "2026-06-06T10:00:00.000000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
-    "featured_image": "/content/images/automating-business-reports-with-formula-builder/featured.webp",
-    "reading_time": 7,
-    "read_time": 7,
-    "views": 0,
-    "tags": [
-      "formula builder",
-      "business reports",
-      "automation",
-      "Chrome extensions"
-    ],
-    "keywords": [
-      "Automating business reports with Formula Builder",
-      "Formula Builder Pro",
-      "automate reports Chrome",
-      "business reporting tools"
-    ],
-    "canonicalPath": "/blog/automating-business-reports-with-formula-builder",
-    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "babd4e43-164e-4b31-9b6f-af21017f11f5",
@@ -7002,6 +7002,34 @@
     "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
+    "id": "best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
+    "title": "Best Free Chrome Extensions: The 2026 Toolkit You Actually Need",
+    "slug": "best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
+    "description": "Forty-seven tabs, autoplay chaos, forgotten passwords: the free toolkit that tames a messy browser instead of adding to it.",
+    "meta_description": "A curated toolkit of genuinely free Chrome extensions for 2026, picked to cut through tab chaos and browser clutter rather than add to it.",
+    "excerpt": "Discover the curated set of free Chrome extensions that actually make a difference — tab management, dark mode, security, and more.",
+    "published_at": "2026-06-05T12:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-free-chrome-extensions-the-2026-toolkit-you-actually-need/featured.webp",
+    "featured_image": "/content/images/best-free-chrome-extensions-the-2026-toolkit-you-actually-need/featured.webp",
+    "reading_time": 9,
+    "read_time": 9,
+    "views": 0,
+    "tags": [
+      "best free chrome extensions",
+      "productivity",
+      "browser tools"
+    ],
+    "keywords": [
+      "browser extensions",
+      "premium tools",
+      "productivity"
+    ],
+    "canonicalPath": "/blog/best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
+    "updated_at": "2026-09-23T13:54:38.000+00:00"
+  },
+  {
     "id": "chrome-popup-blocker-master-guide",
     "title": "Chrome Popup Blocker Master Guide: Kill Intrusive Ads in 2026",
     "slug": "chrome-popup-blocker-master-guide",
@@ -7030,34 +7058,6 @@
     ],
     "canonicalPath": "/blog/chrome-popup-blocker-master-guide",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
-  },
-  {
-    "id": "best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
-    "title": "Best Free Chrome Extensions: The 2026 Toolkit You Actually Need",
-    "slug": "best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
-    "description": "Forty-seven tabs, autoplay chaos, forgotten passwords: the free toolkit that tames a messy browser instead of adding to it.",
-    "meta_description": "A curated toolkit of genuinely free Chrome extensions for 2026, picked to cut through tab chaos and browser clutter rather than add to it.",
-    "excerpt": "Discover the curated set of free Chrome extensions that actually make a difference — tab management, dark mode, security, and more.",
-    "published_at": "2026-06-05T12:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/best-free-chrome-extensions-the-2026-toolkit-you-actually-need/featured.webp",
-    "featured_image": "/content/images/best-free-chrome-extensions-the-2026-toolkit-you-actually-need/featured.webp",
-    "reading_time": 9,
-    "read_time": 9,
-    "views": 0,
-    "tags": [
-      "best free chrome extensions",
-      "productivity",
-      "browser tools"
-    ],
-    "keywords": [
-      "browser extensions",
-      "premium tools",
-      "productivity"
-    ],
-    "canonicalPath": "/blog/best-free-chrome-extensions-the-2026-toolkit-you-actually-need",
-    "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
     "id": "8ff0d74e-f783-4951-a579-bf707245aa98",
@@ -13741,37 +13741,36 @@
     "updated_at": "2026-09-23T13:54:38.000+00:00"
   },
   {
-    "id": "fee36c91-689d-4681-ac15-e28652aba2c6",
-    "title": "Best YouTube Downloader Chrome Extension 2026: Safe & Fast",
-    "slug": "best-youtube-downloader-chrome-extension-2026",
-    "description": "Download YouTube videos and MP3s safely from Chrome in 2026: 7 free extensions compared for audio quality, download speed, and safety.",
-    "meta_description": "Download YouTube videos and MP3s safely from Chrome in 2026: 7 free extensions compared for audio quality, download speed, and safety.",
-    "excerpt": "Download YouTube videos and MP3s safely from Chrome in 2026: 7 free extensions compared for audio quality, download speed, and safety.",
+    "id": "42f891f9-d3b7-4612-bb95-dd620b54af60",
+    "title": "Ad Blocker for Android Chrome: Complete Guide 2026",
+    "slug": "adblock-chrome-android-complete-guide-2026",
+    "description": "A 2026 guide to blocking ads on Android Chrome — Kiwi, Quetta, Firefox, DNS, and more — with setup steps for each method.",
+    "meta_description": "Ad Blocker for Android Chrome: Complete Guide 2026 — compare Kiwi, Quetta, Firefox, DNS, and other ways to block ads, with setup steps for each method.",
+    "excerpt": "A 2026 guide to blocking ads on Android Chrome — Kiwi, Quetta, Firefox, DNS, and more — with setup steps for each method.",
     "published_at": "2026-03-31T08:51:05.000+00:00",
-    "category": "Media & Downloads",
+    "category": "Productivity & Tools",
     "author": "James Mitchell",
-    "image_url": "/content/images/best-youtube-downloader-chrome-extension-2026/featured.webp",
-    "featured_image": "/content/images/best-youtube-downloader-chrome-extension-2026/featured.webp",
-    "reading_time": 11,
-    "read_time": 11,
+    "image_url": "/content/images/adblock-chrome-android-complete-guide-2026/featured.webp",
+    "featured_image": "/content/images/adblock-chrome-android-complete-guide-2026/featured.webp",
+    "reading_time": 27,
+    "read_time": 27,
     "views": 0,
     "tags": [
-      "youtube",
-      "downloader",
-      "mp3",
+      "adblock",
+      "android",
       "chrome",
-      "extension",
-      "free",
-      "mp4"
+      "mobile",
+      "ublock",
+      "kiwi"
     ],
     "keywords": [
-      "youtube downloader chrome extension",
-      "youtube to mp3 chrome extension 2026",
-      "download youtube video chrome",
-      "chrome extension youtube mp3 320kbps",
-      "safe youtube downloader chrome"
+      "adblock chrome android",
+      "ad blocker android chrome",
+      "best ad blocker android chrome 2026",
+      "ublock origin android",
+      "chrome android adblock no root"
     ],
-    "canonicalPath": "/blog/best-youtube-downloader-chrome-extension-2026",
+    "canonicalPath": "/blog/adblock-chrome-android-complete-guide-2026",
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
@@ -13842,36 +13841,37 @@
     "updated_at": "2026-09-23T13:56:58.000+00:00"
   },
   {
-    "id": "42f891f9-d3b7-4612-bb95-dd620b54af60",
-    "title": "Ad Blocker for Android Chrome: Complete Guide 2026",
-    "slug": "adblock-chrome-android-complete-guide-2026",
-    "description": "A 2026 guide to blocking ads on Android Chrome — Kiwi, Quetta, Firefox, DNS, and more — with setup steps for each method.",
-    "meta_description": "Ad Blocker for Android Chrome: Complete Guide 2026 — compare Kiwi, Quetta, Firefox, DNS, and other ways to block ads, with setup steps for each method.",
-    "excerpt": "A 2026 guide to blocking ads on Android Chrome — Kiwi, Quetta, Firefox, DNS, and more — with setup steps for each method.",
+    "id": "fee36c91-689d-4681-ac15-e28652aba2c6",
+    "title": "Best YouTube Downloader Chrome Extension 2026: Safe & Fast",
+    "slug": "best-youtube-downloader-chrome-extension-2026",
+    "description": "Download YouTube videos and MP3s safely from Chrome in 2026: 7 free extensions compared for audio quality, download speed, and safety.",
+    "meta_description": "Download YouTube videos and MP3s safely from Chrome in 2026: 7 free extensions compared for audio quality, download speed, and safety.",
+    "excerpt": "Download YouTube videos and MP3s safely from Chrome in 2026: 7 free extensions compared for audio quality, download speed, and safety.",
     "published_at": "2026-03-31T08:51:05.000+00:00",
-    "category": "Productivity & Tools",
+    "category": "Media & Downloads",
     "author": "James Mitchell",
-    "image_url": "/content/images/adblock-chrome-android-complete-guide-2026/featured.webp",
-    "featured_image": "/content/images/adblock-chrome-android-complete-guide-2026/featured.webp",
-    "reading_time": 27,
-    "read_time": 27,
+    "image_url": "/content/images/best-youtube-downloader-chrome-extension-2026/featured.webp",
+    "featured_image": "/content/images/best-youtube-downloader-chrome-extension-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
     "views": 0,
     "tags": [
-      "adblock",
-      "android",
+      "youtube",
+      "downloader",
+      "mp3",
       "chrome",
-      "mobile",
-      "ublock",
-      "kiwi"
+      "extension",
+      "free",
+      "mp4"
     ],
     "keywords": [
-      "adblock chrome android",
-      "ad blocker android chrome",
-      "best ad blocker android chrome 2026",
-      "ublock origin android",
-      "chrome android adblock no root"
+      "youtube downloader chrome extension",
+      "youtube to mp3 chrome extension 2026",
+      "download youtube video chrome",
+      "chrome extension youtube mp3 320kbps",
+      "safe youtube downloader chrome"
     ],
-    "canonicalPath": "/blog/adblock-chrome-android-complete-guide-2026",
+    "canonicalPath": "/blog/best-youtube-downloader-chrome-extension-2026",
     "updated_at": "2026-09-14T12:00:00.000+00:00"
   },
   {
