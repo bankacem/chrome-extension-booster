@@ -21196,5 +21196,150 @@
     ],
     "canonicalPath": "/blog/internet-download-manager-extension",
     "updated_at": "2026-09-23T13:56:58.000+00:00"
+  },
+  {
+    "id": "37209d2f-f1c2-4f59-b142-c15175c6b11e",
+    "title": "Gemini vs ChatGPT vs Claude in Chrome: The Agentic AI Browser Battle (Nov 2026)",
+    "slug": "gemini-vs-chatgpt-vs-claude-chrome-ai-assistants-2026",
+    "description": "Gemini vs ChatGPT vs Claude in Chrome compared in November 2026: what each AI assistant can read, what it can do to your tabs, what it costs, and which one I kept installed.",
+    "meta_description": "Gemini, ChatGPT and Claude all work inside Chrome now. I tested all three for three weeks: tab reading, acting on pages, pricing, permissions, and which one I kept.",
+    "excerpt": "Three AI assistants now live inside Chrome and all three can read your tabs and act on pages. I ran Gemini, the ChatGPT extension, and Claude in Chrome side by side for three weeks to find out which one is actually worth your toolbar.",
+    "published_at": "2026-11-06T22:00:00.000+00:00",
+    "category": "AI Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/gemini-vs-chatgpt-vs-claude-chrome-ai-assistants-2026/featured.webp",
+    "featured_image": "/content/images/gemini-vs-chatgpt-vs-claude-chrome-ai-assistants-2026/featured.webp",
+    "reading_time": 14,
+    "read_time": 14,
+    "views": 0,
+    "tags": [
+      "Gemini in Chrome",
+      "ChatGPT Chrome extension",
+      "Claude in Chrome"
+    ],
+    "keywords": [
+      "gemini vs chatgpt vs claude chrome",
+      "ai assistant chrome extension 2026",
+      "chatgpt chrome extension work mode",
+      "claude in chrome extension"
+    ],
+    "canonicalPath": "/blog/gemini-vs-chatgpt-vs-claude-chrome-ai-assistants-2026",
+    "updated_at": "2026-11-06T22:00:00.000+00:00"
+  },
+  {
+    "id": "296b854d-f87b-40fe-be3a-c5b3936c0280",
+    "title": "Todoist for Chrome 2026: The Task Manager That Lives in Your Browser",
+    "slug": "todoist-chrome-extension-2026-guide",
+    "description": "Todoist for Chrome in 2026: how the extension captures tasks from any page, what the free plan actually covers, how it compares to TickTick and Microsoft To Do, and whether Pro is worth $5 a month.",
+    "meta_description": "Todoist for Chrome 2026: one-click task capture from any page, free plan limits, Pro pricing, and how it compares to TickTick and Microsoft To Do.",
+    "excerpt": "I ran my entire to-do list through the Todoist Chrome extension for a month: capturing tasks from web pages, planning days from the toolbar, and hitting the free plan wall. Here is where it earns its place and where it asks for money.",
+    "published_at": "2026-11-06T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/todoist-chrome-extension-2026-guide/featured.webp",
+    "featured_image": "/content/images/todoist-chrome-extension-2026-guide/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "Todoist Chrome extension",
+      "task manager Chrome",
+      "to-do list extension"
+    ],
+    "keywords": [
+      "todoist chrome extension 2026",
+      "todoist for chrome guide",
+      "best to-do list chrome extension",
+      "todoist vs ticktick chrome"
+    ],
+    "canonicalPath": "/blog/todoist-chrome-extension-2026-guide",
+    "updated_at": "2026-11-06T22:00:00.000+00:00"
+  },
+  {
+    "id": "72587031-5ea4-489a-b5a5-64ec30b91177",
+    "title": "LeechBlock NG vs StayFocusd vs BlockSite: Which Distraction Blocker Actually Works",
+    "slug": "leechblock-vs-stayfocusd-vs-blocksite-2026",
+    "description": "LeechBlock NG vs StayFocusd vs BlockSite in 2026: schedules, time limits, pricing, permissions and which distraction blocker actually keeps you off time-wasting sites.",
+    "meta_description": "LeechBlock NG vs StayFocusd vs BlockSite compared in 2026: free vs freemium, schedules vs time budgets, permissions, and which blocker I kept installed.",
+    "excerpt": "I blocked my own worst sites three different ways for a month: LeechBlock NG, StayFocusd and BlockSite. One of them is free forever, one of them watches what you type, and one of them quietly capped its free tier at three sites.",
+    "published_at": "2026-11-06T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/leechblock-vs-stayfocusd-vs-blocksite-2026/featured.webp",
+    "featured_image": "/content/images/leechblock-vs-stayfocusd-vs-blocksite-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "website blocker Chrome",
+      "LeechBlock NG",
+      "StayFocusd vs BlockSite"
+    ],
+    "keywords": [
+      "leechblock vs stayfocusd vs blocksite",
+      "best website blocker chrome 2026",
+      "block distracting websites chrome",
+      "stayfocusd alternative"
+    ],
+    "canonicalPath": "/blog/leechblock-vs-stayfocusd-vs-blocksite-2026",
+    "updated_at": "2026-11-06T22:00:00.000+00:00"
+  },
+  {
+    "id": "ae63140e-bcdd-4895-b85d-e8bed045d57e",
+    "title": "5 Underrated Chrome Extensions Worth Installing in November 2026",
+    "slug": "underrated-chrome-extensions-2026",
+    "description": "Five underrated Chrome extensions tested in November 2026: Bookmanize, Screen Shader, Power Thesaurus, SwiftRead and Video Speed Controller — what each one does, what it costs, and which ones are worth keeping.",
+    "meta_description": "Five underrated Chrome extensions worth installing in November 2026: Bookmanize, Screen Shader, Power Thesaurus, SwiftRead and Video Speed Controller, tested for a month.",
+    "excerpt": "I installed five Chrome extensions nobody talks about — Bookmanize, Screen Shader, Power Thesaurus, SwiftRead and Video Speed Controller — and used them for a month. One of them has not been updated since 2024. The other four earned a permanent place in my toolbar.",
+    "published_at": "2026-11-06T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/underrated-chrome-extensions-2026/featured.webp",
+    "featured_image": "/content/images/underrated-chrome-extensions-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "underrated Chrome extensions",
+      "hidden Chrome extensions",
+      "best Chrome extensions 2026"
+    ],
+    "keywords": [
+      "underrated chrome extensions 2026",
+      "bookmanize chrome extension",
+      "swiftread chrome extension",
+      "screen shader chrome"
+    ],
+    "canonicalPath": "/blog/underrated-chrome-extensions-2026",
+    "updated_at": "2026-11-06T22:00:00.000+00:00"
+  },
+  {
+    "id": "8f6eced2-279b-4078-99e3-e831b85cd177",
+    "title": "Raindrop.io vs Notion Web Clipper vs Obsidian Web Clipper: The Save-For-Later Showdown",
+    "slug": "raindrop-vs-notion-vs-obsidian-web-clipper-2026",
+    "description": "Raindrop.io vs Notion Web Clipper vs Obsidian Web Clipper in 2026: capture quality, search, pricing, and which save-for-later tool still has your links a month later.",
+    "meta_description": "Raindrop.io vs Notion Web Clipper vs Obsidian Web Clipper in 2026: which save-for-later tool keeps your links, which keeps only a title, and which one I kept.",
+    "excerpt": "I saved the same fifty articles, videos and pages three ways — Raindrop.io, Notion Web Clipper and Obsidian Web Clipper — and then tried to find them again a month later. One of them kept everything. One of them kept almost nothing. One of them asked me to build my own filing system first.",
+    "published_at": "2026-11-06T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/raindrop-vs-notion-vs-obsidian-web-clipper-2026/featured.webp",
+    "featured_image": "/content/images/raindrop-vs-notion-vs-obsidian-web-clipper-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "web clipper Chrome",
+      "Raindrop.io vs Notion",
+      "Obsidian Web Clipper"
+    ],
+    "keywords": [
+      "raindrop vs notion vs obsidian web clipper",
+      "best web clipper chrome 2026",
+      "save for later chrome extension",
+      "raindrop.io chrome extension"
+    ],
+    "canonicalPath": "/blog/raindrop-vs-notion-vs-obsidian-web-clipper-2026",
+    "updated_at": "2026-11-06T22:00:00.000+00:00"
   }
 ]

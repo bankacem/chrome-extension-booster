@@ -48,6 +48,8 @@ Second, anything purely visual is invisible to the summarizer. A cooking video's
 
 The established names in this space — Eightify is the best-known, with Glasp and several AI sidebars offering video summarization as a feature — converge on a similar feature set:
 
+**Get it:** [Eightify on the Chrome Web Store](https://chromewebstore.google.com/detail/eightify-ai-youtube-summa/cdcpabkolgalpgeingbdcebojebfelgb)
+
 **Timestamped key points.** The useful output isn't a paragraph; it's bullet points linked to moments in the video. This is the killer feature: read the summary, click the timestamp on the one point that matters, watch ninety seconds instead of twenty minutes.
 
 **Chapter-style breakdowns.** Longer videos get structured into sections, which helps you navigate even when you do watch.

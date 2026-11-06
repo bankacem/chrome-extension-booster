@@ -45,6 +45,8 @@ It's also the most popular of the three by a wide margin — millions of users a
 
 The free tier is functional for light use. Paid tiers unlock higher limits and the premium models. If you're the kind of person who has opinions about which AI model is best for which task, Sider is probably already the one you want.
 
+**Get it:** [Sider on the Chrome Web Store](https://chromewebstore.google.com/detail/sider-chat-with-all-ai-gp/difoiogjjojoaoomphldepapgpbgkhkb)
+
 ## Monica: The Polished All-Rounder
 
 Monica takes a different approach: instead of emphasizing model choice, it emphasizes workflow polish. The writing tools are the standout — drafting, rewriting, tone adjustment, and translation are all smooth and well-integrated with whatever page you're on. It also handles the standard sidebar duties (summaries, Q&A, image tools) competently.
@@ -52,6 +54,8 @@ Monica takes a different approach: instead of emphasizing model choice, it empha
 Where Monica earns its keep is for people whose browser work is mostly composition: emails, social posts, documents, messages. The interface feels designed rather than assembled, and the free tier covers enough to evaluate it properly. Paid plans follow the usual freemium ladder.
 
 If Sider is the tool for model nerds, Monica is the tool for people who just want the thing to work nicely. There's no shame in that preference — it's probably the right one for most users.
+
+**Get it:** [Monica on the Chrome Web Store](https://chromewebstore.google.com/detail/monica-all-in-one-ai-assi/ofpnmcalabcbjgholdjcjblkibolbppb)
 
 ## Merlin: The Research Lean
 

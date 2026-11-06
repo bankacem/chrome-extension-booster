@@ -34,7 +34,9 @@ updated_at: '2026-10-16T22:00:00.000+00:00'
 
 Most AI browser extensions are chatbots bolted onto a sidebar. Perplexity's Chrome extension is something narrower and, for a lot of people, more useful: it brings Perplexity's answer engine — the one that replies with inline citations instead of confident paragraphs — directly to whatever page you're reading.
 
-Install it and you get a small icon in your toolbar. Click it on any article, product page, or documentation site and it can summarize the page, answer questions about its contents, and pull in outside context with sources you can actually click. The difference from a generic AI sidebar is the citation habit: Perplexity was built as an answer engine first, so its responses link back to where each claim came from. That doesn't make it infallible, but it makes it checkable, which is the more important property.
+Install it and you get a small icon in your toolbar. Click it on any article, product page, or documentation site and it can summarize the page, answer questions about its contents, and pull in outside context with sources you can actually click.
+
+**Get it:** [perplexity.ai](https://perplexity.ai) — the official site links to the Chrome extension, or search "Perplexity" directly on the Chrome Web Store. The difference from a generic AI sidebar is the citation habit: Perplexity was built as an answer engine first, so its responses link back to where each claim came from. That doesn't make it infallible, but it makes it checkable, which is the more important property.
 
 ## What It Does Well
 
