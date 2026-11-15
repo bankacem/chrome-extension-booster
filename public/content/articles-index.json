@@ -1,92 +1,5 @@
 [
   {
-    "id": "5a2e84ff-b2e4-4728-8132-66f4f959d1ef",
-    "title": "Best Translate Extensions for Chrome in 2026: Google Translate vs DeepL vs Mate Translate vs ImTranslator",
-    "slug": "best-translate-extensions-chrome-2026",
-    "description": "Best translate extensions for Chrome in 2026: Google Translate vs DeepL vs Mate Translate vs ImTranslator compared on language coverage, translation quality, free limits, store ratings and full-page translation, after two weeks of real testing.",
-    "meta_description": "I tested Google Translate, DeepL, Mate Translate and ImTranslator for two weeks. Here is which one translates naturally, which one still does full pages, and which one to avoid in 2026.",
-    "excerpt": "I spent two weeks translating real pages, PDFs and subtitles with four Chrome translation extensions to find out which one reads naturally, which one still translates a whole page, and which one has quietly fallen apart.",
-    "published_at": "2026-11-13T22:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/best-translate-extensions-chrome-2026/featured.webp",
-    "featured_image": "/content/images/best-translate-extensions-chrome-2026/featured.webp",
-    "reading_time": 18,
-    "read_time": 18,
-    "views": 0,
-    "tags": [
-      "Translation",
-      "Chrome extensions",
-      "Language tools"
-    ],
-    "keywords": [
-      "best translate extensions chrome 2026",
-      "google translate vs deepl chrome extension",
-      "deepl vs mate translate",
-      "chrome translate extension full page"
-    ],
-    "canonicalPath": "/blog/best-translate-extensions-chrome-2026",
-    "updated_at": "2026-11-13T22:00:00.000+00:00"
-  },
-  {
-    "id": "124c9b2b-09ff-4a35-aee6-cad96c9aa9f9",
-    "title": "Best To-Do & Task Manager Extensions for Chrome in 2026: Todoist vs TickTick vs Any.do vs Google Keep",
-    "slug": "best-todo-task-manager-extensions-chrome-2026",
-    "description": "Best to-do and task manager extensions for Chrome in 2026: Todoist vs TickTick vs Any.do vs Google Keep compared on free limits, pricing after the 2026 price rises, store ratings, reminders and sync, after three weeks of real testing.",
-    "meta_description": "I tested Todoist, TickTick, Any.do and Google Keep for three weeks. Here is which task manager is actually free, which one raised its price in 2026, and which one I kept.",
-    "excerpt": "I ran four to-do extensions through three weeks of real task lists, deadlines and shared projects to find out which one actually gets things done, which one raised its price in 2026, and which one is a clipper pretending to be a task manager.",
-    "published_at": "2026-11-13T22:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/best-todo-task-manager-extensions-chrome-2026/featured.webp",
-    "featured_image": "/content/images/best-todo-task-manager-extensions-chrome-2026/featured.webp",
-    "reading_time": 20,
-    "read_time": 20,
-    "views": 0,
-    "tags": [
-      "Task managers",
-      "Chrome extensions",
-      "Productivity"
-    ],
-    "keywords": [
-      "best todo extensions chrome 2026",
-      "todoist vs ticktick vs any.do",
-      "best task manager chrome extension",
-      "chrome to do list extension"
-    ],
-    "canonicalPath": "/blog/best-todo-task-manager-extensions-chrome-2026",
-    "updated_at": "2026-11-13T22:00:00.000+00:00"
-  },
-  {
-    "id": "9023a2ec-9a41-4950-ba3f-ad0b002eecfc",
-    "title": "Best Focus & Productivity Extensions for Chrome in 2026: BlockSite vs Forest vs StayFocusd vs LeechBlock NG",
-    "slug": "best-focus-productivity-extensions-chrome-2026",
-    "description": "Best focus and productivity extensions for Chrome in 2026: BlockSite vs Forest vs StayFocusd vs LeechBlock NG compared on blocking power, free limits, pricing, store ratings and privacy, after two weeks of real testing.",
-    "meta_description": "I tested BlockSite, Forest, StayFocusd and LeechBlock NG for two weeks. Here is which focus extension actually blocks distractions, which one is free forever, and which one to avoid in 2026.",
-    "excerpt": "I spent two weeks letting four focus extensions block my distractions, kill my trees and lock me out of my own habits to find out which one actually keeps you working, which one sells your attention back to you, and which one is free forever.",
-    "published_at": "2026-11-13T22:00:00.000+00:00",
-    "category": "Productivity & Tools",
-    "author": "James Mitchell",
-    "image_url": "/content/images/best-focus-productivity-extensions-chrome-2026/featured.webp",
-    "featured_image": "/content/images/best-focus-productivity-extensions-chrome-2026/featured.webp",
-    "reading_time": 20,
-    "read_time": 20,
-    "views": 0,
-    "tags": [
-      "Focus tools",
-      "Chrome extensions",
-      "Productivity"
-    ],
-    "keywords": [
-      "best focus extensions chrome 2026",
-      "blocksite vs forest vs stayfocusd",
-      "best website blocker chrome",
-      "chrome productivity extension pomodoro"
-    ],
-    "canonicalPath": "/blog/best-focus-productivity-extensions-chrome-2026",
-    "updated_at": "2026-11-13T22:00:00.000+00:00"
-  },
-  {
     "id": "b2aff810-19bb-495b-979e-428bd38e0673",
     "title": "Best YouTube Enhancer Extensions for Chrome in 2026: Return YouTube Dislike vs SponsorBlock vs Enhancer for YouTube vs Magic Actions",
     "slug": "best-youtube-enhancer-extensions-chrome-2026",
@@ -142,6 +55,93 @@
       "best gmail chrome extension"
     ],
     "canonicalPath": "/blog/best-email-client-extensions-chrome-2026",
+    "updated_at": "2026-11-13T22:00:00.000+00:00"
+  },
+  {
+    "id": "9023a2ec-9a41-4950-ba3f-ad0b002eecfc",
+    "title": "Best Focus & Productivity Extensions for Chrome in 2026: BlockSite vs Forest vs StayFocusd vs LeechBlock NG",
+    "slug": "best-focus-productivity-extensions-chrome-2026",
+    "description": "Best focus and productivity extensions for Chrome in 2026: BlockSite vs Forest vs StayFocusd vs LeechBlock NG compared on blocking power, free limits, pricing, store ratings and privacy, after two weeks of real testing.",
+    "meta_description": "I tested BlockSite, Forest, StayFocusd and LeechBlock NG for two weeks. Here is which focus extension actually blocks distractions, which one is free forever, and which one to avoid in 2026.",
+    "excerpt": "I spent two weeks letting four focus extensions block my distractions, kill my trees and lock me out of my own habits to find out which one actually keeps you working, which one sells your attention back to you, and which one is free forever.",
+    "published_at": "2026-11-13T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-focus-productivity-extensions-chrome-2026/featured.webp",
+    "featured_image": "/content/images/best-focus-productivity-extensions-chrome-2026/featured.webp",
+    "reading_time": 20,
+    "read_time": 20,
+    "views": 0,
+    "tags": [
+      "Focus tools",
+      "Chrome extensions",
+      "Productivity"
+    ],
+    "keywords": [
+      "best focus extensions chrome 2026",
+      "blocksite vs forest vs stayfocusd",
+      "best website blocker chrome",
+      "chrome productivity extension pomodoro"
+    ],
+    "canonicalPath": "/blog/best-focus-productivity-extensions-chrome-2026",
+    "updated_at": "2026-11-13T22:00:00.000+00:00"
+  },
+  {
+    "id": "5a2e84ff-b2e4-4728-8132-66f4f959d1ef",
+    "title": "Best Translate Extensions for Chrome in 2026: Google Translate vs DeepL vs Mate Translate vs ImTranslator",
+    "slug": "best-translate-extensions-chrome-2026",
+    "description": "Best translate extensions for Chrome in 2026: Google Translate vs DeepL vs Mate Translate vs ImTranslator compared on language coverage, translation quality, free limits, store ratings and full-page translation, after two weeks of real testing.",
+    "meta_description": "I tested Google Translate, DeepL, Mate Translate and ImTranslator for two weeks. Here is which one translates naturally, which one still does full pages, and which one to avoid in 2026.",
+    "excerpt": "I spent two weeks translating real pages, PDFs and subtitles with four Chrome translation extensions to find out which one reads naturally, which one still translates a whole page, and which one has quietly fallen apart.",
+    "published_at": "2026-11-13T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-translate-extensions-chrome-2026/featured.webp",
+    "featured_image": "/content/images/best-translate-extensions-chrome-2026/featured.webp",
+    "reading_time": 18,
+    "read_time": 18,
+    "views": 0,
+    "tags": [
+      "Translation",
+      "Chrome extensions",
+      "Language tools"
+    ],
+    "keywords": [
+      "best translate extensions chrome 2026",
+      "google translate vs deepl chrome extension",
+      "deepl vs mate translate",
+      "chrome translate extension full page"
+    ],
+    "canonicalPath": "/blog/best-translate-extensions-chrome-2026",
+    "updated_at": "2026-11-13T22:00:00.000+00:00"
+  },
+  {
+    "id": "124c9b2b-09ff-4a35-aee6-cad96c9aa9f9",
+    "title": "Best To-Do & Task Manager Extensions for Chrome in 2026: Todoist vs TickTick vs Any.do vs Google Keep",
+    "slug": "best-todo-task-manager-extensions-chrome-2026",
+    "description": "Best to-do and task manager extensions for Chrome in 2026: Todoist vs TickTick vs Any.do vs Google Keep compared on free limits, pricing after the 2026 price rises, store ratings, reminders and sync, after three weeks of real testing.",
+    "meta_description": "I tested Todoist, TickTick, Any.do and Google Keep for three weeks. Here is which task manager is actually free, which one raised its price in 2026, and which one I kept.",
+    "excerpt": "I ran four to-do extensions through three weeks of real task lists, deadlines and shared projects to find out which one actually gets things done, which one raised its price in 2026, and which one is a clipper pretending to be a task manager.",
+    "published_at": "2026-11-13T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-todo-task-manager-extensions-chrome-2026/featured.webp",
+    "featured_image": "/content/images/best-todo-task-manager-extensions-chrome-2026/featured.webp",
+    "reading_time": 20,
+    "read_time": 20,
+    "views": 0,
+    "tags": [
+      "Task managers",
+      "Chrome extensions",
+      "Productivity"
+    ],
+    "keywords": [
+      "best todo extensions chrome 2026",
+      "todoist vs ticktick vs any.do",
+      "best task manager chrome extension",
+      "chrome to do list extension"
+    ],
+    "canonicalPath": "/blog/best-todo-task-manager-extensions-chrome-2026",
     "updated_at": "2026-11-13T22:00:00.000+00:00"
   },
   {
