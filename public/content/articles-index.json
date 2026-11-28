@@ -1,5 +1,125 @@
 [
   {
+    "id": "3a7f2c91-4b8d-4e6a-9f1c-8d2e5a6b7c90",
+    "title": "Best Bookmark Manager Extensions for Chrome in 2026: Raindrop.io vs Toby vs Bookmark Sidebar vs Diigo",
+    "slug": "best-bookmark-manager-extensions-chrome-2026",
+    "description": "Best bookmark manager extensions for Chrome in 2026: Raindrop.io vs Toby vs Bookmark Sidebar vs Diigo compared on features, sync, search, pricing and maintenance, after two weeks of real testing.",
+    "meta_description": "I tested Raindrop.io, Toby, Bookmark Sidebar and Diigo for two weeks. Here is which bookmark manager is worth installing, why Pocket is gone for good, and which famous name has not been updated since 2016.",
+    "excerpt": "Pocket is dead, Papaly has not been updated since 2016, and every top roundup on Google ranks its own product first. I spent two weeks testing the four bookmark managers that are actually alive to find out which one can hold a thousand links, which one only holds sixty, and which one is quietly dying.",
+    "published_at": "2026-11-28T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-bookmark-manager-extensions-chrome-2026/featured.webp",
+    "featured_image": "/content/images/best-bookmark-manager-extensions-chrome-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "Bookmark manager",
+      "Chrome extensions",
+      "Productivity"
+    ],
+    "keywords": [
+      "best bookmark manager extensions chrome 2026",
+      "raindrop.io vs toby",
+      "pocket alternative chrome 2026",
+      "bookmark sidebar vs diigo",
+      "papaly abandoned"
+    ],
+    "canonicalPath": "/blog/best-bookmark-manager-extensions-chrome-2026",
+    "updated_at": "2026-11-28T22:00:00.000+00:00"
+  },
+  {
+    "id": "9c4d8a12-7f3e-4a5b-8d9c-1e2f3a4b5c67",
+    "title": "Best Reverse Image Search Extensions for Chrome in 2026: Search by Image vs TinEye vs RevEye vs Fast Image Research",
+    "slug": "best-reverse-image-search-extensions-chrome-2026",
+    "description": "Best reverse image search extensions for Chrome in 2026: Search by Image vs TinEye vs RevEye vs Fast Image Research compared on engines, accuracy, privacy and maintenance, after two weeks of real testing.",
+    "meta_description": "I tested Search by Image, TinEye, RevEye and Fast Image Research for two weeks. Here is which reverse image search extension is worth installing, why the official SauceNAO extension is gone, and why there is no official Google Lens extension.",
+    "excerpt": "The official SauceNAO extension was removed, Google never made a Lens extension, and the top roundups on Google compare websites instead of extensions. I spent two weeks testing the four reverse image search extensions that are actually alive to find out which one finds the original, which one finds everything, and which names you must not install.",
+    "published_at": "2026-11-28T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-reverse-image-search-extensions-chrome-2026/featured.webp",
+    "featured_image": "/content/images/best-reverse-image-search-extensions-chrome-2026/featured.webp",
+    "reading_time": 11,
+    "read_time": 11,
+    "views": 0,
+    "tags": [
+      "Reverse image search",
+      "Chrome extensions",
+      "Privacy"
+    ],
+    "keywords": [
+      "best reverse image search extensions chrome 2026",
+      "search by image vs tineye",
+      "image search options removed",
+      "reveye vs fast image research",
+      "google lens extension chrome"
+    ],
+    "canonicalPath": "/blog/best-reverse-image-search-extensions-chrome-2026",
+    "updated_at": "2026-11-28T22:00:00.000+00:00"
+  },
+  {
+    "id": "cc9d6e77-496a-4771-9dbd-8443e7902ea0",
+    "title": "Best History Manager Extensions for Chrome in 2026: Better History vs History Trends Unlimited vs TraceMind vs Recent History",
+    "slug": "best-history-manager-extensions-chrome-2026",
+    "description": "Best history manager extensions for Chrome in 2026: Better History vs History Trends Unlimited vs TraceMind vs Recent History compared on search, retention, export and privacy, after two weeks of real testing.",
+    "meta_description": "I tested Better History, History Trends Unlimited, TraceMind and Recent History for two weeks. Here is which history manager is worth installing, why Chrome forgets everything after 90 days, and which famous name now shows ads.",
+    "excerpt": "Chrome deletes your history after 90 days, its search only matches titles, and the roundups at the top of Google are written by the vendors they rank first. I spent two weeks testing the four history managers that are actually alive to find out which one keeps your history forever, which one finds a page by a sentence you remember, and which famous name now shows you ads.",
+    "published_at": "2026-11-28T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-history-manager-extensions-chrome-2026/featured.webp",
+    "featured_image": "/content/images/best-history-manager-extensions-chrome-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "History manager",
+      "Chrome extensions",
+      "Privacy"
+    ],
+    "keywords": [
+      "best history manager extensions chrome 2026",
+      "better history vs history trends unlimited",
+      "tracemind semantic history search",
+      "chrome history 90 days limit",
+      "recent history extension ads"
+    ],
+    "canonicalPath": "/blog/best-history-manager-extensions-chrome-2026",
+    "updated_at": "2026-11-28T22:00:00.000+00:00"
+  },
+  {
+    "id": "7377a208-d8d5-4855-ad98-44a959fb303c",
+    "title": "Best Proxy Extensions for Chrome in 2026: FoxyProxy vs ZeroOmega vs ProxyEmpire vs Proxy Switcher and Manager",
+    "slug": "best-proxy-extensions-chrome-2026",
+    "description": "Best proxy extensions for Chrome in 2026: FoxyProxy vs ZeroOmega vs ProxyEmpire Proxy Manager vs Proxy Switcher and Manager compared on switching rules, saved logins, leak protection and protocols, after two weeks of real testing.",
+    "meta_description": "I tested FoxyProxy, ZeroOmega, ProxyEmpire Proxy Manager and Proxy Switcher and Manager for two weeks. Here is which proxy extension is worth installing, why SwitchyOmega is gone, and why no Chrome extension can log in to a SOCKS5 proxy.",
+    "excerpt": "The original SwitchyOmega is gone from the store, the roundups at the top of Google rank their own products first, and no Chrome extension can log in to a SOCKS5 proxy — a fact most guides never mention. I spent two weeks testing the four proxy extensions that are actually alive to find out which one switches fastest, which one stops your real IP leaking, and which famous name you must not install in 2026.",
+    "published_at": "2026-11-28T22:00:00.000+00:00",
+    "category": "Productivity & Tools",
+    "author": "James Mitchell",
+    "image_url": "/content/images/best-proxy-extensions-chrome-2026/featured.webp",
+    "featured_image": "/content/images/best-proxy-extensions-chrome-2026/featured.webp",
+    "reading_time": 12,
+    "read_time": 12,
+    "views": 0,
+    "tags": [
+      "Proxy extensions",
+      "Chrome extensions",
+      "Privacy"
+    ],
+    "keywords": [
+      "best proxy extensions chrome 2026",
+      "foxyproxy vs zeroomega",
+      "switchyomega removed chrome",
+      "proxy switcher and manager vs foxyproxy",
+      "socks5 proxy chrome login"
+    ],
+    "canonicalPath": "/blog/best-proxy-extensions-chrome-2026",
+    "updated_at": "2026-11-28T22:00:00.000+00:00"
+  },
+  {
     "id": "f68101e8-9756-4ce0-819d-4ba8290cf547",
     "title": "Best Cookie Manager Extensions for Chrome in 2026: Cookie-Editor vs Hotcleaner vs Global Cookie Manager vs Cookie Manager",
     "slug": "best-cookie-manager-extensions-chrome-2026",
